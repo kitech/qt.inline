@@ -1,0 +1,82 @@
+//  header block begin
+// /usr/include/qt/QtNetwork/qsslerror.h
+#include <qsslerror.h>
+#include <QtNetwork>
+#include "callback_inherit.h"
+
+// QSslError is pure virtual: false
+// QSslError has virtual projected: false
+//  header block end
+
+//  main block begin
+
+class MyQSslError : public QSslError {
+public:
+  virtual ~MyQSslError() {}
+// void QSslError()
+MyQSslError() : QSslError() {}
+// void QSslError(enum QSslError::SslError)
+MyQSslError(QSslError::SslError error) : QSslError(error) {}
+// void QSslError(enum QSslError::SslError, const class QSslCertificate &)
+MyQSslError(QSslError::SslError error, const QSslCertificate & certificate) : QSslError(error, certificate) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:88
+// [-2] void QSslError()
+extern "C"
+void* C_ZN9QSslErrorC2Ev() {
+  return  new QSslError();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:89
+// [-2] void QSslError(enum QSslError::SslError)
+extern "C"
+void* C_ZN9QSslErrorC2ENS_8SslErrorE(QSslError::SslError error) {
+  return  new QSslError(error);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:90
+// [-2] void QSslError(enum QSslError::SslError, const class QSslCertificate &)
+extern "C"
+void* C_ZN9QSslErrorC2ENS_8SslErrorERK15QSslCertificate(QSslError::SslError error, QSslCertificate* certificate) {
+  return  new QSslError(error, *certificate);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:94
+// [-2] void swap(class QSslError &)
+extern "C"
+void C_ZN9QSslError4swapERS_(void *this_, QSslError* other) {
+  ((QSslError*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:97
+// [-2] void ~QSslError()
+extern "C"
+void C_ZN9QSslErrorD2Ev(void *this_) {
+  delete (QSslError*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:106
+// [4] QSslError::SslError error()
+extern "C"
+QSslError::SslError C_ZNK9QSslError5errorEv(void *this_) {
+  return (QSslError::SslError)((QSslError*)this_)->error();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:107
+// [8] QString errorString()
+extern "C"
+void* C_ZNK9QSslError11errorStringEv(void *this_) {
+  auto rv = ((QSslError*)this_)->errorString();
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:108
+// [8] QSslCertificate certificate()
+extern "C"
+void* C_ZNK9QSslError11certificateEv(void *this_) {
+  auto rv = ((QSslError*)this_)->certificate();
+return new QSslCertificate(rv);
+}
+//  main block end

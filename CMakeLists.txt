@@ -28,9 +28,14 @@ set(CMAKE_AUTOMOC on)
 find_package(Qt5Core)
 find_package(Qt5Gui)
 find_package(Qt5Widgets)
-# find_package(Qt5Network)
-# find_package(Qt5Qml)
-# find_package(Qt5Quick)
+
+find_package(Qt5Network)
+find_package(Qt5Qml)
+find_package(Qt5Quick)
+
+# find_package(Qt5QuickTemplates2)
+find_package(Qt5QuickControls2)
+find_package(Qt5QuickWidgets)
 
 # set(qt5_inline_core_srcs "src/core/qobject.cxx")
 # set(qt5_inline_gui_srcs "src/gui/qevent.cxx")
@@ -50,6 +55,12 @@ file(GLOB qt5_inline_srcs
   src/core/*.cxx
   src/gui/*.cxx
   src/widgets/*.cxx
+  src/network/*.cxx
+  src/qml/*.cxx
+  src/quick/*.cxx
+  # src/quicktemplates2/*.cxx
+  src/quickcontrols2/*.cxx
+  src/quickwidgets/*.cxx
   )
 # message(${qt5_inline_srcs})
 message("can you see that?")
@@ -66,7 +77,7 @@ set(all_qt5_inline_srcs
   )
 
 add_library(QtInline SHARED ${all_qt5_inline_srcs})
-qt5_use_modules(QtInline Core Gui Widgets)
+qt5_use_modules(QtInline Core Gui Widgets Network Qml Quick QuickControls2 QuickWidgets)
 if(ANDROID)
   target_link_libraries(QtInline log)
 endif(ANDROID)

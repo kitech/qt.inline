@@ -10,7 +10,7 @@
 // /usr/include/qt/QtWidgets/qsizepolicy.h:68
 // [4] uint qHash(class QSizePolicy, uint)
 extern "C"
-uint C_Z5qHash11QSizePolicyj_36(QSizePolicy* key, uint seed) {
+uint C_Z5qHash11QSizePolicyj_43(QSizePolicy* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 

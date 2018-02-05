@@ -1,0 +1,157 @@
+//  header block begin
+// /usr/include/qt/QtNetwork/qsslcertificate.h
+#include <qsslcertificate.h>
+#include <QtNetwork>
+#include "callback_inherit.h"
+
+// QSslCertificate is pure virtual: false
+// QSslCertificate has virtual projected: false
+//  header block end
+
+//  main block begin
+
+class MyQSslCertificate : public QSslCertificate {
+public:
+  virtual ~MyQSslCertificate() {}
+// void QSslCertificate(class QIODevice *, QSsl::EncodingFormat)
+MyQSslCertificate(QIODevice * device, QSsl::EncodingFormat format) : QSslCertificate(device, format) {}
+// void QSslCertificate(const class QByteArray &, QSsl::EncodingFormat)
+MyQSslCertificate(const QByteArray & data, QSsl::EncodingFormat format) : QSslCertificate(data, format) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:89
+// [-2] void QSslCertificate(class QIODevice *, QSsl::EncodingFormat)
+extern "C"
+void* C_ZN15QSslCertificateC2EP9QIODeviceN4QSsl14EncodingFormatE(QIODevice * device, QSsl::EncodingFormat format) {
+  return  new QSslCertificate(device, format);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:90
+// [-2] void QSslCertificate(const class QByteArray &, QSsl::EncodingFormat)
+extern "C"
+void* C_ZN15QSslCertificateC2ERK10QByteArrayN4QSsl14EncodingFormatE(QByteArray* data, QSsl::EncodingFormat format) {
+  return  new QSslCertificate(*data, format);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:92
+// [-2] void ~QSslCertificate()
+extern "C"
+void C_ZN15QSslCertificateD2Ev(void *this_) {
+  delete (QSslCertificate*)(this_);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:98
+// [-2] void swap(class QSslCertificate &)
+extern "C"
+void C_ZN15QSslCertificate4swapERS_(void *this_, QSslCertificate* other) {
+  ((QSslCertificate*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:104
+// [1] bool isNull()
+extern "C"
+bool C_ZNK15QSslCertificate6isNullEv(void *this_) {
+  return (bool)((QSslCertificate*)this_)->isNull();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:113
+// [1] bool isBlacklisted()
+extern "C"
+bool C_ZNK15QSslCertificate13isBlacklistedEv(void *this_) {
+  return (bool)((QSslCertificate*)this_)->isBlacklisted();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:114
+// [1] bool isSelfSigned()
+extern "C"
+bool C_ZNK15QSslCertificate12isSelfSignedEv(void *this_) {
+  return (bool)((QSslCertificate*)this_)->isSelfSigned();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:115
+// [-2] void clear()
+extern "C"
+void C_ZN15QSslCertificate5clearEv(void *this_) {
+  ((QSslCertificate*)this_)->clear();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:118
+// [8] QByteArray version()
+extern "C"
+void* C_ZNK15QSslCertificate7versionEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->version();
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:119
+// [8] QByteArray serialNumber()
+extern "C"
+void* C_ZNK15QSslCertificate12serialNumberEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->serialNumber();
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:120
+// [8] QByteArray digest(class QCryptographicHash::Algorithm)
+extern "C"
+void* C_ZNK15QSslCertificate6digestEN18QCryptographicHash9AlgorithmE(void *this_, QCryptographicHash::Algorithm algorithm) {
+  auto rv = ((QSslCertificate*)this_)->digest(algorithm);
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:132
+// [8] QDateTime effectiveDate()
+extern "C"
+void* C_ZNK15QSslCertificate13effectiveDateEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->effectiveDate();
+return new QDateTime(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:133
+// [8] QDateTime expiryDate()
+extern "C"
+void* C_ZNK15QSslCertificate10expiryDateEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->expiryDate();
+return new QDateTime(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:134
+// [8] QSslKey publicKey()
+extern "C"
+void* C_ZNK15QSslCertificate9publicKeyEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->publicKey();
+return new QSslKey(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:137
+// [8] QByteArray toPem()
+extern "C"
+void* C_ZNK15QSslCertificate5toPemEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->toPem();
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:138
+// [8] QByteArray toDer()
+extern "C"
+void* C_ZNK15QSslCertificate5toDerEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->toDer();
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:139
+// [8] QString toText()
+extern "C"
+void* C_ZNK15QSslCertificate6toTextEv(void *this_) {
+  auto rv = ((QSslCertificate*)this_)->toText();
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:160
+// [8] Qt::HANDLE handle()
+extern "C"
+Qt::HANDLE C_ZNK15QSslCertificate6handleEv(void *this_) {
+  return (Qt::HANDLE)((QSslCertificate*)this_)->handle();
+}
+//  main block end
