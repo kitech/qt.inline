@@ -175,3 +175,26 @@ void QDynSlotObject_trigger_test(QObject*osrc) {
 void QDynSlotObject_set_debug(int on) {
     QDynSlotObject_debug = on == 1;
 }
+
+// return: 0:not exists, 1: not uniq, >1: signature string
+uint64_t QObject_get_meta_signature_by_name(void*qobjx, char* name) {
+    QObject* qobj = (QObject*)qobjx;
+    const QMetaObject* mobj = qobj->metaObject();
+    QByteArray signature;
+    int samecnt = 0;
+    for (int i = 0; i < mobj->methodCount(); i ++) {
+        QMetaMethod mtho = mobj->method(i);
+        if (mtho.name() == QByteArray(name)) {
+            samecnt += 1;
+            signature = mtho.methodSignature();
+        }
+    }
+
+    if (samecnt == 1) {
+        return (uint64_t)strdup(signature.data());
+    } else if (samecnt > 1) {
+        return 1;
+    } else { // == 0
+        return 0;
+    }
+}
