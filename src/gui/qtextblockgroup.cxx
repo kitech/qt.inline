@@ -26,6 +26,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
     QTextBlockGroup::blockInserted(block);
   }
   }
+
 // void blockRemoved(const class QTextBlock &)
   virtual void blockRemoved(const QTextBlock & block) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
     QTextBlockGroup::blockRemoved(block);
   }
   }
+
 // void blockFormatChanged(const class QTextBlock &)
   virtual void blockFormatChanged(const QTextBlock & block) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
     QTextBlockGroup::blockFormatChanged(block);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

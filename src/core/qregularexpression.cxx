@@ -23,9 +23,9 @@ MyQRegularExpression(const QString & pattern, QFlags<QRegularExpression::Pattern
 // /usr/include/qt/QtCore/qregularexpression.h:81
 // [4] QRegularExpression::PatternOptions patternOptions()
 extern "C"
-void C_ZNK18QRegularExpression14patternOptionsEv(void *this_) {
+QRegularExpression::PatternOptions* C_ZNK18QRegularExpression14patternOptionsEv(void *this_) {
   auto rv = ((QRegularExpression*)this_)->patternOptions();
-/*return rv;*/
+return new QRegularExpression::PatternOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:82
@@ -105,6 +105,14 @@ return new QString(rv);
 extern "C"
 int C_ZNK18QRegularExpression12captureCountEv(void *this_) {
   return (int)((QRegularExpression*)this_)->captureCount();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:105
+// [8] QStringList namedCaptureGroups()
+extern "C"
+void* C_ZNK18QRegularExpression18namedCaptureGroupsEv(void *this_) {
+  auto rv = ((QRegularExpression*)this_)->namedCaptureGroups();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:121

@@ -26,6 +26,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return QObject::sender();
   }
   }
+
 // int senderSignalIndex()
   virtual int senderSignalIndex() {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return QObject::senderSignalIndex();
   }
   }
+
 // int receivers(const char *)
   virtual int receivers(const char * signal) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return QObject::receivers(signal);
   }
   }
+
 // bool isSignalConnected(const class QMetaMethod &)
   virtual bool isSignalConnected(const QMetaMethod & signal) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return QObject::isSignalConnected(signal);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     QObject::timerEvent(event);
   }
   }
+
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     QObject::childEvent(event);
   }
   }
+
 // void customEvent(class QEvent *)
   virtual void customEvent(QEvent * event) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     QObject::customEvent(event);
   }
   }
+
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
     int handled = 0;
@@ -99,6 +106,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     QObject::connectNotify(signal);
   }
   }
+
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
@@ -109,6 +117,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
     QObject::disconnectNotify(signal);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -218,6 +227,14 @@ extern "C"
 void C_ZN7QObject9killTimerEi(void *this_, int id) {
   ((QObject*)this_)->killTimer(id);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:207
+// [8] const QObjectList & children()
+extern "C"
+void* C_ZNK7QObject8childrenEv(void *this_) {
+  auto& rv = ((QObject*)this_)->children();
+return new QObjectList(rv);
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:209
 // [-2] void setParent(class QObject *)
@@ -250,15 +267,15 @@ QMetaObject::Connection C_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE(
 // /usr/include/qt/QtCore/qobject.h:216
 // [8] QMetaObject::Connection connect(const class QObject *, const class QMetaMethod &, const class QObject *, const class QMetaMethod &, Qt::ConnectionType)
 extern "C"
-QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* method, Qt::ConnectionType type) {
-  return (QMetaObject::Connection)QObject::connect(sender, *signal, receiver, *method, type);
+QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* method, Qt::ConnectionType type_) {
+  return (QMetaObject::Connection)QObject::connect(sender, *signal, receiver, *method, type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:220
 // [8] QMetaObject::Connection connect(const class QObject *, const char *, const char *, Qt::ConnectionType)
 extern "C"
-QMetaObject::Connection C_ZNK7QObject7connectEPKS_PKcS3_N2Qt14ConnectionTypeE(void *this_, const QObject * sender, const char * signal, const char * member, Qt::ConnectionType type) {
-  return (QMetaObject::Connection)((QObject*)this_)->connect(sender, signal, member, type);
+QMetaObject::Connection C_ZNK7QObject7connectEPKS_PKcS3_N2Qt14ConnectionTypeE(void *this_, const QObject * sender, const char * signal, const char * member, Qt::ConnectionType type_) {
+  return (QMetaObject::Connection)((QObject*)this_)->connect(sender, signal, member, type_);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:342

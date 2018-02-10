@@ -25,6 +25,7 @@ MyQQuickFramebufferObject(QQuickItem * parent) : QQuickFramebufferObject(parent)
     QQuickFramebufferObject::geometryChanged(newGeometry, oldGeometry);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,7 +39,7 @@ void* C_ZNK23QQuickFramebufferObject10metaObjectEv(void *this_) {
 // /usr/include/qt/QtQuick/qquickframebufferobject.h:78
 // [-2] void QQuickFramebufferObject(class QQuickItem *)
 extern "C"
-void* C_ZN23QQuickFramebufferObjectC1EP10QQuickItem(QQuickItem * parent) {
+void* C_ZN23QQuickFramebufferObjectC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickFramebufferObject*)(0);
   return 0; // new MyQQuickFramebufferObject(parent);
 }

@@ -28,6 +28,7 @@ MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {
     return QLCDNumber::event(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {
     QLCDNumber::paintEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

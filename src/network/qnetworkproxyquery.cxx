@@ -103,8 +103,8 @@ QNetworkProxyQuery::QueryType C_ZNK18QNetworkProxyQuery9queryTypeEv(void *this_)
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:105
 // [-2] void setQueryType(enum QNetworkProxyQuery::QueryType)
 extern "C"
-void C_ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE(void *this_, QNetworkProxyQuery::QueryType type) {
-  ((QNetworkProxyQuery*)this_)->setQueryType(type);
+void C_ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE(void *this_, QNetworkProxyQuery::QueryType type_) {
+  ((QNetworkProxyQuery*)this_)->setQueryType(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:107

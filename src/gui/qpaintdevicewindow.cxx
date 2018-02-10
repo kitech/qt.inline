@@ -23,6 +23,7 @@ public:
     QPaintDeviceWindow::paintEvent(event);
   }
   }
+
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
     int handled = 0;
@@ -34,6 +35,7 @@ public:
     return QPaintDeviceWindow::metric(metric);
   }
   }
+
 // void exposeEvent(class QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0) {
     int handled = 0;
@@ -44,6 +46,7 @@ public:
     QPaintDeviceWindow::exposeEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -55,6 +58,7 @@ public:
     return QPaintDeviceWindow::event(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

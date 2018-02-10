@@ -29,6 +29,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::resizeEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -39,6 +40,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::timerEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::keyPressEvent(arg0);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::keyReleaseEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
     QQuickView::mouseMoveEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

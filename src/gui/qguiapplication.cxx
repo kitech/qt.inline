@@ -26,6 +26,7 @@ MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, arg
     return QGuiApplication::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -79,6 +80,22 @@ extern "C"
 void* C_ZN15QGuiApplication15desktopFileNameEv() {
   auto rv = QGuiApplication::desktopFileName();
 return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:97
+// [-2] QWindowList allWindows()
+extern "C"
+void C_ZN15QGuiApplication10allWindowsEv() {
+  auto rv = QGuiApplication::allWindows();
+/*return rv;*/
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:98
+// [-2] QWindowList topLevelWindows()
+extern "C"
+void C_ZN15QGuiApplication15topLevelWindowsEv() {
+  auto rv = QGuiApplication::topLevelWindows();
+/*return rv;*/
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:99

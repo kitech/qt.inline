@@ -26,6 +26,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     return QVariantAnimation::event(event);
   }
   }
+
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     QVariantAnimation::updateCurrentTime(arg0);
   }
   }
+
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     QVariantAnimation::updateState(newState, oldState);
   }
   }
+
 // void updateCurrentValue(const class QVariant &)
   virtual void updateCurrentValue(const QVariant & value) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     QVariantAnimation::updateCurrentValue(value);
   }
   }
+
 // QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
   virtual QVariant interpolated(const QVariant & from, const QVariant & to, qreal progress) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     return QVariantAnimation::interpolated(from, to, progress);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

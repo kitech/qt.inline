@@ -25,6 +25,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     QGraphicsLayoutItem::setGraphicsItem(item);
   }
   }
+
 // void setOwnedByLayout(_Bool)
   virtual void setOwnedByLayout(bool ownedByLayout) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
   }
   }
+
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
     int handled = 0;
@@ -46,13 +48,14 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     return QGraphicsLayoutItem::sizeHint(which, constraint);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:57
 // [-2] void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)
 extern "C"
-void* C_ZN19QGraphicsLayoutItemC1EPS_b(QGraphicsLayoutItem * parent, bool isLayout) {
+void* C_ZN19QGraphicsLayoutItemC2EPS_b(QGraphicsLayoutItem * parent, bool isLayout) {
   auto _nilp = (MyQGraphicsLayoutItem*)(0);
   return 0; // new MyQGraphicsLayoutItem(parent, isLayout);
 }

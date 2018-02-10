@@ -26,6 +26,7 @@ MyQPicture(int formatVersion) : QPicture(formatVersion) {}
     return QPicture::metric(m);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
@@ -155,6 +156,22 @@ bool C_ZNK8QPicture10isDetachedEv(void *this_) {
 extern "C"
 void* C_ZN8QPicture13pictureFormatERK7QString(QString* fileName) {
   return (void*)QPicture::pictureFormat(*fileName);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:97
+// [8] QStringList inputFormatList()
+extern "C"
+void* C_ZN8QPicture15inputFormatListEv() {
+  auto rv = QPicture::inputFormatList();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:98
+// [8] QStringList outputFormatList()
+extern "C"
+void* C_ZN8QPicture16outputFormatListEv() {
+  auto rv = QPicture::outputFormatList();
+return new QStringList(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:101

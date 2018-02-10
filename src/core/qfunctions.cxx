@@ -5,6 +5,1326 @@
 
 //  main block begin
 // Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1752
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TimerType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_9TimerTypeE(Qt::TimerType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1723
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::SortOrder)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_9SortOrderE_1(Qt::SortOrder arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1708
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::DayOfWeek)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_9DayOfWeekE_2(Qt::DayOfWeek arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1677
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ArrowType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_9ArrowTypeE_3(Qt::ArrowType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1707
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TimeSpec)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8TimeSpecE_4(Qt::TimeSpec arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1696
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TextFlag)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8TextFlagE_5(Qt::TextFlag arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1687
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::SizeMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8SizeModeE_6(Qt::SizeMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1692
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::SizeHint)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8SizeHintE_7(Qt::SizeHint arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1679
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::PenStyle)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8PenStyleE_8(Qt::PenStyle arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1684
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::MaskMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8MaskModeE_9(Qt::MaskMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1683
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::FillRule)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_8FillRuleE_10(Qt::FillRule arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1689
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::Corner)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_6CornerE_11(Qt::Corner arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1685
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::BGMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_6BGModeE_12(Qt::BGMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1690
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::Edge)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_4EdgeE_13(Qt::Edge arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1688
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::Axis)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_4AxisE_14(Qt::Axis arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1714
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::Key)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_3KeyE_15(Qt::Key arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1719
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ItemSelectionOperation)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_22ItemSelectionOperationE_16(Qt::ItemSelectionOperation arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1732
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ApplicationAttribute)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_20ApplicationAttributeE_17(Qt::ApplicationAttribute arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1716
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TextInteractionFlag)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_19TextInteractionFlagE_18(Qt::TextInteractionFlag arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1712
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TransformationMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_18TransformationModeE_19(Qt::TransformationMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1742
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ScreenOrientation)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ScreenOrientationE_20(Qt::ScreenOrientation arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1749
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::NativeGestureType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_17NativeGestureTypeE_21(Qt::NativeGestureType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1718
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ItemSelectionMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ItemSelectionModeE_22(Qt::ItemSelectionMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1676
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ContextMenuPolicy)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ContextMenuPolicyE_23(Qt::ContextMenuPolicy arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1757
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TabFocusBehavior)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_16TabFocusBehaviorE_24(Qt::TabFocusBehavior arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1754
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::MouseEventSource)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_16MouseEventSourceE_25(Qt::MouseEventSource arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1737
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::InputMethodQuery)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_16InputMethodQueryE_26(Qt::InputMethodQuery arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1745
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ApplicationState)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_16ApplicationStateE_27(Qt::ApplicationState arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1731
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::WidgetAttribute)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15WidgetAttributeE_28(Qt::WidgetAttribute arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1678
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ToolButtonStyle)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ToolButtonStyleE_29(Qt::ToolButtonStyle arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1715
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ShortcutContext)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ShortcutContextE_30(Qt::ShortcutContext arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1674
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ScrollBarPolicy)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ScrollBarPolicyE_31(Qt::ScrollBarPolicy arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1691
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::LayoutDirection)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15LayoutDirectionE_32(Qt::LayoutDirection arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1736
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::InputMethodHint)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15InputMethodHintE_33(Qt::InputMethodHint arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1751
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::CursorMoveStyle)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15CursorMoveStyleE_34(Qt::CursorMoveStyle arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1724
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::CaseSensitivity)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15CaseSensitivityE_35(Qt::CaseSensitivity arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1711
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::AspectRatioMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_15AspectRatioModeE_36(Qt::AspectRatioMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1730
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::WindowModality)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_14WindowModalityE_37(Qt::WindowModality arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1755
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::MouseEventFlag)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_14MouseEventFlagE_38(Qt::MouseEventFlag arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1702
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::DockWidgetArea)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_14DockWidgetAreaE_39(Qt::DockWidgetArea arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1744
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ConnectionType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_14ConnectionTypeE_40(Qt::ConnectionType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1705
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TextElideMode)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_13TextElideModeE_41(Qt::TextElideMode arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1686
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ClipOperation)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_13ClipOperationE_42(Qt::ClipOperation arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1681
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::PenJoinStyle)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_12PenJoinStyleE_43(Qt::PenJoinStyle arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1722
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ItemDataRole)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_12ItemDataRoleE_44(Qt::ItemDataRole arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1747
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::GestureState)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_12GestureStateE_45(Qt::GestureState arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1739
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::EnterKeyType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_12EnterKeyTypeE_46(Qt::EnterKeyType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1756
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ChecksumType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_12ChecksumTypeE_47(Qt::ChecksumType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1729
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::WindowState)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11WindowStateE_48(Qt::WindowState arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1703
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ToolBarArea)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11ToolBarAreaE_49(Qt::ToolBarArea arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1753
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::ScrollPhase)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11ScrollPhaseE_50(Qt::ScrollPhase arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1680
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::PenCapStyle)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11PenCapStyleE_51(Qt::PenCapStyle arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1693
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::Orientation)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11OrientationE_52(Qt::Orientation arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1710
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::GlobalColor)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11GlobalColorE_53(Qt::GlobalColor arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1748
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::GestureType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11GestureTypeE_54(Qt::GestureType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1735
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::FocusReason)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11FocusReasonE_55(Qt::FocusReason arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1675
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::FocusPolicy)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11FocusPolicyE_56(Qt::FocusPolicy arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1709
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::CursorShape)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_11CursorShapeE_57(Qt::CursorShape arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1728
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::WindowType)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_10WindowTypeE_58(Qt::WindowType arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1704
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::TextFormat)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_10TextFormatE_59(Qt::TextFormat arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1694
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::DropAction)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_10DropActionE_60(Qt::DropAction arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1706
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::DateFormat)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_10DateFormatE_61(Qt::DateFormat arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1721
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::CheckState)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_10CheckStateE_62(Qt::CheckState arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1682
+// [8] const QMetaObject * qt_getEnumMetaObject(enum Qt::BrushStyle)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectENS_10BrushStyleE_63(Qt::BrushStyle arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1725
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::MatchFlags)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_9MatchFlagEE_64(QFlags<Qt::MatchFlag> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1720
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::ItemFlags)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_8ItemFlagEE_65(QFlags<Qt::ItemFlag> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1699
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::Edges)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_4EdgeEE_66(QFlags<Qt::Edge> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1717
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::TextInteractionFlags)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_19TextInteractionFlagEE_67(QFlags<Qt::TextInteractionFlag> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1713
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::ImageConversionFlags)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_19ImageConversionFlagEE_68(QFlags<Qt::ImageConversionFlag> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1743
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::ScreenOrientations)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_17ScreenOrientationEE_69(QFlags<Qt::ScreenOrientation> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1726
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::KeyboardModifiers)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_16KeyboardModifierEE_70(QFlags<Qt::KeyboardModifier> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1740
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::InputMethodQueries)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_16InputMethodQueryEE_71(QFlags<Qt::InputMethodQuery> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1741
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::TouchPointStates)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_15TouchPointStateEE_72(QFlags<Qt::TouchPointState> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1738
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::InputMethodHints)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_15InputMethodHintEE_73(QFlags<Qt::InputMethodHint> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1700
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::DockWidgetAreas)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_14DockWidgetAreaEE_74(QFlags<Qt::DockWidgetArea> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1695
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::Alignment)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_13AlignmentFlagEE_75(QFlags<Qt::AlignmentFlag> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1734
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowStates)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11WindowStateEE_76(QFlags<Qt::WindowState> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1701
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::ToolBarAreas)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11ToolBarAreaEE_77(QFlags<Qt::ToolBarArea> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1697
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::Orientations)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11OrientationEE_78(QFlags<Qt::Orientation> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1727
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::MouseButtons)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11MouseButtonEE_79(QFlags<Qt::MouseButton> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1733
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowFlags)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_10WindowTypeEE_80(QFlags<Qt::WindowType> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1698
+// [8] const QMetaObject * qt_getEnumMetaObject(Qt::DropActions)
+extern "C"
+void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_10DropActionEE_81(QFlags<Qt::DropAction> arg0) {
+  return (void*)qt_getEnumMetaObject(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1752
+// [8] const char * qt_getEnumName(enum Qt::TimerType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_9TimerTypeE(Qt::TimerType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1723
+// [8] const char * qt_getEnumName(enum Qt::SortOrder)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_9SortOrderE_1(Qt::SortOrder arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1708
+// [8] const char * qt_getEnumName(enum Qt::DayOfWeek)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_9DayOfWeekE_2(Qt::DayOfWeek arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1677
+// [8] const char * qt_getEnumName(enum Qt::ArrowType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_9ArrowTypeE_3(Qt::ArrowType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1707
+// [8] const char * qt_getEnumName(enum Qt::TimeSpec)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8TimeSpecE_4(Qt::TimeSpec arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1696
+// [8] const char * qt_getEnumName(enum Qt::TextFlag)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8TextFlagE_5(Qt::TextFlag arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1687
+// [8] const char * qt_getEnumName(enum Qt::SizeMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8SizeModeE_6(Qt::SizeMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1692
+// [8] const char * qt_getEnumName(enum Qt::SizeHint)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8SizeHintE_7(Qt::SizeHint arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1679
+// [8] const char * qt_getEnumName(enum Qt::PenStyle)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8PenStyleE_8(Qt::PenStyle arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1684
+// [8] const char * qt_getEnumName(enum Qt::MaskMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8MaskModeE_9(Qt::MaskMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1683
+// [8] const char * qt_getEnumName(enum Qt::FillRule)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_8FillRuleE_10(Qt::FillRule arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1689
+// [8] const char * qt_getEnumName(enum Qt::Corner)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_6CornerE_11(Qt::Corner arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1685
+// [8] const char * qt_getEnumName(enum Qt::BGMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_6BGModeE_12(Qt::BGMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1690
+// [8] const char * qt_getEnumName(enum Qt::Edge)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_4EdgeE_13(Qt::Edge arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1688
+// [8] const char * qt_getEnumName(enum Qt::Axis)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_4AxisE_14(Qt::Axis arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1714
+// [8] const char * qt_getEnumName(enum Qt::Key)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_3KeyE_15(Qt::Key arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1719
+// [8] const char * qt_getEnumName(enum Qt::ItemSelectionOperation)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_22ItemSelectionOperationE_16(Qt::ItemSelectionOperation arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1732
+// [8] const char * qt_getEnumName(enum Qt::ApplicationAttribute)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_20ApplicationAttributeE_17(Qt::ApplicationAttribute arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1716
+// [8] const char * qt_getEnumName(enum Qt::TextInteractionFlag)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_19TextInteractionFlagE_18(Qt::TextInteractionFlag arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1712
+// [8] const char * qt_getEnumName(enum Qt::TransformationMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_18TransformationModeE_19(Qt::TransformationMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1742
+// [8] const char * qt_getEnumName(enum Qt::ScreenOrientation)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_17ScreenOrientationE_20(Qt::ScreenOrientation arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1749
+// [8] const char * qt_getEnumName(enum Qt::NativeGestureType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_17NativeGestureTypeE_21(Qt::NativeGestureType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1718
+// [8] const char * qt_getEnumName(enum Qt::ItemSelectionMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_17ItemSelectionModeE_22(Qt::ItemSelectionMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1676
+// [8] const char * qt_getEnumName(enum Qt::ContextMenuPolicy)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_17ContextMenuPolicyE_23(Qt::ContextMenuPolicy arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1757
+// [8] const char * qt_getEnumName(enum Qt::TabFocusBehavior)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_16TabFocusBehaviorE_24(Qt::TabFocusBehavior arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1754
+// [8] const char * qt_getEnumName(enum Qt::MouseEventSource)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_16MouseEventSourceE_25(Qt::MouseEventSource arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1737
+// [8] const char * qt_getEnumName(enum Qt::InputMethodQuery)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_16InputMethodQueryE_26(Qt::InputMethodQuery arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1745
+// [8] const char * qt_getEnumName(enum Qt::ApplicationState)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_16ApplicationStateE_27(Qt::ApplicationState arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1731
+// [8] const char * qt_getEnumName(enum Qt::WidgetAttribute)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15WidgetAttributeE_28(Qt::WidgetAttribute arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1678
+// [8] const char * qt_getEnumName(enum Qt::ToolButtonStyle)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15ToolButtonStyleE_29(Qt::ToolButtonStyle arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1715
+// [8] const char * qt_getEnumName(enum Qt::ShortcutContext)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15ShortcutContextE_30(Qt::ShortcutContext arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1674
+// [8] const char * qt_getEnumName(enum Qt::ScrollBarPolicy)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15ScrollBarPolicyE_31(Qt::ScrollBarPolicy arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1691
+// [8] const char * qt_getEnumName(enum Qt::LayoutDirection)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15LayoutDirectionE_32(Qt::LayoutDirection arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1736
+// [8] const char * qt_getEnumName(enum Qt::InputMethodHint)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15InputMethodHintE_33(Qt::InputMethodHint arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1751
+// [8] const char * qt_getEnumName(enum Qt::CursorMoveStyle)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15CursorMoveStyleE_34(Qt::CursorMoveStyle arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1724
+// [8] const char * qt_getEnumName(enum Qt::CaseSensitivity)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15CaseSensitivityE_35(Qt::CaseSensitivity arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1711
+// [8] const char * qt_getEnumName(enum Qt::AspectRatioMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_15AspectRatioModeE_36(Qt::AspectRatioMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1730
+// [8] const char * qt_getEnumName(enum Qt::WindowModality)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_14WindowModalityE_37(Qt::WindowModality arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1755
+// [8] const char * qt_getEnumName(enum Qt::MouseEventFlag)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_14MouseEventFlagE_38(Qt::MouseEventFlag arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1702
+// [8] const char * qt_getEnumName(enum Qt::DockWidgetArea)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_14DockWidgetAreaE_39(Qt::DockWidgetArea arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1744
+// [8] const char * qt_getEnumName(enum Qt::ConnectionType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_14ConnectionTypeE_40(Qt::ConnectionType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1705
+// [8] const char * qt_getEnumName(enum Qt::TextElideMode)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_13TextElideModeE_41(Qt::TextElideMode arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1686
+// [8] const char * qt_getEnumName(enum Qt::ClipOperation)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_13ClipOperationE_42(Qt::ClipOperation arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1681
+// [8] const char * qt_getEnumName(enum Qt::PenJoinStyle)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_12PenJoinStyleE_43(Qt::PenJoinStyle arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1722
+// [8] const char * qt_getEnumName(enum Qt::ItemDataRole)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_12ItemDataRoleE_44(Qt::ItemDataRole arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1747
+// [8] const char * qt_getEnumName(enum Qt::GestureState)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_12GestureStateE_45(Qt::GestureState arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1739
+// [8] const char * qt_getEnumName(enum Qt::EnterKeyType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_12EnterKeyTypeE_46(Qt::EnterKeyType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1756
+// [8] const char * qt_getEnumName(enum Qt::ChecksumType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_12ChecksumTypeE_47(Qt::ChecksumType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1729
+// [8] const char * qt_getEnumName(enum Qt::WindowState)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11WindowStateE_48(Qt::WindowState arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1703
+// [8] const char * qt_getEnumName(enum Qt::ToolBarArea)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11ToolBarAreaE_49(Qt::ToolBarArea arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1753
+// [8] const char * qt_getEnumName(enum Qt::ScrollPhase)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11ScrollPhaseE_50(Qt::ScrollPhase arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1680
+// [8] const char * qt_getEnumName(enum Qt::PenCapStyle)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11PenCapStyleE_51(Qt::PenCapStyle arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1693
+// [8] const char * qt_getEnumName(enum Qt::Orientation)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11OrientationE_52(Qt::Orientation arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1710
+// [8] const char * qt_getEnumName(enum Qt::GlobalColor)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11GlobalColorE_53(Qt::GlobalColor arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1748
+// [8] const char * qt_getEnumName(enum Qt::GestureType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11GestureTypeE_54(Qt::GestureType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1735
+// [8] const char * qt_getEnumName(enum Qt::FocusReason)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11FocusReasonE_55(Qt::FocusReason arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1675
+// [8] const char * qt_getEnumName(enum Qt::FocusPolicy)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11FocusPolicyE_56(Qt::FocusPolicy arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1709
+// [8] const char * qt_getEnumName(enum Qt::CursorShape)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_11CursorShapeE_57(Qt::CursorShape arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1728
+// [8] const char * qt_getEnumName(enum Qt::WindowType)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_10WindowTypeE_58(Qt::WindowType arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1704
+// [8] const char * qt_getEnumName(enum Qt::TextFormat)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_10TextFormatE_59(Qt::TextFormat arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1694
+// [8] const char * qt_getEnumName(enum Qt::DropAction)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_10DropActionE_60(Qt::DropAction arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1706
+// [8] const char * qt_getEnumName(enum Qt::DateFormat)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_10DateFormatE_61(Qt::DateFormat arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1721
+// [8] const char * qt_getEnumName(enum Qt::CheckState)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_10CheckStateE_62(Qt::CheckState arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1682
+// [8] const char * qt_getEnumName(enum Qt::BrushStyle)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameENS_10BrushStyleE_63(Qt::BrushStyle arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1725
+// [8] const char * qt_getEnumName(Qt::MatchFlags)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_9MatchFlagEE_64(QFlags<Qt::MatchFlag> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1720
+// [8] const char * qt_getEnumName(Qt::ItemFlags)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_8ItemFlagEE_65(QFlags<Qt::ItemFlag> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1699
+// [8] const char * qt_getEnumName(Qt::Edges)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_4EdgeEE_66(QFlags<Qt::Edge> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1717
+// [8] const char * qt_getEnumName(Qt::TextInteractionFlags)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_19TextInteractionFlagEE_67(QFlags<Qt::TextInteractionFlag> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1713
+// [8] const char * qt_getEnumName(Qt::ImageConversionFlags)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_19ImageConversionFlagEE_68(QFlags<Qt::ImageConversionFlag> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1743
+// [8] const char * qt_getEnumName(Qt::ScreenOrientations)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_17ScreenOrientationEE_69(QFlags<Qt::ScreenOrientation> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1726
+// [8] const char * qt_getEnumName(Qt::KeyboardModifiers)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_16KeyboardModifierEE_70(QFlags<Qt::KeyboardModifier> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1740
+// [8] const char * qt_getEnumName(Qt::InputMethodQueries)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_16InputMethodQueryEE_71(QFlags<Qt::InputMethodQuery> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1741
+// [8] const char * qt_getEnumName(Qt::TouchPointStates)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_15TouchPointStateEE_72(QFlags<Qt::TouchPointState> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1738
+// [8] const char * qt_getEnumName(Qt::InputMethodHints)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_15InputMethodHintEE_73(QFlags<Qt::InputMethodHint> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1700
+// [8] const char * qt_getEnumName(Qt::DockWidgetAreas)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_14DockWidgetAreaEE_74(QFlags<Qt::DockWidgetArea> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1695
+// [8] const char * qt_getEnumName(Qt::Alignment)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_13AlignmentFlagEE_75(QFlags<Qt::AlignmentFlag> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1734
+// [8] const char * qt_getEnumName(Qt::WindowStates)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11WindowStateEE_76(QFlags<Qt::WindowState> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1701
+// [8] const char * qt_getEnumName(Qt::ToolBarAreas)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11ToolBarAreaEE_77(QFlags<Qt::ToolBarArea> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1697
+// [8] const char * qt_getEnumName(Qt::Orientations)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11OrientationEE_78(QFlags<Qt::Orientation> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1727
+// [8] const char * qt_getEnumName(Qt::MouseButtons)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11MouseButtonEE_79(QFlags<Qt::MouseButton> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1733
+// [8] const char * qt_getEnumName(Qt::WindowFlags)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_10WindowTypeEE_80(QFlags<Qt::WindowType> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:1698
+// [8] const char * qt_getEnumName(Qt::DropActions)
+extern "C"
+void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_10DropActionEE_81(QFlags<Qt::DropAction> arg0) {
+  return (void*)qt_getEnumName(arg0);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:92
+// [4] int qstrcmp(const char *, const class QByteArray &)
+extern "C"
+int C_ZL7qstrcmpPKcRK10QByteArray(const char * str1, QByteArray* str2) {
+  return (int)qstrcmp(str1, *str2);
+}
+
+// Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qglobal.h:837
 // [1] bool qIsNull(float)
 extern "C"
@@ -50,6 +1370,30 @@ bool C_ZL12qFuzzyIsNullf(float f) {
 extern "C"
 bool C_ZL12qFuzzyIsNulld_1(double d) {
   return (bool)qFuzzyIsNull(d);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:1137
+// [1] bool qunsetenv(const char *)
+extern "C"
+bool C_Z9qunsetenvPKc(const char * varName) {
+  return (bool)qunsetenv(varName);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:726
+// [-2] void qt_assert(const char *, const char *, int)
+extern "C"
+void C_Z9qt_assertPKcS0_i(const char * assertion, const char * file, int line) {
+  qt_assert(assertion, file, line);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:101
+// [4] int qstrnicmp(const char *, const char *, uint)
+extern "C"
+int C_Z9qstrnicmpPKcS0_j(const char * arg0, const char * arg1, uint len) {
+  return (int)qstrnicmp(arg0, arg1, len);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -119,6 +1463,38 @@ void C_Z9qBadAllocv() {
 }
 
 // Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:76
+// [4] uint qstrnlen(const char *, uint)
+extern "C"
+uint C_Z8qstrnlenPKcj(const char * str, uint maxlen) {
+  return (uint)qstrnlen(str, maxlen);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:87
+// [8] char * qstrncpy(char *, const char *, uint)
+extern "C"
+void* C_Z8qstrncpyPcPKcj(char * dst, const char * src, uint len) {
+  return (void*)qstrncpy(dst, src, len);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:95
+// [4] int qstrncmp(const char *, const char *, uint)
+extern "C"
+int C_Z8qstrncmpPKcS0_j(const char * str1, const char * str2, uint len) {
+  return (int)qstrncmp(str1, str2, len);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:100
+// [4] int qstricmp(const char *, const char *)
+extern "C"
+int C_Z8qstricmpPKcS0_(const char * arg0, const char * arg1) {
+  return (int)qstricmp(arg0, arg1);
+}
+
+// Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qglobal.h:538
 // [8] qint64 qRound64(float)
 extern "C"
@@ -173,6 +1549,104 @@ extern "C"
 void* C_Z8qAppNamev() {
   auto rv = qAppName();
 return new QString(rv);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:641
+// [-2] void qt_noop()
+extern "C"
+void C_Z7qt_noopv() {
+  qt_noop();
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhashfunctions.h:105
+// [4] uint qt_hash(class QStringView, uint)
+extern "C"
+uint C_Z7qt_hash11QStringViewj(QStringView* key, uint chained) {
+  return (uint)qt_hash(*key, chained);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:73
+// [4] uint qstrlen(const char *)
+extern "C"
+uint C_Z7qstrlenPKc(const char * str) {
+  return (uint)qstrlen(str);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:71
+// [8] char * qstrdup(const char *)
+extern "C"
+void* C_Z7qstrdupPKc(const char * arg0) {
+  return (void*)qstrdup(arg0);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:86
+// [8] char * qstrcpy(char *, const char *)
+extern "C"
+void* C_Z7qstrcpyPcPKc(char * dst, const char * src) {
+  return (void*)qstrcpy(dst, src);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:90
+// [4] int qstrcmp(const class QByteArray &, const class QByteArray &)
+extern "C"
+int C_Z7qstrcmpRK10QByteArrayS1__1(QByteArray* str1, QByteArray* str2) {
+  return (int)qstrcmp(*str1, *str2);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:91
+// [4] int qstrcmp(const class QByteArray &, const char *)
+extern "C"
+int C_Z7qstrcmpRK10QByteArrayPKc_2(QByteArray* str1, const char * str2) {
+  return (int)qstrcmp(*str1, str2);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:89
+// [4] int qstrcmp(const char *, const char *)
+extern "C"
+int C_Z7qstrcmpPKcS0__3(const char * str1, const char * str2) {
+  return (int)qstrcmp(str1, str2);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:1136
+// [1] bool qputenv(const char *, const class QByteArray &)
+extern "C"
+bool C_Z7qputenvPKcRK10QByteArray(const char * varName, QByteArray* value) {
+  return (bool)qputenv(varName, *value);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:1128
+// [8] QByteArray qgetenv(const char *)
+extern "C"
+void* C_Z7qgetenvPKc(const char * varName) {
+  auto rv = qgetenv(varName);
+return new QByteArray(rv);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:1045
+// [8] QString qtTrId(const char *, int)
+extern "C"
+void* C_Z6qtTrIdPKci(const char * id, int n) {
+  auto rv = qtTrId(id, n);
+return new QString(rv);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:1149
+// [-2] void qsrand(uint)
+extern "C"
+void C_Z6qsrandj(uint seed) {
+  qsrand(seed);
 }
 
 // Invalid inline Visibility=Default Availability=Available
@@ -237,6 +1711,14 @@ int C_Z6qFloord(qreal v) {
 extern "C"
 qreal C_Z6qAtan2dd(qreal y, qreal x) {
   return (qreal)qAtan2(y, x);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:1150
+// [4] int qrand()
+extern "C"
+int C_Z5qrandv() {
+  return (int)qrand();
 }
 
 // Invalid inline Visibility=Default Availability=Available
@@ -828,6 +2310,22 @@ void C_Z19qSetGlobalQHashSeedi(int newSeed) {
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:53
+// [8] const QMetaObject * qt_getQtMetaObject()
+extern "C"
+void* C_Z18qt_getQtMetaObjectv() {
+  return (void*)qt_getQtMetaObject();
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:472
+// [8] const QMetaObject * qt_getQtMetaObject()
+extern "C"
+void* C_Z18qt_getQtMetaObjectv_1() {
+  return (void*)qt_getQtMetaObject();
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:193
 // [-2] void qSetMessagePattern(const class QString &)
 extern "C"
@@ -841,6 +2339,14 @@ void C_Z18qSetMessagePatternRK7QString(QString* messagePattern) {
 extern "C"
 void C_Z18qRemovePostRoutinePFvvE(QtCleanUpFunction arg0) {
   qRemovePostRoutine(arg0);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlogging.h:179
+// [-2] void qt_message_output(enum QtMsgType, const class QMessageLogContext &, const class QString &)
+extern "C"
+void C_Z17qt_message_output9QtMsgTypeRK18QMessageLogContextRK7QString(QtMsgType arg0, QMessageLogContext* context, QString* message) {
+  qt_message_output(arg0, *context, *message);
 }
 
 // Invalid inline Visibility=Default Availability=Available
@@ -863,8 +2369,8 @@ double C_Z17qRadiansToDegreesd_1(double radians) {
 // /usr/include/qt/QtCore/qlogging.h:194
 // [8] QString qFormatLogMessage(enum QtMsgType, const class QMessageLogContext &, const class QString &)
 extern "C"
-void* C_Z17qFormatLogMessage9QtMsgTypeRK18QMessageLogContextRK7QString(QtMsgType type, QMessageLogContext* context, QString* buf) {
-  auto rv = qFormatLogMessage(type, *context, *buf);
+void* C_Z17qFormatLogMessage9QtMsgTypeRK18QMessageLogContextRK7QString(QtMsgType type_, QMessageLogContext* context, QString* buf) {
+  auto rv = qFormatLogMessage(type_, *context, *buf);
 return new QString(rv);
 }
 
@@ -882,6 +2388,14 @@ float C_Z17qDegreesToRadiansf(float degrees) {
 extern "C"
 double C_Z17qDegreesToRadiansd_1(double degrees) {
   return (double)qDegreesToRadians(degrees);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:774
+// [-2] void qt_check_pointer(const char *, int)
+extern "C"
+void C_Z16qt_check_pointerPKci(const char * arg0, int arg1) {
+  qt_check_pointer(arg0, arg1);
 }
 
 // Invalid inline Visibility=Default Availability=Available
@@ -930,6 +2444,15 @@ uint C_Z16qPopulationCounth_4(quint8 v) {
 extern "C"
 int C_Z16qGlobalQHashSeedv() {
   return (int)qGlobalQHashSeed();
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:721
+// [8] QString qt_error_string(int)
+extern "C"
+void* C_Z15qt_error_stringi(int errorCode) {
+  auto rv = qt_error_string(errorCode);
+return new QString(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -1030,22 +2553,6 @@ void* C_Z13qFlagLocationPKc(const char * method) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:182
-// [-2] void qErrnoWarning(int, const char *, ...)
-extern "C"
-void C_Z13qErrnoWarningiPKcz(int code, const char * msg) {
-  qErrnoWarning(code, msg);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:183
-// [-2] void qErrnoWarning(const char *, ...)
-extern "C"
-void C_Z13qErrnoWarningPKcz_1(const char * msg) {
-  qErrnoWarning(msg);
-}
-
-// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qglobal.h:681
 // [1] bool qSharedBuild()
 extern "C"
@@ -1059,6 +2566,14 @@ bool C_Z12qSharedBuildv() {
 extern "C"
 void C_Z12qFreeAlignedPv(void * ptr) {
   qFreeAligned(ptr);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:743
+// [-2] void qt_assert_x(const char *, const char *, const char *, int)
+extern "C"
+void C_Z11qt_assert_xPKcS0_S0_i(const char * where, const char * what, const char * file, int line) {
+  qt_assert_x(where, what, file, line);
 }
 
 // Invalid inline Visibility=Default Availability=Available

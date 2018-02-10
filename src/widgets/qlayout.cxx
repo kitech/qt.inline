@@ -27,6 +27,7 @@ MyQLayout() : QLayout() {}
     QLayout::widgetEvent(arg0);
   }
   }
+
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * e) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQLayout() : QLayout() {}
     QLayout::childEvent(e);
   }
   }
+
 // void addChildLayout(class QLayout *)
   virtual void addChildLayout(QLayout * l) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQLayout() : QLayout() {}
     QLayout::addChildLayout(l);
   }
   }
+
 // void addChildWidget(class QWidget *)
   virtual void addChildWidget(QWidget * w) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQLayout() : QLayout() {}
     QLayout::addChildWidget(w);
   }
   }
+
 // bool adoptLayout(class QLayout *)
   virtual bool adoptLayout(QLayout * layout) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQLayout() : QLayout() {}
     return QLayout::adoptLayout(layout);
   }
   }
+
 // QRect alignmentRect(const class QRect &)
   virtual QRect alignmentRect(const QRect & arg0) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQLayout() : QLayout() {}
     return QLayout::alignmentRect(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -92,7 +98,7 @@ void* C_ZNK7QLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlayout.h:80
 // [-2] void QLayout(class QWidget *)
 extern "C"
-void* C_ZN7QLayoutC1EP7QWidget(QWidget * parent) {
+void* C_ZN7QLayoutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLayout*)(0);
   return 0; // new MyQLayout(parent);
 }
@@ -100,7 +106,7 @@ void* C_ZN7QLayoutC1EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qlayout.h:81
 // [-2] void QLayout()
 extern "C"
-void* C_ZN7QLayoutC1Ev() {
+void* C_ZN7QLayoutC2Ev() {
   auto _nilp = (MyQLayout*)(0);
   return 0; // new MyQLayout();
 }

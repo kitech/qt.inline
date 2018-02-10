@@ -16,7 +16,7 @@ public:
 // void QSGNode()
 MyQSGNode() : QSGNode() {}
 // void QSGNode(enum QSGNode::NodeType)
-MyQSGNode(QSGNode::NodeType type) : QSGNode(type) {}
+MyQSGNode(QSGNode::NodeType type_) : QSGNode(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -156,9 +156,9 @@ void C_ZN7QSGNode9markDirtyE6QFlagsINS_13DirtyStateBitEE(void *this_, QFlags<QSG
 // /usr/include/qt/QtQuick/qsgnode.h:154
 // [4] QSGNode::DirtyState dirtyState()
 extern "C"
-void C_ZNK7QSGNode10dirtyStateEv(void *this_) {
+QSGNode::DirtyState* C_ZNK7QSGNode10dirtyStateEv(void *this_) {
   auto rv = ((QSGNode*)this_)->dirtyState();
-/*return rv;*/
+return new QSGNode::DirtyState(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:156
@@ -171,9 +171,9 @@ bool C_ZNK7QSGNode16isSubtreeBlockedEv(void *this_) {
 // /usr/include/qt/QtQuick/qsgnode.h:158
 // [4] QSGNode::Flags flags()
 extern "C"
-void C_ZNK7QSGNode5flagsEv(void *this_) {
+QSGNode::Flags* C_ZNK7QSGNode5flagsEv(void *this_) {
   auto rv = ((QSGNode*)this_)->flags();
-/*return rv;*/
+return new QSGNode::Flags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:159
@@ -186,7 +186,7 @@ void C_ZN7QSGNode7setFlagENS_4FlagEb(void *this_, QSGNode::Flag arg0, bool arg1)
 // /usr/include/qt/QtQuick/qsgnode.h:160
 // [-2] void setFlags(QSGNode::Flags, _Bool)
 extern "C"
-void C_ZN7QSGNode8setFlagsE6QFlagsINS_4FlagEEb(void *this_, QSGNode::Flags arg0, bool arg1) {
+void C_ZN7QSGNode8setFlagsE6QFlagsINS_4FlagEEb(void *this_, QFlags<QSGNode::Flag> arg0, bool arg1) {
   ((QSGNode*)this_)->setFlags(arg0, arg1);
 }
 // Public inline virtual Visibility=Default Availability=Available

@@ -26,6 +26,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     return QToolBox::event(e);
   }
   }
+
 // void itemInserted(int)
   virtual void itemInserted(int index) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     QToolBox::itemInserted(index);
   }
   }
+
 // void itemRemoved(int)
   virtual void itemRemoved(int index) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     QToolBox::itemRemoved(index);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * e) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     QToolBox::showEvent(e);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     QToolBox::changeEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

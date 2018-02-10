@@ -16,7 +16,7 @@ public:
 // void QHistoryState(class QState *)
 MyQHistoryState(QState * parent) : QHistoryState(parent) {}
 // void QHistoryState(enum QHistoryState::HistoryType, class QState *)
-MyQHistoryState(QHistoryState::HistoryType type, QState * parent) : QHistoryState(type, parent) {}
+MyQHistoryState(QHistoryState::HistoryType type_, QState * parent) : QHistoryState(type_, parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
@@ -27,6 +27,7 @@ MyQHistoryState(QHistoryState::HistoryType type, QState * parent) : QHistoryStat
     QHistoryState::onEntry(event);
   }
   }
+
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQHistoryState(QHistoryState::HistoryType type, QState * parent) : QHistoryStat
     QHistoryState::onExit(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQHistoryState(QHistoryState::HistoryType type, QState * parent) : QHistoryStat
     return QHistoryState::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -69,9 +72,9 @@ void* C_ZN13QHistoryStateC2EP6QState(QState * parent) {
 // /usr/include/qt/QtCore/qhistorystate.h:65
 // [-2] void QHistoryState(enum QHistoryState::HistoryType, class QState *)
 extern "C"
-void* C_ZN13QHistoryStateC2ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType type, QState * parent) {
+void* C_ZN13QHistoryStateC2ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType type_, QState * parent) {
   auto _nilp = (MyQHistoryState*)(0);
-  return  new MyQHistoryState(type, parent);
+  return  new MyQHistoryState(type_, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:66
@@ -119,7 +122,7 @@ QHistoryState::HistoryType C_ZNK13QHistoryState11historyTypeEv(void *this_) {
 // /usr/include/qt/QtCore/qhistorystate.h:75
 // [-2] void setHistoryType(enum QHistoryState::HistoryType)
 extern "C"
-void C_ZN13QHistoryState14setHistoryTypeENS_11HistoryTypeE(void *this_, QHistoryState::HistoryType type) {
-  ((QHistoryState*)this_)->setHistoryType(type);
+void C_ZN13QHistoryState14setHistoryTypeENS_11HistoryTypeE(void *this_, QHistoryState::HistoryType type_) {
+  ((QHistoryState*)this_)->setHistoryType(type_);
 }
 //  main block end

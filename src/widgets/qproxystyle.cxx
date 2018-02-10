@@ -28,6 +28,7 @@ MyQProxyStyle(const QString & key) : QProxyStyle(key) {}
     return QProxyStyle::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -113,8 +114,8 @@ void C_ZNK11QProxyStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap(void *this
 // /usr/include/qt/QtWidgets/qproxystyle.h:71
 // [8] QSize sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
 extern "C"
-void* C_ZNK11QProxyStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType type, const QStyleOption * option, QSize* size, const QWidget * widget) {
-  auto rv = ((QProxyStyle*)this_)->sizeFromContents(type, option, *size, widget);
+void* C_ZNK11QProxyStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType type_, const QStyleOption * option, QSize* size, const QWidget * widget) {
+  auto rv = ((QProxyStyle*)this_)->sizeFromContents(type_, option, *size, widget);
 return new QSize(rv);
 }
 // Public virtual Visibility=Default Availability=Available

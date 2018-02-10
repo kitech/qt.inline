@@ -28,7 +28,7 @@ void* C_ZNK10QValidator10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:62
 // [-2] void QValidator(class QObject *)
 extern "C"
-void* C_ZN10QValidatorC1EP7QObject(QObject * parent) {
+void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
   return 0; // new QValidator(parent);
 }
 // Public virtual Visibility=Default Availability=Available

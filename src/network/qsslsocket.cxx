@@ -26,6 +26,7 @@ MyQSslSocket(QObject * parent) : QSslSocket(parent) {}
     return QSslSocket::readData(data, maxlen);
   }
   }
+
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQSslSocket(QObject * parent) : QSslSocket(parent) {}
     return QSslSocket::writeData(data, len);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

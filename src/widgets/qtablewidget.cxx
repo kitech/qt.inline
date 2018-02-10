@@ -28,6 +28,19 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return QTableWidget::event(e);
   }
   }
+
+// QStringList mimeTypes()
+  virtual QStringList mimeTypes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QStringList*)(irv);
+      // RecordRecordQStringList
+    } else {
+    return QTableWidget::mimeTypes();
+  }
+  }
+
 // bool dropMimeData(int, int, const class QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int row, int column, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
@@ -39,6 +52,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return QTableWidget::dropMimeData(row, column, data, action);
   }
   }
+
 // Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() {
     int handled = 0;
@@ -50,6 +64,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return QTableWidget::supportedDropActions();
   }
   }
+
 // QModelIndex indexFromItem(class QTableWidgetItem *)
   virtual QModelIndex indexFromItem(QTableWidgetItem * item) {
     int handled = 0;
@@ -61,6 +76,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return QTableWidget::indexFromItem(item);
   }
   }
+
 // QTableWidgetItem * itemFromIndex(const class QModelIndex &)
   virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) {
     int handled = 0;
@@ -72,6 +88,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return QTableWidget::itemFromIndex(index);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
@@ -82,6 +99,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     QTableWidget::dropEvent(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -363,15 +381,15 @@ bool C_ZNK12QTableWidget14isItemSelectedEPK16QTableWidgetItem(void *this_, const
 // /usr/include/qt/QtWidgets/qtablewidget.h:272
 // [-2] void setItemSelected(const class QTableWidgetItem *, _Bool)
 extern "C"
-void C_ZN12QTableWidget15setItemSelectedEPK16QTableWidgetItemb(void *this_, const QTableWidgetItem * item, bool select) {
-  ((QTableWidget*)this_)->setItemSelected(item, select);
+void C_ZN12QTableWidget15setItemSelectedEPK16QTableWidgetItemb(void *this_, const QTableWidgetItem * item, bool select_) {
+  ((QTableWidget*)this_)->setItemSelected(item, select_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:273
 // [-2] void setRangeSelected(const class QTableWidgetSelectionRange &, _Bool)
 extern "C"
-void C_ZN12QTableWidget16setRangeSelectedERK26QTableWidgetSelectionRangeb(void *this_, QTableWidgetSelectionRange* range, bool select) {
-  ((QTableWidget*)this_)->setRangeSelected(*range, select);
+void C_ZN12QTableWidget16setRangeSelectedERK26QTableWidgetSelectionRangeb(void *this_, QTableWidgetSelectionRange* range_, bool select_) {
+  ((QTableWidget*)this_)->setRangeSelected(*range_, select_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:279

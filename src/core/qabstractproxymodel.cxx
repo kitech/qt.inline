@@ -25,6 +25,7 @@ MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
     QAbstractProxyModel::resetInternalData();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,7 +39,7 @@ void* C_ZNK19QAbstractProxyModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractproxymodel.h:59
 // [-2] void QAbstractProxyModel(class QObject *)
 extern "C"
-void* C_ZN19QAbstractProxyModelC1EP7QObject(QObject * parent) {
+void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractProxyModel*)(0);
   return 0; // new MyQAbstractProxyModel(parent);
 }
@@ -211,6 +212,14 @@ bool C_ZNK19QAbstractProxyModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEii
 extern "C"
 bool C_ZN19QAbstractProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
   return (bool)((QAbstractProxyModel*)this_)->dropMimeData(data, action, row, column, *parent);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:96
+// [8] QStringList mimeTypes()
+extern "C"
+void* C_ZNK19QAbstractProxyModel9mimeTypesEv(void *this_) {
+  auto rv = ((QAbstractProxyModel*)this_)->mimeTypes();
+return new QStringList(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:97

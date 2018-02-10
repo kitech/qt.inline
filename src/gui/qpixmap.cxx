@@ -34,6 +34,7 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
     return QPixmap::metric(arg0);
   }
   }
+
 // QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
   virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
@@ -45,6 +46,7 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
     return QPixmap::fromImageInPlace(image, flags);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

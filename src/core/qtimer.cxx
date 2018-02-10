@@ -25,6 +25,7 @@ MyQTimer(QObject * parent) : QTimer(parent) {}
     QTimer::timerEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

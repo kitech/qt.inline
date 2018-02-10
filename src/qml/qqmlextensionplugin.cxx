@@ -28,7 +28,7 @@ void* C_ZNK19QQmlExtensionPlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:61
 // [-2] void QQmlExtensionPlugin(class QObject *)
 extern "C"
-void* C_ZN19QQmlExtensionPluginC1EP7QObject(QObject * parent) {
+void* C_ZN19QQmlExtensionPluginC2EP7QObject(QObject * parent) {
   return 0; // new QQmlExtensionPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

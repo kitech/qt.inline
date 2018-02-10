@@ -26,6 +26,7 @@ MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
     return QStackedWidget::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

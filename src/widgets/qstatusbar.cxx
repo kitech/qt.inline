@@ -25,6 +25,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     QStatusBar::showEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     QStatusBar::paintEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     QStatusBar::resizeEvent(arg0);
   }
   }
+
 // void reformat()
   virtual void reformat() {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     QStatusBar::reformat();
   }
   }
+
 // void hideOrShow()
   virtual void hideOrShow() {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     QStatusBar::hideOrShow();
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     return QStatusBar::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

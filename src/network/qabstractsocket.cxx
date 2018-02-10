@@ -26,6 +26,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     return QAbstractSocket::readData(data, maxlen);
   }
   }
+
 // qint64 readLineData(char *, qint64)
   virtual qint64 readLineData(char * data, qint64 maxlen) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     return QAbstractSocket::readLineData(data, maxlen);
   }
   }
+
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     return QAbstractSocket::writeData(data, len);
   }
   }
+
 // void setSocketState(enum QAbstractSocket::SocketState)
   virtual void setSocketState(QAbstractSocket::SocketState state) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setSocketState(state);
   }
   }
+
 // void setSocketError(enum QAbstractSocket::SocketError)
   virtual void setSocketError(QAbstractSocket::SocketError socketError) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setSocketError(socketError);
   }
   }
+
 // void setLocalPort(quint16)
   virtual void setLocalPort(quint16 port) {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setLocalPort(port);
   }
   }
+
 // void setLocalAddress(const class QHostAddress &)
   virtual void setLocalAddress(const QHostAddress & address) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setLocalAddress(address);
   }
   }
+
 // void setPeerPort(quint16)
   virtual void setPeerPort(quint16 port) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setPeerPort(port);
   }
   }
+
 // void setPeerAddress(const class QHostAddress &)
   virtual void setPeerAddress(const QHostAddress & address) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setPeerAddress(address);
   }
   }
+
 // void setPeerName(const class QString &)
   virtual void setPeerName(const QString & name) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QA
     QAbstractSocket::setPeerName(name);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -153,9 +163,9 @@ void C_ZN15QAbstractSocket6resumeEv(void *this_) {
 // /usr/include/qt/QtNetwork/qabstractsocket.h:143
 // [4] QAbstractSocket::PauseModes pauseMode()
 extern "C"
-void C_ZNK15QAbstractSocket9pauseModeEv(void *this_) {
+QAbstractSocket::PauseModes* C_ZNK15QAbstractSocket9pauseModeEv(void *this_) {
   auto rv = ((QAbstractSocket*)this_)->pauseMode();
-/*return rv;*/
+return new QAbstractSocket::PauseModes(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractsocket.h:144

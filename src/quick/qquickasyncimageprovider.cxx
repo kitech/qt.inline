@@ -21,7 +21,7 @@ MyQQuickAsyncImageProvider() : QQuickAsyncImageProvider() {}
 // /usr/include/qt/QtQuick/qquickimageprovider.h:115
 // [-2] void QQuickAsyncImageProvider()
 extern "C"
-void* C_ZN24QQuickAsyncImageProviderC1Ev() {
+void* C_ZN24QQuickAsyncImageProviderC2Ev() {
   return 0; // new QQuickAsyncImageProvider();
 }
 // Public virtual Visibility=Default Availability=Available

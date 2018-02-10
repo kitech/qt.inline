@@ -33,8 +33,8 @@ QQmlImageProviderBase::ImageType C_ZNK21QQmlImageProviderBase9imageTypeEv(void *
 // /usr/include/qt/QtQml/qqmlengine.h:75
 // [4] QQmlImageProviderBase::Flags flags()
 extern "C"
-void C_ZNK21QQmlImageProviderBase5flagsEv(void *this_) {
+QQmlImageProviderBase::Flags* C_ZNK21QQmlImageProviderBase5flagsEv(void *this_) {
   auto rv = ((QQmlImageProviderBase*)this_)->flags();
-/*return rv;*/
+return new QQmlImageProviderBase::Flags(rv);
 }
 //  main block end

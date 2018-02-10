@@ -25,6 +25,7 @@ MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
     QSGAbstractRenderer::nodeChanged(node, state);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -147,9 +148,9 @@ void C_ZN19QSGAbstractRenderer12setClearModeE6QFlagsINS_12ClearModeBitEE(void *t
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:85
 // [4] QSGAbstractRenderer::ClearMode clearMode()
 extern "C"
-void C_ZNK19QSGAbstractRenderer9clearModeEv(void *this_) {
+QSGAbstractRenderer::ClearMode* C_ZNK19QSGAbstractRenderer9clearModeEv(void *this_) {
   auto rv = ((QSGAbstractRenderer*)this_)->clearMode();
-/*return rv;*/
+return new QSGAbstractRenderer::ClearMode(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:87

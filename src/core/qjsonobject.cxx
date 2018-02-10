@@ -39,6 +39,14 @@ void C_ZN11QJsonObject4swapERS_(void *this_, QJsonObject* other) {
   ((QJsonObject*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonobject.h:101
+// [8] QStringList keys()
+extern "C"
+void* C_ZNK11QJsonObject4keysEv(void *this_) {
+  auto rv = ((QJsonObject*)this_)->keys();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:102
 // [4] int size()
 extern "C"

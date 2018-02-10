@@ -28,6 +28,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     return QKeySequenceEdit::event(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     QKeySequenceEdit::keyPressEvent(arg0);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     QKeySequenceEdit::keyReleaseEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     QKeySequenceEdit::timerEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

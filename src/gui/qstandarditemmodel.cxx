@@ -355,6 +355,14 @@ void C_ZN18QStandardItemModel11setSortRoleEi(void *this_, int role) {
   ((QStandardItemModel*)this_)->setSortRole(role);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:417
+// [8] QStringList mimeTypes()
+extern "C"
+void* C_ZNK18QStandardItemModel9mimeTypesEv(void *this_) {
+  auto rv = ((QStandardItemModel*)this_)->mimeTypes();
+return new QStringList(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:419
 // [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"

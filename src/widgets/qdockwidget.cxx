@@ -27,6 +27,7 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     QDockWidget::changeEvent(event);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     QDockWidget::closeEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     QDockWidget::paintEvent(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     return QDockWidget::event(event);
   }
   }
+
 // void initStyleOption(class QStyleOptionDockWidget *)
   virtual void initStyleOption(QStyleOptionDockWidget * option) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     QDockWidget::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -125,9 +130,9 @@ void C_ZN11QDockWidget11setFeaturesE6QFlagsINS_17DockWidgetFeatureEE(void *this_
 // /usr/include/qt/QtWidgets/qdockwidget.h:90
 // [4] QDockWidget::DockWidgetFeatures features()
 extern "C"
-void C_ZNK11QDockWidget8featuresEv(void *this_) {
+QDockWidget::DockWidgetFeatures* C_ZNK11QDockWidget8featuresEv(void *this_) {
   auto rv = ((QDockWidget*)this_)->features();
-/*return rv;*/
+return new QDockWidget::DockWidgetFeatures(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:92

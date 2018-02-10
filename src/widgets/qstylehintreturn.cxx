@@ -14,15 +14,15 @@ class MyQStyleHintReturn : public QStyleHintReturn {
 public:
   virtual ~MyQStyleHintReturn() {}
 // void QStyleHintReturn(int, int)
-MyQStyleHintReturn(int version, int type) : QStyleHintReturn(version, type) {}
+MyQStyleHintReturn(int version, int type_) : QStyleHintReturn(version, type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:710
 // [-2] void QStyleHintReturn(int, int)
 extern "C"
-void* C_ZN16QStyleHintReturnC2Eii(int version, int type) {
-  return  new QStyleHintReturn(version, type);
+void* C_ZN16QStyleHintReturnC2Eii(int version, int type_) {
+  return  new QStyleHintReturn(version, type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:711

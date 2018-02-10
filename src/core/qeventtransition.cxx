@@ -16,7 +16,7 @@ public:
 // void QEventTransition(class QState *)
 MyQEventTransition(QState * sourceState) : QEventTransition(sourceState) {}
 // void QEventTransition(class QObject *, class QEvent::Type, class QState *)
-MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : QEventTransition(object, type, sourceState) {}
+MyQEventTransition(QObject * object, QEvent::Type type_, QState * sourceState) : QEventTransition(object, type_, sourceState) {}
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
     int handled = 0;
@@ -28,6 +28,7 @@ MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : 
     return QEventTransition::eventTest(event);
   }
   }
+
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : 
     QEventTransition::onTransition(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : 
     return QEventTransition::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -70,9 +73,9 @@ void* C_ZN16QEventTransitionC2EP6QState(QState * sourceState) {
 // /usr/include/qt/QtCore/qeventtransition.h:58
 // [-2] void QEventTransition(class QObject *, class QEvent::Type, class QState *)
 extern "C"
-void* C_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type, QState * sourceState) {
+void* C_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type_, QState * sourceState) {
   auto _nilp = (MyQEventTransition*)(0);
-  return  new MyQEventTransition(object, type, sourceState);
+  return  new MyQEventTransition(object, type_, sourceState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventtransition.h:59
@@ -106,7 +109,7 @@ QEvent::Type C_ZNK16QEventTransition9eventTypeEv(void *this_) {
 // /usr/include/qt/QtCore/qeventtransition.h:65
 // [-2] void setEventType(class QEvent::Type)
 extern "C"
-void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Type type) {
-  ((QEventTransition*)this_)->setEventType(type);
+void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Type type_) {
+  ((QEventTransition*)this_)->setEventType(type_);
 }
 //  main block end

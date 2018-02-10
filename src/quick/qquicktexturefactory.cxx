@@ -21,7 +21,7 @@ MyQQuickTextureFactory() : QQuickTextureFactory() {}
 // /usr/include/qt/QtQuick/qquickimageprovider.h:60
 // [-2] void QQuickTextureFactory()
 extern "C"
-void* C_ZN20QQuickTextureFactoryC1Ev() {
+void* C_ZN20QQuickTextureFactoryC2Ev() {
   return 0; // new QQuickTextureFactory();
 }
 // Public virtual Visibility=Default Availability=Available

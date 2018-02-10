@@ -307,9 +307,9 @@ void C_ZN11QTextStream14setNumberFlagsE6QFlagsINS_10NumberFlagEE(void *this_, QF
 // /usr/include/qt/QtCore/qtextstream.h:147
 // [4] QTextStream::NumberFlags numberFlags()
 extern "C"
-void C_ZNK11QTextStream11numberFlagsEv(void *this_) {
+QTextStream::NumberFlags* C_ZNK11QTextStream11numberFlagsEv(void *this_) {
   auto rv = ((QTextStream*)this_)->numberFlags();
-/*return rv;*/
+return new QTextStream::NumberFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:149

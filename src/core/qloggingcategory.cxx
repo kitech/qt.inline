@@ -44,15 +44,15 @@ void C_ZN16QLoggingCategoryD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qloggingcategory.h:57
 // [1] bool isEnabled(enum QtMsgType)
 extern "C"
-bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type) {
-  return (bool)((QLoggingCategory*)this_)->isEnabled(type);
+bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type_) {
+  return (bool)((QLoggingCategory*)this_)->isEnabled(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:58
 // [-2] void setEnabled(enum QtMsgType, _Bool)
 extern "C"
-void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type, bool enable) {
-  ((QLoggingCategory*)this_)->setEnabled(type, enable);
+void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type_, bool enable) {
+  ((QLoggingCategory*)this_)->setEnabled(type_, enable);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:61

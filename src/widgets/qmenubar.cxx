@@ -25,6 +25,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::changeEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::keyPressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::mouseReleaseEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::mousePressEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::mouseMoveEvent(arg0);
   }
   }
+
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::leaveEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::paintEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::resizeEvent(arg0);
   }
   }
+
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
     int handled = 0;
@@ -105,6 +113,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::actionEvent(arg0);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -115,6 +124,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::focusOutEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -125,6 +135,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::focusInEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -135,6 +146,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::timerEvent(arg0);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
@@ -146,6 +158,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     return QMenuBar::eventFilter(arg0, arg1);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -157,6 +170,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     return QMenuBar::event(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionMenuItem *, const class QAction *)
   virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) {
     int handled = 0;
@@ -167,6 +181,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     QMenuBar::initStyleOption(option, action);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

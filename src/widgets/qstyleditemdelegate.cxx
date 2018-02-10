@@ -25,6 +25,7 @@ MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
     QStyledItemDelegate::initStyleOption(option, index);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
     return QStyledItemDelegate::eventFilter(object, event);
   }
   }
+
 // bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
   virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
     return QStyledItemDelegate::editorEvent(event, model, option, index);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

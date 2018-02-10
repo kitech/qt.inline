@@ -27,6 +27,7 @@ MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelec
     QItemSelectionModel::emitSelectionChanged(newSelection, oldSelection);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -108,6 +109,30 @@ bool C_ZNK19QItemSelectionModel25columnIntersectsSelectionEiRK11QModelIndex(void
 extern "C"
 bool C_ZNK19QItemSelectionModel12hasSelectionEv(void *this_) {
   return (bool)((QItemSelectionModel*)this_)->hasSelection();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:182
+// [8] QModelIndexList selectedIndexes()
+extern "C"
+QModelIndexList* C_ZNK19QItemSelectionModel15selectedIndexesEv(void *this_) {
+  auto rv = ((QItemSelectionModel*)this_)->selectedIndexes();
+return new QModelIndexList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:183
+// [8] QModelIndexList selectedRows(int)
+extern "C"
+QModelIndexList* C_ZNK19QItemSelectionModel12selectedRowsEi(void *this_, int column) {
+  auto rv = ((QItemSelectionModel*)this_)->selectedRows(column);
+return new QModelIndexList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:184
+// [8] QModelIndexList selectedColumns(int)
+extern "C"
+QModelIndexList* C_ZNK19QItemSelectionModel15selectedColumnsEi(void *this_, int row) {
+  auto rv = ((QItemSelectionModel*)this_)->selectedColumns(row);
+return new QModelIndexList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:185

@@ -25,6 +25,7 @@ MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
     QQuickTransform::update();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,7 +39,7 @@ void* C_ZNK15QQuickTransform10metaObjectEv(void *this_) {
 // /usr/include/qt/QtQuick/qquickitem.h:62
 // [-2] void QQuickTransform(class QObject *)
 extern "C"
-void* C_ZN15QQuickTransformC1EP7QObject(QObject * parent) {
+void* C_ZN15QQuickTransformC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQQuickTransform*)(0);
   return 0; // new MyQQuickTransform(parent);
 }

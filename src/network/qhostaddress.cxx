@@ -143,9 +143,9 @@ quint32 C_ZNK12QHostAddress13toIPv4AddressEPb(void *this_, bool * ok) {
 // /usr/include/qt/QtNetwork/qhostaddress.h:130
 // [16] Q_IPV6ADDR toIPv6Address()
 extern "C"
-void C_ZNK12QHostAddress13toIPv6AddressEv(void *this_) {
+Q_IPV6ADDR* C_ZNK12QHostAddress13toIPv6AddressEv(void *this_) {
   auto rv = ((QHostAddress*)this_)->toIPv6Address();
-/*return rv;*/
+return new Q_IPV6ADDR(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:132

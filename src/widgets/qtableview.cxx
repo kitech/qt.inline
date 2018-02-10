@@ -25,6 +25,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::rowMoved(row, oldIndex, newIndex);
   }
   }
+
 // void columnMoved(int, int, int)
   virtual void columnMoved(int column, int oldIndex, int newIndex) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::columnMoved(column, oldIndex, newIndex);
   }
   }
+
 // void rowResized(int, int, int)
   virtual void rowResized(int row, int oldHeight, int newHeight) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::rowResized(row, oldHeight, newHeight);
   }
   }
+
 // void columnResized(int, int, int)
   virtual void columnResized(int column, int oldWidth, int newWidth) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::columnResized(column, oldWidth, newWidth);
   }
   }
+
 // void rowCountChanged(int, int)
   virtual void rowCountChanged(int oldCount, int newCount) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::rowCountChanged(oldCount, newCount);
   }
   }
+
 // void columnCountChanged(int, int)
   virtual void columnCountChanged(int oldCount, int newCount) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::columnCountChanged(oldCount, newCount);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::scrollContentsBy(dx, dy);
   }
   }
+
 // QStyleOptionViewItem viewOptions()
   virtual QStyleOptionViewItem viewOptions() {
     int handled = 0;
@@ -96,6 +103,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::viewOptions();
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::paintEvent(e);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
@@ -116,6 +125,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::timerEvent(event);
   }
   }
+
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::horizontalOffset();
   }
   }
+
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -138,6 +149,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::verticalOffset();
   }
   }
+
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
@@ -149,6 +161,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::moveCursor(cursorAction, modifiers);
   }
   }
+
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::setSelection(rect, command);
   }
   }
+
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -170,6 +184,19 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::visualRegionForSelection(selection);
   }
   }
+
+// QModelIndexList selectedIndexes()
+  virtual QModelIndexList selectedIndexes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndexList*)(irv);
+      // TypedefRecordQList<QModelIndex>
+    } else {
+    return QTableView::selectedIndexes();
+  }
+  }
+
 // void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
@@ -180,6 +207,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::updateGeometries();
   }
   }
+
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
     int handled = 0;
@@ -191,6 +219,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::viewportSizeHint();
   }
   }
+
 // int sizeHintForRow(int)
   virtual int sizeHintForRow(int row) {
     int handled = 0;
@@ -202,6 +231,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::sizeHintForRow(row);
   }
   }
+
 // int sizeHintForColumn(int)
   virtual int sizeHintForColumn(int column) {
     int handled = 0;
@@ -213,6 +243,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::sizeHintForColumn(column);
   }
   }
+
 // void verticalScrollbarAction(int)
   virtual void verticalScrollbarAction(int action) {
     int handled = 0;
@@ -223,6 +254,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::verticalScrollbarAction(action);
   }
   }
+
 // void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action) {
     int handled = 0;
@@ -233,6 +265,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::horizontalScrollbarAction(action);
   }
   }
+
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
@@ -244,6 +277,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return QTableView::isIndexHidden(index);
   }
   }
+
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
@@ -254,6 +288,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::selectionChanged(selected, deselected);
   }
   }
+
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
@@ -264,6 +299,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     QTableView::currentChanged(current, previous);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

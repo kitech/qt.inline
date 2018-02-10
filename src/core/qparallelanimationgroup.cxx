@@ -26,6 +26,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
     return QParallelAnimationGroup::event(event);
   }
   }
+
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
     QParallelAnimationGroup::updateCurrentTime(currentTime);
   }
   }
+
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
     QParallelAnimationGroup::updateState(newState, oldState);
   }
   }
+
 // void updateDirection(class QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
     QParallelAnimationGroup::updateDirection(direction);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

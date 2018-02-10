@@ -149,6 +149,14 @@ extern "C"
 void C_ZN6QColor13setNamedColorE13QLatin1String(void *this_, QLatin1String* name) {
   ((QColor*)this_)->setNamedColor(*name);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:107
+// [8] QStringList colorNames()
+extern "C"
+void* C_ZN6QColor10colorNamesEv() {
+  auto rv = QColor::colorNames();
+return new QStringList(rv);
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:109
 // [4] QColor::Spec spec()

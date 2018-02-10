@@ -31,6 +31,7 @@ MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
     QStandardItem::emitDataChanged();
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

@@ -25,6 +25,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::updateSection(logicalIndex);
   }
   }
+
 // void resizeSections()
   virtual void resizeSections() {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::resizeSections();
   }
   }
+
 // void sectionsInserted(const class QModelIndex &, int, int)
   virtual void sectionsInserted(const QModelIndex & parent, int logicalFirst, int logicalLast) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::sectionsInserted(parent, logicalFirst, logicalLast);
   }
   }
+
 // void sectionsAboutToBeRemoved(const class QModelIndex &, int, int)
   virtual void sectionsAboutToBeRemoved(const QModelIndex & parent, int logicalFirst, int logicalLast) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::sectionsAboutToBeRemoved(parent, logicalFirst, logicalLast);
   }
   }
+
 // void initialize()
   virtual void initialize() {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::initialize();
   }
   }
+
 // void initializeSections()
   virtual void initializeSections() {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::initializeSections();
   }
   }
+
 // void initializeSections(int, int)
   virtual void initializeSections(int start, int end) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::initializeSections(start, end);
   }
   }
+
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & old) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::currentChanged(current, old);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::event(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
@@ -116,6 +125,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::paintEvent(e);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
     int handled = 0;
@@ -126,6 +136,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::mousePressEvent(e);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
@@ -136,6 +147,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::mouseMoveEvent(e);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
@@ -146,6 +158,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::mouseReleaseEvent(e);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * e) {
     int handled = 0;
@@ -156,6 +169,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::mouseDoubleClickEvent(e);
   }
   }
+
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * e) {
     int handled = 0;
@@ -167,6 +181,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::viewportEvent(e);
   }
   }
+
 // void paintSection(class QPainter *, const class QRect &, int)
   virtual void paintSection(QPainter * painter, const QRect & rect, int logicalIndex) {
     int handled = 0;
@@ -177,6 +192,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::paintSection(painter, rect, logicalIndex);
   }
   }
+
 // QSize sectionSizeFromContents(int)
   virtual QSize sectionSizeFromContents(int logicalIndex) {
     int handled = 0;
@@ -188,6 +204,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::sectionSizeFromContents(logicalIndex);
   }
   }
+
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -199,6 +216,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::horizontalOffset();
   }
   }
+
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -210,6 +228,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::verticalOffset();
   }
   }
+
 // void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
@@ -220,6 +239,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::updateGeometries();
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -230,6 +250,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::scrollContentsBy(dx, dy);
   }
   }
+
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -240,6 +261,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::rowsInserted(parent, start, end);
   }
   }
+
 // QRect visualRect(const class QModelIndex &)
   virtual QRect visualRect(const QModelIndex & index) {
     int handled = 0;
@@ -251,6 +273,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::visualRect(index);
   }
   }
+
 // void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
   virtual void scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint) {
     int handled = 0;
@@ -261,6 +284,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::scrollTo(index, hint);
   }
   }
+
 // QModelIndex indexAt(const class QPoint &)
   virtual QModelIndex indexAt(const QPoint & p) {
     int handled = 0;
@@ -272,6 +296,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::indexAt(p);
   }
   }
+
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
@@ -283,8 +308,9 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::isIndexHidden(index);
   }
   }
+
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction arg0, Qt::KeyboardModifiers arg1) {
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction arg0, QFlags<Qt::KeyboardModifier> arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"moveCursor", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -294,6 +320,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::moveCursor(arg0, arg1);
   }
   }
+
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> flags) {
     int handled = 0;
@@ -304,6 +331,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::setSelection(rect, flags);
   }
   }
+
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -315,6 +343,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return QHeaderView::visualRegionForSelection(selection);
   }
   }
+
 // void initStyleOption(class QStyleOptionHeader *)
   virtual void initStyleOption(QStyleOptionHeader * option) {
     int handled = 0;
@@ -325,6 +354,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     QHeaderView::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

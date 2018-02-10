@@ -153,6 +153,14 @@ void* C_ZNK23QRegularExpressionMatch12capturedViewE11QStringView(void *this_, QS
 return new QStringView(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:213
+// [8] QStringList capturedTexts()
+extern "C"
+void* C_ZNK23QRegularExpressionMatch13capturedTextsEv(void *this_) {
+  auto rv = ((QRegularExpressionMatch*)this_)->capturedTexts();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:215
 // [4] int capturedStart(int)
 extern "C"

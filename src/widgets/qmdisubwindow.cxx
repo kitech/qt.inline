@@ -26,6 +26,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     return QMdiSubWindow::eventFilter(object, event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     return QMdiSubWindow::event(event);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::showEvent(showEvent);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * hideEvent) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::hideEvent(hideEvent);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * changeEvent) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::changeEvent(changeEvent);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * closeEvent) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::closeEvent(closeEvent);
   }
   }
+
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * leaveEvent) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::leaveEvent(leaveEvent);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * resizeEvent) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::resizeEvent(resizeEvent);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * timerEvent) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::timerEvent(timerEvent);
   }
   }
+
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * moveEvent) {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::moveEvent(moveEvent);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * paintEvent) {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::paintEvent(paintEvent);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * mouseEvent) {
     int handled = 0;
@@ -137,6 +148,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::mousePressEvent(mouseEvent);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * mouseEvent) {
     int handled = 0;
@@ -147,6 +159,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::mouseDoubleClickEvent(mouseEvent);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
     int handled = 0;
@@ -157,6 +170,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::mouseReleaseEvent(mouseEvent);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * mouseEvent) {
     int handled = 0;
@@ -167,6 +181,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::mouseMoveEvent(mouseEvent);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * keyEvent) {
     int handled = 0;
@@ -177,6 +192,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::keyPressEvent(keyEvent);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * contextMenuEvent) {
     int handled = 0;
@@ -187,6 +203,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::contextMenuEvent(contextMenuEvent);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * focusInEvent) {
     int handled = 0;
@@ -197,6 +214,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::focusInEvent(focusInEvent);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * focusOutEvent) {
     int handled = 0;
@@ -207,6 +225,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::focusOutEvent(focusOutEvent);
   }
   }
+
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * childEvent) {
     int handled = 0;
@@ -217,6 +236,7 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     QMdiSubWindow::childEvent(childEvent);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

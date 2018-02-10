@@ -26,6 +26,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     return QDial::event(e);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * re) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::resizeEvent(re);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * pe) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::paintEvent(pe);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * me) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::mousePressEvent(me);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * me) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::mouseReleaseEvent(me);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * me) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::mouseMoveEvent(me);
   }
   }
+
 // void sliderChange(enum QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
@@ -86,6 +92,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::sliderChange(change);
   }
   }
+
 // void initStyleOption(class QStyleOptionSlider *)
   virtual void initStyleOption(QStyleOptionSlider * option) {
     int handled = 0;
@@ -96,6 +103,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
     QDial::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

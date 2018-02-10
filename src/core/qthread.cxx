@@ -25,6 +25,7 @@ MyQThread(QObject * parent) : QThread(parent) {}
     QThread::run();
   }
   }
+
 // int exec()
   virtual int exec() {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQThread(QObject * parent) : QThread(parent) {}
     return QThread::exec();
   }
   }
+
 // void setTerminationEnabled(_Bool)
   virtual void setTerminationEnabled(bool enabled) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQThread(QObject * parent) : QThread(parent) {}
     QThread::setTerminationEnabled(enabled);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -55,10 +55,42 @@ bool C_ZN18QFileSystemWatcher7addPathERK7QString(void *this_, QString* file) {
   return (bool)((QFileSystemWatcher*)this_)->addPath(*file);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:63
+// [8] QStringList addPaths(const class QStringList &)
+extern "C"
+void* C_ZN18QFileSystemWatcher8addPathsERK11QStringList(void *this_, QStringList* files) {
+  auto rv = ((QFileSystemWatcher*)this_)->addPaths(*files);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:64
 // [1] bool removePath(const class QString &)
 extern "C"
 bool C_ZN18QFileSystemWatcher10removePathERK7QString(void *this_, QString* file) {
   return (bool)((QFileSystemWatcher*)this_)->removePath(*file);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:65
+// [8] QStringList removePaths(const class QStringList &)
+extern "C"
+void* C_ZN18QFileSystemWatcher11removePathsERK11QStringList(void *this_, QStringList* files) {
+  auto rv = ((QFileSystemWatcher*)this_)->removePaths(*files);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:67
+// [8] QStringList files()
+extern "C"
+void* C_ZNK18QFileSystemWatcher5filesEv(void *this_) {
+  auto rv = ((QFileSystemWatcher*)this_)->files();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:68
+// [8] QStringList directories()
+extern "C"
+void* C_ZNK18QFileSystemWatcher11directoriesEv(void *this_) {
+  auto rv = ((QFileSystemWatcher*)this_)->directories();
+return new QStringList(rv);
 }
 //  main block end

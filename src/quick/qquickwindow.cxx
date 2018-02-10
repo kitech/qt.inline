@@ -27,6 +27,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::exposeEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::resizeEvent(arg0);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::showEvent(arg0);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::hideEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::focusInEvent(arg0);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::focusOutEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     return QQuickWindow::event(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::keyPressEvent(arg0);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::keyReleaseEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -128,6 +138,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -138,6 +149,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::mouseDoubleClickEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -148,6 +160,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::mouseMoveEvent(arg0);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
@@ -158,6 +171,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
     QQuickWindow::wheelEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -54,16 +54,16 @@ QSGRendererInterface::ShaderType C_ZNK20QSGRendererInterface10shaderTypeEv(void 
 // /usr/include/qt/QtQuick/qsgrendererinterface.h:94
 // [4] QSGRendererInterface::ShaderCompilationTypes shaderCompilationType()
 extern "C"
-void C_ZNK20QSGRendererInterface21shaderCompilationTypeEv(void *this_) {
+QSGRendererInterface::ShaderCompilationTypes* C_ZNK20QSGRendererInterface21shaderCompilationTypeEv(void *this_) {
   auto rv = ((QSGRendererInterface*)this_)->shaderCompilationType();
-/*return rv;*/
+return new QSGRendererInterface::ShaderCompilationTypes(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendererinterface.h:95
 // [4] QSGRendererInterface::ShaderSourceTypes shaderSourceType()
 extern "C"
-void C_ZNK20QSGRendererInterface16shaderSourceTypeEv(void *this_) {
+QSGRendererInterface::ShaderSourceTypes* C_ZNK20QSGRendererInterface16shaderSourceTypeEv(void *this_) {
   auto rv = ((QSGRendererInterface*)this_)->shaderSourceType();
-/*return rv;*/
+return new QSGRendererInterface::ShaderSourceTypes(rv);
 }
 //  main block end

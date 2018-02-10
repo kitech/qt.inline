@@ -26,6 +26,19 @@ MyQNetworkAccessManager(QObject * parent) : QNetworkAccessManager(parent) {}
     return QNetworkAccessManager::createRequest(op, request, outgoingData);
   }
   }
+
+// QStringList supportedSchemesImplementation()
+  virtual QStringList supportedSchemesImplementation() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"supportedSchemesImplementation", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QStringList*)(irv);
+      // RecordRecordQStringList
+    } else {
+    return QNetworkAccessManager::supportedSchemesImplementation();
+  }
+  }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -49,6 +62,14 @@ void* C_ZN21QNetworkAccessManagerC2EP7QObject(QObject * parent) {
 extern "C"
 void C_ZN21QNetworkAccessManagerD2Ev(void *this_) {
   delete (QNetworkAccessManager*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:107
+// [8] QStringList supportedSchemes()
+extern "C"
+void* C_ZNK21QNetworkAccessManager16supportedSchemesEv(void *this_) {
+  auto rv = ((QNetworkAccessManager*)this_)->supportedSchemes();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:109

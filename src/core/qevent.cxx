@@ -14,15 +14,15 @@ class MyQEvent : public QEvent {
 public:
   virtual ~MyQEvent() {}
 // void QEvent(enum QEvent::Type)
-MyQEvent(QEvent::Type type) : QEvent(type) {}
+MyQEvent(QEvent::Type type_) : QEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:297
 // [-2] void QEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN6QEventC2ENS_4TypeE(QEvent::Type type) {
-  return  new QEvent(type);
+void* C_ZN6QEventC2ENS_4TypeE(QEvent::Type type_) {
+  return  new QEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:299

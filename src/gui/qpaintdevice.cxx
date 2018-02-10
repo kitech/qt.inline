@@ -133,7 +133,7 @@ qreal C_ZN12QPaintDevice22devicePixelRatioFScaleEv() {
 // /usr/include/qt/QtGui/qpaintdevice.h:101
 // [-2] void QPaintDevice(const class QPaintDevice &)
 extern "C"
-void* C_ZN12QPaintDeviceC1ERKS_(QPaintDevice* arg0) {
+void* C_ZN12QPaintDeviceC2ERKS_(QPaintDevice* arg0) {
   return 0; // new QPaintDevice(*arg0);
 }
 //  main block end

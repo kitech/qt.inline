@@ -34,6 +34,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return QImage::metric(metric);
   }
   }
+
 // QImage mirrored_helper(_Bool, _Bool)
   virtual QImage mirrored_helper(bool horizontal, bool vertical) {
     int handled = 0;
@@ -45,6 +46,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return QImage::mirrored_helper(horizontal, vertical);
   }
   }
+
 // QImage rgbSwapped_helper()
   virtual QImage rgbSwapped_helper() {
     int handled = 0;
@@ -56,6 +58,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return QImage::rgbSwapped_helper();
   }
   }
+
 // void mirrored_inplace(_Bool, _Bool)
   virtual void mirrored_inplace(bool horizontal, bool vertical) {
     int handled = 0;
@@ -66,6 +69,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     QImage::mirrored_inplace(horizontal, vertical);
   }
   }
+
 // void rgbSwapped_inplace()
   virtual void rgbSwapped_inplace() {
     int handled = 0;
@@ -76,6 +80,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     QImage::rgbSwapped_inplace();
   }
   }
+
 // QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
   virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
@@ -87,6 +92,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return QImage::convertToFormat_helper(format, flags);
   }
   }
+
 // bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
   virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
@@ -98,6 +104,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return QImage::convertToFormat_inplace(format, flags);
   }
   }
+
 // QImage smoothScaled(int, int)
   virtual QImage smoothScaled(int w, int h) {
     int handled = 0;
@@ -109,6 +116,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return QImage::smoothScaled(w, h);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
@@ -772,6 +780,14 @@ return new QPoint(rv);
 extern "C"
 void C_ZN6QImage9setOffsetERK6QPoint(void *this_, QPoint* arg0) {
   ((QImage*)this_)->setOffset(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:324
+// [8] QStringList textKeys()
+extern "C"
+void* C_ZNK6QImage8textKeysEv(void *this_) {
+  auto rv = ((QImage*)this_)->textKeys();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:325

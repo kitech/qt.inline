@@ -100,6 +100,38 @@ void* C_ZNK15QSslCertificate6digestEN18QCryptographicHash9AlgorithmE(void *this_
 return new QByteArray(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:121
+// [8] QStringList issuerInfo(enum QSslCertificate::SubjectInfo)
+extern "C"
+void* C_ZNK15QSslCertificate10issuerInfoENS_11SubjectInfoE(void *this_, QSslCertificate::SubjectInfo info) {
+  auto rv = ((QSslCertificate*)this_)->issuerInfo(info);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:122
+// [8] QStringList issuerInfo(const class QByteArray &)
+extern "C"
+void* C_ZNK15QSslCertificate10issuerInfoERK10QByteArray(void *this_, QByteArray* attribute) {
+  auto rv = ((QSslCertificate*)this_)->issuerInfo(*attribute);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:123
+// [8] QStringList subjectInfo(enum QSslCertificate::SubjectInfo)
+extern "C"
+void* C_ZNK15QSslCertificate11subjectInfoENS_11SubjectInfoE(void *this_, QSslCertificate::SubjectInfo info) {
+  auto rv = ((QSslCertificate*)this_)->subjectInfo(info);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:124
+// [8] QStringList subjectInfo(const class QByteArray &)
+extern "C"
+void* C_ZNK15QSslCertificate11subjectInfoERK10QByteArray(void *this_, QByteArray* attribute) {
+  auto rv = ((QSslCertificate*)this_)->subjectInfo(*attribute);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:132
 // [8] QDateTime effectiveDate()
 extern "C"

@@ -28,17 +28,19 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
     return QTextDocument::createObject(f);
   }
   }
+
 // QVariant loadResource(int, const class QUrl &)
-  virtual QVariant loadResource(int type, const QUrl & name) {
+  virtual QVariant loadResource(int type_, const QUrl & name) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"loadResource", &handled, 2, (uint64_t)type, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr(this, (char*)"loadResource", &handled, 2, (uint64_t)type_, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    return QTextDocument::loadResource(type, name);
+    return QTextDocument::loadResource(type_, name);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -403,16 +405,16 @@ void C_ZNK13QTextDocument5printEP17QPagedPaintDevice(void *this_, QPagedPaintDev
 // /usr/include/qt/QtGui/qtextdocument.h:216
 // [16] QVariant resource(int, const class QUrl &)
 extern "C"
-void* C_ZNK13QTextDocument8resourceEiRK4QUrl(void *this_, int type, QUrl* name) {
-  auto rv = ((QTextDocument*)this_)->resource(type, *name);
+void* C_ZNK13QTextDocument8resourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
+  auto rv = ((QTextDocument*)this_)->resource(type_, *name);
 return new QVariant(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:217
 // [-2] void addResource(int, const class QUrl &, const class QVariant &)
 extern "C"
-void C_ZN13QTextDocument11addResourceEiRK4QUrlRK8QVariant(void *this_, int type, QUrl* name, QVariant* resource) {
-  ((QTextDocument*)this_)->addResource(type, *name, *resource);
+void C_ZN13QTextDocument11addResourceEiRK4QUrlRK8QVariant(void *this_, int type_, QUrl* name, QVariant* resource) {
+  ((QTextDocument*)this_)->addResource(type_, *name, *resource);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:221

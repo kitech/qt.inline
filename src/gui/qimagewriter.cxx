@@ -139,8 +139,8 @@ float C_ZNK12QImageWriter5gammaEv(void *this_) {
 // /usr/include/qt/QtGui/qimagewriter.h:90
 // [-2] void setSubType(const class QByteArray &)
 extern "C"
-void C_ZN12QImageWriter10setSubTypeERK10QByteArray(void *this_, QByteArray* type) {
-  ((QImageWriter*)this_)->setSubType(*type);
+void C_ZN12QImageWriter10setSubTypeERK10QByteArray(void *this_, QByteArray* type_) {
+  ((QImageWriter*)this_)->setSubType(*type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:91

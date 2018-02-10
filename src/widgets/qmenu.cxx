@@ -28,6 +28,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     return QMenu::columnCount();
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::changeEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::keyPressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::mouseReleaseEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::mousePressEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::mouseMoveEvent(arg0);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::wheelEvent(arg0);
   }
   }
+
 // void enterEvent(class QEvent *)
   virtual void enterEvent(QEvent * arg0) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::enterEvent(arg0);
   }
   }
+
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::leaveEvent(arg0);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::hideEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -128,6 +138,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::paintEvent(arg0);
   }
   }
+
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
     int handled = 0;
@@ -138,6 +149,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::actionEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -148,6 +160,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::timerEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     return QMenu::event(arg0);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -170,6 +184,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     return QMenu::focusNextPrevChild(next);
   }
   }
+
 // void initStyleOption(class QStyleOptionMenuItem *, const class QAction *)
   virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) {
     int handled = 0;
@@ -180,6 +195,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
     QMenu::initStyleOption(option, action);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

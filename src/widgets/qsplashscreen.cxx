@@ -28,6 +28,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
     return QSplashScreen::event(e);
   }
   }
+
 // void drawContents(class QPainter *)
   virtual void drawContents(QPainter * painter) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
     QSplashScreen::drawContents(painter);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
     QSplashScreen::mousePressEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -22,4 +22,12 @@ extern "C"
 void C_ZN17QFactoryInterfaceD2Ev(void *this_) {
   delete (QFactoryInterface*)(this_);
 }
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfactoryinterface.h:52
+// [8] QStringList keys()
+extern "C"
+void* C_ZNK17QFactoryInterface4keysEv(void *this_) {
+  auto rv = ((QFactoryInterface*)this_)->keys();
+return new QStringList(rv);
+}
 //  main block end

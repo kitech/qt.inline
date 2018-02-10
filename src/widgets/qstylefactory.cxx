@@ -16,6 +16,14 @@ public:
 };
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstylefactory.h:54
+// [8] QStringList keys()
+extern "C"
+void* C_ZN13QStyleFactory4keysEv() {
+  auto rv = QStyleFactory::keys();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylefactory.h:55
 // [8] QStyle * create(const class QString &)
 extern "C"

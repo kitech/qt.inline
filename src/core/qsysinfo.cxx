@@ -107,3 +107,15 @@ void C_ZN8QSysInfoD2Ev(void *this_) {
   delete (QSysInfo*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end

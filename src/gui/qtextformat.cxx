@@ -16,7 +16,7 @@ public:
 // void QTextFormat()
 MyQTextFormat() : QTextFormat() {}
 // void QTextFormat(int)
-MyQTextFormat(int type) : QTextFormat(type) {}
+MyQTextFormat(int type_) : QTextFormat(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -30,8 +30,8 @@ void* C_ZN11QTextFormatC2Ev() {
 // /usr/include/qt/QtGui/qtextformat.h:290
 // [-2] void QTextFormat(int)
 extern "C"
-void* C_ZN11QTextFormatC2Ei(int type) {
-  return  new QTextFormat(type);
+void* C_ZN11QTextFormatC2Ei(int type_) {
+  return  new QTextFormat(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:294
@@ -190,8 +190,8 @@ int C_ZNK11QTextFormat13propertyCountEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:329
 // [-2] void setObjectType(int)
 extern "C"
-void C_ZN11QTextFormat13setObjectTypeEi(void *this_, int type) {
-  ((QTextFormat*)this_)->setObjectType(type);
+void C_ZN11QTextFormat13setObjectTypeEi(void *this_, int type_) {
+  ((QTextFormat*)this_)->setObjectType(type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:330

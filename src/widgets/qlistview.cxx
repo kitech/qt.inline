@@ -26,6 +26,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::event(e);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::scrollContentsBy(dx, dy);
   }
   }
+
 // void resizeContents(int, int)
   virtual void resizeContents(int width, int height) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::resizeContents(width, height);
   }
   }
+
 // QSize contentsSize()
   virtual QSize contentsSize() {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::contentsSize();
   }
   }
+
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::rowsInserted(parent, start, end);
   }
   }
+
 // void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
   virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::rowsAboutToBeRemoved(parent, start, end);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::mouseMoveEvent(e);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::mouseReleaseEvent(e);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::wheelEvent(e);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::timerEvent(e);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::resizeEvent(e);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * e) {
     int handled = 0;
@@ -137,6 +148,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::dragMoveEvent(e);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * e) {
     int handled = 0;
@@ -147,6 +159,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::dragLeaveEvent(e);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * e) {
     int handled = 0;
@@ -157,6 +170,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::dropEvent(e);
   }
   }
+
 // void startDrag(Qt::DropActions)
   virtual void startDrag(QFlags<Qt::DropAction> supportedActions) {
     int handled = 0;
@@ -167,6 +181,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::startDrag(supportedActions);
   }
   }
+
 // QStyleOptionViewItem viewOptions()
   virtual QStyleOptionViewItem viewOptions() {
     int handled = 0;
@@ -178,6 +193,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::viewOptions();
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
@@ -188,6 +204,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::paintEvent(e);
   }
   }
+
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -199,6 +216,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::horizontalOffset();
   }
   }
+
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -210,6 +228,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::verticalOffset();
   }
   }
+
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
@@ -221,6 +240,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::moveCursor(cursorAction, modifiers);
   }
   }
+
 // QRect rectForIndex(const class QModelIndex &)
   virtual QRect rectForIndex(const QModelIndex & index) {
     int handled = 0;
@@ -232,6 +252,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::rectForIndex(index);
   }
   }
+
 // void setPositionForIndex(const class QPoint &, const class QModelIndex &)
   virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
     int handled = 0;
@@ -242,6 +263,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::setPositionForIndex(position, index);
   }
   }
+
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
@@ -252,6 +274,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::setSelection(rect, command);
   }
   }
+
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -263,6 +286,19 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::visualRegionForSelection(selection);
   }
   }
+
+// QModelIndexList selectedIndexes()
+  virtual QModelIndexList selectedIndexes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndexList*)(irv);
+      // TypedefRecordQList<QModelIndex>
+    } else {
+    return QListView::selectedIndexes();
+  }
+  }
+
 // void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
@@ -273,6 +309,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::updateGeometries();
   }
   }
+
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
@@ -284,6 +321,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::isIndexHidden(index);
   }
   }
+
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
@@ -294,6 +332,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::selectionChanged(selected, deselected);
   }
   }
+
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
@@ -304,6 +343,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     QListView::currentChanged(current, previous);
   }
   }
+
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
     int handled = 0;
@@ -315,6 +355,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
     return QListView::viewportSizeHint();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

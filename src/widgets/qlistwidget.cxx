@@ -26,6 +26,19 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return QListWidget::event(e);
   }
   }
+
+// QStringList mimeTypes()
+  virtual QStringList mimeTypes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QStringList*)(irv);
+      // RecordRecordQStringList
+    } else {
+    return QListWidget::mimeTypes();
+  }
+  }
+
 // bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
@@ -37,6 +50,7 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return QListWidget::dropMimeData(index, data, action);
   }
   }
+
 // Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() {
     int handled = 0;
@@ -48,6 +62,7 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return QListWidget::supportedDropActions();
   }
   }
+
 // QModelIndex indexFromItem(class QListWidgetItem *)
   virtual QModelIndex indexFromItem(QListWidgetItem * item) {
     int handled = 0;
@@ -59,6 +74,7 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return QListWidget::indexFromItem(item);
   }
   }
+
 // QListWidgetItem * itemFromIndex(const class QModelIndex &)
   virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) {
     int handled = 0;
@@ -70,6 +86,7 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return QListWidget::itemFromIndex(index);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -316,8 +333,8 @@ bool C_ZNK11QListWidget14isItemSelectedEPK15QListWidgetItem(void *this_, const Q
 // /usr/include/qt/QtWidgets/qlistwidget.h:250
 // [-2] void setItemSelected(const class QListWidgetItem *, _Bool)
 extern "C"
-void C_ZN11QListWidget15setItemSelectedEPK15QListWidgetItemb(void *this_, const QListWidgetItem * item, bool select) {
-  ((QListWidget*)this_)->setItemSelected(item, select);
+void C_ZN11QListWidget15setItemSelectedEPK15QListWidgetItemb(void *this_, const QListWidgetItem * item, bool select_) {
+  ((QListWidget*)this_)->setItemSelected(item, select_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:254

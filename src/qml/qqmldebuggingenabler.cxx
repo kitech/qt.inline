@@ -25,6 +25,38 @@ void* C_ZN20QQmlDebuggingEnablerC2Eb(bool printWarning) {
   return  new QQmlDebuggingEnabler(printWarning);
 }
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmldebug.h:60
+// [8] QStringList debuggerServices()
+extern "C"
+void* C_ZN20QQmlDebuggingEnabler16debuggerServicesEv() {
+  auto rv = QQmlDebuggingEnabler::debuggerServices();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmldebug.h:61
+// [8] QStringList inspectorServices()
+extern "C"
+void* C_ZN20QQmlDebuggingEnabler17inspectorServicesEv() {
+  auto rv = QQmlDebuggingEnabler::inspectorServices();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmldebug.h:62
+// [8] QStringList profilerServices()
+extern "C"
+void* C_ZN20QQmlDebuggingEnabler16profilerServicesEv() {
+  auto rv = QQmlDebuggingEnabler::profilerServices();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmldebug.h:63
+// [8] QStringList nativeDebuggerServices()
+extern "C"
+void* C_ZN20QQmlDebuggingEnabler22nativeDebuggerServicesEv() {
+  auto rv = QQmlDebuggingEnabler::nativeDebuggerServices();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmldebug.h:65
 // [-2] void setServices(const class QStringList &)
 extern "C"

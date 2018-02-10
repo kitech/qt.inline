@@ -40,9 +40,9 @@ qreal C_ZNK9QTextItem5widthEv(void *this_) {
 // /usr/include/qt/QtGui/qpaintengine.h:79
 // [4] QTextItem::RenderFlags renderFlags()
 extern "C"
-void C_ZNK9QTextItem11renderFlagsEv(void *this_) {
+QTextItem::RenderFlags* C_ZNK9QTextItem11renderFlagsEv(void *this_) {
   auto rv = ((QTextItem*)this_)->renderFlags();
-/*return rv;*/
+return new QTextItem::RenderFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:80

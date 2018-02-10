@@ -28,7 +28,7 @@ void* C_ZNK14QGenericPlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qgenericplugin.h:55
 // [-2] void QGenericPlugin(class QObject *)
 extern "C"
-void* C_ZN14QGenericPluginC1EP7QObject(QObject * parent) {
+void* C_ZN14QGenericPluginC2EP7QObject(QObject * parent) {
   return 0; // new QGenericPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

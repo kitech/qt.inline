@@ -28,6 +28,7 @@ MyQSystemTrayIcon(const QIcon & icon, QObject * parent) : QSystemTrayIcon(icon, 
     return QSystemTrayIcon::event(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

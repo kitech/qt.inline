@@ -25,6 +25,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     QSplitterHandle::paintEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     QSplitterHandle::mouseMoveEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     QSplitterHandle::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     QSplitterHandle::mouseReleaseEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     QSplitterHandle::resizeEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     return QSplitterHandle::event(arg0);
   }
   }
+
 // void moveSplitter(int)
   virtual void moveSplitter(int p) {
     int handled = 0;
@@ -86,6 +92,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     QSplitterHandle::moveSplitter(p);
   }
   }
+
 // int closestLegalPosition(int)
   virtual int closestLegalPosition(int p) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     return QSplitterHandle::closestLegalPosition(p);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -21,7 +21,7 @@ MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeIte
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:603
 // [-2] void QAbstractGraphicsShapeItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN26QAbstractGraphicsShapeItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
+void* C_ZN26QAbstractGraphicsShapeItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   return 0; // new QAbstractGraphicsShapeItem(parent);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -26,6 +26,7 @@ MyQQmlEngine(QObject * p) : QQmlEngine(p) {}
     return QQmlEngine::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -72,6 +73,14 @@ void C_ZN10QQmlEngine18trimComponentCacheEv(void *this_) {
   ((QQmlEngine*)this_)->trimComponentCache();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:108
+// [8] QStringList importPathList()
+extern "C"
+void* C_ZNK10QQmlEngine14importPathListEv(void *this_) {
+  auto rv = ((QQmlEngine*)this_)->importPathList();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlengine.h:109
 // [-2] void setImportPathList(const class QStringList &)
 extern "C"
@@ -84,6 +93,14 @@ void C_ZN10QQmlEngine17setImportPathListERK11QStringList(void *this_, QStringLis
 extern "C"
 void C_ZN10QQmlEngine13addImportPathERK7QString(void *this_, QString* dir) {
   ((QQmlEngine*)this_)->addImportPath(*dir);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:112
+// [8] QStringList pluginPathList()
+extern "C"
+void* C_ZNK10QQmlEngine14pluginPathListEv(void *this_) {
+  auto rv = ((QQmlEngine*)this_)->pluginPathList();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlengine.h:113

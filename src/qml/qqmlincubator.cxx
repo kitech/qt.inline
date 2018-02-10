@@ -25,6 +25,7 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
     QQmlIncubator::statusChanged(arg0);
   }
   }
+
 // void setInitialState(class QObject *)
   virtual void setInitialState(QObject * arg0) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
     QQmlIncubator::setInitialState(arg0);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

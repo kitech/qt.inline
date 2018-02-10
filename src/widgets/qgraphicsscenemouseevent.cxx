@@ -14,15 +14,15 @@ class MyQGraphicsSceneMouseEvent : public QGraphicsSceneMouseEvent {
 public:
   virtual ~MyQGraphicsSceneMouseEvent() {}
 // void QGraphicsSceneMouseEvent(enum QEvent::Type)
-MyQGraphicsSceneMouseEvent(QEvent::Type type) : QGraphicsSceneMouseEvent(type) {}
+MyQGraphicsSceneMouseEvent(QEvent::Type type_) : QGraphicsSceneMouseEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:85
 // [-2] void QGraphicsSceneMouseEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN24QGraphicsSceneMouseEventC2EN6QEvent4TypeE(QEvent::Type type) {
-  return  new QGraphicsSceneMouseEvent(type);
+void* C_ZN24QGraphicsSceneMouseEventC2EN6QEvent4TypeE(QEvent::Type type_) {
+  return  new QGraphicsSceneMouseEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:86
@@ -233,7 +233,7 @@ Qt::MouseEventFlags C_ZNK24QGraphicsSceneMouseEvent5flagsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:128
 // [-2] void setFlags(Qt::MouseEventFlags)
 extern "C"
-void C_ZN24QGraphicsSceneMouseEvent8setFlagsE6QFlagsIN2Qt14MouseEventFlagEE(void *this_, Qt::MouseEventFlags arg0) {
+void C_ZN24QGraphicsSceneMouseEvent8setFlagsE6QFlagsIN2Qt14MouseEventFlagEE(void *this_, QFlags<Qt::MouseEventFlag> arg0) {
   ((QGraphicsSceneMouseEvent*)this_)->setFlags(arg0);
 }
 //  main block end

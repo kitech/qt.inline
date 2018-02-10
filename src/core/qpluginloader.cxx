@@ -62,6 +62,14 @@ void* C_ZNK13QPluginLoader8metaDataEv(void *this_) {
   auto rv = ((QPluginLoader*)this_)->metaData();
 return new QJsonObject(rv);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:69
+// [8] QObjectList staticInstances()
+extern "C"
+void C_ZN13QPluginLoader15staticInstancesEv() {
+  auto rv = QPluginLoader::staticInstances();
+/*return rv;*/
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:72
 // [1] bool load()

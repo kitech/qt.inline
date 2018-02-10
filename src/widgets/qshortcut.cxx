@@ -28,6 +28,7 @@ MyQShortcut(const QKeySequence & key, QWidget * parent, const char * member, con
     return QShortcut::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

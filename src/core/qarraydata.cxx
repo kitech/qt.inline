@@ -47,17 +47,17 @@ size_t C_ZNK10QArrayData14detachCapacityEm(void *this_, size_t newSize) {
 // /usr/include/qt/QtCore/qarraydata.h:99
 // [4] QArrayData::AllocationOptions detachFlags()
 extern "C"
-void C_ZNK10QArrayData11detachFlagsEv(void *this_) {
+QArrayData::AllocationOptions* C_ZNK10QArrayData11detachFlagsEv(void *this_) {
   auto rv = ((QArrayData*)this_)->detachFlags();
-/*return rv;*/
+return new QArrayData::AllocationOptions(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:107
 // [4] QArrayData::AllocationOptions cloneFlags()
 extern "C"
-void C_ZNK10QArrayData10cloneFlagsEv(void *this_) {
+QArrayData::AllocationOptions* C_ZNK10QArrayData10cloneFlagsEv(void *this_) {
   auto rv = ((QArrayData*)this_)->cloneFlags();
-/*return rv;*/
+return new QArrayData::AllocationOptions(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:115

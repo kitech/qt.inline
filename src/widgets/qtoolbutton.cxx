@@ -26,6 +26,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     return QToolButton::event(e);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::mouseReleaseEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::paintEvent(arg0);
   }
   }
+
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::actionEvent(arg0);
   }
   }
+
 // void enterEvent(class QEvent *)
   virtual void enterEvent(QEvent * arg0) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::enterEvent(arg0);
   }
   }
+
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
     int handled = 0;
@@ -86,6 +92,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::leaveEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -96,6 +103,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::timerEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::changeEvent(arg0);
   }
   }
+
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & pos) {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     return QToolButton::hitButton(pos);
   }
   }
+
 // void nextCheckState()
   virtual void nextCheckState() {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::nextCheckState();
   }
   }
+
 // void initStyleOption(class QStyleOptionToolButton *)
   virtual void initStyleOption(QStyleOptionToolButton * option) {
     int handled = 0;
@@ -137,6 +148,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     QToolButton::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -195,8 +207,8 @@ Qt::ArrowType C_ZNK11QToolButton9arrowTypeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbutton.h:83
 // [-2] void setArrowType(Qt::ArrowType)
 extern "C"
-void C_ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE(void *this_, Qt::ArrowType type) {
-  ((QToolButton*)this_)->setArrowType(type);
+void C_ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE(void *this_, Qt::ArrowType type_) {
+  ((QToolButton*)this_)->setArrowType(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:86

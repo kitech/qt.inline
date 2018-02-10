@@ -14,7 +14,7 @@ class MyQSGBasicGeometryNode : public QSGBasicGeometryNode {
 public:
   virtual ~MyQSGBasicGeometryNode() {}
 // void QSGBasicGeometryNode(enum QSGNode::NodeType)
-MyQSGBasicGeometryNode(QSGNode::NodeType type) : QSGBasicGeometryNode(type) {}
+MyQSGBasicGeometryNode(QSGNode::NodeType type_) : QSGBasicGeometryNode(type_) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -25,6 +25,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::updateMicroFocus();
   }
   }
+
 // bool sceneEventFilter(class QGraphicsItem *, class QEvent *)
   virtual bool sceneEventFilter(QGraphicsItem * watched, QEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     return QGraphicsItem::sceneEventFilter(watched, event);
   }
   }
+
 // bool sceneEvent(class QEvent *)
   virtual bool sceneEvent(QEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     return QGraphicsItem::sceneEvent(event);
   }
   }
+
 // void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
   virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::contextMenuEvent(event);
   }
   }
+
 // void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::dragEnterEvent(event);
   }
   }
+
 // void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::dragLeaveEvent(event);
   }
   }
+
 // void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::dragMoveEvent(event);
   }
   }
+
 // void dropEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::dropEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::focusInEvent(event);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::focusOutEvent(event);
   }
   }
+
 // void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::hoverEnterEvent(event);
   }
   }
+
 // void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
@@ -137,6 +148,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::hoverMoveEvent(event);
   }
   }
+
 // void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
@@ -147,6 +159,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::hoverLeaveEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -157,6 +170,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::keyPressEvent(event);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
@@ -167,6 +181,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::keyReleaseEvent(event);
   }
   }
+
 // void mousePressEvent(class QGraphicsSceneMouseEvent *)
   virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -177,6 +192,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::mousePressEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -187,6 +203,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::mouseMoveEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -197,6 +214,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::mouseReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -207,6 +225,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::mouseDoubleClickEvent(event);
   }
   }
+
 // void wheelEvent(class QGraphicsSceneWheelEvent *)
   virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
     int handled = 0;
@@ -217,6 +236,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::wheelEvent(event);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
@@ -227,6 +247,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::inputMethodEvent(event);
   }
   }
+
 // QVariant inputMethodQuery(Qt::InputMethodQuery)
   virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) {
     int handled = 0;
@@ -238,6 +259,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     return QGraphicsItem::inputMethodQuery(query);
   }
   }
+
 // QVariant itemChange(enum QGraphicsItem::GraphicsItemChange, const class QVariant &)
   virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
     int handled = 0;
@@ -249,6 +271,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     return QGraphicsItem::itemChange(change, value);
   }
   }
+
 // bool supportsExtension(enum QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
     int handled = 0;
@@ -260,6 +283,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     return QGraphicsItem::supportsExtension(extension);
   }
   }
+
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
@@ -270,6 +294,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::setExtension(extension, variant);
   }
   }
+
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
@@ -281,6 +306,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     return QGraphicsItem::extension(variant);
   }
   }
+
 // void addToIndex()
   virtual void addToIndex() {
     int handled = 0;
@@ -291,6 +317,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::addToIndex();
   }
   }
+
 // void removeFromIndex()
   virtual void removeFromIndex() {
     int handled = 0;
@@ -301,6 +328,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::removeFromIndex();
   }
   }
+
 // void prepareGeometryChange()
   virtual void prepareGeometryChange() {
     int handled = 0;
@@ -311,13 +339,14 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
     QGraphicsItem::prepareGeometryChange();
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:161
 // [-2] void QGraphicsItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN13QGraphicsItemC1EPS_(QGraphicsItem * parent) {
+void* C_ZN13QGraphicsItemC2EPS_(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsItem*)(0);
   return 0; // new MyQGraphicsItem(parent);
 }
@@ -423,9 +452,9 @@ void C_ZN13QGraphicsItem8setGroupEP18QGraphicsItemGroup(void *this_, QGraphicsIt
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:188
 // [4] QGraphicsItem::GraphicsItemFlags flags()
 extern "C"
-void C_ZNK13QGraphicsItem5flagsEv(void *this_) {
+QGraphicsItem::GraphicsItemFlags* C_ZNK13QGraphicsItem5flagsEv(void *this_) {
   auto rv = ((QGraphicsItem*)this_)->flags();
-/*return rv;*/
+return new QGraphicsItem::GraphicsItemFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:189

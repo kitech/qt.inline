@@ -27,6 +27,7 @@ MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial,
     QColorDialog::changeEvent(event);
   }
   }
+
 // void done(int)
   virtual void done(int result) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial,
     QColorDialog::done(result);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -117,9 +119,9 @@ void C_ZN12QColorDialog10setOptionsE6QFlagsINS_17ColorDialogOptionEE(void *this_
 // /usr/include/qt/QtWidgets/qcolordialog.h:83
 // [4] QColorDialog::ColorDialogOptions options()
 extern "C"
-void C_ZNK12QColorDialog7optionsEv(void *this_) {
+QColorDialog::ColorDialogOptions* C_ZNK12QColorDialog7optionsEv(void *this_) {
   auto rv = ((QColorDialog*)this_)->options();
-/*return rv;*/
+return new QColorDialog::ColorDialogOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:86

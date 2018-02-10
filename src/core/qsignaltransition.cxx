@@ -28,6 +28,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
     return QSignalTransition::eventTest(event);
   }
   }
+
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
     QSignalTransition::onTransition(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
     return QSignalTransition::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

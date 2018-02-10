@@ -28,7 +28,7 @@ void* C_ZNK12QStylePlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstyleplugin.h:58
 // [-2] void QStylePlugin(class QObject *)
 extern "C"
-void* C_ZN12QStylePluginC1EP7QObject(QObject * parent) {
+void* C_ZN12QStylePluginC2EP7QObject(QObject * parent) {
   return 0; // new QStylePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -26,6 +26,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     return QTabBar::tabSizeHint(index);
   }
   }
+
 // QSize minimumTabSizeHint(int)
   virtual QSize minimumTabSizeHint(int index) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     return QTabBar::minimumTabSizeHint(index);
   }
   }
+
 // void tabInserted(int)
   virtual void tabInserted(int index) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::tabInserted(index);
   }
   }
+
 // void tabRemoved(int)
   virtual void tabRemoved(int index) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::tabRemoved(index);
   }
   }
+
 // void tabLayoutChange()
   virtual void tabLayoutChange() {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::tabLayoutChange();
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     return QTabBar::event(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::resizeEvent(arg0);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::showEvent(arg0);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::hideEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::paintEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -128,6 +138,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::mousePressEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -138,6 +149,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::mouseMoveEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -148,6 +160,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::mouseReleaseEvent(arg0);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
@@ -158,6 +171,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::wheelEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -168,6 +182,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::keyPressEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -178,6 +193,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::changeEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
@@ -188,6 +204,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::timerEvent(event);
   }
   }
+
 // void initStyleOption(class QStyleOptionTab *, int)
   virtual void initStyleOption(QStyleOptionTab * option, int tabIndex) {
     int handled = 0;
@@ -198,6 +215,7 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     QTabBar::initStyleOption(option, tabIndex);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

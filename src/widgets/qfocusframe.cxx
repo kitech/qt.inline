@@ -26,6 +26,7 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     return QFocusFrame::event(e);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     return QFocusFrame::eventFilter(arg0, arg1);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     QFocusFrame::paintEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOption *)
   virtual void initStyleOption(QStyleOption * option) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     QFocusFrame::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -25,6 +25,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     QItemDelegate::drawDisplay(painter, option, rect, text);
   }
   }
+
 // void drawDecoration(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, const class QPixmap &)
   virtual void drawDecoration(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QPixmap & pixmap) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     QItemDelegate::drawDecoration(painter, option, rect, pixmap);
   }
   }
+
 // void drawFocus(class QPainter *, const class QStyleOptionViewItem &, const class QRect &)
   virtual void drawFocus(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     QItemDelegate::drawFocus(painter, option, rect);
   }
   }
+
 // void drawCheck(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, Qt::CheckState)
   virtual void drawCheck(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, Qt::CheckState state) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     QItemDelegate::drawCheck(painter, option, rect, state);
   }
   }
+
 // void drawBackground(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
   virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     QItemDelegate::drawBackground(painter, option, index);
   }
   }
+
 // void doLayout(const class QStyleOptionViewItem &, class QRect *, class QRect *, class QRect *, _Bool)
   virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     QItemDelegate::doLayout(option, checkRect, iconRect, textRect, hint);
   }
   }
+
 // QRect rect(const class QStyleOptionViewItem &, const class QModelIndex &, int)
   virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) {
     int handled = 0;
@@ -86,6 +92,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::rect(option, index, role);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::eventFilter(object, event);
   }
   }
+
 // bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
   virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::editorEvent(event, model, option, index);
   }
   }
+
 // QStyleOptionViewItem setOptions(const class QModelIndex &, const class QStyleOptionViewItem &)
   virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) {
     int handled = 0;
@@ -119,6 +128,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::setOptions(index, option);
   }
   }
+
 // QPixmap decoration(const class QStyleOptionViewItem &, const class QVariant &)
   virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) {
     int handled = 0;
@@ -130,6 +140,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::decoration(option, variant);
   }
   }
+
 // QPixmap * selected(const class QPixmap &, const class QPalette &, _Bool)
   virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) {
     int handled = 0;
@@ -141,6 +152,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::selected(pixmap, palette, enabled);
   }
   }
+
 // QRect doCheck(const class QStyleOptionViewItem &, const class QRect &, const class QVariant &)
   virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) {
     int handled = 0;
@@ -152,6 +164,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::doCheck(option, bounding, variant);
   }
   }
+
 // QRect textRectangle(class QPainter *, const class QRect &, const class QFont &, const class QString &)
   virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) {
     int handled = 0;
@@ -163,6 +176,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return QItemDelegate::textRectangle(painter, rect, font, text);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

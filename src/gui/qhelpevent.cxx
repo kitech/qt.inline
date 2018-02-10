@@ -14,15 +14,15 @@ class MyQHelpEvent : public QHelpEvent {
 public:
   virtual ~MyQHelpEvent() {}
 // void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
-MyQHelpEvent(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type, pos, globalPos) {}
+MyQHelpEvent(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type_, pos, globalPos) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:680
 // [-2] void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type, QPoint* pos, QPoint* globalPos) {
-  return  new QHelpEvent(type, *pos, *globalPos);
+void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type_, QPoint* pos, QPoint* globalPos) {
+  return  new QHelpEvent(type_, *pos, *globalPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:681

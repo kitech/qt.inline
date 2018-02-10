@@ -28,7 +28,7 @@ void* C_ZNK19QQuickImageResponse10metaObjectEv(void *this_) {
 // /usr/include/qt/QtQuick/qquickimageprovider.h:75
 // [-2] void QQuickImageResponse()
 extern "C"
-void* C_ZN19QQuickImageResponseC1Ev() {
+void* C_ZN19QQuickImageResponseC2Ev() {
   return 0; // new QQuickImageResponse();
 }
 // Public virtual Visibility=Default Availability=Available

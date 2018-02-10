@@ -30,6 +30,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
     return QGraphicsEllipseItem::supportsExtension(extension);
   }
   }
+
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
@@ -40,6 +41,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
     QGraphicsEllipseItem::setExtension(extension, variant);
   }
   }
+
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
@@ -51,6 +53,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
     return QGraphicsEllipseItem::extension(variant);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

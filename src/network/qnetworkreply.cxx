@@ -26,6 +26,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     return QNetworkReply::writeData(data, len);
   }
   }
+
 // void setOperation(class QNetworkAccessManager::Operation)
   virtual void setOperation(QNetworkAccessManager::Operation operation) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setOperation(operation);
   }
   }
+
 // void setRequest(const class QNetworkRequest &)
   virtual void setRequest(const QNetworkRequest & request) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setRequest(request);
   }
   }
+
 // void setError(enum QNetworkReply::NetworkError, const class QString &)
   virtual void setError(QNetworkReply::NetworkError errorCode, const QString & errorString) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setError(errorCode, errorString);
   }
   }
+
 // void setFinished(_Bool)
   virtual void setFinished(bool arg0) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setFinished(arg0);
   }
   }
+
 // void setUrl(const class QUrl &)
   virtual void setUrl(const QUrl & url) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setUrl(url);
   }
   }
+
 // void setHeader(class QNetworkRequest::KnownHeaders, const class QVariant &)
   virtual void setHeader(QNetworkRequest::KnownHeaders header, const QVariant & value) {
     int handled = 0;
@@ -86,6 +92,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setHeader(header, value);
   }
   }
+
 // void setRawHeader(const class QByteArray &, const class QByteArray &)
   virtual void setRawHeader(const QByteArray & headerName, const QByteArray & value) {
     int handled = 0;
@@ -96,6 +103,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setRawHeader(headerName, value);
   }
   }
+
 // void setAttribute(class QNetworkRequest::Attribute, const class QVariant &)
   virtual void setAttribute(QNetworkRequest::Attribute code, const QVariant & value) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setAttribute(code, value);
   }
   }
+
 // void sslConfigurationImplementation(class QSslConfiguration &)
   virtual void sslConfigurationImplementation(QSslConfiguration & arg0) {
     int handled = 0;
@@ -116,6 +125,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::sslConfigurationImplementation(arg0);
   }
   }
+
 // void setSslConfigurationImplementation(const class QSslConfiguration &)
   virtual void setSslConfigurationImplementation(const QSslConfiguration & arg0) {
     int handled = 0;
@@ -126,6 +136,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
     QNetworkReply::setSslConfigurationImplementation(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

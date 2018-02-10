@@ -26,6 +26,7 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
     return QProgressBar::event(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
     QProgressBar::paintEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionProgressBar *)
   virtual void initStyleOption(QStyleOptionProgressBar * option) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
     QProgressBar::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

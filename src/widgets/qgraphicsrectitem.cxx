@@ -30,6 +30,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
     return QGraphicsRectItem::supportsExtension(extension);
   }
   }
+
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
@@ -40,6 +41,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
     QGraphicsRectItem::setExtension(extension, variant);
   }
   }
+
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
@@ -51,6 +53,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
     return QGraphicsRectItem::extension(variant);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

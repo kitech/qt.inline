@@ -99,6 +99,14 @@ void C_ZN16QStringListModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::S
   ((QStringListModel*)this_)->sort(column, order);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlistmodel.h:71
+// [8] QStringList stringList()
+extern "C"
+void* C_ZNK16QStringListModel10stringListEv(void *this_) {
+  auto rv = ((QStringListModel*)this_)->stringList();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlistmodel.h:72
 // [-2] void setStringList(const class QStringList &)
 extern "C"

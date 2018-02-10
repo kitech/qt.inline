@@ -27,6 +27,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::mousePressEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::mouseMoveEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::mouseDoubleClickEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::keyPressEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::focusInEvent(arg0);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::focusOutEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::paintEvent(arg0);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::dragEnterEvent(arg0);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * e) {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::dragMoveEvent(e);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * e) {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::dragLeaveEvent(e);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
@@ -137,6 +148,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::dropEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -147,6 +159,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::changeEvent(arg0);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * arg0) {
     int handled = 0;
@@ -157,6 +170,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::contextMenuEvent(arg0);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
@@ -167,6 +181,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::inputMethodEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionFrame *)
   virtual void initStyleOption(QStyleOptionFrame * option) {
     int handled = 0;
@@ -177,6 +192,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     QLineEdit::initStyleOption(option);
   }
   }
+
 // QRect cursorRect()
   virtual QRect cursorRect() {
     int handled = 0;
@@ -188,6 +204,7 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     return QLineEdit::cursorRect();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -16,7 +16,7 @@ public:
 // void QNetworkProxy()
 MyQNetworkProxy() : QNetworkProxy() {}
 // void QNetworkProxy(enum QNetworkProxy::ProxyType, const class QString &, quint16, const class QString &, const class QString &)
-MyQNetworkProxy(QNetworkProxy::ProxyType type, const QString & hostName, quint16 port, const QString & user, const QString & password) : QNetworkProxy(type, hostName, port, user, password) {}
+MyQNetworkProxy(QNetworkProxy::ProxyType type_, const QString & hostName, quint16 port, const QString & user, const QString & password) : QNetworkProxy(type_, hostName, port, user, password) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -30,8 +30,8 @@ void* C_ZN13QNetworkProxyC2Ev() {
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:161
 // [-2] void QNetworkProxy(enum QNetworkProxy::ProxyType, const class QString &, quint16, const class QString &, const class QString &)
 extern "C"
-void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::ProxyType type, QString* hostName, quint16 port, QString* user, QString* password) {
-  return  new QNetworkProxy(type, *hostName, port, *user, *password);
+void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::ProxyType type_, QString* hostName, quint16 port, QString* user, QString* password) {
+  return  new QNetworkProxy(type_, *hostName, port, *user, *password);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:168
@@ -51,8 +51,8 @@ void C_ZN13QNetworkProxy4swapERS_(void *this_, QNetworkProxy* other) {
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:176
 // [-2] void setType(class QNetworkProxy::ProxyType)
 extern "C"
-void C_ZN13QNetworkProxy7setTypeENS_9ProxyTypeE(void *this_, QNetworkProxy::ProxyType type) {
-  ((QNetworkProxy*)this_)->setType(type);
+void C_ZN13QNetworkProxy7setTypeENS_9ProxyTypeE(void *this_, QNetworkProxy::ProxyType type_) {
+  ((QNetworkProxy*)this_)->setType(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:177
@@ -72,9 +72,9 @@ void C_ZN13QNetworkProxy15setCapabilitiesE6QFlagsINS_10CapabilityEE(void *this_,
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:180
 // [4] QNetworkProxy::Capabilities capabilities()
 extern "C"
-void C_ZNK13QNetworkProxy12capabilitiesEv(void *this_) {
+QNetworkProxy::Capabilities* C_ZNK13QNetworkProxy12capabilitiesEv(void *this_) {
   auto rv = ((QNetworkProxy*)this_)->capabilities();
-/*return rv;*/
+return new QNetworkProxy::Capabilities(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:181

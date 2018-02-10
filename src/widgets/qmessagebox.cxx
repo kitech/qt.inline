@@ -30,6 +30,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     return QMessageBox::event(e);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -40,6 +41,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     QMessageBox::resizeEvent(event);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
@@ -50,6 +52,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     QMessageBox::showEvent(event);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
@@ -60,6 +63,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     QMessageBox::closeEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -70,6 +74,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     QMessageBox::keyPressEvent(event);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
@@ -80,6 +85,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     QMessageBox::changeEvent(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -165,9 +171,9 @@ void C_ZN11QMessageBox18setStandardButtonsE6QFlagsINS_14StandardButtonEE(void *t
 // /usr/include/qt/QtWidgets/qmessagebox.h:153
 // [4] QMessageBox::StandardButtons standardButtons()
 extern "C"
-void C_ZNK11QMessageBox15standardButtonsEv(void *this_) {
+QMessageBox::StandardButtons* C_ZNK11QMessageBox15standardButtonsEv(void *this_) {
   auto rv = ((QMessageBox*)this_)->standardButtons();
-/*return rv;*/
+return new QMessageBox::StandardButtons(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:154

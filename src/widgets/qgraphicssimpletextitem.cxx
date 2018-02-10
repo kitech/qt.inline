@@ -28,6 +28,7 @@ MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraph
     return QGraphicsSimpleTextItem::supportsExtension(extension);
   }
   }
+
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraph
     QGraphicsSimpleTextItem::setExtension(extension, variant);
   }
   }
+
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraph
     return QGraphicsSimpleTextItem::extension(variant);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

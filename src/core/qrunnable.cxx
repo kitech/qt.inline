@@ -28,7 +28,7 @@ void C_ZN9QRunnable3runEv(void *this_) {
 // /usr/include/qt/QtCore/qrunnable.h:60
 // [-2] void QRunnable()
 extern "C"
-void* C_ZN9QRunnableC1Ev() {
+void* C_ZN9QRunnableC2Ev() {
   return 0; // new QRunnable();
 }
 // Public virtual Visibility=Default Availability=Available

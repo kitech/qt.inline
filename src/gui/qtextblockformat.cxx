@@ -184,9 +184,9 @@ void C_ZN16QTextBlockFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBrea
 // /usr/include/qt/QtGui/qtextformat.h:642
 // [4] QTextFormat::PageBreakFlags pageBreakPolicy()
 extern "C"
-void C_ZNK16QTextBlockFormat15pageBreakPolicyEv(void *this_) {
+QTextFormat::PageBreakFlags* C_ZNK16QTextBlockFormat15pageBreakPolicyEv(void *this_) {
   auto rv = ((QTextBlockFormat*)this_)->pageBreakPolicy();
-/*return rv;*/
+return new QTextFormat::PageBreakFlags(rv);
 }
 
 extern "C"

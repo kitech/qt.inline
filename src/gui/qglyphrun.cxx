@@ -141,9 +141,9 @@ void C_ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE(void *this_, QFlags<QGl
 // /usr/include/qt/QtGui/qglyphrun.h:110
 // [-2] QGlyphRun::GlyphRunFlags flags()
 extern "C"
-void C_ZNK9QGlyphRun5flagsEv(void *this_) {
+QGlyphRun::GlyphRunFlags* C_ZNK9QGlyphRun5flagsEv(void *this_) {
   auto rv = ((QGlyphRun*)this_)->flags();
-/*return rv;*/
+return new QGlyphRun::GlyphRunFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:112

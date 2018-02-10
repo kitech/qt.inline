@@ -14,15 +14,15 @@ class MyQQuickImageProvider : public QQuickImageProvider {
 public:
   virtual ~MyQQuickImageProvider() {}
 // void QQuickImageProvider(enum QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)
-MyQQuickImageProvider(QQmlImageProviderBase::ImageType type, QFlags<QQmlImageProviderBase::Flag> flags) : QQuickImageProvider(type, flags) {}
+MyQQuickImageProvider(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImageProviderBase::Flag> flags) : QQuickImageProvider(type_, flags) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:92
 // [-2] void QQuickImageProvider(enum QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)
 extern "C"
-void* C_ZN19QQuickImageProviderC2EN21QQmlImageProviderBase9ImageTypeE6QFlagsINS0_4FlagEE(QQmlImageProviderBase::ImageType type, QFlags<QQmlImageProviderBase::Flag> flags) {
-  return  new QQuickImageProvider(type, flags);
+void* C_ZN19QQuickImageProviderC2EN21QQmlImageProviderBase9ImageTypeE6QFlagsINS0_4FlagEE(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImageProviderBase::Flag> flags) {
+  return  new QQuickImageProvider(type_, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:93
@@ -42,9 +42,9 @@ QQmlImageProviderBase::ImageType C_ZNK19QQuickImageProvider9imageTypeEv(void *th
 // /usr/include/qt/QtQuick/qquickimageprovider.h:96
 // [4] QQmlImageProviderBase::Flags flags()
 extern "C"
-void C_ZNK19QQuickImageProvider5flagsEv(void *this_) {
+QQmlImageProviderBase::Flags* C_ZNK19QQuickImageProvider5flagsEv(void *this_) {
   auto rv = ((QQuickImageProvider*)this_)->flags();
-/*return rv;*/
+return new QQmlImageProviderBase::Flags(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:103

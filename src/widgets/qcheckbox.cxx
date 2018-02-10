@@ -28,6 +28,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     return QCheckBox::event(e);
   }
   }
+
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & pos) {
     int handled = 0;
@@ -39,6 +40,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     return QCheckBox::hitButton(pos);
   }
   }
+
 // void checkStateSet()
   virtual void checkStateSet() {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     QCheckBox::checkStateSet();
   }
   }
+
 // void nextCheckState()
   virtual void nextCheckState() {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     QCheckBox::nextCheckState();
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     QCheckBox::paintEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     QCheckBox::mouseMoveEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * option) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     QCheckBox::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

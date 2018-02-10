@@ -26,6 +26,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
     return QScrollArea::event(arg0);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
     return QScrollArea::eventFilter(arg0, arg1);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
     QScrollArea::resizeEvent(arg0);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
     QScrollArea::scrollContentsBy(dx, dy);
   }
   }
+
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
     return QScrollArea::viewportSizeHint();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -153,7 +158,7 @@ Qt::Alignment C_ZNK11QScrollArea9alignmentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qscrollarea.h:74
 // [-2] void setAlignment(Qt::Alignment)
 extern "C"
-void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment arg0) {
+void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> arg0) {
   ((QScrollArea*)this_)->setAlignment(arg0);
 }
 // Public Visibility=Default Availability=Available

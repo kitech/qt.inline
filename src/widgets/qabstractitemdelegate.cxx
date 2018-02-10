@@ -28,7 +28,7 @@ void* C_ZNK21QAbstractItemDelegate10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:72
 // [-2] void QAbstractItemDelegate(class QObject *)
 extern "C"
-void* C_ZN21QAbstractItemDelegateC1EP7QObject(QObject * parent) {
+void* C_ZN21QAbstractItemDelegateC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractItemDelegate(parent);
 }
 // Public virtual Visibility=Default Availability=Available

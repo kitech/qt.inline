@@ -27,6 +27,7 @@ MyQGridLayout() : QGridLayout() {}
     QGridLayout::addItem(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -249,28 +250,28 @@ void C_ZN11QGridLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
 // /usr/include/qt/QtWidgets/qgridlayout.h:103
 // [-2] void addWidget(class QWidget *, int, int, Qt::Alignment)
 extern "C"
-void C_ZN11QGridLayout9addWidgetEP7QWidgetii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, Qt::Alignment arg3) {
+void C_ZN11QGridLayout9addWidgetEP7QWidgetii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, QFlags<Qt::AlignmentFlag> arg3) {
   ((QGridLayout*)this_)->addWidget(arg0, row, column, arg3);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:104
 // [-2] void addWidget(class QWidget *, int, int, int, int, Qt::Alignment)
 extern "C"
-void C_ZN11QGridLayout9addWidgetEP7QWidgetiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, int rowSpan, int columnSpan, Qt::Alignment arg5) {
+void C_ZN11QGridLayout9addWidgetEP7QWidgetiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> arg5) {
   ((QGridLayout*)this_)->addWidget(arg0, row, column, rowSpan, columnSpan, arg5);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:105
 // [-2] void addLayout(class QLayout *, int, int, Qt::Alignment)
 extern "C"
-void C_ZN11QGridLayout9addLayoutEP7QLayoutii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, Qt::Alignment arg3) {
+void C_ZN11QGridLayout9addLayoutEP7QLayoutii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, QFlags<Qt::AlignmentFlag> arg3) {
   ((QGridLayout*)this_)->addLayout(arg0, row, column, arg3);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:106
 // [-2] void addLayout(class QLayout *, int, int, int, int, Qt::Alignment)
 extern "C"
-void C_ZN11QGridLayout9addLayoutEP7QLayoutiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, int rowSpan, int columnSpan, Qt::Alignment arg5) {
+void C_ZN11QGridLayout9addLayoutEP7QLayoutiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> arg5) {
   ((QGridLayout*)this_)->addLayout(arg0, row, column, rowSpan, columnSpan, arg5);
 }
 // Public Visibility=Default Availability=Available
@@ -326,7 +327,7 @@ void C_ZN11QGridLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
 // /usr/include/qt/QtWidgets/qgridlayout.h:117
 // [-2] void addItem(class QLayoutItem *, int, int, int, int, Qt::Alignment)
 extern "C"
-void C_ZN11QGridLayout7addItemEP11QLayoutItemiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayoutItem * item, int row, int column, int rowSpan, int columnSpan, Qt::Alignment arg5) {
+void C_ZN11QGridLayout7addItemEP11QLayoutItemiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayoutItem * item, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> arg5) {
   ((QGridLayout*)this_)->addItem(item, row, column, rowSpan, columnSpan, arg5);
 }
 // Public Visibility=Default Availability=Available

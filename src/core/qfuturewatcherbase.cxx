@@ -25,6 +25,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     QFutureWatcherBase::connectNotify(signal);
   }
   }
+
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     QFutureWatcherBase::disconnectNotify(signal);
   }
   }
+
 // void connectOutputInterface()
   virtual void connectOutputInterface() {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     QFutureWatcherBase::connectOutputInterface();
   }
   }
+
 // void disconnectOutputInterface(_Bool)
   virtual void disconnectOutputInterface(bool pendingAssignment) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -68,7 +72,7 @@ void* C_ZNK18QFutureWatcherBase10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qfuturewatcher.h:61
 // [-2] void QFutureWatcherBase(class QObject *)
 extern "C"
-void* C_ZN18QFutureWatcherBaseC1EP7QObject(QObject * parent) {
+void* C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQFutureWatcherBase*)(0);
   return 0; // new MyQFutureWatcherBase(parent);
 }

@@ -26,6 +26,7 @@ MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
     return QLocalSocket::readData(arg0, arg1);
   }
   }
+
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * arg0, qint64 arg1) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
     return QLocalSocket::writeData(arg0, arg1);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

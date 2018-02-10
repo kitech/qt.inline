@@ -124,6 +124,14 @@ void* C_ZNK19QIdentityProxyModel20mapSelectionToSourceERK14QItemSelection(void *
 return new QItemSelection(rv);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qidentityproxymodel.h:73
+// [8] QModelIndexList match(const class QModelIndex &, int, const class QVariant &, int, Qt::MatchFlags)
+extern "C"
+QModelIndexList* C_ZNK19QIdentityProxyModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *this_, QModelIndex* start, int role, QVariant* value, int hits, QFlags<Qt::MatchFlag> flags) {
+  auto rv = ((QIdentityProxyModel*)this_)->match(*start, role, *value, hits, flags);
+return new QModelIndexList(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:74
 // [-2] void setSourceModel(class QAbstractItemModel *)
 extern "C"

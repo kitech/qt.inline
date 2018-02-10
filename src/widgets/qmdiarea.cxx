@@ -25,6 +25,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::setupViewport(viewport);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     return QMdiArea::event(event);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     return QMdiArea::eventFilter(object, event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * paintEvent) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::paintEvent(paintEvent);
   }
   }
+
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * childEvent) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::childEvent(childEvent);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * resizeEvent) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::resizeEvent(resizeEvent);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * timerEvent) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::timerEvent(timerEvent);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::showEvent(showEvent);
   }
   }
+
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     return QMdiArea::viewportEvent(event);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     QMdiArea::scrollContentsBy(dx, dy);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

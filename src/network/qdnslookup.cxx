@@ -16,9 +16,9 @@ public:
 // void QDnsLookup(class QObject *)
 MyQDnsLookup(QObject * parent) : QDnsLookup(parent) {}
 // void QDnsLookup(enum QDnsLookup::Type, const class QString &, class QObject *)
-MyQDnsLookup(QDnsLookup::Type type, const QString & name, QObject * parent) : QDnsLookup(type, name, parent) {}
+MyQDnsLookup(QDnsLookup::Type type_, const QString & name, QObject * parent) : QDnsLookup(type_, name, parent) {}
 // void QDnsLookup(enum QDnsLookup::Type, const class QString &, const class QHostAddress &, class QObject *)
-MyQDnsLookup(QDnsLookup::Type type, const QString & name, const QHostAddress & nameserver, QObject * parent) : QDnsLookup(type, name, nameserver, parent) {}
+MyQDnsLookup(QDnsLookup::Type type_, const QString & name, const QHostAddress & nameserver, QObject * parent) : QDnsLookup(type_, name, nameserver, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -39,15 +39,15 @@ void* C_ZN10QDnsLookupC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtNetwork/qdnslookup.h:222
 // [-2] void QDnsLookup(enum QDnsLookup::Type, const class QString &, class QObject *)
 extern "C"
-void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type, QString* name, QObject * parent) {
-  return  new QDnsLookup(type, *name, parent);
+void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type_, QString* name, QObject * parent) {
+  return  new QDnsLookup(type_, *name, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:223
 // [-2] void QDnsLookup(enum QDnsLookup::Type, const class QString &, const class QHostAddress &, class QObject *)
 extern "C"
-void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringRK12QHostAddressP7QObject(QDnsLookup::Type type, QString* name, QHostAddress* nameserver, QObject * parent) {
-  return  new QDnsLookup(type, *name, *nameserver, parent);
+void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringRK12QHostAddressP7QObject(QDnsLookup::Type type_, QString* name, QHostAddress* nameserver, QObject * parent) {
+  return  new QDnsLookup(type_, *name, *nameserver, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:224
@@ -154,8 +154,8 @@ void C_ZN10QDnsLookup11nameChangedERK7QString(void *this_, QString* name) {
 // /usr/include/qt/QtNetwork/qdnslookup.h:255
 // [-2] void typeChanged(enum QDnsLookup::Type)
 extern "C"
-void C_ZN10QDnsLookup11typeChangedENS_4TypeE(void *this_, QDnsLookup::Type type) {
-  ((QDnsLookup*)this_)->typeChanged(type);
+void C_ZN10QDnsLookup11typeChangedENS_4TypeE(void *this_, QDnsLookup::Type type_) {
+  ((QDnsLookup*)this_)->typeChanged(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:256

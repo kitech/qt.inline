@@ -30,6 +30,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     return QGraphicsScene::event(event);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * watched, QEvent * event) {
     int handled = 0;
@@ -41,6 +42,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     return QGraphicsScene::eventFilter(watched, event);
   }
   }
+
 // void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
   virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
     int handled = 0;
@@ -51,6 +53,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::contextMenuEvent(event);
   }
   }
+
 // void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -61,6 +64,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::dragEnterEvent(event);
   }
   }
+
 // void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -71,6 +75,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::dragMoveEvent(event);
   }
   }
+
 // void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -81,6 +86,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::dragLeaveEvent(event);
   }
   }
+
 // void dropEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
@@ -91,6 +97,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::dropEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -101,6 +108,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::focusInEvent(event);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -111,6 +119,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::focusOutEvent(event);
   }
   }
+
 // void helpEvent(class QGraphicsSceneHelpEvent *)
   virtual void helpEvent(QGraphicsSceneHelpEvent * event) {
     int handled = 0;
@@ -121,6 +130,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::helpEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -131,6 +141,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::keyPressEvent(event);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
@@ -141,6 +152,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::keyReleaseEvent(event);
   }
   }
+
 // void mousePressEvent(class QGraphicsSceneMouseEvent *)
   virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -151,6 +163,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::mousePressEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -161,6 +174,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::mouseMoveEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -171,6 +185,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::mouseReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
@@ -181,6 +196,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::mouseDoubleClickEvent(event);
   }
   }
+
 // void wheelEvent(class QGraphicsSceneWheelEvent *)
   virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
     int handled = 0;
@@ -191,6 +207,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::wheelEvent(event);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
@@ -201,6 +218,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::inputMethodEvent(event);
   }
   }
+
 // void drawBackground(class QPainter *, const class QRectF &)
   virtual void drawBackground(QPainter * painter, const QRectF & rect) {
     int handled = 0;
@@ -211,6 +229,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::drawBackground(painter, rect);
   }
   }
+
 // void drawForeground(class QPainter *, const class QRectF &)
   virtual void drawForeground(QPainter * painter, const QRectF & rect) {
     int handled = 0;
@@ -221,6 +240,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     QGraphicsScene::drawForeground(painter, rect);
   }
   }
+
 // void drawItems(class QPainter *, int, class QGraphicsItem **, const class QStyleOptionGraphicsItem *, class QWidget *)
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
@@ -233,6 +253,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
     return QGraphicsScene::focusNextPrevChild(next);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

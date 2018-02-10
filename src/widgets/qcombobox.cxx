@@ -25,6 +25,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::focusInEvent(e);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * e) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::focusOutEvent(e);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::changeEvent(e);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::resizeEvent(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::paintEvent(e);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * e) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::showEvent(e);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * e) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::hideEvent(e);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::mousePressEvent(e);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
@@ -105,6 +113,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::mouseReleaseEvent(e);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * e) {
     int handled = 0;
@@ -115,6 +124,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::keyPressEvent(e);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * e) {
     int handled = 0;
@@ -125,6 +135,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::keyReleaseEvent(e);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
@@ -135,6 +146,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::wheelEvent(e);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * e) {
     int handled = 0;
@@ -145,6 +157,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::contextMenuEvent(e);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
@@ -155,6 +168,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::inputMethodEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionComboBox *)
   virtual void initStyleOption(QStyleOptionComboBox * option) {
     int handled = 0;
@@ -165,6 +179,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     QComboBox::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -74,6 +74,22 @@ void* C_ZNK19QProcessEnvironment5valueERK7QStringS2_(void *this_, QString* name,
   auto rv = ((QProcessEnvironment*)this_)->value(*name, *defaultValue);
 return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:92
+// [8] QStringList toStringList()
+extern "C"
+void* C_ZNK19QProcessEnvironment12toStringListEv(void *this_) {
+  auto rv = ((QProcessEnvironment*)this_)->toStringList();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:94
+// [8] QStringList keys()
+extern "C"
+void* C_ZNK19QProcessEnvironment4keysEv(void *this_) {
+  auto rv = ((QProcessEnvironment*)this_)->keys();
+return new QStringList(rv);
+}
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:98
 // [8] QProcessEnvironment systemEnvironment()

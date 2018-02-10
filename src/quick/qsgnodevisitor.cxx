@@ -23,6 +23,7 @@ public:
     QSGNodeVisitor::enterTransformNode(arg0);
   }
   }
+
 // void leaveTransformNode(class QSGTransformNode *)
   virtual void leaveTransformNode(QSGTransformNode * arg0) {
     int handled = 0;
@@ -33,6 +34,7 @@ public:
     QSGNodeVisitor::leaveTransformNode(arg0);
   }
   }
+
 // void enterClipNode(class QSGClipNode *)
   virtual void enterClipNode(QSGClipNode * arg0) {
     int handled = 0;
@@ -43,6 +45,7 @@ public:
     QSGNodeVisitor::enterClipNode(arg0);
   }
   }
+
 // void leaveClipNode(class QSGClipNode *)
   virtual void leaveClipNode(QSGClipNode * arg0) {
     int handled = 0;
@@ -53,6 +56,7 @@ public:
     QSGNodeVisitor::leaveClipNode(arg0);
   }
   }
+
 // void enterGeometryNode(class QSGGeometryNode *)
   virtual void enterGeometryNode(QSGGeometryNode * arg0) {
     int handled = 0;
@@ -63,6 +67,7 @@ public:
     QSGNodeVisitor::enterGeometryNode(arg0);
   }
   }
+
 // void leaveGeometryNode(class QSGGeometryNode *)
   virtual void leaveGeometryNode(QSGGeometryNode * arg0) {
     int handled = 0;
@@ -73,6 +78,7 @@ public:
     QSGNodeVisitor::leaveGeometryNode(arg0);
   }
   }
+
 // void enterOpacityNode(class QSGOpacityNode *)
   virtual void enterOpacityNode(QSGOpacityNode * arg0) {
     int handled = 0;
@@ -83,6 +89,7 @@ public:
     QSGNodeVisitor::enterOpacityNode(arg0);
   }
   }
+
 // void leaveOpacityNode(class QSGOpacityNode *)
   virtual void leaveOpacityNode(QSGOpacityNode * arg0) {
     int handled = 0;
@@ -93,6 +100,7 @@ public:
     QSGNodeVisitor::leaveOpacityNode(arg0);
   }
   }
+
 // void visitNode(class QSGNode *)
   virtual void visitNode(QSGNode * n) {
     int handled = 0;
@@ -103,6 +111,7 @@ public:
     QSGNodeVisitor::visitNode(n);
   }
   }
+
 // void visitChildren(class QSGNode *)
   virtual void visitChildren(QSGNode * n) {
     int handled = 0;
@@ -113,6 +122,7 @@ public:
     QSGNodeVisitor::visitChildren(n);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

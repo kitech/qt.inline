@@ -26,6 +26,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     return QQuickItem::event(arg0);
   }
   }
+
 // bool isComponentComplete()
   virtual bool isComponentComplete() {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     return QQuickItem::isComponentComplete();
   }
   }
+
 // void updateInputMethod(Qt::InputMethodQueries)
   virtual void updateInputMethod(QFlags<Qt::InputMethodQuery> queries) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::updateInputMethod(queries);
   }
   }
+
 // bool widthValid()
   virtual bool widthValid() {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     return QQuickItem::widthValid();
   }
   }
+
 // bool heightValid()
   virtual bool heightValid() {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     return QQuickItem::heightValid();
   }
   }
+
 // void setImplicitSize(qreal, qreal)
   virtual void setImplicitSize(qreal arg0, qreal arg1) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::setImplicitSize(arg0, arg1);
   }
   }
+
 // void classBegin()
   virtual void classBegin() {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::classBegin();
   }
   }
+
 // void componentComplete()
   virtual void componentComplete() {
     int handled = 0;
@@ -99,6 +106,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::componentComplete();
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -109,6 +117,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::keyPressEvent(event);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
@@ -119,6 +128,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::keyReleaseEvent(event);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
@@ -129,6 +139,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::inputMethodEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -139,6 +150,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::focusInEvent(arg0);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -149,6 +161,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::focusOutEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::mousePressEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -169,6 +183,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::mouseMoveEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -179,6 +194,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::mouseReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
@@ -189,6 +205,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::mouseDoubleClickEvent(event);
   }
   }
+
 // void mouseUngrabEvent()
   virtual void mouseUngrabEvent() {
     int handled = 0;
@@ -199,6 +216,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::mouseUngrabEvent();
   }
   }
+
 // void touchUngrabEvent()
   virtual void touchUngrabEvent() {
     int handled = 0;
@@ -209,6 +227,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::touchUngrabEvent();
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
@@ -219,6 +238,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::wheelEvent(event);
   }
   }
+
 // void touchEvent(class QTouchEvent *)
   virtual void touchEvent(QTouchEvent * event) {
     int handled = 0;
@@ -229,6 +249,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::touchEvent(event);
   }
   }
+
 // void hoverEnterEvent(class QHoverEvent *)
   virtual void hoverEnterEvent(QHoverEvent * event) {
     int handled = 0;
@@ -239,6 +260,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::hoverEnterEvent(event);
   }
   }
+
 // void hoverMoveEvent(class QHoverEvent *)
   virtual void hoverMoveEvent(QHoverEvent * event) {
     int handled = 0;
@@ -249,6 +271,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::hoverMoveEvent(event);
   }
   }
+
 // void hoverLeaveEvent(class QHoverEvent *)
   virtual void hoverLeaveEvent(QHoverEvent * event) {
     int handled = 0;
@@ -259,6 +282,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::hoverLeaveEvent(event);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
@@ -269,6 +293,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::dragEnterEvent(arg0);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * arg0) {
     int handled = 0;
@@ -279,6 +304,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::dragMoveEvent(arg0);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
     int handled = 0;
@@ -289,6 +315,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::dragLeaveEvent(arg0);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
@@ -299,6 +326,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::dropEvent(arg0);
   }
   }
+
 // bool childMouseEventFilter(class QQuickItem *, class QEvent *)
   virtual bool childMouseEventFilter(QQuickItem * arg0, QEvent * arg1) {
     int handled = 0;
@@ -310,6 +338,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     return QQuickItem::childMouseEventFilter(arg0, arg1);
   }
   }
+
 // void windowDeactivateEvent()
   virtual void windowDeactivateEvent() {
     int handled = 0;
@@ -320,6 +349,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::windowDeactivateEvent();
   }
   }
+
 // void geometryChanged(const class QRectF &, const class QRectF &)
   virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry) {
     int handled = 0;
@@ -330,6 +360,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::geometryChanged(newGeometry, oldGeometry);
   }
   }
+
 // void releaseResources()
   virtual void releaseResources() {
     int handled = 0;
@@ -340,6 +371,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::releaseResources();
   }
   }
+
 // void updatePolish()
   virtual void updatePolish() {
     int handled = 0;
@@ -350,6 +382,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
     QQuickItem::updatePolish();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -754,9 +787,9 @@ void C_ZN10QQuickItem17resetAntialiasingEv(void *this_) {
 // /usr/include/qt/QtQuick/qquickitem.h:276
 // [4] QQuickItem::Flags flags()
 extern "C"
-void C_ZNK10QQuickItem5flagsEv(void *this_) {
+QQuickItem::Flags* C_ZNK10QQuickItem5flagsEv(void *this_) {
   auto rv = ((QQuickItem*)this_)->flags();
-/*return rv;*/
+return new QQuickItem::Flags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:277

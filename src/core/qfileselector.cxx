@@ -55,10 +55,26 @@ void* C_ZNK13QFileSelector6selectERK4QUrl(void *this_, QUrl* filePath) {
 return new QUrl(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:59
+// [8] QStringList extraSelectors()
+extern "C"
+void* C_ZNK13QFileSelector14extraSelectorsEv(void *this_) {
+  auto rv = ((QFileSelector*)this_)->extraSelectors();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:60
 // [-2] void setExtraSelectors(const class QStringList &)
 extern "C"
 void C_ZN13QFileSelector17setExtraSelectorsERK11QStringList(void *this_, QStringList* list) {
   ((QFileSelector*)this_)->setExtraSelectors(*list);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:62
+// [8] QStringList allSelectors()
+extern "C"
+void* C_ZNK13QFileSelector12allSelectorsEv(void *this_) {
+  auto rv = ((QFileSelector*)this_)->allSelectors();
+return new QStringList(rv);
 }
 //  main block end

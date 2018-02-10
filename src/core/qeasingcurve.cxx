@@ -14,15 +14,15 @@ class MyQEasingCurve : public QEasingCurve {
 public:
   virtual ~MyQEasingCurve() {}
 // void QEasingCurve(enum QEasingCurve::Type)
-MyQEasingCurve(QEasingCurve::Type type) : QEasingCurve(type) {}
+MyQEasingCurve(QEasingCurve::Type type_) : QEasingCurve(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:77
 // [-2] void QEasingCurve(enum QEasingCurve::Type)
 extern "C"
-void* C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type type) {
-  return  new QEasingCurve(type);
+void* C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type type_) {
+  return  new QEasingCurve(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:79
@@ -105,8 +105,8 @@ QEasingCurve::Type C_ZNK12QEasingCurve4typeEv(void *this_) {
 // /usr/include/qt/QtCore/qeasingcurve.h:112
 // [-2] void setType(enum QEasingCurve::Type)
 extern "C"
-void C_ZN12QEasingCurve7setTypeENS_4TypeE(void *this_, QEasingCurve::Type type) {
-  ((QEasingCurve*)this_)->setType(type);
+void C_ZN12QEasingCurve7setTypeENS_4TypeE(void *this_, QEasingCurve::Type type_) {
+  ((QEasingCurve*)this_)->setType(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:115

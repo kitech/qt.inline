@@ -21,7 +21,7 @@ MyQGestureRecognizer() : QGestureRecognizer() {}
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:77
 // [-2] void QGestureRecognizer()
 extern "C"
-void* C_ZN18QGestureRecognizerC1Ev() {
+void* C_ZN18QGestureRecognizerC2Ev() {
   return 0; // new QGestureRecognizer();
 }
 // Public virtual Visibility=Default Availability=Available
@@ -42,9 +42,9 @@ void* C_ZN18QGestureRecognizer6createEP7QObject(void *this_, QObject * target) {
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:81
 // [4] QGestureRecognizer::Result recognize(class QGesture *, class QObject *, class QEvent *)
 extern "C"
-void C_ZN18QGestureRecognizer9recognizeEP8QGestureP7QObjectP6QEvent(void *this_, QGesture * state, QObject * watched, QEvent * event) {
+QGestureRecognizer::Result* C_ZN18QGestureRecognizer9recognizeEP8QGestureP7QObjectP6QEvent(void *this_, QGesture * state, QObject * watched, QEvent * event) {
   auto rv = ((QGestureRecognizer*)this_)->recognize(state, watched, event);
-/*return rv;*/
+return new QGestureRecognizer::Result(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:83
@@ -64,7 +64,7 @@ Qt::GestureType C_ZN18QGestureRecognizer18registerRecognizerEPS_(QGestureRecogni
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:86
 // [-2] void unregisterRecognizer(Qt::GestureType)
 extern "C"
-void C_ZN18QGestureRecognizer20unregisterRecognizerEN2Qt11GestureTypeE(Qt::GestureType type) {
-  QGestureRecognizer::unregisterRecognizer(type);
+void C_ZN18QGestureRecognizer20unregisterRecognizerEN2Qt11GestureTypeE(Qt::GestureType type_) {
+  QGestureRecognizer::unregisterRecognizer(type_);
 }
 //  main block end

@@ -28,7 +28,7 @@ void* C_ZNK20QPictureFormatPlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qpictureformatplugin.h:63
 // [-2] void QPictureFormatPlugin(class QObject *)
 extern "C"
-void* C_ZN20QPictureFormatPluginC1EP7QObject(QObject * parent) {
+void* C_ZN20QPictureFormatPluginC2EP7QObject(QObject * parent) {
   return 0; // new QPictureFormatPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

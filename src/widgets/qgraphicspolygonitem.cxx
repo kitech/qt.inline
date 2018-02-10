@@ -28,6 +28,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
     return QGraphicsPolygonItem::supportsExtension(extension);
   }
   }
+
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
     QGraphicsPolygonItem::setExtension(extension, variant);
   }
   }
+
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
     return QGraphicsPolygonItem::extension(variant);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

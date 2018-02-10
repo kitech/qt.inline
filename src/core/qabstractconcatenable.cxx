@@ -23,6 +23,7 @@ public:
     QAbstractConcatenable::convertFromAscii(a, len, out);
   }
   }
+
 // void convertFromAscii(char, class QChar *&)
   virtual void convertFromAscii(char a, QChar *& out) {
     int handled = 0;
@@ -33,6 +34,7 @@ public:
     QAbstractConcatenable::convertFromAscii(a, out);
   }
   }
+
 // void appendLatin1To(const char *, int, class QChar *)
   virtual void appendLatin1To(const char * a, int len, QChar * out) {
     int handled = 0;
@@ -43,6 +45,7 @@ public:
     QAbstractConcatenable::appendLatin1To(a, len, out);
   }
   }
+
 };
 
 

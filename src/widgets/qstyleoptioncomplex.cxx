@@ -14,15 +14,15 @@ class MyQStyleOptionComplex : public QStyleOptionComplex {
 public:
   virtual ~MyQStyleOptionComplex() {}
 // void QStyleOptionComplex(int, int)
-MyQStyleOptionComplex(int version, int type) : QStyleOptionComplex(version, type) {}
+MyQStyleOptionComplex(int version, int type_) : QStyleOptionComplex(version, type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:509
 // [-2] void QStyleOptionComplex(int, int)
 extern "C"
-void* C_ZN19QStyleOptionComplexC2Eii(int version, int type) {
-  return  new QStyleOptionComplex(version, type);
+void* C_ZN19QStyleOptionComplexC2Eii(int version, int type_) {
+  return  new QStyleOptionComplex(version, type_);
 }
 
 extern "C"

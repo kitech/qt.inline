@@ -99,6 +99,14 @@ extern "C"
 void C_ZN4QDir13addSearchPathERK7QStringS2_(QString* prefix, QString* path) {
   QDir::addSearchPath(*prefix, *path);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:125
+// [8] QStringList searchPaths(const class QString &)
+extern "C"
+void* C_ZN4QDir11searchPathsERK7QString(QString* prefix) {
+  auto rv = QDir::searchPaths(*prefix);
+return new QStringList(rv);
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:127
 // [8] QString dirName()
@@ -162,6 +170,14 @@ bool C_ZN4QDir4cdUpEv(void *this_) {
   return (bool)((QDir*)this_)->cdUp();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:138
+// [8] QStringList nameFilters()
+extern "C"
+void* C_ZNK4QDir11nameFiltersEv(void *this_) {
+  auto rv = ((QDir*)this_)->nameFilters();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:139
 // [-2] void setNameFilters(const class QStringList &)
 extern "C"
@@ -172,9 +188,9 @@ void C_ZN4QDir14setNameFiltersERK11QStringList(void *this_, QStringList* nameFil
 // /usr/include/qt/QtCore/qdir.h:141
 // [4] QDir::Filters filter()
 extern "C"
-void C_ZNK4QDir6filterEv(void *this_) {
+QDir::Filters* C_ZNK4QDir6filterEv(void *this_) {
   auto rv = ((QDir*)this_)->filter();
-/*return rv;*/
+return new QDir::Filters(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:142
@@ -187,9 +203,9 @@ void C_ZN4QDir9setFilterE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> 
 // /usr/include/qt/QtCore/qdir.h:143
 // [4] QDir::SortFlags sorting()
 extern "C"
-void C_ZNK4QDir7sortingEv(void *this_) {
+QDir::SortFlags* C_ZNK4QDir7sortingEv(void *this_) {
   auto rv = ((QDir*)this_)->sorting();
-/*return rv;*/
+return new QDir::SortFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:144
@@ -211,6 +227,46 @@ uint C_ZNK4QDir5countEv(void *this_) {
 extern "C"
 bool C_ZNK4QDir7isEmptyE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
   return (bool)((QDir*)this_)->isEmpty(filters);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:151
+// [8] QStringList nameFiltersFromString(const class QString &)
+extern "C"
+void* C_ZN4QDir21nameFiltersFromStringERK7QString(QString* nameFilter) {
+  auto rv = QDir::nameFiltersFromString(*nameFilter);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:153
+// [8] QStringList entryList(QDir::Filters, QDir::SortFlags)
+extern "C"
+void* C_ZNK4QDir9entryListE6QFlagsINS_6FilterEES0_INS_8SortFlagEE(void *this_, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
+  auto rv = ((QDir*)this_)->entryList(filters, sort);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:154
+// [8] QStringList entryList(const class QStringList &, QDir::Filters, QDir::SortFlags)
+extern "C"
+void* C_ZNK4QDir9entryListERK11QStringList6QFlagsINS_6FilterEES3_INS_8SortFlagEE(void *this_, QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
+  auto rv = ((QDir*)this_)->entryList(*nameFilters, filters, sort);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:157
+// [-2] QFileInfoList entryInfoList(QDir::Filters, QDir::SortFlags)
+extern "C"
+QFileInfoList* C_ZNK4QDir13entryInfoListE6QFlagsINS_6FilterEES0_INS_8SortFlagEE(void *this_, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
+  auto rv = ((QDir*)this_)->entryInfoList(filters, sort);
+return new QFileInfoList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:158
+// [-2] QFileInfoList entryInfoList(const class QStringList &, QDir::Filters, QDir::SortFlags)
+extern "C"
+QFileInfoList* C_ZNK4QDir13entryInfoListERK11QStringList6QFlagsINS_6FilterEES3_INS_8SortFlagEE(void *this_, QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
+  auto rv = ((QDir*)this_)->entryInfoList(*nameFilters, filters, sort);
+return new QFileInfoList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:161
@@ -323,6 +379,14 @@ bool C_ZN4QDir6renameERK7QStringS2_(void *this_, QString* oldName, QString* newN
 extern "C"
 bool C_ZNK4QDir6existsERK7QString(void *this_, QString* name) {
   return (bool)((QDir*)this_)->exists(*name);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:185
+// [-2] QFileInfoList drives()
+extern "C"
+void C_ZN4QDir6drivesEv() {
+  auto rv = QDir::drives();
+/*return rv;*/
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:187

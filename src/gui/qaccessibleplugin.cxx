@@ -28,7 +28,7 @@ void* C_ZNK17QAccessiblePlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qaccessibleplugin.h:63
 // [-2] void QAccessiblePlugin(class QObject *)
 extern "C"
-void* C_ZN17QAccessiblePluginC1EP7QObject(QObject * parent) {
+void* C_ZN17QAccessiblePluginC2EP7QObject(QObject * parent) {
   return 0; // new QAccessiblePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

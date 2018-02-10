@@ -25,6 +25,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::resetInternalData();
   }
   }
+
 // QModelIndex createIndex(int, int, void *)
   virtual QModelIndex createIndex(int row, int column, void * data) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return QAbstractItemModel::createIndex(row, column, data);
   }
   }
+
 // QModelIndex createIndex(int, int, quintptr)
   virtual QModelIndex createIndex(int row, int column, quintptr id) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return QAbstractItemModel::createIndex(row, column, id);
   }
   }
+
 // bool decodeData(int, int, const class QModelIndex &, class QDataStream &)
   virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return QAbstractItemModel::decodeData(row, column, parent, stream);
   }
   }
+
 // void beginInsertRows(const class QModelIndex &, int, int)
   virtual void beginInsertRows(const QModelIndex & parent, int first, int last) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::beginInsertRows(parent, first, last);
   }
   }
+
 // void endInsertRows()
   virtual void endInsertRows() {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endInsertRows();
   }
   }
+
 // void beginRemoveRows(const class QModelIndex &, int, int)
   virtual void beginRemoveRows(const QModelIndex & parent, int first, int last) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::beginRemoveRows(parent, first, last);
   }
   }
+
 // void endRemoveRows()
   virtual void endRemoveRows() {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endRemoveRows();
   }
   }
+
 // bool beginMoveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
   virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow) {
     int handled = 0;
@@ -109,6 +117,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return QAbstractItemModel::beginMoveRows(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
   }
   }
+
 // void endMoveRows()
   virtual void endMoveRows() {
     int handled = 0;
@@ -119,6 +128,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endMoveRows();
   }
   }
+
 // void beginInsertColumns(const class QModelIndex &, int, int)
   virtual void beginInsertColumns(const QModelIndex & parent, int first, int last) {
     int handled = 0;
@@ -129,6 +139,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::beginInsertColumns(parent, first, last);
   }
   }
+
 // void endInsertColumns()
   virtual void endInsertColumns() {
     int handled = 0;
@@ -139,6 +150,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endInsertColumns();
   }
   }
+
 // void beginRemoveColumns(const class QModelIndex &, int, int)
   virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last) {
     int handled = 0;
@@ -149,6 +161,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::beginRemoveColumns(parent, first, last);
   }
   }
+
 // void endRemoveColumns()
   virtual void endRemoveColumns() {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endRemoveColumns();
   }
   }
+
 // bool beginMoveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
   virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn) {
     int handled = 0;
@@ -170,6 +184,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return QAbstractItemModel::beginMoveColumns(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
   }
   }
+
 // void endMoveColumns()
   virtual void endMoveColumns() {
     int handled = 0;
@@ -180,6 +195,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endMoveColumns();
   }
   }
+
 // void beginResetModel()
   virtual void beginResetModel() {
     int handled = 0;
@@ -190,6 +206,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::beginResetModel();
   }
   }
+
 // void endResetModel()
   virtual void endResetModel() {
     int handled = 0;
@@ -200,6 +217,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::endResetModel();
   }
   }
+
 // void changePersistentIndex(const class QModelIndex &, const class QModelIndex &)
   virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to) {
     int handled = 0;
@@ -210,6 +228,19 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     QAbstractItemModel::changePersistentIndex(from, to);
   }
   }
+
+// QModelIndexList persistentIndexList()
+  virtual QModelIndexList persistentIndexList() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"persistentIndexList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndexList*)(irv);
+      // TypedefRecordQList<QModelIndex>
+    } else {
+    return QAbstractItemModel::persistentIndexList();
+  }
+  }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -223,7 +254,7 @@ void* C_ZNK18QAbstractItemModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:174
 // [-2] void QAbstractItemModel(class QObject *)
 extern "C"
-void* C_ZN18QAbstractItemModelC1EP7QObject(QObject * parent) {
+void* C_ZN18QAbstractItemModelC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractItemModel*)(0);
   return 0; // new MyQAbstractItemModel(parent);
 }
@@ -315,6 +346,14 @@ return new QVariant(rv);
 extern "C"
 bool C_ZN18QAbstractItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, QVariant* value, int role) {
   return (bool)((QAbstractItemModel*)this_)->setHeaderData(section, orientation, *value, role);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:198
+// [8] QStringList mimeTypes()
+extern "C"
+void* C_ZNK18QAbstractItemModel9mimeTypesEv(void *this_) {
+  auto rv = ((QAbstractItemModel*)this_)->mimeTypes();
+return new QStringList(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:200
@@ -463,6 +502,14 @@ extern "C"
 void* C_ZNK18QAbstractItemModel5buddyERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QAbstractItemModel*)this_)->buddy(*index);
 return new QModelIndex(rv);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:235
+// [8] QModelIndexList match(const class QModelIndex &, int, const class QVariant &, int, Qt::MatchFlags)
+extern "C"
+QModelIndexList* C_ZNK18QAbstractItemModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *this_, QModelIndex* start, int role, QVariant* value, int hits, QFlags<Qt::MatchFlag> flags) {
+  auto rv = ((QAbstractItemModel*)this_)->match(*start, role, *value, hits, flags);
+return new QModelIndexList(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:239

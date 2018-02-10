@@ -418,6 +418,14 @@ extern "C"
 void C_ZN15QTextCharFormat14setAnchorNamesERK11QStringList(void *this_, QStringList* names) {
   ((QTextCharFormat*)this_)->setAnchorNames(*names);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:547
+// [8] QStringList anchorNames()
+extern "C"
+void* C_ZNK15QTextCharFormat11anchorNamesEv(void *this_) {
+  auto rv = ((QTextCharFormat*)this_)->anchorNames();
+return new QStringList(rv);
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:549
 // [-2] void setTableCellRowSpan(int)

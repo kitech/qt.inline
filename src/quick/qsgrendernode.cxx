@@ -21,7 +21,7 @@ MyQSGRenderNode() : QSGRenderNode() {}
 // /usr/include/qt/QtQuick/qsgrendernode.h:82
 // [-2] void QSGRenderNode()
 extern "C"
-void* C_ZN13QSGRenderNodeC1Ev() {
+void* C_ZN13QSGRenderNodeC2Ev() {
   return 0; // new QSGRenderNode();
 }
 // Public virtual Visibility=Default Availability=Available
@@ -35,9 +35,9 @@ void C_ZN13QSGRenderNodeD2Ev(void *this_) {
 // /usr/include/qt/QtQuick/qsgrendernode.h:85
 // [4] QSGRenderNode::StateFlags changedStates()
 extern "C"
-void C_ZNK13QSGRenderNode13changedStatesEv(void *this_) {
+QSGRenderNode::StateFlags* C_ZNK13QSGRenderNode13changedStatesEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->changedStates();
-/*return rv;*/
+return new QSGRenderNode::StateFlags(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:87
@@ -50,9 +50,9 @@ void C_ZN13QSGRenderNode16releaseResourcesEv(void *this_) {
 // /usr/include/qt/QtQuick/qsgrendernode.h:88
 // [4] QSGRenderNode::RenderingFlags flags()
 extern "C"
-void C_ZNK13QSGRenderNode5flagsEv(void *this_) {
+QSGRenderNode::RenderingFlags* C_ZNK13QSGRenderNode5flagsEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->flags();
-/*return rv;*/
+return new QSGRenderNode::RenderingFlags(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:89

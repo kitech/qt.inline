@@ -16,7 +16,7 @@ public:
 // void QMouseEventTransition(class QState *)
 MyQMouseEventTransition(QState * sourceState) : QMouseEventTransition(sourceState) {}
 // void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
-MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type, button, sourceState) {}
+MyQMouseEventTransition(QObject * object, QEvent::Type type_, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type_, button, sourceState) {}
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
@@ -27,6 +27,7 @@ MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton but
     QMouseEventTransition::onTransition(event);
   }
   }
+
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton but
     return QMouseEventTransition::eventTest(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -59,9 +61,9 @@ void* C_ZN21QMouseEventTransitionC2EP6QState(QState * sourceState) {
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:59
 // [-2] void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
 extern "C"
-void* C_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) {
+void* C_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(QObject * object, QEvent::Type type_, Qt::MouseButton button, QState * sourceState) {
   auto _nilp = (MyQMouseEventTransition*)(0);
-  return  new MyQMouseEventTransition(object, type, button, sourceState);
+  return  new MyQMouseEventTransition(object, type_, button, sourceState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:61

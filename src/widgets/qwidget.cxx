@@ -26,6 +26,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::event(event);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::mousePressEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::mouseReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::mouseDoubleClickEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::mouseMoveEvent(event);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::wheelEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -86,6 +92,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::keyPressEvent(event);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
@@ -96,6 +103,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::keyReleaseEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::focusInEvent(event);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -116,6 +125,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::focusOutEvent(event);
   }
   }
+
 // void enterEvent(class QEvent *)
   virtual void enterEvent(QEvent * event) {
     int handled = 0;
@@ -126,6 +136,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::enterEvent(event);
   }
   }
+
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * event) {
     int handled = 0;
@@ -136,6 +147,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::leaveEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -146,6 +158,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::paintEvent(event);
   }
   }
+
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * event) {
     int handled = 0;
@@ -156,6 +169,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::moveEvent(event);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -166,6 +180,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::resizeEvent(event);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
@@ -176,6 +191,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::closeEvent(event);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
     int handled = 0;
@@ -186,6 +202,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::contextMenuEvent(event);
   }
   }
+
 // void tabletEvent(class QTabletEvent *)
   virtual void tabletEvent(QTabletEvent * event) {
     int handled = 0;
@@ -196,6 +213,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::tabletEvent(event);
   }
   }
+
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * event) {
     int handled = 0;
@@ -206,6 +224,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::actionEvent(event);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * event) {
     int handled = 0;
@@ -216,6 +235,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::dragEnterEvent(event);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
     int handled = 0;
@@ -226,6 +246,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::dragMoveEvent(event);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * event) {
     int handled = 0;
@@ -236,6 +257,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::dragLeaveEvent(event);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
@@ -246,6 +268,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::dropEvent(event);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
@@ -256,6 +279,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::showEvent(event);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
@@ -266,6 +290,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::hideEvent(event);
   }
   }
+
 // bool nativeEvent(const class QByteArray &, void *, long *)
   virtual bool nativeEvent(const QByteArray & eventType, void * message, long * result) {
     int handled = 0;
@@ -277,6 +302,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::nativeEvent(eventType, message, result);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -287,6 +313,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::changeEvent(arg0);
   }
   }
+
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
     int handled = 0;
@@ -298,6 +325,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::metric(arg0);
   }
   }
+
 // void initPainter(class QPainter *)
   virtual void initPainter(QPainter * painter) {
     int handled = 0;
@@ -308,6 +336,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::initPainter(painter);
   }
   }
+
 // QPaintDevice * redirected(class QPoint *)
   virtual QPaintDevice * redirected(QPoint * offset) {
     int handled = 0;
@@ -319,6 +348,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::redirected(offset);
   }
   }
+
 // QPainter * sharedPainter()
   virtual QPainter * sharedPainter() {
     int handled = 0;
@@ -330,6 +360,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::sharedPainter();
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
@@ -340,6 +371,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::inputMethodEvent(arg0);
   }
   }
+
 // void updateMicroFocus()
   virtual void updateMicroFocus() {
     int handled = 0;
@@ -350,6 +382,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::updateMicroFocus();
   }
   }
+
 // void create(WId, _Bool, _Bool)
   virtual void create(WId arg0, bool initializeWindow, bool destroyOldWindow) {
     int handled = 0;
@@ -360,6 +393,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::create(arg0, initializeWindow, destroyOldWindow);
   }
   }
+
 // void destroy(_Bool, _Bool)
   virtual void destroy(bool destroyWindow, bool destroySubWindows) {
     int handled = 0;
@@ -370,6 +404,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     QWidget::destroy(destroyWindow, destroySubWindows);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -381,6 +416,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::focusNextPrevChild(next);
   }
   }
+
 // bool focusNextChild()
   virtual bool focusNextChild() {
     int handled = 0;
@@ -392,6 +428,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::focusNextChild();
   }
   }
+
 // bool focusPreviousChild()
   virtual bool focusPreviousChild() {
     int handled = 0;
@@ -403,6 +440,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
     return QWidget::focusPreviousChild();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -1094,15 +1132,15 @@ void C_ZN7QWidget17setGraphicsEffectEP15QGraphicsEffect(void *this_, QGraphicsEf
 // /usr/include/qt/QtWidgets/qwidget.h:356
 // [-2] void grabGesture(Qt::GestureType, Qt::GestureFlags)
 extern "C"
-void C_ZN7QWidget11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE(void *this_, Qt::GestureType type, QFlags<Qt::GestureFlag> flags) {
-  ((QWidget*)this_)->grabGesture(type, flags);
+void C_ZN7QWidget11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE(void *this_, Qt::GestureType type_, QFlags<Qt::GestureFlag> flags) {
+  ((QWidget*)this_)->grabGesture(type_, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:357
 // [-2] void ungrabGesture(Qt::GestureType)
 extern "C"
-void C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type) {
-  ((QWidget*)this_)->ungrabGesture(type);
+void C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type_) {
+  ((QWidget*)this_)->ungrabGesture(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:361
@@ -2030,8 +2068,8 @@ void* C_ZNK7QWidget12parentWidgetEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:567
 // [-2] void setWindowFlags(Qt::WindowFlags)
 extern "C"
-void C_ZN7QWidget14setWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *this_, QFlags<Qt::WindowType> type) {
-  ((QWidget*)this_)->setWindowFlags(type);
+void C_ZN7QWidget14setWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *this_, QFlags<Qt::WindowType> type_) {
+  ((QWidget*)this_)->setWindowFlags(type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:568
@@ -2051,8 +2089,8 @@ void C_ZN7QWidget13setWindowFlagEN2Qt10WindowTypeEb(void *this_, Qt::WindowType 
 // /usr/include/qt/QtWidgets/qwidget.h:570
 // [-2] void overrideWindowFlags(Qt::WindowFlags)
 extern "C"
-void C_ZN7QWidget19overrideWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *this_, QFlags<Qt::WindowType> type) {
-  ((QWidget*)this_)->overrideWindowFlags(type);
+void C_ZN7QWidget19overrideWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *this_, QFlags<Qt::WindowType> type_) {
+  ((QWidget*)this_)->overrideWindowFlags(type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:572

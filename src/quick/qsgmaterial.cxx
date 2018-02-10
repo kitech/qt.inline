@@ -21,7 +21,7 @@ MyQSGMaterial() : QSGMaterial() {}
 // /usr/include/qt/QtQuick/qsgmaterial.h:146
 // [-2] void QSGMaterial()
 extern "C"
-void* C_ZN11QSGMaterialC1Ev() {
+void* C_ZN11QSGMaterialC2Ev() {
   return 0; // new QSGMaterial();
 }
 // Public virtual Visibility=Default Availability=Available

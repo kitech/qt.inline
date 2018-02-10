@@ -93,9 +93,9 @@ void C_ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE(void *this_, QFlags<QTextOpti
 // /usr/include/qt/QtGui/qtextoption.h:118
 // [4] QTextOption::Flags flags()
 extern "C"
-void C_ZNK11QTextOption5flagsEv(void *this_) {
+QTextOption::Flags* C_ZNK11QTextOption5flagsEv(void *this_) {
   auto rv = ((QTextOption*)this_)->flags();
-/*return rv;*/
+return new QTextOption::Flags(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:121

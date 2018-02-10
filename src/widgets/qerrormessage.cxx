@@ -25,6 +25,7 @@ MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
     QErrorMessage::done(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
     QErrorMessage::changeEvent(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -77,7 +79,7 @@ void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, QString* message) 
 // /usr/include/qt/QtWidgets/qerrormessage.h:65
 // [-2] void showMessage(const class QString &, const class QString &)
 extern "C"
-void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, QString* message, QString* type) {
-  ((QErrorMessage*)this_)->showMessage(*message, *type);
+void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, QString* message, QString* type_) {
+  ((QErrorMessage*)this_)->showMessage(*message, *type_);
 }
 //  main block end

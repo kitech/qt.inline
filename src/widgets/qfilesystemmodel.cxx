@@ -25,6 +25,7 @@ MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
     QFileSystemModel::timerEvent(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
     return QFileSystemModel::event(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -194,6 +196,14 @@ void C_ZN16QFileSystemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::S
   ((QFileSystemModel*)this_)->sort(column, order);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:103
+// [8] QStringList mimeTypes()
+extern "C"
+void* C_ZNK16QFileSystemModel9mimeTypesEv(void *this_) {
+  auto rv = ((QFileSystemModel*)this_)->mimeTypes();
+return new QStringList(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:105
 // [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -307,6 +317,14 @@ bool C_ZNK16QFileSystemModel18nameFilterDisablesEv(void *this_) {
 extern "C"
 void C_ZN16QFileSystemModel14setNameFiltersERK11QStringList(void *this_, QStringList* filters) {
   ((QFileSystemModel*)this_)->setNameFilters(*filters);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:130
+// [8] QStringList nameFilters()
+extern "C"
+void* C_ZNK16QFileSystemModel11nameFiltersEv(void *this_) {
+  auto rv = ((QFileSystemModel*)this_)->nameFilters();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:132

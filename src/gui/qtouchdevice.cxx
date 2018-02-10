@@ -50,9 +50,9 @@ QTouchDevice::DeviceType C_ZNK12QTouchDevice4typeEv(void *this_) {
 // /usr/include/qt/QtGui/qtouchdevice.h:80
 // [4] QTouchDevice::Capabilities capabilities()
 extern "C"
-void C_ZNK12QTouchDevice12capabilitiesEv(void *this_) {
+QTouchDevice::Capabilities* C_ZNK12QTouchDevice12capabilitiesEv(void *this_) {
   auto rv = ((QTouchDevice*)this_)->capabilities();
-/*return rv;*/
+return new QTouchDevice::Capabilities(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:81

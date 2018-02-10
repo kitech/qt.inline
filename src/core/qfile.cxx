@@ -245,9 +245,9 @@ bool C_ZN5QFile6resizeERK7QStringx(QString* filename, qint64 sz) {
 // /usr/include/qt/QtCore/qfile.h:136
 // [4] QFileDevice::Permissions permissions()
 extern "C"
-void C_ZNK5QFile11permissionsEv(void *this_) {
+QFileDevice::Permissions* C_ZNK5QFile11permissionsEv(void *this_) {
   auto rv = ((QFile*)this_)->permissions();
-/*return rv;*/
+return new QFileDevice::Permissions(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:137

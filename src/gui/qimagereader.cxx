@@ -137,6 +137,14 @@ QImage::Format C_ZNK12QImageReader11imageFormatEv(void *this_) {
   return (QImage::Format)((QImageReader*)this_)->imageFormat();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:95
+// [8] QStringList textKeys()
+extern "C"
+void* C_ZNK12QImageReader8textKeysEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->textKeys();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:96
 // [8] QString text(const class QString &)
 extern "C"

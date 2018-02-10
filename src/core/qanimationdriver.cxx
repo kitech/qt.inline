@@ -25,6 +25,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
     QAnimationDriver::advanceAnimation(timeStep);
   }
   }
+
 // void start()
   virtual void start() {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
     QAnimationDriver::start();
   }
   }
+
 // void stop()
   virtual void stop() {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
     QAnimationDriver::stop();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

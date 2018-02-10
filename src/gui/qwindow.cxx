@@ -27,6 +27,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::exposeEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::resizeEvent(arg0);
   }
   }
+
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * arg0) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::moveEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::focusInEvent(arg0);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::focusOutEvent(arg0);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::showEvent(arg0);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::hideEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     return QWindow::event(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::keyPressEvent(arg0);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::keyReleaseEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -128,6 +138,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -138,6 +149,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -148,6 +160,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::mouseDoubleClickEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -158,6 +171,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::mouseMoveEvent(arg0);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
@@ -168,6 +182,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::wheelEvent(arg0);
   }
   }
+
 // void touchEvent(class QTouchEvent *)
   virtual void touchEvent(QTouchEvent * arg0) {
     int handled = 0;
@@ -178,6 +193,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::touchEvent(arg0);
   }
   }
+
 // void tabletEvent(class QTabletEvent *)
   virtual void tabletEvent(QTabletEvent * arg0) {
     int handled = 0;
@@ -188,6 +204,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     QWindow::tabletEvent(arg0);
   }
   }
+
 // bool nativeEvent(const class QByteArray &, void *, long *)
   virtual bool nativeEvent(const QByteArray & eventType, void * message, long * result) {
     int handled = 0;
@@ -199,6 +216,7 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
     return QWindow::nativeEvent(eventType, message, result);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

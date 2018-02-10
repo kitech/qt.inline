@@ -731,6 +731,14 @@ void* C_ZN7QLocale17formattedDataSizeExi6QFlagsINS_14DataSizeFormatEE(void *this
   auto rv = ((QLocale*)this_)->formattedDataSize(bytes, precision, format);
 return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1063
+// [8] QStringList uiLanguages()
+extern "C"
+void* C_ZNK7QLocale11uiLanguagesEv(void *this_) {
+  auto rv = ((QLocale*)this_)->uiLanguages();
+return new QStringList(rv);
+}
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1068
 // [8] QString languageToString(enum QLocale::Language)
@@ -789,9 +797,9 @@ void C_ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE(void *this_, QFl
 // /usr/include/qt/QtCore/qlocale.h:1080
 // [4] QLocale::NumberOptions numberOptions()
 extern "C"
-void C_ZNK7QLocale13numberOptionsEv(void *this_) {
+QLocale::NumberOptions* C_ZNK7QLocale13numberOptionsEv(void *this_) {
   auto rv = ((QLocale*)this_)->numberOptions();
-/*return rv;*/
+return new QLocale::NumberOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1083

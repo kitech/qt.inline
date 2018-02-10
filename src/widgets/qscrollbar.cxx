@@ -27,6 +27,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::wheelEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::paintEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::mouseMoveEvent(arg0);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::hideEvent(arg0);
   }
   }
+
 // void sliderChange(enum QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::sliderChange(change);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * arg0) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::contextMenuEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionSlider *)
   virtual void initStyleOption(QStyleOptionSlider * option) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     QScrollBar::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

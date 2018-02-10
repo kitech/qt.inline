@@ -26,8 +26,8 @@ void C_ZN13QGestureEventD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:281
 // [8] QGesture * gesture(Qt::GestureType)
 extern "C"
-void* C_ZNK13QGestureEvent7gestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type) {
-  return (void*)((QGestureEvent*)this_)->gesture(type);
+void* C_ZNK13QGestureEvent7gestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type_) {
+  return (void*)((QGestureEvent*)this_)->gesture(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:291

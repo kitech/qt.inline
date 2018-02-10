@@ -26,6 +26,7 @@ MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg
     return QApplication::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -161,6 +162,22 @@ extern "C"
 void* C_ZN12QApplication10windowIconEv() {
   auto rv = QApplication::windowIcon();
 return new QIcon(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:125
+// [-2] QWidgetList allWidgets()
+extern "C"
+void C_ZN12QApplication10allWidgetsEv() {
+  auto rv = QApplication::allWidgets();
+/*return rv;*/
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:126
+// [-2] QWidgetList topLevelWidgets()
+extern "C"
+void C_ZN12QApplication15topLevelWidgetsEv() {
+  auto rv = QApplication::topLevelWidgets();
+/*return rv;*/
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:128

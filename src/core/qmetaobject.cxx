@@ -229,16 +229,16 @@ return new QByteArray(rv);
 // /usr/include/qt/QtCore/qobjectdefs.h:386
 // [8] QByteArray normalizedType(const char *)
 extern "C"
-void* C_ZN11QMetaObject14normalizedTypeEPKc(const char * type) {
-  auto rv = QMetaObject::normalizedType(type);
+void* C_ZN11QMetaObject14normalizedTypeEPKc(const char * type_) {
+  auto rv = QMetaObject::normalizedType(type_);
 return new QByteArray(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:389
 // [8] QMetaObject::Connection connect(const class QObject *, int, const class QObject *, int, int, int *)
 extern "C"
-void* C_ZN11QMetaObject7connectEPK7QObjectiS2_iiPi(const QObject * sender, int signal_index, const QObject * receiver, int method_index, int type, int * types) {
-  auto rv = QMetaObject::connect(sender, signal_index, receiver, method_index, type, types);
+void* C_ZN11QMetaObject7connectEPK7QObjectiS2_iiPi(const QObject * sender, int signal_index, const QObject * receiver, int method_index, int type_, int * types) {
+  auto rv = QMetaObject::connect(sender, signal_index, receiver, method_index, type_, types);
 return new QMetaObject::Connection(rv);
 }
 // Public static Visibility=Default Availability=Available
@@ -294,8 +294,8 @@ bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKc22QGenericReturnArgument16QGene
 // /usr/include/qt/QtCore/qobjectdefs.h:436
 // [1] bool invokeMethod(class QObject *, const char *, Qt::ConnectionType, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
 extern "C"
-bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE16QGenericArgumentS6_S6_S6_S6_S6_S6_S6_S6_S6_(QObject * obj, const char * member, Qt::ConnectionType type, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
-  return (bool)QMetaObject::invokeMethod(obj, member, type, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
+bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE16QGenericArgumentS6_S6_S6_S6_S6_S6_S6_S6_S6_(QObject * obj, const char * member, Qt::ConnectionType type_, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
+  return (bool)QMetaObject::invokeMethod(obj, member, type_, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:453

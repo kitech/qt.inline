@@ -25,6 +25,7 @@ MyQLocalServer(QObject * parent) : QLocalServer(parent) {}
     QLocalServer::incomingConnection(socketDescriptor);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -168,9 +169,9 @@ void C_ZN12QLocalServer16setSocketOptionsE6QFlagsINS_12SocketOptionEE(void *this
 // /usr/include/qt/QtNetwork/qlocalserver.h:93
 // [4] QLocalServer::SocketOptions socketOptions()
 extern "C"
-void C_ZNK12QLocalServer13socketOptionsEv(void *this_) {
+QLocalServer::SocketOptions* C_ZNK12QLocalServer13socketOptionsEv(void *this_) {
   auto rv = ((QLocalServer*)this_)->socketOptions();
-/*return rv;*/
+return new QLocalServer::SocketOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:95

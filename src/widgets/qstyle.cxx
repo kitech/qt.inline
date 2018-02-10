@@ -28,7 +28,7 @@ void* C_ZNK6QStyle10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstyle.h:73
 // [-2] void QStyle()
 extern "C"
-void* C_ZN6QStyleC1Ev() {
+void* C_ZN6QStyleC2Ev() {
   return 0; // new QStyle();
 }
 // Public virtual Visibility=Default Availability=Available

@@ -40,6 +40,14 @@ void* C_ZN10QJsonArray14fromStringListERK11QStringList(QStringList* list) {
 return new QJsonArray(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonarray.h:91
+// [8] QVariantList toVariantList()
+extern "C"
+QVariantList* C_ZNK10QJsonArray13toVariantListEv(void *this_) {
+  auto rv = ((QJsonArray*)this_)->toVariantList();
+return new QVariantList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:93
 // [4] int size()
 extern "C"

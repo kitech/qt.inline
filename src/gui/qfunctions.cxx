@@ -102,6 +102,15 @@ void* C_Z21qAccessibleRoleStringN11QAccessible4RoleE(QAccessible::Role role) {
   return (void*)qAccessibleRoleString(role);
 }
 
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:149
+// [8] QString qt_findAtNxFile(const class QString &, qreal, qreal *)
+extern "C"
+void* C_Z15qt_findAtNxFileRK7QStringdPd(QString* baseFileName, qreal targetDevicePixelRatio, qreal * sourceDevicePixelRatio) {
+  auto rv = qt_findAtNxFile(*baseFileName, targetDevicePixelRatio, sourceDevicePixelRatio);
+return new QString(rv);
+}
+
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgb.h:96
 // [4] QRgb qUnpremultiply(QRgb)

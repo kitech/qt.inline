@@ -122,6 +122,14 @@ void C_ZN9QDirModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder
   ((QDirModel*)this_)->sort(column, order);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:89
+// [8] QStringList mimeTypes()
+extern "C"
+void* C_ZNK9QDirModel9mimeTypesEv(void *this_) {
+  auto rv = ((QDirModel*)this_)->mimeTypes();
+return new QStringList(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:91
 // [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -155,6 +163,14 @@ void* C_ZNK9QDirModel12iconProviderEv(void *this_) {
 extern "C"
 void C_ZN9QDirModel14setNameFiltersERK11QStringList(void *this_, QStringList* filters) {
   ((QDirModel*)this_)->setNameFilters(*filters);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:101
+// [8] QStringList nameFilters()
+extern "C"
+void* C_ZNK9QDirModel11nameFiltersEv(void *this_) {
+  auto rv = ((QDirModel*)this_)->nameFilters();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:103

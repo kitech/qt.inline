@@ -107,32 +107,32 @@ int C_ZNK5QDate10weekNumberEPi(void *this_, int * yearNum) {
 // /usr/include/qt/QtCore/qdatetime.h:86
 // [8] QString shortMonthName(int, enum QDate::MonthNameType)
 extern "C"
-void* C_ZN5QDate14shortMonthNameEiNS_13MonthNameTypeE(int month, QDate::MonthNameType type) {
-  auto rv = QDate::shortMonthName(month, type);
+void* C_ZN5QDate14shortMonthNameEiNS_13MonthNameTypeE(int month, QDate::MonthNameType type_) {
+  auto rv = QDate::shortMonthName(month, type_);
 return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:88
 // [8] QString shortDayName(int, enum QDate::MonthNameType)
 extern "C"
-void* C_ZN5QDate12shortDayNameEiNS_13MonthNameTypeE(int weekday, QDate::MonthNameType type) {
-  auto rv = QDate::shortDayName(weekday, type);
+void* C_ZN5QDate12shortDayNameEiNS_13MonthNameTypeE(int weekday, QDate::MonthNameType type_) {
+  auto rv = QDate::shortDayName(weekday, type_);
 return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:90
 // [8] QString longMonthName(int, enum QDate::MonthNameType)
 extern "C"
-void* C_ZN5QDate13longMonthNameEiNS_13MonthNameTypeE(int month, QDate::MonthNameType type) {
-  auto rv = QDate::longMonthName(month, type);
+void* C_ZN5QDate13longMonthNameEiNS_13MonthNameTypeE(int month, QDate::MonthNameType type_) {
+  auto rv = QDate::longMonthName(month, type_);
 return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:92
 // [8] QString longDayName(int, enum QDate::MonthNameType)
 extern "C"
-void* C_ZN5QDate11longDayNameEiNS_13MonthNameTypeE(int weekday, QDate::MonthNameType type) {
-  auto rv = QDate::longDayName(weekday, type);
+void* C_ZN5QDate11longDayNameEiNS_13MonthNameTypeE(int weekday, QDate::MonthNameType type_) {
+  auto rv = QDate::longDayName(weekday, type_);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

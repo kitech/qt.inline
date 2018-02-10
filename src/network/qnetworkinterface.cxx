@@ -72,9 +72,9 @@ return new QString(rv);
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:119
 // [4] QNetworkInterface::InterfaceFlags flags()
 extern "C"
-void C_ZNK17QNetworkInterface5flagsEv(void *this_) {
+QNetworkInterface::InterfaceFlags* C_ZNK17QNetworkInterface5flagsEv(void *this_) {
   auto rv = ((QNetworkInterface*)this_)->flags();
-/*return rv;*/
+return new QNetworkInterface::InterfaceFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:120

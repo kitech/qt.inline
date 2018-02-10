@@ -42,9 +42,9 @@ void C_ZN13QPinchGestureD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:168
 // [4] QPinchGesture::ChangeFlags totalChangeFlags()
 extern "C"
-void C_ZNK13QPinchGesture16totalChangeFlagsEv(void *this_) {
+QPinchGesture::ChangeFlags* C_ZNK13QPinchGesture16totalChangeFlagsEv(void *this_) {
   auto rv = ((QPinchGesture*)this_)->totalChangeFlags();
-/*return rv;*/
+return new QPinchGesture::ChangeFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:169
@@ -57,9 +57,9 @@ void C_ZN13QPinchGesture19setTotalChangeFlagsE6QFlagsINS_10ChangeFlagEE(void *th
 // /usr/include/qt/QtWidgets/qgesture.h:171
 // [4] QPinchGesture::ChangeFlags changeFlags()
 extern "C"
-void C_ZNK13QPinchGesture11changeFlagsEv(void *this_) {
+QPinchGesture::ChangeFlags* C_ZNK13QPinchGesture11changeFlagsEv(void *this_) {
   auto rv = ((QPinchGesture*)this_)->changeFlags();
-/*return rv;*/
+return new QPinchGesture::ChangeFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:172

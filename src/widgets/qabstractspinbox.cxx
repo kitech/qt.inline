@@ -25,6 +25,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::resizeEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::keyPressEvent(event);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::keyReleaseEvent(event);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::wheelEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::focusInEvent(event);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::focusOutEvent(event);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::contextMenuEvent(event);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::changeEvent(event);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
@@ -105,6 +113,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::closeEvent(event);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
@@ -115,6 +124,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::hideEvent(event);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -125,6 +135,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::mousePressEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -135,6 +146,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::mouseReleaseEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -145,6 +157,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::mouseMoveEvent(event);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
@@ -155,6 +168,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::timerEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -165,6 +179,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::paintEvent(event);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
@@ -175,6 +190,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::showEvent(event);
   }
   }
+
 // void initStyleOption(class QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) {
     int handled = 0;
@@ -185,6 +201,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::initStyleOption(option);
   }
   }
+
 // QLineEdit * lineEdit()
   virtual QLineEdit * lineEdit() {
     int handled = 0;
@@ -196,6 +213,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     return QAbstractSpinBox::lineEdit();
   }
   }
+
 // void setLineEdit(class QLineEdit *)
   virtual void setLineEdit(QLineEdit * edit) {
     int handled = 0;
@@ -206,6 +224,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     QAbstractSpinBox::setLineEdit(edit);
   }
   }
+
 // QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() {
     int handled = 0;
@@ -217,6 +236,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     return QAbstractSpinBox::stepEnabled();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

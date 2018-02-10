@@ -45,6 +45,14 @@ extern "C"
 void C_ZN11QQuickStyle16setFallbackStyleERK7QString(QString* style) {
   QQuickStyle::setFallbackStyle(*style);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickControls2/qquickstyle.h:53
+// [8] QStringList availableStyles()
+extern "C"
+void* C_ZN11QQuickStyle15availableStylesEv() {
+  auto rv = QQuickStyle::availableStyles();
+return new QStringList(rv);
+}
 
 extern "C"
 void C_ZN11QQuickStyleD2Ev(void *this_) {

@@ -26,6 +26,7 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
     QTextObject::setFormat(format);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

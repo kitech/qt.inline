@@ -1412,9 +1412,9 @@ void C_ZN8QPainter14setRenderHintsE6QFlagsINS_10RenderHintEEb(void *this_, QFlag
 // /usr/include/qt/QtGui/qpainter.h:457
 // [4] QPainter::RenderHints renderHints()
 extern "C"
-void C_ZNK8QPainter11renderHintsEv(void *this_) {
+QPainter::RenderHints* C_ZNK8QPainter11renderHintsEv(void *this_) {
   auto rv = ((QPainter*)this_)->renderHints();
-/*return rv;*/
+return new QPainter::RenderHints(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:458

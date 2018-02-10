@@ -26,6 +26,19 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return QTreeWidget::event(e);
   }
   }
+
+// QStringList mimeTypes()
+  virtual QStringList mimeTypes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QStringList*)(irv);
+      // RecordRecordQStringList
+    } else {
+    return QTreeWidget::mimeTypes();
+  }
+  }
+
 // bool dropMimeData(class QTreeWidgetItem *, int, const class QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(QTreeWidgetItem * parent, int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
@@ -37,6 +50,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return QTreeWidget::dropMimeData(parent, index, data, action);
   }
   }
+
 // Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() {
     int handled = 0;
@@ -48,6 +62,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return QTreeWidget::supportedDropActions();
   }
   }
+
 // QModelIndex indexFromItem(const class QTreeWidgetItem *, int)
   virtual QModelIndex indexFromItem(const QTreeWidgetItem * item, int column) {
     int handled = 0;
@@ -59,6 +74,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return QTreeWidget::indexFromItem(item, column);
   }
   }
+
 // QModelIndex indexFromItem(class QTreeWidgetItem *, int)
   virtual QModelIndex indexFromItem(QTreeWidgetItem * item, int column) {
     int handled = 0;
@@ -70,6 +86,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return QTreeWidget::indexFromItem(item, column);
   }
   }
+
 // QTreeWidgetItem * itemFromIndex(const class QModelIndex &)
   virtual QTreeWidgetItem * itemFromIndex(const QModelIndex & index) {
     int handled = 0;
@@ -81,6 +98,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return QTreeWidget::itemFromIndex(index);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
@@ -91,6 +109,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     QTreeWidget::dropEvent(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -337,8 +356,8 @@ bool C_ZNK11QTreeWidget14isItemSelectedEPK15QTreeWidgetItem(void *this_, const Q
 // /usr/include/qt/QtWidgets/qtreewidget.h:310
 // [-2] void setItemSelected(const class QTreeWidgetItem *, _Bool)
 extern "C"
-void C_ZN11QTreeWidget15setItemSelectedEPK15QTreeWidgetItemb(void *this_, const QTreeWidgetItem * item, bool select) {
-  ((QTreeWidget*)this_)->setItemSelected(item, select);
+void C_ZN11QTreeWidget15setItemSelectedEPK15QTreeWidgetItemb(void *this_, const QTreeWidgetItem * item, bool select_) {
+  ((QTreeWidget*)this_)->setItemSelected(item, select_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:315

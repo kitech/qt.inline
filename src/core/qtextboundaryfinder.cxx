@@ -16,9 +16,9 @@ public:
 // void QTextBoundaryFinder()
 MyQTextBoundaryFinder() : QTextBoundaryFinder() {}
 // void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
-MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type, const QString & string) : QTextBoundaryFinder(type, string) {}
+MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QString & string) : QTextBoundaryFinder(type_, string) {}
 // void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
-MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type, const QChar * chars, int length, unsigned char * buffer, int bufferSize) : QTextBoundaryFinder(type, chars, length, buffer, bufferSize) {}
+MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) : QTextBoundaryFinder(type_, chars, length, buffer, bufferSize) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -39,15 +39,15 @@ void C_ZN19QTextBoundaryFinderD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:76
 // [-2] void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
 extern "C"
-void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type, QString* string) {
-  return  new QTextBoundaryFinder(type, *string);
+void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type_, QString* string) {
+  return  new QTextBoundaryFinder(type_, *string);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:77
 // [-2] void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
 extern "C"
-void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType type, const QChar * chars, int length, unsigned char * buffer, int bufferSize) {
-  return  new QTextBoundaryFinder(type, chars, length, buffer, bufferSize);
+void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) {
+  return  new QTextBoundaryFinder(type_, chars, length, buffer, bufferSize);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:79
@@ -124,8 +124,8 @@ bool C_ZNK19QTextBoundaryFinder12isAtBoundaryEv(void *this_) {
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:93
 // [4] QTextBoundaryFinder::BoundaryReasons boundaryReasons()
 extern "C"
-void C_ZNK19QTextBoundaryFinder15boundaryReasonsEv(void *this_) {
+QTextBoundaryFinder::BoundaryReasons* C_ZNK19QTextBoundaryFinder15boundaryReasonsEv(void *this_) {
   auto rv = ((QTextBoundaryFinder*)this_)->boundaryReasons();
-/*return rv;*/
+return new QTextBoundaryFinder::BoundaryReasons(rv);
 }
 //  main block end

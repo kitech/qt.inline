@@ -25,6 +25,7 @@ MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(
     QPlainTextDocumentLayout::documentChanged(from, arg1, charsAdded);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

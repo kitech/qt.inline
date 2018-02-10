@@ -25,6 +25,7 @@ MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
     QTimeLine::timerEvent(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

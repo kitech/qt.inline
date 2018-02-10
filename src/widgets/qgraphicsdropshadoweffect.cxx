@@ -25,6 +25,7 @@ MyQGraphicsDropShadowEffect(QObject * parent) : QGraphicsDropShadowEffect(parent
     QGraphicsDropShadowEffect::draw(painter);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

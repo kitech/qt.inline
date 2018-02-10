@@ -26,6 +26,7 @@ MyQNetworkDiskCache(QObject * parent) : QNetworkDiskCache(parent) {}
     return QNetworkDiskCache::expire();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

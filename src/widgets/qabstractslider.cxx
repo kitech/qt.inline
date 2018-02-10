@@ -26,6 +26,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     return QAbstractSlider::event(e);
   }
   }
+
 // void setRepeatAction(enum QAbstractSlider::SliderAction, int, int)
   virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     QAbstractSlider::setRepeatAction(action, thresholdTime, repeatTime);
   }
   }
+
 // QAbstractSlider::SliderAction repeatAction()
   virtual QAbstractSlider::SliderAction repeatAction() {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     return QAbstractSlider::repeatAction();
   }
   }
+
 // void sliderChange(enum QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     QAbstractSlider::sliderChange(change);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     QAbstractSlider::keyPressEvent(ev);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     QAbstractSlider::timerEvent(arg0);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     QAbstractSlider::wheelEvent(e);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     QAbstractSlider::changeEvent(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

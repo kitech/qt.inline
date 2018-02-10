@@ -154,6 +154,22 @@ int C_ZNK7QRegExp12captureCountEv(void *this_) {
   return (int)((QRegExp*)this_)->captureCount();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:103
+// [8] QStringList capturedTexts()
+extern "C"
+void* C_ZNK7QRegExp13capturedTextsEv(void *this_) {
+  auto rv = ((QRegExp*)this_)->capturedTexts();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:104
+// [8] QStringList capturedTexts()
+extern "C"
+void* C_ZN7QRegExp13capturedTextsEv(void *this_) {
+  auto rv = ((QRegExp*)this_)->capturedTexts();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:105
 // [8] QString cap(int)
 extern "C"

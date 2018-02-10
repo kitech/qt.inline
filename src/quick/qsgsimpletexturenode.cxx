@@ -114,9 +114,9 @@ void C_ZN20QSGSimpleTextureNode30setTextureCoordinatesTransformE6QFlagsINS_31Tex
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:79
 // [4] QSGSimpleTextureNode::TextureCoordinatesTransformMode textureCoordinatesTransform()
 extern "C"
-void C_ZNK20QSGSimpleTextureNode27textureCoordinatesTransformEv(void *this_) {
+QSGSimpleTextureNode::TextureCoordinatesTransformMode* C_ZNK20QSGSimpleTextureNode27textureCoordinatesTransformEv(void *this_) {
   auto rv = ((QSGSimpleTextureNode*)this_)->textureCoordinatesTransform();
-/*return rv;*/
+return new QSGSimpleTextureNode::TextureCoordinatesTransformMode(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:81

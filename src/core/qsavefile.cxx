@@ -30,6 +30,7 @@ MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
     return QSaveFile::writeData(data, len);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

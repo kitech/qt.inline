@@ -173,8 +173,8 @@ void C_ZN8QLibrary12setLoadHintsE6QFlagsINS_8LoadHintEE(void *this_, QFlags<QLib
 // /usr/include/qt/QtCore/qlibrary.h:93
 // [4] QLibrary::LoadHints loadHints()
 extern "C"
-void C_ZNK8QLibrary9loadHintsEv(void *this_) {
+QLibrary::LoadHints* C_ZNK8QLibrary9loadHintsEv(void *this_) {
   auto rv = ((QLibrary*)this_)->loadHints();
-/*return rv;*/
+return new QLibrary::LoadHints(rv);
 }
 //  main block end

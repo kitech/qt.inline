@@ -26,6 +26,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     return QSequentialAnimationGroup::event(event);
   }
   }
+
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     QSequentialAnimationGroup::updateCurrentTime(arg0);
   }
   }
+
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     QSequentialAnimationGroup::updateState(newState, oldState);
   }
   }
+
 // void updateDirection(class QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     QSequentialAnimationGroup::updateDirection(direction);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

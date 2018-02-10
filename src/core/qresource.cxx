@@ -26,6 +26,7 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
     return QResource::isDir();
   }
   }
+
 // bool isFile()
   virtual bool isFile() {
     int handled = 0;
@@ -37,6 +38,19 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
     return QResource::isFile();
   }
   }
+
+// QStringList children()
+  virtual QStringList children() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"children", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QStringList*)(irv);
+      // RecordRecordQStringList
+    } else {
+    return QResource::children();
+  }
+  }
+
 };
 
 // Public Visibility=Default Availability=Available
@@ -134,6 +148,14 @@ return new QDateTime(rv);
 extern "C"
 void C_ZN9QResource13addSearchPathERK7QString(QString* path) {
   QResource::addSearchPath(*path);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qresource.h:75
+// [8] QStringList searchPaths()
+extern "C"
+void* C_ZN9QResource11searchPathsEv() {
+  auto rv = QResource::searchPaths();
+return new QStringList(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:77

@@ -14,15 +14,15 @@ class MyQVariantComparisonHelper : public QVariantComparisonHelper {
 public:
   virtual ~MyQVariantComparisonHelper() {}
 // void QVariantComparisonHelper(const class QVariant &)
-MyQVariantComparisonHelper(const QVariant & var) : QVariantComparisonHelper(var) {}
+MyQVariantComparisonHelper(const QVariant & var_) : QVariantComparisonHelper(var_) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:560
 // [-2] void QVariantComparisonHelper(const class QVariant &)
 extern "C"
-void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var) {
-  return  new QVariantComparisonHelper(*var);
+void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var_) {
+  return  new QVariantComparisonHelper(*var_);
 }
 
 extern "C"

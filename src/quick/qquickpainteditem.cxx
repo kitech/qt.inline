@@ -25,6 +25,7 @@ MyQQuickPaintedItem(QQuickItem * parent) : QQuickPaintedItem(parent) {}
     QQuickPaintedItem::releaseResources();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,7 +39,7 @@ void* C_ZNK17QQuickPaintedItem10metaObjectEv(void *this_) {
 // /usr/include/qt/QtQuick/qquickpainteditem.h:60
 // [-2] void QQuickPaintedItem(class QQuickItem *)
 extern "C"
-void* C_ZN17QQuickPaintedItemC1EP10QQuickItem(QQuickItem * parent) {
+void* C_ZN17QQuickPaintedItemC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickPaintedItem*)(0);
   return 0; // new MyQQuickPaintedItem(parent);
 }
@@ -102,9 +103,9 @@ void C_ZN17QQuickPaintedItem9setMipmapEb(void *this_, bool enable) {
 // /usr/include/qt/QtQuick/qquickpainteditem.h:86
 // [4] QQuickPaintedItem::PerformanceHints performanceHints()
 extern "C"
-void C_ZNK17QQuickPaintedItem16performanceHintsEv(void *this_) {
+QQuickPaintedItem::PerformanceHints* C_ZNK17QQuickPaintedItem16performanceHintsEv(void *this_) {
   auto rv = ((QQuickPaintedItem*)this_)->performanceHints();
-/*return rv;*/
+return new QQuickPaintedItem::PerformanceHints(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:87

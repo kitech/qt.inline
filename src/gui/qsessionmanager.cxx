@@ -83,11 +83,27 @@ void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, QStri
   ((QSessionManager*)this_)->setRestartCommand(*arg0);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsessionmanager.h:84
+// [8] QStringList restartCommand()
+extern "C"
+void* C_ZNK15QSessionManager14restartCommandEv(void *this_) {
+  auto rv = ((QSessionManager*)this_)->restartCommand();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:85
 // [-2] void setDiscardCommand(const class QStringList &)
 extern "C"
 void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, QStringList* arg0) {
   ((QSessionManager*)this_)->setDiscardCommand(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsessionmanager.h:86
+// [8] QStringList discardCommand()
+extern "C"
+void* C_ZNK15QSessionManager14discardCommandEv(void *this_) {
+  auto rv = ((QSessionManager*)this_)->discardCommand();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:88

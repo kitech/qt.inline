@@ -26,6 +26,7 @@ MyQFontComboBox(QWidget * parent) : QFontComboBox(parent) {}
     return QFontComboBox::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -75,9 +76,9 @@ void C_ZN13QFontComboBox14setFontFiltersE6QFlagsINS_10FontFilterEE(void *this_, 
 // /usr/include/qt/QtWidgets/qfontcombobox.h:78
 // [4] QFontComboBox::FontFilters fontFilters()
 extern "C"
-void C_ZNK13QFontComboBox11fontFiltersEv(void *this_) {
+QFontComboBox::FontFilters* C_ZNK13QFontComboBox11fontFiltersEv(void *this_) {
   auto rv = ((QFontComboBox*)this_)->fontFilters();
-/*return rv;*/
+return new QFontComboBox::FontFilters(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:80

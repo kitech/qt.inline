@@ -314,8 +314,8 @@ QFont::SpacingType C_ZNK5QFont17letterSpacingTypeEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:230
 // [-2] void setLetterSpacing(enum QFont::SpacingType, qreal)
 extern "C"
-void C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *this_, QFont::SpacingType type, qreal spacing) {
-  ((QFont*)this_)->setLetterSpacing(type, spacing);
+void C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *this_, QFont::SpacingType type_, qreal spacing) {
+  ((QFont*)this_)->setLetterSpacing(type_, spacing);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:232
@@ -432,6 +432,22 @@ extern "C"
 void* C_ZN5QFont10substituteERK7QString(QString* arg0) {
   auto rv = QFont::substitute(*arg0);
 return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:272
+// [8] QStringList substitutes(const class QString &)
+extern "C"
+void* C_ZN5QFont11substitutesERK7QString(QString* arg0) {
+  auto rv = QFont::substitutes(*arg0);
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:273
+// [8] QStringList substitutions()
+extern "C"
+void* C_ZN5QFont13substitutionsEv() {
+  auto rv = QFont::substitutions();
+return new QStringList(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:274

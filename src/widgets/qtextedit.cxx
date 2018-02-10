@@ -28,6 +28,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return QTextEdit::event(e);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::timerEvent(e);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * e) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::keyPressEvent(e);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * e) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::keyReleaseEvent(e);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::resizeEvent(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::paintEvent(e);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::mousePressEvent(e);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::mouseMoveEvent(e);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::mouseReleaseEvent(e);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * e) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::mouseDoubleClickEvent(e);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -129,6 +139,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return QTextEdit::focusNextPrevChild(next);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * e) {
     int handled = 0;
@@ -139,6 +150,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::contextMenuEvent(e);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * e) {
     int handled = 0;
@@ -149,6 +161,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::dragEnterEvent(e);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * e) {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::dragLeaveEvent(e);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * e) {
     int handled = 0;
@@ -169,6 +183,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::dragMoveEvent(e);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * e) {
     int handled = 0;
@@ -179,6 +194,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::dropEvent(e);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * e) {
     int handled = 0;
@@ -189,6 +205,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::focusInEvent(e);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * e) {
     int handled = 0;
@@ -199,6 +216,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::focusOutEvent(e);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
@@ -209,6 +227,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::showEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
@@ -219,6 +238,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::changeEvent(e);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
@@ -229,6 +249,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::wheelEvent(e);
   }
   }
+
 // QMimeData * createMimeDataFromSelection()
   virtual QMimeData * createMimeDataFromSelection() {
     int handled = 0;
@@ -240,6 +261,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return QTextEdit::createMimeDataFromSelection();
   }
   }
+
 // bool canInsertFromMimeData(const class QMimeData *)
   virtual bool canInsertFromMimeData(const QMimeData * source) {
     int handled = 0;
@@ -251,6 +273,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return QTextEdit::canInsertFromMimeData(source);
   }
   }
+
 // void insertFromMimeData(const class QMimeData *)
   virtual void insertFromMimeData(const QMimeData * source) {
     int handled = 0;
@@ -261,6 +284,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::insertFromMimeData(source);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
@@ -271,6 +295,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::inputMethodEvent(arg0);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -281,6 +306,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::scrollContentsBy(dx, dy);
   }
   }
+
 // void doSetTextCursor(const class QTextCursor &)
   virtual void doSetTextCursor(const QTextCursor & cursor) {
     int handled = 0;
@@ -291,16 +317,18 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     QTextEdit::doSetTextCursor(cursor);
   }
   }
+
 // void zoomInF(float)
-  virtual void zoomInF(float range) {
+  virtual void zoomInF(float range_) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"zoomInF", &handled, 1, (uint64_t)&range, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr(this, (char*)"zoomInF", &handled, 1, (uint64_t)&range_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
-    QTextEdit::zoomInF(range);
+    QTextEdit::zoomInF(range_);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -498,9 +526,9 @@ return new QTextCharFormat(rv);
 // /usr/include/qt/QtWidgets/qtextedit.h:139
 // [4] QTextEdit::AutoFormatting autoFormatting()
 extern "C"
-void C_ZNK9QTextEdit14autoFormattingEv(void *this_) {
+QTextEdit::AutoFormatting* C_ZNK9QTextEdit14autoFormattingEv(void *this_) {
   auto rv = ((QTextEdit*)this_)->autoFormatting();
-/*return rv;*/
+return new QTextEdit::AutoFormatting(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:140
@@ -635,8 +663,8 @@ void C_ZN9QTextEdit19ensureCursorVisibleEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:176
 // [16] QVariant loadResource(int, const class QUrl &)
 extern "C"
-void* C_ZN9QTextEdit12loadResourceEiRK4QUrl(void *this_, int type, QUrl* name) {
-  auto rv = ((QTextEdit*)this_)->loadResource(type, *name);
+void* C_ZN9QTextEdit12loadResourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
+  auto rv = ((QTextEdit*)this_)->loadResource(type_, *name);
 return new QVariant(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -950,15 +978,15 @@ void C_ZN9QTextEdit14scrollToAnchorERK7QString(void *this_, QString* name) {
 // /usr/include/qt/QtWidgets/qtextedit.h:260
 // [-2] void zoomIn(int)
 extern "C"
-void C_ZN9QTextEdit6zoomInEi(void *this_, int range) {
-  ((QTextEdit*)this_)->zoomIn(range);
+void C_ZN9QTextEdit6zoomInEi(void *this_, int range_) {
+  ((QTextEdit*)this_)->zoomIn(range_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:261
 // [-2] void zoomOut(int)
 extern "C"
-void C_ZN9QTextEdit7zoomOutEi(void *this_, int range) {
-  ((QTextEdit*)this_)->zoomOut(range);
+void C_ZN9QTextEdit7zoomOutEi(void *this_, int range_) {
+  ((QTextEdit*)this_)->zoomOut(range_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:264

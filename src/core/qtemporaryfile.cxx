@@ -32,6 +32,7 @@ MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFil
     return QTemporaryFile::open(flags);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

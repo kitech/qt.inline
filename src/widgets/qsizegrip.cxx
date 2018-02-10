@@ -25,6 +25,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::paintEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::mousePressEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::mouseMoveEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::mouseReleaseEvent(mouseEvent);
   }
   }
+
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * moveEvent) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::moveEvent(moveEvent);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::showEvent(showEvent);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * hideEvent) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     QSizeGrip::hideEvent(hideEvent);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
@@ -96,6 +103,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     return QSizeGrip::eventFilter(arg0, arg1);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
     return QSizeGrip::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -27,6 +27,7 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     QSlider::paintEvent(ev);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     QSlider::mousePressEvent(ev);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     QSlider::mouseReleaseEvent(ev);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     QSlider::mouseMoveEvent(ev);
   }
   }
+
 // void initStyleOption(class QStyleOptionSlider *)
   virtual void initStyleOption(QStyleOptionSlider * option) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     QSlider::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

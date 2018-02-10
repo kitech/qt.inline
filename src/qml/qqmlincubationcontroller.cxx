@@ -25,6 +25,7 @@ MyQQmlIncubationController() : QQmlIncubationController() {}
     QQmlIncubationController::incubatingObjectCountChanged(arg0);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

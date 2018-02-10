@@ -28,7 +28,7 @@ void* C_ZNK23QAccessibleBridgePlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qaccessiblebridge.h:69
 // [-2] void QAccessibleBridgePlugin(class QObject *)
 extern "C"
-void* C_ZN23QAccessibleBridgePluginC1EP7QObject(QObject * parent) {
+void* C_ZN23QAccessibleBridgePluginC2EP7QObject(QObject * parent) {
   return 0; // new QAccessibleBridgePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

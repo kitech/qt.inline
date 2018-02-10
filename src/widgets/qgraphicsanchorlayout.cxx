@@ -26,6 +26,7 @@ MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(pa
     return QGraphicsAnchorLayout::sizeHint(which, constraint);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

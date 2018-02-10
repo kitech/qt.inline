@@ -27,6 +27,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     QStateMachine::onEntry(event);
   }
   }
+
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     QStateMachine::onExit(event);
   }
   }
+
 // void beginSelectTransitions(class QEvent *)
   virtual void beginSelectTransitions(QEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     QStateMachine::beginSelectTransitions(event);
   }
   }
+
 // void endSelectTransitions(class QEvent *)
   virtual void endSelectTransitions(QEvent * event) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     QStateMachine::endSelectTransitions(event);
   }
   }
+
 // void beginMicrostep(class QEvent *)
   virtual void beginMicrostep(QEvent * event) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     QStateMachine::beginMicrostep(event);
   }
   }
+
 // void endMicrostep(class QEvent *)
   virtual void endMicrostep(QEvent * event) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     QStateMachine::endMicrostep(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     return QStateMachine::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

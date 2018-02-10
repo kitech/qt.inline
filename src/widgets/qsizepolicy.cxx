@@ -16,7 +16,7 @@ public:
 // void QSizePolicy()
 MyQSizePolicy() : QSizePolicy() {}
 // void QSizePolicy(enum QSizePolicy::Policy, enum QSizePolicy::Policy, enum QSizePolicy::ControlType)
-MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type) : QSizePolicy(horizontal, vertical, type) {}
+MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) : QSizePolicy(horizontal, vertical, type_) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -30,8 +30,8 @@ void* C_ZN11QSizePolicyC2Ev() {
 // /usr/include/qt/QtWidgets/qsizepolicy.h:116
 // [-2] void QSizePolicy(enum QSizePolicy::Policy, enum QSizePolicy::Policy, enum QSizePolicy::ControlType)
 extern "C"
-void* C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type) {
-  return  new QSizePolicy(horizontal, vertical, type);
+void* C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) {
+  return  new QSizePolicy(horizontal, vertical, type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:128
@@ -72,8 +72,8 @@ void C_ZN11QSizePolicy17setVerticalPolicyENS_6PolicyE(void *this_, QSizePolicy::
 // /usr/include/qt/QtWidgets/qsizepolicy.h:134
 // [-2] void setControlType(enum QSizePolicy::ControlType)
 extern "C"
-void C_ZN11QSizePolicy14setControlTypeENS_11ControlTypeE(void *this_, QSizePolicy::ControlType type) {
-  ((QSizePolicy*)this_)->setControlType(type);
+void C_ZN11QSizePolicy14setControlTypeENS_11ControlTypeE(void *this_, QSizePolicy::ControlType type_) {
+  ((QSizePolicy*)this_)->setControlType(type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:136

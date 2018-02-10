@@ -21,7 +21,7 @@ MyQIconEngine() : QIconEngine() {}
 // /usr/include/qt/QtGui/qiconengine.h:53
 // [-2] void QIconEngine()
 extern "C"
-void* C_ZN11QIconEngineC1Ev() {
+void* C_ZN11QIconEngineC2Ev() {
   return 0; // new QIconEngine();
 }
 // Public virtual Visibility=Default Availability=Available

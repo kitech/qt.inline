@@ -21,7 +21,7 @@ MyQQmlParserStatus() : QQmlParserStatus() {}
 // /usr/include/qt/QtQml/qqmlparserstatus.h:52
 // [-2] void QQmlParserStatus()
 extern "C"
-void* C_ZN16QQmlParserStatusC1Ev() {
+void* C_ZN16QQmlParserStatusC2Ev() {
   return 0; // new QQmlParserStatus();
 }
 // Public virtual Visibility=Default Availability=Available

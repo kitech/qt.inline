@@ -26,6 +26,7 @@ MyQStaticByteArrayMatcherBase(const char * pattern, uint n) : QStaticByteArrayMa
     return QStaticByteArrayMatcherBase::indexOfIn(needle, nlen, haystack, hlen, from);
   }
   }
+
 };
 
 

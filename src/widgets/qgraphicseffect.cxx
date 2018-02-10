@@ -25,6 +25,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     QGraphicsEffect::draw(painter);
   }
   }
+
 // void sourceChanged(QGraphicsEffect::ChangeFlags)
   virtual void sourceChanged(QFlags<QGraphicsEffect::ChangeFlag> flags) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     QGraphicsEffect::sourceChanged(flags);
   }
   }
+
 // void updateBoundingRect()
   virtual void updateBoundingRect() {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     QGraphicsEffect::updateBoundingRect();
   }
   }
+
 // bool sourceIsPixmap()
   virtual bool sourceIsPixmap() {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     return QGraphicsEffect::sourceIsPixmap();
   }
   }
+
 // QRectF sourceBoundingRect(Qt::CoordinateSystem)
   virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     return QGraphicsEffect::sourceBoundingRect(system);
   }
   }
+
 // void drawSource(class QPainter *)
   virtual void drawSource(QPainter * painter) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     QGraphicsEffect::drawSource(painter);
   }
   }
+
 // QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
   virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     return QGraphicsEffect::sourcePixmap(system, offset, mode);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -101,7 +108,7 @@ void* C_ZNK15QGraphicsEffect10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:82
 // [-2] void QGraphicsEffect(class QObject *)
 extern "C"
-void* C_ZN15QGraphicsEffectC1EP7QObject(QObject * parent) {
+void* C_ZN15QGraphicsEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsEffect*)(0);
   return 0; // new MyQGraphicsEffect(parent);
 }

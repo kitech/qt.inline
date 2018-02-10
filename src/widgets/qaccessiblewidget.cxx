@@ -27,6 +27,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
     return QAccessibleWidget::widget();
   }
   }
+
 // QObject * parentObject()
   virtual QObject * parentObject() {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
     return QAccessibleWidget::parentObject();
   }
   }
+
 // void addControllingSignal(const class QString &)
   virtual void addControllingSignal(const QString & signal) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
     QAccessibleWidget::addControllingSignal(signal);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
@@ -161,10 +164,26 @@ void* C_ZN17QAccessibleWidget14interface_castEN11QAccessible13InterfaceTypeE(voi
   return (void*)((QAccessibleWidget*)this_)->interface_cast(t);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:80
+// [8] QStringList actionNames()
+extern "C"
+void* C_ZNK17QAccessibleWidget11actionNamesEv(void *this_) {
+  auto rv = ((QAccessibleWidget*)this_)->actionNames();
+return new QStringList(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:81
 // [-2] void doAction(const class QString &)
 extern "C"
 void C_ZN17QAccessibleWidget8doActionERK7QString(void *this_, QString* actionName) {
   ((QAccessibleWidget*)this_)->doAction(*actionName);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:82
+// [8] QStringList keyBindingsForAction(const class QString &)
+extern "C"
+void* C_ZNK17QAccessibleWidget20keyBindingsForActionERK7QString(void *this_, QString* actionName) {
+  auto rv = ((QAccessibleWidget*)this_)->keyBindingsForAction(*actionName);
+return new QStringList(rv);
 }
 //  main block end

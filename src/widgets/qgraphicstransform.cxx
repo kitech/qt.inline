@@ -25,6 +25,7 @@ MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
     QGraphicsTransform::update();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,7 +39,7 @@ void* C_ZNK18QGraphicsTransform10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:60
 // [-2] void QGraphicsTransform(class QObject *)
 extern "C"
-void* C_ZN18QGraphicsTransformC1EP7QObject(QObject * parent) {
+void* C_ZN18QGraphicsTransformC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsTransform*)(0);
   return 0; // new MyQGraphicsTransform(parent);
 }

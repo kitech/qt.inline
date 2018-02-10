@@ -26,6 +26,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     return QWizard::event(event);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     QWizard::resizeEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     QWizard::paintEvent(event);
   }
   }
+
 // void done(int)
   virtual void done(int result) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     QWizard::done(result);
   }
   }
+
 // void initializePage(int)
   virtual void initializePage(int id) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     QWizard::initializePage(id);
   }
   }
+
 // void cleanupPage(int)
   virtual void cleanupPage(int id) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     QWizard::cleanupPage(id);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -231,9 +237,9 @@ void C_ZN7QWizard10setOptionsE6QFlagsINS_12WizardOptionEE(void *this_, QFlags<QW
 // /usr/include/qt/QtWidgets/qwizard.h:150
 // [4] QWizard::WizardOptions options()
 extern "C"
-void C_ZNK7QWizard7optionsEv(void *this_) {
+QWizard::WizardOptions* C_ZNK7QWizard7optionsEv(void *this_) {
   auto rv = ((QWizard*)this_)->options();
-/*return rv;*/
+return new QWizard::WizardOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:152

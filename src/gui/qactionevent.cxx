@@ -14,15 +14,15 @@ class MyQActionEvent : public QActionEvent {
 public:
   virtual ~MyQActionEvent() {}
 // void QActionEvent(int, class QAction *, class QAction *)
-MyQActionEvent(int type, QAction * action, QAction * before) : QActionEvent(type, action, before) {}
+MyQActionEvent(int type_, QAction * action, QAction * before) : QActionEvent(type_, action, before) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:727
 // [-2] void QActionEvent(int, class QAction *, class QAction *)
 extern "C"
-void* C_ZN12QActionEventC2EiP7QActionS1_(int type, QAction * action, QAction * before) {
-  return  new QActionEvent(type, action, before);
+void* C_ZN12QActionEventC2EiP7QActionS1_(int type_, QAction * action, QAction * before) {
+  return  new QActionEvent(type_, action, before);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:728

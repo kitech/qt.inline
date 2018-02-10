@@ -28,7 +28,7 @@ void* C_ZNK19QAbstractTableModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:370
 // [-2] void QAbstractTableModel(class QObject *)
 extern "C"
-void* C_ZN19QAbstractTableModelC1EP7QObject(QObject * parent) {
+void* C_ZN19QAbstractTableModelC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractTableModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available

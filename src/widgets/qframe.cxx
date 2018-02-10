@@ -26,6 +26,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
     return QFrame::event(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
     QFrame::paintEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
     QFrame::changeEvent(arg0);
   }
   }
+
 // void drawFrame(class QPainter *)
   virtual void drawFrame(QPainter * arg0) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
     QFrame::drawFrame(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionFrame *)
   virtual void initStyleOption(QStyleOptionFrame * option) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
     QFrame::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

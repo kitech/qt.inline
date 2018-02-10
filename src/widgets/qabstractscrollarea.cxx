@@ -25,6 +25,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::setViewportMargins(left, top, right, bottom);
   }
   }
+
 // void setViewportMargins(const class QMargins &)
   virtual void setViewportMargins(const QMargins & margins) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::setViewportMargins(margins);
   }
   }
+
 // QMargins viewportMargins()
   virtual QMargins viewportMargins() {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return QAbstractScrollArea::viewportMargins();
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return QAbstractScrollArea::eventFilter(arg0, arg1);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return QAbstractScrollArea::event(arg0);
   }
   }
+
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * arg0) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return QAbstractScrollArea::viewportEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::resizeEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -99,6 +106,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::paintEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -109,6 +117,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -119,6 +128,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -129,6 +139,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::mouseDoubleClickEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -139,6 +150,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::mouseMoveEvent(arg0);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
@@ -149,6 +161,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::wheelEvent(arg0);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * arg0) {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::contextMenuEvent(arg0);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
@@ -169,6 +183,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::dragEnterEvent(arg0);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * arg0) {
     int handled = 0;
@@ -179,6 +194,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::dragMoveEvent(arg0);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
     int handled = 0;
@@ -189,6 +205,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::dragLeaveEvent(arg0);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
@@ -199,6 +216,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::dropEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -209,6 +227,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::keyPressEvent(arg0);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -219,6 +238,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     QAbstractScrollArea::scrollContentsBy(dx, dy);
   }
   }
+
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
     int handled = 0;
@@ -230,6 +250,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return QAbstractScrollArea::viewportSizeHint();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -330,6 +351,14 @@ void C_ZN19QAbstractScrollArea15setCornerWidgetEP7QWidget(void *this_, QWidget *
 extern "C"
 void C_ZN19QAbstractScrollArea18addScrollBarWidgetEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * widget, QFlags<Qt::AlignmentFlag> alignment) {
   ((QAbstractScrollArea*)this_)->addScrollBarWidget(widget, alignment);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractscrollarea.h:88
+// [-2] QWidgetList scrollBarWidgets(Qt::Alignment)
+extern "C"
+QWidgetList* C_ZN19QAbstractScrollArea16scrollBarWidgetsE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  auto rv = ((QAbstractScrollArea*)this_)->scrollBarWidgets(alignment);
+return new QWidgetList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:90

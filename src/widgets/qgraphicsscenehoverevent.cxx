@@ -14,15 +14,15 @@ class MyQGraphicsSceneHoverEvent : public QGraphicsSceneHoverEvent {
 public:
   virtual ~MyQGraphicsSceneHoverEvent() {}
 // void QGraphicsSceneHoverEvent(enum QEvent::Type)
-MyQGraphicsSceneHoverEvent(QEvent::Type type) : QGraphicsSceneHoverEvent(type) {}
+MyQGraphicsSceneHoverEvent(QEvent::Type type_) : QGraphicsSceneHoverEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:201
 // [-2] void QGraphicsSceneHoverEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN24QGraphicsSceneHoverEventC2EN6QEvent4TypeE(QEvent::Type type) {
-  return  new QGraphicsSceneHoverEvent(type);
+void* C_ZN24QGraphicsSceneHoverEventC2EN6QEvent4TypeE(QEvent::Type type_) {
+  return  new QGraphicsSceneHoverEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:202

@@ -28,6 +28,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
     return QRadioButton::event(e);
   }
   }
+
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & arg0) {
     int handled = 0;
@@ -39,6 +40,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
     return QRadioButton::hitButton(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
     QRadioButton::paintEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
     QRadioButton::mouseMoveEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * button) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
     QRadioButton::initStyleOption(button);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

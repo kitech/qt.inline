@@ -26,6 +26,7 @@ MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterf
     return QFutureInterfaceBase::refT();
   }
   }
+
 // bool derefT()
   virtual bool derefT() {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterf
     return QFutureInterfaceBase::derefT();
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

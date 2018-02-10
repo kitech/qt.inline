@@ -28,6 +28,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return QIODevice::readData(data, maxlen);
   }
   }
+
 // qint64 readLineData(char *, qint64)
   virtual qint64 readLineData(char * data, qint64 maxlen) {
     int handled = 0;
@@ -39,6 +40,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return QIODevice::readLineData(data, maxlen);
   }
   }
+
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
     int handled = 0;
@@ -50,6 +52,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return QIODevice::writeData(data, len);
   }
   }
+
 // void setOpenMode(QIODevice::OpenMode)
   virtual void setOpenMode(QFlags<QIODevice::OpenModeFlag> openMode) {
     int handled = 0;
@@ -60,6 +63,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     QIODevice::setOpenMode(openMode);
   }
   }
+
 // void setErrorString(const class QString &)
   virtual void setErrorString(const QString & errorString) {
     int handled = 0;
@@ -70,6 +74,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     QIODevice::setErrorString(errorString);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -83,7 +88,7 @@ void* C_ZNK9QIODevice10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qiodevice.h:83
 // [-2] void QIODevice()
 extern "C"
-void* C_ZN9QIODeviceC1Ev() {
+void* C_ZN9QIODeviceC2Ev() {
   auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice();
 }
@@ -91,7 +96,7 @@ void* C_ZN9QIODeviceC1Ev() {
 // /usr/include/qt/QtCore/qiodevice.h:85
 // [-2] void QIODevice(class QObject *)
 extern "C"
-void* C_ZN9QIODeviceC1EP7QObject(QObject * parent) {
+void* C_ZN9QIODeviceC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice(parent);
 }
@@ -106,9 +111,9 @@ void C_ZN9QIODeviceD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qiodevice.h:89
 // [4] QIODevice::OpenMode openMode()
 extern "C"
-void C_ZNK9QIODevice8openModeEv(void *this_) {
+QIODevice::OpenMode* C_ZNK9QIODevice8openModeEv(void *this_) {
   auto rv = ((QIODevice*)this_)->openMode();
-/*return rv;*/
+return new QIODevice::OpenMode(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:91

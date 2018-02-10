@@ -15,6 +15,30 @@ public:
   virtual ~MyQSGGeometry() {}
 };
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsggeometry.h:138
+// [16] const QSGGeometry::AttributeSet & defaultAttributes_Point2D()
+extern "C"
+void* C_ZN11QSGGeometry25defaultAttributes_Point2DEv() {
+  auto& rv = QSGGeometry::defaultAttributes_Point2D();
+return new QSGGeometry::AttributeSet(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsggeometry.h:139
+// [16] const QSGGeometry::AttributeSet & defaultAttributes_TexturedPoint2D()
+extern "C"
+void* C_ZN11QSGGeometry33defaultAttributes_TexturedPoint2DEv() {
+  auto& rv = QSGGeometry::defaultAttributes_TexturedPoint2D();
+return new QSGGeometry::AttributeSet(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsggeometry.h:140
+// [16] const QSGGeometry::AttributeSet & defaultAttributes_ColoredPoint2D()
+extern "C"
+void* C_ZN11QSGGeometry32defaultAttributes_ColoredPoint2DEv() {
+  auto& rv = QSGGeometry::defaultAttributes_ColoredPoint2D();
+return new QSGGeometry::AttributeSet(rv);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:146
 // [-2] void ~QSGGeometry()

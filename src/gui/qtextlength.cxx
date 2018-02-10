@@ -16,7 +16,7 @@ public:
 // void QTextLength()
 MyQTextLength() : QTextLength() {}
 // void QTextLength(enum QTextLength::Type, qreal)
-MyQTextLength(QTextLength::Type type, qreal value) : QTextLength(type, value) {}
+MyQTextLength(QTextLength::Type type_, qreal value) : QTextLength(type_, value) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -30,8 +30,8 @@ void* C_ZN11QTextLengthC2Ev() {
 // /usr/include/qt/QtGui/qtextformat.h:91
 // [-2] void QTextLength(enum QTextLength::Type, qreal)
 extern "C"
-void* C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type type, qreal value) {
-  return  new QTextLength(type, value);
+void* C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type type_, qreal value) {
+  return  new QTextLength(type_, value);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:93

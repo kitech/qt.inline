@@ -142,6 +142,14 @@ void* C_ZNK18QCommandLineParser5valueERK7QString(void *this_, QString* name) {
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:92
+// [8] QStringList values(const class QString &)
+extern "C"
+void* C_ZNK18QCommandLineParser6valuesERK7QString(void *this_, QString* name) {
+  auto rv = ((QCommandLineParser*)this_)->values(*name);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:94
 // [1] bool isSet(const class QCommandLineOption &)
 extern "C"
@@ -155,6 +163,38 @@ extern "C"
 void* C_ZNK18QCommandLineParser5valueERK18QCommandLineOption(void *this_, QCommandLineOption* option) {
   auto rv = ((QCommandLineParser*)this_)->value(*option);
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:96
+// [8] QStringList values(const class QCommandLineOption &)
+extern "C"
+void* C_ZNK18QCommandLineParser6valuesERK18QCommandLineOption(void *this_, QCommandLineOption* option) {
+  auto rv = ((QCommandLineParser*)this_)->values(*option);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:98
+// [8] QStringList positionalArguments()
+extern "C"
+void* C_ZNK18QCommandLineParser19positionalArgumentsEv(void *this_) {
+  auto rv = ((QCommandLineParser*)this_)->positionalArguments();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:99
+// [8] QStringList optionNames()
+extern "C"
+void* C_ZNK18QCommandLineParser11optionNamesEv(void *this_) {
+  auto rv = ((QCommandLineParser*)this_)->optionNames();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:100
+// [8] QStringList unknownOptionNames()
+extern "C"
+void* C_ZNK18QCommandLineParser18unknownOptionNamesEv(void *this_) {
+  auto rv = ((QCommandLineParser*)this_)->unknownOptionNames();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:102

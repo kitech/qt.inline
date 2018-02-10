@@ -27,6 +27,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
     QFontDialog::changeEvent(event);
   }
   }
+
 // void done(int)
   virtual void done(int result) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
     QFontDialog::done(result);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
     return QFontDialog::eventFilter(object, event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -128,9 +131,9 @@ void C_ZN11QFontDialog10setOptionsE6QFlagsINS_16FontDialogOptionEE(void *this_, 
 // /usr/include/qt/QtWidgets/qfontdialog.h:87
 // [4] QFontDialog::FontDialogOptions options()
 extern "C"
-void C_ZNK11QFontDialog7optionsEv(void *this_) {
+QFontDialog::FontDialogOptions* C_ZNK11QFontDialog7optionsEv(void *this_) {
   auto rv = ((QFontDialog*)this_)->options();
-/*return rv;*/
+return new QFontDialog::FontDialogOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:90

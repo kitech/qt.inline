@@ -30,6 +30,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     return QPushButton::event(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -40,6 +41,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     QPushButton::paintEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -50,6 +52,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     QPushButton::keyPressEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -60,6 +63,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     QPushButton::focusInEvent(arg0);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
@@ -70,6 +74,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     QPushButton::focusOutEvent(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * option) {
     int handled = 0;
@@ -80,6 +85,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     QPushButton::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

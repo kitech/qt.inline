@@ -25,6 +25,7 @@ MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
     QGraphicsColorizeEffect::draw(painter);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

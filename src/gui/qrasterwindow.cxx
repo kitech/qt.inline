@@ -26,6 +26,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
     return QRasterWindow::metric(metric);
   }
   }
+
 // QPaintDevice * redirected(class QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
     return QRasterWindow::redirected(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

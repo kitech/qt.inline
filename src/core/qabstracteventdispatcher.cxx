@@ -28,7 +28,7 @@ void* C_ZNK24QAbstractEventDispatcher10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:73
 // [-2] void QAbstractEventDispatcher(class QObject *)
 extern "C"
-void* C_ZN24QAbstractEventDispatcherC1EP7QObject(QObject * parent) {
+void* C_ZN24QAbstractEventDispatcherC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractEventDispatcher(parent);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -25,6 +25,7 @@ MyQNetworkSession(const QNetworkConfiguration & connConfig, QObject * parent) : 
     QNetworkSession::connectNotify(signal);
   }
   }
+
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQNetworkSession(const QNetworkConfiguration & connConfig, QObject * parent) : 
     QNetworkSession::disconnectNotify(signal);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

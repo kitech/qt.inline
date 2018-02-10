@@ -30,6 +30,7 @@ MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(
     return QAction::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -307,8 +308,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtWidgets/qaction.h:154
 // [-2] void setData(const class QVariant &)
 extern "C"
-void C_ZN7QAction7setDataERK8QVariant(void *this_, QVariant* var) {
-  ((QAction*)this_)->setData(*var);
+void C_ZN7QAction7setDataERK8QVariant(void *this_, QVariant* var_) {
+  ((QAction*)this_)->setData(*var_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:156

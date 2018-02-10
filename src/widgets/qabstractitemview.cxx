@@ -25,6 +25,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::rowsInserted(parent, start, end);
   }
   }
+
 // void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
   virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::rowsAboutToBeRemoved(parent, start, end);
   }
   }
+
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::selectionChanged(selected, deselected);
   }
   }
+
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::currentChanged(current, previous);
   }
   }
+
 // void updateEditorData()
   virtual void updateEditorData() {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::updateEditorData();
   }
   }
+
 // void updateEditorGeometries()
   virtual void updateEditorGeometries() {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::updateEditorGeometries();
   }
   }
+
 // void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::updateGeometries();
   }
   }
+
 // void verticalScrollbarAction(int)
   virtual void verticalScrollbarAction(int action) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::verticalScrollbarAction(action);
   }
   }
+
 // void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action) {
     int handled = 0;
@@ -105,6 +113,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::horizontalScrollbarAction(action);
   }
   }
+
 // void verticalScrollbarValueChanged(int)
   virtual void verticalScrollbarValueChanged(int value) {
     int handled = 0;
@@ -115,6 +124,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::verticalScrollbarValueChanged(value);
   }
   }
+
 // void horizontalScrollbarValueChanged(int)
   virtual void horizontalScrollbarValueChanged(int value) {
     int handled = 0;
@@ -125,6 +135,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::horizontalScrollbarValueChanged(value);
   }
   }
+
 // void closeEditor(class QWidget *, class QAbstractItemDelegate::EndEditHint)
   virtual void closeEditor(QWidget * editor, QAbstractItemDelegate::EndEditHint hint) {
     int handled = 0;
@@ -135,6 +146,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::closeEditor(editor, hint);
   }
   }
+
 // void commitData(class QWidget *)
   virtual void commitData(QWidget * editor) {
     int handled = 0;
@@ -145,6 +157,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::commitData(editor);
   }
   }
+
 // void editorDestroyed(class QObject *)
   virtual void editorDestroyed(QObject * editor) {
     int handled = 0;
@@ -155,6 +168,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::editorDestroyed(editor);
   }
   }
+
 // void setHorizontalStepsPerItem(int)
   virtual void setHorizontalStepsPerItem(int steps) {
     int handled = 0;
@@ -165,6 +179,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::setHorizontalStepsPerItem(steps);
   }
   }
+
 // int horizontalStepsPerItem()
   virtual int horizontalStepsPerItem() {
     int handled = 0;
@@ -176,6 +191,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::horizontalStepsPerItem();
   }
   }
+
 // void setVerticalStepsPerItem(int)
   virtual void setVerticalStepsPerItem(int steps) {
     int handled = 0;
@@ -186,6 +202,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::setVerticalStepsPerItem(steps);
   }
   }
+
 // int verticalStepsPerItem()
   virtual int verticalStepsPerItem() {
     int handled = 0;
@@ -197,6 +214,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::verticalStepsPerItem();
   }
   }
+
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
@@ -208,6 +226,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::moveCursor(cursorAction, modifiers);
   }
   }
+
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -219,6 +238,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::horizontalOffset();
   }
   }
+
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -230,6 +250,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::verticalOffset();
   }
   }
+
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
@@ -241,6 +262,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::isIndexHidden(index);
   }
   }
+
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
@@ -251,6 +273,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::setSelection(rect, command);
   }
   }
+
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -262,6 +285,19 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::visualRegionForSelection(selection);
   }
   }
+
+// QModelIndexList selectedIndexes()
+  virtual QModelIndexList selectedIndexes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndexList*)(irv);
+      // TypedefRecordQList<QModelIndex>
+    } else {
+    return QAbstractItemView::selectedIndexes();
+  }
+  }
+
 // bool edit(const class QModelIndex &, enum QAbstractItemView::EditTrigger, class QEvent *)
   virtual bool edit(const QModelIndex & index, QAbstractItemView::EditTrigger trigger, QEvent * event) {
     int handled = 0;
@@ -273,6 +309,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::edit(index, trigger, event);
   }
   }
+
 // QItemSelectionModel::SelectionFlags selectionCommand(const class QModelIndex &, const class QEvent *)
   virtual QItemSelectionModel::SelectionFlags selectionCommand(const QModelIndex & index, const QEvent * event) {
     int handled = 0;
@@ -284,6 +321,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::selectionCommand(index, event);
   }
   }
+
 // void startDrag(Qt::DropActions)
   virtual void startDrag(QFlags<Qt::DropAction> supportedActions) {
     int handled = 0;
@@ -294,6 +332,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::startDrag(supportedActions);
   }
   }
+
 // QStyleOptionViewItem viewOptions()
   virtual QStyleOptionViewItem viewOptions() {
     int handled = 0;
@@ -305,6 +344,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::viewOptions();
   }
   }
+
 // QAbstractItemView::State state()
   virtual QAbstractItemView::State state() {
     int handled = 0;
@@ -316,6 +356,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::state();
   }
   }
+
 // void setState(enum QAbstractItemView::State)
   virtual void setState(QAbstractItemView::State state) {
     int handled = 0;
@@ -326,6 +367,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::setState(state);
   }
   }
+
 // void scheduleDelayedItemsLayout()
   virtual void scheduleDelayedItemsLayout() {
     int handled = 0;
@@ -336,6 +378,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::scheduleDelayedItemsLayout();
   }
   }
+
 // void executeDelayedItemsLayout()
   virtual void executeDelayedItemsLayout() {
     int handled = 0;
@@ -346,6 +389,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::executeDelayedItemsLayout();
   }
   }
+
 // void setDirtyRegion(const class QRegion &)
   virtual void setDirtyRegion(const QRegion & region) {
     int handled = 0;
@@ -356,6 +400,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::setDirtyRegion(region);
   }
   }
+
 // void scrollDirtyRegion(int, int)
   virtual void scrollDirtyRegion(int dx, int dy) {
     int handled = 0;
@@ -366,6 +411,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::scrollDirtyRegion(dx, dy);
   }
   }
+
 // QPoint dirtyRegionOffset()
   virtual QPoint dirtyRegionOffset() {
     int handled = 0;
@@ -377,6 +423,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::dirtyRegionOffset();
   }
   }
+
 // void startAutoScroll()
   virtual void startAutoScroll() {
     int handled = 0;
@@ -387,6 +434,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::startAutoScroll();
   }
   }
+
 // void stopAutoScroll()
   virtual void stopAutoScroll() {
     int handled = 0;
@@ -397,6 +445,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::stopAutoScroll();
   }
   }
+
 // void doAutoScroll()
   virtual void doAutoScroll() {
     int handled = 0;
@@ -407,6 +456,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::doAutoScroll();
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -418,6 +468,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::focusNextPrevChild(next);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -429,6 +480,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::event(event);
   }
   }
+
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
     int handled = 0;
@@ -440,6 +492,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::viewportEvent(event);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -450,6 +503,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::mousePressEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -460,6 +514,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::mouseMoveEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -470,6 +525,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::mouseReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
@@ -480,6 +536,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::mouseDoubleClickEvent(event);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * event) {
     int handled = 0;
@@ -490,6 +547,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::dragEnterEvent(event);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
     int handled = 0;
@@ -500,6 +558,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::dragMoveEvent(event);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * event) {
     int handled = 0;
@@ -510,6 +569,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::dragLeaveEvent(event);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
@@ -520,6 +580,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::dropEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -530,6 +591,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::focusInEvent(event);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -540,6 +602,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::focusOutEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -550,6 +613,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::keyPressEvent(event);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -560,6 +624,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::resizeEvent(event);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
@@ -570,6 +635,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::timerEvent(event);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
@@ -580,6 +646,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     QAbstractItemView::inputMethodEvent(event);
   }
   }
+
 // QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
   virtual QAbstractItemView::DropIndicatorPosition dropIndicatorPosition() {
     int handled = 0;
@@ -591,6 +658,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::dropIndicatorPosition();
   }
   }
+
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
     int handled = 0;
@@ -602,6 +670,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return QAbstractItemView::viewportSizeHint();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -615,7 +684,7 @@ void* C_ZNK17QAbstractItemView10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qabstractitemview.h:127
 // [-2] void QAbstractItemView(class QWidget *)
 extern "C"
-void* C_ZN17QAbstractItemViewC1EP7QWidget(QWidget * parent) {
+void* C_ZN17QAbstractItemViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractItemView*)(0);
   return 0; // new MyQAbstractItemView(parent);
 }
@@ -723,9 +792,9 @@ void C_ZN17QAbstractItemView15setEditTriggersE6QFlagsINS_11EditTriggerEE(void *t
 // /usr/include/qt/QtWidgets/qabstractitemview.h:149
 // [4] QAbstractItemView::EditTriggers editTriggers()
 extern "C"
-void C_ZNK17QAbstractItemView12editTriggersEv(void *this_) {
+QAbstractItemView::EditTriggers* C_ZNK17QAbstractItemView12editTriggersEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->editTriggers();
-/*return rv;*/
+return new QAbstractItemView::EditTriggers(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:151

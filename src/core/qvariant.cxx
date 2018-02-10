@@ -16,7 +16,7 @@ public:
 // void QVariant()
 MyQVariant() : QVariant() {}
 // void QVariant(enum QVariant::Type)
-MyQVariant(QVariant::Type type) : QVariant(type) {}
+MyQVariant(QVariant::Type type_) : QVariant(type_) {}
 // void QVariant(int, const void *)
 MyQVariant(int typeId, const void * copy) : QVariant(typeId, copy) {}
 // void QVariant(int, const void *, uint)
@@ -98,15 +98,16 @@ MyQVariant(const QJsonArray & jsonArray) : QVariant(jsonArray) {}
 // void QVariant(const class QJsonDocument &)
 MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
 // void create(int, const void *)
-  virtual void create(int type, const void * copy) {
+  virtual void create(int type_, const void * copy) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"create", &handled, 2, (uint64_t)type, (uint64_t)copy, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr(this, (char*)"create", &handled, 2, (uint64_t)type_, (uint64_t)copy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
-    QVariant::create(type, copy);
+    QVariant::create(type_, copy);
   }
   }
+
 // bool cmp(const class QVariant &)
   virtual bool cmp(const QVariant & other) {
     int handled = 0;
@@ -118,6 +119,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     return QVariant::cmp(other);
   }
   }
+
 // int compare(const class QVariant &)
   virtual int compare(const QVariant & other) {
     int handled = 0;
@@ -129,6 +131,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     return QVariant::compare(other);
   }
   }
+
 // bool convert(const int, void *)
   virtual bool convert(const int t, void * ptr) {
     int handled = 0;
@@ -140,6 +143,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     return QVariant::convert(t, ptr);
   }
   }
+
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -161,9 +165,9 @@ void C_ZN8QVariantD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qvariant.h:201
 // [-2] void QVariant(enum QVariant::Type)
 extern "C"
-void* C_ZN8QVariantC2ENS_4TypeE(QVariant::Type type) {
+void* C_ZN8QVariantC2ENS_4TypeE(QVariant::Type type_) {
   auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(type);
+  return  new MyQVariant(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:202
@@ -641,6 +645,14 @@ extern "C"
 void* C_ZNK8QVariant8toStringEv(void *this_) {
   auto rv = ((QVariant*)this_)->toString();
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:298
+// [8] QStringList toStringList()
+extern "C"
+void* C_ZNK8QVariant12toStringListEv(void *this_) {
+  auto rv = ((QVariant*)this_)->toStringList();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:299

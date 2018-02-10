@@ -305,6 +305,14 @@ void* C_ZN4QUrl5toAceERK7QString(QString* arg0) {
 return new QByteArray(rv);
 }
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:359
+// [8] QStringList idnWhitelist()
+extern "C"
+void* C_ZN4QUrl12idnWhitelistEv() {
+  auto rv = QUrl::idnWhitelist();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:363
 // [-2] void setIdnWhitelist(const class QStringList &)
 extern "C"

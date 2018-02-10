@@ -26,6 +26,7 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
     return QAbstractTransition::eventTest(event);
   }
   }
+
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
     QAbstractTransition::onTransition(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
     return QAbstractTransition::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -60,7 +63,7 @@ void* C_ZNK19QAbstractTransition10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstracttransition.h:75
 // [-2] void QAbstractTransition(class QState *)
 extern "C"
-void* C_ZN19QAbstractTransitionC1EP6QState(QState * sourceState) {
+void* C_ZN19QAbstractTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQAbstractTransition*)(0);
   return 0; // new MyQAbstractTransition(sourceState);
 }
@@ -103,8 +106,8 @@ QAbstractTransition::TransitionType C_ZNK19QAbstractTransition14transitionTypeEv
 // /usr/include/qt/QtCore/qabstracttransition.h:85
 // [-2] void setTransitionType(enum QAbstractTransition::TransitionType)
 extern "C"
-void C_ZN19QAbstractTransition17setTransitionTypeENS_14TransitionTypeE(void *this_, QAbstractTransition::TransitionType type) {
-  ((QAbstractTransition*)this_)->setTransitionType(type);
+void C_ZN19QAbstractTransition17setTransitionTypeENS_14TransitionTypeE(void *this_, QAbstractTransition::TransitionType type_) {
+  ((QAbstractTransition*)this_)->setTransitionType(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracttransition.h:87

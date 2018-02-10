@@ -14,15 +14,15 @@ class MyQGraphicsSceneContextMenuEvent : public QGraphicsSceneContextMenuEvent {
 public:
   virtual ~MyQGraphicsSceneContextMenuEvent() {}
 // void QGraphicsSceneContextMenuEvent(enum QEvent::Type)
-MyQGraphicsSceneContextMenuEvent(QEvent::Type type) : QGraphicsSceneContextMenuEvent(type) {}
+MyQGraphicsSceneContextMenuEvent(QEvent::Type type_) : QGraphicsSceneContextMenuEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:174
 // [-2] void QGraphicsSceneContextMenuEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE(QEvent::Type type) {
-  return  new QGraphicsSceneContextMenuEvent(type);
+void* C_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE(QEvent::Type type_) {
+  return  new QGraphicsSceneContextMenuEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:175

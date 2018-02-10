@@ -28,7 +28,7 @@ void* C_ZNK14QImageIOPlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qimageiohandler.h:143
 // [-2] void QImageIOPlugin(class QObject *)
 extern "C"
-void* C_ZN14QImageIOPluginC1EP7QObject(QObject * parent) {
+void* C_ZN14QImageIOPluginC2EP7QObject(QObject * parent) {
   return 0; // new QImageIOPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -42,9 +42,9 @@ void C_ZN14QImageIOPluginD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qimageiohandler.h:153
 // [4] QImageIOPlugin::Capabilities capabilities(class QIODevice *, const class QByteArray &)
 extern "C"
-void C_ZNK14QImageIOPlugin12capabilitiesEP9QIODeviceRK10QByteArray(void *this_, QIODevice * device, QByteArray* format) {
+QImageIOPlugin::Capabilities* C_ZNK14QImageIOPlugin12capabilitiesEP9QIODeviceRK10QByteArray(void *this_, QIODevice * device, QByteArray* format) {
   auto rv = ((QImageIOPlugin*)this_)->capabilities(device, *format);
-/*return rv;*/
+return new QImageIOPlugin::Capabilities(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:154

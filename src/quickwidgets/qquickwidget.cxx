@@ -29,6 +29,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::resizeEvent(arg0);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -39,6 +40,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::timerEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::keyPressEvent(arg0);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::keyReleaseEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::mousePressEvent(arg0);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::mouseReleaseEvent(arg0);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::mouseMoveEvent(arg0);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
@@ -99,6 +106,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::mouseDoubleClickEvent(arg0);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
@@ -109,6 +117,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::showEvent(arg0);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
@@ -119,6 +128,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::hideEvent(arg0);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -129,6 +139,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::focusInEvent(event);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -139,6 +150,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::focusOutEvent(event);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
@@ -149,6 +161,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::wheelEvent(arg0);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
@@ -159,6 +172,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::dragEnterEvent(arg0);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * arg0) {
     int handled = 0;
@@ -169,6 +183,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::dragMoveEvent(arg0);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
     int handled = 0;
@@ -179,6 +194,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::dragLeaveEvent(arg0);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
@@ -189,6 +205,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::dropEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -200,6 +217,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     return QQuickWidget::event(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -210,6 +228,7 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
     QQuickWidget::paintEvent(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

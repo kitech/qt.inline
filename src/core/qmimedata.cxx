@@ -26,6 +26,7 @@ MyQMimeData() : QMimeData() {}
     return QMimeData::retrieveData(mimetype, preferredType);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -173,6 +174,14 @@ void C_ZN9QMimeData12removeFormatERK7QString(void *this_, QString* mimetype) {
 extern "C"
 bool C_ZNK9QMimeData9hasFormatERK7QString(void *this_, QString* mimetype) {
   return (bool)((QMimeData*)this_)->hasFormat(*mimetype);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:84
+// [8] QStringList formats()
+extern "C"
+void* C_ZNK9QMimeData7formatsEv(void *this_) {
+  auto rv = ((QMimeData*)this_)->formats();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:86

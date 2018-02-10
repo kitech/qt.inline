@@ -26,6 +26,7 @@ MyQSocketNotifier(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) 
     return QSocketNotifier::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

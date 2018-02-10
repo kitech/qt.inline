@@ -28,6 +28,7 @@ MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject 
     return QPropertyAnimation::event(event);
   }
   }
+
 // void updateCurrentValue(const class QVariant &)
   virtual void updateCurrentValue(const QVariant & value) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject 
     QPropertyAnimation::updateCurrentValue(value);
   }
   }
+
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject 
     QPropertyAnimation::updateState(newState, oldState);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

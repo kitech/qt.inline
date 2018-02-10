@@ -92,9 +92,9 @@ void C_ZN12QInputDialog10setOptionsE6QFlagsINS_17InputDialogOptionEE(void *this_
 // /usr/include/qt/QtWidgets/qinputdialog.h:106
 // [4] QInputDialog::InputDialogOptions options()
 extern "C"
-void C_ZNK12QInputDialog7optionsEv(void *this_) {
+QInputDialog::InputDialogOptions* C_ZNK12QInputDialog7optionsEv(void *this_) {
   auto rv = ((QInputDialog*)this_)->options();
-/*return rv;*/
+return new QInputDialog::InputDialogOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:108
@@ -145,6 +145,14 @@ bool C_ZNK12QInputDialog18isComboBoxEditableEv(void *this_) {
 extern "C"
 void C_ZN12QInputDialog16setComboBoxItemsERK11QStringList(void *this_, QStringList* items) {
   ((QInputDialog*)this_)->setComboBoxItems(*items);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qinputdialog.h:118
+// [8] QStringList comboBoxItems()
+extern "C"
+void* C_ZNK12QInputDialog13comboBoxItemsEv(void *this_) {
+  auto rv = ((QInputDialog*)this_)->comboBoxItems();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:120

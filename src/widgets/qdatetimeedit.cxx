@@ -31,6 +31,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::keyPressEvent(event);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
@@ -41,6 +42,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::wheelEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -51,6 +53,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::focusInEvent(event);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -62,6 +65,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return QDateTimeEdit::focusNextPrevChild(next);
   }
   }
+
 // QValidator::State validate(class QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) {
     int handled = 0;
@@ -73,6 +77,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return QDateTimeEdit::validate(input, pos);
   }
   }
+
 // void fixup(class QString &)
   virtual void fixup(QString & input) {
     int handled = 0;
@@ -83,6 +88,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::fixup(input);
   }
   }
+
 // QDateTime dateTimeFromText(const class QString &)
   virtual QDateTime dateTimeFromText(const QString & text) {
     int handled = 0;
@@ -94,6 +100,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return QDateTimeEdit::dateTimeFromText(text);
   }
   }
+
 // QString textFromDateTime(const class QDateTime &)
   virtual QString textFromDateTime(const QDateTime & dt) {
     int handled = 0;
@@ -105,6 +112,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return QDateTimeEdit::textFromDateTime(dt);
   }
   }
+
 // QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() {
     int handled = 0;
@@ -116,6 +124,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return QDateTimeEdit::stepEnabled();
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -126,6 +135,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::mousePressEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -136,6 +146,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::paintEvent(event);
   }
   }
+
 // void initStyleOption(class QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) {
     int handled = 0;
@@ -146,6 +157,7 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     QDateTimeEdit::initStyleOption(option);
   }
   }
+
 // void QDateTimeEdit(const class QVariant &, class QVariant::Type, class QWidget *)
 MyQDateTimeEdit(const QVariant & val, QVariant::Type parserType, QWidget * parent) : QDateTimeEdit(val, parserType, parent) {}
 };
@@ -377,9 +389,9 @@ void C_ZN13QDateTimeEdit12setTimeRangeERK5QTimeS2_(void *this_, QTime* min, QTim
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:135
 // [4] QDateTimeEdit::Sections displayedSections()
 extern "C"
-void C_ZNK13QDateTimeEdit17displayedSectionsEv(void *this_) {
+QDateTimeEdit::Sections* C_ZNK13QDateTimeEdit17displayedSectionsEv(void *this_) {
   auto rv = ((QDateTimeEdit*)this_)->displayedSections();
-/*return rv;*/
+return new QDateTimeEdit::Sections(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:136

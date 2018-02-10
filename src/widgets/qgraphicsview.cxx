@@ -27,6 +27,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::setupViewport(widget);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     return QGraphicsView::event(event);
   }
   }
+
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     return QGraphicsView::viewportEvent(event);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::contextMenuEvent(event);
   }
   }
+
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * event) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::dragEnterEvent(event);
   }
   }
+
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * event) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::dragLeaveEvent(event);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::dragMoveEvent(event);
   }
   }
+
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
@@ -99,6 +106,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::dropEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -109,6 +117,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::focusInEvent(event);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -120,6 +129,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     return QGraphicsView::focusNextPrevChild(next);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -130,6 +140,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::focusOutEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -140,6 +151,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::keyPressEvent(event);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
@@ -150,6 +162,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::keyReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
@@ -160,6 +173,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::mouseDoubleClickEvent(event);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -170,6 +184,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::mousePressEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -180,6 +195,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::mouseMoveEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -190,6 +206,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::mouseReleaseEvent(event);
   }
   }
+
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
@@ -200,6 +217,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::wheelEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -210,6 +228,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::paintEvent(event);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -220,6 +239,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::resizeEvent(event);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -230,6 +250,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::scrollContentsBy(dx, dy);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
@@ -240,6 +261,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::showEvent(event);
   }
   }
+
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
@@ -250,6 +272,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::inputMethodEvent(event);
   }
   }
+
 // void drawBackground(class QPainter *, const class QRectF &)
   virtual void drawBackground(QPainter * painter, const QRectF & rect) {
     int handled = 0;
@@ -260,6 +283,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::drawBackground(painter, rect);
   }
   }
+
 // void drawForeground(class QPainter *, const class QRectF &)
   virtual void drawForeground(QPainter * painter, const QRectF & rect) {
     int handled = 0;
@@ -270,6 +294,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     QGraphicsView::drawForeground(painter, rect);
   }
   }
+
 // void drawItems(class QPainter *, int, class QGraphicsItem **, const class QStyleOptionGraphicsItem *)
 };
 
@@ -392,9 +417,9 @@ void C_ZN13QGraphicsView21setViewportUpdateModeENS_18ViewportUpdateModeE(void *t
 // /usr/include/qt/QtWidgets/qgraphicsview.h:139
 // [4] QGraphicsView::OptimizationFlags optimizationFlags()
 extern "C"
-void C_ZNK13QGraphicsView17optimizationFlagsEv(void *this_) {
+QGraphicsView::OptimizationFlags* C_ZNK13QGraphicsView17optimizationFlagsEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->optimizationFlags();
-/*return rv;*/
+return new QGraphicsView::OptimizationFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:140
@@ -450,9 +475,9 @@ return new QRect(rv);
 // /usr/include/qt/QtWidgets/qgraphicsview.h:152
 // [4] QGraphicsView::CacheMode cacheMode()
 extern "C"
-void C_ZNK13QGraphicsView9cacheModeEv(void *this_) {
+QGraphicsView::CacheMode* C_ZNK13QGraphicsView9cacheModeEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->cacheMode();
-/*return rv;*/
+return new QGraphicsView::CacheMode(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:153

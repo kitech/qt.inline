@@ -27,6 +27,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     QBuffer::connectNotify(arg0);
   }
   }
+
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & arg0) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     QBuffer::disconnectNotify(arg0);
   }
   }
+
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     return QBuffer::readData(data, maxlen);
   }
   }
+
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     return QBuffer::writeData(data, len);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

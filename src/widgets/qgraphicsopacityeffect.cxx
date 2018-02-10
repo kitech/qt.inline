@@ -25,6 +25,7 @@ MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
     QGraphicsOpacityEffect::draw(painter);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -26,6 +26,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     return QWidgetAction::event(arg0);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     return QWidgetAction::eventFilter(arg0, arg1);
   }
   }
+
 // QWidget * createWidget(class QWidget *)
   virtual QWidget * createWidget(QWidget * parent) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     return QWidgetAction::createWidget(parent);
   }
   }
+
 // void deleteWidget(class QWidget *)
   virtual void deleteWidget(QWidget * widget) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     QWidgetAction::deleteWidget(widget);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

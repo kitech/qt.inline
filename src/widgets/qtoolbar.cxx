@@ -27,6 +27,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
     QToolBar::actionEvent(event);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
     QToolBar::changeEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
     QToolBar::paintEvent(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
     return QToolBar::event(event);
   }
   }
+
 // void initStyleOption(class QStyleOptionToolBar *)
   virtual void initStyleOption(QStyleOptionToolBar * option) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
     QToolBar::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -21,7 +21,7 @@ MyQAbstractNativeEventFilter() : QAbstractNativeEventFilter() {}
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h:52
 // [-2] void QAbstractNativeEventFilter()
 extern "C"
-void* C_ZN26QAbstractNativeEventFilterC1Ev() {
+void* C_ZN26QAbstractNativeEventFilterC2Ev() {
   return 0; // new QAbstractNativeEventFilter();
 }
 // Public virtual Visibility=Default Availability=Available

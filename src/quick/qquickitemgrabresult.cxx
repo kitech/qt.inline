@@ -24,6 +24,7 @@ public:
     return QQuickItemGrabResult::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

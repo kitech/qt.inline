@@ -26,6 +26,7 @@ MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
     return QAbstractOpenGLFunctions::isInitialized();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

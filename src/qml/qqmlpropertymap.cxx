@@ -26,6 +26,7 @@ MyQQmlPropertyMap(QObject * parent) : QQmlPropertyMap(parent) {}
     return QQmlPropertyMap::updateValue(key, input);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,6 +65,14 @@ return new QVariant(rv);
 extern "C"
 void C_ZN15QQmlPropertyMap5clearERK7QString(void *this_, QString* key) {
   ((QQmlPropertyMap*)this_)->clear(*key);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlpropertymap.h:65
+// [8] QStringList keys()
+extern "C"
+void* C_ZNK15QQmlPropertyMap4keysEv(void *this_) {
+  auto rv = ((QQmlPropertyMap*)this_)->keys();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:67

@@ -26,6 +26,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     return QTextBrowser::event(e);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     QTextBrowser::keyPressEvent(ev);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     QTextBrowser::mouseMoveEvent(ev);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     QTextBrowser::mousePressEvent(ev);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     QTextBrowser::mouseReleaseEvent(ev);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * ev) {
     int handled = 0;
@@ -76,6 +81,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     QTextBrowser::focusOutEvent(ev);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     return QTextBrowser::focusNextPrevChild(next);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
     QTextBrowser::paintEvent(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -130,6 +138,14 @@ void* C_ZNK12QTextBrowser6sourceEv(void *this_) {
 return new QUrl(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextbrowser.h:71
+// [8] QStringList searchPaths()
+extern "C"
+void* C_ZNK12QTextBrowser11searchPathsEv(void *this_) {
+  auto rv = ((QTextBrowser*)this_)->searchPaths();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:72
 // [-2] void setSearchPaths(const class QStringList &)
 extern "C"
@@ -140,8 +156,8 @@ void C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *this_, QStringList
 // /usr/include/qt/QtWidgets/qtextbrowser.h:74
 // [16] QVariant loadResource(int, const class QUrl &)
 extern "C"
-void* C_ZN12QTextBrowser12loadResourceEiRK4QUrl(void *this_, int type, QUrl* name) {
-  auto rv = ((QTextBrowser*)this_)->loadResource(type, *name);
+void* C_ZN12QTextBrowser12loadResourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
+  auto rv = ((QTextBrowser*)this_)->loadResource(type_, *name);
 return new QVariant(rv);
 }
 // Public Visibility=Default Availability=Available

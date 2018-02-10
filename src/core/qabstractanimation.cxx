@@ -26,6 +26,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     return QAbstractAnimation::event(event);
   }
   }
+
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     QAbstractAnimation::updateCurrentTime(currentTime);
   }
   }
+
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     QAbstractAnimation::updateState(newState, oldState);
   }
   }
+
 // void updateDirection(class QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     QAbstractAnimation::updateDirection(direction);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -69,7 +73,7 @@ void* C_ZNK18QAbstractAnimation10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractanimation.h:85
 // [-2] void QAbstractAnimation(class QObject *)
 extern "C"
-void* C_ZN18QAbstractAnimationC1EP7QObject(QObject * parent) {
+void* C_ZN18QAbstractAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractAnimation*)(0);
   return 0; // new MyQAbstractAnimation(parent);
 }

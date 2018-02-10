@@ -27,6 +27,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
     QState::onEntry(event);
   }
   }
+
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
     QState::onExit(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
     return QState::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

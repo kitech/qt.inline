@@ -25,6 +25,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::paintEvent(e);
   }
   }
+
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & pos) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     return QAbstractButton::hitButton(pos);
   }
   }
+
 // void checkStateSet()
   virtual void checkStateSet() {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::checkStateSet();
   }
   }
+
 // void nextCheckState()
   virtual void nextCheckState() {
     int handled = 0;
@@ -56,6 +59,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::nextCheckState();
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     return QAbstractButton::event(e);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * e) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::keyPressEvent(e);
   }
   }
+
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * e) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::keyReleaseEvent(e);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::mousePressEvent(e);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
@@ -107,6 +115,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::mouseReleaseEvent(e);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::mouseMoveEvent(e);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * e) {
     int handled = 0;
@@ -127,6 +137,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::focusInEvent(e);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * e) {
     int handled = 0;
@@ -137,6 +148,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::focusOutEvent(e);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
@@ -147,6 +159,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::changeEvent(e);
   }
   }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
     int handled = 0;
@@ -157,6 +170,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     QAbstractButton::timerEvent(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -170,7 +184,7 @@ void* C_ZNK15QAbstractButton10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qabstractbutton.h:75
 // [-2] void QAbstractButton(class QWidget *)
 extern "C"
-void* C_ZN15QAbstractButtonC1EP7QWidget(QWidget * parent) {
+void* C_ZN15QAbstractButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractButton*)(0);
   return 0; // new MyQAbstractButton(parent);
 }

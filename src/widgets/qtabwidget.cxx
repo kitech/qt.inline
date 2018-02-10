@@ -25,6 +25,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::tabInserted(index);
   }
   }
+
 // void tabRemoved(int)
   virtual void tabRemoved(int index) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::tabRemoved(index);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::showEvent(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::resizeEvent(arg0);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::keyPressEvent(arg0);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::paintEvent(arg0);
   }
   }
+
 // void setTabBar(class QTabBar *)
   virtual void setTabBar(QTabBar * arg0) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::setTabBar(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::changeEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     return QTabWidget::event(arg0);
   }
   }
+
 // void initStyleOption(class QStyleOptionTabWidgetFrame *)
   virtual void initStyleOption(QStyleOptionTabWidgetFrame * option) {
     int handled = 0;
@@ -116,6 +125,7 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     QTabWidget::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

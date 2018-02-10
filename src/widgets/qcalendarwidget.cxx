@@ -26,6 +26,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     return QCalendarWidget::event(event);
   }
   }
+
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * watched, QEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     return QCalendarWidget::eventFilter(watched, event);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     QCalendarWidget::mousePressEvent(event);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     QCalendarWidget::resizeEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     QCalendarWidget::keyPressEvent(event);
   }
   }
+
 // void paintCell(class QPainter *, const class QRect &, const class QDate &)
   virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     QCalendarWidget::paintCell(painter, rect, date);
   }
   }
+
 // void updateCell(const class QDate &)
   virtual void updateCell(const QDate & date) {
     int handled = 0;
@@ -87,6 +93,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     QCalendarWidget::updateCell(date);
   }
   }
+
 // void updateCells()
   virtual void updateCells() {
     int handled = 0;
@@ -97,6 +104,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     QCalendarWidget::updateCells();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

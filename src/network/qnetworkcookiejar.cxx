@@ -26,6 +26,7 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
     return QNetworkCookieJar::validateCookie(cookie, url);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

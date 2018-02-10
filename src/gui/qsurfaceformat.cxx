@@ -177,8 +177,8 @@ QSurfaceFormat::OpenGLContextProfile C_ZNK14QSurfaceFormat7profileEv(void *this_
 // /usr/include/qt/QtGui/qsurfaceformat.h:126
 // [-2] void setRenderableType(enum QSurfaceFormat::RenderableType)
 extern "C"
-void C_ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE(void *this_, QSurfaceFormat::RenderableType type) {
-  ((QSurfaceFormat*)this_)->setRenderableType(type);
+void C_ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE(void *this_, QSurfaceFormat::RenderableType type_) {
+  ((QSurfaceFormat*)this_)->setRenderableType(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:127

@@ -630,8 +630,8 @@ bool C_ZNK7QString8containsERK18QRegularExpression(void *this_, QRegularExpressi
 // /usr/include/qt/QtCore/qstring.h:356
 // [1] bool contains(const class QRegularExpression &, class QRegularExpressionMatch *)
 extern "C"
-bool C_ZNK7QString8containsERK18QRegularExpressionP23QRegularExpressionMatch(void *this_, QRegularExpression* re, QRegularExpressionMatch * match) {
-  return (bool)((QString*)this_)->contains(*re, match);
+bool C_ZNK7QString8containsERK18QRegularExpressionP23QRegularExpressionMatch(void *this_, QRegularExpression* re, QRegularExpressionMatch * match_) {
+  return (bool)((QString*)this_)->contains(*re, match_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:357
@@ -1045,6 +1045,38 @@ extern "C"
 void* C_ZN7QString6removeERK18QRegularExpression(void *this_, QRegularExpression* re) {
   auto& rv = ((QString*)this_)->remove(*re);
 return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:506
+// [8] QStringList split(const class QString &, enum QString::SplitBehavior, Qt::CaseSensitivity)
+extern "C"
+void* C_ZNK7QString5splitERKS_NS_13SplitBehaviorEN2Qt15CaseSensitivityE(void *this_, QString* sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs) {
+  auto rv = ((QString*)this_)->split(*sep, behavior, cs);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:510
+// [8] QStringList split(class QChar, enum QString::SplitBehavior, Qt::CaseSensitivity)
+extern "C"
+void* C_ZNK7QString5splitE5QCharNS_13SplitBehaviorEN2Qt15CaseSensitivityE(void *this_, QChar* sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs) {
+  auto rv = ((QString*)this_)->split(*sep, behavior, cs);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:515
+// [8] QStringList split(const class QRegExp &, enum QString::SplitBehavior)
+extern "C"
+void* C_ZNK7QString5splitERK7QRegExpNS_13SplitBehaviorE(void *this_, QRegExp* sep, QString::SplitBehavior behavior) {
+  auto rv = ((QString*)this_)->split(*sep, behavior);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:519
+// [8] QStringList split(const class QRegularExpression &, enum QString::SplitBehavior)
+extern "C"
+void* C_ZNK7QString5splitERK18QRegularExpressionNS_13SplitBehaviorE(void *this_, QRegularExpression* sep, QString::SplitBehavior behavior) {
+  auto rv = ((QString*)this_)->split(*sep, behavior);
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:528

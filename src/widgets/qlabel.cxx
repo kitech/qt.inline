@@ -28,6 +28,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     return QLabel::event(e);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::keyPressEvent(ev);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::paintEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::changeEvent(arg0);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::mousePressEvent(ev);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::mouseMoveEvent(ev);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * ev) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::mouseReleaseEvent(ev);
   }
   }
+
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * ev) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::contextMenuEvent(ev);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * ev) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::focusInEvent(ev);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * ev) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     QLabel::focusOutEvent(ev);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -129,6 +139,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     return QLabel::focusNextPrevChild(next);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -215,7 +226,7 @@ Qt::Alignment C_ZNK6QLabel9alignmentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:87
 // [-2] void setAlignment(Qt::Alignment)
 extern "C"
-void C_ZN6QLabel12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment arg0) {
+void C_ZN6QLabel12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> arg0) {
   ((QLabel*)this_)->setAlignment(arg0);
 }
 // Public Visibility=Default Availability=Available

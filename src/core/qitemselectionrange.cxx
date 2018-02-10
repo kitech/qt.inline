@@ -165,6 +165,14 @@ extern "C"
 bool C_ZNK19QItemSelectionRange7isEmptyEv(void *this_) {
   return (bool)((QItemSelectionRange*)this_)->isEmpty();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:127
+// [8] QModelIndexList indexes()
+extern "C"
+QModelIndexList* C_ZNK19QItemSelectionRange7indexesEv(void *this_) {
+  auto rv = ((QItemSelectionRange*)this_)->indexes();
+return new QModelIndexList(rv);
+}
 
 extern "C"
 void C_ZN19QItemSelectionRangeD2Ev(void *this_) {

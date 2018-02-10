@@ -25,6 +25,7 @@ MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(pare
     QMainWindow::contextMenuEvent(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(pare
     return QMainWindow::event(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -156,9 +158,9 @@ void C_ZN11QMainWindow14setDockOptionsE6QFlagsINS_10DockOptionEE(void *this_, QF
 // /usr/include/qt/QtWidgets/qmainwindow.h:121
 // [4] QMainWindow::DockOptions dockOptions()
 extern "C"
-void C_ZNK11QMainWindow11dockOptionsEv(void *this_) {
+QMainWindow::DockOptions* C_ZNK11QMainWindow11dockOptionsEv(void *this_) {
   auto rv = ((QMainWindow*)this_)->dockOptions();
-/*return rv;*/
+return new QMainWindow::DockOptions(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:123

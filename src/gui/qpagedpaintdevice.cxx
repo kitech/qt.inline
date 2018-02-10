@@ -14,7 +14,7 @@
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:58
 // [-2] void QPagedPaintDevice()
 extern "C"
-void* C_ZN17QPagedPaintDeviceC1Ev() {
+void* C_ZN17QPagedPaintDeviceC2Ev() {
   return 0; // new QPagedPaintDevice();
 }
 // Public virtual Visibility=Default Availability=Available

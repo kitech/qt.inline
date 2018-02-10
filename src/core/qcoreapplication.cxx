@@ -26,6 +26,7 @@ MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, a
     return QCoreApplication::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -49,6 +50,14 @@ void* C_ZN16QCoreApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
 extern "C"
 void C_ZN16QCoreApplicationD2Ev(void *this_) {
   delete (QCoreApplication*)(this_);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreapplication.h:99
+// [8] QStringList arguments()
+extern "C"
+void* C_ZN16QCoreApplication9argumentsEv() {
+  auto rv = QCoreApplication::arguments();
+return new QStringList(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:101
@@ -272,6 +281,14 @@ qint64 C_ZN16QCoreApplication14applicationPidEv() {
 extern "C"
 void C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(QStringList* arg0) {
   QCoreApplication::setLibraryPaths(*arg0);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreapplication.h:146
+// [8] QStringList libraryPaths()
+extern "C"
+void* C_ZN16QCoreApplication12libraryPathsEv() {
+  auto rv = QCoreApplication::libraryPaths();
+return new QStringList(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:147

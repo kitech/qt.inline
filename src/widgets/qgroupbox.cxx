@@ -28,6 +28,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     return QGroupBox::event(event);
   }
   }
+
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::childEvent(event);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::resizeEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -58,6 +61,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::paintEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::focusInEvent(event);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
@@ -78,6 +83,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::changeEvent(event);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -88,6 +94,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::mousePressEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -98,6 +105,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::mouseMoveEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -108,6 +116,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::mouseReleaseEvent(event);
   }
   }
+
 // void initStyleOption(class QStyleOptionGroupBox *)
   virtual void initStyleOption(QStyleOptionGroupBox * option) {
     int handled = 0;
@@ -118,6 +127,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     QGroupBox::initStyleOption(option);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

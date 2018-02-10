@@ -27,6 +27,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     QProgressDialog::resizeEvent(event);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     QProgressDialog::closeEvent(event);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     QProgressDialog::changeEvent(event);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     QProgressDialog::showEvent(event);
   }
   }
+
 // void forceShow()
   virtual void forceShow() {
     int handled = 0;
@@ -67,6 +71,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     QProgressDialog::forceShow();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

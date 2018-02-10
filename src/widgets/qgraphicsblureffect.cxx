@@ -25,6 +25,7 @@ MyQGraphicsBlurEffect(QObject * parent) : QGraphicsBlurEffect(parent) {}
     QGraphicsBlurEffect::draw(painter);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -68,9 +69,9 @@ qreal C_ZNK19QGraphicsBlurEffect10blurRadiusEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:175
 // [4] QGraphicsBlurEffect::BlurHints blurHints()
 extern "C"
-void C_ZNK19QGraphicsBlurEffect9blurHintsEv(void *this_) {
+QGraphicsBlurEffect::BlurHints* C_ZNK19QGraphicsBlurEffect9blurHintsEv(void *this_) {
   auto rv = ((QGraphicsBlurEffect*)this_)->blurHints();
-/*return rv;*/
+return new QGraphicsBlurEffect::BlurHints(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:178

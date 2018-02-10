@@ -28,6 +28,7 @@ MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) 
     return QPauseAnimation::event(e);
   }
   }
+
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) 
     QPauseAnimation::updateCurrentTime(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

@@ -26,6 +26,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return QSpinBox::event(event);
   }
   }
+
 // QValidator::State validate(class QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return QSpinBox::validate(input, pos);
   }
   }
+
 // int valueFromText(const class QString &)
   virtual int valueFromText(const QString & text) {
     int handled = 0;
@@ -48,6 +50,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return QSpinBox::valueFromText(text);
   }
   }
+
 // QString textFromValue(int)
   virtual QString textFromValue(int val) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return QSpinBox::textFromValue(val);
   }
   }
+
 // void fixup(class QString &)
   virtual void fixup(QString & str) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     QSpinBox::fixup(str);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

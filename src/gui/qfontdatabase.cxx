@@ -25,6 +25,22 @@ void* C_ZN13QFontDatabaseC2Ev() {
   return  new QFontDatabase();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:123
+// [8] QStringList families(enum QFontDatabase::WritingSystem)
+extern "C"
+void* C_ZNK13QFontDatabase8familiesENS_13WritingSystemE(void *this_, QFontDatabase::WritingSystem writingSystem) {
+  auto rv = ((QFontDatabase*)this_)->families(writingSystem);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:124
+// [8] QStringList styles(const class QString &)
+extern "C"
+void* C_ZNK13QFontDatabase6stylesERK7QString(void *this_, QString* family) {
+  auto rv = ((QFontDatabase*)this_)->styles(*family);
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:127
 // [8] QString styleString(const class QFont &)
 extern "C"
@@ -142,6 +158,14 @@ int C_ZN13QFontDatabase26addApplicationFontFromDataERK10QByteArray(QByteArray* f
   return (int)QFontDatabase::addApplicationFontFromData(*fontData);
 }
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:149
+// [8] QStringList applicationFontFamilies(int)
+extern "C"
+void* C_ZN13QFontDatabase23applicationFontFamiliesEi(int id) {
+  auto rv = QFontDatabase::applicationFontFamilies(id);
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:150
 // [1] bool removeApplicationFont(int)
 extern "C"
@@ -166,8 +190,8 @@ bool C_ZN13QFontDatabase29supportsThreadedFontRenderingEv() {
 // /usr/include/qt/QtGui/qfontdatabase.h:157
 // [16] QFont systemFont(enum QFontDatabase::SystemFont)
 extern "C"
-void* C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont type) {
-  auto rv = QFontDatabase::systemFont(type);
+void* C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont type_) {
+  auto rv = QFontDatabase::systemFont(type_);
 return new QFont(rv);
 }
 

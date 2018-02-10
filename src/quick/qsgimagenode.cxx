@@ -119,9 +119,9 @@ void C_ZN12QSGImageNode30setTextureCoordinatesTransformE6QFlagsINS_31TextureCoor
 // /usr/include/qt/QtQuick/qsgimagenode.h:80
 // [4] QSGImageNode::TextureCoordinatesTransformMode textureCoordinatesTransform()
 extern "C"
-void C_ZNK12QSGImageNode27textureCoordinatesTransformEv(void *this_) {
+QSGImageNode::TextureCoordinatesTransformMode* C_ZNK12QSGImageNode27textureCoordinatesTransformEv(void *this_) {
   auto rv = ((QSGImageNode*)this_)->textureCoordinatesTransform();
-/*return rv;*/
+return new QSGImageNode::TextureCoordinatesTransformMode(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:82

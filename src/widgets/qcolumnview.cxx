@@ -26,6 +26,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return QColumnView::isIndexHidden(index);
   }
   }
+
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return QColumnView::moveCursor(cursorAction, modifiers);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     QColumnView::resizeEvent(event);
   }
   }
+
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     QColumnView::setSelection(rect, command);
   }
   }
+
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return QColumnView::visualRegionForSelection(selection);
   }
   }
+
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return QColumnView::horizontalOffset();
   }
   }
+
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -90,6 +96,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return QColumnView::verticalOffset();
   }
   }
+
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -100,6 +107,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     QColumnView::rowsInserted(parent, start, end);
   }
   }
+
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
@@ -110,6 +118,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     QColumnView::currentChanged(current, previous);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -120,6 +129,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     QColumnView::scrollContentsBy(dx, dy);
   }
   }
+
 // QAbstractItemView * createColumn(const class QModelIndex &)
   virtual QAbstractItemView * createColumn(const QModelIndex & rootIndex) {
     int handled = 0;
@@ -131,6 +141,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return QColumnView::createColumn(rootIndex);
   }
   }
+
 // void initializeColumn(class QAbstractItemView *)
   virtual void initializeColumn(QAbstractItemView * column) {
     int handled = 0;
@@ -141,6 +152,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     QColumnView::initializeColumn(column);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

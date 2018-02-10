@@ -25,6 +25,7 @@ MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
     QGraphicsItemAnimation::beforeAnimationStep(step);
   }
   }
+
 // void afterAnimationStep(qreal)
   virtual void afterAnimationStep(qreal step) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
     QGraphicsItemAnimation::afterAnimationStep(step);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

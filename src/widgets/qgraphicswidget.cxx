@@ -25,6 +25,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::initStyleOption(option);
   }
   }
+
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::sizeHint(which, constraint);
   }
   }
+
 // void updateGeometry()
   virtual void updateGeometry() {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::updateGeometry();
   }
   }
+
 // QVariant itemChange(enum QGraphicsItem::GraphicsItemChange, const class QVariant &)
   virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::itemChange(change, value);
   }
   }
+
 // QVariant propertyChange(const class QString &, const class QVariant &)
   virtual QVariant propertyChange(const QString & propertyName, const QVariant & value) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::propertyChange(propertyName, value);
   }
   }
+
 // bool sceneEvent(class QEvent *)
   virtual bool sceneEvent(QEvent * event) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::sceneEvent(event);
   }
   }
+
 // bool windowFrameEvent(class QEvent *)
   virtual bool windowFrameEvent(QEvent * e) {
     int handled = 0;
@@ -90,6 +96,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::windowFrameEvent(e);
   }
   }
+
 // Qt::WindowFrameSection windowFrameSectionAt(const class QPointF &)
   virtual Qt::WindowFrameSection windowFrameSectionAt(const QPointF & pos) {
     int handled = 0;
@@ -101,6 +108,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::windowFrameSectionAt(pos);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -112,6 +120,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::event(event);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
@@ -122,6 +131,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::changeEvent(event);
   }
   }
+
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
@@ -132,6 +142,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::closeEvent(event);
   }
   }
+
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
@@ -142,6 +153,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::focusInEvent(event);
   }
   }
+
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
@@ -153,6 +165,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return QGraphicsWidget::focusNextPrevChild(next);
   }
   }
+
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
@@ -163,6 +176,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::focusOutEvent(event);
   }
   }
+
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
@@ -173,6 +187,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::hideEvent(event);
   }
   }
+
 // void moveEvent(class QGraphicsSceneMoveEvent *)
   virtual void moveEvent(QGraphicsSceneMoveEvent * event) {
     int handled = 0;
@@ -183,6 +198,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::moveEvent(event);
   }
   }
+
 // void polishEvent()
   virtual void polishEvent() {
     int handled = 0;
@@ -193,6 +209,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::polishEvent();
   }
   }
+
 // void resizeEvent(class QGraphicsSceneResizeEvent *)
   virtual void resizeEvent(QGraphicsSceneResizeEvent * event) {
     int handled = 0;
@@ -203,6 +220,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::resizeEvent(event);
   }
   }
+
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
@@ -213,6 +231,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::showEvent(event);
   }
   }
+
 // void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
@@ -223,6 +242,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::hoverMoveEvent(event);
   }
   }
+
 // void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
@@ -233,6 +253,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::hoverLeaveEvent(event);
   }
   }
+
 // void grabMouseEvent(class QEvent *)
   virtual void grabMouseEvent(QEvent * event) {
     int handled = 0;
@@ -243,6 +264,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::grabMouseEvent(event);
   }
   }
+
 // void ungrabMouseEvent(class QEvent *)
   virtual void ungrabMouseEvent(QEvent * event) {
     int handled = 0;
@@ -253,6 +275,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::ungrabMouseEvent(event);
   }
   }
+
 // void grabKeyboardEvent(class QEvent *)
   virtual void grabKeyboardEvent(QEvent * event) {
     int handled = 0;
@@ -263,6 +286,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::grabKeyboardEvent(event);
   }
   }
+
 // void ungrabKeyboardEvent(class QEvent *)
   virtual void ungrabKeyboardEvent(QEvent * event) {
     int handled = 0;
@@ -273,6 +297,7 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     QGraphicsWidget::ungrabKeyboardEvent(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

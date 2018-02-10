@@ -25,6 +25,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
     QFinalState::onEntry(event);
   }
   }
+
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
     QFinalState::onExit(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
     return QFinalState::event(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

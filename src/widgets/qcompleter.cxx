@@ -30,6 +30,7 @@ MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(com
     return QCompleter::eventFilter(o, e);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -41,6 +42,7 @@ MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(com
     return QCompleter::event(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -308,6 +310,14 @@ extern "C"
 void* C_ZNK10QCompleter13pathFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QCompleter*)this_)->pathFromIndex(*index);
 return new QString(rv);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcompleter.h:142
+// [8] QStringList splitPath(const class QString &)
+extern "C"
+void* C_ZNK10QCompleter9splitPathERK7QString(void *this_, QString* path) {
+  auto rv = ((QCompleter*)this_)->splitPath(*path);
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:149

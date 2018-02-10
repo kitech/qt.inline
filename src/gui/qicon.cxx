@@ -215,6 +215,14 @@ bool C_ZN5QIcon12hasThemeIconERK7QString(QString* name) {
   return (bool)QIcon::hasThemeIcon(*name);
 }
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:118
+// [8] QStringList themeSearchPaths()
+extern "C"
+void* C_ZN5QIcon16themeSearchPathsEv() {
+  auto rv = QIcon::themeSearchPaths();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:119
 // [-2] void setThemeSearchPaths(const class QStringList &)
 extern "C"

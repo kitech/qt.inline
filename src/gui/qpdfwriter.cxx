@@ -28,6 +28,7 @@ MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
     return QPdfWriter::paintEngine();
   }
   }
+
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric id) {
     int handled = 0;
@@ -39,6 +40,7 @@ MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
     return QPdfWriter::metric(id);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

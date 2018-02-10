@@ -35,8 +35,8 @@ void C_ZN17QFileIconProviderD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:65
 // [8] QIcon icon(enum QFileIconProvider::IconType)
 extern "C"
-void* C_ZNK17QFileIconProvider4iconENS_8IconTypeE(void *this_, QFileIconProvider::IconType type) {
-  auto rv = ((QFileIconProvider*)this_)->icon(type);
+void* C_ZNK17QFileIconProvider4iconENS_8IconTypeE(void *this_, QFileIconProvider::IconType type_) {
+  auto rv = ((QFileIconProvider*)this_)->icon(type_);
 return new QIcon(rv);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -66,8 +66,8 @@ void C_ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE(void *this_, QFlag
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:70
 // [4] QFileIconProvider::Options options()
 extern "C"
-void C_ZNK17QFileIconProvider7optionsEv(void *this_) {
+QFileIconProvider::Options* C_ZNK17QFileIconProvider7optionsEv(void *this_) {
   auto rv = ((QFileIconProvider*)this_)->options();
-/*return rv;*/
+return new QFileIconProvider::Options(rv);
 }
 //  main block end

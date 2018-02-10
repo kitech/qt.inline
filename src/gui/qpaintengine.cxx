@@ -21,7 +21,7 @@ MyQPaintEngine(QFlags<QPaintEngine::PaintEngineFeature> features) : QPaintEngine
 // /usr/include/qt/QtGui/qpaintengine.h:147
 // [-2] void QPaintEngine(QPaintEngine::PaintEngineFeatures)
 extern "C"
-void* C_ZN12QPaintEngineC1E6QFlagsINS_18PaintEngineFeatureEE(QFlags<QPaintEngine::PaintEngineFeature> features) {
+void* C_ZN12QPaintEngineC2E6QFlagsINS_18PaintEngineFeatureEE(QFlags<QPaintEngine::PaintEngineFeature> features) {
   return 0; // new QPaintEngine(features);
 }
 // Public virtual Visibility=Default Availability=Available

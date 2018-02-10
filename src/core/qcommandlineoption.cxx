@@ -66,6 +66,14 @@ void C_ZN18QCommandLineOption4swapERS_(void *this_, QCommandLineOption* other) {
   ((QCommandLineOption*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:81
+// [8] QStringList names()
+extern "C"
+void* C_ZNK18QCommandLineOption5namesEv(void *this_) {
+  auto rv = ((QCommandLineOption*)this_)->names();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:83
 // [-2] void setValueName(const class QString &)
 extern "C"
@@ -110,12 +118,20 @@ void C_ZN18QCommandLineOption16setDefaultValuesERK11QStringList(void *this_, QSt
   ((QCommandLineOption*)this_)->setDefaultValues(*defaultValues);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:91
+// [8] QStringList defaultValues()
+extern "C"
+void* C_ZNK18QCommandLineOption13defaultValuesEv(void *this_) {
+  auto rv = ((QCommandLineOption*)this_)->defaultValues();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:93
 // [4] QCommandLineOption::Flags flags()
 extern "C"
-void C_ZNK18QCommandLineOption5flagsEv(void *this_) {
+QCommandLineOption::Flags* C_ZNK18QCommandLineOption5flagsEv(void *this_) {
   auto rv = ((QCommandLineOption*)this_)->flags();
-/*return rv;*/
+return new QCommandLineOption::Flags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:94

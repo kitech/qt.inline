@@ -28,6 +28,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     return QSplitter::createHandle();
   }
   }
+
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * arg0) {
     int handled = 0;
@@ -38,6 +39,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     QSplitter::childEvent(arg0);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -49,6 +51,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     return QSplitter::event(arg0);
   }
   }
+
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
@@ -59,6 +62,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     QSplitter::resizeEvent(arg0);
   }
   }
+
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
@@ -69,6 +73,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     QSplitter::changeEvent(arg0);
   }
   }
+
 // void moveSplitter(int, int)
   virtual void moveSplitter(int pos, int index) {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     QSplitter::moveSplitter(pos, index);
   }
   }
+
 // void setRubberBand(int)
   virtual void setRubberBand(int position) {
     int handled = 0;
@@ -89,6 +95,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     QSplitter::setRubberBand(position);
   }
   }
+
 // int closestLegalPosition(int, int)
   virtual int closestLegalPosition(int arg0, int arg1) {
     int handled = 0;
@@ -100,6 +107,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
     return QSplitter::closestLegalPosition(arg0, arg1);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

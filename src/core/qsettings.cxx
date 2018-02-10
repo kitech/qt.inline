@@ -34,6 +34,7 @@ MyQSettings(QObject * parent) : QSettings(parent) {}
     return QSettings::event(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -174,6 +175,30 @@ void C_ZN9QSettings8endArrayEv(void *this_) {
 extern "C"
 void C_ZN9QSettings13setArrayIndexEi(void *this_, int i) {
   ((QSettings*)this_)->setArrayIndex(i);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:161
+// [8] QStringList allKeys()
+extern "C"
+void* C_ZNK9QSettings7allKeysEv(void *this_) {
+  auto rv = ((QSettings*)this_)->allKeys();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:162
+// [8] QStringList childKeys()
+extern "C"
+void* C_ZNK9QSettings9childKeysEv(void *this_) {
+  auto rv = ((QSettings*)this_)->childKeys();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:163
+// [8] QStringList childGroups()
+extern "C"
+void* C_ZNK9QSettings11childGroupsEv(void *this_) {
+  auto rv = ((QSettings*)this_)->childGroups();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:164

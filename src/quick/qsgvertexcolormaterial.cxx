@@ -26,6 +26,7 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
     return QSGVertexColorMaterial::type();
   }
   }
+
 // QSGMaterialShader * createShader()
   virtual QSGMaterialShader * createShader() {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
     return QSGVertexColorMaterial::createShader();
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available

@@ -25,6 +25,7 @@ MyQDesktopWidget() : QDesktopWidget() {}
     QDesktopWidget::resizeEvent(e);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

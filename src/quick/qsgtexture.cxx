@@ -28,7 +28,7 @@ void* C_ZNK10QSGTexture10metaObjectEv(void *this_) {
 // /usr/include/qt/QtQuick/qsgtexture.h:56
 // [-2] void QSGTexture()
 extern "C"
-void* C_ZN10QSGTextureC1Ev() {
+void* C_ZN10QSGTextureC2Ev() {
   return 0; // new QSGTexture();
 }
 // Public virtual Visibility=Default Availability=Available

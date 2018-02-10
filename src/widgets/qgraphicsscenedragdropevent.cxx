@@ -14,15 +14,15 @@ class MyQGraphicsSceneDragDropEvent : public QGraphicsSceneDragDropEvent {
 public:
   virtual ~MyQGraphicsSceneDragDropEvent() {}
 // void QGraphicsSceneDragDropEvent(enum QEvent::Type)
-MyQGraphicsSceneDragDropEvent(QEvent::Type type) : QGraphicsSceneDragDropEvent(type) {}
+MyQGraphicsSceneDragDropEvent(QEvent::Type type_) : QGraphicsSceneDragDropEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:252
 // [-2] void QGraphicsSceneDragDropEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type) {
-  return  new QGraphicsSceneDragDropEvent(type);
+void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type_) {
+  return  new QGraphicsSceneDragDropEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:253

@@ -31,6 +31,7 @@ MyQDialogButtonBox(QFlags<QDialogButtonBox::StandardButton> buttons, Qt::Orienta
     QDialogButtonBox::changeEvent(event);
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -42,6 +43,7 @@ MyQDialogButtonBox(QFlags<QDialogButtonBox::StandardButton> buttons, Qt::Orienta
     return QDialogButtonBox::event(event);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -157,9 +159,9 @@ void C_ZN16QDialogButtonBox18setStandardButtonsE6QFlagsINS_14StandardButtonEE(vo
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:140
 // [4] QDialogButtonBox::StandardButtons standardButtons()
 extern "C"
-void C_ZNK16QDialogButtonBox15standardButtonsEv(void *this_) {
+QDialogButtonBox::StandardButtons* C_ZNK16QDialogButtonBox15standardButtonsEv(void *this_) {
   auto rv = ((QDialogButtonBox*)this_)->standardButtons();
-/*return rv;*/
+return new QDialogButtonBox::StandardButtons(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:141

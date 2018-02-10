@@ -14,33 +14,33 @@ class MyQTableWidgetItem : public QTableWidgetItem {
 public:
   virtual ~MyQTableWidgetItem() {}
 // void QTableWidgetItem(int)
-MyQTableWidgetItem(int type) : QTableWidgetItem(type) {}
+MyQTableWidgetItem(int type_) : QTableWidgetItem(type_) {}
 // void QTableWidgetItem(const class QString &, int)
-MyQTableWidgetItem(const QString & text, int type) : QTableWidgetItem(text, type) {}
+MyQTableWidgetItem(const QString & text, int type_) : QTableWidgetItem(text, type_) {}
 // void QTableWidgetItem(const class QIcon &, const class QString &, int)
-MyQTableWidgetItem(const QIcon & icon, const QString & text, int type) : QTableWidgetItem(icon, text, type) {}
+MyQTableWidgetItem(const QIcon & icon, const QString & text, int type_) : QTableWidgetItem(icon, text, type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:82
 // [-2] void QTableWidgetItem(int)
 extern "C"
-void* C_ZN16QTableWidgetItemC2Ei(int type) {
-  return  new QTableWidgetItem(type);
+void* C_ZN16QTableWidgetItemC2Ei(int type_) {
+  return  new QTableWidgetItem(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:83
 // [-2] void QTableWidgetItem(const class QString &, int)
 extern "C"
-void* C_ZN16QTableWidgetItemC2ERK7QStringi(QString* text, int type) {
-  return  new QTableWidgetItem(*text, type);
+void* C_ZN16QTableWidgetItemC2ERK7QStringi(QString* text, int type_) {
+  return  new QTableWidgetItem(*text, type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:84
 // [-2] void QTableWidgetItem(const class QIcon &, const class QString &, int)
 extern "C"
-void* C_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi(QIcon* icon, QString* text, int type) {
-  return  new QTableWidgetItem(*icon, *text, type);
+void* C_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi(QIcon* icon, QString* text, int type_) {
+  return  new QTableWidgetItem(*icon, *text, type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:86
@@ -81,8 +81,8 @@ int C_ZNK16QTableWidgetItem6columnEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtablewidget.h:95
 // [-2] void setSelected(_Bool)
 extern "C"
-void C_ZN16QTableWidgetItem11setSelectedEb(void *this_, bool select) {
-  ((QTableWidgetItem*)this_)->setSelected(select);
+void C_ZN16QTableWidgetItem11setSelectedEb(void *this_, bool select_) {
+  ((QTableWidgetItem*)this_)->setSelected(select_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:96

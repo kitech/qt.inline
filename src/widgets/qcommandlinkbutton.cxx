@@ -30,6 +30,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return QCommandLinkButton::sizeHint();
   }
   }
+
 // int heightForWidth(int)
   virtual int heightForWidth(int arg0) {
     int handled = 0;
@@ -41,6 +42,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return QCommandLinkButton::heightForWidth(arg0);
   }
   }
+
 // QSize minimumSizeHint()
   virtual QSize minimumSizeHint() {
     int handled = 0;
@@ -52,6 +54,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return QCommandLinkButton::minimumSizeHint();
   }
   }
+
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -63,6 +66,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return QCommandLinkButton::event(e);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
@@ -73,6 +77,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     QCommandLinkButton::paintEvent(arg0);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

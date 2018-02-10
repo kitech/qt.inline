@@ -16,25 +16,27 @@ public:
 // void QSGMaterialShader()
 MyQSGMaterialShader() : QSGMaterialShader() {}
 // void setShaderSourceFile(class QOpenGLShader::ShaderType, const class QString &)
-  virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type, const QString & sourceFile) {
+  virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
-    QSGMaterialShader::setShaderSourceFile(type, sourceFile);
+    QSGMaterialShader::setShaderSourceFile(type_, sourceFile);
   }
   }
+
 // void setShaderSourceFiles(class QOpenGLShader::ShaderType, const class QStringList &)
-  virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type, const QStringList & sourceFiles) {
+  virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
-    QSGMaterialShader::setShaderSourceFiles(type, sourceFiles);
+    QSGMaterialShader::setShaderSourceFiles(type_, sourceFiles);
   }
   }
+
 // void compile()
   virtual void compile() {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
     QSGMaterialShader::compile();
   }
   }
+
 // void initialize()
   virtual void initialize() {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
     QSGMaterialShader::initialize();
   }
   }
+
 // const char * vertexShader()
   virtual const char * vertexShader() {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
     return QSGMaterialShader::vertexShader();
   }
   }
+
 // const char * fragmentShader()
   virtual const char * fragmentShader() {
     int handled = 0;
@@ -77,13 +82,14 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
     return QSGMaterialShader::fragmentShader();
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:96
 // [-2] void QSGMaterialShader()
 extern "C"
-void* C_ZN17QSGMaterialShaderC1Ev() {
+void* C_ZN17QSGMaterialShaderC2Ev() {
   auto _nilp = (MyQSGMaterialShader*)(0);
   return 0; // new MyQSGMaterialShader();
 }

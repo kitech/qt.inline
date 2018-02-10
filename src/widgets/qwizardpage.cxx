@@ -25,6 +25,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     QWizardPage::setField(name, value);
   }
   }
+
 // QVariant field(const class QString &)
   virtual QVariant field(const QString & name) {
     int handled = 0;
@@ -36,6 +37,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     return QWizardPage::field(name);
   }
   }
+
 // void registerField(const class QString &, class QWidget *, const char *, const char *)
   virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     QWizardPage::registerField(name, widget, property, changedSignal);
   }
   }
+
 // QWizard * wizard()
   virtual QWizard * wizard() {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     return QWizardPage::wizard();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

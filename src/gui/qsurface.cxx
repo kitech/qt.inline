@@ -14,7 +14,7 @@ class MyQSurface : public QSurface {
 public:
   virtual ~MyQSurface() {}
 // void QSurface(enum QSurface::SurfaceClass)
-MyQSurface(QSurface::SurfaceClass type) : QSurface(type) {}
+MyQSurface(QSurface::SurfaceClass type_) : QSurface(type_) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

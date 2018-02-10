@@ -25,6 +25,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::columnResized(column, oldSize, newSize);
   }
   }
+
 // void columnCountChanged(int, int)
   virtual void columnCountChanged(int oldCount, int newCount) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::columnCountChanged(oldCount, newCount);
   }
   }
+
 // void columnMoved()
   virtual void columnMoved() {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::columnMoved();
   }
   }
+
 // void reexpand()
   virtual void reexpand() {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::reexpand();
   }
   }
+
 // void rowsRemoved(const class QModelIndex &, int, int)
   virtual void rowsRemoved(const QModelIndex & parent, int first, int last) {
     int handled = 0;
@@ -65,6 +69,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::rowsRemoved(parent, first, last);
   }
   }
+
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -75,6 +80,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::scrollContentsBy(dx, dy);
   }
   }
+
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -85,6 +91,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::rowsInserted(parent, start, end);
   }
   }
+
 // void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
   virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -95,6 +102,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::rowsAboutToBeRemoved(parent, start, end);
   }
   }
+
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
@@ -106,6 +114,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::moveCursor(cursorAction, modifiers);
   }
   }
+
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -117,6 +126,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::horizontalOffset();
   }
   }
+
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -128,6 +138,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::verticalOffset();
   }
   }
+
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
@@ -138,6 +149,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::setSelection(rect, command);
   }
   }
+
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -149,6 +161,19 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::visualRegionForSelection(selection);
   }
   }
+
+// QModelIndexList selectedIndexes()
+  virtual QModelIndexList selectedIndexes() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndexList*)(irv);
+      // TypedefRecordQList<QModelIndex>
+    } else {
+    return QTreeView::selectedIndexes();
+  }
+  }
+
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
@@ -159,6 +184,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::timerEvent(event);
   }
   }
+
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -169,6 +195,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::paintEvent(event);
   }
   }
+
 // void drawTree(class QPainter *, const class QRegion &)
   virtual void drawTree(QPainter * painter, const QRegion & region) {
     int handled = 0;
@@ -179,6 +206,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::drawTree(painter, region);
   }
   }
+
 // void drawRow(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
   virtual void drawRow(QPainter * painter, const QStyleOptionViewItem & options, const QModelIndex & index) {
     int handled = 0;
@@ -189,6 +217,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::drawRow(painter, options, index);
   }
   }
+
 // void drawBranches(class QPainter *, const class QRect &, const class QModelIndex &)
   virtual void drawBranches(QPainter * painter, const QRect & rect, const QModelIndex & index) {
     int handled = 0;
@@ -199,6 +228,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::drawBranches(painter, rect, index);
   }
   }
+
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
@@ -209,6 +239,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::mousePressEvent(event);
   }
   }
+
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
@@ -219,6 +250,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::mouseReleaseEvent(event);
   }
   }
+
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
@@ -229,6 +261,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::mouseDoubleClickEvent(event);
   }
   }
+
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
@@ -239,6 +272,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::mouseMoveEvent(event);
   }
   }
+
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
@@ -249,6 +283,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::keyPressEvent(event);
   }
   }
+
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
     int handled = 0;
@@ -259,6 +294,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::dragMoveEvent(event);
   }
   }
+
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
     int handled = 0;
@@ -270,6 +306,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::viewportEvent(event);
   }
   }
+
 // void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
@@ -280,6 +317,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::updateGeometries();
   }
   }
+
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
     int handled = 0;
@@ -291,6 +329,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::viewportSizeHint();
   }
   }
+
 // int sizeHintForColumn(int)
   virtual int sizeHintForColumn(int column) {
     int handled = 0;
@@ -302,6 +341,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::sizeHintForColumn(column);
   }
   }
+
 // int indexRowSizeHint(const class QModelIndex &)
   virtual int indexRowSizeHint(const QModelIndex & index) {
     int handled = 0;
@@ -313,6 +353,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::indexRowSizeHint(index);
   }
   }
+
 // int rowHeight(const class QModelIndex &)
   virtual int rowHeight(const QModelIndex & index) {
     int handled = 0;
@@ -324,6 +365,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::rowHeight(index);
   }
   }
+
 // void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action) {
     int handled = 0;
@@ -334,6 +376,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::horizontalScrollbarAction(action);
   }
   }
+
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
@@ -345,6 +388,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     return QTreeView::isIndexHidden(index);
   }
   }
+
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
@@ -355,6 +399,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::selectionChanged(selected, deselected);
   }
   }
+
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
@@ -365,6 +410,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
     QTreeView::currentChanged(current, previous);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

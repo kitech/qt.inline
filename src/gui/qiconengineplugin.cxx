@@ -28,7 +28,7 @@ void* C_ZNK17QIconEnginePlugin10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qiconengineplugin.h:58
 // [-2] void QIconEnginePlugin(class QObject *)
 extern "C"
-void* C_ZN17QIconEnginePluginC1EP7QObject(QObject * parent) {
+void* C_ZN17QIconEnginePluginC2EP7QObject(QObject * parent) {
   return 0; // new QIconEnginePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available

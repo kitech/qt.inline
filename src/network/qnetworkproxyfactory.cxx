@@ -21,7 +21,7 @@ MyQNetworkProxyFactory() : QNetworkProxyFactory() {}
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:219
 // [-2] void QNetworkProxyFactory()
 extern "C"
-void* C_ZN20QNetworkProxyFactoryC1Ev() {
+void* C_ZN20QNetworkProxyFactoryC2Ev() {
   return 0; // new QNetworkProxyFactory();
 }
 // Public virtual Visibility=Default Availability=Available

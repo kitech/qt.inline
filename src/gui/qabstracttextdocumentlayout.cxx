@@ -25,6 +25,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     QAbstractTextDocumentLayout::documentChanged(from, charsRemoved, charsAdded);
   }
   }
+
 // void resizeInlineObject(class QTextInlineObject, int, const class QTextFormat &)
   virtual void resizeInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     QAbstractTextDocumentLayout::resizeInlineObject(item, posInDocument, format);
   }
   }
+
 // void positionInlineObject(class QTextInlineObject, int, const class QTextFormat &)
   virtual void positionInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
     int handled = 0;
@@ -45,6 +47,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     QAbstractTextDocumentLayout::positionInlineObject(item, posInDocument, format);
   }
   }
+
 // void drawInlineObject(class QPainter *, const class QRectF &, class QTextInlineObject, int, const class QTextFormat &)
   virtual void drawInlineObject(QPainter * painter, const QRectF & rect, QTextInlineObject object, int posInDocument, const QTextFormat & format) {
     int handled = 0;
@@ -55,6 +58,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     QAbstractTextDocumentLayout::drawInlineObject(painter, rect, object, posInDocument, format);
   }
   }
+
 // int formatIndex(int)
   virtual int formatIndex(int pos) {
     int handled = 0;
@@ -66,6 +70,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     return QAbstractTextDocumentLayout::formatIndex(pos);
   }
   }
+
 // QTextCharFormat format(int)
   virtual QTextCharFormat format(int pos) {
     int handled = 0;
@@ -77,6 +82,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     return QAbstractTextDocumentLayout::format(pos);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -90,7 +96,7 @@ void* C_ZNK27QAbstractTextDocumentLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:64
 // [-2] void QAbstractTextDocumentLayout(class QTextDocument *)
 extern "C"
-void* C_ZN27QAbstractTextDocumentLayoutC1EP13QTextDocument(QTextDocument * doc) {
+void* C_ZN27QAbstractTextDocumentLayoutC2EP13QTextDocument(QTextDocument * doc) {
   auto _nilp = (MyQAbstractTextDocumentLayout*)(0);
   return 0; // new MyQAbstractTextDocumentLayout(doc);
 }

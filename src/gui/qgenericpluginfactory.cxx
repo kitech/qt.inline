@@ -16,6 +16,14 @@ public:
 };
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qgenericpluginfactory.h:55
+// [8] QStringList keys()
+extern "C"
+void* C_ZN21QGenericPluginFactory4keysEv() {
+  auto rv = QGenericPluginFactory::keys();
+return new QStringList(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qgenericpluginfactory.h:56
 // [8] QObject * create(const class QString &, const class QString &)
 extern "C"

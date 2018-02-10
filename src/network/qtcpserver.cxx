@@ -25,6 +25,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
     QTcpServer::incomingConnection(handle);
   }
   }
+
 // void addPendingConnection(class QTcpSocket *)
   virtual void addPendingConnection(QTcpSocket * socket) {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
     QTcpServer::addPendingConnection(socket);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available

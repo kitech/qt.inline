@@ -27,6 +27,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     QSyntaxHighlighter::highlightBlock(text);
   }
   }
+
 // void setFormat(int, int, const class QTextCharFormat &)
   virtual void setFormat(int start, int count, const QTextCharFormat & format) {
     int handled = 0;
@@ -37,6 +38,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     QSyntaxHighlighter::setFormat(start, count, format);
   }
   }
+
 // void setFormat(int, int, const class QColor &)
   virtual void setFormat(int start, int count, const QColor & color) {
     int handled = 0;
@@ -47,6 +49,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     QSyntaxHighlighter::setFormat(start, count, color);
   }
   }
+
 // void setFormat(int, int, const class QFont &)
   virtual void setFormat(int start, int count, const QFont & font) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     QSyntaxHighlighter::setFormat(start, count, font);
   }
   }
+
 // QTextCharFormat format(int)
   virtual QTextCharFormat format(int pos) {
     int handled = 0;
@@ -68,6 +72,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return QSyntaxHighlighter::format(pos);
   }
   }
+
 // int previousBlockState()
   virtual int previousBlockState() {
     int handled = 0;
@@ -79,6 +84,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return QSyntaxHighlighter::previousBlockState();
   }
   }
+
 // int currentBlockState()
   virtual int currentBlockState() {
     int handled = 0;
@@ -90,6 +96,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return QSyntaxHighlighter::currentBlockState();
   }
   }
+
 // void setCurrentBlockState(int)
   virtual void setCurrentBlockState(int newState) {
     int handled = 0;
@@ -100,6 +107,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     QSyntaxHighlighter::setCurrentBlockState(newState);
   }
   }
+
 // void setCurrentBlockUserData(class QTextBlockUserData *)
   virtual void setCurrentBlockUserData(QTextBlockUserData * data) {
     int handled = 0;
@@ -110,6 +118,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     QSyntaxHighlighter::setCurrentBlockUserData(data);
   }
   }
+
 // QTextBlockUserData * currentBlockUserData()
   virtual QTextBlockUserData * currentBlockUserData() {
     int handled = 0;
@@ -121,6 +130,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return QSyntaxHighlighter::currentBlockUserData();
   }
   }
+
 // QTextBlock currentBlock()
   virtual QTextBlock currentBlock() {
     int handled = 0;
@@ -132,6 +142,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return QSyntaxHighlighter::currentBlock();
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -145,7 +156,7 @@ void* C_ZNK18QSyntaxHighlighter10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:65
 // [-2] void QSyntaxHighlighter(class QObject *)
 extern "C"
-void* C_ZN18QSyntaxHighlighterC1EP7QObject(QObject * parent) {
+void* C_ZN18QSyntaxHighlighterC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
 }
@@ -153,7 +164,7 @@ void* C_ZN18QSyntaxHighlighterC1EP7QObject(QObject * parent) {
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:66
 // [-2] void QSyntaxHighlighter(class QTextDocument *)
 extern "C"
-void* C_ZN18QSyntaxHighlighterC1EP13QTextDocument(QTextDocument * parent) {
+void* C_ZN18QSyntaxHighlighterC2EP13QTextDocument(QTextDocument * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
 }

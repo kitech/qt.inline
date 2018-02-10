@@ -25,13 +25,14 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
     QGraphicsLayout::addChildLayoutItem(layoutItem);
   }
   }
+
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:57
 // [-2] void QGraphicsLayout(class QGraphicsLayoutItem *)
 extern "C"
-void* C_ZN15QGraphicsLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
+void* C_ZN15QGraphicsLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
   auto _nilp = (MyQGraphicsLayout*)(0);
   return 0; // new MyQGraphicsLayout(parent);
 }

@@ -85,6 +85,46 @@ void* C_ZNK9QMimeType8iconNameEv(void *this_) {
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:106
+// [8] QStringList globPatterns()
+extern "C"
+void* C_ZNK9QMimeType12globPatternsEv(void *this_) {
+  auto rv = ((QMimeType*)this_)->globPatterns();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:107
+// [8] QStringList parentMimeTypes()
+extern "C"
+void* C_ZNK9QMimeType15parentMimeTypesEv(void *this_) {
+  auto rv = ((QMimeType*)this_)->parentMimeTypes();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:108
+// [8] QStringList allAncestors()
+extern "C"
+void* C_ZNK9QMimeType12allAncestorsEv(void *this_) {
+  auto rv = ((QMimeType*)this_)->allAncestors();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:109
+// [8] QStringList aliases()
+extern "C"
+void* C_ZNK9QMimeType7aliasesEv(void *this_) {
+  auto rv = ((QMimeType*)this_)->aliases();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:110
+// [8] QStringList suffixes()
+extern "C"
+void* C_ZNK9QMimeType8suffixesEv(void *this_) {
+  auto rv = ((QMimeType*)this_)->suffixes();
+return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:111
 // [8] QString preferredSuffix()
 extern "C"

@@ -42,9 +42,9 @@ void C_ZN21QNetworkConfiguration4swapERS_(void *this_, QNetworkConfiguration* ot
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:108
 // [4] QNetworkConfiguration::StateFlags state()
 extern "C"
-void C_ZNK21QNetworkConfiguration5stateEv(void *this_) {
+QNetworkConfiguration::StateFlags* C_ZNK21QNetworkConfiguration5stateEv(void *this_) {
   auto rv = ((QNetworkConfiguration*)this_)->state();
-/*return rv;*/
+return new QNetworkConfiguration::StateFlags(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:109

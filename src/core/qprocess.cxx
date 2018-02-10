@@ -25,6 +25,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     QProcess::setProcessState(state);
   }
   }
+
 // void setupChildProcess()
   virtual void setupChildProcess() {
     int handled = 0;
@@ -35,6 +36,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     QProcess::setupChildProcess();
   }
   }
+
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
@@ -46,6 +48,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     return QProcess::readData(data, maxlen);
   }
   }
+
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
     int handled = 0;
@@ -57,6 +60,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     return QProcess::writeData(data, len);
   }
   }
+
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -130,6 +134,14 @@ return new QString(rv);
 extern "C"
 void C_ZN8QProcess10setProgramERK7QString(void *this_, QString* program) {
   ((QProcess*)this_)->setProgram(*program);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:172
+// [8] QStringList arguments()
+extern "C"
+void* C_ZNK8QProcess9argumentsEv(void *this_) {
+  auto rv = ((QProcess*)this_)->arguments();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:173
@@ -257,6 +269,14 @@ void C_ZN8QProcess19setWorkingDirectoryERK7QString(void *this_, QString* dir) {
 extern "C"
 void C_ZN8QProcess14setEnvironmentERK11QStringList(void *this_, QStringList* environment) {
   ((QProcess*)this_)->setEnvironment(*environment);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:218
+// [8] QStringList environment()
+extern "C"
+void* C_ZNK8QProcess11environmentEv(void *this_) {
+  auto rv = ((QProcess*)this_)->environment();
+return new QStringList(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:219
@@ -435,6 +455,14 @@ bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringList(QString* program, QS
 extern "C"
 bool C_ZN8QProcess13startDetachedERK7QString(QString* command) {
   return (bool)QProcess::startDetached(*command);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:262
+// [8] QStringList systemEnvironment()
+extern "C"
+void* C_ZN8QProcess17systemEnvironmentEv() {
+  auto rv = QProcess::systemEnvironment();
+return new QStringList(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:264

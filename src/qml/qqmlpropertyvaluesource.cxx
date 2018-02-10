@@ -21,7 +21,7 @@ MyQQmlPropertyValueSource() : QQmlPropertyValueSource() {}
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:53
 // [-2] void QQmlPropertyValueSource()
 extern "C"
-void* C_ZN23QQmlPropertyValueSourceC1Ev() {
+void* C_ZN23QQmlPropertyValueSourceC2Ev() {
   return 0; // new QQmlPropertyValueSource();
 }
 // Public virtual Visibility=Default Availability=Available
