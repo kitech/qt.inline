@@ -58,6 +58,22 @@ extern "C"
 void C_ZN5QIconD2Ev(void *this_) {
   delete (QIcon*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:71
+// [8] QIcon & operator=(const class QIcon &)
+extern "C"
+void* C_ZN5QIconaSERKS_(void *this_, QIcon* other) {
+  auto& rv = ((QIcon*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:73
+// [8] QIcon & operator=(class QIcon &&)
+extern "C"
+void* C_ZN5QIconaSEOS_(void *this_, QIcon && other) {
+  auto& rv = ((QIcon*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:76
 // [-2] void swap(class QIcon &)

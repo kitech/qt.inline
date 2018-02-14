@@ -51,6 +51,22 @@ extern "C"
 void* C_ZN9QPageSizeC2ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(QSizeF* size, QPageSize::Unit units, QString* name, QPageSize::SizeMatchPolicy matchPolicy) {
   return  new QPageSize(*size, units, *name, matchPolicy);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:240
+// [8] QPageSize & operator=(class QPageSize &&)
+extern "C"
+void* C_ZN9QPageSizeaSEOS_(void *this_, QPageSize && other) {
+  auto& rv = ((QPageSize*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:242
+// [8] QPageSize & operator=(const class QPageSize &)
+extern "C"
+void* C_ZN9QPageSizeaSERKS_(void *this_, QPageSize* other) {
+  auto& rv = ((QPageSize*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:243
 // [-2] void ~QPageSize()

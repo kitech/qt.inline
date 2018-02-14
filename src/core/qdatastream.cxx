@@ -150,6 +150,182 @@ void C_ZN11QDataStream10setVersionEi(void *this_, int arg0) {
   ((QDataStream*)this_)->setVersion(arg0);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:149
+// [32] QDataStream & operator>>(quint8 &)
+extern "C"
+void* C_ZN11QDataStreamrsERh(void *this_, quint8 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:150
+// [32] QDataStream & operator>>(qint16 &)
+extern "C"
+void* C_ZN11QDataStreamrsERs(void *this_, qint16 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:151
+// [32] QDataStream & operator>>(quint16 &)
+extern "C"
+void* C_ZN11QDataStreamrsERt(void *this_, quint16 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:152
+// [32] QDataStream & operator>>(qint32 &)
+extern "C"
+void* C_ZN11QDataStreamrsERi(void *this_, qint32 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:153
+// [32] QDataStream & operator>>(quint32 &)
+extern "C"
+void* C_ZN11QDataStreamrsERj(void *this_, quint32 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:154
+// [32] QDataStream & operator>>(qint64 &)
+extern "C"
+void* C_ZN11QDataStreamrsERx(void *this_, qint64 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:155
+// [32] QDataStream & operator>>(quint64 &)
+extern "C"
+void* C_ZN11QDataStreamrsERy(void *this_, quint64 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:158
+// [32] QDataStream & operator>>(_Bool &)
+extern "C"
+void* C_ZN11QDataStreamrsERb(void *this_, bool & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:160
+// [32] QDataStream & operator>>(float &)
+extern "C"
+void* C_ZN11QDataStreamrsERf(void *this_, float & f) {
+  auto& rv = ((QDataStream*)this_)->operator>>(f);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:161
+// [32] QDataStream & operator>>(double &)
+extern "C"
+void* C_ZN11QDataStreamrsERd(void *this_, double & f) {
+  auto& rv = ((QDataStream*)this_)->operator>>(f);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:162
+// [32] QDataStream & operator>>(char *&)
+extern "C"
+void* C_ZN11QDataStreamrsERPc(void *this_, char *& str) {
+  auto& rv = ((QDataStream*)this_)->operator>>(str);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:165
+// [32] QDataStream & operator<<(quint8)
+extern "C"
+void* C_ZN11QDataStreamlsEh(void *this_, quint8 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:166
+// [32] QDataStream & operator<<(qint16)
+extern "C"
+void* C_ZN11QDataStreamlsEs(void *this_, qint16 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:167
+// [32] QDataStream & operator<<(quint16)
+extern "C"
+void* C_ZN11QDataStreamlsEt(void *this_, quint16 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:168
+// [32] QDataStream & operator<<(qint32)
+extern "C"
+void* C_ZN11QDataStreamlsEi(void *this_, qint32 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:169
+// [32] QDataStream & operator<<(quint32)
+extern "C"
+void* C_ZN11QDataStreamlsEj(void *this_, quint32 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:170
+// [32] QDataStream & operator<<(qint64)
+extern "C"
+void* C_ZN11QDataStreamlsEx(void *this_, qint64 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:171
+// [32] QDataStream & operator<<(quint64)
+extern "C"
+void* C_ZN11QDataStreamlsEy(void *this_, quint64 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:173
+// [32] QDataStream & operator<<(_Bool)
+extern "C"
+void* C_ZN11QDataStreamlsEb(void *this_, bool i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:175
+// [32] QDataStream & operator<<(float)
+extern "C"
+void* C_ZN11QDataStreamlsEf(void *this_, float f) {
+  auto& rv = ((QDataStream*)this_)->operator<<(f);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:176
+// [32] QDataStream & operator<<(double)
+extern "C"
+void* C_ZN11QDataStreamlsEd(void *this_, double f) {
+  auto& rv = ((QDataStream*)this_)->operator<<(f);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:177
+// [32] QDataStream & operator<<(const char *)
+extern "C"
+void* C_ZN11QDataStreamlsEPKc(void *this_, const char * str) {
+  auto& rv = ((QDataStream*)this_)->operator<<(str);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:179
 // [32] QDataStream & readBytes(char *&, uint &)
 extern "C"

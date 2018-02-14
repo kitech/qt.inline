@@ -34,6 +34,22 @@ void* C_ZN12QPainterPathC2ERK7QPointF(QPointF* startPoint) {
   return  new QPainterPath(*startPoint);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:94
+// [8] QPainterPath & operator=(const class QPainterPath &)
+extern "C"
+void* C_ZN12QPainterPathaSERKS_(void *this_, QPainterPath* other) {
+  auto& rv = ((QPainterPath*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:96
+// [8] QPainterPath & operator=(class QPainterPath &&)
+extern "C"
+void* C_ZN12QPainterPathaSEOS_(void *this_, QPainterPath && other) {
+  auto& rv = ((QPainterPath*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:99
 // [-2] void ~QPainterPath()
 extern "C"
@@ -487,5 +503,83 @@ extern "C"
 void* C_ZNK12QPainterPath10simplifiedEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->simplified();
 return new QPainterPath(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:195
+// [1] bool operator==(const class QPainterPath &)
+extern "C"
+bool C_ZNK12QPainterPatheqERKS_(void *this_, QPainterPath* other) {
+  return (bool)((QPainterPath*)this_)->operator==(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:196
+// [1] bool operator!=(const class QPainterPath &)
+extern "C"
+bool C_ZNK12QPainterPathneERKS_(void *this_, QPainterPath* other) {
+  return (bool)((QPainterPath*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:198
+// [8] QPainterPath operator&(const class QPainterPath &)
+extern "C"
+void* C_ZNK12QPainterPathanERKS_(void *this_, QPainterPath* other) {
+  auto rv = ((QPainterPath*)this_)->operator&(*other);
+return new QPainterPath(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:199
+// [8] QPainterPath operator|(const class QPainterPath &)
+extern "C"
+void* C_ZNK12QPainterPathorERKS_(void *this_, QPainterPath* other) {
+  auto rv = ((QPainterPath*)this_)->operator|(*other);
+return new QPainterPath(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:200
+// [8] QPainterPath operator+(const class QPainterPath &)
+extern "C"
+void* C_ZNK12QPainterPathplERKS_(void *this_, QPainterPath* other) {
+  auto rv = ((QPainterPath*)this_)->operator+(*other);
+return new QPainterPath(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:201
+// [8] QPainterPath operator-(const class QPainterPath &)
+extern "C"
+void* C_ZNK12QPainterPathmiERKS_(void *this_, QPainterPath* other) {
+  auto rv = ((QPainterPath*)this_)->operator-(*other);
+return new QPainterPath(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:202
+// [8] QPainterPath & operator&=(const class QPainterPath &)
+extern "C"
+void* C_ZN12QPainterPathaNERKS_(void *this_, QPainterPath* other) {
+  auto& rv = ((QPainterPath*)this_)->operator&=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:203
+// [8] QPainterPath & operator|=(const class QPainterPath &)
+extern "C"
+void* C_ZN12QPainterPathoRERKS_(void *this_, QPainterPath* other) {
+  auto& rv = ((QPainterPath*)this_)->operator|=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:204
+// [8] QPainterPath & operator+=(const class QPainterPath &)
+extern "C"
+void* C_ZN12QPainterPathpLERKS_(void *this_, QPainterPath* other) {
+  auto& rv = ((QPainterPath*)this_)->operator+=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:205
+// [8] QPainterPath & operator-=(const class QPainterPath &)
+extern "C"
+void* C_ZN12QPainterPathmIERKS_(void *this_, QPainterPath* other) {
+  auto& rv = ((QPainterPath*)this_)->operator-=(*other);
+return &rv;
 }
 //  main block end

@@ -76,6 +76,22 @@ extern "C"
 void C_ZN8QPaletteD2Ev(void *this_) {
   delete (QPalette*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:69
+// [16] QPalette & operator=(const class QPalette &)
+extern "C"
+void* C_ZN8QPaletteaSERKS_(void *this_, QPalette* palette) {
+  auto& rv = ((QPalette*)this_)->operator=(*palette);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:74
+// [16] QPalette & operator=(class QPalette &&)
+extern "C"
+void* C_ZN8QPaletteaSEOS_(void *this_, QPalette && other) {
+  auto& rv = ((QPalette*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:81
 // [-2] void swap(class QPalette &)
@@ -345,6 +361,20 @@ extern "C"
 void* C_ZNK8QPalette11linkVisitedEv(void *this_) {
   auto& rv = ((QPalette*)this_)->linkVisited();
 return new QBrush(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:145
+// [1] bool operator==(const class QPalette &)
+extern "C"
+bool C_ZNK8QPaletteeqERKS_(void *this_, QPalette* p) {
+  return (bool)((QPalette*)this_)->operator==(*p);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:146
+// [1] bool operator!=(const class QPalette &)
+extern "C"
+bool C_ZNK8QPaletteneERKS_(void *this_, QPalette* p) {
+  return (bool)((QPalette*)this_)->operator!=(*p);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:147

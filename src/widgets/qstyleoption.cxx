@@ -45,4 +45,12 @@ extern "C"
 void C_ZN12QStyleOption8initFromEPK7QWidget(void *this_, const QWidget * w) {
   ((QStyleOption*)this_)->initFrom(w);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:108
+// [64] QStyleOption & operator=(const class QStyleOption &)
+extern "C"
+void* C_ZN12QStyleOptionaSERKS_(void *this_, QStyleOption* other) {
+  auto& rv = ((QStyleOption*)this_)->operator=(*other);
+return &rv;
+}
 //  main block end

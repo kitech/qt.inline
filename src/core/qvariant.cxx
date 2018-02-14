@@ -489,6 +489,22 @@ void* C_ZN8QVariantC2ERK13QJsonDocument(QJsonDocument* jsonDocument) {
   auto _nilp = (MyQVariant*)(0);
   return  new MyQVariant(*jsonDocument);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:262
+// [16] QVariant & operator=(const class QVariant &)
+extern "C"
+void* C_ZN8QVariantaSERKS_(void *this_, QVariant* other) {
+  auto& rv = ((QVariant*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:266
+// [16] QVariant & operator=(class QVariant &&)
+extern "C"
+void* C_ZN8QVariantaSEOS_(void *this_, QVariant && other) {
+  auto& rv = ((QVariant*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:270
 // [-2] void swap(class QVariant &)
@@ -894,5 +910,47 @@ void* C_ZNK8QVariant9constDataEv(void *this_) {
 extern "C"
 void* C_ZNK8QVariant4dataEv(void *this_) {
   return (void*)((QVariant*)this_)->data();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:436
+// [1] bool operator==(const class QVariant &)
+extern "C"
+bool C_ZNK8QVarianteqERKS_(void *this_, QVariant* v) {
+  return (bool)((QVariant*)this_)->operator==(*v);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:438
+// [1] bool operator!=(const class QVariant &)
+extern "C"
+bool C_ZNK8QVariantneERKS_(void *this_, QVariant* v) {
+  return (bool)((QVariant*)this_)->operator!=(*v);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:440
+// [1] bool operator<(const class QVariant &)
+extern "C"
+bool C_ZNK8QVariantltERKS_(void *this_, QVariant* v) {
+  return (bool)((QVariant*)this_)->operator<(*v);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:442
+// [1] bool operator<=(const class QVariant &)
+extern "C"
+bool C_ZNK8QVariantleERKS_(void *this_, QVariant* v) {
+  return (bool)((QVariant*)this_)->operator<=(*v);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:444
+// [1] bool operator>(const class QVariant &)
+extern "C"
+bool C_ZNK8QVariantgtERKS_(void *this_, QVariant* v) {
+  return (bool)((QVariant*)this_)->operator>(*v);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:446
+// [1] bool operator>=(const class QVariant &)
+extern "C"
+bool C_ZNK8QVariantgeERKS_(void *this_, QVariant* v) {
+  return (bool)((QVariant*)this_)->operator>=(*v);
 }
 //  main block end

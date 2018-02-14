@@ -61,4 +61,12 @@ void* C_ZNK16QJSValueIterator5valueEv(void *this_) {
   auto rv = ((QJSValueIterator*)this_)->value();
 return new QJSValue(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalueiterator.h:65
+// [8] QJSValueIterator & operator=(class QJSValue &)
+extern "C"
+void* C_ZN16QJSValueIteratoraSER8QJSValue(void *this_, QJSValue* value) {
+  auto& rv = ((QJSValueIterator*)this_)->operator=(*value);
+return &rv;
+}
 //  main block end

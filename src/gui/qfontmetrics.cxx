@@ -40,6 +40,22 @@ extern "C"
 void C_ZN12QFontMetricsD2Ev(void *this_) {
   delete (QFontMetrics*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:66
+// [8] QFontMetrics & operator=(const class QFontMetrics &)
+extern "C"
+void* C_ZN12QFontMetricsaSERKS_(void *this_, QFontMetrics* arg0) {
+  auto& rv = ((QFontMetrics*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:68
+// [8] QFontMetrics & operator=(class QFontMetrics &&)
+extern "C"
+void* C_ZN12QFontMetricsaSEOS_(void *this_, QFontMetrics && other) {
+  auto& rv = ((QFontMetrics*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:72
 // [-2] void swap(class QFontMetrics &)
@@ -263,5 +279,19 @@ int C_ZNK12QFontMetrics12strikeOutPosEv(void *this_) {
 extern "C"
 int C_ZNK12QFontMetrics9lineWidthEv(void *this_) {
   return (int)((QFontMetrics*)this_)->lineWidth();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:119
+// [1] bool operator==(const class QFontMetrics &)
+extern "C"
+bool C_ZNK12QFontMetricseqERKS_(void *this_, QFontMetrics* other) {
+  return (bool)((QFontMetrics*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:120
+// [1] bool operator!=(const class QFontMetrics &)
+extern "C"
+bool C_ZNK12QFontMetricsneERKS_(void *this_, QFontMetrics* other) {
+  return (bool)((QFontMetrics*)this_)->operator!=(*other);
 }
 //  main block end

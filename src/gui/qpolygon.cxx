@@ -59,6 +59,22 @@ void* C_ZN8QPolygonC2EiPKi(int nPoints, const int * points) {
   return  new QPolygon(nPoints, points);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:71
+// [8] QPolygon & operator=(class QPolygon &&)
+extern "C"
+void* C_ZN8QPolygonaSEOS_(void *this_, QPolygon && other) {
+  auto& rv = ((QPolygon*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:73
+// [8] QPolygon & operator=(const class QPolygon &)
+extern "C"
+void* C_ZN8QPolygonaSERKS_(void *this_, QPolygon* other) {
+  auto& rv = ((QPolygon*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:74
 // [-2] void swap(class QPolygon &)
 extern "C"

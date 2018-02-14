@@ -32,11 +32,41 @@ void C_ZN15QNetworkRequestD2Ev(void *this_) {
   delete (QNetworkRequest*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:128
+// [8] QNetworkRequest & operator=(class QNetworkRequest &&)
+extern "C"
+void* C_ZN15QNetworkRequestaSEOS_(void *this_, QNetworkRequest && other) {
+  auto& rv = ((QNetworkRequest*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:130
+// [8] QNetworkRequest & operator=(const class QNetworkRequest &)
+extern "C"
+void* C_ZN15QNetworkRequestaSERKS_(void *this_, QNetworkRequest* other) {
+  auto& rv = ((QNetworkRequest*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:132
 // [-2] void swap(class QNetworkRequest &)
 extern "C"
 void C_ZN15QNetworkRequest4swapERS_(void *this_, QNetworkRequest* other) {
   ((QNetworkRequest*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:134
+// [1] bool operator==(const class QNetworkRequest &)
+extern "C"
+bool C_ZNK15QNetworkRequesteqERKS_(void *this_, QNetworkRequest* other) {
+  return (bool)((QNetworkRequest*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:135
+// [1] bool operator!=(const class QNetworkRequest &)
+extern "C"
+bool C_ZNK15QNetworkRequestneERKS_(void *this_, QNetworkRequest* other) {
+  return (bool)((QNetworkRequest*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:138

@@ -55,6 +55,14 @@ void* C_ZNK11QStringView5utf16Ev(void *this_) {
   return (void*)((QStringView*)this_)->utf16();
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:220
+// [2] QChar operator[](qsizetype)
+extern "C"
+void* C_ZNK11QStringViewixEx(void *this_, qsizetype n) {
+  auto rv = ((QStringView*)this_)->operator[](n);
+return new QChar(rv);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:227
 // [8] QByteArray toLatin1()
 extern "C"

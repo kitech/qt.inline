@@ -50,6 +50,14 @@ void C_ZN17QByteArrayMatcherD2Ev(void *this_) {
   delete (QByteArrayMatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearraymatcher.h:59
+// [1040] QByteArrayMatcher & operator=(const class QByteArrayMatcher &)
+extern "C"
+void* C_ZN17QByteArrayMatcheraSERKS_(void *this_, QByteArrayMatcher* other) {
+  auto& rv = ((QByteArrayMatcher*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:61
 // [-2] void setPattern(const class QByteArray &)
 extern "C"

@@ -31,6 +31,22 @@ extern "C"
 void C_ZN29QXmlStreamNotationDeclarationD2Ev(void *this_) {
   delete (QXmlStreamNotationDeclaration*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:253
+// [56] QXmlStreamNotationDeclaration & operator=(const class QXmlStreamNotationDeclaration &)
+extern "C"
+void* C_ZN29QXmlStreamNotationDeclarationaSERKS_(void *this_, QXmlStreamNotationDeclaration* arg0) {
+  auto& rv = ((QXmlStreamNotationDeclaration*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:254
+// [56] QXmlStreamNotationDeclaration & operator=(class QXmlStreamNotationDeclaration &&)
+extern "C"
+void* C_ZN29QXmlStreamNotationDeclarationaSEOS_(void *this_, QXmlStreamNotationDeclaration && other) {
+  auto& rv = ((QXmlStreamNotationDeclaration*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:264
 // [16] QStringRef name()
@@ -54,5 +70,19 @@ extern "C"
 void* C_ZNK29QXmlStreamNotationDeclaration8publicIdEv(void *this_) {
   auto rv = ((QXmlStreamNotationDeclaration*)this_)->publicId();
 return new QStringRef(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:267
+// [1] bool operator==(const class QXmlStreamNotationDeclaration &)
+extern "C"
+bool C_ZNK29QXmlStreamNotationDeclarationeqERKS_(void *this_, QXmlStreamNotationDeclaration* other) {
+  return (bool)((QXmlStreamNotationDeclaration*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:271
+// [1] bool operator!=(const class QXmlStreamNotationDeclaration &)
+extern "C"
+bool C_ZNK29QXmlStreamNotationDeclarationneERKS_(void *this_, QXmlStreamNotationDeclaration* other) {
+  return (bool)((QXmlStreamNotationDeclaration*)this_)->operator!=(*other);
 }
 //  main block end

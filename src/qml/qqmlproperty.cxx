@@ -86,6 +86,21 @@ void* C_ZN12QQmlPropertyC2EP7QObjectRK7QStringP10QQmlEngine(QObject * arg0, QStr
   return  new QQmlProperty(arg0, *arg1, arg2);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlproperty.h:83
+// [8] QQmlProperty & operator=(const class QQmlProperty &)
+extern "C"
+void* C_ZN12QQmlPropertyaSERKS_(void *this_, QQmlProperty* arg0) {
+  auto& rv = ((QQmlProperty*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlproperty.h:85
+// [1] bool operator==(const class QQmlProperty &)
+extern "C"
+bool C_ZNK12QQmlPropertyeqERKS_(void *this_, QQmlProperty* arg0) {
+  return (bool)((QQmlProperty*)this_)->operator==(*arg0);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:87
 // [4] QQmlProperty::Type type()
 extern "C"

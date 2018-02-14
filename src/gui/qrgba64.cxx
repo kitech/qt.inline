@@ -184,6 +184,14 @@ void* C_ZNK7QRgba6415unpremultipliedEv(void *this_) {
   auto rv = ((QRgba64*)this_)->unpremultiplied();
 return new QRgba64(rv);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrgba64.h:151
+// [8] QRgba64 operator=(quint64)
+extern "C"
+void* C_ZN7QRgba64aSEy(void *this_, quint64 _rgba) {
+  auto rv = ((QRgba64*)this_)->operator=(_rgba);
+return new QRgba64(rv);
+}
 
 extern "C"
 void C_ZN7QRgba64D2Ev(void *this_) {

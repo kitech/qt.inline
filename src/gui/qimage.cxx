@@ -166,6 +166,22 @@ extern "C"
 void C_ZN6QImageD2Ev(void *this_) {
   delete (QImage*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:157
+// [32] QImage & operator=(const class QImage &)
+extern "C"
+void* C_ZN6QImageaSERKS_(void *this_, QImage* arg0) {
+  auto& rv = ((QImage*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:159
+// [32] QImage & operator=(class QImage &&)
+extern "C"
+void* C_ZN6QImageaSEOS_(void *this_, QImage && other) {
+  auto& rv = ((QImage*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:162
 // [-2] void swap(class QImage &)
@@ -186,6 +202,20 @@ bool C_ZNK6QImage6isNullEv(void *this_) {
 extern "C"
 int C_ZNK6QImage7devTypeEv(void *this_) {
   return (int)((QImage*)this_)->devType();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:169
+// [1] bool operator==(const class QImage &)
+extern "C"
+bool C_ZNK6QImageeqERKS_(void *this_, QImage* arg0) {
+  return (bool)((QImage*)this_)->operator==(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:170
+// [1] bool operator!=(const class QImage &)
+extern "C"
+bool C_ZNK6QImageneERKS_(void *this_, QImage* arg0) {
+  return (bool)((QImage*)this_)->operator!=(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:172

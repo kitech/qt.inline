@@ -150,6 +150,22 @@ void* C_ZN14QDeadlineTimer7currentEN2Qt9TimerTypeE(Qt::TimerType timerType) {
 return new QDeadlineTimer(rv);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdeadlinetimer.h:118
+// [16] QDeadlineTimer & operator+=(qint64)
+extern "C"
+void* C_ZN14QDeadlineTimerpLEx(void *this_, qint64 msecs) {
+  auto& rv = ((QDeadlineTimer*)this_)->operator+=(msecs);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdeadlinetimer.h:120
+// [16] QDeadlineTimer & operator-=(qint64)
+extern "C"
+void* C_ZN14QDeadlineTimermIEx(void *this_, qint64 msecs) {
+  auto& rv = ((QDeadlineTimer*)this_)->operator-=(msecs);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:162
 // [8] std::chrono::nanoseconds remainingTimeAsDuration()
 extern "C"

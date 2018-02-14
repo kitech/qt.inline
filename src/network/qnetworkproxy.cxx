@@ -33,6 +33,22 @@ extern "C"
 void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::ProxyType type_, QString* hostName, quint16 port, QString* user, QString* password) {
   return  new QNetworkProxy(type_, *hostName, port, *user, *password);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:165
+// [8] QNetworkProxy & operator=(class QNetworkProxy &&)
+extern "C"
+void* C_ZN13QNetworkProxyaSEOS_(void *this_, QNetworkProxy && other) {
+  auto& rv = ((QNetworkProxy*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:167
+// [8] QNetworkProxy & operator=(const class QNetworkProxy &)
+extern "C"
+void* C_ZN13QNetworkProxyaSERKS_(void *this_, QNetworkProxy* other) {
+  auto& rv = ((QNetworkProxy*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:168
 // [-2] void ~QNetworkProxy()
@@ -46,6 +62,20 @@ void C_ZN13QNetworkProxyD2Ev(void *this_) {
 extern "C"
 void C_ZN13QNetworkProxy4swapERS_(void *this_, QNetworkProxy* other) {
   ((QNetworkProxy*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:172
+// [1] bool operator==(const class QNetworkProxy &)
+extern "C"
+bool C_ZNK13QNetworkProxyeqERKS_(void *this_, QNetworkProxy* other) {
+  return (bool)((QNetworkProxy*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:173
+// [1] bool operator!=(const class QNetworkProxy &)
+extern "C"
+bool C_ZNK13QNetworkProxyneERKS_(void *this_, QNetworkProxy* other) {
+  return (bool)((QNetworkProxy*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:176

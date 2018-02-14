@@ -59,4 +59,18 @@ extern "C"
 void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEPK7QObject(void *this_, const QObject * arg0) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared(arg0);
 }
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:167
+// [-2] void operator delete(void *)
+extern "C"
+void C_ZN15QtSharedPointer20ExternalRefCountDatadlEPv(void * ptr) {
+  QtSharedPointer::ExternalRefCountData::operator delete(ptr);
+}
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:168
+// [-2] void operator delete(void *, void *)
+extern "C"
+void C_ZN15QtSharedPointer20ExternalRefCountDatadlEPvS1_(void * arg0, void * arg1) {
+  QtSharedPointer::ExternalRefCountData::operator delete(arg0, arg1);
+}
 //  main block end

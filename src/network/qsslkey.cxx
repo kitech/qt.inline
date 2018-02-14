@@ -42,6 +42,22 @@ extern "C"
 void* C_ZN7QSslKeyC2EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7KeyTypeERK10QByteArray(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, QByteArray* passPhrase) {
   return  new QSslKey(device, algorithm, format, type_, *passPhrase);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:75
+// [8] QSslKey & operator=(class QSslKey &&)
+extern "C"
+void* C_ZN7QSslKeyaSEOS_(void *this_, QSslKey && other) {
+  auto& rv = ((QSslKey*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:77
+// [8] QSslKey & operator=(const class QSslKey &)
+extern "C"
+void* C_ZN7QSslKeyaSERKS_(void *this_, QSslKey* other) {
+  auto& rv = ((QSslKey*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:78
 // [-2] void ~QSslKey()
@@ -113,5 +129,19 @@ return new QByteArray(rv);
 extern "C"
 Qt::HANDLE C_ZNK7QSslKey6handleEv(void *this_) {
   return (Qt::HANDLE)((QSslKey*)this_)->handle();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:94
+// [1] bool operator==(const class QSslKey &)
+extern "C"
+bool C_ZNK7QSslKeyeqERKS_(void *this_, QSslKey* key) {
+  return (bool)((QSslKey*)this_)->operator==(*key);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:95
+// [1] bool operator!=(const class QSslKey &)
+extern "C"
+bool C_ZNK7QSslKeyneERKS_(void *this_, QSslKey* key) {
+  return (bool)((QSslKey*)this_)->operator!=(*key);
 }
 //  main block end

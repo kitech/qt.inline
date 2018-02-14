@@ -60,12 +60,36 @@ extern "C"
 void* C_ZN7QBitmapC2ERK7QStringPKc(QString* fileName, const char * format) {
   return  new QBitmap(*fileName, format);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:63
+// [32] QBitmap & operator=(const class QBitmap &)
+extern "C"
+void* C_ZN7QBitmapaSERKS_(void *this_, QBitmap* other) {
+  auto& rv = ((QBitmap*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:64
+// [32] QBitmap & operator=(class QBitmap &&)
+extern "C"
+void* C_ZN7QBitmapaSEOS_(void *this_, QBitmap && other) {
+  auto& rv = ((QBitmap*)this_)->operator=(other);
+return &rv;
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:65
 // [-2] void ~QBitmap()
 extern "C"
 void C_ZN7QBitmapD2Ev(void *this_) {
   delete (QBitmap*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:68
+// [32] QBitmap & operator=(const class QPixmap &)
+extern "C"
+void* C_ZN7QBitmapaSERK7QPixmap(void *this_, QPixmap* arg0) {
+  auto& rv = ((QBitmap*)this_)->operator=(*arg0);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:69

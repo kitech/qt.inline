@@ -31,6 +31,14 @@ extern "C"
 void C_ZN14QTextTableCellD2Ev(void *this_) {
   delete (QTextTableCell*)(this_);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtexttable.h:60
+// [16] QTextTableCell & operator=(const class QTextTableCell &)
+extern "C"
+void* C_ZN14QTextTableCellaSERKS_(void *this_, QTextTableCell* o) {
+  auto& rv = ((QTextTableCell*)this_)->operator=(*o);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:63
 // [-2] void setFormat(const class QTextCharFormat &)
@@ -110,6 +118,20 @@ int C_ZNK14QTextTableCell13firstPositionEv(void *this_) {
 extern "C"
 int C_ZNK14QTextTableCell12lastPositionEv(void *this_) {
   return (int)((QTextTableCell*)this_)->lastPosition();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtexttable.h:79
+// [1] bool operator==(const class QTextTableCell &)
+extern "C"
+bool C_ZNK14QTextTableCelleqERKS_(void *this_, QTextTableCell* other) {
+  return (bool)((QTextTableCell*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtexttable.h:81
+// [1] bool operator!=(const class QTextTableCell &)
+extern "C"
+bool C_ZNK14QTextTableCellneERKS_(void *this_, QTextTableCell* other) {
+  return (bool)((QTextTableCell*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:84

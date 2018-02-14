@@ -45,6 +45,14 @@ extern "C"
 void C_ZN8QJSValueD2Ev(void *this_) {
   delete (QJSValue*)(this_);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:78
+// [8] QJSValue & operator=(class QJSValue &&)
+extern "C"
+void* C_ZN8QJSValueaSEOS_(void *this_, QJSValue && other) {
+  auto& rv = ((QJSValue*)this_)->operator=(other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:82
 // [-2] void QJSValue(_Bool)
@@ -93,6 +101,14 @@ void* C_ZN8QJSValueC2ERK13QLatin1String(QLatin1String* value) {
 extern "C"
 void* C_ZN8QJSValueC2EPKc(const char * str) {
   return  new QJSValue(str);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:92
+// [8] QJSValue & operator=(const class QJSValue &)
+extern "C"
+void* C_ZN8QJSValueaSERKS_(void *this_, QJSValue* other) {
+  auto& rv = ((QJSValue*)this_)->operator=(*other);
+return &rv;
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:94

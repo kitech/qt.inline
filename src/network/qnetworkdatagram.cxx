@@ -33,12 +33,28 @@ extern "C"
 void* C_ZN16QNetworkDatagramC2ERK10QByteArrayRK12QHostAddresst(QByteArray* data, QHostAddress* destinationAddress, quint16 port) {
   return  new QNetworkDatagram(*data, *destinationAddress, port);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:60
+// [8] QNetworkDatagram & operator=(const class QNetworkDatagram &)
+extern "C"
+void* C_ZN16QNetworkDatagramaSERKS_(void *this_, QNetworkDatagram* other) {
+  auto& rv = ((QNetworkDatagram*)this_)->operator=(*other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:61
 // [-2] void ~QNetworkDatagram()
 extern "C"
 void C_ZN16QNetworkDatagramD2Ev(void *this_) {
   delete (QNetworkDatagram*)(this_);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:67
+// [8] QNetworkDatagram & operator=(class QNetworkDatagram &&)
+extern "C"
+void* C_ZN16QNetworkDatagramaSEOS_(void *this_, QNetworkDatagram && other) {
+  auto& rv = ((QNetworkDatagram*)this_)->operator=(other);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:70

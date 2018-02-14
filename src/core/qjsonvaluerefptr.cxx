@@ -33,6 +33,21 @@ extern "C"
 void* C_ZN16QJsonValueRefPtrC2EP11QJsonObjecti(QJsonObject * object, int idx) {
   return  new QJsonValueRefPtr(object, idx);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:242
+// [16] QJsonValueRef & operator*()
+extern "C"
+void* C_ZN16QJsonValueRefPtrdeEv(void *this_) {
+  auto& rv = ((QJsonValueRefPtr*)this_)->operator*();
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:243
+// [8] QJsonValueRef * operator->()
+extern "C"
+void* C_ZN16QJsonValueRefPtrptEv(void *this_) {
+  return (void*)((QJsonValueRefPtr*)this_)->operator->();
+}
 
 extern "C"
 void C_ZN16QJsonValueRefPtrD2Ev(void *this_) {

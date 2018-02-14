@@ -10,15 +10,6 @@
 
 //  main block begin
 
-class MyQLoggingCategory : public QLoggingCategory {
-public:
-  virtual ~MyQLoggingCategory() {}
-// void QLoggingCategory(const char *)
-MyQLoggingCategory(const char * category) : QLoggingCategory(category) {}
-// void QLoggingCategory(const char *, enum QtMsgType)
-MyQLoggingCategory(const char * category, QtMsgType severityLevel) : QLoggingCategory(category, severityLevel) {}
-};
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:53
 // [-2] void QLoggingCategory(const char *)

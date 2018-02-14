@@ -43,6 +43,22 @@ void* C_ZN10QStringRefC2EPK7QString(const QString * string) {
   return  new QStringRef(string);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1431
+// [16] QStringRef & operator=(class QStringRef &&)
+extern "C"
+void* C_ZN10QStringRefaSEOS_(void *this_, QStringRef && other) {
+  auto& rv = ((QStringRef*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1433
+// [16] QStringRef & operator=(const class QStringRef &)
+extern "C"
+void* C_ZN10QStringRefaSERKS_(void *this_, QStringRef* other) {
+  auto& rv = ((QStringRef*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1438
 // [-2] void ~QStringRef()
 extern "C"
@@ -313,6 +329,14 @@ bool C_ZNK10QStringRef8endsWithERKS_N2Qt15CaseSensitivityE(void *this_, QStringR
   return (bool)((QStringRef*)this_)->endsWith(*c, cs);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1505
+// [16] QStringRef & operator=(const class QString *)
+extern "C"
+void* C_ZN10QStringRefaSEPK7QString(void *this_, const QString * string) {
+  auto& rv = ((QStringRef*)this_)->operator=(string);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1507
 // [8] const QChar * unicode()
 extern "C"
@@ -451,6 +475,14 @@ void* C_ZNK10QStringRef2atEi(void *this_, int i) {
 return new QChar(rv);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1545
+// [2] QChar operator[](int)
+extern "C"
+void* C_ZNK10QStringRefixEi(void *this_, int i) {
+  auto rv = ((QStringRef*)this_)->operator[](i);
+return new QChar(rv);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1546
 // [2] QChar front()
 extern "C"
@@ -465,6 +497,48 @@ extern "C"
 void* C_ZNK10QStringRef4backEv(void *this_) {
   auto rv = ((QStringRef*)this_)->back();
 return new QChar(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1551
+// [1] bool operator==(const char *)
+extern "C"
+bool C_ZNK10QStringRefeqEPKc(void *this_, const char * s) {
+  return (bool)((QStringRef*)this_)->operator==(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1552
+// [1] bool operator!=(const char *)
+extern "C"
+bool C_ZNK10QStringRefneEPKc(void *this_, const char * s) {
+  return (bool)((QStringRef*)this_)->operator!=(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1553
+// [1] bool operator<(const char *)
+extern "C"
+bool C_ZNK10QStringRefltEPKc(void *this_, const char * s) {
+  return (bool)((QStringRef*)this_)->operator<(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1554
+// [1] bool operator<=(const char *)
+extern "C"
+bool C_ZNK10QStringRefleEPKc(void *this_, const char * s) {
+  return (bool)((QStringRef*)this_)->operator<=(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1555
+// [1] bool operator>(const char *)
+extern "C"
+bool C_ZNK10QStringRefgtEPKc(void *this_, const char * s) {
+  return (bool)((QStringRef*)this_)->operator>(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1556
+// [1] bool operator>=(const char *)
+extern "C"
+bool C_ZNK10QStringRefgeEPKc(void *this_, const char * s) {
+  return (bool)((QStringRef*)this_)->operator>=(s);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1559

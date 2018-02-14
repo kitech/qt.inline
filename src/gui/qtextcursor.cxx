@@ -51,6 +51,22 @@ extern "C"
 void* C_ZN11QTextCursorC2ERK10QTextBlock(QTextBlock* block) {
   return  new QTextCursor(*block);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:77
+// [8] QTextCursor & operator=(class QTextCursor &&)
+extern "C"
+void* C_ZN11QTextCursoraSEOS_(void *this_, QTextCursor && other) {
+  auto& rv = ((QTextCursor*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:79
+// [8] QTextCursor & operator=(const class QTextCursor &)
+extern "C"
+void* C_ZN11QTextCursoraSERKS_(void *this_, QTextCursor* other) {
+  auto& rv = ((QTextCursor*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:80
 // [-2] void ~QTextCursor()
@@ -504,6 +520,48 @@ void C_ZN11QTextCursor21joinPreviousEditBlockEv(void *this_) {
 extern "C"
 void C_ZN11QTextCursor12endEditBlockEv(void *this_) {
   ((QTextCursor*)this_)->endEditBlock();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:216
+// [1] bool operator!=(const class QTextCursor &)
+extern "C"
+bool C_ZNK11QTextCursorneERKS_(void *this_, QTextCursor* rhs) {
+  return (bool)((QTextCursor*)this_)->operator!=(*rhs);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:217
+// [1] bool operator<(const class QTextCursor &)
+extern "C"
+bool C_ZNK11QTextCursorltERKS_(void *this_, QTextCursor* rhs) {
+  return (bool)((QTextCursor*)this_)->operator<(*rhs);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:218
+// [1] bool operator<=(const class QTextCursor &)
+extern "C"
+bool C_ZNK11QTextCursorleERKS_(void *this_, QTextCursor* rhs) {
+  return (bool)((QTextCursor*)this_)->operator<=(*rhs);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:219
+// [1] bool operator==(const class QTextCursor &)
+extern "C"
+bool C_ZNK11QTextCursoreqERKS_(void *this_, QTextCursor* rhs) {
+  return (bool)((QTextCursor*)this_)->operator==(*rhs);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:220
+// [1] bool operator>=(const class QTextCursor &)
+extern "C"
+bool C_ZNK11QTextCursorgeERKS_(void *this_, QTextCursor* rhs) {
+  return (bool)((QTextCursor*)this_)->operator>=(*rhs);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:221
+// [1] bool operator>(const class QTextCursor &)
+extern "C"
+bool C_ZNK11QTextCursorgtERKS_(void *this_, QTextCursor* rhs) {
+  return (bool)((QTextCursor*)this_)->operator>(*rhs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:223

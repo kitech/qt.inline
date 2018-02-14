@@ -73,6 +73,38 @@ extern "C"
 void C_ZN7QStringD2Ev(void *this_) {
   delete (QString*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:224
+// [8] QString & operator=(class QChar)
+extern "C"
+void* C_ZN7QStringaSE5QChar(void *this_, QChar* c) {
+  auto& rv = ((QString*)this_)->operator=(*c);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:225
+// [8] QString & operator=(const class QString &)
+extern "C"
+void* C_ZN7QStringaSERKS_(void *this_, QString* arg0) {
+  auto& rv = ((QString*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:226
+// [8] QString & operator=(class QLatin1String)
+extern "C"
+void* C_ZN7QStringaSE13QLatin1String(void *this_, QLatin1String* latin1) {
+  auto& rv = ((QString*)this_)->operator=(*latin1);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:229
+// [8] QString & operator=(class QString &&)
+extern "C"
+void* C_ZN7QStringaSEOS_(void *this_, QString && other) {
+  auto& rv = ((QString*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:232
 // [-2] void swap(class QString &)
@@ -228,6 +260,38 @@ extern "C"
 void* C_ZNK7QString2atEi(void *this_, int i) {
   auto rv = ((QString*)this_)->at(i);
 return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:259
+// [2] const QChar operator[](int)
+extern "C"
+void* C_ZNK7QStringixEi(void *this_, int i) {
+  auto rv = ((QString*)this_)->operator[](i);
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:260
+// [16] QCharRef operator[](int)
+extern "C"
+void C_ZN7QStringixEi(void *this_, int i) {
+  auto rv = ((QString*)this_)->operator[](i);
+/*return rv;*/
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:261
+// [2] const QChar operator[](uint)
+extern "C"
+void* C_ZNK7QStringixEj(void *this_, uint i) {
+  auto rv = ((QString*)this_)->operator[](i);
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:262
+// [16] QCharRef operator[](uint)
+extern "C"
+void C_ZN7QStringixEj(void *this_, uint i) {
+  auto rv = ((QString*)this_)->operator[](i);
+/*return rv;*/
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:264
@@ -902,6 +966,46 @@ void* C_ZNK7QString13toHtmlEscapedEv(void *this_) {
   auto rv = ((QString*)this_)->toHtmlEscaped();
 return new QString(rv);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:465
+// [8] QString & operator+=(class QChar)
+extern "C"
+void* C_ZN7QStringpLE5QChar(void *this_, QChar* c) {
+  auto& rv = ((QString*)this_)->operator+=(*c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:473
+// [8] QString & operator+=(class QChar::SpecialCharacter)
+extern "C"
+void* C_ZN7QStringpLEN5QChar16SpecialCharacterE(void *this_, QChar::SpecialCharacter c) {
+  auto& rv = ((QString*)this_)->operator+=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:474
+// [8] QString & operator+=(const class QString &)
+extern "C"
+void* C_ZN7QStringpLERKS_(void *this_, QString* s) {
+  auto& rv = ((QString*)this_)->operator+=(*s);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:475
+// [8] QString & operator+=(const class QStringRef &)
+extern "C"
+void* C_ZN7QStringpLERK10QStringRef(void *this_, QStringRef* s) {
+  auto& rv = ((QString*)this_)->operator+=(*s);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:476
+// [8] QString & operator+=(class QLatin1String)
+extern "C"
+void* C_ZN7QStringpLE13QLatin1String(void *this_, QLatin1String* s) {
+  auto& rv = ((QString*)this_)->operator+=(*s);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:478
 // [8] QString & remove(int, int)
@@ -1559,6 +1663,48 @@ void* C_ZN7QString6numberEdci(double arg0, char f, int prec) {
   auto rv = QString::number(arg0, f, prec);
 return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:664
+// [1] bool operator==(class QLatin1String)
+extern "C"
+bool C_ZNK7QStringeqE13QLatin1String(void *this_, QLatin1String* s) {
+  return (bool)((QString*)this_)->operator==(*s);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:665
+// [1] bool operator<(class QLatin1String)
+extern "C"
+bool C_ZNK7QStringltE13QLatin1String(void *this_, QLatin1String* s) {
+  return (bool)((QString*)this_)->operator<(*s);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:666
+// [1] bool operator>(class QLatin1String)
+extern "C"
+bool C_ZNK7QStringgtE13QLatin1String(void *this_, QLatin1String* s) {
+  return (bool)((QString*)this_)->operator>(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:667
+// [1] bool operator!=(class QLatin1String)
+extern "C"
+bool C_ZNK7QStringneE13QLatin1String(void *this_, QLatin1String* s) {
+  return (bool)((QString*)this_)->operator!=(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:668
+// [1] bool operator<=(class QLatin1String)
+extern "C"
+bool C_ZNK7QStringleE13QLatin1String(void *this_, QLatin1String* s) {
+  return (bool)((QString*)this_)->operator<=(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:669
+// [1] bool operator>=(class QLatin1String)
+extern "C"
+bool C_ZNK7QStringgeE13QLatin1String(void *this_, QLatin1String* s) {
+  return (bool)((QString*)this_)->operator>=(*s);
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:682
 // [-2] void QString(const char *)
@@ -1572,6 +1718,138 @@ void* C_ZN7QStringC2EPKc(const char * ch) {
 extern "C"
 void* C_ZN7QStringC2ERK10QByteArray(QByteArray* a) {
   return  new QString(*a);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:688
+// [8] QString & operator=(const char *)
+extern "C"
+void* C_ZN7QStringaSEPKc(void *this_, const char * ch) {
+  auto& rv = ((QString*)this_)->operator=(ch);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:690
+// [8] QString & operator=(const class QByteArray &)
+extern "C"
+void* C_ZN7QStringaSERK10QByteArray(void *this_, QByteArray* a) {
+  auto& rv = ((QString*)this_)->operator=(*a);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:692
+// [8] QString & operator=(char)
+extern "C"
+void* C_ZN7QStringaSEc(void *this_, char c) {
+  auto& rv = ((QString*)this_)->operator=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:708
+// [8] QString & operator+=(const char *)
+extern "C"
+void* C_ZN7QStringpLEPKc(void *this_, const char * s) {
+  auto& rv = ((QString*)this_)->operator+=(s);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:710
+// [8] QString & operator+=(const class QByteArray &)
+extern "C"
+void* C_ZN7QStringpLERK10QByteArray(void *this_, QByteArray* s) {
+  auto& rv = ((QString*)this_)->operator+=(*s);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:712
+// [8] QString & operator+=(char)
+extern "C"
+void* C_ZN7QStringpLEc(void *this_, char c) {
+  auto& rv = ((QString*)this_)->operator+=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:715
+// [1] bool operator==(const char *)
+extern "C"
+bool C_ZNK7QStringeqEPKc(void *this_, const char * s) {
+  return (bool)((QString*)this_)->operator==(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:716
+// [1] bool operator!=(const char *)
+extern "C"
+bool C_ZNK7QStringneEPKc(void *this_, const char * s) {
+  return (bool)((QString*)this_)->operator!=(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:717
+// [1] bool operator<(const char *)
+extern "C"
+bool C_ZNK7QStringltEPKc(void *this_, const char * s) {
+  return (bool)((QString*)this_)->operator<(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:718
+// [1] bool operator<=(const char *)
+extern "C"
+bool C_ZNK7QStringleEPKc(void *this_, const char * s) {
+  return (bool)((QString*)this_)->operator<=(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:719
+// [1] bool operator>(const char *)
+extern "C"
+bool C_ZNK7QStringgtEPKc(void *this_, const char * s) {
+  return (bool)((QString*)this_)->operator>(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:720
+// [1] bool operator>=(const char *)
+extern "C"
+bool C_ZNK7QStringgeEPKc(void *this_, const char * s) {
+  return (bool)((QString*)this_)->operator>=(s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:722
+// [1] bool operator==(const class QByteArray &)
+extern "C"
+bool C_ZNK7QStringeqERK10QByteArray(void *this_, QByteArray* s) {
+  return (bool)((QString*)this_)->operator==(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:723
+// [1] bool operator!=(const class QByteArray &)
+extern "C"
+bool C_ZNK7QStringneERK10QByteArray(void *this_, QByteArray* s) {
+  return (bool)((QString*)this_)->operator!=(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:724
+// [1] bool operator<(const class QByteArray &)
+extern "C"
+bool C_ZNK7QStringltERK10QByteArray(void *this_, QByteArray* s) {
+  return (bool)((QString*)this_)->operator<(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:725
+// [1] bool operator>(const class QByteArray &)
+extern "C"
+bool C_ZNK7QStringgtERK10QByteArray(void *this_, QByteArray* s) {
+  return (bool)((QString*)this_)->operator>(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:726
+// [1] bool operator<=(const class QByteArray &)
+extern "C"
+bool C_ZNK7QStringleERK10QByteArray(void *this_, QByteArray* s) {
+  return (bool)((QString*)this_)->operator<=(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:727
+// [1] bool operator>=(const class QByteArray &)
+extern "C"
+bool C_ZNK7QStringgeERK10QByteArray(void *this_, QByteArray* s) {
+  return (bool)((QString*)this_)->operator>=(*s);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:750

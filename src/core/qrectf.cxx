@@ -443,6 +443,38 @@ void C_ZN6QRectF7setSizeERK6QSizeF(void *this_, QSizeF* s) {
   ((QRectF*)this_)->setSize(*s);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:587
+// [32] QRectF operator|(const class QRectF &)
+extern "C"
+void* C_ZNK6QRectForERKS_(void *this_, QRectF* r) {
+  auto rv = ((QRectF*)this_)->operator|(*r);
+return new QRectF(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:588
+// [32] QRectF operator&(const class QRectF &)
+extern "C"
+void* C_ZNK6QRectFanERKS_(void *this_, QRectF* r) {
+  auto rv = ((QRectF*)this_)->operator&(*r);
+return new QRectF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:589
+// [32] QRectF & operator|=(const class QRectF &)
+extern "C"
+void* C_ZN6QRectFoRERKS_(void *this_, QRectF* r) {
+  auto& rv = ((QRectF*)this_)->operator|=(*r);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:590
+// [32] QRectF & operator&=(const class QRectF &)
+extern "C"
+void* C_ZN6QRectFaNERKS_(void *this_, QRectF* r) {
+  auto& rv = ((QRectF*)this_)->operator&=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:592
 // [1] bool contains(const class QRectF &)
 extern "C"
@@ -501,6 +533,22 @@ extern "C"
 void* C_ZNK6QRectF14marginsRemovedERK9QMarginsF(void *this_, QMarginsF* margins) {
   auto rv = ((QRectF*)this_)->marginsRemoved(*margins);
 return new QRectF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:601
+// [32] QRectF & operator+=(const class QMarginsF &)
+extern "C"
+void* C_ZN6QRectFpLERK9QMarginsF(void *this_, QMarginsF* margins) {
+  auto& rv = ((QRectF*)this_)->operator+=(*margins);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:602
+// [32] QRectF & operator-=(const class QMarginsF &)
+extern "C"
+void* C_ZN6QRectFmIERK9QMarginsF(void *this_, QMarginsF* margins) {
+  auto& rv = ((QRectF*)this_)->operator-=(*margins);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:612

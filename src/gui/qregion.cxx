@@ -67,6 +67,22 @@ extern "C"
 void C_ZN7QRegionD2Ev(void *this_) {
   delete (QRegion*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:76
+// [8] QRegion & operator=(const class QRegion &)
+extern "C"
+void* C_ZN7QRegionaSERKS_(void *this_, QRegion* arg0) {
+  auto& rv = ((QRegion*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:78
+// [8] QRegion & operator=(class QRegion &&)
+extern "C"
+void* C_ZN7QRegionaSEOS_(void *this_, QRegion && other) {
+  auto& rv = ((QRegion*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:81
 // [-2] void swap(class QRegion &)
@@ -247,5 +263,131 @@ void C_ZN7QRegion8setRectsEPK5QRecti(void *this_, const QRect * rect, int num) {
 extern "C"
 int C_ZNK7QRegion9rectCountEv(void *this_) {
   return (int)((QRegion*)this_)->rectCount();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:138
+// [8] QRegion operator|(const class QRegion &)
+extern "C"
+void* C_ZNK7QRegionorERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->operator|(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:139
+// [8] QRegion operator+(const class QRegion &)
+extern "C"
+void* C_ZNK7QRegionplERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->operator+(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:140
+// [8] QRegion operator+(const class QRect &)
+extern "C"
+void* C_ZNK7QRegionplERK5QRect(void *this_, QRect* r) {
+  auto rv = ((QRegion*)this_)->operator+(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:141
+// [8] QRegion operator&(const class QRegion &)
+extern "C"
+void* C_ZNK7QRegionanERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->operator&(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:142
+// [8] QRegion operator&(const class QRect &)
+extern "C"
+void* C_ZNK7QRegionanERK5QRect(void *this_, QRect* r) {
+  auto rv = ((QRegion*)this_)->operator&(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:143
+// [8] QRegion operator-(const class QRegion &)
+extern "C"
+void* C_ZNK7QRegionmiERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->operator-(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:144
+// [8] QRegion operator^(const class QRegion &)
+extern "C"
+void* C_ZNK7QRegioneoERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->operator^(*r);
+return new QRegion(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:146
+// [8] QRegion & operator|=(const class QRegion &)
+extern "C"
+void* C_ZN7QRegionoRERKS_(void *this_, QRegion* r) {
+  auto& rv = ((QRegion*)this_)->operator|=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:147
+// [8] QRegion & operator+=(const class QRegion &)
+extern "C"
+void* C_ZN7QRegionpLERKS_(void *this_, QRegion* r) {
+  auto& rv = ((QRegion*)this_)->operator+=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:148
+// [8] QRegion & operator+=(const class QRect &)
+extern "C"
+void* C_ZN7QRegionpLERK5QRect(void *this_, QRect* r) {
+  auto& rv = ((QRegion*)this_)->operator+=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:149
+// [8] QRegion & operator&=(const class QRegion &)
+extern "C"
+void* C_ZN7QRegionaNERKS_(void *this_, QRegion* r) {
+  auto& rv = ((QRegion*)this_)->operator&=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:150
+// [8] QRegion & operator&=(const class QRect &)
+extern "C"
+void* C_ZN7QRegionaNERK5QRect(void *this_, QRect* r) {
+  auto& rv = ((QRegion*)this_)->operator&=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:151
+// [8] QRegion & operator-=(const class QRegion &)
+extern "C"
+void* C_ZN7QRegionmIERKS_(void *this_, QRegion* r) {
+  auto& rv = ((QRegion*)this_)->operator-=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:152
+// [8] QRegion & operator^=(const class QRegion &)
+extern "C"
+void* C_ZN7QRegioneOERKS_(void *this_, QRegion* r) {
+  auto& rv = ((QRegion*)this_)->operator^=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:154
+// [1] bool operator==(const class QRegion &)
+extern "C"
+bool C_ZNK7QRegioneqERKS_(void *this_, QRegion* r) {
+  return (bool)((QRegion*)this_)->operator==(*r);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:155
+// [1] bool operator!=(const class QRegion &)
+extern "C"
+bool C_ZNK7QRegionneERKS_(void *this_, QRegion* r) {
+  return (bool)((QRegion*)this_)->operator!=(*r);
 }
 //  main block end

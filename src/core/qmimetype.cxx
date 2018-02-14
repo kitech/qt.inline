@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN9QMimeTypeC2Ev() {
   return  new QMimeType();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:80
+// [8] QMimeType & operator=(const class QMimeType &)
+extern "C"
+void* C_ZN9QMimeTypeaSERKS_(void *this_, QMimeType* other) {
+  auto& rv = ((QMimeType*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:82
+// [8] QMimeType & operator=(class QMimeType &&)
+extern "C"
+void* C_ZN9QMimeTypeaSEOS_(void *this_, QMimeType && other) {
+  auto& rv = ((QMimeType*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:84
 // [-2] void swap(class QMimeType &)
@@ -37,6 +53,20 @@ void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
 extern "C"
 void C_ZN9QMimeTypeD2Ev(void *this_) {
   delete (QMimeType*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:91
+// [1] bool operator==(const class QMimeType &)
+extern "C"
+bool C_ZNK9QMimeTypeeqERKS_(void *this_, QMimeType* other) {
+  return (bool)((QMimeType*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:93
+// [1] bool operator!=(const class QMimeType &)
+extern "C"
+bool C_ZNK9QMimeTypeneERKS_(void *this_, QMimeType* other) {
+  return (bool)((QMimeType*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:98

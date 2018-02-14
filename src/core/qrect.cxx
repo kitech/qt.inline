@@ -434,6 +434,38 @@ void C_ZN5QRect7setSizeERK5QSize(void *this_, QSize* s) {
   ((QRect*)this_)->setSize(*s);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:130
+// [16] QRect operator|(const class QRect &)
+extern "C"
+void* C_ZNK5QRectorERKS_(void *this_, QRect* r) {
+  auto rv = ((QRect*)this_)->operator|(*r);
+return new QRect(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:131
+// [16] QRect operator&(const class QRect &)
+extern "C"
+void* C_ZNK5QRectanERKS_(void *this_, QRect* r) {
+  auto rv = ((QRect*)this_)->operator&(*r);
+return new QRect(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:132
+// [16] QRect & operator|=(const class QRect &)
+extern "C"
+void* C_ZN5QRectoRERKS_(void *this_, QRect* r) {
+  auto& rv = ((QRect*)this_)->operator|=(*r);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:133
+// [16] QRect & operator&=(const class QRect &)
+extern "C"
+void* C_ZN5QRectaNERKS_(void *this_, QRect* r) {
+  auto& rv = ((QRect*)this_)->operator&=(*r);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:135
 // [1] bool contains(const class QRect &, _Bool)
 extern "C"
@@ -499,6 +531,22 @@ extern "C"
 void* C_ZNK5QRect14marginsRemovedERK8QMargins(void *this_, QMargins* margins) {
   auto rv = ((QRect*)this_)->marginsRemoved(*margins);
 return new QRect(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:145
+// [16] QRect & operator+=(const class QMargins &)
+extern "C"
+void* C_ZN5QRectpLERK8QMargins(void *this_, QMargins* margins) {
+  auto& rv = ((QRect*)this_)->operator+=(*margins);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:146
+// [16] QRect & operator-=(const class QMargins &)
+extern "C"
+void* C_ZN5QRectmIERK8QMargins(void *this_, QMargins* margins) {
+  auto& rv = ((QRect*)this_)->operator-=(*margins);
+return &rv;
 }
 
 extern "C"

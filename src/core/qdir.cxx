@@ -40,6 +40,30 @@ extern "C"
 void C_ZN4QDirD2Ev(void *this_) {
   delete (QDir*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:107
+// [8] QDir & operator=(const class QDir &)
+extern "C"
+void* C_ZN4QDiraSERKS_(void *this_, QDir* arg0) {
+  auto& rv = ((QDir*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:108
+// [8] QDir & operator=(const class QString &)
+extern "C"
+void* C_ZN4QDiraSERK7QString(void *this_, QString* path) {
+  auto& rv = ((QDir*)this_)->operator=(*path);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:110
+// [8] QDir & operator=(class QDir &&)
+extern "C"
+void* C_ZN4QDiraSEOS_(void *this_, QDir && other) {
+  auto& rv = ((QDir*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:113
 // [-2] void swap(class QDir &)
@@ -228,6 +252,14 @@ extern "C"
 bool C_ZNK4QDir7isEmptyE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
   return (bool)((QDir*)this_)->isEmpty(filters);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:149
+// [8] QString operator[](int)
+extern "C"
+void* C_ZNK4QDirixEi(void *this_, int arg0) {
+  auto rv = ((QDir*)this_)->operator[](arg0);
+return new QString(rv);
+}
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:151
 // [8] QStringList nameFiltersFromString(const class QString &)
@@ -358,6 +390,20 @@ bool C_ZNK4QDir10isAbsoluteEv(void *this_) {
 extern "C"
 bool C_ZN4QDir12makeAbsoluteEv(void *this_) {
   return (bool)((QDir*)this_)->makeAbsolute();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:178
+// [1] bool operator==(const class QDir &)
+extern "C"
+bool C_ZNK4QDireqERKS_(void *this_, QDir* dir) {
+  return (bool)((QDir*)this_)->operator==(*dir);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:179
+// [1] bool operator!=(const class QDir &)
+extern "C"
+bool C_ZNK4QDirneERKS_(void *this_, QDir* dir) {
+  return (bool)((QDir*)this_)->operator!=(*dir);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:181

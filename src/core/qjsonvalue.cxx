@@ -112,6 +112,22 @@ extern "C"
 void C_ZN10QJsonValueD2Ev(void *this_) {
   delete (QJsonValue*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:93
+// [24] QJsonValue & operator=(const class QJsonValue &)
+extern "C"
+void* C_ZN10QJsonValueaSERKS_(void *this_, QJsonValue* other) {
+  auto& rv = ((QJsonValue*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:105
+// [24] QJsonValue & operator=(class QJsonValue &&)
+extern "C"
+void* C_ZN10QJsonValueaSEOS_(void *this_, QJsonValue && other) {
+  auto& rv = ((QJsonValue*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:111
 // [-2] void swap(class QJsonValue &)
@@ -259,5 +275,43 @@ extern "C"
 void* C_ZNK10QJsonValue8toObjectERK11QJsonObject(void *this_, QJsonObject* defaultValue) {
   auto rv = ((QJsonValue*)this_)->toObject(*defaultValue);
 return new QJsonObject(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:140
+// [24] const QJsonValue operator[](const class QString &)
+extern "C"
+void* C_ZNK10QJsonValueixERK7QString(void *this_, QString* key) {
+  auto rv = ((QJsonValue*)this_)->operator[](*key);
+return new QJsonValue(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:141
+// [24] const QJsonValue operator[](class QLatin1String)
+extern "C"
+void* C_ZNK10QJsonValueixE13QLatin1String(void *this_, QLatin1String* key) {
+  auto rv = ((QJsonValue*)this_)->operator[](*key);
+return new QJsonValue(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:142
+// [24] const QJsonValue operator[](int)
+extern "C"
+void* C_ZNK10QJsonValueixEi(void *this_, int i) {
+  auto rv = ((QJsonValue*)this_)->operator[](i);
+return new QJsonValue(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:144
+// [1] bool operator==(const class QJsonValue &)
+extern "C"
+bool C_ZNK10QJsonValueeqERKS_(void *this_, QJsonValue* other) {
+  return (bool)((QJsonValue*)this_)->operator==(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:145
+// [1] bool operator!=(const class QJsonValue &)
+extern "C"
+bool C_ZNK10QJsonValueneERKS_(void *this_, QJsonValue* other) {
+  return (bool)((QJsonValue*)this_)->operator!=(*other);
 }
 //  main block end

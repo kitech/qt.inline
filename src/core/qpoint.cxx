@@ -91,6 +91,54 @@ void* C_ZN6QPoint2ryEv(void *this_) {
   auto& rv = ((QPoint*)this_)->ry();
 return &rv;
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:70
+// [8] QPoint & operator+=(const class QPoint &)
+extern "C"
+void* C_ZN6QPointpLERKS_(void *this_, QPoint* p) {
+  auto& rv = ((QPoint*)this_)->operator+=(*p);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:71
+// [8] QPoint & operator-=(const class QPoint &)
+extern "C"
+void* C_ZN6QPointmIERKS_(void *this_, QPoint* p) {
+  auto& rv = ((QPoint*)this_)->operator-=(*p);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:73
+// [8] QPoint & operator*=(float)
+extern "C"
+void* C_ZN6QPointmLEf(void *this_, float factor) {
+  auto& rv = ((QPoint*)this_)->operator*=(factor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:74
+// [8] QPoint & operator*=(double)
+extern "C"
+void* C_ZN6QPointmLEd(void *this_, double factor) {
+  auto& rv = ((QPoint*)this_)->operator*=(factor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:75
+// [8] QPoint & operator*=(int)
+extern "C"
+void* C_ZN6QPointmLEi(void *this_, int factor) {
+  auto& rv = ((QPoint*)this_)->operator*=(factor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:77
+// [8] QPoint & operator/=(qreal)
+extern "C"
+void* C_ZN6QPointdVEd(void *this_, qreal divisor) {
+  auto& rv = ((QPoint*)this_)->operator/=(divisor);
+return &rv;
+}
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:79
 // [4] int dotProduct(const class QPoint &, const class QPoint &)

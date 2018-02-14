@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN21QNetworkConfigurationC2Ev() {
   return  new QNetworkConfiguration();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:59
+// [8] QNetworkConfiguration & operator=(class QNetworkConfiguration &&)
+extern "C"
+void* C_ZN21QNetworkConfigurationaSEOS_(void *this_, QNetworkConfiguration && other) {
+  auto& rv = ((QNetworkConfiguration*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:61
+// [8] QNetworkConfiguration & operator=(const class QNetworkConfiguration &)
+extern "C"
+void* C_ZN21QNetworkConfigurationaSERKS_(void *this_, QNetworkConfiguration* other) {
+  auto& rv = ((QNetworkConfiguration*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:62
 // [-2] void ~QNetworkConfiguration()
@@ -37,6 +53,20 @@ void C_ZN21QNetworkConfigurationD2Ev(void *this_) {
 extern "C"
 void C_ZN21QNetworkConfiguration4swapERS_(void *this_, QNetworkConfiguration* other) {
   ((QNetworkConfiguration*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:66
+// [1] bool operator==(const class QNetworkConfiguration &)
+extern "C"
+bool C_ZNK21QNetworkConfigurationeqERKS_(void *this_, QNetworkConfiguration* other) {
+  return (bool)((QNetworkConfiguration*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:67
+// [1] bool operator!=(const class QNetworkConfiguration &)
+extern "C"
+bool C_ZNK21QNetworkConfigurationneERKS_(void *this_, QNetworkConfiguration* other) {
+  return (bool)((QNetworkConfiguration*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:108

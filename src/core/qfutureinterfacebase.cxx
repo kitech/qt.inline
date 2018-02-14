@@ -326,4 +326,26 @@ void* C_ZNK20QFutureInterfaceBase15resultStoreBaseEv(void *this_) {
   auto& rv = ((QFutureInterfaceBase*)this_)->resultStoreBase();
 return new QtPrivate::ResultStoreBase(rv);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:126
+// [1] bool operator==(const class QFutureInterfaceBase &)
+extern "C"
+bool C_ZNK20QFutureInterfaceBaseeqERKS_(void *this_, QFutureInterfaceBase* other) {
+  return (bool)((QFutureInterfaceBase*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:127
+// [1] bool operator!=(const class QFutureInterfaceBase &)
+extern "C"
+bool C_ZNK20QFutureInterfaceBaseneERKS_(void *this_, QFutureInterfaceBase* other) {
+  return (bool)((QFutureInterfaceBase*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:128
+// [16] QFutureInterfaceBase & operator=(const class QFutureInterfaceBase &)
+extern "C"
+void* C_ZN20QFutureInterfaceBaseaSERKS_(void *this_, QFutureInterfaceBase* other) {
+  auto& rv = ((QFutureInterfaceBase*)this_)->operator=(*other);
+return &rv;
+}
 //  main block end

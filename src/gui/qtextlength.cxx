@@ -54,6 +54,20 @@ extern "C"
 qreal C_ZNK11QTextLength8rawValueEv(void *this_) {
   return (qreal)((QTextLength*)this_)->rawValue();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:106
+// [1] bool operator==(const class QTextLength &)
+extern "C"
+bool C_ZNK11QTextLengtheqERKS_(void *this_, QTextLength* other) {
+  return (bool)((QTextLength*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:109
+// [1] bool operator!=(const class QTextLength &)
+extern "C"
+bool C_ZNK11QTextLengthneERKS_(void *this_, QTextLength* other) {
+  return (bool)((QTextLength*)this_)->operator!=(*other);
+}
 
 extern "C"
 void C_ZN11QTextLengthD2Ev(void *this_) {

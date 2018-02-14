@@ -44,6 +44,14 @@ extern "C"
 void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin, const quint32 * end) {
   return  new QRandomGenerator(begin, end);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:69
+// [2512] QRandomGenerator & operator=(const class QRandomGenerator &)
+extern "C"
+void* C_ZN16QRandomGeneratoraSERKS_(void *this_, QRandomGenerator* other) {
+  auto& rv = ((QRandomGenerator*)this_)->operator=(*other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:77
 // [4] quint32 generate()
@@ -106,6 +114,13 @@ int C_ZN16QRandomGenerator7boundedEii(void *this_, int lowest, int highest) {
 extern "C"
 void C_ZN16QRandomGenerator8generateEPjS0_(void *this_, quint32 * begin, quint32 * end) {
   ((QRandomGenerator*)this_)->generate(begin, end);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:159
+// [4] QRandomGenerator::result_type operator()()
+extern "C"
+QRandomGenerator::result_type C_ZN16QRandomGeneratorclEv(void *this_) {
+  return (QRandomGenerator::result_type)((QRandomGenerator*)this_)->operator()();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:160

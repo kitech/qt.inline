@@ -34,6 +34,22 @@ void* C_ZN11QHstsPolicyC2ERK9QDateTime6QFlagsINS_10PolicyFlagEERK7QStringN4QUrl1
   return  new QHstsPolicy(*expiry, flags, *host, mode);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhstspolicy.h:67
+// [8] QHstsPolicy & operator=(const class QHstsPolicy &)
+extern "C"
+void* C_ZN11QHstsPolicyaSERKS_(void *this_, QHstsPolicy* rhs) {
+  auto& rv = ((QHstsPolicy*)this_)->operator=(*rhs);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhstspolicy.h:68
+// [8] QHstsPolicy & operator=(class QHstsPolicy &&)
+extern "C"
+void* C_ZN11QHstsPolicyaSEOS_(void *this_, QHstsPolicy && other) {
+  auto& rv = ((QHstsPolicy*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:69
 // [-2] void ~QHstsPolicy()
 extern "C"

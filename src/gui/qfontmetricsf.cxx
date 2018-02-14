@@ -49,6 +49,30 @@ extern "C"
 void C_ZN13QFontMetricsFD2Ev(void *this_) {
   delete (QFontMetricsF*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:140
+// [8] QFontMetricsF & operator=(const class QFontMetricsF &)
+extern "C"
+void* C_ZN13QFontMetricsFaSERKS_(void *this_, QFontMetricsF* arg0) {
+  auto& rv = ((QFontMetricsF*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:141
+// [8] QFontMetricsF & operator=(const class QFontMetrics &)
+extern "C"
+void* C_ZN13QFontMetricsFaSERK12QFontMetrics(void *this_, QFontMetrics* arg0) {
+  auto& rv = ((QFontMetricsF*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:143
+// [8] QFontMetricsF & operator=(class QFontMetricsF &&)
+extern "C"
+void* C_ZN13QFontMetricsFaSEOS_(void *this_, QFontMetricsF && other) {
+  auto& rv = ((QFontMetricsF*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:147
 // [-2] void swap(class QFontMetricsF &)
@@ -250,5 +274,19 @@ qreal C_ZNK13QFontMetricsF12strikeOutPosEv(void *this_) {
 extern "C"
 qreal C_ZNK13QFontMetricsF9lineWidthEv(void *this_) {
   return (qreal)((QFontMetricsF*)this_)->lineWidth();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:185
+// [1] bool operator==(const class QFontMetricsF &)
+extern "C"
+bool C_ZNK13QFontMetricsFeqERKS_(void *this_, QFontMetricsF* other) {
+  return (bool)((QFontMetricsF*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:186
+// [1] bool operator!=(const class QFontMetricsF &)
+extern "C"
+bool C_ZNK13QFontMetricsFneERKS_(void *this_, QFontMetricsF* other) {
+  return (bool)((QFontMetricsF*)this_)->operator!=(*other);
 }
 //  main block end

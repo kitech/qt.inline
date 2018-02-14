@@ -78,6 +78,22 @@ extern "C"
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, quint16 bindPort, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, bindPort, *protocolTag, queryType);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:93
+// [8] QNetworkProxyQuery & operator=(class QNetworkProxyQuery &&)
+extern "C"
+void* C_ZN18QNetworkProxyQueryaSEOS_(void *this_, QNetworkProxyQuery && other) {
+  auto& rv = ((QNetworkProxyQuery*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:95
+// [8] QNetworkProxyQuery & operator=(const class QNetworkProxyQuery &)
+extern "C"
+void* C_ZN18QNetworkProxyQueryaSERKS_(void *this_, QNetworkProxyQuery* other) {
+  auto& rv = ((QNetworkProxyQuery*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:96
 // [-2] void ~QNetworkProxyQuery()
@@ -91,6 +107,20 @@ void C_ZN18QNetworkProxyQueryD2Ev(void *this_) {
 extern "C"
 void C_ZN18QNetworkProxyQuery4swapERS_(void *this_, QNetworkProxyQuery* other) {
   ((QNetworkProxyQuery*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:100
+// [1] bool operator==(const class QNetworkProxyQuery &)
+extern "C"
+bool C_ZNK18QNetworkProxyQueryeqERKS_(void *this_, QNetworkProxyQuery* other) {
+  return (bool)((QNetworkProxyQuery*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:101
+// [1] bool operator!=(const class QNetworkProxyQuery &)
+extern "C"
+bool C_ZNK18QNetworkProxyQueryneERKS_(void *this_, QNetworkProxyQuery* other) {
+  return (bool)((QNetworkProxyQuery*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:104

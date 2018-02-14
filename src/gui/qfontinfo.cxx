@@ -31,6 +31,14 @@ extern "C"
 void C_ZN9QFontInfoD2Ev(void *this_) {
   delete (QFontInfo*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:57
+// [8] QFontInfo & operator=(const class QFontInfo &)
+extern "C"
+void* C_ZN9QFontInfoaSERKS_(void *this_, QFontInfo* arg0) {
+  auto& rv = ((QFontInfo*)this_)->operator=(*arg0);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:59
 // [-2] void swap(class QFontInfo &)

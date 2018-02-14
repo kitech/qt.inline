@@ -29,6 +29,14 @@ void* C_ZN19QTextBoundaryFinderC2Ev() {
   return  new QTextBoundaryFinder();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:56
+// [48] QTextBoundaryFinder & operator=(const class QTextBoundaryFinder &)
+extern "C"
+void* C_ZN19QTextBoundaryFinderaSERKS_(void *this_, QTextBoundaryFinder* other) {
+  auto& rv = ((QTextBoundaryFinder*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:57
 // [-2] void ~QTextBoundaryFinder()
 extern "C"

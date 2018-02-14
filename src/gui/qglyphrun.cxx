@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN9QGlyphRunC2Ev() {
   return  new QGlyphRun();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:70
+// [8] QGlyphRun & operator=(class QGlyphRun &&)
+extern "C"
+void* C_ZN9QGlyphRunaSEOS_(void *this_, QGlyphRun && other) {
+  auto& rv = ((QGlyphRun*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:72
+// [8] QGlyphRun & operator=(const class QGlyphRun &)
+extern "C"
+void* C_ZN9QGlyphRunaSERKS_(void *this_, QGlyphRun* other) {
+  auto& rv = ((QGlyphRun*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:73
 // [-2] void ~QGlyphRun()
@@ -66,6 +82,20 @@ void C_ZN9QGlyphRun10setRawDataEPKjPK7QPointFi(void *this_, const quint32 * glyp
 extern "C"
 void C_ZN9QGlyphRun5clearEv(void *this_) {
   ((QGlyphRun*)this_)->clear();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:92
+// [1] bool operator==(const class QGlyphRun &)
+extern "C"
+bool C_ZNK9QGlyphRuneqERKS_(void *this_, QGlyphRun* other) {
+  return (bool)((QGlyphRun*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:93
+// [1] bool operator!=(const class QGlyphRun &)
+extern "C"
+bool C_ZNK9QGlyphRunneERKS_(void *this_, QGlyphRun* other) {
+  return (bool)((QGlyphRun*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:96

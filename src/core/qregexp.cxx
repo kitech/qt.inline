@@ -40,12 +40,42 @@ extern "C"
 void C_ZN7QRegExpD2Ev(void *this_) {
   delete (QRegExp*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:75
+// [8] QRegExp & operator=(const class QRegExp &)
+extern "C"
+void* C_ZN7QRegExpaSERKS_(void *this_, QRegExp* rx) {
+  auto& rv = ((QRegExp*)this_)->operator=(*rx);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:77
+// [8] QRegExp & operator=(class QRegExp &&)
+extern "C"
+void* C_ZN7QRegExpaSEOS_(void *this_, QRegExp && other) {
+  auto& rv = ((QRegExp*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:79
 // [-2] void swap(class QRegExp &)
 extern "C"
 void C_ZN7QRegExp4swapERS_(void *this_, QRegExp* other) {
   ((QRegExp*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:81
+// [1] bool operator==(const class QRegExp &)
+extern "C"
+bool C_ZNK7QRegExpeqERKS_(void *this_, QRegExp* rx) {
+  return (bool)((QRegExp*)this_)->operator==(*rx);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:82
+// [1] bool operator!=(const class QRegExp &)
+extern "C"
+bool C_ZNK7QRegExpneERKS_(void *this_, QRegExp* rx) {
+  return (bool)((QRegExp*)this_)->operator!=(*rx);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:84

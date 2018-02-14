@@ -31,6 +31,22 @@ extern "C"
 void C_ZN9QCollatorD2Ev(void *this_) {
   delete (QCollator*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:89
+// [8] QCollator & operator=(const class QCollator &)
+extern "C"
+void* C_ZN9QCollatoraSERKS_(void *this_, QCollator* arg0) {
+  auto& rv = ((QCollator*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:93
+// [8] QCollator & operator=(class QCollator &&)
+extern "C"
+void* C_ZN9QCollatoraSEOS_(void *this_, QCollator && other) {
+  auto& rv = ((QCollator*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:97
 // [-2] void swap(class QCollator &)
@@ -115,6 +131,13 @@ int C_ZNK9QCollator7compareERK10QStringRefS2_(void *this_, QStringRef* s1, QStri
 extern "C"
 int C_ZNK9QCollator7compareEPK5QChariS2_i(void *this_, const QChar * s1, int len1, const QChar * s2, int len2) {
   return (int)((QCollator*)this_)->compare(s1, len1, s2, len2);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:116
+// [1] bool operator()(const class QString &, const class QString &)
+extern "C"
+bool C_ZNK9QCollatorclERK7QStringS2_(void *this_, QString* s1, QString* s2) {
+  return (bool)((QCollator*)this_)->operator()(*s1, *s2);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:119

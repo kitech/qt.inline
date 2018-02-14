@@ -314,6 +314,13 @@ void C_ZN15QListWidgetItem7setDataEiRK8QVariant(void *this_, int role, QVariant*
   ((QListWidgetItem*)this_)->setData(role, *value);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:150
+// [1] bool operator<(const class QListWidgetItem &)
+extern "C"
+bool C_ZNK15QListWidgetItemltERKS_(void *this_, QListWidgetItem* other) {
+  return (bool)((QListWidgetItem*)this_)->operator<(*other);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:153
 // [-2] void read(class QDataStream &)
 extern "C"
@@ -326,6 +333,14 @@ void C_ZN15QListWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
 extern "C"
 void C_ZNK15QListWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) {
   ((QListWidgetItem*)this_)->write(*out);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:156
+// [48] QListWidgetItem & operator=(const class QListWidgetItem &)
+extern "C"
+void* C_ZN15QListWidgetItemaSERKS_(void *this_, QListWidgetItem* other) {
+  auto& rv = ((QListWidgetItem*)this_)->operator=(*other);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:158

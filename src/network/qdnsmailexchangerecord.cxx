@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN22QDnsMailExchangeRecordC2Ev() {
   return  new QDnsMailExchangeRecord();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:114
+// [8] QDnsMailExchangeRecord & operator=(class QDnsMailExchangeRecord &&)
+extern "C"
+void* C_ZN22QDnsMailExchangeRecordaSEOS_(void *this_, QDnsMailExchangeRecord && other) {
+  auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:116
+// [8] QDnsMailExchangeRecord & operator=(const class QDnsMailExchangeRecord &)
+extern "C"
+void* C_ZN22QDnsMailExchangeRecordaSERKS_(void *this_, QDnsMailExchangeRecord* other) {
+  auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:117
 // [-2] void ~QDnsMailExchangeRecord()

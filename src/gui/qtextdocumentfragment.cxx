@@ -43,6 +43,14 @@ void* C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(QTextCursor* range_) {
   return  new QTextDocumentFragment(*range_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:61
+// [8] QTextDocumentFragment & operator=(const class QTextDocumentFragment &)
+extern "C"
+void* C_ZN21QTextDocumentFragmentaSERKS_(void *this_, QTextDocumentFragment* rhs) {
+  auto& rv = ((QTextDocumentFragment*)this_)->operator=(*rhs);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:62
 // [-2] void ~QTextDocumentFragment()
 extern "C"

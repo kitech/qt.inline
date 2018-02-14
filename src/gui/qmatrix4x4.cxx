@@ -79,6 +79,22 @@ void* C_ZN10QMatrix4x4C2ERK7QMatrix(QMatrix* matrix) {
   return  new QMatrix4x4(*matrix);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:77
+// [4] const float & operator()(int, int)
+extern "C"
+void* C_ZNK10QMatrix4x4clEii(void *this_, int row, int column) {
+  auto& rv = ((QMatrix4x4*)this_)->operator()(row, column);
+return new float(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:78
+// [4] float & operator()(int, int)
+extern "C"
+void* C_ZN10QMatrix4x4clEii(void *this_, int row, int column) {
+  auto& rv = ((QMatrix4x4*)this_)->operator()(row, column);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:81
 // [16] QVector4D column(int)
 extern "C"
@@ -158,6 +174,60 @@ extern "C"
 void* C_ZNK10QMatrix4x410transposedEv(void *this_) {
   auto rv = ((QMatrix4x4*)this_)->transposed();
 return new QMatrix4x4(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:100
+// [68] QMatrix4x4 & operator+=(const class QMatrix4x4 &)
+extern "C"
+void* C_ZN10QMatrix4x4pLERKS_(void *this_, QMatrix4x4* other) {
+  auto& rv = ((QMatrix4x4*)this_)->operator+=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:101
+// [68] QMatrix4x4 & operator-=(const class QMatrix4x4 &)
+extern "C"
+void* C_ZN10QMatrix4x4mIERKS_(void *this_, QMatrix4x4* other) {
+  auto& rv = ((QMatrix4x4*)this_)->operator-=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:102
+// [68] QMatrix4x4 & operator*=(const class QMatrix4x4 &)
+extern "C"
+void* C_ZN10QMatrix4x4mLERKS_(void *this_, QMatrix4x4* other) {
+  auto& rv = ((QMatrix4x4*)this_)->operator*=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:103
+// [68] QMatrix4x4 & operator*=(float)
+extern "C"
+void* C_ZN10QMatrix4x4mLEf(void *this_, float factor) {
+  auto& rv = ((QMatrix4x4*)this_)->operator*=(factor);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:104
+// [68] QMatrix4x4 & operator/=(float)
+extern "C"
+void* C_ZN10QMatrix4x4dVEf(void *this_, float divisor) {
+  auto& rv = ((QMatrix4x4*)this_)->operator/=(divisor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:105
+// [1] bool operator==(const class QMatrix4x4 &)
+extern "C"
+bool C_ZNK10QMatrix4x4eqERKS_(void *this_, QMatrix4x4* other) {
+  return (bool)((QMatrix4x4*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:106
+// [1] bool operator!=(const class QMatrix4x4 &)
+extern "C"
+bool C_ZNK10QMatrix4x4neERKS_(void *this_, QMatrix4x4* other) {
+  return (bool)((QMatrix4x4*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:131

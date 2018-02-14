@@ -25,6 +25,22 @@ void* C_ZN9QHostInfoC2Ei(int lookupId) {
   return  new QHostInfo(lookupId);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:65
+// [8] QHostInfo & operator=(const class QHostInfo &)
+extern "C"
+void* C_ZN9QHostInfoaSERKS_(void *this_, QHostInfo* d) {
+  auto& rv = ((QHostInfo*)this_)->operator=(*d);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:66
+// [8] QHostInfo & operator=(class QHostInfo &&)
+extern "C"
+void* C_ZN9QHostInfoaSEOS_(void *this_, QHostInfo && other) {
+  auto& rv = ((QHostInfo*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:67
 // [-2] void ~QHostInfo()
 extern "C"

@@ -108,6 +108,20 @@ extern "C"
 qint64 C_ZNK13QElapsedTimer6secsToERKS_(void *this_, QElapsedTimer* other) {
   return (qint64)((QElapsedTimer*)this_)->secsTo(*other);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qelapsedtimer.h:81
+// [1] bool operator==(const class QElapsedTimer &)
+extern "C"
+bool C_ZNK13QElapsedTimereqERKS_(void *this_, QElapsedTimer* other) {
+  return (bool)((QElapsedTimer*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qelapsedtimer.h:83
+// [1] bool operator!=(const class QElapsedTimer &)
+extern "C"
+bool C_ZNK13QElapsedTimerneERKS_(void *this_, QElapsedTimer* other) {
+  return (bool)((QElapsedTimer*)this_)->operator!=(*other);
+}
 
 extern "C"
 void C_ZN13QElapsedTimerD2Ev(void *this_) {

@@ -32,11 +32,41 @@ void C_ZN14QNetworkCookieD2Ev(void *this_) {
   delete (QNetworkCookie*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:70
+// [8] QNetworkCookie & operator=(class QNetworkCookie &&)
+extern "C"
+void* C_ZN14QNetworkCookieaSEOS_(void *this_, QNetworkCookie && other) {
+  auto& rv = ((QNetworkCookie*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:72
+// [8] QNetworkCookie & operator=(const class QNetworkCookie &)
+extern "C"
+void* C_ZN14QNetworkCookieaSERKS_(void *this_, QNetworkCookie* other) {
+  auto& rv = ((QNetworkCookie*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:74
 // [-2] void swap(class QNetworkCookie &)
 extern "C"
 void C_ZN14QNetworkCookie4swapERS_(void *this_, QNetworkCookie* other) {
   ((QNetworkCookie*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:76
+// [1] bool operator==(const class QNetworkCookie &)
+extern "C"
+bool C_ZNK14QNetworkCookieeqERKS_(void *this_, QNetworkCookie* other) {
+  return (bool)((QNetworkCookie*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:77
+// [1] bool operator!=(const class QNetworkCookie &)
+extern "C"
+bool C_ZNK14QNetworkCookieneERKS_(void *this_, QNetworkCookie* other) {
+  return (bool)((QNetworkCookie*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:80

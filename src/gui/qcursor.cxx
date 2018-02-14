@@ -58,6 +58,22 @@ extern "C"
 void C_ZN7QCursorD2Ev(void *this_) {
   delete (QCursor*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:88
+// [8] QCursor & operator=(const class QCursor &)
+extern "C"
+void* C_ZN7QCursoraSERKS_(void *this_, QCursor* cursor) {
+  auto& rv = ((QCursor*)this_)->operator=(*cursor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:91
+// [8] QCursor & operator=(class QCursor &&)
+extern "C"
+void* C_ZN7QCursoraSEOS_(void *this_, QCursor && other) {
+  auto& rv = ((QCursor*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:95
 // [-2] void swap(class QCursor &)

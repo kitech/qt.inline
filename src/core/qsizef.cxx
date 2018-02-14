@@ -169,6 +169,38 @@ void* C_ZN6QSizeF7rheightEv(void *this_) {
 return &rv;
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:244
+// [16] QSizeF & operator+=(const class QSizeF &)
+extern "C"
+void* C_ZN6QSizeFpLERKS_(void *this_, QSizeF* arg0) {
+  auto& rv = ((QSizeF*)this_)->operator+=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:245
+// [16] QSizeF & operator-=(const class QSizeF &)
+extern "C"
+void* C_ZN6QSizeFmIERKS_(void *this_, QSizeF* arg0) {
+  auto& rv = ((QSizeF*)this_)->operator-=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:246
+// [16] QSizeF & operator*=(qreal)
+extern "C"
+void* C_ZN6QSizeFmLEd(void *this_, qreal c) {
+  auto& rv = ((QSizeF*)this_)->operator*=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:247
+// [16] QSizeF & operator/=(qreal)
+extern "C"
+void* C_ZN6QSizeFdVEd(void *this_, qreal c) {
+  auto& rv = ((QSizeF*)this_)->operator/=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:257
 // [8] QSize toSize()
 extern "C"

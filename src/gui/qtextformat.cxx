@@ -34,6 +34,14 @@ void* C_ZN11QTextFormatC2Ei(int type_) {
   return  new QTextFormat(type_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:293
+// [16] QTextFormat & operator=(const class QTextFormat &)
+extern "C"
+void* C_ZN11QTextFormataSERKS_(void *this_, QTextFormat* rhs) {
+  auto& rv = ((QTextFormat*)this_)->operator=(*rhs);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:294
 // [-2] void ~QTextFormat()
 extern "C"
@@ -304,6 +312,20 @@ extern "C"
 void* C_ZNK11QTextFormat17toTableCellFormatEv(void *this_) {
   auto rv = ((QTextFormat*)this_)->toTableCellFormat();
 return new QTextTableCellFormat(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:349
+// [1] bool operator==(const class QTextFormat &)
+extern "C"
+bool C_ZNK11QTextFormateqERKS_(void *this_, QTextFormat* rhs) {
+  return (bool)((QTextFormat*)this_)->operator==(*rhs);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:350
+// [1] bool operator!=(const class QTextFormat &)
+extern "C"
+bool C_ZNK11QTextFormatneERKS_(void *this_, QTextFormat* rhs) {
+  return (bool)((QTextFormat*)this_)->operator!=(*rhs);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:353

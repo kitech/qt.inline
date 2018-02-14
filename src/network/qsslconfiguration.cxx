@@ -32,11 +32,41 @@ void C_ZN17QSslConfigurationD2Ev(void *this_) {
   delete (QSslConfiguration*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:83
+// [8] QSslConfiguration & operator=(class QSslConfiguration &&)
+extern "C"
+void* C_ZN17QSslConfigurationaSEOS_(void *this_, QSslConfiguration && other) {
+  auto& rv = ((QSslConfiguration*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:85
+// [8] QSslConfiguration & operator=(const class QSslConfiguration &)
+extern "C"
+void* C_ZN17QSslConfigurationaSERKS_(void *this_, QSslConfiguration* other) {
+  auto& rv = ((QSslConfiguration*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:87
 // [-2] void swap(class QSslConfiguration &)
 extern "C"
 void C_ZN17QSslConfiguration4swapERS_(void *this_, QSslConfiguration* other) {
   ((QSslConfiguration*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:90
+// [1] bool operator==(const class QSslConfiguration &)
+extern "C"
+bool C_ZNK17QSslConfigurationeqERKS_(void *this_, QSslConfiguration* other) {
+  return (bool)((QSslConfiguration*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:91
+// [1] bool operator!=(const class QSslConfiguration &)
+extern "C"
+bool C_ZNK17QSslConfigurationneERKS_(void *this_, QSslConfiguration* other) {
+  return (bool)((QSslConfiguration*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:94

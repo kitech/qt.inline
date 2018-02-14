@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN17QNetworkInterfaceC2Ev() {
   return  new QNetworkInterface();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:107
+// [8] QNetworkInterface & operator=(class QNetworkInterface &&)
+extern "C"
+void* C_ZN17QNetworkInterfaceaSEOS_(void *this_, QNetworkInterface && other) {
+  auto& rv = ((QNetworkInterface*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:109
+// [8] QNetworkInterface & operator=(const class QNetworkInterface &)
+extern "C"
+void* C_ZN17QNetworkInterfaceaSERKS_(void *this_, QNetworkInterface* other) {
+  auto& rv = ((QNetworkInterface*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:110
 // [-2] void ~QNetworkInterface()

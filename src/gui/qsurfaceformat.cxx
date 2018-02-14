@@ -34,6 +34,14 @@ void* C_ZN14QSurfaceFormatC2E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::
   return  new QSurfaceFormat(options);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:97
+// [8] QSurfaceFormat & operator=(const class QSurfaceFormat &)
+extern "C"
+void* C_ZN14QSurfaceFormataSERKS_(void *this_, QSurfaceFormat* other) {
+  auto& rv = ((QSurfaceFormat*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:98
 // [-2] void ~QSurfaceFormat()
 extern "C"

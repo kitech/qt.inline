@@ -34,6 +34,22 @@ void* C_ZN9QBitArrayC2Eib(int size, bool val) {
   return  new QBitArray(size, val);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:60
+// [8] QBitArray & operator=(const class QBitArray &)
+extern "C"
+void* C_ZN9QBitArrayaSERKS_(void *this_, QBitArray* other) {
+  auto& rv = ((QBitArray*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:63
+// [8] QBitArray & operator=(class QBitArray &&)
+extern "C"
+void* C_ZN9QBitArrayaSEOS_(void *this_, QBitArray && other) {
+  auto& rv = ((QBitArray*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:67
 // [-2] void swap(class QBitArray &)
 extern "C"
@@ -144,6 +160,82 @@ bool C_ZN9QBitArray9toggleBitEi(void *this_, int i) {
 extern "C"
 bool C_ZNK9QBitArray2atEi(void *this_, int i) {
   return (bool)((QBitArray*)this_)->at(i);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:89
+// [16] QBitRef operator[](int)
+extern "C"
+void C_ZN9QBitArrayixEi(void *this_, int i) {
+  auto rv = ((QBitArray*)this_)->operator[](i);
+/*return rv;*/
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:90
+// [1] bool operator[](int)
+extern "C"
+bool C_ZNK9QBitArrayixEi(void *this_, int i) {
+  return (bool)((QBitArray*)this_)->operator[](i);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:91
+// [16] QBitRef operator[](uint)
+extern "C"
+void C_ZN9QBitArrayixEj(void *this_, uint i) {
+  auto rv = ((QBitArray*)this_)->operator[](i);
+/*return rv;*/
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:92
+// [1] bool operator[](uint)
+extern "C"
+bool C_ZNK9QBitArrayixEj(void *this_, uint i) {
+  return (bool)((QBitArray*)this_)->operator[](i);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:94
+// [8] QBitArray & operator&=(const class QBitArray &)
+extern "C"
+void* C_ZN9QBitArrayaNERKS_(void *this_, QBitArray* arg0) {
+  auto& rv = ((QBitArray*)this_)->operator&=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:95
+// [8] QBitArray & operator|=(const class QBitArray &)
+extern "C"
+void* C_ZN9QBitArrayoRERKS_(void *this_, QBitArray* arg0) {
+  auto& rv = ((QBitArray*)this_)->operator|=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:96
+// [8] QBitArray & operator^=(const class QBitArray &)
+extern "C"
+void* C_ZN9QBitArrayeOERKS_(void *this_, QBitArray* arg0) {
+  auto& rv = ((QBitArray*)this_)->operator^=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:97
+// [8] QBitArray operator~()
+extern "C"
+void* C_ZNK9QBitArraycoEv(void *this_) {
+  auto rv = ((QBitArray*)this_)->operator~();
+return new QBitArray(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:99
+// [1] bool operator==(const class QBitArray &)
+extern "C"
+bool C_ZNK9QBitArrayeqERKS_(void *this_, QBitArray* other) {
+  return (bool)((QBitArray*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:100
+// [1] bool operator!=(const class QBitArray &)
+extern "C"
+bool C_ZNK9QBitArrayneERKS_(void *this_, QBitArray* other) {
+  return (bool)((QBitArray*)this_)->operator!=(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:102

@@ -33,6 +33,22 @@ extern "C"
 void* C_ZN11QPageLayoutC2ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(QPageSize* pageSize, QPageLayout::Orientation orientation, QMarginsF* margins, QPageLayout::Unit units, QMarginsF* minMargins) {
   return  new QPageLayout(*pageSize, orientation, *margins, units, *minMargins);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:86
+// [8] QPageLayout & operator=(class QPageLayout &&)
+extern "C"
+void* C_ZN11QPageLayoutaSEOS_(void *this_, QPageLayout && other) {
+  auto& rv = ((QPageLayout*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:88
+// [8] QPageLayout & operator=(const class QPageLayout &)
+extern "C"
+void* C_ZN11QPageLayoutaSERKS_(void *this_, QPageLayout* other) {
+  auto& rv = ((QPageLayout*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:89
 // [-2] void ~QPageLayout()

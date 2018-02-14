@@ -2162,7 +2162,7 @@ bool C_Z25qEnvironmentVariableIsSetPKc(const char * varName) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /home/gzleo/oss/qt.gen/headers/QtCore/extra_export.h:7
+// ./headers/QtCore/extra_export.h:7
 // [1] bool qUnregisterResourceData(int, const unsigned char *, const unsigned char *, const unsigned char *)
 extern "C"
 bool C_Z23qUnregisterResourceDataiPKhS0_S0_(int arg0, const unsigned char * arg1, const unsigned char * arg2, const unsigned char * arg3) {
@@ -2228,7 +2228,7 @@ uint C_Z22qCountTrailingZeroBitsh_4(quint8 v) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /home/gzleo/oss/qt.gen/headers/QtCore/extra_export.h:6
+// ./headers/QtCore/extra_export.h:6
 // [1] bool qRegisterResourceData(int, const unsigned char *, const unsigned char *, const unsigned char *)
 extern "C"
 bool C_Z21qRegisterResourceDataiPKhS0_S0_(int arg0, const unsigned char * arg1, const unsigned char * arg2, const unsigned char * arg3) {

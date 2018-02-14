@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN20QNetworkAddressEntryC2Ev() {
   return  new QNetworkAddressEntry();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:62
+// [8] QNetworkAddressEntry & operator=(class QNetworkAddressEntry &&)
+extern "C"
+void* C_ZN20QNetworkAddressEntryaSEOS_(void *this_, QNetworkAddressEntry && other) {
+  auto& rv = ((QNetworkAddressEntry*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:64
+// [8] QNetworkAddressEntry & operator=(const class QNetworkAddressEntry &)
+extern "C"
+void* C_ZN20QNetworkAddressEntryaSERKS_(void *this_, QNetworkAddressEntry* other) {
+  auto& rv = ((QNetworkAddressEntry*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:65
 // [-2] void ~QNetworkAddressEntry()
@@ -37,6 +53,20 @@ void C_ZN20QNetworkAddressEntryD2Ev(void *this_) {
 extern "C"
 void C_ZN20QNetworkAddressEntry4swapERS_(void *this_, QNetworkAddressEntry* other) {
   ((QNetworkAddressEntry*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:69
+// [1] bool operator==(const class QNetworkAddressEntry &)
+extern "C"
+bool C_ZNK20QNetworkAddressEntryeqERKS_(void *this_, QNetworkAddressEntry* other) {
+  return (bool)((QNetworkAddressEntry*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:70
+// [1] bool operator!=(const class QNetworkAddressEntry &)
+extern "C"
+bool C_ZNK20QNetworkAddressEntryneERKS_(void *this_, QNetworkAddressEntry* other) {
+  return (bool)((QNetworkAddressEntry*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:73

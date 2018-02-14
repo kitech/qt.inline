@@ -48,6 +48,30 @@ bool C_ZNK11QStringList8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *thi
   return (bool)((QStringList*)this_)->contains(*str, cs);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:125
+// [8] QStringList operator+(const class QStringList &)
+extern "C"
+void* C_ZNK11QStringListplERKS_(void *this_, QStringList* other) {
+  auto rv = ((QStringList*)this_)->operator+(*other);
+return new QStringList(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:127
+// [8] QStringList & operator<<(const class QString &)
+extern "C"
+void* C_ZN11QStringListlsERK7QString(void *this_, QString* str) {
+  auto& rv = ((QStringList*)this_)->operator<<(*str);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:129
+// [8] QStringList & operator<<(const class QStringList &)
+extern "C"
+void* C_ZN11QStringListlsERKS_(void *this_, QStringList* l) {
+  auto& rv = ((QStringList*)this_)->operator<<(*l);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:135
 // [4] int indexOf(const class QRegExp &, int)
 extern "C"

@@ -40,12 +40,71 @@ extern "C"
 void C_ZN21QPersistentModelIndexD2Ev(void *this_) {
   delete (QPersistentModelIndex*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:111
+// [1] bool operator<(const class QPersistentModelIndex &)
+extern "C"
+bool C_ZNK21QPersistentModelIndexltERKS_(void *this_, QPersistentModelIndex* other) {
+  return (bool)((QPersistentModelIndex*)this_)->operator<(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:112
+// [1] bool operator==(const class QPersistentModelIndex &)
+extern "C"
+bool C_ZNK21QPersistentModelIndexeqERKS_(void *this_, QPersistentModelIndex* other) {
+  return (bool)((QPersistentModelIndex*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:113
+// [1] bool operator!=(const class QPersistentModelIndex &)
+extern "C"
+bool C_ZNK21QPersistentModelIndexneERKS_(void *this_, QPersistentModelIndex* other) {
+  return (bool)((QPersistentModelIndex*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:115
+// [8] QPersistentModelIndex & operator=(const class QPersistentModelIndex &)
+extern "C"
+void* C_ZN21QPersistentModelIndexaSERKS_(void *this_, QPersistentModelIndex* other) {
+  auto& rv = ((QPersistentModelIndex*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:119
+// [8] QPersistentModelIndex & operator=(class QPersistentModelIndex &&)
+extern "C"
+void* C_ZN21QPersistentModelIndexaSEOS_(void *this_, QPersistentModelIndex && other) {
+  auto& rv = ((QPersistentModelIndex*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:122
 // [-2] void swap(class QPersistentModelIndex &)
 extern "C"
 void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex* other) {
   ((QPersistentModelIndex*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:123
+// [1] bool operator==(const class QModelIndex &)
+extern "C"
+bool C_ZNK21QPersistentModelIndexeqERK11QModelIndex(void *this_, QModelIndex* other) {
+  return (bool)((QPersistentModelIndex*)this_)->operator==(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:124
+// [1] bool operator!=(const class QModelIndex &)
+extern "C"
+bool C_ZNK21QPersistentModelIndexneERK11QModelIndex(void *this_, QModelIndex* other) {
+  return (bool)((QPersistentModelIndex*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:125
+// [8] QPersistentModelIndex & operator=(const class QModelIndex &)
+extern "C"
+void* C_ZN21QPersistentModelIndexaSERK11QModelIndex(void *this_, QModelIndex* other) {
+  auto& rv = ((QPersistentModelIndex*)this_)->operator=(*other);
+return &rv;
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:127

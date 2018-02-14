@@ -96,6 +96,22 @@ extern "C"
 void C_ZN7QPixmapD2Ev(void *this_) {
   delete (QPixmap*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:75
+// [32] QPixmap & operator=(const class QPixmap &)
+extern "C"
+void* C_ZN7QPixmapaSERKS_(void *this_, QPixmap* arg0) {
+  auto& rv = ((QPixmap*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:77
+// [32] QPixmap & operator=(class QPixmap &&)
+extern "C"
+void* C_ZN7QPixmapaSEOS_(void *this_, QPixmap && other) {
+  auto& rv = ((QPixmap*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:80
 // [-2] void swap(class QPixmap &)
@@ -467,5 +483,12 @@ bool C_ZNK7QPixmap9isQBitmapEv(void *this_) {
 extern "C"
 void* C_ZNK7QPixmap11paintEngineEv(void *this_) {
   return (void*)((QPixmap*)this_)->paintEngine();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:167
+// [1] bool operator!()
+extern "C"
+bool C_ZNK7QPixmapntEv(void *this_) {
+  return (bool)((QPixmap*)this_)->operator!();
 }
 //  main block end

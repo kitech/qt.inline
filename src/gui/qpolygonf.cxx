@@ -59,6 +59,22 @@ void* C_ZN9QPolygonFC2ERK8QPolygon(QPolygon* a) {
   return  new QPolygonF(*a);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:156
+// [8] QPolygonF & operator=(class QPolygonF &&)
+extern "C"
+void* C_ZN9QPolygonFaSEOS_(void *this_, QPolygonF && other) {
+  auto& rv = ((QPolygonF*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:158
+// [8] QPolygonF & operator=(const class QPolygonF &)
+extern "C"
+void* C_ZN9QPolygonFaSERKS_(void *this_, QPolygonF* other) {
+  auto& rv = ((QPolygonF*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:159
 // [-2] void swap(class QPolygonF &)
 extern "C"

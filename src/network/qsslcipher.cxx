@@ -42,6 +42,22 @@ extern "C"
 void* C_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE(QString* name, QSsl::SslProtocol protocol) {
   return  new QSslCipher(*name, protocol);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:63
+// [8] QSslCipher & operator=(class QSslCipher &&)
+extern "C"
+void* C_ZN10QSslCipheraSEOS_(void *this_, QSslCipher && other) {
+  auto& rv = ((QSslCipher*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:65
+// [8] QSslCipher & operator=(const class QSslCipher &)
+extern "C"
+void* C_ZN10QSslCipheraSERKS_(void *this_, QSslCipher* other) {
+  auto& rv = ((QSslCipher*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:66
 // [-2] void ~QSslCipher()
@@ -55,6 +71,20 @@ void C_ZN10QSslCipherD2Ev(void *this_) {
 extern "C"
 void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
   ((QSslCipher*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:71
+// [1] bool operator==(const class QSslCipher &)
+extern "C"
+bool C_ZNK10QSslCiphereqERKS_(void *this_, QSslCipher* other) {
+  return (bool)((QSslCipher*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:72
+// [1] bool operator!=(const class QSslCipher &)
+extern "C"
+bool C_ZNK10QSslCipherneERKS_(void *this_, QSslCipher* other) {
+  return (bool)((QSslCipher*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:74

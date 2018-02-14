@@ -33,6 +33,22 @@ extern "C"
 void* C_ZN11QStaticTextC2ERK7QString(QString* text) {
   return  new QStaticText(*text);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:68
+// [8] QStaticText & operator=(class QStaticText &&)
+extern "C"
+void* C_ZN11QStaticTextaSEOS_(void *this_, QStaticText && other) {
+  auto& rv = ((QStaticText*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:70
+// [8] QStaticText & operator=(const class QStaticText &)
+extern "C"
+void* C_ZN11QStaticTextaSERKS_(void *this_, QStaticText* arg0) {
+  auto& rv = ((QStaticText*)this_)->operator=(*arg0);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:71
 // [-2] void ~QStaticText()
@@ -133,5 +149,19 @@ void C_ZN11QStaticText18setPerformanceHintENS_15PerformanceHintE(void *this_, QS
 extern "C"
 QStaticText::PerformanceHint C_ZNK11QStaticText15performanceHintEv(void *this_) {
   return (QStaticText::PerformanceHint)((QStaticText*)this_)->performanceHint();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:94
+// [1] bool operator==(const class QStaticText &)
+extern "C"
+bool C_ZNK11QStaticTexteqERKS_(void *this_, QStaticText* arg0) {
+  return (bool)((QStaticText*)this_)->operator==(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:95
+// [1] bool operator!=(const class QStaticText &)
+extern "C"
+bool C_ZNK11QStaticTextneERKS_(void *this_, QStaticText* arg0) {
+  return (bool)((QStaticText*)this_)->operator!=(*arg0);
 }
 //  main block end

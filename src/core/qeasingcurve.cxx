@@ -32,11 +32,41 @@ void C_ZN12QEasingCurveD2Ev(void *this_) {
   delete (QEasingCurve*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:81
+// [8] QEasingCurve & operator=(const class QEasingCurve &)
+extern "C"
+void* C_ZN12QEasingCurveaSERKS_(void *this_, QEasingCurve* other) {
+  auto& rv = ((QEasingCurve*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:85
+// [8] QEasingCurve & operator=(class QEasingCurve &&)
+extern "C"
+void* C_ZN12QEasingCurveaSEOS_(void *this_, QEasingCurve && other) {
+  auto& rv = ((QEasingCurve*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:89
 // [-2] void swap(class QEasingCurve &)
 extern "C"
 void C_ZN12QEasingCurve4swapERS_(void *this_, QEasingCurve* other) {
   ((QEasingCurve*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:91
+// [1] bool operator==(const class QEasingCurve &)
+extern "C"
+bool C_ZNK12QEasingCurveeqERKS_(void *this_, QEasingCurve* other) {
+  return (bool)((QEasingCurve*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:92
+// [1] bool operator!=(const class QEasingCurve &)
+extern "C"
+bool C_ZNK12QEasingCurveneERKS_(void *this_, QEasingCurve* other) {
+  return (bool)((QEasingCurve*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:95

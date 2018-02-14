@@ -26,6 +26,14 @@ extern "C"
 void* C_ZN30QXmlStreamNamespaceDeclarationC2Ev() {
   return  new QXmlStreamNamespaceDeclaration();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:209
+// [40] QXmlStreamNamespaceDeclaration & operator=(class QXmlStreamNamespaceDeclaration &&)
+extern "C"
+void* C_ZN30QXmlStreamNamespaceDeclarationaSEOS_(void *this_, QXmlStreamNamespaceDeclaration && other) {
+  auto& rv = ((QXmlStreamNamespaceDeclaration*)this_)->operator=(other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:216
 // [-2] void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
@@ -39,6 +47,14 @@ void* C_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_(QString* prefix, QStr
 extern "C"
 void C_ZN30QXmlStreamNamespaceDeclarationD2Ev(void *this_) {
   delete (QXmlStreamNamespaceDeclaration*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:218
+// [40] QXmlStreamNamespaceDeclaration & operator=(const class QXmlStreamNamespaceDeclaration &)
+extern "C"
+void* C_ZN30QXmlStreamNamespaceDeclarationaSERKS_(void *this_, QXmlStreamNamespaceDeclaration* arg0) {
+  auto& rv = ((QXmlStreamNamespaceDeclaration*)this_)->operator=(*arg0);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:221
@@ -55,5 +71,19 @@ extern "C"
 void* C_ZNK30QXmlStreamNamespaceDeclaration12namespaceUriEv(void *this_) {
   auto rv = ((QXmlStreamNamespaceDeclaration*)this_)->namespaceUri();
 return new QStringRef(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:223
+// [1] bool operator==(const class QXmlStreamNamespaceDeclaration &)
+extern "C"
+bool C_ZNK30QXmlStreamNamespaceDeclarationeqERKS_(void *this_, QXmlStreamNamespaceDeclaration* other) {
+  return (bool)((QXmlStreamNamespaceDeclaration*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:226
+// [1] bool operator!=(const class QXmlStreamNamespaceDeclaration &)
+extern "C"
+bool C_ZNK30QXmlStreamNamespaceDeclarationneERKS_(void *this_, QXmlStreamNamespaceDeclaration* other) {
+  return (bool)((QXmlStreamNamespaceDeclaration*)this_)->operator!=(*other);
 }
 //  main block end

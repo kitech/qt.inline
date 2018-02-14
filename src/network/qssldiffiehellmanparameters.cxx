@@ -39,6 +39,22 @@ extern "C"
 void C_ZN27QSslDiffieHellmanParametersD2Ev(void *this_) {
   delete (QSslDiffieHellmanParameters*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:89
+// [8] QSslDiffieHellmanParameters & operator=(const class QSslDiffieHellmanParameters &)
+extern "C"
+void* C_ZN27QSslDiffieHellmanParametersaSERKS_(void *this_, QSslDiffieHellmanParameters* other) {
+  auto& rv = ((QSslDiffieHellmanParameters*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:90
+// [8] QSslDiffieHellmanParameters & operator=(class QSslDiffieHellmanParameters &&)
+extern "C"
+void* C_ZN27QSslDiffieHellmanParametersaSEOS_(void *this_, QSslDiffieHellmanParameters && other) {
+  auto& rv = ((QSslDiffieHellmanParameters*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:92
 // [-2] void swap(class QSslDiffieHellmanParameters &)

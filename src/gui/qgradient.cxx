@@ -80,6 +80,20 @@ extern "C"
 void C_ZN9QGradient20setInterpolationModeENS_17InterpolationModeE(void *this_, QGradient::InterpolationMode mode) {
   ((QGradient*)this_)->setInterpolationMode(mode);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:224
+// [1] bool operator==(const class QGradient &)
+extern "C"
+bool C_ZNK9QGradienteqERKS_(void *this_, QGradient* gradient) {
+  return (bool)((QGradient*)this_)->operator==(*gradient);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:225
+// [1] bool operator!=(const class QGradient &)
+extern "C"
+bool C_ZNK9QGradientneERKS_(void *this_, QGradient* other) {
+  return (bool)((QGradient*)this_)->operator!=(*other);
+}
 
 extern "C"
 void C_ZN9QGradientD2Ev(void *this_) {

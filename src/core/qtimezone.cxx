@@ -58,12 +58,42 @@ extern "C"
 void C_ZN9QTimeZoneD2Ev(void *this_) {
   delete (QTimeZone*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimezone.h:101
+// [8] QTimeZone & operator=(const class QTimeZone &)
+extern "C"
+void* C_ZN9QTimeZoneaSERKS_(void *this_, QTimeZone* other) {
+  auto& rv = ((QTimeZone*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimezone.h:103
+// [8] QTimeZone & operator=(class QTimeZone &&)
+extern "C"
+void* C_ZN9QTimeZoneaSEOS_(void *this_, QTimeZone && other) {
+  auto& rv = ((QTimeZone*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:106
 // [-2] void swap(class QTimeZone &)
 extern "C"
 void C_ZN9QTimeZone4swapERS_(void *this_, QTimeZone* other) {
   ((QTimeZone*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimezone.h:109
+// [1] bool operator==(const class QTimeZone &)
+extern "C"
+bool C_ZNK9QTimeZoneeqERKS_(void *this_, QTimeZone* other) {
+  return (bool)((QTimeZone*)this_)->operator==(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimezone.h:110
+// [1] bool operator!=(const class QTimeZone &)
+extern "C"
+bool C_ZNK9QTimeZoneneERKS_(void *this_, QTimeZone* other) {
+  return (bool)((QTimeZone*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:112

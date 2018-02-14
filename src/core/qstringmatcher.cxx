@@ -50,6 +50,14 @@ void C_ZN14QStringMatcherD2Ev(void *this_) {
   delete (QStringMatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringmatcher.h:61
+// [1048] QStringMatcher & operator=(const class QStringMatcher &)
+extern "C"
+void* C_ZN14QStringMatcheraSERKS_(void *this_, QStringMatcher* other) {
+  auto& rv = ((QStringMatcher*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:63
 // [-2] void setPattern(const class QString &)
 extern "C"

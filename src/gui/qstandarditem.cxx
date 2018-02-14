@@ -21,6 +21,18 @@ MyQStandardItem(const QString & text) : QStandardItem(text) {}
 MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, text) {}
 // void QStandardItem(int, int)
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
+// QStandardItem & operator=(const class QStandardItem &)
+  virtual QStandardItem & operator=(const QStandardItem & other) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"operator=", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QStandardItem &)(irv);
+      // LValueReferenceLValueReferenceQStandardItem &
+    } else {
+    return QStandardItem::operator=(other);
+  }
+  }
+
 // void emitDataChanged()
   virtual void emitDataChanged() {
     int handled = 0;
@@ -610,5 +622,12 @@ void C_ZN13QStandardItem4readER11QDataStream(void *this_, QDataStream* in) {
 extern "C"
 void C_ZNK13QStandardItem5writeER11QDataStream(void *this_, QDataStream* out) {
   ((QStandardItem*)this_)->write(*out);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:243
+// [1] bool operator<(const class QStandardItem &)
+extern "C"
+bool C_ZNK13QStandardItemltERKS_(void *this_, QStandardItem* other) {
+  return (bool)((QStandardItem*)this_)->operator<(*other);
 }
 //  main block end

@@ -129,6 +129,22 @@ extern "C"
 void C_ZN8QPicture15setBoundingRectERK5QRect(void *this_, QRect* r) {
   ((QPicture*)this_)->setBoundingRect(*r);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:80
+// [32] QPicture & operator=(const class QPicture &)
+extern "C"
+void* C_ZN8QPictureaSERKS_(void *this_, QPicture* p) {
+  auto& rv = ((QPicture*)this_)->operator=(*p);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:82
+// [32] QPicture & operator=(class QPicture &&)
+extern "C"
+void* C_ZN8QPictureaSEOS_(void *this_, QPicture && other) {
+  auto& rv = ((QPicture*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:85
 // [-2] void swap(class QPicture &)

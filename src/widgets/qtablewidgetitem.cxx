@@ -314,6 +314,13 @@ void C_ZN16QTableWidgetItem7setDataEiRK8QVariant(void *this_, int role, QVariant
   ((QTableWidgetItem*)this_)->setData(role, *value);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:167
+// [1] bool operator<(const class QTableWidgetItem &)
+extern "C"
+bool C_ZNK16QTableWidgetItemltERKS_(void *this_, QTableWidgetItem* other) {
+  return (bool)((QTableWidgetItem*)this_)->operator<(*other);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:170
 // [-2] void read(class QDataStream &)
 extern "C"
@@ -326,6 +333,14 @@ void C_ZN16QTableWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
 extern "C"
 void C_ZNK16QTableWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) {
   ((QTableWidgetItem*)this_)->write(*out);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:173
+// [48] QTableWidgetItem & operator=(const class QTableWidgetItem &)
+extern "C"
+void* C_ZN16QTableWidgetItemaSERKS_(void *this_, QTableWidgetItem* other) {
+  auto& rv = ((QTableWidgetItem*)this_)->operator=(*other);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:175

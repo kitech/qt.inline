@@ -58,6 +58,22 @@ extern "C"
 void C_ZN4QPenD2Ev(void *this_) {
   delete (QPen*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:72
+// [8] QPen & operator=(const class QPen &)
+extern "C"
+void* C_ZN4QPenaSERKS_(void *this_, QPen* pen) {
+  auto& rv = ((QPen*)this_)->operator=(*pen);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:76
+// [8] QPen & operator=(class QPen &&)
+extern "C"
+void* C_ZN4QPenaSEOS_(void *this_, QPen && other) {
+  auto& rv = ((QPen*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:79
 // [-2] void swap(class QPen &)
@@ -213,6 +229,20 @@ bool C_ZNK4QPen10isCosmeticEv(void *this_) {
 extern "C"
 void C_ZN4QPen11setCosmeticEb(void *this_, bool cosmetic) {
   ((QPen*)this_)->setCosmetic(cosmetic);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:116
+// [1] bool operator==(const class QPen &)
+extern "C"
+bool C_ZNK4QPeneqERKS_(void *this_, QPen* p) {
+  return (bool)((QPen*)this_)->operator==(*p);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:117
+// [1] bool operator!=(const class QPen &)
+extern "C"
+bool C_ZNK4QPenneERKS_(void *this_, QPen* p) {
+  return (bool)((QPen*)this_)->operator!=(*p);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:120

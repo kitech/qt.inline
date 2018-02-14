@@ -32,11 +32,41 @@ void C_ZN19QProcessEnvironmentD2Ev(void *this_) {
   delete (QProcessEnvironment*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:74
+// [8] QProcessEnvironment & operator=(class QProcessEnvironment &&)
+extern "C"
+void* C_ZN19QProcessEnvironmentaSEOS_(void *this_, QProcessEnvironment && other) {
+  auto& rv = ((QProcessEnvironment*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:76
+// [8] QProcessEnvironment & operator=(const class QProcessEnvironment &)
+extern "C"
+void* C_ZN19QProcessEnvironmentaSERKS_(void *this_, QProcessEnvironment* other) {
+  auto& rv = ((QProcessEnvironment*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:78
 // [-2] void swap(class QProcessEnvironment &)
 extern "C"
 void C_ZN19QProcessEnvironment4swapERS_(void *this_, QProcessEnvironment* other) {
   ((QProcessEnvironment*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:80
+// [1] bool operator==(const class QProcessEnvironment &)
+extern "C"
+bool C_ZNK19QProcessEnvironmenteqERKS_(void *this_, QProcessEnvironment* other) {
+  return (bool)((QProcessEnvironment*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:81
+// [1] bool operator!=(const class QProcessEnvironment &)
+extern "C"
+bool C_ZNK19QProcessEnvironmentneERKS_(void *this_, QProcessEnvironment* other) {
+  return (bool)((QProcessEnvironment*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:84

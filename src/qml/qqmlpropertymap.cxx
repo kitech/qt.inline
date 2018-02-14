@@ -103,6 +103,22 @@ bool C_ZNK15QQmlPropertyMap8containsERK7QString(void *this_, QString* key) {
   return (bool)((QQmlPropertyMap*)this_)->contains(*key);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlpropertymap.h:72
+// [16] QVariant & operator[](const class QString &)
+extern "C"
+void* C_ZN15QQmlPropertyMapixERK7QString(void *this_, QString* key) {
+  auto& rv = ((QQmlPropertyMap*)this_)->operator[](*key);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlpropertymap.h:73
+// [16] QVariant operator[](const class QString &)
+extern "C"
+void* C_ZNK15QQmlPropertyMapixERK7QString(void *this_, QString* key) {
+  auto rv = ((QQmlPropertyMap*)this_)->operator[](*key);
+return new QVariant(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:76
 // [-2] void valueChanged(const class QString &, const class QVariant &)
 extern "C"

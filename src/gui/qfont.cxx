@@ -381,11 +381,48 @@ bool C_ZNK5QFont10exactMatchEv(void *this_) {
   return (bool)((QFont*)this_)->exactMatch();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:249
+// [16] QFont & operator=(const class QFont &)
+extern "C"
+void* C_ZN5QFontaSERKS_(void *this_, QFont* arg0) {
+  auto& rv = ((QFont*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:250
+// [1] bool operator==(const class QFont &)
+extern "C"
+bool C_ZNK5QFonteqERKS_(void *this_, QFont* arg0) {
+  return (bool)((QFont*)this_)->operator==(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:251
+// [1] bool operator!=(const class QFont &)
+extern "C"
+bool C_ZNK5QFontneERKS_(void *this_, QFont* arg0) {
+  return (bool)((QFont*)this_)->operator!=(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:252
+// [1] bool operator<(const class QFont &)
+extern "C"
+bool C_ZNK5QFontltERKS_(void *this_, QFont* arg0) {
+  return (bool)((QFont*)this_)->operator<(*arg0);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:254
 // [1] bool isCopyOf(const class QFont &)
 extern "C"
 bool C_ZNK5QFont8isCopyOfERKS_(void *this_, QFont* arg0) {
   return (bool)((QFont*)this_)->isCopyOf(*arg0);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:256
+// [16] QFont & operator=(class QFont &&)
+extern "C"
+void* C_ZN5QFontaSEOS_(void *this_, QFont && other) {
+  auto& rv = ((QFont*)this_)->operator=(other);
+return &rv;
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:262

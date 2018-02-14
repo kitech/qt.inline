@@ -43,11 +43,41 @@ void* C_ZN9QUrlQueryC2ERK7QString(QString* queryString) {
   return  new QUrlQuery(*queryString);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:63
+// [8] QUrlQuery & operator=(const class QUrlQuery &)
+extern "C"
+void* C_ZN9QUrlQueryaSERKS_(void *this_, QUrlQuery* other) {
+  auto& rv = ((QUrlQuery*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:65
+// [8] QUrlQuery & operator=(class QUrlQuery &&)
+extern "C"
+void* C_ZN9QUrlQueryaSEOS_(void *this_, QUrlQuery && other) {
+  auto& rv = ((QUrlQuery*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:67
 // [-2] void ~QUrlQuery()
 extern "C"
 void C_ZN9QUrlQueryD2Ev(void *this_) {
   delete (QUrlQuery*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:69
+// [1] bool operator==(const class QUrlQuery &)
+extern "C"
+bool C_ZNK9QUrlQueryeqERKS_(void *this_, QUrlQuery* other) {
+  return (bool)((QUrlQuery*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:70
+// [1] bool operator!=(const class QUrlQuery &)
+extern "C"
+bool C_ZNK9QUrlQueryneERKS_(void *this_, QUrlQuery* other) {
+  return (bool)((QUrlQuery*)this_)->operator!=(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:73

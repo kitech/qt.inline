@@ -100,6 +100,38 @@ void* C_ZN7QPointF2ryEv(void *this_) {
   auto& rv = ((QPointF*)this_)->ry();
 return &rv;
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:238
+// [16] QPointF & operator+=(const class QPointF &)
+extern "C"
+void* C_ZN7QPointFpLERKS_(void *this_, QPointF* p) {
+  auto& rv = ((QPointF*)this_)->operator+=(*p);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:239
+// [16] QPointF & operator-=(const class QPointF &)
+extern "C"
+void* C_ZN7QPointFmIERKS_(void *this_, QPointF* p) {
+  auto& rv = ((QPointF*)this_)->operator-=(*p);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:240
+// [16] QPointF & operator*=(qreal)
+extern "C"
+void* C_ZN7QPointFmLEd(void *this_, qreal c) {
+  auto& rv = ((QPointF*)this_)->operator*=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:241
+// [16] QPointF & operator/=(qreal)
+extern "C"
+void* C_ZN7QPointFdVEd(void *this_, qreal c) {
+  auto& rv = ((QPointF*)this_)->operator/=(c);
+return &rv;
+}
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:243
 // [8] qreal dotProduct(const class QPointF &, const class QPointF &)

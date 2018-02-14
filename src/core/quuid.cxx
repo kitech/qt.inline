@@ -115,6 +115,34 @@ extern "C"
 bool C_ZNK5QUuid6isNullEv(void *this_) {
   return (bool)((QUuid*)this_)->isNull();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:130
+// [1] bool operator==(const class QUuid &)
+extern "C"
+bool C_ZNK5QUuideqERKS_(void *this_, QUuid* orig) {
+  return (bool)((QUuid*)this_)->operator==(*orig);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:143
+// [1] bool operator!=(const class QUuid &)
+extern "C"
+bool C_ZNK5QUuidneERKS_(void *this_, QUuid* orig) {
+  return (bool)((QUuid*)this_)->operator!=(*orig);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:148
+// [1] bool operator<(const class QUuid &)
+extern "C"
+bool C_ZNK5QUuidltERKS_(void *this_, QUuid* other) {
+  return (bool)((QUuid*)this_)->operator<(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:149
+// [1] bool operator>(const class QUuid &)
+extern "C"
+bool C_ZNK5QUuidgtERKS_(void *this_, QUuid* other) {
+  return (bool)((QUuid*)this_)->operator>(*other);
+}
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:192
 // [16] QUuid createUuid()

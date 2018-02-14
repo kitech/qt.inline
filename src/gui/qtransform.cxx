@@ -60,6 +60,22 @@ extern "C"
 void* C_ZN10QTransformC2ERK7QMatrix(QMatrix* mtx) {
   return  new QTransform(*mtx);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:80
+// [88] QTransform & operator=(class QTransform &&)
+extern "C"
+void* C_ZN10QTransformaSEOS_(void *this_, QTransform && other) {
+  auto& rv = ((QTransform*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:82
+// [88] QTransform & operator=(const class QTransform &)
+extern "C"
+void* C_ZN10QTransformaSERKS_(void *this_, QTransform* arg0) {
+  auto& rv = ((QTransform*)this_)->operator=(*arg0);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:91
 // [1] bool isAffine()
@@ -293,6 +309,36 @@ bool C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(QPolygonF* one, QPolygonF* 
   return (bool)QTransform::quadToQuad(*one, *two, *result);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:135
+// [1] bool operator==(const class QTransform &)
+extern "C"
+bool C_ZNK10QTransformeqERKS_(void *this_, QTransform* arg0) {
+  return (bool)((QTransform*)this_)->operator==(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:136
+// [1] bool operator!=(const class QTransform &)
+extern "C"
+bool C_ZNK10QTransformneERKS_(void *this_, QTransform* arg0) {
+  return (bool)((QTransform*)this_)->operator!=(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:138
+// [88] QTransform & operator*=(const class QTransform &)
+extern "C"
+void* C_ZN10QTransformmLERKS_(void *this_, QTransform* arg0) {
+  auto& rv = ((QTransform*)this_)->operator*=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:139
+// [88] QTransform operator*(const class QTransform &)
+extern "C"
+void* C_ZNK10QTransformmlERKS_(void *this_, QTransform* o) {
+  auto rv = ((QTransform*)this_)->operator*(*o);
+return new QTransform(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:143
 // [-2] void reset()
 extern "C"
@@ -408,6 +454,38 @@ extern "C"
 void* C_ZNK10QTransform8toAffineEv(void *this_) {
   auto& rv = ((QTransform*)this_)->toAffine();
 return new QMatrix(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:160
+// [88] QTransform & operator*=(qreal)
+extern "C"
+void* C_ZN10QTransformmLEd(void *this_, qreal div) {
+  auto& rv = ((QTransform*)this_)->operator*=(div);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:161
+// [88] QTransform & operator/=(qreal)
+extern "C"
+void* C_ZN10QTransformdVEd(void *this_, qreal div) {
+  auto& rv = ((QTransform*)this_)->operator/=(div);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:162
+// [88] QTransform & operator+=(qreal)
+extern "C"
+void* C_ZN10QTransformpLEd(void *this_, qreal div) {
+  auto& rv = ((QTransform*)this_)->operator+=(div);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:163
+// [88] QTransform & operator-=(qreal)
+extern "C"
+void* C_ZN10QTransformmIEd(void *this_, qreal div) {
+  auto& rv = ((QTransform*)this_)->operator-=(div);
+return &rv;
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:165

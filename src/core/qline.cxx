@@ -173,6 +173,20 @@ extern "C"
 void C_ZN5QLine7setLineEiiii(void *this_, int x1, int y1, int x2, int y2) {
   ((QLine*)this_)->setLine(x1, y1, x2, y2);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qline.h:86
+// [1] bool operator==(const class QLine &)
+extern "C"
+bool C_ZNK5QLineeqERKS_(void *this_, QLine* d) {
+  return (bool)((QLine*)this_)->operator==(*d);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qline.h:87
+// [1] bool operator!=(const class QLine &)
+extern "C"
+bool C_ZNK5QLineneERKS_(void *this_, QLine* d) {
+  return (bool)((QLine*)this_)->operator!=(*d);
+}
 
 extern "C"
 void C_ZN5QLineD2Ev(void *this_) {

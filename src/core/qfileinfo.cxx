@@ -58,12 +58,42 @@ extern "C"
 void C_ZN9QFileInfoD2Ev(void *this_) {
   delete (QFileInfo*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:69
+// [8] QFileInfo & operator=(const class QFileInfo &)
+extern "C"
+void* C_ZN9QFileInfoaSERKS_(void *this_, QFileInfo* fileinfo) {
+  auto& rv = ((QFileInfo*)this_)->operator=(*fileinfo);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:71
+// [8] QFileInfo & operator=(class QFileInfo &&)
+extern "C"
+void* C_ZN9QFileInfoaSEOS_(void *this_, QFileInfo && other) {
+  auto& rv = ((QFileInfo*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:74
 // [-2] void swap(class QFileInfo &)
 extern "C"
 void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo* other) {
   ((QFileInfo*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:77
+// [1] bool operator==(const class QFileInfo &)
+extern "C"
+bool C_ZNK9QFileInfoeqERKS_(void *this_, QFileInfo* fileinfo) {
+  return (bool)((QFileInfo*)this_)->operator==(*fileinfo);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:78
+// [1] bool operator!=(const class QFileInfo &)
+extern "C"
+bool C_ZNK9QFileInfoneERKS_(void *this_, QFileInfo* fileinfo) {
+  return (bool)((QFileInfo*)this_)->operator!=(*fileinfo);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:80

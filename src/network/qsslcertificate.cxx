@@ -41,11 +41,41 @@ void C_ZN15QSslCertificateD2Ev(void *this_) {
   delete (QSslCertificate*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:94
+// [8] QSslCertificate & operator=(class QSslCertificate &&)
+extern "C"
+void* C_ZN15QSslCertificateaSEOS_(void *this_, QSslCertificate && other) {
+  auto& rv = ((QSslCertificate*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:96
+// [8] QSslCertificate & operator=(const class QSslCertificate &)
+extern "C"
+void* C_ZN15QSslCertificateaSERKS_(void *this_, QSslCertificate* other) {
+  auto& rv = ((QSslCertificate*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:98
 // [-2] void swap(class QSslCertificate &)
 extern "C"
 void C_ZN15QSslCertificate4swapERS_(void *this_, QSslCertificate* other) {
   ((QSslCertificate*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:101
+// [1] bool operator==(const class QSslCertificate &)
+extern "C"
+bool C_ZNK15QSslCertificateeqERKS_(void *this_, QSslCertificate* other) {
+  return (bool)((QSslCertificate*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:102
+// [1] bool operator!=(const class QSslCertificate &)
+extern "C"
+bool C_ZNK15QSslCertificateneERKS_(void *this_, QSslCertificate* other) {
+  return (bool)((QSslCertificate*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:104

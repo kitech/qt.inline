@@ -42,6 +42,22 @@ extern "C"
 void* C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(QByteArray* fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
   return  new QRawFont(*fontData, pixelSize, hintingPreference);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:83
+// [8] QRawFont & operator=(class QRawFont &&)
+extern "C"
+void* C_ZN8QRawFontaSEOS_(void *this_, QRawFont && other) {
+  auto& rv = ((QRawFont*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:85
+// [8] QRawFont & operator=(const class QRawFont &)
+extern "C"
+void* C_ZN8QRawFontaSERKS_(void *this_, QRawFont* other) {
+  auto& rv = ((QRawFont*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:86
 // [-2] void ~QRawFont()
@@ -62,6 +78,20 @@ void C_ZN8QRawFont4swapERS_(void *this_, QRawFont* other) {
 extern "C"
 bool C_ZNK8QRawFont7isValidEv(void *this_) {
   return (bool)((QRawFont*)this_)->isValid();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:92
+// [1] bool operator==(const class QRawFont &)
+extern "C"
+bool C_ZNK8QRawFonteqERKS_(void *this_, QRawFont* other) {
+  return (bool)((QRawFont*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:93
+// [1] bool operator!=(const class QRawFont &)
+extern "C"
+bool C_ZNK8QRawFontneERKS_(void *this_, QRawFont* other) {
+  return (bool)((QRawFont*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:96

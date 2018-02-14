@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN24QSslCertificateExtensionC2Ev() {
   return  new QSslCertificateExtension();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificateextension.h:62
+// [8] QSslCertificateExtension & operator=(class QSslCertificateExtension &&)
+extern "C"
+void* C_ZN24QSslCertificateExtensionaSEOS_(void *this_, QSslCertificateExtension && other) {
+  auto& rv = ((QSslCertificateExtension*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificateextension.h:64
+// [8] QSslCertificateExtension & operator=(const class QSslCertificateExtension &)
+extern "C"
+void* C_ZN24QSslCertificateExtensionaSERKS_(void *this_, QSslCertificateExtension* other) {
+  auto& rv = ((QSslCertificateExtension*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h:65
 // [-2] void ~QSslCertificateExtension()

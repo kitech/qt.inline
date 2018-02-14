@@ -160,6 +160,21 @@ void C_ZN9QVector4D4setWEf(void *this_, float w) {
   ((QVector4D*)this_)->setW(w);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:85
+// [4] float & operator[](int)
+extern "C"
+void* C_ZN9QVector4DixEi(void *this_, int i) {
+  auto& rv = ((QVector4D*)this_)->operator[](i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:86
+// [4] float operator[](int)
+extern "C"
+float C_ZNK9QVector4DixEi(void *this_, int i) {
+  return (float)((QVector4D*)this_)->operator[](i);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:88
 // [4] float length()
 extern "C"
@@ -187,6 +202,54 @@ return new QVector4D(rv);
 extern "C"
 void C_ZN9QVector4D9normalizeEv(void *this_) {
   ((QVector4D*)this_)->normalize();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:94
+// [16] QVector4D & operator+=(const class QVector4D &)
+extern "C"
+void* C_ZN9QVector4DpLERKS_(void *this_, QVector4D* vector) {
+  auto& rv = ((QVector4D*)this_)->operator+=(*vector);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:95
+// [16] QVector4D & operator-=(const class QVector4D &)
+extern "C"
+void* C_ZN9QVector4DmIERKS_(void *this_, QVector4D* vector) {
+  auto& rv = ((QVector4D*)this_)->operator-=(*vector);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:96
+// [16] QVector4D & operator*=(float)
+extern "C"
+void* C_ZN9QVector4DmLEf(void *this_, float factor) {
+  auto& rv = ((QVector4D*)this_)->operator*=(factor);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:97
+// [16] QVector4D & operator*=(const class QVector4D &)
+extern "C"
+void* C_ZN9QVector4DmLERKS_(void *this_, QVector4D* vector) {
+  auto& rv = ((QVector4D*)this_)->operator*=(*vector);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:98
+// [16] QVector4D & operator/=(float)
+extern "C"
+void* C_ZN9QVector4DdVEf(void *this_, float divisor) {
+  auto& rv = ((QVector4D*)this_)->operator/=(divisor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector4d.h:99
+// [16] QVector4D & operator/=(const class QVector4D &)
+extern "C"
+void* C_ZN9QVector4DdVERKS_(void *this_, QVector4D* vector) {
+  auto& rv = ((QVector4D*)this_)->operator/=(*vector);
+return &rv;
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:101

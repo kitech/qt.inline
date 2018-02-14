@@ -31,6 +31,22 @@ extern "C"
 void C_ZN31QRegularExpressionMatchIteratorD2Ev(void *this_) {
   delete (QRegularExpressionMatchIterator*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:252
+// [8] QRegularExpressionMatchIterator & operator=(const class QRegularExpressionMatchIterator &)
+extern "C"
+void* C_ZN31QRegularExpressionMatchIteratoraSERKS_(void *this_, QRegularExpressionMatchIterator* iterator) {
+  auto& rv = ((QRegularExpressionMatchIterator*)this_)->operator=(*iterator);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:254
+// [8] QRegularExpressionMatchIterator & operator=(class QRegularExpressionMatchIterator &&)
+extern "C"
+void* C_ZN31QRegularExpressionMatchIteratoraSEOS_(void *this_, QRegularExpressionMatchIterator && iterator) {
+  auto& rv = ((QRegularExpressionMatchIterator*)this_)->operator=(iterator);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:257
 // [-2] void swap(class QRegularExpressionMatchIterator &)

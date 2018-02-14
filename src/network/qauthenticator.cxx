@@ -32,6 +32,28 @@ void C_ZN14QAuthenticatorD2Ev(void *this_) {
   delete (QAuthenticator*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qauthenticator.h:60
+// [8] QAuthenticator & operator=(const class QAuthenticator &)
+extern "C"
+void* C_ZN14QAuthenticatoraSERKS_(void *this_, QAuthenticator* other) {
+  auto& rv = ((QAuthenticator*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qauthenticator.h:62
+// [1] bool operator==(const class QAuthenticator &)
+extern "C"
+bool C_ZNK14QAuthenticatoreqERKS_(void *this_, QAuthenticator* other) {
+  return (bool)((QAuthenticator*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qauthenticator.h:63
+// [1] bool operator!=(const class QAuthenticator &)
+extern "C"
+bool C_ZNK14QAuthenticatorneERKS_(void *this_, QAuthenticator* other) {
+  return (bool)((QAuthenticator*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:65
 // [8] QString user()
 extern "C"

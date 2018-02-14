@@ -24,12 +24,34 @@ extern "C"
 void* C_ZN19QScrollerPropertiesC2Ev() {
   return  new QScrollerProperties();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:62
+// [16] QScrollerProperties & operator=(const class QScrollerProperties &)
+extern "C"
+void* C_ZN19QScrollerPropertiesaSERKS_(void *this_, QScrollerProperties* sp) {
+  auto& rv = ((QScrollerProperties*)this_)->operator=(*sp);
+return &rv;
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:63
 // [-2] void ~QScrollerProperties()
 extern "C"
 void C_ZN19QScrollerPropertiesD2Ev(void *this_) {
   delete (QScrollerProperties*)(this_);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:65
+// [1] bool operator==(const class QScrollerProperties &)
+extern "C"
+bool C_ZNK19QScrollerPropertieseqERKS_(void *this_, QScrollerProperties* sp) {
+  return (bool)((QScrollerProperties*)this_)->operator==(*sp);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:66
+// [1] bool operator!=(const class QScrollerProperties &)
+extern "C"
+bool C_ZNK19QScrollerPropertiesneERKS_(void *this_, QScrollerProperties* sp) {
+  return (bool)((QScrollerProperties*)this_)->operator!=(*sp);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:68

@@ -136,6 +136,48 @@ extern "C"
 int C_ZNK5QTime7msecsToERKS_(void *this_, QTime* arg0) {
   return (int)((QTime*)this_)->msecsTo(*arg0);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:184
+// [1] bool operator==(const class QTime &)
+extern "C"
+bool C_ZNK5QTimeeqERKS_(void *this_, QTime* other) {
+  return (bool)((QTime*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:185
+// [1] bool operator!=(const class QTime &)
+extern "C"
+bool C_ZNK5QTimeneERKS_(void *this_, QTime* other) {
+  return (bool)((QTime*)this_)->operator!=(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:186
+// [1] bool operator<(const class QTime &)
+extern "C"
+bool C_ZNK5QTimeltERKS_(void *this_, QTime* other) {
+  return (bool)((QTime*)this_)->operator<(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:187
+// [1] bool operator<=(const class QTime &)
+extern "C"
+bool C_ZNK5QTimeleERKS_(void *this_, QTime* other) {
+  return (bool)((QTime*)this_)->operator<=(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:188
+// [1] bool operator>(const class QTime &)
+extern "C"
+bool C_ZNK5QTimegtERKS_(void *this_, QTime* other) {
+  return (bool)((QTime*)this_)->operator>(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:189
+// [1] bool operator>=(const class QTime &)
+extern "C"
+bool C_ZNK5QTimegeERKS_(void *this_, QTime* other) {
+  return (bool)((QTime*)this_)->operator>=(*other);
+}
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:191
 // [4] QTime fromMSecsSinceStartOfDay(int)

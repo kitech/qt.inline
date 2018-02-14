@@ -114,6 +114,21 @@ void C_ZN9QVector2D4setYEf(void *this_, float y) {
   ((QVector2D*)this_)->setY(y);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:79
+// [4] float & operator[](int)
+extern "C"
+void* C_ZN9QVector2DixEi(void *this_, int i) {
+  auto& rv = ((QVector2D*)this_)->operator[](i);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:80
+// [4] float operator[](int)
+extern "C"
+float C_ZNK9QVector2DixEi(void *this_, int i) {
+  return (float)((QVector2D*)this_)->operator[](i);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:82
 // [4] float length()
 extern "C"
@@ -155,6 +170,54 @@ float C_ZNK9QVector2D15distanceToPointERKS_(void *this_, QVector2D* point) {
 extern "C"
 float C_ZNK9QVector2D14distanceToLineERKS_S1_(void *this_, QVector2D* point, QVector2D* direction) {
   return (float)((QVector2D*)this_)->distanceToLine(*point, *direction);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:91
+// [8] QVector2D & operator+=(const class QVector2D &)
+extern "C"
+void* C_ZN9QVector2DpLERKS_(void *this_, QVector2D* vector) {
+  auto& rv = ((QVector2D*)this_)->operator+=(*vector);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:92
+// [8] QVector2D & operator-=(const class QVector2D &)
+extern "C"
+void* C_ZN9QVector2DmIERKS_(void *this_, QVector2D* vector) {
+  auto& rv = ((QVector2D*)this_)->operator-=(*vector);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:93
+// [8] QVector2D & operator*=(float)
+extern "C"
+void* C_ZN9QVector2DmLEf(void *this_, float factor) {
+  auto& rv = ((QVector2D*)this_)->operator*=(factor);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:94
+// [8] QVector2D & operator*=(const class QVector2D &)
+extern "C"
+void* C_ZN9QVector2DmLERKS_(void *this_, QVector2D* vector) {
+  auto& rv = ((QVector2D*)this_)->operator*=(*vector);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:95
+// [8] QVector2D & operator/=(float)
+extern "C"
+void* C_ZN9QVector2DdVEf(void *this_, float divisor) {
+  auto& rv = ((QVector2D*)this_)->operator/=(divisor);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:96
+// [8] QVector2D & operator/=(const class QVector2D &)
+extern "C"
+void* C_ZN9QVector2DdVERKS_(void *this_, QVector2D* vector) {
+  auto& rv = ((QVector2D*)this_)->operator/=(*vector);
+return &rv;
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:98

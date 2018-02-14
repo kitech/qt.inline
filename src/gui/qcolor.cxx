@@ -105,6 +105,30 @@ extern "C"
 void* C_ZN6QColorC2ENS_4SpecE(QColor::Spec spec) {
   return  new QColor(spec);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:87
+// [16] QColor & operator=(class QColor &&)
+extern "C"
+void* C_ZN6QColoraSEOS_(void *this_, QColor && other) {
+  auto& rv = ((QColor*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:90
+// [16] QColor & operator=(const class QColor &)
+extern "C"
+void* C_ZN6QColoraSERKS_(void *this_, QColor* arg0) {
+  auto& rv = ((QColor*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:93
+// [16] QColor & operator=(Qt::GlobalColor)
+extern "C"
+void* C_ZN6QColoraSEN2Qt11GlobalColorE(void *this_, Qt::GlobalColor color) {
+  auto& rv = ((QColor*)this_)->operator=(color);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:95
 // [1] bool isValid()
@@ -766,6 +790,20 @@ extern "C"
 void* C_ZNK6QColor6darkerEi(void *this_, int f) {
   auto rv = ((QColor*)this_)->darker(f);
 return new QColor(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:225
+// [1] bool operator==(const class QColor &)
+extern "C"
+bool C_ZNK6QColoreqERKS_(void *this_, QColor* c) {
+  return (bool)((QColor*)this_)->operator==(*c);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:226
+// [1] bool operator!=(const class QColor &)
+extern "C"
+bool C_ZNK6QColorneERKS_(void *this_, QColor* c) {
+  return (bool)((QColor*)this_)->operator!=(*c);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:231

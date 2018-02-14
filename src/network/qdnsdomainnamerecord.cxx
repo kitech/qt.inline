@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN20QDnsDomainNameRecordC2Ev() {
   return  new QDnsDomainNameRecord();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:66
+// [8] QDnsDomainNameRecord & operator=(class QDnsDomainNameRecord &&)
+extern "C"
+void* C_ZN20QDnsDomainNameRecordaSEOS_(void *this_, QDnsDomainNameRecord && other) {
+  auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:68
+// [8] QDnsDomainNameRecord & operator=(const class QDnsDomainNameRecord &)
+extern "C"
+void* C_ZN20QDnsDomainNameRecordaSERKS_(void *this_, QDnsDomainNameRecord* other) {
+  auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:69
 // [-2] void ~QDnsDomainNameRecord()

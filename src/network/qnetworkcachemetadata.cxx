@@ -32,11 +32,41 @@ void C_ZN21QNetworkCacheMetaDataD2Ev(void *this_) {
   delete (QNetworkCacheMetaData*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:71
+// [8] QNetworkCacheMetaData & operator=(class QNetworkCacheMetaData &&)
+extern "C"
+void* C_ZN21QNetworkCacheMetaDataaSEOS_(void *this_, QNetworkCacheMetaData && other) {
+  auto& rv = ((QNetworkCacheMetaData*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:73
+// [8] QNetworkCacheMetaData & operator=(const class QNetworkCacheMetaData &)
+extern "C"
+void* C_ZN21QNetworkCacheMetaDataaSERKS_(void *this_, QNetworkCacheMetaData* other) {
+  auto& rv = ((QNetworkCacheMetaData*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:75
 // [-2] void swap(class QNetworkCacheMetaData &)
 extern "C"
 void C_ZN21QNetworkCacheMetaData4swapERS_(void *this_, QNetworkCacheMetaData* other) {
   ((QNetworkCacheMetaData*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:78
+// [1] bool operator==(const class QNetworkCacheMetaData &)
+extern "C"
+bool C_ZNK21QNetworkCacheMetaDataeqERKS_(void *this_, QNetworkCacheMetaData* other) {
+  return (bool)((QNetworkCacheMetaData*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:79
+// [1] bool operator!=(const class QNetworkCacheMetaData &)
+extern "C"
+bool C_ZNK21QNetworkCacheMetaDataneERKS_(void *this_, QNetworkCacheMetaData* other) {
+  return (bool)((QNetworkCacheMetaData*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:82

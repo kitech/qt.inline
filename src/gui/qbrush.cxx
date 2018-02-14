@@ -103,6 +103,22 @@ extern "C"
 void C_ZN6QBrushD2Ev(void *this_) {
   delete (QBrush*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:81
+// [8] QBrush & operator=(const class QBrush &)
+extern "C"
+void* C_ZN6QBrushaSERKS_(void *this_, QBrush* brush) {
+  auto& rv = ((QBrush*)this_)->operator=(*brush);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:83
+// [8] QBrush & operator=(class QBrush &&)
+extern "C"
+void* C_ZN6QBrushaSEOS_(void *this_, QBrush && other) {
+  auto& rv = ((QBrush*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:86
 // [-2] void swap(class QBrush &)
@@ -219,6 +235,20 @@ void* C_ZNK6QBrush8gradientEv(void *this_) {
 extern "C"
 bool C_ZNK6QBrush8isOpaqueEv(void *this_) {
   return (bool)((QBrush*)this_)->isOpaque();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:114
+// [1] bool operator==(const class QBrush &)
+extern "C"
+bool C_ZNK6QBrusheqERKS_(void *this_, QBrush* b) {
+  return (bool)((QBrush*)this_)->operator==(*b);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:115
+// [1] bool operator!=(const class QBrush &)
+extern "C"
+bool C_ZNK6QBrushneERKS_(void *this_, QBrush* b) {
+  return (bool)((QBrush*)this_)->operator!=(*b);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:129

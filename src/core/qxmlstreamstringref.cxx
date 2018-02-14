@@ -52,6 +52,22 @@ void* C_ZN19QXmlStreamStringRefC2EO7QString(QString && aString) {
   return  new QXmlStreamStringRef(aString);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:72
+// [16] QXmlStreamStringRef & operator=(class QXmlStreamStringRef &&)
+extern "C"
+void* C_ZN19QXmlStreamStringRefaSEOS_(void *this_, QXmlStreamStringRef && other) {
+  auto& rv = ((QXmlStreamStringRef*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:75
+// [16] QXmlStreamStringRef & operator=(const class QXmlStreamStringRef &)
+extern "C"
+void* C_ZN19QXmlStreamStringRefaSERKS_(void *this_, QXmlStreamStringRef* other) {
+  auto& rv = ((QXmlStreamStringRef*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:77
 // [-2] void ~QXmlStreamStringRef()
 extern "C"

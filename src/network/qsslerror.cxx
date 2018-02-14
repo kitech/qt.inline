@@ -56,6 +56,36 @@ extern "C"
 void C_ZN9QSslErrorD2Ev(void *this_) {
   delete (QSslError*)(this_);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:99
+// [8] QSslError & operator=(class QSslError &&)
+extern "C"
+void* C_ZN9QSslErroraSEOS_(void *this_, QSslError && other) {
+  auto& rv = ((QSslError*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:101
+// [8] QSslError & operator=(const class QSslError &)
+extern "C"
+void* C_ZN9QSslErroraSERKS_(void *this_, QSslError* other) {
+  auto& rv = ((QSslError*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:102
+// [1] bool operator==(const class QSslError &)
+extern "C"
+bool C_ZNK9QSslErroreqERKS_(void *this_, QSslError* other) {
+  return (bool)((QSslError*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:103
+// [1] bool operator!=(const class QSslError &)
+extern "C"
+bool C_ZNK9QSslErrorneERKS_(void *this_, QSslError* other) {
+  return (bool)((QSslError*)this_)->operator!=(*other);
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:106
 // [4] QSslError::SslError error()

@@ -31,6 +31,13 @@ quint64 C_ZN18QRandomGenerator648generateEv(void *this_) {
   return (quint64)((QRandomGenerator64*)this_)->generate();
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:212
+// [8] QRandomGenerator64::result_type operator()()
+extern "C"
+QRandomGenerator64::result_type C_ZN18QRandomGenerator64clEv(void *this_) {
+  return (QRandomGenerator64::result_type)((QRandomGenerator64*)this_)->operator()();
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:215
 // [-2] void QRandomGenerator64(quint32)
 extern "C"

@@ -77,6 +77,38 @@ void C_ZN12QHostAddressD2Ev(void *this_) {
   delete (QHostAddress*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:106
+// [8] QHostAddress & operator=(class QHostAddress &&)
+extern "C"
+void* C_ZN12QHostAddressaSEOS_(void *this_, QHostAddress && other) {
+  auto& rv = ((QHostAddress*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:110
+// [8] QHostAddress & operator=(const class QHostAddress &)
+extern "C"
+void* C_ZN12QHostAddressaSERKS_(void *this_, QHostAddress* other) {
+  auto& rv = ((QHostAddress*)this_)->operator=(*other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:113
+// [8] QHostAddress & operator=(const class QString &)
+extern "C"
+void* C_ZN12QHostAddressaSERK7QString(void *this_, QString* address) {
+  auto& rv = ((QHostAddress*)this_)->operator=(*address);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:115
+// [8] QHostAddress & operator=(enum QHostAddress::SpecialAddress)
+extern "C"
+void* C_ZN12QHostAddressaSENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
+  auto& rv = ((QHostAddress*)this_)->operator=(address);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:117
 // [-2] void swap(class QHostAddress &)
 extern "C"
@@ -176,6 +208,34 @@ void C_ZN12QHostAddress10setScopeIdERK7QString(void *this_, QString* id) {
 extern "C"
 bool C_ZNK12QHostAddress7isEqualERKS_6QFlagsINS_18ConversionModeFlagEE(void *this_, QHostAddress* address, QFlags<QHostAddress::ConversionModeFlag> mode) {
   return (bool)((QHostAddress*)this_)->isEqual(*address, mode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:138
+// [1] bool operator==(const class QHostAddress &)
+extern "C"
+bool C_ZNK12QHostAddresseqERKS_(void *this_, QHostAddress* address) {
+  return (bool)((QHostAddress*)this_)->operator==(*address);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:139
+// [1] bool operator==(enum QHostAddress::SpecialAddress)
+extern "C"
+bool C_ZNK12QHostAddresseqENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
+  return (bool)((QHostAddress*)this_)->operator==(address);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:140
+// [1] bool operator!=(const class QHostAddress &)
+extern "C"
+bool C_ZNK12QHostAddressneERKS_(void *this_, QHostAddress* address) {
+  return (bool)((QHostAddress*)this_)->operator!=(*address);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:142
+// [1] bool operator!=(enum QHostAddress::SpecialAddress)
+extern "C"
+bool C_ZNK12QHostAddressneENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
+  return (bool)((QHostAddress*)this_)->operator!=(address);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:144

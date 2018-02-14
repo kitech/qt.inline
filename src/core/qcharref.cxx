@@ -16,6 +16,70 @@ public:
 };
 
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1036
+// [16] QCharRef & operator=(class QChar)
+extern "C"
+void* C_ZN8QCharRefaSE5QChar(void *this_, QChar* c) {
+  auto& rv = ((QCharRef*)this_)->operator=(*c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1042
+// [16] QCharRef & operator=(char)
+extern "C"
+void* C_ZN8QCharRefaSEc(void *this_, char c) {
+  auto& rv = ((QCharRef*)this_)->operator=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1044
+// [16] QCharRef & operator=(uchar)
+extern "C"
+void* C_ZN8QCharRefaSEh(void *this_, uchar c) {
+  auto& rv = ((QCharRef*)this_)->operator=(c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1047
+// [16] QCharRef & operator=(const class QCharRef &)
+extern "C"
+void* C_ZN8QCharRefaSERKS_(void *this_, QCharRef* c) {
+  auto& rv = ((QCharRef*)this_)->operator=(*c);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1048
+// [16] QCharRef & operator=(ushort)
+extern "C"
+void* C_ZN8QCharRefaSEt(void *this_, ushort rc) {
+  auto& rv = ((QCharRef*)this_)->operator=(rc);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1049
+// [16] QCharRef & operator=(short)
+extern "C"
+void* C_ZN8QCharRefaSEs(void *this_, short rc) {
+  auto& rv = ((QCharRef*)this_)->operator=(rc);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1050
+// [16] QCharRef & operator=(uint)
+extern "C"
+void* C_ZN8QCharRefaSEj(void *this_, uint rc) {
+  auto& rv = ((QCharRef*)this_)->operator=(rc);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1051
+// [16] QCharRef & operator=(int)
+extern "C"
+void* C_ZN8QCharRefaSEi(void *this_, int rc) {
+  auto& rv = ((QCharRef*)this_)->operator=(rc);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1054
 // [1] bool isNull()
 extern "C"

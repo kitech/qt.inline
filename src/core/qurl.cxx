@@ -27,11 +27,35 @@ void* C_ZN4QUrlC2Ev() {
   return  new QUrl();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:178
+// [8] QUrl & operator=(const class QUrl &)
+extern "C"
+void* C_ZN4QUrlaSERKS_(void *this_, QUrl* copy) {
+  auto& rv = ((QUrl*)this_)->operator=(*copy);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:182
 // [-2] void QUrl(const class QString &, enum QUrl::ParsingMode)
 extern "C"
 void* C_ZN4QUrlC2ERK7QStringNS_11ParsingModeE(QString* url, QUrl::ParsingMode mode) {
   return  new QUrl(*url, mode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:183
+// [8] QUrl & operator=(const class QString &)
+extern "C"
+void* C_ZN4QUrlaSERK7QString(void *this_, QString* url) {
+  auto& rv = ((QUrl*)this_)->operator=(*url);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:188
+// [8] QUrl & operator=(class QUrl &&)
+extern "C"
+void* C_ZN4QUrlaSEOS_(void *this_, QUrl && other) {
+  auto& rv = ((QUrl*)this_)->operator=(other);
+return &rv;
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:191
@@ -271,6 +295,27 @@ void C_ZN4QUrl6detachEv(void *this_) {
 extern "C"
 bool C_ZNK4QUrl10isDetachedEv(void *this_) {
   return (bool)((QUrl*)this_)->isDetached();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:270
+// [1] bool operator<(const class QUrl &)
+extern "C"
+bool C_ZNK4QUrlltERKS_(void *this_, QUrl* url) {
+  return (bool)((QUrl*)this_)->operator<(*url);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:271
+// [1] bool operator==(const class QUrl &)
+extern "C"
+bool C_ZNK4QUrleqERKS_(void *this_, QUrl* url) {
+  return (bool)((QUrl*)this_)->operator==(*url);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:272
+// [1] bool operator!=(const class QUrl &)
+extern "C"
+bool C_ZNK4QUrlneERKS_(void *this_, QUrl* url) {
+  return (bool)((QUrl*)this_)->operator!=(*url);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:276

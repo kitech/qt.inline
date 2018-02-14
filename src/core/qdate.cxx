@@ -211,6 +211,48 @@ extern "C"
 qint64 C_ZNK5QDate6daysToERKS_(void *this_, QDate* arg0) {
   return (qint64)((QDate*)this_)->daysTo(*arg0);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:118
+// [1] bool operator==(const class QDate &)
+extern "C"
+bool C_ZNK5QDateeqERKS_(void *this_, QDate* other) {
+  return (bool)((QDate*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:119
+// [1] bool operator!=(const class QDate &)
+extern "C"
+bool C_ZNK5QDateneERKS_(void *this_, QDate* other) {
+  return (bool)((QDate*)this_)->operator!=(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:120
+// [1] bool operator<(const class QDate &)
+extern "C"
+bool C_ZNK5QDateltERKS_(void *this_, QDate* other) {
+  return (bool)((QDate*)this_)->operator<(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:121
+// [1] bool operator<=(const class QDate &)
+extern "C"
+bool C_ZNK5QDateleERKS_(void *this_, QDate* other) {
+  return (bool)((QDate*)this_)->operator<=(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:122
+// [1] bool operator>(const class QDate &)
+extern "C"
+bool C_ZNK5QDategtERKS_(void *this_, QDate* other) {
+  return (bool)((QDate*)this_)->operator>(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:123
+// [1] bool operator>=(const class QDate &)
+extern "C"
+bool C_ZNK5QDategeERKS_(void *this_, QDate* other) {
+  return (bool)((QDate*)this_)->operator>=(*other);
+}
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:125
 // [8] QDate currentDate()

@@ -31,6 +31,14 @@ extern "C"
 void C_ZN6QEventD2Ev(void *this_) {
   delete (QEvent*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:300
+// [24] QEvent & operator=(const class QEvent &)
+extern "C"
+void* C_ZN6QEventaSERKS_(void *this_, QEvent* other) {
+  auto& rv = ((QEvent*)this_)->operator=(*other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:301
 // [4] QEvent::Type type()

@@ -34,6 +34,14 @@ void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const 
   return  new QQmlListReference(arg0, property, arg2);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmllist.h:145
+// [8] QQmlListReference & operator=(const class QQmlListReference &)
+extern "C"
+void* C_ZN17QQmlListReferenceaSERKS_(void *this_, QQmlListReference* arg0) {
+  auto& rv = ((QQmlListReference*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmllist.h:146
 // [-2] void ~QQmlListReference()
 extern "C"

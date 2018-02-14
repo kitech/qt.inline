@@ -29,6 +29,22 @@ void* C_ZN19QItemSelectionRangeC2Ev() {
   return  new QItemSelectionRange();
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:64
+// [16] QItemSelectionRange & operator=(class QItemSelectionRange &&)
+extern "C"
+void* C_ZN19QItemSelectionRangeaSEOS_(void *this_, QItemSelectionRange && other) {
+  auto& rv = ((QItemSelectionRange*)this_)->operator=(other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:67
+// [16] QItemSelectionRange & operator=(const class QItemSelectionRange &)
+extern "C"
+void* C_ZN19QItemSelectionRangeaSERKS_(void *this_, QItemSelectionRange* other) {
+  auto& rv = ((QItemSelectionRange*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:70
 // [-2] void QItemSelectionRange(const class QModelIndex &, const class QModelIndex &)
 extern "C"
@@ -150,6 +166,27 @@ extern "C"
 void* C_ZNK19QItemSelectionRange11intersectedERKS_(void *this_, QItemSelectionRange* other) {
   auto rv = ((QItemSelectionRange*)this_)->intersected(*other);
 return new QItemSelectionRange(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:113
+// [1] bool operator==(const class QItemSelectionRange &)
+extern "C"
+bool C_ZNK19QItemSelectionRangeeqERKS_(void *this_, QItemSelectionRange* other) {
+  return (bool)((QItemSelectionRange*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:115
+// [1] bool operator!=(const class QItemSelectionRange &)
+extern "C"
+bool C_ZNK19QItemSelectionRangeneERKS_(void *this_, QItemSelectionRange* other) {
+  return (bool)((QItemSelectionRange*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:117
+// [1] bool operator<(const class QItemSelectionRange &)
+extern "C"
+bool C_ZNK19QItemSelectionRangeltERKS_(void *this_, QItemSelectionRange* other) {
+  return (bool)((QItemSelectionRange*)this_)->operator<(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:119

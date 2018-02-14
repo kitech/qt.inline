@@ -111,6 +111,20 @@ bool C_ZNK11QSizePolicy17hasWidthForHeightEv(void *this_) {
   return (bool)((QSizePolicy*)this_)->hasWidthForHeight();
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsizepolicy.h:146
+// [1] bool operator==(const class QSizePolicy &)
+extern "C"
+bool C_ZNK11QSizePolicyeqERKS_(void *this_, QSizePolicy* s) {
+  return (bool)((QSizePolicy*)this_)->operator==(*s);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsizepolicy.h:147
+// [1] bool operator!=(const class QSizePolicy &)
+extern "C"
+bool C_ZNK11QSizePolicyneERKS_(void *this_, QSizePolicy* s) {
+  return (bool)((QSizePolicy*)this_)->operator!=(*s);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:153
 // [4] int horizontalStretch()
 extern "C"

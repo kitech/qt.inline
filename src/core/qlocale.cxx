@@ -51,6 +51,22 @@ extern "C"
 void* C_ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
   return  new QLocale(language, script, country);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:935
+// [8] QLocale & operator=(class QLocale &&)
+extern "C"
+void* C_ZN7QLocaleaSEOS_(void *this_, QLocale && other) {
+  auto& rv = ((QLocale*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:937
+// [8] QLocale & operator=(const class QLocale &)
+extern "C"
+void* C_ZN7QLocaleaSERKS_(void *this_, QLocale* other) {
+  auto& rv = ((QLocale*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:938
 // [-2] void ~QLocale()
@@ -738,6 +754,20 @@ extern "C"
 void* C_ZNK7QLocale11uiLanguagesEv(void *this_) {
   auto rv = ((QLocale*)this_)->uiLanguages();
 return new QStringList(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1065
+// [1] bool operator==(const class QLocale &)
+extern "C"
+bool C_ZNK7QLocaleeqERKS_(void *this_, QLocale* other) {
+  return (bool)((QLocale*)this_)->operator==(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1066
+// [1] bool operator!=(const class QLocale &)
+extern "C"
+bool C_ZNK7QLocaleneERKS_(void *this_, QLocale* other) {
+  return (bool)((QLocale*)this_)->operator!=(*other);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1068

@@ -45,6 +45,14 @@ void C_ZN9QColormapD2Ev(void *this_) {
   delete (QColormap*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolormap.h:68
+// [8] QColormap & operator=(const class QColormap &)
+extern "C"
+void* C_ZN9QColormapaSERKS_(void *this_, QColormap* colormap) {
+  auto& rv = ((QColormap*)this_)->operator=(*colormap);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:70
 // [4] QColormap::Mode mode()
 extern "C"

@@ -58,6 +58,22 @@ extern "C"
 void C_ZN18QCommandLineOptionD2Ev(void *this_) {
   delete (QCommandLineOption*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:73
+// [8] QCommandLineOption & operator=(const class QCommandLineOption &)
+extern "C"
+void* C_ZN18QCommandLineOptionaSERKS_(void *this_, QCommandLineOption* other) {
+  auto& rv = ((QCommandLineOption*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:75
+// [8] QCommandLineOption & operator=(class QCommandLineOption &&)
+extern "C"
+void* C_ZN18QCommandLineOptionaSEOS_(void *this_, QCommandLineOption && other) {
+  auto& rv = ((QCommandLineOption*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:78
 // [-2] void swap(class QCommandLineOption &)

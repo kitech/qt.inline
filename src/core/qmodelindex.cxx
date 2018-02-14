@@ -105,6 +105,27 @@ extern "C"
 bool C_ZNK11QModelIndex7isValidEv(void *this_) {
   return (bool)((QModelIndex*)this_)->isValid();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:73
+// [1] bool operator==(const class QModelIndex &)
+extern "C"
+bool C_ZNK11QModelIndexeqERKS_(void *this_, QModelIndex* other) {
+  return (bool)((QModelIndex*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:75
+// [1] bool operator!=(const class QModelIndex &)
+extern "C"
+bool C_ZNK11QModelIndexneERKS_(void *this_, QModelIndex* other) {
+  return (bool)((QModelIndex*)this_)->operator!=(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:77
+// [1] bool operator<(const class QModelIndex &)
+extern "C"
+bool C_ZNK11QModelIndexltERKS_(void *this_, QModelIndex* other) {
+  return (bool)((QModelIndex*)this_)->operator<(*other);
+}
 
 extern "C"
 void C_ZN11QModelIndexD2Ev(void *this_) {

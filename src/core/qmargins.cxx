@@ -96,6 +96,70 @@ extern "C"
 void C_ZN8QMargins9setBottomEi(void *this_, int bottom) {
   ((QMargins*)this_)->setBottom(bottom);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:69
+// [16] QMargins & operator+=(const class QMargins &)
+extern "C"
+void* C_ZN8QMarginspLERKS_(void *this_, QMargins* margins) {
+  auto& rv = ((QMargins*)this_)->operator+=(*margins);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:70
+// [16] QMargins & operator-=(const class QMargins &)
+extern "C"
+void* C_ZN8QMarginsmIERKS_(void *this_, QMargins* margins) {
+  auto& rv = ((QMargins*)this_)->operator-=(*margins);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:71
+// [16] QMargins & operator+=(int)
+extern "C"
+void* C_ZN8QMarginspLEi(void *this_, int arg0) {
+  auto& rv = ((QMargins*)this_)->operator+=(arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:72
+// [16] QMargins & operator-=(int)
+extern "C"
+void* C_ZN8QMarginsmIEi(void *this_, int arg0) {
+  auto& rv = ((QMargins*)this_)->operator-=(arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:73
+// [16] QMargins & operator*=(int)
+extern "C"
+void* C_ZN8QMarginsmLEi(void *this_, int arg0) {
+  auto& rv = ((QMargins*)this_)->operator*=(arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:74
+// [16] QMargins & operator/=(int)
+extern "C"
+void* C_ZN8QMarginsdVEi(void *this_, int arg0) {
+  auto& rv = ((QMargins*)this_)->operator/=(arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:75
+// [16] QMargins & operator*=(qreal)
+extern "C"
+void* C_ZN8QMarginsmLEd(void *this_, qreal arg0) {
+  auto& rv = ((QMargins*)this_)->operator*=(arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:76
+// [16] QMargins & operator/=(qreal)
+extern "C"
+void* C_ZN8QMarginsdVEd(void *this_, qreal arg0) {
+  auto& rv = ((QMargins*)this_)->operator/=(arg0);
+return &rv;
+}
 
 extern "C"
 void C_ZN8QMarginsD2Ev(void *this_) {

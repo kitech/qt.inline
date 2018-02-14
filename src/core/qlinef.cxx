@@ -264,6 +264,20 @@ void C_ZN6QLineF7setLineEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y
   ((QLineF*)this_)->setLine(x1, y1, x2, y2);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qline.h:270
+// [1] bool operator==(const class QLineF &)
+extern "C"
+bool C_ZNK6QLineFeqERKS_(void *this_, QLineF* d) {
+  return (bool)((QLineF*)this_)->operator==(*d);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qline.h:271
+// [1] bool operator!=(const class QLineF &)
+extern "C"
+bool C_ZNK6QLineFneERKS_(void *this_, QLineF* d) {
+  return (bool)((QLineF*)this_)->operator!=(*d);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:273
 // [16] QLine toLine()
 extern "C"

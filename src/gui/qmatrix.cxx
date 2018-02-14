@@ -42,6 +42,22 @@ extern "C"
 void* C_ZN7QMatrixC2Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
   return  new QMatrix(m11, m12, m21, m22, dx, dy);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:67
+// [48] QMatrix & operator=(class QMatrix &&)
+extern "C"
+void* C_ZN7QMatrixaSEOS_(void *this_, QMatrix && other) {
+  auto& rv = ((QMatrix*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:69
+// [48] QMatrix & operator=(const class QMatrix &)
+extern "C"
+void* C_ZN7QMatrixaSERKS_(void *this_, QMatrix* arg0) {
+  auto& rv = ((QMatrix*)this_)->operator=(*arg0);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:75
 // [-2] void setMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
@@ -259,6 +275,36 @@ qreal C_ZNK7QMatrix11determinantEv(void *this_) {
 extern "C"
 void* C_ZNK7QMatrix8invertedEPb(void *this_, bool * invertible) {
   auto rv = ((QMatrix*)this_)->inverted(invertible);
+return new QMatrix(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:113
+// [1] bool operator==(const class QMatrix &)
+extern "C"
+bool C_ZNK7QMatrixeqERKS_(void *this_, QMatrix* arg0) {
+  return (bool)((QMatrix*)this_)->operator==(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:114
+// [1] bool operator!=(const class QMatrix &)
+extern "C"
+bool C_ZNK7QMatrixneERKS_(void *this_, QMatrix* arg0) {
+  return (bool)((QMatrix*)this_)->operator!=(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:116
+// [48] QMatrix & operator*=(const class QMatrix &)
+extern "C"
+void* C_ZN7QMatrixmLERKS_(void *this_, QMatrix* arg0) {
+  auto& rv = ((QMatrix*)this_)->operator*=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:117
+// [48] QMatrix operator*(const class QMatrix &)
+extern "C"
+void* C_ZNK7QMatrixmlERKS_(void *this_, QMatrix* o) {
+  auto rv = ((QMatrix*)this_)->operator*(*o);
 return new QMatrix(rv);
 }
 

@@ -40,6 +40,14 @@ extern "C"
 void C_ZN11QTextOptionD2Ev(void *this_) {
   delete (QTextOption*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:90
+// [32] QTextOption & operator=(const class QTextOption &)
+extern "C"
+void* C_ZN11QTextOptionaSERKS_(void *this_, QTextOption* o) {
+  auto& rv = ((QTextOption*)this_)->operator=(*o);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:92
 // [-2] void setAlignment(Qt::Alignment)

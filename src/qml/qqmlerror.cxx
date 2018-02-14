@@ -25,6 +25,14 @@ void* C_ZN9QQmlErrorC2Ev() {
   return  new QQmlError();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlerror.h:58
+// [8] QQmlError & operator=(const class QQmlError &)
+extern "C"
+void* C_ZN9QQmlErroraSERKS_(void *this_, QQmlError* arg0) {
+  auto& rv = ((QQmlError*)this_)->operator=(*arg0);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:59
 // [-2] void ~QQmlError()
 extern "C"

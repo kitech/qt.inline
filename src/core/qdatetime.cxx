@@ -68,6 +68,22 @@ void C_ZN9QDateTimeD2Ev(void *this_) {
   delete (QDateTime*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:274
+// [8] QDateTime & operator=(class QDateTime &&)
+extern "C"
+void* C_ZN9QDateTimeaSEOS_(void *this_, QDateTime && other) {
+  auto& rv = ((QDateTime*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:276
+// [8] QDateTime & operator=(const class QDateTime &)
+extern "C"
+void* C_ZN9QDateTimeaSERKS_(void *this_, QDateTime* other) {
+  auto& rv = ((QDateTime*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:278
 // [-2] void swap(class QDateTime &)
 extern "C"
@@ -328,6 +344,48 @@ qint64 C_ZNK9QDateTime6secsToERKS_(void *this_, QDateTime* arg0) {
 extern "C"
 qint64 C_ZNK9QDateTime7msecsToERKS_(void *this_, QDateTime* arg0) {
   return (qint64)((QDateTime*)this_)->msecsTo(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:331
+// [1] bool operator==(const class QDateTime &)
+extern "C"
+bool C_ZNK9QDateTimeeqERKS_(void *this_, QDateTime* other) {
+  return (bool)((QDateTime*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:332
+// [1] bool operator!=(const class QDateTime &)
+extern "C"
+bool C_ZNK9QDateTimeneERKS_(void *this_, QDateTime* other) {
+  return (bool)((QDateTime*)this_)->operator!=(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:333
+// [1] bool operator<(const class QDateTime &)
+extern "C"
+bool C_ZNK9QDateTimeltERKS_(void *this_, QDateTime* other) {
+  return (bool)((QDateTime*)this_)->operator<(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:334
+// [1] bool operator<=(const class QDateTime &)
+extern "C"
+bool C_ZNK9QDateTimeleERKS_(void *this_, QDateTime* other) {
+  return (bool)((QDateTime*)this_)->operator<=(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:335
+// [1] bool operator>(const class QDateTime &)
+extern "C"
+bool C_ZNK9QDateTimegtERKS_(void *this_, QDateTime* other) {
+  return (bool)((QDateTime*)this_)->operator>(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:336
+// [1] bool operator>=(const class QDateTime &)
+extern "C"
+bool C_ZNK9QDateTimegeERKS_(void *this_, QDateTime* other) {
+  return (bool)((QDateTime*)this_)->operator>=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:339

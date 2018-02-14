@@ -434,6 +434,13 @@ void C_ZN15QTreeWidgetItem7setDataEiiRK8QVariant(void *this_, int column, int ro
   ((QTreeWidgetItem*)this_)->setData(column, role, *value);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:170
+// [1] bool operator<(const class QTreeWidgetItem &)
+extern "C"
+bool C_ZNK15QTreeWidgetItemltERKS_(void *this_, QTreeWidgetItem* other) {
+  return (bool)((QTreeWidgetItem*)this_)->operator<(*other);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:173
 // [-2] void read(class QDataStream &)
 extern "C"
@@ -446,6 +453,14 @@ void C_ZN15QTreeWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
 extern "C"
 void C_ZNK15QTreeWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) {
   ((QTreeWidgetItem*)this_)->write(*out);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:176
+// [64] QTreeWidgetItem & operator=(const class QTreeWidgetItem &)
+extern "C"
+void* C_ZN15QTreeWidgetItemaSERKS_(void *this_, QTreeWidgetItem* other) {
+  auto& rv = ((QTreeWidgetItem*)this_)->operator=(*other);
+return &rv;
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:178

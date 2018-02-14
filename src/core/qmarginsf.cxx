@@ -105,6 +105,54 @@ extern "C"
 void C_ZN9QMarginsF9setBottomEd(void *this_, qreal bottom) {
   ((QMarginsF*)this_)->setBottom(bottom);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:304
+// [32] QMarginsF & operator+=(const class QMarginsF &)
+extern "C"
+void* C_ZN9QMarginsFpLERKS_(void *this_, QMarginsF* margins) {
+  auto& rv = ((QMarginsF*)this_)->operator+=(*margins);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:305
+// [32] QMarginsF & operator-=(const class QMarginsF &)
+extern "C"
+void* C_ZN9QMarginsFmIERKS_(void *this_, QMarginsF* margins) {
+  auto& rv = ((QMarginsF*)this_)->operator-=(*margins);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:306
+// [32] QMarginsF & operator+=(qreal)
+extern "C"
+void* C_ZN9QMarginsFpLEd(void *this_, qreal addend) {
+  auto& rv = ((QMarginsF*)this_)->operator+=(addend);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:307
+// [32] QMarginsF & operator-=(qreal)
+extern "C"
+void* C_ZN9QMarginsFmIEd(void *this_, qreal subtrahend) {
+  auto& rv = ((QMarginsF*)this_)->operator-=(subtrahend);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:308
+// [32] QMarginsF & operator*=(qreal)
+extern "C"
+void* C_ZN9QMarginsFmLEd(void *this_, qreal factor) {
+  auto& rv = ((QMarginsF*)this_)->operator*=(factor);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmargins.h:309
+// [32] QMarginsF & operator/=(qreal)
+extern "C"
+void* C_ZN9QMarginsFdVEd(void *this_, qreal divisor) {
+  auto& rv = ((QMarginsF*)this_)->operator/=(divisor);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:311
 // [16] QMargins toMargins()

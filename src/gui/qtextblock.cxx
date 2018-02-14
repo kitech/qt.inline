@@ -24,12 +24,41 @@ extern "C"
 void* C_ZN10QTextBlockC2Ev() {
   return  new QTextBlock();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:208
+// [16] QTextBlock & operator=(const class QTextBlock &)
+extern "C"
+void* C_ZN10QTextBlockaSERKS_(void *this_, QTextBlock* o) {
+  auto& rv = ((QTextBlock*)this_)->operator=(*o);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:210
 // [1] bool isValid()
 extern "C"
 bool C_ZNK10QTextBlock7isValidEv(void *this_) {
   return (bool)((QTextBlock*)this_)->isValid();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:212
+// [1] bool operator==(const class QTextBlock &)
+extern "C"
+bool C_ZNK10QTextBlockeqERKS_(void *this_, QTextBlock* o) {
+  return (bool)((QTextBlock*)this_)->operator==(*o);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:213
+// [1] bool operator!=(const class QTextBlock &)
+extern "C"
+bool C_ZNK10QTextBlockneERKS_(void *this_, QTextBlock* o) {
+  return (bool)((QTextBlock*)this_)->operator!=(*o);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:214
+// [1] bool operator<(const class QTextBlock &)
+extern "C"
+bool C_ZNK10QTextBlockltERKS_(void *this_, QTextBlock* o) {
+  return (bool)((QTextBlock*)this_)->operator<(*o);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:216

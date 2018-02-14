@@ -32,11 +32,41 @@ void C_ZN9QHttpPartD2Ev(void *this_) {
   delete (QHttpPart*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:62
+// [8] QHttpPart & operator=(class QHttpPart &&)
+extern "C"
+void* C_ZN9QHttpPartaSEOS_(void *this_, QHttpPart && other) {
+  auto& rv = ((QHttpPart*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:64
+// [8] QHttpPart & operator=(const class QHttpPart &)
+extern "C"
+void* C_ZN9QHttpPartaSERKS_(void *this_, QHttpPart* other) {
+  auto& rv = ((QHttpPart*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:66
 // [-2] void swap(class QHttpPart &)
 extern "C"
 void C_ZN9QHttpPart4swapERS_(void *this_, QHttpPart* other) {
   ((QHttpPart*)this_)->swap(*other);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:68
+// [1] bool operator==(const class QHttpPart &)
+extern "C"
+bool C_ZNK9QHttpParteqERKS_(void *this_, QHttpPart* other) {
+  return (bool)((QHttpPart*)this_)->operator==(*other);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:69
+// [1] bool operator!=(const class QHttpPart &)
+extern "C"
+bool C_ZNK9QHttpPartneERKS_(void *this_, QHttpPart* other) {
+  return (bool)((QHttpPart*)this_)->operator!=(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:72

@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN17QDnsServiceRecordC2Ev() {
   return  new QDnsServiceRecord();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:139
+// [8] QDnsServiceRecord & operator=(class QDnsServiceRecord &&)
+extern "C"
+void* C_ZN17QDnsServiceRecordaSEOS_(void *this_, QDnsServiceRecord && other) {
+  auto& rv = ((QDnsServiceRecord*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:141
+// [8] QDnsServiceRecord & operator=(const class QDnsServiceRecord &)
+extern "C"
+void* C_ZN17QDnsServiceRecordaSERKS_(void *this_, QDnsServiceRecord* other) {
+  auto& rv = ((QDnsServiceRecord*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:142
 // [-2] void ~QDnsServiceRecord()

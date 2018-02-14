@@ -49,6 +49,22 @@ extern "C"
 void C_ZN12QStorageInfoD2Ev(void *this_) {
   delete (QStorageInfo*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:64
+// [8] QStorageInfo & operator=(const class QStorageInfo &)
+extern "C"
+void* C_ZN12QStorageInfoaSERKS_(void *this_, QStorageInfo* other) {
+  auto& rv = ((QStorageInfo*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:66
+// [8] QStorageInfo & operator=(class QStorageInfo &&)
+extern "C"
+void* C_ZN12QStorageInfoaSEOS_(void *this_, QStorageInfo && other) {
+  auto& rv = ((QStorageInfo*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:69
 // [-2] void swap(class QStorageInfo &)

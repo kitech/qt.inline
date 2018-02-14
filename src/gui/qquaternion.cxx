@@ -221,6 +221,46 @@ void* C_ZNK11QQuaternion13rotatedVectorERK9QVector3D(void *this_, QVector3D* vec
 return new QVector3D(rv);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qquaternion.h:105
+// [16] QQuaternion & operator+=(const class QQuaternion &)
+extern "C"
+void* C_ZN11QQuaternionpLERKS_(void *this_, QQuaternion* quaternion) {
+  auto& rv = ((QQuaternion*)this_)->operator+=(*quaternion);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qquaternion.h:106
+// [16] QQuaternion & operator-=(const class QQuaternion &)
+extern "C"
+void* C_ZN11QQuaternionmIERKS_(void *this_, QQuaternion* quaternion) {
+  auto& rv = ((QQuaternion*)this_)->operator-=(*quaternion);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qquaternion.h:107
+// [16] QQuaternion & operator*=(float)
+extern "C"
+void* C_ZN11QQuaternionmLEf(void *this_, float factor) {
+  auto& rv = ((QQuaternion*)this_)->operator*=(factor);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qquaternion.h:108
+// [16] QQuaternion & operator*=(const class QQuaternion &)
+extern "C"
+void* C_ZN11QQuaternionmLERKS_(void *this_, QQuaternion* quaternion) {
+  auto& rv = ((QQuaternion*)this_)->operator*=(*quaternion);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qquaternion.h:109
+// [16] QQuaternion & operator/=(float)
+extern "C"
+void* C_ZN11QQuaterniondVEf(void *this_, float divisor) {
+  auto& rv = ((QQuaternion*)this_)->operator/=(divisor);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:124
 // [16] QVector4D toVector4D()
 extern "C"

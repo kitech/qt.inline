@@ -24,6 +24,22 @@ extern "C"
 void* C_ZN21QDnsHostAddressRecordC2Ev() {
   return  new QDnsHostAddressRecord();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:90
+// [8] QDnsHostAddressRecord & operator=(class QDnsHostAddressRecord &&)
+extern "C"
+void* C_ZN21QDnsHostAddressRecordaSEOS_(void *this_, QDnsHostAddressRecord && other) {
+  auto& rv = ((QDnsHostAddressRecord*)this_)->operator=(other);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:92
+// [8] QDnsHostAddressRecord & operator=(const class QDnsHostAddressRecord &)
+extern "C"
+void* C_ZN21QDnsHostAddressRecordaSERKS_(void *this_, QDnsHostAddressRecord* other) {
+  auto& rv = ((QDnsHostAddressRecord*)this_)->operator=(*other);
+return &rv;
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:93
 // [-2] void ~QDnsHostAddressRecord()

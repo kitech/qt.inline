@@ -55,6 +55,22 @@ extern "C"
 void C_ZN18QRegularExpressionD2Ev(void *this_) {
   delete (QRegularExpression*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:88
+// [8] QRegularExpression & operator=(const class QRegularExpression &)
+extern "C"
+void* C_ZN18QRegularExpressionaSERKS_(void *this_, QRegularExpression* re) {
+  auto& rv = ((QRegularExpression*)this_)->operator=(*re);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:91
+// [8] QRegularExpression & operator=(class QRegularExpression &&)
+extern "C"
+void* C_ZN18QRegularExpressionaSEOS_(void *this_, QRegularExpression && re) {
+  auto& rv = ((QRegularExpression*)this_)->operator=(re);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:95
 // [-2] void swap(class QRegularExpression &)
@@ -160,5 +176,19 @@ extern "C"
 void* C_ZN18QRegularExpression6escapeERK7QString(QString* str) {
   auto rv = QRegularExpression::escape(*str);
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:145
+// [1] bool operator==(const class QRegularExpression &)
+extern "C"
+bool C_ZNK18QRegularExpressioneqERKS_(void *this_, QRegularExpression* re) {
+  return (bool)((QRegularExpression*)this_)->operator==(*re);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:146
+// [1] bool operator!=(const class QRegularExpression &)
+extern "C"
+bool C_ZNK18QRegularExpressionneERKS_(void *this_, QRegularExpression* re) {
+  return (bool)((QRegularExpression*)this_)->operator!=(*re);
 }
 //  main block end

@@ -22,6 +22,22 @@ extern "C"
 void C_ZN16QCollatorSortKeyD2Ev(void *this_) {
   delete (QCollatorSortKey*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:59
+// [8] QCollatorSortKey & operator=(const class QCollatorSortKey &)
+extern "C"
+void* C_ZN16QCollatorSortKeyaSERKS_(void *this_, QCollatorSortKey* other) {
+  auto& rv = ((QCollatorSortKey*)this_)->operator=(*other);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:61
+// [8] QCollatorSortKey & operator=(class QCollatorSortKey &&)
+extern "C"
+void* C_ZN16QCollatorSortKeyaSEOS_(void *this_, QCollatorSortKey && other) {
+  auto& rv = ((QCollatorSortKey*)this_)->operator=(other);
+return &rv;
+}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:64
 // [-2] void swap(class QCollatorSortKey &)
