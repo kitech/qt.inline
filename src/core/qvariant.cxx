@@ -5,7 +5,7 @@
 #include "callback_inherit.h"
 
 // QVariant is pure virtual: false
-// QVariant has virtual projected: true
+// QVariant has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -97,6 +97,7 @@ MyQVariant(const QJsonObject & jsonObject) : QVariant(jsonObject) {}
 MyQVariant(const QJsonArray & jsonArray) : QVariant(jsonArray) {}
 // void QVariant(const class QJsonDocument &)
 MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
+// Protected Visibility=Default Availability=Available
 // void create(int, const void *)
   virtual void create(int type_, const void * copy) {
     int handled = 0;
@@ -108,6 +109,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
 // bool cmp(const class QVariant &)
   virtual bool cmp(const QVariant & other) {
     int handled = 0;
@@ -120,6 +122,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
 // int compare(const class QVariant &)
   virtual int compare(const QVariant & other) {
     int handled = 0;
@@ -132,6 +135,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
 // bool convert(const int, void *)
   virtual bool convert(const int t, void * ptr) {
     int handled = 0;
@@ -151,8 +155,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
 // [-2] void QVariant()
 extern "C"
 void* C_ZN8QVariantC2Ev() {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant();
+  return  new QVariant();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:200
@@ -166,328 +169,287 @@ void C_ZN8QVariantD2Ev(void *this_) {
 // [-2] void QVariant(enum QVariant::Type)
 extern "C"
 void* C_ZN8QVariantC2ENS_4TypeE(QVariant::Type type_) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(type_);
+  return  new QVariant(type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:202
 // [-2] void QVariant(int, const void *)
 extern "C"
 void* C_ZN8QVariantC2EiPKv(int typeId, const void * copy) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(typeId, copy);
+  return  new QVariant(typeId, copy);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:203
 // [-2] void QVariant(int, const void *, uint)
 extern "C"
 void* C_ZN8QVariantC2EiPKvj(int typeId, const void * copy, uint flags) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(typeId, copy, flags);
+  return  new QVariant(typeId, copy, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:207
 // [-2] void QVariant(class QDataStream &)
 extern "C"
 void* C_ZN8QVariantC2ER11QDataStream(QDataStream* s) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*s);
+  return  new QVariant(*s);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:210
 // [-2] void QVariant(int)
 extern "C"
 void* C_ZN8QVariantC2Ei(int i) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(i);
+  return  new QVariant(i);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:211
 // [-2] void QVariant(uint)
 extern "C"
 void* C_ZN8QVariantC2Ej(uint ui) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(ui);
+  return  new QVariant(ui);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:212
 // [-2] void QVariant(qlonglong)
 extern "C"
 void* C_ZN8QVariantC2Ex(qlonglong ll) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(ll);
+  return  new QVariant(ll);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:213
 // [-2] void QVariant(qulonglong)
 extern "C"
 void* C_ZN8QVariantC2Ey(qulonglong ull) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(ull);
+  return  new QVariant(ull);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:214
 // [-2] void QVariant(_Bool)
 extern "C"
 void* C_ZN8QVariantC2Eb(bool b) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(b);
+  return  new QVariant(b);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:215
 // [-2] void QVariant(double)
 extern "C"
 void* C_ZN8QVariantC2Ed(double d) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(d);
+  return  new QVariant(d);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:216
 // [-2] void QVariant(float)
 extern "C"
 void* C_ZN8QVariantC2Ef(float f) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(f);
+  return  new QVariant(f);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:218
 // [-2] void QVariant(const char *)
 extern "C"
 void* C_ZN8QVariantC2EPKc(const char * str) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(str);
+  return  new QVariant(str);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:221
 // [-2] void QVariant(const class QByteArray &)
 extern "C"
 void* C_ZN8QVariantC2ERK10QByteArray(QByteArray* bytearray) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*bytearray);
+  return  new QVariant(*bytearray);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:222
 // [-2] void QVariant(const class QBitArray &)
 extern "C"
 void* C_ZN8QVariantC2ERK9QBitArray(QBitArray* bitarray) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*bitarray);
+  return  new QVariant(*bitarray);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:223
 // [-2] void QVariant(const class QString &)
 extern "C"
 void* C_ZN8QVariantC2ERK7QString(QString* string) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*string);
+  return  new QVariant(*string);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:224
 // [-2] void QVariant(class QLatin1String)
 extern "C"
 void* C_ZN8QVariantC2E13QLatin1String(QLatin1String* string) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*string);
+  return  new QVariant(*string);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:225
 // [-2] void QVariant(const class QStringList &)
 extern "C"
 void* C_ZN8QVariantC2ERK11QStringList(QStringList* stringlist) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*stringlist);
+  return  new QVariant(*stringlist);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:226
 // [-2] void QVariant(class QChar)
 extern "C"
 void* C_ZN8QVariantC2E5QChar(QChar* qchar) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*qchar);
+  return  new QVariant(*qchar);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:227
 // [-2] void QVariant(const class QDate &)
 extern "C"
 void* C_ZN8QVariantC2ERK5QDate(QDate* date) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*date);
+  return  new QVariant(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:228
 // [-2] void QVariant(const class QTime &)
 extern "C"
 void* C_ZN8QVariantC2ERK5QTime(QTime* time) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*time);
+  return  new QVariant(*time);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:229
 // [-2] void QVariant(const class QDateTime &)
 extern "C"
 void* C_ZN8QVariantC2ERK9QDateTime(QDateTime* datetime) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*datetime);
+  return  new QVariant(*datetime);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:234
 // [-2] void QVariant(const class QSize &)
 extern "C"
 void* C_ZN8QVariantC2ERK5QSize(QSize* size) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*size);
+  return  new QVariant(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:235
 // [-2] void QVariant(const class QSizeF &)
 extern "C"
 void* C_ZN8QVariantC2ERK6QSizeF(QSizeF* size) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*size);
+  return  new QVariant(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:236
 // [-2] void QVariant(const class QPoint &)
 extern "C"
 void* C_ZN8QVariantC2ERK6QPoint(QPoint* pt) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*pt);
+  return  new QVariant(*pt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:237
 // [-2] void QVariant(const class QPointF &)
 extern "C"
 void* C_ZN8QVariantC2ERK7QPointF(QPointF* pt) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*pt);
+  return  new QVariant(*pt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:238
 // [-2] void QVariant(const class QLine &)
 extern "C"
 void* C_ZN8QVariantC2ERK5QLine(QLine* line) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*line);
+  return  new QVariant(*line);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:239
 // [-2] void QVariant(const class QLineF &)
 extern "C"
 void* C_ZN8QVariantC2ERK6QLineF(QLineF* line) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*line);
+  return  new QVariant(*line);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:240
 // [-2] void QVariant(const class QRect &)
 extern "C"
 void* C_ZN8QVariantC2ERK5QRect(QRect* rect) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*rect);
+  return  new QVariant(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:241
 // [-2] void QVariant(const class QRectF &)
 extern "C"
 void* C_ZN8QVariantC2ERK6QRectF(QRectF* rect) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*rect);
+  return  new QVariant(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:243
 // [-2] void QVariant(const class QLocale &)
 extern "C"
 void* C_ZN8QVariantC2ERK7QLocale(QLocale* locale) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*locale);
+  return  new QVariant(*locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:245
 // [-2] void QVariant(const class QRegExp &)
 extern "C"
 void* C_ZN8QVariantC2ERK7QRegExp(QRegExp* regExp) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*regExp);
+  return  new QVariant(*regExp);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:249
 // [-2] void QVariant(const class QRegularExpression &)
 extern "C"
 void* C_ZN8QVariantC2ERK18QRegularExpression(QRegularExpression* re) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*re);
+  return  new QVariant(*re);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:251
 // [-2] void QVariant(const class QUrl &)
 extern "C"
 void* C_ZN8QVariantC2ERK4QUrl(QUrl* url) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*url);
+  return  new QVariant(*url);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:252
 // [-2] void QVariant(const class QEasingCurve &)
 extern "C"
 void* C_ZN8QVariantC2ERK12QEasingCurve(QEasingCurve* easing) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*easing);
+  return  new QVariant(*easing);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:253
 // [-2] void QVariant(const class QUuid &)
 extern "C"
 void* C_ZN8QVariantC2ERK5QUuid(QUuid* uuid) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*uuid);
+  return  new QVariant(*uuid);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:254
 // [-2] void QVariant(const class QModelIndex &)
 extern "C"
 void* C_ZN8QVariantC2ERK11QModelIndex(QModelIndex* modelIndex) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*modelIndex);
+  return  new QVariant(*modelIndex);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:255
 // [-2] void QVariant(const class QPersistentModelIndex &)
 extern "C"
 void* C_ZN8QVariantC2ERK21QPersistentModelIndex(QPersistentModelIndex* modelIndex) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*modelIndex);
+  return  new QVariant(*modelIndex);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:256
 // [-2] void QVariant(const class QJsonValue &)
 extern "C"
 void* C_ZN8QVariantC2ERK10QJsonValue(QJsonValue* jsonValue) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*jsonValue);
+  return  new QVariant(*jsonValue);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:257
 // [-2] void QVariant(const class QJsonObject &)
 extern "C"
 void* C_ZN8QVariantC2ERK11QJsonObject(QJsonObject* jsonObject) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*jsonObject);
+  return  new QVariant(*jsonObject);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:258
 // [-2] void QVariant(const class QJsonArray &)
 extern "C"
 void* C_ZN8QVariantC2ERK10QJsonArray(QJsonArray* jsonArray) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*jsonArray);
+  return  new QVariant(*jsonArray);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:259
 // [-2] void QVariant(const class QJsonDocument &)
 extern "C"
 void* C_ZN8QVariantC2ERK13QJsonDocument(QJsonDocument* jsonDocument) {
-  auto _nilp = (MyQVariant*)(0);
-  return  new MyQVariant(*jsonDocument);
+  return  new QVariant(*jsonDocument);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:262
