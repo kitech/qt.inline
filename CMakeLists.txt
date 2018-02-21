@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.0)
 set(CMAKE_VERBOSE_MAKEFILE on)
 
 set(CMAKE_CXX_FLAGS "-g -O0 -std=c++11")
-set(CMAKE_SHARED_LINKER_FLAGS "-Wl,-z,defs --no-undefined")
+set(CMAKE_SHARED_LINKER_FLAGS "-Wl,-z,defs --no-undefined") ### clang only flags
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
 
@@ -24,7 +24,7 @@ if(ANDROID)
 endif(ANDROID)
 # for android arm build end
 
-set(CMAKE_AUTOMOC on)
+set(CMAKE_AUTOMOC off)  ### it's sure, the wrapper not need moc
 find_package(Qt5Core)
 find_package(Qt5Gui)
 find_package(Qt5Widgets)

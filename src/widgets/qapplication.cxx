@@ -42,7 +42,7 @@ void* C_ZNK12QApplication10metaObjectEv(void *this_) {
 extern "C"
 void* C_ZN12QApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
   auto _nilp = (MyQApplication*)(0);
-  return  new MyQApplication(argc, argv, arg2);
+  return  new MyQApplication(*(new int(argc)), argv, arg2);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:96

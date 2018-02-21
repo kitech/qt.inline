@@ -42,7 +42,7 @@ void* C_ZNK16QCoreApplication10metaObjectEv(void *this_) {
 extern "C"
 void* C_ZN16QCoreApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
   auto _nilp = (MyQCoreApplication*)(0);
-  return  new MyQCoreApplication(argc, argv, arg2);
+  return  new MyQCoreApplication(*(new int(argc)), argv, arg2);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:97

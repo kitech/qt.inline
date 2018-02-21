@@ -42,7 +42,7 @@ void* C_ZNK15QGuiApplication10metaObjectEv(void *this_) {
 extern "C"
 void* C_ZN15QGuiApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
   auto _nilp = (MyQGuiApplication*)(0);
-  return  new MyQGuiApplication(argc, argv, arg2);
+  return  new MyQGuiApplication(*(new int(argc)), argv, arg2);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:89
