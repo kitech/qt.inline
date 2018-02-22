@@ -1825,6 +1825,7 @@ uint C_Z5qHashfj_9(float key, uint seed) {
   return (uint)qHash(key, seed);
 }
 
+#ifndef Q_OS_DARWIN
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:94
 // [4] uint qHash(long double, uint)
@@ -1832,6 +1833,7 @@ extern "C"
 uint C_Z5qHashej_10(long double key, uint seed) {
   return (uint)qHash(key, seed);
 }
+#endif
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:92

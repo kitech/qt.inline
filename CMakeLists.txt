@@ -1,21 +1,26 @@
 
-project(qtinline)
+project(qt5inline)
 cmake_minimum_required(VERSION 3.0)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 
 set(CMAKE_CXX_FLAGS "-g -O0 -std=c++11")
-set(CMAKE_SHARED_LINKER_FLAGS "-Wl,-z,defs --no-undefined") ### clang only flags
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
+IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+  if(${CMAKE_C_COMPILER} MATCHES "clang")
+    set(CMAKE_SHARED_LINKER_FLAGS "-Wl,-z,defs --no-undefined") ### linux clang only flags
+  endif(${CMAKE_C_COMPILER} MATCHES "clang")
+ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+
 
 # max effort for keep inline functions/methods.
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 
 # for android arm build begin, usage: cmake -DANDROID=on .
 if(ANDROID)
-  set(CMAKE_C_COMPILER /opt/andndk16/bin/arm-linux-androideabi-gcc)
-  set(CMAKE_CXX_COMPILER /opt/andndk16/bin/arm-linux-androideabi-g++)
+  set(CMAKE_C_COMPILER /opt/andndk16/bin/arm-linux-androideabi-clang)
+  set(CMAKE_CXX_COMPILER /opt/andndk16/bin/arm-linux-androideabi-clang++)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/sysroot/usr/include")
   # set(CMAKE_SYSROOT "/home/me/Qt5.9.3/5.9.3/android_armv7/")
   # 这个参数可以设置多个值
@@ -76,10 +81,11 @@ set(all_qt5_inline_srcs
   ${qt5_inline_extra_srcs}
   )
 
-add_library(QtInline SHARED ${all_qt5_inline_srcs})
-qt5_use_modules(QtInline Core Gui Widgets Network Qml Quick QuickControls2 QuickWidgets)
+add_library(Qt5Inline SHARED ${all_qt5_inline_srcs})
+#qt5_use_modules(QtInline Core Gui Widgets Network Qml Quick QuickControls2 QuickWidgets)
+target_link_libraries(Qt5Inline Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Network Qt5::Qml Qt5::Quick Qt5::QuickControls2 Qt5::QuickWidgets)
 if(ANDROID)
-  target_link_libraries(QtInline log)
+  target_link_libraries(Qt5Inline log)
 endif(ANDROID)
 
 

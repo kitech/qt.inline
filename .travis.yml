@@ -1,0 +1,47 @@
+language: cpp
+sudo: true
+
+cache:
+  directories:
+    - $HOME/cache
+
+addons: {apt: {packages: [yasm]}}
+
+matrix:
+  fast_finish: true
+  include:
+    # the actual compilin'
+    - stage: Linux
+      os: linux
+      env: JOB=build-archlinux
+      services:
+        - docker
+    - stage: macOS
+      os: osx
+      # osx_image: xcode7.3
+      env: JOB=build-osx
+    - stage: Android
+      os: linux
+      language: android
+      env: JOB=build-android
+      android:
+        components:
+          - build-tools-26.0.2
+          - android-26
+          - sys-img-armeabi-v7a-android-tv-l
+          - add-on
+          - extra
+        licenses:
+          - 'android-sdk-preview-license-52d11cd2'
+          - 'android-sdk-license-.+'
+          - 'google-gdk-license-.+'
+
+script: "./.travis/$JOB.sh"
+
+before_install:
+
+before_script:
+
+
+
+
