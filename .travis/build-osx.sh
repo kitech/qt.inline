@@ -13,5 +13,6 @@ ls
 cmake .
 gmake -v
 gmake -j3
-find . -name libQt5Inline.so
+find . -name libQt5Inline.dylib
+ls -lh libQt5Inline*
 

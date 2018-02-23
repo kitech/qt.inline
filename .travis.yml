@@ -1,9 +1,7 @@
 language: cpp
 sudo: true
 
-cache:
-  directories:
-    - $HOME/cache
+cache: ccahe
 
 addons: {apt: {packages: [yasm]}}
 
@@ -11,14 +9,32 @@ matrix:
   fast_finish: true
   include:
     # the actual compilin'
-    - stage: Linux
+    - stage: ArchLinux
       os: linux
       env: JOB=build-archlinux
       services:
         - docker
-    - stage: macOS
+    - stage: Win-Mingw-x64
+      os: linux
+      env:
+        - JOB=build-mingw
+        - WINARCH=x64
+      services:
+        - docker
+    - stage: Win-Mingw-x32
+      os: linux
+      env:
+        - JOB=build-mingw
+        - WINARCH=x32
+      services:
+        - docker
+    - stage: MacOS-Xcode8.3
       os: osx
-      # osx_image: xcode7.3
+      osx_image: xcode8.3
+      env: JOB=build-osx
+    - stage: MacOS-Xcode7.3
+      os: osx
+      osx_image: xcode7.3
       env: JOB=build-osx
     - stage: Android
       os: linux
