@@ -24,7 +24,7 @@ ls /opt/andndk16/
 
 /opt/andndk16/bin/clang -v
 
-git clone https://github.com/kitech/qt510_android_armv7.git
+git clone https://github.com/qtchina/qt510_android_armv7.git
 export PATH=qt510_android_armv7/bin:$PATH
 
 pwd
