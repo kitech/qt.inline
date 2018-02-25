@@ -19,8 +19,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 
 # for android arm build begin, usage: cmake -DANDROID=on .
 if(ANDROID)
-  set(CMAKE_C_COMPILER /opt/andndk16/bin/arm-linux-androideabi-clang)
-  set(CMAKE_CXX_COMPILER /opt/andndk16/bin/arm-linux-androideabi-clang++)
+  set(CMAKE_C_COMPILER /opt/andndk16/bin/clang)
+  set(CMAKE_CXX_COMPILER /opt/andndk16/bin/clang++)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/sysroot/usr/include")
   # set(CMAKE_SYSROOT "/home/me/Qt5.9.3/5.9.3/android_armv7/")
   # 这个参数可以设置多个值

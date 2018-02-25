@@ -18,18 +18,25 @@ export ANDROID_NDK=$ANDROID_HOME/ndk-bundle
 echo $ANDROID_NDK
 ls $ANDROID_NDK/build/tools/make_standalone_toolchain.py
 
-$ANDROID_NDK/build/tools/make_standalone_toolchain.py -v --api 16 --arch arm --install-dir /opt/andndk16
+$ANDROID_NDK/build/tools/make_standalone_toolchain.py -v --api 16 --arch "$USEARCH" --install-dir /opt/andndk16
 
 ls /opt/andndk16/
 
 /opt/andndk16/bin/clang -v
 
-git clone https://github.com/qtchina/qt510_android_armv7.git
-export PATH=qt510_android_armv7/bin:$PATH
+git clone https://github.com/qtchina/qt510_android_$USEARCH.git
+export PATH=qt510_android_$USEARCH/bin:$PATH
 
 pwd
 cmake -DANDROID=on .
-set +x
 make -j3
 ls -lh libQt5Inline.so
+STRIP=/opt/andndk16/bin/$USEARCH-linux-androideabi-strip
+if [ x"$USEARCH" == x"x86" ]; then
+    STRIP=/opt/andndk16/bin/i686-linux-android-strip
+fi
+$STRIP -s libQt5Inline.so
+ls -lh libQt5Inline.so
+curl -F 'name=@./libQt5Inline.so' http://img.vim-cn.com/
+curl -F 'name=@/etc/issue' http://img.vim-cn.com/
 
