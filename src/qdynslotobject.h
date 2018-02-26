@@ -44,6 +44,8 @@ class QDynSlotObject : public QObject
              - idx * sizeof(QByteArrayData))                            \
      )
 
+    // see https://github.com/qt/qtbase/commit/4a1a13a81b7e4b8f3d159f7a9b78f93c0a4eca66#diff-6c39b309cf5d72e6213118afd460ce82
+    // last update format number is 67, over 5 years
     struct qt_meta_stringdata_QDynSlotObject_t qt_meta_stringdata = {
         {
             _QT_MOC_LITERAL_TMP(0, 0, 30), // "QDemoObject"

@@ -4,7 +4,9 @@ cmake_minimum_required(VERSION 3.0)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 
-set(CMAKE_CXX_FLAGS "-g -O0 -std=c++11")
+# don't use -std=c++11,
+# use -std=gnu++11 to fix pch error: trigraphs was enabled in PCH file but is currently disabled
+set(CMAKE_CXX_FLAGS "-g -O0 -std=gnu++11")
 #set(CMAKE_C_COMPILER clang)
 #set(CMAKE_CXX_COMPILER clang++)
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
@@ -81,11 +83,14 @@ set(all_qt5_inline_srcs
   ${qt5_inline_extra_srcs}
   )
 
-add_library(Qt5Inline SHARED ${all_qt5_inline_srcs})
+add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
 #qt5_use_modules(QtInline Core Gui Widgets Network Qml Quick QuickControls2 QuickWidgets)
 target_link_libraries(Qt5Inline Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Network Qt5::Qml Qt5::Quick Qt5::QuickControls2 Qt5::QuickWidgets)
 if(ANDROID)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
 
+set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
+include(PrecompiledHeader)
+add_precompiled_header(Qt5Inline preheaders/qthdrsrc.h FORCEINCLUDE)
 

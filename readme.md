@@ -1,7 +1,8 @@
 
-Qt5 C wrapper for FFI invoke original used in https://github.com/kitech/qt.go.
+Qt5 C wrapper for FFI invoke original used in https://github.com/kitech/qt.go
 
 [![Build Status](https://travis-ci.org/kitech/qt.inline.svg?branch=master)](https://travis-ci.org/kitech/qt.inline)
+[![Sourcegraph](https://sourcegraph.com/github.com/kitech/qt.inline/-/badge.svg)](https://sourcegraph.com/github.com/kitech/qt.inline?badge)
 
 ### Requirement
 

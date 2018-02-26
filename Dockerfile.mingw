@@ -6,5 +6,6 @@ RUN chmod +x /root/run-mingw.sh
 ADD CMakeLists.txt /root/
 ADD src /root/src
 ADD tc-mingw.cmake /root/
+ADD . /root/
 
 ENTRYPOINT ["/root/run-mingw.sh"]
