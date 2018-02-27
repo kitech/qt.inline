@@ -148,8 +148,10 @@ function(add_precompiled_header _target _input)
     endif()
   endif(MSVC)
 
+  set(_PCH_EXT ".gch")
   if (CMAKE_CXX_COMPILER MATCHES "clang")
     set(CMAKE_COMPILER_IS_CLANGXX 1)
+    set(_PCH_EXT ".pch")
   endif ()
   if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANGXX)
     get_filename_component(_name ${_input} NAME)
@@ -172,10 +174,7 @@ function(add_precompiled_header _target _input)
     add_custom_command(
       OUTPUT "${_output_cxx}"
       COMMAND "${CMAKE_CXX_COMPILER}" ${_compiler_FLAGS} -x c++-header -o "${_output_cxx}" "${_pchfile}"
-      # for gcc
-      COMMAND "${CMAKE_COMMAND}" -E copy "${_output_cxx}" "${_pchfile}.gch"
-      # for clang
-      COMMAND "${CMAKE_COMMAND}" -E copy "${_output_cxx}" "${_pchfile}.pch"
+      COMMAND "${CMAKE_COMMAND}" -E copy "${_output_cxx}" "${_pchfile}${_PCH_EXT}"
       DEPENDS "${_pchfile}" "${_pch_flags_file}"
       COMMENT "Precompiling ${_name} for ${_target} (C++)")
     add_custom_command(
