@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdatetimeedit.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -26,6 +29,7 @@ extern "C"
 void* C_ZNK9QTimeEdit10metaObjectEv(void *this_) {
   return (void*)((QTimeEdit*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:207
 // [-2] void QTimeEdit(class QWidget *)
@@ -54,4 +58,5 @@ extern "C"
 void C_ZN9QTimeEdit15userTimeChangedERK5QTime(void *this_, QTime* time) {
   ((QTimeEdit*)this_)->userTimeChanged(*time);
 }
+
 //  main block end

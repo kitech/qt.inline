@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qquickimageprovider.h
+#ifndef protected
+#define protected public
+#endif
 #include <qquickimageprovider.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 void* C_ZN24QQuickAsyncImageProvider20requestImageResponseERK7QStringRK5QSize(void *this_, QString* id, QSize* requestedSize) {
   return (void*)((QQuickAsyncImageProvider*)this_)->requestImageResponse(*id, *requestedSize);
 }
+
 //  main block end

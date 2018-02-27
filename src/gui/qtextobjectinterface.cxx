@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h
+#ifndef protected
+#define protected public
+#endif
 #include <qabstracttextdocumentlayout.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -30,6 +33,7 @@ void* C_ZN20QTextObjectInterface13intrinsicSizeEP13QTextDocumentiRK11QTextFormat
   auto rv = ((QTextObjectInterface*)this_)->intrinsicSize(doc, posInDocument, *format);
 return new QSizeF(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:143
 // [-2] void drawObject(class QPainter *, const class QRectF &, class QTextDocument *, int, const class QTextFormat &)
@@ -37,4 +41,5 @@ extern "C"
 void C_ZN20QTextObjectInterface10drawObjectEP8QPainterRK6QRectFP13QTextDocumentiRK11QTextFormat(void *this_, QPainter * painter, QRectF* rect, QTextDocument * doc, int posInDocument, QTextFormat* format) {
   ((QTextObjectInterface*)this_)->drawObject(painter, *rect, doc, posInDocument, *format);
 }
+
 //  main block end

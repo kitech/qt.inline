@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qquickimageprovider.h
+#ifndef protected
+#define protected public
+#endif
 #include <qquickimageprovider.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK19QQuickImageResponse10metaObjectEv(void *this_) {
   return (void*)((QQuickImageResponse*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:75
 // [-2] void QQuickImageResponse()
@@ -45,6 +49,7 @@ extern "C"
 void* C_ZNK19QQuickImageResponse14textureFactoryEv(void *this_) {
   return (void*)((QQuickImageResponse*)this_)->textureFactory();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:79
 // [8] QString errorString()
@@ -53,6 +58,7 @@ void* C_ZNK19QQuickImageResponse11errorStringEv(void *this_) {
   auto rv = ((QQuickImageResponse*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:82
 // [-2] void cancel()
@@ -60,6 +66,7 @@ extern "C"
 void C_ZN19QQuickImageResponse6cancelEv(void *this_) {
   ((QQuickImageResponse*)this_)->cancel();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:85
 // [-2] void finished()
@@ -67,4 +74,5 @@ extern "C"
 void C_ZN19QQuickImageResponse8finishedEv(void *this_) {
   ((QQuickImageResponse*)this_)->finished();
 }
+
 //  main block end

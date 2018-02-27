@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qbytearraymatcher.h
+#ifndef protected
+#define protected public
+#endif
 #include <qbytearraymatcher.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQStaticByteArrayMatcherBase() {}
 // void QStaticByteArrayMatcherBase(const char *, uint)
 MyQStaticByteArrayMatcherBase(const char * pattern, uint n) : QStaticByteArrayMatcherBase(pattern, n) {}
+// Protected Visibility=Default Availability=Available
 // int indexOfIn(const char *, uint, const char *, int, int)
   virtual int indexOfIn(const char * needle, uint nlen, const char * haystack, int hlen, int from) {
     int handled = 0;
@@ -28,6 +32,14 @@ MyQStaticByteArrayMatcherBase(const char * pattern, uint n) : QStaticByteArrayMa
   }
 
 };
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearraymatcher.h:98
+// [4] int indexOfIn(const char *, uint, const char *, int, int)
+extern "C"
+int C_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_ii(void *this_, const char * needle, uint nlen, const char * haystack, int hlen, int from) {
+  return (int)((QStaticByteArrayMatcherBase*)this_)->QStaticByteArrayMatcherBase::indexOfIn(needle, nlen, haystack, hlen, from);
+}
 
 
 extern "C"

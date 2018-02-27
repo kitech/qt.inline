@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qscrollerproperties.h
+#ifndef protected
+#define protected public
+#endif
 #include <qscrollerproperties.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN19QScrollerPropertiesaSERKS_(void *this_, QScrollerProperties* sp) {
   auto& rv = ((QScrollerProperties*)this_)->operator=(*sp);
 return &rv;
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:63
 // [-2] void ~QScrollerProperties()
@@ -46,6 +50,7 @@ extern "C"
 bool C_ZNK19QScrollerPropertieseqERKS_(void *this_, QScrollerProperties* sp) {
   return (bool)((QScrollerProperties*)this_)->operator==(*sp);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:66
 // [1] bool operator!=(const class QScrollerProperties &)
@@ -53,6 +58,7 @@ extern "C"
 bool C_ZNK19QScrollerPropertiesneERKS_(void *this_, QScrollerProperties* sp) {
   return (bool)((QScrollerProperties*)this_)->operator!=(*sp);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:68
 // [-2] void setDefaultScrollerProperties(const class QScrollerProperties &)
@@ -75,6 +81,7 @@ void* C_ZNK19QScrollerProperties12scrollMetricENS_12ScrollMetricE(void *this_, Q
   auto rv = ((QScrollerProperties*)this_)->scrollMetric(metric);
 return new QVariant(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:118
 // [-2] void setScrollMetric(enum QScrollerProperties::ScrollMetric, const class QVariant &)
@@ -82,4 +89,5 @@ extern "C"
 void C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *this_, QScrollerProperties::ScrollMetric metric, QVariant* value) {
   ((QScrollerProperties*)this_)->setScrollMetric(metric, *value);
 }
+
 //  main block end

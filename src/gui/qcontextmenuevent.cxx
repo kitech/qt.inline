@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -56,6 +59,7 @@ extern "C"
 int C_ZNK17QContextMenuEvent1xEv(void *this_) {
   return (int)((QContextMenuEvent*)this_)->x();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:518
 // [4] int y()
@@ -63,6 +67,7 @@ extern "C"
 int C_ZNK17QContextMenuEvent1yEv(void *this_) {
   return (int)((QContextMenuEvent*)this_)->y();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:519
 // [4] int globalX()
@@ -70,6 +75,7 @@ extern "C"
 int C_ZNK17QContextMenuEvent7globalXEv(void *this_) {
   return (int)((QContextMenuEvent*)this_)->globalX();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:520
 // [4] int globalY()
@@ -77,6 +83,7 @@ extern "C"
 int C_ZNK17QContextMenuEvent7globalYEv(void *this_) {
   return (int)((QContextMenuEvent*)this_)->globalY();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:522
 // [8] const QPoint & pos()
@@ -85,6 +92,7 @@ void* C_ZNK17QContextMenuEvent3posEv(void *this_) {
   auto& rv = ((QContextMenuEvent*)this_)->pos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:523
 // [8] const QPoint & globalPos()
@@ -93,6 +101,7 @@ void* C_ZNK17QContextMenuEvent9globalPosEv(void *this_) {
   auto& rv = ((QContextMenuEvent*)this_)->globalPos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:525
 // [4] QContextMenuEvent::Reason reason()
@@ -100,4 +109,5 @@ extern "C"
 QContextMenuEvent::Reason C_ZNK17QContextMenuEvent6reasonEv(void *this_) {
   return (QContextMenuEvent::Reason)((QContextMenuEvent*)this_)->reason();
 }
+
 //  main block end

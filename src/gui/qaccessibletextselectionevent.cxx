@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ extern "C"
 void C_ZN29QAccessibleTextSelectionEvent12setSelectionEii(void *this_, int start, int end) {
   ((QAccessibleTextSelectionEvent*)this_)->setSelection(start, end);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:793
 // [4] int selectionStart()
@@ -54,6 +58,7 @@ extern "C"
 int C_ZNK29QAccessibleTextSelectionEvent14selectionStartEv(void *this_) {
   return (int)((QAccessibleTextSelectionEvent*)this_)->selectionStart();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:794
 // [4] int selectionEnd()
@@ -61,4 +66,5 @@ extern "C"
 int C_ZNK29QAccessibleTextSelectionEvent12selectionEndEv(void *this_) {
   return (int)((QAccessibleTextSelectionEvent*)this_)->selectionEnd();
 }
+
 //  main block end

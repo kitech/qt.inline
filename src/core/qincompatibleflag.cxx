@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qflags.h
+#ifndef protected
+#define protected public
+#endif
 #include <qflags.h>
 #include <QtCore>
 #include "callback_inherit.h"

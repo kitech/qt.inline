@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qobjectdefs.h
+#ifndef protected
+#define protected public
+#endif
 #include <qobjectdefs.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -22,6 +25,7 @@ extern "C"
 void* C_ZNK11QMetaObject9classNameEv(void *this_) {
   return (void*)((QMetaObject*)this_)->className();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:346
 // [8] const QMetaObject * superClass()
@@ -29,6 +33,7 @@ extern "C"
 void* C_ZNK11QMetaObject10superClassEv(void *this_) {
   return (void*)((QMetaObject*)this_)->superClass();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:349
 // [8] QObject * cast(class QObject *)
@@ -36,6 +41,7 @@ extern "C"
 void* C_ZNK11QMetaObject4castEP7QObject(void *this_, QObject * obj) {
   return (void*)((QMetaObject*)this_)->cast(obj);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:350
 // [8] const QObject * cast(const class QObject *)
@@ -43,6 +49,7 @@ extern "C"
 void* C_ZNK11QMetaObject4castEPK7QObject(void *this_, const QObject * obj) {
   return (void*)((QMetaObject*)this_)->cast(obj);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:356
 // [4] int methodOffset()
@@ -50,6 +57,7 @@ extern "C"
 int C_ZNK11QMetaObject12methodOffsetEv(void *this_) {
   return (int)((QMetaObject*)this_)->methodOffset();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:357
 // [4] int enumeratorOffset()
@@ -57,6 +65,7 @@ extern "C"
 int C_ZNK11QMetaObject16enumeratorOffsetEv(void *this_) {
   return (int)((QMetaObject*)this_)->enumeratorOffset();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:358
 // [4] int propertyOffset()
@@ -64,6 +73,7 @@ extern "C"
 int C_ZNK11QMetaObject14propertyOffsetEv(void *this_) {
   return (int)((QMetaObject*)this_)->propertyOffset();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:359
 // [4] int classInfoOffset()
@@ -71,6 +81,7 @@ extern "C"
 int C_ZNK11QMetaObject15classInfoOffsetEv(void *this_) {
   return (int)((QMetaObject*)this_)->classInfoOffset();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:361
 // [4] int constructorCount()
@@ -78,6 +89,7 @@ extern "C"
 int C_ZNK11QMetaObject16constructorCountEv(void *this_) {
   return (int)((QMetaObject*)this_)->constructorCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:362
 // [4] int methodCount()
@@ -85,6 +97,7 @@ extern "C"
 int C_ZNK11QMetaObject11methodCountEv(void *this_) {
   return (int)((QMetaObject*)this_)->methodCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:363
 // [4] int enumeratorCount()
@@ -92,6 +105,7 @@ extern "C"
 int C_ZNK11QMetaObject15enumeratorCountEv(void *this_) {
   return (int)((QMetaObject*)this_)->enumeratorCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:364
 // [4] int propertyCount()
@@ -99,6 +113,7 @@ extern "C"
 int C_ZNK11QMetaObject13propertyCountEv(void *this_) {
   return (int)((QMetaObject*)this_)->propertyCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:365
 // [4] int classInfoCount()
@@ -106,6 +121,7 @@ extern "C"
 int C_ZNK11QMetaObject14classInfoCountEv(void *this_) {
   return (int)((QMetaObject*)this_)->classInfoCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:367
 // [4] int indexOfConstructor(const char *)
@@ -113,6 +129,7 @@ extern "C"
 int C_ZNK11QMetaObject18indexOfConstructorEPKc(void *this_, const char * constructor) {
   return (int)((QMetaObject*)this_)->indexOfConstructor(constructor);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:368
 // [4] int indexOfMethod(const char *)
@@ -120,6 +137,7 @@ extern "C"
 int C_ZNK11QMetaObject13indexOfMethodEPKc(void *this_, const char * method) {
   return (int)((QMetaObject*)this_)->indexOfMethod(method);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:369
 // [4] int indexOfSignal(const char *)
@@ -127,6 +145,7 @@ extern "C"
 int C_ZNK11QMetaObject13indexOfSignalEPKc(void *this_, const char * signal) {
   return (int)((QMetaObject*)this_)->indexOfSignal(signal);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:370
 // [4] int indexOfSlot(const char *)
@@ -134,6 +153,7 @@ extern "C"
 int C_ZNK11QMetaObject11indexOfSlotEPKc(void *this_, const char * slot) {
   return (int)((QMetaObject*)this_)->indexOfSlot(slot);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:371
 // [4] int indexOfEnumerator(const char *)
@@ -141,6 +161,7 @@ extern "C"
 int C_ZNK11QMetaObject17indexOfEnumeratorEPKc(void *this_, const char * name) {
   return (int)((QMetaObject*)this_)->indexOfEnumerator(name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:372
 // [4] int indexOfProperty(const char *)
@@ -148,6 +169,7 @@ extern "C"
 int C_ZNK11QMetaObject15indexOfPropertyEPKc(void *this_, const char * name) {
   return (int)((QMetaObject*)this_)->indexOfProperty(name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:373
 // [4] int indexOfClassInfo(const char *)
@@ -155,6 +177,7 @@ extern "C"
 int C_ZNK11QMetaObject16indexOfClassInfoEPKc(void *this_, const char * name) {
   return (int)((QMetaObject*)this_)->indexOfClassInfo(name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:375
 // [16] QMetaMethod constructor(int)
@@ -163,6 +186,7 @@ void* C_ZNK11QMetaObject11constructorEi(void *this_, int index) {
   auto rv = ((QMetaObject*)this_)->constructor(index);
 return new QMetaMethod(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:376
 // [16] QMetaMethod method(int)
@@ -171,6 +195,7 @@ void* C_ZNK11QMetaObject6methodEi(void *this_, int index) {
   auto rv = ((QMetaObject*)this_)->method(index);
 return new QMetaMethod(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:377
 // [16] QMetaEnum enumerator(int)
@@ -179,6 +204,7 @@ void* C_ZNK11QMetaObject10enumeratorEi(void *this_, int index) {
   auto rv = ((QMetaObject*)this_)->enumerator(index);
 return new QMetaEnum(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:378
 // [32] QMetaProperty property(int)
@@ -187,6 +213,7 @@ void* C_ZNK11QMetaObject8propertyEi(void *this_, int index) {
   auto rv = ((QMetaObject*)this_)->property(index);
 return new QMetaProperty(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:379
 // [16] QMetaClassInfo classInfo(int)
@@ -195,6 +222,7 @@ void* C_ZNK11QMetaObject9classInfoEi(void *this_, int index) {
   auto rv = ((QMetaObject*)this_)->classInfo(index);
 return new QMetaClassInfo(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:380
 // [32] QMetaProperty userProperty()
@@ -203,6 +231,7 @@ void* C_ZNK11QMetaObject12userPropertyEv(void *this_) {
   auto rv = ((QMetaObject*)this_)->userProperty();
 return new QMetaProperty(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:382
 // [1] bool checkConnectArgs(const char *, const char *)
@@ -311,6 +340,7 @@ extern "C"
 void* C_ZNK11QMetaObject11newInstanceE16QGenericArgumentS0_S0_S0_S0_S0_S0_S0_S0_S0_(void *this_, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
   return (void*)((QMetaObject*)this_)->newInstance(*val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:581
 // [4] int static_metacall(enum QMetaObject::Call, int, void **)
@@ -318,6 +348,7 @@ extern "C"
 int C_ZNK11QMetaObject15static_metacallENS_4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
   return (int)((QMetaObject*)this_)->static_metacall(arg0, arg1, arg2);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:582
 // [4] int metacall(class QObject *, enum QMetaObject::Call, int, void **)

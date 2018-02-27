@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qxmlstream.h
+#ifndef protected
+#define protected public
+#endif
 #include <qxmlstream.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -30,6 +33,7 @@ void* C_ZN24QXmlStreamEntityResolver13resolveEntityERK7QStringS2_(void *this_, Q
   auto rv = ((QXmlStreamEntityResolver*)this_)->resolveEntity(*publicId, *systemId);
 return new QString(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:338
 // [8] QString resolveUndeclaredEntity(const class QString &)
@@ -38,4 +42,5 @@ void* C_ZN24QXmlStreamEntityResolver23resolveUndeclaredEntityERK7QString(void *t
   auto rv = ((QXmlStreamEntityResolver*)this_)->resolveUndeclaredEntity(*name);
 return new QString(rv);
 }
+
 //  main block end

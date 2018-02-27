@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuickControls2/qquickstyle.h
+#ifndef protected
+#define protected public
+#endif
 #include <qquickstyle.h>
 #include <QtQuickControls2>
 #include "callback_inherit.h"

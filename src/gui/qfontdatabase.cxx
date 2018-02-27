@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qfontdatabase.h
+#ifndef protected
+#define protected public
+#endif
 #include <qfontdatabase.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZNK13QFontDatabase8familiesENS_13WritingSystemE(void *this_, QFontDataba
   auto rv = ((QFontDatabase*)this_)->families(writingSystem);
 return new QStringList(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:124
 // [8] QStringList styles(const class QString &)
@@ -40,6 +44,7 @@ void* C_ZNK13QFontDatabase6stylesERK7QString(void *this_, QString* family) {
   auto rv = ((QFontDatabase*)this_)->styles(*family);
 return new QStringList(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:127
 // [8] QString styleString(const class QFont &)
@@ -48,6 +53,7 @@ void* C_ZN13QFontDatabase11styleStringERK5QFont(void *this_, QFont* font) {
   auto rv = ((QFontDatabase*)this_)->styleString(*font);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:128
 // [8] QString styleString(const class QFontInfo &)
@@ -56,6 +62,7 @@ void* C_ZN13QFontDatabase11styleStringERK9QFontInfo(void *this_, QFontInfo* font
   auto rv = ((QFontDatabase*)this_)->styleString(*fontInfo);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:130
 // [16] QFont font(const class QString &, const class QString &, int)
@@ -64,6 +71,7 @@ void* C_ZNK13QFontDatabase4fontERK7QStringS2_i(void *this_, QString* family, QSt
   auto rv = ((QFontDatabase*)this_)->font(*family, *style, pointSize);
 return new QFont(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:132
 // [1] bool isBitmapScalable(const class QString &, const class QString &)
@@ -71,6 +79,7 @@ extern "C"
 bool C_ZNK13QFontDatabase16isBitmapScalableERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (bool)((QFontDatabase*)this_)->isBitmapScalable(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:133
 // [1] bool isSmoothlyScalable(const class QString &, const class QString &)
@@ -78,6 +87,7 @@ extern "C"
 bool C_ZNK13QFontDatabase18isSmoothlyScalableERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (bool)((QFontDatabase*)this_)->isSmoothlyScalable(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:134
 // [1] bool isScalable(const class QString &, const class QString &)
@@ -85,6 +95,7 @@ extern "C"
 bool C_ZNK13QFontDatabase10isScalableERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (bool)((QFontDatabase*)this_)->isScalable(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:135
 // [1] bool isFixedPitch(const class QString &, const class QString &)
@@ -92,6 +103,7 @@ extern "C"
 bool C_ZNK13QFontDatabase12isFixedPitchERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (bool)((QFontDatabase*)this_)->isFixedPitch(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:137
 // [1] bool italic(const class QString &, const class QString &)
@@ -99,6 +111,7 @@ extern "C"
 bool C_ZNK13QFontDatabase6italicERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (bool)((QFontDatabase*)this_)->italic(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:138
 // [1] bool bold(const class QString &, const class QString &)
@@ -106,6 +119,7 @@ extern "C"
 bool C_ZNK13QFontDatabase4boldERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (bool)((QFontDatabase*)this_)->bold(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:139
 // [4] int weight(const class QString &, const class QString &)
@@ -113,6 +127,7 @@ extern "C"
 int C_ZNK13QFontDatabase6weightERK7QStringS2_(void *this_, QString* family, QString* style) {
   return (int)((QFontDatabase*)this_)->weight(*family, *style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:141
 // [1] bool hasFamily(const class QString &)
@@ -120,6 +135,7 @@ extern "C"
 bool C_ZNK13QFontDatabase9hasFamilyERK7QString(void *this_, QString* family) {
   return (bool)((QFontDatabase*)this_)->hasFamily(*family);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:142
 // [1] bool isPrivateFamily(const class QString &)
@@ -127,6 +143,7 @@ extern "C"
 bool C_ZNK13QFontDatabase15isPrivateFamilyERK7QString(void *this_, QString* family) {
   return (bool)((QFontDatabase*)this_)->isPrivateFamily(*family);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:144
 // [8] QString writingSystemName(enum QFontDatabase::WritingSystem)

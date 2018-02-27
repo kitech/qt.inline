@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qtextobject.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextobject.h>
 #include <QtGui>
 #include "callback_inherit.h"

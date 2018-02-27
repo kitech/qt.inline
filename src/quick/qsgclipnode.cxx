@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgnode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgnode.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN11QSGClipNode16setIsRectangularEb(void *this_, bool rectHint) {
   ((QSGClipNode*)this_)->setIsRectangular(rectHint);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:268
 // [1] bool isRectangular()
@@ -45,6 +49,7 @@ extern "C"
 bool C_ZNK11QSGClipNode13isRectangularEv(void *this_) {
   return (bool)((QSGClipNode*)this_)->isRectangular();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:270
 // [-2] void setClipRect(const class QRectF &)
@@ -52,6 +57,7 @@ extern "C"
 void C_ZN11QSGClipNode11setClipRectERK6QRectF(void *this_, QRectF* arg0) {
   ((QSGClipNode*)this_)->setClipRect(*arg0);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:271
 // [32] QRectF clipRect()
@@ -60,4 +66,5 @@ void* C_ZNK11QSGClipNode8clipRectEv(void *this_) {
   auto rv = ((QSGClipNode*)this_)->clipRect();
 return new QRectF(rv);
 }
+
 //  main block end

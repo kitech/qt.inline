@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qchar.h
+#ifndef protected
+#define protected public
+#endif
 #include <qchar.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -112,6 +115,7 @@ extern "C"
 QChar::Category C_ZNK5QChar8categoryEv(void *this_) {
   return (QChar::Category)((QChar*)this_)->category();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:395
 // [4] QChar::Direction direction()
@@ -119,6 +123,7 @@ extern "C"
 QChar::Direction C_ZNK5QChar9directionEv(void *this_) {
   return (QChar::Direction)((QChar*)this_)->direction();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:396
 // [4] QChar::JoiningType joiningType()
@@ -126,6 +131,7 @@ extern "C"
 QChar::JoiningType C_ZNK5QChar11joiningTypeEv(void *this_) {
   return (QChar::JoiningType)((QChar*)this_)->joiningType();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:398
 // [4] QChar::Joining joining()
@@ -133,6 +139,7 @@ extern "C"
 QChar::Joining C_ZNK5QChar7joiningEv(void *this_) {
   return (QChar::Joining)((QChar*)this_)->joining();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:411
 // [1] unsigned char combiningClass()
@@ -140,6 +147,7 @@ extern "C"
 unsigned char C_ZNK5QChar14combiningClassEv(void *this_) {
   return (unsigned char)((QChar*)this_)->combiningClass();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:413
 // [2] QChar mirroredChar()
@@ -148,6 +156,7 @@ void* C_ZNK5QChar12mirroredCharEv(void *this_) {
   auto rv = ((QChar*)this_)->mirroredChar();
 return new QChar(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:414
 // [1] bool hasMirrored()
@@ -155,6 +164,7 @@ extern "C"
 bool C_ZNK5QChar11hasMirroredEv(void *this_) {
   return (bool)((QChar*)this_)->hasMirrored();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:416
 // [8] QString decomposition()
@@ -163,6 +173,7 @@ void* C_ZNK5QChar13decompositionEv(void *this_) {
   auto rv = ((QChar*)this_)->decomposition();
 return new QString(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:417
 // [4] QChar::Decomposition decompositionTag()
@@ -170,6 +181,7 @@ extern "C"
 QChar::Decomposition C_ZNK5QChar16decompositionTagEv(void *this_) {
   return (QChar::Decomposition)((QChar*)this_)->decompositionTag();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:419
 // [4] int digitValue()
@@ -177,6 +189,7 @@ extern "C"
 int C_ZNK5QChar10digitValueEv(void *this_) {
   return (int)((QChar*)this_)->digitValue();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:420
 // [2] QChar toLower()
@@ -185,6 +198,7 @@ void* C_ZNK5QChar7toLowerEv(void *this_) {
   auto rv = ((QChar*)this_)->toLower();
 return new QChar(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:421
 // [2] QChar toUpper()
@@ -193,6 +207,7 @@ void* C_ZNK5QChar7toUpperEv(void *this_) {
   auto rv = ((QChar*)this_)->toUpper();
 return new QChar(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:422
 // [2] QChar toTitleCase()
@@ -201,6 +216,7 @@ void* C_ZNK5QChar11toTitleCaseEv(void *this_) {
   auto rv = ((QChar*)this_)->toTitleCase();
 return new QChar(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:423
 // [2] QChar toCaseFolded()
@@ -209,6 +225,7 @@ void* C_ZNK5QChar12toCaseFoldedEv(void *this_) {
   auto rv = ((QChar*)this_)->toCaseFolded();
 return new QChar(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:425
 // [4] QChar::Script script()
@@ -216,6 +233,7 @@ extern "C"
 QChar::Script C_ZNK5QChar6scriptEv(void *this_) {
   return (QChar::Script)((QChar*)this_)->script();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:427
 // [4] QChar::UnicodeVersion unicodeVersion()
@@ -223,6 +241,7 @@ extern "C"
 QChar::UnicodeVersion C_ZNK5QChar14unicodeVersionEv(void *this_) {
   return (QChar::UnicodeVersion)((QChar*)this_)->unicodeVersion();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:432
 // [1] char toLatin1()
@@ -230,6 +249,7 @@ extern "C"
 char C_ZNK5QChar8toLatin1Ev(void *this_) {
   return (char)((QChar*)this_)->toLatin1();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:433
 // [2] ushort unicode()
@@ -237,6 +257,7 @@ extern "C"
 ushort C_ZNK5QChar7unicodeEv(void *this_) {
   return (ushort)((QChar*)this_)->unicode();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:434
 // [2] ushort & unicode()
@@ -245,6 +266,7 @@ void* C_ZN5QChar7unicodeEv(void *this_) {
   auto& rv = ((QChar*)this_)->unicode();
 return &rv;
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:440
 // [2] QChar fromLatin1(char)
@@ -260,6 +282,7 @@ extern "C"
 bool C_ZNK5QChar6isNullEv(void *this_) {
   return (bool)((QChar*)this_)->isNull();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:444
 // [1] bool isPrint()
@@ -267,6 +290,7 @@ extern "C"
 bool C_ZNK5QChar7isPrintEv(void *this_) {
   return (bool)((QChar*)this_)->isPrint();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:445
 // [1] bool isSpace()
@@ -274,6 +298,7 @@ extern "C"
 bool C_ZNK5QChar7isSpaceEv(void *this_) {
   return (bool)((QChar*)this_)->isSpace();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:446
 // [1] bool isMark()
@@ -281,6 +306,7 @@ extern "C"
 bool C_ZNK5QChar6isMarkEv(void *this_) {
   return (bool)((QChar*)this_)->isMark();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:447
 // [1] bool isPunct()
@@ -288,6 +314,7 @@ extern "C"
 bool C_ZNK5QChar7isPunctEv(void *this_) {
   return (bool)((QChar*)this_)->isPunct();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:448
 // [1] bool isSymbol()
@@ -295,6 +322,7 @@ extern "C"
 bool C_ZNK5QChar8isSymbolEv(void *this_) {
   return (bool)((QChar*)this_)->isSymbol();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:449
 // [1] bool isLetter()
@@ -302,6 +330,7 @@ extern "C"
 bool C_ZNK5QChar8isLetterEv(void *this_) {
   return (bool)((QChar*)this_)->isLetter();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:450
 // [1] bool isNumber()
@@ -309,6 +338,7 @@ extern "C"
 bool C_ZNK5QChar8isNumberEv(void *this_) {
   return (bool)((QChar*)this_)->isNumber();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:451
 // [1] bool isLetterOrNumber()
@@ -316,6 +346,7 @@ extern "C"
 bool C_ZNK5QChar16isLetterOrNumberEv(void *this_) {
   return (bool)((QChar*)this_)->isLetterOrNumber();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:452
 // [1] bool isDigit()
@@ -323,6 +354,7 @@ extern "C"
 bool C_ZNK5QChar7isDigitEv(void *this_) {
   return (bool)((QChar*)this_)->isDigit();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:453
 // [1] bool isLower()
@@ -330,6 +362,7 @@ extern "C"
 bool C_ZNK5QChar7isLowerEv(void *this_) {
   return (bool)((QChar*)this_)->isLower();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:454
 // [1] bool isUpper()
@@ -337,6 +370,7 @@ extern "C"
 bool C_ZNK5QChar7isUpperEv(void *this_) {
   return (bool)((QChar*)this_)->isUpper();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:455
 // [1] bool isTitleCase()
@@ -344,6 +378,7 @@ extern "C"
 bool C_ZNK5QChar11isTitleCaseEv(void *this_) {
   return (bool)((QChar*)this_)->isTitleCase();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:457
 // [1] bool isNonCharacter()
@@ -351,6 +386,7 @@ extern "C"
 bool C_ZNK5QChar14isNonCharacterEv(void *this_) {
   return (bool)((QChar*)this_)->isNonCharacter();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:458
 // [1] bool isHighSurrogate()
@@ -358,6 +394,7 @@ extern "C"
 bool C_ZNK5QChar15isHighSurrogateEv(void *this_) {
   return (bool)((QChar*)this_)->isHighSurrogate();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:459
 // [1] bool isLowSurrogate()
@@ -365,6 +402,7 @@ extern "C"
 bool C_ZNK5QChar14isLowSurrogateEv(void *this_) {
   return (bool)((QChar*)this_)->isLowSurrogate();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:460
 // [1] bool isSurrogate()
@@ -372,6 +410,7 @@ extern "C"
 bool C_ZNK5QChar11isSurrogateEv(void *this_) {
   return (bool)((QChar*)this_)->isSurrogate();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:462
 // [1] uchar cell()
@@ -379,6 +418,7 @@ extern "C"
 uchar C_ZNK5QChar4cellEv(void *this_) {
   return (uchar)((QChar*)this_)->cell();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:463
 // [1] uchar row()
@@ -386,6 +426,7 @@ extern "C"
 uchar C_ZNK5QChar3rowEv(void *this_) {
   return (uchar)((QChar*)this_)->row();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:464
 // [-2] void setCell(uchar)
@@ -393,6 +434,7 @@ extern "C"
 void C_ZN5QChar7setCellEh(void *this_, uchar acell) {
   ((QChar*)this_)->setCell(acell);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:465
 // [-2] void setRow(uchar)
@@ -400,6 +442,7 @@ extern "C"
 void C_ZN5QChar6setRowEh(void *this_, uchar arow) {
   ((QChar*)this_)->setRow(arow);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:467
 // [1] bool isNonCharacter(uint)

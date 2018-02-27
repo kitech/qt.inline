@@ -1,5 +1,8 @@
 
 // /usr/include/qt/QtGui/qwindow.h
+#ifndef protected
+#define protected public
+#endif
 #include <qwindow.h>
 #include <QtGui>
 #include "callback_inherit.h"

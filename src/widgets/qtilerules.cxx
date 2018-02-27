@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qdrawutil.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdrawutil.h>
 #include <QtWidgets>
 #include "callback_inherit.h"

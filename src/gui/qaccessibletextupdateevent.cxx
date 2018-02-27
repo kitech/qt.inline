@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -48,6 +51,7 @@ void* C_ZNK26QAccessibleTextUpdateEvent11textRemovedEv(void *this_) {
   auto rv = ((QAccessibleTextUpdateEvent*)this_)->textRemoved();
 return new QString(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:882
 // [8] QString textInserted()
@@ -56,6 +60,7 @@ void* C_ZNK26QAccessibleTextUpdateEvent12textInsertedEv(void *this_) {
   auto rv = ((QAccessibleTextUpdateEvent*)this_)->textInserted();
 return new QString(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:885
 // [4] int changePosition()
@@ -63,4 +68,5 @@ extern "C"
 int C_ZNK26QAccessibleTextUpdateEvent14changePositionEv(void *this_) {
   return (int)((QAccessibleTextUpdateEvent*)this_)->changePosition();
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlpropertyvaluesource.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 void C_ZN23QQmlPropertyValueSource9setTargetERK12QQmlProperty(void *this_, QQmlProperty* arg0) {
   ((QQmlPropertyValueSource*)this_)->setTarget(*arg0);
 }
+
 //  main block end

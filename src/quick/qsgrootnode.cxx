@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgnode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgnode.h>
 #include <QtQuick>
 #include "callback_inherit.h"

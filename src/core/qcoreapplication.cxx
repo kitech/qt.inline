@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcoreapplication.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcoreapplication.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQCoreApplication() {}
 // void QCoreApplication(int &, char **, int)
 MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, argv, arg2) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -29,6 +33,14 @@ MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, a
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreapplication.h:190
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN16QCoreApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
+  return (bool)((QCoreApplication*)this_)->QCoreApplication::event(arg0);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:78
 // [8] const QMetaObject * metaObject()
@@ -36,6 +48,7 @@ extern "C"
 void* C_ZNK16QCoreApplication10metaObjectEv(void *this_) {
   return (void*)((QCoreApplication*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:91
 // [-2] void QCoreApplication(int &, char **, int)
@@ -238,6 +251,7 @@ extern "C"
 bool C_ZN16QCoreApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QCoreApplication*)this_)->notify(arg0, arg1);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:136
 // [1] bool startingUp()
@@ -340,6 +354,7 @@ extern "C"
 void C_ZN16QCoreApplication24installNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
   ((QCoreApplication*)this_)->installNativeEventFilter(filterObj);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:173
 // [-2] void removeNativeEventFilter(class QAbstractNativeEventFilter *)
@@ -347,6 +362,7 @@ extern "C"
 void C_ZN16QCoreApplication23removeNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
   ((QCoreApplication*)this_)->removeNativeEventFilter(filterObj);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:175
 // [1] bool isQuitLockEnabled()
@@ -375,6 +391,7 @@ extern "C"
 void C_ZN16QCoreApplication23organizationNameChangedEv(void *this_) {
   ((QCoreApplication*)this_)->organizationNameChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:185
 // [-2] void organizationDomainChanged()
@@ -382,6 +399,7 @@ extern "C"
 void C_ZN16QCoreApplication25organizationDomainChangedEv(void *this_) {
   ((QCoreApplication*)this_)->organizationDomainChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:186
 // [-2] void applicationNameChanged()
@@ -389,6 +407,7 @@ extern "C"
 void C_ZN16QCoreApplication22applicationNameChangedEv(void *this_) {
   ((QCoreApplication*)this_)->applicationNameChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:187
 // [-2] void applicationVersionChanged()
@@ -396,4 +415,5 @@ extern "C"
 void C_ZN16QCoreApplication25applicationVersionChangedEv(void *this_) {
   ((QCoreApplication*)this_)->applicationVersionChanged();
 }
+
 //  main block end

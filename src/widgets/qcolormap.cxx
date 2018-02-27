@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qcolormap.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcolormap.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -52,6 +55,7 @@ void* C_ZN9QColormapaSERKS_(void *this_, QColormap* colormap) {
   auto& rv = ((QColormap*)this_)->operator=(*colormap);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:70
 // [4] QColormap::Mode mode()
@@ -59,6 +63,7 @@ extern "C"
 QColormap::Mode C_ZNK9QColormap4modeEv(void *this_) {
   return (QColormap::Mode)((QColormap*)this_)->mode();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:72
 // [4] int depth()
@@ -66,6 +71,7 @@ extern "C"
 int C_ZNK9QColormap5depthEv(void *this_) {
   return (int)((QColormap*)this_)->depth();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:73
 // [4] int size()
@@ -73,6 +79,7 @@ extern "C"
 int C_ZNK9QColormap4sizeEv(void *this_) {
   return (int)((QColormap*)this_)->size();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:75
 // [4] uint pixel(const class QColor &)
@@ -80,6 +87,7 @@ extern "C"
 uint C_ZNK9QColormap5pixelERK6QColor(void *this_, QColor* color) {
   return (uint)((QColormap*)this_)->pixel(*color);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:76
 // [16] const QColor colorAt(uint)
@@ -88,4 +96,5 @@ void* C_ZNK9QColormap7colorAtEj(void *this_, uint pixel) {
   auto rv = ((QColormap*)this_)->colorAt(pixel);
 return new QColor(rv);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qdnslookup.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdnslookup.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN22QDnsMailExchangeRecordaSEOS_(void *this_, QDnsMailExchangeRecord && 
   auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:116
 // [8] QDnsMailExchangeRecord & operator=(const class QDnsMailExchangeRecord &)
@@ -40,6 +44,7 @@ void* C_ZN22QDnsMailExchangeRecordaSERKS_(void *this_, QDnsMailExchangeRecord* o
   auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:117
 // [-2] void ~QDnsMailExchangeRecord()
@@ -54,6 +59,7 @@ extern "C"
 void C_ZN22QDnsMailExchangeRecord4swapERS_(void *this_, QDnsMailExchangeRecord* other) {
   ((QDnsMailExchangeRecord*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:121
 // [8] QString exchange()
@@ -62,6 +68,7 @@ void* C_ZNK22QDnsMailExchangeRecord8exchangeEv(void *this_) {
   auto rv = ((QDnsMailExchangeRecord*)this_)->exchange();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:122
 // [8] QString name()
@@ -70,6 +77,7 @@ void* C_ZNK22QDnsMailExchangeRecord4nameEv(void *this_) {
   auto rv = ((QDnsMailExchangeRecord*)this_)->name();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:123
 // [2] quint16 preference()
@@ -77,6 +85,7 @@ extern "C"
 quint16 C_ZNK22QDnsMailExchangeRecord10preferenceEv(void *this_) {
   return (quint16)((QDnsMailExchangeRecord*)this_)->preference();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:124
 // [4] quint32 timeToLive()
@@ -84,4 +93,5 @@ extern "C"
 quint32 C_ZNK22QDnsMailExchangeRecord10timeToLiveEv(void *this_) {
   return (quint32)((QDnsMailExchangeRecord*)this_)->timeToLive();
 }
+
 //  main block end

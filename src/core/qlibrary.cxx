@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qlibrary.h
+#ifndef protected
+#define protected public
+#endif
 #include <qlibrary.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -30,6 +33,7 @@ extern "C"
 void* C_ZNK8QLibrary10metaObjectEv(void *this_) {
   return (void*)((QLibrary*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:68
 // [-2] void QLibrary(class QObject *)
@@ -73,6 +77,7 @@ void C_ZN8QLibrary7resolveEPKc(void *this_, const char * symbol) {
   auto rv = ((QLibrary*)this_)->resolve(symbol);
 /*return rv;*/
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:75
 // [8] QFunctionPointer resolve(const class QString &, const char *)
@@ -104,6 +109,7 @@ extern "C"
 bool C_ZN8QLibrary4loadEv(void *this_) {
   return (bool)((QLibrary*)this_)->load();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:80
 // [1] bool unload()
@@ -111,6 +117,7 @@ extern "C"
 bool C_ZN8QLibrary6unloadEv(void *this_) {
   return (bool)((QLibrary*)this_)->unload();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:81
 // [1] bool isLoaded()
@@ -118,6 +125,7 @@ extern "C"
 bool C_ZNK8QLibrary8isLoadedEv(void *this_) {
   return (bool)((QLibrary*)this_)->isLoaded();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:83
 // [1] bool isLibrary(const class QString &)
@@ -132,6 +140,7 @@ extern "C"
 void C_ZN8QLibrary11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QLibrary*)this_)->setFileName(*fileName);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:86
 // [8] QString fileName()
@@ -140,6 +149,7 @@ void* C_ZNK8QLibrary8fileNameEv(void *this_) {
   auto rv = ((QLibrary*)this_)->fileName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:88
 // [-2] void setFileNameAndVersion(const class QString &, int)
@@ -147,6 +157,7 @@ extern "C"
 void C_ZN8QLibrary21setFileNameAndVersionERK7QStringi(void *this_, QString* fileName, int verNum) {
   ((QLibrary*)this_)->setFileNameAndVersion(*fileName, verNum);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:89
 // [-2] void setFileNameAndVersion(const class QString &, const class QString &)
@@ -154,6 +165,7 @@ extern "C"
 void C_ZN8QLibrary21setFileNameAndVersionERK7QStringS2_(void *this_, QString* fileName, QString* version) {
   ((QLibrary*)this_)->setFileNameAndVersion(*fileName, *version);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:90
 // [8] QString errorString()
@@ -162,6 +174,7 @@ void* C_ZNK8QLibrary11errorStringEv(void *this_) {
   auto rv = ((QLibrary*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:92
 // [-2] void setLoadHints(QLibrary::LoadHints)
@@ -169,6 +182,7 @@ extern "C"
 void C_ZN8QLibrary12setLoadHintsE6QFlagsINS_8LoadHintEE(void *this_, QFlags<QLibrary::LoadHint> hints) {
   ((QLibrary*)this_)->setLoadHints(hints);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:93
 // [4] QLibrary::LoadHints loadHints()
@@ -177,4 +191,5 @@ QLibrary::LoadHints* C_ZNK8QLibrary9loadHintsEv(void *this_) {
   auto rv = ((QLibrary*)this_)->loadHints();
 return new QLibrary::LoadHints(rv);
 }
+
 //  main block end

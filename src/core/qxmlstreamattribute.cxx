@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qxmlstream.h
+#ifndef protected
+#define protected public
+#endif
 #include <qxmlstream.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -50,6 +53,7 @@ void* C_ZN19QXmlStreamAttributeaSEOS_(void *this_, QXmlStreamAttribute && other)
   auto& rv = ((QXmlStreamAttribute*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:136
 // [80] QXmlStreamAttribute & operator=(const class QXmlStreamAttribute &)
@@ -58,6 +62,7 @@ void* C_ZN19QXmlStreamAttributeaSERKS_(void *this_, QXmlStreamAttribute* arg0) {
   auto& rv = ((QXmlStreamAttribute*)this_)->operator=(*arg0);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:137
 // [-2] void ~QXmlStreamAttribute()
@@ -73,6 +78,7 @@ void* C_ZNK19QXmlStreamAttribute12namespaceUriEv(void *this_) {
   auto rv = ((QXmlStreamAttribute*)this_)->namespaceUri();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:141
 // [16] QStringRef name()
@@ -81,6 +87,7 @@ void* C_ZNK19QXmlStreamAttribute4nameEv(void *this_) {
   auto rv = ((QXmlStreamAttribute*)this_)->name();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:142
 // [16] QStringRef qualifiedName()
@@ -89,6 +96,7 @@ void* C_ZNK19QXmlStreamAttribute13qualifiedNameEv(void *this_) {
   auto rv = ((QXmlStreamAttribute*)this_)->qualifiedName();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:143
 // [16] QStringRef prefix()
@@ -97,6 +105,7 @@ void* C_ZNK19QXmlStreamAttribute6prefixEv(void *this_) {
   auto rv = ((QXmlStreamAttribute*)this_)->prefix();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:148
 // [16] QStringRef value()
@@ -105,6 +114,7 @@ void* C_ZNK19QXmlStreamAttribute5valueEv(void *this_) {
   auto rv = ((QXmlStreamAttribute*)this_)->value();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:149
 // [1] bool isDefault()
@@ -112,6 +122,7 @@ extern "C"
 bool C_ZNK19QXmlStreamAttribute9isDefaultEv(void *this_) {
   return (bool)((QXmlStreamAttribute*)this_)->isDefault();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:150
 // [1] bool operator==(const class QXmlStreamAttribute &)
@@ -119,6 +130,7 @@ extern "C"
 bool C_ZNK19QXmlStreamAttributeeqERKS_(void *this_, QXmlStreamAttribute* other) {
   return (bool)((QXmlStreamAttribute*)this_)->operator==(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:155
 // [1] bool operator!=(const class QXmlStreamAttribute &)
@@ -126,4 +138,5 @@ extern "C"
 bool C_ZNK19QXmlStreamAttributeneERKS_(void *this_, QXmlStreamAttribute* other) {
   return (bool)((QXmlStreamAttribute*)this_)->operator!=(*other);
 }
+
 //  main block end

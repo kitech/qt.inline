@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qmap.h
+#ifndef protected
+#define protected public
+#endif
 #include <qmap.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -22,6 +25,7 @@ extern "C"
 void C_ZN12QMapDataBase18recalcMostLeftNodeEv(void *this_) {
   ((QMapDataBase*)this_)->recalcMostLeftNode();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:201
 // [8] QMapDataBase * createData()

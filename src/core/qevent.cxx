@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcoreevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcoreevent.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZN6QEventaSERKS_(void *this_, QEvent* other) {
   auto& rv = ((QEvent*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:301
 // [4] QEvent::Type type()
@@ -46,6 +50,7 @@ extern "C"
 QEvent::Type C_ZNK6QEvent4typeEv(void *this_) {
   return (QEvent::Type)((QEvent*)this_)->type();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:302
 // [1] bool spontaneous()
@@ -53,6 +58,7 @@ extern "C"
 bool C_ZNK6QEvent11spontaneousEv(void *this_) {
   return (bool)((QEvent*)this_)->spontaneous();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:304
 // [-2] void setAccepted(_Bool)
@@ -60,6 +66,7 @@ extern "C"
 void C_ZN6QEvent11setAcceptedEb(void *this_, bool accepted) {
   ((QEvent*)this_)->setAccepted(accepted);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:305
 // [1] bool isAccepted()
@@ -67,6 +74,7 @@ extern "C"
 bool C_ZNK6QEvent10isAcceptedEv(void *this_) {
   return (bool)((QEvent*)this_)->isAccepted();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:307
 // [-2] void accept()
@@ -74,6 +82,7 @@ extern "C"
 void C_ZN6QEvent6acceptEv(void *this_) {
   ((QEvent*)this_)->accept();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:308
 // [-2] void ignore()
@@ -81,6 +90,7 @@ extern "C"
 void C_ZN6QEvent6ignoreEv(void *this_) {
   ((QEvent*)this_)->ignore();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:310
 // [4] int registerEventType(int)

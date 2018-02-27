@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 QPlatformSurfaceEvent::SurfaceEventType C_ZNK21QPlatformSurfaceEvent16surfaceEventTypeEv(void *this_) {
   return (QPlatformSurfaceEvent::SurfaceEventType)((QPlatformSurfaceEvent*)this_)->surfaceEventType();
 }
+
 //  main block end

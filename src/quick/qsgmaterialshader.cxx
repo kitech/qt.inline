@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgmaterial.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgmaterial.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQSGMaterialShader() {}
 // void QSGMaterialShader()
 MyQSGMaterialShader() : QSGMaterialShader() {}
+// Protected Visibility=Default Availability=Available
 // void setShaderSourceFile(class QOpenGLShader::ShaderType, const class QString &)
   virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
     int handled = 0;
@@ -26,6 +30,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
 // void setShaderSourceFiles(class QOpenGLShader::ShaderType, const class QStringList &)
   virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles) {
     int handled = 0;
@@ -37,6 +42,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void compile()
   virtual void compile() {
     int handled = 0;
@@ -48,6 +54,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
   }
 
+// Protected inline virtual Visibility=Default Availability=Available
 // void initialize()
   virtual void initialize() {
     int handled = 0;
@@ -59,6 +66,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // const char * vertexShader()
   virtual const char * vertexShader() {
     int handled = 0;
@@ -71,6 +79,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // const char * fragmentShader()
   virtual const char * fragmentShader() {
     int handled = 0;
@@ -84,6 +93,54 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
 
 };
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:114
+// [-2] void setShaderSourceFile(class QOpenGLShader::ShaderType, const class QString &)
+extern "C"
+void C_ZN17QSGMaterialShader19setShaderSourceFileE6QFlagsIN13QOpenGLShader13ShaderTypeBitEERK7QString(void *this_, QFlags<QOpenGLShader::ShaderTypeBit> type_, QString* sourceFile) {
+  ((QSGMaterialShader*)this_)->QSGMaterialShader::setShaderSourceFile(type_, *sourceFile);
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:115
+// [-2] void setShaderSourceFiles(class QOpenGLShader::ShaderType, const class QStringList &)
+extern "C"
+void C_ZN17QSGMaterialShader20setShaderSourceFilesE6QFlagsIN13QOpenGLShader13ShaderTypeBitEERK11QStringList(void *this_, QFlags<QOpenGLShader::ShaderTypeBit> type_, QStringList* sourceFiles) {
+  ((QSGMaterialShader*)this_)->QSGMaterialShader::setShaderSourceFiles(type_, *sourceFiles);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:117
+// [-2] void compile()
+extern "C"
+void C_ZN17QSGMaterialShader7compileEv(void *this_) {
+  ((QSGMaterialShader*)this_)->QSGMaterialShader::compile();
+}
+
+// Protected inline virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:119
+// [-2] void initialize()
+extern "C"
+void C_ZN17QSGMaterialShader10initializeEv(void *this_) {
+  ((QSGMaterialShader*)this_)->QSGMaterialShader::initialize();
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:121
+// [8] const char * vertexShader()
+extern "C"
+void* C_ZNK17QSGMaterialShader12vertexShaderEv(void *this_) {
+  return (void*)((QSGMaterialShader*)this_)->QSGMaterialShader::vertexShader();
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:122
+// [8] const char * fragmentShader()
+extern "C"
+void* C_ZNK17QSGMaterialShader14fragmentShaderEv(void *this_) {
+  return (void*)((QSGMaterialShader*)this_)->QSGMaterialShader::fragmentShader();
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:96
@@ -107,6 +164,7 @@ extern "C"
 void C_ZN17QSGMaterialShader8activateEv(void *this_) {
   ((QSGMaterialShader*)this_)->activate();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:100
 // [-2] void deactivate()
@@ -114,6 +172,7 @@ extern "C"
 void C_ZN17QSGMaterialShader10deactivateEv(void *this_) {
   ((QSGMaterialShader*)this_)->deactivate();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:103
 // [8] const char *const * attributeNames()
@@ -121,4 +180,5 @@ extern "C"
 void* C_ZNK17QSGMaterialShader14attributeNamesEv(void *this_) {
   return (void*)((QSGMaterialShader*)this_)->attributeNames();
 }
+
 //  main block end

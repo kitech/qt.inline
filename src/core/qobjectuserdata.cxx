@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qobject.h
+#ifndef protected
+#define protected public
+#endif
 #include <qobject.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -16,7 +19,7 @@ public:
 };
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:478
+// /usr/include/qt/QtCore/qobject.h:479
 // [-2] void ~QObjectUserData()
 extern "C"
 void C_ZN15QObjectUserDataD2Ev(void *this_) {

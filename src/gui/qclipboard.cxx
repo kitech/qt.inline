@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qclipboard.h
+#ifndef protected
+#define protected public
+#endif
 #include <qclipboard.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -17,6 +20,7 @@ extern "C"
 void* C_ZNK10QClipboard10metaObjectEv(void *this_) {
   return (void*)((QClipboard*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:65
 // [-2] void clear(enum QClipboard::Mode)
@@ -24,6 +28,7 @@ extern "C"
 void C_ZN10QClipboard5clearENS_4ModeE(void *this_, QClipboard::Mode mode) {
   ((QClipboard*)this_)->clear(mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:67
 // [1] bool supportsSelection()
@@ -31,6 +36,7 @@ extern "C"
 bool C_ZNK10QClipboard17supportsSelectionEv(void *this_) {
   return (bool)((QClipboard*)this_)->supportsSelection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:68
 // [1] bool supportsFindBuffer()
@@ -38,6 +44,7 @@ extern "C"
 bool C_ZNK10QClipboard18supportsFindBufferEv(void *this_) {
   return (bool)((QClipboard*)this_)->supportsFindBuffer();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:70
 // [1] bool ownsSelection()
@@ -45,6 +52,7 @@ extern "C"
 bool C_ZNK10QClipboard13ownsSelectionEv(void *this_) {
   return (bool)((QClipboard*)this_)->ownsSelection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:71
 // [1] bool ownsClipboard()
@@ -52,6 +60,7 @@ extern "C"
 bool C_ZNK10QClipboard13ownsClipboardEv(void *this_) {
   return (bool)((QClipboard*)this_)->ownsClipboard();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:72
 // [1] bool ownsFindBuffer()
@@ -59,6 +68,7 @@ extern "C"
 bool C_ZNK10QClipboard14ownsFindBufferEv(void *this_) {
   return (bool)((QClipboard*)this_)->ownsFindBuffer();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:74
 // [8] QString text(enum QClipboard::Mode)
@@ -67,6 +77,7 @@ void* C_ZNK10QClipboard4textENS_4ModeE(void *this_, QClipboard::Mode mode) {
   auto rv = ((QClipboard*)this_)->text(mode);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:75
 // [8] QString text(class QString &, enum QClipboard::Mode)
@@ -75,6 +86,7 @@ void* C_ZNK10QClipboard4textER7QStringNS_4ModeE(void *this_, QString* subtype, Q
   auto rv = ((QClipboard*)this_)->text(*subtype, mode);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:76
 // [-2] void setText(const class QString &, enum QClipboard::Mode)
@@ -82,6 +94,7 @@ extern "C"
 void C_ZN10QClipboard7setTextERK7QStringNS_4ModeE(void *this_, QString* arg0, QClipboard::Mode mode) {
   ((QClipboard*)this_)->setText(*arg0, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:78
 // [8] const QMimeData * mimeData(enum QClipboard::Mode)
@@ -89,6 +102,7 @@ extern "C"
 void* C_ZNK10QClipboard8mimeDataENS_4ModeE(void *this_, QClipboard::Mode mode) {
   return (void*)((QClipboard*)this_)->mimeData(mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:79
 // [-2] void setMimeData(class QMimeData *, enum QClipboard::Mode)
@@ -96,6 +110,7 @@ extern "C"
 void C_ZN10QClipboard11setMimeDataEP9QMimeDataNS_4ModeE(void *this_, QMimeData * data, QClipboard::Mode mode) {
   ((QClipboard*)this_)->setMimeData(data, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:81
 // [32] QImage image(enum QClipboard::Mode)
@@ -104,6 +119,7 @@ void* C_ZNK10QClipboard5imageENS_4ModeE(void *this_, QClipboard::Mode mode) {
   auto rv = ((QClipboard*)this_)->image(mode);
 return new QImage(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:82
 // [32] QPixmap pixmap(enum QClipboard::Mode)
@@ -112,6 +128,7 @@ void* C_ZNK10QClipboard6pixmapENS_4ModeE(void *this_, QClipboard::Mode mode) {
   auto rv = ((QClipboard*)this_)->pixmap(mode);
 return new QPixmap(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:83
 // [-2] void setImage(const class QImage &, enum QClipboard::Mode)
@@ -119,6 +136,7 @@ extern "C"
 void C_ZN10QClipboard8setImageERK6QImageNS_4ModeE(void *this_, QImage* arg0, QClipboard::Mode mode) {
   ((QClipboard*)this_)->setImage(*arg0, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:84
 // [-2] void setPixmap(const class QPixmap &, enum QClipboard::Mode)
@@ -126,6 +144,7 @@ extern "C"
 void C_ZN10QClipboard9setPixmapERK7QPixmapNS_4ModeE(void *this_, QPixmap* arg0, QClipboard::Mode mode) {
   ((QClipboard*)this_)->setPixmap(*arg0, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:87
 // [-2] void changed(class QClipboard::Mode)
@@ -133,6 +152,7 @@ extern "C"
 void C_ZN10QClipboard7changedENS_4ModeE(void *this_, QClipboard::Mode mode) {
   ((QClipboard*)this_)->changed(mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:88
 // [-2] void selectionChanged()
@@ -140,6 +160,7 @@ extern "C"
 void C_ZN10QClipboard16selectionChangedEv(void *this_) {
   ((QClipboard*)this_)->selectionChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:89
 // [-2] void findBufferChanged()
@@ -147,6 +168,7 @@ extern "C"
 void C_ZN10QClipboard17findBufferChangedEv(void *this_) {
   ((QClipboard*)this_)->findBufferChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:90
 // [-2] void dataChanged()
@@ -154,4 +176,5 @@ extern "C"
 void C_ZN10QClipboard11dataChangedEv(void *this_) {
   ((QClipboard*)this_)->dataChanged();
 }
+
 //  main block end

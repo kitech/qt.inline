@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qgenericpluginfactory.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgenericpluginfactory.h>
 #include <QtGui>
 #include "callback_inherit.h"

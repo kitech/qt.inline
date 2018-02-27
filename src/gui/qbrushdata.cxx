@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qbrush.h
+#ifndef protected
+#define protected public
+#endif
 #include <qbrush.h>
 #include <QtGui>
 #include "callback_inherit.h"

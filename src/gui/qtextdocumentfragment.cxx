@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qtextdocumentfragment.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextdocumentfragment.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -50,6 +53,7 @@ void* C_ZN21QTextDocumentFragmentaSERKS_(void *this_, QTextDocumentFragment* rhs
   auto& rv = ((QTextDocumentFragment*)this_)->operator=(*rhs);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:62
 // [-2] void ~QTextDocumentFragment()
@@ -64,6 +68,7 @@ extern "C"
 bool C_ZNK21QTextDocumentFragment7isEmptyEv(void *this_) {
   return (bool)((QTextDocumentFragment*)this_)->isEmpty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:66
 // [8] QString toPlainText()
@@ -72,6 +77,7 @@ void* C_ZNK21QTextDocumentFragment11toPlainTextEv(void *this_) {
   auto rv = ((QTextDocumentFragment*)this_)->toPlainText();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:68
 // [8] QString toHtml(const class QByteArray &)
@@ -80,6 +86,7 @@ void* C_ZNK21QTextDocumentFragment6toHtmlERK10QByteArray(void *this_, QByteArray
   auto rv = ((QTextDocumentFragment*)this_)->toHtml(*encoding);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:71
 // [8] QTextDocumentFragment fromPlainText(const class QString &)

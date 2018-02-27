@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qdnslookup.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdnslookup.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN20QDnsDomainNameRecordaSEOS_(void *this_, QDnsDomainNameRecord && othe
   auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:68
 // [8] QDnsDomainNameRecord & operator=(const class QDnsDomainNameRecord &)
@@ -40,6 +44,7 @@ void* C_ZN20QDnsDomainNameRecordaSERKS_(void *this_, QDnsDomainNameRecord* other
   auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:69
 // [-2] void ~QDnsDomainNameRecord()
@@ -54,6 +59,7 @@ extern "C"
 void C_ZN20QDnsDomainNameRecord4swapERS_(void *this_, QDnsDomainNameRecord* other) {
   ((QDnsDomainNameRecord*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:73
 // [8] QString name()
@@ -62,6 +68,7 @@ void* C_ZNK20QDnsDomainNameRecord4nameEv(void *this_) {
   auto rv = ((QDnsDomainNameRecord*)this_)->name();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:74
 // [4] quint32 timeToLive()
@@ -69,6 +76,7 @@ extern "C"
 quint32 C_ZNK20QDnsDomainNameRecord10timeToLiveEv(void *this_) {
   return (quint32)((QDnsDomainNameRecord*)this_)->timeToLive();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:75
 // [8] QString value()
@@ -77,4 +85,5 @@ void* C_ZNK20QDnsDomainNameRecord5valueEv(void *this_) {
   auto rv = ((QDnsDomainNameRecord*)this_)->value();
 return new QString(rv);
 }
+
 //  main block end

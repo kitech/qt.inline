@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qarraydata.h
+#ifndef protected
+#define protected public
+#endif
 #include <qarraydata.h>
 #include <QtCore>
 #include "callback_inherit.h"

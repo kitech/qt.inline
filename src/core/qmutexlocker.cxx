@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qmutex.h
+#ifndef protected
+#define protected public
+#endif
 #include <qmutex.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN12QMutexLocker6unlockEv(void *this_) {
   ((QMutexLocker*)this_)->unlock();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:223
 // [-2] void relock()
@@ -45,6 +49,7 @@ extern "C"
 void C_ZN12QMutexLocker6relockEv(void *this_) {
   ((QMutexLocker*)this_)->relock();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:238
 // [8] QMutex * mutex()
@@ -52,4 +57,5 @@ extern "C"
 void* C_ZNK12QMutexLocker5mutexEv(void *this_) {
   return (void*)((QMutexLocker*)this_)->mutex();
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
+#ifndef protected
+#define protected public
+#endif
 #include <qitemeditorfactory.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -29,6 +32,7 @@ extern "C"
 void* C_ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget(void *this_, QWidget * parent) {
   return (void*)((QItemEditorCreatorBase*)this_)->createWidget(parent);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
 // [8] QByteArray valuePropertyName()
@@ -37,4 +41,5 @@ void* C_ZNK22QItemEditorCreatorBase17valuePropertyNameEv(void *this_) {
   auto rv = ((QItemEditorCreatorBase*)this_)->valuePropertyName();
 return new QByteArray(rv);
 }
+
 //  main block end

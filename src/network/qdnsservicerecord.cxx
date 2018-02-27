@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qdnslookup.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdnslookup.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN17QDnsServiceRecordaSEOS_(void *this_, QDnsServiceRecord && other) {
   auto& rv = ((QDnsServiceRecord*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:141
 // [8] QDnsServiceRecord & operator=(const class QDnsServiceRecord &)
@@ -40,6 +44,7 @@ void* C_ZN17QDnsServiceRecordaSERKS_(void *this_, QDnsServiceRecord* other) {
   auto& rv = ((QDnsServiceRecord*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:142
 // [-2] void ~QDnsServiceRecord()
@@ -54,6 +59,7 @@ extern "C"
 void C_ZN17QDnsServiceRecord4swapERS_(void *this_, QDnsServiceRecord* other) {
   ((QDnsServiceRecord*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:146
 // [8] QString name()
@@ -62,6 +68,7 @@ void* C_ZNK17QDnsServiceRecord4nameEv(void *this_) {
   auto rv = ((QDnsServiceRecord*)this_)->name();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:147
 // [2] quint16 port()
@@ -69,6 +76,7 @@ extern "C"
 quint16 C_ZNK17QDnsServiceRecord4portEv(void *this_) {
   return (quint16)((QDnsServiceRecord*)this_)->port();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:148
 // [2] quint16 priority()
@@ -76,6 +84,7 @@ extern "C"
 quint16 C_ZNK17QDnsServiceRecord8priorityEv(void *this_) {
   return (quint16)((QDnsServiceRecord*)this_)->priority();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:149
 // [8] QString target()
@@ -84,6 +93,7 @@ void* C_ZNK17QDnsServiceRecord6targetEv(void *this_) {
   auto rv = ((QDnsServiceRecord*)this_)->target();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:150
 // [4] quint32 timeToLive()
@@ -91,6 +101,7 @@ extern "C"
 quint32 C_ZNK17QDnsServiceRecord10timeToLiveEv(void *this_) {
   return (quint32)((QDnsServiceRecord*)this_)->timeToLive();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:151
 // [2] quint16 weight()
@@ -98,4 +109,5 @@ extern "C"
 quint16 C_ZNK17QDnsServiceRecord6weightEv(void *this_) {
   return (quint16)((QDnsServiceRecord*)this_)->weight();
 }
+
 //  main block end

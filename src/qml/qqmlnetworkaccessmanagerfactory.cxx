@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlnetworkaccessmanagerfactory.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlnetworkaccessmanagerfactory.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -29,4 +32,5 @@ extern "C"
 void* C_ZN31QQmlNetworkAccessManagerFactory6createEP7QObject(void *this_, QObject * parent) {
   return (void*)((QQmlNetworkAccessManagerFactory*)this_)->create(parent);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qnetworkinterface.h
+#ifndef protected
+#define protected public
+#endif
 #include <qnetworkinterface.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN17QNetworkInterfaceaSEOS_(void *this_, QNetworkInterface && other) {
   auto& rv = ((QNetworkInterface*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:109
 // [8] QNetworkInterface & operator=(const class QNetworkInterface &)
@@ -40,6 +44,7 @@ void* C_ZN17QNetworkInterfaceaSERKS_(void *this_, QNetworkInterface* other) {
   auto& rv = ((QNetworkInterface*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:110
 // [-2] void ~QNetworkInterface()
@@ -54,6 +59,7 @@ extern "C"
 void C_ZN17QNetworkInterface4swapERS_(void *this_, QNetworkInterface* other) {
   ((QNetworkInterface*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:114
 // [1] bool isValid()
@@ -61,6 +67,7 @@ extern "C"
 bool C_ZNK17QNetworkInterface7isValidEv(void *this_) {
   return (bool)((QNetworkInterface*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:116
 // [4] int index()
@@ -68,6 +75,7 @@ extern "C"
 int C_ZNK17QNetworkInterface5indexEv(void *this_) {
   return (int)((QNetworkInterface*)this_)->index();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:117
 // [8] QString name()
@@ -76,6 +84,7 @@ void* C_ZNK17QNetworkInterface4nameEv(void *this_) {
   auto rv = ((QNetworkInterface*)this_)->name();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:118
 // [8] QString humanReadableName()
@@ -84,6 +93,7 @@ void* C_ZNK17QNetworkInterface17humanReadableNameEv(void *this_) {
   auto rv = ((QNetworkInterface*)this_)->humanReadableName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:119
 // [4] QNetworkInterface::InterfaceFlags flags()
@@ -92,6 +102,7 @@ QNetworkInterface::InterfaceFlags* C_ZNK17QNetworkInterface5flagsEv(void *this_)
   auto rv = ((QNetworkInterface*)this_)->flags();
 return new QNetworkInterface::InterfaceFlags(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:120
 // [8] QString hardwareAddress()
@@ -100,6 +111,7 @@ void* C_ZNK17QNetworkInterface15hardwareAddressEv(void *this_) {
   auto rv = ((QNetworkInterface*)this_)->hardwareAddress();
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:123
 // [4] int interfaceIndexFromName(const class QString &)

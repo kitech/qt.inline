@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgnode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgnode.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN16QSGTransformNode9setMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
   ((QSGTransformNode*)this_)->setMatrix(*matrix);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:288
 // [68] const QMatrix4x4 & matrix()
@@ -46,6 +50,7 @@ void* C_ZNK16QSGTransformNode6matrixEv(void *this_) {
   auto& rv = ((QSGTransformNode*)this_)->matrix();
 return new QMatrix4x4(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:290
 // [-2] void setCombinedMatrix(const class QMatrix4x4 &)
@@ -53,6 +58,7 @@ extern "C"
 void C_ZN16QSGTransformNode17setCombinedMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
   ((QSGTransformNode*)this_)->setCombinedMatrix(*matrix);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:291
 // [68] const QMatrix4x4 & combinedMatrix()
@@ -61,4 +67,5 @@ void* C_ZNK16QSGTransformNode14combinedMatrixEv(void *this_) {
   auto& rv = ((QSGTransformNode*)this_)->combinedMatrix();
 return new QMatrix4x4(rv);
 }
+
 //  main block end

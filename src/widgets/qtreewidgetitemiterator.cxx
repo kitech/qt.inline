@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtreewidgetitemiterator.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -48,6 +51,7 @@ void* C_ZN23QTreeWidgetItemIteratoraSERKS_(void *this_, QTreeWidgetItemIterator*
   auto& rv = ((QTreeWidgetItemIterator*)this_)->operator=(*it);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:91
 // [24] QTreeWidgetItemIterator & operator++()
@@ -56,6 +60,7 @@ void* C_ZN23QTreeWidgetItemIteratorppEv(void *this_) {
   auto& rv = ((QTreeWidgetItemIterator*)this_)->operator++();
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:92
 // [24] const QTreeWidgetItemIterator operator++(int)
@@ -64,6 +69,7 @@ void* C_ZN23QTreeWidgetItemIteratorppEi(void *this_, int arg0) {
   auto rv = ((QTreeWidgetItemIterator*)this_)->operator++(arg0);
 return new QTreeWidgetItemIterator(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:93
 // [24] QTreeWidgetItemIterator & operator+=(int)
@@ -72,6 +78,7 @@ void* C_ZN23QTreeWidgetItemIteratorpLEi(void *this_, int n) {
   auto& rv = ((QTreeWidgetItemIterator*)this_)->operator+=(n);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:95
 // [24] QTreeWidgetItemIterator & operator--()
@@ -80,6 +87,7 @@ void* C_ZN23QTreeWidgetItemIteratormmEv(void *this_) {
   auto& rv = ((QTreeWidgetItemIterator*)this_)->operator--();
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:96
 // [24] const QTreeWidgetItemIterator operator--(int)
@@ -88,6 +96,7 @@ void* C_ZN23QTreeWidgetItemIteratormmEi(void *this_, int arg0) {
   auto rv = ((QTreeWidgetItemIterator*)this_)->operator--(arg0);
 return new QTreeWidgetItemIterator(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:97
 // [24] QTreeWidgetItemIterator & operator-=(int)
@@ -96,6 +105,7 @@ void* C_ZN23QTreeWidgetItemIteratormIEi(void *this_, int n) {
   auto& rv = ((QTreeWidgetItemIterator*)this_)->operator-=(n);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:99
 // [8] QTreeWidgetItem * operator*()
@@ -103,4 +113,5 @@ extern "C"
 void* C_ZNK23QTreeWidgetItemIteratordeEv(void *this_) {
   return (void*)((QTreeWidgetItemIterator*)this_)->operator*();
 }
+
 //  main block end

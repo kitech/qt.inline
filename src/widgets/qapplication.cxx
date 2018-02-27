@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qapplication.h
+#ifndef protected
+#define protected public
+#endif
 #include <qapplication.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQApplication() {}
 // void QApplication(int &, char **, int)
 MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg2) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -29,6 +33,14 @@ MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:204
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN12QApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
+  return (bool)((QApplication*)this_)->QApplication::event(arg0);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:74
 // [8] const QMetaObject * metaObject()
@@ -36,6 +48,7 @@ extern "C"
 void* C_ZNK12QApplication10metaObjectEv(void *this_) {
   return (void*)((QApplication*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:94
 // [-2] void QApplication(int &, char **, int)
@@ -390,6 +403,7 @@ extern "C"
 bool C_ZN12QApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QApplication*)this_)->notify(arg0, arg1);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:190
 // [-2] void focusChanged(class QWidget *, class QWidget *)
@@ -397,6 +411,7 @@ extern "C"
 void C_ZN12QApplication12focusChangedEP7QWidgetS1_(void *this_, QWidget * old, QWidget * now) {
   ((QApplication*)this_)->focusChanged(old, now);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:193
 // [8] QString styleSheet()
@@ -405,6 +420,7 @@ void* C_ZNK12QApplication10styleSheetEv(void *this_) {
   auto rv = ((QApplication*)this_)->styleSheet();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:196
 // [-2] void setStyleSheet(const class QString &)
@@ -412,6 +428,7 @@ extern "C"
 void C_ZN12QApplication13setStyleSheetERK7QString(void *this_, QString* sheet) {
   ((QApplication*)this_)->setStyleSheet(*sheet);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:198
 // [-2] void setAutoSipEnabled(const _Bool)
@@ -419,6 +436,7 @@ extern "C"
 void C_ZN12QApplication17setAutoSipEnabledEb(void *this_, const bool enabled) {
   ((QApplication*)this_)->setAutoSipEnabled(enabled);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:199
 // [1] bool autoSipEnabled()
@@ -426,6 +444,7 @@ extern "C"
 bool C_ZNK12QApplication14autoSipEnabledEv(void *this_) {
   return (bool)((QApplication*)this_)->autoSipEnabled();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:200
 // [-2] void closeAllWindows()

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtextcodec.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextcodec.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -44,10 +47,11 @@ void C_ZN12QTextDecoderD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qtextcodec.h:161
 // [8] QString toUnicode(const char *, int)
 extern "C"
-void* C_ZN12QTextDecoder9toUnicodeEPKci(void *this_, const char * chars, int len) {
-  auto rv = ((QTextDecoder*)this_)->toUnicode(chars, len);
+void* C_ZN12QTextDecoder9toUnicodeEPKci(void *this_, const char * chars, int len_) {
+  auto rv = ((QTextDecoder*)this_)->toUnicode(chars, len_);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:162
 // [8] QString toUnicode(const class QByteArray &)
@@ -56,13 +60,15 @@ void* C_ZN12QTextDecoder9toUnicodeERK10QByteArray(void *this_, QByteArray* ba) {
   auto rv = ((QTextDecoder*)this_)->toUnicode(*ba);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:163
 // [-2] void toUnicode(class QString *, const char *, int)
 extern "C"
-void C_ZN12QTextDecoder9toUnicodeEP7QStringPKci(void *this_, QString * target, const char * chars, int len) {
-  ((QTextDecoder*)this_)->toUnicode(target, chars, len);
+void C_ZN12QTextDecoder9toUnicodeEP7QStringPKci(void *this_, QString * target, const char * chars, int len_) {
+  ((QTextDecoder*)this_)->toUnicode(target, chars, len_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:164
 // [1] bool hasFailure()
@@ -70,4 +76,5 @@ extern "C"
 bool C_ZNK12QTextDecoder10hasFailureEv(void *this_) {
   return (bool)((QTextDecoder*)this_)->hasFailure();
 }
+
 //  main block end

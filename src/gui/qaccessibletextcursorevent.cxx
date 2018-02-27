@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ extern "C"
 void C_ZN26QAccessibleTextCursorEvent17setCursorPositionEi(void *this_, int position) {
   ((QAccessibleTextCursorEvent*)this_)->setCursorPosition(position);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:763
 // [4] int cursorPosition()
@@ -54,4 +58,5 @@ extern "C"
 int C_ZNK26QAccessibleTextCursorEvent14cursorPositionEv(void *this_) {
   return (int)((QAccessibleTextCursorEvent*)this_)->cursorPosition();
 }
+
 //  main block end

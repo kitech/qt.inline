@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qiconengineplugin.h
+#ifndef protected
+#define protected public
+#endif
 #include <qiconengineplugin.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK17QIconEnginePlugin10metaObjectEv(void *this_) {
   return (void*)((QIconEnginePlugin*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:58
 // [-2] void QIconEnginePlugin(class QObject *)
@@ -45,4 +49,5 @@ extern "C"
 void* C_ZN17QIconEnginePlugin6createERK7QString(void *this_, QString* filename) {
   return (void*)((QIconEnginePlugin*)this_)->create(*filename);
 }
+
 //  main block end

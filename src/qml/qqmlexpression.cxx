@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlexpression.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlexpression.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -28,6 +31,7 @@ extern "C"
 void* C_ZNK14QQmlExpression10metaObjectEv(void *this_) {
   return (void*)((QQmlExpression*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:62
 // [-2] void QQmlExpression()
@@ -63,6 +67,7 @@ extern "C"
 void* C_ZNK14QQmlExpression6engineEv(void *this_) {
   return (void*)((QQmlExpression*)this_)->engine();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:68
 // [8] QQmlContext * context()
@@ -70,6 +75,7 @@ extern "C"
 void* C_ZNK14QQmlExpression7contextEv(void *this_) {
   return (void*)((QQmlExpression*)this_)->context();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:70
 // [8] QString expression()
@@ -78,6 +84,7 @@ void* C_ZNK14QQmlExpression10expressionEv(void *this_) {
   auto rv = ((QQmlExpression*)this_)->expression();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:71
 // [-2] void setExpression(const class QString &)
@@ -85,6 +92,7 @@ extern "C"
 void C_ZN14QQmlExpression13setExpressionERK7QString(void *this_, QString* arg0) {
   ((QQmlExpression*)this_)->setExpression(*arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:73
 // [1] bool notifyOnValueChanged()
@@ -92,6 +100,7 @@ extern "C"
 bool C_ZNK14QQmlExpression20notifyOnValueChangedEv(void *this_) {
   return (bool)((QQmlExpression*)this_)->notifyOnValueChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:74
 // [-2] void setNotifyOnValueChanged(_Bool)
@@ -99,6 +108,7 @@ extern "C"
 void C_ZN14QQmlExpression23setNotifyOnValueChangedEb(void *this_, bool arg0) {
   ((QQmlExpression*)this_)->setNotifyOnValueChanged(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:76
 // [8] QString sourceFile()
@@ -107,6 +117,7 @@ void* C_ZNK14QQmlExpression10sourceFileEv(void *this_) {
   auto rv = ((QQmlExpression*)this_)->sourceFile();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:77
 // [4] int lineNumber()
@@ -114,6 +125,7 @@ extern "C"
 int C_ZNK14QQmlExpression10lineNumberEv(void *this_) {
   return (int)((QQmlExpression*)this_)->lineNumber();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:78
 // [4] int columnNumber()
@@ -121,6 +133,7 @@ extern "C"
 int C_ZNK14QQmlExpression12columnNumberEv(void *this_) {
   return (int)((QQmlExpression*)this_)->columnNumber();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:79
 // [-2] void setSourceLocation(const class QString &, int, int)
@@ -128,6 +141,7 @@ extern "C"
 void C_ZN14QQmlExpression17setSourceLocationERK7QStringii(void *this_, QString* fileName, int line, int column) {
   ((QQmlExpression*)this_)->setSourceLocation(*fileName, line, column);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:81
 // [8] QObject * scopeObject()
@@ -135,6 +149,7 @@ extern "C"
 void* C_ZNK14QQmlExpression11scopeObjectEv(void *this_) {
   return (void*)((QQmlExpression*)this_)->scopeObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:83
 // [1] bool hasError()
@@ -142,6 +157,7 @@ extern "C"
 bool C_ZNK14QQmlExpression8hasErrorEv(void *this_) {
   return (bool)((QQmlExpression*)this_)->hasError();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:84
 // [-2] void clearError()
@@ -149,6 +165,7 @@ extern "C"
 void C_ZN14QQmlExpression10clearErrorEv(void *this_) {
   ((QQmlExpression*)this_)->clearError();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:85
 // [8] QQmlError error()
@@ -157,6 +174,7 @@ void* C_ZNK14QQmlExpression5errorEv(void *this_) {
   auto rv = ((QQmlExpression*)this_)->error();
 return new QQmlError(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:87
 // [16] QVariant evaluate(_Bool *)
@@ -165,6 +183,7 @@ void* C_ZN14QQmlExpression8evaluateEPb(void *this_, bool * valueIsUndefined) {
   auto rv = ((QQmlExpression*)this_)->evaluate(valueIsUndefined);
 return new QVariant(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:90
 // [-2] void valueChanged()
@@ -172,4 +191,5 @@ extern "C"
 void C_ZN14QQmlExpression12valueChangedEv(void *this_) {
   ((QQmlExpression*)this_)->valueChanged();
 }
+
 //  main block end

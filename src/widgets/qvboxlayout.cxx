@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qboxlayout.h
+#ifndef protected
+#define protected public
+#endif
 #include <qboxlayout.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -26,6 +29,7 @@ extern "C"
 void* C_ZNK11QVBoxLayout10metaObjectEv(void *this_) {
   return (void*)((QVBoxLayout*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:130
 // [-2] void QVBoxLayout()

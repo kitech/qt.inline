@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlparserstatus.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlparserstatus.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN16QQmlParserStatus10classBeginEv(void *this_) {
   ((QQmlParserStatus*)this_)->classBegin();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:56
 // [-2] void componentComplete()
@@ -45,4 +49,5 @@ extern "C"
 void C_ZN16QQmlParserStatus17componentCompleteEv(void *this_) {
   ((QQmlParserStatus*)this_)->componentComplete();
 }
+
 //  main block end

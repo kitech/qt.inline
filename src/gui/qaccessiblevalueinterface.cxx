@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -30,6 +33,7 @@ void* C_ZNK25QAccessibleValueInterface12currentValueEv(void *this_) {
   auto rv = ((QAccessibleValueInterface*)this_)->currentValue();
 return new QVariant(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:569
 // [-2] void setCurrentValue(const class QVariant &)
@@ -37,6 +41,7 @@ extern "C"
 void C_ZN25QAccessibleValueInterface15setCurrentValueERK8QVariant(void *this_, QVariant* value) {
   ((QAccessibleValueInterface*)this_)->setCurrentValue(*value);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:570
 // [16] QVariant maximumValue()
@@ -45,6 +50,7 @@ void* C_ZNK25QAccessibleValueInterface12maximumValueEv(void *this_) {
   auto rv = ((QAccessibleValueInterface*)this_)->maximumValue();
 return new QVariant(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:571
 // [16] QVariant minimumValue()
@@ -53,6 +59,7 @@ void* C_ZNK25QAccessibleValueInterface12minimumValueEv(void *this_) {
   auto rv = ((QAccessibleValueInterface*)this_)->minimumValue();
 return new QVariant(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:572
 // [16] QVariant minimumStepSize()
@@ -61,4 +68,5 @@ void* C_ZNK25QAccessibleValueInterface15minimumStepSizeEv(void *this_) {
   auto rv = ((QAccessibleValueInterface*)this_)->minimumStepSize();
 return new QVariant(rv);
 }
+
 //  main block end

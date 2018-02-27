@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qobjectdefs.h
+#ifndef protected
+#define protected public
+#endif
 #include <qobjectdefs.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -31,6 +34,7 @@ extern "C"
 void* C_ZNK16QGenericArgument4dataEv(void *this_) {
   return (void*)((QGenericArgument*)this_)->data();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:300
 // [8] const char * name()
@@ -38,6 +42,7 @@ extern "C"
 void* C_ZNK16QGenericArgument4nameEv(void *this_) {
   return (void*)((QGenericArgument*)this_)->name();
 }
+
 
 extern "C"
 void C_ZN16QGenericArgumentD2Ev(void *this_) {

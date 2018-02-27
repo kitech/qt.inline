@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qtextdocumentwriter.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextdocumentwriter.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -56,6 +59,7 @@ extern "C"
 void C_ZN19QTextDocumentWriter9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QTextDocumentWriter*)this_)->setFormat(*format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:63
 // [8] QByteArray format()
@@ -64,6 +68,7 @@ void* C_ZNK19QTextDocumentWriter6formatEv(void *this_) {
   auto rv = ((QTextDocumentWriter*)this_)->format();
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:65
 // [-2] void setDevice(class QIODevice *)
@@ -71,6 +76,7 @@ extern "C"
 void C_ZN19QTextDocumentWriter9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QTextDocumentWriter*)this_)->setDevice(device);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:66
 // [8] QIODevice * device()
@@ -78,6 +84,7 @@ extern "C"
 void* C_ZNK19QTextDocumentWriter6deviceEv(void *this_) {
   return (void*)((QTextDocumentWriter*)this_)->device();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:67
 // [-2] void setFileName(const class QString &)
@@ -85,6 +92,7 @@ extern "C"
 void C_ZN19QTextDocumentWriter11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QTextDocumentWriter*)this_)->setFileName(*fileName);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:68
 // [8] QString fileName()
@@ -93,6 +101,7 @@ void* C_ZNK19QTextDocumentWriter8fileNameEv(void *this_) {
   auto rv = ((QTextDocumentWriter*)this_)->fileName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:70
 // [1] bool write(const class QTextDocument *)
@@ -100,6 +109,7 @@ extern "C"
 bool C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *this_, const QTextDocument * document) {
   return (bool)((QTextDocumentWriter*)this_)->write(document);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:71
 // [1] bool write(const class QTextDocumentFragment &)
@@ -107,6 +117,7 @@ extern "C"
 bool C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *this_, QTextDocumentFragment* fragment) {
   return (bool)((QTextDocumentWriter*)this_)->write(*fragment);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:74
 // [-2] void setCodec(class QTextCodec *)
@@ -114,6 +125,7 @@ extern "C"
 void C_ZN19QTextDocumentWriter8setCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
   ((QTextDocumentWriter*)this_)->setCodec(codec);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:75
 // [8] QTextCodec * codec()
@@ -121,4 +133,5 @@ extern "C"
 void* C_ZNK19QTextDocumentWriter5codecEv(void *this_) {
   return (void*)((QTextDocumentWriter*)this_)->codec();
 }
+
 //  main block end

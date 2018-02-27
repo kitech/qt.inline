@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcollator.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcollator.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -30,6 +33,7 @@ void* C_ZN16QCollatorSortKeyaSERKS_(void *this_, QCollatorSortKey* other) {
   auto& rv = ((QCollatorSortKey*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:61
 // [8] QCollatorSortKey & operator=(class QCollatorSortKey &&)
@@ -38,6 +42,7 @@ void* C_ZN16QCollatorSortKeyaSEOS_(void *this_, QCollatorSortKey && other) {
   auto& rv = ((QCollatorSortKey*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:64
 // [-2] void swap(class QCollatorSortKey &)
@@ -45,6 +50,7 @@ extern "C"
 void C_ZN16QCollatorSortKey4swapERS_(void *this_, QCollatorSortKey* other) {
   ((QCollatorSortKey*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:67
 // [4] int compare(const class QCollatorSortKey &)
@@ -52,4 +58,5 @@ extern "C"
 int C_ZNK16QCollatorSortKey7compareERKS_(void *this_, QCollatorSortKey* key) {
   return (int)((QCollatorSortKey*)this_)->compare(*key);
 }
+
 //  main block end

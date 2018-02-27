@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qsavefile.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsavefile.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -19,19 +22,28 @@ MyQSaveFile(const QString & name) : QSaveFile(name) {}
 MyQSaveFile(QObject * parent) : QSaveFile(parent) {}
 // void QSaveFile(const class QString &, class QObject *)
 MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // qint64 writeData(const char *, qint64)
-  virtual qint64 writeData(const char * data, qint64 len) {
+  virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    return QSaveFile::writeData(data, len);
+    return QSaveFile::writeData(data, len_);
   }
   }
 
 };
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsavefile.h:87
+// [8] qint64 writeData(const char *, qint64)
+extern "C"
+qint64 C_ZN9QSaveFile9writeDataEPKcx(void *this_, const char * data, qint64 len_) {
+  return (qint64)((QSaveFile*)this_)->QSaveFile::writeData(data, len_);
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:62
@@ -40,6 +52,7 @@ extern "C"
 void* C_ZNK9QSaveFile10metaObjectEv(void *this_) {
   return (void*)((QSaveFile*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:68
 // [-2] void QSaveFile(const class QString &)
@@ -79,6 +92,7 @@ void* C_ZNK9QSaveFile8fileNameEv(void *this_) {
   auto rv = ((QSaveFile*)this_)->fileName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:76
 // [-2] void setFileName(const class QString &)
@@ -86,6 +100,7 @@ extern "C"
 void C_ZN9QSaveFile11setFileNameERK7QString(void *this_, QString* name) {
   ((QSaveFile*)this_)->setFileName(*name);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:78
 // [1] bool open(QIODevice::OpenMode)
@@ -93,6 +108,7 @@ extern "C"
 bool C_ZN9QSaveFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
   return (bool)((QSaveFile*)this_)->open(flags);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:79
 // [1] bool commit()
@@ -100,6 +116,7 @@ extern "C"
 bool C_ZN9QSaveFile6commitEv(void *this_) {
   return (bool)((QSaveFile*)this_)->commit();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:81
 // [-2] void cancelWriting()
@@ -107,6 +124,7 @@ extern "C"
 void C_ZN9QSaveFile13cancelWritingEv(void *this_) {
   ((QSaveFile*)this_)->cancelWriting();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:83
 // [-2] void setDirectWriteFallback(_Bool)
@@ -114,6 +132,7 @@ extern "C"
 void C_ZN9QSaveFile22setDirectWriteFallbackEb(void *this_, bool enabled) {
   ((QSaveFile*)this_)->setDirectWriteFallback(enabled);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:84
 // [1] bool directWriteFallback()
@@ -121,4 +140,5 @@ extern "C"
 bool C_ZNK9QSaveFile19directWriteFallbackEv(void *this_) {
   return (bool)((QSaveFile*)this_)->directWriteFallback();
 }
+
 //  main block end

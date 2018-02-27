@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qundoview.h
+#ifndef protected
+#define protected public
+#endif
 #include <qundoview.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -28,6 +31,7 @@ extern "C"
 void* C_ZNK9QUndoView10metaObjectEv(void *this_) {
   return (void*)((QUndoView*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:65
 // [-2] void QUndoView(class QWidget *)
@@ -63,6 +67,7 @@ extern "C"
 void* C_ZNK9QUndoView5stackEv(void *this_) {
   return (void*)((QUndoView*)this_)->stack();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:74
 // [8] QUndoGroup * group()
@@ -70,6 +75,7 @@ extern "C"
 void* C_ZNK9QUndoView5groupEv(void *this_) {
   return (void*)((QUndoView*)this_)->group();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:77
 // [-2] void setEmptyLabel(const class QString &)
@@ -77,6 +83,7 @@ extern "C"
 void C_ZN9QUndoView13setEmptyLabelERK7QString(void *this_, QString* label) {
   ((QUndoView*)this_)->setEmptyLabel(*label);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:78
 // [8] QString emptyLabel()
@@ -85,6 +92,7 @@ void* C_ZNK9QUndoView10emptyLabelEv(void *this_) {
   auto rv = ((QUndoView*)this_)->emptyLabel();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:80
 // [-2] void setCleanIcon(const class QIcon &)
@@ -92,6 +100,7 @@ extern "C"
 void C_ZN9QUndoView12setCleanIconERK5QIcon(void *this_, QIcon* icon) {
   ((QUndoView*)this_)->setCleanIcon(*icon);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:81
 // [8] QIcon cleanIcon()
@@ -100,6 +109,7 @@ void* C_ZNK9QUndoView9cleanIconEv(void *this_) {
   auto rv = ((QUndoView*)this_)->cleanIcon();
 return new QIcon(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:84
 // [-2] void setStack(class QUndoStack *)
@@ -107,6 +117,7 @@ extern "C"
 void C_ZN9QUndoView8setStackEP10QUndoStack(void *this_, QUndoStack * stack) {
   ((QUndoView*)this_)->setStack(stack);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:86
 // [-2] void setGroup(class QUndoGroup *)
@@ -114,4 +125,5 @@ extern "C"
 void C_ZN9QUndoView8setGroupEP10QUndoGroup(void *this_, QUndoGroup * group) {
   ((QUndoView*)this_)->setGroup(group);
 }
+
 //  main block end

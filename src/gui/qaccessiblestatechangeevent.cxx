@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -29,4 +32,5 @@ extern "C"
 QAccessible::State C_ZNK27QAccessibleStateChangeEvent13changedStatesEv(void *this_) {
   return (QAccessible::State)((QAccessibleStateChangeEvent*)this_)->changedStates();
 }
+
 //  main block end

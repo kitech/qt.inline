@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ extern "C"
 void C_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *this_, QVariant* val) {
   ((QAccessibleValueChangeEvent*)this_)->setValue(*val);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:914
 // [16] QVariant value()
@@ -55,4 +59,5 @@ void* C_ZNK27QAccessibleValueChangeEvent5valueEv(void *this_) {
   auto rv = ((QAccessibleValueChangeEvent*)this_)->value();
 return new QVariant(rv);
 }
+
 //  main block end

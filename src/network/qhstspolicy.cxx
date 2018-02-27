@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qhstspolicy.h
+#ifndef protected
+#define protected public
+#endif
 #include <qhstspolicy.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -41,6 +44,7 @@ void* C_ZN11QHstsPolicyaSERKS_(void *this_, QHstsPolicy* rhs) {
   auto& rv = ((QHstsPolicy*)this_)->operator=(*rhs);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:68
 // [8] QHstsPolicy & operator=(class QHstsPolicy &&)
@@ -49,6 +53,7 @@ void* C_ZN11QHstsPolicyaSEOS_(void *this_, QHstsPolicy && other) {
   auto& rv = ((QHstsPolicy*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:69
 // [-2] void ~QHstsPolicy()
@@ -63,6 +68,7 @@ extern "C"
 void C_ZN11QHstsPolicy4swapERS_(void *this_, QHstsPolicy* other) {
   ((QHstsPolicy*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:73
 // [-2] void setHost(const class QString &, class QUrl::ParsingMode)
@@ -70,6 +76,7 @@ extern "C"
 void C_ZN11QHstsPolicy7setHostERK7QStringN4QUrl11ParsingModeE(void *this_, QString* host, QUrl::ParsingMode mode) {
   ((QHstsPolicy*)this_)->setHost(*host, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:75
 // [-2] void setExpiry(const class QDateTime &)
@@ -77,6 +84,7 @@ extern "C"
 void C_ZN11QHstsPolicy9setExpiryERK9QDateTime(void *this_, QDateTime* expiry) {
   ((QHstsPolicy*)this_)->setExpiry(*expiry);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:76
 // [8] QDateTime expiry()
@@ -85,6 +93,7 @@ void* C_ZNK11QHstsPolicy6expiryEv(void *this_) {
   auto rv = ((QHstsPolicy*)this_)->expiry();
 return new QDateTime(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:77
 // [-2] void setIncludesSubDomains(_Bool)
@@ -92,6 +101,7 @@ extern "C"
 void C_ZN11QHstsPolicy21setIncludesSubDomainsEb(void *this_, bool include) {
   ((QHstsPolicy*)this_)->setIncludesSubDomains(include);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:78
 // [1] bool includesSubDomains()
@@ -99,6 +109,7 @@ extern "C"
 bool C_ZNK11QHstsPolicy18includesSubDomainsEv(void *this_) {
   return (bool)((QHstsPolicy*)this_)->includesSubDomains();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:80
 // [1] bool isExpired()
@@ -106,4 +117,5 @@ extern "C"
 bool C_ZNK11QHstsPolicy9isExpiredEv(void *this_) {
   return (bool)((QHstsPolicy*)this_)->isExpired();
 }
+
 //  main block end

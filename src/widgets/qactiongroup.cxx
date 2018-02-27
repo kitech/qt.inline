@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qactiongroup.h
+#ifndef protected
+#define protected public
+#endif
 #include <qactiongroup.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK12QActionGroup10metaObjectEv(void *this_) {
   return (void*)((QActionGroup*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:63
 // [-2] void QActionGroup(class QObject *)
@@ -45,6 +49,7 @@ extern "C"
 void* C_ZN12QActionGroup9addActionEP7QAction(void *this_, QAction * a) {
   return (void*)((QActionGroup*)this_)->addAction(a);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:67
 // [8] QAction * addAction(const class QString &)
@@ -52,6 +57,7 @@ extern "C"
 void* C_ZN12QActionGroup9addActionERK7QString(void *this_, QString* text) {
   return (void*)((QActionGroup*)this_)->addAction(*text);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:68
 // [8] QAction * addAction(const class QIcon &, const class QString &)
@@ -59,6 +65,7 @@ extern "C"
 void* C_ZN12QActionGroup9addActionERK5QIconRK7QString(void *this_, QIcon* icon, QString* text) {
   return (void*)((QActionGroup*)this_)->addAction(*icon, *text);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:69
 // [-2] void removeAction(class QAction *)
@@ -66,6 +73,7 @@ extern "C"
 void C_ZN12QActionGroup12removeActionEP7QAction(void *this_, QAction * a) {
   ((QActionGroup*)this_)->removeAction(a);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:72
 // [8] QAction * checkedAction()
@@ -73,6 +81,7 @@ extern "C"
 void* C_ZNK12QActionGroup13checkedActionEv(void *this_) {
   return (void*)((QActionGroup*)this_)->checkedAction();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:73
 // [1] bool isExclusive()
@@ -80,6 +89,7 @@ extern "C"
 bool C_ZNK12QActionGroup11isExclusiveEv(void *this_) {
   return (bool)((QActionGroup*)this_)->isExclusive();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:74
 // [1] bool isEnabled()
@@ -87,6 +97,7 @@ extern "C"
 bool C_ZNK12QActionGroup9isEnabledEv(void *this_) {
   return (bool)((QActionGroup*)this_)->isEnabled();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:75
 // [1] bool isVisible()
@@ -94,6 +105,7 @@ extern "C"
 bool C_ZNK12QActionGroup9isVisibleEv(void *this_) {
   return (bool)((QActionGroup*)this_)->isVisible();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:79
 // [-2] void setEnabled(_Bool)
@@ -101,6 +113,7 @@ extern "C"
 void C_ZN12QActionGroup10setEnabledEb(void *this_, bool arg0) {
   ((QActionGroup*)this_)->setEnabled(arg0);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:80
 // [-2] void setDisabled(_Bool)
@@ -108,6 +121,7 @@ extern "C"
 void C_ZN12QActionGroup11setDisabledEb(void *this_, bool b) {
   ((QActionGroup*)this_)->setDisabled(b);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:81
 // [-2] void setVisible(_Bool)
@@ -115,6 +129,7 @@ extern "C"
 void C_ZN12QActionGroup10setVisibleEb(void *this_, bool arg0) {
   ((QActionGroup*)this_)->setVisible(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:82
 // [-2] void setExclusive(_Bool)
@@ -122,6 +137,7 @@ extern "C"
 void C_ZN12QActionGroup12setExclusiveEb(void *this_, bool arg0) {
   ((QActionGroup*)this_)->setExclusive(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:85
 // [-2] void triggered(class QAction *)
@@ -129,6 +145,7 @@ extern "C"
 void C_ZN12QActionGroup9triggeredEP7QAction(void *this_, QAction * arg0) {
   ((QActionGroup*)this_)->triggered(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:86
 // [-2] void hovered(class QAction *)
@@ -136,4 +153,5 @@ extern "C"
 void C_ZN12QActionGroup7hoveredEP7QAction(void *this_, QAction * arg0) {
   ((QActionGroup*)this_)->hovered(arg0);
 }
+
 //  main block end

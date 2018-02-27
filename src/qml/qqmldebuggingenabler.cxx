@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmldebug.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmldebug.h>
 #include <QtQml>
 #include "callback_inherit.h"

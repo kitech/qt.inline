@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qjsondocument.h
+#ifndef protected
+#define protected public
+#endif
 #include <qjsondocument.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -23,6 +26,7 @@ void* C_ZNK15QJsonParseError11errorStringEv(void *this_) {
   auto rv = ((QJsonParseError*)this_)->errorString();
 return new QString(rv);
 }
+
 
 extern "C"
 void C_ZN15QJsonParseErrorD2Ev(void *this_) {

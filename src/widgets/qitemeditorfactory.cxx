@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
+#ifndef protected
+#define protected public
+#endif
 #include <qitemeditorfactory.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void* C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *this_, int userType, QWidget * parent) {
   return (void*)((QItemEditorFactory*)this_)->createEditor(userType, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:102
 // [8] QByteArray valuePropertyName(int)
@@ -46,6 +50,7 @@ void* C_ZNK18QItemEditorFactory17valuePropertyNameEi(void *this_, int userType) 
   auto rv = ((QItemEditorFactory*)this_)->valuePropertyName(userType);
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:104
 // [-2] void registerEditor(int, class QItemEditorCreatorBase *)
@@ -53,6 +58,7 @@ extern "C"
 void C_ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase(void *this_, int userType, QItemEditorCreatorBase * creator) {
   ((QItemEditorFactory*)this_)->registerEditor(userType, creator);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:106
 // [8] const QItemEditorFactory * defaultFactory()

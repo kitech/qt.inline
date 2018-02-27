@@ -1,5 +1,8 @@
 
 // /usr/include/qt/QtCore/qfileinfo.h
+#ifndef protected
+#define protected public
+#endif
 #include <qfileinfo.h>
 #include <QtCore>
 #include "callback_inherit.h"

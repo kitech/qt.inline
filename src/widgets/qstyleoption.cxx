@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qstyleoption.h
+#ifndef protected
+#define protected public
+#endif
 #include <qstyleoption.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN12QStyleOption4initEPK7QWidget(void *this_, const QWidget * w) {
   ((QStyleOption*)this_)->init(w);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:107
 // [-2] void initFrom(const class QWidget *)
@@ -45,6 +49,7 @@ extern "C"
 void C_ZN12QStyleOption8initFromEPK7QWidget(void *this_, const QWidget * w) {
   ((QStyleOption*)this_)->initFrom(w);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:108
 // [64] QStyleOption & operator=(const class QStyleOption &)
@@ -53,4 +58,5 @@ void* C_ZN12QStyleOptionaSERKS_(void *this_, QStyleOption* other) {
   auto& rv = ((QStyleOption*)this_)->operator=(*other);
 return &rv;
 }
+
 //  main block end

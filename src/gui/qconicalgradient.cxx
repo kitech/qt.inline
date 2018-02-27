@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qbrush.h
+#ifndef protected
+#define protected public
+#endif
 #include <qbrush.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -50,6 +53,7 @@ void* C_ZNK16QConicalGradient6centerEv(void *this_) {
   auto rv = ((QConicalGradient*)this_)->center();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:311
 // [-2] void setCenter(const class QPointF &)
@@ -57,6 +61,7 @@ extern "C"
 void C_ZN16QConicalGradient9setCenterERK7QPointF(void *this_, QPointF* center) {
   ((QConicalGradient*)this_)->setCenter(*center);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:312
 // [-2] void setCenter(qreal, qreal)
@@ -64,6 +69,7 @@ extern "C"
 void C_ZN16QConicalGradient9setCenterEdd(void *this_, qreal x, qreal y) {
   ((QConicalGradient*)this_)->setCenter(x, y);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:314
 // [8] qreal angle()
@@ -71,6 +77,7 @@ extern "C"
 qreal C_ZNK16QConicalGradient5angleEv(void *this_) {
   return (qreal)((QConicalGradient*)this_)->angle();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:315
 // [-2] void setAngle(qreal)
@@ -78,6 +85,7 @@ extern "C"
 void C_ZN16QConicalGradient8setAngleEd(void *this_, qreal angle) {
   ((QConicalGradient*)this_)->setAngle(angle);
 }
+
 
 extern "C"
 void C_ZN16QConicalGradientD2Ev(void *this_) {

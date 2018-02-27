@@ -1,5 +1,8 @@
 
 // /usr/include/qt/QtCore/qvariant.h
+#ifndef protected
+#define protected public
+#endif
 #include <qvariant.h>
 #include <QtCore>
 #include "callback_inherit.h"

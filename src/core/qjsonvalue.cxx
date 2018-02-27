@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qjsonvalue.h
+#ifndef protected
+#define protected public
+#endif
 #include <qjsonvalue.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -120,6 +123,7 @@ void* C_ZN10QJsonValueaSERKS_(void *this_, QJsonValue* other) {
   auto& rv = ((QJsonValue*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:105
 // [24] QJsonValue & operator=(class QJsonValue &&)
@@ -128,6 +132,7 @@ void* C_ZN10QJsonValueaSEOS_(void *this_, QJsonValue && other) {
   auto& rv = ((QJsonValue*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:111
 // [-2] void swap(class QJsonValue &)
@@ -135,6 +140,7 @@ extern "C"
 void C_ZN10QJsonValue4swapERS_(void *this_, QJsonValue* other) {
   ((QJsonValue*)this_)->swap(*other);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:118
 // [24] QJsonValue fromVariant(const class QVariant &)
@@ -151,6 +157,7 @@ void* C_ZNK10QJsonValue9toVariantEv(void *this_) {
   auto rv = ((QJsonValue*)this_)->toVariant();
 return new QVariant(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:121
 // [4] QJsonValue::Type type()
@@ -158,6 +165,7 @@ extern "C"
 QJsonValue::Type C_ZNK10QJsonValue4typeEv(void *this_) {
   return (QJsonValue::Type)((QJsonValue*)this_)->type();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:122
 // [1] bool isNull()
@@ -165,6 +173,7 @@ extern "C"
 bool C_ZNK10QJsonValue6isNullEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isNull();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:123
 // [1] bool isBool()
@@ -172,6 +181,7 @@ extern "C"
 bool C_ZNK10QJsonValue6isBoolEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isBool();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:124
 // [1] bool isDouble()
@@ -179,6 +189,7 @@ extern "C"
 bool C_ZNK10QJsonValue8isDoubleEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isDouble();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:125
 // [1] bool isString()
@@ -186,6 +197,7 @@ extern "C"
 bool C_ZNK10QJsonValue8isStringEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isString();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:126
 // [1] bool isArray()
@@ -193,6 +205,7 @@ extern "C"
 bool C_ZNK10QJsonValue7isArrayEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isArray();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:127
 // [1] bool isObject()
@@ -200,6 +213,7 @@ extern "C"
 bool C_ZNK10QJsonValue8isObjectEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isObject();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:128
 // [1] bool isUndefined()
@@ -207,6 +221,7 @@ extern "C"
 bool C_ZNK10QJsonValue11isUndefinedEv(void *this_) {
   return (bool)((QJsonValue*)this_)->isUndefined();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:130
 // [1] bool toBool(_Bool)
@@ -214,6 +229,7 @@ extern "C"
 bool C_ZNK10QJsonValue6toBoolEb(void *this_, bool defaultValue) {
   return (bool)((QJsonValue*)this_)->toBool(defaultValue);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:131
 // [4] int toInt(int)
@@ -221,6 +237,7 @@ extern "C"
 int C_ZNK10QJsonValue5toIntEi(void *this_, int defaultValue) {
   return (int)((QJsonValue*)this_)->toInt(defaultValue);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:132
 // [8] double toDouble(double)
@@ -228,6 +245,7 @@ extern "C"
 double C_ZNK10QJsonValue8toDoubleEd(void *this_, double defaultValue) {
   return (double)((QJsonValue*)this_)->toDouble(defaultValue);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:133
 // [8] QString toString()
@@ -236,6 +254,7 @@ void* C_ZNK10QJsonValue8toStringEv(void *this_) {
   auto rv = ((QJsonValue*)this_)->toString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:134
 // [8] QString toString(const class QString &)
@@ -244,6 +263,7 @@ void* C_ZNK10QJsonValue8toStringERK7QString(void *this_, QString* defaultValue) 
   auto rv = ((QJsonValue*)this_)->toString(*defaultValue);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:135
 // [16] QJsonArray toArray()
@@ -252,6 +272,7 @@ void* C_ZNK10QJsonValue7toArrayEv(void *this_) {
   auto rv = ((QJsonValue*)this_)->toArray();
 return new QJsonArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:136
 // [16] QJsonArray toArray(const class QJsonArray &)
@@ -260,6 +281,7 @@ void* C_ZNK10QJsonValue7toArrayERK10QJsonArray(void *this_, QJsonArray* defaultV
   auto rv = ((QJsonValue*)this_)->toArray(*defaultValue);
 return new QJsonArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:137
 // [16] QJsonObject toObject()
@@ -268,6 +290,7 @@ void* C_ZNK10QJsonValue8toObjectEv(void *this_) {
   auto rv = ((QJsonValue*)this_)->toObject();
 return new QJsonObject(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:138
 // [16] QJsonObject toObject(const class QJsonObject &)
@@ -276,6 +299,7 @@ void* C_ZNK10QJsonValue8toObjectERK11QJsonObject(void *this_, QJsonObject* defau
   auto rv = ((QJsonValue*)this_)->toObject(*defaultValue);
 return new QJsonObject(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:140
 // [24] const QJsonValue operator[](const class QString &)
@@ -284,6 +308,7 @@ void* C_ZNK10QJsonValueixERK7QString(void *this_, QString* key) {
   auto rv = ((QJsonValue*)this_)->operator[](*key);
 return new QJsonValue(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:141
 // [24] const QJsonValue operator[](class QLatin1String)
@@ -292,6 +317,7 @@ void* C_ZNK10QJsonValueixE13QLatin1String(void *this_, QLatin1String* key) {
   auto rv = ((QJsonValue*)this_)->operator[](*key);
 return new QJsonValue(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:142
 // [24] const QJsonValue operator[](int)
@@ -300,6 +326,7 @@ void* C_ZNK10QJsonValueixEi(void *this_, int i) {
   auto rv = ((QJsonValue*)this_)->operator[](i);
 return new QJsonValue(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:144
 // [1] bool operator==(const class QJsonValue &)
@@ -307,6 +334,7 @@ extern "C"
 bool C_ZNK10QJsonValueeqERKS_(void *this_, QJsonValue* other) {
   return (bool)((QJsonValue*)this_)->operator==(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:145
 // [1] bool operator!=(const class QJsonValue &)
@@ -314,4 +342,5 @@ extern "C"
 bool C_ZNK10QJsonValueneERKS_(void *this_, QJsonValue* other) {
   return (bool)((QJsonValue*)this_)->operator!=(*other);
 }
+
 //  main block end

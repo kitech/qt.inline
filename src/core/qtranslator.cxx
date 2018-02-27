@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtranslator.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtranslator.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK11QTranslator10metaObjectEv(void *this_) {
   return (void*)((QTranslator*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:58
 // [-2] void QTranslator(class QObject *)
@@ -46,6 +50,7 @@ void* C_ZNK11QTranslator9translateEPKcS1_S1_i(void *this_, const char * context,
   auto rv = ((QTranslator*)this_)->translate(context, sourceText, disambiguation, n);
 return new QString(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:64
 // [1] bool isEmpty()
@@ -53,6 +58,7 @@ extern "C"
 bool C_ZNK11QTranslator7isEmptyEv(void *this_) {
   return (bool)((QTranslator*)this_)->isEmpty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:66
 // [1] bool load(const class QString &, const class QString &, const class QString &, const class QString &)
@@ -60,6 +66,7 @@ extern "C"
 bool C_ZN11QTranslator4loadERK7QStringS2_S2_S2_(void *this_, QString* filename, QString* directory, QString* search_delimiters, QString* suffix) {
   return (bool)((QTranslator*)this_)->load(*filename, *directory, *search_delimiters, *suffix);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:70
 // [1] bool load(const class QLocale &, const class QString &, const class QString &, const class QString &, const class QString &)
@@ -67,11 +74,13 @@ extern "C"
 bool C_ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_(void *this_, QLocale* locale, QString* filename, QString* prefix, QString* directory, QString* suffix) {
   return (bool)((QTranslator*)this_)->load(*locale, *filename, *prefix, *directory, *suffix);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:75
 // [1] bool load(const uchar *, int, const class QString &)
 extern "C"
-bool C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len, QString* directory) {
-  return (bool)((QTranslator*)this_)->load(data, len, *directory);
+bool C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len_, QString* directory) {
+  return (bool)((QTranslator*)this_)->load(data, len_, *directory);
 }
+
 //  main block end

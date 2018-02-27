@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtextstream.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextstream.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -22,6 +25,7 @@ extern "C"
 void C_ZN22QTextStreamManipulator4execER11QTextStream(void *this_, QTextStream* s) {
   ((QTextStreamManipulator*)this_)->exec(*s);
 }
+
 
 extern "C"
 void C_ZN22QTextStreamManipulatorD2Ev(void *this_) {

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qstandardpaths.h
+#ifndef protected
+#define protected public
+#endif
 #include <qstandardpaths.h>
 #include <QtCore>
 #include "callback_inherit.h"

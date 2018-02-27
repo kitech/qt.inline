@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qxmlstream.h
+#ifndef protected
+#define protected public
+#endif
 #include <qxmlstream.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZN27QXmlStreamEntityDeclarationaSERKS_(void *this_, QXmlStreamEntityDecl
   auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(*arg0);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:301
 // [88] QXmlStreamEntityDeclaration & operator=(class QXmlStreamEntityDeclaration &&)
@@ -47,6 +51,7 @@ void* C_ZN27QXmlStreamEntityDeclarationaSEOS_(void *this_, QXmlStreamEntityDecla
   auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:313
 // [16] QStringRef name()
@@ -55,6 +60,7 @@ void* C_ZNK27QXmlStreamEntityDeclaration4nameEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->name();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:314
 // [16] QStringRef notationName()
@@ -63,6 +69,7 @@ void* C_ZNK27QXmlStreamEntityDeclaration12notationNameEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->notationName();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:315
 // [16] QStringRef systemId()
@@ -71,6 +78,7 @@ void* C_ZNK27QXmlStreamEntityDeclaration8systemIdEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->systemId();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:316
 // [16] QStringRef publicId()
@@ -79,6 +87,7 @@ void* C_ZNK27QXmlStreamEntityDeclaration8publicIdEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->publicId();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:317
 // [16] QStringRef value()
@@ -87,6 +96,7 @@ void* C_ZNK27QXmlStreamEntityDeclaration5valueEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->value();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:318
 // [1] bool operator==(const class QXmlStreamEntityDeclaration &)
@@ -94,6 +104,7 @@ extern "C"
 bool C_ZNK27QXmlStreamEntityDeclarationeqERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
   return (bool)((QXmlStreamEntityDeclaration*)this_)->operator==(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:325
 // [1] bool operator!=(const class QXmlStreamEntityDeclaration &)
@@ -101,4 +112,5 @@ extern "C"
 bool C_ZNK27QXmlStreamEntityDeclarationneERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
   return (bool)((QXmlStreamEntityDeclaration*)this_)->operator!=(*other);
 }
+
 //  main block end

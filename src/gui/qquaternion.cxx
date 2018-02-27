@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qquaternion.h
+#ifndef protected
+#define protected public
+#endif
 #include <qquaternion.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -67,6 +70,7 @@ extern "C"
 bool C_ZNK11QQuaternion6isNullEv(void *this_) {
   return (bool)((QQuaternion*)this_)->isNull();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:70
 // [1] bool isIdentity()
@@ -74,6 +78,7 @@ extern "C"
 bool C_ZNK11QQuaternion10isIdentityEv(void *this_) {
   return (bool)((QQuaternion*)this_)->isIdentity();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:73
 // [12] QVector3D vector()
@@ -82,6 +87,7 @@ void* C_ZNK11QQuaternion6vectorEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->vector();
 return new QVector3D(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:74
 // [-2] void setVector(const class QVector3D &)
@@ -89,6 +95,7 @@ extern "C"
 void C_ZN11QQuaternion9setVectorERK9QVector3D(void *this_, QVector3D* vector) {
   ((QQuaternion*)this_)->setVector(*vector);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:76
 // [-2] void setVector(float, float, float)
@@ -96,6 +103,7 @@ extern "C"
 void C_ZN11QQuaternion9setVectorEfff(void *this_, float x, float y, float z) {
   ((QQuaternion*)this_)->setVector(x, y, z);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:78
 // [4] float x()
@@ -103,6 +111,7 @@ extern "C"
 float C_ZNK11QQuaternion1xEv(void *this_) {
   return (float)((QQuaternion*)this_)->x();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:79
 // [4] float y()
@@ -110,6 +119,7 @@ extern "C"
 float C_ZNK11QQuaternion1yEv(void *this_) {
   return (float)((QQuaternion*)this_)->y();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:80
 // [4] float z()
@@ -117,6 +127,7 @@ extern "C"
 float C_ZNK11QQuaternion1zEv(void *this_) {
   return (float)((QQuaternion*)this_)->z();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:81
 // [4] float scalar()
@@ -124,6 +135,7 @@ extern "C"
 float C_ZNK11QQuaternion6scalarEv(void *this_) {
   return (float)((QQuaternion*)this_)->scalar();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:83
 // [-2] void setX(float)
@@ -131,6 +143,7 @@ extern "C"
 void C_ZN11QQuaternion4setXEf(void *this_, float x) {
   ((QQuaternion*)this_)->setX(x);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:84
 // [-2] void setY(float)
@@ -138,6 +151,7 @@ extern "C"
 void C_ZN11QQuaternion4setYEf(void *this_, float y) {
   ((QQuaternion*)this_)->setY(y);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:85
 // [-2] void setZ(float)
@@ -145,6 +159,7 @@ extern "C"
 void C_ZN11QQuaternion4setZEf(void *this_, float z) {
   ((QQuaternion*)this_)->setZ(z);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:86
 // [-2] void setScalar(float)
@@ -152,6 +167,7 @@ extern "C"
 void C_ZN11QQuaternion9setScalarEf(void *this_, float scalar) {
   ((QQuaternion*)this_)->setScalar(scalar);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:88
 // [4] float dotProduct(const class QQuaternion &, const class QQuaternion &)
@@ -166,6 +182,7 @@ extern "C"
 float C_ZNK11QQuaternion6lengthEv(void *this_) {
   return (float)((QQuaternion*)this_)->length();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:91
 // [4] float lengthSquared()
@@ -173,6 +190,7 @@ extern "C"
 float C_ZNK11QQuaternion13lengthSquaredEv(void *this_) {
   return (float)((QQuaternion*)this_)->lengthSquared();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:93
 // [16] QQuaternion normalized()
@@ -181,6 +199,7 @@ void* C_ZNK11QQuaternion10normalizedEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->normalized();
 return new QQuaternion(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:94
 // [-2] void normalize()
@@ -188,6 +207,7 @@ extern "C"
 void C_ZN11QQuaternion9normalizeEv(void *this_) {
   ((QQuaternion*)this_)->normalize();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:96
 // [16] QQuaternion inverted()
@@ -196,6 +216,7 @@ void* C_ZNK11QQuaternion8invertedEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->inverted();
 return new QQuaternion(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:98
 // [16] QQuaternion conjugated()
@@ -204,6 +225,7 @@ void* C_ZNK11QQuaternion10conjugatedEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->conjugated();
 return new QQuaternion(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:100
 // [16] QQuaternion conjugate()
@@ -212,6 +234,7 @@ void* C_ZNK11QQuaternion9conjugateEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->conjugate();
 return new QQuaternion(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:103
 // [12] QVector3D rotatedVector(const class QVector3D &)
@@ -220,6 +243,7 @@ void* C_ZNK11QQuaternion13rotatedVectorERK9QVector3D(void *this_, QVector3D* vec
   auto rv = ((QQuaternion*)this_)->rotatedVector(*vector);
 return new QVector3D(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:105
 // [16] QQuaternion & operator+=(const class QQuaternion &)
@@ -228,6 +252,7 @@ void* C_ZN11QQuaternionpLERKS_(void *this_, QQuaternion* quaternion) {
   auto& rv = ((QQuaternion*)this_)->operator+=(*quaternion);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:106
 // [16] QQuaternion & operator-=(const class QQuaternion &)
@@ -236,6 +261,7 @@ void* C_ZN11QQuaternionmIERKS_(void *this_, QQuaternion* quaternion) {
   auto& rv = ((QQuaternion*)this_)->operator-=(*quaternion);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:107
 // [16] QQuaternion & operator*=(float)
@@ -244,6 +270,7 @@ void* C_ZN11QQuaternionmLEf(void *this_, float factor) {
   auto& rv = ((QQuaternion*)this_)->operator*=(factor);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:108
 // [16] QQuaternion & operator*=(const class QQuaternion &)
@@ -252,6 +279,7 @@ void* C_ZN11QQuaternionmLERKS_(void *this_, QQuaternion* quaternion) {
   auto& rv = ((QQuaternion*)this_)->operator*=(*quaternion);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:109
 // [16] QQuaternion & operator/=(float)
@@ -260,6 +288,7 @@ void* C_ZN11QQuaterniondVEf(void *this_, float divisor) {
   auto& rv = ((QQuaternion*)this_)->operator/=(divisor);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:124
 // [16] QVector4D toVector4D()
@@ -268,6 +297,7 @@ void* C_ZNK11QQuaternion10toVector4DEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->toVector4D();
 return new QVector4D(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:130
 // [-2] void getAxisAndAngle(class QVector3D *, float *)
@@ -275,6 +305,7 @@ extern "C"
 void C_ZNK11QQuaternion15getAxisAndAngleEP9QVector3DPf(void *this_, QVector3D * axis, float * angle) {
   ((QQuaternion*)this_)->getAxisAndAngle(axis, angle);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:131
 // [16] QQuaternion fromAxisAndAngle(const class QVector3D &, float)
@@ -290,6 +321,7 @@ extern "C"
 void C_ZNK11QQuaternion15getAxisAndAngleEPfS0_S0_S0_(void *this_, float * x, float * y, float * z, float * angle) {
   ((QQuaternion*)this_)->getAxisAndAngle(x, y, z, angle);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:134
 // [16] QQuaternion fromAxisAndAngle(float, float, float, float)
@@ -306,6 +338,7 @@ void* C_ZNK11QQuaternion13toEulerAnglesEv(void *this_) {
   auto rv = ((QQuaternion*)this_)->toEulerAngles();
 return new QVector3D(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:139
 // [16] QQuaternion fromEulerAngles(const class QVector3D &)
@@ -321,6 +354,7 @@ extern "C"
 void C_ZNK11QQuaternion14getEulerAnglesEPfS0_S0_(void *this_, float * pitch, float * yaw, float * roll) {
   ((QQuaternion*)this_)->getEulerAngles(pitch, yaw, roll);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:142
 // [16] QQuaternion fromEulerAngles(float, float, float)
@@ -336,6 +370,7 @@ extern "C"
 void C_ZNK11QQuaternion7getAxesEP9QVector3DS1_S1_(void *this_, QVector3D * xAxis, QVector3D * yAxis, QVector3D * zAxis) {
   ((QQuaternion*)this_)->getAxes(xAxis, yAxis, zAxis);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:149
 // [16] QQuaternion fromAxes(const class QVector3D &, const class QVector3D &, const class QVector3D &)

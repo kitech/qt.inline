@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qtcpsocket.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtcpsocket.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK10QTcpSocket10metaObjectEv(void *this_) {
   return (void*)((QTcpSocket*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpsocket.h:56
 // [-2] void QTcpSocket(class QObject *)

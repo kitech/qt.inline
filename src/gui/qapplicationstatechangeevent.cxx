@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -31,6 +34,7 @@ extern "C"
 Qt::ApplicationState C_ZNK28QApplicationStateChangeEvent16applicationStateEv(void *this_) {
   return (Qt::ApplicationState)((QApplicationStateChangeEvent*)this_)->applicationState();
 }
+
 
 extern "C"
 void C_ZN28QApplicationStateChangeEventD2Ev(void *this_) {

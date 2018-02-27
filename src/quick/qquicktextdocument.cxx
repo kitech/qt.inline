@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qquicktextdocument.h
+#ifndef protected
+#define protected public
+#endif
 #include <qquicktextdocument.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK18QQuickTextDocument10metaObjectEv(void *this_) {
   return (void*)((QQuickTextDocument*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquicktextdocument.h:54
 // [-2] void QQuickTextDocument(class QQuickItem *)
@@ -38,6 +42,7 @@ extern "C"
 void* C_ZNK18QQuickTextDocument12textDocumentEv(void *this_) {
   return (void*)((QQuickTextDocument*)this_)->textDocument();
 }
+
 
 extern "C"
 void C_ZN18QQuickTextDocumentD2Ev(void *this_) {

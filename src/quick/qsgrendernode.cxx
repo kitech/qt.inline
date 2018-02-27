@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgrendernode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgrendernode.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ QSGRenderNode::StateFlags* C_ZNK13QSGRenderNode13changedStatesEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->changedStates();
 return new QSGRenderNode::StateFlags(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:87
 // [-2] void releaseResources()
@@ -46,6 +50,7 @@ extern "C"
 void C_ZN13QSGRenderNode16releaseResourcesEv(void *this_) {
   ((QSGRenderNode*)this_)->releaseResources();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:88
 // [4] QSGRenderNode::RenderingFlags flags()
@@ -54,6 +59,7 @@ QSGRenderNode::RenderingFlags* C_ZNK13QSGRenderNode5flagsEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->flags();
 return new QSGRenderNode::RenderingFlags(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:89
 // [32] QRectF rect()
@@ -62,6 +68,7 @@ void* C_ZNK13QSGRenderNode4rectEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->rect();
 return new QRectF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:91
 // [8] const QMatrix4x4 * matrix()
@@ -69,6 +76,7 @@ extern "C"
 void* C_ZNK13QSGRenderNode6matrixEv(void *this_) {
   return (void*)((QSGRenderNode*)this_)->matrix();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:92
 // [8] const QSGClipNode * clipList()
@@ -76,6 +84,7 @@ extern "C"
 void* C_ZNK13QSGRenderNode8clipListEv(void *this_) {
   return (void*)((QSGRenderNode*)this_)->clipList();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:93
 // [8] qreal inheritedOpacity()
@@ -83,4 +92,5 @@ extern "C"
 qreal C_ZNK13QSGRenderNode16inheritedOpacityEv(void *this_) {
   return (qreal)((QSGRenderNode*)this_)->inheritedOpacity();
 }
+
 //  main block end

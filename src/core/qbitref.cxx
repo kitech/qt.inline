@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qbitarray.h
+#ifndef protected
+#define protected public
+#endif
 #include <qbitarray.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -22,6 +25,7 @@ extern "C"
 bool C_ZNK7QBitRefntEv(void *this_) {
   return (bool)((QBitRef*)this_)->operator!();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:153
 // [16] QBitRef & operator=(const class QBitRef &)
@@ -30,6 +34,7 @@ void* C_ZN7QBitRefaSERKS_(void *this_, QBitRef* val) {
   auto& rv = ((QBitRef*)this_)->operator=(*val);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:154
 // [16] QBitRef & operator=(_Bool)
@@ -38,6 +43,7 @@ void* C_ZN7QBitRefaSEb(void *this_, bool val) {
   auto& rv = ((QBitRef*)this_)->operator=(val);
 return &rv;
 }
+
 
 extern "C"
 void C_ZN7QBitRefD2Ev(void *this_) {

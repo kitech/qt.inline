@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qvector3d.h
+#ifndef protected
+#define protected public
+#endif
 #include <qvector3d.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -94,6 +97,7 @@ extern "C"
 bool C_ZNK9QVector3D6isNullEv(void *this_) {
   return (bool)((QVector3D*)this_)->isNull();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:76
 // [4] float x()
@@ -101,6 +105,7 @@ extern "C"
 float C_ZNK9QVector3D1xEv(void *this_) {
   return (float)((QVector3D*)this_)->x();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:77
 // [4] float y()
@@ -108,6 +113,7 @@ extern "C"
 float C_ZNK9QVector3D1yEv(void *this_) {
   return (float)((QVector3D*)this_)->y();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:78
 // [4] float z()
@@ -115,6 +121,7 @@ extern "C"
 float C_ZNK9QVector3D1zEv(void *this_) {
   return (float)((QVector3D*)this_)->z();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:80
 // [-2] void setX(float)
@@ -122,6 +129,7 @@ extern "C"
 void C_ZN9QVector3D4setXEf(void *this_, float x) {
   ((QVector3D*)this_)->setX(x);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:81
 // [-2] void setY(float)
@@ -129,6 +137,7 @@ extern "C"
 void C_ZN9QVector3D4setYEf(void *this_, float y) {
   ((QVector3D*)this_)->setY(y);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:82
 // [-2] void setZ(float)
@@ -136,6 +145,7 @@ extern "C"
 void C_ZN9QVector3D4setZEf(void *this_, float z) {
   ((QVector3D*)this_)->setZ(z);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:84
 // [4] float & operator[](int)
@@ -144,6 +154,7 @@ void* C_ZN9QVector3DixEi(void *this_, int i) {
   auto& rv = ((QVector3D*)this_)->operator[](i);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:85
 // [4] float operator[](int)
@@ -151,6 +162,7 @@ extern "C"
 float C_ZNK9QVector3DixEi(void *this_, int i) {
   return (float)((QVector3D*)this_)->operator[](i);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:87
 // [4] float length()
@@ -158,6 +170,7 @@ extern "C"
 float C_ZNK9QVector3D6lengthEv(void *this_) {
   return (float)((QVector3D*)this_)->length();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:88
 // [4] float lengthSquared()
@@ -165,6 +178,7 @@ extern "C"
 float C_ZNK9QVector3D13lengthSquaredEv(void *this_) {
   return (float)((QVector3D*)this_)->lengthSquared();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:90
 // [12] QVector3D normalized()
@@ -173,6 +187,7 @@ void* C_ZNK9QVector3D10normalizedEv(void *this_) {
   auto rv = ((QVector3D*)this_)->normalized();
 return new QVector3D(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:91
 // [-2] void normalize()
@@ -180,6 +195,7 @@ extern "C"
 void C_ZN9QVector3D9normalizeEv(void *this_) {
   ((QVector3D*)this_)->normalize();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:93
 // [12] QVector3D & operator+=(const class QVector3D &)
@@ -188,6 +204,7 @@ void* C_ZN9QVector3DpLERKS_(void *this_, QVector3D* vector) {
   auto& rv = ((QVector3D*)this_)->operator+=(*vector);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:94
 // [12] QVector3D & operator-=(const class QVector3D &)
@@ -196,6 +213,7 @@ void* C_ZN9QVector3DmIERKS_(void *this_, QVector3D* vector) {
   auto& rv = ((QVector3D*)this_)->operator-=(*vector);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:95
 // [12] QVector3D & operator*=(float)
@@ -204,6 +222,7 @@ void* C_ZN9QVector3DmLEf(void *this_, float factor) {
   auto& rv = ((QVector3D*)this_)->operator*=(factor);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:96
 // [12] QVector3D & operator*=(const class QVector3D &)
@@ -212,6 +231,7 @@ void* C_ZN9QVector3DmLERKS_(void *this_, QVector3D* vector) {
   auto& rv = ((QVector3D*)this_)->operator*=(*vector);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:97
 // [12] QVector3D & operator/=(float)
@@ -220,6 +240,7 @@ void* C_ZN9QVector3DdVEf(void *this_, float divisor) {
   auto& rv = ((QVector3D*)this_)->operator/=(divisor);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:98
 // [12] QVector3D & operator/=(const class QVector3D &)
@@ -228,6 +249,7 @@ void* C_ZN9QVector3DdVERKS_(void *this_, QVector3D* vector) {
   auto& rv = ((QVector3D*)this_)->operator/=(*vector);
 return &rv;
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:100
 // [4] float dotProduct(const class QVector3D &, const class QVector3D &)
@@ -267,6 +289,7 @@ void* C_ZNK9QVector3D7projectERK10QMatrix4x4S2_RK5QRect(void *this_, QMatrix4x4*
   auto rv = ((QVector3D*)this_)->project(*modelView, *projection, *viewport);
 return new QVector3D(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:108
 // [12] QVector3D unproject(const class QMatrix4x4 &, const class QMatrix4x4 &, const class QRect &)
@@ -275,6 +298,7 @@ void* C_ZNK9QVector3D9unprojectERK10QMatrix4x4S2_RK5QRect(void *this_, QMatrix4x
   auto rv = ((QVector3D*)this_)->unproject(*modelView, *projection, *viewport);
 return new QVector3D(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:110
 // [4] float distanceToPoint(const class QVector3D &)
@@ -282,6 +306,7 @@ extern "C"
 float C_ZNK9QVector3D15distanceToPointERKS_(void *this_, QVector3D* point) {
   return (float)((QVector3D*)this_)->distanceToPoint(*point);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:111
 // [4] float distanceToPlane(const class QVector3D &, const class QVector3D &)
@@ -289,6 +314,7 @@ extern "C"
 float C_ZNK9QVector3D15distanceToPlaneERKS_S1_(void *this_, QVector3D* plane, QVector3D* normal) {
   return (float)((QVector3D*)this_)->distanceToPlane(*plane, *normal);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:112
 // [4] float distanceToPlane(const class QVector3D &, const class QVector3D &, const class QVector3D &)
@@ -296,6 +322,7 @@ extern "C"
 float C_ZNK9QVector3D15distanceToPlaneERKS_S1_S1_(void *this_, QVector3D* plane1, QVector3D* plane2, QVector3D* plane3) {
   return (float)((QVector3D*)this_)->distanceToPlane(*plane1, *plane2, *plane3);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:113
 // [4] float distanceToLine(const class QVector3D &, const class QVector3D &)
@@ -303,6 +330,7 @@ extern "C"
 float C_ZNK9QVector3D14distanceToLineERKS_S1_(void *this_, QVector3D* point, QVector3D* direction) {
   return (float)((QVector3D*)this_)->distanceToLine(*point, *direction);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:129
 // [8] QVector2D toVector2D()
@@ -311,6 +339,7 @@ void* C_ZNK9QVector3D10toVector2DEv(void *this_) {
   auto rv = ((QVector3D*)this_)->toVector2D();
 return new QVector2D(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:132
 // [16] QVector4D toVector4D()
@@ -319,6 +348,7 @@ void* C_ZNK9QVector3D10toVector4DEv(void *this_) {
   auto rv = ((QVector3D*)this_)->toVector4D();
 return new QVector4D(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:135
 // [8] QPoint toPoint()
@@ -327,6 +357,7 @@ void* C_ZNK9QVector3D7toPointEv(void *this_) {
   auto rv = ((QVector3D*)this_)->toPoint();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:136
 // [16] QPointF toPointF()
@@ -335,6 +366,7 @@ void* C_ZNK9QVector3D8toPointFEv(void *this_) {
   auto rv = ((QVector3D*)this_)->toPointF();
 return new QPointF(rv);
 }
+
 
 extern "C"
 void C_ZN9QVector3DD2Ev(void *this_) {

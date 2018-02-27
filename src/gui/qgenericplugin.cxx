@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qgenericplugin.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgenericplugin.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK14QGenericPlugin10metaObjectEv(void *this_) {
   return (void*)((QGenericPlugin*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qgenericplugin.h:55
 // [-2] void QGenericPlugin(class QObject *)
@@ -45,4 +49,5 @@ extern "C"
 void* C_ZN14QGenericPlugin6createERK7QStringS2_(void *this_, QString* name, QString* spec) {
   return (void*)((QGenericPlugin*)this_)->create(*name, *spec);
 }
+
 //  main block end

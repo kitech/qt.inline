@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgvertexcolormaterial.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQSGVertexColorMaterial() {}
 // void QSGVertexColorMaterial()
 MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
+// Protected virtual Visibility=Default Availability=Available
 // QSGMaterialType * type()
   virtual QSGMaterialType * type() {
     int handled = 0;
@@ -27,6 +31,7 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // QSGMaterialShader * createShader()
   virtual QSGMaterialShader * createShader() {
     int handled = 0;
@@ -40,6 +45,22 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
   }
 
 };
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:55
+// [8] QSGMaterialType * type()
+extern "C"
+void* C_ZNK22QSGVertexColorMaterial4typeEv(void *this_) {
+  return (void*)((QSGVertexColorMaterial*)this_)->QSGVertexColorMaterial::type();
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:56
+// [8] QSGMaterialShader * createShader()
+extern "C"
+void* C_ZNK22QSGVertexColorMaterial12createShaderEv(void *this_) {
+  return (void*)((QSGVertexColorMaterial*)this_)->QSGVertexColorMaterial::createShader();
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:50
@@ -56,6 +77,7 @@ extern "C"
 int C_ZNK22QSGVertexColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
   return (int)((QSGVertexColorMaterial*)this_)->compare(other);
 }
+
 
 extern "C"
 void C_ZN22QSGVertexColorMaterialD2Ev(void *this_) {

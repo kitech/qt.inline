@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtemporarydir.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtemporarydir.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ extern "C"
 bool C_ZNK13QTemporaryDir7isValidEv(void *this_) {
   return (bool)((QTemporaryDir*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:61
 // [8] QString errorString()
@@ -55,6 +59,7 @@ void* C_ZNK13QTemporaryDir11errorStringEv(void *this_) {
   auto rv = ((QTemporaryDir*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:63
 // [1] bool autoRemove()
@@ -62,6 +67,7 @@ extern "C"
 bool C_ZNK13QTemporaryDir10autoRemoveEv(void *this_) {
   return (bool)((QTemporaryDir*)this_)->autoRemove();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:64
 // [-2] void setAutoRemove(_Bool)
@@ -69,6 +75,7 @@ extern "C"
 void C_ZN13QTemporaryDir13setAutoRemoveEb(void *this_, bool b) {
   ((QTemporaryDir*)this_)->setAutoRemove(b);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:65
 // [1] bool remove()
@@ -76,6 +83,7 @@ extern "C"
 bool C_ZN13QTemporaryDir6removeEv(void *this_) {
   return (bool)((QTemporaryDir*)this_)->remove();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:67
 // [8] QString path()
@@ -84,6 +92,7 @@ void* C_ZNK13QTemporaryDir4pathEv(void *this_) {
   auto rv = ((QTemporaryDir*)this_)->path();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:68
 // [8] QString filePath(const class QString &)
@@ -92,4 +101,5 @@ void* C_ZNK13QTemporaryDir8filePathERK7QString(void *this_, QString* fileName) {
   auto rv = ((QTemporaryDir*)this_)->filePath(*fileName);
 return new QString(rv);
 }
+
 //  main block end

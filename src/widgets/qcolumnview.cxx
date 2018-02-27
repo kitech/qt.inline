@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qcolumnview.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcolumnview.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQColumnView() {}
 // void QColumnView(class QWidget *)
 MyQColumnView(QWidget * parent) : QColumnView(parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
@@ -27,6 +31,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
@@ -39,6 +44,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
@@ -50,6 +56,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
@@ -61,6 +68,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
@@ -73,6 +81,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // int horizontalOffset()
   virtual int horizontalOffset() {
     int handled = 0;
@@ -85,6 +94,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // int verticalOffset()
   virtual int verticalOffset() {
     int handled = 0;
@@ -97,6 +107,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -108,6 +119,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
@@ -119,6 +131,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
@@ -130,6 +143,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // QAbstractItemView * createColumn(const class QModelIndex &)
   virtual QAbstractItemView * createColumn(const QModelIndex & rootIndex) {
     int handled = 0;
@@ -142,6 +156,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
 // void initializeColumn(class QAbstractItemView *)
   virtual void initializeColumn(QAbstractItemView * column) {
     int handled = 0;
@@ -155,6 +170,104 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:88
+// [1] bool isIndexHidden(const class QModelIndex &)
+extern "C"
+bool C_ZNK11QColumnView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* index) {
+  return (bool)((QColumnView*)this_)->QColumnView::isIndexHidden(*index);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:89
+// [24] QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+extern "C"
+void* C_ZN11QColumnView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
+  auto rv = ((QColumnView*)this_)->QColumnView::moveCursor(cursorAction, modifiers);
+return new QModelIndex(rv);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:90
+// [-2] void resizeEvent(class QResizeEvent *)
+extern "C"
+void C_ZN11QColumnView11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
+  ((QColumnView*)this_)->QColumnView::resizeEvent(event);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:91
+// [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
+extern "C"
+void C_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QRect* rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+  ((QColumnView*)this_)->QColumnView::setSelection(*rect, command);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:92
+// [8] QRegion visualRegionForSelection(const class QItemSelection &)
+extern "C"
+void* C_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection(void *this_, QItemSelection* selection) {
+  auto rv = ((QColumnView*)this_)->QColumnView::visualRegionForSelection(*selection);
+return new QRegion(rv);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:93
+// [4] int horizontalOffset()
+extern "C"
+int C_ZNK11QColumnView16horizontalOffsetEv(void *this_) {
+  return (int)((QColumnView*)this_)->QColumnView::horizontalOffset();
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:94
+// [4] int verticalOffset()
+extern "C"
+int C_ZNK11QColumnView14verticalOffsetEv(void *this_) {
+  return (int)((QColumnView*)this_)->QColumnView::verticalOffset();
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:95
+// [-2] void rowsInserted(const class QModelIndex &, int, int)
+extern "C"
+void C_ZN11QColumnView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
+  ((QColumnView*)this_)->QColumnView::rowsInserted(*parent, start, end);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:96
+// [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
+extern "C"
+void C_ZN11QColumnView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
+  ((QColumnView*)this_)->QColumnView::currentChanged(*current, *previous);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:99
+// [-2] void scrollContentsBy(int, int)
+extern "C"
+void C_ZN11QColumnView16scrollContentsByEii(void *this_, int dx, int dy) {
+  ((QColumnView*)this_)->QColumnView::scrollContentsBy(dx, dy);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:100
+// [8] QAbstractItemView * createColumn(const class QModelIndex &)
+extern "C"
+void* C_ZN11QColumnView12createColumnERK11QModelIndex(void *this_, QModelIndex* rootIndex) {
+  return (void*)((QColumnView*)this_)->QColumnView::createColumn(*rootIndex);
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:101
+// [-2] void initializeColumn(class QAbstractItemView *)
+extern "C"
+void C_ZNK11QColumnView16initializeColumnEP17QAbstractItemView(void *this_, QAbstractItemView * column) {
+  ((QColumnView*)this_)->QColumnView::initializeColumn(column);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:54
 // [8] const QMetaObject * metaObject()
@@ -162,6 +275,7 @@ extern "C"
 void* C_ZNK11QColumnView10metaObjectEv(void *this_) {
   return (void*)((QColumnView*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:58
 // [-2] void updatePreviewWidget(const class QModelIndex &)
@@ -169,6 +283,7 @@ extern "C"
 void C_ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QColumnView*)this_)->updatePreviewWidget(*index);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:61
 // [-2] void QColumnView(class QWidget *)
@@ -192,6 +307,7 @@ void* C_ZNK11QColumnView7indexAtERK6QPoint(void *this_, QPoint* point) {
   auto rv = ((QColumnView*)this_)->indexAt(*point);
 return new QModelIndex(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:66
 // [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
@@ -199,6 +315,7 @@ extern "C"
 void C_ZN11QColumnView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, QModelIndex* index, QAbstractItemView::ScrollHint hint) {
   ((QColumnView*)this_)->scrollTo(*index, hint);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:67
 // [8] QSize sizeHint()
@@ -207,6 +324,7 @@ void* C_ZNK11QColumnView8sizeHintEv(void *this_) {
   auto rv = ((QColumnView*)this_)->sizeHint();
 return new QSize(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:68
 // [16] QRect visualRect(const class QModelIndex &)
@@ -215,6 +333,7 @@ void* C_ZNK11QColumnView10visualRectERK11QModelIndex(void *this_, QModelIndex* i
   auto rv = ((QColumnView*)this_)->visualRect(*index);
 return new QRect(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:69
 // [-2] void setModel(class QAbstractItemModel *)
@@ -222,6 +341,7 @@ extern "C"
 void C_ZN11QColumnView8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
   ((QColumnView*)this_)->setModel(model);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:70
 // [-2] void setSelectionModel(class QItemSelectionModel *)
@@ -229,6 +349,7 @@ extern "C"
 void C_ZN11QColumnView17setSelectionModelEP19QItemSelectionModel(void *this_, QItemSelectionModel * selectionModel) {
   ((QColumnView*)this_)->setSelectionModel(selectionModel);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:71
 // [-2] void setRootIndex(const class QModelIndex &)
@@ -236,6 +357,7 @@ extern "C"
 void C_ZN11QColumnView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QColumnView*)this_)->setRootIndex(*index);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:72
 // [-2] void selectAll()
@@ -243,6 +365,7 @@ extern "C"
 void C_ZN11QColumnView9selectAllEv(void *this_) {
   ((QColumnView*)this_)->selectAll();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:75
 // [-2] void setResizeGripsVisible(_Bool)
@@ -250,6 +373,7 @@ extern "C"
 void C_ZN11QColumnView21setResizeGripsVisibleEb(void *this_, bool visible) {
   ((QColumnView*)this_)->setResizeGripsVisible(visible);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:76
 // [1] bool resizeGripsVisible()
@@ -257,6 +381,7 @@ extern "C"
 bool C_ZNK11QColumnView18resizeGripsVisibleEv(void *this_) {
   return (bool)((QColumnView*)this_)->resizeGripsVisible();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:78
 // [8] QWidget * previewWidget()
@@ -264,6 +389,7 @@ extern "C"
 void* C_ZNK11QColumnView13previewWidgetEv(void *this_) {
   return (void*)((QColumnView*)this_)->previewWidget();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:79
 // [-2] void setPreviewWidget(class QWidget *)
@@ -271,4 +397,5 @@ extern "C"
 void C_ZN11QColumnView16setPreviewWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QColumnView*)this_)->setPreviewWidget(widget);
 }
+
 //  main block end

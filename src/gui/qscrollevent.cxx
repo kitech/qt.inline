@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK12QScrollEvent10contentPosEv(void *this_) {
   auto rv = ((QScrollEvent*)this_)->contentPos();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1026
 // [16] QPointF overshootDistance()
@@ -47,6 +51,7 @@ void* C_ZNK12QScrollEvent17overshootDistanceEv(void *this_) {
   auto rv = ((QScrollEvent*)this_)->overshootDistance();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1027
 // [4] QScrollEvent::ScrollState scrollState()
@@ -54,4 +59,5 @@ extern "C"
 QScrollEvent::ScrollState C_ZNK12QScrollEvent11scrollStateEv(void *this_) {
   return (QScrollEvent::ScrollState)((QScrollEvent*)this_)->scrollState();
 }
+
 //  main block end

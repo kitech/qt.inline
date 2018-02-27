@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h
+#ifndef protected
+#define protected public
+#endif
 #include <qkeysequenceedit.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -17,6 +20,7 @@ public:
 MyQKeySequenceEdit(QWidget * parent) : QKeySequenceEdit(parent) {}
 // void QKeySequenceEdit(const class QKeySequence &, class QWidget *)
 MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySequenceEdit(keySequence, parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -29,6 +33,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -40,6 +45,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
@@ -51,6 +57,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
@@ -64,6 +71,38 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeysequenceedit.h:75
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN16QKeySequenceEdit5eventEP6QEvent(void *this_, QEvent * arg0) {
+  return (bool)((QKeySequenceEdit*)this_)->QKeySequenceEdit::event(arg0);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeysequenceedit.h:76
+// [-2] void keyPressEvent(class QKeyEvent *)
+extern "C"
+void C_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
+  ((QKeySequenceEdit*)this_)->QKeySequenceEdit::keyPressEvent(arg0);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeysequenceedit.h:77
+// [-2] void keyReleaseEvent(class QKeyEvent *)
+extern "C"
+void C_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
+  ((QKeySequenceEdit*)this_)->QKeySequenceEdit::keyReleaseEvent(arg0);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeysequenceedit.h:78
+// [-2] void timerEvent(class QTimerEvent *)
+extern "C"
+void C_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
+  ((QKeySequenceEdit*)this_)->QKeySequenceEdit::timerEvent(arg0);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:54
 // [8] const QMetaObject * metaObject()
@@ -71,6 +110,7 @@ extern "C"
 void* C_ZNK16QKeySequenceEdit10metaObjectEv(void *this_) {
   return (void*)((QKeySequenceEdit*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:58
 // [-2] void QKeySequenceEdit(class QWidget *)
@@ -102,6 +142,7 @@ void* C_ZNK16QKeySequenceEdit11keySequenceEv(void *this_) {
   auto rv = ((QKeySequenceEdit*)this_)->keySequence();
 return new QKeySequence(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:65
 // [-2] void setKeySequence(const class QKeySequence &)
@@ -109,6 +150,7 @@ extern "C"
 void C_ZN16QKeySequenceEdit14setKeySequenceERK12QKeySequence(void *this_, QKeySequence* keySequence) {
   ((QKeySequenceEdit*)this_)->setKeySequence(*keySequence);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:66
 // [-2] void clear()
@@ -116,6 +158,7 @@ extern "C"
 void C_ZN16QKeySequenceEdit5clearEv(void *this_) {
   ((QKeySequenceEdit*)this_)->clear();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:69
 // [-2] void editingFinished()
@@ -123,6 +166,7 @@ extern "C"
 void C_ZN16QKeySequenceEdit15editingFinishedEv(void *this_) {
   ((QKeySequenceEdit*)this_)->editingFinished();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:70
 // [-2] void keySequenceChanged(const class QKeySequence &)
@@ -130,4 +174,5 @@ extern "C"
 void C_ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(void *this_, QKeySequence* keySequence) {
   ((QKeySequenceEdit*)this_)->keySequenceChanged(*keySequence);
 }
+
 //  main block end

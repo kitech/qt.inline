@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtextcodec.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextcodec.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -48,6 +51,7 @@ void* C_ZN12QTextEncoder11fromUnicodeERK7QString(void *this_, QString* str) {
   auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:147
 // [8] QByteArray fromUnicode(class QStringView)
@@ -56,14 +60,16 @@ void* C_ZN12QTextEncoder11fromUnicodeE11QStringView(void *this_, QStringView* st
   auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:148
 // [8] QByteArray fromUnicode(const class QChar *, int)
 extern "C"
-void* C_ZN12QTextEncoder11fromUnicodeEPK5QChari(void *this_, const QChar * uc, int len) {
-  auto rv = ((QTextEncoder*)this_)->fromUnicode(uc, len);
+void* C_ZN12QTextEncoder11fromUnicodeEPK5QChari(void *this_, const QChar * uc, int len_) {
+  auto rv = ((QTextEncoder*)this_)->fromUnicode(uc, len_);
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:149
 // [1] bool hasFailure()
@@ -71,4 +77,5 @@ extern "C"
 bool C_ZNK12QTextEncoder10hasFailureEv(void *this_) {
   return (bool)((QTextEncoder*)this_)->hasFailure();
 }
+
 //  main block end

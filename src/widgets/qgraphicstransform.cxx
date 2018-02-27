@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgraphicstransform.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQGraphicsTransform() {}
 // void QGraphicsTransform(class QObject *)
 MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
+// Protected Visibility=Default Availability=Available
 // void update()
   virtual void update() {
     int handled = 0;
@@ -28,6 +32,14 @@ MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
 
 };
 
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicstransform.h:66
+// [-2] void update()
+extern "C"
+void C_ZN18QGraphicsTransform6updateEv(void *this_) {
+  ((QGraphicsTransform*)this_)->QGraphicsTransform::update();
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:58
 // [8] const QMetaObject * metaObject()
@@ -35,6 +47,7 @@ extern "C"
 void* C_ZNK18QGraphicsTransform10metaObjectEv(void *this_) {
   return (void*)((QGraphicsTransform*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:60
 // [-2] void QGraphicsTransform(class QObject *)
@@ -57,4 +70,5 @@ extern "C"
 void C_ZNK18QGraphicsTransform7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
   ((QGraphicsTransform*)this_)->applyTo(matrix);
 }
+
 //  main block end

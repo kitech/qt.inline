@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qmimedatabase.h
+#ifndef protected
+#define protected public
+#endif
 #include <qmimedatabase.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK13QMimeDatabase15mimeTypeForNameERK7QString(void *this_, QString* nam
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForName(*nameOrAlias);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:74
 // [8] QMimeType mimeTypeForFile(const class QString &, enum QMimeDatabase::MatchMode)
@@ -47,6 +51,7 @@ void* C_ZNK13QMimeDatabase15mimeTypeForFileERK7QStringNS_9MatchModeE(void *this_
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForFile(*fileName, mode);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:75
 // [8] QMimeType mimeTypeForFile(const class QFileInfo &, enum QMimeDatabase::MatchMode)
@@ -55,6 +60,7 @@ void* C_ZNK13QMimeDatabase15mimeTypeForFileERK9QFileInfoNS_9MatchModeE(void *thi
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForFile(*fileInfo, mode);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:78
 // [8] QMimeType mimeTypeForData(const class QByteArray &)
@@ -63,6 +69,7 @@ void* C_ZNK13QMimeDatabase15mimeTypeForDataERK10QByteArray(void *this_, QByteArr
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForData(*data);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:79
 // [8] QMimeType mimeTypeForData(class QIODevice *)
@@ -71,6 +78,7 @@ void* C_ZNK13QMimeDatabase15mimeTypeForDataEP9QIODevice(void *this_, QIODevice *
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForData(device);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:81
 // [8] QMimeType mimeTypeForUrl(const class QUrl &)
@@ -79,6 +87,7 @@ void* C_ZNK13QMimeDatabase14mimeTypeForUrlERK4QUrl(void *this_, QUrl* url) {
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForUrl(*url);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:82
 // [8] QMimeType mimeTypeForFileNameAndData(const class QString &, class QIODevice *)
@@ -87,6 +96,7 @@ void* C_ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringP9QIODevice(voi
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForFileNameAndData(*fileName, device);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:83
 // [8] QMimeType mimeTypeForFileNameAndData(const class QString &, const class QByteArray &)
@@ -95,6 +105,7 @@ void* C_ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringRK10QByteArray(
   auto rv = ((QMimeDatabase*)this_)->mimeTypeForFileNameAndData(*fileName, *data);
 return new QMimeType(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:85
 // [8] QString suffixForFileName(const class QString &)
@@ -103,4 +114,5 @@ void* C_ZNK13QMimeDatabase17suffixForFileNameERK7QString(void *this_, QString* f
   auto rv = ((QMimeDatabase*)this_)->suffixForFileName(*fileName);
 return new QString(rv);
 }
+
 //  main block end

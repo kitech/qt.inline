@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qdesktopservices.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdesktopservices.h>
 #include <QtGui>
 #include "callback_inherit.h"

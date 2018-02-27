@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qopenglversionfunctions.h
+#ifndef protected
+#define protected public
+#endif
 #include <qopenglversionfunctions.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQAbstractOpenGLFunctions() {}
 // void QAbstractOpenGLFunctions()
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
+// Protected Visibility=Default Availability=Available
 // bool isInitialized()
   virtual bool isInitialized() {
     int handled = 0;
@@ -28,6 +32,14 @@ MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
   }
 
 };
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglversionfunctions.h:223
+// [1] bool isInitialized()
+extern "C"
+bool C_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void *this_) {
+  return (bool)((QAbstractOpenGLFunctions*)this_)->QAbstractOpenGLFunctions::isInitialized();
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:213
@@ -43,4 +55,5 @@ extern "C"
 bool C_ZN24QAbstractOpenGLFunctions25initializeOpenGLFunctionsEv(void *this_) {
   return (bool)((QAbstractOpenGLFunctions*)this_)->initializeOpenGLFunctions();
 }
+
 //  main block end

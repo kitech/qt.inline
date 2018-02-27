@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdatetimeedit.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -26,6 +29,7 @@ extern "C"
 void* C_ZNK9QDateEdit10metaObjectEv(void *this_) {
   return (void*)((QDateEdit*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:220
 // [-2] void QDateEdit(class QWidget *)
@@ -54,4 +58,5 @@ extern "C"
 void C_ZN9QDateEdit15userDateChangedERK5QDate(void *this_, QDate* date) {
   ((QDateEdit*)this_)->userDateChanged(*date);
 }
+
 //  main block end

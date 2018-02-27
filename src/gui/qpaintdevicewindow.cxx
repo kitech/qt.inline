@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qpaintdevicewindow.h
+#ifndef protected
+#define protected public
+#endif
 #include <qpaintdevicewindow.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -13,6 +16,7 @@
 class MyQPaintDeviceWindow : public QPaintDeviceWindow {
 public:
   virtual ~MyQPaintDeviceWindow() {}
+// Protected virtual Visibility=Default Availability=Available
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
@@ -24,6 +28,7 @@ public:
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
     int handled = 0;
@@ -36,6 +41,7 @@ public:
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void exposeEvent(class QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0) {
     int handled = 0;
@@ -47,6 +53,7 @@ public:
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
@@ -61,6 +68,38 @@ public:
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:69
+// [-2] void paintEvent(class QPaintEvent *)
+extern "C"
+void C_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
+  ((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::paintEvent(event);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:71
+// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+extern "C"
+int C_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
+  return (int)((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::metric(metric);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:72
+// [-2] void exposeEvent(class QExposeEvent *)
+extern "C"
+void C_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void *this_, QExposeEvent * arg0) {
+  ((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::exposeEvent(arg0);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:73
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN18QPaintDeviceWindow5eventEP6QEvent(void *this_, QEvent * event) {
+  return (bool)((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::event(event);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:54
 // [8] const QMetaObject * metaObject()
@@ -68,6 +107,7 @@ extern "C"
 void* C_ZNK18QPaintDeviceWindow10metaObjectEv(void *this_) {
   return (void*)((QPaintDeviceWindow*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:58
 // [-2] void update(const class QRect &)
@@ -75,6 +115,7 @@ extern "C"
 void C_ZN18QPaintDeviceWindow6updateERK5QRect(void *this_, QRect* rect) {
   ((QPaintDeviceWindow*)this_)->update(*rect);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:59
 // [-2] void update(const class QRegion &)
@@ -82,6 +123,7 @@ extern "C"
 void C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *this_, QRegion* region) {
   ((QPaintDeviceWindow*)this_)->update(*region);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:66
 // [-2] void update()
@@ -89,6 +131,7 @@ extern "C"
 void C_ZN18QPaintDeviceWindow6updateEv(void *this_) {
   ((QPaintDeviceWindow*)this_)->update();
 }
+
 
 extern "C"
 void C_ZN18QPaintDeviceWindowD2Ev(void *this_) {

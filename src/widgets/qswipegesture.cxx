@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgesture.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgesture.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK13QSwipeGesture10metaObjectEv(void *this_) {
   return (void*)((QSwipeGesture*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:221
 // [-2] void QSwipeGesture(class QObject *)
@@ -45,6 +49,7 @@ extern "C"
 QSwipeGesture::SwipeDirection C_ZNK13QSwipeGesture19horizontalDirectionEv(void *this_) {
   return (QSwipeGesture::SwipeDirection)((QSwipeGesture*)this_)->horizontalDirection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:225
 // [4] QSwipeGesture::SwipeDirection verticalDirection()
@@ -52,6 +57,7 @@ extern "C"
 QSwipeGesture::SwipeDirection C_ZNK13QSwipeGesture17verticalDirectionEv(void *this_) {
   return (QSwipeGesture::SwipeDirection)((QSwipeGesture*)this_)->verticalDirection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:227
 // [8] qreal swipeAngle()
@@ -59,6 +65,7 @@ extern "C"
 qreal C_ZNK13QSwipeGesture10swipeAngleEv(void *this_) {
   return (qreal)((QSwipeGesture*)this_)->swipeAngle();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:228
 // [-2] void setSwipeAngle(qreal)
@@ -66,4 +73,5 @@ extern "C"
 void C_ZN13QSwipeGesture13setSwipeAngleEd(void *this_, qreal value) {
   ((QSwipeGesture*)this_)->setSwipeAngle(value);
 }
+
 //  main block end

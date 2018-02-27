@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgraphicsitem.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK26QAbstractGraphicsShapeItem3penEv(void *this_) {
   auto rv = ((QAbstractGraphicsShapeItem*)this_)->pen();
 return new QPen(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:607
 // [-2] void setPen(const class QPen &)
@@ -46,6 +50,7 @@ extern "C"
 void C_ZN26QAbstractGraphicsShapeItem6setPenERK4QPen(void *this_, QPen* pen) {
   ((QAbstractGraphicsShapeItem*)this_)->setPen(*pen);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:609
 // [8] QBrush brush()
@@ -54,6 +59,7 @@ void* C_ZNK26QAbstractGraphicsShapeItem5brushEv(void *this_) {
   auto rv = ((QAbstractGraphicsShapeItem*)this_)->brush();
 return new QBrush(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:610
 // [-2] void setBrush(const class QBrush &)
@@ -61,6 +67,7 @@ extern "C"
 void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, QBrush* brush) {
   ((QAbstractGraphicsShapeItem*)this_)->setBrush(*brush);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:612
 // [1] bool isObscuredBy(const class QGraphicsItem *)
@@ -68,6 +75,7 @@ extern "C"
 bool C_ZNK26QAbstractGraphicsShapeItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QAbstractGraphicsShapeItem*)this_)->isObscuredBy(item);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:613
 // [8] QPainterPath opaqueArea()
@@ -76,4 +84,5 @@ void* C_ZNK26QAbstractGraphicsShapeItem10opaqueAreaEv(void *this_) {
   auto rv = ((QAbstractGraphicsShapeItem*)this_)->opaqueArea();
 return new QPainterPath(rv);
 }
+
 //  main block end

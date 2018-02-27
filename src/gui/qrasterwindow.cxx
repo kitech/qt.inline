@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qrasterwindow.h
+#ifndef protected
+#define protected public
+#endif
 #include <qrasterwindow.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQRasterWindow() {}
 // void QRasterWindow(class QWindow *)
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
     int handled = 0;
@@ -27,6 +31,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // QPaintDevice * redirected(class QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) {
     int handled = 0;
@@ -41,6 +46,22 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrasterwindow.h:60
+// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+extern "C"
+int C_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
+  return (int)((QRasterWindow*)this_)->QRasterWindow::metric(metric);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrasterwindow.h:61
+// [8] QPaintDevice * redirected(class QPoint *)
+extern "C"
+void* C_ZNK13QRasterWindow10redirectedEP6QPoint(void *this_, QPoint * arg0) {
+  return (void*)((QRasterWindow*)this_)->QRasterWindow::redirected(arg0);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:52
 // [8] const QMetaObject * metaObject()
@@ -48,6 +69,7 @@ extern "C"
 void* C_ZNK13QRasterWindow10metaObjectEv(void *this_) {
   return (void*)((QRasterWindow*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:56
 // [-2] void QRasterWindow(class QWindow *)

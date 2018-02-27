@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgrectanglenode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgrectanglenode.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -29,6 +32,7 @@ extern "C"
 void C_ZN16QSGRectangleNode7setRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGRectangleNode*)this_)->setRect(*rect);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:53
 // [-2] void setRect(qreal, qreal, qreal, qreal)
@@ -36,6 +40,7 @@ extern "C"
 void C_ZN16QSGRectangleNode7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   ((QSGRectangleNode*)this_)->setRect(x, y, w, h);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:54
 // [32] QRectF rect()
@@ -44,6 +49,7 @@ void* C_ZNK16QSGRectangleNode4rectEv(void *this_) {
   auto rv = ((QSGRectangleNode*)this_)->rect();
 return new QRectF(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:56
 // [-2] void setColor(const class QColor &)
@@ -51,6 +57,7 @@ extern "C"
 void C_ZN16QSGRectangleNode8setColorERK6QColor(void *this_, QColor* color) {
   ((QSGRectangleNode*)this_)->setColor(*color);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:57
 // [16] QColor color()
@@ -59,4 +66,5 @@ void* C_ZNK16QSGRectangleNode5colorEv(void *this_) {
   auto rv = ((QSGRectangleNode*)this_)->color();
 return new QColor(rv);
 }
+
 //  main block end

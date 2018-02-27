@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ extern "C"
 bool C_ZNK23QPointingDeviceUniqueId7isValidEv(void *this_) {
   return (bool)((QPointingDeviceUniqueId*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:816
 // [8] qint64 numericId()
@@ -46,6 +50,7 @@ extern "C"
 qint64 C_ZNK23QPointingDeviceUniqueId9numericIdEv(void *this_) {
   return (qint64)((QPointingDeviceUniqueId*)this_)->numericId();
 }
+
 
 extern "C"
 void C_ZN23QPointingDeviceUniqueIdD2Ev(void *this_) {

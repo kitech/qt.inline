@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessibleplugin.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessibleplugin.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK17QAccessiblePlugin10metaObjectEv(void *this_) {
   return (void*)((QAccessiblePlugin*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleplugin.h:63
 // [-2] void QAccessiblePlugin(class QObject *)
@@ -45,4 +49,5 @@ extern "C"
 void* C_ZN17QAccessiblePlugin6createERK7QStringP7QObject(void *this_, QString* key, QObject * object) {
   return (void*)((QAccessiblePlugin*)this_)->create(*key, object);
 }
+
 //  main block end

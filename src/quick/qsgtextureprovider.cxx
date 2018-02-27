@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgtextureprovider.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgtextureprovider.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -22,6 +25,7 @@ extern "C"
 void* C_ZNK18QSGTextureProvider10metaObjectEv(void *this_) {
   return (void*)((QSGTextureProvider*)this_)->metaObject();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtextureprovider.h:52
 // [8] QSGTexture * texture()
@@ -29,6 +33,7 @@ extern "C"
 void* C_ZNK18QSGTextureProvider7textureEv(void *this_) {
   return (void*)((QSGTextureProvider*)this_)->texture();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtextureprovider.h:55
 // [-2] void textureChanged()
@@ -36,6 +41,7 @@ extern "C"
 void C_ZN18QSGTextureProvider14textureChangedEv(void *this_) {
   ((QSGTextureProvider*)this_)->textureChanged();
 }
+
 
 extern "C"
 void C_ZN18QSGTextureProviderD2Ev(void *this_) {

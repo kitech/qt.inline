@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 bool C_ZNK19QToolBarChangeEvent6toggleEv(void *this_) {
   return (bool)((QToolBarChangeEvent*)this_)->toggle();
 }
+
 //  main block end

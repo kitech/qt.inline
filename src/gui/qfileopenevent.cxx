@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -48,6 +51,7 @@ void* C_ZNK14QFileOpenEvent4fileEv(void *this_) {
   auto rv = ((QFileOpenEvent*)this_)->file();
 return new QString(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:743
 // [8] QUrl url()
@@ -56,6 +60,7 @@ void* C_ZNK14QFileOpenEvent3urlEv(void *this_) {
   auto rv = ((QFileOpenEvent*)this_)->url();
 return new QUrl(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:744
 // [1] bool openFile(class QFile &, class QIODevice::OpenMode)
@@ -63,4 +68,5 @@ extern "C"
 bool C_ZNK14QFileOpenEvent8openFileER5QFile6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFile* file, QFlags<QIODevice::OpenModeFlag> flags) {
   return (bool)((QFileOpenEvent*)this_)->openFile(*file, flags);
 }
+
 //  main block end

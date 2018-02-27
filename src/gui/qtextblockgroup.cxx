@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qtextobject.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextobject.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -15,7 +18,9 @@ public:
   virtual ~MyQTextBlockGroup() {}
 // void QTextBlockGroup(class QTextDocument *)
 MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
+// Protected virtual Visibility=Default Availability=Available
 // void ~QTextBlockGroup()
+// Protected virtual Visibility=Default Availability=Available
 // void blockInserted(const class QTextBlock &)
   virtual void blockInserted(const QTextBlock & block) {
     int handled = 0;
@@ -27,6 +32,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void blockRemoved(const class QTextBlock &)
   virtual void blockRemoved(const QTextBlock & block) {
     int handled = 0;
@@ -38,6 +44,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void blockFormatChanged(const class QTextBlock &)
   virtual void blockFormatChanged(const QTextBlock & block) {
     int handled = 0;
@@ -51,6 +58,30 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:98
+// [-2] void blockInserted(const class QTextBlock &)
+extern "C"
+void C_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(void *this_, QTextBlock* block) {
+  ((QTextBlockGroup*)this_)->QTextBlockGroup::blockInserted(*block);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:99
+// [-2] void blockRemoved(const class QTextBlock &)
+extern "C"
+void C_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void *this_, QTextBlock* block) {
+  ((QTextBlockGroup*)this_)->QTextBlockGroup::blockRemoved(*block);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:100
+// [-2] void blockFormatChanged(const class QTextBlock &)
+extern "C"
+void C_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void *this_, QTextBlock* block) {
+  ((QTextBlockGroup*)this_)->QTextBlockGroup::blockFormatChanged(*block);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:92
 // [8] const QMetaObject * metaObject()
@@ -58,4 +89,5 @@ extern "C"
 void* C_ZNK15QTextBlockGroup10metaObjectEv(void *this_) {
   return (void*)((QTextBlockGroup*)this_)->metaObject();
 }
+
 //  main block end

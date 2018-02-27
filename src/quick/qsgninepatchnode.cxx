@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgninepatchnode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgninepatchnode.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -29,6 +32,7 @@ extern "C"
 void C_ZN16QSGNinePatchNode10setTextureEP10QSGTexture(void *this_, QSGTexture * texture) {
   ((QSGNinePatchNode*)this_)->setTexture(texture);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:54
 // [-2] void setBounds(const class QRectF &)
@@ -36,6 +40,7 @@ extern "C"
 void C_ZN16QSGNinePatchNode9setBoundsERK6QRectF(void *this_, QRectF* bounds) {
   ((QSGNinePatchNode*)this_)->setBounds(*bounds);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:55
 // [-2] void setDevicePixelRatio(qreal)
@@ -43,6 +48,7 @@ extern "C"
 void C_ZN16QSGNinePatchNode19setDevicePixelRatioEd(void *this_, qreal ratio) {
   ((QSGNinePatchNode*)this_)->setDevicePixelRatio(ratio);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:56
 // [-2] void setPadding(qreal, qreal, qreal, qreal)
@@ -50,6 +56,7 @@ extern "C"
 void C_ZN16QSGNinePatchNode10setPaddingEdddd(void *this_, qreal left, qreal top, qreal right, qreal bottom) {
   ((QSGNinePatchNode*)this_)->setPadding(left, top, right, bottom);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:57
 // [-2] void update()
@@ -57,6 +64,7 @@ extern "C"
 void C_ZN16QSGNinePatchNode6updateEv(void *this_) {
   ((QSGNinePatchNode*)this_)->update();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:59
 // [-2] void rebuildGeometry(class QSGTexture *, class QSGGeometry *, const class QVector4D &, const class QRectF &, qreal)

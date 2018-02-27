@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qmutex.h
+#ifndef protected
+#define protected public
+#endif
 #include <qmutex.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -31,6 +34,7 @@ extern "C"
 void C_ZN11QBasicMutex4lockEv(void *this_) {
   ((QBasicMutex*)this_)->lock();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:83
 // [-2] void unlock()
@@ -38,6 +42,7 @@ extern "C"
 void C_ZN11QBasicMutex6unlockEv(void *this_) {
   ((QBasicMutex*)this_)->unlock();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:89
 // [1] bool tryLock()
@@ -45,6 +50,7 @@ extern "C"
 bool C_ZN11QBasicMutex7tryLockEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->tryLock();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:94
 // [1] bool try_lock()
@@ -52,6 +58,7 @@ extern "C"
 bool C_ZN11QBasicMutex8try_lockEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->try_lock();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:96
 // [1] bool isRecursive()
@@ -59,6 +66,7 @@ extern "C"
 bool C_ZN11QBasicMutex11isRecursiveEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->isRecursive();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:97
 // [1] bool isRecursive()
@@ -66,6 +74,7 @@ extern "C"
 bool C_ZNK11QBasicMutex11isRecursiveEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->isRecursive();
 }
+
 
 extern "C"
 void C_ZN11QBasicMutexD2Ev(void *this_) {

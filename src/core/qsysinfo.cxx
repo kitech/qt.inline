@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qsysinfo.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsysinfo.h>
 #include <QtCore>
 #include "callback_inherit.h"

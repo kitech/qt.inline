@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgesturerecognizer.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void* C_ZN18QGestureRecognizer6createEP7QObject(void *this_, QObject * target) {
   return (void*)((QGestureRecognizer*)this_)->create(target);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:81
 // [4] QGestureRecognizer::Result recognize(class QGesture *, class QObject *, class QEvent *)
@@ -46,6 +50,7 @@ QGestureRecognizer::Result* C_ZN18QGestureRecognizer9recognizeEP8QGestureP7QObje
   auto rv = ((QGestureRecognizer*)this_)->recognize(state, watched, event);
 return new QGestureRecognizer::Result(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:83
 // [-2] void reset(class QGesture *)
@@ -53,6 +58,7 @@ extern "C"
 void C_ZN18QGestureRecognizer5resetEP8QGesture(void *this_, QGesture * state) {
   ((QGestureRecognizer*)this_)->reset(state);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:85
 // [4] Qt::GestureType registerRecognizer(class QGestureRecognizer *)

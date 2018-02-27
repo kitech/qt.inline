@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qsharedpointer_impl.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsharedpointer.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN15QtSharedPointer20ExternalRefCountData7destroyEv(void *this_) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->destroy();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:160
 // [8] QtSharedPointer::ExternalRefCountData * getAndRef(const class QObject *)
@@ -52,6 +56,7 @@ extern "C"
 void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEPK7QObjectb(void *this_, const QObject * arg0, bool enable) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->setQObjectShared(arg0, enable);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:162
 // [-2] void checkQObjectShared(const class QObject *)
@@ -59,6 +64,7 @@ extern "C"
 void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEPK7QObject(void *this_, const QObject * arg0) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared(arg0);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:167
 // [-2] void operator delete(void *)

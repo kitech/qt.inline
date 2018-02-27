@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 Qt::InputMethodQueries C_ZNK22QInputMethodQueryEvent7queriesEv(void *this_) {
   return (Qt::InputMethodQueries)((QInputMethodQueryEvent*)this_)->queries();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:586
 // [-2] void setValue(Qt::InputMethodQuery, const class QVariant &)
@@ -45,6 +49,7 @@ extern "C"
 void C_ZN22QInputMethodQueryEvent8setValueEN2Qt16InputMethodQueryERK8QVariant(void *this_, Qt::InputMethodQuery query, QVariant* value) {
   ((QInputMethodQueryEvent*)this_)->setValue(query, *value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:587
 // [16] QVariant value(Qt::InputMethodQuery)
@@ -53,4 +58,5 @@ void* C_ZNK22QInputMethodQueryEvent5valueEN2Qt16InputMethodQueryE(void *this_, Q
   auto rv = ((QInputMethodQueryEvent*)this_)->value(query);
 return new QVariant(rv);
 }
+
 //  main block end

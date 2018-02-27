@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -48,6 +51,7 @@ void* C_ZNK11QPaintEvent4rectEv(void *this_) {
   auto& rv = ((QPaintEvent*)this_)->rect();
 return new QRect(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:410
 // [8] const QRegion & region()
@@ -56,4 +60,5 @@ void* C_ZNK11QPaintEvent6regionEv(void *this_) {
   auto& rv = ((QPaintEvent*)this_)->region();
 return new QRegion(rv);
 }
+
 //  main block end

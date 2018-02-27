@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK14QShortcutEvent3keyEv(void *this_) {
   auto& rv = ((QShortcutEvent*)this_)->key();
 return new QKeySequence(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:771
 // [4] int shortcutId()
@@ -46,6 +50,7 @@ extern "C"
 int C_ZNK14QShortcutEvent10shortcutIdEv(void *this_) {
   return (int)((QShortcutEvent*)this_)->shortcutId();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:772
 // [1] bool isAmbiguous()
@@ -53,4 +58,5 @@ extern "C"
 bool C_ZNK14QShortcutEvent11isAmbiguousEv(void *this_) {
   return (bool)((QShortcutEvent*)this_)->isAmbiguous();
 }
+
 //  main block end

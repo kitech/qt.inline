@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qsslerror.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsslerror.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -49,6 +52,7 @@ extern "C"
 void C_ZN9QSslError4swapERS_(void *this_, QSslError* other) {
   ((QSslError*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:97
 // [-2] void ~QSslError()
@@ -64,6 +68,7 @@ void* C_ZN9QSslErroraSEOS_(void *this_, QSslError && other) {
   auto& rv = ((QSslError*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:101
 // [8] QSslError & operator=(const class QSslError &)
@@ -72,6 +77,7 @@ void* C_ZN9QSslErroraSERKS_(void *this_, QSslError* other) {
   auto& rv = ((QSslError*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:102
 // [1] bool operator==(const class QSslError &)
@@ -79,6 +85,7 @@ extern "C"
 bool C_ZNK9QSslErroreqERKS_(void *this_, QSslError* other) {
   return (bool)((QSslError*)this_)->operator==(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:103
 // [1] bool operator!=(const class QSslError &)
@@ -86,6 +93,7 @@ extern "C"
 bool C_ZNK9QSslErrorneERKS_(void *this_, QSslError* other) {
   return (bool)((QSslError*)this_)->operator!=(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:106
 // [4] QSslError::SslError error()
@@ -93,6 +101,7 @@ extern "C"
 QSslError::SslError C_ZNK9QSslError5errorEv(void *this_) {
   return (QSslError::SslError)((QSslError*)this_)->error();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:107
 // [8] QString errorString()
@@ -101,6 +110,7 @@ void* C_ZNK9QSslError11errorStringEv(void *this_) {
   auto rv = ((QSslError*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:108
 // [8] QSslCertificate certificate()
@@ -109,4 +119,5 @@ void* C_ZNK9QSslError11certificateEv(void *this_) {
   auto rv = ((QSslError*)this_)->certificate();
 return new QSslCertificate(rv);
 }
+
 //  main block end

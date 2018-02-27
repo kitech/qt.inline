@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h
+#ifndef protected
+#define protected public
+#endif
 #include <qabstractnativeeventfilter.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 bool C_ZN26QAbstractNativeEventFilter17nativeEventFilterERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
   return (bool)((QAbstractNativeEventFilter*)this_)->nativeEventFilter(*eventType, message, result);
 }
+
 //  main block end

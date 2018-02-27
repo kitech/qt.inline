@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlextensioninterface.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlextensioninterface.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -29,4 +32,5 @@ extern "C"
 void C_ZN22QQmlExtensionInterface16initializeEngineEP10QQmlEnginePKc(void *this_, QQmlEngine * engine, const char * uri) {
   ((QQmlExtensionInterface*)this_)->initializeEngine(engine, uri);
 }
+
 //  main block end

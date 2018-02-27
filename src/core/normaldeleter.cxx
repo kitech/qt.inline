@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qsharedpointer_impl.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsharedpointer.h>
 #include <QtCore>
 #include "callback_inherit.h"

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 bool C_ZNK11QFocusEvent8gotFocusEv(void *this_) {
   return (bool)((QFocusEvent*)this_)->gotFocus();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:393
 // [1] bool lostFocus()
@@ -45,6 +49,7 @@ extern "C"
 bool C_ZNK11QFocusEvent9lostFocusEv(void *this_) {
   return (bool)((QFocusEvent*)this_)->lostFocus();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:395
 // [4] Qt::FocusReason reason()
@@ -52,4 +57,5 @@ extern "C"
 Qt::FocusReason C_ZNK11QFocusEvent6reasonEv(void *this_) {
   return (Qt::FocusReason)((QFocusEvent*)this_)->reason();
 }
+
 //  main block end

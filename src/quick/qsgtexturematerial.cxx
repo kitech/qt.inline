@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgtexturematerial.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgtexturematerial.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -22,6 +25,7 @@ extern "C"
 void* C_ZNK18QSGTextureMaterial4typeEv(void *this_) {
   return (void*)((QSGTextureMaterial*)this_)->type();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:91
 // [8] QSGMaterialShader * createShader()
@@ -29,6 +33,7 @@ extern "C"
 void* C_ZNK18QSGTextureMaterial12createShaderEv(void *this_) {
   return (void*)((QSGTextureMaterial*)this_)->createShader();
 }
+
 
 extern "C"
 void C_ZN18QSGTextureMaterialD2Ev(void *this_) {

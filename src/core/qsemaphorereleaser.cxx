@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qsemaphore.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsemaphore.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -56,6 +59,7 @@ extern "C"
 void C_ZN18QSemaphoreReleaser4swapERS_(void *this_, QSemaphoreReleaser* other) {
   ((QSemaphoreReleaser*)this_)->swap(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:98
 // [8] QSemaphore * semaphore()
@@ -63,6 +67,7 @@ extern "C"
 void* C_ZNK18QSemaphoreReleaser9semaphoreEv(void *this_) {
   return (void*)((QSemaphoreReleaser*)this_)->semaphore();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:101
 // [8] QSemaphore * cancel()
@@ -70,4 +75,5 @@ extern "C"
 void* C_ZN18QSemaphoreReleaser6cancelEv(void *this_) {
   return (void*)((QSemaphoreReleaser*)this_)->cancel();
 }
+
 //  main block end

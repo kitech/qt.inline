@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtemporaryfile.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtemporaryfile.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -21,6 +24,7 @@ MyQTemporaryFile(const QString & templateName) : QTemporaryFile(templateName) {}
 MyQTemporaryFile(QObject * parent) : QTemporaryFile(parent) {}
 // void QTemporaryFile(const class QString &, class QObject *)
 MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFile(templateName, parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool open(QIODevice::OpenMode)
   virtual bool open(QFlags<QIODevice::OpenModeFlag> flags) {
     int handled = 0;
@@ -35,6 +39,14 @@ MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFil
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporaryfile.h:98
+// [1] bool open(QIODevice::OpenMode)
+extern "C"
+bool C_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
+  return (bool)((QTemporaryFile*)this_)->QTemporaryFile::open(flags);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:61
 // [8] const QMetaObject * metaObject()
@@ -42,6 +54,7 @@ extern "C"
 void* C_ZNK14QTemporaryFile10metaObjectEv(void *this_) {
   return (void*)((QTemporaryFile*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:66
 // [-2] void QTemporaryFile()
@@ -88,6 +101,7 @@ extern "C"
 bool C_ZNK14QTemporaryFile10autoRemoveEv(void *this_) {
   return (bool)((QTemporaryFile*)this_)->autoRemove();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:75
 // [-2] void setAutoRemove(_Bool)
@@ -95,6 +109,7 @@ extern "C"
 void C_ZN14QTemporaryFile13setAutoRemoveEb(void *this_, bool b) {
   ((QTemporaryFile*)this_)->setAutoRemove(b);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:78
 // [1] bool open()
@@ -102,6 +117,7 @@ extern "C"
 bool C_ZN14QTemporaryFile4openEv(void *this_) {
   return (bool)((QTemporaryFile*)this_)->open();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:80
 // [8] QString fileName()
@@ -110,6 +126,7 @@ void* C_ZNK14QTemporaryFile8fileNameEv(void *this_) {
   auto rv = ((QTemporaryFile*)this_)->fileName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:81
 // [8] QString fileTemplate()
@@ -118,6 +135,7 @@ void* C_ZNK14QTemporaryFile12fileTemplateEv(void *this_) {
   auto rv = ((QTemporaryFile*)this_)->fileTemplate();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:82
 // [-2] void setFileTemplate(const class QString &)
@@ -125,6 +143,7 @@ extern "C"
 void C_ZN14QTemporaryFile15setFileTemplateERK7QString(void *this_, QString* name) {
   ((QTemporaryFile*)this_)->setFileTemplate(*name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:85
 // [1] bool rename(const class QString &)
@@ -132,6 +151,7 @@ extern "C"
 bool C_ZN14QTemporaryFile6renameERK7QString(void *this_, QString* newName) {
   return (bool)((QTemporaryFile*)this_)->rename(*newName);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:88
 // [8] QTemporaryFile * createLocalFile(const class QString &)

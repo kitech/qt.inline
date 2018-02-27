@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qsurface.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsurface.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -31,6 +34,7 @@ extern "C"
 QSurface::SurfaceClass C_ZNK8QSurface12surfaceClassEv(void *this_) {
   return (QSurface::SurfaceClass)((QSurface*)this_)->surfaceClass();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:76
 // [8] QSurfaceFormat format()
@@ -39,6 +43,7 @@ void* C_ZNK8QSurface6formatEv(void *this_) {
   auto rv = ((QSurface*)this_)->format();
 return new QSurfaceFormat(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:79
 // [4] QSurface::SurfaceType surfaceType()
@@ -46,6 +51,7 @@ extern "C"
 QSurface::SurfaceType C_ZNK8QSurface11surfaceTypeEv(void *this_) {
   return (QSurface::SurfaceType)((QSurface*)this_)->surfaceType();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:80
 // [1] bool supportsOpenGL()
@@ -53,6 +59,7 @@ extern "C"
 bool C_ZNK8QSurface14supportsOpenGLEv(void *this_) {
   return (bool)((QSurface*)this_)->supportsOpenGL();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:82
 // [8] QSize size()
@@ -61,4 +68,5 @@ void* C_ZNK8QSurface4sizeEv(void *this_) {
   auto rv = ((QSurface*)this_)->size();
 return new QSize(rv);
 }
+
 //  main block end

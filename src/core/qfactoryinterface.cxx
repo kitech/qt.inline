@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qfactoryinterface.h
+#ifndef protected
+#define protected public
+#endif
 #include <qfactoryinterface.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -30,4 +33,5 @@ void* C_ZNK17QFactoryInterface4keysEv(void *this_) {
   auto rv = ((QFactoryInterface*)this_)->keys();
 return new QStringList(rv);
 }
+
 //  main block end

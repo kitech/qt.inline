@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qtextdocument.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtextdocument.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -29,6 +32,7 @@ extern "C"
 void C_ZN17QAbstractUndoItem4undoEv(void *this_) {
   ((QAbstractUndoItem*)this_)->undo();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:88
 // [-2] void redo()
@@ -36,4 +40,5 @@ extern "C"
 void C_ZN17QAbstractUndoItem4redoEv(void *this_) {
   ((QAbstractUndoItem*)this_)->redo();
 }
+
 //  main block end

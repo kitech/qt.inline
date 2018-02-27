@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qrunnable.h
+#ifndef protected
+#define protected public
+#endif
 #include <qrunnable.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void C_ZN9QRunnable3runEv(void *this_) {
   ((QRunnable*)this_)->run();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:60
 // [-2] void QRunnable()
@@ -45,6 +49,7 @@ extern "C"
 bool C_ZNK9QRunnable10autoDeleteEv(void *this_) {
   return (bool)((QRunnable*)this_)->autoDelete();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:64
 // [-2] void setAutoDelete(_Bool)
@@ -52,4 +57,5 @@ extern "C"
 void C_ZN9QRunnable13setAutoDeleteEb(void *this_, bool _autoDelete) {
   ((QRunnable*)this_)->setAutoDelete(_autoDelete);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qscopedpointer.h
+#ifndef protected
+#define protected public
+#endif
 #include <qscopedpointer.h>
 #include <QtCore>
 #include "callback_inherit.h"

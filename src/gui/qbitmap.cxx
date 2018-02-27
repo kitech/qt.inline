@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qbitmap.h
+#ifndef protected
+#define protected public
+#endif
 #include <qbitmap.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -68,6 +71,7 @@ void* C_ZN7QBitmapaSERKS_(void *this_, QBitmap* other) {
   auto& rv = ((QBitmap*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:64
 // [32] QBitmap & operator=(class QBitmap &&)
@@ -76,6 +80,7 @@ void* C_ZN7QBitmapaSEOS_(void *this_, QBitmap && other) {
   auto& rv = ((QBitmap*)this_)->operator=(other);
 return &rv;
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:65
 // [-2] void ~QBitmap()
@@ -91,6 +96,7 @@ void* C_ZN7QBitmapaSERK7QPixmap(void *this_, QPixmap* arg0) {
   auto& rv = ((QBitmap*)this_)->operator=(*arg0);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:69
 // [-2] void swap(class QBitmap &)
@@ -98,6 +104,7 @@ extern "C"
 void C_ZN7QBitmap4swapERS_(void *this_, QBitmap* other) {
   ((QBitmap*)this_)->swap(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:72
 // [-2] void clear()
@@ -105,6 +112,7 @@ extern "C"
 void C_ZN7QBitmap5clearEv(void *this_) {
   ((QBitmap*)this_)->clear();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:74
 // [32] QBitmap fromImage(const class QImage &, Qt::ImageConversionFlags)
@@ -129,6 +137,7 @@ void* C_ZNK7QBitmap11transformedERK7QMatrix(void *this_, QMatrix* arg0) {
   auto rv = ((QBitmap*)this_)->transformed(*arg0);
 return new QBitmap(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:79
 // [32] QBitmap transformed(const class QTransform &)
@@ -137,4 +146,5 @@ void* C_ZNK7QBitmap11transformedERK10QTransform(void *this_, QTransform* matrix)
   auto rv = ((QBitmap*)this_)->transformed(*matrix);
 return new QBitmap(rv);
 }
+
 //  main block end

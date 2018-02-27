@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgtexturematerial.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgtexturematerial.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -31,6 +34,7 @@ extern "C"
 void* C_ZNK24QSGOpaqueTextureMaterial4typeEv(void *this_) {
   return (void*)((QSGOpaqueTextureMaterial*)this_)->type();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:54
 // [8] QSGMaterialShader * createShader()
@@ -38,6 +42,7 @@ extern "C"
 void* C_ZNK24QSGOpaqueTextureMaterial12createShaderEv(void *this_) {
   return (void*)((QSGOpaqueTextureMaterial*)this_)->createShader();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:55
 // [4] int compare(const class QSGMaterial *)
@@ -45,6 +50,7 @@ extern "C"
 int C_ZNK24QSGOpaqueTextureMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
   return (int)((QSGOpaqueTextureMaterial*)this_)->compare(other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:57
 // [-2] void setTexture(class QSGTexture *)
@@ -52,6 +58,7 @@ extern "C"
 void C_ZN24QSGOpaqueTextureMaterial10setTextureEP10QSGTexture(void *this_, QSGTexture * texture) {
   ((QSGOpaqueTextureMaterial*)this_)->setTexture(texture);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:58
 // [8] QSGTexture * texture()
@@ -59,6 +66,7 @@ extern "C"
 void* C_ZNK24QSGOpaqueTextureMaterial7textureEv(void *this_) {
   return (void*)((QSGOpaqueTextureMaterial*)this_)->texture();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:60
 // [-2] void setMipmapFiltering(class QSGTexture::Filtering)
@@ -66,6 +74,7 @@ extern "C"
 void C_ZN24QSGOpaqueTextureMaterial18setMipmapFilteringEN10QSGTexture9FilteringE(void *this_, QSGTexture::Filtering filteringType) {
   ((QSGOpaqueTextureMaterial*)this_)->setMipmapFiltering(filteringType);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:61
 // [4] QSGTexture::Filtering mipmapFiltering()
@@ -73,6 +82,7 @@ extern "C"
 QSGTexture::Filtering C_ZNK24QSGOpaqueTextureMaterial15mipmapFilteringEv(void *this_) {
   return (QSGTexture::Filtering)((QSGOpaqueTextureMaterial*)this_)->mipmapFiltering();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:63
 // [-2] void setFiltering(class QSGTexture::Filtering)
@@ -80,6 +90,7 @@ extern "C"
 void C_ZN24QSGOpaqueTextureMaterial12setFilteringEN10QSGTexture9FilteringE(void *this_, QSGTexture::Filtering filteringType) {
   ((QSGOpaqueTextureMaterial*)this_)->setFiltering(filteringType);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:64
 // [4] QSGTexture::Filtering filtering()
@@ -87,6 +98,7 @@ extern "C"
 QSGTexture::Filtering C_ZNK24QSGOpaqueTextureMaterial9filteringEv(void *this_) {
   return (QSGTexture::Filtering)((QSGOpaqueTextureMaterial*)this_)->filtering();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:66
 // [-2] void setHorizontalWrapMode(class QSGTexture::WrapMode)
@@ -94,6 +106,7 @@ extern "C"
 void C_ZN24QSGOpaqueTextureMaterial21setHorizontalWrapModeEN10QSGTexture8WrapModeE(void *this_, QSGTexture::WrapMode mode) {
   ((QSGOpaqueTextureMaterial*)this_)->setHorizontalWrapMode(mode);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:67
 // [4] QSGTexture::WrapMode horizontalWrapMode()
@@ -101,6 +114,7 @@ extern "C"
 QSGTexture::WrapMode C_ZNK24QSGOpaqueTextureMaterial18horizontalWrapModeEv(void *this_) {
   return (QSGTexture::WrapMode)((QSGOpaqueTextureMaterial*)this_)->horizontalWrapMode();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:69
 // [-2] void setVerticalWrapMode(class QSGTexture::WrapMode)
@@ -108,6 +122,7 @@ extern "C"
 void C_ZN24QSGOpaqueTextureMaterial19setVerticalWrapModeEN10QSGTexture8WrapModeE(void *this_, QSGTexture::WrapMode mode) {
   ((QSGOpaqueTextureMaterial*)this_)->setVerticalWrapMode(mode);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:70
 // [4] QSGTexture::WrapMode verticalWrapMode()
@@ -115,6 +130,7 @@ extern "C"
 QSGTexture::WrapMode C_ZNK24QSGOpaqueTextureMaterial16verticalWrapModeEv(void *this_) {
   return (QSGTexture::WrapMode)((QSGOpaqueTextureMaterial*)this_)->verticalWrapMode();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:72
 // [-2] void setAnisotropyLevel(class QSGTexture::AnisotropyLevel)
@@ -122,6 +138,7 @@ extern "C"
 void C_ZN24QSGOpaqueTextureMaterial18setAnisotropyLevelEN10QSGTexture15AnisotropyLevelE(void *this_, QSGTexture::AnisotropyLevel level) {
   ((QSGOpaqueTextureMaterial*)this_)->setAnisotropyLevel(level);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:73
 // [4] QSGTexture::AnisotropyLevel anisotropyLevel()
@@ -129,6 +146,7 @@ extern "C"
 QSGTexture::AnisotropyLevel C_ZNK24QSGOpaqueTextureMaterial15anisotropyLevelEv(void *this_) {
   return (QSGTexture::AnisotropyLevel)((QSGOpaqueTextureMaterial*)this_)->anisotropyLevel();
 }
+
 
 extern "C"
 void C_ZN24QSGOpaqueTextureMaterialD2Ev(void *this_) {

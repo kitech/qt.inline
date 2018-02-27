@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlapplicationengine.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlapplicationengine.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -28,6 +31,7 @@ extern "C"
 void* C_ZNK21QQmlApplicationEngine10metaObjectEv(void *this_) {
   return (void*)((QQmlApplicationEngine*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:56
 // [-2] void QQmlApplicationEngine(class QObject *)
@@ -63,6 +67,7 @@ extern "C"
 void C_ZN21QQmlApplicationEngine4loadERK4QUrl(void *this_, QUrl* url) {
   ((QQmlApplicationEngine*)this_)->load(*url);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:68
 // [-2] void load(const class QString &)
@@ -70,6 +75,7 @@ extern "C"
 void C_ZN21QQmlApplicationEngine4loadERK7QString(void *this_, QString* filePath) {
   ((QQmlApplicationEngine*)this_)->load(*filePath);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:69
 // [-2] void loadData(const class QByteArray &, const class QUrl &)
@@ -77,6 +83,7 @@ extern "C"
 void C_ZN21QQmlApplicationEngine8loadDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* data, QUrl* url) {
   ((QQmlApplicationEngine*)this_)->loadData(*data, *url);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:72
 // [-2] void objectCreated(class QObject *, const class QUrl &)
@@ -84,4 +91,5 @@ extern "C"
 void C_ZN21QQmlApplicationEngine13objectCreatedEP7QObjectRK4QUrl(void *this_, QObject * object, QUrl* url) {
   ((QQmlApplicationEngine*)this_)->objectCreated(object, *url);
 }
+
 //  main block end

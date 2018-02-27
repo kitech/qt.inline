@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qtooltip.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtooltip.h>
 #include <QtWidgets>
 #include "callback_inherit.h"

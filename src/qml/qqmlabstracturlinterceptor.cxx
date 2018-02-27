@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlabstracturlinterceptor.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -39,4 +42,5 @@ void* C_ZN26QQmlAbstractUrlInterceptor9interceptERK4QUrlNS_8DataTypeE(void *this
   auto rv = ((QQmlAbstractUrlInterceptor*)this_)->intercept(*path, type_);
 return new QUrl(rv);
 }
+
 //  main block end

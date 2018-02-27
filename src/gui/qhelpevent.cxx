@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 int C_ZNK10QHelpEvent1xEv(void *this_) {
   return (int)((QHelpEvent*)this_)->x();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:684
 // [4] int y()
@@ -45,6 +49,7 @@ extern "C"
 int C_ZNK10QHelpEvent1yEv(void *this_) {
   return (int)((QHelpEvent*)this_)->y();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:685
 // [4] int globalX()
@@ -52,6 +57,7 @@ extern "C"
 int C_ZNK10QHelpEvent7globalXEv(void *this_) {
   return (int)((QHelpEvent*)this_)->globalX();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:686
 // [4] int globalY()
@@ -59,6 +65,7 @@ extern "C"
 int C_ZNK10QHelpEvent7globalYEv(void *this_) {
   return (int)((QHelpEvent*)this_)->globalY();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:688
 // [8] const QPoint & pos()
@@ -67,6 +74,7 @@ void* C_ZNK10QHelpEvent3posEv(void *this_) {
   auto& rv = ((QHelpEvent*)this_)->pos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:689
 // [8] const QPoint & globalPos()
@@ -75,4 +83,5 @@ void* C_ZNK10QHelpEvent9globalPosEv(void *this_) {
   auto& rv = ((QHelpEvent*)this_)->globalPos();
 return new QPoint(rv);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlincubator.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlincubator.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQQmlIncubationController() {}
 // void QQmlIncubationController()
 MyQQmlIncubationController() : QQmlIncubationController() {}
+// Protected virtual Visibility=Default Availability=Available
 // void incubatingObjectCountChanged(int)
   virtual void incubatingObjectCountChanged(int arg0) {
     int handled = 0;
@@ -27,6 +31,14 @@ MyQQmlIncubationController() : QQmlIncubationController() {}
   }
 
 };
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlincubator.h:113
+// [-2] void incubatingObjectCountChanged(int)
+extern "C"
+void C_ZN24QQmlIncubationController28incubatingObjectCountChangedEi(void *this_, int arg0) {
+  ((QQmlIncubationController*)this_)->QQmlIncubationController::incubatingObjectCountChanged(arg0);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:103
@@ -50,6 +62,7 @@ extern "C"
 void* C_ZNK24QQmlIncubationController6engineEv(void *this_) {
   return (void*)((QQmlIncubationController*)this_)->engine();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:107
 // [4] int incubatingObjectCount()
@@ -57,6 +70,7 @@ extern "C"
 int C_ZNK24QQmlIncubationController21incubatingObjectCountEv(void *this_) {
   return (int)((QQmlIncubationController*)this_)->incubatingObjectCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:109
 // [-2] void incubateFor(int)
@@ -64,6 +78,7 @@ extern "C"
 void C_ZN24QQmlIncubationController11incubateForEi(void *this_, int msecs) {
   ((QQmlIncubationController*)this_)->incubateFor(msecs);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:110
 // [-2] void incubateWhile(volatile _Bool *, int)
@@ -71,4 +86,5 @@ extern "C"
 void C_ZN24QQmlIncubationController13incubateWhileEPVbi(void *this_, volatile bool * flag, int msecs) {
   ((QQmlIncubationController*)this_)->incubateWhile(flag, msecs);
 }
+
 //  main block end

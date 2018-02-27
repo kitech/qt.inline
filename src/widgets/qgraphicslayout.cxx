@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgraphicslayout.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgraphicslayout.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQGraphicsLayout() {}
 // void QGraphicsLayout(class QGraphicsLayoutItem *)
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
+// Protected Visibility=Default Availability=Available
 // void addChildLayoutItem(class QGraphicsLayoutItem *)
   virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
     int handled = 0;
@@ -27,6 +31,14 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
   }
 
 };
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:78
+// [-2] void addChildLayoutItem(class QGraphicsLayoutItem *)
+extern "C"
+void C_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * layoutItem) {
+  ((QGraphicsLayout*)this_)->QGraphicsLayout::addChildLayoutItem(layoutItem);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:57
@@ -50,6 +62,7 @@ extern "C"
 void C_ZN15QGraphicsLayout18setContentsMarginsEdddd(void *this_, qreal left, qreal top, qreal right, qreal bottom) {
   ((QGraphicsLayout*)this_)->setContentsMargins(left, top, right, bottom);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:61
 // [-2] void getContentsMargins(qreal *, qreal *, qreal *, qreal *)
@@ -57,6 +70,7 @@ extern "C"
 void C_ZNK15QGraphicsLayout18getContentsMarginsEPdS0_S0_S0_(void *this_, qreal * left, qreal * top, qreal * right, qreal * bottom) {
   ((QGraphicsLayout*)this_)->getContentsMargins(left, top, right, bottom);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:63
 // [-2] void activate()
@@ -64,6 +78,7 @@ extern "C"
 void C_ZN15QGraphicsLayout8activateEv(void *this_) {
   ((QGraphicsLayout*)this_)->activate();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:64
 // [1] bool isActivated()
@@ -71,6 +86,7 @@ extern "C"
 bool C_ZNK15QGraphicsLayout11isActivatedEv(void *this_) {
   return (bool)((QGraphicsLayout*)this_)->isActivated();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:65
 // [-2] void invalidate()
@@ -78,6 +94,7 @@ extern "C"
 void C_ZN15QGraphicsLayout10invalidateEv(void *this_) {
   ((QGraphicsLayout*)this_)->invalidate();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:66
 // [-2] void updateGeometry()
@@ -85,6 +102,7 @@ extern "C"
 void C_ZN15QGraphicsLayout14updateGeometryEv(void *this_) {
   ((QGraphicsLayout*)this_)->updateGeometry();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:68
 // [-2] void widgetEvent(class QEvent *)
@@ -92,6 +110,7 @@ extern "C"
 void C_ZN15QGraphicsLayout11widgetEventEP6QEvent(void *this_, QEvent * e) {
   ((QGraphicsLayout*)this_)->widgetEvent(e);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:70
 // [4] int count()
@@ -99,6 +118,7 @@ extern "C"
 int C_ZNK15QGraphicsLayout5countEv(void *this_) {
   return (int)((QGraphicsLayout*)this_)->count();
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:71
 // [8] QGraphicsLayoutItem * itemAt(int)
@@ -106,6 +126,7 @@ extern "C"
 void* C_ZNK15QGraphicsLayout6itemAtEi(void *this_, int i) {
   return (void*)((QGraphicsLayout*)this_)->itemAt(i);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:72
 // [-2] void removeAt(int)
@@ -113,6 +134,7 @@ extern "C"
 void C_ZN15QGraphicsLayout8removeAtEi(void *this_, int index) {
   ((QGraphicsLayout*)this_)->removeAt(index);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:74
 // [-2] void setInstantInvalidatePropagation(_Bool)

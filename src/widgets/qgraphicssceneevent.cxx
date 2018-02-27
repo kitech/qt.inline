@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void* C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
   return (void*)((QGraphicsSceneEvent*)this_)->widget();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:71
 // [-2] void setWidget(class QWidget *)
@@ -45,4 +49,5 @@ extern "C"
 void C_ZN19QGraphicsSceneEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QGraphicsSceneEvent*)this_)->setWidget(widget);
 }
+
 //  main block end

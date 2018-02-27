@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qsslcipher.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsslcipher.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -50,6 +53,7 @@ void* C_ZN10QSslCipheraSEOS_(void *this_, QSslCipher && other) {
   auto& rv = ((QSslCipher*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:65
 // [8] QSslCipher & operator=(const class QSslCipher &)
@@ -58,6 +62,7 @@ void* C_ZN10QSslCipheraSERKS_(void *this_, QSslCipher* other) {
   auto& rv = ((QSslCipher*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:66
 // [-2] void ~QSslCipher()
@@ -72,6 +77,7 @@ extern "C"
 void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
   ((QSslCipher*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:71
 // [1] bool operator==(const class QSslCipher &)
@@ -79,6 +85,7 @@ extern "C"
 bool C_ZNK10QSslCiphereqERKS_(void *this_, QSslCipher* other) {
   return (bool)((QSslCipher*)this_)->operator==(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:72
 // [1] bool operator!=(const class QSslCipher &)
@@ -86,6 +93,7 @@ extern "C"
 bool C_ZNK10QSslCipherneERKS_(void *this_, QSslCipher* other) {
   return (bool)((QSslCipher*)this_)->operator!=(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:74
 // [1] bool isNull()
@@ -93,6 +101,7 @@ extern "C"
 bool C_ZNK10QSslCipher6isNullEv(void *this_) {
   return (bool)((QSslCipher*)this_)->isNull();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:75
 // [8] QString name()
@@ -101,6 +110,7 @@ void* C_ZNK10QSslCipher4nameEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->name();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:76
 // [4] int supportedBits()
@@ -108,6 +118,7 @@ extern "C"
 int C_ZNK10QSslCipher13supportedBitsEv(void *this_) {
   return (int)((QSslCipher*)this_)->supportedBits();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:77
 // [4] int usedBits()
@@ -115,6 +126,7 @@ extern "C"
 int C_ZNK10QSslCipher8usedBitsEv(void *this_) {
   return (int)((QSslCipher*)this_)->usedBits();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:79
 // [8] QString keyExchangeMethod()
@@ -123,6 +135,7 @@ void* C_ZNK10QSslCipher17keyExchangeMethodEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->keyExchangeMethod();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:80
 // [8] QString authenticationMethod()
@@ -131,6 +144,7 @@ void* C_ZNK10QSslCipher20authenticationMethodEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->authenticationMethod();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:81
 // [8] QString encryptionMethod()
@@ -139,6 +153,7 @@ void* C_ZNK10QSslCipher16encryptionMethodEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->encryptionMethod();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:82
 // [8] QString protocolString()
@@ -147,6 +162,7 @@ void* C_ZNK10QSslCipher14protocolStringEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->protocolString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:83
 // [4] QSsl::SslProtocol protocol()
@@ -154,4 +170,5 @@ extern "C"
 QSsl::SslProtocol C_ZNK10QSslCipher8protocolEv(void *this_) {
   return (QSsl::SslProtocol)((QSslCipher*)this_)->protocol();
 }
+
 //  main block end

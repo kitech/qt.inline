@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qpolygon.h
+#ifndef protected
+#define protected public
+#endif
 #include <qpolygon.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -66,6 +69,7 @@ void* C_ZN9QPolygonFaSEOS_(void *this_, QPolygonF && other) {
   auto& rv = ((QPolygonF*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:158
 // [8] QPolygonF & operator=(const class QPolygonF &)
@@ -74,6 +78,7 @@ void* C_ZN9QPolygonFaSERKS_(void *this_, QPolygonF* other) {
   auto& rv = ((QPolygonF*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:159
 // [-2] void swap(class QPolygonF &)
@@ -81,6 +86,7 @@ extern "C"
 void C_ZN9QPolygonF4swapERS_(void *this_, QPolygonF* other) {
   ((QPolygonF*)this_)->swap(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:163
 // [-2] void translate(qreal, qreal)
@@ -88,6 +94,7 @@ extern "C"
 void C_ZN9QPolygonF9translateEdd(void *this_, qreal dx, qreal dy) {
   ((QPolygonF*)this_)->translate(dx, dy);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:164
 // [-2] void translate(const class QPointF &)
@@ -95,6 +102,7 @@ extern "C"
 void C_ZN9QPolygonF9translateERK7QPointF(void *this_, QPointF* offset) {
   ((QPolygonF*)this_)->translate(*offset);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:166
 // [8] QPolygonF translated(qreal, qreal)
@@ -103,6 +111,7 @@ void* C_ZNK9QPolygonF10translatedEdd(void *this_, qreal dx, qreal dy) {
   auto rv = ((QPolygonF*)this_)->translated(dx, dy);
 return new QPolygonF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:167
 // [8] QPolygonF translated(const class QPointF &)
@@ -111,6 +120,7 @@ void* C_ZNK9QPolygonF10translatedERK7QPointF(void *this_, QPointF* offset) {
   auto rv = ((QPolygonF*)this_)->translated(*offset);
 return new QPolygonF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:169
 // [8] QPolygon toPolygon()
@@ -119,6 +129,7 @@ void* C_ZNK9QPolygonF9toPolygonEv(void *this_) {
   auto rv = ((QPolygonF*)this_)->toPolygon();
 return new QPolygon(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:171
 // [1] bool isClosed()
@@ -126,6 +137,7 @@ extern "C"
 bool C_ZNK9QPolygonF8isClosedEv(void *this_) {
   return (bool)((QPolygonF*)this_)->isClosed();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:173
 // [32] QRectF boundingRect()
@@ -134,6 +146,7 @@ void* C_ZNK9QPolygonF12boundingRectEv(void *this_) {
   auto rv = ((QPolygonF*)this_)->boundingRect();
 return new QRectF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:175
 // [1] bool containsPoint(const class QPointF &, Qt::FillRule)
@@ -141,6 +154,7 @@ extern "C"
 bool C_ZNK9QPolygonF13containsPointERK7QPointFN2Qt8FillRuleE(void *this_, QPointF* pt, Qt::FillRule fillRule) {
   return (bool)((QPolygonF*)this_)->containsPoint(*pt, fillRule);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:177
 // [8] QPolygonF united(const class QPolygonF &)
@@ -149,6 +163,7 @@ void* C_ZNK9QPolygonF6unitedERKS_(void *this_, QPolygonF* r) {
   auto rv = ((QPolygonF*)this_)->united(*r);
 return new QPolygonF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:178
 // [8] QPolygonF intersected(const class QPolygonF &)
@@ -157,6 +172,7 @@ void* C_ZNK9QPolygonF11intersectedERKS_(void *this_, QPolygonF* r) {
   auto rv = ((QPolygonF*)this_)->intersected(*r);
 return new QPolygonF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:179
 // [8] QPolygonF subtracted(const class QPolygonF &)
@@ -165,6 +181,7 @@ void* C_ZNK9QPolygonF10subtractedERKS_(void *this_, QPolygonF* r) {
   auto rv = ((QPolygonF*)this_)->subtracted(*r);
 return new QPolygonF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:181
 // [1] bool intersects(const class QPolygonF &)
@@ -172,4 +189,5 @@ extern "C"
 bool C_ZNK9QPolygonF10intersectsERKS_(void *this_, QPolygonF* r) {
   return (bool)((QPolygonF*)this_)->intersects(*r);
 }
+
 //  main block end

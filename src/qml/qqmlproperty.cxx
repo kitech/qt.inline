@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlproperty.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlproperty.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -93,6 +96,7 @@ void* C_ZN12QQmlPropertyaSERKS_(void *this_, QQmlProperty* arg0) {
   auto& rv = ((QQmlProperty*)this_)->operator=(*arg0);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:85
 // [1] bool operator==(const class QQmlProperty &)
@@ -100,6 +104,7 @@ extern "C"
 bool C_ZNK12QQmlPropertyeqERKS_(void *this_, QQmlProperty* arg0) {
   return (bool)((QQmlProperty*)this_)->operator==(*arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:87
 // [4] QQmlProperty::Type type()
@@ -107,6 +112,7 @@ extern "C"
 QQmlProperty::Type C_ZNK12QQmlProperty4typeEv(void *this_) {
   return (QQmlProperty::Type)((QQmlProperty*)this_)->type();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:88
 // [1] bool isValid()
@@ -114,6 +120,7 @@ extern "C"
 bool C_ZNK12QQmlProperty7isValidEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:89
 // [1] bool isProperty()
@@ -121,6 +128,7 @@ extern "C"
 bool C_ZNK12QQmlProperty10isPropertyEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->isProperty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:90
 // [1] bool isSignalProperty()
@@ -128,6 +136,7 @@ extern "C"
 bool C_ZNK12QQmlProperty16isSignalPropertyEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->isSignalProperty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:92
 // [4] int propertyType()
@@ -135,6 +144,7 @@ extern "C"
 int C_ZNK12QQmlProperty12propertyTypeEv(void *this_) {
   return (int)((QQmlProperty*)this_)->propertyType();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:93
 // [4] QQmlProperty::PropertyTypeCategory propertyTypeCategory()
@@ -142,6 +152,7 @@ extern "C"
 QQmlProperty::PropertyTypeCategory C_ZNK12QQmlProperty20propertyTypeCategoryEv(void *this_) {
   return (QQmlProperty::PropertyTypeCategory)((QQmlProperty*)this_)->propertyTypeCategory();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:94
 // [8] const char * propertyTypeName()
@@ -149,6 +160,7 @@ extern "C"
 void* C_ZNK12QQmlProperty16propertyTypeNameEv(void *this_) {
   return (void*)((QQmlProperty*)this_)->propertyTypeName();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:96
 // [8] QString name()
@@ -157,6 +169,7 @@ void* C_ZNK12QQmlProperty4nameEv(void *this_) {
   auto rv = ((QQmlProperty*)this_)->name();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:98
 // [16] QVariant read()
@@ -165,6 +178,7 @@ void* C_ZNK12QQmlProperty4readEv(void *this_) {
   auto rv = ((QQmlProperty*)this_)->read();
 return new QVariant(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:99
 // [16] QVariant read(const class QObject *, const class QString &)
@@ -196,6 +210,7 @@ extern "C"
 bool C_ZNK12QQmlProperty5writeERK8QVariant(void *this_, QVariant* arg0) {
   return (bool)((QQmlProperty*)this_)->write(*arg0);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:104
 // [1] bool write(class QObject *, const class QString &, const class QVariant &)
@@ -224,6 +239,7 @@ extern "C"
 bool C_ZNK12QQmlProperty5resetEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->reset();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:110
 // [1] bool hasNotifySignal()
@@ -231,6 +247,7 @@ extern "C"
 bool C_ZNK12QQmlProperty15hasNotifySignalEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->hasNotifySignal();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:111
 // [1] bool needsNotifySignal()
@@ -238,6 +255,7 @@ extern "C"
 bool C_ZNK12QQmlProperty17needsNotifySignalEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->needsNotifySignal();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:112
 // [1] bool connectNotifySignal(class QObject *, const char *)
@@ -245,6 +263,7 @@ extern "C"
 bool C_ZNK12QQmlProperty19connectNotifySignalEP7QObjectPKc(void *this_, QObject * dest, const char * slot) {
   return (bool)((QQmlProperty*)this_)->connectNotifySignal(dest, slot);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:113
 // [1] bool connectNotifySignal(class QObject *, int)
@@ -252,6 +271,7 @@ extern "C"
 bool C_ZNK12QQmlProperty19connectNotifySignalEP7QObjecti(void *this_, QObject * dest, int method) {
   return (bool)((QQmlProperty*)this_)->connectNotifySignal(dest, method);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:115
 // [1] bool isWritable()
@@ -259,6 +279,7 @@ extern "C"
 bool C_ZNK12QQmlProperty10isWritableEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->isWritable();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:116
 // [1] bool isDesignable()
@@ -266,6 +287,7 @@ extern "C"
 bool C_ZNK12QQmlProperty12isDesignableEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->isDesignable();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:117
 // [1] bool isResettable()
@@ -273,6 +295,7 @@ extern "C"
 bool C_ZNK12QQmlProperty12isResettableEv(void *this_) {
   return (bool)((QQmlProperty*)this_)->isResettable();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:118
 // [8] QObject * object()
@@ -280,6 +303,7 @@ extern "C"
 void* C_ZNK12QQmlProperty6objectEv(void *this_) {
   return (void*)((QQmlProperty*)this_)->object();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:120
 // [4] int index()
@@ -287,6 +311,7 @@ extern "C"
 int C_ZNK12QQmlProperty5indexEv(void *this_) {
   return (int)((QQmlProperty*)this_)->index();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:121
 // [32] QMetaProperty property()
@@ -295,6 +320,7 @@ void* C_ZNK12QQmlProperty8propertyEv(void *this_) {
   auto rv = ((QQmlProperty*)this_)->property();
 return new QMetaProperty(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:122
 // [16] QMetaMethod method()
@@ -303,4 +329,5 @@ void* C_ZNK12QQmlProperty6methodEv(void *this_) {
   auto rv = ((QQmlProperty*)this_)->method();
 return new QMetaMethod(rv);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qnetworkproxy.h
+#ifndef protected
+#define protected public
+#endif
 #include <qnetworkproxy.h>
 #include <QtNetwork>
 #include "callback_inherit.h"

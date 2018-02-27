@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgesture.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgesture.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK11QTapGesture10metaObjectEv(void *this_) {
   return (void*)((QTapGesture*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:242
 // [-2] void QTapGesture(class QObject *)
@@ -46,6 +50,7 @@ void* C_ZNK11QTapGesture8positionEv(void *this_) {
   auto rv = ((QTapGesture*)this_)->position();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:246
 // [-2] void setPosition(const class QPointF &)
@@ -53,4 +58,5 @@ extern "C"
 void C_ZN11QTapGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
   ((QTapGesture*)this_)->setPosition(*pos);
 }
+
 //  main block end

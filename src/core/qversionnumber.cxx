@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qversionnumber.h
+#ifndef protected
+#define protected public
+#endif
 #include <qversionnumber.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -58,6 +61,7 @@ extern "C"
 bool C_ZNK14QVersionNumber6isNullEv(void *this_) {
   return (bool)((QVersionNumber*)this_)->isNull();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:254
 // [1] bool isNormalized()
@@ -65,6 +69,7 @@ extern "C"
 bool C_ZNK14QVersionNumber12isNormalizedEv(void *this_) {
   return (bool)((QVersionNumber*)this_)->isNormalized();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:257
 // [4] int majorVersion()
@@ -72,6 +77,7 @@ extern "C"
 int C_ZNK14QVersionNumber12majorVersionEv(void *this_) {
   return (int)((QVersionNumber*)this_)->majorVersion();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:260
 // [4] int minorVersion()
@@ -79,6 +85,7 @@ extern "C"
 int C_ZNK14QVersionNumber12minorVersionEv(void *this_) {
   return (int)((QVersionNumber*)this_)->minorVersion();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:263
 // [4] int microVersion()
@@ -86,6 +93,7 @@ extern "C"
 int C_ZNK14QVersionNumber12microVersionEv(void *this_) {
   return (int)((QVersionNumber*)this_)->microVersion();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:266
 // [8] QVersionNumber normalized()
@@ -94,6 +102,7 @@ void* C_ZNK14QVersionNumber10normalizedEv(void *this_) {
   auto rv = ((QVersionNumber*)this_)->normalized();
 return new QVersionNumber(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:270
 // [4] int segmentAt(int)
@@ -101,6 +110,7 @@ extern "C"
 int C_ZNK14QVersionNumber9segmentAtEi(void *this_, int index) {
   return (int)((QVersionNumber*)this_)->segmentAt(index);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:273
 // [4] int segmentCount()
@@ -108,6 +118,7 @@ extern "C"
 int C_ZNK14QVersionNumber12segmentCountEv(void *this_) {
   return (int)((QVersionNumber*)this_)->segmentCount();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:276
 // [1] bool isPrefixOf(const class QVersionNumber &)
@@ -115,6 +126,7 @@ extern "C"
 bool C_ZNK14QVersionNumber10isPrefixOfERKS_(void *this_, QVersionNumber* other) {
   return (bool)((QVersionNumber*)this_)->isPrefixOf(*other);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:278
 // [4] int compare(const class QVersionNumber &, const class QVersionNumber &)
@@ -138,6 +150,7 @@ void* C_ZNK14QVersionNumber8toStringEv(void *this_) {
   auto rv = ((QVersionNumber*)this_)->toString();
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:284
 // [8] QVersionNumber fromString(const class QString &, int *)

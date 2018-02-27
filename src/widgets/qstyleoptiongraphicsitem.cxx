@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qstyleoption.h
+#ifndef protected
+#define protected public
+#endif
 #include <qstyleoption.h>
 #include <QtWidgets>
 #include "callback_inherit.h"

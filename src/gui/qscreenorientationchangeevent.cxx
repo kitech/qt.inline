@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void* C_ZNK29QScreenOrientationChangeEvent6screenEv(void *this_) {
   return (void*)((QScreenOrientationChangeEvent*)this_)->screen();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1042
 // [4] Qt::ScreenOrientation orientation()
@@ -45,4 +49,5 @@ extern "C"
 Qt::ScreenOrientation C_ZNK29QScreenOrientationChangeEvent11orientationEv(void *this_) {
   return (Qt::ScreenOrientation)((QScreenOrientationChangeEvent*)this_)->orientation();
 }
+
 //  main block end

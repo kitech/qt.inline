@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qstyleplugin.h
+#ifndef protected
+#define protected public
+#endif
 #include <qstyleplugin.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK12QStylePlugin10metaObjectEv(void *this_) {
   return (void*)((QStylePlugin*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleplugin.h:58
 // [-2] void QStylePlugin(class QObject *)
@@ -45,4 +49,5 @@ extern "C"
 void* C_ZN12QStylePlugin6createERK7QString(void *this_, QString* key) {
   return (void*)((QStylePlugin*)this_)->create(*key);
 }
+
 //  main block end

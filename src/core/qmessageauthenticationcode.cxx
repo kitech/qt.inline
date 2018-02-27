@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qmessageauthenticationcode.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN26QMessageAuthenticationCode5resetEv(void *this_) {
   ((QMessageAuthenticationCode*)this_)->reset();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:60
 // [-2] void setKey(const class QByteArray &)
@@ -45,6 +49,7 @@ extern "C"
 void C_ZN26QMessageAuthenticationCode6setKeyERK10QByteArray(void *this_, QByteArray* key) {
   ((QMessageAuthenticationCode*)this_)->setKey(*key);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:62
 // [-2] void addData(const char *, int)
@@ -52,6 +57,7 @@ extern "C"
 void C_ZN26QMessageAuthenticationCode7addDataEPKci(void *this_, const char * data, int length) {
   ((QMessageAuthenticationCode*)this_)->addData(data, length);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:63
 // [-2] void addData(const class QByteArray &)
@@ -59,6 +65,7 @@ extern "C"
 void C_ZN26QMessageAuthenticationCode7addDataERK10QByteArray(void *this_, QByteArray* data) {
   ((QMessageAuthenticationCode*)this_)->addData(*data);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:64
 // [1] bool addData(class QIODevice *)
@@ -66,6 +73,7 @@ extern "C"
 bool C_ZN26QMessageAuthenticationCode7addDataEP9QIODevice(void *this_, QIODevice * device) {
   return (bool)((QMessageAuthenticationCode*)this_)->addData(device);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:66
 // [8] QByteArray result()
@@ -74,6 +82,7 @@ void* C_ZNK26QMessageAuthenticationCode6resultEv(void *this_) {
   auto rv = ((QMessageAuthenticationCode*)this_)->result();
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:68
 // [8] QByteArray hash(const class QByteArray &, const class QByteArray &, class QCryptographicHash::Algorithm)

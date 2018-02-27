@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qtcpserver.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtcpserver.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQTcpServer() {}
 // void QTcpServer(class QObject *)
 MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // void incomingConnection(qintptr)
   virtual void incomingConnection(qintptr handle) {
     int handled = 0;
@@ -26,6 +30,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
 // void addPendingConnection(class QTcpSocket *)
   virtual void addPendingConnection(QTcpSocket * socket) {
     int handled = 0;
@@ -39,6 +44,22 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qtcpserver.h:94
+// [-2] void incomingConnection(qintptr)
+extern "C"
+void C_ZN10QTcpServer18incomingConnectionEx(void *this_, qintptr handle) {
+  ((QTcpServer*)this_)->QTcpServer::incomingConnection(handle);
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qtcpserver.h:95
+// [-2] void addPendingConnection(class QTcpSocket *)
+extern "C"
+void C_ZN10QTcpServer20addPendingConnectionEP10QTcpSocket(void *this_, QTcpSocket * socket) {
+  ((QTcpServer*)this_)->QTcpServer::addPendingConnection(socket);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:59
 // [8] const QMetaObject * metaObject()
@@ -46,6 +67,7 @@ extern "C"
 void* C_ZNK10QTcpServer10metaObjectEv(void *this_) {
   return (void*)((QTcpServer*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:61
 // [-2] void QTcpServer(class QObject *)
@@ -68,6 +90,7 @@ extern "C"
 bool C_ZN10QTcpServer6listenERK12QHostAddresst(void *this_, QHostAddress* address, quint16 port) {
   return (bool)((QTcpServer*)this_)->listen(*address, port);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:65
 // [-2] void close()
@@ -75,6 +98,7 @@ extern "C"
 void C_ZN10QTcpServer5closeEv(void *this_) {
   ((QTcpServer*)this_)->close();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:67
 // [1] bool isListening()
@@ -82,6 +106,7 @@ extern "C"
 bool C_ZNK10QTcpServer11isListeningEv(void *this_) {
   return (bool)((QTcpServer*)this_)->isListening();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:69
 // [-2] void setMaxPendingConnections(int)
@@ -89,6 +114,7 @@ extern "C"
 void C_ZN10QTcpServer24setMaxPendingConnectionsEi(void *this_, int numConnections) {
   ((QTcpServer*)this_)->setMaxPendingConnections(numConnections);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:70
 // [4] int maxPendingConnections()
@@ -96,6 +122,7 @@ extern "C"
 int C_ZNK10QTcpServer21maxPendingConnectionsEv(void *this_) {
   return (int)((QTcpServer*)this_)->maxPendingConnections();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:72
 // [2] quint16 serverPort()
@@ -103,6 +130,7 @@ extern "C"
 quint16 C_ZNK10QTcpServer10serverPortEv(void *this_) {
   return (quint16)((QTcpServer*)this_)->serverPort();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:73
 // [8] QHostAddress serverAddress()
@@ -111,6 +139,7 @@ void* C_ZNK10QTcpServer13serverAddressEv(void *this_) {
   auto rv = ((QTcpServer*)this_)->serverAddress();
 return new QHostAddress(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:75
 // [8] qintptr socketDescriptor()
@@ -118,6 +147,7 @@ extern "C"
 qintptr C_ZNK10QTcpServer16socketDescriptorEv(void *this_) {
   return (qintptr)((QTcpServer*)this_)->socketDescriptor();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:76
 // [1] bool setSocketDescriptor(qintptr)
@@ -125,6 +155,7 @@ extern "C"
 bool C_ZN10QTcpServer19setSocketDescriptorEx(void *this_, qintptr socketDescriptor) {
   return (bool)((QTcpServer*)this_)->setSocketDescriptor(socketDescriptor);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:78
 // [1] bool waitForNewConnection(int, _Bool *)
@@ -132,6 +163,7 @@ extern "C"
 bool C_ZN10QTcpServer20waitForNewConnectionEiPb(void *this_, int msec, bool * timedOut) {
   return (bool)((QTcpServer*)this_)->waitForNewConnection(msec, timedOut);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:79
 // [1] bool hasPendingConnections()
@@ -139,6 +171,7 @@ extern "C"
 bool C_ZNK10QTcpServer21hasPendingConnectionsEv(void *this_) {
   return (bool)((QTcpServer*)this_)->hasPendingConnections();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:80
 // [8] QTcpSocket * nextPendingConnection()
@@ -146,6 +179,7 @@ extern "C"
 void* C_ZN10QTcpServer21nextPendingConnectionEv(void *this_) {
   return (void*)((QTcpServer*)this_)->nextPendingConnection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:82
 // [4] QAbstractSocket::SocketError serverError()
@@ -153,6 +187,7 @@ extern "C"
 QAbstractSocket::SocketError C_ZNK10QTcpServer11serverErrorEv(void *this_) {
   return (QAbstractSocket::SocketError)((QTcpServer*)this_)->serverError();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:83
 // [8] QString errorString()
@@ -161,6 +196,7 @@ void* C_ZNK10QTcpServer11errorStringEv(void *this_) {
   auto rv = ((QTcpServer*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:85
 // [-2] void pauseAccepting()
@@ -168,6 +204,7 @@ extern "C"
 void C_ZN10QTcpServer14pauseAcceptingEv(void *this_) {
   ((QTcpServer*)this_)->pauseAccepting();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:86
 // [-2] void resumeAccepting()
@@ -175,6 +212,7 @@ extern "C"
 void C_ZN10QTcpServer15resumeAcceptingEv(void *this_) {
   ((QTcpServer*)this_)->resumeAccepting();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:89
 // [-2] void setProxy(const class QNetworkProxy &)
@@ -182,6 +220,7 @@ extern "C"
 void C_ZN10QTcpServer8setProxyERK13QNetworkProxy(void *this_, QNetworkProxy* networkProxy) {
   ((QTcpServer*)this_)->setProxy(*networkProxy);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:90
 // [8] QNetworkProxy proxy()
@@ -190,6 +229,7 @@ void* C_ZNK10QTcpServer5proxyEv(void *this_) {
   auto rv = ((QTcpServer*)this_)->proxy();
 return new QNetworkProxy(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:101
 // [-2] void newConnection()
@@ -197,6 +237,7 @@ extern "C"
 void C_ZN10QTcpServer13newConnectionEv(void *this_) {
   ((QTcpServer*)this_)->newConnection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:102
 // [-2] void acceptError(class QAbstractSocket::SocketError)
@@ -204,4 +245,5 @@ extern "C"
 void C_ZN10QTcpServer11acceptErrorEN15QAbstractSocket11SocketErrorE(void *this_, QAbstractSocket::SocketError socketError) {
   ((QTcpServer*)this_)->acceptError(socketError);
 }
+
 //  main block end

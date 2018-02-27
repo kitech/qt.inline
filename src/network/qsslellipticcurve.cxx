@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsslellipticcurve.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -48,6 +51,7 @@ void* C_ZNK17QSslEllipticCurve9shortNameEv(void *this_) {
   auto rv = ((QSslEllipticCurve*)this_)->shortName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:68
 // [8] QString longName()
@@ -56,6 +60,7 @@ void* C_ZNK17QSslEllipticCurve8longNameEv(void *this_) {
   auto rv = ((QSslEllipticCurve*)this_)->longName();
 return new QString(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:70
 // [1] bool isValid()
@@ -63,6 +68,7 @@ extern "C"
 bool C_ZNK17QSslEllipticCurve7isValidEv(void *this_) {
   return (bool)((QSslEllipticCurve*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:75
 // [1] bool isTlsNamedCurve()
@@ -70,6 +76,7 @@ extern "C"
 bool C_ZNK17QSslEllipticCurve15isTlsNamedCurveEv(void *this_) {
   return (bool)((QSslEllipticCurve*)this_)->isTlsNamedCurve();
 }
+
 
 extern "C"
 void C_ZN17QSslEllipticCurveD2Ev(void *this_) {

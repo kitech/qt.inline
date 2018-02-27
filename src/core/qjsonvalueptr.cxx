@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qjsonvalue.h
+#ifndef protected
+#define protected public
+#endif
 #include <qjsonvalue.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN13QJsonValuePtrdeEv(void *this_) {
   auto& rv = ((QJsonValuePtr*)this_)->operator*();
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:230
 // [8] QJsonValue * operator->()
@@ -39,6 +43,7 @@ extern "C"
 void* C_ZN13QJsonValuePtrptEv(void *this_) {
   return (void*)((QJsonValuePtr*)this_)->operator->();
 }
+
 
 extern "C"
 void C_ZN13QJsonValuePtrD2Ev(void *this_) {

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qstring.h
+#ifndef protected
+#define protected public
+#endif
 #include <qstring.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -67,6 +70,7 @@ extern "C"
 void* C_ZNK13QLatin1String6latin1Ev(void *this_) {
   return (void*)((QLatin1String*)this_)->latin1();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:102
 // [4] int size()
@@ -74,6 +78,7 @@ extern "C"
 int C_ZNK13QLatin1String4sizeEv(void *this_) {
   return (int)((QLatin1String*)this_)->size();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:103
 // [8] const char * data()
@@ -81,6 +86,7 @@ extern "C"
 void* C_ZNK13QLatin1String4dataEv(void *this_) {
   return (void*)((QLatin1String*)this_)->data();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:105
 // [1] bool isNull()
@@ -88,6 +94,7 @@ extern "C"
 bool C_ZNK13QLatin1String6isNullEv(void *this_) {
   return (bool)((QLatin1String*)this_)->isNull();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:106
 // [1] bool isEmpty()
@@ -95,6 +102,7 @@ extern "C"
 bool C_ZNK13QLatin1String7isEmptyEv(void *this_) {
   return (bool)((QLatin1String*)this_)->isEmpty();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:108
 // [1] QLatin1Char at(int)
@@ -103,6 +111,7 @@ void C_ZNK13QLatin1String2atEi(void *this_, int i) {
   auto rv = ((QLatin1String*)this_)->at(i);
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:110
 // [1] QLatin1Char operator[](int)
@@ -111,6 +120,7 @@ void C_ZNK13QLatin1StringixEi(void *this_, int i) {
   auto rv = ((QLatin1String*)this_)->operator[](i);
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:112
 // [1] QLatin1Char front()
@@ -119,6 +129,7 @@ void C_ZNK13QLatin1String5frontEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->front();
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:113
 // [1] QLatin1Char back()
@@ -127,6 +138,7 @@ void C_ZNK13QLatin1String4backEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->back();
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:115
 // [1] bool startsWith(class QStringView, Qt::CaseSensitivity)
@@ -134,6 +146,7 @@ extern "C"
 bool C_ZNK13QLatin1String10startsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->startsWith(*s, cs);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:117
 // [1] bool startsWith(class QLatin1String, Qt::CaseSensitivity)
@@ -141,6 +154,7 @@ extern "C"
 bool C_ZNK13QLatin1String10startsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->startsWith(*s, cs);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:119
 // [1] bool startsWith(class QChar)
@@ -148,6 +162,7 @@ extern "C"
 bool C_ZNK13QLatin1String10startsWithE5QChar(void *this_, QChar* c) {
   return (bool)((QLatin1String*)this_)->startsWith(*c);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:121
 // [1] bool startsWith(class QChar, Qt::CaseSensitivity)
@@ -155,6 +170,7 @@ extern "C"
 bool C_ZNK13QLatin1String10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->startsWith(*c, cs);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:124
 // [1] bool endsWith(class QStringView, Qt::CaseSensitivity)
@@ -162,6 +178,7 @@ extern "C"
 bool C_ZNK13QLatin1String8endsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->endsWith(*s, cs);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:126
 // [1] bool endsWith(class QLatin1String, Qt::CaseSensitivity)
@@ -169,6 +186,7 @@ extern "C"
 bool C_ZNK13QLatin1String8endsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->endsWith(*s, cs);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:128
 // [1] bool endsWith(class QChar)
@@ -176,6 +194,7 @@ extern "C"
 bool C_ZNK13QLatin1String8endsWithE5QChar(void *this_, QChar* c) {
   return (bool)((QLatin1String*)this_)->endsWith(*c);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:130
 // [1] bool endsWith(class QChar, Qt::CaseSensitivity)
@@ -183,6 +202,7 @@ extern "C"
 bool C_ZNK13QLatin1String8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->endsWith(*c, cs);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:141
 // [8] QLatin1String::const_iterator begin()
@@ -191,6 +211,7 @@ void C_ZNK13QLatin1String5beginEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->begin();
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:142
 // [8] QLatin1String::const_iterator cbegin()
@@ -199,6 +220,7 @@ void C_ZNK13QLatin1String6cbeginEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->cbegin();
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:143
 // [8] QLatin1String::const_iterator end()
@@ -207,6 +229,7 @@ void C_ZNK13QLatin1String3endEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->end();
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:144
 // [8] QLatin1String::const_iterator cend()
@@ -215,6 +238,7 @@ void C_ZNK13QLatin1String4cendEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->cend();
 /*return rv;*/
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:154
 // [16] QLatin1String mid(int)
@@ -223,6 +247,7 @@ void* C_ZNK13QLatin1String3midEi(void *this_, int pos) {
   auto rv = ((QLatin1String*)this_)->mid(pos);
 return new QLatin1String(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:156
 // [16] QLatin1String mid(int, int)
@@ -231,6 +256,7 @@ void* C_ZNK13QLatin1String3midEii(void *this_, int pos, int n) {
   auto rv = ((QLatin1String*)this_)->mid(pos, n);
 return new QLatin1String(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:158
 // [16] QLatin1String left(int)
@@ -239,6 +265,7 @@ void* C_ZNK13QLatin1String4leftEi(void *this_, int n) {
   auto rv = ((QLatin1String*)this_)->left(n);
 return new QLatin1String(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:160
 // [16] QLatin1String right(int)
@@ -247,6 +274,7 @@ void* C_ZNK13QLatin1String5rightEi(void *this_, int n) {
   auto rv = ((QLatin1String*)this_)->right(n);
 return new QLatin1String(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:162
 // [16] QLatin1String chopped(int)
@@ -255,6 +283,7 @@ void* C_ZNK13QLatin1String7choppedEi(void *this_, int n) {
   auto rv = ((QLatin1String*)this_)->chopped(n);
 return new QLatin1String(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:165
 // [-2] void chop(int)
@@ -262,6 +291,7 @@ extern "C"
 void C_ZN13QLatin1String4chopEi(void *this_, int n) {
   ((QLatin1String*)this_)->chop(n);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:167
 // [-2] void truncate(int)
@@ -269,6 +299,7 @@ extern "C"
 void C_ZN13QLatin1String8truncateEi(void *this_, int n) {
   ((QLatin1String*)this_)->truncate(n);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:170
 // [16] QLatin1String trimmed()
@@ -277,6 +308,7 @@ void* C_ZNK13QLatin1String7trimmedEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->trimmed();
 return new QLatin1String(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:172
 // [1] bool operator==(const class QString &)
@@ -284,6 +316,7 @@ extern "C"
 bool C_ZNK13QLatin1StringeqERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator==(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:173
 // [1] bool operator!=(const class QString &)
@@ -291,6 +324,7 @@ extern "C"
 bool C_ZNK13QLatin1StringneERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator!=(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:174
 // [1] bool operator>(const class QString &)
@@ -298,6 +332,7 @@ extern "C"
 bool C_ZNK13QLatin1StringgtERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator>(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:175
 // [1] bool operator<(const class QString &)
@@ -305,6 +340,7 @@ extern "C"
 bool C_ZNK13QLatin1StringltERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator<(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:176
 // [1] bool operator>=(const class QString &)
@@ -312,6 +348,7 @@ extern "C"
 bool C_ZNK13QLatin1StringgeERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator>=(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:177
 // [1] bool operator<=(const class QString &)
@@ -319,6 +356,7 @@ extern "C"
 bool C_ZNK13QLatin1StringleERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator<=(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:180
 // [1] bool operator==(const char *)
@@ -326,6 +364,7 @@ extern "C"
 bool C_ZNK13QLatin1StringeqEPKc(void *this_, const char * s) {
   return (bool)((QLatin1String*)this_)->operator==(s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:181
 // [1] bool operator!=(const char *)
@@ -333,6 +372,7 @@ extern "C"
 bool C_ZNK13QLatin1StringneEPKc(void *this_, const char * s) {
   return (bool)((QLatin1String*)this_)->operator!=(s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:182
 // [1] bool operator<(const char *)
@@ -340,6 +380,7 @@ extern "C"
 bool C_ZNK13QLatin1StringltEPKc(void *this_, const char * s) {
   return (bool)((QLatin1String*)this_)->operator<(s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:183
 // [1] bool operator>(const char *)
@@ -347,6 +388,7 @@ extern "C"
 bool C_ZNK13QLatin1StringgtEPKc(void *this_, const char * s) {
   return (bool)((QLatin1String*)this_)->operator>(s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:184
 // [1] bool operator<=(const char *)
@@ -354,6 +396,7 @@ extern "C"
 bool C_ZNK13QLatin1StringleEPKc(void *this_, const char * s) {
   return (bool)((QLatin1String*)this_)->operator<=(s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:185
 // [1] bool operator>=(const char *)
@@ -361,6 +404,7 @@ extern "C"
 bool C_ZNK13QLatin1StringgeEPKc(void *this_, const char * s) {
   return (bool)((QLatin1String*)this_)->operator>=(s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:187
 // [1] bool operator==(const class QByteArray &)
@@ -368,6 +412,7 @@ extern "C"
 bool C_ZNK13QLatin1StringeqERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator==(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:188
 // [1] bool operator!=(const class QByteArray &)
@@ -375,6 +420,7 @@ extern "C"
 bool C_ZNK13QLatin1StringneERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator!=(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:189
 // [1] bool operator<(const class QByteArray &)
@@ -382,6 +428,7 @@ extern "C"
 bool C_ZNK13QLatin1StringltERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator<(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:190
 // [1] bool operator>(const class QByteArray &)
@@ -389,6 +436,7 @@ extern "C"
 bool C_ZNK13QLatin1StringgtERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator>(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:191
 // [1] bool operator<=(const class QByteArray &)
@@ -396,6 +444,7 @@ extern "C"
 bool C_ZNK13QLatin1StringleERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator<=(*s);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:192
 // [1] bool operator>=(const class QByteArray &)
@@ -403,6 +452,7 @@ extern "C"
 bool C_ZNK13QLatin1StringgeERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator>=(*s);
 }
+
 
 extern "C"
 void C_ZN13QLatin1StringD2Ev(void *this_) {

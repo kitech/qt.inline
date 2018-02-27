@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h
+#ifndef protected
+#define protected public
+#endif
 #include <qssldiffiehellmanparameters.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ void* C_ZN27QSslDiffieHellmanParametersaSERKS_(void *this_, QSslDiffieHellmanPar
   auto& rv = ((QSslDiffieHellmanParameters*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:90
 // [8] QSslDiffieHellmanParameters & operator=(class QSslDiffieHellmanParameters &&)
@@ -55,6 +59,7 @@ void* C_ZN27QSslDiffieHellmanParametersaSEOS_(void *this_, QSslDiffieHellmanPara
   auto& rv = ((QSslDiffieHellmanParameters*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:92
 // [-2] void swap(class QSslDiffieHellmanParameters &)
@@ -62,6 +67,7 @@ extern "C"
 void C_ZN27QSslDiffieHellmanParameters4swapERS_(void *this_, QSslDiffieHellmanParameters* other) {
   ((QSslDiffieHellmanParameters*)this_)->swap(*other);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:94
 // [8] QSslDiffieHellmanParameters fromEncoded(const class QByteArray &, QSsl::EncodingFormat)
@@ -85,6 +91,7 @@ extern "C"
 bool C_ZNK27QSslDiffieHellmanParameters7isEmptyEv(void *this_) {
   return (bool)((QSslDiffieHellmanParameters*)this_)->isEmpty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:98
 // [1] bool isValid()
@@ -92,6 +99,7 @@ extern "C"
 bool C_ZNK27QSslDiffieHellmanParameters7isValidEv(void *this_) {
   return (bool)((QSslDiffieHellmanParameters*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:99
 // [4] QSslDiffieHellmanParameters::Error error()
@@ -99,6 +107,7 @@ extern "C"
 QSslDiffieHellmanParameters::Error C_ZNK27QSslDiffieHellmanParameters5errorEv(void *this_) {
   return (QSslDiffieHellmanParameters::Error)((QSslDiffieHellmanParameters*)this_)->error();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:100
 // [8] QString errorString()
@@ -107,4 +116,5 @@ void* C_ZNK27QSslDiffieHellmanParameters11errorStringEv(void *this_) {
   auto rv = ((QSslDiffieHellmanParameters*)this_)->errorString();
 return new QString(rv);
 }
+
 //  main block end

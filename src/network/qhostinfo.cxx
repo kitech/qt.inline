@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qhostinfo.h
+#ifndef protected
+#define protected public
+#endif
 #include <qhostinfo.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -32,6 +35,7 @@ void* C_ZN9QHostInfoaSERKS_(void *this_, QHostInfo* d) {
   auto& rv = ((QHostInfo*)this_)->operator=(*d);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:66
 // [8] QHostInfo & operator=(class QHostInfo &&)
@@ -40,6 +44,7 @@ void* C_ZN9QHostInfoaSEOS_(void *this_, QHostInfo && other) {
   auto& rv = ((QHostInfo*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:67
 // [-2] void ~QHostInfo()
@@ -54,6 +59,7 @@ extern "C"
 void C_ZN9QHostInfo4swapERS_(void *this_, QHostInfo* other) {
   ((QHostInfo*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:71
 // [8] QString hostName()
@@ -62,6 +68,7 @@ void* C_ZNK9QHostInfo8hostNameEv(void *this_) {
   auto rv = ((QHostInfo*)this_)->hostName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:72
 // [-2] void setHostName(const class QString &)
@@ -69,6 +76,7 @@ extern "C"
 void C_ZN9QHostInfo11setHostNameERK7QString(void *this_, QString* name) {
   ((QHostInfo*)this_)->setHostName(*name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:77
 // [4] QHostInfo::HostInfoError error()
@@ -76,6 +84,7 @@ extern "C"
 QHostInfo::HostInfoError C_ZNK9QHostInfo5errorEv(void *this_) {
   return (QHostInfo::HostInfoError)((QHostInfo*)this_)->error();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:78
 // [-2] void setError(enum QHostInfo::HostInfoError)
@@ -83,6 +92,7 @@ extern "C"
 void C_ZN9QHostInfo8setErrorENS_13HostInfoErrorE(void *this_, QHostInfo::HostInfoError error) {
   ((QHostInfo*)this_)->setError(error);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:80
 // [8] QString errorString()
@@ -91,6 +101,7 @@ void* C_ZNK9QHostInfo11errorStringEv(void *this_) {
   auto rv = ((QHostInfo*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:81
 // [-2] void setErrorString(const class QString &)
@@ -98,6 +109,7 @@ extern "C"
 void C_ZN9QHostInfo14setErrorStringERK7QString(void *this_, QString* errorString) {
   ((QHostInfo*)this_)->setErrorString(*errorString);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:83
 // [-2] void setLookupId(int)
@@ -105,6 +117,7 @@ extern "C"
 void C_ZN9QHostInfo11setLookupIdEi(void *this_, int id) {
   ((QHostInfo*)this_)->setLookupId(id);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:84
 // [4] int lookupId()
@@ -112,6 +125,7 @@ extern "C"
 int C_ZNK9QHostInfo8lookupIdEv(void *this_) {
   return (int)((QHostInfo*)this_)->lookupId();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:86
 // [4] int lookupHost(const class QString &, class QObject *, const char *)

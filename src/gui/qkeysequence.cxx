@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qkeysequence.h
+#ifndef protected
+#define protected public
+#endif
 #include <qkeysequence.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -65,6 +68,7 @@ extern "C"
 int C_ZNK12QKeySequence5countEv(void *this_) {
   return (int)((QKeySequence*)this_)->count();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:164
 // [1] bool isEmpty()
@@ -72,6 +76,7 @@ extern "C"
 bool C_ZNK12QKeySequence7isEmptyEv(void *this_) {
   return (bool)((QKeySequence*)this_)->isEmpty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:172
 // [8] QString toString(enum QKeySequence::SequenceFormat)
@@ -80,6 +85,7 @@ void* C_ZNK12QKeySequence8toStringENS_14SequenceFormatE(void *this_, QKeySequenc
   auto rv = ((QKeySequence*)this_)->toString(format);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:173
 // [8] QKeySequence fromString(const class QString &, enum QKeySequence::SequenceFormat)
@@ -95,6 +101,7 @@ extern "C"
 QKeySequence::SequenceMatch C_ZNK12QKeySequence7matchesERKS_(void *this_, QKeySequence* seq) {
   return (QKeySequence::SequenceMatch)((QKeySequence*)this_)->matches(*seq);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:179
 // [8] QKeySequence mnemonic(const class QString &)
@@ -110,6 +117,7 @@ extern "C"
 int C_ZNK12QKeySequenceixEj(void *this_, uint i) {
   return (int)((QKeySequence*)this_)->operator[](i);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:188
 // [8] QKeySequence & operator=(const class QKeySequence &)
@@ -118,6 +126,7 @@ void* C_ZN12QKeySequenceaSERKS_(void *this_, QKeySequence* other) {
   auto& rv = ((QKeySequence*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:190
 // [8] QKeySequence & operator=(class QKeySequence &&)
@@ -126,6 +135,7 @@ void* C_ZN12QKeySequenceaSEOS_(void *this_, QKeySequence && other) {
   auto& rv = ((QKeySequence*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:192
 // [-2] void swap(class QKeySequence &)
@@ -133,6 +143,7 @@ extern "C"
 void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence* other) {
   ((QKeySequence*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:194
 // [1] bool operator==(const class QKeySequence &)
@@ -140,6 +151,7 @@ extern "C"
 bool C_ZNK12QKeySequenceeqERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator==(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:195
 // [1] bool operator!=(const class QKeySequence &)
@@ -147,6 +159,7 @@ extern "C"
 bool C_ZNK12QKeySequenceneERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator!=(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:197
 // [1] bool operator<(const class QKeySequence &)
@@ -154,6 +167,7 @@ extern "C"
 bool C_ZNK12QKeySequenceltERKS_(void *this_, QKeySequence* ks) {
   return (bool)((QKeySequence*)this_)->operator<(*ks);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:198
 // [1] bool operator>(const class QKeySequence &)
@@ -161,6 +175,7 @@ extern "C"
 bool C_ZNK12QKeySequencegtERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator>(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:200
 // [1] bool operator<=(const class QKeySequence &)
@@ -168,6 +183,7 @@ extern "C"
 bool C_ZNK12QKeySequenceleERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator<=(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:202
 // [1] bool operator>=(const class QKeySequence &)
@@ -175,6 +191,7 @@ extern "C"
 bool C_ZNK12QKeySequencegeERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator>=(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:205
 // [1] bool isDetached()
@@ -182,4 +199,5 @@ extern "C"
 bool C_ZNK12QKeySequence10isDetachedEv(void *this_) {
   return (bool)((QKeySequence*)this_)->isDetached();
 }
+
 //  main block end

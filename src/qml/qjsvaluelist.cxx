@@ -1,5 +1,8 @@
 
 // /usr/include/qt/QtQml/qjsvalue.h
+#ifndef protected
+#define protected public
+#endif
 #include <qjsvalue.h>
 #include <QtQml>
 #include "callback_inherit.h"

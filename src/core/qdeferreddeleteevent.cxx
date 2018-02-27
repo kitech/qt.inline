@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcoreevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcoreevent.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 int C_ZNK20QDeferredDeleteEvent9loopLevelEv(void *this_) {
   return (int)((QDeferredDeleteEvent*)this_)->loopLevel();
 }
+
 //  main block end

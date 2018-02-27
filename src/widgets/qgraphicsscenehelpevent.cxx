@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK23QGraphicsSceneHelpEvent8scenePosEv(void *this_) {
   auto rv = ((QGraphicsSceneHelpEvent*)this_)->scenePos();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:238
 // [-2] void setScenePos(const class QPointF &)
@@ -46,6 +50,7 @@ extern "C"
 void C_ZN23QGraphicsSceneHelpEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneHelpEvent*)this_)->setScenePos(*pos);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:240
 // [8] QPoint screenPos()
@@ -54,6 +59,7 @@ void* C_ZNK23QGraphicsSceneHelpEvent9screenPosEv(void *this_) {
   auto rv = ((QGraphicsSceneHelpEvent*)this_)->screenPos();
 return new QPoint(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:241
 // [-2] void setScreenPos(const class QPoint &)
@@ -61,4 +67,5 @@ extern "C"
 void C_ZN23QGraphicsSceneHelpEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
   ((QGraphicsSceneHelpEvent*)this_)->setScreenPos(*pos);
 }
+
 //  main block end

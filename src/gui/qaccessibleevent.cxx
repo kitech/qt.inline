@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
+#ifndef protected
+#define protected public
+#endif
 #include <qaccessible.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ extern "C"
 QAccessible::Event C_ZNK16QAccessibleEvent4typeEv(void *this_) {
   return (QAccessible::Event)((QAccessibleEvent*)this_)->type();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:702
 // [8] QObject * object()
@@ -54,6 +58,7 @@ extern "C"
 void* C_ZNK16QAccessibleEvent6objectEv(void *this_) {
   return (void*)((QAccessibleEvent*)this_)->object();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:703
 // [4] QAccessible::Id uniqueId()
@@ -61,6 +66,7 @@ extern "C"
 QAccessible::Id C_ZNK16QAccessibleEvent8uniqueIdEv(void *this_) {
   return (QAccessible::Id)((QAccessibleEvent*)this_)->uniqueId();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:705
 // [-2] void setChild(int)
@@ -68,6 +74,7 @@ extern "C"
 void C_ZN16QAccessibleEvent8setChildEi(void *this_, int chld) {
   ((QAccessibleEvent*)this_)->setChild(chld);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:706
 // [4] int child()
@@ -75,6 +82,7 @@ extern "C"
 int C_ZNK16QAccessibleEvent5childEv(void *this_) {
   return (int)((QAccessibleEvent*)this_)->child();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:708
 // [8] QAccessibleInterface * accessibleInterface()
@@ -82,4 +90,5 @@ extern "C"
 void* C_ZNK16QAccessibleEvent19accessibleInterfaceEv(void *this_) {
   return (void*)((QAccessibleEvent*)this_)->accessibleInterface();
 }
+
 //  main block end

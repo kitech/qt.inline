@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -47,6 +50,7 @@ extern "C"
 Qt::NativeGestureType C_ZNK19QNativeGestureEvent11gestureTypeEv(void *this_) {
   return (Qt::NativeGestureType)((QNativeGestureEvent*)this_)->gestureType();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:312
 // [8] qreal value()
@@ -54,6 +58,7 @@ extern "C"
 qreal C_ZNK19QNativeGestureEvent5valueEv(void *this_) {
   return (qreal)((QNativeGestureEvent*)this_)->value();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:315
 // [8] const QPoint pos()
@@ -62,6 +67,7 @@ void* C_ZNK19QNativeGestureEvent3posEv(void *this_) {
   auto rv = ((QNativeGestureEvent*)this_)->pos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:316
 // [8] const QPoint globalPos()
@@ -70,6 +76,7 @@ void* C_ZNK19QNativeGestureEvent9globalPosEv(void *this_) {
   auto rv = ((QNativeGestureEvent*)this_)->globalPos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:318
 // [16] const QPointF & localPos()
@@ -78,6 +85,7 @@ void* C_ZNK19QNativeGestureEvent8localPosEv(void *this_) {
   auto& rv = ((QNativeGestureEvent*)this_)->localPos();
 return new QPointF(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:319
 // [16] const QPointF & windowPos()
@@ -86,6 +94,7 @@ void* C_ZNK19QNativeGestureEvent9windowPosEv(void *this_) {
   auto& rv = ((QNativeGestureEvent*)this_)->windowPos();
 return new QPointF(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:320
 // [16] const QPointF & screenPos()
@@ -94,6 +103,7 @@ void* C_ZNK19QNativeGestureEvent9screenPosEv(void *this_) {
   auto& rv = ((QNativeGestureEvent*)this_)->screenPos();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:322
 // [8] const QTouchDevice * device()
@@ -101,4 +111,5 @@ extern "C"
 void* C_ZNK19QNativeGestureEvent6deviceEv(void *this_) {
   return (void*)((QNativeGestureEvent*)this_)->device();
 }
+
 //  main block end

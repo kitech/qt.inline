@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qtimezone.h
+#ifndef protected
+#define protected public
+#endif
 #include <qtimezone.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -66,6 +69,7 @@ void* C_ZN9QTimeZoneaSERKS_(void *this_, QTimeZone* other) {
   auto& rv = ((QTimeZone*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:103
 // [8] QTimeZone & operator=(class QTimeZone &&)
@@ -74,6 +78,7 @@ void* C_ZN9QTimeZoneaSEOS_(void *this_, QTimeZone && other) {
   auto& rv = ((QTimeZone*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:106
 // [-2] void swap(class QTimeZone &)
@@ -81,6 +86,7 @@ extern "C"
 void C_ZN9QTimeZone4swapERS_(void *this_, QTimeZone* other) {
   ((QTimeZone*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:109
 // [1] bool operator==(const class QTimeZone &)
@@ -88,6 +94,7 @@ extern "C"
 bool C_ZNK9QTimeZoneeqERKS_(void *this_, QTimeZone* other) {
   return (bool)((QTimeZone*)this_)->operator==(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:110
 // [1] bool operator!=(const class QTimeZone &)
@@ -95,6 +102,7 @@ extern "C"
 bool C_ZNK9QTimeZoneneERKS_(void *this_, QTimeZone* other) {
   return (bool)((QTimeZone*)this_)->operator!=(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:112
 // [1] bool isValid()
@@ -102,6 +110,7 @@ extern "C"
 bool C_ZNK9QTimeZone7isValidEv(void *this_) {
   return (bool)((QTimeZone*)this_)->isValid();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:114
 // [8] QByteArray id()
@@ -110,6 +119,7 @@ void* C_ZNK9QTimeZone2idEv(void *this_) {
   auto rv = ((QTimeZone*)this_)->id();
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:115
 // [4] QLocale::Country country()
@@ -117,6 +127,7 @@ extern "C"
 QLocale::Country C_ZNK9QTimeZone7countryEv(void *this_) {
   return (QLocale::Country)((QTimeZone*)this_)->country();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:116
 // [8] QString comment()
@@ -125,6 +136,7 @@ void* C_ZNK9QTimeZone7commentEv(void *this_) {
   auto rv = ((QTimeZone*)this_)->comment();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:118
 // [8] QString displayName(const class QDateTime &, class QTimeZone::NameType, const class QLocale &)
@@ -133,6 +145,7 @@ void* C_ZNK9QTimeZone11displayNameERK9QDateTimeNS_8NameTypeERK7QLocale(void *thi
   auto rv = ((QTimeZone*)this_)->displayName(*atDateTime, nameType, *locale);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:121
 // [8] QString displayName(class QTimeZone::TimeType, class QTimeZone::NameType, const class QLocale &)
@@ -141,6 +154,7 @@ void* C_ZNK9QTimeZone11displayNameENS_8TimeTypeENS_8NameTypeERK7QLocale(void *th
   auto rv = ((QTimeZone*)this_)->displayName(timeType, nameType, *locale);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:124
 // [8] QString abbreviation(const class QDateTime &)
@@ -149,6 +163,7 @@ void* C_ZNK9QTimeZone12abbreviationERK9QDateTime(void *this_, QDateTime* atDateT
   auto rv = ((QTimeZone*)this_)->abbreviation(*atDateTime);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:126
 // [4] int offsetFromUtc(const class QDateTime &)
@@ -156,6 +171,7 @@ extern "C"
 int C_ZNK9QTimeZone13offsetFromUtcERK9QDateTime(void *this_, QDateTime* atDateTime) {
   return (int)((QTimeZone*)this_)->offsetFromUtc(*atDateTime);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:127
 // [4] int standardTimeOffset(const class QDateTime &)
@@ -163,6 +179,7 @@ extern "C"
 int C_ZNK9QTimeZone18standardTimeOffsetERK9QDateTime(void *this_, QDateTime* atDateTime) {
   return (int)((QTimeZone*)this_)->standardTimeOffset(*atDateTime);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:128
 // [4] int daylightTimeOffset(const class QDateTime &)
@@ -170,6 +187,7 @@ extern "C"
 int C_ZNK9QTimeZone18daylightTimeOffsetERK9QDateTime(void *this_, QDateTime* atDateTime) {
   return (int)((QTimeZone*)this_)->daylightTimeOffset(*atDateTime);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:130
 // [1] bool hasDaylightTime()
@@ -177,6 +195,7 @@ extern "C"
 bool C_ZNK9QTimeZone15hasDaylightTimeEv(void *this_) {
   return (bool)((QTimeZone*)this_)->hasDaylightTime();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:131
 // [1] bool isDaylightTime(const class QDateTime &)
@@ -184,6 +203,7 @@ extern "C"
 bool C_ZNK9QTimeZone14isDaylightTimeERK9QDateTime(void *this_, QDateTime* atDateTime) {
   return (bool)((QTimeZone*)this_)->isDaylightTime(*atDateTime);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:133
 // [32] QTimeZone::OffsetData offsetData(const class QDateTime &)
@@ -192,6 +212,7 @@ void C_ZNK9QTimeZone10offsetDataERK9QDateTime(void *this_, QDateTime* forDateTim
   auto rv = ((QTimeZone*)this_)->offsetData(*forDateTime);
 /*return rv;*/
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:135
 // [1] bool hasTransitions()
@@ -199,6 +220,7 @@ extern "C"
 bool C_ZNK9QTimeZone14hasTransitionsEv(void *this_) {
   return (bool)((QTimeZone*)this_)->hasTransitions();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:136
 // [32] QTimeZone::OffsetData nextTransition(const class QDateTime &)
@@ -207,6 +229,7 @@ void C_ZNK9QTimeZone14nextTransitionERK9QDateTime(void *this_, QDateTime* afterD
   auto rv = ((QTimeZone*)this_)->nextTransition(*afterDateTime);
 /*return rv;*/
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:137
 // [32] QTimeZone::OffsetData previousTransition(const class QDateTime &)
@@ -215,6 +238,7 @@ void C_ZNK9QTimeZone18previousTransitionERK9QDateTime(void *this_, QDateTime* be
   auto rv = ((QTimeZone*)this_)->previousTransition(*beforeDateTime);
 /*return rv;*/
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:140
 // [8] QByteArray systemTimeZoneId()

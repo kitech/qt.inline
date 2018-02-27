@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK12QResizeEvent4sizeEv(void *this_) {
   auto& rv = ((QResizeEvent*)this_)->size();
 return new QSize(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:467
 // [8] const QSize & oldSize()
@@ -47,4 +51,5 @@ void* C_ZNK12QResizeEvent7oldSizeEv(void *this_) {
   auto& rv = ((QResizeEvent*)this_)->oldSize();
 return new QSize(rv);
 }
+
 //  main block end

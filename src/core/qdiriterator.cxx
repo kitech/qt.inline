@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qdiriterator.h
+#ifndef protected
+#define protected public
+#endif
 #include <qdiriterator.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -66,6 +69,7 @@ void* C_ZN12QDirIterator4nextEv(void *this_) {
   auto rv = ((QDirIterator*)this_)->next();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:72
 // [1] bool hasNext()
@@ -73,6 +77,7 @@ extern "C"
 bool C_ZNK12QDirIterator7hasNextEv(void *this_) {
   return (bool)((QDirIterator*)this_)->hasNext();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:74
 // [8] QString fileName()
@@ -81,6 +86,7 @@ void* C_ZNK12QDirIterator8fileNameEv(void *this_) {
   auto rv = ((QDirIterator*)this_)->fileName();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:75
 // [8] QString filePath()
@@ -89,6 +95,7 @@ void* C_ZNK12QDirIterator8filePathEv(void *this_) {
   auto rv = ((QDirIterator*)this_)->filePath();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:76
 // [8] QFileInfo fileInfo()
@@ -97,6 +104,7 @@ void* C_ZNK12QDirIterator8fileInfoEv(void *this_) {
   auto rv = ((QDirIterator*)this_)->fileInfo();
 return new QFileInfo(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:77
 // [8] QString path()
@@ -105,4 +113,5 @@ void* C_ZNK12QDirIterator4pathEv(void *this_) {
   auto rv = ((QDirIterator*)this_)->path();
 return new QString(rv);
 }
+
 //  main block end

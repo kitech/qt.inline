@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcontiguouscache.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcontiguouscache.h>
 #include <QtCore>
 #include "callback_inherit.h"

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/quuid.h
+#ifndef protected
+#define protected public
+#endif
 #include <quuid.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -77,6 +80,7 @@ void* C_ZNK5QUuid8toStringEv(void *this_) {
   auto rv = ((QUuid*)this_)->toString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:124
 // [-2] void QUuid(const class QByteArray &)
@@ -92,6 +96,7 @@ void* C_ZNK5QUuid11toByteArrayEv(void *this_) {
   auto rv = ((QUuid*)this_)->toByteArray();
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:126
 // [8] QByteArray toRfc4122()
@@ -100,6 +105,7 @@ void* C_ZNK5QUuid9toRfc4122Ev(void *this_) {
   auto rv = ((QUuid*)this_)->toRfc4122();
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:127
 // [16] QUuid fromRfc4122(const class QByteArray &)
@@ -115,6 +121,7 @@ extern "C"
 bool C_ZNK5QUuid6isNullEv(void *this_) {
   return (bool)((QUuid*)this_)->isNull();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:130
 // [1] bool operator==(const class QUuid &)
@@ -122,6 +129,7 @@ extern "C"
 bool C_ZNK5QUuideqERKS_(void *this_, QUuid* orig) {
   return (bool)((QUuid*)this_)->operator==(*orig);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:143
 // [1] bool operator!=(const class QUuid &)
@@ -129,6 +137,7 @@ extern "C"
 bool C_ZNK5QUuidneERKS_(void *this_, QUuid* orig) {
   return (bool)((QUuid*)this_)->operator!=(*orig);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:148
 // [1] bool operator<(const class QUuid &)
@@ -136,6 +145,7 @@ extern "C"
 bool C_ZNK5QUuidltERKS_(void *this_, QUuid* other) {
   return (bool)((QUuid*)this_)->operator<(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:149
 // [1] bool operator>(const class QUuid &)
@@ -143,6 +153,7 @@ extern "C"
 bool C_ZNK5QUuidgtERKS_(void *this_, QUuid* other) {
   return (bool)((QUuid*)this_)->operator>(*other);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:192
 // [16] QUuid createUuid()
@@ -190,6 +201,7 @@ extern "C"
 QUuid::Variant C_ZNK5QUuid7variantEv(void *this_) {
   return (QUuid::Variant)((QUuid*)this_)->variant();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:209
 // [4] QUuid::Version version()
@@ -197,6 +209,7 @@ extern "C"
 QUuid::Version C_ZNK5QUuid7versionEv(void *this_) {
   return (QUuid::Version)((QUuid*)this_)->version();
 }
+
 
 extern "C"
 void C_ZN5QUuidD2Ev(void *this_) {

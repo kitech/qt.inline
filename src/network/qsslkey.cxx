@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtNetwork/qsslkey.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsslkey.h>
 #include <QtNetwork>
 #include "callback_inherit.h"
@@ -50,6 +53,7 @@ void* C_ZN7QSslKeyaSEOS_(void *this_, QSslKey && other) {
   auto& rv = ((QSslKey*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:77
 // [8] QSslKey & operator=(const class QSslKey &)
@@ -58,6 +62,7 @@ void* C_ZN7QSslKeyaSERKS_(void *this_, QSslKey* other) {
   auto& rv = ((QSslKey*)this_)->operator=(*other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:78
 // [-2] void ~QSslKey()
@@ -72,6 +77,7 @@ extern "C"
 void C_ZN7QSslKey4swapERS_(void *this_, QSslKey* other) {
   ((QSslKey*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:82
 // [1] bool isNull()
@@ -79,6 +85,7 @@ extern "C"
 bool C_ZNK7QSslKey6isNullEv(void *this_) {
   return (bool)((QSslKey*)this_)->isNull();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:83
 // [-2] void clear()
@@ -86,6 +93,7 @@ extern "C"
 void C_ZN7QSslKey5clearEv(void *this_) {
   ((QSslKey*)this_)->clear();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:85
 // [4] int length()
@@ -93,6 +101,7 @@ extern "C"
 int C_ZNK7QSslKey6lengthEv(void *this_) {
   return (int)((QSslKey*)this_)->length();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:86
 // [4] QSsl::KeyType type()
@@ -100,6 +109,7 @@ extern "C"
 QSsl::KeyType C_ZNK7QSslKey4typeEv(void *this_) {
   return (QSsl::KeyType)((QSslKey*)this_)->type();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:87
 // [4] QSsl::KeyAlgorithm algorithm()
@@ -107,6 +117,7 @@ extern "C"
 QSsl::KeyAlgorithm C_ZNK7QSslKey9algorithmEv(void *this_) {
   return (QSsl::KeyAlgorithm)((QSslKey*)this_)->algorithm();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:89
 // [8] QByteArray toPem(const class QByteArray &)
@@ -115,6 +126,7 @@ void* C_ZNK7QSslKey5toPemERK10QByteArray(void *this_, QByteArray* passPhrase) {
   auto rv = ((QSslKey*)this_)->toPem(*passPhrase);
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:90
 // [8] QByteArray toDer(const class QByteArray &)
@@ -123,6 +135,7 @@ void* C_ZNK7QSslKey5toDerERK10QByteArray(void *this_, QByteArray* passPhrase) {
   auto rv = ((QSslKey*)this_)->toDer(*passPhrase);
 return new QByteArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:92
 // [8] Qt::HANDLE handle()
@@ -130,6 +143,7 @@ extern "C"
 Qt::HANDLE C_ZNK7QSslKey6handleEv(void *this_) {
   return (Qt::HANDLE)((QSslKey*)this_)->handle();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:94
 // [1] bool operator==(const class QSslKey &)
@@ -137,6 +151,7 @@ extern "C"
 bool C_ZNK7QSslKeyeqERKS_(void *this_, QSslKey* key) {
   return (bool)((QSslKey*)this_)->operator==(*key);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:95
 // [1] bool operator!=(const class QSslKey &)
@@ -144,4 +159,5 @@ extern "C"
 bool C_ZNK7QSslKeyneERKS_(void *this_, QSslKey* key) {
   return (bool)((QSslKey*)this_)->operator!=(*key);
 }
+
 //  main block end

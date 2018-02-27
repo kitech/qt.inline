@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qpictureformatplugin.h
+#ifndef protected
+#define protected public
+#endif
 #include <qpictureformatplugin.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK20QPictureFormatPlugin10metaObjectEv(void *this_) {
   return (void*)((QPictureFormatPlugin*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpictureformatplugin.h:63
 // [-2] void QPictureFormatPlugin(class QObject *)
@@ -45,6 +49,7 @@ extern "C"
 bool C_ZN20QPictureFormatPlugin11loadPictureERK7QStringS2_P8QPicture(void *this_, QString* format, QString* filename, QPicture * pic) {
   return (bool)((QPictureFormatPlugin*)this_)->loadPicture(*format, *filename, pic);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpictureformatplugin.h:67
 // [1] bool savePicture(const class QString &, const class QString &, const class QPicture &)
@@ -52,6 +57,7 @@ extern "C"
 bool C_ZN20QPictureFormatPlugin11savePictureERK7QStringS2_RK8QPicture(void *this_, QString* format, QString* filename, QPicture* pic) {
   return (bool)((QPictureFormatPlugin*)this_)->savePicture(*format, *filename, *pic);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpictureformatplugin.h:68
 // [1] bool installIOHandler(const class QString &)
@@ -59,4 +65,5 @@ extern "C"
 bool C_ZN20QPictureFormatPlugin16installIOHandlerERK7QString(void *this_, QString* format) {
   return (bool)((QPictureFormatPlugin*)this_)->installIOHandler(*format);
 }
+
 //  main block end

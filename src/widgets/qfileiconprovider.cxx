@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qfileiconprovider.h
+#ifndef protected
+#define protected public
+#endif
 #include <qfileiconprovider.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK17QFileIconProvider4iconENS_8IconTypeE(void *this_, QFileIconProvider
   auto rv = ((QFileIconProvider*)this_)->icon(type_);
 return new QIcon(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:66
 // [8] QIcon icon(const class QFileInfo &)
@@ -47,6 +51,7 @@ void* C_ZNK17QFileIconProvider4iconERK9QFileInfo(void *this_, QFileInfo* info) {
   auto rv = ((QFileIconProvider*)this_)->icon(*info);
 return new QIcon(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:67
 // [8] QString type(const class QFileInfo &)
@@ -55,6 +60,7 @@ void* C_ZNK17QFileIconProvider4typeERK9QFileInfo(void *this_, QFileInfo* info) {
   auto rv = ((QFileIconProvider*)this_)->type(*info);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:69
 // [-2] void setOptions(QFileIconProvider::Options)
@@ -62,6 +68,7 @@ extern "C"
 void C_ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE(void *this_, QFlags<QFileIconProvider::Option> options) {
   ((QFileIconProvider*)this_)->setOptions(options);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:70
 // [4] QFileIconProvider::Options options()
@@ -70,4 +77,5 @@ QFileIconProvider::Options* C_ZNK17QFileIconProvider7optionsEv(void *this_) {
   auto rv = ((QFileIconProvider*)this_)->options();
 return new QFileIconProvider::Options(rv);
 }
+
 //  main block end

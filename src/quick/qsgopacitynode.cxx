@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qsgnode.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsgnode.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void C_ZN14QSGOpacityNode10setOpacityEd(void *this_, qreal opacity) {
   ((QSGOpacityNode*)this_)->setOpacity(opacity);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:323
 // [8] qreal opacity()
@@ -45,6 +49,7 @@ extern "C"
 qreal C_ZNK14QSGOpacityNode7opacityEv(void *this_) {
   return (qreal)((QSGOpacityNode*)this_)->opacity();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:325
 // [-2] void setCombinedOpacity(qreal)
@@ -52,6 +57,7 @@ extern "C"
 void C_ZN14QSGOpacityNode18setCombinedOpacityEd(void *this_, qreal opacity) {
   ((QSGOpacityNode*)this_)->setCombinedOpacity(opacity);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:326
 // [8] qreal combinedOpacity()
@@ -59,6 +65,7 @@ extern "C"
 qreal C_ZNK14QSGOpacityNode15combinedOpacityEv(void *this_) {
   return (qreal)((QSGOpacityNode*)this_)->combinedOpacity();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:328
 // [1] bool isSubtreeBlocked()
@@ -66,4 +73,5 @@ extern "C"
 bool C_ZNK14QSGOpacityNode16isSubtreeBlockedEv(void *this_) {
   return (bool)((QSGOpacityNode*)this_)->isSubtreeBlocked();
 }
+
 //  main block end

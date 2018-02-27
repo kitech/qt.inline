@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQuick/qquickitem.h
+#ifndef protected
+#define protected public
+#endif
 #include <qquickitem.h>
 #include <QtQuick>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQQuickTransform() {}
 // void QQuickTransform(class QObject *)
 MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
+// Protected Visibility=Default Availability=Available
 // void update()
   virtual void update() {
     int handled = 0;
@@ -28,6 +32,14 @@ MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
 
 };
 
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:71
+// [-2] void update()
+extern "C"
+void C_ZN15QQuickTransform6updateEv(void *this_) {
+  ((QQuickTransform*)this_)->QQuickTransform::update();
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:60
 // [8] const QMetaObject * metaObject()
@@ -35,6 +47,7 @@ extern "C"
 void* C_ZNK15QQuickTransform10metaObjectEv(void *this_) {
   return (void*)((QQuickTransform*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:62
 // [-2] void QQuickTransform(class QObject *)
@@ -57,6 +70,7 @@ extern "C"
 void C_ZN15QQuickTransform12appendToItemEP10QQuickItem(void *this_, QQuickItem * arg0) {
   ((QQuickTransform*)this_)->appendToItem(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:66
 // [-2] void prependToItem(class QQuickItem *)
@@ -64,6 +78,7 @@ extern "C"
 void C_ZN15QQuickTransform13prependToItemEP10QQuickItem(void *this_, QQuickItem * arg0) {
   ((QQuickTransform*)this_)->prependToItem(arg0);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:68
 // [-2] void applyTo(class QMatrix4x4 *)
@@ -71,4 +86,5 @@ extern "C"
 void C_ZNK15QQuickTransform7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
   ((QQuickTransform*)this_)->applyTo(matrix);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qsocketnotifier.h
+#ifndef protected
+#define protected public
+#endif
 #include <qsocketnotifier.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQSocketNotifier() {}
 // void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
 MyQSocketNotifier(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) : QSocketNotifier(socket, arg1, parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -29,6 +33,14 @@ MyQSocketNotifier(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) 
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsocketnotifier.h:71
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN15QSocketNotifier5eventEP6QEvent(void *this_, QEvent * arg0) {
+  return (bool)((QSocketNotifier*)this_)->QSocketNotifier::event(arg0);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:50
 // [8] const QMetaObject * metaObject()
@@ -36,6 +48,7 @@ extern "C"
 void* C_ZNK15QSocketNotifier10metaObjectEv(void *this_) {
   return (void*)((QSocketNotifier*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:56
 // [-2] void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
@@ -58,6 +71,7 @@ extern "C"
 qintptr C_ZNK15QSocketNotifier6socketEv(void *this_) {
   return (qintptr)((QSocketNotifier*)this_)->socket();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:60
 // [4] QSocketNotifier::Type type()
@@ -65,6 +79,7 @@ extern "C"
 QSocketNotifier::Type C_ZNK15QSocketNotifier4typeEv(void *this_) {
   return (QSocketNotifier::Type)((QSocketNotifier*)this_)->type();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:62
 // [1] bool isEnabled()
@@ -72,6 +87,7 @@ extern "C"
 bool C_ZNK15QSocketNotifier9isEnabledEv(void *this_) {
   return (bool)((QSocketNotifier*)this_)->isEnabled();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:65
 // [-2] void setEnabled(_Bool)
@@ -79,4 +95,5 @@ extern "C"
 void C_ZN15QSocketNotifier10setEnabledEb(void *this_, bool arg0) {
   ((QSocketNotifier*)this_)->setEnabled(arg0);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qguiapplication.h
+#ifndef protected
+#define protected public
+#endif
 #include <qguiapplication.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQGuiApplication() {}
 // void QGuiApplication(int &, char **, int)
 MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, argv, arg2) {}
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
@@ -29,6 +33,14 @@ MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, arg
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:192
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN15QGuiApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
+  return (bool)((QGuiApplication*)this_)->QGuiApplication::event(arg0);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:74
 // [8] const QMetaObject * metaObject()
@@ -36,6 +48,7 @@ extern "C"
 void* C_ZNK15QGuiApplication10metaObjectEv(void *this_) {
   return (void*)((QGuiApplication*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:87
 // [-2] void QGuiApplication(int &, char **, int)
@@ -169,6 +182,7 @@ extern "C"
 qreal C_ZNK15QGuiApplication16devicePixelRatioEv(void *this_) {
   return (qreal)((QGuiApplication*)this_)->devicePixelRatio();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:118
 // [8] QCursor * overrideCursor()
@@ -354,6 +368,7 @@ extern "C"
 bool C_ZN15QGuiApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QGuiApplication*)this_)->notify(arg0, arg1);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:164
 // [1] bool isSessionRestored()
@@ -361,6 +376,7 @@ extern "C"
 bool C_ZNK15QGuiApplication17isSessionRestoredEv(void *this_) {
   return (bool)((QGuiApplication*)this_)->isSessionRestored();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:165
 // [8] QString sessionId()
@@ -369,6 +385,7 @@ void* C_ZNK15QGuiApplication9sessionIdEv(void *this_) {
   auto rv = ((QGuiApplication*)this_)->sessionId();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:166
 // [8] QString sessionKey()
@@ -377,6 +394,7 @@ void* C_ZNK15QGuiApplication10sessionKeyEv(void *this_) {
   auto rv = ((QGuiApplication*)this_)->sessionKey();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:167
 // [1] bool isSavingSession()
@@ -384,6 +402,7 @@ extern "C"
 bool C_ZNK15QGuiApplication15isSavingSessionEv(void *this_) {
   return (bool)((QGuiApplication*)this_)->isSavingSession();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:169
 // [1] bool isFallbackSessionManagementEnabled()
@@ -412,6 +431,7 @@ extern "C"
 void C_ZN15QGuiApplication19fontDatabaseChangedEv(void *this_) {
   ((QGuiApplication*)this_)->fontDatabaseChanged();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:176
 // [-2] void screenAdded(class QScreen *)
@@ -419,6 +439,7 @@ extern "C"
 void C_ZN15QGuiApplication11screenAddedEP7QScreen(void *this_, QScreen * screen) {
   ((QGuiApplication*)this_)->screenAdded(screen);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:177
 // [-2] void screenRemoved(class QScreen *)
@@ -426,6 +447,7 @@ extern "C"
 void C_ZN15QGuiApplication13screenRemovedEP7QScreen(void *this_, QScreen * screen) {
   ((QGuiApplication*)this_)->screenRemoved(screen);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:178
 // [-2] void primaryScreenChanged(class QScreen *)
@@ -433,6 +455,7 @@ extern "C"
 void C_ZN15QGuiApplication20primaryScreenChangedEP7QScreen(void *this_, QScreen * screen) {
   ((QGuiApplication*)this_)->primaryScreenChanged(screen);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:179
 // [-2] void lastWindowClosed()
@@ -440,6 +463,7 @@ extern "C"
 void C_ZN15QGuiApplication16lastWindowClosedEv(void *this_) {
   ((QGuiApplication*)this_)->lastWindowClosed();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:180
 // [-2] void focusObjectChanged(class QObject *)
@@ -447,6 +471,7 @@ extern "C"
 void C_ZN15QGuiApplication18focusObjectChangedEP7QObject(void *this_, QObject * focusObject) {
   ((QGuiApplication*)this_)->focusObjectChanged(focusObject);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:181
 // [-2] void focusWindowChanged(class QWindow *)
@@ -454,6 +479,7 @@ extern "C"
 void C_ZN15QGuiApplication18focusWindowChangedEP7QWindow(void *this_, QWindow * focusWindow) {
   ((QGuiApplication*)this_)->focusWindowChanged(focusWindow);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:182
 // [-2] void applicationStateChanged(Qt::ApplicationState)
@@ -461,6 +487,7 @@ extern "C"
 void C_ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(void *this_, Qt::ApplicationState state) {
   ((QGuiApplication*)this_)->applicationStateChanged(state);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:183
 // [-2] void layoutDirectionChanged(Qt::LayoutDirection)
@@ -468,6 +495,7 @@ extern "C"
 void C_ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection direction) {
   ((QGuiApplication*)this_)->layoutDirectionChanged(direction);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:185
 // [-2] void commitDataRequest(class QSessionManager &)
@@ -475,6 +503,7 @@ extern "C"
 void C_ZN15QGuiApplication17commitDataRequestER15QSessionManager(void *this_, QSessionManager* sessionManager) {
   ((QGuiApplication*)this_)->commitDataRequest(*sessionManager);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:186
 // [-2] void saveStateRequest(class QSessionManager &)
@@ -482,6 +511,7 @@ extern "C"
 void C_ZN15QGuiApplication16saveStateRequestER15QSessionManager(void *this_, QSessionManager* sessionManager) {
   ((QGuiApplication*)this_)->saveStateRequest(*sessionManager);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:188
 // [-2] void paletteChanged(const class QPalette &)
@@ -489,6 +519,7 @@ extern "C"
 void C_ZN15QGuiApplication14paletteChangedERK8QPalette(void *this_, QPalette* pal) {
   ((QGuiApplication*)this_)->paletteChanged(*pal);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:189
 // [-2] void applicationDisplayNameChanged()
@@ -496,4 +527,5 @@ extern "C"
 void C_ZN15QGuiApplication29applicationDisplayNameChangedEv(void *this_) {
   ((QGuiApplication*)this_)->applicationDisplayNameChanged();
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qwhatsthis.h
+#ifndef protected
+#define protected public
+#endif
 #include <qwhatsthis.h>
 #include <QtWidgets>
 #include "callback_inherit.h"

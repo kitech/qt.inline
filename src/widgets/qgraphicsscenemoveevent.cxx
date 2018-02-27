@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK23QGraphicsSceneMoveEvent6oldPosEv(void *this_) {
   auto rv = ((QGraphicsSceneMoveEvent*)this_)->oldPos();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:317
 // [-2] void setOldPos(const class QPointF &)
@@ -46,6 +50,7 @@ extern "C"
 void C_ZN23QGraphicsSceneMoveEvent9setOldPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMoveEvent*)this_)->setOldPos(*pos);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:319
 // [16] QPointF newPos()
@@ -54,6 +59,7 @@ void* C_ZNK23QGraphicsSceneMoveEvent6newPosEv(void *this_) {
   auto rv = ((QGraphicsSceneMoveEvent*)this_)->newPos();
 return new QPointF(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:320
 // [-2] void setNewPos(const class QPointF &)
@@ -61,4 +67,5 @@ extern "C"
 void C_ZN23QGraphicsSceneMoveEvent9setNewPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMoveEvent*)this_)->setNewPos(*pos);
 }
+
 //  main block end

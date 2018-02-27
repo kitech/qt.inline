@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcoreevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcoreevent.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -39,4 +42,5 @@ void* C_ZNK27QDynamicPropertyChangeEvent12propertyNameEv(void *this_) {
   auto rv = ((QDynamicPropertyChangeEvent*)this_)->propertyName();
 return new QByteArray(rv);
 }
+
 //  main block end

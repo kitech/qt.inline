@@ -1,5 +1,8 @@
 
 // /usr/include/qt/QtCore/qabstractitemmodel.h
+#ifndef protected
+#define protected public
+#endif
 #include <qabstractitemmodel.h>
 #include <QtCore>
 #include "callback_inherit.h"

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qlogging.h
+#ifndef protected
+#define protected public
+#endif
 #include <qlogging.h>
 #include <QtCore>
 #include "callback_inherit.h"

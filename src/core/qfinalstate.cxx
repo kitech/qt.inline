@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qfinalstate.h
+#ifndef protected
+#define protected public
+#endif
 #include <qfinalstate.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -15,6 +18,7 @@ public:
   virtual ~MyQFinalState() {}
 // void QFinalState(class QState *)
 MyQFinalState(QState * parent) : QFinalState(parent) {}
+// Protected virtual Visibility=Default Availability=Available
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
@@ -26,6 +30,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
@@ -37,6 +42,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
@@ -51,6 +57,30 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
 
 };
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfinalstate.h:58
+// [-2] void onEntry(class QEvent *)
+extern "C"
+void C_ZN11QFinalState7onEntryEP6QEvent(void *this_, QEvent * event) {
+  ((QFinalState*)this_)->QFinalState::onEntry(event);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfinalstate.h:59
+// [-2] void onExit(class QEvent *)
+extern "C"
+void C_ZN11QFinalState6onExitEP6QEvent(void *this_, QEvent * event) {
+  ((QFinalState*)this_)->QFinalState::onExit(event);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfinalstate.h:61
+// [1] bool event(class QEvent *)
+extern "C"
+bool C_ZN11QFinalState5eventEP6QEvent(void *this_, QEvent * e) {
+  return (bool)((QFinalState*)this_)->QFinalState::event(e);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:52
 // [8] const QMetaObject * metaObject()
@@ -58,6 +88,7 @@ extern "C"
 void* C_ZNK11QFinalState10metaObjectEv(void *this_) {
   return (void*)((QFinalState*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:54
 // [-2] void QFinalState(class QState *)

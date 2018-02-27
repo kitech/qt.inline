@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qhashfunctions.h
+#ifndef protected
+#define protected public
+#endif
 #include <qhashfunctions.h>
 #include <QtCore>
 #include "callback_inherit.h"

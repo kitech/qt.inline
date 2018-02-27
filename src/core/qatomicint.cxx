@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qatomic.h
+#ifndef protected
+#define protected public
+#endif
 #include <qatomic.h>
 #include <QtCore>
 #include "callback_inherit.h"

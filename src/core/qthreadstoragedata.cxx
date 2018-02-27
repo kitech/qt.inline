@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qthreadstorage.h
+#ifndef protected
+#define protected public
+#endif
 #include <qthreadstorage.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -29,6 +32,7 @@ extern "C"
 void* C_ZNK18QThreadStorageData3getEv(void *this_) {
   return (void*)((QThreadStorageData*)this_)->get();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:57
 // [8] void ** set(void *)
@@ -36,6 +40,7 @@ extern "C"
 void* C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
   return (void*)((QThreadStorageData*)this_)->set(p);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:59
 // [-2] void finish(void **)

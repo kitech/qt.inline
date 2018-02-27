@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qcursor.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcursor.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -66,6 +69,7 @@ void* C_ZN7QCursoraSERKS_(void *this_, QCursor* cursor) {
   auto& rv = ((QCursor*)this_)->operator=(*cursor);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:91
 // [8] QCursor & operator=(class QCursor &&)
@@ -74,6 +78,7 @@ void* C_ZN7QCursoraSEOS_(void *this_, QCursor && other) {
   auto& rv = ((QCursor*)this_)->operator=(other);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:95
 // [-2] void swap(class QCursor &)
@@ -81,6 +86,7 @@ extern "C"
 void C_ZN7QCursor4swapERS_(void *this_, QCursor* other) {
   ((QCursor*)this_)->swap(*other);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:99
 // [4] Qt::CursorShape shape()
@@ -88,6 +94,7 @@ extern "C"
 Qt::CursorShape C_ZNK7QCursor5shapeEv(void *this_) {
   return (Qt::CursorShape)((QCursor*)this_)->shape();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:100
 // [-2] void setShape(Qt::CursorShape)
@@ -95,6 +102,7 @@ extern "C"
 void C_ZN7QCursor8setShapeEN2Qt11CursorShapeE(void *this_, Qt::CursorShape newShape) {
   ((QCursor*)this_)->setShape(newShape);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:102
 // [8] const QBitmap * bitmap()
@@ -102,6 +110,7 @@ extern "C"
 void* C_ZNK7QCursor6bitmapEv(void *this_) {
   return (void*)((QCursor*)this_)->bitmap();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:103
 // [8] const QBitmap * mask()
@@ -109,6 +118,7 @@ extern "C"
 void* C_ZNK7QCursor4maskEv(void *this_) {
   return (void*)((QCursor*)this_)->mask();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:104
 // [32] QPixmap pixmap()
@@ -117,6 +127,7 @@ void* C_ZNK7QCursor6pixmapEv(void *this_) {
   auto rv = ((QCursor*)this_)->pixmap();
 return new QPixmap(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:105
 // [8] QPoint hotSpot()
@@ -125,6 +136,7 @@ void* C_ZNK7QCursor7hotSpotEv(void *this_) {
   auto rv = ((QCursor*)this_)->hotSpot();
 return new QPoint(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:107
 // [8] QPoint pos()

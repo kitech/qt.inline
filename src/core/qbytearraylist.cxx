@@ -1,5 +1,8 @@
 
 // /usr/include/qt/QtCore/qbytearray.h
+#ifndef protected
+#define protected public
+#endif
 #include <qbytearray.h>
 #include <QtCore>
 #include "callback_inherit.h"

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qvalidator.h
+#ifndef protected
+#define protected public
+#endif
 #include <qvalidator.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -26,6 +29,7 @@ extern "C"
 void* C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
   return (void*)((QRegularExpressionValidator*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:207
 // [-2] void QRegularExpressionValidator(class QObject *)
@@ -54,6 +58,7 @@ extern "C"
 QValidator::State C_ZNK27QRegularExpressionValidator8validateER7QStringRi(void *this_, QString* input, int & pos) {
   return (QValidator::State)((QRegularExpressionValidator*)this_)->validate(*input, pos);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:213
 // [8] QRegularExpression regularExpression()
@@ -62,6 +67,7 @@ void* C_ZNK27QRegularExpressionValidator17regularExpressionEv(void *this_) {
   auto rv = ((QRegularExpressionValidator*)this_)->regularExpression();
 return new QRegularExpression(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:216
 // [-2] void setRegularExpression(const class QRegularExpression &)
@@ -69,6 +75,7 @@ extern "C"
 void C_ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpression(void *this_, QRegularExpression* re) {
   ((QRegularExpressionValidator*)this_)->setRegularExpression(*re);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:219
 // [-2] void regularExpressionChanged(const class QRegularExpression &)
@@ -76,4 +83,5 @@ extern "C"
 void C_ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(void *this_, QRegularExpression* re) {
   ((QRegularExpressionValidator*)this_)->regularExpressionChanged(*re);
 }
+
 //  main block end

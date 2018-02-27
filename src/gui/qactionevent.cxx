@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 void* C_ZNK12QActionEvent6actionEv(void *this_) {
   return (void*)((QActionEvent*)this_)->action();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:731
 // [8] QAction * before()
@@ -45,4 +49,5 @@ extern "C"
 void* C_ZNK12QActionEvent6beforeEv(void *this_) {
   return (void*)((QActionEvent*)this_)->before();
 }
+
 //  main block end

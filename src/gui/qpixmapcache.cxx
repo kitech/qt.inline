@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qpixmapcache.h
+#ifndef protected
+#define protected public
+#endif
 #include <qpixmapcache.h>
 #include <QtGui>
 #include "callback_inherit.h"

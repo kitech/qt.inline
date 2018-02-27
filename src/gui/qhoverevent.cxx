@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK11QHoverEvent3posEv(void *this_) {
   auto rv = ((QHoverEvent*)this_)->pos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:162
 // [8] QPoint oldPos()
@@ -47,6 +51,7 @@ void* C_ZNK11QHoverEvent6oldPosEv(void *this_) {
   auto rv = ((QHoverEvent*)this_)->oldPos();
 return new QPoint(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:165
 // [16] const QPointF & posF()
@@ -55,6 +60,7 @@ void* C_ZNK11QHoverEvent4posFEv(void *this_) {
   auto& rv = ((QHoverEvent*)this_)->posF();
 return new QPointF(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:166
 // [16] const QPointF & oldPosF()
@@ -63,4 +69,5 @@ void* C_ZNK11QHoverEvent7oldPosFEv(void *this_) {
   auto& rv = ((QHoverEvent*)this_)->oldPosF();
 return new QPointF(rv);
 }
+
 //  main block end

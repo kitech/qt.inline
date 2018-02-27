@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlextensionplugin.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlextensionplugin.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -24,6 +27,7 @@ extern "C"
 void* C_ZNK19QQmlExtensionPlugin10metaObjectEv(void *this_) {
   return (void*)((QQmlExtensionPlugin*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:61
 // [-2] void QQmlExtensionPlugin(class QObject *)
@@ -46,6 +50,7 @@ void* C_ZNK19QQmlExtensionPlugin7baseUrlEv(void *this_) {
   auto rv = ((QQmlExtensionPlugin*)this_)->baseUrl();
 return new QUrl(rv);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:66
 // [-2] void registerTypes(const char *)
@@ -53,6 +58,7 @@ extern "C"
 void C_ZN19QQmlExtensionPlugin13registerTypesEPKc(void *this_, const char * uri) {
   ((QQmlExtensionPlugin*)this_)->registerTypes(uri);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:67
 // [-2] void initializeEngine(class QQmlEngine *, const char *)
@@ -60,4 +66,5 @@ extern "C"
 void C_ZN19QQmlExtensionPlugin16initializeEngineEP10QQmlEnginePKc(void *this_, QQmlEngine * engine, const char * uri) {
   ((QQmlExtensionPlugin*)this_)->initializeEngine(engine, uri);
 }
+
 //  main block end

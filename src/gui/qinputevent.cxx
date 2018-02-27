@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 Qt::KeyboardModifiers C_ZNK11QInputEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QInputEvent*)this_)->modifiers();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:74
 // [-2] void setModifiers(Qt::KeyboardModifiers)
@@ -45,6 +49,7 @@ extern "C"
 void C_ZN11QInputEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> amodifiers) {
   ((QInputEvent*)this_)->setModifiers(amodifiers);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:75
 // [8] ulong timestamp()
@@ -52,6 +57,7 @@ extern "C"
 ulong C_ZNK11QInputEvent9timestampEv(void *this_) {
   return (ulong)((QInputEvent*)this_)->timestamp();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:76
 // [-2] void setTimestamp(ulong)
@@ -59,4 +65,5 @@ extern "C"
 void C_ZN11QInputEvent12setTimestampEm(void *this_, ulong atimestamp) {
   ((QInputEvent*)this_)->setTimestamp(atimestamp);
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -39,4 +42,5 @@ void* C_ZNK12QExposeEvent6regionEv(void *this_) {
   auto& rv = ((QExposeEvent*)this_)->region();
 return new QRegion(rv);
 }
+
 //  main block end

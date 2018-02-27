@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qchar.h
+#ifndef protected
+#define protected public
+#endif
 #include <qchar.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -31,6 +34,7 @@ extern "C"
 char C_ZNK11QLatin1Char8toLatin1Ev(void *this_) {
   return (char)((QLatin1Char*)this_)->toLatin1();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:55
 // [2] ushort unicode()
@@ -38,6 +42,7 @@ extern "C"
 ushort C_ZNK11QLatin1Char7unicodeEv(void *this_) {
   return (ushort)((QLatin1Char*)this_)->unicode();
 }
+
 
 extern "C"
 void C_ZN11QLatin1CharD2Ev(void *this_) {

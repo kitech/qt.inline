@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtQml/qqmlcomponent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qqmlcomponent.h>
 #include <QtQml>
 #include "callback_inherit.h"
@@ -34,6 +37,7 @@ extern "C"
 void* C_ZNK13QQmlComponent10metaObjectEv(void *this_) {
   return (void*)((QQmlComponent*)this_)->metaObject();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:80
 // [-2] void QQmlComponent(class QObject *)
@@ -90,6 +94,7 @@ extern "C"
 QQmlComponent::Status C_ZNK13QQmlComponent6statusEv(void *this_) {
   return (QQmlComponent::Status)((QQmlComponent*)this_)->status();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:92
 // [1] bool isNull()
@@ -97,6 +102,7 @@ extern "C"
 bool C_ZNK13QQmlComponent6isNullEv(void *this_) {
   return (bool)((QQmlComponent*)this_)->isNull();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:93
 // [1] bool isReady()
@@ -104,6 +110,7 @@ extern "C"
 bool C_ZNK13QQmlComponent7isReadyEv(void *this_) {
   return (bool)((QQmlComponent*)this_)->isReady();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:94
 // [1] bool isError()
@@ -111,6 +118,7 @@ extern "C"
 bool C_ZNK13QQmlComponent7isErrorEv(void *this_) {
   return (bool)((QQmlComponent*)this_)->isError();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:95
 // [1] bool isLoading()
@@ -118,6 +126,7 @@ extern "C"
 bool C_ZNK13QQmlComponent9isLoadingEv(void *this_) {
   return (bool)((QQmlComponent*)this_)->isLoading();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:98
 // [8] QString errorString()
@@ -126,6 +135,7 @@ void* C_ZNK13QQmlComponent11errorStringEv(void *this_) {
   auto rv = ((QQmlComponent*)this_)->errorString();
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:100
 // [8] qreal progress()
@@ -133,6 +143,7 @@ extern "C"
 qreal C_ZNK13QQmlComponent8progressEv(void *this_) {
   return (qreal)((QQmlComponent*)this_)->progress();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:102
 // [8] QUrl url()
@@ -141,6 +152,7 @@ void* C_ZNK13QQmlComponent3urlEv(void *this_) {
   auto rv = ((QQmlComponent*)this_)->url();
 return new QUrl(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:104
 // [8] QObject * create(class QQmlContext *)
@@ -148,6 +160,7 @@ extern "C"
 void* C_ZN13QQmlComponent6createEP11QQmlContext(void *this_, QQmlContext * context) {
   return (void*)((QQmlComponent*)this_)->create(context);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:105
 // [8] QObject * beginCreate(class QQmlContext *)
@@ -155,6 +168,7 @@ extern "C"
 void* C_ZN13QQmlComponent11beginCreateEP11QQmlContext(void *this_, QQmlContext * arg0) {
   return (void*)((QQmlComponent*)this_)->beginCreate(arg0);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:106
 // [-2] void completeCreate()
@@ -162,6 +176,7 @@ extern "C"
 void C_ZN13QQmlComponent14completeCreateEv(void *this_) {
   ((QQmlComponent*)this_)->completeCreate();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:108
 // [-2] void create(class QQmlIncubator &, class QQmlContext *, class QQmlContext *)
@@ -169,6 +184,7 @@ extern "C"
 void C_ZN13QQmlComponent6createER13QQmlIncubatorP11QQmlContextS3_(void *this_, QQmlIncubator* arg0, QQmlContext * context, QQmlContext * forContext) {
   ((QQmlComponent*)this_)->create(*arg0, context, forContext);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:111
 // [8] QQmlContext * creationContext()
@@ -176,6 +192,7 @@ extern "C"
 void* C_ZNK13QQmlComponent15creationContextEv(void *this_) {
   return (void*)((QQmlComponent*)this_)->creationContext();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:113
 // [8] QQmlComponentAttached * qmlAttachedProperties(class QObject *)
@@ -190,6 +207,7 @@ extern "C"
 void C_ZN13QQmlComponent7loadUrlERK4QUrl(void *this_, QUrl* url) {
   ((QQmlComponent*)this_)->loadUrl(*url);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:117
 // [-2] void loadUrl(const class QUrl &, enum QQmlComponent::CompilationMode)
@@ -197,6 +215,7 @@ extern "C"
 void C_ZN13QQmlComponent7loadUrlERK4QUrlNS_15CompilationModeE(void *this_, QUrl* url, QQmlComponent::CompilationMode mode) {
   ((QQmlComponent*)this_)->loadUrl(*url, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:118
 // [-2] void setData(const class QByteArray &, const class QUrl &)
@@ -204,6 +223,7 @@ extern "C"
 void C_ZN13QQmlComponent7setDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* arg0, QUrl* baseUrl) {
   ((QQmlComponent*)this_)->setData(*arg0, *baseUrl);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:121
 // [-2] void statusChanged(class QQmlComponent::Status)
@@ -211,6 +231,7 @@ extern "C"
 void C_ZN13QQmlComponent13statusChangedENS_6StatusE(void *this_, QQmlComponent::Status arg0) {
   ((QQmlComponent*)this_)->statusChanged(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:122
 // [-2] void progressChanged(qreal)
@@ -218,4 +239,5 @@ extern "C"
 void C_ZN13QQmlComponent15progressChangedEd(void *this_, qreal arg0) {
   ((QQmlComponent*)this_)->progressChanged(arg0);
 }
+
 //  main block end

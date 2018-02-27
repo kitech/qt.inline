@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qcoreevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qcoreevent.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -38,4 +41,5 @@ extern "C"
 int C_ZNK11QTimerEvent7timerIdEv(void *this_) {
   return (int)((QTimerEvent*)this_)->timerId();
 }
+
 //  main block end

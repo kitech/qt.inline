@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qrandom.h
+#ifndef protected
+#define protected public
+#endif
 #include <qrandom.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -16,7 +19,7 @@ public:
 // void QRandomGenerator64(quint32)
 MyQRandomGenerator64(quint32 seedValue) : QRandomGenerator64(seedValue) {}
 // void QRandomGenerator64(const quint32 *, qsizetype)
-MyQRandomGenerator64(const quint32 * seedBuffer, qsizetype len) : QRandomGenerator64(seedBuffer, len) {}
+MyQRandomGenerator64(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerator64(seedBuffer, len_) {}
 // void QRandomGenerator64(const quint32 *, const quint32 *)
 MyQRandomGenerator64(const quint32 * begin, const quint32 * end) : QRandomGenerator64(begin, end) {}
 // void QRandomGenerator64(const class QRandomGenerator &)
@@ -24,84 +27,87 @@ MyQRandomGenerator64(const QRandomGenerator & other) : QRandomGenerator64(other)
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:209
+// /usr/include/qt/QtCore/qrandom.h:216
 // [8] quint64 generate()
 extern "C"
 quint64 C_ZN18QRandomGenerator648generateEv(void *this_) {
   return (quint64)((QRandomGenerator64*)this_)->generate();
 }
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:212
+// /usr/include/qt/QtCore/qrandom.h:219
 // [8] QRandomGenerator64::result_type operator()()
 extern "C"
 QRandomGenerator64::result_type C_ZN18QRandomGenerator64clEv(void *this_) {
   return (QRandomGenerator64::result_type)((QRandomGenerator64*)this_)->operator()();
 }
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:215
+// /usr/include/qt/QtCore/qrandom.h:222
 // [-2] void QRandomGenerator64(quint32)
 extern "C"
 void* C_ZN18QRandomGenerator64C2Ej(quint32 seedValue) {
   return  new QRandomGenerator64(seedValue);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:221
+// /usr/include/qt/QtCore/qrandom.h:228
 // [-2] void QRandomGenerator64(const quint32 *, qsizetype)
 extern "C"
-void* C_ZN18QRandomGenerator64C2EPKjx(const quint32 * seedBuffer, qsizetype len) {
-  return  new QRandomGenerator64(seedBuffer, len);
+void* C_ZN18QRandomGenerator64C2EPKjx(const quint32 * seedBuffer, qsizetype len_) {
+  return  new QRandomGenerator64(seedBuffer, len_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:227
+// /usr/include/qt/QtCore/qrandom.h:234
 // [-2] void QRandomGenerator64(const quint32 *, const quint32 *)
 extern "C"
 void* C_ZN18QRandomGenerator64C2EPKjS1_(const quint32 * begin, const quint32 * end) {
   return  new QRandomGenerator64(begin, end);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:230
+// /usr/include/qt/QtCore/qrandom.h:237
 // [-2] void QRandomGenerator64(const class QRandomGenerator &)
 extern "C"
 void* C_ZN18QRandomGenerator64C2ERK16QRandomGenerator(QRandomGenerator* other) {
   return  new QRandomGenerator64(*other);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:232
+// /usr/include/qt/QtCore/qrandom.h:239
 // [-2] void discard(unsigned long long)
 extern "C"
 void C_ZN18QRandomGenerator647discardEy(void *this_, unsigned long long z) {
   ((QRandomGenerator64*)this_)->discard(z);
 }
+
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:239
+// /usr/include/qt/QtCore/qrandom.h:246
 // [8] QRandomGenerator64::result_type min()
 extern "C"
 QRandomGenerator64::result_type C_ZN18QRandomGenerator643minEv() {
   return (QRandomGenerator64::result_type)QRandomGenerator64::min();
 }
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:240
+// /usr/include/qt/QtCore/qrandom.h:247
 // [8] QRandomGenerator64::result_type max()
 extern "C"
 QRandomGenerator64::result_type C_ZN18QRandomGenerator643maxEv() {
   return (QRandomGenerator64::result_type)QRandomGenerator64::max();
 }
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:241
+// /usr/include/qt/QtCore/qrandom.h:248
 // [8] QRandomGenerator64 * system()
 extern "C"
 void* C_ZN18QRandomGenerator646systemEv() {
   return (void*)QRandomGenerator64::system();
 }
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:242
+// /usr/include/qt/QtCore/qrandom.h:249
 // [8] QRandomGenerator64 * global()
 extern "C"
 void* C_ZN18QRandomGenerator646globalEv() {
   return (void*)QRandomGenerator64::global();
 }
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:243
+// /usr/include/qt/QtCore/qrandom.h:250
 // [2512] QRandomGenerator64 securelySeeded()
 extern "C"
 void* C_ZN18QRandomGenerator6414securelySeededEv() {

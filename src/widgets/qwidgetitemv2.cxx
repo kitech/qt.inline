@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtWidgets/qlayoutitem.h
+#ifndef protected
+#define protected public
+#endif
 #include <qlayoutitem.h>
 #include <QtWidgets>
 #include "callback_inherit.h"
@@ -39,6 +42,7 @@ void* C_ZNK13QWidgetItemV28sizeHintEv(void *this_) {
   auto rv = ((QWidgetItemV2*)this_)->sizeHint();
 return new QSize(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:152
 // [8] QSize minimumSize()
@@ -47,6 +51,7 @@ void* C_ZNK13QWidgetItemV211minimumSizeEv(void *this_) {
   auto rv = ((QWidgetItemV2*)this_)->minimumSize();
 return new QSize(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:153
 // [8] QSize maximumSize()
@@ -55,6 +60,7 @@ void* C_ZNK13QWidgetItemV211maximumSizeEv(void *this_) {
   auto rv = ((QWidgetItemV2*)this_)->maximumSize();
 return new QSize(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:154
 // [4] int heightForWidth(int)
@@ -62,4 +68,5 @@ extern "C"
 int C_ZNK13QWidgetItemV214heightForWidthEi(void *this_, int width) {
   return (int)((QWidgetItemV2*)this_)->heightForWidth(width);
 }
+
 //  main block end

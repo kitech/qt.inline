@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtGui/qevent.h
+#ifndef protected
+#define protected public
+#endif
 #include <qevent.h>
 #include <QtGui>
 #include "callback_inherit.h"
@@ -38,6 +41,7 @@ extern "C"
 Qt::WindowStates C_ZNK23QWindowStateChangeEvent8oldStateEv(void *this_) {
   return (Qt::WindowStates)((QWindowStateChangeEvent*)this_)->oldState();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:787
 // [1] bool isOverride()
@@ -45,4 +49,5 @@ extern "C"
 bool C_ZNK23QWindowStateChangeEvent10isOverrideEv(void *this_) {
   return (bool)((QWindowStateChangeEvent*)this_)->isOverride();
 }
+
 //  main block end

@@ -1,5 +1,8 @@
 //  header block begin
 // /usr/include/qt/QtCore/qxmlstream.h
+#ifndef protected
+#define protected public
+#endif
 #include <qxmlstream.h>
 #include <QtCore>
 #include "callback_inherit.h"
@@ -34,6 +37,7 @@ void* C_ZN30QXmlStreamNamespaceDeclarationaSEOS_(void *this_, QXmlStreamNamespac
   auto& rv = ((QXmlStreamNamespaceDeclaration*)this_)->operator=(other);
 return &rv;
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:216
 // [-2] void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
@@ -56,6 +60,7 @@ void* C_ZN30QXmlStreamNamespaceDeclarationaSERKS_(void *this_, QXmlStreamNamespa
   auto& rv = ((QXmlStreamNamespaceDeclaration*)this_)->operator=(*arg0);
 return &rv;
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:221
 // [16] QStringRef prefix()
@@ -64,6 +69,7 @@ void* C_ZNK30QXmlStreamNamespaceDeclaration6prefixEv(void *this_) {
   auto rv = ((QXmlStreamNamespaceDeclaration*)this_)->prefix();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:222
 // [16] QStringRef namespaceUri()
@@ -72,6 +78,7 @@ void* C_ZNK30QXmlStreamNamespaceDeclaration12namespaceUriEv(void *this_) {
   auto rv = ((QXmlStreamNamespaceDeclaration*)this_)->namespaceUri();
 return new QStringRef(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:223
 // [1] bool operator==(const class QXmlStreamNamespaceDeclaration &)
@@ -79,6 +86,7 @@ extern "C"
 bool C_ZNK30QXmlStreamNamespaceDeclarationeqERKS_(void *this_, QXmlStreamNamespaceDeclaration* other) {
   return (bool)((QXmlStreamNamespaceDeclaration*)this_)->operator==(*other);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:226
 // [1] bool operator!=(const class QXmlStreamNamespaceDeclaration &)
@@ -86,4 +94,5 @@ extern "C"
 bool C_ZNK30QXmlStreamNamespaceDeclarationneERKS_(void *this_, QXmlStreamNamespaceDeclaration* other) {
   return (bool)((QXmlStreamNamespaceDeclaration*)this_)->operator!=(*other);
 }
+
 //  main block end
