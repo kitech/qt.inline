@@ -1,3 +1,15 @@
+// static 编译qt时的初始化修正
+#include <QCoreApplication>
+#include <QDebug>
+
+#include <QtPlugin>
+
+#if defined(QT_STATIC)
+#if defined(Q_OS_LINUX) || defined(Q_OS_UNIX) || defined(Q_OS_DARWIN)
+static bool _OLD_QT_QPA_FONTDIR = qputenv("QT_QPA_FONTDIR", "/usr/share/fonts");
+#endif
+Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
+#endif
 
 /*
   一些解析错误的符号表
@@ -22,12 +34,14 @@ void* _ZN24QAbstractOpenGLFunctions6d_funcEv(void* qthis)
 }
 */
 
+#if defined(QT_SHARED)
 extern "C"
 void _ZN18QMessageLogContext4copyERKS_(void* qthis, const QMessageLogContext &logContext)
 {
     QMessageLogContext* that = (QMessageLogContext*)qthis;
     that->copy(logContext);
 }
+#endif
 
 /*
   extern  bool qRegisterResourceData(int, unsigned char const*, unsigned char const*, unsigned char const*);
