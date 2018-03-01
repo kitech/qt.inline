@@ -85,7 +85,8 @@ set(all_qt5_inline_srcs
   ${qt5_inline_extra_srcs}
   )
 
-set(LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD "-lpthread -lGL -lqtlibpng -lqtharfbuzz -lqtpcre2 -lqxcb -lQt5XcbQpa -lSM -lxcb-randr -lxcb-render -lxcb-shape -lxcb-xkb -lxcb-xfixes -lxcb-sync -lxcb-icccm -lxcb-shm -lxcb-xinerama -lxcb-image -lxcb-keysyms -lxcb-cursor -lX11-xcb -lQt5ThemeSupport -lQt5EdidSupport -lQt5FontDatabaseSupport -lQt5ServiceSupport -lfontconfig -lQt5EventDispatcherSupport -lQt5DBus")
+
+set(LDFLAGS_FOR_LINUX_CUSTOM_STATIC_BUILD Qt5::QXcbIntegrationPlugin -lpthread -lGL -lqtlibpng -lqtharfbuzz -lqtpcre2 -lQt5XcbQpa -lSM -lxcb-randr -lxcb-render -lxcb-shape -lxcb-xkb -lxcb-xfixes -lxcb-sync -lxcb-icccm -lxcb-shm -lxcb-xinerama -lxcb-image -lxcb-keysyms -lxcb-cursor -lX11-xcb -lQt5ThemeSupport -lQt5EdidSupport -lQt5FontDatabaseSupport -lQt5ServiceSupport -lQt5EventDispatcherSupport -lQt5DBus -lqtfreetype)
 set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD StaticQt5::QWindowsIntegrationPlugin -lmpr)
 set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD StaticQt5::QCocoaIntegrationPlugin)
 
