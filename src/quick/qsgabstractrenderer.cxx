@@ -35,7 +35,6 @@ MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:94
 // [-2] void nodeChanged(class QSGNode *, class QSGNode::DirtyState)
-extern "C" Q_DECL_EXPORT
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:55
 // [8] const QMetaObject * metaObject()

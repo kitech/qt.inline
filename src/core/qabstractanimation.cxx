@@ -80,7 +80,6 @@ bool C_ZN18QAbstractAnimation5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:123
 // [-2] void updateCurrentTime(int)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:124
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)

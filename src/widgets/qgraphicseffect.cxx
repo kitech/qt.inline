@@ -110,7 +110,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:99
 // [-2] void draw(class QPainter *)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:100
 // [-2] void sourceChanged(QGraphicsEffect::ChangeFlags)

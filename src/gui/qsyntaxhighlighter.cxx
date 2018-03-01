@@ -162,7 +162,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:77
 // [-2] void highlightBlock(const class QString &)
-extern "C" Q_DECL_EXPORT
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:79
 // [-2] void setFormat(int, int, const class QTextCharFormat &)

@@ -60,11 +60,9 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:73
 // [-2] void onEntry(class QEvent *)
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:74
 // [-2] void onExit(class QEvent *)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:76
 // [1] bool event(class QEvent *)

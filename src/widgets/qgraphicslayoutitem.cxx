@@ -76,7 +76,6 @@ void C_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void *this_, bool ownedByLayo
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
 // [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-extern "C" Q_DECL_EXPORT
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:57
 // [-2] void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)

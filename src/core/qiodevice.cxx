@@ -88,7 +88,6 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:166
 // [8] qint64 readData(char *, qint64)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:167
 // [8] qint64 readLineData(char *, qint64)
@@ -100,7 +99,6 @@ qint64 C_ZN9QIODevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen)
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:168
 // [8] qint64 writeData(const char *, qint64)
-extern "C" Q_DECL_EXPORT
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:170
 // [-2] void setOpenMode(QIODevice::OpenMode)

@@ -13,6 +13,6 @@ Qt5 C wrapper for FFI invoke original used in https://github.com/kitech/qt.go
 
 * Linux
 * MacOS
-* Windows
+* Windows7+
 * Android
 

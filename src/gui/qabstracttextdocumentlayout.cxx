@@ -97,7 +97,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:115
 // [-2] void documentChanged(int, int, int)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:117
 // [-2] void resizeInlineObject(class QTextInlineObject, int, const class QTextFormat &)

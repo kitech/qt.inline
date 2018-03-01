@@ -193,7 +193,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:129
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:130
 // [1] bool hitButton(const class QPoint &)

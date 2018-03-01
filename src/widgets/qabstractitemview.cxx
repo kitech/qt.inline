@@ -881,27 +881,21 @@ int C_ZNK17QAbstractItemView20verticalStepsPerItemEv(void *this_) {
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:283
 // [24] QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:286
 // [4] int horizontalOffset()
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:287
 // [4] int verticalOffset()
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:289
 // [1] bool isIndexHidden(const class QModelIndex &)
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:291
 // [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:292
 // [8] QRegion visualRegionForSelection(const class QItemSelection &)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:293
 // [8] QModelIndexList selectedIndexes()

@@ -61,11 +61,9 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracttransition.h:101
 // [1] bool eventTest(class QEvent *)
-extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracttransition.h:103
 // [-2] void onTransition(class QEvent *)
-extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracttransition.h:105
 // [1] bool event(class QEvent *)
