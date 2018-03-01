@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQProgressBar : public QProgressBar {
+class Q_DECL_EXPORT MyQProgressBar : public QProgressBar {
 public:
   virtual ~MyQProgressBar() {}
 // void QProgressBar(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractSpinBox : public QAbstractSpinBox {
+class Q_DECL_EXPORT MyQAbstractSpinBox : public QAbstractSpinBox {
 public:
   virtual ~MyQAbstractSpinBox() {}
 // void QAbstractSpinBox(class QWidget *)

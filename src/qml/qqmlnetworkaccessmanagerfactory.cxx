@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlNetworkAccessManagerFactory : public QQmlNetworkAccessManagerFactory {
+class Q_DECL_EXPORT MyQQmlNetworkAccessManagerFactory : public QQmlNetworkAccessManagerFactory {
 public:
   virtual ~MyQQmlNetworkAccessManagerFactory() {}
 };

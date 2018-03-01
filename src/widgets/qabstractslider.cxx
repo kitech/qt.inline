@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractSlider : public QAbstractSlider {
+class Q_DECL_EXPORT MyQAbstractSlider : public QAbstractSlider {
 public:
   virtual ~MyQAbstractSlider() {}
 // void QAbstractSlider(class QWidget *)

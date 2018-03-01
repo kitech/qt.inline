@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsSceneMoveEvent : public QGraphicsSceneMoveEvent {
+class Q_DECL_EXPORT MyQGraphicsSceneMoveEvent : public QGraphicsSceneMoveEvent {
 public:
   virtual ~MyQGraphicsSceneMoveEvent() {}
 // void QGraphicsSceneMoveEvent()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyAbstractDebugStreamFunction : public QtPrivate::AbstractDebugStreamFunction {
+class Q_DECL_EXPORT MyAbstractDebugStreamFunction : public QtPrivate::AbstractDebugStreamFunction {
 public:
   virtual ~MyAbstractDebugStreamFunction() {}
 };

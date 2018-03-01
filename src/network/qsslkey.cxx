@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslKey : public QSslKey {
+class Q_DECL_EXPORT MyQSslKey : public QSslKey {
 public:
   virtual ~MyQSslKey() {}
 // void QSslKey()

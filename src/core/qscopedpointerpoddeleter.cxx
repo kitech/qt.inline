@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScopedPointerPodDeleter : public QScopedPointerPodDeleter {
+class Q_DECL_EXPORT MyQScopedPointerPodDeleter : public QScopedPointerPodDeleter {
 public:
   virtual ~MyQScopedPointerPodDeleter() {}
 };

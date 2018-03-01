@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGClipNode : public QSGClipNode {
+class Q_DECL_EXPORT MyQSGClipNode : public QSGClipNode {
 public:
   virtual ~MyQSGClipNode() {}
 // void QSGClipNode()

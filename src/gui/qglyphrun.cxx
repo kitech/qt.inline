@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGlyphRun : public QGlyphRun {
+class Q_DECL_EXPORT MyQGlyphRun : public QGlyphRun {
 public:
   virtual ~MyQGlyphRun() {}
 // void QGlyphRun()

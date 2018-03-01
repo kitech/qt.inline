@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQVariantAnimation : public QVariantAnimation {
+class Q_DECL_EXPORT MyQVariantAnimation : public QVariantAnimation {
 public:
   virtual ~MyQVariantAnimation() {}
 // void QVariantAnimation(class QObject *)

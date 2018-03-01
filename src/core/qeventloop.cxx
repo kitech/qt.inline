@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQEventLoop : public QEventLoop {
+class Q_DECL_EXPORT MyQEventLoop : public QEventLoop {
 public:
   virtual ~MyQEventLoop() {}
 // void QEventLoop(class QObject *)

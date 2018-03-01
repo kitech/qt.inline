@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractProxyModel : public QAbstractProxyModel {
+class Q_DECL_EXPORT MyQAbstractProxyModel : public QAbstractProxyModel {
 public:
   virtual ~MyQAbstractProxyModel() {}
 // void QAbstractProxyModel(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionGraphicsItem : public QStyleOptionGraphicsItem {
+class Q_DECL_EXPORT MyQStyleOptionGraphicsItem : public QStyleOptionGraphicsItem {
 public:
   virtual ~MyQStyleOptionGraphicsItem() {}
 // void QStyleOptionGraphicsItem()

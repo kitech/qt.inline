@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDeferredDeleteEvent : public QDeferredDeleteEvent {
+class Q_DECL_EXPORT MyQDeferredDeleteEvent : public QDeferredDeleteEvent {
 public:
   virtual ~MyQDeferredDeleteEvent() {}
 // void QDeferredDeleteEvent()

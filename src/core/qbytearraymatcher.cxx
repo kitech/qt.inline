@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQByteArrayMatcher : public QByteArrayMatcher {
+class Q_DECL_EXPORT MyQByteArrayMatcher : public QByteArrayMatcher {
 public:
   virtual ~MyQByteArrayMatcher() {}
 // void QByteArrayMatcher()

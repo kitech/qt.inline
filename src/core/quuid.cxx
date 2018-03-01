@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUuid : public QUuid {
+class Q_DECL_EXPORT MyQUuid : public QUuid {
 public:
   virtual ~MyQUuid() {}
 // void QUuid()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionProgressBar : public QStyleOptionProgressBar {
+class Q_DECL_EXPORT MyQStyleOptionProgressBar : public QStyleOptionProgressBar {
 public:
   virtual ~MyQStyleOptionProgressBar() {}
 // void QStyleOptionProgressBar()

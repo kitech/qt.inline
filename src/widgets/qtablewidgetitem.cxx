@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTableWidgetItem : public QTableWidgetItem {
+class Q_DECL_EXPORT MyQTableWidgetItem : public QTableWidgetItem {
 public:
   virtual ~MyQTableWidgetItem() {}
 // void QTableWidgetItem(int)

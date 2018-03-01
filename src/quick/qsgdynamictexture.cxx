@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGDynamicTexture : public QSGDynamicTexture {
+class Q_DECL_EXPORT MyQSGDynamicTexture : public QSGDynamicTexture {
 public:
   virtual ~MyQSGDynamicTexture() {}
 };

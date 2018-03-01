@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMapDataBase : public QMapDataBase {
+class Q_DECL_EXPORT MyQMapDataBase : public QMapDataBase {
 public:
   virtual ~MyQMapDataBase() {}
 };

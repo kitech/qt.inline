@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQReadWriteLock : public QReadWriteLock {
+class Q_DECL_EXPORT MyQReadWriteLock : public QReadWriteLock {
 public:
   virtual ~MyQReadWriteLock() {}
 // void QReadWriteLock(enum QReadWriteLock::RecursionMode)

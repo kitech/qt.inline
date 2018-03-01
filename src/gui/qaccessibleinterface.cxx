@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleInterface : public QAccessibleInterface {
+class Q_DECL_EXPORT MyQAccessibleInterface : public QAccessibleInterface {
 public:
   virtual ~MyQAccessibleInterface() {}
 // Protected virtual Visibility=Default Availability=Available

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlError : public QQmlError {
+class Q_DECL_EXPORT MyQQmlError : public QQmlError {
 public:
   virtual ~MyQQmlError() {}
 // void QQmlError()

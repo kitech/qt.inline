@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQToolButton : public QToolButton {
+class Q_DECL_EXPORT MyQToolButton : public QToolButton {
 public:
   virtual ~MyQToolButton() {}
 // void QToolButton(class QWidget *)

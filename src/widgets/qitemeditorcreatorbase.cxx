@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQItemEditorCreatorBase : public QItemEditorCreatorBase {
+class Q_DECL_EXPORT MyQItemEditorCreatorBase : public QItemEditorCreatorBase {
 public:
   virtual ~MyQItemEditorCreatorBase() {}
 };

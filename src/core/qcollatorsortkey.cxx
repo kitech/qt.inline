@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCollatorSortKey : public QCollatorSortKey {
+class Q_DECL_EXPORT MyQCollatorSortKey : public QCollatorSortKey {
 public:
   virtual ~MyQCollatorSortKey() {}
 };

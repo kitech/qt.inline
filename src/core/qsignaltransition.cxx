@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSignalTransition : public QSignalTransition {
+class Q_DECL_EXPORT MyQSignalTransition : public QSignalTransition {
 public:
   virtual ~MyQSignalTransition() {}
 // void QSignalTransition(class QState *)

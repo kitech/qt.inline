@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQState : public QState {
+class Q_DECL_EXPORT MyQState : public QState {
 public:
   virtual ~MyQState() {}
 // void QState(class QState *)

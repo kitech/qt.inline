@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUndoCommand : public QUndoCommand {
+class Q_DECL_EXPORT MyQUndoCommand : public QUndoCommand {
 public:
   virtual ~MyQUndoCommand() {}
 // void QUndoCommand(class QUndoCommand *)

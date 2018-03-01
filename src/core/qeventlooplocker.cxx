@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQEventLoopLocker : public QEventLoopLocker {
+class Q_DECL_EXPORT MyQEventLoopLocker : public QEventLoopLocker {
 public:
   virtual ~MyQEventLoopLocker() {}
 // void QEventLoopLocker()

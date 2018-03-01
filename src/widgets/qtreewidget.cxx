@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTreeWidget : public QTreeWidget {
+class Q_DECL_EXPORT MyQTreeWidget : public QTreeWidget {
 public:
   virtual ~MyQTreeWidget() {}
 // void QTreeWidget(class QWidget *)

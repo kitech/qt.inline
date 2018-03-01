@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMimeData : public QMimeData {
+class Q_DECL_EXPORT MyQMimeData : public QMimeData {
 public:
   virtual ~MyQMimeData() {}
 // void QMimeData()

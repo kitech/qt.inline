@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMetaObject : public QMetaObject {
+class Q_DECL_EXPORT MyQMetaObject : public QMetaObject {
 public:
   virtual ~MyQMetaObject() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGBasicGeometryNode : public QSGBasicGeometryNode {
+class Q_DECL_EXPORT MyQSGBasicGeometryNode : public QSGBasicGeometryNode {
 public:
   virtual ~MyQSGBasicGeometryNode() {}
 // void QSGBasicGeometryNode(enum QSGNode::NodeType)

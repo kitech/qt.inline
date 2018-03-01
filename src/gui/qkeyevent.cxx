@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQKeyEvent : public QKeyEvent {
+class Q_DECL_EXPORT MyQKeyEvent : public QKeyEvent {
 public:
   virtual ~MyQKeyEvent() {}
 // void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)

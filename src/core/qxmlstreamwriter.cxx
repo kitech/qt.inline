@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamWriter : public QXmlStreamWriter {
+class Q_DECL_EXPORT MyQXmlStreamWriter : public QXmlStreamWriter {
 public:
   virtual ~MyQXmlStreamWriter() {}
 // void QXmlStreamWriter()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleHintReturn : public QStyleHintReturn {
+class Q_DECL_EXPORT MyQStyleHintReturn : public QStyleHintReturn {
 public:
   virtual ~MyQStyleHintReturn() {}
 // void QStyleHintReturn(int, int)

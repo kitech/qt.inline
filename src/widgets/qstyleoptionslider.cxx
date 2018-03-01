@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionSlider : public QStyleOptionSlider {
+class Q_DECL_EXPORT MyQStyleOptionSlider : public QStyleOptionSlider {
 public:
   virtual ~MyQStyleOptionSlider() {}
 // void QStyleOptionSlider()

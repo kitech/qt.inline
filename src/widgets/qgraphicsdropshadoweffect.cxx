@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsDropShadowEffect : public QGraphicsDropShadowEffect {
+class Q_DECL_EXPORT MyQGraphicsDropShadowEffect : public QGraphicsDropShadowEffect {
 public:
   virtual ~MyQGraphicsDropShadowEffect() {}
 // void QGraphicsDropShadowEffect(class QObject *)

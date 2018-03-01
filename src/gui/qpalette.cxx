@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPalette : public QPalette {
+class Q_DECL_EXPORT MyQPalette : public QPalette {
 public:
   virtual ~MyQPalette() {}
 // void QPalette()

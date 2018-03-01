@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIdentityProxyModel : public QIdentityProxyModel {
+class Q_DECL_EXPORT MyQIdentityProxyModel : public QIdentityProxyModel {
 public:
   virtual ~MyQIdentityProxyModel() {}
 // void QIdentityProxyModel(class QObject *)

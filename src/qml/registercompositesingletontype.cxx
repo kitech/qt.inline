@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyRegisterCompositeSingletonType : public QQmlPrivate::RegisterCompositeSingletonType {
+class Q_DECL_EXPORT MyRegisterCompositeSingletonType : public QQmlPrivate::RegisterCompositeSingletonType {
 public:
   virtual ~MyRegisterCompositeSingletonType() {}
 };

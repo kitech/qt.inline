@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStringListModel : public QStringListModel {
+class Q_DECL_EXPORT MyQStringListModel : public QStringListModel {
 public:
   virtual ~MyQStringListModel() {}
 // void QStringListModel(class QObject *)

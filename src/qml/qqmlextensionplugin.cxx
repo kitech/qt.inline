@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlExtensionPlugin : public QQmlExtensionPlugin {
+class Q_DECL_EXPORT MyQQmlExtensionPlugin : public QQmlExtensionPlugin {
 public:
   virtual ~MyQQmlExtensionPlugin() {}
 // void QQmlExtensionPlugin(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPauseAnimation : public QPauseAnimation {
+class Q_DECL_EXPORT MyQPauseAnimation : public QPauseAnimation {
 public:
   virtual ~MyQPauseAnimation() {}
 // void QPauseAnimation(class QObject *)

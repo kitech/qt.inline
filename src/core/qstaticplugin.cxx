@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStaticPlugin : public QStaticPlugin {
+class Q_DECL_EXPORT MyQStaticPlugin : public QStaticPlugin {
 public:
   virtual ~MyQStaticPlugin() {}
 };

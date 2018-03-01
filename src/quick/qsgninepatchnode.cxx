@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGNinePatchNode : public QSGNinePatchNode {
+class Q_DECL_EXPORT MyQSGNinePatchNode : public QSGNinePatchNode {
 public:
   virtual ~MyQSGNinePatchNode() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextTable : public QTextTable {
+class Q_DECL_EXPORT MyQTextTable : public QTextTable {
 public:
   virtual ~MyQTextTable() {}
 // void QTextTable(class QTextDocument *)

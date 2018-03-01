@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNativeGestureEvent : public QNativeGestureEvent {
+class Q_DECL_EXPORT MyQNativeGestureEvent : public QNativeGestureEvent {
 public:
   virtual ~MyQNativeGestureEvent() {}
 // void QNativeGestureEvent(Qt::NativeGestureType, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)

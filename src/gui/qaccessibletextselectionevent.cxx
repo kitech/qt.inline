@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTextSelectionEvent : public QAccessibleTextSelectionEvent {
+class Q_DECL_EXPORT MyQAccessibleTextSelectionEvent : public QAccessibleTextSelectionEvent {
 public:
   virtual ~MyQAccessibleTextSelectionEvent() {}
 // void QAccessibleTextSelectionEvent(class QObject *, int, int)

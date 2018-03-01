@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFinalState : public QFinalState {
+class Q_DECL_EXPORT MyQFinalState : public QFinalState {
 public:
   virtual ~MyQFinalState() {}
 // void QFinalState(class QState *)

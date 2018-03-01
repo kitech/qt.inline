@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGesture : public QGesture {
+class Q_DECL_EXPORT MyQGesture : public QGesture {
 public:
   virtual ~MyQGesture() {}
 // void QGesture(class QObject *)

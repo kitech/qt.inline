@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQThreadPool : public QThreadPool {
+class Q_DECL_EXPORT MyQThreadPool : public QThreadPool {
 public:
   virtual ~MyQThreadPool() {}
 // void QThreadPool(class QObject *)

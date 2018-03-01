@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyRegisterQmlUnitCacheHook : public QQmlPrivate::RegisterQmlUnitCacheHook {
+class Q_DECL_EXPORT MyRegisterQmlUnitCacheHook : public QQmlPrivate::RegisterQmlUnitCacheHook {
 public:
   virtual ~MyRegisterQmlUnitCacheHook() {}
 };

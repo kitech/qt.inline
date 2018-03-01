@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMdiSubWindow : public QMdiSubWindow {
+class Q_DECL_EXPORT MyQMdiSubWindow : public QMdiSubWindow {
 public:
   virtual ~MyQMdiSubWindow() {}
 // void QMdiSubWindow(class QWidget *, Qt::WindowFlags)

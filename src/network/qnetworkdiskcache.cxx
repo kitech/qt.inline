@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkDiskCache : public QNetworkDiskCache {
+class Q_DECL_EXPORT MyQNetworkDiskCache : public QNetworkDiskCache {
 public:
   virtual ~MyQNetworkDiskCache() {}
 // void QNetworkDiskCache(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextStreamManipulator : public QTextStreamManipulator {
+class Q_DECL_EXPORT MyQTextStreamManipulator : public QTextStreamManipulator {
 public:
   virtual ~MyQTextStreamManipulator() {}
 };

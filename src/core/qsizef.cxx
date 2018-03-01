@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSizeF : public QSizeF {
+class Q_DECL_EXPORT MyQSizeF : public QSizeF {
 public:
   virtual ~MyQSizeF() {}
 // void QSizeF()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTemporaryFile : public QTemporaryFile {
+class Q_DECL_EXPORT MyQTemporaryFile : public QTemporaryFile {
 public:
   virtual ~MyQTemporaryFile() {}
 // void QTemporaryFile()

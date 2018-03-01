@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlExtensionInterface : public QQmlExtensionInterface {
+class Q_DECL_EXPORT MyQQmlExtensionInterface : public QQmlExtensionInterface {
 public:
   virtual ~MyQQmlExtensionInterface() {}
 };

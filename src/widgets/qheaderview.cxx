@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHeaderView : public QHeaderView {
+class Q_DECL_EXPORT MyQHeaderView : public QHeaderView {
 public:
   virtual ~MyQHeaderView() {}
 // void QHeaderView(Qt::Orientation, class QWidget *)

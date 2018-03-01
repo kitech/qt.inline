@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTcpSocket : public QTcpSocket {
+class Q_DECL_EXPORT MyQTcpSocket : public QTcpSocket {
 public:
   virtual ~MyQTcpSocket() {}
 // void QTcpSocket(class QObject *)

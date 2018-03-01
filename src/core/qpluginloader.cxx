@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPluginLoader : public QPluginLoader {
+class Q_DECL_EXPORT MyQPluginLoader : public QPluginLoader {
 public:
   virtual ~MyQPluginLoader() {}
 // void QPluginLoader(class QObject *)

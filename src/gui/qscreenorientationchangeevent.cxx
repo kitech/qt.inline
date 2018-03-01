@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScreenOrientationChangeEvent : public QScreenOrientationChangeEvent {
+class Q_DECL_EXPORT MyQScreenOrientationChangeEvent : public QScreenOrientationChangeEvent {
 public:
   virtual ~MyQScreenOrientationChangeEvent() {}
 // void QScreenOrientationChangeEvent(class QScreen *, Qt::ScreenOrientation)

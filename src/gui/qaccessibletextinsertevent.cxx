@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTextInsertEvent : public QAccessibleTextInsertEvent {
+class Q_DECL_EXPORT MyQAccessibleTextInsertEvent : public QAccessibleTextInsertEvent {
 public:
   virtual ~MyQAccessibleTextInsertEvent() {}
 // void QAccessibleTextInsertEvent(class QObject *, int, const class QString &)

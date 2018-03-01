@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTransform : public QTransform {
+class Q_DECL_EXPORT MyQTransform : public QTransform {
 public:
   virtual ~MyQTransform() {}
 // void QTransform(Qt::Initialization)

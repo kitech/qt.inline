@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLocale : public QLocale {
+class Q_DECL_EXPORT MyQLocale : public QLocale {
 public:
   virtual ~MyQLocale() {}
 // void QLocale()

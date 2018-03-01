@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsSceneMouseEvent : public QGraphicsSceneMouseEvent {
+class Q_DECL_EXPORT MyQGraphicsSceneMouseEvent : public QGraphicsSceneMouseEvent {
 public:
   virtual ~MyQGraphicsSceneMouseEvent() {}
 // void QGraphicsSceneMouseEvent(enum QEvent::Type)

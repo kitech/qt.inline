@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsLineItem : public QGraphicsLineItem {
+class Q_DECL_EXPORT MyQGraphicsLineItem : public QGraphicsLineItem {
 public:
   virtual ~MyQGraphicsLineItem() {}
 // void QGraphicsLineItem(class QGraphicsItem *)

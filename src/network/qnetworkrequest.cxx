@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkRequest : public QNetworkRequest {
+class Q_DECL_EXPORT MyQNetworkRequest : public QNetworkRequest {
 public:
   virtual ~MyQNetworkRequest() {}
 // void QNetworkRequest(const class QUrl &)

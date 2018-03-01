@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextInlineObject : public QTextInlineObject {
+class Q_DECL_EXPORT MyQTextInlineObject : public QTextInlineObject {
 public:
   virtual ~MyQTextInlineObject() {}
 // void QTextInlineObject()

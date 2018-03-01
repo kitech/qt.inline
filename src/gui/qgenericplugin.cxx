@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGenericPlugin : public QGenericPlugin {
+class Q_DECL_EXPORT MyQGenericPlugin : public QGenericPlugin {
 public:
   virtual ~MyQGenericPlugin() {}
 // void QGenericPlugin(class QObject *)

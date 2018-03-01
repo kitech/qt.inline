@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleWidget : public QAccessibleWidget {
+class Q_DECL_EXPORT MyQAccessibleWidget : public QAccessibleWidget {
 public:
   virtual ~MyQAccessibleWidget() {}
 // void QAccessibleWidget(class QWidget *, class QAccessible::Role, const class QString &)

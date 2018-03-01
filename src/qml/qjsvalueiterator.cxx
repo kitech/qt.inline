@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJSValueIterator : public QJSValueIterator {
+class Q_DECL_EXPORT MyQJSValueIterator : public QJSValueIterator {
 public:
   virtual ~MyQJSValueIterator() {}
 // void QJSValueIterator(const class QJSValue &)

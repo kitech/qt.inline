@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDnsMailExchangeRecord : public QDnsMailExchangeRecord {
+class Q_DECL_EXPORT MyQDnsMailExchangeRecord : public QDnsMailExchangeRecord {
 public:
   virtual ~MyQDnsMailExchangeRecord() {}
 // void QDnsMailExchangeRecord()

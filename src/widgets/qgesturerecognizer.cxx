@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGestureRecognizer : public QGestureRecognizer {
+class Q_DECL_EXPORT MyQGestureRecognizer : public QGestureRecognizer {
 public:
   virtual ~MyQGestureRecognizer() {}
 // void QGestureRecognizer()

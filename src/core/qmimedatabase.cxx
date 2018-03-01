@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMimeDatabase : public QMimeDatabase {
+class Q_DECL_EXPORT MyQMimeDatabase : public QMimeDatabase {
 public:
   virtual ~MyQMimeDatabase() {}
 // void QMimeDatabase()

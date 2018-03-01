@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkProxy : public QNetworkProxy {
+class Q_DECL_EXPORT MyQNetworkProxy : public QNetworkProxy {
 public:
   virtual ~MyQNetworkProxy() {}
 // void QNetworkProxy()

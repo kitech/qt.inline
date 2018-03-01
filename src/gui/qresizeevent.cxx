@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQResizeEvent : public QResizeEvent {
+class Q_DECL_EXPORT MyQResizeEvent : public QResizeEvent {
 public:
   virtual ~MyQResizeEvent() {}
 // void QResizeEvent(const class QSize &, const class QSize &)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleHints : public QStyleHints {
+class Q_DECL_EXPORT MyQStyleHints : public QStyleHints {
 public:
   virtual ~MyQStyleHints() {}
 };

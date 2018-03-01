@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTextRemoveEvent : public QAccessibleTextRemoveEvent {
+class Q_DECL_EXPORT MyQAccessibleTextRemoveEvent : public QAccessibleTextRemoveEvent {
 public:
   virtual ~MyQAccessibleTextRemoveEvent() {}
 // void QAccessibleTextRemoveEvent(class QObject *, int, const class QString &)

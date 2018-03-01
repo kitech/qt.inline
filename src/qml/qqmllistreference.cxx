@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlListReference : public QQmlListReference {
+class Q_DECL_EXPORT MyQQmlListReference : public QQmlListReference {
 public:
   virtual ~MyQQmlListReference() {}
 // void QQmlListReference()

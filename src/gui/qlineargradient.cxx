@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLinearGradient : public QLinearGradient {
+class Q_DECL_EXPORT MyQLinearGradient : public QLinearGradient {
 public:
   virtual ~MyQLinearGradient() {}
 // void QLinearGradient()

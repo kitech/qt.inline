@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBackingStore : public QBackingStore {
+class Q_DECL_EXPORT MyQBackingStore : public QBackingStore {
 public:
   virtual ~MyQBackingStore() {}
 // void QBackingStore(class QWindow *)

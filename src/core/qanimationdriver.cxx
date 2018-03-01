@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAnimationDriver : public QAnimationDriver {
+class Q_DECL_EXPORT MyQAnimationDriver : public QAnimationDriver {
 public:
   virtual ~MyQAnimationDriver() {}
 // void QAnimationDriver(class QObject *)

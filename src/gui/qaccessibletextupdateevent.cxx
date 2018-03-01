@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTextUpdateEvent : public QAccessibleTextUpdateEvent {
+class Q_DECL_EXPORT MyQAccessibleTextUpdateEvent : public QAccessibleTextUpdateEvent {
 public:
   virtual ~MyQAccessibleTextUpdateEvent() {}
 // void QAccessibleTextUpdateEvent(class QObject *, int, const class QString &, const class QString &)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyRegisterInterface : public QQmlPrivate::RegisterInterface {
+class Q_DECL_EXPORT MyRegisterInterface : public QQmlPrivate::RegisterInterface {
 public:
   virtual ~MyRegisterInterface() {}
 };

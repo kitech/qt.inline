@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFontMetricsF : public QFontMetricsF {
+class Q_DECL_EXPORT MyQFontMetricsF : public QFontMetricsF {
 public:
   virtual ~MyQFontMetricsF() {}
 // void QFontMetricsF(const class QFont &)

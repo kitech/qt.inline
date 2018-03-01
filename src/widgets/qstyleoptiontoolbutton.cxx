@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionToolButton : public QStyleOptionToolButton {
+class Q_DECL_EXPORT MyQStyleOptionToolButton : public QStyleOptionToolButton {
 public:
   virtual ~MyQStyleOptionToolButton() {}
 // void QStyleOptionToolButton()

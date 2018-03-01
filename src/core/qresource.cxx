@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQResource : public QResource {
+class Q_DECL_EXPORT MyQResource : public QResource {
 public:
   virtual ~MyQResource() {}
 // void QResource(const class QString &, const class QLocale &)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQByteArray : public QByteArray {
+class Q_DECL_EXPORT MyQByteArray : public QByteArray {
 public:
   virtual ~MyQByteArray() {}
 // void QByteArray()

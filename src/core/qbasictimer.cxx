@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBasicTimer : public QBasicTimer {
+class Q_DECL_EXPORT MyQBasicTimer : public QBasicTimer {
 public:
   virtual ~MyQBasicTimer() {}
 // void QBasicTimer()

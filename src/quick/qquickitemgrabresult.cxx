@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickItemGrabResult : public QQuickItemGrabResult {
+class Q_DECL_EXPORT MyQQuickItemGrabResult : public QQuickItemGrabResult {
 public:
   virtual ~MyQQuickItemGrabResult() {}
 // Protected virtual Visibility=Default Availability=Available

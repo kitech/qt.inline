@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDnsDomainNameRecord : public QDnsDomainNameRecord {
+class Q_DECL_EXPORT MyQDnsDomainNameRecord : public QDnsDomainNameRecord {
 public:
   virtual ~MyQDnsDomainNameRecord() {}
 // void QDnsDomainNameRecord()

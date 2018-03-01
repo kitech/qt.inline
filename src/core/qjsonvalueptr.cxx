@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJsonValuePtr : public QJsonValuePtr {
+class Q_DECL_EXPORT MyQJsonValuePtr : public QJsonValuePtr {
 public:
   virtual ~MyQJsonValuePtr() {}
 // void QJsonValuePtr(const class QJsonValue &)

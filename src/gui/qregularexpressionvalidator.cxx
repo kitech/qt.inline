@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRegularExpressionValidator : public QRegularExpressionValidator {
+class Q_DECL_EXPORT MyQRegularExpressionValidator : public QRegularExpressionValidator {
 public:
   virtual ~MyQRegularExpressionValidator() {}
 // void QRegularExpressionValidator(class QObject *)

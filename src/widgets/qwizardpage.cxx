@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWizardPage : public QWizardPage {
+class Q_DECL_EXPORT MyQWizardPage : public QWizardPage {
 public:
   virtual ~MyQWizardPage() {}
 // void QWizardPage(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMarginsF : public QMarginsF {
+class Q_DECL_EXPORT MyQMarginsF : public QMarginsF {
 public:
   virtual ~MyQMarginsF() {}
 // void QMarginsF()

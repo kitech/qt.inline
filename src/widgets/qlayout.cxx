@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLayout : public QLayout {
+class Q_DECL_EXPORT MyQLayout : public QLayout {
 public:
   virtual ~MyQLayout() {}
 // void QLayout(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLatin1Char : public QLatin1Char {
+class Q_DECL_EXPORT MyQLatin1Char : public QLatin1Char {
 public:
   virtual ~MyQLatin1Char() {}
 // void QLatin1Char(char)

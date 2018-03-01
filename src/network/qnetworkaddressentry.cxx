@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkAddressEntry : public QNetworkAddressEntry {
+class Q_DECL_EXPORT MyQNetworkAddressEntry : public QNetworkAddressEntry {
 public:
   virtual ~MyQNetworkAddressEntry() {}
 // void QNetworkAddressEntry()

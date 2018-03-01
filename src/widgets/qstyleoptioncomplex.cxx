@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionComplex : public QStyleOptionComplex {
+class Q_DECL_EXPORT MyQStyleOptionComplex : public QStyleOptionComplex {
 public:
   virtual ~MyQStyleOptionComplex() {}
 // void QStyleOptionComplex(int, int)

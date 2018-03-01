@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQChar : public QChar {
+class Q_DECL_EXPORT MyQChar : public QChar {
 public:
   virtual ~MyQChar() {}
 // void QChar()

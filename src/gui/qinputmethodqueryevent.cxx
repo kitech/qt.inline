@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQInputMethodQueryEvent : public QInputMethodQueryEvent {
+class Q_DECL_EXPORT MyQInputMethodQueryEvent : public QInputMethodQueryEvent {
 public:
   virtual ~MyQInputMethodQueryEvent() {}
 // void QInputMethodQueryEvent(Qt::InputMethodQueries)

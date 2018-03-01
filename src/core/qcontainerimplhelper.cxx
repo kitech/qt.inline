@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQContainerImplHelper : public QtPrivate::QContainerImplHelper {
+class Q_DECL_EXPORT MyQContainerImplHelper : public QtPrivate::QContainerImplHelper {
 public:
   virtual ~MyQContainerImplHelper() {}
 };

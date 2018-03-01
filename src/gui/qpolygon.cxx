@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPolygon : public QPolygon {
+class Q_DECL_EXPORT MyQPolygon : public QPolygon {
 public:
   virtual ~MyQPolygon() {}
 // void QPolygon()

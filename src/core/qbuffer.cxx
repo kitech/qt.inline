@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBuffer : public QBuffer {
+class Q_DECL_EXPORT MyQBuffer : public QBuffer {
 public:
   virtual ~MyQBuffer() {}
 // void QBuffer(class QObject *)

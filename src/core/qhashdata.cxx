@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHashData : public QHashData {
+class Q_DECL_EXPORT MyQHashData : public QHashData {
 public:
   virtual ~MyQHashData() {}
 };

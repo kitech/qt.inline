@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScreen : public QScreen {
+class Q_DECL_EXPORT MyQScreen : public QScreen {
 public:
   virtual ~MyQScreen() {}
 };

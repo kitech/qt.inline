@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionFrame : public QStyleOptionFrame {
+class Q_DECL_EXPORT MyQStyleOptionFrame : public QStyleOptionFrame {
 public:
   virtual ~MyQStyleOptionFrame() {}
 // void QStyleOptionFrame()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHashDummyValue : public QHashDummyValue {
+class Q_DECL_EXPORT MyQHashDummyValue : public QHashDummyValue {
 public:
   virtual ~MyQHashDummyValue() {}
 };

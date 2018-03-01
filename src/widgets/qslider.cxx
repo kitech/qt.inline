@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSlider : public QSlider {
+class Q_DECL_EXPORT MyQSlider : public QSlider {
 public:
   virtual ~MyQSlider() {}
 // void QSlider(class QWidget *)

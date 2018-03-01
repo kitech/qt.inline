@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBoxLayout : public QBoxLayout {
+class Q_DECL_EXPORT MyQBoxLayout : public QBoxLayout {
 public:
   virtual ~MyQBoxLayout() {}
 // void QBoxLayout(enum QBoxLayout::Direction, class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQColor : public QColor {
+class Q_DECL_EXPORT MyQColor : public QColor {
 public:
   virtual ~MyQColor() {}
 // void QColor()

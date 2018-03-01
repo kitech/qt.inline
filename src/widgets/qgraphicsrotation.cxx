@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsRotation : public QGraphicsRotation {
+class Q_DECL_EXPORT MyQGraphicsRotation : public QGraphicsRotation {
 public:
   virtual ~MyQGraphicsRotation() {}
 // void QGraphicsRotation(class QObject *)

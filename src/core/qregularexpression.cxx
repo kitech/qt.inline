@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRegularExpression : public QRegularExpression {
+class Q_DECL_EXPORT MyQRegularExpression : public QRegularExpression {
 public:
   virtual ~MyQRegularExpression() {}
 // void QRegularExpression()

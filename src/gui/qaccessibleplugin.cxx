@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessiblePlugin : public QAccessiblePlugin {
+class Q_DECL_EXPORT MyQAccessiblePlugin : public QAccessiblePlugin {
 public:
   virtual ~MyQAccessiblePlugin() {}
 // void QAccessiblePlugin(class QObject *)

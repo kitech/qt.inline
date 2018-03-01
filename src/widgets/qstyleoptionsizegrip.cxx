@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionSizeGrip : public QStyleOptionSizeGrip {
+class Q_DECL_EXPORT MyQStyleOptionSizeGrip : public QStyleOptionSizeGrip {
 public:
   virtual ~MyQStyleOptionSizeGrip() {}
 // void QStyleOptionSizeGrip()

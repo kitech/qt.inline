@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRubberBand : public QRubberBand {
+class Q_DECL_EXPORT MyQRubberBand : public QRubberBand {
 public:
   virtual ~MyQRubberBand() {}
 // void QRubberBand(enum QRubberBand::Shape, class QWidget *)

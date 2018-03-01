@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyAbstractComparatorFunction : public QtPrivate::AbstractComparatorFunction {
+class Q_DECL_EXPORT MyAbstractComparatorFunction : public QtPrivate::AbstractComparatorFunction {
 public:
   virtual ~MyAbstractComparatorFunction() {}
 };

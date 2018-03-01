@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStackedLayout : public QStackedLayout {
+class Q_DECL_EXPORT MyQStackedLayout : public QStackedLayout {
 public:
   virtual ~MyQStackedLayout() {}
 // void QStackedLayout()

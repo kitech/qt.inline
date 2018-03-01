@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextCodec : public QTextCodec {
+class Q_DECL_EXPORT MyQTextCodec : public QTextCodec {
 public:
   virtual ~MyQTextCodec() {}
 // void QTextCodec()

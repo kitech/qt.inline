@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUndoGroup : public QUndoGroup {
+class Q_DECL_EXPORT MyQUndoGroup : public QUndoGroup {
 public:
   virtual ~MyQUndoGroup() {}
 // void QUndoGroup(class QObject *)

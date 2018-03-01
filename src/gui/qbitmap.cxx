@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBitmap : public QBitmap {
+class Q_DECL_EXPORT MyQBitmap : public QBitmap {
 public:
   virtual ~MyQBitmap() {}
 // void QBitmap()

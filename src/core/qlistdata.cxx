@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQListData : public QListData {
+class Q_DECL_EXPORT MyQListData : public QListData {
 public:
   virtual ~MyQListData() {}
 };

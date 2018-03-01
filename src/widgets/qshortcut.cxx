@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQShortcut : public QShortcut {
+class Q_DECL_EXPORT MyQShortcut : public QShortcut {
 public:
   virtual ~MyQShortcut() {}
 // void QShortcut(class QWidget *)

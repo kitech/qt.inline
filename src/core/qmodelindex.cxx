@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQModelIndex : public QModelIndex {
+class Q_DECL_EXPORT MyQModelIndex : public QModelIndex {
 public:
   virtual ~MyQModelIndex() {}
 // void QModelIndex()

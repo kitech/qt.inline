@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMovie : public QMovie {
+class Q_DECL_EXPORT MyQMovie : public QMovie {
 public:
   virtual ~MyQMovie() {}
 // void QMovie(class QObject *)

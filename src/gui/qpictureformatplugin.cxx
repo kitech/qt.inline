@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPictureFormatPlugin : public QPictureFormatPlugin {
+class Q_DECL_EXPORT MyQPictureFormatPlugin : public QPictureFormatPlugin {
 public:
   virtual ~MyQPictureFormatPlugin() {}
 // void QPictureFormatPlugin(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRegExp : public QRegExp {
+class Q_DECL_EXPORT MyQRegExp : public QRegExp {
 public:
   virtual ~MyQRegExp() {}
 // void QRegExp()

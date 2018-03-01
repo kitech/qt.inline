@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGridLayout : public QGridLayout {
+class Q_DECL_EXPORT MyQGridLayout : public QGridLayout {
 public:
   virtual ~MyQGridLayout() {}
 // void QGridLayout(class QWidget *)

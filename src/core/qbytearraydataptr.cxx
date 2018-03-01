@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQByteArrayDataPtr : public QByteArrayDataPtr {
+class Q_DECL_EXPORT MyQByteArrayDataPtr : public QByteArrayDataPtr {
 public:
   virtual ~MyQByteArrayDataPtr() {}
 };

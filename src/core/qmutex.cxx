@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMutex : public QMutex {
+class Q_DECL_EXPORT MyQMutex : public QMutex {
 public:
   virtual ~MyQMutex() {}
 // void QMutex(enum QMutex::RecursionMode)

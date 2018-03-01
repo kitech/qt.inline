@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLibrary : public QLibrary {
+class Q_DECL_EXPORT MyQLibrary : public QLibrary {
 public:
   virtual ~MyQLibrary() {}
 // void QLibrary(class QObject *)

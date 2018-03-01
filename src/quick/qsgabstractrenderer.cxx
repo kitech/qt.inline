@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGAbstractRenderer : public QSGAbstractRenderer {
+class Q_DECL_EXPORT MyQSGAbstractRenderer : public QSGAbstractRenderer {
 public:
   virtual ~MyQSGAbstractRenderer() {}
 // void QSGAbstractRenderer(class QObject *)
@@ -26,7 +26,7 @@ MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QSGAbstractRenderer::nodeChanged(node, state);
+    // QSGAbstractRenderer::nodeChanged(node, state);
   }
   }
 

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUndoView : public QUndoView {
+class Q_DECL_EXPORT MyQUndoView : public QUndoView {
 public:
   virtual ~MyQUndoView() {}
 // void QUndoView(class QWidget *)

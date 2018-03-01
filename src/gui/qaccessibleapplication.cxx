@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleApplication : public QAccessibleApplication {
+class Q_DECL_EXPORT MyQAccessibleApplication : public QAccessibleApplication {
 public:
   virtual ~MyQAccessibleApplication() {}
 // void QAccessibleApplication()

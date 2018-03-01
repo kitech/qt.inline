@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAssociativeIterable : public QAssociativeIterable {
+class Q_DECL_EXPORT MyQAssociativeIterable : public QAssociativeIterable {
 public:
   virtual ~MyQAssociativeIterable() {}
 };

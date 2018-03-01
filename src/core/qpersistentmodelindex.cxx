@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPersistentModelIndex : public QPersistentModelIndex {
+class Q_DECL_EXPORT MyQPersistentModelIndex : public QPersistentModelIndex {
 public:
   virtual ~MyQPersistentModelIndex() {}
 // void QPersistentModelIndex()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPdfWriter : public QPdfWriter {
+class Q_DECL_EXPORT MyQPdfWriter : public QPdfWriter {
 public:
   virtual ~MyQPdfWriter() {}
 // void QPdfWriter(const class QString &)

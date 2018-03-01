@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLockFile : public QLockFile {
+class Q_DECL_EXPORT MyQLockFile : public QLockFile {
 public:
   virtual ~MyQLockFile() {}
 // void QLockFile(const class QString &)

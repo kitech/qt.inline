@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractConcatenable : public QAbstractConcatenable {
+class Q_DECL_EXPORT MyQAbstractConcatenable : public QAbstractConcatenable {
 public:
   virtual ~MyQAbstractConcatenable() {}
 // Protected static Visibility=Default Availability=Available

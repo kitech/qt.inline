@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTcpServer : public QTcpServer {
+class Q_DECL_EXPORT MyQTcpServer : public QTcpServer {
 public:
   virtual ~MyQTcpServer() {}
 // void QTcpServer(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQObjectCleanupHandler : public QObjectCleanupHandler {
+class Q_DECL_EXPORT MyQObjectCleanupHandler : public QObjectCleanupHandler {
 public:
   virtual ~MyQObjectCleanupHandler() {}
 // void QObjectCleanupHandler()

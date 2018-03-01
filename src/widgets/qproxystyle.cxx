@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQProxyStyle : public QProxyStyle {
+class Q_DECL_EXPORT MyQProxyStyle : public QProxyStyle {
 public:
   virtual ~MyQProxyStyle() {}
 // void QProxyStyle(class QStyle *)

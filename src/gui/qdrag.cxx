@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDrag : public QDrag {
+class Q_DECL_EXPORT MyQDrag : public QDrag {
 public:
   virtual ~MyQDrag() {}
 // void QDrag(class QObject *)

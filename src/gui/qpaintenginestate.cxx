@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPaintEngineState : public QPaintEngineState {
+class Q_DECL_EXPORT MyQPaintEngineState : public QPaintEngineState {
 public:
   virtual ~MyQPaintEngineState() {}
 };

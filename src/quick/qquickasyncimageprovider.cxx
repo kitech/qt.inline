@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickAsyncImageProvider : public QQuickAsyncImageProvider {
+class Q_DECL_EXPORT MyQQuickAsyncImageProvider : public QQuickAsyncImageProvider {
 public:
   virtual ~MyQQuickAsyncImageProvider() {}
 // void QQuickAsyncImageProvider()

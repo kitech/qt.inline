@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractSocket : public QAbstractSocket {
+class Q_DECL_EXPORT MyQAbstractSocket : public QAbstractSocket {
 public:
   virtual ~MyQAbstractSocket() {}
 // void QAbstractSocket(enum QAbstractSocket::SocketType, class QObject *)

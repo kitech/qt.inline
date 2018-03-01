@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIconDragEvent : public QIconDragEvent {
+class Q_DECL_EXPORT MyQIconDragEvent : public QIconDragEvent {
 public:
   virtual ~MyQIconDragEvent() {}
 // void QIconDragEvent()

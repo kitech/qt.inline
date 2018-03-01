@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTabletEvent : public QTabletEvent {
+class Q_DECL_EXPORT MyQTabletEvent : public QTabletEvent {
 public:
   virtual ~MyQTabletEvent() {}
 // void QTabletEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, int, int, qreal, int, int, qreal, qreal, int, Qt::KeyboardModifiers, qint64)

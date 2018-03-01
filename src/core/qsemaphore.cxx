@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSemaphore : public QSemaphore {
+class Q_DECL_EXPORT MyQSemaphore : public QSemaphore {
 public:
   virtual ~MyQSemaphore() {}
 // void QSemaphore(int)

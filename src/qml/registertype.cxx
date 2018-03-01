@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyRegisterType : public QQmlPrivate::RegisterType {
+class Q_DECL_EXPORT MyRegisterType : public QQmlPrivate::RegisterType {
 public:
   virtual ~MyRegisterType() {}
 };

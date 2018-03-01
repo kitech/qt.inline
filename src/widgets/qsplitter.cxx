@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSplitter : public QSplitter {
+class Q_DECL_EXPORT MyQSplitter : public QSplitter {
 public:
   virtual ~MyQSplitter() {}
 // void QSplitter(class QWidget *)

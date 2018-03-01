@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGroupBox : public QGroupBox {
+class Q_DECL_EXPORT MyQGroupBox : public QGroupBox {
 public:
   virtual ~MyQGroupBox() {}
 // void QGroupBox(class QWidget *)

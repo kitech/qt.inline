@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsOpacityEffect : public QGraphicsOpacityEffect {
+class Q_DECL_EXPORT MyQGraphicsOpacityEffect : public QGraphicsOpacityEffect {
 public:
   virtual ~MyQGraphicsOpacityEffect() {}
 // void QGraphicsOpacityEffect(class QObject *)

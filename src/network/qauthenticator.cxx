@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAuthenticator : public QAuthenticator {
+class Q_DECL_EXPORT MyQAuthenticator : public QAuthenticator {
 public:
   virtual ~MyQAuthenticator() {}
 // void QAuthenticator()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkCookieJar : public QNetworkCookieJar {
+class Q_DECL_EXPORT MyQNetworkCookieJar : public QNetworkCookieJar {
 public:
   virtual ~MyQNetworkCookieJar() {}
 // void QNetworkCookieJar(class QObject *)

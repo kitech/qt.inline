@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQToolBarChangeEvent : public QToolBarChangeEvent {
+class Q_DECL_EXPORT MyQToolBarChangeEvent : public QToolBarChangeEvent {
 public:
   virtual ~MyQToolBarChangeEvent() {}
 // void QToolBarChangeEvent(_Bool)

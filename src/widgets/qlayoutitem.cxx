@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLayoutItem : public QLayoutItem {
+class Q_DECL_EXPORT MyQLayoutItem : public QLayoutItem {
 public:
   virtual ~MyQLayoutItem() {}
 // void QLayoutItem(Qt::Alignment)

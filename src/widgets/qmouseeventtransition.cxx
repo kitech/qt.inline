@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMouseEventTransition : public QMouseEventTransition {
+class Q_DECL_EXPORT MyQMouseEventTransition : public QMouseEventTransition {
 public:
   virtual ~MyQMouseEventTransition() {}
 // void QMouseEventTransition(class QState *)

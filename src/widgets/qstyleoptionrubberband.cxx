@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionRubberBand : public QStyleOptionRubberBand {
+class Q_DECL_EXPORT MyQStyleOptionRubberBand : public QStyleOptionRubberBand {
 public:
   virtual ~MyQStyleOptionRubberBand() {}
 // void QStyleOptionRubberBand()

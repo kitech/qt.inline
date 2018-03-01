@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTextInterface : public QAccessibleTextInterface {
+class Q_DECL_EXPORT MyQAccessibleTextInterface : public QAccessibleTextInterface {
 public:
   virtual ~MyQAccessibleTextInterface() {}
 };

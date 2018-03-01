@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQColumnView : public QColumnView {
+class Q_DECL_EXPORT MyQColumnView : public QColumnView {
 public:
   virtual ~MyQColumnView() {}
 // void QColumnView(class QWidget *)

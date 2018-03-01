@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHashCombine : public QtPrivate::QHashCombine {
+class Q_DECL_EXPORT MyQHashCombine : public QtPrivate::QHashCombine {
 public:
   virtual ~MyQHashCombine() {}
 };

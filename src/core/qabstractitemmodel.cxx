@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractItemModel : public QAbstractItemModel {
+class Q_DECL_EXPORT MyQAbstractItemModel : public QAbstractItemModel {
 public:
   virtual ~MyQAbstractItemModel() {}
 // void QAbstractItemModel(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPlatformSurfaceEvent : public QPlatformSurfaceEvent {
+class Q_DECL_EXPORT MyQPlatformSurfaceEvent : public QPlatformSurfaceEvent {
 public:
   virtual ~MyQPlatformSurfaceEvent() {}
 // void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)

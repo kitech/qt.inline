@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionFocusRect : public QStyleOptionFocusRect {
+class Q_DECL_EXPORT MyQStyleOptionFocusRect : public QStyleOptionFocusRect {
 public:
   virtual ~MyQStyleOptionFocusRect() {}
 // void QStyleOptionFocusRect()

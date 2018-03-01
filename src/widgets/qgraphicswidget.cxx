@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsWidget : public QGraphicsWidget {
+class Q_DECL_EXPORT MyQGraphicsWidget : public QGraphicsWidget {
 public:
   virtual ~MyQGraphicsWidget() {}
 // void QGraphicsWidget(class QGraphicsItem *, Qt::WindowFlags)

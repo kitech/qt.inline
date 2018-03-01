@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSplitterHandle : public QSplitterHandle {
+class Q_DECL_EXPORT MyQSplitterHandle : public QSplitterHandle {
 public:
   virtual ~MyQSplitterHandle() {}
 // void QSplitterHandle(Qt::Orientation, class QSplitter *)

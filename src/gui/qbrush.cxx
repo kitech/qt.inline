@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBrush : public QBrush {
+class Q_DECL_EXPORT MyQBrush : public QBrush {
 public:
   virtual ~MyQBrush() {}
 // void QBrush()

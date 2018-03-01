@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamEntityResolver : public QXmlStreamEntityResolver {
+class Q_DECL_EXPORT MyQXmlStreamEntityResolver : public QXmlStreamEntityResolver {
 public:
   virtual ~MyQXmlStreamEntityResolver() {}
 };

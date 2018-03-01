@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsView : public QGraphicsView {
+class Q_DECL_EXPORT MyQGraphicsView : public QGraphicsView {
 public:
   virtual ~MyQGraphicsView() {}
 // void QGraphicsView(class QWidget *)

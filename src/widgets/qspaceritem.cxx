@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSpacerItem : public QSpacerItem {
+class Q_DECL_EXPORT MyQSpacerItem : public QSpacerItem {
 public:
   virtual ~MyQSpacerItem() {}
 // void QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRgba64 : public QRgba64 {
+class Q_DECL_EXPORT MyQRgba64 : public QRgba64 {
 public:
   virtual ~MyQRgba64() {}
 // void QRgba64()

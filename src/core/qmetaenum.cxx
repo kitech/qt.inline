@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMetaEnum : public QMetaEnum {
+class Q_DECL_EXPORT MyQMetaEnum : public QMetaEnum {
 public:
   virtual ~MyQMetaEnum() {}
 // void QMetaEnum()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCryptographicHash : public QCryptographicHash {
+class Q_DECL_EXPORT MyQCryptographicHash : public QCryptographicHash {
 public:
   virtual ~MyQCryptographicHash() {}
 // void QCryptographicHash(enum QCryptographicHash::Algorithm)

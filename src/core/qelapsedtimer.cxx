@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQElapsedTimer : public QElapsedTimer {
+class Q_DECL_EXPORT MyQElapsedTimer : public QElapsedTimer {
 public:
   virtual ~MyQElapsedTimer() {}
 // void QElapsedTimer()

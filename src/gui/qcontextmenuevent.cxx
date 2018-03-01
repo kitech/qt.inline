@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQContextMenuEvent : public QContextMenuEvent {
+class Q_DECL_EXPORT MyQContextMenuEvent : public QContextMenuEvent {
 public:
   virtual ~MyQContextMenuEvent() {}
 // void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &, Qt::KeyboardModifiers)

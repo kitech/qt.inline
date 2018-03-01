@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBrushData : public QBrushData {
+class Q_DECL_EXPORT MyQBrushData : public QBrushData {
 public:
   virtual ~MyQBrushData() {}
 };

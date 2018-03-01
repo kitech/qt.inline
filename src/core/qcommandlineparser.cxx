@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCommandLineParser : public QCommandLineParser {
+class Q_DECL_EXPORT MyQCommandLineParser : public QCommandLineParser {
 public:
   virtual ~MyQCommandLineParser() {}
 // void QCommandLineParser()

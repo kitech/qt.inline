@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFocusFrame : public QFocusFrame {
+class Q_DECL_EXPORT MyQFocusFrame : public QFocusFrame {
 public:
   virtual ~MyQFocusFrame() {}
 // void QFocusFrame(class QWidget *)

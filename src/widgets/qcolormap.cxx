@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQColormap : public QColormap {
+class Q_DECL_EXPORT MyQColormap : public QColormap {
 public:
   virtual ~MyQColormap() {}
 };

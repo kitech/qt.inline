@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextImageFormat : public QTextImageFormat {
+class Q_DECL_EXPORT MyQTextImageFormat : public QTextImageFormat {
 public:
   virtual ~MyQTextImageFormat() {}
 // void QTextImageFormat()

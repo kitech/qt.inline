@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuaternion : public QQuaternion {
+class Q_DECL_EXPORT MyQQuaternion : public QQuaternion {
 public:
   virtual ~MyQQuaternion() {}
 // void QQuaternion()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMessageLogContext : public QMessageLogContext {
+class Q_DECL_EXPORT MyQMessageLogContext : public QMessageLogContext {
 public:
   virtual ~MyQMessageLogContext() {}
 // void QMessageLogContext()

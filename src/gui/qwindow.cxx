@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWindow : public QWindow {
+class Q_DECL_EXPORT MyQWindow : public QWindow {
 public:
   virtual ~MyQWindow() {}
 // void QWindow(class QScreen *)

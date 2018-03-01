@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQEvent : public QEvent {
+class Q_DECL_EXPORT MyQEvent : public QEvent {
 public:
   virtual ~MyQEvent() {}
 // void QEvent(enum QEvent::Type)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQProcess : public QProcess {
+class Q_DECL_EXPORT MyQProcess : public QProcess {
 public:
   virtual ~MyQProcess() {}
 // void QProcess(class QObject *)

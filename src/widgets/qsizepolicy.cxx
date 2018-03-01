@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSizePolicy : public QSizePolicy {
+class Q_DECL_EXPORT MyQSizePolicy : public QSizePolicy {
 public:
   virtual ~MyQSizePolicy() {}
 // void QSizePolicy()

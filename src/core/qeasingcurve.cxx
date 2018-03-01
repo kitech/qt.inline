@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQEasingCurve : public QEasingCurve {
+class Q_DECL_EXPORT MyQEasingCurve : public QEasingCurve {
 public:
   virtual ~MyQEasingCurve() {}
 // void QEasingCurve(enum QEasingCurve::Type)

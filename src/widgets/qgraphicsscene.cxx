@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsScene : public QGraphicsScene {
+class Q_DECL_EXPORT MyQGraphicsScene : public QGraphicsScene {
 public:
   virtual ~MyQGraphicsScene() {}
 // void QGraphicsScene(class QObject *)

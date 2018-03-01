@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleFactory : public QStyleFactory {
+class Q_DECL_EXPORT MyQStyleFactory : public QStyleFactory {
 public:
   virtual ~MyQStyleFactory() {}
 };

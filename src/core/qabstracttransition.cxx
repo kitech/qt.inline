@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractTransition : public QAbstractTransition {
+class Q_DECL_EXPORT MyQAbstractTransition : public QAbstractTransition {
 public:
   virtual ~MyQAbstractTransition() {}
 // void QAbstractTransition(class QState *)
@@ -27,7 +27,7 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    return QAbstractTransition::eventTest(event);
+    return bool{};
   }
   }
 
@@ -39,7 +39,7 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractTransition::onTransition(event);
+    // QAbstractTransition::onTransition(event);
   }
   }
 

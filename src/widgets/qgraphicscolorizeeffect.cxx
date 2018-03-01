@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsColorizeEffect : public QGraphicsColorizeEffect {
+class Q_DECL_EXPORT MyQGraphicsColorizeEffect : public QGraphicsColorizeEffect {
 public:
   virtual ~MyQGraphicsColorizeEffect() {}
 // void QGraphicsColorizeEffect(class QObject *)

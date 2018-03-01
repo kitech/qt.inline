@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGNode : public QSGNode {
+class Q_DECL_EXPORT MyQSGNode : public QSGNode {
 public:
   virtual ~MyQSGNode() {}
 // void QSGNode()

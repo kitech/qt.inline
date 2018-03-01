@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQParallelAnimationGroup : public QParallelAnimationGroup {
+class Q_DECL_EXPORT MyQParallelAnimationGroup : public QParallelAnimationGroup {
 public:
   virtual ~MyQParallelAnimationGroup() {}
 // void QParallelAnimationGroup(class QObject *)

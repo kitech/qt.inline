@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFormLayout : public QFormLayout {
+class Q_DECL_EXPORT MyQFormLayout : public QFormLayout {
 public:
   virtual ~MyQFormLayout() {}
 // void QFormLayout(class QWidget *)

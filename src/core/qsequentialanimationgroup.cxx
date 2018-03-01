@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSequentialAnimationGroup : public QSequentialAnimationGroup {
+class Q_DECL_EXPORT MyQSequentialAnimationGroup : public QSequentialAnimationGroup {
 public:
   virtual ~MyQSequentialAnimationGroup() {}
 // void QSequentialAnimationGroup(class QObject *)

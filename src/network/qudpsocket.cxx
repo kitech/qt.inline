@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUdpSocket : public QUdpSocket {
+class Q_DECL_EXPORT MyQUdpSocket : public QUdpSocket {
 public:
   virtual ~MyQUdpSocket() {}
 // void QUdpSocket(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractAnimation : public QAbstractAnimation {
+class Q_DECL_EXPORT MyQAbstractAnimation : public QAbstractAnimation {
 public:
   virtual ~MyQAbstractAnimation() {}
 // void QAbstractAnimation(class QObject *)
@@ -39,7 +39,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractAnimation::updateCurrentTime(currentTime);
+    // QAbstractAnimation::updateCurrentTime(currentTime);
   }
   }
 

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractNetworkCache : public QAbstractNetworkCache {
+class Q_DECL_EXPORT MyQAbstractNetworkCache : public QAbstractNetworkCache {
 public:
   virtual ~MyQAbstractNetworkCache() {}
 // void QAbstractNetworkCache(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextBlockGroup : public QTextBlockGroup {
+class Q_DECL_EXPORT MyQTextBlockGroup : public QTextBlockGroup {
 public:
   virtual ~MyQTextBlockGroup() {}
 // void QTextBlockGroup(class QTextDocument *)

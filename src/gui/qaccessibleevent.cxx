@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleEvent : public QAccessibleEvent {
+class Q_DECL_EXPORT MyQAccessibleEvent : public QAccessibleEvent {
 public:
   virtual ~MyQAccessibleEvent() {}
 // void QAccessibleEvent(class QObject *, class QAccessible::Event)

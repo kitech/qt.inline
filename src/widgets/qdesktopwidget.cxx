@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDesktopWidget : public QDesktopWidget {
+class Q_DECL_EXPORT MyQDesktopWidget : public QDesktopWidget {
 public:
   virtual ~MyQDesktopWidget() {}
 // void QDesktopWidget()

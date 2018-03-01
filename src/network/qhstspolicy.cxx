@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHstsPolicy : public QHstsPolicy {
+class Q_DECL_EXPORT MyQHstsPolicy : public QHstsPolicy {
 public:
   virtual ~MyQHstsPolicy() {}
 // void QHstsPolicy()

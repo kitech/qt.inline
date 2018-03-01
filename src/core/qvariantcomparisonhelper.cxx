@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQVariantComparisonHelper : public QVariantComparisonHelper {
+class Q_DECL_EXPORT MyQVariantComparisonHelper : public QVariantComparisonHelper {
 public:
   virtual ~MyQVariantComparisonHelper() {}
 // void QVariantComparisonHelper(const class QVariant &)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMenu : public QMenu {
+class Q_DECL_EXPORT MyQMenu : public QMenu {
 public:
   virtual ~MyQMenu() {}
 // void QMenu(class QWidget *)

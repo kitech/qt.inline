@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSysInfo : public QSysInfo {
+class Q_DECL_EXPORT MyQSysInfo : public QSysInfo {
 public:
   virtual ~MyQSysInfo() {}
 };

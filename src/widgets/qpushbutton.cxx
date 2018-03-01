@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPushButton : public QPushButton {
+class Q_DECL_EXPORT MyQPushButton : public QPushButton {
 public:
   virtual ~MyQPushButton() {}
 // void QPushButton(class QWidget *)

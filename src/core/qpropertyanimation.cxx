@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPropertyAnimation : public QPropertyAnimation {
+class Q_DECL_EXPORT MyQPropertyAnimation : public QPropertyAnimation {
 public:
   virtual ~MyQPropertyAnimation() {}
 // void QPropertyAnimation(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsLinearLayout : public QGraphicsLinearLayout {
+class Q_DECL_EXPORT MyQGraphicsLinearLayout : public QGraphicsLinearLayout {
 public:
   virtual ~MyQGraphicsLinearLayout() {}
 // void QGraphicsLinearLayout(class QGraphicsLayoutItem *)

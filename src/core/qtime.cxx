@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTime : public QTime {
+class Q_DECL_EXPORT MyQTime : public QTime {
 public:
   virtual ~MyQTime() {}
 // void QTime()

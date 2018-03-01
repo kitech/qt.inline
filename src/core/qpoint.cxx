@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPoint : public QPoint {
+class Q_DECL_EXPORT MyQPoint : public QPoint {
 public:
   virtual ~MyQPoint() {}
 // void QPoint()

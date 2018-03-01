@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQShowEvent : public QShowEvent {
+class Q_DECL_EXPORT MyQShowEvent : public QShowEvent {
 public:
   virtual ~MyQShowEvent() {}
 // void QShowEvent()

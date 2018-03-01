@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQInputEvent : public QInputEvent {
+class Q_DECL_EXPORT MyQInputEvent : public QInputEvent {
 public:
   virtual ~MyQInputEvent() {}
 // void QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)

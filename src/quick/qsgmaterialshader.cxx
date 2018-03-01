@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGMaterialShader : public QSGMaterialShader {
+class Q_DECL_EXPORT MyQSGMaterialShader : public QSGMaterialShader {
 public:
   virtual ~MyQSGMaterialShader() {}
 // void QSGMaterialShader()

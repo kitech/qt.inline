@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDoubleValidator : public QDoubleValidator {
+class Q_DECL_EXPORT MyQDoubleValidator : public QDoubleValidator {
 public:
   virtual ~MyQDoubleValidator() {}
 // void QDoubleValidator(class QObject *)

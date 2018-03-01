@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStringDataPtr : public QStringDataPtr {
+class Q_DECL_EXPORT MyQStringDataPtr : public QStringDataPtr {
 public:
   virtual ~MyQStringDataPtr() {}
 };

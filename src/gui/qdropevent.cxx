@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDropEvent : public QDropEvent {
+class Q_DECL_EXPORT MyQDropEvent : public QDropEvent {
 public:
   virtual ~MyQDropEvent() {}
 // void QDropEvent(const class QPointF &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)

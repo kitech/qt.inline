@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextDecoder : public QTextDecoder {
+class Q_DECL_EXPORT MyQTextDecoder : public QTextDecoder {
 public:
   virtual ~MyQTextDecoder() {}
 // void QTextDecoder(const class QTextCodec *)

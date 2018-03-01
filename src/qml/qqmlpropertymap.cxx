@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlPropertyMap : public QQmlPropertyMap {
+class Q_DECL_EXPORT MyQQmlPropertyMap : public QQmlPropertyMap {
 public:
   virtual ~MyQQmlPropertyMap() {}
 // void QQmlPropertyMap(class QObject *)

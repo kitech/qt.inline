@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionGroupBox : public QStyleOptionGroupBox {
+class Q_DECL_EXPORT MyQStyleOptionGroupBox : public QStyleOptionGroupBox {
 public:
   virtual ~MyQStyleOptionGroupBox() {}
 // void QStyleOptionGroupBox()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQApplication : public QApplication {
+class Q_DECL_EXPORT MyQApplication : public QApplication {
 public:
   virtual ~MyQApplication() {}
 // void QApplication(int &, char **, int)

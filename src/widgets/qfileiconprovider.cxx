@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileIconProvider : public QFileIconProvider {
+class Q_DECL_EXPORT MyQFileIconProvider : public QFileIconProvider {
 public:
   virtual ~MyQFileIconProvider() {}
 // void QFileIconProvider()

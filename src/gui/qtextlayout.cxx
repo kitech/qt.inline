@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextLayout : public QTextLayout {
+class Q_DECL_EXPORT MyQTextLayout : public QTextLayout {
 public:
   virtual ~MyQTextLayout() {}
 // void QTextLayout()

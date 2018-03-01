@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCollator : public QCollator {
+class Q_DECL_EXPORT MyQCollator : public QCollator {
 public:
   virtual ~MyQCollator() {}
 // void QCollator(const class QLocale &)

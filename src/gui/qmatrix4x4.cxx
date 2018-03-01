@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMatrix4x4 : public QMatrix4x4 {
+class Q_DECL_EXPORT MyQMatrix4x4 : public QMatrix4x4 {
 public:
   virtual ~MyQMatrix4x4() {}
 // void QMatrix4x4()

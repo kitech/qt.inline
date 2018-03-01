@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHideEvent : public QHideEvent {
+class Q_DECL_EXPORT MyQHideEvent : public QHideEvent {
 public:
   virtual ~MyQHideEvent() {}
 // void QHideEvent()

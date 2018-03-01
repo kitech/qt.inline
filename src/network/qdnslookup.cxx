@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDnsLookup : public QDnsLookup {
+class Q_DECL_EXPORT MyQDnsLookup : public QDnsLookup {
 public:
   virtual ~MyQDnsLookup() {}
 // void QDnsLookup(class QObject *)

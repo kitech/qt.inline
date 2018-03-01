@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextCursor : public QTextCursor {
+class Q_DECL_EXPORT MyQTextCursor : public QTextCursor {
 public:
   virtual ~MyQTextCursor() {}
 // void QTextCursor()

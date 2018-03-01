@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlDebuggingEnabler : public QQmlDebuggingEnabler {
+class Q_DECL_EXPORT MyQQmlDebuggingEnabler : public QQmlDebuggingEnabler {
 public:
   virtual ~MyQQmlDebuggingEnabler() {}
 // void QQmlDebuggingEnabler(_Bool)

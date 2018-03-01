@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGEngine : public QSGEngine {
+class Q_DECL_EXPORT MyQSGEngine : public QSGEngine {
 public:
   virtual ~MyQSGEngine() {}
 // void QSGEngine(class QObject *)

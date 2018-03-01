@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlScriptString : public QQmlScriptString {
+class Q_DECL_EXPORT MyQQmlScriptString : public QQmlScriptString {
 public:
   virtual ~MyQQmlScriptString() {}
 // void QQmlScriptString()

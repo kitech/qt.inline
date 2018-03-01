@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQArrayData : public QArrayData {
+class Q_DECL_EXPORT MyQArrayData : public QArrayData {
 public:
   virtual ~MyQArrayData() {}
 };

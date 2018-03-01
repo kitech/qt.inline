@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPixmap : public QPixmap {
+class Q_DECL_EXPORT MyQPixmap : public QPixmap {
 public:
   virtual ~MyQPixmap() {}
 // void QPixmap()

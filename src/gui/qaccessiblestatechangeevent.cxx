@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleStateChangeEvent : public QAccessibleStateChangeEvent {
+class Q_DECL_EXPORT MyQAccessibleStateChangeEvent : public QAccessibleStateChangeEvent {
 public:
   virtual ~MyQAccessibleStateChangeEvent() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextList : public QTextList {
+class Q_DECL_EXPORT MyQTextList : public QTextList {
 public:
   virtual ~MyQTextList() {}
 // void QTextList(class QTextDocument *)

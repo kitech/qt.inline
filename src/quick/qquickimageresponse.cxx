@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickImageResponse : public QQuickImageResponse {
+class Q_DECL_EXPORT MyQQuickImageResponse : public QQuickImageResponse {
 public:
   virtual ~MyQQuickImageResponse() {}
 // void QQuickImageResponse()

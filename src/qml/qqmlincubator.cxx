@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlIncubator : public QQmlIncubator {
+class Q_DECL_EXPORT MyQQmlIncubator : public QQmlIncubator {
 public:
   virtual ~MyQQmlIncubator() {}
 // void QQmlIncubator(enum QQmlIncubator::IncubationMode)

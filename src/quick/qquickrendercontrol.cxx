@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickRenderControl : public QQuickRenderControl {
+class Q_DECL_EXPORT MyQQuickRenderControl : public QQuickRenderControl {
 public:
   virtual ~MyQQuickRenderControl() {}
 // void QQuickRenderControl(class QObject *)

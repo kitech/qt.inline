@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsSceneContextMenuEvent : public QGraphicsSceneContextMenuEvent {
+class Q_DECL_EXPORT MyQGraphicsSceneContextMenuEvent : public QGraphicsSceneContextMenuEvent {
 public:
   virtual ~MyQGraphicsSceneContextMenuEvent() {}
 // void QGraphicsSceneContextMenuEvent(enum QEvent::Type)

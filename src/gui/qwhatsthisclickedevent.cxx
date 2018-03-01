@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWhatsThisClickedEvent : public QWhatsThisClickedEvent {
+class Q_DECL_EXPORT MyQWhatsThisClickedEvent : public QWhatsThisClickedEvent {
 public:
   virtual ~MyQWhatsThisClickedEvent() {}
 // void QWhatsThisClickedEvent(const class QString &)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPicture : public QPicture {
+class Q_DECL_EXPORT MyQPicture : public QPicture {
 public:
   virtual ~MyQPicture() {}
 // void QPicture(int)

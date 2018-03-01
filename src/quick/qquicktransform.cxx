@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickTransform : public QQuickTransform {
+class Q_DECL_EXPORT MyQQuickTransform : public QQuickTransform {
 public:
   virtual ~MyQQuickTransform() {}
 // void QQuickTransform(class QObject *)

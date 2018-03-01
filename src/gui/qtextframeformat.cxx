@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextFrameFormat : public QTextFrameFormat {
+class Q_DECL_EXPORT MyQTextFrameFormat : public QTextFrameFormat {
 public:
   virtual ~MyQTextFrameFormat() {}
 // void QTextFrameFormat()

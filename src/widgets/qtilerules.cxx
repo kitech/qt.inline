@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTileRules : public QTileRules {
+class Q_DECL_EXPORT MyQTileRules : public QTileRules {
 public:
   virtual ~MyQTileRules() {}
 // void QTileRules(Qt::TileRule, Qt::TileRule)

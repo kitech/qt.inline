@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleValueInterface : public QAccessibleValueInterface {
+class Q_DECL_EXPORT MyQAccessibleValueInterface : public QAccessibleValueInterface {
 public:
   virtual ~MyQAccessibleValueInterface() {}
 };

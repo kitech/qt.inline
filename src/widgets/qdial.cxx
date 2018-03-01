@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDial : public QDial {
+class Q_DECL_EXPORT MyQDial : public QDial {
 public:
   virtual ~MyQDial() {}
 // void QDial(class QWidget *)

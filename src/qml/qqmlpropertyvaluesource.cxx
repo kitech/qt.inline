@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlPropertyValueSource : public QQmlPropertyValueSource {
+class Q_DECL_EXPORT MyQQmlPropertyValueSource : public QQmlPropertyValueSource {
 public:
   virtual ~MyQQmlPropertyValueSource() {}
 // void QQmlPropertyValueSource()

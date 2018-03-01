@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlAbstractUrlInterceptor : public QQmlAbstractUrlInterceptor {
+class Q_DECL_EXPORT MyQQmlAbstractUrlInterceptor : public QQmlAbstractUrlInterceptor {
 public:
   virtual ~MyQQmlAbstractUrlInterceptor() {}
 // void QQmlAbstractUrlInterceptor()

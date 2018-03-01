@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScrollBar : public QScrollBar {
+class Q_DECL_EXPORT MyQScrollBar : public QScrollBar {
 public:
   virtual ~MyQScrollBar() {}
 // void QScrollBar(class QWidget *)

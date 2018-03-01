@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRect : public QRect {
+class Q_DECL_EXPORT MyQRect : public QRect {
 public:
   virtual ~MyQRect() {}
 // void QRect()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQContiguousCacheData : public QContiguousCacheData {
+class Q_DECL_EXPORT MyQContiguousCacheData : public QContiguousCacheData {
 public:
   virtual ~MyQContiguousCacheData() {}
 };

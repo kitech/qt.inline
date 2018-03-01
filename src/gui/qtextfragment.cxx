@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextFragment : public QTextFragment {
+class Q_DECL_EXPORT MyQTextFragment : public QTextFragment {
 public:
   virtual ~MyQTextFragment() {}
 // void QTextFragment()

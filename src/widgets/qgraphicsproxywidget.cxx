@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsProxyWidget : public QGraphicsProxyWidget {
+class Q_DECL_EXPORT MyQGraphicsProxyWidget : public QGraphicsProxyWidget {
 public:
   virtual ~MyQGraphicsProxyWidget() {}
 // void QGraphicsProxyWidget(class QGraphicsItem *, Qt::WindowFlags)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTouchEvent : public QTouchEvent {
+class Q_DECL_EXPORT MyQTouchEvent : public QTouchEvent {
 public:
   virtual ~MyQTouchEvent() {}
 };

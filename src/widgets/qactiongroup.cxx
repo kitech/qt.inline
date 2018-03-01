@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQActionGroup : public QActionGroup {
+class Q_DECL_EXPORT MyQActionGroup : public QActionGroup {
 public:
   virtual ~MyQActionGroup() {}
 // void QActionGroup(class QObject *)

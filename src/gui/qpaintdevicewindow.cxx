@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPaintDeviceWindow : public QPaintDeviceWindow {
+class Q_DECL_EXPORT MyQPaintDeviceWindow : public QPaintDeviceWindow {
 public:
   virtual ~MyQPaintDeviceWindow() {}
 // Protected virtual Visibility=Default Availability=Available

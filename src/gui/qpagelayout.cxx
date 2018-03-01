@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPageLayout : public QPageLayout {
+class Q_DECL_EXPORT MyQPageLayout : public QPageLayout {
 public:
   virtual ~MyQPageLayout() {}
 // void QPageLayout()

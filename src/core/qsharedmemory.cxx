@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSharedMemory : public QSharedMemory {
+class Q_DECL_EXPORT MyQSharedMemory : public QSharedMemory {
 public:
   virtual ~MyQSharedMemory() {}
 // void QSharedMemory(class QObject *)

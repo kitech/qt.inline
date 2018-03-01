@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIODevice : public QIODevice {
+class Q_DECL_EXPORT MyQIODevice : public QIODevice {
 public:
   virtual ~MyQIODevice() {}
 // void QIODevice()
@@ -29,7 +29,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    return QIODevice::readData(data, maxlen);
+    return qint64{};
   }
   }
 
@@ -55,7 +55,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    return QIODevice::writeData(data, len_);
+    return qint64{};
   }
   }
 

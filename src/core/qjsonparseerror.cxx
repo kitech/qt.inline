@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJsonParseError : public QJsonParseError {
+class Q_DECL_EXPORT MyQJsonParseError : public QJsonParseError {
 public:
   virtual ~MyQJsonParseError() {}
 };

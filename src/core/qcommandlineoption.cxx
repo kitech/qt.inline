@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCommandLineOption : public QCommandLineOption {
+class Q_DECL_EXPORT MyQCommandLineOption : public QCommandLineOption {
 public:
   virtual ~MyQCommandLineOption() {}
 // void QCommandLineOption(const class QString &)

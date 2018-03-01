@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTouchDevice : public QTouchDevice {
+class Q_DECL_EXPORT MyQTouchDevice : public QTouchDevice {
 public:
   virtual ~MyQTouchDevice() {}
 // void QTouchDevice()

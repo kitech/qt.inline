@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFontDialog : public QFontDialog {
+class Q_DECL_EXPORT MyQFontDialog : public QFontDialog {
 public:
   virtual ~MyQFontDialog() {}
 // void QFontDialog(class QWidget *)

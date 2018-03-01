@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyVectorBoolElements : public QtMetaTypePrivate::VectorBoolElements {
+class Q_DECL_EXPORT MyVectorBoolElements : public QtMetaTypePrivate::VectorBoolElements {
 public:
   virtual ~MyVectorBoolElements() {}
 };

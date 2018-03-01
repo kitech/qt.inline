@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSurface : public QSurface {
+class Q_DECL_EXPORT MyQSurface : public QSurface {
 public:
   virtual ~MyQSurface() {}
 // void QSurface(enum QSurface::SurfaceClass)

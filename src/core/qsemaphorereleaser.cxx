@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSemaphoreReleaser : public QSemaphoreReleaser {
+class Q_DECL_EXPORT MyQSemaphoreReleaser : public QSemaphoreReleaser {
 public:
   virtual ~MyQSemaphoreReleaser() {}
 // void QSemaphoreReleaser()

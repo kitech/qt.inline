@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextObject : public QTextObject {
+class Q_DECL_EXPORT MyQTextObject : public QTextObject {
 public:
   virtual ~MyQTextObject() {}
 // void QTextObject(class QTextDocument *)

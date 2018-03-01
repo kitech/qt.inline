@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickImageProvider : public QQuickImageProvider {
+class Q_DECL_EXPORT MyQQuickImageProvider : public QQuickImageProvider {
 public:
   virtual ~MyQQuickImageProvider() {}
 // void QQuickImageProvider(enum QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)

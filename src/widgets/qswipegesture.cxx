@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSwipeGesture : public QSwipeGesture {
+class Q_DECL_EXPORT MyQSwipeGesture : public QSwipeGesture {
 public:
   virtual ~MyQSwipeGesture() {}
 // void QSwipeGesture(class QObject *)

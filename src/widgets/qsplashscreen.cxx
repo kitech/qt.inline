@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSplashScreen : public QSplashScreen {
+class Q_DECL_EXPORT MyQSplashScreen : public QSplashScreen {
 public:
   virtual ~MyQSplashScreen() {}
 // void QSplashScreen(const class QPixmap &, Qt::WindowFlags)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStringMatcher : public QStringMatcher {
+class Q_DECL_EXPORT MyQStringMatcher : public QStringMatcher {
 public:
   virtual ~MyQStringMatcher() {}
 // void QStringMatcher()

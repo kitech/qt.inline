@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslPreSharedKeyAuthenticator : public QSslPreSharedKeyAuthenticator {
+class Q_DECL_EXPORT MyQSslPreSharedKeyAuthenticator : public QSslPreSharedKeyAuthenticator {
 public:
   virtual ~MyQSslPreSharedKeyAuthenticator() {}
 // void QSslPreSharedKeyAuthenticator()

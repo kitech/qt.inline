@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQVector3D : public QVector3D {
+class Q_DECL_EXPORT MyQVector3D : public QVector3D {
 public:
   virtual ~MyQVector3D() {}
 // void QVector3D()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPaintEvent : public QPaintEvent {
+class Q_DECL_EXPORT MyQPaintEvent : public QPaintEvent {
 public:
   virtual ~MyQPaintEvent() {}
 // void QPaintEvent(const class QRegion &)

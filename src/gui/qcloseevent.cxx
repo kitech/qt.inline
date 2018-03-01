@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCloseEvent : public QCloseEvent {
+class Q_DECL_EXPORT MyQCloseEvent : public QCloseEvent {
 public:
   virtual ~MyQCloseEvent() {}
 // void QCloseEvent()

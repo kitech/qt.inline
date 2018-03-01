@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionComboBox : public QStyleOptionComboBox {
+class Q_DECL_EXPORT MyQStyleOptionComboBox : public QStyleOptionComboBox {
 public:
   virtual ~MyQStyleOptionComboBox() {}
 // void QStyleOptionComboBox()

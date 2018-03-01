@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGMaterialType : public QSGMaterialType {
+class Q_DECL_EXPORT MyQSGMaterialType : public QSGMaterialType {
 public:
   virtual ~MyQSGMaterialType() {}
 };

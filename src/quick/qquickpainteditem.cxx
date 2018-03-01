@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickPaintedItem : public QQuickPaintedItem {
+class Q_DECL_EXPORT MyQQuickPaintedItem : public QQuickPaintedItem {
 public:
   virtual ~MyQQuickPaintedItem() {}
 // void QQuickPaintedItem(class QQuickItem *)

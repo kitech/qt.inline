@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickWindow : public QQuickWindow {
+class Q_DECL_EXPORT MyQQuickWindow : public QQuickWindow {
 public:
   virtual ~MyQQuickWindow() {}
 // void QQuickWindow(class QWindow *)

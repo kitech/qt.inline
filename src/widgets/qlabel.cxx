@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLabel : public QLabel {
+class Q_DECL_EXPORT MyQLabel : public QLabel {
 public:
   virtual ~MyQLabel() {}
 // void QLabel(class QWidget *, Qt::WindowFlags)

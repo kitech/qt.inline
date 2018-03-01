@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQToolBar : public QToolBar {
+class Q_DECL_EXPORT MyQToolBar : public QToolBar {
 public:
   virtual ~MyQToolBar() {}
 // void QToolBar(const class QString &, class QWidget *)

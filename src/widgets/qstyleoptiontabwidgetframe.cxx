@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionTabWidgetFrame : public QStyleOptionTabWidgetFrame {
+class Q_DECL_EXPORT MyQStyleOptionTabWidgetFrame : public QStyleOptionTabWidgetFrame {
 public:
   virtual ~MyQStyleOptionTabWidgetFrame() {}
 // void QStyleOptionTabWidgetFrame()

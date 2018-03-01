@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractNativeEventFilter : public QAbstractNativeEventFilter {
+class Q_DECL_EXPORT MyQAbstractNativeEventFilter : public QAbstractNativeEventFilter {
 public:
   virtual ~MyQAbstractNativeEventFilter() {}
 // void QAbstractNativeEventFilter()

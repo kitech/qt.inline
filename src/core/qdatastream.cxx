@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDataStream : public QDataStream {
+class Q_DECL_EXPORT MyQDataStream : public QDataStream {
 public:
   virtual ~MyQDataStream() {}
 // void QDataStream()

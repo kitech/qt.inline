@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTimerEvent : public QTimerEvent {
+class Q_DECL_EXPORT MyQTimerEvent : public QTimerEvent {
 public:
   virtual ~MyQTimerEvent() {}
 // void QTimerEvent(int)

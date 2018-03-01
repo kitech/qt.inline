@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPen : public QPen {
+class Q_DECL_EXPORT MyQPen : public QPen {
 public:
   virtual ~MyQPen() {}
 // void QPen()

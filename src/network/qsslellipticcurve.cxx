@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslEllipticCurve : public QSslEllipticCurve {
+class Q_DECL_EXPORT MyQSslEllipticCurve : public QSslEllipticCurve {
 public:
   virtual ~MyQSslEllipticCurve() {}
 // void QSslEllipticCurve()

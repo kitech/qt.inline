@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAtomicInt : public QAtomicInt {
+class Q_DECL_EXPORT MyQAtomicInt : public QAtomicInt {
 public:
   virtual ~MyQAtomicInt() {}
 // void QAtomicInt(int)

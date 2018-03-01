@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStaticText : public QStaticText {
+class Q_DECL_EXPORT MyQStaticText : public QStaticText {
 public:
   virtual ~MyQStaticText() {}
 // void QStaticText()

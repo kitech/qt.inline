@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPictureIO : public QPictureIO {
+class Q_DECL_EXPORT MyQPictureIO : public QPictureIO {
 public:
   virtual ~MyQPictureIO() {}
 // void QPictureIO()

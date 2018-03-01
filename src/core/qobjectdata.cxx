@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQObjectData : public QObjectData {
+class Q_DECL_EXPORT MyQObjectData : public QObjectData {
 public:
   virtual ~MyQObjectData() {}
 };

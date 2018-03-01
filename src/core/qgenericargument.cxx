@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGenericArgument : public QGenericArgument {
+class Q_DECL_EXPORT MyQGenericArgument : public QGenericArgument {
 public:
   virtual ~MyQGenericArgument() {}
 // void QGenericArgument(const char *, const void *)

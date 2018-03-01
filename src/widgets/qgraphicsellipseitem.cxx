@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsEllipseItem : public QGraphicsEllipseItem {
+class Q_DECL_EXPORT MyQGraphicsEllipseItem : public QGraphicsEllipseItem {
 public:
   virtual ~MyQGraphicsEllipseItem() {}
 // void QGraphicsEllipseItem(class QGraphicsItem *)

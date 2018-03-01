@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTranslator : public QTranslator {
+class Q_DECL_EXPORT MyQTranslator : public QTranslator {
 public:
   virtual ~MyQTranslator() {}
 // void QTranslator(class QObject *)

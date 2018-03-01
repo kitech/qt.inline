@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkDatagram : public QNetworkDatagram {
+class Q_DECL_EXPORT MyQNetworkDatagram : public QNetworkDatagram {
 public:
   virtual ~MyQNetworkDatagram() {}
 // void QNetworkDatagram()

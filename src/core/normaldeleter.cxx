@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyNormalDeleter : public QtSharedPointer::NormalDeleter {
+class Q_DECL_EXPORT MyNormalDeleter : public QtSharedPointer::NormalDeleter {
 public:
   virtual ~MyNormalDeleter() {}
 };

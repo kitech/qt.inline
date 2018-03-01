@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFutureInterfaceBase : public QFutureInterfaceBase {
+class Q_DECL_EXPORT MyQFutureInterfaceBase : public QFutureInterfaceBase {
 public:
   virtual ~MyQFutureInterfaceBase() {}
 // void QFutureInterfaceBase(enum QFutureInterfaceBase::State)

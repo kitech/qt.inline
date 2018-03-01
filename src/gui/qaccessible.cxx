@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessible : public QAccessible {
+class Q_DECL_EXPORT MyQAccessible : public QAccessible {
 public:
   virtual ~MyQAccessible() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTimeLine : public QTimeLine {
+class Q_DECL_EXPORT MyQTimeLine : public QTimeLine {
 public:
   virtual ~MyQTimeLine() {}
 // void QTimeLine(int, class QObject *)

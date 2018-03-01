@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMouseEvent : public QMouseEvent {
+class Q_DECL_EXPORT MyQMouseEvent : public QMouseEvent {
 public:
   virtual ~MyQMouseEvent() {}
 // void QMouseEvent(enum QEvent::Type, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)

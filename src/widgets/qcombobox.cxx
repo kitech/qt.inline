@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQComboBox : public QComboBox {
+class Q_DECL_EXPORT MyQComboBox : public QComboBox {
 public:
   virtual ~MyQComboBox() {}
 // void QComboBox(class QWidget *)

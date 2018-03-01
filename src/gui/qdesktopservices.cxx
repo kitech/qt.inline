@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDesktopServices : public QDesktopServices {
+class Q_DECL_EXPORT MyQDesktopServices : public QDesktopServices {
 public:
   virtual ~MyQDesktopServices() {}
 };

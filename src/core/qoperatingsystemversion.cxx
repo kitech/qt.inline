@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQOperatingSystemVersion : public QOperatingSystemVersion {
+class Q_DECL_EXPORT MyQOperatingSystemVersion : public QOperatingSystemVersion {
 public:
   virtual ~MyQOperatingSystemVersion() {}
 // void QOperatingSystemVersion(enum QOperatingSystemVersion::OSType, int, int, int)

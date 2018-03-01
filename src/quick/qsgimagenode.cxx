@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGImageNode : public QSGImageNode {
+class Q_DECL_EXPORT MyQSGImageNode : public QSGImageNode {
 public:
   virtual ~MyQSGImageNode() {}
 };

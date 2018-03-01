@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileSelector : public QFileSelector {
+class Q_DECL_EXPORT MyQFileSelector : public QFileSelector {
 public:
   virtual ~MyQFileSelector() {}
 // void QFileSelector(class QObject *)

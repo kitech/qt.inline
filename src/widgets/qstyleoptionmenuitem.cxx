@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionMenuItem : public QStyleOptionMenuItem {
+class Q_DECL_EXPORT MyQStyleOptionMenuItem : public QStyleOptionMenuItem {
 public:
   virtual ~MyQStyleOptionMenuItem() {}
 // void QStyleOptionMenuItem()

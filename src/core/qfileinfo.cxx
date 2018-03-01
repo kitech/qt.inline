@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileInfo : public QFileInfo {
+class Q_DECL_EXPORT MyQFileInfo : public QFileInfo {
 public:
   virtual ~MyQFileInfo() {}
 // void QFileInfo()

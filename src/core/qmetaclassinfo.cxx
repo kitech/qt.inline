@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMetaClassInfo : public QMetaClassInfo {
+class Q_DECL_EXPORT MyQMetaClassInfo : public QMetaClassInfo {
 public:
   virtual ~MyQMetaClassInfo() {}
 // void QMetaClassInfo()

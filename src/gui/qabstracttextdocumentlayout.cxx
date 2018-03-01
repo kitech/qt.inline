@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractTextDocumentLayout : public QAbstractTextDocumentLayout {
+class Q_DECL_EXPORT MyQAbstractTextDocumentLayout : public QAbstractTextDocumentLayout {
 public:
   virtual ~MyQAbstractTextDocumentLayout() {}
 // void QAbstractTextDocumentLayout(class QTextDocument *)
@@ -26,7 +26,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractTextDocumentLayout::documentChanged(from, charsRemoved, charsAdded);
+    // QAbstractTextDocumentLayout::documentChanged(from, charsRemoved, charsAdded);
   }
   }
 

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTimeEdit : public QTimeEdit {
+class Q_DECL_EXPORT MyQTimeEdit : public QTimeEdit {
 public:
   virtual ~MyQTimeEdit() {}
 // void QTimeEdit(class QWidget *)

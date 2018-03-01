@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCompleter : public QCompleter {
+class Q_DECL_EXPORT MyQCompleter : public QCompleter {
 public:
   virtual ~MyQCompleter() {}
 // void QCompleter(class QObject *)

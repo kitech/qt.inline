@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileOpenEvent : public QFileOpenEvent {
+class Q_DECL_EXPORT MyQFileOpenEvent : public QFileOpenEvent {
 public:
   virtual ~MyQFileOpenEvent() {}
 // void QFileOpenEvent(const class QString &)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCharRef : public QCharRef {
+class Q_DECL_EXPORT MyQCharRef : public QCharRef {
 public:
   virtual ~MyQCharRef() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextBrowser : public QTextBrowser {
+class Q_DECL_EXPORT MyQTextBrowser : public QTextBrowser {
 public:
   virtual ~MyQTextBrowser() {}
 // void QTextBrowser(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkAccessManager : public QNetworkAccessManager {
+class Q_DECL_EXPORT MyQNetworkAccessManager : public QNetworkAccessManager {
 public:
   virtual ~MyQNetworkAccessManager() {}
 // void QNetworkAccessManager(class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHoverEvent : public QHoverEvent {
+class Q_DECL_EXPORT MyQHoverEvent : public QHoverEvent {
 public:
   virtual ~MyQHoverEvent() {}
 // void QHoverEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::KeyboardModifiers)

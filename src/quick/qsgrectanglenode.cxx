@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGRectangleNode : public QSGRectangleNode {
+class Q_DECL_EXPORT MyQSGRectangleNode : public QSGRectangleNode {
 public:
   virtual ~MyQSGRectangleNode() {}
 };

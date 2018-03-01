@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFontDatabase : public QFontDatabase {
+class Q_DECL_EXPORT MyQFontDatabase : public QFontDatabase {
 public:
   virtual ~MyQFontDatabase() {}
 // void QFontDatabase()

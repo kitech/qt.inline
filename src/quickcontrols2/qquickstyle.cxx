@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickStyle : public QQuickStyle {
+class Q_DECL_EXPORT MyQQuickStyle : public QQuickStyle {
 public:
   virtual ~MyQQuickStyle() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJsonObject : public QJsonObject {
+class Q_DECL_EXPORT MyQJsonObject : public QJsonObject {
 public:
   virtual ~MyQJsonObject() {}
 // void QJsonObject()

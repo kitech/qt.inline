@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStackedWidget : public QStackedWidget {
+class Q_DECL_EXPORT MyQStackedWidget : public QStackedWidget {
 public:
   virtual ~MyQStackedWidget() {}
 // void QStackedWidget(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScrollerProperties : public QScrollerProperties {
+class Q_DECL_EXPORT MyQScrollerProperties : public QScrollerProperties {
 public:
   virtual ~MyQScrollerProperties() {}
 // void QScrollerProperties()

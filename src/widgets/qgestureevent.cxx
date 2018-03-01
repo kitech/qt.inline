@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGestureEvent : public QGestureEvent {
+class Q_DECL_EXPORT MyQGestureEvent : public QGestureEvent {
 public:
   virtual ~MyQGestureEvent() {}
 };

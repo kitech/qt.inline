@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGTexture : public QSGTexture {
+class Q_DECL_EXPORT MyQSGTexture : public QSGTexture {
 public:
   virtual ~MyQSGTexture() {}
 // void QSGTexture()

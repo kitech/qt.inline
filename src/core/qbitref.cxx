@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBitRef : public QBitRef {
+class Q_DECL_EXPORT MyQBitRef : public QBitRef {
 public:
   virtual ~MyQBitRef() {}
 };

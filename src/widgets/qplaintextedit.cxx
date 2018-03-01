@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPlainTextEdit : public QPlainTextEdit {
+class Q_DECL_EXPORT MyQPlainTextEdit : public QPlainTextEdit {
 public:
   virtual ~MyQPlainTextEdit() {}
 // void QPlainTextEdit(class QWidget *)

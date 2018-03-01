@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQItemEditorFactory : public QItemEditorFactory {
+class Q_DECL_EXPORT MyQItemEditorFactory : public QItemEditorFactory {
 public:
   virtual ~MyQItemEditorFactory() {}
 // void QItemEditorFactory()

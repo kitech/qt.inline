@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMetaProperty : public QMetaProperty {
+class Q_DECL_EXPORT MyQMetaProperty : public QMetaProperty {
 public:
   virtual ~MyQMetaProperty() {}
 // void QMetaProperty()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsPathItem : public QGraphicsPathItem {
+class Q_DECL_EXPORT MyQGraphicsPathItem : public QGraphicsPathItem {
 public:
   virtual ~MyQGraphicsPathItem() {}
 // void QGraphicsPathItem(class QGraphicsItem *)

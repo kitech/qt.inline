@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIPv6Address : public QIPv6Address {
+class Q_DECL_EXPORT MyQIPv6Address : public QIPv6Address {
 public:
   virtual ~MyQIPv6Address() {}
 };

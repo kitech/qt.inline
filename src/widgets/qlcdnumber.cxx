@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLCDNumber : public QLCDNumber {
+class Q_DECL_EXPORT MyQLCDNumber : public QLCDNumber {
 public:
   virtual ~MyQLCDNumber() {}
 // void QLCDNumber(class QWidget *)

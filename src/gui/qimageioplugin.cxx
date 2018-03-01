@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQImageIOPlugin : public QImageIOPlugin {
+class Q_DECL_EXPORT MyQImageIOPlugin : public QImageIOPlugin {
 public:
   virtual ~MyQImageIOPlugin() {}
 // void QImageIOPlugin(class QObject *)

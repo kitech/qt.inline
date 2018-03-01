@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStandardItem : public QStandardItem {
+class Q_DECL_EXPORT MyQStandardItem : public QStandardItem {
 public:
   virtual ~MyQStandardItem() {}
 // void QStandardItem()

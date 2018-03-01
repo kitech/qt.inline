@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTreeWidgetItemIterator : public QTreeWidgetItemIterator {
+class Q_DECL_EXPORT MyQTreeWidgetItemIterator : public QTreeWidgetItemIterator {
 public:
   virtual ~MyQTreeWidgetItemIterator() {}
 // void QTreeWidgetItemIterator(class QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)

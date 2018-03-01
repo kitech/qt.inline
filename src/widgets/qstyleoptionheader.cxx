@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionHeader : public QStyleOptionHeader {
+class Q_DECL_EXPORT MyQStyleOptionHeader : public QStyleOptionHeader {
 public:
   virtual ~MyQStyleOptionHeader() {}
 // void QStyleOptionHeader()

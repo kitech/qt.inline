@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMimeType : public QMimeType {
+class Q_DECL_EXPORT MyQMimeType : public QMimeType {
 public:
   virtual ~MyQMimeType() {}
 // void QMimeType()

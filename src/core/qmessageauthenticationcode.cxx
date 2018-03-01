@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMessageAuthenticationCode : public QMessageAuthenticationCode {
+class Q_DECL_EXPORT MyQMessageAuthenticationCode : public QMessageAuthenticationCode {
 public:
   virtual ~MyQMessageAuthenticationCode() {}
 // void QMessageAuthenticationCode(class QCryptographicHash::Algorithm, const class QByteArray &)

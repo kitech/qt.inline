@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlParserStatus : public QQmlParserStatus {
+class Q_DECL_EXPORT MyQQmlParserStatus : public QQmlParserStatus {
 public:
   virtual ~MyQQmlParserStatus() {}
 // void QQmlParserStatus()

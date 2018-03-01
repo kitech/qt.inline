@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSaveFile : public QSaveFile {
+class Q_DECL_EXPORT MyQSaveFile : public QSaveFile {
 public:
   virtual ~MyQSaveFile() {}
 // void QSaveFile(const class QString &)

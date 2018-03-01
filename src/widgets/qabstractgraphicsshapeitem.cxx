@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractGraphicsShapeItem : public QAbstractGraphicsShapeItem {
+class Q_DECL_EXPORT MyQAbstractGraphicsShapeItem : public QAbstractGraphicsShapeItem {
 public:
   virtual ~MyQAbstractGraphicsShapeItem() {}
 // void QAbstractGraphicsShapeItem(class QGraphicsItem *)

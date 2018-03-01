@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFocusEvent : public QFocusEvent {
+class Q_DECL_EXPORT MyQFocusEvent : public QFocusEvent {
 public:
   virtual ~MyQFocusEvent() {}
 // void QFocusEvent(enum QEvent::Type, Qt::FocusReason)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQButtonGroup : public QButtonGroup {
+class Q_DECL_EXPORT MyQButtonGroup : public QButtonGroup {
 public:
   virtual ~MyQButtonGroup() {}
 // void QButtonGroup(class QObject *)

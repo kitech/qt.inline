@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStorageInfo : public QStorageInfo {
+class Q_DECL_EXPORT MyQStorageInfo : public QStorageInfo {
 public:
   virtual ~MyQStorageInfo() {}
 // void QStorageInfo()

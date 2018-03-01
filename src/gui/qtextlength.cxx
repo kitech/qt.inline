@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextLength : public QTextLength {
+class Q_DECL_EXPORT MyQTextLength : public QTextLength {
 public:
   virtual ~MyQTextLength() {}
 // void QTextLength()

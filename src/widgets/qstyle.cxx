@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyle : public QStyle {
+class Q_DECL_EXPORT MyQStyle : public QStyle {
 public:
   virtual ~MyQStyle() {}
 // void QStyle()

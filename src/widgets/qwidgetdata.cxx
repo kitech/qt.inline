@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWidgetData : public QWidgetData {
+class Q_DECL_EXPORT MyQWidgetData : public QWidgetData {
 public:
   virtual ~MyQWidgetData() {}
 };

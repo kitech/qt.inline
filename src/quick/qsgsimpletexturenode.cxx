@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGSimpleTextureNode : public QSGSimpleTextureNode {
+class Q_DECL_EXPORT MyQSGSimpleTextureNode : public QSGSimpleTextureNode {
 public:
   virtual ~MyQSGSimpleTextureNode() {}
 // void QSGSimpleTextureNode()

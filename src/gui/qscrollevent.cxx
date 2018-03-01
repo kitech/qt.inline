@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScrollEvent : public QScrollEvent {
+class Q_DECL_EXPORT MyQScrollEvent : public QScrollEvent {
 public:
   virtual ~MyQScrollEvent() {}
 // void QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)

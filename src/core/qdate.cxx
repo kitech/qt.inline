@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDate : public QDate {
+class Q_DECL_EXPORT MyQDate : public QDate {
 public:
   virtual ~MyQDate() {}
 // void QDate()

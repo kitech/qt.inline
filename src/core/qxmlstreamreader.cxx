@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamReader : public QXmlStreamReader {
+class Q_DECL_EXPORT MyQXmlStreamReader : public QXmlStreamReader {
 public:
   virtual ~MyQXmlStreamReader() {}
 // void QXmlStreamReader()

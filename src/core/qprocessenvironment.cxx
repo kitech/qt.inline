@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQProcessEnvironment : public QProcessEnvironment {
+class Q_DECL_EXPORT MyQProcessEnvironment : public QProcessEnvironment {
 public:
   virtual ~MyQProcessEnvironment() {}
 // void QProcessEnvironment()

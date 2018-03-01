@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSizeGrip : public QSizeGrip {
+class Q_DECL_EXPORT MyQSizeGrip : public QSizeGrip {
 public:
   virtual ~MyQSizeGrip() {}
 // void QSizeGrip(class QWidget *)

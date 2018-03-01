@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQKeySequenceEdit : public QKeySequenceEdit {
+class Q_DECL_EXPORT MyQKeySequenceEdit : public QKeySequenceEdit {
 public:
   virtual ~MyQKeySequenceEdit() {}
 // void QKeySequenceEdit(class QWidget *)

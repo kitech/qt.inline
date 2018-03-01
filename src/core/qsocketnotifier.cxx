@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSocketNotifier : public QSocketNotifier {
+class Q_DECL_EXPORT MyQSocketNotifier : public QSocketNotifier {
 public:
   virtual ~MyQSocketNotifier() {}
 // void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)

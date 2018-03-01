@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGRenderNode : public QSGRenderNode {
+class Q_DECL_EXPORT MyQSGRenderNode : public QSGRenderNode {
 public:
   virtual ~MyQSGRenderNode() {}
 // void QSGRenderNode()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQString : public QString {
+class Q_DECL_EXPORT MyQString : public QString {
 public:
   virtual ~MyQString() {}
 // void QString()

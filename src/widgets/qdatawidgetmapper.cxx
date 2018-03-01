@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDataWidgetMapper : public QDataWidgetMapper {
+class Q_DECL_EXPORT MyQDataWidgetMapper : public QDataWidgetMapper {
 public:
   virtual ~MyQDataWidgetMapper() {}
 // void QDataWidgetMapper(class QObject *)

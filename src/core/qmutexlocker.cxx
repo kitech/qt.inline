@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMutexLocker : public QMutexLocker {
+class Q_DECL_EXPORT MyQMutexLocker : public QMutexLocker {
 public:
   virtual ~MyQMutexLocker() {}
 // void QMutexLocker(class QBasicMutex *)

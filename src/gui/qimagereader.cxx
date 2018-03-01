@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQImageReader : public QImageReader {
+class Q_DECL_EXPORT MyQImageReader : public QImageReader {
 public:
   virtual ~MyQImageReader() {}
 // void QImageReader()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractEventDispatcher : public QAbstractEventDispatcher {
+class Q_DECL_EXPORT MyQAbstractEventDispatcher : public QAbstractEventDispatcher {
 public:
   virtual ~MyQAbstractEventDispatcher() {}
 // void QAbstractEventDispatcher(class QObject *)

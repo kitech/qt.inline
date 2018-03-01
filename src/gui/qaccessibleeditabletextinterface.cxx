@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleEditableTextInterface : public QAccessibleEditableTextInterface {
+class Q_DECL_EXPORT MyQAccessibleEditableTextInterface : public QAccessibleEditableTextInterface {
 public:
   virtual ~MyQAccessibleEditableTextInterface() {}
 };

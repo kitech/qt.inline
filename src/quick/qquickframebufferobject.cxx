@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickFramebufferObject : public QQuickFramebufferObject {
+class Q_DECL_EXPORT MyQQuickFramebufferObject : public QQuickFramebufferObject {
 public:
   virtual ~MyQQuickFramebufferObject() {}
 // void QQuickFramebufferObject(class QQuickItem *)

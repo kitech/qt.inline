@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyVariantData : public QtMetaTypePrivate::VariantData {
+class Q_DECL_EXPORT MyVariantData : public QtMetaTypePrivate::VariantData {
 public:
   virtual ~MyVariantData() {}
 // void VariantData(const int, const void *, const uint)

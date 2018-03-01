@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStaticByteArrayMatcherBase : public QStaticByteArrayMatcherBase {
+class Q_DECL_EXPORT MyQStaticByteArrayMatcherBase : public QStaticByteArrayMatcherBase {
 public:
   virtual ~MyQStaticByteArrayMatcherBase() {}
 // void QStaticByteArrayMatcherBase(const char *, uint)

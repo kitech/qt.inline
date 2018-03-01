@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsEffect : public QGraphicsEffect {
+class Q_DECL_EXPORT MyQGraphicsEffect : public QGraphicsEffect {
 public:
   virtual ~MyQGraphicsEffect() {}
 // void QGraphicsEffect(class QObject *)
@@ -26,7 +26,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QGraphicsEffect::draw(painter);
+    // QGraphicsEffect::draw(painter);
   }
   }
 

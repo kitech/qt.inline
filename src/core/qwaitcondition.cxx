@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWaitCondition : public QWaitCondition {
+class Q_DECL_EXPORT MyQWaitCondition : public QWaitCondition {
 public:
   virtual ~MyQWaitCondition() {}
 // void QWaitCondition()

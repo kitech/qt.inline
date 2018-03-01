@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRegularExpressionMatchIterator : public QRegularExpressionMatchIterator {
+class Q_DECL_EXPORT MyQRegularExpressionMatchIterator : public QRegularExpressionMatchIterator {
 public:
   virtual ~MyQRegularExpressionMatchIterator() {}
 // void QRegularExpressionMatchIterator()

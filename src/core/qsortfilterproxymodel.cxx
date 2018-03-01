@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSortFilterProxyModel : public QSortFilterProxyModel {
+class Q_DECL_EXPORT MyQSortFilterProxyModel : public QSortFilterProxyModel {
 public:
   virtual ~MyQSortFilterProxyModel() {}
 // void QSortFilterProxyModel(class QObject *)

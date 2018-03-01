@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQItemSelection : public QItemSelection {
+class Q_DECL_EXPORT MyQItemSelection : public QItemSelection {
 public:
   virtual ~MyQItemSelection() {}
 // void QItemSelection()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMdiArea : public QMdiArea {
+class Q_DECL_EXPORT MyQMdiArea : public QMdiArea {
 public:
   virtual ~MyQMdiArea() {}
 // void QMdiArea(class QWidget *)

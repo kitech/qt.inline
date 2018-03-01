@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQToolBox : public QToolBox {
+class Q_DECL_EXPORT MyQToolBox : public QToolBox {
 public:
   virtual ~MyQToolBox() {}
 // void QToolBox(class QWidget *, Qt::WindowFlags)

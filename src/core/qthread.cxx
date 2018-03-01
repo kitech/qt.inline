@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQThread : public QThread {
+class Q_DECL_EXPORT MyQThread : public QThread {
 public:
   virtual ~MyQThread() {}
 // void QThread(class QObject *)

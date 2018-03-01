@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsTransform : public QGraphicsTransform {
+class Q_DECL_EXPORT MyQGraphicsTransform : public QGraphicsTransform {
 public:
   virtual ~MyQGraphicsTransform() {}
 // void QGraphicsTransform(class QObject *)

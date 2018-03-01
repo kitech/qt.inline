@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlIncubationController : public QQmlIncubationController {
+class Q_DECL_EXPORT MyQQmlIncubationController : public QQmlIncubationController {
 public:
   virtual ~MyQQmlIncubationController() {}
 // void QQmlIncubationController()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSettings : public QSettings {
+class Q_DECL_EXPORT MyQSettings : public QSettings {
 public:
   virtual ~MyQSettings() {}
 // void QSettings(const class QString &, const class QString &, class QObject *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQColorDialog : public QColorDialog {
+class Q_DECL_EXPORT MyQColorDialog : public QColorDialog {
 public:
   virtual ~MyQColorDialog() {}
 // void QColorDialog(class QWidget *)

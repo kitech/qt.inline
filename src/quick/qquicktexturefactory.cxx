@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickTextureFactory : public QQuickTextureFactory {
+class Q_DECL_EXPORT MyQQuickTextureFactory : public QQuickTextureFactory {
 public:
   virtual ~MyQQuickTextureFactory() {}
 // void QQuickTextureFactory()

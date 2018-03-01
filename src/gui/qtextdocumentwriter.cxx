@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextDocumentWriter : public QTextDocumentWriter {
+class Q_DECL_EXPORT MyQTextDocumentWriter : public QTextDocumentWriter {
 public:
   virtual ~MyQTextDocumentWriter() {}
 // void QTextDocumentWriter()

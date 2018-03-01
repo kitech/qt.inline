@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWizard : public QWizard {
+class Q_DECL_EXPORT MyQWizard : public QWizard {
 public:
   virtual ~MyQWizard() {}
 // void QWizard(class QWidget *, Qt::WindowFlags)

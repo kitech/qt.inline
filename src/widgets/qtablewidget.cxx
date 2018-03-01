@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTableWidget : public QTableWidget {
+class Q_DECL_EXPORT MyQTableWidget : public QTableWidget {
 public:
   virtual ~MyQTableWidget() {}
 // void QTableWidget(class QWidget *)

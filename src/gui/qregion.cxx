@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRegion : public QRegion {
+class Q_DECL_EXPORT MyQRegion : public QRegion {
 public:
   virtual ~MyQRegion() {}
 // void QRegion()

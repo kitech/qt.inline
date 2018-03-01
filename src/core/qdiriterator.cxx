@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDirIterator : public QDirIterator {
+class Q_DECL_EXPORT MyQDirIterator : public QDirIterator {
 public:
   virtual ~MyQDirIterator() {}
 // void QDirIterator(const class QDir &, QDirIterator::IteratorFlags)

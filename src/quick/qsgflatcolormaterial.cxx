@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGFlatColorMaterial : public QSGFlatColorMaterial {
+class Q_DECL_EXPORT MyQSGFlatColorMaterial : public QSGFlatColorMaterial {
 public:
   virtual ~MyQSGFlatColorMaterial() {}
 // void QSGFlatColorMaterial()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSequentialIterable : public QSequentialIterable {
+class Q_DECL_EXPORT MyQSequentialIterable : public QSequentialIterable {
 public:
   virtual ~MyQSequentialIterable() {}
 };

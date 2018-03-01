@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickItem : public QQuickItem {
+class Q_DECL_EXPORT MyQQuickItem : public QQuickItem {
 public:
   virtual ~MyQQuickItem() {}
 // void QQuickItem(class QQuickItem *)

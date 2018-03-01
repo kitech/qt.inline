@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMessageLogger : public QMessageLogger {
+class Q_DECL_EXPORT MyQMessageLogger : public QMessageLogger {
 public:
   virtual ~MyQMessageLogger() {}
 // void QMessageLogger()

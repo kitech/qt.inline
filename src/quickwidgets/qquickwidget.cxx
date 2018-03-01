@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickWidget : public QQuickWidget {
+class Q_DECL_EXPORT MyQQuickWidget : public QQuickWidget {
 public:
   virtual ~MyQQuickWidget() {}
 // void QQuickWidget(class QWidget *)

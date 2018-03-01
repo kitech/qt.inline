@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslDiffieHellmanParameters : public QSslDiffieHellmanParameters {
+class Q_DECL_EXPORT MyQSslDiffieHellmanParameters : public QSslDiffieHellmanParameters {
 public:
   virtual ~MyQSslDiffieHellmanParameters() {}
 // void QSslDiffieHellmanParameters()

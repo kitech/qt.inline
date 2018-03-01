@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQErrorMessage : public QErrorMessage {
+class Q_DECL_EXPORT MyQErrorMessage : public QErrorMessage {
 public:
   virtual ~MyQErrorMessage() {}
 // void QErrorMessage(class QWidget *)

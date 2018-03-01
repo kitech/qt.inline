@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkConfiguration : public QNetworkConfiguration {
+class Q_DECL_EXPORT MyQNetworkConfiguration : public QNetworkConfiguration {
 public:
   virtual ~MyQNetworkConfiguration() {}
 // void QNetworkConfiguration()

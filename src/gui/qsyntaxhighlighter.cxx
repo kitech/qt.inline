@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSyntaxHighlighter : public QSyntaxHighlighter {
+class Q_DECL_EXPORT MyQSyntaxHighlighter : public QSyntaxHighlighter {
 public:
   virtual ~MyQSyntaxHighlighter() {}
 // void QSyntaxHighlighter(class QObject *)
@@ -28,7 +28,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QSyntaxHighlighter::highlightBlock(text);
+    // QSyntaxHighlighter::highlightBlock(text);
   }
   }
 

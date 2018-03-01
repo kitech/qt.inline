@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslConfiguration : public QSslConfiguration {
+class Q_DECL_EXPORT MyQSslConfiguration : public QSslConfiguration {
 public:
   virtual ~MyQSslConfiguration() {}
 // void QSslConfiguration()

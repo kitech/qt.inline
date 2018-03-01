@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsLayout : public QGraphicsLayout {
+class Q_DECL_EXPORT MyQGraphicsLayout : public QGraphicsLayout {
 public:
   virtual ~MyQGraphicsLayout() {}
 // void QGraphicsLayout(class QGraphicsLayoutItem *)

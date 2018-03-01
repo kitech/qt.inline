@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFutureWatcherBase : public QFutureWatcherBase {
+class Q_DECL_EXPORT MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
   virtual ~MyQFutureWatcherBase() {}
 // void QFutureWatcherBase(class QObject *)

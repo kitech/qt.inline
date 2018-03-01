@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJsonValue : public QJsonValue {
+class Q_DECL_EXPORT MyQJsonValue : public QJsonValue {
 public:
   virtual ~MyQJsonValue() {}
 // void QJsonValue(enum QJsonValue::Type)

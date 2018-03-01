@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlComponent : public QQmlComponent {
+class Q_DECL_EXPORT MyQQmlComponent : public QQmlComponent {
 public:
   virtual ~MyQQmlComponent() {}
 // void QQmlComponent(class QObject *)

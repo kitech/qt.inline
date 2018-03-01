@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCommandLinkButton : public QCommandLinkButton {
+class Q_DECL_EXPORT MyQCommandLinkButton : public QCommandLinkButton {
 public:
   virtual ~MyQCommandLinkButton() {}
 // void QCommandLinkButton(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsPixmapItem : public QGraphicsPixmapItem {
+class Q_DECL_EXPORT MyQGraphicsPixmapItem : public QGraphicsPixmapItem {
 public:
   virtual ~MyQGraphicsPixmapItem() {}
 // void QGraphicsPixmapItem(class QGraphicsItem *)

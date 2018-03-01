@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamNotationDeclaration : public QXmlStreamNotationDeclaration {
+class Q_DECL_EXPORT MyQXmlStreamNotationDeclaration : public QXmlStreamNotationDeclaration {
 public:
   virtual ~MyQXmlStreamNotationDeclaration() {}
 // void QXmlStreamNotationDeclaration()

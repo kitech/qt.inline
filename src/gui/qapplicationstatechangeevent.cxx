@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQApplicationStateChangeEvent : public QApplicationStateChangeEvent {
+class Q_DECL_EXPORT MyQApplicationStateChangeEvent : public QApplicationStateChangeEvent {
 public:
   virtual ~MyQApplicationStateChangeEvent() {}
 // void QApplicationStateChangeEvent(Qt::ApplicationState)

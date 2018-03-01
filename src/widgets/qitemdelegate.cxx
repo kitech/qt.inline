@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQItemDelegate : public QItemDelegate {
+class Q_DECL_EXPORT MyQItemDelegate : public QItemDelegate {
 public:
   virtual ~MyQItemDelegate() {}
 // void QItemDelegate(class QObject *)

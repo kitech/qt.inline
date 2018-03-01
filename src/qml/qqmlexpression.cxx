@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlExpression : public QQmlExpression {
+class Q_DECL_EXPORT MyQQmlExpression : public QQmlExpression {
 public:
   virtual ~MyQQmlExpression() {}
 // void QQmlExpression()

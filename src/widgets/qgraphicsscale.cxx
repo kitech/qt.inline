@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsScale : public QGraphicsScale {
+class Q_DECL_EXPORT MyQGraphicsScale : public QGraphicsScale {
 public:
   virtual ~MyQGraphicsScale() {}
 // void QGraphicsScale(class QObject *)

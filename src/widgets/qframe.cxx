@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFrame : public QFrame {
+class Q_DECL_EXPORT MyQFrame : public QFrame {
 public:
   virtual ~MyQFrame() {}
 // void QFrame(class QWidget *, Qt::WindowFlags)

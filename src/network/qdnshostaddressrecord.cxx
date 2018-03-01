@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDnsHostAddressRecord : public QDnsHostAddressRecord {
+class Q_DECL_EXPORT MyQDnsHostAddressRecord : public QDnsHostAddressRecord {
 public:
   virtual ~MyQDnsHostAddressRecord() {}
 // void QDnsHostAddressRecord()

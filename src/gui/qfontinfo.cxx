@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFontInfo : public QFontInfo {
+class Q_DECL_EXPORT MyQFontInfo : public QFontInfo {
 public:
   virtual ~MyQFontInfo() {}
 // void QFontInfo(const class QFont &)

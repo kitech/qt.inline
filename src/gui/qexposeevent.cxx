@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQExposeEvent : public QExposeEvent {
+class Q_DECL_EXPORT MyQExposeEvent : public QExposeEvent {
 public:
   virtual ~MyQExposeEvent() {}
 // void QExposeEvent(const class QRegion &)

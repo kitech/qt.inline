@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDockWidget : public QDockWidget {
+class Q_DECL_EXPORT MyQDockWidget : public QDockWidget {
 public:
   virtual ~MyQDockWidget() {}
 // void QDockWidget(const class QString &, class QWidget *, Qt::WindowFlags)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQKeySequence : public QKeySequence {
+class Q_DECL_EXPORT MyQKeySequence : public QKeySequence {
 public:
   virtual ~MyQKeySequence() {}
 // void QKeySequence()

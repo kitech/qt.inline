@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGGeometry : public QSGGeometry {
+class Q_DECL_EXPORT MyQSGGeometry : public QSGGeometry {
 public:
   virtual ~MyQSGGeometry() {}
 };

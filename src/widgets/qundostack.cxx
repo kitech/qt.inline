@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUndoStack : public QUndoStack {
+class Q_DECL_EXPORT MyQUndoStack : public QUndoStack {
 public:
   virtual ~MyQUndoStack() {}
 // void QUndoStack(class QObject *)

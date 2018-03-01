@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHttpPart : public QHttpPart {
+class Q_DECL_EXPORT MyQHttpPart : public QHttpPart {
 public:
   virtual ~MyQHttpPart() {}
 // void QHttpPart()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLine : public QLine {
+class Q_DECL_EXPORT MyQLine : public QLine {
 public:
   virtual ~MyQLine() {}
 // void QLine()

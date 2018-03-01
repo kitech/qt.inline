@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIncompatibleFlag : public QIncompatibleFlag {
+class Q_DECL_EXPORT MyQIncompatibleFlag : public QIncompatibleFlag {
 public:
   virtual ~MyQIncompatibleFlag() {}
 // void QIncompatibleFlag(int)

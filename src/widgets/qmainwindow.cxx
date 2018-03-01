@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMainWindow : public QMainWindow {
+class Q_DECL_EXPORT MyQMainWindow : public QMainWindow {
 public:
   virtual ~MyQMainWindow() {}
 // void QMainWindow(class QWidget *, Qt::WindowFlags)

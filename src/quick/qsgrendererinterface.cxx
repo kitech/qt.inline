@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGRendererInterface : public QSGRendererInterface {
+class Q_DECL_EXPORT MyQSGRendererInterface : public QSGRendererInterface {
 public:
   virtual ~MyQSGRendererInterface() {}
 };

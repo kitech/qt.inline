@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSurfaceFormat : public QSurfaceFormat {
+class Q_DECL_EXPORT MyQSurfaceFormat : public QSurfaceFormat {
 public:
   virtual ~MyQSurfaceFormat() {}
 // void QSurfaceFormat()

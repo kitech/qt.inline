@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsSceneResizeEvent : public QGraphicsSceneResizeEvent {
+class Q_DECL_EXPORT MyQGraphicsSceneResizeEvent : public QGraphicsSceneResizeEvent {
 public:
   virtual ~MyQGraphicsSceneResizeEvent() {}
 // void QGraphicsSceneResizeEvent()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamAttribute : public QXmlStreamAttribute {
+class Q_DECL_EXPORT MyQXmlStreamAttribute : public QXmlStreamAttribute {
 public:
   virtual ~MyQXmlStreamAttribute() {}
 // void QXmlStreamAttribute()

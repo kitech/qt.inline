@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDialogButtonBox : public QDialogButtonBox {
+class Q_DECL_EXPORT MyQDialogButtonBox : public QDialogButtonBox {
 public:
   virtual ~MyQDialogButtonBox() {}
 // void QDialogButtonBox(class QWidget *)

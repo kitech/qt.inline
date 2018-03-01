@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSignalMapper : public QSignalMapper {
+class Q_DECL_EXPORT MyQSignalMapper : public QSignalMapper {
 public:
   virtual ~MyQSignalMapper() {}
 // void QSignalMapper(class QObject *)

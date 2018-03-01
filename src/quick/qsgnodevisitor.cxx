@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGNodeVisitor : public QSGNodeVisitor {
+class Q_DECL_EXPORT MyQSGNodeVisitor : public QSGNodeVisitor {
 public:
   virtual ~MyQSGNodeVisitor() {}
 // Protected inline virtual Visibility=Default Availability=Available

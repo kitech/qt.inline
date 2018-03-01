@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTimeZone : public QTimeZone {
+class Q_DECL_EXPORT MyQTimeZone : public QTimeZone {
 public:
   virtual ~MyQTimeZone() {}
 // void QTimeZone()

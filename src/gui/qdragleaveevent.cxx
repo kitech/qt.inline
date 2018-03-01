@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDragLeaveEvent : public QDragLeaveEvent {
+class Q_DECL_EXPORT MyQDragLeaveEvent : public QDragLeaveEvent {
 public:
   virtual ~MyQDragLeaveEvent() {}
 // void QDragLeaveEvent()

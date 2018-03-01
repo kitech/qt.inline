@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTableWidgetSelectionRange : public QTableWidgetSelectionRange {
+class Q_DECL_EXPORT MyQTableWidgetSelectionRange : public QTableWidgetSelectionRange {
 public:
   virtual ~MyQTableWidgetSelectionRange() {}
 // void QTableWidgetSelectionRange()

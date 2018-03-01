@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionDockWidget : public QStyleOptionDockWidget {
+class Q_DECL_EXPORT MyQStyleOptionDockWidget : public QStyleOptionDockWidget {
 public:
   virtual ~MyQStyleOptionDockWidget() {}
 // void QStyleOptionDockWidget()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStylePainter : public QStylePainter {
+class Q_DECL_EXPORT MyQStylePainter : public QStylePainter {
 public:
   virtual ~MyQStylePainter() {}
 // void QStylePainter()

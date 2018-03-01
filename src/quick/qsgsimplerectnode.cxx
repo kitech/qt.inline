@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGSimpleRectNode : public QSGSimpleRectNode {
+class Q_DECL_EXPORT MyQSGSimpleRectNode : public QSGSimpleRectNode {
 public:
   virtual ~MyQSGSimpleRectNode() {}
 // void QSGSimpleRectNode(const class QRectF &, const class QColor &)

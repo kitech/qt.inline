@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQUrl : public QUrl {
+class Q_DECL_EXPORT MyQUrl : public QUrl {
 public:
   virtual ~MyQUrl() {}
 // void QUrl()

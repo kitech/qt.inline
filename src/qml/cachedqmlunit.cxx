@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyCachedQmlUnit : public QQmlPrivate::CachedQmlUnit {
+class Q_DECL_EXPORT MyCachedQmlUnit : public QQmlPrivate::CachedQmlUnit {
 public:
   virtual ~MyCachedQmlUnit() {}
 };

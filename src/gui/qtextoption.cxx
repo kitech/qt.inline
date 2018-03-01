@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextOption : public QTextOption {
+class Q_DECL_EXPORT MyQTextOption : public QTextOption {
 public:
   virtual ~MyQTextOption() {}
 // void QTextOption()

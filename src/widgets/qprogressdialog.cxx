@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQProgressDialog : public QProgressDialog {
+class Q_DECL_EXPORT MyQProgressDialog : public QProgressDialog {
 public:
   virtual ~MyQProgressDialog() {}
 // void QProgressDialog(class QWidget *, Qt::WindowFlags)

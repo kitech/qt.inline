@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsBlurEffect : public QGraphicsBlurEffect {
+class Q_DECL_EXPORT MyQGraphicsBlurEffect : public QGraphicsBlurEffect {
 public:
   virtual ~MyQGraphicsBlurEffect() {}
 // void QGraphicsBlurEffect(class QObject *)

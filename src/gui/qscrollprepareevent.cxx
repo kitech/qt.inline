@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScrollPrepareEvent : public QScrollPrepareEvent {
+class Q_DECL_EXPORT MyQScrollPrepareEvent : public QScrollPrepareEvent {
 public:
   virtual ~MyQScrollPrepareEvent() {}
 // void QScrollPrepareEvent(const class QPointF &)

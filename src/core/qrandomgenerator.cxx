@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRandomGenerator : public QRandomGenerator {
+class Q_DECL_EXPORT MyQRandomGenerator : public QRandomGenerator {
 public:
   virtual ~MyQRandomGenerator() {}
 // void QRandomGenerator(quint32)

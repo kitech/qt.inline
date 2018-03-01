@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJSEngine : public QJSEngine {
+class Q_DECL_EXPORT MyQJSEngine : public QJSEngine {
 public:
   virtual ~MyQJSEngine() {}
 // void QJSEngine()

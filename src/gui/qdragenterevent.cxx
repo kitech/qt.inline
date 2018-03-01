@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDragEnterEvent : public QDragEnterEvent {
+class Q_DECL_EXPORT MyQDragEnterEvent : public QDragEnterEvent {
 public:
   virtual ~MyQDragEnterEvent() {}
 // void QDragEnterEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers)

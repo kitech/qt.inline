@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQEnterEvent : public QEnterEvent {
+class Q_DECL_EXPORT MyQEnterEvent : public QEnterEvent {
 public:
   virtual ~MyQEnterEvent() {}
 // void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)

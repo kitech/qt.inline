@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsSceneHoverEvent : public QGraphicsSceneHoverEvent {
+class Q_DECL_EXPORT MyQGraphicsSceneHoverEvent : public QGraphicsSceneHoverEvent {
 public:
   virtual ~MyQGraphicsSceneHoverEvent() {}
 // void QGraphicsSceneHoverEvent(enum QEvent::Type)

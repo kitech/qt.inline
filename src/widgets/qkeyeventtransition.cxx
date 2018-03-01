@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQKeyEventTransition : public QKeyEventTransition {
+class Q_DECL_EXPORT MyQKeyEventTransition : public QKeyEventTransition {
 public:
   virtual ~MyQKeyEventTransition() {}
 // void QKeyEventTransition(class QState *)

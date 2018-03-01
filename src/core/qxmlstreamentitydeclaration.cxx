@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamEntityDeclaration : public QXmlStreamEntityDeclaration {
+class Q_DECL_EXPORT MyQXmlStreamEntityDeclaration : public QXmlStreamEntityDeclaration {
 public:
   virtual ~MyQXmlStreamEntityDeclaration() {}
 // void QXmlStreamEntityDeclaration()

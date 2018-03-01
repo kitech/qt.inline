@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractUndoItem : public QAbstractUndoItem {
+class Q_DECL_EXPORT MyQAbstractUndoItem : public QAbstractUndoItem {
 public:
   virtual ~MyQAbstractUndoItem() {}
 };

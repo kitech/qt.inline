@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMoveEvent : public QMoveEvent {
+class Q_DECL_EXPORT MyQMoveEvent : public QMoveEvent {
 public:
   virtual ~MyQMoveEvent() {}
 // void QMoveEvent(const class QPoint &, const class QPoint &)

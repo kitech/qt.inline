@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMessageBox : public QMessageBox {
+class Q_DECL_EXPORT MyQMessageBox : public QMessageBox {
 public:
   virtual ~MyQMessageBox() {}
 // void QMessageBox(class QWidget *)

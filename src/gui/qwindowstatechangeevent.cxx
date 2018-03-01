@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWindowStateChangeEvent : public QWindowStateChangeEvent {
+class Q_DECL_EXPORT MyQWindowStateChangeEvent : public QWindowStateChangeEvent {
 public:
   virtual ~MyQWindowStateChangeEvent() {}
 // void QWindowStateChangeEvent(Qt::WindowStates, _Bool)

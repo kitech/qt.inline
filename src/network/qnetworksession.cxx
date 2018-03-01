@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkSession : public QNetworkSession {
+class Q_DECL_EXPORT MyQNetworkSession : public QNetworkSession {
 public:
   virtual ~MyQNetworkSession() {}
 // void QNetworkSession(const class QNetworkConfiguration &, class QObject *)

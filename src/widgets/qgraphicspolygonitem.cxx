@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsPolygonItem : public QGraphicsPolygonItem {
+class Q_DECL_EXPORT MyQGraphicsPolygonItem : public QGraphicsPolygonItem {
 public:
   virtual ~MyQGraphicsPolygonItem() {}
 // void QGraphicsPolygonItem(class QGraphicsItem *)

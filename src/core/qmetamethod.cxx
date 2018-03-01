@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMetaMethod : public QMetaMethod {
+class Q_DECL_EXPORT MyQMetaMethod : public QMetaMethod {
 public:
   virtual ~MyQMetaMethod() {}
 // void QMetaMethod()

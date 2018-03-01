@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
+class Q_DECL_EXPORT MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
 public:
   virtual ~MyQAbstractOpenGLFunctions() {}
 // void QAbstractOpenGLFunctions()

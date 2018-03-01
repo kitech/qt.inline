@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextFrameLayoutData : public QTextFrameLayoutData {
+class Q_DECL_EXPORT MyQTextFrameLayoutData : public QTextFrameLayoutData {
 public:
   virtual ~MyQTextFrameLayoutData() {}
 };

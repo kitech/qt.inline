@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQVBoxLayout : public QVBoxLayout {
+class Q_DECL_EXPORT MyQVBoxLayout : public QVBoxLayout {
 public:
   virtual ~MyQVBoxLayout() {}
 // void QVBoxLayout()

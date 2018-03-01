@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyledItemDelegate : public QStyledItemDelegate {
+class Q_DECL_EXPORT MyQStyledItemDelegate : public QStyledItemDelegate {
 public:
   virtual ~MyQStyledItemDelegate() {}
 // void QStyledItemDelegate(class QObject *)

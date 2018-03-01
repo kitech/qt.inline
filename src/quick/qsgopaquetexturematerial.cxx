@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGOpaqueTextureMaterial : public QSGOpaqueTextureMaterial {
+class Q_DECL_EXPORT MyQSGOpaqueTextureMaterial : public QSGOpaqueTextureMaterial {
 public:
   virtual ~MyQSGOpaqueTextureMaterial() {}
 // void QSGOpaqueTextureMaterial()

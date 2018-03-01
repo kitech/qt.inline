@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQToolTip : public QToolTip {
+class Q_DECL_EXPORT MyQToolTip : public QToolTip {
 public:
   virtual ~MyQToolTip() {}
 };

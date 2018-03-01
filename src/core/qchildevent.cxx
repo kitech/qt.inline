@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQChildEvent : public QChildEvent {
+class Q_DECL_EXPORT MyQChildEvent : public QChildEvent {
 public:
   virtual ~MyQChildEvent() {}
 // void QChildEvent(enum QEvent::Type, class QObject *)

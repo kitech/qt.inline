@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkCookie : public QNetworkCookie {
+class Q_DECL_EXPORT MyQNetworkCookie : public QNetworkCookie {
 public:
   virtual ~MyQNetworkCookie() {}
 // void QNetworkCookie(const class QByteArray &, const class QByteArray &)

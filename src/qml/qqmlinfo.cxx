@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlInfo : public QQmlInfo {
+class Q_DECL_EXPORT MyQQmlInfo : public QQmlInfo {
 public:
   virtual ~MyQQmlInfo() {}
 };

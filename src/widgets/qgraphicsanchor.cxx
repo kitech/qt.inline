@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsAnchor : public QGraphicsAnchor {
+class Q_DECL_EXPORT MyQGraphicsAnchor : public QGraphicsAnchor {
 public:
   virtual ~MyQGraphicsAnchor() {}
 };

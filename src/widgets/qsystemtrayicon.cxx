@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSystemTrayIcon : public QSystemTrayIcon {
+class Q_DECL_EXPORT MyQSystemTrayIcon : public QSystemTrayIcon {
 public:
   virtual ~MyQSystemTrayIcon() {}
 // void QSystemTrayIcon(class QObject *)

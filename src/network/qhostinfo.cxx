@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHostInfo : public QHostInfo {
+class Q_DECL_EXPORT MyQHostInfo : public QHostInfo {
 public:
   virtual ~MyQHostInfo() {}
 // void QHostInfo(int)

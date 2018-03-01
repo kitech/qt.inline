@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQOffscreenSurface : public QOffscreenSurface {
+class Q_DECL_EXPORT MyQOffscreenSurface : public QOffscreenSurface {
 public:
   virtual ~MyQOffscreenSurface() {}
 // void QOffscreenSurface(class QScreen *, class QObject *)

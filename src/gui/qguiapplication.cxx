@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGuiApplication : public QGuiApplication {
+class Q_DECL_EXPORT MyQGuiApplication : public QGuiApplication {
 public:
   virtual ~MyQGuiApplication() {}
 // void QGuiApplication(int &, char **, int)

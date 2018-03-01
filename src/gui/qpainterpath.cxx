@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPainterPath : public QPainterPath {
+class Q_DECL_EXPORT MyQPainterPath : public QPainterPath {
 public:
   virtual ~MyQPainterPath() {}
 // void QPainterPath()

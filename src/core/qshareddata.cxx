@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSharedData : public QSharedData {
+class Q_DECL_EXPORT MyQSharedData : public QSharedData {
 public:
   virtual ~MyQSharedData() {}
 // void QSharedData()

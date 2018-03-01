@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
+class Q_DECL_EXPORT MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
 public:
   virtual ~MyQGraphicsAnchorLayout() {}
 // void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)

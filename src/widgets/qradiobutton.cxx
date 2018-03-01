@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRadioButton : public QRadioButton {
+class Q_DECL_EXPORT MyQRadioButton : public QRadioButton {
 public:
   virtual ~MyQRadioButton() {}
 // void QRadioButton(class QWidget *)

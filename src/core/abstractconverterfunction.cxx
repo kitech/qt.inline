@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyAbstractConverterFunction : public QtPrivate::AbstractConverterFunction {
+class Q_DECL_EXPORT MyAbstractConverterFunction : public QtPrivate::AbstractConverterFunction {
 public:
   virtual ~MyAbstractConverterFunction() {}
 };

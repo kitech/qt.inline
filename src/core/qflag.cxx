@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFlag : public QFlag {
+class Q_DECL_EXPORT MyQFlag : public QFlag {
 public:
   virtual ~MyQFlag() {}
 // void QFlag(int)

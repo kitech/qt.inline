@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQShortcutEvent : public QShortcutEvent {
+class Q_DECL_EXPORT MyQShortcutEvent : public QShortcutEvent {
 public:
   virtual ~MyQShortcutEvent() {}
 // void QShortcutEvent(const class QKeySequence &, int, _Bool)

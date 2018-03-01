@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextBlockUserData : public QTextBlockUserData {
+class Q_DECL_EXPORT MyQTextBlockUserData : public QTextBlockUserData {
 public:
   virtual ~MyQTextBlockUserData() {}
 };

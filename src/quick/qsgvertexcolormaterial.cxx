@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGVertexColorMaterial : public QSGVertexColorMaterial {
+class Q_DECL_EXPORT MyQSGVertexColorMaterial : public QSGVertexColorMaterial {
 public:
   virtual ~MyQSGVertexColorMaterial() {}
 // void QSGVertexColorMaterial()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSignalBlocker : public QSignalBlocker {
+class Q_DECL_EXPORT MyQSignalBlocker : public QSignalBlocker {
 public:
   virtual ~MyQSignalBlocker() {}
 // void QSignalBlocker(class QObject *)

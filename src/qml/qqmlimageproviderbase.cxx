@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlImageProviderBase : public QQmlImageProviderBase {
+class Q_DECL_EXPORT MyQQmlImageProviderBase : public QQmlImageProviderBase {
 public:
   virtual ~MyQQmlImageProviderBase() {}
 };

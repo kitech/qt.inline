@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleImageInterface : public QAccessibleImageInterface {
+class Q_DECL_EXPORT MyQAccessibleImageInterface : public QAccessibleImageInterface {
 public:
   virtual ~MyQAccessibleImageInterface() {}
 };

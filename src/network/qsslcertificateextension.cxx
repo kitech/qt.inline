@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslCertificateExtension : public QSslCertificateExtension {
+class Q_DECL_EXPORT MyQSslCertificateExtension : public QSslCertificateExtension {
 public:
   virtual ~MyQSslCertificateExtension() {}
 // void QSslCertificateExtension()

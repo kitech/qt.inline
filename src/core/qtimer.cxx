@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTimer : public QTimer {
+class Q_DECL_EXPORT MyQTimer : public QTimer {
 public:
   virtual ~MyQTimer() {}
 // void QTimer(class QObject *)

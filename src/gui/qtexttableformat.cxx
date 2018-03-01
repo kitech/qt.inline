@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextTableFormat : public QTextTableFormat {
+class Q_DECL_EXPORT MyQTextTableFormat : public QTextTableFormat {
 public:
   virtual ~MyQTextTableFormat() {}
 // void QTextTableFormat()

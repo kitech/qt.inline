@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextObjectInterface : public QTextObjectInterface {
+class Q_DECL_EXPORT MyQTextObjectInterface : public QTextObjectInterface {
 public:
   virtual ~MyQTextObjectInterface() {}
 };

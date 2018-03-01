@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLocalSocket : public QLocalSocket {
+class Q_DECL_EXPORT MyQLocalSocket : public QLocalSocket {
 public:
   virtual ~MyQLocalSocket() {}
 // void QLocalSocket(class QObject *)

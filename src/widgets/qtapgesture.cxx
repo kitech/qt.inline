@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTapGesture : public QTapGesture {
+class Q_DECL_EXPORT MyQTapGesture : public QTapGesture {
 public:
   virtual ~MyQTapGesture() {}
 // void QTapGesture(class QObject *)

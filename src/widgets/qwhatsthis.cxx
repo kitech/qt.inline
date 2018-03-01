@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWhatsThis : public QWhatsThis {
+class Q_DECL_EXPORT MyQWhatsThis : public QWhatsThis {
 public:
   virtual ~MyQWhatsThis() {}
 };

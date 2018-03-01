@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQVersionNumber : public QVersionNumber {
+class Q_DECL_EXPORT MyQVersionNumber : public QVersionNumber {
 public:
   virtual ~MyQVersionNumber() {}
 // void QVersionNumber()

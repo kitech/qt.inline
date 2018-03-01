@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPixmapCache : public QPixmapCache {
+class Q_DECL_EXPORT MyQPixmapCache : public QPixmapCache {
 public:
   virtual ~MyQPixmapCache() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkReply : public QNetworkReply {
+class Q_DECL_EXPORT MyQNetworkReply : public QNetworkReply {
 public:
   virtual ~MyQNetworkReply() {}
 // void QNetworkReply(class QObject *)

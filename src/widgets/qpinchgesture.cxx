@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPinchGesture : public QPinchGesture {
+class Q_DECL_EXPORT MyQPinchGesture : public QPinchGesture {
 public:
   virtual ~MyQPinchGesture() {}
 // void QPinchGesture(class QObject *)

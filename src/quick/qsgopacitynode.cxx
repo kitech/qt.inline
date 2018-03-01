@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSGOpacityNode : public QSGOpacityNode {
+class Q_DECL_EXPORT MyQSGOpacityNode : public QSGOpacityNode {
 public:
   virtual ~MyQSGOpacityNode() {}
 // void QSGOpacityNode()

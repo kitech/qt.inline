@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRunnable : public QRunnable {
+class Q_DECL_EXPORT MyQRunnable : public QRunnable {
 public:
   virtual ~MyQRunnable() {}
 // void QRunnable()

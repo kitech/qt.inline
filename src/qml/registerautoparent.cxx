@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyRegisterAutoParent : public QQmlPrivate::RegisterAutoParent {
+class Q_DECL_EXPORT MyRegisterAutoParent : public QQmlPrivate::RegisterAutoParent {
 public:
   virtual ~MyRegisterAutoParent() {}
 };

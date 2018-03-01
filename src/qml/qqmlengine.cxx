@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQmlEngine : public QQmlEngine {
+class Q_DECL_EXPORT MyQQmlEngine : public QQmlEngine {
 public:
   virtual ~MyQQmlEngine() {}
 // void QQmlEngine(class QObject *)

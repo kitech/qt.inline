@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHistoryState : public QHistoryState {
+class Q_DECL_EXPORT MyQHistoryState : public QHistoryState {
 public:
   virtual ~MyQHistoryState() {}
 // void QHistoryState(class QState *)

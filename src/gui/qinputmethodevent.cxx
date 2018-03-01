@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQInputMethodEvent : public QInputMethodEvent {
+class Q_DECL_EXPORT MyQInputMethodEvent : public QInputMethodEvent {
 public:
   virtual ~MyQInputMethodEvent() {}
 // void QInputMethodEvent()

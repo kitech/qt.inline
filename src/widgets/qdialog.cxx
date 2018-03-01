@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDialog : public QDialog {
+class Q_DECL_EXPORT MyQDialog : public QDialog {
 public:
   virtual ~MyQDialog() {}
 // void QDialog(class QWidget *, Qt::WindowFlags)

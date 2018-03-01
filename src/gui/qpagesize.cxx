@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPageSize : public QPageSize {
+class Q_DECL_EXPORT MyQPageSize : public QPageSize {
 public:
   virtual ~MyQPageSize() {}
 // void QPageSize()

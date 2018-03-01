@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFactoryInterface : public QFactoryInterface {
+class Q_DECL_EXPORT MyQFactoryInterface : public QFactoryInterface {
 public:
   virtual ~MyQFactoryInterface() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDynamicPropertyChangeEvent : public QDynamicPropertyChangeEvent {
+class Q_DECL_EXPORT MyQDynamicPropertyChangeEvent : public QDynamicPropertyChangeEvent {
 public:
   virtual ~MyQDynamicPropertyChangeEvent() {}
 // void QDynamicPropertyChangeEvent(const class QByteArray &)

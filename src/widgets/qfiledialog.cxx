@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileDialog : public QFileDialog {
+class Q_DECL_EXPORT MyQFileDialog : public QFileDialog {
 public:
   virtual ~MyQFileDialog() {}
 // void QFileDialog(class QWidget *, Qt::WindowFlags)

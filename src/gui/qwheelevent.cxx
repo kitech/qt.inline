@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQWheelEvent : public QWheelEvent {
+class Q_DECL_EXPORT MyQWheelEvent : public QWheelEvent {
 public:
   virtual ~MyQWheelEvent() {}
 // void QWheelEvent(const class QPointF &, int, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::Orientation)

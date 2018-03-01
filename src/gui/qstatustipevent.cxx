@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStatusTipEvent : public QStatusTipEvent {
+class Q_DECL_EXPORT MyQStatusTipEvent : public QStatusTipEvent {
 public:
   virtual ~MyQStatusTipEvent() {}
 // void QStatusTipEvent(const class QString &)

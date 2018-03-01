@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStateMachine : public QStateMachine {
+class Q_DECL_EXPORT MyQStateMachine : public QStateMachine {
 public:
   virtual ~MyQStateMachine() {}
 // void QStateMachine(class QObject *)

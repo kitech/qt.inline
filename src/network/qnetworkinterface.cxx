@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkInterface : public QNetworkInterface {
+class Q_DECL_EXPORT MyQNetworkInterface : public QNetworkInterface {
 public:
   virtual ~MyQNetworkInterface() {}
 // void QNetworkInterface()

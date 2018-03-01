@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMapNodeBase : public QMapNodeBase {
+class Q_DECL_EXPORT MyQMapNodeBase : public QMapNodeBase {
 public:
   virtual ~MyQMapNodeBase() {}
 };

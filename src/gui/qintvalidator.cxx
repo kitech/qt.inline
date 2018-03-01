@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIntValidator : public QIntValidator {
+class Q_DECL_EXPORT MyQIntValidator : public QIntValidator {
 public:
   virtual ~MyQIntValidator() {}
 // void QIntValidator(class QObject *)

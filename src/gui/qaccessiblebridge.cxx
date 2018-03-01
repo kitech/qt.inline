@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleBridge : public QAccessibleBridge {
+class Q_DECL_EXPORT MyQAccessibleBridge : public QAccessibleBridge {
 public:
   virtual ~MyQAccessibleBridge() {}
 };

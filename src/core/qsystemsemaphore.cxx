@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSystemSemaphore : public QSystemSemaphore {
+class Q_DECL_EXPORT MyQSystemSemaphore : public QSystemSemaphore {
 public:
   virtual ~MyQSystemSemaphore() {}
 // void QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)

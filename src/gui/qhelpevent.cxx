@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQHelpEvent : public QHelpEvent {
+class Q_DECL_EXPORT MyQHelpEvent : public QHelpEvent {
 public:
   virtual ~MyQHelpEvent() {}
 // void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)

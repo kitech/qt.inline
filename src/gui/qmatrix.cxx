@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQMatrix : public QMatrix {
+class Q_DECL_EXPORT MyQMatrix : public QMatrix {
 public:
   virtual ~MyQMatrix() {}
 // void QMatrix(Qt::Initialization)

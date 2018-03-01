@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractState : public QAbstractState {
+class Q_DECL_EXPORT MyQAbstractState : public QAbstractState {
 public:
   virtual ~MyQAbstractState() {}
 // void QAbstractState(class QState *)
@@ -26,7 +26,7 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractState::onEntry(event);
+    // QAbstractState::onEntry(event);
   }
   }
 
@@ -38,7 +38,7 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractState::onExit(event);
+    // QAbstractState::onExit(event);
   }
   }
 

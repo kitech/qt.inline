@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQIconEnginePlugin : public QIconEnginePlugin {
+class Q_DECL_EXPORT MyQIconEnginePlugin : public QIconEnginePlugin {
 public:
   virtual ~MyQIconEnginePlugin() {}
 // void QIconEnginePlugin(class QObject *)

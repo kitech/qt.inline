@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQBasicMutex : public QBasicMutex {
+class Q_DECL_EXPORT MyQBasicMutex : public QBasicMutex {
 public:
   virtual ~MyQBasicMutex() {}
 // void QBasicMutex()

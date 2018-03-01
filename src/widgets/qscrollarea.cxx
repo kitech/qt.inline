@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQScrollArea : public QScrollArea {
+class Q_DECL_EXPORT MyQScrollArea : public QScrollArea {
 public:
   virtual ~MyQScrollArea() {}
 // void QScrollArea(class QWidget *)

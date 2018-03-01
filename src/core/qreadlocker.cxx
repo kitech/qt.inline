@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQReadLocker : public QReadLocker {
+class Q_DECL_EXPORT MyQReadLocker : public QReadLocker {
 public:
   virtual ~MyQReadLocker() {}
 // void QReadLocker(class QReadWriteLock *)

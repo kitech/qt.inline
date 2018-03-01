@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQImageWriter : public QImageWriter {
+class Q_DECL_EXPORT MyQImageWriter : public QImageWriter {
 public:
   virtual ~MyQImageWriter() {}
 // void QImageWriter()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJsonArray : public QJsonArray {
+class Q_DECL_EXPORT MyQJsonArray : public QJsonArray {
 public:
   virtual ~MyQJsonArray() {}
 // void QJsonArray()

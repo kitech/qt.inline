@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQLocalServer : public QLocalServer {
+class Q_DECL_EXPORT MyQLocalServer : public QLocalServer {
 public:
   virtual ~MyQLocalServer() {}
 // void QLocalServer(class QObject *)

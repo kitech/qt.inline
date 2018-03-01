@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPointingDeviceUniqueId : public QPointingDeviceUniqueId {
+class Q_DECL_EXPORT MyQPointingDeviceUniqueId : public QPointingDeviceUniqueId {
 public:
   virtual ~MyQPointingDeviceUniqueId() {}
 // void QPointingDeviceUniqueId()

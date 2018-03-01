@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractButton : public QAbstractButton {
+class Q_DECL_EXPORT MyQAbstractButton : public QAbstractButton {
 public:
   virtual ~MyQAbstractButton() {}
 // void QAbstractButton(class QWidget *)
@@ -26,7 +26,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractButton::paintEvent(e);
+    // QAbstractButton::paintEvent(e);
   }
   }
 

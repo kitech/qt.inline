@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCalendarWidget : public QCalendarWidget {
+class Q_DECL_EXPORT MyQCalendarWidget : public QCalendarWidget {
 public:
   virtual ~MyQCalendarWidget() {}
 // void QCalendarWidget(class QWidget *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
+class Q_DECL_EXPORT MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
 public:
   virtual ~MyQGraphicsItemAnimation() {}
 // void QGraphicsItemAnimation(class QObject *)

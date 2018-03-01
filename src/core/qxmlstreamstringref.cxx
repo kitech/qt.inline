@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamStringRef : public QXmlStreamStringRef {
+class Q_DECL_EXPORT MyQXmlStreamStringRef : public QXmlStreamStringRef {
 public:
   virtual ~MyQXmlStreamStringRef() {}
 // void QXmlStreamStringRef()

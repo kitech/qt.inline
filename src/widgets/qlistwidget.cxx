@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQListWidget : public QListWidget {
+class Q_DECL_EXPORT MyQListWidget : public QListWidget {
 public:
   virtual ~MyQListWidget() {}
 // void QListWidget(class QWidget *)

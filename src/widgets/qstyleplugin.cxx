@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStylePlugin : public QStylePlugin {
+class Q_DECL_EXPORT MyQStylePlugin : public QStylePlugin {
 public:
   virtual ~MyQStylePlugin() {}
 // void QStylePlugin(class QObject *)

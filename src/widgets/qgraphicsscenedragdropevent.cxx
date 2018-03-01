@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsSceneDragDropEvent : public QGraphicsSceneDragDropEvent {
+class Q_DECL_EXPORT MyQGraphicsSceneDragDropEvent : public QGraphicsSceneDragDropEvent {
 public:
   virtual ~MyQGraphicsSceneDragDropEvent() {}
 // void QGraphicsSceneDragDropEvent(enum QEvent::Type)

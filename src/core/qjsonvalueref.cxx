@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQJsonValueRef : public QJsonValueRef {
+class Q_DECL_EXPORT MyQJsonValueRef : public QJsonValueRef {
 public:
   virtual ~MyQJsonValueRef() {}
 // void QJsonValueRef(class QJsonArray *, int)

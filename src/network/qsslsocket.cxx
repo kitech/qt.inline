@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslSocket : public QSslSocket {
+class Q_DECL_EXPORT MyQSslSocket : public QSslSocket {
 public:
   virtual ~MyQSslSocket() {}
 // void QSslSocket(class QObject *)

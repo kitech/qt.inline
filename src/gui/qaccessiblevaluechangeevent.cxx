@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleValueChangeEvent : public QAccessibleValueChangeEvent {
+class Q_DECL_EXPORT MyQAccessibleValueChangeEvent : public QAccessibleValueChangeEvent {
 public:
   virtual ~MyQAccessibleValueChangeEvent() {}
 // void QAccessibleValueChangeEvent(class QObject *, const class QVariant &)

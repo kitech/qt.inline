@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQSslCertificate : public QSslCertificate {
+class Q_DECL_EXPORT MyQSslCertificate : public QSslCertificate {
 public:
   virtual ~MyQSslCertificate() {}
 // void QSslCertificate(class QIODevice *, QSsl::EncodingFormat)

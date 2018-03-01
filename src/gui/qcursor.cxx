@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCursor : public QCursor {
+class Q_DECL_EXPORT MyQCursor : public QCursor {
 public:
   virtual ~MyQCursor() {}
 // void QCursor()

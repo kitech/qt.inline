@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQImageIOHandler : public QImageIOHandler {
+class Q_DECL_EXPORT MyQImageIOHandler : public QImageIOHandler {
 public:
   virtual ~MyQImageIOHandler() {}
 // void QImageIOHandler()

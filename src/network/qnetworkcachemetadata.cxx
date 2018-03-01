@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQNetworkCacheMetaData : public QNetworkCacheMetaData {
+class Q_DECL_EXPORT MyQNetworkCacheMetaData : public QNetworkCacheMetaData {
 public:
   virtual ~MyQNetworkCacheMetaData() {}
 // void QNetworkCacheMetaData()

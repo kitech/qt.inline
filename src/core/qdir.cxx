@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDir : public QDir {
+class Q_DECL_EXPORT MyQDir : public QDir {
 public:
   virtual ~MyQDir() {}
 // void QDir(const class QString &)

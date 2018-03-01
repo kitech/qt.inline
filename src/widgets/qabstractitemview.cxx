@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAbstractItemView : public QAbstractItemView {
+class Q_DECL_EXPORT MyQAbstractItemView : public QAbstractItemView {
 public:
   virtual ~MyQAbstractItemView() {}
 // void QAbstractItemView(class QWidget *)
@@ -245,7 +245,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    return QAbstractItemView::moveCursor(cursorAction, modifiers);
+    return QModelIndex{};
   }
   }
 
@@ -258,7 +258,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    return QAbstractItemView::horizontalOffset();
+    return int{};
   }
   }
 
@@ -271,7 +271,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    return QAbstractItemView::verticalOffset();
+    return int{};
   }
   }
 
@@ -284,7 +284,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    return QAbstractItemView::isIndexHidden(index);
+    return bool{};
   }
   }
 
@@ -296,7 +296,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    QAbstractItemView::setSelection(rect, command);
+    // QAbstractItemView::setSelection(rect, command);
   }
   }
 
@@ -309,7 +309,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QRegion*)(irv);
       // RecordRecordQRegion
     } else {
-    return QAbstractItemView::visualRegionForSelection(selection);
+    return QRegion{};
   }
   }
 

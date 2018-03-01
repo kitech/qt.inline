@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyExternalRefCountData : public QtSharedPointer::ExternalRefCountData {
+class Q_DECL_EXPORT MyExternalRefCountData : public QtSharedPointer::ExternalRefCountData {
 public:
   virtual ~MyExternalRefCountData() {}
 // void ExternalRefCountData(Qt::Initialization)

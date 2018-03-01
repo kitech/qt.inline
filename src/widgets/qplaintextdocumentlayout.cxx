@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
+class Q_DECL_EXPORT MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
 public:
   virtual ~MyQPlainTextDocumentLayout() {}
 // void QPlainTextDocumentLayout(class QTextDocument *)

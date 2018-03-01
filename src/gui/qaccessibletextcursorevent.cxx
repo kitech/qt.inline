@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTextCursorEvent : public QAccessibleTextCursorEvent {
+class Q_DECL_EXPORT MyQAccessibleTextCursorEvent : public QAccessibleTextCursorEvent {
 public:
   virtual ~MyQAccessibleTextCursorEvent() {}
 // void QAccessibleTextCursorEvent(class QObject *, int)

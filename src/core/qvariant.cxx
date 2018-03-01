@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQVariant : public QVariant {
+class Q_DECL_EXPORT MyQVariant : public QVariant {
 public:
   virtual ~MyQVariant() {}
 // void QVariant()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQQuickTextDocument : public QQuickTextDocument {
+class Q_DECL_EXPORT MyQQuickTextDocument : public QQuickTextDocument {
 public:
   virtual ~MyQQuickTextDocument() {}
 // void QQuickTextDocument(class QQuickItem *)

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPainterPathStroker : public QPainterPathStroker {
+class Q_DECL_EXPORT MyQPainterPathStroker : public QPainterPathStroker {
 public:
   virtual ~MyQPainterPathStroker() {}
 // void QPainterPathStroker()

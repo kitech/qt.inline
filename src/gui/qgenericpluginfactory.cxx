@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGenericPluginFactory : public QGenericPluginFactory {
+class Q_DECL_EXPORT MyQGenericPluginFactory : public QGenericPluginFactory {
 public:
   virtual ~MyQGenericPluginFactory() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStringView : public QStringView {
+class Q_DECL_EXPORT MyQStringView : public QStringView {
 public:
   virtual ~MyQStringView() {}
 // void QStringView()

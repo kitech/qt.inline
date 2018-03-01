@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionTabBarBase : public QStyleOptionTabBarBase {
+class Q_DECL_EXPORT MyQStyleOptionTabBarBase : public QStyleOptionTabBarBase {
 public:
   virtual ~MyQStyleOptionTabBarBase() {}
 // void QStyleOptionTabBarBase()

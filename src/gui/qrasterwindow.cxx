@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQRasterWindow : public QRasterWindow {
+class Q_DECL_EXPORT MyQRasterWindow : public QRasterWindow {
 public:
   virtual ~MyQRasterWindow() {}
 // void QRasterWindow(class QWindow *)

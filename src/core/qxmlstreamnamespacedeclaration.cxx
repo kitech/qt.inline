@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQXmlStreamNamespaceDeclaration : public QXmlStreamNamespaceDeclaration {
+class Q_DECL_EXPORT MyQXmlStreamNamespaceDeclaration : public QXmlStreamNamespaceDeclaration {
 public:
   virtual ~MyQXmlStreamNamespaceDeclaration() {}
 // void QXmlStreamNamespaceDeclaration()

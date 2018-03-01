@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextItem : public QTextItem {
+class Q_DECL_EXPORT MyQTextItem : public QTextItem {
 public:
   virtual ~MyQTextItem() {}
 };

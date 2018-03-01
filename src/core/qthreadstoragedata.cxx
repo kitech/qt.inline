@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQThreadStorageData : public QThreadStorageData {
+class Q_DECL_EXPORT MyQThreadStorageData : public QThreadStorageData {
 public:
   virtual ~MyQThreadStorageData() {}
 };

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
+class Q_DECL_EXPORT MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
 public:
   virtual ~MyQGraphicsLayoutItem() {}
 // void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)
@@ -51,7 +51,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     return *(QSizeF*)(irv);
       // RecordRecordQSizeF
     } else {
-    return QGraphicsLayoutItem::sizeHint(which, constraint);
+    return QSizeF{};
   }
   }
 

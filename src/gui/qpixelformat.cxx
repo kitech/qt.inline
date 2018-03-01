@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQPixelFormat : public QPixelFormat {
+class Q_DECL_EXPORT MyQPixelFormat : public QPixelFormat {
 public:
   virtual ~MyQPixelFormat() {}
 // void QPixelFormat()

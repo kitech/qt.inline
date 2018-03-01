@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionTitleBar : public QStyleOptionTitleBar {
+class Q_DECL_EXPORT MyQStyleOptionTitleBar : public QStyleOptionTitleBar {
 public:
   virtual ~MyQStyleOptionTitleBar() {}
 // void QStyleOptionTitleBar()

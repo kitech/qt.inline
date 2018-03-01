@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQStyleOptionSpinBox : public QStyleOptionSpinBox {
+class Q_DECL_EXPORT MyQStyleOptionSpinBox : public QStyleOptionSpinBox {
 public:
   virtual ~MyQStyleOptionSpinBox() {}
 // void QStyleOptionSpinBox()

@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDirModel : public QDirModel {
+class Q_DECL_EXPORT MyQDirModel : public QDirModel {
 public:
   virtual ~MyQDirModel() {}
 // void QDirModel(const class QStringList &, class QDir::Filters, class QDir::SortFlags, class QObject *)

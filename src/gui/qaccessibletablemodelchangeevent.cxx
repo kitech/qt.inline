@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQAccessibleTableModelChangeEvent : public QAccessibleTableModelChangeEvent {
+class Q_DECL_EXPORT MyQAccessibleTableModelChangeEvent : public QAccessibleTableModelChangeEvent {
 public:
   virtual ~MyQAccessibleTableModelChangeEvent() {}
 // void QAccessibleTableModelChangeEvent(class QObject *, enum QAccessibleTableModelChangeEvent::ModelChangeType)

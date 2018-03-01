@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQTextBoundaryFinder : public QTextBoundaryFinder {
+class Q_DECL_EXPORT MyQTextBoundaryFinder : public QTextBoundaryFinder {
 public:
   virtual ~MyQTextBoundaryFinder() {}
 // void QTextBoundaryFinder()

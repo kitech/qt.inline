@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDeadlineTimer : public QDeadlineTimer {
+class Q_DECL_EXPORT MyQDeadlineTimer : public QDeadlineTimer {
 public:
   virtual ~MyQDeadlineTimer() {}
 // void QDeadlineTimer(Qt::TimerType)

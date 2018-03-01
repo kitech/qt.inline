@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQDragMoveEvent : public QDragMoveEvent {
+class Q_DECL_EXPORT MyQDragMoveEvent : public QDragMoveEvent {
 public:
   virtual ~MyQDragMoveEvent() {}
 // void QDragMoveEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)

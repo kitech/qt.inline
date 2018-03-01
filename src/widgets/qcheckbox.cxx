@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQCheckBox : public QCheckBox {
+class Q_DECL_EXPORT MyQCheckBox : public QCheckBox {
 public:
   virtual ~MyQCheckBox() {}
 // void QCheckBox(class QWidget *)

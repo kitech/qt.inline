@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileSystemModel : public QFileSystemModel {
+class Q_DECL_EXPORT MyQFileSystemModel : public QFileSystemModel {
 public:
   virtual ~MyQFileSystemModel() {}
 // void QFileSystemModel(class QObject *)

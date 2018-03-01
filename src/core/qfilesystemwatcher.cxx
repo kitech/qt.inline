@@ -13,7 +13,7 @@
 
 //  main block begin
 
-class MyQFileSystemWatcher : public QFileSystemWatcher {
+class Q_DECL_EXPORT MyQFileSystemWatcher : public QFileSystemWatcher {
 public:
   virtual ~MyQFileSystemWatcher() {}
 // void QFileSystemWatcher(class QObject *)
