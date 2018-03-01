@@ -1,3 +1,5 @@
+#usage: cmake -DCMAKE_TOOLCHAIN_FILE=../tc-mingw.cmake
+
 # this one is important
 SET(CMAKE_SYSTEM_NAME Windows)
 #this one not so much

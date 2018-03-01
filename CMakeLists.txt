@@ -31,18 +31,20 @@ if(ANDROID)
 endif(ANDROID)
 # for android arm build end
 
+set(_QT_STATIC_PREF "Static")
+set(_QT_STATIC_PREF "")
 set(CMAKE_AUTOMOC off)  ### it's sure, the wrapper not need moc
-find_package(Qt5Core)
-find_package(Qt5Gui)
-find_package(Qt5Widgets)
+find_package(${_QT_STATIC_PREF}Qt5Core)
+find_package(${_QT_STATIC_PREF}Qt5Gui)
+find_package(${_QT_STATIC_PREF}Qt5Widgets)
 
-find_package(Qt5Network)
-find_package(Qt5Qml)
-find_package(Qt5Quick)
+find_package(${_QT_STATIC_PREF}Qt5Network)
+find_package(${_QT_STATIC_PREF}Qt5Qml)
+find_package(${_QT_STATIC_PREF}Qt5Quick)
 
 # find_package(Qt5QuickTemplates2)
-find_package(Qt5QuickControls2)
-find_package(Qt5QuickWidgets)
+find_package(${_QT_STATIC_PREF}Qt5QuickControls2)
+find_package(${_QT_STATIC_PREF}Qt5QuickWidgets)
 
 # set(qt5_inline_core_srcs "src/core/qobject.cxx")
 # set(qt5_inline_gui_srcs "src/gui/qevent.cxx")
@@ -89,7 +91,7 @@ set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD StaticQt5::QCocoaIntegrationPlugin)
 
 # link_directories(/opt/qt510st/lib/ /opt/qt510st/plugins/platforms/)
 add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
-target_link_libraries(Qt5Inline Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Network Qt5::Qml Qt5::Quick Qt5::QuickControls2 Qt5::QuickWidgets)
+target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Core ${_QT_STATIC_PREF}Qt5::Gui ${_QT_STATIC_PREF}Qt5::Widgets ${_QT_STATIC_PREF}Qt5::Network ${_QT_STATIC_PREF}Qt5::Qml ${_QT_STATIC_PREF}Qt5::Quick ${_QT_STATIC_PREF}Qt5::QuickControls2 ${_QT_STATIC_PREF}Qt5::QuickWidgets)
 if(ANDROID)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
