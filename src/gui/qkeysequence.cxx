@@ -29,42 +29,42 @@ MyQKeySequence(QKeySequence::StandardKey key) : QKeySequence(key) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:156
 // [-2] void QKeySequence()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2Ev() {
   return  new QKeySequence();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:157
 // [-2] void QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(QString* key, QKeySequence::SequenceFormat format) {
   return  new QKeySequence(*key, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:158
 // [-2] void QKeySequence(int, int, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2Eiiii(int k1, int k2, int k3, int k4) {
   return  new QKeySequence(k1, k2, k3, k4);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:160
 // [-2] void QKeySequence(enum QKeySequence::StandardKey)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2ENS_11StandardKeyE(QKeySequence::StandardKey key) {
   return  new QKeySequence(key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:161
 // [-2] void ~QKeySequence()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QKeySequenceD2Ev(void *this_) {
   delete (QKeySequence*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:163
 // [4] int count()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QKeySequence5countEv(void *this_) {
   return (int)((QKeySequence*)this_)->count();
 }
@@ -72,7 +72,7 @@ int C_ZNK12QKeySequence5countEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:164
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequence7isEmptyEv(void *this_) {
   return (bool)((QKeySequence*)this_)->isEmpty();
 }
@@ -80,7 +80,7 @@ bool C_ZNK12QKeySequence7isEmptyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:172
 // [8] QString toString(enum QKeySequence::SequenceFormat)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QKeySequence8toStringENS_14SequenceFormatE(void *this_, QKeySequence::SequenceFormat format) {
   auto rv = ((QKeySequence*)this_)->toString(format);
 return new QString(rv);
@@ -89,7 +89,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:173
 // [8] QKeySequence fromString(const class QString &, enum QKeySequence::SequenceFormat)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE(QString* str, QKeySequence::SequenceFormat format) {
   auto rv = QKeySequence::fromString(*str, format);
 return new QKeySequence(rv);
@@ -97,7 +97,7 @@ return new QKeySequence(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:178
 // [4] QKeySequence::SequenceMatch matches(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QKeySequence::SequenceMatch C_ZNK12QKeySequence7matchesERKS_(void *this_, QKeySequence* seq) {
   return (QKeySequence::SequenceMatch)((QKeySequence*)this_)->matches(*seq);
 }
@@ -105,7 +105,7 @@ QKeySequence::SequenceMatch C_ZNK12QKeySequence7matchesERKS_(void *this_, QKeySe
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:179
 // [8] QKeySequence mnemonic(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequence8mnemonicERK7QString(QString* text) {
   auto rv = QKeySequence::mnemonic(*text);
 return new QKeySequence(rv);
@@ -113,7 +113,7 @@ return new QKeySequence(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:187
 // [4] int operator[](uint)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QKeySequenceixEj(void *this_, uint i) {
   return (int)((QKeySequence*)this_)->operator[](i);
 }
@@ -121,7 +121,7 @@ int C_ZNK12QKeySequenceixEj(void *this_, uint i) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:188
 // [8] QKeySequence & operator=(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceaSERKS_(void *this_, QKeySequence* other) {
   auto& rv = ((QKeySequence*)this_)->operator=(*other);
 return &rv;
@@ -130,7 +130,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:190
 // [8] QKeySequence & operator=(class QKeySequence &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceaSEOS_(void *this_, QKeySequence && other) {
   auto& rv = ((QKeySequence*)this_)->operator=(other);
 return &rv;
@@ -139,7 +139,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:192
 // [-2] void swap(class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence* other) {
   ((QKeySequence*)this_)->swap(*other);
 }
@@ -147,7 +147,7 @@ void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:194
 // [1] bool operator==(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequenceeqERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator==(*other);
 }
@@ -155,7 +155,7 @@ bool C_ZNK12QKeySequenceeqERKS_(void *this_, QKeySequence* other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:195
 // [1] bool operator!=(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequenceneERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator!=(*other);
 }
@@ -163,7 +163,7 @@ bool C_ZNK12QKeySequenceneERKS_(void *this_, QKeySequence* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:197
 // [1] bool operator<(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequenceltERKS_(void *this_, QKeySequence* ks) {
   return (bool)((QKeySequence*)this_)->operator<(*ks);
 }
@@ -171,7 +171,7 @@ bool C_ZNK12QKeySequenceltERKS_(void *this_, QKeySequence* ks) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:198
 // [1] bool operator>(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequencegtERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator>(*other);
 }
@@ -179,7 +179,7 @@ bool C_ZNK12QKeySequencegtERKS_(void *this_, QKeySequence* other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:200
 // [1] bool operator<=(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequenceleERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator<=(*other);
 }
@@ -187,7 +187,7 @@ bool C_ZNK12QKeySequenceleERKS_(void *this_, QKeySequence* other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:202
 // [1] bool operator>=(const class QKeySequence &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequencegeERKS_(void *this_, QKeySequence* other) {
   return (bool)((QKeySequence*)this_)->operator>=(*other);
 }
@@ -195,7 +195,7 @@ bool C_ZNK12QKeySequencegeERKS_(void *this_, QKeySequence* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:205
 // [1] bool isDetached()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QKeySequence10isDetachedEv(void *this_) {
   return (bool)((QKeySequence*)this_)->isDetached();
 }

@@ -25,12 +25,12 @@ MyQStyleOptionSizeGrip(int version) : QStyleOptionSizeGrip(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:653
 // [-2] void QStyleOptionSizeGrip()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionSizeGripC2Ev() {
   return  new QStyleOptionSizeGrip();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionSizeGripD2Ev(void *this_) {
   delete (QStyleOptionSizeGrip*)(this_);
 }

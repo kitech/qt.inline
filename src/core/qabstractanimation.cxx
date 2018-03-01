@@ -72,7 +72,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:121
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN18QAbstractAnimation5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QAbstractAnimation*)this_)->QAbstractAnimation::event(event);
 }
@@ -80,11 +80,11 @@ bool C_ZN18QAbstractAnimation5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:123
 // [-2] void updateCurrentTime(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:124
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation11updateStateENS_5StateES0_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QAbstractAnimation*)this_)->QAbstractAnimation::updateState(newState, oldState);
 }
@@ -92,7 +92,7 @@ void C_ZN18QAbstractAnimation11updateStateENS_5StateES0_(void *this_, QAbstractA
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:125
 // [-2] void updateDirection(class QAbstractAnimation::Direction)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QAbstractAnimation*)this_)->QAbstractAnimation::updateDirection(direction);
 }
@@ -100,7 +100,7 @@ void C_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(void *this_, QAbst
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:57
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QAbstractAnimation10metaObjectEv(void *this_) {
   return (void*)((QAbstractAnimation*)this_)->metaObject();
 }
@@ -108,7 +108,7 @@ void* C_ZNK18QAbstractAnimation10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:85
 // [-2] void QAbstractAnimation(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QAbstractAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractAnimation*)(0);
   return 0; // new MyQAbstractAnimation(parent);
@@ -116,14 +116,14 @@ void* C_ZN18QAbstractAnimationC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:86
 // [-2] void ~QAbstractAnimation()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimationD2Ev(void *this_) {
   delete (QAbstractAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:88
 // [4] QAbstractAnimation::State state()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractAnimation::State C_ZNK18QAbstractAnimation5stateEv(void *this_) {
   return (QAbstractAnimation::State)((QAbstractAnimation*)this_)->state();
 }
@@ -131,7 +131,7 @@ QAbstractAnimation::State C_ZNK18QAbstractAnimation5stateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:90
 // [8] QAnimationGroup * group()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QAbstractAnimation5groupEv(void *this_) {
   return (void*)((QAbstractAnimation*)this_)->group();
 }
@@ -139,7 +139,7 @@ void* C_ZNK18QAbstractAnimation5groupEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:92
 // [4] QAbstractAnimation::Direction direction()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractAnimation::Direction C_ZNK18QAbstractAnimation9directionEv(void *this_) {
   return (QAbstractAnimation::Direction)((QAbstractAnimation*)this_)->direction();
 }
@@ -147,7 +147,7 @@ QAbstractAnimation::Direction C_ZNK18QAbstractAnimation9directionEv(void *this_)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:93
 // [-2] void setDirection(enum QAbstractAnimation::Direction)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation12setDirectionENS_9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QAbstractAnimation*)this_)->setDirection(direction);
 }
@@ -155,7 +155,7 @@ void C_ZN18QAbstractAnimation12setDirectionENS_9DirectionE(void *this_, QAbstrac
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:95
 // [4] int currentTime()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QAbstractAnimation11currentTimeEv(void *this_) {
   return (int)((QAbstractAnimation*)this_)->currentTime();
 }
@@ -163,7 +163,7 @@ int C_ZNK18QAbstractAnimation11currentTimeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:96
 // [4] int currentLoopTime()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QAbstractAnimation15currentLoopTimeEv(void *this_) {
   return (int)((QAbstractAnimation*)this_)->currentLoopTime();
 }
@@ -171,7 +171,7 @@ int C_ZNK18QAbstractAnimation15currentLoopTimeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:98
 // [4] int loopCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QAbstractAnimation9loopCountEv(void *this_) {
   return (int)((QAbstractAnimation*)this_)->loopCount();
 }
@@ -179,7 +179,7 @@ int C_ZNK18QAbstractAnimation9loopCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:99
 // [-2] void setLoopCount(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation12setLoopCountEi(void *this_, int loopCount) {
   ((QAbstractAnimation*)this_)->setLoopCount(loopCount);
 }
@@ -187,7 +187,7 @@ void C_ZN18QAbstractAnimation12setLoopCountEi(void *this_, int loopCount) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:100
 // [4] int currentLoop()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QAbstractAnimation11currentLoopEv(void *this_) {
   return (int)((QAbstractAnimation*)this_)->currentLoop();
 }
@@ -195,7 +195,7 @@ int C_ZNK18QAbstractAnimation11currentLoopEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:102
 // [4] int duration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QAbstractAnimation8durationEv(void *this_) {
   return (int)((QAbstractAnimation*)this_)->duration();
 }
@@ -203,7 +203,7 @@ int C_ZNK18QAbstractAnimation8durationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:103
 // [4] int totalDuration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QAbstractAnimation13totalDurationEv(void *this_) {
   return (int)((QAbstractAnimation*)this_)->totalDuration();
 }
@@ -211,7 +211,7 @@ int C_ZNK18QAbstractAnimation13totalDurationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:106
 // [-2] void finished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation8finishedEv(void *this_) {
   ((QAbstractAnimation*)this_)->finished();
 }
@@ -219,7 +219,7 @@ void C_ZN18QAbstractAnimation8finishedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:107
 // [-2] void stateChanged(class QAbstractAnimation::State, class QAbstractAnimation::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation12stateChangedENS_5StateES0_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QAbstractAnimation*)this_)->stateChanged(newState, oldState);
 }
@@ -227,7 +227,7 @@ void C_ZN18QAbstractAnimation12stateChangedENS_5StateES0_(void *this_, QAbstract
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:108
 // [-2] void currentLoopChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation18currentLoopChangedEi(void *this_, int currentLoop) {
   ((QAbstractAnimation*)this_)->currentLoopChanged(currentLoop);
 }
@@ -235,7 +235,7 @@ void C_ZN18QAbstractAnimation18currentLoopChangedEi(void *this_, int currentLoop
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:109
 // [-2] void directionChanged(class QAbstractAnimation::Direction)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation16directionChangedENS_9DirectionE(void *this_, QAbstractAnimation::Direction arg0) {
   ((QAbstractAnimation*)this_)->directionChanged(arg0);
 }
@@ -243,7 +243,7 @@ void C_ZN18QAbstractAnimation16directionChangedENS_9DirectionE(void *this_, QAbs
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:112
 // [-2] void start(class QAbstractAnimation::DeletionPolicy)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation5startENS_14DeletionPolicyE(void *this_, QAbstractAnimation::DeletionPolicy policy) {
   ((QAbstractAnimation*)this_)->start(policy);
 }
@@ -251,7 +251,7 @@ void C_ZN18QAbstractAnimation5startENS_14DeletionPolicyE(void *this_, QAbstractA
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:113
 // [-2] void pause()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation5pauseEv(void *this_) {
   ((QAbstractAnimation*)this_)->pause();
 }
@@ -259,7 +259,7 @@ void C_ZN18QAbstractAnimation5pauseEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:114
 // [-2] void resume()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation6resumeEv(void *this_) {
   ((QAbstractAnimation*)this_)->resume();
 }
@@ -267,7 +267,7 @@ void C_ZN18QAbstractAnimation6resumeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:115
 // [-2] void setPaused(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation9setPausedEb(void *this_, bool arg0) {
   ((QAbstractAnimation*)this_)->setPaused(arg0);
 }
@@ -275,7 +275,7 @@ void C_ZN18QAbstractAnimation9setPausedEb(void *this_, bool arg0) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:116
 // [-2] void stop()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation4stopEv(void *this_) {
   ((QAbstractAnimation*)this_)->stop();
 }
@@ -283,7 +283,7 @@ void C_ZN18QAbstractAnimation4stopEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:117
 // [-2] void setCurrentTime(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation14setCurrentTimeEi(void *this_, int msecs) {
   ((QAbstractAnimation*)this_)->setCurrentTime(msecs);
 }

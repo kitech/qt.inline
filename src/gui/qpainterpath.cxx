@@ -25,21 +25,21 @@ MyQPainterPath(const QPointF & startPoint) : QPainterPath(startPoint) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:91
 // [-2] void QPainterPath()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathC2Ev() {
   return  new QPainterPath();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:92
 // [-2] void QPainterPath(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathC2ERK7QPointF(QPointF* startPoint) {
   return  new QPainterPath(*startPoint);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:94
 // [8] QPainterPath & operator=(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathaSERKS_(void *this_, QPainterPath* other) {
   auto& rv = ((QPainterPath*)this_)->operator=(*other);
 return &rv;
@@ -48,7 +48,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:96
 // [8] QPainterPath & operator=(class QPainterPath &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathaSEOS_(void *this_, QPainterPath && other) {
   auto& rv = ((QPainterPath*)this_)->operator=(other);
 return &rv;
@@ -57,14 +57,14 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:99
 // [-2] void ~QPainterPath()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPathD2Ev(void *this_) {
   delete (QPainterPath*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:100
 // [-2] void swap(class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath4swapERS_(void *this_, QPainterPath* other) {
   ((QPainterPath*)this_)->swap(*other);
 }
@@ -72,7 +72,7 @@ void C_ZN12QPainterPath4swapERS_(void *this_, QPainterPath* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:102
 // [-2] void closeSubpath()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath12closeSubpathEv(void *this_) {
   ((QPainterPath*)this_)->closeSubpath();
 }
@@ -80,7 +80,7 @@ void C_ZN12QPainterPath12closeSubpathEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:104
 // [-2] void moveTo(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath6moveToERK7QPointF(void *this_, QPointF* p) {
   ((QPainterPath*)this_)->moveTo(*p);
 }
@@ -88,7 +88,7 @@ void C_ZN12QPainterPath6moveToERK7QPointF(void *this_, QPointF* p) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:105
 // [-2] void moveTo(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath6moveToEdd(void *this_, qreal x, qreal y) {
   ((QPainterPath*)this_)->moveTo(x, y);
 }
@@ -96,7 +96,7 @@ void C_ZN12QPainterPath6moveToEdd(void *this_, qreal x, qreal y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:107
 // [-2] void lineTo(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath6lineToERK7QPointF(void *this_, QPointF* p) {
   ((QPainterPath*)this_)->lineTo(*p);
 }
@@ -104,7 +104,7 @@ void C_ZN12QPainterPath6lineToERK7QPointF(void *this_, QPointF* p) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:108
 // [-2] void lineTo(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath6lineToEdd(void *this_, qreal x, qreal y) {
   ((QPainterPath*)this_)->lineTo(x, y);
 }
@@ -112,7 +112,7 @@ void C_ZN12QPainterPath6lineToEdd(void *this_, qreal x, qreal y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:110
 // [-2] void arcMoveTo(const class QRectF &, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9arcMoveToERK6QRectFd(void *this_, QRectF* rect, qreal angle) {
   ((QPainterPath*)this_)->arcMoveTo(*rect, angle);
 }
@@ -120,7 +120,7 @@ void C_ZN12QPainterPath9arcMoveToERK6QRectFd(void *this_, QRectF* rect, qreal an
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:111
 // [-2] void arcMoveTo(qreal, qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9arcMoveToEddddd(void *this_, qreal x, qreal y, qreal w, qreal h, qreal angle) {
   ((QPainterPath*)this_)->arcMoveTo(x, y, w, h, angle);
 }
@@ -128,7 +128,7 @@ void C_ZN12QPainterPath9arcMoveToEddddd(void *this_, qreal x, qreal y, qreal w, 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:113
 // [-2] void arcTo(const class QRectF &, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath5arcToERK6QRectFdd(void *this_, QRectF* rect, qreal startAngle, qreal arcLength) {
   ((QPainterPath*)this_)->arcTo(*rect, startAngle, arcLength);
 }
@@ -136,7 +136,7 @@ void C_ZN12QPainterPath5arcToERK6QRectFdd(void *this_, QRectF* rect, qreal start
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:114
 // [-2] void arcTo(qreal, qreal, qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath5arcToEdddddd(void *this_, qreal x, qreal y, qreal w, qreal h, qreal startAngle, qreal arcLength) {
   ((QPainterPath*)this_)->arcTo(x, y, w, h, startAngle, arcLength);
 }
@@ -144,7 +144,7 @@ void C_ZN12QPainterPath5arcToEdddddd(void *this_, qreal x, qreal y, qreal w, qre
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:116
 // [-2] void cubicTo(const class QPointF &, const class QPointF &, const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7cubicToERK7QPointFS2_S2_(void *this_, QPointF* ctrlPt1, QPointF* ctrlPt2, QPointF* endPt) {
   ((QPainterPath*)this_)->cubicTo(*ctrlPt1, *ctrlPt2, *endPt);
 }
@@ -152,7 +152,7 @@ void C_ZN12QPainterPath7cubicToERK7QPointFS2_S2_(void *this_, QPointF* ctrlPt1, 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:117
 // [-2] void cubicTo(qreal, qreal, qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7cubicToEdddddd(void *this_, qreal ctrlPt1x, qreal ctrlPt1y, qreal ctrlPt2x, qreal ctrlPt2y, qreal endPtx, qreal endPty) {
   ((QPainterPath*)this_)->cubicTo(ctrlPt1x, ctrlPt1y, ctrlPt2x, ctrlPt2y, endPtx, endPty);
 }
@@ -160,7 +160,7 @@ void C_ZN12QPainterPath7cubicToEdddddd(void *this_, qreal ctrlPt1x, qreal ctrlPt
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:119
 // [-2] void quadTo(const class QPointF &, const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath6quadToERK7QPointFS2_(void *this_, QPointF* ctrlPt, QPointF* endPt) {
   ((QPainterPath*)this_)->quadTo(*ctrlPt, *endPt);
 }
@@ -168,7 +168,7 @@ void C_ZN12QPainterPath6quadToERK7QPointFS2_(void *this_, QPointF* ctrlPt, QPoin
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:120
 // [-2] void quadTo(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath6quadToEdddd(void *this_, qreal ctrlPtx, qreal ctrlPty, qreal endPtx, qreal endPty) {
   ((QPainterPath*)this_)->quadTo(ctrlPtx, ctrlPty, endPtx, endPty);
 }
@@ -176,7 +176,7 @@ void C_ZN12QPainterPath6quadToEdddd(void *this_, qreal ctrlPtx, qreal ctrlPty, q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:122
 // [16] QPointF currentPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath15currentPositionEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->currentPosition();
 return new QPointF(rv);
@@ -185,7 +185,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:124
 // [-2] void addRect(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7addRectERK6QRectF(void *this_, QRectF* rect) {
   ((QPainterPath*)this_)->addRect(*rect);
 }
@@ -193,7 +193,7 @@ void C_ZN12QPainterPath7addRectERK6QRectF(void *this_, QRectF* rect) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:125
 // [-2] void addRect(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7addRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   ((QPainterPath*)this_)->addRect(x, y, w, h);
 }
@@ -201,7 +201,7 @@ void C_ZN12QPainterPath7addRectEdddd(void *this_, qreal x, qreal y, qreal w, qre
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:126
 // [-2] void addEllipse(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath10addEllipseERK6QRectF(void *this_, QRectF* rect) {
   ((QPainterPath*)this_)->addEllipse(*rect);
 }
@@ -209,7 +209,7 @@ void C_ZN12QPainterPath10addEllipseERK6QRectF(void *this_, QRectF* rect) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:127
 // [-2] void addEllipse(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath10addEllipseEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   ((QPainterPath*)this_)->addEllipse(x, y, w, h);
 }
@@ -217,7 +217,7 @@ void C_ZN12QPainterPath10addEllipseEdddd(void *this_, qreal x, qreal y, qreal w,
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:128
 // [-2] void addEllipse(const class QPointF &, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath10addEllipseERK7QPointFdd(void *this_, QPointF* center, qreal rx, qreal ry) {
   ((QPainterPath*)this_)->addEllipse(*center, rx, ry);
 }
@@ -225,7 +225,7 @@ void C_ZN12QPainterPath10addEllipseERK7QPointFdd(void *this_, QPointF* center, q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:129
 // [-2] void addPolygon(const class QPolygonF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath10addPolygonERK9QPolygonF(void *this_, QPolygonF* polygon) {
   ((QPainterPath*)this_)->addPolygon(*polygon);
 }
@@ -233,7 +233,7 @@ void C_ZN12QPainterPath10addPolygonERK9QPolygonF(void *this_, QPolygonF* polygon
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:130
 // [-2] void addText(const class QPointF &, const class QFont &, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7addTextERK7QPointFRK5QFontRK7QString(void *this_, QPointF* point, QFont* f, QString* text) {
   ((QPainterPath*)this_)->addText(*point, *f, *text);
 }
@@ -241,7 +241,7 @@ void C_ZN12QPainterPath7addTextERK7QPointFRK5QFontRK7QString(void *this_, QPoint
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:131
 // [-2] void addText(qreal, qreal, const class QFont &, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7addTextEddRK5QFontRK7QString(void *this_, qreal x, qreal y, QFont* f, QString* text) {
   ((QPainterPath*)this_)->addText(x, y, *f, *text);
 }
@@ -249,7 +249,7 @@ void C_ZN12QPainterPath7addTextEddRK5QFontRK7QString(void *this_, qreal x, qreal
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:132
 // [-2] void addPath(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath7addPathERKS_(void *this_, QPainterPath* path) {
   ((QPainterPath*)this_)->addPath(*path);
 }
@@ -257,7 +257,7 @@ void C_ZN12QPainterPath7addPathERKS_(void *this_, QPainterPath* path) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:133
 // [-2] void addRegion(const class QRegion &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9addRegionERK7QRegion(void *this_, QRegion* region) {
   ((QPainterPath*)this_)->addRegion(*region);
 }
@@ -265,7 +265,7 @@ void C_ZN12QPainterPath9addRegionERK7QRegion(void *this_, QRegion* region) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:135
 // [-2] void addRoundedRect(const class QRectF &, qreal, qreal, Qt::SizeMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath14addRoundedRectERK6QRectFddN2Qt8SizeModeE(void *this_, QRectF* rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainterPath*)this_)->addRoundedRect(*rect, xRadius, yRadius, mode);
 }
@@ -273,7 +273,7 @@ void C_ZN12QPainterPath14addRoundedRectERK6QRectFddN2Qt8SizeModeE(void *this_, Q
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:137
 // [-2] void addRoundedRect(qreal, qreal, qreal, qreal, qreal, qreal, Qt::SizeMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath14addRoundedRectEddddddN2Qt8SizeModeE(void *this_, qreal x, qreal y, qreal w, qreal h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainterPath*)this_)->addRoundedRect(x, y, w, h, xRadius, yRadius, mode);
 }
@@ -281,7 +281,7 @@ void C_ZN12QPainterPath14addRoundedRectEddddddN2Qt8SizeModeE(void *this_, qreal 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:141
 // [-2] void addRoundRect(const class QRectF &, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath12addRoundRectERK6QRectFii(void *this_, QRectF* rect, int xRnd, int yRnd) {
   ((QPainterPath*)this_)->addRoundRect(*rect, xRnd, yRnd);
 }
@@ -289,7 +289,7 @@ void C_ZN12QPainterPath12addRoundRectERK6QRectFii(void *this_, QRectF* rect, int
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:142
 // [-2] void addRoundRect(qreal, qreal, qreal, qreal, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath12addRoundRectEddddii(void *this_, qreal x, qreal y, qreal w, qreal h, int xRnd, int yRnd) {
   ((QPainterPath*)this_)->addRoundRect(x, y, w, h, xRnd, yRnd);
 }
@@ -297,7 +297,7 @@ void C_ZN12QPainterPath12addRoundRectEddddii(void *this_, qreal x, qreal y, qrea
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:144
 // [-2] void addRoundRect(const class QRectF &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath12addRoundRectERK6QRectFi(void *this_, QRectF* rect, int roundness) {
   ((QPainterPath*)this_)->addRoundRect(*rect, roundness);
 }
@@ -305,7 +305,7 @@ void C_ZN12QPainterPath12addRoundRectERK6QRectFi(void *this_, QRectF* rect, int 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:145
 // [-2] void addRoundRect(qreal, qreal, qreal, qreal, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath12addRoundRectEddddi(void *this_, qreal x, qreal y, qreal w, qreal h, int roundness) {
   ((QPainterPath*)this_)->addRoundRect(x, y, w, h, roundness);
 }
@@ -313,7 +313,7 @@ void C_ZN12QPainterPath12addRoundRectEddddi(void *this_, qreal x, qreal y, qreal
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:148
 // [-2] void connectPath(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath11connectPathERKS_(void *this_, QPainterPath* path) {
   ((QPainterPath*)this_)->connectPath(*path);
 }
@@ -321,7 +321,7 @@ void C_ZN12QPainterPath11connectPathERKS_(void *this_, QPainterPath* path) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:150
 // [1] bool contains(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath8containsERK7QPointF(void *this_, QPointF* pt) {
   return (bool)((QPainterPath*)this_)->contains(*pt);
 }
@@ -329,7 +329,7 @@ bool C_ZNK12QPainterPath8containsERK7QPointF(void *this_, QPointF* pt) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:151
 // [1] bool contains(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath8containsERK6QRectF(void *this_, QRectF* rect) {
   return (bool)((QPainterPath*)this_)->contains(*rect);
 }
@@ -337,7 +337,7 @@ bool C_ZNK12QPainterPath8containsERK6QRectF(void *this_, QRectF* rect) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:152
 // [1] bool intersects(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath10intersectsERK6QRectF(void *this_, QRectF* rect) {
   return (bool)((QPainterPath*)this_)->intersects(*rect);
 }
@@ -345,7 +345,7 @@ bool C_ZNK12QPainterPath10intersectsERK6QRectF(void *this_, QRectF* rect) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:154
 // [-2] void translate(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9translateEdd(void *this_, qreal dx, qreal dy) {
   ((QPainterPath*)this_)->translate(dx, dy);
 }
@@ -353,7 +353,7 @@ void C_ZN12QPainterPath9translateEdd(void *this_, qreal dx, qreal dy) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:155
 // [-2] void translate(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9translateERK7QPointF(void *this_, QPointF* offset) {
   ((QPainterPath*)this_)->translate(*offset);
 }
@@ -361,7 +361,7 @@ void C_ZN12QPainterPath9translateERK7QPointF(void *this_, QPointF* offset) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:157
 // [8] QPainterPath translated(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10translatedEdd(void *this_, qreal dx, qreal dy) {
   auto rv = ((QPainterPath*)this_)->translated(dx, dy);
 return new QPainterPath(rv);
@@ -370,7 +370,7 @@ return new QPainterPath(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:158
 // [8] QPainterPath translated(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10translatedERK7QPointF(void *this_, QPointF* offset) {
   auto rv = ((QPainterPath*)this_)->translated(*offset);
 return new QPainterPath(rv);
@@ -379,7 +379,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:160
 // [32] QRectF boundingRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath12boundingRectEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->boundingRect();
 return new QRectF(rv);
@@ -388,7 +388,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:161
 // [32] QRectF controlPointRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath16controlPointRectEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->controlPointRect();
 return new QRectF(rv);
@@ -397,7 +397,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:163
 // [4] Qt::FillRule fillRule()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::FillRule C_ZNK12QPainterPath8fillRuleEv(void *this_) {
   return (Qt::FillRule)((QPainterPath*)this_)->fillRule();
 }
@@ -405,7 +405,7 @@ Qt::FillRule C_ZNK12QPainterPath8fillRuleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:164
 // [-2] void setFillRule(Qt::FillRule)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath11setFillRuleEN2Qt8FillRuleE(void *this_, Qt::FillRule fillRule) {
   ((QPainterPath*)this_)->setFillRule(fillRule);
 }
@@ -413,7 +413,7 @@ void C_ZN12QPainterPath11setFillRuleEN2Qt8FillRuleE(void *this_, Qt::FillRule fi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:166
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath7isEmptyEv(void *this_) {
   return (bool)((QPainterPath*)this_)->isEmpty();
 }
@@ -421,7 +421,7 @@ bool C_ZNK12QPainterPath7isEmptyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:168
 // [8] QPainterPath toReversed()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10toReversedEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->toReversed();
 return new QPainterPath(rv);
@@ -430,7 +430,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:171
 // [8] QPolygonF toFillPolygon(const class QMatrix &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath13toFillPolygonERK7QMatrix(void *this_, QMatrix* matrix) {
   auto rv = ((QPainterPath*)this_)->toFillPolygon(*matrix);
 return new QPolygonF(rv);
@@ -439,7 +439,7 @@ return new QPolygonF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:174
 // [8] QPolygonF toFillPolygon(const class QTransform &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath13toFillPolygonERK10QTransform(void *this_, QTransform* matrix) {
   auto rv = ((QPainterPath*)this_)->toFillPolygon(*matrix);
 return new QPolygonF(rv);
@@ -448,7 +448,7 @@ return new QPolygonF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:176
 // [4] int elementCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPainterPath12elementCountEv(void *this_) {
   return (int)((QPainterPath*)this_)->elementCount();
 }
@@ -456,7 +456,7 @@ int C_ZNK12QPainterPath12elementCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:177
 // [24] QPainterPath::Element elementAt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QPainterPath::Element C_ZNK12QPainterPath9elementAtEi(void *this_, int i) {
   return (QPainterPath::Element)((QPainterPath*)this_)->elementAt(i);
 }
@@ -464,7 +464,7 @@ QPainterPath::Element C_ZNK12QPainterPath9elementAtEi(void *this_, int i) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:178
 // [-2] void setElementPositionAt(int, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath20setElementPositionAtEidd(void *this_, int i, qreal x, qreal y) {
   ((QPainterPath*)this_)->setElementPositionAt(i, x, y);
 }
@@ -472,7 +472,7 @@ void C_ZN12QPainterPath20setElementPositionAtEidd(void *this_, int i, qreal x, q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:180
 // [8] qreal length()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QPainterPath6lengthEv(void *this_) {
   return (qreal)((QPainterPath*)this_)->length();
 }
@@ -480,7 +480,7 @@ qreal C_ZNK12QPainterPath6lengthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:181
 // [8] qreal percentAtLength(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QPainterPath15percentAtLengthEd(void *this_, qreal t) {
   return (qreal)((QPainterPath*)this_)->percentAtLength(t);
 }
@@ -488,7 +488,7 @@ qreal C_ZNK12QPainterPath15percentAtLengthEd(void *this_, qreal t) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:182
 // [16] QPointF pointAtPercent(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath14pointAtPercentEd(void *this_, qreal t) {
   auto rv = ((QPainterPath*)this_)->pointAtPercent(t);
 return new QPointF(rv);
@@ -497,7 +497,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:183
 // [8] qreal angleAtPercent(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QPainterPath14angleAtPercentEd(void *this_, qreal t) {
   return (qreal)((QPainterPath*)this_)->angleAtPercent(t);
 }
@@ -505,7 +505,7 @@ qreal C_ZNK12QPainterPath14angleAtPercentEd(void *this_, qreal t) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:184
 // [8] qreal slopeAtPercent(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QPainterPath14slopeAtPercentEd(void *this_, qreal t) {
   return (qreal)((QPainterPath*)this_)->slopeAtPercent(t);
 }
@@ -513,7 +513,7 @@ qreal C_ZNK12QPainterPath14slopeAtPercentEd(void *this_, qreal t) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:186
 // [1] bool intersects(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath10intersectsERKS_(void *this_, QPainterPath* p) {
   return (bool)((QPainterPath*)this_)->intersects(*p);
 }
@@ -521,7 +521,7 @@ bool C_ZNK12QPainterPath10intersectsERKS_(void *this_, QPainterPath* p) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:187
 // [1] bool contains(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath8containsERKS_(void *this_, QPainterPath* p) {
   return (bool)((QPainterPath*)this_)->contains(*p);
 }
@@ -529,7 +529,7 @@ bool C_ZNK12QPainterPath8containsERKS_(void *this_, QPainterPath* p) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:188
 // [8] QPainterPath united(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath6unitedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->united(*r);
 return new QPainterPath(rv);
@@ -538,7 +538,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:189
 // [8] QPainterPath intersected(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath11intersectedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->intersected(*r);
 return new QPainterPath(rv);
@@ -547,7 +547,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:190
 // [8] QPainterPath subtracted(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10subtractedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->subtracted(*r);
 return new QPainterPath(rv);
@@ -556,7 +556,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:191
 // [8] QPainterPath subtractedInverted(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath18subtractedInvertedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->subtractedInverted(*r);
 return new QPainterPath(rv);
@@ -565,7 +565,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:193
 // [8] QPainterPath simplified()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10simplifiedEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->simplified();
 return new QPainterPath(rv);
@@ -574,7 +574,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:195
 // [1] bool operator==(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPatheqERKS_(void *this_, QPainterPath* other) {
   return (bool)((QPainterPath*)this_)->operator==(*other);
 }
@@ -582,7 +582,7 @@ bool C_ZNK12QPainterPatheqERKS_(void *this_, QPainterPath* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:196
 // [1] bool operator!=(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPathneERKS_(void *this_, QPainterPath* other) {
   return (bool)((QPainterPath*)this_)->operator!=(*other);
 }
@@ -590,7 +590,7 @@ bool C_ZNK12QPainterPathneERKS_(void *this_, QPainterPath* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:198
 // [8] QPainterPath operator&(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPathanERKS_(void *this_, QPainterPath* other) {
   auto rv = ((QPainterPath*)this_)->operator&(*other);
 return new QPainterPath(rv);
@@ -599,7 +599,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:199
 // [8] QPainterPath operator|(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPathorERKS_(void *this_, QPainterPath* other) {
   auto rv = ((QPainterPath*)this_)->operator|(*other);
 return new QPainterPath(rv);
@@ -608,7 +608,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:200
 // [8] QPainterPath operator+(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPathplERKS_(void *this_, QPainterPath* other) {
   auto rv = ((QPainterPath*)this_)->operator+(*other);
 return new QPainterPath(rv);
@@ -617,7 +617,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:201
 // [8] QPainterPath operator-(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPathmiERKS_(void *this_, QPainterPath* other) {
   auto rv = ((QPainterPath*)this_)->operator-(*other);
 return new QPainterPath(rv);
@@ -626,7 +626,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:202
 // [8] QPainterPath & operator&=(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathaNERKS_(void *this_, QPainterPath* other) {
   auto& rv = ((QPainterPath*)this_)->operator&=(*other);
 return &rv;
@@ -635,7 +635,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:203
 // [8] QPainterPath & operator|=(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathoRERKS_(void *this_, QPainterPath* other) {
   auto& rv = ((QPainterPath*)this_)->operator|=(*other);
 return &rv;
@@ -644,7 +644,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:204
 // [8] QPainterPath & operator+=(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathpLERKS_(void *this_, QPainterPath* other) {
   auto& rv = ((QPainterPath*)this_)->operator+=(*other);
 return &rv;
@@ -653,7 +653,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:205
 // [8] QPainterPath & operator-=(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathmIERKS_(void *this_, QPainterPath* other) {
   auto& rv = ((QPainterPath*)this_)->operator-=(*other);
 return &rv;

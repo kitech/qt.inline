@@ -23,7 +23,7 @@ MyQIconEnginePlugin(QObject * parent) : QIconEnginePlugin(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:56
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QIconEnginePlugin10metaObjectEv(void *this_) {
   return (void*)((QIconEnginePlugin*)this_)->metaObject();
 }
@@ -31,21 +31,21 @@ void* C_ZNK17QIconEnginePlugin10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:58
 // [-2] void QIconEnginePlugin(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QIconEnginePluginC2EP7QObject(QObject * parent) {
   return 0; // new QIconEnginePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:59
 // [-2] void ~QIconEnginePlugin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QIconEnginePluginD2Ev(void *this_) {
   delete (QIconEnginePlugin*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:61
 // [8] QIconEngine * create(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QIconEnginePlugin6createERK7QString(void *this_, QString* filename) {
   return (void*)((QIconEnginePlugin*)this_)->create(*filename);
 }

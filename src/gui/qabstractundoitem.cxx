@@ -21,14 +21,14 @@ public:
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:86
 // [-2] void ~QAbstractUndoItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractUndoItemD2Ev(void *this_) {
   delete (QAbstractUndoItem*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:87
 // [-2] void undo()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractUndoItem4undoEv(void *this_) {
   ((QAbstractUndoItem*)this_)->undo();
 }
@@ -36,7 +36,7 @@ void C_ZN17QAbstractUndoItem4undoEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:88
 // [-2] void redo()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractUndoItem4redoEv(void *this_) {
   ((QAbstractUndoItem*)this_)->redo();
 }

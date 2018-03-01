@@ -36,7 +36,7 @@ MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:223
 // [1] bool isInitialized()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void *this_) {
   return (bool)((QAbstractOpenGLFunctions*)this_)->QAbstractOpenGLFunctions::isInitialized();
 }
@@ -44,14 +44,14 @@ bool C_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:213
 // [-2] void ~QAbstractOpenGLFunctions()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractOpenGLFunctionsD2Ev(void *this_) {
   delete (QAbstractOpenGLFunctions*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:215
 // [1] bool initializeOpenGLFunctions()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractOpenGLFunctions25initializeOpenGLFunctionsEv(void *this_) {
   return (bool)((QAbstractOpenGLFunctions*)this_)->initializeOpenGLFunctions();
 }

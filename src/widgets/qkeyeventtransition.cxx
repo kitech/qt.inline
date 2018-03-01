@@ -50,7 +50,7 @@ MyQKeyEventTransition(QObject * object, QEvent::Type type_, int key, QState * so
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:69
 // [-2] void onTransition(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QKeyEventTransition12onTransitionEP6QEvent(void *this_, QEvent * event) {
   ((QKeyEventTransition*)this_)->QKeyEventTransition::onTransition(event);
 }
@@ -58,7 +58,7 @@ void C_ZN19QKeyEventTransition12onTransitionEP6QEvent(void *this_, QEvent * even
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:70
 // [1] bool eventTest(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN19QKeyEventTransition9eventTestEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QKeyEventTransition*)this_)->QKeyEventTransition::eventTest(event);
 }
@@ -66,7 +66,7 @@ bool C_ZN19QKeyEventTransition9eventTestEP6QEvent(void *this_, QEvent * event) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:53
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QKeyEventTransition10metaObjectEv(void *this_) {
   return (void*)((QKeyEventTransition*)this_)->metaObject();
 }
@@ -74,7 +74,7 @@ void* C_ZNK19QKeyEventTransition10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:57
 // [-2] void QKeyEventTransition(class QState *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QKeyEventTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQKeyEventTransition*)(0);
   return  new MyQKeyEventTransition(sourceState);
@@ -82,7 +82,7 @@ void* C_ZN19QKeyEventTransitionC2EP6QState(QState * sourceState) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:58
 // [-2] void QKeyEventTransition(class QObject *, class QEvent::Type, int, class QState *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * object, QEvent::Type type_, int key, QState * sourceState) {
   auto _nilp = (MyQKeyEventTransition*)(0);
   return  new MyQKeyEventTransition(object, type_, key, sourceState);
@@ -90,14 +90,14 @@ void* C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * obj
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:60
 // [-2] void ~QKeyEventTransition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QKeyEventTransitionD2Ev(void *this_) {
   delete (QKeyEventTransition*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:62
 // [4] int key()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK19QKeyEventTransition3keyEv(void *this_) {
   return (int)((QKeyEventTransition*)this_)->key();
 }
@@ -105,7 +105,7 @@ int C_ZNK19QKeyEventTransition3keyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:63
 // [-2] void setKey(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QKeyEventTransition6setKeyEi(void *this_, int key) {
   ((QKeyEventTransition*)this_)->setKey(key);
 }
@@ -113,7 +113,7 @@ void C_ZN19QKeyEventTransition6setKeyEi(void *this_, int key) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:65
 // [4] Qt::KeyboardModifiers modifierMask()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK19QKeyEventTransition12modifierMaskEv(void *this_) {
   return (Qt::KeyboardModifiers)((QKeyEventTransition*)this_)->modifierMask();
 }
@@ -121,7 +121,7 @@ Qt::KeyboardModifiers C_ZNK19QKeyEventTransition12modifierMaskEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:66
 // [-2] void setModifierMask(Qt::KeyboardModifiers)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
   ((QKeyEventTransition*)this_)->setModifierMask(modifiers);
 }

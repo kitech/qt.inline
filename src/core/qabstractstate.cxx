@@ -60,15 +60,15 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:73
 // [-2] void onEntry(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:74
 // [-2] void onExit(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:76
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QAbstractState5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QAbstractState*)this_)->QAbstractState::event(e);
 }
@@ -76,7 +76,7 @@ bool C_ZN14QAbstractState5eventEP6QEvent(void *this_, QEvent * e) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QAbstractState10metaObjectEv(void *this_) {
   return (void*)((QAbstractState*)this_)->metaObject();
 }
@@ -84,14 +84,14 @@ void* C_ZNK14QAbstractState10metaObjectEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:58
 // [-2] void ~QAbstractState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QAbstractStateD2Ev(void *this_) {
   delete (QAbstractState*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:60
 // [8] QState * parentState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QAbstractState11parentStateEv(void *this_) {
   return (void*)((QAbstractState*)this_)->parentState();
 }
@@ -99,7 +99,7 @@ void* C_ZNK14QAbstractState11parentStateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:61
 // [8] QStateMachine * machine()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QAbstractState7machineEv(void *this_) {
   return (void*)((QAbstractState*)this_)->machine();
 }
@@ -107,7 +107,7 @@ void* C_ZNK14QAbstractState7machineEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:63
 // [1] bool active()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QAbstractState6activeEv(void *this_) {
   return (bool)((QAbstractState*)this_)->active();
 }
@@ -115,7 +115,7 @@ bool C_ZNK14QAbstractState6activeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:68
 // [-2] void activeChanged(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QAbstractState13activeChangedEb(void *this_, bool active) {
   ((QAbstractState*)this_)->activeChanged(active);
 }

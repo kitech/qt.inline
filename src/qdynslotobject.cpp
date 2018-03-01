@@ -105,7 +105,8 @@ void QDynSlotObject::setCallbackSlot(void *fnptr, char* name, int argc, int*argt
     };
 }
 
-extern "C" void callback_slot_test(void*_o, int _c, int _id, void*_a,
+extern "C" Q_DECL_EXPORT
+void callback_slot_test(void*_o, int _c, int _id, void*_a,
                                    char*name, int argc, int*argtys, void*cbptr) {
     if (QDynSlotObject_debug) {
         qDebug()<<"callback_slot called:"<<_o<<_c<<_id<<_a << ((QDynSlotObject*)_o)->name_;
@@ -146,13 +147,16 @@ int main_test(int argc, char **argv)
 }
 
 /////
+Q_DECL_EXPORT
 QDynSlotObject* QDynSlotObject_new(void *fnptr, char* name, int argc, int*argtys, void* cbptr) {
     QCoreApplication::instance();
     return new QDynSlotObject(fnptr, name, argc, argtys, cbptr);
 }
 
+Q_DECL_EXPORT
 void QDynSlotObject_delete(QDynSlotObject*o) { if (o != NULL) { delete o; } }
 
+Q_DECL_EXPORT
 void QDynSlotObject_connect_switch(QObject*src, char*signature, QDynSlotObject*me, int on) {
     if (QDynSlotObject_debug) {
         qDebug()<<src<<signature<<me<<on;
@@ -164,19 +168,23 @@ void QDynSlotObject_connect_switch(QObject*src, char*signature, QDynSlotObject*m
     }
 }
 
+Q_DECL_EXPORT
 void QDynSlotObject_connect_test(QObject*ofrom, QObject*oto) {
     QObject::connect(ofrom, SIGNAL(objectNameChanged(const QString &)), oto, SLOT(dumnyslot()), Qt::QueuedConnection);
 }
 
+Q_DECL_EXPORT
 void QDynSlotObject_trigger_test(QObject*osrc) {
     osrc->setObjectName(QString("rdobjname:")+QString::number(qrand()));
 }
 
+Q_DECL_EXPORT
 void QDynSlotObject_set_debug(int on) {
     QDynSlotObject_debug = on == 1;
 }
 
 // return: 0:not exists, 1: not uniq, >1: signature string
+Q_DECL_EXPORT
 uint64_t QObject_get_meta_signature_by_name(void*qobjx, char* name) {
     QObject* qobj = (QObject*)qobjx;
     const QMetaObject* mobj = qobj->metaObject();

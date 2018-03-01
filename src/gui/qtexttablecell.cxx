@@ -23,21 +23,21 @@ MyQTextTableCell() : QTextTableCell() {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:57
 // [-2] void QTextTableCell()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QTextTableCellC2Ev() {
   return  new QTextTableCell();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:58
 // [-2] void ~QTextTableCell()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QTextTableCellD2Ev(void *this_) {
   delete (QTextTableCell*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:60
 // [16] QTextTableCell & operator=(const class QTextTableCell &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QTextTableCellaSERKS_(void *this_, QTextTableCell* o) {
   auto& rv = ((QTextTableCell*)this_)->operator=(*o);
 return &rv;
@@ -46,7 +46,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:63
 // [-2] void setFormat(const class QTextCharFormat &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
   ((QTextTableCell*)this_)->setFormat(*format);
 }
@@ -54,7 +54,7 @@ void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, QTextCharFo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:64
 // [16] QTextCharFormat format()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QTextTableCell6formatEv(void *this_) {
   auto rv = ((QTextTableCell*)this_)->format();
 return new QTextCharFormat(rv);
@@ -63,7 +63,7 @@ return new QTextCharFormat(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:66
 // [4] int row()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell3rowEv(void *this_) {
   return (int)((QTextTableCell*)this_)->row();
 }
@@ -71,7 +71,7 @@ int C_ZNK14QTextTableCell3rowEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:67
 // [4] int column()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell6columnEv(void *this_) {
   return (int)((QTextTableCell*)this_)->column();
 }
@@ -79,7 +79,7 @@ int C_ZNK14QTextTableCell6columnEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:69
 // [4] int rowSpan()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell7rowSpanEv(void *this_) {
   return (int)((QTextTableCell*)this_)->rowSpan();
 }
@@ -87,7 +87,7 @@ int C_ZNK14QTextTableCell7rowSpanEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:70
 // [4] int columnSpan()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell10columnSpanEv(void *this_) {
   return (int)((QTextTableCell*)this_)->columnSpan();
 }
@@ -95,7 +95,7 @@ int C_ZNK14QTextTableCell10columnSpanEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:72
 // [1] bool isValid()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QTextTableCell7isValidEv(void *this_) {
   return (bool)((QTextTableCell*)this_)->isValid();
 }
@@ -103,7 +103,7 @@ bool C_ZNK14QTextTableCell7isValidEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:74
 // [8] QTextCursor firstCursorPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QTextTableCell19firstCursorPositionEv(void *this_) {
   auto rv = ((QTextTableCell*)this_)->firstCursorPosition();
 return new QTextCursor(rv);
@@ -112,7 +112,7 @@ return new QTextCursor(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:75
 // [8] QTextCursor lastCursorPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QTextTableCell18lastCursorPositionEv(void *this_) {
   auto rv = ((QTextTableCell*)this_)->lastCursorPosition();
 return new QTextCursor(rv);
@@ -121,7 +121,7 @@ return new QTextCursor(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:76
 // [4] int firstPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell13firstPositionEv(void *this_) {
   return (int)((QTextTableCell*)this_)->firstPosition();
 }
@@ -129,7 +129,7 @@ int C_ZNK14QTextTableCell13firstPositionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:77
 // [4] int lastPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell12lastPositionEv(void *this_) {
   return (int)((QTextTableCell*)this_)->lastPosition();
 }
@@ -137,7 +137,7 @@ int C_ZNK14QTextTableCell12lastPositionEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:79
 // [1] bool operator==(const class QTextTableCell &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QTextTableCelleqERKS_(void *this_, QTextTableCell* other) {
   return (bool)((QTextTableCell*)this_)->operator==(*other);
 }
@@ -145,7 +145,7 @@ bool C_ZNK14QTextTableCelleqERKS_(void *this_, QTextTableCell* other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:81
 // [1] bool operator!=(const class QTextTableCell &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QTextTableCellneERKS_(void *this_, QTextTableCell* other) {
   return (bool)((QTextTableCell*)this_)->operator!=(*other);
 }
@@ -153,7 +153,7 @@ bool C_ZNK14QTextTableCellneERKS_(void *this_, QTextTableCell* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:84
 // [32] QTextFrame::iterator begin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QTextFrame::iterator C_ZNK14QTextTableCell5beginEv(void *this_) {
   return (QTextFrame::iterator)((QTextTableCell*)this_)->begin();
 }
@@ -161,7 +161,7 @@ QTextFrame::iterator C_ZNK14QTextTableCell5beginEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:85
 // [32] QTextFrame::iterator end()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QTextFrame::iterator C_ZNK14QTextTableCell3endEv(void *this_) {
   return (QTextFrame::iterator)((QTextTableCell*)this_)->end();
 }
@@ -169,7 +169,7 @@ QTextFrame::iterator C_ZNK14QTextTableCell3endEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:87
 // [4] int tableCellFormatIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell20tableCellFormatIndexEv(void *this_) {
   return (int)((QTextTableCell*)this_)->tableCellFormatIndex();
 }

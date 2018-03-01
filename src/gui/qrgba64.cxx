@@ -23,14 +23,14 @@ MyQRgba64() : QRgba64() {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:69
 // [-2] void QRgba64()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba64C2Ev() {
   return  new QRgba64();
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:72
 // [8] QRgba64 fromRgba64(quint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba6410fromRgba64Ey(quint64 c) {
   auto rv = QRgba64::fromRgba64(c);
 return new QRgba64(rv);
@@ -38,7 +38,7 @@ return new QRgba64(rv);
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:77
 // [8] QRgba64 fromRgba64(quint16, quint16, quint16, quint16)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba6410fromRgba64Etttt(quint16 red, quint16 green, quint16 blue, quint16 alpha) {
   auto rv = QRgba64::fromRgba64(red, green, blue, alpha);
 return new QRgba64(rv);
@@ -46,7 +46,7 @@ return new QRgba64(rv);
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:84
 // [8] QRgba64 fromRgba(quint8, quint8, quint8, quint8)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba648fromRgbaEhhhh(quint8 red, quint8 green, quint8 blue, quint8 alpha) {
   auto rv = QRgba64::fromRgba(red, green, blue, alpha);
 return new QRgba64(rv);
@@ -54,7 +54,7 @@ return new QRgba64(rv);
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:92
 // [8] QRgba64 fromArgb32(uint)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba6410fromArgb32Ej(uint rgb) {
   auto rv = QRgba64::fromArgb32(rgb);
 return new QRgba64(rv);
@@ -62,7 +62,7 @@ return new QRgba64(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:97
 // [1] bool isOpaque()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRgba648isOpaqueEv(void *this_) {
   return (bool)((QRgba64*)this_)->isOpaque();
 }
@@ -70,7 +70,7 @@ bool C_ZNK7QRgba648isOpaqueEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:101
 // [1] bool isTransparent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRgba6413isTransparentEv(void *this_) {
   return (bool)((QRgba64*)this_)->isTransparent();
 }
@@ -78,7 +78,7 @@ bool C_ZNK7QRgba6413isTransparentEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:106
 // [2] quint16 red()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint16 C_ZNK7QRgba643redEv(void *this_) {
   return (quint16)((QRgba64*)this_)->red();
 }
@@ -86,7 +86,7 @@ quint16 C_ZNK7QRgba643redEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:107
 // [2] quint16 green()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint16 C_ZNK7QRgba645greenEv(void *this_) {
   return (quint16)((QRgba64*)this_)->green();
 }
@@ -94,7 +94,7 @@ quint16 C_ZNK7QRgba645greenEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:108
 // [2] quint16 blue()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint16 C_ZNK7QRgba644blueEv(void *this_) {
   return (quint16)((QRgba64*)this_)->blue();
 }
@@ -102,7 +102,7 @@ quint16 C_ZNK7QRgba644blueEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:109
 // [2] quint16 alpha()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint16 C_ZNK7QRgba645alphaEv(void *this_) {
   return (quint16)((QRgba64*)this_)->alpha();
 }
@@ -110,7 +110,7 @@ quint16 C_ZNK7QRgba645alphaEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:110
 // [-2] void setRed(quint16)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QRgba646setRedEt(void *this_, quint16 _red) {
   ((QRgba64*)this_)->setRed(_red);
 }
@@ -118,7 +118,7 @@ void C_ZN7QRgba646setRedEt(void *this_, quint16 _red) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:111
 // [-2] void setGreen(quint16)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QRgba648setGreenEt(void *this_, quint16 _green) {
   ((QRgba64*)this_)->setGreen(_green);
 }
@@ -126,7 +126,7 @@ void C_ZN7QRgba648setGreenEt(void *this_, quint16 _green) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:112
 // [-2] void setBlue(quint16)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QRgba647setBlueEt(void *this_, quint16 _blue) {
   ((QRgba64*)this_)->setBlue(_blue);
 }
@@ -134,7 +134,7 @@ void C_ZN7QRgba647setBlueEt(void *this_, quint16 _blue) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:113
 // [-2] void setAlpha(quint16)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QRgba648setAlphaEt(void *this_, quint16 _alpha) {
   ((QRgba64*)this_)->setAlpha(_alpha);
 }
@@ -142,7 +142,7 @@ void C_ZN7QRgba648setAlphaEt(void *this_, quint16 _alpha) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:115
 // [1] quint8 red8()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint8 C_ZNK7QRgba644red8Ev(void *this_) {
   return (quint8)((QRgba64*)this_)->red8();
 }
@@ -150,7 +150,7 @@ quint8 C_ZNK7QRgba644red8Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:116
 // [1] quint8 green8()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint8 C_ZNK7QRgba646green8Ev(void *this_) {
   return (quint8)((QRgba64*)this_)->green8();
 }
@@ -158,7 +158,7 @@ quint8 C_ZNK7QRgba646green8Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:117
 // [1] quint8 blue8()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint8 C_ZNK7QRgba645blue8Ev(void *this_) {
   return (quint8)((QRgba64*)this_)->blue8();
 }
@@ -166,7 +166,7 @@ quint8 C_ZNK7QRgba645blue8Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:118
 // [1] quint8 alpha8()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint8 C_ZNK7QRgba646alpha8Ev(void *this_) {
   return (quint8)((QRgba64*)this_)->alpha8();
 }
@@ -174,7 +174,7 @@ quint8 C_ZNK7QRgba646alpha8Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:119
 // [4] uint toArgb32()
-extern "C"
+extern "C" Q_DECL_EXPORT
 uint C_ZNK7QRgba648toArgb32Ev(void *this_) {
   return (uint)((QRgba64*)this_)->toArgb32();
 }
@@ -182,7 +182,7 @@ uint C_ZNK7QRgba648toArgb32Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:123
 // [2] ushort toRgb16()
-extern "C"
+extern "C" Q_DECL_EXPORT
 ushort C_ZNK7QRgba647toRgb16Ev(void *this_) {
   return (ushort)((QRgba64*)this_)->toRgb16();
 }
@@ -190,7 +190,7 @@ ushort C_ZNK7QRgba647toRgb16Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:128
 // [8] QRgba64 premultiplied()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRgba6413premultipliedEv(void *this_) {
   auto rv = ((QRgba64*)this_)->premultiplied();
 return new QRgba64(rv);
@@ -199,7 +199,7 @@ return new QRgba64(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:137
 // [8] QRgba64 unpremultiplied()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRgba6415unpremultipliedEv(void *this_) {
   auto rv = ((QRgba64*)this_)->unpremultiplied();
 return new QRgba64(rv);
@@ -208,14 +208,14 @@ return new QRgba64(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:151
 // [8] QRgba64 operator=(quint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba64aSEy(void *this_, quint64 _rgba) {
   auto rv = ((QRgba64*)this_)->operator=(_rgba);
 return new QRgba64(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QRgba64D2Ev(void *this_) {
   delete (QRgba64*)(this_);
 }

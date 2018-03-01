@@ -21,7 +21,7 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:91
 // [8] const QMapNodeBase * nextNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMapNodeBase8nextNodeEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->nextNode();
 }
@@ -29,7 +29,7 @@ void* C_ZNK12QMapNodeBase8nextNodeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:92
 // [8] QMapNodeBase * nextNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QMapNodeBase8nextNodeEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->nextNode();
 }
@@ -37,7 +37,7 @@ void* C_ZN12QMapNodeBase8nextNodeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:93
 // [8] const QMapNodeBase * previousNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMapNodeBase12previousNodeEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->previousNode();
 }
@@ -45,7 +45,7 @@ void* C_ZNK12QMapNodeBase12previousNodeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:94
 // [8] QMapNodeBase * previousNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QMapNodeBase12previousNodeEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->previousNode();
 }
@@ -53,7 +53,7 @@ void* C_ZN12QMapNodeBase12previousNodeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:96
 // [4] QMapNodeBase::Color color()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QMapNodeBase::Color C_ZNK12QMapNodeBase5colorEv(void *this_) {
   return (QMapNodeBase::Color)((QMapNodeBase*)this_)->color();
 }
@@ -61,7 +61,7 @@ QMapNodeBase::Color C_ZNK12QMapNodeBase5colorEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:97
 // [-2] void setColor(enum QMapNodeBase::Color)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QMapNodeBase8setColorENS_5ColorE(void *this_, QMapNodeBase::Color c) {
   ((QMapNodeBase*)this_)->setColor(c);
 }
@@ -69,13 +69,13 @@ void C_ZN12QMapNodeBase8setColorENS_5ColorE(void *this_, QMapNodeBase::Color c) 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:98
 // [8] QMapNodeBase * parent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMapNodeBase6parentEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->parent();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QMapNodeBaseD2Ev(void *this_) {
   delete (QMapNodeBase*)(this_);
 }

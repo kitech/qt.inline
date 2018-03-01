@@ -25,12 +25,12 @@ MyQStyleOptionComboBox(int version) : QStyleOptionComboBox(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:601
 // [-2] void QStyleOptionComboBox()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionComboBoxC2Ev() {
   return  new QStyleOptionComboBox();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionComboBoxD2Ev(void *this_) {
   delete (QStyleOptionComboBox*)(this_);
 }

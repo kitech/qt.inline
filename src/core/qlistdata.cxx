@@ -21,7 +21,7 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:96
 // [8] QListData::Data * detach(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QListData6detachEi(void *this_, int alloc) {
   return (void*)((QListData*)this_)->detach(alloc);
 }
@@ -29,7 +29,7 @@ void* C_ZN9QListData6detachEi(void *this_, int alloc) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:97
 // [8] QListData::Data * detach_grow(int *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QListData11detach_growEPii(void *this_, int * i, int n) {
   return (void*)((QListData*)this_)->detach_grow(i, n);
 }
@@ -37,7 +37,7 @@ void* C_ZN9QListData11detach_growEPii(void *this_, int * i, int n) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:98
 // [-2] void realloc(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListData7reallocEi(void *this_, int alloc) {
   ((QListData*)this_)->realloc(alloc);
 }
@@ -45,7 +45,7 @@ void C_ZN9QListData7reallocEi(void *this_, int alloc) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:99
 // [-2] void realloc_grow(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListData12realloc_growEi(void *this_, int growth) {
   ((QListData*)this_)->realloc_grow(growth);
 }
@@ -53,7 +53,7 @@ void C_ZN9QListData12realloc_growEi(void *this_, int growth) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:100
 // [-2] void dispose()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListData7disposeEv(void *this_) {
   ((QListData*)this_)->dispose();
 }
@@ -61,7 +61,7 @@ void C_ZN9QListData7disposeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:104
 // [8] void ** erase(void **)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QListData5eraseEPPv(void *this_, void ** xi) {
   return (void*)((QListData*)this_)->erase(xi);
 }
@@ -69,7 +69,7 @@ void* C_ZN9QListData5eraseEPPv(void *this_, void ** xi) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:110
 // [-2] void remove(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListData6removeEi(void *this_, int i) {
   ((QListData*)this_)->remove(i);
 }
@@ -77,7 +77,7 @@ void C_ZN9QListData6removeEi(void *this_, int i) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:111
 // [-2] void remove(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListData6removeEii(void *this_, int i, int n) {
   ((QListData*)this_)->remove(i, n);
 }
@@ -85,7 +85,7 @@ void C_ZN9QListData6removeEii(void *this_, int i, int n) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:112
 // [-2] void move(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListData4moveEii(void *this_, int from, int to) {
   ((QListData*)this_)->move(from, to);
 }
@@ -93,7 +93,7 @@ void C_ZN9QListData4moveEii(void *this_, int from, int to) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:113
 // [4] int size()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QListData4sizeEv(void *this_) {
   return (int)((QListData*)this_)->size();
 }
@@ -101,7 +101,7 @@ int C_ZNK9QListData4sizeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:114
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListData7isEmptyEv(void *this_) {
   return (bool)((QListData*)this_)->isEmpty();
 }
@@ -109,7 +109,7 @@ bool C_ZNK9QListData7isEmptyEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:115
 // [8] void ** at(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListData2atEi(void *this_, int i) {
   return (void*)((QListData*)this_)->at(i);
 }
@@ -117,7 +117,7 @@ void* C_ZNK9QListData2atEi(void *this_, int i) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:116
 // [8] void ** begin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListData5beginEv(void *this_) {
   return (void*)((QListData*)this_)->begin();
 }
@@ -125,13 +125,13 @@ void* C_ZNK9QListData5beginEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:117
 // [8] void ** end()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListData3endEv(void *this_) {
   return (void*)((QListData*)this_)->end();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListDataD2Ev(void *this_) {
   delete (QListData*)(this_);
 }

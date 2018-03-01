@@ -23,12 +23,12 @@ MyQVariantComparisonHelper(const QVariant & var_) : QVariantComparisonHelper(var
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:560
 // [-2] void QVariantComparisonHelper(const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var_) {
   return  new QVariantComparisonHelper(*var_);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QVariantComparisonHelperD2Ev(void *this_) {
   delete (QVariantComparisonHelper*)(this_);
 }

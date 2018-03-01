@@ -25,12 +25,12 @@ MyQStyleOptionGroupBox(int version) : QStyleOptionGroupBox(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:639
 // [-2] void QStyleOptionGroupBox()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionGroupBoxC2Ev() {
   return  new QStyleOptionGroupBox();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionGroupBoxD2Ev(void *this_) {
   delete (QStyleOptionGroupBox*)(this_);
 }

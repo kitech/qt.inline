@@ -23,21 +23,21 @@ MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
 // [-2] void QGraphicsSceneResizeEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN25QGraphicsSceneResizeEventC2Ev() {
   return  new QGraphicsSceneResizeEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:298
 // [-2] void ~QGraphicsSceneResizeEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEventD2Ev(void *this_) {
   delete (QGraphicsSceneResizeEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:300
 // [16] QSizeF oldSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK25QGraphicsSceneResizeEvent7oldSizeEv(void *this_) {
   auto rv = ((QGraphicsSceneResizeEvent*)this_)->oldSize();
 return new QSizeF(rv);
@@ -46,7 +46,7 @@ return new QSizeF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:301
 // [-2] void setOldSize(const class QSizeF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsSceneResizeEvent*)this_)->setOldSize(*size);
 }
@@ -54,7 +54,7 @@ void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, QSizeF* 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:303
 // [16] QSizeF newSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK25QGraphicsSceneResizeEvent7newSizeEv(void *this_) {
   auto rv = ((QGraphicsSceneResizeEvent*)this_)->newSize();
 return new QSizeF(rv);
@@ -63,7 +63,7 @@ return new QSizeF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:304
 // [-2] void setNewSize(const class QSizeF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEvent10setNewSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsSceneResizeEvent*)this_)->setNewSize(*size);
 }

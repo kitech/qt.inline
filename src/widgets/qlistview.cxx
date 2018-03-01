@@ -394,7 +394,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:142
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QListView5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QListView*)this_)->QListView::event(e);
 }
@@ -402,7 +402,7 @@ bool C_ZN9QListView5eventEP6QEvent(void *this_, QEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:144
 // [-2] void scrollContentsBy(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView16scrollContentsByEii(void *this_, int dx, int dy) {
   ((QListView*)this_)->QListView::scrollContentsBy(dx, dy);
 }
@@ -410,7 +410,7 @@ void C_ZN9QListView16scrollContentsByEii(void *this_, int dx, int dy) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:146
 // [-2] void resizeContents(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView14resizeContentsEii(void *this_, int width, int height) {
   ((QListView*)this_)->QListView::resizeContents(width, height);
 }
@@ -418,7 +418,7 @@ void C_ZN9QListView14resizeContentsEii(void *this_, int width, int height) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:147
 // [8] QSize contentsSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView12contentsSizeEv(void *this_) {
   auto rv = ((QListView*)this_)->QListView::contentsSize();
 return new QSize(rv);
@@ -427,7 +427,7 @@ return new QSize(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:150
 // [-2] void rowsInserted(const class QModelIndex &, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
   ((QListView*)this_)->QListView::rowsInserted(*parent, start, end);
 }
@@ -435,7 +435,7 @@ void C_ZN9QListView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* pa
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:151
 // [-2] void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
   ((QListView*)this_)->QListView::rowsAboutToBeRemoved(*parent, start, end);
 }
@@ -443,7 +443,7 @@ void C_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelI
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:153
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QListView*)this_)->QListView::mouseMoveEvent(e);
 }
@@ -451,7 +451,7 @@ void C_ZN9QListView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * e)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:154
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QListView*)this_)->QListView::mouseReleaseEvent(e);
 }
@@ -459,7 +459,7 @@ void C_ZN9QListView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent *
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:156
 // [-2] void wheelEvent(class QWheelEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e) {
   ((QListView*)this_)->QListView::wheelEvent(e);
 }
@@ -467,7 +467,7 @@ void C_ZN9QListView10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:159
 // [-2] void timerEvent(class QTimerEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView10timerEventEP11QTimerEvent(void *this_, QTimerEvent * e) {
   ((QListView*)this_)->QListView::timerEvent(e);
 }
@@ -475,7 +475,7 @@ void C_ZN9QListView10timerEventEP11QTimerEvent(void *this_, QTimerEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:160
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) {
   ((QListView*)this_)->QListView::resizeEvent(e);
 }
@@ -483,7 +483,7 @@ void C_ZN9QListView11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:162
 // [-2] void dragMoveEvent(class QDragMoveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * e) {
   ((QListView*)this_)->QListView::dragMoveEvent(e);
 }
@@ -491,7 +491,7 @@ void C_ZN9QListView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:163
 // [-2] void dragLeaveEvent(class QDragLeaveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * e) {
   ((QListView*)this_)->QListView::dragLeaveEvent(e);
 }
@@ -499,7 +499,7 @@ void C_ZN9QListView14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEv
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:164
 // [-2] void dropEvent(class QDropEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView9dropEventEP10QDropEvent(void *this_, QDropEvent * e) {
   ((QListView*)this_)->QListView::dropEvent(e);
 }
@@ -507,7 +507,7 @@ void C_ZN9QListView9dropEventEP10QDropEvent(void *this_, QDropEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:165
 // [-2] void startDrag(Qt::DropActions)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView9startDragE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> supportedActions) {
   ((QListView*)this_)->QListView::startDrag(supportedActions);
 }
@@ -515,7 +515,7 @@ void C_ZN9QListView9startDragE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt:
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:168
 // [192] QStyleOptionViewItem viewOptions()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView11viewOptionsEv(void *this_) {
   auto rv = ((QListView*)this_)->QListView::viewOptions();
 return new QStyleOptionViewItem(rv);
@@ -524,7 +524,7 @@ return new QStyleOptionViewItem(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:169
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
   ((QListView*)this_)->QListView::paintEvent(e);
 }
@@ -532,7 +532,7 @@ void C_ZN9QListView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:171
 // [4] int horizontalOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QListView16horizontalOffsetEv(void *this_) {
   return (int)((QListView*)this_)->QListView::horizontalOffset();
 }
@@ -540,7 +540,7 @@ int C_ZNK9QListView16horizontalOffsetEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:172
 // [4] int verticalOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QListView14verticalOffsetEv(void *this_) {
   return (int)((QListView*)this_)->QListView::verticalOffset();
 }
@@ -548,7 +548,7 @@ int C_ZNK9QListView14verticalOffsetEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:173
 // [24] QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QListView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
   auto rv = ((QListView*)this_)->QListView::moveCursor(cursorAction, modifiers);
 return new QModelIndex(rv);
@@ -557,7 +557,7 @@ return new QModelIndex(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:174
 // [16] QRect rectForIndex(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView12rectForIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QListView*)this_)->QListView::rectForIndex(*index);
 return new QRect(rv);
@@ -566,7 +566,7 @@ return new QRect(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:175
 // [-2] void setPositionForIndex(const class QPoint &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex(void *this_, QPoint* position, QModelIndex* index) {
   ((QListView*)this_)->QListView::setPositionForIndex(*position, *index);
 }
@@ -574,7 +574,7 @@ void C_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex(void *this_, Q
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:177
 // [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QRect* rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QListView*)this_)->QListView::setSelection(*rect, command);
 }
@@ -582,7 +582,7 @@ void C_ZN9QListView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13Select
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:178
 // [8] QRegion visualRegionForSelection(const class QItemSelection &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView24visualRegionForSelectionERK14QItemSelection(void *this_, QItemSelection* selection) {
   auto rv = ((QListView*)this_)->QListView::visualRegionForSelection(*selection);
 return new QRegion(rv);
@@ -591,7 +591,7 @@ return new QRegion(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:179
 // [8] QModelIndexList selectedIndexes()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QModelIndexList* C_ZNK9QListView15selectedIndexesEv(void *this_) {
   auto rv = ((QListView*)this_)->QListView::selectedIndexes();
 return new QModelIndexList(rv);
@@ -600,7 +600,7 @@ return new QModelIndexList(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:181
 // [-2] void updateGeometries()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView16updateGeometriesEv(void *this_) {
   ((QListView*)this_)->QListView::updateGeometries();
 }
@@ -608,7 +608,7 @@ void C_ZN9QListView16updateGeometriesEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:183
 // [1] bool isIndexHidden(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QListView*)this_)->QListView::isIndexHidden(*index);
 }
@@ -616,7 +616,7 @@ bool C_ZNK9QListView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* in
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:185
 // [-2] void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSelection* selected, QItemSelection* deselected) {
   ((QListView*)this_)->QListView::selectionChanged(*selected, *deselected);
 }
@@ -624,7 +624,7 @@ void C_ZN9QListView16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSe
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:186
 // [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
   ((QListView*)this_)->QListView::currentChanged(*current, *previous);
 }
@@ -632,7 +632,7 @@ void C_ZN9QListView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex*
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:188
 // [8] QSize viewportSizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView16viewportSizeHintEv(void *this_) {
   auto rv = ((QListView*)this_)->QListView::viewportSizeHint();
 return new QSize(rv);
@@ -641,7 +641,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView10metaObjectEv(void *this_) {
   return (void*)((QListView*)this_)->metaObject();
 }
@@ -649,7 +649,7 @@ void* C_ZNK9QListView10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:81
 // [-2] void QListView(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QListViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQListView*)(0);
   return  new MyQListView(parent);
@@ -657,14 +657,14 @@ void* C_ZN9QListViewC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:82
 // [-2] void ~QListView()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListViewD2Ev(void *this_) {
   delete (QListView*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:84
 // [-2] void setMovement(enum QListView::Movement)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView11setMovementENS_8MovementE(void *this_, QListView::Movement movement) {
   ((QListView*)this_)->setMovement(movement);
 }
@@ -672,7 +672,7 @@ void C_ZN9QListView11setMovementENS_8MovementE(void *this_, QListView::Movement 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:85
 // [4] QListView::Movement movement()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListView::Movement C_ZNK9QListView8movementEv(void *this_) {
   return (QListView::Movement)((QListView*)this_)->movement();
 }
@@ -680,7 +680,7 @@ QListView::Movement C_ZNK9QListView8movementEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:87
 // [-2] void setFlow(enum QListView::Flow)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView7setFlowENS_4FlowE(void *this_, QListView::Flow flow) {
   ((QListView*)this_)->setFlow(flow);
 }
@@ -688,7 +688,7 @@ void C_ZN9QListView7setFlowENS_4FlowE(void *this_, QListView::Flow flow) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:88
 // [4] QListView::Flow flow()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListView::Flow C_ZNK9QListView4flowEv(void *this_) {
   return (QListView::Flow)((QListView*)this_)->flow();
 }
@@ -696,7 +696,7 @@ QListView::Flow C_ZNK9QListView4flowEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:90
 // [-2] void setWrapping(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView11setWrappingEb(void *this_, bool enable) {
   ((QListView*)this_)->setWrapping(enable);
 }
@@ -704,7 +704,7 @@ void C_ZN9QListView11setWrappingEb(void *this_, bool enable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:91
 // [1] bool isWrapping()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListView10isWrappingEv(void *this_) {
   return (bool)((QListView*)this_)->isWrapping();
 }
@@ -712,7 +712,7 @@ bool C_ZNK9QListView10isWrappingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:93
 // [-2] void setResizeMode(enum QListView::ResizeMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView13setResizeModeENS_10ResizeModeE(void *this_, QListView::ResizeMode mode) {
   ((QListView*)this_)->setResizeMode(mode);
 }
@@ -720,7 +720,7 @@ void C_ZN9QListView13setResizeModeENS_10ResizeModeE(void *this_, QListView::Resi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:94
 // [4] QListView::ResizeMode resizeMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListView::ResizeMode C_ZNK9QListView10resizeModeEv(void *this_) {
   return (QListView::ResizeMode)((QListView*)this_)->resizeMode();
 }
@@ -728,7 +728,7 @@ QListView::ResizeMode C_ZNK9QListView10resizeModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:96
 // [-2] void setLayoutMode(enum QListView::LayoutMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView13setLayoutModeENS_10LayoutModeE(void *this_, QListView::LayoutMode mode) {
   ((QListView*)this_)->setLayoutMode(mode);
 }
@@ -736,7 +736,7 @@ void C_ZN9QListView13setLayoutModeENS_10LayoutModeE(void *this_, QListView::Layo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:97
 // [4] QListView::LayoutMode layoutMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListView::LayoutMode C_ZNK9QListView10layoutModeEv(void *this_) {
   return (QListView::LayoutMode)((QListView*)this_)->layoutMode();
 }
@@ -744,7 +744,7 @@ QListView::LayoutMode C_ZNK9QListView10layoutModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:99
 // [-2] void setSpacing(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView10setSpacingEi(void *this_, int space) {
   ((QListView*)this_)->setSpacing(space);
 }
@@ -752,7 +752,7 @@ void C_ZN9QListView10setSpacingEi(void *this_, int space) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:100
 // [4] int spacing()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QListView7spacingEv(void *this_) {
   return (int)((QListView*)this_)->spacing();
 }
@@ -760,7 +760,7 @@ int C_ZNK9QListView7spacingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:102
 // [-2] void setBatchSize(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView12setBatchSizeEi(void *this_, int batchSize) {
   ((QListView*)this_)->setBatchSize(batchSize);
 }
@@ -768,7 +768,7 @@ void C_ZN9QListView12setBatchSizeEi(void *this_, int batchSize) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:103
 // [4] int batchSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QListView9batchSizeEv(void *this_) {
   return (int)((QListView*)this_)->batchSize();
 }
@@ -776,7 +776,7 @@ int C_ZNK9QListView9batchSizeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:105
 // [-2] void setGridSize(const class QSize &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView11setGridSizeERK5QSize(void *this_, QSize* size) {
   ((QListView*)this_)->setGridSize(*size);
 }
@@ -784,7 +784,7 @@ void C_ZN9QListView11setGridSizeERK5QSize(void *this_, QSize* size) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:106
 // [8] QSize gridSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView8gridSizeEv(void *this_) {
   auto rv = ((QListView*)this_)->gridSize();
 return new QSize(rv);
@@ -793,7 +793,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:108
 // [-2] void setViewMode(enum QListView::ViewMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView11setViewModeENS_8ViewModeE(void *this_, QListView::ViewMode mode) {
   ((QListView*)this_)->setViewMode(mode);
 }
@@ -801,7 +801,7 @@ void C_ZN9QListView11setViewModeENS_8ViewModeE(void *this_, QListView::ViewMode 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:109
 // [4] QListView::ViewMode viewMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListView::ViewMode C_ZNK9QListView8viewModeEv(void *this_) {
   return (QListView::ViewMode)((QListView*)this_)->viewMode();
 }
@@ -809,7 +809,7 @@ QListView::ViewMode C_ZNK9QListView8viewModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:111
 // [-2] void clearPropertyFlags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView18clearPropertyFlagsEv(void *this_) {
   ((QListView*)this_)->clearPropertyFlags();
 }
@@ -817,7 +817,7 @@ void C_ZN9QListView18clearPropertyFlagsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:113
 // [1] bool isRowHidden(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListView11isRowHiddenEi(void *this_, int row) {
   return (bool)((QListView*)this_)->isRowHidden(row);
 }
@@ -825,7 +825,7 @@ bool C_ZNK9QListView11isRowHiddenEi(void *this_, int row) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:114
 // [-2] void setRowHidden(int, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView12setRowHiddenEib(void *this_, int row, bool hide) {
   ((QListView*)this_)->setRowHidden(row, hide);
 }
@@ -833,7 +833,7 @@ void C_ZN9QListView12setRowHiddenEib(void *this_, int row, bool hide) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:116
 // [-2] void setModelColumn(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView14setModelColumnEi(void *this_, int column) {
   ((QListView*)this_)->setModelColumn(column);
 }
@@ -841,7 +841,7 @@ void C_ZN9QListView14setModelColumnEi(void *this_, int column) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:117
 // [4] int modelColumn()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QListView11modelColumnEv(void *this_) {
   return (int)((QListView*)this_)->modelColumn();
 }
@@ -849,7 +849,7 @@ int C_ZNK9QListView11modelColumnEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:119
 // [-2] void setUniformItemSizes(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView19setUniformItemSizesEb(void *this_, bool enable) {
   ((QListView*)this_)->setUniformItemSizes(enable);
 }
@@ -857,7 +857,7 @@ void C_ZN9QListView19setUniformItemSizesEb(void *this_, bool enable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:120
 // [1] bool uniformItemSizes()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListView16uniformItemSizesEv(void *this_) {
   return (bool)((QListView*)this_)->uniformItemSizes();
 }
@@ -865,7 +865,7 @@ bool C_ZNK9QListView16uniformItemSizesEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:122
 // [-2] void setWordWrap(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView11setWordWrapEb(void *this_, bool on) {
   ((QListView*)this_)->setWordWrap(on);
 }
@@ -873,7 +873,7 @@ void C_ZN9QListView11setWordWrapEb(void *this_, bool on) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:123
 // [1] bool wordWrap()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListView8wordWrapEv(void *this_) {
   return (bool)((QListView*)this_)->wordWrap();
 }
@@ -881,7 +881,7 @@ bool C_ZNK9QListView8wordWrapEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:125
 // [-2] void setSelectionRectVisible(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView23setSelectionRectVisibleEb(void *this_, bool show) {
   ((QListView*)this_)->setSelectionRectVisible(show);
 }
@@ -889,7 +889,7 @@ void C_ZN9QListView23setSelectionRectVisibleEb(void *this_, bool show) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:126
 // [1] bool isSelectionRectVisible()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QListView22isSelectionRectVisibleEv(void *this_) {
   return (bool)((QListView*)this_)->isSelectionRectVisible();
 }
@@ -897,7 +897,7 @@ bool C_ZNK9QListView22isSelectionRectVisibleEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:128
 // [16] QRect visualRect(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView10visualRectERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QListView*)this_)->visualRect(*index);
 return new QRect(rv);
@@ -906,7 +906,7 @@ return new QRect(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:129
 // [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, QModelIndex* index, QAbstractItemView::ScrollHint hint) {
   ((QListView*)this_)->scrollTo(*index, hint);
 }
@@ -914,7 +914,7 @@ void C_ZN9QListView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(vo
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:130
 // [24] QModelIndex indexAt(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView7indexAtERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QListView*)this_)->indexAt(*p);
 return new QModelIndex(rv);
@@ -923,7 +923,7 @@ return new QModelIndex(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:132
 // [-2] void doItemsLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView13doItemsLayoutEv(void *this_) {
   ((QListView*)this_)->doItemsLayout();
 }
@@ -931,7 +931,7 @@ void C_ZN9QListView13doItemsLayoutEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:133
 // [-2] void reset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView5resetEv(void *this_) {
   ((QListView*)this_)->reset();
 }
@@ -939,7 +939,7 @@ void C_ZN9QListView5resetEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:134
 // [-2] void setRootIndex(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QListView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QListView*)this_)->setRootIndex(*index);
 }

@@ -737,7 +737,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:246
 // [-2] void rowsInserted(const class QModelIndex &, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
   ((QAbstractItemView*)this_)->QAbstractItemView::rowsInserted(*parent, start, end);
 }
@@ -745,7 +745,7 @@ void C_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(void *this_, QModel
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:247
 // [-2] void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
   ((QAbstractItemView*)this_)->QAbstractItemView::rowsAboutToBeRemoved(*parent, start, end);
 }
@@ -753,7 +753,7 @@ void C_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:248
 // [-2] void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSelection* selected, QItemSelection* deselected) {
   ((QAbstractItemView*)this_)->QAbstractItemView::selectionChanged(*selected, *deselected);
 }
@@ -761,7 +761,7 @@ void C_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_(void *this_
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:249
 // [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
   ((QAbstractItemView*)this_)->QAbstractItemView::currentChanged(*current, *previous);
 }
@@ -769,7 +769,7 @@ void C_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_(void *this_, QMo
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:250
 // [-2] void updateEditorData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16updateEditorDataEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::updateEditorData();
 }
@@ -777,7 +777,7 @@ void C_ZN17QAbstractItemView16updateEditorDataEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:251
 // [-2] void updateEditorGeometries()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView22updateEditorGeometriesEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::updateEditorGeometries();
 }
@@ -785,7 +785,7 @@ void C_ZN17QAbstractItemView22updateEditorGeometriesEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:252
 // [-2] void updateGeometries()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16updateGeometriesEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::updateGeometries();
 }
@@ -793,7 +793,7 @@ void C_ZN17QAbstractItemView16updateGeometriesEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:253
 // [-2] void verticalScrollbarAction(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView23verticalScrollbarActionEi(void *this_, int action) {
   ((QAbstractItemView*)this_)->QAbstractItemView::verticalScrollbarAction(action);
 }
@@ -801,7 +801,7 @@ void C_ZN17QAbstractItemView23verticalScrollbarActionEi(void *this_, int action)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:254
 // [-2] void horizontalScrollbarAction(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView25horizontalScrollbarActionEi(void *this_, int action) {
   ((QAbstractItemView*)this_)->QAbstractItemView::horizontalScrollbarAction(action);
 }
@@ -809,7 +809,7 @@ void C_ZN17QAbstractItemView25horizontalScrollbarActionEi(void *this_, int actio
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:255
 // [-2] void verticalScrollbarValueChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView29verticalScrollbarValueChangedEi(void *this_, int value) {
   ((QAbstractItemView*)this_)->QAbstractItemView::verticalScrollbarValueChanged(value);
 }
@@ -817,7 +817,7 @@ void C_ZN17QAbstractItemView29verticalScrollbarValueChangedEi(void *this_, int v
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:256
 // [-2] void horizontalScrollbarValueChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi(void *this_, int value) {
   ((QAbstractItemView*)this_)->QAbstractItemView::horizontalScrollbarValueChanged(value);
 }
@@ -825,7 +825,7 @@ void C_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi(void *this_, int
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:257
 // [-2] void closeEditor(class QWidget *, class QAbstractItemDelegate::EndEditHint)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE(void *this_, QWidget * editor, QAbstractItemDelegate::EndEditHint hint) {
   ((QAbstractItemView*)this_)->QAbstractItemView::closeEditor(editor, hint);
 }
@@ -833,7 +833,7 @@ void C_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11End
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:258
 // [-2] void commitData(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView10commitDataEP7QWidget(void *this_, QWidget * editor) {
   ((QAbstractItemView*)this_)->QAbstractItemView::commitData(editor);
 }
@@ -841,7 +841,7 @@ void C_ZN17QAbstractItemView10commitDataEP7QWidget(void *this_, QWidget * editor
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:259
 // [-2] void editorDestroyed(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15editorDestroyedEP7QObject(void *this_, QObject * editor) {
   ((QAbstractItemView*)this_)->QAbstractItemView::editorDestroyed(editor);
 }
@@ -849,7 +849,7 @@ void C_ZN17QAbstractItemView15editorDestroyedEP7QObject(void *this_, QObject * e
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:275
 // [-2] void setHorizontalStepsPerItem(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView25setHorizontalStepsPerItemEi(void *this_, int steps) {
   ((QAbstractItemView*)this_)->QAbstractItemView::setHorizontalStepsPerItem(steps);
 }
@@ -857,7 +857,7 @@ void C_ZN17QAbstractItemView25setHorizontalStepsPerItemEi(void *this_, int steps
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:276
 // [4] int horizontalStepsPerItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QAbstractItemView22horizontalStepsPerItemEv(void *this_) {
   return (int)((QAbstractItemView*)this_)->QAbstractItemView::horizontalStepsPerItem();
 }
@@ -865,7 +865,7 @@ int C_ZNK17QAbstractItemView22horizontalStepsPerItemEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:277
 // [-2] void setVerticalStepsPerItem(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView23setVerticalStepsPerItemEi(void *this_, int steps) {
   ((QAbstractItemView*)this_)->QAbstractItemView::setVerticalStepsPerItem(steps);
 }
@@ -873,7 +873,7 @@ void C_ZN17QAbstractItemView23setVerticalStepsPerItemEi(void *this_, int steps) 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:278
 // [4] int verticalStepsPerItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QAbstractItemView20verticalStepsPerItemEv(void *this_) {
   return (int)((QAbstractItemView*)this_)->QAbstractItemView::verticalStepsPerItem();
 }
@@ -881,31 +881,31 @@ int C_ZNK17QAbstractItemView20verticalStepsPerItemEv(void *this_) {
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:283
 // [24] QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:286
 // [4] int horizontalOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:287
 // [4] int verticalOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:289
 // [1] bool isIndexHidden(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:291
 // [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:292
 // [8] QRegion visualRegionForSelection(const class QItemSelection &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:293
 // [8] QModelIndexList selectedIndexes()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QModelIndexList* C_ZNK17QAbstractItemView15selectedIndexesEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::selectedIndexes();
 return new QModelIndexList(rv);
@@ -914,7 +914,7 @@ return new QModelIndexList(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:295
 // [1] bool edit(const class QModelIndex &, enum QAbstractItemView::EditTrigger, class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent(void *this_, QModelIndex* index, QAbstractItemView::EditTrigger trigger, QEvent * event) {
   return (bool)((QAbstractItemView*)this_)->QAbstractItemView::edit(*index, trigger, event);
 }
@@ -922,7 +922,7 @@ bool C_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent(void 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:297
 // [4] QItemSelectionModel::SelectionFlags selectionCommand(const class QModelIndex &, const class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QItemSelectionModel::SelectionFlags C_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent(void *this_, QModelIndex* index, const QEvent * event) {
   return (QItemSelectionModel::SelectionFlags)((QAbstractItemView*)this_)->QAbstractItemView::selectionCommand(*index, event);
 }
@@ -930,7 +930,7 @@ QItemSelectionModel::SelectionFlags C_ZNK17QAbstractItemView16selectionCommandER
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:301
 // [-2] void startDrag(Qt::DropActions)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView9startDragE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> supportedActions) {
   ((QAbstractItemView*)this_)->QAbstractItemView::startDrag(supportedActions);
 }
@@ -938,7 +938,7 @@ void C_ZN17QAbstractItemView9startDragE6QFlagsIN2Qt10DropActionEE(void *this_, Q
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:304
 // [192] QStyleOptionViewItem viewOptions()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView11viewOptionsEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::viewOptions();
 return new QStyleOptionViewItem(rv);
@@ -947,7 +947,7 @@ return new QStyleOptionViewItem(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:316
 // [4] QAbstractItemView::State state()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::State C_ZNK17QAbstractItemView5stateEv(void *this_) {
   return (QAbstractItemView::State)((QAbstractItemView*)this_)->QAbstractItemView::state();
 }
@@ -955,7 +955,7 @@ QAbstractItemView::State C_ZNK17QAbstractItemView5stateEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:317
 // [-2] void setState(enum QAbstractItemView::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView8setStateENS_5StateE(void *this_, QAbstractItemView::State state) {
   ((QAbstractItemView*)this_)->QAbstractItemView::setState(state);
 }
@@ -963,7 +963,7 @@ void C_ZN17QAbstractItemView8setStateENS_5StateE(void *this_, QAbstractItemView:
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:319
 // [-2] void scheduleDelayedItemsLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::scheduleDelayedItemsLayout();
 }
@@ -971,7 +971,7 @@ void C_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:320
 // [-2] void executeDelayedItemsLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView25executeDelayedItemsLayoutEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::executeDelayedItemsLayout();
 }
@@ -979,7 +979,7 @@ void C_ZN17QAbstractItemView25executeDelayedItemsLayoutEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:322
 // [-2] void setDirtyRegion(const class QRegion &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(void *this_, QRegion* region) {
   ((QAbstractItemView*)this_)->QAbstractItemView::setDirtyRegion(*region);
 }
@@ -987,7 +987,7 @@ void C_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(void *this_, QRegion* re
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:323
 // [-2] void scrollDirtyRegion(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView17scrollDirtyRegionEii(void *this_, int dx, int dy) {
   ((QAbstractItemView*)this_)->QAbstractItemView::scrollDirtyRegion(dx, dy);
 }
@@ -995,7 +995,7 @@ void C_ZN17QAbstractItemView17scrollDirtyRegionEii(void *this_, int dx, int dy) 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:324
 // [8] QPoint dirtyRegionOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView17dirtyRegionOffsetEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::dirtyRegionOffset();
 return new QPoint(rv);
@@ -1004,7 +1004,7 @@ return new QPoint(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:326
 // [-2] void startAutoScroll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15startAutoScrollEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::startAutoScroll();
 }
@@ -1012,7 +1012,7 @@ void C_ZN17QAbstractItemView15startAutoScrollEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:327
 // [-2] void stopAutoScroll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14stopAutoScrollEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::stopAutoScroll();
 }
@@ -1020,7 +1020,7 @@ void C_ZN17QAbstractItemView14stopAutoScrollEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:328
 // [-2] void doAutoScroll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView12doAutoScrollEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::doAutoScroll();
 }
@@ -1028,7 +1028,7 @@ void C_ZN17QAbstractItemView12doAutoScrollEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:330
 // [1] bool focusNextPrevChild(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QAbstractItemView18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QAbstractItemView*)this_)->QAbstractItemView::focusNextPrevChild(next);
 }
@@ -1036,7 +1036,7 @@ bool C_ZN17QAbstractItemView18focusNextPrevChildEb(void *this_, bool next) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:331
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QAbstractItemView5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QAbstractItemView*)this_)->QAbstractItemView::event(event);
 }
@@ -1044,7 +1044,7 @@ bool C_ZN17QAbstractItemView5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:332
 // [1] bool viewportEvent(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QAbstractItemView13viewportEventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QAbstractItemView*)this_)->QAbstractItemView::viewportEvent(event);
 }
@@ -1052,7 +1052,7 @@ bool C_ZN17QAbstractItemView13viewportEventEP6QEvent(void *this_, QEvent * event
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:333
 // [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::mousePressEvent(event);
 }
@@ -1060,7 +1060,7 @@ void C_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent(void *this_, QMouse
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:334
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::mouseMoveEvent(event);
 }
@@ -1068,7 +1068,7 @@ void C_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseE
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:335
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::mouseReleaseEvent(event);
 }
@@ -1076,7 +1076,7 @@ void C_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent(void *this_, QMou
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:336
 // [-2] void mouseDoubleClickEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::mouseDoubleClickEvent(event);
 }
@@ -1084,7 +1084,7 @@ void C_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent(void *this_, 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:338
 // [-2] void dragEnterEvent(class QDragEnterEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::dragEnterEvent(event);
 }
@@ -1092,7 +1092,7 @@ void C_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent(void *this_, QDr
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:339
 // [-2] void dragMoveEvent(class QDragMoveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::dragMoveEvent(event);
 }
@@ -1100,7 +1100,7 @@ void C_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent(void *this_, QDrag
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:340
 // [-2] void dragLeaveEvent(class QDragLeaveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::dragLeaveEvent(event);
 }
@@ -1108,7 +1108,7 @@ void C_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDr
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:341
 // [-2] void dropEvent(class QDropEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::dropEvent(event);
 }
@@ -1116,7 +1116,7 @@ void C_ZN17QAbstractItemView9dropEventEP10QDropEvent(void *this_, QDropEvent * e
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:343
 // [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::focusInEvent(event);
 }
@@ -1124,7 +1124,7 @@ void C_ZN17QAbstractItemView12focusInEventEP11QFocusEvent(void *this_, QFocusEve
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:344
 // [-2] void focusOutEvent(class QFocusEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::focusOutEvent(event);
 }
@@ -1132,7 +1132,7 @@ void C_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent(void *this_, QFocusEv
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:345
 // [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::keyPressEvent(event);
 }
@@ -1140,7 +1140,7 @@ void C_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent *
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:346
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::resizeEvent(event);
 }
@@ -1148,7 +1148,7 @@ void C_ZN17QAbstractItemView11resizeEventEP12QResizeEvent(void *this_, QResizeEv
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:347
 // [-2] void timerEvent(class QTimerEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::timerEvent(event);
 }
@@ -1156,7 +1156,7 @@ void C_ZN17QAbstractItemView10timerEventEP11QTimerEvent(void *this_, QTimerEvent
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:348
 // [-2] void inputMethodEvent(class QInputMethodEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::inputMethodEvent(event);
 }
@@ -1164,7 +1164,7 @@ void C_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(void *this_,
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:352
 // [4] QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::DropIndicatorPosition C_ZNK17QAbstractItemView21dropIndicatorPositionEv(void *this_) {
   return (QAbstractItemView::DropIndicatorPosition)((QAbstractItemView*)this_)->QAbstractItemView::dropIndicatorPosition();
 }
@@ -1172,7 +1172,7 @@ QAbstractItemView::DropIndicatorPosition C_ZNK17QAbstractItemView21dropIndicator
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:355
 // [8] QSize viewportSizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView16viewportSizeHintEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::viewportSizeHint();
 return new QSize(rv);
@@ -1181,7 +1181,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:63
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView10metaObjectEv(void *this_) {
   return (void*)((QAbstractItemView*)this_)->metaObject();
 }
@@ -1189,7 +1189,7 @@ void* C_ZNK17QAbstractItemView10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:127
 // [-2] void QAbstractItemView(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QAbstractItemViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractItemView*)(0);
   return 0; // new MyQAbstractItemView(parent);
@@ -1197,14 +1197,14 @@ void* C_ZN17QAbstractItemViewC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:128
 // [-2] void ~QAbstractItemView()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemViewD2Ev(void *this_) {
   delete (QAbstractItemView*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:130
 // [-2] void setModel(class QAbstractItemModel *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
   ((QAbstractItemView*)this_)->setModel(model);
 }
@@ -1212,7 +1212,7 @@ void C_ZN17QAbstractItemView8setModelEP18QAbstractItemModel(void *this_, QAbstra
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:131
 // [8] QAbstractItemModel * model()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView5modelEv(void *this_) {
   return (void*)((QAbstractItemView*)this_)->model();
 }
@@ -1220,7 +1220,7 @@ void* C_ZNK17QAbstractItemView5modelEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:133
 // [-2] void setSelectionModel(class QItemSelectionModel *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView17setSelectionModelEP19QItemSelectionModel(void *this_, QItemSelectionModel * selectionModel) {
   ((QAbstractItemView*)this_)->setSelectionModel(selectionModel);
 }
@@ -1228,7 +1228,7 @@ void C_ZN17QAbstractItemView17setSelectionModelEP19QItemSelectionModel(void *thi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:134
 // [8] QItemSelectionModel * selectionModel()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView14selectionModelEv(void *this_) {
   return (void*)((QAbstractItemView*)this_)->selectionModel();
 }
@@ -1236,7 +1236,7 @@ void* C_ZNK17QAbstractItemView14selectionModelEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:136
 // [-2] void setItemDelegate(class QAbstractItemDelegate *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15setItemDelegateEP21QAbstractItemDelegate(void *this_, QAbstractItemDelegate * delegate) {
   ((QAbstractItemView*)this_)->setItemDelegate(delegate);
 }
@@ -1244,7 +1244,7 @@ void C_ZN17QAbstractItemView15setItemDelegateEP21QAbstractItemDelegate(void *thi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:137
 // [8] QAbstractItemDelegate * itemDelegate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView12itemDelegateEv(void *this_) {
   return (void*)((QAbstractItemView*)this_)->itemDelegate();
 }
@@ -1252,7 +1252,7 @@ void* C_ZNK17QAbstractItemView12itemDelegateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:139
 // [-2] void setSelectionMode(class QAbstractItemView::SelectionMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16setSelectionModeENS_13SelectionModeE(void *this_, QAbstractItemView::SelectionMode mode) {
   ((QAbstractItemView*)this_)->setSelectionMode(mode);
 }
@@ -1260,7 +1260,7 @@ void C_ZN17QAbstractItemView16setSelectionModeENS_13SelectionModeE(void *this_, 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:140
 // [4] QAbstractItemView::SelectionMode selectionMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::SelectionMode C_ZNK17QAbstractItemView13selectionModeEv(void *this_) {
   return (QAbstractItemView::SelectionMode)((QAbstractItemView*)this_)->selectionMode();
 }
@@ -1268,7 +1268,7 @@ QAbstractItemView::SelectionMode C_ZNK17QAbstractItemView13selectionModeEv(void 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:142
 // [-2] void setSelectionBehavior(class QAbstractItemView::SelectionBehavior)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView20setSelectionBehaviorENS_17SelectionBehaviorE(void *this_, QAbstractItemView::SelectionBehavior behavior) {
   ((QAbstractItemView*)this_)->setSelectionBehavior(behavior);
 }
@@ -1276,7 +1276,7 @@ void C_ZN17QAbstractItemView20setSelectionBehaviorENS_17SelectionBehaviorE(void 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:143
 // [4] QAbstractItemView::SelectionBehavior selectionBehavior()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::SelectionBehavior C_ZNK17QAbstractItemView17selectionBehaviorEv(void *this_) {
   return (QAbstractItemView::SelectionBehavior)((QAbstractItemView*)this_)->selectionBehavior();
 }
@@ -1284,7 +1284,7 @@ QAbstractItemView::SelectionBehavior C_ZNK17QAbstractItemView17selectionBehavior
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:145
 // [24] QModelIndex currentIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView12currentIndexEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->currentIndex();
 return new QModelIndex(rv);
@@ -1293,7 +1293,7 @@ return new QModelIndex(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:146
 // [24] QModelIndex rootIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView9rootIndexEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->rootIndex();
 return new QModelIndex(rv);
@@ -1302,7 +1302,7 @@ return new QModelIndex(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:148
 // [-2] void setEditTriggers(QAbstractItemView::EditTriggers)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15setEditTriggersE6QFlagsINS_11EditTriggerEE(void *this_, QFlags<QAbstractItemView::EditTrigger> triggers) {
   ((QAbstractItemView*)this_)->setEditTriggers(triggers);
 }
@@ -1310,7 +1310,7 @@ void C_ZN17QAbstractItemView15setEditTriggersE6QFlagsINS_11EditTriggerEE(void *t
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:149
 // [4] QAbstractItemView::EditTriggers editTriggers()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::EditTriggers* C_ZNK17QAbstractItemView12editTriggersEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->editTriggers();
 return new QAbstractItemView::EditTriggers(rv);
@@ -1319,7 +1319,7 @@ return new QAbstractItemView::EditTriggers(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:151
 // [-2] void setVerticalScrollMode(enum QAbstractItemView::ScrollMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView21setVerticalScrollModeENS_10ScrollModeE(void *this_, QAbstractItemView::ScrollMode mode) {
   ((QAbstractItemView*)this_)->setVerticalScrollMode(mode);
 }
@@ -1327,7 +1327,7 @@ void C_ZN17QAbstractItemView21setVerticalScrollModeENS_10ScrollModeE(void *this_
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:152
 // [4] QAbstractItemView::ScrollMode verticalScrollMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::ScrollMode C_ZNK17QAbstractItemView18verticalScrollModeEv(void *this_) {
   return (QAbstractItemView::ScrollMode)((QAbstractItemView*)this_)->verticalScrollMode();
 }
@@ -1335,7 +1335,7 @@ QAbstractItemView::ScrollMode C_ZNK17QAbstractItemView18verticalScrollModeEv(voi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:153
 // [-2] void resetVerticalScrollMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView23resetVerticalScrollModeEv(void *this_) {
   ((QAbstractItemView*)this_)->resetVerticalScrollMode();
 }
@@ -1343,7 +1343,7 @@ void C_ZN17QAbstractItemView23resetVerticalScrollModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:155
 // [-2] void setHorizontalScrollMode(enum QAbstractItemView::ScrollMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView23setHorizontalScrollModeENS_10ScrollModeE(void *this_, QAbstractItemView::ScrollMode mode) {
   ((QAbstractItemView*)this_)->setHorizontalScrollMode(mode);
 }
@@ -1351,7 +1351,7 @@ void C_ZN17QAbstractItemView23setHorizontalScrollModeENS_10ScrollModeE(void *thi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:156
 // [4] QAbstractItemView::ScrollMode horizontalScrollMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::ScrollMode C_ZNK17QAbstractItemView20horizontalScrollModeEv(void *this_) {
   return (QAbstractItemView::ScrollMode)((QAbstractItemView*)this_)->horizontalScrollMode();
 }
@@ -1359,7 +1359,7 @@ QAbstractItemView::ScrollMode C_ZNK17QAbstractItemView20horizontalScrollModeEv(v
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:157
 // [-2] void resetHorizontalScrollMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView25resetHorizontalScrollModeEv(void *this_) {
   ((QAbstractItemView*)this_)->resetHorizontalScrollMode();
 }
@@ -1367,7 +1367,7 @@ void C_ZN17QAbstractItemView25resetHorizontalScrollModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:159
 // [-2] void setAutoScroll(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView13setAutoScrollEb(void *this_, bool enable) {
   ((QAbstractItemView*)this_)->setAutoScroll(enable);
 }
@@ -1375,7 +1375,7 @@ void C_ZN17QAbstractItemView13setAutoScrollEb(void *this_, bool enable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:160
 // [1] bool hasAutoScroll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView13hasAutoScrollEv(void *this_) {
   return (bool)((QAbstractItemView*)this_)->hasAutoScroll();
 }
@@ -1383,7 +1383,7 @@ bool C_ZNK17QAbstractItemView13hasAutoScrollEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:162
 // [-2] void setAutoScrollMargin(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView19setAutoScrollMarginEi(void *this_, int margin) {
   ((QAbstractItemView*)this_)->setAutoScrollMargin(margin);
 }
@@ -1391,7 +1391,7 @@ void C_ZN17QAbstractItemView19setAutoScrollMarginEi(void *this_, int margin) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:163
 // [4] int autoScrollMargin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QAbstractItemView16autoScrollMarginEv(void *this_) {
   return (int)((QAbstractItemView*)this_)->autoScrollMargin();
 }
@@ -1399,7 +1399,7 @@ int C_ZNK17QAbstractItemView16autoScrollMarginEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:165
 // [-2] void setTabKeyNavigation(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView19setTabKeyNavigationEb(void *this_, bool enable) {
   ((QAbstractItemView*)this_)->setTabKeyNavigation(enable);
 }
@@ -1407,7 +1407,7 @@ void C_ZN17QAbstractItemView19setTabKeyNavigationEb(void *this_, bool enable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:166
 // [1] bool tabKeyNavigation()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView16tabKeyNavigationEv(void *this_) {
   return (bool)((QAbstractItemView*)this_)->tabKeyNavigation();
 }
@@ -1415,7 +1415,7 @@ bool C_ZNK17QAbstractItemView16tabKeyNavigationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:169
 // [-2] void setDropIndicatorShown(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView21setDropIndicatorShownEb(void *this_, bool enable) {
   ((QAbstractItemView*)this_)->setDropIndicatorShown(enable);
 }
@@ -1423,7 +1423,7 @@ void C_ZN17QAbstractItemView21setDropIndicatorShownEb(void *this_, bool enable) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:170
 // [1] bool showDropIndicator()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView17showDropIndicatorEv(void *this_) {
   return (bool)((QAbstractItemView*)this_)->showDropIndicator();
 }
@@ -1431,7 +1431,7 @@ bool C_ZNK17QAbstractItemView17showDropIndicatorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:172
 // [-2] void setDragEnabled(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14setDragEnabledEb(void *this_, bool enable) {
   ((QAbstractItemView*)this_)->setDragEnabled(enable);
 }
@@ -1439,7 +1439,7 @@ void C_ZN17QAbstractItemView14setDragEnabledEb(void *this_, bool enable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:173
 // [1] bool dragEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView11dragEnabledEv(void *this_) {
   return (bool)((QAbstractItemView*)this_)->dragEnabled();
 }
@@ -1447,7 +1447,7 @@ bool C_ZNK17QAbstractItemView11dragEnabledEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:175
 // [-2] void setDragDropOverwriteMode(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView24setDragDropOverwriteModeEb(void *this_, bool overwrite) {
   ((QAbstractItemView*)this_)->setDragDropOverwriteMode(overwrite);
 }
@@ -1455,7 +1455,7 @@ void C_ZN17QAbstractItemView24setDragDropOverwriteModeEb(void *this_, bool overw
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:176
 // [1] bool dragDropOverwriteMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView21dragDropOverwriteModeEv(void *this_) {
   return (bool)((QAbstractItemView*)this_)->dragDropOverwriteMode();
 }
@@ -1463,7 +1463,7 @@ bool C_ZNK17QAbstractItemView21dragDropOverwriteModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:187
 // [-2] void setDragDropMode(enum QAbstractItemView::DragDropMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15setDragDropModeENS_12DragDropModeE(void *this_, QAbstractItemView::DragDropMode behavior) {
   ((QAbstractItemView*)this_)->setDragDropMode(behavior);
 }
@@ -1471,7 +1471,7 @@ void C_ZN17QAbstractItemView15setDragDropModeENS_12DragDropModeE(void *this_, QA
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:188
 // [4] QAbstractItemView::DragDropMode dragDropMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractItemView::DragDropMode C_ZNK17QAbstractItemView12dragDropModeEv(void *this_) {
   return (QAbstractItemView::DragDropMode)((QAbstractItemView*)this_)->dragDropMode();
 }
@@ -1479,7 +1479,7 @@ QAbstractItemView::DragDropMode C_ZNK17QAbstractItemView12dragDropModeEv(void *t
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:190
 // [-2] void setDefaultDropAction(Qt::DropAction)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView20setDefaultDropActionEN2Qt10DropActionE(void *this_, Qt::DropAction dropAction) {
   ((QAbstractItemView*)this_)->setDefaultDropAction(dropAction);
 }
@@ -1487,7 +1487,7 @@ void C_ZN17QAbstractItemView20setDefaultDropActionEN2Qt10DropActionE(void *this_
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:191
 // [4] Qt::DropAction defaultDropAction()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZNK17QAbstractItemView17defaultDropActionEv(void *this_) {
   return (Qt::DropAction)((QAbstractItemView*)this_)->defaultDropAction();
 }
@@ -1495,7 +1495,7 @@ Qt::DropAction C_ZNK17QAbstractItemView17defaultDropActionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:194
 // [-2] void setAlternatingRowColors(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView23setAlternatingRowColorsEb(void *this_, bool enable) {
   ((QAbstractItemView*)this_)->setAlternatingRowColors(enable);
 }
@@ -1503,7 +1503,7 @@ void C_ZN17QAbstractItemView23setAlternatingRowColorsEb(void *this_, bool enable
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:195
 // [1] bool alternatingRowColors()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView20alternatingRowColorsEv(void *this_) {
   return (bool)((QAbstractItemView*)this_)->alternatingRowColors();
 }
@@ -1511,7 +1511,7 @@ bool C_ZNK17QAbstractItemView20alternatingRowColorsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:197
 // [-2] void setIconSize(const class QSize &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView11setIconSizeERK5QSize(void *this_, QSize* size) {
   ((QAbstractItemView*)this_)->setIconSize(*size);
 }
@@ -1519,7 +1519,7 @@ void C_ZN17QAbstractItemView11setIconSizeERK5QSize(void *this_, QSize* size) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:198
 // [8] QSize iconSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView8iconSizeEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->iconSize();
 return new QSize(rv);
@@ -1528,7 +1528,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:200
 // [-2] void setTextElideMode(Qt::TextElideMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16setTextElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideMode mode) {
   ((QAbstractItemView*)this_)->setTextElideMode(mode);
 }
@@ -1536,7 +1536,7 @@ void C_ZN17QAbstractItemView16setTextElideModeEN2Qt13TextElideModeE(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:201
 // [4] Qt::TextElideMode textElideMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::TextElideMode C_ZNK17QAbstractItemView13textElideModeEv(void *this_) {
   return (Qt::TextElideMode)((QAbstractItemView*)this_)->textElideMode();
 }
@@ -1544,7 +1544,7 @@ Qt::TextElideMode C_ZNK17QAbstractItemView13textElideModeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:203
 // [-2] void keyboardSearch(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14keyboardSearchERK7QString(void *this_, QString* search) {
   ((QAbstractItemView*)this_)->keyboardSearch(*search);
 }
@@ -1552,7 +1552,7 @@ void C_ZN17QAbstractItemView14keyboardSearchERK7QString(void *this_, QString* se
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:205
 // [16] QRect visualRect(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView10visualRectERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QAbstractItemView*)this_)->visualRect(*index);
 return new QRect(rv);
@@ -1561,7 +1561,7 @@ return new QRect(rv);
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:206
 // [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView8scrollToERK11QModelIndexNS_10ScrollHintE(void *this_, QModelIndex* index, QAbstractItemView::ScrollHint hint) {
   ((QAbstractItemView*)this_)->scrollTo(*index, hint);
 }
@@ -1569,7 +1569,7 @@ void C_ZN17QAbstractItemView8scrollToERK11QModelIndexNS_10ScrollHintE(void *this
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:207
 // [24] QModelIndex indexAt(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView7indexAtERK6QPoint(void *this_, QPoint* point) {
   auto rv = ((QAbstractItemView*)this_)->indexAt(*point);
 return new QModelIndex(rv);
@@ -1578,7 +1578,7 @@ return new QModelIndex(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:209
 // [8] QSize sizeHintForIndex(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView16sizeHintForIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QAbstractItemView*)this_)->sizeHintForIndex(*index);
 return new QSize(rv);
@@ -1587,7 +1587,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:210
 // [4] int sizeHintForRow(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QAbstractItemView14sizeHintForRowEi(void *this_, int row) {
   return (int)((QAbstractItemView*)this_)->sizeHintForRow(row);
 }
@@ -1595,7 +1595,7 @@ int C_ZNK17QAbstractItemView14sizeHintForRowEi(void *this_, int row) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:211
 // [4] int sizeHintForColumn(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QAbstractItemView17sizeHintForColumnEi(void *this_, int column) {
   return (int)((QAbstractItemView*)this_)->sizeHintForColumn(column);
 }
@@ -1603,7 +1603,7 @@ int C_ZNK17QAbstractItemView17sizeHintForColumnEi(void *this_, int column) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:213
 // [-2] void openPersistentEditor(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView20openPersistentEditorERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->openPersistentEditor(*index);
 }
@@ -1611,7 +1611,7 @@ void C_ZN17QAbstractItemView20openPersistentEditorERK11QModelIndex(void *this_, 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:214
 // [-2] void closePersistentEditor(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView21closePersistentEditorERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->closePersistentEditor(*index);
 }
@@ -1619,7 +1619,7 @@ void C_ZN17QAbstractItemView21closePersistentEditorERK11QModelIndex(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:215
 // [1] bool isPersistentEditorOpen(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView22isPersistentEditorOpenERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QAbstractItemView*)this_)->isPersistentEditorOpen(*index);
 }
@@ -1627,7 +1627,7 @@ bool C_ZNK17QAbstractItemView22isPersistentEditorOpenERK11QModelIndex(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:217
 // [-2] void setIndexWidget(const class QModelIndex &, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14setIndexWidgetERK11QModelIndexP7QWidget(void *this_, QModelIndex* index, QWidget * widget) {
   ((QAbstractItemView*)this_)->setIndexWidget(*index, widget);
 }
@@ -1635,7 +1635,7 @@ void C_ZN17QAbstractItemView14setIndexWidgetERK11QModelIndexP7QWidget(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:218
 // [8] QWidget * indexWidget(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView11indexWidgetERK11QModelIndex(void *this_, QModelIndex* index) {
   return (void*)((QAbstractItemView*)this_)->indexWidget(*index);
 }
@@ -1643,7 +1643,7 @@ void* C_ZNK17QAbstractItemView11indexWidgetERK11QModelIndex(void *this_, QModelI
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:220
 // [-2] void setItemDelegateForRow(int, class QAbstractItemDelegate *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView21setItemDelegateForRowEiP21QAbstractItemDelegate(void *this_, int row, QAbstractItemDelegate * delegate) {
   ((QAbstractItemView*)this_)->setItemDelegateForRow(row, delegate);
 }
@@ -1651,7 +1651,7 @@ void C_ZN17QAbstractItemView21setItemDelegateForRowEiP21QAbstractItemDelegate(vo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:221
 // [8] QAbstractItemDelegate * itemDelegateForRow(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView18itemDelegateForRowEi(void *this_, int row) {
   return (void*)((QAbstractItemView*)this_)->itemDelegateForRow(row);
 }
@@ -1659,7 +1659,7 @@ void* C_ZNK17QAbstractItemView18itemDelegateForRowEi(void *this_, int row) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:223
 // [-2] void setItemDelegateForColumn(int, class QAbstractItemDelegate *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView24setItemDelegateForColumnEiP21QAbstractItemDelegate(void *this_, int column, QAbstractItemDelegate * delegate) {
   ((QAbstractItemView*)this_)->setItemDelegateForColumn(column, delegate);
 }
@@ -1667,7 +1667,7 @@ void C_ZN17QAbstractItemView24setItemDelegateForColumnEiP21QAbstractItemDelegate
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:224
 // [8] QAbstractItemDelegate * itemDelegateForColumn(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView21itemDelegateForColumnEi(void *this_, int column) {
   return (void*)((QAbstractItemView*)this_)->itemDelegateForColumn(column);
 }
@@ -1675,7 +1675,7 @@ void* C_ZNK17QAbstractItemView21itemDelegateForColumnEi(void *this_, int column)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:226
 // [8] QAbstractItemDelegate * itemDelegate(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView12itemDelegateERK11QModelIndex(void *this_, QModelIndex* index) {
   return (void*)((QAbstractItemView*)this_)->itemDelegate(*index);
 }
@@ -1683,7 +1683,7 @@ void* C_ZNK17QAbstractItemView12itemDelegateERK11QModelIndex(void *this_, QModel
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:228
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery query) {
   auto rv = ((QAbstractItemView*)this_)->inputMethodQuery(query);
 return new QVariant(rv);
@@ -1692,7 +1692,7 @@ return new QVariant(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:233
 // [-2] void reset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView5resetEv(void *this_) {
   ((QAbstractItemView*)this_)->reset();
 }
@@ -1700,7 +1700,7 @@ void C_ZN17QAbstractItemView5resetEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:234
 // [-2] void setRootIndex(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->setRootIndex(*index);
 }
@@ -1708,7 +1708,7 @@ void C_ZN17QAbstractItemView12setRootIndexERK11QModelIndex(void *this_, QModelIn
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:235
 // [-2] void doItemsLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView13doItemsLayoutEv(void *this_) {
   ((QAbstractItemView*)this_)->doItemsLayout();
 }
@@ -1716,7 +1716,7 @@ void C_ZN17QAbstractItemView13doItemsLayoutEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:236
 // [-2] void selectAll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView9selectAllEv(void *this_) {
   ((QAbstractItemView*)this_)->selectAll();
 }
@@ -1724,7 +1724,7 @@ void C_ZN17QAbstractItemView9selectAllEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:237
 // [-2] void edit(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView4editERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->edit(*index);
 }
@@ -1732,7 +1732,7 @@ void C_ZN17QAbstractItemView4editERK11QModelIndex(void *this_, QModelIndex* inde
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:238
 // [-2] void clearSelection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14clearSelectionEv(void *this_) {
   ((QAbstractItemView*)this_)->clearSelection();
 }
@@ -1740,7 +1740,7 @@ void C_ZN17QAbstractItemView14clearSelectionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:239
 // [-2] void setCurrentIndex(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15setCurrentIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->setCurrentIndex(*index);
 }
@@ -1748,7 +1748,7 @@ void C_ZN17QAbstractItemView15setCurrentIndexERK11QModelIndex(void *this_, QMode
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:240
 // [-2] void scrollToTop()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView11scrollToTopEv(void *this_) {
   ((QAbstractItemView*)this_)->scrollToTop();
 }
@@ -1756,7 +1756,7 @@ void C_ZN17QAbstractItemView11scrollToTopEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:241
 // [-2] void scrollToBottom()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14scrollToBottomEv(void *this_) {
   ((QAbstractItemView*)this_)->scrollToBottom();
 }
@@ -1764,7 +1764,7 @@ void C_ZN17QAbstractItemView14scrollToBottomEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:242
 // [-2] void update(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView6updateERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->update(*index);
 }
@@ -1772,7 +1772,7 @@ void C_ZN17QAbstractItemView6updateERK11QModelIndex(void *this_, QModelIndex* in
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:262
 // [-2] void pressed(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView7pressedERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->pressed(*index);
 }
@@ -1780,7 +1780,7 @@ void C_ZN17QAbstractItemView7pressedERK11QModelIndex(void *this_, QModelIndex* i
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:263
 // [-2] void clicked(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView7clickedERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->clicked(*index);
 }
@@ -1788,7 +1788,7 @@ void C_ZN17QAbstractItemView7clickedERK11QModelIndex(void *this_, QModelIndex* i
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:264
 // [-2] void doubleClicked(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView13doubleClickedERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->doubleClicked(*index);
 }
@@ -1796,7 +1796,7 @@ void C_ZN17QAbstractItemView13doubleClickedERK11QModelIndex(void *this_, QModelI
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:266
 // [-2] void activated(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView9activatedERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->activated(*index);
 }
@@ -1804,7 +1804,7 @@ void C_ZN17QAbstractItemView9activatedERK11QModelIndex(void *this_, QModelIndex*
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:267
 // [-2] void entered(const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView7enteredERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->entered(*index);
 }
@@ -1812,7 +1812,7 @@ void C_ZN17QAbstractItemView7enteredERK11QModelIndex(void *this_, QModelIndex* i
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:268
 // [-2] void viewportEntered()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15viewportEnteredEv(void *this_) {
   ((QAbstractItemView*)this_)->viewportEntered();
 }
@@ -1820,7 +1820,7 @@ void C_ZN17QAbstractItemView15viewportEnteredEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:270
 // [-2] void iconSizeChanged(const class QSize &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView15iconSizeChangedERK5QSize(void *this_, QSize* size) {
   ((QAbstractItemView*)this_)->iconSizeChanged(*size);
 }

@@ -23,14 +23,14 @@ MyQDnsHostAddressRecord() : QDnsHostAddressRecord() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:87
 // [-2] void QDnsHostAddressRecord()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordC2Ev() {
   return  new QDnsHostAddressRecord();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:90
 // [8] QDnsHostAddressRecord & operator=(class QDnsHostAddressRecord &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordaSEOS_(void *this_, QDnsHostAddressRecord && other) {
   auto& rv = ((QDnsHostAddressRecord*)this_)->operator=(other);
 return &rv;
@@ -39,7 +39,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:92
 // [8] QDnsHostAddressRecord & operator=(const class QDnsHostAddressRecord &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordaSERKS_(void *this_, QDnsHostAddressRecord* other) {
   auto& rv = ((QDnsHostAddressRecord*)this_)->operator=(*other);
 return &rv;
@@ -48,14 +48,14 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:93
 // [-2] void ~QDnsHostAddressRecord()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QDnsHostAddressRecordD2Ev(void *this_) {
   delete (QDnsHostAddressRecord*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:95
 // [-2] void swap(class QDnsHostAddressRecord &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QDnsHostAddressRecord4swapERS_(void *this_, QDnsHostAddressRecord* other) {
   ((QDnsHostAddressRecord*)this_)->swap(*other);
 }
@@ -63,7 +63,7 @@ void C_ZN21QDnsHostAddressRecord4swapERS_(void *this_, QDnsHostAddressRecord* ot
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:97
 // [8] QString name()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK21QDnsHostAddressRecord4nameEv(void *this_) {
   auto rv = ((QDnsHostAddressRecord*)this_)->name();
 return new QString(rv);
@@ -72,7 +72,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:98
 // [4] quint32 timeToLive()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint32 C_ZNK21QDnsHostAddressRecord10timeToLiveEv(void *this_) {
   return (quint32)((QDnsHostAddressRecord*)this_)->timeToLive();
 }
@@ -80,7 +80,7 @@ quint32 C_ZNK21QDnsHostAddressRecord10timeToLiveEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:99
 // [8] QHostAddress value()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK21QDnsHostAddressRecord5valueEv(void *this_) {
   auto rv = ((QDnsHostAddressRecord*)this_)->value();
 return new QHostAddress(rv);

@@ -21,12 +21,12 @@ public:
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:373
 // [4] QtPrivate::QContainerImplHelper::CutResult mid(int, int *, int *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QtPrivate::QContainerImplHelper::CutResult C_ZN9QtPrivate20QContainerImplHelper3midEiPiS1_(int originalLength, int * position, int * length) {
   return (QtPrivate::QContainerImplHelper::CutResult)QtPrivate::QContainerImplHelper::mid(originalLength, position, length);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QContainerImplHelperD2Ev(void *this_) {
   delete (QtPrivate::QContainerImplHelper*)(this_);
 }

@@ -47,7 +47,7 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:88
 // [-2] void statusChanged(enum QQmlIncubator::Status)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubator13statusChangedENS_6StatusE(void *this_, QQmlIncubator::Status arg0) {
   ((QQmlIncubator*)this_)->QQmlIncubator::statusChanged(arg0);
 }
@@ -55,7 +55,7 @@ void C_ZN13QQmlIncubator13statusChangedENS_6StatusE(void *this_, QQmlIncubator::
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:89
 // [-2] void setInitialState(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubator15setInitialStateEP7QObject(void *this_, QObject * arg0) {
   ((QQmlIncubator*)this_)->QQmlIncubator::setInitialState(arg0);
 }
@@ -63,7 +63,7 @@ void C_ZN13QQmlIncubator15setInitialStateEP7QObject(void *this_, QObject * arg0)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:68
 // [-2] void QQmlIncubator(enum QQmlIncubator::IncubationMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlIncubatorC2ENS_14IncubationModeE(QQmlIncubator::IncubationMode arg0) {
   auto _nilp = (MyQQmlIncubator*)(0);
   return  new MyQQmlIncubator(arg0);
@@ -71,14 +71,14 @@ void* C_ZN13QQmlIncubatorC2ENS_14IncubationModeE(QQmlIncubator::IncubationMode a
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:69
 // [-2] void ~QQmlIncubator()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubatorD2Ev(void *this_) {
   delete (QQmlIncubator*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:71
 // [-2] void clear()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubator5clearEv(void *this_) {
   ((QQmlIncubator*)this_)->clear();
 }
@@ -86,7 +86,7 @@ void C_ZN13QQmlIncubator5clearEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:72
 // [-2] void forceCompletion()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubator15forceCompletionEv(void *this_) {
   ((QQmlIncubator*)this_)->forceCompletion();
 }
@@ -94,7 +94,7 @@ void C_ZN13QQmlIncubator15forceCompletionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:74
 // [1] bool isNull()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QQmlIncubator6isNullEv(void *this_) {
   return (bool)((QQmlIncubator*)this_)->isNull();
 }
@@ -102,7 +102,7 @@ bool C_ZNK13QQmlIncubator6isNullEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:75
 // [1] bool isReady()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QQmlIncubator7isReadyEv(void *this_) {
   return (bool)((QQmlIncubator*)this_)->isReady();
 }
@@ -110,7 +110,7 @@ bool C_ZNK13QQmlIncubator7isReadyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:76
 // [1] bool isError()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QQmlIncubator7isErrorEv(void *this_) {
   return (bool)((QQmlIncubator*)this_)->isError();
 }
@@ -118,7 +118,7 @@ bool C_ZNK13QQmlIncubator7isErrorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:77
 // [1] bool isLoading()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QQmlIncubator9isLoadingEv(void *this_) {
   return (bool)((QQmlIncubator*)this_)->isLoading();
 }
@@ -126,7 +126,7 @@ bool C_ZNK13QQmlIncubator9isLoadingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:81
 // [4] QQmlIncubator::IncubationMode incubationMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QQmlIncubator::IncubationMode C_ZNK13QQmlIncubator14incubationModeEv(void *this_) {
   return (QQmlIncubator::IncubationMode)((QQmlIncubator*)this_)->incubationMode();
 }
@@ -134,7 +134,7 @@ QQmlIncubator::IncubationMode C_ZNK13QQmlIncubator14incubationModeEv(void *this_
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:83
 // [4] QQmlIncubator::Status status()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QQmlIncubator::Status C_ZNK13QQmlIncubator6statusEv(void *this_) {
   return (QQmlIncubator::Status)((QQmlIncubator*)this_)->status();
 }
@@ -142,7 +142,7 @@ QQmlIncubator::Status C_ZNK13QQmlIncubator6statusEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:85
 // [8] QObject * object()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QQmlIncubator6objectEv(void *this_) {
   return (void*)((QQmlIncubator*)this_)->object();
 }

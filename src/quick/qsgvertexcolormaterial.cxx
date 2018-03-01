@@ -49,7 +49,7 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:55
 // [8] QSGMaterialType * type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK22QSGVertexColorMaterial4typeEv(void *this_) {
   return (void*)((QSGVertexColorMaterial*)this_)->QSGVertexColorMaterial::type();
 }
@@ -57,7 +57,7 @@ void* C_ZNK22QSGVertexColorMaterial4typeEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:56
 // [8] QSGMaterialShader * createShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK22QSGVertexColorMaterial12createShaderEv(void *this_) {
   return (void*)((QSGVertexColorMaterial*)this_)->QSGVertexColorMaterial::createShader();
 }
@@ -65,7 +65,7 @@ void* C_ZNK22QSGVertexColorMaterial12createShaderEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:50
 // [-2] void QSGVertexColorMaterial()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QSGVertexColorMaterialC2Ev() {
   auto _nilp = (MyQSGVertexColorMaterial*)(0);
   return  new MyQSGVertexColorMaterial();
@@ -73,13 +73,13 @@ void* C_ZN22QSGVertexColorMaterialC2Ev() {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:52
 // [4] int compare(const class QSGMaterial *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK22QSGVertexColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
   return (int)((QSGVertexColorMaterial*)this_)->compare(other);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QSGVertexColorMaterialD2Ev(void *this_) {
   delete (QSGVertexColorMaterial*)(this_);
 }

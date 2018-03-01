@@ -23,21 +23,21 @@ MyQQmlAbstractUrlInterceptor() : QQmlAbstractUrlInterceptor() {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:58
 // [-2] void QQmlAbstractUrlInterceptor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QQmlAbstractUrlInterceptorC2Ev() {
   return 0; // new QQmlAbstractUrlInterceptor();
 }
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:59
 // [-2] void ~QQmlAbstractUrlInterceptor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN26QQmlAbstractUrlInterceptorD2Ev(void *this_) {
   delete (QQmlAbstractUrlInterceptor*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:60
 // [8] QUrl intercept(const class QUrl &, enum QQmlAbstractUrlInterceptor::DataType)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QQmlAbstractUrlInterceptor9interceptERK4QUrlNS_8DataTypeE(void *this_, QUrl* path, QQmlAbstractUrlInterceptor::DataType type_) {
   auto rv = ((QQmlAbstractUrlInterceptor*)this_)->intercept(*path, type_);
 return new QUrl(rv);

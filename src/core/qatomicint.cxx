@@ -23,12 +23,12 @@ MyQAtomicInt(int value) : QAtomicInt(value) {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qatomic.h:162
 // [-2] void QAtomicInt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QAtomicIntC2Ei(int value) {
   return  new QAtomicInt(value);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QAtomicIntD2Ev(void *this_) {
   delete (QAtomicInt*)(this_);
 }

@@ -96,7 +96,7 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:187
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN7QWizard5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QWizard*)this_)->QWizard::event(event);
 }
@@ -104,7 +104,7 @@ bool C_ZN7QWizard5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:188
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QWizard*)this_)->QWizard::resizeEvent(event);
 }
@@ -112,7 +112,7 @@ void C_ZN7QWizard11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:189
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QWizard*)this_)->QWizard::paintEvent(event);
 }
@@ -120,7 +120,7 @@ void C_ZN7QWizard10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:193
 // [-2] void done(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard4doneEi(void *this_, int result) {
   ((QWizard*)this_)->QWizard::done(result);
 }
@@ -128,7 +128,7 @@ void C_ZN7QWizard4doneEi(void *this_, int result) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:194
 // [-2] void initializePage(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard14initializePageEi(void *this_, int id) {
   ((QWizard*)this_)->QWizard::initializePage(id);
 }
@@ -136,7 +136,7 @@ void C_ZN7QWizard14initializePageEi(void *this_, int id) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:195
 // [-2] void cleanupPage(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard11cleanupPageEi(void *this_, int id) {
   ((QWizard*)this_)->QWizard::cleanupPage(id);
 }
@@ -144,7 +144,7 @@ void C_ZN7QWizard11cleanupPageEi(void *this_, int id) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:56
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard10metaObjectEv(void *this_) {
   return (void*)((QWizard*)this_)->metaObject();
 }
@@ -152,7 +152,7 @@ void* C_ZNK7QWizard10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:123
 // [-2] void QWizard(class QWidget *, Qt::WindowFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QWizardC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
   auto _nilp = (MyQWizard*)(0);
   return  new MyQWizard(parent, flags);
@@ -160,14 +160,14 @@ void* C_ZN7QWizardC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlag
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:124
 // [-2] void ~QWizard()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizardD2Ev(void *this_) {
   delete (QWizard*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:126
 // [4] int addPage(class QWizardPage *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN7QWizard7addPageEP11QWizardPage(void *this_, QWizardPage * page) {
   return (int)((QWizard*)this_)->addPage(page);
 }
@@ -175,7 +175,7 @@ int C_ZN7QWizard7addPageEP11QWizardPage(void *this_, QWizardPage * page) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:127
 // [-2] void setPage(int, class QWizardPage *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard7setPageEiP11QWizardPage(void *this_, int id, QWizardPage * page) {
   ((QWizard*)this_)->setPage(id, page);
 }
@@ -183,7 +183,7 @@ void C_ZN7QWizard7setPageEiP11QWizardPage(void *this_, int id, QWizardPage * pag
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:128
 // [-2] void removePage(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard10removePageEi(void *this_, int id) {
   ((QWizard*)this_)->removePage(id);
 }
@@ -191,7 +191,7 @@ void C_ZN7QWizard10removePageEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:129
 // [8] QWizardPage * page(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard4pageEi(void *this_, int id) {
   return (void*)((QWizard*)this_)->page(id);
 }
@@ -199,7 +199,7 @@ void* C_ZNK7QWizard4pageEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:130
 // [1] bool hasVisitedPage(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK7QWizard14hasVisitedPageEi(void *this_, int id) {
   return (bool)((QWizard*)this_)->hasVisitedPage(id);
 }
@@ -207,7 +207,7 @@ bool C_ZNK7QWizard14hasVisitedPageEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:133
 // [-2] void setStartId(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard10setStartIdEi(void *this_, int id) {
   ((QWizard*)this_)->setStartId(id);
 }
@@ -215,7 +215,7 @@ void C_ZN7QWizard10setStartIdEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:134
 // [4] int startId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK7QWizard7startIdEv(void *this_) {
   return (int)((QWizard*)this_)->startId();
 }
@@ -223,7 +223,7 @@ int C_ZNK7QWizard7startIdEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:135
 // [8] QWizardPage * currentPage()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard11currentPageEv(void *this_) {
   return (void*)((QWizard*)this_)->currentPage();
 }
@@ -231,7 +231,7 @@ void* C_ZNK7QWizard11currentPageEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:136
 // [4] int currentId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK7QWizard9currentIdEv(void *this_) {
   return (int)((QWizard*)this_)->currentId();
 }
@@ -239,7 +239,7 @@ int C_ZNK7QWizard9currentIdEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:138
 // [1] bool validateCurrentPage()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN7QWizard19validateCurrentPageEv(void *this_) {
   return (bool)((QWizard*)this_)->validateCurrentPage();
 }
@@ -247,7 +247,7 @@ bool C_ZN7QWizard19validateCurrentPageEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:139
 // [4] int nextId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK7QWizard6nextIdEv(void *this_) {
   return (int)((QWizard*)this_)->nextId();
 }
@@ -255,7 +255,7 @@ int C_ZNK7QWizard6nextIdEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:141
 // [-2] void setField(const class QString &, const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard8setFieldERK7QStringRK8QVariant(void *this_, QString* name, QVariant* value) {
   ((QWizard*)this_)->setField(*name, *value);
 }
@@ -263,7 +263,7 @@ void C_ZN7QWizard8setFieldERK7QStringRK8QVariant(void *this_, QString* name, QVa
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:142
 // [16] QVariant field(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard5fieldERK7QString(void *this_, QString* name) {
   auto rv = ((QWizard*)this_)->field(*name);
 return new QVariant(rv);
@@ -272,7 +272,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:144
 // [-2] void setWizardStyle(enum QWizard::WizardStyle)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard14setWizardStyleENS_11WizardStyleE(void *this_, QWizard::WizardStyle style) {
   ((QWizard*)this_)->setWizardStyle(style);
 }
@@ -280,7 +280,7 @@ void C_ZN7QWizard14setWizardStyleENS_11WizardStyleE(void *this_, QWizard::Wizard
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:145
 // [4] QWizard::WizardStyle wizardStyle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWizard::WizardStyle C_ZNK7QWizard11wizardStyleEv(void *this_) {
   return (QWizard::WizardStyle)((QWizard*)this_)->wizardStyle();
 }
@@ -288,7 +288,7 @@ QWizard::WizardStyle C_ZNK7QWizard11wizardStyleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:147
 // [-2] void setOption(enum QWizard::WizardOption, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard9setOptionENS_12WizardOptionEb(void *this_, QWizard::WizardOption option, bool on) {
   ((QWizard*)this_)->setOption(option, on);
 }
@@ -296,7 +296,7 @@ void C_ZN7QWizard9setOptionENS_12WizardOptionEb(void *this_, QWizard::WizardOpti
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:148
 // [1] bool testOption(enum QWizard::WizardOption)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK7QWizard10testOptionENS_12WizardOptionE(void *this_, QWizard::WizardOption option) {
   return (bool)((QWizard*)this_)->testOption(option);
 }
@@ -304,7 +304,7 @@ bool C_ZNK7QWizard10testOptionENS_12WizardOptionE(void *this_, QWizard::WizardOp
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:149
 // [-2] void setOptions(QWizard::WizardOptions)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard10setOptionsE6QFlagsINS_12WizardOptionEE(void *this_, QFlags<QWizard::WizardOption> options) {
   ((QWizard*)this_)->setOptions(options);
 }
@@ -312,7 +312,7 @@ void C_ZN7QWizard10setOptionsE6QFlagsINS_12WizardOptionEE(void *this_, QFlags<QW
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:150
 // [4] QWizard::WizardOptions options()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWizard::WizardOptions* C_ZNK7QWizard7optionsEv(void *this_) {
   auto rv = ((QWizard*)this_)->options();
 return new QWizard::WizardOptions(rv);
@@ -321,7 +321,7 @@ return new QWizard::WizardOptions(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:152
 // [-2] void setButtonText(enum QWizard::WizardButton, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard13setButtonTextENS_12WizardButtonERK7QString(void *this_, QWizard::WizardButton which, QString* text) {
   ((QWizard*)this_)->setButtonText(which, *text);
 }
@@ -329,7 +329,7 @@ void C_ZN7QWizard13setButtonTextENS_12WizardButtonERK7QString(void *this_, QWiza
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:153
 // [8] QString buttonText(enum QWizard::WizardButton)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard10buttonTextENS_12WizardButtonE(void *this_, QWizard::WizardButton which) {
   auto rv = ((QWizard*)this_)->buttonText(which);
 return new QString(rv);
@@ -338,7 +338,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:155
 // [-2] void setButton(enum QWizard::WizardButton, class QAbstractButton *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard9setButtonENS_12WizardButtonEP15QAbstractButton(void *this_, QWizard::WizardButton which, QAbstractButton * button) {
   ((QWizard*)this_)->setButton(which, button);
 }
@@ -346,7 +346,7 @@ void C_ZN7QWizard9setButtonENS_12WizardButtonEP15QAbstractButton(void *this_, QW
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:156
 // [8] QAbstractButton * button(enum QWizard::WizardButton)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard6buttonENS_12WizardButtonE(void *this_, QWizard::WizardButton which) {
   return (void*)((QWizard*)this_)->button(which);
 }
@@ -354,7 +354,7 @@ void* C_ZNK7QWizard6buttonENS_12WizardButtonE(void *this_, QWizard::WizardButton
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:158
 // [-2] void setTitleFormat(Qt::TextFormat)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard14setTitleFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat format) {
   ((QWizard*)this_)->setTitleFormat(format);
 }
@@ -362,7 +362,7 @@ void C_ZN7QWizard14setTitleFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:159
 // [4] Qt::TextFormat titleFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::TextFormat C_ZNK7QWizard11titleFormatEv(void *this_) {
   return (Qt::TextFormat)((QWizard*)this_)->titleFormat();
 }
@@ -370,7 +370,7 @@ Qt::TextFormat C_ZNK7QWizard11titleFormatEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:160
 // [-2] void setSubTitleFormat(Qt::TextFormat)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard17setSubTitleFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat format) {
   ((QWizard*)this_)->setSubTitleFormat(format);
 }
@@ -378,7 +378,7 @@ void C_ZN7QWizard17setSubTitleFormatEN2Qt10TextFormatE(void *this_, Qt::TextForm
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:161
 // [4] Qt::TextFormat subTitleFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::TextFormat C_ZNK7QWizard14subTitleFormatEv(void *this_) {
   return (Qt::TextFormat)((QWizard*)this_)->subTitleFormat();
 }
@@ -386,7 +386,7 @@ Qt::TextFormat C_ZNK7QWizard14subTitleFormatEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:162
 // [-2] void setPixmap(enum QWizard::WizardPixmap, const class QPixmap &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard9setPixmapENS_12WizardPixmapERK7QPixmap(void *this_, QWizard::WizardPixmap which, QPixmap* pixmap) {
   ((QWizard*)this_)->setPixmap(which, *pixmap);
 }
@@ -394,7 +394,7 @@ void C_ZN7QWizard9setPixmapENS_12WizardPixmapERK7QPixmap(void *this_, QWizard::W
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:163
 // [32] QPixmap pixmap(enum QWizard::WizardPixmap)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard6pixmapENS_12WizardPixmapE(void *this_, QWizard::WizardPixmap which) {
   auto rv = ((QWizard*)this_)->pixmap(which);
 return new QPixmap(rv);
@@ -403,7 +403,7 @@ return new QPixmap(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:165
 // [-2] void setSideWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard13setSideWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QWizard*)this_)->setSideWidget(widget);
 }
@@ -411,7 +411,7 @@ void C_ZN7QWizard13setSideWidgetEP7QWidget(void *this_, QWidget * widget) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:166
 // [8] QWidget * sideWidget()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard10sideWidgetEv(void *this_) {
   return (void*)((QWizard*)this_)->sideWidget();
 }
@@ -419,7 +419,7 @@ void* C_ZNK7QWizard10sideWidgetEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:168
 // [-2] void setDefaultProperty(const char *, const char *, const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard18setDefaultPropertyEPKcS1_S1_(void *this_, const char * className, const char * property, const char * changedSignal) {
   ((QWizard*)this_)->setDefaultProperty(className, property, changedSignal);
 }
@@ -427,7 +427,7 @@ void C_ZN7QWizard18setDefaultPropertyEPKcS1_S1_(void *this_, const char * classN
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:171
 // [-2] void setVisible(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard10setVisibleEb(void *this_, bool visible) {
   ((QWizard*)this_)->setVisible(visible);
 }
@@ -435,7 +435,7 @@ void C_ZN7QWizard10setVisibleEb(void *this_, bool visible) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:172
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard8sizeHintEv(void *this_) {
   auto rv = ((QWizard*)this_)->sizeHint();
 return new QSize(rv);
@@ -444,7 +444,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:175
 // [-2] void currentIdChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard16currentIdChangedEi(void *this_, int id) {
   ((QWizard*)this_)->currentIdChanged(id);
 }
@@ -452,7 +452,7 @@ void C_ZN7QWizard16currentIdChangedEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:176
 // [-2] void helpRequested()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard13helpRequestedEv(void *this_) {
   ((QWizard*)this_)->helpRequested();
 }
@@ -460,7 +460,7 @@ void C_ZN7QWizard13helpRequestedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:177
 // [-2] void customButtonClicked(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard19customButtonClickedEi(void *this_, int which) {
   ((QWizard*)this_)->customButtonClicked(which);
 }
@@ -468,7 +468,7 @@ void C_ZN7QWizard19customButtonClickedEi(void *this_, int which) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:178
 // [-2] void pageAdded(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard9pageAddedEi(void *this_, int id) {
   ((QWizard*)this_)->pageAdded(id);
 }
@@ -476,7 +476,7 @@ void C_ZN7QWizard9pageAddedEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:179
 // [-2] void pageRemoved(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard11pageRemovedEi(void *this_, int id) {
   ((QWizard*)this_)->pageRemoved(id);
 }
@@ -484,7 +484,7 @@ void C_ZN7QWizard11pageRemovedEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:182
 // [-2] void back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard4backEv(void *this_) {
   ((QWizard*)this_)->back();
 }
@@ -492,7 +492,7 @@ void C_ZN7QWizard4backEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:183
 // [-2] void next()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard4nextEv(void *this_) {
   ((QWizard*)this_)->next();
 }
@@ -500,7 +500,7 @@ void C_ZN7QWizard4nextEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:184
 // [-2] void restart()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard7restartEv(void *this_) {
   ((QWizard*)this_)->restart();
 }

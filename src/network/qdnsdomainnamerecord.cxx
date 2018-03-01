@@ -23,14 +23,14 @@ MyQDnsDomainNameRecord() : QDnsDomainNameRecord() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:63
 // [-2] void QDnsDomainNameRecord()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordC2Ev() {
   return  new QDnsDomainNameRecord();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:66
 // [8] QDnsDomainNameRecord & operator=(class QDnsDomainNameRecord &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordaSEOS_(void *this_, QDnsDomainNameRecord && other) {
   auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(other);
 return &rv;
@@ -39,7 +39,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:68
 // [8] QDnsDomainNameRecord & operator=(const class QDnsDomainNameRecord &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordaSERKS_(void *this_, QDnsDomainNameRecord* other) {
   auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(*other);
 return &rv;
@@ -48,14 +48,14 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:69
 // [-2] void ~QDnsDomainNameRecord()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QDnsDomainNameRecordD2Ev(void *this_) {
   delete (QDnsDomainNameRecord*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:71
 // [-2] void swap(class QDnsDomainNameRecord &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QDnsDomainNameRecord4swapERS_(void *this_, QDnsDomainNameRecord* other) {
   ((QDnsDomainNameRecord*)this_)->swap(*other);
 }
@@ -63,7 +63,7 @@ void C_ZN20QDnsDomainNameRecord4swapERS_(void *this_, QDnsDomainNameRecord* othe
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:73
 // [8] QString name()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QDnsDomainNameRecord4nameEv(void *this_) {
   auto rv = ((QDnsDomainNameRecord*)this_)->name();
 return new QString(rv);
@@ -72,7 +72,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:74
 // [4] quint32 timeToLive()
-extern "C"
+extern "C" Q_DECL_EXPORT
 quint32 C_ZNK20QDnsDomainNameRecord10timeToLiveEv(void *this_) {
   return (quint32)((QDnsDomainNameRecord*)this_)->timeToLive();
 }
@@ -80,7 +80,7 @@ quint32 C_ZNK20QDnsDomainNameRecord10timeToLiveEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:75
 // [8] QString value()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QDnsDomainNameRecord5valueEv(void *this_) {
   auto rv = ((QDnsDomainNameRecord*)this_)->value();
 return new QString(rv);

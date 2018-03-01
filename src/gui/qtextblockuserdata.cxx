@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:198
 // [-2] void ~QTextBlockUserData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QTextBlockUserDataD2Ev(void *this_) {
   delete (QTextBlockUserData*)(this_);
 }

@@ -71,7 +71,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:101
 // [-2] void connectNotify(const class QMetaMethod &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::connectNotify(*signal);
 }
@@ -79,7 +79,7 @@ void C_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void *this_, QMetaM
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:102
 // [-2] void disconnectNotify(const class QMetaMethod &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::disconnectNotify(*signal);
 }
@@ -87,7 +87,7 @@ void C_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void *this_, QMe
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:105
 // [-2] void connectOutputInterface()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void *this_) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::connectOutputInterface();
 }
@@ -95,7 +95,7 @@ void C_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:106
 // [-2] void disconnectOutputInterface(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void *this_, bool pendingAssignment) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
 }
@@ -103,7 +103,7 @@ void C_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void *this_, bool pen
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:57
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QFutureWatcherBase10metaObjectEv(void *this_) {
   return (void*)((QFutureWatcherBase*)this_)->metaObject();
 }
@@ -111,7 +111,7 @@ void* C_ZNK18QFutureWatcherBase10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:61
 // [-2] void QFutureWatcherBase(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQFutureWatcherBase*)(0);
   return 0; // new MyQFutureWatcherBase(parent);
@@ -119,7 +119,7 @@ void* C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:64
 // [4] int progressValue()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QFutureWatcherBase13progressValueEv(void *this_) {
   return (int)((QFutureWatcherBase*)this_)->progressValue();
 }
@@ -127,7 +127,7 @@ int C_ZNK18QFutureWatcherBase13progressValueEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:65
 // [4] int progressMinimum()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QFutureWatcherBase15progressMinimumEv(void *this_) {
   return (int)((QFutureWatcherBase*)this_)->progressMinimum();
 }
@@ -135,7 +135,7 @@ int C_ZNK18QFutureWatcherBase15progressMinimumEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:66
 // [4] int progressMaximum()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QFutureWatcherBase15progressMaximumEv(void *this_) {
   return (int)((QFutureWatcherBase*)this_)->progressMaximum();
 }
@@ -143,7 +143,7 @@ int C_ZNK18QFutureWatcherBase15progressMaximumEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:67
 // [8] QString progressText()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QFutureWatcherBase12progressTextEv(void *this_) {
   auto rv = ((QFutureWatcherBase*)this_)->progressText();
 return new QString(rv);
@@ -152,7 +152,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:69
 // [1] bool isStarted()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK18QFutureWatcherBase9isStartedEv(void *this_) {
   return (bool)((QFutureWatcherBase*)this_)->isStarted();
 }
@@ -160,7 +160,7 @@ bool C_ZNK18QFutureWatcherBase9isStartedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:70
 // [1] bool isFinished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK18QFutureWatcherBase10isFinishedEv(void *this_) {
   return (bool)((QFutureWatcherBase*)this_)->isFinished();
 }
@@ -168,7 +168,7 @@ bool C_ZNK18QFutureWatcherBase10isFinishedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:71
 // [1] bool isRunning()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK18QFutureWatcherBase9isRunningEv(void *this_) {
   return (bool)((QFutureWatcherBase*)this_)->isRunning();
 }
@@ -176,7 +176,7 @@ bool C_ZNK18QFutureWatcherBase9isRunningEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:72
 // [1] bool isCanceled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK18QFutureWatcherBase10isCanceledEv(void *this_) {
   return (bool)((QFutureWatcherBase*)this_)->isCanceled();
 }
@@ -184,7 +184,7 @@ bool C_ZNK18QFutureWatcherBase10isCanceledEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:73
 // [1] bool isPaused()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK18QFutureWatcherBase8isPausedEv(void *this_) {
   return (bool)((QFutureWatcherBase*)this_)->isPaused();
 }
@@ -192,7 +192,7 @@ bool C_ZNK18QFutureWatcherBase8isPausedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:75
 // [-2] void waitForFinished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase15waitForFinishedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->waitForFinished();
 }
@@ -200,7 +200,7 @@ void C_ZN18QFutureWatcherBase15waitForFinishedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:77
 // [-2] void setPendingResultsLimit(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase22setPendingResultsLimitEi(void *this_, int limit) {
   ((QFutureWatcherBase*)this_)->setPendingResultsLimit(limit);
 }
@@ -208,7 +208,7 @@ void C_ZN18QFutureWatcherBase22setPendingResultsLimitEi(void *this_, int limit) 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:79
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN18QFutureWatcherBase5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QFutureWatcherBase*)this_)->event(event);
 }
@@ -216,7 +216,7 @@ bool C_ZN18QFutureWatcherBase5eventEP6QEvent(void *this_, QEvent * event) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:82
 // [-2] void started()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase7startedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->started();
 }
@@ -224,7 +224,7 @@ void C_ZN18QFutureWatcherBase7startedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:83
 // [-2] void finished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase8finishedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->finished();
 }
@@ -232,7 +232,7 @@ void C_ZN18QFutureWatcherBase8finishedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:84
 // [-2] void canceled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase8canceledEv(void *this_) {
   ((QFutureWatcherBase*)this_)->canceled();
 }
@@ -240,7 +240,7 @@ void C_ZN18QFutureWatcherBase8canceledEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:85
 // [-2] void paused()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase6pausedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->paused();
 }
@@ -248,7 +248,7 @@ void C_ZN18QFutureWatcherBase6pausedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:86
 // [-2] void resumed()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase7resumedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->resumed();
 }
@@ -256,7 +256,7 @@ void C_ZN18QFutureWatcherBase7resumedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:87
 // [-2] void resultReadyAt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase13resultReadyAtEi(void *this_, int resultIndex) {
   ((QFutureWatcherBase*)this_)->resultReadyAt(resultIndex);
 }
@@ -264,7 +264,7 @@ void C_ZN18QFutureWatcherBase13resultReadyAtEi(void *this_, int resultIndex) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:88
 // [-2] void resultsReadyAt(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase14resultsReadyAtEii(void *this_, int beginIndex, int endIndex) {
   ((QFutureWatcherBase*)this_)->resultsReadyAt(beginIndex, endIndex);
 }
@@ -272,7 +272,7 @@ void C_ZN18QFutureWatcherBase14resultsReadyAtEii(void *this_, int beginIndex, in
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:89
 // [-2] void progressRangeChanged(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase20progressRangeChangedEii(void *this_, int minimum, int maximum) {
   ((QFutureWatcherBase*)this_)->progressRangeChanged(minimum, maximum);
 }
@@ -280,7 +280,7 @@ void C_ZN18QFutureWatcherBase20progressRangeChangedEii(void *this_, int minimum,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:90
 // [-2] void progressValueChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase20progressValueChangedEi(void *this_, int progressValue) {
   ((QFutureWatcherBase*)this_)->progressValueChanged(progressValue);
 }
@@ -288,7 +288,7 @@ void C_ZN18QFutureWatcherBase20progressValueChangedEi(void *this_, int progressV
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:91
 // [-2] void progressTextChanged(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase19progressTextChangedERK7QString(void *this_, QString* progressText) {
   ((QFutureWatcherBase*)this_)->progressTextChanged(*progressText);
 }
@@ -296,7 +296,7 @@ void C_ZN18QFutureWatcherBase19progressTextChangedERK7QString(void *this_, QStri
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:94
 // [-2] void cancel()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase6cancelEv(void *this_) {
   ((QFutureWatcherBase*)this_)->cancel();
 }
@@ -304,7 +304,7 @@ void C_ZN18QFutureWatcherBase6cancelEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:95
 // [-2] void setPaused(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase9setPausedEb(void *this_, bool paused) {
   ((QFutureWatcherBase*)this_)->setPaused(paused);
 }
@@ -312,7 +312,7 @@ void C_ZN18QFutureWatcherBase9setPausedEb(void *this_, bool paused) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:96
 // [-2] void pause()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase5pauseEv(void *this_) {
   ((QFutureWatcherBase*)this_)->pause();
 }
@@ -320,7 +320,7 @@ void C_ZN18QFutureWatcherBase5pauseEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:97
 // [-2] void resume()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase6resumeEv(void *this_) {
   ((QFutureWatcherBase*)this_)->resume();
 }
@@ -328,13 +328,13 @@ void C_ZN18QFutureWatcherBase6resumeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:98
 // [-2] void togglePaused()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase12togglePausedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->togglePaused();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBaseD2Ev(void *this_) {
   delete (QFutureWatcherBase*)(this_);
 }

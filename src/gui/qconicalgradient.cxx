@@ -27,28 +27,28 @@ MyQConicalGradient(qreal cx, qreal cy, qreal startAngle) : QConicalGradient(cx, 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:306
 // [-2] void QConicalGradient()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QConicalGradientC2Ev() {
   return  new QConicalGradient();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:307
 // [-2] void QConicalGradient(const class QPointF &, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QConicalGradientC2ERK7QPointFd(QPointF* center, qreal startAngle) {
   return  new QConicalGradient(*center, startAngle);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:308
 // [-2] void QConicalGradient(qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QConicalGradientC2Eddd(qreal cx, qreal cy, qreal startAngle) {
   return  new QConicalGradient(cx, cy, startAngle);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:310
 // [16] QPointF center()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK16QConicalGradient6centerEv(void *this_) {
   auto rv = ((QConicalGradient*)this_)->center();
 return new QPointF(rv);
@@ -57,7 +57,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:311
 // [-2] void setCenter(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QConicalGradient9setCenterERK7QPointF(void *this_, QPointF* center) {
   ((QConicalGradient*)this_)->setCenter(*center);
 }
@@ -65,7 +65,7 @@ void C_ZN16QConicalGradient9setCenterERK7QPointF(void *this_, QPointF* center) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:312
 // [-2] void setCenter(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QConicalGradient9setCenterEdd(void *this_, qreal x, qreal y) {
   ((QConicalGradient*)this_)->setCenter(x, y);
 }
@@ -73,7 +73,7 @@ void C_ZN16QConicalGradient9setCenterEdd(void *this_, qreal x, qreal y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:314
 // [8] qreal angle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QConicalGradient5angleEv(void *this_) {
   return (qreal)((QConicalGradient*)this_)->angle();
 }
@@ -81,13 +81,13 @@ qreal C_ZNK16QConicalGradient5angleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:315
 // [-2] void setAngle(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QConicalGradient8setAngleEd(void *this_, qreal angle) {
   ((QConicalGradient*)this_)->setAngle(angle);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QConicalGradientD2Ev(void *this_) {
   delete (QConicalGradient*)(this_);
 }

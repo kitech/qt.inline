@@ -25,12 +25,12 @@ MyQStyleOptionToolBar(int version) : QStyleOptionToolBar(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:315
 // [-2] void QStyleOptionToolBar()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionToolBarC2Ev() {
   return  new QStyleOptionToolBar();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QStyleOptionToolBarD2Ev(void *this_) {
   delete (QStyleOptionToolBar*)(this_);
 }

@@ -21,7 +21,7 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:75
 // [8] qreal descent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextItem7descentEv(void *this_) {
   return (qreal)((QTextItem*)this_)->descent();
 }
@@ -29,7 +29,7 @@ qreal C_ZNK9QTextItem7descentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:76
 // [8] qreal ascent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextItem6ascentEv(void *this_) {
   return (qreal)((QTextItem*)this_)->ascent();
 }
@@ -37,7 +37,7 @@ qreal C_ZNK9QTextItem6ascentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:77
 // [8] qreal width()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextItem5widthEv(void *this_) {
   return (qreal)((QTextItem*)this_)->width();
 }
@@ -45,7 +45,7 @@ qreal C_ZNK9QTextItem5widthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:79
 // [4] QTextItem::RenderFlags renderFlags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QTextItem::RenderFlags* C_ZNK9QTextItem11renderFlagsEv(void *this_) {
   auto rv = ((QTextItem*)this_)->renderFlags();
 return new QTextItem::RenderFlags(rv);
@@ -54,7 +54,7 @@ return new QTextItem::RenderFlags(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:80
 // [8] QString text()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTextItem4textEv(void *this_) {
   auto rv = ((QTextItem*)this_)->text();
 return new QString(rv);
@@ -63,14 +63,14 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:81
 // [16] QFont font()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTextItem4fontEv(void *this_) {
   auto rv = ((QTextItem*)this_)->font();
 return new QFont(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QTextItemD2Ev(void *this_) {
   delete (QTextItem*)(this_);
 }

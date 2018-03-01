@@ -72,7 +72,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:73
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN25QSequentialAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::event(event);
 }
@@ -80,7 +80,7 @@ bool C_ZN25QSequentialAnimationGroup5eventEP6QEvent(void *this_, QEvent * event)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:75
 // [-2] void updateCurrentTime(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(void *this_, int arg0) {
   ((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::updateCurrentTime(arg0);
 }
@@ -88,7 +88,7 @@ void C_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(void *this_, int arg0)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:76
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::updateState(newState, oldState);
 }
@@ -96,7 +96,7 @@ void C_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:77
 // [-2] void updateDirection(class QAbstractAnimation::Direction)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::updateDirection(direction);
 }
@@ -104,7 +104,7 @@ void C_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9Dire
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK25QSequentialAnimationGroup10metaObjectEv(void *this_) {
   return (void*)((QSequentialAnimationGroup*)this_)->metaObject();
 }
@@ -112,7 +112,7 @@ void* C_ZNK25QSequentialAnimationGroup10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:59
 // [-2] void QSequentialAnimationGroup(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSequentialAnimationGroup*)(0);
   return  new MyQSequentialAnimationGroup(parent);
@@ -120,14 +120,14 @@ void* C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:60
 // [-2] void ~QSequentialAnimationGroup()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroupD2Ev(void *this_) {
   delete (QSequentialAnimationGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:62
 // [8] QPauseAnimation * addPause(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN25QSequentialAnimationGroup8addPauseEi(void *this_, int msecs) {
   return (void*)((QSequentialAnimationGroup*)this_)->addPause(msecs);
 }
@@ -135,7 +135,7 @@ void* C_ZN25QSequentialAnimationGroup8addPauseEi(void *this_, int msecs) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:63
 // [8] QPauseAnimation * insertPause(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN25QSequentialAnimationGroup11insertPauseEii(void *this_, int index, int msecs) {
   return (void*)((QSequentialAnimationGroup*)this_)->insertPause(index, msecs);
 }
@@ -143,7 +143,7 @@ void* C_ZN25QSequentialAnimationGroup11insertPauseEii(void *this_, int index, in
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:65
 // [8] QAbstractAnimation * currentAnimation()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK25QSequentialAnimationGroup16currentAnimationEv(void *this_) {
   return (void*)((QSequentialAnimationGroup*)this_)->currentAnimation();
 }
@@ -151,7 +151,7 @@ void* C_ZNK25QSequentialAnimationGroup16currentAnimationEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:66
 // [4] int duration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK25QSequentialAnimationGroup8durationEv(void *this_) {
   return (int)((QSequentialAnimationGroup*)this_)->duration();
 }
@@ -159,7 +159,7 @@ int C_ZNK25QSequentialAnimationGroup8durationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:69
 // [-2] void currentAnimationChanged(class QAbstractAnimation *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation(void *this_, QAbstractAnimation * current) {
   ((QSequentialAnimationGroup*)this_)->currentAnimationChanged(current);
 }

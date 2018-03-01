@@ -23,21 +23,21 @@ MyQWhatsThisClickedEvent(const QString & href) : QWhatsThisClickedEvent(href) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:713
 // [-2] void QWhatsThisClickedEvent(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QWhatsThisClickedEventC2ERK7QString(QString* href) {
   return  new QWhatsThisClickedEvent(*href);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:714
 // [-2] void ~QWhatsThisClickedEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QWhatsThisClickedEventD2Ev(void *this_) {
   delete (QWhatsThisClickedEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:716
 // [8] QString href()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK22QWhatsThisClickedEvent4hrefEv(void *this_) {
   auto rv = ((QWhatsThisClickedEvent*)this_)->href();
 return new QString(rv);

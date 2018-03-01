@@ -25,12 +25,12 @@ MyQStyleOptionProgressBar(int version) : QStyleOptionProgressBar(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:342
 // [-2] void QStyleOptionProgressBar()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleOptionProgressBarC2Ev() {
   return  new QStyleOptionProgressBar();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QStyleOptionProgressBarD2Ev(void *this_) {
   delete (QStyleOptionProgressBar*)(this_);
 }

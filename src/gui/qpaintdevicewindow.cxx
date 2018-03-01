@@ -71,7 +71,7 @@ public:
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:69
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::paintEvent(event);
 }
@@ -79,7 +79,7 @@ void C_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void *this_, QPaintEven
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:71
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
   return (int)((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::metric(metric);
 }
@@ -87,7 +87,7 @@ int C_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *t
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:72
 // [-2] void exposeEvent(class QExposeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void *this_, QExposeEvent * arg0) {
   ((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::exposeEvent(arg0);
 }
@@ -95,7 +95,7 @@ void C_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void *this_, QExposeE
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:73
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN18QPaintDeviceWindow5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::event(event);
 }
@@ -103,7 +103,7 @@ bool C_ZN18QPaintDeviceWindow5eventEP6QEvent(void *this_, QEvent * event) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QPaintDeviceWindow10metaObjectEv(void *this_) {
   return (void*)((QPaintDeviceWindow*)this_)->metaObject();
 }
@@ -111,7 +111,7 @@ void* C_ZNK18QPaintDeviceWindow10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:58
 // [-2] void update(const class QRect &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QPaintDeviceWindow6updateERK5QRect(void *this_, QRect* rect) {
   ((QPaintDeviceWindow*)this_)->update(*rect);
 }
@@ -119,7 +119,7 @@ void C_ZN18QPaintDeviceWindow6updateERK5QRect(void *this_, QRect* rect) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:59
 // [-2] void update(const class QRegion &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *this_, QRegion* region) {
   ((QPaintDeviceWindow*)this_)->update(*region);
 }
@@ -127,13 +127,13 @@ void C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *this_, QRegion* region) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:66
 // [-2] void update()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QPaintDeviceWindow6updateEv(void *this_) {
   ((QPaintDeviceWindow*)this_)->update();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QPaintDeviceWindowD2Ev(void *this_) {
   delete (QPaintDeviceWindow*)(this_);
 }

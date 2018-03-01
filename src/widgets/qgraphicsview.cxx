@@ -330,7 +330,7 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:236
 // [-2] void setupViewport(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13setupViewportEP7QWidget(void *this_, QWidget * widget) {
   ((QGraphicsView*)this_)->QGraphicsView::setupViewport(widget);
 }
@@ -338,7 +338,7 @@ void C_ZN13QGraphicsView13setupViewportEP7QWidget(void *this_, QWidget * widget)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:240
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN13QGraphicsView5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QGraphicsView*)this_)->QGraphicsView::event(event);
 }
@@ -346,7 +346,7 @@ bool C_ZN13QGraphicsView5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:241
 // [1] bool viewportEvent(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN13QGraphicsView13viewportEventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QGraphicsView*)this_)->QGraphicsView::viewportEvent(event);
 }
@@ -354,7 +354,7 @@ bool C_ZN13QGraphicsView13viewportEventEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:244
 // [-2] void contextMenuEvent(class QContextMenuEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::contextMenuEvent(event);
 }
@@ -362,7 +362,7 @@ void C_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent(void *this_, QCo
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:247
 // [-2] void dragEnterEvent(class QDragEnterEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::dragEnterEvent(event);
 }
@@ -370,7 +370,7 @@ void C_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEn
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:248
 // [-2] void dragLeaveEvent(class QDragLeaveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::dragLeaveEvent(event);
 }
@@ -378,7 +378,7 @@ void C_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLe
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:249
 // [-2] void dragMoveEvent(class QDragMoveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::dragMoveEvent(event);
 }
@@ -386,7 +386,7 @@ void C_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMove
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:250
 // [-2] void dropEvent(class QDropEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::dropEvent(event);
 }
@@ -394,7 +394,7 @@ void C_ZN13QGraphicsView9dropEventEP10QDropEvent(void *this_, QDropEvent * event
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:252
 // [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::focusInEvent(event);
 }
@@ -402,7 +402,7 @@ void C_ZN13QGraphicsView12focusInEventEP11QFocusEvent(void *this_, QFocusEvent *
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:253
 // [1] bool focusNextPrevChild(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN13QGraphicsView18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QGraphicsView*)this_)->QGraphicsView::focusNextPrevChild(next);
 }
@@ -410,7 +410,7 @@ bool C_ZN13QGraphicsView18focusNextPrevChildEb(void *this_, bool next) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:254
 // [-2] void focusOutEvent(class QFocusEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::focusOutEvent(event);
 }
@@ -418,7 +418,7 @@ void C_ZN13QGraphicsView13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:255
 // [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::keyPressEvent(event);
 }
@@ -426,7 +426,7 @@ void C_ZN13QGraphicsView13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * eve
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:256
 // [-2] void keyReleaseEvent(class QKeyEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::keyReleaseEvent(event);
 }
@@ -434,7 +434,7 @@ void C_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * e
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:257
 // [-2] void mouseDoubleClickEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::mouseDoubleClickEvent(event);
 }
@@ -442,7 +442,7 @@ void C_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMou
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:258
 // [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::mousePressEvent(event);
 }
@@ -450,7 +450,7 @@ void C_ZN13QGraphicsView15mousePressEventEP11QMouseEvent(void *this_, QMouseEven
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:259
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::mouseMoveEvent(event);
 }
@@ -458,7 +458,7 @@ void C_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:260
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::mouseReleaseEvent(event);
 }
@@ -466,7 +466,7 @@ void C_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEv
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:262
 // [-2] void wheelEvent(class QWheelEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::wheelEvent(event);
 }
@@ -474,7 +474,7 @@ void C_ZN13QGraphicsView10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:264
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::paintEvent(event);
 }
@@ -482,7 +482,7 @@ void C_ZN13QGraphicsView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:265
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::resizeEvent(event);
 }
@@ -490,7 +490,7 @@ void C_ZN13QGraphicsView11resizeEventEP12QResizeEvent(void *this_, QResizeEvent 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:266
 // [-2] void scrollContentsBy(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView16scrollContentsByEii(void *this_, int dx, int dy) {
   ((QGraphicsView*)this_)->QGraphicsView::scrollContentsBy(dx, dy);
 }
@@ -498,7 +498,7 @@ void C_ZN13QGraphicsView16scrollContentsByEii(void *this_, int dx, int dy) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:267
 // [-2] void showEvent(class QShowEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::showEvent(event);
 }
@@ -506,7 +506,7 @@ void C_ZN13QGraphicsView9showEventEP10QShowEvent(void *this_, QShowEvent * event
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:268
 // [-2] void inputMethodEvent(class QInputMethodEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * event) {
   ((QGraphicsView*)this_)->QGraphicsView::inputMethodEvent(event);
 }
@@ -514,7 +514,7 @@ void C_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent(void *this_, QIn
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:270
 // [-2] void drawBackground(class QPainter *, const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF(void *this_, QPainter * painter, QRectF* rect) {
   ((QGraphicsView*)this_)->QGraphicsView::drawBackground(painter, *rect);
 }
@@ -522,7 +522,7 @@ void C_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF(void *this_, QPaint
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:271
 // [-2] void drawForeground(class QPainter *, const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF(void *this_, QPainter * painter, QRectF* rect) {
   ((QGraphicsView*)this_)->QGraphicsView::drawForeground(painter, *rect);
 }
@@ -530,7 +530,7 @@ void C_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF(void *this_, QPaint
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:61
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10metaObjectEv(void *this_) {
   return (void*)((QGraphicsView*)this_)->metaObject();
 }
@@ -538,7 +538,7 @@ void* C_ZNK13QGraphicsView10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:117
 // [-2] void QGraphicsView(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QGraphicsViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQGraphicsView*)(0);
   return  new MyQGraphicsView(parent);
@@ -546,7 +546,7 @@ void* C_ZN13QGraphicsViewC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:118
 // [-2] void QGraphicsView(class QGraphicsScene *, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QGraphicsViewC2EP14QGraphicsSceneP7QWidget(QGraphicsScene * scene, QWidget * parent) {
   auto _nilp = (MyQGraphicsView*)(0);
   return  new MyQGraphicsView(scene, parent);
@@ -554,14 +554,14 @@ void* C_ZN13QGraphicsViewC2EP14QGraphicsSceneP7QWidget(QGraphicsScene * scene, Q
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:119
 // [-2] void ~QGraphicsView()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsViewD2Ev(void *this_) {
   delete (QGraphicsView*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:121
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView8sizeHintEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->sizeHint();
 return new QSize(rv);
@@ -570,7 +570,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:123
 // [4] QPainter::RenderHints renderHints()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QPainter::RenderHints C_ZNK13QGraphicsView11renderHintsEv(void *this_) {
   return (QPainter::RenderHints)((QGraphicsView*)this_)->renderHints();
 }
@@ -578,7 +578,7 @@ QPainter::RenderHints C_ZNK13QGraphicsView11renderHintsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:124
 // [-2] void setRenderHint(class QPainter::RenderHint, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13setRenderHintEN8QPainter10RenderHintEb(void *this_, QPainter::RenderHint hint, bool enabled) {
   ((QGraphicsView*)this_)->setRenderHint(hint, enabled);
 }
@@ -586,7 +586,7 @@ void C_ZN13QGraphicsView13setRenderHintEN8QPainter10RenderHintEb(void *this_, QP
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:125
 // [-2] void setRenderHints(class QPainter::RenderHints)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14setRenderHintsE6QFlagsIN8QPainter10RenderHintEE(void *this_, QFlags<QPainter::RenderHint> hints) {
   ((QGraphicsView*)this_)->setRenderHints(hints);
 }
@@ -594,7 +594,7 @@ void C_ZN13QGraphicsView14setRenderHintsE6QFlagsIN8QPainter10RenderHintEE(void *
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:127
 // [4] Qt::Alignment alignment()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::Alignment C_ZNK13QGraphicsView9alignmentEv(void *this_) {
   return (Qt::Alignment)((QGraphicsView*)this_)->alignment();
 }
@@ -602,7 +602,7 @@ Qt::Alignment C_ZNK13QGraphicsView9alignmentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:128
 // [-2] void setAlignment(Qt::Alignment)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
   ((QGraphicsView*)this_)->setAlignment(alignment);
 }
@@ -610,7 +610,7 @@ void C_ZN13QGraphicsView12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:130
 // [4] QGraphicsView::ViewportAnchor transformationAnchor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGraphicsView::ViewportAnchor C_ZNK13QGraphicsView20transformationAnchorEv(void *this_) {
   return (QGraphicsView::ViewportAnchor)((QGraphicsView*)this_)->transformationAnchor();
 }
@@ -618,7 +618,7 @@ QGraphicsView::ViewportAnchor C_ZNK13QGraphicsView20transformationAnchorEv(void 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:131
 // [-2] void setTransformationAnchor(enum QGraphicsView::ViewportAnchor)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView23setTransformationAnchorENS_14ViewportAnchorE(void *this_, QGraphicsView::ViewportAnchor anchor) {
   ((QGraphicsView*)this_)->setTransformationAnchor(anchor);
 }
@@ -626,7 +626,7 @@ void C_ZN13QGraphicsView23setTransformationAnchorENS_14ViewportAnchorE(void *thi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:133
 // [4] QGraphicsView::ViewportAnchor resizeAnchor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGraphicsView::ViewportAnchor C_ZNK13QGraphicsView12resizeAnchorEv(void *this_) {
   return (QGraphicsView::ViewportAnchor)((QGraphicsView*)this_)->resizeAnchor();
 }
@@ -634,7 +634,7 @@ QGraphicsView::ViewportAnchor C_ZNK13QGraphicsView12resizeAnchorEv(void *this_) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:134
 // [-2] void setResizeAnchor(enum QGraphicsView::ViewportAnchor)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView15setResizeAnchorENS_14ViewportAnchorE(void *this_, QGraphicsView::ViewportAnchor anchor) {
   ((QGraphicsView*)this_)->setResizeAnchor(anchor);
 }
@@ -642,7 +642,7 @@ void C_ZN13QGraphicsView15setResizeAnchorENS_14ViewportAnchorE(void *this_, QGra
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:136
 // [4] QGraphicsView::ViewportUpdateMode viewportUpdateMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGraphicsView::ViewportUpdateMode C_ZNK13QGraphicsView18viewportUpdateModeEv(void *this_) {
   return (QGraphicsView::ViewportUpdateMode)((QGraphicsView*)this_)->viewportUpdateMode();
 }
@@ -650,7 +650,7 @@ QGraphicsView::ViewportUpdateMode C_ZNK13QGraphicsView18viewportUpdateModeEv(voi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:137
 // [-2] void setViewportUpdateMode(enum QGraphicsView::ViewportUpdateMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView21setViewportUpdateModeENS_18ViewportUpdateModeE(void *this_, QGraphicsView::ViewportUpdateMode mode) {
   ((QGraphicsView*)this_)->setViewportUpdateMode(mode);
 }
@@ -658,7 +658,7 @@ void C_ZN13QGraphicsView21setViewportUpdateModeENS_18ViewportUpdateModeE(void *t
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:139
 // [4] QGraphicsView::OptimizationFlags optimizationFlags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGraphicsView::OptimizationFlags* C_ZNK13QGraphicsView17optimizationFlagsEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->optimizationFlags();
 return new QGraphicsView::OptimizationFlags(rv);
@@ -667,7 +667,7 @@ return new QGraphicsView::OptimizationFlags(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:140
 // [-2] void setOptimizationFlag(enum QGraphicsView::OptimizationFlag, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView19setOptimizationFlagENS_16OptimizationFlagEb(void *this_, QGraphicsView::OptimizationFlag flag, bool enabled) {
   ((QGraphicsView*)this_)->setOptimizationFlag(flag, enabled);
 }
@@ -675,7 +675,7 @@ void C_ZN13QGraphicsView19setOptimizationFlagENS_16OptimizationFlagEb(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:141
 // [-2] void setOptimizationFlags(QGraphicsView::OptimizationFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView20setOptimizationFlagsE6QFlagsINS_16OptimizationFlagEE(void *this_, QFlags<QGraphicsView::OptimizationFlag> flags) {
   ((QGraphicsView*)this_)->setOptimizationFlags(flags);
 }
@@ -683,7 +683,7 @@ void C_ZN13QGraphicsView20setOptimizationFlagsE6QFlagsINS_16OptimizationFlagEE(v
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:143
 // [4] QGraphicsView::DragMode dragMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGraphicsView::DragMode C_ZNK13QGraphicsView8dragModeEv(void *this_) {
   return (QGraphicsView::DragMode)((QGraphicsView*)this_)->dragMode();
 }
@@ -691,7 +691,7 @@ QGraphicsView::DragMode C_ZNK13QGraphicsView8dragModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:144
 // [-2] void setDragMode(enum QGraphicsView::DragMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView11setDragModeENS_8DragModeE(void *this_, QGraphicsView::DragMode mode) {
   ((QGraphicsView*)this_)->setDragMode(mode);
 }
@@ -699,7 +699,7 @@ void C_ZN13QGraphicsView11setDragModeENS_8DragModeE(void *this_, QGraphicsView::
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:147
 // [4] Qt::ItemSelectionMode rubberBandSelectionMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::ItemSelectionMode C_ZNK13QGraphicsView23rubberBandSelectionModeEv(void *this_) {
   return (Qt::ItemSelectionMode)((QGraphicsView*)this_)->rubberBandSelectionMode();
 }
@@ -707,7 +707,7 @@ Qt::ItemSelectionMode C_ZNK13QGraphicsView23rubberBandSelectionModeEv(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:148
 // [-2] void setRubberBandSelectionMode(Qt::ItemSelectionMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView26setRubberBandSelectionModeEN2Qt17ItemSelectionModeE(void *this_, Qt::ItemSelectionMode mode) {
   ((QGraphicsView*)this_)->setRubberBandSelectionMode(mode);
 }
@@ -715,7 +715,7 @@ void C_ZN13QGraphicsView26setRubberBandSelectionModeEN2Qt17ItemSelectionModeE(vo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:149
 // [16] QRect rubberBandRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView14rubberBandRectEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->rubberBandRect();
 return new QRect(rv);
@@ -724,7 +724,7 @@ return new QRect(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:152
 // [4] QGraphicsView::CacheMode cacheMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGraphicsView::CacheMode* C_ZNK13QGraphicsView9cacheModeEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->cacheMode();
 return new QGraphicsView::CacheMode(rv);
@@ -733,7 +733,7 @@ return new QGraphicsView::CacheMode(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:153
 // [-2] void setCacheMode(QGraphicsView::CacheMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView12setCacheModeE6QFlagsINS_13CacheModeFlagEE(void *this_, QFlags<QGraphicsView::CacheModeFlag> mode) {
   ((QGraphicsView*)this_)->setCacheMode(mode);
 }
@@ -741,7 +741,7 @@ void C_ZN13QGraphicsView12setCacheModeE6QFlagsINS_13CacheModeFlagEE(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:154
 // [-2] void resetCachedContent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView18resetCachedContentEv(void *this_) {
   ((QGraphicsView*)this_)->resetCachedContent();
 }
@@ -749,7 +749,7 @@ void C_ZN13QGraphicsView18resetCachedContentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:156
 // [1] bool isInteractive()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsView13isInteractiveEv(void *this_) {
   return (bool)((QGraphicsView*)this_)->isInteractive();
 }
@@ -757,7 +757,7 @@ bool C_ZNK13QGraphicsView13isInteractiveEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:157
 // [-2] void setInteractive(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14setInteractiveEb(void *this_, bool allowed) {
   ((QGraphicsView*)this_)->setInteractive(allowed);
 }
@@ -765,7 +765,7 @@ void C_ZN13QGraphicsView14setInteractiveEb(void *this_, bool allowed) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:159
 // [8] QGraphicsScene * scene()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView5sceneEv(void *this_) {
   return (void*)((QGraphicsView*)this_)->scene();
 }
@@ -773,7 +773,7 @@ void* C_ZNK13QGraphicsView5sceneEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:160
 // [-2] void setScene(class QGraphicsScene *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView8setSceneEP14QGraphicsScene(void *this_, QGraphicsScene * scene) {
   ((QGraphicsView*)this_)->setScene(scene);
 }
@@ -781,7 +781,7 @@ void C_ZN13QGraphicsView8setSceneEP14QGraphicsScene(void *this_, QGraphicsScene 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:162
 // [32] QRectF sceneRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView9sceneRectEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->sceneRect();
 return new QRectF(rv);
@@ -790,7 +790,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:163
 // [-2] void setSceneRect(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView12setSceneRectERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsView*)this_)->setSceneRect(*rect);
 }
@@ -798,7 +798,7 @@ void C_ZN13QGraphicsView12setSceneRectERK6QRectF(void *this_, QRectF* rect) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:164
 // [-2] void setSceneRect(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView12setSceneRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   ((QGraphicsView*)this_)->setSceneRect(x, y, w, h);
 }
@@ -806,7 +806,7 @@ void C_ZN13QGraphicsView12setSceneRectEdddd(void *this_, qreal x, qreal y, qreal
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:166
 // [48] QMatrix matrix()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView6matrixEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->matrix();
 return new QMatrix(rv);
@@ -815,7 +815,7 @@ return new QMatrix(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:167
 // [-2] void setMatrix(const class QMatrix &, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9setMatrixERK7QMatrixb(void *this_, QMatrix* matrix, bool combine) {
   ((QGraphicsView*)this_)->setMatrix(*matrix, combine);
 }
@@ -823,7 +823,7 @@ void C_ZN13QGraphicsView9setMatrixERK7QMatrixb(void *this_, QMatrix* matrix, boo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:168
 // [-2] void resetMatrix()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView11resetMatrixEv(void *this_) {
   ((QGraphicsView*)this_)->resetMatrix();
 }
@@ -831,7 +831,7 @@ void C_ZN13QGraphicsView11resetMatrixEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:169
 // [88] QTransform transform()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView9transformEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->transform();
 return new QTransform(rv);
@@ -840,7 +840,7 @@ return new QTransform(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:170
 // [88] QTransform viewportTransform()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView17viewportTransformEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->viewportTransform();
 return new QTransform(rv);
@@ -849,7 +849,7 @@ return new QTransform(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:171
 // [1] bool isTransformed()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsView13isTransformedEv(void *this_) {
   return (bool)((QGraphicsView*)this_)->isTransformed();
 }
@@ -857,7 +857,7 @@ bool C_ZNK13QGraphicsView13isTransformedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:172
 // [-2] void setTransform(const class QTransform &, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView12setTransformERK10QTransformb(void *this_, QTransform* matrix, bool combine) {
   ((QGraphicsView*)this_)->setTransform(*matrix, combine);
 }
@@ -865,7 +865,7 @@ void C_ZN13QGraphicsView12setTransformERK10QTransformb(void *this_, QTransform* 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:173
 // [-2] void resetTransform()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14resetTransformEv(void *this_) {
   ((QGraphicsView*)this_)->resetTransform();
 }
@@ -873,7 +873,7 @@ void C_ZN13QGraphicsView14resetTransformEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:174
 // [-2] void rotate(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView6rotateEd(void *this_, qreal angle) {
   ((QGraphicsView*)this_)->rotate(angle);
 }
@@ -881,7 +881,7 @@ void C_ZN13QGraphicsView6rotateEd(void *this_, qreal angle) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:175
 // [-2] void scale(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView5scaleEdd(void *this_, qreal sx, qreal sy) {
   ((QGraphicsView*)this_)->scale(sx, sy);
 }
@@ -889,7 +889,7 @@ void C_ZN13QGraphicsView5scaleEdd(void *this_, qreal sx, qreal sy) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:176
 // [-2] void shear(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView5shearEdd(void *this_, qreal sh, qreal sv) {
   ((QGraphicsView*)this_)->shear(sh, sv);
 }
@@ -897,7 +897,7 @@ void C_ZN13QGraphicsView5shearEdd(void *this_, qreal sh, qreal sv) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:177
 // [-2] void translate(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9translateEdd(void *this_, qreal dx, qreal dy) {
   ((QGraphicsView*)this_)->translate(dx, dy);
 }
@@ -905,7 +905,7 @@ void C_ZN13QGraphicsView9translateEdd(void *this_, qreal dx, qreal dy) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:179
 // [-2] void centerOn(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView8centerOnERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsView*)this_)->centerOn(*pos);
 }
@@ -913,7 +913,7 @@ void C_ZN13QGraphicsView8centerOnERK7QPointF(void *this_, QPointF* pos) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:180
 // [-2] void centerOn(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView8centerOnEdd(void *this_, qreal x, qreal y) {
   ((QGraphicsView*)this_)->centerOn(x, y);
 }
@@ -921,7 +921,7 @@ void C_ZN13QGraphicsView8centerOnEdd(void *this_, qreal x, qreal y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:181
 // [-2] void centerOn(const class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView8centerOnEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   ((QGraphicsView*)this_)->centerOn(item);
 }
@@ -929,7 +929,7 @@ void C_ZN13QGraphicsView8centerOnEPK13QGraphicsItem(void *this_, const QGraphics
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:182
 // [-2] void ensureVisible(const class QRectF &, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13ensureVisibleERK6QRectFii(void *this_, QRectF* rect, int xmargin, int ymargin) {
   ((QGraphicsView*)this_)->ensureVisible(*rect, xmargin, ymargin);
 }
@@ -937,7 +937,7 @@ void C_ZN13QGraphicsView13ensureVisibleERK6QRectFii(void *this_, QRectF* rect, i
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:183
 // [-2] void ensureVisible(qreal, qreal, qreal, qreal, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13ensureVisibleEddddii(void *this_, qreal x, qreal y, qreal w, qreal h, int xmargin, int ymargin) {
   ((QGraphicsView*)this_)->ensureVisible(x, y, w, h, xmargin, ymargin);
 }
@@ -945,7 +945,7 @@ void C_ZN13QGraphicsView13ensureVisibleEddddii(void *this_, qreal x, qreal y, qr
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:184
 // [-2] void ensureVisible(const class QGraphicsItem *, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView13ensureVisibleEPK13QGraphicsItemii(void *this_, const QGraphicsItem * item, int xmargin, int ymargin) {
   ((QGraphicsView*)this_)->ensureVisible(item, xmargin, ymargin);
 }
@@ -953,7 +953,7 @@ void C_ZN13QGraphicsView13ensureVisibleEPK13QGraphicsItemii(void *this_, const Q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:185
 // [-2] void fitInView(const class QRectF &, Qt::AspectRatioMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9fitInViewERK6QRectFN2Qt15AspectRatioModeE(void *this_, QRectF* rect, Qt::AspectRatioMode aspectRadioMode) {
   ((QGraphicsView*)this_)->fitInView(*rect, aspectRadioMode);
 }
@@ -961,7 +961,7 @@ void C_ZN13QGraphicsView9fitInViewERK6QRectFN2Qt15AspectRatioModeE(void *this_, 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:186
 // [-2] void fitInView(qreal, qreal, qreal, qreal, Qt::AspectRatioMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9fitInViewEddddN2Qt15AspectRatioModeE(void *this_, qreal x, qreal y, qreal w, qreal h, Qt::AspectRatioMode aspectRadioMode) {
   ((QGraphicsView*)this_)->fitInView(x, y, w, h, aspectRadioMode);
 }
@@ -969,7 +969,7 @@ void C_ZN13QGraphicsView9fitInViewEddddN2Qt15AspectRatioModeE(void *this_, qreal
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:188
 // [-2] void fitInView(const class QGraphicsItem *, Qt::AspectRatioMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView9fitInViewEPK13QGraphicsItemN2Qt15AspectRatioModeE(void *this_, const QGraphicsItem * item, Qt::AspectRatioMode aspectRadioMode) {
   ((QGraphicsView*)this_)->fitInView(item, aspectRadioMode);
 }
@@ -977,7 +977,7 @@ void C_ZN13QGraphicsView9fitInViewEPK13QGraphicsItemN2Qt15AspectRatioModeE(void 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:191
 // [-2] void render(class QPainter *, const class QRectF &, const class QRect &, Qt::AspectRatioMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView6renderEP8QPainterRK6QRectFRK5QRectN2Qt15AspectRatioModeE(void *this_, QPainter * painter, QRectF* target, QRect* source, Qt::AspectRatioMode aspectRatioMode) {
   ((QGraphicsView*)this_)->render(painter, *target, *source, aspectRatioMode);
 }
@@ -985,7 +985,7 @@ void C_ZN13QGraphicsView6renderEP8QPainterRK6QRectFRK5QRectN2Qt15AspectRatioMode
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:201
 // [8] QGraphicsItem * itemAt(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView6itemAtERK6QPoint(void *this_, QPoint* pos) {
   return (void*)((QGraphicsView*)this_)->itemAt(*pos);
 }
@@ -993,7 +993,7 @@ void* C_ZNK13QGraphicsView6itemAtERK6QPoint(void *this_, QPoint* pos) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:202
 // [8] QGraphicsItem * itemAt(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView6itemAtEii(void *this_, int x, int y) {
   return (void*)((QGraphicsView*)this_)->itemAt(x, y);
 }
@@ -1001,7 +1001,7 @@ void* C_ZNK13QGraphicsView6itemAtEii(void *this_, int x, int y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:204
 // [16] QPointF mapToScene(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10mapToSceneERK6QPoint(void *this_, QPoint* point) {
   auto rv = ((QGraphicsView*)this_)->mapToScene(*point);
 return new QPointF(rv);
@@ -1010,7 +1010,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:205
 // [8] QPolygonF mapToScene(const class QRect &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10mapToSceneERK5QRect(void *this_, QRect* rect) {
   auto rv = ((QGraphicsView*)this_)->mapToScene(*rect);
 return new QPolygonF(rv);
@@ -1019,7 +1019,7 @@ return new QPolygonF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:206
 // [8] QPolygonF mapToScene(const class QPolygon &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10mapToSceneERK8QPolygon(void *this_, QPolygon* polygon) {
   auto rv = ((QGraphicsView*)this_)->mapToScene(*polygon);
 return new QPolygonF(rv);
@@ -1028,7 +1028,7 @@ return new QPolygonF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:207
 // [8] QPainterPath mapToScene(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10mapToSceneERK12QPainterPath(void *this_, QPainterPath* path) {
   auto rv = ((QGraphicsView*)this_)->mapToScene(*path);
 return new QPainterPath(rv);
@@ -1037,7 +1037,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:208
 // [8] QPoint mapFromScene(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView12mapFromSceneERK7QPointF(void *this_, QPointF* point) {
   auto rv = ((QGraphicsView*)this_)->mapFromScene(*point);
 return new QPoint(rv);
@@ -1046,7 +1046,7 @@ return new QPoint(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:209
 // [8] QPolygon mapFromScene(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView12mapFromSceneERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QGraphicsView*)this_)->mapFromScene(*rect);
 return new QPolygon(rv);
@@ -1055,7 +1055,7 @@ return new QPolygon(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:210
 // [8] QPolygon mapFromScene(const class QPolygonF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView12mapFromSceneERK9QPolygonF(void *this_, QPolygonF* polygon) {
   auto rv = ((QGraphicsView*)this_)->mapFromScene(*polygon);
 return new QPolygon(rv);
@@ -1064,7 +1064,7 @@ return new QPolygon(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:211
 // [8] QPainterPath mapFromScene(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView12mapFromSceneERK12QPainterPath(void *this_, QPainterPath* path) {
   auto rv = ((QGraphicsView*)this_)->mapFromScene(*path);
 return new QPainterPath(rv);
@@ -1073,7 +1073,7 @@ return new QPainterPath(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:212
 // [16] QPointF mapToScene(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10mapToSceneEii(void *this_, int x, int y) {
   auto rv = ((QGraphicsView*)this_)->mapToScene(x, y);
 return new QPointF(rv);
@@ -1082,7 +1082,7 @@ return new QPointF(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:213
 // [8] QPolygonF mapToScene(int, int, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView10mapToSceneEiiii(void *this_, int x, int y, int w, int h) {
   auto rv = ((QGraphicsView*)this_)->mapToScene(x, y, w, h);
 return new QPolygonF(rv);
@@ -1091,7 +1091,7 @@ return new QPolygonF(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:214
 // [8] QPoint mapFromScene(qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView12mapFromSceneEdd(void *this_, qreal x, qreal y) {
   auto rv = ((QGraphicsView*)this_)->mapFromScene(x, y);
 return new QPoint(rv);
@@ -1100,7 +1100,7 @@ return new QPoint(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:215
 // [8] QPolygon mapFromScene(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView12mapFromSceneEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsView*)this_)->mapFromScene(x, y, w, h);
 return new QPolygon(rv);
@@ -1109,7 +1109,7 @@ return new QPolygon(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:217
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery query) {
   auto rv = ((QGraphicsView*)this_)->inputMethodQuery(query);
 return new QVariant(rv);
@@ -1118,7 +1118,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:219
 // [8] QBrush backgroundBrush()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView15backgroundBrushEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->backgroundBrush();
 return new QBrush(rv);
@@ -1127,7 +1127,7 @@ return new QBrush(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:220
 // [-2] void setBackgroundBrush(const class QBrush &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView18setBackgroundBrushERK6QBrush(void *this_, QBrush* brush) {
   ((QGraphicsView*)this_)->setBackgroundBrush(*brush);
 }
@@ -1135,7 +1135,7 @@ void C_ZN13QGraphicsView18setBackgroundBrushERK6QBrush(void *this_, QBrush* brus
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:222
 // [8] QBrush foregroundBrush()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView15foregroundBrushEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->foregroundBrush();
 return new QBrush(rv);
@@ -1144,7 +1144,7 @@ return new QBrush(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:223
 // [-2] void setForegroundBrush(const class QBrush &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView18setForegroundBrushERK6QBrush(void *this_, QBrush* brush) {
   ((QGraphicsView*)this_)->setForegroundBrush(*brush);
 }
@@ -1152,7 +1152,7 @@ void C_ZN13QGraphicsView18setForegroundBrushERK6QBrush(void *this_, QBrush* brus
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:227
 // [-2] void invalidateScene(const class QRectF &, class QGraphicsScene::SceneLayers)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView15invalidateSceneERK6QRectF6QFlagsIN14QGraphicsScene10SceneLayerEE(void *this_, QRectF* rect, QFlags<QGraphicsScene::SceneLayer> layers) {
   ((QGraphicsView*)this_)->invalidateScene(*rect, layers);
 }
@@ -1160,7 +1160,7 @@ void C_ZN13QGraphicsView15invalidateSceneERK6QRectF6QFlagsIN14QGraphicsScene10Sc
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:228
 // [-2] void updateSceneRect(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView15updateSceneRectERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsView*)this_)->updateSceneRect(*rect);
 }
@@ -1168,7 +1168,7 @@ void C_ZN13QGraphicsView15updateSceneRectERK6QRectF(void *this_, QRectF* rect) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:232
 // [-2] void rubberBandChanged(class QRect, class QPointF, class QPointF)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(void *this_, QRect* viewportRect, QPointF* fromScenePoint, QPointF* toScenePoint) {
   ((QGraphicsView*)this_)->rubberBandChanged(*viewportRect, *fromScenePoint, *toScenePoint);
 }

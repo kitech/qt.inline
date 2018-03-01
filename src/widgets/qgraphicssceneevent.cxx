@@ -23,21 +23,21 @@ MyQGraphicsSceneEvent(QEvent::Type type_) : QGraphicsSceneEvent(type_) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:67
 // [-2] void QGraphicsSceneEvent(enum QEvent::Type)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsSceneEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:68
 // [-2] void ~QGraphicsSceneEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsSceneEventD2Ev(void *this_) {
   delete (QGraphicsSceneEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:70
 // [8] QWidget * widget()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
   return (void*)((QGraphicsSceneEvent*)this_)->widget();
 }
@@ -45,7 +45,7 @@ void* C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:71
 // [-2] void setWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsSceneEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QGraphicsSceneEvent*)this_)->setWidget(widget);
 }

@@ -27,28 +27,28 @@ MyQTextDocumentFragment(const QTextCursor & range_) : QTextDocumentFragment(rang
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:57
 // [-2] void QTextDocumentFragment()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentC2Ev() {
   return  new QTextDocumentFragment();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:58
 // [-2] void QTextDocumentFragment(const class QTextDocument *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentC2EPK13QTextDocument(const QTextDocument * document) {
   return  new QTextDocumentFragment(document);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:59
 // [-2] void QTextDocumentFragment(const class QTextCursor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(QTextCursor* range_) {
   return  new QTextDocumentFragment(*range_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:61
 // [8] QTextDocumentFragment & operator=(const class QTextDocumentFragment &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentaSERKS_(void *this_, QTextDocumentFragment* rhs) {
   auto& rv = ((QTextDocumentFragment*)this_)->operator=(*rhs);
 return &rv;
@@ -57,14 +57,14 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:62
 // [-2] void ~QTextDocumentFragment()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QTextDocumentFragmentD2Ev(void *this_) {
   delete (QTextDocumentFragment*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:64
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK21QTextDocumentFragment7isEmptyEv(void *this_) {
   return (bool)((QTextDocumentFragment*)this_)->isEmpty();
 }
@@ -72,7 +72,7 @@ bool C_ZNK21QTextDocumentFragment7isEmptyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:66
 // [8] QString toPlainText()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK21QTextDocumentFragment11toPlainTextEv(void *this_) {
   auto rv = ((QTextDocumentFragment*)this_)->toPlainText();
 return new QString(rv);
@@ -81,7 +81,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:68
 // [8] QString toHtml(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK21QTextDocumentFragment6toHtmlERK10QByteArray(void *this_, QByteArray* encoding) {
   auto rv = ((QTextDocumentFragment*)this_)->toHtml(*encoding);
 return new QString(rv);
@@ -90,7 +90,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:71
 // [8] QTextDocumentFragment fromPlainText(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragment13fromPlainTextERK7QString(QString* plainText) {
   auto rv = QTextDocumentFragment::fromPlainText(*plainText);
 return new QTextDocumentFragment(rv);
@@ -98,7 +98,7 @@ return new QTextDocumentFragment(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:73
 // [8] QTextDocumentFragment fromHtml(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragment8fromHtmlERK7QString(QString* html) {
   auto rv = QTextDocumentFragment::fromHtml(*html);
 return new QTextDocumentFragment(rv);
@@ -106,7 +106,7 @@ return new QTextDocumentFragment(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:74
 // [8] QTextDocumentFragment fromHtml(const class QString &, const class QTextDocument *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragment8fromHtmlERK7QStringPK13QTextDocument(QString* html, const QTextDocument * resourceProvider) {
   auto rv = QTextDocumentFragment::fromHtml(*html, resourceProvider);
 return new QTextDocumentFragment(rv);

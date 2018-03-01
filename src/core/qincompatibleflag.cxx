@@ -23,12 +23,12 @@ MyQIncompatibleFlag(int i) : QIncompatibleFlag(i) {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:80
 // [-2] void QIncompatibleFlag(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QIncompatibleFlagC2Ei(int i) {
   return  new QIncompatibleFlag(i);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QIncompatibleFlagD2Ev(void *this_) {
   delete (QIncompatibleFlag*)(this_);
 }

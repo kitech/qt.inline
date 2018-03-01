@@ -85,7 +85,7 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:88
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ev) {
   ((QSlider*)this_)->QSlider::paintEvent(ev);
 }
@@ -93,7 +93,7 @@ void C_ZN7QSlider10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ev) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:89
 // [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QSlider*)this_)->QSlider::mousePressEvent(ev);
 }
@@ -101,7 +101,7 @@ void C_ZN7QSlider15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:90
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QSlider*)this_)->QSlider::mouseReleaseEvent(ev);
 }
@@ -109,7 +109,7 @@ void C_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:91
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QSlider*)this_)->QSlider::mouseMoveEvent(ev);
 }
@@ -117,7 +117,7 @@ void C_ZN7QSlider14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:92
 // [-2] void initStyleOption(class QStyleOptionSlider *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(void *this_, QStyleOptionSlider * option) {
   ((QSlider*)this_)->QSlider::initStyleOption(option);
 }
@@ -125,7 +125,7 @@ void C_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(void *this_, QStyleOpt
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSlider10metaObjectEv(void *this_) {
   return (void*)((QSlider*)this_)->metaObject();
 }
@@ -133,7 +133,7 @@ void* C_ZNK7QSlider10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:71
 // [-2] void QSlider(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QSliderC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSlider*)(0);
   return  new MyQSlider(parent);
@@ -141,7 +141,7 @@ void* C_ZN7QSliderC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:72
 // [-2] void QSlider(Qt::Orientation, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
   auto _nilp = (MyQSlider*)(0);
   return  new MyQSlider(orientation, parent);
@@ -149,14 +149,14 @@ void* C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QW
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:74
 // [-2] void ~QSlider()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSliderD2Ev(void *this_) {
   delete (QSlider*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:76
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSlider8sizeHintEv(void *this_) {
   auto rv = ((QSlider*)this_)->sizeHint();
 return new QSize(rv);
@@ -165,7 +165,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:77
 // [8] QSize minimumSizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSlider15minimumSizeHintEv(void *this_) {
   auto rv = ((QSlider*)this_)->minimumSizeHint();
 return new QSize(rv);
@@ -174,7 +174,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:79
 // [-2] void setTickPosition(enum QSlider::TickPosition)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider15setTickPositionENS_12TickPositionE(void *this_, QSlider::TickPosition position) {
   ((QSlider*)this_)->setTickPosition(position);
 }
@@ -182,7 +182,7 @@ void C_ZN7QSlider15setTickPositionENS_12TickPositionE(void *this_, QSlider::Tick
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:80
 // [4] QSlider::TickPosition tickPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSlider::TickPosition C_ZNK7QSlider12tickPositionEv(void *this_) {
   return (QSlider::TickPosition)((QSlider*)this_)->tickPosition();
 }
@@ -190,7 +190,7 @@ QSlider::TickPosition C_ZNK7QSlider12tickPositionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:82
 // [-2] void setTickInterval(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider15setTickIntervalEi(void *this_, int ti) {
   ((QSlider*)this_)->setTickInterval(ti);
 }
@@ -198,7 +198,7 @@ void C_ZN7QSlider15setTickIntervalEi(void *this_, int ti) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:83
 // [4] int tickInterval()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK7QSlider12tickIntervalEv(void *this_) {
   return (int)((QSlider*)this_)->tickInterval();
 }
@@ -206,7 +206,7 @@ int C_ZNK7QSlider12tickIntervalEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:85
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN7QSlider5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QSlider*)this_)->event(event);
 }

@@ -21,12 +21,12 @@ public:
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qscopedpointer.h:81
 // [-2] void cleanup(void *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QScopedPointerPodDeleter7cleanupEPv(void * pointer) {
   QScopedPointerPodDeleter::cleanup(pointer);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QScopedPointerPodDeleterD2Ev(void *this_) {
   delete (QScopedPointerPodDeleter*)(this_);
 }

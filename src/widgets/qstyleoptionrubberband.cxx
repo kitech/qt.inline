@@ -25,12 +25,12 @@ MyQStyleOptionRubberBand(int version) : QStyleOptionRubberBand(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:491
 // [-2] void QStyleOptionRubberBand()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionRubberBandC2Ev() {
   return  new QStyleOptionRubberBand();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionRubberBandD2Ev(void *this_) {
   delete (QStyleOptionRubberBand*)(this_);
 }

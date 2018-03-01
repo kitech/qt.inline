@@ -25,21 +25,21 @@ MyQJsonValueRefPtr(QJsonObject * object, int idx) : QJsonValueRefPtr(object, idx
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:237
 // [-2] void QJsonValueRefPtr(class QJsonArray *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QJsonValueRefPtrC2EP10QJsonArrayi(QJsonArray * array, int idx) {
   return  new QJsonValueRefPtr(array, idx);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:239
 // [-2] void QJsonValueRefPtr(class QJsonObject *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QJsonValueRefPtrC2EP11QJsonObjecti(QJsonObject * object, int idx) {
   return  new QJsonValueRefPtr(object, idx);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:242
 // [16] QJsonValueRef & operator*()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QJsonValueRefPtrdeEv(void *this_) {
   auto& rv = ((QJsonValueRefPtr*)this_)->operator*();
 return &rv;
@@ -48,13 +48,13 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:243
 // [8] QJsonValueRef * operator->()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QJsonValueRefPtrptEv(void *this_) {
   return (void*)((QJsonValueRefPtr*)this_)->operator->();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QJsonValueRefPtrD2Ev(void *this_) {
   delete (QJsonValueRefPtr*)(this_);
 }

@@ -23,21 +23,21 @@ MyQSGRenderNode() : QSGRenderNode() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:82
 // [-2] void QSGRenderNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QSGRenderNodeC2Ev() {
   return 0; // new QSGRenderNode();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:83
 // [-2] void ~QSGRenderNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QSGRenderNodeD2Ev(void *this_) {
   delete (QSGRenderNode*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:85
 // [4] QSGRenderNode::StateFlags changedStates()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSGRenderNode::StateFlags* C_ZNK13QSGRenderNode13changedStatesEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->changedStates();
 return new QSGRenderNode::StateFlags(rv);
@@ -46,7 +46,7 @@ return new QSGRenderNode::StateFlags(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:87
 // [-2] void releaseResources()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QSGRenderNode16releaseResourcesEv(void *this_) {
   ((QSGRenderNode*)this_)->releaseResources();
 }
@@ -54,7 +54,7 @@ void C_ZN13QSGRenderNode16releaseResourcesEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:88
 // [4] QSGRenderNode::RenderingFlags flags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSGRenderNode::RenderingFlags* C_ZNK13QSGRenderNode5flagsEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->flags();
 return new QSGRenderNode::RenderingFlags(rv);
@@ -63,7 +63,7 @@ return new QSGRenderNode::RenderingFlags(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:89
 // [32] QRectF rect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QSGRenderNode4rectEv(void *this_) {
   auto rv = ((QSGRenderNode*)this_)->rect();
 return new QRectF(rv);
@@ -72,7 +72,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:91
 // [8] const QMatrix4x4 * matrix()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QSGRenderNode6matrixEv(void *this_) {
   return (void*)((QSGRenderNode*)this_)->matrix();
 }
@@ -80,7 +80,7 @@ void* C_ZNK13QSGRenderNode6matrixEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:92
 // [8] const QSGClipNode * clipList()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QSGRenderNode8clipListEv(void *this_) {
   return (void*)((QSGRenderNode*)this_)->clipList();
 }
@@ -88,7 +88,7 @@ void* C_ZNK13QSGRenderNode8clipListEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:93
 // [8] qreal inheritedOpacity()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QSGRenderNode16inheritedOpacityEv(void *this_) {
   return (qreal)((QSGRenderNode*)this_)->inheritedOpacity();
 }

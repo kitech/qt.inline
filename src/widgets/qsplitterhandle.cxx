@@ -121,7 +121,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:151
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::paintEvent(arg0);
 }
@@ -129,7 +129,7 @@ void C_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void *this_, QPaintEvent *
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:152
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::mouseMoveEvent(arg0);
 }
@@ -137,7 +137,7 @@ void C_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEve
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:153
 // [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::mousePressEvent(arg0);
 }
@@ -145,7 +145,7 @@ void C_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void *this_, QMouseEv
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:154
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::mouseReleaseEvent(arg0);
 }
@@ -153,7 +153,7 @@ void C_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void *this_, QMouse
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:155
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::resizeEvent(arg0);
 }
@@ -161,7 +161,7 @@ void C_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void *this_, QResizeEven
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:156
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN15QSplitterHandle5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QSplitterHandle*)this_)->QSplitterHandle::event(arg0);
 }
@@ -169,7 +169,7 @@ bool C_ZN15QSplitterHandle5eventEP6QEvent(void *this_, QEvent * arg0) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:158
 // [-2] void moveSplitter(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle12moveSplitterEi(void *this_, int p) {
   ((QSplitterHandle*)this_)->QSplitterHandle::moveSplitter(p);
 }
@@ -177,7 +177,7 @@ void C_ZN15QSplitterHandle12moveSplitterEi(void *this_, int p) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:159
 // [4] int closestLegalPosition(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN15QSplitterHandle20closestLegalPositionEi(void *this_, int p) {
   return (int)((QSplitterHandle*)this_)->QSplitterHandle::closestLegalPosition(p);
 }
@@ -185,7 +185,7 @@ int C_ZN15QSplitterHandle20closestLegalPositionEi(void *this_, int p) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:138
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSplitterHandle10metaObjectEv(void *this_) {
   return (void*)((QSplitterHandle*)this_)->metaObject();
 }
@@ -193,7 +193,7 @@ void* C_ZNK15QSplitterHandle10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:140
 // [-2] void QSplitterHandle(Qt::Orientation, class QSplitter *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN15QSplitterHandleC2EN2Qt11OrientationEP9QSplitter(Qt::Orientation o, QSplitter * parent) {
   auto _nilp = (MyQSplitterHandle*)(0);
   return  new MyQSplitterHandle(o, parent);
@@ -201,14 +201,14 @@ void* C_ZN15QSplitterHandleC2EN2Qt11OrientationEP9QSplitter(Qt::Orientation o, Q
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:141
 // [-2] void ~QSplitterHandle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandleD2Ev(void *this_) {
   delete (QSplitterHandle*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:143
 // [-2] void setOrientation(Qt::Orientation)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation o) {
   ((QSplitterHandle*)this_)->setOrientation(o);
 }
@@ -216,7 +216,7 @@ void C_ZN15QSplitterHandle14setOrientationEN2Qt11OrientationE(void *this_, Qt::O
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:144
 // [4] Qt::Orientation orientation()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::Orientation C_ZNK15QSplitterHandle11orientationEv(void *this_) {
   return (Qt::Orientation)((QSplitterHandle*)this_)->orientation();
 }
@@ -224,7 +224,7 @@ Qt::Orientation C_ZNK15QSplitterHandle11orientationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:145
 // [1] bool opaqueResize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK15QSplitterHandle12opaqueResizeEv(void *this_) {
   return (bool)((QSplitterHandle*)this_)->opaqueResize();
 }
@@ -232,7 +232,7 @@ bool C_ZNK15QSplitterHandle12opaqueResizeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:146
 // [8] QSplitter * splitter()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSplitterHandle8splitterEv(void *this_) {
   return (void*)((QSplitterHandle*)this_)->splitter();
 }
@@ -240,7 +240,7 @@ void* C_ZNK15QSplitterHandle8splitterEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:148
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSplitterHandle8sizeHintEv(void *this_) {
   auto rv = ((QSplitterHandle*)this_)->sizeHint();
 return new QSize(rv);

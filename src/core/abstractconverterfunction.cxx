@@ -19,7 +19,7 @@ public:
 };
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN25AbstractConverterFunctionD2Ev(void *this_) {
   delete (QtPrivate::AbstractConverterFunction*)(this_);
 }

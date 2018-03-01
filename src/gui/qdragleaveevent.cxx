@@ -23,14 +23,14 @@ MyQDragLeaveEvent() : QDragLeaveEvent() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:671
 // [-2] void QDragLeaveEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN15QDragLeaveEventC2Ev() {
   return  new QDragLeaveEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:672
 // [-2] void ~QDragLeaveEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QDragLeaveEventD2Ev(void *this_) {
   delete (QDragLeaveEvent*)(this_);
 }

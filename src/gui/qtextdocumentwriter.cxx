@@ -27,35 +27,35 @@ MyQTextDocumentWriter(const QString & fileName, const QByteArray & format) : QTe
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:57
 // [-2] void QTextDocumentWriter()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2Ev() {
   return  new QTextDocumentWriter();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:58
 // [-2] void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QTextDocumentWriter(device, *format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:59
 // [-2] void QTextDocumentWriter(const class QString &, const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QTextDocumentWriter(*fileName, *format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:60
 // [-2] void ~QTextDocumentWriter()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriterD2Ev(void *this_) {
   delete (QTextDocumentWriter*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:62
 // [-2] void setFormat(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QTextDocumentWriter*)this_)->setFormat(*format);
 }
@@ -63,7 +63,7 @@ void C_ZN19QTextDocumentWriter9setFormatERK10QByteArray(void *this_, QByteArray*
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:63
 // [8] QByteArray format()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QTextDocumentWriter6formatEv(void *this_) {
   auto rv = ((QTextDocumentWriter*)this_)->format();
 return new QByteArray(rv);
@@ -72,7 +72,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:65
 // [-2] void setDevice(class QIODevice *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QTextDocumentWriter*)this_)->setDevice(device);
 }
@@ -80,7 +80,7 @@ void C_ZN19QTextDocumentWriter9setDeviceEP9QIODevice(void *this_, QIODevice * de
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:66
 // [8] QIODevice * device()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QTextDocumentWriter6deviceEv(void *this_) {
   return (void*)((QTextDocumentWriter*)this_)->device();
 }
@@ -88,7 +88,7 @@ void* C_ZNK19QTextDocumentWriter6deviceEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:67
 // [-2] void setFileName(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QTextDocumentWriter*)this_)->setFileName(*fileName);
 }
@@ -96,7 +96,7 @@ void C_ZN19QTextDocumentWriter11setFileNameERK7QString(void *this_, QString* fil
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:68
 // [8] QString fileName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QTextDocumentWriter8fileNameEv(void *this_) {
   auto rv = ((QTextDocumentWriter*)this_)->fileName();
 return new QString(rv);
@@ -105,7 +105,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:70
 // [1] bool write(const class QTextDocument *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *this_, const QTextDocument * document) {
   return (bool)((QTextDocumentWriter*)this_)->write(document);
 }
@@ -113,7 +113,7 @@ bool C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *this_, const QTextD
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:71
 // [1] bool write(const class QTextDocumentFragment &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *this_, QTextDocumentFragment* fragment) {
   return (bool)((QTextDocumentWriter*)this_)->write(*fragment);
 }
@@ -121,7 +121,7 @@ bool C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *this_, QTex
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:74
 // [-2] void setCodec(class QTextCodec *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter8setCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
   ((QTextDocumentWriter*)this_)->setCodec(codec);
 }
@@ -129,7 +129,7 @@ void C_ZN19QTextDocumentWriter8setCodecEP10QTextCodec(void *this_, QTextCodec * 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:75
 // [8] QTextCodec * codec()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QTextDocumentWriter5codecEv(void *this_) {
   return (void*)((QTextDocumentWriter*)this_)->codec();
 }

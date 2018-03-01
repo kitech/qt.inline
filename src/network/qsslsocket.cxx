@@ -49,7 +49,7 @@ MyQSslSocket(QObject * parent) : QSslSocket(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:212
 // [8] qint64 readData(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN10QSslSocket8readDataEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QSslSocket*)this_)->QSslSocket::readData(data, maxlen);
 }
@@ -57,7 +57,7 @@ qint64 C_ZN10QSslSocket8readDataEPcx(void *this_, char * data, qint64 maxlen) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:213
 // [8] qint64 writeData(const char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN10QSslSocket9writeDataEPKcx(void *this_, const char * data, qint64 len_) {
   return (qint64)((QSslSocket*)this_)->QSslSocket::writeData(data, len_);
 }
@@ -65,7 +65,7 @@ qint64 C_ZN10QSslSocket9writeDataEPKcx(void *this_, const char * data, qint64 le
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:67
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket10metaObjectEv(void *this_) {
   return (void*)((QSslSocket*)this_)->metaObject();
 }
@@ -73,7 +73,7 @@ void* C_ZNK10QSslSocket10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:82
 // [-2] void QSslSocket(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocketC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSslSocket*)(0);
   return  new MyQSslSocket(parent);
@@ -81,14 +81,14 @@ void* C_ZN10QSslSocketC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:83
 // [-2] void ~QSslSocket()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocketD2Ev(void *this_) {
   delete (QSslSocket*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:84
 // [-2] void resume()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket6resumeEv(void *this_) {
   ((QSslSocket*)this_)->resume();
 }
@@ -96,7 +96,7 @@ void C_ZN10QSslSocket6resumeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:87
 // [-2] void connectToHostEncrypted(const class QString &, quint16, QIODevice::OpenMode, enum QAbstractSocket::NetworkLayerProtocol)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket22connectToHostEncryptedERK7QStringt6QFlagsIN9QIODevice12OpenModeFlagEEN15QAbstractSocket20NetworkLayerProtocolE(void *this_, QString* hostName, quint16 port, QFlags<QIODevice::OpenModeFlag> mode, QAbstractSocket::NetworkLayerProtocol protocol) {
   ((QSslSocket*)this_)->connectToHostEncrypted(*hostName, port, mode, protocol);
 }
@@ -104,7 +104,7 @@ void C_ZN10QSslSocket22connectToHostEncryptedERK7QStringt6QFlagsIN9QIODevice12Op
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:88
 // [-2] void connectToHostEncrypted(const class QString &, quint16, const class QString &, QIODevice::OpenMode, enum QAbstractSocket::NetworkLayerProtocol)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket22connectToHostEncryptedERK7QStringtS2_6QFlagsIN9QIODevice12OpenModeFlagEEN15QAbstractSocket20NetworkLayerProtocolE(void *this_, QString* hostName, quint16 port, QString* sslPeerName, QFlags<QIODevice::OpenModeFlag> mode, QAbstractSocket::NetworkLayerProtocol protocol) {
   ((QSslSocket*)this_)->connectToHostEncrypted(*hostName, port, *sslPeerName, mode, protocol);
 }
@@ -112,7 +112,7 @@ void C_ZN10QSslSocket22connectToHostEncryptedERK7QStringtS2_6QFlagsIN9QIODevice1
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:89
 // [1] bool setSocketDescriptor(qintptr, enum QAbstractSocket::SocketState, QIODevice::OpenMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket19setSocketDescriptorExN15QAbstractSocket11SocketStateE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, qintptr socketDescriptor, QAbstractSocket::SocketState state, QFlags<QIODevice::OpenModeFlag> openMode) {
   return (bool)((QSslSocket*)this_)->setSocketDescriptor(socketDescriptor, state, openMode);
 }
@@ -120,7 +120,7 @@ bool C_ZN10QSslSocket19setSocketDescriptorExN15QAbstractSocket11SocketStateE6QFl
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:93
 // [-2] void connectToHost(const class QString &, quint16, QIODevice::OpenMode, enum QAbstractSocket::NetworkLayerProtocol)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket13connectToHostERK7QStringt6QFlagsIN9QIODevice12OpenModeFlagEEN15QAbstractSocket20NetworkLayerProtocolE(void *this_, QString* hostName, quint16 port, QFlags<QIODevice::OpenModeFlag> openMode, QAbstractSocket::NetworkLayerProtocol protocol) {
   ((QSslSocket*)this_)->connectToHost(*hostName, port, openMode, protocol);
 }
@@ -128,7 +128,7 @@ void C_ZN10QSslSocket13connectToHostERK7QStringt6QFlagsIN9QIODevice12OpenModeFla
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:94
 // [-2] void disconnectFromHost()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket18disconnectFromHostEv(void *this_) {
   ((QSslSocket*)this_)->disconnectFromHost();
 }
@@ -136,7 +136,7 @@ void C_ZN10QSslSocket18disconnectFromHostEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:96
 // [-2] void setSocketOption(class QAbstractSocket::SocketOption, const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket15setSocketOptionEN15QAbstractSocket12SocketOptionERK8QVariant(void *this_, QAbstractSocket::SocketOption option, QVariant* value) {
   ((QSslSocket*)this_)->setSocketOption(option, *value);
 }
@@ -144,7 +144,7 @@ void C_ZN10QSslSocket15setSocketOptionEN15QAbstractSocket12SocketOptionERK8QVari
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:97
 // [16] QVariant socketOption(class QAbstractSocket::SocketOption)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocket12socketOptionEN15QAbstractSocket12SocketOptionE(void *this_, QAbstractSocket::SocketOption option) {
   auto rv = ((QSslSocket*)this_)->socketOption(option);
 return new QVariant(rv);
@@ -153,7 +153,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:99
 // [4] QSslSocket::SslMode mode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSslSocket::SslMode C_ZNK10QSslSocket4modeEv(void *this_) {
   return (QSslSocket::SslMode)((QSslSocket*)this_)->mode();
 }
@@ -161,7 +161,7 @@ QSslSocket::SslMode C_ZNK10QSslSocket4modeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:100
 // [1] bool isEncrypted()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslSocket11isEncryptedEv(void *this_) {
   return (bool)((QSslSocket*)this_)->isEncrypted();
 }
@@ -169,7 +169,7 @@ bool C_ZNK10QSslSocket11isEncryptedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:102
 // [4] QSsl::SslProtocol protocol()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSsl::SslProtocol C_ZNK10QSslSocket8protocolEv(void *this_) {
   return (QSsl::SslProtocol)((QSslSocket*)this_)->protocol();
 }
@@ -177,7 +177,7 @@ QSsl::SslProtocol C_ZNK10QSslSocket8protocolEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:103
 // [-2] void setProtocol(QSsl::SslProtocol)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket11setProtocolEN4QSsl11SslProtocolE(void *this_, QSsl::SslProtocol protocol) {
   ((QSslSocket*)this_)->setProtocol(protocol);
 }
@@ -185,7 +185,7 @@ void C_ZN10QSslSocket11setProtocolEN4QSsl11SslProtocolE(void *this_, QSsl::SslPr
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:105
 // [4] QSslSocket::PeerVerifyMode peerVerifyMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSslSocket::PeerVerifyMode C_ZNK10QSslSocket14peerVerifyModeEv(void *this_) {
   return (QSslSocket::PeerVerifyMode)((QSslSocket*)this_)->peerVerifyMode();
 }
@@ -193,7 +193,7 @@ QSslSocket::PeerVerifyMode C_ZNK10QSslSocket14peerVerifyModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:106
 // [-2] void setPeerVerifyMode(class QSslSocket::PeerVerifyMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket17setPeerVerifyModeENS_14PeerVerifyModeE(void *this_, QSslSocket::PeerVerifyMode mode) {
   ((QSslSocket*)this_)->setPeerVerifyMode(mode);
 }
@@ -201,7 +201,7 @@ void C_ZN10QSslSocket17setPeerVerifyModeENS_14PeerVerifyModeE(void *this_, QSslS
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:108
 // [4] int peerVerifyDepth()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QSslSocket15peerVerifyDepthEv(void *this_) {
   return (int)((QSslSocket*)this_)->peerVerifyDepth();
 }
@@ -209,7 +209,7 @@ int C_ZNK10QSslSocket15peerVerifyDepthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:109
 // [-2] void setPeerVerifyDepth(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket18setPeerVerifyDepthEi(void *this_, int depth) {
   ((QSslSocket*)this_)->setPeerVerifyDepth(depth);
 }
@@ -217,7 +217,7 @@ void C_ZN10QSslSocket18setPeerVerifyDepthEi(void *this_, int depth) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:111
 // [8] QString peerVerifyName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket14peerVerifyNameEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->peerVerifyName();
 return new QString(rv);
@@ -226,7 +226,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:112
 // [-2] void setPeerVerifyName(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket17setPeerVerifyNameERK7QString(void *this_, QString* hostName) {
   ((QSslSocket*)this_)->setPeerVerifyName(*hostName);
 }
@@ -234,7 +234,7 @@ void C_ZN10QSslSocket17setPeerVerifyNameERK7QString(void *this_, QString* hostNa
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:115
 // [8] qint64 bytesAvailable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK10QSslSocket14bytesAvailableEv(void *this_) {
   return (qint64)((QSslSocket*)this_)->bytesAvailable();
 }
@@ -242,7 +242,7 @@ qint64 C_ZNK10QSslSocket14bytesAvailableEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:116
 // [8] qint64 bytesToWrite()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK10QSslSocket12bytesToWriteEv(void *this_) {
   return (qint64)((QSslSocket*)this_)->bytesToWrite();
 }
@@ -250,7 +250,7 @@ qint64 C_ZNK10QSslSocket12bytesToWriteEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:117
 // [1] bool canReadLine()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslSocket11canReadLineEv(void *this_) {
   return (bool)((QSslSocket*)this_)->canReadLine();
 }
@@ -258,7 +258,7 @@ bool C_ZNK10QSslSocket11canReadLineEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:118
 // [-2] void close()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket5closeEv(void *this_) {
   ((QSslSocket*)this_)->close();
 }
@@ -266,7 +266,7 @@ void C_ZN10QSslSocket5closeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:119
 // [1] bool atEnd()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslSocket5atEndEv(void *this_) {
   return (bool)((QSslSocket*)this_)->atEnd();
 }
@@ -274,7 +274,7 @@ bool C_ZNK10QSslSocket5atEndEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:120
 // [1] bool flush()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket5flushEv(void *this_) {
   return (bool)((QSslSocket*)this_)->flush();
 }
@@ -282,7 +282,7 @@ bool C_ZN10QSslSocket5flushEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:121
 // [-2] void abort()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket5abortEv(void *this_) {
   ((QSslSocket*)this_)->abort();
 }
@@ -290,7 +290,7 @@ void C_ZN10QSslSocket5abortEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:124
 // [-2] void setReadBufferSize(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket17setReadBufferSizeEx(void *this_, qint64 size) {
   ((QSslSocket*)this_)->setReadBufferSize(size);
 }
@@ -298,7 +298,7 @@ void C_ZN10QSslSocket17setReadBufferSizeEx(void *this_, qint64 size) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:127
 // [8] qint64 encryptedBytesAvailable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK10QSslSocket23encryptedBytesAvailableEv(void *this_) {
   return (qint64)((QSslSocket*)this_)->encryptedBytesAvailable();
 }
@@ -306,7 +306,7 @@ qint64 C_ZNK10QSslSocket23encryptedBytesAvailableEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:128
 // [8] qint64 encryptedBytesToWrite()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK10QSslSocket21encryptedBytesToWriteEv(void *this_) {
   return (qint64)((QSslSocket*)this_)->encryptedBytesToWrite();
 }
@@ -314,7 +314,7 @@ qint64 C_ZNK10QSslSocket21encryptedBytesToWriteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:131
 // [8] QSslConfiguration sslConfiguration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket16sslConfigurationEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->sslConfiguration();
 return new QSslConfiguration(rv);
@@ -323,7 +323,7 @@ return new QSslConfiguration(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:132
 // [-2] void setSslConfiguration(const class QSslConfiguration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket19setSslConfigurationERK17QSslConfiguration(void *this_, QSslConfiguration* config) {
   ((QSslSocket*)this_)->setSslConfiguration(*config);
 }
@@ -331,7 +331,7 @@ void C_ZN10QSslSocket19setSslConfigurationERK17QSslConfiguration(void *this_, QS
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:138
 // [-2] void setLocalCertificate(const class QSslCertificate &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket19setLocalCertificateERK15QSslCertificate(void *this_, QSslCertificate* certificate) {
   ((QSslSocket*)this_)->setLocalCertificate(*certificate);
 }
@@ -339,7 +339,7 @@ void C_ZN10QSslSocket19setLocalCertificateERK15QSslCertificate(void *this_, QSsl
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:139
 // [-2] void setLocalCertificate(const class QString &, QSsl::EncodingFormat)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket19setLocalCertificateERK7QStringN4QSsl14EncodingFormatE(void *this_, QString* fileName, QSsl::EncodingFormat format) {
   ((QSslSocket*)this_)->setLocalCertificate(*fileName, format);
 }
@@ -347,7 +347,7 @@ void C_ZN10QSslSocket19setLocalCertificateERK7QStringN4QSsl14EncodingFormatE(voi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:140
 // [8] QSslCertificate localCertificate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket16localCertificateEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->localCertificate();
 return new QSslCertificate(rv);
@@ -356,7 +356,7 @@ return new QSslCertificate(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:141
 // [8] QSslCertificate peerCertificate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket15peerCertificateEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->peerCertificate();
 return new QSslCertificate(rv);
@@ -365,7 +365,7 @@ return new QSslCertificate(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:143
 // [8] QSslCipher sessionCipher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket13sessionCipherEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->sessionCipher();
 return new QSslCipher(rv);
@@ -374,7 +374,7 @@ return new QSslCipher(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:144
 // [4] QSsl::SslProtocol sessionProtocol()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSsl::SslProtocol C_ZNK10QSslSocket15sessionProtocolEv(void *this_) {
   return (QSsl::SslProtocol)((QSslSocket*)this_)->sessionProtocol();
 }
@@ -382,7 +382,7 @@ QSsl::SslProtocol C_ZNK10QSslSocket15sessionProtocolEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:147
 // [-2] void setPrivateKey(const class QSslKey &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket13setPrivateKeyERK7QSslKey(void *this_, QSslKey* key) {
   ((QSslSocket*)this_)->setPrivateKey(*key);
 }
@@ -390,7 +390,7 @@ void C_ZN10QSslSocket13setPrivateKeyERK7QSslKey(void *this_, QSslKey* key) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:148
 // [-2] void setPrivateKey(const class QString &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket13setPrivateKeyERK7QStringN4QSsl12KeyAlgorithmENS3_14EncodingFormatERK10QByteArray(void *this_, QString* fileName, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QByteArray* passPhrase) {
   ((QSslSocket*)this_)->setPrivateKey(*fileName, algorithm, format, *passPhrase);
 }
@@ -398,7 +398,7 @@ void C_ZN10QSslSocket13setPrivateKeyERK7QStringN4QSsl12KeyAlgorithmENS3_14Encodi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:151
 // [8] QSslKey privateKey()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket10privateKeyEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->privateKey();
 return new QSslKey(rv);
@@ -407,7 +407,7 @@ return new QSslKey(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:157
 // [-2] void setCiphers(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket10setCiphersERK7QString(void *this_, QString* ciphers) {
   ((QSslSocket*)this_)->setCiphers(*ciphers);
 }
@@ -415,7 +415,7 @@ void C_ZN10QSslSocket10setCiphersERK7QString(void *this_, QString* ciphers) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:164
 // [1] bool addCaCertificates(const class QString &, QSsl::EncodingFormat, class QRegExp::PatternSyntax)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket17addCaCertificatesERK7QStringN4QSsl14EncodingFormatEN7QRegExp13PatternSyntaxE(void *this_, QString* path, QSsl::EncodingFormat format, QRegExp::PatternSyntax syntax) {
   return (bool)((QSslSocket*)this_)->addCaCertificates(*path, format, syntax);
 }
@@ -423,7 +423,7 @@ bool C_ZN10QSslSocket17addCaCertificatesERK7QStringN4QSsl14EncodingFormatEN7QReg
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:166
 // [-2] void addCaCertificate(const class QSslCertificate &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket16addCaCertificateERK15QSslCertificate(void *this_, QSslCertificate* certificate) {
   ((QSslSocket*)this_)->addCaCertificate(*certificate);
 }
@@ -431,21 +431,21 @@ void C_ZN10QSslSocket16addCaCertificateERK15QSslCertificate(void *this_, QSslCer
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:172
 // [1] bool addDefaultCaCertificates(const class QString &, QSsl::EncodingFormat, class QRegExp::PatternSyntax)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket24addDefaultCaCertificatesERK7QStringN4QSsl14EncodingFormatEN7QRegExp13PatternSyntaxE(QString* path, QSsl::EncodingFormat format, QRegExp::PatternSyntax syntax) {
   return (bool)QSslSocket::addDefaultCaCertificates(*path, format, syntax);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:174
 // [-2] void addDefaultCaCertificate(const class QSslCertificate &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket23addDefaultCaCertificateERK15QSslCertificate(QSslCertificate* certificate) {
   QSslSocket::addDefaultCaCertificate(*certificate);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:182
 // [1] bool waitForConnected(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket16waitForConnectedEi(void *this_, int msecs) {
   return (bool)((QSslSocket*)this_)->waitForConnected(msecs);
 }
@@ -453,7 +453,7 @@ bool C_ZN10QSslSocket16waitForConnectedEi(void *this_, int msecs) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:183
 // [1] bool waitForEncrypted(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket16waitForEncryptedEi(void *this_, int msecs) {
   return (bool)((QSslSocket*)this_)->waitForEncrypted(msecs);
 }
@@ -461,7 +461,7 @@ bool C_ZN10QSslSocket16waitForEncryptedEi(void *this_, int msecs) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:184
 // [1] bool waitForReadyRead(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket16waitForReadyReadEi(void *this_, int msecs) {
   return (bool)((QSslSocket*)this_)->waitForReadyRead(msecs);
 }
@@ -469,7 +469,7 @@ bool C_ZN10QSslSocket16waitForReadyReadEi(void *this_, int msecs) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:185
 // [1] bool waitForBytesWritten(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket19waitForBytesWrittenEi(void *this_, int msecs) {
   return (bool)((QSslSocket*)this_)->waitForBytesWritten(msecs);
 }
@@ -477,7 +477,7 @@ bool C_ZN10QSslSocket19waitForBytesWrittenEi(void *this_, int msecs) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:186
 // [1] bool waitForDisconnected(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket19waitForDisconnectedEi(void *this_, int msecs) {
   return (bool)((QSslSocket*)this_)->waitForDisconnected(msecs);
 }
@@ -485,21 +485,21 @@ bool C_ZN10QSslSocket19waitForDisconnectedEi(void *this_, int msecs) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:190
 // [1] bool supportsSsl()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket11supportsSslEv() {
   return (bool)QSslSocket::supportsSsl();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:191
 // [8] long sslLibraryVersionNumber()
-extern "C"
+extern "C" Q_DECL_EXPORT
 long C_ZN10QSslSocket23sslLibraryVersionNumberEv() {
   return (long)QSslSocket::sslLibraryVersionNumber();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:192
 // [8] QString sslLibraryVersionString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocket23sslLibraryVersionStringEv() {
   auto rv = QSslSocket::sslLibraryVersionString();
 return new QString(rv);
@@ -507,14 +507,14 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:193
 // [8] long sslLibraryBuildVersionNumber()
-extern "C"
+extern "C" Q_DECL_EXPORT
 long C_ZN10QSslSocket28sslLibraryBuildVersionNumberEv() {
   return (long)QSslSocket::sslLibraryBuildVersionNumber();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:194
 // [8] QString sslLibraryBuildVersionString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocket28sslLibraryBuildVersionStringEv() {
   auto rv = QSslSocket::sslLibraryBuildVersionString();
 return new QString(rv);
@@ -522,7 +522,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:199
 // [-2] void startClientEncryption()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket21startClientEncryptionEv(void *this_) {
   ((QSslSocket*)this_)->startClientEncryption();
 }
@@ -530,7 +530,7 @@ void C_ZN10QSslSocket21startClientEncryptionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:200
 // [-2] void startServerEncryption()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket21startServerEncryptionEv(void *this_) {
   ((QSslSocket*)this_)->startServerEncryption();
 }
@@ -538,7 +538,7 @@ void C_ZN10QSslSocket21startServerEncryptionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:201
 // [-2] void ignoreSslErrors()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket15ignoreSslErrorsEv(void *this_) {
   ((QSslSocket*)this_)->ignoreSslErrors();
 }
@@ -546,7 +546,7 @@ void C_ZN10QSslSocket15ignoreSslErrorsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:204
 // [-2] void encrypted()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket9encryptedEv(void *this_) {
   ((QSslSocket*)this_)->encrypted();
 }
@@ -554,7 +554,7 @@ void C_ZN10QSslSocket9encryptedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:205
 // [-2] void peerVerifyError(const class QSslError &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket15peerVerifyErrorERK9QSslError(void *this_, QSslError* error) {
   ((QSslSocket*)this_)->peerVerifyError(*error);
 }
@@ -562,7 +562,7 @@ void C_ZN10QSslSocket15peerVerifyErrorERK9QSslError(void *this_, QSslError* erro
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:207
 // [-2] void modeChanged(class QSslSocket::SslMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket11modeChangedENS_7SslModeE(void *this_, QSslSocket::SslMode newMode) {
   ((QSslSocket*)this_)->modeChanged(newMode);
 }
@@ -570,7 +570,7 @@ void C_ZN10QSslSocket11modeChangedENS_7SslModeE(void *this_, QSslSocket::SslMode
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:208
 // [-2] void encryptedBytesWritten(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket21encryptedBytesWrittenEx(void *this_, qint64 totalBytes) {
   ((QSslSocket*)this_)->encryptedBytesWritten(totalBytes);
 }
@@ -578,7 +578,7 @@ void C_ZN10QSslSocket21encryptedBytesWrittenEx(void *this_, qint64 totalBytes) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:209
 // [-2] void preSharedKeyAuthenticationRequired(class QSslPreSharedKeyAuthenticator *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAuthenticator(void *this_, QSslPreSharedKeyAuthenticator * authenticator) {
   ((QSslSocket*)this_)->preSharedKeyAuthenticationRequired(authenticator);
 }

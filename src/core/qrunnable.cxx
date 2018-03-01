@@ -23,7 +23,7 @@ MyQRunnable() : QRunnable() {}
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:58
 // [-2] void run()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QRunnable3runEv(void *this_) {
   ((QRunnable*)this_)->run();
 }
@@ -31,21 +31,21 @@ void C_ZN9QRunnable3runEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:60
 // [-2] void QRunnable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QRunnableC2Ev() {
   return 0; // new QRunnable();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:61
 // [-2] void ~QRunnable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QRunnableD2Ev(void *this_) {
   delete (QRunnable*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:63
 // [1] bool autoDelete()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QRunnable10autoDeleteEv(void *this_) {
   return (bool)((QRunnable*)this_)->autoDelete();
 }
@@ -53,7 +53,7 @@ bool C_ZNK9QRunnable10autoDeleteEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:64
 // [-2] void setAutoDelete(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QRunnable13setAutoDeleteEb(void *this_, bool _autoDelete) {
   ((QRunnable*)this_)->setAutoDelete(_autoDelete);
 }

@@ -25,12 +25,12 @@ MyQStyleOptionMenuItem(int version) : QStyleOptionMenuItem(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:372
 // [-2] void QStyleOptionMenuItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionMenuItemC2Ev() {
   return  new QStyleOptionMenuItem();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionMenuItemD2Ev(void *this_) {
   delete (QStyleOptionMenuItem*)(this_);
 }

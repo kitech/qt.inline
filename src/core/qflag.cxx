@@ -29,33 +29,33 @@ MyQFlag(ushort ai) : QFlag(ai) {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:57
 // [-2] void QFlag(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Ei(int ai) {
   return  new QFlag(ai);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:68
 // [-2] void QFlag(uint)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Ej(uint ai) {
   return  new QFlag(ai);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:69
 // [-2] void QFlag(short)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Es(short ai) {
   return  new QFlag(ai);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:70
 // [-2] void QFlag(ushort)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Et(ushort ai) {
   return  new QFlag(ai);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QFlagD2Ev(void *this_) {
   delete (QFlag*)(this_);
 }

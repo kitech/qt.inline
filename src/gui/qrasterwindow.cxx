@@ -49,7 +49,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:60
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
   return (int)((QRasterWindow*)this_)->QRasterWindow::metric(metric);
 }
@@ -57,7 +57,7 @@ int C_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_,
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:61
 // [8] QPaintDevice * redirected(class QPoint *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QRasterWindow10redirectedEP6QPoint(void *this_, QPoint * arg0) {
   return (void*)((QRasterWindow*)this_)->QRasterWindow::redirected(arg0);
 }
@@ -65,7 +65,7 @@ void* C_ZNK13QRasterWindow10redirectedEP6QPoint(void *this_, QPoint * arg0) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:52
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QRasterWindow10metaObjectEv(void *this_) {
   return (void*)((QRasterWindow*)this_)->metaObject();
 }
@@ -73,7 +73,7 @@ void* C_ZNK13QRasterWindow10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:56
 // [-2] void QRasterWindow(class QWindow *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QRasterWindowC2EP7QWindow(QWindow * parent) {
   auto _nilp = (MyQRasterWindow*)(0);
   return  new MyQRasterWindow(parent);
@@ -81,7 +81,7 @@ void* C_ZN13QRasterWindowC2EP7QWindow(QWindow * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:57
 // [-2] void ~QRasterWindow()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QRasterWindowD2Ev(void *this_) {
   delete (QRasterWindow*)(this_);
 }

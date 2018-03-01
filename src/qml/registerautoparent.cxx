@@ -19,7 +19,7 @@ public:
 };
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18RegisterAutoParentD2Ev(void *this_) {
   delete (QQmlPrivate::RegisterAutoParent*)(this_);
 }

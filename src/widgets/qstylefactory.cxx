@@ -21,7 +21,7 @@ public:
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylefactory.h:54
 // [8] QStringList keys()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QStyleFactory4keysEv() {
   auto rv = QStyleFactory::keys();
 return new QStringList(rv);
@@ -29,12 +29,12 @@ return new QStringList(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylefactory.h:55
 // [8] QStyle * create(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QStyleFactory6createERK7QString(QString* arg0) {
   return (void*)QStyleFactory::create(*arg0);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QStyleFactoryD2Ev(void *this_) {
   delete (QStyleFactory*)(this_);
 }

@@ -34,7 +34,7 @@ public:
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:73
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN20QQuickItemGrabResult5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QQuickItemGrabResult*)this_)->QQuickItemGrabResult::event(arg0);
 }
@@ -42,7 +42,7 @@ bool C_ZN20QQuickItemGrabResult5eventEP6QEvent(void *this_, QEvent * arg0) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:58
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QQuickItemGrabResult10metaObjectEv(void *this_) {
   return (void*)((QQuickItemGrabResult*)this_)->metaObject();
 }
@@ -50,7 +50,7 @@ void* C_ZNK20QQuickItemGrabResult10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:64
 // [32] QImage image()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QQuickItemGrabResult5imageEv(void *this_) {
   auto rv = ((QQuickItemGrabResult*)this_)->image();
 return new QImage(rv);
@@ -59,7 +59,7 @@ return new QImage(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:65
 // [8] QUrl url()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QQuickItemGrabResult3urlEv(void *this_) {
   auto rv = ((QQuickItemGrabResult*)this_)->url();
 return new QUrl(rv);
@@ -68,7 +68,7 @@ return new QUrl(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:68
 // [1] bool saveToFile(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fileName) {
   return (bool)((QQuickItemGrabResult*)this_)->saveToFile(*fileName);
 }
@@ -76,7 +76,7 @@ bool C_ZN20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fil
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:70
 // [1] bool saveToFile(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fileName) {
   return (bool)((QQuickItemGrabResult*)this_)->saveToFile(*fileName);
 }
@@ -84,13 +84,13 @@ bool C_ZNK20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:76
 // [-2] void ready()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QQuickItemGrabResult5readyEv(void *this_) {
   ((QQuickItemGrabResult*)this_)->ready();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QQuickItemGrabResultD2Ev(void *this_) {
   delete (QQuickItemGrabResult*)(this_);
 }

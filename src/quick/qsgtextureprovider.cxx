@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtextureprovider.h:50
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSGTextureProvider10metaObjectEv(void *this_) {
   return (void*)((QSGTextureProvider*)this_)->metaObject();
 }
@@ -29,7 +29,7 @@ void* C_ZNK18QSGTextureProvider10metaObjectEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtextureprovider.h:52
 // [8] QSGTexture * texture()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSGTextureProvider7textureEv(void *this_) {
   return (void*)((QSGTextureProvider*)this_)->texture();
 }
@@ -37,13 +37,13 @@ void* C_ZNK18QSGTextureProvider7textureEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtextureprovider.h:55
 // [-2] void textureChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSGTextureProvider14textureChangedEv(void *this_) {
   ((QSGTextureProvider*)this_)->textureChanged();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSGTextureProviderD2Ev(void *this_) {
   delete (QSGTextureProvider*)(this_);
 }

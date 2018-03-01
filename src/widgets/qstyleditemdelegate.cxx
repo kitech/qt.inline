@@ -61,7 +61,7 @@ MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:91
 // [-2] void initStyleOption(class QStyleOptionViewItem *, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex(void *this_, QStyleOptionViewItem * option, QModelIndex* index) {
   ((QStyledItemDelegate*)this_)->QStyledItemDelegate::initStyleOption(option, *index);
 }
@@ -69,7 +69,7 @@ void C_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QMod
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:94
 // [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent(void *this_, QObject * object, QEvent * event) {
   return (bool)((QStyledItemDelegate*)this_)->QStyledItemDelegate::eventFilter(object, event);
 }
@@ -77,7 +77,7 @@ bool C_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent(void *this_, QObje
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:95
 // [1] bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QEvent * event, QAbstractItemModel * model, QStyleOptionViewItem* option, QModelIndex* index) {
   return (bool)((QStyledItemDelegate*)this_)->QStyledItemDelegate::editorEvent(event, model, *option, *index);
 }
@@ -85,7 +85,7 @@ bool C_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QSt
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:58
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QStyledItemDelegate10metaObjectEv(void *this_) {
   return (void*)((QStyledItemDelegate*)this_)->metaObject();
 }
@@ -93,7 +93,7 @@ void* C_ZNK19QStyledItemDelegate10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:61
 // [-2] void QStyledItemDelegate(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyledItemDelegateC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQStyledItemDelegate*)(0);
   return  new MyQStyledItemDelegate(parent);
@@ -101,14 +101,14 @@ void* C_ZN19QStyledItemDelegateC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:62
 // [-2] void ~QStyledItemDelegate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QStyledItemDelegateD2Ev(void *this_) {
   delete (QStyledItemDelegate*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:65
 // [-2] void paint(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK19QStyledItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QPainter * painter, QStyleOptionViewItem* option, QModelIndex* index) {
   ((QStyledItemDelegate*)this_)->paint(painter, *option, *index);
 }
@@ -116,7 +116,7 @@ void C_ZNK19QStyledItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QMod
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:67
 // [8] QSize sizeHint(const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QStyledItemDelegate8sizeHintERK20QStyleOptionViewItemRK11QModelIndex(void *this_, QStyleOptionViewItem* option, QModelIndex* index) {
   auto rv = ((QStyledItemDelegate*)this_)->sizeHint(*option, *index);
 return new QSize(rv);
@@ -125,7 +125,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:71
 // [8] QWidget * createEditor(class QWidget *, const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QStyledItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QWidget * parent, QStyleOptionViewItem* option, QModelIndex* index) {
   return (void*)((QStyledItemDelegate*)this_)->createEditor(parent, *option, *index);
 }
@@ -133,7 +133,7 @@ void* C_ZNK19QStyledItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewItem
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:75
 // [-2] void setEditorData(class QWidget *, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK19QStyledItemDelegate13setEditorDataEP7QWidgetRK11QModelIndex(void *this_, QWidget * editor, QModelIndex* index) {
   ((QStyledItemDelegate*)this_)->setEditorData(editor, *index);
 }
@@ -141,7 +141,7 @@ void C_ZNK19QStyledItemDelegate13setEditorDataEP7QWidgetRK11QModelIndex(void *th
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:76
 // [-2] void setModelData(class QWidget *, class QAbstractItemModel *, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK19QStyledItemDelegate12setModelDataEP7QWidgetP18QAbstractItemModelRK11QModelIndex(void *this_, QWidget * editor, QAbstractItemModel * model, QModelIndex* index) {
   ((QStyledItemDelegate*)this_)->setModelData(editor, model, *index);
 }
@@ -149,7 +149,7 @@ void C_ZNK19QStyledItemDelegate12setModelDataEP7QWidgetP18QAbstractItemModelRK11
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:80
 // [-2] void updateEditorGeometry(class QWidget *, const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK19QStyledItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QWidget * editor, QStyleOptionViewItem* option, QModelIndex* index) {
   ((QStyledItemDelegate*)this_)->updateEditorGeometry(editor, *option, *index);
 }
@@ -157,7 +157,7 @@ void C_ZNK19QStyledItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptionV
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:85
 // [8] QItemEditorFactory * itemEditorFactory()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QStyledItemDelegate17itemEditorFactoryEv(void *this_) {
   return (void*)((QStyledItemDelegate*)this_)->itemEditorFactory();
 }
@@ -165,7 +165,7 @@ void* C_ZNK19QStyledItemDelegate17itemEditorFactoryEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:86
 // [-2] void setItemEditorFactory(class QItemEditorFactory *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QStyledItemDelegate20setItemEditorFactoryEP18QItemEditorFactory(void *this_, QItemEditorFactory * factory) {
   ((QStyledItemDelegate*)this_)->setItemEditorFactory(factory);
 }
@@ -173,7 +173,7 @@ void C_ZN19QStyledItemDelegate20setItemEditorFactoryEP18QItemEditorFactory(void 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:88
 // [8] QString displayText(const class QVariant &, const class QLocale &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QStyledItemDelegate11displayTextERK8QVariantRK7QLocale(void *this_, QVariant* value, QLocale* locale) {
   auto rv = ((QStyledItemDelegate*)this_)->displayText(*value, *locale);
 return new QString(rv);

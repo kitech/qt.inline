@@ -25,21 +25,21 @@ MyQSGSimpleRectNode() : QSGSimpleRectNode() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:51
 // [-2] void QSGSimpleRectNode(const class QRectF &, const class QColor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGSimpleRectNodeC2ERK6QRectFRK6QColor(QRectF* rect, QColor* color) {
   return  new QSGSimpleRectNode(*rect, *color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:52
 // [-2] void QSGSimpleRectNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGSimpleRectNodeC2Ev() {
   return  new QSGSimpleRectNode();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:54
 // [-2] void setRect(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGSimpleRectNode7setRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGSimpleRectNode*)this_)->setRect(*rect);
 }
@@ -47,7 +47,7 @@ void C_ZN17QSGSimpleRectNode7setRectERK6QRectF(void *this_, QRectF* rect) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:55
 // [-2] void setRect(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGSimpleRectNode7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   ((QSGSimpleRectNode*)this_)->setRect(x, y, w, h);
 }
@@ -55,7 +55,7 @@ void C_ZN17QSGSimpleRectNode7setRectEdddd(void *this_, qreal x, qreal y, qreal w
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:56
 // [32] QRectF rect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGSimpleRectNode4rectEv(void *this_) {
   auto rv = ((QSGSimpleRectNode*)this_)->rect();
 return new QRectF(rv);
@@ -64,7 +64,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:58
 // [-2] void setColor(const class QColor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGSimpleRectNode8setColorERK6QColor(void *this_, QColor* color) {
   ((QSGSimpleRectNode*)this_)->setColor(*color);
 }
@@ -72,14 +72,14 @@ void C_ZN17QSGSimpleRectNode8setColorERK6QColor(void *this_, QColor* color) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:59
 // [16] QColor color()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGSimpleRectNode5colorEv(void *this_) {
   auto rv = ((QSGSimpleRectNode*)this_)->color();
 return new QColor(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGSimpleRectNodeD2Ev(void *this_) {
   delete (QSGSimpleRectNode*)(this_);
 }

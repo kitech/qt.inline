@@ -83,7 +83,10 @@ set(all_qt5_inline_srcs
   ${qt5_inline_extra_srcs}
   )
 
-set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD "-lpthread -lGL -lqtlibpng -lqtharfbuzz -lqtpcre2 -lqxcb -lQt5XcbQpa -lSM -lxcb-randr -lxcb-render -lxcb-shape -lxcb-xkb -lxcb-xfixes -lxcb-sync -lxcb-icccm -lxcb-shm -lxcb-xinerama -lxcb-image -lxcb-keysyms -lxcb-cursor -lX11-xcb -lQt5ThemeSupport -lQt5EdidSupport -lQt5FontDatabaseSupport -lQt5ServiceSupport -lfontconfig -lQt5EventDispatcherSupport -lQt5DBus")
+set(LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD "-lpthread -lGL -lqtlibpng -lqtharfbuzz -lqtpcre2 -lqxcb -lQt5XcbQpa -lSM -lxcb-randr -lxcb-render -lxcb-shape -lxcb-xkb -lxcb-xfixes -lxcb-sync -lxcb-icccm -lxcb-shm -lxcb-xinerama -lxcb-image -lxcb-keysyms -lxcb-cursor -lX11-xcb -lQt5ThemeSupport -lQt5EdidSupport -lQt5FontDatabaseSupport -lQt5ServiceSupport -lfontconfig -lQt5EventDispatcherSupport -lQt5DBus")
+set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD StaticQt5::QWindowsIntegrationPlugin -lmpr)
+set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD StaticQt5::QCocoaIntegrationPlugin)
+
 # link_directories(/opt/qt510st/lib/ /opt/qt510st/plugins/platforms/)
 add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
 target_link_libraries(Qt5Inline Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Network Qt5::Qml Qt5::Quick Qt5::QuickControls2 Qt5::QuickWidgets)

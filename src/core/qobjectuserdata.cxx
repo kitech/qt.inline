@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:479
 // [-2] void ~QObjectUserData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QObjectUserDataD2Ev(void *this_) {
   delete (QObjectUserData*)(this_);
 }

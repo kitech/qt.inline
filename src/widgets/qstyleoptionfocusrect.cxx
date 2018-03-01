@@ -25,12 +25,12 @@ MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:119
 // [-2] void QStyleOptionFocusRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN21QStyleOptionFocusRectC2Ev() {
   return  new QStyleOptionFocusRect();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QStyleOptionFocusRectD2Ev(void *this_) {
   delete (QStyleOptionFocusRect*)(this_);
 }

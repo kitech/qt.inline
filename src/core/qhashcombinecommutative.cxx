@@ -19,7 +19,7 @@ public:
 };
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QHashCombineCommutativeD2Ev(void *this_) {
   delete (QtPrivate::QHashCombineCommutative*)(this_);
 }

@@ -21,7 +21,7 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:194
 // [-2] void recalcMostLeftNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QMapDataBase18recalcMostLeftNodeEv(void *this_) {
   ((QMapDataBase*)this_)->recalcMostLeftNode();
 }
@@ -29,12 +29,12 @@ void C_ZN12QMapDataBase18recalcMostLeftNodeEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:201
 // [8] QMapDataBase * createData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QMapDataBase10createDataEv() {
   return (void*)QMapDataBase::createData();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QMapDataBaseD2Ev(void *this_) {
   delete (QMapDataBase*)(this_);
 }

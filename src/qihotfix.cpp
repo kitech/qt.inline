@@ -5,11 +5,21 @@
 #include <QtPlugin>
 
 #if defined(QT_STATIC)
+
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX) || defined(Q_OS_DARWIN)
-static bool _OLD_QT_QPA_FONTDIR = qputenv("QT_QPA_FONTDIR", "/usr/share/fonts");
+auto a = qputenv("QT_QPA_FONTDIR", "/usr/share/fonts");
 #endif
+#if defined(Q_OS_LINUX)
 Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 #endif
+#if defined(Q_OS_WIN)
+Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin)
+#endif
+#if defined(Q_OS_DARWIN)
+Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
+#endif
+
+#endif // defined(QT_STATIC)
 
 /*
   一些解析错误的符号表
@@ -17,7 +27,7 @@ Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
 
 #include <qscreen.h>
 #include <qpixmap.h>
-extern "C"
+extern "C" Q_DECL_EXPORT
 void _ZN7QScreen10grabWindowEiiiii(void* qthis, int a0, int a1, int a2, int a3, int a4)
 {
     QScreen *that = (QScreen*)qthis;
@@ -35,7 +45,7 @@ void* _ZN24QAbstractOpenGLFunctions6d_funcEv(void* qthis)
 */
 
 #if defined(QT_SHARED)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void _ZN18QMessageLogContext4copyERKS_(void* qthis, const QMessageLogContext &logContext)
 {
     QMessageLogContext* that = (QMessageLogContext*)qthis;

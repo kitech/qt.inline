@@ -63,7 +63,7 @@ MyQGraphicsPathItem(const QPainterPath & path, QGraphicsItem * parent) : QGraphi
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:648
 // [1] bool supportsExtension(enum QGraphicsItem::Extension)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsPathItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
   return (bool)((QGraphicsPathItem*)this_)->QGraphicsPathItem::supportsExtension(extension);
 }
@@ -71,7 +71,7 @@ bool C_ZNK17QGraphicsPathItem17supportsExtensionEN13QGraphicsItem9ExtensionE(voi
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:649
 // [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsPathItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
   ((QGraphicsPathItem*)this_)->QGraphicsPathItem::setExtension(extension, *variant);
 }
@@ -79,7 +79,7 @@ void C_ZN17QGraphicsPathItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVarian
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:650
 // [16] QVariant extension(const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsPathItem9extensionERK8QVariant(void *this_, QVariant* variant) {
   auto rv = ((QGraphicsPathItem*)this_)->QGraphicsPathItem::extension(*variant);
 return new QVariant(rv);
@@ -88,7 +88,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:628
 // [-2] void QGraphicsPathItem(class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsPathItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPathItem*)(0);
   return  new MyQGraphicsPathItem(parent);
@@ -96,7 +96,7 @@ void* C_ZN17QGraphicsPathItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:629
 // [-2] void QGraphicsPathItem(const class QPainterPath &, class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsPathItemC2ERK12QPainterPathP13QGraphicsItem(QPainterPath* path, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPathItem*)(0);
   return  new MyQGraphicsPathItem(*path, parent);
@@ -104,14 +104,14 @@ void* C_ZN17QGraphicsPathItemC2ERK12QPainterPathP13QGraphicsItem(QPainterPath* p
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:630
 // [-2] void ~QGraphicsPathItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsPathItemD2Ev(void *this_) {
   delete (QGraphicsPathItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:632
 // [8] QPainterPath path()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsPathItem4pathEv(void *this_) {
   auto rv = ((QGraphicsPathItem*)this_)->path();
 return new QPainterPath(rv);
@@ -120,7 +120,7 @@ return new QPainterPath(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:633
 // [-2] void setPath(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsPathItem7setPathERK12QPainterPath(void *this_, QPainterPath* path) {
   ((QGraphicsPathItem*)this_)->setPath(*path);
 }
@@ -128,7 +128,7 @@ void C_ZN17QGraphicsPathItem7setPathERK12QPainterPath(void *this_, QPainterPath*
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:635
 // [32] QRectF boundingRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsPathItem12boundingRectEv(void *this_) {
   auto rv = ((QGraphicsPathItem*)this_)->boundingRect();
 return new QRectF(rv);
@@ -137,7 +137,7 @@ return new QRectF(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:636
 // [8] QPainterPath shape()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsPathItem5shapeEv(void *this_) {
   auto rv = ((QGraphicsPathItem*)this_)->shape();
 return new QPainterPath(rv);
@@ -146,7 +146,7 @@ return new QPainterPath(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:637
 // [1] bool contains(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsPathItem8containsERK7QPointF(void *this_, QPointF* point) {
   return (bool)((QGraphicsPathItem*)this_)->contains(*point);
 }
@@ -154,7 +154,7 @@ bool C_ZNK17QGraphicsPathItem8containsERK7QPointF(void *this_, QPointF* point) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:639
 // [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsPathItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsPathItem*)this_)->paint(painter, option, widget);
 }
@@ -162,7 +162,7 @@ void C_ZN17QGraphicsPathItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidg
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:641
 // [1] bool isObscuredBy(const class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsPathItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QGraphicsPathItem*)this_)->isObscuredBy(item);
 }
@@ -170,7 +170,7 @@ bool C_ZNK17QGraphicsPathItem12isObscuredByEPK13QGraphicsItem(void *this_, const
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:642
 // [8] QPainterPath opaqueArea()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsPathItem10opaqueAreaEv(void *this_) {
   auto rv = ((QGraphicsPathItem*)this_)->opaqueArea();
 return new QPainterPath(rv);
@@ -179,7 +179,7 @@ return new QPainterPath(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:645
 // [4] int type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QGraphicsPathItem4typeEv(void *this_) {
   return (int)((QGraphicsPathItem*)this_)->type();
 }

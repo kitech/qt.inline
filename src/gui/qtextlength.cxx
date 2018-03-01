@@ -25,21 +25,21 @@ MyQTextLength(QTextLength::Type type_, qreal value) : QTextLength(type_, value) 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:89
 // [-2] void QTextLength()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLengthC2Ev() {
   return  new QTextLength();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:91
 // [-2] void QTextLength(enum QTextLength::Type, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type type_, qreal value) {
   return  new QTextLength(type_, value);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:93
 // [4] QTextLength::Type type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QTextLength::Type C_ZNK11QTextLength4typeEv(void *this_) {
   return (QTextLength::Type)((QTextLength*)this_)->type();
 }
@@ -47,7 +47,7 @@ QTextLength::Type C_ZNK11QTextLength4typeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:94
 // [8] qreal value(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK11QTextLength5valueEd(void *this_, qreal maximumLength) {
   return (qreal)((QTextLength*)this_)->value(maximumLength);
 }
@@ -55,7 +55,7 @@ qreal C_ZNK11QTextLength5valueEd(void *this_, qreal maximumLength) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:104
 // [8] qreal rawValue()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK11QTextLength8rawValueEv(void *this_) {
   return (qreal)((QTextLength*)this_)->rawValue();
 }
@@ -63,7 +63,7 @@ qreal C_ZNK11QTextLength8rawValueEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:106
 // [1] bool operator==(const class QTextLength &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextLengtheqERKS_(void *this_, QTextLength* other) {
   return (bool)((QTextLength*)this_)->operator==(*other);
 }
@@ -71,13 +71,13 @@ bool C_ZNK11QTextLengtheqERKS_(void *this_, QTextLength* other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:109
 // [1] bool operator!=(const class QTextLength &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextLengthneERKS_(void *this_, QTextLength* other) {
   return (bool)((QTextLength*)this_)->operator!=(*other);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLengthD2Ev(void *this_) {
   delete (QTextLength*)(this_);
 }

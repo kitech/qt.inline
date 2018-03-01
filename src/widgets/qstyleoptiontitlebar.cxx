@@ -25,12 +25,12 @@ MyQStyleOptionTitleBar(int version) : QStyleOptionTitleBar(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:619
 // [-2] void QStyleOptionTitleBar()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionTitleBarC2Ev() {
   return  new QStyleOptionTitleBar();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionTitleBarD2Ev(void *this_) {
   delete (QStyleOptionTitleBar*)(this_);
 }

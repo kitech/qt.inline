@@ -27,35 +27,35 @@ MyQStringMatcher(const QChar * uc, int len_, Qt::CaseSensitivity cs) : QStringMa
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:53
 // [-2] void QStringMatcher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcherC2Ev() {
   return  new QStringMatcher();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:54
 // [-2] void QStringMatcher(const class QString &, Qt::CaseSensitivity)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcherC2ERK7QStringN2Qt15CaseSensitivityE(QString* pattern, Qt::CaseSensitivity cs) {
   return  new QStringMatcher(*pattern, cs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:56
 // [-2] void QStringMatcher(const class QChar *, int, Qt::CaseSensitivity)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcherC2EPK5QChariN2Qt15CaseSensitivityE(const QChar * uc, int len_, Qt::CaseSensitivity cs) {
   return  new QStringMatcher(uc, len_, cs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:59
 // [-2] void ~QStringMatcher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStringMatcherD2Ev(void *this_) {
   delete (QStringMatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:61
 // [1048] QStringMatcher & operator=(const class QStringMatcher &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcheraSERKS_(void *this_, QStringMatcher* other) {
   auto& rv = ((QStringMatcher*)this_)->operator=(*other);
 return &rv;
@@ -64,7 +64,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:63
 // [-2] void setPattern(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStringMatcher10setPatternERK7QString(void *this_, QString* pattern) {
   ((QStringMatcher*)this_)->setPattern(*pattern);
 }
@@ -72,7 +72,7 @@ void C_ZN14QStringMatcher10setPatternERK7QString(void *this_, QString* pattern) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:64
 // [-2] void setCaseSensitivity(Qt::CaseSensitivity)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStringMatcher18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
   ((QStringMatcher*)this_)->setCaseSensitivity(cs);
 }
@@ -80,7 +80,7 @@ void C_ZN14QStringMatcher18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:66
 // [4] int indexIn(const class QString &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QStringMatcher7indexInERK7QStringi(void *this_, QString* str, int from) {
   return (int)((QStringMatcher*)this_)->indexIn(*str, from);
 }
@@ -88,7 +88,7 @@ int C_ZNK14QStringMatcher7indexInERK7QStringi(void *this_, QString* str, int fro
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:67
 // [4] int indexIn(const class QChar *, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QStringMatcher7indexInEPK5QCharii(void *this_, const QChar * str, int length, int from) {
   return (int)((QStringMatcher*)this_)->indexIn(str, length, from);
 }
@@ -96,7 +96,7 @@ int C_ZNK14QStringMatcher7indexInEPK5QCharii(void *this_, const QChar * str, int
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:68
 // [8] QString pattern()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStringMatcher7patternEv(void *this_) {
   auto rv = ((QStringMatcher*)this_)->pattern();
 return new QString(rv);
@@ -105,7 +105,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:69
 // [4] Qt::CaseSensitivity caseSensitivity()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::CaseSensitivity C_ZNK14QStringMatcher15caseSensitivityEv(void *this_) {
   return (Qt::CaseSensitivity)((QStringMatcher*)this_)->caseSensitivity();
 }

@@ -19,7 +19,7 @@ public:
 };
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QLinkedListDataD2Ev(void *this_) {
   delete (QLinkedListData*)(this_);
 }

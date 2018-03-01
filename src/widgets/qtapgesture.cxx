@@ -23,7 +23,7 @@ MyQTapGesture(QObject * parent) : QTapGesture(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:236
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTapGesture10metaObjectEv(void *this_) {
   return (void*)((QTapGesture*)this_)->metaObject();
 }
@@ -31,21 +31,21 @@ void* C_ZNK11QTapGesture10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:242
 // [-2] void QTapGesture(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QTapGestureC2EP7QObject(QObject * parent) {
   return  new QTapGesture(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:243
 // [-2] void ~QTapGesture()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QTapGestureD2Ev(void *this_) {
   delete (QTapGesture*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:245
 // [16] QPointF position()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTapGesture8positionEv(void *this_) {
   auto rv = ((QTapGesture*)this_)->position();
 return new QPointF(rv);
@@ -54,7 +54,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:246
 // [-2] void setPosition(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QTapGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
   ((QTapGesture*)this_)->setPosition(*pos);
 }

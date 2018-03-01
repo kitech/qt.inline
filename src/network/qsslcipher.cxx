@@ -27,28 +27,28 @@ MyQSslCipher(const QString & name, QSsl::SslProtocol protocol) : QSslCipher(name
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:58
 // [-2] void QSslCipher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2Ev() {
   return  new QSslCipher();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:59
 // [-2] void QSslCipher(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QString(QString* name) {
   return  new QSslCipher(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:60
 // [-2] void QSslCipher(const class QString &, QSsl::SslProtocol)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE(QString* name, QSsl::SslProtocol protocol) {
   return  new QSslCipher(*name, protocol);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:63
 // [8] QSslCipher & operator=(class QSslCipher &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipheraSEOS_(void *this_, QSslCipher && other) {
   auto& rv = ((QSslCipher*)this_)->operator=(other);
 return &rv;
@@ -57,7 +57,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:65
 // [8] QSslCipher & operator=(const class QSslCipher &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipheraSERKS_(void *this_, QSslCipher* other) {
   auto& rv = ((QSslCipher*)this_)->operator=(*other);
 return &rv;
@@ -66,14 +66,14 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:66
 // [-2] void ~QSslCipher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslCipherD2Ev(void *this_) {
   delete (QSslCipher*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:68
 // [-2] void swap(class QSslCipher &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
   ((QSslCipher*)this_)->swap(*other);
 }
@@ -81,7 +81,7 @@ void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:71
 // [1] bool operator==(const class QSslCipher &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslCiphereqERKS_(void *this_, QSslCipher* other) {
   return (bool)((QSslCipher*)this_)->operator==(*other);
 }
@@ -89,7 +89,7 @@ bool C_ZNK10QSslCiphereqERKS_(void *this_, QSslCipher* other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:72
 // [1] bool operator!=(const class QSslCipher &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslCipherneERKS_(void *this_, QSslCipher* other) {
   return (bool)((QSslCipher*)this_)->operator!=(*other);
 }
@@ -97,7 +97,7 @@ bool C_ZNK10QSslCipherneERKS_(void *this_, QSslCipher* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:74
 // [1] bool isNull()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslCipher6isNullEv(void *this_) {
   return (bool)((QSslCipher*)this_)->isNull();
 }
@@ -105,7 +105,7 @@ bool C_ZNK10QSslCipher6isNullEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:75
 // [8] QString name()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslCipher4nameEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->name();
 return new QString(rv);
@@ -114,7 +114,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:76
 // [4] int supportedBits()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QSslCipher13supportedBitsEv(void *this_) {
   return (int)((QSslCipher*)this_)->supportedBits();
 }
@@ -122,7 +122,7 @@ int C_ZNK10QSslCipher13supportedBitsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:77
 // [4] int usedBits()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QSslCipher8usedBitsEv(void *this_) {
   return (int)((QSslCipher*)this_)->usedBits();
 }
@@ -130,7 +130,7 @@ int C_ZNK10QSslCipher8usedBitsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:79
 // [8] QString keyExchangeMethod()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslCipher17keyExchangeMethodEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->keyExchangeMethod();
 return new QString(rv);
@@ -139,7 +139,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:80
 // [8] QString authenticationMethod()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslCipher20authenticationMethodEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->authenticationMethod();
 return new QString(rv);
@@ -148,7 +148,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:81
 // [8] QString encryptionMethod()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslCipher16encryptionMethodEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->encryptionMethod();
 return new QString(rv);
@@ -157,7 +157,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:82
 // [8] QString protocolString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslCipher14protocolStringEv(void *this_) {
   auto rv = ((QSslCipher*)this_)->protocolString();
 return new QString(rv);
@@ -166,7 +166,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:83
 // [4] QSsl::SslProtocol protocol()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSsl::SslProtocol C_ZNK10QSslCipher8protocolEv(void *this_) {
   return (QSsl::SslProtocol)((QSslCipher*)this_)->protocol();
 }

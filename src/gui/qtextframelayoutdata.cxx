@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:114
 // [-2] void ~QTextFrameLayoutData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QTextFrameLayoutDataD2Ev(void *this_) {
   delete (QTextFrameLayoutData*)(this_);
 }

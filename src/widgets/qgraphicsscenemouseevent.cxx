@@ -23,21 +23,21 @@ MyQGraphicsSceneMouseEvent(QEvent::Type type_) : QGraphicsSceneMouseEvent(type_)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:85
 // [-2] void QGraphicsSceneMouseEvent(enum QEvent::Type)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN24QGraphicsSceneMouseEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneMouseEvent(type_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:86
 // [-2] void ~QGraphicsSceneMouseEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEventD2Ev(void *this_) {
   delete (QGraphicsSceneMouseEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:88
 // [16] QPointF pos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent3posEv(void *this_) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->pos();
 return new QPointF(rv);
@@ -46,7 +46,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:89
 // [-2] void setPos(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setPos(*pos);
 }
@@ -54,7 +54,7 @@ void C_ZN24QGraphicsSceneMouseEvent6setPosERK7QPointF(void *this_, QPointF* pos)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:91
 // [16] QPointF scenePos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent8scenePosEv(void *this_) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->scenePos();
 return new QPointF(rv);
@@ -63,7 +63,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:92
 // [-2] void setScenePos(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setScenePos(*pos);
 }
@@ -71,7 +71,7 @@ void C_ZN24QGraphicsSceneMouseEvent11setScenePosERK7QPointF(void *this_, QPointF
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:94
 // [8] QPoint screenPos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent9screenPosEv(void *this_) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->screenPos();
 return new QPoint(rv);
@@ -80,7 +80,7 @@ return new QPoint(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:95
 // [-2] void setScreenPos(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setScreenPos(*pos);
 }
@@ -88,7 +88,7 @@ void C_ZN24QGraphicsSceneMouseEvent12setScreenPosERK6QPoint(void *this_, QPoint*
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:97
 // [16] QPointF buttonDownPos(Qt::MouseButton)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent13buttonDownPosEN2Qt11MouseButtonE(void *this_, Qt::MouseButton button) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->buttonDownPos(button);
 return new QPointF(rv);
@@ -97,7 +97,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:98
 // [-2] void setButtonDownPos(Qt::MouseButton, const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent16setButtonDownPosEN2Qt11MouseButtonERK7QPointF(void *this_, Qt::MouseButton button, QPointF* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setButtonDownPos(button, *pos);
 }
@@ -105,7 +105,7 @@ void C_ZN24QGraphicsSceneMouseEvent16setButtonDownPosEN2Qt11MouseButtonERK7QPoin
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:100
 // [16] QPointF buttonDownScenePos(Qt::MouseButton)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent18buttonDownScenePosEN2Qt11MouseButtonE(void *this_, Qt::MouseButton button) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->buttonDownScenePos(button);
 return new QPointF(rv);
@@ -114,7 +114,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:101
 // [-2] void setButtonDownScenePos(Qt::MouseButton, const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent21setButtonDownScenePosEN2Qt11MouseButtonERK7QPointF(void *this_, Qt::MouseButton button, QPointF* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setButtonDownScenePos(button, *pos);
 }
@@ -122,7 +122,7 @@ void C_ZN24QGraphicsSceneMouseEvent21setButtonDownScenePosEN2Qt11MouseButtonERK7
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:103
 // [8] QPoint buttonDownScreenPos(Qt::MouseButton)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent19buttonDownScreenPosEN2Qt11MouseButtonE(void *this_, Qt::MouseButton button) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->buttonDownScreenPos(button);
 return new QPoint(rv);
@@ -131,7 +131,7 @@ return new QPoint(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:104
 // [-2] void setButtonDownScreenPos(Qt::MouseButton, const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent22setButtonDownScreenPosEN2Qt11MouseButtonERK6QPoint(void *this_, Qt::MouseButton button, QPoint* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setButtonDownScreenPos(button, *pos);
 }
@@ -139,7 +139,7 @@ void C_ZN24QGraphicsSceneMouseEvent22setButtonDownScreenPosEN2Qt11MouseButtonERK
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:106
 // [16] QPointF lastPos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent7lastPosEv(void *this_) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->lastPos();
 return new QPointF(rv);
@@ -148,7 +148,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:107
 // [-2] void setLastPos(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent10setLastPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setLastPos(*pos);
 }
@@ -156,7 +156,7 @@ void C_ZN24QGraphicsSceneMouseEvent10setLastPosERK7QPointF(void *this_, QPointF*
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:109
 // [16] QPointF lastScenePos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent12lastScenePosEv(void *this_) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->lastScenePos();
 return new QPointF(rv);
@@ -165,7 +165,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:110
 // [-2] void setLastScenePos(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent15setLastScenePosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setLastScenePos(*pos);
 }
@@ -173,7 +173,7 @@ void C_ZN24QGraphicsSceneMouseEvent15setLastScenePosERK7QPointF(void *this_, QPo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:112
 // [8] QPoint lastScreenPos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneMouseEvent13lastScreenPosEv(void *this_) {
   auto rv = ((QGraphicsSceneMouseEvent*)this_)->lastScreenPos();
 return new QPoint(rv);
@@ -182,7 +182,7 @@ return new QPoint(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:113
 // [-2] void setLastScreenPos(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent16setLastScreenPosERK6QPoint(void *this_, QPoint* pos) {
   ((QGraphicsSceneMouseEvent*)this_)->setLastScreenPos(*pos);
 }
@@ -190,7 +190,7 @@ void C_ZN24QGraphicsSceneMouseEvent16setLastScreenPosERK6QPoint(void *this_, QPo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:115
 // [4] Qt::MouseButtons buttons()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::MouseButtons C_ZNK24QGraphicsSceneMouseEvent7buttonsEv(void *this_) {
   return (Qt::MouseButtons)((QGraphicsSceneMouseEvent*)this_)->buttons();
 }
@@ -198,7 +198,7 @@ Qt::MouseButtons C_ZNK24QGraphicsSceneMouseEvent7buttonsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:116
 // [-2] void setButtons(Qt::MouseButtons)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void *this_, QFlags<Qt::MouseButton> buttons) {
   ((QGraphicsSceneMouseEvent*)this_)->setButtons(buttons);
 }
@@ -206,7 +206,7 @@ void C_ZN24QGraphicsSceneMouseEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:118
 // [4] Qt::MouseButton button()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::MouseButton C_ZNK24QGraphicsSceneMouseEvent6buttonEv(void *this_) {
   return (Qt::MouseButton)((QGraphicsSceneMouseEvent*)this_)->button();
 }
@@ -214,7 +214,7 @@ Qt::MouseButton C_ZNK24QGraphicsSceneMouseEvent6buttonEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:119
 // [-2] void setButton(Qt::MouseButton)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent9setButtonEN2Qt11MouseButtonE(void *this_, Qt::MouseButton button) {
   ((QGraphicsSceneMouseEvent*)this_)->setButton(button);
 }
@@ -222,7 +222,7 @@ void C_ZN24QGraphicsSceneMouseEvent9setButtonEN2Qt11MouseButtonE(void *this_, Qt
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:121
 // [4] Qt::KeyboardModifiers modifiers()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK24QGraphicsSceneMouseEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QGraphicsSceneMouseEvent*)this_)->modifiers();
 }
@@ -230,7 +230,7 @@ Qt::KeyboardModifiers C_ZNK24QGraphicsSceneMouseEvent9modifiersEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:122
 // [-2] void setModifiers(Qt::KeyboardModifiers)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
   ((QGraphicsSceneMouseEvent*)this_)->setModifiers(modifiers);
 }
@@ -238,7 +238,7 @@ void C_ZN24QGraphicsSceneMouseEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifier
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:124
 // [4] Qt::MouseEventSource source()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::MouseEventSource C_ZNK24QGraphicsSceneMouseEvent6sourceEv(void *this_) {
   return (Qt::MouseEventSource)((QGraphicsSceneMouseEvent*)this_)->source();
 }
@@ -246,7 +246,7 @@ Qt::MouseEventSource C_ZNK24QGraphicsSceneMouseEvent6sourceEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:125
 // [-2] void setSource(Qt::MouseEventSource)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent9setSourceEN2Qt16MouseEventSourceE(void *this_, Qt::MouseEventSource source) {
   ((QGraphicsSceneMouseEvent*)this_)->setSource(source);
 }
@@ -254,7 +254,7 @@ void C_ZN24QGraphicsSceneMouseEvent9setSourceEN2Qt16MouseEventSourceE(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:127
 // [4] Qt::MouseEventFlags flags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::MouseEventFlags C_ZNK24QGraphicsSceneMouseEvent5flagsEv(void *this_) {
   return (Qt::MouseEventFlags)((QGraphicsSceneMouseEvent*)this_)->flags();
 }
@@ -262,7 +262,7 @@ Qt::MouseEventFlags C_ZNK24QGraphicsSceneMouseEvent5flagsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:128
 // [-2] void setFlags(Qt::MouseEventFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneMouseEvent8setFlagsE6QFlagsIN2Qt14MouseEventFlagEE(void *this_, QFlags<Qt::MouseEventFlag> arg0) {
   ((QGraphicsSceneMouseEvent*)this_)->setFlags(arg0);
 }

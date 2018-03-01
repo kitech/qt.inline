@@ -25,28 +25,28 @@ MyQAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ) : QAcce
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:668
 // [-2] void QAccessibleEvent(class QObject *, class QAccessible::Event)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ) {
   return  new QAccessibleEvent(obj, typ);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:684
 // [-2] void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QAccessibleEventC2EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ) {
   return  new QAccessibleEvent(iface, typ);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:699
 // [-2] void ~QAccessibleEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QAccessibleEventD2Ev(void *this_) {
   delete (QAccessibleEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:701
 // [4] QAccessible::Event type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAccessible::Event C_ZNK16QAccessibleEvent4typeEv(void *this_) {
   return (QAccessible::Event)((QAccessibleEvent*)this_)->type();
 }
@@ -54,7 +54,7 @@ QAccessible::Event C_ZNK16QAccessibleEvent4typeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:702
 // [8] QObject * object()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK16QAccessibleEvent6objectEv(void *this_) {
   return (void*)((QAccessibleEvent*)this_)->object();
 }
@@ -62,7 +62,7 @@ void* C_ZNK16QAccessibleEvent6objectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:703
 // [4] QAccessible::Id uniqueId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAccessible::Id C_ZNK16QAccessibleEvent8uniqueIdEv(void *this_) {
   return (QAccessible::Id)((QAccessibleEvent*)this_)->uniqueId();
 }
@@ -70,7 +70,7 @@ QAccessible::Id C_ZNK16QAccessibleEvent8uniqueIdEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:705
 // [-2] void setChild(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QAccessibleEvent8setChildEi(void *this_, int chld) {
   ((QAccessibleEvent*)this_)->setChild(chld);
 }
@@ -78,7 +78,7 @@ void C_ZN16QAccessibleEvent8setChildEi(void *this_, int chld) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:706
 // [4] int child()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK16QAccessibleEvent5childEv(void *this_) {
   return (int)((QAccessibleEvent*)this_)->child();
 }
@@ -86,7 +86,7 @@ int C_ZNK16QAccessibleEvent5childEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:708
 // [8] QAccessibleInterface * accessibleInterface()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK16QAccessibleEvent19accessibleInterfaceEv(void *this_) {
   return (void*)((QAccessibleEvent*)this_)->accessibleInterface();
 }

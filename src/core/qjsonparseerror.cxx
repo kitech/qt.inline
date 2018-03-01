@@ -21,14 +21,14 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:73
 // [8] QString errorString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QJsonParseError11errorStringEv(void *this_) {
   auto rv = ((QJsonParseError*)this_)->errorString();
 return new QString(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QJsonParseErrorD2Ev(void *this_) {
   delete (QJsonParseError*)(this_);
 }

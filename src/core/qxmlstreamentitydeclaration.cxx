@@ -23,21 +23,21 @@ MyQXmlStreamEntityDeclaration() : QXmlStreamEntityDeclaration() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:286
 // [-2] void QXmlStreamEntityDeclaration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN27QXmlStreamEntityDeclarationC2Ev() {
   return  new QXmlStreamEntityDeclaration();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:288
 // [-2] void ~QXmlStreamEntityDeclaration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN27QXmlStreamEntityDeclarationD2Ev(void *this_) {
   delete (QXmlStreamEntityDeclaration*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:300
 // [88] QXmlStreamEntityDeclaration & operator=(const class QXmlStreamEntityDeclaration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN27QXmlStreamEntityDeclarationaSERKS_(void *this_, QXmlStreamEntityDeclaration* arg0) {
   auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(*arg0);
 return &rv;
@@ -46,7 +46,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:301
 // [88] QXmlStreamEntityDeclaration & operator=(class QXmlStreamEntityDeclaration &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN27QXmlStreamEntityDeclarationaSEOS_(void *this_, QXmlStreamEntityDeclaration && other) {
   auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(other);
 return &rv;
@@ -55,7 +55,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:313
 // [16] QStringRef name()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK27QXmlStreamEntityDeclaration4nameEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->name();
 return new QStringRef(rv);
@@ -64,7 +64,7 @@ return new QStringRef(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:314
 // [16] QStringRef notationName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK27QXmlStreamEntityDeclaration12notationNameEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->notationName();
 return new QStringRef(rv);
@@ -73,7 +73,7 @@ return new QStringRef(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:315
 // [16] QStringRef systemId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK27QXmlStreamEntityDeclaration8systemIdEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->systemId();
 return new QStringRef(rv);
@@ -82,7 +82,7 @@ return new QStringRef(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:316
 // [16] QStringRef publicId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK27QXmlStreamEntityDeclaration8publicIdEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->publicId();
 return new QStringRef(rv);
@@ -91,7 +91,7 @@ return new QStringRef(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:317
 // [16] QStringRef value()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK27QXmlStreamEntityDeclaration5valueEv(void *this_) {
   auto rv = ((QXmlStreamEntityDeclaration*)this_)->value();
 return new QStringRef(rv);
@@ -100,7 +100,7 @@ return new QStringRef(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:318
 // [1] bool operator==(const class QXmlStreamEntityDeclaration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK27QXmlStreamEntityDeclarationeqERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
   return (bool)((QXmlStreamEntityDeclaration*)this_)->operator==(*other);
 }
@@ -108,7 +108,7 @@ bool C_ZNK27QXmlStreamEntityDeclarationeqERKS_(void *this_, QXmlStreamEntityDecl
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:325
 // [1] bool operator!=(const class QXmlStreamEntityDeclaration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK27QXmlStreamEntityDeclarationneERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
   return (bool)((QXmlStreamEntityDeclaration*)this_)->operator!=(*other);
 }

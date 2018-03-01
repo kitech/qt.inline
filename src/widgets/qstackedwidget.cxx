@@ -36,7 +36,7 @@ MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:82
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QStackedWidget5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QStackedWidget*)this_)->QStackedWidget::event(e);
 }
@@ -44,7 +44,7 @@ bool C_ZN14QStackedWidget5eventEP6QEvent(void *this_, QEvent * e) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStackedWidget10metaObjectEv(void *this_) {
   return (void*)((QStackedWidget*)this_)->metaObject();
 }
@@ -52,7 +52,7 @@ void* C_ZNK14QStackedWidget10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:59
 // [-2] void QStackedWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQStackedWidget*)(0);
   return  new MyQStackedWidget(parent);
@@ -60,14 +60,14 @@ void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:60
 // [-2] void ~QStackedWidget()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidgetD2Ev(void *this_) {
   delete (QStackedWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:62
 // [4] int addWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget9addWidgetEP7QWidget(void *this_, QWidget * w) {
   return (int)((QStackedWidget*)this_)->addWidget(w);
 }
@@ -75,7 +75,7 @@ int C_ZN14QStackedWidget9addWidgetEP7QWidget(void *this_, QWidget * w) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:63
 // [4] int insertWidget(int, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget12insertWidgetEiP7QWidget(void *this_, int index, QWidget * w) {
   return (int)((QStackedWidget*)this_)->insertWidget(index, w);
 }
@@ -83,7 +83,7 @@ int C_ZN14QStackedWidget12insertWidgetEiP7QWidget(void *this_, int index, QWidge
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:64
 // [-2] void removeWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget12removeWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QStackedWidget*)this_)->removeWidget(w);
 }
@@ -91,7 +91,7 @@ void C_ZN14QStackedWidget12removeWidgetEP7QWidget(void *this_, QWidget * w) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:66
 // [8] QWidget * currentWidget()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStackedWidget13currentWidgetEv(void *this_) {
   return (void*)((QStackedWidget*)this_)->currentWidget();
 }
@@ -99,7 +99,7 @@ void* C_ZNK14QStackedWidget13currentWidgetEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:67
 // [4] int currentIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget12currentIndexEv(void *this_) {
   return (int)((QStackedWidget*)this_)->currentIndex();
 }
@@ -107,7 +107,7 @@ int C_ZNK14QStackedWidget12currentIndexEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:69
 // [4] int indexOf(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * arg0) {
   return (int)((QStackedWidget*)this_)->indexOf(arg0);
 }
@@ -115,7 +115,7 @@ int C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * arg0) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:70
 // [8] QWidget * widget(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStackedWidget6widgetEi(void *this_, int arg0) {
   return (void*)((QStackedWidget*)this_)->widget(arg0);
 }
@@ -123,7 +123,7 @@ void* C_ZNK14QStackedWidget6widgetEi(void *this_, int arg0) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:71
 // [4] int count()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget5countEv(void *this_) {
   return (int)((QStackedWidget*)this_)->count();
 }
@@ -131,7 +131,7 @@ int C_ZNK14QStackedWidget5countEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:74
 // [-2] void setCurrentIndex(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget15setCurrentIndexEi(void *this_, int index) {
   ((QStackedWidget*)this_)->setCurrentIndex(index);
 }
@@ -139,7 +139,7 @@ void C_ZN14QStackedWidget15setCurrentIndexEi(void *this_, int index) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:75
 // [-2] void setCurrentWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QStackedWidget*)this_)->setCurrentWidget(w);
 }
@@ -147,7 +147,7 @@ void C_ZN14QStackedWidget16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:78
 // [-2] void currentChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget14currentChangedEi(void *this_, int arg0) {
   ((QStackedWidget*)this_)->currentChanged(arg0);
 }
@@ -155,7 +155,7 @@ void C_ZN14QStackedWidget14currentChangedEi(void *this_, int arg0) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:79
 // [-2] void widgetRemoved(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget13widgetRemovedEi(void *this_, int index) {
   ((QStackedWidget*)this_)->widgetRemoved(index);
 }

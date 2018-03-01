@@ -21,14 +21,14 @@ public:
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:61
 // [-2] void ~QQmlExtensionInterface()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QQmlExtensionInterfaceD2Ev(void *this_) {
   delete (QQmlExtensionInterface*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:62
 // [-2] void initializeEngine(class QQmlEngine *, const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QQmlExtensionInterface16initializeEngineEP10QQmlEnginePKc(void *this_, QQmlEngine * engine, const char * uri) {
   ((QQmlExtensionInterface*)this_)->initializeEngine(engine, uri);
 }

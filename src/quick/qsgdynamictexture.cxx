@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:131
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGDynamicTexture10metaObjectEv(void *this_) {
   return (void*)((QSGDynamicTexture*)this_)->metaObject();
 }
@@ -29,13 +29,13 @@ void* C_ZNK17QSGDynamicTexture10metaObjectEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:133
 // [1] bool updateTexture()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QSGDynamicTexture13updateTextureEv(void *this_) {
   return (bool)((QSGDynamicTexture*)this_)->updateTexture();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGDynamicTextureD2Ev(void *this_) {
   delete (QSGDynamicTexture*)(this_);
 }

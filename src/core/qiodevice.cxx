@@ -88,11 +88,11 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:166
 // [8] qint64 readData(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:167
 // [8] qint64 readLineData(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QIODevice*)this_)->QIODevice::readLineData(data, maxlen);
 }
@@ -100,11 +100,11 @@ qint64 C_ZN9QIODevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen)
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:168
 // [8] qint64 writeData(const char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:170
 // [-2] void setOpenMode(QIODevice::OpenMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
   ((QIODevice*)this_)->QIODevice::setOpenMode(openMode);
 }
@@ -112,7 +112,7 @@ void C_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:172
 // [-2] void setErrorString(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice14setErrorStringERK7QString(void *this_, QString* errorString) {
   ((QIODevice*)this_)->QIODevice::setErrorString(*errorString);
 }
@@ -120,7 +120,7 @@ void C_ZN9QIODevice14setErrorStringERK7QString(void *this_, QString* errorString
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:68
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QIODevice10metaObjectEv(void *this_) {
   return (void*)((QIODevice*)this_)->metaObject();
 }
@@ -128,7 +128,7 @@ void* C_ZNK9QIODevice10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:83
 // [-2] void QIODevice()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODeviceC2Ev() {
   auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice();
@@ -136,7 +136,7 @@ void* C_ZN9QIODeviceC2Ev() {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:85
 // [-2] void QIODevice(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODeviceC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice(parent);
@@ -144,14 +144,14 @@ void* C_ZN9QIODeviceC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:87
 // [-2] void ~QIODevice()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODeviceD2Ev(void *this_) {
   delete (QIODevice*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:89
 // [4] QIODevice::OpenMode openMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QIODevice::OpenMode* C_ZNK9QIODevice8openModeEv(void *this_) {
   auto rv = ((QIODevice*)this_)->openMode();
 return new QIODevice::OpenMode(rv);
@@ -160,7 +160,7 @@ return new QIODevice::OpenMode(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:91
 // [-2] void setTextModeEnabled(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice18setTextModeEnabledEb(void *this_, bool enabled) {
   ((QIODevice*)this_)->setTextModeEnabled(enabled);
 }
@@ -168,7 +168,7 @@ void C_ZN9QIODevice18setTextModeEnabledEb(void *this_, bool enabled) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:92
 // [1] bool isTextModeEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice17isTextModeEnabledEv(void *this_) {
   return (bool)((QIODevice*)this_)->isTextModeEnabled();
 }
@@ -176,7 +176,7 @@ bool C_ZNK9QIODevice17isTextModeEnabledEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:94
 // [1] bool isOpen()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice6isOpenEv(void *this_) {
   return (bool)((QIODevice*)this_)->isOpen();
 }
@@ -184,7 +184,7 @@ bool C_ZNK9QIODevice6isOpenEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:95
 // [1] bool isReadable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice10isReadableEv(void *this_) {
   return (bool)((QIODevice*)this_)->isReadable();
 }
@@ -192,7 +192,7 @@ bool C_ZNK9QIODevice10isReadableEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:96
 // [1] bool isWritable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice10isWritableEv(void *this_) {
   return (bool)((QIODevice*)this_)->isWritable();
 }
@@ -200,7 +200,7 @@ bool C_ZNK9QIODevice10isWritableEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:97
 // [1] bool isSequential()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice12isSequentialEv(void *this_) {
   return (bool)((QIODevice*)this_)->isSequential();
 }
@@ -208,7 +208,7 @@ bool C_ZNK9QIODevice12isSequentialEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:99
 // [4] int readChannelCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice16readChannelCountEv(void *this_) {
   return (int)((QIODevice*)this_)->readChannelCount();
 }
@@ -216,7 +216,7 @@ int C_ZNK9QIODevice16readChannelCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:100
 // [4] int writeChannelCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice17writeChannelCountEv(void *this_) {
   return (int)((QIODevice*)this_)->writeChannelCount();
 }
@@ -224,7 +224,7 @@ int C_ZNK9QIODevice17writeChannelCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:101
 // [4] int currentReadChannel()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice18currentReadChannelEv(void *this_) {
   return (int)((QIODevice*)this_)->currentReadChannel();
 }
@@ -232,7 +232,7 @@ int C_ZNK9QIODevice18currentReadChannelEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:102
 // [-2] void setCurrentReadChannel(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice21setCurrentReadChannelEi(void *this_, int channel) {
   ((QIODevice*)this_)->setCurrentReadChannel(channel);
 }
@@ -240,7 +240,7 @@ void C_ZN9QIODevice21setCurrentReadChannelEi(void *this_, int channel) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:103
 // [4] int currentWriteChannel()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice19currentWriteChannelEv(void *this_) {
   return (int)((QIODevice*)this_)->currentWriteChannel();
 }
@@ -248,7 +248,7 @@ int C_ZNK9QIODevice19currentWriteChannelEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:104
 // [-2] void setCurrentWriteChannel(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice22setCurrentWriteChannelEi(void *this_, int channel) {
   ((QIODevice*)this_)->setCurrentWriteChannel(channel);
 }
@@ -256,7 +256,7 @@ void C_ZN9QIODevice22setCurrentWriteChannelEi(void *this_, int channel) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:106
 // [1] bool open(QIODevice::OpenMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice4openE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> mode) {
   return (bool)((QIODevice*)this_)->open(mode);
 }
@@ -264,7 +264,7 @@ bool C_ZN9QIODevice4openE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags<QIODevi
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:107
 // [-2] void close()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice5closeEv(void *this_) {
   ((QIODevice*)this_)->close();
 }
@@ -272,7 +272,7 @@ void C_ZN9QIODevice5closeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:111
 // [8] qint64 pos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QIODevice3posEv(void *this_) {
   return (qint64)((QIODevice*)this_)->pos();
 }
@@ -280,7 +280,7 @@ qint64 C_ZNK9QIODevice3posEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:112
 // [8] qint64 size()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QIODevice4sizeEv(void *this_) {
   return (qint64)((QIODevice*)this_)->size();
 }
@@ -288,7 +288,7 @@ qint64 C_ZNK9QIODevice4sizeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:113
 // [1] bool seek(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice4seekEx(void *this_, qint64 pos) {
   return (bool)((QIODevice*)this_)->seek(pos);
 }
@@ -296,7 +296,7 @@ bool C_ZN9QIODevice4seekEx(void *this_, qint64 pos) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:114
 // [1] bool atEnd()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice5atEndEv(void *this_) {
   return (bool)((QIODevice*)this_)->atEnd();
 }
@@ -304,7 +304,7 @@ bool C_ZNK9QIODevice5atEndEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:115
 // [1] bool reset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice5resetEv(void *this_) {
   return (bool)((QIODevice*)this_)->reset();
 }
@@ -312,7 +312,7 @@ bool C_ZN9QIODevice5resetEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:117
 // [8] qint64 bytesAvailable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QIODevice14bytesAvailableEv(void *this_) {
   return (qint64)((QIODevice*)this_)->bytesAvailable();
 }
@@ -320,7 +320,7 @@ qint64 C_ZNK9QIODevice14bytesAvailableEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:118
 // [8] qint64 bytesToWrite()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QIODevice12bytesToWriteEv(void *this_) {
   return (qint64)((QIODevice*)this_)->bytesToWrite();
 }
@@ -328,7 +328,7 @@ qint64 C_ZNK9QIODevice12bytesToWriteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:120
 // [8] qint64 read(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice4readEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QIODevice*)this_)->read(data, maxlen);
 }
@@ -336,7 +336,7 @@ qint64 C_ZN9QIODevice4readEPcx(void *this_, char * data, qint64 maxlen) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:121
 // [8] QByteArray read(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODevice4readEx(void *this_, qint64 maxlen) {
   auto rv = ((QIODevice*)this_)->read(maxlen);
 return new QByteArray(rv);
@@ -345,7 +345,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:122
 // [8] QByteArray readAll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODevice7readAllEv(void *this_) {
   auto rv = ((QIODevice*)this_)->readAll();
 return new QByteArray(rv);
@@ -354,7 +354,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:123
 // [8] qint64 readLine(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice8readLineEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QIODevice*)this_)->readLine(data, maxlen);
 }
@@ -362,7 +362,7 @@ qint64 C_ZN9QIODevice8readLineEPcx(void *this_, char * data, qint64 maxlen) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:124
 // [8] QByteArray readLine(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODevice8readLineEx(void *this_, qint64 maxlen) {
   auto rv = ((QIODevice*)this_)->readLine(maxlen);
 return new QByteArray(rv);
@@ -371,7 +371,7 @@ return new QByteArray(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:125
 // [1] bool canReadLine()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice11canReadLineEv(void *this_) {
   return (bool)((QIODevice*)this_)->canReadLine();
 }
@@ -379,7 +379,7 @@ bool C_ZNK9QIODevice11canReadLineEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:127
 // [-2] void startTransaction()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice16startTransactionEv(void *this_) {
   ((QIODevice*)this_)->startTransaction();
 }
@@ -387,7 +387,7 @@ void C_ZN9QIODevice16startTransactionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:128
 // [-2] void commitTransaction()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice17commitTransactionEv(void *this_) {
   ((QIODevice*)this_)->commitTransaction();
 }
@@ -395,7 +395,7 @@ void C_ZN9QIODevice17commitTransactionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:129
 // [-2] void rollbackTransaction()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice19rollbackTransactionEv(void *this_) {
   ((QIODevice*)this_)->rollbackTransaction();
 }
@@ -403,7 +403,7 @@ void C_ZN9QIODevice19rollbackTransactionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:130
 // [1] bool isTransactionStarted()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice20isTransactionStartedEv(void *this_) {
   return (bool)((QIODevice*)this_)->isTransactionStarted();
 }
@@ -411,7 +411,7 @@ bool C_ZNK9QIODevice20isTransactionStartedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:132
 // [8] qint64 write(const char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice5writeEPKcx(void *this_, const char * data, qint64 len_) {
   return (qint64)((QIODevice*)this_)->write(data, len_);
 }
@@ -419,7 +419,7 @@ qint64 C_ZN9QIODevice5writeEPKcx(void *this_, const char * data, qint64 len_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:133
 // [8] qint64 write(const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice5writeEPKc(void *this_, const char * data) {
   return (qint64)((QIODevice*)this_)->write(data);
 }
@@ -427,7 +427,7 @@ qint64 C_ZN9QIODevice5writeEPKc(void *this_, const char * data) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:134
 // [8] qint64 write(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice5writeERK10QByteArray(void *this_, QByteArray* data) {
   return (qint64)((QIODevice*)this_)->write(*data);
 }
@@ -435,7 +435,7 @@ qint64 C_ZN9QIODevice5writeERK10QByteArray(void *this_, QByteArray* data) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:137
 // [8] qint64 peek(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice4peekEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QIODevice*)this_)->peek(data, maxlen);
 }
@@ -443,7 +443,7 @@ qint64 C_ZN9QIODevice4peekEPcx(void *this_, char * data, qint64 maxlen) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:138
 // [8] QByteArray peek(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODevice4peekEx(void *this_, qint64 maxlen) {
   auto rv = ((QIODevice*)this_)->peek(maxlen);
 return new QByteArray(rv);
@@ -452,7 +452,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:139
 // [8] qint64 skip(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice4skipEx(void *this_, qint64 maxSize) {
   return (qint64)((QIODevice*)this_)->skip(maxSize);
 }
@@ -460,7 +460,7 @@ qint64 C_ZN9QIODevice4skipEx(void *this_, qint64 maxSize) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:141
 // [1] bool waitForReadyRead(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice16waitForReadyReadEi(void *this_, int msecs) {
   return (bool)((QIODevice*)this_)->waitForReadyRead(msecs);
 }
@@ -468,7 +468,7 @@ bool C_ZN9QIODevice16waitForReadyReadEi(void *this_, int msecs) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:142
 // [1] bool waitForBytesWritten(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice19waitForBytesWrittenEi(void *this_, int msecs) {
   return (bool)((QIODevice*)this_)->waitForBytesWritten(msecs);
 }
@@ -476,7 +476,7 @@ bool C_ZN9QIODevice19waitForBytesWrittenEi(void *this_, int msecs) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:144
 // [-2] void ungetChar(char)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice9ungetCharEc(void *this_, char c) {
   ((QIODevice*)this_)->ungetChar(c);
 }
@@ -484,7 +484,7 @@ void C_ZN9QIODevice9ungetCharEc(void *this_, char c) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:145
 // [1] bool putChar(char)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice7putCharEc(void *this_, char c) {
   return (bool)((QIODevice*)this_)->putChar(c);
 }
@@ -492,7 +492,7 @@ bool C_ZN9QIODevice7putCharEc(void *this_, char c) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:146
 // [1] bool getChar(char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice7getCharEPc(void *this_, char * c) {
   return (bool)((QIODevice*)this_)->getChar(c);
 }
@@ -500,7 +500,7 @@ bool C_ZN9QIODevice7getCharEPc(void *this_, char * c) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:148
 // [8] QString errorString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QIODevice11errorStringEv(void *this_) {
   auto rv = ((QIODevice*)this_)->errorString();
 return new QString(rv);
@@ -509,7 +509,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:152
 // [-2] void readyRead()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice9readyReadEv(void *this_) {
   ((QIODevice*)this_)->readyRead();
 }
@@ -517,7 +517,7 @@ void C_ZN9QIODevice9readyReadEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:153
 // [-2] void channelReadyRead(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice16channelReadyReadEi(void *this_, int channel) {
   ((QIODevice*)this_)->channelReadyRead(channel);
 }
@@ -525,7 +525,7 @@ void C_ZN9QIODevice16channelReadyReadEi(void *this_, int channel) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:154
 // [-2] void bytesWritten(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice12bytesWrittenEx(void *this_, qint64 bytes) {
   ((QIODevice*)this_)->bytesWritten(bytes);
 }
@@ -533,7 +533,7 @@ void C_ZN9QIODevice12bytesWrittenEx(void *this_, qint64 bytes) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:155
 // [-2] void channelBytesWritten(int, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice19channelBytesWrittenEix(void *this_, int channel, qint64 bytes) {
   ((QIODevice*)this_)->channelBytesWritten(channel, bytes);
 }
@@ -541,7 +541,7 @@ void C_ZN9QIODevice19channelBytesWrittenEix(void *this_, int channel, qint64 byt
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:156
 // [-2] void aboutToClose()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice12aboutToCloseEv(void *this_) {
   ((QIODevice*)this_)->aboutToClose();
 }
@@ -549,7 +549,7 @@ void C_ZN9QIODevice12aboutToCloseEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:157
 // [-2] void readChannelFinished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice19readChannelFinishedEv(void *this_) {
   ((QIODevice*)this_)->readChannelFinished();
 }

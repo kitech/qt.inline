@@ -25,19 +25,19 @@ MyQStyleOptionGraphicsItem(int version) : QStyleOptionGraphicsItem(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:669
 // [-2] void QStyleOptionGraphicsItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
   return  new QStyleOptionGraphicsItem();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:671
 // [8] qreal levelOfDetailFromTransform(const class QTransform &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZN24QStyleOptionGraphicsItem26levelOfDetailFromTransformERK10QTransform(QTransform* worldTransform) {
   return (qreal)QStyleOptionGraphicsItem::levelOfDetailFromTransform(*worldTransform);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QStyleOptionGraphicsItemD2Ev(void *this_) {
   delete (QStyleOptionGraphicsItem*)(this_);
 }

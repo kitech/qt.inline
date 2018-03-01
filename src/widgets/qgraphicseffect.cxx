@@ -110,11 +110,11 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:99
 // [-2] void draw(class QPainter *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:100
 // [-2] void sourceChanged(QGraphicsEffect::ChangeFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(void *this_, QFlags<QGraphicsEffect::ChangeFlag> flags) {
   ((QGraphicsEffect*)this_)->QGraphicsEffect::sourceChanged(flags);
 }
@@ -122,7 +122,7 @@ void C_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(void *this_,
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:101
 // [-2] void updateBoundingRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect18updateBoundingRectEv(void *this_) {
   ((QGraphicsEffect*)this_)->QGraphicsEffect::updateBoundingRect();
 }
@@ -130,7 +130,7 @@ void C_ZN15QGraphicsEffect18updateBoundingRectEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:103
 // [1] bool sourceIsPixmap()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK15QGraphicsEffect14sourceIsPixmapEv(void *this_) {
   return (bool)((QGraphicsEffect*)this_)->QGraphicsEffect::sourceIsPixmap();
 }
@@ -138,7 +138,7 @@ bool C_ZNK15QGraphicsEffect14sourceIsPixmapEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:104
 // [32] QRectF sourceBoundingRect(Qt::CoordinateSystem)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(void *this_, Qt::CoordinateSystem system) {
   auto rv = ((QGraphicsEffect*)this_)->QGraphicsEffect::sourceBoundingRect(system);
 return new QRectF(rv);
@@ -147,7 +147,7 @@ return new QRectF(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:105
 // [-2] void drawSource(class QPainter *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect10drawSourceEP8QPainter(void *this_, QPainter * painter) {
   ((QGraphicsEffect*)this_)->QGraphicsEffect::drawSource(painter);
 }
@@ -155,7 +155,7 @@ void C_ZN15QGraphicsEffect10drawSourceEP8QPainter(void *this_, QPainter * painte
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:106
 // [32] QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(void *this_, Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
   auto rv = ((QGraphicsEffect*)this_)->QGraphicsEffect::sourcePixmap(system, offset, mode);
 return new QPixmap(rv);
@@ -164,7 +164,7 @@ return new QPixmap(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:64
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsEffect10metaObjectEv(void *this_) {
   return (void*)((QGraphicsEffect*)this_)->metaObject();
 }
@@ -172,7 +172,7 @@ void* C_ZNK15QGraphicsEffect10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:82
 // [-2] void QGraphicsEffect(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsEffect*)(0);
   return 0; // new MyQGraphicsEffect(parent);
@@ -180,14 +180,14 @@ void* C_ZN15QGraphicsEffectC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:83
 // [-2] void ~QGraphicsEffect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffectD2Ev(void *this_) {
   delete (QGraphicsEffect*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:85
 // [32] QRectF boundingRectFor(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsEffect15boundingRectForERK6QRectF(void *this_, QRectF* sourceRect) {
   auto rv = ((QGraphicsEffect*)this_)->boundingRectFor(*sourceRect);
 return new QRectF(rv);
@@ -196,7 +196,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:86
 // [32] QRectF boundingRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsEffect12boundingRectEv(void *this_) {
   auto rv = ((QGraphicsEffect*)this_)->boundingRect();
 return new QRectF(rv);
@@ -205,7 +205,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:88
 // [1] bool isEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK15QGraphicsEffect9isEnabledEv(void *this_) {
   return (bool)((QGraphicsEffect*)this_)->isEnabled();
 }
@@ -213,7 +213,7 @@ bool C_ZNK15QGraphicsEffect9isEnabledEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:91
 // [-2] void setEnabled(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect10setEnabledEb(void *this_, bool enable) {
   ((QGraphicsEffect*)this_)->setEnabled(enable);
 }
@@ -221,7 +221,7 @@ void C_ZN15QGraphicsEffect10setEnabledEb(void *this_, bool enable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:92
 // [-2] void update()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect6updateEv(void *this_) {
   ((QGraphicsEffect*)this_)->update();
 }
@@ -229,7 +229,7 @@ void C_ZN15QGraphicsEffect6updateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:95
 // [-2] void enabledChanged(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect14enabledChangedEb(void *this_, bool enabled) {
   ((QGraphicsEffect*)this_)->enabledChanged(enabled);
 }

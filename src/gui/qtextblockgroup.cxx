@@ -61,7 +61,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:98
 // [-2] void blockInserted(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockInserted(*block);
 }
@@ -69,7 +69,7 @@ void C_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(void *this_, QTextBlock
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:99
 // [-2] void blockRemoved(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockRemoved(*block);
 }
@@ -77,7 +77,7 @@ void C_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void *this_, QTextBlock*
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:100
 // [-2] void blockFormatChanged(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockFormatChanged(*block);
 }
@@ -85,7 +85,7 @@ void C_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void *this_, QText
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:92
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTextBlockGroup10metaObjectEv(void *this_) {
   return (void*)((QTextBlockGroup*)this_)->metaObject();
 }

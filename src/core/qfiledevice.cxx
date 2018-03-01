@@ -64,7 +64,7 @@ MyQFileDevice(QObject * parent) : QFileDevice(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:142
 // [8] qint64 readData(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN11QFileDevice8readDataEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QFileDevice*)this_)->QFileDevice::readData(data, maxlen);
 }
@@ -72,7 +72,7 @@ qint64 C_ZN11QFileDevice8readDataEPcx(void *this_, char * data, qint64 maxlen) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:143
 // [8] qint64 writeData(const char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN11QFileDevice9writeDataEPKcx(void *this_, const char * data, qint64 len_) {
   return (qint64)((QFileDevice*)this_)->QFileDevice::writeData(data, len_);
 }
@@ -80,7 +80,7 @@ qint64 C_ZN11QFileDevice9writeDataEPKcx(void *this_, const char * data, qint64 l
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:144
 // [8] qint64 readLineData(char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN11QFileDevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QFileDevice*)this_)->QFileDevice::readLineData(data, maxlen);
 }
@@ -88,7 +88,7 @@ qint64 C_ZN11QFileDevice12readLineDataEPcx(void *this_, char * data, qint64 maxl
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDevice10metaObjectEv(void *this_) {
   return (void*)((QFileDevice*)this_)->metaObject();
 }
@@ -96,14 +96,14 @@ void* C_ZNK11QFileDevice10metaObjectEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:98
 // [-2] void ~QFileDevice()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDeviceD2Ev(void *this_) {
   delete (QFileDevice*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:100
 // [4] QFileDevice::FileError error()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QFileDevice::FileError C_ZNK11QFileDevice5errorEv(void *this_) {
   return (QFileDevice::FileError)((QFileDevice*)this_)->error();
 }
@@ -111,7 +111,7 @@ QFileDevice::FileError C_ZNK11QFileDevice5errorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:101
 // [-2] void unsetError()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDevice10unsetErrorEv(void *this_) {
   ((QFileDevice*)this_)->unsetError();
 }
@@ -119,7 +119,7 @@ void C_ZN11QFileDevice10unsetErrorEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:103
 // [-2] void close()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDevice5closeEv(void *this_) {
   ((QFileDevice*)this_)->close();
 }
@@ -127,7 +127,7 @@ void C_ZN11QFileDevice5closeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:105
 // [1] bool isSequential()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QFileDevice12isSequentialEv(void *this_) {
   return (bool)((QFileDevice*)this_)->isSequential();
 }
@@ -135,7 +135,7 @@ bool C_ZNK11QFileDevice12isSequentialEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:107
 // [4] int handle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK11QFileDevice6handleEv(void *this_) {
   return (int)((QFileDevice*)this_)->handle();
 }
@@ -143,7 +143,7 @@ int C_ZNK11QFileDevice6handleEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:108
 // [8] QString fileName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDevice8fileNameEv(void *this_) {
   auto rv = ((QFileDevice*)this_)->fileName();
 return new QString(rv);
@@ -152,7 +152,7 @@ return new QString(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:110
 // [8] qint64 pos()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK11QFileDevice3posEv(void *this_) {
   return (qint64)((QFileDevice*)this_)->pos();
 }
@@ -160,7 +160,7 @@ qint64 C_ZNK11QFileDevice3posEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:111
 // [1] bool seek(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice4seekEx(void *this_, qint64 offset) {
   return (bool)((QFileDevice*)this_)->seek(offset);
 }
@@ -168,7 +168,7 @@ bool C_ZN11QFileDevice4seekEx(void *this_, qint64 offset) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:112
 // [1] bool atEnd()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QFileDevice5atEndEv(void *this_) {
   return (bool)((QFileDevice*)this_)->atEnd();
 }
@@ -176,7 +176,7 @@ bool C_ZNK11QFileDevice5atEndEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:113
 // [1] bool flush()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice5flushEv(void *this_) {
   return (bool)((QFileDevice*)this_)->flush();
 }
@@ -184,7 +184,7 @@ bool C_ZN11QFileDevice5flushEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:115
 // [8] qint64 size()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK11QFileDevice4sizeEv(void *this_) {
   return (qint64)((QFileDevice*)this_)->size();
 }
@@ -192,7 +192,7 @@ qint64 C_ZNK11QFileDevice4sizeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:117
 // [1] bool resize(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice6resizeEx(void *this_, qint64 sz) {
   return (bool)((QFileDevice*)this_)->resize(sz);
 }
@@ -200,7 +200,7 @@ bool C_ZN11QFileDevice6resizeEx(void *this_, qint64 sz) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:118
 // [4] QFileDevice::Permissions permissions()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QFileDevice::Permissions* C_ZNK11QFileDevice11permissionsEv(void *this_) {
   auto rv = ((QFileDevice*)this_)->permissions();
 return new QFileDevice::Permissions(rv);
@@ -209,7 +209,7 @@ return new QFileDevice::Permissions(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:119
 // [1] bool setPermissions(QFileDevice::Permissions)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice14setPermissionsE6QFlagsINS_10PermissionEE(void *this_, QFlags<QFileDevice::Permission> permissionSpec) {
   return (bool)((QFileDevice*)this_)->setPermissions(permissionSpec);
 }
@@ -217,7 +217,7 @@ bool C_ZN11QFileDevice14setPermissionsE6QFlagsINS_10PermissionEE(void *this_, QF
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:127
 // [8] uchar * map(qint64, qint64, enum QFileDevice::MemoryMapFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QFileDevice3mapExxNS_14MemoryMapFlagsE(void *this_, qint64 offset, qint64 size, QFileDevice::MemoryMapFlags flags) {
   return (void*)((QFileDevice*)this_)->map(offset, size, flags);
 }
@@ -225,7 +225,7 @@ void* C_ZN11QFileDevice3mapExxNS_14MemoryMapFlagsE(void *this_, qint64 offset, q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:128
 // [1] bool unmap(uchar *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice5unmapEPh(void *this_, uchar * address) {
   return (bool)((QFileDevice*)this_)->unmap(address);
 }
@@ -233,7 +233,7 @@ bool C_ZN11QFileDevice5unmapEPh(void *this_, uchar * address) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:130
 // [8] QDateTime fileTime(class QFileDevice::FileTime)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDevice8fileTimeENS_8FileTimeE(void *this_, QFileDevice::FileTime time) {
   auto rv = ((QFileDevice*)this_)->fileTime(time);
 return new QDateTime(rv);
@@ -242,7 +242,7 @@ return new QDateTime(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:131
 // [1] bool setFileTime(const class QDateTime &, class QFileDevice::FileTime)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice11setFileTimeERK9QDateTimeNS_8FileTimeE(void *this_, QDateTime* newDate, QFileDevice::FileTime fileTime) {
   return (bool)((QFileDevice*)this_)->setFileTime(*newDate, fileTime);
 }

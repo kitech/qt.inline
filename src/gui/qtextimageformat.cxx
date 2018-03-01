@@ -25,14 +25,14 @@ MyQTextImageFormat(const QTextFormat & format) : QTextImageFormat(format) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:735
 // [-2] void QTextImageFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextImageFormatC2Ev() {
   return  new QTextImageFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:737
 // [1] bool isValid()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK16QTextImageFormat7isValidEv(void *this_) {
   return (bool)((QTextImageFormat*)this_)->isValid();
 }
@@ -40,7 +40,7 @@ bool C_ZNK16QTextImageFormat7isValidEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:739
 // [-2] void setName(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, QString* name) {
   ((QTextImageFormat*)this_)->setName(*name);
 }
@@ -48,7 +48,7 @@ void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, QString* name) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:740
 // [8] QString name()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK16QTextImageFormat4nameEv(void *this_) {
   auto rv = ((QTextImageFormat*)this_)->name();
 return new QString(rv);
@@ -57,7 +57,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:743
 // [-2] void setWidth(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat8setWidthEd(void *this_, qreal width) {
   ((QTextImageFormat*)this_)->setWidth(width);
 }
@@ -65,7 +65,7 @@ void C_ZN16QTextImageFormat8setWidthEd(void *this_, qreal width) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:744
 // [8] qreal width()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextImageFormat5widthEv(void *this_) {
   return (qreal)((QTextImageFormat*)this_)->width();
 }
@@ -73,7 +73,7 @@ qreal C_ZNK16QTextImageFormat5widthEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:747
 // [-2] void setHeight(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat9setHeightEd(void *this_, qreal height) {
   ((QTextImageFormat*)this_)->setHeight(height);
 }
@@ -81,13 +81,13 @@ void C_ZN16QTextImageFormat9setHeightEd(void *this_, qreal height) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:748
 // [8] qreal height()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextImageFormat6heightEv(void *this_) {
   return (qreal)((QTextImageFormat*)this_)->height();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormatD2Ev(void *this_) {
   delete (QTextImageFormat*)(this_);
 }

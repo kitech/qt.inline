@@ -21,7 +21,7 @@ public:
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:152
 // [1] bool operator!()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK7QBitRefntEv(void *this_) {
   return (bool)((QBitRef*)this_)->operator!();
 }
@@ -29,7 +29,7 @@ bool C_ZNK7QBitRefntEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:153
 // [16] QBitRef & operator=(const class QBitRef &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QBitRefaSERKS_(void *this_, QBitRef* val) {
   auto& rv = ((QBitRef*)this_)->operator=(*val);
 return &rv;
@@ -38,14 +38,14 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:154
 // [16] QBitRef & operator=(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN7QBitRefaSEb(void *this_, bool val) {
   auto& rv = ((QBitRef*)this_)->operator=(val);
 return &rv;
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN7QBitRefD2Ev(void *this_) {
   delete (QBitRef*)(this_);
 }

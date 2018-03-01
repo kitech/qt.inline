@@ -23,14 +23,14 @@ MyQTextBlock() : QTextBlock() {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:206
 // [-2] void QTextBlock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextBlockC2Ev() {
   return  new QTextBlock();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:208
 // [16] QTextBlock & operator=(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextBlockaSERKS_(void *this_, QTextBlock* o) {
   auto& rv = ((QTextBlock*)this_)->operator=(*o);
 return &rv;
@@ -39,7 +39,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:210
 // [1] bool isValid()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlock7isValidEv(void *this_) {
   return (bool)((QTextBlock*)this_)->isValid();
 }
@@ -47,7 +47,7 @@ bool C_ZNK10QTextBlock7isValidEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:212
 // [1] bool operator==(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlockeqERKS_(void *this_, QTextBlock* o) {
   return (bool)((QTextBlock*)this_)->operator==(*o);
 }
@@ -55,7 +55,7 @@ bool C_ZNK10QTextBlockeqERKS_(void *this_, QTextBlock* o) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:213
 // [1] bool operator!=(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlockneERKS_(void *this_, QTextBlock* o) {
   return (bool)((QTextBlock*)this_)->operator!=(*o);
 }
@@ -63,7 +63,7 @@ bool C_ZNK10QTextBlockneERKS_(void *this_, QTextBlock* o) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:214
 // [1] bool operator<(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlockltERKS_(void *this_, QTextBlock* o) {
   return (bool)((QTextBlock*)this_)->operator<(*o);
 }
@@ -71,7 +71,7 @@ bool C_ZNK10QTextBlockltERKS_(void *this_, QTextBlock* o) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:216
 // [4] int position()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock8positionEv(void *this_) {
   return (int)((QTextBlock*)this_)->position();
 }
@@ -79,7 +79,7 @@ int C_ZNK10QTextBlock8positionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:217
 // [4] int length()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock6lengthEv(void *this_) {
   return (int)((QTextBlock*)this_)->length();
 }
@@ -87,7 +87,7 @@ int C_ZNK10QTextBlock6lengthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:218
 // [1] bool contains(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlock8containsEi(void *this_, int position) {
   return (bool)((QTextBlock*)this_)->contains(position);
 }
@@ -95,7 +95,7 @@ bool C_ZNK10QTextBlock8containsEi(void *this_, int position) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:220
 // [8] QTextLayout * layout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock6layoutEv(void *this_) {
   return (void*)((QTextBlock*)this_)->layout();
 }
@@ -103,7 +103,7 @@ void* C_ZNK10QTextBlock6layoutEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:221
 // [-2] void clearLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11clearLayoutEv(void *this_) {
   ((QTextBlock*)this_)->clearLayout();
 }
@@ -111,7 +111,7 @@ void C_ZN10QTextBlock11clearLayoutEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:222
 // [16] QTextBlockFormat blockFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock11blockFormatEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->blockFormat();
 return new QTextBlockFormat(rv);
@@ -120,7 +120,7 @@ return new QTextBlockFormat(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:223
 // [4] int blockFormatIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock16blockFormatIndexEv(void *this_) {
   return (int)((QTextBlock*)this_)->blockFormatIndex();
 }
@@ -128,7 +128,7 @@ int C_ZNK10QTextBlock16blockFormatIndexEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:224
 // [16] QTextCharFormat charFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock10charFormatEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->charFormat();
 return new QTextCharFormat(rv);
@@ -137,7 +137,7 @@ return new QTextCharFormat(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:225
 // [4] int charFormatIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock15charFormatIndexEv(void *this_) {
   return (int)((QTextBlock*)this_)->charFormatIndex();
 }
@@ -145,7 +145,7 @@ int C_ZNK10QTextBlock15charFormatIndexEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:227
 // [4] Qt::LayoutDirection textDirection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::LayoutDirection C_ZNK10QTextBlock13textDirectionEv(void *this_) {
   return (Qt::LayoutDirection)((QTextBlock*)this_)->textDirection();
 }
@@ -153,7 +153,7 @@ Qt::LayoutDirection C_ZNK10QTextBlock13textDirectionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:229
 // [8] QString text()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock4textEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->text();
 return new QString(rv);
@@ -162,7 +162,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:233
 // [8] const QTextDocument * document()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock8documentEv(void *this_) {
   return (void*)((QTextBlock*)this_)->document();
 }
@@ -170,7 +170,7 @@ void* C_ZNK10QTextBlock8documentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:235
 // [8] QTextList * textList()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock8textListEv(void *this_) {
   return (void*)((QTextBlock*)this_)->textList();
 }
@@ -178,7 +178,7 @@ void* C_ZNK10QTextBlock8textListEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:237
 // [8] QTextBlockUserData * userData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock8userDataEv(void *this_) {
   return (void*)((QTextBlock*)this_)->userData();
 }
@@ -186,7 +186,7 @@ void* C_ZNK10QTextBlock8userDataEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:238
 // [-2] void setUserData(class QTextBlockUserData *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11setUserDataEP18QTextBlockUserData(void *this_, QTextBlockUserData * data) {
   ((QTextBlock*)this_)->setUserData(data);
 }
@@ -194,7 +194,7 @@ void C_ZN10QTextBlock11setUserDataEP18QTextBlockUserData(void *this_, QTextBlock
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:240
 // [4] int userState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock9userStateEv(void *this_) {
   return (int)((QTextBlock*)this_)->userState();
 }
@@ -202,7 +202,7 @@ int C_ZNK10QTextBlock9userStateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:241
 // [-2] void setUserState(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock12setUserStateEi(void *this_, int state) {
   ((QTextBlock*)this_)->setUserState(state);
 }
@@ -210,7 +210,7 @@ void C_ZN10QTextBlock12setUserStateEi(void *this_, int state) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:243
 // [4] int revision()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock8revisionEv(void *this_) {
   return (int)((QTextBlock*)this_)->revision();
 }
@@ -218,7 +218,7 @@ int C_ZNK10QTextBlock8revisionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:244
 // [-2] void setRevision(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11setRevisionEi(void *this_, int rev) {
   ((QTextBlock*)this_)->setRevision(rev);
 }
@@ -226,7 +226,7 @@ void C_ZN10QTextBlock11setRevisionEi(void *this_, int rev) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:246
 // [1] bool isVisible()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlock9isVisibleEv(void *this_) {
   return (bool)((QTextBlock*)this_)->isVisible();
 }
@@ -234,7 +234,7 @@ bool C_ZNK10QTextBlock9isVisibleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:247
 // [-2] void setVisible(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock10setVisibleEb(void *this_, bool visible) {
   ((QTextBlock*)this_)->setVisible(visible);
 }
@@ -242,7 +242,7 @@ void C_ZN10QTextBlock10setVisibleEb(void *this_, bool visible) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:249
 // [4] int blockNumber()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock11blockNumberEv(void *this_) {
   return (int)((QTextBlock*)this_)->blockNumber();
 }
@@ -250,7 +250,7 @@ int C_ZNK10QTextBlock11blockNumberEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:250
 // [4] int firstLineNumber()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock15firstLineNumberEv(void *this_) {
   return (int)((QTextBlock*)this_)->firstLineNumber();
 }
@@ -258,7 +258,7 @@ int C_ZNK10QTextBlock15firstLineNumberEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:252
 // [-2] void setLineCount(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock12setLineCountEi(void *this_, int count) {
   ((QTextBlock*)this_)->setLineCount(count);
 }
@@ -266,7 +266,7 @@ void C_ZN10QTextBlock12setLineCountEi(void *this_, int count) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:253
 // [4] int lineCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock9lineCountEv(void *this_) {
   return (int)((QTextBlock*)this_)->lineCount();
 }
@@ -274,7 +274,7 @@ int C_ZNK10QTextBlock9lineCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:283
 // [24] QTextBlock::iterator begin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock5beginEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->begin();
 return new QTextBlock::iterator(rv);
@@ -283,7 +283,7 @@ return new QTextBlock::iterator(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:284
 // [24] QTextBlock::iterator end()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock3endEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->end();
 return new QTextBlock::iterator(rv);
@@ -292,7 +292,7 @@ return new QTextBlock::iterator(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:286
 // [16] QTextBlock next()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock4nextEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->next();
 return new QTextBlock(rv);
@@ -301,7 +301,7 @@ return new QTextBlock(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:287
 // [16] QTextBlock previous()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock8previousEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->previous();
 return new QTextBlock(rv);
@@ -310,13 +310,13 @@ return new QTextBlock(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:290
 // [4] int fragmentIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock13fragmentIndexEv(void *this_) {
   return (int)((QTextBlock*)this_)->fragmentIndex();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlockD2Ev(void *this_) {
   delete (QTextBlock*)(this_);
 }

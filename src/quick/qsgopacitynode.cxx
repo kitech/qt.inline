@@ -23,21 +23,21 @@ MyQSGOpacityNode() : QSGOpacityNode() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:319
 // [-2] void QSGOpacityNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QSGOpacityNodeC2Ev() {
   return  new QSGOpacityNode();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:320
 // [-2] void ~QSGOpacityNode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGOpacityNodeD2Ev(void *this_) {
   delete (QSGOpacityNode*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:322
 // [-2] void setOpacity(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGOpacityNode10setOpacityEd(void *this_, qreal opacity) {
   ((QSGOpacityNode*)this_)->setOpacity(opacity);
 }
@@ -45,7 +45,7 @@ void C_ZN14QSGOpacityNode10setOpacityEd(void *this_, qreal opacity) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:323
 // [8] qreal opacity()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK14QSGOpacityNode7opacityEv(void *this_) {
   return (qreal)((QSGOpacityNode*)this_)->opacity();
 }
@@ -53,7 +53,7 @@ qreal C_ZNK14QSGOpacityNode7opacityEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:325
 // [-2] void setCombinedOpacity(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGOpacityNode18setCombinedOpacityEd(void *this_, qreal opacity) {
   ((QSGOpacityNode*)this_)->setCombinedOpacity(opacity);
 }
@@ -61,7 +61,7 @@ void C_ZN14QSGOpacityNode18setCombinedOpacityEd(void *this_, qreal opacity) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:326
 // [8] qreal combinedOpacity()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK14QSGOpacityNode15combinedOpacityEv(void *this_) {
   return (qreal)((QSGOpacityNode*)this_)->combinedOpacity();
 }
@@ -69,7 +69,7 @@ qreal C_ZNK14QSGOpacityNode15combinedOpacityEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:328
 // [1] bool isSubtreeBlocked()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QSGOpacityNode16isSubtreeBlockedEv(void *this_) {
   return (bool)((QSGOpacityNode*)this_)->isSubtreeBlocked();
 }

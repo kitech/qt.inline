@@ -23,7 +23,7 @@ MyQQuickImageResponse() : QQuickImageResponse() {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:73
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QQuickImageResponse10metaObjectEv(void *this_) {
   return (void*)((QQuickImageResponse*)this_)->metaObject();
 }
@@ -31,21 +31,21 @@ void* C_ZNK19QQuickImageResponse10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:75
 // [-2] void QQuickImageResponse()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageResponseC2Ev() {
   return 0; // new QQuickImageResponse();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:76
 // [-2] void ~QQuickImageResponse()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QQuickImageResponseD2Ev(void *this_) {
   delete (QQuickImageResponse*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:78
 // [8] QQuickTextureFactory * textureFactory()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QQuickImageResponse14textureFactoryEv(void *this_) {
   return (void*)((QQuickImageResponse*)this_)->textureFactory();
 }
@@ -53,7 +53,7 @@ void* C_ZNK19QQuickImageResponse14textureFactoryEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:79
 // [8] QString errorString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QQuickImageResponse11errorStringEv(void *this_) {
   auto rv = ((QQuickImageResponse*)this_)->errorString();
 return new QString(rv);
@@ -62,7 +62,7 @@ return new QString(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:82
 // [-2] void cancel()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QQuickImageResponse6cancelEv(void *this_) {
   ((QQuickImageResponse*)this_)->cancel();
 }
@@ -70,7 +70,7 @@ void C_ZN19QQuickImageResponse6cancelEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:85
 // [-2] void finished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QQuickImageResponse8finishedEv(void *this_) {
   ((QQuickImageResponse*)this_)->finished();
 }

@@ -23,21 +23,21 @@ MyQSGMaterial() : QSGMaterial() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:146
 // [-2] void QSGMaterial()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QSGMaterialC2Ev() {
   return 0; // new QSGMaterial();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:147
 // [-2] void ~QSGMaterial()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSGMaterialD2Ev(void *this_) {
   delete (QSGMaterial*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:149
 // [8] QSGMaterialType * type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QSGMaterial4typeEv(void *this_) {
   return (void*)((QSGMaterial*)this_)->type();
 }
@@ -45,7 +45,7 @@ void* C_ZNK11QSGMaterial4typeEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:150
 // [8] QSGMaterialShader * createShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QSGMaterial12createShaderEv(void *this_) {
   return (void*)((QSGMaterial*)this_)->createShader();
 }
@@ -53,7 +53,7 @@ void* C_ZNK11QSGMaterial12createShaderEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:151
 // [4] int compare(const class QSGMaterial *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK11QSGMaterial7compareEPKS_(void *this_, const QSGMaterial * other) {
   return (int)((QSGMaterial*)this_)->compare(other);
 }
@@ -61,7 +61,7 @@ int C_ZNK11QSGMaterial7compareEPKS_(void *this_, const QSGMaterial * other) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:153
 // [4] QSGMaterial::Flags flags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSGMaterial::Flags C_ZNK11QSGMaterial5flagsEv(void *this_) {
   return (QSGMaterial::Flags)((QSGMaterial*)this_)->flags();
 }
@@ -69,7 +69,7 @@ QSGMaterial::Flags C_ZNK11QSGMaterial5flagsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:154
 // [-2] void setFlag(QSGMaterial::Flags, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSGMaterial7setFlagE6QFlagsINS_4FlagEEb(void *this_, QFlags<QSGMaterial::Flag> flags, bool on) {
   ((QSGMaterial*)this_)->setFlag(flags, on);
 }

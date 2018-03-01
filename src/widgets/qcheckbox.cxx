@@ -111,7 +111,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:78
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QCheckBox5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QCheckBox*)this_)->QCheckBox::event(e);
 }
@@ -119,7 +119,7 @@ bool C_ZN9QCheckBox5eventEP6QEvent(void *this_, QEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:79
 // [1] bool hitButton(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QCheckBox9hitButtonERK6QPoint(void *this_, QPoint* pos) {
   return (bool)((QCheckBox*)this_)->QCheckBox::hitButton(*pos);
 }
@@ -127,7 +127,7 @@ bool C_ZNK9QCheckBox9hitButtonERK6QPoint(void *this_, QPoint* pos) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:80
 // [-2] void checkStateSet()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox13checkStateSetEv(void *this_) {
   ((QCheckBox*)this_)->QCheckBox::checkStateSet();
 }
@@ -135,7 +135,7 @@ void C_ZN9QCheckBox13checkStateSetEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:81
 // [-2] void nextCheckState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox14nextCheckStateEv(void *this_) {
   ((QCheckBox*)this_)->QCheckBox::nextCheckState();
 }
@@ -143,7 +143,7 @@ void C_ZN9QCheckBox14nextCheckStateEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:82
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QCheckBox*)this_)->QCheckBox::paintEvent(arg0);
 }
@@ -151,7 +151,7 @@ void C_ZN9QCheckBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:83
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QCheckBox*)this_)->QCheckBox::mouseMoveEvent(arg0);
 }
@@ -159,7 +159,7 @@ void C_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ar
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:84
 // [-2] void initStyleOption(class QStyleOptionButton *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * option) {
   ((QCheckBox*)this_)->QCheckBox::initStyleOption(option);
 }
@@ -167,7 +167,7 @@ void C_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleO
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:56
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QCheckBox10metaObjectEv(void *this_) {
   return (void*)((QCheckBox*)this_)->metaObject();
 }
@@ -175,7 +175,7 @@ void* C_ZNK9QCheckBox10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:61
 // [-2] void QCheckBox(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QCheckBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCheckBox*)(0);
   return  new MyQCheckBox(parent);
@@ -183,7 +183,7 @@ void* C_ZN9QCheckBoxC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:62
 // [-2] void QCheckBox(const class QString &, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QCheckBoxC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQCheckBox*)(0);
   return  new MyQCheckBox(*text, parent);
@@ -191,14 +191,14 @@ void* C_ZN9QCheckBoxC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:63
 // [-2] void ~QCheckBox()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBoxD2Ev(void *this_) {
   delete (QCheckBox*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:65
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QCheckBox8sizeHintEv(void *this_) {
   auto rv = ((QCheckBox*)this_)->sizeHint();
 return new QSize(rv);
@@ -207,7 +207,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:66
 // [8] QSize minimumSizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QCheckBox15minimumSizeHintEv(void *this_) {
   auto rv = ((QCheckBox*)this_)->minimumSizeHint();
 return new QSize(rv);
@@ -216,7 +216,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:68
 // [-2] void setTristate(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox11setTristateEb(void *this_, bool y) {
   ((QCheckBox*)this_)->setTristate(y);
 }
@@ -224,7 +224,7 @@ void C_ZN9QCheckBox11setTristateEb(void *this_, bool y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:69
 // [1] bool isTristate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK9QCheckBox10isTristateEv(void *this_) {
   return (bool)((QCheckBox*)this_)->isTristate();
 }
@@ -232,7 +232,7 @@ bool C_ZNK9QCheckBox10isTristateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:71
 // [4] Qt::CheckState checkState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::CheckState C_ZNK9QCheckBox10checkStateEv(void *this_) {
   return (Qt::CheckState)((QCheckBox*)this_)->checkState();
 }
@@ -240,7 +240,7 @@ Qt::CheckState C_ZNK9QCheckBox10checkStateEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:72
 // [-2] void setCheckState(Qt::CheckState)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState state) {
   ((QCheckBox*)this_)->setCheckState(state);
 }
@@ -248,7 +248,7 @@ void C_ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:75
 // [-2] void stateChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox12stateChangedEi(void *this_, int arg0) {
   ((QCheckBox*)this_)->stateChanged(arg0);
 }

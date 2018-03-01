@@ -16,7 +16,7 @@
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:56
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod10metaObjectEv(void *this_) {
   return (void*)((QInputMethod*)this_)->metaObject();
 }
@@ -24,7 +24,7 @@ void* C_ZNK12QInputMethod10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:68
 // [88] QTransform inputItemTransform()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod18inputItemTransformEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->inputItemTransform();
 return new QTransform(rv);
@@ -33,7 +33,7 @@ return new QTransform(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:69
 // [-2] void setInputItemTransform(const class QTransform &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *this_, QTransform* transform) {
   ((QInputMethod*)this_)->setInputItemTransform(*transform);
 }
@@ -41,7 +41,7 @@ void C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *this_, QTran
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:71
 // [32] QRectF inputItemRectangle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod18inputItemRectangleEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->inputItemRectangle();
 return new QRectF(rv);
@@ -50,7 +50,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:72
 // [-2] void setInputItemRectangle(const class QRectF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *this_, QRectF* rect) {
   ((QInputMethod*)this_)->setInputItemRectangle(*rect);
 }
@@ -58,7 +58,7 @@ void C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *this_, QRectF* re
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:75
 // [32] QRectF cursorRectangle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod15cursorRectangleEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->cursorRectangle();
 return new QRectF(rv);
@@ -67,7 +67,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:76
 // [32] QRectF anchorRectangle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod15anchorRectangleEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->anchorRectangle();
 return new QRectF(rv);
@@ -76,7 +76,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:79
 // [32] QRectF keyboardRectangle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod17keyboardRectangleEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->keyboardRectangle();
 return new QRectF(rv);
@@ -85,7 +85,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:81
 // [32] QRectF inputItemClipRectangle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod22inputItemClipRectangleEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->inputItemClipRectangle();
 return new QRectF(rv);
@@ -94,7 +94,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:89
 // [1] bool isVisible()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QInputMethod9isVisibleEv(void *this_) {
   return (bool)((QInputMethod*)this_)->isVisible();
 }
@@ -102,7 +102,7 @@ bool C_ZNK12QInputMethod9isVisibleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:90
 // [-2] void setVisible(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod10setVisibleEb(void *this_, bool visible) {
   ((QInputMethod*)this_)->setVisible(visible);
 }
@@ -110,7 +110,7 @@ void C_ZN12QInputMethod10setVisibleEb(void *this_, bool visible) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:92
 // [1] bool isAnimating()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QInputMethod11isAnimatingEv(void *this_) {
   return (bool)((QInputMethod*)this_)->isAnimating();
 }
@@ -118,7 +118,7 @@ bool C_ZNK12QInputMethod11isAnimatingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:94
 // [8] QLocale locale()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod6localeEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->locale();
 return new QLocale(rv);
@@ -127,7 +127,7 @@ return new QLocale(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:95
 // [4] Qt::LayoutDirection inputDirection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::LayoutDirection C_ZNK12QInputMethod14inputDirectionEv(void *this_) {
   return (Qt::LayoutDirection)((QInputMethod*)this_)->inputDirection();
 }
@@ -135,7 +135,7 @@ Qt::LayoutDirection C_ZNK12QInputMethod14inputDirectionEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:97
 // [16] QVariant queryFocusObject(Qt::InputMethodQuery, class QVariant)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputMethod16queryFocusObjectEN2Qt16InputMethodQueryE8QVariant(Qt::InputMethodQuery query, QVariant* argument) {
   auto rv = QInputMethod::queryFocusObject(query, *argument);
 return new QVariant(rv);
@@ -143,7 +143,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:100
 // [-2] void show()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod4showEv(void *this_) {
   ((QInputMethod*)this_)->show();
 }
@@ -151,7 +151,7 @@ void C_ZN12QInputMethod4showEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:101
 // [-2] void hide()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod4hideEv(void *this_) {
   ((QInputMethod*)this_)->hide();
 }
@@ -159,7 +159,7 @@ void C_ZN12QInputMethod4hideEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:103
 // [-2] void update(Qt::InputMethodQueries)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod6updateE6QFlagsIN2Qt16InputMethodQueryEE(void *this_, QFlags<Qt::InputMethodQuery> queries) {
   ((QInputMethod*)this_)->update(queries);
 }
@@ -167,7 +167,7 @@ void C_ZN12QInputMethod6updateE6QFlagsIN2Qt16InputMethodQueryEE(void *this_, QFl
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:104
 // [-2] void reset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod5resetEv(void *this_) {
   ((QInputMethod*)this_)->reset();
 }
@@ -175,7 +175,7 @@ void C_ZN12QInputMethod5resetEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:105
 // [-2] void commit()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod6commitEv(void *this_) {
   ((QInputMethod*)this_)->commit();
 }
@@ -183,7 +183,7 @@ void C_ZN12QInputMethod6commitEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:107
 // [-2] void invokeAction(enum QInputMethod::Action, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod12invokeActionENS_6ActionEi(void *this_, QInputMethod::Action a, int cursorPosition) {
   ((QInputMethod*)this_)->invokeAction(a, cursorPosition);
 }
@@ -191,7 +191,7 @@ void C_ZN12QInputMethod12invokeActionENS_6ActionEi(void *this_, QInputMethod::Ac
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:110
 // [-2] void cursorRectangleChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod22cursorRectangleChangedEv(void *this_) {
   ((QInputMethod*)this_)->cursorRectangleChanged();
 }
@@ -199,7 +199,7 @@ void C_ZN12QInputMethod22cursorRectangleChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:111
 // [-2] void anchorRectangleChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod22anchorRectangleChangedEv(void *this_) {
   ((QInputMethod*)this_)->anchorRectangleChanged();
 }
@@ -207,7 +207,7 @@ void C_ZN12QInputMethod22anchorRectangleChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:112
 // [-2] void keyboardRectangleChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod24keyboardRectangleChangedEv(void *this_) {
   ((QInputMethod*)this_)->keyboardRectangleChanged();
 }
@@ -215,7 +215,7 @@ void C_ZN12QInputMethod24keyboardRectangleChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:113
 // [-2] void inputItemClipRectangleChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod29inputItemClipRectangleChangedEv(void *this_) {
   ((QInputMethod*)this_)->inputItemClipRectangleChanged();
 }
@@ -223,7 +223,7 @@ void C_ZN12QInputMethod29inputItemClipRectangleChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:114
 // [-2] void visibleChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod14visibleChangedEv(void *this_) {
   ((QInputMethod*)this_)->visibleChanged();
 }
@@ -231,7 +231,7 @@ void C_ZN12QInputMethod14visibleChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:115
 // [-2] void animatingChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod16animatingChangedEv(void *this_) {
   ((QInputMethod*)this_)->animatingChanged();
 }
@@ -239,7 +239,7 @@ void C_ZN12QInputMethod16animatingChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:116
 // [-2] void localeChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod13localeChangedEv(void *this_) {
   ((QInputMethod*)this_)->localeChanged();
 }
@@ -247,7 +247,7 @@ void C_ZN12QInputMethod13localeChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:117
 // [-2] void inputDirectionChanged(Qt::LayoutDirection)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection newDirection) {
   ((QInputMethod*)this_)->inputDirectionChanged(newDirection);
 }

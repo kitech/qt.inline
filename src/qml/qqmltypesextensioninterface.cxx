@@ -21,14 +21,14 @@ public:
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:54
 // [-2] void ~QQmlTypesExtensionInterface()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN27QQmlTypesExtensionInterfaceD2Ev(void *this_) {
   delete (QQmlTypesExtensionInterface*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:55
 // [-2] void registerTypes(const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN27QQmlTypesExtensionInterface13registerTypesEPKc(void *this_, const char * uri) {
   ((QQmlTypesExtensionInterface*)this_)->registerTypes(uri);
 }

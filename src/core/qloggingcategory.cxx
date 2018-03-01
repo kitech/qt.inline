@@ -16,28 +16,28 @@
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:53
 // [-2] void QLoggingCategory(const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
   return  new QLoggingCategory(category);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:54
 // [-2] void QLoggingCategory(const char *, enum QtMsgType)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
   return  new QLoggingCategory(category, severityLevel);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:55
 // [-2] void ~QLoggingCategory()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QLoggingCategoryD2Ev(void *this_) {
   delete (QLoggingCategory*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:57
 // [1] bool isEnabled(enum QtMsgType)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type_) {
   return (bool)((QLoggingCategory*)this_)->isEnabled(type_);
 }
@@ -45,7 +45,7 @@ bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type_) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:58
 // [-2] void setEnabled(enum QtMsgType, _Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type_, bool enable) {
   ((QLoggingCategory*)this_)->setEnabled(type_, enable);
 }
@@ -53,7 +53,7 @@ void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type_
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:61
 // [1] bool isDebugEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory14isDebugEnabledEv(void *this_) {
   return (bool)((QLoggingCategory*)this_)->isDebugEnabled();
 }
@@ -61,7 +61,7 @@ bool C_ZNK16QLoggingCategory14isDebugEnabledEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:62
 // [1] bool isInfoEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory13isInfoEnabledEv(void *this_) {
   return (bool)((QLoggingCategory*)this_)->isInfoEnabled();
 }
@@ -69,7 +69,7 @@ bool C_ZNK16QLoggingCategory13isInfoEnabledEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:63
 // [1] bool isWarningEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory16isWarningEnabledEv(void *this_) {
   return (bool)((QLoggingCategory*)this_)->isWarningEnabled();
 }
@@ -77,7 +77,7 @@ bool C_ZNK16QLoggingCategory16isWarningEnabledEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:64
 // [1] bool isCriticalEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory17isCriticalEnabledEv(void *this_) {
   return (bool)((QLoggingCategory*)this_)->isCriticalEnabled();
 }
@@ -85,7 +85,7 @@ bool C_ZNK16QLoggingCategory17isCriticalEnabledEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:71
 // [8] const char * categoryName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK16QLoggingCategory12categoryNameEv(void *this_) {
   return (void*)((QLoggingCategory*)this_)->categoryName();
 }
@@ -93,14 +93,14 @@ void* C_ZNK16QLoggingCategory12categoryNameEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:77
 // [8] QLoggingCategory * defaultCategory()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategory15defaultCategoryEv() {
   return (void*)QLoggingCategory::defaultCategory();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:82
 // [-2] void setFilterRules(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QLoggingCategory14setFilterRulesERK7QString(QString* rules) {
   QLoggingCategory::setFilterRules(*rules);
 }

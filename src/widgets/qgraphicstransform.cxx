@@ -35,7 +35,7 @@ MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:66
 // [-2] void update()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsTransform6updateEv(void *this_) {
   ((QGraphicsTransform*)this_)->QGraphicsTransform::update();
 }
@@ -43,7 +43,7 @@ void C_ZN18QGraphicsTransform6updateEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:58
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QGraphicsTransform10metaObjectEv(void *this_) {
   return (void*)((QGraphicsTransform*)this_)->metaObject();
 }
@@ -51,7 +51,7 @@ void* C_ZNK18QGraphicsTransform10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:60
 // [-2] void QGraphicsTransform(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QGraphicsTransformC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsTransform*)(0);
   return 0; // new MyQGraphicsTransform(parent);
@@ -59,14 +59,14 @@ void* C_ZN18QGraphicsTransformC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:61
 // [-2] void ~QGraphicsTransform()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsTransformD2Ev(void *this_) {
   delete (QGraphicsTransform*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:63
 // [-2] void applyTo(class QMatrix4x4 *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK18QGraphicsTransform7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
   ((QGraphicsTransform*)this_)->applyTo(matrix);
 }

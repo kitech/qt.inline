@@ -86,7 +86,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:191
 // [-2] void actionEvent(class QActionEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar11actionEventEP12QActionEvent(void *this_, QActionEvent * event) {
   ((QToolBar*)this_)->QToolBar::actionEvent(event);
 }
@@ -94,7 +94,7 @@ void C_ZN8QToolBar11actionEventEP12QActionEvent(void *this_, QActionEvent * even
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:192
 // [-2] void changeEvent(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar11changeEventEP6QEvent(void *this_, QEvent * event) {
   ((QToolBar*)this_)->QToolBar::changeEvent(event);
 }
@@ -102,7 +102,7 @@ void C_ZN8QToolBar11changeEventEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:193
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QToolBar*)this_)->QToolBar::paintEvent(event);
 }
@@ -110,7 +110,7 @@ void C_ZN8QToolBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:194
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN8QToolBar5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QToolBar*)this_)->QToolBar::event(event);
 }
@@ -118,7 +118,7 @@ bool C_ZN8QToolBar5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:195
 // [-2] void initStyleOption(class QStyleOptionToolBar *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(void *this_, QStyleOptionToolBar * option) {
   ((QToolBar*)this_)->QToolBar::initStyleOption(option);
 }
@@ -126,7 +126,7 @@ void C_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(void *this_, QStyleO
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:61
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar10metaObjectEv(void *this_) {
   return (void*)((QToolBar*)this_)->metaObject();
 }
@@ -134,7 +134,7 @@ void* C_ZNK8QToolBar10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:79
 // [-2] void QToolBar(const class QString &, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBarC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQToolBar*)(0);
   return  new MyQToolBar(*title, parent);
@@ -142,7 +142,7 @@ void* C_ZN8QToolBarC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:80
 // [-2] void QToolBar(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQToolBar*)(0);
   return  new MyQToolBar(parent);
@@ -150,14 +150,14 @@ void* C_ZN8QToolBarC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:81
 // [-2] void ~QToolBar()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBarD2Ev(void *this_) {
   delete (QToolBar*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:83
 // [-2] void setMovable(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar10setMovableEb(void *this_, bool movable) {
   ((QToolBar*)this_)->setMovable(movable);
 }
@@ -165,7 +165,7 @@ void C_ZN8QToolBar10setMovableEb(void *this_, bool movable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:84
 // [1] bool isMovable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK8QToolBar9isMovableEv(void *this_) {
   return (bool)((QToolBar*)this_)->isMovable();
 }
@@ -173,7 +173,7 @@ bool C_ZNK8QToolBar9isMovableEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:86
 // [-2] void setAllowedAreas(Qt::ToolBarAreas)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar15setAllowedAreasE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFlags<Qt::ToolBarArea> areas) {
   ((QToolBar*)this_)->setAllowedAreas(areas);
 }
@@ -181,7 +181,7 @@ void C_ZN8QToolBar15setAllowedAreasE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFl
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:87
 // [4] Qt::ToolBarAreas allowedAreas()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::ToolBarAreas C_ZNK8QToolBar12allowedAreasEv(void *this_) {
   return (Qt::ToolBarAreas)((QToolBar*)this_)->allowedAreas();
 }
@@ -189,7 +189,7 @@ Qt::ToolBarAreas C_ZNK8QToolBar12allowedAreasEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:89
 // [1] bool isAreaAllowed(Qt::ToolBarArea)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *this_, Qt::ToolBarArea area) {
   return (bool)((QToolBar*)this_)->isAreaAllowed(area);
 }
@@ -197,7 +197,7 @@ bool C_ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *this_, Qt::ToolBarAr
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:92
 // [-2] void setOrientation(Qt::Orientation)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
   ((QToolBar*)this_)->setOrientation(orientation);
 }
@@ -205,7 +205,7 @@ void C_ZN8QToolBar14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientati
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:93
 // [4] Qt::Orientation orientation()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::Orientation C_ZNK8QToolBar11orientationEv(void *this_) {
   return (Qt::Orientation)((QToolBar*)this_)->orientation();
 }
@@ -213,7 +213,7 @@ Qt::Orientation C_ZNK8QToolBar11orientationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:95
 // [-2] void clear()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar5clearEv(void *this_) {
   ((QToolBar*)this_)->clear();
 }
@@ -221,7 +221,7 @@ void C_ZN8QToolBar5clearEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:98
 // [8] QAction * addAction(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar9addActionERK7QString(void *this_, QString* text) {
   return (void*)((QToolBar*)this_)->addAction(*text);
 }
@@ -229,7 +229,7 @@ void* C_ZN8QToolBar9addActionERK7QString(void *this_, QString* text) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:99
 // [8] QAction * addAction(const class QIcon &, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar9addActionERK5QIconRK7QString(void *this_, QIcon* icon, QString* text) {
   return (void*)((QToolBar*)this_)->addAction(*icon, *text);
 }
@@ -237,7 +237,7 @@ void* C_ZN8QToolBar9addActionERK5QIconRK7QString(void *this_, QIcon* icon, QStri
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:100
 // [8] QAction * addAction(const class QString &, const class QObject *, const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text, const QObject * receiver, const char * member) {
   return (void*)((QToolBar*)this_)->addAction(*text, receiver, member);
 }
@@ -245,7 +245,7 @@ void* C_ZN8QToolBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:101
 // [8] QAction * addAction(const class QIcon &, const class QString &, const class QObject *, const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc(void *this_, QIcon* icon, QString* text, const QObject * receiver, const char * member) {
   return (void*)((QToolBar*)this_)->addAction(*icon, *text, receiver, member);
 }
@@ -253,7 +253,7 @@ void* C_ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc(void *this_, QIcon
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:155
 // [8] QAction * addSeparator()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar12addSeparatorEv(void *this_) {
   return (void*)((QToolBar*)this_)->addSeparator();
 }
@@ -261,7 +261,7 @@ void* C_ZN8QToolBar12addSeparatorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:156
 // [8] QAction * insertSeparator(class QAction *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
   return (void*)((QToolBar*)this_)->insertSeparator(before);
 }
@@ -269,7 +269,7 @@ void* C_ZN8QToolBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:158
 // [8] QAction * addWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar9addWidgetEP7QWidget(void *this_, QWidget * widget) {
   return (void*)((QToolBar*)this_)->addWidget(widget);
 }
@@ -277,7 +277,7 @@ void* C_ZN8QToolBar9addWidgetEP7QWidget(void *this_, QWidget * widget) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:159
 // [8] QAction * insertWidget(class QAction *, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBar12insertWidgetEP7QActionP7QWidget(void *this_, QAction * before, QWidget * widget) {
   return (void*)((QToolBar*)this_)->insertWidget(before, widget);
 }
@@ -285,7 +285,7 @@ void* C_ZN8QToolBar12insertWidgetEP7QActionP7QWidget(void *this_, QAction * befo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:161
 // [16] QRect actionGeometry(class QAction *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar14actionGeometryEP7QAction(void *this_, QAction * action) {
   auto rv = ((QToolBar*)this_)->actionGeometry(action);
 return new QRect(rv);
@@ -294,7 +294,7 @@ return new QRect(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:162
 // [8] QAction * actionAt(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar8actionAtERK6QPoint(void *this_, QPoint* p) {
   return (void*)((QToolBar*)this_)->actionAt(*p);
 }
@@ -302,7 +302,7 @@ void* C_ZNK8QToolBar8actionAtERK6QPoint(void *this_, QPoint* p) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:163
 // [8] QAction * actionAt(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar8actionAtEii(void *this_, int x, int y) {
   return (void*)((QToolBar*)this_)->actionAt(x, y);
 }
@@ -310,7 +310,7 @@ void* C_ZNK8QToolBar8actionAtEii(void *this_, int x, int y) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:165
 // [8] QAction * toggleViewAction()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar16toggleViewActionEv(void *this_) {
   return (void*)((QToolBar*)this_)->toggleViewAction();
 }
@@ -318,7 +318,7 @@ void* C_ZNK8QToolBar16toggleViewActionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:167
 // [8] QSize iconSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar8iconSizeEv(void *this_) {
   auto rv = ((QToolBar*)this_)->iconSize();
 return new QSize(rv);
@@ -327,7 +327,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:168
 // [4] Qt::ToolButtonStyle toolButtonStyle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::ToolButtonStyle C_ZNK8QToolBar15toolButtonStyleEv(void *this_) {
   return (Qt::ToolButtonStyle)((QToolBar*)this_)->toolButtonStyle();
 }
@@ -335,7 +335,7 @@ Qt::ToolButtonStyle C_ZNK8QToolBar15toolButtonStyleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:170
 // [8] QWidget * widgetForAction(class QAction *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar15widgetForActionEP7QAction(void *this_, QAction * action) {
   return (void*)((QToolBar*)this_)->widgetForAction(action);
 }
@@ -343,7 +343,7 @@ void* C_ZNK8QToolBar15widgetForActionEP7QAction(void *this_, QAction * action) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:172
 // [1] bool isFloatable()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK8QToolBar11isFloatableEv(void *this_) {
   return (bool)((QToolBar*)this_)->isFloatable();
 }
@@ -351,7 +351,7 @@ bool C_ZNK8QToolBar11isFloatableEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:173
 // [-2] void setFloatable(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar12setFloatableEb(void *this_, bool floatable) {
   ((QToolBar*)this_)->setFloatable(floatable);
 }
@@ -359,7 +359,7 @@ void C_ZN8QToolBar12setFloatableEb(void *this_, bool floatable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:174
 // [1] bool isFloating()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK8QToolBar10isFloatingEv(void *this_) {
   return (bool)((QToolBar*)this_)->isFloating();
 }
@@ -367,7 +367,7 @@ bool C_ZNK8QToolBar10isFloatingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:177
 // [-2] void setIconSize(const class QSize &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar11setIconSizeERK5QSize(void *this_, QSize* iconSize) {
   ((QToolBar*)this_)->setIconSize(*iconSize);
 }
@@ -375,7 +375,7 @@ void C_ZN8QToolBar11setIconSizeERK5QSize(void *this_, QSize* iconSize) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:178
 // [-2] void setToolButtonStyle(Qt::ToolButtonStyle)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
   ((QToolBar*)this_)->setToolButtonStyle(toolButtonStyle);
 }
@@ -383,7 +383,7 @@ void C_ZN8QToolBar18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Qt::T
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:181
 // [-2] void actionTriggered(class QAction *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar15actionTriggeredEP7QAction(void *this_, QAction * action) {
   ((QToolBar*)this_)->actionTriggered(action);
 }
@@ -391,7 +391,7 @@ void C_ZN8QToolBar15actionTriggeredEP7QAction(void *this_, QAction * action) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:182
 // [-2] void movableChanged(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar14movableChangedEb(void *this_, bool movable) {
   ((QToolBar*)this_)->movableChanged(movable);
 }
@@ -399,7 +399,7 @@ void C_ZN8QToolBar14movableChangedEb(void *this_, bool movable) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:183
 // [-2] void allowedAreasChanged(Qt::ToolBarAreas)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFlags<Qt::ToolBarArea> allowedAreas) {
   ((QToolBar*)this_)->allowedAreasChanged(allowedAreas);
 }
@@ -407,7 +407,7 @@ void C_ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:184
 // [-2] void orientationChanged(Qt::Orientation)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar18orientationChangedEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
   ((QToolBar*)this_)->orientationChanged(orientation);
 }
@@ -415,7 +415,7 @@ void C_ZN8QToolBar18orientationChangedEN2Qt11OrientationE(void *this_, Qt::Orien
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:185
 // [-2] void iconSizeChanged(const class QSize &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar15iconSizeChangedERK5QSize(void *this_, QSize* iconSize) {
   ((QToolBar*)this_)->iconSizeChanged(*iconSize);
 }
@@ -423,7 +423,7 @@ void C_ZN8QToolBar15iconSizeChangedERK5QSize(void *this_, QSize* iconSize) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:186
 // [-2] void toolButtonStyleChanged(Qt::ToolButtonStyle)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
   ((QToolBar*)this_)->toolButtonStyleChanged(toolButtonStyle);
 }
@@ -431,7 +431,7 @@ void C_ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this_, Q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:187
 // [-2] void topLevelChanged(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar15topLevelChangedEb(void *this_, bool topLevel) {
   ((QToolBar*)this_)->topLevelChanged(topLevel);
 }
@@ -439,7 +439,7 @@ void C_ZN8QToolBar15topLevelChangedEb(void *this_, bool topLevel) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:188
 // [-2] void visibilityChanged(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar17visibilityChangedEb(void *this_, bool visible) {
   ((QToolBar*)this_)->visibilityChanged(visible);
 }

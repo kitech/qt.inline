@@ -57,7 +57,7 @@ public:
 // Protected static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:61
 // [-2] void convertFromAscii(const char *, int, class QChar *&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar(void *this_, const char * a, int len_, QChar *& out) {
   ((QAbstractConcatenable*)this_)->QAbstractConcatenable::convertFromAscii(a, len_, out);
 }
@@ -65,7 +65,7 @@ void C_ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar(void *this_, con
 // Protected static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:62
 // [-2] void convertFromAscii(char, class QChar *&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractConcatenable16convertFromAsciiEcRP5QChar(void *this_, char a, QChar *& out) {
   ((QAbstractConcatenable*)this_)->QAbstractConcatenable::convertFromAscii(a, out);
 }
@@ -73,13 +73,13 @@ void C_ZN21QAbstractConcatenable16convertFromAsciiEcRP5QChar(void *this_, char a
 // Protected static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:66
 // [-2] void appendLatin1To(const char *, int, class QChar *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractConcatenable14appendLatin1ToEPKciP5QChar(void *this_, const char * a, int len_, QChar * out) {
   ((QAbstractConcatenable*)this_)->QAbstractConcatenable::appendLatin1To(a, len_, out);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractConcatenableD2Ev(void *this_) {
   delete (QAbstractConcatenable*)(this_);
 }

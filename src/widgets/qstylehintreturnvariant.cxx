@@ -23,14 +23,14 @@ MyQStyleHintReturnVariant() : QStyleHintReturnVariant() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:733
 // [-2] void QStyleHintReturnVariant()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleHintReturnVariantC2Ev() {
   return  new QStyleHintReturnVariant();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:734
 // [-2] void ~QStyleHintReturnVariant()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QStyleHintReturnVariantD2Ev(void *this_) {
   delete (QStyleHintReturnVariant*)(this_);
 }

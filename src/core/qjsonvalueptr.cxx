@@ -23,14 +23,14 @@ MyQJsonValuePtr(const QJsonValue & val) : QJsonValuePtr(val) {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:226
 // [-2] void QJsonValuePtr(const class QJsonValue &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValuePtrC2ERK10QJsonValue(QJsonValue* val) {
   return  new QJsonValuePtr(*val);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:229
 // [24] QJsonValue & operator*()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValuePtrdeEv(void *this_) {
   auto& rv = ((QJsonValuePtr*)this_)->operator*();
 return &rv;
@@ -39,13 +39,13 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:230
 // [8] QJsonValue * operator->()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValuePtrptEv(void *this_) {
   return (void*)((QJsonValuePtr*)this_)->operator->();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QJsonValuePtrD2Ev(void *this_) {
   delete (QJsonValuePtr*)(this_);
 }

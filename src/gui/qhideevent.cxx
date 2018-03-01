@@ -23,14 +23,14 @@ MyQHideEvent() : QHideEvent() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:501
 // [-2] void QHideEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QHideEventC2Ev() {
   return  new QHideEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:502
 // [-2] void ~QHideEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QHideEventD2Ev(void *this_) {
   delete (QHideEvent*)(this_);
 }

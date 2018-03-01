@@ -23,14 +23,14 @@ MyQSGFlatColorMaterial() : QSGFlatColorMaterial() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:51
 // [-2] void QSGFlatColorMaterial()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QSGFlatColorMaterialC2Ev() {
   return  new QSGFlatColorMaterial();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:52
 // [8] QSGMaterialType * type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGFlatColorMaterial4typeEv(void *this_) {
   return (void*)((QSGFlatColorMaterial*)this_)->type();
 }
@@ -38,7 +38,7 @@ void* C_ZNK20QSGFlatColorMaterial4typeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:53
 // [8] QSGMaterialShader * createShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGFlatColorMaterial12createShaderEv(void *this_) {
   return (void*)((QSGFlatColorMaterial*)this_)->createShader();
 }
@@ -46,7 +46,7 @@ void* C_ZNK20QSGFlatColorMaterial12createShaderEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:55
 // [-2] void setColor(const class QColor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QSGFlatColorMaterial8setColorERK6QColor(void *this_, QColor* color) {
   ((QSGFlatColorMaterial*)this_)->setColor(*color);
 }
@@ -54,7 +54,7 @@ void C_ZN20QSGFlatColorMaterial8setColorERK6QColor(void *this_, QColor* color) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:56
 // [16] const QColor & color()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGFlatColorMaterial5colorEv(void *this_) {
   auto& rv = ((QSGFlatColorMaterial*)this_)->color();
 return new QColor(rv);
@@ -63,13 +63,13 @@ return new QColor(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:58
 // [4] int compare(const class QSGMaterial *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK20QSGFlatColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
   return (int)((QSGFlatColorMaterial*)this_)->compare(other);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QSGFlatColorMaterialD2Ev(void *this_) {
   delete (QSGFlatColorMaterial*)(this_);
 }

@@ -23,7 +23,7 @@ MyQQuickTextDocument(QQuickItem * parent) : QQuickTextDocument(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquicktextdocument.h:51
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QQuickTextDocument10metaObjectEv(void *this_) {
   return (void*)((QQuickTextDocument*)this_)->metaObject();
 }
@@ -31,20 +31,20 @@ void* C_ZNK18QQuickTextDocument10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquicktextdocument.h:54
 // [-2] void QQuickTextDocument(class QQuickItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QQuickTextDocumentC2EP10QQuickItem(QQuickItem * parent) {
   return  new QQuickTextDocument(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquicktextdocument.h:55
 // [8] QTextDocument * textDocument()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QQuickTextDocument12textDocumentEv(void *this_) {
   return (void*)((QQuickTextDocument*)this_)->textDocument();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QQuickTextDocumentD2Ev(void *this_) {
   delete (QQuickTextDocument*)(this_);
 }

@@ -23,12 +23,12 @@ MyQStyleOptionComplex(int version, int type_) : QStyleOptionComplex(version, typ
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:509
 // [-2] void QStyleOptionComplex(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionComplexC2Eii(int version, int type_) {
   return  new QStyleOptionComplex(version, type_);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QStyleOptionComplexD2Ev(void *this_) {
   delete (QStyleOptionComplex*)(this_);
 }

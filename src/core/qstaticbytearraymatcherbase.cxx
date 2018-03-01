@@ -36,13 +36,13 @@ MyQStaticByteArrayMatcherBase(const char * pattern, uint n) : QStaticByteArrayMa
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:98
 // [4] int indexOfIn(const char *, uint, const char *, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_ii(void *this_, const char * needle, uint nlen, const char * haystack, int hlen, int from) {
   return (int)((QStaticByteArrayMatcherBase*)this_)->QStaticByteArrayMatcherBase::indexOfIn(needle, nlen, haystack, hlen, from);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN27QStaticByteArrayMatcherBaseD2Ev(void *this_) {
   delete (QStaticByteArrayMatcherBase*)(this_);
 }

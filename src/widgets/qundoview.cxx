@@ -27,7 +27,7 @@ MyQUndoView(QUndoGroup * group, QWidget * parent) : QUndoView(group, parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:59
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QUndoView10metaObjectEv(void *this_) {
   return (void*)((QUndoView*)this_)->metaObject();
 }
@@ -35,35 +35,35 @@ void* C_ZNK9QUndoView10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:65
 // [-2] void QUndoView(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP7QWidget(QWidget * parent) {
   return  new QUndoView(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:66
 // [-2] void QUndoView(class QUndoStack *, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * parent) {
   return  new QUndoView(stack, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:68
 // [-2] void QUndoView(class QUndoGroup *, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent) {
   return  new QUndoView(group, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:70
 // [-2] void ~QUndoView()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QUndoViewD2Ev(void *this_) {
   delete (QUndoView*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:72
 // [8] QUndoStack * stack()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QUndoView5stackEv(void *this_) {
   return (void*)((QUndoView*)this_)->stack();
 }
@@ -71,7 +71,7 @@ void* C_ZNK9QUndoView5stackEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:74
 // [8] QUndoGroup * group()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QUndoView5groupEv(void *this_) {
   return (void*)((QUndoView*)this_)->group();
 }
@@ -79,7 +79,7 @@ void* C_ZNK9QUndoView5groupEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:77
 // [-2] void setEmptyLabel(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QUndoView13setEmptyLabelERK7QString(void *this_, QString* label) {
   ((QUndoView*)this_)->setEmptyLabel(*label);
 }
@@ -87,7 +87,7 @@ void C_ZN9QUndoView13setEmptyLabelERK7QString(void *this_, QString* label) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:78
 // [8] QString emptyLabel()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QUndoView10emptyLabelEv(void *this_) {
   auto rv = ((QUndoView*)this_)->emptyLabel();
 return new QString(rv);
@@ -96,7 +96,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:80
 // [-2] void setCleanIcon(const class QIcon &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QUndoView12setCleanIconERK5QIcon(void *this_, QIcon* icon) {
   ((QUndoView*)this_)->setCleanIcon(*icon);
 }
@@ -104,7 +104,7 @@ void C_ZN9QUndoView12setCleanIconERK5QIcon(void *this_, QIcon* icon) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:81
 // [8] QIcon cleanIcon()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QUndoView9cleanIconEv(void *this_) {
   auto rv = ((QUndoView*)this_)->cleanIcon();
 return new QIcon(rv);
@@ -113,7 +113,7 @@ return new QIcon(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:84
 // [-2] void setStack(class QUndoStack *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QUndoView8setStackEP10QUndoStack(void *this_, QUndoStack * stack) {
   ((QUndoView*)this_)->setStack(stack);
 }
@@ -121,7 +121,7 @@ void C_ZN9QUndoView8setStackEP10QUndoStack(void *this_, QUndoStack * stack) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:86
 // [-2] void setGroup(class QUndoGroup *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QUndoView8setGroupEP10QUndoGroup(void *this_, QUndoGroup * group) {
   ((QUndoView*)this_)->setGroup(group);
 }

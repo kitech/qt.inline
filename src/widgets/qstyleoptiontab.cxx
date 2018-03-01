@@ -25,12 +25,12 @@ MyQStyleOptionTab(int version) : QStyleOptionTab(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:285
 // [-2] void QStyleOptionTab()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN15QStyleOptionTabC2Ev() {
   return  new QStyleOptionTab();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QStyleOptionTabD2Ev(void *this_) {
   delete (QStyleOptionTab*)(this_);
 }

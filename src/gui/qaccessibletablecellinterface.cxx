@@ -21,14 +21,14 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:578
 // [-2] void ~QAccessibleTableCellInterface()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN29QAccessibleTableCellInterfaceD2Ev(void *this_) {
   delete (QAccessibleTableCellInterface*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:580
 // [1] bool isSelected()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK29QAccessibleTableCellInterface10isSelectedEv(void *this_) {
   return (bool)((QAccessibleTableCellInterface*)this_)->isSelected();
 }
@@ -36,7 +36,7 @@ bool C_ZNK29QAccessibleTableCellInterface10isSelectedEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:584
 // [4] int columnIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK29QAccessibleTableCellInterface11columnIndexEv(void *this_) {
   return (int)((QAccessibleTableCellInterface*)this_)->columnIndex();
 }
@@ -44,7 +44,7 @@ int C_ZNK29QAccessibleTableCellInterface11columnIndexEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:585
 // [4] int rowIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK29QAccessibleTableCellInterface8rowIndexEv(void *this_) {
   return (int)((QAccessibleTableCellInterface*)this_)->rowIndex();
 }
@@ -52,7 +52,7 @@ int C_ZNK29QAccessibleTableCellInterface8rowIndexEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:586
 // [4] int columnExtent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK29QAccessibleTableCellInterface12columnExtentEv(void *this_) {
   return (int)((QAccessibleTableCellInterface*)this_)->columnExtent();
 }
@@ -60,7 +60,7 @@ int C_ZNK29QAccessibleTableCellInterface12columnExtentEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:587
 // [4] int rowExtent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK29QAccessibleTableCellInterface9rowExtentEv(void *this_) {
   return (int)((QAccessibleTableCellInterface*)this_)->rowExtent();
 }
@@ -68,7 +68,7 @@ int C_ZNK29QAccessibleTableCellInterface9rowExtentEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:589
 // [8] QAccessibleInterface * table()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK29QAccessibleTableCellInterface5tableEv(void *this_) {
   return (void*)((QAccessibleTableCellInterface*)this_)->table();
 }

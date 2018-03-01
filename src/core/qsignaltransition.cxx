@@ -63,7 +63,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:83
 // [1] bool eventTest(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QSignalTransition9eventTestEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QSignalTransition*)this_)->QSignalTransition::eventTest(event);
 }
@@ -71,7 +71,7 @@ bool C_ZN17QSignalTransition9eventTestEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:84
 // [-2] void onTransition(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSignalTransition12onTransitionEP6QEvent(void *this_, QEvent * event) {
   ((QSignalTransition*)this_)->QSignalTransition::onTransition(event);
 }
@@ -79,7 +79,7 @@ void C_ZN17QSignalTransition12onTransitionEP6QEvent(void *this_, QEvent * event)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:86
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QSignalTransition5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QSignalTransition*)this_)->QSignalTransition::event(e);
 }
@@ -87,7 +87,7 @@ bool C_ZN17QSignalTransition5eventEP6QEvent(void *this_, QEvent * e) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:53
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSignalTransition10metaObjectEv(void *this_) {
   return (void*)((QSignalTransition*)this_)->metaObject();
 }
@@ -95,7 +95,7 @@ void* C_ZNK17QSignalTransition10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:58
 // [-2] void QSignalTransition(class QState *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QSignalTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQSignalTransition*)(0);
   return  new MyQSignalTransition(sourceState);
@@ -103,7 +103,7 @@ void* C_ZN17QSignalTransitionC2EP6QState(QState * sourceState) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:59
 // [-2] void QSignalTransition(const class QObject *, const char *, class QState *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QSignalTransitionC2EPK7QObjectPKcP6QState(const QObject * sender, const char * signal, QState * sourceState) {
   auto _nilp = (MyQSignalTransition*)(0);
   return  new MyQSignalTransition(sender, signal, sourceState);
@@ -111,14 +111,14 @@ void* C_ZN17QSignalTransitionC2EPK7QObjectPKcP6QState(const QObject * sender, co
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:74
 // [-2] void ~QSignalTransition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSignalTransitionD2Ev(void *this_) {
   delete (QSignalTransition*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:76
 // [8] QObject * senderObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSignalTransition12senderObjectEv(void *this_) {
   return (void*)((QSignalTransition*)this_)->senderObject();
 }
@@ -126,7 +126,7 @@ void* C_ZNK17QSignalTransition12senderObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:77
 // [-2] void setSenderObject(const class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSignalTransition15setSenderObjectEPK7QObject(void *this_, const QObject * sender) {
   ((QSignalTransition*)this_)->setSenderObject(sender);
 }
@@ -134,7 +134,7 @@ void C_ZN17QSignalTransition15setSenderObjectEPK7QObject(void *this_, const QObj
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:79
 // [8] QByteArray signal()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSignalTransition6signalEv(void *this_) {
   auto rv = ((QSignalTransition*)this_)->signal();
 return new QByteArray(rv);
@@ -143,7 +143,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:80
 // [-2] void setSignal(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSignalTransition9setSignalERK10QByteArray(void *this_, QByteArray* signal) {
   ((QSignalTransition*)this_)->setSignal(*signal);
 }

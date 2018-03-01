@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:90
 // [8] QSGMaterialType * type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSGTextureMaterial4typeEv(void *this_) {
   return (void*)((QSGTextureMaterial*)this_)->type();
 }
@@ -29,13 +29,13 @@ void* C_ZNK18QSGTextureMaterial4typeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:91
 // [8] QSGMaterialShader * createShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSGTextureMaterial12createShaderEv(void *this_) {
   return (void*)((QSGTextureMaterial*)this_)->createShader();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSGTextureMaterialD2Ev(void *this_) {
   delete (QSGTextureMaterial*)(this_);
 }

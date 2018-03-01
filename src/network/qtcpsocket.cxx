@@ -23,7 +23,7 @@ MyQTcpSocket(QObject * parent) : QTcpSocket(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpsocket.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTcpSocket10metaObjectEv(void *this_) {
   return (void*)((QTcpSocket*)this_)->metaObject();
 }
@@ -31,14 +31,14 @@ void* C_ZNK10QTcpSocket10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpsocket.h:56
 // [-2] void QTcpSocket(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QTcpSocketC2EP7QObject(QObject * parent) {
   return  new QTcpSocket(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpsocket.h:57
 // [-2] void ~QTcpSocket()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpSocketD2Ev(void *this_) {
   delete (QTcpSocket*)(this_);
 }

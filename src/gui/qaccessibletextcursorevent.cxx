@@ -25,28 +25,28 @@ MyQAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos) : QAcc
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:747
 // [-2] void QAccessibleTextCursorEvent(class QObject *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextCursorEventC2EP7QObjecti(QObject * obj, int cursorPos) {
   return  new QAccessibleTextCursorEvent(obj, cursorPos);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:753
 // [-2] void QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextCursorEventC2EP20QAccessibleInterfacei(QAccessibleInterface * iface, int cursorPos) {
   return  new QAccessibleTextCursorEvent(iface, cursorPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:760
 // [-2] void ~QAccessibleTextCursorEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN26QAccessibleTextCursorEventD2Ev(void *this_) {
   delete (QAccessibleTextCursorEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:762
 // [-2] void setCursorPosition(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN26QAccessibleTextCursorEvent17setCursorPositionEi(void *this_, int position) {
   ((QAccessibleTextCursorEvent*)this_)->setCursorPosition(position);
 }
@@ -54,7 +54,7 @@ void C_ZN26QAccessibleTextCursorEvent17setCursorPositionEi(void *this_, int posi
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:763
 // [4] int cursorPosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK26QAccessibleTextCursorEvent14cursorPositionEv(void *this_) {
   return (int)((QAccessibleTextCursorEvent*)this_)->cursorPosition();
 }

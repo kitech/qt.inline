@@ -23,14 +23,14 @@ MyQBasicMutex() : QBasicMutex() {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:71
 // [-2] void QBasicMutex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QBasicMutexC2Ev() {
   return  new QBasicMutex();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:77
 // [-2] void lock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QBasicMutex4lockEv(void *this_) {
   ((QBasicMutex*)this_)->lock();
 }
@@ -38,7 +38,7 @@ void C_ZN11QBasicMutex4lockEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:83
 // [-2] void unlock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QBasicMutex6unlockEv(void *this_) {
   ((QBasicMutex*)this_)->unlock();
 }
@@ -46,7 +46,7 @@ void C_ZN11QBasicMutex6unlockEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:89
 // [1] bool tryLock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QBasicMutex7tryLockEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->tryLock();
 }
@@ -54,7 +54,7 @@ bool C_ZN11QBasicMutex7tryLockEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:94
 // [1] bool try_lock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QBasicMutex8try_lockEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->try_lock();
 }
@@ -62,7 +62,7 @@ bool C_ZN11QBasicMutex8try_lockEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:96
 // [1] bool isRecursive()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QBasicMutex11isRecursiveEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->isRecursive();
 }
@@ -70,13 +70,13 @@ bool C_ZN11QBasicMutex11isRecursiveEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:97
 // [1] bool isRecursive()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QBasicMutex11isRecursiveEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->isRecursive();
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QBasicMutexD2Ev(void *this_) {
   delete (QBasicMutex*)(this_);
 }

@@ -25,14 +25,14 @@ MyQTextListFormat(const QTextFormat & fmt_) : QTextListFormat(fmt_) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:681
 // [-2] void QTextListFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN15QTextListFormatC2Ev() {
   return  new QTextListFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:683
 // [1] bool isValid()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTextListFormat7isValidEv(void *this_) {
   return (bool)((QTextListFormat*)this_)->isValid();
 }
@@ -40,7 +40,7 @@ bool C_ZNK15QTextListFormat7isValidEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:697
 // [-2] void setStyle(enum QTextListFormat::Style)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat8setStyleENS_5StyleE(void *this_, QTextListFormat::Style style) {
   ((QTextListFormat*)this_)->setStyle(style);
 }
@@ -48,7 +48,7 @@ void C_ZN15QTextListFormat8setStyleENS_5StyleE(void *this_, QTextListFormat::Sty
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:698
 // [4] QTextListFormat::Style style()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QTextListFormat::Style C_ZNK15QTextListFormat5styleEv(void *this_) {
   return (QTextListFormat::Style)((QTextListFormat*)this_)->style();
 }
@@ -56,7 +56,7 @@ QTextListFormat::Style C_ZNK15QTextListFormat5styleEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:701
 // [-2] void setIndent(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat9setIndentEi(void *this_, int indent) {
   ((QTextListFormat*)this_)->setIndent(indent);
 }
@@ -64,7 +64,7 @@ void C_ZN15QTextListFormat9setIndentEi(void *this_, int indent) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:702
 // [4] int indent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK15QTextListFormat6indentEv(void *this_) {
   return (int)((QTextListFormat*)this_)->indent();
 }
@@ -72,7 +72,7 @@ int C_ZNK15QTextListFormat6indentEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:705
 // [-2] void setNumberPrefix(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, QString* numberPrefix) {
   ((QTextListFormat*)this_)->setNumberPrefix(*numberPrefix);
 }
@@ -80,7 +80,7 @@ void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, QString* num
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:706
 // [8] QString numberPrefix()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTextListFormat12numberPrefixEv(void *this_) {
   auto rv = ((QTextListFormat*)this_)->numberPrefix();
 return new QString(rv);
@@ -89,7 +89,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:709
 // [-2] void setNumberSuffix(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, QString* numberSuffix) {
   ((QTextListFormat*)this_)->setNumberSuffix(*numberSuffix);
 }
@@ -97,14 +97,14 @@ void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, QString* num
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:710
 // [8] QString numberSuffix()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTextListFormat12numberSuffixEv(void *this_) {
   auto rv = ((QTextListFormat*)this_)->numberSuffix();
 return new QString(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormatD2Ev(void *this_) {
   delete (QTextListFormat*)(this_);
 }

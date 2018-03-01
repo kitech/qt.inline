@@ -27,35 +27,35 @@ MyQByteArrayMatcher(const char * pattern, int length) : QByteArrayMatcher(patter
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:53
 // [-2] void QByteArrayMatcher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2Ev() {
   return  new QByteArrayMatcher();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:54
 // [-2] void QByteArrayMatcher(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(QByteArray* pattern) {
   return  new QByteArrayMatcher(*pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:55
 // [-2] void QByteArrayMatcher(const char *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2EPKci(const char * pattern, int length) {
   return  new QByteArrayMatcher(pattern, length);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:57
 // [-2] void ~QByteArrayMatcher()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QByteArrayMatcherD2Ev(void *this_) {
   delete (QByteArrayMatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:59
 // [1040] QByteArrayMatcher & operator=(const class QByteArrayMatcher &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcheraSERKS_(void *this_, QByteArrayMatcher* other) {
   auto& rv = ((QByteArrayMatcher*)this_)->operator=(*other);
 return &rv;
@@ -64,7 +64,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:61
 // [-2] void setPattern(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, QByteArray* pattern) {
   ((QByteArrayMatcher*)this_)->setPattern(*pattern);
 }
@@ -72,7 +72,7 @@ void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, QByteArray*
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:63
 // [4] int indexIn(const class QByteArray &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *this_, QByteArray* ba, int from) {
   return (int)((QByteArrayMatcher*)this_)->indexIn(*ba, from);
 }
@@ -80,7 +80,7 @@ int C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *this_, QByteArray* ba
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:64
 // [4] int indexIn(const char *, int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QByteArrayMatcher7indexInEPKcii(void *this_, const char * str, int len_, int from) {
   return (int)((QByteArrayMatcher*)this_)->indexIn(str, len_, from);
 }
@@ -88,7 +88,7 @@ int C_ZNK17QByteArrayMatcher7indexInEPKcii(void *this_, const char * str, int le
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:65
 // [8] QByteArray pattern()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QByteArrayMatcher7patternEv(void *this_) {
   auto rv = ((QByteArrayMatcher*)this_)->pattern();
 return new QByteArray(rv);

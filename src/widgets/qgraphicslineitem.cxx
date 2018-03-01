@@ -65,7 +65,7 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:806
 // [1] bool supportsExtension(enum QGraphicsItem::Extension)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
   return (bool)((QGraphicsLineItem*)this_)->QGraphicsLineItem::supportsExtension(extension);
 }
@@ -73,7 +73,7 @@ bool C_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE(voi
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:807
 // [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
   ((QGraphicsLineItem*)this_)->QGraphicsLineItem::setExtension(extension, *variant);
 }
@@ -81,7 +81,7 @@ void C_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVarian
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:808
 // [16] QVariant extension(const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsLineItem9extensionERK8QVariant(void *this_, QVariant* variant) {
   auto rv = ((QGraphicsLineItem*)this_)->QGraphicsLineItem::extension(*variant);
 return new QVariant(rv);
@@ -90,7 +90,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:780
 // [-2] void QGraphicsLineItem(class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsLineItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(parent);
@@ -98,7 +98,7 @@ void* C_ZN17QGraphicsLineItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:781
 // [-2] void QGraphicsLineItem(const class QLineF &, class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsLineItemC2ERK6QLineFP13QGraphicsItem(QLineF* line, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(*line, parent);
@@ -106,7 +106,7 @@ void* C_ZN17QGraphicsLineItemC2ERK6QLineFP13QGraphicsItem(QLineF* line, QGraphic
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:782
 // [-2] void QGraphicsLineItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsLineItemC2EddddP13QGraphicsItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(x1, y1, x2, y2, parent);
@@ -114,14 +114,14 @@ void* C_ZN17QGraphicsLineItemC2EddddP13QGraphicsItem(qreal x1, qreal y1, qreal x
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:783
 // [-2] void ~QGraphicsLineItem()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsLineItemD2Ev(void *this_) {
   delete (QGraphicsLineItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:785
 // [8] QPen pen()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsLineItem3penEv(void *this_) {
   auto rv = ((QGraphicsLineItem*)this_)->pen();
 return new QPen(rv);
@@ -130,7 +130,7 @@ return new QPen(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:786
 // [-2] void setPen(const class QPen &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsLineItem6setPenERK4QPen(void *this_, QPen* pen) {
   ((QGraphicsLineItem*)this_)->setPen(*pen);
 }
@@ -138,7 +138,7 @@ void C_ZN17QGraphicsLineItem6setPenERK4QPen(void *this_, QPen* pen) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:788
 // [32] QLineF line()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsLineItem4lineEv(void *this_) {
   auto rv = ((QGraphicsLineItem*)this_)->line();
 return new QLineF(rv);
@@ -147,7 +147,7 @@ return new QLineF(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:789
 // [-2] void setLine(const class QLineF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsLineItem7setLineERK6QLineF(void *this_, QLineF* line) {
   ((QGraphicsLineItem*)this_)->setLine(*line);
 }
@@ -155,7 +155,7 @@ void C_ZN17QGraphicsLineItem7setLineERK6QLineF(void *this_, QLineF* line) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:790
 // [-2] void setLine(qreal, qreal, qreal, qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsLineItem7setLineEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
   ((QGraphicsLineItem*)this_)->setLine(x1, y1, x2, y2);
 }
@@ -163,7 +163,7 @@ void C_ZN17QGraphicsLineItem7setLineEdddd(void *this_, qreal x1, qreal y1, qreal
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:793
 // [32] QRectF boundingRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsLineItem12boundingRectEv(void *this_) {
   auto rv = ((QGraphicsLineItem*)this_)->boundingRect();
 return new QRectF(rv);
@@ -172,7 +172,7 @@ return new QRectF(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:794
 // [8] QPainterPath shape()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsLineItem5shapeEv(void *this_) {
   auto rv = ((QGraphicsLineItem*)this_)->shape();
 return new QPainterPath(rv);
@@ -181,7 +181,7 @@ return new QPainterPath(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:795
 // [1] bool contains(const class QPointF &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsLineItem8containsERK7QPointF(void *this_, QPointF* point) {
   return (bool)((QGraphicsLineItem*)this_)->contains(*point);
 }
@@ -189,7 +189,7 @@ bool C_ZNK17QGraphicsLineItem8containsERK7QPointF(void *this_, QPointF* point) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:797
 // [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsLineItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsLineItem*)this_)->paint(painter, option, widget);
 }
@@ -197,7 +197,7 @@ void C_ZN17QGraphicsLineItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidg
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:799
 // [1] bool isObscuredBy(const class QGraphicsItem *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsLineItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QGraphicsLineItem*)this_)->isObscuredBy(item);
 }
@@ -205,7 +205,7 @@ bool C_ZNK17QGraphicsLineItem12isObscuredByEPK13QGraphicsItem(void *this_, const
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:800
 // [8] QPainterPath opaqueArea()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsLineItem10opaqueAreaEv(void *this_) {
   auto rv = ((QGraphicsLineItem*)this_)->opaqueArea();
 return new QPainterPath(rv);
@@ -214,7 +214,7 @@ return new QPainterPath(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:803
 // [4] int type()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK17QGraphicsLineItem4typeEv(void *this_) {
   return (int)((QGraphicsLineItem*)this_)->type();
 }

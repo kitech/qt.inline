@@ -29,42 +29,42 @@ MyQIcon(QIconEngine * engine) : QIcon(engine) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:60
 // [-2] void QIcon()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2Ev() {
   return  new QIcon();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:61
 // [-2] void QIcon(const class QPixmap &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2ERK7QPixmap(QPixmap* pixmap) {
   return  new QIcon(*pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:68
 // [-2] void QIcon(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2ERK7QString(QString* fileName) {
   return  new QIcon(*fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:69
 // [-2] void QIcon(class QIconEngine *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2EP11QIconEngine(QIconEngine * engine) {
   return  new QIcon(engine);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:70
 // [-2] void ~QIcon()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIconD2Ev(void *this_) {
   delete (QIcon*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:71
 // [8] QIcon & operator=(const class QIcon &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconaSERKS_(void *this_, QIcon* other) {
   auto& rv = ((QIcon*)this_)->operator=(*other);
 return &rv;
@@ -73,7 +73,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:73
 // [8] QIcon & operator=(class QIcon &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconaSEOS_(void *this_, QIcon && other) {
   auto& rv = ((QIcon*)this_)->operator=(other);
 return &rv;
@@ -82,7 +82,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:76
 // [-2] void swap(class QIcon &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon4swapERS_(void *this_, QIcon* other) {
   ((QIcon*)this_)->swap(*other);
 }
@@ -90,7 +90,7 @@ void C_ZN5QIcon4swapERS_(void *this_, QIcon* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:81
 // [32] QPixmap pixmap(const class QSize &, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon6pixmapERK5QSizeNS_4ModeENS_5StateE(void *this_, QSize* size, QIcon::Mode mode, QIcon::State state) {
   auto rv = ((QIcon*)this_)->pixmap(*size, mode, state);
 return new QPixmap(rv);
@@ -99,7 +99,7 @@ return new QPixmap(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:82
 // [32] QPixmap pixmap(int, int, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon6pixmapEiiNS_4ModeENS_5StateE(void *this_, int w, int h, QIcon::Mode mode, QIcon::State state) {
   auto rv = ((QIcon*)this_)->pixmap(w, h, mode, state);
 return new QPixmap(rv);
@@ -108,7 +108,7 @@ return new QPixmap(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:84
 // [32] QPixmap pixmap(int, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon6pixmapEiNS_4ModeENS_5StateE(void *this_, int extent, QIcon::Mode mode, QIcon::State state) {
   auto rv = ((QIcon*)this_)->pixmap(extent, mode, state);
 return new QPixmap(rv);
@@ -117,7 +117,7 @@ return new QPixmap(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:86
 // [32] QPixmap pixmap(class QWindow *, const class QSize &, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon6pixmapEP7QWindowRK5QSizeNS_4ModeENS_5StateE(void *this_, QWindow * window, QSize* size, QIcon::Mode mode, QIcon::State state) {
   auto rv = ((QIcon*)this_)->pixmap(window, *size, mode, state);
 return new QPixmap(rv);
@@ -126,7 +126,7 @@ return new QPixmap(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:88
 // [8] QSize actualSize(const class QSize &, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon10actualSizeERK5QSizeNS_4ModeENS_5StateE(void *this_, QSize* size, QIcon::Mode mode, QIcon::State state) {
   auto rv = ((QIcon*)this_)->actualSize(*size, mode, state);
 return new QSize(rv);
@@ -135,7 +135,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:89
 // [8] QSize actualSize(class QWindow *, const class QSize &, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon10actualSizeEP7QWindowRK5QSizeNS_4ModeENS_5StateE(void *this_, QWindow * window, QSize* size, QIcon::Mode mode, QIcon::State state) {
   auto rv = ((QIcon*)this_)->actualSize(window, *size, mode, state);
 return new QSize(rv);
@@ -144,7 +144,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:91
 // [8] QString name()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon4nameEv(void *this_) {
   auto rv = ((QIcon*)this_)->name();
 return new QString(rv);
@@ -153,7 +153,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:93
 // [-2] void paint(class QPainter *, const class QRect &, Qt::Alignment, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK5QIcon5paintEP8QPainterRK5QRect6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *this_, QPainter * painter, QRect* rect, QFlags<Qt::AlignmentFlag> alignment, QIcon::Mode mode, QIcon::State state) {
   ((QIcon*)this_)->paint(painter, *rect, alignment, mode, state);
 }
@@ -161,7 +161,7 @@ void C_ZNK5QIcon5paintEP8QPainterRK5QRect6QFlagsIN2Qt13AlignmentFlagEENS_4ModeEN
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:94
 // [-2] void paint(class QPainter *, int, int, int, int, Qt::Alignment, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK5QIcon5paintEP8QPainteriiii6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *this_, QPainter * painter, int x, int y, int w, int h, QFlags<Qt::AlignmentFlag> alignment, QIcon::Mode mode, QIcon::State state) {
   ((QIcon*)this_)->paint(painter, x, y, w, h, alignment, mode, state);
 }
@@ -169,7 +169,7 @@ void C_ZNK5QIcon5paintEP8QPainteriiii6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5S
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:97
 // [1] bool isNull()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK5QIcon6isNullEv(void *this_) {
   return (bool)((QIcon*)this_)->isNull();
 }
@@ -177,7 +177,7 @@ bool C_ZNK5QIcon6isNullEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:98
 // [1] bool isDetached()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK5QIcon10isDetachedEv(void *this_) {
   return (bool)((QIcon*)this_)->isDetached();
 }
@@ -185,7 +185,7 @@ bool C_ZNK5QIcon10isDetachedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:99
 // [-2] void detach()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon6detachEv(void *this_) {
   ((QIcon*)this_)->detach();
 }
@@ -193,7 +193,7 @@ void C_ZN5QIcon6detachEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:104
 // [8] qint64 cacheKey()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK5QIcon8cacheKeyEv(void *this_) {
   return (qint64)((QIcon*)this_)->cacheKey();
 }
@@ -201,7 +201,7 @@ qint64 C_ZNK5QIcon8cacheKeyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:106
 // [-2] void addPixmap(const class QPixmap &, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon9addPixmapERK7QPixmapNS_4ModeENS_5StateE(void *this_, QPixmap* pixmap, QIcon::Mode mode, QIcon::State state) {
   ((QIcon*)this_)->addPixmap(*pixmap, mode, state);
 }
@@ -209,7 +209,7 @@ void C_ZN5QIcon9addPixmapERK7QPixmapNS_4ModeENS_5StateE(void *this_, QPixmap* pi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:107
 // [-2] void addFile(const class QString &, const class QSize &, enum QIcon::Mode, enum QIcon::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon7addFileERK7QStringRK5QSizeNS_4ModeENS_5StateE(void *this_, QString* fileName, QSize* size, QIcon::Mode mode, QIcon::State state) {
   ((QIcon*)this_)->addFile(*fileName, *size, mode, state);
 }
@@ -217,7 +217,7 @@ void C_ZN5QIcon7addFileERK7QStringRK5QSizeNS_4ModeENS_5StateE(void *this_, QStri
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:111
 // [-2] void setIsMask(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon9setIsMaskEb(void *this_, bool isMask) {
   ((QIcon*)this_)->setIsMask(isMask);
 }
@@ -225,7 +225,7 @@ void C_ZN5QIcon9setIsMaskEb(void *this_, bool isMask) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:112
 // [1] bool isMask()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK5QIcon6isMaskEv(void *this_) {
   return (bool)((QIcon*)this_)->isMask();
 }
@@ -233,7 +233,7 @@ bool C_ZNK5QIcon6isMaskEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:114
 // [8] QIcon fromTheme(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon9fromThemeERK7QString(QString* name) {
   auto rv = QIcon::fromTheme(*name);
 return new QIcon(rv);
@@ -241,7 +241,7 @@ return new QIcon(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:115
 // [8] QIcon fromTheme(const class QString &, const class QIcon &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon9fromThemeERK7QStringRKS_(QString* name, QIcon* fallback) {
   auto rv = QIcon::fromTheme(*name, *fallback);
 return new QIcon(rv);
@@ -249,14 +249,14 @@ return new QIcon(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:116
 // [1] bool hasThemeIcon(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN5QIcon12hasThemeIconERK7QString(QString* name) {
   return (bool)QIcon::hasThemeIcon(*name);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:118
 // [8] QStringList themeSearchPaths()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon16themeSearchPathsEv() {
   auto rv = QIcon::themeSearchPaths();
 return new QStringList(rv);
@@ -264,14 +264,14 @@ return new QStringList(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:119
 // [-2] void setThemeSearchPaths(const class QStringList &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon19setThemeSearchPathsERK11QStringList(QStringList* searchpath) {
   QIcon::setThemeSearchPaths(*searchpath);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:121
 // [8] QString themeName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon9themeNameEv() {
   auto rv = QIcon::themeName();
 return new QString(rv);
@@ -279,7 +279,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:122
 // [-2] void setThemeName(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon12setThemeNameERK7QString(QString* path) {
   QIcon::setThemeName(*path);
 }

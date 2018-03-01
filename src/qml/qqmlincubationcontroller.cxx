@@ -35,7 +35,7 @@ MyQQmlIncubationController() : QQmlIncubationController() {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:113
 // [-2] void incubatingObjectCountChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QQmlIncubationController28incubatingObjectCountChangedEi(void *this_, int arg0) {
   ((QQmlIncubationController*)this_)->QQmlIncubationController::incubatingObjectCountChanged(arg0);
 }
@@ -43,7 +43,7 @@ void C_ZN24QQmlIncubationController28incubatingObjectCountChangedEi(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:103
 // [-2] void QQmlIncubationController()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN24QQmlIncubationControllerC2Ev() {
   auto _nilp = (MyQQmlIncubationController*)(0);
   return  new MyQQmlIncubationController();
@@ -51,14 +51,14 @@ void* C_ZN24QQmlIncubationControllerC2Ev() {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:104
 // [-2] void ~QQmlIncubationController()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QQmlIncubationControllerD2Ev(void *this_) {
   delete (QQmlIncubationController*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:106
 // [8] QQmlEngine * engine()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK24QQmlIncubationController6engineEv(void *this_) {
   return (void*)((QQmlIncubationController*)this_)->engine();
 }
@@ -66,7 +66,7 @@ void* C_ZNK24QQmlIncubationController6engineEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:107
 // [4] int incubatingObjectCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK24QQmlIncubationController21incubatingObjectCountEv(void *this_) {
   return (int)((QQmlIncubationController*)this_)->incubatingObjectCount();
 }
@@ -74,7 +74,7 @@ int C_ZNK24QQmlIncubationController21incubatingObjectCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:109
 // [-2] void incubateFor(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QQmlIncubationController11incubateForEi(void *this_, int msecs) {
   ((QQmlIncubationController*)this_)->incubateFor(msecs);
 }
@@ -82,7 +82,7 @@ void C_ZN24QQmlIncubationController11incubateForEi(void *this_, int msecs) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:110
 // [-2] void incubateWhile(volatile _Bool *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QQmlIncubationController13incubateWhileEPVbi(void *this_, volatile bool * flag, int msecs) {
   ((QQmlIncubationController*)this_)->incubateWhile(flag, msecs);
 }

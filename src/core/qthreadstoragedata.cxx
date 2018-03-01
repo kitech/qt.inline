@@ -21,14 +21,14 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:54
 // [-2] void ~QThreadStorageData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QThreadStorageDataD2Ev(void *this_) {
   delete (QThreadStorageData*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:56
 // [8] void ** get()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QThreadStorageData3getEv(void *this_) {
   return (void*)((QThreadStorageData*)this_)->get();
 }
@@ -36,7 +36,7 @@ void* C_ZNK18QThreadStorageData3getEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:57
 // [8] void ** set(void *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
   return (void*)((QThreadStorageData*)this_)->set(p);
 }
@@ -44,7 +44,7 @@ void* C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:59
 // [-2] void finish(void **)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QThreadStorageData6finishEPPv(void ** arg0) {
   QThreadStorageData::finish(arg0);
 }

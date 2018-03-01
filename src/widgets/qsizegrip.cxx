@@ -133,7 +133,7 @@ MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:62
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QSizeGrip*)this_)->QSizeGrip::paintEvent(arg0);
 }
@@ -141,7 +141,7 @@ void C_ZN9QSizeGrip10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:63
 // [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSizeGrip*)this_)->QSizeGrip::mousePressEvent(arg0);
 }
@@ -149,7 +149,7 @@ void C_ZN9QSizeGrip15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * a
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:64
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSizeGrip*)this_)->QSizeGrip::mouseMoveEvent(arg0);
 }
@@ -157,7 +157,7 @@ void C_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ar
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:65
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * mouseEvent) {
   ((QSizeGrip*)this_)->QSizeGrip::mouseReleaseEvent(mouseEvent);
 }
@@ -165,7 +165,7 @@ void C_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent *
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:66
 // [-2] void moveEvent(class QMoveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip9moveEventEP10QMoveEvent(void *this_, QMoveEvent * moveEvent) {
   ((QSizeGrip*)this_)->QSizeGrip::moveEvent(moveEvent);
 }
@@ -173,7 +173,7 @@ void C_ZN9QSizeGrip9moveEventEP10QMoveEvent(void *this_, QMoveEvent * moveEvent)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:67
 // [-2] void showEvent(class QShowEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip9showEventEP10QShowEvent(void *this_, QShowEvent * showEvent) {
   ((QSizeGrip*)this_)->QSizeGrip::showEvent(showEvent);
 }
@@ -181,7 +181,7 @@ void C_ZN9QSizeGrip9showEventEP10QShowEvent(void *this_, QShowEvent * showEvent)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:68
 // [-2] void hideEvent(class QHideEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip9hideEventEP10QHideEvent(void *this_, QHideEvent * hideEvent) {
   ((QSizeGrip*)this_)->QSizeGrip::hideEvent(hideEvent);
 }
@@ -189,7 +189,7 @@ void C_ZN9QSizeGrip9hideEventEP10QHideEvent(void *this_, QHideEvent * hideEvent)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:69
 // [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QSizeGrip*)this_)->QSizeGrip::eventFilter(arg0, arg1);
 }
@@ -197,7 +197,7 @@ bool C_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:70
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN9QSizeGrip5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QSizeGrip*)this_)->QSizeGrip::event(arg0);
 }
@@ -205,7 +205,7 @@ bool C_ZN9QSizeGrip5eventEP6QEvent(void *this_, QEvent * arg0) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:53
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSizeGrip10metaObjectEv(void *this_) {
   return (void*)((QSizeGrip*)this_)->metaObject();
 }
@@ -213,7 +213,7 @@ void* C_ZNK9QSizeGrip10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:55
 // [-2] void QSizeGrip(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QSizeGripC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSizeGrip*)(0);
   return  new MyQSizeGrip(parent);
@@ -221,14 +221,14 @@ void* C_ZN9QSizeGripC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:56
 // [-2] void ~QSizeGrip()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGripD2Ev(void *this_) {
   delete (QSizeGrip*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:58
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSizeGrip8sizeHintEv(void *this_) {
   auto rv = ((QSizeGrip*)this_)->sizeHint();
 return new QSize(rv);
@@ -237,7 +237,7 @@ return new QSize(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:59
 // [-2] void setVisible(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QSizeGrip10setVisibleEb(void *this_, bool arg0) {
   ((QSizeGrip*)this_)->setVisible(arg0);
 }

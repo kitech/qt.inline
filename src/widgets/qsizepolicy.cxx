@@ -25,21 +25,21 @@ MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSiz
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:113
 // [-2] void QSizePolicy()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QSizePolicyC2Ev() {
   return  new QSizePolicy();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:116
 // [-2] void QSizePolicy(enum QSizePolicy::Policy, enum QSizePolicy::Policy, enum QSizePolicy::ControlType)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) {
   return  new QSizePolicy(horizontal, vertical, type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:128
 // [4] QSizePolicy::Policy horizontalPolicy()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSizePolicy::Policy C_ZNK11QSizePolicy16horizontalPolicyEv(void *this_) {
   return (QSizePolicy::Policy)((QSizePolicy*)this_)->horizontalPolicy();
 }
@@ -47,7 +47,7 @@ QSizePolicy::Policy C_ZNK11QSizePolicy16horizontalPolicyEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:129
 // [4] QSizePolicy::Policy verticalPolicy()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSizePolicy::Policy C_ZNK11QSizePolicy14verticalPolicyEv(void *this_) {
   return (QSizePolicy::Policy)((QSizePolicy*)this_)->verticalPolicy();
 }
@@ -55,7 +55,7 @@ QSizePolicy::Policy C_ZNK11QSizePolicy14verticalPolicyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:130
 // [4] QSizePolicy::ControlType controlType()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSizePolicy::ControlType C_ZNK11QSizePolicy11controlTypeEv(void *this_) {
   return (QSizePolicy::ControlType)((QSizePolicy*)this_)->controlType();
 }
@@ -63,7 +63,7 @@ QSizePolicy::ControlType C_ZNK11QSizePolicy11controlTypeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:132
 // [-2] void setHorizontalPolicy(enum QSizePolicy::Policy)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy19setHorizontalPolicyENS_6PolicyE(void *this_, QSizePolicy::Policy d) {
   ((QSizePolicy*)this_)->setHorizontalPolicy(d);
 }
@@ -71,7 +71,7 @@ void C_ZN11QSizePolicy19setHorizontalPolicyENS_6PolicyE(void *this_, QSizePolicy
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:133
 // [-2] void setVerticalPolicy(enum QSizePolicy::Policy)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy17setVerticalPolicyENS_6PolicyE(void *this_, QSizePolicy::Policy d) {
   ((QSizePolicy*)this_)->setVerticalPolicy(d);
 }
@@ -79,7 +79,7 @@ void C_ZN11QSizePolicy17setVerticalPolicyENS_6PolicyE(void *this_, QSizePolicy::
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:134
 // [-2] void setControlType(enum QSizePolicy::ControlType)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy14setControlTypeENS_11ControlTypeE(void *this_, QSizePolicy::ControlType type_) {
   ((QSizePolicy*)this_)->setControlType(type_);
 }
@@ -87,7 +87,7 @@ void C_ZN11QSizePolicy14setControlTypeENS_11ControlTypeE(void *this_, QSizePolic
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:136
 // [4] Qt::Orientations expandingDirections()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::Orientations C_ZNK11QSizePolicy19expandingDirectionsEv(void *this_) {
   return (Qt::Orientations)((QSizePolicy*)this_)->expandingDirections();
 }
@@ -95,7 +95,7 @@ Qt::Orientations C_ZNK11QSizePolicy19expandingDirectionsEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:141
 // [-2] void setHeightForWidth(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy17setHeightForWidthEb(void *this_, bool b) {
   ((QSizePolicy*)this_)->setHeightForWidth(b);
 }
@@ -103,7 +103,7 @@ void C_ZN11QSizePolicy17setHeightForWidthEb(void *this_, bool b) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:142
 // [1] bool hasHeightForWidth()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSizePolicy17hasHeightForWidthEv(void *this_) {
   return (bool)((QSizePolicy*)this_)->hasHeightForWidth();
 }
@@ -111,7 +111,7 @@ bool C_ZNK11QSizePolicy17hasHeightForWidthEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:143
 // [-2] void setWidthForHeight(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy17setWidthForHeightEb(void *this_, bool b) {
   ((QSizePolicy*)this_)->setWidthForHeight(b);
 }
@@ -119,7 +119,7 @@ void C_ZN11QSizePolicy17setWidthForHeightEb(void *this_, bool b) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:144
 // [1] bool hasWidthForHeight()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSizePolicy17hasWidthForHeightEv(void *this_) {
   return (bool)((QSizePolicy*)this_)->hasWidthForHeight();
 }
@@ -127,7 +127,7 @@ bool C_ZNK11QSizePolicy17hasWidthForHeightEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:146
 // [1] bool operator==(const class QSizePolicy &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSizePolicyeqERKS_(void *this_, QSizePolicy* s) {
   return (bool)((QSizePolicy*)this_)->operator==(*s);
 }
@@ -135,7 +135,7 @@ bool C_ZNK11QSizePolicyeqERKS_(void *this_, QSizePolicy* s) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:147
 // [1] bool operator!=(const class QSizePolicy &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSizePolicyneERKS_(void *this_, QSizePolicy* s) {
   return (bool)((QSizePolicy*)this_)->operator!=(*s);
 }
@@ -143,7 +143,7 @@ bool C_ZNK11QSizePolicyneERKS_(void *this_, QSizePolicy* s) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:153
 // [4] int horizontalStretch()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK11QSizePolicy17horizontalStretchEv(void *this_) {
   return (int)((QSizePolicy*)this_)->horizontalStretch();
 }
@@ -151,7 +151,7 @@ int C_ZNK11QSizePolicy17horizontalStretchEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:154
 // [4] int verticalStretch()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK11QSizePolicy15verticalStretchEv(void *this_) {
   return (int)((QSizePolicy*)this_)->verticalStretch();
 }
@@ -159,7 +159,7 @@ int C_ZNK11QSizePolicy15verticalStretchEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:155
 // [-2] void setHorizontalStretch(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy20setHorizontalStretchEi(void *this_, int stretchFactor) {
   ((QSizePolicy*)this_)->setHorizontalStretch(stretchFactor);
 }
@@ -167,7 +167,7 @@ void C_ZN11QSizePolicy20setHorizontalStretchEi(void *this_, int stretchFactor) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:156
 // [-2] void setVerticalStretch(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy18setVerticalStretchEi(void *this_, int stretchFactor) {
   ((QSizePolicy*)this_)->setVerticalStretch(stretchFactor);
 }
@@ -175,7 +175,7 @@ void C_ZN11QSizePolicy18setVerticalStretchEi(void *this_, int stretchFactor) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:158
 // [1] bool retainSizeWhenHidden()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSizePolicy20retainSizeWhenHiddenEv(void *this_) {
   return (bool)((QSizePolicy*)this_)->retainSizeWhenHidden();
 }
@@ -183,7 +183,7 @@ bool C_ZNK11QSizePolicy20retainSizeWhenHiddenEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:159
 // [-2] void setRetainSizeWhenHidden(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy23setRetainSizeWhenHiddenEb(void *this_, bool retainSize) {
   ((QSizePolicy*)this_)->setRetainSizeWhenHidden(retainSize);
 }
@@ -191,7 +191,7 @@ void C_ZN11QSizePolicy23setRetainSizeWhenHiddenEb(void *this_, bool retainSize) 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:161
 // [-2] void transpose()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy9transposeEv(void *this_) {
   ((QSizePolicy*)this_)->transpose();
 }
@@ -199,14 +199,14 @@ void C_ZN11QSizePolicy9transposeEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:166
 // [4] QSizePolicy transposed()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QSizePolicy10transposedEv(void *this_) {
   auto rv = ((QSizePolicy*)this_)->transposed();
 return new QSizePolicy(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicyD2Ev(void *this_) {
   delete (QSizePolicy*)(this_);
 }

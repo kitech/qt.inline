@@ -23,21 +23,21 @@ MyQQmlPropertyValueSource() : QQmlPropertyValueSource() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:53
 // [-2] void QQmlPropertyValueSource()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN23QQmlPropertyValueSourceC2Ev() {
   return 0; // new QQmlPropertyValueSource();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:54
 // [-2] void ~QQmlPropertyValueSource()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QQmlPropertyValueSourceD2Ev(void *this_) {
   delete (QQmlPropertyValueSource*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:55
 // [-2] void setTarget(const class QQmlProperty &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QQmlPropertyValueSource9setTargetERK12QQmlProperty(void *this_, QQmlProperty* arg0) {
   ((QQmlPropertyValueSource*)this_)->setTarget(*arg0);
 }

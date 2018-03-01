@@ -156,7 +156,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:174
 // [8] qint64 writeData(const char *, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZN13QNetworkReply9writeDataEPKcx(void *this_, const char * data, qint64 len_) {
   return (qint64)((QNetworkReply*)this_)->QNetworkReply::writeData(data, len_);
 }
@@ -164,7 +164,7 @@ qint64 C_ZN13QNetworkReply9writeDataEPKcx(void *this_, const char * data, qint64
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:176
 // [-2] void setOperation(class QNetworkAccessManager::Operation)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply12setOperationEN21QNetworkAccessManager9OperationE(void *this_, QNetworkAccessManager::Operation operation) {
   ((QNetworkReply*)this_)->QNetworkReply::setOperation(operation);
 }
@@ -172,7 +172,7 @@ void C_ZN13QNetworkReply12setOperationEN21QNetworkAccessManager9OperationE(void 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:177
 // [-2] void setRequest(const class QNetworkRequest &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply10setRequestERK15QNetworkRequest(void *this_, QNetworkRequest* request) {
   ((QNetworkReply*)this_)->QNetworkReply::setRequest(*request);
 }
@@ -180,7 +180,7 @@ void C_ZN13QNetworkReply10setRequestERK15QNetworkRequest(void *this_, QNetworkRe
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:178
 // [-2] void setError(enum QNetworkReply::NetworkError, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply8setErrorENS_12NetworkErrorERK7QString(void *this_, QNetworkReply::NetworkError errorCode, QString* errorString) {
   ((QNetworkReply*)this_)->QNetworkReply::setError(errorCode, *errorString);
 }
@@ -188,7 +188,7 @@ void C_ZN13QNetworkReply8setErrorENS_12NetworkErrorERK7QString(void *this_, QNet
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:179
 // [-2] void setFinished(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply11setFinishedEb(void *this_, bool arg0) {
   ((QNetworkReply*)this_)->QNetworkReply::setFinished(arg0);
 }
@@ -196,7 +196,7 @@ void C_ZN13QNetworkReply11setFinishedEb(void *this_, bool arg0) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:180
 // [-2] void setUrl(const class QUrl &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply6setUrlERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkReply*)this_)->QNetworkReply::setUrl(*url);
 }
@@ -204,7 +204,7 @@ void C_ZN13QNetworkReply6setUrlERK4QUrl(void *this_, QUrl* url) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:181
 // [-2] void setHeader(class QNetworkRequest::KnownHeaders, const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void *this_, QNetworkRequest::KnownHeaders header, QVariant* value) {
   ((QNetworkReply*)this_)->QNetworkReply::setHeader(header, *value);
 }
@@ -212,7 +212,7 @@ void C_ZN13QNetworkReply9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:182
 // [-2] void setRawHeader(const class QByteArray &, const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* headerName, QByteArray* value) {
   ((QNetworkReply*)this_)->QNetworkReply::setRawHeader(*headerName, *value);
 }
@@ -220,7 +220,7 @@ void C_ZN13QNetworkReply12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:183
 // [-2] void setAttribute(class QNetworkRequest::Attribute, const class QVariant &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply12setAttributeEN15QNetworkRequest9AttributeERK8QVariant(void *this_, QNetworkRequest::Attribute code, QVariant* value) {
   ((QNetworkReply*)this_)->QNetworkReply::setAttribute(code, *value);
 }
@@ -228,7 +228,7 @@ void C_ZN13QNetworkReply12setAttributeEN15QNetworkRequest9AttributeERK8QVariant(
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:185
 // [-2] void sslConfigurationImplementation(class QSslConfiguration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK13QNetworkReply30sslConfigurationImplementationER17QSslConfiguration(void *this_, QSslConfiguration* arg0) {
   ((QNetworkReply*)this_)->QNetworkReply::sslConfigurationImplementation(*arg0);
 }
@@ -236,7 +236,7 @@ void C_ZNK13QNetworkReply30sslConfigurationImplementationER17QSslConfiguration(v
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:186
 // [-2] void setSslConfigurationImplementation(const class QSslConfiguration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply33setSslConfigurationImplementationERK17QSslConfiguration(void *this_, QSslConfiguration* arg0) {
   ((QNetworkReply*)this_)->QNetworkReply::setSslConfigurationImplementation(*arg0);
 }
@@ -244,7 +244,7 @@ void C_ZN13QNetworkReply33setSslConfigurationImplementationERK17QSslConfiguratio
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:64
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply10metaObjectEv(void *this_) {
   return (void*)((QNetworkReply*)this_)->metaObject();
 }
@@ -252,14 +252,14 @@ void* C_ZNK13QNetworkReply10metaObjectEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:114
 // [-2] void ~QNetworkReply()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReplyD2Ev(void *this_) {
   delete (QNetworkReply*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:117
 // [-2] void close()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply5closeEv(void *this_) {
   ((QNetworkReply*)this_)->close();
 }
@@ -267,7 +267,7 @@ void C_ZN13QNetworkReply5closeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:118
 // [1] bool isSequential()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkReply12isSequentialEv(void *this_) {
   return (bool)((QNetworkReply*)this_)->isSequential();
 }
@@ -275,7 +275,7 @@ bool C_ZNK13QNetworkReply12isSequentialEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:121
 // [8] qint64 readBufferSize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qint64 C_ZNK13QNetworkReply14readBufferSizeEv(void *this_) {
   return (qint64)((QNetworkReply*)this_)->readBufferSize();
 }
@@ -283,7 +283,7 @@ qint64 C_ZNK13QNetworkReply14readBufferSizeEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:122
 // [-2] void setReadBufferSize(qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply17setReadBufferSizeEx(void *this_, qint64 size) {
   ((QNetworkReply*)this_)->setReadBufferSize(size);
 }
@@ -291,7 +291,7 @@ void C_ZN13QNetworkReply17setReadBufferSizeEx(void *this_, qint64 size) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:124
 // [8] QNetworkAccessManager * manager()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply7managerEv(void *this_) {
   return (void*)((QNetworkReply*)this_)->manager();
 }
@@ -299,7 +299,7 @@ void* C_ZNK13QNetworkReply7managerEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:125
 // [4] QNetworkAccessManager::Operation operation()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QNetworkAccessManager::Operation C_ZNK13QNetworkReply9operationEv(void *this_) {
   return (QNetworkAccessManager::Operation)((QNetworkReply*)this_)->operation();
 }
@@ -307,7 +307,7 @@ QNetworkAccessManager::Operation C_ZNK13QNetworkReply9operationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:126
 // [8] QNetworkRequest request()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply7requestEv(void *this_) {
   auto rv = ((QNetworkReply*)this_)->request();
 return new QNetworkRequest(rv);
@@ -316,7 +316,7 @@ return new QNetworkRequest(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:127
 // [4] QNetworkReply::NetworkError error()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QNetworkReply::NetworkError C_ZNK13QNetworkReply5errorEv(void *this_) {
   return (QNetworkReply::NetworkError)((QNetworkReply*)this_)->error();
 }
@@ -324,7 +324,7 @@ QNetworkReply::NetworkError C_ZNK13QNetworkReply5errorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:128
 // [1] bool isFinished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkReply10isFinishedEv(void *this_) {
   return (bool)((QNetworkReply*)this_)->isFinished();
 }
@@ -332,7 +332,7 @@ bool C_ZNK13QNetworkReply10isFinishedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:129
 // [1] bool isRunning()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkReply9isRunningEv(void *this_) {
   return (bool)((QNetworkReply*)this_)->isRunning();
 }
@@ -340,7 +340,7 @@ bool C_ZNK13QNetworkReply9isRunningEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:130
 // [8] QUrl url()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply3urlEv(void *this_) {
   auto rv = ((QNetworkReply*)this_)->url();
 return new QUrl(rv);
@@ -349,7 +349,7 @@ return new QUrl(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:133
 // [16] QVariant header(class QNetworkRequest::KnownHeaders)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply6headerEN15QNetworkRequest12KnownHeadersE(void *this_, QNetworkRequest::KnownHeaders header) {
   auto rv = ((QNetworkReply*)this_)->header(header);
 return new QVariant(rv);
@@ -358,7 +358,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:136
 // [1] bool hasRawHeader(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkReply12hasRawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   return (bool)((QNetworkReply*)this_)->hasRawHeader(*headerName);
 }
@@ -366,7 +366,7 @@ bool C_ZNK13QNetworkReply12hasRawHeaderERK10QByteArray(void *this_, QByteArray* 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:138
 // [8] QByteArray rawHeader(const class QByteArray &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply9rawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   auto rv = ((QNetworkReply*)this_)->rawHeader(*headerName);
 return new QByteArray(rv);
@@ -375,7 +375,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:144
 // [16] QVariant attribute(class QNetworkRequest::Attribute)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply9attributeEN15QNetworkRequest9AttributeE(void *this_, QNetworkRequest::Attribute code) {
   auto rv = ((QNetworkReply*)this_)->attribute(code);
 return new QVariant(rv);
@@ -384,7 +384,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:147
 // [8] QSslConfiguration sslConfiguration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply16sslConfigurationEv(void *this_) {
   auto rv = ((QNetworkReply*)this_)->sslConfiguration();
 return new QSslConfiguration(rv);
@@ -393,7 +393,7 @@ return new QSslConfiguration(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:148
 // [-2] void setSslConfiguration(const class QSslConfiguration &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply19setSslConfigurationERK17QSslConfiguration(void *this_, QSslConfiguration* configuration) {
   ((QNetworkReply*)this_)->setSslConfiguration(*configuration);
 }
@@ -401,7 +401,7 @@ void C_ZN13QNetworkReply19setSslConfigurationERK17QSslConfiguration(void *this_,
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:153
 // [-2] void abort()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply5abortEv(void *this_) {
   ((QNetworkReply*)this_)->abort();
 }
@@ -409,7 +409,7 @@ void C_ZN13QNetworkReply5abortEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:154
 // [-2] void ignoreSslErrors()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply15ignoreSslErrorsEv(void *this_) {
   ((QNetworkReply*)this_)->ignoreSslErrors();
 }
@@ -417,7 +417,7 @@ void C_ZN13QNetworkReply15ignoreSslErrorsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:157
 // [-2] void metaDataChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply15metaDataChangedEv(void *this_) {
   ((QNetworkReply*)this_)->metaDataChanged();
 }
@@ -425,7 +425,7 @@ void C_ZN13QNetworkReply15metaDataChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:158
 // [-2] void finished()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply8finishedEv(void *this_) {
   ((QNetworkReply*)this_)->finished();
 }
@@ -433,7 +433,7 @@ void C_ZN13QNetworkReply8finishedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:159
 // [-2] void error(class QNetworkReply::NetworkError)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply5errorENS_12NetworkErrorE(void *this_, QNetworkReply::NetworkError arg0) {
   ((QNetworkReply*)this_)->error(arg0);
 }
@@ -441,7 +441,7 @@ void C_ZN13QNetworkReply5errorENS_12NetworkErrorE(void *this_, QNetworkReply::Ne
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:161
 // [-2] void encrypted()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply9encryptedEv(void *this_) {
   ((QNetworkReply*)this_)->encrypted();
 }
@@ -449,7 +449,7 @@ void C_ZN13QNetworkReply9encryptedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:163
 // [-2] void preSharedKeyAuthenticationRequired(class QSslPreSharedKeyAuthenticator *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAuthenticator(void *this_, QSslPreSharedKeyAuthenticator * authenticator) {
   ((QNetworkReply*)this_)->preSharedKeyAuthenticationRequired(authenticator);
 }
@@ -457,7 +457,7 @@ void C_ZN13QNetworkReply34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKey
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:165
 // [-2] void redirected(const class QUrl &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply10redirectedERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkReply*)this_)->redirected(*url);
 }
@@ -465,7 +465,7 @@ void C_ZN13QNetworkReply10redirectedERK4QUrl(void *this_, QUrl* url) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:166
 // [-2] void redirectAllowed()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply15redirectAllowedEv(void *this_) {
   ((QNetworkReply*)this_)->redirectAllowed();
 }
@@ -473,7 +473,7 @@ void C_ZN13QNetworkReply15redirectAllowedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:168
 // [-2] void uploadProgress(qint64, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply14uploadProgressExx(void *this_, qint64 bytesSent, qint64 bytesTotal) {
   ((QNetworkReply*)this_)->uploadProgress(bytesSent, bytesTotal);
 }
@@ -481,7 +481,7 @@ void C_ZN13QNetworkReply14uploadProgressExx(void *this_, qint64 bytesSent, qint6
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:169
 // [-2] void downloadProgress(qint64, qint64)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply16downloadProgressExx(void *this_, qint64 bytesReceived, qint64 bytesTotal) {
   ((QNetworkReply*)this_)->downloadProgress(bytesReceived, bytesTotal);
 }

@@ -35,7 +35,7 @@ MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:273
 // [-2] void draw(class QPainter *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect4drawEP8QPainter(void *this_, QPainter * painter) {
   ((QGraphicsOpacityEffect*)this_)->QGraphicsOpacityEffect::draw(painter);
 }
@@ -43,7 +43,7 @@ void C_ZN22QGraphicsOpacityEffect4drawEP8QPainter(void *this_, QPainter * painte
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:254
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsOpacityEffect10metaObjectEv(void *this_) {
   return (void*)((QGraphicsOpacityEffect*)this_)->metaObject();
 }
@@ -51,7 +51,7 @@ void* C_ZNK22QGraphicsOpacityEffect10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:258
 // [-2] void QGraphicsOpacityEffect(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsOpacityEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsOpacityEffect*)(0);
   return  new MyQGraphicsOpacityEffect(parent);
@@ -59,14 +59,14 @@ void* C_ZN22QGraphicsOpacityEffectC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:259
 // [-2] void ~QGraphicsOpacityEffect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffectD2Ev(void *this_) {
   delete (QGraphicsOpacityEffect*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:261
 // [8] qreal opacity()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsOpacityEffect7opacityEv(void *this_) {
   return (qreal)((QGraphicsOpacityEffect*)this_)->opacity();
 }
@@ -74,7 +74,7 @@ qreal C_ZNK22QGraphicsOpacityEffect7opacityEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:262
 // [8] QBrush opacityMask()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsOpacityEffect11opacityMaskEv(void *this_) {
   auto rv = ((QGraphicsOpacityEffect*)this_)->opacityMask();
 return new QBrush(rv);
@@ -83,7 +83,7 @@ return new QBrush(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:265
 // [-2] void setOpacity(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect10setOpacityEd(void *this_, qreal opacity) {
   ((QGraphicsOpacityEffect*)this_)->setOpacity(opacity);
 }
@@ -91,7 +91,7 @@ void C_ZN22QGraphicsOpacityEffect10setOpacityEd(void *this_, qreal opacity) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:266
 // [-2] void setOpacityMask(const class QBrush &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush(void *this_, QBrush* mask) {
   ((QGraphicsOpacityEffect*)this_)->setOpacityMask(*mask);
 }
@@ -99,7 +99,7 @@ void C_ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush(void *this_, QBrush*
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:269
 // [-2] void opacityChanged(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect14opacityChangedEd(void *this_, qreal opacity) {
   ((QGraphicsOpacityEffect*)this_)->opacityChanged(opacity);
 }
@@ -107,7 +107,7 @@ void C_ZN22QGraphicsOpacityEffect14opacityChangedEd(void *this_, qreal opacity) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:270
 // [-2] void opacityMaskChanged(const class QBrush &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(void *this_, QBrush* mask) {
   ((QGraphicsOpacityEffect*)this_)->opacityMaskChanged(*mask);
 }

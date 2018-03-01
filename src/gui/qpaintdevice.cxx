@@ -16,14 +16,14 @@
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:72
 // [-2] void ~QPaintDevice()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QPaintDeviceD2Ev(void *this_) {
   delete (QPaintDevice*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:74
 // [4] int devType()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice7devTypeEv(void *this_) {
   return (int)((QPaintDevice*)this_)->devType();
 }
@@ -31,7 +31,7 @@ int C_ZNK12QPaintDevice7devTypeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:75
 // [1] bool paintingActive()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPaintDevice14paintingActiveEv(void *this_) {
   return (bool)((QPaintDevice*)this_)->paintingActive();
 }
@@ -39,7 +39,7 @@ bool C_ZNK12QPaintDevice14paintingActiveEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:76
 // [8] QPaintEngine * paintEngine()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPaintDevice11paintEngineEv(void *this_) {
   return (void*)((QPaintDevice*)this_)->paintEngine();
 }
@@ -47,7 +47,7 @@ void* C_ZNK12QPaintDevice11paintEngineEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:78
 // [4] int width()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice5widthEv(void *this_) {
   return (int)((QPaintDevice*)this_)->width();
 }
@@ -55,7 +55,7 @@ int C_ZNK12QPaintDevice5widthEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:79
 // [4] int height()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice6heightEv(void *this_) {
   return (int)((QPaintDevice*)this_)->height();
 }
@@ -63,7 +63,7 @@ int C_ZNK12QPaintDevice6heightEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:80
 // [4] int widthMM()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice7widthMMEv(void *this_) {
   return (int)((QPaintDevice*)this_)->widthMM();
 }
@@ -71,7 +71,7 @@ int C_ZNK12QPaintDevice7widthMMEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:81
 // [4] int heightMM()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice8heightMMEv(void *this_) {
   return (int)((QPaintDevice*)this_)->heightMM();
 }
@@ -79,7 +79,7 @@ int C_ZNK12QPaintDevice8heightMMEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:82
 // [4] int logicalDpiX()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice11logicalDpiXEv(void *this_) {
   return (int)((QPaintDevice*)this_)->logicalDpiX();
 }
@@ -87,7 +87,7 @@ int C_ZNK12QPaintDevice11logicalDpiXEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:83
 // [4] int logicalDpiY()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice11logicalDpiYEv(void *this_) {
   return (int)((QPaintDevice*)this_)->logicalDpiY();
 }
@@ -95,7 +95,7 @@ int C_ZNK12QPaintDevice11logicalDpiYEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:84
 // [4] int physicalDpiX()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice12physicalDpiXEv(void *this_) {
   return (int)((QPaintDevice*)this_)->physicalDpiX();
 }
@@ -103,7 +103,7 @@ int C_ZNK12QPaintDevice12physicalDpiXEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:85
 // [4] int physicalDpiY()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice12physicalDpiYEv(void *this_) {
   return (int)((QPaintDevice*)this_)->physicalDpiY();
 }
@@ -111,7 +111,7 @@ int C_ZNK12QPaintDevice12physicalDpiYEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:86
 // [4] int devicePixelRatio()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice16devicePixelRatioEv(void *this_) {
   return (int)((QPaintDevice*)this_)->devicePixelRatio();
 }
@@ -119,7 +119,7 @@ int C_ZNK12QPaintDevice16devicePixelRatioEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:87
 // [8] qreal devicePixelRatioF()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QPaintDevice17devicePixelRatioFEv(void *this_) {
   return (qreal)((QPaintDevice*)this_)->devicePixelRatioF();
 }
@@ -127,7 +127,7 @@ qreal C_ZNK12QPaintDevice17devicePixelRatioFEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:88
 // [4] int colorCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice10colorCountEv(void *this_) {
   return (int)((QPaintDevice*)this_)->colorCount();
 }
@@ -135,7 +135,7 @@ int C_ZNK12QPaintDevice10colorCountEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:89
 // [4] int depth()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QPaintDevice5depthEv(void *this_) {
   return (int)((QPaintDevice*)this_)->depth();
 }
@@ -143,14 +143,14 @@ int C_ZNK12QPaintDevice5depthEv(void *this_) {
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:91
 // [8] qreal devicePixelRatioFScale()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZN12QPaintDevice22devicePixelRatioFScaleEv() {
   return (qreal)QPaintDevice::devicePixelRatioFScale();
 }
 // Private inline Visibility=Default Availability=NotAvailable
 // /usr/include/qt/QtGui/qpaintdevice.h:101
 // [-2] void QPaintDevice(const class QPaintDevice &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QPaintDeviceC2ERKS_(QPaintDevice* arg0) {
   return 0; // new QPaintDevice(*arg0);
 }

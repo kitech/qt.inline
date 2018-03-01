@@ -23,21 +23,21 @@ MyQQmlParserStatus() : QQmlParserStatus() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:52
 // [-2] void QQmlParserStatus()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlParserStatusC2Ev() {
   return 0; // new QQmlParserStatus();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:53
 // [-2] void ~QQmlParserStatus()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QQmlParserStatusD2Ev(void *this_) {
   delete (QQmlParserStatus*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:55
 // [-2] void classBegin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QQmlParserStatus10classBeginEv(void *this_) {
   ((QQmlParserStatus*)this_)->classBegin();
 }
@@ -45,7 +45,7 @@ void C_ZN16QQmlParserStatus10classBeginEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:56
 // [-2] void componentComplete()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN16QQmlParserStatus17componentCompleteEv(void *this_) {
   ((QQmlParserStatus*)this_)->componentComplete();
 }

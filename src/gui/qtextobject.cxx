@@ -37,7 +37,7 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:68
 // [-2] void setFormat(const class QTextFormat &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QTextObject9setFormatERK11QTextFormat(void *this_, QTextFormat* format) {
   ((QTextObject*)this_)->QTextObject::setFormat(*format);
 }
@@ -45,7 +45,7 @@ void C_ZN11QTextObject9setFormatERK11QTextFormat(void *this_, QTextFormat* forma
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:62
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextObject10metaObjectEv(void *this_) {
   return (void*)((QTextObject*)this_)->metaObject();
 }
@@ -53,7 +53,7 @@ void* C_ZNK11QTextObject10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:71
 // [16] QTextFormat format()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextObject6formatEv(void *this_) {
   auto rv = ((QTextObject*)this_)->format();
 return new QTextFormat(rv);
@@ -62,7 +62,7 @@ return new QTextFormat(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:72
 // [4] int formatIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextObject11formatIndexEv(void *this_) {
   return (int)((QTextObject*)this_)->formatIndex();
 }
@@ -70,7 +70,7 @@ int C_ZNK11QTextObject11formatIndexEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:74
 // [8] QTextDocument * document()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextObject8documentEv(void *this_) {
   return (void*)((QTextObject*)this_)->document();
 }
@@ -78,7 +78,7 @@ void* C_ZNK11QTextObject8documentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:76
 // [4] int objectIndex()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextObject11objectIndexEv(void *this_) {
   return (int)((QTextObject*)this_)->objectIndex();
 }

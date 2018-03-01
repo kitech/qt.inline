@@ -23,21 +23,21 @@ MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:754
 // [-2] void QToolBarChangeEvent(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
   return  new QToolBarChangeEvent(t);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:755
 // [-2] void ~QToolBarChangeEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QToolBarChangeEventD2Ev(void *this_) {
   delete (QToolBarChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:757
 // [1] bool toggle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK19QToolBarChangeEvent6toggleEv(void *this_) {
   return (bool)((QToolBarChangeEvent*)this_)->toggle();
 }

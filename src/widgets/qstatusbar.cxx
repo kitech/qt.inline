@@ -96,7 +96,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:82
 // [-2] void showEvent(class QShowEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
   ((QStatusBar*)this_)->QStatusBar::showEvent(arg0);
 }
@@ -104,7 +104,7 @@ void C_ZN10QStatusBar9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:83
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QStatusBar*)this_)->QStatusBar::paintEvent(arg0);
 }
@@ -112,7 +112,7 @@ void C_ZN10QStatusBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:84
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QStatusBar*)this_)->QStatusBar::resizeEvent(arg0);
 }
@@ -120,7 +120,7 @@ void C_ZN10QStatusBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * a
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:87
 // [-2] void reformat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar8reformatEv(void *this_) {
   ((QStatusBar*)this_)->QStatusBar::reformat();
 }
@@ -128,7 +128,7 @@ void C_ZN10QStatusBar8reformatEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:88
 // [-2] void hideOrShow()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar10hideOrShowEv(void *this_) {
   ((QStatusBar*)this_)->QStatusBar::hideOrShow();
 }
@@ -136,7 +136,7 @@ void C_ZN10QStatusBar10hideOrShowEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:89
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QStatusBar5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QStatusBar*)this_)->QStatusBar::event(arg0);
 }
@@ -144,7 +144,7 @@ bool C_ZN10QStatusBar5eventEP6QEvent(void *this_, QEvent * arg0) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QStatusBar10metaObjectEv(void *this_) {
   return (void*)((QStatusBar*)this_)->metaObject();
 }
@@ -152,7 +152,7 @@ void* C_ZNK10QStatusBar10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:59
 // [-2] void QStatusBar(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QStatusBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQStatusBar*)(0);
   return  new MyQStatusBar(parent);
@@ -160,14 +160,14 @@ void* C_ZN10QStatusBarC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:60
 // [-2] void ~QStatusBar()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBarD2Ev(void *this_) {
   delete (QStatusBar*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:62
 // [-2] void addWidget(class QWidget *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar9addWidgetEP7QWidgeti(void *this_, QWidget * widget, int stretch) {
   ((QStatusBar*)this_)->addWidget(widget, stretch);
 }
@@ -175,7 +175,7 @@ void C_ZN10QStatusBar9addWidgetEP7QWidgeti(void *this_, QWidget * widget, int st
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:63
 // [4] int insertWidget(int, class QWidget *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN10QStatusBar12insertWidgetEiP7QWidgeti(void *this_, int index, QWidget * widget, int stretch) {
   return (int)((QStatusBar*)this_)->insertWidget(index, widget, stretch);
 }
@@ -183,7 +183,7 @@ int C_ZN10QStatusBar12insertWidgetEiP7QWidgeti(void *this_, int index, QWidget *
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:64
 // [-2] void addPermanentWidget(class QWidget *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar18addPermanentWidgetEP7QWidgeti(void *this_, QWidget * widget, int stretch) {
   ((QStatusBar*)this_)->addPermanentWidget(widget, stretch);
 }
@@ -191,7 +191,7 @@ void C_ZN10QStatusBar18addPermanentWidgetEP7QWidgeti(void *this_, QWidget * widg
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:65
 // [4] int insertPermanentWidget(int, class QWidget *, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN10QStatusBar21insertPermanentWidgetEiP7QWidgeti(void *this_, int index, QWidget * widget, int stretch) {
   return (int)((QStatusBar*)this_)->insertPermanentWidget(index, widget, stretch);
 }
@@ -199,7 +199,7 @@ int C_ZN10QStatusBar21insertPermanentWidgetEiP7QWidgeti(void *this_, int index, 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:66
 // [-2] void removeWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar12removeWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QStatusBar*)this_)->removeWidget(widget);
 }
@@ -207,7 +207,7 @@ void C_ZN10QStatusBar12removeWidgetEP7QWidget(void *this_, QWidget * widget) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:68
 // [-2] void setSizeGripEnabled(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar18setSizeGripEnabledEb(void *this_, bool arg0) {
   ((QStatusBar*)this_)->setSizeGripEnabled(arg0);
 }
@@ -215,7 +215,7 @@ void C_ZN10QStatusBar18setSizeGripEnabledEb(void *this_, bool arg0) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:69
 // [1] bool isSizeGripEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QStatusBar17isSizeGripEnabledEv(void *this_) {
   return (bool)((QStatusBar*)this_)->isSizeGripEnabled();
 }
@@ -223,7 +223,7 @@ bool C_ZNK10QStatusBar17isSizeGripEnabledEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:71
 // [8] QString currentMessage()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QStatusBar14currentMessageEv(void *this_) {
   auto rv = ((QStatusBar*)this_)->currentMessage();
 return new QString(rv);
@@ -232,7 +232,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:74
 // [-2] void showMessage(const class QString &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar11showMessageERK7QStringi(void *this_, QString* text, int timeout) {
   ((QStatusBar*)this_)->showMessage(*text, timeout);
 }
@@ -240,7 +240,7 @@ void C_ZN10QStatusBar11showMessageERK7QStringi(void *this_, QString* text, int t
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:75
 // [-2] void clearMessage()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar12clearMessageEv(void *this_) {
   ((QStatusBar*)this_)->clearMessage();
 }
@@ -248,7 +248,7 @@ void C_ZN10QStatusBar12clearMessageEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:79
 // [-2] void messageChanged(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar14messageChangedERK7QString(void *this_, QString* text) {
   ((QStatusBar*)this_)->messageChanged(*text);
 }

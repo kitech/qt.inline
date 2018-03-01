@@ -25,12 +25,12 @@ MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:552
 // [-2] void QStyleOptionSpinBox()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionSpinBoxC2Ev() {
   return  new QStyleOptionSpinBox();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QStyleOptionSpinBoxD2Ev(void *this_) {
   delete (QStyleOptionSpinBox*)(this_);
 }

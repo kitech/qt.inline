@@ -25,12 +25,12 @@ MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:171
 // [-2] void QStyleOptionTabWidgetFrame()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QStyleOptionTabWidgetFrameC2Ev() {
   return  new QStyleOptionTabWidgetFrame();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN26QStyleOptionTabWidgetFrameD2Ev(void *this_) {
   delete (QStyleOptionTabWidgetFrame*)(this_);
 }

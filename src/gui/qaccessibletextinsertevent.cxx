@@ -25,28 +25,28 @@ MyQAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const Q
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:804
 // [-2] void QAccessibleTextInsertEvent(class QObject *, int, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextInsertEventC2EP7QObjectiRK7QString(QObject * obj, int position, QString* text) {
   return  new QAccessibleTextInsertEvent(obj, position, *text);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:810
 // [-2] void QAccessibleTextInsertEvent(class QAccessibleInterface *, int, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextInsertEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, QString* text) {
   return  new QAccessibleTextInsertEvent(iface, position, *text);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:817
 // [-2] void ~QAccessibleTextInsertEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN26QAccessibleTextInsertEventD2Ev(void *this_) {
   delete (QAccessibleTextInsertEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:819
 // [8] QString textInserted()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK26QAccessibleTextInsertEvent12textInsertedEv(void *this_) {
   auto rv = ((QAccessibleTextInsertEvent*)this_)->textInserted();
 return new QString(rv);
@@ -55,7 +55,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:822
 // [4] int changePosition()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK26QAccessibleTextInsertEvent14changePositionEv(void *this_) {
   return (int)((QAccessibleTextInsertEvent*)this_)->changePosition();
 }

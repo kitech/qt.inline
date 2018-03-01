@@ -23,14 +23,14 @@ MyQCloseEvent() : QCloseEvent() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:477
 // [-2] void QCloseEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QCloseEventC2Ev() {
   return  new QCloseEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:478
 // [-2] void ~QCloseEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QCloseEventD2Ev(void *this_) {
   delete (QCloseEvent*)(this_);
 }

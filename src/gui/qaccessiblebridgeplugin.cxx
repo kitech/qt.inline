@@ -23,7 +23,7 @@ MyQAccessibleBridgePlugin(QObject * parent) : QAccessibleBridgePlugin(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:67
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK23QAccessibleBridgePlugin10metaObjectEv(void *this_) {
   return (void*)((QAccessibleBridgePlugin*)this_)->metaObject();
 }
@@ -31,21 +31,21 @@ void* C_ZNK23QAccessibleBridgePlugin10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:69
 // [-2] void QAccessibleBridgePlugin(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN23QAccessibleBridgePluginC2EP7QObject(QObject * parent) {
   return 0; // new QAccessibleBridgePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:70
 // [-2] void ~QAccessibleBridgePlugin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QAccessibleBridgePluginD2Ev(void *this_) {
   delete (QAccessibleBridgePlugin*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:72
 // [8] QAccessibleBridge * create(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN23QAccessibleBridgePlugin6createERK7QString(void *this_, QString* key) {
   return (void*)((QAccessibleBridgePlugin*)this_)->create(*key);
 }

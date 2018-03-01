@@ -35,7 +35,7 @@ MyQLocalServer(QObject * parent) : QLocalServer(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:98
 // [-2] void incomingConnection(quintptr)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalServer18incomingConnectionEy(void *this_, quintptr socketDescriptor) {
   ((QLocalServer*)this_)->QLocalServer::incomingConnection(socketDescriptor);
 }
@@ -43,7 +43,7 @@ void C_ZN12QLocalServer18incomingConnectionEy(void *this_, quintptr socketDescri
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalServer10metaObjectEv(void *this_) {
   return (void*)((QLocalServer*)this_)->metaObject();
 }
@@ -51,7 +51,7 @@ void* C_ZNK12QLocalServer10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:60
 // [-2] void newConnection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalServer13newConnectionEv(void *this_) {
   ((QLocalServer*)this_)->newConnection();
 }
@@ -59,7 +59,7 @@ void C_ZN12QLocalServer13newConnectionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:74
 // [-2] void QLocalServer(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalServerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQLocalServer*)(0);
   return  new MyQLocalServer(parent);
@@ -67,14 +67,14 @@ void* C_ZN12QLocalServerC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:75
 // [-2] void ~QLocalServer()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalServerD2Ev(void *this_) {
   delete (QLocalServer*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:77
 // [-2] void close()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalServer5closeEv(void *this_) {
   ((QLocalServer*)this_)->close();
 }
@@ -82,7 +82,7 @@ void C_ZN12QLocalServer5closeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:78
 // [8] QString errorString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalServer11errorStringEv(void *this_) {
   auto rv = ((QLocalServer*)this_)->errorString();
 return new QString(rv);
@@ -91,7 +91,7 @@ return new QString(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:79
 // [1] bool hasPendingConnections()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QLocalServer21hasPendingConnectionsEv(void *this_) {
   return (bool)((QLocalServer*)this_)->hasPendingConnections();
 }
@@ -99,7 +99,7 @@ bool C_ZNK12QLocalServer21hasPendingConnectionsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:80
 // [1] bool isListening()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK12QLocalServer11isListeningEv(void *this_) {
   return (bool)((QLocalServer*)this_)->isListening();
 }
@@ -107,7 +107,7 @@ bool C_ZNK12QLocalServer11isListeningEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:81
 // [1] bool listen(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer6listenERK7QString(void *this_, QString* name) {
   return (bool)((QLocalServer*)this_)->listen(*name);
 }
@@ -115,7 +115,7 @@ bool C_ZN12QLocalServer6listenERK7QString(void *this_, QString* name) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:82
 // [1] bool listen(qintptr)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer6listenEx(void *this_, qintptr socketDescriptor) {
   return (bool)((QLocalServer*)this_)->listen(socketDescriptor);
 }
@@ -123,7 +123,7 @@ bool C_ZN12QLocalServer6listenEx(void *this_, qintptr socketDescriptor) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:83
 // [4] int maxPendingConnections()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK12QLocalServer21maxPendingConnectionsEv(void *this_) {
   return (int)((QLocalServer*)this_)->maxPendingConnections();
 }
@@ -131,7 +131,7 @@ int C_ZNK12QLocalServer21maxPendingConnectionsEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:84
 // [8] QLocalSocket * nextPendingConnection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalServer21nextPendingConnectionEv(void *this_) {
   return (void*)((QLocalServer*)this_)->nextPendingConnection();
 }
@@ -139,7 +139,7 @@ void* C_ZN12QLocalServer21nextPendingConnectionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:85
 // [8] QString serverName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalServer10serverNameEv(void *this_) {
   auto rv = ((QLocalServer*)this_)->serverName();
 return new QString(rv);
@@ -148,7 +148,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:86
 // [8] QString fullServerName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalServer14fullServerNameEv(void *this_) {
   auto rv = ((QLocalServer*)this_)->fullServerName();
 return new QString(rv);
@@ -157,14 +157,14 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:87
 // [1] bool removeServer(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer12removeServerERK7QString(QString* name) {
   return (bool)QLocalServer::removeServer(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:88
 // [4] QAbstractSocket::SocketError serverError()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QAbstractSocket::SocketError C_ZNK12QLocalServer11serverErrorEv(void *this_) {
   return (QAbstractSocket::SocketError)((QLocalServer*)this_)->serverError();
 }
@@ -172,7 +172,7 @@ QAbstractSocket::SocketError C_ZNK12QLocalServer11serverErrorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:89
 // [-2] void setMaxPendingConnections(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalServer24setMaxPendingConnectionsEi(void *this_, int numConnections) {
   ((QLocalServer*)this_)->setMaxPendingConnections(numConnections);
 }
@@ -180,7 +180,7 @@ void C_ZN12QLocalServer24setMaxPendingConnectionsEi(void *this_, int numConnecti
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:90
 // [1] bool waitForNewConnection(int, _Bool *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer20waitForNewConnectionEiPb(void *this_, int msec, bool * timedOut) {
   return (bool)((QLocalServer*)this_)->waitForNewConnection(msec, timedOut);
 }
@@ -188,7 +188,7 @@ bool C_ZN12QLocalServer20waitForNewConnectionEiPb(void *this_, int msec, bool * 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:92
 // [-2] void setSocketOptions(QLocalServer::SocketOptions)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalServer16setSocketOptionsE6QFlagsINS_12SocketOptionEE(void *this_, QFlags<QLocalServer::SocketOption> options) {
   ((QLocalServer*)this_)->setSocketOptions(options);
 }
@@ -196,7 +196,7 @@ void C_ZN12QLocalServer16setSocketOptionsE6QFlagsINS_12SocketOptionEE(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:93
 // [4] QLocalServer::SocketOptions socketOptions()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QLocalServer::SocketOptions* C_ZNK12QLocalServer13socketOptionsEv(void *this_) {
   auto rv = ((QLocalServer*)this_)->socketOptions();
 return new QLocalServer::SocketOptions(rv);
@@ -205,7 +205,7 @@ return new QLocalServer::SocketOptions(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:95
 // [8] qintptr socketDescriptor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qintptr C_ZNK12QLocalServer16socketDescriptorEv(void *this_) {
   return (qintptr)((QLocalServer*)this_)->socketDescriptor();
 }

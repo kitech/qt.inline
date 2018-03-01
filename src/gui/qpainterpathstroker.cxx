@@ -25,28 +25,28 @@ MyQPainterPathStroker(const QPen & pen) : QPainterPathStroker(pen) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:246
 // [-2] void QPainterPathStroker()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QPainterPathStrokerC2Ev() {
   return  new QPainterPathStroker();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:247
 // [-2] void QPainterPathStroker(const class QPen &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN19QPainterPathStrokerC2ERK4QPen(QPen* pen) {
   return  new QPainterPathStroker(*pen);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:248
 // [-2] void ~QPainterPathStroker()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStrokerD2Ev(void *this_) {
   delete (QPainterPathStroker*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:250
 // [-2] void setWidth(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker8setWidthEd(void *this_, qreal width) {
   ((QPainterPathStroker*)this_)->setWidth(width);
 }
@@ -54,7 +54,7 @@ void C_ZN19QPainterPathStroker8setWidthEd(void *this_, qreal width) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:251
 // [8] qreal width()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QPainterPathStroker5widthEv(void *this_) {
   return (qreal)((QPainterPathStroker*)this_)->width();
 }
@@ -62,7 +62,7 @@ qreal C_ZNK19QPainterPathStroker5widthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:253
 // [-2] void setCapStyle(Qt::PenCapStyle)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker11setCapStyleEN2Qt11PenCapStyleE(void *this_, Qt::PenCapStyle style) {
   ((QPainterPathStroker*)this_)->setCapStyle(style);
 }
@@ -70,7 +70,7 @@ void C_ZN19QPainterPathStroker11setCapStyleEN2Qt11PenCapStyleE(void *this_, Qt::
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:254
 // [4] Qt::PenCapStyle capStyle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::PenCapStyle C_ZNK19QPainterPathStroker8capStyleEv(void *this_) {
   return (Qt::PenCapStyle)((QPainterPathStroker*)this_)->capStyle();
 }
@@ -78,7 +78,7 @@ Qt::PenCapStyle C_ZNK19QPainterPathStroker8capStyleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:256
 // [-2] void setJoinStyle(Qt::PenJoinStyle)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker12setJoinStyleEN2Qt12PenJoinStyleE(void *this_, Qt::PenJoinStyle style) {
   ((QPainterPathStroker*)this_)->setJoinStyle(style);
 }
@@ -86,7 +86,7 @@ void C_ZN19QPainterPathStroker12setJoinStyleEN2Qt12PenJoinStyleE(void *this_, Qt
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:257
 // [4] Qt::PenJoinStyle joinStyle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::PenJoinStyle C_ZNK19QPainterPathStroker9joinStyleEv(void *this_) {
   return (Qt::PenJoinStyle)((QPainterPathStroker*)this_)->joinStyle();
 }
@@ -94,7 +94,7 @@ Qt::PenJoinStyle C_ZNK19QPainterPathStroker9joinStyleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:259
 // [-2] void setMiterLimit(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker13setMiterLimitEd(void *this_, qreal length) {
   ((QPainterPathStroker*)this_)->setMiterLimit(length);
 }
@@ -102,7 +102,7 @@ void C_ZN19QPainterPathStroker13setMiterLimitEd(void *this_, qreal length) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:260
 // [8] qreal miterLimit()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QPainterPathStroker10miterLimitEv(void *this_) {
   return (qreal)((QPainterPathStroker*)this_)->miterLimit();
 }
@@ -110,7 +110,7 @@ qreal C_ZNK19QPainterPathStroker10miterLimitEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:262
 // [-2] void setCurveThreshold(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker17setCurveThresholdEd(void *this_, qreal threshold) {
   ((QPainterPathStroker*)this_)->setCurveThreshold(threshold);
 }
@@ -118,7 +118,7 @@ void C_ZN19QPainterPathStroker17setCurveThresholdEd(void *this_, qreal threshold
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:263
 // [8] qreal curveThreshold()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QPainterPathStroker14curveThresholdEv(void *this_) {
   return (qreal)((QPainterPathStroker*)this_)->curveThreshold();
 }
@@ -126,7 +126,7 @@ qreal C_ZNK19QPainterPathStroker14curveThresholdEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:265
 // [-2] void setDashPattern(Qt::PenStyle)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker14setDashPatternEN2Qt8PenStyleE(void *this_, Qt::PenStyle arg0) {
   ((QPainterPathStroker*)this_)->setDashPattern(arg0);
 }
@@ -134,7 +134,7 @@ void C_ZN19QPainterPathStroker14setDashPatternEN2Qt8PenStyleE(void *this_, Qt::P
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:269
 // [-2] void setDashOffset(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN19QPainterPathStroker13setDashOffsetEd(void *this_, qreal offset) {
   ((QPainterPathStroker*)this_)->setDashOffset(offset);
 }
@@ -142,7 +142,7 @@ void C_ZN19QPainterPathStroker13setDashOffsetEd(void *this_, qreal offset) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:270
 // [8] qreal dashOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QPainterPathStroker10dashOffsetEv(void *this_) {
   return (qreal)((QPainterPathStroker*)this_)->dashOffset();
 }
@@ -150,7 +150,7 @@ qreal C_ZNK19QPainterPathStroker10dashOffsetEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:272
 // [8] QPainterPath createStroke(const class QPainterPath &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK19QPainterPathStroker12createStrokeERK12QPainterPath(void *this_, QPainterPath* path) {
   auto rv = ((QPainterPathStroker*)this_)->createStroke(*path);
 return new QPainterPath(rv);

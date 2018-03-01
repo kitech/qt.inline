@@ -23,7 +23,7 @@ MyQSwipeGesture(QObject * parent) : QSwipeGesture(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:209
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QSwipeGesture10metaObjectEv(void *this_) {
   return (void*)((QSwipeGesture*)this_)->metaObject();
 }
@@ -31,21 +31,21 @@ void* C_ZNK13QSwipeGesture10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:221
 // [-2] void QSwipeGesture(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QSwipeGestureC2EP7QObject(QObject * parent) {
   return  new QSwipeGesture(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:222
 // [-2] void ~QSwipeGesture()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QSwipeGestureD2Ev(void *this_) {
   delete (QSwipeGesture*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:224
 // [4] QSwipeGesture::SwipeDirection horizontalDirection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSwipeGesture::SwipeDirection C_ZNK13QSwipeGesture19horizontalDirectionEv(void *this_) {
   return (QSwipeGesture::SwipeDirection)((QSwipeGesture*)this_)->horizontalDirection();
 }
@@ -53,7 +53,7 @@ QSwipeGesture::SwipeDirection C_ZNK13QSwipeGesture19horizontalDirectionEv(void *
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:225
 // [4] QSwipeGesture::SwipeDirection verticalDirection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSwipeGesture::SwipeDirection C_ZNK13QSwipeGesture17verticalDirectionEv(void *this_) {
   return (QSwipeGesture::SwipeDirection)((QSwipeGesture*)this_)->verticalDirection();
 }
@@ -61,7 +61,7 @@ QSwipeGesture::SwipeDirection C_ZNK13QSwipeGesture17verticalDirectionEv(void *th
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:227
 // [8] qreal swipeAngle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QSwipeGesture10swipeAngleEv(void *this_) {
   return (qreal)((QSwipeGesture*)this_)->swipeAngle();
 }
@@ -69,7 +69,7 @@ qreal C_ZNK13QSwipeGesture10swipeAngleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:228
 // [-2] void setSwipeAngle(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QSwipeGesture13setSwipeAngleEd(void *this_, qreal value) {
   ((QSwipeGesture*)this_)->setSwipeAngle(value);
 }

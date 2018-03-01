@@ -60,7 +60,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:58
 // [-2] void onEntry(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFinalState7onEntryEP6QEvent(void *this_, QEvent * event) {
   ((QFinalState*)this_)->QFinalState::onEntry(event);
 }
@@ -68,7 +68,7 @@ void C_ZN11QFinalState7onEntryEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:59
 // [-2] void onExit(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFinalState6onExitEP6QEvent(void *this_, QEvent * event) {
   ((QFinalState*)this_)->QFinalState::onExit(event);
 }
@@ -76,7 +76,7 @@ void C_ZN11QFinalState6onExitEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:61
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFinalState5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QFinalState*)this_)->QFinalState::event(e);
 }
@@ -84,7 +84,7 @@ bool C_ZN11QFinalState5eventEP6QEvent(void *this_, QEvent * e) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:52
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFinalState10metaObjectEv(void *this_) {
   return (void*)((QFinalState*)this_)->metaObject();
 }
@@ -92,7 +92,7 @@ void* C_ZNK11QFinalState10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:54
 // [-2] void QFinalState(class QState *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QFinalStateC2EP6QState(QState * parent) {
   auto _nilp = (MyQFinalState*)(0);
   return  new MyQFinalState(parent);
@@ -100,7 +100,7 @@ void* C_ZN11QFinalStateC2EP6QState(QState * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:55
 // [-2] void ~QFinalState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFinalStateD2Ev(void *this_) {
   delete (QFinalState*)(this_);
 }

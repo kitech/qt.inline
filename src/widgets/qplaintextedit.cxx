@@ -419,7 +419,7 @@ MyQPlainTextEdit(const QString & text, QWidget * parent) : QPlainTextEdit(text, 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:236
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QPlainTextEdit5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QPlainTextEdit*)this_)->QPlainTextEdit::event(e);
 }
@@ -427,7 +427,7 @@ bool C_ZN14QPlainTextEdit5eventEP6QEvent(void *this_, QEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:237
 // [-2] void timerEvent(class QTimerEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit10timerEventEP11QTimerEvent(void *this_, QTimerEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::timerEvent(e);
 }
@@ -435,7 +435,7 @@ void C_ZN14QPlainTextEdit10timerEventEP11QTimerEvent(void *this_, QTimerEvent * 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:238
 // [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::keyPressEvent(e);
 }
@@ -443,7 +443,7 @@ void C_ZN14QPlainTextEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:239
 // [-2] void keyReleaseEvent(class QKeyEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::keyReleaseEvent(e);
 }
@@ -451,7 +451,7 @@ void C_ZN14QPlainTextEdit15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:240
 // [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::resizeEvent(e);
 }
@@ -459,7 +459,7 @@ void C_ZN14QPlainTextEdit11resizeEventEP12QResizeEvent(void *this_, QResizeEvent
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:241
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::paintEvent(e);
 }
@@ -467,7 +467,7 @@ void C_ZN14QPlainTextEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:242
 // [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::mousePressEvent(e);
 }
@@ -475,7 +475,7 @@ void C_ZN14QPlainTextEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEve
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:243
 // [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::mouseMoveEvent(e);
 }
@@ -483,7 +483,7 @@ void C_ZN14QPlainTextEdit14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEven
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:244
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::mouseReleaseEvent(e);
 }
@@ -491,7 +491,7 @@ void C_ZN14QPlainTextEdit17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseE
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:245
 // [-2] void mouseDoubleClickEvent(class QMouseEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::mouseDoubleClickEvent(e);
 }
@@ -499,7 +499,7 @@ void C_ZN14QPlainTextEdit21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMo
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:246
 // [1] bool focusNextPrevChild(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QPlainTextEdit18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QPlainTextEdit*)this_)->QPlainTextEdit::focusNextPrevChild(next);
 }
@@ -507,7 +507,7 @@ bool C_ZN14QPlainTextEdit18focusNextPrevChildEb(void *this_, bool next) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:248
 // [-2] void contextMenuEvent(class QContextMenuEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::contextMenuEvent(e);
 }
@@ -515,7 +515,7 @@ void C_ZN14QPlainTextEdit16contextMenuEventEP17QContextMenuEvent(void *this_, QC
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:251
 // [-2] void dragEnterEvent(class QDragEnterEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::dragEnterEvent(e);
 }
@@ -523,7 +523,7 @@ void C_ZN14QPlainTextEdit14dragEnterEventEP15QDragEnterEvent(void *this_, QDragE
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:252
 // [-2] void dragLeaveEvent(class QDragLeaveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::dragLeaveEvent(e);
 }
@@ -531,7 +531,7 @@ void C_ZN14QPlainTextEdit14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragL
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:253
 // [-2] void dragMoveEvent(class QDragMoveEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::dragMoveEvent(e);
 }
@@ -539,7 +539,7 @@ void C_ZN14QPlainTextEdit13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMov
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:254
 // [-2] void dropEvent(class QDropEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit9dropEventEP10QDropEvent(void *this_, QDropEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::dropEvent(e);
 }
@@ -547,7 +547,7 @@ void C_ZN14QPlainTextEdit9dropEventEP10QDropEvent(void *this_, QDropEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:256
 // [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::focusInEvent(e);
 }
@@ -555,7 +555,7 @@ void C_ZN14QPlainTextEdit12focusInEventEP11QFocusEvent(void *this_, QFocusEvent 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:257
 // [-2] void focusOutEvent(class QFocusEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::focusOutEvent(e);
 }
@@ -563,7 +563,7 @@ void C_ZN14QPlainTextEdit13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:258
 // [-2] void showEvent(class QShowEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::showEvent(arg0);
 }
@@ -571,7 +571,7 @@ void C_ZN14QPlainTextEdit9showEventEP10QShowEvent(void *this_, QShowEvent * arg0
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:259
 // [-2] void changeEvent(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit11changeEventEP6QEvent(void *this_, QEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::changeEvent(e);
 }
@@ -579,7 +579,7 @@ void C_ZN14QPlainTextEdit11changeEventEP6QEvent(void *this_, QEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:261
 // [-2] void wheelEvent(class QWheelEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::wheelEvent(e);
 }
@@ -587,7 +587,7 @@ void C_ZN14QPlainTextEdit10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:264
 // [8] QMimeData * createMimeDataFromSelection()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit27createMimeDataFromSelectionEv(void *this_) {
   return (void*)((QPlainTextEdit*)this_)->QPlainTextEdit::createMimeDataFromSelection();
 }
@@ -595,7 +595,7 @@ void* C_ZNK14QPlainTextEdit27createMimeDataFromSelectionEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:265
 // [1] bool canInsertFromMimeData(const class QMimeData *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit21canInsertFromMimeDataEPK9QMimeData(void *this_, const QMimeData * source) {
   return (bool)((QPlainTextEdit*)this_)->QPlainTextEdit::canInsertFromMimeData(source);
 }
@@ -603,7 +603,7 @@ bool C_ZNK14QPlainTextEdit21canInsertFromMimeDataEPK9QMimeData(void *this_, cons
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:266
 // [-2] void insertFromMimeData(const class QMimeData *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit18insertFromMimeDataEPK9QMimeData(void *this_, const QMimeData * source) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::insertFromMimeData(source);
 }
@@ -611,7 +611,7 @@ void C_ZN14QPlainTextEdit18insertFromMimeDataEPK9QMimeData(void *this_, const QM
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:268
 // [-2] void inputMethodEvent(class QInputMethodEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::inputMethodEvent(arg0);
 }
@@ -619,7 +619,7 @@ void C_ZN14QPlainTextEdit16inputMethodEventEP17QInputMethodEvent(void *this_, QI
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:272
 // [-2] void scrollContentsBy(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit16scrollContentsByEii(void *this_, int dx, int dy) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::scrollContentsBy(dx, dy);
 }
@@ -627,7 +627,7 @@ void C_ZN14QPlainTextEdit16scrollContentsByEii(void *this_, int dx, int dy) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:273
 // [-2] void doSetTextCursor(const class QTextCursor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15doSetTextCursorERK11QTextCursor(void *this_, QTextCursor* cursor) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::doSetTextCursor(*cursor);
 }
@@ -635,7 +635,7 @@ void C_ZN14QPlainTextEdit15doSetTextCursorERK11QTextCursor(void *this_, QTextCur
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:275
 // [16] QTextBlock firstVisibleBlock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit17firstVisibleBlockEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::firstVisibleBlock();
 return new QTextBlock(rv);
@@ -644,7 +644,7 @@ return new QTextBlock(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:276
 // [16] QPointF contentOffset()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit13contentOffsetEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::contentOffset();
 return new QPointF(rv);
@@ -653,7 +653,7 @@ return new QPointF(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:277
 // [32] QRectF blockBoundingRect(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit17blockBoundingRectERK10QTextBlock(void *this_, QTextBlock* block) {
   auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::blockBoundingRect(*block);
 return new QRectF(rv);
@@ -662,7 +662,7 @@ return new QRectF(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:278
 // [32] QRectF blockBoundingGeometry(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit21blockBoundingGeometryERK10QTextBlock(void *this_, QTextBlock* block) {
   auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::blockBoundingGeometry(*block);
 return new QRectF(rv);
@@ -671,7 +671,7 @@ return new QRectF(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:281
 // [-2] void zoomInF(float)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit7zoomInFEf(void *this_, float range_) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::zoomInF(range_);
 }
@@ -679,7 +679,7 @@ void C_ZN14QPlainTextEdit7zoomInFEf(void *this_, float range_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:66
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit10metaObjectEv(void *this_) {
   return (void*)((QPlainTextEdit*)this_)->metaObject();
 }
@@ -687,7 +687,7 @@ void* C_ZNK14QPlainTextEdit10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:94
 // [-2] void QPlainTextEdit(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QPlainTextEditC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQPlainTextEdit*)(0);
   return  new MyQPlainTextEdit(parent);
@@ -695,7 +695,7 @@ void* C_ZN14QPlainTextEditC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:95
 // [-2] void QPlainTextEdit(const class QString &, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QPlainTextEditC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQPlainTextEdit*)(0);
   return  new MyQPlainTextEdit(*text, parent);
@@ -703,14 +703,14 @@ void* C_ZN14QPlainTextEditC2ERK7QStringP7QWidget(QString* text, QWidget * parent
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:96
 // [-2] void ~QPlainTextEdit()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEditD2Ev(void *this_) {
   delete (QPlainTextEdit*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:98
 // [-2] void setDocument(class QTextDocument *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit11setDocumentEP13QTextDocument(void *this_, QTextDocument * document) {
   ((QPlainTextEdit*)this_)->setDocument(document);
 }
@@ -718,7 +718,7 @@ void C_ZN14QPlainTextEdit11setDocumentEP13QTextDocument(void *this_, QTextDocume
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:99
 // [8] QTextDocument * document()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit8documentEv(void *this_) {
   return (void*)((QPlainTextEdit*)this_)->document();
 }
@@ -726,7 +726,7 @@ void* C_ZNK14QPlainTextEdit8documentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:101
 // [-2] void setPlaceholderText(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit18setPlaceholderTextERK7QString(void *this_, QString* placeholderText) {
   ((QPlainTextEdit*)this_)->setPlaceholderText(*placeholderText);
 }
@@ -734,7 +734,7 @@ void C_ZN14QPlainTextEdit18setPlaceholderTextERK7QString(void *this_, QString* p
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:102
 // [8] QString placeholderText()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit15placeholderTextEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->placeholderText();
 return new QString(rv);
@@ -743,7 +743,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:104
 // [-2] void setTextCursor(const class QTextCursor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13setTextCursorERK11QTextCursor(void *this_, QTextCursor* cursor) {
   ((QPlainTextEdit*)this_)->setTextCursor(*cursor);
 }
@@ -751,7 +751,7 @@ void C_ZN14QPlainTextEdit13setTextCursorERK11QTextCursor(void *this_, QTextCurso
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:105
 // [8] QTextCursor textCursor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit10textCursorEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->textCursor();
 return new QTextCursor(rv);
@@ -760,7 +760,7 @@ return new QTextCursor(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:107
 // [1] bool isReadOnly()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit10isReadOnlyEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->isReadOnly();
 }
@@ -768,7 +768,7 @@ bool C_ZNK14QPlainTextEdit10isReadOnlyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:108
 // [-2] void setReadOnly(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit11setReadOnlyEb(void *this_, bool ro) {
   ((QPlainTextEdit*)this_)->setReadOnly(ro);
 }
@@ -776,7 +776,7 @@ void C_ZN14QPlainTextEdit11setReadOnlyEb(void *this_, bool ro) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:110
 // [-2] void setTextInteractionFlags(Qt::TextInteractionFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit23setTextInteractionFlagsE6QFlagsIN2Qt19TextInteractionFlagEE(void *this_, QFlags<Qt::TextInteractionFlag> flags) {
   ((QPlainTextEdit*)this_)->setTextInteractionFlags(flags);
 }
@@ -784,7 +784,7 @@ void C_ZN14QPlainTextEdit23setTextInteractionFlagsE6QFlagsIN2Qt19TextInteraction
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:111
 // [4] Qt::TextInteractionFlags textInteractionFlags()
-extern "C"
+extern "C" Q_DECL_EXPORT
 Qt::TextInteractionFlags C_ZNK14QPlainTextEdit20textInteractionFlagsEv(void *this_) {
   return (Qt::TextInteractionFlags)((QPlainTextEdit*)this_)->textInteractionFlags();
 }
@@ -792,7 +792,7 @@ Qt::TextInteractionFlags C_ZNK14QPlainTextEdit20textInteractionFlagsEv(void *thi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:113
 // [-2] void mergeCurrentCharFormat(const class QTextCharFormat &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit22mergeCurrentCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* modifier) {
   ((QPlainTextEdit*)this_)->mergeCurrentCharFormat(*modifier);
 }
@@ -800,7 +800,7 @@ void C_ZN14QPlainTextEdit22mergeCurrentCharFormatERK15QTextCharFormat(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:114
 // [-2] void setCurrentCharFormat(const class QTextCharFormat &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit20setCurrentCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
   ((QPlainTextEdit*)this_)->setCurrentCharFormat(*format);
 }
@@ -808,7 +808,7 @@ void C_ZN14QPlainTextEdit20setCurrentCharFormatERK15QTextCharFormat(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:115
 // [16] QTextCharFormat currentCharFormat()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit17currentCharFormatEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->currentCharFormat();
 return new QTextCharFormat(rv);
@@ -817,7 +817,7 @@ return new QTextCharFormat(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:117
 // [1] bool tabChangesFocus()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit15tabChangesFocusEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->tabChangesFocus();
 }
@@ -825,7 +825,7 @@ bool C_ZNK14QPlainTextEdit15tabChangesFocusEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:118
 // [-2] void setTabChangesFocus(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit18setTabChangesFocusEb(void *this_, bool b) {
   ((QPlainTextEdit*)this_)->setTabChangesFocus(b);
 }
@@ -833,7 +833,7 @@ void C_ZN14QPlainTextEdit18setTabChangesFocusEb(void *this_, bool b) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:120
 // [-2] void setDocumentTitle(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit16setDocumentTitleERK7QString(void *this_, QString* title) {
   ((QPlainTextEdit*)this_)->setDocumentTitle(*title);
 }
@@ -841,7 +841,7 @@ void C_ZN14QPlainTextEdit16setDocumentTitleERK7QString(void *this_, QString* tit
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:122
 // [8] QString documentTitle()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit13documentTitleEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->documentTitle();
 return new QString(rv);
@@ -850,7 +850,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:125
 // [1] bool isUndoRedoEnabled()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit17isUndoRedoEnabledEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->isUndoRedoEnabled();
 }
@@ -858,7 +858,7 @@ bool C_ZNK14QPlainTextEdit17isUndoRedoEnabledEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:127
 // [-2] void setUndoRedoEnabled(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit18setUndoRedoEnabledEb(void *this_, bool enable) {
   ((QPlainTextEdit*)this_)->setUndoRedoEnabled(enable);
 }
@@ -866,7 +866,7 @@ void C_ZN14QPlainTextEdit18setUndoRedoEnabledEb(void *this_, bool enable) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:130
 // [-2] void setMaximumBlockCount(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit20setMaximumBlockCountEi(void *this_, int maximum) {
   ((QPlainTextEdit*)this_)->setMaximumBlockCount(maximum);
 }
@@ -874,7 +874,7 @@ void C_ZN14QPlainTextEdit20setMaximumBlockCountEi(void *this_, int maximum) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:132
 // [4] int maximumBlockCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QPlainTextEdit17maximumBlockCountEv(void *this_) {
   return (int)((QPlainTextEdit*)this_)->maximumBlockCount();
 }
@@ -882,7 +882,7 @@ int C_ZNK14QPlainTextEdit17maximumBlockCountEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:136
 // [4] QPlainTextEdit::LineWrapMode lineWrapMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QPlainTextEdit::LineWrapMode C_ZNK14QPlainTextEdit12lineWrapModeEv(void *this_) {
   return (QPlainTextEdit::LineWrapMode)((QPlainTextEdit*)this_)->lineWrapMode();
 }
@@ -890,7 +890,7 @@ QPlainTextEdit::LineWrapMode C_ZNK14QPlainTextEdit12lineWrapModeEv(void *this_) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:137
 // [-2] void setLineWrapMode(enum QPlainTextEdit::LineWrapMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15setLineWrapModeENS_12LineWrapModeE(void *this_, QPlainTextEdit::LineWrapMode mode) {
   ((QPlainTextEdit*)this_)->setLineWrapMode(mode);
 }
@@ -898,7 +898,7 @@ void C_ZN14QPlainTextEdit15setLineWrapModeENS_12LineWrapModeE(void *this_, QPlai
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:139
 // [4] QTextOption::WrapMode wordWrapMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QTextOption::WrapMode C_ZNK14QPlainTextEdit12wordWrapModeEv(void *this_) {
   return (QTextOption::WrapMode)((QPlainTextEdit*)this_)->wordWrapMode();
 }
@@ -906,7 +906,7 @@ QTextOption::WrapMode C_ZNK14QPlainTextEdit12wordWrapModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:140
 // [-2] void setWordWrapMode(class QTextOption::WrapMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15setWordWrapModeEN11QTextOption8WrapModeE(void *this_, QTextOption::WrapMode policy) {
   ((QPlainTextEdit*)this_)->setWordWrapMode(policy);
 }
@@ -914,7 +914,7 @@ void C_ZN14QPlainTextEdit15setWordWrapModeEN11QTextOption8WrapModeE(void *this_,
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:142
 // [-2] void setBackgroundVisible(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit20setBackgroundVisibleEb(void *this_, bool visible) {
   ((QPlainTextEdit*)this_)->setBackgroundVisible(visible);
 }
@@ -922,7 +922,7 @@ void C_ZN14QPlainTextEdit20setBackgroundVisibleEb(void *this_, bool visible) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:143
 // [1] bool backgroundVisible()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit17backgroundVisibleEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->backgroundVisible();
 }
@@ -930,7 +930,7 @@ bool C_ZNK14QPlainTextEdit17backgroundVisibleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:145
 // [-2] void setCenterOnScroll(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit17setCenterOnScrollEb(void *this_, bool enabled) {
   ((QPlainTextEdit*)this_)->setCenterOnScroll(enabled);
 }
@@ -938,7 +938,7 @@ void C_ZN14QPlainTextEdit17setCenterOnScrollEb(void *this_, bool enabled) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:146
 // [1] bool centerOnScroll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit14centerOnScrollEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->centerOnScroll();
 }
@@ -946,7 +946,7 @@ bool C_ZNK14QPlainTextEdit14centerOnScrollEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:148
 // [1] bool find(const class QString &, class QTextDocument::FindFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QPlainTextEdit4findERK7QString6QFlagsIN13QTextDocument8FindFlagEE(void *this_, QString* exp, QFlags<QTextDocument::FindFlag> options) {
   return (bool)((QPlainTextEdit*)this_)->find(*exp, options);
 }
@@ -954,7 +954,7 @@ bool C_ZN14QPlainTextEdit4findERK7QString6QFlagsIN13QTextDocument8FindFlagEE(voi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:150
 // [1] bool find(const class QRegExp &, class QTextDocument::FindFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QPlainTextEdit4findERK7QRegExp6QFlagsIN13QTextDocument8FindFlagEE(void *this_, QRegExp* exp, QFlags<QTextDocument::FindFlag> options) {
   return (bool)((QPlainTextEdit*)this_)->find(*exp, options);
 }
@@ -962,7 +962,7 @@ bool C_ZN14QPlainTextEdit4findERK7QRegExp6QFlagsIN13QTextDocument8FindFlagEE(voi
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:153
 // [8] QString toPlainText()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit11toPlainTextEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->toPlainText();
 return new QString(rv);
@@ -971,7 +971,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:156
 // [-2] void ensureCursorVisible()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit19ensureCursorVisibleEv(void *this_) {
   ((QPlainTextEdit*)this_)->ensureCursorVisible();
 }
@@ -979,7 +979,7 @@ void C_ZN14QPlainTextEdit19ensureCursorVisibleEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:158
 // [16] QVariant loadResource(int, const class QUrl &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QPlainTextEdit12loadResourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
   auto rv = ((QPlainTextEdit*)this_)->loadResource(type_, *name);
 return new QVariant(rv);
@@ -988,7 +988,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:160
 // [8] QMenu * createStandardContextMenu()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QPlainTextEdit25createStandardContextMenuEv(void *this_) {
   return (void*)((QPlainTextEdit*)this_)->createStandardContextMenu();
 }
@@ -996,7 +996,7 @@ void* C_ZN14QPlainTextEdit25createStandardContextMenuEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:161
 // [8] QMenu * createStandardContextMenu(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QPlainTextEdit25createStandardContextMenuERK6QPoint(void *this_, QPoint* position) {
   return (void*)((QPlainTextEdit*)this_)->createStandardContextMenu(*position);
 }
@@ -1004,7 +1004,7 @@ void* C_ZN14QPlainTextEdit25createStandardContextMenuERK6QPoint(void *this_, QPo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:164
 // [8] QTextCursor cursorForPosition(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit17cursorForPositionERK6QPoint(void *this_, QPoint* pos) {
   auto rv = ((QPlainTextEdit*)this_)->cursorForPosition(*pos);
 return new QTextCursor(rv);
@@ -1013,7 +1013,7 @@ return new QTextCursor(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:165
 // [16] QRect cursorRect(const class QTextCursor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit10cursorRectERK11QTextCursor(void *this_, QTextCursor* cursor) {
   auto rv = ((QPlainTextEdit*)this_)->cursorRect(*cursor);
 return new QRect(rv);
@@ -1022,7 +1022,7 @@ return new QRect(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:166
 // [16] QRect cursorRect()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit10cursorRectEv(void *this_) {
   auto rv = ((QPlainTextEdit*)this_)->cursorRect();
 return new QRect(rv);
@@ -1031,7 +1031,7 @@ return new QRect(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:168
 // [8] QString anchorAt(const class QPoint &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit8anchorAtERK6QPoint(void *this_, QPoint* pos) {
   auto rv = ((QPlainTextEdit*)this_)->anchorAt(*pos);
 return new QString(rv);
@@ -1040,7 +1040,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:170
 // [1] bool overwriteMode()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit13overwriteModeEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->overwriteMode();
 }
@@ -1048,7 +1048,7 @@ bool C_ZNK14QPlainTextEdit13overwriteModeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:171
 // [-2] void setOverwriteMode(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit16setOverwriteModeEb(void *this_, bool overwrite) {
   ((QPlainTextEdit*)this_)->setOverwriteMode(overwrite);
 }
@@ -1056,7 +1056,7 @@ void C_ZN14QPlainTextEdit16setOverwriteModeEb(void *this_, bool overwrite) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:174
 // [4] int tabStopWidth()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QPlainTextEdit12tabStopWidthEv(void *this_) {
   return (int)((QPlainTextEdit*)this_)->tabStopWidth();
 }
@@ -1064,7 +1064,7 @@ int C_ZNK14QPlainTextEdit12tabStopWidthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:175
 // [-2] void setTabStopWidth(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15setTabStopWidthEi(void *this_, int width) {
   ((QPlainTextEdit*)this_)->setTabStopWidth(width);
 }
@@ -1072,7 +1072,7 @@ void C_ZN14QPlainTextEdit15setTabStopWidthEi(void *this_, int width) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:178
 // [8] qreal tabStopDistance()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK14QPlainTextEdit15tabStopDistanceEv(void *this_) {
   return (qreal)((QPlainTextEdit*)this_)->tabStopDistance();
 }
@@ -1080,7 +1080,7 @@ qreal C_ZNK14QPlainTextEdit15tabStopDistanceEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:179
 // [-2] void setTabStopDistance(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit18setTabStopDistanceEd(void *this_, qreal distance) {
   ((QPlainTextEdit*)this_)->setTabStopDistance(distance);
 }
@@ -1088,7 +1088,7 @@ void C_ZN14QPlainTextEdit18setTabStopDistanceEd(void *this_, qreal distance) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:181
 // [4] int cursorWidth()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QPlainTextEdit11cursorWidthEv(void *this_) {
   return (int)((QPlainTextEdit*)this_)->cursorWidth();
 }
@@ -1096,7 +1096,7 @@ int C_ZNK14QPlainTextEdit11cursorWidthEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:182
 // [-2] void setCursorWidth(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit14setCursorWidthEi(void *this_, int width) {
   ((QPlainTextEdit*)this_)->setCursorWidth(width);
 }
@@ -1104,7 +1104,7 @@ void C_ZN14QPlainTextEdit14setCursorWidthEi(void *this_, int width) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:187
 // [-2] void moveCursor(class QTextCursor::MoveOperation, class QTextCursor::MoveMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit10moveCursorEN11QTextCursor13MoveOperationENS0_8MoveModeE(void *this_, QTextCursor::MoveOperation operation, QTextCursor::MoveMode mode) {
   ((QPlainTextEdit*)this_)->moveCursor(operation, mode);
 }
@@ -1112,7 +1112,7 @@ void C_ZN14QPlainTextEdit10moveCursorEN11QTextCursor13MoveOperationENS0_8MoveMod
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:189
 // [1] bool canPaste()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK14QPlainTextEdit8canPasteEv(void *this_) {
   return (bool)((QPlainTextEdit*)this_)->canPaste();
 }
@@ -1120,7 +1120,7 @@ bool C_ZNK14QPlainTextEdit8canPasteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:191
 // [-2] void print(class QPagedPaintDevice *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK14QPlainTextEdit5printEP17QPagedPaintDevice(void *this_, QPagedPaintDevice * printer) {
   ((QPlainTextEdit*)this_)->print(printer);
 }
@@ -1128,7 +1128,7 @@ void C_ZNK14QPlainTextEdit5printEP17QPagedPaintDevice(void *this_, QPagedPaintDe
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:193
 // [4] int blockCount()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK14QPlainTextEdit10blockCountEv(void *this_) {
   return (int)((QPlainTextEdit*)this_)->blockCount();
 }
@@ -1136,7 +1136,7 @@ int C_ZNK14QPlainTextEdit10blockCountEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:194
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery property) {
   auto rv = ((QPlainTextEdit*)this_)->inputMethodQuery(property);
 return new QVariant(rv);
@@ -1145,7 +1145,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:195
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery, class QVariant)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *this_, Qt::InputMethodQuery query, QVariant* argument) {
   auto rv = ((QPlainTextEdit*)this_)->inputMethodQuery(query, *argument);
 return new QVariant(rv);
@@ -1154,7 +1154,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:199
 // [-2] void setPlainText(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit12setPlainTextERK7QString(void *this_, QString* text) {
   ((QPlainTextEdit*)this_)->setPlainText(*text);
 }
@@ -1162,7 +1162,7 @@ void C_ZN14QPlainTextEdit12setPlainTextERK7QString(void *this_, QString* text) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:202
 // [-2] void cut()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit3cutEv(void *this_) {
   ((QPlainTextEdit*)this_)->cut();
 }
@@ -1170,7 +1170,7 @@ void C_ZN14QPlainTextEdit3cutEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:203
 // [-2] void copy()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit4copyEv(void *this_) {
   ((QPlainTextEdit*)this_)->copy();
 }
@@ -1178,7 +1178,7 @@ void C_ZN14QPlainTextEdit4copyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:204
 // [-2] void paste()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit5pasteEv(void *this_) {
   ((QPlainTextEdit*)this_)->paste();
 }
@@ -1186,7 +1186,7 @@ void C_ZN14QPlainTextEdit5pasteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:207
 // [-2] void undo()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit4undoEv(void *this_) {
   ((QPlainTextEdit*)this_)->undo();
 }
@@ -1194,7 +1194,7 @@ void C_ZN14QPlainTextEdit4undoEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:208
 // [-2] void redo()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit4redoEv(void *this_) {
   ((QPlainTextEdit*)this_)->redo();
 }
@@ -1202,7 +1202,7 @@ void C_ZN14QPlainTextEdit4redoEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:210
 // [-2] void clear()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit5clearEv(void *this_) {
   ((QPlainTextEdit*)this_)->clear();
 }
@@ -1210,7 +1210,7 @@ void C_ZN14QPlainTextEdit5clearEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:211
 // [-2] void selectAll()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit9selectAllEv(void *this_) {
   ((QPlainTextEdit*)this_)->selectAll();
 }
@@ -1218,7 +1218,7 @@ void C_ZN14QPlainTextEdit9selectAllEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:213
 // [-2] void insertPlainText(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15insertPlainTextERK7QString(void *this_, QString* text) {
   ((QPlainTextEdit*)this_)->insertPlainText(*text);
 }
@@ -1226,7 +1226,7 @@ void C_ZN14QPlainTextEdit15insertPlainTextERK7QString(void *this_, QString* text
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:215
 // [-2] void appendPlainText(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15appendPlainTextERK7QString(void *this_, QString* text) {
   ((QPlainTextEdit*)this_)->appendPlainText(*text);
 }
@@ -1234,7 +1234,7 @@ void C_ZN14QPlainTextEdit15appendPlainTextERK7QString(void *this_, QString* text
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:216
 // [-2] void appendHtml(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit10appendHtmlERK7QString(void *this_, QString* html) {
   ((QPlainTextEdit*)this_)->appendHtml(*html);
 }
@@ -1242,7 +1242,7 @@ void C_ZN14QPlainTextEdit10appendHtmlERK7QString(void *this_, QString* html) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:218
 // [-2] void centerCursor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit12centerCursorEv(void *this_) {
   ((QPlainTextEdit*)this_)->centerCursor();
 }
@@ -1250,7 +1250,7 @@ void C_ZN14QPlainTextEdit12centerCursorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:220
 // [-2] void zoomIn(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit6zoomInEi(void *this_, int range_) {
   ((QPlainTextEdit*)this_)->zoomIn(range_);
 }
@@ -1258,7 +1258,7 @@ void C_ZN14QPlainTextEdit6zoomInEi(void *this_, int range_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:221
 // [-2] void zoomOut(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit7zoomOutEi(void *this_, int range_) {
   ((QPlainTextEdit*)this_)->zoomOut(range_);
 }
@@ -1266,7 +1266,7 @@ void C_ZN14QPlainTextEdit7zoomOutEi(void *this_, int range_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:224
 // [-2] void textChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit11textChangedEv(void *this_) {
   ((QPlainTextEdit*)this_)->textChanged();
 }
@@ -1274,7 +1274,7 @@ void C_ZN14QPlainTextEdit11textChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:225
 // [-2] void undoAvailable(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13undoAvailableEb(void *this_, bool b) {
   ((QPlainTextEdit*)this_)->undoAvailable(b);
 }
@@ -1282,7 +1282,7 @@ void C_ZN14QPlainTextEdit13undoAvailableEb(void *this_, bool b) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:226
 // [-2] void redoAvailable(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13redoAvailableEb(void *this_, bool b) {
   ((QPlainTextEdit*)this_)->redoAvailable(b);
 }
@@ -1290,7 +1290,7 @@ void C_ZN14QPlainTextEdit13redoAvailableEb(void *this_, bool b) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:227
 // [-2] void copyAvailable(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13copyAvailableEb(void *this_, bool b) {
   ((QPlainTextEdit*)this_)->copyAvailable(b);
 }
@@ -1298,7 +1298,7 @@ void C_ZN14QPlainTextEdit13copyAvailableEb(void *this_, bool b) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:228
 // [-2] void selectionChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit16selectionChangedEv(void *this_) {
   ((QPlainTextEdit*)this_)->selectionChanged();
 }
@@ -1306,7 +1306,7 @@ void C_ZN14QPlainTextEdit16selectionChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:229
 // [-2] void cursorPositionChanged()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit21cursorPositionChangedEv(void *this_) {
   ((QPlainTextEdit*)this_)->cursorPositionChanged();
 }
@@ -1314,7 +1314,7 @@ void C_ZN14QPlainTextEdit21cursorPositionChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:231
 // [-2] void updateRequest(const class QRect &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit13updateRequestERK5QRecti(void *this_, QRect* rect, int dy) {
   ((QPlainTextEdit*)this_)->updateRequest(*rect, dy);
 }
@@ -1322,7 +1322,7 @@ void C_ZN14QPlainTextEdit13updateRequestERK5QRecti(void *this_, QRect* rect, int
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:232
 // [-2] void blockCountChanged(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit17blockCountChangedEi(void *this_, int newBlockCount) {
   ((QPlainTextEdit*)this_)->blockCountChanged(newBlockCount);
 }
@@ -1330,7 +1330,7 @@ void C_ZN14QPlainTextEdit17blockCountChangedEi(void *this_, int newBlockCount) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:233
 // [-2] void modificationChanged(_Bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit19modificationChangedEb(void *this_, bool arg0) {
   ((QPlainTextEdit*)this_)->modificationChanged(arg0);
 }

@@ -72,7 +72,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:63
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN23QParallelAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::event(event);
 }
@@ -80,7 +80,7 @@ bool C_ZN23QParallelAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:65
 // [-2] void updateCurrentTime(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QParallelAnimationGroup17updateCurrentTimeEi(void *this_, int currentTime) {
   ((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::updateCurrentTime(currentTime);
 }
@@ -88,7 +88,7 @@ void C_ZN23QParallelAnimationGroup17updateCurrentTimeEi(void *this_, int current
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:66
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::updateState(newState, oldState);
 }
@@ -96,7 +96,7 @@ void C_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:67
 // [-2] void updateDirection(class QAbstractAnimation::Direction)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::updateDirection(direction);
 }
@@ -104,7 +104,7 @@ void C_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9Direct
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:53
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK23QParallelAnimationGroup10metaObjectEv(void *this_) {
   return (void*)((QParallelAnimationGroup*)this_)->metaObject();
 }
@@ -112,7 +112,7 @@ void* C_ZNK23QParallelAnimationGroup10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:56
 // [-2] void QParallelAnimationGroup(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN23QParallelAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQParallelAnimationGroup*)(0);
   return  new MyQParallelAnimationGroup(parent);
@@ -120,14 +120,14 @@ void* C_ZN23QParallelAnimationGroupC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:57
 // [-2] void ~QParallelAnimationGroup()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN23QParallelAnimationGroupD2Ev(void *this_) {
   delete (QParallelAnimationGroup*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:59
 // [4] int duration()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK23QParallelAnimationGroup8durationEv(void *this_) {
   return (int)((QParallelAnimationGroup*)this_)->duration();
 }

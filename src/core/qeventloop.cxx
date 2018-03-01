@@ -23,7 +23,7 @@ MyQEventLoop(QObject * parent) : QEventLoop(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:52
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK10QEventLoop10metaObjectEv(void *this_) {
   return (void*)((QEventLoop*)this_)->metaObject();
 }
@@ -31,21 +31,21 @@ void* C_ZNK10QEventLoop10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:56
 // [-2] void QEventLoop(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN10QEventLoopC2EP7QObject(QObject * parent) {
   return  new QEventLoop(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:57
 // [-2] void ~QEventLoop()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QEventLoopD2Ev(void *this_) {
   delete (QEventLoop*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:70
 // [1] bool processEvents(QEventLoop::ProcessEventsFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags) {
   return (bool)((QEventLoop*)this_)->processEvents(flags);
 }
@@ -53,7 +53,7 @@ bool C_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE(void *this
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:71
 // [-2] void processEvents(QEventLoop::ProcessEventsFlags, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEEi(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags, int maximumTime) {
   ((QEventLoop*)this_)->processEvents(flags, maximumTime);
 }
@@ -61,7 +61,7 @@ void C_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEEi(void *thi
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:73
 // [4] int exec(QEventLoop::ProcessEventsFlags)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags) {
   return (int)((QEventLoop*)this_)->exec(flags);
 }
@@ -69,7 +69,7 @@ int C_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE(void *this_, QFlags<Q
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:74
 // [-2] void exit(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QEventLoop4exitEi(void *this_, int returnCode) {
   ((QEventLoop*)this_)->exit(returnCode);
 }
@@ -77,7 +77,7 @@ void C_ZN10QEventLoop4exitEi(void *this_, int returnCode) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:75
 // [1] bool isRunning()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK10QEventLoop9isRunningEv(void *this_) {
   return (bool)((QEventLoop*)this_)->isRunning();
 }
@@ -85,7 +85,7 @@ bool C_ZNK10QEventLoop9isRunningEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:77
 // [-2] void wakeUp()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QEventLoop6wakeUpEv(void *this_) {
   ((QEventLoop*)this_)->wakeUp();
 }
@@ -93,7 +93,7 @@ void C_ZN10QEventLoop6wakeUpEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:79
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN10QEventLoop5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QEventLoop*)this_)->event(event);
 }
@@ -101,7 +101,7 @@ bool C_ZN10QEventLoop5eventEP6QEvent(void *this_, QEvent * event) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:82
 // [-2] void quit()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN10QEventLoop4quitEv(void *this_) {
   ((QEventLoop*)this_)->quit();
 }

@@ -47,7 +47,7 @@ MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:68
 // [-2] void done(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QErrorMessage4doneEi(void *this_, int arg0) {
   ((QErrorMessage*)this_)->QErrorMessage::done(arg0);
 }
@@ -55,7 +55,7 @@ void C_ZN13QErrorMessage4doneEi(void *this_, int arg0) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:69
 // [-2] void changeEvent(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QErrorMessage11changeEventEP6QEvent(void *this_, QEvent * e) {
   ((QErrorMessage*)this_)->QErrorMessage::changeEvent(e);
 }
@@ -63,7 +63,7 @@ void C_ZN13QErrorMessage11changeEventEP6QEvent(void *this_, QEvent * e) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QErrorMessage10metaObjectEv(void *this_) {
   return (void*)((QErrorMessage*)this_)->metaObject();
 }
@@ -71,7 +71,7 @@ void* C_ZNK13QErrorMessage10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:58
 // [-2] void QErrorMessage(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QErrorMessageC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQErrorMessage*)(0);
   return  new MyQErrorMessage(parent);
@@ -79,21 +79,21 @@ void* C_ZN13QErrorMessageC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:59
 // [-2] void ~QErrorMessage()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QErrorMessageD2Ev(void *this_) {
   delete (QErrorMessage*)(this_);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:61
 // [8] QErrorMessage * qtHandler()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN13QErrorMessage9qtHandlerEv() {
   return (void*)QErrorMessage::qtHandler();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:64
 // [-2] void showMessage(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, QString* message) {
   ((QErrorMessage*)this_)->showMessage(*message);
 }
@@ -101,7 +101,7 @@ void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, QString* message) 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:65
 // [-2] void showMessage(const class QString &, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, QString* message, QString* type_) {
   ((QErrorMessage*)this_)->showMessage(*message, *type_);
 }

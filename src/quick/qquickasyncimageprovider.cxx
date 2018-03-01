@@ -23,21 +23,21 @@ MyQQuickAsyncImageProvider() : QQuickAsyncImageProvider() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:115
 // [-2] void QQuickAsyncImageProvider()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN24QQuickAsyncImageProviderC2Ev() {
   return 0; // new QQuickAsyncImageProvider();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:116
 // [-2] void ~QQuickAsyncImageProvider()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN24QQuickAsyncImageProviderD2Ev(void *this_) {
   delete (QQuickAsyncImageProvider*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:121
 // [8] QQuickImageResponse * requestImageResponse(const class QString &, const class QSize &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN24QQuickAsyncImageProvider20requestImageResponseERK7QStringRK5QSize(void *this_, QString* id, QSize* requestedSize) {
   return (void*)((QQuickAsyncImageProvider*)this_)->requestImageResponse(*id, *requestedSize);
 }

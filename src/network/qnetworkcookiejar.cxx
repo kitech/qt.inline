@@ -36,7 +36,7 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:70
 // [1] bool validateCookie(const class QNetworkCookie &, const class QUrl &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZNK17QNetworkCookieJar14validateCookieERK14QNetworkCookieRK4QUrl(void *this_, QNetworkCookie* cookie, QUrl* url) {
   return (bool)((QNetworkCookieJar*)this_)->QNetworkCookieJar::validateCookie(*cookie, *url);
 }
@@ -44,7 +44,7 @@ bool C_ZNK17QNetworkCookieJar14validateCookieERK14QNetworkCookieRK4QUrl(void *th
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QNetworkCookieJar10metaObjectEv(void *this_) {
   return (void*)((QNetworkCookieJar*)this_)->metaObject();
 }
@@ -52,7 +52,7 @@ void* C_ZNK17QNetworkCookieJar10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:57
 // [-2] void QNetworkCookieJar(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkCookieJarC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQNetworkCookieJar*)(0);
   return  new MyQNetworkCookieJar(parent);
@@ -60,14 +60,14 @@ void* C_ZN17QNetworkCookieJarC2EP7QObject(QObject * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:58
 // [-2] void ~QNetworkCookieJar()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkCookieJarD2Ev(void *this_) {
   delete (QNetworkCookieJar*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:63
 // [1] bool insertCookie(const class QNetworkCookie &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkCookieJar12insertCookieERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
   return (bool)((QNetworkCookieJar*)this_)->insertCookie(*cookie);
 }
@@ -75,7 +75,7 @@ bool C_ZN17QNetworkCookieJar12insertCookieERK14QNetworkCookie(void *this_, QNetw
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:64
 // [1] bool updateCookie(const class QNetworkCookie &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkCookieJar12updateCookieERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
   return (bool)((QNetworkCookieJar*)this_)->updateCookie(*cookie);
 }
@@ -83,7 +83,7 @@ bool C_ZN17QNetworkCookieJar12updateCookieERK14QNetworkCookie(void *this_, QNetw
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:65
 // [1] bool deleteCookie(const class QNetworkCookie &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkCookieJar12deleteCookieERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
   return (bool)((QNetworkCookieJar*)this_)->deleteCookie(*cookie);
 }

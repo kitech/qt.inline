@@ -23,21 +23,21 @@ MyQActionEvent(int type_, QAction * action, QAction * before) : QActionEvent(typ
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:727
 // [-2] void QActionEvent(int, class QAction *, class QAction *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN12QActionEventC2EiP7QActionS1_(int type_, QAction * action, QAction * before) {
   return  new QActionEvent(type_, action, before);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:728
 // [-2] void ~QActionEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN12QActionEventD2Ev(void *this_) {
   delete (QActionEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:730
 // [8] QAction * action()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QActionEvent6actionEv(void *this_) {
   return (void*)((QActionEvent*)this_)->action();
 }
@@ -45,7 +45,7 @@ void* C_ZNK12QActionEvent6actionEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:731
 // [8] QAction * before()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK12QActionEvent6beforeEv(void *this_) {
   return (void*)((QActionEvent*)this_)->before();
 }

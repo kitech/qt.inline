@@ -91,7 +91,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:70
 // [8] QSize sizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLinkButton8sizeHintEv(void *this_) {
   auto rv = ((QCommandLinkButton*)this_)->QCommandLinkButton::sizeHint();
 return new QSize(rv);
@@ -100,7 +100,7 @@ return new QSize(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:71
 // [4] int heightForWidth(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QCommandLinkButton14heightForWidthEi(void *this_, int arg0) {
   return (int)((QCommandLinkButton*)this_)->QCommandLinkButton::heightForWidth(arg0);
 }
@@ -108,7 +108,7 @@ int C_ZNK18QCommandLinkButton14heightForWidthEi(void *this_, int arg0) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:72
 // [8] QSize minimumSizeHint()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLinkButton15minimumSizeHintEv(void *this_) {
   auto rv = ((QCommandLinkButton*)this_)->QCommandLinkButton::minimumSizeHint();
 return new QSize(rv);
@@ -117,7 +117,7 @@ return new QSize(rv);
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:73
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN18QCommandLinkButton5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QCommandLinkButton*)this_)->QCommandLinkButton::event(e);
 }
@@ -125,7 +125,7 @@ bool C_ZN18QCommandLinkButton5eventEP6QEvent(void *this_, QEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:74
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QCommandLinkButton*)this_)->QCommandLinkButton::paintEvent(arg0);
 }
@@ -133,7 +133,7 @@ void C_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(void *this_, QPaintEven
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:55
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLinkButton10metaObjectEv(void *this_) {
   return (void*)((QCommandLinkButton*)this_)->metaObject();
 }
@@ -141,7 +141,7 @@ void* C_ZNK18QCommandLinkButton10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:61
 // [-2] void QCommandLinkButton(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLinkButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(parent);
@@ -149,7 +149,7 @@ void* C_ZN18QCommandLinkButtonC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:62
 // [-2] void QCommandLinkButton(const class QString &, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(*text, parent);
@@ -157,7 +157,7 @@ void* C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(QString* text, QWidget * pa
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:63
 // [-2] void QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(QString* text, QString* description, QWidget * parent) {
   auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(*text, *description, parent);
@@ -165,14 +165,14 @@ void* C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(QString* text, QString* 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:64
 // [-2] void ~QCommandLinkButton()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLinkButtonD2Ev(void *this_) {
   delete (QCommandLinkButton*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:66
 // [8] QString description()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLinkButton11descriptionEv(void *this_) {
   auto rv = ((QCommandLinkButton*)this_)->description();
 return new QString(rv);
@@ -181,7 +181,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:67
 // [-2] void setDescription(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLinkButton14setDescriptionERK7QString(void *this_, QString* description) {
   ((QCommandLinkButton*)this_)->setDescription(*description);
 }

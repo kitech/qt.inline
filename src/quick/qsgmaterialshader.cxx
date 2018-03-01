@@ -97,7 +97,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:114
 // [-2] void setShaderSourceFile(class QOpenGLShader::ShaderType, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader19setShaderSourceFileE6QFlagsIN13QOpenGLShader13ShaderTypeBitEERK7QString(void *this_, QFlags<QOpenGLShader::ShaderTypeBit> type_, QString* sourceFile) {
   ((QSGMaterialShader*)this_)->QSGMaterialShader::setShaderSourceFile(type_, *sourceFile);
 }
@@ -105,7 +105,7 @@ void C_ZN17QSGMaterialShader19setShaderSourceFileE6QFlagsIN13QOpenGLShader13Shad
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:115
 // [-2] void setShaderSourceFiles(class QOpenGLShader::ShaderType, const class QStringList &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader20setShaderSourceFilesE6QFlagsIN13QOpenGLShader13ShaderTypeBitEERK11QStringList(void *this_, QFlags<QOpenGLShader::ShaderTypeBit> type_, QStringList* sourceFiles) {
   ((QSGMaterialShader*)this_)->QSGMaterialShader::setShaderSourceFiles(type_, *sourceFiles);
 }
@@ -113,7 +113,7 @@ void C_ZN17QSGMaterialShader20setShaderSourceFilesE6QFlagsIN13QOpenGLShader13Sha
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:117
 // [-2] void compile()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader7compileEv(void *this_) {
   ((QSGMaterialShader*)this_)->QSGMaterialShader::compile();
 }
@@ -121,7 +121,7 @@ void C_ZN17QSGMaterialShader7compileEv(void *this_) {
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:119
 // [-2] void initialize()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader10initializeEv(void *this_) {
   ((QSGMaterialShader*)this_)->QSGMaterialShader::initialize();
 }
@@ -129,7 +129,7 @@ void C_ZN17QSGMaterialShader10initializeEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:121
 // [8] const char * vertexShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGMaterialShader12vertexShaderEv(void *this_) {
   return (void*)((QSGMaterialShader*)this_)->QSGMaterialShader::vertexShader();
 }
@@ -137,7 +137,7 @@ void* C_ZNK17QSGMaterialShader12vertexShaderEv(void *this_) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:122
 // [8] const char * fragmentShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGMaterialShader14fragmentShaderEv(void *this_) {
   return (void*)((QSGMaterialShader*)this_)->QSGMaterialShader::fragmentShader();
 }
@@ -145,7 +145,7 @@ void* C_ZNK17QSGMaterialShader14fragmentShaderEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:96
 // [-2] void QSGMaterialShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGMaterialShaderC2Ev() {
   auto _nilp = (MyQSGMaterialShader*)(0);
   return 0; // new MyQSGMaterialShader();
@@ -153,14 +153,14 @@ void* C_ZN17QSGMaterialShaderC2Ev() {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:97
 // [-2] void ~QSGMaterialShader()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShaderD2Ev(void *this_) {
   delete (QSGMaterialShader*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:99
 // [-2] void activate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader8activateEv(void *this_) {
   ((QSGMaterialShader*)this_)->activate();
 }
@@ -168,7 +168,7 @@ void C_ZN17QSGMaterialShader8activateEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:100
 // [-2] void deactivate()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader10deactivateEv(void *this_) {
   ((QSGMaterialShader*)this_)->deactivate();
 }
@@ -176,7 +176,7 @@ void C_ZN17QSGMaterialShader10deactivateEv(void *this_) {
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:103
 // [8] const char *const * attributeNames()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGMaterialShader14attributeNamesEv(void *this_) {
   return (void*)((QSGMaterialShader*)this_)->attributeNames();
 }

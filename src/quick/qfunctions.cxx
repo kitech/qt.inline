@@ -11,7 +11,7 @@
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:193
 // [-2] void qsgnode_set_description(class QSGNode *, const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_Z23qsgnode_set_descriptionP7QSGNodeRK7QString(QSGNode * node, QString* description) {
   qsgnode_set_description(node, *description);
 }

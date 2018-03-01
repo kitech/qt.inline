@@ -23,14 +23,14 @@ MyQIconDragEvent() : QIconDragEvent() {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:485
 // [-2] void QIconDragEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QIconDragEventC2Ev() {
   return  new QIconDragEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:486
 // [-2] void ~QIconDragEvent()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QIconDragEventD2Ev(void *this_) {
   delete (QIconDragEvent*)(this_);
 }

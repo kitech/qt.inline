@@ -141,7 +141,7 @@ public:
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:340
 // [-2] void enterTransformNode(class QSGTransformNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor18enterTransformNodeEP16QSGTransformNode(void *this_, QSGTransformNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterTransformNode(arg0);
 }
@@ -149,7 +149,7 @@ void C_ZN14QSGNodeVisitor18enterTransformNodeEP16QSGTransformNode(void *this_, Q
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:341
 // [-2] void leaveTransformNode(class QSGTransformNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor18leaveTransformNodeEP16QSGTransformNode(void *this_, QSGTransformNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveTransformNode(arg0);
 }
@@ -157,7 +157,7 @@ void C_ZN14QSGNodeVisitor18leaveTransformNodeEP16QSGTransformNode(void *this_, Q
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:342
 // [-2] void enterClipNode(class QSGClipNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor13enterClipNodeEP11QSGClipNode(void *this_, QSGClipNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterClipNode(arg0);
 }
@@ -165,7 +165,7 @@ void C_ZN14QSGNodeVisitor13enterClipNodeEP11QSGClipNode(void *this_, QSGClipNode
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:343
 // [-2] void leaveClipNode(class QSGClipNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor13leaveClipNodeEP11QSGClipNode(void *this_, QSGClipNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveClipNode(arg0);
 }
@@ -173,7 +173,7 @@ void C_ZN14QSGNodeVisitor13leaveClipNodeEP11QSGClipNode(void *this_, QSGClipNode
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:344
 // [-2] void enterGeometryNode(class QSGGeometryNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor17enterGeometryNodeEP15QSGGeometryNode(void *this_, QSGGeometryNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterGeometryNode(arg0);
 }
@@ -181,7 +181,7 @@ void C_ZN14QSGNodeVisitor17enterGeometryNodeEP15QSGGeometryNode(void *this_, QSG
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:345
 // [-2] void leaveGeometryNode(class QSGGeometryNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor17leaveGeometryNodeEP15QSGGeometryNode(void *this_, QSGGeometryNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveGeometryNode(arg0);
 }
@@ -189,7 +189,7 @@ void C_ZN14QSGNodeVisitor17leaveGeometryNodeEP15QSGGeometryNode(void *this_, QSG
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:346
 // [-2] void enterOpacityNode(class QSGOpacityNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor16enterOpacityNodeEP14QSGOpacityNode(void *this_, QSGOpacityNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterOpacityNode(arg0);
 }
@@ -197,7 +197,7 @@ void C_ZN14QSGNodeVisitor16enterOpacityNodeEP14QSGOpacityNode(void *this_, QSGOp
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:347
 // [-2] void leaveOpacityNode(class QSGOpacityNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor16leaveOpacityNodeEP14QSGOpacityNode(void *this_, QSGOpacityNode * arg0) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveOpacityNode(arg0);
 }
@@ -205,7 +205,7 @@ void C_ZN14QSGNodeVisitor16leaveOpacityNodeEP14QSGOpacityNode(void *this_, QSGOp
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:348
 // [-2] void visitNode(class QSGNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor9visitNodeEP7QSGNode(void *this_, QSGNode * n) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::visitNode(n);
 }
@@ -213,7 +213,7 @@ void C_ZN14QSGNodeVisitor9visitNodeEP7QSGNode(void *this_, QSGNode * n) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:349
 // [-2] void visitChildren(class QSGNode *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitor13visitChildrenEP7QSGNode(void *this_, QSGNode * n) {
   ((QSGNodeVisitor*)this_)->QSGNodeVisitor::visitChildren(n);
 }
@@ -221,7 +221,7 @@ void C_ZN14QSGNodeVisitor13visitChildrenEP7QSGNode(void *this_, QSGNode * n) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:337
 // [-2] void ~QSGNodeVisitor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QSGNodeVisitorD2Ev(void *this_) {
   delete (QSGNodeVisitor*)(this_);
 }

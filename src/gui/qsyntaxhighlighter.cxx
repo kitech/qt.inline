@@ -162,11 +162,11 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:77
 // [-2] void highlightBlock(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:79
 // [-2] void setFormat(int, int, const class QTextCharFormat &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat(void *this_, int start, int count, QTextCharFormat* format) {
   ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::setFormat(start, count, *format);
 }
@@ -174,7 +174,7 @@ void C_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat(void *this_, int s
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:80
 // [-2] void setFormat(int, int, const class QColor &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor(void *this_, int start, int count, QColor* color) {
   ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::setFormat(start, count, *color);
 }
@@ -182,7 +182,7 @@ void C_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor(void *this_, int start, int 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:81
 // [-2] void setFormat(int, int, const class QFont &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont(void *this_, int start, int count, QFont* font) {
   ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::setFormat(start, count, *font);
 }
@@ -190,7 +190,7 @@ void C_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont(void *this_, int start, int c
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:82
 // [16] QTextCharFormat format(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSyntaxHighlighter6formatEi(void *this_, int pos) {
   auto rv = ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::format(pos);
 return new QTextCharFormat(rv);
@@ -199,7 +199,7 @@ return new QTextCharFormat(rv);
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:84
 // [4] int previousBlockState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QSyntaxHighlighter18previousBlockStateEv(void *this_) {
   return (int)((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::previousBlockState();
 }
@@ -207,7 +207,7 @@ int C_ZNK18QSyntaxHighlighter18previousBlockStateEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:85
 // [4] int currentBlockState()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK18QSyntaxHighlighter17currentBlockStateEv(void *this_) {
   return (int)((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::currentBlockState();
 }
@@ -215,7 +215,7 @@ int C_ZNK18QSyntaxHighlighter17currentBlockStateEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:86
 // [-2] void setCurrentBlockState(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter20setCurrentBlockStateEi(void *this_, int newState) {
   ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::setCurrentBlockState(newState);
 }
@@ -223,7 +223,7 @@ void C_ZN18QSyntaxHighlighter20setCurrentBlockStateEi(void *this_, int newState)
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:88
 // [-2] void setCurrentBlockUserData(class QTextBlockUserData *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData(void *this_, QTextBlockUserData * data) {
   ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::setCurrentBlockUserData(data);
 }
@@ -231,7 +231,7 @@ void C_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData(voi
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:89
 // [8] QTextBlockUserData * currentBlockUserData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSyntaxHighlighter20currentBlockUserDataEv(void *this_) {
   return (void*)((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::currentBlockUserData();
 }
@@ -239,7 +239,7 @@ void* C_ZNK18QSyntaxHighlighter20currentBlockUserDataEv(void *this_) {
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:91
 // [16] QTextBlock currentBlock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSyntaxHighlighter12currentBlockEv(void *this_) {
   auto rv = ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::currentBlock();
 return new QTextBlock(rv);
@@ -248,7 +248,7 @@ return new QTextBlock(rv);
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:62
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSyntaxHighlighter10metaObjectEv(void *this_) {
   return (void*)((QSyntaxHighlighter*)this_)->metaObject();
 }
@@ -256,7 +256,7 @@ void* C_ZNK18QSyntaxHighlighter10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:65
 // [-2] void QSyntaxHighlighter(class QObject *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QSyntaxHighlighterC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
@@ -264,7 +264,7 @@ void* C_ZN18QSyntaxHighlighterC2EP7QObject(QObject * parent) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:66
 // [-2] void QSyntaxHighlighter(class QTextDocument *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN18QSyntaxHighlighterC2EP13QTextDocument(QTextDocument * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
@@ -272,14 +272,14 @@ void* C_ZN18QSyntaxHighlighterC2EP13QTextDocument(QTextDocument * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:67
 // [-2] void ~QSyntaxHighlighter()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighterD2Ev(void *this_) {
   delete (QSyntaxHighlighter*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:69
 // [-2] void setDocument(class QTextDocument *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter11setDocumentEP13QTextDocument(void *this_, QTextDocument * doc) {
   ((QSyntaxHighlighter*)this_)->setDocument(doc);
 }
@@ -287,7 +287,7 @@ void C_ZN18QSyntaxHighlighter11setDocumentEP13QTextDocument(void *this_, QTextDo
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:70
 // [8] QTextDocument * document()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSyntaxHighlighter8documentEv(void *this_) {
   return (void*)((QSyntaxHighlighter*)this_)->document();
 }
@@ -295,7 +295,7 @@ void* C_ZNK18QSyntaxHighlighter8documentEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:73
 // [-2] void rehighlight()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter11rehighlightEv(void *this_) {
   ((QSyntaxHighlighter*)this_)->rehighlight();
 }
@@ -303,7 +303,7 @@ void C_ZN18QSyntaxHighlighter11rehighlightEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:74
 // [-2] void rehighlightBlock(const class QTextBlock &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter16rehighlightBlockERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QSyntaxHighlighter*)this_)->rehighlightBlock(*block);
 }

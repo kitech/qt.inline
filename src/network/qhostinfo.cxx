@@ -23,14 +23,14 @@ MyQHostInfo(int lookupId) : QHostInfo(lookupId) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:63
 // [-2] void QHostInfo(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfoC2Ei(int lookupId) {
   return  new QHostInfo(lookupId);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:65
 // [8] QHostInfo & operator=(const class QHostInfo &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfoaSERKS_(void *this_, QHostInfo* d) {
   auto& rv = ((QHostInfo*)this_)->operator=(*d);
 return &rv;
@@ -39,7 +39,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:66
 // [8] QHostInfo & operator=(class QHostInfo &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfoaSEOS_(void *this_, QHostInfo && other) {
   auto& rv = ((QHostInfo*)this_)->operator=(other);
 return &rv;
@@ -48,14 +48,14 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:67
 // [-2] void ~QHostInfo()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfoD2Ev(void *this_) {
   delete (QHostInfo*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:69
 // [-2] void swap(class QHostInfo &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo4swapERS_(void *this_, QHostInfo* other) {
   ((QHostInfo*)this_)->swap(*other);
 }
@@ -63,7 +63,7 @@ void C_ZN9QHostInfo4swapERS_(void *this_, QHostInfo* other) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:71
 // [8] QString hostName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QHostInfo8hostNameEv(void *this_) {
   auto rv = ((QHostInfo*)this_)->hostName();
 return new QString(rv);
@@ -72,7 +72,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:72
 // [-2] void setHostName(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo11setHostNameERK7QString(void *this_, QString* name) {
   ((QHostInfo*)this_)->setHostName(*name);
 }
@@ -80,7 +80,7 @@ void C_ZN9QHostInfo11setHostNameERK7QString(void *this_, QString* name) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:77
 // [4] QHostInfo::HostInfoError error()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QHostInfo::HostInfoError C_ZNK9QHostInfo5errorEv(void *this_) {
   return (QHostInfo::HostInfoError)((QHostInfo*)this_)->error();
 }
@@ -88,7 +88,7 @@ QHostInfo::HostInfoError C_ZNK9QHostInfo5errorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:78
 // [-2] void setError(enum QHostInfo::HostInfoError)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo8setErrorENS_13HostInfoErrorE(void *this_, QHostInfo::HostInfoError error) {
   ((QHostInfo*)this_)->setError(error);
 }
@@ -96,7 +96,7 @@ void C_ZN9QHostInfo8setErrorENS_13HostInfoErrorE(void *this_, QHostInfo::HostInf
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:80
 // [8] QString errorString()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK9QHostInfo11errorStringEv(void *this_) {
   auto rv = ((QHostInfo*)this_)->errorString();
 return new QString(rv);
@@ -105,7 +105,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:81
 // [-2] void setErrorString(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo14setErrorStringERK7QString(void *this_, QString* errorString) {
   ((QHostInfo*)this_)->setErrorString(*errorString);
 }
@@ -113,7 +113,7 @@ void C_ZN9QHostInfo14setErrorStringERK7QString(void *this_, QString* errorString
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:83
 // [-2] void setLookupId(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo11setLookupIdEi(void *this_, int id) {
   ((QHostInfo*)this_)->setLookupId(id);
 }
@@ -121,7 +121,7 @@ void C_ZN9QHostInfo11setLookupIdEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:84
 // [4] int lookupId()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZNK9QHostInfo8lookupIdEv(void *this_) {
   return (int)((QHostInfo*)this_)->lookupId();
 }
@@ -129,21 +129,21 @@ int C_ZNK9QHostInfo8lookupIdEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:86
 // [4] int lookupHost(const class QString &, class QObject *, const char *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_ZN9QHostInfo10lookupHostERK7QStringP7QObjectPKc(QString* name, QObject * receiver, const char * member) {
   return (int)QHostInfo::lookupHost(*name, receiver, member);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:87
 // [-2] void abortHostLookup(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo15abortHostLookupEi(int lookupId) {
   QHostInfo::abortHostLookup(lookupId);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:89
 // [8] QHostInfo fromName(const class QString &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfo8fromNameERK7QString(QString* name) {
   auto rv = QHostInfo::fromName(*name);
 return new QHostInfo(rv);
@@ -151,7 +151,7 @@ return new QHostInfo(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:90
 // [8] QString localHostName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfo13localHostNameEv() {
   auto rv = QHostInfo::localHostName();
 return new QString(rv);
@@ -159,7 +159,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:91
 // [8] QString localDomainName()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfo15localDomainNameEv() {
   auto rv = QHostInfo::localDomainName();
 return new QString(rv);

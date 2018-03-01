@@ -21,14 +21,14 @@ public:
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qplugin.h:74
 // [16] QJsonObject metaData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK13QStaticPlugin8metaDataEv(void *this_) {
   auto rv = ((QStaticPlugin*)this_)->metaData();
 return new QJsonObject(rv);
 }
 
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN13QStaticPluginD2Ev(void *this_) {
   delete (QStaticPlugin*)(this_);
 }

@@ -21,12 +21,12 @@ public:
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcontiguouscache.h:67
 // [8] QContiguousCacheData * allocateData(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN20QContiguousCacheData12allocateDataEii(int size, int alignment) {
   return (void*)QContiguousCacheData::allocateData(size, alignment);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN20QContiguousCacheDataD2Ev(void *this_) {
   delete (QContiguousCacheData*)(this_);
 }

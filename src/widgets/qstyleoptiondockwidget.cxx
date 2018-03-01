@@ -25,12 +25,12 @@ MyQStyleOptionDockWidget(int version) : QStyleOptionDockWidget(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:391
 // [-2] void QStyleOptionDockWidget()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionDockWidgetC2Ev() {
   return  new QStyleOptionDockWidget();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionDockWidgetD2Ev(void *this_) {
   delete (QStyleOptionDockWidget*)(this_);
 }

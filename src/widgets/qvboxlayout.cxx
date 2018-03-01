@@ -25,7 +25,7 @@ MyQVBoxLayout(QWidget * parent) : QVBoxLayout(parent) {}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:128
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QVBoxLayout10metaObjectEv(void *this_) {
   return (void*)((QVBoxLayout*)this_)->metaObject();
 }
@@ -33,21 +33,21 @@ void* C_ZNK11QVBoxLayout10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:130
 // [-2] void QVBoxLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QVBoxLayoutC2Ev() {
   return  new QVBoxLayout();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:131
 // [-2] void QVBoxLayout(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QVBoxLayoutC2EP7QWidget(QWidget * parent) {
   return  new QVBoxLayout(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:132
 // [-2] void ~QVBoxLayout()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QVBoxLayoutD2Ev(void *this_) {
   delete (QVBoxLayout*)(this_);
 }

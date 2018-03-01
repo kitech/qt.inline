@@ -21,7 +21,7 @@ public:
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:57
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsAnchor10metaObjectEv(void *this_) {
   return (void*)((QGraphicsAnchor*)this_)->metaObject();
 }
@@ -29,7 +29,7 @@ void* C_ZNK15QGraphicsAnchor10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:61
 // [-2] void setSpacing(qreal)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsAnchor10setSpacingEd(void *this_, qreal spacing) {
   ((QGraphicsAnchor*)this_)->setSpacing(spacing);
 }
@@ -37,7 +37,7 @@ void C_ZN15QGraphicsAnchor10setSpacingEd(void *this_, qreal spacing) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:62
 // [-2] void unsetSpacing()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsAnchor12unsetSpacingEv(void *this_) {
   ((QGraphicsAnchor*)this_)->unsetSpacing();
 }
@@ -45,7 +45,7 @@ void C_ZN15QGraphicsAnchor12unsetSpacingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:63
 // [8] qreal spacing()
-extern "C"
+extern "C" Q_DECL_EXPORT
 qreal C_ZNK15QGraphicsAnchor7spacingEv(void *this_) {
   return (qreal)((QGraphicsAnchor*)this_)->spacing();
 }
@@ -53,7 +53,7 @@ qreal C_ZNK15QGraphicsAnchor7spacingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:64
 // [-2] void setSizePolicy(class QSizePolicy::Policy)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsAnchor13setSizePolicyEN11QSizePolicy6PolicyE(void *this_, QSizePolicy::Policy policy) {
   ((QGraphicsAnchor*)this_)->setSizePolicy(policy);
 }
@@ -61,7 +61,7 @@ void C_ZN15QGraphicsAnchor13setSizePolicyEN11QSizePolicy6PolicyE(void *this_, QS
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:65
 // [4] QSizePolicy::Policy sizePolicy()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QSizePolicy::Policy C_ZNK15QGraphicsAnchor10sizePolicyEv(void *this_) {
   return (QSizePolicy::Policy)((QGraphicsAnchor*)this_)->sizePolicy();
 }
@@ -69,7 +69,7 @@ QSizePolicy::Policy C_ZNK15QGraphicsAnchor10sizePolicyEv(void *this_) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:66
 // [-2] void ~QGraphicsAnchor()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsAnchorD2Ev(void *this_) {
   delete (QGraphicsAnchor*)(this_);
 }

@@ -23,21 +23,21 @@ MyQReadWriteLock(QReadWriteLock::RecursionMode recursionMode) : QReadWriteLock(r
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:57
 // [-2] void QReadWriteLock(enum QReadWriteLock::RecursionMode)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN14QReadWriteLockC2ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode) {
   return  new QReadWriteLock(recursionMode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:58
 // [-2] void ~QReadWriteLock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QReadWriteLockD2Ev(void *this_) {
   delete (QReadWriteLock*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:60
 // [-2] void lockForRead()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QReadWriteLock11lockForReadEv(void *this_) {
   ((QReadWriteLock*)this_)->lockForRead();
 }
@@ -45,7 +45,7 @@ void C_ZN14QReadWriteLock11lockForReadEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:61
 // [1] bool tryLockForRead()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QReadWriteLock14tryLockForReadEv(void *this_) {
   return (bool)((QReadWriteLock*)this_)->tryLockForRead();
 }
@@ -53,7 +53,7 @@ bool C_ZN14QReadWriteLock14tryLockForReadEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:62
 // [1] bool tryLockForRead(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QReadWriteLock14tryLockForReadEi(void *this_, int timeout) {
   return (bool)((QReadWriteLock*)this_)->tryLockForRead(timeout);
 }
@@ -61,7 +61,7 @@ bool C_ZN14QReadWriteLock14tryLockForReadEi(void *this_, int timeout) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:64
 // [-2] void lockForWrite()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QReadWriteLock12lockForWriteEv(void *this_) {
   ((QReadWriteLock*)this_)->lockForWrite();
 }
@@ -69,7 +69,7 @@ void C_ZN14QReadWriteLock12lockForWriteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:65
 // [1] bool tryLockForWrite()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QReadWriteLock15tryLockForWriteEv(void *this_) {
   return (bool)((QReadWriteLock*)this_)->tryLockForWrite();
 }
@@ -77,7 +77,7 @@ bool C_ZN14QReadWriteLock15tryLockForWriteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:66
 // [1] bool tryLockForWrite(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN14QReadWriteLock15tryLockForWriteEi(void *this_, int timeout) {
   return (bool)((QReadWriteLock*)this_)->tryLockForWrite(timeout);
 }
@@ -85,7 +85,7 @@ bool C_ZN14QReadWriteLock15tryLockForWriteEi(void *this_, int timeout) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:68
 // [-2] void unlock()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN14QReadWriteLock6unlockEv(void *this_) {
   ((QReadWriteLock*)this_)->unlock();
 }

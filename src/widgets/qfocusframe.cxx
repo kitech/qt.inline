@@ -73,7 +73,7 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:63
 // [1] bool event(class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFocusFrame5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QFocusFrame*)this_)->QFocusFrame::event(e);
 }
@@ -81,7 +81,7 @@ bool C_ZN11QFocusFrame5eventEP6QEvent(void *this_, QEvent * e) {
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:65
 // [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QFocusFrame*)this_)->QFocusFrame::eventFilter(arg0, arg1);
 }
@@ -89,7 +89,7 @@ bool C_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:66
 // [-2] void paintEvent(class QPaintEvent *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFocusFrame10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QFocusFrame*)this_)->QFocusFrame::paintEvent(arg0);
 }
@@ -97,7 +97,7 @@ void C_ZN11QFocusFrame10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:67
 // [-2] void initStyleOption(class QStyleOption *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption(void *this_, QStyleOption * option) {
   ((QFocusFrame*)this_)->QFocusFrame::initStyleOption(option);
 }
@@ -105,7 +105,7 @@ void C_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption(void *this_, QStyleOpti
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:54
 // [8] const QMetaObject * metaObject()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFocusFrame10metaObjectEv(void *this_) {
   return (void*)((QFocusFrame*)this_)->metaObject();
 }
@@ -113,7 +113,7 @@ void* C_ZNK11QFocusFrame10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:56
 // [-2] void QFocusFrame(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QFocusFrameC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQFocusFrame*)(0);
   return  new MyQFocusFrame(parent);
@@ -121,14 +121,14 @@ void* C_ZN11QFocusFrameC2EP7QWidget(QWidget * parent) {
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:57
 // [-2] void ~QFocusFrame()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFocusFrameD2Ev(void *this_) {
   delete (QFocusFrame*)(this_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:59
 // [-2] void setWidget(class QWidget *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QFocusFrame9setWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QFocusFrame*)this_)->setWidget(widget);
 }
@@ -136,7 +136,7 @@ void C_ZN11QFocusFrame9setWidgetEP7QWidget(void *this_, QWidget * widget) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:60
 // [8] QWidget * widget()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFocusFrame6widgetEv(void *this_) {
   return (void*)((QFocusFrame*)this_)->widget();
 }

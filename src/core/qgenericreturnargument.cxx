@@ -23,12 +23,12 @@ MyQGenericReturnArgument(const char * aName, void * aData) : QGenericReturnArgum
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:310
 // [-2] void QGenericReturnArgument(const char *, void *)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QGenericReturnArgumentC2EPKcPv(const char * aName, void * aData) {
   return  new QGenericReturnArgument(aName, aData);
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QGenericReturnArgumentD2Ev(void *this_) {
   delete (QGenericReturnArgument*)(this_);
 }

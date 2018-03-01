@@ -23,12 +23,12 @@ MyQSharedData() : QSharedData() {}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qshareddata.h:60
 // [-2] void QSharedData()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN11QSharedDataC2Ev() {
   return  new QSharedData();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN11QSharedDataD2Ev(void *this_) {
   delete (QSharedData*)(this_);
 }

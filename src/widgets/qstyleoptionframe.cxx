@@ -25,12 +25,12 @@ MyQStyleOptionFrame(int version) : QStyleOptionFrame(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:143
 // [-2] void QStyleOptionFrame()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN17QStyleOptionFrameC2Ev() {
   return  new QStyleOptionFrame();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN17QStyleOptionFrameD2Ev(void *this_) {
   delete (QStyleOptionFrame*)(this_);
 }

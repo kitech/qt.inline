@@ -25,12 +25,12 @@ MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:195
 // [-2] void QStyleOptionTabBarBase()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionTabBarBaseC2Ev() {
   return  new QStyleOptionTabBarBase();
 }
 
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionTabBarBaseD2Ev(void *this_) {
   delete (QStyleOptionTabBarBase*)(this_);
 }
