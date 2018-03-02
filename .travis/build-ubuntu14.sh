@@ -10,16 +10,26 @@ cat /etc/issue
 
 # not docker, need sudo
 sudo apt-get -qq update
+sudo apt-get install -y libx11-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-present-dev libxcb-present-dev libxcb-shm0-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb-xkb-dev libxcb-cursor-dev libxcb-xinerama0-dev libice-dev
 
 pwd
 ls
 
 # script:
 pwd
-git clone https://github.com/qtchina/qt510_linux_gcc64.git
-export PATH=`pwd`/qt510_linux_gcc64/bin:$PATH
 export CC=clang CXX=clang++
-cmake .
+if [ x"$WITH_QT_STATIC" == x"" ]; then
+    WITH_QT_STATIC=off
+fi
+if [ x"$WITH_QT_STATIC" == x"on" ]; then
+    git clone https://github.com/qtchina/qtlib510_linux_x64_static.git
+    sudo cp -a qtlib510_linux_x64_static /opt/qt510st
+    export PATH=/opt/qt510st/bin:$PATH
+else
+    git clone https://github.com/qtchina/qt510_linux_gcc64.git
+    export PATH=`pwd`/qt510_linux_gcc64/bin:$PATH
+fi
+cmake -DWITH_QT_STATIC=$WITH_QT_STATIC .
 
 DRYRUN=n  # y/n
 if [ x"$DRYRUN" == x"y" ]; then
@@ -30,6 +40,7 @@ else
     strip -s libQt5Inline.so
     ls -lh libQt5Inline.so
     curl -F 'name=@./libQt5Inline.so' http://img.vim-cn.com/
+    objdump -p libQt5Inline.so | grep "NEEDED"
 fi
 
 curl -F 'name=@/etc/issue' http://img.vim-cn.com/

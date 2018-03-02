@@ -1,4 +1,5 @@
-
+#usage:
+# defines: -DANDROID=on, -DMINGW_NOIPBIZ=on, -DWITH_QT_STATIC=on, -DWINARCH=x32
 project(qt5inline)
 cmake_minimum_required(VERSION 3.0)
 
@@ -19,6 +20,7 @@ ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 # max effort for keep inline functions/methods.
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 
+# set toolchains by cmake definition(s)
 # for android arm build begin, usage: cmake -DANDROID=on .
 if(ANDROID)
   set(CMAKE_C_COMPILER /opt/andndk16/bin/clang)
@@ -28,11 +30,19 @@ if(ANDROID)
   # 这个参数可以设置多个值
   set(CMAKE_FIND_ROOT_PATH  /home/me/Qt5.10.0/5.10.0/android_armv7/ /home/me/Qt5.10.0/5.10.0/android_armv7/)
   set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=/opt/andndk16/sysroot")
+elseif(MINGW_NOIPBIZ)
+  include(tc-mingw.cmake)
 endif(ANDROID)
 # for android arm build end
 
-set(_QT_STATIC_PREF "Static")
+# usage: cmake -DWITH_MINGW_QT_STATIC
 set(_QT_STATIC_PREF "")
+if(WITH_QT_STATIC)
+  if(MINGW_NOIPBIZ)
+    set(_QT_STATIC_PREF "Static")
+  endif(MINGW_NOIPBIZ)
+endif(WITH_QT_STATIC)
+
 set(CMAKE_AUTOMOC off)  ### it's sure, the wrapper not need moc
 find_package(${_QT_STATIC_PREF}Qt5Core)
 find_package(${_QT_STATIC_PREF}Qt5Gui)
@@ -86,13 +96,28 @@ set(all_qt5_inline_srcs
   )
 
 
-set(LDFLAGS_FOR_LINUX_CUSTOM_STATIC_BUILD Qt5::QXcbIntegrationPlugin -lpthread -lGL -lqtlibpng -lqtharfbuzz -lqtpcre2 -lQt5XcbQpa -lSM -lxcb-randr -lxcb-render -lxcb-shape -lxcb-xkb -lxcb-xfixes -lxcb-sync -lxcb-icccm -lxcb-shm -lxcb-xinerama -lxcb-image -lxcb-keysyms -lxcb-cursor -lX11-xcb -lQt5ThemeSupport -lQt5EdidSupport -lQt5FontDatabaseSupport -lQt5ServiceSupport -lQt5EventDispatcherSupport -lQt5DBus -lqtfreetype)
-set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD StaticQt5::QWindowsIntegrationPlugin -lmpr)
-set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD StaticQt5::QCocoaIntegrationPlugin)
+# resolve static ldflags
+# note: the order
+set(LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD  Qt5::QXcbIntegrationPlugin Qt5XcbQpa xcb-static Qt5ThemeSupport Qt5EdidSupport Qt5FontDatabaseSupport Qt5ServiceSupport Qt5EventDispatcherSupport Qt5DBus qtfreetype     pthread GL qtlibpng qtharfbuzz qtpcre2 SM ICE X11 xcb X11-xcb dl)
+set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD StaticQt5::QWindowsIntegrationPlugin mpr)
+set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD Qt5::QCocoaIntegrationPlugin)
+set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD "")
+if(WITH_QT_STATIC)
+  if(MINGW_NOIPBIZ)
+    set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD})
+  elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+    set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD})
+  elseif(${CMAKE_SYSTEM_NAME} MATCHES "Android")
+    set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD log)
+  else(MINGW_NOIPBIZ)
+    set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD})
+    link_directories(/opt/qt510st/lib/ /opt/qt510st/plugins/platforms/)
+  endif(MINGW_NOIPBIZ)
+endif(WITH_QT_STATIC)
 
-# link_directories(/opt/qt510st/lib/ /opt/qt510st/plugins/platforms/)
 add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
 target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Core ${_QT_STATIC_PREF}Qt5::Gui ${_QT_STATIC_PREF}Qt5::Widgets ${_QT_STATIC_PREF}Qt5::Network ${_QT_STATIC_PREF}Qt5::Qml ${_QT_STATIC_PREF}Qt5::Quick ${_QT_STATIC_PREF}Qt5::QuickControls2 ${_QT_STATIC_PREF}Qt5::QuickWidgets)
+target_link_libraries(Qt5Inline ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
 if(ANDROID)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)

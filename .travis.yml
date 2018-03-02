@@ -21,6 +21,14 @@ matrix:
         - WINARCH=x64
       services:
         - docker
+    - stage: Win-Mingw-x64-qtstatic
+      os: linux
+      env:
+        - JOB=build-mingw
+        - WINARCH=x64
+        - WITH_QT_STATIC=on
+      services:
+        - docker
     - stage: Win-Mingw-x32
       os: linux
       env:
@@ -28,9 +36,22 @@ matrix:
         - WINARCH=x32
       services:
         - docker
+    - stage: Win-Mingw-x32-qtstatic
+      os: linux
+      env:
+        - JOB=build-mingw
+        - WINARCH=x32
+        - WITH_QT_STATIC=on
+      services:
+        - docker
     - stage: Ubuntu14-clang
       os: linux
       env: JOB=build-ubuntu14
+    - stage: Ubuntu14-clang-qtstatic
+      os: linux
+      env:
+        - JOB=build-ubuntu14
+        - WITH_QT_STATIC=on
     - stage: Ubuntu16-gcc
       os: linux
       env: JOB=build-ubuntu16

@@ -6,5 +6,5 @@ set -e -o pipefail
 docker build -t archmingwqt -f Dockerfile.mingw .
 
 ls
-docker run -v $HOME/.ccache:/root/.ccache archmingwqt $WINARCH
+docker run -v $HOME/.ccache:/root/.ccache archmingwqt $WINARCH $WITH_QT_STATIC
 

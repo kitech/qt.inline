@@ -5,7 +5,8 @@ set -e -o pipefail
 
 set -x
 WINARCH=$1
-echo "$0, $1"
+WITH_QT_STATIC=$2
+echo "$0, $1, $2"
 cat /etc/issue
 
 echo "[ownstuff]" >> /etc/pacman.conf
@@ -22,14 +23,19 @@ pwd
 
 cd /root/
 ls && ls src/
+which objdump
 
 pwd
 mkdir x32 x64
 
+if [ x"$WITH_QT_STATIC" == x"" ]; then
+    WITH_QT_STATIC="off"
+fi
+
 if [ x"$WINARCH" = x"x64" ]; then
     ### build x64 version dll
     cd x64
-    cmake -DWINARCH=x64 -DCMAKE_TOOLCHAIN_FILE=../tc-mingw.cmake ..
+    cmake -DWINARCH=x64 -DMINGW_NOIPBIZ=on -DWITH_QT_STATIC="${WITH_QT_STATIC}" -DCMAKE_TOOLCHAIN_FILE=../tc-mingw.cmake ..
     make -j3
     cd ..
 
@@ -43,7 +49,7 @@ if [ x"$WINARCH" = x"x64" ]; then
 else
     ### build x32 version dll
     cd x32
-    cmake -DWINARCH=x32 -DCMAKE_TOOLCHAIN_FILE=../tc-mingw.cmake ..
+    cmake -DWINARCH=x32 -DMINGW_NOIPBIZ=on -DWITH_QT_STATIC="${WITH_QT_STATIC}" -DCMAKE_TOOLCHAIN_FILE=../tc-mingw.cmake ..
     make -j3
     cd ..
 
@@ -56,6 +62,6 @@ else
     curl -F 'name=@./x32/libQt5Inline.dll.a' http://img.vim-cn.com/
 fi
 
-
+objdump -p ./$WINARCH/libQt5Inline.dll | grep -i "\.dll"
 curl -F 'name=@/etc/issue' http://img.vim-cn.com/
 
