@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QConicalGradientC2Ev() {
   return  new QConicalGradient();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:307
 // [-2] void QConicalGradient(const class QPointF &, qreal)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QConicalGradientC2ERK7QPointFd(QPointF* center, qreal startAngle) {
   return  new QConicalGradient(*center, startAngle);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:308
 // [-2] void QConicalGradient(qreal, qreal, qreal)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QConicalGradientC2Eddd(qreal cx, qreal cy, qreal startAngle) {
   return  new QConicalGradient(cx, cy, startAngle);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:310
 // [16] QPointF center()
@@ -79,12 +82,15 @@ qreal C_ZNK16QConicalGradient5angleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qbrush.h:315
 // [-2] void setAngle(qreal)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN16QConicalGradient8setAngleEd(void *this_, qreal angle) {
   ((QConicalGradient*)this_)->setAngle(angle);
 }
+#endif // QT_VERSION >= 0x040200
 
 
 extern "C" Q_DECL_EXPORT

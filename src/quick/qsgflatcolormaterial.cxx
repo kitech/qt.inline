@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QSGFlatColorMaterialC2Ev() {
   return  new QSGFlatColorMaterial();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:52
 // [8] QSGMaterialType * type()

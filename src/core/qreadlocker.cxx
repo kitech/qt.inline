@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QReadLockerC2EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
   return  new QReadLocker(readWriteLock);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:89
 // [-2] void ~QReadLocker()

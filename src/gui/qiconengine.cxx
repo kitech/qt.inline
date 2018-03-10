@@ -21,12 +21,16 @@ MyQIconEngine() : QIconEngine() {}
 };
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qiconengine.h:53
 // [-2] void QIconEngine()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QIconEngineC2Ev() {
   return 0; // new QIconEngine();
 }
+#endif // QT_VERSION >= 0x050600
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:55
 // [-2] void ~QIconEngine()
@@ -110,37 +114,49 @@ bool C_ZNK11QIconEngine5writeER11QDataStream(void *this_, QDataStream* out) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qiconengine.h:80
 // [8] QString iconName()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QIconEngine8iconNameEv(void *this_) {
   auto rv = ((QIconEngine*)this_)->iconName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtGui/qiconengine.h:81
 // [1] bool isNull()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QIconEngine6isNullEv(void *this_) {
   return (bool)((QIconEngine*)this_)->isNull();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtGui/qiconengine.h:82
 // [32] QPixmap scaledPixmap(const class QSize &, class QIcon::Mode, class QIcon::State, qreal)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QIconEngine12scaledPixmapERK5QSizeN5QIcon4ModeENS3_5StateEd(void *this_, QSize* size, QIcon::Mode mode, QIcon::State state, qreal scale) {
   auto rv = ((QIconEngine*)this_)->scaledPixmap(*size, mode, state, scale);
 return new QPixmap(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qiconengine.h:93
 // [-2] void virtual_hook(int, void *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QIconEngine12virtual_hookEiPv(void *this_, int id, void * data) {
   ((QIconEngine*)this_)->virtual_hook(id, data);
 }
+#endif // QT_VERSION >= 0x040500
 
 //  main block end

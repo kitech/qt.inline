@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtWidgets/qmdiarea.h
 #ifndef protected
 #define protected public
@@ -239,6 +240,7 @@ void* C_ZN8QMdiAreaC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQMdiArea*)(0);
   return  new MyQMdiArea(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:91
 // [-2] void ~QMdiArea()

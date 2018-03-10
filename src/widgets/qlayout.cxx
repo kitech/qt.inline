@@ -161,6 +161,7 @@ void* C_ZN7QLayoutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLayout*)(0);
   return 0; // new MyQLayout(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:81
 // [-2] void QLayout()
@@ -169,6 +170,7 @@ void* C_ZN7QLayoutC2Ev() {
   auto _nilp = (MyQLayout*)(0);
   return 0; // new MyQLayout();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:82
 // [-2] void ~QLayout()
@@ -209,46 +211,61 @@ void C_ZN7QLayout10setSpacingEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qlayout.h:90
 // [-2] void setContentsMargins(int, int, int, int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout18setContentsMarginsEiiii(void *this_, int left, int top, int right, int bottom) {
   ((QLayout*)this_)->setContentsMargins(left, top, right, bottom);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qlayout.h:91
 // [-2] void setContentsMargins(const class QMargins &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout18setContentsMarginsERK8QMargins(void *this_, QMargins* margins) {
   ((QLayout*)this_)->setContentsMargins(*margins);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qlayout.h:92
 // [-2] void getContentsMargins(int *, int *, int *, int *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZNK7QLayout18getContentsMarginsEPiS0_S0_S0_(void *this_, int * left, int * top, int * right, int * bottom) {
   ((QLayout*)this_)->getContentsMargins(left, top, right, bottom);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qlayout.h:93
 // [16] QMargins contentsMargins()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QLayout15contentsMarginsEv(void *this_) {
   auto rv = ((QLayout*)this_)->contentsMargins();
 return new QMargins(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qlayout.h:94
 // [16] QRect contentsRect()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QLayout12contentsRectEv(void *this_) {
   auto rv = ((QLayout*)this_)->contentsRect();
 return new QRect(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:96
@@ -454,12 +471,15 @@ QSizePolicy::ControlTypes C_ZNK7QLayout12controlTypesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qlayout.h:130
 // [8] QLayoutItem * replaceWidget(class QWidget *, class QWidget *, Qt::FindChildOptions)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE(void *this_, QWidget * from, QWidget * to, QFlags<Qt::FindChildOption> options) {
   return (void*)((QLayout*)this_)->replaceWidget(from, to, options);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:132
@@ -528,4 +548,5 @@ void* C_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize(const QWidget * w, 
   auto rv = QLayout::closestAcceptableSize(w, *s);
 return new QSize(rv);
 }
+
 //  main block end

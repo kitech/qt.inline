@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qtimezone.h
 #ifndef protected
 #define protected public
@@ -33,6 +34,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2Ev() {
   return  new QTimeZone();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:93
 // [-2] void QTimeZone(const class QByteArray &)
@@ -40,6 +42,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2ERK10QByteArray(QByteArray* ianaId) {
   return  new QTimeZone(*ianaId);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:94
 // [-2] void QTimeZone(int)
@@ -47,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2Ei(int offsetSeconds) {
   return  new QTimeZone(offsetSeconds);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:95
 // [-2] void QTimeZone(const class QByteArray &, int, const class QString &, const class QString &, class QLocale::Country, const class QString &)
@@ -54,6 +58,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(QByteArray* zoneId, int offsetSeconds, QString* name, QString* abbreviation, QLocale::Country country, QString* comment) {
   return  new QTimeZone(*zoneId, offsetSeconds, *name, *abbreviation, country, *comment);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:99
 // [-2] void ~QTimeZone()
@@ -247,22 +252,31 @@ void* C_ZN9QTimeZone16systemTimeZoneIdEv() {
   auto rv = QTimeZone::systemTimeZoneId();
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qtimezone.h:141
 // [8] QTimeZone systemTimeZone()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZone14systemTimeZoneEv() {
   auto rv = QTimeZone::systemTimeZone();
 return new QTimeZone(rv);
 }
+#endif // QT_VERSION >= 0x050500
+
 // Public static Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qtimezone.h:142
 // [8] QTimeZone utc()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZone3utcEv() {
   auto rv = QTimeZone::utc();
 return new QTimeZone(rv);
 }
+#endif // QT_VERSION >= 0x050500
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:144
 // [1] bool isTimeZoneIdAvailable(const class QByteArray &)
@@ -270,6 +284,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN9QTimeZone21isTimeZoneIdAvailableERK10QByteArray(QByteArray* ianaId) {
   return (bool)QTimeZone::isTimeZoneIdAvailable(*ianaId);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:150
 // [8] QByteArray ianaIdToWindowsId(const class QByteArray &)
@@ -278,6 +293,7 @@ void* C_ZN9QTimeZone17ianaIdToWindowsIdERK10QByteArray(QByteArray* ianaId) {
   auto rv = QTimeZone::ianaIdToWindowsId(*ianaId);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:151
 // [8] QByteArray windowsIdToDefaultIanaId(const class QByteArray &)
@@ -286,6 +302,7 @@ void* C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArray(QByteArray* window
   auto rv = QTimeZone::windowsIdToDefaultIanaId(*windowsId);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:152
 // [8] QByteArray windowsIdToDefaultIanaId(const class QByteArray &, class QLocale::Country)
@@ -294,4 +311,5 @@ void* C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArrayN7QLocale7CountryE(
   auto rv = QTimeZone::windowsIdToDefaultIanaId(*windowsId, country);
 return new QByteArray(rv);
 }
+
 //  main block end

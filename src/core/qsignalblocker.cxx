@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050300
 // /usr/include/qt/QtCore/qobject.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QSignalBlockerC2EP7QObject(QObject * o) {
   return  new QSignalBlocker(o);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:549
 // [-2] void QSignalBlocker(class QObject &)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QSignalBlockerC2ER7QObject(QObject* o) {
   return  new QSignalBlocker(*o);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:550
 // [-2] void ~QSignalBlocker()

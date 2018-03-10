@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QInputMethodEventC2Ev() {
   return  new QInputMethodEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:557
 // [-2] void ~QInputMethodEvent()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050900
 // /usr/include/qt/QtCore/qoperatingsystemversion.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QOperatingSystemVersionC2ENS_6OSTypeEiii(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) {
   return  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:93
 // [16] QOperatingSystemVersion current()
@@ -35,6 +37,7 @@ void C_ZN23QOperatingSystemVersion7currentEv() {
   auto rv = QOperatingSystemVersion::current();
 /*return rv;*/
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:95
 // [4] QOperatingSystemVersion::OSType currentType()
@@ -42,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 QOperatingSystemVersion::OSType C_ZN23QOperatingSystemVersion11currentTypeEv() {
   return (QOperatingSystemVersion::OSType)QOperatingSystemVersion::currentType();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:114
 // [4] int majorVersion()

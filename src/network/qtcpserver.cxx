@@ -53,12 +53,15 @@ void C_ZN10QTcpServer18incomingConnectionEx(void *this_, qintptr handle) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtNetwork/qtcpserver.h:95
 // [-2] void addPendingConnection(class QTcpSocket *)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer20addPendingConnectionEP10QTcpSocket(void *this_, QTcpSocket * socket) {
   ((QTcpServer*)this_)->QTcpServer::addPendingConnection(socket);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:59
@@ -76,6 +79,7 @@ void* C_ZN10QTcpServerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTcpServer*)(0);
   return  new MyQTcpServer(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:62
 // [-2] void ~QTcpServer()
@@ -198,37 +202,49 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qtcpserver.h:85
 // [-2] void pauseAccepting()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer14pauseAcceptingEv(void *this_) {
   ((QTcpServer*)this_)->pauseAccepting();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qtcpserver.h:86
 // [-2] void resumeAccepting()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer15resumeAcceptingEv(void *this_) {
   ((QTcpServer*)this_)->resumeAccepting();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qtcpserver.h:89
 // [-2] void setProxy(const class QNetworkProxy &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer8setProxyERK13QNetworkProxy(void *this_, QNetworkProxy* networkProxy) {
   ((QTcpServer*)this_)->setProxy(*networkProxy);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qtcpserver.h:90
 // [8] QNetworkProxy proxy()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTcpServer5proxyEv(void *this_) {
   auto rv = ((QTcpServer*)this_)->proxy();
 return new QNetworkProxy(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:101
@@ -239,11 +255,14 @@ void C_ZN10QTcpServer13newConnectionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qtcpserver.h:102
 // [-2] void acceptError(class QAbstractSocket::SocketError)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer11acceptErrorEN15QAbstractSocket11SocketErrorE(void *this_, QAbstractSocket::SocketError socketError) {
   ((QTcpServer*)this_)->acceptError(socketError);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidatorC2EP7QObject(QObject * parent) {
   return  new QRegExpValidator(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:178
 // [-2] void QRegExpValidator(const class QRegExp &, class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(QRegExp* rx, QObject * parent) {
   return  new QRegExpValidator(*rx, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:179
 // [-2] void ~QRegExpValidator()

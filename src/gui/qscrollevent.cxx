@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(QPointF* contentPos, QPointF* overshoot, QScrollEvent::ScrollState scrollState) {
   return  new QScrollEvent(*contentPos, *overshoot, scrollState);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1023
 // [-2] void ~QScrollEvent()

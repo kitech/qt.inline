@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QIconDragEventC2Ev() {
   return  new QIconDragEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:486
 // [-2] void ~QIconDragEvent()

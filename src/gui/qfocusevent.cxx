@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type_, Qt::FocusReason reason) {
   return  new QFocusEvent(type_, reason);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:390
 // [-2] void ~QFocusEvent()

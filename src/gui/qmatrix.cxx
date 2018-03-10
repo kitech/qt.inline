@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixC2EN2Qt14InitializationE(Qt::Initialization arg0) {
   return  new QMatrix(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:61
 // [-2] void QMatrix()
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixC2Ev() {
   return  new QMatrix();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:62
 // [-2] void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixC2Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
   return  new QMatrix(m11, m12, m21, m22, dx, dy);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:67
 // [48] QMatrix & operator=(class QMatrix &&)

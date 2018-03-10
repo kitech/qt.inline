@@ -164,6 +164,7 @@ void* C_ZN11QListWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQListWidget*)(0);
   return  new MyQListWidget(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:208
 // [-2] void ~QListWidget()
@@ -276,12 +277,15 @@ void C_ZN11QListWidget14setCurrentItemEP15QListWidgetItem(void *this_, QListWidg
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qlistwidget.h:225
 // [-2] void setCurrentItem(class QListWidgetItem *, class QItemSelectionModel::SelectionFlags)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget14setCurrentItemEP15QListWidgetItem6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QListWidgetItem * item, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QListWidget*)this_)->setCurrentItem(item, command);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:227
@@ -300,12 +304,15 @@ void C_ZN11QListWidget13setCurrentRowEi(void *this_, int row) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qlistwidget.h:229
 // [-2] void setCurrentRow(int, class QItemSelectionModel::SelectionFlags)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget13setCurrentRowEi6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, int row, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QListWidget*)this_)->setCurrentRow(row, command);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:231
@@ -381,36 +388,48 @@ void C_ZN11QListWidget21closePersistentEditorEP15QListWidgetItem(void *this_, QL
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtWidgets/qlistwidget.h:243
 // [1] bool isPersistentEditorOpen(class QListWidgetItem *)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QListWidget22isPersistentEditorOpenEP15QListWidgetItem(void *this_, QListWidgetItem * item) {
   return (bool)((QListWidget*)this_)->isPersistentEditorOpen(item);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qlistwidget.h:245
 // [8] QWidget * itemWidget(class QListWidgetItem *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QListWidget10itemWidgetEP15QListWidgetItem(void *this_, QListWidgetItem * item) {
   return (void*)((QListWidget*)this_)->itemWidget(item);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qlistwidget.h:246
 // [-2] void setItemWidget(class QListWidgetItem *, class QWidget *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget13setItemWidgetEP15QListWidgetItemP7QWidget(void *this_, QListWidgetItem * item, QWidget * widget) {
   ((QListWidget*)this_)->setItemWidget(item, widget);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qlistwidget.h:247
 // [-2] void removeItemWidget(class QListWidgetItem *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget16removeItemWidgetEP15QListWidgetItem(void *this_, QListWidgetItem * item) {
   ((QListWidget*)this_)->removeItemWidget(item);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:249

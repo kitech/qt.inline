@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtNetwork/qsslsocket.h
 #ifndef protected
 #define protected public
@@ -78,6 +79,7 @@ void* C_ZN10QSslSocketC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSslSocket*)(0);
   return  new MyQSslSocket(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:83
 // [-2] void ~QSslSocket()
@@ -86,12 +88,15 @@ void C_ZN10QSslSocketD2Ev(void *this_) {
   delete (QSslSocket*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslsocket.h:84
 // [-2] void resume()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket6resumeEv(void *this_) {
   ((QSslSocket*)this_)->resume();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:87
@@ -134,21 +139,27 @@ void C_ZN10QSslSocket18disconnectFromHostEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qsslsocket.h:96
 // [-2] void setSocketOption(class QAbstractSocket::SocketOption, const class QVariant &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket15setSocketOptionEN15QAbstractSocket12SocketOptionERK8QVariant(void *this_, QAbstractSocket::SocketOption option, QVariant* value) {
   ((QSslSocket*)this_)->setSocketOption(option, *value);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qsslsocket.h:97
 // [16] QVariant socketOption(class QAbstractSocket::SocketOption)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocket12socketOptionEN15QAbstractSocket12SocketOptionE(void *this_, QAbstractSocket::SocketOption option) {
   auto rv = ((QSslSocket*)this_)->socketOption(option);
 return new QVariant(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:99
@@ -183,53 +194,71 @@ void C_ZN10QSslSocket11setProtocolEN4QSsl11SslProtocolE(void *this_, QSsl::SslPr
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:105
 // [4] QSslSocket::PeerVerifyMode peerVerifyMode()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QSslSocket::PeerVerifyMode C_ZNK10QSslSocket14peerVerifyModeEv(void *this_) {
   return (QSslSocket::PeerVerifyMode)((QSslSocket*)this_)->peerVerifyMode();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:106
 // [-2] void setPeerVerifyMode(class QSslSocket::PeerVerifyMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket17setPeerVerifyModeENS_14PeerVerifyModeE(void *this_, QSslSocket::PeerVerifyMode mode) {
   ((QSslSocket*)this_)->setPeerVerifyMode(mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:108
 // [4] int peerVerifyDepth()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QSslSocket15peerVerifyDepthEv(void *this_) {
   return (int)((QSslSocket*)this_)->peerVerifyDepth();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:109
 // [-2] void setPeerVerifyDepth(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket18setPeerVerifyDepthEi(void *this_, int depth) {
   ((QSslSocket*)this_)->setPeerVerifyDepth(depth);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qsslsocket.h:111
 // [8] QString peerVerifyName()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket14peerVerifyNameEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->peerVerifyName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qsslsocket.h:112
 // [-2] void setPeerVerifyName(const class QString &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket17setPeerVerifyNameERK7QString(void *this_, QString* hostName) {
   ((QSslSocket*)this_)->setPeerVerifyName(*hostName);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:115
@@ -288,45 +317,60 @@ void C_ZN10QSslSocket5abortEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:124
 // [-2] void setReadBufferSize(qint64)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket17setReadBufferSizeEx(void *this_, qint64 size) {
   ((QSslSocket*)this_)->setReadBufferSize(size);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:127
 // [8] qint64 encryptedBytesAvailable()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK10QSslSocket23encryptedBytesAvailableEv(void *this_) {
   return (qint64)((QSslSocket*)this_)->encryptedBytesAvailable();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:128
 // [8] qint64 encryptedBytesToWrite()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK10QSslSocket21encryptedBytesToWriteEv(void *this_) {
   return (qint64)((QSslSocket*)this_)->encryptedBytesToWrite();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:131
 // [8] QSslConfiguration sslConfiguration()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSslSocket16sslConfigurationEv(void *this_) {
   auto rv = ((QSslSocket*)this_)->sslConfiguration();
 return new QSslConfiguration(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:132
 // [-2] void setSslConfiguration(const class QSslConfiguration &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket19setSslConfigurationERK17QSslConfiguration(void *this_, QSslConfiguration* config) {
   ((QSslSocket*)this_)->setSslConfiguration(*config);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:138
@@ -372,12 +416,15 @@ return new QSslCipher(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:144
 // [4] QSsl::SslProtocol sessionProtocol()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 QSsl::SslProtocol C_ZNK10QSslSocket15sessionProtocolEv(void *this_) {
   return (QSsl::SslProtocol)((QSslSocket*)this_)->sessionProtocol();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:147
@@ -435,6 +482,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket24addDefaultCaCertificatesERK7QStringN4QSsl14EncodingFormatEN7QRegExp13PatternSyntaxE(QString* path, QSsl::EncodingFormat format, QRegExp::PatternSyntax syntax) {
   return (bool)QSslSocket::addDefaultCaCertificates(*path, format, syntax);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:174
 // [-2] void addDefaultCaCertificate(const class QSslCertificate &)
@@ -442,6 +490,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket23addDefaultCaCertificateERK15QSslCertificate(QSslCertificate* certificate) {
   QSslSocket::addDefaultCaCertificate(*certificate);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:182
 // [1] bool waitForConnected(int)
@@ -489,36 +538,53 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN10QSslSocket11supportsSslEv() {
   return (bool)QSslSocket::supportsSsl();
 }
+
 // Public static Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslsocket.h:191
 // [8] long sslLibraryVersionNumber()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 long C_ZN10QSslSocket23sslLibraryVersionNumberEv() {
   return (long)QSslSocket::sslLibraryVersionNumber();
 }
+#endif // QT_VERSION >= 0x050000
+
 // Public static Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslsocket.h:192
 // [8] QString sslLibraryVersionString()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocket23sslLibraryVersionStringEv() {
   auto rv = QSslSocket::sslLibraryVersionString();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050000
+
 // Public static Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:193
 // [8] long sslLibraryBuildVersionNumber()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 long C_ZN10QSslSocket28sslLibraryBuildVersionNumberEv() {
   return (long)QSslSocket::sslLibraryBuildVersionNumber();
 }
+#endif // QT_VERSION >= 0x050400
+
 // Public static Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:194
 // [8] QString sslLibraryBuildVersionString()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslSocket28sslLibraryBuildVersionStringEv() {
   auto rv = QSslSocket::sslLibraryBuildVersionString();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050400
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:199
 // [-2] void startClientEncryption()
@@ -552,12 +618,15 @@ void C_ZN10QSslSocket9encryptedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:205
 // [-2] void peerVerifyError(const class QSslError &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket15peerVerifyErrorERK9QSslError(void *this_, QSslError* error) {
   ((QSslSocket*)this_)->peerVerifyError(*error);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:207
@@ -568,19 +637,25 @@ void C_ZN10QSslSocket11modeChangedENS_7SslModeE(void *this_, QSslSocket::SslMode
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qsslsocket.h:208
 // [-2] void encryptedBytesWritten(qint64)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket21encryptedBytesWrittenEx(void *this_, qint64 totalBytes) {
   ((QSslSocket*)this_)->encryptedBytesWritten(totalBytes);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtNetwork/qsslsocket.h:209
 // [-2] void preSharedKeyAuthenticationRequired(class QSslPreSharedKeyAuthenticator *)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAuthenticator(void *this_, QSslPreSharedKeyAuthenticator * authenticator) {
   ((QSslSocket*)this_)->preSharedKeyAuthenticationRequired(authenticator);
 }
+#endif // QT_VERSION >= 0x050500
 
 //  main block end

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtGui/qrawfont.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QRawFontC2Ev() {
   return  new QRawFont();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:75
 // [-2] void QRawFont(const class QString &, qreal, class QFont::HintingPreference)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE(QString* fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
   return  new QRawFont(*fileName, pixelSize, hintingPreference);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:78
 // [-2] void QRawFont(const class QByteArray &, qreal, class QFont::HintingPreference)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(QByteArray* fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
   return  new QRawFont(*fontData, pixelSize, hintingPreference);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:83
 // [8] QRawFont & operator=(class QRawFont &&)
@@ -71,12 +75,15 @@ void C_ZN8QRawFontD2Ev(void *this_) {
   delete (QRawFont*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qrawfont.h:88
 // [-2] void swap(class QRawFont &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN8QRawFont4swapERS_(void *this_, QRawFont* other) {
   ((QRawFont*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:90
@@ -179,13 +186,16 @@ return new QPainterPath(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qrawfont.h:113
 // [32] QRectF boundingRect(quint32)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QRawFont12boundingRectEj(void *this_, quint32 glyphIndex) {
   auto rv = ((QRawFont*)this_)->boundingRect(glyphIndex);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:115
@@ -220,12 +230,15 @@ qreal C_ZNK8QRawFont6ascentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtGui/qrawfont.h:121
 // [8] qreal capHeight()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK8QRawFont9capHeightEv(void *this_) {
   return (qreal)((QRawFont*)this_)->capHeight();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:122
@@ -340,4 +353,5 @@ void* C_ZN8QRawFont8fromFontERK5QFontN13QFontDatabase13WritingSystemE(QFont* fon
   auto rv = QRawFont::fromFont(*font, writingSystem);
 return new QRawFont(rv);
 }
+
 //  main block end

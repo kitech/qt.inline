@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
   return  new QGraphicsLinearLayout(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
 // [-2] void QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent) {
   return  new QGraphicsLinearLayout(orientation, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:58
 // [-2] void ~QGraphicsLinearLayout()

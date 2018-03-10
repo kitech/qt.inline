@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGSimpleRectNodeC2ERK6QRectFRK6QColor(QRectF* rect, QColor* color) {
   return  new QSGSimpleRectNode(*rect, *color);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:52
 // [-2] void QSGSimpleRectNode()
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGSimpleRectNodeC2Ev() {
   return  new QSGSimpleRectNode();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:54
 // [-2] void setRect(const class QRectF &)

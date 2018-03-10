@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050300
 // /usr/include/qt/QtGui/qpagelayout.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QPageLayoutC2Ev() {
   return  new QPageLayout();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:81
 // [-2] void QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QPageLayoutC2ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(QPageSize* pageSize, QPageLayout::Orientation orientation, QMarginsF* margins, QPageLayout::Unit units, QMarginsF* minMargins) {
   return  new QPageLayout(*pageSize, orientation, *margins, units, *minMargins);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:86
 // [8] QPageLayout & operator=(class QPageLayout &&)

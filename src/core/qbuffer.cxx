@@ -120,6 +120,7 @@ void* C_ZN7QBufferC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQBuffer*)(0);
   return  new MyQBuffer(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:61
 // [-2] void QBuffer(class QByteArray *, class QObject *)
@@ -128,6 +129,7 @@ void* C_ZN7QBufferC2EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent) 
   auto _nilp = (MyQBuffer*)(0);
   return  new MyQBuffer(buf, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:66
 // [-2] void ~QBuffer()

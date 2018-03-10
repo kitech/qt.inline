@@ -336,6 +336,7 @@ void* C_ZN9QComboBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQComboBox*)(0);
   return  new MyQComboBox(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcombobox.h:86
 // [-2] void ~QComboBox()
@@ -577,20 +578,26 @@ void* C_ZNK9QComboBox9validatorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qcombobox.h:154
 // [-2] void setCompleter(class QCompleter *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox12setCompleterEP10QCompleter(void *this_, QCompleter * c) {
   ((QComboBox*)this_)->setCompleter(c);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qcombobox.h:155
 // [8] QCompleter * completer()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox9completerEv(void *this_) {
   return (void*)((QComboBox*)this_)->completer();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcombobox.h:158
@@ -759,12 +766,15 @@ void C_ZN9QComboBox11insertItemsEiRK11QStringList(void *this_, int index, QStrin
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qcombobox.h:188
 // [-2] void insertSeparator(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15insertSeparatorEi(void *this_, int index) {
   ((QComboBox*)this_)->insertSeparator(index);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcombobox.h:190
@@ -955,27 +965,36 @@ void C_ZN9QComboBox11highlightedERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qcombobox.h:222
 // [-2] void currentIndexChanged(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox19currentIndexChangedEi(void *this_, int index) {
   ((QComboBox*)this_)->currentIndexChanged(index);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qcombobox.h:223
 // [-2] void currentIndexChanged(const class QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox19currentIndexChangedERK7QString(void *this_, QString* arg0) {
   ((QComboBox*)this_)->currentIndexChanged(*arg0);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qcombobox.h:224
 // [-2] void currentTextChanged(const class QString &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox18currentTextChangedERK7QString(void *this_, QString* arg0) {
   ((QComboBox*)this_)->currentTextChanged(*arg0);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

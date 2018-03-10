@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtGui/qvector4d.h
 #ifndef protected
 #define protected public
@@ -43,6 +44,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2Ev() {
   return  new QVector4D();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:60
 // [-2] void QVector4D(Qt::Initialization)
@@ -50,6 +52,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2EN2Qt14InitializationE(Qt::Initialization arg0) {
   return  new QVector4D(arg0);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:61
 // [-2] void QVector4D(float, float, float, float)
@@ -57,6 +60,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2Effff(float xpos, float ypos, float zpos, float wpos) {
   return  new QVector4D(xpos, ypos, zpos, wpos);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:62
 // [-2] void QVector4D(const class QPoint &)
@@ -64,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK6QPoint(QPoint* point) {
   return  new QVector4D(*point);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:63
 // [-2] void QVector4D(const class QPointF &)
@@ -71,6 +76,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK7QPointF(QPointF* point) {
   return  new QVector4D(*point);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:65
 // [-2] void QVector4D(const class QVector2D &)
@@ -78,6 +84,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector2D(QVector2D* vector) {
   return  new QVector4D(*vector);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:66
 // [-2] void QVector4D(const class QVector2D &, float, float)
@@ -85,6 +92,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector2Dff(QVector2D* vector, float zpos, float wpos) {
   return  new QVector4D(*vector, zpos, wpos);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:69
 // [-2] void QVector4D(const class QVector3D &)
@@ -92,6 +100,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector3D(QVector3D* vector) {
   return  new QVector4D(*vector);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:70
 // [-2] void QVector4D(const class QVector3D &, float)
@@ -99,6 +108,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector3Df(QVector3D* vector, float wpos) {
   return  new QVector4D(*vector, wpos);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:73
 // [1] bool isNull()
@@ -282,6 +292,7 @@ extern "C" Q_DECL_EXPORT
 float C_ZN9QVector4D10dotProductERKS_S1_(QVector4D* v1, QVector4D* v2) {
   return (float)QVector4D::dotProduct(*v1, *v2);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:117
 // [8] QVector2D toVector2D()

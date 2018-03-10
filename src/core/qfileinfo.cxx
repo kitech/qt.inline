@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2Ev() {
   return  new QFileInfo();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:63
 // [-2] void QFileInfo(const class QString &)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK7QString(QString* file) {
   return  new QFileInfo(*file);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:64
 // [-2] void QFileInfo(const class QFile &)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK5QFile(QFile* file) {
   return  new QFileInfo(*file);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:65
 // [-2] void QFileInfo(const class QDir &, const class QString &)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK4QDirRK7QString(QDir* dir, QString* file) {
   return  new QFileInfo(*dir, *file);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:67
 // [-2] void ~QFileInfo()
@@ -80,12 +84,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qfileinfo.h:74
 // [-2] void swap(class QFileInfo &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo* other) {
   ((QFileInfo*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:77
@@ -136,12 +143,16 @@ bool C_ZNK9QFileInfo6existsEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qfileinfo.h:84
 // [1] bool exists(const class QString &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QFileInfo6existsERK7QString(QString* file) {
   return (bool)QFileInfo::exists(*file);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:85
 // [-2] void refresh()
@@ -214,13 +225,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qfileinfo.h:94
 // [8] QString bundleName()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo10bundleNameEv(void *this_) {
   auto rv = ((QFileInfo*)this_)->bundleName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:95
@@ -309,12 +323,15 @@ bool C_ZNK9QFileInfo8isHiddenEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qfileinfo.h:107
 // [1] bool isNativePath()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QFileInfo12isNativePathEv(void *this_) {
   return (bool)((QFileInfo*)this_)->isNativePath();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:109
@@ -373,12 +390,15 @@ bool C_ZNK9QFileInfo6isRootEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qfileinfo.h:117
 // [1] bool isBundle()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QFileInfo8isBundleEv(void *this_) {
   return (bool)((QFileInfo*)this_)->isBundle();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:119
@@ -390,13 +410,16 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qfileinfo.h:120
 // [8] QString symLinkTarget()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo13symLinkTargetEv(void *this_) {
   auto rv = ((QFileInfo*)this_)->symLinkTarget();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:122
@@ -466,22 +489,28 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qfileinfo.h:137
 // [8] QDateTime birthTime()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo9birthTimeEv(void *this_) {
   auto rv = ((QFileInfo*)this_)->birthTime();
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qfileinfo.h:138
 // [8] QDateTime metadataChangeTime()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo18metadataChangeTimeEv(void *this_) {
   auto rv = ((QFileInfo*)this_)->metadataChangeTime();
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:139
@@ -502,13 +531,16 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qfileinfo.h:141
 // [8] QDateTime fileTime(class QFile::FileTime)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo8fileTimeEN11QFileDevice8FileTimeE(void *this_, QFile::FileTime time) {
   auto rv = ((QFileInfo*)this_)->fileTime(time);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:143

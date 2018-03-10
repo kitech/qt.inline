@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
 #define protected public
@@ -21,12 +22,16 @@ MyQRegularExpressionMatchIterator() : QRegularExpressionMatchIterator() {}
 };
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qregularexpression.h:249
 // [-2] void QRegularExpressionMatchIterator()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN31QRegularExpressionMatchIteratorC2Ev() {
   return  new QRegularExpressionMatchIterator();
 }
+#endif // QT_VERSION >= 0x050100
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:250
 // [-2] void ~QRegularExpressionMatchIterator()

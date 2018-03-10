@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextFrameFormatC2Ev() {
   return  new QTextFrameFormat();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:772
 // [1] bool isValid()
@@ -70,21 +71,27 @@ qreal C_ZNK16QTextFrameFormat6borderEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:805
 // [-2] void setBorderBrush(const class QBrush &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat14setBorderBrushERK6QBrush(void *this_, QBrush* brush) {
   ((QTextFrameFormat*)this_)->setBorderBrush(*brush);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:807
 // [8] QBrush borderBrush()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QTextFrameFormat11borderBrushEv(void *this_) {
   auto rv = ((QTextFrameFormat*)this_)->borderBrush();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:810
@@ -95,12 +102,15 @@ void C_ZN16QTextFrameFormat14setBorderStyleENS_11BorderStyleE(void *this_, QText
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:812
 // [4] QTextFrameFormat::BorderStyle borderStyle()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 QTextFrameFormat::BorderStyle C_ZNK16QTextFrameFormat11borderStyleEv(void *this_) {
   return (QTextFrameFormat::BorderStyle)((QTextFrameFormat*)this_)->borderStyle();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:815
@@ -119,68 +129,92 @@ qreal C_ZNK16QTextFrameFormat6marginEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:819
 // [-2] void setTopMargin(qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat12setTopMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setTopMargin(margin);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:820
 // [8] qreal topMargin()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextFrameFormat9topMarginEv(void *this_) {
   return (qreal)((QTextFrameFormat*)this_)->topMargin();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:822
 // [-2] void setBottomMargin(qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat15setBottomMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setBottomMargin(margin);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:823
 // [8] qreal bottomMargin()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextFrameFormat12bottomMarginEv(void *this_) {
   return (qreal)((QTextFrameFormat*)this_)->bottomMargin();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:825
 // [-2] void setLeftMargin(qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat13setLeftMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setLeftMargin(margin);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:826
 // [8] qreal leftMargin()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextFrameFormat10leftMarginEv(void *this_) {
   return (qreal)((QTextFrameFormat*)this_)->leftMargin();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:828
 // [-2] void setRightMargin(qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat14setRightMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setRightMargin(margin);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:829
 // [8] qreal rightMargin()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextFrameFormat11rightMarginEv(void *this_) {
   return (qreal)((QTextFrameFormat*)this_)->rightMargin();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:831
@@ -257,13 +291,16 @@ void C_ZN16QTextFrameFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBrea
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextformat.h:848
 // [4] QTextFormat::PageBreakFlags pageBreakPolicy()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 QTextFormat::PageBreakFlags* C_ZNK16QTextFrameFormat15pageBreakPolicyEv(void *this_) {
   auto rv = ((QTextFrameFormat*)this_)->pageBreakPolicy();
 return new QTextFormat::PageBreakFlags(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 
 extern "C" Q_DECL_EXPORT

@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTranslatorC2EP7QObject(QObject * parent) {
   return  new QTranslator(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:59
 // [-2] void ~QTranslator()
@@ -68,12 +69,15 @@ bool C_ZN11QTranslator4loadERK7QStringS2_S2_S2_(void *this_, QString* filename, 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qtranslator.h:70
 // [1] bool load(const class QLocale &, const class QString &, const class QString &, const class QString &, const class QString &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_(void *this_, QLocale* locale, QString* filename, QString* prefix, QString* directory, QString* suffix) {
   return (bool)((QTranslator*)this_)->load(*locale, *filename, *prefix, *directory, *suffix);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:75

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QSGSimpleTextureNodeC2Ev() {
   return  new QSGSimpleTextureNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:55
 // [-2] void ~QSGSimpleTextureNode()

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordC2Ev() {
   return  new QDnsHostAddressRecord();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:90
 // [8] QDnsHostAddressRecord & operator=(class QDnsHostAddressRecord &&)

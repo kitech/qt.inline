@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040700
 // /usr/include/qt/QtCore/qelapsedtimer.h
 #ifndef protected
 #define protected public
@@ -21,12 +22,16 @@ MyQElapsedTimer() : QElapsedTimer() {}
 };
 
 // Public inline Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qelapsedtimer.h:59
 // [-2] void QElapsedTimer()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QElapsedTimerC2Ev() {
   return  new QElapsedTimer();
 }
+#endif // QT_VERSION >= 0x050400
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:65
 // [4] QElapsedTimer::ClockType clockType()
@@ -34,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 QElapsedTimer::ClockType C_ZN13QElapsedTimer9clockTypeEv() {
   return (QElapsedTimer::ClockType)QElapsedTimer::clockType();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:66
 // [1] bool isMonotonic()
@@ -41,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN13QElapsedTimer11isMonotonicEv() {
   return (bool)QElapsedTimer::isMonotonic();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:68
 // [-2] void start()
@@ -74,12 +81,15 @@ bool C_ZNK13QElapsedTimer7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qelapsedtimer.h:73
 // [8] qint64 nsecsElapsed()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK13QElapsedTimer12nsecsElapsedEv(void *this_) {
   return (qint64)((QElapsedTimer*)this_)->nsecsElapsed();
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:74

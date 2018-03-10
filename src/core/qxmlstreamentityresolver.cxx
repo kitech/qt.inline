@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public

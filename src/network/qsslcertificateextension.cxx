@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QSslCertificateExtensionC2Ev() {
   return  new QSslCertificateExtension();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h:62
 // [8] QSslCertificateExtension & operator=(class QSslCertificateExtension &&)

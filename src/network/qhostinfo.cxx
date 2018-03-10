@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfoC2Ei(int lookupId) {
   return  new QHostInfo(lookupId);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:65
 // [8] QHostInfo & operator=(const class QHostInfo &)
@@ -53,12 +54,15 @@ void C_ZN9QHostInfoD2Ev(void *this_) {
   delete (QHostInfo*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtNetwork/qhostinfo.h:69
 // [-2] void swap(class QHostInfo &)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo4swapERS_(void *this_, QHostInfo* other) {
   ((QHostInfo*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:71
@@ -133,6 +137,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN9QHostInfo10lookupHostERK7QStringP7QObjectPKc(QString* name, QObject * receiver, const char * member) {
   return (int)QHostInfo::lookupHost(*name, receiver, member);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:87
 // [-2] void abortHostLookup(int)
@@ -140,6 +145,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo15abortHostLookupEi(int lookupId) {
   QHostInfo::abortHostLookup(lookupId);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:89
 // [8] QHostInfo fromName(const class QString &)
@@ -148,6 +154,7 @@ void* C_ZN9QHostInfo8fromNameERK7QString(QString* name) {
   auto rv = QHostInfo::fromName(*name);
 return new QHostInfo(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:90
 // [8] QString localHostName()
@@ -156,6 +163,7 @@ void* C_ZN9QHostInfo13localHostNameEv() {
   auto rv = QHostInfo::localHostName();
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:91
 // [8] QString localDomainName()
@@ -164,4 +172,5 @@ void* C_ZN9QHostInfo15localDomainNameEv() {
   auto rv = QHostInfo::localDomainName();
 return new QString(rv);
 }
+
 //  main block end

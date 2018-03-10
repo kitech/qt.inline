@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h
 #ifndef protected
 #define protected public
@@ -119,6 +120,7 @@ void* C_ZN16QKeySequenceEditC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQKeySequenceEdit*)(0);
   return  new MyQKeySequenceEdit(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:59
 // [-2] void QKeySequenceEdit(const class QKeySequence &, class QWidget *)
@@ -127,6 +129,7 @@ void* C_ZN16QKeySequenceEditC2ERK12QKeySequenceP7QWidget(QKeySequence* keySequen
   auto _nilp = (MyQKeySequenceEdit*)(0);
   return  new MyQKeySequenceEdit(*keySequence, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:60
 // [-2] void ~QKeySequenceEdit()

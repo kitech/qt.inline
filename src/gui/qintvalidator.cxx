@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QIntValidatorC2EP7QObject(QObject * parent) {
   return  new QIntValidator(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:97
 // [-2] void QIntValidator(int, int, class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QIntValidatorC2EiiP7QObject(int bottom, int top, QObject * parent) {
   return  new QIntValidator(bottom, top, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:98
 // [-2] void ~QIntValidator()

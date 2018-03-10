@@ -278,6 +278,7 @@ void* C_ZN11QToolButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQToolButton*)(0);
   return  new MyQToolButton(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:75
 // [-2] void ~QToolButton()

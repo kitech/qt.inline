@@ -30,6 +30,7 @@ void* C_ZN19QStyleOptionSpinBoxC2Ev() {
   return  new QStyleOptionSpinBox();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN19QStyleOptionSpinBoxD2Ev(void *this_) {
   delete (QStyleOptionSpinBox*)(this_);

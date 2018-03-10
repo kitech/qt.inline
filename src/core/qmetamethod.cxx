@@ -27,23 +27,30 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QMetaMethodC2Ev() {
   return  new QMetaMethod();
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qmetaobject.h:59
 // [8] QByteArray methodSignature()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMetaMethod15methodSignatureEv(void *this_) {
   auto rv = ((QMetaMethod*)this_)->methodSignature();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qmetaobject.h:60
 // [8] QByteArray name()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMetaMethod4nameEv(void *this_) {
   auto rv = ((QMetaMethod*)this_)->name();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:61
@@ -54,28 +61,37 @@ void* C_ZNK11QMetaMethod8typeNameEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qmetaobject.h:62
 // [4] int returnType()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QMetaMethod10returnTypeEv(void *this_) {
   return (int)((QMetaMethod*)this_)->returnType();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qmetaobject.h:63
 // [4] int parameterCount()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QMetaMethod14parameterCountEv(void *this_) {
   return (int)((QMetaMethod*)this_)->parameterCount();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qmetaobject.h:64
 // [4] int parameterType(int)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QMetaMethod13parameterTypeEi(void *this_, int index) {
   return (int)((QMetaMethod*)this_)->parameterType(index);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:65
@@ -118,20 +134,26 @@ int C_ZNK11QMetaMethod10attributesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qmetaobject.h:75
 // [4] int methodIndex()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QMetaMethod11methodIndexEv(void *this_) {
   return (int)((QMetaMethod*)this_)->methodIndex();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qmetaobject.h:76
 // [4] int revision()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QMetaMethod8revisionEv(void *this_) {
   return (int)((QMetaMethod*)this_)->revision();
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:78
@@ -174,28 +196,37 @@ bool C_ZNK11QMetaMethod6invokeEP7QObject16QGenericArgumentS2_S2_S2_S2_S2_S2_S2_S
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qmetaobject.h:141
 // [1] bool invokeOnGadget(void *, class QGenericReturnArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMetaMethod14invokeOnGadgetEPv22QGenericReturnArgument16QGenericArgumentS2_S2_S2_S2_S2_S2_S2_S2_S2_(void *this_, void * gadget, QGenericReturnArgument* returnValue, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
   return (bool)((QMetaMethod*)this_)->invokeOnGadget(gadget, *returnValue, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public inline Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qmetaobject.h:153
 // [1] bool invokeOnGadget(void *, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMetaMethod14invokeOnGadgetEPv16QGenericArgumentS1_S1_S1_S1_S1_S1_S1_S1_S1_(void *this_, void * gadget, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
   return (bool)((QMetaMethod*)this_)->invokeOnGadget(gadget, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qmetaobject.h:169
 // [1] bool isValid()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMetaMethod7isValidEv(void *this_) {
   return (bool)((QMetaMethod*)this_)->isValid();
 }
+#endif // QT_VERSION >= 0x050000
 
 
 extern "C" Q_DECL_EXPORT

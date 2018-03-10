@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -93,6 +94,7 @@ void* C_ZN23QGraphicsSimpleTextItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
   return  new MyQGraphicsSimpleTextItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:969
 // [-2] void QGraphicsSimpleTextItem(const class QString &, class QGraphicsItem *)
@@ -101,6 +103,7 @@ void* C_ZN23QGraphicsSimpleTextItemC2ERK7QStringP13QGraphicsItem(QString* text, 
   auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
   return  new MyQGraphicsSimpleTextItem(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:970
 // [-2] void ~QGraphicsSimpleTextItem()

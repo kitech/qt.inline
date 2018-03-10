@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
   return  new QPluginLoader(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:63
 // [-2] void QPluginLoader(const class QString &, class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QPluginLoaderC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
   return  new QPluginLoader(*fileName, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:64
 // [-2] void ~QPluginLoader()
@@ -76,6 +78,7 @@ void C_ZN13QPluginLoader15staticInstancesEv() {
   auto rv = QPluginLoader::staticInstances();
 /*return rv;*/
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:72
 // [1] bool load()
@@ -118,13 +121,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qpluginloader.h:79
 // [8] QString errorString()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QPluginLoader11errorStringEv(void *this_) {
   auto rv = ((QPluginLoader*)this_)->errorString();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:81

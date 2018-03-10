@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qcommandlineoption.h
 #ifndef protected
 #define protected public
@@ -33,6 +34,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK7QString(QString* name) {
   return  new QCommandLineOption(*name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:62
 // [-2] void QCommandLineOption(const class QStringList &)
@@ -40,6 +42,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK11QStringList(QStringList* names) {
   return  new QCommandLineOption(*names);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:63
 // [-2] void QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
@@ -47,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(QString* name, QString* description, QString* valueName, QString* defaultValue) {
   return  new QCommandLineOption(*name, *description, *valueName, *defaultValue);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:66
 // [-2] void QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
@@ -54,6 +58,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_(QStringList* names, QString* description, QString* valueName, QString* defaultValue) {
   return  new QCommandLineOption(*names, *description, *valueName, *defaultValue);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:71
 // [-2] void ~QCommandLineOption()
@@ -156,13 +161,16 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qcommandlineoption.h:93
 // [4] QCommandLineOption::Flags flags()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 QCommandLineOption::Flags* C_ZNK18QCommandLineOption5flagsEv(void *this_) {
   auto rv = ((QCommandLineOption*)this_)->flags();
 return new QCommandLineOption::Flags(rv);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:94

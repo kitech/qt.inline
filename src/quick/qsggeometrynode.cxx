@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QSGGeometryNodeC2Ev() {
   return  new QSGGeometryNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:232
 // [-2] void ~QSGGeometryNode()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtNetwork/qsslkey.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyC2Ev() {
   return  new QSslKey();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:64
 // [-2] void QSslKey(const class QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const class QByteArray &)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyC2ERK10QByteArrayN4QSsl12KeyAlgorithmENS3_14EncodingFormatENS3_7KeyTypeES2_(QByteArray* encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, QByteArray* passPhrase) {
   return  new QSslKey(*encoded, algorithm, format, type_, *passPhrase);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:68
 // [-2] void QSslKey(class QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const class QByteArray &)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyC2EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7KeyTypeERK10QByteArray(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, QByteArray* passPhrase) {
   return  new QSslKey(device, algorithm, format, type_, *passPhrase);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:75
 // [8] QSslKey & operator=(class QSslKey &&)
@@ -71,12 +75,15 @@ void C_ZN7QSslKeyD2Ev(void *this_) {
   delete (QSslKey*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslkey.h:80
 // [-2] void swap(class QSslKey &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSslKey4swapERS_(void *this_, QSslKey* other) {
   ((QSslKey*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:82

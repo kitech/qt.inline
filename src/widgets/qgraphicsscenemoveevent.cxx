@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QGraphicsSceneMoveEventC2Ev() {
   return  new QGraphicsSceneMoveEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:314
 // [-2] void ~QGraphicsSceneMoveEvent()

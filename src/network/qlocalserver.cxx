@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtNetwork/qlocalserver.h
 #ifndef protected
 #define protected public
@@ -64,6 +65,7 @@ void* C_ZN12QLocalServerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQLocalServer*)(0);
   return  new MyQLocalServer(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:75
 // [-2] void ~QLocalServer()
@@ -113,12 +115,15 @@ bool C_ZN12QLocalServer6listenERK7QString(void *this_, QString* name) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qlocalserver.h:82
 // [1] bool listen(qintptr)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer6listenEx(void *this_, qintptr socketDescriptor) {
   return (bool)((QLocalServer*)this_)->listen(socketDescriptor);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:83
@@ -155,12 +160,16 @@ return new QString(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qlocalserver.h:87
 // [1] bool removeServer(const class QString &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer12removeServerERK7QString(QString* name) {
   return (bool)QLocalServer::removeServer(*name);
 }
+#endif // QT_VERSION >= 0x040500
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:88
 // [4] QAbstractSocket::SocketError serverError()
@@ -194,20 +203,26 @@ void C_ZN12QLocalServer16setSocketOptionsE6QFlagsINS_12SocketOptionEE(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qlocalserver.h:93
 // [4] QLocalServer::SocketOptions socketOptions()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 QLocalServer::SocketOptions* C_ZNK12QLocalServer13socketOptionsEv(void *this_) {
   auto rv = ((QLocalServer*)this_)->socketOptions();
 return new QLocalServer::SocketOptions(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtNetwork/qlocalserver.h:95
 // [8] qintptr socketDescriptor()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 qintptr C_ZNK12QLocalServer16socketDescriptorEv(void *this_) {
   return (qintptr)((QLocalServer*)this_)->socketDescriptor();
 }
+#endif // QT_VERSION >= 0x050a00
 
 //  main block end

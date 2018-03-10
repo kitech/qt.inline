@@ -59,6 +59,7 @@ void* C_ZN9QShortcutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQShortcut*)(0);
   return  new MyQShortcut(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qshortcut.h:64
 // [-2] void QShortcut(const class QKeySequence &, class QWidget *, const char *, const char *, Qt::ShortcutContext)
@@ -67,6 +68,7 @@ void* C_ZN9QShortcutC2ERK12QKeySequenceP7QWidgetPKcS6_N2Qt15ShortcutContextE(QKe
   auto _nilp = (MyQShortcut*)(0);
   return  new MyQShortcut(*key, parent, member, ambiguousMember, context);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qshortcut.h:67
 // [-2] void ~QShortcut()

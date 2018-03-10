@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QGestureRecognizerC2Ev() {
   return 0; // new QGestureRecognizer();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:78
 // [-2] void ~QGestureRecognizer()
@@ -66,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 Qt::GestureType C_ZN18QGestureRecognizer18registerRecognizerEPS_(QGestureRecognizer * recognizer) {
   return (Qt::GestureType)QGestureRecognizer::registerRecognizer(recognizer);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:86
 // [-2] void unregisterRecognizer(Qt::GestureType)
@@ -73,4 +76,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN18QGestureRecognizer20unregisterRecognizerEN2Qt11GestureTypeE(Qt::GestureType type_) {
   QGestureRecognizer::unregisterRecognizer(type_);
 }
+
 //  main block end

@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextFrameC2EP13QTextDocument(QTextDocument * doc) {
   return  new QTextFrame(doc);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:124
 // [-2] void ~QTextFrame()

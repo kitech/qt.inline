@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgesture.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QTapAndHoldGestureC2EP7QObject(QObject * parent) {
   return  new QTapAndHoldGesture(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:261
 // [-2] void ~QTapAndHoldGesture()
@@ -66,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN18QTapAndHoldGesture10setTimeoutEi(int msecs) {
   QTapAndHoldGesture::setTimeout(msecs);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:267
 // [4] int timeout()
@@ -73,4 +76,5 @@ extern "C" Q_DECL_EXPORT
 int C_ZN18QTapAndHoldGesture7timeoutEv() {
   return (int)QTapAndHoldGesture::timeout();
 }
+
 //  main block end

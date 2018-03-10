@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050600
 // /usr/include/qt/QtGui/qrgba64.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba64C2Ev() {
   return  new QRgba64();
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:72
 // [8] QRgba64 fromRgba64(quint64)
@@ -35,6 +37,7 @@ void* C_ZN7QRgba6410fromRgba64Ey(quint64 c) {
   auto rv = QRgba64::fromRgba64(c);
 return new QRgba64(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:77
 // [8] QRgba64 fromRgba64(quint16, quint16, quint16, quint16)
@@ -43,6 +46,7 @@ void* C_ZN7QRgba6410fromRgba64Etttt(quint16 red, quint16 green, quint16 blue, qu
   auto rv = QRgba64::fromRgba64(red, green, blue, alpha);
 return new QRgba64(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:84
 // [8] QRgba64 fromRgba(quint8, quint8, quint8, quint8)
@@ -51,6 +55,7 @@ void* C_ZN7QRgba648fromRgbaEhhhh(quint8 red, quint8 green, quint8 blue, quint8 a
   auto rv = QRgba64::fromRgba(red, green, blue, alpha);
 return new QRgba64(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:92
 // [8] QRgba64 fromArgb32(uint)
@@ -59,6 +64,7 @@ void* C_ZN7QRgba6410fromArgb32Ej(uint rgb) {
   auto rv = QRgba64::fromArgb32(rgb);
 return new QRgba64(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:97
 // [1] bool isOpaque()

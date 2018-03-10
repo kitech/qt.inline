@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArrayC2Ev() {
   return  new QByteArray();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:171
 // [-2] void QByteArray(const char *, int)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArrayC2EPKci(const char * arg0, int size) {
   return  new QByteArray(arg0, size);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:172
 // [-2] void QByteArray(int, char)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArrayC2Eic(int size, char c) {
   return  new QByteArray(size, c);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:173
 // [-2] void QByteArray(int, Qt::Initialization)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArrayC2EiN2Qt14InitializationE(int size, Qt::Initialization arg1) {
   return  new QByteArray(size, arg1);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:175
 // [-2] void ~QByteArray()
@@ -89,12 +93,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qbytearray.h:185
 // [-2] void swap(class QByteArray &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN10QByteArray4swapERS_(void *this_, QByteArray* other) {
   ((QByteArray*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:188
@@ -252,38 +259,50 @@ void C_ZN10QByteArrayixEj(void *this_, uint i) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qbytearray.h:215
 // [1] char front()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 char C_ZNK10QByteArray5frontEv(void *this_) {
   return (char)((QByteArray*)this_)->front();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qbytearray.h:216
 // [16] QByteRef front()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QByteArray5frontEv(void *this_) {
   auto rv = ((QByteArray*)this_)->front();
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qbytearray.h:217
 // [1] char back()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 char C_ZNK10QByteArray4backEv(void *this_) {
   return (char)((QByteArray*)this_)->back();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qbytearray.h:218
 // [16] QByteRef back()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QByteArray4backEv(void *this_) {
   auto rv = ((QByteArray*)this_)->back();
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:220
@@ -409,13 +428,16 @@ return new QByteArray(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qbytearray.h:237
 // [8] QByteArray chopped(int)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QByteArray7choppedEi(void *this_, int len_) {
   auto rv = ((QByteArray*)this_)->chopped(len_);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:240
@@ -590,13 +612,16 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qbytearray.h:305
 // [8] QByteArray & replace(int, int, const char *, int)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArray7replaceEiiPKci(void *this_, int index, int len_, const char * s, int alen) {
   auto& rv = ((QByteArray*)this_)->replace(index, len_, s, alen);
 return &rv;
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:306
@@ -707,13 +732,16 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qbytearray.h:321
 // [8] QByteArray repeated(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QByteArray8repeatedEi(void *this_, int times) {
   auto rv = ((QByteArray*)this_)->repeated(times);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:326
@@ -848,20 +876,26 @@ uint C_ZNK10QByteArray6toUIntEPbi(void *this_, bool * ok, int base) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qbytearray.h:347
 // [8] long toLong(_Bool *, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 long C_ZNK10QByteArray6toLongEPbi(void *this_, bool * ok, int base) {
   return (long)((QByteArray*)this_)->toLong(ok, base);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qbytearray.h:348
 // [8] ulong toULong(_Bool *, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 ulong C_ZNK10QByteArray7toULongEPbi(void *this_, bool * ok, int base) {
   return (ulong)((QByteArray*)this_)->toULong(ok, base);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:349
@@ -923,22 +957,28 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtCore/qbytearray.h:356
 // [8] QByteArray toHex(char)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QByteArray5toHexEc(void *this_, char separator) {
   auto rv = ((QByteArray*)this_)->toHex(separator);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qbytearray.h:357
 // [8] QByteArray toPercentEncoding(const class QByteArray &, const class QByteArray &, char)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QByteArray17toPercentEncodingERKS_S1_c(void *this_, QByteArray* exclude, QByteArray* include, char percent) {
   auto rv = ((QByteArray*)this_)->toPercentEncoding(*exclude, *include, percent);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:361
@@ -1013,13 +1053,16 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qbytearray.h:369
 // [8] QByteArray & setRawData(const char *, uint)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArray10setRawDataEPKcj(void *this_, const char * a, uint n) {
   auto& rv = ((QByteArray*)this_)->setRawData(a, n);
 return &rv;
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:371
@@ -1029,6 +1072,7 @@ void* C_ZN10QByteArray6numberEii(int arg0, int base) {
   auto rv = QByteArray::number(arg0, base);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:372
 // [8] QByteArray number(uint, int)
@@ -1037,6 +1081,7 @@ void* C_ZN10QByteArray6numberEji(uint arg0, int base) {
   auto rv = QByteArray::number(arg0, base);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:373
 // [8] QByteArray number(qlonglong, int)
@@ -1045,6 +1090,7 @@ void* C_ZN10QByteArray6numberExi(qlonglong arg0, int base) {
   auto rv = QByteArray::number(arg0, base);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:374
 // [8] QByteArray number(qulonglong, int)
@@ -1053,6 +1099,7 @@ void* C_ZN10QByteArray6numberEyi(qulonglong arg0, int base) {
   auto rv = QByteArray::number(arg0, base);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:375
 // [8] QByteArray number(double, char, int)
@@ -1061,6 +1108,7 @@ void* C_ZN10QByteArray6numberEdci(double arg0, char f, int prec) {
   auto rv = QByteArray::number(arg0, f, prec);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:376
 // [8] QByteArray fromRawData(const char *, int)
@@ -1069,6 +1117,7 @@ void* C_ZN10QByteArray11fromRawDataEPKci(const char * arg0, int size) {
   auto rv = QByteArray::fromRawData(arg0, size);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:377
 // [8] QByteArray fromBase64(const class QByteArray &, QByteArray::Base64Options)
@@ -1077,6 +1126,7 @@ void* C_ZN10QByteArray10fromBase64ERKS_6QFlagsINS_12Base64OptionEE(QByteArray* b
   auto rv = QByteArray::fromBase64(*base64, options);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:378
 // [8] QByteArray fromBase64(const class QByteArray &)
@@ -1085,6 +1135,7 @@ void* C_ZN10QByteArray10fromBase64ERKS_(QByteArray* base64) {
   auto rv = QByteArray::fromBase64(*base64);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:379
 // [8] QByteArray fromHex(const class QByteArray &)
@@ -1093,14 +1144,19 @@ void* C_ZN10QByteArray7fromHexERKS_(QByteArray* hexEncoded) {
   auto rv = QByteArray::fromHex(*hexEncoded);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qbytearray.h:380
 // [8] QByteArray fromPercentEncoding(const class QByteArray &, char)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QByteArray19fromPercentEncodingERKS_c(QByteArray* pctEncoded, char percent) {
   auto rv = QByteArray::fromPercentEncoding(*pctEncoded, percent);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040400
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:399
 // [8] QByteArray::iterator begin()
@@ -1120,13 +1176,16 @@ void C_ZNK10QByteArray5beginEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qbytearray.h:401
 // [8] QByteArray::const_iterator cbegin()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZNK10QByteArray6cbeginEv(void *this_) {
   auto rv = ((QByteArray*)this_)->cbegin();
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:402
@@ -1156,13 +1215,16 @@ void C_ZNK10QByteArray3endEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qbytearray.h:405
 // [8] QByteArray::const_iterator cend()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZNK10QByteArray4cendEv(void *this_) {
   auto rv = ((QByteArray*)this_)->cend();
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:406
@@ -1222,20 +1284,26 @@ void C_ZN10QByteArray10push_frontERKS_(void *this_, QByteArray* a) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qbytearray.h:428
 // [-2] void shrink_to_fit()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QByteArray13shrink_to_fitEv(void *this_) {
   ((QByteArray*)this_)->shrink_to_fit();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qbytearray.h:431
 // [32] std::string toStdString()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 std::string C_ZNK10QByteArray11toStdStringB5cxx11Ev(void *this_) {
   return (std::string)((QByteArray*)this_)->toStdString();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:433

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050500
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QPlatformSurfaceEventC2ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) {
   return  new QPlatformSurfaceEvent(surfaceEventType);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:452
 // [-2] void ~QPlatformSurfaceEvent()

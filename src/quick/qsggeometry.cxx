@@ -26,6 +26,7 @@ void* C_ZN11QSGGeometry25defaultAttributes_Point2DEv() {
   auto& rv = QSGGeometry::defaultAttributes_Point2D();
 return new QSGGeometry::AttributeSet(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:139
 // [16] const QSGGeometry::AttributeSet & defaultAttributes_TexturedPoint2D()
@@ -34,6 +35,7 @@ void* C_ZN11QSGGeometry33defaultAttributes_TexturedPoint2DEv() {
   auto& rv = QSGGeometry::defaultAttributes_TexturedPoint2D();
 return new QSGGeometry::AttributeSet(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:140
 // [16] const QSGGeometry::AttributeSet & defaultAttributes_ColoredPoint2D()
@@ -42,6 +44,7 @@ void* C_ZN11QSGGeometry32defaultAttributes_ColoredPoint2DEv() {
   auto& rv = QSGGeometry::defaultAttributes_ColoredPoint2D();
 return new QSGGeometry::AttributeSet(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:146
 // [-2] void ~QSGGeometry()
@@ -248,6 +251,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry18updateRectGeometryEPS_RK6QRectF(QSGGeometry * g, QRectF* rect) {
   QSGGeometry::updateRectGeometry(g, *rect);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:185
 // [-2] void updateTexturedRectGeometry(class QSGGeometry *, const class QRectF &, const class QRectF &)
@@ -255,6 +259,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry26updateTexturedRectGeometryEPS_RK6QRectFS3_(QSGGeometry * g, QRectF* rect, QRectF* sourceRect) {
   QSGGeometry::updateTexturedRectGeometry(g, *rect, *sourceRect);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:186
 // [-2] void updateColoredRectGeometry(class QSGGeometry *, const class QRectF &)
@@ -262,6 +267,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry25updateColoredRectGeometryEPS_RK6QRectF(QSGGeometry * g, QRectF* rect) {
   QSGGeometry::updateColoredRectGeometry(g, *rect);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:188
 // [-2] void setIndexDataPattern(enum QSGGeometry::DataPattern)

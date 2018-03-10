@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicseffect.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN23QGraphicsColorizeEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsColorizeEffect*)(0);
   return  new MyQGraphicsColorizeEffect(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:133
 // [-2] void ~QGraphicsColorizeEffect()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qmimetype.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeC2Ev() {
   return  new QMimeType();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:80
 // [8] QMimeType & operator=(const class QMimeType &)

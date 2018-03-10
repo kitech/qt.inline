@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QDragLeaveEventC2Ev() {
   return  new QDragLeaveEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:672
 // [-2] void ~QDragLeaveEvent()

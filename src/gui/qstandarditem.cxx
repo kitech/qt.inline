@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
@@ -61,12 +62,15 @@ return &rv;
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qstandarditemmodel.h:251
 // [-2] void emitDataChanged()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStandardItem15emitDataChangedEv(void *this_) {
   ((QStandardItem*)this_)->QStandardItem::emitDataChanged();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:65
@@ -76,6 +80,7 @@ void* C_ZN13QStandardItemC2Ev() {
   auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:66
 // [-2] void QStandardItem(const class QString &)
@@ -84,6 +89,7 @@ void* C_ZN13QStandardItemC2ERK7QString(QString* text) {
   auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem(*text);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:67
 // [-2] void QStandardItem(const class QIcon &, const class QString &)
@@ -92,6 +98,7 @@ void* C_ZN13QStandardItemC2ERK5QIconRK7QString(QIcon* icon, QString* text) {
   auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem(*icon, *text);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:68
 // [-2] void QStandardItem(int, int)
@@ -100,6 +107,7 @@ void* C_ZN13QStandardItemC2Eii(int rows, int columns) {
   auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem(rows, columns);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:69
 // [-2] void ~QStandardItem()
@@ -424,36 +432,48 @@ void C_ZN13QStandardItem12setCheckableEb(void *this_, bool checkable) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qstandarditemmodel.h:168
 // [1] bool isAutoTristate()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QStandardItem14isAutoTristateEv(void *this_) {
   return (bool)((QStandardItem*)this_)->isAutoTristate();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qstandarditemmodel.h:171
 // [-2] void setAutoTristate(_Bool)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStandardItem15setAutoTristateEb(void *this_, bool tristate) {
   ((QStandardItem*)this_)->setAutoTristate(tristate);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public inline Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qstandarditemmodel.h:173
 // [1] bool isUserTristate()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QStandardItem14isUserTristateEv(void *this_) {
   return (bool)((QStandardItem*)this_)->isUserTristate();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qstandarditemmodel.h:176
 // [-2] void setUserTristate(_Bool)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStandardItem15setUserTristateEb(void *this_, bool tristate) {
   ((QStandardItem*)this_)->setUserTristate(tristate);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:179

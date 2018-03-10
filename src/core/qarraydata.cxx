@@ -75,6 +75,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE(size_t objectSize, size_t alignment, size_t capacity, QFlags<QArrayData::AllocationOption> options) {
   return (void*)QArrayData::allocate(objectSize, alignment, capacity, options);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:123
 // [8] QArrayData * sharedNull()
@@ -82,6 +83,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QArrayData10sharedNullEv() {
   return (void*)QArrayData::sharedNull();
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN10QArrayDataD2Ev(void *this_) {

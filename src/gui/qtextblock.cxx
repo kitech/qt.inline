@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextBlockC2Ev() {
   return  new QTextBlock();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:208
 // [16] QTextBlock & operator=(const class QTextBlock &)
@@ -101,12 +102,15 @@ void* C_ZNK10QTextBlock6layoutEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:221
 // [-2] void clearLayout()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11clearLayoutEv(void *this_) {
   ((QTextBlock*)this_)->clearLayout();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:222
@@ -143,12 +147,15 @@ int C_ZNK10QTextBlock15charFormatIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextobject.h:227
 // [4] Qt::LayoutDirection textDirection()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 Qt::LayoutDirection C_ZNK10QTextBlock13textDirectionEv(void *this_) {
   return (Qt::LayoutDirection)((QTextBlock*)this_)->textDirection();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:229
@@ -176,100 +183,136 @@ void* C_ZNK10QTextBlock8textListEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtextobject.h:237
 // [8] QTextBlockUserData * userData()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock8userDataEv(void *this_) {
   return (void*)((QTextBlock*)this_)->userData();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtextobject.h:238
 // [-2] void setUserData(class QTextBlockUserData *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11setUserDataEP18QTextBlockUserData(void *this_, QTextBlockUserData * data) {
   ((QTextBlock*)this_)->setUserData(data);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtextobject.h:240
 // [4] int userState()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock9userStateEv(void *this_) {
   return (int)((QTextBlock*)this_)->userState();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtextobject.h:241
 // [-2] void setUserState(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock12setUserStateEi(void *this_, int state) {
   ((QTextBlock*)this_)->setUserState(state);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:243
 // [4] int revision()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock8revisionEv(void *this_) {
   return (int)((QTextBlock*)this_)->revision();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:244
 // [-2] void setRevision(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11setRevisionEi(void *this_, int rev) {
   ((QTextBlock*)this_)->setRevision(rev);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:246
 // [1] bool isVisible()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlock9isVisibleEv(void *this_) {
   return (bool)((QTextBlock*)this_)->isVisible();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:247
 // [-2] void setVisible(_Bool)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock10setVisibleEb(void *this_, bool visible) {
   ((QTextBlock*)this_)->setVisible(visible);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:249
 // [4] int blockNumber()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock11blockNumberEv(void *this_) {
   return (int)((QTextBlock*)this_)->blockNumber();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextobject.h:250
 // [4] int firstLineNumber()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock15firstLineNumberEv(void *this_) {
   return (int)((QTextBlock*)this_)->firstLineNumber();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextobject.h:252
 // [-2] void setLineCount(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock12setLineCountEi(void *this_, int count) {
   ((QTextBlock*)this_)->setLineCount(count);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextobject.h:253
 // [4] int lineCount()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextBlock9lineCountEv(void *this_) {
   return (int)((QTextBlock*)this_)->lineCount();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:283

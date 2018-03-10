@@ -218,6 +218,7 @@ void* C_ZN9QSizeGripC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSizeGrip*)(0);
   return  new MyQSizeGrip(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:56
 // [-2] void ~QSizeGrip()

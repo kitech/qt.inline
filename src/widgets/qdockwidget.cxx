@@ -139,6 +139,7 @@ void* C_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString*
   auto _nilp = (MyQDockWidget*)(0);
   return  new MyQDockWidget(*title, parent, flags);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:68
 // [-2] void QDockWidget(class QWidget *, Qt::WindowFlags)
@@ -147,6 +148,7 @@ void* C_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, 
   auto _nilp = (MyQDockWidget*)(0);
   return  new MyQDockWidget(parent, flags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:69
 // [-2] void ~QDockWidget()
@@ -220,20 +222,26 @@ Qt::DockWidgetAreas C_ZNK11QDockWidget12allowedAreasEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qdockwidget.h:98
 // [-2] void setTitleBarWidget(class QWidget *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget17setTitleBarWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QDockWidget*)this_)->setTitleBarWidget(widget);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qdockwidget.h:99
 // [8] QWidget * titleBarWidget()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QDockWidget14titleBarWidgetEv(void *this_) {
   return (void*)((QDockWidget*)this_)->titleBarWidget();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:101
@@ -276,19 +284,25 @@ void C_ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(void 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qdockwidget.h:112
 // [-2] void visibilityChanged(_Bool)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget17visibilityChangedEb(void *this_, bool visible) {
   ((QDockWidget*)this_)->visibilityChanged(visible);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qdockwidget.h:113
 // [-2] void dockLocationChanged(Qt::DockWidgetArea)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(void *this_, Qt::DockWidgetArea area) {
   ((QDockWidget*)this_)->dockLocationChanged(area);
 }
+#endif // QT_VERSION >= 0x040300
 
 //  main block end

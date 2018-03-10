@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QDragC2EP7QObject(QObject * dragSource) {
   return  new QDrag(dragSource);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:63
 // [-2] void ~QDrag()
@@ -117,20 +118,26 @@ Qt::DropAction C_ZN5QDrag5startE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Q
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qdrag.h:78
 // [4] Qt::DropAction exec(Qt::DropActions)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZN5QDrag4execE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> supportedActions) {
   return (Qt::DropAction)((QDrag*)this_)->exec(supportedActions);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qdrag.h:79
 // [4] Qt::DropAction exec(Qt::DropActions, Qt::DropAction)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZN5QDrag4execE6QFlagsIN2Qt10DropActionEES2_(void *this_, QFlags<Qt::DropAction> supportedActions, Qt::DropAction defaultAction) {
   return (Qt::DropAction)((QDrag*)this_)->exec(supportedActions, defaultAction);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:81
@@ -141,13 +148,16 @@ void C_ZN5QDrag13setDragCursorERK7QPixmapN2Qt10DropActionE(void *this_, QPixmap*
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qdrag.h:82
 // [32] QPixmap dragCursor(Qt::DropAction)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QDrag10dragCursorEN2Qt10DropActionE(void *this_, Qt::DropAction action) {
   auto rv = ((QDrag*)this_)->dragCursor(action);
 return new QPixmap(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:84
@@ -166,12 +176,16 @@ Qt::DropAction C_ZNK5QDrag13defaultActionEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtGui/qdrag.h:87
 // [-2] void cancel()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDrag6cancelEv() {
   QDrag::cancel();
 }
+#endif // QT_VERSION >= 0x050700
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:90
 // [-2] void actionChanged(Qt::DropAction)

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtWidgets/qscrollerproperties.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QScrollerPropertiesC2Ev() {
   return  new QScrollerProperties();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:62
 // [16] QScrollerProperties & operator=(const class QScrollerProperties &)
@@ -66,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_(QScrollerProperties* sp) {
   QScrollerProperties::setDefaultScrollerProperties(*sp);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:69
 // [-2] void unsetDefaultScrollerProperties()
@@ -73,6 +76,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN19QScrollerProperties30unsetDefaultScrollerPropertiesEv() {
   QScrollerProperties::unsetDefaultScrollerProperties();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:117
 // [16] QVariant scrollMetric(enum QScrollerProperties::ScrollMetric)

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtGui/qpainterpath.h
 #ifndef protected
 #define protected public
@@ -29,13 +30,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QPainterPathStrokerC2Ev() {
   return  new QPainterPathStroker();
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpainterpath.h:247
 // [-2] void QPainterPathStroker(const class QPen &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QPainterPathStrokerC2ERK4QPen(QPen* pen) {
   return  new QPainterPathStroker(*pen);
 }
+#endif // QT_VERSION >= 0x050300
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:248
 // [-2] void ~QPainterPathStroker()

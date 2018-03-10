@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QWaitConditionC2Ev() {
   return  new QWaitCondition();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qwaitcondition.h:60
 // [-2] void ~QWaitCondition()
@@ -43,12 +44,15 @@ bool C_ZN14QWaitCondition4waitEP6QMutexm(void *this_, QMutex * lockedMutex, unsi
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qwaitcondition.h:63
 // [1] bool wait(class QReadWriteLock *, unsigned long)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWaitCondition4waitEP14QReadWriteLockm(void *this_, QReadWriteLock * lockedReadWriteLock, unsigned long time) {
   return (bool)((QWaitCondition*)this_)->wait(lockedReadWriteLock, time);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qwaitcondition.h:65
@@ -67,19 +71,25 @@ void C_ZN14QWaitCondition7wakeAllEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qwaitcondition.h:68
 // [-2] void notify_one()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWaitCondition10notify_oneEv(void *this_) {
   ((QWaitCondition*)this_)->notify_one();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qwaitcondition.h:69
 // [-2] void notify_all()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWaitCondition10notify_allEv(void *this_) {
   ((QWaitCondition*)this_)->notify_all();
 }
+#endif // QT_VERSION >= 0x050800
 
 //  main block end

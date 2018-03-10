@@ -116,6 +116,7 @@ void* C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQFutureWatcherBase*)(0);
   return 0; // new MyQFutureWatcherBase(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:64
 // [4] int progressValue()

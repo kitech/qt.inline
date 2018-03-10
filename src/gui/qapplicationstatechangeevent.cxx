@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN28QApplicationStateChangeEventC2EN2Qt16ApplicationStateE(Qt::ApplicationState state) {
   return  new QApplicationStateChangeEvent(state);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1053
 // [4] Qt::ApplicationState applicationState()

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QImageIOHandlerC2Ev() {
   return 0; // new QImageIOHandler();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:63
 // [-2] void ~QImageIOHandler()

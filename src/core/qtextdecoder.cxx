@@ -29,13 +29,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextDecoderC2EPK10QTextCodec(const QTextCodec * codec) {
   return  new QTextDecoder(codec);
 }
+
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qtextcodec.h:159
 // [-2] void QTextDecoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextDecoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) {
   return  new QTextDecoder(codec, flags);
 }
+#endif // QT_VERSION >= 0x040700
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:160
 // [-2] void ~QTextDecoder()

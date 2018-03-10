@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h
 #ifndef protected
 #define protected public
@@ -623,12 +624,15 @@ void C_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent(void *
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:123
 // [8] QGraphicsProxyWidget * newProxyWidget(const class QWidget *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget(void *this_, const QWidget * arg0) {
   return (void*)((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::newProxyWidget(arg0);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:54
@@ -646,6 +650,7 @@ void* C_ZN20QGraphicsProxyWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QG
   auto _nilp = (MyQGraphicsProxyWidget*)(0);
   return  new MyQGraphicsProxyWidget(parent, wFlags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:57
 // [-2] void ~QGraphicsProxyWidget()
@@ -703,11 +708,14 @@ int C_ZNK20QGraphicsProxyWidget4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:73
 // [8] QGraphicsProxyWidget * createProxyForChildWidget(class QWidget *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsProxyWidget25createProxyForChildWidgetEP7QWidget(void *this_, QWidget * child) {
   return (void*)((QGraphicsProxyWidget*)this_)->createProxyForChildWidget(child);
 }
+#endif // QT_VERSION >= 0x040500
 
 //  main block end

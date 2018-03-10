@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtWidgets/qcolumnview.h
 #ifndef protected
 #define protected public
@@ -261,12 +262,15 @@ void* C_ZN11QColumnView12createColumnERK11QModelIndex(void *this_, QModelIndex* 
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qcolumnview.h:101
 // [-2] void initializeColumn(class QAbstractItemView *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QColumnView16initializeColumnEP17QAbstractItemView(void *this_, QAbstractItemView * column) {
   ((QColumnView*)this_)->QColumnView::initializeColumn(column);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:54
@@ -292,6 +296,7 @@ void* C_ZN11QColumnViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQColumnView*)(0);
   return  new MyQColumnView(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:62
 // [-2] void ~QColumnView()

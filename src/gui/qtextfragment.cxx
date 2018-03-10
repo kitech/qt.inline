@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextFragmentC2Ev() {
   return  new QTextFragment();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:309
 // [16] QTextFragment & operator=(const class QTextFragment &)

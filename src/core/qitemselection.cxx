@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QItemSelectionC2Ev() {
   return  new QItemSelection();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:251
 // [-2] void QItemSelection(const class QModelIndex &, const class QModelIndex &)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QItemSelectionC2ERK11QModelIndexS2_(QModelIndex* topLeft, QModelIndex* bottomRight) {
   return  new QItemSelection(*topLeft, *bottomRight);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:255
 // [-2] void select(const class QModelIndex &, const class QModelIndex &)
@@ -76,6 +78,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN14QItemSelection5splitERK19QItemSelectionRangeS2_PS_(QItemSelectionRange* range_, QItemSelectionRange* other, QItemSelection * result) {
   QItemSelection::split(*range_, *other, result);
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN14QItemSelectionD2Ev(void *this_) {

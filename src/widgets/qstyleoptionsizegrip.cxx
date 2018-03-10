@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionSizeGripC2Ev() {
   return  new QStyleOptionSizeGrip();
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionSizeGripD2Ev(void *this_) {

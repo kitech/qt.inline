@@ -118,6 +118,7 @@ void* C_ZN11QFocusFrameC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQFocusFrame*)(0);
   return  new MyQFocusFrame(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:57
 // [-2] void ~QFocusFrame()

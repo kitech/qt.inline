@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qproxystyle.h
 #ifndef protected
 #define protected public
@@ -59,6 +60,7 @@ void* C_ZN11QProxyStyleC2EP6QStyle(QStyle * style) {
   auto _nilp = (MyQProxyStyle*)(0);
   return  new MyQProxyStyle(style);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:58
 // [-2] void QProxyStyle(const class QString &)
@@ -67,6 +69,7 @@ void* C_ZN11QProxyStyleC2ERK7QString(QString* key) {
   auto _nilp = (MyQProxyStyle*)(0);
   return  new MyQProxyStyle(*key);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:59
 // [-2] void ~QProxyStyle()

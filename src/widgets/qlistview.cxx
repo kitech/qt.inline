@@ -564,12 +564,15 @@ return new QRect(rv);
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qlistview.h:175
 // [-2] void setPositionForIndex(const class QPoint &, const class QModelIndex &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex(void *this_, QPoint* position, QModelIndex* index) {
   ((QListView*)this_)->QListView::setPositionForIndex(*position, *index);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:177
@@ -630,13 +633,16 @@ void C_ZN9QListView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex*
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qlistview.h:188
 // [8] QSize viewportSizeHint()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView16viewportSizeHintEv(void *this_) {
   auto rv = ((QListView*)this_)->QListView::viewportSizeHint();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:54
@@ -654,6 +660,7 @@ void* C_ZN9QListViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQListView*)(0);
   return  new MyQListView(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:82
 // [-2] void ~QListView()

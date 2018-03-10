@@ -141,12 +141,15 @@ void* C_ZNK7QObject6senderEv(void *this_) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qobject.h:424
 // [4] int senderSignalIndex()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QObject17senderSignalIndexEv(void *this_) {
   return (int)((QObject*)this_)->QObject::senderSignalIndex();
 }
+#endif // QT_VERSION >= 0x040800
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:425
@@ -157,12 +160,15 @@ int C_ZNK7QObject9receiversEPKc(void *this_, const char * signal) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qobject.h:426
 // [1] bool isSignalConnected(const class QMetaMethod &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QObject17isSignalConnectedERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   return (bool)((QObject*)this_)->QObject::isSignalConnected(*signal);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:428
@@ -189,20 +195,26 @@ void C_ZN7QObject11customEventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qobject.h:432
 // [-2] void connectNotify(const class QMetaMethod &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN7QObject13connectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QObject*)this_)->QObject::connectNotify(*signal);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qobject.h:433
 // [-2] void disconnectNotify(const class QMetaMethod &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN7QObject16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QObject*)this_)->QObject::disconnectNotify(*signal);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:119
@@ -220,6 +232,7 @@ void* C_ZN7QObjectC2EPS_(QObject * parent) {
   auto _nilp = (MyQObject*)(0);
   return  new MyQObject(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:125
 // [-2] void ~QObject()
@@ -364,13 +377,18 @@ extern "C" Q_DECL_EXPORT
 QMetaObject::Connection C_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE(const QObject * sender, const char * signal, const QObject * receiver, const char * member, Qt::ConnectionType arg4) {
   return (QMetaObject::Connection)QObject::connect(sender, signal, receiver, member, arg4);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qobject.h:217
 // [8] QMetaObject::Connection connect(const class QObject *, const class QMetaMethod &, const class QObject *, const class QMetaMethod &, Qt::ConnectionType)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* method, Qt::ConnectionType type_) {
   return (QMetaObject::Connection)QObject::connect(sender, *signal, receiver, *method, type_);
 }
+#endif // QT_VERSION >= 0x040800
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:221
 // [8] QMetaObject::Connection connect(const class QObject *, const char *, const char *, Qt::ConnectionType)
@@ -386,13 +404,18 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN7QObject10disconnectEPKS_PKcS1_S3_(const QObject * sender, const char * signal, const QObject * receiver, const char * member) {
   return (bool)QObject::disconnect(sender, signal, receiver, member);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qobject.h:345
 // [1] bool disconnect(const class QObject *, const class QMetaMethod &, const class QObject *, const class QMetaMethod &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QObject10disconnectEPKS_RK11QMetaMethodS1_S4_(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* member) {
   return (bool)QObject::disconnect(sender, *signal, receiver, *member);
 }
+#endif // QT_VERSION >= 0x040800
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:347
 // [1] bool disconnect(const char *, const class QObject *, const char *)
@@ -465,6 +488,7 @@ extern "C" Q_DECL_EXPORT
 uint C_ZN7QObject16registerUserDataEv() {
   return (uint)QObject::registerUserData();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:405
 // [-2] void setUserData(uint, class QObjectUserData *)

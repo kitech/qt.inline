@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtQuick/qsgrendererinterface.h
 #ifndef protected
 #define protected public

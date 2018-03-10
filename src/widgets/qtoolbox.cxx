@@ -137,6 +137,7 @@ void* C_ZN8QToolBoxC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFla
   auto _nilp = (MyQToolBox*)(0);
   return  new MyQToolBox(parent, f);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:61
 // [-2] void ~QToolBox()

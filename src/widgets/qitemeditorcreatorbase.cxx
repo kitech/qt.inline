@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #ifndef protected
 #define protected public

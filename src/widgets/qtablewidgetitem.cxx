@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTableWidgetItemC2Ei(int type_) {
   return  new QTableWidgetItem(type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:83
 // [-2] void QTableWidgetItem(const class QString &, int)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTableWidgetItemC2ERK7QStringi(QString* text, int type_) {
   return  new QTableWidgetItem(*text, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:84
 // [-2] void QTableWidgetItem(const class QIcon &, const class QString &, int)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi(QIcon* icon, QString* text, int type_) {
   return  new QTableWidgetItem(*icon, *text, type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:86
 // [-2] void ~QTableWidgetItem()
@@ -69,36 +72,48 @@ void* C_ZNK16QTableWidgetItem11tableWidgetEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:92
 // [4] int row()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QTableWidgetItem3rowEv(void *this_) {
   return (int)((QTableWidgetItem*)this_)->row();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:93
 // [4] int column()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QTableWidgetItem6columnEv(void *this_) {
   return (int)((QTableWidgetItem*)this_)->column();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:95
 // [-2] void setSelected(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTableWidgetItem11setSelectedEb(void *this_, bool select_) {
   ((QTableWidgetItem*)this_)->setSelected(select_);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:96
 // [1] bool isSelected()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QTableWidgetItem10isSelectedEv(void *this_) {
   return (bool)((QTableWidgetItem*)this_)->isSelected();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:98
@@ -252,21 +267,27 @@ void C_ZN16QTableWidgetItem18setBackgroundColorERK6QColor(void *this_, QColor* c
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:139
 // [8] QBrush background()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QTableWidgetItem10backgroundEv(void *this_) {
   auto rv = ((QTableWidgetItem*)this_)->background();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:141
 // [-2] void setBackground(const class QBrush &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTableWidgetItem13setBackgroundERK6QBrush(void *this_, QBrush* brush) {
   ((QTableWidgetItem*)this_)->setBackground(*brush);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:144
@@ -286,21 +307,27 @@ void C_ZN16QTableWidgetItem12setTextColorERK6QColor(void *this_, QColor* color) 
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:149
 // [8] QBrush foreground()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QTableWidgetItem10foregroundEv(void *this_) {
   auto rv = ((QTableWidgetItem*)this_)->foreground();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:151
 // [-2] void setForeground(const class QBrush &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTableWidgetItem13setForegroundERK6QBrush(void *this_, QBrush* brush) {
   ((QTableWidgetItem*)this_)->setForeground(*brush);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:154
@@ -319,21 +346,27 @@ void C_ZN16QTableWidgetItem13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::Ch
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:159
 // [8] QSize sizeHint()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QTableWidgetItem8sizeHintEv(void *this_) {
   auto rv = ((QTableWidgetItem*)this_)->sizeHint();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:161
 // [-2] void setSizeHint(const class QSize &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTableWidgetItem11setSizeHintERK5QSize(void *this_, QSize* size) {
   ((QTableWidgetItem*)this_)->setSizeHint(*size);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:164

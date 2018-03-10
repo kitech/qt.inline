@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qabstracttransition.h
 #ifndef protected
 #define protected public
@@ -88,6 +89,7 @@ void* C_ZN19QAbstractTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQAbstractTransition*)(0);
   return 0; // new MyQAbstractTransition(sourceState);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracttransition.h:76
 // [-2] void ~QAbstractTransition()

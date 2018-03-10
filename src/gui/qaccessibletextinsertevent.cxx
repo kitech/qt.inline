@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextInsertEventC2EP7QObjectiRK7QString(QObject * obj, int position, QString* text) {
   return  new QAccessibleTextInsertEvent(obj, position, *text);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:810
 // [-2] void QAccessibleTextInsertEvent(class QAccessibleInterface *, int, const class QString &)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextInsertEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, QString* text) {
   return  new QAccessibleTextInsertEvent(iface, position, *text);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:817
 // [-2] void ~QAccessibleTextInsertEvent()

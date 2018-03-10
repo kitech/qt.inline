@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN27QXmlStreamEntityDeclarationC2Ev() {
   return  new QXmlStreamEntityDeclaration();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:288
 // [-2] void ~QXmlStreamEntityDeclaration()

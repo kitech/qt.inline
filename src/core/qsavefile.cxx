@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtCore/qsavefile.h
 #ifndef protected
 #define protected public
@@ -61,6 +62,7 @@ void* C_ZN9QSaveFileC2ERK7QString(QString* name) {
   auto _nilp = (MyQSaveFile*)(0);
   return  new MyQSaveFile(*name);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:70
 // [-2] void QSaveFile(class QObject *)
@@ -69,6 +71,7 @@ void* C_ZN9QSaveFileC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSaveFile*)(0);
   return  new MyQSaveFile(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:71
 // [-2] void QSaveFile(const class QString &, class QObject *)
@@ -77,6 +80,7 @@ void* C_ZN9QSaveFileC2ERK7QStringP7QObject(QString* name, QObject * parent) {
   auto _nilp = (MyQSaveFile*)(0);
   return  new MyQSaveFile(*name, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:73
 // [-2] void ~QSaveFile()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -93,6 +94,7 @@ void* C_ZN17QGraphicsPathItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPathItem*)(0);
   return  new MyQGraphicsPathItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:629
 // [-2] void QGraphicsPathItem(const class QPainterPath &, class QGraphicsItem *)
@@ -101,6 +103,7 @@ void* C_ZN17QGraphicsPathItemC2ERK12QPainterPathP13QGraphicsItem(QPainterPath* p
   auto _nilp = (MyQGraphicsPathItem*)(0);
   return  new MyQGraphicsPathItem(*path, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:630
 // [-2] void ~QGraphicsPathItem()

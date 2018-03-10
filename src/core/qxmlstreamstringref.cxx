@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamStringRefC2Ev() {
   return  new QXmlStreamStringRef();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:59
 // [-2] void QXmlStreamStringRef(const class QStringRef &)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamStringRefC2ERK10QStringRef(QStringRef* aString) {
   return  new QXmlStreamStringRef(*aString);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:61
 // [-2] void QXmlStreamStringRef(const class QString &)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamStringRefC2ERK7QString(QString* aString) {
   return  new QXmlStreamStringRef(*aString);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:63
 // [-2] void QXmlStreamStringRef(class QString &&)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamStringRefC2EO7QString(QString && aString) {
   return  new QXmlStreamStringRef(aString);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:72
 // [16] QXmlStreamStringRef & operator=(class QXmlStreamStringRef &&)

@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextTableFormatC2Ev() {
   return  new QTextTableFormat();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:889
 // [1] bool isValid()
@@ -110,20 +111,26 @@ Qt::Alignment C_ZNK16QTextTableFormat9alignmentEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextformat.h:917
 // [-2] void setHeaderRowCount(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat17setHeaderRowCountEi(void *this_, int count) {
   ((QTextTableFormat*)this_)->setHeaderRowCount(count);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextformat.h:919
 // [4] int headerRowCount()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QTextTableFormat14headerRowCountEv(void *this_) {
   return (int)((QTextTableFormat*)this_)->headerRowCount();
 }
+#endif // QT_VERSION >= 0x040200
 
 
 extern "C" Q_DECL_EXPORT

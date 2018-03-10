@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QScrollPrepareEventC2ERK7QPointF(QPointF* startPos) {
   return  new QScrollPrepareEvent(*startPos);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:991
 // [-2] void ~QScrollPrepareEvent()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qwindow.h
 #ifndef protected
 #define protected public
@@ -400,6 +401,7 @@ void* C_ZN7QWindowC2EP7QScreen(QScreen * screen) {
   auto _nilp = (MyQWindow*)(0);
   return  new MyQWindow(screen);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:145
 // [-2] void QWindow(class QWindow *)
@@ -408,6 +410,7 @@ void* C_ZN7QWindowC2EPS_(QWindow * parent) {
   auto _nilp = (MyQWindow*)(0);
   return  new MyQWindow(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:146
 // [-2] void ~QWindow()
@@ -570,12 +573,15 @@ Qt::WindowFlags C_ZNK7QWindow5flagsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtGui/qwindow.h:176
 // [-2] void setFlag(Qt::WindowType, _Bool)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWindow7setFlagEN2Qt10WindowTypeEb(void *this_, Qt::WindowType arg0, bool on) {
   ((QWindow*)this_)->setFlag(arg0, on);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:177
@@ -668,12 +674,15 @@ Qt::WindowState C_ZNK7QWindow11windowStateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qwindow.h:195
 // [4] Qt::WindowStates windowStates()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 Qt::WindowStates C_ZNK7QWindow12windowStatesEv(void *this_) {
   return (Qt::WindowStates)((QWindow*)this_)->windowStates();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:196
@@ -684,12 +693,15 @@ void C_ZN7QWindow14setWindowStateEN2Qt11WindowStateE(void *this_, Qt::WindowStat
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qwindow.h:197
 // [-2] void setWindowStates(Qt::WindowStates)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWindow15setWindowStatesE6QFlagsIN2Qt11WindowStateEE(void *this_, QFlags<Qt::WindowState> states) {
   ((QWindow*)this_)->setWindowStates(states);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:199
@@ -1089,6 +1101,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QWindow9fromWinIdEy(WId id) {
   return (void*)QWindow::fromWinId(id);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:279
 // [-2] void requestActivate()
@@ -1266,20 +1279,26 @@ void C_ZN7QWindow16setMaximumHeightEi(void *this_, int h) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtGui/qwindow.h:309
 // [-2] void alert(int)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWindow5alertEi(void *this_, int msec) {
   ((QWindow*)this_)->alert(msec);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qwindow.h:311
 // [-2] void requestUpdate()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWindow13requestUpdateEv(void *this_) {
   ((QWindow*)this_)->requestUpdate();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:314

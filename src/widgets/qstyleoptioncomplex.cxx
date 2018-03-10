@@ -28,6 +28,7 @@ void* C_ZN19QStyleOptionComplexC2Eii(int version, int type_) {
   return  new QStyleOptionComplex(version, type_);
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN19QStyleOptionComplexD2Ev(void *this_) {
   delete (QStyleOptionComplex*)(this_);

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicseffect.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN22QGraphicsOpacityEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsOpacityEffect*)(0);
   return  new MyQGraphicsOpacityEffect(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:259
 // [-2] void ~QGraphicsOpacityEffect()

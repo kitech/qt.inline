@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgesture.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QGestureC2EP7QObject(QObject * parent) {
   return  new QGesture(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:74
 // [-2] void ~QGesture()

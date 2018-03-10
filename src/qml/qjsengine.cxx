@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qjsengine.h
 #ifndef protected
 #define protected public
@@ -37,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngineC2Ev() {
   return  new QJSEngine();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:65
 // [-2] void QJSEngine(class QObject *)
@@ -44,6 +46,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngineC2EP7QObject(QObject * parent) {
   return  new QJSEngine(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:66
 // [-2] void ~QJSEngine()

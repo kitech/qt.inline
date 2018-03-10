@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QGenericPluginC2EP7QObject(QObject * parent) {
   return 0; // new QGenericPlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qgenericplugin.h:56
 // [-2] void ~QGenericPlugin()

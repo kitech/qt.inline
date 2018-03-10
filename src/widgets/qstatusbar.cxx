@@ -157,6 +157,7 @@ void* C_ZN10QStatusBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQStatusBar*)(0);
   return  new MyQStatusBar(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:60
 // [-2] void ~QStatusBar()
@@ -173,12 +174,15 @@ void C_ZN10QStatusBar9addWidgetEP7QWidgeti(void *this_, QWidget * widget, int st
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qstatusbar.h:63
 // [4] int insertWidget(int, class QWidget *, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZN10QStatusBar12insertWidgetEiP7QWidgeti(void *this_, int index, QWidget * widget, int stretch) {
   return (int)((QStatusBar*)this_)->insertWidget(index, widget, stretch);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:64
@@ -189,12 +193,15 @@ void C_ZN10QStatusBar18addPermanentWidgetEP7QWidgeti(void *this_, QWidget * widg
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qstatusbar.h:65
 // [4] int insertPermanentWidget(int, class QWidget *, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZN10QStatusBar21insertPermanentWidgetEiP7QWidgeti(void *this_, int index, QWidget * widget, int stretch) {
   return (int)((QStatusBar*)this_)->insertPermanentWidget(index, widget, stretch);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:66

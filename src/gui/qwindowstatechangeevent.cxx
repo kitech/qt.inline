@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(QFlags<Qt::WindowState> aOldState, bool isOverride) {
   return  new QWindowStateChangeEvent(aOldState, isOverride);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:784
 // [-2] void ~QWindowStateChangeEvent()

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QStatusTipEventC2ERK7QString(QString* tip) {
   return  new QStatusTipEvent(*tip);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:701
 // [-2] void ~QStatusTipEvent()

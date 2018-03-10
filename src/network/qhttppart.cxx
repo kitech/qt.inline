@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QHttpPartC2Ev() {
   return  new QHttpPart();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:60
 // [-2] void ~QHttpPart()
@@ -53,12 +55,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:66
 // [-2] void swap(class QHttpPart &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHttpPart4swapERS_(void *this_, QHttpPart* other) {
   ((QHttpPart*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:68

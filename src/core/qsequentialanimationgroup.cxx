@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h
 #ifndef protected
 #define protected public
@@ -117,6 +118,7 @@ void* C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSequentialAnimationGroup*)(0);
   return  new MyQSequentialAnimationGroup(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:60
 // [-2] void ~QSequentialAnimationGroup()

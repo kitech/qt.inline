@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicseffect.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN19QGraphicsBlurEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsBlurEffect*)(0);
   return  new MyQGraphicsBlurEffect(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:171
 // [-2] void ~QGraphicsBlurEffect()

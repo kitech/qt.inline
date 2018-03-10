@@ -34,6 +34,7 @@ void* C_ZN12QMapDataBase10createDataEv() {
   return (void*)QMapDataBase::createData();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMapDataBaseD2Ev(void *this_) {
   delete (QMapDataBase*)(this_);

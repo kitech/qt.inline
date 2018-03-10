@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMoveEventC2ERK6QPointS2_(QPoint* pos, QPoint* oldPos) {
   return  new QMoveEvent(*pos, *oldPos);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:422
 // [-2] void ~QMoveEvent()

@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QPointFC2Ev() {
   return  new QPointF();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:223
 // [-2] void QPointF(const class QPoint &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QPointFC2ERK6QPoint(QPoint* p) {
   return  new QPointF(*p);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:224
 // [-2] void QPointF(qreal, qreal)
@@ -45,13 +47,17 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QPointFC2Edd(qreal xpos, qreal ypos) {
   return  new QPointF(xpos, ypos);
 }
+
 // Public inline Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qpoint.h:226
 // [8] qreal manhattanLength()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK7QPointF15manhattanLengthEv(void *this_) {
   return (qreal)((QPointF*)this_)->manhattanLength();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:228
@@ -148,12 +154,16 @@ return &rv;
 }
 
 // Public static inline Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qpoint.h:243
 // [8] qreal dotProduct(const class QPointF &, const class QPointF &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 qreal C_ZN7QPointF10dotProductERKS_S1_(QPointF* p1, QPointF* p2) {
   return (qreal)QPointF::dotProduct(*p1, *p2);
 }
+#endif // QT_VERSION >= 0x050100
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:256
 // [8] QPoint toPoint()

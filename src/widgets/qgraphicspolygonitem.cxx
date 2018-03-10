@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -93,6 +94,7 @@ void* C_ZN20QGraphicsPolygonItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPolygonItem*)(0);
   return  new MyQGraphicsPolygonItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:744
 // [-2] void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
@@ -101,6 +103,7 @@ void* C_ZN20QGraphicsPolygonItemC2ERK9QPolygonFP13QGraphicsItem(QPolygonF* polyg
   auto _nilp = (MyQGraphicsPolygonItem*)(0);
   return  new MyQGraphicsPolygonItem(*polygon, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:746
 // [-2] void ~QGraphicsPolygonItem()

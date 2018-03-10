@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qjsvalue.h
 #ifndef protected
 #define protected public
@@ -41,6 +42,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2ENS_12SpecialValueE(QJSValue::SpecialValue value) {
   return  new QJSValue(value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:73
 // [-2] void ~QJSValue()
@@ -64,6 +66,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2Eb(bool value) {
   return  new QJSValue(value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:83
 // [-2] void QJSValue(int)
@@ -71,6 +74,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2Ei(int value) {
   return  new QJSValue(value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:84
 // [-2] void QJSValue(uint)
@@ -78,6 +82,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2Ej(uint value) {
   return  new QJSValue(value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:85
 // [-2] void QJSValue(double)
@@ -85,6 +90,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2Ed(double value) {
   return  new QJSValue(value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:86
 // [-2] void QJSValue(const class QString &)
@@ -92,6 +98,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2ERK7QString(QString* value) {
   return  new QJSValue(*value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:87
 // [-2] void QJSValue(const class QLatin1String &)
@@ -99,6 +106,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2ERK13QLatin1String(QLatin1String* value) {
   return  new QJSValue(*value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:89
 // [-2] void QJSValue(const char *)
@@ -106,6 +114,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2EPKc(const char * str) {
   return  new QJSValue(str);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:92
 // [8] QJSValue & operator=(const class QJSValue &)
@@ -172,12 +181,15 @@ bool C_ZNK8QJSValue9isQObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQml/qjsvalue.h:101
 // [1] bool isQMetaObject()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QJSValue13isQMetaObjectEv(void *this_) {
   return (bool)((QJSValue*)this_)->isQMetaObject();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:102
@@ -278,12 +290,15 @@ void* C_ZNK8QJSValue9toQObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQml/qjsvalue.h:115
 // [8] const QMetaObject * toQMetaObject()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QJSValue13toQMetaObjectEv(void *this_) {
   return (void*)((QJSValue*)this_)->toQMetaObject();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:116

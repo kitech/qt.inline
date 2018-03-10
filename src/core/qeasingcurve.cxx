@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qeasingcurve.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type type_) {
   return  new QEasingCurve(type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:79
 // [-2] void ~QEasingCurve()
@@ -53,12 +55,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qeasingcurve.h:89
 // [-2] void swap(class QEasingCurve &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN12QEasingCurve4swapERS_(void *this_, QEasingCurve* other) {
   ((QEasingCurve*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:91

@@ -56,6 +56,7 @@ void* C_ZN14QDesktopWidgetC2Ev() {
   auto _nilp = (MyQDesktopWidget*)(0);
   return  new MyQDesktopWidget();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:60
 // [-2] void ~QDesktopWidget()
@@ -190,19 +191,25 @@ void C_ZN14QDesktopWidget15workAreaResizedEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:86
 // [-2] void screenCountChanged(int)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget18screenCountChangedEi(void *this_, int arg0) {
   ((QDesktopWidget*)this_)->screenCountChanged(arg0);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:87
 // [-2] void primaryScreenChanged()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget20primaryScreenChangedEv(void *this_) {
   ((QDesktopWidget*)this_)->primaryScreenChanged();
 }
+#endif // QT_VERSION >= 0x050600
 
 //  main block end

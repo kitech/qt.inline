@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QFileIconProviderC2Ev() {
   return  new QFileIconProvider();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:57
 // [-2] void ~QFileIconProvider()
@@ -70,12 +71,15 @@ void C_ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE(void *this_, QFlag
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:70
 // [4] QFileIconProvider::Options options()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 QFileIconProvider::Options* C_ZNK17QFileIconProvider7optionsEv(void *this_) {
   auto rv = ((QFileIconProvider*)this_)->options();
 return new QFileIconProvider::Options(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 //  main block end

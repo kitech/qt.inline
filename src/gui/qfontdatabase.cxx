@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontDatabaseC2Ev() {
   return  new QFontDatabase();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:123
 // [8] QStringList families(enum QFontDatabase::WritingSystem)
@@ -137,12 +138,15 @@ bool C_ZNK13QFontDatabase9hasFamilyERK7QString(void *this_, QString* family) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qfontdatabase.h:142
 // [1] bool isPrivateFamily(const class QString &)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontDatabase15isPrivateFamilyERK7QString(void *this_, QString* family) {
   return (bool)((QFontDatabase*)this_)->isPrivateFamily(*family);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:144
@@ -152,6 +156,7 @@ void* C_ZN13QFontDatabase17writingSystemNameENS_13WritingSystemE(QFontDatabase::
   auto rv = QFontDatabase::writingSystemName(writingSystem);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:145
 // [8] QString writingSystemSample(enum QFontDatabase::WritingSystem)
@@ -160,42 +165,63 @@ void* C_ZN13QFontDatabase19writingSystemSampleENS_13WritingSystemE(QFontDatabase
   auto rv = QFontDatabase::writingSystemSample(writingSystem);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qfontdatabase.h:147
 // [4] int addApplicationFont(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZN13QFontDatabase18addApplicationFontERK7QString(QString* fileName) {
   return (int)QFontDatabase::addApplicationFont(*fileName);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qfontdatabase.h:148
 // [4] int addApplicationFontFromData(const class QByteArray &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZN13QFontDatabase26addApplicationFontFromDataERK10QByteArray(QByteArray* fontData) {
   return (int)QFontDatabase::addApplicationFontFromData(*fontData);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qfontdatabase.h:149
 // [8] QStringList applicationFontFamilies(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontDatabase23applicationFontFamiliesEi(int id) {
   auto rv = QFontDatabase::applicationFontFamilies(id);
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qfontdatabase.h:150
 // [1] bool removeApplicationFont(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QFontDatabase21removeApplicationFontEi(int id) {
   return (bool)QFontDatabase::removeApplicationFont(id);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qfontdatabase.h:151
 // [1] bool removeAllApplicationFonts()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QFontDatabase25removeAllApplicationFontsEv() {
   return (bool)QFontDatabase::removeAllApplicationFonts();
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:154
 // [1] bool supportsThreadedFontRendering()
@@ -203,6 +229,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN13QFontDatabase29supportsThreadedFontRenderingEv() {
   return (bool)QFontDatabase::supportsThreadedFontRendering();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:157
 // [16] QFont systemFont(enum QFontDatabase::SystemFont)
@@ -211,6 +238,7 @@ void* C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont
   auto rv = QFontDatabase::systemFont(type_);
 return new QFont(rv);
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN13QFontDatabaseD2Ev(void *this_) {

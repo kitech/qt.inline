@@ -140,6 +140,7 @@ void* C_ZN12QRadioButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQRadioButton*)(0);
   return  new MyQRadioButton(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:60
 // [-2] void QRadioButton(const class QString &, class QWidget *)
@@ -148,6 +149,7 @@ void* C_ZN12QRadioButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) 
   auto _nilp = (MyQRadioButton*)(0);
   return  new MyQRadioButton(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:61
 // [-2] void ~QRadioButton()

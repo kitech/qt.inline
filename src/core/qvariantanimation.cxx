@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qvariantanimation.h
 #ifndef protected
 #define protected public
@@ -139,6 +140,7 @@ void* C_ZN17QVariantAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQVariantAnimation*)(0);
   return  new MyQVariantAnimation(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:69
 // [-2] void ~QVariantAnimation()

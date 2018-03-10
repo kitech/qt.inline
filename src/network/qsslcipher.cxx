@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtNetwork/qsslcipher.h
 #ifndef protected
 #define protected public
@@ -31,13 +32,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2Ev() {
   return  new QSslCipher();
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtNetwork/qsslcipher.h:59
 // [-2] void QSslCipher(const class QString &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QString(QString* name) {
   return  new QSslCipher(*name);
 }
+#endif // QT_VERSION >= 0x050300
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:60
 // [-2] void QSslCipher(const class QString &, QSsl::SslProtocol)
@@ -45,6 +51,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE(QString* name, QSsl::SslProtocol protocol) {
   return  new QSslCipher(*name, protocol);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:63
 // [8] QSslCipher & operator=(class QSslCipher &&)
@@ -71,12 +78,15 @@ void C_ZN10QSslCipherD2Ev(void *this_) {
   delete (QSslCipher*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslcipher.h:68
 // [-2] void swap(class QSslCipher &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
   ((QSslCipher*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:71

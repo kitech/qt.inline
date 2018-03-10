@@ -28,6 +28,7 @@ void* C_ZN17QtMetaTypePrivate11VariantDataC2EiPKvj(const int metaTypeId_, const 
   return  new QtMetaTypePrivate::VariantData(metaTypeId_, data_, flags_);
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN11VariantDataD2Ev(void *this_) {
   delete (QtMetaTypePrivate::VariantData*)(this_);

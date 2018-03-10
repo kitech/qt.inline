@@ -138,6 +138,7 @@ void* C_ZN7QSliderC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSlider*)(0);
   return  new MyQSlider(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:72
 // [-2] void QSlider(Qt::Orientation, class QWidget *)
@@ -146,6 +147,7 @@ void* C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QW
   auto _nilp = (MyQSlider*)(0);
   return  new MyQSlider(orientation, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:74
 // [-2] void ~QSlider()

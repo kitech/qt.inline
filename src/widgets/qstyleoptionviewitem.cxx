@@ -30,6 +30,7 @@ void* C_ZN20QStyleOptionViewItemC2Ev() {
   return  new QStyleOptionViewItem();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionViewItemD2Ev(void *this_) {
   delete (QStyleOptionViewItem*)(this_);

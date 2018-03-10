@@ -198,6 +198,7 @@ void* C_ZN15QSplitterHandleC2EN2Qt11OrientationEP9QSplitter(Qt::Orientation o, Q
   auto _nilp = (MyQSplitterHandle*)(0);
   return  new MyQSplitterHandle(o, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:141
 // [-2] void ~QSplitterHandle()

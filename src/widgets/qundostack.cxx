@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qundostack.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoStackC2EP7QObject(QObject * parent) {
   return  new QUndoStack(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:96
 // [-2] void ~QUndoStack()
@@ -190,12 +192,15 @@ int C_ZNK10QUndoStack9undoLimitEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qundostack.h:127
 // [8] const QUndoCommand * command(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoStack7commandEi(void *this_, int index) {
   return (void*)((QUndoStack*)this_)->command(index);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:130
@@ -206,12 +211,15 @@ void C_ZN10QUndoStack8setCleanEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qundostack.h:131
 // [-2] void resetClean()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoStack10resetCleanEv(void *this_) {
   ((QUndoStack*)this_)->resetClean();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:132

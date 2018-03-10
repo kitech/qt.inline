@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050500
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslEllipticCurveC2Ev() {
   return  new QSslEllipticCurve();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:64
 // [4] QSslEllipticCurve fromShortName(const class QString &)
@@ -35,6 +37,7 @@ void* C_ZN17QSslEllipticCurve13fromShortNameERK7QString(QString* name) {
   auto rv = QSslEllipticCurve::fromShortName(*name);
 return new QSslEllipticCurve(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:65
 // [4] QSslEllipticCurve fromLongName(const class QString &)
@@ -43,6 +46,7 @@ void* C_ZN17QSslEllipticCurve12fromLongNameERK7QString(QString* name) {
   auto rv = QSslEllipticCurve::fromLongName(*name);
 return new QSslEllipticCurve(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:67
 // [8] QString shortName()

@@ -186,6 +186,7 @@ void* C_ZN12QTableWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTableWidget*)(0);
   return  new MyQTableWidget(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:223
 // [-2] void QTableWidget(int, int, class QWidget *)
@@ -194,6 +195,7 @@ void* C_ZN12QTableWidgetC2EiiP7QWidget(int rows, int columns, QWidget * parent) 
   auto _nilp = (MyQTableWidget*)(0);
   return  new MyQTableWidget(rows, columns, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:224
 // [-2] void ~QTableWidget()
@@ -290,12 +292,15 @@ void C_ZN12QTableWidget21setVerticalHeaderItemEiP16QTableWidgetItem(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:241
 // [8] QTableWidgetItem * takeVerticalHeaderItem(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidget22takeVerticalHeaderItemEi(void *this_, int row) {
   return (void*)((QTableWidget*)this_)->takeVerticalHeaderItem(row);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:243
@@ -314,12 +319,15 @@ void C_ZN12QTableWidget23setHorizontalHeaderItemEiP16QTableWidgetItem(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:245
 // [8] QTableWidgetItem * takeHorizontalHeaderItem(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidget24takeHorizontalHeaderItemEi(void *this_, int column) {
   return (void*)((QTableWidget*)this_)->takeHorizontalHeaderItem(column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:246
@@ -370,28 +378,37 @@ void C_ZN12QTableWidget14setCurrentItemEP16QTableWidgetItem(void *this_, QTableW
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtablewidget.h:253
 // [-2] void setCurrentItem(class QTableWidgetItem *, class QItemSelectionModel::SelectionFlags)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget14setCurrentItemEP16QTableWidgetItem6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QTableWidgetItem * item, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QTableWidget*)this_)->setCurrentItem(item, command);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:254
 // [-2] void setCurrentCell(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget14setCurrentCellEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->setCurrentCell(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtablewidget.h:255
 // [-2] void setCurrentCell(int, int, class QItemSelectionModel::SelectionFlags)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget14setCurrentCellEii6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, int row, int column, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QTableWidget*)this_)->setCurrentCell(row, column, command);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:257
@@ -442,36 +459,48 @@ void C_ZN12QTableWidget21closePersistentEditorEP16QTableWidgetItem(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtWidgets/qtablewidget.h:265
 // [1] bool isPersistentEditorOpen(class QTableWidgetItem *)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTableWidget22isPersistentEditorOpenEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
   return (bool)((QTableWidget*)this_)->isPersistentEditorOpen(item);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:267
 // [8] QWidget * cellWidget(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget10cellWidgetEii(void *this_, int row, int column) {
   return (void*)((QTableWidget*)this_)->cellWidget(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:268
 // [-2] void setCellWidget(int, int, class QWidget *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget13setCellWidgetEiiP7QWidget(void *this_, int row, int column, QWidget * widget) {
   ((QTableWidget*)this_)->setCellWidget(row, column, widget);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtablewidget.h:269
 // [-2] void removeCellWidget(int, int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget16removeCellWidgetEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->removeCellWidget(row, column);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:271
@@ -603,12 +632,15 @@ void C_ZN12QTableWidget5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtablewidget.h:296
 // [-2] void clearContents()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget13clearContentsEv(void *this_) {
   ((QTableWidget*)this_)->clearContents();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:299
@@ -675,59 +707,80 @@ void C_ZN12QTableWidget20itemSelectionChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:310
 // [-2] void cellPressed(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget11cellPressedEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->cellPressed(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:311
 // [-2] void cellClicked(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget11cellClickedEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->cellClicked(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:312
 // [-2] void cellDoubleClicked(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget17cellDoubleClickedEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->cellDoubleClicked(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:314
 // [-2] void cellActivated(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget13cellActivatedEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->cellActivated(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:315
 // [-2] void cellEntered(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget11cellEnteredEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->cellEntered(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:316
 // [-2] void cellChanged(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget11cellChangedEii(void *this_, int row, int column) {
   ((QTableWidget*)this_)->cellChanged(row, column);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:318
 // [-2] void currentCellChanged(int, int, int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget18currentCellChangedEiiii(void *this_, int currentRow, int currentColumn, int previousRow, int previousColumn) {
   ((QTableWidget*)this_)->currentCellChanged(currentRow, currentColumn, previousRow, previousColumn);
 }
+#endif // QT_VERSION >= 0x040100
 
 //  main block end

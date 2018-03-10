@@ -99,6 +99,7 @@ void* C_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QPixmap* pixmap
   auto _nilp = (MyQSplashScreen*)(0);
   return  new MyQSplashScreen(*pixmap, f);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:58
 // [-2] void QSplashScreen(class QWidget *, const class QPixmap &, Qt::WindowFlags)
@@ -107,6 +108,7 @@ void* C_ZN13QSplashScreenC2EP7QWidgetRK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QWidge
   auto _nilp = (MyQSplashScreen*)(0);
   return  new MyQSplashScreen(parent, *pixmap, f);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:59
 // [-2] void ~QSplashScreen()
@@ -148,13 +150,16 @@ void C_ZN13QSplashScreen7repaintEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qsplashscreen.h:65
 // [8] QString message()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QSplashScreen7messageEv(void *this_) {
   auto rv = ((QSplashScreen*)this_)->message();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:68

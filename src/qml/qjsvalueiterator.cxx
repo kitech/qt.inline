@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QJSValueIteratorC2ERK8QJSValue(QJSValue* value) {
   return  new QJSValueIterator(*value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalueiterator.h:57
 // [-2] void ~QJSValueIterator()

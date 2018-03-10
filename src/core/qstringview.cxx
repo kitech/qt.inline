@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050a00
 // /usr/include/qt/QtCore/qstringview.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringViewC2Ev() {
   return  new QStringView();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:215
 // [8] QString toString()

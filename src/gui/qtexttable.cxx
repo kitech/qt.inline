@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextTableC2EP13QTextDocument(QTextDocument * doc) {
   return  new QTextTable(doc);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:103
 // [-2] void ~QTextTable()
@@ -67,20 +68,26 @@ void C_ZN10QTextTable13insertColumnsEii(void *this_, int pos, int num) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtexttable.h:108
 // [-2] void appendRows(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable10appendRowsEi(void *this_, int count) {
   ((QTextTable*)this_)->appendRows(count);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtexttable.h:109
 // [-2] void appendColumns(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable13appendColumnsEi(void *this_, int count) {
   ((QTextTable*)this_)->appendColumns(count);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:110
@@ -99,28 +106,37 @@ void C_ZN10QTextTable13removeColumnsEii(void *this_, int pos, int num) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtexttable.h:113
 // [-2] void mergeCells(int, int, int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable10mergeCellsEiiii(void *this_, int row, int col, int numRows, int numCols) {
   ((QTextTable*)this_)->mergeCells(row, col, numRows, numCols);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtexttable.h:114
 // [-2] void mergeCells(const class QTextCursor &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable10mergeCellsERK11QTextCursor(void *this_, QTextCursor* cursor) {
   ((QTextTable*)this_)->mergeCells(*cursor);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qtexttable.h:115
 // [-2] void splitCell(int, int, int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable9splitCellEiiii(void *this_, int row, int col, int numRows, int numCols) {
   ((QTextTable*)this_)->splitCell(row, col, numRows, numCols);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:117

@@ -177,6 +177,7 @@ void* C_ZN7QDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlag
   auto _nilp = (MyQDialog*)(0);
   return  new MyQDialog(parent, f);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialog.h:64
 // [-2] void ~QDialog()
@@ -283,36 +284,48 @@ void C_ZN7QDialog9setResultEi(void *this_, int r) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qdialog.h:88
 // [-2] void finished(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN7QDialog8finishedEi(void *this_, int result) {
   ((QDialog*)this_)->finished(result);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qdialog.h:89
 // [-2] void accepted()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN7QDialog8acceptedEv(void *this_) {
   ((QDialog*)this_)->accepted();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qdialog.h:90
 // [-2] void rejected()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN7QDialog8rejectedEv(void *this_) {
   ((QDialog*)this_)->rejected();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qdialog.h:93
 // [-2] void open()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QDialog4openEv(void *this_) {
   ((QDialog*)this_)->open();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialog.h:94

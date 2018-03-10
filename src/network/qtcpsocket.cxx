@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTcpSocketC2EP7QObject(QObject * parent) {
   return  new QTcpSocket(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpsocket.h:57
 // [-2] void ~QTcpSocket()

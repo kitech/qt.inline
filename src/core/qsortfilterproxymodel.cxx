@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h
 #ifndef protected
 #define protected public
@@ -116,12 +117,15 @@ void C_ZN21QSortFilterProxyModel13filterChangedEv(void *this_) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:127
 // [-2] void invalidateFilter()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel16invalidateFilterEv(void *this_) {
   ((QSortFilterProxyModel*)this_)->QSortFilterProxyModel::invalidateFilter();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:61
@@ -139,6 +143,7 @@ void* C_ZN21QSortFilterProxyModelC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSortFilterProxyModel*)(0);
   return  new MyQSortFilterProxyModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:74
 // [-2] void ~QSortFilterProxyModel()
@@ -272,20 +277,26 @@ void C_ZN21QSortFilterProxyModel18setSortLocaleAwareEb(void *this_, bool on) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:99
 // [4] int sortColumn()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QSortFilterProxyModel10sortColumnEv(void *this_) {
   return (int)((QSortFilterProxyModel*)this_)->sortColumn();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:100
 // [4] Qt::SortOrder sortOrder()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 Qt::SortOrder C_ZNK21QSortFilterProxyModel9sortOrderEv(void *this_) {
   return (Qt::SortOrder)((QSortFilterProxyModel*)this_)->sortOrder();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:102
@@ -384,12 +395,15 @@ void C_ZN21QSortFilterProxyModel5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:119
 // [-2] void invalidate()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel10invalidateEv(void *this_) {
   ((QSortFilterProxyModel*)this_)->invalidate();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:132

@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
   return  new QAccessibleTableModelChangeEvent(obj, changeType);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:939
 // [-2] void QAccessibleTableModelChangeEvent(class QAccessibleInterface *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN32QAccessibleTableModelChangeEventC2EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
   return  new QAccessibleTableModelChangeEvent(iface, changeType);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:947
 // [-2] void ~QAccessibleTableModelChangeEvent()

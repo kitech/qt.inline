@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QTextListFormatC2Ev() {
   return  new QTextListFormat();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:683
 // [1] bool isValid()
@@ -70,38 +71,50 @@ int C_ZNK15QTextListFormat6indentEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:705
 // [-2] void setNumberPrefix(const class QString &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, QString* numberPrefix) {
   ((QTextListFormat*)this_)->setNumberPrefix(*numberPrefix);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:706
 // [8] QString numberPrefix()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTextListFormat12numberPrefixEv(void *this_) {
   auto rv = ((QTextListFormat*)this_)->numberPrefix();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:709
 // [-2] void setNumberSuffix(const class QString &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, QString* numberSuffix) {
   ((QTextListFormat*)this_)->setNumberSuffix(*numberSuffix);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:710
 // [8] QString numberSuffix()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTextListFormat12numberSuffixEv(void *this_) {
   auto rv = ((QTextListFormat*)this_)->numberSuffix();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 
 extern "C" Q_DECL_EXPORT

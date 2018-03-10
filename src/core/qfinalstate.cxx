@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qfinalstate.h
 #ifndef protected
 #define protected public
@@ -97,6 +98,7 @@ void* C_ZN11QFinalStateC2EP6QState(QState * parent) {
   auto _nilp = (MyQFinalState*)(0);
   return  new MyQFinalState(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:55
 // [-2] void ~QFinalState()

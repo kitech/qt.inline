@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qmargins.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QMarginsC2Ev() {
   return  new QMargins();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:55
 // [-2] void QMargins(int, int, int, int)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QMarginsC2Eiiii(int left, int top, int right, int bottom) {
   return  new QMargins(left, top, right, bottom);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:57
 // [1] bool isNull()

@@ -39,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2Ev() {
   return  new QStackedLayout();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:67
 // [-2] void QStackedLayout(class QWidget *)
@@ -46,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2EP7QWidget(QWidget * parent) {
   return  new QStackedLayout(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:68
 // [-2] void QStackedLayout(class QLayout *)
@@ -53,6 +55,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2EP7QLayout(QLayout * parentLayout) {
   return  new QStackedLayout(parentLayout);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:69
 // [-2] void ~QStackedLayout()

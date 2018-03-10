@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QLineC2Ev() {
   return  new QLine();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:56
 // [-2] void QLine(const class QPoint &, const class QPoint &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QLineC2ERK6QPointS2_(QPoint* pt1, QPoint* pt2) {
   return  new QLine(*pt1, *pt2);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:57
 // [-2] void QLine(int, int, int, int)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QLineC2Eiiii(int x1, int y1, int x2, int y2) {
   return  new QLine(x1, y1, x2, y2);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:59
 // [1] bool isNull()
@@ -136,63 +139,84 @@ void C_ZN5QLine9translateEii(void *this_, int dx, int dy) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:76
 // [16] QLine translated(const class QPoint &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QLine10translatedERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QLine*)this_)->translated(*p);
 return new QLine(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:77
 // [16] QLine translated(int, int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QLine10translatedEii(void *this_, int dx, int dy) {
   auto rv = ((QLine*)this_)->translated(dx, dy);
 return new QLine(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qline.h:79
 // [8] QPoint center()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QLine6centerEv(void *this_) {
   auto rv = ((QLine*)this_)->center();
 return new QPoint(rv);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:81
 // [-2] void setP1(const class QPoint &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN5QLine5setP1ERK6QPoint(void *this_, QPoint* p1) {
   ((QLine*)this_)->setP1(*p1);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:82
 // [-2] void setP2(const class QPoint &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN5QLine5setP2ERK6QPoint(void *this_, QPoint* p2) {
   ((QLine*)this_)->setP2(*p2);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:83
 // [-2] void setPoints(const class QPoint &, const class QPoint &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN5QLine9setPointsERK6QPointS2_(void *this_, QPoint* p1, QPoint* p2) {
   ((QLine*)this_)->setPoints(*p1, *p2);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:84
 // [-2] void setLine(int, int, int, int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN5QLine7setLineEiiii(void *this_, int x1, int y1, int x2, int y2) {
   ((QLine*)this_)->setLine(x1, y1, x2, y2);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:86

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtQml/qqmlapplicationengine.h
 #ifndef protected
 #define protected public
@@ -39,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2EP7QObject(QObject * parent) {
   return  new QQmlApplicationEngine(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:57
 // [-2] void QQmlApplicationEngine(const class QUrl &, class QObject *)
@@ -46,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject(QUrl* url, QObject * parent) {
   return  new QQmlApplicationEngine(*url, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:58
 // [-2] void QQmlApplicationEngine(const class QString &, class QObject *)
@@ -53,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2ERK7QStringP7QObject(QString* filePath, QObject * parent) {
   return  new QQmlApplicationEngine(*filePath, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:59
 // [-2] void ~QQmlApplicationEngine()

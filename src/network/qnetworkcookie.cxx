@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtNetwork/qnetworkcookie.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QNetworkCookieC2ERK10QByteArrayS2_(QByteArray* name, QByteArray* value) {
   return  new QNetworkCookie(*name, *value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:68
 // [-2] void ~QNetworkCookie()
@@ -53,12 +55,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:74
 // [-2] void swap(class QNetworkCookie &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN14QNetworkCookie4swapERS_(void *this_, QNetworkCookie* other) {
   ((QNetworkCookie*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:76
@@ -93,20 +98,26 @@ void C_ZN14QNetworkCookie9setSecureEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:82
 // [1] bool isHttpOnly()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QNetworkCookie10isHttpOnlyEv(void *this_) {
   return (bool)((QNetworkCookie*)this_)->isHttpOnly();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:83
 // [-2] void setHttpOnly(_Bool)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN14QNetworkCookie11setHttpOnlyEb(void *this_, bool enable) {
   ((QNetworkCookie*)this_)->setHttpOnly(enable);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:85
@@ -219,11 +230,14 @@ bool C_ZNK14QNetworkCookie17hasSameIdentifierERKS_(void *this_, QNetworkCookie* 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:104
 // [-2] void normalize(const class QUrl &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN14QNetworkCookie9normalizeERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkCookie*)this_)->normalize(*url);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

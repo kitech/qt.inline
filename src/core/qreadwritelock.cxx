@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QReadWriteLockC2ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode) {
   return  new QReadWriteLock(recursionMode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:58
 // [-2] void ~QReadWriteLock()

@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QIconEnginePluginC2EP7QObject(QObject * parent) {
   return 0; // new QIconEnginePlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:59
 // [-2] void ~QIconEnginePlugin()

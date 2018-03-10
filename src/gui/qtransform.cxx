@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtGui/qtransform.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformC2EN2Qt14InitializationE(Qt::Initialization arg0) {
   return  new QTransform(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:70
 // [-2] void QTransform()
@@ -42,6 +44,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformC2Ev() {
   return  new QTransform();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:71
 // [-2] void QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
@@ -49,6 +52,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformC2Eddddddddd(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) {
   return  new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:74
 // [-2] void QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
@@ -56,6 +60,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformC2Edddddd(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) {
   return  new QTransform(h11, h12, h21, h22, dx, dy);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:76
 // [-2] void QTransform(const class QMatrix &)
@@ -63,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformC2ERK7QMatrix(QMatrix* mtx) {
   return  new QTransform(*mtx);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:80
 // [88] QTransform & operator=(class QTransform &&)
@@ -328,6 +334,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(QPolygonF* square, QTransform* result) {
   return (bool)QTransform::squareToQuad(*square, *result);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:130
 // [1] bool quadToSquare(const class QPolygonF &, class QTransform &)
@@ -335,6 +342,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(QPolygonF* quad, QTransform* result) {
   return (bool)QTransform::quadToSquare(*quad, *result);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:131
 // [1] bool quadToQuad(const class QPolygonF &, const class QPolygonF &, class QTransform &)
@@ -342,6 +350,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(QPolygonF* one, QPolygonF* two, QTransform* result) {
   return (bool)QTransform::quadToQuad(*one, *two, *result);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:135
 // [1] bool operator==(const class QTransform &)
@@ -545,21 +554,29 @@ return &rv;
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtransform.h:165
 // [88] QTransform fromTranslate(qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransform13fromTranslateEdd(qreal dx, qreal dy) {
   auto rv = QTransform::fromTranslate(dx, dy);
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040500
+
 // Public static Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtransform.h:166
 // [88] QTransform fromScale(qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransform9fromScaleEdd(qreal dx, qreal dy) {
   auto rv = QTransform::fromScale(dx, dy);
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040500
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTransformD2Ev(void *this_) {

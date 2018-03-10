@@ -356,13 +356,16 @@ void C_ZNK9QLineEdit15initStyleOptionEP17QStyleOptionFrame(void *this_, QStyleOp
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qlineedit.h:238
 // [16] QRect cursorRect()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QLineEdit10cursorRectEv(void *this_) {
   auto rv = ((QLineEdit*)this_)->QLineEdit::cursorRect();
 return new QRect(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:65
@@ -380,6 +383,7 @@ void* C_ZN9QLineEditC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLineEdit*)(0);
   return  new MyQLineEdit(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:94
 // [-2] void QLineEdit(const class QString &, class QWidget *)
@@ -388,6 +392,7 @@ void* C_ZN9QLineEditC2ERK7QStringP7QWidget(QString* arg0, QWidget * parent) {
   auto _nilp = (MyQLineEdit*)(0);
   return  new MyQLineEdit(*arg0, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:95
 // [-2] void ~QLineEdit()
@@ -527,20 +532,26 @@ void* C_ZNK9QLineEdit9validatorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlineedit.h:127
 // [-2] void setCompleter(class QCompleter *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit12setCompleterEP10QCompleter(void *this_, QCompleter * completer) {
   ((QLineEdit*)this_)->setCompleter(completer);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlineedit.h:128
 // [8] QCompleter * completer()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QLineEdit9completerEv(void *this_) {
   return (void*)((QLineEdit*)this_)->completer();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:131
@@ -714,20 +725,26 @@ int C_ZNK9QLineEdit14selectionStartEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtWidgets/qlineedit.h:157
 // [4] int selectionEnd()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QLineEdit12selectionEndEv(void *this_) {
   return (int)((QLineEdit*)this_)->selectionEnd();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtWidgets/qlineedit.h:158
 // [4] int selectionLength()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QLineEdit15selectionLengthEv(void *this_) {
   return (int)((QLineEdit*)this_)->selectionLength();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:160
@@ -803,37 +820,49 @@ bool C_ZNK9QLineEdit18hasAcceptableInputEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qlineedit.h:173
 // [-2] void setTextMargins(int, int, int, int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit14setTextMarginsEiiii(void *this_, int left, int top, int right, int bottom) {
   ((QLineEdit*)this_)->setTextMargins(left, top, right, bottom);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qlineedit.h:174
 // [-2] void setTextMargins(const class QMargins &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit14setTextMarginsERK8QMargins(void *this_, QMargins* margins) {
   ((QLineEdit*)this_)->setTextMargins(*margins);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qlineedit.h:175
 // [-2] void getTextMargins(int *, int *, int *, int *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QLineEdit14getTextMarginsEPiS0_S0_S0_(void *this_, int * left, int * top, int * right, int * bottom) {
   ((QLineEdit*)this_)->getTextMargins(left, top, right, bottom);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qlineedit.h:176
 // [16] QMargins textMargins()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QLineEdit11textMarginsEv(void *this_) {
   auto rv = ((QLineEdit*)this_)->textMargins();
 return new QMargins(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:180

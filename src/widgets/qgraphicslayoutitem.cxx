@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h
 #ifndef protected
 #define protected public
@@ -66,12 +67,15 @@ void C_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void *this_, QG
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:106
 // [-2] void setOwnedByLayout(_Bool)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void *this_, bool ownedByLayout) {
   ((QGraphicsLayoutItem*)this_)->QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
@@ -84,6 +88,7 @@ void* C_ZN19QGraphicsLayoutItemC2EPS_b(QGraphicsLayoutItem * parent, bool isLayo
   auto _nilp = (MyQGraphicsLayoutItem*)(0);
   return 0; // new MyQGraphicsLayoutItem(parent, isLayout);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:58
 // [-2] void ~QGraphicsLayoutItem()
@@ -371,11 +376,14 @@ void* C_ZNK19QGraphicsLayoutItem12graphicsItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:102
 // [1] bool ownedByLayout()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsLayoutItem13ownedByLayoutEv(void *this_) {
   return (bool)((QGraphicsLayoutItem*)this_)->ownedByLayout();
 }
+#endif // QT_VERSION >= 0x040600
 
 //  main block end

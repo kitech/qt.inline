@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040500
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h
 #ifndef protected
 #define protected public
@@ -57,6 +58,7 @@ void* C_ZN17QNetworkDiskCacheC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQNetworkDiskCache*)(0);
   return  new MyQNetworkDiskCache(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:57
 // [-2] void ~QNetworkDiskCache()

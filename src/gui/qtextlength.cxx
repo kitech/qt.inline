@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLengthC2Ev() {
   return  new QTextLength();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:91
 // [-2] void QTextLength(enum QTextLength::Type, qreal)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type type_, qreal value) {
   return  new QTextLength(type_, value);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:93
 // [4] QTextLength::Type type()

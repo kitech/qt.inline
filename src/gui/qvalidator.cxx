@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
   return 0; // new QValidator(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:63
 // [-2] void ~QValidator()

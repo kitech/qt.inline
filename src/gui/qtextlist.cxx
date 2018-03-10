@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTextListC2EP13QTextDocument(QTextDocument * doc) {
   return  new QTextList(doc);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:58
 // [-2] void ~QTextList()

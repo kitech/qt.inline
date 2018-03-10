@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QEventC2ENS_4TypeE(QEvent::Type type_) {
   return  new QEvent(type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:299
 // [-2] void ~QEvent()
@@ -92,10 +93,14 @@ void C_ZN6QEvent6ignoreEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qcoreevent.h:310
 // [4] int registerEventType(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZN6QEvent17registerEventTypeEi(int hint) {
   return (int)QEvent::registerEventType(hint);
 }
+#endif // QT_VERSION >= 0x040400
+
 //  main block end

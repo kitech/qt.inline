@@ -26,6 +26,7 @@ QtPrivate::QContainerImplHelper::CutResult C_ZN9QtPrivate20QContainerImplHelper3
   return (QtPrivate::QContainerImplHelper::CutResult)QtPrivate::QContainerImplHelper::mid(originalLength, position, length);
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN20QContainerImplHelperD2Ev(void *this_) {
   delete (QtPrivate::QContainerImplHelper*)(this_);

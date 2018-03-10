@@ -49,6 +49,7 @@ void* C_ZN8QPictureC2Ei(int formatVersion) {
   auto _nilp = (MyQPicture*)(0);
   return  new MyQPicture(formatVersion);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:61
 // [-2] void ~QPicture()
@@ -172,12 +173,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qpicture.h:85
 // [-2] void swap(class QPicture &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPicture4swapERS_(void *this_, QPicture* other) {
   ((QPicture*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:87
@@ -202,6 +206,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPicture13pictureFormatERK7QString(QString* fileName) {
   return (void*)QPicture::pictureFormat(*fileName);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:97
 // [8] QStringList inputFormatList()
@@ -210,6 +215,7 @@ void* C_ZN8QPicture15inputFormatListEv() {
   auto rv = QPicture::inputFormatList();
 return new QStringList(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:98
 // [8] QStringList outputFormatList()
@@ -218,6 +224,7 @@ void* C_ZN8QPicture16outputFormatListEv() {
   auto rv = QPicture::outputFormatList();
 return new QStringList(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:101
 // [8] QPaintEngine * paintEngine()

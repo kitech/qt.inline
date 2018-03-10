@@ -651,6 +651,7 @@ void* C_ZN11QHeaderViewC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientatio
   auto _nilp = (MyQHeaderView*)(0);
   return  new MyQHeaderView(orientation, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:78
 // [-2] void ~QHeaderView()
@@ -780,12 +781,15 @@ void C_ZN11QHeaderView11moveSectionEii(void *this_, int from, int to) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qheaderview.h:100
 // [-2] void swapSections(int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView12swapSectionsEii(void *this_, int first, int second) {
   ((QHeaderView*)this_)->swapSections(first, second);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:101
@@ -820,12 +824,15 @@ void C_ZN11QHeaderView16setSectionHiddenEib(void *this_, int logicalIndex, bool 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qheaderview.h:106
 // [4] int hiddenSectionCount()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QHeaderView18hiddenSectionCountEv(void *this_) {
   return (int)((QHeaderView*)this_)->hiddenSectionCount();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:108
@@ -868,36 +875,48 @@ int C_ZNK11QHeaderView12logicalIndexEi(void *this_, int visualIndex) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:115
 // [-2] void setSectionsMovable(_Bool)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView18setSectionsMovableEb(void *this_, bool movable) {
   ((QHeaderView*)this_)->setSectionsMovable(movable);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:116
 // [1] bool sectionsMovable()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QHeaderView15sectionsMovableEv(void *this_) {
   return (bool)((QHeaderView*)this_)->sectionsMovable();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:122
 // [-2] void setSectionsClickable(_Bool)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView20setSectionsClickableEb(void *this_, bool clickable) {
   ((QHeaderView*)this_)->setSectionsClickable(clickable);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:123
 // [1] bool sectionsClickable()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QHeaderView17sectionsClickableEv(void *this_) {
   return (bool)((QHeaderView*)this_)->sectionsClickable();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:129
@@ -916,12 +935,15 @@ bool C_ZNK11QHeaderView17highlightSectionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:132
 // [4] QHeaderView::ResizeMode sectionResizeMode(int)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 QHeaderView::ResizeMode C_ZNK11QHeaderView17sectionResizeModeEi(void *this_, int logicalIndex) {
   return (QHeaderView::ResizeMode)((QHeaderView*)this_)->sectionResizeMode(logicalIndex);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:133
@@ -940,28 +962,37 @@ void C_ZN11QHeaderView20setSectionResizeModeEiNS_10ResizeModeE(void *this_, int 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qheaderview.h:136
 // [-2] void setResizeContentsPrecision(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView26setResizeContentsPrecisionEi(void *this_, int precision) {
   ((QHeaderView*)this_)->setResizeContentsPrecision(precision);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qheaderview.h:137
 // [4] int resizeContentsPrecision()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QHeaderView23resizeContentsPrecisionEv(void *this_) {
   return (int)((QHeaderView*)this_)->resizeContentsPrecision();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qheaderview.h:148
 // [4] int stretchSectionCount()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QHeaderView19stretchSectionCountEv(void *this_) {
   return (int)((QHeaderView*)this_)->stretchSectionCount();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:150
@@ -1124,29 +1155,38 @@ bool C_ZNK11QHeaderView13sectionsMovedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qheaderview.h:177
 // [1] bool sectionsHidden()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QHeaderView14sectionsHiddenEv(void *this_) {
   return (bool)((QHeaderView*)this_)->sectionsHidden();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qheaderview.h:180
 // [8] QByteArray saveState()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QHeaderView9saveStateEv(void *this_) {
   auto rv = ((QHeaderView*)this_)->saveState();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qheaderview.h:181
 // [1] bool restoreState(const class QByteArray &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QHeaderView12restoreStateERK10QByteArray(void *this_, QByteArray* state) {
   return (bool)((QHeaderView*)this_)->restoreState(*state);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:184
@@ -1165,20 +1205,26 @@ void C_ZN11QHeaderView9setOffsetEi(void *this_, int offset) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qheaderview.h:188
 // [-2] void setOffsetToSectionPosition(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView26setOffsetToSectionPositionEi(void *this_, int visualIndex) {
   ((QHeaderView*)this_)->setOffsetToSectionPosition(visualIndex);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qheaderview.h:189
 // [-2] void setOffsetToLastSection()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView22setOffsetToLastSectionEv(void *this_) {
   ((QHeaderView*)this_)->setOffsetToLastSection();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:190
@@ -1221,12 +1267,15 @@ void C_ZN11QHeaderView14sectionClickedEi(void *this_, int logicalIndex) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qheaderview.h:197
 // [-2] void sectionEntered(int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView14sectionEnteredEi(void *this_, int logicalIndex) {
   ((QHeaderView*)this_)->sectionEntered(logicalIndex);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:198
@@ -1253,19 +1302,25 @@ void C_ZN11QHeaderView26sectionHandleDoubleClickedEi(void *this_, int logicalInd
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qheaderview.h:201
 // [-2] void geometriesChanged()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView17geometriesChangedEv(void *this_) {
   ((QHeaderView*)this_)->geometriesChanged();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qheaderview.h:202
 // [-2] void sortIndicatorChanged(int, Qt::SortOrder)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView20sortIndicatorChangedEiN2Qt9SortOrderE(void *this_, int logicalIndex, Qt::SortOrder order) {
   ((QHeaderView*)this_)->sortIndicatorChanged(logicalIndex, order);
 }
+#endif // QT_VERSION >= 0x040300
 
 //  main block end

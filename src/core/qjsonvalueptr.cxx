@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValuePtrC2ERK10QJsonValue(QJsonValue* val) {
   return  new QJsonValuePtr(*val);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:229
 // [24] QJsonValue & operator*()

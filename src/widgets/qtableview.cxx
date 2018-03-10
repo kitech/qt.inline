@@ -551,6 +551,7 @@ void* C_ZN10QTableViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTableView*)(0);
   return  new MyQTableView(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:66
 // [-2] void ~QTableView()
@@ -639,12 +640,15 @@ int C_ZNK10QTableView5rowAtEi(void *this_, int y) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtableview.h:81
 // [-2] void setRowHeight(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView12setRowHeightEii(void *this_, int row, int height) {
   ((QTableView*)this_)->setRowHeight(row, height);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:82
@@ -671,12 +675,15 @@ int C_ZNK10QTableView8columnAtEi(void *this_, int x) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtableview.h:87
 // [-2] void setColumnWidth(int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView14setColumnWidthEii(void *this_, int column, int width) {
   ((QTableView*)this_)->setColumnWidth(column, width);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:88
@@ -817,44 +824,59 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtableview.h:116
 // [-2] void setSpan(int, int, int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView7setSpanEiiii(void *this_, int row, int column, int rowSpan, int columnSpan) {
   ((QTableView*)this_)->setSpan(row, column, rowSpan, columnSpan);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtableview.h:117
 // [4] int rowSpan(int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTableView7rowSpanEii(void *this_, int row, int column) {
   return (int)((QTableView*)this_)->rowSpan(row, column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtableview.h:118
 // [4] int columnSpan(int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTableView10columnSpanEii(void *this_, int row, int column) {
   return (int)((QTableView*)this_)->columnSpan(row, column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtableview.h:119
 // [-2] void clearSpans()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView10clearSpansEv(void *this_) {
   ((QTableView*)this_)->clearSpans();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtableview.h:121
 // [-2] void sortByColumn(int, Qt::SortOrder)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView12sortByColumnEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
   ((QTableView*)this_)->sortByColumn(column, order);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:124

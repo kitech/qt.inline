@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qjsonarray.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonArrayC2Ev() {
   return  new QJsonArray();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:70
 // [-2] void ~QJsonArray()
@@ -60,6 +62,7 @@ void* C_ZN10QJsonArray14fromStringListERK11QStringList(QStringList* list) {
   auto rv = QJsonArray::fromStringList(*list);
 return new QJsonArray(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:91
 // [8] QVariantList toVariantList()
@@ -204,12 +207,15 @@ bool C_ZNK10QJsonArrayneERKS_(void *this_, QJsonArray* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qjsonarray.h:118
 // [-2] void swap(class QJsonArray &)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QJsonArray4swapERS_(void *this_, QJsonArray* other) {
   ((QJsonArray*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:214

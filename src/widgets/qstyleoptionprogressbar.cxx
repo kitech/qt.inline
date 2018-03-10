@@ -30,6 +30,7 @@ void* C_ZN23QStyleOptionProgressBarC2Ev() {
   return  new QStyleOptionProgressBar();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN23QStyleOptionProgressBarD2Ev(void *this_) {
   delete (QStyleOptionProgressBar*)(this_);

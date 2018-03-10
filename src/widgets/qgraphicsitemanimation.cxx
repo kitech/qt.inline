@@ -76,6 +76,7 @@ void* C_ZN22QGraphicsItemAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsItemAnimation*)(0);
   return  new MyQGraphicsItemAnimation(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:62
 // [-2] void ~QGraphicsItemAnimation()

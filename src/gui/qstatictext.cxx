@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040700
 // /usr/include/qt/QtGui/qstatictext.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QStaticTextC2Ev() {
   return  new QStaticText();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:65
 // [-2] void QStaticText(const class QString &)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QStaticTextC2ERK7QString(QString* text) {
   return  new QStaticText(*text);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:68
 // [8] QStaticText & operator=(class QStaticText &&)
@@ -62,12 +65,15 @@ void C_ZN11QStaticTextD2Ev(void *this_) {
   delete (QStaticText*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qstatictext.h:73
 // [-2] void swap(class QStaticText &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QStaticText4swapERS_(void *this_, QStaticText* other) {
   ((QStaticText*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:75

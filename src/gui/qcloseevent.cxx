@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QCloseEventC2Ev() {
   return  new QCloseEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:478
 // [-2] void ~QCloseEvent()

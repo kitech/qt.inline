@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QTableWidgetSelectionRangeC2Ev() {
   return  new QTableWidgetSelectionRange();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:56
 // [-2] void QTableWidgetSelectionRange(int, int, int, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QTableWidgetSelectionRangeC2Eiiii(int top, int left, int bottom, int right) {
   return  new QTableWidgetSelectionRange(top, left, bottom, right);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:58
 // [-2] void ~QTableWidgetSelectionRange()
@@ -76,19 +78,25 @@ int C_ZNK26QTableWidgetSelectionRange11rightColumnEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:64
 // [4] int rowCount()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK26QTableWidgetSelectionRange8rowCountEv(void *this_) {
   return (int)((QTableWidgetSelectionRange*)this_)->rowCount();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtablewidget.h:65
 // [4] int columnCount()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK26QTableWidgetSelectionRange11columnCountEv(void *this_) {
   return (int)((QTableWidgetSelectionRange*)this_)->columnCount();
 }
+#endif // QT_VERSION >= 0x040100
 
 //  main block end

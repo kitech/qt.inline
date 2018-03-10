@@ -30,6 +30,7 @@ void* C_ZN20QStyleOptionTitleBarC2Ev() {
   return  new QStyleOptionTitleBar();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionTitleBarD2Ev(void *this_) {
   delete (QStyleOptionTitleBar*)(this_);

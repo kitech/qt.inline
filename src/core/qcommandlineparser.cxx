@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qcommandlineparser.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineParserC2Ev() {
   return  new QCommandLineParser();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:60
 // [-2] void ~QCommandLineParser()
@@ -222,12 +224,15 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qcommandlineparser.h:102
 // [-2] void showVersion()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser11showVersionEv(void *this_) {
   ((QCommandLineParser*)this_)->showVersion();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:103

@@ -30,6 +30,7 @@ void* C_ZN22QStyleOptionToolButtonC2Ev() {
   return  new QStyleOptionToolButton();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionToolButtonD2Ev(void *this_) {
   delete (QStyleOptionToolButton*)(this_);

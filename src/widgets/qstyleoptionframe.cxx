@@ -30,6 +30,7 @@ void* C_ZN17QStyleOptionFrameC2Ev() {
   return  new QStyleOptionFrame();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN17QStyleOptionFrameD2Ev(void *this_) {
   delete (QStyleOptionFrame*)(this_);

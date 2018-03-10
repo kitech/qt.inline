@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ) {
   return  new QAccessibleEvent(obj, typ);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:684
 // [-2] void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QAccessibleEventC2EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ) {
   return  new QAccessibleEvent(iface, typ);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:699
 // [-2] void ~QAccessibleEvent()

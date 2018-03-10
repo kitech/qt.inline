@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QSGMaterialC2Ev() {
   return 0; // new QSGMaterial();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:147
 // [-2] void ~QSGMaterial()

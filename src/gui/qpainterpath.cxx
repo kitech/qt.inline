@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathC2Ev() {
   return  new QPainterPath();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:92
 // [-2] void QPainterPath(const class QPointF &)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathC2ERK7QPointF(QPointF* startPoint) {
   return  new QPainterPath(*startPoint);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:94
 // [8] QPainterPath & operator=(const class QPainterPath &)
@@ -62,12 +64,15 @@ void C_ZN12QPainterPathD2Ev(void *this_) {
   delete (QPainterPath*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qpainterpath.h:100
 // [-2] void swap(class QPainterPath &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath4swapERS_(void *this_, QPainterPath* other) {
   ((QPainterPath*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:102
@@ -110,20 +115,26 @@ void C_ZN12QPainterPath6lineToEdd(void *this_, qreal x, qreal y) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainterpath.h:110
 // [-2] void arcMoveTo(const class QRectF &, qreal)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9arcMoveToERK6QRectFd(void *this_, QRectF* rect, qreal angle) {
   ((QPainterPath*)this_)->arcMoveTo(*rect, angle);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainterpath.h:111
 // [-2] void arcMoveTo(qreal, qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9arcMoveToEddddd(void *this_, qreal x, qreal y, qreal w, qreal h, qreal angle) {
   ((QPainterPath*)this_)->arcMoveTo(x, y, w, h, angle);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:113
@@ -215,12 +226,15 @@ void C_ZN12QPainterPath10addEllipseEdddd(void *this_, qreal x, qreal y, qreal w,
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainterpath.h:128
 // [-2] void addEllipse(const class QPointF &, qreal, qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath10addEllipseERK7QPointFdd(void *this_, QPointF* center, qreal rx, qreal ry) {
   ((QPainterPath*)this_)->addEllipse(*center, rx, ry);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:129
@@ -263,20 +277,26 @@ void C_ZN12QPainterPath9addRegionERK7QRegion(void *this_, QRegion* region) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainterpath.h:135
 // [-2] void addRoundedRect(const class QRectF &, qreal, qreal, Qt::SizeMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath14addRoundedRectERK6QRectFddN2Qt8SizeModeE(void *this_, QRectF* rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainterPath*)this_)->addRoundedRect(*rect, xRadius, yRadius, mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainterpath.h:137
 // [-2] void addRoundedRect(qreal, qreal, qreal, qreal, qreal, qreal, Qt::SizeMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath14addRoundedRectEddddddN2Qt8SizeModeE(void *this_, qreal x, qreal y, qreal w, qreal h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainterPath*)this_)->addRoundedRect(x, y, w, h, xRadius, yRadius, mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:141
@@ -343,38 +363,50 @@ bool C_ZNK12QPainterPath10intersectsERK6QRectF(void *this_, QRectF* rect) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpainterpath.h:154
 // [-2] void translate(qreal, qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9translateEdd(void *this_, qreal dx, qreal dy) {
   ((QPainterPath*)this_)->translate(dx, dy);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public inline Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpainterpath.h:155
 // [-2] void translate(const class QPointF &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath9translateERK7QPointF(void *this_, QPointF* offset) {
   ((QPainterPath*)this_)->translate(*offset);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpainterpath.h:157
 // [8] QPainterPath translated(qreal, qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10translatedEdd(void *this_, qreal dx, qreal dy) {
   auto rv = ((QPainterPath*)this_)->translated(dx, dy);
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public inline Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpainterpath.h:158
 // [8] QPainterPath translated(const class QPointF &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10translatedERK7QPointF(void *this_, QPointF* offset) {
   auto rv = ((QPainterPath*)this_)->translated(*offset);
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:160
@@ -462,12 +494,15 @@ QPainterPath::Element C_ZNK12QPainterPath9elementAtEi(void *this_, int i) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainterpath.h:178
 // [-2] void setElementPositionAt(int, qreal, qreal)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPainterPath20setElementPositionAtEidd(void *this_, int i, qreal x, qreal y) {
   ((QPainterPath*)this_)->setElementPositionAt(i, x, y);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:180
@@ -511,47 +546,62 @@ qreal C_ZNK12QPainterPath14slopeAtPercentEd(void *this_, qreal t) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpainterpath.h:186
 // [1] bool intersects(const class QPainterPath &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath10intersectsERKS_(void *this_, QPainterPath* p) {
   return (bool)((QPainterPath*)this_)->intersects(*p);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpainterpath.h:187
 // [1] bool contains(const class QPainterPath &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QPainterPath8containsERKS_(void *this_, QPainterPath* p) {
   return (bool)((QPainterPath*)this_)->contains(*p);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpainterpath.h:188
 // [8] QPainterPath united(const class QPainterPath &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath6unitedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->united(*r);
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpainterpath.h:189
 // [8] QPainterPath intersected(const class QPainterPath &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath11intersectedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->intersected(*r);
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpainterpath.h:190
 // [8] QPainterPath subtracted(const class QPainterPath &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10subtractedERKS_(void *this_, QPainterPath* r) {
   auto rv = ((QPainterPath*)this_)->subtracted(*r);
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:191
@@ -563,13 +613,16 @@ return new QPainterPath(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainterpath.h:193
 // [8] QPainterPath simplified()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath10simplifiedEv(void *this_) {
   auto rv = ((QPainterPath*)this_)->simplified();
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:195

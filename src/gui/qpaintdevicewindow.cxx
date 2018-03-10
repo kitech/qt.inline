@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050400
 // /usr/include/qt/QtGui/qpaintdevicewindow.h
 #ifndef protected
 #define protected public

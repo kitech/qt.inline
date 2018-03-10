@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtNetwork/qnetworkinterface.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkInterfaceC2Ev() {
   return  new QNetworkInterface();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:107
 // [8] QNetworkInterface & operator=(class QNetworkInterface &&)
@@ -53,12 +55,15 @@ void C_ZN17QNetworkInterfaceD2Ev(void *this_) {
   delete (QNetworkInterface*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:112
 // [-2] void swap(class QNetworkInterface &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkInterface4swapERS_(void *this_, QNetworkInterface* other) {
   ((QNetworkInterface*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:114
@@ -69,12 +74,15 @@ bool C_ZNK17QNetworkInterface7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:116
 // [4] int index()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QNetworkInterface5indexEv(void *this_) {
   return (int)((QNetworkInterface*)this_)->index();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:117
@@ -86,13 +94,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:118
 // [8] QString humanReadableName()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QNetworkInterface17humanReadableNameEv(void *this_) {
   auto rv = ((QNetworkInterface*)this_)->humanReadableName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:119
@@ -113,12 +124,16 @@ return new QString(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:123
 // [4] int interfaceIndexFromName(const class QString &)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 int C_ZN17QNetworkInterface22interfaceIndexFromNameERK7QString(QString* name) {
   return (int)QNetworkInterface::interfaceIndexFromName(*name);
 }
+#endif // QT_VERSION >= 0x050700
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:124
 // [8] QNetworkInterface interfaceFromName(const class QString &)
@@ -127,6 +142,7 @@ void* C_ZN17QNetworkInterface17interfaceFromNameERK7QString(QString* name) {
   auto rv = QNetworkInterface::interfaceFromName(*name);
 return new QNetworkInterface(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:125
 // [8] QNetworkInterface interfaceFromIndex(int)
@@ -135,12 +151,17 @@ void* C_ZN17QNetworkInterface18interfaceFromIndexEi(int index) {
   auto rv = QNetworkInterface::interfaceFromIndex(index);
 return new QNetworkInterface(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:126
 // [8] QString interfaceNameFromIndex(int)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkInterface22interfaceNameFromIndexEi(int index) {
   auto rv = QNetworkInterface::interfaceNameFromIndex(index);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050700
+
 //  main block end

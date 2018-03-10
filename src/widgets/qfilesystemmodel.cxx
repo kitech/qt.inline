@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h
 #ifndef protected
 #define protected public
@@ -86,12 +87,15 @@ void C_ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(void *this_, QString* 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:68
 // [-2] void directoryLoaded(const class QString &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel15directoryLoadedERK7QString(void *this_, QString* path) {
   ((QFileSystemModel*)this_)->directoryLoaded(*path);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:78
@@ -101,6 +105,7 @@ void* C_ZN16QFileSystemModelC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQFileSystemModel*)(0);
   return  new MyQFileSystemModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:79
 // [-2] void ~QFileSystemModel()

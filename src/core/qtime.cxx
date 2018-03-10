@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QTimeC2Ev() {
   return  new QTime();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:161
 // [-2] void QTime(int, int, int, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QTimeC2Eiiii(int h, int m, int s, int ms) {
   return  new QTime(h, m, s, ms);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:163
 // [1] bool isNull()
@@ -209,6 +211,7 @@ void* C_ZN5QTime24fromMSecsSinceStartOfDayEi(int msecs) {
   auto rv = QTime::fromMSecsSinceStartOfDay(msecs);
 return new QTime(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:192
 // [4] int msecsSinceStartOfDay()
@@ -225,6 +228,7 @@ void* C_ZN5QTime11currentTimeEv() {
   auto rv = QTime::currentTime();
 return new QTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:196
 // [4] QTime fromString(const class QString &, Qt::DateFormat)
@@ -233,6 +237,7 @@ void* C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFor
   auto rv = QTime::fromString(*s, f);
 return new QTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:197
 // [4] QTime fromString(const class QString &, const class QString &)
@@ -241,6 +246,7 @@ void* C_ZN5QTime10fromStringERK7QStringS2_(QString* s, QString* format) {
   auto rv = QTime::fromString(*s, *format);
 return new QTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:199
 // [1] bool isValid(int, int, int, int)
@@ -248,6 +254,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN5QTime7isValidEiiii(int h, int m, int s, int ms) {
   return (bool)QTime::isValid(h, m, s, ms);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:201
 // [-2] void start()

@@ -70,6 +70,7 @@ void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initia
   auto _nilp = (MyQFutureInterfaceBase*)(0);
   return  new MyQFutureInterfaceBase(initialState);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:75
 // [-2] void ~QFutureInterfaceBase()

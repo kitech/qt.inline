@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2Ev() {
   return  new QTextCursor();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:70
 // [-2] void QTextCursor(class QTextDocument *)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2EP13QTextDocument(QTextDocument * document) {
   return  new QTextCursor(document);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:73
 // [-2] void QTextCursor(class QTextFrame *)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2EP10QTextFrame(QTextFrame * frame) {
   return  new QTextCursor(frame);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:74
 // [-2] void QTextCursor(const class QTextBlock &)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2ERK10QTextBlock(QTextBlock* block) {
   return  new QTextCursor(*block);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:77
 // [8] QTextCursor & operator=(class QTextCursor &&)
@@ -80,12 +84,15 @@ void C_ZN11QTextCursorD2Ev(void *this_) {
   delete (QTextCursor*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qtextcursor.h:82
 // [-2] void swap(class QTextCursor &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor4swapERS_(void *this_, QTextCursor* other) {
   ((QTextCursor*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:84
@@ -112,12 +119,15 @@ int C_ZNK11QTextCursor8positionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextcursor.h:93
 // [4] int positionInBlock()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextCursor15positionInBlockEv(void *this_) {
   return (int)((QTextCursor*)this_)->positionInBlock();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:95
@@ -152,52 +162,70 @@ bool C_ZN11QTextCursor12movePositionENS_13MoveOperationENS_8MoveModeEi(void *thi
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextcursor.h:133
 // [1] bool visualNavigation()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursor16visualNavigationEv(void *this_) {
   return (bool)((QTextCursor*)this_)->visualNavigation();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextcursor.h:134
 // [-2] void setVisualNavigation(_Bool)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor19setVisualNavigationEb(void *this_, bool b) {
   ((QTextCursor*)this_)->setVisualNavigation(b);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextcursor.h:136
 // [-2] void setVerticalMovementX(int)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor20setVerticalMovementXEi(void *this_, int x) {
   ((QTextCursor*)this_)->setVerticalMovementX(x);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextcursor.h:137
 // [4] int verticalMovementX()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextCursor17verticalMovementXEv(void *this_) {
   return (int)((QTextCursor*)this_)->verticalMovementX();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextcursor.h:139
 // [-2] void setKeepPositionOnInsert(_Bool)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor23setKeepPositionOnInsertEb(void *this_, bool b) {
   ((QTextCursor*)this_)->setKeepPositionOnInsert(b);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextcursor.h:140
 // [1] bool keepPositionOnInsert()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursor20keepPositionOnInsertEv(void *this_) {
   return (bool)((QTextCursor*)this_)->keepPositionOnInsert();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:142
@@ -406,12 +434,15 @@ bool C_ZNK11QTextCursor7atStartEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qtextcursor.h:181
 // [1] bool atEnd()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursor5atEndEv(void *this_) {
   return (bool)((QTextCursor*)this_)->atEnd();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:183
@@ -526,20 +557,26 @@ void C_ZN11QTextCursor14insertFragmentERK21QTextDocumentFragment(void *this_, QT
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextcursor.h:204
 // [-2] void insertHtml(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor10insertHtmlERK7QString(void *this_, QString* html) {
   ((QTextCursor*)this_)->insertHtml(*html);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextcursor.h:207
 // [-2] void insertImage(const class QTextImageFormat &, class QTextFrameFormat::Position)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertImageERK16QTextImageFormatN16QTextFrameFormat8PositionE(void *this_, QTextImageFormat* format, QTextFrameFormat::Position alignment) {
   ((QTextCursor*)this_)->insertImage(*format, alignment);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:208
@@ -558,12 +595,15 @@ void C_ZN11QTextCursor11insertImageERK7QString(void *this_, QString* name) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextcursor.h:210
 // [-2] void insertImage(const class QImage &, const class QString &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertImageERK6QImageRK7QString(void *this_, QImage* image, QString* name) {
   ((QTextCursor*)this_)->insertImage(*image, *name);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:212
@@ -646,27 +686,36 @@ bool C_ZNK11QTextCursor8isCopyOfERKS_(void *this_, QTextCursor* other) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextcursor.h:225
 // [4] int blockNumber()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextCursor11blockNumberEv(void *this_) {
   return (int)((QTextCursor*)this_)->blockNumber();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextcursor.h:226
 // [4] int columnNumber()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextCursor12columnNumberEv(void *this_) {
   return (int)((QTextCursor*)this_)->columnNumber();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextcursor.h:228
 // [8] QTextDocument * document()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextCursor8documentEv(void *this_) {
   return (void*)((QTextCursor*)this_)->document();
 }
+#endif // QT_VERSION >= 0x040500
 
 //  main block end

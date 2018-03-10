@@ -201,6 +201,7 @@ void* C_ZN9QSplitterC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSplitter*)(0);
   return  new MyQSplitter(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:68
 // [-2] void QSplitter(Qt::Orientation, class QWidget *)
@@ -209,6 +210,7 @@ void* C_ZN9QSplitterC2EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget
   auto _nilp = (MyQSplitter*)(0);
   return  new MyQSplitter(arg0, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:69
 // [-2] void ~QSplitter()
@@ -233,12 +235,15 @@ void C_ZN9QSplitter12insertWidgetEiP7QWidget(void *this_, int index, QWidget * w
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtWidgets/qsplitter.h:73
 // [8] QWidget * replaceWidget(int, class QWidget *)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSplitter13replaceWidgetEiP7QWidget(void *this_, int index, QWidget * widget) {
   return (void*)((QSplitter*)this_)->replaceWidget(index, widget);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:75

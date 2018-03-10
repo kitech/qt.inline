@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtNetwork/qnetworkinterface.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QNetworkAddressEntryC2Ev() {
   return  new QNetworkAddressEntry();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:62
 // [8] QNetworkAddressEntry & operator=(class QNetworkAddressEntry &&)
@@ -53,12 +55,15 @@ void C_ZN20QNetworkAddressEntryD2Ev(void *this_) {
   delete (QNetworkAddressEntry*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:67
 // [-2] void swap(class QNetworkAddressEntry &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN20QNetworkAddressEntry4swapERS_(void *this_, QNetworkAddressEntry* other) {
   ((QNetworkAddressEntry*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:69
@@ -111,20 +116,26 @@ void C_ZN20QNetworkAddressEntry10setNetmaskERK12QHostAddress(void *this_, QHostA
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:78
 // [4] int prefixLength()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QNetworkAddressEntry12prefixLengthEv(void *this_) {
   return (int)((QNetworkAddressEntry*)this_)->prefixLength();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:79
 // [-2] void setPrefixLength(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN20QNetworkAddressEntry15setPrefixLengthEi(void *this_, int length) {
   ((QNetworkAddressEntry*)this_)->setPrefixLength(length);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:81

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -33,6 +34,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamWriterC2Ev() {
   return  new QXmlStreamWriter();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:473
 // [-2] void QXmlStreamWriter(class QIODevice *)
@@ -40,6 +42,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamWriterC2EP9QIODevice(QIODevice * device) {
   return  new QXmlStreamWriter(device);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:474
 // [-2] void QXmlStreamWriter(class QByteArray *)
@@ -47,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamWriterC2EP10QByteArray(QByteArray * array) {
   return  new QXmlStreamWriter(array);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:475
 // [-2] void QXmlStreamWriter(class QString *)
@@ -54,6 +58,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamWriterC2EP7QString(QString * string) {
   return  new QXmlStreamWriter(string);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:476
 // [-2] void ~QXmlStreamWriter()
@@ -102,20 +107,26 @@ void* C_ZNK16QXmlStreamWriter5codecEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:487
 // [-2] void setAutoFormatting(_Bool)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamWriter17setAutoFormattingEb(void *this_, bool arg0) {
   ((QXmlStreamWriter*)this_)->setAutoFormatting(arg0);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:488
 // [1] bool autoFormatting()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QXmlStreamWriter14autoFormattingEv(void *this_) {
   return (bool)((QXmlStreamWriter*)this_)->autoFormatting();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:490
@@ -278,12 +289,15 @@ void C_ZN16QXmlStreamWriter26writeProcessingInstructionERK7QStringS2_(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qxmlstream.h:518
 // [-2] void writeStartDocument()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamWriter18writeStartDocumentEv(void *this_) {
   ((QXmlStreamWriter*)this_)->writeStartDocument();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:519
@@ -294,12 +308,15 @@ void C_ZN16QXmlStreamWriter18writeStartDocumentERK7QString(void *this_, QString*
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qxmlstream.h:520
 // [-2] void writeStartDocument(const class QString &, _Bool)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamWriter18writeStartDocumentERK7QStringb(void *this_, QString* version, bool standalone) {
   ((QXmlStreamWriter*)this_)->writeStartDocument(*version, standalone);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:521

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QResizeEventC2ERK5QSizeS2_(QSize* size, QSize* oldSize) {
   return  new QResizeEvent(*size, *oldSize);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:464
 // [-2] void ~QResizeEvent()

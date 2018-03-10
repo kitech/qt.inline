@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QFontInfoC2ERK5QFont(QFont* arg0) {
   return  new QFontInfo(*arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:55
 // [-2] void ~QFontInfo()
@@ -44,12 +45,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qfontinfo.h:59
 // [-2] void swap(class QFontInfo &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFontInfo4swapERS_(void *this_, QFontInfo* other) {
   ((QFontInfo*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:61
@@ -61,13 +65,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qfontinfo.h:62
 // [8] QString styleName()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFontInfo9styleNameEv(void *this_) {
   auto rv = ((QFontInfo*)this_)->styleName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:63

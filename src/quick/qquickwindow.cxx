@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQuick/qquickwindow.h
 #ifndef protected
 #define protected public
@@ -319,6 +320,7 @@ void* C_ZN12QQuickWindowC2EP7QWindow(QWindow * parent) {
   auto _nilp = (MyQQuickWindow*)(0);
   return  new MyQQuickWindow(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:110
 // [-2] void QQuickWindow(class QQuickRenderControl *)
@@ -327,6 +329,7 @@ void* C_ZN12QQuickWindowC2EP19QQuickRenderControl(QQuickRenderControl * renderCo
   auto _nilp = (MyQQuickWindow*)(0);
   return  new MyQQuickWindow(renderControl);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:112
 // [-2] void ~QQuickWindow()
@@ -409,12 +412,15 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtQuick/qquickwindow.h:134
 // [-2] void resetOpenGLState()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow16resetOpenGLStateEv(void *this_) {
   ((QQuickWindow*)this_)->resetOpenGLState();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:136
@@ -490,19 +496,27 @@ return new QColor(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtQuick/qquickwindow.h:153
 // [1] bool hasDefaultAlphaBuffer()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QQuickWindow21hasDefaultAlphaBufferEv() {
   return (bool)QQuickWindow::hasDefaultAlphaBuffer();
 }
+#endif // QT_VERSION >= 0x050100
+
 // Public static Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtQuick/qquickwindow.h:154
 // [-2] void setDefaultAlphaBuffer(_Bool)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow21setDefaultAlphaBufferEb(bool useAlpha) {
   QQuickWindow::setDefaultAlphaBuffer(useAlpha);
 }
+#endif // QT_VERSION >= 0x050100
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:156
 // [-2] void setPersistentOpenGLContext(_Bool)
@@ -560,66 +574,94 @@ qreal C_ZNK12QQuickWindow25effectiveDevicePixelRatioEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:169
 // [8] QSGRendererInterface * rendererInterface()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow17rendererInterfaceEv(void *this_) {
   return (void*)((QQuickWindow*)this_)->rendererInterface();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public static Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:171
 // [-2] void setSceneGraphBackend(class QSGRendererInterface::GraphicsApi)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow20setSceneGraphBackendEN20QSGRendererInterface11GraphicsApiE(QSGRendererInterface::GraphicsApi api) {
   QQuickWindow::setSceneGraphBackend(api);
 }
+#endif // QT_VERSION >= 0x050800
+
 // Public static Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:172
 // [-2] void setSceneGraphBackend(const class QString &)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow20setSceneGraphBackendERK7QString(QString* backend) {
   QQuickWindow::setSceneGraphBackend(*backend);
 }
+#endif // QT_VERSION >= 0x050800
+
 // Public static Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtQuick/qquickwindow.h:173
 // [8] QString sceneGraphBackend()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWindow17sceneGraphBackendEv() {
   auto rv = QQuickWindow::sceneGraphBackend();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050900
+
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:175
 // [8] QSGRectangleNode * createRectangleNode()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow19createRectangleNodeEv(void *this_) {
   return (void*)((QQuickWindow*)this_)->createRectangleNode();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:176
 // [8] QSGImageNode * createImageNode()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow15createImageNodeEv(void *this_) {
   return (void*)((QQuickWindow*)this_)->createImageNode();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:177
 // [8] QSGNinePatchNode * createNinePatchNode()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow19createNinePatchNodeEv(void *this_) {
   return (void*)((QQuickWindow*)this_)->createNinePatchNode();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public static Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtQuick/qquickwindow.h:179
 // [4] QQuickWindow::TextRenderType textRenderType()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 QQuickWindow::TextRenderType C_ZN12QQuickWindow14textRenderTypeEv() {
   return (QQuickWindow::TextRenderType)QQuickWindow::textRenderType();
 }
+#endif // QT_VERSION >= 0x050a00
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:180
 // [-2] void setTextRenderType(enum QQuickWindow::TextRenderType)
@@ -627,6 +669,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow17setTextRenderTypeENS_14TextRenderTypeE(QQuickWindow::TextRenderType renderType) {
   QQuickWindow::setTextRenderType(renderType);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:183
 // [-2] void frameSwapped()
@@ -660,12 +703,15 @@ void C_ZN12QQuickWindow19beforeSynchronizingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtQuick/qquickwindow.h:188
 // [-2] void afterSynchronizing()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow18afterSynchronizingEv(void *this_) {
   ((QQuickWindow*)this_)->afterSynchronizing();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:189
@@ -684,20 +730,26 @@ void C_ZN12QQuickWindow14afterRenderingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtQuick/qquickwindow.h:191
 // [-2] void afterAnimating()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow14afterAnimatingEv(void *this_) {
   ((QQuickWindow*)this_)->afterAnimating();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtQuick/qquickwindow.h:192
 // [-2] void sceneGraphAboutToStop()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow21sceneGraphAboutToStopEv(void *this_) {
   ((QQuickWindow*)this_)->sceneGraphAboutToStop();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:195
@@ -716,12 +768,15 @@ void C_ZN12QQuickWindow22activeFocusItemChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtQuick/qquickwindow.h:197
 // [-2] void sceneGraphError(class QQuickWindow::SceneGraphError, const class QString &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow15sceneGraphErrorENS_15SceneGraphErrorERK7QString(void *this_, QQuickWindow::SceneGraphError error, QString* message) {
   ((QQuickWindow*)this_)->sceneGraphError(error, *message);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:201

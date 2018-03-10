@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtCore/qlockfile.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QLockFileC2ERK7QString(QString* fileName) {
   return  new QLockFile(*fileName);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:54
 // [-2] void ~QLockFile()

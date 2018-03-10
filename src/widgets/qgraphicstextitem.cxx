@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -484,6 +485,7 @@ void* C_ZN17QGraphicsTextItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsTextItem*)(0);
   return  new MyQGraphicsTextItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:878
 // [-2] void QGraphicsTextItem(const class QString &, class QGraphicsItem *)
@@ -492,6 +494,7 @@ void* C_ZN17QGraphicsTextItemC2ERK7QStringP13QGraphicsItem(QString* text, QGraph
   auto _nilp = (MyQGraphicsTextItem*)(0);
   return  new MyQGraphicsTextItem(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:879
 // [-2] void ~QGraphicsTextItem()
@@ -683,20 +686,26 @@ Qt::TextInteractionFlags C_ZNK17QGraphicsTextItem20textInteractionFlagsEv(void *
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:916
 // [-2] void setTabChangesFocus(_Bool)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem18setTabChangesFocusEb(void *this_, bool b) {
   ((QGraphicsTextItem*)this_)->setTabChangesFocus(b);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:917
 // [1] bool tabChangesFocus()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsTextItem15tabChangesFocusEv(void *this_) {
   return (bool)((QGraphicsTextItem*)this_)->tabChangesFocus();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:919

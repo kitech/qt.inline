@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QLatin1CharC2Ec(char c) {
   return  new QLatin1Char(c);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:54
 // [1] char toLatin1()

@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QStylePluginC2EP7QObject(QObject * parent) {
   return 0; // new QStylePlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleplugin.h:59
 // [-2] void ~QStylePlugin()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionGroupBoxC2Ev() {
   return  new QStyleOptionGroupBox();
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionGroupBoxD2Ev(void *this_) {

@@ -237,6 +237,7 @@ void* C_ZN10QTabWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTabWidget*)(0);
   return  new MyQTabWidget(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabwidget.h:72
 // [-2] void ~QTabWidget()
@@ -352,21 +353,27 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtabwidget.h:97
 // [-2] void setTabWhatsThis(int, const class QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTabWidget15setTabWhatsThisEiRK7QString(void *this_, int index, QString* text) {
   ((QTabWidget*)this_)->setTabWhatsThis(index, *text);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtabwidget.h:98
 // [8] QString tabWhatsThis(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTabWidget12tabWhatsThisEi(void *this_, int index) {
   auto rv = ((QTabWidget*)this_)->tabWhatsThis(index);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabwidget.h:101
@@ -644,27 +651,36 @@ void C_ZN10QTabWidget14currentChangedEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qtabwidget.h:156
 // [-2] void tabCloseRequested(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTabWidget17tabCloseRequestedEi(void *this_, int index) {
   ((QTabWidget*)this_)->tabCloseRequested(index);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qtabwidget.h:157
 // [-2] void tabBarClicked(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTabWidget13tabBarClickedEi(void *this_, int index) {
   ((QTabWidget*)this_)->tabBarClicked(index);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qtabwidget.h:158
 // [-2] void tabBarDoubleClicked(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTabWidget19tabBarDoubleClickedEi(void *this_, int index) {
   ((QTabWidget*)this_)->tabBarDoubleClicked(index);
 }
+#endif // QT_VERSION >= 0x050200
 
 //  main block end

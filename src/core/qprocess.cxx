@@ -118,6 +118,7 @@ void* C_ZN8QProcessC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQProcess*)(0);
   return  new MyQProcess(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:159
 // [-2] void ~QProcess()
@@ -150,12 +151,15 @@ void C_ZN8QProcess5startE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qprocess.h:166
 // [1] bool startDetached(qint64 *)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QProcess13startDetachedEPx(void *this_, qint64 * pid) {
   return (bool)((QProcess*)this_)->startDetached(pid);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:167
@@ -166,38 +170,50 @@ bool C_ZN8QProcess4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qprocess.h:169
 // [8] QString program()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QProcess7programEv(void *this_) {
   auto rv = ((QProcess*)this_)->program();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qprocess.h:170
 // [-2] void setProgram(const class QString &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess10setProgramERK7QString(void *this_, QString* program) {
   ((QProcess*)this_)->setProgram(*program);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qprocess.h:172
 // [8] QStringList arguments()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QProcess9argumentsEv(void *this_) {
   auto rv = ((QProcess*)this_)->arguments();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qprocess.h:173
 // [-2] void setArguments(const class QStringList &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess12setArgumentsERK11QStringList(void *this_, QStringList* arguments) {
   ((QProcess*)this_)->setArguments(*arguments);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:175
@@ -216,12 +232,15 @@ void C_ZN8QProcess18setReadChannelModeENS_18ProcessChannelModeE(void *this_, QPr
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qprocess.h:177
 // [4] QProcess::ProcessChannelMode processChannelMode()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 QProcess::ProcessChannelMode C_ZNK8QProcess18processChannelModeEv(void *this_) {
   return (QProcess::ProcessChannelMode)((QProcess*)this_)->processChannelMode();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:178
@@ -232,12 +251,15 @@ void C_ZN8QProcess21setProcessChannelModeENS_18ProcessChannelModeE(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qprocess.h:179
 // [4] QProcess::InputChannelMode inputChannelMode()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 QProcess::InputChannelMode C_ZNK8QProcess16inputChannelModeEv(void *this_) {
   return (QProcess::InputChannelMode)((QProcess*)this_)->inputChannelMode();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:180
@@ -280,12 +302,15 @@ void C_ZN8QProcess17closeWriteChannelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qprocess.h:188
 // [-2] void setStandardInputFile(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess20setStandardInputFileERK7QString(void *this_, QString* fileName) {
   ((QProcess*)this_)->setStandardInputFile(*fileName);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:189
@@ -304,12 +329,15 @@ void C_ZN8QProcess20setStandardErrorFileERK7QString6QFlagsIN9QIODevice12OpenMode
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qprocess.h:191
 // [-2] void setStandardOutputProcess(class QProcess *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess24setStandardOutputProcessEPS_(void *this_, QProcess * destination) {
   ((QProcess*)this_)->setStandardOutputProcess(destination);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:214
@@ -346,21 +374,27 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qprocess.h:219
 // [-2] void setProcessEnvironment(const class QProcessEnvironment &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess21setProcessEnvironmentERK19QProcessEnvironment(void *this_, QProcessEnvironment* environment) {
   ((QProcess*)this_)->setProcessEnvironment(*environment);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qprocess.h:220
 // [8] QProcessEnvironment processEnvironment()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QProcess18processEnvironmentEv(void *this_) {
   auto rv = ((QProcess*)this_)->processEnvironment();
 return new QProcessEnvironment(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:222
@@ -387,12 +421,15 @@ Q_PID C_ZNK8QProcess3pidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtCore/qprocess.h:227
 // [8] qint64 processId()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK8QProcess9processIdEv(void *this_) {
   return (qint64)((QProcess*)this_)->processId();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:229
@@ -453,12 +490,15 @@ int C_ZNK8QProcess8exitCodeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qprocess.h:238
 // [4] QProcess::ExitStatus exitStatus()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 QProcess::ExitStatus C_ZNK8QProcess10exitStatusEv(void *this_) {
   return (QProcess::ExitStatus)((QProcess*)this_)->exitStatus();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:241
@@ -515,6 +555,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN8QProcess7executeERK7QStringRK11QStringList(QString* program, QStringList* arguments) {
   return (int)QProcess::execute(*program, *arguments);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:249
 // [4] int execute(const class QString &)
@@ -522,6 +563,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN8QProcess7executeERK7QString(QString* command) {
   return (int)QProcess::execute(*command);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:251
 // [1] bool startDetached(const class QString &, const class QStringList &, const class QString &, qint64 *)
@@ -529,6 +571,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringListS2_Px(QString* program, QStringList* arguments, QString* workingDirectory, qint64 * pid) {
   return (bool)QProcess::startDetached(*program, *arguments, *workingDirectory, pid);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:258
 // [1] bool startDetached(const class QString &, const class QStringList &)
@@ -536,6 +579,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringList(QString* program, QStringList* arguments) {
   return (bool)QProcess::startDetached(*program, *arguments);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:260
 // [1] bool startDetached(const class QString &)
@@ -543,22 +587,31 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QProcess13startDetachedERK7QString(QString* command) {
   return (bool)QProcess::startDetached(*command);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qprocess.h:262
 // [8] QStringList systemEnvironment()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QProcess17systemEnvironmentEv() {
   auto rv = QProcess::systemEnvironment();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040100
+
 // Public static Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qprocess.h:264
 // [8] QString nullDevice()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QProcess10nullDeviceEv() {
   auto rv = QProcess::nullDevice();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:267
 // [-2] void terminate()
@@ -600,11 +653,14 @@ void C_ZN8QProcess5errorENS_12ProcessErrorE(void *this_, QProcess::ProcessError 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qprocess.h:277
 // [-2] void errorOccurred(class QProcess::ProcessError)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess13errorOccurredENS_12ProcessErrorE(void *this_, QProcess::ProcessError error) {
   ((QProcess*)this_)->errorOccurred(error);
 }
+#endif // QT_VERSION >= 0x050600
 
 //  main block end

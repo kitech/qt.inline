@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapperC2EP7QObject(QObject * parent) {
   return  new QDataWidgetMapper(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:65
 // [-2] void ~QDataWidgetMapper()
@@ -132,12 +134,15 @@ void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widge
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:85
 // [-2] void addMapping(class QWidget *, int, const class QByteArray &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, QWidget * widget, int section, QByteArray* propertyName) {
   ((QDataWidgetMapper*)this_)->addMapping(widget, section, *propertyName);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:86
@@ -156,13 +161,16 @@ int C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *this_, QWidget * wid
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:88
 // [8] QByteArray mappedPropertyName(class QWidget *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper18mappedPropertyNameEP7QWidget(void *this_, QWidget * widget) {
   auto rv = ((QDataWidgetMapper*)this_)->mappedPropertyName(widget);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:89

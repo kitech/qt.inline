@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtWidgets/qscroller.h
 #ifndef protected
 #define protected public
@@ -28,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN9QScroller11hasScrollerEP7QObject(QObject * target) {
   return (bool)QScroller::hasScroller(target);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:94
 // [8] QScroller * scroller(class QObject *)
@@ -35,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QScroller8scrollerEP7QObject(QObject * target) {
   return (void*)QScroller::scroller(target);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:95
 // [8] const QScroller * scroller(const class QObject *)
@@ -42,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QScroller8scrollerEPK7QObject(const QObject * target) {
   return (void*)QScroller::scroller(target);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:98
 // [4] Qt::GestureType grabGesture(class QObject *, enum QScroller::ScrollerGestureType)
@@ -49,6 +53,7 @@ extern "C" Q_DECL_EXPORT
 Qt::GestureType C_ZN9QScroller11grabGestureEP7QObjectNS_19ScrollerGestureTypeE(QObject * target, QScroller::ScrollerGestureType gestureType) {
   return (Qt::GestureType)QScroller::grabGesture(target, gestureType);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:99
 // [4] Qt::GestureType grabbedGesture(class QObject *)
@@ -56,6 +61,7 @@ extern "C" Q_DECL_EXPORT
 Qt::GestureType C_ZN9QScroller14grabbedGestureEP7QObject(QObject * target) {
   return (Qt::GestureType)QScroller::grabbedGesture(target);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:100
 // [-2] void ungrabGesture(class QObject *)
@@ -63,6 +69,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller13ungrabGestureEP7QObject(QObject * target) {
   QScroller::ungrabGesture(target);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:105
 // [8] QObject * target()

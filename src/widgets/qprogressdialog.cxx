@@ -138,6 +138,7 @@ void* C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * pare
   auto _nilp = (MyQProgressDialog*)(0);
   return  new MyQProgressDialog(parent, flags);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:72
 // [-2] void QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
@@ -146,6 +147,7 @@ void* C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE
   auto _nilp = (MyQProgressDialog*)(0);
   return  new MyQProgressDialog(*labelText, *cancelButtonText, minimum, maximum, parent, flags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:75
 // [-2] void ~QProgressDialog()
@@ -268,12 +270,15 @@ bool C_ZNK15QProgressDialog9autoCloseEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qprogressdialog.h:99
 // [-2] void open(class QObject *, const char *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
   ((QProgressDialog*)this_)->open(receiver, member);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:102

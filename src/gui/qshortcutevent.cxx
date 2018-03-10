@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(QKeySequence* key, int id, bool ambiguous) {
   return  new QShortcutEvent(*key, id, ambiguous);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:768
 // [-2] void ~QShortcutEvent()

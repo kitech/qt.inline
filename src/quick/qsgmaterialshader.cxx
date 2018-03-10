@@ -150,6 +150,7 @@ void* C_ZN17QSGMaterialShaderC2Ev() {
   auto _nilp = (MyQSGMaterialShader*)(0);
   return 0; // new MyQSGMaterialShader();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:97
 // [-2] void ~QSGMaterialShader()

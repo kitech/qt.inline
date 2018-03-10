@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
   return  new QToolBarChangeEvent(t);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:755
 // [-2] void ~QToolBarChangeEvent()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h
 #ifndef protected
 #define protected public
@@ -79,6 +80,7 @@ void* C_ZN21QMouseEventTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQMouseEventTransition*)(0);
   return  new MyQMouseEventTransition(sourceState);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:59
 // [-2] void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
@@ -87,6 +89,7 @@ void* C_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6Q
   auto _nilp = (MyQMouseEventTransition*)(0);
   return  new MyQMouseEventTransition(object, type_, button, sourceState);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:61
 // [-2] void ~QMouseEventTransition()

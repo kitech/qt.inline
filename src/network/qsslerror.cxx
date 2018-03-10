@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtNetwork/qsslerror.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErrorC2Ev() {
   return  new QSslError();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:89
 // [-2] void QSslError(enum QSslError::SslError)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErrorC2ENS_8SslErrorE(QSslError::SslError error) {
   return  new QSslError(error);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:90
 // [-2] void QSslError(enum QSslError::SslError, const class QSslCertificate &)
@@ -45,13 +48,17 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErrorC2ENS_8SslErrorERK15QSslCertificate(QSslError::SslError error, QSslCertificate* certificate) {
   return  new QSslError(error, *certificate);
 }
+
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslerror.h:94
 // [-2] void swap(class QSslError &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSslError4swapERS_(void *this_, QSslError* other) {
   ((QSslError*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:97

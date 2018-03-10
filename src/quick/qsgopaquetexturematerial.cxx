@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QSGOpaqueTextureMaterialC2Ev() {
   return  new QSGOpaqueTextureMaterial();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:53
 // [8] QSGMaterialType * type()

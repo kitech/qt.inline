@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QSGOpacityNodeC2Ev() {
   return  new QSGOpacityNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:320
 // [-2] void ~QSGOpacityNode()

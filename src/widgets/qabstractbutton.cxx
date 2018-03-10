@@ -313,6 +313,7 @@ void* C_ZN15QAbstractButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractButton*)(0);
   return 0; // new MyQAbstractButton(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:76
 // [-2] void ~QAbstractButton()

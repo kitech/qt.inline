@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QDirC2ERK7QString(QString* path) {
   return  new QDir(*path);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:103
 // [-2] void QDir(const class QString &, const class QString &, QDir::SortFlags, QDir::Filters)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QDirC2ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE(QString* path, QString* nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) {
   return  new QDir(*path, *nameFilter, sort, filter);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:105
 // [-2] void ~QDir()
@@ -71,12 +73,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qdir.h:113
 // [-2] void swap(class QDir &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN4QDir4swapERS_(void *this_, QDir* other) {
   ((QDir*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:116
@@ -120,28 +125,41 @@ extern "C" Q_DECL_EXPORT
 void C_ZN4QDir21addResourceSearchPathERK7QString(QString* path) {
   QDir::addResourceSearchPath(*path);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qdir.h:123
 // [-2] void setSearchPaths(const class QString &, const class QStringList &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN4QDir14setSearchPathsERK7QStringRK11QStringList(QString* prefix, QStringList* searchPaths) {
   QDir::setSearchPaths(*prefix, *searchPaths);
 }
+#endif // QT_VERSION >= 0x040300
+
 // Public static Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qdir.h:124
 // [-2] void addSearchPath(const class QString &, const class QString &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN4QDir13addSearchPathERK7QStringS2_(QString* prefix, QString* path) {
   QDir::addSearchPath(*prefix, *path);
 }
+#endif // QT_VERSION >= 0x040300
+
 // Public static Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qdir.h:125
 // [8] QStringList searchPaths(const class QString &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QDir11searchPathsERK7QString(QString* prefix) {
   auto rv = QDir::searchPaths(*prefix);
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040300
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:127
 // [8] QString dirName()
@@ -179,21 +197,29 @@ return new QString(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qdir.h:132
 // [8] QString toNativeSeparators(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QDir18toNativeSeparatorsERK7QString(QString* pathName) {
   auto rv = QDir::toNativeSeparators(*pathName);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qdir.h:133
 // [8] QString fromNativeSeparators(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QDir20fromNativeSeparatorsERK7QString(QString* pathName) {
   auto rv = QDir::fromNativeSeparators(*pathName);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:135
 // [1] bool cd(const class QString &)
@@ -294,6 +320,7 @@ void* C_ZN4QDir21nameFiltersFromStringERK7QString(QString* nameFilter) {
   auto rv = QDir::nameFiltersFromString(*nameFilter);
 return new QStringList(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:153
 // [8] QStringList entryList(QDir::Filters, QDir::SortFlags)
@@ -363,12 +390,15 @@ bool C_ZNK4QDir6rmpathERK7QString(void *this_, QString* dirPath) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qdir.h:166
 // [1] bool removeRecursively()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN4QDir17removeRecursivelyEv(void *this_) {
   return (bool)((QDir*)this_)->removeRecursively();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:168
@@ -401,6 +431,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN4QDir14isRelativePathERK7QString(QString* path) {
   return (bool)QDir::isRelativePath(*path);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:173
 // [1] bool isAbsolutePath(const class QString &)
@@ -408,6 +439,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN4QDir14isAbsolutePathERK7QString(QString* path) {
   return (bool)QDir::isAbsolutePath(*path);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:174
 // [1] bool isRelative()
@@ -480,14 +512,19 @@ void C_ZN4QDir6drivesEv() {
   auto rv = QDir::drives();
 /*return rv;*/
 }
+
 // Public static inline Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qdir.h:187
 // [2] QChar listSeparator()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QDir13listSeparatorEv() {
   auto rv = QDir::listSeparator();
 return new QChar(rv);
 }
+#endif // QT_VERSION >= 0x050600
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:196
 // [2] QChar separator()
@@ -496,6 +533,7 @@ void* C_ZN4QDir9separatorEv() {
   auto rv = QDir::separator();
 return new QChar(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:198
 // [1] bool setCurrent(const class QString &)
@@ -503,6 +541,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN4QDir10setCurrentERK7QString(QString* path) {
   return (bool)QDir::setCurrent(*path);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:199
 // [8] QDir current()
@@ -511,6 +550,7 @@ void* C_ZN4QDir7currentEv() {
   auto rv = QDir::current();
 return new QDir(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:200
 // [8] QString currentPath()
@@ -519,6 +559,7 @@ void* C_ZN4QDir11currentPathEv() {
   auto rv = QDir::currentPath();
 return new QString(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:202
 // [8] QDir home()
@@ -527,6 +568,7 @@ void* C_ZN4QDir4homeEv() {
   auto rv = QDir::home();
 return new QDir(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:203
 // [8] QString homePath()
@@ -535,6 +577,7 @@ void* C_ZN4QDir8homePathEv() {
   auto rv = QDir::homePath();
 return new QString(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:204
 // [8] QDir root()
@@ -543,6 +586,7 @@ void* C_ZN4QDir4rootEv() {
   auto rv = QDir::root();
 return new QDir(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:205
 // [8] QString rootPath()
@@ -551,6 +595,7 @@ void* C_ZN4QDir8rootPathEv() {
   auto rv = QDir::rootPath();
 return new QString(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:206
 // [8] QDir temp()
@@ -559,6 +604,7 @@ void* C_ZN4QDir4tempEv() {
   auto rv = QDir::temp();
 return new QDir(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:207
 // [8] QString tempPath()
@@ -567,6 +613,7 @@ void* C_ZN4QDir8tempPathEv() {
   auto rv = QDir::tempPath();
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:210
 // [1] bool match(const class QStringList &, const class QString &)
@@ -574,6 +621,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN4QDir5matchERK11QStringListRK7QString(QStringList* filters, QString* fileName) {
   return (bool)QDir::match(*filters, *fileName);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:211
 // [1] bool match(const class QString &, const class QString &)
@@ -581,6 +629,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN4QDir5matchERK7QStringS2_(QString* filter, QString* fileName) {
   return (bool)QDir::match(*filter, *fileName);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:214
 // [8] QString cleanPath(const class QString &)
@@ -589,6 +638,7 @@ void* C_ZN4QDir9cleanPathERK7QString(QString* path) {
   auto rv = QDir::cleanPath(*path);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:215
 // [-2] void refresh()

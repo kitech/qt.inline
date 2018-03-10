@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm method, QByteArray* key) {
   return  new QMessageAuthenticationCode(method, *key);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:56
 // [-2] void ~QMessageAuthenticationCode()
@@ -91,4 +93,5 @@ void* C_ZN26QMessageAuthenticationCode4hashERK10QByteArrayS2_N18QCryptographicHa
   auto rv = QMessageAuthenticationCode::hash(*message, *key, method);
 return new QByteArray(rv);
 }
+
 //  main block end

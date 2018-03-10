@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QDnsServiceRecordC2Ev() {
   return  new QDnsServiceRecord();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:139
 // [8] QDnsServiceRecord & operator=(class QDnsServiceRecord &&)

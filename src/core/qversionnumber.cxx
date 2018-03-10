@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050600
 // /usr/include/qt/QtCore/qversionnumber.h
 #ifndef protected
 #define protected public
@@ -33,6 +34,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumberC2Ev() {
   return  new QVersionNumber();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:242
 // [-2] void QVersionNumber(int)
@@ -40,6 +42,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumberC2Ei(int maj) {
   return  new QVersionNumber(maj);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:245
 // [-2] void QVersionNumber(int, int)
@@ -47,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumberC2Eii(int maj, int min) {
   return  new QVersionNumber(maj, min);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:248
 // [-2] void QVersionNumber(int, int, int)
@@ -54,6 +58,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumberC2Eiii(int maj, int min, int mic) {
   return  new QVersionNumber(maj, min, mic);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:251
 // [1] bool isNull()
@@ -134,6 +139,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN14QVersionNumber7compareERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
   return (int)QVersionNumber::compare(*v1, *v2);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:280
 // [8] QVersionNumber commonPrefix(const class QVersionNumber &, const class QVersionNumber &)
@@ -142,6 +148,7 @@ void* C_ZN14QVersionNumber12commonPrefixERKS_S1_(QVersionNumber* v1, QVersionNum
   auto rv = QVersionNumber::commonPrefix(*v1, *v2);
 return new QVersionNumber(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:282
 // [8] QString toString()
@@ -159,22 +166,31 @@ void* C_ZN14QVersionNumber10fromStringERK7QStringPi(QString* string, int * suffi
   auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qversionnumber.h:286
 // [8] QVersionNumber fromString(class QLatin1String, int *)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber10fromStringE13QLatin1StringPi(QLatin1String* string, int * suffixIndex) {
   auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
+#endif // QT_VERSION >= 0x050a00
+
 // Public static Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qversionnumber.h:287
 // [8] QVersionNumber fromString(class QStringView, int *)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView* string, int * suffixIndex) {
   auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
+#endif // QT_VERSION >= 0x050a00
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN14QVersionNumberD2Ev(void *this_) {

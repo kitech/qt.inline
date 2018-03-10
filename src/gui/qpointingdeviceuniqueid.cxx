@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QPointingDeviceUniqueIdC2Ev() {
   return  new QPointingDeviceUniqueId();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:813
 // [8] QPointingDeviceUniqueId fromNumericId(qint64)
@@ -35,6 +37,7 @@ void* C_ZN23QPointingDeviceUniqueId13fromNumericIdEx(qint64 id) {
   auto rv = QPointingDeviceUniqueId::fromNumericId(id);
 return new QPointingDeviceUniqueId(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:815
 // [1] bool isValid()

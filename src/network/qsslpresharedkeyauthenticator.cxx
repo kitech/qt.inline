@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050500
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN29QSslPreSharedKeyAuthenticatorC2Ev() {
   return  new QSslPreSharedKeyAuthenticator();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:56
 // [-2] void ~QSslPreSharedKeyAuthenticator()

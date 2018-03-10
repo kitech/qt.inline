@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QMetaEnumC2Ev() {
   return  new QMetaEnum();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:211
 // [8] const char * name()
@@ -44,12 +45,15 @@ bool C_ZNK9QMetaEnum6isFlagEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qmetaobject.h:213
 // [1] bool isScoped()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMetaEnum8isScopedEv(void *this_) {
   return (bool)((QMetaEnum*)this_)->isScoped();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:215

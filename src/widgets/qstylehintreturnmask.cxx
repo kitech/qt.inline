@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleHintReturnMaskC2Ev() {
   return  new QStyleHintReturnMask();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:723
 // [-2] void ~QStyleHintReturnMask()

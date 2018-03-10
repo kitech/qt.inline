@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForNameERK10QByteArray(QByteArray* name) {
   return (void*)QTextCodec::codecForName(*name);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:62
 // [8] QTextCodec * codecForName(const char *)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForNameEPKc(const char * name) {
   return (void*)QTextCodec::codecForName(name);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:63
 // [8] QTextCodec * codecForMib(int)
@@ -43,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec11codecForMibEi(int mib) {
   return (void*)QTextCodec::codecForMib(mib);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:68
 // [8] QTextCodec * codecForLocale()
@@ -50,6 +53,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec14codecForLocaleEv() {
   return (void*)QTextCodec::codecForLocale();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:69
 // [-2] void setCodecForLocale(class QTextCodec *)
@@ -57,6 +61,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN10QTextCodec17setCodecForLocaleEPS_(QTextCodec * c) {
   QTextCodec::setCodecForLocale(c);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:75
 // [8] QTextCodec * codecForHtml(const class QByteArray &)
@@ -64,13 +69,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForHtmlERK10QByteArray(QByteArray* ba) {
   return (void*)QTextCodec::codecForHtml(*ba);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qtextcodec.h:76
 // [8] QTextCodec * codecForHtml(const class QByteArray &, class QTextCodec *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForHtmlERK10QByteArrayPS_(QByteArray* ba, QTextCodec * defaultCodec) {
   return (void*)QTextCodec::codecForHtml(*ba, defaultCodec);
 }
+#endif // QT_VERSION >= 0x040400
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:78
 // [8] QTextCodec * codecForUtfText(const class QByteArray &)
@@ -78,13 +88,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArray(QByteArray* ba) {
   return (void*)QTextCodec::codecForUtfText(*ba);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qtextcodec.h:79
 // [8] QTextCodec * codecForUtfText(const class QByteArray &, class QTextCodec *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArrayPS_(QByteArray* ba, QTextCodec * defaultCodec) {
   return (void*)QTextCodec::codecForUtfText(*ba, defaultCodec);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:81
 // [1] bool canEncode(class QChar)
@@ -102,12 +117,15 @@ bool C_ZNK10QTextCodec9canEncodeERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qtextcodec.h:85
 // [1] bool canEncode(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextCodec9canEncodeE11QStringView(void *this_, QStringView* arg0) {
   return (bool)((QTextCodec*)this_)->canEncode(*arg0);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:87
@@ -137,13 +155,16 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qtextcodec.h:92
 // [8] QByteArray fromUnicode(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11fromUnicodeE11QStringView(void *this_, QStringView* uc) {
   auto rv = ((QTextCodec*)this_)->fromUnicode(*uc);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:119

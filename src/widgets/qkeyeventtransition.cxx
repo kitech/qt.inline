@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h
 #ifndef protected
 #define protected public
@@ -79,6 +80,7 @@ void* C_ZN19QKeyEventTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQKeyEventTransition*)(0);
   return  new MyQKeyEventTransition(sourceState);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:58
 // [-2] void QKeyEventTransition(class QObject *, class QEvent::Type, int, class QState *)
@@ -87,6 +89,7 @@ void* C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * obj
   auto _nilp = (MyQKeyEventTransition*)(0);
   return  new MyQKeyEventTransition(object, type_, key, sourceState);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:60
 // [-2] void ~QKeyEventTransition()

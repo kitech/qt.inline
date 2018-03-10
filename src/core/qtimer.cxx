@@ -56,6 +56,7 @@ void* C_ZN6QTimerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTimer*)(0);
   return  new MyQTimer(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:67
 // [-2] void ~QTimer()
@@ -142,6 +143,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer10singleShotEiPK7QObjectPKc(int msec, const QObject * receiver, const char * member) {
   QTimer::singleShot(msec, receiver, member);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:84
 // [-2] void singleShot(int, Qt::TimerType, const class QObject *, const char *)
@@ -149,6 +151,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer10singleShotEiN2Qt9TimerTypeEPK7QObjectPKc(int msec, Qt::TimerType timerType, const QObject * receiver, const char * member) {
   QTimer::singleShot(msec, timerType, receiver, member);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:158
 // [-2] void start(int)
@@ -174,19 +177,25 @@ void C_ZN6QTimer4stopEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:173
 // [8] std::chrono::milliseconds intervalAsDuration()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 std::chrono::milliseconds C_ZNK6QTimer18intervalAsDurationEv(void *this_) {
   return (std::chrono::milliseconds)((QTimer*)this_)->intervalAsDuration();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:178
 // [8] std::chrono::milliseconds remainingTimeAsDuration()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 std::chrono::milliseconds C_ZNK6QTimer23remainingTimeAsDurationEv(void *this_) {
   return (std::chrono::milliseconds)((QTimer*)this_)->remainingTimeAsDuration();
 }
+#endif // QT_VERSION >= 0x050800
 
 //  main block end

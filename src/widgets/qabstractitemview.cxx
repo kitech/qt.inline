@@ -783,12 +783,15 @@ void C_ZN17QAbstractItemView22updateEditorGeometriesEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qabstractitemview.h:252
 // [-2] void updateGeometries()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16updateGeometriesEv(void *this_) {
   ((QAbstractItemView*)this_)->QAbstractItemView::updateGeometries();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:253
@@ -971,12 +974,15 @@ void C_ZN17QAbstractItemView25executeDelayedItemsLayoutEv(void *this_) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qabstractitemview.h:322
 // [-2] void setDirtyRegion(const class QRegion &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(void *this_, QRegion* region) {
   ((QAbstractItemView*)this_)->QAbstractItemView::setDirtyRegion(*region);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:323
@@ -1156,21 +1162,27 @@ void C_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(void *this_,
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qabstractitemview.h:352
 // [4] QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 QAbstractItemView::DropIndicatorPosition C_ZNK17QAbstractItemView21dropIndicatorPositionEv(void *this_) {
   return (QAbstractItemView::DropIndicatorPosition)((QAbstractItemView*)this_)->QAbstractItemView::dropIndicatorPosition();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qabstractitemview.h:355
 // [8] QSize viewportSizeHint()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView16viewportSizeHintEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::viewportSizeHint();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:63
@@ -1188,6 +1200,7 @@ void* C_ZN17QAbstractItemViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractItemView*)(0);
   return 0; // new MyQAbstractItemView(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:128
 // [-2] void ~QAbstractItemView()
@@ -1611,60 +1624,81 @@ void C_ZN17QAbstractItemView21closePersistentEditorERK11QModelIndex(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtWidgets/qabstractitemview.h:215
 // [1] bool isPersistentEditorOpen(const class QModelIndex &)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QAbstractItemView22isPersistentEditorOpenERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QAbstractItemView*)this_)->isPersistentEditorOpen(*index);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qabstractitemview.h:217
 // [-2] void setIndexWidget(const class QModelIndex &, class QWidget *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14setIndexWidgetERK11QModelIndexP7QWidget(void *this_, QModelIndex* index, QWidget * widget) {
   ((QAbstractItemView*)this_)->setIndexWidget(*index, widget);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qabstractitemview.h:218
 // [8] QWidget * indexWidget(const class QModelIndex &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView11indexWidgetERK11QModelIndex(void *this_, QModelIndex* index) {
   return (void*)((QAbstractItemView*)this_)->indexWidget(*index);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractitemview.h:220
 // [-2] void setItemDelegateForRow(int, class QAbstractItemDelegate *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView21setItemDelegateForRowEiP21QAbstractItemDelegate(void *this_, int row, QAbstractItemDelegate * delegate) {
   ((QAbstractItemView*)this_)->setItemDelegateForRow(row, delegate);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractitemview.h:221
 // [8] QAbstractItemDelegate * itemDelegateForRow(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView18itemDelegateForRowEi(void *this_, int row) {
   return (void*)((QAbstractItemView*)this_)->itemDelegateForRow(row);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractitemview.h:223
 // [-2] void setItemDelegateForColumn(int, class QAbstractItemDelegate *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView24setItemDelegateForColumnEiP21QAbstractItemDelegate(void *this_, int column, QAbstractItemDelegate * delegate) {
   ((QAbstractItemView*)this_)->setItemDelegateForColumn(column, delegate);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractitemview.h:224
 // [8] QAbstractItemDelegate * itemDelegateForColumn(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView21itemDelegateForColumnEi(void *this_, int column) {
   return (void*)((QAbstractItemView*)this_)->itemDelegateForColumn(column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:226
@@ -1740,28 +1774,37 @@ void C_ZN17QAbstractItemView15setCurrentIndexERK11QModelIndex(void *this_, QMode
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qabstractitemview.h:240
 // [-2] void scrollToTop()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView11scrollToTopEv(void *this_) {
   ((QAbstractItemView*)this_)->scrollToTop();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qabstractitemview.h:241
 // [-2] void scrollToBottom()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView14scrollToBottomEv(void *this_) {
   ((QAbstractItemView*)this_)->scrollToBottom();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qabstractitemview.h:242
 // [-2] void update(const class QModelIndex &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView6updateERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QAbstractItemView*)this_)->update(*index);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:262

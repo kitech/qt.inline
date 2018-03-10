@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qthreadpool.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QThreadPoolC2EP7QObject(QObject * parent) {
   return  new QThreadPool(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:66
 // [-2] void ~QThreadPool()
@@ -49,6 +51,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QThreadPool14globalInstanceEv() {
   return (void*)QThreadPool::globalInstance();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:70
 // [-2] void start(class QRunnable *, int)
@@ -146,12 +149,15 @@ bool C_ZN11QThreadPool11waitForDoneEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qthreadpool.h:89
 // [-2] void clear()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QThreadPool5clearEv(void *this_) {
   ((QThreadPool*)this_)->clear();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:93
@@ -162,11 +168,14 @@ void C_ZN11QThreadPool6cancelEP9QRunnable(void *this_, QRunnable * runnable) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtCore/qthreadpool.h:95
 // [1] bool tryTake(class QRunnable *)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QThreadPool7tryTakeEP9QRunnable(void *this_, QRunnable * runnable) {
   return (bool)((QThreadPool*)this_)->tryTake(runnable);
 }
+#endif // QT_VERSION >= 0x050900
 
 //  main block end

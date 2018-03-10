@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QUdpSocketC2EP7QObject(QObject * parent) {
   return  new QUdpSocket(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qudpsocket.h:61
 // [-2] void ~QUdpSocket()
@@ -43,53 +44,71 @@ void C_ZN10QUdpSocketD2Ev(void *this_) {
   delete (QUdpSocket*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qudpsocket.h:64
 // [1] bool joinMulticastGroup(const class QHostAddress &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QUdpSocket18joinMulticastGroupERK12QHostAddress(void *this_, QHostAddress* groupAddress) {
   return (bool)((QUdpSocket*)this_)->joinMulticastGroup(*groupAddress);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qudpsocket.h:65
 // [1] bool joinMulticastGroup(const class QHostAddress &, const class QNetworkInterface &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QUdpSocket18joinMulticastGroupERK12QHostAddressRK17QNetworkInterface(void *this_, QHostAddress* groupAddress, QNetworkInterface* iface) {
   return (bool)((QUdpSocket*)this_)->joinMulticastGroup(*groupAddress, *iface);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qudpsocket.h:67
 // [1] bool leaveMulticastGroup(const class QHostAddress &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QUdpSocket19leaveMulticastGroupERK12QHostAddress(void *this_, QHostAddress* groupAddress) {
   return (bool)((QUdpSocket*)this_)->leaveMulticastGroup(*groupAddress);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qudpsocket.h:68
 // [1] bool leaveMulticastGroup(const class QHostAddress &, const class QNetworkInterface &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QUdpSocket19leaveMulticastGroupERK12QHostAddressRK17QNetworkInterface(void *this_, QHostAddress* groupAddress, QNetworkInterface* iface) {
   return (bool)((QUdpSocket*)this_)->leaveMulticastGroup(*groupAddress, *iface);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qudpsocket.h:71
 // [8] QNetworkInterface multicastInterface()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUdpSocket18multicastInterfaceEv(void *this_) {
   auto rv = ((QUdpSocket*)this_)->multicastInterface();
 return new QNetworkInterface(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qudpsocket.h:72
 // [-2] void setMulticastInterface(const class QNetworkInterface &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUdpSocket21setMulticastInterfaceERK17QNetworkInterface(void *this_, QNetworkInterface* iface) {
   ((QUdpSocket*)this_)->setMulticastInterface(*iface);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qudpsocket.h:75

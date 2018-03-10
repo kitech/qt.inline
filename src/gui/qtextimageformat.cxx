@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextImageFormatC2Ev() {
   return  new QTextImageFormat();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:737
 // [1] bool isValid()

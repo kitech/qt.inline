@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractEventDispatcherC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractEventDispatcher(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:74
 // [-2] void ~QAbstractEventDispatcher()
@@ -49,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractEventDispatcher8instanceEP7QThread(QThread * thread) {
   return (void*)QAbstractEventDispatcher::instance(thread);
 }
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:78
 // [1] bool processEvents(class QEventLoop::ProcessEventsFlags)
@@ -162,28 +164,37 @@ void C_ZN24QAbstractEventDispatcher11closingDownEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:110
 // [-2] void installNativeEventFilter(class QAbstractNativeEventFilter *)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher24installNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
   ((QAbstractEventDispatcher*)this_)->installNativeEventFilter(filterObj);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:111
 // [-2] void removeNativeEventFilter(class QAbstractNativeEventFilter *)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher23removeNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
   ((QAbstractEventDispatcher*)this_)->removeNativeEventFilter(filterObj);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:112
 // [1] bool filterNativeEvent(const class QByteArray &, void *, long *)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractEventDispatcher17filterNativeEventERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
   return (bool)((QAbstractEventDispatcher*)this_)->filterNativeEvent(*eventType, message, result);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:119

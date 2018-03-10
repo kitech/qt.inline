@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneDragDropEvent(type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:253
 // [-2] void ~QGraphicsSceneDragDropEvent()

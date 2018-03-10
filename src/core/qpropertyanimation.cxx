@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qpropertyanimation.h
 #ifndef protected
 #define protected public
@@ -99,6 +100,7 @@ void* C_ZN18QPropertyAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQPropertyAnimation*)(0);
   return  new MyQPropertyAnimation(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:59
 // [-2] void QPropertyAnimation(class QObject *, const class QByteArray &, class QObject *)
@@ -107,6 +109,7 @@ void* C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * target, QB
   auto _nilp = (MyQPropertyAnimation*)(0);
   return  new MyQPropertyAnimation(target, *propertyName, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:60
 // [-2] void ~QPropertyAnimation()

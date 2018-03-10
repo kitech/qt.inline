@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qsignaltransition.h
 #ifndef protected
 #define protected public
@@ -100,6 +101,7 @@ void* C_ZN17QSignalTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQSignalTransition*)(0);
   return  new MyQSignalTransition(sourceState);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:59
 // [-2] void QSignalTransition(const class QObject *, const char *, class QState *)
@@ -108,6 +110,7 @@ void* C_ZN17QSignalTransitionC2EPK7QObjectPKcP6QState(const QObject * sender, co
   auto _nilp = (MyQSignalTransition*)(0);
   return  new MyQSignalTransition(sender, signal, sourceState);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:74
 // [-2] void ~QSignalTransition()

@@ -177,6 +177,7 @@ void* C_ZN11QRubberBandC2ENS_5ShapeEP7QWidget(QRubberBand::Shape arg0, QWidget *
   auto _nilp = (MyQRubberBand*)(0);
   return  new MyQRubberBand(arg0, arg1);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:60
 // [-2] void ~QRubberBand()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qplaintextedit.h
 #ifndef protected
 #define protected public
@@ -692,6 +693,7 @@ void* C_ZN14QPlainTextEditC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQPlainTextEdit*)(0);
   return  new MyQPlainTextEdit(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:95
 // [-2] void QPlainTextEdit(const class QString &, class QWidget *)
@@ -700,6 +702,7 @@ void* C_ZN14QPlainTextEditC2ERK7QStringP7QWidget(QString* text, QWidget * parent
   auto _nilp = (MyQPlainTextEdit*)(0);
   return  new MyQPlainTextEdit(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:96
 // [-2] void ~QPlainTextEdit()
@@ -952,12 +955,15 @@ bool C_ZN14QPlainTextEdit4findERK7QString6QFlagsIN13QTextDocument8FindFlagEE(voi
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtWidgets/qplaintextedit.h:150
 // [1] bool find(const class QRegExp &, class QTextDocument::FindFlags)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QPlainTextEdit4findERK7QRegExp6QFlagsIN13QTextDocument8FindFlagEE(void *this_, QRegExp* exp, QFlags<QTextDocument::FindFlag> options) {
   return (bool)((QPlainTextEdit*)this_)->find(*exp, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:153
@@ -994,12 +1000,15 @@ void* C_ZN14QPlainTextEdit25createStandardContextMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtWidgets/qplaintextedit.h:161
 // [8] QMenu * createStandardContextMenu(const class QPoint &)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QPlainTextEdit25createStandardContextMenuERK6QPoint(void *this_, QPoint* position) {
   return (void*)((QPlainTextEdit*)this_)->createStandardContextMenu(*position);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:164
@@ -1029,13 +1038,16 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qplaintextedit.h:168
 // [8] QString anchorAt(const class QPoint &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QPlainTextEdit8anchorAtERK6QPoint(void *this_, QPoint* pos) {
   auto rv = ((QPlainTextEdit*)this_)->anchorAt(*pos);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:170

@@ -439,6 +439,7 @@ void* C_ZN16QAbstractSpinBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractSpinBox*)(0);
   return 0; // new MyQAbstractSpinBox(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:74
 // [-2] void ~QAbstractSpinBox()

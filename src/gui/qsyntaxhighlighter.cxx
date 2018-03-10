@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h
 #ifndef protected
 #define protected public
@@ -236,13 +237,16 @@ void* C_ZNK18QSyntaxHighlighter20currentBlockUserDataEv(void *this_) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:91
 // [16] QTextBlock currentBlock()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSyntaxHighlighter12currentBlockEv(void *this_) {
   auto rv = ((QSyntaxHighlighter*)this_)->QSyntaxHighlighter::currentBlock();
 return new QTextBlock(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:62
@@ -260,6 +264,7 @@ void* C_ZN18QSyntaxHighlighterC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:66
 // [-2] void QSyntaxHighlighter(class QTextDocument *)
@@ -268,6 +273,7 @@ void* C_ZN18QSyntaxHighlighterC2EP13QTextDocument(QTextDocument * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:67
 // [-2] void ~QSyntaxHighlighter()
@@ -292,19 +298,25 @@ void* C_ZNK18QSyntaxHighlighter8documentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:73
 // [-2] void rehighlight()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter11rehighlightEv(void *this_) {
   ((QSyntaxHighlighter*)this_)->rehighlight();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:74
 // [-2] void rehighlightBlock(const class QTextBlock &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN18QSyntaxHighlighter16rehighlightBlockERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QSyntaxHighlighter*)this_)->rehighlightBlock(*block);
 }
+#endif // QT_VERSION >= 0x040600
 
 //  main block end

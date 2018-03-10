@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QDeferredDeleteEventC2Ev() {
   return  new QDeferredDeleteEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:378
 // [-2] void ~QDeferredDeleteEvent()

@@ -139,6 +139,7 @@ void* C_ZN8QToolBarC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQToolBar*)(0);
   return  new MyQToolBar(*title, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:80
 // [-2] void QToolBar(class QWidget *)
@@ -147,6 +148,7 @@ void* C_ZN8QToolBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQToolBar*)(0);
   return  new MyQToolBar(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:81
 // [-2] void ~QToolBar()
@@ -333,12 +335,15 @@ Qt::ToolButtonStyle C_ZNK8QToolBar15toolButtonStyleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtoolbar.h:170
 // [8] QWidget * widgetForAction(class QAction *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QToolBar15widgetForActionEP7QAction(void *this_, QAction * action) {
   return (void*)((QToolBar*)this_)->widgetForAction(action);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:172
@@ -429,19 +434,25 @@ void C_ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qtoolbar.h:187
 // [-2] void topLevelChanged(_Bool)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar15topLevelChangedEb(void *this_, bool topLevel) {
   ((QToolBar*)this_)->topLevelChanged(topLevel);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qtoolbar.h:188
 // [-2] void visibilityChanged(_Bool)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBar17visibilityChangedEb(void *this_, bool visible) {
   ((QToolBar*)this_)->visibilityChanged(visible);
 }
+#endif // QT_VERSION >= 0x040700
 
 //  main block end

@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QObjectCleanupHandlerC2Ev() {
   return  new QObjectCleanupHandler();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h:54
 // [-2] void ~QObjectCleanupHandler()

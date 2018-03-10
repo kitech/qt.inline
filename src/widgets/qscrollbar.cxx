@@ -218,6 +218,7 @@ void* C_ZN10QScrollBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQScrollBar*)(0);
   return  new MyQScrollBar(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollbar.h:60
 // [-2] void QScrollBar(Qt::Orientation, class QWidget *)
@@ -226,6 +227,7 @@ void* C_ZN10QScrollBarC2EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidg
   auto _nilp = (MyQScrollBar*)(0);
   return  new MyQScrollBar(arg0, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollbar.h:61
 // [-2] void ~QScrollBar()

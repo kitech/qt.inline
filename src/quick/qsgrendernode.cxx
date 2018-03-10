@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtQuick/qsgrendernode.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QSGRenderNodeC2Ev() {
   return 0; // new QSGRenderNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:83
 // [-2] void ~QSGRenderNode()

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordC2Ev() {
   return  new QDnsMailExchangeRecord();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:114
 // [8] QDnsMailExchangeRecord & operator=(class QDnsMailExchangeRecord &&)

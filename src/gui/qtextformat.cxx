@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextFormatC2Ev() {
   return  new QTextFormat();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:290
 // [-2] void QTextFormat(int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextFormatC2Ei(int type_) {
   return  new QTextFormat(type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:293
 // [16] QTextFormat & operator=(const class QTextFormat &)
@@ -53,12 +55,15 @@ void C_ZN11QTextFormatD2Ev(void *this_) {
   delete (QTextFormat*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qtextformat.h:296
 // [-2] void swap(class QTextFormat &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextFormat4swapERS_(void *this_, QTextFormat* other) {
   ((QTextFormat*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:299
@@ -77,12 +82,15 @@ bool C_ZNK11QTextFormat7isValidEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qtextformat.h:302
 // [1] bool isEmpty()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextFormat7isEmptyEv(void *this_) {
   return (bool)((QTextFormat*)this_)->isEmpty();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:304
@@ -211,12 +219,15 @@ return new QTextLength(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:327
 // [4] int propertyCount()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextFormat13propertyCountEv(void *this_) {
   return (int)((QTextFormat*)this_)->propertyCount();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:329
@@ -283,12 +294,15 @@ bool C_ZNK11QTextFormat13isTableFormatEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextformat.h:339
 // [1] bool isTableCellFormat()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextFormat17isTableCellFormatEv(void *this_) {
   return (bool)((QTextFormat*)this_)->isTableCellFormat();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:341
@@ -345,13 +359,16 @@ return new QTextImageFormat(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextformat.h:347
 // [16] QTextTableCellFormat toTableCellFormat()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextFormat17toTableCellFormatEv(void *this_) {
   auto rv = ((QTextFormat*)this_)->toTableCellFormat();
 return new QTextTableCellFormat(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:349

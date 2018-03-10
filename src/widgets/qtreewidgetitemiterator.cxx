@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
   return  new QTreeWidgetItemIterator(widget, flags);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
 // [-2] void QTreeWidgetItemIterator(class QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
   return  new QTreeWidgetItemIterator(item, flags);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:87
 // [-2] void ~QTreeWidgetItemIterator()

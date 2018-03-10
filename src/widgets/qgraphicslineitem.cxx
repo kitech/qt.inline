@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -95,6 +96,7 @@ void* C_ZN17QGraphicsLineItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:781
 // [-2] void QGraphicsLineItem(const class QLineF &, class QGraphicsItem *)
@@ -103,6 +105,7 @@ void* C_ZN17QGraphicsLineItemC2ERK6QLineFP13QGraphicsItem(QLineF* line, QGraphic
   auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(*line, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:782
 // [-2] void QGraphicsLineItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
@@ -111,6 +114,7 @@ void* C_ZN17QGraphicsLineItemC2EddddP13QGraphicsItem(qreal x1, qreal y1, qreal x
   auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(x1, y1, x2, y2, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:783
 // [-2] void ~QGraphicsLineItem()

@@ -92,6 +92,7 @@ void* C_ZN17QAccessibleWidgetC2EP7QWidgetN11QAccessible4RoleERK7QString(QWidget 
   auto _nilp = (MyQAccessibleWidget*)(0);
   return  new MyQAccessibleWidget(o, r, *name);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:57
 // [1] bool isValid()

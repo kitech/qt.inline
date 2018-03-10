@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qqmlparserstatus.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlParserStatusC2Ev() {
   return 0; // new QQmlParserStatus();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:53
 // [-2] void ~QQmlParserStatus()

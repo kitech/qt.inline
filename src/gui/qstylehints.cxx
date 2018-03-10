@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qstylehints.h
 #ifndef protected
 #define protected public

@@ -80,6 +80,7 @@ void* C_ZN10QPdfWriterC2ERK7QString(QString* filename) {
   auto _nilp = (MyQPdfWriter*)(0);
   return  new MyQPdfWriter(*filename);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:61
 // [-2] void QPdfWriter(class QIODevice *)
@@ -88,6 +89,7 @@ void* C_ZN10QPdfWriterC2EP9QIODevice(QIODevice * device) {
   auto _nilp = (MyQPdfWriter*)(0);
   return  new MyQPdfWriter(device);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:62
 // [-2] void ~QPdfWriter()
@@ -104,12 +106,15 @@ void C_ZN10QPdfWriter13setPdfVersionEN17QPagedPaintDevice10PdfVersionE(void *thi
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qpdfwriter.h:65
 // [4] QPagedPaintDevice::PdfVersion pdfVersion()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 QPagedPaintDevice::PdfVersion C_ZNK10QPdfWriter10pdfVersionEv(void *this_) {
   return (QPagedPaintDevice::PdfVersion)((QPdfWriter*)this_)->pdfVersion();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:67
@@ -154,20 +159,26 @@ bool C_ZN10QPdfWriter7newPageEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpdfwriter.h:75
 // [-2] void setResolution(int)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter13setResolutionEi(void *this_, int resolution) {
   ((QPdfWriter*)this_)->setResolution(resolution);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpdfwriter.h:76
 // [4] int resolution()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QPdfWriter10resolutionEv(void *this_) {
   return (int)((QPdfWriter*)this_)->resolution();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:89

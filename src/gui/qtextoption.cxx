@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextOptionC2Ev() {
   return  new QTextOption();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:86
 // [-2] void QTextOption(Qt::Alignment)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextOptionC2E6QFlagsIN2Qt13AlignmentFlagEE(QFlags<Qt::AlignmentFlag> alignment) {
   return  new QTextOption(alignment);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:87
 // [-2] void ~QTextOption()
@@ -134,20 +136,26 @@ qreal C_ZNK11QTextOption7tabStopEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qtextoption.h:125
 // [-2] void setTabStopDistance(qreal)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption18setTabStopDistanceEd(void *this_, qreal tabStopDistance) {
   ((QTextOption*)this_)->setTabStopDistance(tabStopDistance);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qtextoption.h:126
 // [8] qreal tabStopDistance()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK11QTextOption15tabStopDistanceEv(void *this_) {
   return (qreal)((QTextOption*)this_)->tabStopDistance();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:134

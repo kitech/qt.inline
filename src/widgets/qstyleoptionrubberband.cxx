@@ -30,6 +30,7 @@ void* C_ZN22QStyleOptionRubberBandC2Ev() {
   return  new QStyleOptionRubberBand();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionRubberBandD2Ev(void *this_) {
   delete (QStyleOptionRubberBand*)(this_);

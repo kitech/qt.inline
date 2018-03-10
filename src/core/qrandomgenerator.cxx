@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050a00
 // /usr/include/qt/QtCore/qrandom.h
 #ifndef protected
 #define protected public
@@ -33,6 +34,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGeneratorC2Ej(quint32 seedValue) {
   return  new QRandomGenerator(seedValue);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:68
 // [-2] void QRandomGenerator(const quint32 *, qsizetype)
@@ -40,6 +42,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGeneratorC2EPKjx(const quint32 * seedBuffer, qsizetype len_) {
   return  new QRandomGenerator(seedBuffer, len_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:72
 // [-2] void QRandomGenerator(const quint32 *, const quint32 *)
@@ -47,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin, const quint32 * end) {
   return  new QRandomGenerator(begin, end);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:76
 // [2512] QRandomGenerator & operator=(const class QRandomGenerator &)
@@ -159,6 +163,7 @@ extern "C" Q_DECL_EXPORT
 QRandomGenerator::result_type C_ZN16QRandomGenerator3minEv() {
   return (QRandomGenerator::result_type)QRandomGenerator::min();
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:171
 // [4] QRandomGenerator::result_type max()
@@ -166,6 +171,7 @@ extern "C" Q_DECL_EXPORT
 QRandomGenerator::result_type C_ZN16QRandomGenerator3maxEv() {
   return (QRandomGenerator::result_type)QRandomGenerator::max();
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:173
 // [8] QRandomGenerator * system()
@@ -173,6 +179,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGenerator6systemEv() {
   return (void*)QRandomGenerator::system();
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:174
 // [8] QRandomGenerator * global()
@@ -180,6 +187,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGenerator6globalEv() {
   return (void*)QRandomGenerator::global();
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:175
 // [2512] QRandomGenerator securelySeeded()
@@ -188,6 +196,7 @@ void* C_ZN16QRandomGenerator14securelySeededEv() {
   auto rv = QRandomGenerator::securelySeeded();
 return new QRandomGenerator(rv);
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRandomGeneratorD2Ev(void *this_) {

@@ -141,6 +141,7 @@ void* C_ZN8QSpinBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSpinBox*)(0);
   return  new MyQSpinBox(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:66
 // [-2] void ~QSpinBox()

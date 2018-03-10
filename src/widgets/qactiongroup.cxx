@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QActionGroupC2EP7QObject(QObject * parent) {
   return  new QActionGroup(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:64
 // [-2] void ~QActionGroup()

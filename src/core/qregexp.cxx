@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExpC2Ev() {
   return  new QRegExp();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:71
 // [-2] void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(QString* pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
   return  new QRegExp(*pattern, cs, syntax);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:74
 // [-2] void ~QRegExp()
@@ -62,12 +64,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qregexp.h:79
 // [-2] void swap(class QRegExp &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN7QRegExp4swapERS_(void *this_, QRegExp* other) {
   ((QRegExp*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:81
@@ -199,12 +204,15 @@ int C_ZNK7QRegExp13matchedLengthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qregexp.h:102
 // [4] int captureCount()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QRegExp12captureCountEv(void *this_) {
   return (int)((QRegExp*)this_)->captureCount();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:103
@@ -284,4 +292,5 @@ void* C_ZN7QRegExp6escapeERK7QString(QString* str) {
   auto rv = QRegExp::escape(*str);
 return new QString(rv);
 }
+
 //  main block end

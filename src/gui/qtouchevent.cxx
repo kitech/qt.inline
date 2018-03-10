@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public

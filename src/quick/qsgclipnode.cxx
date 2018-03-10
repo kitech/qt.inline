@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QSGClipNodeC2Ev() {
   return  new QSGClipNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:265
 // [-2] void ~QSGClipNode()

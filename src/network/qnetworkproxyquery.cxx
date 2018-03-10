@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040500
 // /usr/include/qt/QtNetwork/qnetworkproxy.h
 #ifndef protected
 #define protected public
@@ -39,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2Ev() {
   return  new QNetworkProxyQuery();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:73
 // [-2] void QNetworkProxyQuery(const class QUrl &, enum QNetworkProxyQuery::QueryType)
@@ -46,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK4QUrlNS_9QueryTypeE(QUrl* requestUrl, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*requestUrl, queryType);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:74
 // [-2] void QNetworkProxyQuery(const class QString &, int, const class QString &, enum QNetworkProxyQuery::QueryType)
@@ -53,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK7QStringiS2_NS_9QueryTypeE(QString* hostname, int port, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*hostname, port, *protocolTag, queryType);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:76
 // [-2] void QNetworkProxyQuery(quint16, const class QString &, enum QNetworkProxyQuery::QueryType)
@@ -60,6 +64,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2EtRK7QStringNS_9QueryTypeE(quint16 bindPort, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(bindPort, *protocolTag, queryType);
 }
+
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:80
 // [-2] void QNetworkProxyQuery(const class QNetworkConfiguration &, const class QUrl &, enum QNetworkProxyQuery::QueryType)
@@ -67,6 +72,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK4QUrlNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, QUrl* requestUrl, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, *requestUrl, queryType);
 }
+
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:83
 // [-2] void QNetworkProxyQuery(const class QNetworkConfiguration &, const class QString &, int, const class QString &, enum QNetworkProxyQuery::QueryType)
@@ -74,6 +80,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK7QStringiS5_NS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, QString* hostname, int port, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, *hostname, port, *protocolTag, queryType);
 }
+
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:87
 // [-2] void QNetworkProxyQuery(const class QNetworkConfiguration &, quint16, const class QString &, enum QNetworkProxyQuery::QueryType)
@@ -81,6 +88,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, quint16 bindPort, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, bindPort, *protocolTag, queryType);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:93
 // [8] QNetworkProxyQuery & operator=(class QNetworkProxyQuery &&)
@@ -107,12 +115,15 @@ void C_ZN18QNetworkProxyQueryD2Ev(void *this_) {
   delete (QNetworkProxyQuery*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:98
 // [-2] void swap(class QNetworkProxyQuery &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery4swapERS_(void *this_, QNetworkProxyQuery* other) {
   ((QNetworkProxyQuery*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:100

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qqmllist.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceC2Ev() {
   return  new QQmlListReference();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmllist.h:143
 // [-2] void QQmlListReference(class QObject *, const char *, class QQmlEngine *)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const char * property, QQmlEngine * arg2) {
   return  new QQmlListReference(arg0, property, arg2);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmllist.h:145
 // [8] QQmlListReference & operator=(const class QQmlListReference &)

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN18QGraphicsTransformC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsTransform*)(0);
   return 0; // new MyQGraphicsTransform(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:61
 // [-2] void ~QGraphicsTransform()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
 #define protected public
@@ -21,12 +22,16 @@ MyQRegularExpressionMatch() : QRegularExpressionMatch() {}
 };
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qregularexpression.h:178
 // [-2] void QRegularExpressionMatch()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QRegularExpressionMatchC2Ev() {
   return  new QRegularExpressionMatch();
 }
+#endif // QT_VERSION >= 0x050100
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:179
 // [-2] void ~QRegularExpressionMatch()
@@ -136,13 +141,16 @@ return new QStringRef(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:202
 // [16] QStringView capturedView(int)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch12capturedViewEi(void *this_, int nth) {
   auto rv = ((QRegularExpressionMatch*)this_)->capturedView(nth);
 return new QStringView(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:205
@@ -163,31 +171,40 @@ return new QStringRef(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:209
 // [8] QString captured(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch8capturedE11QStringView(void *this_, QStringView* name) {
   auto rv = ((QRegularExpressionMatch*)this_)->captured(*name);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:210
 // [16] QStringRef capturedRef(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch11capturedRefE11QStringView(void *this_, QStringView* name) {
   auto rv = ((QRegularExpressionMatch*)this_)->capturedRef(*name);
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:211
 // [16] QStringView capturedView(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch12capturedViewE11QStringView(void *this_, QStringView* name) {
   auto rv = ((QRegularExpressionMatch*)this_)->capturedView(*name);
 return new QStringView(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:213
@@ -247,27 +264,36 @@ int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, QString*
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:225
 // [4] int capturedStart(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch13capturedStartE11QStringView(void *this_, QStringView* name) {
   return (int)((QRegularExpressionMatch*)this_)->capturedStart(*name);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:226
 // [4] int capturedLength(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch14capturedLengthE11QStringView(void *this_, QStringView* name) {
   return (int)((QRegularExpressionMatch*)this_)->capturedLength(*name);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:227
 // [4] int capturedEnd(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStringView* name) {
   return (int)((QRegularExpressionMatch*)this_)->capturedEnd(*name);
 }
+#endif // QT_VERSION >= 0x050a00
 
 //  main block end

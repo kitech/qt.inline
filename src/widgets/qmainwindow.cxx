@@ -77,6 +77,7 @@ void* C_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, 
   auto _nilp = (MyQMainWindow*)(0);
   return  new MyQMainWindow(parent, flags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:95
 // [-2] void ~QMainWindow()
@@ -166,20 +167,26 @@ void C_ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE(void *this_, QTabWid
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qmainwindow.h:116
 // [4] QTabWidget::TabPosition tabPosition(Qt::DockWidgetArea)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 QTabWidget::TabPosition C_ZNK11QMainWindow11tabPositionEN2Qt14DockWidgetAreaE(void *this_, Qt::DockWidgetArea area) {
   return (QTabWidget::TabPosition)((QMainWindow*)this_)->tabPosition(area);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qmainwindow.h:117
 // [-2] void setTabPosition(Qt::DockWidgetAreas, class QTabWidget::TabPosition)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow14setTabPositionE6QFlagsIN2Qt14DockWidgetAreaEEN10QTabWidget11TabPositionE(void *this_, QFlags<Qt::DockWidgetArea> areas, QTabWidget::TabPosition tabPosition) {
   ((QMainWindow*)this_)->setTabPosition(areas, tabPosition);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:120
@@ -223,20 +230,26 @@ void C_ZN11QMainWindow10setMenuBarEP8QMenuBar(void *this_, QMenuBar * menubar) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmainwindow.h:129
 // [8] QWidget * menuWidget()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow10menuWidgetEv(void *this_) {
   return (void*)((QMainWindow*)this_)->menuWidget();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmainwindow.h:130
 // [-2] void setMenuWidget(class QWidget *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow13setMenuWidgetEP7QWidget(void *this_, QWidget * menubar) {
   ((QMainWindow*)this_)->setMenuWidget(menubar);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:134
@@ -271,12 +284,15 @@ void C_ZN11QMainWindow16setCentralWidgetEP7QWidget(void *this_, QWidget * widget
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qmainwindow.h:141
 // [8] QWidget * takeCentralWidget()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindow17takeCentralWidgetEv(void *this_) {
   return (void*)((QMainWindow*)this_)->takeCentralWidget();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:144
@@ -504,11 +520,14 @@ void C_ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qmainwindow.h:201
 // [-2] void tabifiedDockWidgetActivated(class QDockWidget *)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow27tabifiedDockWidgetActivatedEP11QDockWidget(void *this_, QDockWidget * dockWidget) {
   ((QMainWindow*)this_)->tabifiedDockWidgetActivated(dockWidget);
 }
+#endif // QT_VERSION >= 0x050800
 
 //  main block end

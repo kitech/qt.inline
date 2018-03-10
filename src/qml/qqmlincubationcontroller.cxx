@@ -48,6 +48,7 @@ void* C_ZN24QQmlIncubationControllerC2Ev() {
   auto _nilp = (MyQQmlIncubationController*)(0);
   return  new MyQQmlIncubationController();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:104
 // [-2] void ~QQmlIncubationController()

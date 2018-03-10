@@ -28,6 +28,7 @@ void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var_) {
   return  new QVariantComparisonHelper(*var_);
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN24QVariantComparisonHelperD2Ev(void *this_) {
   delete (QVariantComparisonHelper*)(this_);

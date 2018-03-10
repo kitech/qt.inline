@@ -20,6 +20,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QPagedPaintDeviceC2Ev() {
   return 0; // new QPagedPaintDevice();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:59
 // [-2] void ~QPagedPaintDevice()
@@ -36,53 +37,71 @@ bool C_ZN17QPagedPaintDevice7newPageEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:219
 // [1] bool setPageLayout(const class QPageLayout &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QPagedPaintDevice13setPageLayoutERK11QPageLayout(void *this_, QPageLayout* pageLayout) {
   return (bool)((QPagedPaintDevice*)this_)->setPageLayout(*pageLayout);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:220
 // [1] bool setPageSize(const class QPageSize &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QPagedPaintDevice11setPageSizeERK9QPageSize(void *this_, QPageSize* pageSize) {
   return (bool)((QPagedPaintDevice*)this_)->setPageSize(*pageSize);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:221
 // [1] bool setPageOrientation(class QPageLayout::Orientation)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QPagedPaintDevice18setPageOrientationEN11QPageLayout11OrientationE(void *this_, QPageLayout::Orientation orientation) {
   return (bool)((QPagedPaintDevice*)this_)->setPageOrientation(orientation);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:222
 // [1] bool setPageMargins(const class QMarginsF &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsF(void *this_, QMarginsF* margins) {
   return (bool)((QPagedPaintDevice*)this_)->setPageMargins(*margins);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:223
 // [1] bool setPageMargins(const class QMarginsF &, class QPageLayout::Unit)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsFN11QPageLayout4UnitE(void *this_, QMarginsF* margins, QPageLayout::Unit units) {
   return (bool)((QPagedPaintDevice*)this_)->setPageMargins(*margins, units);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:224
 // [8] QPageLayout pageLayout()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QPagedPaintDevice10pageLayoutEv(void *this_) {
   auto rv = ((QPagedPaintDevice*)this_)->pageLayout();
 return new QPageLayout(rv);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:226

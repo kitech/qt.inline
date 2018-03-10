@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtCore/qidentityproxymodel.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QIdentityProxyModelC2EP7QObject(QObject * parent) {
   return  new QIdentityProxyModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:58
 // [-2] void ~QIdentityProxyModel()

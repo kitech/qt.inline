@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QSGTextureC2Ev() {
   return 0; // new QSGTexture();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:57
 // [-2] void ~QSGTexture()
@@ -157,12 +158,15 @@ void C_ZN10QSGTexture18setAnisotropyLevelENS_15AnisotropyLevelE(void *this_, QSG
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtQuick/qsgtexture.h:100
 // [4] QSGTexture::AnisotropyLevel anisotropyLevel()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 QSGTexture::AnisotropyLevel C_ZNK10QSGTexture15anisotropyLevelEv(void *this_) {
   return (QSGTexture::AnisotropyLevel)((QSGTexture*)this_)->anisotropyLevel();
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:102

@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcherC2Ev() {
   return  new QStringMatcher();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:54
 // [-2] void QStringMatcher(const class QString &, Qt::CaseSensitivity)
@@ -38,13 +39,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcherC2ERK7QStringN2Qt15CaseSensitivityE(QString* pattern, Qt::CaseSensitivity cs) {
   return  new QStringMatcher(*pattern, cs);
 }
+
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qstringmatcher.h:56
 // [-2] void QStringMatcher(const class QChar *, int, Qt::CaseSensitivity)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStringMatcherC2EPK5QChariN2Qt15CaseSensitivityE(const QChar * uc, int len_, Qt::CaseSensitivity cs) {
   return  new QStringMatcher(uc, len_, cs);
 }
+#endif // QT_VERSION >= 0x040500
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:59
 // [-2] void ~QStringMatcher()
@@ -86,12 +92,15 @@ int C_ZNK14QStringMatcher7indexInERK7QStringi(void *this_, QString* str, int fro
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qstringmatcher.h:67
 // [4] int indexIn(const class QChar *, int, int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QStringMatcher7indexInEPK5QCharii(void *this_, const QChar * str, int length, int from) {
   return (int)((QStringMatcher*)this_)->indexIn(str, length, from);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:68

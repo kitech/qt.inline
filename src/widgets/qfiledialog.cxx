@@ -98,6 +98,7 @@ void* C_ZN11QFileDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, 
   auto _nilp = (MyQFileDialog*)(0);
   return  new MyQFileDialog(parent, f);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:101
 // [-2] void QFileDialog(class QWidget *, const class QString &, const class QString &, const class QString &)
@@ -106,6 +107,7 @@ void* C_ZN11QFileDialogC2EP7QWidgetRK7QStringS4_S4_(QWidget * parent, QString* c
   auto _nilp = (MyQFileDialog*)(0);
   return  new MyQFileDialog(parent, *caption, *directory, *filter);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:105
 // [-2] void ~QFileDialog()
@@ -139,21 +141,27 @@ return new QDir(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:111
 // [-2] void setDirectoryUrl(const class QUrl &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog15setDirectoryUrlERK4QUrl(void *this_, QUrl* directory) {
   ((QFileDialog*)this_)->setDirectoryUrl(*directory);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:112
 // [8] QUrl directoryUrl()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog12directoryUrlEv(void *this_) {
   auto rv = ((QFileDialog*)this_)->directoryUrl();
 return new QUrl(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:114
@@ -173,12 +181,15 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:117
 // [-2] void selectUrl(const class QUrl &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog9selectUrlERK4QUrl(void *this_, QUrl* url) {
   ((QFileDialog*)this_)->selectUrl(*url);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:120
@@ -197,96 +208,129 @@ bool C_ZNK11QFileDialog26isNameFilterDetailsVisibleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:123
 // [-2] void setNameFilter(const class QString &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog13setNameFilterERK7QString(void *this_, QString* filter) {
   ((QFileDialog*)this_)->setNameFilter(*filter);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:124
 // [-2] void setNameFilters(const class QStringList &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog14setNameFiltersERK11QStringList(void *this_, QStringList* filters) {
   ((QFileDialog*)this_)->setNameFilters(*filters);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:125
 // [8] QStringList nameFilters()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog11nameFiltersEv(void *this_) {
   auto rv = ((QFileDialog*)this_)->nameFilters();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:126
 // [-2] void selectNameFilter(const class QString &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog16selectNameFilterERK7QString(void *this_, QString* filter) {
   ((QFileDialog*)this_)->selectNameFilter(*filter);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtWidgets/qfiledialog.h:127
 // [8] QString selectedMimeTypeFilter()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog22selectedMimeTypeFilterEv(void *this_) {
   auto rv = ((QFileDialog*)this_)->selectedMimeTypeFilter();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:128
 // [8] QString selectedNameFilter()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog18selectedNameFilterEv(void *this_) {
   auto rv = ((QFileDialog*)this_)->selectedNameFilter();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:131
 // [-2] void setMimeTypeFilters(const class QStringList &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog18setMimeTypeFiltersERK11QStringList(void *this_, QStringList* filters) {
   ((QFileDialog*)this_)->setMimeTypeFilters(*filters);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:132
 // [8] QStringList mimeTypeFilters()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog15mimeTypeFiltersEv(void *this_) {
   auto rv = ((QFileDialog*)this_)->mimeTypeFilters();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:133
 // [-2] void selectMimeTypeFilter(const class QString &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog20selectMimeTypeFilterERK7QString(void *this_, QString* filter) {
   ((QFileDialog*)this_)->selectMimeTypeFilter(*filter);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:136
 // [4] QDir::Filters filter()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QDir::Filters C_ZNK11QFileDialog6filterEv(void *this_) {
   return (QDir::Filters)((QFileDialog*)this_)->filter();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qfiledialog.h:137
 // [-2] void setFilter(class QDir::Filters)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog9setFilterE6QFlagsIN4QDir6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
   ((QFileDialog*)this_)->setFilter(filters);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:139
@@ -369,21 +413,27 @@ bool C_ZNK11QFileDialog15resolveSymlinksEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qfiledialog.h:157
 // [8] QByteArray saveState()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog9saveStateEv(void *this_) {
   auto rv = ((QFileDialog*)this_)->saveState();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qfiledialog.h:158
 // [1] bool restoreState(const class QByteArray &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDialog12restoreStateERK10QByteArray(void *this_, QByteArray* state) {
   return (bool)((QFileDialog*)this_)->restoreState(*state);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:160
@@ -502,12 +552,15 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qfiledialog.h:182
 // [-2] void setProxyModel(class QAbstractProxyModel *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog13setProxyModelEP19QAbstractProxyModel(void *this_, QAbstractProxyModel * model) {
   ((QFileDialog*)this_)->setProxyModel(model);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:183
@@ -551,12 +604,15 @@ return new QFileDialog::Options(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qfiledialog.h:192
 // [-2] void open(class QObject *, const char *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
   ((QFileDialog*)this_)->open(receiver, member);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:193
@@ -591,44 +647,59 @@ void C_ZN11QFileDialog14currentChangedERK7QString(void *this_, QString* path) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qfiledialog.h:199
 // [-2] void directoryEntered(const class QString &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog16directoryEnteredERK7QString(void *this_, QString* directory) {
   ((QFileDialog*)this_)->directoryEntered(*directory);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:201
 // [-2] void urlSelected(const class QUrl &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog11urlSelectedERK4QUrl(void *this_, QUrl* url) {
   ((QFileDialog*)this_)->urlSelected(*url);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:203
 // [-2] void currentUrlChanged(const class QUrl &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog17currentUrlChangedERK4QUrl(void *this_, QUrl* url) {
   ((QFileDialog*)this_)->currentUrlChanged(*url);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qfiledialog.h:204
 // [-2] void directoryUrlEntered(const class QUrl &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog19directoryUrlEnteredERK4QUrl(void *this_, QUrl* directory) {
   ((QFileDialog*)this_)->directoryUrlEntered(*directory);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qfiledialog.h:206
 // [-2] void filterSelected(const class QString &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog14filterSelectedERK7QString(void *this_, QString* filter) {
   ((QFileDialog*)this_)->filterSelected(*filter);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:210
@@ -638,6 +709,7 @@ void* C_ZN11QFileDialog15getOpenFileNameEP7QWidgetRK7QStringS4_S4_PS2_6QFlagsINS
   auto rv = QFileDialog::getOpenFileName(parent, *caption, *dir, *filter, selectedFilter, options);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:217
 // [8] QUrl getOpenFileUrl(class QWidget *, const class QString &, const class QUrl &, const class QString &, class QString *, QFileDialog::Options, const class QStringList &)
@@ -646,6 +718,7 @@ void* C_ZN11QFileDialog14getOpenFileUrlEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlags
   auto rv = QFileDialog::getOpenFileUrl(parent, *caption, *dir, *filter, selectedFilter, options, *supportedSchemes);
 return new QUrl(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:225
 // [8] QString getSaveFileName(class QWidget *, const class QString &, const class QString &, const class QString &, class QString *, QFileDialog::Options)
@@ -654,6 +727,7 @@ void* C_ZN11QFileDialog15getSaveFileNameEP7QWidgetRK7QStringS4_S4_PS2_6QFlagsINS
   auto rv = QFileDialog::getSaveFileName(parent, *caption, *dir, *filter, selectedFilter, options);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:232
 // [8] QUrl getSaveFileUrl(class QWidget *, const class QString &, const class QUrl &, const class QString &, class QString *, QFileDialog::Options, const class QStringList &)
@@ -662,6 +736,7 @@ void* C_ZN11QFileDialog14getSaveFileUrlEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlags
   auto rv = QFileDialog::getSaveFileUrl(parent, *caption, *dir, *filter, selectedFilter, options, *supportedSchemes);
 return new QUrl(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:240
 // [8] QString getExistingDirectory(class QWidget *, const class QString &, const class QString &, QFileDialog::Options)
@@ -670,6 +745,7 @@ void* C_ZN11QFileDialog20getExistingDirectoryEP7QWidgetRK7QStringS4_6QFlagsINS_6
   auto rv = QFileDialog::getExistingDirectory(parent, *caption, *dir, options);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:245
 // [8] QUrl getExistingDirectoryUrl(class QWidget *, const class QString &, const class QUrl &, QFileDialog::Options, const class QStringList &)
@@ -678,6 +754,7 @@ void* C_ZN11QFileDialog23getExistingDirectoryUrlEP7QWidgetRK7QStringRK4QUrl6QFla
   auto rv = QFileDialog::getExistingDirectoryUrl(parent, *caption, *dir, options, *supportedSchemes);
 return new QUrl(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:251
 // [8] QStringList getOpenFileNames(class QWidget *, const class QString &, const class QString &, const class QString &, class QString *, QFileDialog::Options)
@@ -686,4 +763,5 @@ void* C_ZN11QFileDialog16getOpenFileNamesEP7QWidgetRK7QStringS4_S4_PS2_6QFlagsIN
   auto rv = QFileDialog::getOpenFileNames(parent, *caption, *dir, *filter, selectedFilter, options);
 return new QStringList(rv);
 }
+
 //  main block end

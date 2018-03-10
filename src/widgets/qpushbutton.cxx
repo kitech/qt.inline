@@ -161,6 +161,7 @@ void* C_ZN11QPushButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQPushButton*)(0);
   return  new MyQPushButton(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:65
 // [-2] void QPushButton(const class QString &, class QWidget *)
@@ -169,6 +170,7 @@ void* C_ZN11QPushButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQPushButton*)(0);
   return  new MyQPushButton(*text, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:66
 // [-2] void QPushButton(const class QIcon &, const class QString &, class QWidget *)
@@ -177,6 +179,7 @@ void* C_ZN11QPushButtonC2ERK5QIconRK7QStringP7QWidget(QIcon* icon, QString* text
   auto _nilp = (MyQPushButton*)(0);
   return  new MyQPushButton(*icon, *text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:67
 // [-2] void ~QPushButton()

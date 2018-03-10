@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h
 #ifndef protected
 #define protected public
@@ -59,6 +60,7 @@ void* C_ZN15QSystemTrayIconC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSystemTrayIcon*)(0);
   return  new MyQSystemTrayIcon(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:70
 // [-2] void QSystemTrayIcon(const class QIcon &, class QObject *)
@@ -67,6 +69,7 @@ void* C_ZN15QSystemTrayIconC2ERK5QIconP7QObject(QIcon* icon, QObject * parent) {
   auto _nilp = (MyQSystemTrayIcon*)(0);
   return  new MyQSystemTrayIcon(*icon, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:71
 // [-2] void ~QSystemTrayIcon()
@@ -131,6 +134,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN15QSystemTrayIcon21isSystemTrayAvailableEv() {
   return (bool)QSystemTrayIcon::isSystemTrayAvailable();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:93
 // [1] bool supportsMessages()
@@ -138,14 +142,18 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN15QSystemTrayIcon16supportsMessagesEv() {
   return (bool)QSystemTrayIcon::supportsMessages();
 }
+
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:97
 // [16] QRect geometry()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSystemTrayIcon8geometryEv(void *this_) {
   auto rv = ((QSystemTrayIcon*)this_)->geometry();
 return new QRect(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:98
@@ -180,20 +188,26 @@ void C_ZN15QSystemTrayIcon4hideEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:104
 // [-2] void showMessage(const class QString &, const class QString &, const class QIcon &, int)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_RK5QIconi(void *this_, QString* title, QString* msg, QIcon* icon, int msecs) {
   ((QSystemTrayIcon*)this_)->showMessage(*title, *msg, *icon, msecs);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:105
 // [-2] void showMessage(const class QString &, const class QString &, class QSystemTrayIcon::MessageIcon, int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_NS_11MessageIconEi(void *this_, QString* title, QString* msg, QSystemTrayIcon::MessageIcon icon, int msecs) {
   ((QSystemTrayIcon*)this_)->showMessage(*title, *msg, icon, msecs);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:109

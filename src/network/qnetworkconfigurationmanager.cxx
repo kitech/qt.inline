@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040700
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN28QNetworkConfigurationManagerC2EP7QObject(QObject * parent) {
   return  new QNetworkConfigurationManager(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:70
 // [-2] void ~QNetworkConfigurationManager()

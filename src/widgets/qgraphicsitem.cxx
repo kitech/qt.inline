@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -375,12 +376,15 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
 };
 
 // Protected Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:421
 // [-2] void updateMicroFocus()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem16updateMicroFocusEv(void *this_) {
   ((QGraphicsItem*)this_)->QGraphicsItem::updateMicroFocus();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:422
@@ -617,6 +621,7 @@ void* C_ZN13QGraphicsItemC2EPS_(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsItem*)(0);
   return 0; // new MyQGraphicsItem(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:162
 // [-2] void ~QGraphicsItem()
@@ -649,36 +654,48 @@ void* C_ZNK13QGraphicsItem12topLevelItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:169
 // [8] QGraphicsWidget * parentWidget()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem12parentWidgetEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->parentWidget();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:170
 // [8] QGraphicsWidget * topLevelWidget()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem14topLevelWidgetEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->topLevelWidget();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:171
 // [8] QGraphicsWidget * window()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem6windowEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->window();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:172
 // [8] QGraphicsItem * panel()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem5panelEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->panel();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:173
@@ -689,28 +706,37 @@ void C_ZN13QGraphicsItem13setParentItemEPS_(void *this_, QGraphicsItem * parent)
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:178
 // [1] bool isWidget()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem8isWidgetEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->isWidget();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:179
 // [1] bool isWindow()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem8isWindowEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->isWindow();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:180
 // [1] bool isPanel()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem7isPanelEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->isPanel();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:185
@@ -754,12 +780,15 @@ void C_ZN13QGraphicsItem8setFlagsE6QFlagsINS_16GraphicsItemFlagEE(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:192
 // [4] QGraphicsItem::CacheMode cacheMode()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QGraphicsItem::CacheMode C_ZNK13QGraphicsItem9cacheModeEv(void *this_) {
   return (QGraphicsItem::CacheMode)((QGraphicsItem*)this_)->cacheMode();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:193
@@ -770,12 +799,15 @@ void C_ZN13QGraphicsItem12setCacheModeENS_9CacheModeERK5QSize(void *this_, QGrap
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:195
 // [4] QGraphicsItem::PanelModality panelModality()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 QGraphicsItem::PanelModality C_ZNK13QGraphicsItem13panelModalityEv(void *this_) {
   return (QGraphicsItem::PanelModality)((QGraphicsItem*)this_)->panelModality();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:196
@@ -786,12 +818,15 @@ void C_ZN13QGraphicsItem16setPanelModalityENS_13PanelModalityE(void *this_, QGra
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:197
 // [1] bool isBlockedByModalPanel(class QGraphicsItem **)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem21isBlockedByModalPanelEPPS_(void *this_, QGraphicsItem ** blockingPanel) {
   return (bool)((QGraphicsItem*)this_)->isBlockedByModalPanel(blockingPanel);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:200
@@ -852,12 +887,15 @@ bool C_ZNK13QGraphicsItem9isVisibleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:212
 // [1] bool isVisibleTo(const class QGraphicsItem *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem11isVisibleToEPKS_(void *this_, const QGraphicsItem * parent) {
   return (bool)((QGraphicsItem*)this_)->isVisibleTo(parent);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:213
@@ -932,44 +970,59 @@ void C_ZN13QGraphicsItem14setAcceptDropsEb(void *this_, bool on) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:226
 // [8] qreal opacity()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QGraphicsItem7opacityEv(void *this_) {
   return (qreal)((QGraphicsItem*)this_)->opacity();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:227
 // [8] qreal effectiveOpacity()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QGraphicsItem16effectiveOpacityEv(void *this_) {
   return (qreal)((QGraphicsItem*)this_)->effectiveOpacity();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:228
 // [-2] void setOpacity(qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem10setOpacityEd(void *this_, qreal opacity) {
   ((QGraphicsItem*)this_)->setOpacity(opacity);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:232
 // [8] QGraphicsEffect * graphicsEffect()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem14graphicsEffectEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->graphicsEffect();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:233
 // [-2] void setGraphicsEffect(class QGraphicsEffect *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem17setGraphicsEffectEP15QGraphicsEffect(void *this_, QGraphicsEffect * effect) {
   ((QGraphicsItem*)this_)->setGraphicsEffect(effect);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:236
@@ -988,52 +1041,70 @@ void C_ZN13QGraphicsItem23setAcceptedMouseButtonsE6QFlagsIN2Qt11MouseButtonEE(vo
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:242
 // [1] bool acceptHoverEvents()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem17acceptHoverEventsEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->acceptHoverEvents();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:243
 // [-2] void setAcceptHoverEvents(_Bool)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem20setAcceptHoverEventsEb(void *this_, bool enabled) {
   ((QGraphicsItem*)this_)->setAcceptHoverEvents(enabled);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:244
 // [1] bool acceptTouchEvents()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem17acceptTouchEventsEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->acceptTouchEvents();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:245
 // [-2] void setAcceptTouchEvents(_Bool)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem20setAcceptTouchEventsEb(void *this_, bool enabled) {
   ((QGraphicsItem*)this_)->setAcceptTouchEvents(enabled);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:247
 // [1] bool filtersChildEvents()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem18filtersChildEventsEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->filtersChildEvents();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:248
 // [-2] void setFiltersChildEvents(_Bool)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem21setFiltersChildEventsEb(void *this_, bool enabled) {
   ((QGraphicsItem*)this_)->setFiltersChildEvents(enabled);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:250
@@ -1052,20 +1123,26 @@ void C_ZN13QGraphicsItem21setHandlesChildEventsEb(void *this_, bool enabled) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:253
 // [1] bool isActive()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem8isActiveEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->isActive();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:254
 // [-2] void setActive(_Bool)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem9setActiveEb(void *this_, bool active) {
   ((QGraphicsItem*)this_)->setActive(active);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:256
@@ -1092,28 +1169,37 @@ void C_ZN13QGraphicsItem10clearFocusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:260
 // [8] QGraphicsItem * focusProxy()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem10focusProxyEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->focusProxy();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:261
 // [-2] void setFocusProxy(class QGraphicsItem *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem13setFocusProxyEPS_(void *this_, QGraphicsItem * item) {
   ((QGraphicsItem*)this_)->setFocusProxy(item);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:263
 // [8] QGraphicsItem * focusItem()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem9focusItemEv(void *this_) {
   return (void*)((QGraphicsItem*)this_)->focusItem();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:264
@@ -1124,36 +1210,48 @@ void* C_ZNK13QGraphicsItem14focusScopeItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:266
 // [-2] void grabMouse()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem9grabMouseEv(void *this_) {
   ((QGraphicsItem*)this_)->grabMouse();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:267
 // [-2] void ungrabMouse()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem11ungrabMouseEv(void *this_) {
   ((QGraphicsItem*)this_)->ungrabMouse();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:268
 // [-2] void grabKeyboard()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem12grabKeyboardEv(void *this_) {
   ((QGraphicsItem*)this_)->grabKeyboard();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:269
 // [-2] void ungrabKeyboard()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem14ungrabKeyboardEv(void *this_) {
   ((QGraphicsItem*)this_)->ungrabKeyboard();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:272
@@ -1173,12 +1271,15 @@ qreal C_ZNK13QGraphicsItem1xEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:274
 // [-2] void setX(qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem4setXEd(void *this_, qreal x) {
   ((QGraphicsItem*)this_)->setX(x);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:275
@@ -1189,12 +1290,15 @@ qreal C_ZNK13QGraphicsItem1yEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:276
 // [-2] void setY(qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem4setYEd(void *this_, qreal y) {
   ((QGraphicsItem*)this_)->setY(y);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:277
@@ -1280,113 +1384,152 @@ void C_ZN13QGraphicsItem11resetMatrixEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:290
 // [88] QTransform transform()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem9transformEv(void *this_) {
   auto rv = ((QGraphicsItem*)this_)->transform();
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:291
 // [88] QTransform sceneTransform()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem14sceneTransformEv(void *this_) {
   auto rv = ((QGraphicsItem*)this_)->sceneTransform();
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:292
 // [88] QTransform deviceTransform(const class QTransform &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem15deviceTransformERK10QTransform(void *this_, QTransform* viewportTransform) {
   auto rv = ((QGraphicsItem*)this_)->deviceTransform(*viewportTransform);
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:293
 // [88] QTransform itemTransform(const class QGraphicsItem *, _Bool *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem13itemTransformEPKS_Pb(void *this_, const QGraphicsItem * other, bool * ok) {
   auto rv = ((QGraphicsItem*)this_)->itemTransform(other, ok);
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:294
 // [-2] void setTransform(const class QTransform &, _Bool)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem12setTransformERK10QTransformb(void *this_, QTransform* matrix, bool combine) {
   ((QGraphicsItem*)this_)->setTransform(*matrix, combine);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:295
 // [-2] void resetTransform()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem14resetTransformEv(void *this_) {
   ((QGraphicsItem*)this_)->resetTransform();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:302
 // [-2] void setRotation(qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem11setRotationEd(void *this_, qreal angle) {
   ((QGraphicsItem*)this_)->setRotation(angle);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:303
 // [8] qreal rotation()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QGraphicsItem8rotationEv(void *this_) {
   return (qreal)((QGraphicsItem*)this_)->rotation();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:305
 // [-2] void setScale(qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem8setScaleEd(void *this_, qreal scale) {
   ((QGraphicsItem*)this_)->setScale(scale);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:306
 // [8] qreal scale()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QGraphicsItem5scaleEv(void *this_) {
   return (qreal)((QGraphicsItem*)this_)->scale();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:311
 // [16] QPointF transformOriginPoint()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem20transformOriginPointEv(void *this_) {
   auto rv = ((QGraphicsItem*)this_)->transformOriginPoint();
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:312
 // [-2] void setTransformOriginPoint(const class QPointF &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem23setTransformOriginPointERK7QPointF(void *this_, QPointF* origin) {
   ((QGraphicsItem*)this_)->setTransformOriginPoint(*origin);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public inline Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:313
 // [-2] void setTransformOriginPoint(qreal, qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem23setTransformOriginPointEdd(void *this_, qreal ax, qreal ay) {
   ((QGraphicsItem*)this_)->setTransformOriginPoint(ax, ay);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:316
@@ -1413,12 +1556,15 @@ void C_ZN13QGraphicsItem9setZValueEd(void *this_, qreal z) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:321
 // [-2] void stackBefore(const class QGraphicsItem *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem11stackBeforeEPKS_(void *this_, const QGraphicsItem * sibling) {
   ((QGraphicsItem*)this_)->stackBefore(sibling);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:324
@@ -1465,13 +1611,16 @@ bool C_ZNK13QGraphicsItem9isClippedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:329
 // [8] QPainterPath clipPath()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem8clipPathEv(void *this_) {
   auto rv = ((QGraphicsItem*)this_)->clipPath();
 return new QPainterPath(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:330
@@ -1498,20 +1647,26 @@ bool C_ZNK13QGraphicsItem16collidesWithPathERK12QPainterPathN2Qt17ItemSelectionM
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:334
 // [1] bool isObscured(const class QRectF &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem10isObscuredERK6QRectF(void *this_, QRectF* rect) {
   return (bool)((QGraphicsItem*)this_)->isObscured(*rect);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:335
 // [1] bool isObscured(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem10isObscuredEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   return (bool)((QGraphicsItem*)this_)->isObscured(x, y, w, h);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:336
@@ -1531,29 +1686,38 @@ return new QPainterPath(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:339
 // [8] QRegion boundingRegion(const class QTransform &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem14boundingRegionERK10QTransform(void *this_, QTransform* itemToDeviceTransform) {
   auto rv = ((QGraphicsItem*)this_)->boundingRegion(*itemToDeviceTransform);
 return new QRegion(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:340
 // [8] qreal boundingRegionGranularity()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QGraphicsItem25boundingRegionGranularityEv(void *this_) {
   return (qreal)((QGraphicsItem*)this_)->boundingRegionGranularity();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:341
 // [-2] void setBoundingRegionGranularity(qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem28setBoundingRegionGranularityEd(void *this_, qreal granularity) {
   ((QGraphicsItem*)this_)->setBoundingRegionGranularity(granularity);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:344
@@ -1580,12 +1744,15 @@ void C_ZN13QGraphicsItem6updateEdddd(void *this_, qreal x, qreal y, qreal width,
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:347
 // [-2] void scroll(qreal, qreal, const class QRectF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem6scrollEddRK6QRectF(void *this_, qreal dx, qreal dy, QRectF* rect) {
   ((QGraphicsItem*)this_)->scroll(dx, dy, *rect);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:350
@@ -1642,31 +1809,40 @@ return new QPolygonF(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:356
 // [32] QRectF mapRectToItem(const class QGraphicsItem *, const class QRectF &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem13mapRectToItemEPKS_RK6QRectF(void *this_, const QGraphicsItem * item, QRectF* rect) {
   auto rv = ((QGraphicsItem*)this_)->mapRectToItem(item, *rect);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:357
 // [32] QRectF mapRectToParent(const class QRectF &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem15mapRectToParentERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QGraphicsItem*)this_)->mapRectToParent(*rect);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:358
 // [32] QRectF mapRectToScene(const class QRectF &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem14mapRectToSceneERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QGraphicsItem*)this_)->mapRectToScene(*rect);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:359
@@ -1777,31 +1953,40 @@ return new QPolygonF(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:371
 // [32] QRectF mapRectFromItem(const class QGraphicsItem *, const class QRectF &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem15mapRectFromItemEPKS_RK6QRectF(void *this_, const QGraphicsItem * item, QRectF* rect) {
   auto rv = ((QGraphicsItem*)this_)->mapRectFromItem(item, *rect);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:372
 // [32] QRectF mapRectFromParent(const class QRectF &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem17mapRectFromParentERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QGraphicsItem*)this_)->mapRectFromParent(*rect);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:373
 // [32] QRectF mapRectFromScene(const class QRectF &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem16mapRectFromSceneERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QGraphicsItem*)this_)->mapRectFromScene(*rect);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:374
@@ -1885,58 +2070,76 @@ return new QPointF(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:384
 // [8] QPolygonF mapToItem(const class QGraphicsItem *, qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem9mapToItemEPKS_dddd(void *this_, const QGraphicsItem * item, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapToItem(item, x, y, w, h);
 return new QPolygonF(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:385
 // [8] QPolygonF mapToParent(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem11mapToParentEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapToParent(x, y, w, h);
 return new QPolygonF(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:386
 // [8] QPolygonF mapToScene(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem10mapToSceneEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapToScene(x, y, w, h);
 return new QPolygonF(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:387
 // [32] QRectF mapRectToItem(const class QGraphicsItem *, qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem13mapRectToItemEPKS_dddd(void *this_, const QGraphicsItem * item, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapRectToItem(item, x, y, w, h);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:388
 // [32] QRectF mapRectToParent(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem15mapRectToParentEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapRectToParent(x, y, w, h);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:389
 // [32] QRectF mapRectToScene(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem14mapRectToSceneEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapRectToScene(x, y, w, h);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:390
@@ -1966,58 +2169,76 @@ return new QPointF(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:393
 // [8] QPolygonF mapFromItem(const class QGraphicsItem *, qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem11mapFromItemEPKS_dddd(void *this_, const QGraphicsItem * item, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapFromItem(item, x, y, w, h);
 return new QPolygonF(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:394
 // [8] QPolygonF mapFromParent(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem13mapFromParentEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapFromParent(x, y, w, h);
 return new QPolygonF(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:395
 // [8] QPolygonF mapFromScene(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem12mapFromSceneEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapFromScene(x, y, w, h);
 return new QPolygonF(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:396
 // [32] QRectF mapRectFromItem(const class QGraphicsItem *, qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem15mapRectFromItemEPKS_dddd(void *this_, const QGraphicsItem * item, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapRectFromItem(item, x, y, w, h);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:397
 // [32] QRectF mapRectFromParent(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem17mapRectFromParentEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapRectFromParent(x, y, w, h);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:398
 // [32] QRectF mapRectFromScene(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem16mapRectFromSceneEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   auto rv = ((QGraphicsItem*)this_)->mapRectFromScene(x, y, w, h);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:400
@@ -2028,20 +2249,26 @@ bool C_ZNK13QGraphicsItem12isAncestorOfEPKS_(void *this_, const QGraphicsItem * 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:401
 // [8] QGraphicsItem * commonAncestorItem(const class QGraphicsItem *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsItem18commonAncestorItemEPKS_(void *this_, const QGraphicsItem * other) {
   return (void*)((QGraphicsItem*)this_)->commonAncestorItem(other);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:402
 // [1] bool isUnderMouse()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem12isUnderMouseEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->isUnderMouse();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:405
@@ -2061,20 +2288,26 @@ void C_ZN13QGraphicsItem7setDataEiRK8QVariant(void *this_, int key, QVariant* va
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:408
 // [4] Qt::InputMethodHints inputMethodHints()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 Qt::InputMethodHints C_ZNK13QGraphicsItem16inputMethodHintsEv(void *this_) {
   return (Qt::InputMethodHints)((QGraphicsItem*)this_)->inputMethodHints();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:409
 // [-2] void setInputMethodHints(Qt::InputMethodHints)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem19setInputMethodHintsE6QFlagsIN2Qt15InputMethodHintEE(void *this_, QFlags<Qt::InputMethodHint> hints) {
   ((QGraphicsItem*)this_)->setInputMethodHints(hints);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:415

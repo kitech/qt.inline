@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QVBoxLayoutC2Ev() {
   return  new QVBoxLayout();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:131
 // [-2] void QVBoxLayout(class QWidget *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QVBoxLayoutC2EP7QWidget(QWidget * parent) {
   return  new QVBoxLayout(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:132
 // [-2] void ~QVBoxLayout()

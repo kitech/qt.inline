@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlScriptStringC2Ev() {
   return  new QQmlScriptString();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlscriptstring.h:63
 // [-2] void ~QQmlScriptString()

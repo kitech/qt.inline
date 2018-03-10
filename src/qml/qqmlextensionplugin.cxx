@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qqmlextensionplugin.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QQmlExtensionPluginC2EP7QObject(QObject * parent) {
   return 0; // new QQmlExtensionPlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:62
 // [-2] void ~QQmlExtensionPlugin()
@@ -43,13 +45,16 @@ void C_ZN19QQmlExtensionPluginD2Ev(void *this_) {
   delete (QQmlExtensionPlugin*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:64
 // [8] QUrl baseUrl()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QQmlExtensionPlugin7baseUrlEv(void *this_) {
   auto rv = ((QQmlExtensionPlugin*)this_)->baseUrl();
 return new QUrl(rv);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:66

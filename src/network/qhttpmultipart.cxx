@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h
 #ifndef protected
 #define protected public
@@ -37,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
   return  new QHttpMultiPart(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:102
 // [-2] void QHttpMultiPart(enum QHttpMultiPart::ContentType, class QObject *)
@@ -44,6 +46,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject(QHttpMultiPart::ContentType contentType, QObject * parent) {
   return  new QHttpMultiPart(contentType, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:103
 // [-2] void ~QHttpMultiPart()

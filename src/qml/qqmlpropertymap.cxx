@@ -58,6 +58,7 @@ void* C_ZN15QQmlPropertyMapC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQQmlPropertyMap*)(0);
   return  new MyQQmlPropertyMap(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:59
 // [-2] void ~QQmlPropertyMap()

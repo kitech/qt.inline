@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qrunnable.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QRunnableC2Ev() {
   return 0; // new QRunnable();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:61
 // [-2] void ~QRunnable()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtCore/qresource.h
 #ifndef protected
 #define protected public
@@ -92,6 +93,7 @@ void* C_ZN9QResourceC2ERK7QStringRK7QLocale(QString* file, QLocale* locale) {
   auto _nilp = (MyQResource*)(0);
   return  new MyQResource(*file, *locale);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:58
 // [-2] void ~QResource()
@@ -190,6 +192,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QResource13addSearchPathERK7QString(QString* path) {
   QResource::addSearchPath(*path);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:75
 // [8] QStringList searchPaths()
@@ -198,6 +201,7 @@ void* C_ZN9QResource11searchPathsEv() {
   auto rv = QResource::searchPaths();
 return new QStringList(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:77
 // [1] bool registerResource(const class QString &, const class QString &)
@@ -205,6 +209,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource16registerResourceERK7QStringS2_(QString* rccFilename, QString* resourceRoot) {
   return (bool)QResource::registerResource(*rccFilename, *resourceRoot);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:78
 // [1] bool unregisterResource(const class QString &, const class QString &)
@@ -212,18 +217,27 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource18unregisterResourceERK7QStringS2_(QString* rccFilename, QString* resourceRoot) {
   return (bool)QResource::unregisterResource(*rccFilename, *resourceRoot);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qresource.h:80
 // [1] bool registerResource(const uchar *, const class QString &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * rccData, QString* resourceRoot) {
   return (bool)QResource::registerResource(rccData, *resourceRoot);
 }
+#endif // QT_VERSION >= 0x040300
+
 // Public static Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qresource.h:81
 // [1] bool unregisterResource(const uchar *, const class QString &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, QString* resourceRoot) {
   return (bool)QResource::unregisterResource(rccData, *resourceRoot);
 }
+#endif // QT_VERSION >= 0x040300
+
 //  main block end

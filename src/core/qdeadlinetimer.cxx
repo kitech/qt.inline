@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtCore/qdeadlinetimer.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerC2EN2Qt9TimerTypeE(Qt::TimerType type_) {
   return  new QDeadlineTimer(type_);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:67
 // [-2] void QDeadlineTimer(enum QDeadlineTimer::ForeverConstant, Qt::TimerType)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerC2ENS_15ForeverConstantEN2Qt9TimerTypeE(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) {
   return  new QDeadlineTimer(arg0, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:69
 // [-2] void QDeadlineTimer(qint64, Qt::TimerType)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerC2ExN2Qt9TimerTypeE(qint64 msecs, Qt::TimerType type_) {
   return  new QDeadlineTimer(msecs, type_);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:71
 // [-2] void swap(class QDeadlineTimer &)
@@ -157,6 +161,7 @@ void* C_ZN14QDeadlineTimer8addNSecsES_x(QDeadlineTimer* dt, qint64 nsecs) {
   auto rv = QDeadlineTimer::addNSecs(*dt, nsecs);
 return new QDeadlineTimer(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:95
 // [16] QDeadlineTimer current(Qt::TimerType)
@@ -165,6 +170,7 @@ void* C_ZN14QDeadlineTimer7currentEN2Qt9TimerTypeE(Qt::TimerType timerType) {
   auto rv = QDeadlineTimer::current(timerType);
 return new QDeadlineTimer(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:118
 // [16] QDeadlineTimer & operator+=(qint64)

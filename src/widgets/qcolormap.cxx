@@ -25,6 +25,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QColormap10initializeEv() {
   QColormap::initialize();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:61
 // [-2] void cleanup()
@@ -32,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QColormap7cleanupEv() {
   QColormap::cleanup();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:63
 // [8] QColormap instance(int)
@@ -40,6 +42,7 @@ void* C_ZN9QColormap8instanceEi(int screen) {
   auto rv = QColormap::instance(screen);
 return new QColormap(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:66
 // [-2] void ~QColormap()

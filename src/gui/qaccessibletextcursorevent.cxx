@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextCursorEventC2EP7QObjecti(QObject * obj, int cursorPos) {
   return  new QAccessibleTextCursorEvent(obj, cursorPos);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:753
 // [-2] void QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextCursorEventC2EP20QAccessibleInterfacei(QAccessibleInterface * iface, int cursorPos) {
   return  new QAccessibleTextCursorEvent(iface, cursorPos);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:760
 // [-2] void ~QAccessibleTextCursorEvent()

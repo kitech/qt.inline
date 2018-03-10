@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qtouchdevice.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QTouchDeviceC2Ev() {
   return  new QTouchDevice();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:74
 // [-2] void ~QTouchDevice()
@@ -61,12 +63,15 @@ return new QTouchDevice::Capabilities(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtGui/qtouchdevice.h:81
 // [4] int maximumTouchPoints()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTouchDevice18maximumTouchPointsEv(void *this_) {
   return (int)((QTouchDevice*)this_)->maximumTouchPoints();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:83

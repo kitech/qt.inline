@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
   return  new QDoubleValidator(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:134
 // [-2] void QDoubleValidator(double, double, int, class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EddiP7QObject(double bottom, double top, int decimals, QObject * parent) {
   return  new QDoubleValidator(bottom, top, decimals, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:135
 // [-2] void ~QDoubleValidator()

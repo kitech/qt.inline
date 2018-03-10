@@ -184,44 +184,59 @@ void C_ZN15QAbstractSocket14setSocketErrorENS_11SocketErrorE(void *this_, QAbstr
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:218
 // [-2] void setLocalPort(quint16)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket12setLocalPortEt(void *this_, quint16 port) {
   ((QAbstractSocket*)this_)->QAbstractSocket::setLocalPort(port);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:219
 // [-2] void setLocalAddress(const class QHostAddress &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket15setLocalAddressERK12QHostAddress(void *this_, QHostAddress* address) {
   ((QAbstractSocket*)this_)->QAbstractSocket::setLocalAddress(*address);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:220
 // [-2] void setPeerPort(quint16)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket11setPeerPortEt(void *this_, quint16 port) {
   ((QAbstractSocket*)this_)->QAbstractSocket::setPeerPort(port);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:221
 // [-2] void setPeerAddress(const class QHostAddress &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket14setPeerAddressERK12QHostAddress(void *this_, QHostAddress* address) {
   ((QAbstractSocket*)this_)->QAbstractSocket::setPeerAddress(*address);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:222
 // [-2] void setPeerName(const class QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket11setPeerNameERK7QString(void *this_, QString* name) {
   ((QAbstractSocket*)this_)->QAbstractSocket::setPeerName(*name);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractsocket.h:62
@@ -239,6 +254,7 @@ void* C_ZN15QAbstractSocketC2ENS_10SocketTypeEP7QObject(QAbstractSocket::SocketT
   auto _nilp = (MyQAbstractSocket*)(0);
   return 0; // new MyQAbstractSocket(socketType, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractsocket.h:140
 // [-2] void ~QAbstractSocket()
@@ -247,21 +263,27 @@ void C_ZN15QAbstractSocketD2Ev(void *this_) {
   delete (QAbstractSocket*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qabstractsocket.h:142
 // [-2] void resume()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket6resumeEv(void *this_) {
   ((QAbstractSocket*)this_)->resume();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qabstractsocket.h:143
 // [4] QAbstractSocket::PauseModes pauseMode()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 QAbstractSocket::PauseModes* C_ZNK15QAbstractSocket9pauseModeEv(void *this_) {
   auto rv = ((QAbstractSocket*)this_)->pauseMode();
 return new QAbstractSocket::PauseModes(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractsocket.h:144
@@ -427,21 +449,27 @@ bool C_ZN15QAbstractSocket19setSocketDescriptorExNS_11SocketStateE6QFlagsIN9QIOD
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qabstractsocket.h:177
 // [-2] void setSocketOption(class QAbstractSocket::SocketOption, const class QVariant &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket15setSocketOptionENS_12SocketOptionERK8QVariant(void *this_, QAbstractSocket::SocketOption option, QVariant* value) {
   ((QAbstractSocket*)this_)->setSocketOption(option, *value);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qabstractsocket.h:178
 // [16] QVariant socketOption(class QAbstractSocket::SocketOption)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractSocket12socketOptionENS_12SocketOptionE(void *this_, QAbstractSocket::SocketOption option) {
   auto rv = ((QAbstractSocket*)this_)->socketOption(option);
 return new QVariant(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractsocket.h:180
@@ -532,21 +560,27 @@ bool C_ZN15QAbstractSocket19waitForDisconnectedEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:197
 // [-2] void setProxy(const class QNetworkProxy &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket8setProxyERK13QNetworkProxy(void *this_, QNetworkProxy* networkProxy) {
   ((QAbstractSocket*)this_)->setProxy(*networkProxy);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtNetwork/qabstractsocket.h:198
 // [8] QNetworkProxy proxy()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QAbstractSocket5proxyEv(void *this_) {
   auto rv = ((QAbstractSocket*)this_)->proxy();
 return new QNetworkProxy(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractsocket.h:202
@@ -589,11 +623,14 @@ void C_ZN15QAbstractSocket5errorENS_11SocketErrorE(void *this_, QAbstractSocket:
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtNetwork/qabstractsocket.h:208
 // [-2] void proxyAuthenticationRequired(const class QNetworkProxy &, class QAuthenticator *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket27proxyAuthenticationRequiredERK13QNetworkProxyP14QAuthenticator(void *this_, QNetworkProxy* proxy, QAuthenticator * authenticator) {
   ((QAbstractSocket*)this_)->proxyAuthenticationRequired(*proxy, authenticator);
 }
+#endif // QT_VERSION >= 0x040300
 
 //  main block end

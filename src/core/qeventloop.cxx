@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QEventLoopC2EP7QObject(QObject * parent) {
   return  new QEventLoop(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:57
 // [-2] void ~QEventLoop()

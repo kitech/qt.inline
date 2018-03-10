@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtCore/qabstractproxymodel.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractProxyModel*)(0);
   return 0; // new MyQAbstractProxyModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:60
 // [-2] void ~QAbstractProxyModel()
@@ -233,20 +235,26 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qabstractproxymodel.h:92
 // [1] bool canDropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
   return (bool)((QAbstractProxyModel*)this_)->canDropMimeData(data, action, row, column, *parent);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public virtual Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qabstractproxymodel.h:94
 // [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
   return (bool)((QAbstractProxyModel*)this_)->dropMimeData(data, action, row, column, *parent);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:96

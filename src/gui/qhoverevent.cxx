@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QHoverEventC2EN6QEvent4TypeERK7QPointFS4_6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type_, QPointF* pos, QPointF* oldPos, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QHoverEvent(type_, *pos, *oldPos, modifiers);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:158
 // [-2] void ~QHoverEvent()

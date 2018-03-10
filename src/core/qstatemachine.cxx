@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qstatemachine.h
 #ifndef protected
 #define protected public
@@ -179,14 +180,19 @@ void* C_ZN13QStateMachineC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQStateMachine*)(0);
   return  new MyQStateMachine(parent);
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qstatemachine.h:113
 // [-2] void QStateMachine(class QState::ChildMode, class QObject *)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStateMachineC2EN6QState9ChildModeEP7QObject(QState::ChildMode childMode, QObject * parent) {
   auto _nilp = (MyQStateMachine*)(0);
   return  new MyQStateMachine(childMode, parent);
 }
+#endif // QT_VERSION >= 0x050000
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:114
 // [-2] void ~QStateMachine()
@@ -348,11 +354,14 @@ void C_ZN13QStateMachine10setRunningEb(void *this_, bool running) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qstatemachine.h:155
 // [-2] void runningChanged(_Bool)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine14runningChangedEb(void *this_, bool running) {
   ((QStateMachine*)this_)->runningChanged(running);
 }
+#endif // QT_VERSION >= 0x050400
 
 //  main block end

@@ -361,6 +361,7 @@ void* C_ZN5QMenuC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQMenu*)(0);
   return  new MyQMenu(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:75
 // [-2] void QMenu(const class QString &, class QWidget *)
@@ -369,6 +370,7 @@ void* C_ZN5QMenuC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQMenu*)(0);
   return  new MyQMenu(*title, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:76
 // [-2] void ~QMenu()
@@ -441,20 +443,26 @@ void* C_ZN5QMenu12addSeparatorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtWidgets/qmenu.h:162
 // [8] QAction * addSection(const class QString &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QMenu10addSectionERK7QString(void *this_, QString* text) {
   return (void*)((QMenu*)this_)->addSection(*text);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtWidgets/qmenu.h:163
 // [8] QAction * addSection(const class QIcon &, const class QString &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QMenu10addSectionERK5QIconRK7QString(void *this_, QIcon* icon, QString* text) {
   return (void*)((QMenu*)this_)->addSection(*icon, *text);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:165
@@ -473,28 +481,37 @@ void* C_ZN5QMenu15insertSeparatorEP7QAction(void *this_, QAction * before) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtWidgets/qmenu.h:167
 // [8] QAction * insertSection(class QAction *, const class QString &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QMenu13insertSectionEP7QActionRK7QString(void *this_, QAction * before, QString* text) {
   return (void*)((QMenu*)this_)->insertSection(before, *text);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtWidgets/qmenu.h:168
 // [8] QAction * insertSection(class QAction *, const class QIcon &, const class QString &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QMenu13insertSectionEP7QActionRK5QIconRK7QString(void *this_, QAction * before, QIcon* icon, QString* text) {
   return (void*)((QMenu*)this_)->insertSection(before, *icon, *text);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmenu.h:170
 // [1] bool isEmpty()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QMenu7isEmptyEv(void *this_) {
   return (bool)((QMenu*)this_)->isEmpty();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:171
@@ -529,20 +546,26 @@ bool C_ZNK5QMenu20isTearOffMenuVisibleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtWidgets/qmenu.h:177
 // [-2] void showTearOffMenu()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN5QMenu15showTearOffMenuEv(void *this_) {
   ((QMenu*)this_)->showTearOffMenu();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtWidgets/qmenu.h:178
 // [-2] void showTearOffMenu(const class QPoint &)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN5QMenu15showTearOffMenuERK6QPoint(void *this_, QPoint* pos) {
   ((QMenu*)this_)->showTearOffMenu(*pos);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:179
@@ -725,12 +748,15 @@ void C_ZN5QMenu11aboutToShowEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmenu.h:227
 // [-2] void aboutToHide()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN5QMenu11aboutToHideEv(void *this_) {
   ((QMenu*)this_)->aboutToHide();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:228

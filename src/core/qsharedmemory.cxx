@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qsharedmemory.h
 #ifndef protected
 #define protected public
@@ -37,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
   return  new QSharedMemory(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:78
 // [-2] void QSharedMemory(const class QString &, class QObject *)
@@ -44,6 +46,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QSharedMemoryC2ERK7QStringP7QObject(QString* key, QObject * parent) {
   return  new QSharedMemory(*key, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:79
 // [-2] void ~QSharedMemory()
@@ -69,21 +72,27 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qsharedmemory.h:83
 // [-2] void setNativeKey(const class QString &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSharedMemory12setNativeKeyERK7QString(void *this_, QString* key) {
   ((QSharedMemory*)this_)->setNativeKey(*key);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qsharedmemory.h:84
 // [8] QString nativeKey()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QSharedMemory9nativeKeyEv(void *this_) {
   auto rv = ((QSharedMemory*)this_)->nativeKey();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:86

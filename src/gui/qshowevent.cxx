@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QShowEventC2Ev() {
   return  new QShowEvent();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:494
 // [-2] void ~QShowEvent()

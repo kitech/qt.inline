@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQuick/qquickview.h
 #ifndef protected
 #define protected public
@@ -180,6 +181,7 @@ void* C_ZN10QQuickViewC2EP7QWindow(QWindow * parent) {
   auto _nilp = (MyQQuickView*)(0);
   return  new MyQQuickView(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickview.h:64
 // [-2] void QQuickView(class QQmlEngine *, class QWindow *)
@@ -188,6 +190,7 @@ void* C_ZN10QQuickViewC2EP10QQmlEngineP7QWindow(QQmlEngine * engine, QWindow * p
   auto _nilp = (MyQQuickView*)(0);
   return  new MyQQuickView(engine, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickview.h:65
 // [-2] void QQuickView(const class QUrl &, class QWindow *)
@@ -196,6 +199,7 @@ void* C_ZN10QQuickViewC2ERK4QUrlP7QWindow(QUrl* source, QWindow * parent) {
   auto _nilp = (MyQQuickView*)(0);
   return  new MyQQuickView(*source, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickview.h:66
 // [-2] void ~QQuickView()

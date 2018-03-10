@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QSizeC2Ev() {
   return  new QSize();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:56
 // [-2] void QSize(int, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QSizeC2Eii(int w, int h) {
   return  new QSize(w, h);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:58
 // [1] bool isNull()
@@ -101,13 +103,16 @@ void C_ZN5QSize9transposeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qsize.h:67
 // [8] QSize transposed()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QSize10transposedEv(void *this_) {
   auto rv = ((QSize*)this_)->transposed();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:69
@@ -126,22 +131,28 @@ void C_ZN5QSize5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSize* s, Qt::Aspe
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qsize.h:71
 // [8] QSize scaled(int, int, Qt::AspectRatioMode)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QSize6scaledEiiN2Qt15AspectRatioModeE(void *this_, int w, int h, Qt::AspectRatioMode mode) {
   auto rv = ((QSize*)this_)->scaled(w, h, mode);
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qsize.h:72
 // [8] QSize scaled(const class QSize &, Qt::AspectRatioMode)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QSize6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSize* s, Qt::AspectRatioMode mode) {
   auto rv = ((QSize*)this_)->scaled(*s, mode);
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:74

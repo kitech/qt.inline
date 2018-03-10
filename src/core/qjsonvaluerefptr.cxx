@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QJsonValueRefPtrC2EP10QJsonArrayi(QJsonArray * array, int idx) {
   return  new QJsonValueRefPtr(array, idx);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:239
 // [-2] void QJsonValueRefPtr(class QJsonObject *, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QJsonValueRefPtrC2EP11QJsonObjecti(QJsonObject * object, int idx) {
   return  new QJsonValueRefPtr(object, idx);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:242
 // [16] QJsonValueRef & operator*()

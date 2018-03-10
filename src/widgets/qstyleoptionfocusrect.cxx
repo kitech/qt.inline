@@ -30,6 +30,7 @@ void* C_ZN21QStyleOptionFocusRectC2Ev() {
   return  new QStyleOptionFocusRect();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN21QStyleOptionFocusRectD2Ev(void *this_) {
   delete (QStyleOptionFocusRect*)(this_);

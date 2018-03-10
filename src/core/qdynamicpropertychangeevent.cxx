@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtCore/qcoreevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray(QByteArray* name) {
   return  new QDynamicPropertyChangeEvent(*name);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:366
 // [-2] void ~QDynamicPropertyChangeEvent()

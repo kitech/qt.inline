@@ -70,6 +70,7 @@ void* C_ZN22QSGVertexColorMaterialC2Ev() {
   auto _nilp = (MyQSGVertexColorMaterial*)(0);
   return  new MyQSGVertexColorMaterial();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:52
 // [4] int compare(const class QSGMaterial *)

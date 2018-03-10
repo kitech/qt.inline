@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegateC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractItemDelegate(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:73
 // [-2] void ~QAbstractItemDelegate()
@@ -68,12 +69,15 @@ void* C_ZNK21QAbstractItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewIt
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:88
 // [-2] void destroyEditor(class QWidget *, const class QModelIndex &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QAbstractItemDelegate13destroyEditorEP7QWidgetRK11QModelIndex(void *this_, QWidget * editor, QModelIndex* index) {
   ((QAbstractItemDelegate*)this_)->destroyEditor(editor, *index);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:90
@@ -115,13 +119,17 @@ void* C_ZN21QAbstractItemDelegate10elidedTextERK12QFontMetricsiN2Qt13TextElideMo
   auto rv = QAbstractItemDelegate::elidedText(*fontMetrics, width, mode, *text);
 return new QString(rv);
 }
+
 // Public virtual Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:109
 // [1] bool helpEvent(class QHelpEvent *, class QAbstractItemView *, const class QStyleOptionViewItem &, const class QModelIndex &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QAbstractItemDelegate9helpEventEP10QHelpEventP17QAbstractItemViewRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QHelpEvent * event, QAbstractItemView * view, QStyleOptionViewItem* option, QModelIndex* index) {
   return (bool)((QAbstractItemDelegate*)this_)->helpEvent(event, view, *option, *index);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:117
@@ -140,11 +148,14 @@ void C_ZN21QAbstractItemDelegate11closeEditorEP7QWidgetNS_11EndEditHintE(void *t
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:119
 // [-2] void sizeHintChanged(const class QModelIndex &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractItemDelegate15sizeHintChangedERK11QModelIndex(void *this_, QModelIndex* arg0) {
   ((QAbstractItemDelegate*)this_)->sizeHintChanged(*arg0);
 }
+#endif // QT_VERSION >= 0x040400
 
 //  main block end

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qsurfaceformat.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QSurfaceFormatC2Ev() {
   return  new QSurfaceFormat();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:95
 // [-2] void QSurfaceFormat(QSurfaceFormat::FormatOptions)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QSurfaceFormatC2E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::FormatOption> options) {
   return  new QSurfaceFormat(options);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:97
 // [8] QSurfaceFormat & operator=(const class QSurfaceFormat &)
@@ -293,12 +296,15 @@ bool C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qsurfaceformat.h:146
 // [-2] void setOptions(class QSurfaceFormat::FormatOptions)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> options) {
   ((QSurfaceFormat*)this_)->setOptions(options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:147
@@ -317,36 +323,48 @@ bool C_ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE(void *this_, QSurfaceF
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qsurfaceformat.h:149
 // [4] QSurfaceFormat::FormatOptions options()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 QSurfaceFormat::FormatOptions C_ZNK14QSurfaceFormat7optionsEv(void *this_) {
   return (QSurfaceFormat::FormatOptions)((QSurfaceFormat*)this_)->options();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qsurfaceformat.h:151
 // [4] int swapInterval()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QSurfaceFormat12swapIntervalEv(void *this_) {
   return (int)((QSurfaceFormat*)this_)->swapInterval();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qsurfaceformat.h:152
 // [-2] void setSwapInterval(int)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat15setSwapIntervalEi(void *this_, int interval) {
   ((QSurfaceFormat*)this_)->setSwapInterval(interval);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qsurfaceformat.h:154
 // [4] QSurfaceFormat::ColorSpace colorSpace()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 QSurfaceFormat::ColorSpace C_ZNK14QSurfaceFormat10colorSpaceEv(void *this_) {
   return (QSurfaceFormat::ColorSpace)((QSurfaceFormat*)this_)->colorSpace();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:155
@@ -357,18 +375,26 @@ void C_ZN14QSurfaceFormat13setColorSpaceENS_10ColorSpaceE(void *this_, QSurfaceF
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtGui/qsurfaceformat.h:157
 // [-2] void setDefaultFormat(const class QSurfaceFormat &)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat16setDefaultFormatERKS_(QSurfaceFormat* format) {
   QSurfaceFormat::setDefaultFormat(*format);
 }
+#endif // QT_VERSION >= 0x050400
+
 // Public static Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtGui/qsurfaceformat.h:158
 // [8] QSurfaceFormat defaultFormat()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSurfaceFormat13defaultFormatEv() {
   auto rv = QSurfaceFormat::defaultFormat();
 return new QSurfaceFormat(rv);
 }
+#endif // QT_VERSION >= 0x050400
+
 //  main block end

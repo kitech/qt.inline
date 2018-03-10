@@ -260,6 +260,7 @@ void* C_ZN6QLabelC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags
   auto _nilp = (MyQLabel*)(0);
   return  new MyQLabel(parent, f);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:71
 // [-2] void QLabel(const class QString &, class QWidget *, Qt::WindowFlags)
@@ -268,6 +269,7 @@ void* C_ZN6QLabelC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* text,
   auto _nilp = (MyQLabel*)(0);
   return  new MyQLabel(*text, parent, f);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:72
 // [-2] void ~QLabel()
@@ -479,12 +481,15 @@ Qt::TextInteractionFlags C_ZNK6QLabel20textInteractionFlagsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qlabel.h:114
 // [-2] void setSelection(int, int)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel12setSelectionEii(void *this_, int arg0, int arg1) {
   ((QLabel*)this_)->setSelection(arg0, arg1);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:115
@@ -504,12 +509,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qlabel.h:117
 // [4] int selectionStart()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QLabel14selectionStartEv(void *this_) {
   return (int)((QLabel*)this_)->selectionStart();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:120
@@ -568,19 +576,25 @@ void C_ZN6QLabel5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlabel.h:133
 // [-2] void linkActivated(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel13linkActivatedERK7QString(void *this_, QString* link) {
   ((QLabel*)this_)->linkActivated(*link);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlabel.h:134
 // [-2] void linkHovered(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel11linkHoveredERK7QString(void *this_, QString* link) {
   ((QLabel*)this_)->linkHovered(*link);
 }
+#endif // QT_VERSION >= 0x040200
 
 //  main block end

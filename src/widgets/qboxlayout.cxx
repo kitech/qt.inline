@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg0, QWidget * parent) {
   return  new QBoxLayout(arg0, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:66
 // [-2] void ~QBoxLayout()
@@ -75,12 +76,15 @@ void C_ZN10QBoxLayout10addStretchEi(void *this_, int stretch) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qboxlayout.h:73
 // [-2] void addSpacerItem(class QSpacerItem *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout13addSpacerItemEP11QSpacerItem(void *this_, QSpacerItem * spacerItem) {
   ((QBoxLayout*)this_)->addSpacerItem(spacerItem);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:74
@@ -131,12 +135,15 @@ void C_ZN10QBoxLayout13insertStretchEii(void *this_, int index, int stretch) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qboxlayout.h:81
 // [-2] void insertSpacerItem(int, class QSpacerItem *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout16insertSpacerItemEiP11QSpacerItem(void *this_, int index, QSpacerItem * spacerItem) {
   ((QBoxLayout*)this_)->insertSpacerItem(index, spacerItem);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:82
@@ -195,20 +202,26 @@ bool C_ZN10QBoxLayout16setStretchFactorEP7QLayouti(void *this_, QLayout * l, int
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qboxlayout.h:91
 // [-2] void setStretch(int, int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout10setStretchEii(void *this_, int index, int stretch) {
   ((QBoxLayout*)this_)->setStretch(index, stretch);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qboxlayout.h:92
 // [4] int stretch(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QBoxLayout7stretchEi(void *this_, int index) {
   return (int)((QBoxLayout*)this_)->stretch(index);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:94

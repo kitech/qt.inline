@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QStylePainterC2Ev() {
   return  new QStylePainter();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:55
 // [-2] void QStylePainter(class QWidget *)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QStylePainterC2EP7QWidget(QWidget * w) {
   return  new QStylePainter(w);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:56
 // [-2] void QStylePainter(class QPaintDevice *, class QWidget *)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QStylePainterC2EP12QPaintDeviceP7QWidget(QPaintDevice * pd, QWidget * w) {
   return  new QStylePainter(pd, w);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:57
 // [1] bool begin(class QWidget *)

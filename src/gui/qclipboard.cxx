@@ -62,12 +62,15 @@ bool C_ZNK10QClipboard13ownsClipboardEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qclipboard.h:72
 // [1] bool ownsFindBuffer()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QClipboard14ownsFindBufferEv(void *this_) {
   return (bool)((QClipboard*)this_)->ownsFindBuffer();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:74
@@ -146,12 +149,15 @@ void C_ZN10QClipboard9setPixmapERK7QPixmapNS_4ModeE(void *this_, QPixmap* arg0, 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qclipboard.h:87
 // [-2] void changed(class QClipboard::Mode)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN10QClipboard7changedENS_4ModeE(void *this_, QClipboard::Mode mode) {
   ((QClipboard*)this_)->changed(mode);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:88
@@ -162,12 +168,15 @@ void C_ZN10QClipboard16selectionChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qclipboard.h:89
 // [-2] void findBufferChanged()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN10QClipboard17findBufferChangedEv(void *this_) {
   ((QClipboard*)this_)->findBufferChanged();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:90

@@ -45,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2Ev() {
   return  new QColor();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:71
 // [-2] void QColor(Qt::GlobalColor)
@@ -52,6 +53,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2EN2Qt11GlobalColorE(Qt::GlobalColor color) {
   return  new QColor(color);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:72
 // [-2] void QColor(int, int, int, int)
@@ -59,6 +61,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2Eiiii(int r, int g, int b, int a) {
   return  new QColor(r, g, b, a);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:73
 // [-2] void QColor(QRgb)
@@ -66,13 +69,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2Ej(QRgb rgb) {
   return  new QColor(rgb);
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qcolor.h:74
 // [-2] void QColor(class QRgba64)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2E7QRgba64(QRgba64* rgba64) {
   return  new QColor(*rgba64);
 }
+#endif // QT_VERSION >= 0x050600
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:76
 // [-2] void QColor(const class QString &)
@@ -80,6 +88,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2ERK7QString(QString* name) {
   return  new QColor(*name);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:78
 // [-2] void QColor(class QStringView)
@@ -87,6 +96,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2E11QStringView(QStringView* name) {
   return  new QColor(*name);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:79
 // [-2] void QColor(const char *)
@@ -94,13 +104,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2EPKc(const char * aname) {
   return  new QColor(aname);
 }
+
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtGui/qcolor.h:80
 // [-2] void QColor(class QLatin1String)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2E13QLatin1String(QLatin1String* name) {
   return  new QColor(*name);
 }
+#endif // QT_VERSION >= 0x050800
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:81
 // [-2] void QColor(enum QColor::Spec)
@@ -108,6 +123,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2ENS_4SpecE(QColor::Spec spec) {
   return  new QColor(spec);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:87
 // [16] QColor & operator=(class QColor &&)
@@ -170,20 +186,26 @@ void C_ZN6QColor13setNamedColorERK7QString(void *this_, QString* name) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qcolor.h:104
 // [-2] void setNamedColor(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor13setNamedColorE11QStringView(void *this_, QStringView* name) {
   ((QColor*)this_)->setNamedColor(*name);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtGui/qcolor.h:105
 // [-2] void setNamedColor(class QLatin1String)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor13setNamedColorE13QLatin1String(void *this_, QLatin1String* name) {
   ((QColor*)this_)->setNamedColor(*name);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:107
@@ -193,6 +215,7 @@ void* C_ZN6QColor10colorNamesEv() {
   auto rv = QColor::colorNames();
 return new QStringList(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:109
 // [4] QColor::Spec spec()
@@ -362,21 +385,27 @@ void C_ZN6QColor7setRgbFEdddd(void *this_, qreal r, qreal g, qreal b, qreal a) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qcolor.h:138
 // [8] QRgba64 rgba64()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QColor6rgba64Ev(void *this_) {
   auto rv = ((QColor*)this_)->rgba64();
 return new QRgba64(rv);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qcolor.h:139
 // [-2] void setRgba64(class QRgba64)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor9setRgba64E7QRgba64(void *this_, QRgba64* rgba) {
   ((QColor*)this_)->setRgba64(*rgba);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:141
@@ -619,84 +648,114 @@ void C_ZN6QColor8setCmykFEddddd(void *this_, qreal c, qreal m, qreal y, qreal k,
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:181
 // [4] int hslHue()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QColor6hslHueEv(void *this_) {
   return (int)((QColor*)this_)->hslHue();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:182
 // [4] int hslSaturation()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QColor13hslSaturationEv(void *this_) {
   return (int)((QColor*)this_)->hslSaturation();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:183
 // [4] int lightness()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QColor9lightnessEv(void *this_) {
   return (int)((QColor*)this_)->lightness();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:185
 // [8] qreal hslHueF()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK6QColor7hslHueFEv(void *this_) {
   return (qreal)((QColor*)this_)->hslHueF();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:186
 // [8] qreal hslSaturationF()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK6QColor14hslSaturationFEv(void *this_) {
   return (qreal)((QColor*)this_)->hslSaturationF();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:187
 // [8] qreal lightnessF()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK6QColor10lightnessFEv(void *this_) {
   return (qreal)((QColor*)this_)->lightnessF();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:189
 // [-2] void getHsl(int *, int *, int *, int *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QColor6getHslEPiS0_S0_S0_(void *this_, int * h, int * s, int * l, int * a) {
   ((QColor*)this_)->getHsl(h, s, l, a);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:190
 // [-2] void setHsl(int, int, int, int)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor6setHslEiiii(void *this_, int h, int s, int l, int a) {
   ((QColor*)this_)->setHsl(h, s, l, a);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:192
 // [-2] void getHslF(qreal *, qreal *, qreal *, qreal *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QColor7getHslFEPdS0_S0_S0_(void *this_, qreal * h, qreal * s, qreal * l, qreal * a) {
   ((QColor*)this_)->getHslF(h, s, l, a);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:193
 // [-2] void setHslF(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor7setHslFEdddd(void *this_, qreal h, qreal s, qreal l, qreal a) {
   ((QColor*)this_)->setHslF(h, s, l, a);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:195
@@ -751,6 +810,7 @@ void* C_ZN6QColor7fromRgbEj(QRgb rgb) {
   auto rv = QColor::fromRgb(rgb);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:203
 // [16] QColor fromRgba(QRgb)
@@ -759,6 +819,7 @@ void* C_ZN6QColor8fromRgbaEj(QRgb rgba) {
   auto rv = QColor::fromRgba(rgba);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:205
 // [16] QColor fromRgb(int, int, int, int)
@@ -767,6 +828,7 @@ void* C_ZN6QColor7fromRgbEiiii(int r, int g, int b, int a) {
   auto rv = QColor::fromRgb(r, g, b, a);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:206
 // [16] QColor fromRgbF(qreal, qreal, qreal, qreal)
@@ -775,22 +837,31 @@ void* C_ZN6QColor8fromRgbFEdddd(qreal r, qreal g, qreal b, qreal a) {
   auto rv = QColor::fromRgbF(r, g, b, a);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qcolor.h:208
 // [16] QColor fromRgba64(ushort, ushort, ushort, ushort)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColor10fromRgba64Etttt(ushort r, ushort g, ushort b, ushort a) {
   auto rv = QColor::fromRgba64(r, g, b, a);
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x050600
+
 // Public static Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qcolor.h:209
 // [16] QColor fromRgba64(class QRgba64)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColor10fromRgba64E7QRgba64(QRgba64* rgba) {
   auto rv = QColor::fromRgba64(*rgba);
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x050600
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:211
 // [16] QColor fromHsv(int, int, int, int)
@@ -799,6 +870,7 @@ void* C_ZN6QColor7fromHsvEiiii(int h, int s, int v, int a) {
   auto rv = QColor::fromHsv(h, s, v, a);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:212
 // [16] QColor fromHsvF(qreal, qreal, qreal, qreal)
@@ -807,6 +879,7 @@ void* C_ZN6QColor8fromHsvFEdddd(qreal h, qreal s, qreal v, qreal a) {
   auto rv = QColor::fromHsvF(h, s, v, a);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:214
 // [16] QColor fromCmyk(int, int, int, int, int)
@@ -815,6 +888,7 @@ void* C_ZN6QColor8fromCmykEiiiii(int c, int m, int y, int k, int a) {
   auto rv = QColor::fromCmyk(c, m, y, k, a);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:215
 // [16] QColor fromCmykF(qreal, qreal, qreal, qreal, qreal)
@@ -823,22 +897,31 @@ void* C_ZN6QColor9fromCmykFEddddd(qreal c, qreal m, qreal y, qreal k, qreal a) {
   auto rv = QColor::fromCmykF(c, m, y, k, a);
 return new QColor(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:217
 // [16] QColor fromHsl(int, int, int, int)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColor7fromHslEiiii(int h, int s, int l, int a) {
   auto rv = QColor::fromHsl(h, s, l, a);
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qcolor.h:218
 // [16] QColor fromHslF(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColor8fromHslFEdddd(qreal h, qreal s, qreal l, qreal a) {
   auto rv = QColor::fromHslF(h, s, l, a);
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:220
 // [16] QColor light(int)
@@ -849,13 +932,16 @@ return new QColor(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qcolor.h:221
 // [16] QColor lighter(int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QColor7lighterEi(void *this_, int f) {
   auto rv = ((QColor*)this_)->lighter(f);
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:222
@@ -867,13 +953,16 @@ return new QColor(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qcolor.h:223
 // [16] QColor darker(int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QColor6darkerEi(void *this_, int f) {
   auto rv = ((QColor*)this_)->darker(f);
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:225
@@ -892,26 +981,38 @@ bool C_ZNK6QColorneERKS_(void *this_, QColor* c) {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qcolor.h:231
 // [1] bool isValidColor(const class QString &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QColor12isValidColorERK7QString(QString* name) {
   return (bool)QColor::isValidColor(*name);
 }
+#endif // QT_VERSION >= 0x040700
+
 // Public static Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qcolor.h:233
 // [1] bool isValidColor(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QColor12isValidColorE11QStringView(QStringView* arg0) {
   return (bool)QColor::isValidColor(*arg0);
 }
+#endif // QT_VERSION >= 0x050a00
+
 // Public static Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtGui/qcolor.h:234
 // [1] bool isValidColor(class QLatin1String)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QColor12isValidColorE13QLatin1String(QLatin1String* arg0) {
   return (bool)QColor::isValidColor(*arg0);
 }
+#endif // QT_VERSION >= 0x050800
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColorD2Ev(void *this_) {

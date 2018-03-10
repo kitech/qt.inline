@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlC2Ev() {
   return  new QUrl();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:178
 // [8] QUrl & operator=(const class QUrl &)
@@ -45,6 +46,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlC2ERK7QStringNS_11ParsingModeE(QString* url, QUrl::ParsingMode mode) {
   return  new QUrl(*url, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:183
 // [8] QUrl & operator=(const class QString &)
@@ -71,12 +73,15 @@ void C_ZN4QUrlD2Ev(void *this_) {
   delete (QUrl*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qurl.h:193
 // [-2] void swap(class QUrl &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl4swapERS_(void *this_, QUrl* other) {
   ((QUrl*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:195
@@ -94,14 +99,19 @@ void* C_ZN4QUrl11fromEncodedERK10QByteArrayNS_11ParsingModeE(QByteArray* url, QU
   auto rv = QUrl::fromEncoded(*url, mode);
 return new QUrl(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qurl.h:210
 // [8] QUrl fromUserInput(const class QString &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl13fromUserInputERK7QString(QString* userInput) {
   auto rv = QUrl::fromUserInput(*userInput);
 return new QUrl(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:212
 // [8] QUrl fromUserInput(const class QString &, const class QString &, QUrl::UserInputResolutionOptions)
@@ -110,6 +120,7 @@ void* C_ZN4QUrl13fromUserInputERK7QStringS2_6QFlagsINS_25UserInputResolutionOpti
   auto rv = QUrl::fromUserInput(*userInput, *workingDirectory, options);
 return new QUrl(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:215
 // [1] bool isValid()
@@ -119,13 +130,16 @@ bool C_ZNK4QUrl7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:216
 // [8] QString errorString()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK4QUrl11errorStringEv(void *this_) {
   auto rv = ((QUrl*)this_)->errorString();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:218
@@ -209,12 +223,15 @@ void C_ZN4QUrl7setPortEi(void *this_, int port) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qurl.h:243
 // [4] int port(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK4QUrl4portEi(void *this_, int defaultPort) {
   return (int)((QUrl*)this_)->port(defaultPort);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:245
@@ -225,12 +242,15 @@ void C_ZN4QUrl7setPathERK7QStringNS_11ParsingModeE(void *this_, QString* path, Q
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:249
 // [1] bool hasQuery()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrl8hasQueryEv(void *this_) {
   return (bool)((QUrl*)this_)->hasQuery();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:250
@@ -241,20 +261,26 @@ void C_ZN4QUrl8setQueryERK7QStringNS_11ParsingModeE(void *this_, QString* query,
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qurl.h:251
 // [-2] void setQuery(const class QUrlQuery &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl8setQueryERK9QUrlQuery(void *this_, QUrlQuery* query) {
   ((QUrl*)this_)->setQuery(*query);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:254
 // [1] bool hasFragment()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrl11hasFragmentEv(void *this_) {
   return (bool)((QUrl*)this_)->hasFragment();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:256
@@ -290,12 +316,15 @@ bool C_ZNK4QUrl10isParentOfERKS_(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qurl.h:263
 // [1] bool isLocalFile()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrl11isLocalFileEv(void *this_) {
   return (bool)((QUrl*)this_)->isLocalFile();
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:264
@@ -305,6 +334,7 @@ void* C_ZN4QUrl13fromLocalFileERK7QString(QString* localfile) {
   auto rv = QUrl::fromLocalFile(*localfile);
 return new QUrl(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:265
 // [8] QString toLocalFile()
@@ -362,6 +392,7 @@ void* C_ZN4QUrl19fromPercentEncodingERK10QByteArray(QByteArray* arg0) {
   auto rv = QUrl::fromPercentEncoding(*arg0);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:277
 // [8] QByteArray toPercentEncoding(const class QString &, const class QByteArray &, const class QByteArray &)
@@ -370,35 +401,52 @@ void* C_ZN4QUrl17toPercentEncodingERK7QStringRK10QByteArrayS5_(QString* arg0, QB
   auto rv = QUrl::toPercentEncoding(*arg0, *exclude, *include);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:357
 // [8] QString fromAce(const class QByteArray &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl7fromAceERK10QByteArray(QByteArray* arg0) {
   auto rv = QUrl::fromAce(*arg0);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:358
 // [8] QByteArray toAce(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl5toAceERK7QString(QString* arg0) {
   auto rv = QUrl::toAce(*arg0);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:359
 // [8] QStringList idnWhitelist()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl12idnWhitelistEv() {
   auto rv = QUrl::idnWhitelist();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qurl.h:363
 // [-2] void setIdnWhitelist(const class QStringList &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl15setIdnWhitelistERK11QStringList(QStringList* arg0) {
   QUrl::setIdnWhitelist(*arg0);
 }
+#endif // QT_VERSION >= 0x040200
+
 //  main block end

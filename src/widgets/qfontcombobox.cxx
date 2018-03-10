@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qfontcombobox.h
 #ifndef protected
 #define protected public
@@ -57,6 +58,7 @@ void* C_ZN13QFontComboBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQFontComboBox*)(0);
   return  new MyQFontComboBox(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:62
 // [-2] void ~QFontComboBox()

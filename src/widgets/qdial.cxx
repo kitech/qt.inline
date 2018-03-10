@@ -197,6 +197,7 @@ void* C_ZN5QDialC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQDial*)(0);
   return  new MyQDial(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:66
 // [-2] void ~QDial()

@@ -198,6 +198,7 @@ void* C_ZN15QAbstractSliderC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractSlider*)(0);
   return 0; // new MyQAbstractSlider(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:71
 // [-2] void ~QAbstractSlider()

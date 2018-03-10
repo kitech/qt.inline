@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050300
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h
 #ifndef protected
 #define protected public
@@ -421,6 +422,7 @@ void* C_ZN12QQuickWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQQuickWidget*)(0);
   return  new MyQQuickWidget(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h:68
 // [-2] void QQuickWidget(class QQmlEngine *, class QWidget *)
@@ -429,6 +431,7 @@ void* C_ZN12QQuickWidgetC2EP10QQmlEngineP7QWidget(QQmlEngine * engine, QWidget *
   auto _nilp = (MyQQuickWidget*)(0);
   return  new MyQQuickWidget(engine, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h:69
 // [-2] void QQuickWidget(const class QUrl &, class QWidget *)
@@ -437,6 +440,7 @@ void* C_ZN12QQuickWidgetC2ERK4QUrlP7QWidget(QUrl* source, QWidget * parent) {
   auto _nilp = (MyQQuickWidget*)(0);
   return  new MyQQuickWidget(*source, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h:70
 // [-2] void ~QQuickWidget()
@@ -554,12 +558,15 @@ void C_ZN12QQuickWidget13setClearColorERK6QColor(void *this_, QColor* color) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h:100
 // [8] QQuickWindow * quickWindow()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget11quickWindowEv(void *this_) {
   return (void*)((QQuickWidget*)this_)->quickWindow();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h:103

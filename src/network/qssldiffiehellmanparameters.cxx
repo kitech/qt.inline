@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h
 #ifndef protected
 #define protected public
@@ -28,6 +29,7 @@ void* C_ZN27QSslDiffieHellmanParameters17defaultParametersEv() {
   auto rv = QSslDiffieHellmanParameters::defaultParameters();
 return new QSslDiffieHellmanParameters(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:84
 // [-2] void QSslDiffieHellmanParameters()
@@ -35,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN27QSslDiffieHellmanParametersC2Ev() {
   return  new QSslDiffieHellmanParameters();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:87
 // [-2] void ~QSslDiffieHellmanParameters()
@@ -76,6 +79,7 @@ void* C_ZN27QSslDiffieHellmanParameters11fromEncodedERK10QByteArrayN4QSsl14Encod
   auto rv = QSslDiffieHellmanParameters::fromEncoded(*encoded, format);
 return new QSslDiffieHellmanParameters(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:95
 // [8] QSslDiffieHellmanParameters fromEncoded(class QIODevice *, QSsl::EncodingFormat)
@@ -84,6 +88,7 @@ void* C_ZN27QSslDiffieHellmanParameters11fromEncodedEP9QIODeviceN4QSsl14Encoding
   auto rv = QSslDiffieHellmanParameters::fromEncoded(device, format);
 return new QSslDiffieHellmanParameters(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:97
 // [1] bool isEmpty()

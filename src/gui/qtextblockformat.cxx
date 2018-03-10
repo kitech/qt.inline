@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextBlockFormatC2Ev() {
   return  new QTextBlockFormat();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:592
 // [1] bool isValid()
@@ -150,36 +151,48 @@ int C_ZNK16QTextBlockFormat6indentEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:627
 // [-2] void setLineHeight(qreal, int)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextBlockFormat13setLineHeightEdi(void *this_, qreal height, int heightType) {
   ((QTextBlockFormat*)this_)->setLineHeight(height, heightType);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:629
 // [8] qreal lineHeight(qreal, qreal)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextBlockFormat10lineHeightEdd(void *this_, qreal scriptLineHeight, qreal scaling) {
   return (qreal)((QTextBlockFormat*)this_)->lineHeight(scriptLineHeight, scaling);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:630
 // [8] qreal lineHeight()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextBlockFormat10lineHeightEv(void *this_) {
   return (qreal)((QTextBlockFormat*)this_)->lineHeight();
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:632
 // [4] int lineHeightType()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QTextBlockFormat14lineHeightTypeEv(void *this_) {
   return (int)((QTextBlockFormat*)this_)->lineHeightType();
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:635
@@ -206,13 +219,16 @@ void C_ZN16QTextBlockFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBrea
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextformat.h:642
 // [4] QTextFormat::PageBreakFlags pageBreakPolicy()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 QTextFormat::PageBreakFlags* C_ZNK16QTextBlockFormat15pageBreakPolicyEv(void *this_) {
   auto rv = ((QTextBlockFormat*)this_)->pageBreakPolicy();
 return new QTextFormat::PageBreakFlags(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 
 extern "C" Q_DECL_EXPORT

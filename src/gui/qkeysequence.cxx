@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2Ev() {
   return  new QKeySequence();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:157
 // [-2] void QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(QString* key, QKeySequence::SequenceFormat format) {
   return  new QKeySequence(*key, format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:158
 // [-2] void QKeySequence(int, int, int, int)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2Eiiii(int k1, int k2, int k3, int k4) {
   return  new QKeySequence(k1, k2, k3, k4);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:160
 // [-2] void QKeySequence(enum QKeySequence::StandardKey)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QKeySequenceC2ENS_11StandardKeyE(QKeySequence::StandardKey key) {
   return  new QKeySequence(key);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:161
 // [-2] void ~QKeySequence()
@@ -94,6 +98,7 @@ void* C_ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE(QString* str
   auto rv = QKeySequence::fromString(*str, format);
 return new QKeySequence(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:178
 // [4] QKeySequence::SequenceMatch matches(const class QKeySequence &)
@@ -110,6 +115,7 @@ void* C_ZN12QKeySequence8mnemonicERK7QString(QString* text) {
   auto rv = QKeySequence::mnemonic(*text);
 return new QKeySequence(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:187
 // [4] int operator[](uint)
@@ -137,12 +143,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qkeysequence.h:192
 // [-2] void swap(class QKeySequence &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence* other) {
   ((QKeySequence*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:194

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qwidgetaction.h
 #ifndef protected
 #define protected public
@@ -119,6 +120,7 @@ void* C_ZN13QWidgetActionC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQWidgetAction*)(0);
   return  new MyQWidgetAction(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:60
 // [-2] void ~QWidgetAction()

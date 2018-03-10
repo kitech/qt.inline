@@ -30,6 +30,7 @@ void* C_ZN15QStyleOptionTabC2Ev() {
   return  new QStyleOptionTab();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN15QStyleOptionTabD2Ev(void *this_) {
   delete (QStyleOptionTab*)(this_);

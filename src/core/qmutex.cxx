@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QMutexC2ENS_13RecursionModeE(QMutex::RecursionMode mode) {
   return  new QMutex(mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:131
 // [-2] void ~QMutex()
@@ -59,19 +60,25 @@ void C_ZN6QMutex6unlockEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qmutex.h:140
 // [1] bool try_lock()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QMutex8try_lockEv(void *this_) {
   return (bool)((QMutex*)this_)->try_lock();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qmutex.h:161
 // [1] bool isRecursive()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QMutex11isRecursiveEv(void *this_) {
   return (bool)((QMutex*)this_)->isRecursive();
 }
+#endif // QT_VERSION >= 0x050700
 
 //  main block end

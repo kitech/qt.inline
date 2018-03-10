@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QQmlPropertyValueSourceC2Ev() {
   return 0; // new QQmlPropertyValueSource();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:54
 // [-2] void ~QQmlPropertyValueSource()

@@ -58,6 +58,7 @@ void* C_ZN9QMimeDataC2Ev() {
   auto _nilp = (MyQMimeData*)(0);
   return  new MyQMimeData();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:57
 // [-2] void ~QMimeData()
@@ -191,12 +192,15 @@ void C_ZN9QMimeData7setDataERK7QStringRK10QByteArray(void *this_, QString* mimet
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qmimedata.h:81
 // [-2] void removeFormat(const class QString &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData12removeFormatERK7QString(void *this_, QString* mimetype) {
   ((QMimeData*)this_)->removeFormat(*mimetype);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:83

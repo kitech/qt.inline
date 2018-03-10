@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050400
 // /usr/include/qt/QtQuick/qquickrendercontrol.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickRenderControlC2EP7QObject(QObject * parent) {
   return  new QQuickRenderControl(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:59
 // [-2] void ~QQuickRenderControl()
@@ -98,6 +100,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickRenderControl15renderWindowForEP12QQuickWindowP6QPoint(QQuickWindow * win, QPoint * offset) {
   return (void*)QQuickRenderControl::renderWindowFor(win, offset);
 }
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:72
 // [8] QWindow * renderWindow(class QPoint *)

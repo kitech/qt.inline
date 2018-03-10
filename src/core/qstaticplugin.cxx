@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qplugin.h
 #ifndef protected
 #define protected public

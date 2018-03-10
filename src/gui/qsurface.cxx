@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qsurface.h
 #ifndef protected
 #define protected public
@@ -53,12 +54,15 @@ QSurface::SurfaceType C_ZNK8QSurface11surfaceTypeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qsurface.h:80
 // [1] bool supportsOpenGL()
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QSurface14supportsOpenGLEv(void *this_) {
   return (bool)((QSurface*)this_)->supportsOpenGL();
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:82

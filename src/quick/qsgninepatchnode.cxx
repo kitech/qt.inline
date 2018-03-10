@@ -72,4 +72,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN16QSGNinePatchNode15rebuildGeometryEP10QSGTextureP11QSGGeometryRK9QVector4DRK6QRectFd(QSGTexture * texture, QSGGeometry * geometry, QVector4D* padding, QRectF* bounds, qreal dpr) {
   QSGNinePatchNode::rebuildGeometry(texture, geometry, *padding, *bounds, dpr);
 }
+
 //  main block end

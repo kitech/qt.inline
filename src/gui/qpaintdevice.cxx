@@ -117,12 +117,15 @@ int C_ZNK12QPaintDevice16devicePixelRatioEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qpaintdevice.h:87
 // [8] qreal devicePixelRatioF()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QPaintDevice17devicePixelRatioFEv(void *this_) {
   return (qreal)((QPaintDevice*)this_)->devicePixelRatioF();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:88
@@ -147,6 +150,7 @@ extern "C" Q_DECL_EXPORT
 qreal C_ZN12QPaintDevice22devicePixelRatioFScaleEv() {
   return (qreal)QPaintDevice::devicePixelRatioFScale();
 }
+
 // Private inline Visibility=Default Availability=NotAvailable
 // /usr/include/qt/QtGui/qpaintdevice.h:101
 // [-2] void QPaintDevice(const class QPaintDevice &)
@@ -154,4 +158,5 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QPaintDeviceC2ERKS_(QPaintDevice* arg0) {
   return 0; // new QPaintDevice(*arg0);
 }
+
 //  main block end

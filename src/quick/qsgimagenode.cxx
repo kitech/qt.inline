@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtQuick/qsgimagenode.h
 #ifndef protected
 #define protected public
@@ -163,4 +164,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode15rebuildGeometryEP11QSGGeometryP10QSGTextureRK6QRectFS4_6QFlagsINS_31TextureCoordinatesTransformFlagEE(QSGGeometry * g, QSGTexture * texture, QRectF* rect, QRectF* sourceRect, QFlags<QSGImageNode::TextureCoordinatesTransformFlag> texCoordMode) {
   QSGImageNode::rebuildGeometry(g, texture, *rect, *sourceRect, texCoordMode);
 }
+
 //  main block end

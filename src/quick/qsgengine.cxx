@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050400
 // /usr/include/qt/QtQuick/qsgengine.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QSGEngineC2EP7QObject(QObject * parent) {
   return  new QSGEngine(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgengine.h:71
 // [-2] void ~QSGEngine()
@@ -75,35 +77,47 @@ void* C_ZNK9QSGEngine19createTextureFromIdEjRK5QSize6QFlagsINS_19CreateTextureOp
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qsgengine.h:79
 // [8] QSGRendererInterface * rendererInterface()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine17rendererInterfaceEv(void *this_) {
   return (void*)((QSGEngine*)this_)->rendererInterface();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qsgengine.h:80
 // [8] QSGRectangleNode * createRectangleNode()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine19createRectangleNodeEv(void *this_) {
   return (void*)((QSGEngine*)this_)->createRectangleNode();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qsgengine.h:81
 // [8] QSGImageNode * createImageNode()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine15createImageNodeEv(void *this_) {
   return (void*)((QSGEngine*)this_)->createImageNode();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtQuick/qsgengine.h:82
 // [8] QSGNinePatchNode * createNinePatchNode()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine19createNinePatchNodeEv(void *this_) {
   return (void*)((QSGEngine*)this_)->createNinePatchNode();
 }
+#endif // QT_VERSION >= 0x050800
 
 //  main block end

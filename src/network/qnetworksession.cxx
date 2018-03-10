@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040700
 // /usr/include/qt/QtNetwork/qnetworksession.h
 #ifndef protected
 #define protected public
@@ -76,6 +77,7 @@ void* C_ZN15QNetworkSessionC2ERK21QNetworkConfigurationP7QObject(QNetworkConfigu
   auto _nilp = (MyQNetworkSession*)(0);
   return  new MyQNetworkSession(*connConfig, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:91
 // [-2] void ~QNetworkSession()
@@ -296,11 +298,14 @@ void C_ZN15QNetworkSession25newConfigurationActivatedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworksession.h:131
 // [-2] void usagePoliciesChanged(class QNetworkSession::UsagePolicies)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession20usagePoliciesChangedE6QFlagsINS_11UsagePolicyEE(void *this_, QFlags<QNetworkSession::UsagePolicy> usagePolicies) {
   ((QNetworkSession*)this_)->usagePoliciesChanged(usagePolicies);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

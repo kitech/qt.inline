@@ -33,27 +33,40 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Ei(int ai) {
   return  new QFlag(ai);
 }
+
 // Public inline Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtCore/qflags.h:68
 // [-2] void QFlag(uint)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Ej(uint ai) {
   return  new QFlag(ai);
 }
+#endif // QT_VERSION >= 0x050300
+
 // Public inline Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtCore/qflags.h:69
 // [-2] void QFlag(short)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Es(short ai) {
   return  new QFlag(ai);
 }
+#endif // QT_VERSION >= 0x050300
+
 // Public inline Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtCore/qflags.h:70
 // [-2] void QFlag(ushort)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFlagC2Et(ushort ai) {
   return  new QFlag(ai);
 }
+#endif // QT_VERSION >= 0x050300
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFlagD2Ev(void *this_) {

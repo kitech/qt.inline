@@ -28,6 +28,7 @@ void* C_ZN11QSharedDataC2Ev() {
   return  new QSharedData();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSharedDataD2Ev(void *this_) {
   delete (QSharedData*)(this_);

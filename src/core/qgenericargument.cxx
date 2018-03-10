@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QGenericArgumentC2EPKcPKv(const char * aName, const void * aData) {
   return  new QGenericArgument(aName, aData);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:299
 // [8] void * data()

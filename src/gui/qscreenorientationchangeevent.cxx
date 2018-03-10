@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation) {
   return  new QScreenOrientationChangeEvent(screen, orientation);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1039
 // [-2] void ~QScreenOrientationChangeEvent()

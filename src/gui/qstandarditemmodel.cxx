@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModelC2EP7QObject(QObject * parent) {
   return  new QStandardItemModel(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:331
 // [-2] void QStandardItemModel(int, int, class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModelC2EiiP7QObject(int rows, int columns, QObject * parent) {
   return  new QStandardItemModel(rows, columns, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:332
 // [-2] void ~QStandardItemModel()
@@ -201,37 +203,49 @@ void C_ZN18QStandardItemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt:
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:370
 // [8] QStandardItem * itemFromIndex(const class QModelIndex &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel13itemFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   return (void*)((QStandardItemModel*)this_)->itemFromIndex(*index);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:371
 // [24] QModelIndex indexFromItem(const class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel13indexFromItemEPK13QStandardItem(void *this_, const QStandardItem * item) {
   auto rv = ((QStandardItemModel*)this_)->indexFromItem(item);
 return new QModelIndex(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:373
 // [8] QStandardItem * item(int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel4itemEii(void *this_, int row, int column) {
   return (void*)((QStandardItemModel*)this_)->item(row, column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:374
 // [-2] void setItem(int, int, class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel7setItemEiiP13QStandardItem(void *this_, int row, int column, QStandardItem * item) {
   ((QStandardItemModel*)this_)->setItem(row, column, item);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:375
@@ -242,92 +256,125 @@ void C_ZN18QStandardItemModel7setItemEiP13QStandardItem(void *this_, int row, QS
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:376
 // [8] QStandardItem * invisibleRootItem()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel17invisibleRootItemEv(void *this_) {
   return (void*)((QStandardItemModel*)this_)->invisibleRootItem();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:378
 // [8] QStandardItem * horizontalHeaderItem(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel20horizontalHeaderItemEi(void *this_, int column) {
   return (void*)((QStandardItemModel*)this_)->horizontalHeaderItem(column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:379
 // [-2] void setHorizontalHeaderItem(int, class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel23setHorizontalHeaderItemEiP13QStandardItem(void *this_, int column, QStandardItem * item) {
   ((QStandardItemModel*)this_)->setHorizontalHeaderItem(column, item);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:380
 // [8] QStandardItem * verticalHeaderItem(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel18verticalHeaderItemEi(void *this_, int row) {
   return (void*)((QStandardItemModel*)this_)->verticalHeaderItem(row);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:381
 // [-2] void setVerticalHeaderItem(int, class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel21setVerticalHeaderItemEiP13QStandardItem(void *this_, int row, QStandardItem * item) {
   ((QStandardItemModel*)this_)->setVerticalHeaderItem(row, item);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:383
 // [-2] void setHorizontalHeaderLabels(const class QStringList &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel25setHorizontalHeaderLabelsERK11QStringList(void *this_, QStringList* labels) {
   ((QStandardItemModel*)this_)->setHorizontalHeaderLabels(*labels);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:384
 // [-2] void setVerticalHeaderLabels(const class QStringList &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel23setVerticalHeaderLabelsERK11QStringList(void *this_, QStringList* labels) {
   ((QStandardItemModel*)this_)->setVerticalHeaderLabels(*labels);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:386
 // [-2] void setRowCount(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel11setRowCountEi(void *this_, int rows) {
   ((QStandardItemModel*)this_)->setRowCount(rows);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:387
 // [-2] void setColumnCount(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel14setColumnCountEi(void *this_, int columns) {
   ((QStandardItemModel*)this_)->setColumnCount(columns);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:391
 // [-2] void appendRow(class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel9appendRowEP13QStandardItem(void *this_, QStandardItem * item) {
   ((QStandardItemModel*)this_)->appendRow(item);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:395
 // [-2] void insertRow(int, class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel9insertRowEiP13QStandardItem(void *this_, int row, QStandardItem * item) {
   ((QStandardItemModel*)this_)->insertRow(row, item);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:397
@@ -346,44 +393,59 @@ bool C_ZN18QStandardItemModel12insertColumnEiRK11QModelIndex(void *this_, int co
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:400
 // [8] QStandardItem * takeItem(int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModel8takeItemEii(void *this_, int row, int column) {
   return (void*)((QStandardItemModel*)this_)->takeItem(row, column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:404
 // [8] QStandardItem * takeHorizontalHeaderItem(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModel24takeHorizontalHeaderItemEi(void *this_, int column) {
   return (void*)((QStandardItemModel*)this_)->takeHorizontalHeaderItem(column);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:405
 // [8] QStandardItem * takeVerticalHeaderItem(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModel22takeVerticalHeaderItemEi(void *this_, int row) {
   return (void*)((QStandardItemModel*)this_)->takeVerticalHeaderItem(row);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:407
 // [8] const QStandardItem * itemPrototype()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel13itemPrototypeEv(void *this_) {
   return (void*)((QStandardItemModel*)this_)->itemPrototype();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:408
 // [-2] void setItemPrototype(const class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel16setItemPrototypeEPK13QStandardItem(void *this_, const QStandardItem * item) {
   ((QStandardItemModel*)this_)->setItemPrototype(item);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:414
@@ -419,11 +481,14 @@ bool C_ZN18QStandardItemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11Q
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qstandarditemmodel.h:422
 // [-2] void itemChanged(class QStandardItem *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel11itemChangedEP13QStandardItem(void *this_, QStandardItem * item) {
   ((QStandardItemModel*)this_)->itemChanged(item);
 }
+#endif // QT_VERSION >= 0x040200
 
 //  main block end

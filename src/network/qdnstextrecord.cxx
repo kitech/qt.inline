@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QDnsTextRecordC2Ev() {
   return  new QDnsTextRecord();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:166
 // [8] QDnsTextRecord & operator=(class QDnsTextRecord &&)

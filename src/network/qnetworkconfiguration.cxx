@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040700
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkConfigurationC2Ev() {
   return  new QNetworkConfiguration();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:59
 // [8] QNetworkConfiguration & operator=(class QNetworkConfiguration &&)
@@ -53,12 +55,15 @@ void C_ZN21QNetworkConfigurationD2Ev(void *this_) {
   delete (QNetworkConfiguration*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:64
 // [-2] void swap(class QNetworkConfiguration &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkConfiguration4swapERS_(void *this_, QNetworkConfiguration* other) {
   ((QNetworkConfiguration*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:66
@@ -110,12 +115,15 @@ QNetworkConfiguration::BearerType C_ZNK21QNetworkConfiguration10bearerTypeEv(voi
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:113
 // [4] QNetworkConfiguration::BearerType bearerTypeFamily()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 QNetworkConfiguration::BearerType C_ZNK21QNetworkConfiguration16bearerTypeFamilyEv(void *this_) {
   return (QNetworkConfiguration::BearerType)((QNetworkConfiguration*)this_)->bearerTypeFamily();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:114
@@ -161,19 +169,25 @@ bool C_ZNK21QNetworkConfiguration7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:123
 // [4] int connectTimeout()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QNetworkConfiguration14connectTimeoutEv(void *this_) {
   return (int)((QNetworkConfiguration*)this_)->connectTimeout();
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:124
 // [1] bool setConnectTimeout(int)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QNetworkConfiguration17setConnectTimeoutEi(void *this_, int timeout) {
   return (bool)((QNetworkConfiguration*)this_)->setConnectTimeout(timeout);
 }
+#endif // QT_VERSION >= 0x050900
 
 //  main block end

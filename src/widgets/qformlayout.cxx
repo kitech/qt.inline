@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qformlayout.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QFormLayoutC2EP7QWidget(QWidget * parent) {
   return  new QFormLayout(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:92
 // [-2] void ~QFormLayout()
@@ -251,55 +253,73 @@ void C_ZN11QFormLayout9insertRowEiP7QLayout(void *this_, int row, QLayout * layo
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:125
 // [-2] void removeRow(int)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9removeRowEi(void *this_, int row) {
   ((QFormLayout*)this_)->removeRow(row);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:126
 // [-2] void removeRow(class QWidget *)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9removeRowEP7QWidget(void *this_, QWidget * widget) {
   ((QFormLayout*)this_)->removeRow(widget);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:127
 // [-2] void removeRow(class QLayout *)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9removeRowEP7QLayout(void *this_, QLayout * layout) {
   ((QFormLayout*)this_)->removeRow(layout);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:129
 // [16] QFormLayout::TakeRowResult takeRow(int)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7takeRowEi(void *this_, int row) {
   auto rv = ((QFormLayout*)this_)->takeRow(row);
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:130
 // [16] QFormLayout::TakeRowResult takeRow(class QWidget *)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7takeRowEP7QWidget(void *this_, QWidget * widget) {
   auto rv = ((QFormLayout*)this_)->takeRow(widget);
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:131
 // [16] QFormLayout::TakeRowResult takeRow(class QLayout *)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7takeRowEP7QLayout(void *this_, QLayout * layout) {
   auto rv = ((QFormLayout*)this_)->takeRow(layout);
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:133

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qmimedatabase.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QMimeDatabaseC2Ev() {
   return  new QMimeDatabase();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:64
 // [-2] void ~QMimeDatabase()

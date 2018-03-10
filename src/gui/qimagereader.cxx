@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReaderC2Ev() {
   return  new QImageReader();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:72
 // [-2] void QImageReader(class QIODevice *, const class QByteArray &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QImageReader(device, *format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:73
 // [-2] void QImageReader(const class QString &, const class QByteArray &)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReaderC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QImageReader(*fileName, *format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:74
 // [-2] void ~QImageReader()
@@ -144,30 +147,39 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qimagereader.h:93
 // [4] QImage::Format imageFormat()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 QImage::Format C_ZNK12QImageReader11imageFormatEv(void *this_) {
   return (QImage::Format)((QImageReader*)this_)->imageFormat();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:95
 // [8] QStringList textKeys()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QImageReader8textKeysEv(void *this_) {
   auto rv = ((QImageReader*)this_)->textKeys();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:96
 // [8] QString text(const class QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QImageReader4textERK7QString(void *this_, QString* key) {
   auto rv = ((QImageReader*)this_)->text(*key);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:98
@@ -204,20 +216,26 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qimagereader.h:104
 // [-2] void setQuality(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader10setQualityEi(void *this_, int quality) {
   ((QImageReader*)this_)->setQuality(quality);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qimagereader.h:105
 // [4] int quality()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QImageReader7qualityEv(void *this_) {
   return (int)((QImageReader*)this_)->quality();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:107
@@ -237,78 +255,105 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:110
 // [-2] void setBackgroundColor(const class QColor &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader18setBackgroundColorERK6QColor(void *this_, QColor* color) {
   ((QImageReader*)this_)->setBackgroundColor(*color);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:111
 // [16] QColor backgroundColor()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QImageReader15backgroundColorEv(void *this_) {
   auto rv = ((QImageReader*)this_)->backgroundColor();
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:113
 // [1] bool supportsAnimation()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageReader17supportsAnimationEv(void *this_) {
   return (bool)((QImageReader*)this_)->supportsAnimation();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagereader.h:115
 // [-2] QImageIOHandler::Transformations transformation()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 QImageIOHandler::Transformations C_ZNK12QImageReader14transformationEv(void *this_) {
   return (QImageIOHandler::Transformations)((QImageReader*)this_)->transformation();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagereader.h:117
 // [-2] void setAutoTransform(_Bool)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader16setAutoTransformEb(void *this_, bool enabled) {
   ((QImageReader*)this_)->setAutoTransform(enabled);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagereader.h:118
 // [1] bool autoTransform()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageReader13autoTransformEv(void *this_) {
   return (bool)((QImageReader*)this_)->autoTransform();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qimagereader.h:120
 // [-2] void setGamma(float)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader8setGammaEf(void *this_, float gamma) {
   ((QImageReader*)this_)->setGamma(gamma);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qimagereader.h:121
 // [4] float gamma()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 float C_ZNK12QImageReader5gammaEv(void *this_) {
   return (float)((QImageReader*)this_)->gamma();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtGui/qimagereader.h:123
 // [8] QByteArray subType()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QImageReader7subTypeEv(void *this_) {
   auto rv = ((QImageReader*)this_)->subType();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:126
@@ -410,12 +455,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qimagereader.h:141
 // [1] bool supportsOption(class QImageIOHandler::ImageOption)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
   return (bool)((QImageReader*)this_)->supportsOption(option);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:143
@@ -425,6 +473,7 @@ void* C_ZN12QImageReader11imageFormatERK7QString(QString* fileName) {
   auto rv = QImageReader::imageFormat(*fileName);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:144
 // [8] QByteArray imageFormat(class QIODevice *)
@@ -433,4 +482,5 @@ void* C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * device) {
   auto rv = QImageReader::imageFormat(device);
 return new QByteArray(rv);
 }
+
 //  main block end

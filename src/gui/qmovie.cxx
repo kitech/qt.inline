@@ -39,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovieC2EP7QObject(QObject * parent) {
   return  new QMovie(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:83
 // [-2] void QMovie(class QIODevice *, const class QByteArray &, class QObject *)
@@ -46,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, QByteArray* format, QObject * parent) {
   return  new QMovie(device, *format, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:84
 // [-2] void QMovie(const class QString &, const class QByteArray &, class QObject *)
@@ -53,6 +55,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(QString* fileName, QByteArray* format, QObject * parent) {
   return  new QMovie(*fileName, *format, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:85
 // [-2] void ~QMovie()
@@ -236,21 +239,27 @@ int C_ZNK6QMovie5speedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qmovie.h:119
 // [8] QSize scaledSize()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovie10scaledSizeEv(void *this_) {
   auto rv = ((QMovie*)this_)->scaledSize();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qmovie.h:120
 // [-2] void setScaledSize(const class QSize &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie13setScaledSizeERK5QSize(void *this_, QSize* size) {
   ((QMovie*)this_)->setScaledSize(*size);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:122
@@ -317,12 +326,15 @@ void C_ZN6QMovie8finishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qmovie.h:132
 // [-2] void frameChanged(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie12frameChangedEi(void *this_, int frameNumber) {
   ((QMovie*)this_)->frameChanged(frameNumber);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:135

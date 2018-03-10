@@ -47,12 +47,15 @@ MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) 
 };
 
 // Protected Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qtreewidget.h:203
 // [-2] void emitDataChanged()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem15emitDataChangedEv(void *this_) {
   ((QTreeWidgetItem*)this_)->QTreeWidgetItem::emitDataChanged();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:67
@@ -62,6 +65,7 @@ void* C_ZN15QTreeWidgetItemC2Ei(int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:68
 // [-2] void QTreeWidgetItem(const class QStringList &, int)
@@ -70,6 +74,7 @@ void* C_ZN15QTreeWidgetItemC2ERK11QStringListi(QStringList* strings, int type_) 
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(*strings, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:69
 // [-2] void QTreeWidgetItem(class QTreeWidget *, int)
@@ -78,6 +83,7 @@ void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgeti(QTreeWidget * view, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(view, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:70
 // [-2] void QTreeWidgetItem(class QTreeWidget *, const class QStringList &, int)
@@ -86,6 +92,7 @@ void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetRK11QStringListi(QTreeWidget * view,
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(view, *strings, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:71
 // [-2] void QTreeWidgetItem(class QTreeWidget *, class QTreeWidgetItem *, int)
@@ -94,6 +101,7 @@ void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetPS_i(QTreeWidget * view, QTreeWidget
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(view, after, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:72
 // [-2] void QTreeWidgetItem(class QTreeWidgetItem *, int)
@@ -102,6 +110,7 @@ void* C_ZN15QTreeWidgetItemC2EPS_i(QTreeWidgetItem * parent, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:73
 // [-2] void QTreeWidgetItem(class QTreeWidgetItem *, const class QStringList &, int)
@@ -110,6 +119,7 @@ void* C_ZN15QTreeWidgetItemC2EPS_RK11QStringListi(QTreeWidgetItem * parent, QStr
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, *strings, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:74
 // [-2] void QTreeWidgetItem(class QTreeWidgetItem *, class QTreeWidgetItem *, int)
@@ -118,6 +128,7 @@ void* C_ZN15QTreeWidgetItemC2EPS_S0_i(QTreeWidgetItem * parent, QTreeWidgetItem 
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, after, type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:76
 // [-2] void ~QTreeWidgetItem()
@@ -142,84 +153,114 @@ void* C_ZNK15QTreeWidgetItem10treeWidgetEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:82
 // [-2] void setSelected(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setSelectedEb(void *this_, bool select_) {
   ((QTreeWidgetItem*)this_)->setSelected(select_);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:83
 // [1] bool isSelected()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTreeWidgetItem10isSelectedEv(void *this_) {
   return (bool)((QTreeWidgetItem*)this_)->isSelected();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:85
 // [-2] void setHidden(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem9setHiddenEb(void *this_, bool hide) {
   ((QTreeWidgetItem*)this_)->setHidden(hide);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:86
 // [1] bool isHidden()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTreeWidgetItem8isHiddenEv(void *this_) {
   return (bool)((QTreeWidgetItem*)this_)->isHidden();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:88
 // [-2] void setExpanded(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setExpandedEb(void *this_, bool expand) {
   ((QTreeWidgetItem*)this_)->setExpanded(expand);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:89
 // [1] bool isExpanded()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTreeWidgetItem10isExpandedEv(void *this_) {
   return (bool)((QTreeWidgetItem*)this_)->isExpanded();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreewidget.h:91
 // [-2] void setFirstColumnSpanned(_Bool)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem21setFirstColumnSpannedEb(void *this_, bool span) {
   ((QTreeWidgetItem*)this_)->setFirstColumnSpanned(span);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreewidget.h:92
 // [1] bool isFirstColumnSpanned()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTreeWidgetItem20isFirstColumnSpannedEv(void *this_) {
   return (bool)((QTreeWidgetItem*)this_)->isFirstColumnSpanned();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreewidget.h:94
 // [-2] void setDisabled(_Bool)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setDisabledEb(void *this_, bool disabled) {
   ((QTreeWidgetItem*)this_)->setDisabled(disabled);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreewidget.h:95
 // [1] bool isDisabled()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTreeWidgetItem10isDisabledEv(void *this_) {
   return (bool)((QTreeWidgetItem*)this_)->isDisabled();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:98
@@ -389,21 +430,27 @@ void C_ZN15QTreeWidgetItem18setBackgroundColorEiRK6QColor(void *this_, int colum
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:142
 // [8] QBrush background(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTreeWidgetItem10backgroundEi(void *this_, int column) {
   auto rv = ((QTreeWidgetItem*)this_)->background(column);
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:144
 // [-2] void setBackground(int, const class QBrush &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem13setBackgroundEiRK6QBrush(void *this_, int column, QBrush* brush) {
   ((QTreeWidgetItem*)this_)->setBackground(column, *brush);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:147
@@ -423,21 +470,27 @@ void C_ZN15QTreeWidgetItem12setTextColorEiRK6QColor(void *this_, int column, QCo
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:152
 // [8] QBrush foreground(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTreeWidgetItem10foregroundEi(void *this_, int column) {
   auto rv = ((QTreeWidgetItem*)this_)->foreground(column);
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:154
 // [-2] void setForeground(int, const class QBrush &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem13setForegroundEiRK6QBrush(void *this_, int column, QBrush* brush) {
   ((QTreeWidgetItem*)this_)->setForeground(column, *brush);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:157
@@ -456,21 +509,27 @@ void C_ZN15QTreeWidgetItem13setCheckStateEiN2Qt10CheckStateE(void *this_, int co
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtreewidget.h:162
 // [8] QSize sizeHint(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTreeWidgetItem8sizeHintEi(void *this_, int column) {
   auto rv = ((QTreeWidgetItem*)this_)->sizeHint(column);
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtreewidget.h:164
 // [-2] void setSizeHint(int, const class QSize &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setSizeHintEiRK5QSize(void *this_, int column, QSize* size) {
   ((QTreeWidgetItem*)this_)->setSizeHint(column, *size);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:167
@@ -603,11 +662,14 @@ int C_ZNK15QTreeWidgetItem4typeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:199
 // [-2] void sortChildren(int, Qt::SortOrder)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem12sortChildrenEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
   ((QTreeWidgetItem*)this_)->sortChildren(column, order);
 }
+#endif // QT_VERSION >= 0x040200
 
 //  main block end

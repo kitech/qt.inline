@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QGradientC2Ev() {
   return  new QGradient();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:208
 // [4] QGradient::Type type()
@@ -60,12 +61,15 @@ void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, QColor* color
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qbrush.h:218
 // [4] QGradient::CoordinateMode coordinateMode()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QGradient::CoordinateMode C_ZNK9QGradient14coordinateModeEv(void *this_) {
   return (QGradient::CoordinateMode)((QGradient*)this_)->coordinateMode();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:219

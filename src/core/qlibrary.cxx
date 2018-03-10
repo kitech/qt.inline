@@ -41,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2EP7QObject(QObject * parent) {
   return  new QLibrary(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:69
 // [-2] void QLibrary(const class QString &, class QObject *)
@@ -48,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
   return  new QLibrary(*fileName, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:70
 // [-2] void QLibrary(const class QString &, int, class QObject *)
@@ -55,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2ERK7QStringiP7QObject(QString* fileName, int verNum, QObject * parent) {
   return  new QLibrary(*fileName, verNum, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:71
 // [-2] void QLibrary(const class QString &, const class QString &, class QObject *)
@@ -62,6 +65,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2ERK7QStringS2_P7QObject(QString* fileName, QString* version, QObject * parent) {
   return  new QLibrary(*fileName, *version, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:72
 // [-2] void ~QLibrary()
@@ -86,6 +90,7 @@ void C_ZN8QLibrary7resolveERK7QStringPKc(QString* fileName, const char * symbol)
   auto rv = QLibrary::resolve(*fileName, symbol);
 /*return rv;*/
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:76
 // [8] QFunctionPointer resolve(const class QString &, int, const char *)
@@ -94,14 +99,19 @@ void C_ZN8QLibrary7resolveERK7QStringiPKc(QString* fileName, int verNum, const c
   auto rv = QLibrary::resolve(*fileName, verNum, symbol);
 /*return rv;*/
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qlibrary.h:77
 // [8] QFunctionPointer resolve(const class QString &, const class QString &, const char *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QLibrary7resolveERK7QStringS2_PKc(QString* fileName, QString* version, const char * symbol) {
   auto rv = QLibrary::resolve(*fileName, *version, symbol);
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x040400
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:79
 // [1] bool load()
@@ -133,6 +143,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QLibrary9isLibraryERK7QString(QString* fileName) {
   return (bool)QLibrary::isLibrary(*fileName);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:85
 // [-2] void setFileName(const class QString &)
@@ -159,21 +170,27 @@ void C_ZN8QLibrary21setFileNameAndVersionERK7QStringi(void *this_, QString* file
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qlibrary.h:89
 // [-2] void setFileNameAndVersion(const class QString &, const class QString &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QLibrary21setFileNameAndVersionERK7QStringS2_(void *this_, QString* fileName, QString* version) {
   ((QLibrary*)this_)->setFileNameAndVersion(*fileName, *version);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qlibrary.h:90
 // [8] QString errorString()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QLibrary11errorStringEv(void *this_) {
   auto rv = ((QLibrary*)this_)->errorString();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:92

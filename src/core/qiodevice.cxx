@@ -131,6 +131,7 @@ void* C_ZN9QIODeviceC2Ev() {
   auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:85
 // [-2] void QIODevice(class QObject *)
@@ -139,6 +140,7 @@ void* C_ZN9QIODeviceC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:87
 // [-2] void ~QIODevice()
@@ -204,52 +206,70 @@ bool C_ZNK9QIODevice12isSequentialEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:99
 // [4] int readChannelCount()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice16readChannelCountEv(void *this_) {
   return (int)((QIODevice*)this_)->readChannelCount();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:100
 // [4] int writeChannelCount()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice17writeChannelCountEv(void *this_) {
   return (int)((QIODevice*)this_)->writeChannelCount();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:101
 // [4] int currentReadChannel()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice18currentReadChannelEv(void *this_) {
   return (int)((QIODevice*)this_)->currentReadChannel();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:102
 // [-2] void setCurrentReadChannel(int)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice21setCurrentReadChannelEi(void *this_, int channel) {
   ((QIODevice*)this_)->setCurrentReadChannel(channel);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:103
 // [4] int currentWriteChannel()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QIODevice19currentWriteChannelEv(void *this_) {
   return (int)((QIODevice*)this_)->currentWriteChannel();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:104
 // [-2] void setCurrentWriteChannel(int)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice22setCurrentWriteChannelEi(void *this_, int channel) {
   ((QIODevice*)this_)->setCurrentWriteChannel(channel);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:106
@@ -375,36 +395,48 @@ bool C_ZNK9QIODevice11canReadLineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:127
 // [-2] void startTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice16startTransactionEv(void *this_) {
   ((QIODevice*)this_)->startTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:128
 // [-2] void commitTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice17commitTransactionEv(void *this_) {
   ((QIODevice*)this_)->commitTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:129
 // [-2] void rollbackTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice19rollbackTransactionEv(void *this_) {
   ((QIODevice*)this_)->rollbackTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:130
 // [1] bool isTransactionStarted()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QIODevice20isTransactionStartedEv(void *this_) {
   return (bool)((QIODevice*)this_)->isTransactionStarted();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:132
@@ -415,12 +447,15 @@ qint64 C_ZN9QIODevice5writeEPKcx(void *this_, const char * data, qint64 len_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qiodevice.h:133
 // [8] qint64 write(const char *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice5writeEPKc(void *this_, const char * data) {
   return (qint64)((QIODevice*)this_)->write(data);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:134
@@ -431,29 +466,38 @@ qint64 C_ZN9QIODevice5writeERK10QByteArray(void *this_, QByteArray* data) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qiodevice.h:137
 // [8] qint64 peek(char *, qint64)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice4peekEPcx(void *this_, char * data, qint64 maxlen) {
   return (qint64)((QIODevice*)this_)->peek(data, maxlen);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qiodevice.h:138
 // [8] QByteArray peek(qint64)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODevice4peekEx(void *this_, qint64 maxlen) {
   auto rv = ((QIODevice*)this_)->peek(maxlen);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qiodevice.h:139
 // [8] qint64 skip(qint64)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice4skipEx(void *this_, qint64 maxSize) {
   return (qint64)((QIODevice*)this_)->skip(maxSize);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:141
@@ -513,12 +557,15 @@ void C_ZN9QIODevice9readyReadEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:153
 // [-2] void channelReadyRead(int)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice16channelReadyReadEi(void *this_, int channel) {
   ((QIODevice*)this_)->channelReadyRead(channel);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:154
@@ -529,12 +576,15 @@ void C_ZN9QIODevice12bytesWrittenEx(void *this_, qint64 bytes) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qiodevice.h:155
 // [-2] void channelBytesWritten(int, qint64)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice19channelBytesWrittenEix(void *this_, int channel, qint64 bytes) {
   ((QIODevice*)this_)->channelBytesWritten(channel, bytes);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:156
@@ -545,11 +595,14 @@ void C_ZN9QIODevice12aboutToCloseEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qiodevice.h:157
 // [-2] void readChannelFinished()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice19readChannelFinishedEv(void *this_) {
   ((QIODevice*)this_)->readChannelFinished();
 }
+#endif // QT_VERSION >= 0x040400
 
 //  main block end

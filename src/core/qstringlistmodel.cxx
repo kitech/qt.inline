@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModelC2EP7QObject(QObject * parent) {
   return  new QStringListModel(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlistmodel.h:56
 // [-2] void QStringListModel(const class QStringList &, class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModelC2ERK11QStringListP7QObject(QStringList* strings, QObject * parent) {
   return  new QStringListModel(*strings, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlistmodel.h:58
 // [4] int rowCount(const class QModelIndex &)

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtGui/qmatrix4x4.h
 #ifndef protected
 #define protected public
@@ -39,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2Ev() {
   return  new QMatrix4x4();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:63
 // [-2] void QMatrix4x4(Qt::Initialization)
@@ -46,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2EN2Qt14InitializationE(Qt::Initialization arg0) {
   return  new QMatrix4x4(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:64
 // [-2] void QMatrix4x4(const float *)
@@ -53,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2EPKf(const float * values) {
   return  new QMatrix4x4(values);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:65
 // [-2] void QMatrix4x4(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
@@ -60,6 +64,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2Effffffffffffffff(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) {
   return  new QMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:73
 // [-2] void QMatrix4x4(const float *, int, int)
@@ -67,6 +72,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2EPKfii(const float * values, int cols, int rows) {
   return  new QMatrix4x4(values, cols, rows);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:74
 // [-2] void QMatrix4x4(const class QTransform &)
@@ -74,6 +80,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2ERK10QTransform(QTransform* transform) {
   return  new QMatrix4x4(*transform);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:75
 // [-2] void QMatrix4x4(const class QMatrix &)
@@ -81,6 +88,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QMatrix4x4C2ERK7QMatrix(QMatrix* matrix) {
   return  new QMatrix4x4(*matrix);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:77
 // [4] const float & operator()(int, int)
@@ -134,12 +142,15 @@ void C_ZN10QMatrix4x46setRowEiRK9QVector4D(void *this_, int index, QVector4D* va
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qmatrix4x4.h:88
 // [1] bool isAffine()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QMatrix4x48isAffineEv(void *this_) {
   return (bool)((QMatrix4x4*)this_)->isAffine();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:90

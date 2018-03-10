@@ -180,6 +180,7 @@ void* C_ZN9QCheckBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCheckBox*)(0);
   return  new MyQCheckBox(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:62
 // [-2] void QCheckBox(const class QString &, class QWidget *)
@@ -188,6 +189,7 @@ void* C_ZN9QCheckBoxC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQCheckBox*)(0);
   return  new MyQCheckBox(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:63
 // [-2] void ~QCheckBox()

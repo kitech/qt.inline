@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * obj, int start, int end) {
   return  new QAccessibleTextSelectionEvent(obj, start, end);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:779
 // [-2] void QAccessibleTextSelectionEvent(class QAccessibleInterface *, int, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * iface, int start, int end) {
   return  new QAccessibleTextSelectionEvent(iface, start, end);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:786
 // [-2] void ~QAccessibleTextSelectionEvent()

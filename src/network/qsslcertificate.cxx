@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtNetwork/qsslcertificate.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QSslCertificateC2EP9QIODeviceN4QSsl14EncodingFormatE(QIODevice * device, QSsl::EncodingFormat format) {
   return  new QSslCertificate(device, format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:90
 // [-2] void QSslCertificate(const class QByteArray &, QSsl::EncodingFormat)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QSslCertificateC2ERK10QByteArrayN4QSsl14EncodingFormatE(QByteArray* data, QSsl::EncodingFormat format) {
   return  new QSslCertificate(*data, format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:92
 // [-2] void ~QSslCertificate()
@@ -62,12 +65,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslcertificate.h:98
 // [-2] void swap(class QSslCertificate &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSslCertificate4swapERS_(void *this_, QSslCertificate* other) {
   ((QSslCertificate*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:101
@@ -102,12 +108,15 @@ bool C_ZNK15QSslCertificate13isBlacklistedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtNetwork/qsslcertificate.h:114
 // [1] bool isSelfSigned()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QSslCertificate12isSelfSignedEv(void *this_) {
   return (bool)((QSslCertificate*)this_)->isSelfSigned();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:115
@@ -226,13 +235,16 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qsslcertificate.h:139
 // [8] QString toText()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSslCertificate6toTextEv(void *this_) {
   auto rv = ((QSslCertificate*)this_)->toText();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:160

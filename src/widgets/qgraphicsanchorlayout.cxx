@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h
 #ifndef protected
 #define protected public
@@ -50,6 +51,7 @@ void* C_ZN21QGraphicsAnchorLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem *
   auto _nilp = (MyQGraphicsAnchorLayout*)(0);
   return  new MyQGraphicsAnchorLayout(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:80
 // [-2] void ~QGraphicsAnchorLayout()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsview.h
 #ifndef protected
 #define protected public
@@ -543,6 +544,7 @@ void* C_ZN13QGraphicsViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQGraphicsView*)(0);
   return  new MyQGraphicsView(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:118
 // [-2] void QGraphicsView(class QGraphicsScene *, class QWidget *)
@@ -551,6 +553,7 @@ void* C_ZN13QGraphicsViewC2EP14QGraphicsSceneP7QWidget(QGraphicsScene * scene, Q
   auto _nilp = (MyQGraphicsView*)(0);
   return  new MyQGraphicsView(scene, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:119
 // [-2] void ~QGraphicsView()
@@ -713,13 +716,16 @@ void C_ZN13QGraphicsView26setRubberBandSelectionModeEN2Qt17ItemSelectionModeE(vo
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtWidgets/qgraphicsview.h:149
 // [16] QRect rubberBandRect()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGraphicsView14rubberBandRectEv(void *this_) {
   auto rv = ((QGraphicsView*)this_)->rubberBandRect();
 return new QRect(rv);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:152
@@ -847,12 +853,15 @@ return new QTransform(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsview.h:171
 // [1] bool isTransformed()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsView13isTransformedEv(void *this_) {
   return (bool)((QGraphicsView*)this_)->isTransformed();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:172
@@ -1166,11 +1175,14 @@ void C_ZN13QGraphicsView15updateSceneRectERK6QRectF(void *this_, QRectF* rect) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtWidgets/qgraphicsview.h:232
 // [-2] void rubberBandChanged(class QRect, class QPointF, class QPointF)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(void *this_, QRect* viewportRect, QPointF* fromScenePoint, QPointF* toScenePoint) {
   ((QGraphicsView*)this_)->rubberBandChanged(*viewportRect, *fromScenePoint, *toScenePoint);
 }
+#endif // QT_VERSION >= 0x050100
 
 //  main block end

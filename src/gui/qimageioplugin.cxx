@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QImageIOPluginC2EP7QObject(QObject * parent) {
   return 0; // new QImageIOPlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:144
 // [-2] void ~QImageIOPlugin()

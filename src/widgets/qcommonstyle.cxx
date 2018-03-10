@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QCommonStyleC2Ev() {
   return  new QCommonStyle();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommonstyle.h:56
 // [-2] void ~QCommonStyle()

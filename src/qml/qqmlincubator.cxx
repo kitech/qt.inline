@@ -68,6 +68,7 @@ void* C_ZN13QQmlIncubatorC2ENS_14IncubationModeE(QQmlIncubator::IncubationMode a
   auto _nilp = (MyQQmlIncubator*)(0);
   return  new MyQQmlIncubator(arg0);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:69
 // [-2] void ~QQmlIncubator()

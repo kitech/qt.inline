@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qeventloop.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QEventLoopLockerC2Ev() {
   return  new QEventLoopLocker();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:94
 // [-2] void QEventLoopLocker(class QEventLoop *)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QEventLoopLockerC2EP10QEventLoop(QEventLoop * loop) {
   return  new QEventLoopLocker(loop);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:95
 // [-2] void QEventLoopLocker(class QThread *)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QEventLoopLockerC2EP7QThread(QThread * thread) {
   return  new QEventLoopLocker(thread);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:96
 // [-2] void ~QEventLoopLocker()

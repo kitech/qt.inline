@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN30QXmlStreamNamespaceDeclarationC2Ev() {
   return  new QXmlStreamNamespaceDeclaration();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:209
 // [40] QXmlStreamNamespaceDeclaration & operator=(class QXmlStreamNamespaceDeclaration &&)
@@ -39,12 +41,16 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:216
 // [-2] void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_(QString* prefix, QString* namespaceUri) {
   return  new QXmlStreamNamespaceDeclaration(*prefix, *namespaceUri);
 }
+#endif // QT_VERSION >= 0x040400
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:217
 // [-2] void ~QXmlStreamNamespaceDeclaration()

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN22QAccessibleApplicationC2Ev() {
   return  new QAccessibleApplication();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleobject.h:80
 // [8] QWindow * window()

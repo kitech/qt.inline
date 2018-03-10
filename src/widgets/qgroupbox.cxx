@@ -239,6 +239,7 @@ void* C_ZN9QGroupBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQGroupBox*)(0);
   return  new MyQGroupBox(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:63
 // [-2] void QGroupBox(const class QString &, class QWidget *)
@@ -247,6 +248,7 @@ void* C_ZN9QGroupBoxC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQGroupBox*)(0);
   return  new MyQGroupBox(*title, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:64
 // [-2] void ~QGroupBox()
@@ -345,12 +347,15 @@ void C_ZN9QGroupBox10setCheckedEb(void *this_, bool checked) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qgroupbox.h:84
 // [-2] void clicked(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox7clickedEb(void *this_, bool checked) {
   ((QGroupBox*)this_)->clicked(checked);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:85

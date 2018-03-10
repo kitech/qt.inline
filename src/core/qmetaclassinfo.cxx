@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QMetaClassInfoC2Ev() {
   return  new QMetaClassInfo();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:304
 // [8] const char * name()

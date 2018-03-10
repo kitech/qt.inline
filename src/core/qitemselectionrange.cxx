@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionRangeC2Ev() {
   return  new QItemSelectionRange();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:64
 // [16] QItemSelectionRange & operator=(class QItemSelectionRange &&)
@@ -56,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(QModelIndex* topL, QModelIndex* bottomR) {
   return  new QItemSelectionRange(*topL, *bottomR);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:71
 // [-2] void QItemSelectionRange(const class QModelIndex &)
@@ -63,13 +65,17 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionRangeC2ERK11QModelIndex(QModelIndex* index) {
   return  new QItemSelectionRange(*index);
 }
+
 // Public inline Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qitemselectionmodel.h:73
 // [-2] void swap(class QItemSelectionRange &)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionRange4swapERS_(void *this_, QItemSelectionRange* other) {
   ((QItemSelectionRange*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:79
@@ -179,13 +185,16 @@ bool C_ZNK19QItemSelectionRange10intersectsERKS_(void *this_, QItemSelectionRang
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qitemselectionmodel.h:110
 // [16] QItemSelectionRange intersected(const class QItemSelectionRange &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QItemSelectionRange11intersectedERKS_(void *this_, QItemSelectionRange* other) {
   auto rv = ((QItemSelectionRange*)this_)->intersected(*other);
 return new QItemSelectionRange(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:113
@@ -220,12 +229,15 @@ bool C_ZNK19QItemSelectionRange7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qitemselectionmodel.h:125
 // [1] bool isEmpty()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QItemSelectionRange7isEmptyEv(void *this_) {
   return (bool)((QItemSelectionRange*)this_)->isEmpty();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:127

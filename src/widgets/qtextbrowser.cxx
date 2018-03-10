@@ -198,6 +198,7 @@ void* C_ZN12QTextBrowserC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTextBrowser*)(0);
   return  new MyQTextBrowser(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:67
 // [-2] void ~QTextBrowser()
@@ -241,62 +242,83 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextbrowser.h:76
 // [1] bool isBackwardAvailable()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTextBrowser19isBackwardAvailableEv(void *this_) {
   return (bool)((QTextBrowser*)this_)->isBackwardAvailable();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextbrowser.h:77
 // [1] bool isForwardAvailable()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTextBrowser18isForwardAvailableEv(void *this_) {
   return (bool)((QTextBrowser*)this_)->isForwardAvailable();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextbrowser.h:78
 // [-2] void clearHistory()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser12clearHistoryEv(void *this_) {
   ((QTextBrowser*)this_)->clearHistory();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextbrowser.h:79
 // [8] QString historyTitle(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTextBrowser12historyTitleEi(void *this_, int arg0) {
   auto rv = ((QTextBrowser*)this_)->historyTitle(arg0);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextbrowser.h:80
 // [8] QUrl historyUrl(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTextBrowser10historyUrlEi(void *this_, int arg0) {
   auto rv = ((QTextBrowser*)this_)->historyUrl(arg0);
 return new QUrl(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextbrowser.h:81
 // [4] int backwardHistoryCount()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTextBrowser20backwardHistoryCountEv(void *this_) {
   return (int)((QTextBrowser*)this_)->backwardHistoryCount();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextbrowser.h:82
 // [4] int forwardHistoryCount()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTextBrowser19forwardHistoryCountEv(void *this_) {
   return (int)((QTextBrowser*)this_)->forwardHistoryCount();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:84
@@ -387,12 +409,15 @@ void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextbrowser.h:100
 // [-2] void historyChanged()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser14historyChangedEv(void *this_) {
   ((QTextBrowser*)this_)->historyChanged();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:101

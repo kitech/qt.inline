@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextRemoveEventC2EP7QObjectiRK7QString(QObject * obj, int position, QString* text) {
   return  new QAccessibleTextRemoveEvent(obj, position, *text);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:840
 // [-2] void QAccessibleTextRemoveEvent(class QAccessibleInterface *, int, const class QString &)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextRemoveEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, QString* text) {
   return  new QAccessibleTextRemoveEvent(iface, position, *text);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:847
 // [-2] void ~QAccessibleTextRemoveEvent()

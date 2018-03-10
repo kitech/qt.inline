@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qanimationgroup.h
 #ifndef protected
 #define protected public
@@ -57,6 +58,7 @@ void* C_ZN15QAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAnimationGroup*)(0);
   return 0; // new MyQAnimationGroup(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:57
 // [-2] void ~QAnimationGroup()

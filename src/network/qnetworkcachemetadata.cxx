@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040500
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkCacheMetaDataC2Ev() {
   return  new QNetworkCacheMetaData();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:68
 // [-2] void ~QNetworkCacheMetaData()
@@ -53,12 +55,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:75
 // [-2] void swap(class QNetworkCacheMetaData &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData4swapERS_(void *this_, QNetworkCacheMetaData* other) {
   ((QNetworkCacheMetaData*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:78

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050a00
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaserC2Ev() {
   return  new QSemaphoreReleaser();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:76
 // [-2] void QSemaphoreReleaser(class QSemaphore &, int)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore* sem, int n) {
   return  new QSemaphoreReleaser(*sem, n);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:78
 // [-2] void QSemaphoreReleaser(class QSemaphore *, int)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaserC2EP10QSemaphorei(QSemaphore * sem, int n) {
   return  new QSemaphoreReleaser(sem, n);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:86
 // [-2] void ~QSemaphoreReleaser()

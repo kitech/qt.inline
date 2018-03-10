@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected
 #define protected public
@@ -438,6 +439,7 @@ void* C_ZN13QMdiSubWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent
   auto _nilp = (MyQMdiSubWindow*)(0);
   return  new MyQMdiSubWindow(parent, flags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:70
 // [-2] void ~QMdiSubWindow()
@@ -568,12 +570,15 @@ void* C_ZNK13QMdiSubWindow10systemMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:97
 // [8] QMdiArea * mdiArea()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow7mdiAreaEv(void *this_) {
   return (void*)((QMdiSubWindow*)this_)->mdiArea();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:100

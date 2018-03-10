@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordC2Ev() {
   return  new QDnsDomainNameRecord();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:66
 // [8] QDnsDomainNameRecord & operator=(class QDnsDomainNameRecord &&)

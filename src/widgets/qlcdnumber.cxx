@@ -79,6 +79,7 @@ void* C_ZN10QLCDNumberC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLCDNumber*)(0);
   return  new MyQLCDNumber(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:63
 // [-2] void QLCDNumber(uint, class QWidget *)
@@ -87,6 +88,7 @@ void* C_ZN10QLCDNumberC2EjP7QWidget(uint numDigits, QWidget * parent) {
   auto _nilp = (MyQLCDNumber*)(0);
   return  new MyQLCDNumber(numDigits, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:64
 // [-2] void ~QLCDNumber()

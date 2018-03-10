@@ -97,6 +97,7 @@ void* C_ZN12QProgressBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQProgressBar*)(0);
   return  new MyQProgressBar(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:72
 // [-2] void ~QProgressBar()

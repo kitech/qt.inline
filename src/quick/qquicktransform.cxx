@@ -56,6 +56,7 @@ void* C_ZN15QQuickTransformC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQQuickTransform*)(0);
   return 0; // new MyQQuickTransform(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:63
 // [-2] void ~QQuickTransform()

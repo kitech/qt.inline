@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050400
 // /usr/include/qt/QtCore/qstorageinfo.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoC2Ev() {
   return  new QStorageInfo();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:59
 // [-2] void QStorageInfo(const class QString &)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoC2ERK7QString(QString* path) {
   return  new QStorageInfo(*path);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:60
 // [-2] void QStorageInfo(const class QDir &)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoC2ERK4QDir(QDir* dir) {
   return  new QStorageInfo(*dir);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:62
 // [-2] void ~QStorageInfo()
@@ -105,13 +109,16 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtCore/qstorageinfo.h:76
 // [8] QByteArray subvolume()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QStorageInfo9subvolumeEv(void *this_) {
   auto rv = ((QStorageInfo*)this_)->subvolume();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:77
@@ -165,12 +172,15 @@ qint64 C_ZNK12QStorageInfo14bytesAvailableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qstorageinfo.h:84
 // [4] int blockSize()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QStorageInfo9blockSizeEv(void *this_) {
   return (int)((QStorageInfo*)this_)->blockSize();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:86
@@ -220,4 +230,5 @@ void* C_ZN12QStorageInfo4rootEv() {
   auto rv = QStorageInfo::root();
 return new QStorageInfo(rv);
 }
+
 //  main block end

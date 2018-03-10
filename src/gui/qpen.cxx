@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenC2Ev() {
   return  new QPen();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:64
 // [-2] void QPen(Qt::PenStyle)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenC2EN2Qt8PenStyleE(Qt::PenStyle arg0) {
   return  new QPen(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:65
 // [-2] void QPen(const class QColor &)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenC2ERK6QColor(QColor* color) {
   return  new QPen(*color);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:66
 // [-2] void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(QBrush* brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
   return  new QPen(*brush, width, s, c, j);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:70
 // [-2] void ~QPen()
@@ -80,12 +84,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qpen.h:79
 // [-2] void swap(class QPen &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN4QPen4swapERS_(void *this_, QPen* other) {
   ((QPen*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:81

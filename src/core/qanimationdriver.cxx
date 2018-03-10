@@ -96,6 +96,7 @@ void* C_ZN16QAnimationDriverC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAnimationDriver*)(0);
   return  new MyQAnimationDriver(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:140
 // [-2] void ~QAnimationDriver()

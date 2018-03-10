@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qqmlexpression.h
 #ifndef protected
 #define protected public
@@ -39,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2Ev() {
   return  new QQmlExpression();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:63
 // [-2] void QQmlExpression(class QQmlContext *, class QObject *, const class QString &, class QObject *)
@@ -46,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2EP11QQmlContextP7QObjectRK7QStringS3_(QQmlContext * arg0, QObject * arg1, QString* arg2, QObject * arg3) {
   return  new QQmlExpression(arg0, arg1, *arg2, arg3);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:64
 // [-2] void QQmlExpression(const class QQmlScriptString &, class QQmlContext *, class QObject *, class QObject *)
@@ -53,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2ERK16QQmlScriptStringP11QQmlContextP7QObjectS6_(QQmlScriptString* arg0, QQmlContext * arg1, QObject * arg2, QObject * arg3) {
   return  new QQmlExpression(*arg0, arg1, arg2, arg3);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:65
 // [-2] void ~QQmlExpression()

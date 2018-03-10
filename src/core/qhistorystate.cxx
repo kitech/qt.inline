@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qhistorystate.h
 #ifndef protected
 #define protected public
@@ -99,6 +100,7 @@ void* C_ZN13QHistoryStateC2EP6QState(QState * parent) {
   auto _nilp = (MyQHistoryState*)(0);
   return  new MyQHistoryState(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:65
 // [-2] void QHistoryState(enum QHistoryState::HistoryType, class QState *)
@@ -107,6 +109,7 @@ void* C_ZN13QHistoryStateC2ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType
   auto _nilp = (MyQHistoryState*)(0);
   return  new MyQHistoryState(type_, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:66
 // [-2] void ~QHistoryState()
@@ -115,20 +118,26 @@ void C_ZN13QHistoryStateD2Ev(void *this_) {
   delete (QHistoryState*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qhistorystate.h:68
 // [8] QAbstractTransition * defaultTransition()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QHistoryState17defaultTransitionEv(void *this_) {
   return (void*)((QHistoryState*)this_)->defaultTransition();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qhistorystate.h:69
 // [-2] void setDefaultTransition(class QAbstractTransition *)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QHistoryState20setDefaultTransitionEP19QAbstractTransition(void *this_, QAbstractTransition * transition) {
   ((QHistoryState*)this_)->setDefaultTransition(transition);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:71

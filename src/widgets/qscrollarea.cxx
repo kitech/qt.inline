@@ -140,6 +140,7 @@ void* C_ZN11QScrollAreaC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQScrollArea*)(0);
   return  new MyQScrollArea(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollarea.h:60
 // [-2] void ~QScrollArea()
@@ -229,11 +230,14 @@ void C_ZN11QScrollArea13ensureVisibleEiiii(void *this_, int x, int y, int xmargi
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qscrollarea.h:77
 // [-2] void ensureWidgetVisible(class QWidget *, int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii(void *this_, QWidget * childWidget, int xmargin, int ymargin) {
   ((QScrollArea*)this_)->ensureWidgetVisible(childWidget, xmargin, ymargin);
 }
+#endif // QT_VERSION >= 0x040200
 
 //  main block end

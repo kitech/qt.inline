@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QSpacerItemC2EiiN11QSizePolicy6PolicyES1_(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) {
   return  new QSpacerItem(w, h, hData, vData);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:99
 // [-2] void ~QSpacerItem()
@@ -111,12 +112,15 @@ void* C_ZN11QSpacerItem10spacerItemEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtWidgets/qlayoutitem.h:112
 // [4] QSizePolicy sizePolicy()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QSpacerItem10sizePolicyEv(void *this_) {
   auto rv = ((QSpacerItem*)this_)->sizePolicy();
 return new QSizePolicy(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 //  main block end

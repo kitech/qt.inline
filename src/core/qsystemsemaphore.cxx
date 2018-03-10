@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qsystemsemaphore.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QSystemSemaphoreC2ERK7QStringiNS_10AccessModeE(QString* key, int initialValue, QSystemSemaphore::AccessMode mode) {
   return  new QSystemSemaphore(*key, initialValue, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsystemsemaphore.h:75
 // [-2] void ~QSystemSemaphore()

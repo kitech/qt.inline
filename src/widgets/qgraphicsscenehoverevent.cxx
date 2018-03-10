@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QGraphicsSceneHoverEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneHoverEvent(type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:202
 // [-2] void ~QGraphicsSceneHoverEvent()
@@ -86,13 +88,16 @@ void C_ZN24QGraphicsSceneHoverEvent12setScreenPosERK6QPoint(void *this_, QPoint*
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:213
 // [16] QPointF lastPos()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneHoverEvent7lastPosEv(void *this_) {
   auto rv = ((QGraphicsSceneHoverEvent*)this_)->lastPos();
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:214
@@ -103,13 +108,16 @@ void C_ZN24QGraphicsSceneHoverEvent10setLastPosERK7QPointF(void *this_, QPointF*
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:216
 // [16] QPointF lastScenePos()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneHoverEvent12lastScenePosEv(void *this_) {
   auto rv = ((QGraphicsSceneHoverEvent*)this_)->lastScenePos();
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:217
@@ -120,13 +128,16 @@ void C_ZN24QGraphicsSceneHoverEvent15setLastScenePosERK7QPointF(void *this_, QPo
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:219
 // [8] QPoint lastScreenPos()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneHoverEvent13lastScreenPosEv(void *this_) {
   auto rv = ((QGraphicsSceneHoverEvent*)this_)->lastScreenPos();
 return new QPoint(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:220
@@ -137,12 +148,15 @@ void C_ZN24QGraphicsSceneHoverEvent16setLastScreenPosERK6QPoint(void *this_, QPo
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:222
 // [4] Qt::KeyboardModifiers modifiers()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK24QGraphicsSceneHoverEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QGraphicsSceneHoverEvent*)this_)->modifiers();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:223

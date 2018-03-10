@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * m) {
   return  new QMutexLocker(m);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:213
 // [-2] void ~QMutexLocker()

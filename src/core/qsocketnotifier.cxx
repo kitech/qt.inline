@@ -57,6 +57,7 @@ void* C_ZN15QSocketNotifierC2ExNS_4TypeEP7QObject(qintptr socket, QSocketNotifie
   auto _nilp = (MyQSocketNotifier*)(0);
   return  new MyQSocketNotifier(socket, arg1, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:57
 // [-2] void ~QSocketNotifier()

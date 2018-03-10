@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDirModelC2ERK11QStringList6QFlagsIN4QDir6FilterEES3_INS4_8SortFlagEEP7QObject(QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort, QObject * parent) {
   return  new QDirModel(*nameFilters, filters, sort, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:70
 // [-2] void QDirModel(class QObject *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDirModelC2EP7QObject(QObject * parent) {
   return  new QDirModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:71
 // [-2] void ~QDirModel()

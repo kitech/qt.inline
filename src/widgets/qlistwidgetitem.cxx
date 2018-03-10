@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QListWidgetItemC2EP11QListWidgeti(QListWidget * view, int type_) {
   return  new QListWidgetItem(view, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:65
 // [-2] void QListWidgetItem(const class QString &, class QListWidget *, int)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QListWidgetItemC2ERK7QStringP11QListWidgeti(QString* text, QListWidget * view, int type_) {
   return  new QListWidgetItem(*text, view, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:66
 // [-2] void QListWidgetItem(const class QIcon &, const class QString &, class QListWidget *, int)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QListWidgetItemC2ERK5QIconRK7QStringP11QListWidgeti(QIcon* icon, QString* text, QListWidget * view, int type_) {
   return  new QListWidgetItem(*icon, *text, view, type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:69
 // [-2] void ~QListWidgetItem()
@@ -69,36 +72,48 @@ void* C_ZNK15QListWidgetItem10listWidgetEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:75
 // [-2] void setSelected(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QListWidgetItem11setSelectedEb(void *this_, bool select_) {
   ((QListWidgetItem*)this_)->setSelected(select_);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:76
 // [1] bool isSelected()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QListWidgetItem10isSelectedEv(void *this_) {
   return (bool)((QListWidgetItem*)this_)->isSelected();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:78
 // [-2] void setHidden(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QListWidgetItem9setHiddenEb(void *this_, bool hide) {
   ((QListWidgetItem*)this_)->setHidden(hide);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:79
 // [1] bool isHidden()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QListWidgetItem8isHiddenEv(void *this_) {
   return (bool)((QListWidgetItem*)this_)->isHidden();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:81
@@ -252,21 +267,27 @@ void C_ZN15QListWidgetItem18setBackgroundColorERK6QColor(void *this_, QColor* co
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:122
 // [8] QBrush background()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QListWidgetItem10backgroundEv(void *this_) {
   auto rv = ((QListWidgetItem*)this_)->background();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:124
 // [-2] void setBackground(const class QBrush &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QListWidgetItem13setBackgroundERK6QBrush(void *this_, QBrush* brush) {
   ((QListWidgetItem*)this_)->setBackground(*brush);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:127
@@ -286,21 +307,27 @@ void C_ZN15QListWidgetItem12setTextColorERK6QColor(void *this_, QColor* color) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:132
 // [8] QBrush foreground()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QListWidgetItem10foregroundEv(void *this_) {
   auto rv = ((QListWidgetItem*)this_)->foreground();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qlistwidget.h:134
 // [-2] void setForeground(const class QBrush &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QListWidgetItem13setForegroundERK6QBrush(void *this_, QBrush* brush) {
   ((QListWidgetItem*)this_)->setForeground(*brush);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:137
@@ -319,21 +346,27 @@ void C_ZN15QListWidgetItem13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::Che
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qlistwidget.h:142
 // [8] QSize sizeHint()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QListWidgetItem8sizeHintEv(void *this_) {
   auto rv = ((QListWidgetItem*)this_)->sizeHint();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qlistwidget.h:144
 // [-2] void setSizeHint(const class QSize &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QListWidgetItem11setSizeHintERK5QSize(void *this_, QSize* size) {
   ((QListWidgetItem*)this_)->setSizeHint(*size);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:147

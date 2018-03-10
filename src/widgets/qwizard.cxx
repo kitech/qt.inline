@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtWidgets/qwizard.h
 #ifndef protected
 #define protected public
@@ -157,6 +158,7 @@ void* C_ZN7QWizardC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlag
   auto _nilp = (MyQWizard*)(0);
   return  new MyQWizard(parent, flags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:124
 // [-2] void ~QWizard()
@@ -181,12 +183,15 @@ void C_ZN7QWizard7setPageEiP11QWizardPage(void *this_, int id, QWizardPage * pag
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qwizard.h:128
 // [-2] void removePage(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard10removePageEi(void *this_, int id) {
   ((QWizard*)this_)->removePage(id);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:129
@@ -401,20 +406,26 @@ return new QPixmap(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qwizard.h:165
 // [-2] void setSideWidget(class QWidget *)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard13setSideWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QWizard*)this_)->setSideWidget(widget);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qwizard.h:166
 // [8] QWidget * sideWidget()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWizard10sideWidgetEv(void *this_) {
   return (void*)((QWizard*)this_)->sideWidget();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:168
@@ -466,20 +477,26 @@ void C_ZN7QWizard19customButtonClickedEi(void *this_, int which) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qwizard.h:178
 // [-2] void pageAdded(int)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard9pageAddedEi(void *this_, int id) {
   ((QWizard*)this_)->pageAdded(id);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qwizard.h:179
 // [-2] void pageRemoved(int)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWizard11pageRemovedEi(void *this_, int id) {
   ((QWizard*)this_)->pageRemoved(id);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:182

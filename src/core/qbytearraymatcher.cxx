@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2Ev() {
   return  new QByteArrayMatcher();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:54
 // [-2] void QByteArrayMatcher(const class QByteArray &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(QByteArray* pattern) {
   return  new QByteArrayMatcher(*pattern);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:55
 // [-2] void QByteArrayMatcher(const char *, int)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2EPKci(const char * pattern, int length) {
   return  new QByteArrayMatcher(pattern, length);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:57
 // [-2] void ~QByteArrayMatcher()

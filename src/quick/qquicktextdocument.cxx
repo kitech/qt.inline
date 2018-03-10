@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtQuick/qquicktextdocument.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QQuickTextDocumentC2EP10QQuickItem(QQuickItem * parent) {
   return  new QQuickTextDocument(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquicktextdocument.h:55
 // [8] QTextDocument * textDocument()

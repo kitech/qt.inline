@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qcompleter.h
 #ifndef protected
 #define protected public
@@ -82,6 +83,7 @@ void* C_ZN10QCompleterC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQCompleter*)(0);
   return  new MyQCompleter(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:86
 // [-2] void QCompleter(class QAbstractItemModel *, class QObject *)
@@ -90,6 +92,7 @@ void* C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * mod
   auto _nilp = (MyQCompleter*)(0);
   return  new MyQCompleter(model, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:88
 // [-2] void QCompleter(const class QStringList &, class QObject *)
@@ -98,6 +101,7 @@ void* C_ZN10QCompleterC2ERK11QStringListP7QObject(QStringList* completions, QObj
   auto _nilp = (MyQCompleter*)(0);
   return  new MyQCompleter(*completions, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:90
 // [-2] void ~QCompleter()

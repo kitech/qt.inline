@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QAbstractNativeEventFilterC2Ev() {
   return 0; // new QAbstractNativeEventFilter();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h:53
 // [-2] void ~QAbstractNativeEventFilter()

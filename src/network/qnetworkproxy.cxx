@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtNetwork/qnetworkproxy.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QNetworkProxyC2Ev() {
   return  new QNetworkProxy();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:161
 // [-2] void QNetworkProxy(enum QNetworkProxy::ProxyType, const class QString &, quint16, const class QString &, const class QString &)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::ProxyType type_, QString* hostName, quint16 port, QString* user, QString* password) {
   return  new QNetworkProxy(type_, *hostName, port, *user, *password);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:165
 // [8] QNetworkProxy & operator=(class QNetworkProxy &&)
@@ -62,12 +65,15 @@ void C_ZN13QNetworkProxyD2Ev(void *this_) {
   delete (QNetworkProxy*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:170
 // [-2] void swap(class QNetworkProxy &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy4swapERS_(void *this_, QNetworkProxy* other) {
   ((QNetworkProxy*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:172
@@ -110,29 +116,38 @@ void C_ZN13QNetworkProxy15setCapabilitiesE6QFlagsINS_10CapabilityEE(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:180
 // [4] QNetworkProxy::Capabilities capabilities()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 QNetworkProxy::Capabilities* C_ZNK13QNetworkProxy12capabilitiesEv(void *this_) {
   auto rv = ((QNetworkProxy*)this_)->capabilities();
 return new QNetworkProxy::Capabilities(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:181
 // [1] bool isCachingProxy()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxy14isCachingProxyEv(void *this_) {
   return (bool)((QNetworkProxy*)this_)->isCachingProxy();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:182
 // [1] bool isTransparentProxy()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxy18isTransparentProxyEv(void *this_) {
   return (bool)((QNetworkProxy*)this_)->isTransparentProxy();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:184
@@ -208,6 +223,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy19setApplicationProxyERKS_(QNetworkProxy* proxy) {
   QNetworkProxy::setApplicationProxy(*proxy);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:197
 // [8] QNetworkProxy applicationProxy()
@@ -216,46 +232,62 @@ void* C_ZN13QNetworkProxy16applicationProxyEv() {
   auto rv = QNetworkProxy::applicationProxy();
 return new QNetworkProxy(rv);
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:200
 // [16] QVariant header(class QNetworkRequest::KnownHeaders)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkProxy6headerEN15QNetworkRequest12KnownHeadersE(void *this_, QNetworkRequest::KnownHeaders header) {
   auto rv = ((QNetworkProxy*)this_)->header(header);
 return new QVariant(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:201
 // [-2] void setHeader(class QNetworkRequest::KnownHeaders, const class QVariant &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void *this_, QNetworkRequest::KnownHeaders header, QVariant* value) {
   ((QNetworkProxy*)this_)->setHeader(header, *value);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:204
 // [1] bool hasRawHeader(const class QByteArray &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxy12hasRawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   return (bool)((QNetworkProxy*)this_)->hasRawHeader(*headerName);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:206
 // [8] QByteArray rawHeader(const class QByteArray &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkProxy9rawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   auto rv = ((QNetworkProxy*)this_)->rawHeader(*headerName);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:207
 // [-2] void setRawHeader(const class QByteArray &, const class QByteArray &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* headerName, QByteArray* value) {
   ((QNetworkProxy*)this_)->setRawHeader(*headerName, *value);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

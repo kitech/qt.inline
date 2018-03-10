@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QDoubleSpinBoxC2EP7QWidget(QWidget * parent) {
   return  new QDoubleSpinBox(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:127
 // [-2] void ~QDoubleSpinBox()

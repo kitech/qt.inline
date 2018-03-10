@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayC2Ev() {
   return  new QBitArray();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:58
 // [-2] void QBitArray(int, _Bool)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayC2Eib(int size, bool val) {
   return  new QBitArray(size, val);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:60
 // [8] QBitArray & operator=(const class QBitArray &)
@@ -55,12 +57,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qbitarray.h:67
 // [-2] void swap(class QBitArray &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN9QBitArray4swapERS_(void *this_, QBitArray* other) {
   ((QBitArray*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:69

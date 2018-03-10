@@ -81,6 +81,7 @@ void* C_ZN13QTextDocumentC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTextDocument*)(0);
   return  new MyQTextDocument(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:120
 // [-2] void QTextDocument(const class QString &, class QObject *)
@@ -89,6 +90,7 @@ void* C_ZN13QTextDocumentC2ERK7QStringP7QObject(QString* text, QObject * parent)
   auto _nilp = (MyQTextDocument*)(0);
   return  new MyQTextDocument(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:121
 // [-2] void ~QTextDocument()
@@ -153,28 +155,37 @@ bool C_ZNK13QTextDocument15isRedoAvailableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qtextdocument.h:134
 // [4] int availableUndoSteps()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QTextDocument18availableUndoStepsEv(void *this_) {
   return (int)((QTextDocument*)this_)->availableUndoSteps();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qtextdocument.h:135
 // [4] int availableRedoSteps()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QTextDocument18availableRedoStepsEv(void *this_) {
   return (int)((QTextDocument*)this_)->availableRedoSteps();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:137
 // [4] int revision()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QTextDocument8revisionEv(void *this_) {
   return (int)((QTextDocument*)this_)->revision();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:139
@@ -227,13 +238,16 @@ void C_ZN13QTextDocument7setHtmlERK7QString(void *this_, QString* html) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtGui/qtextdocument.h:154
 // [8] QString toRawText()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument9toRawTextEv(void *this_) {
   auto rv = ((QTextDocument*)this_)->toRawText();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:155
@@ -253,13 +267,16 @@ void C_ZN13QTextDocument12setPlainTextERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextdocument.h:158
 // [2] QChar characterAt(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument11characterAtEi(void *this_, int pos) {
   auto rv = ((QTextDocument*)this_)->characterAt(pos);
 return new QChar(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:168
@@ -357,22 +374,28 @@ return new QTextBlock(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:188
 // [16] QTextBlock findBlockByNumber(int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument17findBlockByNumberEi(void *this_, int blockNumber) {
   auto rv = ((QTextDocument*)this_)->findBlockByNumber(blockNumber);
 return new QTextBlock(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextdocument.h:189
 // [16] QTextBlock findBlockByLineNumber(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument21findBlockByLineNumberEi(void *this_, int blockNumber) {
   auto rv = ((QTextDocument*)this_)->findBlockByLineNumber(blockNumber);
 return new QTextBlock(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:190
@@ -393,22 +416,28 @@ return new QTextBlock(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:193
 // [16] QTextBlock firstBlock()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument10firstBlockEv(void *this_) {
   auto rv = ((QTextDocument*)this_)->firstBlock();
 return new QTextBlock(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:194
 // [16] QTextBlock lastBlock()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument9lastBlockEv(void *this_) {
   auto rv = ((QTextDocument*)this_)->lastBlock();
 return new QTextBlock(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:196
@@ -510,12 +539,15 @@ bool C_ZNK13QTextDocument16useDesignMetricsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:226
 // [-2] void drawContents(class QPainter *, const class QRectF &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument12drawContentsEP8QPainterRK6QRectF(void *this_, QPainter * painter, QRectF* rect) {
   ((QTextDocument*)this_)->drawContents(painter, *rect);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:228
@@ -534,12 +566,15 @@ qreal C_ZNK13QTextDocument9textWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:231
 // [8] qreal idealWidth()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QTextDocument10idealWidthEv(void *this_) {
   return (qreal)((QTextDocument*)this_)->idealWidth();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:233
@@ -550,12 +585,15 @@ qreal C_ZNK13QTextDocument11indentWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:234
 // [-2] void setIndentWidth(qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument14setIndentWidthEd(void *this_, qreal width) {
   ((QTextDocument*)this_)->setIndentWidth(width);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:236
@@ -574,12 +612,15 @@ void C_ZN13QTextDocument17setDocumentMarginEd(void *this_, qreal margin) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:239
 // [-2] void adjustSize()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument10adjustSizeEv(void *this_) {
   ((QTextDocument*)this_)->adjustSize();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:240
@@ -599,20 +640,26 @@ int C_ZNK13QTextDocument10blockCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextdocument.h:243
 // [4] int lineCount()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QTextDocument9lineCountEv(void *this_) {
   return (int)((QTextDocument*)this_)->lineCount();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtextdocument.h:244
 // [4] int characterCount()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QTextDocument14characterCountEv(void *this_) {
   return (int)((QTextDocument*)this_)->characterCount();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:247
@@ -632,20 +679,26 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:251
 // [-2] void undo(class QTextCursor *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument4undoEP11QTextCursor(void *this_, QTextCursor * cursor) {
   ((QTextDocument*)this_)->undo(cursor);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:252
 // [-2] void redo(class QTextCursor *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument4redoEP11QTextCursor(void *this_, QTextCursor * cursor) {
   ((QTextDocument*)this_)->redo(cursor);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:259
@@ -672,21 +725,27 @@ void C_ZN13QTextDocument20setMaximumBlockCountEi(void *this_, int maximum) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextdocument.h:264
 // [32] QTextOption defaultTextOption()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument17defaultTextOptionEv(void *this_) {
   auto rv = ((QTextDocument*)this_)->defaultTextOption();
 return new QTextOption(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextdocument.h:265
 // [-2] void setDefaultTextOption(const class QTextOption &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument20setDefaultTextOptionERK11QTextOption(void *this_, QTextOption* option) {
   ((QTextDocument*)this_)->setDefaultTextOption(*option);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:267
@@ -706,20 +765,26 @@ void C_ZN13QTextDocument10setBaseUrlERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextdocument.h:270
 // [4] Qt::CursorMoveStyle defaultCursorMoveStyle()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 Qt::CursorMoveStyle C_ZNK13QTextDocument22defaultCursorMoveStyleEv(void *this_) {
   return (Qt::CursorMoveStyle)((QTextDocument*)this_)->defaultCursorMoveStyle();
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qtextdocument.h:271
 // [-2] void setDefaultCursorMoveStyle(Qt::CursorMoveStyle)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument25setDefaultCursorMoveStyleEN2Qt15CursorMoveStyleE(void *this_, Qt::CursorMoveStyle style) {
   ((QTextDocument*)this_)->setDefaultCursorMoveStyle(style);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:274
@@ -754,12 +819,15 @@ void C_ZN13QTextDocument13redoAvailableEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:278
 // [-2] void undoCommandAdded()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument16undoCommandAddedEv(void *this_) {
   ((QTextDocument*)this_)->undoCommandAdded();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:279
@@ -778,12 +846,15 @@ void C_ZN13QTextDocument21cursorPositionChangedERK11QTextCursor(void *this_, QTe
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qtextdocument.h:281
 // [-2] void blockCountChanged(int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument17blockCountChangedEi(void *this_, int newBlockCount) {
   ((QTextDocument*)this_)->blockCountChanged(newBlockCount);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:282
@@ -794,12 +865,15 @@ void C_ZN13QTextDocument14baseUrlChangedERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextdocument.h:283
 // [-2] void documentLayoutChanged()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument21documentLayoutChangedEv(void *this_) {
   ((QTextDocument*)this_)->documentLayoutChanged();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:286

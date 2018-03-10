@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050900
 // /usr/include/qt/QtNetwork/qhstspolicy.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QHstsPolicyC2Ev() {
   return  new QHstsPolicy();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:64
 // [-2] void QHstsPolicy(const class QDateTime &, QHstsPolicy::PolicyFlags, const class QString &, class QUrl::ParsingMode)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QHstsPolicyC2ERK9QDateTime6QFlagsINS_10PolicyFlagEERK7QStringN4QUrl11ParsingModeE(QDateTime* expiry, QFlags<QHstsPolicy::PolicyFlag> flags, QString* host, QUrl::ParsingMode mode) {
   return  new QHstsPolicy(*expiry, flags, *host, mode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:67
 // [8] QHstsPolicy & operator=(const class QHstsPolicy &)

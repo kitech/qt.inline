@@ -29,13 +29,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * codec) {
   return  new QTextEncoder(codec);
 }
+
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qtextcodec.h:142
 // [-2] void QTextEncoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) {
   return  new QTextEncoder(codec, flags);
 }
+#endif // QT_VERSION >= 0x040700
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:143
 // [-2] void ~QTextEncoder()
@@ -53,13 +58,16 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qtextcodec.h:147
 // [8] QByteArray fromUnicode(class QStringView)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoder11fromUnicodeE11QStringView(void *this_, QStringView* str) {
   auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:148

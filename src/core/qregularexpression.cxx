@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
 #define protected public
@@ -46,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QRegularExpressionC2Ev() {
   return  new QRegularExpression();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:85
 // [-2] void QRegularExpression(const class QString &, QRegularExpression::PatternOptions)
@@ -53,6 +55,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QRegularExpressionC2ERK7QString6QFlagsINS_13PatternOptionEE(QString* pattern, QFlags<QRegularExpression::PatternOption> options) {
   return  new QRegularExpression(*pattern, options);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:87
 // [-2] void ~QRegularExpression()
@@ -137,13 +140,16 @@ int C_ZNK18QRegularExpression12captureCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qregularexpression.h:105
 // [8] QStringList namedCaptureGroups()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QRegularExpression18namedCaptureGroupsEv(void *this_) {
   auto rv = ((QRegularExpression*)this_)->namedCaptureGroups();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:121
@@ -182,12 +188,15 @@ return new QRegularExpressionMatchIterator(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qregularexpression.h:141
 // [-2] void optimize()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZNK18QRegularExpression8optimizeEv(void *this_) {
   ((QRegularExpression*)this_)->optimize();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:143
@@ -197,6 +206,7 @@ void* C_ZN18QRegularExpression6escapeERK7QString(QString* str) {
   auto rv = QRegularExpression::escape(*str);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:145
 // [1] bool operator==(const class QRegularExpression &)

@@ -602,6 +602,7 @@ void* C_ZN9QTextEditC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTextEdit*)(0);
   return  new MyQTextEdit(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:106
 // [-2] void QTextEdit(const class QString &, class QWidget *)
@@ -610,6 +611,7 @@ void* C_ZN9QTextEditC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQTextEdit*)(0);
   return  new MyQTextEdit(*text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:107
 // [-2] void ~QTextEdit()
@@ -750,13 +752,16 @@ return new QColor(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextedit.h:130
 // [16] QColor textBackgroundColor()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTextEdit19textBackgroundColorEv(void *this_) {
   auto rv = ((QTextEdit*)this_)->textBackgroundColor();
 return new QColor(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:131
@@ -923,12 +928,15 @@ bool C_ZN9QTextEdit4findERK7QString6QFlagsIN13QTextDocument8FindFlagEE(void *thi
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtWidgets/qtextedit.h:166
 // [1] bool find(const class QRegExp &, class QTextDocument::FindFlags)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QTextEdit4findERK7QRegExp6QFlagsIN13QTextDocument8FindFlagEE(void *this_, QRegExp* exp, QFlags<QTextDocument::FindFlag> options) {
   return (bool)((QTextEdit*)this_)->find(*exp, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:169
@@ -974,12 +982,15 @@ void* C_ZN9QTextEdit25createStandardContextMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextedit.h:179
 // [8] QMenu * createStandardContextMenu(const class QPoint &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTextEdit25createStandardContextMenuERK6QPoint(void *this_, QPoint* position) {
   return (void*)((QTextEdit*)this_)->createStandardContextMenu(*position);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:182
@@ -1098,28 +1109,37 @@ void C_ZN9QTextEdit17setAcceptRichTextEb(void *this_, bool accept) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextedit.h:213
 // [-2] void moveCursor(class QTextCursor::MoveOperation, class QTextCursor::MoveMode)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit10moveCursorEN11QTextCursor13MoveOperationENS0_8MoveModeE(void *this_, QTextCursor::MoveOperation operation, QTextCursor::MoveMode mode) {
   ((QTextEdit*)this_)->moveCursor(operation, mode);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextedit.h:215
 // [1] bool canPaste()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTextEdit8canPasteEv(void *this_) {
   return (bool)((QTextEdit*)this_)->canPaste();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtextedit.h:217
 // [-2] void print(class QPagedPaintDevice *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTextEdit5printEP17QPagedPaintDevice(void *this_, QPagedPaintDevice * printer) {
   ((QTextEdit*)this_)->print(printer);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:219
@@ -1188,12 +1208,15 @@ void C_ZN9QTextEdit12setTextColorERK6QColor(void *this_, QColor* c) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qtextedit.h:229
 // [-2] void setTextBackgroundColor(const class QColor &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit22setTextBackgroundColorERK6QColor(void *this_, QColor* c) {
   ((QTextEdit*)this_)->setTextBackgroundColor(*c);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:230
@@ -1228,12 +1251,15 @@ void C_ZN9QTextEdit7setHtmlERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextedit.h:237
 // [-2] void setText(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit7setTextERK7QString(void *this_, QString* text) {
   ((QTextEdit*)this_)->setText(*text);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:240
@@ -1260,20 +1286,26 @@ void C_ZN9QTextEdit5pasteEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextedit.h:245
 // [-2] void undo()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit4undoEv(void *this_) {
   ((QTextEdit*)this_)->undo();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtextedit.h:246
 // [-2] void redo()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit4redoEv(void *this_) {
   ((QTextEdit*)this_)->redo();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:248

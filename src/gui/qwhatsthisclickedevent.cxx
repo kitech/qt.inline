@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN22QWhatsThisClickedEventC2ERK7QString(QString* href) {
   return  new QWhatsThisClickedEvent(*href);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:714
 // [-2] void ~QWhatsThisClickedEvent()

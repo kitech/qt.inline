@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2Ev() {
   return  new QPalette();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:59
 // [-2] void QPalette(const class QColor &)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QColor(QColor* button) {
   return  new QPalette(*button);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:60
 // [-2] void QPalette(Qt::GlobalColor)
@@ -51,6 +53,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2EN2Qt11GlobalColorE(Qt::GlobalColor button) {
   return  new QPalette(button);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:61
 // [-2] void QPalette(const class QColor &, const class QColor &)
@@ -58,6 +61,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QColorS2_(QColor* button, QColor* window) {
   return  new QPalette(*button, *window);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:62
 // [-2] void QPalette(const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &)
@@ -65,6 +69,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_(QBrush* windowText, QBrush* button, QBrush* light, QBrush* dark, QBrush* mid, QBrush* text, QBrush* bright_text, QBrush* base, QBrush* window) {
   return  new QPalette(*windowText, *button, *light, *dark, *mid, *text, *bright_text, *base, *window);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:65
 // [-2] void QPalette(const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &)
@@ -72,6 +77,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QColorS2_S2_S2_S2_S2_S2_(QColor* windowText, QColor* window, QColor* light, QColor* dark, QColor* mid, QColor* text, QColor* base) {
   return  new QPalette(*windowText, *window, *light, *dark, *mid, *text, *base);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:68
 // [-2] void ~QPalette()
@@ -98,12 +104,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qpalette.h:81
 // [-2] void swap(class QPalette &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette4swapERS_(void *this_, QPalette* other) {
   ((QPalette*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:104
@@ -295,22 +304,28 @@ return new QBrush(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpalette.h:132
 // [8] const QBrush & toolTipBase()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette11toolTipBaseEv(void *this_) {
   auto& rv = ((QPalette*)this_)->toolTipBase();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpalette.h:133
 // [8] const QBrush & toolTipText()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette11toolTipTextEv(void *this_) {
   auto& rv = ((QPalette*)this_)->toolTipText();
 return new QBrush(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:134

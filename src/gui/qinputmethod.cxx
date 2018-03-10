@@ -39,21 +39,27 @@ void C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *this_, QTran
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtGui/qinputmethod.h:71
 // [32] QRectF inputItemRectangle()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputMethod18inputItemRectangleEv(void *this_) {
   auto rv = ((QInputMethod*)this_)->inputItemRectangle();
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtGui/qinputmethod.h:72
 // [-2] void setInputItemRectangle(const class QRectF &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *this_, QRectF* rect) {
   ((QInputMethod*)this_)->setInputItemRectangle(*rect);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:75
@@ -140,6 +146,7 @@ void* C_ZN12QInputMethod16queryFocusObjectEN2Qt16InputMethodQueryE8QVariant(Qt::
   auto rv = QInputMethod::queryFocusObject(query, *argument);
 return new QVariant(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:100
 // [-2] void show()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQml/qqmlerror.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QQmlErrorC2Ev() {
   return  new QQmlError();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:58
 // [8] QQmlError & operator=(const class QQmlError &)
@@ -134,20 +136,26 @@ void C_ZN9QQmlError9setObjectEP7QObject(void *this_, QObject * arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtQml/qqmlerror.h:73
 // [4] QtMsgType messageType()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 QtMsgType C_ZNK9QQmlError11messageTypeEv(void *this_) {
   return (QtMsgType)((QQmlError*)this_)->messageType();
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtQml/qqmlerror.h:74
 // [-2] void setMessageType(enum QtMsgType)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN9QQmlError14setMessageTypeE9QtMsgType(void *this_, QtMsgType messageType) {
   ((QQmlError*)this_)->setMessageType(messageType);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:76

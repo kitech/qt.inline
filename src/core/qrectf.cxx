@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QRectFC2Ev() {
   return  new QRectF();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:515
 // [-2] void QRectF(const class QPointF &, const class QSizeF &)
@@ -42,13 +43,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QRectFC2ERK7QPointFRK6QSizeF(QPointF* topleft, QSizeF* size) {
   return  new QRectF(*topleft, *size);
 }
+
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qrect.h:516
 // [-2] void QRectF(const class QPointF &, const class QPointF &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QRectFC2ERK7QPointFS2_(QPointF* topleft, QPointF* bottomRight) {
   return  new QRectF(*topleft, *bottomRight);
 }
+#endif // QT_VERSION >= 0x040300
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:517
 // [-2] void QRectF(qreal, qreal, qreal, qreal)
@@ -56,6 +62,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QRectFC2Edddd(qreal left, qreal top, qreal width, qreal height) {
   return  new QRectF(left, top, width, height);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:518
 // [-2] void QRectF(const class QRect &)
@@ -63,6 +70,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QRectFC2ERK5QRect(QRect* rect) {
   return  new QRectF(*rect);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:520
 // [1] bool isNull()
@@ -376,13 +384,16 @@ return new QRectF(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qrect.h:566
 // [32] QRectF transposed()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QRectF10transposedEv(void *this_) {
   auto rv = ((QRectF*)this_)->transposed();
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:568
@@ -559,22 +570,28 @@ bool C_ZNK6QRectF8containsEdd(void *this_, qreal x, qreal y) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qrect.h:595
 // [32] QRectF united(const class QRectF &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QRectF6unitedERKS_(void *this_, QRectF* other) {
   auto rv = ((QRectF*)this_)->united(*other);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qrect.h:596
 // [32] QRectF intersected(const class QRectF &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QRectF11intersectedERKS_(void *this_, QRectF* other) {
   auto rv = ((QRectF*)this_)->intersected(*other);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:597
@@ -585,22 +602,28 @@ bool C_ZNK6QRectF10intersectsERKS_(void *this_, QRectF* r) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtCore/qrect.h:599
 // [32] QRectF marginsAdded(const class QMarginsF &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QRectF12marginsAddedERK9QMarginsF(void *this_, QMarginsF* margins) {
   auto rv = ((QRectF*)this_)->marginsAdded(*margins);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public inline Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtCore/qrect.h:600
 // [32] QRectF marginsRemoved(const class QMarginsF &)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QRectF14marginsRemovedERK9QMarginsF(void *this_, QMarginsF* margins) {
   auto rv = ((QRectF*)this_)->marginsRemoved(*margins);
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:601
@@ -630,13 +653,16 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtCore/qrect.h:613
 // [16] QRect toAlignedRect()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QRectF13toAlignedRectEv(void *this_) {
   auto rv = ((QRectF*)this_)->toAlignedRect();
 return new QRect(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 
 extern "C" Q_DECL_EXPORT

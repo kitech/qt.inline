@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtQuick/qquickframebufferobject.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN23QQuickFramebufferObjectC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickFramebufferObject*)(0);
   return 0; // new MyQQuickFramebufferObject(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickframebufferobject.h:80
 // [1] bool textureFollowsItemSize()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qprocess.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QProcessEnvironmentC2Ev() {
   return  new QProcessEnvironment();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:72
 // [-2] void ~QProcessEnvironment()
@@ -53,12 +55,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qprocess.h:78
 // [-2] void swap(class QProcessEnvironment &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN19QProcessEnvironment4swapERS_(void *this_, QProcessEnvironment* other) {
   ((QProcessEnvironment*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:80
@@ -127,20 +132,27 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qprocess.h:94
 // [8] QStringList keys()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QProcessEnvironment4keysEv(void *this_) {
   auto rv = ((QProcessEnvironment*)this_)->keys();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qprocess.h:98
 // [8] QProcessEnvironment systemEnvironment()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QProcessEnvironment17systemEnvironmentEv() {
   auto rv = QProcessEnvironment::systemEnvironment();
 return new QProcessEnvironment(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 //  main block end

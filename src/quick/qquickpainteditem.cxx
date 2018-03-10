@@ -56,6 +56,7 @@ void* C_ZN17QQuickPaintedItemC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickPaintedItem*)(0);
   return 0; // new MyQQuickPaintedItem(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:61
 // [-2] void ~QQuickPaintedItem()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtWidgets/qwizard.h
 #ifndef protected
 #define protected public
@@ -119,6 +120,7 @@ void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQWizardPage*)(0);
   return  new MyQWizardPage(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:219
 // [-2] void ~QWizardPage()

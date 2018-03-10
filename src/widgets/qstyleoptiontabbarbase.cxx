@@ -30,6 +30,7 @@ void* C_ZN22QStyleOptionTabBarBaseC2Ev() {
   return  new QStyleOptionTabBarBase();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionTabBarBaseD2Ev(void *this_) {
   delete (QStyleOptionTabBarBase*)(this_);

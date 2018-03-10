@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QAbstractListModelC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractListModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:397
 // [-2] void ~QAbstractListModel()

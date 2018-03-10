@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qloggingcategory.h
 #ifndef protected
 #define protected public
@@ -20,13 +21,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
   return  new QLoggingCategory(category);
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qloggingcategory.h:54
 // [-2] void QLoggingCategory(const char *, enum QtMsgType)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
   return  new QLoggingCategory(category, severityLevel);
 }
+#endif // QT_VERSION >= 0x050400
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:55
 // [-2] void ~QLoggingCategory()
@@ -59,12 +65,15 @@ bool C_ZNK16QLoggingCategory14isDebugEnabledEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qloggingcategory.h:62
 // [1] bool isInfoEnabled()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory13isInfoEnabledEv(void *this_) {
   return (bool)((QLoggingCategory*)this_)->isInfoEnabled();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:63
@@ -97,6 +106,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategory15defaultCategoryEv() {
   return (void*)QLoggingCategory::defaultCategory();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:82
 // [-2] void setFilterRules(const class QString &)
@@ -104,4 +114,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN16QLoggingCategory14setFilterRulesERK7QString(QString* rules) {
   QLoggingCategory::setFilterRules(*rules);
 }
+
 //  main block end

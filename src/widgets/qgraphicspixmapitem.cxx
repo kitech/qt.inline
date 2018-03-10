@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -93,6 +94,7 @@ void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPixmapItem*)(0);
   return  new MyQGraphicsPixmapItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:826
 // [-2] void QGraphicsPixmapItem(const class QPixmap &, class QGraphicsItem *)
@@ -101,6 +103,7 @@ void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(QPixmap* pixmap, QG
   auto _nilp = (MyQGraphicsPixmapItem*)(0);
   return  new MyQGraphicsPixmapItem(*pixmap, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:827
 // [-2] void ~QGraphicsPixmapItem()
@@ -159,12 +162,15 @@ void C_ZN19QGraphicsPixmapItem9setOffsetERK7QPointF(void *this_, QPointF* offset
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:837
 // [-2] void setOffset(qreal, qreal)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem9setOffsetEdd(void *this_, qreal x, qreal y) {
   ((QGraphicsPixmapItem*)this_)->setOffset(x, y);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:839

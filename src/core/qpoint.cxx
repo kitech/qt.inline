@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QPointC2Ev() {
   return  new QPoint();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:56
 // [-2] void QPoint(int, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QPointC2Eii(int xpos, int ypos) {
   return  new QPoint(xpos, ypos);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:58
 // [1] bool isNull()
@@ -157,12 +159,16 @@ return &rv;
 }
 
 // Public static inline Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qpoint.h:79
 // [4] int dotProduct(const class QPoint &, const class QPoint &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 int C_ZN6QPoint10dotProductERKS_S1_(QPoint* p1, QPoint* p2) {
   return (int)QPoint::dotProduct(*p1, *p2);
 }
+#endif // QT_VERSION >= 0x050100
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN6QPointD2Ev(void *this_) {

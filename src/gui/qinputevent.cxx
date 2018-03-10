@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QInputEventC2EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QInputEvent(type_, modifiers);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:72
 // [-2] void ~QInputEvent()

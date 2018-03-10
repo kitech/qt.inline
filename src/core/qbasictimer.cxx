@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QBasicTimerC2Ev() {
   return  new QBasicTimer();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbasictimer.h:56
 // [-2] void ~QBasicTimer()

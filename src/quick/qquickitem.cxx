@@ -701,6 +701,7 @@ void* C_ZN10QQuickItemC2EPS_(QQuickItem * parent) {
   auto _nilp = (MyQQuickItem*)(0);
   return  new MyQQuickItem(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:200
 // [-2] void ~QQuickItem()
@@ -936,21 +937,27 @@ qreal C_ZNK10QQuickItem14implicitHeightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtQuick/qquickitem.h:241
 // [16] QSizeF size()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem4sizeEv(void *this_) {
   auto rv = ((QQuickItem*)this_)->size();
 return new QSizeF(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtQuick/qquickitem.h:242
 // [-2] void setSize(const class QSizeF &)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem7setSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QQuickItem*)this_)->setSize(*size);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:244
@@ -1229,12 +1236,15 @@ void* C_ZNK10QQuickItem15scopedFocusItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtQuick/qquickitem.h:290
 // [1] bool isAncestorOf(const class QQuickItem *)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QQuickItem12isAncestorOfEPKS_(void *this_, const QQuickItem * child) {
   return (bool)((QQuickItem*)this_)->isAncestorOf(child);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:292
@@ -1269,20 +1279,26 @@ void C_ZN10QQuickItem20setAcceptHoverEventsEb(void *this_, bool enabled) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtQuick/qquickitem.h:296
 // [1] bool acceptTouchEvents()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QQuickItem17acceptTouchEventsEv(void *this_) {
   return (bool)((QQuickItem*)this_)->acceptTouchEvents();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtQuick/qquickitem.h:297
 // [-2] void setAcceptTouchEvents(_Bool)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem20setAcceptTouchEventsEb(void *this_, bool accept) {
   ((QQuickItem*)this_)->setAcceptTouchEvents(accept);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:300
@@ -1433,13 +1449,16 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtQuick/qquickitem.h:327
 // [16] QPointF mapToGlobal(const class QPointF &)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem11mapToGlobalERK7QPointF(void *this_, QPointF* point) {
   auto rv = ((QQuickItem*)this_)->mapToGlobal(*point);
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:328
@@ -1478,13 +1497,16 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtQuick/qquickitem.h:332
 // [16] QPointF mapFromGlobal(const class QPointF &)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem13mapFromGlobalERK7QPointF(void *this_, QPointF* point) {
   auto rv = ((QQuickItem*)this_)->mapFromGlobal(*point);
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:333
@@ -1521,12 +1543,15 @@ void C_ZN10QQuickItem16forceActiveFocusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtQuick/qquickitem.h:343
 // [-2] void forceActiveFocus(Qt::FocusReason)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem16forceActiveFocusEN2Qt11FocusReasonE(void *this_, Qt::FocusReason reason) {
   ((QQuickItem*)this_)->forceActiveFocus(reason);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:344

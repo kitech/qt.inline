@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionToolBarC2Ev() {
   return  new QStyleOptionToolBar();
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN19QStyleOptionToolBarD2Ev(void *this_) {

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h
 #ifndef protected
 #define protected public
@@ -98,6 +99,7 @@ void* C_ZN19QStyledItemDelegateC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQStyledItemDelegate*)(0);
   return  new MyQStyledItemDelegate(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:62
 // [-2] void ~QStyledItemDelegate()

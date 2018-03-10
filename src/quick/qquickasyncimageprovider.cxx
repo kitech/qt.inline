@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050600
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QQuickAsyncImageProviderC2Ev() {
   return 0; // new QQuickAsyncImageProvider();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:116
 // [-2] void ~QQuickAsyncImageProvider()

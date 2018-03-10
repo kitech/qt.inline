@@ -114,12 +114,15 @@ void C_ZN6QFrame9drawFrameEP8QPainter(void *this_, QPainter * arg0) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtWidgets/qframe.h:119
 // [-2] void initStyleOption(class QStyleOptionFrame *)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(void *this_, QStyleOptionFrame * option) {
   ((QFrame*)this_)->QFrame::initStyleOption(option);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qframe.h:54
@@ -137,6 +140,7 @@ void* C_ZN6QFrameC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags
   auto _nilp = (MyQFrame*)(0);
   return  new MyQFrame(parent, f);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qframe.h:65
 // [-2] void ~QFrame()

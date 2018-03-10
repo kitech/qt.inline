@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtNetwork/qnetworkreply.h
 #ifndef protected
 #define protected public
@@ -186,12 +187,15 @@ void C_ZN13QNetworkReply8setErrorENS_12NetworkErrorERK7QString(void *this_, QNet
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtNetwork/qnetworkreply.h:179
 // [-2] void setFinished(_Bool)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply11setFinishedEb(void *this_, bool arg0) {
   ((QNetworkReply*)this_)->QNetworkReply::setFinished(arg0);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:180
@@ -226,20 +230,26 @@ void C_ZN13QNetworkReply12setAttributeEN15QNetworkRequest9AttributeERK8QVariant(
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkreply.h:185
 // [-2] void sslConfigurationImplementation(class QSslConfiguration &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZNK13QNetworkReply30sslConfigurationImplementationER17QSslConfiguration(void *this_, QSslConfiguration* arg0) {
   ((QNetworkReply*)this_)->QNetworkReply::sslConfigurationImplementation(*arg0);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkreply.h:186
 // [-2] void setSslConfigurationImplementation(const class QSslConfiguration &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply33setSslConfigurationImplementationERK17QSslConfiguration(void *this_, QSslConfiguration* arg0) {
   ((QNetworkReply*)this_)->QNetworkReply::setSslConfigurationImplementation(*arg0);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:64
@@ -322,20 +332,26 @@ QNetworkReply::NetworkError C_ZNK13QNetworkReply5errorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qnetworkreply.h:128
 // [1] bool isFinished()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkReply10isFinishedEv(void *this_) {
   return (bool)((QNetworkReply*)this_)->isFinished();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qnetworkreply.h:129
 // [1] bool isRunning()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkReply9isRunningEv(void *this_) {
   return (bool)((QNetworkReply*)this_)->isRunning();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:130
@@ -439,36 +455,48 @@ void C_ZN13QNetworkReply5errorENS_12NetworkErrorE(void *this_, QNetworkReply::Ne
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtNetwork/qnetworkreply.h:161
 // [-2] void encrypted()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply9encryptedEv(void *this_) {
   ((QNetworkReply*)this_)->encrypted();
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtNetwork/qnetworkreply.h:163
 // [-2] void preSharedKeyAuthenticationRequired(class QSslPreSharedKeyAuthenticator *)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAuthenticator(void *this_, QSslPreSharedKeyAuthenticator * authenticator) {
   ((QNetworkReply*)this_)->preSharedKeyAuthenticationRequired(authenticator);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtNetwork/qnetworkreply.h:165
 // [-2] void redirected(const class QUrl &)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply10redirectedERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkReply*)this_)->redirected(*url);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtNetwork/qnetworkreply.h:166
 // [-2] void redirectAllowed()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply15redirectAllowedEv(void *this_) {
   ((QNetworkReply*)this_)->redirectAllowed();
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:168

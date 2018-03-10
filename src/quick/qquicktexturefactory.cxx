@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QQuickTextureFactoryC2Ev() {
   return 0; // new QQuickTextureFactory();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:61
 // [-2] void ~QQuickTextureFactory()
@@ -69,10 +71,14 @@ return new QImage(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtQuick/qquickimageprovider.h:68
 // [8] QQuickTextureFactory * textureFactoryForImage(const class QImage &)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QQuickTextureFactory22textureFactoryForImageERK6QImage(QImage* image) {
   return (void*)QQuickTextureFactory::textureFactoryForImage(*image);
 }
+#endif // QT_VERSION >= 0x050600
+
 //  main block end

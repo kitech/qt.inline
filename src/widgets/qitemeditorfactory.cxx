@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QItemEditorFactoryC2Ev() {
   return  new QItemEditorFactory();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:99
 // [-2] void ~QItemEditorFactory()
@@ -66,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QItemEditorFactory14defaultFactoryEv() {
   return (void*)QItemEditorFactory::defaultFactory();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:107
 // [-2] void setDefaultFactory(class QItemEditorFactory *)
@@ -73,4 +76,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factory) {
   QItemEditorFactory::setDefaultFactory(factory);
 }
+
 //  main block end

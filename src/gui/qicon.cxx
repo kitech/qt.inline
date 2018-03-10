@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2Ev() {
   return  new QIcon();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:61
 // [-2] void QIcon(const class QPixmap &)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2ERK7QPixmap(QPixmap* pixmap) {
   return  new QIcon(*pixmap);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:68
 // [-2] void QIcon(const class QString &)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2ERK7QString(QString* fileName) {
   return  new QIcon(*fileName);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:69
 // [-2] void QIcon(class QIconEngine *)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2EP11QIconEngine(QIconEngine * engine) {
   return  new QIcon(engine);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:70
 // [-2] void ~QIcon()
@@ -80,12 +84,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qicon.h:76
 // [-2] void swap(class QIcon &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon4swapERS_(void *this_, QIcon* other) {
   ((QIcon*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:81
@@ -142,13 +149,16 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qicon.h:91
 // [8] QString name()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QIcon4nameEv(void *this_) {
   auto rv = ((QIcon*)this_)->name();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:93
@@ -191,12 +201,15 @@ void C_ZN5QIcon6detachEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qicon.h:104
 // [8] qint64 cacheKey()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK5QIcon8cacheKeyEv(void *this_) {
   return (qint64)((QIcon*)this_)->cacheKey();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:106
@@ -215,29 +228,39 @@ void C_ZN5QIcon7addFileERK7QStringRK5QSizeNS_4ModeENS_5StateE(void *this_, QStri
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qicon.h:111
 // [-2] void setIsMask(_Bool)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon9setIsMaskEb(void *this_, bool isMask) {
   ((QIcon*)this_)->setIsMask(isMask);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qicon.h:112
 // [1] bool isMask()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QIcon6isMaskEv(void *this_) {
   return (bool)((QIcon*)this_)->isMask();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qicon.h:114
 // [8] QIcon fromTheme(const class QString &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon9fromThemeERK7QString(QString* name) {
   auto rv = QIcon::fromTheme(*name);
 return new QIcon(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:115
 // [8] QIcon fromTheme(const class QString &, const class QIcon &)
@@ -246,41 +269,62 @@ void* C_ZN5QIcon9fromThemeERK7QStringRKS_(QString* name, QIcon* fallback) {
   auto rv = QIcon::fromTheme(*name, *fallback);
 return new QIcon(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qicon.h:116
 // [1] bool hasThemeIcon(const class QString &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QIcon12hasThemeIconERK7QString(QString* name) {
   return (bool)QIcon::hasThemeIcon(*name);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qicon.h:118
 // [8] QStringList themeSearchPaths()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon16themeSearchPathsEv() {
   auto rv = QIcon::themeSearchPaths();
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qicon.h:119
 // [-2] void setThemeSearchPaths(const class QStringList &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon19setThemeSearchPathsERK11QStringList(QStringList* searchpath) {
   QIcon::setThemeSearchPaths(*searchpath);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qicon.h:121
 // [8] QString themeName()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QIcon9themeNameEv() {
   auto rv = QIcon::themeName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040600
+
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qicon.h:122
 // [-2] void setThemeName(const class QString &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN5QIcon12setThemeNameERK7QString(QString* path) {
   QIcon::setThemeName(*path);
 }
+#endif // QT_VERSION >= 0x040600
+
 //  main block end

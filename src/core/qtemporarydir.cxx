@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QTemporaryDirC2Ev() {
   return  new QTemporaryDir();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:57
 // [-2] void QTemporaryDir(const class QString &)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QTemporaryDirC2ERK7QString(QString* templateName) {
   return  new QTemporaryDir(*templateName);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:58
 // [-2] void ~QTemporaryDir()
@@ -52,13 +54,16 @@ bool C_ZNK13QTemporaryDir7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qtemporarydir.h:61
 // [8] QString errorString()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTemporaryDir11errorStringEv(void *this_) {
   auto rv = ((QTemporaryDir*)this_)->errorString();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:63
@@ -94,12 +99,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtCore/qtemporarydir.h:68
 // [8] QString filePath(const class QString &)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTemporaryDir8filePathERK7QString(void *this_, QString* fileName) {
   auto rv = ((QTemporaryDir*)this_)->filePath(*fileName);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 //  main block end

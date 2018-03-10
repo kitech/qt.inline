@@ -28,6 +28,7 @@ void* C_ZN17QIncompatibleFlagC2Ei(int i) {
   return  new QIncompatibleFlag(i);
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN17QIncompatibleFlagD2Ev(void *this_) {
   delete (QIncompatibleFlag*)(this_);

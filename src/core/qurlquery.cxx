@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qurlquery.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryC2Ev() {
   return  new QUrlQuery();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:60
 // [-2] void QUrlQuery(const class QUrl &)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryC2ERK4QUrl(QUrl* url) {
   return  new QUrlQuery(*url);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:61
 // [-2] void QUrlQuery(const class QString &)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryC2ERK7QString(QString* queryString) {
   return  new QUrlQuery(*queryString);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:63
 // [8] QUrlQuery & operator=(const class QUrlQuery &)
@@ -192,6 +196,7 @@ void* C_ZN9QUrlQuery26defaultQueryValueDelimiterEv() {
   auto rv = QUrlQuery::defaultQueryValueDelimiter();
 return new QChar(rv);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:100
 // [2] QChar defaultQueryPairDelimiter()
@@ -200,4 +205,5 @@ void* C_ZN9QUrlQuery25defaultQueryPairDelimiterEv() {
   auto rv = QUrlQuery::defaultQueryPairDelimiter();
 return new QChar(rv);
 }
+
 //  main block end

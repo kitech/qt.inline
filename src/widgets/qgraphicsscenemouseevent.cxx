@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN24QGraphicsSceneMouseEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneMouseEvent(type_);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:86
 // [-2] void ~QGraphicsSceneMouseEvent()
@@ -236,12 +238,15 @@ void C_ZN24QGraphicsSceneMouseEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifier
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:124
 // [4] Qt::MouseEventSource source()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 Qt::MouseEventSource C_ZNK24QGraphicsSceneMouseEvent6sourceEv(void *this_) {
   return (Qt::MouseEventSource)((QGraphicsSceneMouseEvent*)this_)->source();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:125
@@ -252,12 +257,15 @@ void C_ZN24QGraphicsSceneMouseEvent9setSourceEN2Qt16MouseEventSourceE(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:127
 // [4] Qt::MouseEventFlags flags()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 Qt::MouseEventFlags C_ZNK24QGraphicsSceneMouseEvent5flagsEv(void *this_) {
   return (Qt::MouseEventFlags)((QGraphicsSceneMouseEvent*)this_)->flags();
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:128

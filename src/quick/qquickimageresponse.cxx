@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050600
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageResponseC2Ev() {
   return 0; // new QQuickImageResponse();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:76
 // [-2] void ~QQuickImageResponse()

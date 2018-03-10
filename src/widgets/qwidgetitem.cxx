@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QWidgetItemC2EP7QWidget(QWidget * w) {
   return  new QWidgetItem(w);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:127
 // [-2] void ~QWidgetItem()

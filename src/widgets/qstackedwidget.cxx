@@ -57,6 +57,7 @@ void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQStackedWidget*)(0);
   return  new MyQStackedWidget(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:60
 // [-2] void ~QStackedWidget()

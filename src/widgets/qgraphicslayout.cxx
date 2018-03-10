@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslayout.h
 #ifndef protected
 #define protected public
@@ -33,12 +34,15 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 };
 
 // Protected Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:78
 // [-2] void addChildLayoutItem(class QGraphicsLayoutItem *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * layoutItem) {
   ((QGraphicsLayout*)this_)->QGraphicsLayout::addChildLayoutItem(layoutItem);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:57
@@ -48,6 +52,7 @@ void* C_ZN15QGraphicsLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * paren
   auto _nilp = (MyQGraphicsLayout*)(0);
   return 0; // new MyQGraphicsLayout(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:58
 // [-2] void ~QGraphicsLayout()
@@ -142,6 +147,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout31setInstantInvalidatePropagationEb(bool enable) {
   QGraphicsLayout::setInstantInvalidatePropagation(enable);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:75
 // [1] bool instantInvalidatePropagation()
@@ -149,4 +155,5 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN15QGraphicsLayout28instantInvalidatePropagationEv() {
   return (bool)QGraphicsLayout::instantInvalidatePropagation();
 }
+
 //  main block end

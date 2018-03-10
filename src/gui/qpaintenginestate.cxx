@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtGui/qpaintengine.h
 #ifndef protected
 #define protected public
@@ -89,13 +90,16 @@ return new QMatrix(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpaintengine.h:277
 // [88] QTransform transform()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QPaintEngineState9transformEv(void *this_) {
   auto rv = ((QPaintEngineState*)this_)->transform();
 return new QTransform(rv);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:279
@@ -148,12 +152,15 @@ QPainter::CompositionMode C_ZNK17QPaintEngineState15compositionModeEv(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpaintengine.h:286
 // [8] qreal opacity()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK17QPaintEngineState7opacityEv(void *this_) {
   return (qreal)((QPaintEngineState*)this_)->opacity();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:288
@@ -164,20 +171,26 @@ void* C_ZNK17QPaintEngineState7painterEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpaintengine.h:290
 // [1] bool brushNeedsResolving()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QPaintEngineState19brushNeedsResolvingEv(void *this_) {
   return (bool)((QPaintEngineState*)this_)->brushNeedsResolving();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpaintengine.h:291
 // [1] bool penNeedsResolving()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QPaintEngineState17penNeedsResolvingEv(void *this_) {
   return (bool)((QPaintEngineState*)this_)->penNeedsResolving();
 }
+#endif // QT_VERSION >= 0x040300
 
 
 extern "C" Q_DECL_EXPORT

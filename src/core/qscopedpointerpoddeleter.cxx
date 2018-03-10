@@ -26,6 +26,7 @@ void C_ZN24QScopedPointerPodDeleter7cleanupEPv(void * pointer) {
   QScopedPointerPodDeleter::cleanup(pointer);
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN24QScopedPointerPodDeleterD2Ev(void *this_) {
   delete (QScopedPointerPodDeleter*)(this_);

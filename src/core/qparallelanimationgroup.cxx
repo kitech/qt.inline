@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qparallelanimationgroup.h
 #ifndef protected
 #define protected public
@@ -117,6 +118,7 @@ void* C_ZN23QParallelAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQParallelAnimationGroup*)(0);
   return  new MyQParallelAnimationGroup(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:57
 // [-2] void ~QParallelAnimationGroup()

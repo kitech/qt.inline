@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EN2Qt14InitializationE(Qt::Initialization arg0) {
   return  new QtSharedPointer::ExternalRefCountData(arg0);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:155
 // [-2] void ~ExternalRefCountData()
@@ -49,6 +50,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QtSharedPointer20ExternalRefCountData9getAndRefEPK7QObject(const QObject * arg0) {
   return (void*)QtSharedPointer::ExternalRefCountData::getAndRef(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:161
 // [-2] void setQObjectShared(const class QObject *, _Bool)
@@ -72,6 +74,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN15QtSharedPointer20ExternalRefCountDatadlEPv(void * ptr) {
   QtSharedPointer::ExternalRefCountData::operator delete(ptr);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:168
 // [-2] void operator delete(void *, void *)
@@ -79,4 +82,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN15QtSharedPointer20ExternalRefCountDatadlEPvS1_(void * arg0, void * arg1) {
   QtSharedPointer::ExternalRefCountData::operator delete(arg0, arg1);
 }
+
 //  main block end

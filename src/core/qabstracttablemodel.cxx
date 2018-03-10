@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractTableModelC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractTableModel(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:371
 // [-2] void ~QAbstractTableModel()

@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QModelIndexC2Ev() {
   return  new QModelIndex();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:60
 // [4] int row()
@@ -96,12 +97,15 @@ return new QVariant(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qabstractitemmodel.h:70
 // [4] Qt::ItemFlags flags()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK11QModelIndex5flagsEv(void *this_) {
   return (Qt::ItemFlags)((QModelIndex*)this_)->flags();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:71

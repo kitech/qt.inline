@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050400
 // /usr/include/qt/QtGui/qrasterwindow.h
 #ifndef protected
 #define protected public
@@ -78,6 +79,7 @@ void* C_ZN13QRasterWindowC2EP7QWindow(QWindow * parent) {
   auto _nilp = (MyQRasterWindow*)(0);
   return  new MyQRasterWindow(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:57
 // [-2] void ~QRasterWindow()

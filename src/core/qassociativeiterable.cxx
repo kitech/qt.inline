@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qvariant.h
 #ifndef protected
 #define protected public
@@ -37,13 +38,16 @@ return new QAssociativeIterable::const_iterator(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qvariant.h:682
 // [120] QAssociativeIterable::const_iterator find(const class QVariant &)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QAssociativeIterable4findERK8QVariant(void *this_, QVariant* key) {
   auto rv = ((QAssociativeIterable*)this_)->find(*key);
 return new QAssociativeIterable::const_iterator(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:684

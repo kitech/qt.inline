@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QButtonGroupC2EP7QObject(QObject * parent) {
   return  new QButtonGroup(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:61
 // [-2] void ~QButtonGroup()
@@ -83,36 +84,48 @@ void* C_ZNK12QButtonGroup13checkedButtonEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qbuttongroup.h:74
 // [8] QAbstractButton * button(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QButtonGroup6buttonEi(void *this_, int id) {
   return (void*)((QButtonGroup*)this_)->button(id);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qbuttongroup.h:75
 // [-2] void setId(class QAbstractButton *, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup5setIdEP15QAbstractButtoni(void *this_, QAbstractButton * button, int id) {
   ((QButtonGroup*)this_)->setId(button, id);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qbuttongroup.h:76
 // [4] int id(class QAbstractButton *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QButtonGroup2idEP15QAbstractButton(void *this_, QAbstractButton * button) {
   return (int)((QButtonGroup*)this_)->id(button);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qbuttongroup.h:77
 // [4] int checkedId()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QButtonGroup9checkedIdEv(void *this_) {
   return (int)((QButtonGroup*)this_)->checkedId();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:80
@@ -131,51 +144,69 @@ void C_ZN12QButtonGroup13buttonClickedEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:82
 // [-2] void buttonPressed(class QAbstractButton *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonPressedEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
   ((QButtonGroup*)this_)->buttonPressed(arg0);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:83
 // [-2] void buttonPressed(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonPressedEi(void *this_, int arg0) {
   ((QButtonGroup*)this_)->buttonPressed(arg0);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:84
 // [-2] void buttonReleased(class QAbstractButton *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
   ((QButtonGroup*)this_)->buttonReleased(arg0);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:85
 // [-2] void buttonReleased(int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup14buttonReleasedEi(void *this_, int arg0) {
   ((QButtonGroup*)this_)->buttonReleased(arg0);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:86
 // [-2] void buttonToggled(class QAbstractButton *, _Bool)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(void *this_, QAbstractButton * arg0, bool arg1) {
   ((QButtonGroup*)this_)->buttonToggled(arg0, arg1);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:87
 // [-2] void buttonToggled(int, _Bool)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonToggledEib(void *this_, int arg0, bool arg1) {
   ((QButtonGroup*)this_)->buttonToggled(arg0, arg1);
 }
+#endif // QT_VERSION >= 0x050200
 
 //  main block end

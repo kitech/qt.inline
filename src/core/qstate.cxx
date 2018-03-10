@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qstate.h
 #ifndef protected
 #define protected public
@@ -99,6 +100,7 @@ void* C_ZN6QStateC2EPS_(QState * parent) {
   auto _nilp = (MyQState*)(0);
   return  new MyQState(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:75
 // [-2] void QState(enum QState::ChildMode, class QState *)
@@ -107,6 +109,7 @@ void* C_ZN6QStateC2ENS_9ChildModeEPS_(QState::ChildMode childMode, QState * pare
   auto _nilp = (MyQState*)(0);
   return  new MyQState(childMode, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:76
 // [-2] void ~QState()

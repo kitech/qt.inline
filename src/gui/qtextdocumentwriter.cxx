@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040500
 // /usr/include/qt/QtGui/qtextdocumentwriter.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2Ev() {
   return  new QTextDocumentWriter();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:58
 // [-2] void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QTextDocumentWriter(device, *format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:59
 // [-2] void QTextDocumentWriter(const class QString &, const class QByteArray &)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QTextDocumentWriter(*fileName, *format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:60
 // [-2] void ~QTextDocumentWriter()

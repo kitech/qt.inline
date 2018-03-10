@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
 #define protected public
@@ -39,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2EP7QObject(QObject * parent) {
   return  new QDnsLookup(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:222
 // [-2] void QDnsLookup(enum QDnsLookup::Type, const class QString &, class QObject *)
@@ -46,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type_, QString* name, QObject * parent) {
   return  new QDnsLookup(type_, *name, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:223
 // [-2] void QDnsLookup(enum QDnsLookup::Type, const class QString &, const class QHostAddress &, class QObject *)
@@ -53,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringRK12QHostAddressP7QObject(QDnsLookup::Type type_, QString* name, QHostAddress* nameserver, QObject * parent) {
   return  new QDnsLookup(type_, *name, *nameserver, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:224
 // [-2] void ~QDnsLookup()

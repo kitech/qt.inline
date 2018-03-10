@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtCore/qcollator.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QCollatorC2ERK7QLocale(QLocale* locale) {
   return  new QCollator(*locale);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:88
 // [-2] void ~QCollator()

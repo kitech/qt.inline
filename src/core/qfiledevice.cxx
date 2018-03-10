@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qfiledevice.h
 #ifndef protected
 #define protected public
@@ -231,20 +232,26 @@ bool C_ZN11QFileDevice5unmapEPh(void *this_, uchar * address) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qfiledevice.h:130
 // [8] QDateTime fileTime(class QFileDevice::FileTime)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDevice8fileTimeENS_8FileTimeE(void *this_, QFileDevice::FileTime time) {
   auto rv = ((QFileDevice*)this_)->fileTime(time);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qfiledevice.h:131
 // [1] bool setFileTime(const class QDateTime &, class QFileDevice::FileTime)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice11setFileTimeERK9QDateTimeNS_8FileTimeE(void *this_, QDateTime* newDate, QFileDevice::FileTime fileTime) {
   return (bool)((QFileDevice*)this_)->setFileTime(*newDate, fileTime);
 }
+#endif // QT_VERSION >= 0x050a00
 
 //  main block end

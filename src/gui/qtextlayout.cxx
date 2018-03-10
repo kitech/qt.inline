@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2Ev() {
   return  new QTextLayout();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:109
 // [-2] void QTextLayout(const class QString &)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2ERK7QString(QString* text) {
   return  new QTextLayout(*text);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:110
 // [-2] void QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2ERK7QStringRK5QFontP12QPaintDevice(QString* text, QFont* font, QPaintDevice * paintdevice) {
   return  new QTextLayout(*text, *font, paintdevice);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:111
 // [-2] void QTextLayout(const class QTextBlock &)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2ERK10QTextBlock(QTextBlock* b) {
   return  new QTextLayout(*b);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:112
 // [-2] void ~QTextLayout()
@@ -154,12 +158,15 @@ void C_ZN11QTextLayout22clearAdditionalFormatsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qtextlayout.h:148
 // [-2] void clearFormats()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout12clearFormatsEv(void *this_) {
   ((QTextLayout*)this_)->clearFormats();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:150
@@ -210,12 +217,15 @@ void C_ZN11QTextLayout9endLayoutEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextlayout.h:158
 // [-2] void clearLayout()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout11clearLayoutEv(void *this_) {
   ((QTextLayout*)this_)->clearLayout();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:160
@@ -309,13 +319,16 @@ void C_ZNK11QTextLayout10drawCursorEP8QPainterRK7QPointFii(void *this_, QPainter
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtextlayout.h:181
 // [16] QPointF position()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextLayout8positionEv(void *this_) {
   auto rv = ((QTextLayout*)this_)->position();
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:182

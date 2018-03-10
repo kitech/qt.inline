@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeC2Ev() {
   return  new QXmlStreamAttribute();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:110
 // [-2] void QXmlStreamAttribute(const class QString &, const class QString &)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(QString* qualifiedName, QString* value) {
   return  new QXmlStreamAttribute(*qualifiedName, *value);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:112
 // [-2] void QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(QString* namespaceUri, QString* name, QString* value) {
   return  new QXmlStreamAttribute(*namespaceUri, *name, *value);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:125
 // [80] QXmlStreamAttribute & operator=(class QXmlStreamAttribute &&)
@@ -98,13 +102,16 @@ return new QStringRef(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:143
 // [16] QStringRef prefix()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QXmlStreamAttribute6prefixEv(void *this_) {
   auto rv = ((QXmlStreamAttribute*)this_)->prefix();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:148

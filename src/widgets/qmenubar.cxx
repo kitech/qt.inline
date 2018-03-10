@@ -338,6 +338,7 @@ void* C_ZN8QMenuBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQMenuBar*)(0);
   return  new MyQMenuBar(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:64
 // [-2] void ~QMenuBar()
@@ -426,12 +427,15 @@ void* C_ZNK8QMenuBar12activeActionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qmenubar.h:83
 // [-2] void setActiveAction(class QAction *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar15setActiveActionEP7QAction(void *this_, QAction * action) {
   ((QMenuBar*)this_)->setActiveAction(action);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:85

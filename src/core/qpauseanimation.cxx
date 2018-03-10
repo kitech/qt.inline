@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qpauseanimation.h
 #ifndef protected
 #define protected public
@@ -79,6 +80,7 @@ void* C_ZN15QPauseAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQPauseAnimation*)(0);
   return  new MyQPauseAnimation(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpauseanimation.h:58
 // [-2] void QPauseAnimation(int, class QObject *)
@@ -87,6 +89,7 @@ void* C_ZN15QPauseAnimationC2EiP7QObject(int msecs, QObject * parent) {
   auto _nilp = (MyQPauseAnimation*)(0);
   return  new MyQPauseAnimation(msecs, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpauseanimation.h:59
 // [-2] void ~QPauseAnimation()

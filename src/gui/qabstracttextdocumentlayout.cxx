@@ -154,6 +154,7 @@ void* C_ZN27QAbstractTextDocumentLayoutC2EP13QTextDocument(QTextDocument * doc) 
   auto _nilp = (MyQAbstractTextDocumentLayout*)(0);
   return 0; // new MyQAbstractTextDocumentLayout(doc);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:65
 // [-2] void ~QAbstractTextDocumentLayout()
@@ -179,22 +180,28 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:88
 // [8] QString imageAt(const class QPointF &)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout7imageAtERK7QPointF(void *this_, QPointF* pos) {
   auto rv = ((QAbstractTextDocumentLayout*)this_)->imageAt(*pos);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:89
 // [16] QTextFormat formatAt(const class QPointF &)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout8formatAtERK7QPointF(void *this_, QPointF* pos) {
   auto rv = ((QAbstractTextDocumentLayout*)this_)->formatAt(*pos);
 return new QTextFormat(rv);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:91
@@ -264,12 +271,15 @@ void C_ZN27QAbstractTextDocumentLayout15registerHandlerEiP7QObject(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:103
 // [-2] void unregisterHandler(int, class QObject *)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout17unregisterHandlerEiP7QObject(void *this_, int objectType, QObject * component) {
   ((QAbstractTextDocumentLayout*)this_)->unregisterHandler(objectType, component);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:104
@@ -288,12 +298,15 @@ void C_ZN27QAbstractTextDocumentLayout6updateERK6QRectF(void *this_, QRectF* arg
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:108
 // [-2] void updateBlock(const class QTextBlock &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout11updateBlockERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QAbstractTextDocumentLayout*)this_)->updateBlock(*block);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:109

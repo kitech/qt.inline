@@ -229,12 +229,15 @@ void C_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qitemdelegate.h:100
 // [-2] void drawBackground(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QPainter * painter, QStyleOptionViewItem* option, QModelIndex* index) {
   ((QItemDelegate*)this_)->QItemDelegate::drawBackground(painter, *option, *index);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemdelegate.h:103
@@ -329,6 +332,7 @@ void* C_ZN13QItemDelegateC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQItemDelegate*)(0);
   return  new MyQItemDelegate(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemdelegate.h:63
 // [-2] void ~QItemDelegate()

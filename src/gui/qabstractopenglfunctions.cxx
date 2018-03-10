@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtGui/qopenglversionfunctions.h
 #ifndef protected
 #define protected public

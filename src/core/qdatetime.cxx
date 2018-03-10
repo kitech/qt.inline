@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2Ev() {
   return  new QDateTime();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:262
 // [-2] void QDateTime(const class QDate &)
@@ -42,6 +43,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDate(QDate* arg0) {
   return  new QDateTime(*arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:263
 // [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
@@ -49,20 +51,29 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecE(QDate* arg0, QTime* arg1, Qt::TimeSpec spec) {
   return  new QDateTime(*arg0, *arg1, spec);
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:265
 // [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecEi(QDate* date, QTime* time, Qt::TimeSpec spec, int offsetSeconds) {
   return  new QDateTime(*date, *time, spec, offsetSeconds);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:267
 // [-2] void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeRK9QTimeZone(QDate* date, QTime* time, QTimeZone* timeZone) {
   return  new QDateTime(*date, *time, *timeZone);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:271
 // [-2] void ~QDateTime()
@@ -89,12 +100,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qdatetime.h:278
 // [-2] void swap(class QDateTime &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime4swapERS_(void *this_, QDateTime* other) {
   ((QDateTime*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:280
@@ -139,54 +153,72 @@ Qt::TimeSpec C_ZNK9QDateTime8timeSpecEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:286
 // [4] int offsetFromUtc()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QDateTime13offsetFromUtcEv(void *this_) {
   return (int)((QDateTime*)this_)->offsetFromUtc();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:288
 // [8] QTimeZone timeZone()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime8timeZoneEv(void *this_) {
   auto rv = ((QDateTime*)this_)->timeZone();
 return new QTimeZone(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:290
 // [8] QString timeZoneAbbreviation()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime20timeZoneAbbreviationEv(void *this_) {
   auto rv = ((QDateTime*)this_)->timeZoneAbbreviation();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:291
 // [1] bool isDaylightTime()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTime14isDaylightTimeEv(void *this_) {
   return (bool)((QDateTime*)this_)->isDaylightTime();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qdatetime.h:293
 // [8] qint64 toMSecsSinceEpoch()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QDateTime17toMSecsSinceEpochEv(void *this_) {
   return (qint64)((QDateTime*)this_)->toMSecsSinceEpoch();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qdatetime.h:294
 // [8] qint64 toSecsSinceEpoch()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QDateTime16toSecsSinceEpochEv(void *this_) {
   return (qint64)((QDateTime*)this_)->toSecsSinceEpoch();
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:296
@@ -213,36 +245,48 @@ void C_ZN9QDateTime11setTimeSpecEN2Qt8TimeSpecE(void *this_, Qt::TimeSpec spec) 
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:299
 // [-2] void setOffsetFromUtc(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime16setOffsetFromUtcEi(void *this_, int offsetSeconds) {
   ((QDateTime*)this_)->setOffsetFromUtc(offsetSeconds);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:301
 // [-2] void setTimeZone(const class QTimeZone &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime11setTimeZoneERK9QTimeZone(void *this_, QTimeZone* toZone) {
   ((QDateTime*)this_)->setTimeZone(*toZone);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qdatetime.h:303
 // [-2] void setMSecsSinceEpoch(qint64)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime18setMSecsSinceEpochEx(void *this_, qint64 msecs) {
   ((QDateTime*)this_)->setMSecsSinceEpoch(msecs);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qdatetime.h:304
 // [-2] void setSecsSinceEpoch(qint64)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime17setSecsSinceEpochEx(void *this_, qint64 secs) {
   ((QDateTime*)this_)->setSecsSinceEpoch(secs);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:307
@@ -344,22 +388,28 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:322
 // [8] QDateTime toOffsetFromUtc(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime15toOffsetFromUtcEi(void *this_, int offsetSeconds) {
   auto rv = ((QDateTime*)this_)->toOffsetFromUtc(offsetSeconds);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:324
 // [8] QDateTime toTimeZone(const class QTimeZone &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime10toTimeZoneERK9QTimeZone(void *this_, QTimeZone* toZone) {
   auto rv = ((QDateTime*)this_)->toTimeZone(*toZone);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:327
@@ -457,14 +507,19 @@ void* C_ZN9QDateTime15currentDateTimeEv() {
   auto rv = QDateTime::currentDateTime();
 return new QDateTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qdatetime.h:344
 // [8] QDateTime currentDateTimeUtc()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime18currentDateTimeUtcEv() {
   auto rv = QDateTime::currentDateTimeUtc();
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x040700
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:346
 // [8] QDateTime fromString(const class QString &, Qt::DateFormat)
@@ -473,6 +528,7 @@ void* C_ZN9QDateTime10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::Dat
   auto rv = QDateTime::fromString(*s, f);
 return new QDateTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:347
 // [8] QDateTime fromString(const class QString &, const class QString &)
@@ -481,6 +537,7 @@ void* C_ZN9QDateTime10fromStringERK7QStringS2_(QString* s, QString* format) {
   auto rv = QDateTime::fromString(*s, *format);
 return new QDateTime(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:351
 // [4] uint toTime_t()
@@ -505,6 +562,7 @@ void* C_ZN9QDateTime10fromTime_tEj(uint secsSince1Jan1970UTC) {
   auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC);
 return new QDateTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:354
 // [8] QDateTime fromTime_t(uint, Qt::TimeSpec, int)
@@ -513,6 +571,7 @@ void* C_ZN9QDateTime10fromTime_tEjN2Qt8TimeSpecEi(uint secsSince1Jan1970UTC, Qt:
   auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC, spec, offsetFromUtc);
 return new QDateTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:356
 // [8] QDateTime fromTime_t(uint, const class QTimeZone &)
@@ -521,58 +580,87 @@ void* C_ZN9QDateTime10fromTime_tEjRK9QTimeZone(uint secsSince1Jan1970UTC, QTimeZ
   auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC, *timeZone);
 return new QDateTime(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qdatetime.h:359
 // [8] QDateTime fromMSecsSinceEpoch(qint64)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime19fromMSecsSinceEpochEx(qint64 msecs) {
   auto rv = QDateTime::fromMSecsSinceEpoch(msecs);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x040700
+
 // Public static Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:361
 // [8] QDateTime fromMSecsSinceEpoch(qint64, Qt::TimeSpec, int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime19fromMSecsSinceEpochExN2Qt8TimeSpecEi(qint64 msecs, Qt::TimeSpec spec, int offsetFromUtc) {
   auto rv = QDateTime::fromMSecsSinceEpoch(msecs, spec, offsetFromUtc);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public static Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qdatetime.h:362
 // [8] QDateTime fromSecsSinceEpoch(qint64, Qt::TimeSpec, int)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime18fromSecsSinceEpochExN2Qt8TimeSpecEi(qint64 secs, Qt::TimeSpec spe, int offsetFromUtc) {
   auto rv = QDateTime::fromSecsSinceEpoch(secs, spe, offsetFromUtc);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050800
+
 // Public static Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:365
 // [8] QDateTime fromMSecsSinceEpoch(qint64, const class QTimeZone &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime19fromMSecsSinceEpochExRK9QTimeZone(qint64 msecs, QTimeZone* timeZone) {
   auto rv = QDateTime::fromMSecsSinceEpoch(msecs, *timeZone);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public static Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qdatetime.h:366
 // [8] QDateTime fromSecsSinceEpoch(qint64, const class QTimeZone &)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime18fromSecsSinceEpochExRK9QTimeZone(qint64 secs, QTimeZone* timeZone) {
   auto rv = QDateTime::fromSecsSinceEpoch(secs, *timeZone);
 return new QDateTime(rv);
 }
+#endif // QT_VERSION >= 0x050800
+
 // Public static Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qdatetime.h:369
 // [8] qint64 currentMSecsSinceEpoch()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QDateTime22currentMSecsSinceEpochEv() {
   return (qint64)QDateTime::currentMSecsSinceEpoch();
 }
+#endif // QT_VERSION >= 0x040700
+
 // Public static Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qdatetime.h:370
 // [8] qint64 currentSecsSinceEpoch()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QDateTime21currentSecsSinceEpochEv() {
   return (qint64)QDateTime::currentSecsSinceEpoch();
 }
+#endif // QT_VERSION >= 0x050800
+
 //  main block end

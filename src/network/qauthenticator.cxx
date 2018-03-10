@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtNetwork/qauthenticator.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QAuthenticatorC2Ev() {
   return  new QAuthenticator();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:57
 // [-2] void ~QAuthenticator()
@@ -111,21 +113,27 @@ void C_ZN14QAuthenticator8setRealmERK7QString(void *this_, QString* realm) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtNetwork/qauthenticator.h:74
 // [16] QVariant option(const class QString &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QAuthenticator6optionERK7QString(void *this_, QString* opt) {
   auto rv = ((QAuthenticator*)this_)->option(*opt);
 return new QVariant(rv);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtNetwork/qauthenticator.h:76
 // [-2] void setOption(const class QString &, const class QVariant &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAuthenticator9setOptionERK7QStringRK8QVariant(void *this_, QString* opt, QVariant* value) {
   ((QAuthenticator*)this_)->setOption(*opt, *value);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:78

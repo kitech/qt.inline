@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN26QQmlAbstractUrlInterceptorC2Ev() {
   return 0; // new QQmlAbstractUrlInterceptor();
 }
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:59
 // [-2] void ~QQmlAbstractUrlInterceptor()

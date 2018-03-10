@@ -249,13 +249,16 @@ return new QSize(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qtabbar.h:192
 // [8] QSize minimumTabSizeHint(int)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QTabBar18minimumTabSizeHintEi(void *this_, int index) {
   auto rv = ((QTabBar*)this_)->QTabBar::minimumTabSizeHint(index);
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:193
@@ -401,6 +404,7 @@ void* C_ZN7QTabBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTabBar*)(0);
   return  new MyQTabBar(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:75
 // [-2] void ~QTabBar()
@@ -465,12 +469,15 @@ void C_ZN7QTabBar9removeTabEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qtabbar.h:103
 // [-2] void moveTab(int, int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar7moveTabEii(void *this_, int from, int to) {
   ((QTabBar*)this_)->moveTab(from, to);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:105
@@ -573,21 +580,27 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtabbar.h:126
 // [-2] void setTabWhatsThis(int, const class QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar15setTabWhatsThisEiRK7QString(void *this_, int index, QString* text) {
   ((QTabBar*)this_)->setTabWhatsThis(index, *text);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtabbar.h:127
 // [8] QString tabWhatsThis(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QTabBar12tabWhatsThisEi(void *this_, int index) {
   auto rv = ((QTabBar*)this_)->tabWhatsThis(index);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:130
@@ -616,12 +629,15 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtabbar.h:134
 // [4] int tabAt(const class QPoint &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QTabBar5tabAtERK6QPoint(void *this_, QPoint* pos) {
   return (int)((QTabBar*)this_)->tabAt(*pos);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:136
@@ -868,35 +884,47 @@ void C_ZN7QTabBar14currentChangedEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qtabbar.h:185
 // [-2] void tabCloseRequested(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar17tabCloseRequestedEi(void *this_, int index) {
   ((QTabBar*)this_)->tabCloseRequested(index);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qtabbar.h:186
 // [-2] void tabMoved(int, int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar8tabMovedEii(void *this_, int from, int to) {
   ((QTabBar*)this_)->tabMoved(from, to);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qtabbar.h:187
 // [-2] void tabBarClicked(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar13tabBarClickedEi(void *this_, int index) {
   ((QTabBar*)this_)->tabBarClicked(index);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qtabbar.h:188
 // [-2] void tabBarDoubleClicked(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar19tabBarDoubleClickedEi(void *this_, int index) {
   ((QTabBar*)this_)->tabBarDoubleClicked(index);
 }
+#endif // QT_VERSION >= 0x050200
 
 //  main block end

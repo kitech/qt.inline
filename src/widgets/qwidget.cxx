@@ -804,6 +804,7 @@ void* C_ZN7QWidgetC2EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::
   auto _nilp = (MyQWidget*)(0);
   return  new MyQWidget(parent, f);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:215
 // [-2] void ~QWidget()
@@ -844,12 +845,15 @@ WId C_ZNK7QWidget13internalWinIdEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qwidget.h:222
 // [8] WId effectiveWinId()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 WId C_ZNK7QWidget14effectiveWinIdEv(void *this_) {
   return (WId)((QWidget*)this_)->effectiveWinId();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:225
@@ -1327,12 +1331,15 @@ void* C_ZNK7QWidget6windowEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qwidget.h:304
 // [8] QWidget * nativeParentWidget()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget18nativeParentWidgetEv(void *this_) {
   return (void*)((QWidget*)this_)->nativeParentWidget();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:305
@@ -1541,45 +1548,60 @@ void C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qwidget.h:348
 // [32] QPixmap grab(const class QRect &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget4grabERK5QRect(void *this_, QRect* rectangle) {
   auto rv = ((QWidget*)this_)->grab(*rectangle);
 return new QPixmap(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:351
 // [8] QGraphicsEffect * graphicsEffect()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget14graphicsEffectEv(void *this_) {
   return (void*)((QWidget*)this_)->graphicsEffect();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:352
 // [-2] void setGraphicsEffect(class QGraphicsEffect *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setGraphicsEffectEP15QGraphicsEffect(void *this_, QGraphicsEffect * effect) {
   ((QWidget*)this_)->setGraphicsEffect(effect);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:356
 // [-2] void grabGesture(Qt::GestureType, Qt::GestureFlags)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE(void *this_, Qt::GestureType type_, QFlags<Qt::GestureFlag> flags) {
   ((QWidget*)this_)->grabGesture(type_, flags);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:357
 // [-2] void ungrabGesture(Qt::GestureType)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type_) {
   ((QWidget*)this_)->ungrabGesture(type_);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:361
@@ -1944,6 +1966,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11setTabOrderEPS_S0_(QWidget * arg0, QWidget * arg1) {
   QWidget::setTabOrder(arg0, arg1);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:428
 // [-2] void setFocusProxy(class QWidget *)
@@ -2041,12 +2064,15 @@ void C_ZN7QWidget18setShortcutEnabledEib(void *this_, int id, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qwidget.h:445
 // [-2] void setShortcutAutoRepeat(int, _Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget21setShortcutAutoRepeatEib(void *this_, int id, bool enable) {
   ((QWidget*)this_)->setShortcutAutoRepeat(id, enable);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:447
@@ -2055,6 +2081,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget12mouseGrabberEv() {
   return (void*)QWidget::mouseGrabber();
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:448
 // [8] QWidget * keyboardGrabber()
@@ -2062,6 +2089,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget15keyboardGrabberEv() {
   return (void*)QWidget::keyboardGrabber();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:451
 // [1] bool updatesEnabled()
@@ -2079,12 +2107,15 @@ void C_ZN7QWidget17setUpdatesEnabledEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qwidget.h:455
 // [8] QGraphicsProxyWidget * graphicsProxyWidget()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget19graphicsProxyWidgetEv(void *this_) {
   return (void*)((QWidget*)this_)->graphicsProxyWidget();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:459
@@ -2295,21 +2326,27 @@ void C_ZN7QWidget11setGeometryERK5QRect(void *this_, QRect* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qwidget.h:496
 // [8] QByteArray saveGeometry()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget12saveGeometryEv(void *this_) {
   auto rv = ((QWidget*)this_)->saveGeometry();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qwidget.h:497
 // [1] bool restoreGeometry(const class QByteArray &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QWidget15restoreGeometryERK10QByteArray(void *this_, QByteArray* geometry) {
   return (bool)((QWidget*)this_)->restoreGeometry(*geometry);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:498
@@ -2443,12 +2480,15 @@ int C_ZNK7QWidget14heightForWidthEi(void *this_, int arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qwidget.h:518
 // [1] bool hasHeightForWidth()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QWidget17hasHeightForWidthEv(void *this_) {
   return (bool)((QWidget*)this_)->hasHeightForWidth();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:520
@@ -2468,12 +2508,15 @@ void C_ZN7QWidget18setContentsMarginsEiiii(void *this_, int left, int top, int r
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:523
 // [-2] void setContentsMargins(const class QMargins &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget18setContentsMarginsERK8QMargins(void *this_, QMargins* margins) {
   ((QWidget*)this_)->setContentsMargins(*margins);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:524
@@ -2484,13 +2527,16 @@ void C_ZNK7QWidget18getContentsMarginsEPiS0_S0_S0_(void *this_, int * left, int 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:525
 // [16] QMargins contentsMargins()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget15contentsMarginsEv(void *this_) {
   auto rv = ((QWidget*)this_)->contentsMargins();
 return new QMargins(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:527
@@ -2574,12 +2620,15 @@ void* C_ZNK7QWidget16nextInFocusChainEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:544
 // [8] QWidget * previousInFocusChain()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget20previousInFocusChainEv(void *this_) {
   return (void*)((QWidget*)this_)->previousInFocusChain();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:547
@@ -2646,12 +2695,15 @@ Qt::WindowFlags C_ZNK7QWidget11windowFlagsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtWidgets/qwidget.h:569
 // [-2] void setWindowFlag(Qt::WindowType, _Bool)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setWindowFlagEN2Qt10WindowTypeEb(void *this_, Qt::WindowType arg0, bool on) {
   ((QWidget*)this_)->setWindowFlag(arg0, on);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:570
@@ -2676,6 +2728,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget4findEy(WId arg0) {
   return (void*)QWidget::find(arg0);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:575
 // [8] QWidget * childAt(int, int)
@@ -2749,20 +2802,26 @@ void C_ZN7QWidget21setAutoFillBackgroundEb(void *this_, bool enabled) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qwidget.h:595
 // [8] QBackingStore * backingStore()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget12backingStoreEv(void *this_) {
   return (void*)((QWidget*)this_)->backingStore();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtWidgets/qwidget.h:597
 // [8] QWindow * windowHandle()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget12windowHandleEv(void *this_) {
   return (void*)((QWidget*)this_)->windowHandle();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:599
@@ -2771,21 +2830,28 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE(QWindow * window, QWidget * parent, QFlags<Qt::WindowType> flags) {
   return (void*)QWidget::createWindowContainer(window, parent, flags);
 }
+
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qwidget.h:604
 // [-2] void windowTitleChanged(const class QString &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget18windowTitleChangedERK7QString(void *this_, QString* title) {
   ((QWidget*)this_)->windowTitleChanged(*title);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qwidget.h:605
 // [-2] void windowIconChanged(const class QIcon &)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17windowIconChangedERK5QIcon(void *this_, QIcon* icon) {
   ((QWidget*)this_)->windowIconChanged(*icon);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:606

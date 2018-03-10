@@ -286,21 +286,27 @@ void C_ZN19QAbstractScrollArea18setViewportMarginsEiiii(void *this_, int left, i
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:106
 // [-2] void setViewportMargins(const class QMargins &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins(void *this_, QMargins* margins) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::setViewportMargins(*margins);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Protected Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:107
 // [16] QMargins viewportMargins()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractScrollArea15viewportMarginsEv(void *this_) {
   auto rv = ((QAbstractScrollArea*)this_)->QAbstractScrollArea::viewportMargins();
 return new QMargins(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:109
@@ -439,13 +445,16 @@ void C_ZN19QAbstractScrollArea16scrollContentsByEii(void *this_, int dx, int dy)
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:136
 // [8] QSize viewportSizeHint()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractScrollArea16viewportSizeHintEv(void *this_) {
   auto rv = ((QAbstractScrollArea*)this_)->QAbstractScrollArea::viewportSizeHint();
 return new QSize(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:57
@@ -463,6 +472,7 @@ void* C_ZN19QAbstractScrollAreaC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractScrollArea*)(0);
   return 0; // new MyQAbstractScrollArea(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:65
 // [-2] void ~QAbstractScrollArea()
@@ -495,12 +505,15 @@ void* C_ZNK19QAbstractScrollArea17verticalScrollBarEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:77
 // [-2] void setVerticalScrollBar(class QScrollBar *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea20setVerticalScrollBarEP10QScrollBar(void *this_, QScrollBar * scrollbar) {
   ((QAbstractScrollArea*)this_)->setVerticalScrollBar(scrollbar);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:79
@@ -527,45 +540,60 @@ void* C_ZNK19QAbstractScrollArea19horizontalScrollBarEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:82
 // [-2] void setHorizontalScrollBar(class QScrollBar *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea22setHorizontalScrollBarEP10QScrollBar(void *this_, QScrollBar * scrollbar) {
   ((QAbstractScrollArea*)this_)->setHorizontalScrollBar(scrollbar);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:84
 // [8] QWidget * cornerWidget()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractScrollArea12cornerWidgetEv(void *this_) {
   return (void*)((QAbstractScrollArea*)this_)->cornerWidget();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:85
 // [-2] void setCornerWidget(class QWidget *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea15setCornerWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QAbstractScrollArea*)this_)->setCornerWidget(widget);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:87
 // [-2] void addScrollBarWidget(class QWidget *, Qt::Alignment)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea18addScrollBarWidgetEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * widget, QFlags<Qt::AlignmentFlag> alignment) {
   ((QAbstractScrollArea*)this_)->addScrollBarWidget(widget, alignment);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:88
 // [-2] QWidgetList scrollBarWidgets(Qt::Alignment)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 QWidgetList* C_ZN19QAbstractScrollArea16scrollBarWidgetsE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
   auto rv = ((QAbstractScrollArea*)this_)->scrollBarWidgets(alignment);
 return new QWidgetList(rv);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:90
@@ -576,12 +604,15 @@ void* C_ZNK19QAbstractScrollArea8viewportEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:91
 // [-2] void setViewport(class QWidget *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea11setViewportEP7QWidget(void *this_, QWidget * widget) {
   ((QAbstractScrollArea*)this_)->setViewport(widget);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:92

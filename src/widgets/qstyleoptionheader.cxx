@@ -30,6 +30,7 @@ void* C_ZN18QStyleOptionHeaderC2Ev() {
   return  new QStyleOptionHeader();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStyleOptionHeaderD2Ev(void *this_) {
   delete (QStyleOptionHeader*)(this_);

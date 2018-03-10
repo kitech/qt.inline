@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type_, QPoint* pos, QPoint* globalPos) {
   return  new QHelpEvent(type_, *pos, *globalPos);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:681
 // [-2] void ~QHelpEvent()

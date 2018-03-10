@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QSGNodeC2Ev() {
   return  new QSGNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:131
 // [-2] void ~QSGNode()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -95,6 +96,7 @@ void* C_ZN20QGraphicsEllipseItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsEllipseItem*)(0);
   return  new MyQGraphicsEllipseItem(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:700
 // [-2] void QGraphicsEllipseItem(const class QRectF &, class QGraphicsItem *)
@@ -103,14 +105,19 @@ void* C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGrap
   auto _nilp = (MyQGraphicsEllipseItem*)(0);
   return  new MyQGraphicsEllipseItem(*rect, parent);
 }
+
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:701
 // [-2] void QGraphicsEllipseItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsEllipseItemC2EddddP13QGraphicsItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsEllipseItem*)(0);
   return  new MyQGraphicsEllipseItem(x, y, w, h, parent);
 }
+#endif // QT_VERSION >= 0x040300
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:702
 // [-2] void ~QGraphicsEllipseItem()

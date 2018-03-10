@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QActionEventC2EiP7QActionS1_(int type_, QAction * action, QAction * before) {
   return  new QActionEvent(type_, action, before);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:728
 // [-2] void ~QActionEvent()

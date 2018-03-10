@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qtextboundaryfinder.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderC2Ev() {
   return  new QTextBoundaryFinder();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:56
 // [48] QTextBoundaryFinder & operator=(const class QTextBoundaryFinder &)
@@ -54,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type_, QString* string) {
   return  new QTextBoundaryFinder(type_, *string);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:77
 // [-2] void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
@@ -61,6 +64,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) {
   return  new QTextBoundaryFinder(type_, chars, length, buffer, bufferSize);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:79
 // [1] bool isValid()

@@ -37,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
   return  new QDateEdit(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:221
 // [-2] void QDateEdit(const class QDate &, class QWidget *)
@@ -44,6 +45,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2ERK5QDateP7QWidget(QDate* date, QWidget * parent) {
   return  new QDateEdit(*date, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:222
 // [-2] void ~QDateEdit()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qplaintextedit.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN24QPlainTextDocumentLayoutC2EP13QTextDocument(QTextDocument * document
   auto _nilp = (MyQPlainTextDocumentLayout*)(0);
   return  new MyQPlainTextDocumentLayout(document);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:303
 // [-2] void ~QPlainTextDocumentLayout()

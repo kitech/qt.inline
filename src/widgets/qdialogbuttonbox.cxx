@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h
 #ifndef protected
 #define protected public
@@ -83,6 +84,7 @@ void* C_ZN16QDialogButtonBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQDialogButtonBox*)(0);
   return  new MyQDialogButtonBox(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:121
 // [-2] void QDialogButtonBox(Qt::Orientation, class QWidget *)
@@ -91,6 +93,7 @@ void* C_ZN16QDialogButtonBoxC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orien
   auto _nilp = (MyQDialogButtonBox*)(0);
   return  new MyQDialogButtonBox(orientation, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:122
 // [-2] void QDialogButtonBox(QDialogButtonBox::StandardButtons, class QWidget *)
@@ -99,6 +102,7 @@ void* C_ZN16QDialogButtonBoxC2E6QFlagsINS_14StandardButtonEEP7QWidget(QFlags<QDi
   auto _nilp = (MyQDialogButtonBox*)(0);
   return  new MyQDialogButtonBox(buttons, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:123
 // [-2] void QDialogButtonBox(QDialogButtonBox::StandardButtons, Qt::Orientation, class QWidget *)
@@ -107,6 +111,7 @@ void* C_ZN16QDialogButtonBoxC2E6QFlagsINS_14StandardButtonEEN2Qt11OrientationEP7
   auto _nilp = (MyQDialogButtonBox*)(0);
   return  new MyQDialogButtonBox(buttons, orientation, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:125
 // [-2] void ~QDialogButtonBox()

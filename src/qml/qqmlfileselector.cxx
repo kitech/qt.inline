@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050200
 // /usr/include/qt/QtQml/qqmlfileselector.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlFileSelectorC2EP10QQmlEngineP7QObject(QQmlEngine * engine, QObject * parent) {
   return  new QQmlFileSelector(engine, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfileselector.h:58
 // [-2] void ~QQmlFileSelector()
@@ -43,12 +45,15 @@ void C_ZN16QQmlFileSelectorD2Ev(void *this_) {
   delete (QQmlFileSelector*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtQml/qqmlfileselector.h:59
 // [8] QFileSelector * selector()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QQmlFileSelector8selectorEv(void *this_) {
   return (void*)((QQmlFileSelector*)this_)->selector();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfileselector.h:60
@@ -81,4 +86,5 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlFileSelector3getEP10QQmlEngine(QQmlEngine * arg0) {
   return (void*)QQmlFileSelector::get(arg0);
 }
+
 //  main block end

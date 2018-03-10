@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qabstractstate.h
 #ifndef protected
 #define protected public
@@ -111,11 +112,14 @@ bool C_ZNK14QAbstractState6activeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qabstractstate.h:68
 // [-2] void activeChanged(_Bool)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAbstractState13activeChangedEb(void *this_, bool active) {
   ((QAbstractState*)this_)->activeChanged(active);
 }
+#endif // QT_VERSION >= 0x050400
 
 //  main block end

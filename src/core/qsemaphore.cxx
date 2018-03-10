@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QSemaphoreC2Ei(int n) {
   return  new QSemaphore(n);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:56
 // [-2] void ~QSemaphore()

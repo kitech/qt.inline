@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtCore/qabstractanimation.h
 #ifndef protected
 #define protected public
@@ -112,6 +113,7 @@ void* C_ZN18QAbstractAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractAnimation*)(0);
   return 0; // new MyQAbstractAnimation(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:86
 // [-2] void ~QAbstractAnimation()

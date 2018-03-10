@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleHintReturnVariantC2Ev() {
   return  new QStyleHintReturnVariant();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:734
 // [-2] void ~QStyleHintReturnVariant()

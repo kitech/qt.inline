@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QPictureIOC2Ev() {
   return  new QPictureIO();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:135
 // [-2] void QPictureIO(class QIODevice *, const char *)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QPictureIOC2EP9QIODevicePKc(QIODevice * ioDevice, const char * format) {
   return  new QPictureIO(ioDevice, format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:136
 // [-2] void QPictureIO(const class QString &, const char *)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QPictureIOC2ERK7QStringPKc(QString* fileName, const char * format) {
   return  new QPictureIO(*fileName, format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:137
 // [-2] void ~QPictureIO()
@@ -223,6 +226,7 @@ void* C_ZN10QPictureIO13pictureFormatERK7QString(QString* fileName) {
   auto rv = QPictureIO::pictureFormat(*fileName);
 return new QByteArray(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:163
 // [8] QByteArray pictureFormat(class QIODevice *)
@@ -231,4 +235,5 @@ void* C_ZN10QPictureIO13pictureFormatEP9QIODevice(QIODevice * arg0) {
   auto rv = QPictureIO::pictureFormat(arg0);
 return new QByteArray(rv);
 }
+
 //  main block end

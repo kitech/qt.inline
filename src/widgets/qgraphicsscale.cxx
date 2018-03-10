@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QGraphicsScaleC2EP7QObject(QObject * parent) {
   return  new QGraphicsScale(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:89
 // [-2] void ~QGraphicsScale()
@@ -124,28 +126,37 @@ void C_ZN14QGraphicsScale13originChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:107
 // [-2] void xScaleChanged()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QGraphicsScale13xScaleChangedEv(void *this_) {
   ((QGraphicsScale*)this_)->xScaleChanged();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:108
 // [-2] void yScaleChanged()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QGraphicsScale13yScaleChangedEv(void *this_) {
   ((QGraphicsScale*)this_)->yScaleChanged();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:109
 // [-2] void zScaleChanged()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QGraphicsScale13zScaleChangedEv(void *this_) {
   ((QGraphicsScale*)this_)->zScaleChanged();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:110

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicswidget.h
 #ifndef protected
 #define protected public
@@ -388,12 +389,15 @@ bool C_ZN15QGraphicsWidget16windowFrameEventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:197
 // [4] Qt::WindowFrameSection windowFrameSectionAt(const class QPointF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 Qt::WindowFrameSection C_ZNK15QGraphicsWidget20windowFrameSectionAtERK7QPointF(void *this_, QPointF* pos) {
   return (Qt::WindowFrameSection)((QGraphicsWidget*)this_)->QGraphicsWidget::windowFrameSectionAt(*pos);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:200
@@ -547,6 +551,7 @@ void* C_ZN15QGraphicsWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphi
   auto _nilp = (MyQGraphicsWidget*)(0);
   return  new MyQGraphicsWidget(parent, wFlags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:84
 // [-2] void ~QGraphicsWidget()
@@ -848,6 +853,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget11setTabOrderEPS_S0_(QGraphicsWidget * first, QGraphicsWidget * second) {
   QGraphicsWidget::setTabOrder(first, second);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:134
 // [8] QGraphicsWidget * focusWidget()
@@ -857,60 +863,81 @@ void* C_ZNK15QGraphicsWidget11focusWidgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:137
 // [4] int grabShortcut(const class QKeySequence &, Qt::ShortcutContext)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZN15QGraphicsWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE(void *this_, QKeySequence* sequence, Qt::ShortcutContext context) {
   return (int)((QGraphicsWidget*)this_)->grabShortcut(*sequence, context);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:138
 // [-2] void releaseShortcut(int)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget15releaseShortcutEi(void *this_, int id) {
   ((QGraphicsWidget*)this_)->releaseShortcut(id);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:139
 // [-2] void setShortcutEnabled(int, _Bool)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget18setShortcutEnabledEib(void *this_, int id, bool enabled) {
   ((QGraphicsWidget*)this_)->setShortcutEnabled(id, enabled);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:140
 // [-2] void setShortcutAutoRepeat(int, _Bool)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget21setShortcutAutoRepeatEib(void *this_, int id, bool enabled) {
   ((QGraphicsWidget*)this_)->setShortcutAutoRepeat(id, enabled);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:145
 // [-2] void addAction(class QAction *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget9addActionEP7QAction(void *this_, QAction * action) {
   ((QGraphicsWidget*)this_)->addAction(action);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:153
 // [-2] void insertAction(class QAction *, class QAction *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget12insertActionEP7QActionS1_(void *this_, QAction * before, QAction * action) {
   ((QGraphicsWidget*)this_)->insertAction(before, action);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:154
 // [-2] void removeAction(class QAction *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget12removeActionEP7QAction(void *this_, QAction * action) {
   ((QGraphicsWidget*)this_)->removeAction(action);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:158

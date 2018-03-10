@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QLineFC2Ev() {
   return  new QLineF();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:220
 // [-2] void QLineF(const class QPointF &, const class QPointF &)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QLineFC2ERK7QPointFS2_(QPointF* pt1, QPointF* pt2) {
   return  new QLineF(*pt1, *pt2);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:221
 // [-2] void QLineF(qreal, qreal, qreal, qreal)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QLineFC2Edddd(qreal x1, qreal y1, qreal x2, qreal y2) {
   return  new QLineF(x1, y1, x2, y2);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:222
 // [-2] void QLineF(const class QLine &)
@@ -54,14 +57,19 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QLineFC2ERK5QLine(QLine* line) {
   return  new QLineF(*line);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:224
 // [32] QLineF fromPolar(qreal, qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QLineF9fromPolarEdd(qreal length, qreal angle) {
   auto rv = QLineF::fromPolar(length, angle);
 return new QLineF(rv);
 }
+#endif // QT_VERSION >= 0x040400
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:226
 // [1] bool isNull()
@@ -153,28 +161,37 @@ void C_ZN6QLineF9setLengthEd(void *this_, qreal len_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:243
 // [8] qreal angle()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK6QLineF5angleEv(void *this_) {
   return (qreal)((QLineF*)this_)->angle();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:244
 // [-2] void setAngle(qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLineF8setAngleEd(void *this_, qreal angle) {
   ((QLineF*)this_)->setAngle(angle);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:246
 // [8] qreal angleTo(const class QLineF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK6QLineF7angleToERKS_(void *this_, QLineF* l) {
   return (qreal)((QLineF*)this_)->angleTo(*l);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:248
@@ -236,63 +253,84 @@ void C_ZN6QLineF9translateEdd(void *this_, qreal dx, qreal dy) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:260
 // [32] QLineF translated(const class QPointF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QLineF10translatedERK7QPointF(void *this_, QPointF* p) {
   auto rv = ((QLineF*)this_)->translated(*p);
 return new QLineF(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:261
 // [32] QLineF translated(qreal, qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QLineF10translatedEdd(void *this_, qreal dx, qreal dy) {
   auto rv = ((QLineF*)this_)->translated(dx, dy);
 return new QLineF(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qline.h:263
 // [16] QPointF center()
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QLineF6centerEv(void *this_) {
   auto rv = ((QLineF*)this_)->center();
 return new QPointF(rv);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:265
 // [-2] void setP1(const class QPointF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLineF5setP1ERK7QPointF(void *this_, QPointF* p1) {
   ((QLineF*)this_)->setP1(*p1);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:266
 // [-2] void setP2(const class QPointF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLineF5setP2ERK7QPointF(void *this_, QPointF* p2) {
   ((QLineF*)this_)->setP2(*p2);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:267
 // [-2] void setPoints(const class QPointF &, const class QPointF &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLineF9setPointsERK7QPointFS2_(void *this_, QPointF* p1, QPointF* p2) {
   ((QLineF*)this_)->setPoints(*p1, *p2);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qline.h:268
 // [-2] void setLine(qreal, qreal, qreal, qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLineF7setLineEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
   ((QLineF*)this_)->setLine(x1, y1, x2, y2);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:270

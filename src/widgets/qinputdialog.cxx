@@ -29,13 +29,18 @@ void* C_ZNK12QInputDialog10metaObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:94
 // [-2] void QInputDialog(class QWidget *, Qt::WindowFlags)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
   return  new QInputDialog(parent, flags);
 }
+#endif // QT_VERSION >= 0x040500
+
 // Public virtual Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:95
 // [-2] void ~QInputDialog()
 extern "C" Q_DECL_EXPORT
@@ -353,12 +358,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:155
 // [-2] void open(class QObject *, const char *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
   ((QInputDialog*)this_)->open(receiver, member);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:157
@@ -394,14 +402,19 @@ void* C_ZN12QInputDialog7getTextEP7QWidgetRK7QStringS4_N9QLineEdit8EchoModeES4_P
   auto rv = QInputDialog::getText(parent, *title, *label, echo, *text, ok, flags, inputMethodHints);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qinputdialog.h:167
 // [8] QString getMultiLineText(class QWidget *, const class QString &, const class QString &, const class QString &, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog16getMultiLineTextEP7QWidgetRK7QStringS4_S4_Pb6QFlagsIN2Qt10WindowTypeEES6_INS7_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QString* text, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
   auto rv = QInputDialog::getMultiLineText(parent, *title, *label, *text, ok, flags, inputMethodHints);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050200
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:171
 // [8] QString getItem(class QWidget *, const class QString &, const class QString &, const class QStringList &, int, _Bool, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
@@ -410,13 +423,18 @@ void* C_ZN12QInputDialog7getItemEP7QWidgetRK7QStringS4_RK11QStringListibPb6QFlag
   auto rv = QInputDialog::getItem(parent, *title, *label, *items, current, editable, ok, flags, inputMethodHints);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:176
 // [4] int getInt(class QWidget *, const class QString &, const class QString &, int, int, int, int, _Bool *, Qt::WindowFlags)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZN12QInputDialog6getIntEP7QWidgetRK7QStringS4_iiiiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QString* title, QString* label, int value, int minValue, int maxValue, int step, bool * ok, QFlags<Qt::WindowType> flags) {
   return (int)QInputDialog::getInt(parent, *title, *label, value, minValue, maxValue, step, ok, flags);
 }
+#endif // QT_VERSION >= 0x040500
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:179
 // [8] double getDouble(class QWidget *, const class QString &, const class QString &, double, double, double, int, _Bool *, Qt::WindowFlags)
@@ -424,6 +442,7 @@ extern "C" Q_DECL_EXPORT
 double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags) {
   return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:183
 // [8] double getDouble(class QWidget *, const class QString &, const class QString &, double, double, double, int, _Bool *, Qt::WindowFlags, double)
@@ -431,6 +450,7 @@ extern "C" Q_DECL_EXPORT
 double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEEd(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags, double step) {
   return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags, step);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:196
 // [-2] void setDoubleStep(double)

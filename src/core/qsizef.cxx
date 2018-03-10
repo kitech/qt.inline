@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QSizeFC2Ev() {
   return  new QSizeF();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:219
 // [-2] void QSizeF(const class QSize &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QSizeFC2ERK5QSize(QSize* sz) {
   return  new QSizeF(*sz);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:220
 // [-2] void QSizeF(qreal, qreal)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QSizeFC2Edd(qreal w, qreal h) {
   return  new QSizeF(w, h);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:222
 // [1] bool isNull()
@@ -110,13 +113,16 @@ void C_ZN6QSizeF9transposeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qsize.h:231
 // [16] QSizeF transposed()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QSizeF10transposedEv(void *this_) {
   auto rv = ((QSizeF*)this_)->transposed();
 return new QSizeF(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:233
@@ -135,22 +141,28 @@ void C_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::As
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qsize.h:235
 // [16] QSizeF scaled(qreal, qreal, Qt::AspectRatioMode)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QSizeF6scaledEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Qt::AspectRatioMode mode) {
   auto rv = ((QSizeF*)this_)->scaled(w, h, mode);
 return new QSizeF(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qsize.h:236
 // [16] QSizeF scaled(const class QSizeF &, Qt::AspectRatioMode)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
   auto rv = ((QSizeF*)this_)->scaled(*s, mode);
 return new QSizeF(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:238

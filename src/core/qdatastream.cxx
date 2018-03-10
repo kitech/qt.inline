@@ -33,6 +33,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2Ev() {
   return  new QDataStream();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:124
 // [-2] void QDataStream(class QIODevice *)
@@ -40,6 +41,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg0) {
   return  new QDataStream(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:125
 // [-2] void QDataStream(class QByteArray *, class QIODevice::OpenMode)
@@ -47,6 +49,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) {
   return  new QDataStream(arg0, flags);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:126
 // [-2] void QDataStream(const class QByteArray &)
@@ -54,6 +57,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2ERK10QByteArray(QByteArray* arg0) {
   return  new QDataStream(*arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:127
 // [-2] void ~QDataStream()
@@ -118,12 +122,15 @@ void C_ZN11QDataStream11resetStatusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qdatastream.h:139
 // [4] QDataStream::FloatingPointPrecision floatingPointPrecision()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 QDataStream::FloatingPointPrecision C_ZNK11QDataStream22floatingPointPrecisionEv(void *this_) {
   return (QDataStream::FloatingPointPrecision)((QDataStream*)this_)->floatingPointPrecision();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:140
@@ -398,43 +405,58 @@ int C_ZN11QDataStream12writeRawDataEPKci(void *this_, const char * arg0, int len
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qdatastream.h:185
 // [4] int skipRawData(int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZN11QDataStream11skipRawDataEi(void *this_, int len_) {
   return (int)((QDataStream*)this_)->skipRawData(len_);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qdatastream.h:187
 // [-2] void startTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream16startTransactionEv(void *this_) {
   ((QDataStream*)this_)->startTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qdatastream.h:188
 // [1] bool commitTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QDataStream17commitTransactionEv(void *this_) {
   return (bool)((QDataStream*)this_)->commitTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qdatastream.h:189
 // [-2] void rollbackTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream19rollbackTransactionEv(void *this_) {
   ((QDataStream*)this_)->rollbackTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
+// since 5.7
 // /usr/include/qt/QtCore/qdatastream.h:190
 // [-2] void abortTransaction()
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream16abortTransactionEv(void *this_) {
   ((QDataStream*)this_)->abortTransaction();
 }
+#endif // QT_VERSION >= 0x050700
 
 //  main block end

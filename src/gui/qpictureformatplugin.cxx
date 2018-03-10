@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QPictureFormatPluginC2EP7QObject(QObject * parent) {
   return 0; // new QPictureFormatPlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpictureformatplugin.h:64
 // [-2] void ~QPictureFormatPlugin()

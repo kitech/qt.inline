@@ -58,6 +58,7 @@ void* C_ZN11QGridLayoutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQGridLayout*)(0);
   return  new MyQGridLayout(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:65
 // [-2] void QGridLayout()
@@ -66,6 +67,7 @@ void* C_ZN11QGridLayoutC2Ev() {
   auto _nilp = (MyQGridLayout*)(0);
   return  new MyQGridLayout();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:67
 // [-2] void ~QGridLayout()
@@ -342,12 +344,15 @@ void* C_ZNK11QGridLayout6itemAtEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgridlayout.h:112
 // [8] QLayoutItem * itemAtPosition(int, int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QGridLayout14itemAtPositionEii(void *this_, int row, int column) {
   return (void*)((QGridLayout*)this_)->itemAtPosition(row, column);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:113

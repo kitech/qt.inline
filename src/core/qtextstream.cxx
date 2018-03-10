@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2Ev() {
   return  new QTextStream();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:94
 // [-2] void QTextStream(class QIODevice *)
@@ -42,6 +43,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP9QIODevice(QIODevice * device) {
   return  new QTextStream(device);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:96
 // [-2] void QTextStream(class QString *, class QIODevice::OpenMode)
@@ -49,6 +51,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) {
   return  new QTextStream(string, openMode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:97
 // [-2] void QTextStream(class QByteArray *, class QIODevice::OpenMode)
@@ -56,6 +59,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) {
   return  new QTextStream(array, openMode);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:98
 // [-2] void QTextStream(const class QByteArray &, class QIODevice::OpenMode)
@@ -63,6 +67,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2ERK10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray* array, QFlags<QIODevice::OpenModeFlag> openMode) {
   return  new QTextStream(*array, openMode);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:99
 // [-2] void ~QTextStream()
@@ -127,21 +132,27 @@ bool C_ZNK11QTextStream21generateByteOrderMarkEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qtextstream.h:111
 // [-2] void setLocale(const class QLocale &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream9setLocaleERK7QLocale(void *this_, QLocale* locale) {
   ((QTextStream*)this_)->setLocale(*locale);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qtextstream.h:112
 // [8] QLocale locale()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextStream6localeEv(void *this_) {
   auto rv = ((QTextStream*)this_)->locale();
 return new QLocale(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:114
@@ -192,12 +203,15 @@ void C_ZN11QTextStream9setStatusENS_6StatusE(void *this_, QTextStream::Status st
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qtextstream.h:122
 // [-2] void resetStatus()
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream11resetStatusEv(void *this_) {
   ((QTextStream*)this_)->resetStatus();
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:124
@@ -232,12 +246,15 @@ bool C_ZN11QTextStream4seekEx(void *this_, qint64 pos) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qtextstream.h:128
 // [8] qint64 pos()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK11QTextStream3posEv(void *this_) {
   return (qint64)((QTextStream*)this_)->pos();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:130
@@ -257,12 +274,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qtextstream.h:133
 // [1] bool readLineInto(class QString *, qint64)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QTextStream12readLineIntoEP7QStringx(void *this_, QString * line, qint64 maxlen) {
   return (bool)((QTextStream*)this_)->readLineInto(line, maxlen);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:134
@@ -274,13 +294,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qtextstream.h:135
 // [8] QString read(qint64)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStream4readEx(void *this_, qint64 maxlen) {
   auto rv = ((QTextStream*)this_)->read(maxlen);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:137

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050100
 // /usr/include/qt/QtGui/qvalidator.h
 #ifndef protected
 #define protected public
@@ -37,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
   return  new QRegularExpressionValidator(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:208
 // [-2] void QRegularExpressionValidator(const class QRegularExpression &, class QObject *)
@@ -44,6 +46,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(QRegularExpression* re, QObject * parent) {
   return  new QRegularExpressionValidator(*re, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:209
 // [-2] void ~QRegularExpressionValidator()

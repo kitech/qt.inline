@@ -161,6 +161,7 @@ void* C_ZN11QMessageBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQMessageBox*)(0);
   return  new MyQMessageBox(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:136
 // [-2] void QMessageBox(enum QMessageBox::Icon, const class QString &, const class QString &, QMessageBox::StandardButtons, class QWidget *, Qt::WindowFlags)
@@ -169,6 +170,7 @@ void* C_ZN11QMessageBoxC2ENS_4IconERK7QStringS3_6QFlagsINS_14StandardButtonEEP7Q
   auto _nilp = (MyQMessageBox*)(0);
   return  new MyQMessageBox(icon, *title, *text, buttons, parent, flags);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:139
 // [-2] void ~QMessageBox()
@@ -201,12 +203,15 @@ void* C_ZN11QMessageBox9addButtonENS_14StandardButtonE(void *this_, QMessageBox:
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:144
 // [-2] void removeButton(class QAbstractButton *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox12removeButtonEP15QAbstractButton(void *this_, QAbstractButton * button) {
   ((QMessageBox*)this_)->removeButton(button);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:147
@@ -217,12 +222,15 @@ void C_ZN11QMessageBox4openEP7QObjectPKc(void *this_, QObject * receiver, const 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qmessagebox.h:150
 // [4] QMessageBox::ButtonRole buttonRole(class QAbstractButton *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 QMessageBox::ButtonRole C_ZNK11QMessageBox10buttonRoleEP15QAbstractButton(void *this_, QAbstractButton * button) {
   return (QMessageBox::ButtonRole)((QMessageBox*)this_)->buttonRole(button);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:152
@@ -242,12 +250,15 @@ return new QMessageBox::StandardButtons(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:154
 // [4] QMessageBox::StandardButton standardButton(class QAbstractButton *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 QMessageBox::StandardButton C_ZNK11QMessageBox14standardButtonEP15QAbstractButton(void *this_, QAbstractButton * button) {
   return (QMessageBox::StandardButton)((QMessageBox*)this_)->standardButton(button);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:155
@@ -258,20 +269,26 @@ void* C_ZNK11QMessageBox6buttonENS_14StandardButtonE(void *this_, QMessageBox::S
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:157
 // [8] QPushButton * defaultButton()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMessageBox13defaultButtonEv(void *this_) {
   return (void*)((QMessageBox*)this_)->defaultButton();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:158
 // [-2] void setDefaultButton(class QPushButton *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox16setDefaultButtonEP11QPushButton(void *this_, QPushButton * button) {
   ((QMessageBox*)this_)->setDefaultButton(button);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:159
@@ -282,20 +299,26 @@ void C_ZN11QMessageBox16setDefaultButtonENS_14StandardButtonE(void *this_, QMess
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:161
 // [8] QAbstractButton * escapeButton()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMessageBox12escapeButtonEv(void *this_) {
   return (void*)((QMessageBox*)this_)->escapeButton();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:162
 // [-2] void setEscapeButton(class QAbstractButton *)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox15setEscapeButtonEP15QAbstractButton(void *this_, QAbstractButton * button) {
   ((QMessageBox*)this_)->setEscapeButton(button);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:163
@@ -306,12 +329,15 @@ void C_ZN11QMessageBox15setEscapeButtonENS_14StandardButtonE(void *this_, QMessa
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:165
 // [8] QAbstractButton * clickedButton()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMessageBox13clickedButtonEv(void *this_) {
   return (void*)((QMessageBox*)this_)->clickedButton();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:167
@@ -396,20 +422,26 @@ Qt::TextInteractionFlags C_ZNK11QMessageBox20textInteractionFlagsEv(void *this_)
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:182
 // [-2] void setCheckBox(class QCheckBox *)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox11setCheckBoxEP9QCheckBox(void *this_, QCheckBox * cb) {
   ((QMessageBox*)this_)->setCheckBox(cb);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:183
 // [8] QCheckBox * checkBox()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMessageBox8checkBoxEv(void *this_) {
   return (void*)((QMessageBox*)this_)->checkBox();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:185
@@ -418,6 +450,7 @@ extern "C" Q_DECL_EXPORT
 QMessageBox::StandardButton C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
   return (QMessageBox::StandardButton)QMessageBox::information(parent, *title, *text, buttons, defaultButton);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:188
 // [4] QMessageBox::StandardButton question(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
@@ -425,6 +458,7 @@ extern "C" Q_DECL_EXPORT
 QMessageBox::StandardButton C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
   return (QMessageBox::StandardButton)QMessageBox::question(parent, *title, *text, buttons, defaultButton);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:191
 // [4] QMessageBox::StandardButton warning(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
@@ -432,6 +466,7 @@ extern "C" Q_DECL_EXPORT
 QMessageBox::StandardButton C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
   return (QMessageBox::StandardButton)QMessageBox::warning(parent, *title, *text, buttons, defaultButton);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:194
 // [4] QMessageBox::StandardButton critical(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
@@ -439,6 +474,7 @@ extern "C" Q_DECL_EXPORT
 QMessageBox::StandardButton C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
   return (QMessageBox::StandardButton)QMessageBox::critical(parent, *title, *text, buttons, defaultButton);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:197
 // [-2] void about(class QWidget *, const class QString &, const class QString &)
@@ -446,6 +482,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox5aboutEP7QWidgetRK7QStringS4_(QWidget * parent, QString* title, QString* text) {
   QMessageBox::about(parent, *title, *text);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:198
 // [-2] void aboutQt(class QWidget *, const class QString &)
@@ -453,6 +490,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox7aboutQtEP7QWidgetRK7QString(QWidget * parent, QString* title) {
   QMessageBox::aboutQt(parent, *title);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:202
 // [-2] void QMessageBox(const class QString &, const class QString &, enum QMessageBox::Icon, int, int, int, class QWidget *, Qt::WindowFlags)
@@ -461,6 +499,7 @@ void* C_ZN11QMessageBoxC2ERK7QStringS2_NS_4IconEiiiP7QWidget6QFlagsIN2Qt10Window
   auto _nilp = (MyQMessageBox*)(0);
   return  new MyQMessageBox(*title, *text, icon, button0, button1, button2, parent, f);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:207
 // [4] int information(class QWidget *, const class QString &, const class QString &, int, int, int)
@@ -468,6 +507,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
   return (int)QMessageBox::information(parent, *title, *text, button0, button1, button2);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:210
 // [4] int information(class QWidget *, const class QString &, const class QString &, const class QString &, const class QString &, const class QString &, int, int)
@@ -475,6 +515,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
   return (int)QMessageBox::information(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:217
 // [4] QMessageBox::StandardButton information(class QWidget *, const class QString &, const class QString &, enum QMessageBox::StandardButton, enum QMessageBox::StandardButton)
@@ -482,6 +523,7 @@ extern "C" Q_DECL_EXPORT
 QMessageBox::StandardButton C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
   return (QMessageBox::StandardButton)QMessageBox::information(parent, *title, *text, button0, button1);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:222
 // [4] int question(class QWidget *, const class QString &, const class QString &, int, int, int)
@@ -489,6 +531,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
   return (int)QMessageBox::question(parent, *title, *text, button0, button1, button2);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:225
 // [4] int question(class QWidget *, const class QString &, const class QString &, const class QString &, const class QString &, const class QString &, int, int)
@@ -496,6 +539,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
   return (int)QMessageBox::question(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:232
 // [4] int question(class QWidget *, const class QString &, const class QString &, enum QMessageBox::StandardButton, enum QMessageBox::StandardButton)
@@ -503,6 +547,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
   return (int)QMessageBox::question(parent, *title, *text, button0, button1);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:237
 // [4] int warning(class QWidget *, const class QString &, const class QString &, int, int, int)
@@ -510,6 +555,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
   return (int)QMessageBox::warning(parent, *title, *text, button0, button1, button2);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:240
 // [4] int warning(class QWidget *, const class QString &, const class QString &, const class QString &, const class QString &, const class QString &, int, int)
@@ -517,6 +563,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
   return (int)QMessageBox::warning(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:247
 // [4] int warning(class QWidget *, const class QString &, const class QString &, enum QMessageBox::StandardButton, enum QMessageBox::StandardButton)
@@ -524,6 +571,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
   return (int)QMessageBox::warning(parent, *title, *text, button0, button1);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:252
 // [4] int critical(class QWidget *, const class QString &, const class QString &, int, int, int)
@@ -531,6 +579,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
   return (int)QMessageBox::critical(parent, *title, *text, button0, button1, button2);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:255
 // [4] int critical(class QWidget *, const class QString &, const class QString &, const class QString &, const class QString &, const class QString &, int, int)
@@ -538,6 +587,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
   return (int)QMessageBox::critical(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:262
 // [4] int critical(class QWidget *, const class QString &, const class QString &, enum QMessageBox::StandardButton, enum QMessageBox::StandardButton)
@@ -545,6 +595,7 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
   return (int)QMessageBox::critical(parent, *title, *text, button0, button1);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:267
 // [8] QString buttonText(int)
@@ -597,20 +648,26 @@ void C_ZN11QMessageBox15setDetailedTextERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:278
 // [-2] void setWindowTitle(const class QString &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox14setWindowTitleERK7QString(void *this_, QString* title) {
   ((QMessageBox*)this_)->setWindowTitle(*title);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qmessagebox.h:279
 // [-2] void setWindowModality(Qt::WindowModality)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMessageBox17setWindowModalityEN2Qt14WindowModalityE(void *this_, Qt::WindowModality windowModality) {
   ((QMessageBox*)this_)->setWindowModality(windowModality);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:282
@@ -620,6 +677,7 @@ void* C_ZN11QMessageBox12standardIconENS_4IconE(QMessageBox::Icon icon) {
   auto rv = QMessageBox::standardIcon(icon);
 return new QPixmap(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:285
 // [-2] void buttonClicked(class QAbstractButton *)

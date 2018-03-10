@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtCore/qtimeline.h
 #ifndef protected
 #define protected public
@@ -56,6 +57,7 @@ void* C_ZN9QTimeLineC2EiP7QObject(int duration, QObject * parent) {
   auto _nilp = (MyQTimeLine*)(0);
   return  new MyQTimeLine(duration, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:80
 // [-2] void ~QTimeLine()

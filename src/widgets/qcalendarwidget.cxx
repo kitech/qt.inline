@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qcalendarwidget.h
 #ifndef protected
 #define protected public
@@ -167,20 +168,26 @@ void C_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void *this_, QP
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:148
 // [-2] void updateCell(const class QDate &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget10updateCellERK5QDate(void *this_, QDate* date) {
   ((QCalendarWidget*)this_)->QCalendarWidget::updateCell(*date);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Protected Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:149
 // [-2] void updateCells()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget11updateCellsEv(void *this_) {
   ((QCalendarWidget*)this_)->QCalendarWidget::updateCells();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:57
@@ -198,6 +205,7 @@ void* C_ZN15QCalendarWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCalendarWidget*)(0);
   return  new MyQCalendarWidget(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:93
 // [-2] void ~QCalendarWidget()

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -35,6 +36,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2Ev() {
   return  new QXmlStreamReader();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:361
 // [-2] void QXmlStreamReader(class QIODevice *)
@@ -42,6 +44,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2EP9QIODevice(QIODevice * device) {
   return  new QXmlStreamReader(device);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:362
 // [-2] void QXmlStreamReader(const class QByteArray &)
@@ -49,6 +52,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2ERK10QByteArray(QByteArray* data) {
   return  new QXmlStreamReader(*data);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:363
 // [-2] void QXmlStreamReader(const class QString &)
@@ -56,6 +60,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2ERK7QString(QString* data) {
   return  new QXmlStreamReader(*data);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:364
 // [-2] void QXmlStreamReader(const char *)
@@ -63,6 +68,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2EPKc(const char * data) {
   return  new QXmlStreamReader(data);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:365
 // [-2] void ~QXmlStreamReader()
@@ -135,20 +141,26 @@ QXmlStreamReader::TokenType C_ZN16QXmlStreamReader8readNextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qxmlstream.h:378
 // [1] bool readNextStartElement()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QXmlStreamReader20readNextStartElementEv(void *this_) {
   return (bool)((QXmlStreamReader*)this_)->readNextStartElement();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qxmlstream.h:379
 // [-2] void skipCurrentElement()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader18skipCurrentElementEv(void *this_) {
   ((QXmlStreamReader*)this_)->skipCurrentElement();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:381
@@ -280,22 +292,28 @@ bool C_ZNK16QXmlStreamReader20isStandaloneDocumentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:400
 // [16] QStringRef documentVersion()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader15documentVersionEv(void *this_) {
   auto rv = ((QXmlStreamReader*)this_)->documentVersion();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:401
 // [16] QStringRef documentEncoding()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader16documentEncodingEv(void *this_) {
   auto rv = ((QXmlStreamReader*)this_)->documentEncoding();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:403
@@ -367,13 +385,16 @@ return new QStringRef(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:419
 // [16] QStringRef prefix()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader6prefixEv(void *this_) {
   auto rv = ((QXmlStreamReader*)this_)->prefix();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:421
@@ -403,39 +424,51 @@ return new QStringRef(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:427
 // [-2] void addExtraNamespaceDeclaration(const class QXmlStreamNamespaceDeclaration &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespaceDeclaration(void *this_, QXmlStreamNamespaceDeclaration* extraNamespaceDeclaraction) {
   ((QXmlStreamReader*)this_)->addExtraNamespaceDeclaration(*extraNamespaceDeclaraction);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:431
 // [16] QStringRef dtdName()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader7dtdNameEv(void *this_) {
   auto rv = ((QXmlStreamReader*)this_)->dtdName();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:432
 // [16] QStringRef dtdPublicId()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader11dtdPublicIdEv(void *this_) {
   auto rv = ((QXmlStreamReader*)this_)->dtdPublicId();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:433
 // [16] QStringRef dtdSystemId()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader11dtdSystemIdEv(void *this_) {
   auto rv = ((QXmlStreamReader*)this_)->dtdSystemId();
 return new QStringRef(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:443
@@ -471,19 +504,25 @@ bool C_ZNK16QXmlStreamReader8hasErrorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:452
 // [-2] void setEntityResolver(class QXmlStreamEntityResolver *)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader17setEntityResolverEP24QXmlStreamEntityResolver(void *this_, QXmlStreamEntityResolver * resolver) {
   ((QXmlStreamReader*)this_)->setEntityResolver(resolver);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:453
 // [8] QXmlStreamEntityResolver * entityResolver()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QXmlStreamReader14entityResolverEv(void *this_) {
   return (void*)((QXmlStreamReader*)this_)->entityResolver();
 }
+#endif // QT_VERSION >= 0x040400
 
 //  main block end

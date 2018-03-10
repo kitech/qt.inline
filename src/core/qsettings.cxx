@@ -65,6 +65,7 @@ void* C_ZN9QSettingsC2ERK7QStringS2_P7QObject(QString* organization, QString* ap
   auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(*organization, *application, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:129
 // [-2] void QSettings(enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
@@ -73,6 +74,7 @@ void* C_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope scope, 
   auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(scope, *organization, *application, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:131
 // [-2] void QSettings(enum QSettings::Format, enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
@@ -81,6 +83,7 @@ void* C_ZN9QSettingsC2ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Fo
   auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(format, scope, *organization, *application, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:133
 // [-2] void QSettings(const class QString &, enum QSettings::Format, class QObject *)
@@ -89,6 +92,7 @@ void* C_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject(QString* fileName, QSettin
   auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(*fileName, format, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:134
 // [-2] void QSettings(class QObject *)
@@ -97,6 +101,7 @@ void* C_ZN9QSettingsC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:144
 // [-2] void ~QSettings()
@@ -129,20 +134,26 @@ QSettings::Status C_ZNK9QSettings6statusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qsettings.h:149
 // [1] bool isAtomicSyncRequired()
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSettings20isAtomicSyncRequiredEv(void *this_) {
   return (bool)((QSettings*)this_)->isAtomicSyncRequired();
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qsettings.h:150
 // [-2] void setAtomicSyncRequired(_Bool)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings21setAtomicSyncRequiredEb(void *this_, bool enable) {
   ((QSettings*)this_)->setAtomicSyncRequired(enable);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:152
@@ -295,62 +306,83 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qsettings.h:176
 // [4] QSettings::Format format()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QSettings::Format C_ZNK9QSettings6formatEv(void *this_) {
   return (QSettings::Format)((QSettings*)this_)->format();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qsettings.h:177
 // [4] QSettings::Scope scope()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QSettings::Scope C_ZNK9QSettings5scopeEv(void *this_) {
   return (QSettings::Scope)((QSettings*)this_)->scope();
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qsettings.h:178
 // [8] QString organizationName()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings16organizationNameEv(void *this_) {
   auto rv = ((QSettings*)this_)->organizationName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qsettings.h:179
 // [8] QString applicationName()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings15applicationNameEv(void *this_) {
   auto rv = ((QSettings*)this_)->applicationName();
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qsettings.h:182
 // [-2] void setIniCodec(class QTextCodec *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings11setIniCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
   ((QSettings*)this_)->setIniCodec(codec);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qsettings.h:183
 // [-2] void setIniCodec(const char *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings11setIniCodecEPKc(void *this_, const char * codecName) {
   ((QSettings*)this_)->setIniCodec(codecName);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qsettings.h:184
 // [8] QTextCodec * iniCodec()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings8iniCodecEv(void *this_) {
   return (void*)((QSettings*)this_)->iniCodec();
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:187
@@ -359,13 +391,18 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format format) {
   QSettings::setDefaultFormat(format);
 }
+
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qsettings.h:188
 // [4] QSettings::Format defaultFormat()
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 QSettings::Format C_ZN9QSettings13defaultFormatEv() {
   return (QSettings::Format)QSettings::defaultFormat();
 }
+#endif // QT_VERSION >= 0x040400
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:189
 // [-2] void setSystemIniPath(const class QString &)
@@ -373,6 +410,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setSystemIniPathERK7QString(QString* dir) {
   QSettings::setSystemIniPath(*dir);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:190
 // [-2] void setUserIniPath(const class QString &)
@@ -380,6 +418,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
   QSettings::setUserIniPath(*dir);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:191
 // [-2] void setPath(enum QSettings::Format, enum QSettings::Scope, const class QString &)
@@ -387,4 +426,5 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, QString* path) {
   QSettings::setPath(format, scope, *path);
 }
+
 //  main block end

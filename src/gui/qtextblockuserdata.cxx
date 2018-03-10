@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040100
 // /usr/include/qt/QtGui/qtextobject.h
 #ifndef protected
 #define protected public

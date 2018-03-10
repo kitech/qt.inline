@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QTimerEventC2Ei(int timerId) {
   return  new QTimerEvent(timerId);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:341
 // [-2] void ~QTimerEvent()

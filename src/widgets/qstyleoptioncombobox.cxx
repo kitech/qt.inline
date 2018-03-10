@@ -30,6 +30,7 @@ void* C_ZN20QStyleOptionComboBoxC2Ev() {
   return  new QStyleOptionComboBox();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN20QStyleOptionComboBoxD2Ev(void *this_) {
   delete (QStyleOptionComboBox*)(this_);

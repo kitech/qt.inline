@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QXmlStreamAttributesC2Ev() {
   return  new QXmlStreamAttributes();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:165
 // [16] QStringRef value(const class QString &, const class QString &)
@@ -73,28 +75,37 @@ return new QStringRef(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qxmlstream.h:173
 // [1] bool hasAttribute(const class QString &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QXmlStreamAttributes12hasAttributeERK7QString(void *this_, QString* qualifiedName) {
   return (bool)((QXmlStreamAttributes*)this_)->hasAttribute(*qualifiedName);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qxmlstream.h:178
 // [1] bool hasAttribute(class QLatin1String)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QXmlStreamAttributes12hasAttributeE13QLatin1String(void *this_, QLatin1String* qualifiedName) {
   return (bool)((QXmlStreamAttributes*)this_)->hasAttribute(*qualifiedName);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qxmlstream.h:183
 // [1] bool hasAttribute(const class QString &, const class QString &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QXmlStreamAttributes12hasAttributeERK7QStringS2_(void *this_, QString* namespaceUri, QString* name) {
   return (bool)((QXmlStreamAttributes*)this_)->hasAttribute(*namespaceUri, *name);
 }
+#endif // QT_VERSION >= 0x040500
 
 
 extern "C" Q_DECL_EXPORT

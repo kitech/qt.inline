@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageWriterC2Ev() {
   return  new QImageWriter();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:68
 // [-2] void QImageWriter(class QIODevice *, const class QByteArray &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QImageWriter(device, *format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:69
 // [-2] void QImageWriter(const class QString &, const class QByteArray &)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageWriterC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QImageWriter(*fileName, *format);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:70
 // [-2] void ~QImageWriter()
@@ -151,69 +154,93 @@ float C_ZNK12QImageWriter5gammaEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtGui/qimagewriter.h:90
 // [-2] void setSubType(const class QByteArray &)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter10setSubTypeERK10QByteArray(void *this_, QByteArray* type_) {
   ((QImageWriter*)this_)->setSubType(*type_);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtGui/qimagewriter.h:91
 // [8] QByteArray subType()
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QImageWriter7subTypeEv(void *this_) {
   auto rv = ((QImageWriter*)this_)->subType();
 return new QByteArray(rv);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:94
 // [-2] void setOptimizedWrite(_Bool)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter17setOptimizedWriteEb(void *this_, bool optimize) {
   ((QImageWriter*)this_)->setOptimizedWrite(optimize);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:95
 // [1] bool optimizedWrite()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageWriter14optimizedWriteEv(void *this_) {
   return (bool)((QImageWriter*)this_)->optimizedWrite();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:97
 // [-2] void setProgressiveScanWrite(_Bool)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter23setProgressiveScanWriteEb(void *this_, bool progressive) {
   ((QImageWriter*)this_)->setProgressiveScanWrite(progressive);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:98
 // [1] bool progressiveScanWrite()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageWriter20progressiveScanWriteEv(void *this_) {
   return (bool)((QImageWriter*)this_)->progressiveScanWrite();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:100
 // [-2] QImageIOHandler::Transformations transformation()
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 QImageIOHandler::Transformations C_ZNK12QImageWriter14transformationEv(void *this_) {
   return (QImageIOHandler::Transformations)((QImageWriter*)this_)->transformation();
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:101
 // [-2] void setTransformation(class QImageIOHandler::Transformations)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter17setTransformationE6QFlagsIN15QImageIOHandler14TransformationEE(void *this_, QFlags<QImageIOHandler::Transformation> orientation) {
   ((QImageWriter*)this_)->setTransformation(orientation);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:104
@@ -233,12 +260,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtGui/qimagewriter.h:107
 // [-2] void setText(const class QString &, const class QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter7setTextERK7QStringS2_(void *this_, QString* key, QString* text) {
   ((QImageWriter*)this_)->setText(*key, *text);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:109
@@ -274,11 +304,14 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qimagewriter.h:115
 // [1] bool supportsOption(class QImageIOHandler::ImageOption)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageWriter14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
   return (bool)((QImageWriter*)this_)->supportsOption(option);
 }
+#endif // QT_VERSION >= 0x040200
 
 //  main block end

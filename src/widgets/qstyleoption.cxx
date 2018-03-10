@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QStyleOptionC2Eii(int version, int type_) {
   return  new QStyleOption(version, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:104
 // [-2] void ~QStyleOption()
@@ -43,12 +44,15 @@ void C_ZN12QStyleOption4initEPK7QWidget(void *this_, const QWidget * w) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qstyleoption.h:107
 // [-2] void initFrom(const class QWidget *)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QStyleOption8initFromEPK7QWidget(void *this_, const QWidget * w) {
   ((QStyleOption*)this_)->initFrom(w);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:108

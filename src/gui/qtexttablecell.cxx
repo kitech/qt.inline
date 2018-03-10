@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QTextTableCellC2Ev() {
   return  new QTextTableCell();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:58
 // [-2] void ~QTextTableCell()
@@ -44,12 +45,15 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qtexttable.h:63
 // [-2] void setFormat(const class QTextCharFormat &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
   ((QTextTableCell*)this_)->setFormat(*format);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:64
@@ -167,11 +171,14 @@ QTextFrame::iterator C_ZNK14QTextTableCell3endEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qtexttable.h:87
 // [4] int tableCellFormatIndex()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QTextTableCell20tableCellFormatIndexEv(void *this_) {
   return (int)((QTextTableCell*)this_)->tableCellFormatIndex();
 }
+#endif // QT_VERSION >= 0x040500
 
 //  main block end

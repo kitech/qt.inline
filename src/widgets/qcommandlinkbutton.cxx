@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h
 #ifndef protected
 #define protected public
@@ -146,6 +147,7 @@ void* C_ZN18QCommandLinkButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:62
 // [-2] void QCommandLinkButton(const class QString &, class QWidget *)
@@ -154,6 +156,7 @@ void* C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(QString* text, QWidget * pa
   auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(*text, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:63
 // [-2] void QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
@@ -162,6 +165,7 @@ void* C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(QString* text, QString* 
   auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(*text, *description, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:64
 // [-2] void ~QCommandLinkButton()

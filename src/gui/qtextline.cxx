@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTextLineC2Ev() {
   return  new QTextLine();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:214
 // [1] bool isValid()
@@ -93,28 +94,37 @@ qreal C_ZNK9QTextLine6heightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qtextlayout.h:223
 // [8] qreal leading()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextLine7leadingEv(void *this_) {
   return (qreal)((QTextLine*)this_)->leading();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qtextlayout.h:225
 // [-2] void setLeadingIncluded(_Bool)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextLine18setLeadingIncludedEb(void *this_, bool included) {
   ((QTextLine*)this_)->setLeadingIncluded(included);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qtextlayout.h:226
 // [1] bool leadingIncluded()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTextLine15leadingIncludedEv(void *this_) {
   return (bool)((QTextLine*)this_)->leadingIncluded();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:228
@@ -125,12 +135,15 @@ qreal C_ZNK9QTextLine16naturalTextWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextlayout.h:229
 // [8] qreal horizontalAdvance()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextLine17horizontalAdvanceEv(void *this_) {
   return (qreal)((QTextLine*)this_)->horizontalAdvance();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:230

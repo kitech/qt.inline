@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040500
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h
 #ifndef protected
 #define protected public

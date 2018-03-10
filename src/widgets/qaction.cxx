@@ -61,6 +61,7 @@ void* C_ZN7QActionC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAction*)(0);
   return  new MyQAction(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:96
 // [-2] void QAction(const class QString &, class QObject *)
@@ -69,6 +70,7 @@ void* C_ZN7QActionC2ERK7QStringP7QObject(QString* text, QObject * parent) {
   auto _nilp = (MyQAction*)(0);
   return  new MyQAction(*text, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:97
 // [-2] void QAction(const class QIcon &, const class QString &, class QObject *)
@@ -77,6 +79,7 @@ void* C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(QIcon* icon, QString* text, QOb
   auto _nilp = (MyQAction*)(0);
   return  new MyQAction(*icon, *text, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:99
 // [-2] void ~QAction()
@@ -268,12 +271,15 @@ return new QKeySequence(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qaction.h:137
 // [-2] void setShortcuts(class QKeySequence::StandardKey)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction12setShortcutsEN12QKeySequence11StandardKeyE(void *this_, QKeySequence::StandardKey arg0) {
   ((QAction*)this_)->setShortcuts(arg0);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:140

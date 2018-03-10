@@ -30,6 +30,7 @@ void* C_ZN22QStyleOptionDockWidgetC2Ev() {
   return  new QStyleOptionDockWidget();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN22QStyleOptionDockWidgetD2Ev(void *this_) {
   delete (QStyleOptionDockWidget*)(this_);

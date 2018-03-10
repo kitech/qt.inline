@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qjsondocument.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocumentC2Ev() {
   return  new QJsonDocument();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:89
 // [-2] void QJsonDocument(const class QJsonObject &)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocumentC2ERK11QJsonObject(QJsonObject* object) {
   return  new QJsonDocument(*object);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:90
 // [-2] void QJsonDocument(const class QJsonArray &)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocumentC2ERK10QJsonArray(QJsonArray* array) {
   return  new QJsonDocument(*array);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:91
 // [-2] void ~QJsonDocument()
@@ -71,12 +75,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtCore/qjsondocument.h:108
 // [-2] void swap(class QJsonDocument &)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN13QJsonDocument4swapERS_(void *this_, QJsonDocument* other) {
   ((QJsonDocument*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:118
@@ -86,6 +93,7 @@ void* C_ZN13QJsonDocument11fromRawDataEPKciNS_14DataValidationE(const char * dat
   auto rv = QJsonDocument::fromRawData(data, size, validation);
 return new QJsonDocument(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:119
 // [8] const char * rawData(int *)
@@ -102,6 +110,7 @@ void* C_ZN13QJsonDocument14fromBinaryDataERK10QByteArrayNS_14DataValidationE(QBy
   auto rv = QJsonDocument::fromBinaryData(*data, validation);
 return new QJsonDocument(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:122
 // [8] QByteArray toBinaryData()
@@ -119,6 +128,7 @@ void* C_ZN13QJsonDocument11fromVariantERK8QVariant(QVariant* variant) {
   auto rv = QJsonDocument::fromVariant(*variant);
 return new QJsonDocument(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:125
 // [16] QVariant toVariant()

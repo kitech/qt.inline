@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtCore/qlogging.h
 #ifndef protected
 #define protected public
@@ -31,6 +32,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QMessageLoggerC2Ev() {
   return  new QMessageLogger();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:91
 // [-2] void QMessageLogger(const char *, int, const char *)
@@ -38,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QMessageLoggerC2EPKciS1_(const char * file, int line, const char * function) {
   return  new QMessageLogger(file, line, function);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:93
 // [-2] void QMessageLogger(const char *, int, const char *, const char *)
@@ -45,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN14QMessageLoggerC2EPKciS1_S1_(const char * file, int line, const char * function, const char * category) {
   return  new QMessageLogger(file, line, function, category);
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN14QMessageLoggerD2Ev(void *this_) {

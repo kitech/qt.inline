@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QSignalMapperC2EP7QObject(QObject * parent) {
   return  new QSignalMapper(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignalmapper.h:57
 // [-2] void ~QSignalMapper()

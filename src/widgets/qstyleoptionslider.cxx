@@ -30,6 +30,7 @@ void* C_ZN18QStyleOptionSliderC2Ev() {
   return  new QStyleOptionSlider();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStyleOptionSliderD2Ev(void *this_) {
   delete (QStyleOptionSlider*)(this_);

@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050800
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h
 #ifndef protected
 #define protected public
@@ -29,6 +30,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QNetworkDatagramC2Ev() {
   return  new QNetworkDatagram();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:57
 // [-2] void QNetworkDatagram(const class QByteArray &, const class QHostAddress &, quint16)
@@ -36,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QNetworkDatagramC2ERK10QByteArrayRK12QHostAddresst(QByteArray* data, QHostAddress* destinationAddress, quint16 port) {
   return  new QNetworkDatagram(*data, *destinationAddress, port);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:60
 // [8] QNetworkDatagram & operator=(const class QNetworkDatagram &)

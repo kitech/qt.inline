@@ -484,12 +484,15 @@ void C_ZN9QTreeView8reexpandEv(void *this_) {
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtWidgets/qtreeview.h:171
 // [-2] void rowsRemoved(const class QModelIndex &, int, int)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView11rowsRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int first, int last) {
   ((QTreeView*)this_)->QTreeView::rowsRemoved(*parent, first, last);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:175
@@ -583,12 +586,15 @@ void C_ZN9QTreeView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event)
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreeview.h:190
 // [-2] void drawTree(class QPainter *, const class QRegion &)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion(void *this_, QPainter * painter, QRegion* region) {
   ((QTreeView*)this_)->QTreeView::drawTree(painter, *region);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:191
@@ -696,12 +702,15 @@ int C_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex(void *this_, QModelIndex* 
 }
 
 // Protected Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreeview.h:214
 // [4] int rowHeight(const class QModelIndex &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTreeView9rowHeightERK11QModelIndex(void *this_, QModelIndex* index) {
   return (int)((QTreeView*)this_)->QTreeView::rowHeight(*index);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:216
@@ -751,6 +760,7 @@ void* C_ZN9QTreeViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTreeView*)(0);
   return  new MyQTreeView(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:72
 // [-2] void ~QTreeView()
@@ -919,12 +929,15 @@ int C_ZNK9QTreeView11columnWidthEi(void *this_, int column) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreeview.h:102
 // [-2] void setColumnWidth(int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView14setColumnWidthEii(void *this_, int column, int width) {
   ((QTreeView*)this_)->setColumnWidth(column, width);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:103
@@ -983,20 +996,26 @@ void C_ZN9QTreeView12setRowHiddenEiRK11QModelIndexb(void *this_, int row, QModel
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreeview.h:114
 // [1] bool isFirstColumnSpanned(int, const class QModelIndex &)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTreeView20isFirstColumnSpannedEiRK11QModelIndex(void *this_, int row, QModelIndex* parent) {
   return (bool)((QTreeView*)this_)->isFirstColumnSpanned(row, *parent);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreeview.h:115
 // [-2] void setFirstColumnSpanned(int, const class QModelIndex &, _Bool)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView21setFirstColumnSpannedEiRK11QModelIndexb(void *this_, int row, QModelIndex* parent, bool span) {
   ((QTreeView*)this_)->setFirstColumnSpanned(row, *parent, span);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:117
@@ -1079,20 +1098,26 @@ bool C_ZNK9QTreeView8wordWrapEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qtreeview.h:132
 // [-2] void setTreePosition(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView15setTreePositionEi(void *this_, int logicalIndex) {
   ((QTreeView*)this_)->setTreePosition(logicalIndex);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qtreeview.h:133
 // [4] int treePosition()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTreeView12treePositionEv(void *this_) {
   return (int)((QTreeView*)this_)->treePosition();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:135
@@ -1163,12 +1188,15 @@ void C_ZN9QTreeView5resetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreeview.h:146
 // [-2] void sortByColumn(int, Qt::SortOrder)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView12sortByColumnEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
   ((QTreeView*)this_)->sortByColumn(column, order);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:149
@@ -1243,27 +1271,36 @@ void C_ZN9QTreeView12sortByColumnEi(void *this_, int column) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreeview.h:162
 // [-2] void expandAll()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView9expandAllEv(void *this_) {
   ((QTreeView*)this_)->expandAll();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qtreeview.h:163
 // [-2] void collapseAll()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView11collapseAllEv(void *this_) {
   ((QTreeView*)this_)->collapseAll();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qtreeview.h:164
 // [-2] void expandToDepth(int)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView13expandToDepthEi(void *this_, int depth) {
   ((QTreeView*)this_)->expandToDepth(depth);
 }
+#endif // QT_VERSION >= 0x040300
 
 //  main block end

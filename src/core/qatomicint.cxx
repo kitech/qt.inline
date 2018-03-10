@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtCore/qatomic.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QAtomicIntC2Ei(int value) {
   return  new QAtomicInt(value);
 }
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN10QAtomicIntD2Ev(void *this_) {

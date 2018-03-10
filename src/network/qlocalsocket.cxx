@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtNetwork/qlocalsocket.h
 #ifndef protected
 #define protected public
@@ -78,6 +79,7 @@ void* C_ZN12QLocalSocketC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQLocalSocket*)(0);
   return  new MyQLocalSocket(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalsocket.h:83
 // [-2] void ~QLocalSocket()
@@ -110,12 +112,15 @@ void C_ZN12QLocalSocket20disconnectFromServerEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtNetwork/qlocalsocket.h:89
 // [-2] void setServerName(const class QString &)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket13setServerNameERK7QString(void *this_, QString* name) {
   ((QLocalSocket*)this_)->setServerName(*name);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalsocket.h:90

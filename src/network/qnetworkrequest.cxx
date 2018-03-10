@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtNetwork/qnetworkrequest.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QNetworkRequestC2ERK4QUrl(QUrl* url) {
   return  new QNetworkRequest(*url);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:126
 // [-2] void ~QNetworkRequest()
@@ -53,12 +55,15 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:132
 // [-2] void swap(class QNetworkRequest &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkRequest4swapERS_(void *this_, QNetworkRequest* other) {
   ((QNetworkRequest*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:134
@@ -170,28 +175,37 @@ void C_ZN15QNetworkRequest19setSslConfigurationERK17QSslConfiguration(void *this
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:160
 // [-2] void setOriginatingObject(class QObject *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkRequest20setOriginatingObjectEP7QObject(void *this_, QObject * object) {
   ((QNetworkRequest*)this_)->setOriginatingObject(object);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:161
 // [8] QObject * originatingObject()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QNetworkRequest17originatingObjectEv(void *this_) {
   return (void*)((QNetworkRequest*)this_)->originatingObject();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:163
 // [4] QNetworkRequest::Priority priority()
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 QNetworkRequest::Priority C_ZNK15QNetworkRequest8priorityEv(void *this_) {
   return (QNetworkRequest::Priority)((QNetworkRequest*)this_)->priority();
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:164
@@ -202,19 +216,25 @@ void C_ZN15QNetworkRequest11setPriorityENS_8PriorityE(void *this_, QNetworkReque
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:167
 // [4] int maximumRedirectsAllowed()
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QNetworkRequest23maximumRedirectsAllowedEv(void *this_) {
   return (int)((QNetworkRequest*)this_)->maximumRedirectsAllowed();
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:168
 // [-2] void setMaximumRedirectsAllowed(int)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkRequest26setMaximumRedirectsAllowedEi(void *this_, int maximumRedirectsAllowed) {
   ((QNetworkRequest*)this_)->setMaximumRedirectsAllowed(maximumRedirectsAllowed);
 }
+#endif // QT_VERSION >= 0x050600
 
 //  main block end

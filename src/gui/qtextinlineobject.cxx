@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QTextInlineObjectC2Ev() {
   return  new QTextInlineObject();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:73
 // [1] bool isValid()

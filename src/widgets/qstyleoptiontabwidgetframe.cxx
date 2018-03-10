@@ -30,6 +30,7 @@ void* C_ZN26QStyleOptionTabWidgetFrameC2Ev() {
   return  new QStyleOptionTabWidgetFrame();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN26QStyleOptionTabWidgetFrameD2Ev(void *this_) {
   delete (QStyleOptionTabWidgetFrame*)(this_);

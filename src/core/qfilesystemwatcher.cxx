@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtCore/qfilesystemwatcher.h
 #ifndef protected
 #define protected public
@@ -37,6 +38,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcherC2EP7QObject(QObject * parent) {
   return  new QFileSystemWatcher(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:59
 // [-2] void QFileSystemWatcher(const class QStringList &, class QObject *)
@@ -44,6 +46,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject(QStringList* paths, QObject * parent) {
   return  new QFileSystemWatcher(*paths, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:60
 // [-2] void ~QFileSystemWatcher()

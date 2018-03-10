@@ -31,6 +31,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFileC2Ev() {
   return  new QQmlFile();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:57
 // [-2] void QQmlFile(class QQmlEngine *, const class QUrl &)
@@ -38,6 +39,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFileC2EP10QQmlEngineRK4QUrl(QQmlEngine * arg0, QUrl* arg1) {
   return  new QQmlFile(arg0, *arg1);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:58
 // [-2] void QQmlFile(class QQmlEngine *, const class QString &)
@@ -45,6 +47,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFileC2EP10QQmlEngineRK7QString(QQmlEngine * arg0, QString* arg1) {
   return  new QQmlFile(arg0, *arg1);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:59
 // [-2] void ~QQmlFile()
@@ -206,6 +209,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile13isSynchronousERK7QString(QString* url) {
   return (bool)QQmlFile::isSynchronous(*url);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:91
 // [1] bool isSynchronous(const class QUrl &)
@@ -213,6 +217,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile13isSynchronousERK4QUrl(QUrl* url) {
   return (bool)QQmlFile::isSynchronous(*url);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:93
 // [1] bool isLocalFile(const class QString &)
@@ -220,6 +225,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile11isLocalFileERK7QString(QString* url) {
   return (bool)QQmlFile::isLocalFile(*url);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:94
 // [1] bool isLocalFile(const class QUrl &)
@@ -227,6 +233,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile11isLocalFileERK4QUrl(QUrl* url) {
   return (bool)QQmlFile::isLocalFile(*url);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:96
 // [8] QString urlToLocalFileOrQrc(const class QString &)
@@ -235,6 +242,7 @@ void* C_ZN8QQmlFile19urlToLocalFileOrQrcERK7QString(QString* arg0) {
   auto rv = QQmlFile::urlToLocalFileOrQrc(*arg0);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:97
 // [8] QString urlToLocalFileOrQrc(const class QUrl &)
@@ -243,4 +251,5 @@ void* C_ZN8QQmlFile19urlToLocalFileOrQrcERK4QUrl(QUrl* arg0) {
   auto rv = QQmlFile::urlToLocalFileOrQrc(*arg0);
 return new QString(rv);
 }
+
 //  main block end

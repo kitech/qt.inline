@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040800
 // /usr/include/qt/QtGui/qglyphrun.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QGlyphRunC2Ev() {
   return  new QGlyphRun();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:70
 // [8] QGlyphRun & operator=(class QGlyphRun &&)
@@ -53,12 +55,15 @@ void C_ZN9QGlyphRunD2Ev(void *this_) {
   delete (QGlyphRun*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:75
 // [-2] void swap(class QGlyphRun &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGlyphRun4swapERS_(void *this_, QGlyphRun* other) {
   ((QGlyphRun*)this_)->swap(*other);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:77
@@ -158,20 +163,26 @@ bool C_ZNK9QGlyphRun9strikeOutEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:105
 // [-2] void setRightToLeft(_Bool)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGlyphRun14setRightToLeftEb(void *this_, bool on) {
   ((QGlyphRun*)this_)->setRightToLeft(on);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:106
 // [1] bool isRightToLeft()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGlyphRun13isRightToLeftEv(void *this_) {
   return (bool)((QGlyphRun*)this_)->isRightToLeft();
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:108
@@ -190,37 +201,49 @@ void C_ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE(void *this_, QFlags<QGl
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:110
 // [-2] QGlyphRun::GlyphRunFlags flags()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 QGlyphRun::GlyphRunFlags* C_ZNK9QGlyphRun5flagsEv(void *this_) {
   auto rv = ((QGlyphRun*)this_)->flags();
 return new QGlyphRun::GlyphRunFlags(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:112
 // [-2] void setBoundingRect(const class QRectF &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGlyphRun15setBoundingRectERK6QRectF(void *this_, QRectF* boundingRect) {
   ((QGlyphRun*)this_)->setBoundingRect(*boundingRect);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:113
 // [32] QRectF boundingRect()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QGlyphRun12boundingRectEv(void *this_) {
   auto rv = ((QGlyphRun*)this_)->boundingRect();
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:115
 // [1] bool isEmpty()
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGlyphRun7isEmptyEv(void *this_) {
   return (bool)((QGlyphRun*)this_)->isEmpty();
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

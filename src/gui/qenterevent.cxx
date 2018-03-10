@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QEnterEventC2ERK7QPointFS2_S2_(QPointF* localPos, QPointF* windowPos, QPointF* screenPos) {
   return  new QEnterEvent(*localPos, *windowPos, *screenPos);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:86
 // [-2] void ~QEnterEvent()

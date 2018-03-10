@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QPaintEngineC2E6QFlagsINS_18PaintEngineFeatureEE(QFlags<QPaintEngine::PaintEngineFeature> features) {
   return 0; // new QPaintEngine(features);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:148
 // [-2] void ~QPaintEngine()

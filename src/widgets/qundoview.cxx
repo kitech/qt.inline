@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040200
 // /usr/include/qt/QtWidgets/qundoview.h
 #ifndef protected
 #define protected public
@@ -39,6 +40,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP7QWidget(QWidget * parent) {
   return  new QUndoView(parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:66
 // [-2] void QUndoView(class QUndoStack *, class QWidget *)
@@ -46,6 +48,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * parent) {
   return  new QUndoView(stack, parent);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:68
 // [-2] void QUndoView(class QUndoGroup *, class QWidget *)
@@ -53,6 +56,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent) {
   return  new QUndoView(group, parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:70
 // [-2] void ~QUndoView()

@@ -30,6 +30,7 @@ void* C_ZN18QStyleOptionButtonC2Ev() {
   return  new QStyleOptionButton();
 }
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStyleOptionButtonD2Ev(void *this_) {
   delete (QStyleOptionButton*)(this_);

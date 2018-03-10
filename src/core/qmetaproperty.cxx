@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QMetaPropertyC2Ev() {
   return  new QMetaProperty();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:250
 // [8] const char * name()
@@ -52,20 +53,26 @@ QVariant::Type C_ZNK13QMetaProperty4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qmetaobject.h:253
 // [4] int userType()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QMetaProperty8userTypeEv(void *this_) {
   return (int)((QMetaProperty*)this_)->userType();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qmetaobject.h:254
 // [4] int propertyIndex()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QMetaProperty13propertyIndexEv(void *this_) {
   return (int)((QMetaProperty*)this_)->propertyIndex();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:256
@@ -132,20 +139,26 @@ bool C_ZNK13QMetaProperty6isUserEPK7QObject(void *this_, const QObject * obj) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qmetaobject.h:264
 // [1] bool isConstant()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty10isConstantEv(void *this_) {
   return (bool)((QMetaProperty*)this_)->isConstant();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qmetaobject.h:265
 // [1] bool isFinal()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty7isFinalEv(void *this_) {
   return (bool)((QMetaProperty*)this_)->isFinal();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:267
@@ -181,29 +194,38 @@ bool C_ZNK13QMetaProperty15hasNotifySignalEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qmetaobject.h:272
 // [16] QMetaMethod notifySignal()
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMetaProperty12notifySignalEv(void *this_) {
   auto rv = ((QMetaProperty*)this_)->notifySignal();
 return new QMetaMethod(rv);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qmetaobject.h:273
 // [4] int notifySignalIndex()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QMetaProperty17notifySignalIndexEv(void *this_) {
   return (int)((QMetaProperty*)this_)->notifySignalIndex();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qmetaobject.h:275
 // [4] int revision()
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QMetaProperty8revisionEv(void *this_) {
   return (int)((QMetaProperty*)this_)->revision();
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:277
@@ -231,29 +253,38 @@ bool C_ZNK13QMetaProperty5resetEP7QObject(void *this_, QObject * obj) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qmetaobject.h:281
 // [16] QVariant readOnGadget(const void *)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMetaProperty12readOnGadgetEPKv(void *this_, const void * gadget) {
   auto rv = ((QMetaProperty*)this_)->readOnGadget(gadget);
 return new QVariant(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qmetaobject.h:282
 // [1] bool writeOnGadget(void *, const class QVariant &)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty13writeOnGadgetEPvRK8QVariant(void *this_, void * gadget, QVariant* value) {
   return (bool)((QMetaProperty*)this_)->writeOnGadget(gadget, *value);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qmetaobject.h:283
 // [1] bool resetOnGadget(void *)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty13resetOnGadgetEPv(void *this_, void * gadget) {
   return (bool)((QMetaProperty*)this_)->resetOnGadget(gadget);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:285

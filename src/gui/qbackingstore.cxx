@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x050000
 // /usr/include/qt/QtGui/qbackingstore.h
 #ifndef protected
 #define protected public
@@ -27,6 +28,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QBackingStoreC2EP7QWindow(QWindow * window) {
   return  new QBackingStore(window);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbackingstore.h:63
 // [-2] void ~QBackingStore()

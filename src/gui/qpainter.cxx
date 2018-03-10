@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPainterC2Ev() {
   return  new QPainter();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:125
 // [-2] void QPainter(class QPaintDevice *)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPainterC2EP12QPaintDevice(QPaintDevice * arg0) {
   return  new QPainter(arg0);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:126
 // [-2] void ~QPainter()
@@ -259,20 +261,26 @@ return new QBrush(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainter.h:210
 // [8] qreal opacity()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK8QPainter7opacityEv(void *this_) {
   return (qreal)((QPainter*)this_)->opacity();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainter.h:211
 // [-2] void setOpacity(qreal)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter10setOpacityEd(void *this_, qreal opacity) {
   ((QPainter*)this_)->setOpacity(opacity);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:214
@@ -349,13 +357,16 @@ bool C_ZNK8QPainter11hasClippingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qpainter.h:228
 // [32] QRectF clipBoundingRect()
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPainter16clipBoundingRectEv(void *this_) {
   auto rv = ((QPainter*)this_)->clipBoundingRect();
 return new QRectF(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:230
@@ -408,12 +419,15 @@ void C_ZN8QPainter11resetMatrixEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtGui/qpainter.h:239
 // [-2] void setTransform(const class QTransform &, _Bool)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter12setTransformERK10QTransformb(void *this_, QTransform* transform, bool combine) {
   ((QPainter*)this_)->setTransform(*transform, combine);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:240
@@ -510,20 +524,26 @@ bool C_ZNK8QPainter13matrixEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainter.h:256
 // [-2] void setWorldMatrixEnabled(_Bool)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter21setWorldMatrixEnabledEb(void *this_, bool enabled) {
   ((QPainter*)this_)->setWorldMatrixEnabled(enabled);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtGui/qpainter.h:257
 // [1] bool worldMatrixEnabled()
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QPainter18worldMatrixEnabledEv(void *this_) {
   return (bool)((QPainter*)this_)->worldMatrixEnabled();
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:259
@@ -856,20 +876,26 @@ void C_ZN8QPainter11drawEllipseEiiii(void *this_, int x, int y, int w, int h) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainter.h:320
 // [-2] void drawEllipse(const class QPointF &, qreal, qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter11drawEllipseERK7QPointFdd(void *this_, QPointF* center, qreal rx, qreal ry) {
   ((QPainter*)this_)->drawEllipse(*center, rx, ry);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainter.h:321
 // [-2] void drawEllipse(const class QPoint &, int, int)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter11drawEllipseERK6QPointii(void *this_, QPoint* center, int rx, int ry) {
   ((QPainter*)this_)->drawEllipse(*center, rx, ry);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:323
@@ -1040,28 +1066,37 @@ void C_ZN8QPainter9drawChordERK5QRectii(void *this_, QRect* arg0, int a, int ale
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainter.h:350
 // [-2] void drawRoundedRect(const class QRectF &, qreal, qreal, Qt::SizeMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter15drawRoundedRectERK6QRectFddN2Qt8SizeModeE(void *this_, QRectF* rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainter*)this_)->drawRoundedRect(*rect, xRadius, yRadius, mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainter.h:352
 // [-2] void drawRoundedRect(int, int, int, int, qreal, qreal, Qt::SizeMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter15drawRoundedRectEiiiiddN2Qt8SizeModeE(void *this_, int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainter*)this_)->drawRoundedRect(x, y, w, h, xRadius, yRadius, mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qpainter.h:354
 // [-2] void drawRoundedRect(const class QRect &, qreal, qreal, Qt::SizeMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter15drawRoundedRectERK5QRectddN2Qt8SizeModeE(void *this_, QRect* rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
   ((QPainter*)this_)->drawRoundedRect(*rect, xRadius, yRadius, mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:357
@@ -1312,36 +1347,48 @@ Qt::LayoutDirection C_ZNK8QPainter15layoutDirectionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qpainter.h:406
 // [-2] void drawGlyphRun(const class QPointF &, const class QGlyphRun &)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter12drawGlyphRunERK7QPointFRK9QGlyphRun(void *this_, QPointF* position, QGlyphRun* glyphRun) {
   ((QPainter*)this_)->drawGlyphRun(*position, *glyphRun);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qpainter.h:409
 // [-2] void drawStaticText(const class QPointF &, const class QStaticText &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter14drawStaticTextERK7QPointFRK11QStaticText(void *this_, QPointF* topLeftPosition, QStaticText* staticText) {
   ((QPainter*)this_)->drawStaticText(*topLeftPosition, *staticText);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public inline Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qpainter.h:410
 // [-2] void drawStaticText(const class QPoint &, const class QStaticText &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter14drawStaticTextERK6QPointRK11QStaticText(void *this_, QPoint* topLeftPosition, QStaticText* staticText) {
   ((QPainter*)this_)->drawStaticText(*topLeftPosition, *staticText);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public inline Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qpainter.h:411
 // [-2] void drawStaticText(int, int, const class QStaticText &)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter14drawStaticTextEiiRK11QStaticText(void *this_, int left, int top, QStaticText* staticText) {
   ((QPainter*)this_)->drawStaticText(left, top, *staticText);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:413
@@ -1492,76 +1539,103 @@ void C_ZN8QPainter8fillRectERK5QRectRK6QBrush(void *this_, QRect* arg0, QBrush* 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:439
 // [-2] void fillRect(const class QRectF &, const class QColor &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectERK6QRectFRK6QColor(void *this_, QRectF* arg0, QColor* color) {
   ((QPainter*)this_)->fillRect(*arg0, *color);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:440
 // [-2] void fillRect(int, int, int, int, const class QColor &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectEiiiiRK6QColor(void *this_, int x, int y, int w, int h, QColor* color) {
   ((QPainter*)this_)->fillRect(x, y, w, h, *color);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:441
 // [-2] void fillRect(const class QRect &, const class QColor &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectERK5QRectRK6QColor(void *this_, QRect* arg0, QColor* color) {
   ((QPainter*)this_)->fillRect(*arg0, *color);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:443
 // [-2] void fillRect(int, int, int, int, Qt::GlobalColor)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectEiiiiN2Qt11GlobalColorE(void *this_, int x, int y, int w, int h, Qt::GlobalColor c) {
   ((QPainter*)this_)->fillRect(x, y, w, h, c);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:444
 // [-2] void fillRect(const class QRect &, Qt::GlobalColor)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectERK5QRectN2Qt11GlobalColorE(void *this_, QRect* r, Qt::GlobalColor c) {
   ((QPainter*)this_)->fillRect(*r, c);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:445
 // [-2] void fillRect(const class QRectF &, Qt::GlobalColor)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectERK6QRectFN2Qt11GlobalColorE(void *this_, QRectF* r, Qt::GlobalColor c) {
   ((QPainter*)this_)->fillRect(*r, c);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:447
 // [-2] void fillRect(int, int, int, int, Qt::BrushStyle)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectEiiiiN2Qt10BrushStyleE(void *this_, int x, int y, int w, int h, Qt::BrushStyle style) {
   ((QPainter*)this_)->fillRect(x, y, w, h, style);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:448
 // [-2] void fillRect(const class QRect &, Qt::BrushStyle)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectERK5QRectN2Qt10BrushStyleE(void *this_, QRect* r, Qt::BrushStyle style) {
   ((QPainter*)this_)->fillRect(*r, style);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtGui/qpainter.h:449
 // [-2] void fillRect(const class QRectF &, Qt::BrushStyle)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter8fillRectERK6QRectFN2Qt10BrushStyleE(void *this_, QRectF* r, Qt::BrushStyle style) {
   ((QPainter*)this_)->fillRect(*r, style);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:451
@@ -1635,6 +1709,7 @@ extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter13setRedirectedEPK12QPaintDevicePS0_RK6QPoint(const QPaintDevice * device, QPaintDevice * replacement, QPoint* offset) {
   QPainter::setRedirected(device, replacement, *offset);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:464
 // [8] QPaintDevice * redirected(const class QPaintDevice *, class QPoint *)
@@ -1642,6 +1717,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPainter10redirectedEPK12QPaintDeviceP6QPoint(const QPaintDevice * device, QPoint * offset) {
   return (void*)QPainter::redirected(device, offset);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:465
 // [-2] void restoreRedirected(const class QPaintDevice *)
@@ -1649,20 +1725,27 @@ extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter17restoreRedirectedEPK12QPaintDevice(const QPaintDevice * device) {
   QPainter::restoreRedirected(device);
 }
+
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpainter.h:467
 // [-2] void beginNativePainting()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter19beginNativePaintingEv(void *this_) {
   ((QPainter*)this_)->beginNativePainting();
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpainter.h:468
 // [-2] void endNativePainting()
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPainter17endNativePaintingEv(void *this_) {
   ((QPainter*)this_)->endNativePainting();
 }
+#endif // QT_VERSION >= 0x040600
 
 //  main block end

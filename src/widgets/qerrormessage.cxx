@@ -76,6 +76,7 @@ void* C_ZN13QErrorMessageC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQErrorMessage*)(0);
   return  new MyQErrorMessage(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:59
 // [-2] void ~QErrorMessage()
@@ -90,6 +91,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN13QErrorMessage9qtHandlerEv() {
   return (void*)QErrorMessage::qtHandler();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:64
 // [-2] void showMessage(const class QString &)
@@ -99,11 +101,14 @@ void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, QString* message) 
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qerrormessage.h:65
 // [-2] void showMessage(const class QString &, const class QString &)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, QString* message, QString* type_) {
   ((QErrorMessage*)this_)->showMessage(*message, *type_);
 }
+#endif // QT_VERSION >= 0x040500
 
 //  main block end

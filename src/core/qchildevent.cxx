@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QChildEventC2EN6QEvent4TypeEP7QObject(QEvent::Type type_, QObject * child) {
   return  new QChildEvent(type_, child);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:353
 // [-2] void ~QChildEvent()

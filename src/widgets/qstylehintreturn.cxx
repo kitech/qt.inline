@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QStyleHintReturnC2Eii(int version, int type_) {
   return  new QStyleHintReturn(version, type_);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:711
 // [-2] void ~QStyleHintReturn()

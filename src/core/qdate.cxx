@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QDateC2Ev() {
   return  new QDate();
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:70
 // [-2] void QDate(int, int, int)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN5QDateC2Eiii(int y, int m, int d) {
   return  new QDate(y, m, d);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:72
 // [1] bool isNull()
@@ -124,6 +126,7 @@ void* C_ZN5QDate14shortMonthNameEiNS_13MonthNameTypeE(int month, QDate::MonthNam
   auto rv = QDate::shortMonthName(month, type_);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:88
 // [8] QString shortDayName(int, enum QDate::MonthNameType)
@@ -132,6 +135,7 @@ void* C_ZN5QDate12shortDayNameEiNS_13MonthNameTypeE(int weekday, QDate::MonthNam
   auto rv = QDate::shortDayName(weekday, type_);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:90
 // [8] QString longMonthName(int, enum QDate::MonthNameType)
@@ -140,6 +144,7 @@ void* C_ZN5QDate13longMonthNameEiNS_13MonthNameTypeE(int month, QDate::MonthName
   auto rv = QDate::longMonthName(month, type_);
 return new QString(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:92
 // [8] QString longDayName(int, enum QDate::MonthNameType)
@@ -148,6 +153,7 @@ void* C_ZN5QDate11longDayNameEiNS_13MonthNameTypeE(int weekday, QDate::MonthName
   auto rv = QDate::longDayName(weekday, type_);
 return new QString(rv);
 }
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:95
 // [8] QString toString(Qt::DateFormat)
@@ -176,12 +182,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qdatetime.h:106
 // [1] bool setDate(int, int, int)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QDate7setDateEiii(void *this_, int year, int month, int day) {
   return (bool)((QDate*)this_)->setDate(year, month, day);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:109
@@ -192,12 +201,15 @@ void C_ZN5QDate7getDateEPiS0_S0_(void *this_, int * year, int * month, int * day
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtCore/qdatetime.h:111
 // [-2] void getDate(int *, int *, int *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZNK5QDate7getDateEPiS0_S0_(void *this_, int * year, int * month, int * day) {
   ((QDate*)this_)->getDate(year, month, day);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:113
@@ -290,6 +302,7 @@ void* C_ZN5QDate11currentDateEv() {
   auto rv = QDate::currentDate();
 return new QDate(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:127
 // [8] QDate fromString(const class QString &, Qt::DateFormat)
@@ -298,6 +311,7 @@ void* C_ZN5QDate10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFor
   auto rv = QDate::fromString(*s, f);
 return new QDate(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:128
 // [8] QDate fromString(const class QString &, const class QString &)
@@ -306,6 +320,7 @@ void* C_ZN5QDate10fromStringERK7QStringS2_(QString* s, QString* format) {
   auto rv = QDate::fromString(*s, *format);
 return new QDate(rv);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:130
 // [1] bool isValid(int, int, int)
@@ -313,6 +328,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN5QDate7isValidEiii(int y, int m, int d) {
   return (bool)QDate::isValid(y, m, d);
 }
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:131
 // [1] bool isLeapYear(int)
@@ -320,6 +336,7 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN5QDate10isLeapYearEi(int year) {
   return (bool)QDate::isLeapYear(year);
 }
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:133
 // [8] QDate fromJulianDay(qint64)
@@ -328,6 +345,7 @@ void* C_ZN5QDate13fromJulianDayEx(qint64 jd_) {
   auto rv = QDate::fromJulianDay(jd_);
 return new QDate(rv);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:135
 // [8] qint64 toJulianDay()

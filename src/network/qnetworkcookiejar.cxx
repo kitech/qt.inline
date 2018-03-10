@@ -1,4 +1,5 @@
 //  header block begin
+// since 0x040400
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h
 #ifndef protected
 #define protected public
@@ -34,12 +35,15 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:70
 // [1] bool validateCookie(const class QNetworkCookie &, const class QUrl &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QNetworkCookieJar14validateCookieERK14QNetworkCookieRK4QUrl(void *this_, QNetworkCookie* cookie, QUrl* url) {
   return (bool)((QNetworkCookieJar*)this_)->QNetworkCookieJar::validateCookie(*cookie, *url);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:55
@@ -57,6 +61,7 @@ void* C_ZN17QNetworkCookieJarC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQNetworkCookieJar*)(0);
   return  new MyQNetworkCookieJar(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:58
 // [-2] void ~QNetworkCookieJar()
@@ -65,27 +70,36 @@ void C_ZN17QNetworkCookieJarD2Ev(void *this_) {
   delete (QNetworkCookieJar*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:63
 // [1] bool insertCookie(const class QNetworkCookie &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkCookieJar12insertCookieERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
   return (bool)((QNetworkCookieJar*)this_)->insertCookie(*cookie);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:64
 // [1] bool updateCookie(const class QNetworkCookie &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkCookieJar12updateCookieERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
   return (bool)((QNetworkCookieJar*)this_)->updateCookie(*cookie);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:65
 // [1] bool deleteCookie(const class QNetworkCookie &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkCookieJar12deleteCookieERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
   return (bool)((QNetworkCookieJar*)this_)->deleteCookie(*cookie);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end

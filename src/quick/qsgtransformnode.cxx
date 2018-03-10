@@ -27,6 +27,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QSGTransformNodeC2Ev() {
   return  new QSGTransformNode();
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:285
 // [-2] void ~QSGTransformNode()

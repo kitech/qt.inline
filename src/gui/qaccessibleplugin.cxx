@@ -35,6 +35,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessiblePluginC2EP7QObject(QObject * parent) {
   return 0; // new QAccessiblePlugin(parent);
 }
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleplugin.h:64
 // [-2] void ~QAccessiblePlugin()

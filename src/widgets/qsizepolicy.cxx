@@ -29,6 +29,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QSizePolicyC2Ev() {
   return  new QSizePolicy();
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:116
 // [-2] void QSizePolicy(enum QSizePolicy::Policy, enum QSizePolicy::Policy, enum QSizePolicy::ControlType)
@@ -36,6 +37,7 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) {
   return  new QSizePolicy(horizontal, vertical, type_);
 }
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:128
 // [4] QSizePolicy::Policy horizontalPolicy()
@@ -53,12 +55,15 @@ QSizePolicy::Policy C_ZNK11QSizePolicy14verticalPolicyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qsizepolicy.h:130
 // [4] QSizePolicy::ControlType controlType()
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 QSizePolicy::ControlType C_ZNK11QSizePolicy11controlTypeEv(void *this_) {
   return (QSizePolicy::ControlType)((QSizePolicy*)this_)->controlType();
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:132
@@ -173,20 +178,26 @@ void C_ZN11QSizePolicy18setVerticalStretchEi(void *this_, int stretchFactor) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qsizepolicy.h:158
 // [1] bool retainSizeWhenHidden()
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSizePolicy20retainSizeWhenHiddenEv(void *this_) {
   return (bool)((QSizePolicy*)this_)->retainSizeWhenHidden();
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qsizepolicy.h:159
 // [-2] void setRetainSizeWhenHidden(_Bool)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSizePolicy23setRetainSizeWhenHiddenEb(void *this_, bool retainSize) {
   ((QSizePolicy*)this_)->setRetainSizeWhenHidden(retainSize);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:161
@@ -197,13 +208,16 @@ void C_ZN11QSizePolicy9transposeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtWidgets/qsizepolicy.h:166
 // [4] QSizePolicy transposed()
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QSizePolicy10transposedEv(void *this_) {
   auto rv = ((QSizePolicy*)this_)->transposed();
 return new QSizePolicy(rv);
 }
+#endif // QT_VERSION >= 0x050900
 
 
 extern "C" Q_DECL_EXPORT
