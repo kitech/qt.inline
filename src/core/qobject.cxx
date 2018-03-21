@@ -374,8 +374,9 @@ void C_ZN7QObject17removeEventFilterEPS_(void *this_, QObject * obj) {
 // /usr/include/qt/QtCore/qobject.h:214
 // [8] QMetaObject::Connection connect(const class QObject *, const char *, const class QObject *, const char *, Qt::ConnectionType)
 extern "C" Q_DECL_EXPORT
-QMetaObject::Connection C_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE(const QObject * sender, const char * signal, const QObject * receiver, const char * member, Qt::ConnectionType arg4) {
-  return (QMetaObject::Connection)QObject::connect(sender, signal, receiver, member, arg4);
+void* C_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE(const QObject * sender, const char * signal, const QObject * receiver, const char * member, Qt::ConnectionType arg4) {
+  auto rv = QObject::connect(sender, signal, receiver, member, arg4);
+return new QMetaObject::Connection(rv);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -384,8 +385,9 @@ QMetaObject::Connection C_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE(
 // [8] QMetaObject::Connection connect(const class QObject *, const class QMetaMethod &, const class QObject *, const class QMetaMethod &, Qt::ConnectionType)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
-QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* method, Qt::ConnectionType type_) {
-  return (QMetaObject::Connection)QObject::connect(sender, *signal, receiver, *method, type_);
+void* C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* method, Qt::ConnectionType type_) {
+  auto rv = QObject::connect(sender, *signal, receiver, *method, type_);
+return new QMetaObject::Connection(rv);
 }
 #endif // QT_VERSION >= 0x040800
 
@@ -393,8 +395,9 @@ QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14Conn
 // /usr/include/qt/QtCore/qobject.h:221
 // [8] QMetaObject::Connection connect(const class QObject *, const char *, const char *, Qt::ConnectionType)
 extern "C" Q_DECL_EXPORT
-QMetaObject::Connection C_ZNK7QObject7connectEPKS_PKcS3_N2Qt14ConnectionTypeE(void *this_, const QObject * sender, const char * signal, const char * member, Qt::ConnectionType type_) {
-  return (QMetaObject::Connection)((QObject*)this_)->connect(sender, signal, member, type_);
+void* C_ZNK7QObject7connectEPKS_PKcS3_N2Qt14ConnectionTypeE(void *this_, const QObject * sender, const char * signal, const char * member, Qt::ConnectionType type_) {
+  auto rv = ((QObject*)this_)->connect(sender, signal, member, type_);
+return new QMetaObject::Connection(rv);
 }
 
 // Public static Visibility=Default Availability=Available

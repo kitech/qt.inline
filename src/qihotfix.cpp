@@ -25,6 +25,13 @@ Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
   一些解析错误的符号表
  */
 
+
+// QMetaObject::Connection::~Connection()
+extern "C" Q_DECL_EXPORT
+void C_ZN11QMetaObject10ConnectionD2Ev(void* qthis) {
+    delete (QMetaObject::Connection*)(qthis); qthis = 0;
+}
+
 #include <qscreen.h>
 #include <qpixmap.h>
 extern "C" Q_DECL_EXPORT
