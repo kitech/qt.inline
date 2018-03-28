@@ -19,7 +19,7 @@ public:
   virtual ~MyQPainterPathStroker() {}
 // void QPainterPathStroker()
 MyQPainterPathStroker() : QPainterPathStroker() {}
-// void QPainterPathStroker(const class QPen &)
+// void QPainterPathStroker(const QPen &)
 MyQPainterPathStroker(const QPen & pen) : QPainterPathStroker(pen) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZN19QPainterPathStrokerC2Ev() {
 // Public Visibility=Default Availability=Available
 // since 5.3
 // /usr/include/qt/QtGui/qpainterpath.h:247
-// [-2] void QPainterPathStroker(const class QPen &)
+// [-2] void QPainterPathStroker(const QPen &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QPainterPathStrokerC2ERK4QPen(QPen* pen) {
@@ -155,7 +155,7 @@ qreal C_ZNK19QPainterPathStroker10dashOffsetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:272
-// [8] QPainterPath createStroke(const class QPainterPath &)
+// [8] QPainterPath createStroke(const QPainterPath &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QPainterPathStroker12createStrokeERK12QPainterPath(void *this_, QPainterPath* path) {
   auto rv = ((QPainterPathStroker*)this_)->createStroke(*path);

@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQDataWidgetMapper : public QDataWidgetMapper {
 public:
   virtual ~MyQDataWidgetMapper() {}
-// void QDataWidgetMapper(class QObject *)
+// void QDataWidgetMapper(QObject *)
 MyQDataWidgetMapper(QObject * parent) : QDataWidgetMapper(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK17QDataWidgetMapper10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:64
-// [-2] void QDataWidgetMapper(class QObject *)
+// [-2] void QDataWidgetMapper(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapperC2EP7QObject(QObject * parent) {
   return  new QDataWidgetMapper(parent);
@@ -46,7 +46,7 @@ void C_ZN17QDataWidgetMapperD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:67
-// [-2] void setModel(class QAbstractItemModel *)
+// [-2] void setModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
   ((QDataWidgetMapper*)this_)->setModel(model);
@@ -62,7 +62,7 @@ void* C_ZNK17QDataWidgetMapper5modelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:70
-// [-2] void setItemDelegate(class QAbstractItemDelegate *)
+// [-2] void setItemDelegate(QAbstractItemDelegate *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate(void *this_, QAbstractItemDelegate * delegate) {
   ((QDataWidgetMapper*)this_)->setItemDelegate(delegate);
@@ -78,7 +78,7 @@ void* C_ZNK17QDataWidgetMapper12itemDelegateEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:73
-// [-2] void setRootIndex(const class QModelIndex &)
+// [-2] void setRootIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QDataWidgetMapper*)this_)->setRootIndex(*index);
@@ -111,7 +111,7 @@ Qt::Orientation C_ZNK17QDataWidgetMapper11orientationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:81
-// [-2] void setSubmitPolicy(enum QDataWidgetMapper::SubmitPolicy)
+// [-2] void setSubmitPolicy(QDataWidgetMapper::SubmitPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE(void *this_, QDataWidgetMapper::SubmitPolicy policy) {
   ((QDataWidgetMapper*)this_)->setSubmitPolicy(policy);
@@ -127,7 +127,7 @@ QDataWidgetMapper::SubmitPolicy C_ZNK17QDataWidgetMapper12submitPolicyEv(void *t
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:84
-// [-2] void addMapping(class QWidget *, int)
+// [-2] void addMapping(QWidget *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widget, int section) {
   ((QDataWidgetMapper*)this_)->addMapping(widget, section);
@@ -136,7 +136,7 @@ void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widge
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:85
-// [-2] void addMapping(class QWidget *, int, const class QByteArray &)
+// [-2] void addMapping(QWidget *, int, const QByteArray &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, QWidget * widget, int section, QByteArray* propertyName) {
@@ -146,7 +146,7 @@ void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:86
-// [-2] void removeMapping(class QWidget *)
+// [-2] void removeMapping(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *this_, QWidget * widget) {
   ((QDataWidgetMapper*)this_)->removeMapping(widget);
@@ -154,7 +154,7 @@ void C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *this_, QWidget * wid
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:87
-// [4] int mappedSection(class QWidget *)
+// [4] int mappedSection(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *this_, QWidget * widget) {
   return (int)((QDataWidgetMapper*)this_)->mappedSection(widget);
@@ -163,7 +163,7 @@ int C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *this_, QWidget * wid
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:88
-// [8] QByteArray mappedPropertyName(class QWidget *)
+// [8] QByteArray mappedPropertyName(QWidget *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper18mappedPropertyNameEP7QWidget(void *this_, QWidget * widget) {
@@ -254,7 +254,7 @@ void C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:103
-// [-2] void setCurrentModelIndex(const class QModelIndex &)
+// [-2] void setCurrentModelIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QDataWidgetMapper*)this_)->setCurrentModelIndex(*index);

@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQGraphicsSceneContextMenuEvent : public QGraphicsSceneContextMenuEvent {
 public:
   virtual ~MyQGraphicsSceneContextMenuEvent() {}
-// void QGraphicsSceneContextMenuEvent(enum QEvent::Type)
+// void QGraphicsSceneContextMenuEvent(QEvent::Type)
 MyQGraphicsSceneContextMenuEvent(QEvent::Type type_) : QGraphicsSceneContextMenuEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:174
-// [-2] void QGraphicsSceneContextMenuEvent(enum QEvent::Type)
+// [-2] void QGraphicsSceneContextMenuEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneContextMenuEvent(type_);
@@ -47,7 +47,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:178
-// [-2] void setPos(const class QPointF &)
+// [-2] void setPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneContextMenuEvent*)this_)->setPos(*pos);
@@ -64,7 +64,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:181
-// [-2] void setScenePos(const class QPointF &)
+// [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneContextMenuEvent*)this_)->setScenePos(*pos);
@@ -81,7 +81,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:184
-// [-2] void setScreenPos(const class QPoint &)
+// [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
   ((QGraphicsSceneContextMenuEvent*)this_)->setScreenPos(*pos);
@@ -113,7 +113,7 @@ QGraphicsSceneContextMenuEvent::Reason C_ZNK30QGraphicsSceneContextMenuEvent6rea
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:190
-// [-2] void setReason(enum QGraphicsSceneContextMenuEvent::Reason)
+// [-2] void setReason(QGraphicsSceneContextMenuEvent::Reason)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent9setReasonENS_6ReasonE(void *this_, QGraphicsSceneContextMenuEvent::Reason reason) {
   ((QGraphicsSceneContextMenuEvent*)this_)->setReason(reason);

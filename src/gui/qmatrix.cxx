@@ -50,7 +50,7 @@ void* C_ZN7QMatrixC2Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:67
-// [48] QMatrix & operator=(class QMatrix &&)
+// [48] QMatrix & operator=(QMatrix &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixaSEOS_(void *this_, QMatrix && other) {
   auto& rv = ((QMatrix*)this_)->operator=(other);
@@ -59,7 +59,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:69
-// [48] QMatrix & operator=(const class QMatrix &)
+// [48] QMatrix & operator=(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixaSERKS_(void *this_, QMatrix* arg0) {
   auto& rv = ((QMatrix*)this_)->operator=(*arg0);
@@ -140,7 +140,7 @@ void C_ZNK7QMatrix3mapEddPdS0_(void *this_, qreal x, qreal y, qreal * tx, qreal 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:87
-// [16] QRect mapRect(const class QRect &)
+// [16] QRect mapRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix7mapRectERK5QRect(void *this_, QRect* arg0) {
   auto rv = ((QMatrix*)this_)->mapRect(*arg0);
@@ -149,7 +149,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:88
-// [32] QRectF mapRect(const class QRectF &)
+// [32] QRectF mapRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix7mapRectERK6QRectF(void *this_, QRectF* arg0) {
   auto rv = ((QMatrix*)this_)->mapRect(*arg0);
@@ -158,7 +158,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:90
-// [8] QPoint map(const class QPoint &)
+// [8] QPoint map(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QMatrix*)this_)->map(*p);
@@ -167,7 +167,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:91
-// [16] QPointF map(const class QPointF &)
+// [16] QPointF map(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK7QPointF(void *this_, QPointF* p) {
   auto rv = ((QMatrix*)this_)->map(*p);
@@ -176,7 +176,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:92
-// [16] QLine map(const class QLine &)
+// [16] QLine map(const QLine &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK5QLine(void *this_, QLine* l) {
   auto rv = ((QMatrix*)this_)->map(*l);
@@ -185,7 +185,7 @@ return new QLine(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:93
-// [32] QLineF map(const class QLineF &)
+// [32] QLineF map(const QLineF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK6QLineF(void *this_, QLineF* l) {
   auto rv = ((QMatrix*)this_)->map(*l);
@@ -194,7 +194,7 @@ return new QLineF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:94
-// [8] QPolygonF map(const class QPolygonF &)
+// [8] QPolygonF map(const QPolygonF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK9QPolygonF(void *this_, QPolygonF* a) {
   auto rv = ((QMatrix*)this_)->map(*a);
@@ -203,7 +203,7 @@ return new QPolygonF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:95
-// [8] QPolygon map(const class QPolygon &)
+// [8] QPolygon map(const QPolygon &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK8QPolygon(void *this_, QPolygon* a) {
   auto rv = ((QMatrix*)this_)->map(*a);
@@ -212,7 +212,7 @@ return new QPolygon(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:96
-// [8] QRegion map(const class QRegion &)
+// [8] QRegion map(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK7QRegion(void *this_, QRegion* r) {
   auto rv = ((QMatrix*)this_)->map(*r);
@@ -221,7 +221,7 @@ return new QRegion(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:97
-// [8] QPainterPath map(const class QPainterPath &)
+// [8] QPainterPath map(const QPainterPath &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix3mapERK12QPainterPath(void *this_, QPainterPath* p) {
   auto rv = ((QMatrix*)this_)->map(*p);
@@ -230,7 +230,7 @@ return new QPainterPath(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:98
-// [8] QPolygon mapToPolygon(const class QRect &)
+// [8] QPolygon mapToPolygon(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix12mapToPolygonERK5QRect(void *this_, QRect* r) {
   auto rv = ((QMatrix*)this_)->mapToPolygon(*r);
@@ -307,7 +307,7 @@ qreal C_ZNK7QMatrix11determinantEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:111
-// [48] QMatrix inverted(_Bool *)
+// [48] QMatrix inverted(bool *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrix8invertedEPb(void *this_, bool * invertible) {
   auto rv = ((QMatrix*)this_)->inverted(invertible);
@@ -316,7 +316,7 @@ return new QMatrix(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:113
-// [1] bool operator==(const class QMatrix &)
+// [1] bool operator==(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QMatrixeqERKS_(void *this_, QMatrix* arg0) {
   return (bool)((QMatrix*)this_)->operator==(*arg0);
@@ -324,7 +324,7 @@ bool C_ZNK7QMatrixeqERKS_(void *this_, QMatrix* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:114
-// [1] bool operator!=(const class QMatrix &)
+// [1] bool operator!=(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QMatrixneERKS_(void *this_, QMatrix* arg0) {
   return (bool)((QMatrix*)this_)->operator!=(*arg0);
@@ -332,7 +332,7 @@ bool C_ZNK7QMatrixneERKS_(void *this_, QMatrix* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:116
-// [48] QMatrix & operator*=(const class QMatrix &)
+// [48] QMatrix & operator*=(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixmLERKS_(void *this_, QMatrix* arg0) {
   auto& rv = ((QMatrix*)this_)->operator*=(*arg0);
@@ -341,7 +341,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:117
-// [48] QMatrix operator*(const class QMatrix &)
+// [48] QMatrix operator*(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QMatrixmlERKS_(void *this_, QMatrix* o) {
   auto rv = ((QMatrix*)this_)->operator*(*o);

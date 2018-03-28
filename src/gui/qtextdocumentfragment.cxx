@@ -18,9 +18,9 @@ public:
   virtual ~MyQTextDocumentFragment() {}
 // void QTextDocumentFragment()
 MyQTextDocumentFragment() : QTextDocumentFragment() {}
-// void QTextDocumentFragment(const class QTextDocument *)
+// void QTextDocumentFragment(const QTextDocument *)
 MyQTextDocumentFragment(const QTextDocument * document) : QTextDocumentFragment(document) {}
-// void QTextDocumentFragment(const class QTextCursor &)
+// void QTextDocumentFragment(const QTextCursor &)
 MyQTextDocumentFragment(const QTextCursor & range_) : QTextDocumentFragment(range_) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZN21QTextDocumentFragmentC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:58
-// [-2] void QTextDocumentFragment(const class QTextDocument *)
+// [-2] void QTextDocumentFragment(const QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentC2EPK13QTextDocument(const QTextDocument * document) {
   return  new QTextDocumentFragment(document);
@@ -42,7 +42,7 @@ void* C_ZN21QTextDocumentFragmentC2EPK13QTextDocument(const QTextDocument * docu
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:59
-// [-2] void QTextDocumentFragment(const class QTextCursor &)
+// [-2] void QTextDocumentFragment(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(QTextCursor* range_) {
   return  new QTextDocumentFragment(*range_);
@@ -50,7 +50,7 @@ void* C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(QTextCursor* range_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:61
-// [8] QTextDocumentFragment & operator=(const class QTextDocumentFragment &)
+// [8] QTextDocumentFragment & operator=(const QTextDocumentFragment &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentaSERKS_(void *this_, QTextDocumentFragment* rhs) {
   auto& rv = ((QTextDocumentFragment*)this_)->operator=(*rhs);
@@ -84,7 +84,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:68
-// [8] QString toHtml(const class QByteArray &)
+// [8] QString toHtml(const QByteArray &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QTextDocumentFragment6toHtmlERK10QByteArray(void *this_, QByteArray* encoding) {
@@ -95,7 +95,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:71
-// [8] QTextDocumentFragment fromPlainText(const class QString &)
+// [8] QTextDocumentFragment fromPlainText(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragment13fromPlainTextERK7QString(QString* plainText) {
   auto rv = QTextDocumentFragment::fromPlainText(*plainText);
@@ -104,7 +104,7 @@ return new QTextDocumentFragment(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:73
-// [8] QTextDocumentFragment fromHtml(const class QString &)
+// [8] QTextDocumentFragment fromHtml(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragment8fromHtmlERK7QString(QString* html) {
   auto rv = QTextDocumentFragment::fromHtml(*html);
@@ -114,7 +114,7 @@ return new QTextDocumentFragment(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:74
-// [8] QTextDocumentFragment fromHtml(const class QString &, const class QTextDocument *)
+// [8] QTextDocumentFragment fromHtml(const QString &, const QTextDocument *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragment8fromHtmlERK7QStringPK13QTextDocument(QString* html, const QTextDocument * resourceProvider) {

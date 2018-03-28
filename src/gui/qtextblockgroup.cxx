@@ -15,13 +15,12 @@
 
 class Q_DECL_EXPORT MyQTextBlockGroup : public QTextBlockGroup {
 public:
-  virtual ~MyQTextBlockGroup() {}
-// void QTextBlockGroup(class QTextDocument *)
+// void QTextBlockGroup(QTextDocument *)
 MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // Protected virtual Visibility=Default Availability=Available
 // void ~QTextBlockGroup()
 // Protected virtual Visibility=Default Availability=Available
-// void blockInserted(const class QTextBlock &)
+// void blockInserted(const QTextBlock &)
   virtual void blockInserted(const QTextBlock & block) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"blockInserted", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +32,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void blockRemoved(const class QTextBlock &)
+// void blockRemoved(const QTextBlock &)
   virtual void blockRemoved(const QTextBlock & block) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"blockRemoved", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +44,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void blockFormatChanged(const class QTextBlock &)
+// void blockFormatChanged(const QTextBlock &)
   virtual void blockFormatChanged(const QTextBlock & block) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"blockFormatChanged", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -60,7 +59,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:98
-// [-2] void blockInserted(const class QTextBlock &)
+// [-2] void blockInserted(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockInserted(*block);
@@ -68,7 +67,7 @@ void C_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(void *this_, QTextBlock
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:99
-// [-2] void blockRemoved(const class QTextBlock &)
+// [-2] void blockRemoved(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockRemoved(*block);
@@ -76,7 +75,7 @@ void C_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void *this_, QTextBlock*
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:100
-// [-2] void blockFormatChanged(const class QTextBlock &)
+// [-2] void blockFormatChanged(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockFormatChanged(*block);

@@ -21,7 +21,7 @@ public:
 MyQMarginsF() : QMarginsF() {}
 // void QMarginsF(qreal, qreal, qreal, qreal)
 MyQMarginsF(qreal left, qreal top, qreal right, qreal bottom) : QMarginsF(left, top, right, bottom) {}
-// void QMarginsF(const class QMargins &)
+// void QMarginsF(const QMargins &)
 MyQMarginsF(const QMargins & margins) : QMarginsF(margins) {}
 };
 
@@ -43,7 +43,7 @@ void* C_ZN9QMarginsFC2Edddd(qreal left, qreal top, qreal right, qreal bottom) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:290
-// [-2] void QMarginsF(const class QMargins &)
+// [-2] void QMarginsF(const QMargins &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMarginsFC2ERK8QMargins(QMargins* margins) {
   return  new QMarginsF(*margins);
@@ -123,7 +123,7 @@ void C_ZN9QMarginsF9setBottomEd(void *this_, qreal bottom) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:304
-// [32] QMarginsF & operator+=(const class QMarginsF &)
+// [32] QMarginsF & operator+=(const QMarginsF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMarginsFpLERKS_(void *this_, QMarginsF* margins) {
   auto& rv = ((QMarginsF*)this_)->operator+=(*margins);
@@ -132,7 +132,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:305
-// [32] QMarginsF & operator-=(const class QMarginsF &)
+// [32] QMarginsF & operator-=(const QMarginsF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMarginsFmIERKS_(void *this_, QMarginsF* margins) {
   auto& rv = ((QMarginsF*)this_)->operator-=(*margins);

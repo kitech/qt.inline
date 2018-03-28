@@ -37,7 +37,7 @@ void C_ZN20QSGSimpleTextureNodeD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:57
-// [-2] void setRect(const class QRectF &)
+// [-2] void setRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGSimpleTextureNode7setRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGSimpleTextureNode*)this_)->setRect(*rect);
@@ -62,7 +62,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:61
-// [-2] void setSourceRect(const class QRectF &)
+// [-2] void setSourceRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGSimpleTextureNode13setSourceRectERK6QRectF(void *this_, QRectF* r) {
   ((QSGSimpleTextureNode*)this_)->setSourceRect(*r);
@@ -87,7 +87,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:65
-// [-2] void setTexture(class QSGTexture *)
+// [-2] void setTexture(QSGTexture *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGSimpleTextureNode10setTextureEP10QSGTexture(void *this_, QSGTexture * texture) {
   ((QSGSimpleTextureNode*)this_)->setTexture(texture);
@@ -103,7 +103,7 @@ void* C_ZNK20QSGSimpleTextureNode7textureEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:68
-// [-2] void setFiltering(class QSGTexture::Filtering)
+// [-2] void setFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGSimpleTextureNode12setFilteringEN10QSGTexture9FilteringE(void *this_, QSGTexture::Filtering filtering) {
   ((QSGSimpleTextureNode*)this_)->setFiltering(filtering);
@@ -136,7 +136,7 @@ return new QSGSimpleTextureNode::TextureCoordinatesTransformMode(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:81
-// [-2] void setOwnsTexture(_Bool)
+// [-2] void setOwnsTexture(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGSimpleTextureNode14setOwnsTextureEb(void *this_, bool owns) {
   ((QSGSimpleTextureNode*)this_)->setOwnsTexture(owns);

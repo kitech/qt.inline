@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQGraphicsItemGroup : public QGraphicsItemGroup {
 public:
   virtual ~MyQGraphicsItemGroup() {}
-// void QGraphicsItemGroup(class QGraphicsItem *)
+// void QGraphicsItemGroup(QGraphicsItem *)
 MyQGraphicsItemGroup(QGraphicsItem * parent) : QGraphicsItemGroup(parent) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1004
-// [-2] void QGraphicsItemGroup(class QGraphicsItem *)
+// [-2] void QGraphicsItemGroup(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QGraphicsItemGroupC2EP13QGraphicsItem(QGraphicsItem * parent) {
   return  new QGraphicsItemGroup(parent);
@@ -38,7 +38,7 @@ void C_ZN18QGraphicsItemGroupD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1007
-// [-2] void addToGroup(class QGraphicsItem *)
+// [-2] void addToGroup(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroup10addToGroupEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
   ((QGraphicsItemGroup*)this_)->addToGroup(item);
@@ -46,7 +46,7 @@ void C_ZN18QGraphicsItemGroup10addToGroupEP13QGraphicsItem(void *this_, QGraphic
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1008
-// [-2] void removeFromGroup(class QGraphicsItem *)
+// [-2] void removeFromGroup(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroup15removeFromGroupEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
   ((QGraphicsItemGroup*)this_)->removeFromGroup(item);
@@ -63,7 +63,7 @@ return new QRectF(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1011
-// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroup5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsItemGroup*)this_)->paint(painter, option, widget);
@@ -71,7 +71,7 @@ void C_ZN18QGraphicsItemGroup5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWid
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1013
-// [1] bool isObscuredBy(const class QGraphicsItem *)
+// [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QGraphicsItemGroup12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QGraphicsItemGroup*)this_)->isObscuredBy(item);

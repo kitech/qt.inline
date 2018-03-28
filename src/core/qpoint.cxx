@@ -106,7 +106,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:70
-// [8] QPoint & operator+=(const class QPoint &)
+// [8] QPoint & operator+=(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QPointpLERKS_(void *this_, QPoint* p) {
   auto& rv = ((QPoint*)this_)->operator+=(*p);
@@ -115,7 +115,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:71
-// [8] QPoint & operator-=(const class QPoint &)
+// [8] QPoint & operator-=(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QPointmIERKS_(void *this_, QPoint* p) {
   auto& rv = ((QPoint*)this_)->operator-=(*p);
@@ -161,7 +161,7 @@ return &rv;
 // Public static inline Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtCore/qpoint.h:79
-// [4] int dotProduct(const class QPoint &, const class QPoint &)
+// [4] int dotProduct(const QPoint &, const QPoint &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 int C_ZN6QPoint10dotProductERKS_S1_(QPoint* p1, QPoint* p2) {

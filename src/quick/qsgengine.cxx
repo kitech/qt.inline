@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQSGEngine : public QSGEngine {
 public:
   virtual ~MyQSGEngine() {}
-// void QSGEngine(class QObject *)
+// void QSGEngine(QObject *)
 MyQSGEngine(QObject * parent) : QSGEngine(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK9QSGEngine10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgengine.h:70
-// [-2] void QSGEngine(class QObject *)
+// [-2] void QSGEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSGEngineC2EP7QObject(QObject * parent) {
   return  new QSGEngine(parent);
@@ -62,7 +62,7 @@ void* C_ZNK9QSGEngine14createRendererEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgengine.h:77
-// [8] QSGTexture * createTextureFromImage(const class QImage &, QSGEngine::CreateTextureOptions)
+// [8] QSGTexture * createTextureFromImage(const QImage &, QSGEngine::CreateTextureOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine22createTextureFromImageERK6QImage6QFlagsINS_19CreateTextureOptionEE(void *this_, QImage* image, QFlags<QSGEngine::CreateTextureOption> options) {
   return (void*)((QSGEngine*)this_)->createTextureFromImage(*image, options);
@@ -70,7 +70,7 @@ void* C_ZNK9QSGEngine22createTextureFromImageERK6QImage6QFlagsINS_19CreateTextur
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgengine.h:78
-// [8] QSGTexture * createTextureFromId(uint, const class QSize &, QSGEngine::CreateTextureOptions)
+// [8] QSGTexture * createTextureFromId(uint, const QSize &, QSGEngine::CreateTextureOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine19createTextureFromIdEjRK5QSize6QFlagsINS_19CreateTextureOptionEE(void *this_, uint id, QSize* size, QFlags<QSGEngine::CreateTextureOption> options) {
   return (void*)((QSGEngine*)this_)->createTextureFromId(id, *size, options);

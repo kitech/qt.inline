@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQChildEvent : public QChildEvent {
 public:
   virtual ~MyQChildEvent() {}
-// void QChildEvent(enum QEvent::Type, class QObject *)
+// void QChildEvent(QEvent::Type, QObject *)
 MyQChildEvent(QEvent::Type type_, QObject * child) : QChildEvent(type_, child) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:352
-// [-2] void QChildEvent(enum QEvent::Type, class QObject *)
+// [-2] void QChildEvent(QEvent::Type, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QChildEventC2EN6QEvent4TypeEP7QObject(QEvent::Type type_, QObject * child) {
   return  new QChildEvent(type_, child);

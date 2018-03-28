@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQCryptographicHash : public QCryptographicHash {
 public:
   virtual ~MyQCryptographicHash() {}
-// void QCryptographicHash(enum QCryptographicHash::Algorithm)
+// void QCryptographicHash(QCryptographicHash::Algorithm)
 MyQCryptographicHash(QCryptographicHash::Algorithm method) : QCryptographicHash(method) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcryptographichash.h:92
-// [-2] void QCryptographicHash(enum QCryptographicHash::Algorithm)
+// [-2] void QCryptographicHash(QCryptographicHash::Algorithm)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCryptographicHashC2ENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
   return  new QCryptographicHash(method);
@@ -54,7 +54,7 @@ void C_ZN18QCryptographicHash7addDataEPKci(void *this_, const char * data, int l
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcryptographichash.h:98
-// [-2] void addData(const class QByteArray &)
+// [-2] void addData(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, QByteArray* data) {
   ((QCryptographicHash*)this_)->addData(*data);
@@ -63,7 +63,7 @@ void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, QByteArray* da
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qcryptographichash.h:99
-// [1] bool addData(class QIODevice *)
+// [1] bool addData(QIODevice *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QCryptographicHash7addDataEP9QIODevice(void *this_, QIODevice * device) {
@@ -82,7 +82,7 @@ return new QByteArray(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcryptographichash.h:103
-// [8] QByteArray hash(const class QByteArray &, enum QCryptographicHash::Algorithm)
+// [8] QByteArray hash(const QByteArray &, QCryptographicHash::Algorithm)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(QByteArray* data, QCryptographicHash::Algorithm method) {
   auto rv = QCryptographicHash::hash(*data, method);

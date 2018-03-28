@@ -19,7 +19,7 @@ public:
   virtual ~MyQJSEngine() {}
 // void QJSEngine()
 MyQJSEngine() : QJSEngine() {}
-// void QJSEngine(class QObject *)
+// void QJSEngine(QObject *)
 MyQJSEngine(QObject * parent) : QJSEngine(parent) {}
 };
 
@@ -41,7 +41,7 @@ void* C_ZN9QJSEngineC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:65
-// [-2] void QJSEngine(class QObject *)
+// [-2] void QJSEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngineC2EP7QObject(QObject * parent) {
   return  new QJSEngine(parent);
@@ -65,7 +65,7 @@ return new QJSValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:70
-// [8] QJSValue evaluate(const class QString &, const class QString &, int)
+// [8] QJSValue evaluate(const QString &, const QString &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngine8evaluateERK7QStringS2_i(void *this_, QString* program, QString* fileName, int lineNumber) {
   auto rv = ((QJSEngine*)this_)->evaluate(*program, *fileName, lineNumber);
@@ -92,7 +92,7 @@ return new QJSValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:75
-// [8] QJSValue newQObject(class QObject *)
+// [8] QJSValue newQObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngine10newQObjectEP7QObject(void *this_, QObject * object) {
   auto rv = ((QJSEngine*)this_)->newQObject(object);
@@ -109,7 +109,7 @@ void C_ZN9QJSEngine14collectGarbageEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:99
-// [-2] void installTranslatorFunctions(const class QJSValue &)
+// [-2] void installTranslatorFunctions(const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QJSEngine26installTranslatorFunctionsERK8QJSValue(void *this_, QJSValue* object) {
   ((QJSEngine*)this_)->installTranslatorFunctions(*object);
@@ -117,7 +117,7 @@ void C_ZN9QJSEngine26installTranslatorFunctionsERK8QJSValue(void *this_, QJSValu
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:110
-// [-2] void installExtensions(QJSEngine::Extensions, const class QJSValue &)
+// [-2] void installExtensions(QJSEngine::Extensions, const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QJSEngine17installExtensionsE6QFlagsINS_9ExtensionEERK8QJSValue(void *this_, QFlags<QJSEngine::Extension> extensions, QJSValue* object) {
   ((QJSEngine*)this_)->installExtensions(extensions, *object);

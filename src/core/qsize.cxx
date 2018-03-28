@@ -124,7 +124,7 @@ void C_ZN5QSize5scaleEiiN2Qt15AspectRatioModeE(void *this_, int w, int h, Qt::As
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:70
-// [-2] void scale(const class QSize &, Qt::AspectRatioMode)
+// [-2] void scale(const QSize &, Qt::AspectRatioMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QSize5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSize* s, Qt::AspectRatioMode mode) {
   ((QSize*)this_)->scale(*s, mode);
@@ -145,7 +145,7 @@ return new QSize(rv);
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qsize.h:72
-// [8] QSize scaled(const class QSize &, Qt::AspectRatioMode)
+// [8] QSize scaled(const QSize &, Qt::AspectRatioMode)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QSize6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSize* s, Qt::AspectRatioMode mode) {
@@ -156,7 +156,7 @@ return new QSize(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:74
-// [8] QSize expandedTo(const class QSize &)
+// [8] QSize expandedTo(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QSize10expandedToERKS_(void *this_, QSize* arg0) {
   auto rv = ((QSize*)this_)->expandedTo(*arg0);
@@ -165,7 +165,7 @@ return new QSize(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:75
-// [8] QSize boundedTo(const class QSize &)
+// [8] QSize boundedTo(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QSize9boundedToERKS_(void *this_, QSize* arg0) {
   auto rv = ((QSize*)this_)->boundedTo(*arg0);
@@ -192,7 +192,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:80
-// [8] QSize & operator+=(const class QSize &)
+// [8] QSize & operator+=(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QSizepLERKS_(void *this_, QSize* arg0) {
   auto& rv = ((QSize*)this_)->operator+=(*arg0);
@@ -201,7 +201,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:81
-// [8] QSize & operator-=(const class QSize &)
+// [8] QSize & operator-=(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QSizemIERKS_(void *this_, QSize* arg0) {
   auto& rv = ((QSize*)this_)->operator-=(*arg0);

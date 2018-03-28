@@ -19,9 +19,9 @@ public:
   virtual ~MyQSslKey() {}
 // void QSslKey()
 MyQSslKey() : QSslKey() {}
-// void QSslKey(const class QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const class QByteArray &)
+// void QSslKey(const QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
 MyQSslKey(const QByteArray & encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase) : QSslKey(encoded, algorithm, format, type_, passPhrase) {}
-// void QSslKey(class QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const class QByteArray &)
+// void QSslKey(QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
 MyQSslKey(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase) : QSslKey(device, algorithm, format, type_, passPhrase) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN7QSslKeyC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:64
-// [-2] void QSslKey(const class QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const class QByteArray &)
+// [-2] void QSslKey(const QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyC2ERK10QByteArrayN4QSsl12KeyAlgorithmENS3_14EncodingFormatENS3_7KeyTypeES2_(QByteArray* encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, QByteArray* passPhrase) {
   return  new QSslKey(*encoded, algorithm, format, type_, *passPhrase);
@@ -43,7 +43,7 @@ void* C_ZN7QSslKeyC2ERK10QByteArrayN4QSsl12KeyAlgorithmENS3_14EncodingFormatENS3
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:68
-// [-2] void QSslKey(class QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const class QByteArray &)
+// [-2] void QSslKey(QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyC2EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7KeyTypeERK10QByteArray(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, QByteArray* passPhrase) {
   return  new QSslKey(device, algorithm, format, type_, *passPhrase);
@@ -51,7 +51,7 @@ void* C_ZN7QSslKeyC2EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7K
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:75
-// [8] QSslKey & operator=(class QSslKey &&)
+// [8] QSslKey & operator=(QSslKey &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyaSEOS_(void *this_, QSslKey && other) {
   auto& rv = ((QSslKey*)this_)->operator=(other);
@@ -60,7 +60,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:77
-// [8] QSslKey & operator=(const class QSslKey &)
+// [8] QSslKey & operator=(const QSslKey &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyaSERKS_(void *this_, QSslKey* other) {
   auto& rv = ((QSslKey*)this_)->operator=(*other);
@@ -77,7 +77,7 @@ void C_ZN7QSslKeyD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qsslkey.h:80
-// [-2] void swap(class QSslKey &)
+// [-2] void swap(QSslKey &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSslKey4swapERS_(void *this_, QSslKey* other) {
@@ -127,7 +127,7 @@ QSsl::KeyAlgorithm C_ZNK7QSslKey9algorithmEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:89
-// [8] QByteArray toPem(const class QByteArray &)
+// [8] QByteArray toPem(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSslKey5toPemERK10QByteArray(void *this_, QByteArray* passPhrase) {
   auto rv = ((QSslKey*)this_)->toPem(*passPhrase);
@@ -136,7 +136,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:90
-// [8] QByteArray toDer(const class QByteArray &)
+// [8] QByteArray toDer(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSslKey5toDerERK10QByteArray(void *this_, QByteArray* passPhrase) {
   auto rv = ((QSslKey*)this_)->toDer(*passPhrase);
@@ -153,7 +153,7 @@ Qt::HANDLE C_ZNK7QSslKey6handleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:94
-// [1] bool operator==(const class QSslKey &)
+// [1] bool operator==(const QSslKey &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QSslKeyeqERKS_(void *this_, QSslKey* key) {
   return (bool)((QSslKey*)this_)->operator==(*key);
@@ -161,7 +161,7 @@ bool C_ZNK7QSslKeyeqERKS_(void *this_, QSslKey* key) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:95
-// [1] bool operator!=(const class QSslKey &)
+// [1] bool operator!=(const QSslKey &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QSslKeyneERKS_(void *this_, QSslKey* key) {
   return (bool)((QSslKey*)this_)->operator!=(*key);

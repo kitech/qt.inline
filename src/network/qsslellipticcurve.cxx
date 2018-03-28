@@ -31,7 +31,7 @@ void* C_ZN17QSslEllipticCurveC2Ev() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:64
-// [4] QSslEllipticCurve fromShortName(const class QString &)
+// [4] QSslEllipticCurve fromShortName(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslEllipticCurve13fromShortNameERK7QString(QString* name) {
   auto rv = QSslEllipticCurve::fromShortName(*name);
@@ -40,7 +40,7 @@ return new QSslEllipticCurve(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:65
-// [4] QSslEllipticCurve fromLongName(const class QString &)
+// [4] QSslEllipticCurve fromLongName(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslEllipticCurve12fromLongNameERK7QString(QString* name) {
   auto rv = QSslEllipticCurve::fromLongName(*name);

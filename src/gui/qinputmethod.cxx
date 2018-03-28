@@ -32,7 +32,7 @@ return new QTransform(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:69
-// [-2] void setInputItemTransform(const class QTransform &)
+// [-2] void setInputItemTransform(const QTransform &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *this_, QTransform* transform) {
   ((QInputMethod*)this_)->setInputItemTransform(*transform);
@@ -53,7 +53,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtGui/qinputmethod.h:72
-// [-2] void setInputItemRectangle(const class QRectF &)
+// [-2] void setInputItemRectangle(const QRectF &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *this_, QRectF* rect) {
@@ -107,7 +107,7 @@ bool C_ZNK12QInputMethod9isVisibleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:90
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod10setVisibleEb(void *this_, bool visible) {
   ((QInputMethod*)this_)->setVisible(visible);
@@ -140,7 +140,7 @@ Qt::LayoutDirection C_ZNK12QInputMethod14inputDirectionEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:97
-// [16] QVariant queryFocusObject(Qt::InputMethodQuery, class QVariant)
+// [16] QVariant queryFocusObject(Qt::InputMethodQuery, QVariant)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputMethod16queryFocusObjectEN2Qt16InputMethodQueryE8QVariant(Qt::InputMethodQuery query, QVariant* argument) {
   auto rv = QInputMethod::queryFocusObject(query, *argument);
@@ -189,7 +189,7 @@ void C_ZN12QInputMethod6commitEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:107
-// [-2] void invokeAction(enum QInputMethod::Action, int)
+// [-2] void invokeAction(QInputMethod::Action, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputMethod12invokeActionENS_6ActionEi(void *this_, QInputMethod::Action a, int cursorPosition) {
   ((QInputMethod*)this_)->invokeAction(a, cursorPosition);

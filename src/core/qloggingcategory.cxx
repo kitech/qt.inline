@@ -25,7 +25,7 @@ void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
 // Public Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qloggingcategory.h:54
-// [-2] void QLoggingCategory(const char *, enum QtMsgType)
+// [-2] void QLoggingCategory(const char *, QtMsgType)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
@@ -42,7 +42,7 @@ void C_ZN16QLoggingCategoryD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:57
-// [1] bool isEnabled(enum QtMsgType)
+// [1] bool isEnabled(QtMsgType)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type_) {
   return (bool)((QLoggingCategory*)this_)->isEnabled(type_);
@@ -50,7 +50,7 @@ bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type_) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:58
-// [-2] void setEnabled(enum QtMsgType, _Bool)
+// [-2] void setEnabled(QtMsgType, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type_, bool enable) {
   ((QLoggingCategory*)this_)->setEnabled(type_, enable);
@@ -109,7 +109,7 @@ void* C_ZN16QLoggingCategory15defaultCategoryEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:82
-// [-2] void setFilterRules(const class QString &)
+// [-2] void setFilterRules(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QLoggingCategory14setFilterRulesERK7QString(QString* rules) {
   QLoggingCategory::setFilterRules(*rules);

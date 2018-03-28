@@ -27,7 +27,7 @@ void C_ZN8QQmlInfoD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:78
-// [16] QQmlInfo & operator<<(class QChar)
+// [16] QQmlInfo & operator<<(QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsE5QChar(void *this_, QChar* t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
@@ -36,7 +36,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:79
-// [16] QQmlInfo & operator<<(_Bool)
+// [16] QQmlInfo & operator<<(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsEb(void *this_, bool t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(t);
@@ -153,7 +153,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:92
-// [16] QQmlInfo & operator<<(const class QString &)
+// [16] QQmlInfo & operator<<(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsERK7QString(void *this_, QString* t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
@@ -162,7 +162,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:93
-// [16] QQmlInfo & operator<<(const class QStringRef &)
+// [16] QQmlInfo & operator<<(const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsERK10QStringRef(void *this_, QStringRef* t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
@@ -171,7 +171,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:94
-// [16] QQmlInfo & operator<<(const class QLatin1String &)
+// [16] QQmlInfo & operator<<(const QLatin1String &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsERK13QLatin1String(void *this_, QLatin1String* t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
@@ -180,7 +180,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:95
-// [16] QQmlInfo & operator<<(const class QByteArray &)
+// [16] QQmlInfo & operator<<(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsERK10QByteArray(void *this_, QByteArray* t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
@@ -198,7 +198,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:98
-// [16] QQmlInfo & operator<<(class QTextStreamManipulator)
+// [16] QQmlInfo & operator<<(QTextStreamManipulator)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsE22QTextStreamManipulator(void *this_, QTextStreamManipulator* m) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*m);
@@ -207,7 +207,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:100
-// [16] QQmlInfo & operator<<(const class QUrl &)
+// [16] QQmlInfo & operator<<(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsERK4QUrl(void *this_, QUrl* t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(*t);

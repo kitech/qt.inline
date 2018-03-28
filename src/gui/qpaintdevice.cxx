@@ -153,7 +153,7 @@ qreal C_ZN12QPaintDevice22devicePixelRatioFScaleEv() {
 
 // Private inline Visibility=Default Availability=NotAvailable
 // /usr/include/qt/QtGui/qpaintdevice.h:101
-// [-2] void QPaintDevice(const class QPaintDevice &)
+// [-2] void QPaintDevice(const QPaintDevice &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QPaintDeviceC2ERKS_(QPaintDevice* arg0) {
   return 0; // new QPaintDevice(*arg0);

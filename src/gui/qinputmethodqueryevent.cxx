@@ -46,7 +46,7 @@ Qt::InputMethodQueries C_ZNK22QInputMethodQueryEvent7queriesEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:586
-// [-2] void setValue(Qt::InputMethodQuery, const class QVariant &)
+// [-2] void setValue(Qt::InputMethodQuery, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QInputMethodQueryEvent8setValueEN2Qt16InputMethodQueryERK8QVariant(void *this_, Qt::InputMethodQuery query, QVariant* value) {
   ((QInputMethodQueryEvent*)this_)->setValue(query, *value);

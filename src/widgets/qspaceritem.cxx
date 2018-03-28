@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQSpacerItem : public QSpacerItem {
 public:
   virtual ~MyQSpacerItem() {}
-// void QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
+// void QSpacerItem(int, int, QSizePolicy::Policy, QSizePolicy::Policy)
 MyQSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) : QSpacerItem(w, h, hData, vData) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:95
-// [-2] void QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
+// [-2] void QSpacerItem(int, int, QSizePolicy::Policy, QSizePolicy::Policy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QSpacerItemC2EiiN11QSizePolicy6PolicyES1_(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) {
   return  new QSpacerItem(w, h, hData, vData);
@@ -37,7 +37,7 @@ void C_ZN11QSpacerItemD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:101
-// [-2] void changeSize(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
+// [-2] void changeSize(int, int, QSizePolicy::Policy, QSizePolicy::Policy)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSpacerItem10changeSizeEiiN11QSizePolicy6PolicyES1_(void *this_, int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) {
   ((QSpacerItem*)this_)->changeSize(w, h, hData, vData);
@@ -88,7 +88,7 @@ bool C_ZNK11QSpacerItem7isEmptyEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:109
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSpacerItem11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QSpacerItem*)this_)->setGeometry(*arg0);

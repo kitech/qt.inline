@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQScreenOrientationChangeEvent : public QScreenOrientationChangeEvent {
 public:
   virtual ~MyQScreenOrientationChangeEvent() {}
-// void QScreenOrientationChangeEvent(class QScreen *, Qt::ScreenOrientation)
+// void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)
 MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientation) : QScreenOrientationChangeEvent(screen, orientation) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1038
-// [-2] void QScreenOrientationChangeEvent(class QScreen *, Qt::ScreenOrientation)
+// [-2] void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation) {
   return  new QScreenOrientationChangeEvent(screen, orientation);

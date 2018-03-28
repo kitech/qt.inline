@@ -16,19 +16,19 @@
 class Q_DECL_EXPORT MyQMouseEvent : public QMouseEvent {
 public:
   virtual ~MyQMouseEvent() {}
-// void QMouseEvent(enum QEvent::Type, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+// void QMouseEvent(QEvent::Type, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
 MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) : QMouseEvent(type_, localPos, button, buttons, modifiers) {}
-// void QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+// void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
 MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) : QMouseEvent(type_, localPos, screenPos, button, buttons, modifiers) {}
-// void QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+// void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
 MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) : QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers) {}
-// void QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
+// void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
 MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source) : QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers, source) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:107
-// [-2] void QMouseEvent(enum QEvent::Type, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+// [-2] void QMouseEvent(QEvent::Type, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFN2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type_, QPointF* localPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QMouseEvent(type_, *localPos, button, buttons, modifiers);
@@ -36,7 +36,7 @@ void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFN2Qt11MouseButtonE6QFlagsIS6_E
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:109
-// [-2] void QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+// [-2] void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type_, QPointF* localPos, QPointF* screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QMouseEvent(type_, *localPos, *screenPos, button, buttons, modifiers);
@@ -44,7 +44,7 @@ void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_N2Qt11MouseButtonE6QFlagsIS
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:112
-// [-2] void QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+// [-2] void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type_, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QMouseEvent(type_, *localPos, *windowPos, *screenPos, button, buttons, modifiers);
@@ -52,7 +52,7 @@ void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlag
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:115
-// [-2] void QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
+// [-2] void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEENS5_16MouseEventSourceE(QEvent::Type type_, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source) {
   return  new QMouseEvent(type_, *localPos, *windowPos, *screenPos, button, buttons, modifiers, source);
@@ -169,7 +169,7 @@ Qt::MouseButtons C_ZNK11QMouseEvent7buttonsEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:135
-// [-2] void setLocalPos(const class QPointF &)
+// [-2] void setLocalPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMouseEvent11setLocalPosERK7QPointF(void *this_, QPointF* localPosition) {
   ((QMouseEvent*)this_)->setLocalPos(*localPosition);

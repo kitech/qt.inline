@@ -18,7 +18,7 @@ public:
   virtual ~MyQRegExp() {}
 // void QRegExp()
 MyQRegExp() : QRegExp() {}
-// void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
+// void QRegExp(const QString &, Qt::CaseSensitivity, QRegExp::PatternSyntax)
 MyQRegExp(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) : QRegExp(pattern, cs, syntax) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZN7QRegExpC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:71
-// [-2] void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
+// [-2] void QRegExp(const QString &, Qt::CaseSensitivity, QRegExp::PatternSyntax)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(QString* pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
   return  new QRegExp(*pattern, cs, syntax);
@@ -47,7 +47,7 @@ void C_ZN7QRegExpD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:75
-// [8] QRegExp & operator=(const class QRegExp &)
+// [8] QRegExp & operator=(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExpaSERKS_(void *this_, QRegExp* rx) {
   auto& rv = ((QRegExp*)this_)->operator=(*rx);
@@ -56,7 +56,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:77
-// [8] QRegExp & operator=(class QRegExp &&)
+// [8] QRegExp & operator=(QRegExp &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExpaSEOS_(void *this_, QRegExp && other) {
   auto& rv = ((QRegExp*)this_)->operator=(other);
@@ -66,7 +66,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/qregexp.h:79
-// [-2] void swap(class QRegExp &)
+// [-2] void swap(QRegExp &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN7QRegExp4swapERS_(void *this_, QRegExp* other) {
@@ -76,7 +76,7 @@ void C_ZN7QRegExp4swapERS_(void *this_, QRegExp* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:81
-// [1] bool operator==(const class QRegExp &)
+// [1] bool operator==(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRegExpeqERKS_(void *this_, QRegExp* rx) {
   return (bool)((QRegExp*)this_)->operator==(*rx);
@@ -84,7 +84,7 @@ bool C_ZNK7QRegExpeqERKS_(void *this_, QRegExp* rx) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:82
-// [1] bool operator!=(const class QRegExp &)
+// [1] bool operator!=(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRegExpneERKS_(void *this_, QRegExp* rx) {
   return (bool)((QRegExp*)this_)->operator!=(*rx);
@@ -117,7 +117,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:87
-// [-2] void setPattern(const class QString &)
+// [-2] void setPattern(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QRegExp10setPatternERK7QString(void *this_, QString* pattern) {
   ((QRegExp*)this_)->setPattern(*pattern);
@@ -149,7 +149,7 @@ QRegExp::PatternSyntax C_ZNK7QRegExp13patternSyntaxEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:91
-// [-2] void setPatternSyntax(enum QRegExp::PatternSyntax)
+// [-2] void setPatternSyntax(QRegExp::PatternSyntax)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QRegExp16setPatternSyntaxENS_13PatternSyntaxE(void *this_, QRegExp::PatternSyntax syntax) {
   ((QRegExp*)this_)->setPatternSyntax(syntax);
@@ -165,7 +165,7 @@ bool C_ZNK7QRegExp9isMinimalEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:94
-// [-2] void setMinimal(_Bool)
+// [-2] void setMinimal(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QRegExp10setMinimalEb(void *this_, bool minimal) {
   ((QRegExp*)this_)->setMinimal(minimal);
@@ -173,7 +173,7 @@ void C_ZN7QRegExp10setMinimalEb(void *this_, bool minimal) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:96
-// [1] bool exactMatch(const class QString &)
+// [1] bool exactMatch(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRegExp10exactMatchERK7QString(void *this_, QString* str) {
   return (bool)((QRegExp*)this_)->exactMatch(*str);
@@ -181,7 +181,7 @@ bool C_ZNK7QRegExp10exactMatchERK7QString(void *this_, QString* str) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:98
-// [4] int indexIn(const class QString &, int, enum QRegExp::CaretMode)
+// [4] int indexIn(const QString &, int, QRegExp::CaretMode)
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QRegExp7indexInERK7QStringiNS_9CaretModeE(void *this_, QString* str, int offset, QRegExp::CaretMode caretMode) {
   return (int)((QRegExp*)this_)->indexIn(*str, offset, caretMode);
@@ -189,7 +189,7 @@ int C_ZNK7QRegExp7indexInERK7QStringiNS_9CaretModeE(void *this_, QString* str, i
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:99
-// [4] int lastIndexIn(const class QString &, int, enum QRegExp::CaretMode)
+// [4] int lastIndexIn(const QString &, int, QRegExp::CaretMode)
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QRegExp11lastIndexInERK7QStringiNS_9CaretModeE(void *this_, QString* str, int offset, QRegExp::CaretMode caretMode) {
   return (int)((QRegExp*)this_)->lastIndexIn(*str, offset, caretMode);
@@ -286,7 +286,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:113
-// [8] QString escape(const class QString &)
+// [8] QString escape(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExp6escapeERK7QString(QString* str) {
   auto rv = QRegExp::escape(*str);

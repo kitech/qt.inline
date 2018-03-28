@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsOpacityEffect : public QGraphicsOpacityEffect {
 public:
   virtual ~MyQGraphicsOpacityEffect() {}
-// void QGraphicsOpacityEffect(class QObject *)
+// void QGraphicsOpacityEffect(QObject *)
 MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void draw(class QPainter *)
+// void draw(QPainter *)
   virtual void draw(QPainter * painter) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:273
-// [-2] void draw(class QPainter *)
+// [-2] void draw(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect4drawEP8QPainter(void *this_, QPainter * painter) {
   ((QGraphicsOpacityEffect*)this_)->QGraphicsOpacityEffect::draw(painter);
@@ -51,7 +51,7 @@ void* C_ZNK22QGraphicsOpacityEffect10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:258
-// [-2] void QGraphicsOpacityEffect(class QObject *)
+// [-2] void QGraphicsOpacityEffect(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsOpacityEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsOpacityEffect*)(0);
@@ -92,7 +92,7 @@ void C_ZN22QGraphicsOpacityEffect10setOpacityEd(void *this_, qreal opacity) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:266
-// [-2] void setOpacityMask(const class QBrush &)
+// [-2] void setOpacityMask(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush(void *this_, QBrush* mask) {
   ((QGraphicsOpacityEffect*)this_)->setOpacityMask(*mask);
@@ -108,7 +108,7 @@ void C_ZN22QGraphicsOpacityEffect14opacityChangedEd(void *this_, qreal opacity) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:270
-// [-2] void opacityMaskChanged(const class QBrush &)
+// [-2] void opacityMaskChanged(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(void *this_, QBrush* mask) {
   ((QGraphicsOpacityEffect*)this_)->opacityMaskChanged(*mask);

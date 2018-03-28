@@ -19,9 +19,9 @@ public:
   virtual ~MyQSslCipher() {}
 // void QSslCipher()
 MyQSslCipher() : QSslCipher() {}
-// void QSslCipher(const class QString &)
+// void QSslCipher(const QString &)
 MyQSslCipher(const QString & name) : QSslCipher(name) {}
-// void QSslCipher(const class QString &, QSsl::SslProtocol)
+// void QSslCipher(const QString &, QSsl::SslProtocol)
 MyQSslCipher(const QString & name, QSsl::SslProtocol protocol) : QSslCipher(name, protocol) {}
 };
 
@@ -36,7 +36,7 @@ void* C_ZN10QSslCipherC2Ev() {
 // Public Visibility=Default Availability=Available
 // since 5.3
 // /usr/include/qt/QtNetwork/qsslcipher.h:59
-// [-2] void QSslCipher(const class QString &)
+// [-2] void QSslCipher(const QString &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QString(QString* name) {
@@ -46,7 +46,7 @@ void* C_ZN10QSslCipherC2ERK7QString(QString* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:60
-// [-2] void QSslCipher(const class QString &, QSsl::SslProtocol)
+// [-2] void QSslCipher(const QString &, QSsl::SslProtocol)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE(QString* name, QSsl::SslProtocol protocol) {
   return  new QSslCipher(*name, protocol);
@@ -54,7 +54,7 @@ void* C_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE(QString* name, QSsl::Ssl
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:63
-// [8] QSslCipher & operator=(class QSslCipher &&)
+// [8] QSslCipher & operator=(QSslCipher &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipheraSEOS_(void *this_, QSslCipher && other) {
   auto& rv = ((QSslCipher*)this_)->operator=(other);
@@ -63,7 +63,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:65
-// [8] QSslCipher & operator=(const class QSslCipher &)
+// [8] QSslCipher & operator=(const QSslCipher &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipheraSERKS_(void *this_, QSslCipher* other) {
   auto& rv = ((QSslCipher*)this_)->operator=(*other);
@@ -80,7 +80,7 @@ void C_ZN10QSslCipherD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qsslcipher.h:68
-// [-2] void swap(class QSslCipher &)
+// [-2] void swap(QSslCipher &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
@@ -90,7 +90,7 @@ void C_ZN10QSslCipher4swapERS_(void *this_, QSslCipher* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:71
-// [1] bool operator==(const class QSslCipher &)
+// [1] bool operator==(const QSslCipher &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslCiphereqERKS_(void *this_, QSslCipher* other) {
   return (bool)((QSslCipher*)this_)->operator==(*other);
@@ -98,7 +98,7 @@ bool C_ZNK10QSslCiphereqERKS_(void *this_, QSslCipher* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:72
-// [1] bool operator!=(const class QSslCipher &)
+// [1] bool operator!=(const QSslCipher &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSslCipherneERKS_(void *this_, QSslCipher* other) {
   return (bool)((QSslCipher*)this_)->operator!=(*other);

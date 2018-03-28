@@ -19,7 +19,7 @@ public:
 // void QMimeData()
 MyQMimeData() : QMimeData() {}
 // Protected virtual Visibility=Default Availability=Available
-// QVariant retrieveData(const class QString &, class QVariant::Type)
+// QVariant retrieveData(const QString &, QVariant::Type)
   virtual QVariant retrieveData(const QString & mimetype, QVariant::Type preferredType) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"retrieveData", &handled, 2, (uint64_t)&mimetype, (uint64_t)preferredType, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQMimeData() : QMimeData() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:88
-// [16] QVariant retrieveData(const class QString &, class QVariant::Type)
+// [16] QVariant retrieveData(const QString &, QVariant::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(void *this_, QString* mimetype, QVariant::Type preferredType) {
   auto rv = ((QMimeData*)this_)->QMimeData::retrieveData(*mimetype, preferredType);
@@ -85,7 +85,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:64
-// [-2] void setText(const class QString &)
+// [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData7setTextERK7QString(void *this_, QString* text) {
   ((QMimeData*)this_)->setText(*text);
@@ -110,7 +110,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:68
-// [-2] void setHtml(const class QString &)
+// [-2] void setHtml(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData7setHtmlERK7QString(void *this_, QString* html) {
   ((QMimeData*)this_)->setHtml(*html);
@@ -135,7 +135,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:72
-// [-2] void setImageData(const class QVariant &)
+// [-2] void setImageData(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData12setImageDataERK8QVariant(void *this_, QVariant* image) {
   ((QMimeData*)this_)->setImageData(*image);
@@ -160,7 +160,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:76
-// [-2] void setColorData(const class QVariant &)
+// [-2] void setColorData(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData12setColorDataERK8QVariant(void *this_, QVariant* color) {
   ((QMimeData*)this_)->setColorData(*color);
@@ -176,7 +176,7 @@ bool C_ZNK9QMimeData8hasColorEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:79
-// [8] QByteArray data(const class QString &)
+// [8] QByteArray data(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeData4dataERK7QString(void *this_, QString* mimetype) {
   auto rv = ((QMimeData*)this_)->data(*mimetype);
@@ -185,7 +185,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:80
-// [-2] void setData(const class QString &, const class QByteArray &)
+// [-2] void setData(const QString &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData7setDataERK7QStringRK10QByteArray(void *this_, QString* mimetype, QByteArray* data) {
   ((QMimeData*)this_)->setData(*mimetype, *data);
@@ -194,7 +194,7 @@ void C_ZN9QMimeData7setDataERK7QStringRK10QByteArray(void *this_, QString* mimet
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtCore/qmimedata.h:81
-// [-2] void removeFormat(const class QString &)
+// [-2] void removeFormat(const QString &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeData12removeFormatERK7QString(void *this_, QString* mimetype) {
@@ -204,7 +204,7 @@ void C_ZN9QMimeData12removeFormatERK7QString(void *this_, QString* mimetype) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:83
-// [1] bool hasFormat(const class QString &)
+// [1] bool hasFormat(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeData9hasFormatERK7QString(void *this_, QString* mimetype) {
   return (bool)((QMimeData*)this_)->hasFormat(*mimetype);

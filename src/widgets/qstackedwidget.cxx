@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQStackedWidget : public QStackedWidget {
 public:
   virtual ~MyQStackedWidget() {}
-// void QStackedWidget(class QWidget *)
+// void QStackedWidget(QWidget *)
 MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:82
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QStackedWidget5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QStackedWidget*)this_)->QStackedWidget::event(e);
@@ -51,7 +51,7 @@ void* C_ZNK14QStackedWidget10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:59
-// [-2] void QStackedWidget(class QWidget *)
+// [-2] void QStackedWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQStackedWidget*)(0);
@@ -67,7 +67,7 @@ void C_ZN14QStackedWidgetD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:62
-// [4] int addWidget(class QWidget *)
+// [4] int addWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget9addWidgetEP7QWidget(void *this_, QWidget * w) {
   return (int)((QStackedWidget*)this_)->addWidget(w);
@@ -75,7 +75,7 @@ int C_ZN14QStackedWidget9addWidgetEP7QWidget(void *this_, QWidget * w) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:63
-// [4] int insertWidget(int, class QWidget *)
+// [4] int insertWidget(int, QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget12insertWidgetEiP7QWidget(void *this_, int index, QWidget * w) {
   return (int)((QStackedWidget*)this_)->insertWidget(index, w);
@@ -83,7 +83,7 @@ int C_ZN14QStackedWidget12insertWidgetEiP7QWidget(void *this_, int index, QWidge
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:64
-// [-2] void removeWidget(class QWidget *)
+// [-2] void removeWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget12removeWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QStackedWidget*)this_)->removeWidget(w);
@@ -107,7 +107,7 @@ int C_ZNK14QStackedWidget12currentIndexEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:69
-// [4] int indexOf(class QWidget *)
+// [4] int indexOf(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * arg0) {
   return (int)((QStackedWidget*)this_)->indexOf(arg0);
@@ -139,7 +139,7 @@ void C_ZN14QStackedWidget15setCurrentIndexEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:75
-// [-2] void setCurrentWidget(class QWidget *)
+// [-2] void setCurrentWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QStackedWidget*)this_)->setCurrentWidget(w);

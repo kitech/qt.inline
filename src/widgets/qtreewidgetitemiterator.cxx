@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQTreeWidgetItemIterator : public QTreeWidgetItemIterator {
 public:
   virtual ~MyQTreeWidgetItemIterator() {}
-// void QTreeWidgetItemIterator(class QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)
+// void QTreeWidgetItemIterator(QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)
 MyQTreeWidgetItemIterator(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) : QTreeWidgetItemIterator(widget, flags) {}
-// void QTreeWidgetItemIterator(class QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
+// void QTreeWidgetItemIterator(QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
 MyQTreeWidgetItemIterator(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) : QTreeWidgetItemIterator(item, flags) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:85
-// [-2] void QTreeWidgetItemIterator(class QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)
+// [-2] void QTreeWidgetItemIterator(QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
   return  new QTreeWidgetItemIterator(widget, flags);
@@ -32,7 +32,7 @@ void* C_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
-// [-2] void QTreeWidgetItemIterator(class QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
+// [-2] void QTreeWidgetItemIterator(QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
   return  new QTreeWidgetItemIterator(item, flags);
@@ -47,7 +47,7 @@ void C_ZN23QTreeWidgetItemIteratorD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:89
-// [24] QTreeWidgetItemIterator & operator=(const class QTreeWidgetItemIterator &)
+// [24] QTreeWidgetItemIterator & operator=(const QTreeWidgetItemIterator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratoraSERKS_(void *this_, QTreeWidgetItemIterator* it) {
   auto& rv = ((QTreeWidgetItemIterator*)this_)->operator=(*it);

@@ -27,7 +27,7 @@ void C_ZN16QSGNinePatchNodeD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:53
-// [-2] void setTexture(class QSGTexture *)
+// [-2] void setTexture(QSGTexture *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGNinePatchNode10setTextureEP10QSGTexture(void *this_, QSGTexture * texture) {
   ((QSGNinePatchNode*)this_)->setTexture(texture);
@@ -35,7 +35,7 @@ void C_ZN16QSGNinePatchNode10setTextureEP10QSGTexture(void *this_, QSGTexture * 
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:54
-// [-2] void setBounds(const class QRectF &)
+// [-2] void setBounds(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGNinePatchNode9setBoundsERK6QRectF(void *this_, QRectF* bounds) {
   ((QSGNinePatchNode*)this_)->setBounds(*bounds);
@@ -67,7 +67,7 @@ void C_ZN16QSGNinePatchNode6updateEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:59
-// [-2] void rebuildGeometry(class QSGTexture *, class QSGGeometry *, const class QVector4D &, const class QRectF &, qreal)
+// [-2] void rebuildGeometry(QSGTexture *, QSGGeometry *, const QVector4D &, const QRectF &, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGNinePatchNode15rebuildGeometryEP10QSGTextureP11QSGGeometryRK9QVector4DRK6QRectFd(QSGTexture * texture, QSGGeometry * geometry, QVector4D* padding, QRectF* bounds, qreal dpr) {
   QSGNinePatchNode::rebuildGeometry(texture, geometry, *padding, *bounds, dpr);

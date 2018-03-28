@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQQmlPropertyMap : public QQmlPropertyMap {
 public:
   virtual ~MyQQmlPropertyMap() {}
-// void QQmlPropertyMap(class QObject *)
+// void QQmlPropertyMap(QObject *)
 MyQQmlPropertyMap(QObject * parent) : QQmlPropertyMap(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// QVariant updateValue(const class QString &, const class QVariant &)
+// QVariant updateValue(const QString &, const QVariant &)
   virtual QVariant updateValue(const QString & key, const QVariant & input) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateValue", &handled, 2, (uint64_t)&key, (uint64_t)&input, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQQmlPropertyMap(QObject * parent) : QQmlPropertyMap(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:79
-// [16] QVariant updateValue(const class QString &, const class QVariant &)
+// [16] QVariant updateValue(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QQmlPropertyMap11updateValueERK7QStringRK8QVariant(void *this_, QString* key, QVariant* input) {
   auto rv = ((QQmlPropertyMap*)this_)->QQmlPropertyMap::updateValue(*key, *input);
@@ -52,7 +52,7 @@ void* C_ZNK15QQmlPropertyMap10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:58
-// [-2] void QQmlPropertyMap(class QObject *)
+// [-2] void QQmlPropertyMap(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QQmlPropertyMapC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQQmlPropertyMap*)(0);
@@ -68,7 +68,7 @@ void C_ZN15QQmlPropertyMapD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:61
-// [16] QVariant value(const class QString &)
+// [16] QVariant value(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QQmlPropertyMap5valueERK7QString(void *this_, QString* key) {
   auto rv = ((QQmlPropertyMap*)this_)->value(*key);
@@ -77,7 +77,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:63
-// [-2] void clear(const class QString &)
+// [-2] void clear(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QQmlPropertyMap5clearERK7QString(void *this_, QString* key) {
   ((QQmlPropertyMap*)this_)->clear(*key);
@@ -118,7 +118,7 @@ bool C_ZNK15QQmlPropertyMap7isEmptyEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:70
-// [1] bool contains(const class QString &)
+// [1] bool contains(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QQmlPropertyMap8containsERK7QString(void *this_, QString* key) {
   return (bool)((QQmlPropertyMap*)this_)->contains(*key);
@@ -126,7 +126,7 @@ bool C_ZNK15QQmlPropertyMap8containsERK7QString(void *this_, QString* key) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:72
-// [16] QVariant & operator[](const class QString &)
+// [16] QVariant & operator[](const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QQmlPropertyMapixERK7QString(void *this_, QString* key) {
   auto& rv = ((QQmlPropertyMap*)this_)->operator[](*key);
@@ -135,7 +135,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:73
-// [16] QVariant operator[](const class QString &)
+// [16] QVariant operator[](const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QQmlPropertyMapixERK7QString(void *this_, QString* key) {
   auto rv = ((QQmlPropertyMap*)this_)->operator[](*key);
@@ -144,7 +144,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertymap.h:76
-// [-2] void valueChanged(const class QString &, const class QVariant &)
+// [-2] void valueChanged(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QQmlPropertyMap12valueChangedERK7QStringRK8QVariant(void *this_, QString* key, QVariant* value) {
   ((QQmlPropertyMap*)this_)->valueChanged(*key, *value);

@@ -41,7 +41,7 @@ void* C_ZN14QSurfaceFormatC2E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:97
-// [8] QSurfaceFormat & operator=(const class QSurfaceFormat &)
+// [8] QSurfaceFormat & operator=(const QSurfaceFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSurfaceFormataSERKS_(void *this_, QSurfaceFormat* other) {
   auto& rv = ((QSurfaceFormat*)this_)->operator=(*other);
@@ -169,7 +169,7 @@ int C_ZNK14QSurfaceFormat7samplesEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:118
-// [-2] void setSwapBehavior(enum QSurfaceFormat::SwapBehavior)
+// [-2] void setSwapBehavior(QSurfaceFormat::SwapBehavior)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat15setSwapBehaviorENS_12SwapBehaviorE(void *this_, QSurfaceFormat::SwapBehavior behavior) {
   ((QSurfaceFormat*)this_)->setSwapBehavior(behavior);
@@ -193,7 +193,7 @@ bool C_ZNK14QSurfaceFormat8hasAlphaEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:123
-// [-2] void setProfile(enum QSurfaceFormat::OpenGLContextProfile)
+// [-2] void setProfile(QSurfaceFormat::OpenGLContextProfile)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat10setProfileENS_20OpenGLContextProfileE(void *this_, QSurfaceFormat::OpenGLContextProfile profile) {
   ((QSurfaceFormat*)this_)->setProfile(profile);
@@ -209,7 +209,7 @@ QSurfaceFormat::OpenGLContextProfile C_ZNK14QSurfaceFormat7profileEv(void *this_
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:126
-// [-2] void setRenderableType(enum QSurfaceFormat::RenderableType)
+// [-2] void setRenderableType(QSurfaceFormat::RenderableType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE(void *this_, QSurfaceFormat::RenderableType type_) {
   ((QSurfaceFormat*)this_)->setRenderableType(type_);
@@ -273,7 +273,7 @@ bool C_ZNK14QSurfaceFormat6stereoEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:139
-// [-2] void setStereo(_Bool)
+// [-2] void setStereo(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat9setStereoEb(void *this_, bool enable) {
   ((QSurfaceFormat*)this_)->setStereo(enable);
@@ -281,7 +281,7 @@ void C_ZN14QSurfaceFormat9setStereoEb(void *this_, bool enable) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:142
-// [-2] void setOption(class QSurfaceFormat::FormatOptions)
+// [-2] void setOption(QSurfaceFormat::FormatOptions)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
   ((QSurfaceFormat*)this_)->setOption(opt);
@@ -289,7 +289,7 @@ void C_ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFl
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:143
-// [1] bool testOption(class QSurfaceFormat::FormatOptions)
+// [1] bool testOption(QSurfaceFormat::FormatOptions)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
   return (bool)((QSurfaceFormat*)this_)->testOption(opt);
@@ -298,7 +298,7 @@ bool C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *this_, 
 // Public Visibility=Default Availability=Available
 // since 5.3
 // /usr/include/qt/QtGui/qsurfaceformat.h:146
-// [-2] void setOptions(class QSurfaceFormat::FormatOptions)
+// [-2] void setOptions(QSurfaceFormat::FormatOptions)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> options) {
@@ -308,7 +308,7 @@ void C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:147
-// [-2] void setOption(enum QSurfaceFormat::FormatOption, _Bool)
+// [-2] void setOption(QSurfaceFormat::FormatOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat9setOptionENS_12FormatOptionEb(void *this_, QSurfaceFormat::FormatOption option, bool on) {
   ((QSurfaceFormat*)this_)->setOption(option, on);
@@ -316,7 +316,7 @@ void C_ZN14QSurfaceFormat9setOptionENS_12FormatOptionEb(void *this_, QSurfaceFor
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:148
-// [1] bool testOption(enum QSurfaceFormat::FormatOption)
+// [1] bool testOption(QSurfaceFormat::FormatOption)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE(void *this_, QSurfaceFormat::FormatOption option) {
   return (bool)((QSurfaceFormat*)this_)->testOption(option);
@@ -368,7 +368,7 @@ QSurfaceFormat::ColorSpace C_ZNK14QSurfaceFormat10colorSpaceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:155
-// [-2] void setColorSpace(enum QSurfaceFormat::ColorSpace)
+// [-2] void setColorSpace(QSurfaceFormat::ColorSpace)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat13setColorSpaceENS_10ColorSpaceE(void *this_, QSurfaceFormat::ColorSpace colorSpace) {
   ((QSurfaceFormat*)this_)->setColorSpace(colorSpace);
@@ -377,7 +377,7 @@ void C_ZN14QSurfaceFormat13setColorSpaceENS_10ColorSpaceE(void *this_, QSurfaceF
 // Public static Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtGui/qsurfaceformat.h:157
-// [-2] void setDefaultFormat(const class QSurfaceFormat &)
+// [-2] void setDefaultFormat(const QSurfaceFormat &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSurfaceFormat16setDefaultFormatERKS_(QSurfaceFormat* format) {

@@ -82,7 +82,7 @@ void C_ZN24QQmlIncubationController11incubateForEi(void *this_, int msecs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:110
-// [-2] void incubateWhile(volatile _Bool *, int)
+// [-2] void incubateWhile(volatile bool *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QQmlIncubationController13incubateWhileEPVbi(void *this_, volatile bool * flag, int msecs) {
   ((QQmlIncubationController*)this_)->incubateWhile(flag, msecs);

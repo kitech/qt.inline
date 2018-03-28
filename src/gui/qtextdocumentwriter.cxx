@@ -19,9 +19,9 @@ public:
   virtual ~MyQTextDocumentWriter() {}
 // void QTextDocumentWriter()
 MyQTextDocumentWriter() : QTextDocumentWriter() {}
-// void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
+// void QTextDocumentWriter(QIODevice *, const QByteArray &)
 MyQTextDocumentWriter(QIODevice * device, const QByteArray & format) : QTextDocumentWriter(device, format) {}
-// void QTextDocumentWriter(const class QString &, const class QByteArray &)
+// void QTextDocumentWriter(const QString &, const QByteArray &)
 MyQTextDocumentWriter(const QString & fileName, const QByteArray & format) : QTextDocumentWriter(fileName, format) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN19QTextDocumentWriterC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:58
-// [-2] void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
+// [-2] void QTextDocumentWriter(QIODevice *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QTextDocumentWriter(device, *format);
@@ -43,7 +43,7 @@ void* C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:59
-// [-2] void QTextDocumentWriter(const class QString &, const class QByteArray &)
+// [-2] void QTextDocumentWriter(const QString &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextDocumentWriterC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QTextDocumentWriter(*fileName, *format);
@@ -58,7 +58,7 @@ void C_ZN19QTextDocumentWriterD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:62
-// [-2] void setFormat(const class QByteArray &)
+// [-2] void setFormat(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QTextDocumentWriter*)this_)->setFormat(*format);
@@ -75,7 +75,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:65
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QTextDocumentWriter*)this_)->setDevice(device);
@@ -91,7 +91,7 @@ void* C_ZNK19QTextDocumentWriter6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:67
-// [-2] void setFileName(const class QString &)
+// [-2] void setFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QTextDocumentWriter*)this_)->setFileName(*fileName);
@@ -108,7 +108,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:70
-// [1] bool write(const class QTextDocument *)
+// [1] bool write(const QTextDocument *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *this_, const QTextDocument * document) {
   return (bool)((QTextDocumentWriter*)this_)->write(document);
@@ -116,7 +116,7 @@ bool C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *this_, const QTextD
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:71
-// [1] bool write(const class QTextDocumentFragment &)
+// [1] bool write(const QTextDocumentFragment &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *this_, QTextDocumentFragment* fragment) {
   return (bool)((QTextDocumentWriter*)this_)->write(*fragment);
@@ -124,7 +124,7 @@ bool C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *this_, QTex
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:74
-// [-2] void setCodec(class QTextCodec *)
+// [-2] void setCodec(QTextCodec *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QTextDocumentWriter8setCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
   ((QTextDocumentWriter*)this_)->setCodec(codec);

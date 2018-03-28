@@ -40,7 +40,7 @@ void* C_ZN11QTextFormatC2Ei(int type_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:293
-// [16] QTextFormat & operator=(const class QTextFormat &)
+// [16] QTextFormat & operator=(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextFormataSERKS_(void *this_, QTextFormat* rhs) {
   auto& rv = ((QTextFormat*)this_)->operator=(*rhs);
@@ -57,7 +57,7 @@ void C_ZN11QTextFormatD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtGui/qtextformat.h:296
-// [-2] void swap(class QTextFormat &)
+// [-2] void swap(QTextFormat &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextFormat4swapERS_(void *this_, QTextFormat* other) {
@@ -67,7 +67,7 @@ void C_ZN11QTextFormat4swapERS_(void *this_, QTextFormat* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:299
-// [-2] void merge(const class QTextFormat &)
+// [-2] void merge(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextFormat5mergeERKS_(void *this_, QTextFormat* other) {
   ((QTextFormat*)this_)->merge(*other);
@@ -127,7 +127,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:310
-// [-2] void setProperty(int, const class QVariant &)
+// [-2] void setProperty(int, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextFormat11setPropertyEiRK8QVariant(void *this_, int propertyId, QVariant* value) {
   ((QTextFormat*)this_)->setProperty(propertyId, *value);
@@ -372,7 +372,7 @@ return new QTextTableCellFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:349
-// [1] bool operator==(const class QTextFormat &)
+// [1] bool operator==(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextFormateqERKS_(void *this_, QTextFormat* rhs) {
   return (bool)((QTextFormat*)this_)->operator==(*rhs);
@@ -380,7 +380,7 @@ bool C_ZNK11QTextFormateqERKS_(void *this_, QTextFormat* rhs) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:350
-// [1] bool operator!=(const class QTextFormat &)
+// [1] bool operator!=(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextFormatneERKS_(void *this_, QTextFormat* rhs) {
   return (bool)((QTextFormat*)this_)->operator!=(*rhs);
@@ -404,7 +404,7 @@ Qt::LayoutDirection C_ZNK11QTextFormat15layoutDirectionEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:358
-// [-2] void setBackground(const class QBrush &)
+// [-2] void setBackground(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextFormat13setBackgroundERK6QBrush(void *this_, QBrush* brush) {
   ((QTextFormat*)this_)->setBackground(*brush);
@@ -429,7 +429,7 @@ void C_ZN11QTextFormat15clearBackgroundEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:365
-// [-2] void setForeground(const class QBrush &)
+// [-2] void setForeground(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextFormat13setForegroundERK6QBrush(void *this_, QBrush* brush) {
   ((QTextFormat*)this_)->setForeground(*brush);

@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQLayout : public QLayout {
 public:
   virtual ~MyQLayout() {}
-// void QLayout(class QWidget *)
+// void QLayout(QWidget *)
 MyQLayout(QWidget * parent) : QLayout(parent) {}
 // void QLayout()
 MyQLayout() : QLayout() {}
 // Protected Visibility=Default Availability=Available
-// void widgetEvent(class QEvent *)
+// void widgetEvent(QEvent *)
   virtual void widgetEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"widgetEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQLayout() : QLayout() {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void childEvent(class QChildEvent *)
+// void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQLayout() : QLayout() {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void addChildLayout(class QLayout *)
+// void addChildLayout(QLayout *)
   virtual void addChildLayout(QLayout * l) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"addChildLayout", &handled, 1, (uint64_t)l, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -57,7 +57,7 @@ MyQLayout() : QLayout() {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void addChildWidget(class QWidget *)
+// void addChildWidget(QWidget *)
   virtual void addChildWidget(QWidget * w) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"addChildWidget", &handled, 1, (uint64_t)w, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -69,7 +69,7 @@ MyQLayout() : QLayout() {}
   }
 
 // Protected Visibility=Default Availability=Available
-// bool adoptLayout(class QLayout *)
+// bool adoptLayout(QLayout *)
   virtual bool adoptLayout(QLayout * layout) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"adoptLayout", &handled, 1, (uint64_t)layout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQLayout() : QLayout() {}
   }
 
 // Protected Visibility=Default Availability=Available
-// QRect alignmentRect(const class QRect &)
+// QRect alignmentRect(const QRect &)
   virtual QRect alignmentRect(const QRect & arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -98,7 +98,7 @@ MyQLayout() : QLayout() {}
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:145
-// [-2] void widgetEvent(class QEvent *)
+// [-2] void widgetEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout11widgetEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QLayout*)this_)->QLayout::widgetEvent(arg0);
@@ -106,7 +106,7 @@ void C_ZN7QLayout11widgetEventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:146
-// [-2] void childEvent(class QChildEvent *)
+// [-2] void childEvent(QChildEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10childEventEP11QChildEvent(void *this_, QChildEvent * e) {
   ((QLayout*)this_)->QLayout::childEvent(e);
@@ -114,7 +114,7 @@ void C_ZN7QLayout10childEventEP11QChildEvent(void *this_, QChildEvent * e) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:147
-// [-2] void addChildLayout(class QLayout *)
+// [-2] void addChildLayout(QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout14addChildLayoutEPS_(void *this_, QLayout * l) {
   ((QLayout*)this_)->QLayout::addChildLayout(l);
@@ -122,7 +122,7 @@ void C_ZN7QLayout14addChildLayoutEPS_(void *this_, QLayout * l) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:148
-// [-2] void addChildWidget(class QWidget *)
+// [-2] void addChildWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout14addChildWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QLayout*)this_)->QLayout::addChildWidget(w);
@@ -130,7 +130,7 @@ void C_ZN7QLayout14addChildWidgetEP7QWidget(void *this_, QWidget * w) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:149
-// [1] bool adoptLayout(class QLayout *)
+// [1] bool adoptLayout(QLayout *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QLayout11adoptLayoutEPS_(void *this_, QLayout * layout) {
   return (bool)((QLayout*)this_)->QLayout::adoptLayout(layout);
@@ -138,7 +138,7 @@ bool C_ZN7QLayout11adoptLayoutEPS_(void *this_, QLayout * layout) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:151
-// [16] QRect alignmentRect(const class QRect &)
+// [16] QRect alignmentRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QLayout13alignmentRectERK5QRect(void *this_, QRect* arg0) {
   auto rv = ((QLayout*)this_)->QLayout::alignmentRect(*arg0);
@@ -155,7 +155,7 @@ void* C_ZNK7QLayout10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:80
-// [-2] void QLayout(class QWidget *)
+// [-2] void QLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayoutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLayout*)(0);
@@ -224,7 +224,7 @@ void C_ZN7QLayout18setContentsMarginsEiiii(void *this_, int left, int top, int r
 // Public Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qlayout.h:91
-// [-2] void setContentsMargins(const class QMargins &)
+// [-2] void setContentsMargins(const QMargins &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout18setContentsMarginsERK8QMargins(void *this_, QMargins* margins) {
@@ -269,7 +269,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:96
-// [1] bool setAlignment(class QWidget *, Qt::Alignment)
+// [1] bool setAlignment(QWidget *, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QLayout12setAlignmentEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * w, QFlags<Qt::AlignmentFlag> alignment) {
   return (bool)((QLayout*)this_)->setAlignment(w, alignment);
@@ -277,7 +277,7 @@ bool C_ZN7QLayout12setAlignmentEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE(void *thi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:97
-// [1] bool setAlignment(class QLayout *, Qt::Alignment)
+// [1] bool setAlignment(QLayout *, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QLayout12setAlignmentEPS_6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * l, QFlags<Qt::AlignmentFlag> alignment) {
   return (bool)((QLayout*)this_)->setAlignment(l, alignment);
@@ -285,7 +285,7 @@ bool C_ZN7QLayout12setAlignmentEPS_6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QL
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:100
-// [-2] void setSizeConstraint(enum QLayout::SizeConstraint)
+// [-2] void setSizeConstraint(QLayout::SizeConstraint)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout17setSizeConstraintENS_14SizeConstraintE(void *this_, QLayout::SizeConstraint arg0) {
   ((QLayout*)this_)->setSizeConstraint(arg0);
@@ -301,7 +301,7 @@ QLayout::SizeConstraint C_ZNK7QLayout14sizeConstraintEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:102
-// [-2] void setMenuBar(class QWidget *)
+// [-2] void setMenuBar(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10setMenuBarEP7QWidget(void *this_, QWidget * w) {
   ((QLayout*)this_)->setMenuBar(w);
@@ -358,7 +358,7 @@ void C_ZN7QLayout6updateEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:112
-// [-2] void addWidget(class QWidget *)
+// [-2] void addWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QLayout*)this_)->addWidget(w);
@@ -366,7 +366,7 @@ void C_ZN7QLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:113
-// [-2] void addItem(class QLayoutItem *)
+// [-2] void addItem(QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * arg0) {
   ((QLayout*)this_)->addItem(arg0);
@@ -374,7 +374,7 @@ void C_ZN7QLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:115
-// [-2] void removeWidget(class QWidget *)
+// [-2] void removeWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout12removeWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QLayout*)this_)->removeWidget(w);
@@ -382,7 +382,7 @@ void C_ZN7QLayout12removeWidgetEP7QWidget(void *this_, QWidget * w) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:116
-// [-2] void removeItem(class QLayoutItem *)
+// [-2] void removeItem(QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10removeItemEP11QLayoutItem(void *this_, QLayoutItem * arg0) {
   ((QLayout*)this_)->removeItem(arg0);
@@ -416,7 +416,7 @@ return new QSize(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:121
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QLayout*)this_)->setGeometry(*arg0);
@@ -440,7 +440,7 @@ void* C_ZN7QLayout6takeAtEi(void *this_, int index) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:124
-// [4] int indexOf(class QWidget *)
+// [4] int indexOf(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QLayout7indexOfEP7QWidget(void *this_, QWidget * arg0) {
   return (int)((QLayout*)this_)->indexOf(arg0);
@@ -473,7 +473,7 @@ QSizePolicy::ControlTypes C_ZNK7QLayout12controlTypesEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qlayout.h:130
-// [8] QLayoutItem * replaceWidget(class QWidget *, class QWidget *, Qt::FindChildOptions)
+// [8] QLayoutItem * replaceWidget(QWidget *, QWidget *, Qt::FindChildOptions)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE(void *this_, QWidget * from, QWidget * to, QFlags<Qt::FindChildOption> options) {
@@ -526,7 +526,7 @@ void* C_ZN7QLayout6layoutEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:138
-// [-2] void setEnabled(_Bool)
+// [-2] void setEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10setEnabledEb(void *this_, bool arg0) {
   ((QLayout*)this_)->setEnabled(arg0);
@@ -542,7 +542,7 @@ bool C_ZNK7QLayout9isEnabledEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:142
-// [8] QSize closestAcceptableSize(const class QWidget *, const class QSize &)
+// [8] QSize closestAcceptableSize(const QWidget *, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize(const QWidget * w, QSize* s) {
   auto rv = QLayout::closestAcceptableSize(w, *s);

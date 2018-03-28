@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQQmlContext : public QQmlContext {
 public:
   virtual ~MyQQmlContext() {}
-// void QQmlContext(class QQmlEngine *, class QObject *)
+// void QQmlContext(QQmlEngine *, QObject *)
 MyQQmlContext(QQmlEngine * parent, QObject * objParent) : QQmlContext(parent, objParent) {}
-// void QQmlContext(class QQmlContext *, class QObject *)
+// void QQmlContext(QQmlContext *, QObject *)
 MyQQmlContext(QQmlContext * parent, QObject * objParent) : QQmlContext(parent, objParent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK11QQmlContext10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:65
-// [-2] void QQmlContext(class QQmlEngine *, class QObject *)
+// [-2] void QQmlContext(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContextC2EP10QQmlEngineP7QObject(QQmlEngine * parent, QObject * objParent) {
   return  new QQmlContext(parent, objParent);
@@ -40,7 +40,7 @@ void* C_ZN11QQmlContextC2EP10QQmlEngineP7QObject(QQmlEngine * parent, QObject * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:66
-// [-2] void QQmlContext(class QQmlContext *, class QObject *)
+// [-2] void QQmlContext(QQmlContext *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContextC2EPS_P7QObject(QQmlContext * parent, QObject * objParent) {
   return  new QQmlContext(parent, objParent);
@@ -87,7 +87,7 @@ void* C_ZNK11QQmlContext13contextObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:75
-// [-2] void setContextObject(class QObject *)
+// [-2] void setContextObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext16setContextObjectEP7QObject(void *this_, QObject * arg0) {
   ((QQmlContext*)this_)->setContextObject(arg0);
@@ -95,7 +95,7 @@ void C_ZN11QQmlContext16setContextObjectEP7QObject(void *this_, QObject * arg0) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:77
-// [16] QVariant contextProperty(const class QString &)
+// [16] QVariant contextProperty(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext15contextPropertyERK7QString(void *this_, QString* arg0) {
   auto rv = ((QQmlContext*)this_)->contextProperty(*arg0);
@@ -104,7 +104,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:78
-// [-2] void setContextProperty(const class QString &, class QObject *)
+// [-2] void setContextProperty(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext18setContextPropertyERK7QStringP7QObject(void *this_, QString* arg0, QObject * arg1) {
   ((QQmlContext*)this_)->setContextProperty(*arg0, arg1);
@@ -112,7 +112,7 @@ void C_ZN11QQmlContext18setContextPropertyERK7QStringP7QObject(void *this_, QStr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:79
-// [-2] void setContextProperty(const class QString &, const class QVariant &)
+// [-2] void setContextProperty(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext18setContextPropertyERK7QStringRK8QVariant(void *this_, QString* arg0, QVariant* arg1) {
   ((QQmlContext*)this_)->setContextProperty(*arg0, *arg1);
@@ -120,7 +120,7 @@ void C_ZN11QQmlContext18setContextPropertyERK7QStringRK8QVariant(void *this_, QS
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:82
-// [8] QString nameForObject(class QObject *)
+// [8] QString nameForObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext13nameForObjectEP7QObject(void *this_, QObject * arg0) {
   auto rv = ((QQmlContext*)this_)->nameForObject(arg0);
@@ -129,7 +129,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:84
-// [8] QUrl resolvedUrl(const class QUrl &)
+// [8] QUrl resolvedUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContext11resolvedUrlERK4QUrl(void *this_, QUrl* arg0) {
   auto rv = ((QQmlContext*)this_)->resolvedUrl(*arg0);
@@ -138,7 +138,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcontext.h:86
-// [-2] void setBaseUrl(const class QUrl &)
+// [-2] void setBaseUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext10setBaseUrlERK4QUrl(void *this_, QUrl* arg0) {
   ((QQmlContext*)this_)->setBaseUrl(*arg0);

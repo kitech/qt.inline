@@ -238,7 +238,7 @@ bool C_ZNK11QStyleHints15useHoverEffectsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstylehints.h:104
-// [-2] void setUseHoverEffects(_Bool)
+// [-2] void setUseHoverEffects(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QStyleHints18setUseHoverEffectsEb(void *this_, bool useHoverEffects) {
   ((QStyleHints*)this_)->setUseHoverEffects(useHoverEffects);
@@ -318,7 +318,7 @@ void C_ZN11QStyleHints23tabFocusBehaviorChangedEN2Qt16TabFocusBehaviorE(void *th
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstylehints.h:116
-// [-2] void useHoverEffectsChanged(_Bool)
+// [-2] void useHoverEffectsChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QStyleHints22useHoverEffectsChangedEb(void *this_, bool useHoverEffects) {
   ((QStyleHints*)this_)->useHoverEffectsChanged(useHoverEffects);

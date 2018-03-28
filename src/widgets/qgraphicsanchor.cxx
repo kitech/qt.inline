@@ -53,7 +53,7 @@ qreal C_ZNK15QGraphicsAnchor7spacingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:64
-// [-2] void setSizePolicy(class QSizePolicy::Policy)
+// [-2] void setSizePolicy(QSizePolicy::Policy)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsAnchor13setSizePolicyEN11QSizePolicy6PolicyE(void *this_, QSizePolicy::Policy policy) {
   ((QGraphicsAnchor*)this_)->setSizePolicy(policy);

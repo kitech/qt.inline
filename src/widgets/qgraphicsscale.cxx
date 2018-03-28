@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQGraphicsScale : public QGraphicsScale {
 public:
   virtual ~MyQGraphicsScale() {}
-// void QGraphicsScale(class QObject *)
+// void QGraphicsScale(QObject *)
 MyQGraphicsScale(QObject * parent) : QGraphicsScale(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK14QGraphicsScale10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:88
-// [-2] void QGraphicsScale(class QObject *)
+// [-2] void QGraphicsScale(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QGraphicsScaleC2EP7QObject(QObject * parent) {
   return  new QGraphicsScale(parent);
@@ -55,7 +55,7 @@ return new QVector3D(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:92
-// [-2] void setOrigin(const class QVector3D &)
+// [-2] void setOrigin(const QVector3D &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QGraphicsScale9setOriginERK9QVector3D(void *this_, QVector3D* point) {
   ((QGraphicsScale*)this_)->setOrigin(*point);
@@ -111,7 +111,7 @@ void C_ZN14QGraphicsScale9setZScaleEd(void *this_, qreal arg0) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:103
-// [-2] void applyTo(class QMatrix4x4 *)
+// [-2] void applyTo(QMatrix4x4 *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QGraphicsScale7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
   ((QGraphicsScale*)this_)->applyTo(matrix);

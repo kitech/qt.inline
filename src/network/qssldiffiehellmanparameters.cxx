@@ -47,7 +47,7 @@ void C_ZN27QSslDiffieHellmanParametersD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:89
-// [8] QSslDiffieHellmanParameters & operator=(const class QSslDiffieHellmanParameters &)
+// [8] QSslDiffieHellmanParameters & operator=(const QSslDiffieHellmanParameters &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QSslDiffieHellmanParametersaSERKS_(void *this_, QSslDiffieHellmanParameters* other) {
   auto& rv = ((QSslDiffieHellmanParameters*)this_)->operator=(*other);
@@ -56,7 +56,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:90
-// [8] QSslDiffieHellmanParameters & operator=(class QSslDiffieHellmanParameters &&)
+// [8] QSslDiffieHellmanParameters & operator=(QSslDiffieHellmanParameters &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QSslDiffieHellmanParametersaSEOS_(void *this_, QSslDiffieHellmanParameters && other) {
   auto& rv = ((QSslDiffieHellmanParameters*)this_)->operator=(other);
@@ -65,7 +65,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:92
-// [-2] void swap(class QSslDiffieHellmanParameters &)
+// [-2] void swap(QSslDiffieHellmanParameters &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QSslDiffieHellmanParameters4swapERS_(void *this_, QSslDiffieHellmanParameters* other) {
   ((QSslDiffieHellmanParameters*)this_)->swap(*other);
@@ -73,7 +73,7 @@ void C_ZN27QSslDiffieHellmanParameters4swapERS_(void *this_, QSslDiffieHellmanPa
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:94
-// [8] QSslDiffieHellmanParameters fromEncoded(const class QByteArray &, QSsl::EncodingFormat)
+// [8] QSslDiffieHellmanParameters fromEncoded(const QByteArray &, QSsl::EncodingFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QSslDiffieHellmanParameters11fromEncodedERK10QByteArrayN4QSsl14EncodingFormatE(QByteArray* encoded, QSsl::EncodingFormat format) {
   auto rv = QSslDiffieHellmanParameters::fromEncoded(*encoded, format);
@@ -82,7 +82,7 @@ return new QSslDiffieHellmanParameters(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:95
-// [8] QSslDiffieHellmanParameters fromEncoded(class QIODevice *, QSsl::EncodingFormat)
+// [8] QSslDiffieHellmanParameters fromEncoded(QIODevice *, QSsl::EncodingFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QSslDiffieHellmanParameters11fromEncodedEP9QIODeviceN4QSsl14EncodingFormatE(QIODevice * device, QSsl::EncodingFormat format) {
   auto rv = QSslDiffieHellmanParameters::fromEncoded(device, format);

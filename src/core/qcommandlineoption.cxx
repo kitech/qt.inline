@@ -17,19 +17,19 @@
 class Q_DECL_EXPORT MyQCommandLineOption : public QCommandLineOption {
 public:
   virtual ~MyQCommandLineOption() {}
-// void QCommandLineOption(const class QString &)
+// void QCommandLineOption(const QString &)
 MyQCommandLineOption(const QString & name) : QCommandLineOption(name) {}
-// void QCommandLineOption(const class QStringList &)
+// void QCommandLineOption(const QStringList &)
 MyQCommandLineOption(const QStringList & names) : QCommandLineOption(names) {}
-// void QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
+// void QCommandLineOption(const QString &, const QString &, const QString &, const QString &)
 MyQCommandLineOption(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(name, description, valueName, defaultValue) {}
-// void QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
+// void QCommandLineOption(const QStringList &, const QString &, const QString &, const QString &)
 MyQCommandLineOption(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(names, description, valueName, defaultValue) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:61
-// [-2] void QCommandLineOption(const class QString &)
+// [-2] void QCommandLineOption(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK7QString(QString* name) {
   return  new QCommandLineOption(*name);
@@ -37,7 +37,7 @@ void* C_ZN18QCommandLineOptionC2ERK7QString(QString* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:62
-// [-2] void QCommandLineOption(const class QStringList &)
+// [-2] void QCommandLineOption(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK11QStringList(QStringList* names) {
   return  new QCommandLineOption(*names);
@@ -45,7 +45,7 @@ void* C_ZN18QCommandLineOptionC2ERK11QStringList(QStringList* names) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:63
-// [-2] void QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
+// [-2] void QCommandLineOption(const QString &, const QString &, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(QString* name, QString* description, QString* valueName, QString* defaultValue) {
   return  new QCommandLineOption(*name, *description, *valueName, *defaultValue);
@@ -53,7 +53,7 @@ void* C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(QString* name, QString* des
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:66
-// [-2] void QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
+// [-2] void QCommandLineOption(const QStringList &, const QString &, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_(QStringList* names, QString* description, QString* valueName, QString* defaultValue) {
   return  new QCommandLineOption(*names, *description, *valueName, *defaultValue);
@@ -68,7 +68,7 @@ void C_ZN18QCommandLineOptionD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:73
-// [8] QCommandLineOption & operator=(const class QCommandLineOption &)
+// [8] QCommandLineOption & operator=(const QCommandLineOption &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionaSERKS_(void *this_, QCommandLineOption* other) {
   auto& rv = ((QCommandLineOption*)this_)->operator=(*other);
@@ -77,7 +77,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:75
-// [8] QCommandLineOption & operator=(class QCommandLineOption &&)
+// [8] QCommandLineOption & operator=(QCommandLineOption &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionaSEOS_(void *this_, QCommandLineOption && other) {
   auto& rv = ((QCommandLineOption*)this_)->operator=(other);
@@ -86,7 +86,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:78
-// [-2] void swap(class QCommandLineOption &)
+// [-2] void swap(QCommandLineOption &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption4swapERS_(void *this_, QCommandLineOption* other) {
   ((QCommandLineOption*)this_)->swap(*other);
@@ -103,7 +103,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:83
-// [-2] void setValueName(const class QString &)
+// [-2] void setValueName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption12setValueNameERK7QString(void *this_, QString* name) {
   ((QCommandLineOption*)this_)->setValueName(*name);
@@ -120,7 +120,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:86
-// [-2] void setDescription(const class QString &)
+// [-2] void setDescription(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption14setDescriptionERK7QString(void *this_, QString* description) {
   ((QCommandLineOption*)this_)->setDescription(*description);
@@ -137,7 +137,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:89
-// [-2] void setDefaultValue(const class QString &)
+// [-2] void setDefaultValue(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption15setDefaultValueERK7QString(void *this_, QString* defaultValue) {
   ((QCommandLineOption*)this_)->setDefaultValue(*defaultValue);
@@ -145,7 +145,7 @@ void C_ZN18QCommandLineOption15setDefaultValueERK7QString(void *this_, QString* 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:90
-// [-2] void setDefaultValues(const class QStringList &)
+// [-2] void setDefaultValues(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption16setDefaultValuesERK11QStringList(void *this_, QStringList* defaultValues) {
   ((QCommandLineOption*)this_)->setDefaultValues(*defaultValues);
@@ -182,7 +182,7 @@ void C_ZN18QCommandLineOption8setFlagsE6QFlagsINS_4FlagEE(void *this_, QFlags<QC
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:98
-// [-2] void setHidden(_Bool)
+// [-2] void setHidden(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption9setHiddenEb(void *this_, bool hidden) {
   ((QCommandLineOption*)this_)->setHidden(hidden);

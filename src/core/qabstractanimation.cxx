@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQAbstractAnimation : public QAbstractAnimation {
 public:
   virtual ~MyQAbstractAnimation() {}
-// void QAbstractAnimation(class QObject *)
+// void QAbstractAnimation(QObject *)
 MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -57,7 +57,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateDirection(class QAbstractAnimation::Direction)
+// void updateDirection(QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateDirection", &handled, 1, (uint64_t)direction, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -72,7 +72,7 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:121
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QAbstractAnimation5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QAbstractAnimation*)this_)->QAbstractAnimation::event(event);
@@ -83,7 +83,7 @@ bool C_ZN18QAbstractAnimation5eventEP6QEvent(void *this_, QEvent * event) {
 // [-2] void updateCurrentTime(int)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:124
-// [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation11updateStateENS_5StateES0_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QAbstractAnimation*)this_)->QAbstractAnimation::updateState(newState, oldState);
@@ -91,7 +91,7 @@ void C_ZN18QAbstractAnimation11updateStateENS_5StateES0_(void *this_, QAbstractA
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:125
-// [-2] void updateDirection(class QAbstractAnimation::Direction)
+// [-2] void updateDirection(QAbstractAnimation::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QAbstractAnimation*)this_)->QAbstractAnimation::updateDirection(direction);
@@ -107,7 +107,7 @@ void* C_ZNK18QAbstractAnimation10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:85
-// [-2] void QAbstractAnimation(class QObject *)
+// [-2] void QAbstractAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QAbstractAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractAnimation*)(0);
@@ -147,7 +147,7 @@ QAbstractAnimation::Direction C_ZNK18QAbstractAnimation9directionEv(void *this_)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:93
-// [-2] void setDirection(enum QAbstractAnimation::Direction)
+// [-2] void setDirection(QAbstractAnimation::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation12setDirectionENS_9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QAbstractAnimation*)this_)->setDirection(direction);
@@ -219,7 +219,7 @@ void C_ZN18QAbstractAnimation8finishedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:107
-// [-2] void stateChanged(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// [-2] void stateChanged(QAbstractAnimation::State, QAbstractAnimation::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation12stateChangedENS_5StateES0_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QAbstractAnimation*)this_)->stateChanged(newState, oldState);
@@ -235,7 +235,7 @@ void C_ZN18QAbstractAnimation18currentLoopChangedEi(void *this_, int currentLoop
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:109
-// [-2] void directionChanged(class QAbstractAnimation::Direction)
+// [-2] void directionChanged(QAbstractAnimation::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation16directionChangedENS_9DirectionE(void *this_, QAbstractAnimation::Direction arg0) {
   ((QAbstractAnimation*)this_)->directionChanged(arg0);
@@ -243,7 +243,7 @@ void C_ZN18QAbstractAnimation16directionChangedENS_9DirectionE(void *this_, QAbs
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:112
-// [-2] void start(class QAbstractAnimation::DeletionPolicy)
+// [-2] void start(QAbstractAnimation::DeletionPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation5startENS_14DeletionPolicyE(void *this_, QAbstractAnimation::DeletionPolicy policy) {
   ((QAbstractAnimation*)this_)->start(policy);
@@ -267,7 +267,7 @@ void C_ZN18QAbstractAnimation6resumeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:115
-// [-2] void setPaused(_Bool)
+// [-2] void setPaused(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractAnimation9setPausedEb(void *this_, bool arg0) {
   ((QAbstractAnimation*)this_)->setPaused(arg0);

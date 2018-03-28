@@ -17,15 +17,15 @@
 class Q_DECL_EXPORT MyQUndoCommand : public QUndoCommand {
 public:
   virtual ~MyQUndoCommand() {}
-// void QUndoCommand(class QUndoCommand *)
+// void QUndoCommand(QUndoCommand *)
 MyQUndoCommand(QUndoCommand * parent) : QUndoCommand(parent) {}
-// void QUndoCommand(const class QString &, class QUndoCommand *)
+// void QUndoCommand(const QString &, QUndoCommand *)
 MyQUndoCommand(const QString & text, QUndoCommand * parent) : QUndoCommand(text, parent) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:60
-// [-2] void QUndoCommand(class QUndoCommand *)
+// [-2] void QUndoCommand(QUndoCommand *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QUndoCommandC2EPS_(QUndoCommand * parent) {
   return  new QUndoCommand(parent);
@@ -33,7 +33,7 @@ void* C_ZN12QUndoCommandC2EPS_(QUndoCommand * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:61
-// [-2] void QUndoCommand(const class QString &, class QUndoCommand *)
+// [-2] void QUndoCommand(const QString &, QUndoCommand *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QUndoCommandC2ERK7QStringPS_(QString* text, QUndoCommand * parent) {
   return  new QUndoCommand(*text, parent);
@@ -85,7 +85,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:69
-// [-2] void setText(const class QString &)
+// [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QUndoCommand7setTextERK7QString(void *this_, QString* text) {
   ((QUndoCommand*)this_)->setText(*text);
@@ -105,7 +105,7 @@ bool C_ZNK12QUndoCommand10isObsoleteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtWidgets/qundostack.h:72
-// [-2] void setObsolete(_Bool)
+// [-2] void setObsolete(bool)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN12QUndoCommand11setObsoleteEb(void *this_, bool obsolete) {
@@ -123,7 +123,7 @@ int C_ZNK12QUndoCommand2idEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:75
-// [1] bool mergeWith(const class QUndoCommand *)
+// [1] bool mergeWith(const QUndoCommand *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QUndoCommand9mergeWithEPKS_(void *this_, const QUndoCommand * other) {
   return (bool)((QUndoCommand*)this_)->mergeWith(other);

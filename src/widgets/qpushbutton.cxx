@@ -16,14 +16,14 @@
 class Q_DECL_EXPORT MyQPushButton : public QPushButton {
 public:
   virtual ~MyQPushButton() {}
-// void QPushButton(class QWidget *)
+// void QPushButton(QWidget *)
 MyQPushButton(QWidget * parent) : QPushButton(parent) {}
-// void QPushButton(const class QString &, class QWidget *)
+// void QPushButton(const QString &, QWidget *)
 MyQPushButton(const QString & text, QWidget * parent) : QPushButton(text, parent) {}
-// void QPushButton(const class QIcon &, const class QString &, class QWidget *)
+// void QPushButton(const QIcon &, const QString &, QWidget *)
 MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPushButton(icon, text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -48,7 +48,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -60,7 +60,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -72,7 +72,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -84,7 +84,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionButton *)
+// void initStyleOption(QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -99,7 +99,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:91
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QPushButton5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QPushButton*)this_)->QPushButton::event(e);
@@ -107,7 +107,7 @@ bool C_ZN11QPushButton5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:92
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QPushButton*)this_)->QPushButton::paintEvent(arg0);
@@ -115,7 +115,7 @@ void C_ZN11QPushButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:93
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
   ((QPushButton*)this_)->QPushButton::keyPressEvent(arg0);
@@ -123,7 +123,7 @@ void C_ZN11QPushButton13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:94
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QPushButton*)this_)->QPushButton::focusInEvent(arg0);
@@ -131,7 +131,7 @@ void C_ZN11QPushButton12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * a
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:95
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QPushButton*)this_)->QPushButton::focusOutEvent(arg0);
@@ -139,7 +139,7 @@ void C_ZN11QPushButton13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * 
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:96
-// [-2] void initStyleOption(class QStyleOptionButton *)
+// [-2] void initStyleOption(QStyleOptionButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * option) {
   ((QPushButton*)this_)->QPushButton::initStyleOption(option);
@@ -155,7 +155,7 @@ void* C_ZNK11QPushButton10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:64
-// [-2] void QPushButton(class QWidget *)
+// [-2] void QPushButton(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPushButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQPushButton*)(0);
@@ -164,7 +164,7 @@ void* C_ZN11QPushButtonC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:65
-// [-2] void QPushButton(const class QString &, class QWidget *)
+// [-2] void QPushButton(const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPushButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQPushButton*)(0);
@@ -173,7 +173,7 @@ void* C_ZN11QPushButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:66
-// [-2] void QPushButton(const class QIcon &, const class QString &, class QWidget *)
+// [-2] void QPushButton(const QIcon &, const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPushButtonC2ERK5QIconRK7QStringP7QWidget(QIcon* icon, QString* text, QWidget * parent) {
   auto _nilp = (MyQPushButton*)(0);
@@ -215,7 +215,7 @@ bool C_ZNK11QPushButton11autoDefaultEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:73
-// [-2] void setAutoDefault(_Bool)
+// [-2] void setAutoDefault(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton14setAutoDefaultEb(void *this_, bool arg0) {
   ((QPushButton*)this_)->setAutoDefault(arg0);
@@ -231,7 +231,7 @@ bool C_ZNK11QPushButton9isDefaultEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:75
-// [-2] void setDefault(_Bool)
+// [-2] void setDefault(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton10setDefaultEb(void *this_, bool arg0) {
   ((QPushButton*)this_)->setDefault(arg0);
@@ -239,7 +239,7 @@ void C_ZN11QPushButton10setDefaultEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:78
-// [-2] void setMenu(class QMenu *)
+// [-2] void setMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton7setMenuEP5QMenu(void *this_, QMenu * menu) {
   ((QPushButton*)this_)->setMenu(menu);
@@ -255,7 +255,7 @@ void* C_ZNK11QPushButton4menuEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:82
-// [-2] void setFlat(_Bool)
+// [-2] void setFlat(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton7setFlatEb(void *this_, bool arg0) {
   ((QPushButton*)this_)->setFlat(arg0);

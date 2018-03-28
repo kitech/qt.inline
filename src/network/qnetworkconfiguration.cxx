@@ -31,7 +31,7 @@ void* C_ZN21QNetworkConfigurationC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:59
-// [8] QNetworkConfiguration & operator=(class QNetworkConfiguration &&)
+// [8] QNetworkConfiguration & operator=(QNetworkConfiguration &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkConfigurationaSEOS_(void *this_, QNetworkConfiguration && other) {
   auto& rv = ((QNetworkConfiguration*)this_)->operator=(other);
@@ -40,7 +40,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:61
-// [8] QNetworkConfiguration & operator=(const class QNetworkConfiguration &)
+// [8] QNetworkConfiguration & operator=(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkConfigurationaSERKS_(void *this_, QNetworkConfiguration* other) {
   auto& rv = ((QNetworkConfiguration*)this_)->operator=(*other);
@@ -57,7 +57,7 @@ void C_ZN21QNetworkConfigurationD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:64
-// [-2] void swap(class QNetworkConfiguration &)
+// [-2] void swap(QNetworkConfiguration &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkConfiguration4swapERS_(void *this_, QNetworkConfiguration* other) {
@@ -67,7 +67,7 @@ void C_ZN21QNetworkConfiguration4swapERS_(void *this_, QNetworkConfiguration* ot
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:66
-// [1] bool operator==(const class QNetworkConfiguration &)
+// [1] bool operator==(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QNetworkConfigurationeqERKS_(void *this_, QNetworkConfiguration* other) {
   return (bool)((QNetworkConfiguration*)this_)->operator==(*other);
@@ -75,7 +75,7 @@ bool C_ZNK21QNetworkConfigurationeqERKS_(void *this_, QNetworkConfiguration* oth
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:67
-// [1] bool operator!=(const class QNetworkConfiguration &)
+// [1] bool operator!=(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QNetworkConfigurationneERKS_(void *this_, QNetworkConfiguration* other) {
   return (bool)((QNetworkConfiguration*)this_)->operator!=(*other);

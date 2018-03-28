@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQTextBrowser : public QTextBrowser {
 public:
   virtual ~MyQTextBrowser() {}
-// void QTextBrowser(class QWidget *)
+// void QTextBrowser(QWidget *)
 MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -56,7 +56,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -68,7 +68,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -80,7 +80,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -92,7 +92,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(_Bool)
+// bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -105,7 +105,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -120,7 +120,7 @@ MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:107
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QTextBrowser5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QTextBrowser*)this_)->QTextBrowser::event(e);
@@ -128,7 +128,7 @@ bool C_ZN12QTextBrowser5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:108
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) {
   ((QTextBrowser*)this_)->QTextBrowser::keyPressEvent(ev);
@@ -136,7 +136,7 @@ void C_ZN12QTextBrowser13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:109
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QTextBrowser*)this_)->QTextBrowser::mouseMoveEvent(ev);
@@ -144,7 +144,7 @@ void C_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:110
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QTextBrowser*)this_)->QTextBrowser::mousePressEvent(ev);
@@ -152,7 +152,7 @@ void C_ZN12QTextBrowser15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:111
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QTextBrowser*)this_)->QTextBrowser::mouseReleaseEvent(ev);
@@ -160,7 +160,7 @@ void C_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:112
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * ev) {
   ((QTextBrowser*)this_)->QTextBrowser::focusOutEvent(ev);
@@ -168,7 +168,7 @@ void C_ZN12QTextBrowser13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:113
-// [1] bool focusNextPrevChild(_Bool)
+// [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QTextBrowser18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QTextBrowser*)this_)->QTextBrowser::focusNextPrevChild(next);
@@ -176,7 +176,7 @@ bool C_ZN12QTextBrowser18focusNextPrevChildEb(void *this_, bool next) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:114
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
   ((QTextBrowser*)this_)->QTextBrowser::paintEvent(e);
@@ -192,7 +192,7 @@ void* C_ZNK12QTextBrowser10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:66
-// [-2] void QTextBrowser(class QWidget *)
+// [-2] void QTextBrowser(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowserC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTextBrowser*)(0);
@@ -226,7 +226,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:72
-// [-2] void setSearchPaths(const class QStringList &)
+// [-2] void setSearchPaths(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *this_, QStringList* paths) {
   ((QTextBrowser*)this_)->setSearchPaths(*paths);
@@ -234,7 +234,7 @@ void C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *this_, QStringList
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:74
-// [16] QVariant loadResource(int, const class QUrl &)
+// [16] QVariant loadResource(int, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowser12loadResourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
   auto rv = ((QTextBrowser*)this_)->loadResource(type_, *name);
@@ -330,7 +330,7 @@ bool C_ZNK12QTextBrowser17openExternalLinksEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:85
-// [-2] void setOpenExternalLinks(_Bool)
+// [-2] void setOpenExternalLinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser20setOpenExternalLinksEb(void *this_, bool open) {
   ((QTextBrowser*)this_)->setOpenExternalLinks(open);
@@ -346,7 +346,7 @@ bool C_ZNK12QTextBrowser9openLinksEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:88
-// [-2] void setOpenLinks(_Bool)
+// [-2] void setOpenLinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser12setOpenLinksEb(void *this_, bool open) {
   ((QTextBrowser*)this_)->setOpenLinks(open);
@@ -354,7 +354,7 @@ void C_ZN12QTextBrowser12setOpenLinksEb(void *this_, bool open) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:91
-// [-2] void setSource(const class QUrl &)
+// [-2] void setSource(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser9setSourceERK4QUrl(void *this_, QUrl* name) {
   ((QTextBrowser*)this_)->setSource(*name);
@@ -394,7 +394,7 @@ void C_ZN12QTextBrowser6reloadEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:98
-// [-2] void backwardAvailable(_Bool)
+// [-2] void backwardAvailable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool arg0) {
   ((QTextBrowser*)this_)->backwardAvailable(arg0);
@@ -402,7 +402,7 @@ void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:99
-// [-2] void forwardAvailable(_Bool)
+// [-2] void forwardAvailable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool arg0) {
   ((QTextBrowser*)this_)->forwardAvailable(arg0);
@@ -421,7 +421,7 @@ void C_ZN12QTextBrowser14historyChangedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:101
-// [-2] void sourceChanged(const class QUrl &)
+// [-2] void sourceChanged(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, QUrl* arg0) {
   ((QTextBrowser*)this_)->sourceChanged(*arg0);
@@ -429,7 +429,7 @@ void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, QUrl* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:102
-// [-2] void highlighted(const class QUrl &)
+// [-2] void highlighted(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, QUrl* arg0) {
   ((QTextBrowser*)this_)->highlighted(*arg0);
@@ -437,7 +437,7 @@ void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, QUrl* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:103
-// [-2] void highlighted(const class QString &)
+// [-2] void highlighted(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, QString* arg0) {
   ((QTextBrowser*)this_)->highlighted(*arg0);
@@ -445,7 +445,7 @@ void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, QString* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:104
-// [-2] void anchorClicked(const class QUrl &)
+// [-2] void anchorClicked(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, QUrl* arg0) {
   ((QTextBrowser*)this_)->anchorClicked(*arg0);

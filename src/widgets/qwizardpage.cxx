@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQWizardPage : public QWizardPage {
 public:
   virtual ~MyQWizardPage() {}
-// void QWizardPage(class QWidget *)
+// void QWizardPage(QWidget *)
 MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
 // Protected Visibility=Default Availability=Available
-// void setField(const class QString &, const class QVariant &)
+// void setField(const QString &, const QVariant &)
   virtual void setField(const QString & name, const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setField", &handled, 2, (uint64_t)&name, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// QVariant field(const class QString &)
+// QVariant field(const QString &)
   virtual QVariant field(const QString & name) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"field", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void registerField(const class QString &, class QWidget *, const char *, const char *)
+// void registerField(const QString &, QWidget *, const char *, const char *)
   virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"registerField", &handled, 4, (uint64_t)&name, (uint64_t)widget, (uint64_t)property, (uint64_t)changedSignal, 0, 0, 0, 0, 0, 0);
@@ -73,7 +73,7 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:244
-// [-2] void setField(const class QString &, const class QVariant &)
+// [-2] void setField(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(void *this_, QString* name, QVariant* value) {
   ((QWizardPage*)this_)->QWizardPage::setField(*name, *value);
@@ -81,7 +81,7 @@ void C_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(void *this_, QString* name
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:245
-// [16] QVariant field(const class QString &)
+// [16] QVariant field(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage5fieldERK7QString(void *this_, QString* name) {
   auto rv = ((QWizardPage*)this_)->QWizardPage::field(*name);
@@ -90,7 +90,7 @@ return new QVariant(rv);
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:246
-// [-2] void registerField(const class QString &, class QWidget *, const char *, const char *)
+// [-2] void registerField(const QString &, QWidget *, const char *, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(void *this_, QString* name, QWidget * widget, const char * property, const char * changedSignal) {
   ((QWizardPage*)this_)->QWizardPage::registerField(*name, widget, property, changedSignal);
@@ -114,7 +114,7 @@ void* C_ZNK11QWizardPage10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:218
-// [-2] void QWizardPage(class QWidget *)
+// [-2] void QWizardPage(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQWizardPage*)(0);
@@ -130,7 +130,7 @@ void C_ZN11QWizardPageD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:221
-// [-2] void setTitle(const class QString &)
+// [-2] void setTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage8setTitleERK7QString(void *this_, QString* title) {
   ((QWizardPage*)this_)->setTitle(*title);
@@ -147,7 +147,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:223
-// [-2] void setSubTitle(const class QString &)
+// [-2] void setSubTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage11setSubTitleERK7QString(void *this_, QString* subTitle) {
   ((QWizardPage*)this_)->setSubTitle(*subTitle);
@@ -164,7 +164,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:225
-// [-2] void setPixmap(class QWizard::WizardPixmap, const class QPixmap &)
+// [-2] void setPixmap(QWizard::WizardPixmap, const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage9setPixmapEN7QWizard12WizardPixmapERK7QPixmap(void *this_, QWizard::WizardPixmap which, QPixmap* pixmap) {
   ((QWizardPage*)this_)->setPixmap(which, *pixmap);
@@ -172,7 +172,7 @@ void C_ZN11QWizardPage9setPixmapEN7QWizard12WizardPixmapERK7QPixmap(void *this_,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:226
-// [32] QPixmap pixmap(class QWizard::WizardPixmap)
+// [32] QPixmap pixmap(QWizard::WizardPixmap)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage6pixmapEN7QWizard12WizardPixmapE(void *this_, QWizard::WizardPixmap which) {
   auto rv = ((QWizardPage*)this_)->pixmap(which);
@@ -181,7 +181,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:227
-// [-2] void setFinalPage(_Bool)
+// [-2] void setFinalPage(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage12setFinalPageEb(void *this_, bool finalPage) {
   ((QWizardPage*)this_)->setFinalPage(finalPage);
@@ -197,7 +197,7 @@ bool C_ZNK11QWizardPage11isFinalPageEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:229
-// [-2] void setCommitPage(_Bool)
+// [-2] void setCommitPage(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage13setCommitPageEb(void *this_, bool commitPage) {
   ((QWizardPage*)this_)->setCommitPage(commitPage);
@@ -213,7 +213,7 @@ bool C_ZNK11QWizardPage12isCommitPageEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:231
-// [-2] void setButtonText(class QWizard::WizardButton, const class QString &)
+// [-2] void setButtonText(QWizard::WizardButton, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage13setButtonTextEN7QWizard12WizardButtonERK7QString(void *this_, QWizard::WizardButton which, QString* text) {
   ((QWizardPage*)this_)->setButtonText(which, *text);
@@ -221,7 +221,7 @@ void C_ZN11QWizardPage13setButtonTextEN7QWizard12WizardButtonERK7QString(void *t
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:232
-// [8] QString buttonText(class QWizard::WizardButton)
+// [8] QString buttonText(QWizard::WizardButton)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage10buttonTextEN7QWizard12WizardButtonE(void *this_, QWizard::WizardButton which) {
   auto rv = ((QWizardPage*)this_)->buttonText(which);

@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQEventLoop : public QEventLoop {
 public:
   virtual ~MyQEventLoop() {}
-// void QEventLoop(class QObject *)
+// void QEventLoop(QObject *)
 MyQEventLoop(QObject * parent) : QEventLoop(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK10QEventLoop10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:56
-// [-2] void QEventLoop(class QObject *)
+// [-2] void QEventLoop(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QEventLoopC2EP7QObject(QObject * parent) {
   return  new QEventLoop(parent);
@@ -93,7 +93,7 @@ void C_ZN10QEventLoop6wakeUpEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:79
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QEventLoop5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QEventLoop*)this_)->event(event);

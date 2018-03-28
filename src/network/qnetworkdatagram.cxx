@@ -19,7 +19,7 @@ public:
   virtual ~MyQNetworkDatagram() {}
 // void QNetworkDatagram()
 MyQNetworkDatagram() : QNetworkDatagram() {}
-// void QNetworkDatagram(const class QByteArray &, const class QHostAddress &, quint16)
+// void QNetworkDatagram(const QByteArray &, const QHostAddress &, quint16)
 MyQNetworkDatagram(const QByteArray & data, const QHostAddress & destinationAddress, quint16 port) : QNetworkDatagram(data, destinationAddress, port) {}
 };
 
@@ -33,7 +33,7 @@ void* C_ZN16QNetworkDatagramC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:57
-// [-2] void QNetworkDatagram(const class QByteArray &, const class QHostAddress &, quint16)
+// [-2] void QNetworkDatagram(const QByteArray &, const QHostAddress &, quint16)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QNetworkDatagramC2ERK10QByteArrayRK12QHostAddresst(QByteArray* data, QHostAddress* destinationAddress, quint16 port) {
   return  new QNetworkDatagram(*data, *destinationAddress, port);
@@ -41,7 +41,7 @@ void* C_ZN16QNetworkDatagramC2ERK10QByteArrayRK12QHostAddresst(QByteArray* data,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:60
-// [8] QNetworkDatagram & operator=(const class QNetworkDatagram &)
+// [8] QNetworkDatagram & operator=(const QNetworkDatagram &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QNetworkDatagramaSERKS_(void *this_, QNetworkDatagram* other) {
   auto& rv = ((QNetworkDatagram*)this_)->operator=(*other);
@@ -57,7 +57,7 @@ void C_ZN16QNetworkDatagramD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:67
-// [8] QNetworkDatagram & operator=(class QNetworkDatagram &&)
+// [8] QNetworkDatagram & operator=(QNetworkDatagram &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QNetworkDatagramaSEOS_(void *this_, QNetworkDatagram && other) {
   auto& rv = ((QNetworkDatagram*)this_)->operator=(other);
@@ -66,7 +66,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:70
-// [-2] void swap(class QNetworkDatagram &)
+// [-2] void swap(QNetworkDatagram &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QNetworkDatagram4swapERS_(void *this_, QNetworkDatagram* other) {
   ((QNetworkDatagram*)this_)->swap(*other);
@@ -148,7 +148,7 @@ int C_ZNK16QNetworkDatagram15destinationPortEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:85
-// [-2] void setSender(const class QHostAddress &, quint16)
+// [-2] void setSender(const QHostAddress &, quint16)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QNetworkDatagram9setSenderERK12QHostAddresst(void *this_, QHostAddress* address, quint16 port) {
   ((QNetworkDatagram*)this_)->setSender(*address, port);
@@ -156,7 +156,7 @@ void C_ZN16QNetworkDatagram9setSenderERK12QHostAddresst(void *this_, QHostAddres
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:86
-// [-2] void setDestination(const class QHostAddress &, quint16)
+// [-2] void setDestination(const QHostAddress &, quint16)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QNetworkDatagram14setDestinationERK12QHostAddresst(void *this_, QHostAddress* address, quint16 port) {
   ((QNetworkDatagram*)this_)->setDestination(*address, port);
@@ -189,7 +189,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:92
-// [-2] void setData(const class QByteArray &)
+// [-2] void setData(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QNetworkDatagram7setDataERK10QByteArray(void *this_, QByteArray* data) {
   ((QNetworkDatagram*)this_)->setData(*data);
@@ -197,7 +197,7 @@ void C_ZN16QNetworkDatagram7setDataERK10QByteArray(void *this_, QByteArray* data
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:95
-// [8] QNetworkDatagram makeReply(const class QByteArray &)
+// [8] QNetworkDatagram makeReply(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNKR16QNetworkDatagram9makeReplyERK10QByteArray(void *this_, QByteArray* payload) {
   auto rv = ((QNetworkDatagram*)this_)->makeReply(*payload);
@@ -206,7 +206,7 @@ return new QNetworkDatagram(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:97
-// [8] QNetworkDatagram makeReply(const class QByteArray &)
+// [8] QNetworkDatagram makeReply(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNO16QNetworkDatagram9makeReplyERK10QByteArray(void *this_, QByteArray* payload) {
   auto rv = ((QNetworkDatagram*)this_)->makeReply(*payload);

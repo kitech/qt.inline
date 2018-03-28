@@ -36,7 +36,7 @@ QSGRendererInterface::GraphicsApi C_ZNK20QSGRendererInterface11graphicsApiEv(voi
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendererinterface.h:90
-// [8] void * getResource(class QQuickWindow *, enum QSGRendererInterface::Resource)
+// [8] void * getResource(QQuickWindow *, QSGRendererInterface::Resource)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGRendererInterface11getResourceEP12QQuickWindowNS_8ResourceE(void *this_, QQuickWindow * window, QSGRendererInterface::Resource resource) {
   return (void*)((QSGRendererInterface*)this_)->getResource(window, resource);
@@ -44,7 +44,7 @@ void* C_ZNK20QSGRendererInterface11getResourceEP12QQuickWindowNS_8ResourceE(void
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendererinterface.h:91
-// [8] void * getResource(class QQuickWindow *, const char *)
+// [8] void * getResource(QQuickWindow *, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGRendererInterface11getResourceEP12QQuickWindowPKc(void *this_, QQuickWindow * window, const char * resource) {
   return (void*)((QSGRendererInterface*)this_)->getResource(window, resource);

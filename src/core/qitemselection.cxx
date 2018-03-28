@@ -18,7 +18,7 @@ public:
   virtual ~MyQItemSelection() {}
 // void QItemSelection()
 MyQItemSelection() : QItemSelection() {}
-// void QItemSelection(const class QModelIndex &, const class QModelIndex &)
+// void QItemSelection(const QModelIndex &, const QModelIndex &)
 MyQItemSelection(const QModelIndex & topLeft, const QModelIndex & bottomRight) : QItemSelection(topLeft, bottomRight) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZN14QItemSelectionC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:251
-// [-2] void QItemSelection(const class QModelIndex &, const class QModelIndex &)
+// [-2] void QItemSelection(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QItemSelectionC2ERK11QModelIndexS2_(QModelIndex* topLeft, QModelIndex* bottomRight) {
   return  new QItemSelection(*topLeft, *bottomRight);
@@ -40,7 +40,7 @@ void* C_ZN14QItemSelectionC2ERK11QModelIndexS2_(QModelIndex* topLeft, QModelInde
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:255
-// [-2] void select(const class QModelIndex &, const class QModelIndex &)
+// [-2] void select(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QItemSelection6selectERK11QModelIndexS2_(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight) {
   ((QItemSelection*)this_)->select(*topLeft, *bottomRight);
@@ -48,7 +48,7 @@ void C_ZN14QItemSelection6selectERK11QModelIndexS2_(void *this_, QModelIndex* to
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:256
-// [1] bool contains(const class QModelIndex &)
+// [1] bool contains(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QItemSelection8containsERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QItemSelection*)this_)->contains(*index);
@@ -65,7 +65,7 @@ return new QModelIndexList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:258
-// [-2] void merge(const class QItemSelection &, class QItemSelectionModel::SelectionFlags)
+// [-2] void merge(const QItemSelection &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QItemSelection5mergeERKS_6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QItemSelection* other, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QItemSelection*)this_)->merge(*other, command);
@@ -73,7 +73,7 @@ void C_ZN14QItemSelection5mergeERKS_6QFlagsIN19QItemSelectionModel13SelectionFla
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:259
-// [-2] void split(const class QItemSelectionRange &, const class QItemSelectionRange &, class QItemSelection *)
+// [-2] void split(const QItemSelectionRange &, const QItemSelectionRange &, QItemSelection *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QItemSelection5splitERK19QItemSelectionRangeS2_PS_(QItemSelectionRange* range_, QItemSelectionRange* other, QItemSelection * result) {
   QItemSelection::split(*range_, *other, result);

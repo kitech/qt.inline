@@ -19,7 +19,7 @@ public:
   virtual ~MyQNetworkProxy() {}
 // void QNetworkProxy()
 MyQNetworkProxy() : QNetworkProxy() {}
-// void QNetworkProxy(enum QNetworkProxy::ProxyType, const class QString &, quint16, const class QString &, const class QString &)
+// void QNetworkProxy(QNetworkProxy::ProxyType, const QString &, quint16, const QString &, const QString &)
 MyQNetworkProxy(QNetworkProxy::ProxyType type_, const QString & hostName, quint16 port, const QString & user, const QString & password) : QNetworkProxy(type_, hostName, port, user, password) {}
 };
 
@@ -33,7 +33,7 @@ void* C_ZN13QNetworkProxyC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:161
-// [-2] void QNetworkProxy(enum QNetworkProxy::ProxyType, const class QString &, quint16, const class QString &, const class QString &)
+// [-2] void QNetworkProxy(QNetworkProxy::ProxyType, const QString &, quint16, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::ProxyType type_, QString* hostName, quint16 port, QString* user, QString* password) {
   return  new QNetworkProxy(type_, *hostName, port, *user, *password);
@@ -41,7 +41,7 @@ void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::Proxy
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:165
-// [8] QNetworkProxy & operator=(class QNetworkProxy &&)
+// [8] QNetworkProxy & operator=(QNetworkProxy &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QNetworkProxyaSEOS_(void *this_, QNetworkProxy && other) {
   auto& rv = ((QNetworkProxy*)this_)->operator=(other);
@@ -50,7 +50,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:167
-// [8] QNetworkProxy & operator=(const class QNetworkProxy &)
+// [8] QNetworkProxy & operator=(const QNetworkProxy &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QNetworkProxyaSERKS_(void *this_, QNetworkProxy* other) {
   auto& rv = ((QNetworkProxy*)this_)->operator=(*other);
@@ -67,7 +67,7 @@ void C_ZN13QNetworkProxyD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:170
-// [-2] void swap(class QNetworkProxy &)
+// [-2] void swap(QNetworkProxy &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy4swapERS_(void *this_, QNetworkProxy* other) {
@@ -77,7 +77,7 @@ void C_ZN13QNetworkProxy4swapERS_(void *this_, QNetworkProxy* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:172
-// [1] bool operator==(const class QNetworkProxy &)
+// [1] bool operator==(const QNetworkProxy &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxyeqERKS_(void *this_, QNetworkProxy* other) {
   return (bool)((QNetworkProxy*)this_)->operator==(*other);
@@ -85,7 +85,7 @@ bool C_ZNK13QNetworkProxyeqERKS_(void *this_, QNetworkProxy* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:173
-// [1] bool operator!=(const class QNetworkProxy &)
+// [1] bool operator!=(const QNetworkProxy &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxyneERKS_(void *this_, QNetworkProxy* other) {
   return (bool)((QNetworkProxy*)this_)->operator!=(*other);
@@ -93,7 +93,7 @@ bool C_ZNK13QNetworkProxyneERKS_(void *this_, QNetworkProxy* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:176
-// [-2] void setType(class QNetworkProxy::ProxyType)
+// [-2] void setType(QNetworkProxy::ProxyType)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy7setTypeENS_9ProxyTypeE(void *this_, QNetworkProxy::ProxyType type_) {
   ((QNetworkProxy*)this_)->setType(type_);
@@ -151,7 +151,7 @@ bool C_ZNK13QNetworkProxy18isTransparentProxyEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:184
-// [-2] void setUser(const class QString &)
+// [-2] void setUser(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy7setUserERK7QString(void *this_, QString* userName) {
   ((QNetworkProxy*)this_)->setUser(*userName);
@@ -168,7 +168,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:187
-// [-2] void setPassword(const class QString &)
+// [-2] void setPassword(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy11setPasswordERK7QString(void *this_, QString* password) {
   ((QNetworkProxy*)this_)->setPassword(*password);
@@ -185,7 +185,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:190
-// [-2] void setHostName(const class QString &)
+// [-2] void setHostName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy11setHostNameERK7QString(void *this_, QString* hostName) {
   ((QNetworkProxy*)this_)->setHostName(*hostName);
@@ -218,7 +218,7 @@ quint16 C_ZNK13QNetworkProxy4portEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:196
-// [-2] void setApplicationProxy(const class QNetworkProxy &)
+// [-2] void setApplicationProxy(const QNetworkProxy &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy19setApplicationProxyERKS_(QNetworkProxy* proxy) {
   QNetworkProxy::setApplicationProxy(*proxy);
@@ -236,7 +236,7 @@ return new QNetworkProxy(rv);
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:200
-// [16] QVariant header(class QNetworkRequest::KnownHeaders)
+// [16] QVariant header(QNetworkRequest::KnownHeaders)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkProxy6headerEN15QNetworkRequest12KnownHeadersE(void *this_, QNetworkRequest::KnownHeaders header) {
@@ -248,7 +248,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:201
-// [-2] void setHeader(class QNetworkRequest::KnownHeaders, const class QVariant &)
+// [-2] void setHeader(QNetworkRequest::KnownHeaders, const QVariant &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void *this_, QNetworkRequest::KnownHeaders header, QVariant* value) {
@@ -259,7 +259,7 @@ void C_ZN13QNetworkProxy9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:204
-// [1] bool hasRawHeader(const class QByteArray &)
+// [1] bool hasRawHeader(const QByteArray &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxy12hasRawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
@@ -270,7 +270,7 @@ bool C_ZNK13QNetworkProxy12hasRawHeaderERK10QByteArray(void *this_, QByteArray* 
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:206
-// [8] QByteArray rawHeader(const class QByteArray &)
+// [8] QByteArray rawHeader(const QByteArray &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkProxy9rawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
@@ -282,7 +282,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:207
-// [-2] void setRawHeader(const class QByteArray &, const class QByteArray &)
+// [-2] void setRawHeader(const QByteArray &, const QByteArray &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* headerName, QByteArray* value) {

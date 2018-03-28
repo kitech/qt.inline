@@ -37,7 +37,7 @@ void C_ZN16QSGTransformNodeD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:287
-// [-2] void setMatrix(const class QMatrix4x4 &)
+// [-2] void setMatrix(const QMatrix4x4 &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGTransformNode9setMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
   ((QSGTransformNode*)this_)->setMatrix(*matrix);
@@ -54,7 +54,7 @@ return new QMatrix4x4(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:290
-// [-2] void setCombinedMatrix(const class QMatrix4x4 &)
+// [-2] void setCombinedMatrix(const QMatrix4x4 &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGTransformNode17setCombinedMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
   ((QSGTransformNode*)this_)->setCombinedMatrix(*matrix);

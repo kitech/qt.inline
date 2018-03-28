@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQSplitterHandle : public QSplitterHandle {
 public:
   virtual ~MyQSplitterHandle() {}
-// void QSplitterHandle(Qt::Orientation, class QSplitter *)
+// void QSplitterHandle(Qt::Orientation, QSplitter *)
 MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -43,7 +43,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -67,7 +67,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -79,7 +79,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -120,7 +120,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:151
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::paintEvent(arg0);
@@ -128,7 +128,7 @@ void C_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void *this_, QPaintEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:152
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::mouseMoveEvent(arg0);
@@ -136,7 +136,7 @@ void C_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:153
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::mousePressEvent(arg0);
@@ -144,7 +144,7 @@ void C_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void *this_, QMouseEv
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:154
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::mouseReleaseEvent(arg0);
@@ -152,7 +152,7 @@ void C_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void *this_, QMouse
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:155
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QSplitterHandle*)this_)->QSplitterHandle::resizeEvent(arg0);
@@ -160,7 +160,7 @@ void C_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void *this_, QResizeEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:156
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QSplitterHandle5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QSplitterHandle*)this_)->QSplitterHandle::event(arg0);
@@ -192,7 +192,7 @@ void* C_ZNK15QSplitterHandle10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:140
-// [-2] void QSplitterHandle(Qt::Orientation, class QSplitter *)
+// [-2] void QSplitterHandle(Qt::Orientation, QSplitter *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QSplitterHandleC2EN2Qt11OrientationEP9QSplitter(Qt::Orientation o, QSplitter * parent) {
   auto _nilp = (MyQSplitterHandle*)(0);

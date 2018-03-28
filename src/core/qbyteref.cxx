@@ -29,7 +29,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:538
-// [16] QByteRef & operator=(const class QByteRef &)
+// [16] QByteRef & operator=(const QByteRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QByteRefaSERKS_(void *this_, QByteRef* c) {
   auto& rv = ((QByteRef*)this_)->operator=(*c);

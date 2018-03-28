@@ -19,7 +19,7 @@ public:
   virtual ~MyQFileDevice() {}
 // void QFileDevice()
 MyQFileDevice() : QFileDevice() {}
-// void QFileDevice(class QObject *)
+// void QFileDevice(QObject *)
 MyQFileDevice(QObject * parent) : QFileDevice(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // qint64 readData(char *, qint64)
@@ -217,7 +217,7 @@ bool C_ZN11QFileDevice14setPermissionsE6QFlagsINS_10PermissionEE(void *this_, QF
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:127
-// [8] uchar * map(qint64, qint64, enum QFileDevice::MemoryMapFlags)
+// [8] uchar * map(qint64, qint64, QFileDevice::MemoryMapFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFileDevice3mapExxNS_14MemoryMapFlagsE(void *this_, qint64 offset, qint64 size, QFileDevice::MemoryMapFlags flags) {
   return (void*)((QFileDevice*)this_)->map(offset, size, flags);
@@ -234,7 +234,7 @@ bool C_ZN11QFileDevice5unmapEPh(void *this_, uchar * address) {
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qfiledevice.h:130
-// [8] QDateTime fileTime(class QFileDevice::FileTime)
+// [8] QDateTime fileTime(QFileDevice::FileTime)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDevice8fileTimeENS_8FileTimeE(void *this_, QFileDevice::FileTime time) {
@@ -246,7 +246,7 @@ return new QDateTime(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qfiledevice.h:131
-// [1] bool setFileTime(const class QDateTime &, class QFileDevice::FileTime)
+// [1] bool setFileTime(const QDateTime &, QFileDevice::FileTime)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QFileDevice11setFileTimeERK9QDateTimeNS_8FileTimeE(void *this_, QDateTime* newDate, QFileDevice::FileTime fileTime) {

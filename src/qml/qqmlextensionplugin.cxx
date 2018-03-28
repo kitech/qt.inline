@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQQmlExtensionPlugin : public QQmlExtensionPlugin {
 public:
   virtual ~MyQQmlExtensionPlugin() {}
-// void QQmlExtensionPlugin(class QObject *)
+// void QQmlExtensionPlugin(QObject *)
 MyQQmlExtensionPlugin(QObject * parent) : QQmlExtensionPlugin(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK19QQmlExtensionPlugin10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:61
-// [-2] void QQmlExtensionPlugin(class QObject *)
+// [-2] void QQmlExtensionPlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQmlExtensionPluginC2EP7QObject(QObject * parent) {
   return 0; // new QQmlExtensionPlugin(parent);
@@ -66,7 +66,7 @@ void C_ZN19QQmlExtensionPlugin13registerTypesEPKc(void *this_, const char * uri)
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:67
-// [-2] void initializeEngine(class QQmlEngine *, const char *)
+// [-2] void initializeEngine(QQmlEngine *, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QQmlExtensionPlugin16initializeEngineEP10QQmlEnginePKc(void *this_, QQmlEngine * engine, const char * uri) {
   ((QQmlExtensionPlugin*)this_)->initializeEngine(engine, uri);

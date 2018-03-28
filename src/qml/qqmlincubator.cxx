@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQQmlIncubator : public QQmlIncubator {
 public:
   virtual ~MyQQmlIncubator() {}
-// void QQmlIncubator(enum QQmlIncubator::IncubationMode)
+// void QQmlIncubator(QQmlIncubator::IncubationMode)
 MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
 // Protected virtual Visibility=Default Availability=Available
-// void statusChanged(enum QQmlIncubator::Status)
+// void statusChanged(QQmlIncubator::Status)
   virtual void statusChanged(QQmlIncubator::Status arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"statusChanged", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setInitialState(class QObject *)
+// void setInitialState(QObject *)
   virtual void setInitialState(QObject * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setInitialState", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:88
-// [-2] void statusChanged(enum QQmlIncubator::Status)
+// [-2] void statusChanged(QQmlIncubator::Status)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubator13statusChangedENS_6StatusE(void *this_, QQmlIncubator::Status arg0) {
   ((QQmlIncubator*)this_)->QQmlIncubator::statusChanged(arg0);
@@ -54,7 +54,7 @@ void C_ZN13QQmlIncubator13statusChangedENS_6StatusE(void *this_, QQmlIncubator::
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:89
-// [-2] void setInitialState(class QObject *)
+// [-2] void setInitialState(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlIncubator15setInitialStateEP7QObject(void *this_, QObject * arg0) {
   ((QQmlIncubator*)this_)->QQmlIncubator::setInitialState(arg0);
@@ -62,7 +62,7 @@ void C_ZN13QQmlIncubator15setInitialStateEP7QObject(void *this_, QObject * arg0)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:68
-// [-2] void QQmlIncubator(enum QQmlIncubator::IncubationMode)
+// [-2] void QQmlIncubator(QQmlIncubator::IncubationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlIncubatorC2ENS_14IncubationModeE(QQmlIncubator::IncubationMode arg0) {
   auto _nilp = (MyQQmlIncubator*)(0);

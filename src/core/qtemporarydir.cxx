@@ -18,7 +18,7 @@ public:
   virtual ~MyQTemporaryDir() {}
 // void QTemporaryDir()
 MyQTemporaryDir() : QTemporaryDir() {}
-// void QTemporaryDir(const class QString &)
+// void QTemporaryDir(const QString &)
 MyQTemporaryDir(const QString & templateName) : QTemporaryDir(templateName) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZN13QTemporaryDirC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:57
-// [-2] void QTemporaryDir(const class QString &)
+// [-2] void QTemporaryDir(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTemporaryDirC2ERK7QString(QString* templateName) {
   return  new QTemporaryDir(*templateName);
@@ -75,7 +75,7 @@ bool C_ZNK13QTemporaryDir10autoRemoveEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:64
-// [-2] void setAutoRemove(_Bool)
+// [-2] void setAutoRemove(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTemporaryDir13setAutoRemoveEb(void *this_, bool b) {
   ((QTemporaryDir*)this_)->setAutoRemove(b);
@@ -101,7 +101,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtCore/qtemporarydir.h:68
-// [8] QString filePath(const class QString &)
+// [8] QString filePath(const QString &)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTemporaryDir8filePathERK7QString(void *this_, QString* fileName) {

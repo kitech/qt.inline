@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQGraphicsRotation : public QGraphicsRotation {
 public:
   virtual ~MyQGraphicsRotation() {}
-// void QGraphicsRotation(class QObject *)
+// void QGraphicsRotation(QObject *)
 MyQGraphicsRotation(QObject * parent) : QGraphicsRotation(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK17QGraphicsRotation10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:126
-// [-2] void QGraphicsRotation(class QObject *)
+// [-2] void QGraphicsRotation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsRotationC2EP7QObject(QObject * parent) {
   return  new QGraphicsRotation(parent);
@@ -55,7 +55,7 @@ return new QVector3D(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:130
-// [-2] void setOrigin(const class QVector3D &)
+// [-2] void setOrigin(const QVector3D &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRotation9setOriginERK9QVector3D(void *this_, QVector3D* point) {
   ((QGraphicsRotation*)this_)->setOrigin(*point);
@@ -88,7 +88,7 @@ return new QVector3D(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:136
-// [-2] void setAxis(const class QVector3D &)
+// [-2] void setAxis(const QVector3D &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRotation7setAxisERK9QVector3D(void *this_, QVector3D* axis) {
   ((QGraphicsRotation*)this_)->setAxis(*axis);
@@ -104,7 +104,7 @@ void C_ZN17QGraphicsRotation7setAxisEN2Qt4AxisE(void *this_, Qt::Axis axis) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:139
-// [-2] void applyTo(class QMatrix4x4 *)
+// [-2] void applyTo(QMatrix4x4 *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK17QGraphicsRotation7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
   ((QGraphicsRotation*)this_)->applyTo(matrix);

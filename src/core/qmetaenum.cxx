@@ -89,7 +89,7 @@ void* C_ZNK9QMetaEnum5scopeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:221
-// [4] int keyToValue(const char *, _Bool *)
+// [4] int keyToValue(const char *, bool *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QMetaEnum10keyToValueEPKcPb(void *this_, const char * key, bool * ok) {
   return (int)((QMetaEnum*)this_)->keyToValue(key, ok);
@@ -105,7 +105,7 @@ void* C_ZNK9QMetaEnum10valueToKeyEi(void *this_, int value) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:223
-// [4] int keysToValue(const char *, _Bool *)
+// [4] int keysToValue(const char *, bool *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QMetaEnum11keysToValueEPKcPb(void *this_, const char * keys, bool * ok) {
   return (int)((QMetaEnum*)this_)->keysToValue(keys, ok);

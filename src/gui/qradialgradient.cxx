@@ -18,15 +18,15 @@ public:
   virtual ~MyQRadialGradient() {}
 // void QRadialGradient()
 MyQRadialGradient() : QRadialGradient() {}
-// void QRadialGradient(const class QPointF &, qreal, const class QPointF &)
+// void QRadialGradient(const QPointF &, qreal, const QPointF &)
 MyQRadialGradient(const QPointF & center, qreal radius, const QPointF & focalPoint) : QRadialGradient(center, radius, focalPoint) {}
 // void QRadialGradient(qreal, qreal, qreal, qreal, qreal)
 MyQRadialGradient(qreal cx, qreal cy, qreal radius, qreal fx, qreal fy) : QRadialGradient(cx, cy, radius, fx, fy) {}
-// void QRadialGradient(const class QPointF &, qreal)
+// void QRadialGradient(const QPointF &, qreal)
 MyQRadialGradient(const QPointF & center, qreal radius) : QRadialGradient(center, radius) {}
 // void QRadialGradient(qreal, qreal, qreal)
 MyQRadialGradient(qreal cx, qreal cy, qreal radius) : QRadialGradient(cx, cy, radius) {}
-// void QRadialGradient(const class QPointF &, qreal, const class QPointF &, qreal)
+// void QRadialGradient(const QPointF &, qreal, const QPointF &, qreal)
 MyQRadialGradient(const QPointF & center, qreal centerRadius, const QPointF & focalPoint, qreal focalRadius) : QRadialGradient(center, centerRadius, focalPoint, focalRadius) {}
 // void QRadialGradient(qreal, qreal, qreal, qreal, qreal, qreal)
 MyQRadialGradient(qreal cx, qreal cy, qreal centerRadius, qreal fx, qreal fy, qreal focalRadius) : QRadialGradient(cx, cy, centerRadius, fx, fy, focalRadius) {}
@@ -42,7 +42,7 @@ void* C_ZN15QRadialGradientC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:275
-// [-2] void QRadialGradient(const class QPointF &, qreal, const class QPointF &)
+// [-2] void QRadialGradient(const QPointF &, qreal, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2ERK7QPointFdS2_(QPointF* center, qreal radius, QPointF* focalPoint) {
   return  new QRadialGradient(*center, radius, *focalPoint);
@@ -58,7 +58,7 @@ void* C_ZN15QRadialGradientC2Eddddd(qreal cx, qreal cy, qreal radius, qreal fx, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:278
-// [-2] void QRadialGradient(const class QPointF &, qreal)
+// [-2] void QRadialGradient(const QPointF &, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2ERK7QPointFd(QPointF* center, qreal radius) {
   return  new QRadialGradient(*center, radius);
@@ -75,7 +75,7 @@ void* C_ZN15QRadialGradientC2Eddd(qreal cx, qreal cy, qreal radius) {
 // Public Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qbrush.h:281
-// [-2] void QRadialGradient(const class QPointF &, qreal, const class QPointF &, qreal)
+// [-2] void QRadialGradient(const QPointF &, qreal, const QPointF &, qreal)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2ERK7QPointFdS2_d(QPointF* center, qreal centerRadius, QPointF* focalPoint, qreal focalRadius) {
@@ -106,7 +106,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qbrush.h:285
-// [-2] void setCenter(const class QPointF &)
+// [-2] void setCenter(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QRadialGradient9setCenterERK7QPointF(void *this_, QPointF* center) {
@@ -137,7 +137,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qbrush.h:289
-// [-2] void setFocalPoint(const class QPointF &)
+// [-2] void setFocalPoint(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QRadialGradient13setFocalPointERK7QPointF(void *this_, QPointF* focalPoint) {

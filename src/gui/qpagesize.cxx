@@ -19,11 +19,11 @@ public:
   virtual ~MyQPageSize() {}
 // void QPageSize()
 MyQPageSize() : QPageSize() {}
-// void QPageSize(enum QPageSize::PageSizeId)
+// void QPageSize(QPageSize::PageSizeId)
 MyQPageSize(QPageSize::PageSizeId pageSizeId) : QPageSize(pageSizeId) {}
-// void QPageSize(const class QSize &, const class QString &, enum QPageSize::SizeMatchPolicy)
+// void QPageSize(const QSize &, const QString &, QPageSize::SizeMatchPolicy)
 MyQPageSize(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) : QPageSize(pointSize, name, matchPolicy) {}
-// void QPageSize(const class QSizeF &, enum QPageSize::Unit, const class QString &, enum QPageSize::SizeMatchPolicy)
+// void QPageSize(const QSizeF &, QPageSize::Unit, const QString &, QPageSize::SizeMatchPolicy)
 MyQPageSize(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) : QPageSize(size, units, name, matchPolicy) {}
 };
 
@@ -37,7 +37,7 @@ void* C_ZN9QPageSizeC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:231
-// [-2] void QPageSize(enum QPageSize::PageSizeId)
+// [-2] void QPageSize(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSizeC2ENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   return  new QPageSize(pageSizeId);
@@ -45,7 +45,7 @@ void* C_ZN9QPageSizeC2ENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:232
-// [-2] void QPageSize(const class QSize &, const class QString &, enum QPageSize::SizeMatchPolicy)
+// [-2] void QPageSize(const QSize &, const QString &, QPageSize::SizeMatchPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSizeC2ERK5QSizeRK7QStringNS_15SizeMatchPolicyE(QSize* pointSize, QString* name, QPageSize::SizeMatchPolicy matchPolicy) {
   return  new QPageSize(*pointSize, *name, matchPolicy);
@@ -53,7 +53,7 @@ void* C_ZN9QPageSizeC2ERK5QSizeRK7QStringNS_15SizeMatchPolicyE(QSize* pointSize,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:235
-// [-2] void QPageSize(const class QSizeF &, enum QPageSize::Unit, const class QString &, enum QPageSize::SizeMatchPolicy)
+// [-2] void QPageSize(const QSizeF &, QPageSize::Unit, const QString &, QPageSize::SizeMatchPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSizeC2ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(QSizeF* size, QPageSize::Unit units, QString* name, QPageSize::SizeMatchPolicy matchPolicy) {
   return  new QPageSize(*size, units, *name, matchPolicy);
@@ -61,7 +61,7 @@ void* C_ZN9QPageSizeC2ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(QSizeF*
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:240
-// [8] QPageSize & operator=(class QPageSize &&)
+// [8] QPageSize & operator=(QPageSize &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSizeaSEOS_(void *this_, QPageSize && other) {
   auto& rv = ((QPageSize*)this_)->operator=(other);
@@ -70,7 +70,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:242
-// [8] QPageSize & operator=(const class QPageSize &)
+// [8] QPageSize & operator=(const QPageSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSizeaSERKS_(void *this_, QPageSize* other) {
   auto& rv = ((QPageSize*)this_)->operator=(*other);
@@ -86,7 +86,7 @@ void C_ZN9QPageSizeD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:246
-// [-2] void swap(class QPageSize &)
+// [-2] void swap(QPageSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QPageSize4swapERS_(void *this_, QPageSize* other) {
   ((QPageSize*)this_)->swap(*other);
@@ -94,7 +94,7 @@ void C_ZN9QPageSize4swapERS_(void *this_, QPageSize* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:249
-// [1] bool isEquivalentTo(const class QPageSize &)
+// [1] bool isEquivalentTo(const QPageSize &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QPageSize14isEquivalentToERKS_(void *this_, QPageSize* other) {
   return (bool)((QPageSize*)this_)->isEquivalentTo(*other);
@@ -161,7 +161,7 @@ QPageSize::Unit C_ZNK9QPageSize15definitionUnitsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:263
-// [16] QSizeF size(enum QPageSize::Unit)
+// [16] QSizeF size(QPageSize::Unit)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QPageSize4sizeENS_4UnitE(void *this_, QPageSize::Unit units) {
   auto rv = ((QPageSize*)this_)->size(units);
@@ -188,7 +188,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:267
-// [32] QRectF rect(enum QPageSize::Unit)
+// [32] QRectF rect(QPageSize::Unit)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QPageSize4rectENS_4UnitE(void *this_, QPageSize::Unit units) {
   auto rv = ((QPageSize*)this_)->rect(units);
@@ -215,7 +215,7 @@ return new QRect(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:271
-// [8] QString key(enum QPageSize::PageSizeId)
+// [8] QString key(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSize3keyENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   auto rv = QPageSize::key(pageSizeId);
@@ -224,7 +224,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:272
-// [8] QString name(enum QPageSize::PageSizeId)
+// [8] QString name(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSize4nameENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   auto rv = QPageSize::name(pageSizeId);
@@ -233,7 +233,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:274
-// [4] QPageSize::PageSizeId id(const class QSize &, enum QPageSize::SizeMatchPolicy)
+// [4] QPageSize::PageSizeId id(const QSize &, QPageSize::SizeMatchPolicy)
 extern "C" Q_DECL_EXPORT
 QPageSize::PageSizeId C_ZN9QPageSize2idERK5QSizeNS_15SizeMatchPolicyE(QSize* pointSize, QPageSize::SizeMatchPolicy matchPolicy) {
   return (QPageSize::PageSizeId)QPageSize::id(*pointSize, matchPolicy);
@@ -241,7 +241,7 @@ QPageSize::PageSizeId C_ZN9QPageSize2idERK5QSizeNS_15SizeMatchPolicyE(QSize* poi
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:276
-// [4] QPageSize::PageSizeId id(const class QSizeF &, enum QPageSize::Unit, enum QPageSize::SizeMatchPolicy)
+// [4] QPageSize::PageSizeId id(const QSizeF &, QPageSize::Unit, QPageSize::SizeMatchPolicy)
 extern "C" Q_DECL_EXPORT
 QPageSize::PageSizeId C_ZN9QPageSize2idERK6QSizeFNS_4UnitENS_15SizeMatchPolicyE(QSizeF* size, QPageSize::Unit units, QPageSize::SizeMatchPolicy matchPolicy) {
   return (QPageSize::PageSizeId)QPageSize::id(*size, units, matchPolicy);
@@ -257,7 +257,7 @@ QPageSize::PageSizeId C_ZN9QPageSize2idEi(int windowsId) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:280
-// [4] int windowsId(enum QPageSize::PageSizeId)
+// [4] int windowsId(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QPageSize9windowsIdENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   return (int)QPageSize::windowsId(pageSizeId);
@@ -265,7 +265,7 @@ int C_ZN9QPageSize9windowsIdENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) 
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:282
-// [16] QSizeF definitionSize(enum QPageSize::PageSizeId)
+// [16] QSizeF definitionSize(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSize14definitionSizeENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   auto rv = QPageSize::definitionSize(pageSizeId);
@@ -274,7 +274,7 @@ return new QSizeF(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:283
-// [4] QPageSize::Unit definitionUnits(enum QPageSize::PageSizeId)
+// [4] QPageSize::Unit definitionUnits(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 QPageSize::Unit C_ZN9QPageSize15definitionUnitsENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   return (QPageSize::Unit)QPageSize::definitionUnits(pageSizeId);
@@ -282,7 +282,7 @@ QPageSize::Unit C_ZN9QPageSize15definitionUnitsENS_10PageSizeIdE(QPageSize::Page
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:285
-// [16] QSizeF size(enum QPageSize::PageSizeId, enum QPageSize::Unit)
+// [16] QSizeF size(QPageSize::PageSizeId, QPageSize::Unit)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSize4sizeENS_10PageSizeIdENS_4UnitE(QPageSize::PageSizeId pageSizeId, QPageSize::Unit units) {
   auto rv = QPageSize::size(pageSizeId, units);
@@ -291,7 +291,7 @@ return new QSizeF(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:286
-// [8] QSize sizePoints(enum QPageSize::PageSizeId)
+// [8] QSize sizePoints(QPageSize::PageSizeId)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSize10sizePointsENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
   auto rv = QPageSize::sizePoints(pageSizeId);
@@ -300,7 +300,7 @@ return new QSize(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:287
-// [8] QSize sizePixels(enum QPageSize::PageSizeId, int)
+// [8] QSize sizePixels(QPageSize::PageSizeId, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPageSize10sizePixelsENS_10PageSizeIdEi(QPageSize::PageSizeId pageSizeId, int resolution) {
   auto rv = QPageSize::sizePixels(pageSizeId, resolution);

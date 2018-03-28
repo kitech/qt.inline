@@ -37,7 +37,7 @@ void C_ZN14QWaitConditionD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qwaitcondition.h:62
-// [1] bool wait(class QMutex *, unsigned long)
+// [1] bool wait(QMutex *, unsigned long)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWaitCondition4waitEP6QMutexm(void *this_, QMutex * lockedMutex, unsigned long time) {
   return (bool)((QWaitCondition*)this_)->wait(lockedMutex, time);
@@ -46,7 +46,7 @@ bool C_ZN14QWaitCondition4waitEP6QMutexm(void *this_, QMutex * lockedMutex, unsi
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtCore/qwaitcondition.h:63
-// [1] bool wait(class QReadWriteLock *, unsigned long)
+// [1] bool wait(QReadWriteLock *, unsigned long)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWaitCondition4waitEP14QReadWriteLockm(void *this_, QReadWriteLock * lockedReadWriteLock, unsigned long time) {

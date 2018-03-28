@@ -18,7 +18,7 @@ public:
   virtual ~MyQTextFrameFormat() {}
 // void QTextFrameFormat()
 MyQTextFrameFormat() : QTextFrameFormat() {}
-// void QTextFrameFormat(const class QTextFormat &)
+// void QTextFrameFormat(const QTextFormat &)
 MyQTextFrameFormat(const QTextFormat & fmt_) : QTextFrameFormat(fmt_) {}
 };
 
@@ -40,7 +40,7 @@ bool C_ZNK16QTextFrameFormat7isValidEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:796
-// [-2] void setPosition(enum QTextFrameFormat::Position)
+// [-2] void setPosition(QTextFrameFormat::Position)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat11setPositionENS_8PositionE(void *this_, QTextFrameFormat::Position f) {
   ((QTextFrameFormat*)this_)->setPosition(f);
@@ -73,7 +73,7 @@ qreal C_ZNK16QTextFrameFormat6borderEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:805
-// [-2] void setBorderBrush(const class QBrush &)
+// [-2] void setBorderBrush(const QBrush &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat14setBorderBrushERK6QBrush(void *this_, QBrush* brush) {
@@ -95,7 +95,7 @@ return new QBrush(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:810
-// [-2] void setBorderStyle(enum QTextFrameFormat::BorderStyle)
+// [-2] void setBorderStyle(QTextFrameFormat::BorderStyle)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat14setBorderStyleENS_11BorderStyleE(void *this_, QTextFrameFormat::BorderStyle style) {
   ((QTextFrameFormat*)this_)->setBorderStyle(style);
@@ -242,7 +242,7 @@ void C_ZN16QTextFrameFormat8setWidthEd(void *this_, qreal width) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:836
-// [-2] void setWidth(const class QTextLength &)
+// [-2] void setWidth(const QTextLength &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat8setWidthERK11QTextLength(void *this_, QTextLength* length) {
   ((QTextFrameFormat*)this_)->setWidth(*length);
@@ -267,7 +267,7 @@ void C_ZN16QTextFrameFormat9setHeightEd(void *this_, qreal height) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:842
-// [-2] void setHeight(const class QTextLength &)
+// [-2] void setHeight(const QTextLength &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextFrameFormat9setHeightERK11QTextLength(void *this_, QTextLength* height) {
   ((QTextFrameFormat*)this_)->setHeight(*height);

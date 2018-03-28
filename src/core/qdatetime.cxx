@@ -18,13 +18,13 @@ public:
   virtual ~MyQDateTime() {}
 // void QDateTime()
 MyQDateTime() : QDateTime() {}
-// void QDateTime(const class QDate &)
+// void QDateTime(const QDate &)
 MyQDateTime(const QDate & arg0) : QDateTime(arg0) {}
-// void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
+// void QDateTime(const QDate &, const QTime &, Qt::TimeSpec)
 MyQDateTime(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) : QDateTime(arg0, arg1, spec) {}
-// void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
+// void QDateTime(const QDate &, const QTime &, Qt::TimeSpec, int)
 MyQDateTime(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) : QDateTime(date, time, spec, offsetSeconds) {}
-// void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
+// void QDateTime(const QDate &, const QTime &, const QTimeZone &)
 MyQDateTime(const QDate & date, const QTime & time, const QTimeZone & timeZone) : QDateTime(date, time, timeZone) {}
 };
 
@@ -38,7 +38,7 @@ void* C_ZN9QDateTimeC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:262
-// [-2] void QDateTime(const class QDate &)
+// [-2] void QDateTime(const QDate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDate(QDate* arg0) {
   return  new QDateTime(*arg0);
@@ -46,7 +46,7 @@ void* C_ZN9QDateTimeC2ERK5QDate(QDate* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:263
-// [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
+// [-2] void QDateTime(const QDate &, const QTime &, Qt::TimeSpec)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecE(QDate* arg0, QTime* arg1, Qt::TimeSpec spec) {
   return  new QDateTime(*arg0, *arg1, spec);
@@ -55,7 +55,7 @@ void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecE(QDate* arg0, QTime* arg1, 
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:265
-// [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
+// [-2] void QDateTime(const QDate &, const QTime &, Qt::TimeSpec, int)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecEi(QDate* date, QTime* time, Qt::TimeSpec spec, int offsetSeconds) {
@@ -66,7 +66,7 @@ void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecEi(QDate* date, QTime* time,
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:267
-// [-2] void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
+// [-2] void QDateTime(const QDate &, const QTime &, const QTimeZone &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeRK9QTimeZone(QDate* date, QTime* time, QTimeZone* timeZone) {
@@ -83,7 +83,7 @@ void C_ZN9QDateTimeD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:274
-// [8] QDateTime & operator=(class QDateTime &&)
+// [8] QDateTime & operator=(QDateTime &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeaSEOS_(void *this_, QDateTime && other) {
   auto& rv = ((QDateTime*)this_)->operator=(other);
@@ -92,7 +92,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:276
-// [8] QDateTime & operator=(const class QDateTime &)
+// [8] QDateTime & operator=(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTimeaSERKS_(void *this_, QDateTime* other) {
   auto& rv = ((QDateTime*)this_)->operator=(*other);
@@ -102,7 +102,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qdatetime.h:278
-// [-2] void swap(class QDateTime &)
+// [-2] void swap(QDateTime &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime4swapERS_(void *this_, QDateTime* other) {
@@ -222,7 +222,7 @@ qint64 C_ZNK9QDateTime16toSecsSinceEpochEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:296
-// [-2] void setDate(const class QDate &)
+// [-2] void setDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime7setDateERK5QDate(void *this_, QDate* date) {
   ((QDateTime*)this_)->setDate(*date);
@@ -230,7 +230,7 @@ void C_ZN9QDateTime7setDateERK5QDate(void *this_, QDate* date) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:297
-// [-2] void setTime(const class QTime &)
+// [-2] void setTime(const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime7setTimeERK5QTime(void *this_, QTime* time) {
   ((QDateTime*)this_)->setTime(*time);
@@ -258,7 +258,7 @@ void C_ZN9QDateTime16setOffsetFromUtcEi(void *this_, int offsetSeconds) {
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:301
-// [-2] void setTimeZone(const class QTimeZone &)
+// [-2] void setTimeZone(const QTimeZone &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateTime11setTimeZoneERK9QTimeZone(void *this_, QTimeZone* toZone) {
@@ -299,7 +299,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:309
-// [8] QString toString(const class QString &)
+// [8] QString toString(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime8toStringERK7QString(void *this_, QString* format) {
   auto rv = ((QDateTime*)this_)->toString(*format);
@@ -308,7 +308,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:311
-// [8] QString toString(class QStringView)
+// [8] QString toString(QStringView)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime8toStringE11QStringView(void *this_, QStringView* format) {
   auto rv = ((QDateTime*)this_)->toString(*format);
@@ -402,7 +402,7 @@ return new QDateTime(rv);
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:324
-// [8] QDateTime toTimeZone(const class QTimeZone &)
+// [8] QDateTime toTimeZone(const QTimeZone &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateTime10toTimeZoneERK9QTimeZone(void *this_, QTimeZone* toZone) {
@@ -413,7 +413,7 @@ return new QDateTime(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:327
-// [8] qint64 daysTo(const class QDateTime &)
+// [8] qint64 daysTo(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QDateTime6daysToERKS_(void *this_, QDateTime* arg0) {
   return (qint64)((QDateTime*)this_)->daysTo(*arg0);
@@ -421,7 +421,7 @@ qint64 C_ZNK9QDateTime6daysToERKS_(void *this_, QDateTime* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:328
-// [8] qint64 secsTo(const class QDateTime &)
+// [8] qint64 secsTo(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QDateTime6secsToERKS_(void *this_, QDateTime* arg0) {
   return (qint64)((QDateTime*)this_)->secsTo(*arg0);
@@ -429,7 +429,7 @@ qint64 C_ZNK9QDateTime6secsToERKS_(void *this_, QDateTime* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:329
-// [8] qint64 msecsTo(const class QDateTime &)
+// [8] qint64 msecsTo(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK9QDateTime7msecsToERKS_(void *this_, QDateTime* arg0) {
   return (qint64)((QDateTime*)this_)->msecsTo(*arg0);
@@ -437,7 +437,7 @@ qint64 C_ZNK9QDateTime7msecsToERKS_(void *this_, QDateTime* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:331
-// [1] bool operator==(const class QDateTime &)
+// [1] bool operator==(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTimeeqERKS_(void *this_, QDateTime* other) {
   return (bool)((QDateTime*)this_)->operator==(*other);
@@ -445,7 +445,7 @@ bool C_ZNK9QDateTimeeqERKS_(void *this_, QDateTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:332
-// [1] bool operator!=(const class QDateTime &)
+// [1] bool operator!=(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTimeneERKS_(void *this_, QDateTime* other) {
   return (bool)((QDateTime*)this_)->operator!=(*other);
@@ -453,7 +453,7 @@ bool C_ZNK9QDateTimeneERKS_(void *this_, QDateTime* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:333
-// [1] bool operator<(const class QDateTime &)
+// [1] bool operator<(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTimeltERKS_(void *this_, QDateTime* other) {
   return (bool)((QDateTime*)this_)->operator<(*other);
@@ -461,7 +461,7 @@ bool C_ZNK9QDateTimeltERKS_(void *this_, QDateTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:334
-// [1] bool operator<=(const class QDateTime &)
+// [1] bool operator<=(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTimeleERKS_(void *this_, QDateTime* other) {
   return (bool)((QDateTime*)this_)->operator<=(*other);
@@ -469,7 +469,7 @@ bool C_ZNK9QDateTimeleERKS_(void *this_, QDateTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:335
-// [1] bool operator>(const class QDateTime &)
+// [1] bool operator>(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTimegtERKS_(void *this_, QDateTime* other) {
   return (bool)((QDateTime*)this_)->operator>(*other);
@@ -477,7 +477,7 @@ bool C_ZNK9QDateTimegtERKS_(void *this_, QDateTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:336
-// [1] bool operator>=(const class QDateTime &)
+// [1] bool operator>=(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QDateTimegeERKS_(void *this_, QDateTime* other) {
   return (bool)((QDateTime*)this_)->operator>=(*other);
@@ -522,7 +522,7 @@ return new QDateTime(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:346
-// [8] QDateTime fromString(const class QString &, Qt::DateFormat)
+// [8] QDateTime fromString(const QString &, Qt::DateFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFormat f) {
   auto rv = QDateTime::fromString(*s, f);
@@ -531,7 +531,7 @@ return new QDateTime(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:347
-// [8] QDateTime fromString(const class QString &, const class QString &)
+// [8] QDateTime fromString(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime10fromStringERK7QStringS2_(QString* s, QString* format) {
   auto rv = QDateTime::fromString(*s, *format);
@@ -574,7 +574,7 @@ return new QDateTime(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:356
-// [8] QDateTime fromTime_t(uint, const class QTimeZone &)
+// [8] QDateTime fromTime_t(uint, const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime10fromTime_tEjRK9QTimeZone(uint secsSince1Jan1970UTC, QTimeZone* timeZone) {
   auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC, *timeZone);
@@ -620,7 +620,7 @@ return new QDateTime(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtCore/qdatetime.h:365
-// [8] QDateTime fromMSecsSinceEpoch(qint64, const class QTimeZone &)
+// [8] QDateTime fromMSecsSinceEpoch(qint64, const QTimeZone &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime19fromMSecsSinceEpochExRK9QTimeZone(qint64 msecs, QTimeZone* timeZone) {
@@ -632,7 +632,7 @@ return new QDateTime(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtCore/qdatetime.h:366
-// [8] QDateTime fromSecsSinceEpoch(qint64, const class QTimeZone &)
+// [8] QDateTime fromSecsSinceEpoch(qint64, const QTimeZone &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateTime18fromSecsSinceEpochExRK9QTimeZone(qint64 secs, QTimeZone* timeZone) {

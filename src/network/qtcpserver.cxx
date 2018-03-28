@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQTcpServer : public QTcpServer {
 public:
   virtual ~MyQTcpServer() {}
-// void QTcpServer(class QObject *)
+// void QTcpServer(QObject *)
 MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void incomingConnection(qintptr)
@@ -31,7 +31,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void addPendingConnection(class QTcpSocket *)
+// void addPendingConnection(QTcpSocket *)
   virtual void addPendingConnection(QTcpSocket * socket) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"addPendingConnection", &handled, 1, (uint64_t)socket, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ void C_ZN10QTcpServer18incomingConnectionEx(void *this_, qintptr handle) {
 // Protected Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtNetwork/qtcpserver.h:95
-// [-2] void addPendingConnection(class QTcpSocket *)
+// [-2] void addPendingConnection(QTcpSocket *)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer20addPendingConnectionEP10QTcpSocket(void *this_, QTcpSocket * socket) {
@@ -73,7 +73,7 @@ void* C_ZNK10QTcpServer10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:61
-// [-2] void QTcpServer(class QObject *)
+// [-2] void QTcpServer(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTcpServerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTcpServer*)(0);
@@ -89,7 +89,7 @@ void C_ZN10QTcpServerD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:64
-// [1] bool listen(const class QHostAddress &, quint16)
+// [1] bool listen(const QHostAddress &, quint16)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QTcpServer6listenERK12QHostAddresst(void *this_, QHostAddress* address, quint16 port) {
   return (bool)((QTcpServer*)this_)->listen(*address, port);
@@ -162,7 +162,7 @@ bool C_ZN10QTcpServer19setSocketDescriptorEx(void *this_, qintptr socketDescript
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:78
-// [1] bool waitForNewConnection(int, _Bool *)
+// [1] bool waitForNewConnection(int, bool *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QTcpServer20waitForNewConnectionEiPb(void *this_, int msec, bool * timedOut) {
   return (bool)((QTcpServer*)this_)->waitForNewConnection(msec, timedOut);
@@ -226,7 +226,7 @@ void C_ZN10QTcpServer15resumeAcceptingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtNetwork/qtcpserver.h:89
-// [-2] void setProxy(const class QNetworkProxy &)
+// [-2] void setProxy(const QNetworkProxy &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer8setProxyERK13QNetworkProxy(void *this_, QNetworkProxy* networkProxy) {
@@ -257,7 +257,7 @@ void C_ZN10QTcpServer13newConnectionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qtcpserver.h:102
-// [-2] void acceptError(class QAbstractSocket::SocketError)
+// [-2] void acceptError(QAbstractSocket::SocketError)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer11acceptErrorEN15QAbstractSocket11SocketErrorE(void *this_, QAbstractSocket::SocketError socketError) {

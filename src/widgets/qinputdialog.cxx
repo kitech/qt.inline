@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQInputDialog : public QInputDialog {
 public:
   virtual ~MyQInputDialog() {}
-// void QInputDialog(class QWidget *, Qt::WindowFlags)
+// void QInputDialog(QWidget *, Qt::WindowFlags)
 MyQInputDialog(QWidget * parent, QFlags<Qt::WindowType> flags) : QInputDialog(parent, flags) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK12QInputDialog10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:94
-// [-2] void QInputDialog(class QWidget *, Qt::WindowFlags)
+// [-2] void QInputDialog(QWidget *, Qt::WindowFlags)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -49,7 +49,7 @@ void C_ZN12QInputDialogD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:97
-// [-2] void setInputMode(enum QInputDialog::InputMode)
+// [-2] void setInputMode(QInputDialog::InputMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog12setInputModeENS_9InputModeE(void *this_, QInputDialog::InputMode mode) {
   ((QInputDialog*)this_)->setInputMode(mode);
@@ -65,7 +65,7 @@ QInputDialog::InputMode C_ZNK12QInputDialog9inputModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:100
-// [-2] void setLabelText(const class QString &)
+// [-2] void setLabelText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog12setLabelTextERK7QString(void *this_, QString* text) {
   ((QInputDialog*)this_)->setLabelText(*text);
@@ -82,7 +82,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:103
-// [-2] void setOption(enum QInputDialog::InputDialogOption, _Bool)
+// [-2] void setOption(QInputDialog::InputDialogOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog9setOptionENS_17InputDialogOptionEb(void *this_, QInputDialog::InputDialogOption option, bool on) {
   ((QInputDialog*)this_)->setOption(option, on);
@@ -90,7 +90,7 @@ void C_ZN12QInputDialog9setOptionENS_17InputDialogOptionEb(void *this_, QInputDi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:104
-// [1] bool testOption(enum QInputDialog::InputDialogOption)
+// [1] bool testOption(QInputDialog::InputDialogOption)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QInputDialog10testOptionENS_17InputDialogOptionE(void *this_, QInputDialog::InputDialogOption option) {
   return (bool)((QInputDialog*)this_)->testOption(option);
@@ -115,7 +115,7 @@ return new QInputDialog::InputDialogOptions(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:108
-// [-2] void setTextValue(const class QString &)
+// [-2] void setTextValue(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog12setTextValueERK7QString(void *this_, QString* text) {
   ((QInputDialog*)this_)->setTextValue(*text);
@@ -132,7 +132,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:111
-// [-2] void setTextEchoMode(class QLineEdit::EchoMode)
+// [-2] void setTextEchoMode(QLineEdit::EchoMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog15setTextEchoModeEN9QLineEdit8EchoModeE(void *this_, QLineEdit::EchoMode mode) {
   ((QInputDialog*)this_)->setTextEchoMode(mode);
@@ -148,7 +148,7 @@ QLineEdit::EchoMode C_ZNK12QInputDialog12textEchoModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:114
-// [-2] void setComboBoxEditable(_Bool)
+// [-2] void setComboBoxEditable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog19setComboBoxEditableEb(void *this_, bool editable) {
   ((QInputDialog*)this_)->setComboBoxEditable(editable);
@@ -164,7 +164,7 @@ bool C_ZNK12QInputDialog18isComboBoxEditableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:117
-// [-2] void setComboBoxItems(const class QStringList &)
+// [-2] void setComboBoxItems(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog16setComboBoxItemsERK11QStringList(void *this_, QStringList* items) {
   ((QInputDialog*)this_)->setComboBoxItems(*items);
@@ -325,7 +325,7 @@ int C_ZNK12QInputDialog14doubleDecimalsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:148
-// [-2] void setOkButtonText(const class QString &)
+// [-2] void setOkButtonText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog15setOkButtonTextERK7QString(void *this_, QString* text) {
   ((QInputDialog*)this_)->setOkButtonText(*text);
@@ -342,7 +342,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:151
-// [-2] void setCancelButtonText(const class QString &)
+// [-2] void setCancelButtonText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog19setCancelButtonTextERK7QString(void *this_, QString* text) {
   ((QInputDialog*)this_)->setCancelButtonText(*text);
@@ -360,7 +360,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:155
-// [-2] void open(class QObject *, const char *)
+// [-2] void open(QObject *, const char *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
@@ -388,7 +388,7 @@ return new QSize(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:160
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog10setVisibleEb(void *this_, bool visible) {
   ((QInputDialog*)this_)->setVisible(visible);
@@ -396,7 +396,7 @@ void C_ZN12QInputDialog10setVisibleEb(void *this_, bool visible) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:162
-// [8] QString getText(class QWidget *, const class QString &, const class QString &, class QLineEdit::EchoMode, const class QString &, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+// [8] QString getText(QWidget *, const QString &, const QString &, QLineEdit::EchoMode, const QString &, bool *, Qt::WindowFlags, Qt::InputMethodHints)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog7getTextEP7QWidgetRK7QStringS4_N9QLineEdit8EchoModeES4_Pb6QFlagsIN2Qt10WindowTypeEES8_INS9_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QLineEdit::EchoMode echo, QString* text, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
   auto rv = QInputDialog::getText(parent, *title, *label, echo, *text, ok, flags, inputMethodHints);
@@ -406,7 +406,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qinputdialog.h:167
-// [8] QString getMultiLineText(class QWidget *, const class QString &, const class QString &, const class QString &, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+// [8] QString getMultiLineText(QWidget *, const QString &, const QString &, const QString &, bool *, Qt::WindowFlags, Qt::InputMethodHints)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog16getMultiLineTextEP7QWidgetRK7QStringS4_S4_Pb6QFlagsIN2Qt10WindowTypeEES6_INS7_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QString* text, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
@@ -417,7 +417,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:171
-// [8] QString getItem(class QWidget *, const class QString &, const class QString &, const class QStringList &, int, _Bool, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+// [8] QString getItem(QWidget *, const QString &, const QString &, const QStringList &, int, bool, bool *, Qt::WindowFlags, Qt::InputMethodHints)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog7getItemEP7QWidgetRK7QStringS4_RK11QStringListibPb6QFlagsIN2Qt10WindowTypeEES9_INSA_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QStringList* items, int current, bool editable, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
   auto rv = QInputDialog::getItem(parent, *title, *label, *items, current, editable, ok, flags, inputMethodHints);
@@ -427,7 +427,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qinputdialog.h:176
-// [4] int getInt(class QWidget *, const class QString &, const class QString &, int, int, int, int, _Bool *, Qt::WindowFlags)
+// [4] int getInt(QWidget *, const QString &, const QString &, int, int, int, int, bool *, Qt::WindowFlags)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 int C_ZN12QInputDialog6getIntEP7QWidgetRK7QStringS4_iiiiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QString* title, QString* label, int value, int minValue, int maxValue, int step, bool * ok, QFlags<Qt::WindowType> flags) {
@@ -437,7 +437,7 @@ int C_ZN12QInputDialog6getIntEP7QWidgetRK7QStringS4_iiiiPb6QFlagsIN2Qt10WindowTy
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:179
-// [8] double getDouble(class QWidget *, const class QString &, const class QString &, double, double, double, int, _Bool *, Qt::WindowFlags)
+// [8] double getDouble(QWidget *, const QString &, const QString &, double, double, double, int, bool *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags) {
   return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags);
@@ -445,7 +445,7 @@ double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10Wi
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:183
-// [8] double getDouble(class QWidget *, const class QString &, const class QString &, double, double, double, int, _Bool *, Qt::WindowFlags, double)
+// [8] double getDouble(QWidget *, const QString &, const QString &, double, double, double, int, bool *, Qt::WindowFlags, double)
 extern "C" Q_DECL_EXPORT
 double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEEd(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags, double step) {
   return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags, step);
@@ -469,7 +469,7 @@ double C_ZNK12QInputDialog10doubleStepEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:201
-// [-2] void textValueChanged(const class QString &)
+// [-2] void textValueChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog16textValueChangedERK7QString(void *this_, QString* text) {
   ((QInputDialog*)this_)->textValueChanged(*text);
@@ -477,7 +477,7 @@ void C_ZN12QInputDialog16textValueChangedERK7QString(void *this_, QString* text)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:202
-// [-2] void textValueSelected(const class QString &)
+// [-2] void textValueSelected(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog17textValueSelectedERK7QString(void *this_, QString* text) {
   ((QInputDialog*)this_)->textValueSelected(*text);

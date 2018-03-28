@@ -19,14 +19,14 @@
 
 //  body block begin
 
-// [8] const char * QTypeInfo<class QSizePolicy>::name()
+// [8] const char * QTypeInfo<QSizePolicy>::name()
 extern "C"
 void* C_ZN9QTypeInfoI11QSizePolicyE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QSizePolicy>*)this_)->name();
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<class QFormLayout::TakeRowResult>::name()
+// [8] const char * QTypeInfo<QFormLayout::TakeRowResult>::name()
 extern "C"
 void* C_ZN9QTypeInfoIN11QFormLayout13TakeRowResultEE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QFormLayout::TakeRowResult>*)this_)->name();
@@ -47,35 +47,35 @@ int C_ZN11QMetaTypeIdIN2Qt11GestureTypeEE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
-// [4] int QMetaTypeId<class QPinchGesture::ChangeFlags>::qt_metatype_id()
+// [4] int QMetaTypeId<QPinchGesture::ChangeFlags>::qt_metatype_id()
 extern "C"
 int C_ZN11QMetaTypeIdI6QFlagsIN13QPinchGesture10ChangeFlagEEE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QPinchGesture::ChangeFlags>*)this_)->qt_metatype_id();
    return rv;
 }
 
-// [4] int QMetaTypeId<class QGesture::GestureCancelPolicy>::qt_metatype_id()
+// [4] int QMetaTypeId<QGesture::GestureCancelPolicy>::qt_metatype_id()
 extern "C"
 int C_ZN11QMetaTypeIdIN8QGesture19GestureCancelPolicyEE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QGesture::GestureCancelPolicy>*)this_)->qt_metatype_id();
    return rv;
 }
 
-// [4] int QMetaTypeId<class QGraphicsItem *>::qt_metatype_id()
+// [4] int QMetaTypeId<QGraphicsItem *>::qt_metatype_id()
 extern "C"
 int C_ZN11QMetaTypeIdIP13QGraphicsItemE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QGraphicsItem *>*)this_)->qt_metatype_id();
    return rv;
 }
 
-// [4] int QMetaTypeId<class QScrollerProperties::OvershootPolicy>::qt_metatype_id()
+// [4] int QMetaTypeId<QScrollerProperties::OvershootPolicy>::qt_metatype_id()
 extern "C"
 int C_ZN11QMetaTypeIdIN19QScrollerProperties15OvershootPolicyEE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QScrollerProperties::OvershootPolicy>*)this_)->qt_metatype_id();
    return rv;
 }
 
-// [4] int QMetaTypeId<class QScrollerProperties::FrameRates>::qt_metatype_id()
+// [4] int QMetaTypeId<QScrollerProperties::FrameRates>::qt_metatype_id()
 extern "C"
 int C_ZN11QMetaTypeIdIN19QScrollerProperties10FrameRatesEE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QScrollerProperties::FrameRates>*)this_)->qt_metatype_id();

@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQMoveEvent : public QMoveEvent {
 public:
   virtual ~MyQMoveEvent() {}
-// void QMoveEvent(const class QPoint &, const class QPoint &)
+// void QMoveEvent(const QPoint &, const QPoint &)
 MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:421
-// [-2] void QMoveEvent(const class QPoint &, const class QPoint &)
+// [-2] void QMoveEvent(const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QMoveEventC2ERK6QPointS2_(QPoint* pos, QPoint* oldPos) {
   return  new QMoveEvent(*pos, *oldPos);

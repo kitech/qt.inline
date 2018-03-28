@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQWidgetItemV2 : public QWidgetItemV2 {
 public:
   virtual ~MyQWidgetItemV2() {}
-// void QWidgetItemV2(class QWidget *)
+// void QWidgetItemV2(QWidget *)
 MyQWidgetItemV2(QWidget * widget) : QWidgetItemV2(widget) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:148
-// [-2] void QWidgetItemV2(class QWidget *)
+// [-2] void QWidgetItemV2(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QWidgetItemV2C2EP7QWidget(QWidget * widget) {
   return  new QWidgetItemV2(widget);

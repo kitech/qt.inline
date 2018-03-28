@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQExposeEvent : public QExposeEvent {
 public:
   virtual ~MyQExposeEvent() {}
-// void QExposeEvent(const class QRegion &)
+// void QExposeEvent(const QRegion &)
 MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:434
-// [-2] void QExposeEvent(const class QRegion &)
+// [-2] void QExposeEvent(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QExposeEventC2ERK7QRegion(QRegion* rgn) {
   return  new QExposeEvent(*rgn);

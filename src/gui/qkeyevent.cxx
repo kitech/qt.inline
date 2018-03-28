@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQKeyEvent : public QKeyEvent {
 public:
   virtual ~MyQKeyEvent() {}
-// void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)
+// void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, const QString &, bool, ushort)
 MyQKeyEvent(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, const QString & text, bool autorep, ushort count) : QKeyEvent(type_, key, modifiers, text, autorep, count) {}
-// void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const class QString &, _Bool, ushort)
+// void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const QString &, bool, ushort)
 MyQKeyEvent(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, quint32 nativeScanCode, quint32 nativeVirtualKey, quint32 nativeModifiers, const QString & text, bool autorep, ushort count) : QKeyEvent(type_, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:338
-// [-2] void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)
+// [-2] void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, const QString &, bool, ushort)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, QString* text, bool autorep, ushort count) {
   return  new QKeyEvent(type_, key, modifiers, *text, autorep, count);
@@ -32,7 +32,7 @@ void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QString
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:340
-// [-2] void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const class QString &, _Bool, ushort)
+// [-2] void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const QString &, bool, ushort)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, quint32 nativeScanCode, quint32 nativeVirtualKey, quint32 nativeModifiers, QString* text, bool autorep, ushort count) {
   return  new QKeyEvent(type_, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, *text, autorep, count);
@@ -56,7 +56,7 @@ int C_ZNK9QKeyEvent3keyEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qevent.h:347
-// [1] bool matches(class QKeySequence::StandardKey)
+// [1] bool matches(QKeySequence::StandardKey)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QKeyEvent7matchesEN12QKeySequence11StandardKeyE(void *this_, QKeySequence::StandardKey key) {

@@ -17,12 +17,12 @@
 class Q_DECL_EXPORT MyQGraphicsPolygonItem : public QGraphicsPolygonItem {
 public:
   virtual ~MyQGraphicsPolygonItem() {}
-// void QGraphicsPolygonItem(class QGraphicsItem *)
+// void QGraphicsPolygonItem(QGraphicsItem *)
 MyQGraphicsPolygonItem(QGraphicsItem * parent) : QGraphicsPolygonItem(parent) {}
-// void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
+// void QGraphicsPolygonItem(const QPolygonF &, QGraphicsItem *)
 MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGraphicsPolygonItem(polygon, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool supportsExtension(enum QGraphicsItem::Extension)
+// bool supportsExtension(QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+// void setExtension(QGraphicsItem::Extension, const QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -47,7 +47,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant extension(const class QVariant &)
+// QVariant extension(const QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -63,7 +63,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:767
-// [1] bool supportsExtension(enum QGraphicsItem::Extension)
+// [1] bool supportsExtension(QGraphicsItem::Extension)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
   return (bool)((QGraphicsPolygonItem*)this_)->QGraphicsPolygonItem::supportsExtension(extension);
@@ -71,7 +71,7 @@ bool C_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE(
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:768
-// [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+// [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
   ((QGraphicsPolygonItem*)this_)->QGraphicsPolygonItem::setExtension(extension, *variant);
@@ -79,7 +79,7 @@ void C_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVar
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:769
-// [16] QVariant extension(const class QVariant &)
+// [16] QVariant extension(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsPolygonItem9extensionERK8QVariant(void *this_, QVariant* variant) {
   auto rv = ((QGraphicsPolygonItem*)this_)->QGraphicsPolygonItem::extension(*variant);
@@ -88,7 +88,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:743
-// [-2] void QGraphicsPolygonItem(class QGraphicsItem *)
+// [-2] void QGraphicsPolygonItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsPolygonItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPolygonItem*)(0);
@@ -97,7 +97,7 @@ void* C_ZN20QGraphicsPolygonItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:744
-// [-2] void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
+// [-2] void QGraphicsPolygonItem(const QPolygonF &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsPolygonItemC2ERK9QPolygonFP13QGraphicsItem(QPolygonF* polygon, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPolygonItem*)(0);
@@ -122,7 +122,7 @@ return new QPolygonF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:749
-// [-2] void setPolygon(const class QPolygonF &)
+// [-2] void setPolygon(const QPolygonF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsPolygonItem10setPolygonERK9QPolygonF(void *this_, QPolygonF* polygon) {
   ((QGraphicsPolygonItem*)this_)->setPolygon(*polygon);
@@ -164,7 +164,7 @@ return new QPainterPath(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:756
-// [1] bool contains(const class QPointF &)
+// [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QGraphicsPolygonItem8containsERK7QPointF(void *this_, QPointF* point) {
   return (bool)((QGraphicsPolygonItem*)this_)->contains(*point);
@@ -172,7 +172,7 @@ bool C_ZNK20QGraphicsPolygonItem8containsERK7QPointF(void *this_, QPointF* point
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:758
-// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsPolygonItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsPolygonItem*)this_)->paint(painter, option, widget);
@@ -180,7 +180,7 @@ void C_ZN20QGraphicsPolygonItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QW
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:760
-// [1] bool isObscuredBy(const class QGraphicsItem *)
+// [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QGraphicsPolygonItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QGraphicsPolygonItem*)this_)->isObscuredBy(item);

@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsLayout : public QGraphicsLayout {
 public:
   virtual ~MyQGraphicsLayout() {}
-// void QGraphicsLayout(class QGraphicsLayoutItem *)
+// void QGraphicsLayout(QGraphicsLayoutItem *)
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 // Protected Visibility=Default Availability=Available
-// void addChildLayoutItem(class QGraphicsLayoutItem *)
+// void addChildLayoutItem(QGraphicsLayoutItem *)
   virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"addChildLayoutItem", &handled, 1, (uint64_t)layoutItem, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 // Protected Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:78
-// [-2] void addChildLayoutItem(class QGraphicsLayoutItem *)
+// [-2] void addChildLayoutItem(QGraphicsLayoutItem *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * layoutItem) {
@@ -46,7 +46,7 @@ void C_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void *this
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:57
-// [-2] void QGraphicsLayout(class QGraphicsLayoutItem *)
+// [-2] void QGraphicsLayout(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
   auto _nilp = (MyQGraphicsLayout*)(0);
@@ -110,7 +110,7 @@ void C_ZN15QGraphicsLayout14updateGeometryEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:68
-// [-2] void widgetEvent(class QEvent *)
+// [-2] void widgetEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout11widgetEventEP6QEvent(void *this_, QEvent * e) {
   ((QGraphicsLayout*)this_)->widgetEvent(e);
@@ -142,7 +142,7 @@ void C_ZN15QGraphicsLayout8removeAtEi(void *this_, int index) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:74
-// [-2] void setInstantInvalidatePropagation(_Bool)
+// [-2] void setInstantInvalidatePropagation(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout31setInstantInvalidatePropagationEb(bool enable) {
   QGraphicsLayout::setInstantInvalidatePropagation(enable);

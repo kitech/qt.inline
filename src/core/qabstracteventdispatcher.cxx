@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQAbstractEventDispatcher : public QAbstractEventDispatcher {
 public:
   virtual ~MyQAbstractEventDispatcher() {}
-// void QAbstractEventDispatcher(class QObject *)
+// void QAbstractEventDispatcher(QObject *)
 MyQAbstractEventDispatcher(QObject * parent) : QAbstractEventDispatcher(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK24QAbstractEventDispatcher10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:73
-// [-2] void QAbstractEventDispatcher(class QObject *)
+// [-2] void QAbstractEventDispatcher(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractEventDispatcherC2EP7QObject(QObject * parent) {
   return 0; // new QAbstractEventDispatcher(parent);
@@ -45,7 +45,7 @@ void C_ZN24QAbstractEventDispatcherD2Ev(void *this_) {
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:76
-// [8] QAbstractEventDispatcher * instance(class QThread *)
+// [8] QAbstractEventDispatcher * instance(QThread *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractEventDispatcher8instanceEP7QThread(QThread * thread) {
   return (void*)QAbstractEventDispatcher::instance(thread);
@@ -53,7 +53,7 @@ void* C_ZN24QAbstractEventDispatcher8instanceEP7QThread(QThread * thread) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:78
-// [1] bool processEvents(class QEventLoop::ProcessEventsFlags)
+// [1] bool processEvents(QEventLoop::ProcessEventsFlags)
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags) {
   return (bool)((QAbstractEventDispatcher*)this_)->processEvents(flags);
@@ -69,7 +69,7 @@ bool C_ZN24QAbstractEventDispatcher16hasPendingEventsEv(void *this_) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:81
-// [-2] void registerSocketNotifier(class QSocketNotifier *)
+// [-2] void registerSocketNotifier(QSocketNotifier *)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher22registerSocketNotifierEP15QSocketNotifier(void *this_, QSocketNotifier * notifier) {
   ((QAbstractEventDispatcher*)this_)->registerSocketNotifier(notifier);
@@ -77,7 +77,7 @@ void C_ZN24QAbstractEventDispatcher22registerSocketNotifierEP15QSocketNotifier(v
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:82
-// [-2] void unregisterSocketNotifier(class QSocketNotifier *)
+// [-2] void unregisterSocketNotifier(QSocketNotifier *)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher24unregisterSocketNotifierEP15QSocketNotifier(void *this_, QSocketNotifier * notifier) {
   ((QAbstractEventDispatcher*)this_)->unregisterSocketNotifier(notifier);
@@ -85,7 +85,7 @@ void C_ZN24QAbstractEventDispatcher24unregisterSocketNotifierEP15QSocketNotifier
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:90
-// [4] int registerTimer(int, Qt::TimerType, class QObject *)
+// [4] int registerTimer(int, Qt::TimerType, QObject *)
 extern "C" Q_DECL_EXPORT
 int C_ZN24QAbstractEventDispatcher13registerTimerEiN2Qt9TimerTypeEP7QObject(void *this_, int interval, Qt::TimerType timerType, QObject * object) {
   return (int)((QAbstractEventDispatcher*)this_)->registerTimer(interval, timerType, object);
@@ -93,7 +93,7 @@ int C_ZN24QAbstractEventDispatcher13registerTimerEiN2Qt9TimerTypeEP7QObject(void
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:91
-// [-2] void registerTimer(int, int, Qt::TimerType, class QObject *)
+// [-2] void registerTimer(int, int, Qt::TimerType, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher13registerTimerEiiN2Qt9TimerTypeEP7QObject(void *this_, int timerId, int interval, Qt::TimerType timerType, QObject * object) {
   ((QAbstractEventDispatcher*)this_)->registerTimer(timerId, interval, timerType, object);
@@ -109,7 +109,7 @@ bool C_ZN24QAbstractEventDispatcher15unregisterTimerEi(void *this_, int timerId)
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:93
-// [1] bool unregisterTimers(class QObject *)
+// [1] bool unregisterTimers(QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractEventDispatcher16unregisterTimersEP7QObject(void *this_, QObject * object) {
   return (bool)((QAbstractEventDispatcher*)this_)->unregisterTimers(object);
@@ -166,7 +166,7 @@ void C_ZN24QAbstractEventDispatcher11closingDownEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:110
-// [-2] void installNativeEventFilter(class QAbstractNativeEventFilter *)
+// [-2] void installNativeEventFilter(QAbstractNativeEventFilter *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher24installNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
@@ -177,7 +177,7 @@ void C_ZN24QAbstractEventDispatcher24installNativeEventFilterEP26QAbstractNative
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:111
-// [-2] void removeNativeEventFilter(class QAbstractNativeEventFilter *)
+// [-2] void removeNativeEventFilter(QAbstractNativeEventFilter *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher23removeNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
@@ -188,7 +188,7 @@ void C_ZN24QAbstractEventDispatcher23removeNativeEventFilterEP26QAbstractNativeE
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:112
-// [1] bool filterNativeEvent(const class QByteArray &, void *, long *)
+// [1] bool filterNativeEvent(const QByteArray &, void *, long *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractEventDispatcher17filterNativeEventERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {

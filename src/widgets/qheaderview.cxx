@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQHeaderView : public QHeaderView {
 public:
   virtual ~MyQHeaderView() {}
-// void QHeaderView(Qt::Orientation, class QWidget *)
+// void QHeaderView(Qt::Orientation, QWidget *)
 MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orientation, parent) {}
 // Protected Visibility=Default Availability=Available
 // void updateSection(int)
@@ -43,7 +43,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected Visibility=Default Availability=Available
-// void sectionsInserted(const class QModelIndex &, int, int)
+// void sectionsInserted(const QModelIndex &, int, int)
   virtual void sectionsInserted(const QModelIndex & parent, int logicalFirst, int logicalLast) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sectionsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected Visibility=Default Availability=Available
-// void sectionsAboutToBeRemoved(const class QModelIndex &, int, int)
+// void sectionsAboutToBeRemoved(const QModelIndex &, int, int)
   virtual void sectionsAboutToBeRemoved(const QModelIndex & parent, int logicalFirst, int logicalLast) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sectionsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
@@ -103,7 +103,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void currentChanged(const class QModelIndex &, const class QModelIndex &)
+// void currentChanged(const QModelIndex &, const QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & old) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&old, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -115,7 +115,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -128,7 +128,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -140,7 +140,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -152,7 +152,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -164,7 +164,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -176,7 +176,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(class QMouseEvent *)
+// void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -188,7 +188,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool viewportEvent(class QEvent *)
+// bool viewportEvent(QEvent *)
   virtual bool viewportEvent(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"viewportEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -201,7 +201,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintSection(class QPainter *, const class QRect &, int)
+// void paintSection(QPainter *, const QRect &, int)
   virtual void paintSection(QPainter * painter, const QRect & rect, int logicalIndex) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintSection", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0);
@@ -276,7 +276,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void rowsInserted(const class QModelIndex &, int, int)
+// void rowsInserted(const QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
@@ -288,7 +288,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QRect visualRect(const class QModelIndex &)
+// QRect visualRect(const QModelIndex &)
   virtual QRect visualRect(const QModelIndex & index) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"visualRect", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -301,7 +301,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
+// void scrollTo(const QModelIndex &, QAbstractItemView::ScrollHint)
   virtual void scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"scrollTo", &handled, 2, (uint64_t)&index, (uint64_t)hint, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -313,7 +313,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QModelIndex indexAt(const class QPoint &)
+// QModelIndex indexAt(const QPoint &)
   virtual QModelIndex indexAt(const QPoint & p) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"indexAt", &handled, 1, (uint64_t)&p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -326,7 +326,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool isIndexHidden(const class QModelIndex &)
+// bool isIndexHidden(const QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -339,7 +339,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+// QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction arg0, QFlags<Qt::KeyboardModifier> arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"moveCursor", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -352,7 +352,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
+// void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -364,7 +364,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QRegion visualRegionForSelection(const class QItemSelection &)
+// QRegion visualRegionForSelection(const QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -377,7 +377,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionHeader *)
+// void initStyleOption(QStyleOptionHeader *)
   virtual void initStyleOption(QStyleOptionHeader * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -408,7 +408,7 @@ void C_ZN11QHeaderView14resizeSectionsEv(void *this_) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:207
-// [-2] void sectionsInserted(const class QModelIndex &, int, int)
+// [-2] void sectionsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int logicalFirst, int logicalLast) {
   ((QHeaderView*)this_)->QHeaderView::sectionsInserted(*parent, logicalFirst, logicalLast);
@@ -416,7 +416,7 @@ void C_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii(void *this_, QModelIn
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:208
-// [-2] void sectionsAboutToBeRemoved(const class QModelIndex &, int, int)
+// [-2] void sectionsAboutToBeRemoved(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int logicalFirst, int logicalLast) {
   ((QHeaderView*)this_)->QHeaderView::sectionsAboutToBeRemoved(*parent, logicalFirst, logicalLast);
@@ -448,7 +448,7 @@ void C_ZN11QHeaderView18initializeSectionsEii(void *this_, int start, int end) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:216
-// [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
+// [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* old) {
   ((QHeaderView*)this_)->QHeaderView::currentChanged(*current, *old);
@@ -456,7 +456,7 @@ void C_ZN11QHeaderView14currentChangedERK11QModelIndexS2_(void *this_, QModelInd
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:218
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QHeaderView5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QHeaderView*)this_)->QHeaderView::event(e);
@@ -464,7 +464,7 @@ bool C_ZN11QHeaderView5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:219
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
   ((QHeaderView*)this_)->QHeaderView::paintEvent(e);
@@ -472,7 +472,7 @@ void C_ZN11QHeaderView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:220
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QHeaderView*)this_)->QHeaderView::mousePressEvent(e);
@@ -480,7 +480,7 @@ void C_ZN11QHeaderView15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:221
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QHeaderView*)this_)->QHeaderView::mouseMoveEvent(e);
@@ -488,7 +488,7 @@ void C_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:222
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QHeaderView*)this_)->QHeaderView::mouseReleaseEvent(e);
@@ -496,7 +496,7 @@ void C_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:223
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QHeaderView*)this_)->QHeaderView::mouseDoubleClickEvent(e);
@@ -504,7 +504,7 @@ void C_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouse
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:224
-// [1] bool viewportEvent(class QEvent *)
+// [1] bool viewportEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QHeaderView13viewportEventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QHeaderView*)this_)->QHeaderView::viewportEvent(e);
@@ -512,7 +512,7 @@ bool C_ZN11QHeaderView13viewportEventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:226
-// [-2] void paintSection(class QPainter *, const class QRect &, int)
+// [-2] void paintSection(QPainter *, const QRect &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti(void *this_, QPainter * painter, QRect* rect, int logicalIndex) {
   ((QHeaderView*)this_)->QHeaderView::paintSection(painter, *rect, logicalIndex);
@@ -561,7 +561,7 @@ void C_ZN11QHeaderView16scrollContentsByEii(void *this_, int dx, int dy) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:235
-// [-2] void rowsInserted(const class QModelIndex &, int, int)
+// [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
   ((QHeaderView*)this_)->QHeaderView::rowsInserted(*parent, start, end);
@@ -569,7 +569,7 @@ void C_ZN11QHeaderView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex*
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:237
-// [16] QRect visualRect(const class QModelIndex &)
+// [16] QRect visualRect(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QHeaderView10visualRectERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QHeaderView*)this_)->QHeaderView::visualRect(*index);
@@ -578,7 +578,7 @@ return new QRect(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:238
-// [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
+// [-2] void scrollTo(const QModelIndex &, QAbstractItemView::ScrollHint)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, QModelIndex* index, QAbstractItemView::ScrollHint hint) {
   ((QHeaderView*)this_)->QHeaderView::scrollTo(*index, hint);
@@ -586,7 +586,7 @@ void C_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:240
-// [24] QModelIndex indexAt(const class QPoint &)
+// [24] QModelIndex indexAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QHeaderView7indexAtERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QHeaderView*)this_)->QHeaderView::indexAt(*p);
@@ -595,7 +595,7 @@ return new QModelIndex(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:241
-// [1] bool isIndexHidden(const class QModelIndex &)
+// [1] bool isIndexHidden(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QHeaderView*)this_)->QHeaderView::isIndexHidden(*index);
@@ -603,7 +603,7 @@ bool C_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex*
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:243
-// [24] QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+// [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QAbstractItemView::CursorAction arg0, QFlags<Qt::KeyboardModifier> arg1) {
   auto rv = ((QHeaderView*)this_)->QHeaderView::moveCursor(arg0, arg1);
@@ -612,7 +612,7 @@ return new QModelIndex(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:244
-// [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
+// [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QRect* rect, QFlags<QItemSelectionModel::SelectionFlag> flags) {
   ((QHeaderView*)this_)->QHeaderView::setSelection(*rect, flags);
@@ -620,7 +620,7 @@ void C_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13Sel
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:245
-// [8] QRegion visualRegionForSelection(const class QItemSelection &)
+// [8] QRegion visualRegionForSelection(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection(void *this_, QItemSelection* selection) {
   auto rv = ((QHeaderView*)this_)->QHeaderView::visualRegionForSelection(*selection);
@@ -629,7 +629,7 @@ return new QRegion(rv);
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:246
-// [-2] void initStyleOption(class QStyleOptionHeader *)
+// [-2] void initStyleOption(QStyleOptionHeader *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader(void *this_, QStyleOptionHeader * option) {
   ((QHeaderView*)this_)->QHeaderView::initStyleOption(option);
@@ -645,7 +645,7 @@ void* C_ZNK11QHeaderView10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:77
-// [-2] void QHeaderView(Qt::Orientation, class QWidget *)
+// [-2] void QHeaderView(Qt::Orientation, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QHeaderViewC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
   auto _nilp = (MyQHeaderView*)(0);
@@ -661,7 +661,7 @@ void C_ZN11QHeaderViewD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:80
-// [-2] void setModel(class QAbstractItemModel *)
+// [-2] void setModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
   ((QHeaderView*)this_)->setModel(model);
@@ -702,7 +702,7 @@ return new QSize(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:86
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView10setVisibleEb(void *this_, bool v) {
   ((QHeaderView*)this_)->setVisible(v);
@@ -742,7 +742,7 @@ int C_ZNK11QHeaderView14logicalIndexAtEii(void *this_, int x, int y) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:93
-// [4] int logicalIndexAt(const class QPoint &)
+// [4] int logicalIndexAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QHeaderView14logicalIndexAtERK6QPoint(void *this_, QPoint* pos) {
   return (int)((QHeaderView*)this_)->logicalIndexAt(*pos);
@@ -801,7 +801,7 @@ void C_ZN11QHeaderView13resizeSectionEii(void *this_, int logicalIndex, int size
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:102
-// [-2] void resizeSections(class QHeaderView::ResizeMode)
+// [-2] void resizeSections(QHeaderView::ResizeMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView14resizeSectionsENS_10ResizeModeE(void *this_, QHeaderView::ResizeMode mode) {
   ((QHeaderView*)this_)->resizeSections(mode);
@@ -817,7 +817,7 @@ bool C_ZNK11QHeaderView15isSectionHiddenEi(void *this_, int logicalIndex) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:105
-// [-2] void setSectionHidden(int, _Bool)
+// [-2] void setSectionHidden(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView16setSectionHiddenEib(void *this_, int logicalIndex, bool hide) {
   ((QHeaderView*)this_)->setSectionHidden(logicalIndex, hide);
@@ -877,7 +877,7 @@ int C_ZNK11QHeaderView12logicalIndexEi(void *this_, int visualIndex) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:115
-// [-2] void setSectionsMovable(_Bool)
+// [-2] void setSectionsMovable(bool)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView18setSectionsMovableEb(void *this_, bool movable) {
@@ -899,7 +899,7 @@ bool C_ZNK11QHeaderView15sectionsMovableEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtWidgets/qheaderview.h:122
-// [-2] void setSectionsClickable(_Bool)
+// [-2] void setSectionsClickable(bool)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView20setSectionsClickableEb(void *this_, bool clickable) {
@@ -920,7 +920,7 @@ bool C_ZNK11QHeaderView17sectionsClickableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:129
-// [-2] void setHighlightSections(_Bool)
+// [-2] void setHighlightSections(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView20setHighlightSectionsEb(void *this_, bool highlight) {
   ((QHeaderView*)this_)->setHighlightSections(highlight);
@@ -947,7 +947,7 @@ QHeaderView::ResizeMode C_ZNK11QHeaderView17sectionResizeModeEi(void *this_, int
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:133
-// [-2] void setSectionResizeMode(enum QHeaderView::ResizeMode)
+// [-2] void setSectionResizeMode(QHeaderView::ResizeMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView20setSectionResizeModeENS_10ResizeModeE(void *this_, QHeaderView::ResizeMode mode) {
   ((QHeaderView*)this_)->setSectionResizeMode(mode);
@@ -955,7 +955,7 @@ void C_ZN11QHeaderView20setSectionResizeModeENS_10ResizeModeE(void *this_, QHead
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:134
-// [-2] void setSectionResizeMode(int, enum QHeaderView::ResizeMode)
+// [-2] void setSectionResizeMode(int, QHeaderView::ResizeMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView20setSectionResizeModeEiNS_10ResizeModeE(void *this_, int logicalIndex, QHeaderView::ResizeMode mode) {
   ((QHeaderView*)this_)->setSectionResizeMode(logicalIndex, mode);
@@ -996,7 +996,7 @@ int C_ZNK11QHeaderView19stretchSectionCountEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:150
-// [-2] void setSortIndicatorShown(_Bool)
+// [-2] void setSortIndicatorShown(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView21setSortIndicatorShownEb(void *this_, bool show) {
   ((QHeaderView*)this_)->setSortIndicatorShown(show);
@@ -1044,7 +1044,7 @@ bool C_ZNK11QHeaderView18stretchLastSectionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:158
-// [-2] void setStretchLastSection(_Bool)
+// [-2] void setStretchLastSection(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView21setStretchLastSectionEb(void *this_, bool stretch) {
   ((QHeaderView*)this_)->setStretchLastSection(stretch);
@@ -1060,7 +1060,7 @@ bool C_ZNK11QHeaderView23cascadingSectionResizesEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:161
-// [-2] void setCascadingSectionResizes(_Bool)
+// [-2] void setCascadingSectionResizes(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHeaderView26setCascadingSectionResizesEb(void *this_, bool enable) {
   ((QHeaderView*)this_)->setCascadingSectionResizes(enable);
@@ -1180,7 +1180,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qheaderview.h:181
-// [1] bool restoreState(const class QByteArray &)
+// [1] bool restoreState(const QByteArray &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QHeaderView12restoreStateERK10QByteArray(void *this_, QByteArray* state) {

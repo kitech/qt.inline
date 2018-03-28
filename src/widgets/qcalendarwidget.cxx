@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQCalendarWidget : public QCalendarWidget {
 public:
   virtual ~MyQCalendarWidget() {}
-// void QCalendarWidget(class QWidget *)
+// void QCalendarWidget(QWidget *)
 MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * watched, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)watched, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -58,7 +58,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -70,7 +70,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintCell(class QPainter *, const class QRect &, const class QDate &)
+// void paintCell(QPainter *, const QRect &, const QDate &)
   virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintCell", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0);
@@ -94,7 +94,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void updateCell(const class QDate &)
+// void updateCell(const QDate &)
   virtual void updateCell(const QDate & date) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateCell", &handled, 1, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -121,7 +121,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:141
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QCalendarWidget5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QCalendarWidget*)this_)->QCalendarWidget::event(event);
@@ -129,7 +129,7 @@ bool C_ZN15QCalendarWidget5eventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:142
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(void *this_, QObject * watched, QEvent * event) {
   return (bool)((QCalendarWidget*)this_)->QCalendarWidget::eventFilter(watched, event);
@@ -137,7 +137,7 @@ bool C_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(void *this_, QObject *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:143
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QCalendarWidget*)this_)->QCalendarWidget::mousePressEvent(event);
@@ -145,7 +145,7 @@ void C_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(void *this_, QMouseEv
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:144
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QCalendarWidget*)this_)->QCalendarWidget::resizeEvent(event);
@@ -153,7 +153,7 @@ void C_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:145
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QCalendarWidget*)this_)->QCalendarWidget::keyPressEvent(event);
@@ -161,7 +161,7 @@ void C_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:147
-// [-2] void paintCell(class QPainter *, const class QRect &, const class QDate &)
+// [-2] void paintCell(QPainter *, const QRect &, const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void *this_, QPainter * painter, QRect* rect, QDate* date) {
   ((QCalendarWidget*)this_)->QCalendarWidget::paintCell(painter, *rect, *date);
@@ -170,7 +170,7 @@ void C_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void *this_, QP
 // Protected Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:148
-// [-2] void updateCell(const class QDate &)
+// [-2] void updateCell(const QDate &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget10updateCellERK5QDate(void *this_, QDate* date) {
@@ -199,7 +199,7 @@ void* C_ZNK15QCalendarWidget10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:92
-// [-2] void QCalendarWidget(class QWidget *)
+// [-2] void QCalendarWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QCalendarWidgetC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCalendarWidget*)(0);
@@ -267,7 +267,7 @@ return new QDate(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:104
-// [-2] void setMinimumDate(const class QDate &)
+// [-2] void setMinimumDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget14setMinimumDateERK5QDate(void *this_, QDate* date) {
   ((QCalendarWidget*)this_)->setMinimumDate(*date);
@@ -284,7 +284,7 @@ return new QDate(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:107
-// [-2] void setMaximumDate(const class QDate &)
+// [-2] void setMaximumDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget14setMaximumDateERK5QDate(void *this_, QDate* date) {
   ((QCalendarWidget*)this_)->setMaximumDate(*date);
@@ -332,7 +332,7 @@ QCalendarWidget::SelectionMode C_ZNK15QCalendarWidget13selectionModeEv(void *thi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:116
-// [-2] void setSelectionMode(enum QCalendarWidget::SelectionMode)
+// [-2] void setSelectionMode(QCalendarWidget::SelectionMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget16setSelectionModeENS_13SelectionModeE(void *this_, QCalendarWidget::SelectionMode mode) {
   ((QCalendarWidget*)this_)->setSelectionMode(mode);
@@ -348,7 +348,7 @@ QCalendarWidget::HorizontalHeaderFormat C_ZNK15QCalendarWidget22horizontalHeader
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:119
-// [-2] void setHorizontalHeaderFormat(enum QCalendarWidget::HorizontalHeaderFormat)
+// [-2] void setHorizontalHeaderFormat(QCalendarWidget::HorizontalHeaderFormat)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget25setHorizontalHeaderFormatENS_22HorizontalHeaderFormatE(void *this_, QCalendarWidget::HorizontalHeaderFormat format) {
   ((QCalendarWidget*)this_)->setHorizontalHeaderFormat(format);
@@ -364,7 +364,7 @@ QCalendarWidget::VerticalHeaderFormat C_ZNK15QCalendarWidget20verticalHeaderForm
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:122
-// [-2] void setVerticalHeaderFormat(enum QCalendarWidget::VerticalHeaderFormat)
+// [-2] void setVerticalHeaderFormat(QCalendarWidget::VerticalHeaderFormat)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget23setVerticalHeaderFormatENS_20VerticalHeaderFormatE(void *this_, QCalendarWidget::VerticalHeaderFormat format) {
   ((QCalendarWidget*)this_)->setVerticalHeaderFormat(format);
@@ -381,7 +381,7 @@ return new QTextCharFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:125
-// [-2] void setHeaderTextFormat(const class QTextCharFormat &)
+// [-2] void setHeaderTextFormat(const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget19setHeaderTextFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
   ((QCalendarWidget*)this_)->setHeaderTextFormat(*format);
@@ -398,7 +398,7 @@ return new QTextCharFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:128
-// [-2] void setWeekdayTextFormat(Qt::DayOfWeek, const class QTextCharFormat &)
+// [-2] void setWeekdayTextFormat(Qt::DayOfWeek, const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget20setWeekdayTextFormatEN2Qt9DayOfWeekERK15QTextCharFormat(void *this_, Qt::DayOfWeek dayOfWeek, QTextCharFormat* format) {
   ((QCalendarWidget*)this_)->setWeekdayTextFormat(dayOfWeek, *format);
@@ -406,7 +406,7 @@ void C_ZN15QCalendarWidget20setWeekdayTextFormatEN2Qt9DayOfWeekERK15QTextCharFor
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:131
-// [16] QTextCharFormat dateTextFormat(const class QDate &)
+// [16] QTextCharFormat dateTextFormat(const QDate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QCalendarWidget14dateTextFormatERK5QDate(void *this_, QDate* date) {
   auto rv = ((QCalendarWidget*)this_)->dateTextFormat(*date);
@@ -415,7 +415,7 @@ return new QTextCharFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:132
-// [-2] void setDateTextFormat(const class QDate &, const class QTextCharFormat &)
+// [-2] void setDateTextFormat(const QDate &, const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget17setDateTextFormatERK5QDateRK15QTextCharFormat(void *this_, QDate* date, QTextCharFormat* format) {
   ((QCalendarWidget*)this_)->setDateTextFormat(*date, *format);
@@ -431,7 +431,7 @@ bool C_ZNK15QCalendarWidget17isDateEditEnabledEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:135
-// [-2] void setDateEditEnabled(_Bool)
+// [-2] void setDateEditEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget18setDateEditEnabledEb(void *this_, bool enable) {
   ((QCalendarWidget*)this_)->setDateEditEnabled(enable);
@@ -455,7 +455,7 @@ void C_ZN15QCalendarWidget22setDateEditAcceptDelayEi(void *this_, int delay) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:152
-// [-2] void setSelectedDate(const class QDate &)
+// [-2] void setSelectedDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget15setSelectedDateERK5QDate(void *this_, QDate* date) {
   ((QCalendarWidget*)this_)->setSelectedDate(*date);
@@ -463,7 +463,7 @@ void C_ZN15QCalendarWidget15setSelectedDateERK5QDate(void *this_, QDate* date) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:153
-// [-2] void setDateRange(const class QDate &, const class QDate &)
+// [-2] void setDateRange(const QDate &, const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget12setDateRangeERK5QDateS2_(void *this_, QDate* min, QDate* max) {
   ((QCalendarWidget*)this_)->setDateRange(*min, *max);
@@ -479,7 +479,7 @@ void C_ZN15QCalendarWidget14setCurrentPageEii(void *this_, int year, int month) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:155
-// [-2] void setGridVisible(_Bool)
+// [-2] void setGridVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget14setGridVisibleEb(void *this_, bool show) {
   ((QCalendarWidget*)this_)->setGridVisible(show);
@@ -487,7 +487,7 @@ void C_ZN15QCalendarWidget14setGridVisibleEb(void *this_, bool show) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:156
-// [-2] void setNavigationBarVisible(_Bool)
+// [-2] void setNavigationBarVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget23setNavigationBarVisibleEb(void *this_, bool visible) {
   ((QCalendarWidget*)this_)->setNavigationBarVisible(visible);
@@ -551,7 +551,7 @@ void C_ZN15QCalendarWidget16selectionChangedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:166
-// [-2] void clicked(const class QDate &)
+// [-2] void clicked(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget7clickedERK5QDate(void *this_, QDate* date) {
   ((QCalendarWidget*)this_)->clicked(*date);
@@ -559,7 +559,7 @@ void C_ZN15QCalendarWidget7clickedERK5QDate(void *this_, QDate* date) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:167
-// [-2] void activated(const class QDate &)
+// [-2] void activated(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget9activatedERK5QDate(void *this_, QDate* date) {
   ((QCalendarWidget*)this_)->activated(*date);

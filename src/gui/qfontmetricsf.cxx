@@ -16,17 +16,17 @@
 class Q_DECL_EXPORT MyQFontMetricsF : public QFontMetricsF {
 public:
   virtual ~MyQFontMetricsF() {}
-// void QFontMetricsF(const class QFont &)
+// void QFontMetricsF(const QFont &)
 MyQFontMetricsF(const QFont & arg0) : QFontMetricsF(arg0) {}
-// void QFontMetricsF(const class QFont &, class QPaintDevice *)
+// void QFontMetricsF(const QFont &, QPaintDevice *)
 MyQFontMetricsF(const QFont & arg0, QPaintDevice * pd) : QFontMetricsF(arg0, pd) {}
-// void QFontMetricsF(const class QFontMetrics &)
+// void QFontMetricsF(const QFontMetrics &)
 MyQFontMetricsF(const QFontMetrics & arg0) : QFontMetricsF(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:134
-// [-2] void QFontMetricsF(const class QFont &)
+// [-2] void QFontMetricsF(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFC2ERK5QFont(QFont* arg0) {
   return  new QFontMetricsF(*arg0);
@@ -34,7 +34,7 @@ void* C_ZN13QFontMetricsFC2ERK5QFont(QFont* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:135
-// [-2] void QFontMetricsF(const class QFont &, class QPaintDevice *)
+// [-2] void QFontMetricsF(const QFont &, QPaintDevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFC2ERK5QFontP12QPaintDevice(QFont* arg0, QPaintDevice * pd) {
   return  new QFontMetricsF(*arg0, pd);
@@ -43,7 +43,7 @@ void* C_ZN13QFontMetricsFC2ERK5QFontP12QPaintDevice(QFont* arg0, QPaintDevice * 
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qfontmetrics.h:136
-// [-2] void QFontMetricsF(const class QFontMetrics &)
+// [-2] void QFontMetricsF(const QFontMetrics &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFC2ERK12QFontMetrics(QFontMetrics* arg0) {
@@ -60,7 +60,7 @@ void C_ZN13QFontMetricsFD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:140
-// [8] QFontMetricsF & operator=(const class QFontMetricsF &)
+// [8] QFontMetricsF & operator=(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFaSERKS_(void *this_, QFontMetricsF* arg0) {
   auto& rv = ((QFontMetricsF*)this_)->operator=(*arg0);
@@ -69,7 +69,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:141
-// [8] QFontMetricsF & operator=(const class QFontMetrics &)
+// [8] QFontMetricsF & operator=(const QFontMetrics &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFaSERK12QFontMetrics(void *this_, QFontMetrics* arg0) {
   auto& rv = ((QFontMetricsF*)this_)->operator=(*arg0);
@@ -78,7 +78,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:143
-// [8] QFontMetricsF & operator=(class QFontMetricsF &&)
+// [8] QFontMetricsF & operator=(QFontMetricsF &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFaSEOS_(void *this_, QFontMetricsF && other) {
   auto& rv = ((QFontMetricsF*)this_)->operator=(other);
@@ -88,7 +88,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtGui/qfontmetrics.h:147
-// [-2] void swap(class QFontMetricsF &)
+// [-2] void swap(QFontMetricsF &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN13QFontMetricsF4swapERS_(void *this_, QFontMetricsF* other) {
@@ -192,7 +192,7 @@ qreal C_ZNK13QFontMetricsF16averageCharWidthEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:162
-// [1] bool inFont(class QChar)
+// [1] bool inFont(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsF6inFontE5QChar(void *this_, QChar* arg0) {
   return (bool)((QFontMetricsF*)this_)->inFont(*arg0);
@@ -208,7 +208,7 @@ bool C_ZNK13QFontMetricsF10inFontUcs4Ej(void *this_, uint ucs4) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:165
-// [8] qreal leftBearing(class QChar)
+// [8] qreal leftBearing(QChar)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF11leftBearingE5QChar(void *this_, QChar* arg0) {
   return (qreal)((QFontMetricsF*)this_)->leftBearing(*arg0);
@@ -216,7 +216,7 @@ qreal C_ZNK13QFontMetricsF11leftBearingE5QChar(void *this_, QChar* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:166
-// [8] qreal rightBearing(class QChar)
+// [8] qreal rightBearing(QChar)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF12rightBearingE5QChar(void *this_, QChar* arg0) {
   return (qreal)((QFontMetricsF*)this_)->rightBearing(*arg0);
@@ -224,7 +224,7 @@ qreal C_ZNK13QFontMetricsF12rightBearingE5QChar(void *this_, QChar* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:167
-// [8] qreal width(const class QString &)
+// [8] qreal width(const QString &)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF5widthERK7QString(void *this_, QString* string) {
   return (qreal)((QFontMetricsF*)this_)->width(*string);
@@ -232,7 +232,7 @@ qreal C_ZNK13QFontMetricsF5widthERK7QString(void *this_, QString* string) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:169
-// [8] qreal width(class QChar)
+// [8] qreal width(QChar)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF5widthE5QChar(void *this_, QChar* arg0) {
   return (qreal)((QFontMetricsF*)this_)->width(*arg0);
@@ -240,7 +240,7 @@ qreal C_ZNK13QFontMetricsF5widthE5QChar(void *this_, QChar* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:171
-// [32] QRectF boundingRect(const class QString &)
+// [32] QRectF boundingRect(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF12boundingRectERK7QString(void *this_, QString* string) {
   auto rv = ((QFontMetricsF*)this_)->boundingRect(*string);
@@ -249,7 +249,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:172
-// [32] QRectF boundingRect(class QChar)
+// [32] QRectF boundingRect(QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF12boundingRectE5QChar(void *this_, QChar* arg0) {
   auto rv = ((QFontMetricsF*)this_)->boundingRect(*arg0);
@@ -258,7 +258,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:173
-// [32] QRectF boundingRect(const class QRectF &, int, const class QString &, int, int *)
+// [32] QRectF boundingRect(const QRectF &, int, const QString &, int, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF12boundingRectERK6QRectFiRK7QStringiPi(void *this_, QRectF* r, int flags, QString* string, int tabstops, int * tabarray) {
   auto rv = ((QFontMetricsF*)this_)->boundingRect(*r, flags, *string, tabstops, tabarray);
@@ -267,7 +267,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:174
-// [16] QSizeF size(int, const class QString &, int, int *)
+// [16] QSizeF size(int, const QString &, int, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF4sizeEiRK7QStringiPi(void *this_, int flags, QString* str, int tabstops, int * tabarray) {
   auto rv = ((QFontMetricsF*)this_)->size(flags, *str, tabstops, tabarray);
@@ -277,7 +277,7 @@ return new QSizeF(rv);
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtGui/qfontmetrics.h:176
-// [32] QRectF tightBoundingRect(const class QString &)
+// [32] QRectF tightBoundingRect(const QString &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF17tightBoundingRectERK7QString(void *this_, QString* text) {
@@ -289,7 +289,7 @@ return new QRectF(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qfontmetrics.h:178
-// [8] QString elidedText(const class QString &, Qt::TextElideMode, qreal, int)
+// [8] QString elidedText(const QString &, Qt::TextElideMode, qreal, int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF10elidedTextERK7QStringN2Qt13TextElideModeEdi(void *this_, QString* text, Qt::TextElideMode mode, qreal width, int flags) {
@@ -332,7 +332,7 @@ qreal C_ZNK13QFontMetricsF9lineWidthEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:185
-// [1] bool operator==(const class QFontMetricsF &)
+// [1] bool operator==(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsFeqERKS_(void *this_, QFontMetricsF* other) {
   return (bool)((QFontMetricsF*)this_)->operator==(*other);
@@ -340,7 +340,7 @@ bool C_ZNK13QFontMetricsFeqERKS_(void *this_, QFontMetricsF* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:186
-// [1] bool operator!=(const class QFontMetricsF &)
+// [1] bool operator!=(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsFneERKS_(void *this_, QFontMetricsF* other) {
   return (bool)((QFontMetricsF*)this_)->operator!=(*other);

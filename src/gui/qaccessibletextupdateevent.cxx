@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQAccessibleTextUpdateEvent : public QAccessibleTextUpdateEvent {
 public:
   virtual ~MyQAccessibleTextUpdateEvent() {}
-// void QAccessibleTextUpdateEvent(class QObject *, int, const class QString &, const class QString &)
+// void QAccessibleTextUpdateEvent(QObject *, int, const QString &, const QString &)
 MyQAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text) : QAccessibleTextUpdateEvent(obj, position, oldText, text) {}
-// void QAccessibleTextUpdateEvent(class QAccessibleInterface *, int, const class QString &, const class QString &)
+// void QAccessibleTextUpdateEvent(QAccessibleInterface *, int, const QString &, const QString &)
 MyQAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text) : QAccessibleTextUpdateEvent(iface, position, oldText, text) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:864
-// [-2] void QAccessibleTextUpdateEvent(class QObject *, int, const class QString &, const class QString &)
+// [-2] void QAccessibleTextUpdateEvent(QObject *, int, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextUpdateEventC2EP7QObjectiRK7QStringS4_(QObject * obj, int position, QString* oldText, QString* text) {
   return  new QAccessibleTextUpdateEvent(obj, position, *oldText, *text);
@@ -32,7 +32,7 @@ void* C_ZN26QAccessibleTextUpdateEventC2EP7QObjectiRK7QStringS4_(QObject * obj, 
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:870
-// [-2] void QAccessibleTextUpdateEvent(class QAccessibleInterface *, int, const class QString &, const class QString &)
+// [-2] void QAccessibleTextUpdateEvent(QAccessibleInterface *, int, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextUpdateEventC2EP20QAccessibleInterfaceiRK7QStringS4_(QAccessibleInterface * iface, int position, QString* oldText, QString* text) {
   return  new QAccessibleTextUpdateEvent(iface, position, *oldText, *text);

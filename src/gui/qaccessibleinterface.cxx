@@ -15,7 +15,6 @@
 
 class Q_DECL_EXPORT MyQAccessibleInterface : public QAccessibleInterface {
 public:
-  virtual ~MyQAccessibleInterface() {}
 // Protected virtual Visibility=Default Availability=Available
 // void ~QAccessibleInterface()
 };
@@ -86,7 +85,7 @@ int C_ZNK20QAccessibleInterface10childCountEv(void *this_) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:478
-// [4] int indexOfChild(const class QAccessibleInterface *)
+// [4] int indexOfChild(const QAccessibleInterface *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QAccessibleInterface12indexOfChildEPKS_(void *this_, const QAccessibleInterface * arg0) {
   return (int)((QAccessibleInterface*)this_)->indexOfChild(arg0);
@@ -94,7 +93,7 @@ int C_ZNK20QAccessibleInterface12indexOfChildEPKS_(void *this_, const QAccessibl
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:481
-// [8] QString text(class QAccessible::Text)
+// [8] QString text(QAccessible::Text)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QAccessibleInterface4textEN11QAccessible4TextE(void *this_, QAccessible::Text t) {
   auto rv = ((QAccessibleInterface*)this_)->text(t);
@@ -103,7 +102,7 @@ return new QString(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:482
-// [-2] void setText(class QAccessible::Text, const class QString &)
+// [-2] void setText(QAccessible::Text, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QAccessibleInterface7setTextEN11QAccessible4TextERK7QString(void *this_, QAccessible::Text t, QString* text) {
   ((QAccessibleInterface*)this_)->setText(t, *text);
@@ -210,7 +209,7 @@ void C_ZN20QAccessibleInterface12virtual_hookEiPv(void *this_, int id, void * da
 
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:513
-// [8] void * interface_cast(class QAccessible::InterfaceType)
+// [8] void * interface_cast(QAccessible::InterfaceType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QAccessibleInterface14interface_castEN11QAccessible13InterfaceTypeE(void *this_, QAccessible::InterfaceType arg0) {
   return (void*)((QAccessibleInterface*)this_)->interface_cast(arg0);

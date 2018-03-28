@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQWidgetAction : public QWidgetAction {
 public:
   virtual ~MyQWidgetAction() {}
-// void QWidgetAction(class QObject *)
+// void QWidgetAction(QObject *)
 MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QWidget * createWidget(class QWidget *)
+// QWidget * createWidget(QWidget *)
   virtual QWidget * createWidget(QWidget * parent) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"createWidget", &handled, 1, (uint64_t)parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -59,7 +59,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void deleteWidget(class QWidget *)
+// void deleteWidget(QWidget *)
   virtual void deleteWidget(QWidget * widget) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"deleteWidget", &handled, 1, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -74,7 +74,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:69
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QWidgetAction5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QWidgetAction*)this_)->QWidgetAction::event(arg0);
@@ -82,7 +82,7 @@ bool C_ZN13QWidgetAction5eventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:70
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QWidgetAction*)this_)->QWidgetAction::eventFilter(arg0, arg1);
@@ -90,7 +90,7 @@ bool C_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(void *this_, QObject * a
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:71
-// [8] QWidget * createWidget(class QWidget *)
+// [8] QWidget * createWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QWidgetAction12createWidgetEP7QWidget(void *this_, QWidget * parent) {
   return (void*)((QWidgetAction*)this_)->QWidgetAction::createWidget(parent);
@@ -98,7 +98,7 @@ void* C_ZN13QWidgetAction12createWidgetEP7QWidget(void *this_, QWidget * parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:72
-// [-2] void deleteWidget(class QWidget *)
+// [-2] void deleteWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QWidgetAction12deleteWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QWidgetAction*)this_)->QWidgetAction::deleteWidget(widget);
@@ -114,7 +114,7 @@ void* C_ZNK13QWidgetAction10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:59
-// [-2] void QWidgetAction(class QObject *)
+// [-2] void QWidgetAction(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QWidgetActionC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQWidgetAction*)(0);
@@ -130,7 +130,7 @@ void C_ZN13QWidgetActionD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:62
-// [-2] void setDefaultWidget(class QWidget *)
+// [-2] void setDefaultWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QWidgetAction16setDefaultWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QWidgetAction*)this_)->setDefaultWidget(w);
@@ -146,7 +146,7 @@ void* C_ZNK13QWidgetAction13defaultWidgetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:65
-// [8] QWidget * requestWidget(class QWidget *)
+// [8] QWidget * requestWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QWidgetAction13requestWidgetEP7QWidget(void *this_, QWidget * parent) {
   return (void*)((QWidgetAction*)this_)->requestWidget(parent);
@@ -154,7 +154,7 @@ void* C_ZN13QWidgetAction13requestWidgetEP7QWidget(void *this_, QWidget * parent
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:66
-// [-2] void releaseWidget(class QWidget *)
+// [-2] void releaseWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QWidgetAction13releaseWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QWidgetAction*)this_)->releaseWidget(widget);

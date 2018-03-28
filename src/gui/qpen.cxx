@@ -20,9 +20,9 @@ public:
 MyQPen() : QPen() {}
 // void QPen(Qt::PenStyle)
 MyQPen(Qt::PenStyle arg0) : QPen(arg0) {}
-// void QPen(const class QColor &)
+// void QPen(const QColor &)
 MyQPen(const QColor & color) : QPen(color) {}
-// void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
+// void QPen(const QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 MyQPen(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) : QPen(brush, width, s, c, j) {}
 };
 
@@ -44,7 +44,7 @@ void* C_ZN4QPenC2EN2Qt8PenStyleE(Qt::PenStyle arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:65
-// [-2] void QPen(const class QColor &)
+// [-2] void QPen(const QColor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenC2ERK6QColor(QColor* color) {
   return  new QPen(*color);
@@ -52,7 +52,7 @@ void* C_ZN4QPenC2ERK6QColor(QColor* color) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:66
-// [-2] void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
+// [-2] void QPen(const QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(QBrush* brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
   return  new QPen(*brush, width, s, c, j);
@@ -67,7 +67,7 @@ void C_ZN4QPenD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:72
-// [8] QPen & operator=(const class QPen &)
+// [8] QPen & operator=(const QPen &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenaSERKS_(void *this_, QPen* pen) {
   auto& rv = ((QPen*)this_)->operator=(*pen);
@@ -76,7 +76,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:76
-// [8] QPen & operator=(class QPen &&)
+// [8] QPen & operator=(QPen &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QPenaSEOS_(void *this_, QPen && other) {
   auto& rv = ((QPen*)this_)->operator=(other);
@@ -86,7 +86,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qpen.h:79
-// [-2] void swap(class QPen &)
+// [-2] void swap(QPen &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN4QPen4swapERS_(void *this_, QPen* other) {
@@ -185,7 +185,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:100
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QPen8setColorERK6QColor(void *this_, QColor* color) {
   ((QPen*)this_)->setColor(*color);
@@ -202,7 +202,7 @@ return new QBrush(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:103
-// [-2] void setBrush(const class QBrush &)
+// [-2] void setBrush(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QPen8setBrushERK6QBrush(void *this_, QBrush* brush) {
   ((QPen*)this_)->setBrush(*brush);
@@ -258,7 +258,7 @@ bool C_ZNK4QPen10isCosmeticEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:114
-// [-2] void setCosmetic(_Bool)
+// [-2] void setCosmetic(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QPen11setCosmeticEb(void *this_, bool cosmetic) {
   ((QPen*)this_)->setCosmetic(cosmetic);
@@ -266,7 +266,7 @@ void C_ZN4QPen11setCosmeticEb(void *this_, bool cosmetic) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:116
-// [1] bool operator==(const class QPen &)
+// [1] bool operator==(const QPen &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QPeneqERKS_(void *this_, QPen* p) {
   return (bool)((QPen*)this_)->operator==(*p);
@@ -274,7 +274,7 @@ bool C_ZNK4QPeneqERKS_(void *this_, QPen* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:117
-// [1] bool operator!=(const class QPen &)
+// [1] bool operator!=(const QPen &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QPenneERKS_(void *this_, QPen* p) {
   return (bool)((QPen*)this_)->operator!=(*p);

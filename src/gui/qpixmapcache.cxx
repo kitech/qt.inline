@@ -36,7 +36,7 @@ void C_ZN12QPixmapCache13setCacheLimitEi(int arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:79
-// [8] QPixmap * find(const class QString &)
+// [8] QPixmap * find(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QPixmapCache4findERK7QString(QString* key) {
   return (void*)QPixmapCache::find(*key);
@@ -44,7 +44,7 @@ void* C_ZN12QPixmapCache4findERK7QString(QString* key) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:80
-// [1] bool find(const class QString &, class QPixmap &)
+// [1] bool find(const QString &, QPixmap &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QPixmapCache4findERK7QStringR7QPixmap(QString* key, QPixmap* pixmap) {
   return (bool)QPixmapCache::find(*key, *pixmap);
@@ -53,7 +53,7 @@ bool C_ZN12QPixmapCache4findERK7QStringR7QPixmap(QString* key, QPixmap* pixmap) 
 // Public static Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtGui/qpixmapcache.h:81
-// [1] bool find(const class QString &, class QPixmap *)
+// [1] bool find(const QString &, QPixmap *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QPixmapCache4findERK7QStringP7QPixmap(QString* key, QPixmap * pixmap) {
@@ -63,7 +63,7 @@ bool C_ZN12QPixmapCache4findERK7QStringP7QPixmap(QString* key, QPixmap * pixmap)
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:86
-// [-2] void remove(const class QString &)
+// [-2] void remove(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPixmapCache6removeERK7QString(QString* key) {
   QPixmapCache::remove(*key);

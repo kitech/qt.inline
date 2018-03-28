@@ -100,7 +100,7 @@ bool C_QVariantHash_isDetached_0(void* this_ ) {
     return rv;
 }
 
-// [-2] void setSharable(_Bool)
+// [-2] void setSharable(bool)
 extern "C"
 void C_QVariantHash_setSharable_0(void* this_ , bool sharable) {
     // QVariantHash_setSharable_0()
@@ -290,7 +290,7 @@ void C_QVariantHash_equal_range_0(void* this_ , QString* key) {
     auto rv =  ((QVariantHash*)this_)->equal_range(*key);
 }
 
-// [-3] QHash::iterator erase(class QHash::iterator)
+// [-3] QHash::iterator erase(QHash::iterator)
 extern "C"
 QVariantHash::iterator* C_QVariantHash_erase_0(void* this_ , QVariantHash::iterator* it) {
     // QVariantHash_erase_0()
@@ -298,7 +298,7 @@ QVariantHash::iterator* C_QVariantHash_erase_0(void* this_ , QVariantHash::itera
     return new decltype(rv)(rv);
 }
 
-// [-3] QHash::iterator erase(class QHash::const_iterator)
+// [-3] QHash::iterator erase(QHash::const_iterator)
 extern "C"
 QVariantHash::iterator* C_QVariantHash_erase_1(void* this_ , QVariantHash::const_iterator* it) {
     // QVariantHash_erase_1()

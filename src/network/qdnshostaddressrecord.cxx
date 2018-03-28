@@ -30,7 +30,7 @@ void* C_ZN21QDnsHostAddressRecordC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:90
-// [8] QDnsHostAddressRecord & operator=(class QDnsHostAddressRecord &&)
+// [8] QDnsHostAddressRecord & operator=(QDnsHostAddressRecord &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordaSEOS_(void *this_, QDnsHostAddressRecord && other) {
   auto& rv = ((QDnsHostAddressRecord*)this_)->operator=(other);
@@ -39,7 +39,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:92
-// [8] QDnsHostAddressRecord & operator=(const class QDnsHostAddressRecord &)
+// [8] QDnsHostAddressRecord & operator=(const QDnsHostAddressRecord &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordaSERKS_(void *this_, QDnsHostAddressRecord* other) {
   auto& rv = ((QDnsHostAddressRecord*)this_)->operator=(*other);
@@ -55,7 +55,7 @@ void C_ZN21QDnsHostAddressRecordD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:95
-// [-2] void swap(class QDnsHostAddressRecord &)
+// [-2] void swap(QDnsHostAddressRecord &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QDnsHostAddressRecord4swapERS_(void *this_, QDnsHostAddressRecord* other) {
   ((QDnsHostAddressRecord*)this_)->swap(*other);

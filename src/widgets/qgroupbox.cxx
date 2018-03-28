@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQGroupBox : public QGroupBox {
 public:
   virtual ~MyQGroupBox() {}
-// void QGroupBox(class QWidget *)
+// void QGroupBox(QWidget *)
 MyQGroupBox(QWidget * parent) : QGroupBox(parent) {}
-// void QGroupBox(const class QString &, class QWidget *)
+// void QGroupBox(const QString &, QWidget *)
 MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void childEvent(class QChildEvent *)
+// void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -58,7 +58,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -70,7 +70,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -94,7 +94,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -106,7 +106,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -118,7 +118,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -130,7 +130,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionGroupBox *)
+// void initStyleOption(QStyleOptionGroupBox *)
   virtual void initStyleOption(QStyleOptionGroupBox * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -145,7 +145,7 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:88
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QGroupBox5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QGroupBox*)this_)->QGroupBox::event(event);
@@ -153,7 +153,7 @@ bool C_ZN9QGroupBox5eventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:89
-// [-2] void childEvent(class QChildEvent *)
+// [-2] void childEvent(QChildEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox10childEventEP11QChildEvent(void *this_, QChildEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::childEvent(event);
@@ -161,7 +161,7 @@ void C_ZN9QGroupBox10childEventEP11QChildEvent(void *this_, QChildEvent * event)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:90
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::resizeEvent(event);
@@ -169,7 +169,7 @@ void C_ZN9QGroupBox11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * eve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:91
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::paintEvent(event);
@@ -177,7 +177,7 @@ void C_ZN9QGroupBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:92
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::focusInEvent(event);
@@ -185,7 +185,7 @@ void C_ZN9QGroupBox12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * even
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:93
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox11changeEventEP6QEvent(void *this_, QEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::changeEvent(event);
@@ -193,7 +193,7 @@ void C_ZN9QGroupBox11changeEventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:94
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::mousePressEvent(event);
@@ -201,7 +201,7 @@ void C_ZN9QGroupBox15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:95
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::mouseMoveEvent(event);
@@ -209,7 +209,7 @@ void C_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:96
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::mouseReleaseEvent(event);
@@ -217,7 +217,7 @@ void C_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent *
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:97
-// [-2] void initStyleOption(class QStyleOptionGroupBox *)
+// [-2] void initStyleOption(QStyleOptionGroupBox *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(void *this_, QStyleOptionGroupBox * option) {
   ((QGroupBox*)this_)->QGroupBox::initStyleOption(option);
@@ -233,7 +233,7 @@ void* C_ZNK9QGroupBox10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:62
-// [-2] void QGroupBox(class QWidget *)
+// [-2] void QGroupBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QGroupBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQGroupBox*)(0);
@@ -242,7 +242,7 @@ void* C_ZN9QGroupBoxC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:63
-// [-2] void QGroupBox(const class QString &, class QWidget *)
+// [-2] void QGroupBox(const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QGroupBoxC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQGroupBox*)(0);
@@ -267,7 +267,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:67
-// [-2] void setTitle(const class QString &)
+// [-2] void setTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox8setTitleERK7QString(void *this_, QString* title) {
   ((QGroupBox*)this_)->setTitle(*title);
@@ -308,7 +308,7 @@ bool C_ZNK9QGroupBox6isFlatEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:75
-// [-2] void setFlat(_Bool)
+// [-2] void setFlat(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox7setFlatEb(void *this_, bool flat) {
   ((QGroupBox*)this_)->setFlat(flat);
@@ -324,7 +324,7 @@ bool C_ZNK9QGroupBox11isCheckableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:77
-// [-2] void setCheckable(_Bool)
+// [-2] void setCheckable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox12setCheckableEb(void *this_, bool checkable) {
   ((QGroupBox*)this_)->setCheckable(checkable);
@@ -340,7 +340,7 @@ bool C_ZNK9QGroupBox9isCheckedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:81
-// [-2] void setChecked(_Bool)
+// [-2] void setChecked(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox10setCheckedEb(void *this_, bool checked) {
   ((QGroupBox*)this_)->setChecked(checked);
@@ -349,7 +349,7 @@ void C_ZN9QGroupBox10setCheckedEb(void *this_, bool checked) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qgroupbox.h:84
-// [-2] void clicked(_Bool)
+// [-2] void clicked(bool)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox7clickedEb(void *this_, bool checked) {
@@ -359,7 +359,7 @@ void C_ZN9QGroupBox7clickedEb(void *this_, bool checked) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:85
-// [-2] void toggled(_Bool)
+// [-2] void toggled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox7toggledEb(void *this_, bool arg0) {
   ((QGroupBox*)this_)->toggled(arg0);

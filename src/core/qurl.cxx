@@ -18,7 +18,7 @@ public:
   virtual ~MyQUrl() {}
 // void QUrl()
 MyQUrl() : QUrl() {}
-// void QUrl(const class QString &, enum QUrl::ParsingMode)
+// void QUrl(const QString &, QUrl::ParsingMode)
 MyQUrl(const QString & url, QUrl::ParsingMode mode) : QUrl(url, mode) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZN4QUrlC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:178
-// [8] QUrl & operator=(const class QUrl &)
+// [8] QUrl & operator=(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlaSERKS_(void *this_, QUrl* copy) {
   auto& rv = ((QUrl*)this_)->operator=(*copy);
@@ -41,7 +41,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:182
-// [-2] void QUrl(const class QString &, enum QUrl::ParsingMode)
+// [-2] void QUrl(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlC2ERK7QStringNS_11ParsingModeE(QString* url, QUrl::ParsingMode mode) {
   return  new QUrl(*url, mode);
@@ -49,7 +49,7 @@ void* C_ZN4QUrlC2ERK7QStringNS_11ParsingModeE(QString* url, QUrl::ParsingMode mo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:183
-// [8] QUrl & operator=(const class QString &)
+// [8] QUrl & operator=(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlaSERK7QString(void *this_, QString* url) {
   auto& rv = ((QUrl*)this_)->operator=(*url);
@@ -58,7 +58,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:188
-// [8] QUrl & operator=(class QUrl &&)
+// [8] QUrl & operator=(QUrl &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlaSEOS_(void *this_, QUrl && other) {
   auto& rv = ((QUrl*)this_)->operator=(other);
@@ -75,7 +75,7 @@ void C_ZN4QUrlD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/qurl.h:193
-// [-2] void swap(class QUrl &)
+// [-2] void swap(QUrl &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl4swapERS_(void *this_, QUrl* other) {
@@ -85,7 +85,7 @@ void C_ZN4QUrl4swapERS_(void *this_, QUrl* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:195
-// [-2] void setUrl(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setUrl(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl6setUrlERK7QStringNS_11ParsingModeE(void *this_, QString* url, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setUrl(*url, mode);
@@ -93,7 +93,7 @@ void C_ZN4QUrl6setUrlERK7QStringNS_11ParsingModeE(void *this_, QString* url, QUr
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:202
-// [8] QUrl fromEncoded(const class QByteArray &, enum QUrl::ParsingMode)
+// [8] QUrl fromEncoded(const QByteArray &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl11fromEncodedERK10QByteArrayNS_11ParsingModeE(QByteArray* url, QUrl::ParsingMode mode) {
   auto rv = QUrl::fromEncoded(*url, mode);
@@ -103,7 +103,7 @@ return new QUrl(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtCore/qurl.h:210
-// [8] QUrl fromUserInput(const class QString &)
+// [8] QUrl fromUserInput(const QString &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl13fromUserInputERK7QString(QString* userInput) {
@@ -114,7 +114,7 @@ return new QUrl(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:212
-// [8] QUrl fromUserInput(const class QString &, const class QString &, QUrl::UserInputResolutionOptions)
+// [8] QUrl fromUserInput(const QString &, const QString &, QUrl::UserInputResolutionOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl13fromUserInputERK7QStringS2_6QFlagsINS_25UserInputResolutionOptionEE(QString* userInput, QString* workingDirectory, QFlags<QUrl::UserInputResolutionOption> options) {
   auto rv = QUrl::fromUserInput(*userInput, *workingDirectory, options);
@@ -159,7 +159,7 @@ void C_ZN4QUrl5clearEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:221
-// [-2] void setScheme(const class QString &)
+// [-2] void setScheme(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl9setSchemeERK7QString(void *this_, QString* scheme) {
   ((QUrl*)this_)->setScheme(*scheme);
@@ -176,7 +176,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:224
-// [-2] void setAuthority(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setAuthority(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl12setAuthorityERK7QStringNS_11ParsingModeE(void *this_, QString* authority, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setAuthority(*authority, mode);
@@ -184,7 +184,7 @@ void C_ZN4QUrl12setAuthorityERK7QStringNS_11ParsingModeE(void *this_, QString* a
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:227
-// [-2] void setUserInfo(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setUserInfo(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl11setUserInfoERK7QStringNS_11ParsingModeE(void *this_, QString* userInfo, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setUserInfo(*userInfo, mode);
@@ -192,7 +192,7 @@ void C_ZN4QUrl11setUserInfoERK7QStringNS_11ParsingModeE(void *this_, QString* us
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:230
-// [-2] void setUserName(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setUserName(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl11setUserNameERK7QStringNS_11ParsingModeE(void *this_, QString* userName, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setUserName(*userName, mode);
@@ -200,7 +200,7 @@ void C_ZN4QUrl11setUserNameERK7QStringNS_11ParsingModeE(void *this_, QString* us
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:233
-// [-2] void setPassword(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setPassword(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl11setPasswordERK7QStringNS_11ParsingModeE(void *this_, QString* password, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setPassword(*password, mode);
@@ -208,7 +208,7 @@ void C_ZN4QUrl11setPasswordERK7QStringNS_11ParsingModeE(void *this_, QString* pa
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:236
-// [-2] void setHost(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setHost(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl7setHostERK7QStringNS_11ParsingModeE(void *this_, QString* host, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setHost(*host, mode);
@@ -235,7 +235,7 @@ int C_ZNK4QUrl4portEi(void *this_, int defaultPort) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:245
-// [-2] void setPath(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setPath(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl7setPathERK7QStringNS_11ParsingModeE(void *this_, QString* path, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setPath(*path, mode);
@@ -254,7 +254,7 @@ bool C_ZNK4QUrl8hasQueryEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:250
-// [-2] void setQuery(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setQuery(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl8setQueryERK7QStringNS_11ParsingModeE(void *this_, QString* query, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setQuery(*query, mode);
@@ -263,7 +263,7 @@ void C_ZN4QUrl8setQueryERK7QStringNS_11ParsingModeE(void *this_, QString* query,
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qurl.h:251
-// [-2] void setQuery(const class QUrlQuery &)
+// [-2] void setQuery(const QUrlQuery &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl8setQueryERK9QUrlQuery(void *this_, QUrlQuery* query) {
@@ -284,7 +284,7 @@ bool C_ZNK4QUrl11hasFragmentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:256
-// [-2] void setFragment(const class QString &, enum QUrl::ParsingMode)
+// [-2] void setFragment(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl11setFragmentERK7QStringNS_11ParsingModeE(void *this_, QString* fragment, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setFragment(*fragment, mode);
@@ -292,7 +292,7 @@ void C_ZN4QUrl11setFragmentERK7QStringNS_11ParsingModeE(void *this_, QString* fr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:258
-// [8] QUrl resolved(const class QUrl &)
+// [8] QUrl resolved(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK4QUrl8resolvedERKS_(void *this_, QUrl* relative) {
   auto rv = ((QUrl*)this_)->resolved(*relative);
@@ -309,7 +309,7 @@ bool C_ZNK4QUrl10isRelativeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:261
-// [1] bool isParentOf(const class QUrl &)
+// [1] bool isParentOf(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrl10isParentOfERKS_(void *this_, QUrl* url) {
   return (bool)((QUrl*)this_)->isParentOf(*url);
@@ -328,7 +328,7 @@ bool C_ZNK4QUrl11isLocalFileEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:264
-// [8] QUrl fromLocalFile(const class QString &)
+// [8] QUrl fromLocalFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl13fromLocalFileERK7QString(QString* localfile) {
   auto rv = QUrl::fromLocalFile(*localfile);
@@ -362,7 +362,7 @@ bool C_ZNK4QUrl10isDetachedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:270
-// [1] bool operator<(const class QUrl &)
+// [1] bool operator<(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrlltERKS_(void *this_, QUrl* url) {
   return (bool)((QUrl*)this_)->operator<(*url);
@@ -370,7 +370,7 @@ bool C_ZNK4QUrlltERKS_(void *this_, QUrl* url) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:271
-// [1] bool operator==(const class QUrl &)
+// [1] bool operator==(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrleqERKS_(void *this_, QUrl* url) {
   return (bool)((QUrl*)this_)->operator==(*url);
@@ -378,7 +378,7 @@ bool C_ZNK4QUrleqERKS_(void *this_, QUrl* url) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:272
-// [1] bool operator!=(const class QUrl &)
+// [1] bool operator!=(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrlneERKS_(void *this_, QUrl* url) {
   return (bool)((QUrl*)this_)->operator!=(*url);
@@ -386,7 +386,7 @@ bool C_ZNK4QUrlneERKS_(void *this_, QUrl* url) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:276
-// [8] QString fromPercentEncoding(const class QByteArray &)
+// [8] QString fromPercentEncoding(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl19fromPercentEncodingERK10QByteArray(QByteArray* arg0) {
   auto rv = QUrl::fromPercentEncoding(*arg0);
@@ -395,7 +395,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:277
-// [8] QByteArray toPercentEncoding(const class QString &, const class QByteArray &, const class QByteArray &)
+// [8] QByteArray toPercentEncoding(const QString &, const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl17toPercentEncodingERK7QStringRK10QByteArrayS5_(QString* arg0, QByteArray* exclude, QByteArray* include) {
   auto rv = QUrl::toPercentEncoding(*arg0, *exclude, *include);
@@ -405,7 +405,7 @@ return new QByteArray(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qurl.h:357
-// [8] QString fromAce(const class QByteArray &)
+// [8] QString fromAce(const QByteArray &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl7fromAceERK10QByteArray(QByteArray* arg0) {
@@ -417,7 +417,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qurl.h:358
-// [8] QByteArray toAce(const class QString &)
+// [8] QByteArray toAce(const QString &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl5toAceERK7QString(QString* arg0) {
@@ -441,7 +441,7 @@ return new QStringList(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qurl.h:363
-// [-2] void setIdnWhitelist(const class QStringList &)
+// [-2] void setIdnWhitelist(const QStringList &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl15setIdnWhitelistERK11QStringList(QStringList* arg0) {

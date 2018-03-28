@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQRasterWindow : public QRasterWindow {
 public:
   virtual ~MyQRasterWindow() {}
-// void QRasterWindow(class QWindow *)
+// void QRasterWindow(QWindow *)
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(enum QPaintDevice::PaintDeviceMetric)
+// int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QPaintDevice * redirected(class QPoint *)
+// QPaintDevice * redirected(QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -49,7 +49,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:60
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
   return (int)((QRasterWindow*)this_)->QRasterWindow::metric(metric);
@@ -57,7 +57,7 @@ int C_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_,
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:61
-// [8] QPaintDevice * redirected(class QPoint *)
+// [8] QPaintDevice * redirected(QPoint *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QRasterWindow10redirectedEP6QPoint(void *this_, QPoint * arg0) {
   return (void*)((QRasterWindow*)this_)->QRasterWindow::redirected(arg0);
@@ -73,7 +73,7 @@ void* C_ZNK13QRasterWindow10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:56
-// [-2] void QRasterWindow(class QWindow *)
+// [-2] void QRasterWindow(QWindow *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QRasterWindowC2EP7QWindow(QWindow * parent) {
   auto _nilp = (MyQRasterWindow*)(0);

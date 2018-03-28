@@ -46,7 +46,7 @@ void* C_ZNK20QSGFlatColorMaterial12createShaderEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:55
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGFlatColorMaterial8setColorERK6QColor(void *this_, QColor* color) {
   ((QSGFlatColorMaterial*)this_)->setColor(*color);
@@ -63,7 +63,7 @@ return new QColor(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:58
-// [4] int compare(const class QSGMaterial *)
+// [4] int compare(const QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QSGFlatColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
   return (int)((QSGFlatColorMaterial*)this_)->compare(other);

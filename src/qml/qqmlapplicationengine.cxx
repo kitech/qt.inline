@@ -17,11 +17,11 @@
 class Q_DECL_EXPORT MyQQmlApplicationEngine : public QQmlApplicationEngine {
 public:
   virtual ~MyQQmlApplicationEngine() {}
-// void QQmlApplicationEngine(class QObject *)
+// void QQmlApplicationEngine(QObject *)
 MyQQmlApplicationEngine(QObject * parent) : QQmlApplicationEngine(parent) {}
-// void QQmlApplicationEngine(const class QUrl &, class QObject *)
+// void QQmlApplicationEngine(const QUrl &, QObject *)
 MyQQmlApplicationEngine(const QUrl & url, QObject * parent) : QQmlApplicationEngine(url, parent) {}
-// void QQmlApplicationEngine(const class QString &, class QObject *)
+// void QQmlApplicationEngine(const QString &, QObject *)
 MyQQmlApplicationEngine(const QString & filePath, QObject * parent) : QQmlApplicationEngine(filePath, parent) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZNK21QQmlApplicationEngine10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:56
-// [-2] void QQmlApplicationEngine(class QObject *)
+// [-2] void QQmlApplicationEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2EP7QObject(QObject * parent) {
   return  new QQmlApplicationEngine(parent);
@@ -43,7 +43,7 @@ void* C_ZN21QQmlApplicationEngineC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:57
-// [-2] void QQmlApplicationEngine(const class QUrl &, class QObject *)
+// [-2] void QQmlApplicationEngine(const QUrl &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject(QUrl* url, QObject * parent) {
   return  new QQmlApplicationEngine(*url, parent);
@@ -51,7 +51,7 @@ void* C_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject(QUrl* url, QObject * parent
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:58
-// [-2] void QQmlApplicationEngine(const class QString &, class QObject *)
+// [-2] void QQmlApplicationEngine(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2ERK7QStringP7QObject(QString* filePath, QObject * parent) {
   return  new QQmlApplicationEngine(*filePath, parent);
@@ -66,7 +66,7 @@ void C_ZN21QQmlApplicationEngineD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:67
-// [-2] void load(const class QUrl &)
+// [-2] void load(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QQmlApplicationEngine4loadERK4QUrl(void *this_, QUrl* url) {
   ((QQmlApplicationEngine*)this_)->load(*url);
@@ -74,7 +74,7 @@ void C_ZN21QQmlApplicationEngine4loadERK4QUrl(void *this_, QUrl* url) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:68
-// [-2] void load(const class QString &)
+// [-2] void load(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QQmlApplicationEngine4loadERK7QString(void *this_, QString* filePath) {
   ((QQmlApplicationEngine*)this_)->load(*filePath);
@@ -82,7 +82,7 @@ void C_ZN21QQmlApplicationEngine4loadERK7QString(void *this_, QString* filePath)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:69
-// [-2] void loadData(const class QByteArray &, const class QUrl &)
+// [-2] void loadData(const QByteArray &, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QQmlApplicationEngine8loadDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* data, QUrl* url) {
   ((QQmlApplicationEngine*)this_)->loadData(*data, *url);
@@ -90,7 +90,7 @@ void C_ZN21QQmlApplicationEngine8loadDataERK10QByteArrayRK4QUrl(void *this_, QBy
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:72
-// [-2] void objectCreated(class QObject *, const class QUrl &)
+// [-2] void objectCreated(QObject *, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QQmlApplicationEngine13objectCreatedEP7QObjectRK4QUrl(void *this_, QObject * object, QUrl* url) {
   ((QQmlApplicationEngine*)this_)->objectCreated(object, *url);

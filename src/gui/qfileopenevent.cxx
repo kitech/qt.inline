@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQFileOpenEvent : public QFileOpenEvent {
 public:
   virtual ~MyQFileOpenEvent() {}
-// void QFileOpenEvent(const class QString &)
+// void QFileOpenEvent(const QString &)
 MyQFileOpenEvent(const QString & file) : QFileOpenEvent(file) {}
-// void QFileOpenEvent(const class QUrl &)
+// void QFileOpenEvent(const QUrl &)
 MyQFileOpenEvent(const QUrl & url) : QFileOpenEvent(url) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:738
-// [-2] void QFileOpenEvent(const class QString &)
+// [-2] void QFileOpenEvent(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QFileOpenEventC2ERK7QString(QString* file) {
   return  new QFileOpenEvent(*file);
@@ -32,7 +32,7 @@ void* C_ZN14QFileOpenEventC2ERK7QString(QString* file) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:739
-// [-2] void QFileOpenEvent(const class QUrl &)
+// [-2] void QFileOpenEvent(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QFileOpenEventC2ERK4QUrl(QUrl* url) {
   return  new QFileOpenEvent(*url);
@@ -69,7 +69,7 @@ return new QUrl(rv);
 // Public Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qevent.h:744
-// [1] bool openFile(class QFile &, class QIODevice::OpenMode)
+// [1] bool openFile(QFile &, QIODevice::OpenMode)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QFileOpenEvent8openFileER5QFile6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFile* file, QFlags<QIODevice::OpenModeFlag> flags) {

@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQAccessibleTextSelectionEvent : public QAccessibleTextSelectionEvent {
 public:
   virtual ~MyQAccessibleTextSelectionEvent() {}
-// void QAccessibleTextSelectionEvent(class QObject *, int, int)
+// void QAccessibleTextSelectionEvent(QObject *, int, int)
 MyQAccessibleTextSelectionEvent(QObject * obj, int start, int end) : QAccessibleTextSelectionEvent(obj, start, end) {}
-// void QAccessibleTextSelectionEvent(class QAccessibleInterface *, int, int)
+// void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
 MyQAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end) : QAccessibleTextSelectionEvent(iface, start, end) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:773
-// [-2] void QAccessibleTextSelectionEvent(class QObject *, int, int)
+// [-2] void QAccessibleTextSelectionEvent(QObject *, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * obj, int start, int end) {
   return  new QAccessibleTextSelectionEvent(obj, start, end);
@@ -32,7 +32,7 @@ void* C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * obj, int start
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:779
-// [-2] void QAccessibleTextSelectionEvent(class QAccessibleInterface *, int, int)
+// [-2] void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * iface, int start, int end) {
   return  new QAccessibleTextSelectionEvent(iface, start, end);

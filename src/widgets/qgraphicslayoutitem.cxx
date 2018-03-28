@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
 public:
   virtual ~MyQGraphicsLayoutItem() {}
-// void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)
+// void QGraphicsLayoutItem(QGraphicsLayoutItem *, bool)
 MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLayoutItem(parent, isLayout) {}
 // Protected Visibility=Default Availability=Available
-// void setGraphicsItem(class QGraphicsItem *)
+// void setGraphicsItem(QGraphicsItem *)
   virtual void setGraphicsItem(QGraphicsItem * item) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setGraphicsItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
   }
 
 // Protected Visibility=Default Availability=Available
-// void setOwnedByLayout(_Bool)
+// void setOwnedByLayout(bool)
   virtual void setOwnedByLayout(bool ownedByLayout) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setOwnedByLayout", &handled, 1, (uint64_t)ownedByLayout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -60,7 +60,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:105
-// [-2] void setGraphicsItem(class QGraphicsItem *)
+// [-2] void setGraphicsItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
   ((QGraphicsLayoutItem*)this_)->QGraphicsLayoutItem::setGraphicsItem(item);
@@ -69,7 +69,7 @@ void C_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void *this_, QG
 // Protected Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:106
-// [-2] void setOwnedByLayout(_Bool)
+// [-2] void setOwnedByLayout(bool)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void *this_, bool ownedByLayout) {
@@ -79,10 +79,10 @@ void C_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void *this_, bool ownedByLayo
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:57
-// [-2] void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)
+// [-2] void QGraphicsLayoutItem(QGraphicsLayoutItem *, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsLayoutItemC2EPS_b(QGraphicsLayoutItem * parent, bool isLayout) {
   auto _nilp = (MyQGraphicsLayoutItem*)(0);
@@ -98,7 +98,7 @@ void C_ZN19QGraphicsLayoutItemD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:60
-// [-2] void setSizePolicy(const class QSizePolicy &)
+// [-2] void setSizePolicy(const QSizePolicy &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem13setSizePolicyERK11QSizePolicy(void *this_, QSizePolicy* policy) {
   ((QGraphicsLayoutItem*)this_)->setSizePolicy(*policy);
@@ -106,7 +106,7 @@ void C_ZN19QGraphicsLayoutItem13setSizePolicyERK11QSizePolicy(void *this_, QSize
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:61
-// [-2] void setSizePolicy(class QSizePolicy::Policy, class QSizePolicy::Policy, class QSizePolicy::ControlType)
+// [-2] void setSizePolicy(QSizePolicy::Policy, QSizePolicy::Policy, QSizePolicy::ControlType)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem13setSizePolicyEN11QSizePolicy6PolicyES1_NS0_11ControlTypeE(void *this_, QSizePolicy::Policy hPolicy, QSizePolicy::Policy vPolicy, QSizePolicy::ControlType controlType) {
   ((QGraphicsLayoutItem*)this_)->setSizePolicy(hPolicy, vPolicy, controlType);
@@ -123,7 +123,7 @@ return new QSizePolicy(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:64
-// [-2] void setMinimumSize(const class QSizeF &)
+// [-2] void setMinimumSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14setMinimumSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsLayoutItem*)this_)->setMinimumSize(*size);
@@ -180,7 +180,7 @@ qreal C_ZNK19QGraphicsLayoutItem13minimumHeightEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:72
-// [-2] void setPreferredSize(const class QSizeF &)
+// [-2] void setPreferredSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setPreferredSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsLayoutItem*)this_)->setPreferredSize(*size);
@@ -237,7 +237,7 @@ qreal C_ZNK19QGraphicsLayoutItem15preferredHeightEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:80
-// [-2] void setMaximumSize(const class QSizeF &)
+// [-2] void setMaximumSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14setMaximumSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsLayoutItem*)this_)->setMaximumSize(*size);
@@ -294,7 +294,7 @@ qreal C_ZNK19QGraphicsLayoutItem13maximumHeightEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:88
-// [-2] void setGeometry(const class QRectF &)
+// [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem11setGeometryERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsLayoutItem*)this_)->setGeometry(*rect);
@@ -328,7 +328,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:93
-// [16] QSizeF effectiveSizeHint(Qt::SizeHint, const class QSizeF &)
+// [16] QSizeF effectiveSizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem17effectiveSizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
   auto rv = ((QGraphicsLayoutItem*)this_)->effectiveSizeHint(which, *constraint);
@@ -353,7 +353,7 @@ void* C_ZNK19QGraphicsLayoutItem16parentLayoutItemEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:98
-// [-2] void setParentLayoutItem(class QGraphicsLayoutItem *)
+// [-2] void setParentLayoutItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem19setParentLayoutItemEPS_(void *this_, QGraphicsLayoutItem * parent) {
   ((QGraphicsLayoutItem*)this_)->setParentLayoutItem(parent);

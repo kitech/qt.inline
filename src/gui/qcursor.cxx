@@ -20,9 +20,9 @@ public:
 MyQCursor() : QCursor() {}
 // void QCursor(Qt::CursorShape)
 MyQCursor(Qt::CursorShape shape) : QCursor(shape) {}
-// void QCursor(const class QBitmap &, const class QBitmap &, int, int)
+// void QCursor(const QBitmap &, const QBitmap &, int, int)
 MyQCursor(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) : QCursor(bitmap, mask, hotX, hotY) {}
-// void QCursor(const class QPixmap &, int, int)
+// void QCursor(const QPixmap &, int, int)
 MyQCursor(const QPixmap & pixmap, int hotX, int hotY) : QCursor(pixmap, hotX, hotY) {}
 };
 
@@ -44,7 +44,7 @@ void* C_ZN7QCursorC2EN2Qt11CursorShapeE(Qt::CursorShape shape) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:84
-// [-2] void QCursor(const class QBitmap &, const class QBitmap &, int, int)
+// [-2] void QCursor(const QBitmap &, const QBitmap &, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCursorC2ERK7QBitmapS2_ii(QBitmap* bitmap, QBitmap* mask, int hotX, int hotY) {
   return  new QCursor(*bitmap, *mask, hotX, hotY);
@@ -52,7 +52,7 @@ void* C_ZN7QCursorC2ERK7QBitmapS2_ii(QBitmap* bitmap, QBitmap* mask, int hotX, i
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:85
-// [-2] void QCursor(const class QPixmap &, int, int)
+// [-2] void QCursor(const QPixmap &, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCursorC2ERK7QPixmapii(QPixmap* pixmap, int hotX, int hotY) {
   return  new QCursor(*pixmap, hotX, hotY);
@@ -67,7 +67,7 @@ void C_ZN7QCursorD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:88
-// [8] QCursor & operator=(const class QCursor &)
+// [8] QCursor & operator=(const QCursor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCursoraSERKS_(void *this_, QCursor* cursor) {
   auto& rv = ((QCursor*)this_)->operator=(*cursor);
@@ -76,7 +76,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:91
-// [8] QCursor & operator=(class QCursor &&)
+// [8] QCursor & operator=(QCursor &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCursoraSEOS_(void *this_, QCursor && other) {
   auto& rv = ((QCursor*)this_)->operator=(other);
@@ -85,7 +85,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:95
-// [-2] void swap(class QCursor &)
+// [-2] void swap(QCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QCursor4swapERS_(void *this_, QCursor* other) {
   ((QCursor*)this_)->swap(*other);
@@ -152,7 +152,7 @@ return new QPoint(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:108
-// [8] QPoint pos(const class QScreen *)
+// [8] QPoint pos(const QScreen *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCursor3posEPK7QScreen(const QScreen * screen) {
   auto rv = QCursor::pos(screen);
@@ -169,7 +169,7 @@ void C_ZN7QCursor6setPosEii(int x, int y) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:110
-// [-2] void setPos(class QScreen *, int, int)
+// [-2] void setPos(QScreen *, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QCursor6setPosEP7QScreenii(QScreen * screen, int x, int y) {
   QCursor::setPos(screen, x, y);
@@ -177,7 +177,7 @@ void C_ZN7QCursor6setPosEP7QScreenii(QScreen * screen, int x, int y) {
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:111
-// [-2] void setPos(const class QPoint &)
+// [-2] void setPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QCursor6setPosERK6QPoint(QPoint* p) {
   QCursor::setPos(*p);
@@ -185,7 +185,7 @@ void C_ZN7QCursor6setPosERK6QPoint(QPoint* p) {
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:112
-// [-2] void setPos(class QScreen *, const class QPoint &)
+// [-2] void setPos(QScreen *, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * screen, QPoint* p) {
   QCursor::setPos(screen, *p);

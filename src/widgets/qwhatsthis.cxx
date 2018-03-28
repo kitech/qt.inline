@@ -44,7 +44,7 @@ void C_ZN10QWhatsThis18leaveWhatsThisModeEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:62
-// [-2] void showText(const class QPoint &, const class QString &, class QWidget *)
+// [-2] void showText(const QPoint &, const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QWhatsThis8showTextERK6QPointRK7QStringP7QWidget(QPoint* pos, QString* text, QWidget * w) {
   QWhatsThis::showText(*pos, *text, w);
@@ -60,7 +60,7 @@ void C_ZN10QWhatsThis8hideTextEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:65
-// [8] QAction * createAction(class QObject *)
+// [8] QAction * createAction(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QWhatsThis12createActionEP7QObject(QObject * parent) {
   return (void*)QWhatsThis::createAction(parent);

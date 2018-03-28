@@ -107,7 +107,7 @@ qreal C_ZNK9QTextLine7leadingEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtGui/qtextlayout.h:225
-// [-2] void setLeadingIncluded(_Bool)
+// [-2] void setLeadingIncluded(bool)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextLine18setLeadingIncludedEb(void *this_, bool included) {
@@ -156,7 +156,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:242
-// [8] qreal cursorToX(int *, enum QTextLine::Edge)
+// [8] qreal cursorToX(int *, QTextLine::Edge)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextLine9cursorToXEPiNS_4EdgeE(void *this_, int * cursorPos, QTextLine::Edge edge) {
   return (qreal)((QTextLine*)this_)->cursorToX(cursorPos, edge);
@@ -164,7 +164,7 @@ qreal C_ZNK9QTextLine9cursorToXEPiNS_4EdgeE(void *this_, int * cursorPos, QTextL
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:243
-// [8] qreal cursorToX(int, enum QTextLine::Edge)
+// [8] qreal cursorToX(int, QTextLine::Edge)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *this_, int cursorPos, QTextLine::Edge edge) {
   return (qreal)((QTextLine*)this_)->cursorToX(cursorPos, edge);
@@ -172,7 +172,7 @@ qreal C_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *this_, int cursorPos, QTextLine
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:244
-// [4] int xToCursor(qreal, enum QTextLine::CursorPosition)
+// [4] int xToCursor(qreal, QTextLine::CursorPosition)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTextLine9xToCursorEdNS_14CursorPositionE(void *this_, qreal x, QTextLine::CursorPosition arg1) {
   return (int)((QTextLine*)this_)->xToCursor(x, arg1);
@@ -204,7 +204,7 @@ void C_ZN9QTextLine13setNumColumnsEid(void *this_, int columns, qreal alignmentW
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:250
-// [-2] void setPosition(const class QPointF &)
+// [-2] void setPosition(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextLine11setPositionERK7QPointF(void *this_, QPointF* pos) {
   ((QTextLine*)this_)->setPosition(*pos);

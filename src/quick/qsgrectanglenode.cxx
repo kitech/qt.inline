@@ -28,7 +28,7 @@ void C_ZN16QSGRectangleNodeD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:52
-// [-2] void setRect(const class QRectF &)
+// [-2] void setRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGRectangleNode7setRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGRectangleNode*)this_)->setRect(*rect);
@@ -53,7 +53,7 @@ return new QRectF(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:56
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGRectangleNode8setColorERK6QColor(void *this_, QColor* color) {
   ((QSGRectangleNode*)this_)->setColor(*color);

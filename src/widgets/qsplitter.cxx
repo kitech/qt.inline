@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQSplitter : public QSplitter {
 public:
   virtual ~MyQSplitter() {}
-// void QSplitter(class QWidget *)
+// void QSplitter(QWidget *)
 MyQSplitter(QWidget * parent) : QSplitter(parent) {}
-// void QSplitter(Qt::Orientation, class QWidget *)
+// void QSplitter(Qt::Orientation, QWidget *)
 MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // QSplitterHandle * createHandle()
@@ -34,7 +34,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void childEvent(class QChildEvent *)
+// void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -59,7 +59,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -71,7 +71,7 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -131,7 +131,7 @@ void* C_ZN9QSplitter12createHandleEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:114
-// [-2] void childEvent(class QChildEvent *)
+// [-2] void childEvent(QChildEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter10childEventEP11QChildEvent(void *this_, QChildEvent * arg0) {
   ((QSplitter*)this_)->QSplitter::childEvent(arg0);
@@ -139,7 +139,7 @@ void C_ZN9QSplitter10childEventEP11QChildEvent(void *this_, QChildEvent * arg0) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:116
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QSplitter5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QSplitter*)this_)->QSplitter::event(arg0);
@@ -147,7 +147,7 @@ bool C_ZN9QSplitter5eventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:117
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QSplitter*)this_)->QSplitter::resizeEvent(arg0);
@@ -155,7 +155,7 @@ void C_ZN9QSplitter11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:119
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QSplitter*)this_)->QSplitter::changeEvent(arg0);
@@ -195,7 +195,7 @@ void* C_ZNK9QSplitter10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:67
-// [-2] void QSplitter(class QWidget *)
+// [-2] void QSplitter(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSplitterC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQSplitter*)(0);
@@ -204,7 +204,7 @@ void* C_ZN9QSplitterC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:68
-// [-2] void QSplitter(Qt::Orientation, class QWidget *)
+// [-2] void QSplitter(Qt::Orientation, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSplitterC2EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget * parent) {
   auto _nilp = (MyQSplitter*)(0);
@@ -220,7 +220,7 @@ void C_ZN9QSplitterD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:71
-// [-2] void addWidget(class QWidget *)
+// [-2] void addWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter9addWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QSplitter*)this_)->addWidget(widget);
@@ -228,7 +228,7 @@ void C_ZN9QSplitter9addWidgetEP7QWidget(void *this_, QWidget * widget) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:72
-// [-2] void insertWidget(int, class QWidget *)
+// [-2] void insertWidget(int, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter12insertWidgetEiP7QWidget(void *this_, int index, QWidget * widget) {
   ((QSplitter*)this_)->insertWidget(index, widget);
@@ -237,7 +237,7 @@ void C_ZN9QSplitter12insertWidgetEiP7QWidget(void *this_, int index, QWidget * w
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtWidgets/qsplitter.h:73
-// [8] QWidget * replaceWidget(int, class QWidget *)
+// [8] QWidget * replaceWidget(int, QWidget *)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSplitter13replaceWidgetEiP7QWidget(void *this_, int index, QWidget * widget) {
@@ -263,7 +263,7 @@ Qt::Orientation C_ZNK9QSplitter11orientationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:78
-// [-2] void setChildrenCollapsible(_Bool)
+// [-2] void setChildrenCollapsible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter22setChildrenCollapsibleEb(void *this_, bool arg0) {
   ((QSplitter*)this_)->setChildrenCollapsible(arg0);
@@ -279,7 +279,7 @@ bool C_ZNK9QSplitter19childrenCollapsibleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:81
-// [-2] void setCollapsible(int, _Bool)
+// [-2] void setCollapsible(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter14setCollapsibleEib(void *this_, int index, bool arg1) {
   ((QSplitter*)this_)->setCollapsible(index, arg1);
@@ -295,7 +295,7 @@ bool C_ZNK9QSplitter13isCollapsibleEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:83
-// [-2] void setOpaqueResize(_Bool)
+// [-2] void setOpaqueResize(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter15setOpaqueResizeEb(void *this_, bool opaque) {
   ((QSplitter*)this_)->setOpaqueResize(opaque);
@@ -346,7 +346,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:94
-// [1] bool restoreState(const class QByteArray &)
+// [1] bool restoreState(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QSplitter12restoreStateERK10QByteArray(void *this_, QByteArray* state) {
   return (bool)((QSplitter*)this_)->restoreState(*state);
@@ -370,7 +370,7 @@ void C_ZN9QSplitter14setHandleWidthEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:99
-// [4] int indexOf(class QWidget *)
+// [4] int indexOf(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QSplitter7indexOfEP7QWidget(void *this_, QWidget * w) {
   return (int)((QSplitter*)this_)->indexOf(w);

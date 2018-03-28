@@ -38,7 +38,7 @@ void C_ZN26QAbstractNativeEventFilterD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h:55
-// [1] bool nativeEventFilter(const class QByteArray &, void *, long *)
+// [1] bool nativeEventFilter(const QByteArray &, void *, long *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN26QAbstractNativeEventFilter17nativeEventFilterERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
   return (bool)((QAbstractNativeEventFilter*)this_)->nativeEventFilter(*eventType, message, result);

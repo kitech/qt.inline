@@ -17,9 +17,9 @@
 class Q_DECL_EXPORT MyQFileSystemWatcher : public QFileSystemWatcher {
 public:
   virtual ~MyQFileSystemWatcher() {}
-// void QFileSystemWatcher(class QObject *)
+// void QFileSystemWatcher(QObject *)
 MyQFileSystemWatcher(QObject * parent) : QFileSystemWatcher(parent) {}
-// void QFileSystemWatcher(const class QStringList &, class QObject *)
+// void QFileSystemWatcher(const QStringList &, QObject *)
 MyQFileSystemWatcher(const QStringList & paths, QObject * parent) : QFileSystemWatcher(paths, parent) {}
 };
 
@@ -33,7 +33,7 @@ void* C_ZNK18QFileSystemWatcher10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:58
-// [-2] void QFileSystemWatcher(class QObject *)
+// [-2] void QFileSystemWatcher(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcherC2EP7QObject(QObject * parent) {
   return  new QFileSystemWatcher(parent);
@@ -41,7 +41,7 @@ void* C_ZN18QFileSystemWatcherC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:59
-// [-2] void QFileSystemWatcher(const class QStringList &, class QObject *)
+// [-2] void QFileSystemWatcher(const QStringList &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject(QStringList* paths, QObject * parent) {
   return  new QFileSystemWatcher(*paths, parent);
@@ -56,7 +56,7 @@ void C_ZN18QFileSystemWatcherD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:62
-// [1] bool addPath(const class QString &)
+// [1] bool addPath(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QFileSystemWatcher7addPathERK7QString(void *this_, QString* file) {
   return (bool)((QFileSystemWatcher*)this_)->addPath(*file);
@@ -64,7 +64,7 @@ bool C_ZN18QFileSystemWatcher7addPathERK7QString(void *this_, QString* file) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:63
-// [8] QStringList addPaths(const class QStringList &)
+// [8] QStringList addPaths(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcher8addPathsERK11QStringList(void *this_, QStringList* files) {
   auto rv = ((QFileSystemWatcher*)this_)->addPaths(*files);
@@ -73,7 +73,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:64
-// [1] bool removePath(const class QString &)
+// [1] bool removePath(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QFileSystemWatcher10removePathERK7QString(void *this_, QString* file) {
   return (bool)((QFileSystemWatcher*)this_)->removePath(*file);
@@ -81,7 +81,7 @@ bool C_ZN18QFileSystemWatcher10removePathERK7QString(void *this_, QString* file)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:65
-// [8] QStringList removePaths(const class QStringList &)
+// [8] QStringList removePaths(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcher11removePathsERK11QStringList(void *this_, QStringList* files) {
   auto rv = ((QFileSystemWatcher*)this_)->removePaths(*files);

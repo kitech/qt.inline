@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQSGAbstractRenderer : public QSGAbstractRenderer {
 public:
   virtual ~MyQSGAbstractRenderer() {}
-// void QSGAbstractRenderer(class QObject *)
+// void QSGAbstractRenderer(QObject *)
 MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void nodeChanged(class QSGNode *, class QSGNode::DirtyState)
+// void nodeChanged(QSGNode *, QSGNode::DirtyState)
   virtual void nodeChanged(QSGNode * node, QFlags<QSGNode::DirtyStateBit> state) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"nodeChanged", &handled, 2, (uint64_t)node, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:94
-// [-2] void nodeChanged(class QSGNode *, class QSGNode::DirtyState)
+// [-2] void nodeChanged(QSGNode *, QSGNode::DirtyState)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:55
 // [8] const QMetaObject * metaObject()
@@ -53,7 +53,7 @@ void C_ZN19QSGAbstractRendererD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:67
-// [-2] void setRootNode(class QSGRootNode *)
+// [-2] void setRootNode(QSGRootNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer11setRootNodeEP11QSGRootNode(void *this_, QSGRootNode * node) {
   ((QSGAbstractRenderer*)this_)->setRootNode(node);
@@ -69,7 +69,7 @@ void* C_ZNK19QSGAbstractRenderer8rootNodeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:69
-// [-2] void setDeviceRect(const class QRect &)
+// [-2] void setDeviceRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer13setDeviceRectERK5QRect(void *this_, QRect* rect) {
   ((QSGAbstractRenderer*)this_)->setDeviceRect(*rect);
@@ -77,7 +77,7 @@ void C_ZN19QSGAbstractRenderer13setDeviceRectERK5QRect(void *this_, QRect* rect)
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:70
-// [-2] void setDeviceRect(const class QSize &)
+// [-2] void setDeviceRect(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer13setDeviceRectERK5QSize(void *this_, QSize* size) {
   ((QSGAbstractRenderer*)this_)->setDeviceRect(*size);
@@ -94,7 +94,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:73
-// [-2] void setViewportRect(const class QRect &)
+// [-2] void setViewportRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer15setViewportRectERK5QRect(void *this_, QRect* rect) {
   ((QSGAbstractRenderer*)this_)->setViewportRect(*rect);
@@ -102,7 +102,7 @@ void C_ZN19QSGAbstractRenderer15setViewportRectERK5QRect(void *this_, QRect* rec
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:74
-// [-2] void setViewportRect(const class QSize &)
+// [-2] void setViewportRect(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer15setViewportRectERK5QSize(void *this_, QSize* size) {
   ((QSGAbstractRenderer*)this_)->setViewportRect(*size);
@@ -119,7 +119,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:77
-// [-2] void setProjectionMatrixToRect(const class QRectF &)
+// [-2] void setProjectionMatrixToRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer25setProjectionMatrixToRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGAbstractRenderer*)this_)->setProjectionMatrixToRect(*rect);
@@ -127,7 +127,7 @@ void C_ZN19QSGAbstractRenderer25setProjectionMatrixToRectERK6QRectF(void *this_,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:78
-// [-2] void setProjectionMatrix(const class QMatrix4x4 &)
+// [-2] void setProjectionMatrix(const QMatrix4x4 &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer19setProjectionMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
   ((QSGAbstractRenderer*)this_)->setProjectionMatrix(*matrix);
@@ -144,7 +144,7 @@ return new QMatrix4x4(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:81
-// [-2] void setClearColor(const class QColor &)
+// [-2] void setClearColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QSGAbstractRenderer13setClearColorERK6QColor(void *this_, QColor* color) {
   ((QSGAbstractRenderer*)this_)->setClearColor(*color);

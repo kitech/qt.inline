@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQNetworkConfigurationManager : public QNetworkConfigurationManager {
 public:
   virtual ~MyQNetworkConfigurationManager() {}
-// void QNetworkConfigurationManager(class QObject *)
+// void QNetworkConfigurationManager(QObject *)
 MyQNetworkConfigurationManager(QObject * parent) : QNetworkConfigurationManager(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK28QNetworkConfigurationManager10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:69
-// [-2] void QNetworkConfigurationManager(class QObject *)
+// [-2] void QNetworkConfigurationManager(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QNetworkConfigurationManagerC2EP7QObject(QObject * parent) {
   return  new QNetworkConfigurationManager(parent);
@@ -63,7 +63,7 @@ return new QNetworkConfiguration(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:76
-// [8] QNetworkConfiguration configurationFromIdentifier(const class QString &)
+// [8] QNetworkConfiguration configurationFromIdentifier(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK28QNetworkConfigurationManager27configurationFromIdentifierERK7QString(void *this_, QString* identifier) {
   auto rv = ((QNetworkConfigurationManager*)this_)->configurationFromIdentifier(*identifier);
@@ -88,7 +88,7 @@ void C_ZN28QNetworkConfigurationManager20updateConfigurationsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:84
-// [-2] void configurationAdded(const class QNetworkConfiguration &)
+// [-2] void configurationAdded(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN28QNetworkConfigurationManager18configurationAddedERK21QNetworkConfiguration(void *this_, QNetworkConfiguration* config) {
   ((QNetworkConfigurationManager*)this_)->configurationAdded(*config);
@@ -96,7 +96,7 @@ void C_ZN28QNetworkConfigurationManager18configurationAddedERK21QNetworkConfigur
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:85
-// [-2] void configurationRemoved(const class QNetworkConfiguration &)
+// [-2] void configurationRemoved(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN28QNetworkConfigurationManager20configurationRemovedERK21QNetworkConfiguration(void *this_, QNetworkConfiguration* config) {
   ((QNetworkConfigurationManager*)this_)->configurationRemoved(*config);
@@ -104,7 +104,7 @@ void C_ZN28QNetworkConfigurationManager20configurationRemovedERK21QNetworkConfig
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:86
-// [-2] void configurationChanged(const class QNetworkConfiguration &)
+// [-2] void configurationChanged(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN28QNetworkConfigurationManager20configurationChangedERK21QNetworkConfiguration(void *this_, QNetworkConfiguration* config) {
   ((QNetworkConfigurationManager*)this_)->configurationChanged(*config);
@@ -112,7 +112,7 @@ void C_ZN28QNetworkConfigurationManager20configurationChangedERK21QNetworkConfig
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:87
-// [-2] void onlineStateChanged(_Bool)
+// [-2] void onlineStateChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN28QNetworkConfigurationManager18onlineStateChangedEb(void *this_, bool isOnline) {
   ((QNetworkConfigurationManager*)this_)->onlineStateChanged(isOnline);

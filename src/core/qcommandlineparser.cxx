@@ -38,7 +38,7 @@ void C_ZN18QCommandLineParserD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:66
-// [-2] void setSingleDashWordOptionMode(enum QCommandLineParser::SingleDashWordOptionMode)
+// [-2] void setSingleDashWordOptionMode(QCommandLineParser::SingleDashWordOptionMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser27setSingleDashWordOptionModeENS_24SingleDashWordOptionModeE(void *this_, QCommandLineParser::SingleDashWordOptionMode parsingMode) {
   ((QCommandLineParser*)this_)->setSingleDashWordOptionMode(parsingMode);
@@ -46,7 +46,7 @@ void C_ZN18QCommandLineParser27setSingleDashWordOptionModeENS_24SingleDashWordOp
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:72
-// [-2] void setOptionsAfterPositionalArgumentsMode(enum QCommandLineParser::OptionsAfterPositionalArgumentsMode)
+// [-2] void setOptionsAfterPositionalArgumentsMode(QCommandLineParser::OptionsAfterPositionalArgumentsMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser38setOptionsAfterPositionalArgumentsModeENS_35OptionsAfterPositionalArgumentsModeE(void *this_, QCommandLineParser::OptionsAfterPositionalArgumentsMode mode) {
   ((QCommandLineParser*)this_)->setOptionsAfterPositionalArgumentsMode(mode);
@@ -54,7 +54,7 @@ void C_ZN18QCommandLineParser38setOptionsAfterPositionalArgumentsModeENS_35Optio
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:74
-// [1] bool addOption(const class QCommandLineOption &)
+// [1] bool addOption(const QCommandLineOption &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QCommandLineParser9addOptionERK18QCommandLineOption(void *this_, QCommandLineOption* commandLineOption) {
   return (bool)((QCommandLineParser*)this_)->addOption(*commandLineOption);
@@ -80,7 +80,7 @@ return new QCommandLineOption(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:79
-// [-2] void setApplicationDescription(const class QString &)
+// [-2] void setApplicationDescription(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser25setApplicationDescriptionERK7QString(void *this_, QString* description) {
   ((QCommandLineParser*)this_)->setApplicationDescription(*description);
@@ -97,7 +97,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:81
-// [-2] void addPositionalArgument(const class QString &, const class QString &, const class QString &)
+// [-2] void addPositionalArgument(const QString &, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser21addPositionalArgumentERK7QStringS2_S2_(void *this_, QString* name, QString* description, QString* syntax) {
   ((QCommandLineParser*)this_)->addPositionalArgument(*name, *description, *syntax);
@@ -113,7 +113,7 @@ void C_ZN18QCommandLineParser24clearPositionalArgumentsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:84
-// [-2] void process(const class QStringList &)
+// [-2] void process(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser7processERK11QStringList(void *this_, QStringList* arguments) {
   ((QCommandLineParser*)this_)->process(*arguments);
@@ -121,7 +121,7 @@ void C_ZN18QCommandLineParser7processERK11QStringList(void *this_, QStringList* 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:85
-// [-2] void process(const class QCoreApplication &)
+// [-2] void process(const QCoreApplication &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser7processERK16QCoreApplication(void *this_, QCoreApplication* app) {
   ((QCommandLineParser*)this_)->process(*app);
@@ -129,7 +129,7 @@ void C_ZN18QCommandLineParser7processERK16QCoreApplication(void *this_, QCoreApp
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:87
-// [1] bool parse(const class QStringList &)
+// [1] bool parse(const QStringList &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QCommandLineParser5parseERK11QStringList(void *this_, QStringList* arguments) {
   return (bool)((QCommandLineParser*)this_)->parse(*arguments);
@@ -146,7 +146,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:90
-// [1] bool isSet(const class QString &)
+// [1] bool isSet(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QCommandLineParser5isSetERK7QString(void *this_, QString* name) {
   return (bool)((QCommandLineParser*)this_)->isSet(*name);
@@ -154,7 +154,7 @@ bool C_ZNK18QCommandLineParser5isSetERK7QString(void *this_, QString* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:91
-// [8] QString value(const class QString &)
+// [8] QString value(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLineParser5valueERK7QString(void *this_, QString* name) {
   auto rv = ((QCommandLineParser*)this_)->value(*name);
@@ -163,7 +163,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:92
-// [8] QStringList values(const class QString &)
+// [8] QStringList values(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLineParser6valuesERK7QString(void *this_, QString* name) {
   auto rv = ((QCommandLineParser*)this_)->values(*name);
@@ -172,7 +172,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:94
-// [1] bool isSet(const class QCommandLineOption &)
+// [1] bool isSet(const QCommandLineOption &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QCommandLineParser5isSetERK18QCommandLineOption(void *this_, QCommandLineOption* option) {
   return (bool)((QCommandLineParser*)this_)->isSet(*option);
@@ -180,7 +180,7 @@ bool C_ZNK18QCommandLineParser5isSetERK18QCommandLineOption(void *this_, QComman
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:95
-// [8] QString value(const class QCommandLineOption &)
+// [8] QString value(const QCommandLineOption &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLineParser5valueERK18QCommandLineOption(void *this_, QCommandLineOption* option) {
   auto rv = ((QCommandLineParser*)this_)->value(*option);
@@ -189,7 +189,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:96
-// [8] QStringList values(const class QCommandLineOption &)
+// [8] QStringList values(const QCommandLineOption &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCommandLineParser6valuesERK18QCommandLineOption(void *this_, QCommandLineOption* option) {
   auto rv = ((QCommandLineParser*)this_)->values(*option);

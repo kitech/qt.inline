@@ -45,7 +45,7 @@ void C_ZN21QObjectCleanupHandlerD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h:56
-// [8] QObject * add(class QObject *)
+// [8] QObject * add(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QObjectCleanupHandler3addEP7QObject(void *this_, QObject * object) {
   return (void*)((QObjectCleanupHandler*)this_)->add(object);
@@ -53,7 +53,7 @@ void* C_ZN21QObjectCleanupHandler3addEP7QObject(void *this_, QObject * object) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h:57
-// [-2] void remove(class QObject *)
+// [-2] void remove(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QObjectCleanupHandler6removeEP7QObject(void *this_, QObject * object) {
   ((QObjectCleanupHandler*)this_)->remove(object);

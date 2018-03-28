@@ -28,7 +28,7 @@ MyQChar(short rc) : QChar(rc) {}
 MyQChar(uint rc) : QChar(rc) {}
 // void QChar(int)
 MyQChar(int rc) : QChar(rc) {}
-// void QChar(enum QChar::SpecialCharacter)
+// void QChar(QChar::SpecialCharacter)
 MyQChar(QChar::SpecialCharacter s) : QChar(s) {}
 // void QChar(char16_t)
 MyQChar(char16_t ch) : QChar(ch) {}
@@ -88,7 +88,7 @@ void* C_ZN5QCharC2Ei(int rc) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:87
-// [-2] void QChar(enum QChar::SpecialCharacter)
+// [-2] void QChar(QChar::SpecialCharacter)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QCharC2ENS_16SpecialCharacterE(QChar::SpecialCharacter s) {
   return  new QChar(s);
@@ -525,7 +525,7 @@ uint C_ZN5QChar15surrogateToUcs4Ett(ushort high, ushort low) {
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:491
-// [4] uint surrogateToUcs4(class QChar, class QChar)
+// [4] uint surrogateToUcs4(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 uint C_ZN5QChar15surrogateToUcs4ES_S_(QChar* high, QChar* low) {
   return (uint)QChar::surrogateToUcs4(*high, *low);

@@ -23,7 +23,7 @@ MyQRandomGenerator64(quint32 seedValue) : QRandomGenerator64(seedValue) {}
 MyQRandomGenerator64(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerator64(seedBuffer, len_) {}
 // void QRandomGenerator64(const quint32 *, const quint32 *)
 MyQRandomGenerator64(const quint32 * begin, const quint32 * end) : QRandomGenerator64(begin, end) {}
-// void QRandomGenerator64(const class QRandomGenerator &)
+// void QRandomGenerator64(const QRandomGenerator &)
 MyQRandomGenerator64(const QRandomGenerator & other) : QRandomGenerator64(other) {}
 };
 
@@ -69,7 +69,7 @@ void* C_ZN18QRandomGenerator64C2EPKjS1_(const quint32 * begin, const quint32 * e
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:237
-// [-2] void QRandomGenerator64(const class QRandomGenerator &)
+// [-2] void QRandomGenerator64(const QRandomGenerator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QRandomGenerator64C2ERK16QRandomGenerator(QRandomGenerator* other) {
   return  new QRandomGenerator64(*other);

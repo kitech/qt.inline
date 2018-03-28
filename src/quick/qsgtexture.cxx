@@ -111,7 +111,7 @@ void C_ZN10QSGTexture4bindEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:91
-// [-2] void updateBindOptions(_Bool)
+// [-2] void updateBindOptions(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture17updateBindOptionsEb(void *this_, bool force) {
   ((QSGTexture*)this_)->updateBindOptions(force);
@@ -119,7 +119,7 @@ void C_ZN10QSGTexture17updateBindOptionsEb(void *this_, bool force) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:93
-// [-2] void setMipmapFiltering(enum QSGTexture::Filtering)
+// [-2] void setMipmapFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture18setMipmapFilteringENS_9FilteringE(void *this_, QSGTexture::Filtering filter) {
   ((QSGTexture*)this_)->setMipmapFiltering(filter);
@@ -135,7 +135,7 @@ QSGTexture::Filtering C_ZNK10QSGTexture15mipmapFilteringEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:96
-// [-2] void setFiltering(enum QSGTexture::Filtering)
+// [-2] void setFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture12setFilteringENS_9FilteringE(void *this_, QSGTexture::Filtering filter) {
   ((QSGTexture*)this_)->setFiltering(filter);
@@ -151,7 +151,7 @@ QSGTexture::Filtering C_ZNK10QSGTexture9filteringEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:99
-// [-2] void setAnisotropyLevel(enum QSGTexture::AnisotropyLevel)
+// [-2] void setAnisotropyLevel(QSGTexture::AnisotropyLevel)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture18setAnisotropyLevelENS_15AnisotropyLevelE(void *this_, QSGTexture::AnisotropyLevel level) {
   ((QSGTexture*)this_)->setAnisotropyLevel(level);
@@ -170,7 +170,7 @@ QSGTexture::AnisotropyLevel C_ZNK10QSGTexture15anisotropyLevelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:102
-// [-2] void setHorizontalWrapMode(enum QSGTexture::WrapMode)
+// [-2] void setHorizontalWrapMode(QSGTexture::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture21setHorizontalWrapModeENS_8WrapModeE(void *this_, QSGTexture::WrapMode hwrap) {
   ((QSGTexture*)this_)->setHorizontalWrapMode(hwrap);
@@ -186,7 +186,7 @@ QSGTexture::WrapMode C_ZNK10QSGTexture18horizontalWrapModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:105
-// [-2] void setVerticalWrapMode(enum QSGTexture::WrapMode)
+// [-2] void setVerticalWrapMode(QSGTexture::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture19setVerticalWrapModeENS_8WrapModeE(void *this_, QSGTexture::WrapMode vwrap) {
   ((QSGTexture*)this_)->setVerticalWrapMode(vwrap);
@@ -202,7 +202,7 @@ QSGTexture::WrapMode C_ZNK10QSGTexture16verticalWrapModeEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:108
-// [32] QRectF convertToNormalizedSourceRect(const class QRectF &)
+// [32] QRectF convertToNormalizedSourceRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSGTexture29convertToNormalizedSourceRectERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QSGTexture*)this_)->convertToNormalizedSourceRect(*rect);

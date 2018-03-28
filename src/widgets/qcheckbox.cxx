@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQCheckBox : public QCheckBox {
 public:
   virtual ~MyQCheckBox() {}
-// void QCheckBox(class QWidget *)
+// void QCheckBox(QWidget *)
 MyQCheckBox(QWidget * parent) : QCheckBox(parent) {}
-// void QCheckBox(const class QString &, class QWidget *)
+// void QCheckBox(const QString &, QWidget *)
 MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool hitButton(const class QPoint &)
+// bool hitButton(const QPoint &)
   virtual bool hitButton(const QPoint & pos) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hitButton", &handled, 1, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -71,7 +71,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -83,7 +83,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -95,7 +95,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionButton *)
+// void initStyleOption(QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -110,7 +110,7 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:78
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QCheckBox5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QCheckBox*)this_)->QCheckBox::event(e);
@@ -118,7 +118,7 @@ bool C_ZN9QCheckBox5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:79
-// [1] bool hitButton(const class QPoint &)
+// [1] bool hitButton(const QPoint &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QCheckBox9hitButtonERK6QPoint(void *this_, QPoint* pos) {
   return (bool)((QCheckBox*)this_)->QCheckBox::hitButton(*pos);
@@ -142,7 +142,7 @@ void C_ZN9QCheckBox14nextCheckStateEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:82
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QCheckBox*)this_)->QCheckBox::paintEvent(arg0);
@@ -150,7 +150,7 @@ void C_ZN9QCheckBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:83
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QCheckBox*)this_)->QCheckBox::mouseMoveEvent(arg0);
@@ -158,7 +158,7 @@ void C_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ar
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:84
-// [-2] void initStyleOption(class QStyleOptionButton *)
+// [-2] void initStyleOption(QStyleOptionButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * option) {
   ((QCheckBox*)this_)->QCheckBox::initStyleOption(option);
@@ -174,7 +174,7 @@ void* C_ZNK9QCheckBox10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:61
-// [-2] void QCheckBox(class QWidget *)
+// [-2] void QCheckBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QCheckBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQCheckBox*)(0);
@@ -183,7 +183,7 @@ void* C_ZN9QCheckBoxC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:62
-// [-2] void QCheckBox(const class QString &, class QWidget *)
+// [-2] void QCheckBox(const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QCheckBoxC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQCheckBox*)(0);
@@ -217,7 +217,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:68
-// [-2] void setTristate(_Bool)
+// [-2] void setTristate(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox11setTristateEb(void *this_, bool y) {
   ((QCheckBox*)this_)->setTristate(y);

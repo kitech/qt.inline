@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQOperatingSystemVersion : public QOperatingSystemVersion {
 public:
   virtual ~MyQOperatingSystemVersion() {}
-// void QOperatingSystemVersion(enum QOperatingSystemVersion::OSType, int, int, int)
+// void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)
 MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) : QOperatingSystemVersion(osType, vmajor, vminor, vmicro) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:85
-// [-2] void QOperatingSystemVersion(enum QOperatingSystemVersion::OSType, int, int, int)
+// [-2] void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QOperatingSystemVersionC2ENS_6OSTypeEiii(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) {
   return  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);

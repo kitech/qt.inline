@@ -19,7 +19,7 @@ public:
 // void QPicture(int)
 MyQPicture(int formatVersion) : QPicture(formatVersion) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(enum QPaintDevice::PaintDeviceMetric)
+// int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric m) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)m, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQPicture(int formatVersion) : QPicture(formatVersion) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:106
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric m) {
   return (int)((QPicture*)this_)->QPicture::metric(m);
@@ -99,7 +99,7 @@ void C_ZN8QPicture7setDataEPKcj(void *this_, const char * data, uint size) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:70
-// [1] bool play(class QPainter *)
+// [1] bool play(QPainter *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QPicture4playEP8QPainter(void *this_, QPainter * p) {
   return (bool)((QPicture*)this_)->play(p);
@@ -107,7 +107,7 @@ bool C_ZN8QPicture4playEP8QPainter(void *this_, QPainter * p) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:72
-// [1] bool load(class QIODevice *, const char *)
+// [1] bool load(QIODevice *, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QPicture4loadEP9QIODevicePKc(void *this_, QIODevice * dev, const char * format) {
   return (bool)((QPicture*)this_)->load(dev, format);
@@ -115,7 +115,7 @@ bool C_ZN8QPicture4loadEP9QIODevicePKc(void *this_, QIODevice * dev, const char 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:73
-// [1] bool load(const class QString &, const char *)
+// [1] bool load(const QString &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QPicture4loadERK7QStringPKc(void *this_, QString* fileName, const char * format) {
   return (bool)((QPicture*)this_)->load(*fileName, format);
@@ -123,7 +123,7 @@ bool C_ZN8QPicture4loadERK7QStringPKc(void *this_, QString* fileName, const char
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:74
-// [1] bool save(class QIODevice *, const char *)
+// [1] bool save(QIODevice *, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QPicture4saveEP9QIODevicePKc(void *this_, QIODevice * dev, const char * format) {
   return (bool)((QPicture*)this_)->save(dev, format);
@@ -131,7 +131,7 @@ bool C_ZN8QPicture4saveEP9QIODevicePKc(void *this_, QIODevice * dev, const char 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:75
-// [1] bool save(const class QString &, const char *)
+// [1] bool save(const QString &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QPicture4saveERK7QStringPKc(void *this_, QString* fileName, const char * format) {
   return (bool)((QPicture*)this_)->save(*fileName, format);
@@ -148,7 +148,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:78
-// [-2] void setBoundingRect(const class QRect &)
+// [-2] void setBoundingRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPicture15setBoundingRectERK5QRect(void *this_, QRect* r) {
   ((QPicture*)this_)->setBoundingRect(*r);
@@ -156,7 +156,7 @@ void C_ZN8QPicture15setBoundingRectERK5QRect(void *this_, QRect* r) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:80
-// [32] QPicture & operator=(const class QPicture &)
+// [32] QPicture & operator=(const QPicture &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPictureaSERKS_(void *this_, QPicture* p) {
   auto& rv = ((QPicture*)this_)->operator=(*p);
@@ -165,7 +165,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:82
-// [32] QPicture & operator=(class QPicture &&)
+// [32] QPicture & operator=(QPicture &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPictureaSEOS_(void *this_, QPicture && other) {
   auto& rv = ((QPicture*)this_)->operator=(other);
@@ -175,7 +175,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qpicture.h:85
-// [-2] void swap(class QPicture &)
+// [-2] void swap(QPicture &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPicture4swapERS_(void *this_, QPicture* other) {
@@ -201,7 +201,7 @@ bool C_ZNK8QPicture10isDetachedEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:94
-// [8] const char * pictureFormat(const class QString &)
+// [8] const char * pictureFormat(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPicture13pictureFormatERK7QString(QString* fileName) {
   return (void*)QPicture::pictureFormat(*fileName);

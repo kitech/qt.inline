@@ -27,7 +27,7 @@ void C_ZN22QQmlExtensionInterfaceD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:62
-// [-2] void initializeEngine(class QQmlEngine *, const char *)
+// [-2] void initializeEngine(QQmlEngine *, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QQmlExtensionInterface16initializeEngineEP10QQmlEnginePKc(void *this_, QQmlEngine * engine, const char * uri) {
   ((QQmlExtensionInterface*)this_)->initializeEngine(engine, uri);

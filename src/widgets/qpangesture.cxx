@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQPanGesture : public QPanGesture {
 public:
   virtual ~MyQPanGesture() {}
-// void QPanGesture(class QObject *)
+// void QPanGesture(QObject *)
 MyQPanGesture(QObject * parent) : QPanGesture(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK11QPanGesture10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:117
-// [-2] void QPanGesture(class QObject *)
+// [-2] void QPanGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPanGestureC2EP7QObject(QObject * parent) {
   return  new QPanGesture(parent);
@@ -81,7 +81,7 @@ qreal C_ZNK11QPanGesture12accelerationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:125
-// [-2] void setLastOffset(const class QPointF &)
+// [-2] void setLastOffset(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPanGesture13setLastOffsetERK7QPointF(void *this_, QPointF* value) {
   ((QPanGesture*)this_)->setLastOffset(*value);
@@ -89,7 +89,7 @@ void C_ZN11QPanGesture13setLastOffsetERK7QPointF(void *this_, QPointF* value) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:126
-// [-2] void setOffset(const class QPointF &)
+// [-2] void setOffset(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPanGesture9setOffsetERK7QPointF(void *this_, QPointF* value) {
   ((QPanGesture*)this_)->setOffset(*value);

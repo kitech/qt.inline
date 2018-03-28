@@ -31,7 +31,7 @@ void* C_ZN17QNetworkInterfaceC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:107
-// [8] QNetworkInterface & operator=(class QNetworkInterface &&)
+// [8] QNetworkInterface & operator=(QNetworkInterface &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkInterfaceaSEOS_(void *this_, QNetworkInterface && other) {
   auto& rv = ((QNetworkInterface*)this_)->operator=(other);
@@ -40,7 +40,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:109
-// [8] QNetworkInterface & operator=(const class QNetworkInterface &)
+// [8] QNetworkInterface & operator=(const QNetworkInterface &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkInterfaceaSERKS_(void *this_, QNetworkInterface* other) {
   auto& rv = ((QNetworkInterface*)this_)->operator=(*other);
@@ -57,7 +57,7 @@ void C_ZN17QNetworkInterfaceD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:112
-// [-2] void swap(class QNetworkInterface &)
+// [-2] void swap(QNetworkInterface &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkInterface4swapERS_(void *this_, QNetworkInterface* other) {
@@ -126,7 +126,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.7
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:123
-// [4] int interfaceIndexFromName(const class QString &)
+// [4] int interfaceIndexFromName(const QString &)
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 int C_ZN17QNetworkInterface22interfaceIndexFromNameERK7QString(QString* name) {
@@ -136,7 +136,7 @@ int C_ZN17QNetworkInterface22interfaceIndexFromNameERK7QString(QString* name) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:124
-// [8] QNetworkInterface interfaceFromName(const class QString &)
+// [8] QNetworkInterface interfaceFromName(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkInterface17interfaceFromNameERK7QString(QString* name) {
   auto rv = QNetworkInterface::interfaceFromName(*name);

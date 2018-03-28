@@ -20,11 +20,11 @@ public:
 MyQUuid() : QUuid() {}
 // void QUuid(uint, ushort, ushort, uchar, uchar, uchar, uchar, uchar, uchar, uchar, uchar)
 MyQUuid(uint l, ushort w1, ushort w2, uchar b1, uchar b2, uchar b3, uchar b4, uchar b5, uchar b6, uchar b7, uchar b8) : QUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8) {}
-// void QUuid(const class QString &)
+// void QUuid(const QString &)
 MyQUuid(const QString & arg0) : QUuid(arg0) {}
 // void QUuid(const char *)
 MyQUuid(const char * arg0) : QUuid(arg0) {}
-// void QUuid(const class QByteArray &)
+// void QUuid(const QByteArray &)
 MyQUuid(const QByteArray & arg0) : QUuid(arg0) {}
 };
 
@@ -46,7 +46,7 @@ void* C_ZN5QUuidC2Ejtthhhhhhhh(uint l, ushort w1, ushort w2, uchar b1, uchar b2,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:119
-// [-2] void QUuid(const class QString &)
+// [-2] void QUuid(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuidC2ERK7QString(QString* arg0) {
   return  new QUuid(*arg0);
@@ -55,7 +55,7 @@ void* C_ZN5QUuidC2ERK7QString(QString* arg0) {
 // Public static Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/quuid.h:120
-// [16] QUuid fromString(class QStringView)
+// [16] QUuid fromString(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid10fromStringE11QStringView(QStringView* string) {
@@ -67,7 +67,7 @@ return new QUuid(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/quuid.h:121
-// [16] QUuid fromString(class QLatin1String)
+// [16] QUuid fromString(QLatin1String)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid10fromStringE13QLatin1String(QLatin1String* string) {
@@ -96,7 +96,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/quuid.h:124
-// [-2] void QUuid(const class QByteArray &)
+// [-2] void QUuid(const QByteArray &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuidC2ERK10QByteArray(QByteArray* arg0) {
@@ -131,7 +131,7 @@ return new QByteArray(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/quuid.h:127
-// [16] QUuid fromRfc4122(const class QByteArray &)
+// [16] QUuid fromRfc4122(const QByteArray &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid11fromRfc4122ERK10QByteArray(QByteArray* arg0) {
@@ -150,7 +150,7 @@ bool C_ZNK5QUuid6isNullEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:130
-// [1] bool operator==(const class QUuid &)
+// [1] bool operator==(const QUuid &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QUuideqERKS_(void *this_, QUuid* orig) {
   return (bool)((QUuid*)this_)->operator==(*orig);
@@ -158,7 +158,7 @@ bool C_ZNK5QUuideqERKS_(void *this_, QUuid* orig) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:143
-// [1] bool operator!=(const class QUuid &)
+// [1] bool operator!=(const QUuid &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QUuidneERKS_(void *this_, QUuid* orig) {
   return (bool)((QUuid*)this_)->operator!=(*orig);
@@ -166,7 +166,7 @@ bool C_ZNK5QUuidneERKS_(void *this_, QUuid* orig) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:148
-// [1] bool operator<(const class QUuid &)
+// [1] bool operator<(const QUuid &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QUuidltERKS_(void *this_, QUuid* other) {
   return (bool)((QUuid*)this_)->operator<(*other);
@@ -174,7 +174,7 @@ bool C_ZNK5QUuidltERKS_(void *this_, QUuid* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:149
-// [1] bool operator>(const class QUuid &)
+// [1] bool operator>(const QUuid &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QUuidgtERKS_(void *this_, QUuid* other) {
   return (bool)((QUuid*)this_)->operator>(*other);
@@ -192,7 +192,7 @@ return new QUuid(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/quuid.h:194
-// [16] QUuid createUuidV3(const class QUuid &, const class QByteArray &)
+// [16] QUuid createUuidV3(const QUuid &, const QByteArray &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid12createUuidV3ERKS_RK10QByteArray(QUuid* ns, QByteArray* baseData) {
@@ -204,7 +204,7 @@ return new QUuid(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/quuid.h:195
-// [16] QUuid createUuidV5(const class QUuid &, const class QByteArray &)
+// [16] QUuid createUuidV5(const QUuid &, const QByteArray &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid12createUuidV5ERKS_RK10QByteArray(QUuid* ns, QByteArray* baseData) {
@@ -216,7 +216,7 @@ return new QUuid(rv);
 // Public static inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/quuid.h:196
-// [16] QUuid createUuidV3(const class QUuid &, const class QString &)
+// [16] QUuid createUuidV3(const QUuid &, const QString &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid12createUuidV3ERKS_RK7QString(QUuid* ns, QString* baseData) {
@@ -228,7 +228,7 @@ return new QUuid(rv);
 // Public static inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/quuid.h:201
-// [16] QUuid createUuidV5(const class QUuid &, const class QString &)
+// [16] QUuid createUuidV5(const QUuid &, const QString &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QUuid12createUuidV5ERKS_RK7QString(QUuid* ns, QString* baseData) {

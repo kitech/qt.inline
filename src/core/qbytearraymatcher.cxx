@@ -18,7 +18,7 @@ public:
   virtual ~MyQByteArrayMatcher() {}
 // void QByteArrayMatcher()
 MyQByteArrayMatcher() : QByteArrayMatcher() {}
-// void QByteArrayMatcher(const class QByteArray &)
+// void QByteArrayMatcher(const QByteArray &)
 MyQByteArrayMatcher(const QByteArray & pattern) : QByteArrayMatcher(pattern) {}
 // void QByteArrayMatcher(const char *, int)
 MyQByteArrayMatcher(const char * pattern, int length) : QByteArrayMatcher(pattern, length) {}
@@ -34,7 +34,7 @@ void* C_ZN17QByteArrayMatcherC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:54
-// [-2] void QByteArrayMatcher(const class QByteArray &)
+// [-2] void QByteArrayMatcher(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(QByteArray* pattern) {
   return  new QByteArrayMatcher(*pattern);
@@ -57,7 +57,7 @@ void C_ZN17QByteArrayMatcherD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:59
-// [1040] QByteArrayMatcher & operator=(const class QByteArrayMatcher &)
+// [1040] QByteArrayMatcher & operator=(const QByteArrayMatcher &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcheraSERKS_(void *this_, QByteArrayMatcher* other) {
   auto& rv = ((QByteArrayMatcher*)this_)->operator=(*other);
@@ -66,7 +66,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:61
-// [-2] void setPattern(const class QByteArray &)
+// [-2] void setPattern(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, QByteArray* pattern) {
   ((QByteArrayMatcher*)this_)->setPattern(*pattern);
@@ -74,7 +74,7 @@ void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, QByteArray*
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:63
-// [4] int indexIn(const class QByteArray &, int)
+// [4] int indexIn(const QByteArray &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *this_, QByteArray* ba, int from) {
   return (int)((QByteArrayMatcher*)this_)->indexIn(*ba, from);

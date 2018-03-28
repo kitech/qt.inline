@@ -8,7 +8,7 @@
 //  main block begin
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:549
-// [8] QQmlEngine * qmlEngine(const class QObject *)
+// [8] QQmlEngine * qmlEngine(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml9qmlEngineEPK7QObject(const QObject * arg0) {
   return (void*)qmlEngine(arg0);
@@ -16,7 +16,7 @@ void* C_ZN5QtQml9qmlEngineEPK7QObject(const QObject * arg0) {
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:54
-// [16] QQmlInfo qmlDebug(const class QObject *, const class QQmlError &)
+// [16] QQmlInfo qmlDebug(const QObject *, const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml8qmlDebugEPK7QObjectRK9QQmlError(const QObject * me, QQmlError* error) {
   auto rv = qmlDebug(me, *error);
@@ -25,7 +25,7 @@ return new QQmlInfo(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:53
-// [16] QQmlInfo qmlDebug(const class QObject *)
+// [16] QQmlInfo qmlDebug(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml8qmlDebugEPK7QObject_1(const QObject * me) {
   auto rv = qmlDebug(me);
@@ -34,7 +34,7 @@ return new QQmlInfo(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:58
-// [16] QQmlInfo qmlInfo(const class QObject *, const class QQmlError &)
+// [16] QQmlInfo qmlInfo(const QObject *, const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml7qmlInfoEPK7QObjectRK9QQmlError(const QObject * me, QQmlError* error) {
   auto rv = qmlInfo(me, *error);
@@ -43,7 +43,7 @@ return new QQmlInfo(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:57
-// [16] QQmlInfo qmlInfo(const class QObject *)
+// [16] QQmlInfo qmlInfo(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml7qmlInfoEPK7QObject_1(const QObject * me) {
   auto rv = qmlInfo(me);
@@ -52,7 +52,7 @@ return new QQmlInfo(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:550
-// [8] QObject * qmlAttachedPropertiesObjectById(int, const class QObject *, _Bool)
+// [8] QObject * qmlAttachedPropertiesObjectById(int, const QObject *, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml31qmlAttachedPropertiesObjectByIdEiPK7QObjectb(int arg0, const QObject * arg1, bool create) {
   return (void*)qmlAttachedPropertiesObjectById(arg0, arg1, create);
@@ -60,7 +60,7 @@ void* C_ZN5QtQml31qmlAttachedPropertiesObjectByIdEiPK7QObjectb(int arg0, const Q
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:551
-// [8] QObject * qmlAttachedPropertiesObject(int *, const class QObject *, const struct QMetaObject *, _Bool)
+// [8] QObject * qmlAttachedPropertiesObject(int *, const QObject *, const QMetaObject *, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml27qmlAttachedPropertiesObjectEPiPK7QObjectPK11QMetaObjectb(int * arg0, const QObject * arg1, const QMetaObject * arg2, bool create) {
   return (void*)qmlAttachedPropertiesObject(arg0, arg1, arg2, create);
@@ -68,7 +68,7 @@ void* C_ZN5QtQml27qmlAttachedPropertiesObjectEPiPK7QObjectPK11QMetaObjectb(int *
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:547
-// [-2] void qmlExecuteDeferred(class QObject *)
+// [-2] void qmlExecuteDeferred(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QtQml18qmlExecuteDeferredEP7QObject(QObject * arg0) {
   qmlExecuteDeferred(arg0);
@@ -76,7 +76,7 @@ void C_ZN5QtQml18qmlExecuteDeferredEP7QObject(QObject * arg0) {
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:62
-// [16] QQmlInfo qmlWarning(const class QObject *, const class QQmlError &)
+// [16] QQmlInfo qmlWarning(const QObject *, const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml10qmlWarningEPK7QObjectRK9QQmlError(const QObject * me, QQmlError* error) {
   auto rv = qmlWarning(me, *error);
@@ -85,7 +85,7 @@ return new QQmlInfo(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:61
-// [16] QQmlInfo qmlWarning(const class QObject *)
+// [16] QQmlInfo qmlWarning(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml10qmlWarningEPK7QObject_1(const QObject * me) {
   auto rv = qmlWarning(me);
@@ -94,7 +94,7 @@ return new QQmlInfo(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:548
-// [8] QQmlContext * qmlContext(const class QObject *)
+// [8] QQmlContext * qmlContext(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml10qmlContextEPK7QObject(const QObject * arg0) {
   return (void*)qmlContext(arg0);
@@ -102,7 +102,7 @@ void* C_ZN5QtQml10qmlContextEPK7QObject(const QObject * arg0) {
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlprivate.h:307
-// [4] int qmlregister(enum QQmlPrivate::RegistrationType, void *)
+// [4] int qmlregister(QQmlPrivate::RegistrationType, void *)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QQmlPrivate11qmlregisterENS_16RegistrationTypeEPv(QQmlPrivate::RegistrationType arg0, void * arg1) {
   return (int)qmlregister(arg0, arg1);
@@ -110,7 +110,7 @@ int C_ZN11QQmlPrivate11qmlregisterENS_16RegistrationTypeEPv(QQmlPrivate::Registr
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:158
-// [8] QJSEngine * qjsEngine(const class QObject *)
+// [8] QJSEngine * qjsEngine(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_Z9qjsEnginePK7QObject(const QObject * arg0) {
   return (void*)qjsEngine(arg0);
@@ -118,15 +118,15 @@ void* C_Z9qjsEnginePK7QObject(const QObject * arg0) {
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:130
-// [4] uint qHash(const class QQmlProperty &)
+// [4] uint qHash(const QQmlProperty &)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK12QQmlProperty_42(QQmlProperty* key) {
+uint C_Z5qHashRK12QQmlProperty_43(QQmlProperty* key) {
   return (uint)qHash(*key);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:280
-// [4] int qmlRegisterUncreatableMetaObject(const struct QMetaObject &, const char *, int, int, const char *, const class QString &)
+// [4] int qmlRegisterUncreatableMetaObject(const QMetaObject &, const char *, int, int, const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_Z32qmlRegisterUncreatableMetaObjectRK11QMetaObjectPKciiS3_RK7QString(QMetaObject* staticMetaObject, const char * uri, int versionMajor, int versionMinor, const char * qmlName, QString* reason) {
   return (int)qmlRegisterUncreatableMetaObject(*staticMetaObject, uri, versionMajor, versionMinor, qmlName, *reason);
@@ -134,7 +134,7 @@ int C_Z32qmlRegisterUncreatableMetaObjectRK11QMetaObjectPKciiS3_RK7QString(QMeta
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:136
-// [4] int qmlRegisterTypeNotAvailable(const char *, int, int, const char *, const class QString &)
+// [4] int qmlRegisterTypeNotAvailable(const char *, int, int, const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_Z27qmlRegisterTypeNotAvailablePKciiS0_RK7QString(const char * uri, int versionMajor, int versionMinor, const char * qmlName, QString* message) {
   return (int)qmlRegisterTypeNotAvailable(uri, versionMajor, versionMinor, qmlName, *message);
@@ -150,7 +150,7 @@ void C_Z25qmlClearTypeRegistrationsv() {
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:610
-// [4] int qmlRegisterSingletonType(const class QUrl &, const char *, int, int, const char *)
+// [4] int qmlRegisterSingletonType(const QUrl &, const char *, int, int, const char *)
 extern "C" Q_DECL_EXPORT
 int C_Z24qmlRegisterSingletonTypeRK4QUrlPKciiS3_(QUrl* url, const char * uri, int versionMajor, int versionMinor, const char * qmlName) {
   return (int)qmlRegisterSingletonType(*url, uri, versionMajor, versionMinor, qmlName);
@@ -158,7 +158,7 @@ int C_Z24qmlRegisterSingletonTypeRK4QUrlPKciiS3_(QUrl* url, const char * uri, in
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:578
-// [4] int qmlRegisterSingletonType(const char *, int, int, const char *, class QJSValue (*)(class QQmlEngine *, class QJSEngine *))
+// [4] int qmlRegisterSingletonType(const char *, int, int, const char *, QJSValue (*)(QQmlEngine *, QJSEngine *))
 extern "C" Q_DECL_EXPORT
 int C_Z24qmlRegisterSingletonTypePKciiS0_PF8QJSValueP10QQmlEngineP9QJSEngineE_1(const char * uri, int versionMajor, int versionMinor, const char * typeName, QJSValue (*callback)(QQmlEngine *, QJSEngine *)) {
   return (int)qmlRegisterSingletonType(uri, versionMajor, versionMinor, typeName, callback);
@@ -174,7 +174,7 @@ void C_Z20qmlRegisterBaseTypesPKcii(const char * uri, int versionMajor, int vers
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:133
-// [1] bool qjsvalue_cast_helper(const class QJSValue &, int, void *)
+// [1] bool qjsvalue_cast_helper(const QJSValue &, int, void *)
 extern "C" Q_DECL_EXPORT
 bool C_Z20qjsvalue_cast_helperRK8QJSValueiPv(QJSValue* value, int type_, void * ptr) {
   return (bool)qjsvalue_cast_helper(*value, type_, ptr);
@@ -198,7 +198,7 @@ bool C_Z16qmlProtectModulePKci(const char * uri, int majVersion) {
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:629
-// [4] int qmlRegisterType(const class QUrl &, const char *, int, int, const char *)
+// [4] int qmlRegisterType(const QUrl &, const char *, int, int, const char *)
 extern "C" Q_DECL_EXPORT
 int C_Z15qmlRegisterTypeRK4QUrlPKciiS3_(QUrl* url, const char * uri, int versionMajor, int versionMinor, const char * qmlName) {
   return (int)qmlRegisterType(*url, uri, versionMajor, versionMinor, qmlName);

@@ -30,7 +30,7 @@ void* C_ZN22QDnsMailExchangeRecordC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:114
-// [8] QDnsMailExchangeRecord & operator=(class QDnsMailExchangeRecord &&)
+// [8] QDnsMailExchangeRecord & operator=(QDnsMailExchangeRecord &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordaSEOS_(void *this_, QDnsMailExchangeRecord && other) {
   auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(other);
@@ -39,7 +39,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:116
-// [8] QDnsMailExchangeRecord & operator=(const class QDnsMailExchangeRecord &)
+// [8] QDnsMailExchangeRecord & operator=(const QDnsMailExchangeRecord &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordaSERKS_(void *this_, QDnsMailExchangeRecord* other) {
   auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(*other);
@@ -55,7 +55,7 @@ void C_ZN22QDnsMailExchangeRecordD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:119
-// [-2] void swap(class QDnsMailExchangeRecord &)
+// [-2] void swap(QDnsMailExchangeRecord &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QDnsMailExchangeRecord4swapERS_(void *this_, QDnsMailExchangeRecord* other) {
   ((QDnsMailExchangeRecord*)this_)->swap(*other);

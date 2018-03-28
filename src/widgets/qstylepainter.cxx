@@ -18,9 +18,9 @@ public:
   virtual ~MyQStylePainter() {}
 // void QStylePainter()
 MyQStylePainter() : QStylePainter() {}
-// void QStylePainter(class QWidget *)
+// void QStylePainter(QWidget *)
 MyQStylePainter(QWidget * w) : QStylePainter(w) {}
-// void QStylePainter(class QPaintDevice *, class QWidget *)
+// void QStylePainter(QPaintDevice *, QWidget *)
 MyQStylePainter(QPaintDevice * pd, QWidget * w) : QStylePainter(pd, w) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZN13QStylePainterC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:55
-// [-2] void QStylePainter(class QWidget *)
+// [-2] void QStylePainter(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStylePainterC2EP7QWidget(QWidget * w) {
   return  new QStylePainter(w);
@@ -42,7 +42,7 @@ void* C_ZN13QStylePainterC2EP7QWidget(QWidget * w) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:56
-// [-2] void QStylePainter(class QPaintDevice *, class QWidget *)
+// [-2] void QStylePainter(QPaintDevice *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStylePainterC2EP12QPaintDeviceP7QWidget(QPaintDevice * pd, QWidget * w) {
   return  new QStylePainter(pd, w);
@@ -50,7 +50,7 @@ void* C_ZN13QStylePainterC2EP12QPaintDeviceP7QWidget(QPaintDevice * pd, QWidget 
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:57
-// [1] bool begin(class QWidget *)
+// [1] bool begin(QWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QStylePainter5beginEP7QWidget(void *this_, QWidget * w) {
   return (bool)((QStylePainter*)this_)->begin(w);
@@ -58,7 +58,7 @@ bool C_ZN13QStylePainter5beginEP7QWidget(void *this_, QWidget * w) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:58
-// [1] bool begin(class QPaintDevice *, class QWidget *)
+// [1] bool begin(QPaintDevice *, QWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QStylePainter5beginEP12QPaintDeviceP7QWidget(void *this_, QPaintDevice * pd, QWidget * w) {
   return (bool)((QStylePainter*)this_)->begin(pd, w);
@@ -66,7 +66,7 @@ bool C_ZN13QStylePainter5beginEP12QPaintDeviceP7QWidget(void *this_, QPaintDevic
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:64
-// [-2] void drawPrimitive(class QStyle::PrimitiveElement, const class QStyleOption &)
+// [-2] void drawPrimitive(QStyle::PrimitiveElement, const QStyleOption &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStylePainter13drawPrimitiveEN6QStyle16PrimitiveElementERK12QStyleOption(void *this_, QStyle::PrimitiveElement pe, QStyleOption* opt) {
   ((QStylePainter*)this_)->drawPrimitive(pe, *opt);
@@ -74,7 +74,7 @@ void C_ZN13QStylePainter13drawPrimitiveEN6QStyle16PrimitiveElementERK12QStyleOpt
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:65
-// [-2] void drawControl(class QStyle::ControlElement, const class QStyleOption &)
+// [-2] void drawControl(QStyle::ControlElement, const QStyleOption &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStylePainter11drawControlEN6QStyle14ControlElementERK12QStyleOption(void *this_, QStyle::ControlElement ce, QStyleOption* opt) {
   ((QStylePainter*)this_)->drawControl(ce, *opt);
@@ -82,7 +82,7 @@ void C_ZN13QStylePainter11drawControlEN6QStyle14ControlElementERK12QStyleOption(
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:66
-// [-2] void drawComplexControl(class QStyle::ComplexControl, const class QStyleOptionComplex &)
+// [-2] void drawComplexControl(QStyle::ComplexControl, const QStyleOptionComplex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStylePainter18drawComplexControlEN6QStyle14ComplexControlERK19QStyleOptionComplex(void *this_, QStyle::ComplexControl cc, QStyleOptionComplex* opt) {
   ((QStylePainter*)this_)->drawComplexControl(cc, *opt);
@@ -90,7 +90,7 @@ void C_ZN13QStylePainter18drawComplexControlEN6QStyle14ComplexControlERK19QStyle
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:67
-// [-2] void drawItemText(const class QRect &, int, const class QPalette &, _Bool, const class QString &, class QPalette::ColorRole)
+// [-2] void drawItemText(const QRect &, int, const QPalette &, bool, const QString &, QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStylePainter12drawItemTextERK5QRectiRK8QPalettebRK7QStringNS3_9ColorRoleE(void *this_, QRect* r, int flags, QPalette* pal, bool enabled, QString* text, QPalette::ColorRole textRole) {
   ((QStylePainter*)this_)->drawItemText(*r, flags, *pal, enabled, *text, textRole);
@@ -98,7 +98,7 @@ void C_ZN13QStylePainter12drawItemTextERK5QRectiRK8QPalettebRK7QStringNS3_9Color
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:69
-// [-2] void drawItemPixmap(const class QRect &, int, const class QPixmap &)
+// [-2] void drawItemPixmap(const QRect &, int, const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStylePainter14drawItemPixmapERK5QRectiRK7QPixmap(void *this_, QRect* r, int flags, QPixmap* pixmap) {
   ((QStylePainter*)this_)->drawItemPixmap(*r, flags, *pixmap);

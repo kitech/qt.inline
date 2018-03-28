@@ -24,17 +24,17 @@ MyQColor(Qt::GlobalColor color) : QColor(color) {}
 MyQColor(int r, int g, int b, int a) : QColor(r, g, b, a) {}
 // void QColor(QRgb)
 MyQColor(QRgb rgb) : QColor(rgb) {}
-// void QColor(class QRgba64)
+// void QColor(QRgba64)
 MyQColor(QRgba64 rgba64) : QColor(rgba64) {}
-// void QColor(const class QString &)
+// void QColor(const QString &)
 MyQColor(const QString & name) : QColor(name) {}
-// void QColor(class QStringView)
+// void QColor(QStringView)
 MyQColor(QStringView name) : QColor(name) {}
 // void QColor(const char *)
 MyQColor(const char * aname) : QColor(aname) {}
-// void QColor(class QLatin1String)
+// void QColor(QLatin1String)
 MyQColor(QLatin1String name) : QColor(name) {}
-// void QColor(enum QColor::Spec)
+// void QColor(QColor::Spec)
 MyQColor(QColor::Spec spec) : QColor(spec) {}
 };
 
@@ -73,7 +73,7 @@ void* C_ZN6QColorC2Ej(QRgb rgb) {
 // Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qcolor.h:74
-// [-2] void QColor(class QRgba64)
+// [-2] void QColor(QRgba64)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2E7QRgba64(QRgba64* rgba64) {
@@ -83,7 +83,7 @@ void* C_ZN6QColorC2E7QRgba64(QRgba64* rgba64) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:76
-// [-2] void QColor(const class QString &)
+// [-2] void QColor(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2ERK7QString(QString* name) {
   return  new QColor(*name);
@@ -91,7 +91,7 @@ void* C_ZN6QColorC2ERK7QString(QString* name) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:78
-// [-2] void QColor(class QStringView)
+// [-2] void QColor(QStringView)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2E11QStringView(QStringView* name) {
   return  new QColor(*name);
@@ -108,7 +108,7 @@ void* C_ZN6QColorC2EPKc(const char * aname) {
 // Public inline Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtGui/qcolor.h:80
-// [-2] void QColor(class QLatin1String)
+// [-2] void QColor(QLatin1String)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2E13QLatin1String(QLatin1String* name) {
@@ -118,7 +118,7 @@ void* C_ZN6QColorC2E13QLatin1String(QLatin1String* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:81
-// [-2] void QColor(enum QColor::Spec)
+// [-2] void QColor(QColor::Spec)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2ENS_4SpecE(QColor::Spec spec) {
   return  new QColor(spec);
@@ -126,7 +126,7 @@ void* C_ZN6QColorC2ENS_4SpecE(QColor::Spec spec) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:87
-// [16] QColor & operator=(class QColor &&)
+// [16] QColor & operator=(QColor &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColoraSEOS_(void *this_, QColor && other) {
   auto& rv = ((QColor*)this_)->operator=(other);
@@ -135,7 +135,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:90
-// [16] QColor & operator=(const class QColor &)
+// [16] QColor & operator=(const QColor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColoraSERKS_(void *this_, QColor* arg0) {
   auto& rv = ((QColor*)this_)->operator=(*arg0);
@@ -170,7 +170,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:99
-// [8] QString name(enum QColor::NameFormat)
+// [8] QString name(QColor::NameFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QColor4nameENS_10NameFormatE(void *this_, QColor::NameFormat format) {
   auto rv = ((QColor*)this_)->name(format);
@@ -179,7 +179,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:102
-// [-2] void setNamedColor(const class QString &)
+// [-2] void setNamedColor(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor13setNamedColorERK7QString(void *this_, QString* name) {
   ((QColor*)this_)->setNamedColor(*name);
@@ -188,7 +188,7 @@ void C_ZN6QColor13setNamedColorERK7QString(void *this_, QString* name) {
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtGui/qcolor.h:104
-// [-2] void setNamedColor(class QStringView)
+// [-2] void setNamedColor(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor13setNamedColorE11QStringView(void *this_, QStringView* name) {
@@ -199,7 +199,7 @@ void C_ZN6QColor13setNamedColorE11QStringView(void *this_, QStringView* name) {
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtGui/qcolor.h:105
-// [-2] void setNamedColor(class QLatin1String)
+// [-2] void setNamedColor(QLatin1String)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor13setNamedColorE13QLatin1String(void *this_, QLatin1String* name) {
@@ -399,7 +399,7 @@ return new QRgba64(rv);
 // Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qcolor.h:139
-// [-2] void setRgba64(class QRgba64)
+// [-2] void setRgba64(QRgba64)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN6QColor9setRgba64E7QRgba64(void *this_, QRgba64* rgba) {
@@ -795,7 +795,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:200
-// [16] QColor convertTo(enum QColor::Spec)
+// [16] QColor convertTo(QColor::Spec)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QColor9convertToENS_4SpecE(void *this_, QColor::Spec colorSpec) {
   auto rv = ((QColor*)this_)->convertTo(colorSpec);
@@ -853,7 +853,7 @@ return new QColor(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qcolor.h:209
-// [16] QColor fromRgba64(class QRgba64)
+// [16] QColor fromRgba64(QRgba64)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColor10fromRgba64E7QRgba64(QRgba64* rgba) {
@@ -966,7 +966,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:225
-// [1] bool operator==(const class QColor &)
+// [1] bool operator==(const QColor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QColoreqERKS_(void *this_, QColor* c) {
   return (bool)((QColor*)this_)->operator==(*c);
@@ -974,7 +974,7 @@ bool C_ZNK6QColoreqERKS_(void *this_, QColor* c) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:226
-// [1] bool operator!=(const class QColor &)
+// [1] bool operator!=(const QColor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QColorneERKS_(void *this_, QColor* c) {
   return (bool)((QColor*)this_)->operator!=(*c);
@@ -983,7 +983,7 @@ bool C_ZNK6QColorneERKS_(void *this_, QColor* c) {
 // Public static Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtGui/qcolor.h:231
-// [1] bool isValidColor(const class QString &)
+// [1] bool isValidColor(const QString &)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QColor12isValidColorERK7QString(QString* name) {
@@ -994,7 +994,7 @@ bool C_ZN6QColor12isValidColorERK7QString(QString* name) {
 // Public static Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtGui/qcolor.h:233
-// [1] bool isValidColor(class QStringView)
+// [1] bool isValidColor(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QColor12isValidColorE11QStringView(QStringView* arg0) {
@@ -1005,7 +1005,7 @@ bool C_ZN6QColor12isValidColorE11QStringView(QStringView* arg0) {
 // Public static Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtGui/qcolor.h:234
-// [1] bool isValidColor(class QLatin1String)
+// [1] bool isValidColor(QLatin1String)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QColor12isValidColorE13QLatin1String(QLatin1String* arg0) {

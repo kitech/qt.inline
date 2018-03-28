@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQSequentialAnimationGroup : public QSequentialAnimationGroup {
 public:
   virtual ~MyQSequentialAnimationGroup() {}
-// void QSequentialAnimationGroup(class QObject *)
+// void QSequentialAnimationGroup(QObject *)
 MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -57,7 +57,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateDirection(class QAbstractAnimation::Direction)
+// void updateDirection(QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateDirection", &handled, 1, (uint64_t)direction, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -72,7 +72,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:73
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN25QSequentialAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::event(event);
@@ -88,7 +88,7 @@ void C_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(void *this_, int arg0)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:76
-// [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::updateState(newState, oldState);
@@ -96,7 +96,7 @@ void C_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:77
-// [-2] void updateDirection(class QAbstractAnimation::Direction)
+// [-2] void updateDirection(QAbstractAnimation::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
   ((QSequentialAnimationGroup*)this_)->QSequentialAnimationGroup::updateDirection(direction);
@@ -112,7 +112,7 @@ void* C_ZNK25QSequentialAnimationGroup10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:59
-// [-2] void QSequentialAnimationGroup(class QObject *)
+// [-2] void QSequentialAnimationGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSequentialAnimationGroup*)(0);
@@ -160,7 +160,7 @@ int C_ZNK25QSequentialAnimationGroup8durationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:69
-// [-2] void currentAnimationChanged(class QAbstractAnimation *)
+// [-2] void currentAnimationChanged(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation(void *this_, QAbstractAnimation * current) {
   ((QSequentialAnimationGroup*)this_)->currentAnimationChanged(current);

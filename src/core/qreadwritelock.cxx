@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQReadWriteLock : public QReadWriteLock {
 public:
   virtual ~MyQReadWriteLock() {}
-// void QReadWriteLock(enum QReadWriteLock::RecursionMode)
+// void QReadWriteLock(QReadWriteLock::RecursionMode)
 MyQReadWriteLock(QReadWriteLock::RecursionMode recursionMode) : QReadWriteLock(recursionMode) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:57
-// [-2] void QReadWriteLock(enum QReadWriteLock::RecursionMode)
+// [-2] void QReadWriteLock(QReadWriteLock::RecursionMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QReadWriteLockC2ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode) {
   return  new QReadWriteLock(recursionMode);

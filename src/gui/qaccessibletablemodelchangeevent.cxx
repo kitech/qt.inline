@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQAccessibleTableModelChangeEvent : public QAccessibleTableModelChangeEvent {
 public:
   virtual ~MyQAccessibleTableModelChangeEvent() {}
-// void QAccessibleTableModelChangeEvent(class QObject *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// void QAccessibleTableModelChangeEvent(QObject *, QAccessibleTableModelChangeEvent::ModelChangeType)
 MyQAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType) : QAccessibleTableModelChangeEvent(obj, changeType) {}
-// void QAccessibleTableModelChangeEvent(class QAccessibleInterface *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// void QAccessibleTableModelChangeEvent(QAccessibleInterface *, QAccessibleTableModelChangeEvent::ModelChangeType)
 MyQAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) : QAccessibleTableModelChangeEvent(iface, changeType) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:932
-// [-2] void QAccessibleTableModelChangeEvent(class QObject *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// [-2] void QAccessibleTableModelChangeEvent(QObject *, QAccessibleTableModelChangeEvent::ModelChangeType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
   return  new QAccessibleTableModelChangeEvent(obj, changeType);
@@ -32,7 +32,7 @@ void* C_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE(QO
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:939
-// [-2] void QAccessibleTableModelChangeEvent(class QAccessibleInterface *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// [-2] void QAccessibleTableModelChangeEvent(QAccessibleInterface *, QAccessibleTableModelChangeEvent::ModelChangeType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN32QAccessibleTableModelChangeEventC2EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
   return  new QAccessibleTableModelChangeEvent(iface, changeType);
@@ -47,7 +47,7 @@ void C_ZN32QAccessibleTableModelChangeEventD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:949
-// [-2] void setModelChangeType(enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// [-2] void setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType)
 extern "C" Q_DECL_EXPORT
 void C_ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE(void *this_, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
   ((QAccessibleTableModelChangeEvent*)this_)->setModelChangeType(changeType);

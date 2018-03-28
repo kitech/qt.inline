@@ -36,7 +36,7 @@ void C_ZN9QHashData8freeNodeEPv(void *this_, void * node) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhash.h:86
-// [8] QHashData * detach_helper(void (*)(struct QHashData::Node *, void *), void (*)(struct QHashData::Node *), int, int)
+// [8] QHashData * detach_helper(void (*)(QHashData::Node *, void *), void (*)(QHashData::Node *), int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHashData13detach_helperEPFvPNS_4NodeEPvEPFvS1_Eii(void *this_, void (*node_duplicate)(QHashData::Node *, void *), void (*node_delete)(QHashData::Node *), int nodeSize, int nodeAlign) {
   return (void*)((QHashData*)this_)->detach_helper(node_duplicate, node_delete, nodeSize, nodeAlign);
@@ -68,7 +68,7 @@ void C_ZN9QHashData6rehashEi(void *this_, int hint) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhash.h:91
-// [-2] void free_helper(void (*)(struct QHashData::Node *))
+// [-2] void free_helper(void (*)(QHashData::Node *))
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHashData11free_helperEPFvPNS_4NodeEE(void *this_, void (*node_delete)(QHashData::Node *)) {
   ((QHashData*)this_)->free_helper(node_delete);

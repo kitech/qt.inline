@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQToolBarChangeEvent : public QToolBarChangeEvent {
 public:
   virtual ~MyQToolBarChangeEvent() {}
-// void QToolBarChangeEvent(_Bool)
+// void QToolBarChangeEvent(bool)
 MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:754
-// [-2] void QToolBarChangeEvent(_Bool)
+// [-2] void QToolBarChangeEvent(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
   return  new QToolBarChangeEvent(t);

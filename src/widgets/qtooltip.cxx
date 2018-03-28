@@ -20,7 +20,7 @@ public:
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:56
-// [-2] void showText(const class QPoint &, const class QString &, class QWidget *)
+// [-2] void showText(const QPoint &, const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidget(QPoint* pos, QString* text, QWidget * w) {
   QToolTip::showText(*pos, *text, w);
@@ -28,7 +28,7 @@ void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidget(QPoint* pos, QString* t
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:57
-// [-2] void showText(const class QPoint &, const class QString &, class QWidget *, const class QRect &)
+// [-2] void showText(const QPoint &, const QString &, QWidget *, const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRect(QPoint* pos, QString* text, QWidget * w, QRect* rect) {
   QToolTip::showText(*pos, *text, w, *rect);
@@ -37,7 +37,7 @@ void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRect(QPoint* pos, QS
 // Public static Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qtooltip.h:58
-// [-2] void showText(const class QPoint &, const class QString &, class QWidget *, const class QRect &, int)
+// [-2] void showText(const QPoint &, const QString &, QWidget *, const QRect &, int)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRecti(QPoint* pos, QString* text, QWidget * w, QRect* rect, int msecShowTime) {
@@ -91,7 +91,7 @@ return new QPalette(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtooltip.h:65
-// [-2] void setPalette(const class QPalette &)
+// [-2] void setPalette(const QPalette &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolTip10setPaletteERK8QPalette(QPalette* arg0) {
@@ -114,7 +114,7 @@ return new QFont(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtooltip.h:67
-// [-2] void setFont(const class QFont &)
+// [-2] void setFont(const QFont &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolTip7setFontERK5QFont(QFont* arg0) {

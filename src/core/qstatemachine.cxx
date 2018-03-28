@@ -17,12 +17,12 @@
 class Q_DECL_EXPORT MyQStateMachine : public QStateMachine {
 public:
   virtual ~MyQStateMachine() {}
-// void QStateMachine(class QObject *)
+// void QStateMachine(QObject *)
 MyQStateMachine(QObject * parent) : QStateMachine(parent) {}
-// void QStateMachine(class QState::ChildMode, class QObject *)
+// void QStateMachine(QState::ChildMode, QObject *)
 MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(childMode, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void onEntry(class QEvent *)
+// void onEntry(QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void onExit(class QEvent *)
+// void onExit(QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void beginSelectTransitions(class QEvent *)
+// void beginSelectTransitions(QEvent *)
   virtual void beginSelectTransitions(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"beginSelectTransitions", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -58,7 +58,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void endSelectTransitions(class QEvent *)
+// void endSelectTransitions(QEvent *)
   virtual void endSelectTransitions(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"endSelectTransitions", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -70,7 +70,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void beginMicrostep(class QEvent *)
+// void beginMicrostep(QEvent *)
   virtual void beginMicrostep(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"beginMicrostep", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void endMicrostep(class QEvent *)
+// void endMicrostep(QEvent *)
   virtual void endMicrostep(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"endMicrostep", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -94,7 +94,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -110,7 +110,7 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:159
-// [-2] void onEntry(class QEvent *)
+// [-2] void onEntry(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine7onEntryEP6QEvent(void *this_, QEvent * event) {
   ((QStateMachine*)this_)->QStateMachine::onEntry(event);
@@ -118,7 +118,7 @@ void C_ZN13QStateMachine7onEntryEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:160
-// [-2] void onExit(class QEvent *)
+// [-2] void onExit(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine6onExitEP6QEvent(void *this_, QEvent * event) {
   ((QStateMachine*)this_)->QStateMachine::onExit(event);
@@ -126,7 +126,7 @@ void C_ZN13QStateMachine6onExitEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:162
-// [-2] void beginSelectTransitions(class QEvent *)
+// [-2] void beginSelectTransitions(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(void *this_, QEvent * event) {
   ((QStateMachine*)this_)->QStateMachine::beginSelectTransitions(event);
@@ -134,7 +134,7 @@ void C_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(void *this_, QEvent * 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:163
-// [-2] void endSelectTransitions(class QEvent *)
+// [-2] void endSelectTransitions(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine20endSelectTransitionsEP6QEvent(void *this_, QEvent * event) {
   ((QStateMachine*)this_)->QStateMachine::endSelectTransitions(event);
@@ -142,7 +142,7 @@ void C_ZN13QStateMachine20endSelectTransitionsEP6QEvent(void *this_, QEvent * ev
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:165
-// [-2] void beginMicrostep(class QEvent *)
+// [-2] void beginMicrostep(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine14beginMicrostepEP6QEvent(void *this_, QEvent * event) {
   ((QStateMachine*)this_)->QStateMachine::beginMicrostep(event);
@@ -150,7 +150,7 @@ void C_ZN13QStateMachine14beginMicrostepEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:166
-// [-2] void endMicrostep(class QEvent *)
+// [-2] void endMicrostep(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine12endMicrostepEP6QEvent(void *this_, QEvent * event) {
   ((QStateMachine*)this_)->QStateMachine::endMicrostep(event);
@@ -158,7 +158,7 @@ void C_ZN13QStateMachine12endMicrostepEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:168
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QStateMachine5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QStateMachine*)this_)->QStateMachine::event(e);
@@ -174,7 +174,7 @@ void* C_ZNK13QStateMachine10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:112
-// [-2] void QStateMachine(class QObject *)
+// [-2] void QStateMachine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStateMachineC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQStateMachine*)(0);
@@ -184,7 +184,7 @@ void* C_ZN13QStateMachineC2EP7QObject(QObject * parent) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qstatemachine.h:113
-// [-2] void QStateMachine(class QState::ChildMode, class QObject *)
+// [-2] void QStateMachine(QState::ChildMode, QObject *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStateMachineC2EN6QState9ChildModeEP7QObject(QState::ChildMode childMode, QObject * parent) {
@@ -202,7 +202,7 @@ void C_ZN13QStateMachineD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:116
-// [-2] void addState(class QAbstractState *)
+// [-2] void addState(QAbstractState *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine8addStateEP14QAbstractState(void *this_, QAbstractState * state) {
   ((QStateMachine*)this_)->addState(state);
@@ -210,7 +210,7 @@ void C_ZN13QStateMachine8addStateEP14QAbstractState(void *this_, QAbstractState 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:117
-// [-2] void removeState(class QAbstractState *)
+// [-2] void removeState(QAbstractState *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine11removeStateEP14QAbstractState(void *this_, QAbstractState * state) {
   ((QStateMachine*)this_)->removeState(state);
@@ -259,7 +259,7 @@ bool C_ZNK13QStateMachine10isAnimatedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:127
-// [-2] void setAnimated(_Bool)
+// [-2] void setAnimated(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine11setAnimatedEb(void *this_, bool enabled) {
   ((QStateMachine*)this_)->setAnimated(enabled);
@@ -267,7 +267,7 @@ void C_ZN13QStateMachine11setAnimatedEb(void *this_, bool enabled) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:129
-// [-2] void addDefaultAnimation(class QAbstractAnimation *)
+// [-2] void addDefaultAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine19addDefaultAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
   ((QStateMachine*)this_)->addDefaultAnimation(animation);
@@ -275,7 +275,7 @@ void C_ZN13QStateMachine19addDefaultAnimationEP18QAbstractAnimation(void *this_,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:131
-// [-2] void removeDefaultAnimation(class QAbstractAnimation *)
+// [-2] void removeDefaultAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine22removeDefaultAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
   ((QStateMachine*)this_)->removeDefaultAnimation(animation);
@@ -291,7 +291,7 @@ QState::RestorePolicy C_ZNK13QStateMachine19globalRestorePolicyEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:135
-// [-2] void setGlobalRestorePolicy(class QState::RestorePolicy)
+// [-2] void setGlobalRestorePolicy(QState::RestorePolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine22setGlobalRestorePolicyEN6QState13RestorePolicyE(void *this_, QState::RestorePolicy restorePolicy) {
   ((QStateMachine*)this_)->setGlobalRestorePolicy(restorePolicy);
@@ -299,7 +299,7 @@ void C_ZN13QStateMachine22setGlobalRestorePolicyEN6QState13RestorePolicyE(void *
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:137
-// [-2] void postEvent(class QEvent *, enum QStateMachine::EventPriority)
+// [-2] void postEvent(QEvent *, QStateMachine::EventPriority)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine9postEventEP6QEventNS_13EventPriorityE(void *this_, QEvent * event, QStateMachine::EventPriority priority) {
   ((QStateMachine*)this_)->postEvent(event, priority);
@@ -307,7 +307,7 @@ void C_ZN13QStateMachine9postEventEP6QEventNS_13EventPriorityE(void *this_, QEve
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:138
-// [4] int postDelayedEvent(class QEvent *, int)
+// [4] int postDelayedEvent(QEvent *, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN13QStateMachine16postDelayedEventEP6QEventi(void *this_, QEvent * event, int delay) {
   return (int)((QStateMachine*)this_)->postDelayedEvent(event, delay);
@@ -323,7 +323,7 @@ bool C_ZN13QStateMachine18cancelDelayedEventEi(void *this_, int id) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:144
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QStateMachine11eventFilterEP7QObjectP6QEvent(void *this_, QObject * watched, QEvent * event) {
   return (bool)((QStateMachine*)this_)->eventFilter(watched, event);
@@ -347,7 +347,7 @@ void C_ZN13QStateMachine4stopEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:150
-// [-2] void setRunning(_Bool)
+// [-2] void setRunning(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine10setRunningEb(void *this_, bool running) {
   ((QStateMachine*)this_)->setRunning(running);
@@ -356,7 +356,7 @@ void C_ZN13QStateMachine10setRunningEb(void *this_, bool running) {
 // Public Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qstatemachine.h:155
-// [-2] void runningChanged(_Bool)
+// [-2] void runningChanged(bool)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine14runningChangedEb(void *this_, bool running) {

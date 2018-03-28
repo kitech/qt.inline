@@ -38,7 +38,7 @@ void C_ZN24QQuickAsyncImageProviderD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:121
-// [8] QQuickImageResponse * requestImageResponse(const class QString &, const class QSize &)
+// [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QQuickAsyncImageProvider20requestImageResponseERK7QStringRK5QSize(void *this_, QString* id, QSize* requestedSize) {
   return (void*)((QQuickAsyncImageProvider*)this_)->requestImageResponse(*id, *requestedSize);

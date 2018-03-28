@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQPlatformSurfaceEvent : public QPlatformSurfaceEvent {
 public:
   virtual ~MyQPlatformSurfaceEvent() {}
-// void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
+// void QPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType)
 MyQPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) : QPlatformSurfaceEvent(surfaceEventType) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:451
-// [-2] void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
+// [-2] void QPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPlatformSurfaceEventC2ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) {
   return  new QPlatformSurfaceEvent(surfaceEventType);

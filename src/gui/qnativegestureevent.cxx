@@ -17,15 +17,15 @@
 class Q_DECL_EXPORT MyQNativeGestureEvent : public QNativeGestureEvent {
 public:
   virtual ~MyQNativeGestureEvent() {}
-// void QNativeGestureEvent(Qt::NativeGestureType, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
+// void QNativeGestureEvent(Qt::NativeGestureType, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
 MyQNativeGestureEvent(Qt::NativeGestureType type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) : QNativeGestureEvent(type_, localPos, windowPos, screenPos, value, sequenceId, intArgument) {}
-// void QNativeGestureEvent(Qt::NativeGestureType, const class QTouchDevice *, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
+// void QNativeGestureEvent(Qt::NativeGestureType, const QTouchDevice *, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
 MyQNativeGestureEvent(Qt::NativeGestureType type_, const QTouchDevice * dev, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) : QNativeGestureEvent(type_, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:305
-// [-2] void QNativeGestureEvent(Qt::NativeGestureType, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
+// [-2] void QNativeGestureEvent(Qt::NativeGestureType, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt::NativeGestureType type_, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
   return  new QNativeGestureEvent(type_, *localPos, *windowPos, *screenPos, value, sequenceId, intArgument);
@@ -34,7 +34,7 @@ void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtGui/qevent.h:308
-// [-2] void QNativeGestureEvent(Qt::NativeGestureType, const class QTouchDevice *, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
+// [-2] void QNativeGestureEvent(Qt::NativeGestureType, const QTouchDevice *, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeEPK12QTouchDeviceRK7QPointFS7_S7_dmy(Qt::NativeGestureType type_, const QTouchDevice * dev, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, qreal value, ulong sequenceId, quint64 intArgument) {

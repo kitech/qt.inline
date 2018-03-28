@@ -37,7 +37,7 @@ void C_ZN23QQmlPropertyValueSourceD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:55
-// [-2] void setTarget(const class QQmlProperty &)
+// [-2] void setTarget(const QQmlProperty &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QQmlPropertyValueSource9setTargetERK12QQmlProperty(void *this_, QQmlProperty* arg0) {
   ((QQmlPropertyValueSource*)this_)->setTarget(*arg0);

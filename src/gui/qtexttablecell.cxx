@@ -37,7 +37,7 @@ void C_ZN14QTextTableCellD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:60
-// [16] QTextTableCell & operator=(const class QTextTableCell &)
+// [16] QTextTableCell & operator=(const QTextTableCell &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTextTableCellaSERKS_(void *this_, QTextTableCell* o) {
   auto& rv = ((QTextTableCell*)this_)->operator=(*o);
@@ -47,7 +47,7 @@ return &rv;
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtexttable.h:63
-// [-2] void setFormat(const class QTextCharFormat &)
+// [-2] void setFormat(const QTextCharFormat &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
@@ -140,7 +140,7 @@ int C_ZNK14QTextTableCell12lastPositionEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:79
-// [1] bool operator==(const class QTextTableCell &)
+// [1] bool operator==(const QTextTableCell &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QTextTableCelleqERKS_(void *this_, QTextTableCell* other) {
   return (bool)((QTextTableCell*)this_)->operator==(*other);
@@ -148,7 +148,7 @@ bool C_ZNK14QTextTableCelleqERKS_(void *this_, QTextTableCell* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:81
-// [1] bool operator!=(const class QTextTableCell &)
+// [1] bool operator!=(const QTextTableCell &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QTextTableCellneERKS_(void *this_, QTextTableCell* other) {
   return (bool)((QTextTableCell*)this_)->operator!=(*other);

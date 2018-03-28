@@ -69,7 +69,7 @@ void* C_ZNK11QTouchEvent6deviceEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:959
-// [-2] void setWindow(class QWindow *)
+// [-2] void setWindow(QWindow *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent9setWindowEP7QWindow(void *this_, QWindow * awindow) {
   ((QTouchEvent*)this_)->setWindow(awindow);
@@ -77,7 +77,7 @@ void C_ZN11QTouchEvent9setWindowEP7QWindow(void *this_, QWindow * awindow) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:960
-// [-2] void setTarget(class QObject *)
+// [-2] void setTarget(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent9setTargetEP7QObject(void *this_, QObject * atarget) {
   ((QTouchEvent*)this_)->setTarget(atarget);
@@ -93,7 +93,7 @@ void C_ZN11QTouchEvent19setTouchPointStatesE6QFlagsIN2Qt15TouchPointStateEE(void
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:963
-// [-2] void setDevice(class QTouchDevice *)
+// [-2] void setDevice(QTouchDevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent9setDeviceEP12QTouchDevice(void *this_, QTouchDevice * adevice) {
   ((QTouchEvent*)this_)->setDevice(adevice);

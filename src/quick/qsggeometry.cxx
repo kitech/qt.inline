@@ -246,7 +246,7 @@ int C_ZNK11QSGGeometry12sizeOfVertexEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:184
-// [-2] void updateRectGeometry(class QSGGeometry *, const class QRectF &)
+// [-2] void updateRectGeometry(QSGGeometry *, const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry18updateRectGeometryEPS_RK6QRectF(QSGGeometry * g, QRectF* rect) {
   QSGGeometry::updateRectGeometry(g, *rect);
@@ -254,7 +254,7 @@ void C_ZN11QSGGeometry18updateRectGeometryEPS_RK6QRectF(QSGGeometry * g, QRectF*
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:185
-// [-2] void updateTexturedRectGeometry(class QSGGeometry *, const class QRectF &, const class QRectF &)
+// [-2] void updateTexturedRectGeometry(QSGGeometry *, const QRectF &, const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry26updateTexturedRectGeometryEPS_RK6QRectFS3_(QSGGeometry * g, QRectF* rect, QRectF* sourceRect) {
   QSGGeometry::updateTexturedRectGeometry(g, *rect, *sourceRect);
@@ -262,7 +262,7 @@ void C_ZN11QSGGeometry26updateTexturedRectGeometryEPS_RK6QRectFS3_(QSGGeometry *
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:186
-// [-2] void updateColoredRectGeometry(class QSGGeometry *, const class QRectF &)
+// [-2] void updateColoredRectGeometry(QSGGeometry *, const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry25updateColoredRectGeometryEPS_RK6QRectF(QSGGeometry * g, QRectF* rect) {
   QSGGeometry::updateColoredRectGeometry(g, *rect);
@@ -270,7 +270,7 @@ void C_ZN11QSGGeometry25updateColoredRectGeometryEPS_RK6QRectF(QSGGeometry * g, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:188
-// [-2] void setIndexDataPattern(enum QSGGeometry::DataPattern)
+// [-2] void setIndexDataPattern(QSGGeometry::DataPattern)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry19setIndexDataPatternENS_11DataPatternE(void *this_, QSGGeometry::DataPattern p) {
   ((QSGGeometry*)this_)->setIndexDataPattern(p);
@@ -286,7 +286,7 @@ QSGGeometry::DataPattern C_ZNK11QSGGeometry16indexDataPatternEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:191
-// [-2] void setVertexDataPattern(enum QSGGeometry::DataPattern)
+// [-2] void setVertexDataPattern(QSGGeometry::DataPattern)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGGeometry20setVertexDataPatternENS_11DataPatternE(void *this_, QSGGeometry::DataPattern p) {
   ((QSGGeometry*)this_)->setVertexDataPattern(p);

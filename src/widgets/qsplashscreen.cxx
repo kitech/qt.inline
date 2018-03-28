@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQSplashScreen : public QSplashScreen {
 public:
   virtual ~MyQSplashScreen() {}
-// void QSplashScreen(const class QPixmap &, Qt::WindowFlags)
+// void QSplashScreen(const QPixmap &, Qt::WindowFlags)
 MyQSplashScreen(const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScreen(pixmap, f) {}
-// void QSplashScreen(class QWidget *, const class QPixmap &, Qt::WindowFlags)
+// void QSplashScreen(QWidget *, const QPixmap &, Qt::WindowFlags)
 MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScreen(parent, pixmap, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void drawContents(class QPainter *)
+// void drawContents(QPainter *)
   virtual void drawContents(QPainter * painter) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"drawContents", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -61,7 +61,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:76
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QSplashScreen5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QSplashScreen*)this_)->QSplashScreen::event(e);
@@ -69,7 +69,7 @@ bool C_ZN13QSplashScreen5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:77
-// [-2] void drawContents(class QPainter *)
+// [-2] void drawContents(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSplashScreen12drawContentsEP8QPainter(void *this_, QPainter * painter) {
   ((QSplashScreen*)this_)->QSplashScreen::drawContents(painter);
@@ -77,7 +77,7 @@ void C_ZN13QSplashScreen12drawContentsEP8QPainter(void *this_, QPainter * painte
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:78
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QSplashScreen*)this_)->QSplashScreen::mousePressEvent(arg0);
@@ -93,7 +93,7 @@ void* C_ZNK13QSplashScreen10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:57
-// [-2] void QSplashScreen(const class QPixmap &, Qt::WindowFlags)
+// [-2] void QSplashScreen(const QPixmap &, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QPixmap* pixmap, QFlags<Qt::WindowType> f) {
   auto _nilp = (MyQSplashScreen*)(0);
@@ -102,7 +102,7 @@ void* C_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QPixmap* pixmap
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:58
-// [-2] void QSplashScreen(class QWidget *, const class QPixmap &, Qt::WindowFlags)
+// [-2] void QSplashScreen(QWidget *, const QPixmap &, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSplashScreenC2EP7QWidgetRK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QPixmap* pixmap, QFlags<Qt::WindowType> f) {
   auto _nilp = (MyQSplashScreen*)(0);
@@ -118,7 +118,7 @@ void C_ZN13QSplashScreenD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:61
-// [-2] void setPixmap(const class QPixmap &)
+// [-2] void setPixmap(const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSplashScreen9setPixmapERK7QPixmap(void *this_, QPixmap* pixmap) {
   ((QSplashScreen*)this_)->setPixmap(*pixmap);
@@ -135,7 +135,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:63
-// [-2] void finish(class QWidget *)
+// [-2] void finish(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSplashScreen6finishEP7QWidget(void *this_, QWidget * w) {
   ((QSplashScreen*)this_)->finish(w);
@@ -163,7 +163,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:68
-// [-2] void showMessage(const class QString &, int, const class QColor &)
+// [-2] void showMessage(const QString &, int, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSplashScreen11showMessageERK7QStringiRK6QColor(void *this_, QString* message, int alignment, QColor* color) {
   ((QSplashScreen*)this_)->showMessage(*message, alignment, *color);
@@ -179,7 +179,7 @@ void C_ZN13QSplashScreen12clearMessageEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:73
-// [-2] void messageChanged(const class QString &)
+// [-2] void messageChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSplashScreen14messageChangedERK7QString(void *this_, QString* message) {
   ((QSplashScreen*)this_)->messageChanged(*message);

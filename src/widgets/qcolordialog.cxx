@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQColorDialog : public QColorDialog {
 public:
   virtual ~MyQColorDialog() {}
-// void QColorDialog(class QWidget *)
+// void QColorDialog(QWidget *)
 MyQColorDialog(QWidget * parent) : QColorDialog(parent) {}
-// void QColorDialog(const class QColor &, class QWidget *)
+// void QColorDialog(const QColor &, QWidget *)
 MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -48,7 +48,7 @@ MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial,
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:109
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
   ((QColorDialog*)this_)->QColorDialog::changeEvent(event);
@@ -73,7 +73,7 @@ void* C_ZNK12QColorDialog10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qcolordialog.h:71
-// [-2] void QColorDialog(class QWidget *)
+// [-2] void QColorDialog(QWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QColorDialogC2EP7QWidget(QWidget * parent) {
@@ -85,7 +85,7 @@ void* C_ZN12QColorDialogC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qcolordialog.h:72
-// [-2] void QColorDialog(const class QColor &, class QWidget *)
+// [-2] void QColorDialog(const QColor &, QWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QColorDialogC2ERK6QColorP7QWidget(QColor* initial, QWidget * parent) {
@@ -103,7 +103,7 @@ void C_ZN12QColorDialogD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:75
-// [-2] void setCurrentColor(const class QColor &)
+// [-2] void setCurrentColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog15setCurrentColorERK6QColor(void *this_, QColor* color) {
   ((QColorDialog*)this_)->setCurrentColor(*color);
@@ -129,7 +129,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:80
-// [-2] void setOption(enum QColorDialog::ColorDialogOption, _Bool)
+// [-2] void setOption(QColorDialog::ColorDialogOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog9setOptionENS_17ColorDialogOptionEb(void *this_, QColorDialog::ColorDialogOption option, bool on) {
   ((QColorDialog*)this_)->setOption(option, on);
@@ -137,7 +137,7 @@ void C_ZN12QColorDialog9setOptionENS_17ColorDialogOptionEb(void *this_, QColorDi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:81
-// [1] bool testOption(enum QColorDialog::ColorDialogOption)
+// [1] bool testOption(QColorDialog::ColorDialogOption)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QColorDialog10testOptionENS_17ColorDialogOptionE(void *this_, QColorDialog::ColorDialogOption option) {
   return (bool)((QColorDialog*)this_)->testOption(option);
@@ -163,7 +163,7 @@ return new QColorDialog::ColorDialogOptions(rv);
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qcolordialog.h:86
-// [-2] void open(class QObject *, const char *)
+// [-2] void open(QObject *, const char *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
@@ -173,7 +173,7 @@ void C_ZN12QColorDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:88
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog10setVisibleEb(void *this_, bool visible) {
   ((QColorDialog*)this_)->setVisible(visible);
@@ -181,7 +181,7 @@ void C_ZN12QColorDialog10setVisibleEb(void *this_, bool visible) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:90
-// [16] QColor getColor(const class QColor &, class QWidget *, const class QString &, QColorDialog::ColorDialogOptions)
+// [16] QColor getColor(const QColor &, QWidget *, const QString &, QColorDialog::ColorDialogOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QColorDialog8getColorERK6QColorP7QWidgetRK7QString6QFlagsINS_17ColorDialogOptionEE(QColor* initial, QWidget * parent, QString* title, QFlags<QColorDialog::ColorDialogOption> options) {
   auto rv = QColorDialog::getColor(*initial, parent, *title, options);
@@ -190,7 +190,7 @@ return new QColor(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:96
-// [4] QRgb getRgba(QRgb, _Bool *, class QWidget *)
+// [4] QRgb getRgba(QRgb, bool *, QWidget *)
 extern "C" Q_DECL_EXPORT
 QRgb C_ZN12QColorDialog7getRgbaEjPbP7QWidget(QRgb rgba, bool * ok, QWidget * parent) {
   return (QRgb)QColorDialog::getRgba(rgba, ok, parent);
@@ -218,7 +218,7 @@ return new QColor(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:100
-// [-2] void setCustomColor(int, class QColor)
+// [-2] void setCustomColor(int, QColor)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog14setCustomColorEi6QColor(int index, QColor* color) {
   QColorDialog::setCustomColor(index, *color);
@@ -238,7 +238,7 @@ return new QColor(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:102
-// [-2] void setStandardColor(int, class QColor)
+// [-2] void setStandardColor(int, QColor)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog16setStandardColorEi6QColor(int index, QColor* color) {
   QColorDialog::setStandardColor(index, *color);
@@ -246,7 +246,7 @@ void C_ZN12QColorDialog16setStandardColorEi6QColor(int index, QColor* color) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:105
-// [-2] void currentColorChanged(const class QColor &)
+// [-2] void currentColorChanged(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog19currentColorChangedERK6QColor(void *this_, QColor* color) {
   ((QColorDialog*)this_)->currentColorChanged(*color);
@@ -254,7 +254,7 @@ void C_ZN12QColorDialog19currentColorChangedERK6QColor(void *this_, QColor* colo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolordialog.h:106
-// [-2] void colorSelected(const class QColor &)
+// [-2] void colorSelected(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QColorDialog13colorSelectedERK6QColor(void *this_, QColor* color) {
   ((QColorDialog*)this_)->colorSelected(*color);

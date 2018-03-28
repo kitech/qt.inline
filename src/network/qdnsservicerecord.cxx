@@ -30,7 +30,7 @@ void* C_ZN17QDnsServiceRecordC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:139
-// [8] QDnsServiceRecord & operator=(class QDnsServiceRecord &&)
+// [8] QDnsServiceRecord & operator=(QDnsServiceRecord &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDnsServiceRecordaSEOS_(void *this_, QDnsServiceRecord && other) {
   auto& rv = ((QDnsServiceRecord*)this_)->operator=(other);
@@ -39,7 +39,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:141
-// [8] QDnsServiceRecord & operator=(const class QDnsServiceRecord &)
+// [8] QDnsServiceRecord & operator=(const QDnsServiceRecord &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDnsServiceRecordaSERKS_(void *this_, QDnsServiceRecord* other) {
   auto& rv = ((QDnsServiceRecord*)this_)->operator=(*other);
@@ -55,7 +55,7 @@ void C_ZN17QDnsServiceRecordD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:144
-// [-2] void swap(class QDnsServiceRecord &)
+// [-2] void swap(QDnsServiceRecord &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDnsServiceRecord4swapERS_(void *this_, QDnsServiceRecord* other) {
   ((QDnsServiceRecord*)this_)->swap(*other);

@@ -52,7 +52,7 @@ void C_ZN9QColormapD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:68
-// [8] QColormap & operator=(const class QColormap &)
+// [8] QColormap & operator=(const QColormap &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QColormapaSERKS_(void *this_, QColormap* colormap) {
   auto& rv = ((QColormap*)this_)->operator=(*colormap);
@@ -85,7 +85,7 @@ int C_ZNK9QColormap4sizeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:75
-// [4] uint pixel(const class QColor &)
+// [4] uint pixel(const QColor &)
 extern "C" Q_DECL_EXPORT
 uint C_ZNK9QColormap5pixelERK6QColor(void *this_, QColor* color) {
   return (uint)((QColormap*)this_)->pixel(*color);

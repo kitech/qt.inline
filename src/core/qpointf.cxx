@@ -18,7 +18,7 @@ public:
   virtual ~MyQPointF() {}
 // void QPointF()
 MyQPointF() : QPointF() {}
-// void QPointF(const class QPoint &)
+// void QPointF(const QPoint &)
 MyQPointF(const QPoint & p) : QPointF(p) {}
 // void QPointF(qreal, qreal)
 MyQPointF(qreal xpos, qreal ypos) : QPointF(xpos, ypos) {}
@@ -34,7 +34,7 @@ void* C_ZN7QPointFC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:223
-// [-2] void QPointF(const class QPoint &)
+// [-2] void QPointF(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPointFC2ERK6QPoint(QPoint* p) {
   return  new QPointF(*p);
@@ -119,7 +119,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:238
-// [16] QPointF & operator+=(const class QPointF &)
+// [16] QPointF & operator+=(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPointFpLERKS_(void *this_, QPointF* p) {
   auto& rv = ((QPointF*)this_)->operator+=(*p);
@@ -128,7 +128,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:239
-// [16] QPointF & operator-=(const class QPointF &)
+// [16] QPointF & operator-=(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPointFmIERKS_(void *this_, QPointF* p) {
   auto& rv = ((QPointF*)this_)->operator-=(*p);
@@ -156,7 +156,7 @@ return &rv;
 // Public static inline Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtCore/qpoint.h:243
-// [8] qreal dotProduct(const class QPointF &, const class QPointF &)
+// [8] qreal dotProduct(const QPointF &, const QPointF &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 qreal C_ZN7QPointF10dotProductERKS_S1_(QPointF* p1, QPointF* p2) {

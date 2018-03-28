@@ -54,7 +54,7 @@ bool C_ZNK9QRunnable10autoDeleteEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:64
-// [-2] void setAutoDelete(_Bool)
+// [-2] void setAutoDelete(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QRunnable13setAutoDeleteEb(void *this_, bool _autoDelete) {
   ((QRunnable*)this_)->setAutoDelete(_autoDelete);

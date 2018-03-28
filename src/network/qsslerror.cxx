@@ -19,9 +19,9 @@ public:
   virtual ~MyQSslError() {}
 // void QSslError()
 MyQSslError() : QSslError() {}
-// void QSslError(enum QSslError::SslError)
+// void QSslError(QSslError::SslError)
 MyQSslError(QSslError::SslError error) : QSslError(error) {}
-// void QSslError(enum QSslError::SslError, const class QSslCertificate &)
+// void QSslError(QSslError::SslError, const QSslCertificate &)
 MyQSslError(QSslError::SslError error, const QSslCertificate & certificate) : QSslError(error, certificate) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN9QSslErrorC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:89
-// [-2] void QSslError(enum QSslError::SslError)
+// [-2] void QSslError(QSslError::SslError)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErrorC2ENS_8SslErrorE(QSslError::SslError error) {
   return  new QSslError(error);
@@ -43,7 +43,7 @@ void* C_ZN9QSslErrorC2ENS_8SslErrorE(QSslError::SslError error) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:90
-// [-2] void QSslError(enum QSslError::SslError, const class QSslCertificate &)
+// [-2] void QSslError(QSslError::SslError, const QSslCertificate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErrorC2ENS_8SslErrorERK15QSslCertificate(QSslError::SslError error, QSslCertificate* certificate) {
   return  new QSslError(error, *certificate);
@@ -52,7 +52,7 @@ void* C_ZN9QSslErrorC2ENS_8SslErrorERK15QSslCertificate(QSslError::SslError erro
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qsslerror.h:94
-// [-2] void swap(class QSslError &)
+// [-2] void swap(QSslError &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSslError4swapERS_(void *this_, QSslError* other) {
@@ -69,7 +69,7 @@ void C_ZN9QSslErrorD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:99
-// [8] QSslError & operator=(class QSslError &&)
+// [8] QSslError & operator=(QSslError &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErroraSEOS_(void *this_, QSslError && other) {
   auto& rv = ((QSslError*)this_)->operator=(other);
@@ -78,7 +78,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:101
-// [8] QSslError & operator=(const class QSslError &)
+// [8] QSslError & operator=(const QSslError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErroraSERKS_(void *this_, QSslError* other) {
   auto& rv = ((QSslError*)this_)->operator=(*other);
@@ -87,7 +87,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:102
-// [1] bool operator==(const class QSslError &)
+// [1] bool operator==(const QSslError &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSslErroreqERKS_(void *this_, QSslError* other) {
   return (bool)((QSslError*)this_)->operator==(*other);
@@ -95,7 +95,7 @@ bool C_ZNK9QSslErroreqERKS_(void *this_, QSslError* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:103
-// [1] bool operator!=(const class QSslError &)
+// [1] bool operator!=(const QSslError &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSslErrorneERKS_(void *this_, QSslError* other) {
   return (bool)((QSslError*)this_)->operator!=(*other);

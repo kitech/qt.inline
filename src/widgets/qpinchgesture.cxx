@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQPinchGesture : public QPinchGesture {
 public:
   virtual ~MyQPinchGesture() {}
-// void QPinchGesture(class QObject *)
+// void QPinchGesture(QObject *)
 MyQPinchGesture(QObject * parent) : QPinchGesture(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK13QPinchGesture10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:165
-// [-2] void QPinchGesture(class QObject *)
+// [-2] void QPinchGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QPinchGestureC2EP7QObject(QObject * parent) {
   return  new QPinchGesture(parent);
@@ -107,7 +107,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:177
-// [-2] void setStartCenterPoint(const class QPointF &)
+// [-2] void setStartCenterPoint(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QPinchGesture19setStartCenterPointERK7QPointF(void *this_, QPointF* value) {
   ((QPinchGesture*)this_)->setStartCenterPoint(*value);
@@ -115,7 +115,7 @@ void C_ZN13QPinchGesture19setStartCenterPointERK7QPointF(void *this_, QPointF* v
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:178
-// [-2] void setLastCenterPoint(const class QPointF &)
+// [-2] void setLastCenterPoint(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QPinchGesture18setLastCenterPointERK7QPointF(void *this_, QPointF* value) {
   ((QPinchGesture*)this_)->setLastCenterPoint(*value);
@@ -123,7 +123,7 @@ void C_ZN13QPinchGesture18setLastCenterPointERK7QPointF(void *this_, QPointF* va
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:179
-// [-2] void setCenterPoint(const class QPointF &)
+// [-2] void setCenterPoint(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QPinchGesture14setCenterPointERK7QPointF(void *this_, QPointF* value) {
   ((QPinchGesture*)this_)->setCenterPoint(*value);

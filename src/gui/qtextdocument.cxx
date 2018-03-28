@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQTextDocument : public QTextDocument {
 public:
   virtual ~MyQTextDocument() {}
-// void QTextDocument(class QObject *)
+// void QTextDocument(QObject *)
 MyQTextDocument(QObject * parent) : QTextDocument(parent) {}
-// void QTextDocument(const class QString &, class QObject *)
+// void QTextDocument(const QString &, QObject *)
 MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// QTextObject * createObject(const class QTextFormat &)
+// QTextObject * createObject(const QTextFormat &)
   virtual QTextObject * createObject(const QTextFormat & f) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"createObject", &handled, 1, (uint64_t)&f, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant loadResource(int, const class QUrl &)
+// QVariant loadResource(int, const QUrl &)
   virtual QVariant loadResource(int type_, const QUrl & name) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"loadResource", &handled, 2, (uint64_t)type_, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -50,7 +50,7 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:292
-// [8] QTextObject * createObject(const class QTextFormat &)
+// [8] QTextObject * createObject(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextDocument12createObjectERK11QTextFormat(void *this_, QTextFormat* f) {
   return (void*)((QTextDocument*)this_)->QTextDocument::createObject(*f);
@@ -58,7 +58,7 @@ void* C_ZN13QTextDocument12createObjectERK11QTextFormat(void *this_, QTextFormat
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:293
-// [16] QVariant loadResource(int, const class QUrl &)
+// [16] QVariant loadResource(int, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextDocument12loadResourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
   auto rv = ((QTextDocument*)this_)->QTextDocument::loadResource(type_, *name);
@@ -75,7 +75,7 @@ void* C_ZNK13QTextDocument10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:119
-// [-2] void QTextDocument(class QObject *)
+// [-2] void QTextDocument(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextDocumentC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTextDocument*)(0);
@@ -84,7 +84,7 @@ void* C_ZN13QTextDocumentC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:120
-// [-2] void QTextDocument(const class QString &, class QObject *)
+// [-2] void QTextDocument(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextDocumentC2ERK7QStringP7QObject(QString* text, QObject * parent) {
   auto _nilp = (MyQTextDocument*)(0);
@@ -100,7 +100,7 @@ void C_ZN13QTextDocumentD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:123
-// [8] QTextDocument * clone(class QObject *)
+// [8] QTextDocument * clone(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument5cloneEP7QObject(void *this_, QObject * parent) {
   return (void*)((QTextDocument*)this_)->clone(parent);
@@ -124,7 +124,7 @@ void C_ZN13QTextDocument5clearEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:128
-// [-2] void setUndoRedoEnabled(_Bool)
+// [-2] void setUndoRedoEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument18setUndoRedoEnabledEb(void *this_, bool enable) {
   ((QTextDocument*)this_)->setUndoRedoEnabled(enable);
@@ -189,7 +189,7 @@ int C_ZNK13QTextDocument8revisionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:139
-// [-2] void setDocumentLayout(class QAbstractTextDocumentLayout *)
+// [-2] void setDocumentLayout(QAbstractTextDocumentLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument17setDocumentLayoutEP27QAbstractTextDocumentLayout(void *this_, QAbstractTextDocumentLayout * layout) {
   ((QTextDocument*)this_)->setDocumentLayout(layout);
@@ -205,7 +205,7 @@ void* C_ZNK13QTextDocument14documentLayoutEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:146
-// [-2] void setMetaInformation(enum QTextDocument::MetaInformation, const class QString &)
+// [-2] void setMetaInformation(QTextDocument::MetaInformation, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument18setMetaInformationENS_15MetaInformationERK7QString(void *this_, QTextDocument::MetaInformation info, QString* arg1) {
   ((QTextDocument*)this_)->setMetaInformation(info, *arg1);
@@ -213,7 +213,7 @@ void C_ZN13QTextDocument18setMetaInformationENS_15MetaInformationERK7QString(voi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:147
-// [8] QString metaInformation(enum QTextDocument::MetaInformation)
+// [8] QString metaInformation(QTextDocument::MetaInformation)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument15metaInformationENS_15MetaInformationE(void *this_, QTextDocument::MetaInformation info) {
   auto rv = ((QTextDocument*)this_)->metaInformation(info);
@@ -222,7 +222,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:150
-// [8] QString toHtml(const class QByteArray &)
+// [8] QString toHtml(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument6toHtmlERK10QByteArray(void *this_, QByteArray* encoding) {
   auto rv = ((QTextDocument*)this_)->toHtml(*encoding);
@@ -231,7 +231,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:151
-// [-2] void setHtml(const class QString &)
+// [-2] void setHtml(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument7setHtmlERK7QString(void *this_, QString* html) {
   ((QTextDocument*)this_)->setHtml(*html);
@@ -260,7 +260,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:156
-// [-2] void setPlainText(const class QString &)
+// [-2] void setPlainText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument12setPlainTextERK7QString(void *this_, QString* text) {
   ((QTextDocument*)this_)->setPlainText(*text);
@@ -280,7 +280,7 @@ return new QChar(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:168
-// [8] QTextCursor find(const class QString &, int, QTextDocument::FindFlags)
+// [8] QTextCursor find(const QString &, int, QTextDocument::FindFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK7QStringi6QFlagsINS_8FindFlagEE(void *this_, QString* subString, int from, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*subString, from, options);
@@ -289,7 +289,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:169
-// [8] QTextCursor find(const class QString &, const class QTextCursor &, QTextDocument::FindFlags)
+// [8] QTextCursor find(const QString &, const QTextCursor &, QTextDocument::FindFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK7QStringRK11QTextCursor6QFlagsINS_8FindFlagEE(void *this_, QString* subString, QTextCursor* cursor, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*subString, *cursor, options);
@@ -298,7 +298,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:172
-// [8] QTextCursor find(const class QRegExp &, int, QTextDocument::FindFlags)
+// [8] QTextCursor find(const QRegExp &, int, QTextDocument::FindFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK7QRegExpi6QFlagsINS_8FindFlagEE(void *this_, QRegExp* expr, int from, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*expr, from, options);
@@ -307,7 +307,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:173
-// [8] QTextCursor find(const class QRegExp &, const class QTextCursor &, QTextDocument::FindFlags)
+// [8] QTextCursor find(const QRegExp &, const QTextCursor &, QTextDocument::FindFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK7QRegExpRK11QTextCursor6QFlagsINS_8FindFlagEE(void *this_, QRegExp* expr, QTextCursor* cursor, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*expr, *cursor, options);
@@ -316,7 +316,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:177
-// [8] QTextCursor find(const class QRegularExpression &, int, QTextDocument::FindFlags)
+// [8] QTextCursor find(const QRegularExpression &, int, QTextDocument::FindFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK18QRegularExpressioni6QFlagsINS_8FindFlagEE(void *this_, QRegularExpression* expr, int from, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*expr, from, options);
@@ -325,7 +325,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:178
-// [8] QTextCursor find(const class QRegularExpression &, const class QTextCursor &, QTextDocument::FindFlags)
+// [8] QTextCursor find(const QRegularExpression &, const QTextCursor &, QTextDocument::FindFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK18QRegularExpressionRK11QTextCursor6QFlagsINS_8FindFlagEE(void *this_, QRegularExpression* expr, QTextCursor* cursor, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*expr, *cursor, options);
@@ -358,7 +358,7 @@ void* C_ZNK13QTextDocument6objectEi(void *this_, int objectIndex) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:185
-// [8] QTextObject * objectForFormat(const class QTextFormat &)
+// [8] QTextObject * objectForFormat(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument15objectForFormatERK11QTextFormat(void *this_, QTextFormat* arg0) {
   return (void*)((QTextDocument*)this_)->objectForFormat(*arg0);
@@ -441,7 +441,7 @@ return new QTextBlock(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:196
-// [-2] void setPageSize(const class QSizeF &)
+// [-2] void setPageSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument11setPageSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QTextDocument*)this_)->setPageSize(*size);
@@ -458,7 +458,7 @@ return new QSizeF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:199
-// [-2] void setDefaultFont(const class QFont &)
+// [-2] void setDefaultFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument14setDefaultFontERK5QFont(void *this_, QFont* font) {
   ((QTextDocument*)this_)->setDefaultFont(*font);
@@ -491,7 +491,7 @@ bool C_ZNK13QTextDocument10isModifiedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:206
-// [-2] void print(class QPagedPaintDevice *)
+// [-2] void print(QPagedPaintDevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK13QTextDocument5printEP17QPagedPaintDevice(void *this_, QPagedPaintDevice * printer) {
   ((QTextDocument*)this_)->print(printer);
@@ -499,7 +499,7 @@ void C_ZNK13QTextDocument5printEP17QPagedPaintDevice(void *this_, QPagedPaintDev
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:216
-// [16] QVariant resource(int, const class QUrl &)
+// [16] QVariant resource(int, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument8resourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
   auto rv = ((QTextDocument*)this_)->resource(type_, *name);
@@ -508,7 +508,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:217
-// [-2] void addResource(int, const class QUrl &, const class QVariant &)
+// [-2] void addResource(int, const QUrl &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument11addResourceEiRK4QUrlRK8QVariant(void *this_, int type_, QUrl* name, QVariant* resource) {
   ((QTextDocument*)this_)->addResource(type_, *name, *resource);
@@ -524,7 +524,7 @@ void C_ZN13QTextDocument17markContentsDirtyEii(void *this_, int from, int length
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:223
-// [-2] void setUseDesignMetrics(_Bool)
+// [-2] void setUseDesignMetrics(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument19setUseDesignMetricsEb(void *this_, bool b) {
   ((QTextDocument*)this_)->setUseDesignMetrics(b);
@@ -541,7 +541,7 @@ bool C_ZNK13QTextDocument16useDesignMetricsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:226
-// [-2] void drawContents(class QPainter *, const class QRectF &)
+// [-2] void drawContents(QPainter *, const QRectF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument12drawContentsEP8QPainterRK6QRectF(void *this_, QPainter * painter, QRectF* rect) {
@@ -663,7 +663,7 @@ int C_ZNK13QTextDocument14characterCountEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:247
-// [-2] void setDefaultStyleSheet(const class QString &)
+// [-2] void setDefaultStyleSheet(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument20setDefaultStyleSheetERK7QString(void *this_, QString* sheet) {
   ((QTextDocument*)this_)->setDefaultStyleSheet(*sheet);
@@ -681,7 +681,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:251
-// [-2] void undo(class QTextCursor *)
+// [-2] void undo(QTextCursor *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument4undoEP11QTextCursor(void *this_, QTextCursor * cursor) {
@@ -692,7 +692,7 @@ void C_ZN13QTextDocument4undoEP11QTextCursor(void *this_, QTextCursor * cursor) 
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextdocument.h:252
-// [-2] void redo(class QTextCursor *)
+// [-2] void redo(QTextCursor *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument4redoEP11QTextCursor(void *this_, QTextCursor * cursor) {
@@ -702,7 +702,7 @@ void C_ZN13QTextDocument4redoEP11QTextCursor(void *this_, QTextCursor * cursor) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:259
-// [-2] void clearUndoRedoStacks(enum QTextDocument::Stacks)
+// [-2] void clearUndoRedoStacks(QTextDocument::Stacks)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument19clearUndoRedoStacksENS_6StacksE(void *this_, QTextDocument::Stacks historyToClear) {
   ((QTextDocument*)this_)->clearUndoRedoStacks(historyToClear);
@@ -739,7 +739,7 @@ return new QTextOption(rv);
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtGui/qtextdocument.h:265
-// [-2] void setDefaultTextOption(const class QTextOption &)
+// [-2] void setDefaultTextOption(const QTextOption &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument20setDefaultTextOptionERK11QTextOption(void *this_, QTextOption* option) {
@@ -758,7 +758,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:268
-// [-2] void setBaseUrl(const class QUrl &)
+// [-2] void setBaseUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument10setBaseUrlERK4QUrl(void *this_, QUrl* url) {
   ((QTextDocument*)this_)->setBaseUrl(*url);
@@ -804,7 +804,7 @@ void C_ZN13QTextDocument15contentsChangedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:276
-// [-2] void undoAvailable(_Bool)
+// [-2] void undoAvailable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument13undoAvailableEb(void *this_, bool arg0) {
   ((QTextDocument*)this_)->undoAvailable(arg0);
@@ -812,7 +812,7 @@ void C_ZN13QTextDocument13undoAvailableEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:277
-// [-2] void redoAvailable(_Bool)
+// [-2] void redoAvailable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument13redoAvailableEb(void *this_, bool arg0) {
   ((QTextDocument*)this_)->redoAvailable(arg0);
@@ -831,7 +831,7 @@ void C_ZN13QTextDocument16undoCommandAddedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:279
-// [-2] void modificationChanged(_Bool)
+// [-2] void modificationChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument19modificationChangedEb(void *this_, bool m) {
   ((QTextDocument*)this_)->modificationChanged(m);
@@ -839,7 +839,7 @@ void C_ZN13QTextDocument19modificationChangedEb(void *this_, bool m) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:280
-// [-2] void cursorPositionChanged(const class QTextCursor &)
+// [-2] void cursorPositionChanged(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument21cursorPositionChangedERK11QTextCursor(void *this_, QTextCursor* cursor) {
   ((QTextDocument*)this_)->cursorPositionChanged(*cursor);
@@ -858,7 +858,7 @@ void C_ZN13QTextDocument17blockCountChangedEi(void *this_, int newBlockCount) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:282
-// [-2] void baseUrlChanged(const class QUrl &)
+// [-2] void baseUrlChanged(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument14baseUrlChangedERK4QUrl(void *this_, QUrl* url) {
   ((QTextDocument*)this_)->baseUrlChanged(*url);
@@ -893,7 +893,7 @@ void C_ZN13QTextDocument4redoEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:288
-// [-2] void appendUndoItem(class QAbstractUndoItem *)
+// [-2] void appendUndoItem(QAbstractUndoItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument14appendUndoItemEP17QAbstractUndoItem(void *this_, QAbstractUndoItem * arg0) {
   ((QTextDocument*)this_)->appendUndoItem(arg0);
@@ -901,7 +901,7 @@ void C_ZN13QTextDocument14appendUndoItemEP17QAbstractUndoItem(void *this_, QAbst
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:289
-// [-2] void setModified(_Bool)
+// [-2] void setModified(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument11setModifiedEb(void *this_, bool m) {
   ((QTextDocument*)this_)->setModified(m);

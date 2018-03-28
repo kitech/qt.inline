@@ -18,11 +18,11 @@ public:
   virtual ~MyQTemporaryFile() {}
 // void QTemporaryFile()
 MyQTemporaryFile() : QTemporaryFile() {}
-// void QTemporaryFile(const class QString &)
+// void QTemporaryFile(const QString &)
 MyQTemporaryFile(const QString & templateName) : QTemporaryFile(templateName) {}
-// void QTemporaryFile(class QObject *)
+// void QTemporaryFile(QObject *)
 MyQTemporaryFile(QObject * parent) : QTemporaryFile(parent) {}
-// void QTemporaryFile(const class QString &, class QObject *)
+// void QTemporaryFile(const QString &, QObject *)
 MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFile(templateName, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // bool open(QIODevice::OpenMode)
@@ -66,7 +66,7 @@ void* C_ZN14QTemporaryFileC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:67
-// [-2] void QTemporaryFile(const class QString &)
+// [-2] void QTemporaryFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFileC2ERK7QString(QString* templateName) {
   auto _nilp = (MyQTemporaryFile*)(0);
@@ -75,7 +75,7 @@ void* C_ZN14QTemporaryFileC2ERK7QString(QString* templateName) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:69
-// [-2] void QTemporaryFile(class QObject *)
+// [-2] void QTemporaryFile(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFileC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTemporaryFile*)(0);
@@ -84,7 +84,7 @@ void* C_ZN14QTemporaryFileC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:70
-// [-2] void QTemporaryFile(const class QString &, class QObject *)
+// [-2] void QTemporaryFile(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFileC2ERK7QStringP7QObject(QString* templateName, QObject * parent) {
   auto _nilp = (MyQTemporaryFile*)(0);
@@ -108,7 +108,7 @@ bool C_ZNK14QTemporaryFile10autoRemoveEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:75
-// [-2] void setAutoRemove(_Bool)
+// [-2] void setAutoRemove(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QTemporaryFile13setAutoRemoveEb(void *this_, bool b) {
   ((QTemporaryFile*)this_)->setAutoRemove(b);
@@ -142,7 +142,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:82
-// [-2] void setFileTemplate(const class QString &)
+// [-2] void setFileTemplate(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QTemporaryFile15setFileTemplateERK7QString(void *this_, QString* name) {
   ((QTemporaryFile*)this_)->setFileTemplate(*name);
@@ -150,7 +150,7 @@ void C_ZN14QTemporaryFile15setFileTemplateERK7QString(void *this_, QString* name
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:85
-// [1] bool rename(const class QString &)
+// [1] bool rename(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QTemporaryFile6renameERK7QString(void *this_, QString* newName) {
   return (bool)((QTemporaryFile*)this_)->rename(*newName);
@@ -158,7 +158,7 @@ bool C_ZN14QTemporaryFile6renameERK7QString(void *this_, QString* newName) {
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:88
-// [8] QTemporaryFile * createLocalFile(const class QString &)
+// [8] QTemporaryFile * createLocalFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile15createLocalFileERK7QString(QString* fileName) {
   return (void*)QTemporaryFile::createLocalFile(*fileName);
@@ -166,7 +166,7 @@ void* C_ZN14QTemporaryFile15createLocalFileERK7QString(QString* fileName) {
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:90
-// [8] QTemporaryFile * createLocalFile(class QFile &)
+// [8] QTemporaryFile * createLocalFile(QFile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile15createLocalFileER5QFile(QFile* file) {
   return (void*)QTemporaryFile::createLocalFile(*file);
@@ -174,7 +174,7 @@ void* C_ZN14QTemporaryFile15createLocalFileER5QFile(QFile* file) {
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:93
-// [8] QTemporaryFile * createNativeFile(const class QString &)
+// [8] QTemporaryFile * createNativeFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile16createNativeFileERK7QString(QString* fileName) {
   return (void*)QTemporaryFile::createNativeFile(*fileName);
@@ -182,7 +182,7 @@ void* C_ZN14QTemporaryFile16createNativeFileERK7QString(QString* fileName) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:95
-// [8] QTemporaryFile * createNativeFile(class QFile &)
+// [8] QTemporaryFile * createNativeFile(QFile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile16createNativeFileER5QFile(QFile* file) {
   return (void*)QTemporaryFile::createNativeFile(*file);

@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQTimeLine : public QTimeLine {
 public:
   virtual ~MyQTimeLine() {}
-// void QTimeLine(int, class QObject *)
+// void QTimeLine(int, QObject *)
 MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:130
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeLine10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
   ((QTimeLine*)this_)->QTimeLine::timerEvent(event);
@@ -51,7 +51,7 @@ void* C_ZNK9QTimeLine10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:79
-// [-2] void QTimeLine(int, class QObject *)
+// [-2] void QTimeLine(int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeLineC2EiP7QObject(int duration, QObject * parent) {
   auto _nilp = (MyQTimeLine*)(0);
@@ -99,7 +99,7 @@ QTimeLine::Direction C_ZNK9QTimeLine9directionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:88
-// [-2] void setDirection(enum QTimeLine::Direction)
+// [-2] void setDirection(QTimeLine::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeLine12setDirectionENS_9DirectionE(void *this_, QTimeLine::Direction direction) {
   ((QTimeLine*)this_)->setDirection(direction);
@@ -187,7 +187,7 @@ QTimeLine::CurveShape C_ZNK9QTimeLine10curveShapeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:103
-// [-2] void setCurveShape(enum QTimeLine::CurveShape)
+// [-2] void setCurveShape(QTimeLine::CurveShape)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeLine13setCurveShapeENS_10CurveShapeE(void *this_, QTimeLine::CurveShape shape) {
   ((QTimeLine*)this_)->setCurveShape(shape);
@@ -204,7 +204,7 @@ return new QEasingCurve(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:106
-// [-2] void setEasingCurve(const class QEasingCurve &)
+// [-2] void setEasingCurve(const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeLine14setEasingCurveERK12QEasingCurve(void *this_, QEasingCurve* curve) {
   ((QTimeLine*)this_)->setEasingCurve(*curve);
@@ -276,7 +276,7 @@ void C_ZN9QTimeLine4stopEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:119
-// [-2] void setPaused(_Bool)
+// [-2] void setPaused(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeLine9setPausedEb(void *this_, bool paused) {
   ((QTimeLine*)this_)->setPaused(paused);

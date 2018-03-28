@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQGraphicsGridLayout : public QGraphicsGridLayout {
 public:
   virtual ~MyQGraphicsGridLayout() {}
-// void QGraphicsGridLayout(class QGraphicsLayoutItem *)
+// void QGraphicsGridLayout(QGraphicsLayoutItem *)
 MyQGraphicsGridLayout(QGraphicsLayoutItem * parent) : QGraphicsGridLayout(parent) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:56
-// [-2] void QGraphicsGridLayout(class QGraphicsLayoutItem *)
+// [-2] void QGraphicsGridLayout(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsGridLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
   return  new QGraphicsGridLayout(parent);
@@ -38,7 +38,7 @@ void C_ZN19QGraphicsGridLayoutD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:59
-// [-2] void addItem(class QGraphicsLayoutItem *, int, int, int, int, Qt::Alignment)
+// [-2] void addItem(QGraphicsLayoutItem *, int, int, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsGridLayout7addItemEP19QGraphicsLayoutItemiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> alignment) {
   ((QGraphicsGridLayout*)this_)->addItem(item, row, column, rowSpan, columnSpan, alignment);
@@ -46,7 +46,7 @@ void C_ZN19QGraphicsGridLayout7addItemEP19QGraphicsLayoutItemiiii6QFlagsIN2Qt13A
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:61
-// [-2] void addItem(class QGraphicsLayoutItem *, int, int, Qt::Alignment)
+// [-2] void addItem(QGraphicsLayoutItem *, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsGridLayout7addItemEP19QGraphicsLayoutItemii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, int row, int column, QFlags<Qt::AlignmentFlag> alignment) {
   ((QGraphicsGridLayout*)this_)->addItem(item, row, column, alignment);
@@ -302,7 +302,7 @@ Qt::Alignment C_ZNK19QGraphicsGridLayout15columnAlignmentEi(void *this_, int col
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:100
-// [-2] void setAlignment(class QGraphicsLayoutItem *, Qt::Alignment)
+// [-2] void setAlignment(QGraphicsLayoutItem *, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsGridLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, QFlags<Qt::AlignmentFlag> alignment) {
   ((QGraphicsGridLayout*)this_)->setAlignment(item, alignment);
@@ -310,7 +310,7 @@ void C_ZN19QGraphicsGridLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt1
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:101
-// [4] Qt::Alignment alignment(class QGraphicsLayoutItem *)
+// [4] Qt::Alignment alignment(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 Qt::Alignment C_ZNK19QGraphicsGridLayout9alignmentEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   return (Qt::Alignment)((QGraphicsGridLayout*)this_)->alignment(item);
@@ -366,7 +366,7 @@ void C_ZN19QGraphicsGridLayout8removeAtEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:112
-// [-2] void removeItem(class QGraphicsLayoutItem *)
+// [-2] void removeItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsGridLayout10removeItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   ((QGraphicsGridLayout*)this_)->removeItem(item);
@@ -382,7 +382,7 @@ void C_ZN19QGraphicsGridLayout10invalidateEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:117
-// [-2] void setGeometry(const class QRectF &)
+// [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsGridLayout11setGeometryERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsGridLayout*)this_)->setGeometry(*rect);
@@ -390,7 +390,7 @@ void C_ZN19QGraphicsGridLayout11setGeometryERK6QRectF(void *this_, QRectF* rect)
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:118
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsGridLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
   auto rv = ((QGraphicsGridLayout*)this_)->sizeHint(which, *constraint);

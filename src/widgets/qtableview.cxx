@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQTableView : public QTableView {
 public:
   virtual ~MyQTableView() {}
-// void QTableView(class QWidget *)
+// void QTableView(QWidget *)
 MyQTableView(QWidget * parent) : QTableView(parent) {}
 // Protected Visibility=Default Availability=Available
 // void rowMoved(int, int, int)
@@ -116,7 +116,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -128,7 +128,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -166,7 +166,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+// QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -179,7 +179,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
+// void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -191,7 +191,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QRegion visualRegionForSelection(const class QItemSelection &)
+// QRegion visualRegionForSelection(const QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -292,7 +292,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool isIndexHidden(const class QModelIndex &)
+// bool isIndexHidden(const QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -305,7 +305,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void selectionChanged(const class QItemSelection &, const class QItemSelection &)
+// void selectionChanged(const QItemSelection &, const QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -317,7 +317,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void currentChanged(const class QModelIndex &, const class QModelIndex &)
+// void currentChanged(const QModelIndex &, const QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -397,7 +397,7 @@ return new QStyleOptionViewItem(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:150
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
   ((QTableView*)this_)->QTableView::paintEvent(e);
@@ -405,7 +405,7 @@ void C_ZN10QTableView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:152
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
   ((QTableView*)this_)->QTableView::timerEvent(event);
@@ -429,7 +429,7 @@ int C_ZNK10QTableView14verticalOffsetEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:156
-// [24] QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+// [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTableView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
   auto rv = ((QTableView*)this_)->QTableView::moveCursor(cursorAction, modifiers);
@@ -438,7 +438,7 @@ return new QModelIndex(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:158
-// [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
+// [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QRect* rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QTableView*)this_)->QTableView::setSelection(*rect, command);
@@ -446,7 +446,7 @@ void C_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13Sele
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:159
-// [8] QRegion visualRegionForSelection(const class QItemSelection &)
+// [8] QRegion visualRegionForSelection(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection(void *this_, QItemSelection* selection) {
   auto rv = ((QTableView*)this_)->QTableView::visualRegionForSelection(*selection);
@@ -513,7 +513,7 @@ void C_ZN10QTableView25horizontalScrollbarActionEi(void *this_, int action) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:172
-// [1] bool isIndexHidden(const class QModelIndex &)
+// [1] bool isIndexHidden(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTableView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QTableView*)this_)->QTableView::isIndexHidden(*index);
@@ -521,7 +521,7 @@ bool C_ZNK10QTableView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:174
-// [-2] void selectionChanged(const class QItemSelection &, const class QItemSelection &)
+// [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSelection* selected, QItemSelection* deselected) {
   ((QTableView*)this_)->QTableView::selectionChanged(*selected, *deselected);
@@ -529,7 +529,7 @@ void C_ZN10QTableView16selectionChangedERK14QItemSelectionS2_(void *this_, QItem
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:176
-// [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
+// [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
   ((QTableView*)this_)->QTableView::currentChanged(*current, *previous);
@@ -545,7 +545,7 @@ void* C_ZNK10QTableView10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:65
-// [-2] void QTableView(class QWidget *)
+// [-2] void QTableView(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTableViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQTableView*)(0);
@@ -561,7 +561,7 @@ void C_ZN10QTableViewD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:68
-// [-2] void setModel(class QAbstractItemModel *)
+// [-2] void setModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
   ((QTableView*)this_)->setModel(model);
@@ -569,7 +569,7 @@ void C_ZN10QTableView8setModelEP18QAbstractItemModel(void *this_, QAbstractItemM
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:69
-// [-2] void setRootIndex(const class QModelIndex &)
+// [-2] void setRootIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QTableView*)this_)->setRootIndex(*index);
@@ -577,7 +577,7 @@ void C_ZN10QTableView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* in
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:70
-// [-2] void setSelectionModel(class QItemSelectionModel *)
+// [-2] void setSelectionModel(QItemSelectionModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView17setSelectionModelEP19QItemSelectionModel(void *this_, QItemSelectionModel * selectionModel) {
   ((QTableView*)this_)->setSelectionModel(selectionModel);
@@ -609,7 +609,7 @@ void* C_ZNK10QTableView14verticalHeaderEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:75
-// [-2] void setHorizontalHeader(class QHeaderView *)
+// [-2] void setHorizontalHeader(QHeaderView *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView19setHorizontalHeaderEP11QHeaderView(void *this_, QHeaderView * header) {
   ((QTableView*)this_)->setHorizontalHeader(header);
@@ -617,7 +617,7 @@ void C_ZN10QTableView19setHorizontalHeaderEP11QHeaderView(void *this_, QHeaderVi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:76
-// [-2] void setVerticalHeader(class QHeaderView *)
+// [-2] void setVerticalHeader(QHeaderView *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView17setVerticalHeaderEP11QHeaderView(void *this_, QHeaderView * header) {
   ((QTableView*)this_)->setVerticalHeader(header);
@@ -703,7 +703,7 @@ bool C_ZNK10QTableView11isRowHiddenEi(void *this_, int row) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:91
-// [-2] void setRowHidden(int, _Bool)
+// [-2] void setRowHidden(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView12setRowHiddenEib(void *this_, int row, bool hide) {
   ((QTableView*)this_)->setRowHidden(row, hide);
@@ -719,7 +719,7 @@ bool C_ZNK10QTableView14isColumnHiddenEi(void *this_, int column) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:94
-// [-2] void setColumnHidden(int, _Bool)
+// [-2] void setColumnHidden(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView15setColumnHiddenEib(void *this_, int column, bool hide) {
   ((QTableView*)this_)->setColumnHidden(column, hide);
@@ -727,7 +727,7 @@ void C_ZN10QTableView15setColumnHiddenEib(void *this_, int column, bool hide) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:96
-// [-2] void setSortingEnabled(_Bool)
+// [-2] void setSortingEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView17setSortingEnabledEb(void *this_, bool enable) {
   ((QTableView*)this_)->setSortingEnabled(enable);
@@ -767,7 +767,7 @@ void C_ZN10QTableView12setGridStyleEN2Qt8PenStyleE(void *this_, Qt::PenStyle sty
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:104
-// [-2] void setWordWrap(_Bool)
+// [-2] void setWordWrap(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView11setWordWrapEb(void *this_, bool on) {
   ((QTableView*)this_)->setWordWrap(on);
@@ -783,7 +783,7 @@ bool C_ZNK10QTableView8wordWrapEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:108
-// [-2] void setCornerButtonEnabled(_Bool)
+// [-2] void setCornerButtonEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView22setCornerButtonEnabledEb(void *this_, bool enable) {
   ((QTableView*)this_)->setCornerButtonEnabled(enable);
@@ -799,7 +799,7 @@ bool C_ZNK10QTableView21isCornerButtonEnabledEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:112
-// [16] QRect visualRect(const class QModelIndex &)
+// [16] QRect visualRect(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTableView10visualRectERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QTableView*)this_)->visualRect(*index);
@@ -808,7 +808,7 @@ return new QRect(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:113
-// [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
+// [-2] void scrollTo(const QModelIndex &, QAbstractItemView::ScrollHint)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, QModelIndex* index, QAbstractItemView::ScrollHint hint) {
   ((QTableView*)this_)->scrollTo(*index, hint);
@@ -816,7 +816,7 @@ void C_ZN10QTableView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:114
-// [24] QModelIndex indexAt(const class QPoint &)
+// [24] QModelIndex indexAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTableView7indexAtERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QTableView*)this_)->indexAt(*p);
@@ -968,7 +968,7 @@ void C_ZN10QTableView12sortByColumnEi(void *this_, int column) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:135
-// [-2] void setShowGrid(_Bool)
+// [-2] void setShowGrid(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTableView11setShowGridEb(void *this_, bool show) {
   ((QTableView*)this_)->setShowGrid(show);

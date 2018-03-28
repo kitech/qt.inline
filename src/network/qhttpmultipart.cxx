@@ -17,9 +17,9 @@
 class Q_DECL_EXPORT MyQHttpMultiPart : public QHttpMultiPart {
 public:
   virtual ~MyQHttpMultiPart() {}
-// void QHttpMultiPart(class QObject *)
+// void QHttpMultiPart(QObject *)
 MyQHttpMultiPart(QObject * parent) : QHttpMultiPart(parent) {}
-// void QHttpMultiPart(enum QHttpMultiPart::ContentType, class QObject *)
+// void QHttpMultiPart(QHttpMultiPart::ContentType, QObject *)
 MyQHttpMultiPart(QHttpMultiPart::ContentType contentType, QObject * parent) : QHttpMultiPart(contentType, parent) {}
 };
 
@@ -33,7 +33,7 @@ void* C_ZNK14QHttpMultiPart10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:101
-// [-2] void QHttpMultiPart(class QObject *)
+// [-2] void QHttpMultiPart(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
   return  new QHttpMultiPart(parent);
@@ -41,7 +41,7 @@ void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:102
-// [-2] void QHttpMultiPart(enum QHttpMultiPart::ContentType, class QObject *)
+// [-2] void QHttpMultiPart(QHttpMultiPart::ContentType, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject(QHttpMultiPart::ContentType contentType, QObject * parent) {
   return  new QHttpMultiPart(contentType, parent);
@@ -56,7 +56,7 @@ void C_ZN14QHttpMultiPartD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:107
-// [-2] void setContentType(enum QHttpMultiPart::ContentType)
+// [-2] void setContentType(QHttpMultiPart::ContentType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QHttpMultiPart14setContentTypeENS_11ContentTypeE(void *this_, QHttpMultiPart::ContentType contentType) {
   ((QHttpMultiPart*)this_)->setContentType(contentType);
@@ -73,7 +73,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:110
-// [-2] void setBoundary(const class QByteArray &)
+// [-2] void setBoundary(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QHttpMultiPart11setBoundaryERK10QByteArray(void *this_, QByteArray* boundary) {
   ((QHttpMultiPart*)this_)->setBoundary(*boundary);

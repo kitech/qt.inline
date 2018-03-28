@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
   virtual ~MyQFutureWatcherBase() {}
-// void QFutureWatcherBase(class QObject *)
+// void QFutureWatcherBase(QObject *)
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void connectNotify(const class QMetaMethod &)
+// void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void disconnectNotify(const class QMetaMethod &)
+// void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void disconnectOutputInterface(_Bool)
+// void disconnectOutputInterface(bool)
   virtual void disconnectOutputInterface(bool pendingAssignment) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectOutputInterface", &handled, 1, (uint64_t)pendingAssignment, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -70,7 +70,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:101
-// [-2] void connectNotify(const class QMetaMethod &)
+// [-2] void connectNotify(const QMetaMethod &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::connectNotify(*signal);
@@ -78,7 +78,7 @@ void C_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void *this_, QMetaM
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:102
-// [-2] void disconnectNotify(const class QMetaMethod &)
+// [-2] void disconnectNotify(const QMetaMethod &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::disconnectNotify(*signal);
@@ -94,7 +94,7 @@ void C_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void *this_) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:106
-// [-2] void disconnectOutputInterface(_Bool)
+// [-2] void disconnectOutputInterface(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void *this_, bool pendingAssignment) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
@@ -110,7 +110,7 @@ void* C_ZNK18QFutureWatcherBase10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:61
-// [-2] void QFutureWatcherBase(class QObject *)
+// [-2] void QFutureWatcherBase(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQFutureWatcherBase*)(0);
@@ -208,7 +208,7 @@ void C_ZN18QFutureWatcherBase22setPendingResultsLimitEi(void *this_, int limit) 
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:79
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QFutureWatcherBase5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QFutureWatcherBase*)this_)->event(event);
@@ -288,7 +288,7 @@ void C_ZN18QFutureWatcherBase20progressValueChangedEi(void *this_, int progressV
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:91
-// [-2] void progressTextChanged(const class QString &)
+// [-2] void progressTextChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase19progressTextChangedERK7QString(void *this_, QString* progressText) {
   ((QFutureWatcherBase*)this_)->progressTextChanged(*progressText);
@@ -304,7 +304,7 @@ void C_ZN18QFutureWatcherBase6cancelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:95
-// [-2] void setPaused(_Bool)
+// [-2] void setPaused(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase9setPausedEb(void *this_, bool paused) {
   ((QFutureWatcherBase*)this_)->setPaused(paused);

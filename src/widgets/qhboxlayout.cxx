@@ -18,7 +18,7 @@ public:
   virtual ~MyQHBoxLayout() {}
 // void QHBoxLayout()
 MyQHBoxLayout() : QHBoxLayout() {}
-// void QHBoxLayout(class QWidget *)
+// void QHBoxLayout(QWidget *)
 MyQHBoxLayout(QWidget * parent) : QHBoxLayout(parent) {}
 };
 
@@ -40,7 +40,7 @@ void* C_ZN11QHBoxLayoutC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:118
-// [-2] void QHBoxLayout(class QWidget *)
+// [-2] void QHBoxLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QHBoxLayoutC2EP7QWidget(QWidget * parent) {
   return  new QHBoxLayout(parent);

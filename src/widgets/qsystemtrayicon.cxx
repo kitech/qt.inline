@@ -17,12 +17,12 @@
 class Q_DECL_EXPORT MyQSystemTrayIcon : public QSystemTrayIcon {
 public:
   virtual ~MyQSystemTrayIcon() {}
-// void QSystemTrayIcon(class QObject *)
+// void QSystemTrayIcon(QObject *)
 MyQSystemTrayIcon(QObject * parent) : QSystemTrayIcon(parent) {}
-// void QSystemTrayIcon(const class QIcon &, class QObject *)
+// void QSystemTrayIcon(const QIcon &, QObject *)
 MyQSystemTrayIcon(const QIcon & icon, QObject * parent) : QSystemTrayIcon(icon, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -38,7 +38,7 @@ MyQSystemTrayIcon(const QIcon & icon, QObject * parent) : QSystemTrayIcon(icon, 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:113
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QSystemTrayIcon5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QSystemTrayIcon*)this_)->QSystemTrayIcon::event(event);
@@ -54,7 +54,7 @@ void* C_ZNK15QSystemTrayIcon10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:69
-// [-2] void QSystemTrayIcon(class QObject *)
+// [-2] void QSystemTrayIcon(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QSystemTrayIconC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSystemTrayIcon*)(0);
@@ -63,7 +63,7 @@ void* C_ZN15QSystemTrayIconC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:70
-// [-2] void QSystemTrayIcon(const class QIcon &, class QObject *)
+// [-2] void QSystemTrayIcon(const QIcon &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QSystemTrayIconC2ERK5QIconP7QObject(QIcon* icon, QObject * parent) {
   auto _nilp = (MyQSystemTrayIcon*)(0);
@@ -79,7 +79,7 @@ void C_ZN15QSystemTrayIconD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:82
-// [-2] void setContextMenu(class QMenu *)
+// [-2] void setContextMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon14setContextMenuEP5QMenu(void *this_, QMenu * menu) {
   ((QSystemTrayIcon*)this_)->setContextMenu(menu);
@@ -104,7 +104,7 @@ return new QIcon(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:87
-// [-2] void setIcon(const class QIcon &)
+// [-2] void setIcon(const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon7setIconERK5QIcon(void *this_, QIcon* icon) {
   ((QSystemTrayIcon*)this_)->setIcon(*icon);
@@ -121,7 +121,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:90
-// [-2] void setToolTip(const class QString &)
+// [-2] void setToolTip(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon10setToolTipERK7QString(void *this_, QString* tip) {
   ((QSystemTrayIcon*)this_)->setToolTip(*tip);
@@ -165,7 +165,7 @@ bool C_ZNK15QSystemTrayIcon9isVisibleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:101
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon10setVisibleEb(void *this_, bool visible) {
   ((QSystemTrayIcon*)this_)->setVisible(visible);
@@ -190,7 +190,7 @@ void C_ZN15QSystemTrayIcon4hideEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:104
-// [-2] void showMessage(const class QString &, const class QString &, const class QIcon &, int)
+// [-2] void showMessage(const QString &, const QString &, const QIcon &, int)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_RK5QIconi(void *this_, QString* title, QString* msg, QIcon* icon, int msecs) {
@@ -201,7 +201,7 @@ void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_RK5QIconi(void *this_, QStr
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:105
-// [-2] void showMessage(const class QString &, const class QString &, class QSystemTrayIcon::MessageIcon, int)
+// [-2] void showMessage(const QString &, const QString &, QSystemTrayIcon::MessageIcon, int)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_NS_11MessageIconEi(void *this_, QString* title, QString* msg, QSystemTrayIcon::MessageIcon icon, int msecs) {
@@ -211,7 +211,7 @@ void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_NS_11MessageIconEi(void *th
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:109
-// [-2] void activated(class QSystemTrayIcon::ActivationReason)
+// [-2] void activated(QSystemTrayIcon::ActivationReason)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSystemTrayIcon9activatedENS_16ActivationReasonE(void *this_, QSystemTrayIcon::ActivationReason reason) {
   ((QSystemTrayIcon*)this_)->activated(reason);

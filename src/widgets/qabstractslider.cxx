@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQAbstractSlider : public QAbstractSlider {
 public:
   virtual ~MyQAbstractSlider() {}
-// void QAbstractSlider(class QWidget *)
+// void QAbstractSlider(QWidget *)
 MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void setRepeatAction(enum QAbstractSlider::SliderAction, int, int)
+// void setRepeatAction(QAbstractSlider::SliderAction, int, int)
   virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setRepeatAction", &handled, 3, (uint64_t)action, (uint64_t)thresholdTime, (uint64_t)repeatTime, 0, 0, 0, 0, 0, 0, 0);
@@ -57,7 +57,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void sliderChange(enum QAbstractSlider::SliderChange)
+// void sliderChange(QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -69,7 +69,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -81,7 +81,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -93,7 +93,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QWheelEvent *)
+// void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -105,7 +105,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -120,7 +120,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:134
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSlider5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QAbstractSlider*)this_)->QAbstractSlider::event(e);
@@ -128,7 +128,7 @@ bool C_ZN15QAbstractSlider5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:136
-// [-2] void setRepeatAction(enum QAbstractSlider::SliderAction, int, int)
+// [-2] void setRepeatAction(QAbstractSlider::SliderAction, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii(void *this_, QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
   ((QAbstractSlider*)this_)->QAbstractSlider::setRepeatAction(action, thresholdTime, repeatTime);
@@ -144,7 +144,7 @@ QAbstractSlider::SliderAction C_ZNK15QAbstractSlider12repeatActionEv(void *this_
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:145
-// [-2] void sliderChange(enum QAbstractSlider::SliderChange)
+// [-2] void sliderChange(QAbstractSlider::SliderChange)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE(void *this_, QAbstractSlider::SliderChange change) {
   ((QAbstractSlider*)this_)->QAbstractSlider::sliderChange(change);
@@ -152,7 +152,7 @@ void C_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE(void *this_, QAbstra
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:147
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) {
   ((QAbstractSlider*)this_)->QAbstractSlider::keyPressEvent(ev);
@@ -160,7 +160,7 @@ void C_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:148
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
   ((QAbstractSlider*)this_)->QAbstractSlider::timerEvent(arg0);
@@ -168,7 +168,7 @@ void C_ZN15QAbstractSlider10timerEventEP11QTimerEvent(void *this_, QTimerEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:150
-// [-2] void wheelEvent(class QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e) {
   ((QAbstractSlider*)this_)->QAbstractSlider::wheelEvent(e);
@@ -176,7 +176,7 @@ void C_ZN15QAbstractSlider10wheelEventEP11QWheelEvent(void *this_, QWheelEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:152
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider11changeEventEP6QEvent(void *this_, QEvent * e) {
   ((QAbstractSlider*)this_)->QAbstractSlider::changeEvent(e);
@@ -192,7 +192,7 @@ void* C_ZNK15QAbstractSlider10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:70
-// [-2] void QAbstractSlider(class QWidget *)
+// [-2] void QAbstractSlider(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractSliderC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractSlider*)(0);
@@ -280,7 +280,7 @@ int C_ZNK15QAbstractSlider8pageStepEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:87
-// [-2] void setTracking(_Bool)
+// [-2] void setTracking(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider11setTrackingEb(void *this_, bool enable) {
   ((QAbstractSlider*)this_)->setTracking(enable);
@@ -296,7 +296,7 @@ bool C_ZNK15QAbstractSlider11hasTrackingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:90
-// [-2] void setSliderDown(_Bool)
+// [-2] void setSliderDown(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider13setSliderDownEb(void *this_, bool arg0) {
   ((QAbstractSlider*)this_)->setSliderDown(arg0);
@@ -328,7 +328,7 @@ int C_ZNK15QAbstractSlider14sliderPositionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:96
-// [-2] void setInvertedAppearance(_Bool)
+// [-2] void setInvertedAppearance(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider21setInvertedAppearanceEb(void *this_, bool arg0) {
   ((QAbstractSlider*)this_)->setInvertedAppearance(arg0);
@@ -344,7 +344,7 @@ bool C_ZNK15QAbstractSlider18invertedAppearanceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:99
-// [-2] void setInvertedControls(_Bool)
+// [-2] void setInvertedControls(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider19setInvertedControlsEb(void *this_, bool arg0) {
   ((QAbstractSlider*)this_)->setInvertedControls(arg0);
@@ -368,7 +368,7 @@ int C_ZNK15QAbstractSlider5valueEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:115
-// [-2] void triggerAction(enum QAbstractSlider::SliderAction)
+// [-2] void triggerAction(QAbstractSlider::SliderAction)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSlider13triggerActionENS_12SliderActionE(void *this_, QAbstractSlider::SliderAction action) {
   ((QAbstractSlider*)this_)->triggerAction(action);

@@ -19,11 +19,11 @@ public:
   virtual ~MyQXmlStreamReader() {}
 // void QXmlStreamReader()
 MyQXmlStreamReader() : QXmlStreamReader() {}
-// void QXmlStreamReader(class QIODevice *)
+// void QXmlStreamReader(QIODevice *)
 MyQXmlStreamReader(QIODevice * device) : QXmlStreamReader(device) {}
-// void QXmlStreamReader(const class QByteArray &)
+// void QXmlStreamReader(const QByteArray &)
 MyQXmlStreamReader(const QByteArray & data) : QXmlStreamReader(data) {}
-// void QXmlStreamReader(const class QString &)
+// void QXmlStreamReader(const QString &)
 MyQXmlStreamReader(const QString & data) : QXmlStreamReader(data) {}
 // void QXmlStreamReader(const char *)
 MyQXmlStreamReader(const char * data) : QXmlStreamReader(data) {}
@@ -39,7 +39,7 @@ void* C_ZN16QXmlStreamReaderC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:361
-// [-2] void QXmlStreamReader(class QIODevice *)
+// [-2] void QXmlStreamReader(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2EP9QIODevice(QIODevice * device) {
   return  new QXmlStreamReader(device);
@@ -47,7 +47,7 @@ void* C_ZN16QXmlStreamReaderC2EP9QIODevice(QIODevice * device) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:362
-// [-2] void QXmlStreamReader(const class QByteArray &)
+// [-2] void QXmlStreamReader(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2ERK10QByteArray(QByteArray* data) {
   return  new QXmlStreamReader(*data);
@@ -55,7 +55,7 @@ void* C_ZN16QXmlStreamReaderC2ERK10QByteArray(QByteArray* data) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:363
-// [-2] void QXmlStreamReader(const class QString &)
+// [-2] void QXmlStreamReader(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReaderC2ERK7QString(QString* data) {
   return  new QXmlStreamReader(*data);
@@ -78,7 +78,7 @@ void C_ZN16QXmlStreamReaderD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:367
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QXmlStreamReader*)this_)->setDevice(device);
@@ -94,7 +94,7 @@ void* C_ZNK16QXmlStreamReader6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:369
-// [-2] void addData(const class QByteArray &)
+// [-2] void addData(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader7addDataERK10QByteArray(void *this_, QByteArray* data) {
   ((QXmlStreamReader*)this_)->addData(*data);
@@ -102,7 +102,7 @@ void C_ZN16QXmlStreamReader7addDataERK10QByteArray(void *this_, QByteArray* data
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:370
-// [-2] void addData(const class QString &)
+// [-2] void addData(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader7addDataERK7QString(void *this_, QString* data) {
   ((QXmlStreamReader*)this_)->addData(*data);
@@ -181,7 +181,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:384
-// [-2] void setNamespaceProcessing(_Bool)
+// [-2] void setNamespaceProcessing(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader22setNamespaceProcessingEb(void *this_, bool arg0) {
   ((QXmlStreamReader*)this_)->setNamespaceProcessing(arg0);
@@ -350,7 +350,7 @@ return new QXmlStreamAttributes(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:414
-// [8] QString readElementText(enum QXmlStreamReader::ReadElementTextBehaviour)
+// [8] QString readElementText(QXmlStreamReader::ReadElementTextBehaviour)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReader15readElementTextENS_24ReadElementTextBehaviourE(void *this_, QXmlStreamReader::ReadElementTextBehaviour behaviour) {
   auto rv = ((QXmlStreamReader*)this_)->readElementText(behaviour);
@@ -426,7 +426,7 @@ return new QStringRef(rv);
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:427
-// [-2] void addExtraNamespaceDeclaration(const class QXmlStreamNamespaceDeclaration &)
+// [-2] void addExtraNamespaceDeclaration(const QXmlStreamNamespaceDeclaration &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespaceDeclaration(void *this_, QXmlStreamNamespaceDeclaration* extraNamespaceDeclaraction) {
@@ -472,7 +472,7 @@ return new QStringRef(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:443
-// [-2] void raiseError(const class QString &)
+// [-2] void raiseError(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader10raiseErrorERK7QString(void *this_, QString* message) {
   ((QXmlStreamReader*)this_)->raiseError(*message);
@@ -506,7 +506,7 @@ bool C_ZNK16QXmlStreamReader8hasErrorEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:452
-// [-2] void setEntityResolver(class QXmlStreamEntityResolver *)
+// [-2] void setEntityResolver(QXmlStreamEntityResolver *)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN16QXmlStreamReader17setEntityResolverEP24QXmlStreamEntityResolver(void *this_, QXmlStreamEntityResolver * resolver) {

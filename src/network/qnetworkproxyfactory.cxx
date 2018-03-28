@@ -50,7 +50,7 @@ bool C_ZN20QNetworkProxyFactory23usesSystemConfigurationEv() {
 // Public static Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:225
-// [-2] void setUseSystemConfiguration(_Bool)
+// [-2] void setUseSystemConfiguration(bool)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN20QNetworkProxyFactory25setUseSystemConfigurationEb(bool enable) {
@@ -60,7 +60,7 @@ void C_ZN20QNetworkProxyFactory25setUseSystemConfigurationEb(bool enable) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:226
-// [-2] void setApplicationProxyFactory(class QNetworkProxyFactory *)
+// [-2] void setApplicationProxyFactory(QNetworkProxyFactory *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QNetworkProxyFactory26setApplicationProxyFactoryEPS_(QNetworkProxyFactory * factory) {
   QNetworkProxyFactory::setApplicationProxyFactory(factory);

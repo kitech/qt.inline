@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQAbstractState : public QAbstractState {
 public:
   virtual ~MyQAbstractState() {}
-// void QAbstractState(class QState *)
+// void QAbstractState(QState *)
 MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void onEntry(class QEvent *)
+// void onEntry(QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void onExit(class QEvent *)
+// void onExit(QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -60,13 +60,13 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:73
-// [-2] void onEntry(class QEvent *)
+// [-2] void onEntry(QEvent *)
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:74
-// [-2] void onExit(class QEvent *)
+// [-2] void onExit(QEvent *)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:76
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QAbstractState5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QAbstractState*)this_)->QAbstractState::event(e);
@@ -114,7 +114,7 @@ bool C_ZNK14QAbstractState6activeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qabstractstate.h:68
-// [-2] void activeChanged(_Bool)
+// [-2] void activeChanged(bool)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAbstractState13activeChangedEb(void *this_, bool active) {

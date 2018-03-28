@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
 public:
   virtual ~MyQGraphicsAnchorLayout() {}
-// void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
+// void QGraphicsAnchorLayout(QGraphicsLayoutItem *)
 MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(pa
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:107
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
   auto rv = ((QGraphicsAnchorLayout*)this_)->QGraphicsAnchorLayout::sizeHint(which, *constraint);
@@ -45,7 +45,7 @@ return new QSizeF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:79
-// [-2] void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
+// [-2] void QGraphicsAnchorLayout(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsAnchorLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
   auto _nilp = (MyQGraphicsAnchorLayout*)(0);
@@ -61,7 +61,7 @@ void C_ZN21QGraphicsAnchorLayoutD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:82
-// [8] QGraphicsAnchor * addAnchor(class QGraphicsLayoutItem *, Qt::AnchorPoint, class QGraphicsLayoutItem *, Qt::AnchorPoint)
+// [8] QGraphicsAnchor * addAnchor(QGraphicsLayoutItem *, Qt::AnchorPoint, QGraphicsLayoutItem *, Qt::AnchorPoint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsAnchorLayout9addAnchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::AnchorPoint firstEdge, QGraphicsLayoutItem * secondItem, Qt::AnchorPoint secondEdge) {
   return (void*)((QGraphicsAnchorLayout*)this_)->addAnchor(firstItem, firstEdge, secondItem, secondEdge);
@@ -69,7 +69,7 @@ void* C_ZN21QGraphicsAnchorLayout9addAnchorEP19QGraphicsLayoutItemN2Qt11AnchorPo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:84
-// [8] QGraphicsAnchor * anchor(class QGraphicsLayoutItem *, Qt::AnchorPoint, class QGraphicsLayoutItem *, Qt::AnchorPoint)
+// [8] QGraphicsAnchor * anchor(QGraphicsLayoutItem *, Qt::AnchorPoint, QGraphicsLayoutItem *, Qt::AnchorPoint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsAnchorLayout6anchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::AnchorPoint firstEdge, QGraphicsLayoutItem * secondItem, Qt::AnchorPoint secondEdge) {
   return (void*)((QGraphicsAnchorLayout*)this_)->anchor(firstItem, firstEdge, secondItem, secondEdge);
@@ -77,7 +77,7 @@ void* C_ZN21QGraphicsAnchorLayout6anchorEP19QGraphicsLayoutItemN2Qt11AnchorPoint
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:87
-// [-2] void addCornerAnchors(class QGraphicsLayoutItem *, Qt::Corner, class QGraphicsLayoutItem *, Qt::Corner)
+// [-2] void addCornerAnchors(QGraphicsLayoutItem *, Qt::Corner, QGraphicsLayoutItem *, Qt::Corner)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsAnchorLayout16addCornerAnchorsEP19QGraphicsLayoutItemN2Qt6CornerES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::Corner firstCorner, QGraphicsLayoutItem * secondItem, Qt::Corner secondCorner) {
   ((QGraphicsAnchorLayout*)this_)->addCornerAnchors(firstItem, firstCorner, secondItem, secondCorner);
@@ -85,7 +85,7 @@ void C_ZN21QGraphicsAnchorLayout16addCornerAnchorsEP19QGraphicsLayoutItemN2Qt6Co
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:90
-// [-2] void addAnchors(class QGraphicsLayoutItem *, class QGraphicsLayoutItem *, Qt::Orientations)
+// [-2] void addAnchors(QGraphicsLayoutItem *, QGraphicsLayoutItem *, Qt::Orientations)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsAnchorLayout10addAnchorsEP19QGraphicsLayoutItemS1_6QFlagsIN2Qt11OrientationEE(void *this_, QGraphicsLayoutItem * firstItem, QGraphicsLayoutItem * secondItem, QFlags<Qt::Orientation> orientations) {
   ((QGraphicsAnchorLayout*)this_)->addAnchors(firstItem, secondItem, orientations);
@@ -141,7 +141,7 @@ void C_ZN21QGraphicsAnchorLayout8removeAtEi(void *this_, int index) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:101
-// [-2] void setGeometry(const class QRectF &)
+// [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsAnchorLayout11setGeometryERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsAnchorLayout*)this_)->setGeometry(*rect);

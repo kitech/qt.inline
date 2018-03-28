@@ -15,7 +15,6 @@
 
 class Q_DECL_EXPORT MyQTextCodec : public QTextCodec {
 public:
-  virtual ~MyQTextCodec() {}
 // void QTextCodec()
 MyQTextCodec() : QTextCodec() {}
 // Protected virtual Visibility=Default Availability=Available
@@ -24,7 +23,7 @@ MyQTextCodec() : QTextCodec() {}
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:61
-// [8] QTextCodec * codecForName(const class QByteArray &)
+// [8] QTextCodec * codecForName(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForNameERK10QByteArray(QByteArray* name) {
   return (void*)QTextCodec::codecForName(*name);
@@ -56,7 +55,7 @@ void* C_ZN10QTextCodec14codecForLocaleEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:69
-// [-2] void setCodecForLocale(class QTextCodec *)
+// [-2] void setCodecForLocale(QTextCodec *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextCodec17setCodecForLocaleEPS_(QTextCodec * c) {
   QTextCodec::setCodecForLocale(c);
@@ -64,7 +63,7 @@ void C_ZN10QTextCodec17setCodecForLocaleEPS_(QTextCodec * c) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:75
-// [8] QTextCodec * codecForHtml(const class QByteArray &)
+// [8] QTextCodec * codecForHtml(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForHtmlERK10QByteArray(QByteArray* ba) {
   return (void*)QTextCodec::codecForHtml(*ba);
@@ -73,7 +72,7 @@ void* C_ZN10QTextCodec12codecForHtmlERK10QByteArray(QByteArray* ba) {
 // Public static Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtCore/qtextcodec.h:76
-// [8] QTextCodec * codecForHtml(const class QByteArray &, class QTextCodec *)
+// [8] QTextCodec * codecForHtml(const QByteArray &, QTextCodec *)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec12codecForHtmlERK10QByteArrayPS_(QByteArray* ba, QTextCodec * defaultCodec) {
@@ -83,7 +82,7 @@ void* C_ZN10QTextCodec12codecForHtmlERK10QByteArrayPS_(QByteArray* ba, QTextCode
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:78
-// [8] QTextCodec * codecForUtfText(const class QByteArray &)
+// [8] QTextCodec * codecForUtfText(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArray(QByteArray* ba) {
   return (void*)QTextCodec::codecForUtfText(*ba);
@@ -92,7 +91,7 @@ void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArray(QByteArray* ba) {
 // Public static Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtCore/qtextcodec.h:79
-// [8] QTextCodec * codecForUtfText(const class QByteArray &, class QTextCodec *)
+// [8] QTextCodec * codecForUtfText(const QByteArray &, QTextCodec *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArrayPS_(QByteArray* ba, QTextCodec * defaultCodec) {
@@ -102,7 +101,7 @@ void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArrayPS_(QByteArray* ba, QTextC
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:81
-// [1] bool canEncode(class QChar)
+// [1] bool canEncode(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextCodec9canEncodeE5QChar(void *this_, QChar* arg0) {
   return (bool)((QTextCodec*)this_)->canEncode(*arg0);
@@ -110,7 +109,7 @@ bool C_ZNK10QTextCodec9canEncodeE5QChar(void *this_, QChar* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:83
-// [1] bool canEncode(const class QString &)
+// [1] bool canEncode(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextCodec9canEncodeERK7QString(void *this_, QString* arg0) {
   return (bool)((QTextCodec*)this_)->canEncode(*arg0);
@@ -119,7 +118,7 @@ bool C_ZNK10QTextCodec9canEncodeERK7QString(void *this_, QString* arg0) {
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qtextcodec.h:85
-// [1] bool canEncode(class QStringView)
+// [1] bool canEncode(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextCodec9canEncodeE11QStringView(void *this_, QStringView* arg0) {
@@ -129,7 +128,7 @@ bool C_ZNK10QTextCodec9canEncodeE11QStringView(void *this_, QStringView* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:87
-// [8] QString toUnicode(const class QByteArray &)
+// [8] QString toUnicode(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec9toUnicodeERK10QByteArray(void *this_, QByteArray* arg0) {
   auto rv = ((QTextCodec*)this_)->toUnicode(*arg0);
@@ -147,7 +146,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:90
-// [8] QByteArray fromUnicode(const class QString &)
+// [8] QByteArray fromUnicode(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11fromUnicodeERK7QString(void *this_, QString* uc) {
   auto rv = ((QTextCodec*)this_)->fromUnicode(*uc);
@@ -157,7 +156,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qtextcodec.h:92
-// [8] QByteArray fromUnicode(class QStringView)
+// [8] QByteArray fromUnicode(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11fromUnicodeE11QStringView(void *this_, QStringView* uc) {

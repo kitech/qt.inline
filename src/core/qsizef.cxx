@@ -18,7 +18,7 @@ public:
   virtual ~MyQSizeF() {}
 // void QSizeF()
 MyQSizeF() : QSizeF() {}
-// void QSizeF(const class QSize &)
+// void QSizeF(const QSize &)
 MyQSizeF(const QSize & sz) : QSizeF(sz) {}
 // void QSizeF(qreal, qreal)
 MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
@@ -34,7 +34,7 @@ void* C_ZN6QSizeFC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:219
-// [-2] void QSizeF(const class QSize &)
+// [-2] void QSizeF(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QSizeFC2ERK5QSize(QSize* sz) {
   return  new QSizeF(*sz);
@@ -134,7 +134,7 @@ void C_ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Q
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:234
-// [-2] void scale(const class QSizeF &, Qt::AspectRatioMode)
+// [-2] void scale(const QSizeF &, Qt::AspectRatioMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
   ((QSizeF*)this_)->scale(*s, mode);
@@ -155,7 +155,7 @@ return new QSizeF(rv);
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qsize.h:236
-// [16] QSizeF scaled(const class QSizeF &, Qt::AspectRatioMode)
+// [16] QSizeF scaled(const QSizeF &, Qt::AspectRatioMode)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
@@ -166,7 +166,7 @@ return new QSizeF(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:238
-// [16] QSizeF expandedTo(const class QSizeF &)
+// [16] QSizeF expandedTo(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QSizeF10expandedToERKS_(void *this_, QSizeF* arg0) {
   auto rv = ((QSizeF*)this_)->expandedTo(*arg0);
@@ -175,7 +175,7 @@ return new QSizeF(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:239
-// [16] QSizeF boundedTo(const class QSizeF &)
+// [16] QSizeF boundedTo(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QSizeF9boundedToERKS_(void *this_, QSizeF* arg0) {
   auto rv = ((QSizeF*)this_)->boundedTo(*arg0);
@@ -202,7 +202,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:244
-// [16] QSizeF & operator+=(const class QSizeF &)
+// [16] QSizeF & operator+=(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QSizeFpLERKS_(void *this_, QSizeF* arg0) {
   auto& rv = ((QSizeF*)this_)->operator+=(*arg0);
@@ -211,7 +211,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:245
-// [16] QSizeF & operator-=(const class QSizeF &)
+// [16] QSizeF & operator-=(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QSizeFmIERKS_(void *this_, QSizeF* arg0) {
   auto& rv = ((QSizeF*)this_)->operator-=(*arg0);

@@ -47,7 +47,7 @@ return new QSizeF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:301
-// [-2] void setOldSize(const class QSizeF &)
+// [-2] void setOldSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsSceneResizeEvent*)this_)->setOldSize(*size);
@@ -64,7 +64,7 @@ return new QSizeF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:304
-// [-2] void setNewSize(const class QSizeF &)
+// [-2] void setNewSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEvent10setNewSizeERK6QSizeF(void *this_, QSizeF* size) {
   ((QGraphicsSceneResizeEvent*)this_)->setNewSize(*size);

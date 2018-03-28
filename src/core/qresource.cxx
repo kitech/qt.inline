@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQResource : public QResource {
 public:
   virtual ~MyQResource() {}
-// void QResource(const class QString &, const class QLocale &)
+// void QResource(const QString &, const QLocale &)
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
 // Protected Visibility=Default Availability=Available
 // bool isDir()
@@ -87,7 +87,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:57
-// [-2] void QResource(const class QString &, const class QLocale &)
+// [-2] void QResource(const QString &, const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QResourceC2ERK7QStringRK7QLocale(QString* file, QLocale* locale) {
   auto _nilp = (MyQResource*)(0);
@@ -103,7 +103,7 @@ void C_ZN9QResourceD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:60
-// [-2] void setFileName(const class QString &)
+// [-2] void setFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QResource11setFileNameERK7QString(void *this_, QString* file) {
   ((QResource*)this_)->setFileName(*file);
@@ -129,7 +129,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:64
-// [-2] void setLocale(const class QLocale &)
+// [-2] void setLocale(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QResource9setLocaleERK7QLocale(void *this_, QLocale* locale) {
   ((QResource*)this_)->setLocale(*locale);
@@ -187,7 +187,7 @@ return new QDateTime(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:74
-// [-2] void addSearchPath(const class QString &)
+// [-2] void addSearchPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QResource13addSearchPathERK7QString(QString* path) {
   QResource::addSearchPath(*path);
@@ -204,7 +204,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:77
-// [1] bool registerResource(const class QString &, const class QString &)
+// [1] bool registerResource(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource16registerResourceERK7QStringS2_(QString* rccFilename, QString* resourceRoot) {
   return (bool)QResource::registerResource(*rccFilename, *resourceRoot);
@@ -212,7 +212,7 @@ bool C_ZN9QResource16registerResourceERK7QStringS2_(QString* rccFilename, QStrin
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:78
-// [1] bool unregisterResource(const class QString &, const class QString &)
+// [1] bool unregisterResource(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource18unregisterResourceERK7QStringS2_(QString* rccFilename, QString* resourceRoot) {
   return (bool)QResource::unregisterResource(*rccFilename, *resourceRoot);
@@ -221,7 +221,7 @@ bool C_ZN9QResource18unregisterResourceERK7QStringS2_(QString* rccFilename, QStr
 // Public static Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtCore/qresource.h:80
-// [1] bool registerResource(const uchar *, const class QString &)
+// [1] bool registerResource(const uchar *, const QString &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * rccData, QString* resourceRoot) {
@@ -232,7 +232,7 @@ bool C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * rccData, QStri
 // Public static Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtCore/qresource.h:81
-// [1] bool unregisterResource(const uchar *, const class QString &)
+// [1] bool unregisterResource(const uchar *, const QString &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, QString* resourceRoot) {

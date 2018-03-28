@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQTextFrame : public QTextFrame {
 public:
   virtual ~MyQTextFrame() {}
-// void QTextFrame(class QTextDocument *)
+// void QTextFrame(QTextDocument *)
 MyQTextFrame(QTextDocument * doc) : QTextFrame(doc) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK10QTextFrame10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:123
-// [-2] void QTextFrame(class QTextDocument *)
+// [-2] void QTextFrame(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextFrameC2EP13QTextDocument(QTextDocument * doc) {
   return  new QTextFrame(doc);
@@ -45,7 +45,7 @@ void C_ZN10QTextFrameD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:126
-// [-2] void setFrameFormat(const class QTextFrameFormat &)
+// [-2] void setFrameFormat(const QTextFrameFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextFrame14setFrameFormatERK16QTextFrameFormat(void *this_, QTextFrameFormat* format) {
   ((QTextFrame*)this_)->setFrameFormat(*format);
@@ -104,7 +104,7 @@ void* C_ZNK10QTextFrame10layoutDataEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:135
-// [-2] void setLayoutData(class QTextFrameLayoutData *)
+// [-2] void setLayoutData(QTextFrameLayoutData *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextFrame13setLayoutDataEP20QTextFrameLayoutData(void *this_, QTextFrameLayoutData * data) {
   ((QTextFrame*)this_)->setLayoutData(data);

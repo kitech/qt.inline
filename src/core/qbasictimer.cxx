@@ -53,7 +53,7 @@ int C_ZNK11QBasicTimer7timerIdEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbasictimer.h:61
-// [-2] void start(int, class QObject *)
+// [-2] void start(int, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QBasicTimer5startEiP7QObject(void *this_, int msec, QObject * obj) {
   ((QBasicTimer*)this_)->start(msec, obj);
@@ -61,7 +61,7 @@ void C_ZN11QBasicTimer5startEiP7QObject(void *this_, int msec, QObject * obj) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbasictimer.h:62
-// [-2] void start(int, Qt::TimerType, class QObject *)
+// [-2] void start(int, Qt::TimerType, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QBasicTimer5startEiN2Qt9TimerTypeEP7QObject(void *this_, int msec, Qt::TimerType timerType, QObject * obj) {
   ((QBasicTimer*)this_)->start(msec, timerType, obj);

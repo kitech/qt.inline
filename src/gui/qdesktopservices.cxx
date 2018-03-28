@@ -21,7 +21,7 @@ public:
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdesktopservices.h:59
-// [1] bool openUrl(const class QUrl &)
+// [1] bool openUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QDesktopServices7openUrlERK4QUrl(QUrl* url) {
   return (bool)QDesktopServices::openUrl(*url);
@@ -29,7 +29,7 @@ bool C_ZN16QDesktopServices7openUrlERK4QUrl(QUrl* url) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdesktopservices.h:60
-// [-2] void setUrlHandler(const class QString &, class QObject *, const char *)
+// [-2] void setUrlHandler(const QString &, QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc(QString* scheme, QObject * receiver, const char * method) {
   QDesktopServices::setUrlHandler(*scheme, receiver, method);
@@ -37,7 +37,7 @@ void C_ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc(QString* schem
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdesktopservices.h:61
-// [-2] void unsetUrlHandler(const class QString &)
+// [-2] void unsetUrlHandler(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDesktopServices15unsetUrlHandlerERK7QString(QString* scheme) {
   QDesktopServices::unsetUrlHandler(*scheme);

@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQLabel : public QLabel {
 public:
   virtual ~MyQLabel() {}
-// void QLabel(class QWidget *, Qt::WindowFlags)
+// void QLabel(QWidget *, Qt::WindowFlags)
 MyQLabel(QWidget * parent, QFlags<Qt::WindowType> f) : QLabel(parent, f) {}
-// void QLabel(const class QString &, class QWidget *, Qt::WindowFlags)
+// void QLabel(const QString &, QWidget *, Qt::WindowFlags)
 MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLabel(text, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -58,7 +58,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -70,7 +70,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -94,7 +94,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -106,7 +106,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(class QContextMenuEvent *)
+// void contextMenuEvent(QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -118,7 +118,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -130,7 +130,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -142,7 +142,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(_Bool)
+// bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -158,7 +158,7 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:137
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QLabel5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QLabel*)this_)->QLabel::event(e);
@@ -166,7 +166,7 @@ bool C_ZN6QLabel5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:138
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) {
   ((QLabel*)this_)->QLabel::keyPressEvent(ev);
@@ -174,7 +174,7 @@ void C_ZN6QLabel13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:139
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QLabel*)this_)->QLabel::paintEvent(arg0);
@@ -182,7 +182,7 @@ void C_ZN6QLabel10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:140
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QLabel*)this_)->QLabel::changeEvent(arg0);
@@ -190,7 +190,7 @@ void C_ZN6QLabel11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:141
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QLabel*)this_)->QLabel::mousePressEvent(ev);
@@ -198,7 +198,7 @@ void C_ZN6QLabel15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:142
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QLabel*)this_)->QLabel::mouseMoveEvent(ev);
@@ -206,7 +206,7 @@ void C_ZN6QLabel14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:143
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QLabel*)this_)->QLabel::mouseReleaseEvent(ev);
@@ -214,7 +214,7 @@ void C_ZN6QLabel17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * ev
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:145
-// [-2] void contextMenuEvent(class QContextMenuEvent *)
+// [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * ev) {
   ((QLabel*)this_)->QLabel::contextMenuEvent(ev);
@@ -222,7 +222,7 @@ void C_ZN6QLabel16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMen
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:147
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * ev) {
   ((QLabel*)this_)->QLabel::focusInEvent(ev);
@@ -230,7 +230,7 @@ void C_ZN6QLabel12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * ev) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:148
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * ev) {
   ((QLabel*)this_)->QLabel::focusOutEvent(ev);
@@ -238,7 +238,7 @@ void C_ZN6QLabel13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * ev) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:149
-// [1] bool focusNextPrevChild(_Bool)
+// [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QLabel18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QLabel*)this_)->QLabel::focusNextPrevChild(next);
@@ -254,7 +254,7 @@ void* C_ZNK6QLabel10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:70
-// [-2] void QLabel(class QWidget *, Qt::WindowFlags)
+// [-2] void QLabel(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QLabelC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
   auto _nilp = (MyQLabel*)(0);
@@ -263,7 +263,7 @@ void* C_ZN6QLabelC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:71
-// [-2] void QLabel(const class QString &, class QWidget *, Qt::WindowFlags)
+// [-2] void QLabel(const QString &, QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QLabelC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* text, QWidget * parent, QFlags<Qt::WindowType> f) {
   auto _nilp = (MyQLabel*)(0);
@@ -344,7 +344,7 @@ void C_ZN6QLabel12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:89
-// [-2] void setWordWrap(_Bool)
+// [-2] void setWordWrap(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel11setWordWrapEb(void *this_, bool on) {
   ((QLabel*)this_)->setWordWrap(on);
@@ -400,7 +400,7 @@ bool C_ZNK6QLabel17hasScaledContentsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:99
-// [-2] void setScaledContents(_Bool)
+// [-2] void setScaledContents(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel17setScaledContentsEb(void *this_, bool arg0) {
   ((QLabel*)this_)->setScaledContents(arg0);
@@ -426,7 +426,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:103
-// [-2] void setBuddy(class QWidget *)
+// [-2] void setBuddy(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel8setBuddyEP7QWidget(void *this_, QWidget * arg0) {
   ((QLabel*)this_)->setBuddy(arg0);
@@ -458,7 +458,7 @@ bool C_ZNK6QLabel17openExternalLinksEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:109
-// [-2] void setOpenExternalLinks(_Bool)
+// [-2] void setOpenExternalLinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel20setOpenExternalLinksEb(void *this_, bool open) {
   ((QLabel*)this_)->setOpenExternalLinks(open);
@@ -521,7 +521,7 @@ int C_ZNK6QLabel14selectionStartEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:120
-// [-2] void setText(const class QString &)
+// [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel7setTextERK7QString(void *this_, QString* arg0) {
   ((QLabel*)this_)->setText(*arg0);
@@ -529,7 +529,7 @@ void C_ZN6QLabel7setTextERK7QString(void *this_, QString* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:121
-// [-2] void setPixmap(const class QPixmap &)
+// [-2] void setPixmap(const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel9setPixmapERK7QPixmap(void *this_, QPixmap* arg0) {
   ((QLabel*)this_)->setPixmap(*arg0);
@@ -537,7 +537,7 @@ void C_ZN6QLabel9setPixmapERK7QPixmap(void *this_, QPixmap* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:123
-// [-2] void setPicture(const class QPicture &)
+// [-2] void setPicture(const QPicture &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel10setPictureERK8QPicture(void *this_, QPicture* arg0) {
   ((QLabel*)this_)->setPicture(*arg0);
@@ -545,7 +545,7 @@ void C_ZN6QLabel10setPictureERK8QPicture(void *this_, QPicture* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlabel.h:126
-// [-2] void setMovie(class QMovie *)
+// [-2] void setMovie(QMovie *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel8setMovieEP6QMovie(void *this_, QMovie * movie) {
   ((QLabel*)this_)->setMovie(movie);
@@ -578,7 +578,7 @@ void C_ZN6QLabel5clearEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qlabel.h:133
-// [-2] void linkActivated(const class QString &)
+// [-2] void linkActivated(const QString &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel13linkActivatedERK7QString(void *this_, QString* link) {
@@ -589,7 +589,7 @@ void C_ZN6QLabel13linkActivatedERK7QString(void *this_, QString* link) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qlabel.h:134
-// [-2] void linkHovered(const class QString &)
+// [-2] void linkHovered(const QString &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN6QLabel11linkHoveredERK7QString(void *this_, QString* link) {

@@ -92,7 +92,7 @@ return new QString(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:537
-// [8] QString textBeforeOffset(int, class QAccessible::TextBoundaryType, int *, int *)
+// [8] QString textBeforeOffset(int, QAccessible::TextBoundaryType, int *, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QAccessibleTextInterface16textBeforeOffsetEiN11QAccessible16TextBoundaryTypeEPiS2_(void *this_, int offset, QAccessible::TextBoundaryType boundaryType, int * startOffset, int * endOffset) {
   auto rv = ((QAccessibleTextInterface*)this_)->textBeforeOffset(offset, boundaryType, startOffset, endOffset);
@@ -101,7 +101,7 @@ return new QString(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:539
-// [8] QString textAfterOffset(int, class QAccessible::TextBoundaryType, int *, int *)
+// [8] QString textAfterOffset(int, QAccessible::TextBoundaryType, int *, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QAccessibleTextInterface15textAfterOffsetEiN11QAccessible16TextBoundaryTypeEPiS2_(void *this_, int offset, QAccessible::TextBoundaryType boundaryType, int * startOffset, int * endOffset) {
   auto rv = ((QAccessibleTextInterface*)this_)->textAfterOffset(offset, boundaryType, startOffset, endOffset);
@@ -110,7 +110,7 @@ return new QString(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:541
-// [8] QString textAtOffset(int, class QAccessible::TextBoundaryType, int *, int *)
+// [8] QString textAtOffset(int, QAccessible::TextBoundaryType, int *, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QAccessibleTextInterface12textAtOffsetEiN11QAccessible16TextBoundaryTypeEPiS2_(void *this_, int offset, QAccessible::TextBoundaryType boundaryType, int * startOffset, int * endOffset) {
   auto rv = ((QAccessibleTextInterface*)this_)->textAtOffset(offset, boundaryType, startOffset, endOffset);
@@ -136,7 +136,7 @@ return new QRect(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:547
-// [4] int offsetAtPoint(const class QPoint &)
+// [4] int offsetAtPoint(const QPoint &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QAccessibleTextInterface13offsetAtPointERK6QPoint(void *this_, QPoint* point) {
   return (int)((QAccessibleTextInterface*)this_)->offsetAtPoint(*point);

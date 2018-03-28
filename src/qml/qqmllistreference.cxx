@@ -19,7 +19,7 @@ public:
   virtual ~MyQQmlListReference() {}
 // void QQmlListReference()
 MyQQmlListReference() : QQmlListReference() {}
-// void QQmlListReference(class QObject *, const char *, class QQmlEngine *)
+// void QQmlListReference(QObject *, const char *, QQmlEngine *)
 MyQQmlListReference(QObject * arg0, const char * property, QQmlEngine * arg2) : QQmlListReference(arg0, property, arg2) {}
 };
 
@@ -33,7 +33,7 @@ void* C_ZN17QQmlListReferenceC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmllist.h:143
-// [-2] void QQmlListReference(class QObject *, const char *, class QQmlEngine *)
+// [-2] void QQmlListReference(QObject *, const char *, QQmlEngine *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const char * property, QQmlEngine * arg2) {
   return  new QQmlListReference(arg0, property, arg2);
@@ -41,7 +41,7 @@ void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmllist.h:145
-// [8] QQmlListReference & operator=(const class QQmlListReference &)
+// [8] QQmlListReference & operator=(const QQmlListReference &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceaSERKS_(void *this_, QQmlListReference* arg0) {
   auto& rv = ((QQmlListReference*)this_)->operator=(*arg0);

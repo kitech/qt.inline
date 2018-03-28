@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQGraphicsSceneHelpEvent : public QGraphicsSceneHelpEvent {
 public:
   virtual ~MyQGraphicsSceneHelpEvent() {}
-// void QGraphicsSceneHelpEvent(enum QEvent::Type)
+// void QGraphicsSceneHelpEvent(QEvent::Type)
 MyQGraphicsSceneHelpEvent(QEvent::Type type_) : QGraphicsSceneHelpEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:234
-// [-2] void QGraphicsSceneHelpEvent(enum QEvent::Type)
+// [-2] void QGraphicsSceneHelpEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QGraphicsSceneHelpEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneHelpEvent(type_);
@@ -47,7 +47,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:238
-// [-2] void setScenePos(const class QPointF &)
+// [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneHelpEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneHelpEvent*)this_)->setScenePos(*pos);
@@ -64,7 +64,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:241
-// [-2] void setScreenPos(const class QPoint &)
+// [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneHelpEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
   ((QGraphicsSceneHelpEvent*)this_)->setScreenPos(*pos);

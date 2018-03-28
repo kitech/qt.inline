@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQVariantAnimation : public QVariantAnimation {
 public:
   virtual ~MyQVariantAnimation() {}
-// void QVariantAnimation(class QObject *)
+// void QVariantAnimation(QObject *)
 MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -57,7 +57,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateCurrentValue(const class QVariant &)
+// void updateCurrentValue(const QVariant &)
   virtual void updateCurrentValue(const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"updateCurrentValue", &handled, 1, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -69,7 +69,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
+// QVariant interpolated(const QVariant &, const QVariant &, qreal)
   virtual QVariant interpolated(const QVariant & from, const QVariant & to, qreal progress) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"interpolated", &handled, 3, (uint64_t)&from, (uint64_t)&to, (uint64_t)&progress, 0, 0, 0, 0, 0, 0, 0);
@@ -85,7 +85,7 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:98
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QVariantAnimation5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QVariantAnimation*)this_)->QVariantAnimation::event(event);
@@ -101,7 +101,7 @@ void C_ZN17QVariantAnimation17updateCurrentTimeEi(void *this_, int arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:101
-// [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
+// [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
   ((QVariantAnimation*)this_)->QVariantAnimation::updateState(newState, oldState);
@@ -109,7 +109,7 @@ void C_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:103
-// [-2] void updateCurrentValue(const class QVariant &)
+// [-2] void updateCurrentValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void *this_, QVariant* value) {
   ((QVariantAnimation*)this_)->QVariantAnimation::updateCurrentValue(*value);
@@ -117,7 +117,7 @@ void C_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void *this_, QVaria
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:104
-// [16] QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
+// [16] QVariant interpolated(const QVariant &, const QVariant &, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(void *this_, QVariant* from, QVariant* to, qreal progress) {
   auto rv = ((QVariantAnimation*)this_)->QVariantAnimation::interpolated(*from, *to, progress);
@@ -134,7 +134,7 @@ void* C_ZNK17QVariantAnimation10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:68
-// [-2] void QVariantAnimation(class QObject *)
+// [-2] void QVariantAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QVariantAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQVariantAnimation*)(0);
@@ -159,7 +159,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:72
-// [-2] void setStartValue(const class QVariant &)
+// [-2] void setStartValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation13setStartValueERK8QVariant(void *this_, QVariant* value) {
   ((QVariantAnimation*)this_)->setStartValue(*value);
@@ -176,7 +176,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:75
-// [-2] void setEndValue(const class QVariant &)
+// [-2] void setEndValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation11setEndValueERK8QVariant(void *this_, QVariant* value) {
   ((QVariantAnimation*)this_)->setEndValue(*value);
@@ -193,7 +193,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:78
-// [-2] void setKeyValueAt(qreal, const class QVariant &)
+// [-2] void setKeyValueAt(qreal, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation13setKeyValueAtEdRK8QVariant(void *this_, qreal step, QVariant* value) {
   ((QVariantAnimation*)this_)->setKeyValueAt(step, *value);
@@ -235,7 +235,7 @@ return new QEasingCurve(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:89
-// [-2] void setEasingCurve(const class QEasingCurve &)
+// [-2] void setEasingCurve(const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation14setEasingCurveERK12QEasingCurve(void *this_, QEasingCurve* easing) {
   ((QVariantAnimation*)this_)->setEasingCurve(*easing);
@@ -243,7 +243,7 @@ void C_ZN17QVariantAnimation14setEasingCurveERK12QEasingCurve(void *this_, QEasi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:94
-// [-2] void valueChanged(const class QVariant &)
+// [-2] void valueChanged(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation12valueChangedERK8QVariant(void *this_, QVariant* value) {
   ((QVariantAnimation*)this_)->valueChanged(*value);

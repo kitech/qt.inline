@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQShortcutEvent : public QShortcutEvent {
 public:
   virtual ~MyQShortcutEvent() {}
-// void QShortcutEvent(const class QKeySequence &, int, _Bool)
+// void QShortcutEvent(const QKeySequence &, int, bool)
 MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEvent(key, id, ambiguous) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:767
-// [-2] void QShortcutEvent(const class QKeySequence &, int, _Bool)
+// [-2] void QShortcutEvent(const QKeySequence &, int, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(QKeySequence* key, int id, bool ambiguous) {
   return  new QShortcutEvent(*key, id, ambiguous);

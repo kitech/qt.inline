@@ -38,7 +38,7 @@ void C_ZN17QSslConfigurationD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:83
-// [8] QSslConfiguration & operator=(class QSslConfiguration &&)
+// [8] QSslConfiguration & operator=(QSslConfiguration &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfigurationaSEOS_(void *this_, QSslConfiguration && other) {
   auto& rv = ((QSslConfiguration*)this_)->operator=(other);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:85
-// [8] QSslConfiguration & operator=(const class QSslConfiguration &)
+// [8] QSslConfiguration & operator=(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfigurationaSERKS_(void *this_, QSslConfiguration* other) {
   auto& rv = ((QSslConfiguration*)this_)->operator=(*other);
@@ -57,7 +57,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:87
-// [-2] void swap(class QSslConfiguration &)
+// [-2] void swap(QSslConfiguration &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration4swapERS_(void *this_, QSslConfiguration* other) {
@@ -67,7 +67,7 @@ void C_ZN17QSslConfiguration4swapERS_(void *this_, QSslConfiguration* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:90
-// [1] bool operator==(const class QSslConfiguration &)
+// [1] bool operator==(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QSslConfigurationeqERKS_(void *this_, QSslConfiguration* other) {
   return (bool)((QSslConfiguration*)this_)->operator==(*other);
@@ -75,7 +75,7 @@ bool C_ZNK17QSslConfigurationeqERKS_(void *this_, QSslConfiguration* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:91
-// [1] bool operator!=(const class QSslConfiguration &)
+// [1] bool operator!=(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QSslConfigurationneERKS_(void *this_, QSslConfiguration* other) {
   return (bool)((QSslConfiguration*)this_)->operator!=(*other);
@@ -115,7 +115,7 @@ QSslSocket::PeerVerifyMode C_ZNK17QSslConfiguration14peerVerifyModeEv(void *this
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:101
-// [-2] void setPeerVerifyMode(class QSslSocket::PeerVerifyMode)
+// [-2] void setPeerVerifyMode(QSslSocket::PeerVerifyMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration17setPeerVerifyModeEN10QSslSocket14PeerVerifyModeE(void *this_, QSslSocket::PeerVerifyMode mode) {
   ((QSslConfiguration*)this_)->setPeerVerifyMode(mode);
@@ -148,7 +148,7 @@ return new QSslCertificate(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:111
-// [-2] void setLocalCertificate(const class QSslCertificate &)
+// [-2] void setLocalCertificate(const QSslCertificate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration19setLocalCertificateERK15QSslCertificate(void *this_, QSslCertificate* certificate) {
   ((QSslConfiguration*)this_)->setLocalCertificate(*certificate);
@@ -194,7 +194,7 @@ return new QSslKey(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:120
-// [-2] void setPrivateKey(const class QSslKey &)
+// [-2] void setPrivateKey(const QSslKey &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration13setPrivateKeyERK7QSslKey(void *this_, QSslKey* key) {
   ((QSslConfiguration*)this_)->setPrivateKey(*key);
@@ -202,7 +202,7 @@ void C_ZN17QSslConfiguration13setPrivateKeyERK7QSslKey(void *this_, QSslKey* key
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:132
-// [-2] void setSslOption(QSsl::SslOption, _Bool)
+// [-2] void setSslOption(QSsl::SslOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration12setSslOptionEN4QSsl9SslOptionEb(void *this_, QSsl::SslOption option, bool on) {
   ((QSslConfiguration*)this_)->setSslOption(option, on);
@@ -234,7 +234,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:136
-// [-2] void setSessionTicket(const class QByteArray &)
+// [-2] void setSessionTicket(const QByteArray &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration16setSessionTicketERK10QByteArray(void *this_, QByteArray* sessionTicket) {
@@ -280,7 +280,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:147
-// [-2] void setPreSharedKeyIdentityHint(const class QByteArray &)
+// [-2] void setPreSharedKeyIdentityHint(const QByteArray &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration27setPreSharedKeyIdentityHintERK10QByteArray(void *this_, QByteArray* hint) {
@@ -303,7 +303,7 @@ return new QSslDiffieHellmanParameters(rv);
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:150
-// [-2] void setDiffieHellmanParameters(const class QSslDiffieHellmanParameters &)
+// [-2] void setDiffieHellmanParameters(const QSslDiffieHellmanParameters &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration26setDiffieHellmanParametersERK27QSslDiffieHellmanParameters(void *this_, QSslDiffieHellmanParameters* dhparams) {
@@ -322,7 +322,7 @@ return new QSslConfiguration(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:153
-// [-2] void setDefaultConfiguration(const class QSslConfiguration &)
+// [-2] void setDefaultConfiguration(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration23setDefaultConfigurationERKS_(QSslConfiguration* configuration) {
   QSslConfiguration::setDefaultConfiguration(*configuration);

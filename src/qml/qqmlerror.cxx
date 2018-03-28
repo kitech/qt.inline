@@ -31,7 +31,7 @@ void* C_ZN9QQmlErrorC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:58
-// [8] QQmlError & operator=(const class QQmlError &)
+// [8] QQmlError & operator=(const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QQmlErroraSERKS_(void *this_, QQmlError* arg0) {
   auto& rv = ((QQmlError*)this_)->operator=(*arg0);
@@ -64,7 +64,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:64
-// [-2] void setUrl(const class QUrl &)
+// [-2] void setUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QQmlError6setUrlERK4QUrl(void *this_, QUrl* arg0) {
   ((QQmlError*)this_)->setUrl(*arg0);
@@ -81,7 +81,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:66
-// [-2] void setDescription(const class QString &)
+// [-2] void setDescription(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QQmlError14setDescriptionERK7QString(void *this_, QString* arg0) {
   ((QQmlError*)this_)->setDescription(*arg0);
@@ -129,7 +129,7 @@ void* C_ZNK9QQmlError6objectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:72
-// [-2] void setObject(class QObject *)
+// [-2] void setObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QQmlError9setObjectEP7QObject(void *this_, QObject * arg0) {
   ((QQmlError*)this_)->setObject(arg0);
@@ -149,7 +149,7 @@ QtMsgType C_ZNK9QQmlError11messageTypeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtQml/qqmlerror.h:74
-// [-2] void setMessageType(enum QtMsgType)
+// [-2] void setMessageType(QtMsgType)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN9QQmlError14setMessageTypeE9QtMsgType(void *this_, QtMsgType messageType) {

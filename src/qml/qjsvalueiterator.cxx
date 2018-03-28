@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQJSValueIterator : public QJSValueIterator {
 public:
   virtual ~MyQJSValueIterator() {}
-// void QJSValueIterator(const class QJSValue &)
+// void QJSValueIterator(const QJSValue &)
 MyQJSValueIterator(const QJSValue & value) : QJSValueIterator(value) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalueiterator.h:56
-// [-2] void QJSValueIterator(const class QJSValue &)
+// [-2] void QJSValueIterator(const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QJSValueIteratorC2ERK8QJSValue(QJSValue* value) {
   return  new QJSValueIterator(*value);
@@ -71,7 +71,7 @@ return new QJSValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalueiterator.h:65
-// [8] QJSValueIterator & operator=(class QJSValue &)
+// [8] QJSValueIterator & operator=(QJSValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QJSValueIteratoraSER8QJSValue(void *this_, QJSValue* value) {
   auto& rv = ((QJSValueIterator*)this_)->operator=(*value);

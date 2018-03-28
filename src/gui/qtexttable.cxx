@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQTextTable : public QTextTable {
 public:
   virtual ~MyQTextTable() {}
-// void QTextTable(class QTextDocument *)
+// void QTextTable(QTextDocument *)
 MyQTextTable(QTextDocument * doc) : QTextTable(doc) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK10QTextTable10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:102
-// [-2] void QTextTable(class QTextDocument *)
+// [-2] void QTextTable(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextTableC2EP13QTextDocument(QTextDocument * doc) {
   return  new QTextTable(doc);
@@ -119,7 +119,7 @@ void C_ZN10QTextTable10mergeCellsEiiii(void *this_, int row, int col, int numRow
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtGui/qtexttable.h:114
-// [-2] void mergeCells(const class QTextCursor &)
+// [-2] void mergeCells(const QTextCursor &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable10mergeCellsERK11QTextCursor(void *this_, QTextCursor* cursor) {
@@ -174,7 +174,7 @@ return new QTextTableCell(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:122
-// [16] QTextTableCell cellAt(const class QTextCursor &)
+// [16] QTextTableCell cellAt(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextTable6cellAtERK11QTextCursor(void *this_, QTextCursor* c) {
   auto rv = ((QTextTable*)this_)->cellAt(*c);
@@ -183,7 +183,7 @@ return new QTextTableCell(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:124
-// [8] QTextCursor rowStart(const class QTextCursor &)
+// [8] QTextCursor rowStart(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextTable8rowStartERK11QTextCursor(void *this_, QTextCursor* c) {
   auto rv = ((QTextTable*)this_)->rowStart(*c);
@@ -192,7 +192,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:125
-// [8] QTextCursor rowEnd(const class QTextCursor &)
+// [8] QTextCursor rowEnd(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextTable6rowEndERK11QTextCursor(void *this_, QTextCursor* c) {
   auto rv = ((QTextTable*)this_)->rowEnd(*c);
@@ -201,7 +201,7 @@ return new QTextCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:127
-// [-2] void setFormat(const class QTextTableFormat &)
+// [-2] void setFormat(const QTextTableFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextTable9setFormatERK16QTextTableFormat(void *this_, QTextTableFormat* format) {
   ((QTextTable*)this_)->setFormat(*format);

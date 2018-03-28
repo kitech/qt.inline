@@ -19,7 +19,7 @@ public:
 // void QDesktopWidget()
 MyQDesktopWidget() : QDesktopWidget() {}
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQDesktopWidget() : QDesktopWidget() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:90
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) {
   ((QDesktopWidget*)this_)->QDesktopWidget::resizeEvent(e);
@@ -98,7 +98,7 @@ int C_ZNK14QDesktopWidget13primaryScreenEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:68
-// [4] int screenNumber(const class QWidget *)
+// [4] int screenNumber(const QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QDesktopWidget12screenNumberEPK7QWidget(void *this_, const QWidget * widget) {
   return (int)((QDesktopWidget*)this_)->screenNumber(widget);
@@ -106,7 +106,7 @@ int C_ZNK14QDesktopWidget12screenNumberEPK7QWidget(void *this_, const QWidget * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:69
-// [4] int screenNumber(const class QPoint &)
+// [4] int screenNumber(const QPoint &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QDesktopWidget12screenNumberERK6QPoint(void *this_, QPoint* arg0) {
   return (int)((QDesktopWidget*)this_)->screenNumber(*arg0);
@@ -131,7 +131,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:74
-// [16] const QRect screenGeometry(const class QWidget *)
+// [16] const QRect screenGeometry(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget14screenGeometryEPK7QWidget(void *this_, const QWidget * widget) {
   auto rv = ((QDesktopWidget*)this_)->screenGeometry(widget);
@@ -140,7 +140,7 @@ return new QRect(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:75
-// [16] const QRect screenGeometry(const class QPoint &)
+// [16] const QRect screenGeometry(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget14screenGeometryERK6QPoint(void *this_, QPoint* point) {
   auto rv = ((QDesktopWidget*)this_)->screenGeometry(*point);
@@ -158,7 +158,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:79
-// [16] const QRect availableGeometry(const class QWidget *)
+// [16] const QRect availableGeometry(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget17availableGeometryEPK7QWidget(void *this_, const QWidget * widget) {
   auto rv = ((QDesktopWidget*)this_)->availableGeometry(widget);
@@ -167,7 +167,7 @@ return new QRect(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:80
-// [16] const QRect availableGeometry(const class QPoint &)
+// [16] const QRect availableGeometry(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget17availableGeometryERK6QPoint(void *this_, QPoint* point) {
   auto rv = ((QDesktopWidget*)this_)->availableGeometry(*point);

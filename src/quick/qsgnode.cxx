@@ -18,7 +18,7 @@ public:
   virtual ~MyQSGNode() {}
 // void QSGNode()
 MyQSGNode() : QSGNode() {}
-// void QSGNode(enum QSGNode::NodeType)
+// void QSGNode(QSGNode::NodeType)
 MyQSGNode(QSGNode::NodeType type_) : QSGNode(type_) {}
 };
 
@@ -47,7 +47,7 @@ void* C_ZNK7QSGNode6parentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:135
-// [-2] void removeChildNode(class QSGNode *)
+// [-2] void removeChildNode(QSGNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode15removeChildNodeEPS_(void *this_, QSGNode * node) {
   ((QSGNode*)this_)->removeChildNode(node);
@@ -63,7 +63,7 @@ void C_ZN7QSGNode19removeAllChildNodesEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:137
-// [-2] void prependChildNode(class QSGNode *)
+// [-2] void prependChildNode(QSGNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode16prependChildNodeEPS_(void *this_, QSGNode * node) {
   ((QSGNode*)this_)->prependChildNode(node);
@@ -71,7 +71,7 @@ void C_ZN7QSGNode16prependChildNodeEPS_(void *this_, QSGNode * node) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:138
-// [-2] void appendChildNode(class QSGNode *)
+// [-2] void appendChildNode(QSGNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode15appendChildNodeEPS_(void *this_, QSGNode * node) {
   ((QSGNode*)this_)->appendChildNode(node);
@@ -79,7 +79,7 @@ void C_ZN7QSGNode15appendChildNodeEPS_(void *this_, QSGNode * node) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:139
-// [-2] void insertChildNodeBefore(class QSGNode *, class QSGNode *)
+// [-2] void insertChildNodeBefore(QSGNode *, QSGNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode21insertChildNodeBeforeEPS_S0_(void *this_, QSGNode * node, QSGNode * before) {
   ((QSGNode*)this_)->insertChildNodeBefore(node, before);
@@ -87,7 +87,7 @@ void C_ZN7QSGNode21insertChildNodeBeforeEPS_S0_(void *this_, QSGNode * node, QSG
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:140
-// [-2] void insertChildNodeAfter(class QSGNode *, class QSGNode *)
+// [-2] void insertChildNodeAfter(QSGNode *, QSGNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode20insertChildNodeAfterEPS_S0_(void *this_, QSGNode * node, QSGNode * after) {
   ((QSGNode*)this_)->insertChildNodeAfter(node, after);
@@ -95,7 +95,7 @@ void C_ZN7QSGNode20insertChildNodeAfterEPS_S0_(void *this_, QSGNode * node, QSGN
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:141
-// [-2] void reparentChildNodesTo(class QSGNode *)
+// [-2] void reparentChildNodesTo(QSGNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode20reparentChildNodesToEPS_(void *this_, QSGNode * newParent) {
   ((QSGNode*)this_)->reparentChildNodesTo(newParent);
@@ -201,7 +201,7 @@ return new QSGNode::Flags(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:159
-// [-2] void setFlag(enum QSGNode::Flag, _Bool)
+// [-2] void setFlag(QSGNode::Flag, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode7setFlagENS_4FlagEb(void *this_, QSGNode::Flag arg0, bool arg1) {
   ((QSGNode*)this_)->setFlag(arg0, arg1);
@@ -209,7 +209,7 @@ void C_ZN7QSGNode7setFlagENS_4FlagEb(void *this_, QSGNode::Flag arg0, bool arg1)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:160
-// [-2] void setFlags(QSGNode::Flags, _Bool)
+// [-2] void setFlags(QSGNode::Flags, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSGNode8setFlagsE6QFlagsINS_4FlagEEb(void *this_, QFlags<QSGNode::Flag> arg0, bool arg1) {
   ((QSGNode*)this_)->setFlags(arg0, arg1);

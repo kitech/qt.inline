@@ -16,17 +16,17 @@
 class Q_DECL_EXPORT MyQContextMenuEvent : public QContextMenuEvent {
 public:
   virtual ~MyQContextMenuEvent() {}
-// void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &, Qt::KeyboardModifiers)
+// void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &, Qt::KeyboardModifiers)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos, QFlags<Qt::KeyboardModifier> modifiers) : QContextMenuEvent(reason, pos, globalPos, modifiers) {}
-// void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
+// void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos) : QContextMenuEvent(reason, pos, globalPos) {}
-// void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &)
+// void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QContextMenuEvent(reason, pos) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:511
-// [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &, Qt::KeyboardModifiers)
+// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierEE(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QContextMenuEvent(reason, *pos, *globalPos, modifiers);
@@ -34,7 +34,7 @@ void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardMod
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:513
-// [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
+// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos) {
   return  new QContextMenuEvent(reason, *pos, *globalPos);
@@ -42,7 +42,7 @@ void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reaso
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:514
-// [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &)
+// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason reason, QPoint* pos) {
   return  new QContextMenuEvent(reason, *pos);

@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsColorizeEffect : public QGraphicsColorizeEffect {
 public:
   virtual ~MyQGraphicsColorizeEffect() {}
-// void QGraphicsColorizeEffect(class QObject *)
+// void QGraphicsColorizeEffect(QObject *)
 MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void draw(class QPainter *)
+// void draw(QPainter *)
   virtual void draw(QPainter * painter) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:147
-// [-2] void draw(class QPainter *)
+// [-2] void draw(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsColorizeEffect4drawEP8QPainter(void *this_, QPainter * painter) {
   ((QGraphicsColorizeEffect*)this_)->QGraphicsColorizeEffect::draw(painter);
@@ -51,7 +51,7 @@ void* C_ZNK23QGraphicsColorizeEffect10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:132
-// [-2] void QGraphicsColorizeEffect(class QObject *)
+// [-2] void QGraphicsColorizeEffect(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QGraphicsColorizeEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsColorizeEffect*)(0);
@@ -84,7 +84,7 @@ qreal C_ZNK23QGraphicsColorizeEffect8strengthEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:139
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsColorizeEffect8setColorERK6QColor(void *this_, QColor* c) {
   ((QGraphicsColorizeEffect*)this_)->setColor(*c);
@@ -100,7 +100,7 @@ void C_ZN23QGraphicsColorizeEffect11setStrengthEd(void *this_, qreal strength) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:143
-// [-2] void colorChanged(const class QColor &)
+// [-2] void colorChanged(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(void *this_, QColor* color) {
   ((QGraphicsColorizeEffect*)this_)->colorChanged(*color);

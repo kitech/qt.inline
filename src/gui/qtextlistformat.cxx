@@ -18,7 +18,7 @@ public:
   virtual ~MyQTextListFormat() {}
 // void QTextListFormat()
 MyQTextListFormat() : QTextListFormat() {}
-// void QTextListFormat(const class QTextFormat &)
+// void QTextListFormat(const QTextFormat &)
 MyQTextListFormat(const QTextFormat & fmt_) : QTextListFormat(fmt_) {}
 };
 
@@ -40,7 +40,7 @@ bool C_ZNK15QTextListFormat7isValidEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:697
-// [-2] void setStyle(enum QTextListFormat::Style)
+// [-2] void setStyle(QTextListFormat::Style)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat8setStyleENS_5StyleE(void *this_, QTextListFormat::Style style) {
   ((QTextListFormat*)this_)->setStyle(style);
@@ -73,7 +73,7 @@ int C_ZNK15QTextListFormat6indentEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:705
-// [-2] void setNumberPrefix(const class QString &)
+// [-2] void setNumberPrefix(const QString &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, QString* numberPrefix) {
@@ -96,7 +96,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:709
-// [-2] void setNumberSuffix(const class QString &)
+// [-2] void setNumberSuffix(const QString &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, QString* numberSuffix) {

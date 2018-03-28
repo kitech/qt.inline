@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQFinalState : public QFinalState {
 public:
   virtual ~MyQFinalState() {}
-// void QFinalState(class QState *)
+// void QFinalState(QState *)
 MyQFinalState(QState * parent) : QFinalState(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void onEntry(class QEvent *)
+// void onEntry(QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void onExit(class QEvent *)
+// void onExit(QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -60,7 +60,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:58
-// [-2] void onEntry(class QEvent *)
+// [-2] void onEntry(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFinalState7onEntryEP6QEvent(void *this_, QEvent * event) {
   ((QFinalState*)this_)->QFinalState::onEntry(event);
@@ -68,7 +68,7 @@ void C_ZN11QFinalState7onEntryEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:59
-// [-2] void onExit(class QEvent *)
+// [-2] void onExit(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFinalState6onExitEP6QEvent(void *this_, QEvent * event) {
   ((QFinalState*)this_)->QFinalState::onExit(event);
@@ -76,7 +76,7 @@ void C_ZN11QFinalState6onExitEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:61
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QFinalState5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QFinalState*)this_)->QFinalState::event(e);
@@ -92,7 +92,7 @@ void* C_ZNK11QFinalState10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:54
-// [-2] void QFinalState(class QState *)
+// [-2] void QFinalState(QState *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFinalStateC2EP6QState(QState * parent) {
   auto _nilp = (MyQFinalState*)(0);

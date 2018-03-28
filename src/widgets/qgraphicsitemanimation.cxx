@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
 public:
   virtual ~MyQGraphicsItemAnimation() {}
-// void QGraphicsItemAnimation(class QObject *)
+// void QGraphicsItemAnimation(QObject *)
 MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void beforeAnimationStep(qreal)
@@ -70,7 +70,7 @@ void* C_ZNK22QGraphicsItemAnimation10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:61
-// [-2] void QGraphicsItemAnimation(class QObject *)
+// [-2] void QGraphicsItemAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsItemAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsItemAnimation*)(0);
@@ -94,7 +94,7 @@ void* C_ZNK22QGraphicsItemAnimation4itemEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:65
-// [-2] void setItem(class QGraphicsItem *)
+// [-2] void setItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation7setItemEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
   ((QGraphicsItemAnimation*)this_)->setItem(item);
@@ -110,7 +110,7 @@ void* C_ZNK22QGraphicsItemAnimation8timeLineEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:68
-// [-2] void setTimeLine(class QTimeLine *)
+// [-2] void setTimeLine(QTimeLine *)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation11setTimeLineEP9QTimeLine(void *this_, QTimeLine * timeLine) {
   ((QGraphicsItemAnimation*)this_)->setTimeLine(timeLine);
@@ -127,7 +127,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:72
-// [-2] void setPosAt(qreal, const class QPointF &)
+// [-2] void setPosAt(qreal, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *this_, qreal step, QPointF* pos) {
   ((QGraphicsItemAnimation*)this_)->setPosAt(step, *pos);

@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQBuffer : public QBuffer {
 public:
   virtual ~MyQBuffer() {}
-// void QBuffer(class QObject *)
+// void QBuffer(QObject *)
 MyQBuffer(QObject * parent) : QBuffer(parent) {}
-// void QBuffer(class QByteArray *, class QObject *)
+// void QBuffer(QByteArray *, QObject *)
 MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void connectNotify(const class QMetaMethod &)
+// void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void disconnectNotify(const class QMetaMethod &)
+// void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -74,7 +74,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:87
-// [-2] void connectNotify(const class QMetaMethod &)
+// [-2] void connectNotify(const QMetaMethod &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QBuffer13connectNotifyERK11QMetaMethod(void *this_, QMetaMethod* arg0) {
   ((QBuffer*)this_)->QBuffer::connectNotify(*arg0);
@@ -82,7 +82,7 @@ void C_ZN7QBuffer13connectNotifyERK11QMetaMethod(void *this_, QMetaMethod* arg0)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:88
-// [-2] void disconnectNotify(const class QMetaMethod &)
+// [-2] void disconnectNotify(const QMetaMethod &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* arg0) {
   ((QBuffer*)this_)->QBuffer::disconnectNotify(*arg0);
@@ -114,7 +114,7 @@ void* C_ZNK7QBuffer10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:60
-// [-2] void QBuffer(class QObject *)
+// [-2] void QBuffer(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QBufferC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQBuffer*)(0);
@@ -123,7 +123,7 @@ void* C_ZN7QBufferC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:61
-// [-2] void QBuffer(class QByteArray *, class QObject *)
+// [-2] void QBuffer(QByteArray *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QBufferC2EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent) {
   auto _nilp = (MyQBuffer*)(0);
@@ -157,7 +157,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:70
-// [-2] void setBuffer(class QByteArray *)
+// [-2] void setBuffer(QByteArray *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QBuffer9setBufferEP10QByteArray(void *this_, QByteArray * a) {
   ((QBuffer*)this_)->setBuffer(a);
@@ -165,7 +165,7 @@ void C_ZN7QBuffer9setBufferEP10QByteArray(void *this_, QByteArray * a) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:72
-// [-2] void setData(const class QByteArray &)
+// [-2] void setData(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QBuffer7setDataERK10QByteArray(void *this_, QByteArray* data) {
   ((QBuffer*)this_)->setData(*data);

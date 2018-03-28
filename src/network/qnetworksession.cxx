@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQNetworkSession : public QNetworkSession {
 public:
   virtual ~MyQNetworkSession() {}
-// void QNetworkSession(const class QNetworkConfiguration &, class QObject *)
+// void QNetworkSession(const QNetworkConfiguration &, QObject *)
 MyQNetworkSession(const QNetworkConfiguration & connConfig, QObject * parent) : QNetworkSession(connConfig, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void connectNotify(const class QMetaMethod &)
+// void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQNetworkSession(const QNetworkConfiguration & connConfig, QObject * parent) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void disconnectNotify(const class QMetaMethod &)
+// void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -47,7 +47,7 @@ MyQNetworkSession(const QNetworkConfiguration & connConfig, QObject * parent) : 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:134
-// [-2] void connectNotify(const class QMetaMethod &)
+// [-2] void connectNotify(const QMetaMethod &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession13connectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QNetworkSession*)this_)->QNetworkSession::connectNotify(*signal);
@@ -55,7 +55,7 @@ void C_ZN15QNetworkSession13connectNotifyERK11QMetaMethod(void *this_, QMetaMeth
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:135
-// [-2] void disconnectNotify(const class QMetaMethod &)
+// [-2] void disconnectNotify(const QMetaMethod &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QNetworkSession*)this_)->QNetworkSession::disconnectNotify(*signal);
@@ -71,7 +71,7 @@ void* C_ZNK15QNetworkSession10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:90
-// [-2] void QNetworkSession(const class QNetworkConfiguration &, class QObject *)
+// [-2] void QNetworkSession(const QNetworkConfiguration &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QNetworkSessionC2ERK21QNetworkConfigurationP7QObject(QNetworkConfiguration* connConfig, QObject * parent) {
   auto _nilp = (MyQNetworkSession*)(0);
@@ -138,7 +138,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:102
-// [16] QVariant sessionProperty(const class QString &)
+// [16] QVariant sessionProperty(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QNetworkSession15sessionPropertyERK7QString(void *this_, QString* key) {
   auto rv = ((QNetworkSession*)this_)->sessionProperty(*key);
@@ -147,7 +147,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:103
-// [-2] void setSessionProperty(const class QString &, const class QVariant &)
+// [-2] void setSessionProperty(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession18setSessionPropertyERK7QStringRK8QVariant(void *this_, QString* key, QVariant* value) {
   ((QNetworkSession*)this_)->setSessionProperty(*key, *value);
@@ -251,7 +251,7 @@ void C_ZN15QNetworkSession6rejectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:125
-// [-2] void stateChanged(class QNetworkSession::State)
+// [-2] void stateChanged(QNetworkSession::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession12stateChangedENS_5StateE(void *this_, QNetworkSession::State arg0) {
   ((QNetworkSession*)this_)->stateChanged(arg0);
@@ -275,7 +275,7 @@ void C_ZN15QNetworkSession6closedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:128
-// [-2] void error(class QNetworkSession::SessionError)
+// [-2] void error(QNetworkSession::SessionError)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession5errorENS_12SessionErrorE(void *this_, QNetworkSession::SessionError arg0) {
   ((QNetworkSession*)this_)->error(arg0);
@@ -283,7 +283,7 @@ void C_ZN15QNetworkSession5errorENS_12SessionErrorE(void *this_, QNetworkSession
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworksession.h:129
-// [-2] void preferredConfigurationChanged(const class QNetworkConfiguration &, _Bool)
+// [-2] void preferredConfigurationChanged(const QNetworkConfiguration &, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession29preferredConfigurationChangedERK21QNetworkConfigurationb(void *this_, QNetworkConfiguration* config, bool isSeamless) {
   ((QNetworkSession*)this_)->preferredConfigurationChanged(*config, isSeamless);
@@ -300,7 +300,7 @@ void C_ZN15QNetworkSession25newConfigurationActivatedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworksession.h:131
-// [-2] void usagePoliciesChanged(class QNetworkSession::UsagePolicies)
+// [-2] void usagePoliciesChanged(QNetworkSession::UsagePolicies)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QNetworkSession20usagePoliciesChangedE6QFlagsINS_11UsagePolicyEE(void *this_, QFlags<QNetworkSession::UsagePolicy> usagePolicies) {

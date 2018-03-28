@@ -18,11 +18,11 @@ public:
   virtual ~MyQDataStream() {}
 // void QDataStream()
 MyQDataStream() : QDataStream() {}
-// void QDataStream(class QIODevice *)
+// void QDataStream(QIODevice *)
 MyQDataStream(QIODevice * arg0) : QDataStream(arg0) {}
-// void QDataStream(class QByteArray *, class QIODevice::OpenMode)
+// void QDataStream(QByteArray *, QIODevice::OpenMode)
 MyQDataStream(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) : QDataStream(arg0, flags) {}
-// void QDataStream(const class QByteArray &)
+// void QDataStream(const QByteArray &)
 MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
 };
 
@@ -36,7 +36,7 @@ void* C_ZN11QDataStreamC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:124
-// [-2] void QDataStream(class QIODevice *)
+// [-2] void QDataStream(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg0) {
   return  new QDataStream(arg0);
@@ -44,7 +44,7 @@ void* C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:125
-// [-2] void QDataStream(class QByteArray *, class QIODevice::OpenMode)
+// [-2] void QDataStream(QByteArray *, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) {
   return  new QDataStream(arg0, flags);
@@ -52,7 +52,7 @@ void* C_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByte
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:126
-// [-2] void QDataStream(const class QByteArray &)
+// [-2] void QDataStream(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamC2ERK10QByteArray(QByteArray* arg0) {
   return  new QDataStream(*arg0);
@@ -75,7 +75,7 @@ void* C_ZNK11QDataStream6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:130
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream9setDeviceEP9QIODevice(void *this_, QIODevice * arg0) {
   ((QDataStream*)this_)->setDevice(arg0);
@@ -107,7 +107,7 @@ QDataStream::Status C_ZNK11QDataStream6statusEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:136
-// [-2] void setStatus(enum QDataStream::Status)
+// [-2] void setStatus(QDataStream::Status)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream9setStatusENS_6StatusE(void *this_, QDataStream::Status status) {
   ((QDataStream*)this_)->setStatus(status);
@@ -134,7 +134,7 @@ QDataStream::FloatingPointPrecision C_ZNK11QDataStream22floatingPointPrecisionEv
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:140
-// [-2] void setFloatingPointPrecision(enum QDataStream::FloatingPointPrecision)
+// [-2] void setFloatingPointPrecision(QDataStream::FloatingPointPrecision)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream25setFloatingPointPrecisionENS_22FloatingPointPrecisionE(void *this_, QDataStream::FloatingPointPrecision precision) {
   ((QDataStream*)this_)->setFloatingPointPrecision(precision);
@@ -150,7 +150,7 @@ QDataStream::ByteOrder C_ZNK11QDataStream9byteOrderEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:143
-// [-2] void setByteOrder(enum QDataStream::ByteOrder)
+// [-2] void setByteOrder(QDataStream::ByteOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDataStream12setByteOrderENS_9ByteOrderE(void *this_, QDataStream::ByteOrder arg0) {
   ((QDataStream*)this_)->setByteOrder(arg0);
@@ -237,7 +237,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:158
-// [32] QDataStream & operator>>(_Bool &)
+// [32] QDataStream & operator>>(bool &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamrsERb(void *this_, bool & i) {
   auto& rv = ((QDataStream*)this_)->operator>>(i);
@@ -336,7 +336,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:173
-// [32] QDataStream & operator<<(_Bool)
+// [32] QDataStream & operator<<(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamlsEb(void *this_, bool i) {
   auto& rv = ((QDataStream*)this_)->operator<<(i);

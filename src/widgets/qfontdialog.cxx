@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQFontDialog : public QFontDialog {
 public:
   virtual ~MyQFontDialog() {}
-// void QFontDialog(class QWidget *)
+// void QFontDialog(QWidget *)
 MyQFontDialog(QWidget * parent) : QFontDialog(parent) {}
-// void QFontDialog(const class QFont &, class QWidget *)
+// void QFontDialog(const QFont &, QWidget *)
 MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -61,7 +61,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:103
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
   ((QFontDialog*)this_)->QFontDialog::changeEvent(event);
@@ -77,7 +77,7 @@ void C_ZN11QFontDialog4doneEi(void *this_, int result) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:105
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent(void *this_, QObject * object, QEvent * event) {
   return (bool)((QFontDialog*)this_)->QFontDialog::eventFilter(object, event);
@@ -94,7 +94,7 @@ void* C_ZNK11QFontDialog10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qfontdialog.h:75
-// [-2] void QFontDialog(class QWidget *)
+// [-2] void QFontDialog(QWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFontDialogC2EP7QWidget(QWidget * parent) {
@@ -106,7 +106,7 @@ void* C_ZN11QFontDialogC2EP7QWidget(QWidget * parent) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qfontdialog.h:76
-// [-2] void QFontDialog(const class QFont &, class QWidget *)
+// [-2] void QFontDialog(const QFont &, QWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFontDialogC2ERK5QFontP7QWidget(QFont* initial, QWidget * parent) {
@@ -125,7 +125,7 @@ void C_ZN11QFontDialogD2Ev(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qfontdialog.h:79
-// [-2] void setCurrentFont(const class QFont &)
+// [-2] void setCurrentFont(const QFont &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog14setCurrentFontERK5QFont(void *this_, QFont* font) {
@@ -156,7 +156,7 @@ return new QFont(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:84
-// [-2] void setOption(enum QFontDialog::FontDialogOption, _Bool)
+// [-2] void setOption(QFontDialog::FontDialogOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog9setOptionENS_16FontDialogOptionEb(void *this_, QFontDialog::FontDialogOption option, bool on) {
   ((QFontDialog*)this_)->setOption(option, on);
@@ -164,7 +164,7 @@ void C_ZN11QFontDialog9setOptionENS_16FontDialogOptionEb(void *this_, QFontDialo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:85
-// [1] bool testOption(enum QFontDialog::FontDialogOption)
+// [1] bool testOption(QFontDialog::FontDialogOption)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QFontDialog10testOptionENS_16FontDialogOptionE(void *this_, QFontDialog::FontDialogOption option) {
   return (bool)((QFontDialog*)this_)->testOption(option);
@@ -190,7 +190,7 @@ return new QFontDialog::FontDialogOptions(rv);
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qfontdialog.h:90
-// [-2] void open(class QObject *, const char *)
+// [-2] void open(QObject *, const char *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
@@ -200,7 +200,7 @@ void C_ZN11QFontDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const 
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:92
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog10setVisibleEb(void *this_, bool visible) {
   ((QFontDialog*)this_)->setVisible(visible);
@@ -208,7 +208,7 @@ void C_ZN11QFontDialog10setVisibleEb(void *this_, bool visible) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:94
-// [16] QFont getFont(_Bool *, class QWidget *)
+// [16] QFont getFont(bool *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFontDialog7getFontEPbP7QWidget(bool * ok, QWidget * parent) {
   auto rv = QFontDialog::getFont(ok, parent);
@@ -217,7 +217,7 @@ return new QFont(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:95
-// [16] QFont getFont(_Bool *, const class QFont &, class QWidget *, const class QString &, QFontDialog::FontDialogOptions)
+// [16] QFont getFont(bool *, const QFont &, QWidget *, const QString &, QFontDialog::FontDialogOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFontDialog7getFontEPbRK5QFontP7QWidgetRK7QString6QFlagsINS_16FontDialogOptionEE(bool * ok, QFont* initial, QWidget * parent, QString* title, QFlags<QFontDialog::FontDialogOption> options) {
   auto rv = QFontDialog::getFont(ok, *initial, parent, *title, options);
@@ -227,7 +227,7 @@ return new QFont(rv);
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qfontdialog.h:99
-// [-2] void currentFontChanged(const class QFont &)
+// [-2] void currentFontChanged(const QFont &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog18currentFontChangedERK5QFont(void *this_, QFont* font) {
@@ -238,7 +238,7 @@ void C_ZN11QFontDialog18currentFontChangedERK5QFont(void *this_, QFont* font) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qfontdialog.h:100
-// [-2] void fontSelected(const class QFont &)
+// [-2] void fontSelected(const QFont &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFontDialog12fontSelectedERK5QFont(void *this_, QFont* font) {

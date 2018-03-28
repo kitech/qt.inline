@@ -19,9 +19,9 @@ public:
   virtual ~MyQTextBoundaryFinder() {}
 // void QTextBoundaryFinder()
 MyQTextBoundaryFinder() : QTextBoundaryFinder() {}
-// void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
+// void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QString &)
 MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QString & string) : QTextBoundaryFinder(type_, string) {}
-// void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
+// void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QChar *, int, unsigned char *, int)
 MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) : QTextBoundaryFinder(type_, chars, length, buffer, bufferSize) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN19QTextBoundaryFinderC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:56
-// [48] QTextBoundaryFinder & operator=(const class QTextBoundaryFinder &)
+// [48] QTextBoundaryFinder & operator=(const QTextBoundaryFinder &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderaSERKS_(void *this_, QTextBoundaryFinder* other) {
   auto& rv = ((QTextBoundaryFinder*)this_)->operator=(*other);
@@ -51,7 +51,7 @@ void C_ZN19QTextBoundaryFinderD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:76
-// [-2] void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
+// [-2] void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type_, QString* string) {
   return  new QTextBoundaryFinder(type_, *string);
@@ -59,7 +59,7 @@ void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFind
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:77
-// [-2] void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
+// [-2] void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QChar *, int, unsigned char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) {
   return  new QTextBoundaryFinder(type_, chars, length, buffer, bufferSize);

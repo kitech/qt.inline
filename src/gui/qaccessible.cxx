@@ -20,7 +20,7 @@ public:
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:414
-// [8] QAccessibleInterface * queryAccessibleInterface(class QObject *)
+// [8] QAccessibleInterface * queryAccessibleInterface(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QAccessible24queryAccessibleInterfaceEP7QObject(QObject * arg0) {
   return (void*)QAccessible::queryAccessibleInterface(arg0);
@@ -28,7 +28,7 @@ void* C_ZN11QAccessible24queryAccessibleInterfaceEP7QObject(QObject * arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:415
-// [4] QAccessible::Id uniqueId(class QAccessibleInterface *)
+// [4] QAccessible::Id uniqueId(QAccessibleInterface *)
 extern "C" Q_DECL_EXPORT
 QAccessible::Id C_ZN11QAccessible8uniqueIdEP20QAccessibleInterface(QAccessibleInterface * iface) {
   return (QAccessible::Id)QAccessible::uniqueId(iface);
@@ -44,7 +44,7 @@ void* C_ZN11QAccessible19accessibleInterfaceEj(QAccessible::Id uniqueId) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:417
-// [4] QAccessible::Id registerAccessibleInterface(class QAccessibleInterface *)
+// [4] QAccessible::Id registerAccessibleInterface(QAccessibleInterface *)
 extern "C" Q_DECL_EXPORT
 QAccessible::Id C_ZN11QAccessible27registerAccessibleInterfaceEP20QAccessibleInterface(QAccessibleInterface * iface) {
   return (QAccessible::Id)QAccessible::registerAccessibleInterface(iface);
@@ -60,7 +60,7 @@ void C_ZN11QAccessible25deleteAccessibleInterfaceEj(QAccessible::Id uniqueId) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:424
-// [-2] void updateAccessibility(class QAccessibleEvent *)
+// [-2] void updateAccessibility(QAccessibleEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QAccessible19updateAccessibilityEP16QAccessibleEvent(QAccessibleEvent * event) {
   QAccessible::updateAccessibility(event);
@@ -76,7 +76,7 @@ bool C_ZN11QAccessible8isActiveEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:427
-// [-2] void setActive(_Bool)
+// [-2] void setActive(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QAccessible9setActiveEb(bool active) {
   QAccessible::setActive(active);
@@ -84,7 +84,7 @@ void C_ZN11QAccessible9setActiveEb(bool active) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:428
-// [-2] void setRootObject(class QObject *)
+// [-2] void setRootObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QAccessible13setRootObjectEP7QObject(QObject * object) {
   QAccessible::setRootObject(object);

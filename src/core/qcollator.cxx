@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQCollator : public QCollator {
 public:
   virtual ~MyQCollator() {}
-// void QCollator(const class QLocale &)
+// void QCollator(const QLocale &)
 MyQCollator(const QLocale & locale) : QCollator(locale) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:86
-// [-2] void QCollator(const class QLocale &)
+// [-2] void QCollator(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QCollatorC2ERK7QLocale(QLocale* locale) {
   return  new QCollator(*locale);
@@ -38,7 +38,7 @@ void C_ZN9QCollatorD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:89
-// [8] QCollator & operator=(const class QCollator &)
+// [8] QCollator & operator=(const QCollator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QCollatoraSERKS_(void *this_, QCollator* arg0) {
   auto& rv = ((QCollator*)this_)->operator=(*arg0);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:93
-// [8] QCollator & operator=(class QCollator &&)
+// [8] QCollator & operator=(QCollator &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QCollatoraSEOS_(void *this_, QCollator && other) {
   auto& rv = ((QCollator*)this_)->operator=(other);
@@ -56,7 +56,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:97
-// [-2] void swap(class QCollator &)
+// [-2] void swap(QCollator &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCollator4swapERS_(void *this_, QCollator* other) {
   ((QCollator*)this_)->swap(*other);
@@ -64,7 +64,7 @@ void C_ZN9QCollator4swapERS_(void *this_, QCollator* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:100
-// [-2] void setLocale(const class QLocale &)
+// [-2] void setLocale(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCollator9setLocaleERK7QLocale(void *this_, QLocale* locale) {
   ((QCollator*)this_)->setLocale(*locale);
@@ -97,7 +97,7 @@ void C_ZN9QCollator18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:106
-// [-2] void setNumericMode(_Bool)
+// [-2] void setNumericMode(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCollator14setNumericModeEb(void *this_, bool on) {
   ((QCollator*)this_)->setNumericMode(on);
@@ -113,7 +113,7 @@ bool C_ZNK9QCollator11numericModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:109
-// [-2] void setIgnorePunctuation(_Bool)
+// [-2] void setIgnorePunctuation(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCollator20setIgnorePunctuationEb(void *this_, bool on) {
   ((QCollator*)this_)->setIgnorePunctuation(on);
@@ -129,7 +129,7 @@ bool C_ZNK9QCollator17ignorePunctuationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:112
-// [4] int compare(const class QString &, const class QString &)
+// [4] int compare(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QCollator7compareERK7QStringS2_(void *this_, QString* s1, QString* s2) {
   return (int)((QCollator*)this_)->compare(*s1, *s2);
@@ -137,7 +137,7 @@ int C_ZNK9QCollator7compareERK7QStringS2_(void *this_, QString* s1, QString* s2)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:113
-// [4] int compare(const class QStringRef &, const class QStringRef &)
+// [4] int compare(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QCollator7compareERK10QStringRefS2_(void *this_, QStringRef* s1, QStringRef* s2) {
   return (int)((QCollator*)this_)->compare(*s1, *s2);
@@ -145,7 +145,7 @@ int C_ZNK9QCollator7compareERK10QStringRefS2_(void *this_, QStringRef* s1, QStri
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:114
-// [4] int compare(const class QChar *, int, const class QChar *, int)
+// [4] int compare(const QChar *, int, const QChar *, int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QCollator7compareEPK5QChariS2_i(void *this_, const QChar * s1, int len1, const QChar * s2, int len2) {
   return (int)((QCollator*)this_)->compare(s1, len1, s2, len2);
@@ -153,7 +153,7 @@ int C_ZNK9QCollator7compareEPK5QChariS2_i(void *this_, const QChar * s1, int len
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:116
-// [1] bool operator()(const class QString &, const class QString &)
+// [1] bool operator()(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QCollatorclERK7QStringS2_(void *this_, QString* s1, QString* s2) {
   return (bool)((QCollator*)this_)->operator()(*s1, *s2);
@@ -161,7 +161,7 @@ bool C_ZNK9QCollatorclERK7QStringS2_(void *this_, QString* s1, QString* s2) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:119
-// [8] QCollatorSortKey sortKey(const class QString &)
+// [8] QCollatorSortKey sortKey(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QCollator7sortKeyERK7QString(void *this_, QString* string) {
   auto rv = ((QCollator*)this_)->sortKey(*string);

@@ -73,7 +73,7 @@ void C_ZN15QSessionManager6cancelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:80
-// [-2] void setRestartHint(enum QSessionManager::RestartHint)
+// [-2] void setRestartHint(QSessionManager::RestartHint)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSessionManager14setRestartHintENS_11RestartHintE(void *this_, QSessionManager::RestartHint arg0) {
   ((QSessionManager*)this_)->setRestartHint(arg0);
@@ -89,7 +89,7 @@ QSessionManager::RestartHint C_ZNK15QSessionManager11restartHintEv(void *this_) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:83
-// [-2] void setRestartCommand(const class QStringList &)
+// [-2] void setRestartCommand(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, QStringList* arg0) {
   ((QSessionManager*)this_)->setRestartCommand(*arg0);
@@ -106,7 +106,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:85
-// [-2] void setDiscardCommand(const class QStringList &)
+// [-2] void setDiscardCommand(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, QStringList* arg0) {
   ((QSessionManager*)this_)->setDiscardCommand(*arg0);
@@ -123,7 +123,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:88
-// [-2] void setManagerProperty(const class QString &, const class QString &)
+// [-2] void setManagerProperty(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSessionManager18setManagerPropertyERK7QStringS2_(void *this_, QString* name, QString* value) {
   ((QSessionManager*)this_)->setManagerProperty(*name, *value);
@@ -131,7 +131,7 @@ void C_ZN15QSessionManager18setManagerPropertyERK7QStringS2_(void *this_, QStrin
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:89
-// [-2] void setManagerProperty(const class QString &, const class QStringList &)
+// [-2] void setManagerProperty(const QString &, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSessionManager18setManagerPropertyERK7QStringRK11QStringList(void *this_, QString* name, QStringList* value) {
   ((QSessionManager*)this_)->setManagerProperty(*name, *value);

@@ -18,16 +18,16 @@ public:
   virtual ~MyQImage() {}
 // void QImage()
 MyQImage() : QImage() {}
-// void QImage(const class QSize &, enum QImage::Format)
+// void QImage(const QSize &, QImage::Format)
 MyQImage(const QSize & size, QImage::Format format) : QImage(size, format) {}
-// void QImage(int, int, enum QImage::Format)
+// void QImage(int, int, QImage::Format)
 MyQImage(int width, int height, QImage::Format format) : QImage(width, height, format) {}
 // void QImage(const char *const *)
 MyQImage(char** xpm) : QImage(xpm) {}
-// void QImage(const class QString &, const char *)
+// void QImage(const QString &, const char *)
 MyQImage(const QString & fileName, const char * format) : QImage(fileName, format) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(enum QPaintDevice::PaintDeviceMetric)
+// int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -40,7 +40,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
   }
 
 // Protected Visibility=Default Availability=Available
-// QImage mirrored_helper(_Bool, _Bool)
+// QImage mirrored_helper(bool, bool)
   virtual QImage mirrored_helper(bool horizontal, bool vertical) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mirrored_helper", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -66,7 +66,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
   }
 
 // Protected Visibility=Default Availability=Available
-// void mirrored_inplace(_Bool, _Bool)
+// void mirrored_inplace(bool, bool)
   virtual void mirrored_inplace(bool horizontal, bool vertical) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mirrored_inplace", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -90,7 +90,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
   }
 
 // Protected Visibility=Default Availability=Available
-// QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
+// QImage convertToFormat_helper(QImage::Format, Qt::ImageConversionFlags)
   virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"convertToFormat_helper", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -103,7 +103,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
   }
 
 // Protected Visibility=Default Availability=Available
-// bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
+// bool convertToFormat_inplace(QImage::Format, Qt::ImageConversionFlags)
   virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"convertToFormat_inplace", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -132,7 +132,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:352
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
   return (int)((QImage*)this_)->QImage::metric(metric);
@@ -140,7 +140,7 @@ int C_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintD
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:353
-// [32] QImage mirrored_helper(_Bool, _Bool)
+// [32] QImage mirrored_helper(bool, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage15mirrored_helperEbb(void *this_, bool horizontal, bool vertical) {
   auto rv = ((QImage*)this_)->QImage::mirrored_helper(horizontal, vertical);
@@ -158,7 +158,7 @@ return new QImage(rv);
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:355
-// [-2] void mirrored_inplace(_Bool, _Bool)
+// [-2] void mirrored_inplace(bool, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage16mirrored_inplaceEbb(void *this_, bool horizontal, bool vertical) {
   ((QImage*)this_)->QImage::mirrored_inplace(horizontal, vertical);
@@ -174,7 +174,7 @@ void C_ZN6QImage18rgbSwapped_inplaceEv(void *this_) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:357
-// [32] QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
+// [32] QImage convertToFormat_helper(QImage::Format, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = ((QImage*)this_)->QImage::convertToFormat_helper(format, flags);
@@ -183,7 +183,7 @@ return new QImage(rv);
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:358
-// [1] bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
+// [1] bool convertToFormat_inplace(QImage::Format, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
   return (bool)((QImage*)this_)->QImage::convertToFormat_inplace(format, flags);
@@ -209,7 +209,7 @@ void* C_ZN6QImageC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:137
-// [-2] void QImage(const class QSize &, enum QImage::Format)
+// [-2] void QImage(const QSize &, QImage::Format)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImageC2ERK5QSizeNS_6FormatE(QSize* size, QImage::Format format) {
   auto _nilp = (MyQImage*)(0);
@@ -218,7 +218,7 @@ void* C_ZN6QImageC2ERK5QSizeNS_6FormatE(QSize* size, QImage::Format format) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:138
-// [-2] void QImage(int, int, enum QImage::Format)
+// [-2] void QImage(int, int, QImage::Format)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImageC2EiiNS_6FormatE(int width, int height, QImage::Format format) {
   auto _nilp = (MyQImage*)(0);
@@ -236,7 +236,7 @@ void* C_ZN6QImageC2EPKPKc(char** xpm) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:147
-// [-2] void QImage(const class QString &, const char *)
+// [-2] void QImage(const QString &, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImageC2ERK7QStringPKc(QString* fileName, const char * format) {
   auto _nilp = (MyQImage*)(0);
@@ -252,7 +252,7 @@ void C_ZN6QImageD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:157
-// [32] QImage & operator=(const class QImage &)
+// [32] QImage & operator=(const QImage &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImageaSERKS_(void *this_, QImage* arg0) {
   auto& rv = ((QImage*)this_)->operator=(*arg0);
@@ -261,7 +261,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:159
-// [32] QImage & operator=(class QImage &&)
+// [32] QImage & operator=(QImage &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImageaSEOS_(void *this_, QImage && other) {
   auto& rv = ((QImage*)this_)->operator=(other);
@@ -271,7 +271,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qimage.h:162
-// [-2] void swap(class QImage &)
+// [-2] void swap(QImage &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage4swapERS_(void *this_, QImage* other) {
@@ -297,7 +297,7 @@ int C_ZNK6QImage7devTypeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:169
-// [1] bool operator==(const class QImage &)
+// [1] bool operator==(const QImage &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QImageeqERKS_(void *this_, QImage* arg0) {
   return (bool)((QImage*)this_)->operator==(*arg0);
@@ -305,7 +305,7 @@ bool C_ZNK6QImageeqERKS_(void *this_, QImage* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:170
-// [1] bool operator!=(const class QImage &)
+// [1] bool operator!=(const QImage &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QImageneERKS_(void *this_, QImage* arg0) {
   return (bool)((QImage*)this_)->operator!=(*arg0);
@@ -329,7 +329,7 @@ bool C_ZNK6QImage10isDetachedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:175
-// [32] QImage copy(const class QRect &)
+// [32] QImage copy(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage4copyERK5QRect(void *this_, QRect* rect) {
   auto rv = ((QImage*)this_)->copy(*rect);
@@ -355,7 +355,7 @@ QImage::Format C_ZNK6QImage6formatEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:182
-// [32] QImage convertToFormat(enum QImage::Format, Qt::ImageConversionFlags)
+// [32] QImage convertToFormat(QImage::Format, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNKR6QImage15convertToFormatENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format f, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = ((QImage*)this_)->convertToFormat(f, flags);
@@ -364,7 +364,7 @@ return new QImage(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:184
-// [32] QImage convertToFormat(enum QImage::Format, Qt::ImageConversionFlags)
+// [32] QImage convertToFormat(QImage::Format, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNO6QImage15convertToFormatENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format f, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = ((QImage*)this_)->convertToFormat(f, flags);
@@ -373,7 +373,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:195
-// [1] bool reinterpretAsFormat(enum QImage::Format)
+// [1] bool reinterpretAsFormat(QImage::Format)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QImage19reinterpretAsFormatENS_6FormatE(void *this_, QImage::Format f) {
   return (bool)((QImage*)this_)->reinterpretAsFormat(f);
@@ -577,7 +577,7 @@ bool C_ZNK6QImage5validEii(void *this_, int x, int y) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:228
-// [1] bool valid(const class QPoint &)
+// [1] bool valid(const QPoint &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QImage5validERK6QPoint(void *this_, QPoint* pt) {
   return (bool)((QImage*)this_)->valid(*pt);
@@ -593,7 +593,7 @@ int C_ZNK6QImage10pixelIndexEii(void *this_, int x, int y) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:231
-// [4] int pixelIndex(const class QPoint &)
+// [4] int pixelIndex(const QPoint &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QImage10pixelIndexERK6QPoint(void *this_, QPoint* pt) {
   return (int)((QImage*)this_)->pixelIndex(*pt);
@@ -609,7 +609,7 @@ QRgb C_ZNK6QImage5pixelEii(void *this_, int x, int y) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:234
-// [4] QRgb pixel(const class QPoint &)
+// [4] QRgb pixel(const QPoint &)
 extern "C" Q_DECL_EXPORT
 QRgb C_ZNK6QImage5pixelERK6QPoint(void *this_, QPoint* pt) {
   return (QRgb)((QImage*)this_)->pixel(*pt);
@@ -625,7 +625,7 @@ void C_ZN6QImage8setPixelEiij(void *this_, int x, int y, uint index_or_rgb) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:237
-// [-2] void setPixel(const class QPoint &, uint)
+// [-2] void setPixel(const QPoint &, uint)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage8setPixelERK6QPointj(void *this_, QPoint* pt, uint index_or_rgb) {
   ((QImage*)this_)->setPixel(*pt, index_or_rgb);
@@ -646,7 +646,7 @@ return new QColor(rv);
 // Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qimage.h:240
-// [16] QColor pixelColor(const class QPoint &)
+// [16] QColor pixelColor(const QPoint &)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage10pixelColorERK6QPoint(void *this_, QPoint* pt) {
@@ -658,7 +658,7 @@ return new QColor(rv);
 // Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qimage.h:242
-// [-2] void setPixelColor(int, int, const class QColor &)
+// [-2] void setPixelColor(int, int, const QColor &)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage13setPixelColorEiiRK6QColor(void *this_, int x, int y, QColor* c) {
@@ -669,7 +669,7 @@ void C_ZN6QImage13setPixelColorEiiRK6QColor(void *this_, int x, int y, QColor* c
 // Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qimage.h:243
-// [-2] void setPixelColor(const class QPoint &, const class QColor &)
+// [-2] void setPixelColor(const QPoint &, const QColor &)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage13setPixelColorERK6QPointRK6QColor(void *this_, QPoint* pt, QColor* c) {
@@ -704,7 +704,7 @@ void C_ZN6QImage4fillEj(void *this_, uint pixel) {
 // Public Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qimage.h:256
-// [-2] void fill(const class QColor &)
+// [-2] void fill(const QColor &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage4fillERK6QColor(void *this_, QColor* color) {
@@ -733,7 +733,7 @@ bool C_ZNK6QImage15hasAlphaChannelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:261
-// [-2] void setAlphaChannel(const class QImage &)
+// [-2] void setAlphaChannel(const QImage &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage15setAlphaChannelERKS_(void *this_, QImage* alphaChannel) {
   ((QImage*)this_)->setAlphaChannel(*alphaChannel);
@@ -759,7 +759,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:265
-// [32] QImage createHeuristicMask(_Bool)
+// [32] QImage createHeuristicMask(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage19createHeuristicMaskEb(void *this_, bool clipTight) {
   auto rv = ((QImage*)this_)->createHeuristicMask(clipTight);
@@ -786,7 +786,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:272
-// [32] QImage scaled(const class QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
+// [32] QImage scaled(const QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE(void *this_, QSize* s, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode) {
   auto rv = ((QImage*)this_)->scaled(*s, aspectMode, mode);
@@ -813,7 +813,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:276
-// [32] QImage transformed(const class QMatrix &, Qt::TransformationMode)
+// [32] QImage transformed(const QMatrix &, Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, QMatrix* matrix, Qt::TransformationMode mode) {
   auto rv = ((QImage*)this_)->transformed(*matrix, mode);
@@ -822,7 +822,7 @@ return new QImage(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:277
-// [48] QMatrix trueMatrix(const class QMatrix &, int, int)
+// [48] QMatrix trueMatrix(const QMatrix &, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImage10trueMatrixERK7QMatrixii(QMatrix* arg0, int w, int h) {
   auto rv = QImage::trueMatrix(*arg0, w, h);
@@ -831,7 +831,7 @@ return new QMatrix(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:278
-// [32] QImage transformed(const class QTransform &, Qt::TransformationMode)
+// [32] QImage transformed(const QTransform &, Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, QTransform* matrix, Qt::TransformationMode mode) {
   auto rv = ((QImage*)this_)->transformed(*matrix, mode);
@@ -840,7 +840,7 @@ return new QImage(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:279
-// [88] QTransform trueMatrix(const class QTransform &, int, int)
+// [88] QTransform trueMatrix(const QTransform &, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImage10trueMatrixERK10QTransformii(QTransform* arg0, int w, int h) {
   auto rv = QImage::trueMatrix(*arg0, w, h);
@@ -849,7 +849,7 @@ return new QTransform(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:281
-// [32] QImage mirrored(_Bool, _Bool)
+// [32] QImage mirrored(bool, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZNKR6QImage8mirroredEbb(void *this_, bool horizontally, bool vertically) {
   auto rv = ((QImage*)this_)->mirrored(horizontally, vertically);
@@ -858,7 +858,7 @@ return new QImage(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:283
-// [32] QImage && mirrored(_Bool, _Bool)
+// [32] QImage && mirrored(bool, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZNO6QImage8mirroredEbb(void *this_, bool horizontally, bool vertically) {
   auto rv = ((QImage*)this_)->mirrored(horizontally, vertically);
@@ -885,7 +885,7 @@ void C_ZNO6QImage10rgbSwappedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:293
-// [-2] void invertPixels(enum QImage::InvertMode)
+// [-2] void invertPixels(QImage::InvertMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage12invertPixelsENS_10InvertModeE(void *this_, QImage::InvertMode arg0) {
   ((QImage*)this_)->invertPixels(arg0);
@@ -893,7 +893,7 @@ void C_ZN6QImage12invertPixelsENS_10InvertModeE(void *this_, QImage::InvertMode 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:296
-// [1] bool load(class QIODevice *, const char *)
+// [1] bool load(QIODevice *, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QImage4loadEP9QIODevicePKc(void *this_, QIODevice * device, const char * format) {
   return (bool)((QImage*)this_)->load(device, format);
@@ -901,7 +901,7 @@ bool C_ZN6QImage4loadEP9QIODevicePKc(void *this_, QIODevice * device, const char
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:297
-// [1] bool load(const class QString &, const char *)
+// [1] bool load(const QString &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QImage4loadERK7QStringPKc(void *this_, QString* fileName, const char * format) {
   return (bool)((QImage*)this_)->load(*fileName, format);
@@ -917,7 +917,7 @@ bool C_ZN6QImage12loadFromDataEPKhiPKc(void *this_, const uchar * buf, int len_,
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:299
-// [1] bool loadFromData(const class QByteArray &, const char *)
+// [1] bool loadFromData(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QImage12loadFromDataERK10QByteArrayPKc(void *this_, QByteArray* data, const char * aformat) {
   return (bool)((QImage*)this_)->loadFromData(*data, aformat);
@@ -925,7 +925,7 @@ bool C_ZN6QImage12loadFromDataERK10QByteArrayPKc(void *this_, QByteArray* data, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:302
-// [1] bool save(const class QString &, const char *, int)
+// [1] bool save(const QString &, const char *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QImage4saveERK7QStringPKci(void *this_, QString* fileName, const char * format, int quality) {
   return (bool)((QImage*)this_)->save(*fileName, format, quality);
@@ -933,7 +933,7 @@ bool C_ZNK6QImage4saveERK7QStringPKci(void *this_, QString* fileName, const char
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:303
-// [1] bool save(class QIODevice *, const char *, int)
+// [1] bool save(QIODevice *, const char *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QImage4saveEP9QIODevicePKci(void *this_, QIODevice * device, const char * format, int quality) {
   return (bool)((QImage*)this_)->save(device, format, quality);
@@ -950,7 +950,7 @@ return new QImage(rv);
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:306
-// [32] QImage fromData(const class QByteArray &, const char *)
+// [32] QImage fromData(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImage8fromDataERK10QByteArrayPKc(QByteArray* data, const char * format) {
   auto rv = QImage::fromData(*data, format);
@@ -1016,7 +1016,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:322
-// [-2] void setOffset(const class QPoint &)
+// [-2] void setOffset(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage9setOffsetERK6QPoint(void *this_, QPoint* arg0) {
   ((QImage*)this_)->setOffset(*arg0);
@@ -1033,7 +1033,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:325
-// [8] QString text(const class QString &)
+// [8] QString text(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QImage4textERK7QString(void *this_, QString* key) {
   auto rv = ((QImage*)this_)->text(*key);
@@ -1042,7 +1042,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:326
-// [-2] void setText(const class QString &, const class QString &)
+// [-2] void setText(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QImage7setTextERK7QStringS2_(void *this_, QString* key, QString* value) {
   ((QImage*)this_)->setText(*key, *value);
@@ -1059,7 +1059,7 @@ return new QPixelFormat(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:329
-// [8] QPixelFormat toPixelFormat(class QImage::Format)
+// [8] QPixelFormat toPixelFormat(QImage::Format)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QImage13toPixelFormatENS_6FormatE(QImage::Format format) {
   auto rv = QImage::toPixelFormat(format);
@@ -1068,7 +1068,7 @@ return new QPixelFormat(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:330
-// [4] QImage::Format toImageFormat(class QPixelFormat)
+// [4] QImage::Format toImageFormat(QPixelFormat)
 extern "C" Q_DECL_EXPORT
 QImage::Format C_ZN6QImage13toImageFormatE12QPixelFormat(QPixelFormat* format) {
   return (QImage::Format)QImage::toImageFormat(*format);

@@ -19,9 +19,9 @@ public:
   virtual ~MyQStorageInfo() {}
 // void QStorageInfo()
 MyQStorageInfo() : QStorageInfo() {}
-// void QStorageInfo(const class QString &)
+// void QStorageInfo(const QString &)
 MyQStorageInfo(const QString & path) : QStorageInfo(path) {}
-// void QStorageInfo(const class QDir &)
+// void QStorageInfo(const QDir &)
 MyQStorageInfo(const QDir & dir) : QStorageInfo(dir) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN12QStorageInfoC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:59
-// [-2] void QStorageInfo(const class QString &)
+// [-2] void QStorageInfo(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoC2ERK7QString(QString* path) {
   return  new QStorageInfo(*path);
@@ -43,7 +43,7 @@ void* C_ZN12QStorageInfoC2ERK7QString(QString* path) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:60
-// [-2] void QStorageInfo(const class QDir &)
+// [-2] void QStorageInfo(const QDir &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoC2ERK4QDir(QDir* dir) {
   return  new QStorageInfo(*dir);
@@ -58,7 +58,7 @@ void C_ZN12QStorageInfoD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:64
-// [8] QStorageInfo & operator=(const class QStorageInfo &)
+// [8] QStorageInfo & operator=(const QStorageInfo &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoaSERKS_(void *this_, QStorageInfo* other) {
   auto& rv = ((QStorageInfo*)this_)->operator=(*other);
@@ -67,7 +67,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:66
-// [8] QStorageInfo & operator=(class QStorageInfo &&)
+// [8] QStorageInfo & operator=(QStorageInfo &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoaSEOS_(void *this_, QStorageInfo && other) {
   auto& rv = ((QStorageInfo*)this_)->operator=(other);
@@ -76,7 +76,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:69
-// [-2] void swap(class QStorageInfo &)
+// [-2] void swap(QStorageInfo &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QStorageInfo4swapERS_(void *this_, QStorageInfo* other) {
   ((QStorageInfo*)this_)->swap(*other);
@@ -84,7 +84,7 @@ void C_ZN12QStorageInfo4swapERS_(void *this_, QStorageInfo* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:72
-// [-2] void setPath(const class QString &)
+// [-2] void setPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QStorageInfo7setPathERK7QString(void *this_, QString* path) {
   ((QStorageInfo*)this_)->setPath(*path);

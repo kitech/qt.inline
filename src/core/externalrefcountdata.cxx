@@ -45,7 +45,7 @@ void C_ZN15QtSharedPointer20ExternalRefCountData7destroyEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:160
-// [8] QtSharedPointer::ExternalRefCountData * getAndRef(const class QObject *)
+// [8] QtSharedPointer::ExternalRefCountData * getAndRef(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QtSharedPointer20ExternalRefCountData9getAndRefEPK7QObject(const QObject * arg0) {
   return (void*)QtSharedPointer::ExternalRefCountData::getAndRef(arg0);
@@ -53,7 +53,7 @@ void* C_ZN15QtSharedPointer20ExternalRefCountData9getAndRefEPK7QObject(const QOb
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:161
-// [-2] void setQObjectShared(const class QObject *, _Bool)
+// [-2] void setQObjectShared(const QObject *, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEPK7QObjectb(void *this_, const QObject * arg0, bool enable) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->setQObjectShared(arg0, enable);
@@ -61,7 +61,7 @@ void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEPK7QObjectb(v
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:162
-// [-2] void checkQObjectShared(const class QObject *)
+// [-2] void checkQObjectShared(const QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEPK7QObject(void *this_, const QObject * arg0) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared(arg0);

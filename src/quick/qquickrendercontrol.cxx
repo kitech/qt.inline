@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQQuickRenderControl : public QQuickRenderControl {
 public:
   virtual ~MyQQuickRenderControl() {}
-// void QQuickRenderControl(class QObject *)
+// void QQuickRenderControl(QObject *)
 MyQQuickRenderControl(QObject * parent) : QQuickRenderControl(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK19QQuickRenderControl10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:58
-// [-2] void QQuickRenderControl(class QObject *)
+// [-2] void QQuickRenderControl(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickRenderControlC2EP7QObject(QObject * parent) {
   return  new QQuickRenderControl(parent);
@@ -46,7 +46,7 @@ void C_ZN19QQuickRenderControlD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:61
-// [-2] void prepareThread(class QThread *)
+// [-2] void prepareThread(QThread *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QQuickRenderControl13prepareThreadEP7QThread(void *this_, QThread * targetThread) {
   ((QQuickRenderControl*)this_)->prepareThread(targetThread);
@@ -95,7 +95,7 @@ return new QImage(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:71
-// [8] QWindow * renderWindowFor(class QQuickWindow *, class QPoint *)
+// [8] QWindow * renderWindowFor(QQuickWindow *, QPoint *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickRenderControl15renderWindowForEP12QQuickWindowP6QPoint(QQuickWindow * win, QPoint * offset) {
   return (void*)QQuickRenderControl::renderWindowFor(win, offset);
@@ -103,7 +103,7 @@ void* C_ZN19QQuickRenderControl15renderWindowForEP12QQuickWindowP6QPoint(QQuickW
 
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:72
-// [8] QWindow * renderWindow(class QPoint *)
+// [8] QWindow * renderWindow(QPoint *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickRenderControl12renderWindowEP6QPoint(void *this_, QPoint * offset) {
   return (void*)((QQuickRenderControl*)this_)->renderWindow(offset);

@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQScrollEvent : public QScrollEvent {
 public:
   virtual ~MyQScrollEvent() {}
-// void QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)
+// void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState)
 MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) : QScrollEvent(contentPos, overshoot, scrollState) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1022
-// [-2] void QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)
+// [-2] void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(QPointF* contentPos, QPointF* overshoot, QScrollEvent::ScrollState scrollState) {
   return  new QScrollEvent(*contentPos, *overshoot, scrollState);

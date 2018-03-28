@@ -29,7 +29,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylefactory.h:55
-// [8] QStyle * create(const class QString &)
+// [8] QStyle * create(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStyleFactory6createERK7QString(QString* arg0) {
   return (void*)QStyleFactory::create(*arg0);

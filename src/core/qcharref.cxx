@@ -20,7 +20,7 @@ public:
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1036
-// [16] QCharRef & operator=(class QChar)
+// [16] QCharRef & operator=(QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QCharRefaSE5QChar(void *this_, QChar* c) {
   auto& rv = ((QCharRef*)this_)->operator=(*c);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1047
-// [16] QCharRef & operator=(const class QCharRef &)
+// [16] QCharRef & operator=(const QCharRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QCharRefaSERKS_(void *this_, QCharRef* c) {
   auto& rv = ((QCharRef*)this_)->operator=(*c);

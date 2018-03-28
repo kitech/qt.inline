@@ -18,7 +18,7 @@ public:
   virtual ~MyQIODevice() {}
 // void QIODevice()
 MyQIODevice() : QIODevice() {}
-// void QIODevice(class QObject *)
+// void QIODevice(QObject *)
 MyQIODevice(QObject * parent) : QIODevice(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // qint64 readData(char *, qint64)
@@ -72,7 +72,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void setErrorString(const class QString &)
+// void setErrorString(const QString &)
   virtual void setErrorString(const QString & errorString) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setErrorString", &handled, 1, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -109,7 +109,7 @@ void C_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:172
-// [-2] void setErrorString(const class QString &)
+// [-2] void setErrorString(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice14setErrorStringERK7QString(void *this_, QString* errorString) {
   ((QIODevice*)this_)->QIODevice::setErrorString(*errorString);
@@ -134,7 +134,7 @@ void* C_ZN9QIODeviceC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:85
-// [-2] void QIODevice(class QObject *)
+// [-2] void QIODevice(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODeviceC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQIODevice*)(0);
@@ -159,7 +159,7 @@ return new QIODevice::OpenMode(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:91
-// [-2] void setTextModeEnabled(_Bool)
+// [-2] void setTextModeEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice18setTextModeEnabledEb(void *this_, bool enabled) {
   ((QIODevice*)this_)->setTextModeEnabled(enabled);
@@ -459,7 +459,7 @@ qint64 C_ZN9QIODevice5writeEPKc(void *this_, const char * data) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:134
-// [8] qint64 write(const class QByteArray &)
+// [8] qint64 write(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice5writeERK10QByteArray(void *this_, QByteArray* data) {
   return (qint64)((QIODevice*)this_)->write(*data);

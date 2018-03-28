@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQInputEvent : public QInputEvent {
 public:
   virtual ~MyQInputEvent() {}
-// void QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)
+// void QInputEvent(QEvent::Type, Qt::KeyboardModifiers)
 MyQInputEvent(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers) : QInputEvent(type_, modifiers) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:71
-// [-2] void QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)
+// [-2] void QInputEvent(QEvent::Type, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QInputEventC2EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers) {
   return  new QInputEvent(type_, modifiers);

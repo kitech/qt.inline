@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQFormLayout : public QFormLayout {
 public:
   virtual ~MyQFormLayout() {}
-// void QFormLayout(class QWidget *)
+// void QFormLayout(QWidget *)
 MyQFormLayout(QWidget * parent) : QFormLayout(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK11QFormLayout10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:91
-// [-2] void QFormLayout(class QWidget *)
+// [-2] void QFormLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFormLayoutC2EP7QWidget(QWidget * parent) {
   return  new QFormLayout(parent);
@@ -46,7 +46,7 @@ void C_ZN11QFormLayoutD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:94
-// [-2] void setFieldGrowthPolicy(enum QFormLayout::FieldGrowthPolicy)
+// [-2] void setFieldGrowthPolicy(QFormLayout::FieldGrowthPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout20setFieldGrowthPolicyENS_17FieldGrowthPolicyE(void *this_, QFormLayout::FieldGrowthPolicy policy) {
   ((QFormLayout*)this_)->setFieldGrowthPolicy(policy);
@@ -62,7 +62,7 @@ QFormLayout::FieldGrowthPolicy C_ZNK11QFormLayout17fieldGrowthPolicyEv(void *thi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:96
-// [-2] void setRowWrapPolicy(enum QFormLayout::RowWrapPolicy)
+// [-2] void setRowWrapPolicy(QFormLayout::RowWrapPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout16setRowWrapPolicyENS_13RowWrapPolicyE(void *this_, QFormLayout::RowWrapPolicy policy) {
   ((QFormLayout*)this_)->setRowWrapPolicy(policy);
@@ -158,7 +158,7 @@ void C_ZN11QFormLayout10setSpacingEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:111
-// [-2] void addRow(class QWidget *, class QWidget *)
+// [-2] void addRow(QWidget *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout6addRowEP7QWidgetS1_(void *this_, QWidget * label, QWidget * field) {
   ((QFormLayout*)this_)->addRow(label, field);
@@ -166,7 +166,7 @@ void C_ZN11QFormLayout6addRowEP7QWidgetS1_(void *this_, QWidget * label, QWidget
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:112
-// [-2] void addRow(class QWidget *, class QLayout *)
+// [-2] void addRow(QWidget *, QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout6addRowEP7QWidgetP7QLayout(void *this_, QWidget * label, QLayout * field) {
   ((QFormLayout*)this_)->addRow(label, field);
@@ -174,7 +174,7 @@ void C_ZN11QFormLayout6addRowEP7QWidgetP7QLayout(void *this_, QWidget * label, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:113
-// [-2] void addRow(const class QString &, class QWidget *)
+// [-2] void addRow(const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout6addRowERK7QStringP7QWidget(void *this_, QString* labelText, QWidget * field) {
   ((QFormLayout*)this_)->addRow(*labelText, field);
@@ -182,7 +182,7 @@ void C_ZN11QFormLayout6addRowERK7QStringP7QWidget(void *this_, QString* labelTex
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:114
-// [-2] void addRow(const class QString &, class QLayout *)
+// [-2] void addRow(const QString &, QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout6addRowERK7QStringP7QLayout(void *this_, QString* labelText, QLayout * field) {
   ((QFormLayout*)this_)->addRow(*labelText, field);
@@ -190,7 +190,7 @@ void C_ZN11QFormLayout6addRowERK7QStringP7QLayout(void *this_, QString* labelTex
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:115
-// [-2] void addRow(class QWidget *)
+// [-2] void addRow(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout6addRowEP7QWidget(void *this_, QWidget * widget) {
   ((QFormLayout*)this_)->addRow(widget);
@@ -198,7 +198,7 @@ void C_ZN11QFormLayout6addRowEP7QWidget(void *this_, QWidget * widget) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:116
-// [-2] void addRow(class QLayout *)
+// [-2] void addRow(QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout6addRowEP7QLayout(void *this_, QLayout * layout) {
   ((QFormLayout*)this_)->addRow(layout);
@@ -206,7 +206,7 @@ void C_ZN11QFormLayout6addRowEP7QLayout(void *this_, QLayout * layout) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:118
-// [-2] void insertRow(int, class QWidget *, class QWidget *)
+// [-2] void insertRow(int, QWidget *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9insertRowEiP7QWidgetS1_(void *this_, int row, QWidget * label, QWidget * field) {
   ((QFormLayout*)this_)->insertRow(row, label, field);
@@ -214,7 +214,7 @@ void C_ZN11QFormLayout9insertRowEiP7QWidgetS1_(void *this_, int row, QWidget * l
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:119
-// [-2] void insertRow(int, class QWidget *, class QLayout *)
+// [-2] void insertRow(int, QWidget *, QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9insertRowEiP7QWidgetP7QLayout(void *this_, int row, QWidget * label, QLayout * field) {
   ((QFormLayout*)this_)->insertRow(row, label, field);
@@ -222,7 +222,7 @@ void C_ZN11QFormLayout9insertRowEiP7QWidgetP7QLayout(void *this_, int row, QWidg
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:120
-// [-2] void insertRow(int, const class QString &, class QWidget *)
+// [-2] void insertRow(int, const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9insertRowEiRK7QStringP7QWidget(void *this_, int row, QString* labelText, QWidget * field) {
   ((QFormLayout*)this_)->insertRow(row, *labelText, field);
@@ -230,7 +230,7 @@ void C_ZN11QFormLayout9insertRowEiRK7QStringP7QWidget(void *this_, int row, QStr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:121
-// [-2] void insertRow(int, const class QString &, class QLayout *)
+// [-2] void insertRow(int, const QString &, QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9insertRowEiRK7QStringP7QLayout(void *this_, int row, QString* labelText, QLayout * field) {
   ((QFormLayout*)this_)->insertRow(row, *labelText, field);
@@ -238,7 +238,7 @@ void C_ZN11QFormLayout9insertRowEiRK7QStringP7QLayout(void *this_, int row, QStr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:122
-// [-2] void insertRow(int, class QWidget *)
+// [-2] void insertRow(int, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9insertRowEiP7QWidget(void *this_, int row, QWidget * widget) {
   ((QFormLayout*)this_)->insertRow(row, widget);
@@ -246,7 +246,7 @@ void C_ZN11QFormLayout9insertRowEiP7QWidget(void *this_, int row, QWidget * widg
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:123
-// [-2] void insertRow(int, class QLayout *)
+// [-2] void insertRow(int, QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9insertRowEiP7QLayout(void *this_, int row, QLayout * layout) {
   ((QFormLayout*)this_)->insertRow(row, layout);
@@ -266,7 +266,7 @@ void C_ZN11QFormLayout9removeRowEi(void *this_, int row) {
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:126
-// [-2] void removeRow(class QWidget *)
+// [-2] void removeRow(QWidget *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9removeRowEP7QWidget(void *this_, QWidget * widget) {
@@ -277,7 +277,7 @@ void C_ZN11QFormLayout9removeRowEP7QWidget(void *this_, QWidget * widget) {
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:127
-// [-2] void removeRow(class QLayout *)
+// [-2] void removeRow(QLayout *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9removeRowEP7QLayout(void *this_, QLayout * layout) {
@@ -300,7 +300,7 @@ void C_ZN11QFormLayout7takeRowEi(void *this_, int row) {
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:130
-// [16] QFormLayout::TakeRowResult takeRow(class QWidget *)
+// [16] QFormLayout::TakeRowResult takeRow(QWidget *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7takeRowEP7QWidget(void *this_, QWidget * widget) {
@@ -312,7 +312,7 @@ void C_ZN11QFormLayout7takeRowEP7QWidget(void *this_, QWidget * widget) {
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtWidgets/qformlayout.h:131
-// [16] QFormLayout::TakeRowResult takeRow(class QLayout *)
+// [16] QFormLayout::TakeRowResult takeRow(QLayout *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7takeRowEP7QLayout(void *this_, QLayout * layout) {
@@ -323,7 +323,7 @@ void C_ZN11QFormLayout7takeRowEP7QLayout(void *this_, QLayout * layout) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:133
-// [-2] void setItem(int, enum QFormLayout::ItemRole, class QLayoutItem *)
+// [-2] void setItem(int, QFormLayout::ItemRole, QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7setItemEiNS_8ItemRoleEP11QLayoutItem(void *this_, int row, QFormLayout::ItemRole role, QLayoutItem * item) {
   ((QFormLayout*)this_)->setItem(row, role, item);
@@ -331,7 +331,7 @@ void C_ZN11QFormLayout7setItemEiNS_8ItemRoleEP11QLayoutItem(void *this_, int row
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:134
-// [-2] void setWidget(int, enum QFormLayout::ItemRole, class QWidget *)
+// [-2] void setWidget(int, QFormLayout::ItemRole, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9setWidgetEiNS_8ItemRoleEP7QWidget(void *this_, int row, QFormLayout::ItemRole role, QWidget * widget) {
   ((QFormLayout*)this_)->setWidget(row, role, widget);
@@ -339,7 +339,7 @@ void C_ZN11QFormLayout9setWidgetEiNS_8ItemRoleEP7QWidget(void *this_, int row, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:135
-// [-2] void setLayout(int, enum QFormLayout::ItemRole, class QLayout *)
+// [-2] void setLayout(int, QFormLayout::ItemRole, QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout9setLayoutEiNS_8ItemRoleEP7QLayout(void *this_, int row, QFormLayout::ItemRole role, QLayout * layout) {
   ((QFormLayout*)this_)->setLayout(row, role, layout);
@@ -347,7 +347,7 @@ void C_ZN11QFormLayout9setLayoutEiNS_8ItemRoleEP7QLayout(void *this_, int row, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:137
-// [8] QLayoutItem * itemAt(int, enum QFormLayout::ItemRole)
+// [8] QLayoutItem * itemAt(int, QFormLayout::ItemRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFormLayout6itemAtEiNS_8ItemRoleE(void *this_, int row, QFormLayout::ItemRole role) {
   return (void*)((QFormLayout*)this_)->itemAt(row, role);
@@ -355,7 +355,7 @@ void* C_ZNK11QFormLayout6itemAtEiNS_8ItemRoleE(void *this_, int row, QFormLayout
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:138
-// [-2] void getItemPosition(int, int *, enum QFormLayout::ItemRole *)
+// [-2] void getItemPosition(int, int *, QFormLayout::ItemRole *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QFormLayout15getItemPositionEiPiPNS_8ItemRoleE(void *this_, int index, int * rowPtr, QFormLayout::ItemRole * rolePtr) {
   ((QFormLayout*)this_)->getItemPosition(index, rowPtr, rolePtr);
@@ -363,7 +363,7 @@ void C_ZNK11QFormLayout15getItemPositionEiPiPNS_8ItemRoleE(void *this_, int inde
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:139
-// [-2] void getWidgetPosition(class QWidget *, int *, enum QFormLayout::ItemRole *)
+// [-2] void getWidgetPosition(QWidget *, int *, QFormLayout::ItemRole *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QFormLayout17getWidgetPositionEP7QWidgetPiPNS_8ItemRoleE(void *this_, QWidget * widget, int * rowPtr, QFormLayout::ItemRole * rolePtr) {
   ((QFormLayout*)this_)->getWidgetPosition(widget, rowPtr, rolePtr);
@@ -371,7 +371,7 @@ void C_ZNK11QFormLayout17getWidgetPositionEP7QWidgetPiPNS_8ItemRoleE(void *this_
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:140
-// [-2] void getLayoutPosition(class QLayout *, int *, enum QFormLayout::ItemRole *)
+// [-2] void getLayoutPosition(QLayout *, int *, QFormLayout::ItemRole *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QFormLayout17getLayoutPositionEP7QLayoutPiPNS_8ItemRoleE(void *this_, QLayout * layout, int * rowPtr, QFormLayout::ItemRole * rolePtr) {
   ((QFormLayout*)this_)->getLayoutPosition(layout, rowPtr, rolePtr);
@@ -379,7 +379,7 @@ void C_ZNK11QFormLayout17getLayoutPositionEP7QLayoutPiPNS_8ItemRoleE(void *this_
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:141
-// [8] QWidget * labelForField(class QWidget *)
+// [8] QWidget * labelForField(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFormLayout13labelForFieldEP7QWidget(void *this_, QWidget * field) {
   return (void*)((QFormLayout*)this_)->labelForField(field);
@@ -387,7 +387,7 @@ void* C_ZNK11QFormLayout13labelForFieldEP7QWidget(void *this_, QWidget * field) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:142
-// [8] QWidget * labelForField(class QLayout *)
+// [8] QWidget * labelForField(QLayout *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFormLayout13labelForFieldEP7QLayout(void *this_, QLayout * field) {
   return (void*)((QFormLayout*)this_)->labelForField(field);
@@ -395,7 +395,7 @@ void* C_ZNK11QFormLayout13labelForFieldEP7QLayout(void *this_, QLayout * field) 
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:145
-// [-2] void addItem(class QLayoutItem *)
+// [-2] void addItem(QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * item) {
   ((QFormLayout*)this_)->addItem(item);
@@ -419,7 +419,7 @@ void* C_ZN11QFormLayout6takeAtEi(void *this_, int index) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:149
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFormLayout11setGeometryERK5QRect(void *this_, QRect* rect) {
   ((QFormLayout*)this_)->setGeometry(*rect);

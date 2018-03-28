@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQEvent : public QEvent {
 public:
   virtual ~MyQEvent() {}
-// void QEvent(enum QEvent::Type)
+// void QEvent(QEvent::Type)
 MyQEvent(QEvent::Type type_) : QEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:297
-// [-2] void QEvent(enum QEvent::Type)
+// [-2] void QEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QEventC2ENS_4TypeE(QEvent::Type type_) {
   return  new QEvent(type_);
@@ -37,7 +37,7 @@ void C_ZN6QEventD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:300
-// [24] QEvent & operator=(const class QEvent &)
+// [24] QEvent & operator=(const QEvent &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QEventaSERKS_(void *this_, QEvent* other) {
   auto& rv = ((QEvent*)this_)->operator=(*other);
@@ -62,7 +62,7 @@ bool C_ZNK6QEvent11spontaneousEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:304
-// [-2] void setAccepted(_Bool)
+// [-2] void setAccepted(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QEvent11setAcceptedEb(void *this_, bool accepted) {
   ((QEvent*)this_)->setAccepted(accepted);

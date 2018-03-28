@@ -117,7 +117,7 @@ qint64 C_ZNK13QElapsedTimer19msecsSinceReferenceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:78
-// [8] qint64 msecsTo(const class QElapsedTimer &)
+// [8] qint64 msecsTo(const QElapsedTimer &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, QElapsedTimer* other) {
   return (qint64)((QElapsedTimer*)this_)->msecsTo(*other);
@@ -125,7 +125,7 @@ qint64 C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, QElapsedTimer* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:79
-// [8] qint64 secsTo(const class QElapsedTimer &)
+// [8] qint64 secsTo(const QElapsedTimer &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK13QElapsedTimer6secsToERKS_(void *this_, QElapsedTimer* other) {
   return (qint64)((QElapsedTimer*)this_)->secsTo(*other);
@@ -133,7 +133,7 @@ qint64 C_ZNK13QElapsedTimer6secsToERKS_(void *this_, QElapsedTimer* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:81
-// [1] bool operator==(const class QElapsedTimer &)
+// [1] bool operator==(const QElapsedTimer &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QElapsedTimereqERKS_(void *this_, QElapsedTimer* other) {
   return (bool)((QElapsedTimer*)this_)->operator==(*other);
@@ -141,7 +141,7 @@ bool C_ZNK13QElapsedTimereqERKS_(void *this_, QElapsedTimer* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:83
-// [1] bool operator!=(const class QElapsedTimer &)
+// [1] bool operator!=(const QElapsedTimer &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QElapsedTimerneERKS_(void *this_, QElapsedTimer* other) {
   return (bool)((QElapsedTimer*)this_)->operator!=(*other);

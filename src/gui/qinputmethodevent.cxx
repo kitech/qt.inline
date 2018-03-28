@@ -37,7 +37,7 @@ void C_ZN17QInputMethodEventD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:559
-// [-2] void setCommitString(const class QString &, int, int)
+// [-2] void setCommitString(const QString &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, QString* commitString, int replaceFrom, int replaceLength) {
   ((QInputMethodEvent*)this_)->setCommitString(*commitString, replaceFrom, replaceLength);

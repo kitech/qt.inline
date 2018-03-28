@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQMutexLocker : public QMutexLocker {
 public:
   virtual ~MyQMutexLocker() {}
-// void QMutexLocker(class QBasicMutex *)
+// void QMutexLocker(QBasicMutex *)
 MyQMutexLocker(QBasicMutex * m) : QMutexLocker(m) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:199
-// [-2] void QMutexLocker(class QBasicMutex *)
+// [-2] void QMutexLocker(QBasicMutex *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * m) {
   return  new QMutexLocker(m);

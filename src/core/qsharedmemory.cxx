@@ -17,9 +17,9 @@
 class Q_DECL_EXPORT MyQSharedMemory : public QSharedMemory {
 public:
   virtual ~MyQSharedMemory() {}
-// void QSharedMemory(class QObject *)
+// void QSharedMemory(QObject *)
 MyQSharedMemory(QObject * parent) : QSharedMemory(parent) {}
-// void QSharedMemory(const class QString &, class QObject *)
+// void QSharedMemory(const QString &, QObject *)
 MyQSharedMemory(const QString & key, QObject * parent) : QSharedMemory(key, parent) {}
 };
 
@@ -33,7 +33,7 @@ void* C_ZNK13QSharedMemory10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:77
-// [-2] void QSharedMemory(class QObject *)
+// [-2] void QSharedMemory(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
   return  new QSharedMemory(parent);
@@ -41,7 +41,7 @@ void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:78
-// [-2] void QSharedMemory(const class QString &, class QObject *)
+// [-2] void QSharedMemory(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSharedMemoryC2ERK7QStringP7QObject(QString* key, QObject * parent) {
   return  new QSharedMemory(*key, parent);
@@ -56,7 +56,7 @@ void C_ZN13QSharedMemoryD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:81
-// [-2] void setKey(const class QString &)
+// [-2] void setKey(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSharedMemory6setKeyERK7QString(void *this_, QString* key) {
   ((QSharedMemory*)this_)->setKey(*key);
@@ -74,7 +74,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/qsharedmemory.h:83
-// [-2] void setNativeKey(const class QString &)
+// [-2] void setNativeKey(const QString &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN13QSharedMemory12setNativeKeyERK7QString(void *this_, QString* key) {
@@ -96,7 +96,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:86
-// [1] bool create(int, enum QSharedMemory::AccessMode)
+// [1] bool create(int, QSharedMemory::AccessMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QSharedMemory6createEiNS_10AccessModeE(void *this_, int size, QSharedMemory::AccessMode mode) {
   return (bool)((QSharedMemory*)this_)->create(size, mode);
@@ -112,7 +112,7 @@ int C_ZNK13QSharedMemory4sizeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:89
-// [1] bool attach(enum QSharedMemory::AccessMode)
+// [1] bool attach(QSharedMemory::AccessMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QSharedMemory6attachENS_10AccessModeE(void *this_, QSharedMemory::AccessMode mode) {
   return (bool)((QSharedMemory*)this_)->attach(mode);

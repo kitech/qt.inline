@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQQuickItem : public QQuickItem {
 public:
   virtual ~MyQQuickItem() {}
-// void QQuickItem(class QQuickItem *)
+// void QQuickItem(QQuickItem *)
 MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -119,7 +119,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -131,7 +131,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(class QKeyEvent *)
+// void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -143,7 +143,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void inputMethodEvent(class QInputMethodEvent *)
+// void inputMethodEvent(QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -155,7 +155,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -167,7 +167,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -179,7 +179,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -191,7 +191,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -203,7 +203,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -215,7 +215,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(class QMouseEvent *)
+// void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -251,7 +251,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QWheelEvent *)
+// void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -263,7 +263,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void touchEvent(class QTouchEvent *)
+// void touchEvent(QTouchEvent *)
   virtual void touchEvent(QTouchEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"touchEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -275,7 +275,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverEnterEvent(class QHoverEvent *)
+// void hoverEnterEvent(QHoverEvent *)
   virtual void hoverEnterEvent(QHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -287,7 +287,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverMoveEvent(class QHoverEvent *)
+// void hoverMoveEvent(QHoverEvent *)
   virtual void hoverMoveEvent(QHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -299,7 +299,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverLeaveEvent(class QHoverEvent *)
+// void hoverLeaveEvent(QHoverEvent *)
   virtual void hoverLeaveEvent(QHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -311,7 +311,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragEnterEvent(class QDragEnterEvent *)
+// void dragEnterEvent(QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -323,7 +323,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(class QDragMoveEvent *)
+// void dragMoveEvent(QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -335,7 +335,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(class QDragLeaveEvent *)
+// void dragLeaveEvent(QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -347,7 +347,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(class QDropEvent *)
+// void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -359,7 +359,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool childMouseEventFilter(class QQuickItem *, class QEvent *)
+// bool childMouseEventFilter(QQuickItem *, QEvent *)
   virtual bool childMouseEventFilter(QQuickItem * arg0, QEvent * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"childMouseEventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -384,7 +384,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void geometryChanged(const class QRectF &, const class QRectF &)
+// void geometryChanged(const QRectF &, const QRectF &)
   virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -423,7 +423,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:395
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQuickItem5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QQuickItem*)this_)->QQuickItem::event(arg0);
@@ -487,7 +487,7 @@ void C_ZN10QQuickItem17componentCompleteEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:411
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::keyPressEvent(event);
@@ -495,7 +495,7 @@ void C_ZN10QQuickItem13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:412
-// [-2] void keyReleaseEvent(class QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::keyReleaseEvent(event);
@@ -503,7 +503,7 @@ void C_ZN10QQuickItem15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * even
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:414
-// [-2] void inputMethodEvent(class QInputMethodEvent *)
+// [-2] void inputMethodEvent(QInputMethodEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::inputMethodEvent(arg0);
@@ -511,7 +511,7 @@ void C_ZN10QQuickItem16inputMethodEventEP17QInputMethodEvent(void *this_, QInput
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:416
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::focusInEvent(arg0);
@@ -519,7 +519,7 @@ void C_ZN10QQuickItem12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * ar
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:417
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::focusOutEvent(arg0);
@@ -527,7 +527,7 @@ void C_ZN10QQuickItem13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * a
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:418
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::mousePressEvent(event);
@@ -535,7 +535,7 @@ void C_ZN10QQuickItem15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:419
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::mouseMoveEvent(event);
@@ -543,7 +543,7 @@ void C_ZN10QQuickItem14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:420
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::mouseReleaseEvent(event);
@@ -551,7 +551,7 @@ void C_ZN10QQuickItem17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:421
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::mouseDoubleClickEvent(event);
@@ -575,7 +575,7 @@ void C_ZN10QQuickItem16touchUngrabEventEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:425
-// [-2] void wheelEvent(class QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::wheelEvent(event);
@@ -583,7 +583,7 @@ void C_ZN10QQuickItem10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * even
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:427
-// [-2] void touchEvent(class QTouchEvent *)
+// [-2] void touchEvent(QTouchEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem10touchEventEP11QTouchEvent(void *this_, QTouchEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::touchEvent(event);
@@ -591,7 +591,7 @@ void C_ZN10QQuickItem10touchEventEP11QTouchEvent(void *this_, QTouchEvent * even
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:428
-// [-2] void hoverEnterEvent(class QHoverEvent *)
+// [-2] void hoverEnterEvent(QHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem15hoverEnterEventEP11QHoverEvent(void *this_, QHoverEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::hoverEnterEvent(event);
@@ -599,7 +599,7 @@ void C_ZN10QQuickItem15hoverEnterEventEP11QHoverEvent(void *this_, QHoverEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:429
-// [-2] void hoverMoveEvent(class QHoverEvent *)
+// [-2] void hoverMoveEvent(QHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem14hoverMoveEventEP11QHoverEvent(void *this_, QHoverEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::hoverMoveEvent(event);
@@ -607,7 +607,7 @@ void C_ZN10QQuickItem14hoverMoveEventEP11QHoverEvent(void *this_, QHoverEvent * 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:430
-// [-2] void hoverLeaveEvent(class QHoverEvent *)
+// [-2] void hoverLeaveEvent(QHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem15hoverLeaveEventEP11QHoverEvent(void *this_, QHoverEvent * event) {
   ((QQuickItem*)this_)->QQuickItem::hoverLeaveEvent(event);
@@ -615,7 +615,7 @@ void C_ZN10QQuickItem15hoverLeaveEventEP11QHoverEvent(void *this_, QHoverEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:432
-// [-2] void dragEnterEvent(class QDragEnterEvent *)
+// [-2] void dragEnterEvent(QDragEnterEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::dragEnterEvent(arg0);
@@ -623,7 +623,7 @@ void C_ZN10QQuickItem14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnter
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:433
-// [-2] void dragMoveEvent(class QDragMoveEvent *)
+// [-2] void dragMoveEvent(QDragMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::dragMoveEvent(arg0);
@@ -631,7 +631,7 @@ void C_ZN10QQuickItem13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:434
-// [-2] void dragLeaveEvent(class QDragLeaveEvent *)
+// [-2] void dragLeaveEvent(QDragLeaveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::dragLeaveEvent(arg0);
@@ -639,7 +639,7 @@ void C_ZN10QQuickItem14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeave
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:435
-// [-2] void dropEvent(class QDropEvent *)
+// [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) {
   ((QQuickItem*)this_)->QQuickItem::dropEvent(arg0);
@@ -647,7 +647,7 @@ void C_ZN10QQuickItem9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:437
-// [1] bool childMouseEventFilter(class QQuickItem *, class QEvent *)
+// [1] bool childMouseEventFilter(QQuickItem *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQuickItem21childMouseEventFilterEPS_P6QEvent(void *this_, QQuickItem * arg0, QEvent * arg1) {
   return (bool)((QQuickItem*)this_)->QQuickItem::childMouseEventFilter(arg0, arg1);
@@ -663,7 +663,7 @@ void C_ZN10QQuickItem21windowDeactivateEventEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:440
-// [-2] void geometryChanged(const class QRectF &, const class QRectF &)
+// [-2] void geometryChanged(const QRectF &, const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem15geometryChangedERK6QRectFS2_(void *this_, QRectF* newGeometry, QRectF* oldGeometry) {
   ((QQuickItem*)this_)->QQuickItem::geometryChanged(*newGeometry, *oldGeometry);
@@ -695,7 +695,7 @@ void* C_ZNK10QQuickItem10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:199
-// [-2] void QQuickItem(class QQuickItem *)
+// [-2] void QQuickItem(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickItemC2EPS_(QQuickItem * parent) {
   auto _nilp = (MyQQuickItem*)(0);
@@ -727,7 +727,7 @@ void* C_ZNK10QQuickItem10parentItemEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:204
-// [-2] void setParentItem(class QQuickItem *)
+// [-2] void setParentItem(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13setParentItemEPS_(void *this_, QQuickItem * parent) {
   ((QQuickItem*)this_)->setParentItem(parent);
@@ -735,7 +735,7 @@ void C_ZN10QQuickItem13setParentItemEPS_(void *this_, QQuickItem * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:205
-// [-2] void stackBefore(const class QQuickItem *)
+// [-2] void stackBefore(const QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem11stackBeforeEPKS_(void *this_, const QQuickItem * arg0) {
   ((QQuickItem*)this_)->stackBefore(arg0);
@@ -743,7 +743,7 @@ void C_ZN10QQuickItem11stackBeforeEPKS_(void *this_, const QQuickItem * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:206
-// [-2] void stackAfter(const class QQuickItem *)
+// [-2] void stackAfter(const QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem10stackAfterEPKS_(void *this_, const QQuickItem * arg0) {
   ((QQuickItem*)this_)->stackAfter(arg0);
@@ -768,7 +768,7 @@ bool C_ZNK10QQuickItem4clipEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:212
-// [-2] void setClip(_Bool)
+// [-2] void setClip(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem7setClipEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setClip(arg0);
@@ -785,7 +785,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:215
-// [-2] void setState(const class QString &)
+// [-2] void setState(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem8setStateERK7QString(void *this_, QString* arg0) {
   ((QQuickItem*)this_)->setState(*arg0);
@@ -850,7 +850,7 @@ void C_ZN10QQuickItem4setYEd(void *this_, qreal arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:227
-// [-2] void setPosition(const class QPointF &)
+// [-2] void setPosition(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem11setPositionERK7QPointF(void *this_, QPointF* arg0) {
   ((QQuickItem*)this_)->setPosition(*arg0);
@@ -951,7 +951,7 @@ return new QSizeF(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtQuick/qquickitem.h:242
-// [-2] void setSize(const class QSizeF &)
+// [-2] void setSize(const QSizeF &)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem7setSizeERK6QSizeF(void *this_, QSizeF* size) {
@@ -969,7 +969,7 @@ QQuickItem::TransformOrigin C_ZNK10QQuickItem15transformOriginEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:245
-// [-2] void setTransformOrigin(enum QQuickItem::TransformOrigin)
+// [-2] void setTransformOrigin(QQuickItem::TransformOrigin)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem18setTransformOriginENS_15TransformOriginE(void *this_, QQuickItem::TransformOrigin arg0) {
   ((QQuickItem*)this_)->setTransformOrigin(arg0);
@@ -986,7 +986,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:247
-// [-2] void setTransformOriginPoint(const class QPointF &)
+// [-2] void setTransformOriginPoint(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem23setTransformOriginPointERK7QPointF(void *this_, QPointF* arg0) {
   ((QQuickItem*)this_)->setTransformOriginPoint(*arg0);
@@ -1066,7 +1066,7 @@ bool C_ZNK10QQuickItem9isVisibleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:261
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem10setVisibleEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setVisible(arg0);
@@ -1082,7 +1082,7 @@ bool C_ZNK10QQuickItem9isEnabledEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:264
-// [-2] void setEnabled(_Bool)
+// [-2] void setEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem10setEnabledEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setEnabled(arg0);
@@ -1098,7 +1098,7 @@ bool C_ZNK10QQuickItem6smoothEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:267
-// [-2] void setSmooth(_Bool)
+// [-2] void setSmooth(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem9setSmoothEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setSmooth(arg0);
@@ -1114,7 +1114,7 @@ bool C_ZNK10QQuickItem16activeFocusOnTabEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:270
-// [-2] void setActiveFocusOnTab(_Bool)
+// [-2] void setActiveFocusOnTab(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem19setActiveFocusOnTabEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setActiveFocusOnTab(arg0);
@@ -1130,7 +1130,7 @@ bool C_ZNK10QQuickItem12antialiasingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:273
-// [-2] void setAntialiasing(_Bool)
+// [-2] void setAntialiasing(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem15setAntialiasingEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setAntialiasing(arg0);
@@ -1155,7 +1155,7 @@ return new QQuickItem::Flags(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:277
-// [-2] void setFlag(enum QQuickItem::Flag, _Bool)
+// [-2] void setFlag(QQuickItem::Flag, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem7setFlagENS_4FlagEb(void *this_, QQuickItem::Flag flag, bool enabled) {
   ((QQuickItem*)this_)->setFlag(flag, enabled);
@@ -1205,7 +1205,7 @@ bool C_ZNK10QQuickItem8hasFocusEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:285
-// [-2] void setFocus(_Bool)
+// [-2] void setFocus(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem8setFocusEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setFocus(arg0);
@@ -1213,7 +1213,7 @@ void C_ZN10QQuickItem8setFocusEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:286
-// [-2] void setFocus(_Bool, Qt::FocusReason)
+// [-2] void setFocus(bool, Qt::FocusReason)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem8setFocusEbN2Qt11FocusReasonE(void *this_, bool focus, Qt::FocusReason reason) {
   ((QQuickItem*)this_)->setFocus(focus, reason);
@@ -1238,7 +1238,7 @@ void* C_ZNK10QQuickItem15scopedFocusItemEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.7
 // /usr/include/qt/QtQuick/qquickitem.h:290
-// [1] bool isAncestorOf(const class QQuickItem *)
+// [1] bool isAncestorOf(const QQuickItem *)
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QQuickItem12isAncestorOfEPKS_(void *this_, const QQuickItem * child) {
@@ -1272,7 +1272,7 @@ bool C_ZNK10QQuickItem17acceptHoverEventsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:295
-// [-2] void setAcceptHoverEvents(_Bool)
+// [-2] void setAcceptHoverEvents(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem20setAcceptHoverEventsEb(void *this_, bool enabled) {
   ((QQuickItem*)this_)->setAcceptHoverEvents(enabled);
@@ -1292,7 +1292,7 @@ bool C_ZNK10QQuickItem17acceptTouchEventsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtQuick/qquickitem.h:297
-// [-2] void setAcceptTouchEvents(_Bool)
+// [-2] void setAcceptTouchEvents(bool)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem20setAcceptTouchEventsEb(void *this_, bool accept) {
@@ -1311,7 +1311,7 @@ return new QCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:301
-// [-2] void setCursor(const class QCursor &)
+// [-2] void setCursor(const QCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem9setCursorERK7QCursor(void *this_, QCursor* cursor) {
   ((QQuickItem*)this_)->setCursor(*cursor);
@@ -1359,7 +1359,7 @@ bool C_ZNK10QQuickItem13keepMouseGrabEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:309
-// [-2] void setKeepMouseGrab(_Bool)
+// [-2] void setKeepMouseGrab(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem16setKeepMouseGrabEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setKeepMouseGrab(arg0);
@@ -1375,7 +1375,7 @@ bool C_ZNK10QQuickItem23filtersChildMouseEventsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:311
-// [-2] void setFiltersChildMouseEvents(_Bool)
+// [-2] void setFiltersChildMouseEvents(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem26setFiltersChildMouseEventsEb(void *this_, bool filter) {
   ((QQuickItem*)this_)->setFiltersChildMouseEvents(filter);
@@ -1399,7 +1399,7 @@ bool C_ZNK10QQuickItem13keepTouchGrabEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:316
-// [-2] void setKeepTouchGrab(_Bool)
+// [-2] void setKeepTouchGrab(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem16setKeepTouchGrabEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->setKeepTouchGrab(arg0);
@@ -1407,7 +1407,7 @@ void C_ZN10QQuickItem16setKeepTouchGrabEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:319
-// [1] bool grabToImage(const class QJSValue &, const class QSize &)
+// [1] bool grabToImage(const QJSValue &, const QSize &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize(void *this_, QJSValue* callback, QSize* targetSize) {
   return (bool)((QQuickItem*)this_)->grabToImage(*callback, *targetSize);
@@ -1415,7 +1415,7 @@ bool C_ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize(void *this_, QJSValue* ca
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:322
-// [1] bool contains(const class QPointF &)
+// [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QQuickItem8containsERK7QPointF(void *this_, QPointF* point) {
   return (bool)((QQuickItem*)this_)->contains(*point);
@@ -1423,7 +1423,7 @@ bool C_ZNK10QQuickItem8containsERK7QPointF(void *this_, QPointF* point) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:324
-// [88] QTransform itemTransform(class QQuickItem *, _Bool *)
+// [88] QTransform itemTransform(QQuickItem *, bool *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem13itemTransformEPS_Pb(void *this_, QQuickItem * arg0, bool * arg1) {
   auto rv = ((QQuickItem*)this_)->itemTransform(arg0, arg1);
@@ -1432,7 +1432,7 @@ return new QTransform(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:325
-// [16] QPointF mapToItem(const class QQuickItem *, const class QPointF &)
+// [16] QPointF mapToItem(const QQuickItem *, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem9mapToItemEPKS_RK7QPointF(void *this_, const QQuickItem * item, QPointF* point) {
   auto rv = ((QQuickItem*)this_)->mapToItem(item, *point);
@@ -1441,7 +1441,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:326
-// [16] QPointF mapToScene(const class QPointF &)
+// [16] QPointF mapToScene(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem10mapToSceneERK7QPointF(void *this_, QPointF* point) {
   auto rv = ((QQuickItem*)this_)->mapToScene(*point);
@@ -1451,7 +1451,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // since 5.7
 // /usr/include/qt/QtQuick/qquickitem.h:327
-// [16] QPointF mapToGlobal(const class QPointF &)
+// [16] QPointF mapToGlobal(const QPointF &)
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem11mapToGlobalERK7QPointF(void *this_, QPointF* point) {
@@ -1462,7 +1462,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:328
-// [32] QRectF mapRectToItem(const class QQuickItem *, const class QRectF &)
+// [32] QRectF mapRectToItem(const QQuickItem *, const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem13mapRectToItemEPKS_RK6QRectF(void *this_, const QQuickItem * item, QRectF* rect) {
   auto rv = ((QQuickItem*)this_)->mapRectToItem(item, *rect);
@@ -1471,7 +1471,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:329
-// [32] QRectF mapRectToScene(const class QRectF &)
+// [32] QRectF mapRectToScene(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem14mapRectToSceneERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QQuickItem*)this_)->mapRectToScene(*rect);
@@ -1480,7 +1480,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:330
-// [16] QPointF mapFromItem(const class QQuickItem *, const class QPointF &)
+// [16] QPointF mapFromItem(const QQuickItem *, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem11mapFromItemEPKS_RK7QPointF(void *this_, const QQuickItem * item, QPointF* point) {
   auto rv = ((QQuickItem*)this_)->mapFromItem(item, *point);
@@ -1489,7 +1489,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:331
-// [16] QPointF mapFromScene(const class QPointF &)
+// [16] QPointF mapFromScene(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem12mapFromSceneERK7QPointF(void *this_, QPointF* point) {
   auto rv = ((QQuickItem*)this_)->mapFromScene(*point);
@@ -1499,7 +1499,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // since 5.7
 // /usr/include/qt/QtQuick/qquickitem.h:332
-// [16] QPointF mapFromGlobal(const class QPointF &)
+// [16] QPointF mapFromGlobal(const QPointF &)
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem13mapFromGlobalERK7QPointF(void *this_, QPointF* point) {
@@ -1510,7 +1510,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:333
-// [32] QRectF mapRectFromItem(const class QQuickItem *, const class QRectF &)
+// [32] QRectF mapRectFromItem(const QQuickItem *, const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem15mapRectFromItemEPKS_RK6QRectF(void *this_, const QQuickItem * item, QRectF* rect) {
   auto rv = ((QQuickItem*)this_)->mapRectFromItem(item, *rect);
@@ -1519,7 +1519,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:334
-// [32] QRectF mapRectFromScene(const class QRectF &)
+// [32] QRectF mapRectFromScene(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem16mapRectFromSceneERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QQuickItem*)this_)->mapRectFromScene(*rect);
@@ -1555,7 +1555,7 @@ void C_ZN10QQuickItem16forceActiveFocusEN2Qt11FocusReasonE(void *this_, Qt::Focu
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:344
-// [8] QQuickItem * nextItemInFocusChain(_Bool)
+// [8] QQuickItem * nextItemInFocusChain(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickItem20nextItemInFocusChainEb(void *this_, bool forward) {
   return (void*)((QQuickItem*)this_)->nextItemInFocusChain(forward);
@@ -1604,7 +1604,7 @@ void C_ZN10QQuickItem6updateEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:365
-// [-2] void childrenRectChanged(const class QRectF &)
+// [-2] void childrenRectChanged(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem19childrenRectChangedERK6QRectF(void *this_, QRectF* arg0) {
   ((QQuickItem*)this_)->childrenRectChanged(*arg0);
@@ -1620,7 +1620,7 @@ void C_ZN10QQuickItem21baselineOffsetChangedEd(void *this_, qreal arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:367
-// [-2] void stateChanged(const class QString &)
+// [-2] void stateChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem12stateChangedERK7QString(void *this_, QString* arg0) {
   ((QQuickItem*)this_)->stateChanged(*arg0);
@@ -1628,7 +1628,7 @@ void C_ZN10QQuickItem12stateChangedERK7QString(void *this_, QString* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:368
-// [-2] void focusChanged(_Bool)
+// [-2] void focusChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem12focusChangedEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->focusChanged(arg0);
@@ -1636,7 +1636,7 @@ void C_ZN10QQuickItem12focusChangedEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:369
-// [-2] void activeFocusChanged(_Bool)
+// [-2] void activeFocusChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem18activeFocusChangedEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->activeFocusChanged(arg0);
@@ -1644,7 +1644,7 @@ void C_ZN10QQuickItem18activeFocusChangedEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:370
-// [-2] void activeFocusOnTabChanged(_Bool)
+// [-2] void activeFocusOnTabChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem23activeFocusOnTabChangedEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->activeFocusOnTabChanged(arg0);
@@ -1652,7 +1652,7 @@ void C_ZN10QQuickItem23activeFocusOnTabChangedEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:371
-// [-2] void parentChanged(class QQuickItem *)
+// [-2] void parentChanged(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13parentChangedEPS_(void *this_, QQuickItem * arg0) {
   ((QQuickItem*)this_)->parentChanged(arg0);
@@ -1660,7 +1660,7 @@ void C_ZN10QQuickItem13parentChangedEPS_(void *this_, QQuickItem * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:372
-// [-2] void transformOriginChanged(enum QQuickItem::TransformOrigin)
+// [-2] void transformOriginChanged(QQuickItem::TransformOrigin)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE(void *this_, QQuickItem::TransformOrigin arg0) {
   ((QQuickItem*)this_)->transformOriginChanged(arg0);
@@ -1668,7 +1668,7 @@ void C_ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE(void *this_,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:373
-// [-2] void smoothChanged(_Bool)
+// [-2] void smoothChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13smoothChangedEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->smoothChanged(arg0);
@@ -1676,7 +1676,7 @@ void C_ZN10QQuickItem13smoothChangedEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:374
-// [-2] void antialiasingChanged(_Bool)
+// [-2] void antialiasingChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem19antialiasingChangedEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->antialiasingChanged(arg0);
@@ -1684,7 +1684,7 @@ void C_ZN10QQuickItem19antialiasingChangedEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:375
-// [-2] void clipChanged(_Bool)
+// [-2] void clipChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem11clipChangedEb(void *this_, bool arg0) {
   ((QQuickItem*)this_)->clipChanged(arg0);
@@ -1692,7 +1692,7 @@ void C_ZN10QQuickItem11clipChangedEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:376
-// [-2] void windowChanged(class QQuickWindow *)
+// [-2] void windowChanged(QQuickWindow *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem13windowChangedEP12QQuickWindow(void *this_, QQuickWindow * window) {
   ((QQuickItem*)this_)->windowChanged(window);

@@ -23,7 +23,7 @@ MyQRandomGenerator(quint32 seedValue) : QRandomGenerator(seedValue) {}
 MyQRandomGenerator(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerator(seedBuffer, len_) {}
 // void QRandomGenerator(const quint32 *, const quint32 *)
 MyQRandomGenerator(const quint32 * begin, const quint32 * end) : QRandomGenerator(begin, end) {}
-// void QRandomGenerator(enum QRandomGenerator::System)
+// void QRandomGenerator(QRandomGenerator::System)
 MyQRandomGenerator(QRandomGenerator::System arg0) : QRandomGenerator(arg0) {}
 };
 
@@ -53,7 +53,7 @@ void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin, const quint32 * end
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:76
-// [2512] QRandomGenerator & operator=(const class QRandomGenerator &)
+// [2512] QRandomGenerator & operator=(const QRandomGenerator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGeneratoraSERKS_(void *this_, QRandomGenerator* other) {
   auto& rv = ((QRandomGenerator*)this_)->operator=(*other);

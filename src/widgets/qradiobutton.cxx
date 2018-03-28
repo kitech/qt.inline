@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQRadioButton : public QRadioButton {
 public:
   virtual ~MyQRadioButton() {}
-// void QRadioButton(class QWidget *)
+// void QRadioButton(QWidget *)
 MyQRadioButton(QWidget * parent) : QRadioButton(parent) {}
-// void QRadioButton(const class QString &, class QWidget *)
+// void QRadioButton(const QString &, QWidget *)
 MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool hitButton(const class QPoint &)
+// bool hitButton(const QPoint &)
   virtual bool hitButton(const QPoint & arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hitButton", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -47,7 +47,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -59,7 +59,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -71,7 +71,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionButton *)
+// void initStyleOption(QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * button) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)button, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -86,7 +86,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:67
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QRadioButton5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QRadioButton*)this_)->QRadioButton::event(e);
@@ -94,7 +94,7 @@ bool C_ZN12QRadioButton5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:68
-// [1] bool hitButton(const class QPoint &)
+// [1] bool hitButton(const QPoint &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QRadioButton9hitButtonERK6QPoint(void *this_, QPoint* arg0) {
   return (bool)((QRadioButton*)this_)->QRadioButton::hitButton(*arg0);
@@ -102,7 +102,7 @@ bool C_ZNK12QRadioButton9hitButtonERK6QPoint(void *this_, QPoint* arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:69
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QRadioButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QRadioButton*)this_)->QRadioButton::paintEvent(arg0);
@@ -110,7 +110,7 @@ void C_ZN12QRadioButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ar
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:70
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QRadioButton*)this_)->QRadioButton::mouseMoveEvent(arg0);
@@ -118,7 +118,7 @@ void C_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent 
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:71
-// [-2] void initStyleOption(class QStyleOptionButton *)
+// [-2] void initStyleOption(QStyleOptionButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * button) {
   ((QRadioButton*)this_)->QRadioButton::initStyleOption(button);
@@ -134,7 +134,7 @@ void* C_ZNK12QRadioButton10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:59
-// [-2] void QRadioButton(class QWidget *)
+// [-2] void QRadioButton(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QRadioButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQRadioButton*)(0);
@@ -143,7 +143,7 @@ void* C_ZN12QRadioButtonC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:60
-// [-2] void QRadioButton(const class QString &, class QWidget *)
+// [-2] void QRadioButton(const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QRadioButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQRadioButton*)(0);

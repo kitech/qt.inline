@@ -17,12 +17,12 @@
 class Q_DECL_EXPORT MyQQuickWindow : public QQuickWindow {
 public:
   virtual ~MyQQuickWindow() {}
-// void QQuickWindow(class QWindow *)
+// void QQuickWindow(QWindow *)
 MyQQuickWindow(QWindow * parent) : QQuickWindow(parent) {}
-// void QQuickWindow(class QQuickRenderControl *)
+// void QQuickWindow(QQuickRenderControl *)
 MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl) {}
 // Protected virtual Visibility=Default Availability=Available
-// void exposeEvent(class QExposeEvent *)
+// void exposeEvent(QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"exposeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(class QShowEvent *)
+// void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -58,7 +58,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(class QHideEvent *)
+// void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hideEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -70,7 +70,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -94,7 +94,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -107,7 +107,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -119,7 +119,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(class QKeyEvent *)
+// void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -131,7 +131,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -143,7 +143,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -155,7 +155,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(class QMouseEvent *)
+// void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -167,7 +167,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -179,7 +179,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QWheelEvent *)
+// void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -194,7 +194,7 @@ MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:207
-// [-2] void exposeEvent(class QExposeEvent *)
+// [-2] void exposeEvent(QExposeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow11exposeEventEP12QExposeEvent(void *this_, QExposeEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::exposeEvent(arg0);
@@ -202,7 +202,7 @@ void C_ZN12QQuickWindow11exposeEventEP12QExposeEvent(void *this_, QExposeEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:208
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::resizeEvent(arg0);
@@ -210,7 +210,7 @@ void C_ZN12QQuickWindow11resizeEventEP12QResizeEvent(void *this_, QResizeEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:210
-// [-2] void showEvent(class QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::showEvent(arg0);
@@ -218,7 +218,7 @@ void C_ZN12QQuickWindow9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:211
-// [-2] void hideEvent(class QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow9hideEventEP10QHideEvent(void *this_, QHideEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::hideEvent(arg0);
@@ -226,7 +226,7 @@ void C_ZN12QQuickWindow9hideEventEP10QHideEvent(void *this_, QHideEvent * arg0) 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:214
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::focusInEvent(arg0);
@@ -234,7 +234,7 @@ void C_ZN12QQuickWindow12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:215
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::focusOutEvent(arg0);
@@ -242,7 +242,7 @@ void C_ZN12QQuickWindow13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:217
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QQuickWindow5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QQuickWindow*)this_)->QQuickWindow::event(arg0);
@@ -250,7 +250,7 @@ bool C_ZN12QQuickWindow5eventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:218
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::keyPressEvent(arg0);
@@ -258,7 +258,7 @@ void C_ZN12QQuickWindow13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:219
-// [-2] void keyReleaseEvent(class QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::keyReleaseEvent(arg0);
@@ -266,7 +266,7 @@ void C_ZN12QQuickWindow15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * ar
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:220
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::mousePressEvent(arg0);
@@ -274,7 +274,7 @@ void C_ZN12QQuickWindow15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:221
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::mouseReleaseEvent(arg0);
@@ -282,7 +282,7 @@ void C_ZN12QQuickWindow17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:222
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::mouseDoubleClickEvent(arg0);
@@ -290,7 +290,7 @@ void C_ZN12QQuickWindow21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMous
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:223
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::mouseMoveEvent(arg0);
@@ -298,7 +298,7 @@ void C_ZN12QQuickWindow14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:225
-// [-2] void wheelEvent(class QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * arg0) {
   ((QQuickWindow*)this_)->QQuickWindow::wheelEvent(arg0);
@@ -314,7 +314,7 @@ void* C_ZNK12QQuickWindow10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:109
-// [-2] void QQuickWindow(class QWindow *)
+// [-2] void QQuickWindow(QWindow *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWindowC2EP7QWindow(QWindow * parent) {
   auto _nilp = (MyQQuickWindow*)(0);
@@ -323,7 +323,7 @@ void* C_ZN12QQuickWindowC2EP7QWindow(QWindow * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:110
-// [-2] void QQuickWindow(class QQuickRenderControl *)
+// [-2] void QQuickWindow(QQuickRenderControl *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWindowC2EP19QQuickRenderControl(QQuickRenderControl * renderControl) {
   auto _nilp = (MyQQuickWindow*)(0);
@@ -371,7 +371,7 @@ void* C_ZNK12QQuickWindow16mouseGrabberItemEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:122
-// [1] bool sendEvent(class QQuickItem *, class QEvent *)
+// [1] bool sendEvent(QQuickItem *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QQuickWindow9sendEventEP10QQuickItemP6QEvent(void *this_, QQuickItem * arg0, QEvent * arg1) {
   return (bool)((QQuickWindow*)this_)->sendEvent(arg0, arg1);
@@ -388,7 +388,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:130
-// [-2] void setRenderTarget(uint, const class QSize &)
+// [-2] void setRenderTarget(uint, const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow15setRenderTargetEjRK5QSize(void *this_, uint fboId, QSize* size) {
   ((QQuickWindow*)this_)->setRenderTarget(fboId, *size);
@@ -440,7 +440,7 @@ void* C_ZNK12QQuickWindow14accessibleRootEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:143
-// [8] QSGTexture * createTextureFromImage(const class QImage &)
+// [8] QSGTexture * createTextureFromImage(const QImage &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow22createTextureFromImageERK6QImage(void *this_, QImage* image) {
   return (void*)((QQuickWindow*)this_)->createTextureFromImage(*image);
@@ -448,7 +448,7 @@ void* C_ZNK12QQuickWindow22createTextureFromImageERK6QImage(void *this_, QImage*
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:144
-// [8] QSGTexture * createTextureFromImage(const class QImage &, QQuickWindow::CreateTextureOptions)
+// [8] QSGTexture * createTextureFromImage(const QImage &, QQuickWindow::CreateTextureOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow22createTextureFromImageERK6QImage6QFlagsINS_19CreateTextureOptionEE(void *this_, QImage* image, QFlags<QQuickWindow::CreateTextureOption> options) {
   return (void*)((QQuickWindow*)this_)->createTextureFromImage(*image, options);
@@ -456,7 +456,7 @@ void* C_ZNK12QQuickWindow22createTextureFromImageERK6QImage6QFlagsINS_19CreateTe
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:145
-// [8] QSGTexture * createTextureFromId(uint, const class QSize &, QQuickWindow::CreateTextureOptions)
+// [8] QSGTexture * createTextureFromId(uint, const QSize &, QQuickWindow::CreateTextureOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWindow19createTextureFromIdEjRK5QSize6QFlagsINS_19CreateTextureOptionEE(void *this_, uint id, QSize* size, QFlags<QQuickWindow::CreateTextureOption> options) {
   return (void*)((QQuickWindow*)this_)->createTextureFromId(id, *size, options);
@@ -464,7 +464,7 @@ void* C_ZNK12QQuickWindow19createTextureFromIdEjRK5QSize6QFlagsINS_19CreateTextu
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:147
-// [-2] void setClearBeforeRendering(_Bool)
+// [-2] void setClearBeforeRendering(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow23setClearBeforeRenderingEb(void *this_, bool enabled) {
   ((QQuickWindow*)this_)->setClearBeforeRendering(enabled);
@@ -480,7 +480,7 @@ bool C_ZNK12QQuickWindow20clearBeforeRenderingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:150
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow8setColorERK6QColor(void *this_, QColor* color) {
   ((QQuickWindow*)this_)->setColor(*color);
@@ -509,7 +509,7 @@ bool C_ZN12QQuickWindow21hasDefaultAlphaBufferEv() {
 // Public static Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtQuick/qquickwindow.h:154
-// [-2] void setDefaultAlphaBuffer(_Bool)
+// [-2] void setDefaultAlphaBuffer(bool)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow21setDefaultAlphaBufferEb(bool useAlpha) {
@@ -519,7 +519,7 @@ void C_ZN12QQuickWindow21setDefaultAlphaBufferEb(bool useAlpha) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:156
-// [-2] void setPersistentOpenGLContext(_Bool)
+// [-2] void setPersistentOpenGLContext(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow26setPersistentOpenGLContextEb(void *this_, bool persistent) {
   ((QQuickWindow*)this_)->setPersistentOpenGLContext(persistent);
@@ -535,7 +535,7 @@ bool C_ZNK12QQuickWindow25isPersistentOpenGLContextEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:159
-// [-2] void setPersistentSceneGraph(_Bool)
+// [-2] void setPersistentSceneGraph(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow23setPersistentSceneGraphEb(void *this_, bool persistent) {
   ((QQuickWindow*)this_)->setPersistentSceneGraph(persistent);
@@ -559,7 +559,7 @@ bool C_ZNK12QQuickWindow23isSceneGraphInitializedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:165
-// [-2] void scheduleRenderJob(class QRunnable *, enum QQuickWindow::RenderStage)
+// [-2] void scheduleRenderJob(QRunnable *, QQuickWindow::RenderStage)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow17scheduleRenderJobEP9QRunnableNS_11RenderStageE(void *this_, QRunnable * job, QQuickWindow::RenderStage schedule) {
   ((QQuickWindow*)this_)->scheduleRenderJob(job, schedule);
@@ -587,7 +587,7 @@ void* C_ZNK12QQuickWindow17rendererInterfaceEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:171
-// [-2] void setSceneGraphBackend(class QSGRendererInterface::GraphicsApi)
+// [-2] void setSceneGraphBackend(QSGRendererInterface::GraphicsApi)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow20setSceneGraphBackendEN20QSGRendererInterface11GraphicsApiE(QSGRendererInterface::GraphicsApi api) {
@@ -598,7 +598,7 @@ void C_ZN12QQuickWindow20setSceneGraphBackendEN20QSGRendererInterface11GraphicsA
 // Public static Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtQuick/qquickwindow.h:172
-// [-2] void setSceneGraphBackend(const class QString &)
+// [-2] void setSceneGraphBackend(const QString &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow20setSceneGraphBackendERK7QString(QString* backend) {
@@ -664,7 +664,7 @@ QQuickWindow::TextRenderType C_ZN12QQuickWindow14textRenderTypeEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:180
-// [-2] void setTextRenderType(enum QQuickWindow::TextRenderType)
+// [-2] void setTextRenderType(QQuickWindow::TextRenderType)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow17setTextRenderTypeENS_14TextRenderTypeE(QQuickWindow::TextRenderType renderType) {
   QQuickWindow::setTextRenderType(renderType);
@@ -753,7 +753,7 @@ void C_ZN12QQuickWindow21sceneGraphAboutToStopEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:195
-// [-2] void colorChanged(const class QColor &)
+// [-2] void colorChanged(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow12colorChangedERK6QColor(void *this_, QColor* arg0) {
   ((QQuickWindow*)this_)->colorChanged(*arg0);
@@ -770,7 +770,7 @@ void C_ZN12QQuickWindow22activeFocusItemChangedEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.3
 // /usr/include/qt/QtQuick/qquickwindow.h:197
-// [-2] void sceneGraphError(class QQuickWindow::SceneGraphError, const class QString &)
+// [-2] void sceneGraphError(QQuickWindow::SceneGraphError, const QString &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWindow15sceneGraphErrorENS_15SceneGraphErrorERK7QString(void *this_, QQuickWindow::SceneGraphError error, QString* message) {

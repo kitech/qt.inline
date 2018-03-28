@@ -20,7 +20,7 @@ public:
 // void QGuiApplication(int &, char **, int)
 MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, argv, arg2) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, arg
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:192
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QGuiApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QGuiApplication*)this_)->QGuiApplication::event(arg0);
@@ -68,7 +68,7 @@ void C_ZN15QGuiApplicationD2Ev(void *this_) {
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:91
-// [-2] void setApplicationDisplayName(const class QString &)
+// [-2] void setApplicationDisplayName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication25setApplicationDisplayNameERK7QString(QString* name) {
   QGuiApplication::setApplicationDisplayName(*name);
@@ -85,7 +85,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:94
-// [-2] void setDesktopFileName(const class QString &)
+// [-2] void setDesktopFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication18setDesktopFileNameERK7QString(QString* name) {
   QGuiApplication::setDesktopFileName(*name);
@@ -120,7 +120,7 @@ void C_ZN15QGuiApplication15topLevelWindowsEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:99
-// [8] QWindow * topLevelAt(const class QPoint &)
+// [8] QWindow * topLevelAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGuiApplication10topLevelAtERK6QPoint(QPoint* pos) {
   return (void*)QGuiApplication::topLevelAt(*pos);
@@ -128,7 +128,7 @@ void* C_ZN15QGuiApplication10topLevelAtERK6QPoint(QPoint* pos) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:101
-// [-2] void setWindowIcon(const class QIcon &)
+// [-2] void setWindowIcon(const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication13setWindowIconERK5QIcon(QIcon* icon) {
   QGuiApplication::setWindowIcon(*icon);
@@ -187,7 +187,7 @@ void* C_ZN15QGuiApplication13primaryScreenEv() {
 // Public static Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtGui/qguiapplication.h:113
-// [8] QScreen * screenAt(const class QPoint &)
+// [8] QScreen * screenAt(const QPoint &)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGuiApplication8screenAtERK6QPoint(QPoint* point) {
@@ -213,7 +213,7 @@ void* C_ZN15QGuiApplication14overrideCursorEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:119
-// [-2] void setOverrideCursor(const class QCursor &)
+// [-2] void setOverrideCursor(const QCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication17setOverrideCursorERK7QCursor(QCursor* arg0) {
   QGuiApplication::setOverrideCursor(*arg0);
@@ -221,7 +221,7 @@ void C_ZN15QGuiApplication17setOverrideCursorERK7QCursor(QCursor* arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:120
-// [-2] void changeOverrideCursor(const class QCursor &)
+// [-2] void changeOverrideCursor(const QCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication20changeOverrideCursorERK7QCursor(QCursor* arg0) {
   QGuiApplication::changeOverrideCursor(*arg0);
@@ -246,7 +246,7 @@ return new QFont(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:125
-// [-2] void setFont(const class QFont &)
+// [-2] void setFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication7setFontERK5QFont(QFont* arg0) {
   QGuiApplication::setFont(*arg0);
@@ -271,7 +271,7 @@ return new QPalette(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:132
-// [-2] void setPalette(const class QPalette &)
+// [-2] void setPalette(const QPalette &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication10setPaletteERK8QPalette(QPalette* pal) {
   QGuiApplication::setPalette(*pal);
@@ -343,7 +343,7 @@ void* C_ZN15QGuiApplication10styleHintsEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:145
-// [-2] void setDesktopSettingsAware(_Bool)
+// [-2] void setDesktopSettingsAware(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication23setDesktopSettingsAwareEb(bool on) {
   QGuiApplication::setDesktopSettingsAware(on);
@@ -367,7 +367,7 @@ void* C_ZN15QGuiApplication11inputMethodEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:152
-// [8] QFunctionPointer platformFunction(const class QByteArray &)
+// [8] QFunctionPointer platformFunction(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication16platformFunctionERK10QByteArray(QByteArray* function) {
   auto rv = QGuiApplication::platformFunction(*function);
@@ -376,7 +376,7 @@ void C_ZN15QGuiApplication16platformFunctionERK10QByteArray(QByteArray* function
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:154
-// [-2] void setQuitOnLastWindowClosed(_Bool)
+// [-2] void setQuitOnLastWindowClosed(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication25setQuitOnLastWindowClosedEb(bool quit) {
   QGuiApplication::setQuitOnLastWindowClosed(quit);
@@ -411,7 +411,7 @@ int C_ZN15QGuiApplication4execEv() {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:160
-// [1] bool notify(class QObject *, class QEvent *)
+// [1] bool notify(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QGuiApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QGuiApplication*)this_)->notify(arg0, arg1);
@@ -468,7 +468,7 @@ bool C_ZN15QGuiApplication34isFallbackSessionManagementEnabledEv() {
 // Public static Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qguiapplication.h:170
-// [-2] void setFallbackSessionManagementEnabled(_Bool)
+// [-2] void setFallbackSessionManagementEnabled(bool)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication35setFallbackSessionManagementEnabledEb(bool arg0) {
@@ -497,7 +497,7 @@ void C_ZN15QGuiApplication19fontDatabaseChangedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:176
-// [-2] void screenAdded(class QScreen *)
+// [-2] void screenAdded(QScreen *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication11screenAddedEP7QScreen(void *this_, QScreen * screen) {
   ((QGuiApplication*)this_)->screenAdded(screen);
@@ -506,7 +506,7 @@ void C_ZN15QGuiApplication11screenAddedEP7QScreen(void *this_, QScreen * screen)
 // Public Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtGui/qguiapplication.h:177
-// [-2] void screenRemoved(class QScreen *)
+// [-2] void screenRemoved(QScreen *)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication13screenRemovedEP7QScreen(void *this_, QScreen * screen) {
@@ -516,7 +516,7 @@ void C_ZN15QGuiApplication13screenRemovedEP7QScreen(void *this_, QScreen * scree
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:178
-// [-2] void primaryScreenChanged(class QScreen *)
+// [-2] void primaryScreenChanged(QScreen *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication20primaryScreenChangedEP7QScreen(void *this_, QScreen * screen) {
   ((QGuiApplication*)this_)->primaryScreenChanged(screen);
@@ -532,7 +532,7 @@ void C_ZN15QGuiApplication16lastWindowClosedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:180
-// [-2] void focusObjectChanged(class QObject *)
+// [-2] void focusObjectChanged(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication18focusObjectChangedEP7QObject(void *this_, QObject * focusObject) {
   ((QGuiApplication*)this_)->focusObjectChanged(focusObject);
@@ -540,7 +540,7 @@ void C_ZN15QGuiApplication18focusObjectChangedEP7QObject(void *this_, QObject * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:181
-// [-2] void focusWindowChanged(class QWindow *)
+// [-2] void focusWindowChanged(QWindow *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication18focusWindowChangedEP7QWindow(void *this_, QWindow * focusWindow) {
   ((QGuiApplication*)this_)->focusWindowChanged(focusWindow);
@@ -568,7 +568,7 @@ void C_ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(void *
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qguiapplication.h:185
-// [-2] void commitDataRequest(class QSessionManager &)
+// [-2] void commitDataRequest(QSessionManager &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication17commitDataRequestER15QSessionManager(void *this_, QSessionManager* sessionManager) {
@@ -579,7 +579,7 @@ void C_ZN15QGuiApplication17commitDataRequestER15QSessionManager(void *this_, QS
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qguiapplication.h:186
-// [-2] void saveStateRequest(class QSessionManager &)
+// [-2] void saveStateRequest(QSessionManager &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication16saveStateRequestER15QSessionManager(void *this_, QSessionManager* sessionManager) {
@@ -590,7 +590,7 @@ void C_ZN15QGuiApplication16saveStateRequestER15QSessionManager(void *this_, QSe
 // Public Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtGui/qguiapplication.h:188
-// [-2] void paletteChanged(const class QPalette &)
+// [-2] void paletteChanged(const QPalette &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication14paletteChangedERK8QPalette(void *this_, QPalette* pal) {

@@ -23,17 +23,17 @@ MyQVector4D() : QVector4D() {}
 MyQVector4D(Qt::Initialization arg0) : QVector4D(arg0) {}
 // void QVector4D(float, float, float, float)
 MyQVector4D(float xpos, float ypos, float zpos, float wpos) : QVector4D(xpos, ypos, zpos, wpos) {}
-// void QVector4D(const class QPoint &)
+// void QVector4D(const QPoint &)
 MyQVector4D(const QPoint & point) : QVector4D(point) {}
-// void QVector4D(const class QPointF &)
+// void QVector4D(const QPointF &)
 MyQVector4D(const QPointF & point) : QVector4D(point) {}
-// void QVector4D(const class QVector2D &)
+// void QVector4D(const QVector2D &)
 MyQVector4D(const QVector2D & vector) : QVector4D(vector) {}
-// void QVector4D(const class QVector2D &, float, float)
+// void QVector4D(const QVector2D &, float, float)
 MyQVector4D(const QVector2D & vector, float zpos, float wpos) : QVector4D(vector, zpos, wpos) {}
-// void QVector4D(const class QVector3D &)
+// void QVector4D(const QVector3D &)
 MyQVector4D(const QVector3D & vector) : QVector4D(vector) {}
-// void QVector4D(const class QVector3D &, float)
+// void QVector4D(const QVector3D &, float)
 MyQVector4D(const QVector3D & vector, float wpos) : QVector4D(vector, wpos) {}
 };
 
@@ -63,7 +63,7 @@ void* C_ZN9QVector4DC2Effff(float xpos, float ypos, float zpos, float wpos) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:62
-// [-2] void QVector4D(const class QPoint &)
+// [-2] void QVector4D(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK6QPoint(QPoint* point) {
   return  new QVector4D(*point);
@@ -71,7 +71,7 @@ void* C_ZN9QVector4DC2ERK6QPoint(QPoint* point) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:63
-// [-2] void QVector4D(const class QPointF &)
+// [-2] void QVector4D(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK7QPointF(QPointF* point) {
   return  new QVector4D(*point);
@@ -79,7 +79,7 @@ void* C_ZN9QVector4DC2ERK7QPointF(QPointF* point) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:65
-// [-2] void QVector4D(const class QVector2D &)
+// [-2] void QVector4D(const QVector2D &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector2D(QVector2D* vector) {
   return  new QVector4D(*vector);
@@ -87,7 +87,7 @@ void* C_ZN9QVector4DC2ERK9QVector2D(QVector2D* vector) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:66
-// [-2] void QVector4D(const class QVector2D &, float, float)
+// [-2] void QVector4D(const QVector2D &, float, float)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector2Dff(QVector2D* vector, float zpos, float wpos) {
   return  new QVector4D(*vector, zpos, wpos);
@@ -95,7 +95,7 @@ void* C_ZN9QVector4DC2ERK9QVector2Dff(QVector2D* vector, float zpos, float wpos)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:69
-// [-2] void QVector4D(const class QVector3D &)
+// [-2] void QVector4D(const QVector3D &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector3D(QVector3D* vector) {
   return  new QVector4D(*vector);
@@ -103,7 +103,7 @@ void* C_ZN9QVector4DC2ERK9QVector3D(QVector3D* vector) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:70
-// [-2] void QVector4D(const class QVector3D &, float)
+// [-2] void QVector4D(const QVector3D &, float)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DC2ERK9QVector3Df(QVector3D* vector, float wpos) {
   return  new QVector4D(*vector, wpos);
@@ -233,7 +233,7 @@ void C_ZN9QVector4D9normalizeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:94
-// [16] QVector4D & operator+=(const class QVector4D &)
+// [16] QVector4D & operator+=(const QVector4D &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DpLERKS_(void *this_, QVector4D* vector) {
   auto& rv = ((QVector4D*)this_)->operator+=(*vector);
@@ -242,7 +242,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:95
-// [16] QVector4D & operator-=(const class QVector4D &)
+// [16] QVector4D & operator-=(const QVector4D &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DmIERKS_(void *this_, QVector4D* vector) {
   auto& rv = ((QVector4D*)this_)->operator-=(*vector);
@@ -260,7 +260,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:97
-// [16] QVector4D & operator*=(const class QVector4D &)
+// [16] QVector4D & operator*=(const QVector4D &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DmLERKS_(void *this_, QVector4D* vector) {
   auto& rv = ((QVector4D*)this_)->operator*=(*vector);
@@ -278,7 +278,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:99
-// [16] QVector4D & operator/=(const class QVector4D &)
+// [16] QVector4D & operator/=(const QVector4D &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QVector4DdVERKS_(void *this_, QVector4D* vector) {
   auto& rv = ((QVector4D*)this_)->operator/=(*vector);
@@ -287,7 +287,7 @@ return &rv;
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:101
-// [4] float dotProduct(const class QVector4D &, const class QVector4D &)
+// [4] float dotProduct(const QVector4D &, const QVector4D &)
 extern "C" Q_DECL_EXPORT
 float C_ZN9QVector4D10dotProductERKS_S1_(QVector4D* v1, QVector4D* v2) {
   return (float)QVector4D::dotProduct(*v1, *v2);

@@ -79,7 +79,7 @@ bool C_QWindowList_isDetached_0(void* this_ ) {
     return rv;
 }
 
-// [-2] void setSharable(_Bool)
+// [-2] void setSharable(bool)
 extern "C"
 void C_QWindowList_setSharable_0(void* this_ , bool sharable) {
     // QWindowList_setSharable_0()
@@ -300,7 +300,7 @@ QWindowList::reverse_iterator* C_QWindowList_rend_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator insert(class QList::iterator, const T &)
+// [-3] QList::iterator insert(QList::iterator, const T &)
 extern "C"
 QWindowList::iterator* C_QWindowList_insert_1(void* this_ , QWindowList::iterator* before, QWindow * t) {
     // QWindowList_insert_1()
@@ -308,7 +308,7 @@ QWindowList::iterator* C_QWindowList_insert_1(void* this_ , QWindowList::iterato
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator erase(class QList::iterator)
+// [-3] QList::iterator erase(QList::iterator)
 extern "C"
 QWindowList::iterator* C_QWindowList_erase_0(void* this_ , QWindowList::iterator* pos) {
     // QWindowList_erase_0()
@@ -316,7 +316,7 @@ QWindowList::iterator* C_QWindowList_erase_0(void* this_ , QWindowList::iterator
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator erase(class QList::iterator, class QList::iterator)
+// [-3] QList::iterator erase(QList::iterator, QList::iterator)
 extern "C"
 QWindowList::iterator* C_QWindowList_erase_1(void* this_ , QWindowList::iterator* first, QWindowList::iterator* last) {
     // QWindowList_erase_1()

@@ -180,7 +180,7 @@ return new QStringView(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:253
-// [1] bool startsWith(class QStringView, Qt::CaseSensitivity)
+// [1] bool startsWith(QStringView, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithES_N2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
   return (bool)((QStringView*)this_)->startsWith(*s, cs);
@@ -188,7 +188,7 @@ bool C_ZNK11QStringView10startsWithES_N2Qt15CaseSensitivityE(void *this_, QStrin
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:255
-// [1] bool startsWith(class QLatin1String, Qt::CaseSensitivity)
+// [1] bool startsWith(QLatin1String, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
   return (bool)((QStringView*)this_)->startsWith(*s, cs);
@@ -196,7 +196,7 @@ bool C_ZNK11QStringView10startsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:256
-// [1] bool startsWith(class QChar)
+// [1] bool startsWith(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithE5QChar(void *this_, QChar* c) {
   return (bool)((QStringView*)this_)->startsWith(*c);
@@ -204,7 +204,7 @@ bool C_ZNK11QStringView10startsWithE5QChar(void *this_, QChar* c) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:258
-// [1] bool startsWith(class QChar, Qt::CaseSensitivity)
+// [1] bool startsWith(QChar, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
   return (bool)((QStringView*)this_)->startsWith(*c, cs);
@@ -212,7 +212,7 @@ bool C_ZNK11QStringView10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QC
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:261
-// [1] bool endsWith(class QStringView, Qt::CaseSensitivity)
+// [1] bool endsWith(QStringView, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithES_N2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
   return (bool)((QStringView*)this_)->endsWith(*s, cs);
@@ -220,7 +220,7 @@ bool C_ZNK11QStringView8endsWithES_N2Qt15CaseSensitivityE(void *this_, QStringVi
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:263
-// [1] bool endsWith(class QLatin1String, Qt::CaseSensitivity)
+// [1] bool endsWith(QLatin1String, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
   return (bool)((QStringView*)this_)->endsWith(*s, cs);
@@ -228,7 +228,7 @@ bool C_ZNK11QStringView8endsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *thi
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:264
-// [1] bool endsWith(class QChar)
+// [1] bool endsWith(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithE5QChar(void *this_, QChar* c) {
   return (bool)((QStringView*)this_)->endsWith(*c);
@@ -236,7 +236,7 @@ bool C_ZNK11QStringView8endsWithE5QChar(void *this_, QChar* c) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:266
-// [1] bool endsWith(class QChar, Qt::CaseSensitivity)
+// [1] bool endsWith(QChar, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
   return (bool)((QStringView*)this_)->endsWith(*c, cs);

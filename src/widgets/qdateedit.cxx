@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQDateEdit : public QDateEdit {
 public:
   virtual ~MyQDateEdit() {}
-// void QDateEdit(class QWidget *)
+// void QDateEdit(QWidget *)
 MyQDateEdit(QWidget * parent) : QDateEdit(parent) {}
-// void QDateEdit(const class QDate &, class QWidget *)
+// void QDateEdit(const QDate &, QWidget *)
 MyQDateEdit(const QDate & date, QWidget * parent) : QDateEdit(date, parent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK9QDateEdit10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:220
-// [-2] void QDateEdit(class QWidget *)
+// [-2] void QDateEdit(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
   return  new QDateEdit(parent);
@@ -40,7 +40,7 @@ void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:221
-// [-2] void QDateEdit(const class QDate &, class QWidget *)
+// [-2] void QDateEdit(const QDate &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2ERK5QDateP7QWidget(QDate* date, QWidget * parent) {
   return  new QDateEdit(*date, parent);
@@ -55,7 +55,7 @@ void C_ZN9QDateEditD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:225
-// [-2] void userDateChanged(const class QDate &)
+// [-2] void userDateChanged(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateEdit15userDateChangedERK5QDate(void *this_, QDate* date) {
   ((QDateEdit*)this_)->userDateChanged(*date);

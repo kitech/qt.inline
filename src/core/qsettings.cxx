@@ -16,18 +16,18 @@
 class Q_DECL_EXPORT MyQSettings : public QSettings {
 public:
   virtual ~MyQSettings() {}
-// void QSettings(const class QString &, const class QString &, class QObject *)
+// void QSettings(const QString &, const QString &, QObject *)
 MyQSettings(const QString & organization, const QString & application, QObject * parent) : QSettings(organization, application, parent) {}
-// void QSettings(enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
+// void QSettings(QSettings::Scope, const QString &, const QString &, QObject *)
 MyQSettings(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) : QSettings(scope, organization, application, parent) {}
-// void QSettings(enum QSettings::Format, enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
+// void QSettings(QSettings::Format, QSettings::Scope, const QString &, const QString &, QObject *)
 MyQSettings(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) : QSettings(format, scope, organization, application, parent) {}
-// void QSettings(const class QString &, enum QSettings::Format, class QObject *)
+// void QSettings(const QString &, QSettings::Format, QObject *)
 MyQSettings(const QString & fileName, QSettings::Format format, QObject * parent) : QSettings(fileName, format, parent) {}
-// void QSettings(class QObject *)
+// void QSettings(QObject *)
 MyQSettings(QObject * parent) : QSettings(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -43,7 +43,7 @@ MyQSettings(QObject * parent) : QSettings(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:202
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QSettings5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QSettings*)this_)->QSettings::event(event);
@@ -59,7 +59,7 @@ void* C_ZNK9QSettings10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:127
-// [-2] void QSettings(const class QString &, const class QString &, class QObject *)
+// [-2] void QSettings(const QString &, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSettingsC2ERK7QStringS2_P7QObject(QString* organization, QString* application, QObject * parent) {
   auto _nilp = (MyQSettings*)(0);
@@ -68,7 +68,7 @@ void* C_ZN9QSettingsC2ERK7QStringS2_P7QObject(QString* organization, QString* ap
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:129
-// [-2] void QSettings(enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
+// [-2] void QSettings(QSettings::Scope, const QString &, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope scope, QString* organization, QString* application, QObject * parent) {
   auto _nilp = (MyQSettings*)(0);
@@ -77,7 +77,7 @@ void* C_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope scope, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:131
-// [-2] void QSettings(enum QSettings::Format, enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
+// [-2] void QSettings(QSettings::Format, QSettings::Scope, const QString &, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSettingsC2ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Format format, QSettings::Scope scope, QString* organization, QString* application, QObject * parent) {
   auto _nilp = (MyQSettings*)(0);
@@ -86,7 +86,7 @@ void* C_ZN9QSettingsC2ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Fo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:133
-// [-2] void QSettings(const class QString &, enum QSettings::Format, class QObject *)
+// [-2] void QSettings(const QString &, QSettings::Format, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject(QString* fileName, QSettings::Format format, QObject * parent) {
   auto _nilp = (MyQSettings*)(0);
@@ -95,7 +95,7 @@ void* C_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject(QString* fileName, QSettin
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:134
-// [-2] void QSettings(class QObject *)
+// [-2] void QSettings(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSettingsC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSettings*)(0);
@@ -147,7 +147,7 @@ bool C_ZNK9QSettings20isAtomicSyncRequiredEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qsettings.h:150
-// [-2] void setAtomicSyncRequired(_Bool)
+// [-2] void setAtomicSyncRequired(bool)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings21setAtomicSyncRequiredEb(void *this_, bool enable) {
@@ -157,7 +157,7 @@ void C_ZN9QSettings21setAtomicSyncRequiredEb(void *this_, bool enable) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:152
-// [-2] void beginGroup(const class QString &)
+// [-2] void beginGroup(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings10beginGroupERK7QString(void *this_, QString* prefix) {
   ((QSettings*)this_)->beginGroup(*prefix);
@@ -182,7 +182,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:156
-// [4] int beginReadArray(const class QString &)
+// [4] int beginReadArray(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QSettings14beginReadArrayERK7QString(void *this_, QString* prefix) {
   return (int)((QSettings*)this_)->beginReadArray(*prefix);
@@ -190,7 +190,7 @@ int C_ZN9QSettings14beginReadArrayERK7QString(void *this_, QString* prefix) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:157
-// [-2] void beginWriteArray(const class QString &, int)
+// [-2] void beginWriteArray(const QString &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings15beginWriteArrayERK7QStringi(void *this_, QString* prefix, int size) {
   ((QSettings*)this_)->beginWriteArray(*prefix, size);
@@ -249,7 +249,7 @@ bool C_ZNK9QSettings10isWritableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:166
-// [-2] void setValue(const class QString &, const class QVariant &)
+// [-2] void setValue(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings8setValueERK7QStringRK8QVariant(void *this_, QString* key, QVariant* value) {
   ((QSettings*)this_)->setValue(*key, *value);
@@ -257,7 +257,7 @@ void C_ZN9QSettings8setValueERK7QStringRK8QVariant(void *this_, QString* key, QV
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:167
-// [16] QVariant value(const class QString &, const class QVariant &)
+// [16] QVariant value(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings5valueERK7QStringRK8QVariant(void *this_, QString* key, QVariant* defaultValue) {
   auto rv = ((QSettings*)this_)->value(*key, *defaultValue);
@@ -266,7 +266,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:169
-// [-2] void remove(const class QString &)
+// [-2] void remove(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings6removeERK7QString(void *this_, QString* key) {
   ((QSettings*)this_)->remove(*key);
@@ -274,7 +274,7 @@ void C_ZN9QSettings6removeERK7QString(void *this_, QString* key) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:170
-// [1] bool contains(const class QString &)
+// [1] bool contains(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSettings8containsERK7QString(void *this_, QString* key) {
   return (bool)((QSettings*)this_)->contains(*key);
@@ -282,7 +282,7 @@ bool C_ZNK9QSettings8containsERK7QString(void *this_, QString* key) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:172
-// [-2] void setFallbacksEnabled(_Bool)
+// [-2] void setFallbacksEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings19setFallbacksEnabledEb(void *this_, bool b) {
   ((QSettings*)this_)->setFallbacksEnabled(b);
@@ -354,7 +354,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtCore/qsettings.h:182
-// [-2] void setIniCodec(class QTextCodec *)
+// [-2] void setIniCodec(QTextCodec *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings11setIniCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
@@ -386,7 +386,7 @@ void* C_ZNK9QSettings8iniCodecEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:187
-// [-2] void setDefaultFormat(enum QSettings::Format)
+// [-2] void setDefaultFormat(QSettings::Format)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format format) {
   QSettings::setDefaultFormat(format);
@@ -405,7 +405,7 @@ QSettings::Format C_ZN9QSettings13defaultFormatEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:189
-// [-2] void setSystemIniPath(const class QString &)
+// [-2] void setSystemIniPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setSystemIniPathERK7QString(QString* dir) {
   QSettings::setSystemIniPath(*dir);
@@ -413,7 +413,7 @@ void C_ZN9QSettings16setSystemIniPathERK7QString(QString* dir) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:190
-// [-2] void setUserIniPath(const class QString &)
+// [-2] void setUserIniPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
   QSettings::setUserIniPath(*dir);
@@ -421,7 +421,7 @@ void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:191
-// [-2] void setPath(enum QSettings::Format, enum QSettings::Scope, const class QString &)
+// [-2] void setPath(QSettings::Format, QSettings::Scope, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, QString* path) {
   QSettings::setPath(format, scope, *path);

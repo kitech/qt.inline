@@ -36,7 +36,7 @@ return new QVariant(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:569
-// [-2] void setCurrentValue(const class QVariant &)
+// [-2] void setCurrentValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QAccessibleValueInterface15setCurrentValueERK8QVariant(void *this_, QVariant* value) {
   ((QAccessibleValueInterface*)this_)->setCurrentValue(*value);

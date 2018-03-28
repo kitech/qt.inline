@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQTextList : public QTextList {
 public:
   virtual ~MyQTextList() {}
-// void QTextList(class QTextDocument *)
+// void QTextList(QTextDocument *)
 MyQTextList(QTextDocument * doc) : QTextList(doc) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK9QTextList10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:57
-// [-2] void QTextList(class QTextDocument *)
+// [-2] void QTextList(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTextListC2EP13QTextDocument(QTextDocument * doc) {
   return  new QTextList(doc);
@@ -70,7 +70,7 @@ return new QTextBlock(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:67
-// [4] int itemNumber(const class QTextBlock &)
+// [4] int itemNumber(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, QTextBlock* arg0) {
   return (int)((QTextList*)this_)->itemNumber(*arg0);
@@ -78,7 +78,7 @@ int C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, QTextBlock* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:68
-// [8] QString itemText(const class QTextBlock &)
+// [8] QString itemText(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, QTextBlock* arg0) {
   auto rv = ((QTextList*)this_)->itemText(*arg0);
@@ -95,7 +95,7 @@ void C_ZN9QTextList10removeItemEi(void *this_, int i) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:71
-// [-2] void remove(const class QTextBlock &)
+// [-2] void remove(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextList6removeERK10QTextBlock(void *this_, QTextBlock* arg0) {
   ((QTextList*)this_)->remove(*arg0);
@@ -103,7 +103,7 @@ void C_ZN9QTextList6removeERK10QTextBlock(void *this_, QTextBlock* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:73
-// [-2] void add(const class QTextBlock &)
+// [-2] void add(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextList3addERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextList*)this_)->add(*block);
@@ -111,7 +111,7 @@ void C_ZN9QTextList3addERK10QTextBlock(void *this_, QTextBlock* block) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:75
-// [-2] void setFormat(const class QTextListFormat &)
+// [-2] void setFormat(const QTextListFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextList9setFormatERK15QTextListFormat(void *this_, QTextListFormat* format) {
   ((QTextList*)this_)->setFormat(*format);

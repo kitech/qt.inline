@@ -18,7 +18,7 @@ public:
   virtual ~MyQTextImageFormat() {}
 // void QTextImageFormat()
 MyQTextImageFormat() : QTextImageFormat() {}
-// void QTextImageFormat(const class QTextFormat &)
+// void QTextImageFormat(const QTextFormat &)
 MyQTextImageFormat(const QTextFormat & format) : QTextImageFormat(format) {}
 };
 
@@ -40,7 +40,7 @@ bool C_ZNK16QTextImageFormat7isValidEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:739
-// [-2] void setName(const class QString &)
+// [-2] void setName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, QString* name) {
   ((QTextImageFormat*)this_)->setName(*name);

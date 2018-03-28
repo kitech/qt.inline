@@ -19,9 +19,9 @@ public:
   virtual ~MyQUrlQuery() {}
 // void QUrlQuery()
 MyQUrlQuery() : QUrlQuery() {}
-// void QUrlQuery(const class QUrl &)
+// void QUrlQuery(const QUrl &)
 MyQUrlQuery(const QUrl & url) : QUrlQuery(url) {}
-// void QUrlQuery(const class QString &)
+// void QUrlQuery(const QString &)
 MyQUrlQuery(const QString & queryString) : QUrlQuery(queryString) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN9QUrlQueryC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:60
-// [-2] void QUrlQuery(const class QUrl &)
+// [-2] void QUrlQuery(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryC2ERK4QUrl(QUrl* url) {
   return  new QUrlQuery(*url);
@@ -43,7 +43,7 @@ void* C_ZN9QUrlQueryC2ERK4QUrl(QUrl* url) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:61
-// [-2] void QUrlQuery(const class QString &)
+// [-2] void QUrlQuery(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryC2ERK7QString(QString* queryString) {
   return  new QUrlQuery(*queryString);
@@ -51,7 +51,7 @@ void* C_ZN9QUrlQueryC2ERK7QString(QString* queryString) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:63
-// [8] QUrlQuery & operator=(const class QUrlQuery &)
+// [8] QUrlQuery & operator=(const QUrlQuery &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryaSERKS_(void *this_, QUrlQuery* other) {
   auto& rv = ((QUrlQuery*)this_)->operator=(*other);
@@ -60,7 +60,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:65
-// [8] QUrlQuery & operator=(class QUrlQuery &&)
+// [8] QUrlQuery & operator=(QUrlQuery &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryaSEOS_(void *this_, QUrlQuery && other) {
   auto& rv = ((QUrlQuery*)this_)->operator=(other);
@@ -76,7 +76,7 @@ void C_ZN9QUrlQueryD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:69
-// [1] bool operator==(const class QUrlQuery &)
+// [1] bool operator==(const QUrlQuery &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QUrlQueryeqERKS_(void *this_, QUrlQuery* other) {
   return (bool)((QUrlQuery*)this_)->operator==(*other);
@@ -84,7 +84,7 @@ bool C_ZNK9QUrlQueryeqERKS_(void *this_, QUrlQuery* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:70
-// [1] bool operator!=(const class QUrlQuery &)
+// [1] bool operator!=(const QUrlQuery &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QUrlQueryneERKS_(void *this_, QUrlQuery* other) {
   return (bool)((QUrlQuery*)this_)->operator!=(*other);
@@ -92,7 +92,7 @@ bool C_ZNK9QUrlQueryneERKS_(void *this_, QUrlQuery* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:73
-// [-2] void swap(class QUrlQuery &)
+// [-2] void swap(QUrlQuery &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery4swapERS_(void *this_, QUrlQuery* other) {
   ((QUrlQuery*)this_)->swap(*other);
@@ -124,7 +124,7 @@ void C_ZN9QUrlQuery5clearEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:80
-// [-2] void setQuery(const class QString &)
+// [-2] void setQuery(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery8setQueryERK7QString(void *this_, QString* queryString) {
   ((QUrlQuery*)this_)->setQuery(*queryString);
@@ -132,7 +132,7 @@ void C_ZN9QUrlQuery8setQueryERK7QString(void *this_, QString* queryString) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:84
-// [-2] void setQueryDelimiters(class QChar, class QChar)
+// [-2] void setQueryDelimiters(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery18setQueryDelimitersE5QCharS0_(void *this_, QChar* valueDelimiter, QChar* pairDelimiter) {
   ((QUrlQuery*)this_)->setQueryDelimiters(*valueDelimiter, *pairDelimiter);
@@ -158,7 +158,7 @@ return new QChar(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:91
-// [1] bool hasQueryItem(const class QString &)
+// [1] bool hasQueryItem(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QUrlQuery12hasQueryItemERK7QString(void *this_, QString* key) {
   return (bool)((QUrlQuery*)this_)->hasQueryItem(*key);
@@ -166,7 +166,7 @@ bool C_ZNK9QUrlQuery12hasQueryItemERK7QString(void *this_, QString* key) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:92
-// [-2] void addQueryItem(const class QString &, const class QString &)
+// [-2] void addQueryItem(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery12addQueryItemERK7QStringS2_(void *this_, QString* key, QString* value) {
   ((QUrlQuery*)this_)->addQueryItem(*key, *value);
@@ -174,7 +174,7 @@ void C_ZN9QUrlQuery12addQueryItemERK7QStringS2_(void *this_, QString* key, QStri
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:93
-// [-2] void removeQueryItem(const class QString &)
+// [-2] void removeQueryItem(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery15removeQueryItemERK7QString(void *this_, QString* key) {
   ((QUrlQuery*)this_)->removeQueryItem(*key);
@@ -182,7 +182,7 @@ void C_ZN9QUrlQuery15removeQueryItemERK7QString(void *this_, QString* key) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:96
-// [-2] void removeAllQueryItems(const class QString &)
+// [-2] void removeAllQueryItems(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery19removeAllQueryItemsERK7QString(void *this_, QString* key) {
   ((QUrlQuery*)this_)->removeAllQueryItems(*key);

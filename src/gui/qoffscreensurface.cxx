@@ -17,9 +17,9 @@
 class Q_DECL_EXPORT MyQOffscreenSurface : public QOffscreenSurface {
 public:
   virtual ~MyQOffscreenSurface() {}
-// void QOffscreenSurface(class QScreen *, class QObject *)
+// void QOffscreenSurface(QScreen *, QObject *)
 MyQOffscreenSurface(QScreen * screen, QObject * parent) : QOffscreenSurface(screen, parent) {}
-// void QOffscreenSurface(class QScreen *)
+// void QOffscreenSurface(QScreen *)
 MyQOffscreenSurface(QScreen * screen) : QOffscreenSurface(screen) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZNK17QOffscreenSurface10metaObjectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtGui/qoffscreensurface.h:61
-// [-2] void QOffscreenSurface(class QScreen *, class QObject *)
+// [-2] void QOffscreenSurface(QScreen *, QObject *)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QOffscreenSurfaceC2EP7QScreenP7QObject(QScreen * screen, QObject * parent) {
@@ -44,7 +44,7 @@ void* C_ZN17QOffscreenSurfaceC2EP7QScreenP7QObject(QScreen * screen, QObject * p
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:62
-// [-2] void QOffscreenSurface(class QScreen *)
+// [-2] void QOffscreenSurface(QScreen *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QOffscreenSurfaceC2EP7QScreen(QScreen * screen) {
   return  new QOffscreenSurface(screen);
@@ -91,7 +91,7 @@ bool C_ZNK17QOffscreenSurface7isValidEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:72
-// [-2] void setFormat(const class QSurfaceFormat &)
+// [-2] void setFormat(const QSurfaceFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QOffscreenSurface9setFormatERK14QSurfaceFormat(void *this_, QSurfaceFormat* format) {
   ((QOffscreenSurface*)this_)->setFormat(*format);
@@ -134,7 +134,7 @@ void* C_ZNK17QOffscreenSurface6screenEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:79
-// [-2] void setScreen(class QScreen *)
+// [-2] void setScreen(QScreen *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QOffscreenSurface9setScreenEP7QScreen(void *this_, QScreen * screen) {
   ((QOffscreenSurface*)this_)->setScreen(screen);
@@ -164,7 +164,7 @@ void C_ZN17QOffscreenSurface15setNativeHandleEPv(void *this_, void * handle) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:87
-// [-2] void screenChanged(class QScreen *)
+// [-2] void screenChanged(QScreen *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QOffscreenSurface13screenChangedEP7QScreen(void *this_, QScreen * screen) {
   ((QOffscreenSurface*)this_)->screenChanged(screen);

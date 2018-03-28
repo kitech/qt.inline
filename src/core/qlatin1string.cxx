@@ -24,7 +24,7 @@ MyQLatin1String(const char * s) : QLatin1String(s) {}
 MyQLatin1String(const char * f, const char * l) : QLatin1String(f, l) {}
 // void QLatin1String(const char *, int)
 MyQLatin1String(const char * s, int sz) : QLatin1String(s, sz) {}
-// void QLatin1String(const class QByteArray &)
+// void QLatin1String(const QByteArray &)
 MyQLatin1String(const QByteArray & s) : QLatin1String(s) {}
 };
 
@@ -68,7 +68,7 @@ void* C_ZN13QLatin1StringC2EPKci(const char * s, int sz) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:99
-// [-2] void QLatin1String(const class QByteArray &)
+// [-2] void QLatin1String(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QLatin1StringC2ERK10QByteArray(QByteArray* s) {
   return  new QLatin1String(*s);
@@ -168,7 +168,7 @@ void C_ZNK13QLatin1String4backEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:115
-// [1] bool startsWith(class QStringView, Qt::CaseSensitivity)
+// [1] bool startsWith(QStringView, Qt::CaseSensitivity)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
@@ -179,7 +179,7 @@ bool C_ZNK13QLatin1String10startsWithE11QStringViewN2Qt15CaseSensitivityE(void *
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:117
-// [1] bool startsWith(class QLatin1String, Qt::CaseSensitivity)
+// [1] bool startsWith(QLatin1String, Qt::CaseSensitivity)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
@@ -190,7 +190,7 @@ bool C_ZNK13QLatin1String10startsWithES_N2Qt15CaseSensitivityE(void *this_, QLat
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:119
-// [1] bool startsWith(class QChar)
+// [1] bool startsWith(QChar)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithE5QChar(void *this_, QChar* c) {
@@ -201,7 +201,7 @@ bool C_ZNK13QLatin1String10startsWithE5QChar(void *this_, QChar* c) {
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:121
-// [1] bool startsWith(class QChar, Qt::CaseSensitivity)
+// [1] bool startsWith(QChar, Qt::CaseSensitivity)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
@@ -212,7 +212,7 @@ bool C_ZNK13QLatin1String10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, 
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:124
-// [1] bool endsWith(class QStringView, Qt::CaseSensitivity)
+// [1] bool endsWith(QStringView, Qt::CaseSensitivity)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
@@ -223,7 +223,7 @@ bool C_ZNK13QLatin1String8endsWithE11QStringViewN2Qt15CaseSensitivityE(void *thi
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:126
-// [1] bool endsWith(class QLatin1String, Qt::CaseSensitivity)
+// [1] bool endsWith(QLatin1String, Qt::CaseSensitivity)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
@@ -234,7 +234,7 @@ bool C_ZNK13QLatin1String8endsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:128
-// [1] bool endsWith(class QChar)
+// [1] bool endsWith(QChar)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithE5QChar(void *this_, QChar* c) {
@@ -245,7 +245,7 @@ bool C_ZNK13QLatin1String8endsWithE5QChar(void *this_, QChar* c) {
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qstring.h:130
-// [1] bool endsWith(class QChar, Qt::CaseSensitivity)
+// [1] bool endsWith(QChar, Qt::CaseSensitivity)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
@@ -397,7 +397,7 @@ return new QLatin1String(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:172
-// [1] bool operator==(const class QString &)
+// [1] bool operator==(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringeqERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator==(*s);
@@ -405,7 +405,7 @@ bool C_ZNK13QLatin1StringeqERK7QString(void *this_, QString* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:173
-// [1] bool operator!=(const class QString &)
+// [1] bool operator!=(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringneERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator!=(*s);
@@ -413,7 +413,7 @@ bool C_ZNK13QLatin1StringneERK7QString(void *this_, QString* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:174
-// [1] bool operator>(const class QString &)
+// [1] bool operator>(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringgtERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator>(*s);
@@ -421,7 +421,7 @@ bool C_ZNK13QLatin1StringgtERK7QString(void *this_, QString* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:175
-// [1] bool operator<(const class QString &)
+// [1] bool operator<(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringltERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator<(*s);
@@ -429,7 +429,7 @@ bool C_ZNK13QLatin1StringltERK7QString(void *this_, QString* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:176
-// [1] bool operator>=(const class QString &)
+// [1] bool operator>=(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringgeERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator>=(*s);
@@ -437,7 +437,7 @@ bool C_ZNK13QLatin1StringgeERK7QString(void *this_, QString* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:177
-// [1] bool operator<=(const class QString &)
+// [1] bool operator<=(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringleERK7QString(void *this_, QString* s) {
   return (bool)((QLatin1String*)this_)->operator<=(*s);
@@ -493,7 +493,7 @@ bool C_ZNK13QLatin1StringgeEPKc(void *this_, const char * s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:187
-// [1] bool operator==(const class QByteArray &)
+// [1] bool operator==(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringeqERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator==(*s);
@@ -501,7 +501,7 @@ bool C_ZNK13QLatin1StringeqERK10QByteArray(void *this_, QByteArray* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:188
-// [1] bool operator!=(const class QByteArray &)
+// [1] bool operator!=(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringneERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator!=(*s);
@@ -509,7 +509,7 @@ bool C_ZNK13QLatin1StringneERK10QByteArray(void *this_, QByteArray* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:189
-// [1] bool operator<(const class QByteArray &)
+// [1] bool operator<(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringltERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator<(*s);
@@ -517,7 +517,7 @@ bool C_ZNK13QLatin1StringltERK10QByteArray(void *this_, QByteArray* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:190
-// [1] bool operator>(const class QByteArray &)
+// [1] bool operator>(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringgtERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator>(*s);
@@ -525,7 +525,7 @@ bool C_ZNK13QLatin1StringgtERK10QByteArray(void *this_, QByteArray* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:191
-// [1] bool operator<=(const class QByteArray &)
+// [1] bool operator<=(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringleERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator<=(*s);
@@ -533,7 +533,7 @@ bool C_ZNK13QLatin1StringleERK10QByteArray(void *this_, QByteArray* s) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:192
-// [1] bool operator>=(const class QByteArray &)
+// [1] bool operator>=(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1StringgeERK10QByteArray(void *this_, QByteArray* s) {
   return (bool)((QLatin1String*)this_)->operator>=(*s);

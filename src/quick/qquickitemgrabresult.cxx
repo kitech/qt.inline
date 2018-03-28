@@ -17,7 +17,7 @@ class Q_DECL_EXPORT MyQQuickItemGrabResult : public QQuickItemGrabResult {
 public:
   virtual ~MyQQuickItemGrabResult() {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ public:
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:73
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QQuickItemGrabResult5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QQuickItemGrabResult*)this_)->QQuickItemGrabResult::event(arg0);
@@ -67,7 +67,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:68
-// [1] bool saveToFile(const class QString &)
+// [1] bool saveToFile(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fileName) {
   return (bool)((QQuickItemGrabResult*)this_)->saveToFile(*fileName);
@@ -75,7 +75,7 @@ bool C_ZN20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fil
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h:70
-// [1] bool saveToFile(const class QString &)
+// [1] bool saveToFile(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QQuickItemGrabResult10saveToFileERK7QString(void *this_, QString* fileName) {
   return (bool)((QQuickItemGrabResult*)this_)->saveToFile(*fileName);

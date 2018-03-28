@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQTextEncoder : public QTextEncoder {
 public:
   virtual ~MyQTextEncoder() {}
-// void QTextEncoder(const class QTextCodec *)
+// void QTextEncoder(const QTextCodec *)
 MyQTextEncoder(const QTextCodec * codec) : QTextEncoder(codec) {}
-// void QTextEncoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
+// void QTextEncoder(const QTextCodec *, QTextCodec::ConversionFlags)
 MyQTextEncoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) : QTextEncoder(codec, flags) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:141
-// [-2] void QTextEncoder(const class QTextCodec *)
+// [-2] void QTextEncoder(const QTextCodec *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * codec) {
   return  new QTextEncoder(codec);
@@ -33,7 +33,7 @@ void* C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * codec) {
 // Public Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtCore/qtextcodec.h:142
-// [-2] void QTextEncoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
+// [-2] void QTextEncoder(const QTextCodec *, QTextCodec::ConversionFlags)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) {
@@ -50,7 +50,7 @@ void C_ZN12QTextEncoderD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:145
-// [8] QByteArray fromUnicode(const class QString &)
+// [8] QByteArray fromUnicode(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoder11fromUnicodeERK7QString(void *this_, QString* str) {
   auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
@@ -60,7 +60,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qtextcodec.h:147
-// [8] QByteArray fromUnicode(class QStringView)
+// [8] QByteArray fromUnicode(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoder11fromUnicodeE11QStringView(void *this_, QStringView* str) {
@@ -71,7 +71,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:148
-// [8] QByteArray fromUnicode(const class QChar *, int)
+// [8] QByteArray fromUnicode(const QChar *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoder11fromUnicodeEPK5QChari(void *this_, const QChar * uc, int len_) {
   auto rv = ((QTextEncoder*)this_)->fromUnicode(uc, len_);

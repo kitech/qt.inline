@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQHelpEvent : public QHelpEvent {
 public:
   virtual ~MyQHelpEvent() {}
-// void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
+// void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)
 MyQHelpEvent(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type_, pos, globalPos) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:680
-// [-2] void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
+// [-2] void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type_, QPoint* pos, QPoint* globalPos) {
   return  new QHelpEvent(type_, *pos, *globalPos);

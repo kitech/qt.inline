@@ -18,11 +18,11 @@ public:
   virtual ~MyQFileInfo() {}
 // void QFileInfo()
 MyQFileInfo() : QFileInfo() {}
-// void QFileInfo(const class QString &)
+// void QFileInfo(const QString &)
 MyQFileInfo(const QString & file) : QFileInfo(file) {}
-// void QFileInfo(const class QFile &)
+// void QFileInfo(const QFile &)
 MyQFileInfo(const QFile & file) : QFileInfo(file) {}
-// void QFileInfo(const class QDir &, const class QString &)
+// void QFileInfo(const QDir &, const QString &)
 MyQFileInfo(const QDir & dir, const QString & file) : QFileInfo(dir, file) {}
 };
 
@@ -36,7 +36,7 @@ void* C_ZN9QFileInfoC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:63
-// [-2] void QFileInfo(const class QString &)
+// [-2] void QFileInfo(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK7QString(QString* file) {
   return  new QFileInfo(*file);
@@ -44,7 +44,7 @@ void* C_ZN9QFileInfoC2ERK7QString(QString* file) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:64
-// [-2] void QFileInfo(const class QFile &)
+// [-2] void QFileInfo(const QFile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK5QFile(QFile* file) {
   return  new QFileInfo(*file);
@@ -52,7 +52,7 @@ void* C_ZN9QFileInfoC2ERK5QFile(QFile* file) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:65
-// [-2] void QFileInfo(const class QDir &, const class QString &)
+// [-2] void QFileInfo(const QDir &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK4QDirRK7QString(QDir* dir, QString* file) {
   return  new QFileInfo(*dir, *file);
@@ -67,7 +67,7 @@ void C_ZN9QFileInfoD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:69
-// [8] QFileInfo & operator=(const class QFileInfo &)
+// [8] QFileInfo & operator=(const QFileInfo &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoaSERKS_(void *this_, QFileInfo* fileinfo) {
   auto& rv = ((QFileInfo*)this_)->operator=(*fileinfo);
@@ -76,7 +76,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:71
-// [8] QFileInfo & operator=(class QFileInfo &&)
+// [8] QFileInfo & operator=(QFileInfo &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoaSEOS_(void *this_, QFileInfo && other) {
   auto& rv = ((QFileInfo*)this_)->operator=(other);
@@ -86,7 +86,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qfileinfo.h:74
-// [-2] void swap(class QFileInfo &)
+// [-2] void swap(QFileInfo &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo* other) {
@@ -96,7 +96,7 @@ void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:77
-// [1] bool operator==(const class QFileInfo &)
+// [1] bool operator==(const QFileInfo &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QFileInfoeqERKS_(void *this_, QFileInfo* fileinfo) {
   return (bool)((QFileInfo*)this_)->operator==(*fileinfo);
@@ -104,7 +104,7 @@ bool C_ZNK9QFileInfoeqERKS_(void *this_, QFileInfo* fileinfo) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:78
-// [1] bool operator!=(const class QFileInfo &)
+// [1] bool operator!=(const QFileInfo &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QFileInfoneERKS_(void *this_, QFileInfo* fileinfo) {
   return (bool)((QFileInfo*)this_)->operator!=(*fileinfo);
@@ -112,7 +112,7 @@ bool C_ZNK9QFileInfoneERKS_(void *this_, QFileInfo* fileinfo) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:80
-// [-2] void setFile(const class QString &)
+// [-2] void setFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo7setFileERK7QString(void *this_, QString* file) {
   ((QFileInfo*)this_)->setFile(*file);
@@ -120,7 +120,7 @@ void C_ZN9QFileInfo7setFileERK7QString(void *this_, QString* file) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:81
-// [-2] void setFile(const class QFile &)
+// [-2] void setFile(const QFile &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo7setFileERK5QFile(void *this_, QFile* file) {
   ((QFileInfo*)this_)->setFile(*file);
@@ -128,7 +128,7 @@ void C_ZN9QFileInfo7setFileERK5QFile(void *this_, QFile* file) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:82
-// [-2] void setFile(const class QDir &, const class QString &)
+// [-2] void setFile(const QDir &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo7setFileERK4QDirRK7QString(void *this_, QDir* dir, QString* file) {
   ((QFileInfo*)this_)->setFile(*dir, *file);
@@ -145,7 +145,7 @@ bool C_ZNK9QFileInfo6existsEv(void *this_) {
 // Public static Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtCore/qfileinfo.h:84
-// [1] bool exists(const class QString &)
+// [1] bool exists(const QString &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QFileInfo6existsERK7QString(QString* file) {
@@ -457,7 +457,7 @@ uint C_ZNK9QFileInfo7groupIdEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:127
-// [1] bool permission(class QFile::Permissions)
+// [1] bool permission(QFile::Permissions)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QFileInfo10permissionE6QFlagsIN11QFileDevice10PermissionEE(void *this_, QFlags<QFileDevice::Permission> permissions) {
   return (bool)((QFileInfo*)this_)->permission(permissions);
@@ -533,7 +533,7 @@ return new QDateTime(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qfileinfo.h:141
-// [8] QDateTime fileTime(class QFile::FileTime)
+// [8] QDateTime fileTime(QFile::FileTime)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo8fileTimeEN11QFileDevice8FileTimeE(void *this_, QFile::FileTime time) {
@@ -552,7 +552,7 @@ bool C_ZNK9QFileInfo7cachingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:144
-// [-2] void setCaching(_Bool)
+// [-2] void setCaching(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo10setCachingEb(void *this_, bool on) {
   ((QFileInfo*)this_)->setCaching(on);

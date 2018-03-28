@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQAccessiblePlugin : public QAccessiblePlugin {
 public:
   virtual ~MyQAccessiblePlugin() {}
-// void QAccessiblePlugin(class QObject *)
+// void QAccessiblePlugin(QObject *)
 MyQAccessiblePlugin(QObject * parent) : QAccessiblePlugin(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK17QAccessiblePlugin10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleplugin.h:63
-// [-2] void QAccessiblePlugin(class QObject *)
+// [-2] void QAccessiblePlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessiblePluginC2EP7QObject(QObject * parent) {
   return 0; // new QAccessiblePlugin(parent);
@@ -45,7 +45,7 @@ void C_ZN17QAccessiblePluginD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleplugin.h:66
-// [8] QAccessibleInterface * create(const class QString &, class QObject *)
+// [8] QAccessibleInterface * create(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessiblePlugin6createERK7QStringP7QObject(void *this_, QString* key, QObject * object) {
   return (void*)((QAccessiblePlugin*)this_)->create(*key, object);

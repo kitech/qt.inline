@@ -36,7 +36,7 @@ void* C_ZNK13QGestureEvent7gestureEN2Qt11GestureTypeE(void *this_, Qt::GestureTy
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:291
-// [-2] void setAccepted(class QGesture *, _Bool)
+// [-2] void setAccepted(QGesture *, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGestureEvent11setAcceptedEP8QGestureb(void *this_, QGesture * arg0, bool arg1) {
   ((QGestureEvent*)this_)->setAccepted(arg0, arg1);
@@ -44,7 +44,7 @@ void C_ZN13QGestureEvent11setAcceptedEP8QGestureb(void *this_, QGesture * arg0, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:292
-// [-2] void accept(class QGesture *)
+// [-2] void accept(QGesture *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGestureEvent6acceptEP8QGesture(void *this_, QGesture * arg0) {
   ((QGestureEvent*)this_)->accept(arg0);
@@ -52,7 +52,7 @@ void C_ZN13QGestureEvent6acceptEP8QGesture(void *this_, QGesture * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:293
-// [-2] void ignore(class QGesture *)
+// [-2] void ignore(QGesture *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGestureEvent6ignoreEP8QGesture(void *this_, QGesture * arg0) {
   ((QGestureEvent*)this_)->ignore(arg0);
@@ -60,7 +60,7 @@ void C_ZN13QGestureEvent6ignoreEP8QGesture(void *this_, QGesture * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:294
-// [1] bool isAccepted(class QGesture *)
+// [1] bool isAccepted(QGesture *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGestureEvent10isAcceptedEP8QGesture(void *this_, QGesture * arg0) {
   return (bool)((QGestureEvent*)this_)->isAccepted(arg0);
@@ -68,7 +68,7 @@ bool C_ZNK13QGestureEvent10isAcceptedEP8QGesture(void *this_, QGesture * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:296
-// [-2] void setAccepted(Qt::GestureType, _Bool)
+// [-2] void setAccepted(Qt::GestureType, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGestureEvent11setAcceptedEN2Qt11GestureTypeEb(void *this_, Qt::GestureType arg0, bool arg1) {
   ((QGestureEvent*)this_)->setAccepted(arg0, arg1);
@@ -100,7 +100,7 @@ bool C_ZNK13QGestureEvent10isAcceptedEN2Qt11GestureTypeE(void *this_, Qt::Gestur
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:301
-// [-2] void setWidget(class QWidget *)
+// [-2] void setWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGestureEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QGestureEvent*)this_)->setWidget(widget);
@@ -116,7 +116,7 @@ void* C_ZNK13QGestureEvent6widgetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:305
-// [16] QPointF mapToGraphicsScene(const class QPointF &)
+// [16] QPointF mapToGraphicsScene(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGestureEvent18mapToGraphicsSceneERK7QPointF(void *this_, QPointF* gesturePoint) {
   auto rv = ((QGestureEvent*)this_)->mapToGraphicsScene(*gesturePoint);

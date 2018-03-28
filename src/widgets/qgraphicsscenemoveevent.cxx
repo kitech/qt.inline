@@ -47,7 +47,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:317
-// [-2] void setOldPos(const class QPointF &)
+// [-2] void setOldPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneMoveEvent9setOldPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMoveEvent*)this_)->setOldPos(*pos);
@@ -64,7 +64,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:320
-// [-2] void setNewPos(const class QPointF &)
+// [-2] void setNewPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneMoveEvent9setNewPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneMoveEvent*)this_)->setNewPos(*pos);

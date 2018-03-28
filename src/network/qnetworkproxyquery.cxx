@@ -19,17 +19,17 @@ public:
   virtual ~MyQNetworkProxyQuery() {}
 // void QNetworkProxyQuery()
 MyQNetworkProxyQuery() : QNetworkProxyQuery() {}
-// void QNetworkProxyQuery(const class QUrl &, enum QNetworkProxyQuery::QueryType)
+// void QNetworkProxyQuery(const QUrl &, QNetworkProxyQuery::QueryType)
 MyQNetworkProxyQuery(const QUrl & requestUrl, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(requestUrl, queryType) {}
-// void QNetworkProxyQuery(const class QString &, int, const class QString &, enum QNetworkProxyQuery::QueryType)
+// void QNetworkProxyQuery(const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
 MyQNetworkProxyQuery(const QString & hostname, int port, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(hostname, port, protocolTag, queryType) {}
-// void QNetworkProxyQuery(quint16, const class QString &, enum QNetworkProxyQuery::QueryType)
+// void QNetworkProxyQuery(quint16, const QString &, QNetworkProxyQuery::QueryType)
 MyQNetworkProxyQuery(quint16 bindPort, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(bindPort, protocolTag, queryType) {}
-// void QNetworkProxyQuery(const class QNetworkConfiguration &, const class QUrl &, enum QNetworkProxyQuery::QueryType)
+// void QNetworkProxyQuery(const QNetworkConfiguration &, const QUrl &, QNetworkProxyQuery::QueryType)
 MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, const QUrl & requestUrl, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(networkConfiguration, requestUrl, queryType) {}
-// void QNetworkProxyQuery(const class QNetworkConfiguration &, const class QString &, int, const class QString &, enum QNetworkProxyQuery::QueryType)
+// void QNetworkProxyQuery(const QNetworkConfiguration &, const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
 MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, const QString & hostname, int port, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(networkConfiguration, hostname, port, protocolTag, queryType) {}
-// void QNetworkProxyQuery(const class QNetworkConfiguration &, quint16, const class QString &, enum QNetworkProxyQuery::QueryType)
+// void QNetworkProxyQuery(const QNetworkConfiguration &, quint16, const QString &, QNetworkProxyQuery::QueryType)
 MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, quint16 bindPort, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(networkConfiguration, bindPort, protocolTag, queryType) {}
 };
 
@@ -43,7 +43,7 @@ void* C_ZN18QNetworkProxyQueryC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:73
-// [-2] void QNetworkProxyQuery(const class QUrl &, enum QNetworkProxyQuery::QueryType)
+// [-2] void QNetworkProxyQuery(const QUrl &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK4QUrlNS_9QueryTypeE(QUrl* requestUrl, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*requestUrl, queryType);
@@ -51,7 +51,7 @@ void* C_ZN18QNetworkProxyQueryC2ERK4QUrlNS_9QueryTypeE(QUrl* requestUrl, QNetwor
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:74
-// [-2] void QNetworkProxyQuery(const class QString &, int, const class QString &, enum QNetworkProxyQuery::QueryType)
+// [-2] void QNetworkProxyQuery(const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK7QStringiS2_NS_9QueryTypeE(QString* hostname, int port, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*hostname, port, *protocolTag, queryType);
@@ -59,7 +59,7 @@ void* C_ZN18QNetworkProxyQueryC2ERK7QStringiS2_NS_9QueryTypeE(QString* hostname,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:76
-// [-2] void QNetworkProxyQuery(quint16, const class QString &, enum QNetworkProxyQuery::QueryType)
+// [-2] void QNetworkProxyQuery(quint16, const QString &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2EtRK7QStringNS_9QueryTypeE(quint16 bindPort, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(bindPort, *protocolTag, queryType);
@@ -67,7 +67,7 @@ void* C_ZN18QNetworkProxyQueryC2EtRK7QStringNS_9QueryTypeE(quint16 bindPort, QSt
 
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:80
-// [-2] void QNetworkProxyQuery(const class QNetworkConfiguration &, const class QUrl &, enum QNetworkProxyQuery::QueryType)
+// [-2] void QNetworkProxyQuery(const QNetworkConfiguration &, const QUrl &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK4QUrlNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, QUrl* requestUrl, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, *requestUrl, queryType);
@@ -75,7 +75,7 @@ void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK4QUrlNS_9QueryTypeE(
 
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:83
-// [-2] void QNetworkProxyQuery(const class QNetworkConfiguration &, const class QString &, int, const class QString &, enum QNetworkProxyQuery::QueryType)
+// [-2] void QNetworkProxyQuery(const QNetworkConfiguration &, const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK7QStringiS5_NS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, QString* hostname, int port, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, *hostname, port, *protocolTag, queryType);
@@ -83,7 +83,7 @@ void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK7QStringiS5_NS_9Quer
 
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:87
-// [-2] void QNetworkProxyQuery(const class QNetworkConfiguration &, quint16, const class QString &, enum QNetworkProxyQuery::QueryType)
+// [-2] void QNetworkProxyQuery(const QNetworkConfiguration &, quint16, const QString &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, quint16 bindPort, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, bindPort, *protocolTag, queryType);
@@ -91,7 +91,7 @@ void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTy
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:93
-// [8] QNetworkProxyQuery & operator=(class QNetworkProxyQuery &&)
+// [8] QNetworkProxyQuery & operator=(QNetworkProxyQuery &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryaSEOS_(void *this_, QNetworkProxyQuery && other) {
   auto& rv = ((QNetworkProxyQuery*)this_)->operator=(other);
@@ -100,7 +100,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:95
-// [8] QNetworkProxyQuery & operator=(const class QNetworkProxyQuery &)
+// [8] QNetworkProxyQuery & operator=(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryaSERKS_(void *this_, QNetworkProxyQuery* other) {
   auto& rv = ((QNetworkProxyQuery*)this_)->operator=(*other);
@@ -117,7 +117,7 @@ void C_ZN18QNetworkProxyQueryD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:98
-// [-2] void swap(class QNetworkProxyQuery &)
+// [-2] void swap(QNetworkProxyQuery &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery4swapERS_(void *this_, QNetworkProxyQuery* other) {
@@ -127,7 +127,7 @@ void C_ZN18QNetworkProxyQuery4swapERS_(void *this_, QNetworkProxyQuery* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:100
-// [1] bool operator==(const class QNetworkProxyQuery &)
+// [1] bool operator==(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QNetworkProxyQueryeqERKS_(void *this_, QNetworkProxyQuery* other) {
   return (bool)((QNetworkProxyQuery*)this_)->operator==(*other);
@@ -135,7 +135,7 @@ bool C_ZNK18QNetworkProxyQueryeqERKS_(void *this_, QNetworkProxyQuery* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:101
-// [1] bool operator!=(const class QNetworkProxyQuery &)
+// [1] bool operator!=(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QNetworkProxyQueryneERKS_(void *this_, QNetworkProxyQuery* other) {
   return (bool)((QNetworkProxyQuery*)this_)->operator!=(*other);
@@ -151,7 +151,7 @@ QNetworkProxyQuery::QueryType C_ZNK18QNetworkProxyQuery9queryTypeEv(void *this_)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:105
-// [-2] void setQueryType(enum QNetworkProxyQuery::QueryType)
+// [-2] void setQueryType(QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE(void *this_, QNetworkProxyQuery::QueryType type_) {
   ((QNetworkProxyQuery*)this_)->setQueryType(type_);
@@ -184,7 +184,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:111
-// [-2] void setPeerHostName(const class QString &)
+// [-2] void setPeerHostName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery15setPeerHostNameERK7QString(void *this_, QString* hostname) {
   ((QNetworkProxyQuery*)this_)->setPeerHostName(*hostname);
@@ -217,7 +217,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:117
-// [-2] void setProtocolTag(const class QString &)
+// [-2] void setProtocolTag(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery14setProtocolTagERK7QString(void *this_, QString* protocolTag) {
   ((QNetworkProxyQuery*)this_)->setProtocolTag(*protocolTag);
@@ -234,7 +234,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:120
-// [-2] void setUrl(const class QUrl &)
+// [-2] void setUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery6setUrlERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkProxyQuery*)this_)->setUrl(*url);
@@ -251,7 +251,7 @@ return new QNetworkConfiguration(rv);
 
 // Public Visibility=Default Availability=Deprecated
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:126
-// [-2] void setNetworkConfiguration(const class QNetworkConfiguration &)
+// [-2] void setNetworkConfiguration(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery23setNetworkConfigurationERK21QNetworkConfiguration(void *this_, QNetworkConfiguration* networkConfiguration) {
   ((QNetworkProxyQuery*)this_)->setNetworkConfiguration(*networkConfiguration);

@@ -38,7 +38,7 @@ void C_ZN20QQuickTextureFactoryD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:63
-// [8] QSGTexture * createTexture(class QQuickWindow *)
+// [8] QSGTexture * createTexture(QQuickWindow *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QQuickTextureFactory13createTextureEP12QQuickWindow(void *this_, QQuickWindow * window) {
   return (void*)((QQuickTextureFactory*)this_)->createTexture(window);
@@ -73,7 +73,7 @@ return new QImage(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtQuick/qquickimageprovider.h:68
-// [8] QQuickTextureFactory * textureFactoryForImage(const class QImage &)
+// [8] QQuickTextureFactory * textureFactoryForImage(const QImage &)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QQuickTextureFactory22textureFactoryForImageERK6QImage(QImage* image) {

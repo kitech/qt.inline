@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQReadLocker : public QReadLocker {
 public:
   virtual ~MyQReadLocker() {}
-// void QReadLocker(class QReadWriteLock *)
+// void QReadLocker(QReadWriteLock *)
 MyQReadLocker(QReadWriteLock * readWriteLock) : QReadLocker(readWriteLock) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:87
-// [-2] void QReadLocker(class QReadWriteLock *)
+// [-2] void QReadLocker(QReadWriteLock *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QReadLockerC2EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
   return  new QReadLocker(readWriteLock);

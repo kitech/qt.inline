@@ -38,7 +38,7 @@ void C_ZN14QAuthenticatorD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:60
-// [8] QAuthenticator & operator=(const class QAuthenticator &)
+// [8] QAuthenticator & operator=(const QAuthenticator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QAuthenticatoraSERKS_(void *this_, QAuthenticator* other) {
   auto& rv = ((QAuthenticator*)this_)->operator=(*other);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:62
-// [1] bool operator==(const class QAuthenticator &)
+// [1] bool operator==(const QAuthenticator &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QAuthenticatoreqERKS_(void *this_, QAuthenticator* other) {
   return (bool)((QAuthenticator*)this_)->operator==(*other);
@@ -55,7 +55,7 @@ bool C_ZNK14QAuthenticatoreqERKS_(void *this_, QAuthenticator* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:63
-// [1] bool operator!=(const class QAuthenticator &)
+// [1] bool operator!=(const QAuthenticator &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QAuthenticatorneERKS_(void *this_, QAuthenticator* other) {
   return (bool)((QAuthenticator*)this_)->operator!=(*other);
@@ -72,7 +72,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:66
-// [-2] void setUser(const class QString &)
+// [-2] void setUser(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAuthenticator7setUserERK7QString(void *this_, QString* user) {
   ((QAuthenticator*)this_)->setUser(*user);
@@ -89,7 +89,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:69
-// [-2] void setPassword(const class QString &)
+// [-2] void setPassword(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAuthenticator11setPasswordERK7QString(void *this_, QString* password) {
   ((QAuthenticator*)this_)->setPassword(*password);
@@ -106,7 +106,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:72
-// [-2] void setRealm(const class QString &)
+// [-2] void setRealm(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAuthenticator8setRealmERK7QString(void *this_, QString* realm) {
   ((QAuthenticator*)this_)->setRealm(*realm);
@@ -115,7 +115,7 @@ void C_ZN14QAuthenticator8setRealmERK7QString(void *this_, QString* realm) {
 // Public Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtNetwork/qauthenticator.h:74
-// [16] QVariant option(const class QString &)
+// [16] QVariant option(const QString &)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QAuthenticator6optionERK7QString(void *this_, QString* opt) {
@@ -127,7 +127,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtNetwork/qauthenticator.h:76
-// [-2] void setOption(const class QString &, const class QVariant &)
+// [-2] void setOption(const QString &, const QVariant &)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QAuthenticator9setOptionERK7QStringRK8QVariant(void *this_, QString* opt, QVariant* value) {

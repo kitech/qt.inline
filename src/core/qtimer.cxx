@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQTimer : public QTimer {
 public:
   virtual ~MyQTimer() {}
-// void QTimer(class QObject *)
+// void QTimer(QObject *)
 MyQTimer(QObject * parent) : QTimer(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQTimer(QObject * parent) : QTimer(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:200
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
   ((QTimer*)this_)->QTimer::timerEvent(arg0);
@@ -50,7 +50,7 @@ void* C_ZNK6QTimer10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:66
-// [-2] void QTimer(class QObject *)
+// [-2] void QTimer(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QTimerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQTimer*)(0);
@@ -122,7 +122,7 @@ Qt::TimerType C_ZNK6QTimer9timerTypeEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:80
-// [-2] void setSingleShot(_Bool)
+// [-2] void setSingleShot(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer13setSingleShotEb(void *this_, bool singleShot) {
   ((QTimer*)this_)->setSingleShot(singleShot);
@@ -138,7 +138,7 @@ bool C_ZNK6QTimer12isSingleShotEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:83
-// [-2] void singleShot(int, const class QObject *, const char *)
+// [-2] void singleShot(int, const QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer10singleShotEiPK7QObjectPKc(int msec, const QObject * receiver, const char * member) {
   QTimer::singleShot(msec, receiver, member);
@@ -146,7 +146,7 @@ void C_ZN6QTimer10singleShotEiPK7QObjectPKc(int msec, const QObject * receiver, 
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:84
-// [-2] void singleShot(int, Qt::TimerType, const class QObject *, const char *)
+// [-2] void singleShot(int, Qt::TimerType, const QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer10singleShotEiN2Qt9TimerTypeEPK7QObjectPKc(int msec, Qt::TimerType timerType, const QObject * receiver, const char * member) {
   QTimer::singleShot(msec, timerType, receiver, member);

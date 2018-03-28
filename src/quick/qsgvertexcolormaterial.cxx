@@ -73,7 +73,7 @@ void* C_ZN22QSGVertexColorMaterialC2Ev() {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:52
-// [4] int compare(const class QSGMaterial *)
+// [4] int compare(const QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK22QSGVertexColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
   return (int)((QSGVertexColorMaterial*)this_)->compare(other);

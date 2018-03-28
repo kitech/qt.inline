@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQFontInfo : public QFontInfo {
 public:
   virtual ~MyQFontInfo() {}
-// void QFontInfo(const class QFont &)
+// void QFontInfo(const QFont &)
 MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:53
-// [-2] void QFontInfo(const class QFont &)
+// [-2] void QFontInfo(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFontInfoC2ERK5QFont(QFont* arg0) {
   return  new QFontInfo(*arg0);
@@ -37,7 +37,7 @@ void C_ZN9QFontInfoD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:57
-// [8] QFontInfo & operator=(const class QFontInfo &)
+// [8] QFontInfo & operator=(const QFontInfo &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFontInfoaSERKS_(void *this_, QFontInfo* arg0) {
   auto& rv = ((QFontInfo*)this_)->operator=(*arg0);
@@ -47,7 +47,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtGui/qfontinfo.h:59
-// [-2] void swap(class QFontInfo &)
+// [-2] void swap(QFontInfo &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFontInfo4swapERS_(void *this_, QFontInfo* other) {

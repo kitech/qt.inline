@@ -45,7 +45,7 @@ void C_ZN6QStyleD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:76
-// [-2] void polish(class QWidget *)
+// [-2] void polish(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QStyle6polishEP7QWidget(void *this_, QWidget * widget) {
   ((QStyle*)this_)->polish(widget);
@@ -53,7 +53,7 @@ void C_ZN6QStyle6polishEP7QWidget(void *this_, QWidget * widget) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:77
-// [-2] void unpolish(class QWidget *)
+// [-2] void unpolish(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QStyle8unpolishEP7QWidget(void *this_, QWidget * widget) {
   ((QStyle*)this_)->unpolish(widget);
@@ -61,7 +61,7 @@ void C_ZN6QStyle8unpolishEP7QWidget(void *this_, QWidget * widget) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:79
-// [-2] void polish(class QApplication *)
+// [-2] void polish(QApplication *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QStyle6polishEP12QApplication(void *this_, QApplication * application) {
   ((QStyle*)this_)->polish(application);
@@ -69,7 +69,7 @@ void C_ZN6QStyle6polishEP12QApplication(void *this_, QApplication * application)
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:80
-// [-2] void unpolish(class QApplication *)
+// [-2] void unpolish(QApplication *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QStyle8unpolishEP12QApplication(void *this_, QApplication * application) {
   ((QStyle*)this_)->unpolish(application);
@@ -77,7 +77,7 @@ void C_ZN6QStyle8unpolishEP12QApplication(void *this_, QApplication * applicatio
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:82
-// [-2] void polish(class QPalette &)
+// [-2] void polish(QPalette &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QStyle6polishER8QPalette(void *this_, QPalette* palette) {
   ((QStyle*)this_)->polish(*palette);
@@ -85,7 +85,7 @@ void C_ZN6QStyle6polishER8QPalette(void *this_, QPalette* palette) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:84
-// [16] QRect itemTextRect(const class QFontMetrics &, const class QRect &, int, _Bool, const class QString &)
+// [16] QRect itemTextRect(const QFontMetrics &, const QRect &, int, bool, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle12itemTextRectERK12QFontMetricsRK5QRectibRK7QString(void *this_, QFontMetrics* fm, QRect* r, int flags, bool enabled, QString* text) {
   auto rv = ((QStyle*)this_)->itemTextRect(*fm, *r, flags, enabled, *text);
@@ -94,7 +94,7 @@ return new QRect(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:88
-// [16] QRect itemPixmapRect(const class QRect &, int, const class QPixmap &)
+// [16] QRect itemPixmapRect(const QRect &, int, const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle14itemPixmapRectERK5QRectiRK7QPixmap(void *this_, QRect* r, int flags, QPixmap* pixmap) {
   auto rv = ((QStyle*)this_)->itemPixmapRect(*r, flags, *pixmap);
@@ -103,7 +103,7 @@ return new QRect(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:90
-// [-2] void drawItemText(class QPainter *, const class QRect &, int, const class QPalette &, _Bool, const class QString &, class QPalette::ColorRole)
+// [-2] void drawItemText(QPainter *, const QRect &, int, const QPalette &, bool, const QString &, QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9ColorRoleE(void *this_, QPainter * painter, QRect* rect, int flags, QPalette* pal, bool enabled, QString* text, QPalette::ColorRole textRole) {
   ((QStyle*)this_)->drawItemText(painter, *rect, flags, *pal, enabled, *text, textRole);
@@ -111,7 +111,7 @@ void C_ZNK6QStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9Co
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:94
-// [-2] void drawItemPixmap(class QPainter *, const class QRect &, int, const class QPixmap &)
+// [-2] void drawItemPixmap(QPainter *, const QRect &, int, const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap(void *this_, QPainter * painter, QRect* rect, int alignment, QPixmap* pixmap) {
   ((QStyle*)this_)->drawItemPixmap(painter, *rect, alignment, *pixmap);
@@ -128,7 +128,7 @@ return new QPalette(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:204
-// [-2] void drawPrimitive(enum QStyle::PrimitiveElement, const class QStyleOption *, class QPainter *, const class QWidget *)
+// [-2] void drawPrimitive(QStyle::PrimitiveElement, const QStyleOption *, QPainter *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QStyle13drawPrimitiveENS_16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget(void *this_, QStyle::PrimitiveElement pe, const QStyleOption * opt, QPainter * p, const QWidget * w) {
   ((QStyle*)this_)->drawPrimitive(pe, opt, p, w);
@@ -136,7 +136,7 @@ void C_ZNK6QStyle13drawPrimitiveENS_16PrimitiveElementEPK12QStyleOptionP8QPainte
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:275
-// [-2] void drawControl(enum QStyle::ControlElement, const class QStyleOption *, class QPainter *, const class QWidget *)
+// [-2] void drawControl(QStyle::ControlElement, const QStyleOption *, QPainter *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QStyle11drawControlENS_14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget(void *this_, QStyle::ControlElement element, const QStyleOption * opt, QPainter * p, const QWidget * w) {
   ((QStyle*)this_)->drawControl(element, opt, p, w);
@@ -144,7 +144,7 @@ void C_ZNK6QStyle11drawControlENS_14ControlElementEPK12QStyleOptionP8QPainterPK7
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:364
-// [16] QRect subElementRect(enum QStyle::SubElement, const class QStyleOption *, const class QWidget *)
+// [16] QRect subElementRect(QStyle::SubElement, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle14subElementRectENS_10SubElementEPK12QStyleOptionPK7QWidget(void *this_, QStyle::SubElement subElement, const QStyleOption * option, const QWidget * widget) {
   auto rv = ((QStyle*)this_)->subElementRect(subElement, option, widget);
@@ -153,7 +153,7 @@ return new QRect(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:443
-// [-2] void drawComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, class QPainter *, const class QWidget *)
+// [-2] void drawComplexControl(QStyle::ComplexControl, const QStyleOptionComplex *, QPainter *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK6QStyle18drawComplexControlENS_14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPainter * p, const QWidget * widget) {
   ((QStyle*)this_)->drawComplexControl(cc, opt, p, widget);
@@ -161,7 +161,7 @@ void C_ZNK6QStyle18drawComplexControlENS_14ComplexControlEPK19QStyleOptionComple
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:445
-// [4] QStyle::SubControl hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
+// [4] QStyle::SubControl hitTestComplexControl(QStyle::ComplexControl, const QStyleOptionComplex *, const QPoint &, const QWidget *)
 extern "C" Q_DECL_EXPORT
 QStyle::SubControl C_ZNK6QStyle21hitTestComplexControlENS_14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPoint* pt, const QWidget * widget) {
   return (QStyle::SubControl)((QStyle*)this_)->hitTestComplexControl(cc, opt, *pt, widget);
@@ -169,7 +169,7 @@ QStyle::SubControl C_ZNK6QStyle21hitTestComplexControlENS_14ComplexControlEPK19Q
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:447
-// [16] QRect subControlRect(enum QStyle::ComplexControl, const class QStyleOptionComplex *, enum QStyle::SubControl, const class QWidget *)
+// [16] QRect subControlRect(QStyle::ComplexControl, const QStyleOptionComplex *, QStyle::SubControl, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle14subControlRectENS_14ComplexControlEPK19QStyleOptionComplexNS_10SubControlEPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QStyle::SubControl sc, const QWidget * widget) {
   auto rv = ((QStyle*)this_)->subControlRect(cc, opt, sc, widget);
@@ -178,7 +178,7 @@ return new QRect(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:582
-// [4] int pixelMetric(enum QStyle::PixelMetric, const class QStyleOption *, const class QWidget *)
+// [4] int pixelMetric(QStyle::PixelMetric, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QStyle11pixelMetricENS_11PixelMetricEPK12QStyleOptionPK7QWidget(void *this_, QStyle::PixelMetric metric, const QStyleOption * option, const QWidget * widget) {
   return (int)((QStyle*)this_)->pixelMetric(metric, option, widget);
@@ -186,7 +186,7 @@ int C_ZNK6QStyle11pixelMetricENS_11PixelMetricEPK12QStyleOptionPK7QWidget(void *
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:614
-// [8] QSize sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
+// [8] QSize sizeFromContents(QStyle::ContentsType, const QStyleOption *, const QSize &, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle16sizeFromContentsENS_12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType ct, const QStyleOption * opt, QSize* contentsSize, const QWidget * w) {
   auto rv = ((QStyle*)this_)->sizeFromContents(ct, opt, *contentsSize, w);
@@ -195,7 +195,7 @@ return new QSize(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:748
-// [4] int styleHint(enum QStyle::StyleHint, const class QStyleOption *, const class QWidget *, class QStyleHintReturn *)
+// [4] int styleHint(QStyle::StyleHint, const QStyleOption *, const QWidget *, QStyleHintReturn *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QStyle9styleHintENS_9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn(void *this_, QStyle::StyleHint stylehint, const QStyleOption * opt, const QWidget * widget, QStyleHintReturn * returnData) {
   return (int)((QStyle*)this_)->styleHint(stylehint, opt, widget, returnData);
@@ -203,7 +203,7 @@ int C_ZNK6QStyle9styleHintENS_9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHint
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:828
-// [32] QPixmap standardPixmap(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
+// [32] QPixmap standardPixmap(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle14standardPixmapENS_14StandardPixmapEPK12QStyleOptionPK7QWidget(void *this_, QStyle::StandardPixmap standardPixmap, const QStyleOption * opt, const QWidget * widget) {
   auto rv = ((QStyle*)this_)->standardPixmap(standardPixmap, opt, widget);
@@ -212,7 +212,7 @@ return new QPixmap(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:831
-// [8] QIcon standardIcon(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
+// [8] QIcon standardIcon(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle12standardIconENS_14StandardPixmapEPK12QStyleOptionPK7QWidget(void *this_, QStyle::StandardPixmap standardIcon, const QStyleOption * option, const QWidget * widget) {
   auto rv = ((QStyle*)this_)->standardIcon(standardIcon, option, widget);
@@ -221,7 +221,7 @@ return new QIcon(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:834
-// [32] QPixmap generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
+// [32] QPixmap generatedIconPixmap(QIcon::Mode, const QPixmap &, const QStyleOption *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, QPixmap* pixmap, const QStyleOption * opt) {
   auto rv = ((QStyle*)this_)->generatedIconPixmap(iconMode, *pixmap, opt);
@@ -230,7 +230,7 @@ return new QPixmap(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:837
-// [16] QRect visualRect(Qt::LayoutDirection, const class QRect &, const class QRect &)
+// [16] QRect visualRect(Qt::LayoutDirection, const QRect &, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyle10visualRectEN2Qt15LayoutDirectionERK5QRectS4_(Qt::LayoutDirection direction, QRect* boundingRect, QRect* logicalRect) {
   auto rv = QStyle::visualRect(direction, *boundingRect, *logicalRect);
@@ -239,7 +239,7 @@ return new QRect(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:839
-// [8] QPoint visualPos(Qt::LayoutDirection, const class QRect &, const class QPoint &)
+// [8] QPoint visualPos(Qt::LayoutDirection, const QRect &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyle9visualPosEN2Qt15LayoutDirectionERK5QRectRK6QPoint(Qt::LayoutDirection direction, QRect* boundingRect, QPoint* logicalPos) {
   auto rv = QStyle::visualPos(direction, *boundingRect, *logicalPos);
@@ -248,7 +248,7 @@ return new QPoint(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:841
-// [4] int sliderPositionFromValue(int, int, int, int, _Bool)
+// [4] int sliderPositionFromValue(int, int, int, int, bool)
 extern "C" Q_DECL_EXPORT
 int C_ZN6QStyle23sliderPositionFromValueEiiiib(int min, int max, int val, int space, bool upsideDown) {
   return (int)QStyle::sliderPositionFromValue(min, max, val, space, upsideDown);
@@ -256,7 +256,7 @@ int C_ZN6QStyle23sliderPositionFromValueEiiiib(int min, int max, int val, int sp
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:843
-// [4] int sliderValueFromPosition(int, int, int, int, _Bool)
+// [4] int sliderValueFromPosition(int, int, int, int, bool)
 extern "C" Q_DECL_EXPORT
 int C_ZN6QStyle23sliderValueFromPositionEiiiib(int min, int max, int pos, int space, bool upsideDown) {
   return (int)QStyle::sliderValueFromPosition(min, max, pos, space, upsideDown);
@@ -272,7 +272,7 @@ Qt::Alignment C_ZN6QStyle15visualAlignmentEN2Qt15LayoutDirectionE6QFlagsINS0_13A
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:846
-// [16] QRect alignedRect(Qt::LayoutDirection, Qt::Alignment, const class QSize &, const class QRect &)
+// [16] QRect alignedRect(Qt::LayoutDirection, Qt::Alignment, const QSize &, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyle11alignedRectEN2Qt15LayoutDirectionE6QFlagsINS0_13AlignmentFlagEERK5QSizeRK5QRect(Qt::LayoutDirection direction, QFlags<Qt::AlignmentFlag> alignment, QSize* size, QRect* rectangle) {
   auto rv = QStyle::alignedRect(direction, alignment, *size, *rectangle);
@@ -281,7 +281,7 @@ return new QRect(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:849
-// [4] int layoutSpacing(class QSizePolicy::ControlType, class QSizePolicy::ControlType, Qt::Orientation, const class QStyleOption *, const class QWidget *)
+// [4] int layoutSpacing(QSizePolicy::ControlType, QSizePolicy::ControlType, Qt::Orientation, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget(void *this_, QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget) {
   return (int)((QStyle*)this_)->layoutSpacing(control1, control2, orientation, option, widget);
@@ -290,7 +290,7 @@ int C_ZNK6QStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11Orientation
 // Public Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qstyle.h:852
-// [4] int combinedLayoutSpacing(class QSizePolicy::ControlTypes, class QSizePolicy::ControlTypes, Qt::Orientation, class QStyleOption *, class QWidget *)
+// [4] int combinedLayoutSpacing(QSizePolicy::ControlTypes, QSizePolicy::ControlTypes, Qt::Orientation, QStyleOption *, QWidget *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QStyle21combinedLayoutSpacingE6QFlagsIN11QSizePolicy11ControlTypeEES3_N2Qt11OrientationEP12QStyleOptionP7QWidget(void *this_, QFlags<QSizePolicy::ControlType> controls1, QFlags<QSizePolicy::ControlType> controls2, Qt::Orientation orientation, QStyleOption * option, QWidget * widget) {

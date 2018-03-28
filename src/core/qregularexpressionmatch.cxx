@@ -41,7 +41,7 @@ void C_ZN23QRegularExpressionMatchD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:181
-// [8] QRegularExpressionMatch & operator=(const class QRegularExpressionMatch &)
+// [8] QRegularExpressionMatch & operator=(const QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QRegularExpressionMatchaSERKS_(void *this_, QRegularExpressionMatch* match_) {
   auto& rv = ((QRegularExpressionMatch*)this_)->operator=(*match_);
@@ -50,7 +50,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:184
-// [8] QRegularExpressionMatch & operator=(class QRegularExpressionMatch &&)
+// [8] QRegularExpressionMatch & operator=(QRegularExpressionMatch &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QRegularExpressionMatchaSEOS_(void *this_, QRegularExpressionMatch && match_) {
   auto& rv = ((QRegularExpressionMatch*)this_)->operator=(match_);
@@ -59,7 +59,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:187
-// [-2] void swap(class QRegularExpressionMatch &)
+// [-2] void swap(QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QRegularExpressionMatch4swapERS_(void *this_, QRegularExpressionMatch* other) {
   ((QRegularExpressionMatch*)this_)->swap(*other);
@@ -154,7 +154,7 @@ return new QStringView(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:205
-// [8] QString captured(const class QString &)
+// [8] QString captured(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch8capturedERK7QString(void *this_, QString* name) {
   auto rv = ((QRegularExpressionMatch*)this_)->captured(*name);
@@ -163,7 +163,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:206
-// [16] QStringRef capturedRef(const class QString &)
+// [16] QStringRef capturedRef(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch11capturedRefERK7QString(void *this_, QString* name) {
   auto rv = ((QRegularExpressionMatch*)this_)->capturedRef(*name);
@@ -173,7 +173,7 @@ return new QStringRef(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:209
-// [8] QString captured(class QStringView)
+// [8] QString captured(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch8capturedE11QStringView(void *this_, QStringView* name) {
@@ -185,7 +185,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:210
-// [16] QStringRef capturedRef(class QStringView)
+// [16] QStringRef capturedRef(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch11capturedRefE11QStringView(void *this_, QStringView* name) {
@@ -197,7 +197,7 @@ return new QStringRef(rv);
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:211
-// [16] QStringView capturedView(class QStringView)
+// [16] QStringView capturedView(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch12capturedViewE11QStringView(void *this_, QStringView* name) {
@@ -241,7 +241,7 @@ int C_ZNK23QRegularExpressionMatch11capturedEndEi(void *this_, int nth) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:220
-// [4] int capturedStart(const class QString &)
+// [4] int capturedStart(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch13capturedStartERK7QString(void *this_, QString* name) {
   return (int)((QRegularExpressionMatch*)this_)->capturedStart(*name);
@@ -249,7 +249,7 @@ int C_ZNK23QRegularExpressionMatch13capturedStartERK7QString(void *this_, QStrin
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:221
-// [4] int capturedLength(const class QString &)
+// [4] int capturedLength(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch14capturedLengthERK7QString(void *this_, QString* name) {
   return (int)((QRegularExpressionMatch*)this_)->capturedLength(*name);
@@ -257,7 +257,7 @@ int C_ZNK23QRegularExpressionMatch14capturedLengthERK7QString(void *this_, QStri
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:222
-// [4] int capturedEnd(const class QString &)
+// [4] int capturedEnd(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, QString* name) {
   return (int)((QRegularExpressionMatch*)this_)->capturedEnd(*name);
@@ -266,7 +266,7 @@ int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, QString*
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:225
-// [4] int capturedStart(class QStringView)
+// [4] int capturedStart(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch13capturedStartE11QStringView(void *this_, QStringView* name) {
@@ -277,7 +277,7 @@ int C_ZNK23QRegularExpressionMatch13capturedStartE11QStringView(void *this_, QSt
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:226
-// [4] int capturedLength(class QStringView)
+// [4] int capturedLength(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch14capturedLengthE11QStringView(void *this_, QStringView* name) {
@@ -288,7 +288,7 @@ int C_ZNK23QRegularExpressionMatch14capturedLengthE11QStringView(void *this_, QS
 // Public Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qregularexpression.h:227
-// [4] int capturedEnd(class QStringView)
+// [4] int capturedEnd(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStringView* name) {

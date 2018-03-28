@@ -47,7 +47,7 @@ void C_ZN11QTextOptionD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:90
-// [32] QTextOption & operator=(const class QTextOption &)
+// [32] QTextOption & operator=(const QTextOption &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextOptionaSERKS_(void *this_, QTextOption* o) {
   auto& rv = ((QTextOption*)this_)->operator=(*o);
@@ -88,7 +88,7 @@ Qt::LayoutDirection C_ZNK11QTextOption13textDirectionEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:105
-// [-2] void setWrapMode(enum QTextOption::WrapMode)
+// [-2] void setWrapMode(QTextOption::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption11setWrapModeENS_8WrapModeE(void *this_, QTextOption::WrapMode wrap) {
   ((QTextOption*)this_)->setWrapMode(wrap);
@@ -159,7 +159,7 @@ qreal C_ZNK11QTextOption15tabStopDistanceEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:134
-// [-2] void setUseDesignMetrics(_Bool)
+// [-2] void setUseDesignMetrics(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption19setUseDesignMetricsEb(void *this_, bool b) {
   ((QTextOption*)this_)->setUseDesignMetrics(b);

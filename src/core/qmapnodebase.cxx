@@ -60,7 +60,7 @@ QMapNodeBase::Color C_ZNK12QMapNodeBase5colorEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:97
-// [-2] void setColor(enum QMapNodeBase::Color)
+// [-2] void setColor(QMapNodeBase::Color)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMapNodeBase8setColorENS_5ColorE(void *this_, QMapNodeBase::Color c) {
   ((QMapNodeBase*)this_)->setColor(c);

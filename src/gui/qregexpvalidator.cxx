@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQRegExpValidator : public QRegExpValidator {
 public:
   virtual ~MyQRegExpValidator() {}
-// void QRegExpValidator(class QObject *)
+// void QRegExpValidator(QObject *)
 MyQRegExpValidator(QObject * parent) : QRegExpValidator(parent) {}
-// void QRegExpValidator(const class QRegExp &, class QObject *)
+// void QRegExpValidator(const QRegExp &, QObject *)
 MyQRegExpValidator(const QRegExp & rx, QObject * parent) : QRegExpValidator(rx, parent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK16QRegExpValidator10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:177
-// [-2] void QRegExpValidator(class QObject *)
+// [-2] void QRegExpValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidatorC2EP7QObject(QObject * parent) {
   return  new QRegExpValidator(parent);
@@ -40,7 +40,7 @@ void* C_ZN16QRegExpValidatorC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:178
-// [-2] void QRegExpValidator(const class QRegExp &, class QObject *)
+// [-2] void QRegExpValidator(const QRegExp &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(QRegExp* rx, QObject * parent) {
   return  new QRegExpValidator(*rx, parent);
@@ -55,7 +55,7 @@ void C_ZN16QRegExpValidatorD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:181
-// [4] QValidator::State validate(class QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK16QRegExpValidator8validateER7QStringRi(void *this_, QString* input, int & pos) {
   return (QValidator::State)((QRegExpValidator*)this_)->validate(*input, pos);
@@ -63,7 +63,7 @@ QValidator::State C_ZNK16QRegExpValidator8validateER7QStringRi(void *this_, QStr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:183
-// [-2] void setRegExp(const class QRegExp &)
+// [-2] void setRegExp(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRegExpValidator9setRegExpERK7QRegExp(void *this_, QRegExp* rx) {
   ((QRegExpValidator*)this_)->setRegExp(*rx);
@@ -80,7 +80,7 @@ return new QRegExp(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:187
-// [-2] void regExpChanged(const class QRegExp &)
+// [-2] void regExpChanged(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRegExpValidator13regExpChangedERK7QRegExp(void *this_, QRegExp* regExp) {
   ((QRegExpValidator*)this_)->regExpChanged(*regExp);

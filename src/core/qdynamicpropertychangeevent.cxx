@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQDynamicPropertyChangeEvent : public QDynamicPropertyChangeEvent {
 public:
   virtual ~MyQDynamicPropertyChangeEvent() {}
-// void QDynamicPropertyChangeEvent(const class QByteArray &)
+// void QDynamicPropertyChangeEvent(const QByteArray &)
 MyQDynamicPropertyChangeEvent(const QByteArray & name) : QDynamicPropertyChangeEvent(name) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:365
-// [-2] void QDynamicPropertyChangeEvent(const class QByteArray &)
+// [-2] void QDynamicPropertyChangeEvent(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray(QByteArray* name) {
   return  new QDynamicPropertyChangeEvent(*name);

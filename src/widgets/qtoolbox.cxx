@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQToolBox : public QToolBox {
 public:
   virtual ~MyQToolBox() {}
-// void QToolBox(class QWidget *, Qt::WindowFlags)
+// void QToolBox(QWidget *, Qt::WindowFlags)
 MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -56,7 +56,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(class QShowEvent *)
+// void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -68,7 +68,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -83,7 +83,7 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:98
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QToolBox5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QToolBox*)this_)->QToolBox::event(e);
@@ -107,7 +107,7 @@ void C_ZN8QToolBox11itemRemovedEi(void *this_, int index) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:101
-// [-2] void showEvent(class QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox9showEventEP10QShowEvent(void *this_, QShowEvent * e) {
   ((QToolBox*)this_)->QToolBox::showEvent(e);
@@ -115,7 +115,7 @@ void C_ZN8QToolBox9showEventEP10QShowEvent(void *this_, QShowEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:102
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QToolBox*)this_)->QToolBox::changeEvent(arg0);
@@ -131,7 +131,7 @@ void* C_ZNK8QToolBox10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:60
-// [-2] void QToolBox(class QWidget *, Qt::WindowFlags)
+// [-2] void QToolBox(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QToolBoxC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
   auto _nilp = (MyQToolBox*)(0);
@@ -147,7 +147,7 @@ void C_ZN8QToolBoxD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:63
-// [4] int addItem(class QWidget *, const class QString &)
+// [4] int addItem(QWidget *, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZN8QToolBox7addItemEP7QWidgetRK7QString(void *this_, QWidget * widget, QString* text) {
   return (int)((QToolBox*)this_)->addItem(widget, *text);
@@ -155,7 +155,7 @@ int C_ZN8QToolBox7addItemEP7QWidgetRK7QString(void *this_, QWidget * widget, QSt
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:64
-// [4] int addItem(class QWidget *, const class QIcon &, const class QString &)
+// [4] int addItem(QWidget *, const QIcon &, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString(void *this_, QWidget * widget, QIcon* icon, QString* text) {
   return (int)((QToolBox*)this_)->addItem(widget, *icon, *text);
@@ -163,7 +163,7 @@ int C_ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString(void *this_, QWidget * wid
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:65
-// [4] int insertItem(int, class QWidget *, const class QString &)
+// [4] int insertItem(int, QWidget *, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZN8QToolBox10insertItemEiP7QWidgetRK7QString(void *this_, int index, QWidget * widget, QString* text) {
   return (int)((QToolBox*)this_)->insertItem(index, widget, *text);
@@ -171,7 +171,7 @@ int C_ZN8QToolBox10insertItemEiP7QWidgetRK7QString(void *this_, int index, QWidg
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:66
-// [4] int insertItem(int, class QWidget *, const class QIcon &, const class QString &)
+// [4] int insertItem(int, QWidget *, const QIcon &, const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZN8QToolBox10insertItemEiP7QWidgetRK5QIconRK7QString(void *this_, int index, QWidget * widget, QIcon* icon, QString* text) {
   return (int)((QToolBox*)this_)->insertItem(index, widget, *icon, *text);
@@ -187,7 +187,7 @@ void C_ZN8QToolBox10removeItemEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:70
-// [-2] void setItemEnabled(int, _Bool)
+// [-2] void setItemEnabled(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox14setItemEnabledEib(void *this_, int index, bool enabled) {
   ((QToolBox*)this_)->setItemEnabled(index, enabled);
@@ -203,7 +203,7 @@ bool C_ZNK8QToolBox13isItemEnabledEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:73
-// [-2] void setItemText(int, const class QString &)
+// [-2] void setItemText(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox11setItemTextEiRK7QString(void *this_, int index, QString* text) {
   ((QToolBox*)this_)->setItemText(index, *text);
@@ -220,7 +220,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:76
-// [-2] void setItemIcon(int, const class QIcon &)
+// [-2] void setItemIcon(int, const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox11setItemIconEiRK5QIcon(void *this_, int index, QIcon* icon) {
   ((QToolBox*)this_)->setItemIcon(index, *icon);
@@ -237,7 +237,7 @@ return new QIcon(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:80
-// [-2] void setItemToolTip(int, const class QString &)
+// [-2] void setItemToolTip(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox14setItemToolTipEiRK7QString(void *this_, int index, QString* toolTip) {
   ((QToolBox*)this_)->setItemToolTip(index, *toolTip);
@@ -278,7 +278,7 @@ void* C_ZNK8QToolBox6widgetEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:87
-// [4] int indexOf(class QWidget *)
+// [4] int indexOf(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QToolBox7indexOfEP7QWidget(void *this_, QWidget * widget) {
   return (int)((QToolBox*)this_)->indexOf(widget);
@@ -302,7 +302,7 @@ void C_ZN8QToolBox15setCurrentIndexEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:92
-// [-2] void setCurrentWidget(class QWidget *)
+// [-2] void setCurrentWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QToolBox16setCurrentWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QToolBox*)this_)->setCurrentWidget(widget);

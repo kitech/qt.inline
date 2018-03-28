@@ -38,7 +38,7 @@ QGradient::Type C_ZNK9QGradient4typeEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:210
-// [-2] void setSpread(enum QGradient::Spread)
+// [-2] void setSpread(QGradient::Spread)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient9setSpreadENS_6SpreadE(void *this_, QGradient::Spread spread) {
   ((QGradient*)this_)->setSpread(spread);
@@ -54,7 +54,7 @@ QGradient::Spread C_ZNK9QGradient6spreadEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:213
-// [-2] void setColorAt(qreal, const class QColor &)
+// [-2] void setColorAt(qreal, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, QColor* color) {
   ((QGradient*)this_)->setColorAt(pos, *color);
@@ -73,7 +73,7 @@ QGradient::CoordinateMode C_ZNK9QGradient14coordinateModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:219
-// [-2] void setCoordinateMode(enum QGradient::CoordinateMode)
+// [-2] void setCoordinateMode(QGradient::CoordinateMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient17setCoordinateModeENS_14CoordinateModeE(void *this_, QGradient::CoordinateMode mode) {
   ((QGradient*)this_)->setCoordinateMode(mode);
@@ -89,7 +89,7 @@ QGradient::InterpolationMode C_ZNK9QGradient17interpolationModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:222
-// [-2] void setInterpolationMode(enum QGradient::InterpolationMode)
+// [-2] void setInterpolationMode(QGradient::InterpolationMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient20setInterpolationModeENS_17InterpolationModeE(void *this_, QGradient::InterpolationMode mode) {
   ((QGradient*)this_)->setInterpolationMode(mode);
@@ -97,7 +97,7 @@ void C_ZN9QGradient20setInterpolationModeENS_17InterpolationModeE(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:224
-// [1] bool operator==(const class QGradient &)
+// [1] bool operator==(const QGradient &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGradienteqERKS_(void *this_, QGradient* gradient) {
   return (bool)((QGradient*)this_)->operator==(*gradient);
@@ -105,7 +105,7 @@ bool C_ZNK9QGradienteqERKS_(void *this_, QGradient* gradient) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:225
-// [1] bool operator!=(const class QGradient &)
+// [1] bool operator!=(const QGradient &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGradientneERKS_(void *this_, QGradient* other) {
   return (bool)((QGradient*)this_)->operator!=(*other);

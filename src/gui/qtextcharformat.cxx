@@ -18,7 +18,7 @@ public:
   virtual ~MyQTextCharFormat() {}
 // void QTextCharFormat()
 MyQTextCharFormat() : QTextCharFormat() {}
-// void QTextCharFormat(const class QTextFormat &)
+// void QTextCharFormat(const QTextFormat &)
 MyQTextCharFormat(const QTextFormat & fmt_) : QTextCharFormat(fmt_) {}
 };
 
@@ -40,7 +40,7 @@ bool C_ZNK15QTextCharFormat7isValidEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:420
-// [-2] void setFont(const class QFont &, enum QTextCharFormat::FontPropertiesInheritanceBehavior)
+// [-2] void setFont(const QFont &, QTextCharFormat::FontPropertiesInheritanceBehavior)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat7setFontERK5QFontNS_33FontPropertiesInheritanceBehaviorE(void *this_, QFont* font, QTextCharFormat::FontPropertiesInheritanceBehavior behavior) {
   ((QTextCharFormat*)this_)->setFont(*font, behavior);
@@ -48,7 +48,7 @@ void C_ZN15QTextCharFormat7setFontERK5QFontNS_33FontPropertiesInheritanceBehavio
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:421
-// [-2] void setFont(const class QFont &)
+// [-2] void setFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat7setFontERK5QFont(void *this_, QFont* font) {
   ((QTextCharFormat*)this_)->setFont(*font);
@@ -65,7 +65,7 @@ return new QFont(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:424
-// [-2] void setFontFamily(const class QString &)
+// [-2] void setFontFamily(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat13setFontFamilyERK7QString(void *this_, QString* family) {
   ((QTextCharFormat*)this_)->setFontFamily(*family);
@@ -114,7 +114,7 @@ int C_ZNK15QTextCharFormat10fontWeightEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:438
-// [-2] void setFontItalic(_Bool)
+// [-2] void setFontItalic(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat13setFontItalicEb(void *this_, bool italic) {
   ((QTextCharFormat*)this_)->setFontItalic(italic);
@@ -131,7 +131,7 @@ bool C_ZNK15QTextCharFormat10fontItalicEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtGui/qtextformat.h:442
-// [-2] void setFontCapitalization(class QFont::Capitalization)
+// [-2] void setFontCapitalization(QFont::Capitalization)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat21setFontCapitalizationEN5QFont14CapitalizationE(void *this_, QFont::Capitalization capitalization) {
@@ -153,7 +153,7 @@ QFont::Capitalization C_ZNK15QTextCharFormat18fontCapitalizationEv(void *this_) 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtGui/qtextformat.h:446
-// [-2] void setFontLetterSpacingType(class QFont::SpacingType)
+// [-2] void setFontLetterSpacingType(QFont::SpacingType)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat24setFontLetterSpacingTypeEN5QFont11SpacingTypeE(void *this_, QFont::SpacingType letterSpacingType) {
@@ -218,7 +218,7 @@ qreal C_ZNK15QTextCharFormat15fontWordSpacingEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:459
-// [-2] void setFontUnderline(_Bool)
+// [-2] void setFontUnderline(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat16setFontUnderlineEb(void *this_, bool underline) {
   ((QTextCharFormat*)this_)->setFontUnderline(underline);
@@ -234,7 +234,7 @@ bool C_ZNK15QTextCharFormat13fontUnderlineEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:463
-// [-2] void setFontOverline(_Bool)
+// [-2] void setFontOverline(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat15setFontOverlineEb(void *this_, bool overline) {
   ((QTextCharFormat*)this_)->setFontOverline(overline);
@@ -250,7 +250,7 @@ bool C_ZNK15QTextCharFormat12fontOverlineEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:468
-// [-2] void setFontStrikeOut(_Bool)
+// [-2] void setFontStrikeOut(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat16setFontStrikeOutEb(void *this_, bool strikeOut) {
   ((QTextCharFormat*)this_)->setFontStrikeOut(strikeOut);
@@ -266,7 +266,7 @@ bool C_ZNK15QTextCharFormat13fontStrikeOutEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:473
-// [-2] void setUnderlineColor(const class QColor &)
+// [-2] void setUnderlineColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat17setUnderlineColorERK6QColor(void *this_, QColor* color) {
   ((QTextCharFormat*)this_)->setUnderlineColor(*color);
@@ -283,7 +283,7 @@ return new QColor(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:478
-// [-2] void setFontFixedPitch(_Bool)
+// [-2] void setFontFixedPitch(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat17setFontFixedPitchEb(void *this_, bool fixedPitch) {
   ((QTextCharFormat*)this_)->setFontFixedPitch(fixedPitch);
@@ -322,7 +322,7 @@ int C_ZNK15QTextCharFormat11fontStretchEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtGui/qtextformat.h:488
-// [-2] void setFontStyleHint(class QFont::StyleHint, class QFont::StyleStrategy)
+// [-2] void setFontStyleHint(QFont::StyleHint, QFont::StyleStrategy)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat16setFontStyleHintEN5QFont9StyleHintENS0_13StyleStrategyE(void *this_, QFont::StyleHint hint, QFont::StyleStrategy strategy) {
@@ -333,7 +333,7 @@ void C_ZN15QTextCharFormat16setFontStyleHintEN5QFont9StyleHintENS0_13StyleStrate
 // Public inline Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtGui/qtextformat.h:490
-// [-2] void setFontStyleStrategy(class QFont::StyleStrategy)
+// [-2] void setFontStyleStrategy(QFont::StyleStrategy)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat20setFontStyleStrategyEN5QFont13StyleStrategyE(void *this_, QFont::StyleStrategy strategy) {
@@ -366,7 +366,7 @@ QFont::StyleStrategy C_ZNK15QTextCharFormat17fontStyleStrategyEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qtextformat.h:497
-// [-2] void setFontHintingPreference(class QFont::HintingPreference)
+// [-2] void setFontHintingPreference(QFont::HintingPreference)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat24setFontHintingPreferenceEN5QFont17HintingPreferenceE(void *this_, QFont::HintingPreference hintingPreference) {
@@ -388,7 +388,7 @@ QFont::HintingPreference C_ZNK15QTextCharFormat21fontHintingPreferenceEv(void *t
 // Public inline Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtGui/qtextformat.h:507
-// [-2] void setFontKerning(_Bool)
+// [-2] void setFontKerning(bool)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat14setFontKerningEb(void *this_, bool enable) {
@@ -409,7 +409,7 @@ bool C_ZNK15QTextCharFormat11fontKerningEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:512
-// [-2] void setUnderlineStyle(enum QTextCharFormat::UnderlineStyle)
+// [-2] void setUnderlineStyle(QTextCharFormat::UnderlineStyle)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat17setUnderlineStyleENS_14UnderlineStyleE(void *this_, QTextCharFormat::UnderlineStyle style) {
   ((QTextCharFormat*)this_)->setUnderlineStyle(style);
@@ -428,7 +428,7 @@ QTextCharFormat::UnderlineStyle C_ZNK15QTextCharFormat14underlineStyleEv(void *t
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:516
-// [-2] void setVerticalAlignment(enum QTextCharFormat::VerticalAlignment)
+// [-2] void setVerticalAlignment(QTextCharFormat::VerticalAlignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat20setVerticalAlignmentENS_17VerticalAlignmentE(void *this_, QTextCharFormat::VerticalAlignment alignment) {
   ((QTextCharFormat*)this_)->setVerticalAlignment(alignment);
@@ -444,7 +444,7 @@ QTextCharFormat::VerticalAlignment C_ZNK15QTextCharFormat17verticalAlignmentEv(v
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:521
-// [-2] void setTextOutline(const class QPen &)
+// [-2] void setTextOutline(const QPen &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat14setTextOutlineERK4QPen(void *this_, QPen* pen) {
   ((QTextCharFormat*)this_)->setTextOutline(*pen);
@@ -462,7 +462,7 @@ return new QPen(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:526
-// [-2] void setToolTip(const class QString &)
+// [-2] void setToolTip(const QString &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat10setToolTipERK7QString(void *this_, QString* tip) {
@@ -484,7 +484,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:531
-// [-2] void setAnchor(_Bool)
+// [-2] void setAnchor(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat9setAnchorEb(void *this_, bool anchor) {
   ((QTextCharFormat*)this_)->setAnchor(anchor);
@@ -500,7 +500,7 @@ bool C_ZNK15QTextCharFormat8isAnchorEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:536
-// [-2] void setAnchorHref(const class QString &)
+// [-2] void setAnchorHref(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat13setAnchorHrefERK7QString(void *this_, QString* value) {
   ((QTextCharFormat*)this_)->setAnchorHref(*value);
@@ -517,7 +517,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:541
-// [-2] void setAnchorName(const class QString &)
+// [-2] void setAnchorName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat13setAnchorNameERK7QString(void *this_, QString* name) {
   ((QTextCharFormat*)this_)->setAnchorName(*name);
@@ -535,7 +535,7 @@ return new QString(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtGui/qtextformat.h:545
-// [-2] void setAnchorNames(const class QStringList &)
+// [-2] void setAnchorNames(const QStringList &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextCharFormat14setAnchorNamesERK11QStringList(void *this_, QStringList* names) {

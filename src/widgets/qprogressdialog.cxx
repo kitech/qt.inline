@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQProgressDialog : public QProgressDialog {
 public:
   virtual ~MyQProgressDialog() {}
-// void QProgressDialog(class QWidget *, Qt::WindowFlags)
+// void QProgressDialog(QWidget *, Qt::WindowFlags)
 MyQProgressDialog(QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDialog(parent, flags) {}
-// void QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
+// void QProgressDialog(const QString &, const QString &, int, int, QWidget *, Qt::WindowFlags)
 MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags) {}
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(class QCloseEvent *)
+// void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -45,7 +45,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -57,7 +57,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(class QShowEvent *)
+// void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -84,7 +84,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:116
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QProgressDialog*)this_)->QProgressDialog::resizeEvent(event);
@@ -92,7 +92,7 @@ void C_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void *this_, QResizeEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:117
-// [-2] void closeEvent(class QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
   ((QProgressDialog*)this_)->QProgressDialog::closeEvent(event);
@@ -100,7 +100,7 @@ void C_ZN15QProgressDialog10closeEventEP11QCloseEvent(void *this_, QCloseEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:118
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
   ((QProgressDialog*)this_)->QProgressDialog::changeEvent(event);
@@ -108,7 +108,7 @@ void C_ZN15QProgressDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:119
-// [-2] void showEvent(class QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QProgressDialog*)this_)->QProgressDialog::showEvent(event);
@@ -132,7 +132,7 @@ void* C_ZNK15QProgressDialog10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:71
-// [-2] void QProgressDialog(class QWidget *, Qt::WindowFlags)
+// [-2] void QProgressDialog(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
   auto _nilp = (MyQProgressDialog*)(0);
@@ -141,7 +141,7 @@ void* C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * pare
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:72
-// [-2] void QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
+// [-2] void QProgressDialog(const QString &, const QString &, int, int, QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* labelText, QString* cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) {
   auto _nilp = (MyQProgressDialog*)(0);
@@ -157,7 +157,7 @@ void C_ZN15QProgressDialogD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:77
-// [-2] void setLabel(class QLabel *)
+// [-2] void setLabel(QLabel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog8setLabelEP6QLabel(void *this_, QLabel * label) {
   ((QProgressDialog*)this_)->setLabel(label);
@@ -165,7 +165,7 @@ void C_ZN15QProgressDialog8setLabelEP6QLabel(void *this_, QLabel * label) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:78
-// [-2] void setCancelButton(class QPushButton *)
+// [-2] void setCancelButton(QPushButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog15setCancelButtonEP11QPushButton(void *this_, QPushButton * button) {
   ((QProgressDialog*)this_)->setCancelButton(button);
@@ -173,7 +173,7 @@ void C_ZN15QProgressDialog15setCancelButtonEP11QPushButton(void *this_, QPushBut
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:79
-// [-2] void setBar(class QProgressBar *)
+// [-2] void setBar(QProgressBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog6setBarEP12QProgressBar(void *this_, QProgressBar * bar) {
   ((QProgressDialog*)this_)->setBar(bar);
@@ -239,7 +239,7 @@ int C_ZNK15QProgressDialog15minimumDurationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:93
-// [-2] void setAutoReset(_Bool)
+// [-2] void setAutoReset(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog12setAutoResetEb(void *this_, bool reset) {
   ((QProgressDialog*)this_)->setAutoReset(reset);
@@ -255,7 +255,7 @@ bool C_ZNK15QProgressDialog9autoResetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:95
-// [-2] void setAutoClose(_Bool)
+// [-2] void setAutoClose(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog12setAutoCloseEb(void *this_, bool close) {
   ((QProgressDialog*)this_)->setAutoClose(close);
@@ -272,7 +272,7 @@ bool C_ZNK15QProgressDialog9autoCloseEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qprogressdialog.h:99
-// [-2] void open(class QObject *, const char *)
+// [-2] void open(QObject *, const char *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
@@ -330,7 +330,7 @@ void C_ZN15QProgressDialog8setValueEi(void *this_, int progress) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:108
-// [-2] void setLabelText(const class QString &)
+// [-2] void setLabelText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, QString* text) {
   ((QProgressDialog*)this_)->setLabelText(*text);
@@ -338,7 +338,7 @@ void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, QString* text) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:109
-// [-2] void setCancelButtonText(const class QString &)
+// [-2] void setCancelButtonText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *this_, QString* text) {
   ((QProgressDialog*)this_)->setCancelButtonText(*text);

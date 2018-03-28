@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQStatusTipEvent : public QStatusTipEvent {
 public:
   virtual ~MyQStatusTipEvent() {}
-// void QStatusTipEvent(const class QString &)
+// void QStatusTipEvent(const QString &)
 MyQStatusTipEvent(const QString & tip) : QStatusTipEvent(tip) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:700
-// [-2] void QStatusTipEvent(const class QString &)
+// [-2] void QStatusTipEvent(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QStatusTipEventC2ERK7QString(QString* tip) {
   return  new QStatusTipEvent(*tip);

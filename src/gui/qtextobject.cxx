@@ -15,13 +15,12 @@
 
 class Q_DECL_EXPORT MyQTextObject : public QTextObject {
 public:
-  virtual ~MyQTextObject() {}
-// void QTextObject(class QTextDocument *)
+// void QTextObject(QTextDocument *)
 MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // Protected virtual Visibility=Default Availability=Available
 // void ~QTextObject()
 // Protected Visibility=Default Availability=Available
-// void setFormat(const class QTextFormat &)
+// void setFormat(const QTextFormat &)
   virtual void setFormat(const QTextFormat & format) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +35,7 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:68
-// [-2] void setFormat(const class QTextFormat &)
+// [-2] void setFormat(const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextObject9setFormatERK11QTextFormat(void *this_, QTextFormat* format) {
   ((QTextObject*)this_)->QTextObject::setFormat(*format);

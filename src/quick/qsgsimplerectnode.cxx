@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQSGSimpleRectNode : public QSGSimpleRectNode {
 public:
   virtual ~MyQSGSimpleRectNode() {}
-// void QSGSimpleRectNode(const class QRectF &, const class QColor &)
+// void QSGSimpleRectNode(const QRectF &, const QColor &)
 MyQSGSimpleRectNode(const QRectF & rect, const QColor & color) : QSGSimpleRectNode(rect, color) {}
 // void QSGSimpleRectNode()
 MyQSGSimpleRectNode() : QSGSimpleRectNode() {}
@@ -24,7 +24,7 @@ MyQSGSimpleRectNode() : QSGSimpleRectNode() {}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:51
-// [-2] void QSGSimpleRectNode(const class QRectF &, const class QColor &)
+// [-2] void QSGSimpleRectNode(const QRectF &, const QColor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGSimpleRectNodeC2ERK6QRectFRK6QColor(QRectF* rect, QColor* color) {
   return  new QSGSimpleRectNode(*rect, *color);
@@ -40,7 +40,7 @@ void* C_ZN17QSGSimpleRectNodeC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:54
-// [-2] void setRect(const class QRectF &)
+// [-2] void setRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSGSimpleRectNode7setRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGSimpleRectNode*)this_)->setRect(*rect);
@@ -65,7 +65,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:58
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSGSimpleRectNode8setColorERK6QColor(void *this_, QColor* color) {
   ((QSGSimpleRectNode*)this_)->setColor(*color);

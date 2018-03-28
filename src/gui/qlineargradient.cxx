@@ -18,7 +18,7 @@ public:
   virtual ~MyQLinearGradient() {}
 // void QLinearGradient()
 MyQLinearGradient() : QLinearGradient() {}
-// void QLinearGradient(const class QPointF &, const class QPointF &)
+// void QLinearGradient(const QPointF &, const QPointF &)
 MyQLinearGradient(const QPointF & start, const QPointF & finalStop) : QLinearGradient(start, finalStop) {}
 // void QLinearGradient(qreal, qreal, qreal, qreal)
 MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) : QLinearGradient(xStart, yStart, xFinalStop, yFinalStop) {}
@@ -34,7 +34,7 @@ void* C_ZN15QLinearGradientC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:258
-// [-2] void QLinearGradient(const class QPointF &, const class QPointF &)
+// [-2] void QLinearGradient(const QPointF &, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QLinearGradientC2ERK7QPointFS2_(QPointF* start, QPointF* finalStop) {
   return  new QLinearGradient(*start, *finalStop);
@@ -60,7 +60,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qbrush.h:262
-// [-2] void setStart(const class QPointF &)
+// [-2] void setStart(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QLinearGradient8setStartERK7QPointF(void *this_, QPointF* start) {
@@ -91,7 +91,7 @@ return new QPointF(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qbrush.h:266
-// [-2] void setFinalStop(const class QPointF &)
+// [-2] void setFinalStop(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QLinearGradient12setFinalStopERK7QPointF(void *this_, QPointF* stop) {

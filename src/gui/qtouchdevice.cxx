@@ -75,7 +75,7 @@ int C_ZNK12QTouchDevice18maximumTouchPointsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:83
-// [-2] void setName(const class QString &)
+// [-2] void setName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTouchDevice7setNameERK7QString(void *this_, QString* name) {
   ((QTouchDevice*)this_)->setName(*name);
@@ -83,7 +83,7 @@ void C_ZN12QTouchDevice7setNameERK7QString(void *this_, QString* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:84
-// [-2] void setType(enum QTouchDevice::DeviceType)
+// [-2] void setType(QTouchDevice::DeviceType)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTouchDevice7setTypeENS_10DeviceTypeE(void *this_, QTouchDevice::DeviceType devType) {
   ((QTouchDevice*)this_)->setType(devType);

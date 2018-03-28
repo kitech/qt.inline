@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQEnterEvent : public QEnterEvent {
 public:
   virtual ~MyQEnterEvent() {}
-// void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
+// void QEnterEvent(const QPointF &, const QPointF &, const QPointF &)
 MyQEnterEvent(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) : QEnterEvent(localPos, windowPos, screenPos) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:85
-// [-2] void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
+// [-2] void QEnterEvent(const QPointF &, const QPointF &, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QEnterEventC2ERK7QPointFS2_S2_(QPointF* localPos, QPointF* windowPos, QPointF* screenPos) {
   return  new QEnterEvent(*localPos, *windowPos, *screenPos);

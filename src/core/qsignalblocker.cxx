@@ -17,15 +17,15 @@
 class Q_DECL_EXPORT MyQSignalBlocker : public QSignalBlocker {
 public:
   virtual ~MyQSignalBlocker() {}
-// void QSignalBlocker(class QObject *)
+// void QSignalBlocker(QObject *)
 MyQSignalBlocker(QObject * o) : QSignalBlocker(o) {}
-// void QSignalBlocker(class QObject &)
+// void QSignalBlocker(QObject &)
 MyQSignalBlocker(QObject & o) : QSignalBlocker(o) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:548
-// [-2] void QSignalBlocker(class QObject *)
+// [-2] void QSignalBlocker(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSignalBlockerC2EP7QObject(QObject * o) {
   return  new QSignalBlocker(o);
@@ -33,7 +33,7 @@ void* C_ZN14QSignalBlockerC2EP7QObject(QObject * o) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:549
-// [-2] void QSignalBlocker(class QObject &)
+// [-2] void QSignalBlocker(QObject &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSignalBlockerC2ER7QObject(QObject* o) {
   return  new QSignalBlocker(*o);

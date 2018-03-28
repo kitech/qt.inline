@@ -19,9 +19,9 @@ public:
   virtual ~MyQEventLoopLocker() {}
 // void QEventLoopLocker()
 MyQEventLoopLocker() : QEventLoopLocker() {}
-// void QEventLoopLocker(class QEventLoop *)
+// void QEventLoopLocker(QEventLoop *)
 MyQEventLoopLocker(QEventLoop * loop) : QEventLoopLocker(loop) {}
-// void QEventLoopLocker(class QThread *)
+// void QEventLoopLocker(QThread *)
 MyQEventLoopLocker(QThread * thread) : QEventLoopLocker(thread) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN16QEventLoopLockerC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:94
-// [-2] void QEventLoopLocker(class QEventLoop *)
+// [-2] void QEventLoopLocker(QEventLoop *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QEventLoopLockerC2EP10QEventLoop(QEventLoop * loop) {
   return  new QEventLoopLocker(loop);
@@ -43,7 +43,7 @@ void* C_ZN16QEventLoopLockerC2EP10QEventLoop(QEventLoop * loop) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:95
-// [-2] void QEventLoopLocker(class QThread *)
+// [-2] void QEventLoopLocker(QThread *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QEventLoopLockerC2EP7QThread(QThread * thread) {
   return  new QEventLoopLocker(thread);

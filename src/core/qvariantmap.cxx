@@ -85,7 +85,7 @@ bool C_QVariantMap_isDetached_0(void* this_ ) {
     return rv;
 }
 
-// [-2] void setSharable(_Bool)
+// [-2] void setSharable(bool)
 extern "C"
 void C_QVariantMap_setSharable_0(void* this_ , bool sharable) {
     // QVariantMap_setSharable_0()
@@ -299,7 +299,7 @@ QVariantMap::key_value_iterator* C_QVariantMap_keyValueEnd_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QMap::iterator erase(class QMap::iterator)
+// [-3] QMap::iterator erase(QMap::iterator)
 extern "C"
 QVariantMap::iterator* C_QVariantMap_erase_0(void* this_ , QVariantMap::iterator* it) {
     // QVariantMap_erase_0()
@@ -347,7 +347,7 @@ QVariantMap::iterator* C_QVariantMap_insert_0(void* this_ , QString* key, QStrin
     return new decltype(rv)(rv);
 }
 
-// [-3] QMap::iterator insert(class QMap::const_iterator, const Key &, const T &)
+// [-3] QMap::iterator insert(QMap::const_iterator, const Key &, const T &)
 extern "C"
 QVariantMap::iterator* C_QVariantMap_insert_1(void* this_ , QVariantMap::const_iterator* pos, QString* key, QString* value) {
     // QVariantMap_insert_1()
@@ -363,7 +363,7 @@ QVariantMap::iterator* C_QVariantMap_insertMulti_0(void* this_ , QString* key, Q
     return new decltype(rv)(rv);
 }
 
-// [-3] QMap::iterator insertMulti(class QMap::const_iterator, const Key &, const T &)
+// [-3] QMap::iterator insertMulti(QMap::const_iterator, const Key &, const T &)
 extern "C"
 QVariantMap::iterator* C_QVariantMap_insertMulti_1(void* this_ , QVariantMap::const_iterator* pos, QString* akey, QString* avalue) {
     // QVariantMap_insertMulti_1()

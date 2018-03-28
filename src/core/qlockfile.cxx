@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQLockFile : public QLockFile {
 public:
   virtual ~MyQLockFile() {}
-// void QLockFile(const class QString &)
+// void QLockFile(const QString &)
 MyQLockFile(const QString & fileName) : QLockFile(fileName) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:53
-// [-2] void QLockFile(const class QString &)
+// [-2] void QLockFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QLockFileC2ERK7QString(QString* fileName) {
   return  new QLockFile(*fileName);
@@ -86,7 +86,7 @@ bool C_ZNK9QLockFile8isLockedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:64
-// [1] bool getLockInfo(qint64 *, class QString *, class QString *)
+// [1] bool getLockInfo(qint64 *, QString *, QString *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QLockFile11getLockInfoEPxP7QStringS2_(void *this_, qint64 * pid, QString * hostname, QString * appname) {
   return (bool)((QLockFile*)this_)->getLockInfo(pid, hostname, appname);

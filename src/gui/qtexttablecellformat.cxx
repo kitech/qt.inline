@@ -19,7 +19,7 @@ public:
   virtual ~MyQTextTableCellFormat() {}
 // void QTextTableCellFormat()
 MyQTextTableCellFormat() : QTextTableCellFormat() {}
-// void QTextTableCellFormat(const class QTextFormat &)
+// void QTextTableCellFormat(const QTextFormat &)
 MyQTextTableCellFormat(const QTextFormat & fmt_) : QTextTableCellFormat(fmt_) {}
 };
 

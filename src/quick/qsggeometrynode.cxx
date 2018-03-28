@@ -37,7 +37,7 @@ void C_ZN15QSGGeometryNodeD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:234
-// [-2] void setMaterial(class QSGMaterial *)
+// [-2] void setMaterial(QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNode11setMaterialEP11QSGMaterial(void *this_, QSGMaterial * material) {
   ((QSGGeometryNode*)this_)->setMaterial(material);
@@ -53,7 +53,7 @@ void* C_ZNK15QSGGeometryNode8materialEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:237
-// [-2] void setOpaqueMaterial(class QSGMaterial *)
+// [-2] void setOpaqueMaterial(QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNode17setOpaqueMaterialEP11QSGMaterial(void *this_, QSGMaterial * material) {
   ((QSGGeometryNode*)this_)->setOpaqueMaterial(material);

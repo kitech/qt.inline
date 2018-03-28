@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQGridLayout : public QGridLayout {
 public:
   virtual ~MyQGridLayout() {}
-// void QGridLayout(class QWidget *)
+// void QGridLayout(QWidget *)
 MyQGridLayout(QWidget * parent) : QGridLayout(parent) {}
 // void QGridLayout()
 MyQGridLayout() : QGridLayout() {}
 // Protected virtual Visibility=Default Availability=Available
-// void addItem(class QLayoutItem *)
+// void addItem(QLayoutItem *)
   virtual void addItem(QLayoutItem * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"addItem", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQGridLayout() : QGridLayout() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:123
-// [-2] void addItem(class QLayoutItem *)
+// [-2] void addItem(QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * arg0) {
   ((QGridLayout*)this_)->QGridLayout::addItem(arg0);
@@ -52,7 +52,7 @@ void* C_ZNK11QGridLayout10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:64
-// [-2] void QGridLayout(class QWidget *)
+// [-2] void QGridLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QGridLayoutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQGridLayout*)(0);
@@ -281,7 +281,7 @@ void C_ZN11QGridLayout10invalidateEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:102
-// [-2] void addWidget(class QWidget *)
+// [-2] void addWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QGridLayout*)this_)->addWidget(w);
@@ -289,7 +289,7 @@ void C_ZN11QGridLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:103
-// [-2] void addWidget(class QWidget *, int, int, Qt::Alignment)
+// [-2] void addWidget(QWidget *, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout9addWidgetEP7QWidgetii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, QFlags<Qt::AlignmentFlag> arg3) {
   ((QGridLayout*)this_)->addWidget(arg0, row, column, arg3);
@@ -297,7 +297,7 @@ void C_ZN11QGridLayout9addWidgetEP7QWidgetii6QFlagsIN2Qt13AlignmentFlagEE(void *
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:104
-// [-2] void addWidget(class QWidget *, int, int, int, int, Qt::Alignment)
+// [-2] void addWidget(QWidget *, int, int, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout9addWidgetEP7QWidgetiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> arg5) {
   ((QGridLayout*)this_)->addWidget(arg0, row, column, rowSpan, columnSpan, arg5);
@@ -305,7 +305,7 @@ void C_ZN11QGridLayout9addWidgetEP7QWidgetiiii6QFlagsIN2Qt13AlignmentFlagEE(void
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:105
-// [-2] void addLayout(class QLayout *, int, int, Qt::Alignment)
+// [-2] void addLayout(QLayout *, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout9addLayoutEP7QLayoutii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, QFlags<Qt::AlignmentFlag> arg3) {
   ((QGridLayout*)this_)->addLayout(arg0, row, column, arg3);
@@ -313,7 +313,7 @@ void C_ZN11QGridLayout9addLayoutEP7QLayoutii6QFlagsIN2Qt13AlignmentFlagEE(void *
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:106
-// [-2] void addLayout(class QLayout *, int, int, int, int, Qt::Alignment)
+// [-2] void addLayout(QLayout *, int, int, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout9addLayoutEP7QLayoutiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> arg5) {
   ((QGridLayout*)this_)->addLayout(arg0, row, column, rowSpan, columnSpan, arg5);
@@ -372,7 +372,7 @@ int C_ZNK11QGridLayout5countEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:115
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QGridLayout*)this_)->setGeometry(*arg0);
@@ -380,7 +380,7 @@ void C_ZN11QGridLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:117
-// [-2] void addItem(class QLayoutItem *, int, int, int, int, Qt::Alignment)
+// [-2] void addItem(QLayoutItem *, int, int, int, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QGridLayout7addItemEP11QLayoutItemiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayoutItem * item, int row, int column, int rowSpan, int columnSpan, QFlags<Qt::AlignmentFlag> arg5) {
   ((QGridLayout*)this_)->addItem(item, row, column, rowSpan, columnSpan, arg5);

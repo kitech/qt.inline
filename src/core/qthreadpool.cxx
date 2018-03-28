@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQThreadPool : public QThreadPool {
 public:
   virtual ~MyQThreadPool() {}
-// void QThreadPool(class QObject *)
+// void QThreadPool(QObject *)
 MyQThreadPool(QObject * parent) : QThreadPool(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK11QThreadPool10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:65
-// [-2] void QThreadPool(class QObject *)
+// [-2] void QThreadPool(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QThreadPoolC2EP7QObject(QObject * parent) {
   return  new QThreadPool(parent);
@@ -54,7 +54,7 @@ void* C_ZN11QThreadPool14globalInstanceEv() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:70
-// [-2] void start(class QRunnable *, int)
+// [-2] void start(QRunnable *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QThreadPool5startEP9QRunnablei(void *this_, QRunnable * runnable, int priority) {
   ((QThreadPool*)this_)->start(runnable, priority);
@@ -62,7 +62,7 @@ void C_ZN11QThreadPool5startEP9QRunnablei(void *this_, QRunnable * runnable, int
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:71
-// [1] bool tryStart(class QRunnable *)
+// [1] bool tryStart(QRunnable *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QThreadPool8tryStartEP9QRunnable(void *this_, QRunnable * runnable) {
   return (bool)((QThreadPool*)this_)->tryStart(runnable);
@@ -161,7 +161,7 @@ void C_ZN11QThreadPool5clearEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:93
-// [-2] void cancel(class QRunnable *)
+// [-2] void cancel(QRunnable *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QThreadPool6cancelEP9QRunnable(void *this_, QRunnable * runnable) {
   ((QThreadPool*)this_)->cancel(runnable);
@@ -170,7 +170,7 @@ void C_ZN11QThreadPool6cancelEP9QRunnable(void *this_, QRunnable * runnable) {
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtCore/qthreadpool.h:95
-// [1] bool tryTake(class QRunnable *)
+// [1] bool tryTake(QRunnable *)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QThreadPool7tryTakeEP9QRunnable(void *this_, QRunnable * runnable) {

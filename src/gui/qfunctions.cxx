@@ -79,7 +79,7 @@ int C_Z4qRedj(QRgb rgb) {
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:974
-// [8] QString qAccessibleLocalizedActionDescription(const class QString &)
+// [8] QString qAccessibleLocalizedActionDescription(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_Z37qAccessibleLocalizedActionDescriptionRK7QString(QString* actionName) {
   auto rv = qAccessibleLocalizedActionDescription(*actionName);
@@ -88,7 +88,7 @@ return new QString(rv);
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:973
-// [8] const char * qAccessibleEventString(class QAccessible::Event)
+// [8] const char * qAccessibleEventString(QAccessible::Event)
 extern "C" Q_DECL_EXPORT
 void* C_Z22qAccessibleEventStringN11QAccessible5EventE(QAccessible::Event event) {
   return (void*)qAccessibleEventString(event);
@@ -96,7 +96,7 @@ void* C_Z22qAccessibleEventStringN11QAccessible5EventE(QAccessible::Event event)
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:972
-// [8] const char * qAccessibleRoleString(class QAccessible::Role)
+// [8] const char * qAccessibleRoleString(QAccessible::Role)
 extern "C" Q_DECL_EXPORT
 void* C_Z21qAccessibleRoleStringN11QAccessible4RoleE(QAccessible::Role role) {
   return (void*)qAccessibleRoleString(role);
@@ -104,7 +104,7 @@ void* C_Z21qAccessibleRoleStringN11QAccessible4RoleE(QAccessible::Role role) {
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:149
-// [8] QString qt_findAtNxFile(const class QString &, qreal, qreal *)
+// [8] QString qt_findAtNxFile(const QString &, qreal, qreal *)
 extern "C" Q_DECL_EXPORT
 void* C_Z15qt_findAtNxFileRK7QStringdPd(QString* baseFileName, qreal targetDevicePixelRatio, qreal * sourceDevicePixelRatio) {
   auto rv = qt_findAtNxFile(*baseFileName, targetDevicePixelRatio, sourceDevicePixelRatio);
@@ -121,7 +121,7 @@ QRgb C_Z14qUnpremultiplyj(QRgb p) {
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:323
-// [1] bool qFuzzyCompare(const class QQuaternion &, const class QQuaternion &)
+// [1] bool qFuzzyCompare(const QQuaternion &, const QQuaternion &)
 extern "C" Q_DECL_EXPORT
 bool C_Z13qFuzzyCompareRK11QQuaternionS1__2(QQuaternion* q1, QQuaternion* q2) {
   return (bool)qFuzzyCompare(*q1, *q2);

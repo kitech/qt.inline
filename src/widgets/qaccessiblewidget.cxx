@@ -15,8 +15,7 @@
 
 class Q_DECL_EXPORT MyQAccessibleWidget : public QAccessibleWidget {
 public:
-  virtual ~MyQAccessibleWidget() {}
-// void QAccessibleWidget(class QWidget *, class QAccessible::Role, const class QString &)
+// void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)
 MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QAccessibleWidget(o, r, name) {}
 // Protected virtual Visibility=Default Availability=Available
 // void ~QAccessibleWidget()
@@ -47,7 +46,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
   }
 
 // Protected Visibility=Default Availability=Available
-// void addControllingSignal(const class QString &)
+// void addControllingSignal(const QString &)
   virtual void addControllingSignal(const QString & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"addControllingSignal", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -78,7 +77,7 @@ void* C_ZNK17QAccessibleWidget12parentObjectEv(void *this_) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:88
-// [-2] void addControllingSignal(const class QString &)
+// [-2] void addControllingSignal(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAccessibleWidget20addControllingSignalERK7QString(void *this_, QString* signal) {
   ((QAccessibleWidget*)this_)->QAccessibleWidget::addControllingSignal(*signal);
@@ -86,7 +85,7 @@ void C_ZN17QAccessibleWidget20addControllingSignalERK7QString(void *this_, QStri
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:56
-// [-2] void QAccessibleWidget(class QWidget *, class QAccessible::Role, const class QString &)
+// [-2] void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessibleWidgetC2EP7QWidgetN11QAccessible4RoleERK7QString(QWidget * o, QAccessible::Role r, QString* name) {
   auto _nilp = (MyQAccessibleWidget*)(0);
@@ -119,7 +118,7 @@ int C_ZNK17QAccessibleWidget10childCountEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:61
-// [4] int indexOfChild(const class QAccessibleInterface *)
+// [4] int indexOfChild(const QAccessibleInterface *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QAccessibleWidget12indexOfChildEPK20QAccessibleInterface(void *this_, const QAccessibleInterface * child) {
   return (int)((QAccessibleWidget*)this_)->indexOfChild(child);
@@ -160,7 +159,7 @@ void* C_ZNK17QAccessibleWidget5childEi(void *this_, int index) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:70
-// [8] QString text(class QAccessible::Text)
+// [8] QString text(QAccessible::Text)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAccessibleWidget4textEN11QAccessible4TextE(void *this_, QAccessible::Text t) {
   auto rv = ((QAccessibleWidget*)this_)->text(t);
@@ -203,7 +202,7 @@ return new QColor(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:77
-// [8] void * interface_cast(class QAccessible::InterfaceType)
+// [8] void * interface_cast(QAccessible::InterfaceType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessibleWidget14interface_castEN11QAccessible13InterfaceTypeE(void *this_, QAccessible::InterfaceType t) {
   return (void*)((QAccessibleWidget*)this_)->interface_cast(t);
@@ -220,7 +219,7 @@ return new QStringList(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:81
-// [-2] void doAction(const class QString &)
+// [-2] void doAction(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAccessibleWidget8doActionERK7QString(void *this_, QString* actionName) {
   ((QAccessibleWidget*)this_)->doAction(*actionName);
@@ -228,7 +227,7 @@ void C_ZN17QAccessibleWidget8doActionERK7QString(void *this_, QString* actionNam
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:82
-// [8] QStringList keyBindingsForAction(const class QString &)
+// [8] QStringList keyBindingsForAction(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAccessibleWidget20keyBindingsForActionERK7QString(void *this_, QString* actionName) {
   auto rv = ((QAccessibleWidget*)this_)->keyBindingsForAction(*actionName);

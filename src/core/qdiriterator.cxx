@@ -17,19 +17,19 @@
 class Q_DECL_EXPORT MyQDirIterator : public QDirIterator {
 public:
   virtual ~MyQDirIterator() {}
-// void QDirIterator(const class QDir &, QDirIterator::IteratorFlags)
+// void QDirIterator(const QDir &, QDirIterator::IteratorFlags)
 MyQDirIterator(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(dir, flags) {}
-// void QDirIterator(const class QString &, QDirIterator::IteratorFlags)
+// void QDirIterator(const QString &, QDirIterator::IteratorFlags)
 MyQDirIterator(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, flags) {}
-// void QDirIterator(const class QString &, class QDir::Filters, QDirIterator::IteratorFlags)
+// void QDirIterator(const QString &, QDir::Filters, QDirIterator::IteratorFlags)
 MyQDirIterator(const QString & path, QFlags<QDir::Filter> filter, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, filter, flags) {}
-// void QDirIterator(const class QString &, const class QStringList &, class QDir::Filters, QDirIterator::IteratorFlags)
+// void QDirIterator(const QString &, const QStringList &, QDir::Filters, QDirIterator::IteratorFlags)
 MyQDirIterator(const QString & path, const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, nameFilters, filters, flags) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:58
-// [-2] void QDirIterator(const class QDir &, QDirIterator::IteratorFlags)
+// [-2] void QDirIterator(const QDir &, QDirIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(QDir* dir, QFlags<QDirIterator::IteratorFlag> flags) {
   return  new QDirIterator(*dir, flags);
@@ -37,7 +37,7 @@ void* C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(QDir* dir, QFlags<
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:59
-// [-2] void QDirIterator(const class QString &, QDirIterator::IteratorFlags)
+// [-2] void QDirIterator(const QString &, QDirIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(QString* path, QFlags<QDirIterator::IteratorFlag> flags) {
   return  new QDirIterator(*path, flags);
@@ -45,7 +45,7 @@ void* C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(QString* path, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:61
-// [-2] void QDirIterator(const class QString &, class QDir::Filters, QDirIterator::IteratorFlags)
+// [-2] void QDirIterator(const QString &, QDir::Filters, QDirIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QDirIteratorC2ERK7QString6QFlagsIN4QDir6FilterEES3_INS_12IteratorFlagEE(QString* path, QFlags<QDir::Filter> filter, QFlags<QDirIterator::IteratorFlag> flags) {
   return  new QDirIterator(*path, filter, flags);
@@ -53,7 +53,7 @@ void* C_ZN12QDirIteratorC2ERK7QString6QFlagsIN4QDir6FilterEES3_INS_12IteratorFla
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:64
-// [-2] void QDirIterator(const class QString &, const class QStringList &, class QDir::Filters, QDirIterator::IteratorFlags)
+// [-2] void QDirIterator(const QString &, const QStringList &, QDir::Filters, QDirIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QDirIteratorC2ERK7QStringRK11QStringList6QFlagsIN4QDir6FilterEES6_INS_12IteratorFlagEE(QString* path, QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDirIterator::IteratorFlag> flags) {
   return  new QDirIterator(*path, *nameFilters, filters, flags);

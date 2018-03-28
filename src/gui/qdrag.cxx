@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQDrag : public QDrag {
 public:
   virtual ~MyQDrag() {}
-// void QDrag(class QObject *)
+// void QDrag(QObject *)
 MyQDrag(QObject * dragSource) : QDrag(dragSource) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK5QDrag10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:62
-// [-2] void QDrag(class QObject *)
+// [-2] void QDrag(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDragC2EP7QObject(QObject * dragSource) {
   return  new QDrag(dragSource);
@@ -45,7 +45,7 @@ void C_ZN5QDragD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:65
-// [-2] void setMimeData(class QMimeData *)
+// [-2] void setMimeData(QMimeData *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDrag11setMimeDataEP9QMimeData(void *this_, QMimeData * data) {
   ((QDrag*)this_)->setMimeData(data);
@@ -61,7 +61,7 @@ void* C_ZNK5QDrag8mimeDataEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:68
-// [-2] void setPixmap(const class QPixmap &)
+// [-2] void setPixmap(const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDrag9setPixmapERK7QPixmap(void *this_, QPixmap* arg0) {
   ((QDrag*)this_)->setPixmap(*arg0);
@@ -78,7 +78,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:71
-// [-2] void setHotSpot(const class QPoint &)
+// [-2] void setHotSpot(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDrag10setHotSpotERK6QPoint(void *this_, QPoint* hotspot) {
   ((QDrag*)this_)->setHotSpot(*hotspot);
@@ -141,7 +141,7 @@ Qt::DropAction C_ZN5QDrag4execE6QFlagsIN2Qt10DropActionEES2_(void *this_, QFlags
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:81
-// [-2] void setDragCursor(const class QPixmap &, Qt::DropAction)
+// [-2] void setDragCursor(const QPixmap &, Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDrag13setDragCursorERK7QPixmapN2Qt10DropActionE(void *this_, QPixmap* cursor, Qt::DropAction action) {
   ((QDrag*)this_)->setDragCursor(*cursor, action);
@@ -196,7 +196,7 @@ void C_ZN5QDrag13actionChangedEN2Qt10DropActionE(void *this_, Qt::DropAction act
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:91
-// [-2] void targetChanged(class QObject *)
+// [-2] void targetChanged(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDrag13targetChangedEP7QObject(void *this_, QObject * newTarget) {
   ((QDrag*)this_)->targetChanged(newTarget);

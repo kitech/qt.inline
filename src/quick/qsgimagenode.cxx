@@ -28,7 +28,7 @@ void C_ZN12QSGImageNodeD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:53
-// [-2] void setRect(const class QRectF &)
+// [-2] void setRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode7setRectERK6QRectF(void *this_, QRectF* rect) {
   ((QSGImageNode*)this_)->setRect(*rect);
@@ -53,7 +53,7 @@ return new QRectF(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:57
-// [-2] void setSourceRect(const class QRectF &)
+// [-2] void setSourceRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode13setSourceRectERK6QRectF(void *this_, QRectF* r) {
   ((QSGImageNode*)this_)->setSourceRect(*r);
@@ -78,7 +78,7 @@ return new QRectF(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:61
-// [-2] void setTexture(class QSGTexture *)
+// [-2] void setTexture(QSGTexture *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode10setTextureEP10QSGTexture(void *this_, QSGTexture * texture) {
   ((QSGImageNode*)this_)->setTexture(texture);
@@ -94,7 +94,7 @@ void* C_ZNK12QSGImageNode7textureEv(void *this_) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:64
-// [-2] void setFiltering(class QSGTexture::Filtering)
+// [-2] void setFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode12setFilteringEN10QSGTexture9FilteringE(void *this_, QSGTexture::Filtering filtering) {
   ((QSGImageNode*)this_)->setFiltering(filtering);
@@ -110,7 +110,7 @@ QSGTexture::Filtering C_ZNK12QSGImageNode9filteringEv(void *this_) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:67
-// [-2] void setMipmapFiltering(class QSGTexture::Filtering)
+// [-2] void setMipmapFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode18setMipmapFilteringEN10QSGTexture9FilteringE(void *this_, QSGTexture::Filtering filtering) {
   ((QSGImageNode*)this_)->setMipmapFiltering(filtering);
@@ -143,7 +143,7 @@ return new QSGImageNode::TextureCoordinatesTransformMode(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:82
-// [-2] void setOwnsTexture(_Bool)
+// [-2] void setOwnsTexture(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode14setOwnsTextureEb(void *this_, bool owns) {
   ((QSGImageNode*)this_)->setOwnsTexture(owns);
@@ -159,7 +159,7 @@ bool C_ZNK12QSGImageNode11ownsTextureEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:85
-// [-2] void rebuildGeometry(class QSGGeometry *, class QSGTexture *, const class QRectF &, class QRectF, QSGImageNode::TextureCoordinatesTransformMode)
+// [-2] void rebuildGeometry(QSGGeometry *, QSGTexture *, const QRectF &, QRectF, QSGImageNode::TextureCoordinatesTransformMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QSGImageNode15rebuildGeometryEP11QSGGeometryP10QSGTextureRK6QRectFS4_6QFlagsINS_31TextureCoordinatesTransformFlagEE(QSGGeometry * g, QSGTexture * texture, QRectF* rect, QRectF* sourceRect, QFlags<QSGImageNode::TextureCoordinatesTransformFlag> texCoordMode) {
   QSGImageNode::rebuildGeometry(g, texture, *rect, *sourceRect, texCoordMode);

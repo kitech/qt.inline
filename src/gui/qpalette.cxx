@@ -18,15 +18,15 @@ public:
   virtual ~MyQPalette() {}
 // void QPalette()
 MyQPalette() : QPalette() {}
-// void QPalette(const class QColor &)
+// void QPalette(const QColor &)
 MyQPalette(const QColor & button) : QPalette(button) {}
 // void QPalette(Qt::GlobalColor)
 MyQPalette(Qt::GlobalColor button) : QPalette(button) {}
-// void QPalette(const class QColor &, const class QColor &)
+// void QPalette(const QColor &, const QColor &)
 MyQPalette(const QColor & button, const QColor & window) : QPalette(button, window) {}
-// void QPalette(const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &)
+// void QPalette(const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &)
 MyQPalette(const QBrush & windowText, const QBrush & button, const QBrush & light, const QBrush & dark, const QBrush & mid, const QBrush & text, const QBrush & bright_text, const QBrush & base, const QBrush & window) : QPalette(windowText, button, light, dark, mid, text, bright_text, base, window) {}
-// void QPalette(const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &)
+// void QPalette(const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &)
 MyQPalette(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base) : QPalette(windowText, window, light, dark, mid, text, base) {}
 };
 
@@ -40,7 +40,7 @@ void* C_ZN8QPaletteC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:59
-// [-2] void QPalette(const class QColor &)
+// [-2] void QPalette(const QColor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QColor(QColor* button) {
   return  new QPalette(*button);
@@ -56,7 +56,7 @@ void* C_ZN8QPaletteC2EN2Qt11GlobalColorE(Qt::GlobalColor button) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:61
-// [-2] void QPalette(const class QColor &, const class QColor &)
+// [-2] void QPalette(const QColor &, const QColor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QColorS2_(QColor* button, QColor* window) {
   return  new QPalette(*button, *window);
@@ -64,7 +64,7 @@ void* C_ZN8QPaletteC2ERK6QColorS2_(QColor* button, QColor* window) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:62
-// [-2] void QPalette(const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &)
+// [-2] void QPalette(const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_(QBrush* windowText, QBrush* button, QBrush* light, QBrush* dark, QBrush* mid, QBrush* text, QBrush* bright_text, QBrush* base, QBrush* window) {
   return  new QPalette(*windowText, *button, *light, *dark, *mid, *text, *bright_text, *base, *window);
@@ -72,7 +72,7 @@ void* C_ZN8QPaletteC2ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_(QBrush* windowText, QBru
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:65
-// [-2] void QPalette(const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &)
+// [-2] void QPalette(const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteC2ERK6QColorS2_S2_S2_S2_S2_S2_(QColor* windowText, QColor* window, QColor* light, QColor* dark, QColor* mid, QColor* text, QColor* base) {
   return  new QPalette(*windowText, *window, *light, *dark, *mid, *text, *base);
@@ -87,7 +87,7 @@ void C_ZN8QPaletteD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:69
-// [16] QPalette & operator=(const class QPalette &)
+// [16] QPalette & operator=(const QPalette &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteaSERKS_(void *this_, QPalette* palette) {
   auto& rv = ((QPalette*)this_)->operator=(*palette);
@@ -96,7 +96,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:74
-// [16] QPalette & operator=(class QPalette &&)
+// [16] QPalette & operator=(QPalette &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPaletteaSEOS_(void *this_, QPalette && other) {
   auto& rv = ((QPalette*)this_)->operator=(other);
@@ -106,7 +106,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtGui/qpalette.h:81
-// [-2] void swap(class QPalette &)
+// [-2] void swap(QPalette &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette4swapERS_(void *this_, QPalette* other) {
@@ -124,7 +124,7 @@ QPalette::ColorGroup C_ZNK8QPalette17currentColorGroupEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:105
-// [-2] void setCurrentColorGroup(enum QPalette::ColorGroup)
+// [-2] void setCurrentColorGroup(QPalette::ColorGroup)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette20setCurrentColorGroupENS_10ColorGroupE(void *this_, QPalette::ColorGroup cg) {
   ((QPalette*)this_)->setCurrentColorGroup(cg);
@@ -132,7 +132,7 @@ void C_ZN8QPalette20setCurrentColorGroupENS_10ColorGroupE(void *this_, QPalette:
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:107
-// [16] const QColor & color(enum QPalette::ColorGroup, enum QPalette::ColorRole)
+// [16] const QColor & color(QPalette::ColorGroup, QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette5colorENS_10ColorGroupENS_9ColorRoleE(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr) {
   auto& rv = ((QPalette*)this_)->color(cg, cr);
@@ -141,7 +141,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:109
-// [8] const QBrush & brush(enum QPalette::ColorGroup, enum QPalette::ColorRole)
+// [8] const QBrush & brush(QPalette::ColorGroup, QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette5brushENS_10ColorGroupENS_9ColorRoleE(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr) {
   auto& rv = ((QPalette*)this_)->brush(cg, cr);
@@ -150,7 +150,7 @@ return new QBrush(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:110
-// [-2] void setColor(enum QPalette::ColorGroup, enum QPalette::ColorRole, const class QColor &)
+// [-2] void setColor(QPalette::ColorGroup, QPalette::ColorRole, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette8setColorENS_10ColorGroupENS_9ColorRoleERK6QColor(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr, QColor* color) {
   ((QPalette*)this_)->setColor(cg, cr, *color);
@@ -158,7 +158,7 @@ void C_ZN8QPalette8setColorENS_10ColorGroupENS_9ColorRoleERK6QColor(void *this_,
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:111
-// [-2] void setColor(enum QPalette::ColorRole, const class QColor &)
+// [-2] void setColor(QPalette::ColorRole, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette8setColorENS_9ColorRoleERK6QColor(void *this_, QPalette::ColorRole cr, QColor* color) {
   ((QPalette*)this_)->setColor(cr, *color);
@@ -166,7 +166,7 @@ void C_ZN8QPalette8setColorENS_9ColorRoleERK6QColor(void *this_, QPalette::Color
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:112
-// [-2] void setBrush(enum QPalette::ColorRole, const class QBrush &)
+// [-2] void setBrush(QPalette::ColorRole, const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette8setBrushENS_9ColorRoleERK6QBrush(void *this_, QPalette::ColorRole cr, QBrush* brush) {
   ((QPalette*)this_)->setBrush(cr, *brush);
@@ -174,7 +174,7 @@ void C_ZN8QPalette8setBrushENS_9ColorRoleERK6QBrush(void *this_, QPalette::Color
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:113
-// [1] bool isBrushSet(enum QPalette::ColorGroup, enum QPalette::ColorRole)
+// [1] bool isBrushSet(QPalette::ColorGroup, QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QPalette10isBrushSetENS_10ColorGroupENS_9ColorRoleE(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr) {
   return (bool)((QPalette*)this_)->isBrushSet(cg, cr);
@@ -182,7 +182,7 @@ bool C_ZNK8QPalette10isBrushSetENS_10ColorGroupENS_9ColorRoleE(void *this_, QPal
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:114
-// [-2] void setBrush(enum QPalette::ColorGroup, enum QPalette::ColorRole, const class QBrush &)
+// [-2] void setBrush(QPalette::ColorGroup, QPalette::ColorRole, const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette8setBrushENS_10ColorGroupENS_9ColorRoleERK6QBrush(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr, QBrush* brush) {
   ((QPalette*)this_)->setBrush(cg, cr, *brush);
@@ -190,7 +190,7 @@ void C_ZN8QPalette8setBrushENS_10ColorGroupENS_9ColorRoleERK6QBrush(void *this_,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:115
-// [-2] void setColorGroup(enum QPalette::ColorGroup, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &)
+// [-2] void setColorGroup(QPalette::ColorGroup, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QPalette13setColorGroupENS_10ColorGroupERK6QBrushS3_S3_S3_S3_S3_S3_S3_S3_(void *this_, QPalette::ColorGroup cr, QBrush* windowText, QBrush* button, QBrush* light, QBrush* dark, QBrush* mid, QBrush* text, QBrush* bright_text, QBrush* base, QBrush* window) {
   ((QPalette*)this_)->setColorGroup(cr, *windowText, *button, *light, *dark, *mid, *text, *bright_text, *base, *window);
@@ -198,7 +198,7 @@ void C_ZN8QPalette13setColorGroupENS_10ColorGroupERK6QBrushS3_S3_S3_S3_S3_S3_S3_
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:119
-// [1] bool isEqual(enum QPalette::ColorGroup, enum QPalette::ColorGroup)
+// [1] bool isEqual(QPalette::ColorGroup, QPalette::ColorGroup)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QPalette7isEqualENS_10ColorGroupES0_(void *this_, QPalette::ColorGroup cr1, QPalette::ColorGroup cr2) {
   return (bool)((QPalette*)this_)->isEqual(cr1, cr2);
@@ -206,7 +206,7 @@ bool C_ZNK8QPalette7isEqualENS_10ColorGroupES0_(void *this_, QPalette::ColorGrou
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:121
-// [16] const QColor & color(enum QPalette::ColorRole)
+// [16] const QColor & color(QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette5colorENS_9ColorRoleE(void *this_, QPalette::ColorRole cr) {
   auto& rv = ((QPalette*)this_)->color(cr);
@@ -215,7 +215,7 @@ return new QColor(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:122
-// [8] const QBrush & brush(enum QPalette::ColorRole)
+// [8] const QBrush & brush(QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette5brushENS_9ColorRoleE(void *this_, QPalette::ColorRole cr) {
   auto& rv = ((QPalette*)this_)->brush(cr);
@@ -419,7 +419,7 @@ return new QBrush(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:145
-// [1] bool operator==(const class QPalette &)
+// [1] bool operator==(const QPalette &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QPaletteeqERKS_(void *this_, QPalette* p) {
   return (bool)((QPalette*)this_)->operator==(*p);
@@ -427,7 +427,7 @@ bool C_ZNK8QPaletteeqERKS_(void *this_, QPalette* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:146
-// [1] bool operator!=(const class QPalette &)
+// [1] bool operator!=(const QPalette &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QPaletteneERKS_(void *this_, QPalette* p) {
   return (bool)((QPalette*)this_)->operator!=(*p);
@@ -435,7 +435,7 @@ bool C_ZNK8QPaletteneERKS_(void *this_, QPalette* p) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:147
-// [1] bool isCopyOf(const class QPalette &)
+// [1] bool isCopyOf(const QPalette &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QPalette8isCopyOfERKS_(void *this_, QPalette* p) {
   return (bool)((QPalette*)this_)->isCopyOf(*p);
@@ -451,7 +451,7 @@ qint64 C_ZNK8QPalette8cacheKeyEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:154
-// [16] QPalette resolve(const class QPalette &)
+// [16] QPalette resolve(const QPalette &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPalette7resolveERKS_(void *this_, QPalette* arg0) {
   auto rv = ((QPalette*)this_)->resolve(*arg0);

@@ -30,7 +30,7 @@ void* C_ZN13QTextFragmentC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:309
-// [16] QTextFragment & operator=(const class QTextFragment &)
+// [16] QTextFragment & operator=(const QTextFragment &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextFragmentaSERKS_(void *this_, QTextFragment* o) {
   auto& rv = ((QTextFragment*)this_)->operator=(*o);
@@ -47,7 +47,7 @@ bool C_ZNK13QTextFragment7isValidEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:313
-// [1] bool operator==(const class QTextFragment &)
+// [1] bool operator==(const QTextFragment &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QTextFragmenteqERKS_(void *this_, QTextFragment* o) {
   return (bool)((QTextFragment*)this_)->operator==(*o);
@@ -55,7 +55,7 @@ bool C_ZNK13QTextFragmenteqERKS_(void *this_, QTextFragment* o) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:314
-// [1] bool operator!=(const class QTextFragment &)
+// [1] bool operator!=(const QTextFragment &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QTextFragmentneERKS_(void *this_, QTextFragment* o) {
   return (bool)((QTextFragment*)this_)->operator!=(*o);
@@ -63,7 +63,7 @@ bool C_ZNK13QTextFragmentneERKS_(void *this_, QTextFragment* o) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:315
-// [1] bool operator<(const class QTextFragment &)
+// [1] bool operator<(const QTextFragment &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QTextFragmentltERKS_(void *this_, QTextFragment* o) {
   return (bool)((QTextFragment*)this_)->operator<(*o);

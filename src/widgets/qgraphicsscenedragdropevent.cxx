@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQGraphicsSceneDragDropEvent : public QGraphicsSceneDragDropEvent {
 public:
   virtual ~MyQGraphicsSceneDragDropEvent() {}
-// void QGraphicsSceneDragDropEvent(enum QEvent::Type)
+// void QGraphicsSceneDragDropEvent(QEvent::Type)
 MyQGraphicsSceneDragDropEvent(QEvent::Type type_) : QGraphicsSceneDragDropEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:252
-// [-2] void QGraphicsSceneDragDropEvent(enum QEvent::Type)
+// [-2] void QGraphicsSceneDragDropEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type_) {
   return  new QGraphicsSceneDragDropEvent(type_);
@@ -47,7 +47,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:256
-// [-2] void setPos(const class QPointF &)
+// [-2] void setPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneDragDropEvent*)this_)->setPos(*pos);
@@ -64,7 +64,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:259
-// [-2] void setScenePos(const class QPointF &)
+// [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
   ((QGraphicsSceneDragDropEvent*)this_)->setScenePos(*pos);
@@ -81,7 +81,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:262
-// [-2] void setScreenPos(const class QPoint &)
+// [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
   ((QGraphicsSceneDragDropEvent*)this_)->setScreenPos(*pos);
@@ -185,7 +185,7 @@ void* C_ZNK27QGraphicsSceneDragDropEvent6sourceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:281
-// [-2] void setSource(class QWidget *)
+// [-2] void setSource(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent9setSourceEP7QWidget(void *this_, QWidget * source) {
   ((QGraphicsSceneDragDropEvent*)this_)->setSource(source);
@@ -201,7 +201,7 @@ void* C_ZNK27QGraphicsSceneDragDropEvent8mimeDataEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:284
-// [-2] void setMimeData(const class QMimeData *)
+// [-2] void setMimeData(const QMimeData *)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent11setMimeDataEPK9QMimeData(void *this_, const QMimeData * data) {
   ((QGraphicsSceneDragDropEvent*)this_)->setMimeData(data);

@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQItemSelectionModel : public QItemSelectionModel {
 public:
   virtual ~MyQItemSelectionModel() {}
-// void QItemSelectionModel(class QAbstractItemModel *)
+// void QItemSelectionModel(QAbstractItemModel *)
 MyQItemSelectionModel(QAbstractItemModel * model) : QItemSelectionModel(model) {}
-// void QItemSelectionModel(class QAbstractItemModel *, class QObject *)
+// void QItemSelectionModel(QAbstractItemModel *, QObject *)
 MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelectionModel(model, parent) {}
 // Protected Visibility=Default Availability=Available
-// void emitSelectionChanged(const class QItemSelection &, const class QItemSelection &)
+// void emitSelectionChanged(const QItemSelection &, const QItemSelection &)
   virtual void emitSelectionChanged(const QItemSelection & newSelection, const QItemSelection & oldSelection) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"emitSelectionChanged", &handled, 2, (uint64_t)&newSelection, (uint64_t)&oldSelection, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelec
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:212
-// [-2] void emitSelectionChanged(const class QItemSelection &, const class QItemSelection &)
+// [-2] void emitSelectionChanged(const QItemSelection &, const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_(void *this_, QItemSelection* newSelection, QItemSelection* oldSelection) {
   ((QItemSelectionModel*)this_)->QItemSelectionModel::emitSelectionChanged(*newSelection, *oldSelection);
@@ -52,7 +52,7 @@ void* C_ZNK19QItemSelectionModel10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:167
-// [-2] void QItemSelectionModel(class QAbstractItemModel *)
+// [-2] void QItemSelectionModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModel(QAbstractItemModel * model) {
   auto _nilp = (MyQItemSelectionModel*)(0);
@@ -61,7 +61,7 @@ void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModel(QAbstractItemModel * mod
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:168
-// [-2] void QItemSelectionModel(class QAbstractItemModel *, class QObject *)
+// [-2] void QItemSelectionModel(QAbstractItemModel *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
   auto _nilp = (MyQItemSelectionModel*)(0);
@@ -86,7 +86,7 @@ return new QModelIndex(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:173
-// [1] bool isSelected(const class QModelIndex &)
+// [1] bool isSelected(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QItemSelectionModel10isSelectedERK11QModelIndex(void *this_, QModelIndex* index) {
   return (bool)((QItemSelectionModel*)this_)->isSelected(*index);
@@ -94,7 +94,7 @@ bool C_ZNK19QItemSelectionModel10isSelectedERK11QModelIndex(void *this_, QModelI
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:174
-// [1] bool isRowSelected(int, const class QModelIndex &)
+// [1] bool isRowSelected(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QItemSelectionModel13isRowSelectedEiRK11QModelIndex(void *this_, int row, QModelIndex* parent) {
   return (bool)((QItemSelectionModel*)this_)->isRowSelected(row, *parent);
@@ -102,7 +102,7 @@ bool C_ZNK19QItemSelectionModel13isRowSelectedEiRK11QModelIndex(void *this_, int
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:175
-// [1] bool isColumnSelected(int, const class QModelIndex &)
+// [1] bool isColumnSelected(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QItemSelectionModel16isColumnSelectedEiRK11QModelIndex(void *this_, int column, QModelIndex* parent) {
   return (bool)((QItemSelectionModel*)this_)->isColumnSelected(column, *parent);
@@ -110,7 +110,7 @@ bool C_ZNK19QItemSelectionModel16isColumnSelectedEiRK11QModelIndex(void *this_, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:177
-// [1] bool rowIntersectsSelection(int, const class QModelIndex &)
+// [1] bool rowIntersectsSelection(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QItemSelectionModel22rowIntersectsSelectionEiRK11QModelIndex(void *this_, int row, QModelIndex* parent) {
   return (bool)((QItemSelectionModel*)this_)->rowIntersectsSelection(row, *parent);
@@ -118,7 +118,7 @@ bool C_ZNK19QItemSelectionModel22rowIntersectsSelectionEiRK11QModelIndex(void *t
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:178
-// [1] bool columnIntersectsSelection(int, const class QModelIndex &)
+// [1] bool columnIntersectsSelection(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QItemSelectionModel25columnIntersectsSelectionEiRK11QModelIndex(void *this_, int column, QModelIndex* parent) {
   return (bool)((QItemSelectionModel*)this_)->columnIntersectsSelection(column, *parent);
@@ -199,7 +199,7 @@ void* C_ZN19QItemSelectionModel5modelEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtCore/qitemselectionmodel.h:191
-// [-2] void setModel(class QAbstractItemModel *)
+// [-2] void setModel(QAbstractItemModel *)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
@@ -209,7 +209,7 @@ void C_ZN19QItemSelectionModel8setModelEP18QAbstractItemModel(void *this_, QAbst
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:194
-// [-2] void setCurrentIndex(const class QModelIndex &, class QItemSelectionModel::SelectionFlags)
+// [-2] void setCurrentIndex(const QModelIndex &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel15setCurrentIndexERK11QModelIndex6QFlagsINS_13SelectionFlagEE(void *this_, QModelIndex* index, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QItemSelectionModel*)this_)->setCurrentIndex(*index, command);
@@ -217,7 +217,7 @@ void C_ZN19QItemSelectionModel15setCurrentIndexERK11QModelIndex6QFlagsINS_13Sele
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:195
-// [-2] void select(const class QModelIndex &, class QItemSelectionModel::SelectionFlags)
+// [-2] void select(const QModelIndex &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel6selectERK11QModelIndex6QFlagsINS_13SelectionFlagEE(void *this_, QModelIndex* index, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QItemSelectionModel*)this_)->select(*index, command);
@@ -225,7 +225,7 @@ void C_ZN19QItemSelectionModel6selectERK11QModelIndex6QFlagsINS_13SelectionFlagE
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:196
-// [-2] void select(const class QItemSelection &, class QItemSelectionModel::SelectionFlags)
+// [-2] void select(const QItemSelection &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel6selectERK14QItemSelection6QFlagsINS_13SelectionFlagEE(void *this_, QItemSelection* selection, QFlags<QItemSelectionModel::SelectionFlag> command) {
   ((QItemSelectionModel*)this_)->select(*selection, command);
@@ -268,7 +268,7 @@ void C_ZN19QItemSelectionModel17clearCurrentIndexEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:204
-// [-2] void selectionChanged(const class QItemSelection &, const class QItemSelection &)
+// [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSelection* selected, QItemSelection* deselected) {
   ((QItemSelectionModel*)this_)->selectionChanged(*selected, *deselected);
@@ -276,7 +276,7 @@ void C_ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(void *thi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:205
-// [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
+// [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
   ((QItemSelectionModel*)this_)->currentChanged(*current, *previous);
@@ -284,7 +284,7 @@ void C_ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:206
-// [-2] void currentRowChanged(const class QModelIndex &, const class QModelIndex &)
+// [-2] void currentRowChanged(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
   ((QItemSelectionModel*)this_)->currentRowChanged(*current, *previous);
@@ -292,7 +292,7 @@ void C_ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(void *this_
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:207
-// [-2] void currentColumnChanged(const class QModelIndex &, const class QModelIndex &)
+// [-2] void currentColumnChanged(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {
   ((QItemSelectionModel*)this_)->currentColumnChanged(*current, *previous);
@@ -301,7 +301,7 @@ void C_ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(void *th
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtCore/qitemselectionmodel.h:208
-// [-2] void modelChanged(class QAbstractItemModel *)
+// [-2] void modelChanged(QAbstractItemModel *)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {

@@ -37,7 +37,7 @@ void C_ZN11QSGClipNodeD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:267
-// [-2] void setIsRectangular(_Bool)
+// [-2] void setIsRectangular(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGClipNode16setIsRectangularEb(void *this_, bool rectHint) {
   ((QSGClipNode*)this_)->setIsRectangular(rectHint);
@@ -53,7 +53,7 @@ bool C_ZNK11QSGClipNode13isRectangularEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:270
-// [-2] void setClipRect(const class QRectF &)
+// [-2] void setClipRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGClipNode11setClipRectERK6QRectF(void *this_, QRectF* arg0) {
   ((QSGClipNode*)this_)->setClipRect(*arg0);

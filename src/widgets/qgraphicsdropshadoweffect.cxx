@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsDropShadowEffect : public QGraphicsDropShadowEffect {
 public:
   virtual ~MyQGraphicsDropShadowEffect() {}
-// void QGraphicsDropShadowEffect(class QObject *)
+// void QGraphicsDropShadowEffect(QObject *)
 MyQGraphicsDropShadowEffect(QObject * parent) : QGraphicsDropShadowEffect(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void draw(class QPainter *)
+// void draw(QPainter *)
   virtual void draw(QPainter * painter) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQGraphicsDropShadowEffect(QObject * parent) : QGraphicsDropShadowEffect(parent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:244
-// [-2] void draw(class QPainter *)
+// [-2] void draw(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsDropShadowEffect4drawEP8QPainter(void *this_, QPainter * painter) {
   ((QGraphicsDropShadowEffect*)this_)->QGraphicsDropShadowEffect::draw(painter);
@@ -51,7 +51,7 @@ void* C_ZNK25QGraphicsDropShadowEffect10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:205
-// [-2] void QGraphicsDropShadowEffect(class QObject *)
+// [-2] void QGraphicsDropShadowEffect(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QGraphicsDropShadowEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsDropShadowEffect*)(0);
@@ -67,7 +67,7 @@ void C_ZN25QGraphicsDropShadowEffectD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:208
-// [32] QRectF boundingRectFor(const class QRectF &)
+// [32] QRectF boundingRectFor(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QGraphicsDropShadowEffect15boundingRectForERK6QRectF(void *this_, QRectF* rect) {
   auto rv = ((QGraphicsDropShadowEffect*)this_)->boundingRectFor(*rect);
@@ -118,7 +118,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:221
-// [-2] void setOffset(const class QPointF &)
+// [-2] void setOffset(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsDropShadowEffect9setOffsetERK7QPointF(void *this_, QPointF* ofs) {
   ((QGraphicsDropShadowEffect*)this_)->setOffset(*ofs);
@@ -166,7 +166,7 @@ void C_ZN25QGraphicsDropShadowEffect13setBlurRadiusEd(void *this_, qreal blurRad
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:236
-// [-2] void setColor(const class QColor &)
+// [-2] void setColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsDropShadowEffect8setColorERK6QColor(void *this_, QColor* color) {
   ((QGraphicsDropShadowEffect*)this_)->setColor(*color);
@@ -174,7 +174,7 @@ void C_ZN25QGraphicsDropShadowEffect8setColorERK6QColor(void *this_, QColor* col
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:239
-// [-2] void offsetChanged(const class QPointF &)
+// [-2] void offsetChanged(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(void *this_, QPointF* offset) {
   ((QGraphicsDropShadowEffect*)this_)->offsetChanged(*offset);
@@ -190,7 +190,7 @@ void C_ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(void *this_, qreal blu
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:241
-// [-2] void colorChanged(const class QColor &)
+// [-2] void colorChanged(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(void *this_, QColor* color) {
   ((QGraphicsDropShadowEffect*)this_)->colorChanged(*color);

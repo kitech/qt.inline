@@ -18,9 +18,9 @@ public:
   virtual ~MyQImageWriter() {}
 // void QImageWriter()
 MyQImageWriter() : QImageWriter() {}
-// void QImageWriter(class QIODevice *, const class QByteArray &)
+// void QImageWriter(QIODevice *, const QByteArray &)
 MyQImageWriter(QIODevice * device, const QByteArray & format) : QImageWriter(device, format) {}
-// void QImageWriter(const class QString &, const class QByteArray &)
+// void QImageWriter(const QString &, const QByteArray &)
 MyQImageWriter(const QString & fileName, const QByteArray & format) : QImageWriter(fileName, format) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZN12QImageWriterC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:68
-// [-2] void QImageWriter(class QIODevice *, const class QByteArray &)
+// [-2] void QImageWriter(QIODevice *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QImageWriter(device, *format);
@@ -42,7 +42,7 @@ void* C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteAr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:69
-// [-2] void QImageWriter(const class QString &, const class QByteArray &)
+// [-2] void QImageWriter(const QString &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageWriterC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QImageWriter(*fileName, *format);
@@ -57,7 +57,7 @@ void C_ZN12QImageWriterD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:72
-// [-2] void setFormat(const class QByteArray &)
+// [-2] void setFormat(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QImageWriter*)this_)->setFormat(*format);
@@ -74,7 +74,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:75
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QImageWriter*)this_)->setDevice(device);
@@ -90,7 +90,7 @@ void* C_ZNK12QImageWriter6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:78
-// [-2] void setFileName(const class QString &)
+// [-2] void setFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QImageWriter*)this_)->setFileName(*fileName);
@@ -156,7 +156,7 @@ float C_ZNK12QImageWriter5gammaEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtGui/qimagewriter.h:90
-// [-2] void setSubType(const class QByteArray &)
+// [-2] void setSubType(const QByteArray &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter10setSubTypeERK10QByteArray(void *this_, QByteArray* type_) {
@@ -179,7 +179,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:94
-// [-2] void setOptimizedWrite(_Bool)
+// [-2] void setOptimizedWrite(bool)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter17setOptimizedWriteEb(void *this_, bool optimize) {
@@ -201,7 +201,7 @@ bool C_ZNK12QImageWriter14optimizedWriteEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:97
-// [-2] void setProgressiveScanWrite(_Bool)
+// [-2] void setProgressiveScanWrite(bool)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter23setProgressiveScanWriteEb(void *this_, bool progressive) {
@@ -234,7 +234,7 @@ QImageIOHandler::Transformations C_ZNK12QImageWriter14transformationEv(void *thi
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:101
-// [-2] void setTransformation(class QImageIOHandler::Transformations)
+// [-2] void setTransformation(QImageIOHandler::Transformations)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter17setTransformationE6QFlagsIN15QImageIOHandler14TransformationEE(void *this_, QFlags<QImageIOHandler::Transformation> orientation) {
@@ -244,7 +244,7 @@ void C_ZN12QImageWriter17setTransformationE6QFlagsIN15QImageIOHandler14Transform
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:104
-// [-2] void setDescription(const class QString &)
+// [-2] void setDescription(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter14setDescriptionERK7QString(void *this_, QString* description) {
   ((QImageWriter*)this_)->setDescription(*description);
@@ -262,7 +262,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtGui/qimagewriter.h:107
-// [-2] void setText(const class QString &, const class QString &)
+// [-2] void setText(const QString &, const QString &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageWriter7setTextERK7QStringS2_(void *this_, QString* key, QString* text) {
@@ -280,7 +280,7 @@ bool C_ZNK12QImageWriter8canWriteEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:110
-// [1] bool write(const class QImage &)
+// [1] bool write(const QImage &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QImageWriter5writeERK6QImage(void *this_, QImage* image) {
   return (bool)((QImageWriter*)this_)->write(*image);
@@ -306,7 +306,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qimagewriter.h:115
-// [1] bool supportsOption(class QImageIOHandler::ImageOption)
+// [1] bool supportsOption(QImageIOHandler::ImageOption)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageWriter14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {

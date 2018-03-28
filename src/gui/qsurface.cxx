@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQSurface : public QSurface {
 public:
   virtual ~MyQSurface() {}
-// void QSurface(enum QSurface::SurfaceClass)
+// void QSurface(QSurface::SurfaceClass)
 MyQSurface(QSurface::SurfaceClass type_) : QSurface(type_) {}
 };
 

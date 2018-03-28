@@ -25,7 +25,7 @@ MyQTransform() : QTransform() {}
 MyQTransform(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) : QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33) {}
 // void QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
 MyQTransform(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) : QTransform(h11, h12, h21, h22, dx, dy) {}
-// void QTransform(const class QMatrix &)
+// void QTransform(const QMatrix &)
 MyQTransform(const QMatrix & mtx) : QTransform(mtx) {}
 };
 
@@ -63,7 +63,7 @@ void* C_ZN10QTransformC2Edddddd(qreal h11, qreal h12, qreal h21, qreal h22, qrea
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:76
-// [-2] void QTransform(const class QMatrix &)
+// [-2] void QTransform(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformC2ERK7QMatrix(QMatrix* mtx) {
   return  new QTransform(*mtx);
@@ -71,7 +71,7 @@ void* C_ZN10QTransformC2ERK7QMatrix(QMatrix* mtx) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:80
-// [88] QTransform & operator=(class QTransform &&)
+// [88] QTransform & operator=(QTransform &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformaSEOS_(void *this_, QTransform && other) {
   auto& rv = ((QTransform*)this_)->operator=(other);
@@ -80,7 +80,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:82
-// [88] QTransform & operator=(const class QTransform &)
+// [88] QTransform & operator=(const QTransform &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformaSERKS_(void *this_, QTransform* arg0) {
   auto& rv = ((QTransform*)this_)->operator=(*arg0);
@@ -257,7 +257,7 @@ void C_ZN10QTransform9setMatrixEddddddddd(void *this_, qreal m11, qreal m12, qre
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:119
-// [88] QTransform inverted(_Bool *)
+// [88] QTransform inverted(bool *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform8invertedEPb(void *this_, bool * invertible) {
   auto rv = ((QTransform*)this_)->inverted(invertible);
@@ -329,7 +329,7 @@ return &rv;
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:129
-// [1] bool squareToQuad(const class QPolygonF &, class QTransform &)
+// [1] bool squareToQuad(const QPolygonF &, QTransform &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(QPolygonF* square, QTransform* result) {
   return (bool)QTransform::squareToQuad(*square, *result);
@@ -337,7 +337,7 @@ bool C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(QPolygonF* square, QTransfor
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:130
-// [1] bool quadToSquare(const class QPolygonF &, class QTransform &)
+// [1] bool quadToSquare(const QPolygonF &, QTransform &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(QPolygonF* quad, QTransform* result) {
   return (bool)QTransform::quadToSquare(*quad, *result);
@@ -345,7 +345,7 @@ bool C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(QPolygonF* quad, QTransform*
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:131
-// [1] bool quadToQuad(const class QPolygonF &, const class QPolygonF &, class QTransform &)
+// [1] bool quadToQuad(const QPolygonF &, const QPolygonF &, QTransform &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(QPolygonF* one, QPolygonF* two, QTransform* result) {
   return (bool)QTransform::quadToQuad(*one, *two, *result);
@@ -353,7 +353,7 @@ bool C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(QPolygonF* one, QPolygonF* 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:135
-// [1] bool operator==(const class QTransform &)
+// [1] bool operator==(const QTransform &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTransformeqERKS_(void *this_, QTransform* arg0) {
   return (bool)((QTransform*)this_)->operator==(*arg0);
@@ -361,7 +361,7 @@ bool C_ZNK10QTransformeqERKS_(void *this_, QTransform* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:136
-// [1] bool operator!=(const class QTransform &)
+// [1] bool operator!=(const QTransform &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTransformneERKS_(void *this_, QTransform* arg0) {
   return (bool)((QTransform*)this_)->operator!=(*arg0);
@@ -369,7 +369,7 @@ bool C_ZNK10QTransformneERKS_(void *this_, QTransform* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:138
-// [88] QTransform & operator*=(const class QTransform &)
+// [88] QTransform & operator*=(const QTransform &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformmLERKS_(void *this_, QTransform* arg0) {
   auto& rv = ((QTransform*)this_)->operator*=(*arg0);
@@ -378,7 +378,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:139
-// [88] QTransform operator*(const class QTransform &)
+// [88] QTransform operator*(const QTransform &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransformmlERKS_(void *this_, QTransform* o) {
   auto rv = ((QTransform*)this_)->operator*(*o);
@@ -395,7 +395,7 @@ void C_ZN10QTransform5resetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:144
-// [8] QPoint map(const class QPoint &)
+// [8] QPoint map(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QTransform*)this_)->map(*p);
@@ -404,7 +404,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:145
-// [16] QPointF map(const class QPointF &)
+// [16] QPointF map(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK7QPointF(void *this_, QPointF* p) {
   auto rv = ((QTransform*)this_)->map(*p);
@@ -413,7 +413,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:146
-// [16] QLine map(const class QLine &)
+// [16] QLine map(const QLine &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK5QLine(void *this_, QLine* l) {
   auto rv = ((QTransform*)this_)->map(*l);
@@ -422,7 +422,7 @@ return new QLine(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:147
-// [32] QLineF map(const class QLineF &)
+// [32] QLineF map(const QLineF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK6QLineF(void *this_, QLineF* l) {
   auto rv = ((QTransform*)this_)->map(*l);
@@ -431,7 +431,7 @@ return new QLineF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:148
-// [8] QPolygonF map(const class QPolygonF &)
+// [8] QPolygonF map(const QPolygonF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK9QPolygonF(void *this_, QPolygonF* a) {
   auto rv = ((QTransform*)this_)->map(*a);
@@ -440,7 +440,7 @@ return new QPolygonF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:149
-// [8] QPolygon map(const class QPolygon &)
+// [8] QPolygon map(const QPolygon &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK8QPolygon(void *this_, QPolygon* a) {
   auto rv = ((QTransform*)this_)->map(*a);
@@ -449,7 +449,7 @@ return new QPolygon(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:150
-// [8] QRegion map(const class QRegion &)
+// [8] QRegion map(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK7QRegion(void *this_, QRegion* r) {
   auto rv = ((QTransform*)this_)->map(*r);
@@ -458,7 +458,7 @@ return new QRegion(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:151
-// [8] QPainterPath map(const class QPainterPath &)
+// [8] QPainterPath map(const QPainterPath &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform3mapERK12QPainterPath(void *this_, QPainterPath* p) {
   auto rv = ((QTransform*)this_)->map(*p);
@@ -467,7 +467,7 @@ return new QPainterPath(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:152
-// [8] QPolygon mapToPolygon(const class QRect &)
+// [8] QPolygon mapToPolygon(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform12mapToPolygonERK5QRect(void *this_, QRect* r) {
   auto rv = ((QTransform*)this_)->mapToPolygon(*r);
@@ -476,7 +476,7 @@ return new QPolygon(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:153
-// [16] QRect mapRect(const class QRect &)
+// [16] QRect mapRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform7mapRectERK5QRect(void *this_, QRect* arg0) {
   auto rv = ((QTransform*)this_)->mapRect(*arg0);
@@ -485,7 +485,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:154
-// [32] QRectF mapRect(const class QRectF &)
+// [32] QRectF mapRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTransform7mapRectERK6QRectF(void *this_, QRectF* arg0) {
   auto rv = ((QTransform*)this_)->mapRect(*arg0);

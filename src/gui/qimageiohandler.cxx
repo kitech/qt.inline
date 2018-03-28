@@ -37,7 +37,7 @@ void C_ZN15QImageIOHandlerD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:65
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QImageIOHandler9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QImageIOHandler*)this_)->setDevice(device);
@@ -53,7 +53,7 @@ void* C_ZNK15QImageIOHandler6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:68
-// [-2] void setFormat(const class QByteArray &)
+// [-2] void setFormat(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QImageIOHandler9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QImageIOHandler*)this_)->setFormat(*format);
@@ -61,7 +61,7 @@ void C_ZN15QImageIOHandler9setFormatERK10QByteArray(void *this_, QByteArray* for
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:69
-// [-2] void setFormat(const class QByteArray &)
+// [-2] void setFormat(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK15QImageIOHandler9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QImageIOHandler*)this_)->setFormat(*format);
@@ -95,7 +95,7 @@ bool C_ZNK15QImageIOHandler7canReadEv(void *this_) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:75
-// [1] bool read(class QImage *)
+// [1] bool read(QImage *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QImageIOHandler4readEP6QImage(void *this_, QImage * image) {
   return (bool)((QImageIOHandler*)this_)->read(image);
@@ -103,7 +103,7 @@ bool C_ZN15QImageIOHandler4readEP6QImage(void *this_, QImage * image) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:76
-// [1] bool write(const class QImage &)
+// [1] bool write(const QImage &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QImageIOHandler5writeERK6QImage(void *this_, QImage* image) {
   return (bool)((QImageIOHandler*)this_)->write(*image);
@@ -111,7 +111,7 @@ bool C_ZN15QImageIOHandler5writeERK6QImage(void *this_, QImage* image) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:115
-// [16] QVariant option(enum QImageIOHandler::ImageOption)
+// [16] QVariant option(QImageIOHandler::ImageOption)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QImageIOHandler6optionENS_11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
   auto rv = ((QImageIOHandler*)this_)->option(option);
@@ -120,7 +120,7 @@ return new QVariant(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:116
-// [-2] void setOption(enum QImageIOHandler::ImageOption, const class QVariant &)
+// [-2] void setOption(QImageIOHandler::ImageOption, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QImageIOHandler9setOptionENS_11ImageOptionERK8QVariant(void *this_, QImageIOHandler::ImageOption option, QVariant* value) {
   ((QImageIOHandler*)this_)->setOption(option, *value);
@@ -128,7 +128,7 @@ void C_ZN15QImageIOHandler9setOptionENS_11ImageOptionERK8QVariant(void *this_, Q
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:117
-// [1] bool supportsOption(enum QImageIOHandler::ImageOption)
+// [1] bool supportsOption(QImageIOHandler::ImageOption)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QImageIOHandler14supportsOptionENS_11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
   return (bool)((QImageIOHandler*)this_)->supportsOption(option);

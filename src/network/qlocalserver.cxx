@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQLocalServer : public QLocalServer {
 public:
   virtual ~MyQLocalServer() {}
-// void QLocalServer(class QObject *)
+// void QLocalServer(QObject *)
 MyQLocalServer(QObject * parent) : QLocalServer(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void incomingConnection(quintptr)
@@ -59,7 +59,7 @@ void C_ZN12QLocalServer13newConnectionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:74
-// [-2] void QLocalServer(class QObject *)
+// [-2] void QLocalServer(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalServerC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQLocalServer*)(0);
@@ -108,7 +108,7 @@ bool C_ZNK12QLocalServer11isListeningEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:81
-// [1] bool listen(const class QString &)
+// [1] bool listen(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer6listenERK7QString(void *this_, QString* name) {
   return (bool)((QLocalServer*)this_)->listen(*name);
@@ -162,7 +162,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtNetwork/qlocalserver.h:87
-// [1] bool removeServer(const class QString &)
+// [1] bool removeServer(const QString &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer12removeServerERK7QString(QString* name) {
@@ -188,7 +188,7 @@ void C_ZN12QLocalServer24setMaxPendingConnectionsEi(void *this_, int numConnecti
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalserver.h:90
-// [1] bool waitForNewConnection(int, _Bool *)
+// [1] bool waitForNewConnection(int, bool *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalServer20waitForNewConnectionEiPb(void *this_, int msec, bool * timedOut) {
   return (bool)((QLocalServer*)this_)->waitForNewConnection(msec, timedOut);

@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQTimeEdit : public QTimeEdit {
 public:
   virtual ~MyQTimeEdit() {}
-// void QTimeEdit(class QWidget *)
+// void QTimeEdit(QWidget *)
 MyQTimeEdit(QWidget * parent) : QTimeEdit(parent) {}
-// void QTimeEdit(const class QTime &, class QWidget *)
+// void QTimeEdit(const QTime &, QWidget *)
 MyQTimeEdit(const QTime & time, QWidget * parent) : QTimeEdit(time, parent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK9QTimeEdit10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:207
-// [-2] void QTimeEdit(class QWidget *)
+// [-2] void QTimeEdit(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeEditC2EP7QWidget(QWidget * parent) {
   return  new QTimeEdit(parent);
@@ -40,7 +40,7 @@ void* C_ZN9QTimeEditC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:208
-// [-2] void QTimeEdit(const class QTime &, class QWidget *)
+// [-2] void QTimeEdit(const QTime &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeEditC2ERK5QTimeP7QWidget(QTime* time, QWidget * parent) {
   return  new QTimeEdit(*time, parent);
@@ -55,7 +55,7 @@ void C_ZN9QTimeEditD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:212
-// [-2] void userTimeChanged(const class QTime &)
+// [-2] void userTimeChanged(const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeEdit15userTimeChangedERK5QTime(void *this_, QTime* time) {
   ((QTimeEdit*)this_)->userTimeChanged(*time);

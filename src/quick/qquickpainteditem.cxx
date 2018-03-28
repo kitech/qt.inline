@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQQuickPaintedItem : public QQuickPaintedItem {
 public:
   virtual ~MyQQuickPaintedItem() {}
-// void QQuickPaintedItem(class QQuickItem *)
+// void QQuickPaintedItem(QQuickItem *)
 MyQQuickPaintedItem(QQuickItem * parent) : QQuickPaintedItem(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void releaseResources()
@@ -50,7 +50,7 @@ void* C_ZNK17QQuickPaintedItem10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:60
-// [-2] void QQuickPaintedItem(class QQuickItem *)
+// [-2] void QQuickPaintedItem(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQuickPaintedItemC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickPaintedItem*)(0);
@@ -66,7 +66,7 @@ void C_ZN17QQuickPaintedItemD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:75
-// [-2] void update(const class QRect &)
+// [-2] void update(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem6updateERK5QRect(void *this_, QRect* rect) {
   ((QQuickPaintedItem*)this_)->update(*rect);
@@ -82,7 +82,7 @@ bool C_ZNK17QQuickPaintedItem14opaquePaintingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:78
-// [-2] void setOpaquePainting(_Bool)
+// [-2] void setOpaquePainting(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem17setOpaquePaintingEb(void *this_, bool opaque) {
   ((QQuickPaintedItem*)this_)->setOpaquePainting(opaque);
@@ -98,7 +98,7 @@ bool C_ZNK17QQuickPaintedItem12antialiasingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:81
-// [-2] void setAntialiasing(_Bool)
+// [-2] void setAntialiasing(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem15setAntialiasingEb(void *this_, bool enable) {
   ((QQuickPaintedItem*)this_)->setAntialiasing(enable);
@@ -114,7 +114,7 @@ bool C_ZNK17QQuickPaintedItem6mipmapEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:84
-// [-2] void setMipmap(_Bool)
+// [-2] void setMipmap(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem9setMipmapEb(void *this_, bool enable) {
   ((QQuickPaintedItem*)this_)->setMipmap(enable);
@@ -131,7 +131,7 @@ return new QQuickPaintedItem::PerformanceHints(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:87
-// [-2] void setPerformanceHint(enum QQuickPaintedItem::PerformanceHint, _Bool)
+// [-2] void setPerformanceHint(QQuickPaintedItem::PerformanceHint, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem18setPerformanceHintENS_15PerformanceHintEb(void *this_, QQuickPaintedItem::PerformanceHint hint, bool enabled) {
   ((QQuickPaintedItem*)this_)->setPerformanceHint(hint, enabled);
@@ -165,7 +165,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:93
-// [-2] void setContentsSize(const class QSize &)
+// [-2] void setContentsSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem15setContentsSizeERK5QSize(void *this_, QSize* arg0) {
   ((QQuickPaintedItem*)this_)->setContentsSize(*arg0);
@@ -206,7 +206,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:100
-// [-2] void setTextureSize(const class QSize &)
+// [-2] void setTextureSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem14setTextureSizeERK5QSize(void *this_, QSize* size) {
   ((QQuickPaintedItem*)this_)->setTextureSize(*size);
@@ -223,7 +223,7 @@ return new QColor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:103
-// [-2] void setFillColor(const class QColor &)
+// [-2] void setFillColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem12setFillColorERK6QColor(void *this_, QColor* arg0) {
   ((QQuickPaintedItem*)this_)->setFillColor(*arg0);
@@ -239,7 +239,7 @@ QQuickPaintedItem::RenderTarget C_ZNK17QQuickPaintedItem12renderTargetEv(void *t
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:106
-// [-2] void setRenderTarget(enum QQuickPaintedItem::RenderTarget)
+// [-2] void setRenderTarget(QQuickPaintedItem::RenderTarget)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem15setRenderTargetENS_12RenderTargetE(void *this_, QQuickPaintedItem::RenderTarget target) {
   ((QQuickPaintedItem*)this_)->setRenderTarget(target);
@@ -247,7 +247,7 @@ void C_ZN17QQuickPaintedItem15setRenderTargetENS_12RenderTargetE(void *this_, QQ
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:108
-// [-2] void paint(class QPainter *)
+// [-2] void paint(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem5paintEP8QPainter(void *this_, QPainter * painter) {
   ((QQuickPaintedItem*)this_)->paint(painter);

@@ -19,9 +19,9 @@ public:
   virtual ~MyQXmlStreamAttribute() {}
 // void QXmlStreamAttribute()
 MyQXmlStreamAttribute() : QXmlStreamAttribute() {}
-// void QXmlStreamAttribute(const class QString &, const class QString &)
+// void QXmlStreamAttribute(const QString &, const QString &)
 MyQXmlStreamAttribute(const QString & qualifiedName, const QString & value) : QXmlStreamAttribute(qualifiedName, value) {}
-// void QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
+// void QXmlStreamAttribute(const QString &, const QString &, const QString &)
 MyQXmlStreamAttribute(const QString & namespaceUri, const QString & name, const QString & value) : QXmlStreamAttribute(namespaceUri, name, value) {}
 };
 
@@ -35,7 +35,7 @@ void* C_ZN19QXmlStreamAttributeC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:110
-// [-2] void QXmlStreamAttribute(const class QString &, const class QString &)
+// [-2] void QXmlStreamAttribute(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(QString* qualifiedName, QString* value) {
   return  new QXmlStreamAttribute(*qualifiedName, *value);
@@ -43,7 +43,7 @@ void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(QString* qualifiedName, QString*
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:112
-// [-2] void QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
+// [-2] void QXmlStreamAttribute(const QString &, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(QString* namespaceUri, QString* name, QString* value) {
   return  new QXmlStreamAttribute(*namespaceUri, *name, *value);
@@ -51,7 +51,7 @@ void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(QString* namespaceUri, QStrin
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:125
-// [80] QXmlStreamAttribute & operator=(class QXmlStreamAttribute &&)
+// [80] QXmlStreamAttribute & operator=(QXmlStreamAttribute &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeaSEOS_(void *this_, QXmlStreamAttribute && other) {
   auto& rv = ((QXmlStreamAttribute*)this_)->operator=(other);
@@ -60,7 +60,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:136
-// [80] QXmlStreamAttribute & operator=(const class QXmlStreamAttribute &)
+// [80] QXmlStreamAttribute & operator=(const QXmlStreamAttribute &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeaSERKS_(void *this_, QXmlStreamAttribute* arg0) {
   auto& rv = ((QXmlStreamAttribute*)this_)->operator=(*arg0);
@@ -132,7 +132,7 @@ bool C_ZNK19QXmlStreamAttribute9isDefaultEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:150
-// [1] bool operator==(const class QXmlStreamAttribute &)
+// [1] bool operator==(const QXmlStreamAttribute &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QXmlStreamAttributeeqERKS_(void *this_, QXmlStreamAttribute* other) {
   return (bool)((QXmlStreamAttribute*)this_)->operator==(*other);
@@ -140,7 +140,7 @@ bool C_ZNK19QXmlStreamAttributeeqERKS_(void *this_, QXmlStreamAttribute* other) 
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:155
-// [1] bool operator!=(const class QXmlStreamAttribute &)
+// [1] bool operator!=(const QXmlStreamAttribute &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QXmlStreamAttributeneERKS_(void *this_, QXmlStreamAttribute* other) {
   return (bool)((QXmlStreamAttribute*)this_)->operator!=(*other);

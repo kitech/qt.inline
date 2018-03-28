@@ -34,7 +34,7 @@ void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
 // Public static Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qstyleoption.h:671
-// [8] qreal levelOfDetailFromTransform(const class QTransform &)
+// [8] qreal levelOfDetailFromTransform(const QTransform &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 qreal C_ZN24QStyleOptionGraphicsItem26levelOfDetailFromTransformERK10QTransform(QTransform* worldTransform) {

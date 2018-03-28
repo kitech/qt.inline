@@ -100,7 +100,7 @@ bool C_ZNK13QMetaProperty12isResettableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:259
-// [1] bool isDesignable(const class QObject *)
+// [1] bool isDesignable(const QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty12isDesignableEPK7QObject(void *this_, const QObject * obj) {
   return (bool)((QMetaProperty*)this_)->isDesignable(obj);
@@ -108,7 +108,7 @@ bool C_ZNK13QMetaProperty12isDesignableEPK7QObject(void *this_, const QObject * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:260
-// [1] bool isScriptable(const class QObject *)
+// [1] bool isScriptable(const QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty12isScriptableEPK7QObject(void *this_, const QObject * obj) {
   return (bool)((QMetaProperty*)this_)->isScriptable(obj);
@@ -116,7 +116,7 @@ bool C_ZNK13QMetaProperty12isScriptableEPK7QObject(void *this_, const QObject * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:261
-// [1] bool isStored(const class QObject *)
+// [1] bool isStored(const QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty8isStoredEPK7QObject(void *this_, const QObject * obj) {
   return (bool)((QMetaProperty*)this_)->isStored(obj);
@@ -124,7 +124,7 @@ bool C_ZNK13QMetaProperty8isStoredEPK7QObject(void *this_, const QObject * obj) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:262
-// [1] bool isEditable(const class QObject *)
+// [1] bool isEditable(const QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty10isEditableEPK7QObject(void *this_, const QObject * obj) {
   return (bool)((QMetaProperty*)this_)->isEditable(obj);
@@ -132,7 +132,7 @@ bool C_ZNK13QMetaProperty10isEditableEPK7QObject(void *this_, const QObject * ob
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:263
-// [1] bool isUser(const class QObject *)
+// [1] bool isUser(const QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty6isUserEPK7QObject(void *this_, const QObject * obj) {
   return (bool)((QMetaProperty*)this_)->isUser(obj);
@@ -229,7 +229,7 @@ int C_ZNK13QMetaProperty8revisionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:277
-// [16] QVariant read(const class QObject *)
+// [16] QVariant read(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMetaProperty4readEPK7QObject(void *this_, const QObject * obj) {
   auto rv = ((QMetaProperty*)this_)->read(obj);
@@ -238,7 +238,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:278
-// [1] bool write(class QObject *, const class QVariant &)
+// [1] bool write(QObject *, const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty5writeEP7QObjectRK8QVariant(void *this_, QObject * obj, QVariant* value) {
   return (bool)((QMetaProperty*)this_)->write(obj, *value);
@@ -246,7 +246,7 @@ bool C_ZNK13QMetaProperty5writeEP7QObjectRK8QVariant(void *this_, QObject * obj,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:279
-// [1] bool reset(class QObject *)
+// [1] bool reset(QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty5resetEP7QObject(void *this_, QObject * obj) {
   return (bool)((QMetaProperty*)this_)->reset(obj);
@@ -267,7 +267,7 @@ return new QVariant(rv);
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtCore/qmetaobject.h:282
-// [1] bool writeOnGadget(void *, const class QVariant &)
+// [1] bool writeOnGadget(void *, const QVariant &)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMetaProperty13writeOnGadgetEPvRK8QVariant(void *this_, void * gadget, QVariant* value) {

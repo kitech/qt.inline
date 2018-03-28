@@ -37,7 +37,7 @@ void C_ZN26QQmlAbstractUrlInterceptorD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:60
-// [8] QUrl intercept(const class QUrl &, enum QQmlAbstractUrlInterceptor::DataType)
+// [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QQmlAbstractUrlInterceptor9interceptERK4QUrlNS_8DataTypeE(void *this_, QUrl* path, QQmlAbstractUrlInterceptor::DataType type_) {
   auto rv = ((QQmlAbstractUrlInterceptor*)this_)->intercept(*path, type_);

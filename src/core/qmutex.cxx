@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQMutex : public QMutex {
 public:
   virtual ~MyQMutex() {}
-// void QMutex(enum QMutex::RecursionMode)
+// void QMutex(QMutex::RecursionMode)
 MyQMutex(QMutex::RecursionMode mode) : QMutex(mode) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:130
-// [-2] void QMutex(enum QMutex::RecursionMode)
+// [-2] void QMutex(QMutex::RecursionMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QMutexC2ENS_13RecursionModeE(QMutex::RecursionMode mode) {
   return  new QMutex(mode);

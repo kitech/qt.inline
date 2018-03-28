@@ -30,7 +30,7 @@ void* C_ZN20QDnsDomainNameRecordC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:66
-// [8] QDnsDomainNameRecord & operator=(class QDnsDomainNameRecord &&)
+// [8] QDnsDomainNameRecord & operator=(QDnsDomainNameRecord &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordaSEOS_(void *this_, QDnsDomainNameRecord && other) {
   auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(other);
@@ -39,7 +39,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:68
-// [8] QDnsDomainNameRecord & operator=(const class QDnsDomainNameRecord &)
+// [8] QDnsDomainNameRecord & operator=(const QDnsDomainNameRecord &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordaSERKS_(void *this_, QDnsDomainNameRecord* other) {
   auto& rv = ((QDnsDomainNameRecord*)this_)->operator=(*other);
@@ -55,7 +55,7 @@ void C_ZN20QDnsDomainNameRecordD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:71
-// [-2] void swap(class QDnsDomainNameRecord &)
+// [-2] void swap(QDnsDomainNameRecord &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QDnsDomainNameRecord4swapERS_(void *this_, QDnsDomainNameRecord* other) {
   ((QDnsDomainNameRecord*)this_)->swap(*other);

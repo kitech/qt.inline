@@ -17,9 +17,9 @@
 class Q_DECL_EXPORT MyQJsonValue : public QJsonValue {
 public:
   virtual ~MyQJsonValue() {}
-// void QJsonValue(enum QJsonValue::Type)
+// void QJsonValue(QJsonValue::Type)
 MyQJsonValue(QJsonValue::Type arg0) : QJsonValue(arg0) {}
-// void QJsonValue(_Bool)
+// void QJsonValue(bool)
 MyQJsonValue(bool b) : QJsonValue(b) {}
 // void QJsonValue(double)
 MyQJsonValue(double n) : QJsonValue(n) {}
@@ -27,21 +27,21 @@ MyQJsonValue(double n) : QJsonValue(n) {}
 MyQJsonValue(int n) : QJsonValue(n) {}
 // void QJsonValue(qint64)
 MyQJsonValue(qint64 n) : QJsonValue(n) {}
-// void QJsonValue(const class QString &)
+// void QJsonValue(const QString &)
 MyQJsonValue(const QString & s) : QJsonValue(s) {}
-// void QJsonValue(class QLatin1String)
+// void QJsonValue(QLatin1String)
 MyQJsonValue(QLatin1String s) : QJsonValue(s) {}
 // void QJsonValue(const char *)
 MyQJsonValue(const char * s) : QJsonValue(s) {}
-// void QJsonValue(const class QJsonArray &)
+// void QJsonValue(const QJsonArray &)
 MyQJsonValue(const QJsonArray & a) : QJsonValue(a) {}
-// void QJsonValue(const class QJsonObject &)
+// void QJsonValue(const QJsonObject &)
 MyQJsonValue(const QJsonObject & o) : QJsonValue(o) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:76
-// [-2] void QJsonValue(enum QJsonValue::Type)
+// [-2] void QJsonValue(QJsonValue::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueC2ENS_4TypeE(QJsonValue::Type arg0) {
   return  new QJsonValue(arg0);
@@ -49,7 +49,7 @@ void* C_ZN10QJsonValueC2ENS_4TypeE(QJsonValue::Type arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:77
-// [-2] void QJsonValue(_Bool)
+// [-2] void QJsonValue(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueC2Eb(bool b) {
   return  new QJsonValue(b);
@@ -81,7 +81,7 @@ void* C_ZN10QJsonValueC2Ex(qint64 n) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:81
-// [-2] void QJsonValue(const class QString &)
+// [-2] void QJsonValue(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueC2ERK7QString(QString* s) {
   return  new QJsonValue(*s);
@@ -89,7 +89,7 @@ void* C_ZN10QJsonValueC2ERK7QString(QString* s) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:82
-// [-2] void QJsonValue(class QLatin1String)
+// [-2] void QJsonValue(QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueC2E13QLatin1String(QLatin1String* s) {
   return  new QJsonValue(*s);
@@ -108,7 +108,7 @@ void* C_ZN10QJsonValueC2EPKc(const char * s) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:87
-// [-2] void QJsonValue(const class QJsonArray &)
+// [-2] void QJsonValue(const QJsonArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueC2ERK10QJsonArray(QJsonArray* a) {
   return  new QJsonValue(*a);
@@ -116,7 +116,7 @@ void* C_ZN10QJsonValueC2ERK10QJsonArray(QJsonArray* a) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:88
-// [-2] void QJsonValue(const class QJsonObject &)
+// [-2] void QJsonValue(const QJsonObject &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueC2ERK11QJsonObject(QJsonObject* o) {
   return  new QJsonValue(*o);
@@ -131,7 +131,7 @@ void C_ZN10QJsonValueD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:93
-// [24] QJsonValue & operator=(const class QJsonValue &)
+// [24] QJsonValue & operator=(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueaSERKS_(void *this_, QJsonValue* other) {
   auto& rv = ((QJsonValue*)this_)->operator=(*other);
@@ -140,7 +140,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:105
-// [24] QJsonValue & operator=(class QJsonValue &&)
+// [24] QJsonValue & operator=(QJsonValue &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValueaSEOS_(void *this_, QJsonValue && other) {
   auto& rv = ((QJsonValue*)this_)->operator=(other);
@@ -150,7 +150,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qjsonvalue.h:111
-// [-2] void swap(class QJsonValue &)
+// [-2] void swap(QJsonValue &)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QJsonValue4swapERS_(void *this_, QJsonValue* other) {
@@ -160,7 +160,7 @@ void C_ZN10QJsonValue4swapERS_(void *this_, QJsonValue* other) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:118
-// [24] QJsonValue fromVariant(const class QVariant &)
+// [24] QJsonValue fromVariant(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonValue11fromVariantERK8QVariant(QVariant* variant) {
   auto rv = QJsonValue::fromVariant(*variant);
@@ -242,7 +242,7 @@ bool C_ZNK10QJsonValue11isUndefinedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:130
-// [1] bool toBool(_Bool)
+// [1] bool toBool(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QJsonValue6toBoolEb(void *this_, bool defaultValue) {
   return (bool)((QJsonValue*)this_)->toBool(defaultValue);
@@ -275,7 +275,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:134
-// [8] QString toString(const class QString &)
+// [8] QString toString(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QJsonValue8toStringERK7QString(void *this_, QString* defaultValue) {
   auto rv = ((QJsonValue*)this_)->toString(*defaultValue);
@@ -293,7 +293,7 @@ return new QJsonArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:136
-// [16] QJsonArray toArray(const class QJsonArray &)
+// [16] QJsonArray toArray(const QJsonArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QJsonValue7toArrayERK10QJsonArray(void *this_, QJsonArray* defaultValue) {
   auto rv = ((QJsonValue*)this_)->toArray(*defaultValue);
@@ -311,7 +311,7 @@ return new QJsonObject(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:138
-// [16] QJsonObject toObject(const class QJsonObject &)
+// [16] QJsonObject toObject(const QJsonObject &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QJsonValue8toObjectERK11QJsonObject(void *this_, QJsonObject* defaultValue) {
   auto rv = ((QJsonValue*)this_)->toObject(*defaultValue);
@@ -320,7 +320,7 @@ return new QJsonObject(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:140
-// [24] const QJsonValue operator[](const class QString &)
+// [24] const QJsonValue operator[](const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QJsonValueixERK7QString(void *this_, QString* key) {
   auto rv = ((QJsonValue*)this_)->operator[](*key);
@@ -329,7 +329,7 @@ return new QJsonValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:141
-// [24] const QJsonValue operator[](class QLatin1String)
+// [24] const QJsonValue operator[](QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QJsonValueixE13QLatin1String(void *this_, QLatin1String* key) {
   auto rv = ((QJsonValue*)this_)->operator[](*key);
@@ -347,7 +347,7 @@ return new QJsonValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:144
-// [1] bool operator==(const class QJsonValue &)
+// [1] bool operator==(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QJsonValueeqERKS_(void *this_, QJsonValue* other) {
   return (bool)((QJsonValue*)this_)->operator==(*other);
@@ -355,7 +355,7 @@ bool C_ZNK10QJsonValueeqERKS_(void *this_, QJsonValue* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:145
-// [1] bool operator!=(const class QJsonValue &)
+// [1] bool operator!=(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QJsonValueneERKS_(void *this_, QJsonValue* other) {
   return (bool)((QJsonValue*)this_)->operator!=(*other);

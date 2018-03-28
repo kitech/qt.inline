@@ -20,7 +20,7 @@ public:
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:217
-// [-2] void exec(class QTextStream &)
+// [-2] void exec(QTextStream &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QTextStreamManipulator4execER11QTextStream(void *this_, QTextStream* s) {
   ((QTextStreamManipulator*)this_)->exec(*s);

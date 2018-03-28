@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQEasingCurve : public QEasingCurve {
 public:
   virtual ~MyQEasingCurve() {}
-// void QEasingCurve(enum QEasingCurve::Type)
+// void QEasingCurve(QEasingCurve::Type)
 MyQEasingCurve(QEasingCurve::Type type_) : QEasingCurve(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:77
-// [-2] void QEasingCurve(enum QEasingCurve::Type)
+// [-2] void QEasingCurve(QEasingCurve::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type type_) {
   return  new QEasingCurve(type_);
@@ -38,7 +38,7 @@ void C_ZN12QEasingCurveD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:81
-// [8] QEasingCurve & operator=(const class QEasingCurve &)
+// [8] QEasingCurve & operator=(const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QEasingCurveaSERKS_(void *this_, QEasingCurve* other) {
   auto& rv = ((QEasingCurve*)this_)->operator=(*other);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:85
-// [8] QEasingCurve & operator=(class QEasingCurve &&)
+// [8] QEasingCurve & operator=(QEasingCurve &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QEasingCurveaSEOS_(void *this_, QEasingCurve && other) {
   auto& rv = ((QEasingCurve*)this_)->operator=(other);
@@ -57,7 +57,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qeasingcurve.h:89
-// [-2] void swap(class QEasingCurve &)
+// [-2] void swap(QEasingCurve &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN12QEasingCurve4swapERS_(void *this_, QEasingCurve* other) {
@@ -67,7 +67,7 @@ void C_ZN12QEasingCurve4swapERS_(void *this_, QEasingCurve* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:91
-// [1] bool operator==(const class QEasingCurve &)
+// [1] bool operator==(const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QEasingCurveeqERKS_(void *this_, QEasingCurve* other) {
   return (bool)((QEasingCurve*)this_)->operator==(*other);
@@ -75,7 +75,7 @@ bool C_ZNK12QEasingCurveeqERKS_(void *this_, QEasingCurve* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:92
-// [1] bool operator!=(const class QEasingCurve &)
+// [1] bool operator!=(const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QEasingCurveneERKS_(void *this_, QEasingCurve* other) {
   return (bool)((QEasingCurve*)this_)->operator!=(*other);
@@ -131,7 +131,7 @@ void C_ZN12QEasingCurve12setOvershootEd(void *this_, qreal overshoot) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:104
-// [-2] void addCubicBezierSegment(const class QPointF &, const class QPointF &, const class QPointF &)
+// [-2] void addCubicBezierSegment(const QPointF &, const QPointF &, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QEasingCurve21addCubicBezierSegmentERK7QPointFS2_S2_(void *this_, QPointF* c1, QPointF* c2, QPointF* endPoint) {
   ((QEasingCurve*)this_)->addCubicBezierSegment(*c1, *c2, *endPoint);
@@ -139,7 +139,7 @@ void C_ZN12QEasingCurve21addCubicBezierSegmentERK7QPointFS2_S2_(void *this_, QPo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:105
-// [-2] void addTCBSegment(const class QPointF &, qreal, qreal, qreal)
+// [-2] void addTCBSegment(const QPointF &, qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QEasingCurve13addTCBSegmentERK7QPointFddd(void *this_, QPointF* nextPoint, qreal t, qreal c, qreal b) {
   ((QEasingCurve*)this_)->addTCBSegment(*nextPoint, t, c, b);
@@ -155,7 +155,7 @@ QEasingCurve::Type C_ZNK12QEasingCurve4typeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:112
-// [-2] void setType(enum QEasingCurve::Type)
+// [-2] void setType(QEasingCurve::Type)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QEasingCurve7setTypeENS_4TypeE(void *this_, QEasingCurve::Type type_) {
   ((QEasingCurve*)this_)->setType(type_);

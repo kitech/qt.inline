@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQValidator : public QValidator {
 public:
   virtual ~MyQValidator() {}
-// void QValidator(class QObject *)
+// void QValidator(QObject *)
 MyQValidator(QObject * parent) : QValidator(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK10QValidator10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:62
-// [-2] void QValidator(class QObject *)
+// [-2] void QValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
   return 0; // new QValidator(parent);
@@ -45,7 +45,7 @@ void C_ZN10QValidatorD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:71
-// [-2] void setLocale(const class QLocale &)
+// [-2] void setLocale(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QValidator9setLocaleERK7QLocale(void *this_, QLocale* locale) {
   ((QValidator*)this_)->setLocale(*locale);
@@ -62,7 +62,7 @@ return new QLocale(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:74
-// [4] QValidator::State validate(class QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
   return (QValidator::State)((QValidator*)this_)->validate(*arg0, arg1);
@@ -70,7 +70,7 @@ QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString* a
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:75
-// [-2] void fixup(class QString &)
+// [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK10QValidator5fixupER7QString(void *this_, QString* arg0) {
   ((QValidator*)this_)->fixup(*arg0);

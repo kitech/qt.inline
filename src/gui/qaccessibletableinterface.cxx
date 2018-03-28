@@ -157,7 +157,7 @@ bool C_ZN25QAccessibleTableInterface14unselectColumnEi(void *this_, int column) 
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:619
-// [-2] void modelChange(class QAccessibleTableModelChangeEvent *)
+// [-2] void modelChange(QAccessibleTableModelChangeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QAccessibleTableInterface11modelChangeEP32QAccessibleTableModelChangeEvent(void *this_, QAccessibleTableModelChangeEvent * event) {
   ((QAccessibleTableInterface*)this_)->modelChange(event);

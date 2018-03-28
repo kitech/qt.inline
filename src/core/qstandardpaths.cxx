@@ -16,7 +16,7 @@
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:81
-// [8] QString writableLocation(enum QStandardPaths::StandardLocation)
+// [8] QString writableLocation(QStandardPaths::StandardLocation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStandardPaths16writableLocationENS_16StandardLocationE(QStandardPaths::StandardLocation type_) {
   auto rv = QStandardPaths::writableLocation(type_);
@@ -25,7 +25,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:82
-// [8] QStringList standardLocations(enum QStandardPaths::StandardLocation)
+// [8] QStringList standardLocations(QStandardPaths::StandardLocation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStandardPaths17standardLocationsENS_16StandardLocationE(QStandardPaths::StandardLocation type_) {
   auto rv = QStandardPaths::standardLocations(type_);
@@ -34,7 +34,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:91
-// [8] QString locate(enum QStandardPaths::StandardLocation, const class QString &, QStandardPaths::LocateOptions)
+// [8] QString locate(QStandardPaths::StandardLocation, const QString &, QStandardPaths::LocateOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStandardPaths6locateENS_16StandardLocationERK7QString6QFlagsINS_12LocateOptionEE(QStandardPaths::StandardLocation type_, QString* fileName, QFlags<QStandardPaths::LocateOption> options) {
   auto rv = QStandardPaths::locate(type_, *fileName, options);
@@ -43,7 +43,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:92
-// [8] QStringList locateAll(enum QStandardPaths::StandardLocation, const class QString &, QStandardPaths::LocateOptions)
+// [8] QStringList locateAll(QStandardPaths::StandardLocation, const QString &, QStandardPaths::LocateOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStandardPaths9locateAllENS_16StandardLocationERK7QString6QFlagsINS_12LocateOptionEE(QStandardPaths::StandardLocation type_, QString* fileName, QFlags<QStandardPaths::LocateOption> options) {
   auto rv = QStandardPaths::locateAll(type_, *fileName, options);
@@ -52,7 +52,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:94
-// [8] QString displayName(enum QStandardPaths::StandardLocation)
+// [8] QString displayName(QStandardPaths::StandardLocation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStandardPaths11displayNameENS_16StandardLocationE(QStandardPaths::StandardLocation type_) {
   auto rv = QStandardPaths::displayName(type_);
@@ -61,7 +61,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:97
-// [8] QString findExecutable(const class QString &, const class QStringList &)
+// [8] QString findExecutable(const QString &, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStandardPaths14findExecutableERK7QStringRK11QStringList(QString* executableName, QStringList* paths) {
   auto rv = QStandardPaths::findExecutable(*executableName, *paths);
@@ -70,7 +70,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:100
-// [-2] void enableTestMode(_Bool)
+// [-2] void enableTestMode(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStandardPaths14enableTestModeEb(bool testMode) {
   QStandardPaths::enableTestMode(testMode);
@@ -78,7 +78,7 @@ void C_ZN14QStandardPaths14enableTestModeEb(bool testMode) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:102
-// [-2] void setTestModeEnabled(_Bool)
+// [-2] void setTestModeEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStandardPaths18setTestModeEnabledEb(bool testMode) {
   QStandardPaths::setTestModeEnabled(testMode);

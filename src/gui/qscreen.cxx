@@ -265,7 +265,7 @@ int C_ZNK7QScreen12angleBetweenEN2Qt17ScreenOrientationES1_(void *this_, Qt::Scr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:143
-// [88] QTransform transformBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const class QRect &)
+// [88] QTransform transformBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QScreen16transformBetweenEN2Qt17ScreenOrientationES1_RK5QRect(void *this_, Qt::ScreenOrientation a, Qt::ScreenOrientation b, QRect* target) {
   auto rv = ((QScreen*)this_)->transformBetween(a, b, *target);
@@ -274,7 +274,7 @@ return new QTransform(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:144
-// [16] QRect mapBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const class QRect &)
+// [16] QRect mapBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QScreen10mapBetweenEN2Qt17ScreenOrientationES1_RK5QRect(void *this_, Qt::ScreenOrientation a, Qt::ScreenOrientation b, QRect* rect) {
   auto rv = ((QScreen*)this_)->mapBetween(a, b, *rect);
@@ -316,7 +316,7 @@ qreal C_ZNK7QScreen11refreshRateEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:154
-// [-2] void geometryChanged(const class QRect &)
+// [-2] void geometryChanged(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QScreen15geometryChangedERK5QRect(void *this_, QRect* geometry) {
   ((QScreen*)this_)->geometryChanged(*geometry);
@@ -324,7 +324,7 @@ void C_ZN7QScreen15geometryChangedERK5QRect(void *this_, QRect* geometry) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:155
-// [-2] void availableGeometryChanged(const class QRect &)
+// [-2] void availableGeometryChanged(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QScreen24availableGeometryChangedERK5QRect(void *this_, QRect* geometry) {
   ((QScreen*)this_)->availableGeometryChanged(*geometry);
@@ -332,7 +332,7 @@ void C_ZN7QScreen24availableGeometryChangedERK5QRect(void *this_, QRect* geometr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:156
-// [-2] void physicalSizeChanged(const class QSizeF &)
+// [-2] void physicalSizeChanged(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QScreen19physicalSizeChangedERK6QSizeF(void *this_, QSizeF* size) {
   ((QScreen*)this_)->physicalSizeChanged(*size);
@@ -356,7 +356,7 @@ void C_ZN7QScreen25logicalDotsPerInchChangedEd(void *this_, qreal dpi) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:159
-// [-2] void virtualGeometryChanged(const class QRect &)
+// [-2] void virtualGeometryChanged(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QScreen22virtualGeometryChangedERK5QRect(void *this_, QRect* rect) {
   ((QScreen*)this_)->virtualGeometryChanged(*rect);

@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQTapGesture : public QTapGesture {
 public:
   virtual ~MyQTapGesture() {}
-// void QTapGesture(class QObject *)
+// void QTapGesture(QObject *)
 MyQTapGesture(QObject * parent) : QTapGesture(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK11QTapGesture10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:242
-// [-2] void QTapGesture(class QObject *)
+// [-2] void QTapGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTapGestureC2EP7QObject(QObject * parent) {
   return  new QTapGesture(parent);
@@ -55,7 +55,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:246
-// [-2] void setPosition(const class QPointF &)
+// [-2] void setPosition(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTapGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
   ((QTapGesture*)this_)->setPosition(*pos);

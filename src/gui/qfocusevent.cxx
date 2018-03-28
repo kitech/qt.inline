@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQFocusEvent : public QFocusEvent {
 public:
   virtual ~MyQFocusEvent() {}
-// void QFocusEvent(enum QEvent::Type, Qt::FocusReason)
+// void QFocusEvent(QEvent::Type, Qt::FocusReason)
 MyQFocusEvent(QEvent::Type type_, Qt::FocusReason reason) : QFocusEvent(type_, reason) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:389
-// [-2] void QFocusEvent(enum QEvent::Type, Qt::FocusReason)
+// [-2] void QFocusEvent(QEvent::Type, Qt::FocusReason)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type_, Qt::FocusReason reason) {
   return  new QFocusEvent(type_, reason);

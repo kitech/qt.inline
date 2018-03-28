@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQResizeEvent : public QResizeEvent {
 public:
   virtual ~MyQResizeEvent() {}
-// void QResizeEvent(const class QSize &, const class QSize &)
+// void QResizeEvent(const QSize &, const QSize &)
 MyQResizeEvent(const QSize & size, const QSize & oldSize) : QResizeEvent(size, oldSize) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:463
-// [-2] void QResizeEvent(const class QSize &, const class QSize &)
+// [-2] void QResizeEvent(const QSize &, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QResizeEventC2ERK5QSizeS2_(QSize* size, QSize* oldSize) {
   return  new QResizeEvent(*size, *oldSize);

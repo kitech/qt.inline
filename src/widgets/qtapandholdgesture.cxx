@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQTapAndHoldGesture : public QTapAndHoldGesture {
 public:
   virtual ~MyQTapAndHoldGesture() {}
-// void QTapAndHoldGesture(class QObject *)
+// void QTapAndHoldGesture(QObject *)
 MyQTapAndHoldGesture(QObject * parent) : QTapAndHoldGesture(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK18QTapAndHoldGesture10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:260
-// [-2] void QTapAndHoldGesture(class QObject *)
+// [-2] void QTapAndHoldGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QTapAndHoldGestureC2EP7QObject(QObject * parent) {
   return  new QTapAndHoldGesture(parent);
@@ -55,7 +55,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:264
-// [-2] void setPosition(const class QPointF &)
+// [-2] void setPosition(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QTapAndHoldGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
   ((QTapAndHoldGesture*)this_)->setPosition(*pos);

@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQPdfWriter : public QPdfWriter {
 public:
   virtual ~MyQPdfWriter() {}
-// void QPdfWriter(const class QString &)
+// void QPdfWriter(const QString &)
 MyQPdfWriter(const QString & filename) : QPdfWriter(filename) {}
-// void QPdfWriter(class QIODevice *)
+// void QPdfWriter(QIODevice *)
 MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
 // Protected virtual Visibility=Default Availability=Available
 // QPaintEngine * paintEngine()
@@ -34,7 +34,7 @@ MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int metric(enum QPaintDevice::PaintDeviceMetric)
+// int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric id) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -58,7 +58,7 @@ void* C_ZNK10QPdfWriter11paintEngineEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:96
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric id) {
   return (int)((QPdfWriter*)this_)->QPdfWriter::metric(id);
@@ -74,7 +74,7 @@ void* C_ZNK10QPdfWriter10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:60
-// [-2] void QPdfWriter(const class QString &)
+// [-2] void QPdfWriter(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QPdfWriterC2ERK7QString(QString* filename) {
   auto _nilp = (MyQPdfWriter*)(0);
@@ -83,7 +83,7 @@ void* C_ZN10QPdfWriterC2ERK7QString(QString* filename) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:61
-// [-2] void QPdfWriter(class QIODevice *)
+// [-2] void QPdfWriter(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QPdfWriterC2EP9QIODevice(QIODevice * device) {
   auto _nilp = (MyQPdfWriter*)(0);
@@ -99,7 +99,7 @@ void C_ZN10QPdfWriterD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:64
-// [-2] void setPdfVersion(enum QPagedPaintDevice::PdfVersion)
+// [-2] void setPdfVersion(QPagedPaintDevice::PdfVersion)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter13setPdfVersionEN17QPagedPaintDevice10PdfVersionE(void *this_, QPagedPaintDevice::PdfVersion version) {
   ((QPdfWriter*)this_)->setPdfVersion(version);
@@ -127,7 +127,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:68
-// [-2] void setTitle(const class QString &)
+// [-2] void setTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter8setTitleERK7QString(void *this_, QString* title) {
   ((QPdfWriter*)this_)->setTitle(*title);
@@ -144,7 +144,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:71
-// [-2] void setCreator(const class QString &)
+// [-2] void setCreator(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter10setCreatorERK7QString(void *this_, QString* creator) {
   ((QPdfWriter*)this_)->setCreator(*creator);
@@ -182,7 +182,7 @@ int C_ZNK10QPdfWriter10resolutionEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:89
-// [-2] void setPageSize(enum QPagedPaintDevice::PageSize)
+// [-2] void setPageSize(QPagedPaintDevice::PageSize)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter11setPageSizeEN17QPagedPaintDevice8PageSizeE(void *this_, QPagedPaintDevice::PageSize size) {
   ((QPdfWriter*)this_)->setPageSize(size);
@@ -190,7 +190,7 @@ void C_ZN10QPdfWriter11setPageSizeEN17QPagedPaintDevice8PageSizeE(void *this_, Q
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:90
-// [-2] void setPageSizeMM(const class QSizeF &)
+// [-2] void setPageSizeMM(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter13setPageSizeMMERK6QSizeF(void *this_, QSizeF* size) {
   ((QPdfWriter*)this_)->setPageSizeMM(*size);

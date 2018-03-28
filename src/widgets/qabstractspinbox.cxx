@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQAbstractSpinBox : public QAbstractSpinBox {
 public:
   virtual ~MyQAbstractSpinBox() {}
-// void QAbstractSpinBox(class QWidget *)
+// void QAbstractSpinBox(QWidget *)
 MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -43,7 +43,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(class QKeyEvent *)
+// void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QWheelEvent *)
+// void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -67,7 +67,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -79,7 +79,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -91,7 +91,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(class QContextMenuEvent *)
+// void contextMenuEvent(QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -103,7 +103,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -115,7 +115,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(class QCloseEvent *)
+// void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -127,7 +127,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(class QHideEvent *)
+// void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hideEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -139,7 +139,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -151,7 +151,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -163,7 +163,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -175,7 +175,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -187,7 +187,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -199,7 +199,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(class QShowEvent *)
+// void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -211,7 +211,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionSpinBox *)
+// void initStyleOption(QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -236,7 +236,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void setLineEdit(class QLineEdit *)
+// void setLineEdit(QLineEdit *)
   virtual void setLineEdit(QLineEdit * edit) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setLineEdit", &handled, 1, (uint64_t)edit, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -264,7 +264,7 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:136
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::resizeEvent(event);
@@ -272,7 +272,7 @@ void C_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent(void *this_, QResizeEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:137
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::keyPressEvent(event);
@@ -280,7 +280,7 @@ void C_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:138
-// [-2] void keyReleaseEvent(class QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::keyReleaseEvent(event);
@@ -288,7 +288,7 @@ void C_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:140
-// [-2] void wheelEvent(class QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::wheelEvent(event);
@@ -296,7 +296,7 @@ void C_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent(void *this_, QWheelEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:142
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::focusInEvent(event);
@@ -304,7 +304,7 @@ void C_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent(void *this_, QFocusEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:143
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::focusOutEvent(event);
@@ -312,7 +312,7 @@ void C_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent(void *this_, QFocusEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:145
-// [-2] void contextMenuEvent(class QContextMenuEvent *)
+// [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::contextMenuEvent(event);
@@ -320,7 +320,7 @@ void C_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent(void *this_, 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:147
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox11changeEventEP6QEvent(void *this_, QEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::changeEvent(event);
@@ -328,7 +328,7 @@ void C_ZN16QAbstractSpinBox11changeEventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:148
-// [-2] void closeEvent(class QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::closeEvent(event);
@@ -336,7 +336,7 @@ void C_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent(void *this_, QCloseEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:149
-// [-2] void hideEvent(class QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox9hideEventEP10QHideEvent(void *this_, QHideEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::hideEvent(event);
@@ -344,7 +344,7 @@ void C_ZN16QAbstractSpinBox9hideEventEP10QHideEvent(void *this_, QHideEvent * ev
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:150
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::mousePressEvent(event);
@@ -352,7 +352,7 @@ void C_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent(void *this_, QMouseE
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:151
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::mouseReleaseEvent(event);
@@ -360,7 +360,7 @@ void C_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMous
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:152
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::mouseMoveEvent(event);
@@ -368,7 +368,7 @@ void C_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEv
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:153
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::timerEvent(event);
@@ -376,7 +376,7 @@ void C_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent(void *this_, QTimerEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:154
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::paintEvent(event);
@@ -384,7 +384,7 @@ void C_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:155
-// [-2] void showEvent(class QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::showEvent(event);
@@ -392,7 +392,7 @@ void C_ZN16QAbstractSpinBox9showEventEP10QShowEvent(void *this_, QShowEvent * ev
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:156
-// [-2] void initStyleOption(class QStyleOptionSpinBox *)
+// [-2] void initStyleOption(QStyleOptionSpinBox *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox(void *this_, QStyleOptionSpinBox * option) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::initStyleOption(option);
@@ -408,7 +408,7 @@ void* C_ZNK16QAbstractSpinBox8lineEditEv(void *this_) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:159
-// [-2] void setLineEdit(class QLineEdit *)
+// [-2] void setLineEdit(QLineEdit *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit(void *this_, QLineEdit * edit) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::setLineEdit(edit);
@@ -433,7 +433,7 @@ void* C_ZNK16QAbstractSpinBox10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:73
-// [-2] void QAbstractSpinBox(class QWidget *)
+// [-2] void QAbstractSpinBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAbstractSpinBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractSpinBox*)(0);
@@ -457,7 +457,7 @@ QAbstractSpinBox::ButtonSymbols C_ZNK16QAbstractSpinBox13buttonSymbolsEv(void *t
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:84
-// [-2] void setButtonSymbols(enum QAbstractSpinBox::ButtonSymbols)
+// [-2] void setButtonSymbols(QAbstractSpinBox::ButtonSymbols)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox16setButtonSymbolsENS_13ButtonSymbolsE(void *this_, QAbstractSpinBox::ButtonSymbols bs) {
   ((QAbstractSpinBox*)this_)->setButtonSymbols(bs);
@@ -465,7 +465,7 @@ void C_ZN16QAbstractSpinBox16setButtonSymbolsENS_13ButtonSymbolsE(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:89
-// [-2] void setCorrectionMode(enum QAbstractSpinBox::CorrectionMode)
+// [-2] void setCorrectionMode(QAbstractSpinBox::CorrectionMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox17setCorrectionModeENS_14CorrectionModeE(void *this_, QAbstractSpinBox::CorrectionMode cm) {
   ((QAbstractSpinBox*)this_)->setCorrectionMode(cm);
@@ -507,7 +507,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:96
-// [-2] void setSpecialValueText(const class QString &)
+// [-2] void setSpecialValueText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox19setSpecialValueTextERK7QString(void *this_, QString* txt) {
   ((QAbstractSpinBox*)this_)->setSpecialValueText(*txt);
@@ -523,7 +523,7 @@ bool C_ZNK16QAbstractSpinBox8wrappingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:99
-// [-2] void setWrapping(_Bool)
+// [-2] void setWrapping(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox11setWrappingEb(void *this_, bool w) {
   ((QAbstractSpinBox*)this_)->setWrapping(w);
@@ -531,7 +531,7 @@ void C_ZN16QAbstractSpinBox11setWrappingEb(void *this_, bool w) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:101
-// [-2] void setReadOnly(_Bool)
+// [-2] void setReadOnly(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox11setReadOnlyEb(void *this_, bool r) {
   ((QAbstractSpinBox*)this_)->setReadOnly(r);
@@ -547,7 +547,7 @@ bool C_ZNK16QAbstractSpinBox10isReadOnlyEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:104
-// [-2] void setKeyboardTracking(_Bool)
+// [-2] void setKeyboardTracking(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox19setKeyboardTrackingEb(void *this_, bool kt) {
   ((QAbstractSpinBox*)this_)->setKeyboardTracking(kt);
@@ -579,7 +579,7 @@ Qt::Alignment C_ZNK16QAbstractSpinBox9alignmentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:110
-// [-2] void setFrame(_Bool)
+// [-2] void setFrame(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox8setFrameEb(void *this_, bool arg0) {
   ((QAbstractSpinBox*)this_)->setFrame(arg0);
@@ -595,7 +595,7 @@ bool C_ZNK16QAbstractSpinBox8hasFrameEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:113
-// [-2] void setAccelerated(_Bool)
+// [-2] void setAccelerated(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox14setAcceleratedEb(void *this_, bool on) {
   ((QAbstractSpinBox*)this_)->setAccelerated(on);
@@ -611,7 +611,7 @@ bool C_ZNK16QAbstractSpinBox13isAcceleratedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:116
-// [-2] void setGroupSeparatorShown(_Bool)
+// [-2] void setGroupSeparatorShown(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox22setGroupSeparatorShownEb(void *this_, bool shown) {
   ((QAbstractSpinBox*)this_)->setGroupSeparatorShown(shown);
@@ -653,7 +653,7 @@ void C_ZN16QAbstractSpinBox13interpretTextEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:122
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QAbstractSpinBox5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QAbstractSpinBox*)this_)->event(event);
@@ -670,7 +670,7 @@ return new QVariant(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:126
-// [4] QValidator::State validate(class QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK16QAbstractSpinBox8validateER7QStringRi(void *this_, QString* input, int & pos) {
   return (QValidator::State)((QAbstractSpinBox*)this_)->validate(*input, pos);
@@ -678,7 +678,7 @@ QValidator::State C_ZNK16QAbstractSpinBox8validateER7QStringRi(void *this_, QStr
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:127
-// [-2] void fixup(class QString &)
+// [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK16QAbstractSpinBox5fixupER7QString(void *this_, QString* input) {
   ((QAbstractSpinBox*)this_)->fixup(*input);

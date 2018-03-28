@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQMenuBar : public QMenuBar {
 public:
   virtual ~MyQMenuBar() {}
-// void QMenuBar(class QWidget *)
+// void QMenuBar(QWidget *)
 MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -43,7 +43,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -67,7 +67,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -79,7 +79,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void leaveEvent(class QEvent *)
+// void leaveEvent(QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"leaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -91,7 +91,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -103,7 +103,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -115,7 +115,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void actionEvent(class QActionEvent *)
+// void actionEvent(QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"actionEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -127,7 +127,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -139,7 +139,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -151,7 +151,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -163,7 +163,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -176,7 +176,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -189,7 +189,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionMenuItem *, const class QAction *)
+// void initStyleOption(QStyleOptionMenuItem *, const QAction *)
   virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -204,7 +204,7 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:113
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::changeEvent(arg0);
@@ -212,7 +212,7 @@ void C_ZN8QMenuBar11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:114
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::keyPressEvent(arg0);
@@ -220,7 +220,7 @@ void C_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:115
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::mouseReleaseEvent(arg0);
@@ -228,7 +228,7 @@ void C_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:116
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::mousePressEvent(arg0);
@@ -236,7 +236,7 @@ void C_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ar
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:117
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::mouseMoveEvent(arg0);
@@ -244,7 +244,7 @@ void C_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:118
-// [-2] void leaveEvent(class QEvent *)
+// [-2] void leaveEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10leaveEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::leaveEvent(arg0);
@@ -252,7 +252,7 @@ void C_ZN8QMenuBar10leaveEventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:119
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::paintEvent(arg0);
@@ -260,7 +260,7 @@ void C_ZN8QMenuBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:120
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::resizeEvent(arg0);
@@ -268,7 +268,7 @@ void C_ZN8QMenuBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:121
-// [-2] void actionEvent(class QActionEvent *)
+// [-2] void actionEvent(QActionEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar11actionEventEP12QActionEvent(void *this_, QActionEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::actionEvent(arg0);
@@ -276,7 +276,7 @@ void C_ZN8QMenuBar11actionEventEP12QActionEvent(void *this_, QActionEvent * arg0
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:122
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::focusOutEvent(arg0);
@@ -284,7 +284,7 @@ void C_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:123
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::focusInEvent(arg0);
@@ -292,7 +292,7 @@ void C_ZN8QMenuBar12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:124
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
   ((QMenuBar*)this_)->QMenuBar::timerEvent(arg0);
@@ -300,7 +300,7 @@ void C_ZN8QMenuBar10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:125
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QMenuBar*)this_)->QMenuBar::eventFilter(arg0, arg1);
@@ -308,7 +308,7 @@ bool C_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, Q
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:126
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QMenuBar5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QMenuBar*)this_)->QMenuBar::event(arg0);
@@ -316,7 +316,7 @@ bool C_ZN8QMenuBar5eventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:127
-// [-2] void initStyleOption(class QStyleOptionMenuItem *, const class QAction *)
+// [-2] void initStyleOption(QStyleOptionMenuItem *, const QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void *this_, QStyleOptionMenuItem * option, const QAction * action) {
   ((QMenuBar*)this_)->QMenuBar::initStyleOption(option, action);
@@ -332,7 +332,7 @@ void* C_ZNK8QMenuBar10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:63
-// [-2] void QMenuBar(class QWidget *)
+// [-2] void QMenuBar(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQMenuBar*)(0);
@@ -348,7 +348,7 @@ void C_ZN8QMenuBarD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:67
-// [8] QAction * addAction(const class QString &)
+// [8] QAction * addAction(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar9addActionERK7QString(void *this_, QString* text) {
   return (void*)((QMenuBar*)this_)->addAction(*text);
@@ -356,7 +356,7 @@ void* C_ZN8QMenuBar9addActionERK7QString(void *this_, QString* text) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:68
-// [8] QAction * addAction(const class QString &, const class QObject *, const char *)
+// [8] QAction * addAction(const QString &, const QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text, const QObject * receiver, const char * member) {
   return (void*)((QMenuBar*)this_)->addAction(*text, receiver, member);
@@ -364,7 +364,7 @@ void* C_ZN8QMenuBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:70
-// [8] QAction * addMenu(class QMenu *)
+// [8] QAction * addMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar7addMenuEP5QMenu(void *this_, QMenu * menu) {
   return (void*)((QMenuBar*)this_)->addMenu(menu);
@@ -372,7 +372,7 @@ void* C_ZN8QMenuBar7addMenuEP5QMenu(void *this_, QMenu * menu) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:71
-// [8] QMenu * addMenu(const class QString &)
+// [8] QMenu * addMenu(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar7addMenuERK7QString(void *this_, QString* title) {
   return (void*)((QMenuBar*)this_)->addMenu(*title);
@@ -380,7 +380,7 @@ void* C_ZN8QMenuBar7addMenuERK7QString(void *this_, QString* title) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:72
-// [8] QMenu * addMenu(const class QIcon &, const class QString &)
+// [8] QMenu * addMenu(const QIcon &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar7addMenuERK5QIconRK7QString(void *this_, QIcon* icon, QString* title) {
   return (void*)((QMenuBar*)this_)->addMenu(*icon, *title);
@@ -396,7 +396,7 @@ void* C_ZN8QMenuBar12addSeparatorEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:76
-// [8] QAction * insertSeparator(class QAction *)
+// [8] QAction * insertSeparator(QAction *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
   return (void*)((QMenuBar*)this_)->insertSeparator(before);
@@ -404,7 +404,7 @@ void* C_ZN8QMenuBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:78
-// [8] QAction * insertMenu(class QAction *, class QMenu *)
+// [8] QAction * insertMenu(QAction *, QMenu *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar10insertMenuEP7QActionP5QMenu(void *this_, QAction * before, QMenu * menu) {
   return (void*)((QMenuBar*)this_)->insertMenu(before, menu);
@@ -429,7 +429,7 @@ void* C_ZNK8QMenuBar12activeActionEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtWidgets/qmenubar.h:83
-// [-2] void setActiveAction(class QAction *)
+// [-2] void setActiveAction(QAction *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar15setActiveActionEP7QAction(void *this_, QAction * action) {
@@ -439,7 +439,7 @@ void C_ZN8QMenuBar15setActiveActionEP7QAction(void *this_, QAction * action) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:85
-// [-2] void setDefaultUp(_Bool)
+// [-2] void setDefaultUp(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar12setDefaultUpEb(void *this_, bool arg0) {
   ((QMenuBar*)this_)->setDefaultUp(arg0);
@@ -481,7 +481,7 @@ int C_ZNK8QMenuBar14heightForWidthEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:92
-// [16] QRect actionGeometry(class QAction *)
+// [16] QRect actionGeometry(QAction *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar14actionGeometryEP7QAction(void *this_, QAction * arg0) {
   auto rv = ((QMenuBar*)this_)->actionGeometry(arg0);
@@ -490,7 +490,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:93
-// [8] QAction * actionAt(const class QPoint &)
+// [8] QAction * actionAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar8actionAtERK6QPoint(void *this_, QPoint* arg0) {
   return (void*)((QMenuBar*)this_)->actionAt(*arg0);
@@ -498,7 +498,7 @@ void* C_ZNK8QMenuBar8actionAtERK6QPoint(void *this_, QPoint* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:95
-// [-2] void setCornerWidget(class QWidget *, Qt::Corner)
+// [-2] void setCornerWidget(QWidget *, Qt::Corner)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar15setCornerWidgetEP7QWidgetN2Qt6CornerE(void *this_, QWidget * w, Qt::Corner corner) {
   ((QMenuBar*)this_)->setCornerWidget(w, corner);
@@ -522,7 +522,7 @@ bool C_ZNK8QMenuBar15isNativeMenuBarEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:103
-// [-2] void setNativeMenuBar(_Bool)
+// [-2] void setNativeMenuBar(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar16setNativeMenuBarEb(void *this_, bool nativeMenuBar) {
   ((QMenuBar*)this_)->setNativeMenuBar(nativeMenuBar);
@@ -530,7 +530,7 @@ void C_ZN8QMenuBar16setNativeMenuBarEb(void *this_, bool nativeMenuBar) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:106
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10setVisibleEb(void *this_, bool visible) {
   ((QMenuBar*)this_)->setVisible(visible);
@@ -538,7 +538,7 @@ void C_ZN8QMenuBar10setVisibleEb(void *this_, bool visible) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:109
-// [-2] void triggered(class QAction *)
+// [-2] void triggered(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar9triggeredEP7QAction(void *this_, QAction * action) {
   ((QMenuBar*)this_)->triggered(action);
@@ -546,7 +546,7 @@ void C_ZN8QMenuBar9triggeredEP7QAction(void *this_, QAction * action) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenubar.h:110
-// [-2] void hovered(class QAction *)
+// [-2] void hovered(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar7hoveredEP7QAction(void *this_, QAction * action) {
   ((QMenuBar*)this_)->hovered(action);

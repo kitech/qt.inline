@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQAbstractTextDocumentLayout : public QAbstractTextDocumentLayout {
 public:
   virtual ~MyQAbstractTextDocumentLayout() {}
-// void QAbstractTextDocumentLayout(class QTextDocument *)
+// void QAbstractTextDocumentLayout(QTextDocument *)
 MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout(doc) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // void documentChanged(int, int, int)
@@ -31,7 +31,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeInlineObject(class QTextInlineObject, int, const class QTextFormat &)
+// void resizeInlineObject(QTextInlineObject, int, const QTextFormat &)
   virtual void resizeInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
@@ -43,7 +43,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void positionInlineObject(class QTextInlineObject, int, const class QTextFormat &)
+// void positionInlineObject(QTextInlineObject, int, const QTextFormat &)
   virtual void positionInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"positionInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
@@ -55,7 +55,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void drawInlineObject(class QPainter *, const class QRectF &, class QTextInlineObject, int, const class QTextFormat &)
+// void drawInlineObject(QPainter *, const QRectF &, QTextInlineObject, int, const QTextFormat &)
   virtual void drawInlineObject(QPainter * painter, const QRectF & rect, QTextInlineObject object, int posInDocument, const QTextFormat & format) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"drawInlineObject", &handled, 5, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&object, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0);
@@ -99,7 +99,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // [-2] void documentChanged(int, int, int)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:117
-// [-2] void resizeInlineObject(class QTextInlineObject, int, const class QTextFormat &)
+// [-2] void resizeInlineObject(QTextInlineObject, int, const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat(void *this_, QTextInlineObject* item, int posInDocument, QTextFormat* format) {
   ((QAbstractTextDocumentLayout*)this_)->QAbstractTextDocumentLayout::resizeInlineObject(*item, posInDocument, *format);
@@ -107,7 +107,7 @@ void C_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiR
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:118
-// [-2] void positionInlineObject(class QTextInlineObject, int, const class QTextFormat &)
+// [-2] void positionInlineObject(QTextInlineObject, int, const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat(void *this_, QTextInlineObject* item, int posInDocument, QTextFormat* format) {
   ((QAbstractTextDocumentLayout*)this_)->QAbstractTextDocumentLayout::positionInlineObject(*item, posInDocument, *format);
@@ -115,7 +115,7 @@ void C_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObject
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:119
-// [-2] void drawInlineObject(class QPainter *, const class QRectF &, class QTextInlineObject, int, const class QTextFormat &)
+// [-2] void drawInlineObject(QPainter *, const QRectF &, QTextInlineObject, int, const QTextFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat(void *this_, QPainter * painter, QRectF* rect, QTextInlineObject* object, int posInDocument, QTextFormat* format) {
   ((QAbstractTextDocumentLayout*)this_)->QAbstractTextDocumentLayout::drawInlineObject(painter, *rect, *object, posInDocument, *format);
@@ -148,7 +148,7 @@ void* C_ZNK27QAbstractTextDocumentLayout10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:64
-// [-2] void QAbstractTextDocumentLayout(class QTextDocument *)
+// [-2] void QAbstractTextDocumentLayout(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QAbstractTextDocumentLayoutC2EP13QTextDocument(QTextDocument * doc) {
   auto _nilp = (MyQAbstractTextDocumentLayout*)(0);
@@ -164,7 +164,7 @@ void C_ZN27QAbstractTextDocumentLayoutD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:85
-// [4] int hitTest(const class QPointF &, Qt::HitTestAccuracy)
+// [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)
 extern "C" Q_DECL_EXPORT
 int C_ZNK27QAbstractTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(void *this_, QPointF* point, Qt::HitTestAccuracy accuracy) {
   return (int)((QAbstractTextDocumentLayout*)this_)->hitTest(*point, accuracy);
@@ -172,7 +172,7 @@ int C_ZNK27QAbstractTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:87
-// [8] QString anchorAt(const class QPointF &)
+// [8] QString anchorAt(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout8anchorAtERK7QPointF(void *this_, QPointF* pos) {
   auto rv = ((QAbstractTextDocumentLayout*)this_)->anchorAt(*pos);
@@ -182,7 +182,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:88
-// [8] QString imageAt(const class QPointF &)
+// [8] QString imageAt(const QPointF &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout7imageAtERK7QPointF(void *this_, QPointF* pos) {
@@ -194,7 +194,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:89
-// [16] QTextFormat formatAt(const class QPointF &)
+// [16] QTextFormat formatAt(const QPointF &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout8formatAtERK7QPointF(void *this_, QPointF* pos) {
@@ -222,7 +222,7 @@ return new QSizeF(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:94
-// [32] QRectF frameBoundingRect(class QTextFrame *)
+// [32] QRectF frameBoundingRect(QTextFrame *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout17frameBoundingRectEP10QTextFrame(void *this_, QTextFrame * frame) {
   auto rv = ((QAbstractTextDocumentLayout*)this_)->frameBoundingRect(frame);
@@ -231,7 +231,7 @@ return new QRectF(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:95
-// [32] QRectF blockBoundingRect(const class QTextBlock &)
+// [32] QRectF blockBoundingRect(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QAbstractTextDocumentLayout17blockBoundingRectERK10QTextBlock(void *this_, QTextBlock* block) {
   auto rv = ((QAbstractTextDocumentLayout*)this_)->blockBoundingRect(*block);
@@ -240,7 +240,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:97
-// [-2] void setPaintDevice(class QPaintDevice *)
+// [-2] void setPaintDevice(QPaintDevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout14setPaintDeviceEP12QPaintDevice(void *this_, QPaintDevice * device) {
   ((QAbstractTextDocumentLayout*)this_)->setPaintDevice(device);
@@ -264,7 +264,7 @@ void* C_ZNK27QAbstractTextDocumentLayout8documentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:102
-// [-2] void registerHandler(int, class QObject *)
+// [-2] void registerHandler(int, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout15registerHandlerEiP7QObject(void *this_, int objectType, QObject * component) {
   ((QAbstractTextDocumentLayout*)this_)->registerHandler(objectType, component);
@@ -273,7 +273,7 @@ void C_ZN27QAbstractTextDocumentLayout15registerHandlerEiP7QObject(void *this_, 
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:103
-// [-2] void unregisterHandler(int, class QObject *)
+// [-2] void unregisterHandler(int, QObject *)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout17unregisterHandlerEiP7QObject(void *this_, int objectType, QObject * component) {
@@ -291,7 +291,7 @@ void* C_ZNK27QAbstractTextDocumentLayout16handlerForObjectEi(void *this_, int ob
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:107
-// [-2] void update(const class QRectF &)
+// [-2] void update(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout6updateERK6QRectF(void *this_, QRectF* arg0) {
   ((QAbstractTextDocumentLayout*)this_)->update(*arg0);
@@ -300,7 +300,7 @@ void C_ZN27QAbstractTextDocumentLayout6updateERK6QRectF(void *this_, QRectF* arg
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:108
-// [-2] void updateBlock(const class QTextBlock &)
+// [-2] void updateBlock(const QTextBlock &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout11updateBlockERK10QTextBlock(void *this_, QTextBlock* block) {
@@ -310,7 +310,7 @@ void C_ZN27QAbstractTextDocumentLayout11updateBlockERK10QTextBlock(void *this_, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:109
-// [-2] void documentSizeChanged(const class QSizeF &)
+// [-2] void documentSizeChanged(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout19documentSizeChangedERK6QSizeF(void *this_, QSizeF* newSize) {
   ((QAbstractTextDocumentLayout*)this_)->documentSizeChanged(*newSize);

@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQIntValidator : public QIntValidator {
 public:
   virtual ~MyQIntValidator() {}
-// void QIntValidator(class QObject *)
+// void QIntValidator(QObject *)
 MyQIntValidator(QObject * parent) : QIntValidator(parent) {}
-// void QIntValidator(int, int, class QObject *)
+// void QIntValidator(int, int, QObject *)
 MyQIntValidator(int bottom, int top, QObject * parent) : QIntValidator(bottom, top, parent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK13QIntValidator10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:96
-// [-2] void QIntValidator(class QObject *)
+// [-2] void QIntValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QIntValidatorC2EP7QObject(QObject * parent) {
   return  new QIntValidator(parent);
@@ -40,7 +40,7 @@ void* C_ZN13QIntValidatorC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:97
-// [-2] void QIntValidator(int, int, class QObject *)
+// [-2] void QIntValidator(int, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QIntValidatorC2EiiP7QObject(int bottom, int top, QObject * parent) {
   return  new QIntValidator(bottom, top, parent);
@@ -55,7 +55,7 @@ void C_ZN13QIntValidatorD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:100
-// [4] QValidator::State validate(class QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK13QIntValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
   return (QValidator::State)((QIntValidator*)this_)->validate(*arg0, arg1);
@@ -63,7 +63,7 @@ QValidator::State C_ZNK13QIntValidator8validateER7QStringRi(void *this_, QString
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:101
-// [-2] void fixup(class QString &)
+// [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK13QIntValidator5fixupER7QString(void *this_, QString* input) {
   ((QIntValidator*)this_)->fixup(*input);

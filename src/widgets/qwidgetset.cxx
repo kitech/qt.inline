@@ -86,7 +86,7 @@ bool C_QWidgetSet_isDetached_0(void* this_ ) {
     return rv;
 }
 
-// [-2] void setSharable(_Bool)
+// [-2] void setSharable(bool)
 extern "C"
 void C_QWidgetSet_setSharable_0(void* this_ , bool sharable) {
     // QWidgetSet_setSharable_0()
@@ -156,7 +156,7 @@ QWidgetSet::reverse_iterator* C_QWidgetSet_rend_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QSet::iterator erase(class QSet::iterator)
+// [-3] QSet::iterator erase(QSet::iterator)
 extern "C"
 QWidgetSet::iterator* C_QWidgetSet_erase_0(void* this_ , QWidgetSet::iterator* i) {
     // QWidgetSet_erase_0()
@@ -164,7 +164,7 @@ QWidgetSet::iterator* C_QWidgetSet_erase_0(void* this_ , QWidgetSet::iterator* i
     return new decltype(rv)(rv);
 }
 
-// [-3] QSet::iterator erase(class QSet::const_iterator)
+// [-3] QSet::iterator erase(QSet::const_iterator)
 extern "C"
 QWidgetSet::iterator* C_QWidgetSet_erase_1(void* this_ , QWidgetSet::const_iterator* i) {
     // QWidgetSet_erase_1()

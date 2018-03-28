@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQAbstractProxyModel : public QAbstractProxyModel {
 public:
   virtual ~MyQAbstractProxyModel() {}
-// void QAbstractProxyModel(class QObject *)
+// void QAbstractProxyModel(QObject *)
 MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
 // Protected Visibility=Default Availability=Available
 // void resetInternalData()
@@ -51,7 +51,7 @@ void* C_ZNK19QAbstractProxyModel10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:59
-// [-2] void QAbstractProxyModel(class QObject *)
+// [-2] void QAbstractProxyModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractProxyModel*)(0);
@@ -67,7 +67,7 @@ void C_ZN19QAbstractProxyModelD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:62
-// [-2] void setSourceModel(class QAbstractItemModel *)
+// [-2] void setSourceModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel14setSourceModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * sourceModel) {
   ((QAbstractProxyModel*)this_)->setSourceModel(sourceModel);
@@ -83,7 +83,7 @@ void* C_ZNK19QAbstractProxyModel11sourceModelEv(void *this_) {
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:65
-// [24] QModelIndex mapToSource(const class QModelIndex &)
+// [24] QModelIndex mapToSource(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel11mapToSourceERK11QModelIndex(void *this_, QModelIndex* proxyIndex) {
   auto rv = ((QAbstractProxyModel*)this_)->mapToSource(*proxyIndex);
@@ -92,7 +92,7 @@ return new QModelIndex(rv);
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:66
-// [24] QModelIndex mapFromSource(const class QModelIndex &)
+// [24] QModelIndex mapFromSource(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel13mapFromSourceERK11QModelIndex(void *this_, QModelIndex* sourceIndex) {
   auto rv = ((QAbstractProxyModel*)this_)->mapFromSource(*sourceIndex);
@@ -101,7 +101,7 @@ return new QModelIndex(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:68
-// [8] QItemSelection mapSelectionToSource(const class QItemSelection &)
+// [8] QItemSelection mapSelectionToSource(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel20mapSelectionToSourceERK14QItemSelection(void *this_, QItemSelection* selection) {
   auto rv = ((QAbstractProxyModel*)this_)->mapSelectionToSource(*selection);
@@ -110,7 +110,7 @@ return new QItemSelection(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:69
-// [8] QItemSelection mapSelectionFromSource(const class QItemSelection &)
+// [8] QItemSelection mapSelectionFromSource(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel22mapSelectionFromSourceERK14QItemSelection(void *this_, QItemSelection* selection) {
   auto rv = ((QAbstractProxyModel*)this_)->mapSelectionFromSource(*selection);
@@ -135,7 +135,7 @@ void C_ZN19QAbstractProxyModel6revertEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:74
-// [16] QVariant data(const class QModelIndex &, int)
+// [16] QVariant data(const QModelIndex &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel4dataERK11QModelIndexi(void *this_, QModelIndex* proxyIndex, int role) {
   auto rv = ((QAbstractProxyModel*)this_)->data(*proxyIndex, role);
@@ -153,7 +153,7 @@ return new QVariant(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:77
-// [4] Qt::ItemFlags flags(const class QModelIndex &)
+// [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK19QAbstractProxyModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
   return (Qt::ItemFlags)((QAbstractProxyModel*)this_)->flags(*index);
@@ -161,7 +161,7 @@ Qt::ItemFlags C_ZNK19QAbstractProxyModel5flagsERK11QModelIndex(void *this_, QMod
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:79
-// [1] bool setData(const class QModelIndex &, const class QVariant &, int)
+// [1] bool setData(const QModelIndex &, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
   return (bool)((QAbstractProxyModel*)this_)->setData(*index, *value, role);
@@ -169,7 +169,7 @@ bool C_ZN19QAbstractProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, 
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:81
-// [1] bool setHeaderData(int, Qt::Orientation, const class QVariant &, int)
+// [1] bool setHeaderData(int, Qt::Orientation, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, QVariant* value, int role) {
   return (bool)((QAbstractProxyModel*)this_)->setHeaderData(section, orientation, *value, role);
@@ -177,7 +177,7 @@ bool C_ZN19QAbstractProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(vo
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:83
-// [24] QModelIndex buddy(const class QModelIndex &)
+// [24] QModelIndex buddy(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel5buddyERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QAbstractProxyModel*)this_)->buddy(*index);
@@ -186,7 +186,7 @@ return new QModelIndex(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:84
-// [1] bool canFetchMore(const class QModelIndex &)
+// [1] bool canFetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel12canFetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
   return (bool)((QAbstractProxyModel*)this_)->canFetchMore(*parent);
@@ -194,7 +194,7 @@ bool C_ZNK19QAbstractProxyModel12canFetchMoreERK11QModelIndex(void *this_, QMode
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:85
-// [-2] void fetchMore(const class QModelIndex &)
+// [-2] void fetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel9fetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
   ((QAbstractProxyModel*)this_)->fetchMore(*parent);
@@ -210,7 +210,7 @@ void C_ZN19QAbstractProxyModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:87
-// [8] QSize span(const class QModelIndex &)
+// [8] QSize span(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel4spanERK11QModelIndex(void *this_, QModelIndex* index) {
   auto rv = ((QAbstractProxyModel*)this_)->span(*index);
@@ -219,7 +219,7 @@ return new QSize(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:88
-// [1] bool hasChildren(const class QModelIndex &)
+// [1] bool hasChildren(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel11hasChildrenERK11QModelIndex(void *this_, QModelIndex* parent) {
   return (bool)((QAbstractProxyModel*)this_)->hasChildren(*parent);
@@ -227,7 +227,7 @@ bool C_ZNK19QAbstractProxyModel11hasChildrenERK11QModelIndex(void *this_, QModel
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:89
-// [24] QModelIndex sibling(int, int, const class QModelIndex &)
+// [24] QModelIndex sibling(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
   auto rv = ((QAbstractProxyModel*)this_)->sibling(row, column, *idx);
@@ -237,7 +237,7 @@ return new QModelIndex(rv);
 // Public virtual Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qabstractproxymodel.h:92
-// [1] bool canDropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
+// [1] bool canDropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
@@ -248,7 +248,7 @@ bool C_ZNK19QAbstractProxyModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEii
 // Public virtual Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qabstractproxymodel.h:94
-// [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
+// [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {

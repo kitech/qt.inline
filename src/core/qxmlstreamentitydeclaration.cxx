@@ -38,7 +38,7 @@ void C_ZN27QXmlStreamEntityDeclarationD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:300
-// [88] QXmlStreamEntityDeclaration & operator=(const class QXmlStreamEntityDeclaration &)
+// [88] QXmlStreamEntityDeclaration & operator=(const QXmlStreamEntityDeclaration &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QXmlStreamEntityDeclarationaSERKS_(void *this_, QXmlStreamEntityDeclaration* arg0) {
   auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(*arg0);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:301
-// [88] QXmlStreamEntityDeclaration & operator=(class QXmlStreamEntityDeclaration &&)
+// [88] QXmlStreamEntityDeclaration & operator=(QXmlStreamEntityDeclaration &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QXmlStreamEntityDeclarationaSEOS_(void *this_, QXmlStreamEntityDeclaration && other) {
   auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(other);
@@ -101,7 +101,7 @@ return new QStringRef(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:318
-// [1] bool operator==(const class QXmlStreamEntityDeclaration &)
+// [1] bool operator==(const QXmlStreamEntityDeclaration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK27QXmlStreamEntityDeclarationeqERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
   return (bool)((QXmlStreamEntityDeclaration*)this_)->operator==(*other);
@@ -109,7 +109,7 @@ bool C_ZNK27QXmlStreamEntityDeclarationeqERKS_(void *this_, QXmlStreamEntityDecl
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:325
-// [1] bool operator!=(const class QXmlStreamEntityDeclaration &)
+// [1] bool operator!=(const QXmlStreamEntityDeclaration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK27QXmlStreamEntityDeclarationneERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
   return (bool)((QXmlStreamEntityDeclaration*)this_)->operator!=(*other);

@@ -113,7 +113,7 @@ void C_ZN8QMargins9setBottomEi(void *this_, int bottom) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:69
-// [16] QMargins & operator+=(const class QMargins &)
+// [16] QMargins & operator+=(const QMargins &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMarginspLERKS_(void *this_, QMargins* margins) {
   auto& rv = ((QMargins*)this_)->operator+=(*margins);
@@ -122,7 +122,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:70
-// [16] QMargins & operator-=(const class QMargins &)
+// [16] QMargins & operator-=(const QMargins &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMarginsmIERKS_(void *this_, QMargins* margins) {
   auto& rv = ((QMargins*)this_)->operator-=(*margins);

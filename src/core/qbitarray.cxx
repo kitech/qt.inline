@@ -18,7 +18,7 @@ public:
   virtual ~MyQBitArray() {}
 // void QBitArray()
 MyQBitArray() : QBitArray() {}
-// void QBitArray(int, _Bool)
+// void QBitArray(int, bool)
 MyQBitArray(int size, bool val) : QBitArray(size, val) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZN9QBitArrayC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:58
-// [-2] void QBitArray(int, _Bool)
+// [-2] void QBitArray(int, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayC2Eib(int size, bool val) {
   return  new QBitArray(size, val);
@@ -40,7 +40,7 @@ void* C_ZN9QBitArrayC2Eib(int size, bool val) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:60
-// [8] QBitArray & operator=(const class QBitArray &)
+// [8] QBitArray & operator=(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayaSERKS_(void *this_, QBitArray* other) {
   auto& rv = ((QBitArray*)this_)->operator=(*other);
@@ -49,7 +49,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:63
-// [8] QBitArray & operator=(class QBitArray &&)
+// [8] QBitArray & operator=(QBitArray &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayaSEOS_(void *this_, QBitArray && other) {
   auto& rv = ((QBitArray*)this_)->operator=(other);
@@ -59,7 +59,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/qbitarray.h:67
-// [-2] void swap(class QBitArray &)
+// [-2] void swap(QBitArray &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN9QBitArray4swapERS_(void *this_, QBitArray* other) {
@@ -85,7 +85,7 @@ int C_ZNK9QBitArray5countEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:71
-// [4] int count(_Bool)
+// [4] int count(bool)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QBitArray5countEb(void *this_, bool on) {
   return (int)((QBitArray*)this_)->count(on);
@@ -157,7 +157,7 @@ void C_ZN9QBitArray6setBitEi(void *this_, int i) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:84
-// [-2] void setBit(int, _Bool)
+// [-2] void setBit(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QBitArray6setBitEib(void *this_, int i, bool val) {
   ((QBitArray*)this_)->setBit(i, val);
@@ -223,7 +223,7 @@ bool C_ZNK9QBitArrayixEj(void *this_, uint i) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:94
-// [8] QBitArray & operator&=(const class QBitArray &)
+// [8] QBitArray & operator&=(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayaNERKS_(void *this_, QBitArray* arg0) {
   auto& rv = ((QBitArray*)this_)->operator&=(*arg0);
@@ -232,7 +232,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:95
-// [8] QBitArray & operator|=(const class QBitArray &)
+// [8] QBitArray & operator|=(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayoRERKS_(void *this_, QBitArray* arg0) {
   auto& rv = ((QBitArray*)this_)->operator|=(*arg0);
@@ -241,7 +241,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:96
-// [8] QBitArray & operator^=(const class QBitArray &)
+// [8] QBitArray & operator^=(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArrayeOERKS_(void *this_, QBitArray* arg0) {
   auto& rv = ((QBitArray*)this_)->operator^=(*arg0);
@@ -259,7 +259,7 @@ return new QBitArray(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:99
-// [1] bool operator==(const class QBitArray &)
+// [1] bool operator==(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QBitArrayeqERKS_(void *this_, QBitArray* other) {
   return (bool)((QBitArray*)this_)->operator==(*other);
@@ -267,7 +267,7 @@ bool C_ZNK9QBitArrayeqERKS_(void *this_, QBitArray* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:100
-// [1] bool operator!=(const class QBitArray &)
+// [1] bool operator!=(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QBitArrayneERKS_(void *this_, QBitArray* other) {
   return (bool)((QBitArray*)this_)->operator!=(*other);
@@ -275,7 +275,7 @@ bool C_ZNK9QBitArrayneERKS_(void *this_, QBitArray* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:102
-// [1] bool fill(_Bool, int)
+// [1] bool fill(bool, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QBitArray4fillEbi(void *this_, bool val, int size) {
   return (bool)((QBitArray*)this_)->fill(val, size);
@@ -283,7 +283,7 @@ bool C_ZN9QBitArray4fillEbi(void *this_, bool val, int size) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:103
-// [-2] void fill(_Bool, int, int)
+// [-2] void fill(bool, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QBitArray4fillEbii(void *this_, bool val, int first, int last) {
   ((QBitArray*)this_)->fill(val, first, last);

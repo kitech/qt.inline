@@ -28,7 +28,7 @@ void C_ZN24QXmlStreamEntityResolverD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:337
-// [8] QString resolveEntity(const class QString &, const class QString &)
+// [8] QString resolveEntity(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QXmlStreamEntityResolver13resolveEntityERK7QStringS2_(void *this_, QString* publicId, QString* systemId) {
   auto rv = ((QXmlStreamEntityResolver*)this_)->resolveEntity(*publicId, *systemId);
@@ -37,7 +37,7 @@ return new QString(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:338
-// [8] QString resolveUndeclaredEntity(const class QString &)
+// [8] QString resolveUndeclaredEntity(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QXmlStreamEntityResolver23resolveUndeclaredEntityERK7QString(void *this_, QString* name) {
   auto rv = ((QXmlStreamEntityResolver*)this_)->resolveUndeclaredEntity(*name);

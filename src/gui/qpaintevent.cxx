@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQPaintEvent : public QPaintEvent {
 public:
   virtual ~MyQPaintEvent() {}
-// void QPaintEvent(const class QRegion &)
+// void QPaintEvent(const QRegion &)
 MyQPaintEvent(const QRegion & paintRegion) : QPaintEvent(paintRegion) {}
-// void QPaintEvent(const class QRect &)
+// void QPaintEvent(const QRect &)
 MyQPaintEvent(const QRect & paintRect) : QPaintEvent(paintRect) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:405
-// [-2] void QPaintEvent(const class QRegion &)
+// [-2] void QPaintEvent(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPaintEventC2ERK7QRegion(QRegion* paintRegion) {
   return  new QPaintEvent(*paintRegion);
@@ -32,7 +32,7 @@ void* C_ZN11QPaintEventC2ERK7QRegion(QRegion* paintRegion) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:406
-// [-2] void QPaintEvent(const class QRect &)
+// [-2] void QPaintEvent(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPaintEventC2ERK5QRect(QRect* paintRect) {
   return  new QPaintEvent(*paintRect);

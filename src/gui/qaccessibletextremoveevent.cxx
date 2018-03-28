@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQAccessibleTextRemoveEvent : public QAccessibleTextRemoveEvent {
 public:
   virtual ~MyQAccessibleTextRemoveEvent() {}
-// void QAccessibleTextRemoveEvent(class QObject *, int, const class QString &)
+// void QAccessibleTextRemoveEvent(QObject *, int, const QString &)
 MyQAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text) : QAccessibleTextRemoveEvent(obj, position, text) {}
-// void QAccessibleTextRemoveEvent(class QAccessibleInterface *, int, const class QString &)
+// void QAccessibleTextRemoveEvent(QAccessibleInterface *, int, const QString &)
 MyQAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text) : QAccessibleTextRemoveEvent(iface, position, text) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:834
-// [-2] void QAccessibleTextRemoveEvent(class QObject *, int, const class QString &)
+// [-2] void QAccessibleTextRemoveEvent(QObject *, int, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextRemoveEventC2EP7QObjectiRK7QString(QObject * obj, int position, QString* text) {
   return  new QAccessibleTextRemoveEvent(obj, position, *text);
@@ -32,7 +32,7 @@ void* C_ZN26QAccessibleTextRemoveEventC2EP7QObjectiRK7QString(QObject * obj, int
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:840
-// [-2] void QAccessibleTextRemoveEvent(class QAccessibleInterface *, int, const class QString &)
+// [-2] void QAccessibleTextRemoveEvent(QAccessibleInterface *, int, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QAccessibleTextRemoveEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, QString* text) {
   return  new QAccessibleTextRemoveEvent(iface, position, *text);

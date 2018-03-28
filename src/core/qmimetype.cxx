@@ -31,7 +31,7 @@ void* C_ZN9QMimeTypeC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:80
-// [8] QMimeType & operator=(const class QMimeType &)
+// [8] QMimeType & operator=(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeaSERKS_(void *this_, QMimeType* other) {
   auto& rv = ((QMimeType*)this_)->operator=(*other);
@@ -40,7 +40,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:82
-// [8] QMimeType & operator=(class QMimeType &&)
+// [8] QMimeType & operator=(QMimeType &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeaSEOS_(void *this_, QMimeType && other) {
   auto& rv = ((QMimeType*)this_)->operator=(other);
@@ -49,7 +49,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:84
-// [-2] void swap(class QMimeType &)
+// [-2] void swap(QMimeType &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
   ((QMimeType*)this_)->swap(*other);
@@ -64,7 +64,7 @@ void C_ZN9QMimeTypeD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:91
-// [1] bool operator==(const class QMimeType &)
+// [1] bool operator==(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeTypeeqERKS_(void *this_, QMimeType* other) {
   return (bool)((QMimeType*)this_)->operator==(*other);
@@ -72,7 +72,7 @@ bool C_ZNK9QMimeTypeeqERKS_(void *this_, QMimeType* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:93
-// [1] bool operator!=(const class QMimeType &)
+// [1] bool operator!=(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeTypeneERKS_(void *this_, QMimeType* other) {
   return (bool)((QMimeType*)this_)->operator!=(*other);
@@ -186,7 +186,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:113
-// [1] bool inherits(const class QString &)
+// [1] bool inherits(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeType8inheritsERK7QString(void *this_, QString* mimeTypeName) {
   return (bool)((QMimeType*)this_)->inherits(*mimeTypeName);

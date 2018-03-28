@@ -24,7 +24,7 @@ void* C_ZNK9QScroller10metaObjectEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:92
-// [1] bool hasScroller(class QObject *)
+// [1] bool hasScroller(QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QScroller11hasScrollerEP7QObject(QObject * target) {
   return (bool)QScroller::hasScroller(target);
@@ -32,7 +32,7 @@ bool C_ZN9QScroller11hasScrollerEP7QObject(QObject * target) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:94
-// [8] QScroller * scroller(class QObject *)
+// [8] QScroller * scroller(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QScroller8scrollerEP7QObject(QObject * target) {
   return (void*)QScroller::scroller(target);
@@ -40,7 +40,7 @@ void* C_ZN9QScroller8scrollerEP7QObject(QObject * target) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:95
-// [8] const QScroller * scroller(const class QObject *)
+// [8] const QScroller * scroller(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QScroller8scrollerEPK7QObject(const QObject * target) {
   return (void*)QScroller::scroller(target);
@@ -48,7 +48,7 @@ void* C_ZN9QScroller8scrollerEPK7QObject(const QObject * target) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:98
-// [4] Qt::GestureType grabGesture(class QObject *, enum QScroller::ScrollerGestureType)
+// [4] Qt::GestureType grabGesture(QObject *, QScroller::ScrollerGestureType)
 extern "C" Q_DECL_EXPORT
 Qt::GestureType C_ZN9QScroller11grabGestureEP7QObjectNS_19ScrollerGestureTypeE(QObject * target, QScroller::ScrollerGestureType gestureType) {
   return (Qt::GestureType)QScroller::grabGesture(target, gestureType);
@@ -56,7 +56,7 @@ Qt::GestureType C_ZN9QScroller11grabGestureEP7QObjectNS_19ScrollerGestureTypeE(Q
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:99
-// [4] Qt::GestureType grabbedGesture(class QObject *)
+// [4] Qt::GestureType grabbedGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 Qt::GestureType C_ZN9QScroller14grabbedGestureEP7QObject(QObject * target) {
   return (Qt::GestureType)QScroller::grabbedGesture(target);
@@ -64,7 +64,7 @@ Qt::GestureType C_ZN9QScroller14grabbedGestureEP7QObject(QObject * target) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:100
-// [-2] void ungrabGesture(class QObject *)
+// [-2] void ungrabGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller13ungrabGestureEP7QObject(QObject * target) {
   QScroller::ungrabGesture(target);
@@ -88,7 +88,7 @@ QScroller::State C_ZNK9QScroller5stateEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:109
-// [1] bool handleInput(enum QScroller::Input, const class QPointF &, qint64)
+// [1] bool handleInput(QScroller::Input, const QPointF &, qint64)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QScroller11handleInputENS_5InputERK7QPointFx(void *this_, QScroller::Input input, QPointF* position, qint64 timestamp) {
   return (bool)((QScroller*)this_)->handleInput(input, *position, timestamp);
@@ -156,7 +156,7 @@ void C_ZN9QScroller17setSnapPositionsYEdd(void *this_, qreal first, qreal interv
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:124
-// [-2] void setScrollerProperties(const class QScrollerProperties &)
+// [-2] void setScrollerProperties(const QScrollerProperties &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller21setScrollerPropertiesERK19QScrollerProperties(void *this_, QScrollerProperties* prop) {
   ((QScroller*)this_)->setScrollerProperties(*prop);
@@ -164,7 +164,7 @@ void C_ZN9QScroller21setScrollerPropertiesERK19QScrollerProperties(void *this_, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:125
-// [-2] void scrollTo(const class QPointF &)
+// [-2] void scrollTo(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller8scrollToERK7QPointF(void *this_, QPointF* pos) {
   ((QScroller*)this_)->scrollTo(*pos);
@@ -172,7 +172,7 @@ void C_ZN9QScroller8scrollToERK7QPointF(void *this_, QPointF* pos) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:126
-// [-2] void scrollTo(const class QPointF &, int)
+// [-2] void scrollTo(const QPointF &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller8scrollToERK7QPointFi(void *this_, QPointF* pos, int scrollTime) {
   ((QScroller*)this_)->scrollTo(*pos, scrollTime);
@@ -180,7 +180,7 @@ void C_ZN9QScroller8scrollToERK7QPointFi(void *this_, QPointF* pos, int scrollTi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:127
-// [-2] void ensureVisible(const class QRectF &, qreal, qreal)
+// [-2] void ensureVisible(const QRectF &, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller13ensureVisibleERK6QRectFdd(void *this_, QRectF* rect, qreal xmargin, qreal ymargin) {
   ((QScroller*)this_)->ensureVisible(*rect, xmargin, ymargin);
@@ -188,7 +188,7 @@ void C_ZN9QScroller13ensureVisibleERK6QRectFdd(void *this_, QRectF* rect, qreal 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:128
-// [-2] void ensureVisible(const class QRectF &, qreal, qreal, int)
+// [-2] void ensureVisible(const QRectF &, qreal, qreal, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller13ensureVisibleERK6QRectFddi(void *this_, QRectF* rect, qreal xmargin, qreal ymargin, int scrollTime) {
   ((QScroller*)this_)->ensureVisible(*rect, xmargin, ymargin, scrollTime);
@@ -204,7 +204,7 @@ void C_ZN9QScroller18resendPrepareEventEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:132
-// [-2] void stateChanged(class QScroller::State)
+// [-2] void stateChanged(QScroller::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller12stateChangedENS_5StateE(void *this_, QScroller::State newstate) {
   ((QScroller*)this_)->stateChanged(newstate);
@@ -212,7 +212,7 @@ void C_ZN9QScroller12stateChangedENS_5StateE(void *this_, QScroller::State newst
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:133
-// [-2] void scrollerPropertiesChanged(const class QScrollerProperties &)
+// [-2] void scrollerPropertiesChanged(const QScrollerProperties &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *this_, QScrollerProperties* arg0) {
   ((QScroller*)this_)->scrollerPropertiesChanged(*arg0);

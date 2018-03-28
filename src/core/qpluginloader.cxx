@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQPluginLoader : public QPluginLoader {
 public:
   virtual ~MyQPluginLoader() {}
-// void QPluginLoader(class QObject *)
+// void QPluginLoader(QObject *)
 MyQPluginLoader(QObject * parent) : QPluginLoader(parent) {}
-// void QPluginLoader(const class QString &, class QObject *)
+// void QPluginLoader(const QString &, QObject *)
 MyQPluginLoader(const QString & fileName, QObject * parent) : QPluginLoader(fileName, parent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK13QPluginLoader10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:62
-// [-2] void QPluginLoader(class QObject *)
+// [-2] void QPluginLoader(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
   return  new QPluginLoader(parent);
@@ -40,7 +40,7 @@ void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:63
-// [-2] void QPluginLoader(const class QString &, class QObject *)
+// [-2] void QPluginLoader(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QPluginLoaderC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
   return  new QPluginLoader(*fileName, parent);
@@ -105,7 +105,7 @@ bool C_ZNK13QPluginLoader8isLoadedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:76
-// [-2] void setFileName(const class QString &)
+// [-2] void setFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QPluginLoader11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QPluginLoader*)this_)->setFileName(*fileName);
@@ -134,7 +134,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:81
-// [-2] void setLoadHints(class QLibrary::LoadHints)
+// [-2] void setLoadHints(QLibrary::LoadHints)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QPluginLoader12setLoadHintsE6QFlagsIN8QLibrary8LoadHintEE(void *this_, QFlags<QLibrary::LoadHint> loadHints) {
   ((QPluginLoader*)this_)->setLoadHints(loadHints);

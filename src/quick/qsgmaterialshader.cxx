@@ -19,7 +19,7 @@ public:
 // void QSGMaterialShader()
 MyQSGMaterialShader() : QSGMaterialShader() {}
 // Protected Visibility=Default Availability=Available
-// void setShaderSourceFile(class QOpenGLShader::ShaderType, const class QString &)
+// void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
   virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void setShaderSourceFiles(class QOpenGLShader::ShaderType, const class QStringList &)
+// void setShaderSourceFiles(QOpenGLShader::ShaderType, const QStringList &)
   virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -96,7 +96,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:114
-// [-2] void setShaderSourceFile(class QOpenGLShader::ShaderType, const class QString &)
+// [-2] void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader19setShaderSourceFileE6QFlagsIN13QOpenGLShader13ShaderTypeBitEERK7QString(void *this_, QFlags<QOpenGLShader::ShaderTypeBit> type_, QString* sourceFile) {
   ((QSGMaterialShader*)this_)->QSGMaterialShader::setShaderSourceFile(type_, *sourceFile);
@@ -104,7 +104,7 @@ void C_ZN17QSGMaterialShader19setShaderSourceFileE6QFlagsIN13QOpenGLShader13Shad
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:115
-// [-2] void setShaderSourceFiles(class QOpenGLShader::ShaderType, const class QStringList &)
+// [-2] void setShaderSourceFiles(QOpenGLShader::ShaderType, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSGMaterialShader20setShaderSourceFilesE6QFlagsIN13QOpenGLShader13ShaderTypeBitEERK11QStringList(void *this_, QFlags<QOpenGLShader::ShaderTypeBit> type_, QStringList* sourceFiles) {
   ((QSGMaterialShader*)this_)->QSGMaterialShader::setShaderSourceFiles(type_, *sourceFiles);

@@ -39,7 +39,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickControls2/qquickstyle.h:51
-// [-2] void setStyle(const class QString &)
+// [-2] void setStyle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQuickStyle8setStyleERK7QString(QString* style) {
   QQuickStyle::setStyle(*style);
@@ -48,7 +48,7 @@ void C_ZN11QQuickStyle8setStyleERK7QString(QString* style) {
 // Public static Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtQuickControls2/qquickstyle.h:52
-// [-2] void setFallbackStyle(const class QString &)
+// [-2] void setFallbackStyle(const QString &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQuickStyle16setFallbackStyleERK7QString(QString* style) {

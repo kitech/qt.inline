@@ -18,11 +18,11 @@ public:
   virtual ~MyQTextCursor() {}
 // void QTextCursor()
 MyQTextCursor() : QTextCursor() {}
-// void QTextCursor(class QTextDocument *)
+// void QTextCursor(QTextDocument *)
 MyQTextCursor(QTextDocument * document) : QTextCursor(document) {}
-// void QTextCursor(class QTextFrame *)
+// void QTextCursor(QTextFrame *)
 MyQTextCursor(QTextFrame * frame) : QTextCursor(frame) {}
-// void QTextCursor(const class QTextBlock &)
+// void QTextCursor(const QTextBlock &)
 MyQTextCursor(const QTextBlock & block) : QTextCursor(block) {}
 };
 
@@ -36,7 +36,7 @@ void* C_ZN11QTextCursorC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:70
-// [-2] void QTextCursor(class QTextDocument *)
+// [-2] void QTextCursor(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2EP13QTextDocument(QTextDocument * document) {
   return  new QTextCursor(document);
@@ -44,7 +44,7 @@ void* C_ZN11QTextCursorC2EP13QTextDocument(QTextDocument * document) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:73
-// [-2] void QTextCursor(class QTextFrame *)
+// [-2] void QTextCursor(QTextFrame *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2EP10QTextFrame(QTextFrame * frame) {
   return  new QTextCursor(frame);
@@ -52,7 +52,7 @@ void* C_ZN11QTextCursorC2EP10QTextFrame(QTextFrame * frame) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:74
-// [-2] void QTextCursor(const class QTextBlock &)
+// [-2] void QTextCursor(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2ERK10QTextBlock(QTextBlock* block) {
   return  new QTextCursor(*block);
@@ -60,7 +60,7 @@ void* C_ZN11QTextCursorC2ERK10QTextBlock(QTextBlock* block) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:77
-// [8] QTextCursor & operator=(class QTextCursor &&)
+// [8] QTextCursor & operator=(QTextCursor &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursoraSEOS_(void *this_, QTextCursor && other) {
   auto& rv = ((QTextCursor*)this_)->operator=(other);
@@ -69,7 +69,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:79
-// [8] QTextCursor & operator=(const class QTextCursor &)
+// [8] QTextCursor & operator=(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursoraSERKS_(void *this_, QTextCursor* other) {
   auto& rv = ((QTextCursor*)this_)->operator=(*other);
@@ -86,7 +86,7 @@ void C_ZN11QTextCursorD2Ev(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtGui/qtextcursor.h:82
-// [-2] void swap(class QTextCursor &)
+// [-2] void swap(QTextCursor &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor4swapERS_(void *this_, QTextCursor* other) {
@@ -104,7 +104,7 @@ bool C_ZNK11QTextCursor6isNullEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:91
-// [-2] void setPosition(int, enum QTextCursor::MoveMode)
+// [-2] void setPosition(int, QTextCursor::MoveMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11setPositionEiNS_8MoveModeE(void *this_, int pos, QTextCursor::MoveMode mode) {
   ((QTextCursor*)this_)->setPosition(pos, mode);
@@ -139,7 +139,7 @@ int C_ZNK11QTextCursor6anchorEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:97
-// [-2] void insertText(const class QString &)
+// [-2] void insertText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor10insertTextERK7QString(void *this_, QString* text) {
   ((QTextCursor*)this_)->insertText(*text);
@@ -147,7 +147,7 @@ void C_ZN11QTextCursor10insertTextERK7QString(void *this_, QString* text) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:98
-// [-2] void insertText(const class QString &, const class QTextCharFormat &)
+// [-2] void insertText(const QString &, const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor10insertTextERK7QStringRK15QTextCharFormat(void *this_, QString* text, QTextCharFormat* format) {
   ((QTextCursor*)this_)->insertText(*text, *format);
@@ -155,7 +155,7 @@ void C_ZN11QTextCursor10insertTextERK7QStringRK15QTextCharFormat(void *this_, QS
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:131
-// [1] bool movePosition(enum QTextCursor::MoveOperation, enum QTextCursor::MoveMode, int)
+// [1] bool movePosition(QTextCursor::MoveOperation, QTextCursor::MoveMode, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QTextCursor12movePositionENS_13MoveOperationENS_8MoveModeEi(void *this_, QTextCursor::MoveOperation op, QTextCursor::MoveMode arg1, int n) {
   return (bool)((QTextCursor*)this_)->movePosition(op, arg1, n);
@@ -175,7 +175,7 @@ bool C_ZNK11QTextCursor16visualNavigationEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtGui/qtextcursor.h:134
-// [-2] void setVisualNavigation(_Bool)
+// [-2] void setVisualNavigation(bool)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor19setVisualNavigationEb(void *this_, bool b) {
@@ -208,7 +208,7 @@ int C_ZNK11QTextCursor17verticalMovementXEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtGui/qtextcursor.h:139
-// [-2] void setKeepPositionOnInsert(_Bool)
+// [-2] void setKeepPositionOnInsert(bool)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor23setKeepPositionOnInsertEb(void *this_, bool b) {
@@ -245,7 +245,7 @@ void C_ZN11QTextCursor18deletePreviousCharEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:151
-// [-2] void select(enum QTextCursor::SelectionType)
+// [-2] void select(QTextCursor::SelectionType)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor6selectENS_13SelectionTypeE(void *this_, QTextCursor::SelectionType selection) {
   ((QTextCursor*)this_)->select(selection);
@@ -345,7 +345,7 @@ return new QTextCharFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:167
-// [-2] void setCharFormat(const class QTextCharFormat &)
+// [-2] void setCharFormat(const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor13setCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
   ((QTextCursor*)this_)->setCharFormat(*format);
@@ -353,7 +353,7 @@ void C_ZN11QTextCursor13setCharFormatERK15QTextCharFormat(void *this_, QTextChar
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:168
-// [-2] void mergeCharFormat(const class QTextCharFormat &)
+// [-2] void mergeCharFormat(const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor15mergeCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* modifier) {
   ((QTextCursor*)this_)->mergeCharFormat(*modifier);
@@ -370,7 +370,7 @@ return new QTextBlockFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:171
-// [-2] void setBlockFormat(const class QTextBlockFormat &)
+// [-2] void setBlockFormat(const QTextBlockFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor14setBlockFormatERK16QTextBlockFormat(void *this_, QTextBlockFormat* format) {
   ((QTextCursor*)this_)->setBlockFormat(*format);
@@ -378,7 +378,7 @@ void C_ZN11QTextCursor14setBlockFormatERK16QTextBlockFormat(void *this_, QTextBl
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:172
-// [-2] void mergeBlockFormat(const class QTextBlockFormat &)
+// [-2] void mergeBlockFormat(const QTextBlockFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor16mergeBlockFormatERK16QTextBlockFormat(void *this_, QTextBlockFormat* modifier) {
   ((QTextCursor*)this_)->mergeBlockFormat(*modifier);
@@ -395,7 +395,7 @@ return new QTextCharFormat(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:175
-// [-2] void setBlockCharFormat(const class QTextCharFormat &)
+// [-2] void setBlockCharFormat(const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor18setBlockCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
   ((QTextCursor*)this_)->setBlockCharFormat(*format);
@@ -403,7 +403,7 @@ void C_ZN11QTextCursor18setBlockCharFormatERK15QTextCharFormat(void *this_, QTex
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:176
-// [-2] void mergeBlockCharFormat(const class QTextCharFormat &)
+// [-2] void mergeBlockCharFormat(const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor20mergeBlockCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* modifier) {
   ((QTextCursor*)this_)->mergeBlockCharFormat(*modifier);
@@ -454,7 +454,7 @@ void C_ZN11QTextCursor11insertBlockEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:184
-// [-2] void insertBlock(const class QTextBlockFormat &)
+// [-2] void insertBlock(const QTextBlockFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertBlockERK16QTextBlockFormat(void *this_, QTextBlockFormat* format) {
   ((QTextCursor*)this_)->insertBlock(*format);
@@ -462,7 +462,7 @@ void C_ZN11QTextCursor11insertBlockERK16QTextBlockFormat(void *this_, QTextBlock
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:185
-// [-2] void insertBlock(const class QTextBlockFormat &, const class QTextCharFormat &)
+// [-2] void insertBlock(const QTextBlockFormat &, const QTextCharFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertBlockERK16QTextBlockFormatRK15QTextCharFormat(void *this_, QTextBlockFormat* format, QTextCharFormat* charFormat) {
   ((QTextCursor*)this_)->insertBlock(*format, *charFormat);
@@ -470,7 +470,7 @@ void C_ZN11QTextCursor11insertBlockERK16QTextBlockFormatRK15QTextCharFormat(void
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:187
-// [8] QTextList * insertList(const class QTextListFormat &)
+// [8] QTextList * insertList(const QTextListFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursor10insertListERK15QTextListFormat(void *this_, QTextListFormat* format) {
   return (void*)((QTextCursor*)this_)->insertList(*format);
@@ -478,7 +478,7 @@ void* C_ZN11QTextCursor10insertListERK15QTextListFormat(void *this_, QTextListFo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:188
-// [8] QTextList * insertList(class QTextListFormat::Style)
+// [8] QTextList * insertList(QTextListFormat::Style)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursor10insertListEN15QTextListFormat5StyleE(void *this_, QTextListFormat::Style style) {
   return (void*)((QTextCursor*)this_)->insertList(style);
@@ -486,7 +486,7 @@ void* C_ZN11QTextCursor10insertListEN15QTextListFormat5StyleE(void *this_, QText
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:190
-// [8] QTextList * createList(const class QTextListFormat &)
+// [8] QTextList * createList(const QTextListFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursor10createListERK15QTextListFormat(void *this_, QTextListFormat* format) {
   return (void*)((QTextCursor*)this_)->createList(*format);
@@ -494,7 +494,7 @@ void* C_ZN11QTextCursor10createListERK15QTextListFormat(void *this_, QTextListFo
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:191
-// [8] QTextList * createList(class QTextListFormat::Style)
+// [8] QTextList * createList(QTextListFormat::Style)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursor10createListEN15QTextListFormat5StyleE(void *this_, QTextListFormat::Style style) {
   return (void*)((QTextCursor*)this_)->createList(style);
@@ -510,7 +510,7 @@ void* C_ZNK11QTextCursor11currentListEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:194
-// [8] QTextTable * insertTable(int, int, const class QTextTableFormat &)
+// [8] QTextTable * insertTable(int, int, const QTextTableFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursor11insertTableEiiRK16QTextTableFormat(void *this_, int rows, int cols, QTextTableFormat* format) {
   return (void*)((QTextCursor*)this_)->insertTable(rows, cols, *format);
@@ -534,7 +534,7 @@ void* C_ZNK11QTextCursor12currentTableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:198
-// [8] QTextFrame * insertFrame(const class QTextFrameFormat &)
+// [8] QTextFrame * insertFrame(const QTextFrameFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursor11insertFrameERK16QTextFrameFormat(void *this_, QTextFrameFormat* format) {
   return (void*)((QTextCursor*)this_)->insertFrame(*format);
@@ -550,7 +550,7 @@ void* C_ZNK11QTextCursor12currentFrameEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:201
-// [-2] void insertFragment(const class QTextDocumentFragment &)
+// [-2] void insertFragment(const QTextDocumentFragment &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor14insertFragmentERK21QTextDocumentFragment(void *this_, QTextDocumentFragment* fragment) {
   ((QTextCursor*)this_)->insertFragment(*fragment);
@@ -559,7 +559,7 @@ void C_ZN11QTextCursor14insertFragmentERK21QTextDocumentFragment(void *this_, QT
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextcursor.h:204
-// [-2] void insertHtml(const class QString &)
+// [-2] void insertHtml(const QString &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor10insertHtmlERK7QString(void *this_, QString* html) {
@@ -570,7 +570,7 @@ void C_ZN11QTextCursor10insertHtmlERK7QString(void *this_, QString* html) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qtextcursor.h:207
-// [-2] void insertImage(const class QTextImageFormat &, class QTextFrameFormat::Position)
+// [-2] void insertImage(const QTextImageFormat &, QTextFrameFormat::Position)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertImageERK16QTextImageFormatN16QTextFrameFormat8PositionE(void *this_, QTextImageFormat* format, QTextFrameFormat::Position alignment) {
@@ -580,7 +580,7 @@ void C_ZN11QTextCursor11insertImageERK16QTextImageFormatN16QTextFrameFormat8Posi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:208
-// [-2] void insertImage(const class QTextImageFormat &)
+// [-2] void insertImage(const QTextImageFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertImageERK16QTextImageFormat(void *this_, QTextImageFormat* format) {
   ((QTextCursor*)this_)->insertImage(*format);
@@ -588,7 +588,7 @@ void C_ZN11QTextCursor11insertImageERK16QTextImageFormat(void *this_, QTextImage
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:209
-// [-2] void insertImage(const class QString &)
+// [-2] void insertImage(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertImageERK7QString(void *this_, QString* name) {
   ((QTextCursor*)this_)->insertImage(*name);
@@ -597,7 +597,7 @@ void C_ZN11QTextCursor11insertImageERK7QString(void *this_, QString* name) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtGui/qtextcursor.h:210
-// [-2] void insertImage(const class QImage &, const class QString &)
+// [-2] void insertImage(const QImage &, const QString &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextCursor11insertImageERK6QImageRK7QString(void *this_, QImage* image, QString* name) {
@@ -631,7 +631,7 @@ void C_ZN11QTextCursor12endEditBlockEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:216
-// [1] bool operator!=(const class QTextCursor &)
+// [1] bool operator!=(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursorneERKS_(void *this_, QTextCursor* rhs) {
   return (bool)((QTextCursor*)this_)->operator!=(*rhs);
@@ -639,7 +639,7 @@ bool C_ZNK11QTextCursorneERKS_(void *this_, QTextCursor* rhs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:217
-// [1] bool operator<(const class QTextCursor &)
+// [1] bool operator<(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursorltERKS_(void *this_, QTextCursor* rhs) {
   return (bool)((QTextCursor*)this_)->operator<(*rhs);
@@ -647,7 +647,7 @@ bool C_ZNK11QTextCursorltERKS_(void *this_, QTextCursor* rhs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:218
-// [1] bool operator<=(const class QTextCursor &)
+// [1] bool operator<=(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursorleERKS_(void *this_, QTextCursor* rhs) {
   return (bool)((QTextCursor*)this_)->operator<=(*rhs);
@@ -655,7 +655,7 @@ bool C_ZNK11QTextCursorleERKS_(void *this_, QTextCursor* rhs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:219
-// [1] bool operator==(const class QTextCursor &)
+// [1] bool operator==(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursoreqERKS_(void *this_, QTextCursor* rhs) {
   return (bool)((QTextCursor*)this_)->operator==(*rhs);
@@ -663,7 +663,7 @@ bool C_ZNK11QTextCursoreqERKS_(void *this_, QTextCursor* rhs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:220
-// [1] bool operator>=(const class QTextCursor &)
+// [1] bool operator>=(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursorgeERKS_(void *this_, QTextCursor* rhs) {
   return (bool)((QTextCursor*)this_)->operator>=(*rhs);
@@ -671,7 +671,7 @@ bool C_ZNK11QTextCursorgeERKS_(void *this_, QTextCursor* rhs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:221
-// [1] bool operator>(const class QTextCursor &)
+// [1] bool operator>(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursorgtERKS_(void *this_, QTextCursor* rhs) {
   return (bool)((QTextCursor*)this_)->operator>(*rhs);
@@ -679,7 +679,7 @@ bool C_ZNK11QTextCursorgtERKS_(void *this_, QTextCursor* rhs) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:223
-// [1] bool isCopyOf(const class QTextCursor &)
+// [1] bool isCopyOf(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextCursor8isCopyOfERKS_(void *this_, QTextCursor* other) {
   return (bool)((QTextCursor*)this_)->isCopyOf(*other);

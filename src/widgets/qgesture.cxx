@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQGesture : public QGesture {
 public:
   virtual ~MyQGesture() {}
-// void QGesture(class QObject *)
+// void QGesture(QObject *)
 MyQGesture(QObject * parent) : QGesture(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK8QGesture10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:73
-// [-2] void QGesture(class QObject *)
+// [-2] void QGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QGestureC2EP7QObject(QObject * parent) {
   return  new QGesture(parent);
@@ -71,7 +71,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:81
-// [-2] void setHotSpot(const class QPointF &)
+// [-2] void setHotSpot(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGesture10setHotSpotERK7QPointF(void *this_, QPointF* value) {
   ((QGesture*)this_)->setHotSpot(*value);
@@ -95,7 +95,7 @@ void C_ZN8QGesture12unsetHotSpotEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:90
-// [-2] void setGestureCancelPolicy(enum QGesture::GestureCancelPolicy)
+// [-2] void setGestureCancelPolicy(QGesture::GestureCancelPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGesture22setGestureCancelPolicyENS_19GestureCancelPolicyE(void *this_, QGesture::GestureCancelPolicy policy) {
   ((QGesture*)this_)->setGestureCancelPolicy(policy);

@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQWidgetItem : public QWidgetItem {
 public:
   virtual ~MyQWidgetItem() {}
-// void QWidgetItem(class QWidget *)
+// void QWidgetItem(QWidget *)
 MyQWidgetItem(QWidget * w) : QWidgetItem(w) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:126
-// [-2] void QWidgetItem(class QWidget *)
+// [-2] void QWidgetItem(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWidgetItemC2EP7QWidget(QWidget * w) {
   return  new QWidgetItem(w);
@@ -80,7 +80,7 @@ bool C_ZNK11QWidgetItem7isEmptyEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:134
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWidgetItem11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QWidgetItem*)this_)->setGeometry(*arg0);

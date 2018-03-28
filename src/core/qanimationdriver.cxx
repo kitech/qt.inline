@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQAnimationDriver : public QAnimationDriver {
 public:
   virtual ~MyQAnimationDriver() {}
-// void QAnimationDriver(class QObject *)
+// void QAnimationDriver(QObject *)
 MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // Protected Visibility=Default Availability=Available
 // void advanceAnimation(qint64)
@@ -90,7 +90,7 @@ void* C_ZNK16QAnimationDriver10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:139
-// [-2] void QAnimationDriver(class QObject *)
+// [-2] void QAnimationDriver(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAnimationDriverC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAnimationDriver*)(0);

@@ -126,7 +126,7 @@ int C_ZNK14QVersionNumber12segmentCountEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:276
-// [1] bool isPrefixOf(const class QVersionNumber &)
+// [1] bool isPrefixOf(const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QVersionNumber10isPrefixOfERKS_(void *this_, QVersionNumber* other) {
   return (bool)((QVersionNumber*)this_)->isPrefixOf(*other);
@@ -134,7 +134,7 @@ bool C_ZNK14QVersionNumber10isPrefixOfERKS_(void *this_, QVersionNumber* other) 
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:278
-// [4] int compare(const class QVersionNumber &, const class QVersionNumber &)
+// [4] int compare(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QVersionNumber7compareERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
   return (int)QVersionNumber::compare(*v1, *v2);
@@ -142,7 +142,7 @@ int C_ZN14QVersionNumber7compareERKS_S1_(QVersionNumber* v1, QVersionNumber* v2)
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:280
-// [8] QVersionNumber commonPrefix(const class QVersionNumber &, const class QVersionNumber &)
+// [8] QVersionNumber commonPrefix(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber12commonPrefixERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
   auto rv = QVersionNumber::commonPrefix(*v1, *v2);
@@ -160,7 +160,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:284
-// [8] QVersionNumber fromString(const class QString &, int *)
+// [8] QVersionNumber fromString(const QString &, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber10fromStringERK7QStringPi(QString* string, int * suffixIndex) {
   auto rv = QVersionNumber::fromString(*string, suffixIndex);
@@ -170,7 +170,7 @@ return new QVersionNumber(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qversionnumber.h:286
-// [8] QVersionNumber fromString(class QLatin1String, int *)
+// [8] QVersionNumber fromString(QLatin1String, int *)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber10fromStringE13QLatin1StringPi(QLatin1String* string, int * suffixIndex) {
@@ -182,7 +182,7 @@ return new QVersionNumber(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qversionnumber.h:287
-// [8] QVersionNumber fromString(class QStringView, int *)
+// [8] QVersionNumber fromString(QStringView, int *)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView* string, int * suffixIndex) {

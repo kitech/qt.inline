@@ -18,9 +18,9 @@ public:
   virtual ~MyQQmlFile() {}
 // void QQmlFile()
 MyQQmlFile() : QQmlFile() {}
-// void QQmlFile(class QQmlEngine *, const class QUrl &)
+// void QQmlFile(QQmlEngine *, const QUrl &)
 MyQQmlFile(QQmlEngine * arg0, const QUrl & arg1) : QQmlFile(arg0, arg1) {}
-// void QQmlFile(class QQmlEngine *, const class QString &)
+// void QQmlFile(QQmlEngine *, const QString &)
 MyQQmlFile(QQmlEngine * arg0, const QString & arg1) : QQmlFile(arg0, arg1) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZN8QQmlFileC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:57
-// [-2] void QQmlFile(class QQmlEngine *, const class QUrl &)
+// [-2] void QQmlFile(QQmlEngine *, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFileC2EP10QQmlEngineRK4QUrl(QQmlEngine * arg0, QUrl* arg1) {
   return  new QQmlFile(arg0, *arg1);
@@ -42,7 +42,7 @@ void* C_ZN8QQmlFileC2EP10QQmlEngineRK4QUrl(QQmlEngine * arg0, QUrl* arg1) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:58
-// [-2] void QQmlFile(class QQmlEngine *, const class QString &)
+// [-2] void QQmlFile(QQmlEngine *, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFileC2EP10QQmlEngineRK7QString(QQmlEngine * arg0, QString* arg1) {
   return  new QQmlFile(arg0, *arg1);
@@ -140,7 +140,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:77
-// [-2] void load(class QQmlEngine *, const class QUrl &)
+// [-2] void load(QQmlEngine *, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QQmlFile4loadEP10QQmlEngineRK4QUrl(void *this_, QQmlEngine * arg0, QUrl* arg1) {
   ((QQmlFile*)this_)->load(arg0, *arg1);
@@ -148,7 +148,7 @@ void C_ZN8QQmlFile4loadEP10QQmlEngineRK4QUrl(void *this_, QQmlEngine * arg0, QUr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:78
-// [-2] void load(class QQmlEngine *, const class QString &)
+// [-2] void load(QQmlEngine *, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QQmlFile4loadEP10QQmlEngineRK7QString(void *this_, QQmlEngine * arg0, QString* arg1) {
   ((QQmlFile*)this_)->load(arg0, *arg1);
@@ -164,7 +164,7 @@ void C_ZN8QQmlFile5clearEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:81
-// [-2] void clear(class QObject *)
+// [-2] void clear(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QQmlFile5clearEP7QObject(void *this_, QObject * arg0) {
   ((QQmlFile*)this_)->clear(arg0);
@@ -172,7 +172,7 @@ void C_ZN8QQmlFile5clearEP7QObject(void *this_, QObject * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:84
-// [1] bool connectFinished(class QObject *, const char *)
+// [1] bool connectFinished(QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile15connectFinishedEP7QObjectPKc(void *this_, QObject * arg0, const char * arg1) {
   return (bool)((QQmlFile*)this_)->connectFinished(arg0, arg1);
@@ -180,7 +180,7 @@ bool C_ZN8QQmlFile15connectFinishedEP7QObjectPKc(void *this_, QObject * arg0, co
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:85
-// [1] bool connectFinished(class QObject *, int)
+// [1] bool connectFinished(QObject *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile15connectFinishedEP7QObjecti(void *this_, QObject * arg0, int arg1) {
   return (bool)((QQmlFile*)this_)->connectFinished(arg0, arg1);
@@ -188,7 +188,7 @@ bool C_ZN8QQmlFile15connectFinishedEP7QObjecti(void *this_, QObject * arg0, int 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:86
-// [1] bool connectDownloadProgress(class QObject *, const char *)
+// [1] bool connectDownloadProgress(QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile23connectDownloadProgressEP7QObjectPKc(void *this_, QObject * arg0, const char * arg1) {
   return (bool)((QQmlFile*)this_)->connectDownloadProgress(arg0, arg1);
@@ -196,7 +196,7 @@ bool C_ZN8QQmlFile23connectDownloadProgressEP7QObjectPKc(void *this_, QObject * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:87
-// [1] bool connectDownloadProgress(class QObject *, int)
+// [1] bool connectDownloadProgress(QObject *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile23connectDownloadProgressEP7QObjecti(void *this_, QObject * arg0, int arg1) {
   return (bool)((QQmlFile*)this_)->connectDownloadProgress(arg0, arg1);
@@ -204,7 +204,7 @@ bool C_ZN8QQmlFile23connectDownloadProgressEP7QObjecti(void *this_, QObject * ar
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:90
-// [1] bool isSynchronous(const class QString &)
+// [1] bool isSynchronous(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile13isSynchronousERK7QString(QString* url) {
   return (bool)QQmlFile::isSynchronous(*url);
@@ -212,7 +212,7 @@ bool C_ZN8QQmlFile13isSynchronousERK7QString(QString* url) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:91
-// [1] bool isSynchronous(const class QUrl &)
+// [1] bool isSynchronous(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile13isSynchronousERK4QUrl(QUrl* url) {
   return (bool)QQmlFile::isSynchronous(*url);
@@ -220,7 +220,7 @@ bool C_ZN8QQmlFile13isSynchronousERK4QUrl(QUrl* url) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:93
-// [1] bool isLocalFile(const class QString &)
+// [1] bool isLocalFile(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile11isLocalFileERK7QString(QString* url) {
   return (bool)QQmlFile::isLocalFile(*url);
@@ -228,7 +228,7 @@ bool C_ZN8QQmlFile11isLocalFileERK7QString(QString* url) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:94
-// [1] bool isLocalFile(const class QUrl &)
+// [1] bool isLocalFile(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QQmlFile11isLocalFileERK4QUrl(QUrl* url) {
   return (bool)QQmlFile::isLocalFile(*url);
@@ -236,7 +236,7 @@ bool C_ZN8QQmlFile11isLocalFileERK4QUrl(QUrl* url) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:96
-// [8] QString urlToLocalFileOrQrc(const class QString &)
+// [8] QString urlToLocalFileOrQrc(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFile19urlToLocalFileOrQrcERK7QString(QString* arg0) {
   auto rv = QQmlFile::urlToLocalFileOrQrc(*arg0);
@@ -245,7 +245,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:97
-// [8] QString urlToLocalFileOrQrc(const class QUrl &)
+// [8] QString urlToLocalFileOrQrc(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlFile19urlToLocalFileOrQrcERK4QUrl(QUrl* arg0) {
   auto rv = QQmlFile::urlToLocalFileOrQrc(*arg0);

@@ -18,7 +18,7 @@ public:
   virtual ~MyQPersistentModelIndex() {}
 // void QPersistentModelIndex()
 MyQPersistentModelIndex() : QPersistentModelIndex() {}
-// void QPersistentModelIndex(const class QModelIndex &)
+// void QPersistentModelIndex(const QModelIndex &)
 MyQPersistentModelIndex(const QModelIndex & index) : QPersistentModelIndex(index) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZN21QPersistentModelIndexC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:108
-// [-2] void QPersistentModelIndex(const class QModelIndex &)
+// [-2] void QPersistentModelIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(QModelIndex* index) {
   return  new QPersistentModelIndex(*index);
@@ -47,7 +47,7 @@ void C_ZN21QPersistentModelIndexD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:111
-// [1] bool operator<(const class QPersistentModelIndex &)
+// [1] bool operator<(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexltERKS_(void *this_, QPersistentModelIndex* other) {
   return (bool)((QPersistentModelIndex*)this_)->operator<(*other);
@@ -55,7 +55,7 @@ bool C_ZNK21QPersistentModelIndexltERKS_(void *this_, QPersistentModelIndex* oth
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:112
-// [1] bool operator==(const class QPersistentModelIndex &)
+// [1] bool operator==(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexeqERKS_(void *this_, QPersistentModelIndex* other) {
   return (bool)((QPersistentModelIndex*)this_)->operator==(*other);
@@ -63,7 +63,7 @@ bool C_ZNK21QPersistentModelIndexeqERKS_(void *this_, QPersistentModelIndex* oth
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:113
-// [1] bool operator!=(const class QPersistentModelIndex &)
+// [1] bool operator!=(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexneERKS_(void *this_, QPersistentModelIndex* other) {
   return (bool)((QPersistentModelIndex*)this_)->operator!=(*other);
@@ -71,7 +71,7 @@ bool C_ZNK21QPersistentModelIndexneERKS_(void *this_, QPersistentModelIndex* oth
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:115
-// [8] QPersistentModelIndex & operator=(const class QPersistentModelIndex &)
+// [8] QPersistentModelIndex & operator=(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexaSERKS_(void *this_, QPersistentModelIndex* other) {
   auto& rv = ((QPersistentModelIndex*)this_)->operator=(*other);
@@ -80,7 +80,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:119
-// [8] QPersistentModelIndex & operator=(class QPersistentModelIndex &&)
+// [8] QPersistentModelIndex & operator=(QPersistentModelIndex &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexaSEOS_(void *this_, QPersistentModelIndex && other) {
   auto& rv = ((QPersistentModelIndex*)this_)->operator=(other);
@@ -90,7 +90,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qabstractitemmodel.h:122
-// [-2] void swap(class QPersistentModelIndex &)
+// [-2] void swap(QPersistentModelIndex &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex* other) {
@@ -100,7 +100,7 @@ void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex* ot
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:123
-// [1] bool operator==(const class QModelIndex &)
+// [1] bool operator==(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexeqERK11QModelIndex(void *this_, QModelIndex* other) {
   return (bool)((QPersistentModelIndex*)this_)->operator==(*other);
@@ -108,7 +108,7 @@ bool C_ZNK21QPersistentModelIndexeqERK11QModelIndex(void *this_, QModelIndex* ot
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:124
-// [1] bool operator!=(const class QModelIndex &)
+// [1] bool operator!=(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexneERK11QModelIndex(void *this_, QModelIndex* other) {
   return (bool)((QPersistentModelIndex*)this_)->operator!=(*other);
@@ -116,7 +116,7 @@ bool C_ZNK21QPersistentModelIndexneERK11QModelIndex(void *this_, QModelIndex* ot
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:125
-// [8] QPersistentModelIndex & operator=(const class QModelIndex &)
+// [8] QPersistentModelIndex & operator=(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexaSERK11QModelIndex(void *this_, QModelIndex* other) {
   auto& rv = ((QPersistentModelIndex*)this_)->operator=(*other);

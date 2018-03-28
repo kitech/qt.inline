@@ -18,9 +18,9 @@ public:
   virtual ~MyQImageReader() {}
 // void QImageReader()
 MyQImageReader() : QImageReader() {}
-// void QImageReader(class QIODevice *, const class QByteArray &)
+// void QImageReader(QIODevice *, const QByteArray &)
 MyQImageReader(QIODevice * device, const QByteArray & format) : QImageReader(device, format) {}
-// void QImageReader(const class QString &, const class QByteArray &)
+// void QImageReader(const QString &, const QByteArray &)
 MyQImageReader(const QString & fileName, const QByteArray & format) : QImageReader(fileName, format) {}
 };
 
@@ -34,7 +34,7 @@ void* C_ZN12QImageReaderC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:72
-// [-2] void QImageReader(class QIODevice *, const class QByteArray &)
+// [-2] void QImageReader(QIODevice *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
   return  new QImageReader(device, *format);
@@ -42,7 +42,7 @@ void* C_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteAr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:73
-// [-2] void QImageReader(const class QString &, const class QByteArray &)
+// [-2] void QImageReader(const QString &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReaderC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
   return  new QImageReader(*fileName, *format);
@@ -57,7 +57,7 @@ void C_ZN12QImageReaderD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:76
-// [-2] void setFormat(const class QByteArray &)
+// [-2] void setFormat(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader9setFormatERK10QByteArray(void *this_, QByteArray* format) {
   ((QImageReader*)this_)->setFormat(*format);
@@ -74,7 +74,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:79
-// [-2] void setAutoDetectImageFormat(_Bool)
+// [-2] void setAutoDetectImageFormat(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader24setAutoDetectImageFormatEb(void *this_, bool enabled) {
   ((QImageReader*)this_)->setAutoDetectImageFormat(enabled);
@@ -90,7 +90,7 @@ bool C_ZNK12QImageReader21autoDetectImageFormatEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:82
-// [-2] void setDecideFormatFromContent(_Bool)
+// [-2] void setDecideFormatFromContent(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader26setDecideFormatFromContentEb(void *this_, bool ignored) {
   ((QImageReader*)this_)->setDecideFormatFromContent(ignored);
@@ -106,7 +106,7 @@ bool C_ZNK12QImageReader23decideFormatFromContentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:85
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QImageReader*)this_)->setDevice(device);
@@ -122,7 +122,7 @@ void* C_ZNK12QImageReader6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:88
-// [-2] void setFileName(const class QString &)
+// [-2] void setFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader11setFileNameERK7QString(void *this_, QString* fileName) {
   ((QImageReader*)this_)->setFileName(*fileName);
@@ -172,7 +172,7 @@ return new QStringList(rv);
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:96
-// [8] QString text(const class QString &)
+// [8] QString text(const QString &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QImageReader4textERK7QString(void *this_, QString* key) {
@@ -183,7 +183,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:98
-// [-2] void setClipRect(const class QRect &)
+// [-2] void setClipRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader11setClipRectERK5QRect(void *this_, QRect* rect) {
   ((QImageReader*)this_)->setClipRect(*rect);
@@ -200,7 +200,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:101
-// [-2] void setScaledSize(const class QSize &)
+// [-2] void setScaledSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader13setScaledSizeERK5QSize(void *this_, QSize* size) {
   ((QImageReader*)this_)->setScaledSize(*size);
@@ -239,7 +239,7 @@ int C_ZNK12QImageReader7qualityEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:107
-// [-2] void setScaledClipRect(const class QRect &)
+// [-2] void setScaledClipRect(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader17setScaledClipRectERK5QRect(void *this_, QRect* rect) {
   ((QImageReader*)this_)->setScaledClipRect(*rect);
@@ -257,7 +257,7 @@ return new QRect(rv);
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtGui/qimagereader.h:110
-// [-2] void setBackgroundColor(const class QColor &)
+// [-2] void setBackgroundColor(const QColor &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader18setBackgroundColorERK6QColor(void *this_, QColor* color) {
@@ -302,7 +302,7 @@ QImageIOHandler::Transformations C_ZNK12QImageReader14transformationEv(void *thi
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtGui/qimagereader.h:117
-// [-2] void setAutoTransform(_Bool)
+// [-2] void setAutoTransform(bool)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN12QImageReader16setAutoTransformEb(void *this_, bool enabled) {
@@ -374,7 +374,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:128
-// [1] bool read(class QImage *)
+// [1] bool read(QImage *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QImageReader4readEP6QImage(void *this_, QImage * image) {
   return (bool)((QImageReader*)this_)->read(image);
@@ -457,7 +457,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtGui/qimagereader.h:141
-// [1] bool supportsOption(class QImageIOHandler::ImageOption)
+// [1] bool supportsOption(QImageIOHandler::ImageOption)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
@@ -467,7 +467,7 @@ bool C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:143
-// [8] QByteArray imageFormat(const class QString &)
+// [8] QByteArray imageFormat(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReader11imageFormatERK7QString(QString* fileName) {
   auto rv = QImageReader::imageFormat(*fileName);
@@ -476,7 +476,7 @@ return new QByteArray(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:144
-// [8] QByteArray imageFormat(class QIODevice *)
+// [8] QByteArray imageFormat(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * device) {
   auto rv = QImageReader::imageFormat(device);

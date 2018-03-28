@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQQuickTransform : public QQuickTransform {
 public:
   virtual ~MyQQuickTransform() {}
-// void QQuickTransform(class QObject *)
+// void QQuickTransform(QObject *)
 MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
 // Protected Visibility=Default Availability=Available
 // void update()
@@ -50,7 +50,7 @@ void* C_ZNK15QQuickTransform10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:62
-// [-2] void QQuickTransform(class QObject *)
+// [-2] void QQuickTransform(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QQuickTransformC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQQuickTransform*)(0);
@@ -66,7 +66,7 @@ void C_ZN15QQuickTransformD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:65
-// [-2] void appendToItem(class QQuickItem *)
+// [-2] void appendToItem(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QQuickTransform12appendToItemEP10QQuickItem(void *this_, QQuickItem * arg0) {
   ((QQuickTransform*)this_)->appendToItem(arg0);
@@ -74,7 +74,7 @@ void C_ZN15QQuickTransform12appendToItemEP10QQuickItem(void *this_, QQuickItem *
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:66
-// [-2] void prependToItem(class QQuickItem *)
+// [-2] void prependToItem(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QQuickTransform13prependToItemEP10QQuickItem(void *this_, QQuickItem * arg0) {
   ((QQuickTransform*)this_)->prependToItem(arg0);
@@ -82,7 +82,7 @@ void C_ZN15QQuickTransform13prependToItemEP10QQuickItem(void *this_, QQuickItem 
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:68
-// [-2] void applyTo(class QMatrix4x4 *)
+// [-2] void applyTo(QMatrix4x4 *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK15QQuickTransform7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
   ((QQuickTransform*)this_)->applyTo(matrix);

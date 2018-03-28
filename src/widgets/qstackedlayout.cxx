@@ -18,9 +18,9 @@ public:
   virtual ~MyQStackedLayout() {}
 // void QStackedLayout()
 MyQStackedLayout() : QStackedLayout() {}
-// void QStackedLayout(class QWidget *)
+// void QStackedLayout(QWidget *)
 MyQStackedLayout(QWidget * parent) : QStackedLayout(parent) {}
-// void QStackedLayout(class QLayout *)
+// void QStackedLayout(QLayout *)
 MyQStackedLayout(QLayout * parentLayout) : QStackedLayout(parentLayout) {}
 };
 
@@ -42,7 +42,7 @@ void* C_ZN14QStackedLayoutC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:67
-// [-2] void QStackedLayout(class QWidget *)
+// [-2] void QStackedLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2EP7QWidget(QWidget * parent) {
   return  new QStackedLayout(parent);
@@ -50,7 +50,7 @@ void* C_ZN14QStackedLayoutC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:68
-// [-2] void QStackedLayout(class QLayout *)
+// [-2] void QStackedLayout(QLayout *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2EP7QLayout(QLayout * parentLayout) {
   return  new QStackedLayout(parentLayout);
@@ -65,7 +65,7 @@ void C_ZN14QStackedLayoutD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:71
-// [4] int addWidget(class QWidget *)
+// [4] int addWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
   return (int)((QStackedLayout*)this_)->addWidget(w);
@@ -73,7 +73,7 @@ int C_ZN14QStackedLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:72
-// [4] int insertWidget(int, class QWidget *)
+// [4] int insertWidget(int, QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedLayout12insertWidgetEiP7QWidget(void *this_, int index, QWidget * w) {
   return (int)((QStackedLayout*)this_)->insertWidget(index, w);
@@ -121,7 +121,7 @@ QStackedLayout::StackingMode C_ZNK14QStackedLayout12stackingModeEv(void *this_) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:81
-// [-2] void setStackingMode(enum QStackedLayout::StackingMode)
+// [-2] void setStackingMode(QStackedLayout::StackingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedLayout15setStackingModeENS_12StackingModeE(void *this_, QStackedLayout::StackingMode stackingMode) {
   ((QStackedLayout*)this_)->setStackingMode(stackingMode);
@@ -129,7 +129,7 @@ void C_ZN14QStackedLayout15setStackingModeENS_12StackingModeE(void *this_, QStac
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:84
-// [-2] void addItem(class QLayoutItem *)
+// [-2] void addItem(QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * item) {
   ((QStackedLayout*)this_)->addItem(item);
@@ -171,7 +171,7 @@ void* C_ZN14QStackedLayout6takeAtEi(void *this_, int arg0) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:89
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedLayout11setGeometryERK5QRect(void *this_, QRect* rect) {
   ((QStackedLayout*)this_)->setGeometry(*rect);
@@ -219,7 +219,7 @@ void C_ZN14QStackedLayout15setCurrentIndexEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:99
-// [-2] void setCurrentWidget(class QWidget *)
+// [-2] void setCurrentWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedLayout16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QStackedLayout*)this_)->setCurrentWidget(w);

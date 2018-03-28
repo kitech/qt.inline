@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQGraphicsProxyWidget : public QGraphicsProxyWidget {
 public:
   virtual ~MyQGraphicsProxyWidget() {}
-// void QGraphicsProxyWidget(class QGraphicsItem *, Qt::WindowFlags)
+// void QGraphicsProxyWidget(QGraphicsItem *, Qt::WindowFlags)
 MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGraphicsProxyWidget(parent, wFlags) {}
 // Protected virtual Visibility=Default Availability=Available
-// QVariant itemChange(enum QGraphicsItem::GraphicsItemChange, const class QVariant &)
+// QVariant itemChange(QGraphicsItem::GraphicsItemChange, const QVariant &)
   virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"itemChange", &handled, 2, (uint64_t)change, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -33,7 +33,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -46,7 +46,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -59,7 +59,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(class QShowEvent *)
+// void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -71,7 +71,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(class QHideEvent *)
+// void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hideEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -83,7 +83,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
+// void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
   virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -95,7 +95,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
+// void dragEnterEvent(QGraphicsSceneDragDropEvent *)
   virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -107,7 +107,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
+// void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
   virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -119,7 +119,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
+// void dragMoveEvent(QGraphicsSceneDragDropEvent *)
   virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -131,7 +131,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(class QGraphicsSceneDragDropEvent *)
+// void dropEvent(QGraphicsSceneDragDropEvent *)
   virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -143,7 +143,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
+// void hoverEnterEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -155,7 +155,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
+// void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -167,7 +167,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
+// void hoverMoveEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -179,7 +179,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void grabMouseEvent(class QEvent *)
+// void grabMouseEvent(QEvent *)
   virtual void grabMouseEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"grabMouseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -191,7 +191,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void ungrabMouseEvent(class QEvent *)
+// void ungrabMouseEvent(QEvent *)
   virtual void ungrabMouseEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"ungrabMouseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -203,7 +203,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
+// void mouseMoveEvent(QGraphicsSceneMouseEvent *)
   virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -215,7 +215,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QGraphicsSceneMouseEvent *)
+// void mousePressEvent(QGraphicsSceneMouseEvent *)
   virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -227,7 +227,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
+// void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
   virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -239,7 +239,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
+// void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
   virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -251,7 +251,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QGraphicsSceneWheelEvent *)
+// void wheelEvent(QGraphicsSceneWheelEvent *)
   virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -263,7 +263,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -275,7 +275,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(class QKeyEvent *)
+// void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -287,7 +287,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -299,7 +299,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -311,7 +311,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(_Bool)
+// bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -337,7 +337,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void inputMethodEvent(class QInputMethodEvent *)
+// void inputMethodEvent(QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -349,7 +349,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -362,7 +362,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QGraphicsSceneResizeEvent *)
+// void resizeEvent(QGraphicsSceneResizeEvent *)
   virtual void resizeEvent(QGraphicsSceneResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -374,7 +374,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
   }
 
 // Protected Visibility=Default Availability=Available
-// QGraphicsProxyWidget * newProxyWidget(const class QWidget *)
+// QGraphicsProxyWidget * newProxyWidget(const QWidget *)
   virtual QGraphicsProxyWidget * newProxyWidget(const QWidget * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"newProxyWidget", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -390,7 +390,7 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:76
-// [16] QVariant itemChange(enum QGraphicsItem::GraphicsItemChange, const class QVariant &)
+// [16] QVariant itemChange(QGraphicsItem::GraphicsItemChange, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsProxyWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant(void *this_, QGraphicsItem::GraphicsItemChange change, QVariant* value) {
   auto rv = ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::itemChange(change, *value);
@@ -399,7 +399,7 @@ return new QVariant(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:78
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QGraphicsProxyWidget5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::event(event);
@@ -407,7 +407,7 @@ bool C_ZN20QGraphicsProxyWidget5eventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:79
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QGraphicsProxyWidget11eventFilterEP7QObjectP6QEvent(void *this_, QObject * object, QEvent * event) {
   return (bool)((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::eventFilter(object, event);
@@ -415,7 +415,7 @@ bool C_ZN20QGraphicsProxyWidget11eventFilterEP7QObjectP6QEvent(void *this_, QObj
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:81
-// [-2] void showEvent(class QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::showEvent(event);
@@ -423,7 +423,7 @@ void C_ZN20QGraphicsProxyWidget9showEventEP10QShowEvent(void *this_, QShowEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:82
-// [-2] void hideEvent(class QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget9hideEventEP10QHideEvent(void *this_, QHideEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::hideEvent(event);
@@ -431,7 +431,7 @@ void C_ZN20QGraphicsProxyWidget9hideEventEP10QHideEvent(void *this_, QHideEvent 
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:85
-// [-2] void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
+// [-2] void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget16contextMenuEventEP30QGraphicsSceneContextMenuEvent(void *this_, QGraphicsSceneContextMenuEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::contextMenuEvent(event);
@@ -439,7 +439,7 @@ void C_ZN20QGraphicsProxyWidget16contextMenuEventEP30QGraphicsSceneContextMenuEv
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:89
-// [-2] void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
+// [-2] void dragEnterEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget14dragEnterEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::dragEnterEvent(event);
@@ -447,7 +447,7 @@ void C_ZN20QGraphicsProxyWidget14dragEnterEventEP27QGraphicsSceneDragDropEvent(v
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:90
-// [-2] void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
+// [-2] void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget14dragLeaveEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::dragLeaveEvent(event);
@@ -455,7 +455,7 @@ void C_ZN20QGraphicsProxyWidget14dragLeaveEventEP27QGraphicsSceneDragDropEvent(v
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:91
-// [-2] void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
+// [-2] void dragMoveEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget13dragMoveEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::dragMoveEvent(event);
@@ -463,7 +463,7 @@ void C_ZN20QGraphicsProxyWidget13dragMoveEventEP27QGraphicsSceneDragDropEvent(vo
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:92
-// [-2] void dropEvent(class QGraphicsSceneDragDropEvent *)
+// [-2] void dropEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget9dropEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::dropEvent(event);
@@ -471,7 +471,7 @@ void C_ZN20QGraphicsProxyWidget9dropEventEP27QGraphicsSceneDragDropEvent(void *t
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:95
-// [-2] void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
+// [-2] void hoverEnterEvent(QGraphicsSceneHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget15hoverEnterEventEP24QGraphicsSceneHoverEvent(void *this_, QGraphicsSceneHoverEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::hoverEnterEvent(event);
@@ -479,7 +479,7 @@ void C_ZN20QGraphicsProxyWidget15hoverEnterEventEP24QGraphicsSceneHoverEvent(voi
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:96
-// [-2] void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
+// [-2] void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void *this_, QGraphicsSceneHoverEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::hoverLeaveEvent(event);
@@ -487,7 +487,7 @@ void C_ZN20QGraphicsProxyWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent(voi
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:97
-// [-2] void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
+// [-2] void hoverMoveEvent(QGraphicsSceneHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent(void *this_, QGraphicsSceneHoverEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::hoverMoveEvent(event);
@@ -495,7 +495,7 @@ void C_ZN20QGraphicsProxyWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent(void
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:98
-// [-2] void grabMouseEvent(class QEvent *)
+// [-2] void grabMouseEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget14grabMouseEventEP6QEvent(void *this_, QEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::grabMouseEvent(event);
@@ -503,7 +503,7 @@ void C_ZN20QGraphicsProxyWidget14grabMouseEventEP6QEvent(void *this_, QEvent * e
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:99
-// [-2] void ungrabMouseEvent(class QEvent *)
+// [-2] void ungrabMouseEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget16ungrabMouseEventEP6QEvent(void *this_, QEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::ungrabMouseEvent(event);
@@ -511,7 +511,7 @@ void C_ZN20QGraphicsProxyWidget16ungrabMouseEventEP6QEvent(void *this_, QEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:101
-// [-2] void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
+// [-2] void mouseMoveEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget14mouseMoveEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::mouseMoveEvent(event);
@@ -519,7 +519,7 @@ void C_ZN20QGraphicsProxyWidget14mouseMoveEventEP24QGraphicsSceneMouseEvent(void
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:102
-// [-2] void mousePressEvent(class QGraphicsSceneMouseEvent *)
+// [-2] void mousePressEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget15mousePressEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::mousePressEvent(event);
@@ -527,7 +527,7 @@ void C_ZN20QGraphicsProxyWidget15mousePressEventEP24QGraphicsSceneMouseEvent(voi
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:103
-// [-2] void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
+// [-2] void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget17mouseReleaseEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::mouseReleaseEvent(event);
@@ -535,7 +535,7 @@ void C_ZN20QGraphicsProxyWidget17mouseReleaseEventEP24QGraphicsSceneMouseEvent(v
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:104
-// [-2] void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::mouseDoubleClickEvent(event);
@@ -543,7 +543,7 @@ void C_ZN20QGraphicsProxyWidget21mouseDoubleClickEventEP24QGraphicsSceneMouseEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:106
-// [-2] void wheelEvent(class QGraphicsSceneWheelEvent *)
+// [-2] void wheelEvent(QGraphicsSceneWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget10wheelEventEP24QGraphicsSceneWheelEvent(void *this_, QGraphicsSceneWheelEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::wheelEvent(event);
@@ -551,7 +551,7 @@ void C_ZN20QGraphicsProxyWidget10wheelEventEP24QGraphicsSceneWheelEvent(void *th
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:109
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::keyPressEvent(event);
@@ -559,7 +559,7 @@ void C_ZN20QGraphicsProxyWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:110
-// [-2] void keyReleaseEvent(class QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::keyReleaseEvent(event);
@@ -567,7 +567,7 @@ void C_ZN20QGraphicsProxyWidget15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEv
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:112
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::focusInEvent(event);
@@ -575,7 +575,7 @@ void C_ZN20QGraphicsProxyWidget12focusInEventEP11QFocusEvent(void *this_, QFocus
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:113
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::focusOutEvent(event);
@@ -583,7 +583,7 @@ void C_ZN20QGraphicsProxyWidget13focusOutEventEP11QFocusEvent(void *this_, QFocu
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:114
-// [1] bool focusNextPrevChild(_Bool)
+// [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QGraphicsProxyWidget18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::focusNextPrevChild(next);
@@ -600,7 +600,7 @@ return new QVariant(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:117
-// [-2] void inputMethodEvent(class QInputMethodEvent *)
+// [-2] void inputMethodEvent(QInputMethodEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::inputMethodEvent(event);
@@ -608,7 +608,7 @@ void C_ZN20QGraphicsProxyWidget16inputMethodEventEP17QInputMethodEvent(void *thi
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:119
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsProxyWidget8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
   auto rv = ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::sizeHint(which, *constraint);
@@ -617,7 +617,7 @@ return new QSizeF(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:120
-// [-2] void resizeEvent(class QGraphicsSceneResizeEvent *)
+// [-2] void resizeEvent(QGraphicsSceneResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent(void *this_, QGraphicsSceneResizeEvent * event) {
   ((QGraphicsProxyWidget*)this_)->QGraphicsProxyWidget::resizeEvent(event);
@@ -626,7 +626,7 @@ void C_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent(void *
 // Protected Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:123
-// [8] QGraphicsProxyWidget * newProxyWidget(const class QWidget *)
+// [8] QGraphicsProxyWidget * newProxyWidget(const QWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget(void *this_, const QWidget * arg0) {
@@ -644,7 +644,7 @@ void* C_ZNK20QGraphicsProxyWidget10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:56
-// [-2] void QGraphicsProxyWidget(class QGraphicsItem *, Qt::WindowFlags)
+// [-2] void QGraphicsProxyWidget(QGraphicsItem *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsProxyWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) {
   auto _nilp = (MyQGraphicsProxyWidget*)(0);
@@ -660,7 +660,7 @@ void C_ZN20QGraphicsProxyWidgetD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:59
-// [-2] void setWidget(class QWidget *)
+// [-2] void setWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget9setWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QGraphicsProxyWidget*)this_)->setWidget(widget);
@@ -676,7 +676,7 @@ void* C_ZNK20QGraphicsProxyWidget6widgetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:62
-// [32] QRectF subWidgetRect(const class QWidget *)
+// [32] QRectF subWidgetRect(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsProxyWidget13subWidgetRectEPK7QWidget(void *this_, const QWidget * widget) {
   auto rv = ((QGraphicsProxyWidget*)this_)->subWidgetRect(widget);
@@ -685,7 +685,7 @@ return new QRectF(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:64
-// [-2] void setGeometry(const class QRectF &)
+// [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget11setGeometryERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsProxyWidget*)this_)->setGeometry(*rect);
@@ -693,7 +693,7 @@ void C_ZN20QGraphicsProxyWidget11setGeometryERK6QRectF(void *this_, QRectF* rect
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:66
-// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsProxyWidget5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsProxyWidget*)this_)->paint(painter, option, widget);
@@ -710,7 +710,7 @@ int C_ZNK20QGraphicsProxyWidget4typeEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:73
-// [8] QGraphicsProxyWidget * createProxyForChildWidget(class QWidget *)
+// [8] QGraphicsProxyWidget * createProxyForChildWidget(QWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsProxyWidget25createProxyForChildWidgetEP7QWidget(void *this_, QWidget * child) {

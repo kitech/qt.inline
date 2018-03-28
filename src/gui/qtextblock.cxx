@@ -30,7 +30,7 @@ void* C_ZN10QTextBlockC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:208
-// [16] QTextBlock & operator=(const class QTextBlock &)
+// [16] QTextBlock & operator=(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextBlockaSERKS_(void *this_, QTextBlock* o) {
   auto& rv = ((QTextBlock*)this_)->operator=(*o);
@@ -47,7 +47,7 @@ bool C_ZNK10QTextBlock7isValidEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:212
-// [1] bool operator==(const class QTextBlock &)
+// [1] bool operator==(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlockeqERKS_(void *this_, QTextBlock* o) {
   return (bool)((QTextBlock*)this_)->operator==(*o);
@@ -55,7 +55,7 @@ bool C_ZNK10QTextBlockeqERKS_(void *this_, QTextBlock* o) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:213
-// [1] bool operator!=(const class QTextBlock &)
+// [1] bool operator!=(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlockneERKS_(void *this_, QTextBlock* o) {
   return (bool)((QTextBlock*)this_)->operator!=(*o);
@@ -63,7 +63,7 @@ bool C_ZNK10QTextBlockneERKS_(void *this_, QTextBlock* o) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:214
-// [1] bool operator<(const class QTextBlock &)
+// [1] bool operator<(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextBlockltERKS_(void *this_, QTextBlock* o) {
   return (bool)((QTextBlock*)this_)->operator<(*o);
@@ -196,7 +196,7 @@ void* C_ZNK10QTextBlock8userDataEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtGui/qtextobject.h:238
-// [-2] void setUserData(class QTextBlockUserData *)
+// [-2] void setUserData(QTextBlockUserData *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock11setUserDataEP18QTextBlockUserData(void *this_, QTextBlockUserData * data) {
@@ -262,7 +262,7 @@ bool C_ZNK10QTextBlock9isVisibleEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtGui/qtextobject.h:247
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextBlock10setVisibleEb(void *this_, bool visible) {

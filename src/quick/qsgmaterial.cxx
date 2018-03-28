@@ -53,7 +53,7 @@ void* C_ZNK11QSGMaterial12createShaderEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:151
-// [4] int compare(const class QSGMaterial *)
+// [4] int compare(const QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QSGMaterial7compareEPKS_(void *this_, const QSGMaterial * other) {
   return (int)((QSGMaterial*)this_)->compare(other);
@@ -69,7 +69,7 @@ QSGMaterial::Flags C_ZNK11QSGMaterial5flagsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:154
-// [-2] void setFlag(QSGMaterial::Flags, _Bool)
+// [-2] void setFlag(QSGMaterial::Flags, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGMaterial7setFlagE6QFlagsINS_4FlagEEb(void *this_, QFlags<QSGMaterial::Flag> flags, bool on) {
   ((QSGMaterial*)this_)->setFlag(flags, on);

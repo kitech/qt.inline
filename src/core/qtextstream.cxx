@@ -18,13 +18,13 @@ public:
   virtual ~MyQTextStream() {}
 // void QTextStream()
 MyQTextStream() : QTextStream() {}
-// void QTextStream(class QIODevice *)
+// void QTextStream(QIODevice *)
 MyQTextStream(QIODevice * device) : QTextStream(device) {}
-// void QTextStream(class QString *, class QIODevice::OpenMode)
+// void QTextStream(QString *, QIODevice::OpenMode)
 MyQTextStream(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(string, openMode) {}
-// void QTextStream(class QByteArray *, class QIODevice::OpenMode)
+// void QTextStream(QByteArray *, QIODevice::OpenMode)
 MyQTextStream(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
-// void QTextStream(const class QByteArray &, class QIODevice::OpenMode)
+// void QTextStream(const QByteArray &, QIODevice::OpenMode)
 MyQTextStream(const QByteArray & array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
 };
 
@@ -38,7 +38,7 @@ void* C_ZN11QTextStreamC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:94
-// [-2] void QTextStream(class QIODevice *)
+// [-2] void QTextStream(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP9QIODevice(QIODevice * device) {
   return  new QTextStream(device);
@@ -46,7 +46,7 @@ void* C_ZN11QTextStreamC2EP9QIODevice(QIODevice * device) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:96
-// [-2] void QTextStream(class QString *, class QIODevice::OpenMode)
+// [-2] void QTextStream(QString *, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) {
   return  new QTextStream(string, openMode);
@@ -54,7 +54,7 @@ void* C_ZN11QTextStreamC2EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(QString *
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:97
-// [-2] void QTextStream(class QByteArray *, class QIODevice::OpenMode)
+// [-2] void QTextStream(QByteArray *, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) {
   return  new QTextStream(array, openMode);
@@ -62,7 +62,7 @@ void* C_ZN11QTextStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByte
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:98
-// [-2] void QTextStream(const class QByteArray &, class QIODevice::OpenMode)
+// [-2] void QTextStream(const QByteArray &, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2ERK10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray* array, QFlags<QIODevice::OpenModeFlag> openMode) {
   return  new QTextStream(*array, openMode);
@@ -77,7 +77,7 @@ void C_ZN11QTextStreamD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:102
-// [-2] void setCodec(class QTextCodec *)
+// [-2] void setCodec(QTextCodec *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream8setCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
   ((QTextStream*)this_)->setCodec(codec);
@@ -101,7 +101,7 @@ void* C_ZNK11QTextStream5codecEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:105
-// [-2] void setAutoDetectUnicode(_Bool)
+// [-2] void setAutoDetectUnicode(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream20setAutoDetectUnicodeEb(void *this_, bool enabled) {
   ((QTextStream*)this_)->setAutoDetectUnicode(enabled);
@@ -117,7 +117,7 @@ bool C_ZNK11QTextStream17autoDetectUnicodeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:107
-// [-2] void setGenerateByteOrderMark(_Bool)
+// [-2] void setGenerateByteOrderMark(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream24setGenerateByteOrderMarkEb(void *this_, bool generate) {
   ((QTextStream*)this_)->setGenerateByteOrderMark(generate);
@@ -134,7 +134,7 @@ bool C_ZNK11QTextStream21generateByteOrderMarkEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtCore/qtextstream.h:111
-// [-2] void setLocale(const class QLocale &)
+// [-2] void setLocale(const QLocale &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream9setLocaleERK7QLocale(void *this_, QLocale* locale) {
@@ -156,7 +156,7 @@ return new QLocale(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:114
-// [-2] void setDevice(class QIODevice *)
+// [-2] void setDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QTextStream*)this_)->setDevice(device);
@@ -172,7 +172,7 @@ void* C_ZNK11QTextStream6deviceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:117
-// [-2] void setString(class QString *, class QIODevice::OpenMode)
+// [-2] void setString(QString *, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream9setStringEP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString * string, QFlags<QIODevice::OpenModeFlag> openMode) {
   ((QTextStream*)this_)->setString(string, openMode);
@@ -196,7 +196,7 @@ QTextStream::Status C_ZNK11QTextStream6statusEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:121
-// [-2] void setStatus(enum QTextStream::Status)
+// [-2] void setStatus(QTextStream::Status)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream9setStatusENS_6StatusE(void *this_, QTextStream::Status status) {
   ((QTextStream*)this_)->setStatus(status);
@@ -276,7 +276,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtCore/qtextstream.h:133
-// [1] bool readLineInto(class QString *, qint64)
+// [1] bool readLineInto(QString *, qint64)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QTextStream12readLineIntoEP7QStringx(void *this_, QString * line, qint64 maxlen) {
@@ -307,7 +307,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:137
-// [-2] void setFieldAlignment(enum QTextStream::FieldAlignment)
+// [-2] void setFieldAlignment(QTextStream::FieldAlignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream17setFieldAlignmentENS_14FieldAlignmentE(void *this_, QTextStream::FieldAlignment alignment) {
   ((QTextStream*)this_)->setFieldAlignment(alignment);
@@ -323,7 +323,7 @@ QTextStream::FieldAlignment C_ZNK11QTextStream14fieldAlignmentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:140
-// [-2] void setPadChar(class QChar)
+// [-2] void setPadChar(QChar)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream10setPadCharE5QChar(void *this_, QChar* ch) {
   ((QTextStream*)this_)->setPadChar(*ch);
@@ -389,7 +389,7 @@ int C_ZNK11QTextStream11integerBaseEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:152
-// [-2] void setRealNumberNotation(enum QTextStream::RealNumberNotation)
+// [-2] void setRealNumberNotation(QTextStream::RealNumberNotation)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream21setRealNumberNotationENS_18RealNumberNotationE(void *this_, QTextStream::RealNumberNotation notation) {
   ((QTextStream*)this_)->setRealNumberNotation(notation);
@@ -421,7 +421,7 @@ int C_ZNK11QTextStream19realNumberPrecisionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:158
-// [16] QTextStream & operator>>(class QChar &)
+// [16] QTextStream & operator>>(QChar &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamrsER5QChar(void *this_, QChar* ch) {
   auto& rv = ((QTextStream*)this_)->operator>>(*ch);
@@ -529,7 +529,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:170
-// [16] QTextStream & operator>>(class QString &)
+// [16] QTextStream & operator>>(QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamrsER7QString(void *this_, QString* s) {
   auto& rv = ((QTextStream*)this_)->operator>>(*s);
@@ -538,7 +538,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:171
-// [16] QTextStream & operator>>(class QByteArray &)
+// [16] QTextStream & operator>>(QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamrsER10QByteArray(void *this_, QByteArray* array) {
   auto& rv = ((QTextStream*)this_)->operator>>(*array);
@@ -556,7 +556,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:174
-// [16] QTextStream & operator<<(class QChar)
+// [16] QTextStream & operator<<(QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsE5QChar(void *this_, QChar* ch) {
   auto& rv = ((QTextStream*)this_)->operator<<(*ch);
@@ -664,7 +664,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:186
-// [16] QTextStream & operator<<(const class QString &)
+// [16] QTextStream & operator<<(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsERK7QString(void *this_, QString* s) {
   auto& rv = ((QTextStream*)this_)->operator<<(*s);
@@ -673,7 +673,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:187
-// [16] QTextStream & operator<<(class QLatin1String)
+// [16] QTextStream & operator<<(QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsE13QLatin1String(void *this_, QLatin1String* s) {
   auto& rv = ((QTextStream*)this_)->operator<<(*s);
@@ -682,7 +682,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:188
-// [16] QTextStream & operator<<(const class QStringRef &)
+// [16] QTextStream & operator<<(const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsERK10QStringRef(void *this_, QStringRef* s) {
   auto& rv = ((QTextStream*)this_)->operator<<(*s);
@@ -691,7 +691,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:189
-// [16] QTextStream & operator<<(const class QByteArray &)
+// [16] QTextStream & operator<<(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsERK10QByteArray(void *this_, QByteArray* array) {
   auto& rv = ((QTextStream*)this_)->operator<<(*array);

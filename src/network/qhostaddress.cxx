@@ -24,9 +24,9 @@ MyQHostAddress(quint32 ip4Addr) : QHostAddress(ip4Addr) {}
 MyQHostAddress(quint8 * ip6Addr) : QHostAddress(ip6Addr) {}
 // void QHostAddress(const quint8 *)
 MyQHostAddress(const quint8 * ip6Addr) : QHostAddress(ip6Addr) {}
-// void QHostAddress(const class QString &)
+// void QHostAddress(const QString &)
 MyQHostAddress(const QString & address) : QHostAddress(address) {}
-// void QHostAddress(enum QHostAddress::SpecialAddress)
+// void QHostAddress(QHostAddress::SpecialAddress)
 MyQHostAddress(QHostAddress::SpecialAddress address) : QHostAddress(address) {}
 };
 
@@ -67,7 +67,7 @@ void* C_ZN12QHostAddressC2EPKh(const quint8 * ip6Addr) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:100
-// [-2] void QHostAddress(const class QString &)
+// [-2] void QHostAddress(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressC2ERK7QString(QString* address) {
   return  new QHostAddress(*address);
@@ -75,7 +75,7 @@ void* C_ZN12QHostAddressC2ERK7QString(QString* address) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:102
-// [-2] void QHostAddress(enum QHostAddress::SpecialAddress)
+// [-2] void QHostAddress(QHostAddress::SpecialAddress)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressC2ENS_14SpecialAddressE(QHostAddress::SpecialAddress address) {
   return  new QHostAddress(address);
@@ -90,7 +90,7 @@ void C_ZN12QHostAddressD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:106
-// [8] QHostAddress & operator=(class QHostAddress &&)
+// [8] QHostAddress & operator=(QHostAddress &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressaSEOS_(void *this_, QHostAddress && other) {
   auto& rv = ((QHostAddress*)this_)->operator=(other);
@@ -99,7 +99,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:110
-// [8] QHostAddress & operator=(const class QHostAddress &)
+// [8] QHostAddress & operator=(const QHostAddress &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressaSERKS_(void *this_, QHostAddress* other) {
   auto& rv = ((QHostAddress*)this_)->operator=(*other);
@@ -108,7 +108,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:113
-// [8] QHostAddress & operator=(const class QString &)
+// [8] QHostAddress & operator=(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressaSERK7QString(void *this_, QString* address) {
   auto& rv = ((QHostAddress*)this_)->operator=(*address);
@@ -117,7 +117,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:115
-// [8] QHostAddress & operator=(enum QHostAddress::SpecialAddress)
+// [8] QHostAddress & operator=(QHostAddress::SpecialAddress)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressaSENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
   auto& rv = ((QHostAddress*)this_)->operator=(address);
@@ -127,7 +127,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtNetwork/qhostaddress.h:117
-// [-2] void swap(class QHostAddress &)
+// [-2] void swap(QHostAddress &)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN12QHostAddress4swapERS_(void *this_, QHostAddress* other) {
@@ -164,7 +164,7 @@ void C_ZN12QHostAddress10setAddressEPKh(void *this_, const quint8 * ip6Addr) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:124
-// [1] bool setAddress(const class QString &)
+// [1] bool setAddress(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QHostAddress10setAddressERK7QString(void *this_, QString* address) {
   return (bool)((QHostAddress*)this_)->setAddress(*address);
@@ -172,7 +172,7 @@ bool C_ZN12QHostAddress10setAddressERK7QString(void *this_, QString* address) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:125
-// [-2] void setAddress(enum QHostAddress::SpecialAddress)
+// [-2] void setAddress(QHostAddress::SpecialAddress)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QHostAddress10setAddressENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
   ((QHostAddress*)this_)->setAddress(address);
@@ -196,7 +196,7 @@ quint32 C_ZNK12QHostAddress13toIPv4AddressEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:129
-// [4] quint32 toIPv4Address(_Bool *)
+// [4] quint32 toIPv4Address(bool *)
 extern "C" Q_DECL_EXPORT
 quint32 C_ZNK12QHostAddress13toIPv4AddressEPb(void *this_, bool * ok) {
   return (quint32)((QHostAddress*)this_)->toIPv4Address(ok);
@@ -235,7 +235,7 @@ return new QString(rv);
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtNetwork/qhostaddress.h:135
-// [-2] void setScopeId(const class QString &)
+// [-2] void setScopeId(const QString &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QHostAddress10setScopeIdERK7QString(void *this_, QString* id) {
@@ -245,7 +245,7 @@ void C_ZN12QHostAddress10setScopeIdERK7QString(void *this_, QString* id) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:137
-// [1] bool isEqual(const class QHostAddress &, QHostAddress::ConversionMode)
+// [1] bool isEqual(const QHostAddress &, QHostAddress::ConversionMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddress7isEqualERKS_6QFlagsINS_18ConversionModeFlagEE(void *this_, QHostAddress* address, QFlags<QHostAddress::ConversionModeFlag> mode) {
   return (bool)((QHostAddress*)this_)->isEqual(*address, mode);
@@ -253,7 +253,7 @@ bool C_ZNK12QHostAddress7isEqualERKS_6QFlagsINS_18ConversionModeFlagEE(void *thi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:138
-// [1] bool operator==(const class QHostAddress &)
+// [1] bool operator==(const QHostAddress &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddresseqERKS_(void *this_, QHostAddress* address) {
   return (bool)((QHostAddress*)this_)->operator==(*address);
@@ -261,7 +261,7 @@ bool C_ZNK12QHostAddresseqERKS_(void *this_, QHostAddress* address) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:139
-// [1] bool operator==(enum QHostAddress::SpecialAddress)
+// [1] bool operator==(QHostAddress::SpecialAddress)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddresseqENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
   return (bool)((QHostAddress*)this_)->operator==(address);
@@ -269,7 +269,7 @@ bool C_ZNK12QHostAddresseqENS_14SpecialAddressE(void *this_, QHostAddress::Speci
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:140
-// [1] bool operator!=(const class QHostAddress &)
+// [1] bool operator!=(const QHostAddress &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddressneERKS_(void *this_, QHostAddress* address) {
   return (bool)((QHostAddress*)this_)->operator!=(*address);
@@ -277,7 +277,7 @@ bool C_ZNK12QHostAddressneERKS_(void *this_, QHostAddress* address) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:142
-// [1] bool operator!=(enum QHostAddress::SpecialAddress)
+// [1] bool operator!=(QHostAddress::SpecialAddress)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddressneENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
   return (bool)((QHostAddress*)this_)->operator!=(address);
@@ -302,7 +302,7 @@ void C_ZN12QHostAddress5clearEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtNetwork/qhostaddress.h:147
-// [1] bool isInSubnet(const class QHostAddress &, int)
+// [1] bool isInSubnet(const QHostAddress &, int)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddress10isInSubnetERKS_i(void *this_, QHostAddress* subnet, int netmask) {

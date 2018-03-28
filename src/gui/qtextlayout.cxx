@@ -18,11 +18,11 @@ public:
   virtual ~MyQTextLayout() {}
 // void QTextLayout()
 MyQTextLayout() : QTextLayout() {}
-// void QTextLayout(const class QString &)
+// void QTextLayout(const QString &)
 MyQTextLayout(const QString & text) : QTextLayout(text) {}
-// void QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
+// void QTextLayout(const QString &, const QFont &, QPaintDevice *)
 MyQTextLayout(const QString & text, const QFont & font, QPaintDevice * paintdevice) : QTextLayout(text, font, paintdevice) {}
-// void QTextLayout(const class QTextBlock &)
+// void QTextLayout(const QTextBlock &)
 MyQTextLayout(const QTextBlock & b) : QTextLayout(b) {}
 };
 
@@ -36,7 +36,7 @@ void* C_ZN11QTextLayoutC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:109
-// [-2] void QTextLayout(const class QString &)
+// [-2] void QTextLayout(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2ERK7QString(QString* text) {
   return  new QTextLayout(*text);
@@ -44,7 +44,7 @@ void* C_ZN11QTextLayoutC2ERK7QString(QString* text) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:110
-// [-2] void QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
+// [-2] void QTextLayout(const QString &, const QFont &, QPaintDevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2ERK7QStringRK5QFontP12QPaintDevice(QString* text, QFont* font, QPaintDevice * paintdevice) {
   return  new QTextLayout(*text, *font, paintdevice);
@@ -52,7 +52,7 @@ void* C_ZN11QTextLayoutC2ERK7QStringRK5QFontP12QPaintDevice(QString* text, QFont
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:111
-// [-2] void QTextLayout(const class QTextBlock &)
+// [-2] void QTextLayout(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextLayoutC2ERK10QTextBlock(QTextBlock* b) {
   return  new QTextLayout(*b);
@@ -67,7 +67,7 @@ void C_ZN11QTextLayoutD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:114
-// [-2] void setFont(const class QFont &)
+// [-2] void setFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout7setFontERK5QFont(void *this_, QFont* f) {
   ((QTextLayout*)this_)->setFont(*f);
@@ -84,7 +84,7 @@ return new QFont(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:118
-// [-2] void setRawFont(const class QRawFont &)
+// [-2] void setRawFont(const QRawFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout10setRawFontERK8QRawFont(void *this_, QRawFont* rawFont) {
   ((QTextLayout*)this_)->setRawFont(*rawFont);
@@ -92,7 +92,7 @@ void C_ZN11QTextLayout10setRawFontERK8QRawFont(void *this_, QRawFont* rawFont) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:121
-// [-2] void setText(const class QString &)
+// [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout7setTextERK7QString(void *this_, QString* string) {
   ((QTextLayout*)this_)->setText(*string);
@@ -109,7 +109,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:124
-// [-2] void setTextOption(const class QTextOption &)
+// [-2] void setTextOption(const QTextOption &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout13setTextOptionERK11QTextOption(void *this_, QTextOption* option) {
   ((QTextLayout*)this_)->setTextOption(*option);
@@ -126,7 +126,7 @@ return new QTextOption(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:127
-// [-2] void setPreeditArea(int, const class QString &)
+// [-2] void setPreeditArea(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout14setPreeditAreaEiRK7QString(void *this_, int position, QString* text) {
   ((QTextLayout*)this_)->setPreeditArea(position, *text);
@@ -170,7 +170,7 @@ void C_ZN11QTextLayout12clearFormatsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:150
-// [-2] void setCacheEnabled(_Bool)
+// [-2] void setCacheEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout15setCacheEnabledEb(void *this_, bool enable) {
   ((QTextLayout*)this_)->setCacheEnabled(enable);
@@ -272,7 +272,7 @@ bool C_ZNK11QTextLayout21isValidCursorPositionEi(void *this_, int pos) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:171
-// [4] int nextCursorPosition(int, enum QTextLayout::CursorMode)
+// [4] int nextCursorPosition(int, QTextLayout::CursorMode)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextLayout18nextCursorPositionEiNS_10CursorModeE(void *this_, int oldPos, QTextLayout::CursorMode mode) {
   return (int)((QTextLayout*)this_)->nextCursorPosition(oldPos, mode);
@@ -280,7 +280,7 @@ int C_ZNK11QTextLayout18nextCursorPositionEiNS_10CursorModeE(void *this_, int ol
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:172
-// [4] int previousCursorPosition(int, enum QTextLayout::CursorMode)
+// [4] int previousCursorPosition(int, QTextLayout::CursorMode)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTextLayout22previousCursorPositionEiNS_10CursorModeE(void *this_, int oldPos, QTextLayout::CursorMode mode) {
   return (int)((QTextLayout*)this_)->previousCursorPosition(oldPos, mode);
@@ -304,7 +304,7 @@ int C_ZNK11QTextLayout19rightCursorPositionEi(void *this_, int oldPos) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:178
-// [-2] void drawCursor(class QPainter *, const class QPointF &, int)
+// [-2] void drawCursor(QPainter *, const QPointF &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QTextLayout10drawCursorEP8QPainterRK7QPointFi(void *this_, QPainter * p, QPointF* pos, int cursorPosition) {
   ((QTextLayout*)this_)->drawCursor(p, *pos, cursorPosition);
@@ -312,7 +312,7 @@ void C_ZNK11QTextLayout10drawCursorEP8QPainterRK7QPointFi(void *this_, QPainter 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:179
-// [-2] void drawCursor(class QPainter *, const class QPointF &, int, int)
+// [-2] void drawCursor(QPainter *, const QPointF &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QTextLayout10drawCursorEP8QPainterRK7QPointFii(void *this_, QPainter * p, QPointF* pos, int cursorPosition, int width) {
   ((QTextLayout*)this_)->drawCursor(p, *pos, cursorPosition, width);
@@ -332,7 +332,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:182
-// [-2] void setPosition(const class QPointF &)
+// [-2] void setPosition(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout11setPositionERK7QPointF(void *this_, QPointF* p) {
   ((QTextLayout*)this_)->setPosition(*p);

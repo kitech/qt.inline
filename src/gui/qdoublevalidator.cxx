@@ -16,9 +16,9 @@
 class Q_DECL_EXPORT MyQDoubleValidator : public QDoubleValidator {
 public:
   virtual ~MyQDoubleValidator() {}
-// void QDoubleValidator(class QObject *)
+// void QDoubleValidator(QObject *)
 MyQDoubleValidator(QObject * parent) : QDoubleValidator(parent) {}
-// void QDoubleValidator(double, double, int, class QObject *)
+// void QDoubleValidator(double, double, int, QObject *)
 MyQDoubleValidator(double bottom, double top, int decimals, QObject * parent) : QDoubleValidator(bottom, top, decimals, parent) {}
 };
 
@@ -32,7 +32,7 @@ void* C_ZNK16QDoubleValidator10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:133
-// [-2] void QDoubleValidator(class QObject *)
+// [-2] void QDoubleValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
   return  new QDoubleValidator(parent);
@@ -40,7 +40,7 @@ void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:134
-// [-2] void QDoubleValidator(double, double, int, class QObject *)
+// [-2] void QDoubleValidator(double, double, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EddiP7QObject(double bottom, double top, int decimals, QObject * parent) {
   return  new QDoubleValidator(bottom, top, decimals, parent);
@@ -55,7 +55,7 @@ void C_ZN16QDoubleValidatorD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:142
-// [4] QValidator::State validate(class QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK16QDoubleValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
   return (QValidator::State)((QDoubleValidator*)this_)->validate(*arg0, arg1);
@@ -95,7 +95,7 @@ void C_ZN16QDoubleValidator11setDecimalsEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:148
-// [-2] void setNotation(enum QDoubleValidator::Notation)
+// [-2] void setNotation(QDoubleValidator::Notation)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator11setNotationENS_8NotationE(void *this_, QDoubleValidator::Notation arg0) {
   ((QDoubleValidator*)this_)->setNotation(arg0);
@@ -159,7 +159,7 @@ void C_ZN16QDoubleValidator15decimalsChangedEi(void *this_, int decimals) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:159
-// [-2] void notationChanged(class QDoubleValidator::Notation)
+// [-2] void notationChanged(QDoubleValidator::Notation)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator15notationChangedENS_8NotationE(void *this_, QDoubleValidator::Notation notation) {
   ((QDoubleValidator*)this_)->notationChanged(notation);

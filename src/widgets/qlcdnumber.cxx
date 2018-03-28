@@ -16,12 +16,12 @@
 class Q_DECL_EXPORT MyQLCDNumber : public QLCDNumber {
 public:
   virtual ~MyQLCDNumber() {}
-// void QLCDNumber(class QWidget *)
+// void QLCDNumber(QWidget *)
 MyQLCDNumber(QWidget * parent) : QLCDNumber(parent) {}
-// void QLCDNumber(uint, class QWidget *)
+// void QLCDNumber(uint, QWidget *)
 MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -34,7 +34,7 @@ MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -49,7 +49,7 @@ MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:107
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QLCDNumber5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QLCDNumber*)this_)->QLCDNumber::event(e);
@@ -57,7 +57,7 @@ bool C_ZN10QLCDNumber5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:108
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QLCDNumber10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QLCDNumber*)this_)->QLCDNumber::paintEvent(arg0);
@@ -73,7 +73,7 @@ void* C_ZNK10QLCDNumber10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:62
-// [-2] void QLCDNumber(class QWidget *)
+// [-2] void QLCDNumber(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QLCDNumberC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLCDNumber*)(0);
@@ -82,7 +82,7 @@ void* C_ZN10QLCDNumberC2EP7QWidget(QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:63
-// [-2] void QLCDNumber(uint, class QWidget *)
+// [-2] void QLCDNumber(uint, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QLCDNumberC2EjP7QWidget(uint numDigits, QWidget * parent) {
   auto _nilp = (MyQLCDNumber*)(0);
@@ -146,7 +146,7 @@ QLCDNumber::Mode C_ZNK10QLCDNumber4modeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:83
-// [-2] void setMode(enum QLCDNumber::Mode)
+// [-2] void setMode(QLCDNumber::Mode)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QLCDNumber7setModeENS_4ModeE(void *this_, QLCDNumber::Mode arg0) {
   ((QLCDNumber*)this_)->setMode(arg0);
@@ -162,7 +162,7 @@ QLCDNumber::SegmentStyle C_ZNK10QLCDNumber12segmentStyleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:86
-// [-2] void setSegmentStyle(enum QLCDNumber::SegmentStyle)
+// [-2] void setSegmentStyle(QLCDNumber::SegmentStyle)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QLCDNumber15setSegmentStyleENS_12SegmentStyleE(void *this_, QLCDNumber::SegmentStyle arg0) {
   ((QLCDNumber*)this_)->setSegmentStyle(arg0);
@@ -195,7 +195,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:94
-// [-2] void display(const class QString &)
+// [-2] void display(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QLCDNumber7displayERK7QString(void *this_, QString* str) {
   ((QLCDNumber*)this_)->display(*str);
@@ -251,7 +251,7 @@ void C_ZN10QLCDNumber10setBinModeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:101
-// [-2] void setSmallDecimalPoint(_Bool)
+// [-2] void setSmallDecimalPoint(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QLCDNumber20setSmallDecimalPointEb(void *this_, bool arg0) {
   ((QLCDNumber*)this_)->setSmallDecimalPoint(arg0);

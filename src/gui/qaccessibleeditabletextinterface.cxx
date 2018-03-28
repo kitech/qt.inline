@@ -35,7 +35,7 @@ void C_ZN32QAccessibleEditableTextInterface10deleteTextEii(void *this_, int star
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:559
-// [-2] void insertText(int, const class QString &)
+// [-2] void insertText(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN32QAccessibleEditableTextInterface10insertTextEiRK7QString(void *this_, int offset, QString* text) {
   ((QAccessibleEditableTextInterface*)this_)->insertText(offset, *text);
@@ -43,7 +43,7 @@ void C_ZN32QAccessibleEditableTextInterface10insertTextEiRK7QString(void *this_,
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:560
-// [-2] void replaceText(int, int, const class QString &)
+// [-2] void replaceText(int, int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN32QAccessibleEditableTextInterface11replaceTextEiiRK7QString(void *this_, int startOffset, int endOffset, QString* text) {
   ((QAccessibleEditableTextInterface*)this_)->replaceText(startOffset, endOffset, *text);

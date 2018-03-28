@@ -17,10 +17,10 @@
 class Q_DECL_EXPORT MyQAnimationGroup : public QAnimationGroup {
 public:
   virtual ~MyQAnimationGroup() {}
-// void QAnimationGroup(class QObject *)
+// void QAnimationGroup(QObject *)
 MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -36,7 +36,7 @@ MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:70
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QAnimationGroup*)this_)->QAnimationGroup::event(event);
@@ -52,7 +52,7 @@ void* C_ZNK15QAnimationGroup10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:56
-// [-2] void QAnimationGroup(class QObject *)
+// [-2] void QAnimationGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAnimationGroup*)(0);
@@ -84,7 +84,7 @@ int C_ZNK15QAnimationGroup14animationCountEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:61
-// [4] int indexOfAnimation(class QAbstractAnimation *)
+// [4] int indexOfAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QAnimationGroup16indexOfAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
   return (int)((QAnimationGroup*)this_)->indexOfAnimation(animation);
@@ -92,7 +92,7 @@ int C_ZNK15QAnimationGroup16indexOfAnimationEP18QAbstractAnimation(void *this_, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:62
-// [-2] void addAnimation(class QAbstractAnimation *)
+// [-2] void addAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
   ((QAnimationGroup*)this_)->addAnimation(animation);
@@ -100,7 +100,7 @@ void C_ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation(void *this_, QAbs
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:63
-// [-2] void insertAnimation(int, class QAbstractAnimation *)
+// [-2] void insertAnimation(int, QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup15insertAnimationEiP18QAbstractAnimation(void *this_, int index, QAbstractAnimation * animation) {
   ((QAnimationGroup*)this_)->insertAnimation(index, animation);
@@ -108,7 +108,7 @@ void C_ZN15QAnimationGroup15insertAnimationEiP18QAbstractAnimation(void *this_, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:64
-// [-2] void removeAnimation(class QAbstractAnimation *)
+// [-2] void removeAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup15removeAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
   ((QAnimationGroup*)this_)->removeAnimation(animation);

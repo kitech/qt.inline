@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQTcpSocket : public QTcpSocket {
 public:
   virtual ~MyQTcpSocket() {}
-// void QTcpSocket(class QObject *)
+// void QTcpSocket(QObject *)
 MyQTcpSocket(QObject * parent) : QTcpSocket(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK10QTcpSocket10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpsocket.h:56
-// [-2] void QTcpSocket(class QObject *)
+// [-2] void QTcpSocket(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTcpSocketC2EP7QObject(QObject * parent) {
   return  new QTcpSocket(parent);

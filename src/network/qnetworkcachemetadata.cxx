@@ -38,7 +38,7 @@ void C_ZN21QNetworkCacheMetaDataD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:71
-// [8] QNetworkCacheMetaData & operator=(class QNetworkCacheMetaData &&)
+// [8] QNetworkCacheMetaData & operator=(QNetworkCacheMetaData &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkCacheMetaDataaSEOS_(void *this_, QNetworkCacheMetaData && other) {
   auto& rv = ((QNetworkCacheMetaData*)this_)->operator=(other);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:73
-// [8] QNetworkCacheMetaData & operator=(const class QNetworkCacheMetaData &)
+// [8] QNetworkCacheMetaData & operator=(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkCacheMetaDataaSERKS_(void *this_, QNetworkCacheMetaData* other) {
   auto& rv = ((QNetworkCacheMetaData*)this_)->operator=(*other);
@@ -57,7 +57,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:75
-// [-2] void swap(class QNetworkCacheMetaData &)
+// [-2] void swap(QNetworkCacheMetaData &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData4swapERS_(void *this_, QNetworkCacheMetaData* other) {
@@ -67,7 +67,7 @@ void C_ZN21QNetworkCacheMetaData4swapERS_(void *this_, QNetworkCacheMetaData* ot
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:78
-// [1] bool operator==(const class QNetworkCacheMetaData &)
+// [1] bool operator==(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QNetworkCacheMetaDataeqERKS_(void *this_, QNetworkCacheMetaData* other) {
   return (bool)((QNetworkCacheMetaData*)this_)->operator==(*other);
@@ -75,7 +75,7 @@ bool C_ZNK21QNetworkCacheMetaDataeqERKS_(void *this_, QNetworkCacheMetaData* oth
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:79
-// [1] bool operator!=(const class QNetworkCacheMetaData &)
+// [1] bool operator!=(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QNetworkCacheMetaDataneERKS_(void *this_, QNetworkCacheMetaData* other) {
   return (bool)((QNetworkCacheMetaData*)this_)->operator!=(*other);
@@ -100,7 +100,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:85
-// [-2] void setUrl(const class QUrl &)
+// [-2] void setUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData6setUrlERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkCacheMetaData*)this_)->setUrl(*url);
@@ -117,7 +117,7 @@ return new QDateTime(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:91
-// [-2] void setLastModified(const class QDateTime &)
+// [-2] void setLastModified(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData15setLastModifiedERK9QDateTime(void *this_, QDateTime* dateTime) {
   ((QNetworkCacheMetaData*)this_)->setLastModified(*dateTime);
@@ -134,7 +134,7 @@ return new QDateTime(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:94
-// [-2] void setExpirationDate(const class QDateTime &)
+// [-2] void setExpirationDate(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData17setExpirationDateERK9QDateTime(void *this_, QDateTime* dateTime) {
   ((QNetworkCacheMetaData*)this_)->setExpirationDate(*dateTime);
@@ -150,7 +150,7 @@ bool C_ZNK21QNetworkCacheMetaData10saveToDiskEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:97
-// [-2] void setSaveToDisk(_Bool)
+// [-2] void setSaveToDisk(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData13setSaveToDiskEb(void *this_, bool allow) {
   ((QNetworkCacheMetaData*)this_)->setSaveToDisk(allow);

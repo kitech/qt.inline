@@ -97,7 +97,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:173
-// [8] QString toString(const class QString &)
+// [8] QString toString(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QTime8toStringERK7QString(void *this_, QString* format) {
   auto rv = ((QTime*)this_)->toString(*format);
@@ -106,7 +106,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:175
-// [8] QString toString(class QStringView)
+// [8] QString toString(QStringView)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QTime8toStringE11QStringView(void *this_, QStringView* format) {
   auto rv = ((QTime*)this_)->toString(*format);
@@ -132,7 +132,7 @@ return new QTime(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:180
-// [4] int secsTo(const class QTime &)
+// [4] int secsTo(const QTime &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QTime6secsToERKS_(void *this_, QTime* arg0) {
   return (int)((QTime*)this_)->secsTo(*arg0);
@@ -149,7 +149,7 @@ return new QTime(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:182
-// [4] int msecsTo(const class QTime &)
+// [4] int msecsTo(const QTime &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QTime7msecsToERKS_(void *this_, QTime* arg0) {
   return (int)((QTime*)this_)->msecsTo(*arg0);
@@ -157,7 +157,7 @@ int C_ZNK5QTime7msecsToERKS_(void *this_, QTime* arg0) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:184
-// [1] bool operator==(const class QTime &)
+// [1] bool operator==(const QTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QTimeeqERKS_(void *this_, QTime* other) {
   return (bool)((QTime*)this_)->operator==(*other);
@@ -165,7 +165,7 @@ bool C_ZNK5QTimeeqERKS_(void *this_, QTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:185
-// [1] bool operator!=(const class QTime &)
+// [1] bool operator!=(const QTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QTimeneERKS_(void *this_, QTime* other) {
   return (bool)((QTime*)this_)->operator!=(*other);
@@ -173,7 +173,7 @@ bool C_ZNK5QTimeneERKS_(void *this_, QTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:186
-// [1] bool operator<(const class QTime &)
+// [1] bool operator<(const QTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QTimeltERKS_(void *this_, QTime* other) {
   return (bool)((QTime*)this_)->operator<(*other);
@@ -181,7 +181,7 @@ bool C_ZNK5QTimeltERKS_(void *this_, QTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:187
-// [1] bool operator<=(const class QTime &)
+// [1] bool operator<=(const QTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QTimeleERKS_(void *this_, QTime* other) {
   return (bool)((QTime*)this_)->operator<=(*other);
@@ -189,7 +189,7 @@ bool C_ZNK5QTimeleERKS_(void *this_, QTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:188
-// [1] bool operator>(const class QTime &)
+// [1] bool operator>(const QTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QTimegtERKS_(void *this_, QTime* other) {
   return (bool)((QTime*)this_)->operator>(*other);
@@ -197,7 +197,7 @@ bool C_ZNK5QTimegtERKS_(void *this_, QTime* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:189
-// [1] bool operator>=(const class QTime &)
+// [1] bool operator>=(const QTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QTimegeERKS_(void *this_, QTime* other) {
   return (bool)((QTime*)this_)->operator>=(*other);
@@ -231,7 +231,7 @@ return new QTime(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:196
-// [4] QTime fromString(const class QString &, Qt::DateFormat)
+// [4] QTime fromString(const QString &, Qt::DateFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFormat f) {
   auto rv = QTime::fromString(*s, f);
@@ -240,7 +240,7 @@ return new QTime(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:197
-// [4] QTime fromString(const class QString &, const class QString &)
+// [4] QTime fromString(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QTime10fromStringERK7QStringS2_(QString* s, QString* format) {
   auto rv = QTime::fromString(*s, *format);

@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQButtonGroup : public QButtonGroup {
 public:
   virtual ~MyQButtonGroup() {}
-// void QButtonGroup(class QObject *)
+// void QButtonGroup(QObject *)
 MyQButtonGroup(QObject * parent) : QButtonGroup(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK12QButtonGroup10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:60
-// [-2] void QButtonGroup(class QObject *)
+// [-2] void QButtonGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QButtonGroupC2EP7QObject(QObject * parent) {
   return  new QButtonGroup(parent);
@@ -45,7 +45,7 @@ void C_ZN12QButtonGroupD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:63
-// [-2] void setExclusive(_Bool)
+// [-2] void setExclusive(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup12setExclusiveEb(void *this_, bool arg0) {
   ((QButtonGroup*)this_)->setExclusive(arg0);
@@ -61,7 +61,7 @@ bool C_ZNK12QButtonGroup9exclusiveEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:66
-// [-2] void addButton(class QAbstractButton *, int)
+// [-2] void addButton(QAbstractButton *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup9addButtonEP15QAbstractButtoni(void *this_, QAbstractButton * arg0, int id) {
   ((QButtonGroup*)this_)->addButton(arg0, id);
@@ -69,7 +69,7 @@ void C_ZN12QButtonGroup9addButtonEP15QAbstractButtoni(void *this_, QAbstractButt
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:67
-// [-2] void removeButton(class QAbstractButton *)
+// [-2] void removeButton(QAbstractButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup12removeButtonEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
   ((QButtonGroup*)this_)->removeButton(arg0);
@@ -97,7 +97,7 @@ void* C_ZNK12QButtonGroup6buttonEi(void *this_, int id) {
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtWidgets/qbuttongroup.h:75
-// [-2] void setId(class QAbstractButton *, int)
+// [-2] void setId(QAbstractButton *, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup5setIdEP15QAbstractButtoni(void *this_, QAbstractButton * button, int id) {
@@ -108,7 +108,7 @@ void C_ZN12QButtonGroup5setIdEP15QAbstractButtoni(void *this_, QAbstractButton *
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtWidgets/qbuttongroup.h:76
-// [4] int id(class QAbstractButton *)
+// [4] int id(QAbstractButton *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QButtonGroup2idEP15QAbstractButton(void *this_, QAbstractButton * button) {
@@ -129,7 +129,7 @@ int C_ZNK12QButtonGroup9checkedIdEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:80
-// [-2] void buttonClicked(class QAbstractButton *)
+// [-2] void buttonClicked(QAbstractButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonClickedEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
   ((QButtonGroup*)this_)->buttonClicked(arg0);
@@ -146,7 +146,7 @@ void C_ZN12QButtonGroup13buttonClickedEi(void *this_, int arg0) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:82
-// [-2] void buttonPressed(class QAbstractButton *)
+// [-2] void buttonPressed(QAbstractButton *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonPressedEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
@@ -168,7 +168,7 @@ void C_ZN12QButtonGroup13buttonPressedEi(void *this_, int arg0) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:84
-// [-2] void buttonReleased(class QAbstractButton *)
+// [-2] void buttonReleased(QAbstractButton *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
@@ -190,7 +190,7 @@ void C_ZN12QButtonGroup14buttonReleasedEi(void *this_, int arg0) {
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:86
-// [-2] void buttonToggled(class QAbstractButton *, _Bool)
+// [-2] void buttonToggled(QAbstractButton *, bool)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(void *this_, QAbstractButton * arg0, bool arg1) {
@@ -201,7 +201,7 @@ void C_ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(void *this_, QAbstrac
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qbuttongroup.h:87
-// [-2] void buttonToggled(int, _Bool)
+// [-2] void buttonToggled(int, bool)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonToggledEib(void *this_, int arg0, bool arg1) {

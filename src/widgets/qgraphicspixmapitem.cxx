@@ -17,12 +17,12 @@
 class Q_DECL_EXPORT MyQGraphicsPixmapItem : public QGraphicsPixmapItem {
 public:
   virtual ~MyQGraphicsPixmapItem() {}
-// void QGraphicsPixmapItem(class QGraphicsItem *)
+// void QGraphicsPixmapItem(QGraphicsItem *)
 MyQGraphicsPixmapItem(QGraphicsItem * parent) : QGraphicsPixmapItem(parent) {}
-// void QGraphicsPixmapItem(const class QPixmap &, class QGraphicsItem *)
+// void QGraphicsPixmapItem(const QPixmap &, QGraphicsItem *)
 MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphicsPixmapItem(pixmap, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool supportsExtension(enum QGraphicsItem::Extension)
+// bool supportsExtension(QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+// void setExtension(QGraphicsItem::Extension, const QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -47,7 +47,7 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant extension(const class QVariant &)
+// QVariant extension(const QVariant &)
   virtual QVariant extension(const QVariant & variant) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -63,7 +63,7 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:855
-// [1] bool supportsExtension(enum QGraphicsItem::Extension)
+// [1] bool supportsExtension(QGraphicsItem::Extension)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
   return (bool)((QGraphicsPixmapItem*)this_)->QGraphicsPixmapItem::supportsExtension(extension);
@@ -71,7 +71,7 @@ bool C_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(v
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:856
-// [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+// [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
   ((QGraphicsPixmapItem*)this_)->QGraphicsPixmapItem::setExtension(extension, *variant);
@@ -79,7 +79,7 @@ void C_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVari
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:857
-// [16] QVariant extension(const class QVariant &)
+// [16] QVariant extension(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(void *this_, QVariant* variant) {
   auto rv = ((QGraphicsPixmapItem*)this_)->QGraphicsPixmapItem::extension(*variant);
@@ -88,7 +88,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:825
-// [-2] void QGraphicsPixmapItem(class QGraphicsItem *)
+// [-2] void QGraphicsPixmapItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPixmapItem*)(0);
@@ -97,7 +97,7 @@ void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:826
-// [-2] void QGraphicsPixmapItem(const class QPixmap &, class QGraphicsItem *)
+// [-2] void QGraphicsPixmapItem(const QPixmap &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(QPixmap* pixmap, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPixmapItem*)(0);
@@ -122,7 +122,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:830
-// [-2] void setPixmap(const class QPixmap &)
+// [-2] void setPixmap(const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem9setPixmapERK7QPixmap(void *this_, QPixmap* pixmap) {
   ((QGraphicsPixmapItem*)this_)->setPixmap(*pixmap);
@@ -155,7 +155,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:836
-// [-2] void setOffset(const class QPointF &)
+// [-2] void setOffset(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem9setOffsetERK7QPointF(void *this_, QPointF* offset) {
   ((QGraphicsPixmapItem*)this_)->setOffset(*offset);
@@ -192,7 +192,7 @@ return new QPainterPath(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:841
-// [1] bool contains(const class QPointF &)
+// [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsPixmapItem8containsERK7QPointF(void *this_, QPointF* point) {
   return (bool)((QGraphicsPixmapItem*)this_)->contains(*point);
@@ -200,7 +200,7 @@ bool C_ZNK19QGraphicsPixmapItem8containsERK7QPointF(void *this_, QPointF* point)
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:843
-// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsPixmapItem*)this_)->paint(painter, option, widget);
@@ -208,7 +208,7 @@ void C_ZN19QGraphicsPixmapItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWi
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:845
-// [1] bool isObscuredBy(const class QGraphicsItem *)
+// [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsPixmapItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QGraphicsPixmapItem*)this_)->isObscuredBy(item);
@@ -241,7 +241,7 @@ QGraphicsPixmapItem::ShapeMode C_ZNK19QGraphicsPixmapItem9shapeModeEv(void *this
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:852
-// [-2] void setShapeMode(enum QGraphicsPixmapItem::ShapeMode)
+// [-2] void setShapeMode(QGraphicsPixmapItem::ShapeMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem12setShapeModeENS_9ShapeModeE(void *this_, QGraphicsPixmapItem::ShapeMode mode) {
   ((QGraphicsPixmapItem*)this_)->setShapeMode(mode);

@@ -28,7 +28,7 @@ void C_ZN22QItemEditorCreatorBaseD2Ev(void *this_) {
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:60
-// [8] QWidget * createWidget(class QWidget *)
+// [8] QWidget * createWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget(void *this_, QWidget * parent) {
   return (void*)((QItemEditorCreatorBase*)this_)->createWidget(parent);

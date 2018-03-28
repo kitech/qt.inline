@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQQuickTextDocument : public QQuickTextDocument {
 public:
   virtual ~MyQQuickTextDocument() {}
-// void QQuickTextDocument(class QQuickItem *)
+// void QQuickTextDocument(QQuickItem *)
 MyQQuickTextDocument(QQuickItem * parent) : QQuickTextDocument(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK18QQuickTextDocument10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquicktextdocument.h:54
-// [-2] void QQuickTextDocument(class QQuickItem *)
+// [-2] void QQuickTextDocument(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QQuickTextDocumentC2EP10QQuickItem(QQuickItem * parent) {
   return  new QQuickTextDocument(parent);

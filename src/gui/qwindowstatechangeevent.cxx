@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQWindowStateChangeEvent : public QWindowStateChangeEvent {
 public:
   virtual ~MyQWindowStateChangeEvent() {}
-// void QWindowStateChangeEvent(Qt::WindowStates, _Bool)
+// void QWindowStateChangeEvent(Qt::WindowStates, bool)
 MyQWindowStateChangeEvent(QFlags<Qt::WindowState> aOldState, bool isOverride) : QWindowStateChangeEvent(aOldState, isOverride) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:783
-// [-2] void QWindowStateChangeEvent(Qt::WindowStates, _Bool)
+// [-2] void QWindowStateChangeEvent(Qt::WindowStates, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(QFlags<Qt::WindowState> aOldState, bool isOverride) {
   return  new QWindowStateChangeEvent(aOldState, isOverride);

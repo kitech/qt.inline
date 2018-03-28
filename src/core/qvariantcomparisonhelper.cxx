@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQVariantComparisonHelper : public QVariantComparisonHelper {
 public:
   virtual ~MyQVariantComparisonHelper() {}
-// void QVariantComparisonHelper(const class QVariant &)
+// void QVariantComparisonHelper(const QVariant &)
 MyQVariantComparisonHelper(const QVariant & var_) : QVariantComparisonHelper(var_) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:560
-// [-2] void QVariantComparisonHelper(const class QVariant &)
+// [-2] void QVariantComparisonHelper(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var_) {
   return  new QVariantComparisonHelper(*var_);

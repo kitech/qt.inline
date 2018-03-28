@@ -18,7 +18,7 @@ public:
   virtual ~MyQTextTableFormat() {}
 // void QTextTableFormat()
 MyQTextTableFormat() : QTextTableFormat() {}
-// void QTextTableFormat(const class QTextFormat &)
+// void QTextTableFormat(const QTextFormat &)
 MyQTextTableFormat(const QTextFormat & fmt_) : QTextTableFormat(fmt_) {}
 };
 

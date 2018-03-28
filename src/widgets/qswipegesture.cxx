@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQSwipeGesture : public QSwipeGesture {
 public:
   virtual ~MyQSwipeGesture() {}
-// void QSwipeGesture(class QObject *)
+// void QSwipeGesture(QObject *)
 MyQSwipeGesture(QObject * parent) : QSwipeGesture(parent) {}
 };
 
@@ -31,7 +31,7 @@ void* C_ZNK13QSwipeGesture10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:221
-// [-2] void QSwipeGesture(class QObject *)
+// [-2] void QSwipeGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSwipeGestureC2EP7QObject(QObject * parent) {
   return  new QSwipeGesture(parent);

@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQAccessibleValueChangeEvent : public QAccessibleValueChangeEvent {
 public:
   virtual ~MyQAccessibleValueChangeEvent() {}
-// void QAccessibleValueChangeEvent(class QObject *, const class QVariant &)
+// void QAccessibleValueChangeEvent(QObject *, const QVariant &)
 MyQAccessibleValueChangeEvent(QObject * obj, const QVariant & val) : QAccessibleValueChangeEvent(obj, val) {}
-// void QAccessibleValueChangeEvent(class QAccessibleInterface *, const class QVariant &)
+// void QAccessibleValueChangeEvent(QAccessibleInterface *, const QVariant &)
 MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val) : QAccessibleValueChangeEvent(iface, val) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:898
-// [-2] void QAccessibleValueChangeEvent(class QObject *, const class QVariant &)
+// [-2] void QAccessibleValueChangeEvent(QObject *, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * obj, QVariant* val) {
   return  new QAccessibleValueChangeEvent(obj, *val);
@@ -32,7 +32,7 @@ void* C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * obj, QV
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:904
-// [-2] void QAccessibleValueChangeEvent(class QAccessibleInterface *, const class QVariant &)
+// [-2] void QAccessibleValueChangeEvent(QAccessibleInterface *, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, QVariant* val) {
   return  new QAccessibleValueChangeEvent(iface, *val);
@@ -47,7 +47,7 @@ void C_ZN27QAccessibleValueChangeEventD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:913
-// [-2] void setValue(const class QVariant &)
+// [-2] void setValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *this_, QVariant* val) {
   ((QAccessibleValueChangeEvent*)this_)->setValue(*val);

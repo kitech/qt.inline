@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQAbstractButton : public QAbstractButton {
 public:
   virtual ~MyQAbstractButton() {}
-// void QAbstractButton(class QWidget *)
+// void QAbstractButton(QWidget *)
 MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -31,7 +31,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool hitButton(const class QPoint &)
+// bool hitButton(const QPoint &)
   virtual bool hitButton(const QPoint & pos) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hitButton", &handled, 1, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -68,7 +68,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -81,7 +81,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -93,7 +93,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(class QKeyEvent *)
+// void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -105,7 +105,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -117,7 +117,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -129,7 +129,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -141,7 +141,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -153,7 +153,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -165,7 +165,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -177,7 +177,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(class QTimerEvent *)
+// void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -192,10 +192,10 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:129
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:130
-// [1] bool hitButton(const class QPoint &)
+// [1] bool hitButton(const QPoint &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QAbstractButton9hitButtonERK6QPoint(void *this_, QPoint* pos) {
   return (bool)((QAbstractButton*)this_)->QAbstractButton::hitButton(*pos);
@@ -219,7 +219,7 @@ void C_ZN15QAbstractButton14nextCheckStateEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:134
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractButton5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QAbstractButton*)this_)->QAbstractButton::event(e);
@@ -227,7 +227,7 @@ bool C_ZN15QAbstractButton5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:135
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::keyPressEvent(e);
@@ -235,7 +235,7 @@ void C_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:136
-// [-2] void keyReleaseEvent(class QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::keyReleaseEvent(e);
@@ -243,7 +243,7 @@ void C_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:137
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::mousePressEvent(e);
@@ -251,7 +251,7 @@ void C_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(void *this_, QMouseEv
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:138
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::mouseReleaseEvent(e);
@@ -259,7 +259,7 @@ void C_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(void *this_, QMouse
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:139
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::mouseMoveEvent(e);
@@ -267,7 +267,7 @@ void C_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:140
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::focusInEvent(e);
@@ -275,7 +275,7 @@ void C_ZN15QAbstractButton12focusInEventEP11QFocusEvent(void *this_, QFocusEvent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:141
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::focusOutEvent(e);
@@ -283,7 +283,7 @@ void C_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(void *this_, QFocusEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:142
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton11changeEventEP6QEvent(void *this_, QEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::changeEvent(e);
@@ -291,7 +291,7 @@ void C_ZN15QAbstractButton11changeEventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:143
-// [-2] void timerEvent(class QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton10timerEventEP11QTimerEvent(void *this_, QTimerEvent * e) {
   ((QAbstractButton*)this_)->QAbstractButton::timerEvent(e);
@@ -307,7 +307,7 @@ void* C_ZNK15QAbstractButton10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:75
-// [-2] void QAbstractButton(class QWidget *)
+// [-2] void QAbstractButton(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractButton*)(0);
@@ -323,7 +323,7 @@ void C_ZN15QAbstractButtonD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:78
-// [-2] void setText(const class QString &)
+// [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton7setTextERK7QString(void *this_, QString* text) {
   ((QAbstractButton*)this_)->setText(*text);
@@ -340,7 +340,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:81
-// [-2] void setIcon(const class QIcon &)
+// [-2] void setIcon(const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton7setIconERK5QIcon(void *this_, QIcon* icon) {
   ((QAbstractButton*)this_)->setIcon(*icon);
@@ -366,7 +366,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:87
-// [-2] void setShortcut(const class QKeySequence &)
+// [-2] void setShortcut(const QKeySequence &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton11setShortcutERK12QKeySequence(void *this_, QKeySequence* key) {
   ((QAbstractButton*)this_)->setShortcut(*key);
@@ -383,7 +383,7 @@ return new QKeySequence(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:91
-// [-2] void setCheckable(_Bool)
+// [-2] void setCheckable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton12setCheckableEb(void *this_, bool arg0) {
   ((QAbstractButton*)this_)->setCheckable(arg0);
@@ -407,7 +407,7 @@ bool C_ZNK15QAbstractButton9isCheckedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:96
-// [-2] void setDown(_Bool)
+// [-2] void setDown(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton7setDownEb(void *this_, bool arg0) {
   ((QAbstractButton*)this_)->setDown(arg0);
@@ -423,7 +423,7 @@ bool C_ZNK15QAbstractButton6isDownEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:99
-// [-2] void setAutoRepeat(_Bool)
+// [-2] void setAutoRepeat(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton13setAutoRepeatEb(void *this_, bool arg0) {
   ((QAbstractButton*)this_)->setAutoRepeat(arg0);
@@ -471,7 +471,7 @@ int C_ZNK15QAbstractButton18autoRepeatIntervalEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:108
-// [-2] void setAutoExclusive(_Bool)
+// [-2] void setAutoExclusive(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton16setAutoExclusiveEb(void *this_, bool arg0) {
   ((QAbstractButton*)this_)->setAutoExclusive(arg0);
@@ -495,7 +495,7 @@ void* C_ZNK15QAbstractButton5groupEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:116
-// [-2] void setIconSize(const class QSize &)
+// [-2] void setIconSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton11setIconSizeERK5QSize(void *this_, QSize* size) {
   ((QAbstractButton*)this_)->setIconSize(*size);
@@ -527,7 +527,7 @@ void C_ZN15QAbstractButton6toggleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:120
-// [-2] void setChecked(_Bool)
+// [-2] void setChecked(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton10setCheckedEb(void *this_, bool arg0) {
   ((QAbstractButton*)this_)->setChecked(arg0);
@@ -551,7 +551,7 @@ void C_ZN15QAbstractButton8releasedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:125
-// [-2] void clicked(_Bool)
+// [-2] void clicked(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton7clickedEb(void *this_, bool checked) {
   ((QAbstractButton*)this_)->clicked(checked);
@@ -559,7 +559,7 @@ void C_ZN15QAbstractButton7clickedEb(void *this_, bool checked) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:126
-// [-2] void toggled(_Bool)
+// [-2] void toggled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractButton7toggledEb(void *this_, bool checked) {
   ((QAbstractButton*)this_)->toggled(checked);

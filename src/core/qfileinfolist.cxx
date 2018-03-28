@@ -79,7 +79,7 @@ bool C_QFileInfoList_isDetached_0(void* this_ ) {
     return rv;
 }
 
-// [-2] void setSharable(_Bool)
+// [-2] void setSharable(bool)
 extern "C"
 void C_QFileInfoList_setSharable_0(void* this_ , bool sharable) {
     // QFileInfoList_setSharable_0()
@@ -300,7 +300,7 @@ QFileInfoList::reverse_iterator* C_QFileInfoList_rend_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator insert(class QList::iterator, const T &)
+// [-3] QList::iterator insert(QList::iterator, const T &)
 extern "C"
 QFileInfoList::iterator* C_QFileInfoList_insert_1(void* this_ , QFileInfoList::iterator* before, QFileInfo* t) {
     // QFileInfoList_insert_1()
@@ -308,7 +308,7 @@ QFileInfoList::iterator* C_QFileInfoList_insert_1(void* this_ , QFileInfoList::i
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator erase(class QList::iterator)
+// [-3] QList::iterator erase(QList::iterator)
 extern "C"
 QFileInfoList::iterator* C_QFileInfoList_erase_0(void* this_ , QFileInfoList::iterator* pos) {
     // QFileInfoList_erase_0()
@@ -316,7 +316,7 @@ QFileInfoList::iterator* C_QFileInfoList_erase_0(void* this_ , QFileInfoList::it
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator erase(class QList::iterator, class QList::iterator)
+// [-3] QList::iterator erase(QList::iterator, QList::iterator)
 extern "C"
 QFileInfoList::iterator* C_QFileInfoList_erase_1(void* this_ , QFileInfoList::iterator* first, QFileInfoList::iterator* last) {
     // QFileInfoList_erase_1()

@@ -17,11 +17,11 @@
 class Q_DECL_EXPORT MyQSaveFile : public QSaveFile {
 public:
   virtual ~MyQSaveFile() {}
-// void QSaveFile(const class QString &)
+// void QSaveFile(const QString &)
 MyQSaveFile(const QString & name) : QSaveFile(name) {}
-// void QSaveFile(class QObject *)
+// void QSaveFile(QObject *)
 MyQSaveFile(QObject * parent) : QSaveFile(parent) {}
-// void QSaveFile(const class QString &, class QObject *)
+// void QSaveFile(const QString &, QObject *)
 MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // qint64 writeData(const char *, qint64)
@@ -56,7 +56,7 @@ void* C_ZNK9QSaveFile10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:68
-// [-2] void QSaveFile(const class QString &)
+// [-2] void QSaveFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSaveFileC2ERK7QString(QString* name) {
   auto _nilp = (MyQSaveFile*)(0);
@@ -65,7 +65,7 @@ void* C_ZN9QSaveFileC2ERK7QString(QString* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:70
-// [-2] void QSaveFile(class QObject *)
+// [-2] void QSaveFile(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSaveFileC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSaveFile*)(0);
@@ -74,7 +74,7 @@ void* C_ZN9QSaveFileC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:71
-// [-2] void QSaveFile(const class QString &, class QObject *)
+// [-2] void QSaveFile(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSaveFileC2ERK7QStringP7QObject(QString* name, QObject * parent) {
   auto _nilp = (MyQSaveFile*)(0);
@@ -99,7 +99,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:76
-// [-2] void setFileName(const class QString &)
+// [-2] void setFileName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSaveFile11setFileNameERK7QString(void *this_, QString* name) {
   ((QSaveFile*)this_)->setFileName(*name);
@@ -131,7 +131,7 @@ void C_ZN9QSaveFile13cancelWritingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:83
-// [-2] void setDirectWriteFallback(_Bool)
+// [-2] void setDirectWriteFallback(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSaveFile22setDirectWriteFallbackEb(void *this_, bool enabled) {
   ((QSaveFile*)this_)->setDirectWriteFallback(enabled);

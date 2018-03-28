@@ -17,9 +17,9 @@
 class Q_DECL_EXPORT MyQJSValue : public QJSValue {
 public:
   virtual ~MyQJSValue() {}
-// void QJSValue(enum QJSValue::SpecialValue)
+// void QJSValue(QJSValue::SpecialValue)
 MyQJSValue(QJSValue::SpecialValue value) : QJSValue(value) {}
-// void QJSValue(_Bool)
+// void QJSValue(bool)
 MyQJSValue(bool value) : QJSValue(value) {}
 // void QJSValue(int)
 MyQJSValue(int value) : QJSValue(value) {}
@@ -27,9 +27,9 @@ MyQJSValue(int value) : QJSValue(value) {}
 MyQJSValue(uint value) : QJSValue(value) {}
 // void QJSValue(double)
 MyQJSValue(double value) : QJSValue(value) {}
-// void QJSValue(const class QString &)
+// void QJSValue(const QString &)
 MyQJSValue(const QString & value) : QJSValue(value) {}
-// void QJSValue(const class QLatin1String &)
+// void QJSValue(const QLatin1String &)
 MyQJSValue(const QLatin1String & value) : QJSValue(value) {}
 // void QJSValue(const char *)
 MyQJSValue(const char * str) : QJSValue(str) {}
@@ -37,7 +37,7 @@ MyQJSValue(const char * str) : QJSValue(str) {}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:72
-// [-2] void QJSValue(enum QJSValue::SpecialValue)
+// [-2] void QJSValue(QJSValue::SpecialValue)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2ENS_12SpecialValueE(QJSValue::SpecialValue value) {
   return  new QJSValue(value);
@@ -52,7 +52,7 @@ void C_ZN8QJSValueD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:78
-// [8] QJSValue & operator=(class QJSValue &&)
+// [8] QJSValue & operator=(QJSValue &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueaSEOS_(void *this_, QJSValue && other) {
   auto& rv = ((QJSValue*)this_)->operator=(other);
@@ -61,7 +61,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:82
-// [-2] void QJSValue(_Bool)
+// [-2] void QJSValue(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2Eb(bool value) {
   return  new QJSValue(value);
@@ -93,7 +93,7 @@ void* C_ZN8QJSValueC2Ed(double value) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:86
-// [-2] void QJSValue(const class QString &)
+// [-2] void QJSValue(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2ERK7QString(QString* value) {
   return  new QJSValue(*value);
@@ -101,7 +101,7 @@ void* C_ZN8QJSValueC2ERK7QString(QString* value) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:87
-// [-2] void QJSValue(const class QLatin1String &)
+// [-2] void QJSValue(const QLatin1String &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueC2ERK13QLatin1String(QLatin1String* value) {
   return  new QJSValue(*value);
@@ -117,7 +117,7 @@ void* C_ZN8QJSValueC2EPKc(const char * str) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:92
-// [8] QJSValue & operator=(const class QJSValue &)
+// [8] QJSValue & operator=(const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QJSValueaSERKS_(void *this_, QJSValue* other) {
   auto& rv = ((QJSValue*)this_)->operator=(*other);
@@ -311,7 +311,7 @@ return new QDateTime(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:118
-// [1] bool equals(const class QJSValue &)
+// [1] bool equals(const QJSValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QJSValue6equalsERKS_(void *this_, QJSValue* other) {
   return (bool)((QJSValue*)this_)->equals(*other);
@@ -319,7 +319,7 @@ bool C_ZNK8QJSValue6equalsERKS_(void *this_, QJSValue* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:119
-// [1] bool strictlyEquals(const class QJSValue &)
+// [1] bool strictlyEquals(const QJSValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QJSValue14strictlyEqualsERKS_(void *this_, QJSValue* other) {
   return (bool)((QJSValue*)this_)->strictlyEquals(*other);
@@ -336,7 +336,7 @@ return new QJSValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:122
-// [-2] void setPrototype(const class QJSValue &)
+// [-2] void setPrototype(const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QJSValue12setPrototypeERKS_(void *this_, QJSValue* prototype) {
   ((QJSValue*)this_)->setPrototype(*prototype);
@@ -344,7 +344,7 @@ void C_ZN8QJSValue12setPrototypeERKS_(void *this_, QJSValue* prototype) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:124
-// [8] QJSValue property(const class QString &)
+// [8] QJSValue property(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QJSValue8propertyERK7QString(void *this_, QString* name) {
   auto rv = ((QJSValue*)this_)->property(*name);
@@ -353,7 +353,7 @@ return new QJSValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:125
-// [-2] void setProperty(const class QString &, const class QJSValue &)
+// [-2] void setProperty(const QString &, const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QJSValue11setPropertyERK7QStringRKS_(void *this_, QString* name, QJSValue* value) {
   ((QJSValue*)this_)->setProperty(*name, *value);
@@ -361,7 +361,7 @@ void C_ZN8QJSValue11setPropertyERK7QStringRKS_(void *this_, QString* name, QJSVa
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:127
-// [1] bool hasProperty(const class QString &)
+// [1] bool hasProperty(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QJSValue11hasPropertyERK7QString(void *this_, QString* name) {
   return (bool)((QJSValue*)this_)->hasProperty(*name);
@@ -369,7 +369,7 @@ bool C_ZNK8QJSValue11hasPropertyERK7QString(void *this_, QString* name) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:128
-// [1] bool hasOwnProperty(const class QString &)
+// [1] bool hasOwnProperty(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QJSValue14hasOwnPropertyERK7QString(void *this_, QString* name) {
   return (bool)((QJSValue*)this_)->hasOwnProperty(*name);
@@ -386,7 +386,7 @@ return new QJSValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:131
-// [-2] void setProperty(quint32, const class QJSValue &)
+// [-2] void setProperty(quint32, const QJSValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QJSValue11setPropertyEjRKS_(void *this_, quint32 arrayIndex, QJSValue* value) {
   ((QJSValue*)this_)->setProperty(arrayIndex, *value);
@@ -394,7 +394,7 @@ void C_ZN8QJSValue11setPropertyEjRKS_(void *this_, quint32 arrayIndex, QJSValue*
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:133
-// [1] bool deleteProperty(const class QString &)
+// [1] bool deleteProperty(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QJSValue14deletePropertyERK7QString(void *this_, QString* name) {
   return (bool)((QJSValue*)this_)->deleteProperty(*name);

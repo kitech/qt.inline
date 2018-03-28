@@ -20,14 +20,14 @@ public:
 MyQPixmap() : QPixmap() {}
 // void QPixmap(int, int)
 MyQPixmap(int w, int h) : QPixmap(w, h) {}
-// void QPixmap(const class QSize &)
+// void QPixmap(const QSize &)
 MyQPixmap(const QSize & arg0) : QPixmap(arg0) {}
-// void QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
+// void QPixmap(const QString &, const char *, Qt::ImageConversionFlags)
 MyQPixmap(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) : QPixmap(fileName, format, flags) {}
 // void QPixmap(const char *const *)
 MyQPixmap(char** xpm) : QPixmap(xpm) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(enum QPaintDevice::PaintDeviceMetric)
+// int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -40,7 +40,7 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
   }
 
 // Protected static Visibility=Default Availability=Available
-// QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
+// QPixmap fromImageInPlace(QImage &, Qt::ImageConversionFlags)
   virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"fromImageInPlace", &handled, 2, (uint64_t)&image, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -56,7 +56,7 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:175
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric arg0) {
   return (int)((QPixmap*)this_)->QPixmap::metric(arg0);
@@ -64,7 +64,7 @@ int C_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaint
 
 // Protected static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:176
-// [32] QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
+// [32] QPixmap fromImageInPlace(QImage &, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage* image, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = ((QPixmap*)this_)->QPixmap::fromImageInPlace(*image, flags);
@@ -91,7 +91,7 @@ void* C_ZN7QPixmapC2Eii(int w, int h) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:67
-// [-2] void QPixmap(const class QSize &)
+// [-2] void QPixmap(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmapC2ERK5QSize(QSize* arg0) {
   auto _nilp = (MyQPixmap*)(0);
@@ -100,7 +100,7 @@ void* C_ZN7QPixmapC2ERK5QSize(QSize* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:68
-// [-2] void QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
+// [-2] void QPixmap(const QString &, const char *, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmapC2ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(QString* fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
   auto _nilp = (MyQPixmap*)(0);
@@ -125,7 +125,7 @@ void C_ZN7QPixmapD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:75
-// [32] QPixmap & operator=(const class QPixmap &)
+// [32] QPixmap & operator=(const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmapaSERKS_(void *this_, QPixmap* arg0) {
   auto& rv = ((QPixmap*)this_)->operator=(*arg0);
@@ -134,7 +134,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:77
-// [32] QPixmap & operator=(class QPixmap &&)
+// [32] QPixmap & operator=(QPixmap &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmapaSEOS_(void *this_, QPixmap && other) {
   auto& rv = ((QPixmap*)this_)->operator=(other);
@@ -144,7 +144,7 @@ return &rv;
 // Public inline Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtGui/qpixmap.h:80
-// [-2] void swap(class QPixmap &)
+// [-2] void swap(QPixmap &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap4swapERS_(void *this_, QPixmap* other) {
@@ -220,7 +220,7 @@ int C_ZN7QPixmap12defaultDepthEv() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:96
-// [-2] void fill(const class QColor &)
+// [-2] void fill(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap4fillERK6QColor(void *this_, QColor* fillColor) {
   ((QPixmap*)this_)->fill(*fillColor);
@@ -228,7 +228,7 @@ void C_ZN7QPixmap4fillERK6QColor(void *this_, QColor* fillColor) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:97
-// [-2] void fill(const class QPaintDevice *, const class QPoint &)
+// [-2] void fill(const QPaintDevice *, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap4fillEPK12QPaintDeviceRK6QPoint(void *this_, const QPaintDevice * device, QPoint* ofs) {
   ((QPixmap*)this_)->fill(device, *ofs);
@@ -236,7 +236,7 @@ void C_ZN7QPixmap4fillEPK12QPaintDeviceRK6QPoint(void *this_, const QPaintDevice
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:98
-// [-2] void fill(const class QPaintDevice *, int, int)
+// [-2] void fill(const QPaintDevice *, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap4fillEPK12QPaintDeviceii(void *this_, const QPaintDevice * device, int xofs, int yofs) {
   ((QPixmap*)this_)->fill(device, xofs, yofs);
@@ -253,7 +253,7 @@ return new QBitmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:101
-// [-2] void setMask(const class QBitmap &)
+// [-2] void setMask(const QBitmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap7setMaskERK7QBitmap(void *this_, QBitmap* arg0) {
   ((QPixmap*)this_)->setMask(*arg0);
@@ -293,7 +293,7 @@ bool C_ZNK7QPixmap15hasAlphaChannelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:110
-// [32] QBitmap createHeuristicMask(_Bool)
+// [32] QBitmap createHeuristicMask(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QPixmap19createHeuristicMaskEb(void *this_, bool clipTight) {
   auto rv = ((QPixmap*)this_)->createHeuristicMask(clipTight);
@@ -302,7 +302,7 @@ return new QBitmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:112
-// [32] QBitmap createMaskFromColor(const class QColor &, Qt::MaskMode)
+// [32] QBitmap createMaskFromColor(const QColor &, Qt::MaskMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QPixmap19createMaskFromColorERK6QColorN2Qt8MaskModeE(void *this_, QColor* maskColor, Qt::MaskMode mode) {
   auto rv = ((QPixmap*)this_)->createMaskFromColor(*maskColor, mode);
@@ -320,7 +320,7 @@ return new QPixmap(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:115
-// [32] QPixmap grabWidget(class QObject *, const class QRect &)
+// [32] QPixmap grabWidget(QObject *, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap10grabWidgetEP7QObjectRK5QRect(QObject * widget, QRect* rect) {
   auto rv = QPixmap::grabWidget(widget, *rect);
@@ -329,7 +329,7 @@ return new QPixmap(rv);
 
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:116
-// [32] QPixmap grabWidget(class QObject *, int, int, int, int)
+// [32] QPixmap grabWidget(QObject *, int, int, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap10grabWidgetEP7QObjectiiii(QObject * widget, int x, int y, int w, int h) {
   auto rv = QPixmap::grabWidget(widget, x, y, w, h);
@@ -347,7 +347,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:122
-// [32] QPixmap scaled(const class QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
+// [32] QPixmap scaled(const QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QPixmap6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE(void *this_, QSize* s, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode) {
   auto rv = ((QPixmap*)this_)->scaled(*s, aspectMode, mode);
@@ -374,7 +374,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:126
-// [32] QPixmap transformed(const class QMatrix &, Qt::TransformationMode)
+// [32] QPixmap transformed(const QMatrix &, Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QPixmap11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, QMatrix* arg0, Qt::TransformationMode mode) {
   auto rv = ((QPixmap*)this_)->transformed(*arg0, mode);
@@ -383,7 +383,7 @@ return new QPixmap(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:127
-// [48] QMatrix trueMatrix(const class QMatrix &, int, int)
+// [48] QMatrix trueMatrix(const QMatrix &, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap10trueMatrixERK7QMatrixii(QMatrix* m, int w, int h) {
   auto rv = QPixmap::trueMatrix(*m, w, h);
@@ -392,7 +392,7 @@ return new QMatrix(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:128
-// [32] QPixmap transformed(const class QTransform &, Qt::TransformationMode)
+// [32] QPixmap transformed(const QTransform &, Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QPixmap11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, QTransform* arg0, Qt::TransformationMode mode) {
   auto rv = ((QPixmap*)this_)->transformed(*arg0, mode);
@@ -401,7 +401,7 @@ return new QPixmap(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:129
-// [88] QTransform trueMatrix(const class QTransform &, int, int)
+// [88] QTransform trueMatrix(const QTransform &, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap10trueMatrixERK10QTransformii(QTransform* m, int w, int h) {
   auto rv = QPixmap::trueMatrix(*m, w, h);
@@ -419,7 +419,7 @@ return new QImage(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:132
-// [32] QPixmap fromImage(const class QImage &, Qt::ImageConversionFlags)
+// [32] QPixmap fromImage(const QImage &, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage* image, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = QPixmap::fromImage(*image, flags);
@@ -428,7 +428,7 @@ return new QPixmap(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:133
-// [32] QPixmap fromImageReader(class QImageReader *, Qt::ImageConversionFlags)
+// [32] QPixmap fromImageReader(QImageReader *, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE(QImageReader * imageReader, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = QPixmap::fromImageReader(imageReader, flags);
@@ -438,7 +438,7 @@ return new QPixmap(rv);
 // Public static inline Visibility=Default Availability=Available
 // since 5.3
 // /usr/include/qt/QtGui/qpixmap.h:135
-// [32] QPixmap fromImage(class QImage &&, Qt::ImageConversionFlags)
+// [32] QPixmap fromImage(QImage &&, Qt::ImageConversionFlags)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage && image, QFlags<Qt::ImageConversionFlag> flags) {
@@ -449,7 +449,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:141
-// [1] bool load(const class QString &, const char *, Qt::ImageConversionFlags)
+// [1] bool load(const QString &, const char *, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QPixmap4loadERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QString* fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
   return (bool)((QPixmap*)this_)->load(*fileName, format, flags);
@@ -465,7 +465,7 @@ bool C_ZN7QPixmap12loadFromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE(void 
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:143
-// [1] bool loadFromData(const class QByteArray &, const char *, Qt::ImageConversionFlags)
+// [1] bool loadFromData(const QByteArray &, const char *, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QByteArray* data, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
   return (bool)((QPixmap*)this_)->loadFromData(*data, format, flags);
@@ -473,7 +473,7 @@ bool C_ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFl
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:144
-// [1] bool save(const class QString &, const char *, int)
+// [1] bool save(const QString &, const char *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QPixmap4saveERK7QStringPKci(void *this_, QString* fileName, const char * format, int quality) {
   return (bool)((QPixmap*)this_)->save(*fileName, format, quality);
@@ -481,7 +481,7 @@ bool C_ZNK7QPixmap4saveERK7QStringPKci(void *this_, QString* fileName, const cha
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:145
-// [1] bool save(class QIODevice *, const char *, int)
+// [1] bool save(QIODevice *, const char *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QPixmap4saveEP9QIODevicePKci(void *this_, QIODevice * device, const char * format, int quality) {
   return (bool)((QPixmap*)this_)->save(device, format, quality);
@@ -490,7 +490,7 @@ bool C_ZNK7QPixmap4saveEP9QIODevicePKci(void *this_, QIODevice * device, const c
 // Public Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtGui/qpixmap.h:147
-// [1] bool convertFromImage(const class QImage &, Qt::ImageConversionFlags)
+// [1] bool convertFromImage(const QImage &, Qt::ImageConversionFlags)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QPixmap16convertFromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage* img, QFlags<Qt::ImageConversionFlag> flags) {
@@ -509,7 +509,7 @@ return new QPixmap(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:150
-// [32] QPixmap copy(const class QRect &)
+// [32] QPixmap copy(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QPixmap4copyERK5QRect(void *this_, QRect* rect) {
   auto rv = ((QPixmap*)this_)->copy(*rect);
@@ -519,7 +519,7 @@ return new QPixmap(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtGui/qpixmap.h:152
-// [-2] void scroll(int, int, int, int, int, int, class QRegion *)
+// [-2] void scroll(int, int, int, int, int, int, QRegion *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *this_, int dx, int dy, int x, int y, int width, int height, QRegion * exposed) {
@@ -530,7 +530,7 @@ void C_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *this_, int dx, int dy, int x, int
 // Public Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtGui/qpixmap.h:153
-// [-2] void scroll(int, int, const class QRect &, class QRegion *)
+// [-2] void scroll(int, int, const QRect &, QRegion *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QPixmap6scrollEiiRK5QRectP7QRegion(void *this_, int dx, int dy, QRect* rect, QRegion * exposed) {

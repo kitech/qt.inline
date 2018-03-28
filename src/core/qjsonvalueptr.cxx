@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQJsonValuePtr : public QJsonValuePtr {
 public:
   virtual ~MyQJsonValuePtr() {}
-// void QJsonValuePtr(const class QJsonValue &)
+// void QJsonValuePtr(const QJsonValue &)
 MyQJsonValuePtr(const QJsonValue & val) : QJsonValuePtr(val) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:226
-// [-2] void QJsonValuePtr(const class QJsonValue &)
+// [-2] void QJsonValuePtr(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValuePtrC2ERK10QJsonValue(QJsonValue* val) {
   return  new QJsonValuePtr(*val);

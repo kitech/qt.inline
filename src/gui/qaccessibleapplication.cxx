@@ -46,7 +46,7 @@ int C_ZNK22QAccessibleApplication10childCountEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleobject.h:83
-// [4] int indexOfChild(const class QAccessibleInterface *)
+// [4] int indexOfChild(const QAccessibleInterface *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK22QAccessibleApplication12indexOfChildEPK20QAccessibleInterface(void *this_, const QAccessibleInterface * arg0) {
   return (int)((QAccessibleApplication*)this_)->indexOfChild(arg0);
@@ -78,7 +78,7 @@ void* C_ZNK22QAccessibleApplication5childEi(void *this_, int index) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleobject.h:91
-// [8] QString text(class QAccessible::Text)
+// [8] QString text(QAccessible::Text)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QAccessibleApplication4textEN11QAccessible4TextE(void *this_, QAccessible::Text t) {
   auto rv = ((QAccessibleApplication*)this_)->text(t);

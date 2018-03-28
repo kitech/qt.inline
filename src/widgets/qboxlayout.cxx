@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQBoxLayout : public QBoxLayout {
 public:
   virtual ~MyQBoxLayout() {}
-// void QBoxLayout(enum QBoxLayout::Direction, class QWidget *)
+// void QBoxLayout(QBoxLayout::Direction, QWidget *)
 MyQBoxLayout(QBoxLayout::Direction arg0, QWidget * parent) : QBoxLayout(arg0, parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK10QBoxLayout10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:64
-// [-2] void QBoxLayout(enum QBoxLayout::Direction, class QWidget *)
+// [-2] void QBoxLayout(QBoxLayout::Direction, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg0, QWidget * parent) {
   return  new QBoxLayout(arg0, parent);
@@ -53,7 +53,7 @@ QBoxLayout::Direction C_ZNK10QBoxLayout9directionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:69
-// [-2] void setDirection(enum QBoxLayout::Direction)
+// [-2] void setDirection(QBoxLayout::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout12setDirectionENS_9DirectionE(void *this_, QBoxLayout::Direction arg0) {
   ((QBoxLayout*)this_)->setDirection(arg0);
@@ -78,7 +78,7 @@ void C_ZN10QBoxLayout10addStretchEi(void *this_, int stretch) {
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtWidgets/qboxlayout.h:73
-// [-2] void addSpacerItem(class QSpacerItem *)
+// [-2] void addSpacerItem(QSpacerItem *)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout13addSpacerItemEP11QSpacerItem(void *this_, QSpacerItem * spacerItem) {
@@ -88,7 +88,7 @@ void C_ZN10QBoxLayout13addSpacerItemEP11QSpacerItem(void *this_, QSpacerItem * s
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:74
-// [-2] void addWidget(class QWidget *, int, Qt::Alignment)
+// [-2] void addWidget(QWidget *, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout9addWidgetEP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int stretch, QFlags<Qt::AlignmentFlag> alignment) {
   ((QBoxLayout*)this_)->addWidget(arg0, stretch, alignment);
@@ -96,7 +96,7 @@ void C_ZN10QBoxLayout9addWidgetEP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE(void *th
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:75
-// [-2] void addLayout(class QLayout *, int)
+// [-2] void addLayout(QLayout *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout9addLayoutEP7QLayouti(void *this_, QLayout * layout, int stretch) {
   ((QBoxLayout*)this_)->addLayout(layout, stretch);
@@ -112,7 +112,7 @@ void C_ZN10QBoxLayout8addStrutEi(void *this_, int arg0) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:77
-// [-2] void addItem(class QLayoutItem *)
+// [-2] void addItem(QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * arg0) {
   ((QBoxLayout*)this_)->addItem(arg0);
@@ -137,7 +137,7 @@ void C_ZN10QBoxLayout13insertStretchEii(void *this_, int index, int stretch) {
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtWidgets/qboxlayout.h:81
-// [-2] void insertSpacerItem(int, class QSpacerItem *)
+// [-2] void insertSpacerItem(int, QSpacerItem *)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout16insertSpacerItemEiP11QSpacerItem(void *this_, int index, QSpacerItem * spacerItem) {
@@ -147,7 +147,7 @@ void C_ZN10QBoxLayout16insertSpacerItemEiP11QSpacerItem(void *this_, int index, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:82
-// [-2] void insertWidget(int, class QWidget *, int, Qt::Alignment)
+// [-2] void insertWidget(int, QWidget *, int, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout12insertWidgetEiP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE(void *this_, int index, QWidget * widget, int stretch, QFlags<Qt::AlignmentFlag> alignment) {
   ((QBoxLayout*)this_)->insertWidget(index, widget, stretch, alignment);
@@ -155,7 +155,7 @@ void C_ZN10QBoxLayout12insertWidgetEiP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE(voi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:83
-// [-2] void insertLayout(int, class QLayout *, int)
+// [-2] void insertLayout(int, QLayout *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout12insertLayoutEiP7QLayouti(void *this_, int index, QLayout * layout, int stretch) {
   ((QBoxLayout*)this_)->insertLayout(index, layout, stretch);
@@ -163,7 +163,7 @@ void C_ZN10QBoxLayout12insertLayoutEiP7QLayouti(void *this_, int index, QLayout 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:84
-// [-2] void insertItem(int, class QLayoutItem *)
+// [-2] void insertItem(int, QLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout10insertItemEiP11QLayoutItem(void *this_, int index, QLayoutItem * arg1) {
   ((QBoxLayout*)this_)->insertItem(index, arg1);
@@ -187,7 +187,7 @@ void C_ZN10QBoxLayout10setSpacingEi(void *this_, int spacing) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:89
-// [1] bool setStretchFactor(class QWidget *, int)
+// [1] bool setStretchFactor(QWidget *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QBoxLayout16setStretchFactorEP7QWidgeti(void *this_, QWidget * w, int stretch) {
   return (bool)((QBoxLayout*)this_)->setStretchFactor(w, stretch);
@@ -195,7 +195,7 @@ bool C_ZN10QBoxLayout16setStretchFactorEP7QWidgeti(void *this_, QWidget * w, int
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:90
-// [1] bool setStretchFactor(class QLayout *, int)
+// [1] bool setStretchFactor(QLayout *, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QBoxLayout16setStretchFactorEP7QLayouti(void *this_, QLayout * l, int stretch) {
   return (bool)((QBoxLayout*)this_)->setStretchFactor(l, stretch);
@@ -316,7 +316,7 @@ int C_ZNK10QBoxLayout5countEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:107
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QBoxLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QBoxLayout*)this_)->setGeometry(*arg0);

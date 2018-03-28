@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQDoubleSpinBox : public QDoubleSpinBox {
 public:
   virtual ~MyQDoubleSpinBox() {}
-// void QDoubleSpinBox(class QWidget *)
+// void QDoubleSpinBox(QWidget *)
 MyQDoubleSpinBox(QWidget * parent) : QDoubleSpinBox(parent) {}
 };
 
@@ -30,7 +30,7 @@ void* C_ZNK14QDoubleSpinBox10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:126
-// [-2] void QDoubleSpinBox(class QWidget *)
+// [-2] void QDoubleSpinBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDoubleSpinBoxC2EP7QWidget(QWidget * parent) {
   return  new QDoubleSpinBox(parent);
@@ -62,7 +62,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:132
-// [-2] void setPrefix(const class QString &)
+// [-2] void setPrefix(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDoubleSpinBox9setPrefixERK7QString(void *this_, QString* prefix) {
   ((QDoubleSpinBox*)this_)->setPrefix(*prefix);
@@ -79,7 +79,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:135
-// [-2] void setSuffix(const class QString &)
+// [-2] void setSuffix(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDoubleSpinBox9setSuffixERK7QString(void *this_, QString* suffix) {
   ((QDoubleSpinBox*)this_)->setSuffix(*suffix);
@@ -168,7 +168,7 @@ void C_ZN14QDoubleSpinBox11setDecimalsEi(void *this_, int prec) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:153
-// [4] QValidator::State validate(class QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK14QDoubleSpinBox8validateER7QStringRi(void *this_, QString* input, int & pos) {
   return (QValidator::State)((QDoubleSpinBox*)this_)->validate(*input, pos);
@@ -176,7 +176,7 @@ QValidator::State C_ZNK14QDoubleSpinBox8validateER7QStringRi(void *this_, QStrin
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:154
-// [8] double valueFromText(const class QString &)
+// [8] double valueFromText(const QString &)
 extern "C" Q_DECL_EXPORT
 double C_ZNK14QDoubleSpinBox13valueFromTextERK7QString(void *this_, QString* text) {
   return (double)((QDoubleSpinBox*)this_)->valueFromText(*text);
@@ -193,7 +193,7 @@ return new QString(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:156
-// [-2] void fixup(class QString &)
+// [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QDoubleSpinBox5fixupER7QString(void *this_, QString* str) {
   ((QDoubleSpinBox*)this_)->fixup(*str);
@@ -217,7 +217,7 @@ void C_ZN14QDoubleSpinBox12valueChangedEd(void *this_, double arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:163
-// [-2] void valueChanged(const class QString &)
+// [-2] void valueChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDoubleSpinBox12valueChangedERK7QString(void *this_, QString* arg0) {
   ((QDoubleSpinBox*)this_)->valueChanged(*arg0);

@@ -38,7 +38,7 @@ void C_ZN10QJsonArrayD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:73
-// [16] QJsonArray & operator=(const class QJsonArray &)
+// [16] QJsonArray & operator=(const QJsonArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonArrayaSERKS_(void *this_, QJsonArray* other) {
   auto& rv = ((QJsonArray*)this_)->operator=(*other);
@@ -47,7 +47,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:83
-// [16] QJsonArray & operator=(class QJsonArray &&)
+// [16] QJsonArray & operator=(QJsonArray &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonArrayaSEOS_(void *this_, QJsonArray && other) {
   auto& rv = ((QJsonArray*)this_)->operator=(other);
@@ -56,7 +56,7 @@ return &rv;
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:89
-// [16] QJsonArray fromStringList(const class QStringList &)
+// [16] QJsonArray fromStringList(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonArray14fromStringListERK11QStringList(QStringList* list) {
   auto rv = QJsonArray::fromStringList(*list);
@@ -158,7 +158,7 @@ void C_ZN10QJsonArray10removeLastEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:109
-// [-2] void replace(int, const class QJsonValue &)
+// [-2] void replace(int, const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QJsonArray7replaceEiRK10QJsonValue(void *this_, int i, QJsonValue* value) {
   ((QJsonArray*)this_)->replace(i, *value);
@@ -166,7 +166,7 @@ void C_ZN10QJsonArray7replaceEiRK10QJsonValue(void *this_, int i, QJsonValue* va
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:111
-// [1] bool contains(const class QJsonValue &)
+// [1] bool contains(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QJsonArray8containsERK10QJsonValue(void *this_, QJsonValue* element) {
   return (bool)((QJsonArray*)this_)->contains(*element);
@@ -192,7 +192,7 @@ return new QJsonValue(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:115
-// [1] bool operator==(const class QJsonArray &)
+// [1] bool operator==(const QJsonArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QJsonArrayeqERKS_(void *this_, QJsonArray* other) {
   return (bool)((QJsonArray*)this_)->operator==(*other);
@@ -200,7 +200,7 @@ bool C_ZNK10QJsonArrayeqERKS_(void *this_, QJsonArray* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:116
-// [1] bool operator!=(const class QJsonArray &)
+// [1] bool operator!=(const QJsonArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QJsonArrayneERKS_(void *this_, QJsonArray* other) {
   return (bool)((QJsonArray*)this_)->operator!=(*other);
@@ -209,7 +209,7 @@ bool C_ZNK10QJsonArrayneERKS_(void *this_, QJsonArray* other) {
 // Public inline Visibility=Default Availability=Available
 // since 5.10
 // /usr/include/qt/QtCore/qjsonarray.h:118
-// [-2] void swap(class QJsonArray &)
+// [-2] void swap(QJsonArray &)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QJsonArray4swapERS_(void *this_, QJsonArray* other) {
@@ -273,7 +273,7 @@ return new QJsonArray::const_iterator(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:228
-// [16] QJsonArray operator+(const class QJsonValue &)
+// [16] QJsonArray operator+(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QJsonArrayplERK10QJsonValue(void *this_, QJsonValue* v) {
   auto rv = ((QJsonArray*)this_)->operator+(*v);
@@ -282,7 +282,7 @@ return new QJsonArray(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:230
-// [16] QJsonArray & operator+=(const class QJsonValue &)
+// [16] QJsonArray & operator+=(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonArraypLERK10QJsonValue(void *this_, QJsonValue* v) {
   auto& rv = ((QJsonArray*)this_)->operator+=(*v);
@@ -291,7 +291,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:232
-// [16] QJsonArray & operator<<(const class QJsonValue &)
+// [16] QJsonArray & operator<<(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QJsonArraylsERK10QJsonValue(void *this_, QJsonValue* v) {
   auto& rv = ((QJsonArray*)this_)->operator<<(*v);
@@ -300,7 +300,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:236
-// [-2] void push_back(const class QJsonValue &)
+// [-2] void push_back(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QJsonArray9push_backERK10QJsonValue(void *this_, QJsonValue* t) {
   ((QJsonArray*)this_)->push_back(*t);
@@ -308,7 +308,7 @@ void C_ZN10QJsonArray9push_backERK10QJsonValue(void *this_, QJsonValue* t) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:237
-// [-2] void push_front(const class QJsonValue &)
+// [-2] void push_front(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QJsonArray10push_frontERK10QJsonValue(void *this_, QJsonValue* t) {
   ((QJsonArray*)this_)->push_front(*t);

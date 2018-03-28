@@ -79,7 +79,7 @@ bool C_QVariantList_isDetached_0(void* this_ ) {
     return rv;
 }
 
-// [-2] void setSharable(_Bool)
+// [-2] void setSharable(bool)
 extern "C"
 void C_QVariantList_setSharable_0(void* this_ , bool sharable) {
     // QVariantList_setSharable_0()
@@ -300,7 +300,7 @@ QVariantList::reverse_iterator* C_QVariantList_rend_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator insert(class QList::iterator, const T &)
+// [-3] QList::iterator insert(QList::iterator, const T &)
 extern "C"
 QVariantList::iterator* C_QVariantList_insert_1(void* this_ , QVariantList::iterator* before, QVariant* t) {
     // QVariantList_insert_1()
@@ -308,7 +308,7 @@ QVariantList::iterator* C_QVariantList_insert_1(void* this_ , QVariantList::iter
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator erase(class QList::iterator)
+// [-3] QList::iterator erase(QList::iterator)
 extern "C"
 QVariantList::iterator* C_QVariantList_erase_0(void* this_ , QVariantList::iterator* pos) {
     // QVariantList_erase_0()
@@ -316,7 +316,7 @@ QVariantList::iterator* C_QVariantList_erase_0(void* this_ , QVariantList::itera
     return new decltype(rv)(rv);
 }
 
-// [-3] QList::iterator erase(class QList::iterator, class QList::iterator)
+// [-3] QList::iterator erase(QList::iterator, QList::iterator)
 extern "C"
 QVariantList::iterator* C_QVariantList_erase_1(void* this_ , QVariantList::iterator* first, QVariantList::iterator* last) {
     // QVariantList_erase_1()

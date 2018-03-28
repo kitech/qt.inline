@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQProgressBar : public QProgressBar {
 public:
   virtual ~MyQProgressBar() {}
-// void QProgressBar(class QWidget *)
+// void QProgressBar(QWidget *)
 MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionProgressBar *)
+// void initStyleOption(QStyleOptionProgressBar *)
   virtual void initStyleOption(QStyleOptionProgressBar * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -59,7 +59,7 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:112
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QProgressBar5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QProgressBar*)this_)->QProgressBar::event(e);
@@ -67,7 +67,7 @@ bool C_ZN12QProgressBar5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:113
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QProgressBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QProgressBar*)this_)->QProgressBar::paintEvent(arg0);
@@ -75,7 +75,7 @@ void C_ZN12QProgressBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ar
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:114
-// [-2] void initStyleOption(class QStyleOptionProgressBar *)
+// [-2] void initStyleOption(QStyleOptionProgressBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(void *this_, QStyleOptionProgressBar * option) {
   ((QProgressBar*)this_)->QProgressBar::initStyleOption(option);
@@ -91,7 +91,7 @@ void* C_ZNK12QProgressBar10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:71
-// [-2] void QProgressBar(class QWidget *)
+// [-2] void QProgressBar(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QProgressBarC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQProgressBar*)(0);
@@ -140,7 +140,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:80
-// [-2] void setTextVisible(_Bool)
+// [-2] void setTextVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QProgressBar14setTextVisibleEb(void *this_, bool visible) {
   ((QProgressBar*)this_)->setTextVisible(visible);
@@ -198,7 +198,7 @@ Qt::Orientation C_ZNK12QProgressBar11orientationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:91
-// [-2] void setInvertedAppearance(_Bool)
+// [-2] void setInvertedAppearance(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QProgressBar21setInvertedAppearanceEb(void *this_, bool invert) {
   ((QProgressBar*)this_)->setInvertedAppearance(invert);
@@ -214,7 +214,7 @@ bool C_ZNK12QProgressBar18invertedAppearanceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:93
-// [-2] void setTextDirection(class QProgressBar::Direction)
+// [-2] void setTextDirection(QProgressBar::Direction)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QProgressBar16setTextDirectionENS_9DirectionE(void *this_, QProgressBar::Direction textDirection) {
   ((QProgressBar*)this_)->setTextDirection(textDirection);
@@ -230,7 +230,7 @@ QProgressBar::Direction C_ZNK12QProgressBar13textDirectionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:96
-// [-2] void setFormat(const class QString &)
+// [-2] void setFormat(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QProgressBar9setFormatERK7QString(void *this_, QString* format) {
   ((QProgressBar*)this_)->setFormat(*format);

@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
 public:
   virtual ~MyQPlainTextDocumentLayout() {}
-// void QPlainTextDocumentLayout(class QTextDocument *)
+// void QPlainTextDocumentLayout(QTextDocument *)
 MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(document) {}
 // Protected virtual Visibility=Default Availability=Available
 // void documentChanged(int, int, int)
@@ -51,7 +51,7 @@ void* C_ZNK24QPlainTextDocumentLayout10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:302
-// [-2] void QPlainTextDocumentLayout(class QTextDocument *)
+// [-2] void QPlainTextDocumentLayout(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QPlainTextDocumentLayoutC2EP13QTextDocument(QTextDocument * document) {
   auto _nilp = (MyQPlainTextDocumentLayout*)(0);
@@ -67,7 +67,7 @@ void C_ZN24QPlainTextDocumentLayoutD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:306
-// [4] int hitTest(const class QPointF &, Qt::HitTestAccuracy)
+// [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QPlainTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(void *this_, QPointF* arg0, Qt::HitTestAccuracy arg1) {
   return (int)((QPlainTextDocumentLayout*)this_)->hitTest(*arg0, arg1);
@@ -92,7 +92,7 @@ return new QSizeF(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:311
-// [32] QRectF frameBoundingRect(class QTextFrame *)
+// [32] QRectF frameBoundingRect(QTextFrame *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QPlainTextDocumentLayout17frameBoundingRectEP10QTextFrame(void *this_, QTextFrame * arg0) {
   auto rv = ((QPlainTextDocumentLayout*)this_)->frameBoundingRect(arg0);
@@ -101,7 +101,7 @@ return new QRectF(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:312
-// [32] QRectF blockBoundingRect(const class QTextBlock &)
+// [32] QRectF blockBoundingRect(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QPlainTextDocumentLayout17blockBoundingRectERK10QTextBlock(void *this_, QTextBlock* block) {
   auto rv = ((QPlainTextDocumentLayout*)this_)->blockBoundingRect(*block);
@@ -110,7 +110,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:314
-// [-2] void ensureBlockLayout(const class QTextBlock &)
+// [-2] void ensureBlockLayout(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK24QPlainTextDocumentLayout17ensureBlockLayoutERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QPlainTextDocumentLayout*)this_)->ensureBlockLayout(*block);

@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQWidget : public QWidget {
 public:
   virtual ~MyQWidget() {}
-// void QWidget(class QWidget *, Qt::WindowFlags)
+// void QWidget(QWidget *, Qt::WindowFlags)
 MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -56,7 +56,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(class QMouseEvent *)
+// void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -68,7 +68,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -80,7 +80,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QWheelEvent *)
+// void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -92,7 +92,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -104,7 +104,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(class QKeyEvent *)
+// void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -116,7 +116,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(class QFocusEvent *)
+// void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -128,7 +128,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(class QFocusEvent *)
+// void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -140,7 +140,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void enterEvent(class QEvent *)
+// void enterEvent(QEvent *)
   virtual void enterEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"enterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -152,7 +152,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void leaveEvent(class QEvent *)
+// void leaveEvent(QEvent *)
   virtual void leaveEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"leaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -164,7 +164,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -176,7 +176,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void moveEvent(class QMoveEvent *)
+// void moveEvent(QMoveEvent *)
   virtual void moveEvent(QMoveEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"moveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -188,7 +188,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -200,7 +200,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(class QCloseEvent *)
+// void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -212,7 +212,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(class QContextMenuEvent *)
+// void contextMenuEvent(QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -224,7 +224,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void tabletEvent(class QTabletEvent *)
+// void tabletEvent(QTabletEvent *)
   virtual void tabletEvent(QTabletEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"tabletEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -236,7 +236,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void actionEvent(class QActionEvent *)
+// void actionEvent(QActionEvent *)
   virtual void actionEvent(QActionEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"actionEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -248,7 +248,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragEnterEvent(class QDragEnterEvent *)
+// void dragEnterEvent(QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -260,7 +260,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(class QDragMoveEvent *)
+// void dragMoveEvent(QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -272,7 +272,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(class QDragLeaveEvent *)
+// void dragLeaveEvent(QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -284,7 +284,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(class QDropEvent *)
+// void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -296,7 +296,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(class QShowEvent *)
+// void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -308,7 +308,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(class QHideEvent *)
+// void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"hideEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -320,7 +320,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool nativeEvent(const class QByteArray &, void *, long *)
+// bool nativeEvent(const QByteArray &, void *, long *)
   virtual bool nativeEvent(const QByteArray & eventType, void * message, long * result) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"nativeEvent", &handled, 3, (uint64_t)&eventType, (uint64_t)message, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0);
@@ -333,7 +333,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(class QEvent *)
+// void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -345,7 +345,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int metric(enum QPaintDevice::PaintDeviceMetric)
+// int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -358,7 +358,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void initPainter(class QPainter *)
+// void initPainter(QPainter *)
   virtual void initPainter(QPainter * painter) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initPainter", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -370,7 +370,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QPaintDevice * redirected(class QPoint *)
+// QPaintDevice * redirected(QPoint *)
   virtual QPaintDevice * redirected(QPoint * offset) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"redirected", &handled, 1, (uint64_t)offset, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -396,7 +396,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void inputMethodEvent(class QInputMethodEvent *)
+// void inputMethodEvent(QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -420,7 +420,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void create(WId, _Bool, _Bool)
+// void create(WId, bool, bool)
   virtual void create(WId arg0, bool initializeWindow, bool destroyOldWindow) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"create", &handled, 3, (uint64_t)arg0, (uint64_t)initializeWindow, (uint64_t)destroyOldWindow, 0, 0, 0, 0, 0, 0, 0);
@@ -432,7 +432,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void destroy(_Bool, _Bool)
+// void destroy(bool, bool)
   virtual void destroy(bool destroyWindow, bool destroySubWindows) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"destroy", &handled, 2, (uint64_t)destroyWindow, (uint64_t)destroySubWindows, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -444,7 +444,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(_Bool)
+// bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -486,7 +486,7 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:611
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QWidget5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QWidget*)this_)->QWidget::event(event);
@@ -494,7 +494,7 @@ bool C_ZN7QWidget5eventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:612
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QWidget*)this_)->QWidget::mousePressEvent(event);
@@ -502,7 +502,7 @@ void C_ZN7QWidget15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * eve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:613
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QWidget*)this_)->QWidget::mouseReleaseEvent(event);
@@ -510,7 +510,7 @@ void C_ZN7QWidget17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:614
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QWidget*)this_)->QWidget::mouseDoubleClickEvent(event);
@@ -518,7 +518,7 @@ void C_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:615
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QWidget*)this_)->QWidget::mouseMoveEvent(event);
@@ -526,7 +526,7 @@ void C_ZN7QWidget14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * even
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:617
-// [-2] void wheelEvent(class QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * event) {
   ((QWidget*)this_)->QWidget::wheelEvent(event);
@@ -534,7 +534,7 @@ void C_ZN7QWidget10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:619
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QWidget*)this_)->QWidget::keyPressEvent(event);
@@ -542,7 +542,7 @@ void C_ZN7QWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:620
-// [-2] void keyReleaseEvent(class QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
   ((QWidget*)this_)->QWidget::keyReleaseEvent(event);
@@ -550,7 +550,7 @@ void C_ZN7QWidget15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:621
-// [-2] void focusInEvent(class QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QWidget*)this_)->QWidget::focusInEvent(event);
@@ -558,7 +558,7 @@ void C_ZN7QWidget12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:622
-// [-2] void focusOutEvent(class QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
   ((QWidget*)this_)->QWidget::focusOutEvent(event);
@@ -566,7 +566,7 @@ void C_ZN7QWidget13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:623
-// [-2] void enterEvent(class QEvent *)
+// [-2] void enterEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10enterEventEP6QEvent(void *this_, QEvent * event) {
   ((QWidget*)this_)->QWidget::enterEvent(event);
@@ -574,7 +574,7 @@ void C_ZN7QWidget10enterEventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:624
-// [-2] void leaveEvent(class QEvent *)
+// [-2] void leaveEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10leaveEventEP6QEvent(void *this_, QEvent * event) {
   ((QWidget*)this_)->QWidget::leaveEvent(event);
@@ -582,7 +582,7 @@ void C_ZN7QWidget10leaveEventEP6QEvent(void *this_, QEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:625
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QWidget*)this_)->QWidget::paintEvent(event);
@@ -590,7 +590,7 @@ void C_ZN7QWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:626
-// [-2] void moveEvent(class QMoveEvent *)
+// [-2] void moveEvent(QMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9moveEventEP10QMoveEvent(void *this_, QMoveEvent * event) {
   ((QWidget*)this_)->QWidget::moveEvent(event);
@@ -598,7 +598,7 @@ void C_ZN7QWidget9moveEventEP10QMoveEvent(void *this_, QMoveEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:627
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
   ((QWidget*)this_)->QWidget::resizeEvent(event);
@@ -606,7 +606,7 @@ void C_ZN7QWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:628
-// [-2] void closeEvent(class QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
   ((QWidget*)this_)->QWidget::closeEvent(event);
@@ -614,7 +614,7 @@ void C_ZN7QWidget10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:630
-// [-2] void contextMenuEvent(class QContextMenuEvent *)
+// [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * event) {
   ((QWidget*)this_)->QWidget::contextMenuEvent(event);
@@ -622,7 +622,7 @@ void C_ZN7QWidget16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMe
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:633
-// [-2] void tabletEvent(class QTabletEvent *)
+// [-2] void tabletEvent(QTabletEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11tabletEventEP12QTabletEvent(void *this_, QTabletEvent * event) {
   ((QWidget*)this_)->QWidget::tabletEvent(event);
@@ -630,7 +630,7 @@ void C_ZN7QWidget11tabletEventEP12QTabletEvent(void *this_, QTabletEvent * event
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:636
-// [-2] void actionEvent(class QActionEvent *)
+// [-2] void actionEvent(QActionEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11actionEventEP12QActionEvent(void *this_, QActionEvent * event) {
   ((QWidget*)this_)->QWidget::actionEvent(event);
@@ -638,7 +638,7 @@ void C_ZN7QWidget11actionEventEP12QActionEvent(void *this_, QActionEvent * event
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:640
-// [-2] void dragEnterEvent(class QDragEnterEvent *)
+// [-2] void dragEnterEvent(QDragEnterEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * event) {
   ((QWidget*)this_)->QWidget::dragEnterEvent(event);
@@ -646,7 +646,7 @@ void C_ZN7QWidget14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:641
-// [-2] void dragMoveEvent(class QDragMoveEvent *)
+// [-2] void dragMoveEvent(QDragMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * event) {
   ((QWidget*)this_)->QWidget::dragMoveEvent(event);
@@ -654,7 +654,7 @@ void C_ZN7QWidget13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:642
-// [-2] void dragLeaveEvent(class QDragLeaveEvent *)
+// [-2] void dragLeaveEvent(QDragLeaveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * event) {
   ((QWidget*)this_)->QWidget::dragLeaveEvent(event);
@@ -662,7 +662,7 @@ void C_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEven
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:643
-// [-2] void dropEvent(class QDropEvent *)
+// [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
   ((QWidget*)this_)->QWidget::dropEvent(event);
@@ -670,7 +670,7 @@ void C_ZN7QWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:646
-// [-2] void showEvent(class QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QWidget*)this_)->QWidget::showEvent(event);
@@ -678,7 +678,7 @@ void C_ZN7QWidget9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:647
-// [-2] void hideEvent(class QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9hideEventEP10QHideEvent(void *this_, QHideEvent * event) {
   ((QWidget*)this_)->QWidget::hideEvent(event);
@@ -686,7 +686,7 @@ void C_ZN7QWidget9hideEventEP10QHideEvent(void *this_, QHideEvent * event) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:648
-// [1] bool nativeEvent(const class QByteArray &, void *, long *)
+// [1] bool nativeEvent(const QByteArray &, void *, long *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QWidget11nativeEventERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
   return (bool)((QWidget*)this_)->QWidget::nativeEvent(*eventType, message, result);
@@ -694,7 +694,7 @@ bool C_ZN7QWidget11nativeEventERK10QByteArrayPvPl(void *this_, QByteArray* event
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:651
-// [-2] void changeEvent(class QEvent *)
+// [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QWidget*)this_)->QWidget::changeEvent(arg0);
@@ -702,7 +702,7 @@ void C_ZN7QWidget11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:653
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric arg0) {
   return (int)((QWidget*)this_)->QWidget::metric(arg0);
@@ -710,7 +710,7 @@ int C_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaint
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:654
-// [-2] void initPainter(class QPainter *)
+// [-2] void initPainter(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK7QWidget11initPainterEP8QPainter(void *this_, QPainter * painter) {
   ((QWidget*)this_)->QWidget::initPainter(painter);
@@ -718,7 +718,7 @@ void C_ZNK7QWidget11initPainterEP8QPainter(void *this_, QPainter * painter) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:655
-// [8] QPaintDevice * redirected(class QPoint *)
+// [8] QPaintDevice * redirected(QPoint *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget10redirectedEP6QPoint(void *this_, QPoint * offset) {
   return (void*)((QWidget*)this_)->QWidget::redirected(offset);
@@ -734,7 +734,7 @@ void* C_ZNK7QWidget13sharedPainterEv(void *this_) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:658
-// [-2] void inputMethodEvent(class QInputMethodEvent *)
+// [-2] void inputMethodEvent(QInputMethodEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
   ((QWidget*)this_)->QWidget::inputMethodEvent(arg0);
@@ -750,7 +750,7 @@ void C_ZN7QWidget16updateMicroFocusEv(void *this_) {
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:669
-// [-2] void create(WId, _Bool, _Bool)
+// [-2] void create(WId, bool, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6createEybb(void *this_, WId arg0, bool initializeWindow, bool destroyOldWindow) {
   ((QWidget*)this_)->QWidget::create(arg0, initializeWindow, destroyOldWindow);
@@ -758,7 +758,7 @@ void C_ZN7QWidget6createEybb(void *this_, WId arg0, bool initializeWindow, bool 
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:671
-// [-2] void destroy(_Bool, _Bool)
+// [-2] void destroy(bool, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget7destroyEbb(void *this_, bool destroyWindow, bool destroySubWindows) {
   ((QWidget*)this_)->QWidget::destroy(destroyWindow, destroySubWindows);
@@ -766,7 +766,7 @@ void C_ZN7QWidget7destroyEbb(void *this_, bool destroyWindow, bool destroySubWin
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:675
-// [1] bool focusNextPrevChild(_Bool)
+// [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QWidget18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QWidget*)this_)->QWidget::focusNextPrevChild(next);
@@ -798,7 +798,7 @@ void* C_ZNK7QWidget10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:214
-// [-2] void QWidget(class QWidget *, Qt::WindowFlags)
+// [-2] void QWidget(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidgetC2EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
   auto _nilp = (MyQWidget*)(0);
@@ -865,7 +865,7 @@ void* C_ZNK7QWidget5styleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:226
-// [-2] void setStyle(class QStyle *)
+// [-2] void setStyle(QStyle *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget8setStyleEP6QStyle(void *this_, QStyle * arg0) {
   ((QWidget*)this_)->setStyle(arg0);
@@ -921,7 +921,7 @@ bool C_ZNK7QWidget9isEnabledEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:237
-// [1] bool isEnabledTo(const class QWidget *)
+// [1] bool isEnabledTo(const QWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QWidget11isEnabledToEPKS_(void *this_, const QWidget * arg0) {
   return (bool)((QWidget*)this_)->isEnabledTo(arg0);
@@ -937,7 +937,7 @@ bool C_ZNK7QWidget14isEnabledToTLWEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:241
-// [-2] void setEnabled(_Bool)
+// [-2] void setEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10setEnabledEb(void *this_, bool arg0) {
   ((QWidget*)this_)->setEnabled(arg0);
@@ -945,7 +945,7 @@ void C_ZN7QWidget10setEnabledEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:242
-// [-2] void setDisabled(_Bool)
+// [-2] void setDisabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11setDisabledEb(void *this_, bool arg0) {
   ((QWidget*)this_)->setDisabled(arg0);
@@ -953,7 +953,7 @@ void C_ZN7QWidget11setDisabledEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:243
-// [-2] void setWindowModified(_Bool)
+// [-2] void setWindowModified(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setWindowModifiedEb(void *this_, bool arg0) {
   ((QWidget*)this_)->setWindowModified(arg0);
@@ -1124,7 +1124,7 @@ int C_ZNK7QWidget13maximumHeightEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:269
-// [-2] void setMinimumSize(const class QSize &)
+// [-2] void setMinimumSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14setMinimumSizeERK5QSize(void *this_, QSize* arg0) {
   ((QWidget*)this_)->setMinimumSize(*arg0);
@@ -1140,7 +1140,7 @@ void C_ZN7QWidget14setMinimumSizeEii(void *this_, int minw, int minh) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:271
-// [-2] void setMaximumSize(const class QSize &)
+// [-2] void setMaximumSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14setMaximumSizeERK5QSize(void *this_, QSize* arg0) {
   ((QWidget*)this_)->setMaximumSize(*arg0);
@@ -1197,7 +1197,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:283
-// [-2] void setSizeIncrement(const class QSize &)
+// [-2] void setSizeIncrement(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget16setSizeIncrementERK5QSize(void *this_, QSize* arg0) {
   ((QWidget*)this_)->setSizeIncrement(*arg0);
@@ -1222,7 +1222,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:286
-// [-2] void setBaseSize(const class QSize &)
+// [-2] void setBaseSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11setBaseSizeERK5QSize(void *this_, QSize* arg0) {
   ((QWidget*)this_)->setBaseSize(*arg0);
@@ -1238,7 +1238,7 @@ void C_ZN7QWidget11setBaseSizeEii(void *this_, int basew, int baseh) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:289
-// [-2] void setFixedSize(const class QSize &)
+// [-2] void setFixedSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12setFixedSizeERK5QSize(void *this_, QSize* arg0) {
   ((QWidget*)this_)->setFixedSize(*arg0);
@@ -1270,7 +1270,7 @@ void C_ZN7QWidget14setFixedHeightEi(void *this_, int h) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:296
-// [8] QPoint mapToGlobal(const class QPoint &)
+// [8] QPoint mapToGlobal(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget11mapToGlobalERK6QPoint(void *this_, QPoint* arg0) {
   auto rv = ((QWidget*)this_)->mapToGlobal(*arg0);
@@ -1279,7 +1279,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:297
-// [8] QPoint mapFromGlobal(const class QPoint &)
+// [8] QPoint mapFromGlobal(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget13mapFromGlobalERK6QPoint(void *this_, QPoint* arg0) {
   auto rv = ((QWidget*)this_)->mapFromGlobal(*arg0);
@@ -1288,7 +1288,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:298
-// [8] QPoint mapToParent(const class QPoint &)
+// [8] QPoint mapToParent(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget11mapToParentERK6QPoint(void *this_, QPoint* arg0) {
   auto rv = ((QWidget*)this_)->mapToParent(*arg0);
@@ -1297,7 +1297,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:299
-// [8] QPoint mapFromParent(const class QPoint &)
+// [8] QPoint mapFromParent(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget13mapFromParentERK6QPoint(void *this_, QPoint* arg0) {
   auto rv = ((QWidget*)this_)->mapFromParent(*arg0);
@@ -1306,7 +1306,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:300
-// [8] QPoint mapTo(const class QWidget *, const class QPoint &)
+// [8] QPoint mapTo(const QWidget *, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget5mapToEPKS_RK6QPoint(void *this_, const QWidget * arg0, QPoint* arg1) {
   auto rv = ((QWidget*)this_)->mapTo(arg0, *arg1);
@@ -1315,7 +1315,7 @@ return new QPoint(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:301
-// [8] QPoint mapFrom(const class QWidget *, const class QPoint &)
+// [8] QPoint mapFrom(const QWidget *, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget7mapFromEPKS_RK6QPoint(void *this_, const QWidget * arg0, QPoint* arg1) {
   auto rv = ((QWidget*)this_)->mapFrom(arg0, *arg1);
@@ -1360,7 +1360,7 @@ return new QPalette(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:309
-// [-2] void setPalette(const class QPalette &)
+// [-2] void setPalette(const QPalette &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10setPaletteERK8QPalette(void *this_, QPalette* arg0) {
   ((QWidget*)this_)->setPalette(*arg0);
@@ -1368,7 +1368,7 @@ void C_ZN7QWidget10setPaletteERK8QPalette(void *this_, QPalette* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:311
-// [-2] void setBackgroundRole(class QPalette::ColorRole)
+// [-2] void setBackgroundRole(QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setBackgroundRoleEN8QPalette9ColorRoleE(void *this_, QPalette::ColorRole arg0) {
   ((QWidget*)this_)->setBackgroundRole(arg0);
@@ -1384,7 +1384,7 @@ QPalette::ColorRole C_ZNK7QWidget14backgroundRoleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:314
-// [-2] void setForegroundRole(class QPalette::ColorRole)
+// [-2] void setForegroundRole(QPalette::ColorRole)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setForegroundRoleEN8QPalette9ColorRoleE(void *this_, QPalette::ColorRole arg0) {
   ((QWidget*)this_)->setForegroundRole(arg0);
@@ -1409,7 +1409,7 @@ return new QFont(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:318
-// [-2] void setFont(const class QFont &)
+// [-2] void setFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget7setFontERK5QFont(void *this_, QFont* arg0) {
   ((QWidget*)this_)->setFont(*arg0);
@@ -1444,7 +1444,7 @@ return new QCursor(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:324
-// [-2] void setCursor(const class QCursor &)
+// [-2] void setCursor(const QCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9setCursorERK7QCursor(void *this_, QCursor* arg0) {
   ((QWidget*)this_)->setCursor(*arg0);
@@ -1460,7 +1460,7 @@ void C_ZN7QWidget11unsetCursorEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:328
-// [-2] void setMouseTracking(_Bool)
+// [-2] void setMouseTracking(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget16setMouseTrackingEb(void *this_, bool enable) {
   ((QWidget*)this_)->setMouseTracking(enable);
@@ -1484,7 +1484,7 @@ bool C_ZNK7QWidget10underMouseEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:332
-// [-2] void setTabletTracking(_Bool)
+// [-2] void setTabletTracking(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setTabletTrackingEb(void *this_, bool enable) {
   ((QWidget*)this_)->setTabletTracking(enable);
@@ -1500,7 +1500,7 @@ bool C_ZNK7QWidget17hasTabletTrackingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:335
-// [-2] void setMask(const class QBitmap &)
+// [-2] void setMask(const QBitmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget7setMaskERK7QBitmap(void *this_, QBitmap* arg0) {
   ((QWidget*)this_)->setMask(*arg0);
@@ -1508,7 +1508,7 @@ void C_ZN7QWidget7setMaskERK7QBitmap(void *this_, QBitmap* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:336
-// [-2] void setMask(const class QRegion &)
+// [-2] void setMask(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget7setMaskERK7QRegion(void *this_, QRegion* arg0) {
   ((QWidget*)this_)->setMask(*arg0);
@@ -1533,7 +1533,7 @@ void C_ZN7QWidget9clearMaskEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:340
-// [-2] void render(class QPaintDevice *, const class QPoint &, const class QRegion &, QWidget::RenderFlags)
+// [-2] void render(QPaintDevice *, const QPoint &, const QRegion &, QWidget::RenderFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPaintDevice * target, QPoint* targetOffset, QRegion* sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
   ((QWidget*)this_)->render(target, *targetOffset, *sourceRegion, renderFlags);
@@ -1541,7 +1541,7 @@ void C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFl
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:344
-// [-2] void render(class QPainter *, const class QPoint &, const class QRegion &, QWidget::RenderFlags)
+// [-2] void render(QPainter *, const QPoint &, const QRegion &, QWidget::RenderFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPainter * painter, QPoint* targetOffset, QRegion* sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
   ((QWidget*)this_)->render(painter, *targetOffset, *sourceRegion, renderFlags);
@@ -1550,7 +1550,7 @@ void C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtWidgets/qwidget.h:348
-// [32] QPixmap grab(const class QRect &)
+// [32] QPixmap grab(const QRect &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget4grabERK5QRect(void *this_, QRect* rectangle) {
@@ -1573,7 +1573,7 @@ void* C_ZNK7QWidget14graphicsEffectEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:352
-// [-2] void setGraphicsEffect(class QGraphicsEffect *)
+// [-2] void setGraphicsEffect(QGraphicsEffect *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setGraphicsEffectEP15QGraphicsEffect(void *this_, QGraphicsEffect * effect) {
@@ -1605,7 +1605,7 @@ void C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:361
-// [-2] void setWindowTitle(const class QString &)
+// [-2] void setWindowTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14setWindowTitleERK7QString(void *this_, QString* arg0) {
   ((QWidget*)this_)->setWindowTitle(*arg0);
@@ -1613,7 +1613,7 @@ void C_ZN7QWidget14setWindowTitleERK7QString(void *this_, QString* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:363
-// [-2] void setStyleSheet(const class QString &)
+// [-2] void setStyleSheet(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setStyleSheetERK7QString(void *this_, QString* styleSheet) {
   ((QWidget*)this_)->setStyleSheet(*styleSheet);
@@ -1639,7 +1639,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:370
-// [-2] void setWindowIcon(const class QIcon &)
+// [-2] void setWindowIcon(const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setWindowIconERK5QIcon(void *this_, QIcon* icon) {
   ((QWidget*)this_)->setWindowIcon(*icon);
@@ -1656,7 +1656,7 @@ return new QIcon(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:372
-// [-2] void setWindowIconText(const class QString &)
+// [-2] void setWindowIconText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setWindowIconTextERK7QString(void *this_, QString* arg0) {
   ((QWidget*)this_)->setWindowIconText(*arg0);
@@ -1673,7 +1673,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:374
-// [-2] void setWindowRole(const class QString &)
+// [-2] void setWindowRole(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setWindowRoleERK7QString(void *this_, QString* arg0) {
   ((QWidget*)this_)->setWindowRole(*arg0);
@@ -1690,7 +1690,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:376
-// [-2] void setWindowFilePath(const class QString &)
+// [-2] void setWindowFilePath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setWindowFilePathERK7QString(void *this_, QString* filePath) {
   ((QWidget*)this_)->setWindowFilePath(*filePath);
@@ -1731,7 +1731,7 @@ bool C_ZNK7QWidget16isWindowModifiedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:384
-// [-2] void setToolTip(const class QString &)
+// [-2] void setToolTip(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10setToolTipERK7QString(void *this_, QString* arg0) {
   ((QWidget*)this_)->setToolTip(*arg0);
@@ -1764,7 +1764,7 @@ int C_ZNK7QWidget15toolTipDurationEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:390
-// [-2] void setStatusTip(const class QString &)
+// [-2] void setStatusTip(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12setStatusTipERK7QString(void *this_, QString* arg0) {
   ((QWidget*)this_)->setStatusTip(*arg0);
@@ -1781,7 +1781,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:394
-// [-2] void setWhatsThis(const class QString &)
+// [-2] void setWhatsThis(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12setWhatsThisERK7QString(void *this_, QString* arg0) {
   ((QWidget*)this_)->setWhatsThis(*arg0);
@@ -1807,7 +1807,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:399
-// [-2] void setAccessibleName(const class QString &)
+// [-2] void setAccessibleName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setAccessibleNameERK7QString(void *this_, QString* name) {
   ((QWidget*)this_)->setAccessibleName(*name);
@@ -1824,7 +1824,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:401
-// [-2] void setAccessibleDescription(const class QString &)
+// [-2] void setAccessibleDescription(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget24setAccessibleDescriptionERK7QString(void *this_, QString* description) {
   ((QWidget*)this_)->setAccessibleDescription(*description);
@@ -1856,7 +1856,7 @@ void C_ZN7QWidget20unsetLayoutDirectionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:408
-// [-2] void setLocale(const class QLocale &)
+// [-2] void setLocale(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9setLocaleERK7QLocale(void *this_, QLocale* locale) {
   ((QWidget*)this_)->setLocale(*locale);
@@ -1961,7 +1961,7 @@ bool C_ZNK7QWidget8hasFocusEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:427
-// [-2] void setTabOrder(class QWidget *, class QWidget *)
+// [-2] void setTabOrder(QWidget *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11setTabOrderEPS_S0_(QWidget * arg0, QWidget * arg1) {
   QWidget::setTabOrder(arg0, arg1);
@@ -1969,7 +1969,7 @@ void C_ZN7QWidget11setTabOrderEPS_S0_(QWidget * arg0, QWidget * arg1) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:428
-// [-2] void setFocusProxy(class QWidget *)
+// [-2] void setFocusProxy(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setFocusProxyEPS_(void *this_, QWidget * arg0) {
   ((QWidget*)this_)->setFocusProxy(arg0);
@@ -2009,7 +2009,7 @@ void C_ZN7QWidget9grabMouseEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:436
-// [-2] void grabMouse(const class QCursor &)
+// [-2] void grabMouse(const QCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9grabMouseERK7QCursor(void *this_, QCursor* arg0) {
   ((QWidget*)this_)->grabMouse(*arg0);
@@ -2041,7 +2041,7 @@ void C_ZN7QWidget15releaseKeyboardEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:442
-// [4] int grabShortcut(const class QKeySequence &, Qt::ShortcutContext)
+// [4] int grabShortcut(const QKeySequence &, Qt::ShortcutContext)
 extern "C" Q_DECL_EXPORT
 int C_ZN7QWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE(void *this_, QKeySequence* key, Qt::ShortcutContext context) {
   return (int)((QWidget*)this_)->grabShortcut(*key, context);
@@ -2057,7 +2057,7 @@ void C_ZN7QWidget15releaseShortcutEi(void *this_, int id) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:444
-// [-2] void setShortcutEnabled(int, _Bool)
+// [-2] void setShortcutEnabled(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget18setShortcutEnabledEib(void *this_, int id, bool enable) {
   ((QWidget*)this_)->setShortcutEnabled(id, enable);
@@ -2066,7 +2066,7 @@ void C_ZN7QWidget18setShortcutEnabledEib(void *this_, int id, bool enable) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qwidget.h:445
-// [-2] void setShortcutAutoRepeat(int, _Bool)
+// [-2] void setShortcutAutoRepeat(int, bool)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget21setShortcutAutoRepeatEib(void *this_, int id, bool enable) {
@@ -2100,7 +2100,7 @@ bool C_ZNK7QWidget14updatesEnabledEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:452
-// [-2] void setUpdatesEnabled(_Bool)
+// [-2] void setUpdatesEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17setUpdatesEnabledEb(void *this_, bool enable) {
   ((QWidget*)this_)->setUpdatesEnabled(enable);
@@ -2143,7 +2143,7 @@ void C_ZN7QWidget6updateEiiii(void *this_, int x, int y, int w, int h) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:464
-// [-2] void update(const class QRect &)
+// [-2] void update(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6updateERK5QRect(void *this_, QRect* arg0) {
   ((QWidget*)this_)->update(*arg0);
@@ -2151,7 +2151,7 @@ void C_ZN7QWidget6updateERK5QRect(void *this_, QRect* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:465
-// [-2] void update(const class QRegion &)
+// [-2] void update(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6updateERK7QRegion(void *this_, QRegion* arg0) {
   ((QWidget*)this_)->update(*arg0);
@@ -2167,7 +2167,7 @@ void C_ZN7QWidget7repaintEiiii(void *this_, int x, int y, int w, int h) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:468
-// [-2] void repaint(const class QRect &)
+// [-2] void repaint(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget7repaintERK5QRect(void *this_, QRect* arg0) {
   ((QWidget*)this_)->repaint(*arg0);
@@ -2175,7 +2175,7 @@ void C_ZN7QWidget7repaintERK5QRect(void *this_, QRect* arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:469
-// [-2] void repaint(const class QRegion &)
+// [-2] void repaint(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget7repaintERK7QRegion(void *this_, QRegion* arg0) {
   ((QWidget*)this_)->repaint(*arg0);
@@ -2183,7 +2183,7 @@ void C_ZN7QWidget7repaintERK7QRegion(void *this_, QRegion* arg0) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:474
-// [-2] void setVisible(_Bool)
+// [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10setVisibleEb(void *this_, bool visible) {
   ((QWidget*)this_)->setVisible(visible);
@@ -2191,7 +2191,7 @@ void C_ZN7QWidget10setVisibleEb(void *this_, bool visible) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:475
-// [-2] void setHidden(_Bool)
+// [-2] void setHidden(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9setHiddenEb(void *this_, bool hidden) {
   ((QWidget*)this_)->setHidden(hidden);
@@ -2271,7 +2271,7 @@ void C_ZN7QWidget5lowerEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:489
-// [-2] void stackUnder(class QWidget *)
+// [-2] void stackUnder(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget10stackUnderEPS_(void *this_, QWidget * arg0) {
   ((QWidget*)this_)->stackUnder(arg0);
@@ -2287,7 +2287,7 @@ void C_ZN7QWidget4moveEii(void *this_, int x, int y) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:491
-// [-2] void move(const class QPoint &)
+// [-2] void move(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget4moveERK6QPoint(void *this_, QPoint* arg0) {
   ((QWidget*)this_)->move(*arg0);
@@ -2303,7 +2303,7 @@ void C_ZN7QWidget6resizeEii(void *this_, int w, int h) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:493
-// [-2] void resize(const class QSize &)
+// [-2] void resize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6resizeERK5QSize(void *this_, QSize* arg0) {
   ((QWidget*)this_)->resize(*arg0);
@@ -2319,7 +2319,7 @@ void C_ZN7QWidget11setGeometryEiiii(void *this_, int x, int y, int w, int h) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:495
-// [-2] void setGeometry(const class QRect &)
+// [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QWidget*)this_)->setGeometry(*arg0);
@@ -2340,7 +2340,7 @@ return new QByteArray(rv);
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qwidget.h:497
-// [1] bool restoreGeometry(const class QByteArray &)
+// [1] bool restoreGeometry(const QByteArray &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QWidget15restoreGeometryERK10QByteArray(void *this_, QByteArray* geometry) {
@@ -2366,7 +2366,7 @@ bool C_ZNK7QWidget9isVisibleEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:500
-// [1] bool isVisibleTo(const class QWidget *)
+// [1] bool isVisibleTo(const QWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QWidget11isVisibleToEPKS_(void *this_, const QWidget * arg0) {
   return (bool)((QWidget*)this_)->isVisibleTo(arg0);
@@ -2457,7 +2457,7 @@ return new QSizePolicy(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:515
-// [-2] void setSizePolicy(class QSizePolicy)
+// [-2] void setSizePolicy(QSizePolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setSizePolicyE11QSizePolicy(void *this_, QSizePolicy* arg0) {
   ((QWidget*)this_)->setSizePolicy(*arg0);
@@ -2465,7 +2465,7 @@ void C_ZN7QWidget13setSizePolicyE11QSizePolicy(void *this_, QSizePolicy* arg0) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:516
-// [-2] void setSizePolicy(class QSizePolicy::Policy, class QSizePolicy::Policy)
+// [-2] void setSizePolicy(QSizePolicy::Policy, QSizePolicy::Policy)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_(void *this_, QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical) {
   ((QWidget*)this_)->setSizePolicy(horizontal, vertical);
@@ -2510,7 +2510,7 @@ void C_ZN7QWidget18setContentsMarginsEiiii(void *this_, int left, int top, int r
 // Public Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qwidget.h:523
-// [-2] void setContentsMargins(const class QMargins &)
+// [-2] void setContentsMargins(const QMargins &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget18setContentsMarginsERK8QMargins(void *this_, QMargins* margins) {
@@ -2557,7 +2557,7 @@ void* C_ZNK7QWidget6layoutEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:531
-// [-2] void setLayout(class QLayout *)
+// [-2] void setLayout(QLayout *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9setLayoutEP7QLayout(void *this_, QLayout * arg0) {
   ((QWidget*)this_)->setLayout(arg0);
@@ -2573,7 +2573,7 @@ void C_ZN7QWidget14updateGeometryEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:534
-// [-2] void setParent(class QWidget *)
+// [-2] void setParent(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9setParentEPS_(void *this_, QWidget * parent) {
   ((QWidget*)this_)->setParent(parent);
@@ -2581,7 +2581,7 @@ void C_ZN7QWidget9setParentEPS_(void *this_, QWidget * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:535
-// [-2] void setParent(class QWidget *, Qt::WindowFlags)
+// [-2] void setParent(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9setParentEPS_6QFlagsIN2Qt10WindowTypeEE(void *this_, QWidget * parent, QFlags<Qt::WindowType> f) {
   ((QWidget*)this_)->setParent(parent, f);
@@ -2597,7 +2597,7 @@ void C_ZN7QWidget6scrollEii(void *this_, int dx, int dy) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:538
-// [-2] void scroll(int, int, const class QRect &)
+// [-2] void scroll(int, int, const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6scrollEiiRK5QRect(void *this_, int dx, int dy, QRect* arg2) {
   ((QWidget*)this_)->scroll(dx, dy, *arg2);
@@ -2640,7 +2640,7 @@ bool C_ZNK7QWidget11acceptDropsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:548
-// [-2] void setAcceptDrops(_Bool)
+// [-2] void setAcceptDrops(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget14setAcceptDropsEb(void *this_, bool on) {
   ((QWidget*)this_)->setAcceptDrops(on);
@@ -2648,7 +2648,7 @@ void C_ZN7QWidget14setAcceptDropsEb(void *this_, bool on) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:552
-// [-2] void addAction(class QAction *)
+// [-2] void addAction(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget9addActionEP7QAction(void *this_, QAction * action) {
   ((QWidget*)this_)->addAction(action);
@@ -2656,7 +2656,7 @@ void C_ZN7QWidget9addActionEP7QAction(void *this_, QAction * action) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:560
-// [-2] void insertAction(class QAction *, class QAction *)
+// [-2] void insertAction(QAction *, QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12insertActionEP7QActionS1_(void *this_, QAction * before, QAction * action) {
   ((QWidget*)this_)->insertAction(before, action);
@@ -2664,7 +2664,7 @@ void C_ZN7QWidget12insertActionEP7QActionS1_(void *this_, QAction * before, QAct
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:561
-// [-2] void removeAction(class QAction *)
+// [-2] void removeAction(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12removeActionEP7QAction(void *this_, QAction * action) {
   ((QWidget*)this_)->removeAction(action);
@@ -2697,7 +2697,7 @@ Qt::WindowFlags C_ZNK7QWidget11windowFlagsEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.9
 // /usr/include/qt/QtWidgets/qwidget.h:569
-// [-2] void setWindowFlag(Qt::WindowType, _Bool)
+// [-2] void setWindowFlag(Qt::WindowType, bool)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget13setWindowFlagEN2Qt10WindowTypeEb(void *this_, Qt::WindowType arg0, bool on) {
@@ -2739,7 +2739,7 @@ void* C_ZNK7QWidget7childAtEii(void *this_, int x, int y) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:576
-// [8] QWidget * childAt(const class QPoint &)
+// [8] QWidget * childAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWidget7childAtERK6QPoint(void *this_, QPoint* p) {
   return (void*)((QWidget*)this_)->childAt(*p);
@@ -2747,7 +2747,7 @@ void* C_ZNK7QWidget7childAtERK6QPoint(void *this_, QPoint* p) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:578
-// [-2] void setAttribute(Qt::WidgetAttribute, _Bool)
+// [-2] void setAttribute(Qt::WidgetAttribute, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget12setAttributeEN2Qt15WidgetAttributeEb(void *this_, Qt::WidgetAttribute arg0, bool on) {
   ((QWidget*)this_)->setAttribute(arg0, on);
@@ -2779,7 +2779,7 @@ void C_ZNK7QWidget14ensurePolishedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:585
-// [1] bool isAncestorOf(const class QWidget *)
+// [1] bool isAncestorOf(const QWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QWidget12isAncestorOfEPKS_(void *this_, const QWidget * child) {
   return (bool)((QWidget*)this_)->isAncestorOf(child);
@@ -2795,7 +2795,7 @@ bool C_ZNK7QWidget18autoFillBackgroundEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:593
-// [-2] void setAutoFillBackground(_Bool)
+// [-2] void setAutoFillBackground(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget21setAutoFillBackgroundEb(void *this_, bool enabled) {
   ((QWidget*)this_)->setAutoFillBackground(enabled);
@@ -2825,7 +2825,7 @@ void* C_ZNK7QWidget12windowHandleEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:599
-// [8] QWidget * createWindowContainer(class QWindow *, class QWidget *, Qt::WindowFlags)
+// [8] QWidget * createWindowContainer(QWindow *, QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE(QWindow * window, QWidget * parent, QFlags<Qt::WindowType> flags) {
   return (void*)QWidget::createWindowContainer(window, parent, flags);
@@ -2834,7 +2834,7 @@ void* C_ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qwidget.h:604
-// [-2] void windowTitleChanged(const class QString &)
+// [-2] void windowTitleChanged(const QString &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget18windowTitleChangedERK7QString(void *this_, QString* title) {
@@ -2845,7 +2845,7 @@ void C_ZN7QWidget18windowTitleChangedERK7QString(void *this_, QString* title) {
 // Public Visibility=Default Availability=Available
 // since 5.2
 // /usr/include/qt/QtWidgets/qwidget.h:605
-// [-2] void windowIconChanged(const class QIcon &)
+// [-2] void windowIconChanged(const QIcon &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget17windowIconChangedERK5QIcon(void *this_, QIcon* icon) {
@@ -2855,7 +2855,7 @@ void C_ZN7QWidget17windowIconChangedERK5QIcon(void *this_, QIcon* icon) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:606
-// [-2] void windowIconTextChanged(const class QString &)
+// [-2] void windowIconTextChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget21windowIconTextChangedERK7QString(void *this_, QString* iconText) {
   ((QWidget*)this_)->windowIconTextChanged(*iconText);
@@ -2863,7 +2863,7 @@ void C_ZN7QWidget21windowIconTextChangedERK7QString(void *this_, QString* iconTe
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:607
-// [-2] void customContextMenuRequested(const class QPoint &)
+// [-2] void customContextMenuRequested(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget26customContextMenuRequestedERK6QPoint(void *this_, QPoint* pos) {
   ((QWidget*)this_)->customContextMenuRequested(*pos);

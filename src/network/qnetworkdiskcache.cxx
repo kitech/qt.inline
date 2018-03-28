@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQNetworkDiskCache : public QNetworkDiskCache {
 public:
   virtual ~MyQNetworkDiskCache() {}
-// void QNetworkDiskCache(class QObject *)
+// void QNetworkDiskCache(QObject *)
 MyQNetworkDiskCache(QObject * parent) : QNetworkDiskCache(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // qint64 expire()
@@ -52,7 +52,7 @@ void* C_ZNK17QNetworkDiskCache10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:56
-// [-2] void QNetworkDiskCache(class QObject *)
+// [-2] void QNetworkDiskCache(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCacheC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQNetworkDiskCache*)(0);
@@ -77,7 +77,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:60
-// [-2] void setCacheDirectory(const class QString &)
+// [-2] void setCacheDirectory(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache17setCacheDirectoryERK7QString(void *this_, QString* cacheDir) {
   ((QNetworkDiskCache*)this_)->setCacheDirectory(*cacheDir);
@@ -109,7 +109,7 @@ qint64 C_ZNK17QNetworkDiskCache9cacheSizeEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:66
-// [8] QNetworkCacheMetaData metaData(const class QUrl &)
+// [8] QNetworkCacheMetaData metaData(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache8metaDataERK4QUrl(void *this_, QUrl* url) {
   auto rv = ((QNetworkDiskCache*)this_)->metaData(*url);
@@ -118,7 +118,7 @@ return new QNetworkCacheMetaData(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:67
-// [-2] void updateMetaData(const class QNetworkCacheMetaData &)
+// [-2] void updateMetaData(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache14updateMetaDataERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
   ((QNetworkDiskCache*)this_)->updateMetaData(*metaData);
@@ -126,7 +126,7 @@ void C_ZN17QNetworkDiskCache14updateMetaDataERK21QNetworkCacheMetaData(void *thi
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:68
-// [8] QIODevice * data(const class QUrl &)
+// [8] QIODevice * data(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache4dataERK4QUrl(void *this_, QUrl* url) {
   return (void*)((QNetworkDiskCache*)this_)->data(*url);
@@ -134,7 +134,7 @@ void* C_ZN17QNetworkDiskCache4dataERK4QUrl(void *this_, QUrl* url) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:69
-// [1] bool remove(const class QUrl &)
+// [1] bool remove(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkDiskCache6removeERK4QUrl(void *this_, QUrl* url) {
   return (bool)((QNetworkDiskCache*)this_)->remove(*url);
@@ -142,7 +142,7 @@ bool C_ZN17QNetworkDiskCache6removeERK4QUrl(void *this_, QUrl* url) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:70
-// [8] QIODevice * prepare(const class QNetworkCacheMetaData &)
+// [8] QIODevice * prepare(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache7prepareERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
   return (void*)((QNetworkDiskCache*)this_)->prepare(*metaData);
@@ -150,7 +150,7 @@ void* C_ZN17QNetworkDiskCache7prepareERK21QNetworkCacheMetaData(void *this_, QNe
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:73
-// [8] QNetworkCacheMetaData fileMetaData(const class QString &)
+// [8] QNetworkCacheMetaData fileMetaData(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QNetworkDiskCache12fileMetaDataERK7QString(void *this_, QString* fileName) {
   auto rv = ((QNetworkDiskCache*)this_)->fileMetaData(*fileName);

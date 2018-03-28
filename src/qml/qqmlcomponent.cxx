@@ -17,17 +17,17 @@
 class Q_DECL_EXPORT MyQQmlComponent : public QQmlComponent {
 public:
   virtual ~MyQQmlComponent() {}
-// void QQmlComponent(class QObject *)
+// void QQmlComponent(QObject *)
 MyQQmlComponent(QObject * parent) : QQmlComponent(parent) {}
-// void QQmlComponent(class QQmlEngine *, class QObject *)
+// void QQmlComponent(QQmlEngine *, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, QObject * parent) : QQmlComponent(arg0, parent) {}
-// void QQmlComponent(class QQmlEngine *, const class QString &, class QObject *)
+// void QQmlComponent(QQmlEngine *, const QString &, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, const QString & fileName, QObject * parent) : QQmlComponent(arg0, fileName, parent) {}
-// void QQmlComponent(class QQmlEngine *, const class QString &, enum QQmlComponent::CompilationMode, class QObject *)
+// void QQmlComponent(QQmlEngine *, const QString &, QQmlComponent::CompilationMode, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, const QString & fileName, QQmlComponent::CompilationMode mode, QObject * parent) : QQmlComponent(arg0, fileName, mode, parent) {}
-// void QQmlComponent(class QQmlEngine *, const class QUrl &, class QObject *)
+// void QQmlComponent(QQmlEngine *, const QUrl &, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QObject * parent) : QQmlComponent(arg0, url, parent) {}
-// void QQmlComponent(class QQmlEngine *, const class QUrl &, enum QQmlComponent::CompilationMode, class QObject *)
+// void QQmlComponent(QQmlEngine *, const QUrl &, QQmlComponent::CompilationMode, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QQmlComponent::CompilationMode mode, QObject * parent) : QQmlComponent(arg0, url, mode, parent) {}
 };
 
@@ -41,7 +41,7 @@ void* C_ZNK13QQmlComponent10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:80
-// [-2] void QQmlComponent(class QObject *)
+// [-2] void QQmlComponent(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP7QObject(QObject * parent) {
   return  new QQmlComponent(parent);
@@ -49,7 +49,7 @@ void* C_ZN13QQmlComponentC2EP7QObject(QObject * parent) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:81
-// [-2] void QQmlComponent(class QQmlEngine *, class QObject *)
+// [-2] void QQmlComponent(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineP7QObject(QQmlEngine * arg0, QObject * parent) {
   return  new QQmlComponent(arg0, parent);
@@ -57,7 +57,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineP7QObject(QQmlEngine * arg0, QObject * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:82
-// [-2] void QQmlComponent(class QQmlEngine *, const class QString &, class QObject *)
+// [-2] void QQmlComponent(QQmlEngine *, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringP7QObject(QQmlEngine * arg0, QString* fileName, QObject * parent) {
   return  new QQmlComponent(arg0, *fileName, parent);
@@ -65,7 +65,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringP7QObject(QQmlEngine * arg0, 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:83
-// [-2] void QQmlComponent(class QQmlEngine *, const class QString &, enum QQmlComponent::CompilationMode, class QObject *)
+// [-2] void QQmlComponent(QQmlEngine *, const QString &, QQmlComponent::CompilationMode, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringNS_15CompilationModeEP7QObject(QQmlEngine * arg0, QString* fileName, QQmlComponent::CompilationMode mode, QObject * parent) {
   return  new QQmlComponent(arg0, *fileName, mode, parent);
@@ -73,7 +73,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringNS_15CompilationModeEP7QObjec
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:84
-// [-2] void QQmlComponent(class QQmlEngine *, const class QUrl &, class QObject *)
+// [-2] void QQmlComponent(QQmlEngine *, const QUrl &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlP7QObject(QQmlEngine * arg0, QUrl* url, QObject * parent) {
   return  new QQmlComponent(arg0, *url, parent);
@@ -81,7 +81,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlP7QObject(QQmlEngine * arg0, QUr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:85
-// [-2] void QQmlComponent(class QQmlEngine *, const class QUrl &, enum QQmlComponent::CompilationMode, class QObject *)
+// [-2] void QQmlComponent(QQmlEngine *, const QUrl &, QQmlComponent::CompilationMode, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlNS_15CompilationModeEP7QObject(QQmlEngine * arg0, QUrl* url, QQmlComponent::CompilationMode mode, QObject * parent) {
   return  new QQmlComponent(arg0, *url, mode, parent);
@@ -162,7 +162,7 @@ return new QUrl(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:104
-// [8] QObject * create(class QQmlContext *)
+// [8] QObject * create(QQmlContext *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponent6createEP11QQmlContext(void *this_, QQmlContext * context) {
   return (void*)((QQmlComponent*)this_)->create(context);
@@ -170,7 +170,7 @@ void* C_ZN13QQmlComponent6createEP11QQmlContext(void *this_, QQmlContext * conte
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:105
-// [8] QObject * beginCreate(class QQmlContext *)
+// [8] QObject * beginCreate(QQmlContext *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponent11beginCreateEP11QQmlContext(void *this_, QQmlContext * arg0) {
   return (void*)((QQmlComponent*)this_)->beginCreate(arg0);
@@ -186,7 +186,7 @@ void C_ZN13QQmlComponent14completeCreateEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:108
-// [-2] void create(class QQmlIncubator &, class QQmlContext *, class QQmlContext *)
+// [-2] void create(QQmlIncubator &, QQmlContext *, QQmlContext *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent6createER13QQmlIncubatorP11QQmlContextS3_(void *this_, QQmlIncubator* arg0, QQmlContext * context, QQmlContext * forContext) {
   ((QQmlComponent*)this_)->create(*arg0, context, forContext);
@@ -202,7 +202,7 @@ void* C_ZNK13QQmlComponent15creationContextEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:113
-// [8] QQmlComponentAttached * qmlAttachedProperties(class QObject *)
+// [8] QQmlComponentAttached * qmlAttachedProperties(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponent21qmlAttachedPropertiesEP7QObject(QObject * arg0) {
   return (void*)QQmlComponent::qmlAttachedProperties(arg0);
@@ -210,7 +210,7 @@ void* C_ZN13QQmlComponent21qmlAttachedPropertiesEP7QObject(QObject * arg0) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:116
-// [-2] void loadUrl(const class QUrl &)
+// [-2] void loadUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent7loadUrlERK4QUrl(void *this_, QUrl* url) {
   ((QQmlComponent*)this_)->loadUrl(*url);
@@ -218,7 +218,7 @@ void C_ZN13QQmlComponent7loadUrlERK4QUrl(void *this_, QUrl* url) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:117
-// [-2] void loadUrl(const class QUrl &, enum QQmlComponent::CompilationMode)
+// [-2] void loadUrl(const QUrl &, QQmlComponent::CompilationMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent7loadUrlERK4QUrlNS_15CompilationModeE(void *this_, QUrl* url, QQmlComponent::CompilationMode mode) {
   ((QQmlComponent*)this_)->loadUrl(*url, mode);
@@ -226,7 +226,7 @@ void C_ZN13QQmlComponent7loadUrlERK4QUrlNS_15CompilationModeE(void *this_, QUrl*
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:118
-// [-2] void setData(const class QByteArray &, const class QUrl &)
+// [-2] void setData(const QByteArray &, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent7setDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* arg0, QUrl* baseUrl) {
   ((QQmlComponent*)this_)->setData(*arg0, *baseUrl);
@@ -234,7 +234,7 @@ void C_ZN13QQmlComponent7setDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:121
-// [-2] void statusChanged(class QQmlComponent::Status)
+// [-2] void statusChanged(QQmlComponent::Status)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent13statusChangedENS_6StatusE(void *this_, QQmlComponent::Status arg0) {
   ((QQmlComponent*)this_)->statusChanged(arg0);

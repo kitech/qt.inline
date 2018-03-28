@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQThread : public QThread {
 public:
   virtual ~MyQThread() {}
-// void QThread(class QObject *)
+// void QThread(QObject *)
 MyQThread(QObject * parent) : QThread(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void run()
@@ -44,7 +44,7 @@ MyQThread(QObject * parent) : QThread(parent) {}
   }
 
 // Protected static Visibility=Default Availability=Available
-// void setTerminationEnabled(_Bool)
+// void setTerminationEnabled(bool)
   virtual void setTerminationEnabled(bool enabled) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setTerminationEnabled", &handled, 1, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -75,7 +75,7 @@ int C_ZN7QThread4execEv(void *this_) {
 
 // Protected static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:154
-// [-2] void setTerminationEnabled(_Bool)
+// [-2] void setTerminationEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QThread21setTerminationEnabledEb(void *this_, bool enabled) {
   ((QThread*)this_)->QThread::setTerminationEnabled(enabled);
@@ -123,7 +123,7 @@ void C_ZN7QThread18yieldCurrentThreadEv() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:79
-// [-2] void QThread(class QObject *)
+// [-2] void QThread(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QThreadC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQThread*)(0);
@@ -139,7 +139,7 @@ void C_ZN7QThreadD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:96
-// [-2] void setPriority(enum QThread::Priority)
+// [-2] void setPriority(QThread::Priority)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QThread11setPriorityENS_8PriorityE(void *this_, QThread::Priority priority) {
   ((QThread*)this_)->setPriority(priority);
@@ -232,7 +232,7 @@ void* C_ZNK7QThread15eventDispatcherEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qthread.h:111
-// [-2] void setEventDispatcher(class QAbstractEventDispatcher *)
+// [-2] void setEventDispatcher(QAbstractEventDispatcher *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN7QThread18setEventDispatcherEP24QAbstractEventDispatcher(void *this_, QAbstractEventDispatcher * eventDispatcher) {
@@ -242,7 +242,7 @@ void C_ZN7QThread18setEventDispatcherEP24QAbstractEventDispatcher(void *this_, Q
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:113
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QThread5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QThread*)this_)->event(event);
@@ -261,7 +261,7 @@ int C_ZNK7QThread9loopLevelEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:134
-// [-2] void start(enum QThread::Priority)
+// [-2] void start(QThread::Priority)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QThread5startENS_8PriorityE(void *this_, QThread::Priority arg0) {
   ((QThread*)this_)->start(arg0);

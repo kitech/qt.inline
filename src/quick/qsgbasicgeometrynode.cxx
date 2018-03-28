@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQSGBasicGeometryNode : public QSGBasicGeometryNode {
 public:
   virtual ~MyQSGBasicGeometryNode() {}
-// void QSGBasicGeometryNode(enum QSGNode::NodeType)
+// void QSGBasicGeometryNode(QSGNode::NodeType)
 MyQSGBasicGeometryNode(QSGNode::NodeType type_) : QSGBasicGeometryNode(type_) {}
 };
 
@@ -29,7 +29,7 @@ void C_ZN20QSGBasicGeometryNodeD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:200
-// [-2] void setGeometry(class QSGGeometry *)
+// [-2] void setGeometry(QSGGeometry *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNode11setGeometryEP11QSGGeometry(void *this_, QSGGeometry * geometry) {
   ((QSGBasicGeometryNode*)this_)->setGeometry(geometry);
@@ -69,7 +69,7 @@ void* C_ZNK20QSGBasicGeometryNode8clipListEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:207
-// [-2] void setRendererMatrix(const class QMatrix4x4 *)
+// [-2] void setRendererMatrix(const QMatrix4x4 *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNode17setRendererMatrixEPK10QMatrix4x4(void *this_, const QMatrix4x4 * m) {
   ((QSGBasicGeometryNode*)this_)->setRendererMatrix(m);
@@ -77,7 +77,7 @@ void C_ZN20QSGBasicGeometryNode17setRendererMatrixEPK10QMatrix4x4(void *this_, c
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:208
-// [-2] void setRendererClipList(const class QSGClipNode *)
+// [-2] void setRendererClipList(const QSGClipNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNode19setRendererClipListEPK11QSGClipNode(void *this_, const QSGClipNode * c) {
   ((QSGBasicGeometryNode*)this_)->setRendererClipList(c);

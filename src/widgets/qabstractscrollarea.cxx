@@ -16,7 +16,7 @@
 class Q_DECL_EXPORT MyQAbstractScrollArea : public QAbstractScrollArea {
 public:
   virtual ~MyQAbstractScrollArea() {}
-// void QAbstractScrollArea(class QWidget *)
+// void QAbstractScrollArea(QWidget *)
 MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
 // Protected Visibility=Default Availability=Available
 // void setViewportMargins(int, int, int, int)
@@ -31,7 +31,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void setViewportMargins(const class QMargins &)
+// void setViewportMargins(const QMargins &)
   virtual void setViewportMargins(const QMargins & margins) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"setViewportMargins", &handled, 1, (uint64_t)&margins, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -56,7 +56,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -69,7 +69,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -82,7 +82,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool viewportEvent(class QEvent *)
+// bool viewportEvent(QEvent *)
   virtual bool viewportEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"viewportEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -95,7 +95,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -107,7 +107,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -119,7 +119,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -131,7 +131,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -143,7 +143,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(class QMouseEvent *)
+// void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -155,7 +155,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -167,7 +167,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(class QWheelEvent *)
+// void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -179,7 +179,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(class QContextMenuEvent *)
+// void contextMenuEvent(QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -191,7 +191,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragEnterEvent(class QDragEnterEvent *)
+// void dragEnterEvent(QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -203,7 +203,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(class QDragMoveEvent *)
+// void dragMoveEvent(QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -215,7 +215,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(class QDragLeaveEvent *)
+// void dragLeaveEvent(QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -227,7 +227,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(class QDropEvent *)
+// void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -239,7 +239,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -288,7 +288,7 @@ void C_ZN19QAbstractScrollArea18setViewportMarginsEiiii(void *this_, int left, i
 // Protected Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:106
-// [-2] void setViewportMargins(const class QMargins &)
+// [-2] void setViewportMargins(const QMargins &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins(void *this_, QMargins* margins) {
@@ -310,7 +310,7 @@ return new QMargins(rv);
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:109
-// [1] bool eventFilter(class QObject *, class QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractScrollArea11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QAbstractScrollArea*)this_)->QAbstractScrollArea::eventFilter(arg0, arg1);
@@ -318,7 +318,7 @@ bool C_ZN19QAbstractScrollArea11eventFilterEP7QObjectP6QEvent(void *this_, QObje
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:110
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractScrollArea5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QAbstractScrollArea*)this_)->QAbstractScrollArea::event(arg0);
@@ -326,7 +326,7 @@ bool C_ZN19QAbstractScrollArea5eventEP6QEvent(void *this_, QEvent * arg0) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:111
-// [1] bool viewportEvent(class QEvent *)
+// [1] bool viewportEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractScrollArea13viewportEventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QAbstractScrollArea*)this_)->QAbstractScrollArea::viewportEvent(arg0);
@@ -334,7 +334,7 @@ bool C_ZN19QAbstractScrollArea13viewportEventEP6QEvent(void *this_, QEvent * arg
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:113
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::resizeEvent(arg0);
@@ -342,7 +342,7 @@ void C_ZN19QAbstractScrollArea11resizeEventEP12QResizeEvent(void *this_, QResize
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:114
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::paintEvent(arg0);
@@ -350,7 +350,7 @@ void C_ZN19QAbstractScrollArea10paintEventEP11QPaintEvent(void *this_, QPaintEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:115
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::mousePressEvent(arg0);
@@ -358,7 +358,7 @@ void C_ZN19QAbstractScrollArea15mousePressEventEP11QMouseEvent(void *this_, QMou
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:116
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::mouseReleaseEvent(arg0);
@@ -366,7 +366,7 @@ void C_ZN19QAbstractScrollArea17mouseReleaseEventEP11QMouseEvent(void *this_, QM
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:117
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::mouseDoubleClickEvent(arg0);
@@ -374,7 +374,7 @@ void C_ZN19QAbstractScrollArea21mouseDoubleClickEventEP11QMouseEvent(void *this_
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:118
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::mouseMoveEvent(arg0);
@@ -382,7 +382,7 @@ void C_ZN19QAbstractScrollArea14mouseMoveEventEP11QMouseEvent(void *this_, QMous
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:120
-// [-2] void wheelEvent(class QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::wheelEvent(arg0);
@@ -390,7 +390,7 @@ void C_ZN19QAbstractScrollArea10wheelEventEP11QWheelEvent(void *this_, QWheelEve
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:123
-// [-2] void contextMenuEvent(class QContextMenuEvent *)
+// [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::contextMenuEvent(arg0);
@@ -398,7 +398,7 @@ void C_ZN19QAbstractScrollArea16contextMenuEventEP17QContextMenuEvent(void *this
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:126
-// [-2] void dragEnterEvent(class QDragEnterEvent *)
+// [-2] void dragEnterEvent(QDragEnterEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::dragEnterEvent(arg0);
@@ -406,7 +406,7 @@ void C_ZN19QAbstractScrollArea14dragEnterEventEP15QDragEnterEvent(void *this_, Q
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:127
-// [-2] void dragMoveEvent(class QDragMoveEvent *)
+// [-2] void dragMoveEvent(QDragMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::dragMoveEvent(arg0);
@@ -414,7 +414,7 @@ void C_ZN19QAbstractScrollArea13dragMoveEventEP14QDragMoveEvent(void *this_, QDr
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:128
-// [-2] void dragLeaveEvent(class QDragLeaveEvent *)
+// [-2] void dragLeaveEvent(QDragLeaveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::dragLeaveEvent(arg0);
@@ -422,7 +422,7 @@ void C_ZN19QAbstractScrollArea14dragLeaveEventEP15QDragLeaveEvent(void *this_, Q
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:129
-// [-2] void dropEvent(class QDropEvent *)
+// [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::dropEvent(arg0);
@@ -430,7 +430,7 @@ void C_ZN19QAbstractScrollArea9dropEventEP10QDropEvent(void *this_, QDropEvent *
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:132
-// [-2] void keyPressEvent(class QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
   ((QAbstractScrollArea*)this_)->QAbstractScrollArea::keyPressEvent(arg0);
@@ -466,7 +466,7 @@ void* C_ZNK19QAbstractScrollArea10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:64
-// [-2] void QAbstractScrollArea(class QWidget *)
+// [-2] void QAbstractScrollArea(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractScrollAreaC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractScrollArea*)(0);
@@ -507,7 +507,7 @@ void* C_ZNK19QAbstractScrollArea17verticalScrollBarEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:77
-// [-2] void setVerticalScrollBar(class QScrollBar *)
+// [-2] void setVerticalScrollBar(QScrollBar *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea20setVerticalScrollBarEP10QScrollBar(void *this_, QScrollBar * scrollbar) {
@@ -542,7 +542,7 @@ void* C_ZNK19QAbstractScrollArea19horizontalScrollBarEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:82
-// [-2] void setHorizontalScrollBar(class QScrollBar *)
+// [-2] void setHorizontalScrollBar(QScrollBar *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea22setHorizontalScrollBarEP10QScrollBar(void *this_, QScrollBar * scrollbar) {
@@ -564,7 +564,7 @@ void* C_ZNK19QAbstractScrollArea12cornerWidgetEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:85
-// [-2] void setCornerWidget(class QWidget *)
+// [-2] void setCornerWidget(QWidget *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea15setCornerWidgetEP7QWidget(void *this_, QWidget * widget) {
@@ -575,7 +575,7 @@ void C_ZN19QAbstractScrollArea15setCornerWidgetEP7QWidget(void *this_, QWidget *
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:87
-// [-2] void addScrollBarWidget(class QWidget *, Qt::Alignment)
+// [-2] void addScrollBarWidget(QWidget *, Qt::Alignment)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea18addScrollBarWidgetEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * widget, QFlags<Qt::AlignmentFlag> alignment) {
@@ -606,7 +606,7 @@ void* C_ZNK19QAbstractScrollArea8viewportEv(void *this_) {
 // Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:91
-// [-2] void setViewport(class QWidget *)
+// [-2] void setViewport(QWidget *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea11setViewportEP7QWidget(void *this_, QWidget * widget) {
@@ -643,7 +643,7 @@ return new QSize(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:98
-// [-2] void setupViewport(class QWidget *)
+// [-2] void setupViewport(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea13setupViewportEP7QWidget(void *this_, QWidget * viewport) {
   ((QAbstractScrollArea*)this_)->setupViewport(viewport);
@@ -659,7 +659,7 @@ QAbstractScrollArea::SizeAdjustPolicy C_ZNK19QAbstractScrollArea16sizeAdjustPoli
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:101
-// [-2] void setSizeAdjustPolicy(enum QAbstractScrollArea::SizeAdjustPolicy)
+// [-2] void setSizeAdjustPolicy(QAbstractScrollArea::SizeAdjustPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractScrollArea19setSizeAdjustPolicyENS_16SizeAdjustPolicyE(void *this_, QAbstractScrollArea::SizeAdjustPolicy policy) {
   ((QAbstractScrollArea*)this_)->setSizeAdjustPolicy(policy);

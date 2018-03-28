@@ -19,7 +19,7 @@ public:
 // void QCoreApplication(int &, char **, int)
 MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, argv, arg2) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, a
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:190
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QCoreApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QCoreApplication*)this_)->QCoreApplication::event(arg0);
@@ -79,7 +79,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:101
-// [-2] void setAttribute(Qt::ApplicationAttribute, _Bool)
+// [-2] void setAttribute(Qt::ApplicationAttribute, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication12setAttributeEN2Qt20ApplicationAttributeEb(Qt::ApplicationAttribute attribute, bool on) {
   QCoreApplication::setAttribute(attribute, on);
@@ -95,7 +95,7 @@ bool C_ZN16QCoreApplication13testAttributeEN2Qt20ApplicationAttributeE(Qt::Appli
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:104
-// [-2] void setOrganizationDomain(const class QString &)
+// [-2] void setOrganizationDomain(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication21setOrganizationDomainERK7QString(QString* orgDomain) {
   QCoreApplication::setOrganizationDomain(*orgDomain);
@@ -112,7 +112,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:106
-// [-2] void setOrganizationName(const class QString &)
+// [-2] void setOrganizationName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication19setOrganizationNameERK7QString(QString* orgName) {
   QCoreApplication::setOrganizationName(*orgName);
@@ -129,7 +129,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:108
-// [-2] void setApplicationName(const class QString &)
+// [-2] void setApplicationName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication18setApplicationNameERK7QString(QString* application) {
   QCoreApplication::setApplicationName(*application);
@@ -146,7 +146,7 @@ return new QString(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:110
-// [-2] void setApplicationVersion(const class QString &)
+// [-2] void setApplicationVersion(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication21setApplicationVersionERK7QString(QString* version) {
   QCoreApplication::setApplicationVersion(*version);
@@ -164,7 +164,7 @@ return new QString(rv);
 // Public static Visibility=Default Availability=Available
 // since 5.3
 // /usr/include/qt/QtCore/qcoreapplication.h:113
-// [-2] void setSetuidAllowed(_Bool)
+// [-2] void setSetuidAllowed(bool)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication16setSetuidAllowedEb(bool allow) {
@@ -201,7 +201,7 @@ int C_ZN16QCoreApplication4execEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:120
-// [-2] void processEvents(class QEventLoop::ProcessEventsFlags)
+// [-2] void processEvents(QEventLoop::ProcessEventsFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE(QFlags<QEventLoop::ProcessEventsFlag> flags) {
   QCoreApplication::processEvents(flags);
@@ -209,7 +209,7 @@ void C_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsF
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:121
-// [-2] void processEvents(class QEventLoop::ProcessEventsFlags, int)
+// [-2] void processEvents(QEventLoop::ProcessEventsFlags, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEEi(QFlags<QEventLoop::ProcessEventsFlag> flags, int maxtime) {
   QCoreApplication::processEvents(flags, maxtime);
@@ -225,7 +225,7 @@ void C_ZN16QCoreApplication4exitEi(int retcode) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:124
-// [1] bool sendEvent(class QObject *, class QEvent *)
+// [1] bool sendEvent(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent(QObject * receiver, QEvent * event) {
   return (bool)QCoreApplication::sendEvent(receiver, event);
@@ -234,7 +234,7 @@ bool C_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent(QObject * receiver, QEve
 // Public static Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtCore/qcoreapplication.h:125
-// [-2] void postEvent(class QObject *, class QEvent *, int)
+// [-2] void postEvent(QObject *, QEvent *, int)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication9postEventEP7QObjectP6QEventi(QObject * receiver, QEvent * event, int priority) {
@@ -244,7 +244,7 @@ void C_ZN16QCoreApplication9postEventEP7QObjectP6QEventi(QObject * receiver, QEv
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:126
-// [-2] void sendPostedEvents(class QObject *, int)
+// [-2] void sendPostedEvents(QObject *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication16sendPostedEventsEP7QObjecti(QObject * receiver, int event_type) {
   QCoreApplication::sendPostedEvents(receiver, event_type);
@@ -253,7 +253,7 @@ void C_ZN16QCoreApplication16sendPostedEventsEP7QObjecti(QObject * receiver, int
 // Public static Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtCore/qcoreapplication.h:127
-// [-2] void removePostedEvents(class QObject *, int)
+// [-2] void removePostedEvents(QObject *, int)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication18removePostedEventsEP7QObjecti(QObject * receiver, int eventType) {
@@ -279,7 +279,7 @@ void* C_ZN16QCoreApplication15eventDispatcherEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:132
-// [-2] void setEventDispatcher(class QAbstractEventDispatcher *)
+// [-2] void setEventDispatcher(QAbstractEventDispatcher *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication18setEventDispatcherEP24QAbstractEventDispatcher(QAbstractEventDispatcher * eventDispatcher) {
   QCoreApplication::setEventDispatcher(eventDispatcher);
@@ -287,7 +287,7 @@ void C_ZN16QCoreApplication18setEventDispatcherEP24QAbstractEventDispatcher(QAbs
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:134
-// [1] bool notify(class QObject *, class QEvent *)
+// [1] bool notify(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QCoreApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QCoreApplication*)this_)->notify(arg0, arg1);
@@ -340,7 +340,7 @@ qint64 C_ZN16QCoreApplication14applicationPidEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:145
-// [-2] void setLibraryPaths(const class QStringList &)
+// [-2] void setLibraryPaths(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(QStringList* arg0) {
   QCoreApplication::setLibraryPaths(*arg0);
@@ -357,7 +357,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:147
-// [-2] void addLibraryPath(const class QString &)
+// [-2] void addLibraryPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication14addLibraryPathERK7QString(QString* arg0) {
   QCoreApplication::addLibraryPath(*arg0);
@@ -365,7 +365,7 @@ void C_ZN16QCoreApplication14addLibraryPathERK7QString(QString* arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:148
-// [-2] void removeLibraryPath(const class QString &)
+// [-2] void removeLibraryPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication17removeLibraryPathERK7QString(QString* arg0) {
   QCoreApplication::removeLibraryPath(*arg0);
@@ -373,7 +373,7 @@ void C_ZN16QCoreApplication17removeLibraryPathERK7QString(QString* arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:152
-// [1] bool installTranslator(class QTranslator *)
+// [1] bool installTranslator(QTranslator *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QCoreApplication17installTranslatorEP11QTranslator(QTranslator * messageFile) {
   return (bool)QCoreApplication::installTranslator(messageFile);
@@ -381,7 +381,7 @@ bool C_ZN16QCoreApplication17installTranslatorEP11QTranslator(QTranslator * mess
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:153
-// [1] bool removeTranslator(class QTranslator *)
+// [1] bool removeTranslator(QTranslator *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QCoreApplication16removeTranslatorEP11QTranslator(QTranslator * messageFile) {
   return (bool)QCoreApplication::removeTranslator(messageFile);
@@ -407,7 +407,7 @@ void C_ZN16QCoreApplication5flushEv() {
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qcoreapplication.h:172
-// [-2] void installNativeEventFilter(class QAbstractNativeEventFilter *)
+// [-2] void installNativeEventFilter(QAbstractNativeEventFilter *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication24installNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
@@ -418,7 +418,7 @@ void C_ZN16QCoreApplication24installNativeEventFilterEP26QAbstractNativeEventFil
 // Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtCore/qcoreapplication.h:173
-// [-2] void removeNativeEventFilter(class QAbstractNativeEventFilter *)
+// [-2] void removeNativeEventFilter(QAbstractNativeEventFilter *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication23removeNativeEventFilterEP26QAbstractNativeEventFilter(void *this_, QAbstractNativeEventFilter * filterObj) {
@@ -436,7 +436,7 @@ bool C_ZN16QCoreApplication17isQuitLockEnabledEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:176
-// [-2] void setQuitLockEnabled(_Bool)
+// [-2] void setQuitLockEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QCoreApplication18setQuitLockEnabledEb(bool enabled) {
   QCoreApplication::setQuitLockEnabled(enabled);

@@ -16,10 +16,10 @@
 class Q_DECL_EXPORT MyQDial : public QDial {
 public:
   virtual ~MyQDial() {}
-// void QDial(class QWidget *)
+// void QDial(QWidget *)
 MyQDial(QWidget * parent) : QDial(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -32,7 +32,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * re) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)re, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -44,7 +44,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(class QPaintEvent *)
+// void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * pe) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)pe, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -56,7 +56,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(class QMouseEvent *)
+// void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * me) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -68,7 +68,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(class QMouseEvent *)
+// void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * me) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -80,7 +80,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(class QMouseEvent *)
+// void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * me) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -92,7 +92,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void sliderChange(enum QAbstractSlider::SliderChange)
+// void sliderChange(QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -104,7 +104,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(class QStyleOptionSlider *)
+// void initStyleOption(QStyleOptionSlider *)
   virtual void initStyleOption(QStyleOptionSlider * option) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -119,7 +119,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:84
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QDial5eventEP6QEvent(void *this_, QEvent * e) {
   return (bool)((QDial*)this_)->QDial::event(e);
@@ -127,7 +127,7 @@ bool C_ZN5QDial5eventEP6QEvent(void *this_, QEvent * e) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:85
-// [-2] void resizeEvent(class QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * re) {
   ((QDial*)this_)->QDial::resizeEvent(re);
@@ -135,7 +135,7 @@ void C_ZN5QDial11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * re) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:86
-// [-2] void paintEvent(class QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial10paintEventEP11QPaintEvent(void *this_, QPaintEvent * pe) {
   ((QDial*)this_)->QDial::paintEvent(pe);
@@ -143,7 +143,7 @@ void C_ZN5QDial10paintEventEP11QPaintEvent(void *this_, QPaintEvent * pe) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:88
-// [-2] void mousePressEvent(class QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
   ((QDial*)this_)->QDial::mousePressEvent(me);
@@ -151,7 +151,7 @@ void C_ZN5QDial15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:89
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
   ((QDial*)this_)->QDial::mouseReleaseEvent(me);
@@ -159,7 +159,7 @@ void C_ZN5QDial17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * me)
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:90
-// [-2] void mouseMoveEvent(class QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
   ((QDial*)this_)->QDial::mouseMoveEvent(me);
@@ -167,7 +167,7 @@ void C_ZN5QDial14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:92
-// [-2] void sliderChange(enum QAbstractSlider::SliderChange)
+// [-2] void sliderChange(QAbstractSlider::SliderChange)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(void *this_, QAbstractSlider::SliderChange change) {
   ((QDial*)this_)->QDial::sliderChange(change);
@@ -175,7 +175,7 @@ void C_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(void *this_, QAb
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:93
-// [-2] void initStyleOption(class QStyleOptionSlider *)
+// [-2] void initStyleOption(QStyleOptionSlider *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider(void *this_, QStyleOptionSlider * option) {
   ((QDial*)this_)->QDial::initStyleOption(option);
@@ -191,7 +191,7 @@ void* C_ZNK5QDial10metaObjectEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:64
-// [-2] void QDial(class QWidget *)
+// [-2] void QDial(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDialC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQDial*)(0);
@@ -265,7 +265,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:80
-// [-2] void setNotchesVisible(_Bool)
+// [-2] void setNotchesVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial17setNotchesVisibleEb(void *this_, bool visible) {
   ((QDial*)this_)->setNotchesVisible(visible);
@@ -273,7 +273,7 @@ void C_ZN5QDial17setNotchesVisibleEb(void *this_, bool visible) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:81
-// [-2] void setWrapping(_Bool)
+// [-2] void setWrapping(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial11setWrappingEb(void *this_, bool on) {
   ((QDial*)this_)->setWrapping(on);

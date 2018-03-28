@@ -16,13 +16,13 @@
 class Q_DECL_EXPORT MyQQmlDebuggingEnabler : public QQmlDebuggingEnabler {
 public:
   virtual ~MyQQmlDebuggingEnabler() {}
-// void QQmlDebuggingEnabler(_Bool)
+// void QQmlDebuggingEnabler(bool)
 MyQQmlDebuggingEnabler(bool printWarning) : QQmlDebuggingEnabler(printWarning) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmldebug.h:58
-// [-2] void QQmlDebuggingEnabler(_Bool)
+// [-2] void QQmlDebuggingEnabler(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QQmlDebuggingEnablerC2Eb(bool printWarning) {
   return  new QQmlDebuggingEnabler(printWarning);
@@ -66,7 +66,7 @@ return new QStringList(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmldebug.h:65
-// [-2] void setServices(const class QStringList &)
+// [-2] void setServices(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QQmlDebuggingEnabler11setServicesERK11QStringList(QStringList* services) {
   QQmlDebuggingEnabler::setServices(*services);
@@ -74,7 +74,7 @@ void C_ZN20QQmlDebuggingEnabler11setServicesERK11QStringList(QStringList* servic
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmldebug.h:67
-// [1] bool startTcpDebugServer(int, enum QQmlDebuggingEnabler::StartMode, const class QString &)
+// [1] bool startTcpDebugServer(int, QQmlDebuggingEnabler::StartMode, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QQmlDebuggingEnabler19startTcpDebugServerEiNS_9StartModeERK7QString(int port, QQmlDebuggingEnabler::StartMode mode, QString* hostName) {
   return (bool)QQmlDebuggingEnabler::startTcpDebugServer(port, mode, *hostName);
@@ -82,7 +82,7 @@ bool C_ZN20QQmlDebuggingEnabler19startTcpDebugServerEiNS_9StartModeERK7QString(i
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmldebug.h:69
-// [1] bool connectToLocalDebugger(const class QString &, enum QQmlDebuggingEnabler::StartMode)
+// [1] bool connectToLocalDebugger(const QString &, QQmlDebuggingEnabler::StartMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QQmlDebuggingEnabler22connectToLocalDebuggerERK7QStringNS_9StartModeE(QString* socketFileName, QQmlDebuggingEnabler::StartMode mode) {
   return (bool)QQmlDebuggingEnabler::connectToLocalDebugger(*socketFileName, mode);

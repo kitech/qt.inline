@@ -16,15 +16,15 @@
 class Q_DECL_EXPORT MyQAccessibleEvent : public QAccessibleEvent {
 public:
   virtual ~MyQAccessibleEvent() {}
-// void QAccessibleEvent(class QObject *, class QAccessible::Event)
+// void QAccessibleEvent(QObject *, QAccessible::Event)
 MyQAccessibleEvent(QObject * obj, QAccessible::Event typ) : QAccessibleEvent(obj, typ) {}
-// void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
+// void QAccessibleEvent(QAccessibleInterface *, QAccessible::Event)
 MyQAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ) : QAccessibleEvent(iface, typ) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:668
-// [-2] void QAccessibleEvent(class QObject *, class QAccessible::Event)
+// [-2] void QAccessibleEvent(QObject *, QAccessible::Event)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ) {
   return  new QAccessibleEvent(obj, typ);
@@ -32,7 +32,7 @@ void* C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * obj, QAc
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:684
-// [-2] void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
+// [-2] void QAccessibleEvent(QAccessibleInterface *, QAccessible::Event)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAccessibleEventC2EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ) {
   return  new QAccessibleEvent(iface, typ);

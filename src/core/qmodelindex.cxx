@@ -125,7 +125,7 @@ bool C_ZNK11QModelIndex7isValidEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:73
-// [1] bool operator==(const class QModelIndex &)
+// [1] bool operator==(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndexeqERKS_(void *this_, QModelIndex* other) {
   return (bool)((QModelIndex*)this_)->operator==(*other);
@@ -133,7 +133,7 @@ bool C_ZNK11QModelIndexeqERKS_(void *this_, QModelIndex* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:75
-// [1] bool operator!=(const class QModelIndex &)
+// [1] bool operator!=(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndexneERKS_(void *this_, QModelIndex* other) {
   return (bool)((QModelIndex*)this_)->operator!=(*other);
@@ -141,7 +141,7 @@ bool C_ZNK11QModelIndexneERKS_(void *this_, QModelIndex* other) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:77
-// [1] bool operator<(const class QModelIndex &)
+// [1] bool operator<(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndexltERKS_(void *this_, QModelIndex* other) {
   return (bool)((QModelIndex*)this_)->operator<(*other);

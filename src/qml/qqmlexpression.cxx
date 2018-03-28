@@ -19,9 +19,9 @@ public:
   virtual ~MyQQmlExpression() {}
 // void QQmlExpression()
 MyQQmlExpression() : QQmlExpression() {}
-// void QQmlExpression(class QQmlContext *, class QObject *, const class QString &, class QObject *)
+// void QQmlExpression(QQmlContext *, QObject *, const QString &, QObject *)
 MyQQmlExpression(QQmlContext * arg0, QObject * arg1, const QString & arg2, QObject * arg3) : QQmlExpression(arg0, arg1, arg2, arg3) {}
-// void QQmlExpression(const class QQmlScriptString &, class QQmlContext *, class QObject *, class QObject *)
+// void QQmlExpression(const QQmlScriptString &, QQmlContext *, QObject *, QObject *)
 MyQQmlExpression(const QQmlScriptString & arg0, QQmlContext * arg1, QObject * arg2, QObject * arg3) : QQmlExpression(arg0, arg1, arg2, arg3) {}
 };
 
@@ -43,7 +43,7 @@ void* C_ZN14QQmlExpressionC2Ev() {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:63
-// [-2] void QQmlExpression(class QQmlContext *, class QObject *, const class QString &, class QObject *)
+// [-2] void QQmlExpression(QQmlContext *, QObject *, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2EP11QQmlContextP7QObjectRK7QStringS3_(QQmlContext * arg0, QObject * arg1, QString* arg2, QObject * arg3) {
   return  new QQmlExpression(arg0, arg1, *arg2, arg3);
@@ -51,7 +51,7 @@ void* C_ZN14QQmlExpressionC2EP11QQmlContextP7QObjectRK7QStringS3_(QQmlContext * 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:64
-// [-2] void QQmlExpression(const class QQmlScriptString &, class QQmlContext *, class QObject *, class QObject *)
+// [-2] void QQmlExpression(const QQmlScriptString &, QQmlContext *, QObject *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2ERK16QQmlScriptStringP11QQmlContextP7QObjectS6_(QQmlScriptString* arg0, QQmlContext * arg1, QObject * arg2, QObject * arg3) {
   return  new QQmlExpression(*arg0, arg1, arg2, arg3);
@@ -91,7 +91,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:71
-// [-2] void setExpression(const class QString &)
+// [-2] void setExpression(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QQmlExpression13setExpressionERK7QString(void *this_, QString* arg0) {
   ((QQmlExpression*)this_)->setExpression(*arg0);
@@ -107,7 +107,7 @@ bool C_ZNK14QQmlExpression20notifyOnValueChangedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:74
-// [-2] void setNotifyOnValueChanged(_Bool)
+// [-2] void setNotifyOnValueChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QQmlExpression23setNotifyOnValueChangedEb(void *this_, bool arg0) {
   ((QQmlExpression*)this_)->setNotifyOnValueChanged(arg0);
@@ -140,7 +140,7 @@ int C_ZNK14QQmlExpression12columnNumberEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:79
-// [-2] void setSourceLocation(const class QString &, int, int)
+// [-2] void setSourceLocation(const QString &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QQmlExpression17setSourceLocationERK7QStringii(void *this_, QString* fileName, int line, int column) {
   ((QQmlExpression*)this_)->setSourceLocation(*fileName, line, column);
@@ -181,7 +181,7 @@ return new QQmlError(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:87
-// [16] QVariant evaluate(_Bool *)
+// [16] QVariant evaluate(bool *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpression8evaluateEPb(void *this_, bool * valueIsUndefined) {
   auto rv = ((QQmlExpression*)this_)->evaluate(valueIsUndefined);

@@ -17,15 +17,15 @@
 class Q_DECL_EXPORT MyQGraphicsLinearLayout : public QGraphicsLinearLayout {
 public:
   virtual ~MyQGraphicsLinearLayout() {}
-// void QGraphicsLinearLayout(class QGraphicsLayoutItem *)
+// void QGraphicsLinearLayout(QGraphicsLayoutItem *)
 MyQGraphicsLinearLayout(QGraphicsLayoutItem * parent) : QGraphicsLinearLayout(parent) {}
-// void QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
+// void QGraphicsLinearLayout(Qt::Orientation, QGraphicsLayoutItem *)
 MyQGraphicsLinearLayout(Qt::Orientation orientation, QGraphicsLayoutItem * parent) : QGraphicsLinearLayout(orientation, parent) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
-// [-2] void QGraphicsLinearLayout(class QGraphicsLayoutItem *)
+// [-2] void QGraphicsLinearLayout(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
   return  new QGraphicsLinearLayout(parent);
@@ -33,7 +33,7 @@ void* C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem *
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
-// [-2] void QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
+// [-2] void QGraphicsLinearLayout(Qt::Orientation, QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent) {
   return  new QGraphicsLinearLayout(orientation, parent);
@@ -64,7 +64,7 @@ Qt::Orientation C_ZNK21QGraphicsLinearLayout11orientationEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:63
-// [-2] void addItem(class QGraphicsLayoutItem *)
+// [-2] void addItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   ((QGraphicsLinearLayout*)this_)->addItem(item);
@@ -80,7 +80,7 @@ void C_ZN21QGraphicsLinearLayout10addStretchEi(void *this_, int stretch) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:66
-// [-2] void insertItem(int, class QGraphicsLayoutItem *)
+// [-2] void insertItem(int, QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10insertItemEiP19QGraphicsLayoutItem(void *this_, int index, QGraphicsLayoutItem * item) {
   ((QGraphicsLinearLayout*)this_)->insertItem(index, item);
@@ -96,7 +96,7 @@ void C_ZN21QGraphicsLinearLayout13insertStretchEii(void *this_, int index, int s
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:69
-// [-2] void removeItem(class QGraphicsLayoutItem *)
+// [-2] void removeItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10removeItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   ((QGraphicsLinearLayout*)this_)->removeItem(item);
@@ -144,7 +144,7 @@ qreal C_ZNK21QGraphicsLinearLayout11itemSpacingEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:77
-// [-2] void setStretchFactor(class QGraphicsLayoutItem *, int)
+// [-2] void setStretchFactor(QGraphicsLayoutItem *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void *this_, QGraphicsLayoutItem * item, int stretch) {
   ((QGraphicsLinearLayout*)this_)->setStretchFactor(item, stretch);
@@ -152,7 +152,7 @@ void C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:78
-// [4] int stretchFactor(class QGraphicsLayoutItem *)
+// [4] int stretchFactor(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   return (int)((QGraphicsLinearLayout*)this_)->stretchFactor(item);
@@ -160,7 +160,7 @@ int C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *thi
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:80
-// [-2] void setAlignment(class QGraphicsLayoutItem *, Qt::Alignment)
+// [-2] void setAlignment(QGraphicsLayoutItem *, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, QFlags<Qt::AlignmentFlag> alignment) {
   ((QGraphicsLinearLayout*)this_)->setAlignment(item, alignment);
@@ -168,7 +168,7 @@ void C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Q
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:81
-// [4] Qt::Alignment alignment(class QGraphicsLayoutItem *)
+// [4] Qt::Alignment alignment(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 Qt::Alignment C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   return (Qt::Alignment)((QGraphicsLinearLayout*)this_)->alignment(item);
@@ -176,7 +176,7 @@ Qt::Alignment C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:83
-// [-2] void setGeometry(const class QRectF &)
+// [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *this_, QRectF* rect) {
   ((QGraphicsLinearLayout*)this_)->setGeometry(*rect);
@@ -208,7 +208,7 @@ void C_ZN21QGraphicsLinearLayout10invalidateEv(void *this_) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:89
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
   auto rv = ((QGraphicsLinearLayout*)this_)->sizeHint(which, *constraint);

@@ -19,7 +19,7 @@ public:
 // void QApplication(int &, char **, int)
 MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg2) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(class QEvent *)
+// bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -35,7 +35,7 @@ MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:204
-// [1] bool event(class QEvent *)
+// [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QApplication*)this_)->QApplication::event(arg0);
@@ -75,7 +75,7 @@ void* C_ZN12QApplication5styleEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:99
-// [-2] void setStyle(class QStyle *)
+// [-2] void setStyle(QStyle *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication8setStyleEP6QStyle(QStyle * arg0) {
   QApplication::setStyle(arg0);
@@ -83,7 +83,7 @@ void C_ZN12QApplication8setStyleEP6QStyle(QStyle * arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:100
-// [8] QStyle * setStyle(const class QString &)
+// [8] QStyle * setStyle(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QApplication8setStyleERK7QString(QString* arg0) {
   return (void*)QApplication::setStyle(*arg0);
@@ -107,7 +107,7 @@ void C_ZN12QApplication12setColorSpecEi(int arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:111
-// [16] QPalette palette(const class QWidget *)
+// [16] QPalette palette(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QApplication7paletteEPK7QWidget(const QWidget * arg0) {
   auto rv = QApplication::palette(arg0);
@@ -125,7 +125,7 @@ return new QPalette(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:113
-// [-2] void setPalette(const class QPalette &, const char *)
+// [-2] void setPalette(const QPalette &, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication10setPaletteERK8QPalettePKc(QPalette* arg0, const char * className) {
   QApplication::setPalette(*arg0, className);
@@ -142,7 +142,7 @@ return new QFont(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:115
-// [16] QFont font(const class QWidget *)
+// [16] QFont font(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QApplication4fontEPK7QWidget(const QWidget * arg0) {
   auto rv = QApplication::font(arg0);
@@ -160,7 +160,7 @@ return new QFont(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:117
-// [-2] void setFont(const class QFont &, const char *)
+// [-2] void setFont(const QFont &, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication7setFontERK5QFontPKc(QFont* arg0, const char * className) {
   QApplication::setFont(*arg0, className);
@@ -177,7 +177,7 @@ return new QFontMetrics(rv);
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:121
-// [-2] void setWindowIcon(const class QIcon &)
+// [-2] void setWindowIcon(const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication13setWindowIconERK5QIcon(QIcon* icon) {
   QApplication::setWindowIcon(*icon);
@@ -252,7 +252,7 @@ void* C_ZN12QApplication12activeWindowEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:135
-// [-2] void setActiveWindow(class QWidget *)
+// [-2] void setActiveWindow(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication15setActiveWindowEP7QWidget(QWidget * act) {
   QApplication::setActiveWindow(act);
@@ -260,7 +260,7 @@ void C_ZN12QApplication15setActiveWindowEP7QWidget(QWidget * act) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:137
-// [8] QWidget * widgetAt(const class QPoint &)
+// [8] QWidget * widgetAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QApplication8widgetAtERK6QPoint(QPoint* p) {
   return (void*)QApplication::widgetAt(*p);
@@ -276,7 +276,7 @@ void* C_ZN12QApplication8widgetAtEii(int x, int y) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:139
-// [8] QWidget * topLevelAt(const class QPoint &)
+// [8] QWidget * topLevelAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QApplication10topLevelAtERK6QPoint(QPoint* p) {
   return (void*)QApplication::topLevelAt(*p);
@@ -301,7 +301,7 @@ void C_ZN12QApplication4beepEv() {
 // Public static Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qapplication.h:146
-// [-2] void alert(class QWidget *, int)
+// [-2] void alert(QWidget *, int)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication5alertEP7QWidgeti(QWidget * widget, int duration) {
@@ -375,7 +375,7 @@ int C_ZN12QApplication16wheelScrollLinesEv() {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:161
-// [-2] void setGlobalStrut(const class QSize &)
+// [-2] void setGlobalStrut(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication14setGlobalStrutERK5QSize(QSize* arg0) {
   QApplication::setGlobalStrut(*arg0);
@@ -432,7 +432,7 @@ bool C_ZN12QApplication15isEffectEnabledEN2Qt8UIEffectE(Qt::UIEffect arg0) {
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:170
-// [-2] void setEffectEnabled(Qt::UIEffect, _Bool)
+// [-2] void setEffectEnabled(Qt::UIEffect, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication16setEffectEnabledEN2Qt8UIEffectEb(Qt::UIEffect arg0, bool enable) {
   QApplication::setEffectEnabled(arg0, enable);
@@ -448,7 +448,7 @@ int C_ZN12QApplication4execEv() {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:180
-// [1] bool notify(class QObject *, class QEvent *)
+// [1] bool notify(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QApplication*)this_)->notify(arg0, arg1);
@@ -457,7 +457,7 @@ bool C_ZN12QApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QE
 // Public Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtWidgets/qapplication.h:190
-// [-2] void focusChanged(class QWidget *, class QWidget *)
+// [-2] void focusChanged(QWidget *, QWidget *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication12focusChangedEP7QWidgetS1_(void *this_, QWidget * old, QWidget * now) {
@@ -476,7 +476,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:196
-// [-2] void setStyleSheet(const class QString &)
+// [-2] void setStyleSheet(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication13setStyleSheetERK7QString(void *this_, QString* sheet) {
   ((QApplication*)this_)->setStyleSheet(*sheet);
@@ -484,7 +484,7 @@ void C_ZN12QApplication13setStyleSheetERK7QString(void *this_, QString* sheet) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:198
-// [-2] void setAutoSipEnabled(const _Bool)
+// [-2] void setAutoSipEnabled(const bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QApplication17setAutoSipEnabledEb(void *this_, const bool enabled) {
   ((QApplication*)this_)->setAutoSipEnabled(enabled);

@@ -17,13 +17,13 @@
 class Q_DECL_EXPORT MyQAbstractGraphicsShapeItem : public QAbstractGraphicsShapeItem {
 public:
   virtual ~MyQAbstractGraphicsShapeItem() {}
-// void QAbstractGraphicsShapeItem(class QGraphicsItem *)
+// void QAbstractGraphicsShapeItem(QGraphicsItem *)
 MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeItem(parent) {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:603
-// [-2] void QAbstractGraphicsShapeItem(class QGraphicsItem *)
+// [-2] void QAbstractGraphicsShapeItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QAbstractGraphicsShapeItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
   return 0; // new QAbstractGraphicsShapeItem(parent);
@@ -47,7 +47,7 @@ return new QPen(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:607
-// [-2] void setPen(const class QPen &)
+// [-2] void setPen(const QPen &)
 extern "C" Q_DECL_EXPORT
 void C_ZN26QAbstractGraphicsShapeItem6setPenERK4QPen(void *this_, QPen* pen) {
   ((QAbstractGraphicsShapeItem*)this_)->setPen(*pen);
@@ -64,7 +64,7 @@ return new QBrush(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:610
-// [-2] void setBrush(const class QBrush &)
+// [-2] void setBrush(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, QBrush* brush) {
   ((QAbstractGraphicsShapeItem*)this_)->setBrush(*brush);
@@ -72,7 +72,7 @@ void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, QBrush* br
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:612
-// [1] bool isObscuredBy(const class QGraphicsItem *)
+// [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK26QAbstractGraphicsShapeItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
   return (bool)((QAbstractGraphicsShapeItem*)this_)->isObscuredBy(item);

@@ -18,7 +18,7 @@ public:
   virtual ~MyQTextBlockFormat() {}
 // void QTextBlockFormat()
 MyQTextBlockFormat() : QTextBlockFormat() {}
-// void QTextBlockFormat(const class QTextFormat &)
+// void QTextBlockFormat(const QTextFormat &)
 MyQTextBlockFormat(const QTextFormat & fmt_) : QTextBlockFormat(fmt_) {}
 };
 
@@ -196,7 +196,7 @@ int C_ZNK16QTextBlockFormat14lineHeightTypeEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:635
-// [-2] void setNonBreakableLines(_Bool)
+// [-2] void setNonBreakableLines(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextBlockFormat20setNonBreakableLinesEb(void *this_, bool b) {
   ((QTextBlockFormat*)this_)->setNonBreakableLines(b);

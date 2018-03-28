@@ -18,19 +18,19 @@ public:
   virtual ~MyQTreeWidgetItem() {}
 // void QTreeWidgetItem(int)
 MyQTreeWidgetItem(int type_) : QTreeWidgetItem(type_) {}
-// void QTreeWidgetItem(const class QStringList &, int)
+// void QTreeWidgetItem(const QStringList &, int)
 MyQTreeWidgetItem(const QStringList & strings, int type_) : QTreeWidgetItem(strings, type_) {}
-// void QTreeWidgetItem(class QTreeWidget *, int)
+// void QTreeWidgetItem(QTreeWidget *, int)
 MyQTreeWidgetItem(QTreeWidget * view, int type_) : QTreeWidgetItem(view, type_) {}
-// void QTreeWidgetItem(class QTreeWidget *, const class QStringList &, int)
+// void QTreeWidgetItem(QTreeWidget *, const QStringList &, int)
 MyQTreeWidgetItem(QTreeWidget * view, const QStringList & strings, int type_) : QTreeWidgetItem(view, strings, type_) {}
-// void QTreeWidgetItem(class QTreeWidget *, class QTreeWidgetItem *, int)
+// void QTreeWidgetItem(QTreeWidget *, QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidget * view, QTreeWidgetItem * after, int type_) : QTreeWidgetItem(view, after, type_) {}
-// void QTreeWidgetItem(class QTreeWidgetItem *, int)
+// void QTreeWidgetItem(QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, int type_) : QTreeWidgetItem(parent, type_) {}
-// void QTreeWidgetItem(class QTreeWidgetItem *, const class QStringList &, int)
+// void QTreeWidgetItem(QTreeWidgetItem *, const QStringList &, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, const QStringList & strings, int type_) : QTreeWidgetItem(parent, strings, type_) {}
-// void QTreeWidgetItem(class QTreeWidgetItem *, class QTreeWidgetItem *, int)
+// void QTreeWidgetItem(QTreeWidgetItem *, QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) : QTreeWidgetItem(parent, after, type_) {}
 // Protected Visibility=Default Availability=Available
 // void emitDataChanged()
@@ -68,7 +68,7 @@ void* C_ZN15QTreeWidgetItemC2Ei(int type_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:68
-// [-2] void QTreeWidgetItem(const class QStringList &, int)
+// [-2] void QTreeWidgetItem(const QStringList &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2ERK11QStringListi(QStringList* strings, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -77,7 +77,7 @@ void* C_ZN15QTreeWidgetItemC2ERK11QStringListi(QStringList* strings, int type_) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:69
-// [-2] void QTreeWidgetItem(class QTreeWidget *, int)
+// [-2] void QTreeWidgetItem(QTreeWidget *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgeti(QTreeWidget * view, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -86,7 +86,7 @@ void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgeti(QTreeWidget * view, int type_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:70
-// [-2] void QTreeWidgetItem(class QTreeWidget *, const class QStringList &, int)
+// [-2] void QTreeWidgetItem(QTreeWidget *, const QStringList &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetRK11QStringListi(QTreeWidget * view, QStringList* strings, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -95,7 +95,7 @@ void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetRK11QStringListi(QTreeWidget * view,
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:71
-// [-2] void QTreeWidgetItem(class QTreeWidget *, class QTreeWidgetItem *, int)
+// [-2] void QTreeWidgetItem(QTreeWidget *, QTreeWidgetItem *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetPS_i(QTreeWidget * view, QTreeWidgetItem * after, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -104,7 +104,7 @@ void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetPS_i(QTreeWidget * view, QTreeWidget
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:72
-// [-2] void QTreeWidgetItem(class QTreeWidgetItem *, int)
+// [-2] void QTreeWidgetItem(QTreeWidgetItem *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2EPS_i(QTreeWidgetItem * parent, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -113,7 +113,7 @@ void* C_ZN15QTreeWidgetItemC2EPS_i(QTreeWidgetItem * parent, int type_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:73
-// [-2] void QTreeWidgetItem(class QTreeWidgetItem *, const class QStringList &, int)
+// [-2] void QTreeWidgetItem(QTreeWidgetItem *, const QStringList &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2EPS_RK11QStringListi(QTreeWidgetItem * parent, QStringList* strings, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -122,7 +122,7 @@ void* C_ZN15QTreeWidgetItemC2EPS_RK11QStringListi(QTreeWidgetItem * parent, QStr
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:74
-// [-2] void QTreeWidgetItem(class QTreeWidgetItem *, class QTreeWidgetItem *, int)
+// [-2] void QTreeWidgetItem(QTreeWidgetItem *, QTreeWidgetItem *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemC2EPS_S0_i(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) {
   auto _nilp = (MyQTreeWidgetItem*)(0);
@@ -155,7 +155,7 @@ void* C_ZNK15QTreeWidgetItem10treeWidgetEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:82
-// [-2] void setSelected(_Bool)
+// [-2] void setSelected(bool)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setSelectedEb(void *this_, bool select_) {
@@ -177,7 +177,7 @@ bool C_ZNK15QTreeWidgetItem10isSelectedEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:85
-// [-2] void setHidden(_Bool)
+// [-2] void setHidden(bool)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem9setHiddenEb(void *this_, bool hide) {
@@ -199,7 +199,7 @@ bool C_ZNK15QTreeWidgetItem8isHiddenEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:88
-// [-2] void setExpanded(_Bool)
+// [-2] void setExpanded(bool)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setExpandedEb(void *this_, bool expand) {
@@ -221,7 +221,7 @@ bool C_ZNK15QTreeWidgetItem10isExpandedEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qtreewidget.h:91
-// [-2] void setFirstColumnSpanned(_Bool)
+// [-2] void setFirstColumnSpanned(bool)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem21setFirstColumnSpannedEb(void *this_, bool span) {
@@ -243,7 +243,7 @@ bool C_ZNK15QTreeWidgetItem20isFirstColumnSpannedEv(void *this_) {
 // Public inline Visibility=Default Availability=Available
 // since 4.3
 // /usr/include/qt/QtWidgets/qtreewidget.h:94
-// [-2] void setDisabled(_Bool)
+// [-2] void setDisabled(bool)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setDisabledEb(void *this_, bool disabled) {
@@ -264,7 +264,7 @@ bool C_ZNK15QTreeWidgetItem10isDisabledEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:98
-// [-2] void setChildIndicatorPolicy(class QTreeWidgetItem::ChildIndicatorPolicy)
+// [-2] void setChildIndicatorPolicy(QTreeWidgetItem::ChildIndicatorPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem23setChildIndicatorPolicyENS_20ChildIndicatorPolicyE(void *this_, QTreeWidgetItem::ChildIndicatorPolicy policy) {
   ((QTreeWidgetItem*)this_)->setChildIndicatorPolicy(policy);
@@ -305,7 +305,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:106
-// [-2] void setText(int, const class QString &)
+// [-2] void setText(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem7setTextEiRK7QString(void *this_, int column, QString* text) {
   ((QTreeWidgetItem*)this_)->setText(column, *text);
@@ -322,7 +322,7 @@ return new QIcon(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:110
-// [-2] void setIcon(int, const class QIcon &)
+// [-2] void setIcon(int, const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem7setIconEiRK5QIcon(void *this_, int column, QIcon* icon) {
   ((QTreeWidgetItem*)this_)->setIcon(column, *icon);
@@ -339,7 +339,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:114
-// [-2] void setStatusTip(int, const class QString &)
+// [-2] void setStatusTip(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem12setStatusTipEiRK7QString(void *this_, int column, QString* statusTip) {
   ((QTreeWidgetItem*)this_)->setStatusTip(column, *statusTip);
@@ -356,7 +356,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:119
-// [-2] void setToolTip(int, const class QString &)
+// [-2] void setToolTip(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem10setToolTipEiRK7QString(void *this_, int column, QString* toolTip) {
   ((QTreeWidgetItem*)this_)->setToolTip(column, *toolTip);
@@ -373,7 +373,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:125
-// [-2] void setWhatsThis(int, const class QString &)
+// [-2] void setWhatsThis(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem12setWhatsThisEiRK7QString(void *this_, int column, QString* whatsThis) {
   ((QTreeWidgetItem*)this_)->setWhatsThis(column, *whatsThis);
@@ -390,7 +390,7 @@ return new QFont(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:130
-// [-2] void setFont(int, const class QFont &)
+// [-2] void setFont(int, const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem7setFontEiRK5QFont(void *this_, int column, QFont* font) {
   ((QTreeWidgetItem*)this_)->setFont(column, *font);
@@ -423,7 +423,7 @@ return new QColor(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:139
-// [-2] void setBackgroundColor(int, const class QColor &)
+// [-2] void setBackgroundColor(int, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem18setBackgroundColorEiRK6QColor(void *this_, int column, QColor* color) {
   ((QTreeWidgetItem*)this_)->setBackgroundColor(column, *color);
@@ -444,7 +444,7 @@ return new QBrush(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:144
-// [-2] void setBackground(int, const class QBrush &)
+// [-2] void setBackground(int, const QBrush &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem13setBackgroundEiRK6QBrush(void *this_, int column, QBrush* brush) {
@@ -463,7 +463,7 @@ return new QColor(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:149
-// [-2] void setTextColor(int, const class QColor &)
+// [-2] void setTextColor(int, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem12setTextColorEiRK6QColor(void *this_, int column, QColor* color) {
   ((QTreeWidgetItem*)this_)->setTextColor(column, *color);
@@ -484,7 +484,7 @@ return new QBrush(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:154
-// [-2] void setForeground(int, const class QBrush &)
+// [-2] void setForeground(int, const QBrush &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem13setForegroundEiRK6QBrush(void *this_, int column, QBrush* brush) {
@@ -523,7 +523,7 @@ return new QSize(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.1
 // /usr/include/qt/QtWidgets/qtreewidget.h:164
-// [-2] void setSizeHint(int, const class QSize &)
+// [-2] void setSizeHint(int, const QSize &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11setSizeHintEiRK5QSize(void *this_, int column, QSize* size) {
@@ -542,7 +542,7 @@ return new QVariant(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:168
-// [-2] void setData(int, int, const class QVariant &)
+// [-2] void setData(int, int, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem7setDataEiiRK8QVariant(void *this_, int column, int role, QVariant* value) {
   ((QTreeWidgetItem*)this_)->setData(column, role, *value);
@@ -550,7 +550,7 @@ void C_ZN15QTreeWidgetItem7setDataEiiRK8QVariant(void *this_, int column, int ro
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:170
-// [1] bool operator<(const class QTreeWidgetItem &)
+// [1] bool operator<(const QTreeWidgetItem &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTreeWidgetItemltERKS_(void *this_, QTreeWidgetItem* other) {
   return (bool)((QTreeWidgetItem*)this_)->operator<(*other);
@@ -558,7 +558,7 @@ bool C_ZNK15QTreeWidgetItemltERKS_(void *this_, QTreeWidgetItem* other) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:173
-// [-2] void read(class QDataStream &)
+// [-2] void read(QDataStream &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
   ((QTreeWidgetItem*)this_)->read(*in);
@@ -566,7 +566,7 @@ void C_ZN15QTreeWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:174
-// [-2] void write(class QDataStream &)
+// [-2] void write(QDataStream &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK15QTreeWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) {
   ((QTreeWidgetItem*)this_)->write(*out);
@@ -574,7 +574,7 @@ void C_ZNK15QTreeWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) 
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:176
-// [64] QTreeWidgetItem & operator=(const class QTreeWidgetItem &)
+// [64] QTreeWidgetItem & operator=(const QTreeWidgetItem &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItemaSERKS_(void *this_, QTreeWidgetItem* other) {
   auto& rv = ((QTreeWidgetItem*)this_)->operator=(*other);
@@ -615,7 +615,7 @@ int C_ZNK15QTreeWidgetItem11columnCountEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:187
-// [4] int indexOfChild(class QTreeWidgetItem *)
+// [4] int indexOfChild(QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QTreeWidgetItem12indexOfChildEPS_(void *this_, QTreeWidgetItem * child) {
   return (int)((QTreeWidgetItem*)this_)->indexOfChild(child);
@@ -623,7 +623,7 @@ int C_ZNK15QTreeWidgetItem12indexOfChildEPS_(void *this_, QTreeWidgetItem * chil
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:189
-// [-2] void addChild(class QTreeWidgetItem *)
+// [-2] void addChild(QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem8addChildEPS_(void *this_, QTreeWidgetItem * child) {
   ((QTreeWidgetItem*)this_)->addChild(child);
@@ -631,7 +631,7 @@ void C_ZN15QTreeWidgetItem8addChildEPS_(void *this_, QTreeWidgetItem * child) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:190
-// [-2] void insertChild(int, class QTreeWidgetItem *)
+// [-2] void insertChild(int, QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11insertChildEiPS_(void *this_, int index, QTreeWidgetItem * child) {
   ((QTreeWidgetItem*)this_)->insertChild(index, child);
@@ -639,7 +639,7 @@ void C_ZN15QTreeWidgetItem11insertChildEiPS_(void *this_, int index, QTreeWidget
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:191
-// [-2] void removeChild(class QTreeWidgetItem *)
+// [-2] void removeChild(QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTreeWidgetItem11removeChildEPS_(void *this_, QTreeWidgetItem * child) {
   ((QTreeWidgetItem*)this_)->removeChild(child);

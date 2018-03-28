@@ -18,9 +18,9 @@ public:
   virtual ~MyQRect() {}
 // void QRect()
 MyQRect() : QRect() {}
-// void QRect(const class QPoint &, const class QPoint &)
+// void QRect(const QPoint &, const QPoint &)
 MyQRect(const QPoint & topleft, const QPoint & bottomright) : QRect(topleft, bottomright) {}
-// void QRect(const class QPoint &, const class QSize &)
+// void QRect(const QPoint &, const QSize &)
 MyQRect(const QPoint & topleft, const QSize & size) : QRect(topleft, size) {}
 // void QRect(int, int, int, int)
 MyQRect(int left, int top, int width, int height) : QRect(left, top, width, height) {}
@@ -36,7 +36,7 @@ void* C_ZN5QRectC2Ev() {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:61
-// [-2] void QRect(const class QPoint &, const class QPoint &)
+// [-2] void QRect(const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QRectC2ERK6QPointS2_(QPoint* topleft, QPoint* bottomright) {
   return  new QRect(*topleft, *bottomright);
@@ -44,7 +44,7 @@ void* C_ZN5QRectC2ERK6QPointS2_(QPoint* topleft, QPoint* bottomright) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:62
-// [-2] void QRect(const class QPoint &, const class QSize &)
+// [-2] void QRect(const QPoint &, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QRectC2ERK6QPointRK5QSize(QPoint* topleft, QSize* size) {
   return  new QRect(*topleft, *size);
@@ -189,7 +189,7 @@ void C_ZN5QRect4setYEi(void *this_, int y) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:84
-// [-2] void setTopLeft(const class QPoint &)
+// [-2] void setTopLeft(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect10setTopLeftERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->setTopLeft(*p);
@@ -197,7 +197,7 @@ void C_ZN5QRect10setTopLeftERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:85
-// [-2] void setBottomRight(const class QPoint &)
+// [-2] void setBottomRight(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect14setBottomRightERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->setBottomRight(*p);
@@ -205,7 +205,7 @@ void C_ZN5QRect14setBottomRightERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:86
-// [-2] void setTopRight(const class QPoint &)
+// [-2] void setTopRight(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect11setTopRightERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->setTopRight(*p);
@@ -213,7 +213,7 @@ void C_ZN5QRect11setTopRightERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:87
-// [-2] void setBottomLeft(const class QPoint &)
+// [-2] void setBottomLeft(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect13setBottomLeftERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->setBottomLeft(*p);
@@ -298,7 +298,7 @@ void C_ZN5QRect10moveBottomEi(void *this_, int pos) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:99
-// [-2] void moveTopLeft(const class QPoint &)
+// [-2] void moveTopLeft(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect11moveTopLeftERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->moveTopLeft(*p);
@@ -306,7 +306,7 @@ void C_ZN5QRect11moveTopLeftERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:100
-// [-2] void moveBottomRight(const class QPoint &)
+// [-2] void moveBottomRight(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect15moveBottomRightERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->moveBottomRight(*p);
@@ -314,7 +314,7 @@ void C_ZN5QRect15moveBottomRightERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:101
-// [-2] void moveTopRight(const class QPoint &)
+// [-2] void moveTopRight(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect12moveTopRightERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->moveTopRight(*p);
@@ -322,7 +322,7 @@ void C_ZN5QRect12moveTopRightERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:102
-// [-2] void moveBottomLeft(const class QPoint &)
+// [-2] void moveBottomLeft(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect14moveBottomLeftERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->moveBottomLeft(*p);
@@ -330,7 +330,7 @@ void C_ZN5QRect14moveBottomLeftERK6QPoint(void *this_, QPoint* p) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:103
-// [-2] void moveCenter(const class QPoint &)
+// [-2] void moveCenter(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect10moveCenterERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->moveCenter(*p);
@@ -346,7 +346,7 @@ void C_ZN5QRect9translateEii(void *this_, int dx, int dy) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:106
-// [-2] void translate(const class QPoint &)
+// [-2] void translate(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect9translateERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->translate(*p);
@@ -363,7 +363,7 @@ return new QRect(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:108
-// [16] QRect translated(const class QPoint &)
+// [16] QRect translated(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRect10translatedERK6QPoint(void *this_, QPoint* p) {
   auto rv = ((QRect*)this_)->translated(*p);
@@ -392,7 +392,7 @@ void C_ZN5QRect6moveToEii(void *this_, int x, int t) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:112
-// [-2] void moveTo(const class QPoint &)
+// [-2] void moveTo(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect6moveToERK6QPoint(void *this_, QPoint* p) {
   ((QRect*)this_)->moveTo(*p);
@@ -490,7 +490,7 @@ void C_ZN5QRect9setHeightEi(void *this_, int h) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:128
-// [-2] void setSize(const class QSize &)
+// [-2] void setSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QRect7setSizeERK5QSize(void *this_, QSize* s) {
   ((QRect*)this_)->setSize(*s);
@@ -498,7 +498,7 @@ void C_ZN5QRect7setSizeERK5QSize(void *this_, QSize* s) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:130
-// [16] QRect operator|(const class QRect &)
+// [16] QRect operator|(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRectorERKS_(void *this_, QRect* r) {
   auto rv = ((QRect*)this_)->operator|(*r);
@@ -507,7 +507,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:131
-// [16] QRect operator&(const class QRect &)
+// [16] QRect operator&(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRectanERKS_(void *this_, QRect* r) {
   auto rv = ((QRect*)this_)->operator&(*r);
@@ -516,7 +516,7 @@ return new QRect(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:132
-// [16] QRect & operator|=(const class QRect &)
+// [16] QRect & operator|=(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QRectoRERKS_(void *this_, QRect* r) {
   auto& rv = ((QRect*)this_)->operator|=(*r);
@@ -525,7 +525,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:133
-// [16] QRect & operator&=(const class QRect &)
+// [16] QRect & operator&=(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QRectaNERKS_(void *this_, QRect* r) {
   auto& rv = ((QRect*)this_)->operator&=(*r);
@@ -534,7 +534,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:135
-// [1] bool contains(const class QRect &, _Bool)
+// [1] bool contains(const QRect &, bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QRect8containsERKS_b(void *this_, QRect* r, bool proper) {
   return (bool)((QRect*)this_)->contains(*r, proper);
@@ -542,7 +542,7 @@ bool C_ZNK5QRect8containsERKS_b(void *this_, QRect* r, bool proper) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:136
-// [1] bool contains(const class QPoint &, _Bool)
+// [1] bool contains(const QPoint &, bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QRect8containsERK6QPointb(void *this_, QPoint* p, bool proper) {
   return (bool)((QRect*)this_)->contains(*p, proper);
@@ -558,7 +558,7 @@ bool C_ZNK5QRect8containsEii(void *this_, int x, int y) {
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:138
-// [1] bool contains(int, int, _Bool)
+// [1] bool contains(int, int, bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QRect8containsEiib(void *this_, int x, int y, bool proper) {
   return (bool)((QRect*)this_)->contains(x, y, proper);
@@ -567,7 +567,7 @@ bool C_ZNK5QRect8containsEiib(void *this_, int x, int y, bool proper) {
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qrect.h:139
-// [16] QRect united(const class QRect &)
+// [16] QRect united(const QRect &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRect6unitedERKS_(void *this_, QRect* other) {
@@ -579,7 +579,7 @@ return new QRect(rv);
 // Public inline Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qrect.h:140
-// [16] QRect intersected(const class QRect &)
+// [16] QRect intersected(const QRect &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRect11intersectedERKS_(void *this_, QRect* other) {
@@ -590,7 +590,7 @@ return new QRect(rv);
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:141
-// [1] bool intersects(const class QRect &)
+// [1] bool intersects(const QRect &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QRect10intersectsERKS_(void *this_, QRect* r) {
   return (bool)((QRect*)this_)->intersects(*r);
@@ -599,7 +599,7 @@ bool C_ZNK5QRect10intersectsERKS_(void *this_, QRect* r) {
 // Public inline Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtCore/qrect.h:143
-// [16] QRect marginsAdded(const class QMargins &)
+// [16] QRect marginsAdded(const QMargins &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRect12marginsAddedERK8QMargins(void *this_, QMargins* margins) {
@@ -611,7 +611,7 @@ return new QRect(rv);
 // Public inline Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtCore/qrect.h:144
-// [16] QRect marginsRemoved(const class QMargins &)
+// [16] QRect marginsRemoved(const QMargins &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QRect14marginsRemovedERK8QMargins(void *this_, QMargins* margins) {
@@ -622,7 +622,7 @@ return new QRect(rv);
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:145
-// [16] QRect & operator+=(const class QMargins &)
+// [16] QRect & operator+=(const QMargins &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QRectpLERK8QMargins(void *this_, QMargins* margins) {
   auto& rv = ((QRect*)this_)->operator+=(*margins);
@@ -631,7 +631,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:146
-// [16] QRect & operator-=(const class QMargins &)
+// [16] QRect & operator-=(const QMargins &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QRectmIERK8QMargins(void *this_, QMargins* margins) {
   auto& rv = ((QRect*)this_)->operator-=(*margins);
