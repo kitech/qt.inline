@@ -1,5 +1,6 @@
 #usage:
 # defines: -DANDROID=on, -DMINGW_NOIPBIZ=on, -DWITH_QT_STATIC=on, -DWINARCH=x32
+#          -DUSE_WEBENGINES=on
 project(qt5inline)
 cmake_minimum_required(VERSION 3.0)
 
@@ -56,6 +57,17 @@ find_package(${_QT_STATIC_PREF}Qt5Quick)
 find_package(${_QT_STATIC_PREF}Qt5QuickControls2)
 find_package(${_QT_STATIC_PREF}Qt5QuickWidgets)
 
+# webengines
+if(USE_WEBENGINES)
+find_package(${_QT_STATIC_PREF}Qt5Positioning)
+find_package(${_QT_STATIC_PREF}Qt5WebChannel)
+find_package(${_QT_STATIC_PREF}Qt5WebEngineCore)
+find_package(${_QT_STATIC_PREF}Qt5WebEngine)
+find_package(${_QT_STATIC_PREF}Qt5WebEngineWidgets)
+endif(USE_WEBENGINES)
+
+configure_file(preheaders/qthdrsrc.h.in preheaders/qthdrsrc.h)
+
 # set(qt5_inline_core_srcs "src/core/qobject.cxx")
 # set(qt5_inline_gui_srcs "src/gui/qevent.cxx")
 # set(qt5_inline_widgets_srcs "src/widgets/qwidget.cxx")
@@ -70,17 +82,30 @@ include_directories("./src")
 
 set(all_qt5_inline_srcs "")
 file(GLOB qt5_inline_srcs
-  # src/core/qstring.cxx # for compile test
+  src/core/qstring.cxx # for compile test
   src/core/*.cxx
   src/gui/*.cxx
   src/widgets/*.cxx
+  # qmls
   src/network/*.cxx
   src/qml/*.cxx
   src/quick/*.cxx
-  # src/quicktemplates2/*.cxx
+  src/quicktemplates2/*.cxx
   src/quickcontrols2/*.cxx
   src/quickwidgets/*.cxx
   )
+
+set(qt5_inline_srcs_webengines "")
+if(USE_WEBENGINES)
+  file(GLOB qt5_inline_srcs_webengines
+    # webengines
+    src/positioning/*.cxx
+    src/webchannel/*.cxx
+    src/webenginecore/*.cxx
+    src/webengine/*.cxx
+    src/webenginewidgets/*.cxx
+  )
+endif(USE_WEBENGINES)
 # message(${qt5_inline_srcs})
 message("can you see that?")
 foreach(var ${qt5_inline_srcs})
@@ -90,10 +115,7 @@ endforeach(var)
 
 set(qt5_inline_extra_srcs src/qihotfix.cpp src/qdynslotobject.cpp src/callback_inherit.cpp)
 
-set(all_qt5_inline_srcs
-  ${all_qt5_inline_srcs}
-  ${qt5_inline_extra_srcs}
-  )
+set(all_qt5_inline_srcs ${qt5_inline_srcs_webengines} ${all_qt5_inline_srcs}  ${qt5_inline_extra_srcs})
 
 
 # resolve static ldflags
@@ -116,7 +138,13 @@ if(WITH_QT_STATIC)
 endif(WITH_QT_STATIC)
 
 add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
-target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Core ${_QT_STATIC_PREF}Qt5::Gui ${_QT_STATIC_PREF}Qt5::Widgets ${_QT_STATIC_PREF}Qt5::Network ${_QT_STATIC_PREF}Qt5::Qml ${_QT_STATIC_PREF}Qt5::Quick ${_QT_STATIC_PREF}Qt5::QuickControls2 ${_QT_STATIC_PREF}Qt5::QuickWidgets)
+target_link_libraries(Qt5Inline
+  ${_QT_STATIC_PREF}Qt5::Core ${_QT_STATIC_PREF}Qt5::Gui ${_QT_STATIC_PREF}Qt5::Widgets ${_QT_STATIC_PREF}Qt5::Network
+  ${_QT_STATIC_PREF}Qt5::Qml ${_QT_STATIC_PREF}Qt5::Quick ${_QT_STATIC_PREF}Qt5::QuickControls2 ${_QT_STATIC_PREF}Qt5::QuickWidgets
+  )
+if(USE_WEBENGINES)
+  target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Positioning ${_QT_STATIC_PREF}Qt5::WebChannel ${_QT_STATIC_PREF}Qt5::WebEngineCore ${_QT_STATIC_PREF}Qt5::WebEngine ${_QT_STATIC_PREF}Qt5::WebEngineWidgets)
+endif(USE_WEBENGINES)
 target_link_libraries(Qt5Inline ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
 if(ANDROID)
   target_link_libraries(Qt5Inline log)

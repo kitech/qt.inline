@@ -23,7 +23,7 @@
 #include <QtQuickWidgets>
 
 // webengines
-/* #undef USE_WEBENGINES */
+#cmakedefine USE_WEBENGINES
 #ifdef USE_WEBENGINES
 #include <QtPositioning>
 #include <QtWebChannel>
