@@ -3,7 +3,6 @@
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h
 #ifndef protected
 #define protected public
-#define private public
 #endif
 #include <qwebenginehistory.h>
 #include <QtWebEngineWidgets>
@@ -17,7 +16,6 @@
 
 class Q_DECL_EXPORT MyQWebEngineHistory : public QWebEngineHistory {
 public:
-    virtual ~MyQWebEngineHistory(){}
 };
 
 // Public Visibility=Default Availability=Available

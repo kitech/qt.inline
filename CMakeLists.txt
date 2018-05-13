@@ -24,12 +24,13 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 # set toolchains by cmake definition(s)
 # for android arm build begin, usage: cmake -DANDROID=on .
 if(ANDROID)
+  message("Android build enabled.")
   set(CMAKE_C_COMPILER /opt/andndk16/bin/clang)
   set(CMAKE_CXX_COMPILER /opt/andndk16/bin/clang++)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/sysroot/usr/include")
-  # set(CMAKE_SYSROOT "/home/me/Qt5.9.3/5.9.3/android_armv7/")
+  set(CMAKE_SYSROOT "/home/me/Qt5.10.1/5.10.1/android_armv7/")
   # 这个参数可以设置多个值
-  set(CMAKE_FIND_ROOT_PATH  /home/me/Qt5.10.0/5.10.0/android_armv7/ /home/me/Qt5.10.0/5.10.0/android_armv7/)
+  set(CMAKE_FIND_ROOT_PATH  /home/me/Qt5.10.1/5.10.1/android_armv7/ /home/me/Qt5.10.1/5.10.1/android_armv7/)
   set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=/opt/andndk16/sysroot")
 elseif(MINGW_NOIPBIZ)
   include(tc-mingw.cmake)
@@ -65,6 +66,10 @@ find_package(${_QT_STATIC_PREF}Qt5WebEngineCore)
 find_package(${_QT_STATIC_PREF}Qt5WebEngine)
 find_package(${_QT_STATIC_PREF}Qt5WebEngineWidgets)
 endif(USE_WEBENGINES)
+
+if(ANDROID)
+  find_package(${_QT_STATIC_PREF}Qt5AndroidExtras)
+endif(ANDROID)
 
 configure_file(preheaders/qthdrsrc.h.in preheaders/qthdrsrc.h)
 
@@ -106,6 +111,16 @@ if(USE_WEBENGINES)
     src/webenginewidgets/*.cxx
   )
 endif(USE_WEBENGINES)
+set(qt5_inline_srcs_android "")
+set(qt5_inline_srcs_androidextras "")
+if(ANDROID)
+  file(GLOB qt5_inline_srcs_android
+    src/qtandroid/*.cpp
+    )
+  file(GLOB qt5_inline_srcs_androidextras
+    src/androidextras/*.cxx
+    )
+endif(ANDROID)
 # message(${qt5_inline_srcs})
 message("can you see that?")
 foreach(var ${qt5_inline_srcs})
@@ -116,7 +131,9 @@ endforeach(var)
 set(qt5_inline_extra_srcs src/qihotfix.cpp src/qdynslotobject.cpp src/callback_inherit.cpp)
 
 set(all_qt5_inline_srcs ${qt5_inline_srcs_webengines} ${all_qt5_inline_srcs}  ${qt5_inline_extra_srcs})
-
+if(ANDROID)
+  set(all_qt5_inline_srcs ${all_qt5_inline_srcs} ${qt5_inline_srcs_androidextras} ${qt5_inline_srcs_android})
+endif(ANDROID)
 
 # resolve static ldflags
 # note: the order
@@ -147,6 +164,7 @@ if(USE_WEBENGINES)
 endif(USE_WEBENGINES)
 target_link_libraries(Qt5Inline ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
 if(ANDROID)
+  target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::AndroidExtras)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
 
