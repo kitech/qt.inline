@@ -24,9 +24,17 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 # set toolchains by cmake definition(s)
 # for android arm build begin, usage: cmake -DANDROID=on .
 if(ANDROID)
-  message("Android build enabled.")
-  set(CMAKE_C_COMPILER /opt/andndk16/bin/clang)
-  set(CMAKE_CXX_COMPILER /opt/andndk16/bin/clang++)
+  # switch to gcc for fix now day's ndk17 problem: #3
+  if(EXISTS /opt/andndk16/bin/arm-linux-androideabi-gcc)
+    message("Android arm build enabled.")
+    set(CMAKE_C_COMPILER /opt/andndk16/bin/arm-linux-androideabi-gcc)
+    set(CMAKE_CXX_COMPILER /opt/andndk16/bin/arm-linux-androideabi-g++)
+  else()
+    message("Android x86 build enabled.")
+    set(CMAKE_C_COMPILER /opt/andndk16/bin/i686-linux-android-gcc)
+    set(CMAKE_CXX_COMPILER /opt/andndk16/bin/i686-linux-android-g++)
+  endif()
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/include/c++/4.9.x")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/sysroot/usr/include")
   set(CMAKE_SYSROOT "/home/me/Qt5.10.1/5.10.1/android_armv7/")
   # 这个参数可以设置多个值
@@ -87,7 +95,7 @@ include_directories("./src")
 
 set(all_qt5_inline_srcs "")
 file(GLOB qt5_inline_srcs
-  src/core/qstring.cxx # for compile test
+  # src/core/qstring.cxx # for compile test
   src/core/*.cxx
   src/gui/*.cxx
   src/widgets/*.cxx
