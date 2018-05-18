@@ -31,6 +31,17 @@ int QtAndroid_checkPermission(const QString *permission) {
 }
 
 extern "C" Q_DECL_EXPORT
+void QtAndroid_hideSplashScreen() {
+    QtAndroid::hideSplashScreen();
+}
+
+extern "C" Q_DECL_EXPORT
+void QtAndroid_hideSplashScreen_2(int duration) {
+    QtAndroid::hideSplashScreen(duration);
+}
+
+/*
+extern "C" Q_DECL_EXPORT
 void QtAndroid_runOnAndroidThread(const QtAndroid::Runnable *runnable) {
     QtAndroid::runOnAndroidThread(*runnable);
 }
@@ -38,6 +49,16 @@ void QtAndroid_runOnAndroidThread(const QtAndroid::Runnable *runnable) {
 extern "C" Q_DECL_EXPORT
 void QtAndroid_runOnAndroidThreadSync(const QtAndroid::Runnable *runnable, int timeoutMs) {
     QtAndroid::runOnAndroidThreadSync(*runnable, timeoutMs);
+}
+*/
+extern "C" Q_DECL_EXPORT
+void QtAndroid_runOnAndroidThread(uint64_t cbno, void (*runnable)(uint64_t)) {
+    QtAndroid::runOnAndroidThread([cbno,runnable](){ runnable(cbno); });
+}
+
+extern "C" Q_DECL_EXPORT
+void QtAndroid_runOnAndroidThreadSync(uint64_t cbno, void (*runnable)(uint64_t), int timeoutMs) {
+    QtAndroid::runOnAndroidThreadSync([cbno, runnable](){ runnable(cbno); }, timeoutMs);
 }
 
 extern "C" Q_DECL_EXPORT
