@@ -9,6 +9,7 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 # don't use -std=c++11,
 # use -std=gnu++11 to fix pch error: trigraphs was enabled in PCH file but is currently disabled
 set(CMAKE_CXX_FLAGS "-g -O0 -std=gnu++11")
+set(CMAKE_C_FLAGS "-std=c11")
 #set(CMAKE_C_COMPILER clang)
 #set(CMAKE_CXX_COMPILER clang++)
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
@@ -127,6 +128,7 @@ if(ANDROID)
     )
   file(GLOB qt5_inline_srcs_androidextras
     src/androidextras/*.cxx
+    src/androidextras/*.cpp
     )
 endif(ANDROID)
 # message(${qt5_inline_srcs})
