@@ -1,5 +1,52 @@
 #include <QtAndroidExtras>
 
+/////// heavy wrapper, not just binding
+extern "C" Q_DECL_EXPORT
+void C_AndroidKeepScreenOnRaw(uint64_t ion, uint64_t a1) {
+    bool on = ion == 1 ? true : false;
+
+    QAndroidJniObject activity = QtAndroid::androidActivity();
+    if (activity.isValid()) {
+        QAndroidJniObject window =
+            activity.callObjectMethod("getWindow", "()Landroid/view/Window;");
+
+        if (window.isValid()) {
+            const int FLAG_KEEP_SCREEN_ON = 128;
+            if (on) {
+                window.callMethod<void>("addFlags", "(I)V", FLAG_KEEP_SCREEN_ON);
+            } else {
+                window.callMethod<void>("clearFlags", "(I)V", FLAG_KEEP_SCREEN_ON);
+            }
+        }
+    }
+    QAndroidJniEnvironment env;
+    if (env->ExceptionCheck()) {
+        env->ExceptionClear();
+    }
+}
+
+extern "C" Q_DECL_EXPORT
+void C_AndroidKeepScreenOn(uint64_t ion, uint64_t a1) {
+    QtAndroid::runOnAndroidThread([ion,a1]{
+            C_AndroidKeepScreenOnRaw(ion, a1);
+        });
+}
+
+extern "C" Q_DECL_EXPORT
+void C_AndroidShowToast(uint64_t message_, uint64_t duration) {
+    char *msg = (char*)message_;
+    QString message = QString(msg);
+    free(msg);
+    QAndroidJniObject javaString = QAndroidJniObject::fromString(message);
+    QAndroidJniObject toast = QAndroidJniObject::callStaticObjectMethod("android/widget/Toast", "makeText",
+                                                                        "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;",
+                                                                        QtAndroid::androidActivity().object(),
+                                                                        javaString.object(),
+                                                                        jint(duration));
+    toast.callMethod<void>("show");
+}
+
+///////
 extern "C" Q_DECL_EXPORT
 QAndroidJniObject* QtAndroid_androidActivity() {
     return new QAndroidJniObject(QtAndroid::androidActivity());
@@ -51,9 +98,15 @@ void QtAndroid_runOnAndroidThreadSync(const QtAndroid::Runnable *runnable, int t
     QtAndroid::runOnAndroidThreadSync(*runnable, timeoutMs);
 }
 */
+// depcreated
 extern "C" Q_DECL_EXPORT
 void QtAndroid_runOnAndroidThread(uint64_t cbno, void (*runnable)(uint64_t)) {
     QtAndroid::runOnAndroidThread([cbno,runnable](){ runnable(cbno); });
+}
+
+extern "C" Q_DECL_EXPORT
+void QtAndroid_runOnAndroidThread2(void (*runnable)(uint64_t, uint64_t), uint64_t a0, uint64_t a1) {
+    QtAndroid::runOnAndroidThread([runnable,a0,a1](){ runnable(a0, a1); });
 }
 
 extern "C" Q_DECL_EXPORT
