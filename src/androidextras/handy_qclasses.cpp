@@ -108,6 +108,108 @@ double C_ZNK17QAndroidJniObject10callMethodIdEET_PKcS3_z(void* this_, const char
     return rv;
 }
 
+// static
+extern "C" Q_DECL_EXPORT
+void C_ZN17QAndroidJniObject16callStaticMethodIvEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+                                                         ...) {
+    va_list args;
+    va_start(args, signature);
+    QAndroidJniObject::callStaticMethod<void>(className, methodName, signature, args);
+    va_end(args);
+}
+
+extern "C" Q_DECL_EXPORT
+unsigned char C_ZN17QAndroidJniObject16callStaticMethodIhEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+                                                         ...) {
+    va_list args;
+    va_start(args, signature);
+    unsigned char rv = QAndroidJniObject::callStaticMethod<unsigned char>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+signed char C_ZN17QAndroidJniObject16callStaticMethodIaEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    signed char rv = QAndroidJniObject::callStaticMethod<signed char>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+unsigned short C_ZN17QAndroidJniObject16callStaticMethodItEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    unsigned short rv = QAndroidJniObject::callStaticMethod<unsigned short>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+short C_ZN17QAndroidJniObject16callStaticMethodIsEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    short rv = QAndroidJniObject::callStaticMethod<short>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+int C_ZN17QAndroidJniObject16callStaticMethodIiEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    jint rv = QAndroidJniObject::callStaticMethod<int>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+long long C_ZN17QAndroidJniObject16callStaticMethodIxEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    long long rv = QAndroidJniObject::callStaticMethod<long long>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+float C_ZN17QAndroidJniObject16callStaticMethodIfEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    jfloat rv = QAndroidJniObject::callStaticMethod<float>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+extern "C" Q_DECL_EXPORT
+double C_ZN17QAndroidJniObject16callStaticMethodIdEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
+      ...) {
+    va_list args;
+    va_start(args, signature);
+    jdouble rv = QAndroidJniObject::callStaticMethod<double>(className, methodName, signature, args);
+    va_end(args);
+    return rv;
+}
+
+
+extern "C" Q_DECL_EXPORT
+QAndroidJniObject* C_ZN17QAndroidJniObject22callStaticObjectMethodEPKcS1_S1_z(const char *className, const char *methodName, const char *signature,
+                                                                 ...) {
+    va_list args;
+    va_start(args, signature);
+    QAndroidJniObject rv = QAndroidJniObject::callStaticObjectMethod(className, methodName, signature, args);
+    va_end(args);
+    return new QAndroidJniObject(rv);
+}
+
+
 /////
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QAndroidJniEnvironmentcvP7_JNIEnvEv(void* this_) {

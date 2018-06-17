@@ -67,6 +67,15 @@ void C_ZN9QMimeDataD2Ev(void *this_) {
   delete (QMimeData*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:59
+// [-2] QList<QUrl> urls()
+extern "C" Q_DECL_EXPORT
+QList<QUrl>* C_ZNK9QMimeData4urlsEv(void *this_) {
+  auto rv = ((QMimeData*)this_)->urls();
+return new QList<QUrl>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:61
 // [1] bool hasUrls()
 extern "C" Q_DECL_EXPORT

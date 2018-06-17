@@ -22,6 +22,14 @@ MyQImage() : QImage() {}
 MyQImage(const QSize & size, QImage::Format format) : QImage(size, format) {}
 // void QImage(int, int, QImage::Format)
 MyQImage(int width, int height, QImage::Format format) : QImage(width, height, format) {}
+// void QImage(uchar *, int, int, QImage::Format, QImageCleanupFunction, void *)
+MyQImage(uchar * data, int width, int height, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) : QImage(data, width, height, format, cleanupFunction, cleanupInfo) {}
+// void QImage(const uchar *, int, int, QImage::Format, QImageCleanupFunction, void *)
+MyQImage(const uchar * data, int width, int height, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) : QImage(data, width, height, format, cleanupFunction, cleanupInfo) {}
+// void QImage(uchar *, int, int, int, QImage::Format, QImageCleanupFunction, void *)
+MyQImage(uchar * data, int width, int height, int bytesPerLine, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) : QImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo) {}
+// void QImage(const uchar *, int, int, int, QImage::Format, QImageCleanupFunction, void *)
+MyQImage(const uchar * data, int width, int height, int bytesPerLine, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) : QImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo) {}
 // void QImage(const char *const *)
 MyQImage(char** xpm) : QImage(xpm) {}
 // void QImage(const QString &, const char *)
@@ -223,6 +231,42 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN6QImageC2EiiNS_6FormatE(int width, int height, QImage::Format format) {
   auto _nilp = (MyQImage*)(0);
   return  new MyQImage(width, height, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:139
+// [-2] void QImage(uchar *, int, int, QImage::Format, QImageCleanupFunction, void *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImageC2EPhiiNS_6FormatEPFvPvES2_(uchar * data, int width, int height, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(data, width, height, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:140
+// [-2] void QImage(const uchar *, int, int, QImage::Format, QImageCleanupFunction, void *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImageC2EPKhiiNS_6FormatEPFvPvES3_(const uchar * data, int width, int height, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(data, width, height, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:141
+// [-2] void QImage(uchar *, int, int, int, QImage::Format, QImageCleanupFunction, void *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImageC2EPhiiiNS_6FormatEPFvPvES2_(uchar * data, int width, int height, int bytesPerLine, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:142
+// [-2] void QImage(const uchar *, int, int, int, QImage::Format, QImageCleanupFunction, void *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImageC2EPKhiiiNS_6FormatEPFvPvES3_(const uchar * data, int width, int height, int bytesPerLine, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo);
 }
 
 // Public Visibility=Default Availability=Available

@@ -97,6 +97,7 @@ include_directories("./src")
 set(all_qt5_inline_srcs "")
 file(GLOB qt5_inline_srcs
   # src/core/qstring.cxx # for compile test
+  src/core/qstringlistx.cpp
   src/core/*.cxx
   src/gui/*.cxx
   src/widgets/*.cxx
