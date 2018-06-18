@@ -192,6 +192,18 @@ void C_ZN11QFileDialog9selectUrlERK4QUrl(void *this_, QUrl* url) {
 #endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtWidgets/qfiledialog.h:118
+// [-2] QList<QUrl> selectedUrls()
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+QList<QUrl>* C_ZNK11QFileDialog12selectedUrlsEv(void *this_) {
+  auto rv = ((QFileDialog*)this_)->selectedUrls();
+return new QList<QUrl>(rv);
+}
+#endif // QT_VERSION >= 0x050200
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:120
 // [-2] void setNameFilterDetailsVisible(bool)
 extern "C" Q_DECL_EXPORT
@@ -411,6 +423,18 @@ extern "C" Q_DECL_EXPORT
 bool C_ZNK11QFileDialog15resolveSymlinksEv(void *this_) {
   return (bool)((QFileDialog*)this_)->resolveSymlinks();
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.3
+// /usr/include/qt/QtWidgets/qfiledialog.h:155
+// [-2] QList<QUrl> sidebarUrls()
+#if QT_VERSION >= 0x040300
+extern "C" Q_DECL_EXPORT
+QList<QUrl>* C_ZNK11QFileDialog11sidebarUrlsEv(void *this_) {
+  auto rv = ((QFileDialog*)this_)->sidebarUrls();
+return new QList<QUrl>(rv);
+}
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // since 4.3
@@ -762,6 +786,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QFileDialog16getOpenFileNamesEP7QWidgetRK7QStringS4_S4_PS2_6QFlagsINS_6OptionEE(QWidget * parent, QString* caption, QString* dir, QString* filter, QString * selectedFilter, QFlags<QFileDialog::Option> options) {
   auto rv = QFileDialog::getOpenFileNames(parent, *caption, *dir, *filter, selectedFilter, options);
 return new QStringList(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:258
+// [-2] QList<QUrl> getOpenFileUrls(QWidget *, const QString &, const QUrl &, const QString &, QString *, QFileDialog::Options, const QStringList &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QFileDialog15getOpenFileUrlsEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlagsINS_6OptionEERK11QStringList(QWidget * parent, QString* caption, QUrl* dir, QString* filter, QString * selectedFilter, QFlags<QFileDialog::Option> options, QStringList* supportedSchemes) {
+  auto rv = QFileDialog::getOpenFileUrls(parent, *caption, *dir, *filter, selectedFilter, options, *supportedSchemes);
+/*return rv;*/
 }
 
 //  main block end

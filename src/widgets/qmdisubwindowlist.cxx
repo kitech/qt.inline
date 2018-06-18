@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QMdiSubWindowList
+#ifndef QMDISUBWINDOWLIST_H
 typedef QList<QMdiSubWindow *> QMdiSubWindowList;
+#endif
 #endif
 //  header block end
 

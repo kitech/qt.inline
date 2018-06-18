@@ -7,6 +7,11 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
+#ifndef QJSValueList
+#ifndef QJSVALUELIST_H
+typedef QList<QJSValue> QJSValueList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

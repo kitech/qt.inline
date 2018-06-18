@@ -72,15 +72,6 @@ bool C_ZNK8QGeoPathneERKS_(void *this_, QGeoPath* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:73
-// [8] const QList<QGeoCoordinate> & path()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QGeoPath4pathEv(void *this_) {
-  auto& rv = ((QGeoPath*)this_)->path();
-return new QList<QGeoCoordinate>(rv);
-}
-
-// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopath.h:75
 // [-2] void setWidth(const qreal &)
 extern "C" Q_DECL_EXPORT

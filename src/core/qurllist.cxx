@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QUrlList
+#ifndef QURLLIST_H
 typedef QList<QUrl> QUrlList;
+#endif
 #endif
 //  header block end
 

@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QSizeList
+#ifndef QSIZELIST_H
 typedef QList<QSize> QSizeList;
+#endif
 #endif
 //  header block end
 

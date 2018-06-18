@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QScrollerList
+#ifndef QSCROLLERLIST_H
 typedef QList<QScroller *> QScrollerList;
+#endif
 #endif
 //  header block end
 

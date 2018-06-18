@@ -7,6 +7,11 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
+#ifndef QStringList
+#ifndef QSTRINGLIST_H
+typedef QList<QString> QStringList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QGraphicsWidgetList
+#ifndef QGRAPHICSWIDGETLIST_H
 typedef QList<QGraphicsWidget *> QGraphicsWidgetList;
+#endif
 #endif
 //  header block end
 

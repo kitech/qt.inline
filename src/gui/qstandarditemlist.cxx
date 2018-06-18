@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QStandardItemList
+#ifndef QSTANDARDITEMLIST_H
 typedef QList<QStandardItem *> QStandardItemList;
+#endif
 #endif
 //  header block end
 

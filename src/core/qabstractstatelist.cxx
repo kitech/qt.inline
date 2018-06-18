@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QAbstractStateList
+#ifndef QABSTRACTSTATELIST_H
 typedef QList<QAbstractState *> QAbstractStateList;
+#endif
 #endif
 //  header block end
 

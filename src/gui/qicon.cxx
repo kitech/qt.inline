@@ -228,6 +228,15 @@ void C_ZN5QIcon7addFileERK7QStringRK5QSizeNS_4ModeENS_5StateE(void *this_, QStri
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:109
+// [8] QList<QSize> availableSizes(QIcon::Mode, QIcon::State)
+extern "C" Q_DECL_EXPORT
+QList<QSize>* C_ZNK5QIcon14availableSizesENS_4ModeENS_5StateE(void *this_, QIcon::Mode mode, QIcon::State state) {
+  auto rv = ((QIcon*)this_)->availableSizes(mode, state);
+return new QList<QSize>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qicon.h:111
 // [-2] void setIsMask(bool)

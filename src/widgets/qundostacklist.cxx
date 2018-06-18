@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QUndoStackList
+#ifndef QUNDOSTACKLIST_H
 typedef QList<QUndoStack *> QUndoStackList;
+#endif
 #endif
 //  header block end
 

@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QListWidgetItemList
+#ifndef QLISTWIDGETITEMLIST_H
 typedef QList<QListWidgetItem *> QListWidgetItemList;
+#endif
 #endif
 //  header block end
 

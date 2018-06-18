@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QKeySequenceList
+#ifndef QKEYSEQUENCELIST_H
 typedef QList<QKeySequence> QKeySequenceList;
+#endif
 #endif
 //  header block end
 

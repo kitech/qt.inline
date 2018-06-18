@@ -7,6 +7,11 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
+#ifndef QWindowList
+#ifndef QWINDOWLIST_H
+typedef QList<QWindow *> QWindowList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

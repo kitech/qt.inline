@@ -114,6 +114,18 @@ bool C_ZNK11QIconEngine5writeER11QDataStream(void *this_, QDataStream* out) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtGui/qiconengine.h:77
+// [8] QList<QSize> availableSizes(QIcon::Mode, QIcon::State)
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+QList<QSize>* C_ZNK11QIconEngine14availableSizesEN5QIcon4ModeENS0_5StateE(void *this_, QIcon::Mode mode, QIcon::State state) {
+  auto rv = ((QIconEngine*)this_)->availableSizes(mode, state);
+return new QList<QSize>(rv);
+}
+#endif // QT_VERSION >= 0x040500
+
+// Public virtual Visibility=Default Availability=Available
 // since 4.7
 // /usr/include/qt/QtGui/qiconengine.h:80
 // [8] QString iconName()

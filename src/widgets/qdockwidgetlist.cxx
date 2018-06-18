@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QDockWidgetList
+#ifndef QDOCKWIDGETLIST_H
 typedef QList<QDockWidget *> QDockWidgetList;
+#endif
 #endif
 //  header block end
 

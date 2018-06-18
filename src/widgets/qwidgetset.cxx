@@ -7,6 +7,11 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
+#ifndef QWidgetList
+#ifndef QWIDGETLIST_H
+typedef QList<QWidget *> QWidgetList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

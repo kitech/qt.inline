@@ -72,15 +72,6 @@ bool C_ZNK11QGeoPolygonneERKS_(void *this_, QGeoPolygon* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopolygon.h:72
-// [8] const QList<QGeoCoordinate> & path()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QGeoPolygon4pathEv(void *this_) {
-  auto& rv = ((QGeoPolygon*)this_)->path();
-return new QList<QGeoCoordinate>(rv);
-}
-
-// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopolygon.h:74
 // [-2] void translate(double, double)
 extern "C" Q_DECL_EXPORT

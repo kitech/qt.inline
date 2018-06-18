@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QPolygonFList
+#ifndef QPOLYGONFLIST_H
 typedef QList<QPolygonF> QPolygonFList;
+#endif
 #endif
 //  header block end
 

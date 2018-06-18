@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QGestureList
+#ifndef QGESTURELIST_H
 typedef QList<QGesture *> QGestureList;
+#endif
 #endif
 //  header block end
 

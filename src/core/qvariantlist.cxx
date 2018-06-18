@@ -7,6 +7,11 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
+#ifndef QVariantList
+#ifndef QVARIANTLIST_H
+typedef QList<QVariant> QVariantList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

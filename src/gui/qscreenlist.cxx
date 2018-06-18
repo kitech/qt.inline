@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QScreenList
+#ifndef QSCREENLIST_H
 typedef QList<QScreen *> QScreenList;
+#endif
 #endif
 //  header block end
 

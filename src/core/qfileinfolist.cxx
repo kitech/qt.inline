@@ -7,6 +7,11 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
+#ifndef QFileInfoList
+#ifndef QFILEINFOLIST_H
+typedef QList<QFileInfo> QFileInfoList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

@@ -439,6 +439,15 @@ return new QStringList(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:361
+// [-2] QList<QUrl> fromStringList(const QStringList &, QUrl::ParsingMode)
+extern "C" Q_DECL_EXPORT
+void C_ZN4QUrl14fromStringListERK11QStringListNS_11ParsingModeE(QStringList* uris, QUrl::ParsingMode mode) {
+  auto rv = QUrl::fromStringList(*uris, mode);
+/*return rv;*/
+}
+
+// Public static Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qurl.h:363
 // [-2] void setIdnWhitelist(const QStringList &)

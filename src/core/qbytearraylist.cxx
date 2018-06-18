@@ -7,6 +7,11 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
+#ifndef QByteArrayList
+#ifndef QBYTEARRAYLIST_H
+typedef QList<QByteArray> QByteArrayList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

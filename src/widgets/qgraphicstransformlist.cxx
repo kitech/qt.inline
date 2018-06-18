@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QGraphicsTransformList
+#ifndef QGRAPHICSTRANSFORMLIST_H
 typedef QList<QGraphicsTransform *> QGraphicsTransformList;
+#endif
 #endif
 //  header block end
 

@@ -51,15 +51,6 @@ Qt::TouchPointStates C_ZNK11QTouchEvent16touchPointStatesEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:955
-// [8] const QList<QTouchEvent::TouchPoint> & touchPoints()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QTouchEvent11touchPointsEv(void *this_) {
-  auto& rv = ((QTouchEvent*)this_)->touchPoints();
-return new QList<QTouchEvent::TouchPoint>(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:956
 // [8] QTouchDevice * device()
 extern "C" Q_DECL_EXPORT

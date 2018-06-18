@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QGlyphRunList
+#ifndef QGLYPHRUNLIST_H
 typedef QList<QGlyphRun> QGlyphRunList;
+#endif
 #endif
 //  header block end
 

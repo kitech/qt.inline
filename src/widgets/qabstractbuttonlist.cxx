@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QAbstractButtonList
+#ifndef QABSTRACTBUTTONLIST_H
 typedef QList<QAbstractButton *> QAbstractButtonList;
+#endif
 #endif
 //  header block end
 

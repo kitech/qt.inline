@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QActionList
+#ifndef QACTIONLIST_H
 typedef QList<QAction *> QActionList;
+#endif
 #endif
 //  header block end
 

@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QTextBlockList
+#ifndef QTEXTBLOCKLIST_H
 typedef QList<QTextBlock> QTextBlockList;
+#endif
 #endif
 //  header block end
 

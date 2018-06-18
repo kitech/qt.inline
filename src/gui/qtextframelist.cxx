@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QTextFrameList
+#ifndef QTEXTFRAMELIST_H
 typedef QList<QTextFrame *> QTextFrameList;
+#endif
 #endif
 //  header block end
 

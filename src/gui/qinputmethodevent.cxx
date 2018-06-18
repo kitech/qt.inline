@@ -44,15 +44,6 @@ void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, QString*
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:560
-// [8] const QList<QInputMethodEvent::Attribute> & attributes()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QInputMethodEvent10attributesEv(void *this_) {
-  auto& rv = ((QInputMethodEvent*)this_)->attributes();
-return new QList<QInputMethodEvent::Attribute>(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:561
 // [8] const QString & preeditString()
 extern "C" Q_DECL_EXPORT

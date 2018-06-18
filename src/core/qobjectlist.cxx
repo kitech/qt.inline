@@ -7,6 +7,11 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
+#ifndef QObjectList
+#ifndef QOBJECTLIST_H
+typedef QList<QObject *> QObjectList;
+#endif
+#endif
 //  header block end
 
 //  body block begin

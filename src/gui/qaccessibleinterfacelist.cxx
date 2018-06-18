@@ -8,7 +8,9 @@
 #include "callback_inherit.h"
 
 #ifndef QAccessibleInterfaceList
+#ifndef QACCESSIBLEINTERFACELIST_H
 typedef QList<QAccessibleInterface *> QAccessibleInterfaceList;
+#endif
 #endif
 //  header block end
 

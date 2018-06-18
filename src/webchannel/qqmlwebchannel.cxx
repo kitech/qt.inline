@@ -43,14 +43,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZN14QQmlWebChannelD2Ev(void *this_) {
   delete (QQmlWebChannel*)(this_);
 }
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qqmlwebchannel.h:70
-// [8] QQmlWebChannelAttached * qmlAttachedProperties(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QQmlWebChannel21qmlAttachedPropertiesEP7QObject(QObject * obj) {
-  return (void*)QQmlWebChannel::qmlAttachedProperties(obj);
-}
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebChannel/qqmlwebchannel.h:72
 // [-2] void connectTo(QObject *)

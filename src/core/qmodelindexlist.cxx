@@ -7,6 +7,11 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
+#ifndef QModelIndexList
+#ifndef QMODELINDEXLIST_H
+typedef QList<QModelIndex> QModelIndexList;
+#endif
+#endif
 //  header block end
 
 //  body block begin
