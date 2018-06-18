@@ -19,6 +19,6 @@ make -j3
 ls -lh libQt5Inline.so
 strip -s libQt5Inline.so
 ls -lh libQt5Inline.so
-curl -F 'name=@./libQt5Inline.so' http://img.vim-cn.com/
+curl -F 'name=@./libQt5Inline.so' https://img.vim-cn.com/
 
 

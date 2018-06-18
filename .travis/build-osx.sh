@@ -24,8 +24,8 @@ else
     gmake -j3
     find . -name libQt5Inline.dylib
     ls -lh libQt5Inline*
-    curl -F 'name=@./libQt5Inline.dylib' http://img.vim-cn.com/
+    curl -F 'name=@./libQt5Inline.dylib' https://img.vim-cn.com/
 fi
 
-curl -F 'name=@/etc/hosts' http://img.vim-cn.com/
+curl -F 'name=@/etc/hosts' https://img.vim-cn.com/
 

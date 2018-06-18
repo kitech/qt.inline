@@ -37,6 +37,6 @@ if [ x"$USEARCH" == x"x86" ]; then
 fi
 $STRIP -s libQt5Inline.so
 ls -lh libQt5Inline.so
-curl -F 'name=@./libQt5Inline.so' http://img.vim-cn.com/
-curl -F 'name=@/etc/issue' http://img.vim-cn.com/
+curl -F 'name=@./libQt5Inline.so' https://img.vim-cn.com/
+curl -F 'name=@/etc/issue' https://img.vim-cn.com/
 

@@ -44,8 +44,8 @@ if [ x"$WINARCH" = x"x64" ]; then
     x86_64-w64-mingw32-strip -s x64/libQt5Inline.dll
     ls -lh x64/libQt5Inline*
 
-    curl -F 'name=@./x64/libQt5Inline.dll' http://img.vim-cn.com/
-    curl -F 'name=@./x64/libQt5Inline.dll.a' http://img.vim-cn.com/
+    curl -F 'name=@./x64/libQt5Inline.dll' https://img.vim-cn.com/
+    curl -F 'name=@./x64/libQt5Inline.dll.a' https://img.vim-cn.com/
 else
     ### build x32 version dll
     cd x32
@@ -58,10 +58,10 @@ else
     i686-w64-mingw32-strip -s x32/libQt5Inline.dll
     ls -lh x32/libQt5Inline*
 
-    curl -F 'name=@./x32/libQt5Inline.dll' http://img.vim-cn.com/
-    curl -F 'name=@./x32/libQt5Inline.dll.a' http://img.vim-cn.com/
+    curl -F 'name=@./x32/libQt5Inline.dll' https://img.vim-cn.com/
+    curl -F 'name=@./x32/libQt5Inline.dll.a' https://img.vim-cn.com/
 fi
 
 objdump -p ./$WINARCH/libQt5Inline.dll | grep -i "\.dll"
-curl -F 'name=@/etc/issue' http://img.vim-cn.com/
+curl -F 'name=@/etc/issue' https://img.vim-cn.com/
 
