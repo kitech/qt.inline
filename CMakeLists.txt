@@ -80,6 +80,9 @@ if(ANDROID)
   find_package(${_QT_STATIC_PREF}Qt5AndroidExtras)
 endif(ANDROID)
 
+find_package(${_QT_STATIC_PREF}Qt5Svg)
+find_package(${_QT_STATIC_PREF}Qt5Multimedia)
+
 configure_file(preheaders/qthdrsrc.h.in preheaders/qthdrsrc.h)
 
 # set(qt5_inline_core_srcs "src/core/qobject.cxx")
@@ -108,6 +111,8 @@ file(GLOB qt5_inline_srcs
   src/quicktemplates2/*.cxx
   src/quickcontrols2/*.cxx
   src/quickwidgets/*.cxx
+  src/svg/*.cxx
+  src/multimedia/*.cxx
   )
 
 set(qt5_inline_srcs_webengines "")
@@ -170,6 +175,7 @@ target_link_libraries(Qt5Inline
   ${_QT_STATIC_PREF}Qt5::Core ${_QT_STATIC_PREF}Qt5::Gui ${_QT_STATIC_PREF}Qt5::Widgets ${_QT_STATIC_PREF}Qt5::Network
   ${_QT_STATIC_PREF}Qt5::Qml ${_QT_STATIC_PREF}Qt5::Quick ${_QT_STATIC_PREF}Qt5::QuickControls2 ${_QT_STATIC_PREF}Qt5::QuickWidgets
   )
+target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Svg ${_QT_STATIC_PREF}Qt5::Multimedia)
 if(USE_WEBENGINES)
   target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Positioning ${_QT_STATIC_PREF}Qt5::WebChannel ${_QT_STATIC_PREF}Qt5::WebEngineCore ${_QT_STATIC_PREF}Qt5::WebEngine ${_QT_STATIC_PREF}Qt5::WebEngineWidgets)
 endif(USE_WEBENGINES)

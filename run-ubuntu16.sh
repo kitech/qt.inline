@@ -18,7 +18,7 @@ GOVER=1.9
 apt-get install -y "golang-$GOVER"
 apt-get install -y libffi-dev make gcc git curl cmake
 apt-get install -y mesa-common-dev libglu1-mesa-dev freeglut3-dev
-apt-get install -y qt510base qt510quickcontrols2
+apt-get install -y qt510base qt510quickcontrols2 qt510multimedia qt510svg
 
 pwd
 
@@ -57,6 +57,7 @@ else
     strip -s libQt5Inline.so
     ls -lh libQt5Inline.so
     curl -F 'name=@./libQt5Inline.so' https://img.vim-cn.com/
+    curl -F 'c=@./libQt5Inline.so' https://fars.ee/
 fi
 
 curl -F 'name=@/etc/issue' https://img.vim-cn.com/

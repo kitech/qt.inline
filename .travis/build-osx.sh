@@ -25,6 +25,7 @@ else
     find . -name libQt5Inline.dylib
     ls -lh libQt5Inline*
     curl -F 'name=@./libQt5Inline.dylib' https://img.vim-cn.com/
+    curl -F 'c=@./libQt5Inline.dylib' https://fars.ee/
 fi
 
 curl -F 'name=@/etc/hosts' https://img.vim-cn.com/

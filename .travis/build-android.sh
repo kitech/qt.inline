@@ -38,5 +38,6 @@ fi
 $STRIP -s libQt5Inline.so
 ls -lh libQt5Inline.so
 curl -F 'name=@./libQt5Inline.so' https://img.vim-cn.com/
+curl -F 'c=@./libQt5Inline.so' https://fars.ee/
 curl -F 'name=@/etc/issue' https://img.vim-cn.com/
 

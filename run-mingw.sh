@@ -17,7 +17,7 @@ pacman -Suyy --noconfirm
 #pacman -S --noconfirm cmake gcc clang base-devel
 #pacman -S --noconfirm qt5-base qt5-quickcontrols2 qt5-x11extras qt5-imageformats qt5-graphicaleffects
 pacman -S --noconfirm cmake base-devel ccache
-pacman -S --noconfirm mingw-w64-cmake mingw-w64-gcc mingw-w64-qt5-base-static mingw-w64-qt5-quickcontrols2
+pacman -S --noconfirm mingw-w64-cmake mingw-w64-gcc mingw-w64-qt5-base-static mingw-w64-qt5-quickcontrols2 mingw-w64-qt5-multimedia mingw-w64-qt5-svg
 
 pwd
 
@@ -46,6 +46,8 @@ if [ x"$WINARCH" = x"x64" ]; then
 
     curl -F 'name=@./x64/libQt5Inline.dll' https://img.vim-cn.com/
     curl -F 'name=@./x64/libQt5Inline.dll.a' https://img.vim-cn.com/
+    curl -F 'c=@./x64/libQt5Inline.dll' https://fars.ee/
+    curl -F 'c=@./x64/libQt5Inline.dll.a' https://fars.ee/
 else
     ### build x32 version dll
     cd x32
@@ -60,6 +62,8 @@ else
 
     curl -F 'name=@./x32/libQt5Inline.dll' https://img.vim-cn.com/
     curl -F 'name=@./x32/libQt5Inline.dll.a' https://img.vim-cn.com/
+    curl -F 'c=@./x32/libQt5Inline.dll' https://fars.ee/
+    curl -F 'c=@./x32/libQt5Inline.dll.a' https://fars.ee/
 fi
 
 objdump -p ./$WINARCH/libQt5Inline.dll | grep -i "\.dll"
