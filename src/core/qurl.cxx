@@ -442,9 +442,9 @@ return new QStringList(rv);
 // /usr/include/qt/QtCore/qurl.h:361
 // [-2] QList<QUrl> fromStringList(const QStringList &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
-void C_ZN4QUrl14fromStringListERK11QStringListNS_11ParsingModeE(QStringList* uris, QUrl::ParsingMode mode) {
+QList<QUrl>* C_ZN4QUrl14fromStringListERK11QStringListNS_11ParsingModeE(QStringList* uris, QUrl::ParsingMode mode) {
   auto rv = QUrl::fromStringList(*uris, mode);
-/*return rv;*/
+return new QList<QUrl>(rv);
 }
 
 // Public static Visibility=Default Availability=Available

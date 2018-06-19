@@ -50,9 +50,9 @@ void C_ZN17QAndroidJniObjectD2Ev(void *this_) {
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h:66
 // [8] jobject object()
 extern "C" Q_DECL_EXPORT
-void C_ZNK17QAndroidJniObject6objectEv(void *this_) {
+jobject C_ZNK17QAndroidJniObject6objectEv(void *this_) {
   auto rv = ((QAndroidJniObject*)this_)->object();
-/*return rv;*/
+return rv;
 }
 
 // Public Visibility=Default Availability=Available

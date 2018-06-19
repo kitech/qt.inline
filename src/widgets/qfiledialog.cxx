@@ -792,9 +792,9 @@ return new QStringList(rv);
 // /usr/include/qt/QtWidgets/qfiledialog.h:258
 // [-2] QList<QUrl> getOpenFileUrls(QWidget *, const QString &, const QUrl &, const QString &, QString *, QFileDialog::Options, const QStringList &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QFileDialog15getOpenFileUrlsEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlagsINS_6OptionEERK11QStringList(QWidget * parent, QString* caption, QUrl* dir, QString* filter, QString * selectedFilter, QFlags<QFileDialog::Option> options, QStringList* supportedSchemes) {
+QList<QUrl>* C_ZN11QFileDialog15getOpenFileUrlsEP7QWidgetRK7QStringRK4QUrlS4_PS2_6QFlagsINS_6OptionEERK11QStringList(QWidget * parent, QString* caption, QUrl* dir, QString* filter, QString * selectedFilter, QFlags<QFileDialog::Option> options, QStringList* supportedSchemes) {
   auto rv = QFileDialog::getOpenFileUrls(parent, *caption, *dir, *filter, selectedFilter, options, *supportedSchemes);
-/*return rv;*/
+return new QList<QUrl>(rv);
 }
 
 //  main block end
