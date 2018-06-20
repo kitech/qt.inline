@@ -13,11 +13,6 @@
 
 //  main block begin
 
-class Q_DECL_EXPORT MyQCameraImageProcessing : public QCameraImageProcessing {
-public:
-  virtual ~MyQCameraImageProcessing() {}
-};
-
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:62
 // [8] const QMetaObject * metaObject()
@@ -181,9 +176,4 @@ bool C_ZNK22QCameraImageProcessing22isColorFilterSupportedENS_11ColorFilterE(voi
   return (bool)((QCameraImageProcessing*)this_)->isColorFilterSupported(filter);
 }
 
-
-extern "C" Q_DECL_EXPORT
-void C_ZN22QCameraImageProcessingD2Ev(void *this_) {
-  delete (QCameraImageProcessing*)(this_);
-}
 //  main block end

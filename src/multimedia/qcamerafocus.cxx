@@ -13,11 +13,6 @@
 
 //  main block begin
 
-class Q_DECL_EXPORT MyQCameraFocus : public QCameraFocus {
-public:
-  virtual ~MyQCameraFocus() {}
-};
-
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerafocus.h:96
 // [8] const QMetaObject * metaObject()
@@ -189,9 +184,4 @@ void C_ZN12QCameraFocus25maximumDigitalZoomChangedEd(void *this_, qreal arg0) {
   ((QCameraFocus*)this_)->maximumDigitalZoomChanged(arg0);
 }
 
-
-extern "C" Q_DECL_EXPORT
-void C_ZN12QCameraFocusD2Ev(void *this_) {
-  delete (QCameraFocus*)(this_);
-}
 //  main block end

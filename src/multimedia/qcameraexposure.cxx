@@ -13,11 +13,6 @@
 
 //  main block begin
 
-class Q_DECL_EXPORT MyQCameraExposure : public QCameraExposure {
-public:
-  virtual ~MyQCameraExposure() {}
-};
-
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraexposure.h:54
 // [8] const QMetaObject * metaObject()
@@ -300,9 +295,4 @@ void C_ZN15QCameraExposure27exposureCompensationChangedEd(void *this_, qreal arg
   ((QCameraExposure*)this_)->exposureCompensationChanged(arg0);
 }
 
-
-extern "C" Q_DECL_EXPORT
-void C_ZN15QCameraExposureD2Ev(void *this_) {
-  delete (QCameraExposure*)(this_);
-}
 //  main block end
