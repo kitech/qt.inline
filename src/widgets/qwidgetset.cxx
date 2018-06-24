@@ -16,14 +16,14 @@ typedef QList<QWidget *> QWidgetList;
 
 //  body block begin
 // [-2] void swap(QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_swap_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_swap_0()
      ((QWidgetSet*)this_)->swap(*other);
 }
 
 // [1] bool operator==(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_operator_equal_equal_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_equal_equal_0()
     auto rv =  ((QWidgetSet*)this_)->operator==(*other);
@@ -31,7 +31,7 @@ bool C_QWidgetSet_operator_equal_equal_0(void* this_ , QWidgetSet* other) {
 }
 
 // [1] bool operator!=(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_operator_not_equal_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_not_equal_0()
     auto rv =  ((QWidgetSet*)this_)->operator!=(*other);
@@ -39,7 +39,7 @@ bool C_QWidgetSet_operator_not_equal_0(void* this_ , QWidgetSet* other) {
 }
 
 // [4] int size()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QWidgetSet_size_0(void* this_ ) {
     // QWidgetSet_size_0()
     auto rv =  ((QWidgetSet*)this_)->size();
@@ -47,7 +47,7 @@ int C_QWidgetSet_size_0(void* this_ ) {
 }
 
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_isEmpty_0(void* this_ ) {
     // QWidgetSet_isEmpty_0()
     auto rv =  ((QWidgetSet*)this_)->isEmpty();
@@ -55,7 +55,7 @@ bool C_QWidgetSet_isEmpty_0(void* this_ ) {
 }
 
 // [4] int capacity()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QWidgetSet_capacity_0(void* this_ ) {
     // QWidgetSet_capacity_0()
     auto rv =  ((QWidgetSet*)this_)->capacity();
@@ -63,28 +63,28 @@ int C_QWidgetSet_capacity_0(void* this_ ) {
 }
 
 // [-2] void reserve(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_reserve_0(void* this_ , int size) {
     // QWidgetSet_reserve_0()
      ((QWidgetSet*)this_)->reserve(size);
 }
 
 // [-2] void squeeze()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_squeeze_0(void* this_ ) {
     // QWidgetSet_squeeze_0()
      ((QWidgetSet*)this_)->squeeze();
 }
 
 // [-2] void detach()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_detach_0(void* this_ ) {
     // QWidgetSet_detach_0()
      ((QWidgetSet*)this_)->detach();
 }
 
 // [1] bool isDetached()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_isDetached_0(void* this_ ) {
     // QWidgetSet_isDetached_0()
     auto rv =  ((QWidgetSet*)this_)->isDetached();
@@ -92,21 +92,21 @@ bool C_QWidgetSet_isDetached_0(void* this_ ) {
 }
 
 // [-2] void setSharable(bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_setSharable_0(void* this_ , bool sharable) {
     // QWidgetSet_setSharable_0()
      ((QWidgetSet*)this_)->setSharable(sharable);
 }
 
 // [-2] void clear()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_clear_0(void* this_ ) {
     // QWidgetSet_clear_0()
      ((QWidgetSet*)this_)->clear();
 }
 
 // [1] bool remove(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_remove_0(void* this_ , QWidget * value) {
     // QWidgetSet_remove_0()
     auto rv =  ((QWidgetSet*)this_)->remove(value);
@@ -114,7 +114,7 @@ bool C_QWidgetSet_remove_0(void* this_ , QWidget * value) {
 }
 
 // [1] bool contains(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_contains_0(void* this_ , QWidget * value) {
     // QWidgetSet_contains_0()
     auto rv =  ((QWidgetSet*)this_)->contains(value);
@@ -122,7 +122,7 @@ bool C_QWidgetSet_contains_0(void* this_ , QWidget * value) {
 }
 
 // [1] bool contains(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_contains_1(void* this_ , QWidgetSet* set) {
     // QWidgetSet_contains_1()
     auto rv =  ((QWidgetSet*)this_)->contains(*set);
@@ -130,7 +130,7 @@ bool C_QWidgetSet_contains_1(void* this_ , QWidgetSet* set) {
 }
 
 // [-3] QSet::iterator begin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::iterator* C_QWidgetSet_begin_0(void* this_ ) {
     // QWidgetSet_begin_0()
     auto rv =  ((QWidgetSet*)this_)->begin();
@@ -138,7 +138,7 @@ QWidgetSet::iterator* C_QWidgetSet_begin_0(void* this_ ) {
 }
 
 // [-3] QSet::iterator end()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::iterator* C_QWidgetSet_end_0(void* this_ ) {
     // QWidgetSet_end_0()
     auto rv =  ((QWidgetSet*)this_)->end();
@@ -146,7 +146,7 @@ QWidgetSet::iterator* C_QWidgetSet_end_0(void* this_ ) {
 }
 
 // [-3] QSet::reverse_iterator rbegin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::reverse_iterator* C_QWidgetSet_rbegin_0(void* this_ ) {
     // QWidgetSet_rbegin_0()
     auto rv =  ((QWidgetSet*)this_)->rbegin();
@@ -154,7 +154,7 @@ QWidgetSet::reverse_iterator* C_QWidgetSet_rbegin_0(void* this_ ) {
 }
 
 // [-3] QSet::reverse_iterator rend()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::reverse_iterator* C_QWidgetSet_rend_0(void* this_ ) {
     // QWidgetSet_rend_0()
     auto rv =  ((QWidgetSet*)this_)->rend();
@@ -162,7 +162,7 @@ QWidgetSet::reverse_iterator* C_QWidgetSet_rend_0(void* this_ ) {
 }
 
 // [-3] QSet::iterator erase(QSet::iterator)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::iterator* C_QWidgetSet_erase_0(void* this_ , QWidgetSet::iterator* i) {
     // QWidgetSet_erase_0()
     auto rv =  ((QWidgetSet*)this_)->erase(*i);
@@ -170,7 +170,7 @@ QWidgetSet::iterator* C_QWidgetSet_erase_0(void* this_ , QWidgetSet::iterator* i
 }
 
 // [-3] QSet::iterator erase(QSet::const_iterator)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::iterator* C_QWidgetSet_erase_1(void* this_ , QWidgetSet::const_iterator* i) {
     // QWidgetSet_erase_1()
     auto rv =  ((QWidgetSet*)this_)->erase(*i);
@@ -178,7 +178,7 @@ QWidgetSet::iterator* C_QWidgetSet_erase_1(void* this_ , QWidgetSet::const_itera
 }
 
 // [4] int count()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QWidgetSet_count_0(void* this_ ) {
     // QWidgetSet_count_0()
     auto rv =  ((QWidgetSet*)this_)->count();
@@ -186,7 +186,7 @@ int C_QWidgetSet_count_0(void* this_ ) {
 }
 
 // [-3] QSet::iterator insert(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::iterator* C_QWidgetSet_insert_0(void* this_ , QWidget * value) {
     // QWidgetSet_insert_0()
     auto rv =  ((QWidgetSet*)this_)->insert(value);
@@ -194,7 +194,7 @@ QWidgetSet::iterator* C_QWidgetSet_insert_0(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet::iterator find(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet::iterator* C_QWidgetSet_find_0(void* this_ , QWidget * value) {
     // QWidgetSet_find_0()
     auto rv =  ((QWidgetSet*)this_)->find(value);
@@ -202,7 +202,7 @@ QWidgetSet::iterator* C_QWidgetSet_find_0(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet<T> & unite(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_unite_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_unite_0()
     auto rv =  ((QWidgetSet*)this_)->unite(*other);
@@ -210,7 +210,7 @@ QWidgetSet* C_QWidgetSet_unite_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> & intersect(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_intersect_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_intersect_0()
     auto rv =  ((QWidgetSet*)this_)->intersect(*other);
@@ -218,7 +218,7 @@ QWidgetSet* C_QWidgetSet_intersect_0(void* this_ , QWidgetSet* other) {
 }
 
 // [1] bool intersects(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_intersects_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_intersects_0()
     auto rv =  ((QWidgetSet*)this_)->intersects(*other);
@@ -226,7 +226,7 @@ bool C_QWidgetSet_intersects_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> & subtract(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_subtract_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_subtract_0()
     auto rv =  ((QWidgetSet*)this_)->subtract(*other);
@@ -234,7 +234,7 @@ QWidgetSet* C_QWidgetSet_subtract_0(void* this_ , QWidgetSet* other) {
 }
 
 // [1] bool empty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QWidgetSet_empty_0(void* this_ ) {
     // QWidgetSet_empty_0()
     auto rv =  ((QWidgetSet*)this_)->empty();
@@ -242,7 +242,7 @@ bool C_QWidgetSet_empty_0(void* this_ ) {
 }
 
 // [-3] QSet<T> & operator<<(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_left_shift_0(void* this_ , QWidget * value) {
     // QWidgetSet_operator_left_shift_0()
     auto rv =  ((QWidgetSet*)this_)->operator<<(value);
@@ -250,7 +250,7 @@ QWidgetSet* C_QWidgetSet_operator_left_shift_0(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet<T> & operator|=(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_or_equal_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_or_equal_0()
     auto rv =  ((QWidgetSet*)this_)->operator|=(*other);
@@ -258,7 +258,7 @@ QWidgetSet* C_QWidgetSet_operator_or_equal_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> & operator|=(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_or_equal_1(void* this_ , QWidget * value) {
     // QWidgetSet_operator_or_equal_1()
     auto rv =  ((QWidgetSet*)this_)->operator|=(value);
@@ -266,7 +266,7 @@ QWidgetSet* C_QWidgetSet_operator_or_equal_1(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet<T> & operator&=(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_and_equal_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_and_equal_0()
     auto rv =  ((QWidgetSet*)this_)->operator&=(*other);
@@ -274,7 +274,7 @@ QWidgetSet* C_QWidgetSet_operator_and_equal_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> & operator&=(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_and_equal_1(void* this_ , QWidget * value) {
     // QWidgetSet_operator_and_equal_1()
     auto rv =  ((QWidgetSet*)this_)->operator&=(value);
@@ -282,7 +282,7 @@ QWidgetSet* C_QWidgetSet_operator_and_equal_1(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet<T> & operator+=(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_add_equal_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_add_equal_0()
     auto rv =  ((QWidgetSet*)this_)->operator+=(*other);
@@ -290,7 +290,7 @@ QWidgetSet* C_QWidgetSet_operator_add_equal_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> & operator+=(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_add_equal_1(void* this_ , QWidget * value) {
     // QWidgetSet_operator_add_equal_1()
     auto rv =  ((QWidgetSet*)this_)->operator+=(value);
@@ -298,7 +298,7 @@ QWidgetSet* C_QWidgetSet_operator_add_equal_1(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet<T> & operator-=(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_minus_equal_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_minus_equal_0()
     auto rv =  ((QWidgetSet*)this_)->operator-=(*other);
@@ -306,7 +306,7 @@ QWidgetSet* C_QWidgetSet_operator_minus_equal_0(void* this_ , QWidgetSet* other)
 }
 
 // [-3] QSet<T> & operator-=(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_minus_equal_1(void* this_ , QWidget * value) {
     // QWidgetSet_operator_minus_equal_1()
     auto rv =  ((QWidgetSet*)this_)->operator-=(value);
@@ -314,7 +314,7 @@ QWidgetSet* C_QWidgetSet_operator_minus_equal_1(void* this_ , QWidget * value) {
 }
 
 // [-3] QSet<T> operator|(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_or_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_or_0()
     auto rv =  ((QWidgetSet*)this_)->operator|(*other);
@@ -322,7 +322,7 @@ QWidgetSet* C_QWidgetSet_operator_or_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> operator&(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_and_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_and_0()
     auto rv =  ((QWidgetSet*)this_)->operator&(*other);
@@ -330,7 +330,7 @@ QWidgetSet* C_QWidgetSet_operator_and_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> operator+(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_add_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_add_0()
     auto rv =  ((QWidgetSet*)this_)->operator+(*other);
@@ -338,7 +338,7 @@ QWidgetSet* C_QWidgetSet_operator_add_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QSet<T> operator-(const QSet<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QWidgetSet* C_QWidgetSet_operator_minus_0(void* this_ , QWidgetSet* other) {
     // QWidgetSet_operator_minus_0()
     auto rv =  ((QWidgetSet*)this_)->operator-(*other);
@@ -346,14 +346,14 @@ QWidgetSet* C_QWidgetSet_operator_minus_0(void* this_ , QWidgetSet* other) {
 }
 
 // [-3] QList<T> toList()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_toList_0(void* this_ ) {
     // QWidgetSet_toList_0()
     auto rv =  ((QWidgetSet*)this_)->toList();
 }
 
 // [-3] QList<T> values()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_values_0(void* this_ ) {
     // QWidgetSet_values_0()
     auto rv =  ((QWidgetSet*)this_)->values();

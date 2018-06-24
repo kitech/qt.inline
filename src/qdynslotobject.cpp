@@ -129,7 +129,7 @@ int main_test(int argc, char **argv)
     qDebug() << "QMetaObject class size: " << sizeof(QMetaObject);
     qDebug() << "meta stringdata class size: " << sizeof(struct QDynSlotObject::qt_meta_stringdata_QDynSlotObject_t);
 
-    QDynSlotObject* dso = new QDynSlotObject((void*)&callback_slot_test, "clicked123", 0, 0, 0);
+    QDynSlotObject* dso = new QDynSlotObject((void*)&callback_slot_test, strdup("clicked123"), 0, 0, 0);
     QMetaObject* mto = (QMetaObject*)dso->metaObject();
     qDebug() << (void*)(mto->className())  << mto->methodCount();
     qDebug() << mto->className()  << mto->methodCount();
@@ -137,7 +137,7 @@ int main_test(int argc, char **argv)
         qDebug()<<mto->method(i).name()<<mto->method(i).methodSignature();
     }
 
-    QDynSlotObject* dso2 = new QDynSlotObject((void*)&callback_slot_test, "released456", 0, 0, 0);
+    QDynSlotObject* dso2 = new QDynSlotObject((void*)&callback_slot_test, strdup("released456"), 0, 0, 0);
     QObject::connect(dso, SIGNAL(objectNameChanged(const QString &)), dso2, SLOT(dumnyslot()), Qt::QueuedConnection);
     dso->setObjectName(QString("beginnotdso111"));
     dso->setObjectName(QString("beginnotdso222"));

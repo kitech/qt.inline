@@ -16,7 +16,7 @@ typedef QList<QListWidgetItem *> QListWidgetItemList;
 
 //  body block begin
 // [-3] QList<T> & operator=(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_equal_0(void* this_ , QListWidgetItemList* l) {
     // QListWidgetItemList_operator_equal_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator=(*l);
@@ -24,7 +24,7 @@ QListWidgetItemList* C_QListWidgetItemList_operator_equal_0(void* this_ , QListW
 }
 
 // [-3] QList<T> & operator=(QList<T> &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_equal_1(void* this_ , QListWidgetItemList* other) {
     // QListWidgetItemList_operator_equal_1()
     auto rv =  ((QListWidgetItemList*)this_)->operator=(*other);
@@ -32,14 +32,14 @@ QListWidgetItemList* C_QListWidgetItemList_operator_equal_1(void* this_ , QListW
 }
 
 // [-2] void swap(QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_swap_0(void* this_ , QListWidgetItemList* other) {
     // QListWidgetItemList_swap_0()
      ((QListWidgetItemList*)this_)->swap(*other);
 }
 
 // [1] bool operator==(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_operator_equal_equal_0(void* this_ , QListWidgetItemList* l) {
     // QListWidgetItemList_operator_equal_equal_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator==(*l);
@@ -47,7 +47,7 @@ bool C_QListWidgetItemList_operator_equal_equal_0(void* this_ , QListWidgetItemL
 }
 
 // [1] bool operator!=(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_operator_not_equal_0(void* this_ , QListWidgetItemList* l) {
     // QListWidgetItemList_operator_not_equal_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator!=(*l);
@@ -55,7 +55,7 @@ bool C_QListWidgetItemList_operator_not_equal_0(void* this_ , QListWidgetItemLis
 }
 
 // [4] int size()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_size_0(void* this_ ) {
     // QListWidgetItemList_size_0()
     auto rv =  ((QListWidgetItemList*)this_)->size();
@@ -63,21 +63,21 @@ int C_QListWidgetItemList_size_0(void* this_ ) {
 }
 
 // [-2] void detach()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_detach_0(void* this_ ) {
     // QListWidgetItemList_detach_0()
      ((QListWidgetItemList*)this_)->detach();
 }
 
 // [-2] void detachShared()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_detachShared_0(void* this_ ) {
     // QListWidgetItemList_detachShared_0()
      ((QListWidgetItemList*)this_)->detachShared();
 }
 
 // [1] bool isDetached()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_isDetached_0(void* this_ ) {
     // QListWidgetItemList_isDetached_0()
     auto rv =  ((QListWidgetItemList*)this_)->isDetached();
@@ -85,14 +85,14 @@ bool C_QListWidgetItemList_isDetached_0(void* this_ ) {
 }
 
 // [-2] void setSharable(bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_setSharable_0(void* this_ , bool sharable) {
     // QListWidgetItemList_setSharable_0()
      ((QListWidgetItemList*)this_)->setSharable(sharable);
 }
 
 // [1] bool isSharedWith(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_isSharedWith_0(void* this_ , QListWidgetItemList* other) {
     // QListWidgetItemList_isSharedWith_0()
     auto rv =  ((QListWidgetItemList*)this_)->isSharedWith(*other);
@@ -100,7 +100,7 @@ bool C_QListWidgetItemList_isSharedWith_0(void* this_ , QListWidgetItemList* oth
 }
 
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_isEmpty_0(void* this_ ) {
     // QListWidgetItemList_isEmpty_0()
     auto rv =  ((QListWidgetItemList*)this_)->isEmpty();
@@ -108,14 +108,14 @@ bool C_QListWidgetItemList_isEmpty_0(void* this_ ) {
 }
 
 // [-2] void clear()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_clear_0(void* this_ ) {
     // QListWidgetItemList_clear_0()
      ((QListWidgetItemList*)this_)->clear();
 }
 
 // [-3] const T & at(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_at_0(void* this_ , int i) {
     // QListWidgetItemList_at_0()
     auto rv =  ((QListWidgetItemList*)this_)->at(i);
@@ -123,7 +123,7 @@ QListWidgetItem ** C_QListWidgetItemList_at_0(void* this_ , int i) {
 }
 
 // [-3] const T & operator[](int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_operator_get_index_0(void* this_ , int i) {
     // QListWidgetItemList_operator_get_index_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator[](i);
@@ -131,7 +131,7 @@ QListWidgetItem ** C_QListWidgetItemList_operator_get_index_0(void* this_ , int 
 }
 
 // [-3] T & operator[](int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_operator_get_index_1(void* this_ , int i) {
     // QListWidgetItemList_operator_get_index_1()
     auto rv =  ((QListWidgetItemList*)this_)->operator[](i);
@@ -139,56 +139,56 @@ QListWidgetItem ** C_QListWidgetItemList_operator_get_index_1(void* this_ , int 
 }
 
 // [-2] void reserve(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_reserve_0(void* this_ , int size) {
     // QListWidgetItemList_reserve_0()
      ((QListWidgetItemList*)this_)->reserve(size);
 }
 
 // [-2] void append(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_append_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_append_0()
      ((QListWidgetItemList*)this_)->append(t);
 }
 
 // [-2] void append(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_append_1(void* this_ , QListWidgetItemList* t) {
     // QListWidgetItemList_append_1()
      ((QListWidgetItemList*)this_)->append(*t);
 }
 
 // [-2] void prepend(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_prepend_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_prepend_0()
      ((QListWidgetItemList*)this_)->prepend(t);
 }
 
 // [-2] void insert(int, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_insert_0(void* this_ , int i, QListWidgetItem * t) {
     // QListWidgetItemList_insert_0()
      ((QListWidgetItemList*)this_)->insert(i, t);
 }
 
 // [-2] void replace(int, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_replace_0(void* this_ , int i, QListWidgetItem * t) {
     // QListWidgetItemList_replace_0()
      ((QListWidgetItemList*)this_)->replace(i, t);
 }
 
 // [-2] void removeAt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_removeAt_0(void* this_ , int i) {
     // QListWidgetItemList_removeAt_0()
      ((QListWidgetItemList*)this_)->removeAt(i);
 }
 
 // [4] int removeAll(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_removeAll_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_removeAll_0()
     auto rv =  ((QListWidgetItemList*)this_)->removeAll(t);
@@ -196,7 +196,7 @@ int C_QListWidgetItemList_removeAll_0(void* this_ , QListWidgetItem * t) {
 }
 
 // [1] bool removeOne(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_removeOne_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_removeOne_0()
     auto rv =  ((QListWidgetItemList*)this_)->removeOne(t);
@@ -204,7 +204,7 @@ bool C_QListWidgetItemList_removeOne_0(void* this_ , QListWidgetItem * t) {
 }
 
 // [-3] T takeAt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_takeAt_0(void* this_ , int i) {
     // QListWidgetItemList_takeAt_0()
     auto rv =  ((QListWidgetItemList*)this_)->takeAt(i);
@@ -212,7 +212,7 @@ QListWidgetItem ** C_QListWidgetItemList_takeAt_0(void* this_ , int i) {
 }
 
 // [-3] T takeFirst()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_takeFirst_0(void* this_ ) {
     // QListWidgetItemList_takeFirst_0()
     auto rv =  ((QListWidgetItemList*)this_)->takeFirst();
@@ -220,7 +220,7 @@ QListWidgetItem ** C_QListWidgetItemList_takeFirst_0(void* this_ ) {
 }
 
 // [-3] T takeLast()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_takeLast_0(void* this_ ) {
     // QListWidgetItemList_takeLast_0()
     auto rv =  ((QListWidgetItemList*)this_)->takeLast();
@@ -228,21 +228,21 @@ QListWidgetItem ** C_QListWidgetItemList_takeLast_0(void* this_ ) {
 }
 
 // [-2] void move(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_move_0(void* this_ , int from, int to) {
     // QListWidgetItemList_move_0()
      ((QListWidgetItemList*)this_)->move(from, to);
 }
 
 // [-2] void swap(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_swap_1(void* this_ , int i, int j) {
     // QListWidgetItemList_swap_1()
      ((QListWidgetItemList*)this_)->swap(i, j);
 }
 
 // [4] int indexOf(const T &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_indexOf_0(void* this_ , QListWidgetItem * t, int from) {
     // QListWidgetItemList_indexOf_0()
     auto rv =  ((QListWidgetItemList*)this_)->indexOf(t, from);
@@ -250,7 +250,7 @@ int C_QListWidgetItemList_indexOf_0(void* this_ , QListWidgetItem * t, int from)
 }
 
 // [4] int lastIndexOf(const T &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_lastIndexOf_0(void* this_ , QListWidgetItem * t, int from) {
     // QListWidgetItemList_lastIndexOf_0()
     auto rv =  ((QListWidgetItemList*)this_)->lastIndexOf(t, from);
@@ -258,7 +258,7 @@ int C_QListWidgetItemList_lastIndexOf_0(void* this_ , QListWidgetItem * t, int f
 }
 
 // [1] bool contains(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_contains_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_contains_0()
     auto rv =  ((QListWidgetItemList*)this_)->contains(t);
@@ -266,7 +266,7 @@ bool C_QListWidgetItemList_contains_0(void* this_ , QListWidgetItem * t) {
 }
 
 // [4] int count(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_count_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_count_0()
     auto rv =  ((QListWidgetItemList*)this_)->count(t);
@@ -274,7 +274,7 @@ int C_QListWidgetItemList_count_0(void* this_ , QListWidgetItem * t) {
 }
 
 // [-3] QList::iterator begin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::iterator* C_QListWidgetItemList_begin_0(void* this_ ) {
     // QListWidgetItemList_begin_0()
     auto rv =  ((QListWidgetItemList*)this_)->begin();
@@ -282,7 +282,7 @@ QListWidgetItemList::iterator* C_QListWidgetItemList_begin_0(void* this_ ) {
 }
 
 // [-3] QList::iterator end()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::iterator* C_QListWidgetItemList_end_0(void* this_ ) {
     // QListWidgetItemList_end_0()
     auto rv =  ((QListWidgetItemList*)this_)->end();
@@ -290,7 +290,7 @@ QListWidgetItemList::iterator* C_QListWidgetItemList_end_0(void* this_ ) {
 }
 
 // [-3] QList::reverse_iterator rbegin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::reverse_iterator* C_QListWidgetItemList_rbegin_0(void* this_ ) {
     // QListWidgetItemList_rbegin_0()
     auto rv =  ((QListWidgetItemList*)this_)->rbegin();
@@ -298,7 +298,7 @@ QListWidgetItemList::reverse_iterator* C_QListWidgetItemList_rbegin_0(void* this
 }
 
 // [-3] QList::reverse_iterator rend()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::reverse_iterator* C_QListWidgetItemList_rend_0(void* this_ ) {
     // QListWidgetItemList_rend_0()
     auto rv =  ((QListWidgetItemList*)this_)->rend();
@@ -306,7 +306,7 @@ QListWidgetItemList::reverse_iterator* C_QListWidgetItemList_rend_0(void* this_ 
 }
 
 // [-3] QList::iterator insert(QList::iterator, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::iterator* C_QListWidgetItemList_insert_1(void* this_ , QListWidgetItemList::iterator* before, QListWidgetItem * t) {
     // QListWidgetItemList_insert_1()
     auto rv =  ((QListWidgetItemList*)this_)->insert(*before, t);
@@ -314,7 +314,7 @@ QListWidgetItemList::iterator* C_QListWidgetItemList_insert_1(void* this_ , QLis
 }
 
 // [-3] QList::iterator erase(QList::iterator)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::iterator* C_QListWidgetItemList_erase_0(void* this_ , QListWidgetItemList::iterator* pos) {
     // QListWidgetItemList_erase_0()
     auto rv =  ((QListWidgetItemList*)this_)->erase(*pos);
@@ -322,7 +322,7 @@ QListWidgetItemList::iterator* C_QListWidgetItemList_erase_0(void* this_ , QList
 }
 
 // [-3] QList::iterator erase(QList::iterator, QList::iterator)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList::iterator* C_QListWidgetItemList_erase_1(void* this_ , QListWidgetItemList::iterator* first, QListWidgetItemList::iterator* last) {
     // QListWidgetItemList_erase_1()
     auto rv =  ((QListWidgetItemList*)this_)->erase(*first, *last);
@@ -330,7 +330,7 @@ QListWidgetItemList::iterator* C_QListWidgetItemList_erase_1(void* this_ , QList
 }
 
 // [4] int count()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_count_1(void* this_ ) {
     // QListWidgetItemList_count_1()
     auto rv =  ((QListWidgetItemList*)this_)->count();
@@ -338,7 +338,7 @@ int C_QListWidgetItemList_count_1(void* this_ ) {
 }
 
 // [4] int length()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QListWidgetItemList_length_0(void* this_ ) {
     // QListWidgetItemList_length_0()
     auto rv =  ((QListWidgetItemList*)this_)->length();
@@ -346,7 +346,7 @@ int C_QListWidgetItemList_length_0(void* this_ ) {
 }
 
 // [-3] T & first()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_first_0(void* this_ ) {
     // QListWidgetItemList_first_0()
     auto rv =  ((QListWidgetItemList*)this_)->first();
@@ -354,7 +354,7 @@ QListWidgetItem ** C_QListWidgetItemList_first_0(void* this_ ) {
 }
 
 // [-3] const T & constFirst()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_constFirst_0(void* this_ ) {
     // QListWidgetItemList_constFirst_0()
     auto rv =  ((QListWidgetItemList*)this_)->constFirst();
@@ -362,7 +362,7 @@ QListWidgetItem ** C_QListWidgetItemList_constFirst_0(void* this_ ) {
 }
 
 // [-3] const T & first()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_first_1(void* this_ ) {
     // QListWidgetItemList_first_1()
     auto rv =  ((QListWidgetItemList*)this_)->first();
@@ -370,7 +370,7 @@ QListWidgetItem ** C_QListWidgetItemList_first_1(void* this_ ) {
 }
 
 // [-3] T & last()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_last_0(void* this_ ) {
     // QListWidgetItemList_last_0()
     auto rv =  ((QListWidgetItemList*)this_)->last();
@@ -378,7 +378,7 @@ QListWidgetItem ** C_QListWidgetItemList_last_0(void* this_ ) {
 }
 
 // [-3] const T & last()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_last_1(void* this_ ) {
     // QListWidgetItemList_last_1()
     auto rv =  ((QListWidgetItemList*)this_)->last();
@@ -386,7 +386,7 @@ QListWidgetItem ** C_QListWidgetItemList_last_1(void* this_ ) {
 }
 
 // [-3] const T & constLast()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_constLast_0(void* this_ ) {
     // QListWidgetItemList_constLast_0()
     auto rv =  ((QListWidgetItemList*)this_)->constLast();
@@ -394,21 +394,21 @@ QListWidgetItem ** C_QListWidgetItemList_constLast_0(void* this_ ) {
 }
 
 // [-2] void removeFirst()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_removeFirst_0(void* this_ ) {
     // QListWidgetItemList_removeFirst_0()
      ((QListWidgetItemList*)this_)->removeFirst();
 }
 
 // [-2] void removeLast()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_removeLast_0(void* this_ ) {
     // QListWidgetItemList_removeLast_0()
      ((QListWidgetItemList*)this_)->removeLast();
 }
 
 // [1] bool startsWith(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_startsWith_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_startsWith_0()
     auto rv =  ((QListWidgetItemList*)this_)->startsWith(t);
@@ -416,7 +416,7 @@ bool C_QListWidgetItemList_startsWith_0(void* this_ , QListWidgetItem * t) {
 }
 
 // [1] bool endsWith(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_endsWith_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_endsWith_0()
     auto rv =  ((QListWidgetItemList*)this_)->endsWith(t);
@@ -424,7 +424,7 @@ bool C_QListWidgetItemList_endsWith_0(void* this_ , QListWidgetItem * t) {
 }
 
 // [-3] QList<T> mid(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_mid_0(void* this_ , int pos, int length) {
     // QListWidgetItemList_mid_0()
     auto rv =  ((QListWidgetItemList*)this_)->mid(pos, length);
@@ -432,7 +432,7 @@ QListWidgetItemList* C_QListWidgetItemList_mid_0(void* this_ , int pos, int leng
 }
 
 // [-3] T value(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_value_0(void* this_ , int i) {
     // QListWidgetItemList_value_0()
     auto rv =  ((QListWidgetItemList*)this_)->value(i);
@@ -440,7 +440,7 @@ QListWidgetItem ** C_QListWidgetItemList_value_0(void* this_ , int i) {
 }
 
 // [-3] T value(int, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_value_1(void* this_ , int i, QListWidgetItem * defaultValue) {
     // QListWidgetItemList_value_1()
     auto rv =  ((QListWidgetItemList*)this_)->value(i, defaultValue);
@@ -448,21 +448,21 @@ QListWidgetItem ** C_QListWidgetItemList_value_1(void* this_ , int i, QListWidge
 }
 
 // [-2] void push_back(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_push_back_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_push_back_0()
      ((QListWidgetItemList*)this_)->push_back(t);
 }
 
 // [-2] void push_front(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_push_front_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_push_front_0()
      ((QListWidgetItemList*)this_)->push_front(t);
 }
 
 // [-3] T & front()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_front_0(void* this_ ) {
     // QListWidgetItemList_front_0()
     auto rv =  ((QListWidgetItemList*)this_)->front();
@@ -470,7 +470,7 @@ QListWidgetItem ** C_QListWidgetItemList_front_0(void* this_ ) {
 }
 
 // [-3] const T & front()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_front_1(void* this_ ) {
     // QListWidgetItemList_front_1()
     auto rv =  ((QListWidgetItemList*)this_)->front();
@@ -478,7 +478,7 @@ QListWidgetItem ** C_QListWidgetItemList_front_1(void* this_ ) {
 }
 
 // [-3] T & back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_back_0(void* this_ ) {
     // QListWidgetItemList_back_0()
     auto rv =  ((QListWidgetItemList*)this_)->back();
@@ -486,7 +486,7 @@ QListWidgetItem ** C_QListWidgetItemList_back_0(void* this_ ) {
 }
 
 // [-3] const T & back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItem ** C_QListWidgetItemList_back_1(void* this_ ) {
     // QListWidgetItemList_back_1()
     auto rv =  ((QListWidgetItemList*)this_)->back();
@@ -494,21 +494,21 @@ QListWidgetItem ** C_QListWidgetItemList_back_1(void* this_ ) {
 }
 
 // [-2] void pop_front()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_pop_front_0(void* this_ ) {
     // QListWidgetItemList_pop_front_0()
      ((QListWidgetItemList*)this_)->pop_front();
 }
 
 // [-2] void pop_back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_pop_back_0(void* this_ ) {
     // QListWidgetItemList_pop_back_0()
      ((QListWidgetItemList*)this_)->pop_back();
 }
 
 // [1] bool empty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QListWidgetItemList_empty_0(void* this_ ) {
     // QListWidgetItemList_empty_0()
     auto rv =  ((QListWidgetItemList*)this_)->empty();
@@ -516,7 +516,7 @@ bool C_QListWidgetItemList_empty_0(void* this_ ) {
 }
 
 // [-3] QList<T> & operator+=(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_add_equal_0(void* this_ , QListWidgetItemList* l) {
     // QListWidgetItemList_operator_add_equal_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator+=(*l);
@@ -524,7 +524,7 @@ QListWidgetItemList* C_QListWidgetItemList_operator_add_equal_0(void* this_ , QL
 }
 
 // [-3] QList<T> operator+(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_add_0(void* this_ , QListWidgetItemList* l) {
     // QListWidgetItemList_operator_add_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator+(*l);
@@ -532,7 +532,7 @@ QListWidgetItemList* C_QListWidgetItemList_operator_add_0(void* this_ , QListWid
 }
 
 // [-3] QList<T> & operator+=(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_add_equal_1(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_operator_add_equal_1()
     auto rv =  ((QListWidgetItemList*)this_)->operator+=(t);
@@ -540,7 +540,7 @@ QListWidgetItemList* C_QListWidgetItemList_operator_add_equal_1(void* this_ , QL
 }
 
 // [-3] QList<T> & operator<<(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_left_shift_0(void* this_ , QListWidgetItem * t) {
     // QListWidgetItemList_operator_left_shift_0()
     auto rv =  ((QListWidgetItemList*)this_)->operator<<(t);
@@ -548,7 +548,7 @@ QListWidgetItemList* C_QListWidgetItemList_operator_left_shift_0(void* this_ , Q
 }
 
 // [-3] QList<T> & operator<<(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QListWidgetItemList* C_QListWidgetItemList_operator_left_shift_1(void* this_ , QListWidgetItemList* l) {
     // QListWidgetItemList_operator_left_shift_1()
     auto rv =  ((QListWidgetItemList*)this_)->operator<<(*l);
@@ -556,14 +556,14 @@ QListWidgetItemList* C_QListWidgetItemList_operator_left_shift_1(void* this_ , Q
 }
 
 // [-3] QVector<T> toVector()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_toVector_0(void* this_ ) {
     // QListWidgetItemList_toVector_0()
     auto rv =  ((QListWidgetItemList*)this_)->toVector();
 }
 
 // [-3] std::list<T> toStdList()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QListWidgetItemList_toStdList_0(void* this_ ) {
     // QListWidgetItemList_toStdList_0()
     auto rv =  ((QListWidgetItemList*)this_)->toStdList();

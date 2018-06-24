@@ -16,7 +16,7 @@ typedef QList<QGesture *> QGestureList;
 
 //  body block begin
 // [-3] QList<T> & operator=(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_equal_0(void* this_ , QGestureList* l) {
     // QGestureList_operator_equal_0()
     auto rv =  ((QGestureList*)this_)->operator=(*l);
@@ -24,7 +24,7 @@ QGestureList* C_QGestureList_operator_equal_0(void* this_ , QGestureList* l) {
 }
 
 // [-3] QList<T> & operator=(QList<T> &&)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_equal_1(void* this_ , QGestureList* other) {
     // QGestureList_operator_equal_1()
     auto rv =  ((QGestureList*)this_)->operator=(*other);
@@ -32,14 +32,14 @@ QGestureList* C_QGestureList_operator_equal_1(void* this_ , QGestureList* other)
 }
 
 // [-2] void swap(QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_swap_0(void* this_ , QGestureList* other) {
     // QGestureList_swap_0()
      ((QGestureList*)this_)->swap(*other);
 }
 
 // [1] bool operator==(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_operator_equal_equal_0(void* this_ , QGestureList* l) {
     // QGestureList_operator_equal_equal_0()
     auto rv =  ((QGestureList*)this_)->operator==(*l);
@@ -47,7 +47,7 @@ bool C_QGestureList_operator_equal_equal_0(void* this_ , QGestureList* l) {
 }
 
 // [1] bool operator!=(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_operator_not_equal_0(void* this_ , QGestureList* l) {
     // QGestureList_operator_not_equal_0()
     auto rv =  ((QGestureList*)this_)->operator!=(*l);
@@ -55,7 +55,7 @@ bool C_QGestureList_operator_not_equal_0(void* this_ , QGestureList* l) {
 }
 
 // [4] int size()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_size_0(void* this_ ) {
     // QGestureList_size_0()
     auto rv =  ((QGestureList*)this_)->size();
@@ -63,21 +63,21 @@ int C_QGestureList_size_0(void* this_ ) {
 }
 
 // [-2] void detach()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_detach_0(void* this_ ) {
     // QGestureList_detach_0()
      ((QGestureList*)this_)->detach();
 }
 
 // [-2] void detachShared()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_detachShared_0(void* this_ ) {
     // QGestureList_detachShared_0()
      ((QGestureList*)this_)->detachShared();
 }
 
 // [1] bool isDetached()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_isDetached_0(void* this_ ) {
     // QGestureList_isDetached_0()
     auto rv =  ((QGestureList*)this_)->isDetached();
@@ -85,14 +85,14 @@ bool C_QGestureList_isDetached_0(void* this_ ) {
 }
 
 // [-2] void setSharable(bool)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_setSharable_0(void* this_ , bool sharable) {
     // QGestureList_setSharable_0()
      ((QGestureList*)this_)->setSharable(sharable);
 }
 
 // [1] bool isSharedWith(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_isSharedWith_0(void* this_ , QGestureList* other) {
     // QGestureList_isSharedWith_0()
     auto rv =  ((QGestureList*)this_)->isSharedWith(*other);
@@ -100,7 +100,7 @@ bool C_QGestureList_isSharedWith_0(void* this_ , QGestureList* other) {
 }
 
 // [1] bool isEmpty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_isEmpty_0(void* this_ ) {
     // QGestureList_isEmpty_0()
     auto rv =  ((QGestureList*)this_)->isEmpty();
@@ -108,14 +108,14 @@ bool C_QGestureList_isEmpty_0(void* this_ ) {
 }
 
 // [-2] void clear()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_clear_0(void* this_ ) {
     // QGestureList_clear_0()
      ((QGestureList*)this_)->clear();
 }
 
 // [-3] const T & at(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_at_0(void* this_ , int i) {
     // QGestureList_at_0()
     auto rv =  ((QGestureList*)this_)->at(i);
@@ -123,7 +123,7 @@ QGesture ** C_QGestureList_at_0(void* this_ , int i) {
 }
 
 // [-3] const T & operator[](int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_operator_get_index_0(void* this_ , int i) {
     // QGestureList_operator_get_index_0()
     auto rv =  ((QGestureList*)this_)->operator[](i);
@@ -131,7 +131,7 @@ QGesture ** C_QGestureList_operator_get_index_0(void* this_ , int i) {
 }
 
 // [-3] T & operator[](int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_operator_get_index_1(void* this_ , int i) {
     // QGestureList_operator_get_index_1()
     auto rv =  ((QGestureList*)this_)->operator[](i);
@@ -139,56 +139,56 @@ QGesture ** C_QGestureList_operator_get_index_1(void* this_ , int i) {
 }
 
 // [-2] void reserve(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_reserve_0(void* this_ , int size) {
     // QGestureList_reserve_0()
      ((QGestureList*)this_)->reserve(size);
 }
 
 // [-2] void append(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_append_0(void* this_ , QGesture * t) {
     // QGestureList_append_0()
      ((QGestureList*)this_)->append(t);
 }
 
 // [-2] void append(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_append_1(void* this_ , QGestureList* t) {
     // QGestureList_append_1()
      ((QGestureList*)this_)->append(*t);
 }
 
 // [-2] void prepend(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_prepend_0(void* this_ , QGesture * t) {
     // QGestureList_prepend_0()
      ((QGestureList*)this_)->prepend(t);
 }
 
 // [-2] void insert(int, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_insert_0(void* this_ , int i, QGesture * t) {
     // QGestureList_insert_0()
      ((QGestureList*)this_)->insert(i, t);
 }
 
 // [-2] void replace(int, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_replace_0(void* this_ , int i, QGesture * t) {
     // QGestureList_replace_0()
      ((QGestureList*)this_)->replace(i, t);
 }
 
 // [-2] void removeAt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_removeAt_0(void* this_ , int i) {
     // QGestureList_removeAt_0()
      ((QGestureList*)this_)->removeAt(i);
 }
 
 // [4] int removeAll(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_removeAll_0(void* this_ , QGesture * t) {
     // QGestureList_removeAll_0()
     auto rv =  ((QGestureList*)this_)->removeAll(t);
@@ -196,7 +196,7 @@ int C_QGestureList_removeAll_0(void* this_ , QGesture * t) {
 }
 
 // [1] bool removeOne(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_removeOne_0(void* this_ , QGesture * t) {
     // QGestureList_removeOne_0()
     auto rv =  ((QGestureList*)this_)->removeOne(t);
@@ -204,7 +204,7 @@ bool C_QGestureList_removeOne_0(void* this_ , QGesture * t) {
 }
 
 // [-3] T takeAt(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_takeAt_0(void* this_ , int i) {
     // QGestureList_takeAt_0()
     auto rv =  ((QGestureList*)this_)->takeAt(i);
@@ -212,7 +212,7 @@ QGesture ** C_QGestureList_takeAt_0(void* this_ , int i) {
 }
 
 // [-3] T takeFirst()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_takeFirst_0(void* this_ ) {
     // QGestureList_takeFirst_0()
     auto rv =  ((QGestureList*)this_)->takeFirst();
@@ -220,7 +220,7 @@ QGesture ** C_QGestureList_takeFirst_0(void* this_ ) {
 }
 
 // [-3] T takeLast()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_takeLast_0(void* this_ ) {
     // QGestureList_takeLast_0()
     auto rv =  ((QGestureList*)this_)->takeLast();
@@ -228,21 +228,21 @@ QGesture ** C_QGestureList_takeLast_0(void* this_ ) {
 }
 
 // [-2] void move(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_move_0(void* this_ , int from, int to) {
     // QGestureList_move_0()
      ((QGestureList*)this_)->move(from, to);
 }
 
 // [-2] void swap(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_swap_1(void* this_ , int i, int j) {
     // QGestureList_swap_1()
      ((QGestureList*)this_)->swap(i, j);
 }
 
 // [4] int indexOf(const T &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_indexOf_0(void* this_ , QGesture * t, int from) {
     // QGestureList_indexOf_0()
     auto rv =  ((QGestureList*)this_)->indexOf(t, from);
@@ -250,7 +250,7 @@ int C_QGestureList_indexOf_0(void* this_ , QGesture * t, int from) {
 }
 
 // [4] int lastIndexOf(const T &, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_lastIndexOf_0(void* this_ , QGesture * t, int from) {
     // QGestureList_lastIndexOf_0()
     auto rv =  ((QGestureList*)this_)->lastIndexOf(t, from);
@@ -258,7 +258,7 @@ int C_QGestureList_lastIndexOf_0(void* this_ , QGesture * t, int from) {
 }
 
 // [1] bool contains(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_contains_0(void* this_ , QGesture * t) {
     // QGestureList_contains_0()
     auto rv =  ((QGestureList*)this_)->contains(t);
@@ -266,7 +266,7 @@ bool C_QGestureList_contains_0(void* this_ , QGesture * t) {
 }
 
 // [4] int count(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_count_0(void* this_ , QGesture * t) {
     // QGestureList_count_0()
     auto rv =  ((QGestureList*)this_)->count(t);
@@ -274,7 +274,7 @@ int C_QGestureList_count_0(void* this_ , QGesture * t) {
 }
 
 // [-3] QList::iterator begin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::iterator* C_QGestureList_begin_0(void* this_ ) {
     // QGestureList_begin_0()
     auto rv =  ((QGestureList*)this_)->begin();
@@ -282,7 +282,7 @@ QGestureList::iterator* C_QGestureList_begin_0(void* this_ ) {
 }
 
 // [-3] QList::iterator end()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::iterator* C_QGestureList_end_0(void* this_ ) {
     // QGestureList_end_0()
     auto rv =  ((QGestureList*)this_)->end();
@@ -290,7 +290,7 @@ QGestureList::iterator* C_QGestureList_end_0(void* this_ ) {
 }
 
 // [-3] QList::reverse_iterator rbegin()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::reverse_iterator* C_QGestureList_rbegin_0(void* this_ ) {
     // QGestureList_rbegin_0()
     auto rv =  ((QGestureList*)this_)->rbegin();
@@ -298,7 +298,7 @@ QGestureList::reverse_iterator* C_QGestureList_rbegin_0(void* this_ ) {
 }
 
 // [-3] QList::reverse_iterator rend()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::reverse_iterator* C_QGestureList_rend_0(void* this_ ) {
     // QGestureList_rend_0()
     auto rv =  ((QGestureList*)this_)->rend();
@@ -306,7 +306,7 @@ QGestureList::reverse_iterator* C_QGestureList_rend_0(void* this_ ) {
 }
 
 // [-3] QList::iterator insert(QList::iterator, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::iterator* C_QGestureList_insert_1(void* this_ , QGestureList::iterator* before, QGesture * t) {
     // QGestureList_insert_1()
     auto rv =  ((QGestureList*)this_)->insert(*before, t);
@@ -314,7 +314,7 @@ QGestureList::iterator* C_QGestureList_insert_1(void* this_ , QGestureList::iter
 }
 
 // [-3] QList::iterator erase(QList::iterator)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::iterator* C_QGestureList_erase_0(void* this_ , QGestureList::iterator* pos) {
     // QGestureList_erase_0()
     auto rv =  ((QGestureList*)this_)->erase(*pos);
@@ -322,7 +322,7 @@ QGestureList::iterator* C_QGestureList_erase_0(void* this_ , QGestureList::itera
 }
 
 // [-3] QList::iterator erase(QList::iterator, QList::iterator)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList::iterator* C_QGestureList_erase_1(void* this_ , QGestureList::iterator* first, QGestureList::iterator* last) {
     // QGestureList_erase_1()
     auto rv =  ((QGestureList*)this_)->erase(*first, *last);
@@ -330,7 +330,7 @@ QGestureList::iterator* C_QGestureList_erase_1(void* this_ , QGestureList::itera
 }
 
 // [4] int count()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_count_1(void* this_ ) {
     // QGestureList_count_1()
     auto rv =  ((QGestureList*)this_)->count();
@@ -338,7 +338,7 @@ int C_QGestureList_count_1(void* this_ ) {
 }
 
 // [4] int length()
-extern "C"
+extern "C" Q_DECL_EXPORT
 int C_QGestureList_length_0(void* this_ ) {
     // QGestureList_length_0()
     auto rv =  ((QGestureList*)this_)->length();
@@ -346,7 +346,7 @@ int C_QGestureList_length_0(void* this_ ) {
 }
 
 // [-3] T & first()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_first_0(void* this_ ) {
     // QGestureList_first_0()
     auto rv =  ((QGestureList*)this_)->first();
@@ -354,7 +354,7 @@ QGesture ** C_QGestureList_first_0(void* this_ ) {
 }
 
 // [-3] const T & constFirst()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_constFirst_0(void* this_ ) {
     // QGestureList_constFirst_0()
     auto rv =  ((QGestureList*)this_)->constFirst();
@@ -362,7 +362,7 @@ QGesture ** C_QGestureList_constFirst_0(void* this_ ) {
 }
 
 // [-3] const T & first()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_first_1(void* this_ ) {
     // QGestureList_first_1()
     auto rv =  ((QGestureList*)this_)->first();
@@ -370,7 +370,7 @@ QGesture ** C_QGestureList_first_1(void* this_ ) {
 }
 
 // [-3] T & last()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_last_0(void* this_ ) {
     // QGestureList_last_0()
     auto rv =  ((QGestureList*)this_)->last();
@@ -378,7 +378,7 @@ QGesture ** C_QGestureList_last_0(void* this_ ) {
 }
 
 // [-3] const T & last()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_last_1(void* this_ ) {
     // QGestureList_last_1()
     auto rv =  ((QGestureList*)this_)->last();
@@ -386,7 +386,7 @@ QGesture ** C_QGestureList_last_1(void* this_ ) {
 }
 
 // [-3] const T & constLast()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_constLast_0(void* this_ ) {
     // QGestureList_constLast_0()
     auto rv =  ((QGestureList*)this_)->constLast();
@@ -394,21 +394,21 @@ QGesture ** C_QGestureList_constLast_0(void* this_ ) {
 }
 
 // [-2] void removeFirst()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_removeFirst_0(void* this_ ) {
     // QGestureList_removeFirst_0()
      ((QGestureList*)this_)->removeFirst();
 }
 
 // [-2] void removeLast()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_removeLast_0(void* this_ ) {
     // QGestureList_removeLast_0()
      ((QGestureList*)this_)->removeLast();
 }
 
 // [1] bool startsWith(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_startsWith_0(void* this_ , QGesture * t) {
     // QGestureList_startsWith_0()
     auto rv =  ((QGestureList*)this_)->startsWith(t);
@@ -416,7 +416,7 @@ bool C_QGestureList_startsWith_0(void* this_ , QGesture * t) {
 }
 
 // [1] bool endsWith(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_endsWith_0(void* this_ , QGesture * t) {
     // QGestureList_endsWith_0()
     auto rv =  ((QGestureList*)this_)->endsWith(t);
@@ -424,7 +424,7 @@ bool C_QGestureList_endsWith_0(void* this_ , QGesture * t) {
 }
 
 // [-3] QList<T> mid(int, int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_mid_0(void* this_ , int pos, int length) {
     // QGestureList_mid_0()
     auto rv =  ((QGestureList*)this_)->mid(pos, length);
@@ -432,7 +432,7 @@ QGestureList* C_QGestureList_mid_0(void* this_ , int pos, int length) {
 }
 
 // [-3] T value(int)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_value_0(void* this_ , int i) {
     // QGestureList_value_0()
     auto rv =  ((QGestureList*)this_)->value(i);
@@ -440,7 +440,7 @@ QGesture ** C_QGestureList_value_0(void* this_ , int i) {
 }
 
 // [-3] T value(int, const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_value_1(void* this_ , int i, QGesture * defaultValue) {
     // QGestureList_value_1()
     auto rv =  ((QGestureList*)this_)->value(i, defaultValue);
@@ -448,21 +448,21 @@ QGesture ** C_QGestureList_value_1(void* this_ , int i, QGesture * defaultValue)
 }
 
 // [-2] void push_back(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_push_back_0(void* this_ , QGesture * t) {
     // QGestureList_push_back_0()
      ((QGestureList*)this_)->push_back(t);
 }
 
 // [-2] void push_front(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_push_front_0(void* this_ , QGesture * t) {
     // QGestureList_push_front_0()
      ((QGestureList*)this_)->push_front(t);
 }
 
 // [-3] T & front()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_front_0(void* this_ ) {
     // QGestureList_front_0()
     auto rv =  ((QGestureList*)this_)->front();
@@ -470,7 +470,7 @@ QGesture ** C_QGestureList_front_0(void* this_ ) {
 }
 
 // [-3] const T & front()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_front_1(void* this_ ) {
     // QGestureList_front_1()
     auto rv =  ((QGestureList*)this_)->front();
@@ -478,7 +478,7 @@ QGesture ** C_QGestureList_front_1(void* this_ ) {
 }
 
 // [-3] T & back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_back_0(void* this_ ) {
     // QGestureList_back_0()
     auto rv =  ((QGestureList*)this_)->back();
@@ -486,7 +486,7 @@ QGesture ** C_QGestureList_back_0(void* this_ ) {
 }
 
 // [-3] const T & back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGesture ** C_QGestureList_back_1(void* this_ ) {
     // QGestureList_back_1()
     auto rv =  ((QGestureList*)this_)->back();
@@ -494,21 +494,21 @@ QGesture ** C_QGestureList_back_1(void* this_ ) {
 }
 
 // [-2] void pop_front()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_pop_front_0(void* this_ ) {
     // QGestureList_pop_front_0()
      ((QGestureList*)this_)->pop_front();
 }
 
 // [-2] void pop_back()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_pop_back_0(void* this_ ) {
     // QGestureList_pop_back_0()
      ((QGestureList*)this_)->pop_back();
 }
 
 // [1] bool empty()
-extern "C"
+extern "C" Q_DECL_EXPORT
 bool C_QGestureList_empty_0(void* this_ ) {
     // QGestureList_empty_0()
     auto rv =  ((QGestureList*)this_)->empty();
@@ -516,7 +516,7 @@ bool C_QGestureList_empty_0(void* this_ ) {
 }
 
 // [-3] QList<T> & operator+=(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_add_equal_0(void* this_ , QGestureList* l) {
     // QGestureList_operator_add_equal_0()
     auto rv =  ((QGestureList*)this_)->operator+=(*l);
@@ -524,7 +524,7 @@ QGestureList* C_QGestureList_operator_add_equal_0(void* this_ , QGestureList* l)
 }
 
 // [-3] QList<T> operator+(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_add_0(void* this_ , QGestureList* l) {
     // QGestureList_operator_add_0()
     auto rv =  ((QGestureList*)this_)->operator+(*l);
@@ -532,7 +532,7 @@ QGestureList* C_QGestureList_operator_add_0(void* this_ , QGestureList* l) {
 }
 
 // [-3] QList<T> & operator+=(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_add_equal_1(void* this_ , QGesture * t) {
     // QGestureList_operator_add_equal_1()
     auto rv =  ((QGestureList*)this_)->operator+=(t);
@@ -540,7 +540,7 @@ QGestureList* C_QGestureList_operator_add_equal_1(void* this_ , QGesture * t) {
 }
 
 // [-3] QList<T> & operator<<(const T &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_left_shift_0(void* this_ , QGesture * t) {
     // QGestureList_operator_left_shift_0()
     auto rv =  ((QGestureList*)this_)->operator<<(t);
@@ -548,7 +548,7 @@ QGestureList* C_QGestureList_operator_left_shift_0(void* this_ , QGesture * t) {
 }
 
 // [-3] QList<T> & operator<<(const QList<T> &)
-extern "C"
+extern "C" Q_DECL_EXPORT
 QGestureList* C_QGestureList_operator_left_shift_1(void* this_ , QGestureList* l) {
     // QGestureList_operator_left_shift_1()
     auto rv =  ((QGestureList*)this_)->operator<<(*l);
@@ -556,14 +556,14 @@ QGestureList* C_QGestureList_operator_left_shift_1(void* this_ , QGestureList* l
 }
 
 // [-3] QVector<T> toVector()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_toVector_0(void* this_ ) {
     // QGestureList_toVector_0()
     auto rv =  ((QGestureList*)this_)->toVector();
 }
 
 // [-3] std::list<T> toStdList()
-extern "C"
+extern "C" Q_DECL_EXPORT
 void C_QGestureList_toStdList_0(void* this_ ) {
     // QGestureList_toStdList_0()
     auto rv =  ((QGestureList*)this_)->toStdList();
