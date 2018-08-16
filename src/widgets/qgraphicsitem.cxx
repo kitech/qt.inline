@@ -707,6 +707,18 @@ void C_ZN13QGraphicsItem13setParentItemEPS_(void *this_, QGraphicsItem * parent)
 
 // Public Visibility=Default Availability=Available
 // since 4.4
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:177
+// [8] QList<QGraphicsItem *> childItems()
+#if QT_VERSION >= 0x040400
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsItem10childItemsEv(void *this_) {
+  auto rv = ((QGraphicsItem*)this_)->childItems();
+return new QList<QGraphicsItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040400
+
+// Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:178
 // [1] bool isWidget()
 #if QT_VERSION >= 0x040400
@@ -1644,6 +1656,15 @@ bool C_ZNK13QGraphicsItem16collidesWithItemEPKS_N2Qt17ItemSelectionModeE(void *t
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem16collidesWithPathERK12QPainterPathN2Qt17ItemSelectionModeE(void *this_, QPainterPath* path, Qt::ItemSelectionMode mode) {
   return (bool)((QGraphicsItem*)this_)->collidesWithPath(*path, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:333
+// [8] QList<QGraphicsItem *> collidingItems(Qt::ItemSelectionMode)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsItem14collidingItemsEN2Qt17ItemSelectionModeE(void *this_, Qt::ItemSelectionMode mode) {
+  auto rv = ((QGraphicsItem*)this_)->collidingItems(mode);
+return new QList<QGraphicsItem *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

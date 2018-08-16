@@ -65,6 +65,24 @@ void C_ZN21QQmlApplicationEngineD2Ev(void *this_) {
   delete (QQmlApplicationEngine*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlapplicationengine.h:62
+// [8] QList<QObject *> rootObjects()
+extern "C" Q_DECL_EXPORT
+QList<QObject *>* C_ZN21QQmlApplicationEngine11rootObjectsEv(void *this_) {
+  auto rv = ((QQmlApplicationEngine*)this_)->rootObjects();
+return new QList<QObject *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlapplicationengine.h:64
+// [8] QList<QObject *> rootObjects()
+extern "C" Q_DECL_EXPORT
+QList<QObject *>* C_ZNK21QQmlApplicationEngine11rootObjectsEv(void *this_) {
+  auto rv = ((QQmlApplicationEngine*)this_)->rootObjects();
+return new QList<QObject *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:67
 // [-2] void load(const QUrl &)
 extern "C" Q_DECL_EXPORT

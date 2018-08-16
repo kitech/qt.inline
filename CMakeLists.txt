@@ -108,6 +108,7 @@ file(GLOB qt5_inline_srcs
   # qmls
   src/network/*.cxx
   src/qml/*.cxx
+  src/qml/qgolistmodel.cpp
   src/quick/*.cxx
   src/quicktemplates2/*.cxx
   src/quickcontrols2/*.cxx

@@ -602,6 +602,72 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:151
+// [8] QList<QGraphicsItem *> items(Qt::SortOrder)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene5itemsEN2Qt9SortOrderE(void *this_, Qt::SortOrder order) {
+  auto rv = ((QGraphicsScene*)this_)->items(order);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:153
+// [8] QList<QGraphicsItem *> items(const QPointF &, Qt::ItemSelectionMode, Qt::SortOrder, const QTransform &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene5itemsERK7QPointFN2Qt17ItemSelectionModeENS3_9SortOrderERK10QTransform(void *this_, QPointF* pos, Qt::ItemSelectionMode mode, Qt::SortOrder order, QTransform* deviceTransform) {
+  auto rv = ((QGraphicsScene*)this_)->items(*pos, mode, order, *deviceTransform);
+return new QList<QGraphicsItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:154
+// [8] QList<QGraphicsItem *> items(const QRectF &, Qt::ItemSelectionMode, Qt::SortOrder, const QTransform &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene5itemsERK6QRectFN2Qt17ItemSelectionModeENS3_9SortOrderERK10QTransform(void *this_, QRectF* rect, Qt::ItemSelectionMode mode, Qt::SortOrder order, QTransform* deviceTransform) {
+  auto rv = ((QGraphicsScene*)this_)->items(*rect, mode, order, *deviceTransform);
+return new QList<QGraphicsItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:155
+// [8] QList<QGraphicsItem *> items(const QPolygonF &, Qt::ItemSelectionMode, Qt::SortOrder, const QTransform &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene5itemsERK9QPolygonFN2Qt17ItemSelectionModeENS3_9SortOrderERK10QTransform(void *this_, QPolygonF* polygon, Qt::ItemSelectionMode mode, Qt::SortOrder order, QTransform* deviceTransform) {
+  auto rv = ((QGraphicsScene*)this_)->items(*polygon, mode, order, *deviceTransform);
+return new QList<QGraphicsItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:156
+// [8] QList<QGraphicsItem *> items(const QPainterPath &, Qt::ItemSelectionMode, Qt::SortOrder, const QTransform &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene5itemsERK12QPainterPathN2Qt17ItemSelectionModeENS3_9SortOrderERK10QTransform(void *this_, QPainterPath* path, Qt::ItemSelectionMode mode, Qt::SortOrder order, QTransform* deviceTransform) {
+  auto rv = ((QGraphicsScene*)this_)->items(*path, mode, order, *deviceTransform);
+return new QList<QGraphicsItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:158
+// [8] QList<QGraphicsItem *> collidingItems(const QGraphicsItem *, Qt::ItemSelectionMode)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene14collidingItemsEPK13QGraphicsItemN2Qt17ItemSelectionModeE(void *this_, const QGraphicsItem * item, Qt::ItemSelectionMode mode) {
+  auto rv = ((QGraphicsScene*)this_)->collidingItems(item, mode);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:165
 // [8] QGraphicsItem * itemAt(const QPointF &, const QTransform &)
@@ -609,6 +675,18 @@ return new QRectF(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QGraphicsScene6itemAtERK7QPointFRK10QTransform(void *this_, QPointF* pos, QTransform* deviceTransform) {
   return (void*)((QGraphicsScene*)this_)->itemAt(*pos, *deviceTransform);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public inline Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:170
+// [8] QList<QGraphicsItem *> items(qreal, qreal, qreal, qreal, Qt::ItemSelectionMode, Qt::SortOrder, const QTransform &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene5itemsEddddN2Qt17ItemSelectionModeENS0_9SortOrderERK10QTransform(void *this_, qreal x, qreal y, qreal w, qreal h, Qt::ItemSelectionMode mode, Qt::SortOrder order, QTransform* deviceTransform) {
+  auto rv = ((QGraphicsScene*)this_)->items(x, y, w, h, mode, order, *deviceTransform);
+return new QList<QGraphicsItem *>(rv);
 }
 #endif // QT_VERSION >= 0x040600
 
@@ -622,6 +700,15 @@ void* C_ZNK14QGraphicsScene6itemAtEddRK10QTransform(void *this_, qreal x, qreal 
   return (void*)((QGraphicsScene*)this_)->itemAt(x, y, *deviceTransform);
 }
 #endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:182
+// [8] QList<QGraphicsItem *> selectedItems()
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK14QGraphicsScene13selectedItemsEv(void *this_) {
+  auto rv = ((QGraphicsScene*)this_)->selectedItems();
+return new QList<QGraphicsItem *>(rv);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:183

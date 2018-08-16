@@ -992,6 +992,72 @@ void C_ZN13QGraphicsView6renderEP8QPainterRK6QRectFRK5QRectN2Qt15AspectRatioMode
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:194
+// [8] QList<QGraphicsItem *> items()
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsEv(void *this_) {
+  auto rv = ((QGraphicsView*)this_)->items();
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:195
+// [8] QList<QGraphicsItem *> items(const QPoint &)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsERK6QPoint(void *this_, QPoint* pos) {
+  auto rv = ((QGraphicsView*)this_)->items(*pos);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:196
+// [8] QList<QGraphicsItem *> items(int, int)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsEii(void *this_, int x, int y) {
+  auto rv = ((QGraphicsView*)this_)->items(x, y);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:197
+// [8] QList<QGraphicsItem *> items(const QRect &, Qt::ItemSelectionMode)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsERK5QRectN2Qt17ItemSelectionModeE(void *this_, QRect* rect, Qt::ItemSelectionMode mode) {
+  auto rv = ((QGraphicsView*)this_)->items(*rect, mode);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// since 4.3
+// /usr/include/qt/QtWidgets/qgraphicsview.h:198
+// [8] QList<QGraphicsItem *> items(int, int, int, int, Qt::ItemSelectionMode)
+#if QT_VERSION >= 0x040300
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsEiiiiN2Qt17ItemSelectionModeE(void *this_, int x, int y, int w, int h, Qt::ItemSelectionMode mode) {
+  auto rv = ((QGraphicsView*)this_)->items(x, y, w, h, mode);
+return new QList<QGraphicsItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040300
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:199
+// [8] QList<QGraphicsItem *> items(const QPolygon &, Qt::ItemSelectionMode)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsERK8QPolygonN2Qt17ItemSelectionModeE(void *this_, QPolygon* polygon, Qt::ItemSelectionMode mode) {
+  auto rv = ((QGraphicsView*)this_)->items(*polygon, mode);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:200
+// [8] QList<QGraphicsItem *> items(const QPainterPath &, Qt::ItemSelectionMode)
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsItem *>* C_ZNK13QGraphicsView5itemsERK12QPainterPathN2Qt17ItemSelectionModeE(void *this_, QPainterPath* path, Qt::ItemSelectionMode mode) {
+  auto rv = ((QGraphicsView*)this_)->items(*path, mode);
+return new QList<QGraphicsItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:201
 // [8] QGraphicsItem * itemAt(const QPoint &)
 extern "C" Q_DECL_EXPORT

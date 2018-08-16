@@ -759,6 +759,15 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:209
+// [-2] QList<QQuickItem *> childItems()
+extern "C" Q_DECL_EXPORT
+QList<QQuickItem *>* C_ZNK10QQuickItem10childItemsEv(void *this_) {
+  auto rv = ((QQuickItem*)this_)->childItems();
+return new QList<QQuickItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:211
 // [1] bool clip()
 extern "C" Q_DECL_EXPORT
