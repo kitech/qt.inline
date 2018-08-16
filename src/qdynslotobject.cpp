@@ -94,10 +94,10 @@ void QDynSlotObject::setCallbackSlot(void *fnptr, char* name, int argc, int*argt
     dyn_slot_obj_seq += 1;
     uint64_t rdseq = qrand(); rdseq |= uint64_t(qrand()) << 32;
     QByteArray rdseqbin((char*)&rdseq, 8);
-    char* rdseqhex = rdseqbin.toHex().toUpper().data();
+    std::string rdseqhex = rdseqbin.toHex().toUpper().data();
     // qDebug()<<rdseqbin.toHex().toUpper();
-    assert(strlen(rdseqhex) == 16);
-    strcpy(&this->qt_meta_stringdata.stringdata0[14], rdseqhex);
+    assert(rdseqhex.size() == 16);
+    strcpy(&this->qt_meta_stringdata.stringdata0[14], rdseqhex.data());
 
     this->staticMetaObject = {
          { &QObject::staticMetaObject, this->qt_meta_stringdata.data,
