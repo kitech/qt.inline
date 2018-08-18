@@ -24,6 +24,8 @@ MyQFile(const QString & name) : QFile(name) {}
 MyQFile(QObject * parent) : QFile(parent) {}
 // void QFile(const QString &, QObject *)
 MyQFile(const QString & name, QObject * parent) : QFile(name, parent) {}
+// void QFile(QFilePrivate &, QObject *)
+MyQFile(QFilePrivate & dd, QObject * parent) : QFile(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -32,6 +34,40 @@ MyQFile(const QString & name, QObject * parent) : QFile(name, parent) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFile10metaObjectEv(void *this_) {
   return (void*)((QFile*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:60
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QFile11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QFile*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:60
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN5QFile11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QFile*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:60
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QFile2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QFile::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:60
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QFile6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QFile::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -245,6 +281,14 @@ bool C_ZN5QFile4copyERK7QStringS2_(QString* fileName, QString* newName) {
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
   return (bool)((QFile*)this_)->open(flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:128
+// [1] bool open(FILE *, QIODevice::OpenMode, QFileDevice::FileHandleFlags)
+extern "C" Q_DECL_EXPORT
+bool C_ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_IN11QFileDevice14FileHandleFlagEE(void *this_, FILE * f, QFlags<QIODevice::OpenModeFlag> ioFlags, QFlags<QFileDevice::FileHandleFlag> handleFlags) {
+  return (bool)((QFile*)this_)->open(f, ioFlags, handleFlags);
 }
 
 // Public Visibility=Default Availability=Available

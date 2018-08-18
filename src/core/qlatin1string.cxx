@@ -302,6 +302,54 @@ void C_ZNK13QLatin1String4cendEv(void *this_) {
 #endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
+// since 5.10
+// /usr/include/qt/QtCore/qstring.h:149
+// [8] QLatin1String::const_reverse_iterator rbegin()
+#if QT_VERSION >= 0x050a00
+extern "C" Q_DECL_EXPORT
+QLatin1String::const_reverse_iterator* C_ZNK13QLatin1String6rbeginEv(void *this_) {
+  auto rv = ((QLatin1String*)this_)->rbegin();
+return new QLatin1String::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050a00
+
+// Public inline Visibility=Default Availability=Available
+// since 5.10
+// /usr/include/qt/QtCore/qstring.h:150
+// [8] QLatin1String::const_reverse_iterator crbegin()
+#if QT_VERSION >= 0x050a00
+extern "C" Q_DECL_EXPORT
+QLatin1String::const_reverse_iterator* C_ZNK13QLatin1String7crbeginEv(void *this_) {
+  auto rv = ((QLatin1String*)this_)->crbegin();
+return new QLatin1String::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050a00
+
+// Public inline Visibility=Default Availability=Available
+// since 5.10
+// /usr/include/qt/QtCore/qstring.h:151
+// [8] QLatin1String::const_reverse_iterator rend()
+#if QT_VERSION >= 0x050a00
+extern "C" Q_DECL_EXPORT
+QLatin1String::const_reverse_iterator* C_ZNK13QLatin1String4rendEv(void *this_) {
+  auto rv = ((QLatin1String*)this_)->rend();
+return new QLatin1String::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050a00
+
+// Public inline Visibility=Default Availability=Available
+// since 5.10
+// /usr/include/qt/QtCore/qstring.h:152
+// [8] QLatin1String::const_reverse_iterator crend()
+#if QT_VERSION >= 0x050a00
+extern "C" Q_DECL_EXPORT
+QLatin1String::const_reverse_iterator* C_ZNK13QLatin1String5crendEv(void *this_) {
+  auto rv = ((QLatin1String*)this_)->crend();
+return new QLatin1String::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050a00
+
+// Public inline Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtCore/qstring.h:154
 // [16] QLatin1String mid(int)

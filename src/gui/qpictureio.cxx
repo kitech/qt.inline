@@ -236,4 +236,30 @@ void* C_ZN10QPictureIO13pictureFormatEP9QIODevice(QIODevice * arg0) {
 return new QByteArray(rv);
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:164
+// [8] QList<QByteArray> inputFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN10QPictureIO12inputFormatsEv() {
+  auto rv = QPictureIO::inputFormats();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:165
+// [8] QList<QByteArray> outputFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN10QPictureIO13outputFormatsEv() {
+  auto rv = QPictureIO::outputFormats();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:167
+// [-2] void defineIOHandler(const char *, const char *, const char *, picture_io_handler, picture_io_handler)
+extern "C" Q_DECL_EXPORT
+void C_ZN10QPictureIO15defineIOHandlerEPKcS1_S1_PFvPS_ES4_(const char * format, const char * header, const char * flags, picture_io_handler read_picture, picture_io_handler write_picture) {
+  QPictureIO::defineIOHandler(format, header, flags, read_picture, write_picture);
+}
+
 //  main block end

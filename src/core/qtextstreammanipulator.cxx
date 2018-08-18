@@ -16,7 +16,27 @@
 class Q_DECL_EXPORT MyQTextStreamManipulator : public QTextStreamManipulator {
 public:
   virtual ~MyQTextStreamManipulator() {}
+// void QTextStreamManipulator(QTSMFI, int)
+MyQTextStreamManipulator(QTSMFI m, int a) : QTextStreamManipulator(m, a) {}
+// void QTextStreamManipulator(QTSMFC, QChar)
+MyQTextStreamManipulator(QTSMFC m, QChar c) : QTextStreamManipulator(m, c) {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:215
+// [-2] void QTextStreamManipulator(QTSMFI, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QTextStreamManipulatorC2EM11QTextStreamFviEi(QTSMFI m, int a) {
+  return  new QTextStreamManipulator(m, a);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:216
+// [-2] void QTextStreamManipulator(QTSMFC, QChar)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QTextStreamManipulatorC2EM11QTextStreamFv5QCharES1_(QTSMFC m, QChar* c) {
+  return  new QTextStreamManipulator(m, *c);
+}
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:217

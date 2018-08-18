@@ -215,6 +215,8 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
   }
   }
 
+// void QMenu(QMenuPrivate &, QWidget *)
+MyQMenu(QMenuPrivate & dd, QWidget * parent) : QMenu(dd, parent) {}
 };
 
 // Protected Visibility=Default Availability=Available
@@ -351,6 +353,40 @@ void C_ZNK5QMenu15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void *this_,
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QMenu10metaObjectEv(void *this_) {
   return (void*)((QMenu*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:64
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QMenu11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMenu*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:64
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN5QMenu11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMenu*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:64
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QMenu2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMenu::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:64
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QMenu6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMenu::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -631,6 +667,14 @@ void* C_ZN5QMenu4execERK6QPointP7QAction(void *this_, QPoint* pos, QAction * at)
   return (void*)((QMenu*)this_)->exec(*pos, at);
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:194
+// [8] QAction * exec(QList<QAction *>, const QPoint &, QAction *, QWidget *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QMenu4execE5QListIP7QActionERK6QPointS2_P7QWidget(QList<QAction *> actions, QPoint* pos, QAction * at, QWidget * parent) {
+  return (void*)QMenu::exec(actions, *pos, at, parent);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:197
 // [8] QSize sizeHint()
@@ -705,6 +749,22 @@ void C_ZN5QMenu7setIconERK5QIcon(void *this_, QIcon* icon) {
 extern "C" Q_DECL_EXPORT
 void C_ZN5QMenu14setNoReplayForEP7QWidget(void *this_, QWidget * widget) {
   ((QMenu*)this_)->setNoReplayFor(widget);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:211
+// [8] QPlatformMenu * platformMenu()
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QMenu12platformMenuEv(void *this_) {
+  return (void*)((QMenu*)this_)->platformMenu();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:212
+// [-2] void setPlatformMenu(QPlatformMenu *)
+extern "C" Q_DECL_EXPORT
+void C_ZN5QMenu15setPlatformMenuEP13QPlatformMenu(void *this_, QPlatformMenu * platformMenu) {
+  ((QMenu*)this_)->setPlatformMenu(platformMenu);
 }
 
 // Public Visibility=Default Availability=Available

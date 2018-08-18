@@ -18,6 +18,8 @@ public:
   virtual ~MyQAbstractTextDocumentLayout() {}
 // void QAbstractTextDocumentLayout(QTextDocument *)
 MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout(doc) {}
+// void QAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate &, QTextDocument *)
+MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDocument * arg1) : QAbstractTextDocumentLayout(arg0, arg1) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // void documentChanged(int, int, int)
   virtual void documentChanged(int from, int charsRemoved, int charsAdded) {
@@ -146,6 +148,40 @@ void* C_ZNK27QAbstractTextDocumentLayout10metaObjectEv(void *this_) {
   return (void*)((QAbstractTextDocumentLayout*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:60
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QAbstractTextDocumentLayout11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAbstractTextDocumentLayout*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:60
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN27QAbstractTextDocumentLayout11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAbstractTextDocumentLayout*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:60
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QAbstractTextDocumentLayout2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractTextDocumentLayout::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:60
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QAbstractTextDocumentLayout6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractTextDocumentLayout::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:64
 // [-2] void QAbstractTextDocumentLayout(QTextDocument *)
@@ -162,6 +198,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayoutD2Ev(void *this_) {
   delete (QAbstractTextDocumentLayout*)(this_);
 }
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:84
+// [-2] void draw(QPainter *, const QAbstractTextDocumentLayout::PaintContext &)
+extern "C" Q_DECL_EXPORT
+void C_ZN27QAbstractTextDocumentLayout4drawEP8QPainterRKNS_12PaintContextE(void *this_, QPainter * painter, QAbstractTextDocumentLayout::PaintContext* context) {
+  ((QAbstractTextDocumentLayout*)this_)->draw(painter, *context);
+}
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:85
 // [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)

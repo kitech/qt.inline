@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QGraphicsSceneEvent is pure virtual: false
-// QGraphicsSceneEvent has virtual projected: false
+// QGraphicsSceneEvent has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -19,14 +19,59 @@ public:
   virtual ~MyQGraphicsSceneEvent() {}
 // void QGraphicsSceneEvent(QEvent::Type)
 MyQGraphicsSceneEvent(QEvent::Type type_) : QGraphicsSceneEvent(type_) {}
+// void QGraphicsSceneEvent(QGraphicsSceneEventPrivate &, QEvent::Type)
+MyQGraphicsSceneEvent(QGraphicsSceneEventPrivate & dd, QEvent::Type type_) : QGraphicsSceneEvent(dd, type_) {}
+// Protected inline Visibility=Default Availability=Available
+// QGraphicsSceneEventPrivate * d_func()
+  virtual QGraphicsSceneEventPrivate * d_func() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QGraphicsSceneEventPrivate *)(irv);
+      // PointerPointerQGraphicsSceneEventPrivate *
+    } else {
+    return QGraphicsSceneEvent::d_func();
+  }
+  }
+
+// Protected inline Visibility=Default Availability=Available
+// const QGraphicsSceneEventPrivate * d_func()
+  virtual const QGraphicsSceneEventPrivate * d_func() const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (const QGraphicsSceneEventPrivate *)(irv);
+      // PointerPointerconst QGraphicsSceneEventPrivate *
+    } else {
+    return QGraphicsSceneEvent::d_func();
+  }
+  }
+
 };
+
+// Protected inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:76
+// [8] QGraphicsSceneEventPrivate * d_func()
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QGraphicsSceneEvent6d_funcEv(void *this_) {
+  return (void*)((QGraphicsSceneEvent*)this_)->QGraphicsSceneEvent::d_func();
+}
+
+// Protected inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:76
+// [8] const QGraphicsSceneEventPrivate * d_func()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK19QGraphicsSceneEvent6d_funcEv(void *this_) {
+  return (void*)((QGraphicsSceneEvent*)this_)->QGraphicsSceneEvent::d_func();
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:67
 // [-2] void QGraphicsSceneEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsSceneEventC2EN6QEvent4TypeE(QEvent::Type type_) {
-  return  new QGraphicsSceneEvent(type_);
+  auto _nilp = (MyQGraphicsSceneEvent*)(0);
+  return  new MyQGraphicsSceneEvent(type_);
 }
 
 // Public virtual Visibility=Default Availability=Available

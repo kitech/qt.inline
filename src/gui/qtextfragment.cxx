@@ -16,9 +16,21 @@
 class Q_DECL_EXPORT MyQTextFragment : public QTextFragment {
 public:
   virtual ~MyQTextFragment() {}
+// void QTextFragment(const QTextDocumentPrivate *, int, int)
+MyQTextFragment(const QTextDocumentPrivate * priv, int f, int fe) : QTextFragment(priv, f, fe) {}
 // void QTextFragment()
 MyQTextFragment() : QTextFragment() {}
+// void QTextFragment(const QTextFragment &)
+MyQTextFragment(const QTextFragment & o) : QTextFragment(o) {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:306
+// [-2] void QTextFragment(const QTextDocumentPrivate *, int, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QTextFragmentC2EPK20QTextDocumentPrivateii(const QTextDocumentPrivate * priv, int f, int fe) {
+  return  new QTextFragment(priv, f, fe);
+}
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:307
@@ -26,6 +38,14 @@ MyQTextFragment() : QTextFragment() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QTextFragmentC2Ev() {
   return  new QTextFragment();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:308
+// [-2] void QTextFragment(const QTextFragment &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QTextFragmentC2ERKS_(QTextFragment* o) {
+  return  new QTextFragment(*o);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -117,6 +137,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextFragment4textEv(void *this_) {
   auto rv = ((QTextFragment*)this_)->text();
 return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:326
+// [-2] QList<QGlyphRun> glyphRuns(int, int)
+extern "C" Q_DECL_EXPORT
+QList<QGlyphRun>* C_ZNK13QTextFragment9glyphRunsEii(void *this_, int from, int length) {
+  auto rv = ((QTextFragment*)this_)->glyphRuns(from, length);
+return new QList<QGlyphRun>(rv);
 }
 
 

@@ -18,6 +18,8 @@ public:
   virtual ~MyQSharedData() {}
 // void QSharedData()
 MyQSharedData() : QSharedData() {}
+// void QSharedData(const QSharedData &)
+MyQSharedData(const QSharedData & arg0) : QSharedData(arg0) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQSharedData() : QSharedData() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QSharedDataC2Ev() {
   return  new QSharedData();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qshareddata.h:61
+// [-2] void QSharedData(const QSharedData &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QSharedDataC2ERKS_(QSharedData* arg0) {
+  return  new QSharedData(*arg0);
 }
 
 

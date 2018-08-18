@@ -18,6 +18,8 @@ public:
   virtual ~MyQImageEncoderSettings() {}
 // void QImageEncoderSettings()
 MyQImageEncoderSettings() : QImageEncoderSettings() {}
+// void QImageEncoderSettings(const QImageEncoderSettings &)
+MyQImageEncoderSettings(const QImageEncoderSettings & other) : QImageEncoderSettings(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQImageEncoderSettings() : QImageEncoderSettings() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QImageEncoderSettingsC2Ev() {
   return  new QImageEncoderSettings();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:144
+// [-2] void QImageEncoderSettings(const QImageEncoderSettings &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QImageEncoderSettingsC2ERKS_(QImageEncoderSettings* other) {
+  return  new QImageEncoderSettings(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -136,11 +146,28 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:165
+// [8] QVariantMap encodingOptions()
+extern "C" Q_DECL_EXPORT
+QVariantMap* C_ZNK21QImageEncoderSettings15encodingOptionsEv(void *this_) {
+  auto rv = ((QImageEncoderSettings*)this_)->encodingOptions();
+return new QVariantMap(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaencodersettings.h:166
 // [-2] void setEncodingOption(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QImageEncoderSettings17setEncodingOptionERK7QStringRK8QVariant(void *this_, QString* option, QVariant* value) {
   ((QImageEncoderSettings*)this_)->setEncodingOption(*option, *value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:167
+// [-2] void setEncodingOptions(const QVariantMap &)
+extern "C" Q_DECL_EXPORT
+void C_ZN21QImageEncoderSettings18setEncodingOptionsERK4QMapI7QString8QVariantE(void *this_, const QVariantMap & options) {
+  ((QImageEncoderSettings*)this_)->setEncodingOptions(options);
 }
 
 //  main block end

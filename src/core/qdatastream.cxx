@@ -173,6 +173,15 @@ void C_ZN11QDataStream10setVersionEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:148
+// [32] QDataStream & operator>>(qint8 &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QDataStreamrsERa(void *this_, qint8 & i) {
+  auto& rv = ((QDataStream*)this_)->operator>>(i);
+return &rv;
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:149
 // [32] QDataStream & operator>>(quint8 &)
 extern "C" Q_DECL_EXPORT
@@ -235,6 +244,15 @@ void* C_ZN11QDataStreamrsERy(void *this_, quint64 & i) {
 return &rv;
 }
 
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:156
+// [32] QDataStream & operator>>(std::nullptr_t &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QDataStreamrsERDn(void *this_, std::nullptr_t & ptr) {
+  auto& rv = ((QDataStream*)this_)->operator>>(ptr);
+return &rv;
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:158
 // [32] QDataStream & operator>>(bool &)
@@ -268,6 +286,15 @@ return &rv;
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamrsERPc(void *this_, char *& str) {
   auto& rv = ((QDataStream*)this_)->operator>>(str);
+return &rv;
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:164
+// [32] QDataStream & operator<<(qint8)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QDataStreamlsEa(void *this_, qint8 i) {
+  auto& rv = ((QDataStream*)this_)->operator<<(i);
 return &rv;
 }
 
@@ -331,6 +358,15 @@ return &rv;
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDataStreamlsEy(void *this_, quint64 i) {
   auto& rv = ((QDataStream*)this_)->operator<<(i);
+return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:172
+// [32] QDataStream & operator<<(std::nullptr_t)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QDataStreamlsEDn(void *this_, std::nullptr_t arg0) {
+  auto& rv = ((QDataStream*)this_)->operator<<(arg0);
 return &rv;
 }
 

@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkConfiguration() {}
 // void QNetworkConfiguration()
 MyQNetworkConfiguration() : QNetworkConfiguration() {}
+// void QNetworkConfiguration(const QNetworkConfiguration &)
+MyQNetworkConfiguration(const QNetworkConfiguration & other) : QNetworkConfiguration(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQNetworkConfiguration() : QNetworkConfiguration() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkConfigurationC2Ev() {
   return  new QNetworkConfiguration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:57
+// [-2] void QNetworkConfiguration(const QNetworkConfiguration &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QNetworkConfigurationC2ERKS_(QNetworkConfiguration* other) {
+  return  new QNetworkConfiguration(*other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -149,6 +159,15 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QNetworkConfiguration18isRoamingAvailableEv(void *this_) {
   return (bool)((QNetworkConfiguration*)this_)->isRoamingAvailable();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:118
+// [-2] QList<QNetworkConfiguration> children()
+extern "C" Q_DECL_EXPORT
+QList<QNetworkConfiguration>* C_ZNK21QNetworkConfiguration8childrenEv(void *this_) {
+  auto rv = ((QNetworkConfiguration*)this_)->children();
+return new QList<QNetworkConfiguration>(rv);
 }
 
 // Public Visibility=Default Availability=Available

@@ -19,6 +19,10 @@ public:
   virtual ~MyQXmlStreamNotationDeclaration() {}
 // void QXmlStreamNotationDeclaration()
 MyQXmlStreamNotationDeclaration() : QXmlStreamNotationDeclaration() {}
+// void QXmlStreamNotationDeclaration(const QXmlStreamNotationDeclaration &)
+MyQXmlStreamNotationDeclaration(const QXmlStreamNotationDeclaration & arg0) : QXmlStreamNotationDeclaration(arg0) {}
+// void QXmlStreamNotationDeclaration(QXmlStreamNotationDeclaration &&)
+MyQXmlStreamNotationDeclaration(QXmlStreamNotationDeclaration && other) : QXmlStreamNotationDeclaration(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +40,22 @@ extern "C" Q_DECL_EXPORT
 void C_ZN29QXmlStreamNotationDeclarationD2Ev(void *this_) {
   delete (QXmlStreamNotationDeclaration*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:244
+// [-2] void QXmlStreamNotationDeclaration(const QXmlStreamNotationDeclaration &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN29QXmlStreamNotationDeclarationC2ERKS_(QXmlStreamNotationDeclaration* arg0) {
+  return  new QXmlStreamNotationDeclaration(*arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:245
+// [-2] void QXmlStreamNotationDeclaration(QXmlStreamNotationDeclaration &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN29QXmlStreamNotationDeclarationC2EOS_(QXmlStreamNotationDeclaration && other) {
+  return  new QXmlStreamNotationDeclaration(other);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:253
 // [56] QXmlStreamNotationDeclaration & operator=(const QXmlStreamNotationDeclaration &)

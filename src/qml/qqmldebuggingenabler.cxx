@@ -88,6 +88,14 @@ bool C_ZN20QQmlDebuggingEnabler22connectToLocalDebuggerERK7QStringNS_9StartModeE
   return (bool)QQmlDebuggingEnabler::connectToLocalDebugger(*socketFileName, mode);
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmldebug.h:71
+// [1] bool startDebugConnector(const QString &, const QVariantHash &)
+extern "C" Q_DECL_EXPORT
+bool C_ZN20QQmlDebuggingEnabler19startDebugConnectorERK7QStringRK5QHashIS0_8QVariantE(QString* pluginName, const QVariantHash & configuration) {
+  return (bool)QQmlDebuggingEnabler::startDebugConnector(*pluginName, configuration);
+}
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN20QQmlDebuggingEnablerD2Ev(void *this_) {

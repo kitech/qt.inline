@@ -32,6 +32,21 @@ MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, arg
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
+// bool compressEvent(QEvent *, QObject *, QPostEventList *)
+  virtual bool compressEvent(QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compressEvent", &handled, 3, (uint64_t)arg0, (uint64_t)receiver, (uint64_t)arg2, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    return QGuiApplication::compressEvent(arg0, receiver, arg2);
+  }
+  }
+
+// void QGuiApplication(QGuiApplicationPrivate &)
+MyQGuiApplication(QGuiApplicationPrivate & p) : QGuiApplication(p) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -42,12 +57,54 @@ bool C_ZN15QGuiApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QGuiApplication*)this_)->QGuiApplication::event(arg0);
 }
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:193
+// [1] bool compressEvent(QEvent *, QObject *, QPostEventList *)
+extern "C" Q_DECL_EXPORT
+bool C_ZN15QGuiApplication13compressEventEP6QEventP7QObjectP14QPostEventList(void *this_, QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
+  return (bool)((QGuiApplication*)this_)->QGuiApplication::compressEvent(arg0, receiver, arg2);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:74
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGuiApplication10metaObjectEv(void *this_) {
   return (void*)((QGuiApplication*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:74
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGuiApplication11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QGuiApplication*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:74
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QGuiApplication11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QGuiApplication*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:74
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGuiApplication2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGuiApplication::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:74
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGuiApplication6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGuiApplication::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -182,6 +239,15 @@ void* C_ZN15QGuiApplication11focusObjectEv() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGuiApplication13primaryScreenEv() {
   return (void*)QGuiApplication::primaryScreen();
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:112
+// [-2] QList<QScreen *> screens()
+extern "C" Q_DECL_EXPORT
+QList<QScreen *>* C_ZN15QGuiApplication7screensEv() {
+  auto rv = QGuiApplication::screens();
+return new QList<QScreen *>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -363,6 +429,14 @@ bool C_ZN15QGuiApplication20desktopSettingsAwareEv() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGuiApplication11inputMethodEv() {
   return (void*)QGuiApplication::inputMethod();
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:150
+// [8] QPlatformNativeInterface * platformNativeInterface()
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGuiApplication23platformNativeInterfaceEv() {
+  return (void*)QGuiApplication::platformNativeInterface();
 }
 
 // Public static Visibility=Default Availability=Available

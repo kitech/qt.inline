@@ -19,6 +19,15 @@ public:
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:61
+// [8] QList<QByteArray> availableDevices(QAudio::Mode)
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK28QAudioSystemFactoryInterface16availableDevicesEN6QAudio4ModeE(void *this_, QAudio::Mode arg0) {
+  auto rv = ((QAudioSystemFactoryInterface*)this_)->availableDevices(arg0);
+return new QList<QByteArray>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:62
 // [8] QAbstractAudioInput * createInput(const QByteArray &)
 extern "C" Q_DECL_EXPORT

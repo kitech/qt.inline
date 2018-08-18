@@ -17,7 +17,17 @@
 class Q_DECL_EXPORT MyQGestureEvent : public QGestureEvent {
 public:
   virtual ~MyQGestureEvent() {}
+// void QGestureEvent(const QList<QGesture *> &)
+MyQGestureEvent(const QList<QGesture *> & gestures) : QGestureEvent(gestures) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:277
+// [-2] void QGestureEvent(const QList<QGesture *> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QGestureEventC2ERK5QListIP8QGestureE(const QList<QGesture *> & gestures) {
+  return  new QGestureEvent(gestures);
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:278
@@ -27,11 +37,38 @@ void C_ZN13QGestureEventD2Ev(void *this_) {
   delete (QGestureEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:280
+// [8] QList<QGesture *> gestures()
+extern "C" Q_DECL_EXPORT
+QList<QGesture *>* C_ZNK13QGestureEvent8gesturesEv(void *this_) {
+  auto rv = ((QGestureEvent*)this_)->gestures();
+return new QList<QGesture *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:281
 // [8] QGesture * gesture(Qt::GestureType)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QGestureEvent7gestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type_) {
   return (void*)((QGestureEvent*)this_)->gesture(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:283
+// [8] QList<QGesture *> activeGestures()
+extern "C" Q_DECL_EXPORT
+QList<QGesture *>* C_ZNK13QGestureEvent14activeGesturesEv(void *this_) {
+  auto rv = ((QGestureEvent*)this_)->activeGestures();
+return new QList<QGesture *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:284
+// [8] QList<QGesture *> canceledGestures()
+extern "C" Q_DECL_EXPORT
+QList<QGesture *>* C_ZNK13QGestureEvent16canceledGesturesEv(void *this_) {
+  auto rv = ((QGestureEvent*)this_)->canceledGestures();
+return new QList<QGesture *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

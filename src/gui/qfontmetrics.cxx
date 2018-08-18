@@ -20,6 +20,8 @@ public:
 MyQFontMetrics(const QFont & arg0) : QFontMetrics(arg0) {}
 // void QFontMetrics(const QFont &, QPaintDevice *)
 MyQFontMetrics(const QFont & arg0, QPaintDevice * pd) : QFontMetrics(arg0, pd) {}
+// void QFontMetrics(const QFontMetrics &)
+MyQFontMetrics(const QFontMetrics & arg0) : QFontMetrics(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN12QFontMetricsC2ERK5QFont(QFont* arg0) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QFontMetricsC2ERK5QFontP12QPaintDevice(QFont* arg0, QPaintDevice * pd) {
   return  new QFontMetrics(*arg0, pd);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:63
+// [-2] void QFontMetrics(const QFontMetrics &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QFontMetricsC2ERKS_(QFontMetrics* arg0) {
+  return  new QFontMetrics(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

@@ -30,6 +30,40 @@ void* C_ZNK13QPluginLoader10metaObjectEv(void *this_) {
   return (void*)((QPluginLoader*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:58
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QPluginLoader11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QPluginLoader*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:58
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QPluginLoader11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QPluginLoader*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:58
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QPluginLoader2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QPluginLoader::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:58
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QPluginLoader6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QPluginLoader::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:62
 // [-2] void QPluginLoader(QObject *)
@@ -76,6 +110,15 @@ return new QJsonObject(rv);
 extern "C" Q_DECL_EXPORT
 void C_ZN13QPluginLoader15staticInstancesEv() {
   auto rv = QPluginLoader::staticInstances();
+/*return rv;*/
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:70
+// [-2] QVector<QStaticPlugin> staticPlugins()
+extern "C" Q_DECL_EXPORT
+void C_ZN13QPluginLoader13staticPluginsEv() {
+  auto rv = QPluginLoader::staticPlugins();
 /*return rv;*/
 }
 

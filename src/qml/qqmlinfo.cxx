@@ -16,7 +16,17 @@
 class Q_DECL_EXPORT MyQQmlInfo : public QQmlInfo {
 public:
   virtual ~MyQQmlInfo() {}
+// void QQmlInfo(const QQmlInfo &)
+MyQQmlInfo(const QQmlInfo & arg0) : QQmlInfo(arg0) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:75
+// [-2] void QQmlInfo(const QQmlInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QQmlInfoC2ERKS_(QQmlInfo* arg0) {
+  return  new QQmlInfo(*arg0);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:76
@@ -193,6 +203,15 @@ return &rv;
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QQmlInfolsEPKv(void *this_, const void * t) {
   auto& rv = ((QQmlInfo*)this_)->operator<<(t);
+return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:97
+// [16] QQmlInfo & operator<<(QTextStreamFunction)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QQmlInfolsEPFR11QTextStreamS1_E(void *this_, QTextStreamFunction f) {
+  auto& rv = ((QQmlInfo*)this_)->operator<<(f);
 return &rv;
 }
 

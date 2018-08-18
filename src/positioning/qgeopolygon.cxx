@@ -19,6 +19,10 @@ public:
   virtual ~MyQGeoPolygon() {}
 // void QGeoPolygon()
 MyQGeoPolygon() : QGeoPolygon() {}
+// void QGeoPolygon(const QList<QGeoCoordinate> &)
+MyQGeoPolygon(const QList<QGeoCoordinate> & path) : QGeoPolygon(path) {}
+// void QGeoPolygon(const QGeoPolygon &)
+MyQGeoPolygon(const QGeoPolygon & other) : QGeoPolygon(other) {}
 // void QGeoPolygon(const QGeoShape &)
 MyQGeoPolygon(const QGeoShape & other) : QGeoPolygon(other) {}
 };
@@ -29,6 +33,22 @@ MyQGeoPolygon(const QGeoShape & other) : QGeoPolygon(other) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QGeoPolygonC2Ev() {
   return  new QGeoPolygon();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:57
+// [-2] void QGeoPolygon(const QList<QGeoCoordinate> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QGeoPolygonC2ERK5QListI14QGeoCoordinateE(const QList<QGeoCoordinate> & path) {
+  return  new QGeoPolygon(path);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:58
+// [-2] void QGeoPolygon(const QGeoPolygon &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QGeoPolygonC2ERKS_(QGeoPolygon* other) {
+  return  new QGeoPolygon(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -69,6 +89,23 @@ bool C_ZNK11QGeoPolygoneqERKS_(void *this_, QGeoPolygon* other) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QGeoPolygonneERKS_(void *this_, QGeoPolygon* other) {
   return (bool)((QGeoPolygon*)this_)->operator!=(*other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:71
+// [-2] void setPath(const QList<QGeoCoordinate> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QGeoPolygon7setPathERK5QListI14QGeoCoordinateE(void *this_, const QList<QGeoCoordinate> & path) {
+  ((QGeoPolygon*)this_)->setPath(path);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:72
+// [8] const QList<QGeoCoordinate> & path()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QGeoPolygon4pathEv(void *this_) {
+  auto& rv = ((QGeoPolygon*)this_)->path();
+return new QList<QGeoCoordinate>(rv);
 }
 
 // Public Visibility=Default Availability=Available

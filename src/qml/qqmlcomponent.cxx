@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QQmlComponent is pure virtual: false
-// QQmlComponent has virtual projected: false
+// QQmlComponent has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -29,7 +29,49 @@ MyQQmlComponent(QQmlEngine * arg0, const QString & fileName, QQmlComponent::Comp
 MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QObject * parent) : QQmlComponent(arg0, url, parent) {}
 // void QQmlComponent(QQmlEngine *, const QUrl &, QQmlComponent::CompilationMode, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QQmlComponent::CompilationMode mode, QObject * parent) : QQmlComponent(arg0, url, mode, parent) {}
+// void QQmlComponent(QQmlComponentPrivate &, QObject *)
+MyQQmlComponent(QQmlComponentPrivate & dd, QObject * parent) : QQmlComponent(dd, parent) {}
+// Protected Visibility=Default Availability=Available
+// void createObject(QQmlV4Function *)
+  virtual void createObject(QQmlV4Function * arg0) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QQmlComponent::createObject(arg0);
+  }
+  }
+
+// Protected Visibility=Default Availability=Available
+// void incubateObject(QQmlV4Function *)
+  virtual void incubateObject(QQmlV4Function * arg0) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incubateObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QQmlComponent::incubateObject(arg0);
+  }
+  }
+
 };
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:126
+// [-2] void createObject(QQmlV4Function *)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QQmlComponent12createObjectEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
+  ((QQmlComponent*)this_)->QQmlComponent::createObject(arg0);
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:127
+// [-2] void incubateObject(QQmlV4Function *)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QQmlComponent14incubateObjectEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
+  ((QQmlComponent*)this_)->QQmlComponent::incubateObject(arg0);
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:69
@@ -39,12 +81,47 @@ void* C_ZNK13QQmlComponent10metaObjectEv(void *this_) {
   return (void*)((QQmlComponent*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:69
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QQmlComponent11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQmlComponent*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:69
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QQmlComponent11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQmlComponent*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:69
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QQmlComponent2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQmlComponent::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:69
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QQmlComponent6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQmlComponent::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:80
 // [-2] void QQmlComponent(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP7QObject(QObject * parent) {
-  return  new QQmlComponent(parent);
+  auto _nilp = (MyQQmlComponent*)(0);
+  return  new MyQQmlComponent(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -52,7 +129,8 @@ void* C_ZN13QQmlComponentC2EP7QObject(QObject * parent) {
 // [-2] void QQmlComponent(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineP7QObject(QQmlEngine * arg0, QObject * parent) {
-  return  new QQmlComponent(arg0, parent);
+  auto _nilp = (MyQQmlComponent*)(0);
+  return  new MyQQmlComponent(arg0, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -60,7 +138,8 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineP7QObject(QQmlEngine * arg0, QObject * 
 // [-2] void QQmlComponent(QQmlEngine *, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringP7QObject(QQmlEngine * arg0, QString* fileName, QObject * parent) {
-  return  new QQmlComponent(arg0, *fileName, parent);
+  auto _nilp = (MyQQmlComponent*)(0);
+  return  new MyQQmlComponent(arg0, *fileName, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -68,7 +147,8 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringP7QObject(QQmlEngine * arg0, 
 // [-2] void QQmlComponent(QQmlEngine *, const QString &, QQmlComponent::CompilationMode, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringNS_15CompilationModeEP7QObject(QQmlEngine * arg0, QString* fileName, QQmlComponent::CompilationMode mode, QObject * parent) {
-  return  new QQmlComponent(arg0, *fileName, mode, parent);
+  auto _nilp = (MyQQmlComponent*)(0);
+  return  new MyQQmlComponent(arg0, *fileName, mode, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -76,7 +156,8 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringNS_15CompilationModeEP7QObjec
 // [-2] void QQmlComponent(QQmlEngine *, const QUrl &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlP7QObject(QQmlEngine * arg0, QUrl* url, QObject * parent) {
-  return  new QQmlComponent(arg0, *url, parent);
+  auto _nilp = (MyQQmlComponent*)(0);
+  return  new MyQQmlComponent(arg0, *url, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -84,7 +165,8 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlP7QObject(QQmlEngine * arg0, QUr
 // [-2] void QQmlComponent(QQmlEngine *, const QUrl &, QQmlComponent::CompilationMode, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlNS_15CompilationModeEP7QObject(QQmlEngine * arg0, QUrl* url, QQmlComponent::CompilationMode mode, QObject * parent) {
-  return  new QQmlComponent(arg0, *url, mode, parent);
+  auto _nilp = (MyQQmlComponent*)(0);
+  return  new MyQQmlComponent(arg0, *url, mode, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -132,6 +214,15 @@ bool C_ZNK13QQmlComponent7isErrorEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QQmlComponent9isLoadingEv(void *this_) {
   return (bool)((QQmlComponent*)this_)->isLoading();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcomponent.h:97
+// [-2] QList<QQmlError> errors()
+extern "C" Q_DECL_EXPORT
+QList<QQmlError>* C_ZNK13QQmlComponent6errorsEv(void *this_) {
+  auto rv = ((QQmlComponent*)this_)->errors();
+return new QList<QQmlError>(rv);
 }
 
 // Public Visibility=Default Availability=Available

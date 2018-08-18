@@ -46,6 +46,8 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
   }
   }
 
+// void QTextDocument(QTextDocumentPrivate &, QObject *)
+MyQTextDocument(QTextDocumentPrivate & dd, QObject * parent) : QTextDocument(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -71,6 +73,40 @@ return new QVariant(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument10metaObjectEv(void *this_) {
   return (void*)((QTextDocument*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:99
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QTextDocument11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTextDocument*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:99
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QTextDocument11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTextDocument*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:99
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QTextDocument2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextDocument::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:99
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QTextDocument6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextDocument::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -515,6 +551,15 @@ void C_ZN13QTextDocument11addResourceEiRK4QUrlRK8QVariant(void *this_, int type_
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:219
+// [-2] QVector<QTextFormat> allFormats()
+extern "C" Q_DECL_EXPORT
+void C_ZNK13QTextDocument10allFormatsEv(void *this_) {
+  auto rv = ((QTextDocument*)this_)->allFormats();
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:221
 // [-2] void markContentsDirty(int, int)
 extern "C" Q_DECL_EXPORT
@@ -905,6 +950,14 @@ void C_ZN13QTextDocument14appendUndoItemEP17QAbstractUndoItem(void *this_, QAbst
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument11setModifiedEb(void *this_, bool m) {
   ((QTextDocument*)this_)->setModified(m);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:297
+// [8] QTextDocumentPrivate * docHandle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK13QTextDocument9docHandleEv(void *this_) {
+  return (void*)((QTextDocument*)this_)->docHandle();
 }
 
 //  main block end

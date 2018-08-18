@@ -23,6 +23,8 @@ MyQGeoCoordinate() : QGeoCoordinate() {}
 MyQGeoCoordinate(double latitude, double longitude) : QGeoCoordinate(latitude, longitude) {}
 // void QGeoCoordinate(double, double, double)
 MyQGeoCoordinate(double latitude, double longitude, double altitude) : QGeoCoordinate(latitude, longitude, altitude) {}
+// void QGeoCoordinate(const QGeoCoordinate &)
+MyQGeoCoordinate(const QGeoCoordinate & other) : QGeoCoordinate(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,14 @@ void* C_ZN14QGeoCoordinateC2Edd(double latitude, double longitude) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QGeoCoordinateC2Eddd(double latitude, double longitude, double altitude) {
   return  new QGeoCoordinate(latitude, longitude, altitude);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeocoordinate.h:83
+// [-2] void QGeoCoordinate(const QGeoCoordinate &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QGeoCoordinateC2ERKS_(QGeoCoordinate* other) {
+  return  new QGeoCoordinate(*other);
 }
 
 // Public Visibility=Default Availability=Available

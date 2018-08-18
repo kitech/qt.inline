@@ -19,6 +19,8 @@ public:
   virtual ~MyQGlyphRun() {}
 // void QGlyphRun()
 MyQGlyphRun() : QGlyphRun() {}
+// void QGlyphRun(const QGlyphRun &)
+MyQGlyphRun(const QGlyphRun & other) : QGlyphRun(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQGlyphRun() : QGlyphRun() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QGlyphRunC2Ev() {
   return  new QGlyphRun();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:68
+// [-2] void QGlyphRun(const QGlyphRun &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QGlyphRunC2ERKS_(QGlyphRun* other) {
+  return  new QGlyphRun(*other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -88,6 +98,40 @@ void C_ZN9QGlyphRun10setRawFontERK8QRawFont(void *this_, QRawFont* rawFont) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGlyphRun10setRawDataEPKjPK7QPointFi(void *this_, const quint32 * glyphIndexArray, const QPointF * glyphPositionArray, int size) {
   ((QGlyphRun*)this_)->setRawData(glyphIndexArray, glyphPositionArray, size);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:84
+// [8] QVector<quint32> glyphIndexes()
+extern "C" Q_DECL_EXPORT
+void C_ZNK9QGlyphRun12glyphIndexesEv(void *this_) {
+  auto rv = ((QGlyphRun*)this_)->glyphIndexes();
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:85
+// [-2] void setGlyphIndexes(const QVector<quint32> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE(void *this_, const QVector<quint32> & glyphIndexes) {
+  ((QGlyphRun*)this_)->setGlyphIndexes(glyphIndexes);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:87
+// [8] QVector<QPointF> positions()
+extern "C" Q_DECL_EXPORT
+void C_ZNK9QGlyphRun9positionsEv(void *this_) {
+  auto rv = ((QGlyphRun*)this_)->positions();
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:88
+// [-2] void setPositions(const QVector<QPointF> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE(void *this_, const QVector<QPointF> & positions) {
+  ((QGlyphRun*)this_)->setPositions(positions);
 }
 
 // Public Visibility=Default Availability=Available

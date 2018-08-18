@@ -403,6 +403,30 @@ return new QQuaternion(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.5
+// /usr/include/qt/QtGui/qquaternion.h:144
+// [36] QMatrix3x3 toRotationMatrix()
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+QMatrix3x3* C_ZNK11QQuaternion16toRotationMatrixEv(void *this_) {
+  auto rv = ((QQuaternion*)this_)->toRotationMatrix();
+return new QMatrix3x3(rv);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public static Visibility=Default Availability=Available
+// since 5.5
+// /usr/include/qt/QtGui/qquaternion.h:145
+// [16] QQuaternion fromRotationMatrix(const QMatrix3x3 &)
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QQuaternion18fromRotationMatrixERK14QGenericMatrixILi3ELi3EfE(const QMatrix3x3 & rot3x3) {
+  auto rv = QQuaternion::fromRotationMatrix(rot3x3);
+return new QQuaternion(rv);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qquaternion.h:148
 // [-2] void getAxes(QVector3D *, QVector3D *, QVector3D *)
 #if QT_VERSION >= 0x050500

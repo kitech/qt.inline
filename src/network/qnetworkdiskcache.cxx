@@ -50,6 +50,40 @@ void* C_ZNK17QNetworkDiskCache10metaObjectEv(void *this_) {
   return (void*)((QNetworkDiskCache*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QNetworkDiskCache11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QNetworkDiskCache*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN17QNetworkDiskCache11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QNetworkDiskCache*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QNetworkDiskCache2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QNetworkDiskCache::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QNetworkDiskCache6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QNetworkDiskCache::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h:56
 // [-2] void QNetworkDiskCache(QObject *)
@@ -146,6 +180,14 @@ bool C_ZN17QNetworkDiskCache6removeERK4QUrl(void *this_, QUrl* url) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache7prepareERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
   return (void*)((QNetworkDiskCache*)this_)->prepare(*metaData);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:71
+// [-2] void insert(QIODevice *)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QNetworkDiskCache6insertEP9QIODevice(void *this_, QIODevice * device) {
+  ((QNetworkDiskCache*)this_)->insert(device);
 }
 
 // Public Visibility=Default Availability=Available

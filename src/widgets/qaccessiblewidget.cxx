@@ -125,6 +125,15 @@ int C_ZNK17QAccessibleWidget12indexOfChildEPK20QAccessibleInterface(void *this_,
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:62
+// [-2] QVector<QPair<QAccessibleInterface *, QAccessible::Relation> > relations(QAccessible::Relation)
+extern "C" Q_DECL_EXPORT
+void C_ZNK17QAccessibleWidget9relationsE6QFlagsIN11QAccessible12RelationFlagEE(void *this_, QFlags<QAccessible::RelationFlag> match_) {
+  auto rv = ((QAccessibleWidget*)this_)->relations(match_);
+/*return rv;*/
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:63
 // [8] QAccessibleInterface * focusChild()
 extern "C" Q_DECL_EXPORT

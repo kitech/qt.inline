@@ -23,6 +23,8 @@ MyQUrlQuery() : QUrlQuery() {}
 MyQUrlQuery(const QUrl & url) : QUrlQuery(url) {}
 // void QUrlQuery(const QString &)
 MyQUrlQuery(const QString & queryString) : QUrlQuery(queryString) {}
+// void QUrlQuery(const QUrlQuery &)
+MyQUrlQuery(const QUrlQuery & other) : QUrlQuery(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,14 @@ void* C_ZN9QUrlQueryC2ERK4QUrl(QUrl* url) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQueryC2ERK7QString(QString* queryString) {
   return  new QUrlQuery(*queryString);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:62
+// [-2] void QUrlQuery(const QUrlQuery &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QUrlQueryC2ERKS_(QUrlQuery* other) {
+  return  new QUrlQuery(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -123,11 +133,29 @@ void C_ZN9QUrlQuery5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:79
+// [8] QString query(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QUrlQuery5queryE6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> encoding) {
+  auto rv = ((QUrlQuery*)this_)->query(encoding);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:80
 // [-2] void setQuery(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery8setQueryERK7QString(void *this_, QString* queryString) {
   ((QUrlQuery*)this_)->setQuery(*queryString);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:81
+// [8] QString toString(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QUrlQuery8toStringE6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> encoding) {
+  auto rv = ((QUrlQuery*)this_)->toString(encoding);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -157,6 +185,23 @@ return new QChar(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:88
+// [-2] void setQueryItems(const QList<QPair<QString, QString> > &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QUrlQuery13setQueryItemsERK5QListI5QPairI7QStringS2_EE(void *this_, const QList<QPair<QString, QString> > & query) {
+  ((QUrlQuery*)this_)->setQueryItems(query);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:89
+// [-2] QList<QPair<QString, QString> > queryItems(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+QList<QPair<QString, QString> >* C_ZNK9QUrlQuery10queryItemsE6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> encoding) {
+  auto rv = ((QUrlQuery*)this_)->queryItems(encoding);
+return new QList<QPair<QString, QString> >(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:91
 // [1] bool hasQueryItem(const QString &)
 extern "C" Q_DECL_EXPORT
@@ -178,6 +223,24 @@ void C_ZN9QUrlQuery12addQueryItemERK7QStringS2_(void *this_, QString* key, QStri
 extern "C" Q_DECL_EXPORT
 void C_ZN9QUrlQuery15removeQueryItemERK7QString(void *this_, QString* key) {
   ((QUrlQuery*)this_)->removeQueryItem(*key);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:94
+// [8] QString queryItemValue(const QString &, QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QUrlQuery14queryItemValueERK7QString6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *this_, QString* key, QFlags<QUrl::ComponentFormattingOption> encoding) {
+  auto rv = ((QUrlQuery*)this_)->queryItemValue(*key, encoding);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:95
+// [8] QStringList allQueryItemValues(const QString &, QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QUrlQuery18allQueryItemValuesERK7QString6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *this_, QString* key, QFlags<QUrl::ComponentFormattingOption> encoding) {
+  auto rv = ((QUrlQuery*)this_)->allQueryItemValues(*key, encoding);
+return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -204,6 +267,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QUrlQuery25defaultQueryPairDelimiterEv() {
   auto rv = QUrlQuery::defaultQueryPairDelimiter();
 return new QChar(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:109
+// [8] QUrlQuery::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QUrlQuery8data_ptrEv(void *this_) {
+  auto& rv = ((QUrlQuery*)this_)->data_ptr();
+return &rv;
 }
 
 //  main block end

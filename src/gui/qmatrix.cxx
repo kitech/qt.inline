@@ -22,6 +22,10 @@ MyQMatrix(Qt::Initialization arg0) : QMatrix(arg0) {}
 MyQMatrix() : QMatrix() {}
 // void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
 MyQMatrix(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) : QMatrix(m11, m12, m21, m22, dx, dy) {}
+// void QMatrix(QMatrix &&)
+MyQMatrix(QMatrix && other) : QMatrix(other) {}
+// void QMatrix(const QMatrix &)
+MyQMatrix(const QMatrix & other) : QMatrix(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -64,6 +68,22 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QMatrixaSERKS_(void *this_, QMatrix* arg0) {
   auto& rv = ((QMatrix*)this_)->operator=(*arg0);
 return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:70
+// [-2] void QMatrix(QMatrix &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QMatrixC2EOS_(QMatrix && other) {
+  return  new QMatrix(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:72
+// [-2] void QMatrix(const QMatrix &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QMatrixC2ERKS_(QMatrix* other) {
+  return  new QMatrix(*other);
 }
 
 // Public Visibility=Default Availability=Available

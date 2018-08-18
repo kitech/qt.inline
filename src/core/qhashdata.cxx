@@ -82,6 +82,22 @@ void* C_ZN9QHashData9firstNodeEv(void *this_) {
   return (void*)((QHashData*)this_)->firstNode();
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhash.h:97
+// [8] QHashData::Node * nextNode(QHashData::Node *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QHashData8nextNodeEPNS_4NodeE(QHashData::Node * node) {
+  return (void*)QHashData::nextNode(node);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhash.h:98
+// [8] QHashData::Node * previousNode(QHashData::Node *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QHashData12previousNodeEPNS_4NodeE(QHashData::Node * node) {
+  return (void*)QHashData::previousNode(node);
+}
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHashDataD2Ev(void *this_) {

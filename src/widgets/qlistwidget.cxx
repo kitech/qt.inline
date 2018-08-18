@@ -45,6 +45,19 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
+// QMimeData * mimeData(const QList<QListWidgetItem *>)
+  virtual QMimeData * mimeData(const QList<QListWidgetItem *> items) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeData", &handled, 1, (uint64_t)&items, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMimeData *)(irv);
+      // PointerPointerQMimeData *
+    } else {
+    return QListWidget::mimeData(items);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
 // bool dropMimeData(int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
@@ -67,6 +80,19 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
       // ElaboratedRecordQFlags<Qt::DropAction>
     } else {
     return QListWidget::supportedDropActions();
+  }
+  }
+
+// Protected Visibility=Default Availability=Available
+// QList<QListWidgetItem *> items(const QMimeData *)
+  virtual QList<QListWidgetItem *> items(const QMimeData * data) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QList<QListWidgetItem *>*)(irv);
+      // UnexposedRecordQList<QListWidgetItem *>
+    } else {
+    return QListWidget::items(data);
   }
   }
 
@@ -116,6 +142,14 @@ return new QStringList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:286
+// [8] QMimeData * mimeData(const QList<QListWidgetItem *>)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QListWidget8mimeDataE5QListIP15QListWidgetItemE(void *this_, const QList<QListWidgetItem *> items) {
+  return (void*)((QListWidget*)this_)->QListWidget::mimeData(items);
+}
+
+// Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:289
 // [1] bool dropMimeData(int, const QMimeData *, Qt::DropAction)
 extern "C" Q_DECL_EXPORT
@@ -129,6 +163,15 @@ bool C_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void *this_,
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK11QListWidget20supportedDropActionsEv(void *this_) {
   return (Qt::DropActions)((QListWidget*)this_)->QListWidget::supportedDropActions();
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:298
+// [-2] QList<QListWidgetItem *> items(const QMimeData *)
+extern "C" Q_DECL_EXPORT
+QList<QListWidgetItem *>* C_ZNK11QListWidget5itemsEPK9QMimeData(void *this_, const QMimeData * data) {
+  auto rv = ((QListWidget*)this_)->QListWidget::items(data);
+return new QList<QListWidgetItem *>(rv);
 }
 
 // Protected Visibility=Default Availability=Available
@@ -154,6 +197,40 @@ void* C_ZNK11QListWidget13itemFromIndexERK11QModelIndex(void *this_, QModelIndex
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QListWidget10metaObjectEv(void *this_) {
   return (void*)((QListWidget*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:199
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QListWidget11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QListWidget*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:199
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN11QListWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QListWidget*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:199
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QListWidget2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QListWidget::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:199
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QListWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QListWidget::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -445,6 +522,24 @@ bool C_ZNK11QListWidget14isItemSelectedEPK15QListWidgetItem(void *this_, const Q
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget15setItemSelectedEPK15QListWidgetItemb(void *this_, const QListWidgetItem * item, bool select_) {
   ((QListWidget*)this_)->setItemSelected(item, select_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:251
+// [-2] QList<QListWidgetItem *> selectedItems()
+extern "C" Q_DECL_EXPORT
+QList<QListWidgetItem *>* C_ZNK11QListWidget13selectedItemsEv(void *this_) {
+  auto rv = ((QListWidget*)this_)->selectedItems();
+return new QList<QListWidgetItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:252
+// [-2] QList<QListWidgetItem *> findItems(const QString &, Qt::MatchFlags)
+extern "C" Q_DECL_EXPORT
+QList<QListWidgetItem *>* C_ZNK11QListWidget9findItemsERK7QString6QFlagsIN2Qt9MatchFlagEE(void *this_, QString* text, QFlags<Qt::MatchFlag> flags) {
+  auto rv = ((QListWidget*)this_)->findItems(*text, flags);
+return new QList<QListWidgetItem *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

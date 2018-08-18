@@ -44,6 +44,15 @@ void* C_ZNK20QAccessibleInterface6windowEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:469
+// [-2] QVector<QPair<QAccessibleInterface *, QAccessible::Relation> > relations(QAccessible::Relation)
+extern "C" Q_DECL_EXPORT
+void C_ZNK20QAccessibleInterface9relationsE6QFlagsIN11QAccessible12RelationFlagEE(void *this_, QFlags<QAccessible::RelationFlag> match_) {
+  auto rv = ((QAccessibleInterface*)this_)->relations(match_);
+/*return rv;*/
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:470
 // [8] QAccessibleInterface * focusChild()
 extern "C" Q_DECL_EXPORT
@@ -173,6 +182,14 @@ void* C_ZN20QAccessibleInterface21editableTextInterfaceEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QAccessibleInterface14valueInterfaceEv(void *this_) {
   return (void*)((QAccessibleInterface*)this_)->valueInterface();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:499
+// [8] QAccessibleActionInterface * actionInterface()
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QAccessibleInterface15actionInterfaceEv(void *this_) {
+  return (void*)((QAccessibleInterface*)this_)->actionInterface();
 }
 
 // Public inline Visibility=Default Availability=Available

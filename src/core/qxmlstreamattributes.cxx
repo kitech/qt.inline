@@ -74,6 +74,22 @@ void* C_ZNK20QXmlStreamAttributes5valueE13QLatin1String(void *this_, QLatin1Stri
 return new QStringRef(rv);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:170
+// [-2] void append(const QString &, const QString &, const QString &)
+extern "C" Q_DECL_EXPORT
+void C_ZN20QXmlStreamAttributes6appendERK7QStringS2_S2_(void *this_, QString* namespaceUri, QString* name, QString* value) {
+  ((QXmlStreamAttributes*)this_)->append(*namespaceUri, *name, *value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:171
+// [-2] void append(const QString &, const QString &)
+extern "C" Q_DECL_EXPORT
+void C_ZN20QXmlStreamAttributes6appendERK7QStringS2_(void *this_, QString* qualifiedName, QString* value) {
+  ((QXmlStreamAttributes*)this_)->append(*qualifiedName, *value);
+}
+
 // Public inline Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtCore/qxmlstream.h:173

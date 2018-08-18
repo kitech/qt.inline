@@ -50,6 +50,40 @@ void* C_ZNK9QMimeData10metaObjectEv(void *this_) {
   return (void*)((QMimeData*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:54
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QMimeData11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMimeData*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:54
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QMimeData11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMimeData*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:54
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QMimeData2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMimeData::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:54
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QMimeData6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMimeData::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:56
 // [-2] void QMimeData()
@@ -73,6 +107,14 @@ extern "C" Q_DECL_EXPORT
 QList<QUrl>* C_ZNK9QMimeData4urlsEv(void *this_) {
   auto rv = ((QMimeData*)this_)->urls();
 return new QList<QUrl>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:60
+// [-2] void setUrls(const QList<QUrl> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QMimeData7setUrlsERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
+  ((QMimeData*)this_)->setUrls(urls);
 }
 
 // Public Visibility=Default Availability=Available

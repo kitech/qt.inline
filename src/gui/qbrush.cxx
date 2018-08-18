@@ -32,6 +32,8 @@ MyQBrush(Qt::GlobalColor color, const QPixmap & pixmap) : QBrush(color, pixmap) 
 MyQBrush(const QPixmap & pixmap) : QBrush(pixmap) {}
 // void QBrush(const QImage &)
 MyQBrush(const QImage & image) : QBrush(image) {}
+// void QBrush(const QBrush &)
+MyQBrush(const QBrush & brush) : QBrush(brush) {}
 // void QBrush(const QGradient &)
 MyQBrush(const QGradient & gradient) : QBrush(gradient) {}
 };
@@ -98,6 +100,14 @@ void* C_ZN6QBrushC2ERK7QPixmap(QPixmap* pixmap) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QBrushC2ERK6QImage(QImage* image) {
   return  new QBrush(*image);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:76
+// [-2] void QBrush(const QBrush &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QBrushC2ERKS_(QBrush* brush) {
+  return  new QBrush(*brush);
 }
 
 // Public Visibility=Default Availability=Available
@@ -309,6 +319,15 @@ bool C_ZNK6QBrushneERKS_(void *this_, QBrush* b) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK6QBrush10isDetachedEv(void *this_) {
   return (bool)((QBrush*)this_)->isDetached();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:131
+// [8] QBrush::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QBrush8data_ptrEv(void *this_) {
+  auto& rv = ((QBrush*)this_)->data_ptr();
+return &rv;
 }
 
 //  main block end

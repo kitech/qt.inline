@@ -150,12 +150,49 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:142
+// [-2] void setAdditionalFormats(const QList<QTextLayout::FormatRange> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTextLayout20setAdditionalFormatsERK5QListINS_11FormatRangeEE(void *this_, const QList<QTextLayout::FormatRange> & overrides) {
+  ((QTextLayout*)this_)->setAdditionalFormats(overrides);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:143
+// [-2] QList<QTextLayout::FormatRange> additionalFormats()
+extern "C" Q_DECL_EXPORT
+QList<QTextLayout::FormatRange>* C_ZNK11QTextLayout17additionalFormatsEv(void *this_) {
+  auto rv = ((QTextLayout*)this_)->additionalFormats();
+return new QList<QTextLayout::FormatRange>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:144
 // [-2] void clearAdditionalFormats()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout22clearAdditionalFormatsEv(void *this_) {
   ((QTextLayout*)this_)->clearAdditionalFormats();
 }
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:146
+// [-2] void setFormats(const QVector<QTextLayout::FormatRange> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTextLayout10setFormatsERK7QVectorINS_11FormatRangeEE(void *this_, const QVector<QTextLayout::FormatRange> & overrides) {
+  ((QTextLayout*)this_)->setFormats(overrides);
+}
+
+// Public Visibility=Default Availability=Available
+// since 5.6
+// /usr/include/qt/QtGui/qtextlayout.h:147
+// [8] QVector<QTextLayout::FormatRange> formats()
+#if QT_VERSION >= 0x050600
+extern "C" Q_DECL_EXPORT
+void C_ZNK11QTextLayout7formatsEv(void *this_) {
+  auto rv = ((QTextLayout*)this_)->formats();
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // since 5.6
@@ -303,6 +340,14 @@ int C_ZNK11QTextLayout19rightCursorPositionEi(void *this_, int oldPos) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:176
+// [-2] void draw(QPainter *, const QPointF &, const QVector<QTextLayout::FormatRange> &, const QRectF &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK11QTextLayout4drawEP8QPainterRK7QPointFRK7QVectorINS_11FormatRangeEERK6QRectF(void *this_, QPainter * p, QPointF* pos, const QVector<QTextLayout::FormatRange> & selections, QRectF* clip) {
+  ((QTextLayout*)this_)->draw(p, *pos, selections, *clip);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:178
 // [-2] void drawCursor(QPainter *, const QPointF &, int)
 extern "C" Q_DECL_EXPORT
@@ -361,6 +406,26 @@ qreal C_ZNK11QTextLayout12minimumWidthEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK11QTextLayout12maximumWidthEv(void *this_) {
   return (qreal)((QTextLayout*)this_)->maximumWidth();
+}
+
+// Public Visibility=Default Availability=Available
+// since 4.8
+// /usr/include/qt/QtGui/qtextlayout.h:190
+// [-2] QList<QGlyphRun> glyphRuns(int, int)
+#if QT_VERSION >= 0x040800
+extern "C" Q_DECL_EXPORT
+QList<QGlyphRun>* C_ZNK11QTextLayout9glyphRunsEii(void *this_, int from, int length) {
+  auto rv = ((QTextLayout*)this_)->glyphRuns(from, length);
+return new QList<QGlyphRun>(rv);
+}
+#endif // QT_VERSION >= 0x040800
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:193
+// [8] QTextEngine * engine()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QTextLayout6engineEv(void *this_) {
+  return (void*)((QTextLayout*)this_)->engine();
 }
 
 // Public Visibility=Default Availability=Available

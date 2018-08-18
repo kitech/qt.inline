@@ -18,6 +18,10 @@ public:
   virtual ~MyQAudioBuffer() {}
 // void QAudioBuffer()
 MyQAudioBuffer() : QAudioBuffer() {}
+// void QAudioBuffer(QAbstractAudioBuffer *)
+MyQAudioBuffer(QAbstractAudioBuffer * provider) : QAudioBuffer(provider) {}
+// void QAudioBuffer(const QAudioBuffer &)
+MyQAudioBuffer(const QAudioBuffer & other) : QAudioBuffer(other) {}
 // void QAudioBuffer(const QByteArray &, const QAudioFormat &, qint64)
 MyQAudioBuffer(const QByteArray & data, const QAudioFormat & format, qint64 startTime) : QAudioBuffer(data, format, startTime) {}
 // void QAudioBuffer(int, const QAudioFormat &, qint64)
@@ -30,6 +34,22 @@ MyQAudioBuffer(int numFrames, const QAudioFormat & format, qint64 startTime) : Q
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QAudioBufferC2Ev() {
   return  new QAudioBuffer();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiobuffer.h:59
+// [-2] void QAudioBuffer(QAbstractAudioBuffer *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QAudioBufferC2EP20QAbstractAudioBuffer(QAbstractAudioBuffer * provider) {
+  return  new QAudioBuffer(provider);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiobuffer.h:60
+// [-2] void QAudioBuffer(const QAudioBuffer &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QAudioBufferC2ERKS_(QAudioBuffer* other) {
+  return  new QAudioBuffer(*other);
 }
 
 // Public Visibility=Default Availability=Available

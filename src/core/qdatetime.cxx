@@ -26,6 +26,10 @@ MyQDateTime(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) : QDateTi
 MyQDateTime(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) : QDateTime(date, time, spec, offsetSeconds) {}
 // void QDateTime(const QDate &, const QTime &, const QTimeZone &)
 MyQDateTime(const QDate & date, const QTime & time, const QTimeZone & timeZone) : QDateTime(date, time, timeZone) {}
+// void QDateTime(const QDateTime &)
+MyQDateTime(const QDateTime & other) : QDateTime(other) {}
+// void QDateTime(QDateTime &&)
+MyQDateTime(QDateTime && other) : QDateTime(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -73,6 +77,25 @@ void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeRK9QTimeZone(QDate* date, QTime* time, QT
   return  new QDateTime(*date, *time, *timeZone);
 }
 #endif // QT_VERSION >= 0x050200
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:269
+// [-2] void QDateTime(const QDateTime &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QDateTimeC2ERKS_(QDateTime* other) {
+  return  new QDateTime(*other);
+}
+
+// Public Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtCore/qdatetime.h:270
+// [-2] void QDateTime(QDateTime &&)
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QDateTimeC2EOS_(QDateTime && other) {
+  return  new QDateTime(other);
+}
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:271

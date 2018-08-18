@@ -20,6 +20,8 @@ public:
 MyQTableWidgetSelectionRange() : QTableWidgetSelectionRange() {}
 // void QTableWidgetSelectionRange(int, int, int, int)
 MyQTableWidgetSelectionRange(int top, int left, int bottom, int right) : QTableWidgetSelectionRange(top, left, bottom, right) {}
+// void QTableWidgetSelectionRange(const QTableWidgetSelectionRange &)
+MyQTableWidgetSelectionRange(const QTableWidgetSelectionRange & other) : QTableWidgetSelectionRange(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN26QTableWidgetSelectionRangeC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QTableWidgetSelectionRangeC2Eiiii(int top, int left, int bottom, int right) {
   return  new QTableWidgetSelectionRange(top, left, bottom, right);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:57
+// [-2] void QTableWidgetSelectionRange(const QTableWidgetSelectionRange &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN26QTableWidgetSelectionRangeC2ERKS_(QTableWidgetSelectionRange* other) {
+  return  new QTableWidgetSelectionRange(*other);
 }
 
 // Public Visibility=Default Availability=Available

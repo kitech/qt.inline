@@ -21,6 +21,10 @@ public:
 MyQNetworkDatagram() : QNetworkDatagram() {}
 // void QNetworkDatagram(const QByteArray &, const QHostAddress &, quint16)
 MyQNetworkDatagram(const QByteArray & data, const QHostAddress & destinationAddress, quint16 port) : QNetworkDatagram(data, destinationAddress, port) {}
+// void QNetworkDatagram(const QNetworkDatagram &)
+MyQNetworkDatagram(const QNetworkDatagram & other) : QNetworkDatagram(other) {}
+// void QNetworkDatagram(QNetworkDatagram &&)
+MyQNetworkDatagram(QNetworkDatagram && other) : QNetworkDatagram(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -40,6 +44,14 @@ void* C_ZN16QNetworkDatagramC2ERK10QByteArrayRK12QHostAddresst(QByteArray* data,
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:59
+// [-2] void QNetworkDatagram(const QNetworkDatagram &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QNetworkDatagramC2ERKS_(QNetworkDatagram* other) {
+  return  new QNetworkDatagram(*other);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:60
 // [8] QNetworkDatagram & operator=(const QNetworkDatagram &)
 extern "C" Q_DECL_EXPORT
@@ -55,6 +67,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN16QNetworkDatagramD2Ev(void *this_) {
   delete (QNetworkDatagram*)(this_);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:64
+// [-2] void QNetworkDatagram(QNetworkDatagram &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QNetworkDatagramC2EOS_(QNetworkDatagram && other) {
+  return  new QNetworkDatagram(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:67
 // [8] QNetworkDatagram & operator=(QNetworkDatagram &&)

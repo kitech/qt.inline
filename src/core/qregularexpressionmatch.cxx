@@ -19,6 +19,8 @@ public:
   virtual ~MyQRegularExpressionMatch() {}
 // void QRegularExpressionMatch()
 MyQRegularExpressionMatch() : QRegularExpressionMatch() {}
+// void QRegularExpressionMatch(const QRegularExpressionMatch &)
+MyQRegularExpressionMatch(const QRegularExpressionMatch & match_) : QRegularExpressionMatch(match_) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -39,6 +41,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN23QRegularExpressionMatchD2Ev(void *this_) {
   delete (QRegularExpressionMatch*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:180
+// [-2] void QRegularExpressionMatch(const QRegularExpressionMatch &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QRegularExpressionMatchC2ERKS_(QRegularExpressionMatch* match_) {
+  return  new QRegularExpressionMatch(*match_);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:181
 // [8] QRegularExpressionMatch & operator=(const QRegularExpressionMatch &)

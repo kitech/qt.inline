@@ -19,6 +19,8 @@ public:
   virtual ~MyQQmlEngine() {}
 // void QQmlEngine(QObject *)
 MyQQmlEngine(QObject * p) : QQmlEngine(p) {}
+// void QQmlEngine(QQmlEnginePrivate &, QObject *)
+MyQQmlEngine(QQmlEnginePrivate & dd, QObject * p) : QQmlEngine(dd, p) {}
 // Protected virtual Visibility=Default Availability=Available
 // bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
@@ -48,6 +50,40 @@ bool C_ZN10QQmlEngine5eventEP6QEvent(void *this_, QEvent * arg0) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine10metaObjectEv(void *this_) {
   return (void*)((QQmlEngine*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:98
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQmlEngine11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQmlEngine*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:98
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN10QQmlEngine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQmlEngine*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:98
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQmlEngine2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQmlEngine::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:98
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQmlEngine6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQmlEngine::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -146,6 +182,14 @@ void C_ZN10QQmlEngine13addPluginPathERK7QString(void *this_, QString* dir) {
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQmlEngine14addNamedBundleERK7QStringS2_(void *this_, QString* name, QString* fileName) {
   return (bool)((QQmlEngine*)this_)->addNamedBundle(*name, *fileName);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:118
+// [1] bool importPlugin(const QString &, const QString &, QList<QQmlError> *)
+extern "C" Q_DECL_EXPORT
+bool C_ZN10QQmlEngine12importPluginERK7QStringS2_P5QListI9QQmlErrorE(void *this_, QString* filePath, QString* uri, QList<QQmlError> * errors) {
+  return (bool)((QQmlEngine*)this_)->importPlugin(*filePath, *uri, errors);
 }
 
 // Public Visibility=Default Availability=Available
@@ -351,5 +395,13 @@ void C_ZN10QQmlEngine4exitEi(void *this_, int retCode) {
   ((QQmlEngine*)this_)->exit(retCode);
 }
 #endif // QT_VERSION >= 0x050800
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:164
+// [-2] void warnings(const QList<QQmlError> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN10QQmlEngine8warningsERK5QListI9QQmlErrorE(void *this_, const QList<QQmlError> & warnings) {
+  ((QQmlEngine*)this_)->warnings(warnings);
+}
 
 //  main block end

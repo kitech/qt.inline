@@ -17,7 +17,17 @@
 class Q_DECL_EXPORT MyQSequentialIterable : public QSequentialIterable {
 public:
   virtual ~MyQSequentialIterable() {}
+// void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)
+MyQSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl impl) : QSequentialIterable(impl) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:618
+// [-2] void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QSequentialIterableC2EN17QtMetaTypePrivate23QSequentialIterableImplE(QtMetaTypePrivate::QSequentialIterableImpl impl) {
+  return  new QSequentialIterable(impl);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:623

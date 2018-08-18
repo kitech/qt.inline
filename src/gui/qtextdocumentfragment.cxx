@@ -22,6 +22,8 @@ MyQTextDocumentFragment() : QTextDocumentFragment() {}
 MyQTextDocumentFragment(const QTextDocument * document) : QTextDocumentFragment(document) {}
 // void QTextDocumentFragment(const QTextCursor &)
 MyQTextDocumentFragment(const QTextCursor & range_) : QTextDocumentFragment(range_) {}
+// void QTextDocumentFragment(const QTextDocumentFragment &)
+MyQTextDocumentFragment(const QTextDocumentFragment & rhs) : QTextDocumentFragment(rhs) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -46,6 +48,14 @@ void* C_ZN21QTextDocumentFragmentC2EPK13QTextDocument(const QTextDocument * docu
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(QTextCursor* range_) {
   return  new QTextDocumentFragment(*range_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:60
+// [-2] void QTextDocumentFragment(const QTextDocumentFragment &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QTextDocumentFragmentC2ERKS_(QTextDocumentFragment* rhs) {
+  return  new QTextDocumentFragment(*rhs);
 }
 
 // Public Visibility=Default Availability=Available

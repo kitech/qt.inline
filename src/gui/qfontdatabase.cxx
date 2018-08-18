@@ -20,12 +20,39 @@ public:
 MyQFontDatabase() : QFontDatabase() {}
 };
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:116
+// [-2] QList<int> standardSizes()
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZN13QFontDatabase13standardSizesEv() {
+  auto rv = QFontDatabase::standardSizes();
+return new QList<int>(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:118
 // [-2] void QFontDatabase()
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontDatabaseC2Ev() {
   return  new QFontDatabase();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:120
+// [-2] QList<QFontDatabase::WritingSystem> writingSystems()
+extern "C" Q_DECL_EXPORT
+QList<QFontDatabase::WritingSystem>* C_ZNK13QFontDatabase14writingSystemsEv(void *this_) {
+  auto rv = ((QFontDatabase*)this_)->writingSystems();
+return new QList<QFontDatabase::WritingSystem>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:121
+// [-2] QList<QFontDatabase::WritingSystem> writingSystems(const QString &)
+extern "C" Q_DECL_EXPORT
+QList<QFontDatabase::WritingSystem>* C_ZNK13QFontDatabase14writingSystemsERK7QString(void *this_, QString* family) {
+  auto rv = ((QFontDatabase*)this_)->writingSystems(*family);
+return new QList<QFontDatabase::WritingSystem>(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -44,6 +71,24 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontDatabase6stylesERK7QString(void *this_, QString* family) {
   auto rv = ((QFontDatabase*)this_)->styles(*family);
 return new QStringList(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:125
+// [-2] QList<int> pointSizes(const QString &, const QString &)
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZN13QFontDatabase10pointSizesERK7QStringS2_(void *this_, QString* family, QString* style) {
+  auto rv = ((QFontDatabase*)this_)->pointSizes(*family, *style);
+return new QList<int>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:126
+// [-2] QList<int> smoothSizes(const QString &, const QString &)
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZN13QFontDatabase11smoothSizesERK7QStringS2_(void *this_, QString* family, QString* style) {
+  auto rv = ((QFontDatabase*)this_)->smoothSizes(*family, *style);
+return new QList<int>(rv);
 }
 
 // Public Visibility=Default Availability=Available

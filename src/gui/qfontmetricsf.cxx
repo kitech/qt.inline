@@ -22,6 +22,8 @@ MyQFontMetricsF(const QFont & arg0) : QFontMetricsF(arg0) {}
 MyQFontMetricsF(const QFont & arg0, QPaintDevice * pd) : QFontMetricsF(arg0, pd) {}
 // void QFontMetricsF(const QFontMetrics &)
 MyQFontMetricsF(const QFontMetrics & arg0) : QFontMetricsF(arg0) {}
+// void QFontMetricsF(const QFontMetricsF &)
+MyQFontMetricsF(const QFontMetricsF & arg0) : QFontMetricsF(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -50,6 +52,14 @@ void* C_ZN13QFontMetricsFC2ERK12QFontMetrics(QFontMetrics* arg0) {
   return  new QFontMetricsF(*arg0);
 }
 #endif // QT_VERSION >= 0x040200
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:137
+// [-2] void QFontMetricsF(const QFontMetricsF &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QFontMetricsFC2ERKS_(QFontMetricsF* arg0) {
+  return  new QFontMetricsF(*arg0);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:138

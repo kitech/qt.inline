@@ -16,9 +16,19 @@
 class Q_DECL_EXPORT MyExternalRefCountData : public QtSharedPointer::ExternalRefCountData {
 public:
   virtual ~MyExternalRefCountData() {}
+// void ExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn)
+MyExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn d) : QtSharedPointer::ExternalRefCountData(d) {}
 // void ExternalRefCountData(Qt::Initialization)
 MyExternalRefCountData(Qt::Initialization arg0) : QtSharedPointer::ExternalRefCountData(arg0) {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:148
+// [-2] void ExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EPFvPS0_E(QtSharedPointer::ExternalRefCountData::DestroyerFn d) {
+  return  new QtSharedPointer::ExternalRefCountData(d);
+}
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:154
@@ -65,6 +75,22 @@ void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEPK7QObjectb(v
 extern "C" Q_DECL_EXPORT
 void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEPK7QObject(void *this_, const QObject * arg0) {
   ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared(arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:164
+// [-2] void checkQObjectShared(...)
+extern "C" Q_DECL_EXPORT
+void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEz(void *this_) {
+  ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:165
+// [-2] void setQObjectShared(...)
+extern "C" Q_DECL_EXPORT
+void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEz(void *this_) {
+  ((QtSharedPointer::ExternalRefCountData*)this_)->setQObjectShared();
 }
 
 // Public static inline Visibility=Default Availability=Available

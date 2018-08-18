@@ -18,6 +18,8 @@ public:
   virtual ~MyQAudioFormat() {}
 // void QAudioFormat()
 MyQAudioFormat() : QAudioFormat() {}
+// void QAudioFormat(const QAudioFormat &)
+MyQAudioFormat(const QAudioFormat & other) : QAudioFormat(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQAudioFormat() : QAudioFormat() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QAudioFormatC2Ev() {
   return  new QAudioFormat();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioformat.h:61
+// [-2] void QAudioFormat(const QAudioFormat &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QAudioFormatC2ERKS_(QAudioFormat* other) {
+  return  new QAudioFormat(*other);
 }
 
 // Public Visibility=Default Availability=Available

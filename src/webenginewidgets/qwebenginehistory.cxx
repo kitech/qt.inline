@@ -27,6 +27,33 @@ void C_ZN17QWebEngineHistory5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:89
+// [-2] QList<QWebEngineHistoryItem> items()
+extern "C" Q_DECL_EXPORT
+QList<QWebEngineHistoryItem>* C_ZNK17QWebEngineHistory5itemsEv(void *this_) {
+  auto rv = ((QWebEngineHistory*)this_)->items();
+return new QList<QWebEngineHistoryItem>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:90
+// [-2] QList<QWebEngineHistoryItem> backItems(int)
+extern "C" Q_DECL_EXPORT
+QList<QWebEngineHistoryItem>* C_ZNK17QWebEngineHistory9backItemsEi(void *this_, int maxItems) {
+  auto rv = ((QWebEngineHistory*)this_)->backItems(maxItems);
+return new QList<QWebEngineHistoryItem>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:91
+// [-2] QList<QWebEngineHistoryItem> forwardItems(int)
+extern "C" Q_DECL_EXPORT
+QList<QWebEngineHistoryItem>* C_ZNK17QWebEngineHistory12forwardItemsEi(void *this_, int maxItems) {
+  auto rv = ((QWebEngineHistory*)this_)->forwardItems(maxItems);
+return new QList<QWebEngineHistoryItem>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:93
 // [1] bool canGoBack()
 extern "C" Q_DECL_EXPORT

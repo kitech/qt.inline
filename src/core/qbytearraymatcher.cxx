@@ -22,6 +22,8 @@ MyQByteArrayMatcher() : QByteArrayMatcher() {}
 MyQByteArrayMatcher(const QByteArray & pattern) : QByteArrayMatcher(pattern) {}
 // void QByteArrayMatcher(const char *, int)
 MyQByteArrayMatcher(const char * pattern, int length) : QByteArrayMatcher(pattern, length) {}
+// void QByteArrayMatcher(const QByteArrayMatcher &)
+MyQByteArrayMatcher(const QByteArrayMatcher & other) : QByteArrayMatcher(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -46,6 +48,14 @@ void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(QByteArray* pattern) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QByteArrayMatcherC2EPKci(const char * pattern, int length) {
   return  new QByteArrayMatcher(pattern, length);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearraymatcher.h:56
+// [-2] void QByteArrayMatcher(const QByteArrayMatcher &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QByteArrayMatcherC2ERKS_(QByteArrayMatcher* other) {
+  return  new QByteArrayMatcher(*other);
 }
 
 // Public Visibility=Default Availability=Available

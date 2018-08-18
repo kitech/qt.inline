@@ -17,7 +17,19 @@
 class Q_DECL_EXPORT MyQCollatorSortKey : public QCollatorSortKey {
 public:
   virtual ~MyQCollatorSortKey() {}
+// void QCollatorSortKey(const QCollatorSortKey &)
+MyQCollatorSortKey(const QCollatorSortKey & other) : QCollatorSortKey(other) {}
+// void QCollatorSortKey(QCollatorSortKeyPrivate *)
+MyQCollatorSortKey(QCollatorSortKeyPrivate * arg0) : QCollatorSortKey(arg0) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:57
+// [-2] void QCollatorSortKey(const QCollatorSortKey &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QCollatorSortKeyC2ERKS_(QCollatorSortKey* other) {
+  return  new QCollatorSortKey(*other);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:58

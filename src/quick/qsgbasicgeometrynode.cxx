@@ -18,6 +18,8 @@ public:
   virtual ~MyQSGBasicGeometryNode() {}
 // void QSGBasicGeometryNode(QSGNode::NodeType)
 MyQSGBasicGeometryNode(QSGNode::NodeType type_) : QSGBasicGeometryNode(type_) {}
+// void QSGBasicGeometryNode(QSGBasicGeometryNodePrivate &, QSGNode::NodeType)
+MyQSGBasicGeometryNode(QSGBasicGeometryNodePrivate & dd, QSGNode::NodeType type_) : QSGBasicGeometryNode(dd, type_) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

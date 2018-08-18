@@ -18,6 +18,8 @@ public:
   virtual ~MyQFontInfo() {}
 // void QFontInfo(const QFont &)
 MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
+// void QFontInfo(const QFontInfo &)
+MyQFontInfo(const QFontInfo & arg0) : QFontInfo(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -25,6 +27,14 @@ MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
 // [-2] void QFontInfo(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFontInfoC2ERK5QFont(QFont* arg0) {
+  return  new QFontInfo(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:54
+// [-2] void QFontInfo(const QFontInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QFontInfoC2ERKS_(QFontInfo* arg0) {
   return  new QFontInfo(*arg0);
 }
 

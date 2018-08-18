@@ -18,6 +18,8 @@ public:
   virtual ~MyQListView() {}
 // void QListView(QWidget *)
 MyQListView(QWidget * parent) : QListView(parent) {}
+// void QListView(QListViewPrivate &, QWidget *)
+MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
@@ -65,6 +67,18 @@ MyQListView(QWidget * parent) : QListView(parent) {}
       // RecordRecordQSize
     } else {
     return QListView::contentsSize();
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
+// void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QListView::dataChanged(topLeft, bottomRight, roles);
   }
   }
 
@@ -425,6 +439,14 @@ return new QSize(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:149
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QListView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
+  ((QListView*)this_)->QListView::dataChanged(*topLeft, *bottomRight, roles);
+}
+
+// Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:150
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
@@ -650,6 +672,40 @@ return new QSize(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QListView10metaObjectEv(void *this_) {
   return (void*)((QListView*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:54
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListView11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QListView*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:54
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QListView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QListView*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:54
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListView2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QListView::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:54
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QListView::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -949,6 +1005,14 @@ void C_ZN9QListView5resetEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QListView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
   ((QListView*)this_)->setRootIndex(*index);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:137
+// [-2] void indexesMoved(const QModelIndexList &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QListView12indexesMovedERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
+  ((QListView*)this_)->indexesMoved(indexes);
 }
 
 //  main block end

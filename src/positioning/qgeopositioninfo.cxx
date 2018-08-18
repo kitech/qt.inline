@@ -21,6 +21,10 @@ public:
 MyQGeoPositionInfo() : QGeoPositionInfo() {}
 // void QGeoPositionInfo(const QGeoCoordinate &, const QDateTime &)
 MyQGeoPositionInfo(const QGeoCoordinate & coordinate, const QDateTime & updateTime) : QGeoPositionInfo(coordinate, updateTime) {}
+// void QGeoPositionInfo(const QGeoPositionInfo &)
+MyQGeoPositionInfo(const QGeoPositionInfo & other) : QGeoPositionInfo(other) {}
+// void QGeoPositionInfo(QGeoPositionInfoPrivate &)
+MyQGeoPositionInfo(QGeoPositionInfoPrivate & dd) : QGeoPositionInfo(dd) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +41,22 @@ void* C_ZN16QGeoPositionInfoC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QGeoPositionInfoC2ERK14QGeoCoordinateRK9QDateTime(QGeoCoordinate* coordinate, QDateTime* updateTime) {
   return  new QGeoPositionInfo(*coordinate, *updateTime);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:66
+// [-2] void QGeoPositionInfo(const QGeoPositionInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QGeoPositionInfoC2ERKS_(QGeoPositionInfo* other) {
+  return  new QGeoPositionInfo(*other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:67
+// [-2] void QGeoPositionInfo(QGeoPositionInfoPrivate &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QGeoPositionInfoC2ER23QGeoPositionInfoPrivate(QGeoPositionInfoPrivate* dd) {
+  return  new QGeoPositionInfo(*dd);
 }
 
 // Public Visibility=Default Availability=Available

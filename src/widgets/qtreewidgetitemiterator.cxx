@@ -16,11 +16,21 @@
 class Q_DECL_EXPORT MyQTreeWidgetItemIterator : public QTreeWidgetItemIterator {
 public:
   virtual ~MyQTreeWidgetItemIterator() {}
+// void QTreeWidgetItemIterator(const QTreeWidgetItemIterator &)
+MyQTreeWidgetItemIterator(const QTreeWidgetItemIterator & it) : QTreeWidgetItemIterator(it) {}
 // void QTreeWidgetItemIterator(QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)
 MyQTreeWidgetItemIterator(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) : QTreeWidgetItemIterator(widget, flags) {}
 // void QTreeWidgetItemIterator(QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
 MyQTreeWidgetItemIterator(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) : QTreeWidgetItemIterator(item, flags) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:84
+// [-2] void QTreeWidgetItemIterator(const QTreeWidgetItemIterator &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QTreeWidgetItemIteratorC2ERKS_(QTreeWidgetItemIterator* it) {
+  return  new QTreeWidgetItemIterator(*it);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:85

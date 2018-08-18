@@ -36,6 +36,15 @@ extern "C" Q_DECL_EXPORT
 void C_ZN12QTouchDeviceD2Ev(void *this_) {
   delete (QTouchDevice*)(this_);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtouchdevice.h:76
+// [-2] QList<const QTouchDevice *> devices()
+extern "C" Q_DECL_EXPORT
+QList<const QTouchDevice *>* C_ZN12QTouchDevice7devicesEv() {
+  auto rv = QTouchDevice::devices();
+return new QList<const QTouchDevice *>(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:78
 // [8] QString name()

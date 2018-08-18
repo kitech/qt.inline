@@ -21,6 +21,8 @@ public:
 MyQQuickWindow(QWindow * parent) : QQuickWindow(parent) {}
 // void QQuickWindow(QQuickRenderControl *)
 MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl) {}
+// void QQuickWindow(QQuickWindowPrivate &, QWindow *)
+MyQQuickWindow(QQuickWindowPrivate & dd, QWindow * parent) : QQuickWindow(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void exposeEvent(QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0) {
@@ -312,6 +314,40 @@ void* C_ZNK12QQuickWindow10metaObjectEv(void *this_) {
   return (void*)((QQuickWindow*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:71
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQuickWindow11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQuickWindow*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:71
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QQuickWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQuickWindow*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:71
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQuickWindow2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickWindow::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:71
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQuickWindow6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickWindow::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:109
 // [-2] void QQuickWindow(QWindow *)
@@ -384,6 +420,22 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWindow10grabWindowEv(void *this_) {
   auto rv = ((QQuickWindow*)this_)->grabWindow();
 return new QImage(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:127
+// [-2] void setRenderTarget(QOpenGLFramebufferObject *)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QQuickWindow15setRenderTargetEP24QOpenGLFramebufferObject(void *this_, QOpenGLFramebufferObject * fbo) {
+  ((QQuickWindow*)this_)->setRenderTarget(fbo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:128
+// [8] QOpenGLFramebufferObject * renderTarget()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK12QQuickWindow12renderTargetEv(void *this_) {
+  return (void*)((QQuickWindow*)this_)->renderTarget();
 }
 
 // Public Visibility=Default Availability=Available
@@ -550,6 +602,14 @@ bool C_ZNK12QQuickWindow22isPersistentSceneGraphEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:162
+// [8] QOpenGLContext * openglContext()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK12QQuickWindow13openglContextEv(void *this_) {
+  return (void*)((QQuickWindow*)this_)->openglContext();
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:163
 // [1] bool isSceneGraphInitialized()
 extern "C" Q_DECL_EXPORT
@@ -679,6 +739,17 @@ void C_ZN12QQuickWindow12frameSwappedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
+// /usr/include/qt/QtQuick/qquickwindow.h:184
+// [-2] void openglContextCreated(QOpenGLContext *)
+#if QT_VERSION >= 0x050300
+extern "C" Q_DECL_EXPORT
+void C_ZN12QQuickWindow20openglContextCreatedEP14QOpenGLContext(void *this_, QOpenGLContext * context) {
+  ((QQuickWindow*)this_)->openglContextCreated(context);
+}
+#endif // QT_VERSION >= 0x050300
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:185
 // [-2] void sceneGraphInitialized()
 extern "C" Q_DECL_EXPORT
@@ -750,6 +821,17 @@ void C_ZN12QQuickWindow21sceneGraphAboutToStopEv(void *this_) {
   ((QQuickWindow*)this_)->sceneGraphAboutToStop();
 }
 #endif // QT_VERSION >= 0x050300
+
+// Public Visibility=Default Availability=Available
+// since 5.1
+// /usr/include/qt/QtQuick/qquickwindow.h:194
+// [-2] void closing(QQuickCloseEvent *)
+#if QT_VERSION >= 0x050100
+extern "C" Q_DECL_EXPORT
+void C_ZN12QQuickWindow7closingEP16QQuickCloseEvent(void *this_, QQuickCloseEvent * close) {
+  ((QQuickWindow*)this_)->closing(close);
+}
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickwindow.h:195

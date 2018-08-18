@@ -125,6 +125,15 @@ bool C_ZNK13QQmlIncubator9isLoadingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlincubator.h:79
+// [-2] QList<QQmlError> errors()
+extern "C" Q_DECL_EXPORT
+QList<QQmlError>* C_ZNK13QQmlIncubator6errorsEv(void *this_) {
+  auto rv = ((QQmlIncubator*)this_)->errors();
+return new QList<QQmlError>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:81
 // [4] QQmlIncubator::IncubationMode incubationMode()
 extern "C" Q_DECL_EXPORT

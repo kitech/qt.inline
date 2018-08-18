@@ -23,6 +23,10 @@ MyQStringRef() : QStringRef() {}
 MyQStringRef(const QString * string, int position, int size) : QStringRef(string, position, size) {}
 // void QStringRef(const QString *)
 MyQStringRef(const QString * string) : QStringRef(string) {}
+// void QStringRef(const QStringRef &)
+MyQStringRef(const QStringRef & other) : QStringRef(other) {}
+// void QStringRef(QStringRef &&)
+MyQStringRef(QStringRef && other) : QStringRef(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -47,6 +51,22 @@ void* C_ZN10QStringRefC2EPK7QStringii(const QString * string, int position, int 
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QStringRefC2EPK7QString(const QString * string) {
   return  new QStringRef(string);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1426
+// [-2] void QStringRef(const QStringRef &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QStringRefC2ERKS_(QStringRef* other) {
+  return  new QStringRef(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1430
+// [-2] void QStringRef(QStringRef &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QStringRefC2EOS_(QStringRef && other) {
+  return  new QStringRef(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -278,6 +298,30 @@ int C_ZNK10QStringRef5countERKS_N2Qt15CaseSensitivityE(void *this_, QStringRef* 
   return (int)((QStringRef*)this_)->count(*s, cs);
 }
 #endif // QT_VERSION >= 0x040800
+
+// Public Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtCore/qstring.h:1465
+// [-2] QVector<QStringRef> split(const QString &, QString::SplitBehavior, Qt::CaseSensitivity)
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QStringRef5splitERK7QStringNS0_13SplitBehaviorEN2Qt15CaseSensitivityE(void *this_, QString* sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs) {
+  auto rv = ((QStringRef*)this_)->split(*sep, behavior, cs);
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050400
+
+// Public Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtCore/qstring.h:1467
+// [-2] QVector<QStringRef> split(QChar, QString::SplitBehavior, Qt::CaseSensitivity)
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QStringRef5splitE5QCharN7QString13SplitBehaviorEN2Qt15CaseSensitivityE(void *this_, QChar* sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs) {
+  auto rv = ((QStringRef*)this_)->split(*sep, behavior, cs);
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // since 5.2
@@ -575,6 +619,54 @@ void C_ZNK10QStringRef8constEndEv(void *this_) {
 }
 #endif // QT_VERSION >= 0x050900
 
+// Public inline Visibility=Default Availability=Available
+// since 5.7
+// /usr/include/qt/QtCore/qstring.h:1522
+// [8] QStringRef::const_reverse_iterator rbegin()
+#if QT_VERSION >= 0x050700
+extern "C" Q_DECL_EXPORT
+QStringRef::const_reverse_iterator* C_ZNK10QStringRef6rbeginEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->rbegin();
+return new QStringRef::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050700
+
+// Public inline Visibility=Default Availability=Available
+// since 5.7
+// /usr/include/qt/QtCore/qstring.h:1523
+// [8] QStringRef::const_reverse_iterator crbegin()
+#if QT_VERSION >= 0x050700
+extern "C" Q_DECL_EXPORT
+QStringRef::const_reverse_iterator* C_ZNK10QStringRef7crbeginEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->crbegin();
+return new QStringRef::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050700
+
+// Public inline Visibility=Default Availability=Available
+// since 5.7
+// /usr/include/qt/QtCore/qstring.h:1524
+// [8] QStringRef::const_reverse_iterator rend()
+#if QT_VERSION >= 0x050700
+extern "C" Q_DECL_EXPORT
+QStringRef::const_reverse_iterator* C_ZNK10QStringRef4rendEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->rend();
+return new QStringRef::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050700
+
+// Public inline Visibility=Default Availability=Available
+// since 5.7
+// /usr/include/qt/QtCore/qstring.h:1525
+// [8] QStringRef::const_reverse_iterator crend()
+#if QT_VERSION >= 0x050700
+extern "C" Q_DECL_EXPORT
+QStringRef::const_reverse_iterator* C_ZNK10QStringRef5crendEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->crend();
+return new QStringRef::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050700
+
 // Public Visibility=Default Availability=Available
 // since 4.8
 // /usr/include/qt/QtCore/qstring.h:1531
@@ -608,6 +700,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK10QStringRef11toLocal8BitEv(void *this_) {
   auto rv = ((QStringRef*)this_)->toLocal8Bit();
 return new QByteArray(rv);
+}
+#endif // QT_VERSION >= 0x040800
+
+// Public Visibility=Default Availability=Available
+// since 4.8
+// /usr/include/qt/QtCore/qstring.h:1534
+// [8] QVector<uint> toUcs4()
+#if QT_VERSION >= 0x040800
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QStringRef6toUcs4Ev(void *this_) {
+  auto rv = ((QStringRef*)this_)->toUcs4();
+/*return rv;*/
 }
 #endif // QT_VERSION >= 0x040800
 

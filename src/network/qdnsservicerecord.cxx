@@ -18,6 +18,8 @@ public:
   virtual ~MyQDnsServiceRecord() {}
 // void QDnsServiceRecord()
 MyQDnsServiceRecord() : QDnsServiceRecord() {}
+// void QDnsServiceRecord(const QDnsServiceRecord &)
+MyQDnsServiceRecord(const QDnsServiceRecord & other) : QDnsServiceRecord(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQDnsServiceRecord() : QDnsServiceRecord() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDnsServiceRecordC2Ev() {
   return  new QDnsServiceRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:137
+// [-2] void QDnsServiceRecord(const QDnsServiceRecord &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QDnsServiceRecordC2ERKS_(QDnsServiceRecord* other) {
+  return  new QDnsServiceRecord(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

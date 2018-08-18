@@ -30,6 +30,8 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
   }
   }
 
+// void QAbstractItemModel(QAbstractItemModelPrivate &, QObject *)
+MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstractItemModel(dd, parent) {}
 // Protected inline Visibility=Default Availability=Available
 // QModelIndex createIndex(int, int, void *)
   virtual QModelIndex createIndex(int row, int column, void * data) const{
@@ -53,6 +55,18 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
       // RecordRecordQModelIndex
     } else {
     return QAbstractItemModel::createIndex(row, column, id);
+  }
+  }
+
+// Protected Visibility=Default Availability=Available
+// void encodeData(const QModelIndexList &, QDataStream &)
+  virtual void encodeData(const QModelIndexList & indexes, QDataStream & stream) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"encodeData", &handled, 2, (uint64_t)&indexes, (uint64_t)&stream, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QAbstractItemModel::encodeData(indexes, stream);
   }
   }
 
@@ -252,6 +266,18 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
   }
 
 // Protected Visibility=Default Availability=Available
+// void changePersistentIndexList(const QModelIndexList &, const QModelIndexList &)
+  virtual void changePersistentIndexList(const QModelIndexList & from, const QModelIndexList & to) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changePersistentIndexList", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QAbstractItemModel::changePersistentIndexList(from, to);
+  }
+  }
+
+// Protected Visibility=Default Availability=Available
 // QModelIndexList persistentIndexList()
   virtual QModelIndexList persistentIndexList() const{
     int handled = 0;
@@ -293,6 +319,14 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK18QAbstractItemModel11createIndexEiiy(void *this_, int row, int column, quintptr id) {
   auto rv = ((QAbstractItemModel*)this_)->QAbstractItemModel::createIndex(row, column, id);
 return new QModelIndex(rv);
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:294
+// [-2] void encodeData(const QModelIndexList &, QDataStream &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK18QAbstractItemModel10encodeDataERK5QListI11QModelIndexER11QDataStream(void *this_, const QModelIndexList & indexes, QDataStream* stream) {
+  ((QAbstractItemModel*)this_)->QAbstractItemModel::encodeData(indexes, *stream);
 }
 
 // Protected Visibility=Default Availability=Available
@@ -442,6 +476,14 @@ void C_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(void *th
 }
 
 // Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:328
+// [-2] void changePersistentIndexList(const QModelIndexList &, const QModelIndexList &)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel25changePersistentIndexListERK5QListI11QModelIndexES4_(void *this_, const QModelIndexList & from, const QModelIndexList & to) {
+  ((QAbstractItemModel*)this_)->QAbstractItemModel::changePersistentIndexList(from, to);
+}
+
+// Protected Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qabstractitemmodel.h:329
 // [8] QModelIndexList persistentIndexList()
@@ -459,6 +501,40 @@ return new QModelIndexList(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QAbstractItemModel10metaObjectEv(void *this_) {
   return (void*)((QAbstractItemModel*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:167
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QAbstractItemModel11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAbstractItemModel*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:167
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN18QAbstractItemModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAbstractItemModel*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:167
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QAbstractItemModel2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractItemModel::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:167
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QAbstractItemModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractItemModel::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -571,12 +647,37 @@ bool C_ZN18QAbstractItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(voi
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:195
+// [8] QMap<int, QVariant> itemData(const QModelIndex &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK18QAbstractItemModel8itemDataERK11QModelIndex(void *this_, QModelIndex* index) {
+  auto rv = ((QAbstractItemModel*)this_)->itemData(*index);
+/*return rv;*/
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:196
+// [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
+extern "C" Q_DECL_EXPORT
+bool C_ZN18QAbstractItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, const QMap<int, QVariant> & roles) {
+  return (bool)((QAbstractItemModel*)this_)->setItemData(*index, roles);
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:198
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QAbstractItemModel9mimeTypesEv(void *this_) {
   auto rv = ((QAbstractItemModel*)this_)->mimeTypes();
 return new QStringList(rv);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:199
+// [8] QMimeData * mimeData(const QModelIndexList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK18QAbstractItemModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
+  return (void*)((QAbstractItemModel*)this_)->mimeData(indexes);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -769,12 +870,166 @@ void* C_ZNK18QAbstractItemModel4spanERK11QModelIndex(void *this_, QModelIndex* i
 return new QSize(rv);
 }
 
+// Public virtual Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtCore/qabstractitemmodel.h:241
+// [-2] QHash<int, QByteArray> roleNames()
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void C_ZNK18QAbstractItemModel9roleNamesEv(void *this_) {
+  auto rv = ((QAbstractItemModel*)this_)->roleNames();
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:254
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
+  ((QAbstractItemModel*)this_)->dataChanged(*topLeft, *bottomRight, roles);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:255
 // [-2] void headerDataChanged(Qt::Orientation, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(void *this_, Qt::Orientation orientation, int first, int last) {
   ((QAbstractItemModel*)this_)->headerDataChanged(orientation, first, last);
+}
+
+// Public Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtCore/qabstractitemmodel.h:256
+// [-2] void layoutChanged(const QList<QPersistentModelIndex> &, QAbstractItemModel::LayoutChangeHint)
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel13layoutChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE(void *this_, const QList<QPersistentModelIndex> & parents, QAbstractItemModel::LayoutChangeHint hint) {
+  ((QAbstractItemModel*)this_)->layoutChanged(parents, hint);
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtCore/qabstractitemmodel.h:257
+// [-2] void layoutAboutToBeChanged(const QList<QPersistentModelIndex> &, QAbstractItemModel::LayoutChangeHint)
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel22layoutAboutToBeChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE(void *this_, const QList<QPersistentModelIndex> & parents, QAbstractItemModel::LayoutChangeHint hint) {
+  ((QAbstractItemModel*)this_)->layoutAboutToBeChanged(parents, hint);
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:259
+// [-2] void rowsAboutToBeInserted(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel21rowsAboutToBeInsertedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->rowsAboutToBeInserted(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:260
+// [-2] void rowsInserted(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel12rowsInsertedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->rowsInserted(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:262
+// [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel20rowsAboutToBeRemovedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->rowsAboutToBeRemoved(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:263
+// [-2] void rowsRemoved(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel11rowsRemovedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->rowsRemoved(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:265
+// [-2] void columnsAboutToBeInserted(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel24columnsAboutToBeInsertedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->columnsAboutToBeInserted(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:266
+// [-2] void columnsInserted(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel15columnsInsertedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->columnsInserted(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:268
+// [-2] void columnsAboutToBeRemoved(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel23columnsAboutToBeRemovedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->columnsAboutToBeRemoved(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:269
+// [-2] void columnsRemoved(const QModelIndex &, int, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel14columnsRemovedERK11QModelIndexiiNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int first, int last, QAbstractItemModel::QPrivateSignal* arg3) {
+  ((QAbstractItemModel*)this_)->columnsRemoved(*parent, first, last, *arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:271
+// [-2] void modelAboutToBeReset(QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel19modelAboutToBeResetENS_14QPrivateSignalE(void *this_, QAbstractItemModel::QPrivateSignal* arg0) {
+  ((QAbstractItemModel*)this_)->modelAboutToBeReset(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:272
+// [-2] void modelReset(QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel10modelResetENS_14QPrivateSignalE(void *this_, QAbstractItemModel::QPrivateSignal* arg0) {
+  ((QAbstractItemModel*)this_)->modelReset(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:274
+// [-2] void rowsAboutToBeMoved(const QModelIndex &, int, int, const QModelIndex &, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel18rowsAboutToBeMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* sourceParent, int sourceStart, int sourceEnd, QModelIndex* destinationParent, int destinationRow, QAbstractItemModel::QPrivateSignal* arg5) {
+  ((QAbstractItemModel*)this_)->rowsAboutToBeMoved(*sourceParent, sourceStart, sourceEnd, *destinationParent, destinationRow, *arg5);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:275
+// [-2] void rowsMoved(const QModelIndex &, int, int, const QModelIndex &, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel9rowsMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int start, int end, QModelIndex* destination, int row, QAbstractItemModel::QPrivateSignal* arg5) {
+  ((QAbstractItemModel*)this_)->rowsMoved(*parent, start, end, *destination, row, *arg5);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:277
+// [-2] void columnsAboutToBeMoved(const QModelIndex &, int, int, const QModelIndex &, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel21columnsAboutToBeMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* sourceParent, int sourceStart, int sourceEnd, QModelIndex* destinationParent, int destinationColumn, QAbstractItemModel::QPrivateSignal* arg5) {
+  ((QAbstractItemModel*)this_)->columnsAboutToBeMoved(*sourceParent, sourceStart, sourceEnd, *destinationParent, destinationColumn, *arg5);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:278
+// [-2] void columnsMoved(const QModelIndex &, int, int, const QModelIndex &, int, QAbstractItemModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN18QAbstractItemModel12columnsMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int start, int end, QModelIndex* destination, int column, QAbstractItemModel::QPrivateSignal* arg5) {
+  ((QAbstractItemModel*)this_)->columnsMoved(*parent, start, end, *destination, column, *arg5);
 }
 
 // Public virtual Visibility=Default Availability=Available

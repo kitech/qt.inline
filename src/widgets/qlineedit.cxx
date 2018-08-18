@@ -375,6 +375,40 @@ void* C_ZNK9QLineEdit10metaObjectEv(void *this_) {
   return (void*)((QLineEdit*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:65
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QLineEdit11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QLineEdit*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:65
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QLineEdit11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QLineEdit*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:65
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QLineEdit2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QLineEdit::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:65
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QLineEdit6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QLineEdit::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:93
 // [-2] void QLineEdit(QWidget *)
@@ -950,6 +984,14 @@ void C_ZN9QLineEdit5pasteEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit8deselectEv(void *this_) {
   ((QLineEdit*)this_)->deselect();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:198
+// [-2] void insert(const QString &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QLineEdit6insertERK7QString(void *this_, QString* arg0) {
+  ((QLineEdit*)this_)->insert(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

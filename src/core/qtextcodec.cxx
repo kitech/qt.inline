@@ -8,19 +8,51 @@
 #include "callback_inherit.h"
 
 // QTextCodec is pure virtual: true
-// QTextCodec has virtual projected: false
+// QTextCodec has virtual projected: true
 //  header block end
 
 //  main block begin
 
 class Q_DECL_EXPORT MyQTextCodec : public QTextCodec {
 public:
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// QString convertToUnicode(const char *, int, QTextCodec::ConverterState *)
+  virtual QString convertToUnicode(const char * in, int length, QTextCodec::ConverterState * state) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToUnicode", &handled, 3, (uint64_t)in, (uint64_t)length, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QString*)(irv);
+      // RecordRecordQString
+    } else {
+    return QString{};
+  }
+  }
+
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// QByteArray convertFromUnicode(const QChar *, int, QTextCodec::ConverterState *)
+  virtual QByteArray convertFromUnicode(const QChar * in, int length, QTextCodec::ConverterState * state) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromUnicode", &handled, 3, (uint64_t)in, (uint64_t)length, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QByteArray*)(irv);
+      // RecordRecordQByteArray
+    } else {
+    return QByteArray{};
+  }
+  }
+
 // void QTextCodec()
 MyQTextCodec() : QTextCodec() {}
 // Protected virtual Visibility=Default Availability=Available
 // void ~QTextCodec()
 };
 
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:127
+// [8] QString convertToUnicode(const char *, int, QTextCodec::ConverterState *)
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:128
+// [8] QByteArray convertFromUnicode(const QChar *, int, QTextCodec::ConverterState *)
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:61
 // [8] QTextCodec * codecForName(const QByteArray &)
@@ -43,6 +75,24 @@ void* C_ZN10QTextCodec12codecForNameEPKc(const char * name) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextCodec11codecForMibEi(int mib) {
   return (void*)QTextCodec::codecForMib(mib);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:65
+// [8] QList<QByteArray> availableCodecs()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN10QTextCodec15availableCodecsEv() {
+  auto rv = QTextCodec::availableCodecs();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:66
+// [-2] QList<int> availableMibs()
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZN10QTextCodec13availableMibsEv() {
+  auto rv = QTextCodec::availableMibs();
+return new QList<int>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -165,6 +215,24 @@ return new QByteArray(rv);
 }
 #endif // QT_VERSION >= 0x050a00
 
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:114
+// [8] QString toUnicode(const char *, int, QTextCodec::ConverterState *)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK10QTextCodec9toUnicodeEPKciPNS_14ConverterStateE(void *this_, const char * in, int length, QTextCodec::ConverterState * state) {
+  auto rv = ((QTextCodec*)this_)->toUnicode(in, length, state);
+return new QString(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:116
+// [8] QByteArray fromUnicode(const QChar *, int, QTextCodec::ConverterState *)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK10QTextCodec11fromUnicodeEPK5QChariPNS_14ConverterStateE(void *this_, const QChar * in, int length, QTextCodec::ConverterState * state) {
+  auto rv = ((QTextCodec*)this_)->fromUnicode(in, length, state);
+return new QByteArray(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:119
 // [8] QTextDecoder * makeDecoder(QTextCodec::ConversionFlags)
@@ -188,6 +256,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec4nameEv(void *this_) {
   auto rv = ((QTextCodec*)this_)->name();
 return new QByteArray(rv);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:123
+// [8] QList<QByteArray> aliases()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK10QTextCodec7aliasesEv(void *this_) {
+  auto rv = ((QTextCodec*)this_)->aliases();
+return new QList<QByteArray>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available

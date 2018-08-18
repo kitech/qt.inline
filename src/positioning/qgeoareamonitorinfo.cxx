@@ -19,6 +19,8 @@ public:
   virtual ~MyQGeoAreaMonitorInfo() {}
 // void QGeoAreaMonitorInfo(const QString &)
 MyQGeoAreaMonitorInfo(const QString & name) : QGeoAreaMonitorInfo(name) {}
+// void QGeoAreaMonitorInfo(const QGeoAreaMonitorInfo &)
+MyQGeoAreaMonitorInfo(const QGeoAreaMonitorInfo & other) : QGeoAreaMonitorInfo(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQGeoAreaMonitorInfo(const QString & name) : QGeoAreaMonitorInfo(name) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGeoAreaMonitorInfoC2ERK7QString(QString* name) {
   return  new QGeoAreaMonitorInfo(*name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorinfo.h:63
+// [-2] void QGeoAreaMonitorInfo(const QGeoAreaMonitorInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QGeoAreaMonitorInfoC2ERKS_(QGeoAreaMonitorInfo* other) {
+  return  new QGeoAreaMonitorInfo(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -143,6 +153,23 @@ bool C_ZNK19QGeoAreaMonitorInfo12isPersistentEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGeoAreaMonitorInfo13setPersistentEb(void *this_, bool isPersistent) {
   ((QGeoAreaMonitorInfo*)this_)->setPersistent(isPersistent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorinfo.h:86
+// [8] QVariantMap notificationParameters()
+extern "C" Q_DECL_EXPORT
+QVariantMap* C_ZNK19QGeoAreaMonitorInfo22notificationParametersEv(void *this_) {
+  auto rv = ((QGeoAreaMonitorInfo*)this_)->notificationParameters();
+return new QVariantMap(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorinfo.h:87
+// [-2] void setNotificationParameters(const QVariantMap &)
+extern "C" Q_DECL_EXPORT
+void C_ZN19QGeoAreaMonitorInfo25setNotificationParametersERK4QMapI7QString8QVariantE(void *this_, const QVariantMap & parameters) {
+  ((QGeoAreaMonitorInfo*)this_)->setNotificationParameters(parameters);
 }
 
 //  main block end

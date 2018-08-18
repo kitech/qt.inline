@@ -69,6 +69,40 @@ void* C_ZNK11QMainWindow10metaObjectEv(void *this_) {
   return (void*)((QMainWindow*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QMainWindow11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMainWindow*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMainWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMainWindow*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QMainWindow2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMainWindow::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QMainWindow6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMainWindow::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:94
 // [-2] void QMainWindow(QWidget *, Qt::WindowFlags)
@@ -431,6 +465,18 @@ void C_ZN11QMainWindow16tabifyDockWidgetEP11QDockWidgetS1_(void *this_, QDockWid
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtWidgets/qmainwindow.h:171
+// [-2] QList<QDockWidget *> tabifiedDockWidgets(QDockWidget *)
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+QList<QDockWidget *>* C_ZNK11QMainWindow19tabifiedDockWidgetsEP11QDockWidget(void *this_, QDockWidget * dockwidget) {
+  auto rv = ((QMainWindow*)this_)->tabifiedDockWidgets(dockwidget);
+return new QList<QDockWidget *>(rv);
+}
+#endif // QT_VERSION >= 0x040500
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:172
 // [-2] void removeDockWidget(QDockWidget *)
 extern "C" Q_DECL_EXPORT
@@ -453,6 +499,17 @@ extern "C" Q_DECL_EXPORT
 Qt::DockWidgetArea C_ZNK11QMainWindow14dockWidgetAreaEP11QDockWidget(void *this_, QDockWidget * dockwidget) {
   return (Qt::DockWidgetArea)((QMainWindow*)this_)->dockWidgetArea(dockwidget);
 }
+
+// Public Visibility=Default Availability=Available
+// since 5.6
+// /usr/include/qt/QtWidgets/qmainwindow.h:177
+// [-2] void resizeDocks(const QList<QDockWidget *> &, const QList<int> &, Qt::Orientation)
+#if QT_VERSION >= 0x050600
+extern "C" Q_DECL_EXPORT
+void C_ZN11QMainWindow11resizeDocksERK5QListIP11QDockWidgetERKS0_IiEN2Qt11OrientationE(void *this_, const QList<QDockWidget *> & docks, const QList<int> & sizes, Qt::Orientation orientation) {
+  ((QMainWindow*)this_)->resizeDocks(docks, sizes, orientation);
+}
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:181

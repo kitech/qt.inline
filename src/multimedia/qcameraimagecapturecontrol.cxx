@@ -29,6 +29,40 @@ void* C_ZNK26QCameraImageCaptureControl10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN26QCameraImageCaptureControl11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QCameraImageCaptureControl*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN26QCameraImageCaptureControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QCameraImageCaptureControl*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN26QCameraImageCaptureControl2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCameraImageCaptureControl::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN26QCameraImageCaptureControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCameraImageCaptureControl::trUtf8(s, c, n);
+return new QString(rv);
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:61
 // [-2] void ~QCameraImageCaptureControl()
 extern "C" Q_DECL_EXPORT

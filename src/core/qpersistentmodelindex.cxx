@@ -20,6 +20,10 @@ public:
 MyQPersistentModelIndex() : QPersistentModelIndex() {}
 // void QPersistentModelIndex(const QModelIndex &)
 MyQPersistentModelIndex(const QModelIndex & index) : QPersistentModelIndex(index) {}
+// void QPersistentModelIndex(const QPersistentModelIndex &)
+MyQPersistentModelIndex(const QPersistentModelIndex & other) : QPersistentModelIndex(other) {}
+// void QPersistentModelIndex(QPersistentModelIndex &&)
+MyQPersistentModelIndex(QPersistentModelIndex && other) : QPersistentModelIndex(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +40,14 @@ void* C_ZN21QPersistentModelIndexC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(QModelIndex* index) {
   return  new QPersistentModelIndex(*index);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:109
+// [-2] void QPersistentModelIndex(const QPersistentModelIndex &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QPersistentModelIndexC2ERKS_(QPersistentModelIndex* other) {
+  return  new QPersistentModelIndex(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,6 +89,17 @@ void* C_ZN21QPersistentModelIndexaSERKS_(void *this_, QPersistentModelIndex* oth
   auto& rv = ((QPersistentModelIndex*)this_)->operator=(*other);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtCore/qabstractitemmodel.h:117
+// [-2] void QPersistentModelIndex(QPersistentModelIndex &&)
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QPersistentModelIndexC2EOS_(QPersistentModelIndex && other) {
+  return  new QPersistentModelIndex(other);
+}
+#endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:119

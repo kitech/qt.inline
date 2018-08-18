@@ -28,6 +28,40 @@ void* C_ZNK12QMediaPlayer10metaObjectEv(void *this_) {
   return (void*)((QMediaPlayer*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:61
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QMediaPlayer11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMediaPlayer*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:61
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMediaPlayer11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMediaPlayer*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:61
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QMediaPlayer2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMediaPlayer::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:61
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QMediaPlayer6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMediaPlayer::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplayer.h:122
 // [-2] void QMediaPlayer(QObject *, QMediaPlayer::Flags)
@@ -58,6 +92,22 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QMediaPlayer18supportedMimeTypesE6QFlagsINS_4FlagEE(QFlags<QMediaPlayer::Flag> flags) {
   auto rv = QMediaPlayer::supportedMimeTypes(flags);
 return new QStringList(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:130
+// [-2] void setVideoOutput(QVideoWidget *)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QMediaPlayer14setVideoOutputEP12QVideoWidget(void *this_, QVideoWidget * arg0) {
+  ((QMediaPlayer*)this_)->setVideoOutput(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:131
+// [-2] void setVideoOutput(QGraphicsVideoItem *)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QMediaPlayer14setVideoOutputEP18QGraphicsVideoItem(void *this_, QGraphicsVideoItem * arg0) {
+  ((QMediaPlayer*)this_)->setVideoOutput(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -241,6 +291,18 @@ void C_ZN12QMediaPlayer12setAudioRoleEN6QAudio4RoleE(void *this_, QAudio::Role a
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:164
+// [-2] QList<QAudio::Role> supportedAudioRoles()
+#if QT_VERSION >= 0x050600
+extern "C" Q_DECL_EXPORT
+QList<QAudio::Role>* C_ZNK12QMediaPlayer19supportedAudioRolesEv(void *this_) {
+  auto rv = ((QMediaPlayer*)this_)->supportedAudioRoles();
+return new QList<QAudio::Role>(rv);
+}
+#endif // QT_VERSION >= 0x050600
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplayer.h:167
 // [-2] void play()
 extern "C" Q_DECL_EXPORT
@@ -310,6 +372,14 @@ void C_ZN12QMediaPlayer8setMediaERK13QMediaContentP9QIODevice(void *this_, QMedi
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer11setPlaylistEP14QMediaPlaylist(void *this_, QMediaPlaylist * playlist) {
   ((QMediaPlayer*)this_)->setPlaylist(playlist);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:180
+// [-2] void setNetworkConfigurations(const QList<QNetworkConfiguration> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QMediaPlayer24setNetworkConfigurationsERK5QListI21QNetworkConfigurationE(void *this_, const QList<QNetworkConfiguration> & configurations) {
+  ((QMediaPlayer*)this_)->setNetworkConfigurations(configurations);
 }
 
 // Public Visibility=Default Availability=Available

@@ -46,6 +46,14 @@ return new QSurfaceFormat(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurface.h:77
+// [8] QPlatformSurface * surfaceHandle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK8QSurface13surfaceHandleEv(void *this_) {
+  return (void*)((QSurface*)this_)->surfaceHandle();
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:79
 // [4] QSurface::SurfaceType surfaceType()
 extern "C" Q_DECL_EXPORT

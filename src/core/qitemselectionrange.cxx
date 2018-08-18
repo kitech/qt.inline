@@ -18,6 +18,10 @@ public:
   virtual ~MyQItemSelectionRange() {}
 // void QItemSelectionRange()
 MyQItemSelectionRange() : QItemSelectionRange() {}
+// void QItemSelectionRange(const QItemSelectionRange &)
+MyQItemSelectionRange(const QItemSelectionRange & other) : QItemSelectionRange(other) {}
+// void QItemSelectionRange(QItemSelectionRange &&)
+MyQItemSelectionRange(QItemSelectionRange && other) : QItemSelectionRange(other) {}
 // void QItemSelectionRange(const QModelIndex &, const QModelIndex &)
 MyQItemSelectionRange(const QModelIndex & topL, const QModelIndex & bottomR) : QItemSelectionRange(topL, bottomR) {}
 // void QItemSelectionRange(const QModelIndex &)
@@ -30,6 +34,22 @@ MyQItemSelectionRange(const QModelIndex & index) : QItemSelectionRange(index) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionRangeC2Ev() {
   return  new QItemSelectionRange();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:59
+// [-2] void QItemSelectionRange(const QItemSelectionRange &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QItemSelectionRangeC2ERKS_(QItemSelectionRange* other) {
+  return  new QItemSelectionRange(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:62
+// [-2] void QItemSelectionRange(QItemSelectionRange &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QItemSelectionRangeC2EOS_(QItemSelectionRange && other) {
+  return  new QItemSelectionRange(other);
 }
 
 // Public inline Visibility=Default Availability=Available

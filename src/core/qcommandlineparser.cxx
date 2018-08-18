@@ -21,6 +21,24 @@ public:
 MyQCommandLineParser() : QCommandLineParser() {}
 };
 
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QCommandLineParser2trEPKcS1_i(const char * sourceText, const char * disambiguation, int n) {
+  auto rv = QCommandLineParser::tr(sourceText, disambiguation, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QCommandLineParser6trUtf8EPKcS1_i(const char * sourceText, const char * disambiguation, int n) {
+  auto rv = QCommandLineParser::trUtf8(sourceText, disambiguation, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:59
 // [-2] void QCommandLineParser()
@@ -59,6 +77,17 @@ extern "C" Q_DECL_EXPORT
 bool C_ZN18QCommandLineParser9addOptionERK18QCommandLineOption(void *this_, QCommandLineOption* commandLineOption) {
   return (bool)((QCommandLineParser*)this_)->addOption(*commandLineOption);
 }
+
+// Public Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtCore/qcommandlineparser.h:75
+// [1] bool addOptions(const QList<QCommandLineOption> &)
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+bool C_ZN18QCommandLineParser10addOptionsERK5QListI18QCommandLineOptionE(void *this_, const QList<QCommandLineOption> & options) {
+  return (bool)((QCommandLineParser*)this_)->addOptions(options);
+}
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:77

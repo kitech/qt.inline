@@ -138,6 +138,23 @@ void C_ZN19QPainterPathStroker14setDashPatternEN2Qt8PenStyleE(void *this_, Qt::P
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:266
+// [-2] void setDashPattern(const QVector<qreal> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN19QPainterPathStroker14setDashPatternERK7QVectorIdE(void *this_, const QVector<qreal> & dashPattern) {
+  ((QPainterPathStroker*)this_)->setDashPattern(dashPattern);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:267
+// [-2] QVector<qreal> dashPattern()
+extern "C" Q_DECL_EXPORT
+void C_ZNK19QPainterPathStroker11dashPatternEv(void *this_) {
+  auto rv = ((QPainterPathStroker*)this_)->dashPattern();
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:269
 // [-2] void setDashOffset(qreal)
 extern "C" Q_DECL_EXPORT

@@ -25,6 +25,10 @@ MyQStandardItem(const QString & text) : QStandardItem(text) {}
 MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, text) {}
 // void QStandardItem(int, int)
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
+// void QStandardItem(const QStandardItem &)
+MyQStandardItem(const QStandardItem & other) : QStandardItem(other) {}
+// void QStandardItem(QStandardItemPrivate &)
+MyQStandardItem(QStandardItemPrivate & dd) : QStandardItem(dd) {}
 // Protected Visibility=Default Availability=Available
 // QStandardItem & operator=(const QStandardItem &)
   virtual QStandardItem & operator=(const QStandardItem & other) {
@@ -629,6 +633,30 @@ void C_ZN13QStandardItem8setChildEiPS_(void *this_, int row, QStandardItem * ite
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:211
+// [-2] void insertRow(int, const QList<QStandardItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem9insertRowEiRK5QListIPS_E(void *this_, int row, const QList<QStandardItem *> & items) {
+  ((QStandardItem*)this_)->insertRow(row, items);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:212
+// [-2] void insertColumn(int, const QList<QStandardItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem12insertColumnEiRK5QListIPS_E(void *this_, int column, const QList<QStandardItem *> & items) {
+  ((QStandardItem*)this_)->insertColumn(column, items);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:213
+// [-2] void insertRows(int, const QList<QStandardItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem10insertRowsEiRK5QListIPS_E(void *this_, int row, const QList<QStandardItem *> & items) {
+  ((QStandardItem*)this_)->insertRows(row, items);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:214
 // [-2] void insertRows(int, int)
 extern "C" Q_DECL_EXPORT
@@ -677,6 +705,30 @@ void C_ZN13QStandardItem13removeColumnsEii(void *this_, int column, int count) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:222
+// [-2] void appendRow(const QList<QStandardItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem9appendRowERK5QListIPS_E(void *this_, const QList<QStandardItem *> & items) {
+  ((QStandardItem*)this_)->appendRow(items);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:223
+// [-2] void appendRows(const QList<QStandardItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem10appendRowsERK5QListIPS_E(void *this_, const QList<QStandardItem *> & items) {
+  ((QStandardItem*)this_)->appendRows(items);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:224
+// [-2] void appendColumn(const QList<QStandardItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem12appendColumnERK5QListIPS_E(void *this_, const QList<QStandardItem *> & items) {
+  ((QStandardItem*)this_)->appendColumn(items);
+}
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:225
 // [-2] void insertRow(int, QStandardItem *)
 extern "C" Q_DECL_EXPORT
@@ -698,6 +750,24 @@ void C_ZN13QStandardItem9appendRowEPS_(void *this_, QStandardItem * item) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItem9takeChildEii(void *this_, int row, int column) {
   return (void*)((QStandardItem*)this_)->takeChild(row, column);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:229
+// [8] QList<QStandardItem *> takeRow(int)
+extern "C" Q_DECL_EXPORT
+QList<QStandardItem *>* C_ZN13QStandardItem7takeRowEi(void *this_, int row) {
+  auto rv = ((QStandardItem*)this_)->takeRow(row);
+return new QList<QStandardItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:230
+// [8] QList<QStandardItem *> takeColumn(int)
+extern "C" Q_DECL_EXPORT
+QList<QStandardItem *>* C_ZN13QStandardItem10takeColumnEi(void *this_, int column) {
+  auto rv = ((QStandardItem*)this_)->takeColumn(column);
+return new QList<QStandardItem *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

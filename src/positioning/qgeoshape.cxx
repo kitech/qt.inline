@@ -19,6 +19,10 @@ public:
   virtual ~MyQGeoShape() {}
 // void QGeoShape()
 MyQGeoShape() : QGeoShape() {}
+// void QGeoShape(const QGeoShape &)
+MyQGeoShape(const QGeoShape & other) : QGeoShape(other) {}
+// void QGeoShape(QGeoShapePrivate *)
+MyQGeoShape(QGeoShapePrivate * d) : QGeoShape(d) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +31,14 @@ MyQGeoShape() : QGeoShape() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QGeoShapeC2Ev() {
   return  new QGeoShape();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoshape.h:62
+// [-2] void QGeoShape(const QGeoShape &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QGeoShapeC2ERKS_(QGeoShape* other) {
+  return  new QGeoShape(*other);
 }
 
 // Public Visibility=Default Availability=Available

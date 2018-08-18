@@ -18,6 +18,8 @@ public:
   virtual ~MyQAudioEncoderSettings() {}
 // void QAudioEncoderSettings()
 MyQAudioEncoderSettings() : QAudioEncoderSettings() {}
+// void QAudioEncoderSettings(const QAudioEncoderSettings &)
+MyQAudioEncoderSettings(const QAudioEncoderSettings & other) : QAudioEncoderSettings(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQAudioEncoderSettings() : QAudioEncoderSettings() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAudioEncoderSettingsC2Ev() {
   return  new QAudioEncoderSettings();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:59
+// [-2] void QAudioEncoderSettings(const QAudioEncoderSettings &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QAudioEncoderSettingsC2ERKS_(QAudioEncoderSettings* other) {
+  return  new QAudioEncoderSettings(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -175,11 +185,28 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:88
+// [8] QVariantMap encodingOptions()
+extern "C" Q_DECL_EXPORT
+QVariantMap* C_ZNK21QAudioEncoderSettings15encodingOptionsEv(void *this_) {
+  auto rv = ((QAudioEncoderSettings*)this_)->encodingOptions();
+return new QVariantMap(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaencodersettings.h:89
 // [-2] void setEncodingOption(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QAudioEncoderSettings17setEncodingOptionERK7QStringRK8QVariant(void *this_, QString* option, QVariant* value) {
   ((QAudioEncoderSettings*)this_)->setEncodingOption(*option, *value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:90
+// [-2] void setEncodingOptions(const QVariantMap &)
+extern "C" Q_DECL_EXPORT
+void C_ZN21QAudioEncoderSettings18setEncodingOptionsERK4QMapI7QString8QVariantE(void *this_, const QVariantMap & options) {
+  ((QAudioEncoderSettings*)this_)->setEncodingOptions(options);
 }
 
 //  main block end

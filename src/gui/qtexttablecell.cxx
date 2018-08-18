@@ -18,6 +18,8 @@ public:
   virtual ~MyQTextTableCell() {}
 // void QTextTableCell()
 MyQTextTableCell() : QTextTableCell() {}
+// void QTextTableCell(const QTextTableCell &)
+MyQTextTableCell(const QTextTableCell & o) : QTextTableCell(o) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -35,6 +37,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN14QTextTableCellD2Ev(void *this_) {
   delete (QTextTableCell*)(this_);
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtexttable.h:59
+// [-2] void QTextTableCell(const QTextTableCell &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QTextTableCellC2ERKS_(QTextTableCell* o) {
+  return  new QTextTableCell(*o);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:60
 // [16] QTextTableCell & operator=(const QTextTableCell &)

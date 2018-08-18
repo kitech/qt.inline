@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionHeader() {}
 // void QStyleOptionHeader()
 MyQStyleOptionHeader() : QStyleOptionHeader() {}
+// void QStyleOptionHeader(const QStyleOptionHeader &)
+MyQStyleOptionHeader(const QStyleOptionHeader & other) : QStyleOptionHeader(other) {}
 // void QStyleOptionHeader(int)
 MyQStyleOptionHeader(int version) : QStyleOptionHeader(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionHeader(int version) : QStyleOptionHeader(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionHeaderC2Ev() {
   return  new QStyleOptionHeader();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:227
+// [-2] void QStyleOptionHeader(const QStyleOptionHeader &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QStyleOptionHeaderC2ERKS_(QStyleOptionHeader* other) {
+  return  new QStyleOptionHeader(*other);
 }
 
 

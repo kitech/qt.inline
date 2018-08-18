@@ -19,6 +19,8 @@ public:
   virtual ~MyQCameraViewfinderSettings() {}
 // void QCameraViewfinderSettings()
 MyQCameraViewfinderSettings() : QCameraViewfinderSettings() {}
+// void QCameraViewfinderSettings(const QCameraViewfinderSettings &)
+MyQCameraViewfinderSettings(const QCameraViewfinderSettings & other) : QCameraViewfinderSettings(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQCameraViewfinderSettings() : QCameraViewfinderSettings() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QCameraViewfinderSettingsC2Ev() {
   return  new QCameraViewfinderSettings();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:57
+// [-2] void QCameraViewfinderSettings(const QCameraViewfinderSettings &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN25QCameraViewfinderSettingsC2ERKS_(QCameraViewfinderSettings* other) {
+  return  new QCameraViewfinderSettings(*other);
 }
 
 // Public Visibility=Default Availability=Available

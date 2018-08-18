@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkCookie() {}
 // void QNetworkCookie(const QByteArray &, const QByteArray &)
 MyQNetworkCookie(const QByteArray & name, const QByteArray & value) : QNetworkCookie(name, value) {}
+// void QNetworkCookie(const QNetworkCookie &)
+MyQNetworkCookie(const QNetworkCookie & other) : QNetworkCookie(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQNetworkCookie(const QByteArray & name, const QByteArray & value) : QNetworkCo
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QNetworkCookieC2ERK10QByteArrayS2_(QByteArray* name, QByteArray* value) {
   return  new QNetworkCookie(*name, *value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:67
+// [-2] void QNetworkCookie(const QNetworkCookie &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QNetworkCookieC2ERKS_(QNetworkCookie* other) {
+  return  new QNetworkCookie(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -239,5 +249,14 @@ void C_ZN14QNetworkCookie9normalizeERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkCookie*)this_)->normalize(*url);
 }
 #endif // QT_VERSION >= 0x050000
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:106
+// [-2] QList<QNetworkCookie> parseCookies(const QByteArray &)
+extern "C" Q_DECL_EXPORT
+QList<QNetworkCookie>* C_ZN14QNetworkCookie12parseCookiesERK10QByteArray(QByteArray* cookieString) {
+  auto rv = QNetworkCookie::parseCookies(*cookieString);
+return new QList<QNetworkCookie>(rv);
+}
 
 //  main block end

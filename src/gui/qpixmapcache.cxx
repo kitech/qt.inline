@@ -62,10 +62,54 @@ bool C_ZN12QPixmapCache4findERK7QStringP7QPixmap(QString* key, QPixmap * pixmap)
 #endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmapcache.h:82
+// [1] bool find(const QPixmapCache::Key &, QPixmap *)
+extern "C" Q_DECL_EXPORT
+bool C_ZN12QPixmapCache4findERKNS_3KeyEP7QPixmap(QPixmapCache::Key* key, QPixmap * pixmap) {
+  return (bool)QPixmapCache::find(*key, pixmap);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmapcache.h:83
+// [1] bool insert(const QString &, const QPixmap &)
+extern "C" Q_DECL_EXPORT
+bool C_ZN12QPixmapCache6insertERK7QStringRK7QPixmap(QString* key, QPixmap* pixmap) {
+  return (bool)QPixmapCache::insert(*key, *pixmap);
+}
+
+// Public static Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtGui/qpixmapcache.h:84
+// [8] QPixmapCache::Key insert(const QPixmap &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QPixmapCache6insertERK7QPixmap(QPixmap* pixmap) {
+  auto rv = QPixmapCache::insert(*pixmap);
+return new QPixmapCache::Key(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmapcache.h:85
+// [1] bool replace(const QPixmapCache::Key &, const QPixmap &)
+extern "C" Q_DECL_EXPORT
+bool C_ZN12QPixmapCache7replaceERKNS_3KeyERK7QPixmap(QPixmapCache::Key* key, QPixmap* pixmap) {
+  return (bool)QPixmapCache::replace(*key, *pixmap);
+}
+
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:86
 // [-2] void remove(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPixmapCache6removeERK7QString(QString* key) {
+  QPixmapCache::remove(*key);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmapcache.h:87
+// [-2] void remove(const QPixmapCache::Key &)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QPixmapCache6removeERKNS_3KeyE(QPixmapCache::Key* key) {
   QPixmapCache::remove(*key);
 }
 

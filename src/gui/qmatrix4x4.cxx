@@ -202,6 +202,15 @@ void* C_ZNK10QMatrix4x410transposedEv(void *this_) {
 return new QMatrix4x4(rv);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:98
+// [36] QMatrix3x3 normalMatrix()
+extern "C" Q_DECL_EXPORT
+QMatrix3x3* C_ZNK10QMatrix4x412normalMatrixEv(void *this_) {
+  auto rv = ((QMatrix4x4*)this_)->normalMatrix();
+return new QMatrix3x3(rv);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:100
 // [68] QMatrix4x4 & operator+=(const QMatrix4x4 &)

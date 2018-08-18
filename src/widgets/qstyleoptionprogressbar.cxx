@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionProgressBar() {}
 // void QStyleOptionProgressBar()
 MyQStyleOptionProgressBar() : QStyleOptionProgressBar() {}
+// void QStyleOptionProgressBar(const QStyleOptionProgressBar &)
+MyQStyleOptionProgressBar(const QStyleOptionProgressBar & other) : QStyleOptionProgressBar(other) {}
 // void QStyleOptionProgressBar(int)
 MyQStyleOptionProgressBar(int version) : QStyleOptionProgressBar(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionProgressBar(int version) : QStyleOptionProgressBar(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleOptionProgressBarC2Ev() {
   return  new QStyleOptionProgressBar();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:343
+// [-2] void QStyleOptionProgressBar(const QStyleOptionProgressBar &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QStyleOptionProgressBarC2ERKS_(QStyleOptionProgressBar* other) {
+  return  new QStyleOptionProgressBar(*other);
 }
 
 

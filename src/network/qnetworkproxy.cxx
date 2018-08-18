@@ -21,6 +21,8 @@ public:
 MyQNetworkProxy() : QNetworkProxy() {}
 // void QNetworkProxy(QNetworkProxy::ProxyType, const QString &, quint16, const QString &, const QString &)
 MyQNetworkProxy(QNetworkProxy::ProxyType type_, const QString & hostName, quint16 port, const QString & user, const QString & password) : QNetworkProxy(type_, hostName, port, user, password) {}
+// void QNetworkProxy(const QNetworkProxy &)
+MyQNetworkProxy(const QNetworkProxy & other) : QNetworkProxy(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +39,14 @@ void* C_ZN13QNetworkProxyC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_(QNetworkProxy::ProxyType type_, QString* hostName, quint16 port, QString* user, QString* password) {
   return  new QNetworkProxy(type_, *hostName, port, *user, *password);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:163
+// [-2] void QNetworkProxy(const QNetworkProxy &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QNetworkProxyC2ERKS_(QNetworkProxy* other) {
+  return  new QNetworkProxy(*other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -264,6 +274,18 @@ void C_ZN13QNetworkProxy9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QNetworkProxy12hasRawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   return (bool)((QNetworkProxy*)this_)->hasRawHeader(*headerName);
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:205
+// [8] QList<QByteArray> rawHeaderList()
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK13QNetworkProxy13rawHeaderListEv(void *this_) {
+  auto rv = ((QNetworkProxy*)this_)->rawHeaderList();
+return new QList<QByteArray>(rv);
 }
 #endif // QT_VERSION >= 0x050000
 

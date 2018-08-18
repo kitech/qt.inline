@@ -20,10 +20,18 @@ public:
 MyQPolygonF() : QPolygonF() {}
 // void QPolygonF(int)
 MyQPolygonF(int size) : QPolygonF(size) {}
+// void QPolygonF(const QVector<QPointF> &)
+MyQPolygonF(const QVector<QPointF> & v) : QPolygonF(v) {}
+// void QPolygonF(QVector<QPointF> &&)
+MyQPolygonF(QVector<QPointF> && v) : QPolygonF(v) {}
 // void QPolygonF(const QRectF &)
 MyQPolygonF(const QRectF & r) : QPolygonF(r) {}
 // void QPolygonF(const QPolygon &)
 MyQPolygonF(const QPolygon & a) : QPolygonF(a) {}
+// void QPolygonF(const QPolygonF &)
+MyQPolygonF(const QPolygonF & a) : QPolygonF(a) {}
+// void QPolygonF(QPolygonF &&)
+MyQPolygonF(QPolygonF && other) : QPolygonF(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -49,6 +57,22 @@ void* C_ZN9QPolygonFC2Ei(int size) {
   return  new QPolygonF(size);
 }
 
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:147
+// [-2] void QPolygonF(const QVector<QPointF> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QPolygonFC2ERK7QVectorI7QPointFE(const QVector<QPointF> & v) {
+  return  new QPolygonF(v);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:149
+// [-2] void QPolygonF(QVector<QPointF> &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QPolygonFC2EO7QVectorI7QPointFE(QVector<QPointF> && v) {
+  return  new QPolygonF(v);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:151
 // [-2] void QPolygonF(const QRectF &)
@@ -63,6 +87,22 @@ void* C_ZN9QPolygonFC2ERK6QRectF(QRectF* r) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QPolygonFC2ERK8QPolygon(QPolygon* a) {
   return  new QPolygonF(*a);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:153
+// [-2] void QPolygonF(const QPolygonF &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QPolygonFC2ERKS_(QPolygonF* a) {
+  return  new QPolygonF(*a);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:155
+// [-2] void QPolygonF(QPolygonF &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QPolygonFC2EOS_(QPolygonF && other) {
+  return  new QPolygonF(other);
 }
 
 // Public inline Visibility=Default Availability=Available

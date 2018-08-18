@@ -19,6 +19,8 @@ public:
   virtual ~MyQStyleOptionGraphicsItem() {}
 // void QStyleOptionGraphicsItem()
 MyQStyleOptionGraphicsItem() : QStyleOptionGraphicsItem() {}
+// void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &)
+MyQStyleOptionGraphicsItem(const QStyleOptionGraphicsItem & other) : QStyleOptionGraphicsItem(other) {}
 // void QStyleOptionGraphicsItem(int)
 MyQStyleOptionGraphicsItem(int version) : QStyleOptionGraphicsItem(version) {}
 };
@@ -29,6 +31,14 @@ MyQStyleOptionGraphicsItem(int version) : QStyleOptionGraphicsItem(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
   return  new QStyleOptionGraphicsItem();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:670
+// [-2] void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN24QStyleOptionGraphicsItemC2ERKS_(QStyleOptionGraphicsItem* other) {
+  return  new QStyleOptionGraphicsItem(*other);
 }
 
 // Public static Visibility=Default Availability=Available

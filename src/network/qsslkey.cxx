@@ -23,6 +23,10 @@ MyQSslKey() : QSslKey() {}
 MyQSslKey(const QByteArray & encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase) : QSslKey(encoded, algorithm, format, type_, passPhrase) {}
 // void QSslKey(QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
 MyQSslKey(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase) : QSslKey(device, algorithm, format, type_, passPhrase) {}
+// void QSslKey(Qt::HANDLE, QSsl::KeyType)
+MyQSslKey(Qt::HANDLE handle, QSsl::KeyType type_) : QSslKey(handle, type_) {}
+// void QSslKey(const QSslKey &)
+MyQSslKey(const QSslKey & other) : QSslKey(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +51,25 @@ void* C_ZN7QSslKeyC2ERK10QByteArrayN4QSsl12KeyAlgorithmENS3_14EncodingFormatENS3
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSslKeyC2EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7KeyTypeERK10QByteArray(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, QByteArray* passPhrase) {
   return  new QSslKey(device, algorithm, format, type_, *passPhrase);
+}
+
+// Public Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtNetwork/qsslkey.h:72
+// [-2] void QSslKey(Qt::HANDLE, QSsl::KeyType)
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QSslKeyC2EPvN4QSsl7KeyTypeE(Qt::HANDLE handle, QSsl::KeyType type_) {
+  return  new QSslKey(handle, type_);
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:73
+// [-2] void QSslKey(const QSslKey &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QSslKeyC2ERKS_(QSslKey* other) {
+  return  new QSslKey(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

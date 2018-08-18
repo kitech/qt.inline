@@ -19,6 +19,8 @@ public:
   virtual ~MyQStyleOptionToolBar() {}
 // void QStyleOptionToolBar()
 MyQStyleOptionToolBar() : QStyleOptionToolBar() {}
+// void QStyleOptionToolBar(const QStyleOptionToolBar &)
+MyQStyleOptionToolBar(const QStyleOptionToolBar & other) : QStyleOptionToolBar(other) {}
 // void QStyleOptionToolBar(int)
 MyQStyleOptionToolBar(int version) : QStyleOptionToolBar(version) {}
 };
@@ -29,6 +31,14 @@ MyQStyleOptionToolBar(int version) : QStyleOptionToolBar(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionToolBarC2Ev() {
   return  new QStyleOptionToolBar();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:316
+// [-2] void QStyleOptionToolBar(const QStyleOptionToolBar &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QStyleOptionToolBarC2ERKS_(QStyleOptionToolBar* other) {
+  return  new QStyleOptionToolBar(*other);
 }
 
 

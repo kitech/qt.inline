@@ -36,6 +36,15 @@ extern "C" Q_DECL_EXPORT
 void C_ZN20QNetworkProxyFactoryD2Ev(void *this_) {
   delete (QNetworkProxyFactory*)(this_);
 }
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:222
+// [-2] QList<QNetworkProxy> queryProxy(const QNetworkProxyQuery &)
+extern "C" Q_DECL_EXPORT
+QList<QNetworkProxy>* C_ZN20QNetworkProxyFactory10queryProxyERK18QNetworkProxyQuery(void *this_, QNetworkProxyQuery* query) {
+  auto rv = ((QNetworkProxyFactory*)this_)->queryProxy(*query);
+return new QList<QNetworkProxy>(rv);
+}
+
 // Public static Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:224
@@ -64,6 +73,24 @@ void C_ZN20QNetworkProxyFactory25setUseSystemConfigurationEb(bool enable) {
 extern "C" Q_DECL_EXPORT
 void C_ZN20QNetworkProxyFactory26setApplicationProxyFactoryEPS_(QNetworkProxyFactory * factory) {
   QNetworkProxyFactory::setApplicationProxyFactory(factory);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:227
+// [-2] QList<QNetworkProxy> proxyForQuery(const QNetworkProxyQuery &)
+extern "C" Q_DECL_EXPORT
+QList<QNetworkProxy>* C_ZN20QNetworkProxyFactory13proxyForQueryERK18QNetworkProxyQuery(QNetworkProxyQuery* query) {
+  auto rv = QNetworkProxyFactory::proxyForQuery(*query);
+return new QList<QNetworkProxy>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:228
+// [-2] QList<QNetworkProxy> systemProxyForQuery(const QNetworkProxyQuery &)
+extern "C" Q_DECL_EXPORT
+QList<QNetworkProxy>* C_ZN20QNetworkProxyFactory19systemProxyForQueryERK18QNetworkProxyQuery(QNetworkProxyQuery* query) {
+  auto rv = QNetworkProxyFactory::systemProxyForQuery(*query);
+return new QList<QNetworkProxy>(rv);
 }
 
 //  main block end

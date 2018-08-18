@@ -49,6 +49,40 @@ void* C_ZNK23QGraphicsColorizeEffect10metaObjectEv(void *this_) {
   return (void*)((QGraphicsColorizeEffect*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:128
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QGraphicsColorizeEffect11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QGraphicsColorizeEffect*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:128
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN23QGraphicsColorizeEffect11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QGraphicsColorizeEffect*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:128
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QGraphicsColorizeEffect2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGraphicsColorizeEffect::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:128
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QGraphicsColorizeEffect6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGraphicsColorizeEffect::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:132
 // [-2] void QGraphicsColorizeEffect(QObject *)

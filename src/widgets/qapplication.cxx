@@ -31,6 +31,19 @@ MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
+// bool compressEvent(QEvent *, QObject *, QPostEventList *)
+  virtual bool compressEvent(QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compressEvent", &handled, 3, (uint64_t)arg0, (uint64_t)receiver, (uint64_t)arg2, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    return QApplication::compressEvent(arg0, receiver, arg2);
+  }
+  }
+
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -41,12 +54,54 @@ bool C_ZN12QApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QApplication*)this_)->QApplication::event(arg0);
 }
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:205
+// [1] bool compressEvent(QEvent *, QObject *, QPostEventList *)
+extern "C" Q_DECL_EXPORT
+bool C_ZN12QApplication13compressEventEP6QEventP7QObjectP14QPostEventList(void *this_, QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
+  return (bool)((QApplication*)this_)->QApplication::compressEvent(arg0, receiver, arg2);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:74
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QApplication10metaObjectEv(void *this_) {
   return (void*)((QApplication*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:74
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QApplication11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QApplication*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:74
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QApplication11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QApplication*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:74
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QApplication2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QApplication::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:74
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QApplication6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QApplication::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

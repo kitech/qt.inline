@@ -26,6 +26,15 @@ void C_ZN38QMediaServiceSupportedDevicesInterfaceD2Ev(void *this_) {
   delete (QMediaServiceSupportedDevicesInterface*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:141
+// [8] QList<QByteArray> devices(const QByteArray &)
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK38QMediaServiceSupportedDevicesInterface7devicesERK10QByteArray(void *this_, QByteArray* service) {
+  auto rv = ((QMediaServiceSupportedDevicesInterface*)this_)->devices(*service);
+return new QList<QByteArray>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:142
 // [8] QString deviceDescription(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT

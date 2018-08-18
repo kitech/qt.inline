@@ -19,6 +19,8 @@ public:
   virtual ~MyQStringView() {}
 // void QStringView()
 MyQStringView() : QStringView() {}
+// void QStringView(std::nullptr_t)
+MyQStringView(std::nullptr_t arg0) : QStringView(arg0) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQStringView() : QStringView() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringViewC2Ev() {
   return  new QStringView();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:174
+// [-2] void QStringView(std::nullptr_t)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringViewC2EDn(std::nullptr_t arg0) {
+  return  new QStringView(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -97,6 +107,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringView11toLocal8BitEv(void *this_) {
   auto rv = ((QStringView*)this_)->toLocal8Bit();
 return new QByteArray(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:231
+// [8] QVector<uint> toUcs4()
+extern "C" Q_DECL_EXPORT
+void C_ZNK11QStringView6toUcs4Ev(void *this_) {
+  auto rv = ((QStringView*)this_)->toUcs4();
+/*return rv;*/
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -276,6 +295,42 @@ extern "C" Q_DECL_EXPORT
 void C_ZNK11QStringView4cendEv(void *this_) {
   auto rv = ((QStringView*)this_)->cend();
 /*return rv;*/
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:276
+// [8] QStringView::const_reverse_iterator rbegin()
+extern "C" Q_DECL_EXPORT
+QStringView::const_reverse_iterator* C_ZNK11QStringView6rbeginEv(void *this_) {
+  auto rv = ((QStringView*)this_)->rbegin();
+return new QStringView::const_reverse_iterator(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:277
+// [8] QStringView::const_reverse_iterator rend()
+extern "C" Q_DECL_EXPORT
+QStringView::const_reverse_iterator* C_ZNK11QStringView4rendEv(void *this_) {
+  auto rv = ((QStringView*)this_)->rend();
+return new QStringView::const_reverse_iterator(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:278
+// [8] QStringView::const_reverse_iterator crbegin()
+extern "C" Q_DECL_EXPORT
+QStringView::const_reverse_iterator* C_ZNK11QStringView7crbeginEv(void *this_) {
+  auto rv = ((QStringView*)this_)->crbegin();
+return new QStringView::const_reverse_iterator(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:279
+// [8] QStringView::const_reverse_iterator crend()
+extern "C" Q_DECL_EXPORT
+QStringView::const_reverse_iterator* C_ZNK11QStringView5crendEv(void *this_) {
+  auto rv = ((QStringView*)this_)->crend();
+return new QStringView::const_reverse_iterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available

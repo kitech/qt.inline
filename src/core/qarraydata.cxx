@@ -76,6 +76,22 @@ void* C_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE(size_t object
   return (void*)QArrayData::allocate(objectSize, alignment, capacity, options);
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qarraydata.h:117
+// [8] QArrayData * reallocateUnaligned(QArrayData *, size_t, size_t, QArrayData::AllocationOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QArrayData19reallocateUnalignedEPS_mm6QFlagsINS_16AllocationOptionEE(QArrayData * data, size_t objectSize, size_t newCapacity, QFlags<QArrayData::AllocationOption> newOptions) {
+  return (void*)QArrayData::reallocateUnaligned(data, objectSize, newCapacity, newOptions);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qarraydata.h:119
+// [-2] void deallocate(QArrayData *, size_t, size_t)
+extern "C" Q_DECL_EXPORT
+void C_ZN10QArrayData10deallocateEPS_mm(QArrayData * data, size_t objectSize, size_t alignment) {
+  QArrayData::deallocate(data, objectSize, alignment);
+}
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:123
 // [8] QArrayData * sharedNull()

@@ -22,6 +22,8 @@ MyQFont() : QFont() {}
 MyQFont(const QString & family, int pointSize, int weight, bool italic) : QFont(family, pointSize, weight, italic) {}
 // void QFont(const QFont &, QPaintDevice *)
 MyQFont(const QFont & arg0, QPaintDevice * pd) : QFont(arg0, pd) {}
+// void QFont(const QFont &)
+MyQFont(const QFont & arg0) : QFont(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -46,6 +48,14 @@ void* C_ZN5QFontC2ERK7QStringiib(QString* family, int pointSize, int weight, boo
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontC2ERKS_P12QPaintDevice(QFont* arg0, QPaintDevice * pd) {
   return  new QFont(*arg0, pd);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:173
+// [-2] void QFont(const QFont &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QFontC2ERKS_(QFont* arg0) {
+  return  new QFont(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

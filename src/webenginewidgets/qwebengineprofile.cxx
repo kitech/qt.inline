@@ -31,6 +31,40 @@ void* C_ZNK17QWebEngineProfile10metaObjectEv(void *this_) {
   return (void*)((QWebEngineProfile*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:64
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QWebEngineProfile11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QWebEngineProfile*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:64
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN17QWebEngineProfile11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QWebEngineProfile*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:64
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QWebEngineProfile2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWebEngineProfile::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:64
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QWebEngineProfile6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWebEngineProfile::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:66
 // [-2] void QWebEngineProfile(QObject *)
@@ -221,6 +255,14 @@ void C_ZN17QWebEngineProfile21setRequestInterceptorEP31QWebEngineUrlRequestInter
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile20clearAllVisitedLinksEv(void *this_) {
   ((QWebEngineProfile*)this_)->clearAllVisitedLinks();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:112
+// [-2] void clearVisitedLinks(const QList<QUrl> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QWebEngineProfile17clearVisitedLinksERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
+  ((QWebEngineProfile*)this_)->clearVisitedLinks(urls);
 }
 
 // Public Visibility=Default Availability=Available

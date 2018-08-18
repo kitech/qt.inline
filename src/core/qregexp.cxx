@@ -20,6 +20,8 @@ public:
 MyQRegExp() : QRegExp() {}
 // void QRegExp(const QString &, Qt::CaseSensitivity, QRegExp::PatternSyntax)
 MyQRegExp(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) : QRegExp(pattern, cs, syntax) {}
+// void QRegExp(const QRegExp &)
+MyQRegExp(const QRegExp & rx) : QRegExp(rx) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN7QRegExpC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(QString* pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
   return  new QRegExp(*pattern, cs, syntax);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:73
+// [-2] void QRegExp(const QRegExp &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QRegExpC2ERKS_(QRegExp* rx) {
+  return  new QRegExp(*rx);
 }
 
 // Public Visibility=Default Availability=Available

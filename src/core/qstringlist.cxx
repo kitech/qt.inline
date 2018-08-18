@@ -20,6 +20,12 @@ public:
 MyQStringList() : QStringList() {}
 // void QStringList(const QString &)
 MyQStringList(const QString & i) : QStringList(i) {}
+// void QStringList(const QList<QString> &)
+MyQStringList(const QList<QString> & l) : QStringList(l) {}
+// void QStringList(QList<QString> &&)
+MyQStringList(QList<QString> && l) : QStringList(l) {}
+// void QStringList(std::initializer_list<QString>)
+MyQStringList(std::initializer_list<QString> args) : QStringList(args) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -36,6 +42,54 @@ void* C_ZN11QStringListC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListC2ERK7QString(QString* i) {
   return  new QStringList(*i);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:107
+// [-2] void QStringList(const QList<QString> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringListC2ERK5QListI7QStringE(const QList<QString> & l) {
+  return  new QStringList(l);
+}
+
+// Public inline Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtCore/qstringlist.h:109
+// [-2] void QStringList(QList<QString> &&)
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringListC2EO5QListI7QStringE(QList<QString> && l) {
+  return  new QStringList(l);
+}
+#endif // QT_VERSION >= 0x050400
+
+// Public inline Visibility=Default Availability=Available
+// since 4.8
+// /usr/include/qt/QtCore/qstringlist.h:112
+// [-2] void QStringList(std::initializer_list<QString>)
+#if QT_VERSION >= 0x040800
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringListC2ESt16initializer_listI7QStringE(std::initializer_list<QString> args) {
+  return  new QStringList(args);
+}
+#endif // QT_VERSION >= 0x040800
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:115
+// [8] QStringList & operator=(const QList<QString> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringListaSERK5QListI7QStringE(void *this_, const QList<QString> & other) {
+  auto& rv = ((QStringList*)this_)->operator=(other);
+return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:118
+// [8] QStringList & operator=(QList<QString> &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringListaSEO5QListI7QStringE(void *this_, QList<QString> && other) {
+  auto& rv = ((QStringList*)this_)->operator=(other);
+return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,6 +135,15 @@ return &rv;
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERKS_(void *this_, QStringList* l) {
   auto& rv = ((QStringList*)this_)->operator<<(*l);
+return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:131
+// [8] QStringList & operator<<(const QList<QString> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStringListlsERK5QListI7QStringE(void *this_, const QList<QString> & l) {
+  auto& rv = ((QStringList*)this_)->operator<<(l);
 return &rv;
 }
 

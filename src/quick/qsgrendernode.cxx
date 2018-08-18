@@ -45,6 +45,14 @@ QSGRenderNode::StateFlags* C_ZNK13QSGRenderNode13changedStatesEv(void *this_) {
 return new QSGRenderNode::StateFlags(rv);
 }
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrendernode.h:86
+// [-2] void render(const QSGRenderNode::RenderState *)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QSGRenderNode6renderEPKNS_11RenderStateE(void *this_, const QSGRenderNode::RenderState * state) {
+  ((QSGRenderNode*)this_)->render(state);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:87
 // [-2] void releaseResources()

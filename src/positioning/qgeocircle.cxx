@@ -21,6 +21,8 @@ public:
 MyQGeoCircle() : QGeoCircle() {}
 // void QGeoCircle(const QGeoCoordinate &, qreal)
 MyQGeoCircle(const QGeoCoordinate & center, qreal radius) : QGeoCircle(center, radius) {}
+// void QGeoCircle(const QGeoCircle &)
+MyQGeoCircle(const QGeoCircle & other) : QGeoCircle(other) {}
 // void QGeoCircle(const QGeoShape &)
 MyQGeoCircle(const QGeoShape & other) : QGeoCircle(other) {}
 };
@@ -39,6 +41,14 @@ void* C_ZN10QGeoCircleC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QGeoCircleC2ERK14QGeoCoordinated(QGeoCoordinate* center, qreal radius) {
   return  new QGeoCircle(*center, radius);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeocircle.h:59
+// [-2] void QGeoCircle(const QGeoCircle &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QGeoCircleC2ERKS_(QGeoCircle* other) {
+  return  new QGeoCircle(*other);
 }
 
 // Public Visibility=Default Availability=Available

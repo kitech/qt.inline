@@ -24,6 +24,10 @@ MyQPen(Qt::PenStyle arg0) : QPen(arg0) {}
 MyQPen(const QColor & color) : QPen(color) {}
 // void QPen(const QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 MyQPen(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) : QPen(brush, width, s, c, j) {}
+// void QPen(const QPen &)
+MyQPen(const QPen & pen) : QPen(pen) {}
+// void QPen(QPen &&)
+MyQPen(QPen && other) : QPen(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -59,6 +63,14 @@ void* C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:68
+// [-2] void QPen(const QPen &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QPenC2ERKS_(QPen* pen) {
+  return  new QPen(*pen);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:70
 // [-2] void ~QPen()
 extern "C" Q_DECL_EXPORT
@@ -73,6 +85,17 @@ void* C_ZN4QPenaSERKS_(void *this_, QPen* pen) {
   auto& rv = ((QPen*)this_)->operator=(*pen);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtGui/qpen.h:74
+// [-2] void QPen(QPen &&)
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QPenC2EOS_(QPen && other) {
+  return  new QPen(other);
+}
+#endif // QT_VERSION >= 0x050400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:76
@@ -108,6 +131,23 @@ Qt::PenStyle C_ZNK4QPen5styleEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN4QPen8setStyleEN2Qt8PenStyleE(void *this_, Qt::PenStyle arg0) {
   ((QPen*)this_)->setStyle(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:84
+// [-2] QVector<qreal> dashPattern()
+extern "C" Q_DECL_EXPORT
+void C_ZNK4QPen11dashPatternEv(void *this_) {
+  auto rv = ((QPen*)this_)->dashPattern();
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:85
+// [-2] void setDashPattern(const QVector<qreal> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN4QPen14setDashPatternERK7QVectorIdE(void *this_, const QVector<qreal> & pattern) {
+  ((QPen*)this_)->setDashPattern(pattern);
 }
 
 // Public Visibility=Default Availability=Available
@@ -286,6 +326,15 @@ bool C_ZNK4QPenneERKS_(void *this_, QPen* p) {
 extern "C" Q_DECL_EXPORT
 bool C_ZN4QPen10isDetachedEv(void *this_) {
   return (bool)((QPen*)this_)->isDetached();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpen.h:130
+// [8] QPen::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QPen8data_ptrEv(void *this_) {
+  auto& rv = ((QPen*)this_)->data_ptr();
+return &rv;
 }
 
 //  main block end

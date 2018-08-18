@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkRequest() {}
 // void QNetworkRequest(const QUrl &)
 MyQNetworkRequest(const QUrl & url) : QNetworkRequest(url) {}
+// void QNetworkRequest(const QNetworkRequest &)
+MyQNetworkRequest(const QNetworkRequest & other) : QNetworkRequest(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQNetworkRequest(const QUrl & url) : QNetworkRequest(url) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QNetworkRequestC2ERK4QUrl(QUrl* url) {
   return  new QNetworkRequest(*url);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:125
+// [-2] void QNetworkRequest(const QNetworkRequest &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QNetworkRequestC2ERKS_(QNetworkRequest* other) {
+  return  new QNetworkRequest(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -121,6 +131,15 @@ void C_ZN15QNetworkRequest9setHeaderENS_12KnownHeadersERK8QVariant(void *this_, 
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QNetworkRequest12hasRawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   return (bool)((QNetworkRequest*)this_)->hasRawHeader(*headerName);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:147
+// [8] QList<QByteArray> rawHeaderList()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK15QNetworkRequest13rawHeaderListEv(void *this_) {
+  auto rv = ((QNetworkRequest*)this_)->rawHeaderList();
+return new QList<QByteArray>(rv);
 }
 
 // Public Visibility=Default Availability=Available

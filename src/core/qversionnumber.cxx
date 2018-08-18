@@ -19,6 +19,12 @@ public:
   virtual ~MyQVersionNumber() {}
 // void QVersionNumber()
 MyQVersionNumber() : QVersionNumber() {}
+// void QVersionNumber(const QVector<int> &)
+MyQVersionNumber(const QVector<int> & seg) : QVersionNumber(seg) {}
+// void QVersionNumber(QVector<int> &&)
+MyQVersionNumber(QVector<int> && seg) : QVersionNumber(seg) {}
+// void QVersionNumber(std::initializer_list<int>)
+MyQVersionNumber(std::initializer_list<int> args) : QVersionNumber(args) {}
 // void QVersionNumber(int)
 MyQVersionNumber(int maj) : QVersionNumber(maj) {}
 // void QVersionNumber(int, int)
@@ -33,6 +39,30 @@ MyQVersionNumber(int maj, int min, int mic) : QVersionNumber(maj, min, mic) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumberC2Ev() {
   return  new QVersionNumber();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:224
+// [-2] void QVersionNumber(const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QVersionNumberC2ERK7QVectorIiE(const QVector<int> & seg) {
+  return  new QVersionNumber(seg);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:231
+// [-2] void QVersionNumber(QVector<int> &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QVersionNumberC2EO7QVectorIiE(QVector<int> && seg) {
+  return  new QVersionNumber(seg);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:237
+// [-2] void QVersionNumber(std::initializer_list<int>)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QVersionNumberC2ESt16initializer_listIiE(std::initializer_list<int> args) {
+  return  new QVersionNumber(args);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -106,6 +136,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK14QVersionNumber10normalizedEv(void *this_) {
   auto rv = ((QVersionNumber*)this_)->normalized();
 return new QVersionNumber(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:268
+// [8] QVector<int> segments()
+extern "C" Q_DECL_EXPORT
+void C_ZNK14QVersionNumber8segmentsEv(void *this_) {
+  auto rv = ((QVersionNumber*)this_)->segments();
+/*return rv;*/
 }
 
 // Public inline Visibility=Default Availability=Available

@@ -23,6 +23,10 @@ MyQGeoRectangle() : QGeoRectangle() {}
 MyQGeoRectangle(const QGeoCoordinate & center, double degreesWidth, double degreesHeight) : QGeoRectangle(center, degreesWidth, degreesHeight) {}
 // void QGeoRectangle(const QGeoCoordinate &, const QGeoCoordinate &)
 MyQGeoRectangle(const QGeoCoordinate & topLeft, const QGeoCoordinate & bottomRight) : QGeoRectangle(topLeft, bottomRight) {}
+// void QGeoRectangle(const QList<QGeoCoordinate> &)
+MyQGeoRectangle(const QList<QGeoCoordinate> & coordinates) : QGeoRectangle(coordinates) {}
+// void QGeoRectangle(const QGeoRectangle &)
+MyQGeoRectangle(const QGeoRectangle & other) : QGeoRectangle(other) {}
 // void QGeoRectangle(const QGeoShape &)
 MyQGeoRectangle(const QGeoShape & other) : QGeoRectangle(other) {}
 };
@@ -49,6 +53,22 @@ void* C_ZN13QGeoRectangleC2ERK14QGeoCoordinatedd(QGeoCoordinate* center, double 
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QGeoRectangleC2ERK14QGeoCoordinateS2_(QGeoCoordinate* topLeft, QGeoCoordinate* bottomRight) {
   return  new QGeoRectangle(*topLeft, *bottomRight);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:64
+// [-2] void QGeoRectangle(const QList<QGeoCoordinate> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QGeoRectangleC2ERK5QListI14QGeoCoordinateE(const QList<QGeoCoordinate> & coordinates) {
+  return  new QGeoRectangle(coordinates);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:65
+// [-2] void QGeoRectangle(const QGeoRectangle &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QGeoRectangleC2ERKS_(QGeoRectangle* other) {
+  return  new QGeoRectangle(*other);
 }
 
 // Public Visibility=Default Availability=Available

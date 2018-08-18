@@ -18,6 +18,8 @@ public:
   virtual ~MyQDnsDomainNameRecord() {}
 // void QDnsDomainNameRecord()
 MyQDnsDomainNameRecord() : QDnsDomainNameRecord() {}
+// void QDnsDomainNameRecord(const QDnsDomainNameRecord &)
+MyQDnsDomainNameRecord(const QDnsDomainNameRecord & other) : QDnsDomainNameRecord(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQDnsDomainNameRecord() : QDnsDomainNameRecord() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QDnsDomainNameRecordC2Ev() {
   return  new QDnsDomainNameRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:64
+// [-2] void QDnsDomainNameRecord(const QDnsDomainNameRecord &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QDnsDomainNameRecordC2ERKS_(QDnsDomainNameRecord* other) {
+  return  new QDnsDomainNameRecord(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

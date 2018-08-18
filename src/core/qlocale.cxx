@@ -24,6 +24,8 @@ MyQLocale(const QString & name) : QLocale(name) {}
 MyQLocale(QLocale::Language language, QLocale::Country country) : QLocale(language, country) {}
 // void QLocale(QLocale::Language, QLocale::Script, QLocale::Country)
 MyQLocale(QLocale::Language language, QLocale::Script script, QLocale::Country country) : QLocale(language, script, country) {}
+// void QLocale(const QLocale &)
+MyQLocale(const QLocale & other) : QLocale(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -56,6 +58,14 @@ void* C_ZN7QLocaleC2ENS_8LanguageENS_7CountryE(QLocale::Language language, QLoca
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
   return  new QLocale(language, script, country);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:933
+// [-2] void QLocale(const QLocale &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QLocaleC2ERKS_(QLocale* other) {
+  return  new QLocale(*other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -793,6 +803,18 @@ Qt::DayOfWeek C_ZNK7QLocale14firstDayOfWeekEv(void *this_) {
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
+// since 4.8
+// /usr/include/qt/QtCore/qlocale.h:1029
+// [-2] QList<Qt::DayOfWeek> weekdays()
+#if QT_VERSION >= 0x040800
+extern "C" Q_DECL_EXPORT
+QList<Qt::DayOfWeek>* C_ZNK7QLocale8weekdaysEv(void *this_) {
+  auto rv = ((QLocale*)this_)->weekdays();
+return new QList<Qt::DayOfWeek>(rv);
+}
+#endif // QT_VERSION >= 0x040800
+
+// Public Visibility=Default Availability=Available
 // since 4.5
 // /usr/include/qt/QtCore/qlocale.h:1031
 // [8] QString amText()
@@ -1076,6 +1098,27 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QLocale6systemEv() {
   auto rv = QLocale::system();
 return new QLocale(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// since 4.8
+// /usr/include/qt/QtCore/qlocale.h:1076
+// [-2] QList<QLocale> matchingLocales(QLocale::Language, QLocale::Script, QLocale::Country)
+#if QT_VERSION >= 0x040800
+extern "C" Q_DECL_EXPORT
+QList<QLocale>* C_ZN7QLocale15matchingLocalesENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
+  auto rv = QLocale::matchingLocales(language, script, country);
+return new QList<QLocale>(rv);
+}
+#endif // QT_VERSION >= 0x040800
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1077
+// [-2] QList<QLocale::Country> countriesForLanguage(QLocale::Language)
+extern "C" Q_DECL_EXPORT
+QList<QLocale::Country>* C_ZN7QLocale20countriesForLanguageENS_8LanguageE(QLocale::Language lang) {
+  auto rv = QLocale::countriesForLanguage(lang);
+return new QList<QLocale::Country>(rv);
 }
 
 // Public Visibility=Default Availability=Available

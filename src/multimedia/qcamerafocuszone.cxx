@@ -20,6 +20,8 @@ public:
 MyQCameraFocusZone() : QCameraFocusZone() {}
 // void QCameraFocusZone(const QRectF &, QCameraFocusZone::FocusZoneStatus)
 MyQCameraFocusZone(const QRectF & area, QCameraFocusZone::FocusZoneStatus status) : QCameraFocusZone(area, status) {}
+// void QCameraFocusZone(const QCameraFocusZone &)
+MyQCameraFocusZone(const QCameraFocusZone & other) : QCameraFocusZone(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN16QCameraFocusZoneC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QCameraFocusZoneC2ERK6QRectFNS_15FocusZoneStatusE(QRectF* area, QCameraFocusZone::FocusZoneStatus status) {
   return  new QCameraFocusZone(*area, status);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocus.h:71
+// [-2] void QCameraFocusZone(const QCameraFocusZone &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QCameraFocusZoneC2ERKS_(QCameraFocusZone* other) {
+  return  new QCameraFocusZone(*other);
 }
 
 // Public Visibility=Default Availability=Available

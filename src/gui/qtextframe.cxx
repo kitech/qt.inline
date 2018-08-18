@@ -18,6 +18,8 @@ public:
   virtual ~MyQTextFrame() {}
 // void QTextFrame(QTextDocument *)
 MyQTextFrame(QTextDocument * doc) : QTextFrame(doc) {}
+// void QTextFrame(QTextFramePrivate &, QTextDocument *)
+MyQTextFrame(QTextFramePrivate & p, QTextDocument * doc) : QTextFrame(p, doc) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -26,6 +28,40 @@ MyQTextFrame(QTextDocument * doc) : QTextFrame(doc) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextFrame10metaObjectEv(void *this_) {
   return (void*)((QTextFrame*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:120
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTextFrame11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTextFrame*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:120
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN10QTextFrame11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTextFrame*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:120
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTextFrame2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextFrame::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:120
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTextFrame6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextFrame::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -108,6 +144,15 @@ void* C_ZNK10QTextFrame10layoutDataEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN10QTextFrame13setLayoutDataEP20QTextFrameLayoutData(void *this_, QTextFrameLayoutData * data) {
   ((QTextFrame*)this_)->setLayoutData(data);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:137
+// [-2] QList<QTextFrame *> childFrames()
+extern "C" Q_DECL_EXPORT
+QList<QTextFrame *>* C_ZNK10QTextFrame11childFramesEv(void *this_) {
+  auto rv = ((QTextFrame*)this_)->childFrames();
+return new QList<QTextFrame *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

@@ -173,6 +173,40 @@ void* C_ZNK10QQuickView10metaObjectEv(void *this_) {
   return (void*)((QQuickView*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:58
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickView11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQuickView*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:58
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN10QQuickView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQuickView*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:58
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickView2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickView::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:58
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickView::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickview.h:63
 // [-2] void QQuickView(QWindow *)
@@ -262,6 +296,15 @@ void C_ZN10QQuickView13setResizeModeENS_10ResizeModeE(void *this_, QQuickView::R
 extern "C" Q_DECL_EXPORT
 QQuickView::Status C_ZNK10QQuickView6statusEv(void *this_) {
   return (QQuickView::Status)((QQuickView*)this_)->status();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:84
+// [-2] QList<QQmlError> errors()
+extern "C" Q_DECL_EXPORT
+QList<QQmlError>* C_ZNK10QQuickView6errorsEv(void *this_) {
+  auto rv = ((QQuickView*)this_)->errors();
+return new QList<QQmlError>(rv);
 }
 
 // Public Visibility=Default Availability=Available

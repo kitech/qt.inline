@@ -19,6 +19,8 @@ public:
   virtual ~MyQWebEngineScript() {}
 // void QWebEngineScript()
 MyQWebEngineScript() : QWebEngineScript() {}
+// void QWebEngineScript(const QWebEngineScript &)
+MyQWebEngineScript(const QWebEngineScript & other) : QWebEngineScript(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQWebEngineScript() : QWebEngineScript() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QWebEngineScriptC2Ev() {
   return  new QWebEngineScript();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescript.h:69
+// [-2] void QWebEngineScript(const QWebEngineScript &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QWebEngineScriptC2ERKS_(QWebEngineScript* other) {
+  return  new QWebEngineScript(*other);
 }
 
 // Public Visibility=Default Availability=Available

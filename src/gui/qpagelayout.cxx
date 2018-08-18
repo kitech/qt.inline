@@ -21,6 +21,8 @@ public:
 MyQPageLayout() : QPageLayout() {}
 // void QPageLayout(const QPageSize &, QPageLayout::Orientation, const QMarginsF &, QPageLayout::Unit, const QMarginsF &)
 MyQPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) : QPageLayout(pageSize, orientation, margins, units, minMargins) {}
+// void QPageLayout(const QPageLayout &)
+MyQPageLayout(const QPageLayout & other) : QPageLayout(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +39,14 @@ void* C_ZN11QPageLayoutC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPageLayoutC2ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(QPageSize* pageSize, QPageLayout::Orientation orientation, QMarginsF* margins, QPageLayout::Unit units, QMarginsF* minMargins) {
   return  new QPageLayout(*pageSize, orientation, *margins, units, *minMargins);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:84
+// [-2] void QPageLayout(const QPageLayout &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QPageLayoutC2ERKS_(QPageLayout* other) {
+  return  new QPageLayout(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

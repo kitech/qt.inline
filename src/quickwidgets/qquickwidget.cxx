@@ -414,6 +414,40 @@ void* C_ZNK12QQuickWidget10metaObjectEv(void *this_) {
   return (void*)((QQuickWidget*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQuickWidget11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQuickWidget*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QQuickWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQuickWidget*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQuickWidget2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickWidget::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQuickWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickWidget::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h:67
 // [-2] void QQuickWidget(QWidget *)
@@ -503,6 +537,15 @@ void C_ZN12QQuickWidget13setResizeModeENS_10ResizeModeE(void *this_, QQuickWidge
 extern "C" Q_DECL_EXPORT
 QQuickWidget::Status C_ZNK12QQuickWidget6statusEv(void *this_) {
   return (QQuickWidget::Status)((QQuickWidget*)this_)->status();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:88
+// [-2] QList<QQmlError> errors()
+extern "C" Q_DECL_EXPORT
+QList<QQmlError>* C_ZNK12QQuickWidget6errorsEv(void *this_) {
+  auto rv = ((QQuickWidget*)this_)->errors();
+return new QList<QQmlError>(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

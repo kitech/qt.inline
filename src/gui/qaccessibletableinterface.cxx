@@ -58,6 +58,15 @@ int C_ZNK25QAccessibleTableInterface17selectedCellCountEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:602
+// [-2] QList<QAccessibleInterface *> selectedCells()
+extern "C" Q_DECL_EXPORT
+QList<QAccessibleInterface *>* C_ZNK25QAccessibleTableInterface13selectedCellsEv(void *this_) {
+  auto rv = ((QAccessibleTableInterface*)this_)->selectedCells();
+return new QList<QAccessibleInterface *>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:604
 // [8] QString columnDescription(int)
 extern "C" Q_DECL_EXPORT
@@ -105,6 +114,24 @@ int C_ZNK25QAccessibleTableInterface11columnCountEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 int C_ZNK25QAccessibleTableInterface8rowCountEv(void *this_) {
   return (int)((QAccessibleTableInterface*)this_)->rowCount();
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:610
+// [-2] QList<int> selectedColumns()
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZNK25QAccessibleTableInterface15selectedColumnsEv(void *this_) {
+  auto rv = ((QAccessibleTableInterface*)this_)->selectedColumns();
+return new QList<int>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:611
+// [-2] QList<int> selectedRows()
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZNK25QAccessibleTableInterface12selectedRowsEv(void *this_) {
+  auto rv = ((QAccessibleTableInterface*)this_)->selectedRows();
+return new QList<int>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available

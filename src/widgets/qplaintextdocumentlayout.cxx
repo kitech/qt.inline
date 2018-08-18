@@ -49,6 +49,40 @@ void* C_ZNK24QPlainTextDocumentLayout10metaObjectEv(void *this_) {
   return (void*)((QPlainTextDocumentLayout*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN24QPlainTextDocumentLayout11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QPlainTextDocumentLayout*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN24QPlainTextDocumentLayout11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QPlainTextDocumentLayout*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN24QPlainTextDocumentLayout2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QPlainTextDocumentLayout::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN24QPlainTextDocumentLayout6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QPlainTextDocumentLayout::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:302
 // [-2] void QPlainTextDocumentLayout(QTextDocument *)
@@ -65,6 +99,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN24QPlainTextDocumentLayoutD2Ev(void *this_) {
   delete (QPlainTextDocumentLayout*)(this_);
 }
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:305
+// [-2] void draw(QPainter *, const QAbstractTextDocumentLayout::PaintContext &)
+extern "C" Q_DECL_EXPORT
+void C_ZN24QPlainTextDocumentLayout4drawEP8QPainterRKN27QAbstractTextDocumentLayout12PaintContextE(void *this_, QPainter * arg0, QAbstractTextDocumentLayout::PaintContext* arg1) {
+  ((QPlainTextDocumentLayout*)this_)->draw(arg0, *arg1);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:306
 // [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)

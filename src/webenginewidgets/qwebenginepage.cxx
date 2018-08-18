@@ -198,6 +198,40 @@ void* C_ZNK14QWebEnginePage10metaObjectEv(void *this_) {
   return (void*)((QWebEnginePage*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QWebEnginePage11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QWebEnginePage*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN14QWebEnginePage11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QWebEnginePage*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QWebEnginePage2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWebEnginePage::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QWebEnginePage6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWebEnginePage::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:222
 // [-2] void QWebEnginePage(QObject *)
@@ -314,6 +348,14 @@ bool C_ZN14QWebEnginePage5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:247
+// [-2] void findText(const QString &, QWebEnginePage::FindFlags, const QWebEngineCallback<bool> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage8findTextERK7QString6QFlagsINS_8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, const QWebEngineCallback<bool> & resultCallback) {
+  ((QWebEnginePage*)this_)->findText(*subString, options, resultCallback);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:249
 // [8] QMenu * createStandardContextMenu()
 extern "C" Q_DECL_EXPORT
@@ -373,6 +415,22 @@ void C_ZN14QWebEnginePage7setHtmlERK7QStringRK4QUrl(void *this_, QString* html, 
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage10setContentERK10QByteArrayRK7QStringRK4QUrl(void *this_, QByteArray* data, QString* mimeType, QUrl* baseUrl) {
   ((QWebEnginePage*)this_)->setContent(*data, *mimeType, *baseUrl);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:263
+// [-2] void toHtml(const QWebEngineCallback<const QString &> &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK14QWebEnginePage6toHtmlERK18QWebEngineCallbackIRK7QStringE(void *this_, const QWebEngineCallback<const QString &> & resultCallback) {
+  ((QWebEnginePage*)this_)->toHtml(resultCallback);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:264
+// [-2] void toPlainText(const QWebEngineCallback<const QString &> &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK14QWebEnginePage11toPlainTextERK18QWebEngineCallbackIRK7QStringE(void *this_, const QWebEngineCallback<const QString &> & resultCallback) {
+  ((QWebEnginePage*)this_)->toPlainText(resultCallback);
 }
 
 // Public Visibility=Default Availability=Available
@@ -480,6 +538,22 @@ void C_ZN14QWebEnginePage13runJavaScriptERK7QStringj(void *this_, QString* scrip
   ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId);
 }
 #endif // QT_VERSION >= 0x050700
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:286
+// [-2] void runJavaScript(const QString &, const QWebEngineCallback<const QVariant &> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage13runJavaScriptERK7QStringRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, const QWebEngineCallback<const QVariant &> & resultCallback) {
+  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, resultCallback);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:287
+// [-2] void runJavaScript(const QString &, quint32, const QWebEngineCallback<const QVariant &> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage13runJavaScriptERK7QStringjRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, quint32 worldId, const QWebEngineCallback<const QVariant &> & resultCallback) {
+  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId, resultCallback);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:289
@@ -593,6 +667,22 @@ void C_ZN14QWebEnginePage10printToPdfERK7QStringRK11QPageLayout(void *this_, QSt
   ((QWebEnginePage*)this_)->printToPdf(*filePath, *layout);
 }
 #endif // QT_VERSION >= 0x050700
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:309
+// [-2] void printToPdf(const QWebEngineCallback<const QByteArray &> &, const QPageLayout &)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage10printToPdfERK18QWebEngineCallbackIRK10QByteArrayERK11QPageLayout(void *this_, const QWebEngineCallback<const QByteArray &> & resultCallback, QPageLayout* layout) {
+  ((QWebEnginePage*)this_)->printToPdf(resultCallback, *layout);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:315
+// [-2] void print(QPrinter *, const QWebEngineCallback<bool> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage5printEP8QPrinterRK18QWebEngineCallbackIbE(void *this_, QPrinter * printer, const QWebEngineCallback<bool> & resultCallback) {
+  ((QWebEnginePage*)this_)->print(printer, resultCallback);
+}
 
 // Public Visibility=Default Availability=Available
 // since 5.7

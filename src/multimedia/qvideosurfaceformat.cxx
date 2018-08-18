@@ -20,6 +20,8 @@ public:
 MyQVideoSurfaceFormat() : QVideoSurfaceFormat() {}
 // void QVideoSurfaceFormat(const QSize &, QVideoFrame::PixelFormat, QAbstractVideoBuffer::HandleType)
 MyQVideoSurfaceFormat(const QSize & size, QVideoFrame::PixelFormat pixelFormat, QAbstractVideoBuffer::HandleType handleType) : QVideoSurfaceFormat(size, pixelFormat, handleType) {}
+// void QVideoSurfaceFormat(const QVideoSurfaceFormat &)
+MyQVideoSurfaceFormat(const QVideoSurfaceFormat & format) : QVideoSurfaceFormat(format) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN19QVideoSurfaceFormatC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QVideoSurfaceFormatC2ERK5QSizeN11QVideoFrame11PixelFormatEN20QAbstractVideoBuffer10HandleTypeE(QSize* size, QVideoFrame::PixelFormat pixelFormat, QAbstractVideoBuffer::HandleType handleType) {
   return  new QVideoSurfaceFormat(*size, pixelFormat, handleType);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:84
+// [-2] void QVideoSurfaceFormat(const QVideoSurfaceFormat &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QVideoSurfaceFormatC2ERKS_(QVideoSurfaceFormat* format) {
+  return  new QVideoSurfaceFormat(*format);
 }
 
 // Public Visibility=Default Availability=Available
@@ -232,6 +242,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK19QVideoSurfaceFormat8sizeHintEv(void *this_) {
   auto rv = ((QVideoSurfaceFormat*)this_)->sizeHint();
 return new QSize(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:122
+// [8] QList<QByteArray> propertyNames()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK19QVideoSurfaceFormat13propertyNamesEv(void *this_) {
+  auto rv = ((QVideoSurfaceFormat*)this_)->propertyNames();
+return new QList<QByteArray>(rv);
 }
 
 // Public Visibility=Default Availability=Available

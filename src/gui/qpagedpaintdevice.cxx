@@ -136,6 +136,14 @@ void* C_ZNK17QPagedPaintDevice10pageSizeMMEv(void *this_) {
 return new QSizeF(rv);
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:240
+// [-2] void setMargins(const QPagedPaintDevice::Margins &)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QPagedPaintDevice10setMarginsERKNS_7MarginsE(void *this_, QPagedPaintDevice::Margins* margins) {
+  ((QPagedPaintDevice*)this_)->setMargins(*margins);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:241
 // [32] QPagedPaintDevice::Margins margins()

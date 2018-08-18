@@ -18,6 +18,10 @@ public:
   virtual ~MyQInputMethodEvent() {}
 // void QInputMethodEvent()
 MyQInputMethodEvent() : QInputMethodEvent() {}
+// void QInputMethodEvent(const QString &, const QList<QInputMethodEvent::Attribute> &)
+MyQInputMethodEvent(const QString & preeditText, const QList<QInputMethodEvent::Attribute> & attributes) : QInputMethodEvent(preeditText, attributes) {}
+// void QInputMethodEvent(const QInputMethodEvent &)
+MyQInputMethodEvent(const QInputMethodEvent & other) : QInputMethodEvent(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +30,14 @@ MyQInputMethodEvent() : QInputMethodEvent() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QInputMethodEventC2Ev() {
   return  new QInputMethodEvent();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:556
+// [-2] void QInputMethodEvent(const QString &, const QList<QInputMethodEvent::Attribute> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(QString* preeditText, const QList<QInputMethodEvent::Attribute> & attributes) {
+  return  new QInputMethodEvent(*preeditText, attributes);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -41,6 +53,15 @@ void C_ZN17QInputMethodEventD2Ev(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, QString* commitString, int replaceFrom, int replaceLength) {
   ((QInputMethodEvent*)this_)->setCommitString(*commitString, replaceFrom, replaceLength);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:560
+// [8] const QList<QInputMethodEvent::Attribute> & attributes()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK17QInputMethodEvent10attributesEv(void *this_) {
+  auto& rv = ((QInputMethodEvent*)this_)->attributes();
+return new QList<QInputMethodEvent::Attribute>(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,6 +96,14 @@ int C_ZNK17QInputMethodEvent16replacementStartEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QInputMethodEvent17replacementLengthEv(void *this_) {
   return (int)((QInputMethodEvent*)this_)->replacementLength();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:567
+// [-2] void QInputMethodEvent(const QInputMethodEvent &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QInputMethodEventC2ERKS_(QInputMethodEvent* other) {
+  return  new QInputMethodEvent(*other);
 }
 
 //  main block end

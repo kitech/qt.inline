@@ -28,6 +28,40 @@ void* C_ZNK12QActionGroup10metaObjectEv(void *this_) {
   return (void*)((QActionGroup*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qactiongroup.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QActionGroup11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QActionGroup*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qactiongroup.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QActionGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QActionGroup*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qactiongroup.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QActionGroup2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QActionGroup::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qactiongroup.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QActionGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QActionGroup::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:63
 // [-2] void QActionGroup(QObject *)
@@ -73,6 +107,15 @@ void* C_ZN12QActionGroup9addActionERK5QIconRK7QString(void *this_, QIcon* icon, 
 extern "C" Q_DECL_EXPORT
 void C_ZN12QActionGroup12removeActionEP7QAction(void *this_, QAction * a) {
   ((QActionGroup*)this_)->removeAction(a);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qactiongroup.h:70
+// [-2] QList<QAction *> actions()
+extern "C" Q_DECL_EXPORT
+QList<QAction *>* C_ZNK12QActionGroup7actionsEv(void *this_) {
+  auto rv = ((QActionGroup*)this_)->actions();
+return new QList<QAction *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

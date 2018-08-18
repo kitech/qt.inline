@@ -19,6 +19,10 @@ public:
   virtual ~MyQJSValue() {}
 // void QJSValue(QJSValue::SpecialValue)
 MyQJSValue(QJSValue::SpecialValue value) : QJSValue(value) {}
+// void QJSValue(const QJSValue &)
+MyQJSValue(const QJSValue & other) : QJSValue(other) {}
+// void QJSValue(QJSValue &&)
+MyQJSValue(QJSValue && other) : QJSValue(other) {}
 // void QJSValue(bool)
 MyQJSValue(bool value) : QJSValue(value) {}
 // void QJSValue(int)
@@ -33,6 +37,8 @@ MyQJSValue(const QString & value) : QJSValue(value) {}
 MyQJSValue(const QLatin1String & value) : QJSValue(value) {}
 // void QJSValue(const char *)
 MyQJSValue(const char * str) : QJSValue(str) {}
+// void QJSValue(QV4::ExecutionEngine *, quint64)
+MyQJSValue(QV4::ExecutionEngine * e, quint64 val) : QJSValue(e, val) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -50,6 +56,22 @@ extern "C" Q_DECL_EXPORT
 void C_ZN8QJSValueD2Ev(void *this_) {
   delete (QJSValue*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:74
+// [-2] void QJSValue(const QJSValue &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QJSValueC2ERKS_(QJSValue* other) {
+  return  new QJSValue(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:77
+// [-2] void QJSValue(QJSValue &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QJSValueC2EOS_(QJSValue && other) {
+  return  new QJSValue(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:78
 // [8] QJSValue & operator=(QJSValue &&)
@@ -409,11 +431,46 @@ bool C_ZNK8QJSValue10isCallableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:136
+// [8] QJSValue call(const QJSValueList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QJSValue4callERK5QListIS_E(void *this_, const QJSValueList & args) {
+  auto rv = ((QJSValue*)this_)->call(args);
+return new QJSValue(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:137
+// [8] QJSValue callWithInstance(const QJSValue &, const QJSValueList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QJSValue16callWithInstanceERKS_RK5QListIS_E(void *this_, QJSValue* instance, const QJSValueList & args) {
+  auto rv = ((QJSValue*)this_)->callWithInstance(*instance, args);
+return new QJSValue(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:138
+// [8] QJSValue callAsConstructor(const QJSValueList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QJSValue17callAsConstructorERK5QListIS_E(void *this_, const QJSValueList & args) {
+  auto rv = ((QJSValue*)this_)->callAsConstructor(args);
+return new QJSValue(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:141
 // [8] QJSEngine * engine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QJSValue6engineEv(void *this_) {
   return (void*)((QJSValue*)this_)->engine();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalue.h:144
+// [-2] void QJSValue(QV4::ExecutionEngine *, quint64)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QJSValueC2EPN3QV415ExecutionEngineEy(QV4::ExecutionEngine * e, quint64 val) {
+  return  new QJSValue(e, val);
 }
 
 //  main block end

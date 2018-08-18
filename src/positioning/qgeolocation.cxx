@@ -19,6 +19,8 @@ public:
   virtual ~MyQGeoLocation() {}
 // void QGeoLocation()
 MyQGeoLocation() : QGeoLocation() {}
+// void QGeoLocation(const QGeoLocation &)
+MyQGeoLocation(const QGeoLocation & other) : QGeoLocation(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQGeoLocation() : QGeoLocation() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QGeoLocationC2Ev() {
   return  new QGeoLocation();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeolocation.h:58
+// [-2] void QGeoLocation(const QGeoLocation &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QGeoLocationC2ERKS_(QGeoLocation* other) {
+  return  new QGeoLocation(*other);
 }
 
 // Public Visibility=Default Availability=Available

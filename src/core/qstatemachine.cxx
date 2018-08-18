@@ -106,6 +106,8 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
   }
 
+// void QStateMachine(QStateMachinePrivate &, QObject *)
+MyQStateMachine(QStateMachinePrivate & dd, QObject * parent) : QStateMachine(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -170,6 +172,40 @@ bool C_ZN13QStateMachine5eventEP6QEvent(void *this_, QEvent * e) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QStateMachine10metaObjectEv(void *this_) {
   return (void*)((QStateMachine*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:59
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QStateMachine11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QStateMachine*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:59
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QStateMachine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QStateMachine*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:59
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QStateMachine2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QStateMachine::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:59
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QStateMachine6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QStateMachine::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -274,6 +310,15 @@ void C_ZN13QStateMachine19addDefaultAnimationEP18QAbstractAnimation(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:130
+// [-2] QList<QAbstractAnimation *> defaultAnimations()
+extern "C" Q_DECL_EXPORT
+QList<QAbstractAnimation *>* C_ZNK13QStateMachine17defaultAnimationsEv(void *this_) {
+  auto rv = ((QStateMachine*)this_)->defaultAnimations();
+return new QList<QAbstractAnimation *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:131
 // [-2] void removeDefaultAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
@@ -321,6 +366,15 @@ bool C_ZN13QStateMachine18cancelDelayedEventEi(void *this_, int id) {
   return (bool)((QStateMachine*)this_)->cancelDelayedEvent(id);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:141
+// [-2] QSet<QAbstractState *> configuration()
+extern "C" Q_DECL_EXPORT
+void C_ZNK13QStateMachine13configurationEv(void *this_) {
+  auto rv = ((QStateMachine*)this_)->configuration();
+/*return rv;*/
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:144
 // [1] bool eventFilter(QObject *, QEvent *)
@@ -351,6 +405,22 @@ void C_ZN13QStateMachine4stopEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStateMachine10setRunningEb(void *this_, bool running) {
   ((QStateMachine*)this_)->setRunning(running);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:153
+// [-2] void started(QStateMachine::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStateMachine7startedENS_14QPrivateSignalE(void *this_, QStateMachine::QPrivateSignal* arg0) {
+  ((QStateMachine*)this_)->started(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:154
+// [-2] void stopped(QStateMachine::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStateMachine7stoppedENS_14QPrivateSignalE(void *this_, QStateMachine::QPrivateSignal* arg0) {
+  ((QStateMachine*)this_)->stopped(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

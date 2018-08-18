@@ -16,7 +16,27 @@
 class Q_DECL_EXPORT MyQAccessibleStateChangeEvent : public QAccessibleStateChangeEvent {
 public:
   virtual ~MyQAccessibleStateChangeEvent() {}
+// void QAccessibleStateChangeEvent(QObject *, QAccessible::State)
+MyQAccessibleStateChangeEvent(QObject * obj, QAccessible::State state) : QAccessibleStateChangeEvent(obj, state) {}
+// void QAccessibleStateChangeEvent(QAccessibleInterface *, QAccessible::State)
+MyQAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state) : QAccessibleStateChangeEvent(iface, state) {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:723
+// [-2] void QAccessibleStateChangeEvent(QObject *, QAccessible::State)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QAccessibleStateChangeEventC2EP7QObjectN11QAccessible5StateE(QObject * obj, QAccessible::State state) {
+  return  new QAccessibleStateChangeEvent(obj, state);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:728
+// [-2] void QAccessibleStateChangeEvent(QAccessibleInterface *, QAccessible::State)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QAccessibleStateChangeEventC2EP20QAccessibleInterfaceN11QAccessible5StateE(QAccessibleInterface * iface, QAccessible::State state) {
+  return  new QAccessibleStateChangeEvent(iface, state);
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:733

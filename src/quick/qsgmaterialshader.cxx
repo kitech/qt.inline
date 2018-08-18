@@ -18,6 +18,34 @@ public:
   virtual ~MyQSGMaterialShader() {}
 // void QSGMaterialShader()
 MyQSGMaterialShader() : QSGMaterialShader() {}
+// Protected inline Visibility=Default Availability=Available
+// QSGMaterialShaderPrivate * d_func()
+  virtual QSGMaterialShaderPrivate * d_func() {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGMaterialShaderPrivate *)(irv);
+      // PointerPointerQSGMaterialShaderPrivate *
+    } else {
+    return QSGMaterialShader::d_func();
+  }
+  }
+
+// Protected inline Visibility=Default Availability=Available
+// const QSGMaterialShaderPrivate * d_func()
+  virtual const QSGMaterialShaderPrivate * d_func() const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (const QSGMaterialShaderPrivate *)(irv);
+      // PointerPointerconst QSGMaterialShaderPrivate *
+    } else {
+    return QSGMaterialShader::d_func();
+  }
+  }
+
+// void QSGMaterialShader(QSGMaterialShaderPrivate &)
+MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 // Protected Visibility=Default Availability=Available
 // void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
   virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
@@ -93,6 +121,22 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
 
 };
+
+// Protected inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:108
+// [8] QSGMaterialShaderPrivate * d_func()
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QSGMaterialShader6d_funcEv(void *this_) {
+  return (void*)((QSGMaterialShader*)this_)->QSGMaterialShader::d_func();
+}
+
+// Protected inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:108
+// [8] const QSGMaterialShaderPrivate * d_func()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK17QSGMaterialShader6d_funcEv(void *this_) {
+  return (void*)((QSGMaterialShader*)this_)->QSGMaterialShader::d_func();
+}
 
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:114
@@ -174,12 +218,28 @@ void C_ZN17QSGMaterialShader10deactivateEv(void *this_) {
   ((QSGMaterialShader*)this_)->deactivate();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:102
+// [-2] void updateState(const QSGMaterialShader::RenderState &, QSGMaterial *, QSGMaterial *)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSGMaterialShader11updateStateERKNS_11RenderStateEP11QSGMaterialS4_(void *this_, QSGMaterialShader::RenderState* state, QSGMaterial * newMaterial, QSGMaterial * oldMaterial) {
+  ((QSGMaterialShader*)this_)->updateState(*state, newMaterial, oldMaterial);
+}
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:103
 // [8] const char *const * attributeNames()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGMaterialShader14attributeNamesEv(void *this_) {
   return (void*)((QSGMaterialShader*)this_)->attributeNames();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:105
+// [8] QOpenGLShaderProgram * program()
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QSGMaterialShader7programEv(void *this_) {
+  return (void*)((QSGMaterialShader*)this_)->program();
 }
 
 //  main block end

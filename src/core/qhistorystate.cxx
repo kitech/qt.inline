@@ -92,6 +92,40 @@ void* C_ZNK13QHistoryState10metaObjectEv(void *this_) {
   return (void*)((QHistoryState*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:53
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QHistoryState11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QHistoryState*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:53
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QHistoryState11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QHistoryState*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:53
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QHistoryState2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QHistoryState::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:53
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QHistoryState6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QHistoryState::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:64
 // [-2] void QHistoryState(QState *)
@@ -169,6 +203,30 @@ QHistoryState::HistoryType C_ZNK13QHistoryState11historyTypeEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN13QHistoryState14setHistoryTypeENS_11HistoryTypeE(void *this_, QHistoryState::HistoryType type_) {
   ((QHistoryState*)this_)->setHistoryType(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:78
+// [-2] void defaultTransitionChanged(QHistoryState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QHistoryState24defaultTransitionChangedENS_14QPrivateSignalE(void *this_, QHistoryState::QPrivateSignal* arg0) {
+  ((QHistoryState*)this_)->defaultTransitionChanged(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:79
+// [-2] void defaultStateChanged(QHistoryState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QHistoryState19defaultStateChangedENS_14QPrivateSignalE(void *this_, QHistoryState::QPrivateSignal* arg0) {
+  ((QHistoryState*)this_)->defaultStateChanged(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:80
+// [-2] void historyTypeChanged(QHistoryState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QHistoryState18historyTypeChangedENS_14QPrivateSignalE(void *this_, QHistoryState::QPrivateSignal* arg0) {
+  ((QHistoryState*)this_)->historyTypeChanged(*arg0);
 }
 
 //  main block end

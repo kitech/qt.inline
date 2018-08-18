@@ -20,6 +20,8 @@ public:
 MyQTextOption() : QTextOption() {}
 // void QTextOption(Qt::Alignment)
 MyQTextOption(QFlags<Qt::AlignmentFlag> alignment) : QTextOption(alignment) {}
+// void QTextOption(const QTextOption &)
+MyQTextOption(const QTextOption & o) : QTextOption(o) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -45,6 +47,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOptionD2Ev(void *this_) {
   delete (QTextOption*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:89
+// [-2] void QTextOption(const QTextOption &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextOptionC2ERKS_(QTextOption* o) {
+  return  new QTextOption(*o);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:90
 // [32] QTextOption & operator=(const QTextOption &)
@@ -156,6 +166,43 @@ qreal C_ZNK11QTextOption15tabStopDistanceEv(void *this_) {
   return (qreal)((QTextOption*)this_)->tabStopDistance();
 }
 #endif // QT_VERSION >= 0x050a00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:128
+// [-2] void setTabArray(const QList<qreal> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTextOption11setTabArrayERK5QListIdE(void *this_, const QList<qreal> & tabStops) {
+  ((QTextOption*)this_)->setTabArray(tabStops);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:129
+// [-2] QList<qreal> tabArray()
+extern "C" Q_DECL_EXPORT
+QList<qreal>* C_ZNK11QTextOption8tabArrayEv(void *this_) {
+  auto rv = ((QTextOption*)this_)->tabArray();
+return new QList<qreal>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:131
+// [-2] void setTabs(const QList<QTextOption::Tab> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTextOption7setTabsERK5QListINS_3TabEE(void *this_, const QList<QTextOption::Tab> & tabStops) {
+  ((QTextOption*)this_)->setTabs(tabStops);
+}
+
+// Public Visibility=Default Availability=Available
+// since 4.4
+// /usr/include/qt/QtGui/qtextoption.h:132
+// [-2] QList<QTextOption::Tab> tabs()
+#if QT_VERSION >= 0x040400
+extern "C" Q_DECL_EXPORT
+QList<QTextOption::Tab>* C_ZNK11QTextOption4tabsEv(void *this_) {
+  auto rv = ((QTextOption*)this_)->tabs();
+return new QList<QTextOption::Tab>(rv);
+}
+#endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:134

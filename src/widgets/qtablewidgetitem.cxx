@@ -22,6 +22,8 @@ MyQTableWidgetItem(int type_) : QTableWidgetItem(type_) {}
 MyQTableWidgetItem(const QString & text, int type_) : QTableWidgetItem(text, type_) {}
 // void QTableWidgetItem(const QIcon &, const QString &, int)
 MyQTableWidgetItem(const QIcon & icon, const QString & text, int type_) : QTableWidgetItem(icon, text, type_) {}
+// void QTableWidgetItem(const QTableWidgetItem &)
+MyQTableWidgetItem(const QTableWidgetItem & other) : QTableWidgetItem(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,17 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi(QIcon* icon, QString* text, int type_) {
   return  new QTableWidgetItem(*icon, *text, type_);
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qtablewidget.h:85
+// [-2] void QTableWidgetItem(const QTableWidgetItem &)
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QTableWidgetItemC2ERKS_(QTableWidgetItem* other) {
+  return  new QTableWidgetItem(*other);
+}
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:86

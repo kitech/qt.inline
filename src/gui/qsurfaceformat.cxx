@@ -21,6 +21,8 @@ public:
 MyQSurfaceFormat() : QSurfaceFormat() {}
 // void QSurfaceFormat(QSurfaceFormat::FormatOptions)
 MyQSurfaceFormat(QFlags<QSurfaceFormat::FormatOption> options) : QSurfaceFormat(options) {}
+// void QSurfaceFormat(const QSurfaceFormat &)
+MyQSurfaceFormat(const QSurfaceFormat & other) : QSurfaceFormat(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +39,14 @@ void* C_ZN14QSurfaceFormatC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSurfaceFormatC2E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::FormatOption> options) {
   return  new QSurfaceFormat(options);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:96
+// [-2] void QSurfaceFormat(const QSurfaceFormat &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QSurfaceFormatC2ERKS_(QSurfaceFormat* other) {
+  return  new QSurfaceFormat(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -253,6 +263,15 @@ void C_ZN14QSurfaceFormat15setMinorVersionEi(void *this_, int minorVersion) {
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QSurfaceFormat12minorVersionEv(void *this_) {
   return (int)((QSurfaceFormat*)this_)->minorVersion();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:135
+// [8] QPair<int, int> version()
+extern "C" Q_DECL_EXPORT
+void C_ZNK14QSurfaceFormat7versionEv(void *this_) {
+  auto rv = ((QSurfaceFormat*)this_)->version();
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available

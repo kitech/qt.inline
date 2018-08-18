@@ -16,9 +16,21 @@
 class Q_DECL_EXPORT MyQTextBlock : public QTextBlock {
 public:
   virtual ~MyQTextBlock() {}
+// void QTextBlock(QTextDocumentPrivate *, int)
+MyQTextBlock(QTextDocumentPrivate * priv, int b) : QTextBlock(priv, b) {}
 // void QTextBlock()
 MyQTextBlock() : QTextBlock() {}
+// void QTextBlock(const QTextBlock &)
+MyQTextBlock(const QTextBlock & o) : QTextBlock(o) {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:205
+// [-2] void QTextBlock(QTextDocumentPrivate *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTextBlockC2EP20QTextDocumentPrivatei(QTextDocumentPrivate * priv, int b) {
+  return  new QTextBlock(priv, b);
+}
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:206
@@ -26,6 +38,14 @@ MyQTextBlock() : QTextBlock() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextBlockC2Ev() {
   return  new QTextBlock();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:207
+// [-2] void QTextBlock(const QTextBlock &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTextBlockC2ERKS_(QTextBlock* o) {
+  return  new QTextBlock(*o);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -165,6 +185,18 @@ void* C_ZNK10QTextBlock4textEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->text();
 return new QString(rv);
 }
+
+// Public Visibility=Default Availability=Available
+// since 5.3
+// /usr/include/qt/QtGui/qtextobject.h:231
+// [8] QVector<QTextLayout::FormatRange> textFormats()
+#if QT_VERSION >= 0x050300
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QTextBlock11textFormatsEv(void *this_) {
+  auto rv = ((QTextBlock*)this_)->textFormats();
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:233
@@ -348,6 +380,14 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextBlock8previousEv(void *this_) {
   auto rv = ((QTextBlock*)this_)->previous();
 return new QTextBlock(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:289
+// [8] QTextDocumentPrivate * docHandle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK10QTextBlock9docHandleEv(void *this_) {
+  return (void*)((QTextBlock*)this_)->docHandle();
 }
 
 // Public inline Visibility=Default Availability=Available

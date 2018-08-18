@@ -14,6 +14,15 @@ bool C_ZN9QtAndroid36shouldShowRequestPermissionRationaleERK7QString(QString* pe
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:105
+// [-2] QtAndroid::PermissionResultMap requestPermissionsSync(const QStringList &, int)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QtAndroid22requestPermissionsSyncERK11QStringListi(QStringList* permissions, int timeoutMs) {
+  auto rv = QtAndroid::requestPermissionsSync(*permissions, timeoutMs);
+/*return rv;*/
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:104
 // [-2] void requestPermissions(const QStringList &, const QtAndroid::PermissionResultCallback &)
 extern "C" Q_DECL_EXPORT

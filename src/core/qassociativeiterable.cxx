@@ -17,7 +17,17 @@
 class Q_DECL_EXPORT MyQAssociativeIterable : public QAssociativeIterable {
 public:
   virtual ~MyQAssociativeIterable() {}
+// void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)
+MyQAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl impl) : QAssociativeIterable(impl) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:675
+// [-2] void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QAssociativeIterableC2EN17QtMetaTypePrivate24QAssociativeIterableImplE(QtMetaTypePrivate::QAssociativeIterableImpl impl) {
+  return  new QAssociativeIterable(impl);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:680

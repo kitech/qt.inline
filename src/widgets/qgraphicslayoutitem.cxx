@@ -43,6 +43,8 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
   }
   }
 
+// void QGraphicsLayoutItem(QGraphicsLayoutItemPrivate &)
+MyQGraphicsLayoutItem(QGraphicsLayoutItemPrivate & dd) : QGraphicsLayoutItem(dd) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const{

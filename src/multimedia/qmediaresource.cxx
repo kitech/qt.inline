@@ -22,6 +22,8 @@ MyQMediaResource() : QMediaResource() {}
 MyQMediaResource(const QUrl & url, const QString & mimeType) : QMediaResource(url, mimeType) {}
 // void QMediaResource(const QNetworkRequest &, const QString &)
 MyQMediaResource(const QNetworkRequest & request, const QString & mimeType) : QMediaResource(request, mimeType) {}
+// void QMediaResource(const QMediaResource &)
+MyQMediaResource(const QMediaResource & other) : QMediaResource(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -46,6 +48,14 @@ void* C_ZN14QMediaResourceC2ERK4QUrlRK7QString(QUrl* url, QString* mimeType) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QMediaResourceC2ERK15QNetworkRequestRK7QString(QNetworkRequest* request, QString* mimeType) {
   return  new QMediaResource(*request, *mimeType);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaresource.h:59
+// [-2] void QMediaResource(const QMediaResource &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QMediaResourceC2ERKS_(QMediaResource* other) {
+  return  new QMediaResource(*other);
 }
 
 // Public Visibility=Default Availability=Available

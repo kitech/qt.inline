@@ -19,6 +19,8 @@ public:
   virtual ~MyQGeoAddress() {}
 // void QGeoAddress()
 MyQGeoAddress() : QGeoAddress() {}
+// void QGeoAddress(const QGeoAddress &)
+MyQGeoAddress(const QGeoAddress & other) : QGeoAddress(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQGeoAddress() : QGeoAddress() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QGeoAddressC2Ev() {
   return  new QGeoAddress();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoaddress.h:55
+// [-2] void QGeoAddress(const QGeoAddress &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QGeoAddressC2ERKS_(QGeoAddress* other) {
+  return  new QGeoAddress(*other);
 }
 
 // Public Visibility=Default Availability=Available

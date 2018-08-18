@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionRubberBand() {}
 // void QStyleOptionRubberBand()
 MyQStyleOptionRubberBand() : QStyleOptionRubberBand() {}
+// void QStyleOptionRubberBand(const QStyleOptionRubberBand &)
+MyQStyleOptionRubberBand(const QStyleOptionRubberBand & other) : QStyleOptionRubberBand(other) {}
 // void QStyleOptionRubberBand(int)
 MyQStyleOptionRubberBand(int version) : QStyleOptionRubberBand(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionRubberBand(int version) : QStyleOptionRubberBand(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionRubberBandC2Ev() {
   return  new QStyleOptionRubberBand();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:492
+// [-2] void QStyleOptionRubberBand(const QStyleOptionRubberBand &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QStyleOptionRubberBandC2ERKS_(QStyleOptionRubberBand* other) {
+  return  new QStyleOptionRubberBand(*other);
 }
 
 

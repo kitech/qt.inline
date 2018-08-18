@@ -18,6 +18,8 @@ public:
   virtual ~MyQPaintEngine() {}
 // void QPaintEngine(QPaintEngine::PaintEngineFeatures)
 MyQPaintEngine(QFlags<QPaintEngine::PaintEngineFeature> features) : QPaintEngine(features) {}
+// void QPaintEngine(QPaintEnginePrivate &, QPaintEngine::PaintEngineFeatures)
+MyQPaintEngine(QPaintEnginePrivate & data, QFlags<QPaintEngine::PaintEngineFeature> devcaps) : QPaintEngine(data, devcaps) {}
 };
 
 // Public Visibility=Default Availability=Available

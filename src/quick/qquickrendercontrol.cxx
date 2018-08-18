@@ -29,6 +29,40 @@ void* C_ZNK19QQuickRenderControl10metaObjectEv(void *this_) {
   return (void*)((QQuickRenderControl*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickrendercontrol.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QQuickRenderControl11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQuickRenderControl*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickrendercontrol.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN19QQuickRenderControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQuickRenderControl*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickrendercontrol.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QQuickRenderControl2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickRenderControl::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickrendercontrol.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QQuickRenderControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickRenderControl::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:58
 // [-2] void QQuickRenderControl(QObject *)
@@ -50,6 +84,14 @@ void C_ZN19QQuickRenderControlD2Ev(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN19QQuickRenderControl13prepareThreadEP7QThread(void *this_, QThread * targetThread) {
   ((QQuickRenderControl*)this_)->prepareThread(targetThread);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickrendercontrol.h:62
+// [-2] void initialize(QOpenGLContext *)
+extern "C" Q_DECL_EXPORT
+void C_ZN19QQuickRenderControl10initializeEP14QOpenGLContext(void *this_, QOpenGLContext * gl) {
+  ((QQuickRenderControl*)this_)->initialize(gl);
 }
 
 // Public Visibility=Default Availability=Available

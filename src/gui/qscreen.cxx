@@ -28,12 +28,54 @@ void* C_ZNK7QScreen10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:68
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QScreen11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QScreen*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:68
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN7QScreen11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QScreen*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:68
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QScreen2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QScreen::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:68
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QScreen6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QScreen::trUtf8(s, c, n);
+return new QString(rv);
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:98
 // [-2] void ~QScreen()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QScreenD2Ev(void *this_) {
   delete (QScreen*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:99
+// [8] QPlatformScreen * handle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK7QScreen6handleEv(void *this_) {
+  return (void*)((QScreen*)this_)->handle();
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:101
 // [8] QString name()
@@ -177,6 +219,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK7QScreen17availableGeometryEv(void *this_) {
   auto rv = ((QScreen*)this_)->availableGeometry();
 return new QRect(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:127
+// [-2] QList<QScreen *> virtualSiblings()
+extern "C" Q_DECL_EXPORT
+QList<QScreen *>* C_ZNK7QScreen15virtualSiblingsEv(void *this_) {
+  auto rv = ((QScreen*)this_)->virtualSiblings();
+return new QList<QScreen *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

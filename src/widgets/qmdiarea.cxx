@@ -232,6 +232,40 @@ void* C_ZNK8QMdiArea10metaObjectEv(void *this_) {
   return (void*)((QMdiArea*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdiarea.h:58
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QMdiArea11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMdiArea*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdiarea.h:58
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN8QMdiArea11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMdiArea*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdiarea.h:58
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QMdiArea2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMdiArea::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdiarea.h:58
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QMdiArea6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMdiArea::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:90
 // [-2] void QMdiArea(QWidget *)
@@ -280,6 +314,15 @@ void* C_ZNK8QMdiArea16currentSubWindowEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMdiArea15activeSubWindowEv(void *this_) {
   return (void*)((QMdiArea*)this_)->activeSubWindow();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdiarea.h:98
+// [-2] QList<QMdiSubWindow *> subWindowList(QMdiArea::WindowOrder)
+extern "C" Q_DECL_EXPORT
+QList<QMdiSubWindow *>* C_ZNK8QMdiArea13subWindowListENS_11WindowOrderE(void *this_, QMdiArea::WindowOrder order) {
+  auto rv = ((QMdiArea*)this_)->subWindowList(order);
+return new QList<QMdiSubWindow *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

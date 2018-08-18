@@ -19,6 +19,8 @@ public:
   virtual ~MyQQmlError() {}
 // void QQmlError()
 MyQQmlError() : QQmlError() {}
+// void QQmlError(const QQmlError &)
+MyQQmlError(const QQmlError & arg0) : QQmlError(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQQmlError() : QQmlError() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QQmlErrorC2Ev() {
   return  new QQmlError();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlerror.h:57
+// [-2] void QQmlError(const QQmlError &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QQmlErrorC2ERKS_(QQmlError* arg0) {
+  return  new QQmlError(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

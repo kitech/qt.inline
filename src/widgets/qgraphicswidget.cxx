@@ -327,6 +327,8 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
   }
   }
 
+// void QGraphicsWidget(QGraphicsWidgetPrivate &, QGraphicsItem *, Qt::WindowFlags)
+MyQGraphicsWidget(QGraphicsWidgetPrivate & arg0, QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGraphicsWidget(arg0, parent, wFlags) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -541,6 +543,40 @@ void C_ZN15QGraphicsWidget19ungrabKeyboardEventEP6QEvent(void *this_, QEvent * e
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsWidget10metaObjectEv(void *this_) {
   return (void*)((QGraphicsWidget*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:66
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGraphicsWidget11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QGraphicsWidget*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:66
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QGraphicsWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QGraphicsWidget*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:66
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGraphicsWidget2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGraphicsWidget::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:66
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGraphicsWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGraphicsWidget::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -919,6 +955,28 @@ void C_ZN15QGraphicsWidget9addActionEP7QAction(void *this_, QAction * action) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:150
+// [-2] void addActions(QList<QAction *>)
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+void C_ZN15QGraphicsWidget10addActionsE5QListIP7QActionE(void *this_, QList<QAction *> actions) {
+  ((QGraphicsWidget*)this_)->addActions(actions);
+}
+#endif // QT_VERSION >= 0x040500
+
+// Public Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:151
+// [-2] void insertActions(QAction *, QList<QAction *>)
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+void C_ZN15QGraphicsWidget13insertActionsEP7QAction5QListIS1_E(void *this_, QAction * before, QList<QAction *> actions) {
+  ((QGraphicsWidget*)this_)->insertActions(before, actions);
+}
+#endif // QT_VERSION >= 0x040500
+
+// Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:153
 // [-2] void insertAction(QAction *, QAction *)
 #if QT_VERSION >= 0x040500
@@ -936,6 +994,18 @@ void C_ZN15QGraphicsWidget12insertActionEP7QActionS1_(void *this_, QAction * bef
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsWidget12removeActionEP7QAction(void *this_, QAction * action) {
   ((QGraphicsWidget*)this_)->removeAction(action);
+}
+#endif // QT_VERSION >= 0x040500
+
+// Public Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:155
+// [-2] QList<QAction *> actions()
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+QList<QAction *>* C_ZNK15QGraphicsWidget7actionsEv(void *this_) {
+  auto rv = ((QGraphicsWidget*)this_)->actions();
+return new QList<QAction *>(rv);
 }
 #endif // QT_VERSION >= 0x040500
 

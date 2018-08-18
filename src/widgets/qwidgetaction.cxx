@@ -70,6 +70,19 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
+// QList<QWidget *> createdWidgets()
+  virtual QList<QWidget *> createdWidgets() const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createdWidgets", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QList<QWidget *>*)(irv);
+      // UnexposedRecordQList<QWidget *>
+    } else {
+    return QWidgetAction::createdWidgets();
+  }
+  }
+
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -104,12 +117,55 @@ void C_ZN13QWidgetAction12deleteWidgetEP7QWidget(void *this_, QWidget * widget) 
   ((QWidgetAction*)this_)->QWidgetAction::deleteWidget(widget);
 }
 
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwidgetaction.h:73
+// [-2] QList<QWidget *> createdWidgets()
+extern "C" Q_DECL_EXPORT
+QList<QWidget *>* C_ZNK13QWidgetAction14createdWidgetsEv(void *this_) {
+  auto rv = ((QWidgetAction*)this_)->QWidgetAction::createdWidgets();
+return new QList<QWidget *>(rv);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:55
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QWidgetAction10metaObjectEv(void *this_) {
   return (void*)((QWidgetAction*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwidgetaction.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QWidgetAction11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QWidgetAction*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwidgetaction.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QWidgetAction11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QWidgetAction*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwidgetaction.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QWidgetAction2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWidgetAction::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwidgetaction.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QWidgetAction6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWidgetAction::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

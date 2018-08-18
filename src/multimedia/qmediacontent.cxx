@@ -24,6 +24,10 @@ MyQMediaContent(const QUrl & contentUrl) : QMediaContent(contentUrl) {}
 MyQMediaContent(const QNetworkRequest & contentRequest) : QMediaContent(contentRequest) {}
 // void QMediaContent(const QMediaResource &)
 MyQMediaContent(const QMediaResource & contentResource) : QMediaContent(contentResource) {}
+// void QMediaContent(const QMediaResourceList &)
+MyQMediaContent(const QMediaResourceList & resources) : QMediaContent(resources) {}
+// void QMediaContent(const QMediaContent &)
+MyQMediaContent(const QMediaContent & other) : QMediaContent(other) {}
 // void QMediaContent(QMediaPlaylist *, const QUrl &, bool)
 MyQMediaContent(QMediaPlaylist * playlist, const QUrl & contentUrl, bool takeOwnership) : QMediaContent(playlist, contentUrl, takeOwnership) {}
 };
@@ -58,6 +62,22 @@ void* C_ZN13QMediaContentC2ERK15QNetworkRequest(QNetworkRequest* contentRequest)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QMediaContentC2ERK14QMediaResource(QMediaResource* contentResource) {
   return  new QMediaContent(*contentResource);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediacontent.h:62
+// [-2] void QMediaContent(const QMediaResourceList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QMediaContentC2ERK5QListI14QMediaResourceE(const QMediaResourceList & resources) {
+  return  new QMediaContent(resources);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediacontent.h:63
+// [-2] void QMediaContent(const QMediaContent &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QMediaContentC2ERKS_(QMediaContent* other) {
+  return  new QMediaContent(*other);
 }
 
 // Public Visibility=Default Availability=Available

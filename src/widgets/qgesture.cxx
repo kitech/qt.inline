@@ -19,6 +19,8 @@ public:
   virtual ~MyQGesture() {}
 // void QGesture(QObject *)
 MyQGesture(QObject * parent) : QGesture(parent) {}
+// void QGesture(QGesturePrivate &, QObject *)
+MyQGesture(QGesturePrivate & dd, QObject * parent) : QGesture(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -27,6 +29,40 @@ MyQGesture(QObject * parent) : QGesture(parent) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QGesture10metaObjectEv(void *this_) {
   return (void*)((QGesture*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:63
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QGesture11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QGesture*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:63
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN8QGesture11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QGesture*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:63
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QGesture2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGesture::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:63
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QGesture6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGesture::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

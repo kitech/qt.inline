@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkReply() {}
 // void QNetworkReply(QObject *)
 MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
+// void QNetworkReply(QNetworkReplyPrivate &, QObject *)
+MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
@@ -152,6 +154,18 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
+// void ignoreSslErrorsImplementation(const QList<QSslError> &)
+  virtual void ignoreSslErrorsImplementation(const QList<QSslError> & arg0) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"ignoreSslErrorsImplementation", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QNetworkReply::ignoreSslErrorsImplementation(arg0);
+  }
+  }
+
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -251,12 +265,57 @@ void C_ZN13QNetworkReply33setSslConfigurationImplementationERK17QSslConfiguratio
 }
 #endif // QT_VERSION >= 0x050000
 
+// Protected virtual Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtNetwork/qnetworkreply.h:187
+// [-2] void ignoreSslErrorsImplementation(const QList<QSslError> &)
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void C_ZN13QNetworkReply29ignoreSslErrorsImplementationERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & arg0) {
+  ((QNetworkReply*)this_)->QNetworkReply::ignoreSslErrorsImplementation(arg0);
+}
+#endif // QT_VERSION >= 0x050000
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:64
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply10metaObjectEv(void *this_) {
   return (void*)((QNetworkReply*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:64
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QNetworkReply11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QNetworkReply*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:64
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QNetworkReply11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QNetworkReply*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:64
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QNetworkReply2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QNetworkReply::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:64
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QNetworkReply6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QNetworkReply::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -380,12 +439,30 @@ bool C_ZNK13QNetworkReply12hasRawHeaderERK10QByteArray(void *this_, QByteArray* 
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:137
+// [8] QList<QByteArray> rawHeaderList()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK13QNetworkReply13rawHeaderListEv(void *this_) {
+  auto rv = ((QNetworkReply*)this_)->rawHeaderList();
+return new QList<QByteArray>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:138
 // [8] QByteArray rawHeader(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QNetworkReply9rawHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   auto rv = ((QNetworkReply*)this_)->rawHeader(*headerName);
 return new QByteArray(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:141
+// [-2] const QList<QNetworkReply::RawHeaderPair> & rawHeaderPairs()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK13QNetworkReply14rawHeaderPairsEv(void *this_) {
+  auto& rv = ((QNetworkReply*)this_)->rawHeaderPairs();
+return new QList<QNetworkReply::RawHeaderPair>(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -413,6 +490,17 @@ extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkReply19setSslConfigurationERK17QSslConfiguration(void *this_, QSslConfiguration* configuration) {
   ((QNetworkReply*)this_)->setSslConfiguration(*configuration);
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtNetwork/qnetworkreply.h:149
+// [-2] void ignoreSslErrors(const QList<QSslError> &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void C_ZN13QNetworkReply15ignoreSslErrorsERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & errors) {
+  ((QNetworkReply*)this_)->ignoreSslErrors(errors);
+}
+#endif // QT_VERSION >= 0x040600
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:153
@@ -464,6 +552,14 @@ void C_ZN13QNetworkReply9encryptedEv(void *this_) {
   ((QNetworkReply*)this_)->encrypted();
 }
 #endif // QT_VERSION >= 0x050100
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:162
+// [-2] void sslErrors(const QList<QSslError> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QNetworkReply9sslErrorsERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & errors) {
+  ((QNetworkReply*)this_)->sslErrors(errors);
+}
 
 // Public Visibility=Default Availability=Available
 // since 5.5

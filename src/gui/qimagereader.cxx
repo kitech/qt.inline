@@ -24,6 +24,24 @@ MyQImageReader(QIODevice * device, const QByteArray & format) : QImageReader(dev
 MyQImageReader(const QString & fileName, const QByteArray & format) : QImageReader(fileName, format) {}
 };
 
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:61
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QImageReader2trEPKcS1_i(const char * sourceText, const char * disambiguation, int n) {
+  auto rv = QImageReader::tr(sourceText, disambiguation, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:61
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QImageReader6trUtf8EPKcS1_i(const char * sourceText, const char * disambiguation, int n) {
+  auto rv = QImageReader::trUtf8(sourceText, disambiguation, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:71
 // [-2] void QImageReader()
@@ -356,6 +374,18 @@ return new QByteArray(rv);
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtGui/qimagereader.h:124
+// [8] QList<QByteArray> supportedSubTypes()
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK12QImageReader17supportedSubTypesEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->supportedSubTypes();
+return new QList<QByteArray>(rv);
+}
+#endif // QT_VERSION >= 0x050400
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:126
 // [1] bool canRead()
 extern "C" Q_DECL_EXPORT
@@ -481,6 +511,24 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * device) {
   auto rv = QImageReader::imageFormat(device);
 return new QByteArray(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:145
+// [8] QList<QByteArray> supportedImageFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN12QImageReader21supportedImageFormatsEv() {
+  auto rv = QImageReader::supportedImageFormats();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:146
+// [8] QList<QByteArray> supportedMimeTypes()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN12QImageReader18supportedMimeTypesEv() {
+  auto rv = QImageReader::supportedMimeTypes();
+return new QList<QByteArray>(rv);
 }
 
 //  main block end

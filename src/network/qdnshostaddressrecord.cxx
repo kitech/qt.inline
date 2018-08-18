@@ -18,6 +18,8 @@ public:
   virtual ~MyQDnsHostAddressRecord() {}
 // void QDnsHostAddressRecord()
 MyQDnsHostAddressRecord() : QDnsHostAddressRecord() {}
+// void QDnsHostAddressRecord(const QDnsHostAddressRecord &)
+MyQDnsHostAddressRecord(const QDnsHostAddressRecord & other) : QDnsHostAddressRecord(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQDnsHostAddressRecord() : QDnsHostAddressRecord() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QDnsHostAddressRecordC2Ev() {
   return  new QDnsHostAddressRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:88
+// [-2] void QDnsHostAddressRecord(const QDnsHostAddressRecord &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QDnsHostAddressRecordC2ERKS_(QDnsHostAddressRecord* other) {
+  return  new QDnsHostAddressRecord(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

@@ -20,6 +20,8 @@ public:
 MyQTextFormat() : QTextFormat() {}
 // void QTextFormat(int)
 MyQTextFormat(int type_) : QTextFormat(type_) {}
+// void QTextFormat(const QTextFormat &)
+MyQTextFormat(const QTextFormat & rhs) : QTextFormat(rhs) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN11QTextFormatC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextFormatC2Ei(int type_) {
   return  new QTextFormat(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:292
+// [-2] void QTextFormat(const QTextFormat &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextFormatC2ERKS_(QTextFormat* rhs) {
+  return  new QTextFormat(*rhs);
 }
 
 // Public Visibility=Default Availability=Available
@@ -216,6 +226,32 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTextFormat14lengthPropertyEi(void *this_, int propertyId) {
   auto rv = ((QTextFormat*)this_)->lengthProperty(propertyId);
 return new QTextLength(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:322
+// [8] QVector<QTextLength> lengthVectorProperty(int)
+extern "C" Q_DECL_EXPORT
+void C_ZNK11QTextFormat20lengthVectorPropertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->lengthVectorProperty(propertyId);
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:324
+// [-2] void setProperty(int, const QVector<QTextLength> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTextFormat11setPropertyEiRK7QVectorI11QTextLengthE(void *this_, int propertyId, const QVector<QTextLength> & lengths) {
+  ((QTextFormat*)this_)->setProperty(propertyId, lengths);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:326
+// [8] QMap<int, QVariant> properties()
+extern "C" Q_DECL_EXPORT
+void C_ZNK11QTextFormat10propertiesEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->properties();
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available

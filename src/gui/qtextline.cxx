@@ -243,6 +243,26 @@ int C_ZNK9QTextLine10lineNumberEv(void *this_) {
   return (int)((QTextLine*)this_)->lineNumber();
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:258
+// [-2] void draw(QPainter *, const QPointF &, const QTextLayout::FormatRange *)
+extern "C" Q_DECL_EXPORT
+void C_ZNK9QTextLine4drawEP8QPainterRK7QPointFPKN11QTextLayout11FormatRangeE(void *this_, QPainter * p, QPointF* point, const QTextLayout::FormatRange * selection) {
+  ((QTextLine*)this_)->draw(p, *point, selection);
+}
+
+// Public Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtGui/qtextlayout.h:261
+// [-2] QList<QGlyphRun> glyphRuns(int, int)
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+QList<QGlyphRun>* C_ZNK9QTextLine9glyphRunsEii(void *this_, int from, int length) {
+  auto rv = ((QTextLine*)this_)->glyphRuns(from, length);
+return new QList<QGlyphRun>(rv);
+}
+#endif // QT_VERSION >= 0x050000
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextLineD2Ev(void *this_) {

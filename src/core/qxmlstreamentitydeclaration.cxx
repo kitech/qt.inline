@@ -19,6 +19,10 @@ public:
   virtual ~MyQXmlStreamEntityDeclaration() {}
 // void QXmlStreamEntityDeclaration()
 MyQXmlStreamEntityDeclaration() : QXmlStreamEntityDeclaration() {}
+// void QXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration &)
+MyQXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration & arg0) : QXmlStreamEntityDeclaration(arg0) {}
+// void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&)
+MyQXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration && other) : QXmlStreamEntityDeclaration(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +40,22 @@ extern "C" Q_DECL_EXPORT
 void C_ZN27QXmlStreamEntityDeclarationD2Ev(void *this_) {
   delete (QXmlStreamEntityDeclaration*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:289
+// [-2] void QXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QXmlStreamEntityDeclarationC2ERKS_(QXmlStreamEntityDeclaration* arg0) {
+  return  new QXmlStreamEntityDeclaration(*arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:290
+// [-2] void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QXmlStreamEntityDeclarationC2EOS_(QXmlStreamEntityDeclaration && other) {
+  return  new QXmlStreamEntityDeclaration(other);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:300
 // [88] QXmlStreamEntityDeclaration & operator=(const QXmlStreamEntityDeclaration &)

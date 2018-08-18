@@ -78,6 +78,8 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
   }
   }
 
+// void QTreeView(QTreeViewPrivate &, QWidget *)
+MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
@@ -752,6 +754,40 @@ void* C_ZNK9QTreeView10metaObjectEv(void *this_) {
   return (void*)((QTreeView*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:57
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTreeView11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTreeView*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:57
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QTreeView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTreeView*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTreeView2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTreeView::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTreeView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTreeView::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:71
 // [-2] void QTreeView(QWidget *)
@@ -1197,6 +1233,14 @@ void C_ZN9QTreeView12sortByColumnEiN2Qt9SortOrderE(void *this_, int column, Qt::
   ((QTreeView*)this_)->sortByColumn(column, order);
 }
 #endif // QT_VERSION >= 0x040200
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:148
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTreeView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
+  ((QTreeView*)this_)->dataChanged(*topLeft, *bottomRight, roles);
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:149

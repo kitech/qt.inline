@@ -76,6 +76,40 @@ void* C_ZNK16QDialogButtonBox10metaObjectEv(void *this_) {
   return (void*)((QDialogButtonBox*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:57
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QDialogButtonBox11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QDialogButtonBox*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:57
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN16QDialogButtonBox11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QDialogButtonBox*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QDialogButtonBox2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QDialogButtonBox::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QDialogButtonBox6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QDialogButtonBox::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:120
 // [-2] void QDialogButtonBox(QWidget *)
@@ -173,6 +207,15 @@ void C_ZN16QDialogButtonBox12removeButtonEP15QAbstractButton(void *this_, QAbstr
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDialogButtonBox5clearEv(void *this_) {
   ((QDialogButtonBox*)this_)->clear();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:136
+// [-2] QList<QAbstractButton *> buttons()
+extern "C" Q_DECL_EXPORT
+QList<QAbstractButton *>* C_ZNK16QDialogButtonBox7buttonsEv(void *this_) {
+  auto rv = ((QDialogButtonBox*)this_)->buttons();
+return new QList<QAbstractButton *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

@@ -19,6 +19,8 @@ public:
   virtual ~MyQGeoSatelliteInfo() {}
 // void QGeoSatelliteInfo()
 MyQGeoSatelliteInfo() : QGeoSatelliteInfo() {}
+// void QGeoSatelliteInfo(const QGeoSatelliteInfo &)
+MyQGeoSatelliteInfo(const QGeoSatelliteInfo & other) : QGeoSatelliteInfo(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQGeoSatelliteInfo() : QGeoSatelliteInfo() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGeoSatelliteInfoC2Ev() {
   return  new QGeoSatelliteInfo();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfo.h:65
+// [-2] void QGeoSatelliteInfo(const QGeoSatelliteInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QGeoSatelliteInfoC2ERKS_(QGeoSatelliteInfo* other) {
+  return  new QGeoSatelliteInfo(*other);
 }
 
 // Public Visibility=Default Availability=Available

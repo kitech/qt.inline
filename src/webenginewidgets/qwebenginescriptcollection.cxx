@@ -68,6 +68,31 @@ return new QWebEngineScript(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:62
+// [-2] QList<QWebEngineScript> findScripts(const QString &)
+extern "C" Q_DECL_EXPORT
+QList<QWebEngineScript>* C_ZNK26QWebEngineScriptCollection11findScriptsERK7QString(void *this_, QString* name) {
+  auto rv = ((QWebEngineScriptCollection*)this_)->findScripts(*name);
+return new QList<QWebEngineScript>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:64
+// [-2] void insert(const QWebEngineScript &)
+extern "C" Q_DECL_EXPORT
+void C_ZN26QWebEngineScriptCollection6insertERK16QWebEngineScript(void *this_, QWebEngineScript* arg0) {
+  ((QWebEngineScriptCollection*)this_)->insert(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:65
+// [-2] void insert(const QList<QWebEngineScript> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN26QWebEngineScriptCollection6insertERK5QListI16QWebEngineScriptE(void *this_, const QList<QWebEngineScript> & list) {
+  ((QWebEngineScriptCollection*)this_)->insert(list);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:67
 // [1] bool remove(const QWebEngineScript &)
 extern "C" Q_DECL_EXPORT
@@ -81,6 +106,15 @@ bool C_ZN26QWebEngineScriptCollection6removeERK16QWebEngineScript(void *this_, Q
 extern "C" Q_DECL_EXPORT
 void C_ZN26QWebEngineScriptCollection5clearEv(void *this_) {
   ((QWebEngineScriptCollection*)this_)->clear();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:70
+// [-2] QList<QWebEngineScript> toList()
+extern "C" Q_DECL_EXPORT
+QList<QWebEngineScript>* C_ZNK26QWebEngineScriptCollection6toListEv(void *this_) {
+  auto rv = ((QWebEngineScriptCollection*)this_)->toList();
+return new QList<QWebEngineScript>(rv);
 }
 
 //  main block end

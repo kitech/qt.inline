@@ -20,10 +20,16 @@ public:
 MyQTextCursor() : QTextCursor() {}
 // void QTextCursor(QTextDocument *)
 MyQTextCursor(QTextDocument * document) : QTextCursor(document) {}
+// void QTextCursor(QTextDocumentPrivate *, int)
+MyQTextCursor(QTextDocumentPrivate * p, int pos) : QTextCursor(p, pos) {}
+// void QTextCursor(QTextCursorPrivate *)
+MyQTextCursor(QTextCursorPrivate * d) : QTextCursor(d) {}
 // void QTextCursor(QTextFrame *)
 MyQTextCursor(QTextFrame * frame) : QTextCursor(frame) {}
 // void QTextCursor(const QTextBlock &)
 MyQTextCursor(const QTextBlock & block) : QTextCursor(block) {}
+// void QTextCursor(const QTextCursor &)
+MyQTextCursor(const QTextCursor & cursor) : QTextCursor(cursor) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -43,6 +49,22 @@ void* C_ZN11QTextCursorC2EP13QTextDocument(QTextDocument * document) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:71
+// [-2] void QTextCursor(QTextDocumentPrivate *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextCursorC2EP20QTextDocumentPrivatei(QTextDocumentPrivate * p, int pos) {
+  return  new QTextCursor(p, pos);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:72
+// [-2] void QTextCursor(QTextCursorPrivate *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextCursorC2EP18QTextCursorPrivate(QTextCursorPrivate * d) {
+  return  new QTextCursor(d);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:73
 // [-2] void QTextCursor(QTextFrame *)
 extern "C" Q_DECL_EXPORT
@@ -56,6 +78,14 @@ void* C_ZN11QTextCursorC2EP10QTextFrame(QTextFrame * frame) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextCursorC2ERK10QTextBlock(QTextBlock* block) {
   return  new QTextCursor(*block);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:75
+// [-2] void QTextCursor(const QTextCursor &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextCursorC2ERKS_(QTextCursor* cursor) {
+  return  new QTextCursor(*cursor);
 }
 
 // Public inline Visibility=Default Availability=Available

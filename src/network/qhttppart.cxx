@@ -19,6 +19,8 @@ public:
   virtual ~MyQHttpPart() {}
 // void QHttpPart()
 MyQHttpPart() : QHttpPart() {}
+// void QHttpPart(const QHttpPart &)
+MyQHttpPart(const QHttpPart & other) : QHttpPart(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQHttpPart() : QHttpPart() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHttpPartC2Ev() {
   return  new QHttpPart();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:59
+// [-2] void QHttpPart(const QHttpPart &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QHttpPartC2ERKS_(QHttpPart* other) {
+  return  new QHttpPart(*other);
 }
 
 // Public Visibility=Default Availability=Available

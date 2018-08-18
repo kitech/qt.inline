@@ -74,6 +74,14 @@ void* C_ZNK12QMapNodeBase6parentEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->parent();
 }
 
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmap.h:99
+// [-2] void setParent(QMapNodeBase *)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QMapNodeBase9setParentEPS_(void *this_, QMapNodeBase * pp) {
+  ((QMapNodeBase*)this_)->setParent(pp);
+}
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMapNodeBaseD2Ev(void *this_) {

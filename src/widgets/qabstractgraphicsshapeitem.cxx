@@ -19,6 +19,8 @@ public:
   virtual ~MyQAbstractGraphicsShapeItem() {}
 // void QAbstractGraphicsShapeItem(QGraphicsItem *)
 MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeItem(parent) {}
+// void QAbstractGraphicsShapeItem(QAbstractGraphicsShapeItemPrivate &, QGraphicsItem *)
+MyQAbstractGraphicsShapeItem(QAbstractGraphicsShapeItemPrivate & dd, QGraphicsItem * parent) : QAbstractGraphicsShapeItem(dd, parent) {}
 };
 
 // Public Visibility=Default Availability=Available

@@ -55,6 +55,21 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
   }
   }
 
+// Protected Visibility=Default Availability=Available
+// QList<QTextBlock> blockList()
+  virtual QList<QTextBlock> blockList() const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QList<QTextBlock>*)(irv);
+      // UnexposedRecordQList<QTextBlock>
+    } else {
+    return QTextBlockGroup::blockList();
+  }
+  }
+
+// void QTextBlockGroup(QTextBlockGroupPrivate &, QTextDocument *)
+MyQTextBlockGroup(QTextBlockGroupPrivate & p, QTextDocument * doc) : QTextBlockGroup(p, doc) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -81,12 +96,55 @@ void C_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void *this_, QText
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockFormatChanged(*block);
 }
 
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:102
+// [-2] QList<QTextBlock> blockList()
+extern "C" Q_DECL_EXPORT
+QList<QTextBlock>* C_ZNK15QTextBlockGroup9blockListEv(void *this_) {
+  auto rv = ((QTextBlockGroup*)this_)->QTextBlockGroup::blockList();
+return new QList<QTextBlock>(rv);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:92
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QTextBlockGroup10metaObjectEv(void *this_) {
   return (void*)((QTextBlockGroup*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:92
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QTextBlockGroup11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTextBlockGroup*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:92
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QTextBlockGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTextBlockGroup*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:92
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QTextBlockGroup2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextBlockGroup::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:92
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QTextBlockGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextBlockGroup::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 //  main block end

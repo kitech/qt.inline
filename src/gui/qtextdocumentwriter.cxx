@@ -138,4 +138,13 @@ void* C_ZNK19QTextDocumentWriter5codecEv(void *this_) {
   return (void*)((QTextDocumentWriter*)this_)->codec();
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:78
+// [8] QList<QByteArray> supportedDocumentFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN19QTextDocumentWriter24supportedDocumentFormatsEv() {
+  auto rv = QTextDocumentWriter::supportedDocumentFormats();
+return new QList<QByteArray>(rv);
+}
+
 //  main block end

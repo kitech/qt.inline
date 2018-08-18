@@ -18,6 +18,8 @@ public:
   virtual ~MyQIconEngine() {}
 // void QIconEngine()
 MyQIconEngine() : QIconEngine() {}
+// void QIconEngine(const QIconEngine &)
+MyQIconEngine(const QIconEngine & other) : QIconEngine(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -30,6 +32,14 @@ void* C_ZN11QIconEngineC2Ev() {
   return 0; // new QIconEngine();
 }
 #endif // QT_VERSION >= 0x050600
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qiconengine.h:54
+// [-2] void QIconEngine(const QIconEngine &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QIconEngineC2ERKS_(QIconEngine* other) {
+  return 0; // new QIconEngine(*other);
+}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:55

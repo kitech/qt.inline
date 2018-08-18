@@ -197,6 +197,40 @@ void* C_ZNK15QCalendarWidget10metaObjectEv(void *this_) {
   return (void*)((QCalendarWidget*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcalendarwidget.h:57
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QCalendarWidget11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QCalendarWidget*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcalendarwidget.h:57
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QCalendarWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QCalendarWidget*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcalendarwidget.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QCalendarWidget2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCalendarWidget::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcalendarwidget.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QCalendarWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCalendarWidget::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:92
 // [-2] void QCalendarWidget(QWidget *)
@@ -402,6 +436,15 @@ return new QTextCharFormat(rv);
 extern "C" Q_DECL_EXPORT
 void C_ZN15QCalendarWidget20setWeekdayTextFormatEN2Qt9DayOfWeekERK15QTextCharFormat(void *this_, Qt::DayOfWeek dayOfWeek, QTextCharFormat* format) {
   ((QCalendarWidget*)this_)->setWeekdayTextFormat(dayOfWeek, *format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcalendarwidget.h:130
+// [-2] QMap<QDate, QTextCharFormat> dateTextFormat()
+extern "C" Q_DECL_EXPORT
+void C_ZNK15QCalendarWidget14dateTextFormatEv(void *this_) {
+  auto rv = ((QCalendarWidget*)this_)->dateTextFormat();
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available

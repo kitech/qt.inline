@@ -48,6 +48,40 @@ void* C_ZNK6QTimer10metaObjectEv(void *this_) {
   return (void*)((QTimer*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:59
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QTimer11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTimer*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:59
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN6QTimer11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTimer*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:59
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QTimer2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTimer::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:59
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QTimer6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTimer::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:66
 // [-2] void QTimer(QObject *)
@@ -176,6 +210,22 @@ void C_ZN6QTimer4stopEv(void *this_) {
   ((QTimer*)this_)->stop();
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:164
+// [-2] void timeout(QTimer::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QTimer7timeoutENS_14QPrivateSignalE(void *this_, QTimer::QPrivateSignal* arg0) {
+  ((QTimer*)this_)->timeout(*arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:168
+// [-2] void setInterval(std::chrono::milliseconds)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QTimer11setIntervalENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void *this_, std::chrono::milliseconds value) {
+  ((QTimer*)this_)->setInterval(value);
+}
+
 // Public inline Visibility=Default Availability=Available
 // since 5.8
 // /usr/include/qt/QtCore/qtimer.h:173
@@ -195,6 +245,39 @@ std::chrono::milliseconds C_ZNK6QTimer18intervalAsDurationEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 std::chrono::milliseconds C_ZNK6QTimer23remainingTimeAsDurationEv(void *this_) {
   return (std::chrono::milliseconds)((QTimer*)this_)->remainingTimeAsDuration();
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public static inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtCore/qtimer.h:183
+// [-2] void singleShot(std::chrono::milliseconds, const QObject *, const char *)
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+void C_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEPK7QObjectPKc(std::chrono::milliseconds value, const QObject * receiver, const char * member) {
+  QTimer::singleShot(value, receiver, member);
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public static inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtCore/qtimer.h:188
+// [-2] void singleShot(std::chrono::milliseconds, Qt::TimerType, const QObject *, const char *)
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+void C_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEN2Qt9TimerTypeEPK7QObjectPKc(std::chrono::milliseconds value, Qt::TimerType timerType, const QObject * receiver, const char * member) {
+  QTimer::singleShot(value, timerType, receiver, member);
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtCore/qtimer.h:193
+// [-2] void start(std::chrono::milliseconds)
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+void C_ZN6QTimer5startENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void *this_, std::chrono::milliseconds value) {
+  ((QTimer*)this_)->start(value);
 }
 #endif // QT_VERSION >= 0x050800
 

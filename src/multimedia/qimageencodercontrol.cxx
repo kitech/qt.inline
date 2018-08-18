@@ -29,6 +29,40 @@ void* C_ZNK20QImageEncoderControl10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:62
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QImageEncoderControl11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QImageEncoderControl*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:62
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN20QImageEncoderControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QImageEncoderControl*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:62
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QImageEncoderControl2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QImageEncoderControl::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:62
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QImageEncoderControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QImageEncoderControl::trUtf8(s, c, n);
+return new QString(rv);
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qimageencodercontrol.h:65
 // [-2] void ~QImageEncoderControl()
 extern "C" Q_DECL_EXPORT

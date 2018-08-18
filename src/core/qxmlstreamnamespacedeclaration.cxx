@@ -19,6 +19,10 @@ public:
   virtual ~MyQXmlStreamNamespaceDeclaration() {}
 // void QXmlStreamNamespaceDeclaration()
 MyQXmlStreamNamespaceDeclaration() : QXmlStreamNamespaceDeclaration() {}
+// void QXmlStreamNamespaceDeclaration(const QXmlStreamNamespaceDeclaration &)
+MyQXmlStreamNamespaceDeclaration(const QXmlStreamNamespaceDeclaration & arg0) : QXmlStreamNamespaceDeclaration(arg0) {}
+// void QXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration &&)
+MyQXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration && other) : QXmlStreamNamespaceDeclaration(other) {}
 // void QXmlStreamNamespaceDeclaration(const QString &, const QString &)
 MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespaceUri) : QXmlStreamNamespaceDeclaration(prefix, namespaceUri) {}
 };
@@ -29,6 +33,22 @@ MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespa
 extern "C" Q_DECL_EXPORT
 void* C_ZN30QXmlStreamNamespaceDeclarationC2Ev() {
   return  new QXmlStreamNamespaceDeclaration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:201
+// [-2] void QXmlStreamNamespaceDeclaration(const QXmlStreamNamespaceDeclaration &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN30QXmlStreamNamespaceDeclarationC2ERKS_(QXmlStreamNamespaceDeclaration* arg0) {
+  return  new QXmlStreamNamespaceDeclaration(*arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:202
+// [-2] void QXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN30QXmlStreamNamespaceDeclarationC2EOS_(QXmlStreamNamespaceDeclaration && other) {
+  return  new QXmlStreamNamespaceDeclaration(other);
 }
 
 // Public inline Visibility=Default Availability=Available

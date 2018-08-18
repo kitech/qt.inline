@@ -18,6 +18,8 @@ public:
   virtual ~MyQMediaObject() {}
 // void QMediaObject(QObject *, QMediaService *)
 MyQMediaObject(QObject * parent, QMediaService * service) : QMediaObject(parent, service) {}
+// void QMediaObject(QMediaObjectPrivate &, QObject *, QMediaService *)
+MyQMediaObject(QMediaObjectPrivate & dd, QObject * parent, QMediaService * service) : QMediaObject(dd, parent, service) {}
 // Protected Visibility=Default Availability=Available
 // void addPropertyWatch(const QByteArray &)
   virtual void addPropertyWatch(const QByteArray & name) {
@@ -66,6 +68,40 @@ void C_ZN12QMediaObject19removePropertyWatchERK10QByteArray(void *this_, QByteAr
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaObject10metaObjectEv(void *this_) {
   return (void*)((QMediaObject*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaobject.h:58
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QMediaObject11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMediaObject*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaobject.h:58
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMediaObject11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMediaObject*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaobject.h:58
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QMediaObject2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMediaObject::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaobject.h:58
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QMediaObject6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMediaObject::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

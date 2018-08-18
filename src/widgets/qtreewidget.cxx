@@ -45,6 +45,19 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
+// QMimeData * mimeData(const QList<QTreeWidgetItem *>)
+  virtual QMimeData * mimeData(const QList<QTreeWidgetItem *> items) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeData", &handled, 1, (uint64_t)&items, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMimeData *)(irv);
+      // PointerPointerQMimeData *
+    } else {
+    return QTreeWidget::mimeData(items);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
 // bool dropMimeData(QTreeWidgetItem *, int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(QTreeWidgetItem * parent, int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
@@ -67,6 +80,19 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
       // ElaboratedRecordQFlags<Qt::DropAction>
     } else {
     return QTreeWidget::supportedDropActions();
+  }
+  }
+
+// Protected Visibility=Default Availability=Available
+// QList<QTreeWidgetItem *> items(const QMimeData *)
+  virtual QList<QTreeWidgetItem *> items(const QMimeData * data) const{
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QList<QTreeWidgetItem *>*)(irv);
+      // UnexposedRecordQList<QTreeWidgetItem *>
+    } else {
+    return QTreeWidget::items(data);
   }
   }
 
@@ -141,6 +167,14 @@ return new QStringList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:354
+// [8] QMimeData * mimeData(const QList<QTreeWidgetItem *>)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QTreeWidget8mimeDataE5QListIP15QTreeWidgetItemE(void *this_, const QList<QTreeWidgetItem *> items) {
+  return (void*)((QTreeWidget*)this_)->QTreeWidget::mimeData(items);
+}
+
+// Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:356
 // [1] bool dropMimeData(QTreeWidgetItem *, int, const QMimeData *, Qt::DropAction)
 extern "C" Q_DECL_EXPORT
@@ -154,6 +188,15 @@ bool C_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropAc
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK11QTreeWidget20supportedDropActionsEv(void *this_) {
   return (Qt::DropActions)((QTreeWidget*)this_)->QTreeWidget::supportedDropActions();
+}
+
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:365
+// [8] QList<QTreeWidgetItem *> items(const QMimeData *)
+extern "C" Q_DECL_EXPORT
+QList<QTreeWidgetItem *>* C_ZNK11QTreeWidget5itemsEPK9QMimeData(void *this_, const QMimeData * data) {
+  auto rv = ((QTreeWidget*)this_)->QTreeWidget::items(data);
+return new QList<QTreeWidgetItem *>(rv);
 }
 
 // Protected Visibility=Default Availability=Available
@@ -196,6 +239,40 @@ void C_ZN11QTreeWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event) 
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTreeWidget10metaObjectEv(void *this_) {
   return (void*)((QTreeWidget*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:257
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTreeWidget11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTreeWidget*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:257
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN11QTreeWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTreeWidget*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:257
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTreeWidget2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTreeWidget::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:257
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTreeWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTreeWidget::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -290,6 +367,25 @@ void* C_ZN11QTreeWidget16takeTopLevelItemEi(void *this_, int index) {
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QTreeWidget19indexOfTopLevelItemEP15QTreeWidgetItem(void *this_, QTreeWidgetItem * item) {
   return (int)((QTreeWidget*)this_)->indexOfTopLevelItem(item);
+}
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qtreewidget.h:278
+// [-2] void insertTopLevelItems(int, const QList<QTreeWidgetItem *> &)
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTreeWidget19insertTopLevelItemsEiRK5QListIP15QTreeWidgetItemE(void *this_, int index, const QList<QTreeWidgetItem *> & items) {
+  ((QTreeWidget*)this_)->insertTopLevelItems(index, items);
+}
+#endif // QT_VERSION >= 0x040100
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:279
+// [-2] void addTopLevelItems(const QList<QTreeWidgetItem *> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QTreeWidget16addTopLevelItemsERK5QListIP15QTreeWidgetItemE(void *this_, const QList<QTreeWidgetItem *> & items) {
+  ((QTreeWidget*)this_)->addTopLevelItems(items);
 }
 
 // Public Visibility=Default Availability=Available
@@ -502,6 +598,24 @@ bool C_ZNK11QTreeWidget14isItemSelectedEPK15QTreeWidgetItem(void *this_, const Q
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget15setItemSelectedEPK15QTreeWidgetItemb(void *this_, const QTreeWidgetItem * item, bool select_) {
   ((QTreeWidget*)this_)->setItemSelected(item, select_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:311
+// [8] QList<QTreeWidgetItem *> selectedItems()
+extern "C" Q_DECL_EXPORT
+QList<QTreeWidgetItem *>* C_ZNK11QTreeWidget13selectedItemsEv(void *this_) {
+  auto rv = ((QTreeWidget*)this_)->selectedItems();
+return new QList<QTreeWidgetItem *>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:312
+// [8] QList<QTreeWidgetItem *> findItems(const QString &, Qt::MatchFlags, int)
+extern "C" Q_DECL_EXPORT
+QList<QTreeWidgetItem *>* C_ZNK11QTreeWidget9findItemsERK7QString6QFlagsIN2Qt9MatchFlagEEi(void *this_, QString* text, QFlags<Qt::MatchFlag> flags, int column) {
+  auto rv = ((QTreeWidget*)this_)->findItems(*text, flags, column);
+return new QList<QTreeWidgetItem *>(rv);
 }
 
 // Public Visibility=Default Availability=Available

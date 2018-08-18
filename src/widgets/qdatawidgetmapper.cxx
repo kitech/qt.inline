@@ -29,6 +29,40 @@ void* C_ZNK17QDataWidgetMapper10metaObjectEv(void *this_) {
   return (void*)((QDataWidgetMapper*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QDataWidgetMapper11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QDataWidgetMapper*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN17QDataWidgetMapper11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QDataWidgetMapper*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QDataWidgetMapper2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QDataWidgetMapper::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QDataWidgetMapper6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QDataWidgetMapper::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:64
 // [-2] void QDataWidgetMapper(QObject *)

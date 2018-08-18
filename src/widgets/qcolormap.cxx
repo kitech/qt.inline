@@ -16,6 +16,8 @@
 class Q_DECL_EXPORT MyQColormap : public QColormap {
 public:
   virtual ~MyQColormap() {}
+// void QColormap(const QColormap &)
+MyQColormap(const QColormap & colormap) : QColormap(colormap) {}
 };
 
 // Public static Visibility=Default Availability=Available
@@ -41,6 +43,14 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QColormap8instanceEi(int screen) {
   auto rv = QColormap::instance(screen);
 return new QColormap(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolormap.h:65
+// [-2] void QColormap(const QColormap &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QColormapC2ERKS_(QColormap* colormap) {
+  return  new QColormap(*colormap);
 }
 
 // Public Visibility=Default Availability=Available
@@ -98,6 +108,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK9QColormap7colorAtEj(void *this_, uint pixel) {
   auto rv = ((QColormap*)this_)->colorAt(pixel);
 return new QColor(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolormap.h:78
+// [-2] const QVector<QColor> colormap()
+extern "C" Q_DECL_EXPORT
+void C_ZNK9QColormap8colormapEv(void *this_) {
+  auto rv = ((QColormap*)this_)->colormap();
+/*return rv;*/
 }
 
 //  main block end

@@ -19,6 +19,8 @@ public:
   virtual ~MyQSslPreSharedKeyAuthenticator() {}
 // void QSslPreSharedKeyAuthenticator()
 MyQSslPreSharedKeyAuthenticator() : QSslPreSharedKeyAuthenticator() {}
+// void QSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator &)
+MyQSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator & authenticator) : QSslPreSharedKeyAuthenticator(authenticator) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN29QSslPreSharedKeyAuthenticatorD2Ev(void *this_) {
   delete (QSslPreSharedKeyAuthenticator*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:57
+// [-2] void QSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN29QSslPreSharedKeyAuthenticatorC2ERKS_(QSslPreSharedKeyAuthenticator* authenticator) {
+  return  new QSslPreSharedKeyAuthenticator(*authenticator);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:58
 // [8] QSslPreSharedKeyAuthenticator & operator=(const QSslPreSharedKeyAuthenticator &)

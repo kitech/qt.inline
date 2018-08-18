@@ -21,8 +21,12 @@ public:
 MyQRandomGenerator(quint32 seedValue) : QRandomGenerator(seedValue) {}
 // void QRandomGenerator(const quint32 *, qsizetype)
 MyQRandomGenerator(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerator(seedBuffer, len_) {}
+// void QRandomGenerator(std::seed_seq &)
+MyQRandomGenerator(std::seed_seq & sseq) : QRandomGenerator(sseq) {}
 // void QRandomGenerator(const quint32 *, const quint32 *)
 MyQRandomGenerator(const quint32 * begin, const quint32 * end) : QRandomGenerator(begin, end) {}
+// void QRandomGenerator(const QRandomGenerator &)
+MyQRandomGenerator(const QRandomGenerator & other) : QRandomGenerator(other) {}
 // void QRandomGenerator(QRandomGenerator::System)
 MyQRandomGenerator(QRandomGenerator::System arg0) : QRandomGenerator(arg0) {}
 };
@@ -44,11 +48,27 @@ void* C_ZN16QRandomGeneratorC2EPKjx(const quint32 * seedBuffer, qsizetype len_) 
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:71
+// [-2] void QRandomGenerator(std::seed_seq &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QRandomGeneratorC2ERSt8seed_seq(std::seed_seq & sseq) {
+  return  new QRandomGenerator(sseq);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:72
 // [-2] void QRandomGenerator(const quint32 *, const quint32 *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin, const quint32 * end) {
   return  new QRandomGenerator(begin, end);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:75
+// [-2] void QRandomGenerator(const QRandomGenerator &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QRandomGeneratorC2ERKS_(QRandomGenerator* other) {
+  return  new QRandomGenerator(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -146,6 +166,14 @@ QRandomGenerator::result_type C_ZN16QRandomGeneratorclEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRandomGenerator4seedEj(void *this_, quint32 s) {
   ((QRandomGenerator*)this_)->seed(s);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:168
+// [-2] void seed(std::seed_seq &)
+extern "C" Q_DECL_EXPORT
+void C_ZN16QRandomGenerator4seedERSt8seed_seq(void *this_, std::seed_seq & sseq) {
+  ((QRandomGenerator*)this_)->seed(sseq);
 }
 
 // Public Visibility=Default Availability=Available

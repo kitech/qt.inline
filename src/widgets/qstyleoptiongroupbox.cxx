@@ -19,6 +19,8 @@ public:
   virtual ~MyQStyleOptionGroupBox() {}
 // void QStyleOptionGroupBox()
 MyQStyleOptionGroupBox() : QStyleOptionGroupBox() {}
+// void QStyleOptionGroupBox(const QStyleOptionGroupBox &)
+MyQStyleOptionGroupBox(const QStyleOptionGroupBox & other) : QStyleOptionGroupBox(other) {}
 // void QStyleOptionGroupBox(int)
 MyQStyleOptionGroupBox(int version) : QStyleOptionGroupBox(version) {}
 };
@@ -29,6 +31,14 @@ MyQStyleOptionGroupBox(int version) : QStyleOptionGroupBox(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionGroupBoxC2Ev() {
   return  new QStyleOptionGroupBox();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:640
+// [-2] void QStyleOptionGroupBox(const QStyleOptionGroupBox &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QStyleOptionGroupBoxC2ERKS_(QStyleOptionGroupBox* other) {
+  return  new QStyleOptionGroupBox(*other);
 }
 
 

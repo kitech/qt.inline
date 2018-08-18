@@ -18,6 +18,8 @@ public:
   virtual ~MyQAbstractItemDelegate() {}
 // void QAbstractItemDelegate(QObject *)
 MyQAbstractItemDelegate(QObject * parent) : QAbstractItemDelegate(parent) {}
+// void QAbstractItemDelegate(QObjectPrivate &, QObject *)
+MyQAbstractItemDelegate(QObjectPrivate & arg0, QObject * parent) : QAbstractItemDelegate(arg0, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -26,6 +28,40 @@ MyQAbstractItemDelegate(QObject * parent) : QAbstractItemDelegate(parent) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QAbstractItemDelegate10metaObjectEv(void *this_) {
   return (void*)((QAbstractItemDelegate*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QAbstractItemDelegate11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAbstractItemDelegate*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN21QAbstractItemDelegate11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAbstractItemDelegate*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QAbstractItemDelegate2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractItemDelegate::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QAbstractItemDelegate6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractItemDelegate::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -130,6 +166,15 @@ bool C_ZN21QAbstractItemDelegate9helpEventEP10QHelpEventP17QAbstractItemViewRK20
   return (bool)((QAbstractItemDelegate*)this_)->helpEvent(event, view, *option, *index);
 }
 #endif // QT_VERSION >= 0x040300
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:114
+// [8] QVector<int> paintingRoles()
+extern "C" Q_DECL_EXPORT
+void C_ZNK21QAbstractItemDelegate13paintingRolesEv(void *this_) {
+  auto rv = ((QAbstractItemDelegate*)this_)->paintingRoles();
+/*return rv;*/
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:117

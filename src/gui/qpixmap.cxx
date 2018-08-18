@@ -18,6 +18,8 @@ public:
   virtual ~MyQPixmap() {}
 // void QPixmap()
 MyQPixmap() : QPixmap() {}
+// void QPixmap(QPlatformPixmap *)
+MyQPixmap(QPlatformPixmap * data) : QPixmap(data) {}
 // void QPixmap(int, int)
 MyQPixmap(int w, int h) : QPixmap(w, h) {}
 // void QPixmap(const QSize &)
@@ -26,6 +28,8 @@ MyQPixmap(const QSize & arg0) : QPixmap(arg0) {}
 MyQPixmap(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) : QPixmap(fileName, format, flags) {}
 // void QPixmap(const char *const *)
 MyQPixmap(char** xpm) : QPixmap(xpm) {}
+// void QPixmap(const QPixmap &)
+MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) const{
@@ -81,6 +85,15 @@ void* C_ZN7QPixmapC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:65
+// [-2] void QPixmap(QPlatformPixmap *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QPixmapC2EP15QPlatformPixmap(QPlatformPixmap * data) {
+  auto _nilp = (MyQPixmap*)(0);
+  return  new MyQPixmap(data);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:66
 // [-2] void QPixmap(int, int)
 extern "C" Q_DECL_EXPORT
@@ -114,6 +127,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QPixmapC2EPKPKc(char** xpm) {
   auto _nilp = (MyQPixmap*)(0);
   return  new MyQPixmap(xpm);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:72
+// [-2] void QPixmap(const QPixmap &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QPixmapC2ERKS_(QPixmap* arg0) {
+  auto _nilp = (MyQPixmap*)(0);
+  return  new MyQPixmap(*arg0);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -584,6 +606,23 @@ void* C_ZNK7QPixmap11paintEngineEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QPixmapntEv(void *this_) {
   return (bool)((QPixmap*)this_)->operator!();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:198
+// [8] QPlatformPixmap * handle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK7QPixmap6handleEv(void *this_) {
+  return (void*)((QPixmap*)this_)->handle();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:202
+// [8] QPixmap::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QPixmap8data_ptrEv(void *this_) {
+  auto& rv = ((QPixmap*)this_)->data_ptr();
+return &rv;
 }
 
 //  main block end

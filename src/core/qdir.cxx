@@ -16,11 +16,23 @@
 class Q_DECL_EXPORT MyQDir : public QDir {
 public:
   virtual ~MyQDir() {}
+// void QDir(const QDir &)
+MyQDir(const QDir & arg0) : QDir(arg0) {}
 // void QDir(const QString &)
 MyQDir(const QString & path) : QDir(path) {}
 // void QDir(const QString &, const QString &, QDir::SortFlags, QDir::Filters)
 MyQDir(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) : QDir(path, nameFilter, sort, filter) {}
+// void QDir(QDirPrivate &)
+MyQDir(QDirPrivate & d) : QDir(d) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:101
+// [-2] void QDir(const QDir &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QDirC2ERKS_(QDir* arg0) {
+  return  new QDir(*arg0);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:102

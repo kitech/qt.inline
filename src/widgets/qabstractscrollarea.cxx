@@ -18,6 +18,8 @@ public:
   virtual ~MyQAbstractScrollArea() {}
 // void QAbstractScrollArea(QWidget *)
 MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
+// void QAbstractScrollArea(QAbstractScrollAreaPrivate &, QWidget *)
+MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbstractScrollArea(dd, parent) {}
 // Protected Visibility=Default Availability=Available
 // void setViewportMargins(int, int, int, int)
   virtual void setViewportMargins(int left, int top, int right, int bottom) {
@@ -462,6 +464,40 @@ return new QSize(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractScrollArea10metaObjectEv(void *this_) {
   return (void*)((QAbstractScrollArea*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractscrollarea.h:57
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QAbstractScrollArea11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAbstractScrollArea*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractscrollarea.h:57
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN19QAbstractScrollArea11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAbstractScrollArea*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractscrollarea.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QAbstractScrollArea2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractScrollArea::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractscrollarea.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QAbstractScrollArea6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractScrollArea::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

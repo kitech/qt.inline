@@ -19,6 +19,8 @@ public:
   virtual ~MyQWebEngineContextMenuData() {}
 // void QWebEngineContextMenuData()
 MyQWebEngineContextMenuData() : QWebEngineContextMenuData() {}
+// void QWebEngineContextMenuData(const QWebEngineContextMenuData &)
+MyQWebEngineContextMenuData(const QWebEngineContextMenuData & other) : QWebEngineContextMenuData(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQWebEngineContextMenuData() : QWebEngineContextMenuData() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QWebEngineContextMenuDataC2Ev() {
   return  new QWebEngineContextMenuData();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:57
+// [-2] void QWebEngineContextMenuData(const QWebEngineContextMenuData &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN25QWebEngineContextMenuDataC2ERKS_(QWebEngineContextMenuData* other) {
+  return  new QWebEngineContextMenuData(*other);
 }
 
 // Public Visibility=Default Availability=Available

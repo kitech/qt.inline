@@ -28,6 +28,10 @@ MyQPalette(const QColor & button, const QColor & window) : QPalette(button, wind
 MyQPalette(const QBrush & windowText, const QBrush & button, const QBrush & light, const QBrush & dark, const QBrush & mid, const QBrush & text, const QBrush & bright_text, const QBrush & base, const QBrush & window) : QPalette(windowText, button, light, dark, mid, text, bright_text, base, window) {}
 // void QPalette(const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &)
 MyQPalette(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base) : QPalette(windowText, window, light, dark, mid, text, base) {}
+// void QPalette(const QPalette &)
+MyQPalette(const QPalette & palette) : QPalette(palette) {}
+// void QPalette(QPalette &&)
+MyQPalette(QPalette && other) : QPalette(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -79,6 +83,14 @@ void* C_ZN8QPaletteC2ERK6QColorS2_S2_S2_S2_S2_S2_(QColor* windowText, QColor* wi
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:67
+// [-2] void QPalette(const QPalette &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QPaletteC2ERKS_(QPalette* palette) {
+  return  new QPalette(*palette);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:68
 // [-2] void ~QPalette()
 extern "C" Q_DECL_EXPORT
@@ -93,6 +105,17 @@ void* C_ZN8QPaletteaSERKS_(void *this_, QPalette* palette) {
   auto& rv = ((QPalette*)this_)->operator=(*palette);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtGui/qpalette.h:71
+// [-2] void QPalette(QPalette &&)
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QPaletteC2EOS_(QPalette && other) {
+  return  new QPalette(other);
+}
+#endif // QT_VERSION >= 0x050400
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:74

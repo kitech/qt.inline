@@ -21,6 +21,8 @@ public:
 MyQStaticText() : QStaticText() {}
 // void QStaticText(const QString &)
 MyQStaticText(const QString & text) : QStaticText(text) {}
+// void QStaticText(const QStaticText &)
+MyQStaticText(const QStaticText & other) : QStaticText(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +39,14 @@ void* C_ZN11QStaticTextC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStaticTextC2ERK7QString(QString* text) {
   return  new QStaticText(*text);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:66
+// [-2] void QStaticText(const QStaticText &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QStaticTextC2ERKS_(QStaticText* other) {
+  return  new QStaticText(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

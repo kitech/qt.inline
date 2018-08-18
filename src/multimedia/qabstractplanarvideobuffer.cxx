@@ -19,6 +19,8 @@ public:
   virtual ~MyQAbstractPlanarVideoBuffer() {}
 // void QAbstractPlanarVideoBuffer(QAbstractVideoBuffer::HandleType)
 MyQAbstractPlanarVideoBuffer(QAbstractVideoBuffer::HandleType type_) : QAbstractPlanarVideoBuffer(type_) {}
+// void QAbstractPlanarVideoBuffer(QAbstractPlanarVideoBufferPrivate &, QAbstractVideoBuffer::HandleType)
+MyQAbstractPlanarVideoBuffer(QAbstractPlanarVideoBufferPrivate & dd, QAbstractVideoBuffer::HandleType type_) : QAbstractPlanarVideoBuffer(dd, type_) {}
 };
 
 // Public Visibility=Default Availability=Available

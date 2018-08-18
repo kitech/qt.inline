@@ -64,6 +64,15 @@ return new QMimeType(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedatabase.h:76
+// [-2] QList<QMimeType> mimeTypesForFileName(const QString &)
+extern "C" Q_DECL_EXPORT
+QList<QMimeType>* C_ZNK13QMimeDatabase20mimeTypesForFileNameERK7QString(void *this_, QString* fileName) {
+  auto rv = ((QMimeDatabase*)this_)->mimeTypesForFileName(*fileName);
+return new QList<QMimeType>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:78
 // [8] QMimeType mimeTypeForData(const QByteArray &)
 extern "C" Q_DECL_EXPORT
@@ -115,6 +124,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMimeDatabase17suffixForFileNameERK7QString(void *this_, QString* fileName) {
   auto rv = ((QMimeDatabase*)this_)->suffixForFileName(*fileName);
 return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedatabase.h:87
+// [-2] QList<QMimeType> allMimeTypes()
+extern "C" Q_DECL_EXPORT
+QList<QMimeType>* C_ZNK13QMimeDatabase12allMimeTypesEv(void *this_) {
+  auto rv = ((QMimeDatabase*)this_)->allMimeTypes();
+return new QList<QMimeType>(rv);
 }
 
 //  main block end

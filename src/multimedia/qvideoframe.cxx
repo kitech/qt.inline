@@ -24,6 +24,8 @@ MyQVideoFrame(QAbstractVideoBuffer * buffer, const QSize & size, QVideoFrame::Pi
 MyQVideoFrame(int bytes, const QSize & size, int bytesPerLine, QVideoFrame::PixelFormat format) : QVideoFrame(bytes, size, bytesPerLine, format) {}
 // void QVideoFrame(const QImage &)
 MyQVideoFrame(const QImage & image) : QVideoFrame(image) {}
+// void QVideoFrame(const QVideoFrame &)
+MyQVideoFrame(const QVideoFrame & other) : QVideoFrame(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -56,6 +58,14 @@ void* C_ZN11QVideoFrameC2EiRK5QSizeiNS_11PixelFormatE(int bytes, QSize* size, in
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QVideoFrameC2ERK6QImage(QImage* image) {
   return  new QVideoFrame(*image);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoframe.h:115
+// [-2] void QVideoFrame(const QVideoFrame &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QVideoFrameC2ERKS_(QVideoFrame* other) {
+  return  new QVideoFrame(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -318,6 +328,15 @@ qint64 C_ZNK11QVideoFrame7endTimeEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN11QVideoFrame10setEndTimeEx(void *this_, qint64 time) {
   ((QVideoFrame*)this_)->setEndTime(time);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoframe.h:162
+// [8] QVariantMap availableMetaData()
+extern "C" Q_DECL_EXPORT
+QVariantMap* C_ZNK11QVideoFrame17availableMetaDataEv(void *this_) {
+  auto rv = ((QVideoFrame*)this_)->availableMetaData();
+return new QVariantMap(rv);
 }
 
 // Public Visibility=Default Availability=Available

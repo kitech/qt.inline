@@ -55,6 +55,23 @@ void C_ZN16QTextTableFormat10setColumnsEi(void *this_, int columns) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:895
+// [-2] void setColumnWidthConstraints(const QVector<QTextLength> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN16QTextTableFormat25setColumnWidthConstraintsERK7QVectorI11QTextLengthE(void *this_, const QVector<QTextLength> & constraints) {
+  ((QTextTableFormat*)this_)->setColumnWidthConstraints(constraints);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:898
+// [8] QVector<QTextLength> columnWidthConstraints()
+extern "C" Q_DECL_EXPORT
+void C_ZNK16QTextTableFormat22columnWidthConstraintsEv(void *this_) {
+  auto rv = ((QTextTableFormat*)this_)->columnWidthConstraints();
+/*return rv;*/
+}
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:901
 // [-2] void clearColumnWidthConstraints()
 extern "C" Q_DECL_EXPORT

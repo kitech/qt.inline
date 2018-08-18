@@ -21,6 +21,8 @@ public:
 MyQRegularExpression() : QRegularExpression() {}
 // void QRegularExpression(const QString &, QRegularExpression::PatternOptions)
 MyQRegularExpression(const QString & pattern, QFlags<QRegularExpression::PatternOption> options) : QRegularExpression(pattern, options) {}
+// void QRegularExpression(const QRegularExpression &)
+MyQRegularExpression(const QRegularExpression & re) : QRegularExpression(re) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -54,6 +56,14 @@ void* C_ZN18QRegularExpressionC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QRegularExpressionC2ERK7QString6QFlagsINS_13PatternOptionEE(QString* pattern, QFlags<QRegularExpression::PatternOption> options) {
   return  new QRegularExpression(*pattern, options);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:86
+// [-2] void QRegularExpression(const QRegularExpression &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QRegularExpressionC2ERKS_(QRegularExpression* re) {
+  return  new QRegularExpression(*re);
 }
 
 // Public Visibility=Default Availability=Available

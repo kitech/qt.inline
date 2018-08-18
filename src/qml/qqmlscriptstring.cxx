@@ -18,6 +18,8 @@ public:
   virtual ~MyQQmlScriptString() {}
 // void QQmlScriptString()
 MyQQmlScriptString() : QQmlScriptString() {}
+// void QQmlScriptString(const QQmlScriptString &)
+MyQQmlScriptString(const QQmlScriptString & arg0) : QQmlScriptString(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQQmlScriptString() : QQmlScriptString() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlScriptStringC2Ev() {
   return  new QQmlScriptString();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlscriptstring.h:62
+// [-2] void QQmlScriptString(const QQmlScriptString &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QQmlScriptStringC2ERKS_(QQmlScriptString* arg0) {
+  return  new QQmlScriptString(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

@@ -18,6 +18,8 @@ public:
   virtual ~MyQEvent() {}
 // void QEvent(QEvent::Type)
 MyQEvent(QEvent::Type type_) : QEvent(type_) {}
+// void QEvent(const QEvent &)
+MyQEvent(const QEvent & other) : QEvent(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQEvent(QEvent::Type type_) : QEvent(type_) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QEventC2ENS_4TypeE(QEvent::Type type_) {
   return  new QEvent(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:298
+// [-2] void QEvent(const QEvent &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QEventC2ERKS_(QEvent* other) {
+  return  new QEvent(*other);
 }
 
 // Public virtual Visibility=Default Availability=Available

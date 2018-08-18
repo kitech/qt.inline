@@ -26,6 +26,8 @@ MyQMediaServiceProviderHint(const QByteArray & device) : QMediaServiceProviderHi
 MyQMediaServiceProviderHint(QCamera::Position position) : QMediaServiceProviderHint(position) {}
 // void QMediaServiceProviderHint(QMediaServiceProviderHint::Features)
 MyQMediaServiceProviderHint(QFlags<QMediaServiceProviderHint::Feature> features) : QMediaServiceProviderHint(features) {}
+// void QMediaServiceProviderHint(const QMediaServiceProviderHint &)
+MyQMediaServiceProviderHint(const QMediaServiceProviderHint & other) : QMediaServiceProviderHint(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -66,6 +68,14 @@ void* C_ZN25QMediaServiceProviderHintC2EN7QCamera8PositionE(QCamera::Position po
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QMediaServiceProviderHintC2E6QFlagsINS_7FeatureEE(QFlags<QMediaServiceProviderHint::Feature> features) {
   return  new QMediaServiceProviderHint(features);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:79
+// [-2] void QMediaServiceProviderHint(const QMediaServiceProviderHint &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN25QMediaServiceProviderHintC2ERKS_(QMediaServiceProviderHint* other) {
+  return  new QMediaServiceProviderHint(*other);
 }
 
 // Public Visibility=Default Availability=Available

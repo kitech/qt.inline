@@ -18,6 +18,8 @@ public:
   virtual ~MyQDnsMailExchangeRecord() {}
 // void QDnsMailExchangeRecord()
 MyQDnsMailExchangeRecord() : QDnsMailExchangeRecord() {}
+// void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &)
+MyQDnsMailExchangeRecord(const QDnsMailExchangeRecord & other) : QDnsMailExchangeRecord(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQDnsMailExchangeRecord() : QDnsMailExchangeRecord() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordC2Ev() {
   return  new QDnsMailExchangeRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:112
+// [-2] void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QDnsMailExchangeRecordC2ERKS_(QDnsMailExchangeRecord* other) {
+  return  new QDnsMailExchangeRecord(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

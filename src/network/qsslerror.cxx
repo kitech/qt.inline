@@ -23,6 +23,8 @@ MyQSslError() : QSslError() {}
 MyQSslError(QSslError::SslError error) : QSslError(error) {}
 // void QSslError(QSslError::SslError, const QSslCertificate &)
 MyQSslError(QSslError::SslError error, const QSslCertificate & certificate) : QSslError(error, certificate) {}
+// void QSslError(const QSslError &)
+MyQSslError(const QSslError & other) : QSslError(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,14 @@ void* C_ZN9QSslErrorC2ENS_8SslErrorE(QSslError::SslError error) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSslErrorC2ENS_8SslErrorERK15QSslCertificate(QSslError::SslError error, QSslCertificate* certificate) {
   return  new QSslError(error, *certificate);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:92
+// [-2] void QSslError(const QSslError &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QSslErrorC2ERKS_(QSslError* other) {
+  return  new QSslError(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

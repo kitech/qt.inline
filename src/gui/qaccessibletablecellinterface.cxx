@@ -34,6 +34,24 @@ bool C_ZNK29QAccessibleTableCellInterface10isSelectedEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:582
+// [-2] QList<QAccessibleInterface *> columnHeaderCells()
+extern "C" Q_DECL_EXPORT
+QList<QAccessibleInterface *>* C_ZNK29QAccessibleTableCellInterface17columnHeaderCellsEv(void *this_) {
+  auto rv = ((QAccessibleTableCellInterface*)this_)->columnHeaderCells();
+return new QList<QAccessibleInterface *>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:583
+// [-2] QList<QAccessibleInterface *> rowHeaderCells()
+extern "C" Q_DECL_EXPORT
+QList<QAccessibleInterface *>* C_ZNK29QAccessibleTableCellInterface14rowHeaderCellsEv(void *this_) {
+  auto rv = ((QAccessibleTableCellInterface*)this_)->rowHeaderCells();
+return new QList<QAccessibleInterface *>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:584
 // [4] int columnIndex()
 extern "C" Q_DECL_EXPORT

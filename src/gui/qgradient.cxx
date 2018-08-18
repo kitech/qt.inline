@@ -61,6 +61,23 @@ void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, QColor* color
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:215
+// [-2] void setStops(const QGradientStops &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QGradient8setStopsERK7QVectorI5QPairId6QColorEE(void *this_, const QGradientStops & stops) {
+  ((QGradient*)this_)->setStops(stops);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:216
+// [8] QGradientStops stops()
+extern "C" Q_DECL_EXPORT
+QGradientStops* C_ZNK9QGradient5stopsEv(void *this_) {
+  auto rv = ((QGradient*)this_)->stops();
+return new QGradientStops(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtGui/qbrush.h:218
 // [4] QGradient::CoordinateMode coordinateMode()

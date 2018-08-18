@@ -20,6 +20,10 @@ public:
 MyQIcon() : QIcon() {}
 // void QIcon(const QPixmap &)
 MyQIcon(const QPixmap & pixmap) : QIcon(pixmap) {}
+// void QIcon(const QIcon &)
+MyQIcon(const QIcon & other) : QIcon(other) {}
+// void QIcon(QIcon &&)
+MyQIcon(QIcon && other) : QIcon(other) {}
 // void QIcon(const QString &)
 MyQIcon(const QString & fileName) : QIcon(fileName) {}
 // void QIcon(QIconEngine *)
@@ -40,6 +44,22 @@ void* C_ZN5QIconC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QIconC2ERK7QPixmap(QPixmap* pixmap) {
   return  new QIcon(*pixmap);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:62
+// [-2] void QIcon(const QIcon &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QIconC2ERKS_(QIcon* other) {
+  return  new QIcon(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:64
+// [-2] void QIcon(QIcon &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QIconC2EOS_(QIcon && other) {
+  return  new QIcon(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -335,5 +355,14 @@ void C_ZN5QIcon12setThemeNameERK7QString(QString* path) {
   QIcon::setThemeName(*path);
 }
 #endif // QT_VERSION >= 0x040600
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:135
+// [8] QIcon::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QIcon8data_ptrEv(void *this_) {
+  auto& rv = ((QIcon*)this_)->data_ptr();
+return &rv;
+}
 
 //  main block end

@@ -23,6 +23,8 @@ MyQSslCipher() : QSslCipher() {}
 MyQSslCipher(const QString & name) : QSslCipher(name) {}
 // void QSslCipher(const QString &, QSsl::SslProtocol)
 MyQSslCipher(const QString & name, QSsl::SslProtocol protocol) : QSslCipher(name, protocol) {}
+// void QSslCipher(const QSslCipher &)
+MyQSslCipher(const QSslCipher & other) : QSslCipher(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -50,6 +52,14 @@ void* C_ZN10QSslCipherC2ERK7QString(QString* name) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE(QString* name, QSsl::SslProtocol protocol) {
   return  new QSslCipher(*name, protocol);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:61
+// [-2] void QSslCipher(const QSslCipher &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QSslCipherC2ERKS_(QSslCipher* other) {
+  return  new QSslCipher(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

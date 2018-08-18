@@ -26,6 +26,8 @@ MyQBitmap(int w, int h) : QBitmap(w, h) {}
 MyQBitmap(const QSize & arg0) : QBitmap(arg0) {}
 // void QBitmap(const QString &, const char *)
 MyQBitmap(const QString & fileName, const char * format) : QBitmap(fileName, format) {}
+// void QBitmap(const QBitmap &)
+MyQBitmap(const QBitmap & other) : QBitmap(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -66,6 +68,14 @@ void* C_ZN7QBitmapC2ERK5QSize(QSize* arg0) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QBitmapC2ERK7QStringPKc(QString* fileName, const char * format) {
   return  new QBitmap(*fileName, format);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:61
+// [-2] void QBitmap(const QBitmap &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QBitmapC2ERKS_(QBitmap* other) {
+  return  new QBitmap(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

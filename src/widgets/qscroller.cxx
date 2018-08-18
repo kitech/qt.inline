@@ -22,6 +22,40 @@ void* C_ZNK9QScroller10metaObjectEv(void *this_) {
   return (void*)((QScroller*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:63
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QScroller11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QScroller*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:63
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QScroller11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QScroller*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:63
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QScroller2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QScroller::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:63
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QScroller6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QScroller::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:92
 // [1] bool hasScroller(QObject *)
@@ -68,6 +102,15 @@ Qt::GestureType C_ZN9QScroller14grabbedGestureEP7QObject(QObject * target) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller13ungrabGestureEP7QObject(QObject * target) {
   QScroller::ungrabGesture(target);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:103
+// [-2] QList<QScroller *> activeScrollers()
+extern "C" Q_DECL_EXPORT
+QList<QScroller *>* C_ZN9QScroller15activeScrollersEv() {
+  auto rv = QScroller::activeScrollers();
+return new QList<QScroller *>(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -139,11 +182,27 @@ return new QScrollerProperties(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:118
+// [-2] void setSnapPositionsX(const QList<qreal> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QScroller17setSnapPositionsXERK5QListIdE(void *this_, const QList<qreal> & positions) {
+  ((QScroller*)this_)->setSnapPositionsX(positions);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:119
 // [-2] void setSnapPositionsX(qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QScroller17setSnapPositionsXEdd(void *this_, qreal first, qreal interval) {
   ((QScroller*)this_)->setSnapPositionsX(first, interval);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscroller.h:120
+// [-2] void setSnapPositionsY(const QList<qreal> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QScroller17setSnapPositionsYERK5QListIdE(void *this_, const QList<qreal> & positions) {
+  ((QScroller*)this_)->setSnapPositionsY(positions);
 }
 
 // Public Visibility=Default Availability=Available

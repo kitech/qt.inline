@@ -16,9 +16,19 @@
 class Q_DECL_EXPORT MyQTextInlineObject : public QTextInlineObject {
 public:
   virtual ~MyQTextInlineObject() {}
+// void QTextInlineObject(int, QTextEngine *)
+MyQTextInlineObject(int i, QTextEngine * e) : QTextInlineObject(i, e) {}
 // void QTextInlineObject()
 MyQTextInlineObject() : QTextInlineObject() {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:71
+// [-2] void QTextInlineObject(int, QTextEngine *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QTextInlineObjectC2EiP11QTextEngine(int i, QTextEngine * e) {
+  return  new QTextInlineObject(i, e);
+}
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:72

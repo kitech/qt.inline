@@ -58,12 +58,60 @@ void C_ZN9QListData7disposeEv(void *this_) {
   ((QListData*)this_)->dispose();
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlist.h:101
+// [-2] void dispose(QListData::Data *)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QListData7disposeEPNS_4DataE(QListData::Data * d) {
+  QListData::dispose(d);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:104
 // [8] void ** erase(void **)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QListData5eraseEPPv(void *this_, void ** xi) {
   return (void*)((QListData*)this_)->erase(xi);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlist.h:105
+// [8] void ** append(int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListData6appendEi(void *this_, int n) {
+  return (void*)((QListData*)this_)->append(n);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlist.h:106
+// [8] void ** append()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListData6appendEv(void *this_) {
+  return (void*)((QListData*)this_)->append();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlist.h:107
+// [8] void ** append(const QListData &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListData6appendERKS_(void *this_, QListData* l) {
+  return (void*)((QListData*)this_)->append(*l);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlist.h:108
+// [8] void ** prepend()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListData7prependEv(void *this_) {
+  return (void*)((QListData*)this_)->prepend();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlist.h:109
+// [8] void ** insert(int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QListData6insertEi(void *this_, int i) {
+  return (void*)((QListData*)this_)->insert(i);
 }
 
 // Public Visibility=Default Availability=Available

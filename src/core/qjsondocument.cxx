@@ -23,6 +23,10 @@ MyQJsonDocument() : QJsonDocument() {}
 MyQJsonDocument(const QJsonObject & object) : QJsonDocument(object) {}
 // void QJsonDocument(const QJsonArray &)
 MyQJsonDocument(const QJsonArray & array) : QJsonDocument(array) {}
+// void QJsonDocument(const QJsonDocument &)
+MyQJsonDocument(const QJsonDocument & other) : QJsonDocument(other) {}
+// void QJsonDocument(QJsonDocument &&)
+MyQJsonDocument(QJsonDocument && other) : QJsonDocument(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -57,6 +61,14 @@ void C_ZN13QJsonDocumentD2Ev(void *this_) {
   delete (QJsonDocument*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsondocument.h:93
+// [-2] void QJsonDocument(const QJsonDocument &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QJsonDocumentC2ERKS_(QJsonDocument* other) {
+  return  new QJsonDocument(*other);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:94
 // [8] QJsonDocument & operator=(const QJsonDocument &)
 extern "C" Q_DECL_EXPORT
@@ -64,6 +76,17 @@ void* C_ZN13QJsonDocumentaSERKS_(void *this_, QJsonDocument* other) {
   auto& rv = ((QJsonDocument*)this_)->operator=(*other);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.10
+// /usr/include/qt/QtCore/qjsondocument.h:96
+// [-2] void QJsonDocument(QJsonDocument &&)
+#if QT_VERSION >= 0x050a00
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QJsonDocumentC2EOS_(QJsonDocument && other) {
+  return  new QJsonDocument(other);
+}
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:102
@@ -136,6 +159,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument9toVariantEv(void *this_) {
   auto rv = ((QJsonDocument*)this_)->toVariant();
 return new QVariant(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsondocument.h:132
+// [8] QJsonDocument fromJson(const QByteArray &, QJsonParseError *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QJsonDocument8fromJsonERK10QByteArrayP15QJsonParseError(QByteArray* json, QJsonParseError * error) {
+  auto rv = QJsonDocument::fromJson(*json, error);
+return new QJsonDocument(rv);
 }
 
 // Public Visibility=Default Availability=Available

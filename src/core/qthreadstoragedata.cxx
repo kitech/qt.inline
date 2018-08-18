@@ -16,7 +16,17 @@
 class Q_DECL_EXPORT MyQThreadStorageData : public QThreadStorageData {
 public:
   virtual ~MyQThreadStorageData() {}
+// void QThreadStorageData(void (*)(void *))
+MyQThreadStorageData(void (*func)(void *)) : QThreadStorageData(func) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthreadstorage.h:53
+// [-2] void QThreadStorageData(void (*)(void *))
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QThreadStorageDataC2EPFvPvE(void (*func)(void *)) {
+  return  new QThreadStorageData(func);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:54

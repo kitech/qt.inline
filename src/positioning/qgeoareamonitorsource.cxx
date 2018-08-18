@@ -29,6 +29,40 @@ void* C_ZNK21QGeoAreaMonitorSource10metaObjectEv(void *this_) {
   return (void*)((QGeoAreaMonitorSource*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QGeoAreaMonitorSource11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QGeoAreaMonitorSource*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN21QGeoAreaMonitorSource11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QGeoAreaMonitorSource*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QGeoAreaMonitorSource2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGeoAreaMonitorSource::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QGeoAreaMonitorSource6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGeoAreaMonitorSource::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:72
 // [-2] void QGeoAreaMonitorSource(QObject *)
@@ -133,6 +167,24 @@ bool C_ZN21QGeoAreaMonitorSource14stopMonitoringERK19QGeoAreaMonitorInfo(void *t
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QGeoAreaMonitorSource13requestUpdateERK19QGeoAreaMonitorInfoPKc(void *this_, QGeoAreaMonitorInfo* monitor, const char * signal) {
   return (bool)((QGeoAreaMonitorSource*)this_)->requestUpdate(*monitor, signal);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:91
+// [-2] QList<QGeoAreaMonitorInfo> activeMonitors()
+extern "C" Q_DECL_EXPORT
+QList<QGeoAreaMonitorInfo>* C_ZNK21QGeoAreaMonitorSource14activeMonitorsEv(void *this_) {
+  auto rv = ((QGeoAreaMonitorSource*)this_)->activeMonitors();
+return new QList<QGeoAreaMonitorInfo>(rv);
+}
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:92
+// [-2] QList<QGeoAreaMonitorInfo> activeMonitors(const QGeoShape &)
+extern "C" Q_DECL_EXPORT
+QList<QGeoAreaMonitorInfo>* C_ZNK21QGeoAreaMonitorSource14activeMonitorsERK9QGeoShape(void *this_, QGeoShape* lookupArea) {
+  auto rv = ((QGeoAreaMonitorSource*)this_)->activeMonitors(*lookupArea);
+return new QList<QGeoAreaMonitorInfo>(rv);
 }
 
 // Public Visibility=Default Availability=Available

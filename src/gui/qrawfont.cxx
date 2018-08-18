@@ -23,6 +23,8 @@ MyQRawFont() : QRawFont() {}
 MyQRawFont(const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) : QRawFont(fileName, pixelSize, hintingPreference) {}
 // void QRawFont(const QByteArray &, qreal, QFont::HintingPreference)
 MyQRawFont(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) : QRawFont(fontData, pixelSize, hintingPreference) {}
+// void QRawFont(const QRawFont &)
+MyQRawFont(const QRawFont & other) : QRawFont(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,14 @@ void* C_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE(QString* fileName, 
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(QByteArray* fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
   return  new QRawFont(*fontData, pixelSize, hintingPreference);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:81
+// [-2] void QRawFont(const QRawFont &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QRawFontC2ERKS_(QRawFont* other) {
+  return  new QRawFont(*other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -141,6 +151,33 @@ QFont::Style C_ZNK8QRawFont5styleEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QRawFont6weightEv(void *this_) {
   return (int)((QRawFont*)this_)->weight();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:102
+// [8] QVector<quint32> glyphIndexesForString(const QString &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK8QRawFont21glyphIndexesForStringERK7QString(void *this_, QString* text) {
+  auto rv = ((QRawFont*)this_)->glyphIndexesForString(*text);
+/*return rv;*/
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:103
+// [8] QVector<QPointF> advancesForGlyphIndexes(const QVector<quint32> &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *this_, const QVector<quint32> & glyphIndexes) {
+  auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(glyphIndexes);
+/*return rv;*/
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:104
+// [8] QVector<QPointF> advancesForGlyphIndexes(const QVector<quint32> &, QRawFont::LayoutFlags)
+extern "C" Q_DECL_EXPORT
+void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *this_, const QVector<quint32> & glyphIndexes, QFlags<QRawFont::LayoutFlag> layoutFlags) {
+  auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(glyphIndexes, layoutFlags);
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available
@@ -334,6 +371,15 @@ bool C_ZNK8QRawFont17supportsCharacterEj(void *this_, uint ucs4) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QRawFont17supportsCharacterE5QChar(void *this_, QChar* character) {
   return (bool)((QRawFont*)this_)->supportsCharacter(*character);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:142
+// [-2] QList<QFontDatabase::WritingSystem> supportedWritingSystems()
+extern "C" Q_DECL_EXPORT
+QList<QFontDatabase::WritingSystem>* C_ZNK8QRawFont23supportedWritingSystemsEv(void *this_) {
+  auto rv = ((QRawFont*)this_)->supportedWritingSystems();
+return new QList<QFontDatabase::WritingSystem>(rv);
 }
 
 // Public Visibility=Default Availability=Available

@@ -22,6 +22,8 @@ MyQListWidgetItem(QListWidget * view, int type_) : QListWidgetItem(view, type_) 
 MyQListWidgetItem(const QString & text, QListWidget * view, int type_) : QListWidgetItem(text, view, type_) {}
 // void QListWidgetItem(const QIcon &, const QString &, QListWidget *, int)
 MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * view, int type_) : QListWidgetItem(icon, text, view, type_) {}
+// void QListWidgetItem(const QListWidgetItem &)
+MyQListWidgetItem(const QListWidgetItem & other) : QListWidgetItem(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,17 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QListWidgetItemC2ERK5QIconRK7QStringP11QListWidgeti(QIcon* icon, QString* text, QListWidget * view, int type_) {
   return  new QListWidgetItem(*icon, *text, view, type_);
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qlistwidget.h:68
+// [-2] void QListWidgetItem(const QListWidgetItem &)
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QListWidgetItemC2ERKS_(QListWidgetItem* other) {
+  return  new QListWidgetItem(*other);
+}
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:69

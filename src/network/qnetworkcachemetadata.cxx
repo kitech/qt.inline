@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkCacheMetaData() {}
 // void QNetworkCacheMetaData()
 MyQNetworkCacheMetaData() : QNetworkCacheMetaData() {}
+// void QNetworkCacheMetaData(const QNetworkCacheMetaData &)
+MyQNetworkCacheMetaData(const QNetworkCacheMetaData & other) : QNetworkCacheMetaData(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQNetworkCacheMetaData() : QNetworkCacheMetaData() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkCacheMetaDataC2Ev() {
   return  new QNetworkCacheMetaData();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:67
+// [-2] void QNetworkCacheMetaData(const QNetworkCacheMetaData &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QNetworkCacheMetaDataC2ERKS_(QNetworkCacheMetaData* other) {
+  return  new QNetworkCacheMetaData(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -107,6 +117,23 @@ void C_ZN21QNetworkCacheMetaData6setUrlERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:87
+// [-2] QNetworkCacheMetaData::RawHeaderList rawHeaders()
+extern "C" Q_DECL_EXPORT
+QNetworkCacheMetaData::RawHeaderList* C_ZNK21QNetworkCacheMetaData10rawHeadersEv(void *this_) {
+  auto rv = ((QNetworkCacheMetaData*)this_)->rawHeaders();
+return new QNetworkCacheMetaData::RawHeaderList(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:88
+// [-2] void setRawHeaders(const QNetworkCacheMetaData::RawHeaderList &)
+extern "C" Q_DECL_EXPORT
+void C_ZN21QNetworkCacheMetaData13setRawHeadersERK5QListI5QPairI10QByteArrayS2_EE(void *this_, const QNetworkCacheMetaData::RawHeaderList & headers) {
+  ((QNetworkCacheMetaData*)this_)->setRawHeaders(headers);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:90
 // [8] QDateTime lastModified()
 extern "C" Q_DECL_EXPORT
@@ -154,6 +181,26 @@ bool C_ZNK21QNetworkCacheMetaData10saveToDiskEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData13setSaveToDiskEb(void *this_, bool allow) {
   ((QNetworkCacheMetaData*)this_)->setSaveToDisk(allow);
+}
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:99
+// [-2] QNetworkCacheMetaData::AttributesMap attributes()
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QNetworkCacheMetaData::AttributesMap* C_ZNK21QNetworkCacheMetaData10attributesEv(void *this_) {
+  auto rv = ((QNetworkCacheMetaData*)this_)->attributes();
+return new QNetworkCacheMetaData::AttributesMap(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:100
+// [-2] void setAttributes(const QNetworkCacheMetaData::AttributesMap &)
+extern "C" Q_DECL_EXPORT
+void C_ZN21QNetworkCacheMetaData13setAttributesERK5QHashIN15QNetworkRequest9AttributeE8QVariantE(void *this_, const QNetworkCacheMetaData::AttributesMap & attributes) {
+  ((QNetworkCacheMetaData*)this_)->setAttributes(attributes);
 }
 
 //  main block end

@@ -324,6 +324,8 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
   }
   }
 
+// void QTextEdit(QTextEditPrivate &, QWidget *)
+MyQTextEdit(QTextEditPrivate & dd, QWidget * parent) : QTextEdit(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
@@ -592,6 +594,40 @@ void C_ZN9QTextEdit7zoomInFEf(void *this_, float range_) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTextEdit10metaObjectEv(void *this_) {
   return (void*)((QTextEdit*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:63
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTextEdit11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTextEdit*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:63
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QTextEdit11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTextEdit*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:63
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTextEdit2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextEdit::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:63
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTextEdit6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTextEdit::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -1109,6 +1145,26 @@ void C_ZN9QTextEdit17setAcceptRichTextEb(void *this_, bool accept) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:210
+// [-2] void setExtraSelections(const QList<QTextEdit::ExtraSelection> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTextEdit18setExtraSelectionsERK5QListINS_14ExtraSelectionEE(void *this_, const QList<QTextEdit::ExtraSelection> & selections) {
+  ((QTextEdit*)this_)->setExtraSelections(selections);
+}
+
+// Public Visibility=Default Availability=Available
+// since 4.2
+// /usr/include/qt/QtWidgets/qtextedit.h:211
+// [-2] QList<QTextEdit::ExtraSelection> extraSelections()
+#if QT_VERSION >= 0x040200
+extern "C" Q_DECL_EXPORT
+QList<QTextEdit::ExtraSelection>* C_ZNK9QTextEdit15extraSelectionsEv(void *this_) {
+  auto rv = ((QTextEdit*)this_)->extraSelections();
+return new QList<QTextEdit::ExtraSelection>(rv);
+}
+#endif // QT_VERSION >= 0x040200
+
+// Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtextedit.h:213
 // [-2] void moveCursor(QTextCursor::MoveOperation, QTextCursor::MoveMode)
@@ -1337,6 +1393,14 @@ void C_ZN9QTextEdit15insertPlainTextERK7QString(void *this_, QString* text) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit10insertHtmlERK7QString(void *this_, QString* text) {
   ((QTextEdit*)this_)->insertHtml(*text);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:256
+// [-2] void append(const QString &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTextEdit6appendERK7QString(void *this_, QString* text) {
+  ((QTextEdit*)this_)->append(*text);
 }
 
 // Public Visibility=Default Availability=Available

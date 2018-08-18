@@ -239,6 +239,8 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
   }
   }
 
+// void QWindow(QWindowPrivate &, QWindow *)
+MyQWindow(QWindowPrivate & dd, QWindow * parent) : QWindow(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -391,6 +393,40 @@ bool C_ZN7QWindow11nativeEventERK10QByteArrayPvPl(void *this_, QByteArray* event
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWindow10metaObjectEv(void *this_) {
   return (void*)((QWindow*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:97
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QWindow11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QWindow*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:97
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN7QWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QWindow*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:97
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QWindow2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWindow::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:97
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QWindow6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWindow::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -1001,6 +1037,14 @@ return new QIcon(rv);
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWindow7destroyEv(void *this_) {
   ((QWindow*)this_)->destroy();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:251
+// [8] QPlatformWindow * handle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK7QWindow6handleEv(void *this_) {
+  return (void*)((QWindow*)this_)->handle();
 }
 
 // Public Visibility=Default Availability=Available

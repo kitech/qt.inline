@@ -25,6 +25,8 @@ MyQCommandLineOption(const QStringList & names) : QCommandLineOption(names) {}
 MyQCommandLineOption(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(name, description, valueName, defaultValue) {}
 // void QCommandLineOption(const QStringList &, const QString &, const QString &, const QString &)
 MyQCommandLineOption(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(names, description, valueName, defaultValue) {}
+// void QCommandLineOption(const QCommandLineOption &)
+MyQCommandLineOption(const QCommandLineOption & other) : QCommandLineOption(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -57,6 +59,14 @@ void* C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(QString* name, QString* des
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_(QStringList* names, QString* description, QString* valueName, QString* defaultValue) {
   return  new QCommandLineOption(*names, *description, *valueName, *defaultValue);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:69
+// [-2] void QCommandLineOption(const QCommandLineOption &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QCommandLineOptionC2ERKS_(QCommandLineOption* other) {
+  return  new QCommandLineOption(*other);
 }
 
 // Public Visibility=Default Availability=Available

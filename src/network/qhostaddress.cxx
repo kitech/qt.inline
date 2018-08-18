@@ -24,8 +24,14 @@ MyQHostAddress(quint32 ip4Addr) : QHostAddress(ip4Addr) {}
 MyQHostAddress(quint8 * ip6Addr) : QHostAddress(ip6Addr) {}
 // void QHostAddress(const quint8 *)
 MyQHostAddress(const quint8 * ip6Addr) : QHostAddress(ip6Addr) {}
+// void QHostAddress(const Q_IPV6ADDR &)
+MyQHostAddress(const Q_IPV6ADDR & ip6Addr) : QHostAddress(ip6Addr) {}
+// void QHostAddress(const sockaddr *)
+MyQHostAddress(const sockaddr * address) : QHostAddress(address) {}
 // void QHostAddress(const QString &)
 MyQHostAddress(const QString & address) : QHostAddress(address) {}
+// void QHostAddress(const QHostAddress &)
+MyQHostAddress(const QHostAddress & copy) : QHostAddress(copy) {}
 // void QHostAddress(QHostAddress::SpecialAddress)
 MyQHostAddress(QHostAddress::SpecialAddress address) : QHostAddress(address) {}
 };
@@ -66,11 +72,35 @@ void* C_ZN12QHostAddressC2EPKh(const quint8 * ip6Addr) {
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:98
+// [-2] void QHostAddress(const Q_IPV6ADDR &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QHostAddressC2ERK12QIPv6Address(const Q_IPV6ADDR & ip6Addr) {
+  return  new QHostAddress(ip6Addr);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:99
+// [-2] void QHostAddress(const sockaddr *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QHostAddressC2EPK8sockaddr(const sockaddr * address) {
+  return  new QHostAddress(address);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:100
 // [-2] void QHostAddress(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QHostAddressC2ERK7QString(QString* address) {
   return  new QHostAddress(*address);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:101
+// [-2] void QHostAddress(const QHostAddress &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QHostAddressC2ERKS_(QHostAddress* copy) {
+  return  new QHostAddress(*copy);
 }
 
 // Public Visibility=Default Availability=Available
@@ -161,6 +191,22 @@ void C_ZN12QHostAddress10setAddressEPKh(void *this_, const quint8 * ip6Addr) {
   ((QHostAddress*)this_)->setAddress(ip6Addr);
 }
 #endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:122
+// [-2] void setAddress(const Q_IPV6ADDR &)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QHostAddress10setAddressERK12QIPv6Address(void *this_, const Q_IPV6ADDR & ip6Addr) {
+  ((QHostAddress*)this_)->setAddress(ip6Addr);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:123
+// [-2] void setAddress(const sockaddr *)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QHostAddress10setAddressEPK8sockaddr(void *this_, const sockaddr * address) {
+  ((QHostAddress*)this_)->setAddress(address);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:124
@@ -311,6 +357,17 @@ bool C_ZNK12QHostAddress10isInSubnetERKS_i(void *this_, QHostAddress* subnet, in
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtNetwork/qhostaddress.h:148
+// [1] bool isInSubnet(const QPair<QHostAddress, int> &)
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QHostAddress10isInSubnetERK5QPairIS_iE(void *this_, const QPair<QHostAddress, int> & subnet) {
+  return (bool)((QHostAddress*)this_)->isInSubnet(subnet);
+}
+#endif // QT_VERSION >= 0x040500
+
+// Public Visibility=Default Availability=Available
 // since 5.0
 // /usr/include/qt/QtNetwork/qhostaddress.h:150
 // [1] bool isLoopback()
@@ -331,5 +388,17 @@ bool C_ZNK12QHostAddress11isMulticastEv(void *this_) {
   return (bool)((QHostAddress*)this_)->isMulticast();
 }
 #endif // QT_VERSION >= 0x050600
+
+// Public static Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtNetwork/qhostaddress.h:153
+// [-2] QPair<QHostAddress, int> parseSubnet(const QString &)
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+void C_ZN12QHostAddress11parseSubnetERK7QString(QString* subnet) {
+  auto rv = QHostAddress::parseSubnet(*subnet);
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x040500
 
 //  main block end

@@ -101,6 +101,14 @@ void* C_ZN5QtQml10qmlContextEPK7QObject(const QObject * arg0) {
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlprivate.h:97
+// [-2] void qdeclarativeelement_destructor(QObject *)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QQmlPrivate30qdeclarativeelement_destructorEP7QObject(QObject * arg0) {
+  QQmlPrivate::qdeclarativeelement_destructor(arg0);
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlprivate.h:307
 // [4] int qmlregister(QQmlPrivate::RegistrationType, void *)
 extern "C" Q_DECL_EXPORT

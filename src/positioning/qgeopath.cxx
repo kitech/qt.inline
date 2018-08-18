@@ -19,6 +19,10 @@ public:
   virtual ~MyQGeoPath() {}
 // void QGeoPath()
 MyQGeoPath() : QGeoPath() {}
+// void QGeoPath(const QList<QGeoCoordinate> &, const qreal &)
+MyQGeoPath(const QList<QGeoCoordinate> & path, const qreal & width) : QGeoPath(path, width) {}
+// void QGeoPath(const QGeoPath &)
+MyQGeoPath(const QGeoPath & other) : QGeoPath(other) {}
 // void QGeoPath(const QGeoShape &)
 MyQGeoPath(const QGeoShape & other) : QGeoPath(other) {}
 };
@@ -29,6 +33,22 @@ MyQGeoPath(const QGeoShape & other) : QGeoPath(other) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QGeoPathC2Ev() {
   return  new QGeoPath();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopath.h:58
+// [-2] void QGeoPath(const QList<QGeoCoordinate> &, const qreal &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QGeoPathC2ERK5QListI14QGeoCoordinateERKd(const QList<QGeoCoordinate> & path, const qreal & width) {
+  return  new QGeoPath(path, width);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopath.h:59
+// [-2] void QGeoPath(const QGeoPath &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QGeoPathC2ERKS_(QGeoPath* other) {
+  return  new QGeoPath(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -69,6 +89,23 @@ bool C_ZNK8QGeoPatheqERKS_(void *this_, QGeoPath* other) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QGeoPathneERKS_(void *this_, QGeoPath* other) {
   return (bool)((QGeoPath*)this_)->operator!=(*other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopath.h:72
+// [-2] void setPath(const QList<QGeoCoordinate> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN8QGeoPath7setPathERK5QListI14QGeoCoordinateE(void *this_, const QList<QGeoCoordinate> & path) {
+  ((QGeoPath*)this_)->setPath(path);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopath.h:73
+// [8] const QList<QGeoCoordinate> & path()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK8QGeoPath4pathEv(void *this_) {
+  auto& rv = ((QGeoPath*)this_)->path();
+return new QList<QGeoCoordinate>(rv);
 }
 
 // Public Visibility=Default Availability=Available

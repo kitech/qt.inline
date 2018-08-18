@@ -21,6 +21,8 @@ public:
 MyQRandomGenerator64(quint32 seedValue) : QRandomGenerator64(seedValue) {}
 // void QRandomGenerator64(const quint32 *, qsizetype)
 MyQRandomGenerator64(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerator64(seedBuffer, len_) {}
+// void QRandomGenerator64(std::seed_seq &)
+MyQRandomGenerator64(std::seed_seq & sseq) : QRandomGenerator64(sseq) {}
 // void QRandomGenerator64(const quint32 *, const quint32 *)
 MyQRandomGenerator64(const quint32 * begin, const quint32 * end) : QRandomGenerator64(begin, end) {}
 // void QRandomGenerator64(const QRandomGenerator &)
@@ -57,6 +59,14 @@ void* C_ZN18QRandomGenerator64C2Ej(quint32 seedValue) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QRandomGenerator64C2EPKjx(const quint32 * seedBuffer, qsizetype len_) {
   return  new QRandomGenerator64(seedBuffer, len_);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:231
+// [-2] void QRandomGenerator64(std::seed_seq &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN18QRandomGenerator64C2ERSt8seed_seq(std::seed_seq & sseq) {
+  return  new QRandomGenerator64(sseq);
 }
 
 // Public inline Visibility=Default Availability=Available

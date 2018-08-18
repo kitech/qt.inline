@@ -19,6 +19,10 @@ public:
   virtual ~MyQCollator() {}
 // void QCollator(const QLocale &)
 MyQCollator(const QLocale & locale) : QCollator(locale) {}
+// void QCollator(const QCollator &)
+MyQCollator(const QCollator & arg0) : QCollator(arg0) {}
+// void QCollator(QCollator &&)
+MyQCollator(QCollator && other) : QCollator(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +31,14 @@ MyQCollator(const QLocale & locale) : QCollator(locale) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QCollatorC2ERK7QLocale(QLocale* locale) {
   return  new QCollator(*locale);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:87
+// [-2] void QCollator(const QCollator &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QCollatorC2ERKS_(QCollator* arg0) {
+  return  new QCollator(*arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -43,6 +55,14 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QCollatoraSERKS_(void *this_, QCollator* arg0) {
   auto& rv = ((QCollator*)this_)->operator=(*arg0);
 return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:91
+// [-2] void QCollator(QCollator &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QCollatorC2EOS_(QCollator && other) {
+  return  new QCollator(other);
 }
 
 // Public inline Visibility=Default Availability=Available

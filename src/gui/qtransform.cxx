@@ -27,6 +27,10 @@ MyQTransform(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, q
 MyQTransform(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) : QTransform(h11, h12, h21, h22, dx, dy) {}
 // void QTransform(const QMatrix &)
 MyQTransform(const QMatrix & mtx) : QTransform(mtx) {}
+// void QTransform(QTransform &&)
+MyQTransform(QTransform && other) : QTransform(other) {}
+// void QTransform(const QTransform &)
+MyQTransform(const QTransform & other) : QTransform(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +89,22 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN10QTransformaSERKS_(void *this_, QTransform* arg0) {
   auto& rv = ((QTransform*)this_)->operator=(*arg0);
 return &rv;
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:83
+// [-2] void QTransform(QTransform &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTransformC2EOS_(QTransform && other) {
+  return  new QTransform(other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:86
+// [-2] void QTransform(const QTransform &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QTransformC2ERKS_(QTransform* other) {
+  return  new QTransform(*other);
 }
 
 // Public Visibility=Default Availability=Available

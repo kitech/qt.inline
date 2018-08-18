@@ -20,6 +20,8 @@ public:
 MyQFileDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QFileDialog(parent, f) {}
 // void QFileDialog(QWidget *, const QString &, const QString &, const QString &)
 MyQFileDialog(QWidget * parent, const QString & caption, const QString & directory, const QString & filter) : QFileDialog(parent, caption, directory, filter) {}
+// void QFileDialog(const QFileDialogArgs &)
+MyQFileDialog(const QFileDialogArgs & args) : QFileDialog(args) {}
 // Protected virtual Visibility=Default Availability=Available
 // void done(int)
   virtual void done(int result) {
@@ -88,6 +90,40 @@ void C_ZN11QFileDialog11changeEventEP6QEvent(void *this_, QEvent * e) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QFileDialog10metaObjectEv(void *this_) {
   return (void*)((QFileDialog*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:63
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QFileDialog11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QFileDialog*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:63
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN11QFileDialog11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QFileDialog*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:63
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QFileDialog2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QFileDialog::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:63
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QFileDialog6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QFileDialog::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -426,6 +462,17 @@ bool C_ZNK11QFileDialog15resolveSymlinksEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.3
+// /usr/include/qt/QtWidgets/qfiledialog.h:154
+// [-2] void setSidebarUrls(const QList<QUrl> &)
+#if QT_VERSION >= 0x040300
+extern "C" Q_DECL_EXPORT
+void C_ZN11QFileDialog14setSidebarUrlsERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
+  ((QFileDialog*)this_)->setSidebarUrls(urls);
+}
+#endif // QT_VERSION >= 0x040300
+
+// Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qfiledialog.h:155
 // [-2] QList<QUrl> sidebarUrls()
 #if QT_VERSION >= 0x040300
@@ -689,6 +736,17 @@ void C_ZN11QFileDialog16directoryEnteredERK7QString(void *this_, QString* direct
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFileDialog11urlSelectedERK4QUrl(void *this_, QUrl* url) {
   ((QFileDialog*)this_)->urlSelected(*url);
+}
+#endif // QT_VERSION >= 0x050200
+
+// Public Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtWidgets/qfiledialog.h:202
+// [-2] void urlsSelected(const QList<QUrl> &)
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+void C_ZN11QFileDialog12urlsSelectedERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
+  ((QFileDialog*)this_)->urlsSelected(urls);
 }
 #endif // QT_VERSION >= 0x050200
 

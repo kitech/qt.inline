@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOption() {}
 // void QStyleOption(int, int)
 MyQStyleOption(int version, int type_) : QStyleOption(version, type_) {}
+// void QStyleOption(const QStyleOption &)
+MyQStyleOption(const QStyleOption & other) : QStyleOption(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQStyleOption(int version, int type_) : QStyleOption(version, type_) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStyleOptionC2Eii(int version, int type_) {
   return  new QStyleOption(version, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:103
+// [-2] void QStyleOption(const QStyleOption &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QStyleOptionC2ERKS_(QStyleOption* other) {
+  return  new QStyleOption(*other);
 }
 
 // Public Visibility=Default Availability=Available

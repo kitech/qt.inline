@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionFocusRect() {}
 // void QStyleOptionFocusRect()
 MyQStyleOptionFocusRect() : QStyleOptionFocusRect() {}
+// void QStyleOptionFocusRect(const QStyleOptionFocusRect &)
+MyQStyleOptionFocusRect(const QStyleOptionFocusRect & other) : QStyleOptionFocusRect(other) {}
 // void QStyleOptionFocusRect(int)
 MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QStyleOptionFocusRectC2Ev() {
   return  new QStyleOptionFocusRect();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:120
+// [-2] void QStyleOptionFocusRect(const QStyleOptionFocusRect &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QStyleOptionFocusRectC2ERKS_(QStyleOptionFocusRect* other) {
+  return  new QStyleOptionFocusRect(*other);
 }
 
 

@@ -19,6 +19,8 @@ public:
   virtual ~MyQWebEngineHttpRequest() {}
 // void QWebEngineHttpRequest(const QUrl &, const QWebEngineHttpRequest::Method &)
 MyQWebEngineHttpRequest(const QUrl & url, const QWebEngineHttpRequest::Method & method) : QWebEngineHttpRequest(url, method) {}
+// void QWebEngineHttpRequest(const QWebEngineHttpRequest &)
+MyQWebEngineHttpRequest(const QWebEngineHttpRequest & other) : QWebEngineHttpRequest(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQWebEngineHttpRequest(const QUrl & url, const QWebEngineHttpRequest::Method & 
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QWebEngineHttpRequestC2ERK4QUrlRKNS_6MethodE(QUrl* url, const QWebEngineHttpRequest::Method & method) {
   return  new QWebEngineHttpRequest(*url, method);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:65
+// [-2] void QWebEngineHttpRequest(const QWebEngineHttpRequest &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QWebEngineHttpRequestC2ERKS_(QWebEngineHttpRequest* other) {
+  return  new QWebEngineHttpRequest(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -52,6 +62,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QWebEngineHttpRequestaSERKS_(void *this_, QWebEngineHttpRequest* other) {
   auto& rv = ((QWebEngineHttpRequest*)this_)->operator=(*other);
 return &rv;
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:73
+// [8] QWebEngineHttpRequest postRequest(const QUrl &, const QMap<QString, QString> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QWebEngineHttpRequest11postRequestERK4QUrlRK4QMapI7QStringS4_E(QUrl* url, const QMap<QString, QString> & postData) {
+  auto rv = QWebEngineHttpRequest::postRequest(*url, postData);
+return new QWebEngineHttpRequest(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -134,6 +153,15 @@ void C_ZN21QWebEngineHttpRequest11setPostDataERK10QByteArray(void *this_, QByteA
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QWebEngineHttpRequest9hasHeaderERK10QByteArray(void *this_, QByteArray* headerName) {
   return (bool)((QWebEngineHttpRequest*)this_)->hasHeader(*headerName);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:91
+// [-2] QVector<QByteArray> headers()
+extern "C" Q_DECL_EXPORT
+void C_ZNK21QWebEngineHttpRequest7headersEv(void *this_) {
+  auto rv = ((QWebEngineHttpRequest*)this_)->headers();
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available

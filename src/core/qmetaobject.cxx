@@ -35,6 +35,17 @@ void* C_ZNK11QMetaObject10superClassEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.7
+// /usr/include/qt/QtCore/qobjectdefs.h:348
+// [1] bool inherits(const QMetaObject *)
+#if QT_VERSION >= 0x050700
+extern "C" Q_DECL_EXPORT
+bool C_ZNK11QMetaObject8inheritsEPKS_(void *this_, const QMetaObject * metaObject) {
+  return (bool)((QMetaObject*)this_)->inherits(metaObject);
+}
+#endif // QT_VERSION >= 0x050700
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:349
 // [8] QObject * cast(QObject *)
 extern "C" Q_DECL_EXPORT
@@ -48,6 +59,15 @@ void* C_ZNK11QMetaObject4castEP7QObject(void *this_, QObject * obj) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMetaObject4castEPK7QObject(void *this_, const QObject * obj) {
   return (void*)((QMetaObject*)this_)->cast(obj);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobjectdefs.h:353
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QMetaObject2trEPKcS1_i(void *this_, const char * s, const char * c, int n) {
+  auto rv = ((QMetaObject*)this_)->tr(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -323,6 +343,14 @@ void C_ZN11QMetaObject18connectSlotsByNameEP7QObject(QObject * o) {
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMetaObject8activateEP7QObjectiPPv(QObject * sender, int signal_index, void ** argv) {
   QMetaObject::activate(sender, signal_index, argv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobjectdefs.h:402
+// [-2] void activate(QObject *, const QMetaObject *, int, void **)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QMetaObject8activateEP7QObjectPKS_iPPv(QObject * sender, const QMetaObject * arg1, int local_signal_index, void ** argv) {
+  QMetaObject::activate(sender, arg1, local_signal_index, argv);
 }
 
 // Public static Visibility=Default Availability=Available

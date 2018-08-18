@@ -58,6 +58,8 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
   }
   }
 
+// void QState(QStatePrivate &, QState *)
+MyQState(QStatePrivate & dd, QState * parent) : QState(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -90,6 +92,40 @@ bool C_ZN6QState5eventEP6QEvent(void *this_, QEvent * e) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QState10metaObjectEv(void *this_) {
   return (void*)((QState*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:57
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QState11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QState*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:57
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN6QState11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QState*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:57
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QState2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QState::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:57
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QState6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QState::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -166,6 +202,18 @@ void C_ZN6QState16removeTransitionEP19QAbstractTransition(void *this_, QAbstract
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
+// /usr/include/qt/QtCore/qstate.h:98
+// [-2] QList<QAbstractTransition *> transitions()
+#if QT_VERSION >= 0x040700
+extern "C" Q_DECL_EXPORT
+QList<QAbstractTransition *>* C_ZNK6QState11transitionsEv(void *this_) {
+  auto rv = ((QState*)this_)->transitions();
+return new QList<QAbstractTransition *>(rv);
+}
+#endif // QT_VERSION >= 0x040700
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:100
 // [8] QAbstractState * initialState()
 extern "C" Q_DECL_EXPORT
@@ -203,6 +251,46 @@ void C_ZN6QState12setChildModeENS_9ChildModeE(void *this_, QState::ChildMode mod
 extern "C" Q_DECL_EXPORT
 void C_ZN6QState14assignPropertyEP7QObjectPKcRK8QVariant(void *this_, QObject * object, const char * name, QVariant* value) {
   ((QState*)this_)->assignProperty(object, name, *value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:112
+// [-2] void finished(QState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QState8finishedENS_14QPrivateSignalE(void *this_, QState::QPrivateSignal* arg0) {
+  ((QState*)this_)->finished(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:113
+// [-2] void propertiesAssigned(QState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QState18propertiesAssignedENS_14QPrivateSignalE(void *this_, QState::QPrivateSignal* arg0) {
+  ((QState*)this_)->propertiesAssigned(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:114
+// [-2] void childModeChanged(QState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QState16childModeChangedENS_14QPrivateSignalE(void *this_, QState::QPrivateSignal* arg0) {
+  ((QState*)this_)->childModeChanged(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:115
+// [-2] void initialStateChanged(QState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QState19initialStateChangedENS_14QPrivateSignalE(void *this_, QState::QPrivateSignal* arg0) {
+  ((QState*)this_)->initialStateChanged(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:116
+// [-2] void errorStateChanged(QState::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QState17errorStateChangedENS_14QPrivateSignalE(void *this_, QState::QPrivateSignal* arg0) {
+  ((QState*)this_)->errorStateChanged(*arg0);
 }
 
 //  main block end

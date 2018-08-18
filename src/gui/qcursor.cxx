@@ -24,6 +24,10 @@ MyQCursor(Qt::CursorShape shape) : QCursor(shape) {}
 MyQCursor(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) : QCursor(bitmap, mask, hotX, hotY) {}
 // void QCursor(const QPixmap &, int, int)
 MyQCursor(const QPixmap & pixmap, int hotX, int hotY) : QCursor(pixmap, hotX, hotY) {}
+// void QCursor(const QCursor &)
+MyQCursor(const QCursor & cursor) : QCursor(cursor) {}
+// void QCursor(QCursor &&)
+MyQCursor(QCursor && other) : QCursor(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -59,6 +63,14 @@ void* C_ZN7QCursorC2ERK7QPixmapii(QPixmap* pixmap, int hotX, int hotY) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:86
+// [-2] void QCursor(const QCursor &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QCursorC2ERKS_(QCursor* cursor) {
+  return  new QCursor(*cursor);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:87
 // [-2] void ~QCursor()
 extern "C" Q_DECL_EXPORT
@@ -73,6 +85,17 @@ void* C_ZN7QCursoraSERKS_(void *this_, QCursor* cursor) {
   auto& rv = ((QCursor*)this_)->operator=(*cursor);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.5
+// /usr/include/qt/QtGui/qcursor.h:90
+// [-2] void QCursor(QCursor &&)
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QCursorC2EOS_(QCursor && other) {
+  return  new QCursor(other);
+}
+#endif // QT_VERSION >= 0x050500
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:91

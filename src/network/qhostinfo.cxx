@@ -18,6 +18,8 @@ public:
   virtual ~MyQHostInfo() {}
 // void QHostInfo(int)
 MyQHostInfo(int lookupId) : QHostInfo(lookupId) {}
+// void QHostInfo(const QHostInfo &)
+MyQHostInfo(const QHostInfo & d) : QHostInfo(d) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -26,6 +28,14 @@ MyQHostInfo(int lookupId) : QHostInfo(lookupId) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHostInfoC2Ei(int lookupId) {
   return  new QHostInfo(lookupId);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:64
+// [-2] void QHostInfo(const QHostInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QHostInfoC2ERKS_(QHostInfo* d) {
+  return  new QHostInfo(*d);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,6 +89,23 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHostInfo11setHostNameERK7QString(void *this_, QString* name) {
   ((QHostInfo*)this_)->setHostName(*name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:74
+// [-2] QList<QHostAddress> addresses()
+extern "C" Q_DECL_EXPORT
+QList<QHostAddress>* C_ZNK9QHostInfo9addressesEv(void *this_) {
+  auto rv = ((QHostInfo*)this_)->addresses();
+return new QList<QHostAddress>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:75
+// [-2] void setAddresses(const QList<QHostAddress> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QHostInfo12setAddressesERK5QListI12QHostAddressE(void *this_, const QList<QHostAddress> & addresses) {
+  ((QHostInfo*)this_)->setAddresses(addresses);
 }
 
 // Public Visibility=Default Availability=Available

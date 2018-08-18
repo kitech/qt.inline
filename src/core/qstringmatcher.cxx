@@ -22,6 +22,8 @@ MyQStringMatcher() : QStringMatcher() {}
 MyQStringMatcher(const QString & pattern, Qt::CaseSensitivity cs) : QStringMatcher(pattern, cs) {}
 // void QStringMatcher(const QChar *, int, Qt::CaseSensitivity)
 MyQStringMatcher(const QChar * uc, int len_, Qt::CaseSensitivity cs) : QStringMatcher(uc, len_, cs) {}
+// void QStringMatcher(const QStringMatcher &)
+MyQStringMatcher(const QStringMatcher & other) : QStringMatcher(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -50,6 +52,14 @@ void* C_ZN14QStringMatcherC2EPK5QChariN2Qt15CaseSensitivityE(const QChar * uc, i
   return  new QStringMatcher(uc, len_, cs);
 }
 #endif // QT_VERSION >= 0x040500
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringmatcher.h:58
+// [-2] void QStringMatcher(const QStringMatcher &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QStringMatcherC2ERKS_(QStringMatcher* other) {
+  return  new QStringMatcher(*other);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:59

@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionTabWidgetFrame() {}
 // void QStyleOptionTabWidgetFrame()
 MyQStyleOptionTabWidgetFrame() : QStyleOptionTabWidgetFrame() {}
+// void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &)
+MyQStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other) : QStyleOptionTabWidgetFrame(other) {}
 // void QStyleOptionTabWidgetFrame(int)
 MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) 
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QStyleOptionTabWidgetFrameC2Ev() {
   return  new QStyleOptionTabWidgetFrame();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:172
+// [-2] void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN26QStyleOptionTabWidgetFrameC2ERKS_(QStyleOptionTabWidgetFrame* other) {
+  return  new QStyleOptionTabWidgetFrame(*other);
 }
 
 

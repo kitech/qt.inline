@@ -19,6 +19,10 @@ public:
   virtual ~MyQEasingCurve() {}
 // void QEasingCurve(QEasingCurve::Type)
 MyQEasingCurve(QEasingCurve::Type type_) : QEasingCurve(type_) {}
+// void QEasingCurve(const QEasingCurve &)
+MyQEasingCurve(const QEasingCurve & other) : QEasingCurve(other) {}
+// void QEasingCurve(QEasingCurve &&)
+MyQEasingCurve(QEasingCurve && other) : QEasingCurve(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +31,14 @@ MyQEasingCurve(QEasingCurve::Type type_) : QEasingCurve(type_) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type type_) {
   return  new QEasingCurve(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:78
+// [-2] void QEasingCurve(const QEasingCurve &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QEasingCurveC2ERKS_(QEasingCurve* other) {
+  return  new QEasingCurve(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -44,6 +56,17 @@ void* C_ZN12QEasingCurveaSERKS_(void *this_, QEasingCurve* other) {
   auto& rv = ((QEasingCurve*)this_)->operator=(*other);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtCore/qeasingcurve.h:84
+// [-2] void QEasingCurve(QEasingCurve &&)
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QEasingCurveC2EOS_(QEasingCurve && other) {
+  return  new QEasingCurve(other);
+}
+#endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:85
@@ -146,6 +169,18 @@ void C_ZN12QEasingCurve13addTCBSegmentERK7QPointFddd(void *this_, QPointF* nextP
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
+// /usr/include/qt/QtCore/qeasingcurve.h:106
+// [8] QVector<QPointF> toCubicSpline()
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void C_ZNK12QEasingCurve13toCubicSplineEv(void *this_) {
+  auto rv = ((QEasingCurve*)this_)->toCubicSpline();
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:111
 // [4] QEasingCurve::Type type()
 extern "C" Q_DECL_EXPORT
@@ -159,6 +194,14 @@ QEasingCurve::Type C_ZNK12QEasingCurve4typeEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN12QEasingCurve7setTypeENS_4TypeE(void *this_, QEasingCurve::Type type_) {
   ((QEasingCurve*)this_)->setType(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:114
+// [-2] void setCustomType(QEasingCurve::EasingFunction)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QEasingCurve13setCustomTypeEPFddE(void *this_, QEasingCurve::EasingFunction func) {
+  ((QEasingCurve*)this_)->setCustomType(func);
 }
 
 // Public Visibility=Default Availability=Available

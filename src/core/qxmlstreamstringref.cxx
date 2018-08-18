@@ -24,6 +24,10 @@ MyQXmlStreamStringRef(const QStringRef & aString) : QXmlStreamStringRef(aString)
 MyQXmlStreamStringRef(const QString & aString) : QXmlStreamStringRef(aString) {}
 // void QXmlStreamStringRef(QString &&)
 MyQXmlStreamStringRef(QString && aString) : QXmlStreamStringRef(aString) {}
+// void QXmlStreamStringRef(const QXmlStreamStringRef &)
+MyQXmlStreamStringRef(const QXmlStreamStringRef & other) : QXmlStreamStringRef(other) {}
+// void QXmlStreamStringRef(QXmlStreamStringRef &&)
+MyQXmlStreamStringRef(QXmlStreamStringRef && other) : QXmlStreamStringRef(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -56,6 +60,22 @@ void* C_ZN19QXmlStreamStringRefC2ERK7QString(QString* aString) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamStringRefC2EO7QString(QString && aString) {
   return  new QXmlStreamStringRef(aString);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:67
+// [-2] void QXmlStreamStringRef(const QXmlStreamStringRef &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QXmlStreamStringRefC2ERKS_(QXmlStreamStringRef* other) {
+  return  new QXmlStreamStringRef(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:70
+// [-2] void QXmlStreamStringRef(QXmlStreamStringRef &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QXmlStreamStringRefC2EOS_(QXmlStreamStringRef && other) {
+  return  new QXmlStreamStringRef(other);
 }
 
 // Public inline Visibility=Default Availability=Available

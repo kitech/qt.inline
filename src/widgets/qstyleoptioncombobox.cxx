@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionComboBox() {}
 // void QStyleOptionComboBox()
 MyQStyleOptionComboBox() : QStyleOptionComboBox() {}
+// void QStyleOptionComboBox(const QStyleOptionComboBox &)
+MyQStyleOptionComboBox(const QStyleOptionComboBox & other) : QStyleOptionComboBox(other) {}
 // void QStyleOptionComboBox(int)
 MyQStyleOptionComboBox(int version) : QStyleOptionComboBox(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionComboBox(int version) : QStyleOptionComboBox(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionComboBoxC2Ev() {
   return  new QStyleOptionComboBox();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:602
+// [-2] void QStyleOptionComboBox(const QStyleOptionComboBox &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QStyleOptionComboBoxC2ERKS_(QStyleOptionComboBox* other) {
+  return  new QStyleOptionComboBox(*other);
 }
 
 

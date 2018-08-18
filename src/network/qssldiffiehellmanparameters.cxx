@@ -19,6 +19,10 @@ public:
   virtual ~MyQSslDiffieHellmanParameters() {}
 // void QSslDiffieHellmanParameters()
 MyQSslDiffieHellmanParameters() : QSslDiffieHellmanParameters() {}
+// void QSslDiffieHellmanParameters(const QSslDiffieHellmanParameters &)
+MyQSslDiffieHellmanParameters(const QSslDiffieHellmanParameters & other) : QSslDiffieHellmanParameters(other) {}
+// void QSslDiffieHellmanParameters(QSslDiffieHellmanParameters &&)
+MyQSslDiffieHellmanParameters(QSslDiffieHellmanParameters && other) : QSslDiffieHellmanParameters(other) {}
 };
 
 // Public static Visibility=Default Availability=Available
@@ -36,6 +40,22 @@ return new QSslDiffieHellmanParameters(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QSslDiffieHellmanParametersC2Ev() {
   return  new QSslDiffieHellmanParameters();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:85
+// [-2] void QSslDiffieHellmanParameters(const QSslDiffieHellmanParameters &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QSslDiffieHellmanParametersC2ERKS_(QSslDiffieHellmanParameters* other) {
+  return  new QSslDiffieHellmanParameters(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:86
+// [-2] void QSslDiffieHellmanParameters(QSslDiffieHellmanParameters &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN27QSslDiffieHellmanParametersC2EOS_(QSslDiffieHellmanParameters && other) {
+  return  new QSslDiffieHellmanParameters(other);
 }
 
 // Public Visibility=Default Availability=Available

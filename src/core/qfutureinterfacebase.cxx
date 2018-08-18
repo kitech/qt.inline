@@ -18,6 +18,8 @@ public:
   virtual ~MyQFutureInterfaceBase() {}
 // void QFutureInterfaceBase(QFutureInterfaceBase::State)
 MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterfaceBase(initialState) {}
+// void QFutureInterfaceBase(const QFutureInterfaceBase &)
+MyQFutureInterfaceBase(const QFutureInterfaceBase & other) : QFutureInterfaceBase(other) {}
 // Protected Visibility=Default Availability=Available
 // bool refT()
   virtual bool refT() const{
@@ -69,6 +71,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initialState) {
   auto _nilp = (MyQFutureInterfaceBase*)(0);
   return  new MyQFutureInterfaceBase(initialState);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:74
+// [-2] void QFutureInterfaceBase(const QFutureInterfaceBase &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QFutureInterfaceBaseC2ERKS_(QFutureInterfaceBase* other) {
+  auto _nilp = (MyQFutureInterfaceBase*)(0);
+  return  new MyQFutureInterfaceBase(*other);
 }
 
 // Public virtual Visibility=Default Availability=Available

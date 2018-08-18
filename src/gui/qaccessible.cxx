@@ -19,6 +19,56 @@ public:
 };
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:400
+// [-2] void installFactory(QAccessible::InterfaceFactory)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible14installFactoryEPFP20QAccessibleInterfaceRK7QStringP7QObjectE(QAccessible::InterfaceFactory arg0) {
+  QAccessible::installFactory(arg0);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:401
+// [-2] void removeFactory(QAccessible::InterfaceFactory)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible13removeFactoryEPFP20QAccessibleInterfaceRK7QStringP7QObjectE(QAccessible::InterfaceFactory arg0) {
+  QAccessible::removeFactory(arg0);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:402
+// [8] QAccessible::UpdateHandler installUpdateHandler(QAccessible::UpdateHandler)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible20installUpdateHandlerEPFvP16QAccessibleEventE(QAccessible::UpdateHandler arg0) {
+  auto rv = QAccessible::installUpdateHandler(arg0);
+/*return rv;*/
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:403
+// [8] QAccessible::RootObjectHandler installRootObjectHandler(QAccessible::RootObjectHandler)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible24installRootObjectHandlerEPFvP7QObjectE(QAccessible::RootObjectHandler arg0) {
+  auto rv = QAccessible::installRootObjectHandler(arg0);
+/*return rv;*/
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:411
+// [-2] void installActivationObserver(QAccessible::ActivationObserver *)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible25installActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg0) {
+  QAccessible::installActivationObserver(arg0);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:412
+// [-2] void removeActivationObserver(QAccessible::ActivationObserver *)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible24removeActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg0) {
+  QAccessible::removeActivationObserver(arg0);
+}
+
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:414
 // [8] QAccessibleInterface * queryAccessibleInterface(QObject *)
 extern "C" Q_DECL_EXPORT
@@ -96,6 +146,15 @@ void C_ZN11QAccessible13setRootObjectEP7QObject(QObject * object) {
 extern "C" Q_DECL_EXPORT
 void C_ZN11QAccessible7cleanupEv() {
   QAccessible::cleanup();
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:432
+// [8] QPair<int, int> qAccessibleTextBoundaryHelper(const QTextCursor &, QAccessible::TextBoundaryType)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QAccessible29qAccessibleTextBoundaryHelperERK11QTextCursorNS_16TextBoundaryTypeE(QTextCursor* cursor, QAccessible::TextBoundaryType boundaryType) {
+  auto rv = QAccessible::qAccessibleTextBoundaryHelper(*cursor, boundaryType);
+/*return rv;*/
 }
 
 

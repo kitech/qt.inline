@@ -19,6 +19,8 @@ public:
   virtual ~MyQAuthenticator() {}
 // void QAuthenticator()
 MyQAuthenticator() : QAuthenticator() {}
+// void QAuthenticator(const QAuthenticator &)
+MyQAuthenticator(const QAuthenticator & other) : QAuthenticator(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ extern "C" Q_DECL_EXPORT
 void C_ZN14QAuthenticatorD2Ev(void *this_) {
   delete (QAuthenticator*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qauthenticator.h:59
+// [-2] void QAuthenticator(const QAuthenticator &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QAuthenticatorC2ERKS_(QAuthenticator* other) {
+  return  new QAuthenticator(*other);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:60
 // [8] QAuthenticator & operator=(const QAuthenticator &)
@@ -121,6 +131,18 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK14QAuthenticator6optionERK7QString(void *this_, QString* opt) {
   auto rv = ((QAuthenticator*)this_)->option(*opt);
 return new QVariant(rv);
+}
+#endif // QT_VERSION >= 0x040700
+
+// Public Visibility=Default Availability=Available
+// since 4.7
+// /usr/include/qt/QtNetwork/qauthenticator.h:75
+// [8] QVariantHash options()
+#if QT_VERSION >= 0x040700
+extern "C" Q_DECL_EXPORT
+QVariantHash* C_ZNK14QAuthenticator7optionsEv(void *this_) {
+  auto rv = ((QAuthenticator*)this_)->options();
+return new QVariantHash(rv);
 }
 #endif // QT_VERSION >= 0x040700
 

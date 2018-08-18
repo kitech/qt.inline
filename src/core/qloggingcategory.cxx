@@ -99,12 +99,30 @@ void* C_ZNK16QLoggingCategory12categoryNameEv(void *this_) {
   return (void*)((QLoggingCategory*)this_)->categoryName();
 }
 
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qloggingcategory.h:74
+// [24] QLoggingCategory & operator()()
+extern "C" Q_DECL_EXPORT
+void* C_ZN16QLoggingCategoryclEv(void *this_) {
+  auto& rv = ((QLoggingCategory*)this_)->operator()();
+return &rv;
+}
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:77
 // [8] QLoggingCategory * defaultCategory()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategory15defaultCategoryEv() {
   return (void*)QLoggingCategory::defaultCategory();
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qloggingcategory.h:80
+// [8] QLoggingCategory::CategoryFilter installFilter(QLoggingCategory::CategoryFilter)
+extern "C" Q_DECL_EXPORT
+void C_ZN16QLoggingCategory13installFilterEPFvPS_E(QLoggingCategory::CategoryFilter arg0) {
+  auto rv = QLoggingCategory::installFilter(arg0);
+/*return rv;*/
 }
 
 // Public static Visibility=Default Availability=Available

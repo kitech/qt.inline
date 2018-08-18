@@ -23,6 +23,10 @@ MyQXmlStreamAttribute() : QXmlStreamAttribute() {}
 MyQXmlStreamAttribute(const QString & qualifiedName, const QString & value) : QXmlStreamAttribute(qualifiedName, value) {}
 // void QXmlStreamAttribute(const QString &, const QString &, const QString &)
 MyQXmlStreamAttribute(const QString & namespaceUri, const QString & name, const QString & value) : QXmlStreamAttribute(namespaceUri, name, value) {}
+// void QXmlStreamAttribute(const QXmlStreamAttribute &)
+MyQXmlStreamAttribute(const QXmlStreamAttribute & arg0) : QXmlStreamAttribute(arg0) {}
+// void QXmlStreamAttribute(QXmlStreamAttribute &&)
+MyQXmlStreamAttribute(QXmlStreamAttribute && other) : QXmlStreamAttribute(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +51,22 @@ void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(QString* qualifiedName, QString*
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(QString* namespaceUri, QString* name, QString* value) {
   return  new QXmlStreamAttribute(*namespaceUri, *name, *value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:113
+// [-2] void QXmlStreamAttribute(const QXmlStreamAttribute &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QXmlStreamAttributeC2ERKS_(QXmlStreamAttribute* arg0) {
+  return  new QXmlStreamAttribute(*arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:115
+// [-2] void QXmlStreamAttribute(QXmlStreamAttribute &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QXmlStreamAttributeC2EOS_(QXmlStreamAttribute && other) {
+  return  new QXmlStreamAttribute(other);
 }
 
 // Public inline Visibility=Default Availability=Available

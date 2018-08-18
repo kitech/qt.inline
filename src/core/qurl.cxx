@@ -18,8 +18,12 @@ public:
   virtual ~MyQUrl() {}
 // void QUrl()
 MyQUrl() : QUrl() {}
+// void QUrl(const QUrl &)
+MyQUrl(const QUrl & copy) : QUrl(copy) {}
 // void QUrl(const QString &, QUrl::ParsingMode)
 MyQUrl(const QString & url, QUrl::ParsingMode mode) : QUrl(url, mode) {}
+// void QUrl(QUrl &&)
+MyQUrl(QUrl && other) : QUrl(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -28,6 +32,14 @@ MyQUrl(const QString & url, QUrl::ParsingMode mode) : QUrl(url, mode) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrlC2Ev() {
   return  new QUrl();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:177
+// [-2] void QUrl(const QUrl &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QUrlC2ERKS_(QUrl* copy) {
+  return  new QUrl(*copy);
 }
 
 // Public Visibility=Default Availability=Available
@@ -55,6 +67,17 @@ void* C_ZN4QUrlaSERK7QString(void *this_, QString* url) {
   auto& rv = ((QUrl*)this_)->operator=(*url);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtCore/qurl.h:186
+// [-2] void QUrl(QUrl &&)
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QUrlC2EOS_(QUrl && other) {
+  return  new QUrl(other);
+}
+#endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:188
@@ -89,6 +112,51 @@ void C_ZN4QUrl4swapERS_(void *this_, QUrl* other) {
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl6setUrlERK7QStringNS_11ParsingModeE(void *this_, QString* url, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setUrl(*url, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:196
+// [8] QString url(QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl3urlE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
+  auto rv = ((QUrl*)this_)->url(options);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:197
+// [8] QString toString(QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8toStringE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
+  auto rv = ((QUrl*)this_)->toString(options);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:198
+// [8] QString toDisplayString(QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl15toDisplayStringE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
+  auto rv = ((QUrl*)this_)->toDisplayString(options);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:199
+// [8] QUrl adjusted(QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8adjustedE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
+  auto rv = ((QUrl*)this_)->adjusted(options);
+return new QUrl(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:201
+// [8] QByteArray toEncoded(QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl9toEncodedE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
+  auto rv = ((QUrl*)this_)->toEncoded(options);
+return new QByteArray(rv);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -183,11 +251,29 @@ void C_ZN4QUrl12setAuthorityERK7QStringNS_11ParsingModeE(void *this_, QString* a
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:225
+// [8] QString authority(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl9authorityE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->authority(options);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:227
 // [-2] void setUserInfo(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl11setUserInfoERK7QStringNS_11ParsingModeE(void *this_, QString* userInfo, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setUserInfo(*userInfo, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:228
+// [8] QString userInfo(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8userInfoE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->userInfo(options);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -199,6 +285,15 @@ void C_ZN4QUrl11setUserNameERK7QStringNS_11ParsingModeE(void *this_, QString* us
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:231
+// [8] QString userName(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8userNameE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->userName(options);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:233
 // [-2] void setPassword(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
@@ -207,11 +302,38 @@ void C_ZN4QUrl11setPasswordERK7QStringNS_11ParsingModeE(void *this_, QString* pa
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:234
+// [8] QString password(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8passwordE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> arg0) {
+  auto rv = ((QUrl*)this_)->password(arg0);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:236
 // [-2] void setHost(const QString &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl7setHostERK7QStringNS_11ParsingModeE(void *this_, QString* host, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setHost(*host, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:237
+// [8] QString host(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl4hostE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> arg0) {
+  auto rv = ((QUrl*)this_)->host(arg0);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:239
+// [8] QString topLevelDomain(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl14topLevelDomainE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->topLevelDomain(options);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -239,6 +361,24 @@ int C_ZNK4QUrl4portEi(void *this_, int defaultPort) {
 extern "C" Q_DECL_EXPORT
 void C_ZN4QUrl7setPathERK7QStringNS_11ParsingModeE(void *this_, QString* path, QUrl::ParsingMode mode) {
   ((QUrl*)this_)->setPath(*path, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:246
+// [8] QString path(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl4pathE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->path(options);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:247
+// [8] QString fileName(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8fileNameE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->fileName(options);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -272,6 +412,15 @@ void C_ZN4QUrl8setQueryERK9QUrlQuery(void *this_, QUrlQuery* query) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:252
+// [8] QString query(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl5queryE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> arg0) {
+  auto rv = ((QUrl*)this_)->query(arg0);
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtCore/qurl.h:254
 // [1] bool hasFragment()
@@ -281,6 +430,15 @@ bool C_ZNK4QUrl11hasFragmentEv(void *this_) {
   return (bool)((QUrl*)this_)->hasFragment();
 }
 #endif // QT_VERSION >= 0x040200
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:255
+// [8] QString fragment(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK4QUrl8fragmentE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QUrl*)this_)->fragment(options);
+return new QString(rv);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:256
@@ -384,6 +542,14 @@ bool C_ZNK4QUrlneERKS_(void *this_, QUrl* url) {
   return (bool)((QUrl*)this_)->operator!=(*url);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:274
+// [1] bool matches(const QUrl &, QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+bool C_ZNK4QUrl7matchesERKS_12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl* url, QUrl::FormattingOptions options) {
+  return (bool)((QUrl*)this_)->matches(*url, options);
+}
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:276
 // [8] QString fromPercentEncoding(const QByteArray &)
@@ -439,6 +605,15 @@ return new QStringList(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:360
+// [8] QStringList toStringList(const QList<QUrl> &, QUrl::FormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QUrl12toStringListERK5QListIS_E12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(const QList<QUrl> & uris, QUrl::FormattingOptions options) {
+  auto rv = QUrl::toStringList(uris, options);
+return new QStringList(rv);
+}
+
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:361
 // [-2] QList<QUrl> fromStringList(const QStringList &, QUrl::ParsingMode)
 extern "C" Q_DECL_EXPORT
@@ -457,5 +632,14 @@ void C_ZN4QUrl15setIdnWhitelistERK11QStringList(QStringList* arg0) {
   QUrl::setIdnWhitelist(*arg0);
 }
 #endif // QT_VERSION >= 0x040200
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:372
+// [8] QUrl::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN4QUrl8data_ptrEv(void *this_) {
+  auto& rv = ((QUrl*)this_)->data_ptr();
+return &rv;
+}
 
 //  main block end

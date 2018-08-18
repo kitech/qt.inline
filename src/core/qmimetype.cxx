@@ -19,6 +19,10 @@ public:
   virtual ~MyQMimeType() {}
 // void QMimeType()
 MyQMimeType() : QMimeType() {}
+// void QMimeType(const QMimeType &)
+MyQMimeType(const QMimeType & other) : QMimeType(other) {}
+// void QMimeType(const QMimeTypePrivate &)
+MyQMimeType(const QMimeTypePrivate & dd) : QMimeType(dd) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +31,14 @@ MyQMimeType() : QMimeType() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeC2Ev() {
   return  new QMimeType();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:79
+// [-2] void QMimeType(const QMimeType &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QMimeTypeC2ERKS_(QMimeType* other) {
+  return  new QMimeType(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -53,6 +65,14 @@ return &rv;
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
   ((QMimeType*)this_)->swap(*other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:88
+// [-2] void QMimeType(const QMimeTypePrivate &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QMimeTypeC2ERK16QMimeTypePrivate(QMimeTypePrivate* dd) {
+  return  new QMimeType(*dd);
 }
 
 // Public Visibility=Default Availability=Available

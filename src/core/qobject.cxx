@@ -130,6 +130,8 @@ MyQObject(QObject * parent) : QObject(parent) {}
   }
   }
 
+// void QObject(QObjectPrivate &, QObject *)
+MyQObject(QObjectPrivate & dd, QObject * parent) : QObject(dd, parent) {}
 };
 
 // Protected Visibility=Default Availability=Available
@@ -222,6 +224,40 @@ void C_ZN7QObject16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* si
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QObject10metaObjectEv(void *this_) {
   return (void*)((QObject*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:119
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QObject11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QObject*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:119
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN7QObject11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QObject*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:119
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QObject2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QObject::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:119
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QObject6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QObject::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -329,6 +365,17 @@ int C_ZN7QObject10startTimerEiN2Qt9TimerTypeE(void *this_, int interval, Qt::Tim
   return (int)((QObject*)this_)->startTimer(interval, timerType);
 }
 
+// Public inline Visibility=Default Availability=Available
+// since 5.9
+// /usr/include/qt/QtCore/qobject.h:160
+// [4] int startTimer(std::chrono::milliseconds, Qt::TimerType)
+#if QT_VERSION >= 0x050900
+extern "C" Q_DECL_EXPORT
+int C_ZN7QObject10startTimerENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEN2Qt9TimerTypeE(void *this_, std::chrono::milliseconds time, Qt::TimerType timerType) {
+  return (int)((QObject*)this_)->startTimer(time, timerType);
+}
+#endif // QT_VERSION >= 0x050900
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:165
 // [-2] void killTimer(int)
@@ -435,6 +482,14 @@ bool C_ZNK7QObject10disconnectEPKS_PKc(void *this_, const QObject * receiver, co
   return (bool)((QObject*)this_)->disconnect(receiver, member);
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:352
+// [1] bool disconnect(const QMetaObject::Connection &)
+extern "C" Q_DECL_EXPORT
+bool C_ZN7QObject10disconnectERKN11QMetaObject10ConnectionE(const QMetaObject::Connection & arg0) {
+  return (bool)QObject::disconnect(arg0);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:391
 // [-2] void dumpObjectTree()
@@ -484,6 +539,18 @@ void* C_ZNK7QObject8propertyEPKc(void *this_, const char * name) {
 return new QVariant(rv);
 }
 
+// Public Visibility=Default Availability=Available
+// since 4.2
+// /usr/include/qt/QtCore/qobject.h:400
+// [8] QList<QByteArray> dynamicPropertyNames()
+#if QT_VERSION >= 0x040200
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK7QObject20dynamicPropertyNamesEv(void *this_) {
+  auto rv = ((QObject*)this_)->dynamicPropertyNames();
+return new QList<QByteArray>(rv);
+}
+#endif // QT_VERSION >= 0x040200
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:404
 // [4] uint registerUserData()
@@ -514,6 +581,14 @@ void* C_ZNK7QObject8userDataEj(void *this_, uint id) {
 extern "C" Q_DECL_EXPORT
 void C_ZN7QObject9destroyedEPS_(void *this_, QObject * arg0) {
   ((QObject*)this_)->destroyed(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:411
+// [-2] void objectNameChanged(const QString &, QObject::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN7QObject17objectNameChangedERK7QStringNS_14QPrivateSignalE(void *this_, QString* objectName, QObject::QPrivateSignal* arg1) {
+  ((QObject*)this_)->objectNameChanged(*objectName, *arg1);
 }
 
 // Public inline Visibility=Default Availability=Available

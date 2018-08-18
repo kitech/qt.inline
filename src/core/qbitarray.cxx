@@ -20,6 +20,10 @@ public:
 MyQBitArray() : QBitArray() {}
 // void QBitArray(int, bool)
 MyQBitArray(int size, bool val) : QBitArray(size, val) {}
+// void QBitArray(const QBitArray &)
+MyQBitArray(const QBitArray & other) : QBitArray(other) {}
+// void QBitArray(QBitArray &&)
+MyQBitArray(QBitArray && other) : QBitArray(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -39,6 +43,14 @@ void* C_ZN9QBitArrayC2Eib(int size, bool val) {
 }
 
 // Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:59
+// [-2] void QBitArray(const QBitArray &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QBitArrayC2ERKS_(QBitArray* other) {
+  return  new QBitArray(*other);
+}
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:60
 // [8] QBitArray & operator=(const QBitArray &)
 extern "C" Q_DECL_EXPORT
@@ -46,6 +58,17 @@ void* C_ZN9QBitArrayaSERKS_(void *this_, QBitArray* other) {
   auto& rv = ((QBitArray*)this_)->operator=(*other);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtCore/qbitarray.h:62
+// [-2] void QBitArray(QBitArray &&)
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QBitArrayC2EOS_(QBitArray && other) {
+  return  new QBitArray(other);
+}
+#endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:63
@@ -295,6 +318,15 @@ void C_ZN9QBitArray4fillEbii(void *this_, bool val, int first, int last) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QBitArray8truncateEi(void *this_, int pos) {
   ((QBitArray*)this_)->truncate(pos);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:109
+// [8] QBitArray::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QBitArray8data_ptrEv(void *this_) {
+  auto& rv = ((QBitArray*)this_)->data_ptr();
+return &rv;
 }
 
 

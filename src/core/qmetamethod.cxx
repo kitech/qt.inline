@@ -102,6 +102,24 @@ void C_ZNK11QMetaMethod17getParameterTypesEPi(void *this_, int * types) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:66
+// [8] QList<QByteArray> parameterTypes()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK11QMetaMethod14parameterTypesEv(void *this_) {
+  auto rv = ((QMetaMethod*)this_)->parameterTypes();
+return new QList<QByteArray>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:67
+// [8] QList<QByteArray> parameterNames()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK11QMetaMethod14parameterNamesEv(void *this_) {
+  auto rv = ((QMetaMethod*)this_)->parameterNames();
+return new QList<QByteArray>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:68
 // [8] const char * tag()
 extern "C" Q_DECL_EXPORT

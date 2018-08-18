@@ -24,6 +24,24 @@ MyQImageWriter(QIODevice * device, const QByteArray & format) : QImageWriter(dev
 MyQImageWriter(const QString & fileName, const QByteArray & format) : QImageWriter(fileName, format) {}
 };
 
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:58
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QImageWriter2trEPKcS1_i(const char * sourceText, const char * disambiguation, int n) {
+  auto rv = QImageWriter::tr(sourceText, disambiguation, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:58
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QImageWriter6trUtf8EPKcS1_i(const char * sourceText, const char * disambiguation, int n) {
+  auto rv = QImageWriter::trUtf8(sourceText, disambiguation, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:67
 // [-2] void QImageWriter()
@@ -177,6 +195,18 @@ return new QByteArray(rv);
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
+// since 5.4
+// /usr/include/qt/QtGui/qimagewriter.h:92
+// [8] QList<QByteArray> supportedSubTypes()
+#if QT_VERSION >= 0x050400
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZNK12QImageWriter17supportedSubTypesEv(void *this_) {
+  auto rv = ((QImageWriter*)this_)->supportedSubTypes();
+return new QList<QByteArray>(rv);
+}
+#endif // QT_VERSION >= 0x050400
+
+// Public Visibility=Default Availability=Available
 // since 5.5
 // /usr/include/qt/QtGui/qimagewriter.h:94
 // [-2] void setOptimizedWrite(bool)
@@ -313,5 +343,23 @@ bool C_ZNK12QImageWriter14supportsOptionEN15QImageIOHandler11ImageOptionE(void *
   return (bool)((QImageWriter*)this_)->supportsOption(option);
 }
 #endif // QT_VERSION >= 0x040200
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:117
+// [8] QList<QByteArray> supportedImageFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN12QImageWriter21supportedImageFormatsEv() {
+  auto rv = QImageWriter::supportedImageFormats();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:118
+// [8] QList<QByteArray> supportedMimeTypes()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN12QImageWriter18supportedMimeTypesEv() {
+  auto rv = QImageWriter::supportedMimeTypes();
+return new QList<QByteArray>(rv);
+}
 
 //  main block end

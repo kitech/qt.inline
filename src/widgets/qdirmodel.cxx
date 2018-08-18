@@ -20,6 +20,8 @@ public:
 MyQDirModel(const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort, QObject * parent) : QDirModel(nameFilters, filters, sort, parent) {}
 // void QDirModel(QObject *)
 MyQDirModel(QObject * parent) : QDirModel(parent) {}
+// void QDirModel(QDirModelPrivate &, QObject *)
+MyQDirModel(QDirModelPrivate & arg0, QObject * parent) : QDirModel(arg0, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -28,6 +30,40 @@ MyQDirModel(QObject * parent) : QDirModel(parent) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDirModel10metaObjectEv(void *this_) {
   return (void*)((QDirModel*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:56
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QDirModel11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QDirModel*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:56
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QDirModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QDirModel*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:56
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QDirModel2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QDirModel::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:56
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QDirModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QDirModel::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -144,6 +180,14 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDirModel9mimeTypesEv(void *this_) {
   auto rv = ((QDirModel*)this_)->mimeTypes();
 return new QStringList(rv);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:90
+// [8] QMimeData * mimeData(const QModelIndexList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QDirModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
+  return (void*)((QDirModel*)this_)->mimeData(indexes);
 }
 
 // Public virtual Visibility=Default Availability=Available

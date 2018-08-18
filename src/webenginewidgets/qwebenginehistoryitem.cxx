@@ -17,7 +17,17 @@
 class Q_DECL_EXPORT MyQWebEngineHistoryItem : public QWebEngineHistoryItem {
 public:
   virtual ~MyQWebEngineHistoryItem() {}
+// void QWebEngineHistoryItem(const QWebEngineHistoryItem &)
+MyQWebEngineHistoryItem(const QWebEngineHistoryItem & other) : QWebEngineHistoryItem(other) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:59
+// [-2] void QWebEngineHistoryItem(const QWebEngineHistoryItem &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QWebEngineHistoryItemC2ERKS_(QWebEngineHistoryItem* other) {
+  return  new QWebEngineHistoryItem(*other);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:60

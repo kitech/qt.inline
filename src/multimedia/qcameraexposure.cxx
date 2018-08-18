@@ -21,6 +21,40 @@ void* C_ZNK15QCameraExposure10metaObjectEv(void *this_) {
   return (void*)((QCameraExposure*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:54
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QCameraExposure11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QCameraExposure*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:54
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QCameraExposure11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QCameraExposure*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:54
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QCameraExposure2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCameraExposure::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:54
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QCameraExposure6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCameraExposure::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraexposure.h:113
 // [1] bool isAvailable()
@@ -157,6 +191,33 @@ qreal C_ZNK15QCameraExposure17requestedApertureEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK15QCameraExposure21requestedShutterSpeedEv(void *this_) {
   return (qreal)((QCameraExposure*)this_)->requestedShutterSpeed();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:138
+// [-2] QList<int> supportedIsoSensitivities(bool *)
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZNK15QCameraExposure25supportedIsoSensitivitiesEPb(void *this_, bool * continuous) {
+  auto rv = ((QCameraExposure*)this_)->supportedIsoSensitivities(continuous);
+return new QList<int>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:139
+// [-2] QList<qreal> supportedApertures(bool *)
+extern "C" Q_DECL_EXPORT
+QList<qreal>* C_ZNK15QCameraExposure18supportedAperturesEPb(void *this_, bool * continuous) {
+  auto rv = ((QCameraExposure*)this_)->supportedApertures(continuous);
+return new QList<qreal>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:140
+// [-2] QList<qreal> supportedShutterSpeeds(bool *)
+extern "C" Q_DECL_EXPORT
+QList<qreal>* C_ZNK15QCameraExposure22supportedShutterSpeedsEPb(void *this_, bool * continuous) {
+  auto rv = ((QCameraExposure*)this_)->supportedShutterSpeeds(continuous);
+return new QList<qreal>(rv);
 }
 
 // Public Visibility=Default Availability=Available

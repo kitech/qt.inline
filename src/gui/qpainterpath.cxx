@@ -20,6 +20,8 @@ public:
 MyQPainterPath() : QPainterPath() {}
 // void QPainterPath(const QPointF &)
 MyQPainterPath(const QPointF & startPoint) : QPainterPath(startPoint) {}
+// void QPainterPath(const QPainterPath &)
+MyQPainterPath(const QPainterPath & other) : QPainterPath(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -36,6 +38,14 @@ void* C_ZN12QPainterPathC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QPainterPathC2ERK7QPointF(QPointF* startPoint) {
   return  new QPainterPath(*startPoint);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:93
+// [-2] void QPainterPath(const QPainterPath &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QPainterPathC2ERKS_(QPainterPath* other) {
+  return  new QPainterPath(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -460,12 +470,48 @@ return new QPainterPath(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:169
+// [-2] QList<QPolygonF> toSubpathPolygons(const QMatrix &)
+extern "C" Q_DECL_EXPORT
+QList<QPolygonF>* C_ZNK12QPainterPath17toSubpathPolygonsERK7QMatrix(void *this_, QMatrix* matrix) {
+  auto rv = ((QPainterPath*)this_)->toSubpathPolygons(*matrix);
+return new QList<QPolygonF>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:170
+// [-2] QList<QPolygonF> toFillPolygons(const QMatrix &)
+extern "C" Q_DECL_EXPORT
+QList<QPolygonF>* C_ZNK12QPainterPath14toFillPolygonsERK7QMatrix(void *this_, QMatrix* matrix) {
+  auto rv = ((QPainterPath*)this_)->toFillPolygons(*matrix);
+return new QList<QPolygonF>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:171
 // [8] QPolygonF toFillPolygon(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QPainterPath13toFillPolygonERK7QMatrix(void *this_, QMatrix* matrix) {
   auto rv = ((QPainterPath*)this_)->toFillPolygon(*matrix);
 return new QPolygonF(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:172
+// [-2] QList<QPolygonF> toSubpathPolygons(const QTransform &)
+extern "C" Q_DECL_EXPORT
+QList<QPolygonF>* C_ZNK12QPainterPath17toSubpathPolygonsERK10QTransform(void *this_, QTransform* matrix) {
+  auto rv = ((QPainterPath*)this_)->toSubpathPolygons(*matrix);
+return new QList<QPolygonF>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:173
+// [-2] QList<QPolygonF> toFillPolygons(const QTransform &)
+extern "C" Q_DECL_EXPORT
+QList<QPolygonF>* C_ZNK12QPainterPath14toFillPolygonsERK10QTransform(void *this_, QTransform* matrix) {
+  auto rv = ((QPainterPath*)this_)->toFillPolygons(*matrix);
+return new QList<QPolygonF>(rv);
 }
 
 // Public Visibility=Default Availability=Available

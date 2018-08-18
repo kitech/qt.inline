@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionSpinBox() {}
 // void QStyleOptionSpinBox()
 MyQStyleOptionSpinBox() : QStyleOptionSpinBox() {}
+// void QStyleOptionSpinBox(const QStyleOptionSpinBox &)
+MyQStyleOptionSpinBox(const QStyleOptionSpinBox & other) : QStyleOptionSpinBox(other) {}
 // void QStyleOptionSpinBox(int)
 MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionSpinBoxC2Ev() {
   return  new QStyleOptionSpinBox();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:553
+// [-2] void QStyleOptionSpinBox(const QStyleOptionSpinBox &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QStyleOptionSpinBoxC2ERKS_(QStyleOptionSpinBox* other) {
+  return  new QStyleOptionSpinBox(*other);
 }
 
 

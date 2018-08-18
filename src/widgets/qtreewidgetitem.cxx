@@ -32,6 +32,8 @@ MyQTreeWidgetItem(QTreeWidgetItem * parent, int type_) : QTreeWidgetItem(parent,
 MyQTreeWidgetItem(QTreeWidgetItem * parent, const QStringList & strings, int type_) : QTreeWidgetItem(parent, strings, type_) {}
 // void QTreeWidgetItem(QTreeWidgetItem *, QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) : QTreeWidgetItem(parent, after, type_) {}
+// void QTreeWidgetItem(const QTreeWidgetItem &)
+MyQTreeWidgetItem(const QTreeWidgetItem & other) : QTreeWidgetItem(other) {}
 // Protected Visibility=Default Availability=Available
 // void emitDataChanged()
   virtual void emitDataChanged() {
@@ -128,6 +130,18 @@ void* C_ZN15QTreeWidgetItemC2EPS_S0_i(QTreeWidgetItem * parent, QTreeWidgetItem 
   auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, after, type_);
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qtreewidget.h:75
+// [-2] void QTreeWidgetItem(const QTreeWidgetItem &)
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QTreeWidgetItemC2ERKS_(QTreeWidgetItem* other) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
+  return  new MyQTreeWidgetItem(*other);
+}
+#endif // QT_VERSION >= 0x040100
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:76
@@ -652,6 +666,40 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN15QTreeWidgetItem9takeChildEi(void *this_, int index) {
   return (void*)((QTreeWidgetItem*)this_)->takeChild(index);
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qtreewidget.h:194
+// [-2] void addChildren(const QList<QTreeWidgetItem *> &)
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+void C_ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E(void *this_, const QList<QTreeWidgetItem *> & children) {
+  ((QTreeWidgetItem*)this_)->addChildren(children);
+}
+#endif // QT_VERSION >= 0x040100
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qtreewidget.h:195
+// [-2] void insertChildren(int, const QList<QTreeWidgetItem *> &)
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+void C_ZN15QTreeWidgetItem14insertChildrenEiRK5QListIPS_E(void *this_, int index, const QList<QTreeWidgetItem *> & children) {
+  ((QTreeWidgetItem*)this_)->insertChildren(index, children);
+}
+#endif // QT_VERSION >= 0x040100
+
+// Public Visibility=Default Availability=Available
+// since 4.1
+// /usr/include/qt/QtWidgets/qtreewidget.h:196
+// [8] QList<QTreeWidgetItem *> takeChildren()
+#if QT_VERSION >= 0x040100
+extern "C" Q_DECL_EXPORT
+QList<QTreeWidgetItem *>* C_ZN15QTreeWidgetItem12takeChildrenEv(void *this_) {
+  auto rv = ((QTreeWidgetItem*)this_)->takeChildren();
+return new QList<QTreeWidgetItem *>(rv);
+}
+#endif // QT_VERSION >= 0x040100
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:198

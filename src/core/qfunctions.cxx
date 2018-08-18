@@ -4,6 +4,14 @@
 //  header block end
 
 //  main block begin
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringalgorithms.h:58
+// [8] qsizetype qustrlen(const ushort *)
+extern "C" Q_DECL_EXPORT
+qsizetype C_ZN9QtPrivate8qustrlenEPKt(const ushort * str) {
+  return (qsizetype)QtPrivate::qustrlen(str);
+}
+
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qnamespace.h:1754
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TimerType)
@@ -1317,6 +1325,86 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_10DropActionEE_81(QFlags<Qt::DropAction
 }
 
 // Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:587
+// [4] uint qt_builtin_popcountll(quint64)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate21qt_builtin_popcountllEy(quint64 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_popcountll(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:582
+// [4] uint qt_builtin_popcount(quint16)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate19qt_builtin_popcountEt(quint16 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_popcount(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:574
+// [4] uint qt_builtin_popcount(quint32)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate19qt_builtin_popcountEj_1(quint32 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_popcount(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:578
+// [4] uint qt_builtin_popcount(quint8)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate19qt_builtin_popcountEh_2(quint8 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_popcount(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:564
+// [4] uint qt_builtin_ctzll(quint64)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate16qt_builtin_ctzllEy(quint64 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_ctzll(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:569
+// [4] uint qt_builtin_clzll(quint64)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate16qt_builtin_clzllEy(quint64 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_clzll(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:536
+// [4] uint qt_builtin_ctzs(quint16)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate15qt_builtin_ctzsEt(quint16 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_ctzs(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:545
+// [4] uint qt_builtin_clzs(quint16)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate15qt_builtin_clzsEt(quint16 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_clzs(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:554
+// [4] uint qt_builtin_ctz(quint32)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate14qt_builtin_ctzEj(quint32 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_ctz(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qalgorithms.h:559
+// [4] uint qt_builtin_clz(quint32)
+extern "C" Q_DECL_EXPORT
+uint C_ZN18QAlgorithmsPrivate14qt_builtin_clzEj(quint32 v) {
+  return (uint)QAlgorithmsPrivate::qt_builtin_clz(v);
+}
+
+// Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:92
 // [4] int qstrcmp(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
@@ -1394,6 +1482,14 @@ void C_Z9qt_assertPKcS0_i(const char * assertion, const char * file, int line) {
 extern "C" Q_DECL_EXPORT
 int C_Z9qstrnicmpPKcS0_j(const char * arg0, const char * arg1, uint len_) {
   return (int)qstrnicmp(arg0, arg1, len_);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:105
+// [4] int qsnprintf(char *, size_t, const char *, ...)
+extern "C" Q_DECL_EXPORT
+int C_Z9qsnprintfPcmPKcz(char * str, size_t n, const char * fmt_) {
+  return (int)qsnprintf(str, n, fmt_);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -2132,6 +2228,23 @@ qreal C_Z3qLnd(qreal v) {
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:368
+// [8] QDebug qt_QMetaEnum_flagDebugOperator(QDebug &, quint64, const QMetaObject *, const char *)
+extern "C" Q_DECL_EXPORT
+void* C_Z30qt_QMetaEnum_flagDebugOperatorR6QDebugyPK11QMetaObjectPKc(QDebug* dbg, quint64 value, const QMetaObject * meta, const char * name) {
+  auto rv = qt_QMetaEnum_flagDebugOperator(*dbg, value, meta, name);
+return new QDebug(rv);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:345
+// [-2] void qt_QMetaEnum_flagDebugOperator(QDebug &, size_t, int)
+extern "C" Q_DECL_EXPORT
+void C_Z30qt_QMetaEnum_flagDebugOperatorR6QDebugmi_1(QDebug* debug, size_t sizeofT, int value) {
+  qt_QMetaEnum_flagDebugOperator(*debug, sizeofT, value);
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qplugin.h:78
 // [-2] void qRegisterStaticPluginFunction(QStaticPlugin)
 extern "C" Q_DECL_EXPORT
@@ -2153,6 +2266,15 @@ int C_Z28qEnvironmentVariableIntValuePKcPb(const char * varName, bool * ok) {
 extern "C" Q_DECL_EXPORT
 bool C_Z27qEnvironmentVariableIsEmptyPKc(const char * varName) {
   return (bool)qEnvironmentVariableIsEmpty(varName);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:367
+// [8] QDebug qt_QMetaEnum_debugOperator(QDebug &, int, const QMetaObject *, const char *)
+extern "C" Q_DECL_EXPORT
+void* C_Z26qt_QMetaEnum_debugOperatorR6QDebugiPK11QMetaObjectPKc(QDebug* arg0, int value, const QMetaObject * meta, const char * name) {
+  auto rv = qt_QMetaEnum_debugOperator(*arg0, value, meta, name);
+return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -2555,6 +2677,22 @@ void* C_Z13qFlagLocationPKc(const char * method) {
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlogging.h:182
+// [-2] void qErrnoWarning(int, const char *, ...)
+extern "C" Q_DECL_EXPORT
+void C_Z13qErrnoWarningiPKcz(int code, const char * msg) {
+  qErrnoWarning(code, msg);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlogging.h:183
+// [-2] void qErrnoWarning(const char *, ...)
+extern "C" Q_DECL_EXPORT
+void C_Z13qErrnoWarningPKcz_1(const char * msg) {
+  qErrnoWarning(msg);
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qglobal.h:687
 // [1] bool qSharedBuild()
 extern "C" Q_DECL_EXPORT
@@ -2603,6 +2741,14 @@ extern "C" Q_DECL_EXPORT
 void C_Z11qSetPadChar5QChar(QChar* ch) {
   auto rv = qSetPadChar(*ch);
 /*return rv;*/
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:104
+// [4] int qvsnprintf(char *, size_t, const char *, __va_list_tag *)
+extern "C" Q_DECL_EXPORT
+int C_Z10qvsnprintfPcmPKcP13__va_list_tag(char * str, size_t n, const char * fmt_, va_list ap) {
+  return (int)qvsnprintf(str, n, fmt_, ap);
 }
 
 //  main block end

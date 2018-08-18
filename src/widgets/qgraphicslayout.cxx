@@ -19,6 +19,8 @@ public:
   virtual ~MyQGraphicsLayout() {}
 // void QGraphicsLayout(QGraphicsLayoutItem *)
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
+// void QGraphicsLayout(QGraphicsLayoutPrivate &, QGraphicsLayoutItem *)
+MyQGraphicsLayout(QGraphicsLayoutPrivate & arg0, QGraphicsLayoutItem * arg1) : QGraphicsLayout(arg0, arg1) {}
 // Protected Visibility=Default Availability=Available
 // void addChildLayoutItem(QGraphicsLayoutItem *)
   virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {

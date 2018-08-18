@@ -19,6 +19,18 @@ public:
 // void QAbstractItemView(QWidget *)
 MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 // Protected virtual Visibility=Default Availability=Available
+// void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QAbstractItemView::dataChanged(topLeft, bottomRight, roles);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
 // void rowsInserted(const QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
@@ -186,6 +198,8 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
   }
   }
 
+// void QAbstractItemView(QAbstractItemViewPrivate &, QWidget *)
+MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstractItemView(arg0, parent) {}
 // Protected Visibility=Default Availability=Available
 // void setHorizontalStepsPerItem(int)
   virtual void setHorizontalStepsPerItem(int steps) {
@@ -735,6 +749,14 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:245
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QAbstractItemView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
+  ((QAbstractItemView*)this_)->QAbstractItemView::dataChanged(*topLeft, *bottomRight, roles);
+}
+
+// Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:246
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
@@ -1190,6 +1212,40 @@ return new QSize(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView10metaObjectEv(void *this_) {
   return (void*)((QAbstractItemView*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:63
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QAbstractItemView11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAbstractItemView*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:63
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN17QAbstractItemView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAbstractItemView*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:63
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QAbstractItemView2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractItemView::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:63
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QAbstractItemView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractItemView::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

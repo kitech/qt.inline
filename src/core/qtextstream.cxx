@@ -20,6 +20,8 @@ public:
 MyQTextStream() : QTextStream() {}
 // void QTextStream(QIODevice *)
 MyQTextStream(QIODevice * device) : QTextStream(device) {}
+// void QTextStream(FILE *, QIODevice::OpenMode)
+MyQTextStream(FILE * fileHandle, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(fileHandle, openMode) {}
 // void QTextStream(QString *, QIODevice::OpenMode)
 MyQTextStream(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(string, openMode) {}
 // void QTextStream(QByteArray *, QIODevice::OpenMode)
@@ -42,6 +44,14 @@ void* C_ZN11QTextStreamC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamC2EP9QIODevice(QIODevice * device) {
   return  new QTextStream(device);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:95
+// [-2] void QTextStream(FILE *, QIODevice::OpenMode)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextStreamC2EP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEE(FILE * fileHandle, QFlags<QIODevice::OpenModeFlag> openMode) {
+  return  new QTextStream(fileHandle, openMode);
 }
 
 // Public Visibility=Default Availability=Available

@@ -424,6 +424,15 @@ return new QStringRef(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:426
+// [-2] QXmlStreamNamespaceDeclarations namespaceDeclarations()
+extern "C" Q_DECL_EXPORT
+QXmlStreamNamespaceDeclarations* C_ZNK16QXmlStreamReader21namespaceDeclarationsEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->namespaceDeclarations();
+return new QXmlStreamNamespaceDeclarations(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtCore/qxmlstream.h:427
 // [-2] void addExtraNamespaceDeclaration(const QXmlStreamNamespaceDeclaration &)
@@ -433,6 +442,35 @@ void C_ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespac
   ((QXmlStreamReader*)this_)->addExtraNamespaceDeclaration(*extraNamespaceDeclaraction);
 }
 #endif // QT_VERSION >= 0x040400
+
+// Public Visibility=Default Availability=Available
+// since 4.4
+// /usr/include/qt/QtCore/qxmlstream.h:428
+// [-2] void addExtraNamespaceDeclarations(const QXmlStreamNamespaceDeclarations &)
+#if QT_VERSION >= 0x040400
+extern "C" Q_DECL_EXPORT
+void C_ZN16QXmlStreamReader29addExtraNamespaceDeclarationsERK7QVectorI30QXmlStreamNamespaceDeclarationE(void *this_, const QXmlStreamNamespaceDeclarations & extraNamespaceDeclaractions) {
+  ((QXmlStreamReader*)this_)->addExtraNamespaceDeclarations(extraNamespaceDeclaractions);
+}
+#endif // QT_VERSION >= 0x040400
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:429
+// [-2] QXmlStreamNotationDeclarations notationDeclarations()
+extern "C" Q_DECL_EXPORT
+QXmlStreamNotationDeclarations* C_ZNK16QXmlStreamReader20notationDeclarationsEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->notationDeclarations();
+return new QXmlStreamNotationDeclarations(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:430
+// [-2] QXmlStreamEntityDeclarations entityDeclarations()
+extern "C" Q_DECL_EXPORT
+QXmlStreamEntityDeclarations* C_ZNK16QXmlStreamReader18entityDeclarationsEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->entityDeclarations();
+return new QXmlStreamEntityDeclarations(rv);
+}
 
 // Public Visibility=Default Availability=Available
 // since 4.4

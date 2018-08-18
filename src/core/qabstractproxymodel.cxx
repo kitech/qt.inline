@@ -31,6 +31,8 @@ MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
   }
   }
 
+// void QAbstractProxyModel(QAbstractProxyModelPrivate &, QObject *)
+MyQAbstractProxyModel(QAbstractProxyModelPrivate & arg0, QObject * parent) : QAbstractProxyModel(arg0, parent) {}
 };
 
 // Protected Visibility=Default Availability=Available
@@ -47,6 +49,40 @@ void C_ZN19QAbstractProxyModel17resetInternalDataEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel10metaObjectEv(void *this_) {
   return (void*)((QAbstractProxyModel*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QAbstractProxyModel11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAbstractProxyModel*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN19QAbstractProxyModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAbstractProxyModel*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QAbstractProxyModel2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractProxyModel::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QAbstractProxyModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAbstractProxyModel::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -152,6 +188,15 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:76
+// [8] QMap<int, QVariant> itemData(const QModelIndex &)
+extern "C" Q_DECL_EXPORT
+void C_ZNK19QAbstractProxyModel8itemDataERK11QModelIndex(void *this_, QModelIndex* index) {
+  auto rv = ((QAbstractProxyModel*)this_)->itemData(*index);
+/*return rv;*/
+}
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:77
 // [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
@@ -165,6 +210,14 @@ Qt::ItemFlags C_ZNK19QAbstractProxyModel5flagsERK11QModelIndex(void *this_, QMod
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
   return (bool)((QAbstractProxyModel*)this_)->setData(*index, *value, role);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:80
+// [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
+extern "C" Q_DECL_EXPORT
+bool C_ZN19QAbstractProxyModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, const QMap<int, QVariant> & roles) {
+  return (bool)((QAbstractProxyModel*)this_)->setItemData(*index, roles);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -235,6 +288,14 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:91
+// [8] QMimeData * mimeData(const QModelIndexList &)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK19QAbstractProxyModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
+  return (void*)((QAbstractProxyModel*)this_)->mimeData(indexes);
+}
+
+// Public virtual Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qabstractproxymodel.h:92
 // [1] bool canDropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
@@ -279,6 +340,14 @@ Qt::DropActions C_ZNK19QAbstractProxyModel20supportedDragActionsEv(void *this_) 
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK19QAbstractProxyModel20supportedDropActionsEv(void *this_) {
   return (Qt::DropActions)((QAbstractProxyModel*)this_)->supportedDropActions();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:101
+// [-2] void sourceModelChanged(QAbstractProxyModel::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN19QAbstractProxyModel18sourceModelChangedENS_14QPrivateSignalE(void *this_, QAbstractProxyModel::QPrivateSignal* arg0) {
+  ((QAbstractProxyModel*)this_)->sourceModelChanged(*arg0);
 }
 
 //  main block end

@@ -29,6 +29,40 @@ void* C_ZNK22QQuickWebEngineProfile10metaObjectEv(void *this_) {
   return (void*)((QQuickWebEngineProfile*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:66
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QQuickWebEngineProfile11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQuickWebEngineProfile*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:66
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN22QQuickWebEngineProfile11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQuickWebEngineProfile*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:66
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QQuickWebEngineProfile2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickWebEngineProfile::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:66
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QQuickWebEngineProfile6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickWebEngineProfile::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:81
 // [-2] void QQuickWebEngineProfile(QObject *)
@@ -296,6 +330,15 @@ bool C_ZNK22QQuickWebEngineProfile19isSpellCheckEnabledEv(void *this_) {
   return (bool)((QQuickWebEngineProfile*)this_)->isSpellCheckEnabled();
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:142
+// [-2] QQmlListProperty<QQuickWebEngineScript> userScripts()
+extern "C" Q_DECL_EXPORT
+void C_ZN22QQuickWebEngineProfile11userScriptsEv(void *this_) {
+  auto rv = ((QQuickWebEngineProfile*)this_)->userScripts();
+/*return rv;*/
+}
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:144
 // [8] QQuickWebEngineProfile * defaultProfile()
@@ -390,6 +433,22 @@ void C_ZN22QQuickWebEngineProfile26spellCheckLanguagesChangedEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN22QQuickWebEngineProfile24spellCheckEnabledChangedEv(void *this_) {
   ((QQuickWebEngineProfile*)this_)->spellCheckEnabledChanged();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:159
+// [-2] void downloadRequested(QQuickWebEngineDownloadItem *)
+extern "C" Q_DECL_EXPORT
+void C_ZN22QQuickWebEngineProfile17downloadRequestedEP27QQuickWebEngineDownloadItem(void *this_, QQuickWebEngineDownloadItem * download) {
+  ((QQuickWebEngineProfile*)this_)->downloadRequested(download);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:160
+// [-2] void downloadFinished(QQuickWebEngineDownloadItem *)
+extern "C" Q_DECL_EXPORT
+void C_ZN22QQuickWebEngineProfile16downloadFinishedEP27QQuickWebEngineDownloadItem(void *this_, QQuickWebEngineDownloadItem * download) {
+  ((QQuickWebEngineProfile*)this_)->downloadFinished(download);
 }
 
 //  main block end

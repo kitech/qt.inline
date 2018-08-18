@@ -22,6 +22,8 @@ MyQMediaTimeRange() : QMediaTimeRange() {}
 MyQMediaTimeRange(qint64 start, qint64 end) : QMediaTimeRange(start, end) {}
 // void QMediaTimeRange(const QMediaTimeInterval &)
 MyQMediaTimeRange(const QMediaTimeInterval & arg0) : QMediaTimeRange(arg0) {}
+// void QMediaTimeRange(const QMediaTimeRange &)
+MyQMediaTimeRange(const QMediaTimeRange & range_) : QMediaTimeRange(range_) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -46,6 +48,14 @@ void* C_ZN15QMediaTimeRangeC2Exx(qint64 start, qint64 end) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QMediaTimeRangeC2ERK18QMediaTimeInterval(QMediaTimeInterval* arg0) {
   return  new QMediaTimeRange(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediatimerange.h:86
+// [-2] void QMediaTimeRange(const QMediaTimeRange &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QMediaTimeRangeC2ERKS_(QMediaTimeRange* range_) {
+  return  new QMediaTimeRange(*range_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,6 +97,15 @@ qint64 C_ZNK15QMediaTimeRange12earliestTimeEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK15QMediaTimeRange10latestTimeEv(void *this_) {
   return (qint64)((QMediaTimeRange*)this_)->latestTime();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediatimerange.h:95
+// [-2] QList<QMediaTimeInterval> intervals()
+extern "C" Q_DECL_EXPORT
+QList<QMediaTimeInterval>* C_ZNK15QMediaTimeRange9intervalsEv(void *this_) {
+  auto rv = ((QMediaTimeRange*)this_)->intervals();
+return new QList<QMediaTimeInterval>(rv);
 }
 
 // Public Visibility=Default Availability=Available

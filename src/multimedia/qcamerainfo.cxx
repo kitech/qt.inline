@@ -21,6 +21,8 @@ public:
 MyQCameraInfo(const QByteArray & name) : QCameraInfo(name) {}
 // void QCameraInfo(const QCamera &)
 MyQCameraInfo(const QCamera & camera) : QCameraInfo(camera) {}
+// void QCameraInfo(const QCameraInfo &)
+MyQCameraInfo(const QCameraInfo & other) : QCameraInfo(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +39,14 @@ void* C_ZN11QCameraInfoC2ERK10QByteArray(QByteArray* name) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QCameraInfoC2ERK7QCamera(QCamera* camera) {
   return  new QCameraInfo(*camera);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerainfo.h:55
+// [-2] void QCameraInfo(const QCameraInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QCameraInfoC2ERKS_(QCameraInfo* other) {
+  return  new QCameraInfo(*other);
 }
 
 // Public Visibility=Default Availability=Available

@@ -19,6 +19,8 @@ public:
   virtual ~MyQTextBoundaryFinder() {}
 // void QTextBoundaryFinder()
 MyQTextBoundaryFinder() : QTextBoundaryFinder() {}
+// void QTextBoundaryFinder(const QTextBoundaryFinder &)
+MyQTextBoundaryFinder(const QTextBoundaryFinder & other) : QTextBoundaryFinder(other) {}
 // void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QString &)
 MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QString & string) : QTextBoundaryFinder(type_, string) {}
 // void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QChar *, int, unsigned char *, int)
@@ -31,6 +33,14 @@ MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QChar * cha
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QTextBoundaryFinderC2Ev() {
   return  new QTextBoundaryFinder();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:55
+// [-2] void QTextBoundaryFinder(const QTextBoundaryFinder &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QTextBoundaryFinderC2ERKS_(QTextBoundaryFinder* other) {
+  return  new QTextBoundaryFinder(*other);
 }
 
 // Public Visibility=Default Availability=Available

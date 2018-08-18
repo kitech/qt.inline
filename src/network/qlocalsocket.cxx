@@ -71,6 +71,40 @@ void* C_ZNK12QLocalSocket10metaObjectEv(void *this_) {
   return (void*)((QLocalSocket*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QLocalSocket11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QLocalSocket*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN12QLocalSocket11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QLocalSocket*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QLocalSocket2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QLocalSocket::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QLocalSocket6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QLocalSocket::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalsocket.h:82
 // [-2] void QLocalSocket(QObject *)

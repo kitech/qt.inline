@@ -19,6 +19,8 @@ public:
   virtual ~MyQGraphicsEffect() {}
 // void QGraphicsEffect(QObject *)
 MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
+// void QGraphicsEffect(QGraphicsEffectPrivate &, QObject *)
+MyQGraphicsEffect(QGraphicsEffectPrivate & d, QObject * parent) : QGraphicsEffect(d, parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // void draw(QPainter *)
   virtual void draw(QPainter * painter) {
@@ -169,6 +171,40 @@ void* C_ZNK15QGraphicsEffect10metaObjectEv(void *this_) {
   return (void*)((QGraphicsEffect*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:64
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGraphicsEffect11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QGraphicsEffect*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:64
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QGraphicsEffect11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QGraphicsEffect*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:64
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGraphicsEffect2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGraphicsEffect::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:64
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QGraphicsEffect6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QGraphicsEffect::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:82
 // [-2] void QGraphicsEffect(QObject *)
@@ -233,6 +269,14 @@ void C_ZN15QGraphicsEffect6updateEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsEffect14enabledChangedEb(void *this_, bool enabled) {
   ((QGraphicsEffect*)this_)->enabledChanged(enabled);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:120
+// [8] QGraphicsEffectSource * source()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK15QGraphicsEffect6sourceEv(void *this_) {
+  return (void*)((QGraphicsEffect*)this_)->source();
 }
 
 //  main block end

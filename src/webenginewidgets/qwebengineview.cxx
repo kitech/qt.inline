@@ -211,6 +211,40 @@ void* C_ZNK14QWebEngineView10metaObjectEv(void *this_) {
   return (void*)((QWebEngineView*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:59
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QWebEngineView11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QWebEngineView*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:59
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN14QWebEngineView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QWebEngineView*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:59
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QWebEngineView2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWebEngineView::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:59
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QWebEngineView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QWebEngineView::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:69
 // [-2] void QWebEngineView(QWidget *)
@@ -377,6 +411,14 @@ qreal C_ZNK14QWebEngineView10zoomFactorEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEngineView13setZoomFactorEd(void *this_, qreal factor) {
   ((QWebEngineView*)this_)->setZoomFactor(factor);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:103
+// [-2] void findText(const QString &, QWebEnginePage::FindFlags, const QWebEngineCallback<bool> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEngineView8findTextERK7QString6QFlagsIN14QWebEnginePage8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, const QWebEngineCallback<bool> & resultCallback) {
+  ((QWebEngineView*)this_)->findText(*subString, options, resultCallback);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -21,6 +21,8 @@ public:
 MyQHstsPolicy() : QHstsPolicy() {}
 // void QHstsPolicy(const QDateTime &, QHstsPolicy::PolicyFlags, const QString &, QUrl::ParsingMode)
 MyQHstsPolicy(const QDateTime & expiry, QFlags<QHstsPolicy::PolicyFlag> flags, const QString & host, QUrl::ParsingMode mode) : QHstsPolicy(expiry, flags, host, mode) {}
+// void QHstsPolicy(const QHstsPolicy &)
+MyQHstsPolicy(const QHstsPolicy & rhs) : QHstsPolicy(rhs) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -37,6 +39,14 @@ void* C_ZN11QHstsPolicyC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QHstsPolicyC2ERK9QDateTime6QFlagsINS_10PolicyFlagEERK7QStringN4QUrl11ParsingModeE(QDateTime* expiry, QFlags<QHstsPolicy::PolicyFlag> flags, QString* host, QUrl::ParsingMode mode) {
   return  new QHstsPolicy(*expiry, flags, *host, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhstspolicy.h:66
+// [-2] void QHstsPolicy(const QHstsPolicy &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QHstsPolicyC2ERKS_(QHstsPolicy* rhs) {
+  return  new QHstsPolicy(*rhs);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,6 +88,15 @@ void C_ZN11QHstsPolicy4swapERS_(void *this_, QHstsPolicy* other) {
 extern "C" Q_DECL_EXPORT
 void C_ZN11QHstsPolicy7setHostERK7QStringN4QUrl11ParsingModeE(void *this_, QString* host, QUrl::ParsingMode mode) {
   ((QHstsPolicy*)this_)->setHost(*host, mode);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhstspolicy.h:74
+// [8] QString host(QUrl::ComponentFormattingOptions)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QHstsPolicy4hostE6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
+  auto rv = ((QHstsPolicy*)this_)->host(options);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

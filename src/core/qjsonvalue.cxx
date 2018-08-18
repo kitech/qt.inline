@@ -37,6 +37,10 @@ MyQJsonValue(const char * s) : QJsonValue(s) {}
 MyQJsonValue(const QJsonArray & a) : QJsonValue(a) {}
 // void QJsonValue(const QJsonObject &)
 MyQJsonValue(const QJsonObject & o) : QJsonValue(o) {}
+// void QJsonValue(const QJsonValue &)
+MyQJsonValue(const QJsonValue & other) : QJsonValue(other) {}
+// void QJsonValue(QJsonValue &&)
+MyQJsonValue(QJsonValue && other) : QJsonValue(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -130,6 +134,14 @@ void C_ZN10QJsonValueD2Ev(void *this_) {
   delete (QJsonValue*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:92
+// [-2] void QJsonValue(const QJsonValue &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QJsonValueC2ERKS_(QJsonValue* other) {
+  return  new QJsonValue(*other);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:93
 // [24] QJsonValue & operator=(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
@@ -137,6 +149,17 @@ void* C_ZN10QJsonValueaSERKS_(void *this_, QJsonValue* other) {
   auto& rv = ((QJsonValue*)this_)->operator=(*other);
 return &rv;
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.10
+// /usr/include/qt/QtCore/qjsonvalue.h:95
+// [-2] void QJsonValue(QJsonValue &&)
+#if QT_VERSION >= 0x050a00
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QJsonValueC2EOS_(QJsonValue && other) {
+  return  new QJsonValue(other);
+}
+#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:105

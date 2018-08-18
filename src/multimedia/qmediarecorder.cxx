@@ -18,6 +18,8 @@ public:
   virtual ~MyQMediaRecorder() {}
 // void QMediaRecorder(QMediaObject *, QObject *)
 MyQMediaRecorder(QMediaObject * mediaObject, QObject * parent) : QMediaRecorder(mediaObject, parent) {}
+// void QMediaRecorder(QMediaRecorderPrivate &, QMediaObject *, QObject *)
+MyQMediaRecorder(QMediaRecorderPrivate & dd, QMediaObject * mediaObject, QObject * parent) : QMediaRecorder(dd, mediaObject, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * object) {
@@ -47,6 +49,40 @@ bool C_ZN14QMediaRecorder14setMediaObjectEP12QMediaObject(void *this_, QMediaObj
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMediaRecorder10metaObjectEv(void *this_) {
   return (void*)((QMediaRecorder*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:67
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QMediaRecorder11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QMediaRecorder*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:67
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN14QMediaRecorder11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QMediaRecorder*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:67
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QMediaRecorder2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMediaRecorder::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:67
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QMediaRecorder6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QMediaRecorder::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -209,6 +245,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:139
+// [-2] QList<int> supportedAudioSampleRates(const QAudioEncoderSettings &, bool *)
+extern "C" Q_DECL_EXPORT
+QList<int>* C_ZNK14QMediaRecorder25supportedAudioSampleRatesERK21QAudioEncoderSettingsPb(void *this_, QAudioEncoderSettings* settings, bool * continuous) {
+  auto rv = ((QMediaRecorder*)this_)->supportedAudioSampleRates(*settings, continuous);
+return new QList<int>(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediarecorder.h:142
 // [8] QStringList supportedVideoCodecs()
 extern "C" Q_DECL_EXPORT
@@ -233,6 +278,15 @@ extern "C" Q_DECL_EXPORT
 QList<QSize>* C_ZNK14QMediaRecorder20supportedResolutionsERK21QVideoEncoderSettingsPb(void *this_, QVideoEncoderSettings* settings, bool * continuous) {
   auto rv = ((QMediaRecorder*)this_)->supportedResolutions(*settings, continuous);
 return new QList<QSize>(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:148
+// [-2] QList<qreal> supportedFrameRates(const QVideoEncoderSettings &, bool *)
+extern "C" Q_DECL_EXPORT
+QList<qreal>* C_ZNK14QMediaRecorder19supportedFrameRatesERK21QVideoEncoderSettingsPb(void *this_, QVideoEncoderSettings* settings, bool * continuous) {
+  auto rv = ((QMediaRecorder*)this_)->supportedFrameRates(*settings, continuous);
+return new QList<qreal>(rv);
 }
 
 // Public Visibility=Default Availability=Available

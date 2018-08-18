@@ -57,6 +57,40 @@ void* C_ZNK9QSettings10metaObjectEv(void *this_) {
   return (void*)((QSettings*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:71
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QSettings11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QSettings*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:71
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QSettings11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QSettings*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:71
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QSettings2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QSettings::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:71
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QSettings6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QSettings::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:127
 // [-2] void QSettings(const QString &, const QString &, QObject *)
@@ -425,6 +459,14 @@ void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, QString* path) {
   QSettings::setPath(format, scope, *path);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:197
+// [4] QSettings::Format registerFormat(const QString &, QSettings::ReadFunc, QSettings::WriteFunc, Qt::CaseSensitivity)
+extern "C" Q_DECL_EXPORT
+QSettings::Format C_ZN9QSettings14registerFormatERK7QStringPFbR9QIODeviceR4QMapIS0_8QVariantEEPFbS4_RKS7_EN2Qt15CaseSensitivityE(QString* extension, QSettings::ReadFunc readFunc, QSettings::WriteFunc writeFunc, Qt::CaseSensitivity caseSensitivity) {
+  return (QSettings::Format)QSettings::registerFormat(*extension, readFunc, writeFunc, caseSensitivity);
 }
 
 //  main block end

@@ -19,6 +19,8 @@ public:
   virtual ~MyQScrollerProperties() {}
 // void QScrollerProperties()
 MyQScrollerProperties() : QScrollerProperties() {}
+// void QScrollerProperties(const QScrollerProperties &)
+MyQScrollerProperties(const QScrollerProperties & sp) : QScrollerProperties(sp) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQScrollerProperties() : QScrollerProperties() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QScrollerPropertiesC2Ev() {
   return  new QScrollerProperties();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:61
+// [-2] void QScrollerProperties(const QScrollerProperties &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN19QScrollerPropertiesC2ERKS_(QScrollerProperties* sp) {
+  return  new QScrollerProperties(*sp);
 }
 
 // Public Visibility=Default Availability=Available

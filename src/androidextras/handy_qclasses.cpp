@@ -8,6 +8,7 @@
 #include <QtAndroidExtras>
 #include "callback_inherit.h"
 
+/*
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAndroidJniObject16callObjectMethodEPKcS1_z(void* this_, const char *methodName, const char *signature, ...) {
     // C variadic parameters forward
@@ -17,6 +18,7 @@ void* C_ZNK17QAndroidJniObject16callObjectMethodEPKcS1_z(void* this_, const char
     va_end(args);
     return new QAndroidJniObject(rv);
 }
+*/
 
 extern "C" Q_DECL_EXPORT
 void C_ZNK17QAndroidJniObject10callMethodIvEET_PKcS3_z(void* this_, const char *methodName, const char *signature, ...) {
@@ -198,7 +200,7 @@ double C_ZN17QAndroidJniObject16callStaticMethodIdEET_PKcS3_S3_z(const char *cla
     return rv;
 }
 
-
+/*
 extern "C" Q_DECL_EXPORT
 QAndroidJniObject* C_ZN17QAndroidJniObject22callStaticObjectMethodEPKcS1_S1_z(const char *className, const char *methodName, const char *signature,
                                                                  ...) {
@@ -208,6 +210,7 @@ QAndroidJniObject* C_ZN17QAndroidJniObject22callStaticObjectMethodEPKcS1_S1_z(co
     va_end(args);
     return new QAndroidJniObject(rv);
 }
+*/
 
 
 /////

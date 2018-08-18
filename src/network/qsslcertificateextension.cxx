@@ -19,6 +19,8 @@ public:
   virtual ~MyQSslCertificateExtension() {}
 // void QSslCertificateExtension()
 MyQSslCertificateExtension() : QSslCertificateExtension() {}
+// void QSslCertificateExtension(const QSslCertificateExtension &)
+MyQSslCertificateExtension(const QSslCertificateExtension & other) : QSslCertificateExtension(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQSslCertificateExtension() : QSslCertificateExtension() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QSslCertificateExtensionC2Ev() {
   return  new QSslCertificateExtension();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificateextension.h:60
+// [-2] void QSslCertificateExtension(const QSslCertificateExtension &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN24QSslCertificateExtensionC2ERKS_(QSslCertificateExtension* other) {
+  return  new QSslCertificateExtension(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

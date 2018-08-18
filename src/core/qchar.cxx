@@ -30,6 +30,8 @@ MyQChar(uint rc) : QChar(rc) {}
 MyQChar(int rc) : QChar(rc) {}
 // void QChar(QChar::SpecialCharacter)
 MyQChar(QChar::SpecialCharacter s) : QChar(s) {}
+// void QChar(QLatin1Char)
+MyQChar(QLatin1Char ch) : QChar(ch) {}
 // void QChar(char16_t)
 MyQChar(char16_t ch) : QChar(ch) {}
 // void QChar(char)
@@ -92,6 +94,14 @@ void* C_ZN5QCharC2Ei(int rc) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QCharC2ENS_16SpecialCharacterE(QChar::SpecialCharacter s) {
   return  new QChar(s);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qchar.h:88
+// [-2] void QChar(QLatin1Char)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QCharC2E11QLatin1Char(QLatin1Char* ch) {
+  return  new QChar(*ch);
 }
 
 // Public inline Visibility=Default Availability=Available

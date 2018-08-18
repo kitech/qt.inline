@@ -16,6 +16,8 @@
 class Q_DECL_EXPORT MyQSGGeometry : public QSGGeometry {
 public:
   virtual ~MyQSGGeometry() {}
+// void QSGGeometry(const QSGGeometry::AttributeSet &, int, int, int)
+MyQSGGeometry(const QSGGeometry::AttributeSet & attribs, int vertexCount, int indexCount, int indexType) : QSGGeometry(attribs, vertexCount, indexCount, indexType) {}
 };
 
 // Public static Visibility=Default Availability=Available
@@ -43,6 +45,14 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QSGGeometry32defaultAttributes_ColoredPoint2DEv() {
   auto& rv = QSGGeometry::defaultAttributes_ColoredPoint2D();
 return new QSGGeometry::AttributeSet(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsggeometry.h:142
+// [-2] void QSGGeometry(const QSGGeometry::AttributeSet &, int, int, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QSGGeometryC2ERKNS_12AttributeSetEiii(const QSGGeometry::AttributeSet & attribs, int vertexCount, int indexCount, int indexType) {
+  return  new QSGGeometry(attribs, vertexCount, indexCount, indexType);
 }
 
 // Public virtual Visibility=Default Availability=Available

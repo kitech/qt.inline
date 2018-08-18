@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkInterface() {}
 // void QNetworkInterface()
 MyQNetworkInterface() : QNetworkInterface() {}
+// void QNetworkInterface(const QNetworkInterface &)
+MyQNetworkInterface(const QNetworkInterface & other) : QNetworkInterface(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQNetworkInterface() : QNetworkInterface() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkInterfaceC2Ev() {
   return  new QNetworkInterface();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:105
+// [-2] void QNetworkInterface(const QNetworkInterface &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QNetworkInterfaceC2ERKS_(QNetworkInterface* other) {
+  return  new QNetworkInterface(*other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -123,6 +133,15 @@ void* C_ZNK17QNetworkInterface15hardwareAddressEv(void *this_) {
 return new QString(rv);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:121
+// [-2] QList<QNetworkAddressEntry> addressEntries()
+extern "C" Q_DECL_EXPORT
+QList<QNetworkAddressEntry>* C_ZNK17QNetworkInterface14addressEntriesEv(void *this_) {
+  auto rv = ((QNetworkInterface*)this_)->addressEntries();
+return new QList<QNetworkAddressEntry>(rv);
+}
+
 // Public static Visibility=Default Availability=Available
 // since 5.7
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:123
@@ -163,5 +182,23 @@ void* C_ZN17QNetworkInterface22interfaceNameFromIndexEi(int index) {
 return new QString(rv);
 }
 #endif // QT_VERSION >= 0x050700
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:127
+// [-2] QList<QNetworkInterface> allInterfaces()
+extern "C" Q_DECL_EXPORT
+QList<QNetworkInterface>* C_ZN17QNetworkInterface13allInterfacesEv() {
+  auto rv = QNetworkInterface::allInterfaces();
+return new QList<QNetworkInterface>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:128
+// [-2] QList<QHostAddress> allAddresses()
+extern "C" Q_DECL_EXPORT
+QList<QHostAddress>* C_ZN17QNetworkInterface12allAddressesEv() {
+  auto rv = QNetworkInterface::allAddresses();
+return new QList<QHostAddress>(rv);
+}
 
 //  main block end

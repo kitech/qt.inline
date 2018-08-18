@@ -16,6 +16,8 @@
 class Q_DECL_EXPORT MyQFileInfo : public QFileInfo {
 public:
   virtual ~MyQFileInfo() {}
+// void QFileInfo(QFileInfoPrivate *)
+MyQFileInfo(QFileInfoPrivate * d) : QFileInfo(d) {}
 // void QFileInfo()
 MyQFileInfo() : QFileInfo() {}
 // void QFileInfo(const QString &)
@@ -24,7 +26,17 @@ MyQFileInfo(const QString & file) : QFileInfo(file) {}
 MyQFileInfo(const QFile & file) : QFileInfo(file) {}
 // void QFileInfo(const QDir &, const QString &)
 MyQFileInfo(const QDir & dir, const QString & file) : QFileInfo(dir, file) {}
+// void QFileInfo(const QFileInfo &)
+MyQFileInfo(const QFileInfo & fileinfo) : QFileInfo(fileinfo) {}
 };
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:60
+// [-2] void QFileInfo(QFileInfoPrivate *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QFileInfoC2EP16QFileInfoPrivate(QFileInfoPrivate * d) {
+  return  new QFileInfo(d);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:62
@@ -56,6 +68,14 @@ void* C_ZN9QFileInfoC2ERK5QFile(QFile* file) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QFileInfoC2ERK4QDirRK7QString(QDir* dir, QString* file) {
   return  new QFileInfo(*dir, *file);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:66
+// [-2] void QFileInfo(const QFileInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QFileInfoC2ERKS_(QFileInfo* fileinfo) {
+  return  new QFileInfo(*fileinfo);
 }
 
 // Public Visibility=Default Availability=Available

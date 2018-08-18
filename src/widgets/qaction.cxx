@@ -35,6 +35,8 @@ MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(
   }
   }
 
+// void QAction(QActionPrivate &, QObject *)
+MyQAction(QActionPrivate & dd, QObject * parent) : QAction(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -51,6 +53,40 @@ bool C_ZN7QAction5eventEP6QEvent(void *this_, QEvent * arg0) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction10metaObjectEv(void *this_) {
   return (void*)((QAction*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:62
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QAction11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QAction*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:62
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN7QAction11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QAction*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:62
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QAction2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAction::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:62
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QAction6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QAction::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -272,12 +308,35 @@ return new QKeySequence(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
+// /usr/include/qt/QtWidgets/qaction.h:136
+// [-2] void setShortcuts(const QList<QKeySequence> &)
+#if QT_VERSION >= 0x040200
+extern "C" Q_DECL_EXPORT
+void C_ZN7QAction12setShortcutsERK5QListI12QKeySequenceE(void *this_, const QList<QKeySequence> & shortcuts) {
+  ((QAction*)this_)->setShortcuts(shortcuts);
+}
+#endif // QT_VERSION >= 0x040200
+
+// Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qaction.h:137
 // [-2] void setShortcuts(QKeySequence::StandardKey)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction12setShortcutsEN12QKeySequence11StandardKeyE(void *this_, QKeySequence::StandardKey arg0) {
   ((QAction*)this_)->setShortcuts(arg0);
+}
+#endif // QT_VERSION >= 0x040200
+
+// Public Visibility=Default Availability=Available
+// since 4.2
+// /usr/include/qt/QtWidgets/qaction.h:138
+// [-2] QList<QKeySequence> shortcuts()
+#if QT_VERSION >= 0x040200
+extern "C" Q_DECL_EXPORT
+QList<QKeySequence>* C_ZNK7QAction9shortcutsEv(void *this_) {
+  auto rv = ((QAction*)this_)->shortcuts();
+return new QList<QKeySequence>(rv);
 }
 #endif // QT_VERSION >= 0x040200
 
@@ -458,6 +517,30 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction12parentWidgetEv(void *this_) {
   return (void*)((QAction*)this_)->parentWidget();
 }
+
+// Public Visibility=Default Availability=Available
+// since 4.2
+// /usr/include/qt/QtWidgets/qaction.h:177
+// [-2] QList<QWidget *> associatedWidgets()
+#if QT_VERSION >= 0x040200
+extern "C" Q_DECL_EXPORT
+QList<QWidget *>* C_ZNK7QAction17associatedWidgetsEv(void *this_) {
+  auto rv = ((QAction*)this_)->associatedWidgets();
+return new QList<QWidget *>(rv);
+}
+#endif // QT_VERSION >= 0x040200
+
+// Public Visibility=Default Availability=Available
+// since 4.5
+// /usr/include/qt/QtWidgets/qaction.h:179
+// [-2] QList<QGraphicsWidget *> associatedGraphicsWidgets()
+#if QT_VERSION >= 0x040500
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsWidget *>* C_ZNK7QAction25associatedGraphicsWidgetsEv(void *this_) {
+  auto rv = ((QAction*)this_)->associatedGraphicsWidgets();
+return new QList<QGraphicsWidget *>(rv);
+}
+#endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:187

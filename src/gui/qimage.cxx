@@ -34,6 +34,10 @@ MyQImage(const uchar * data, int width, int height, int bytesPerLine, QImage::Fo
 MyQImage(char** xpm) : QImage(xpm) {}
 // void QImage(const QString &, const char *)
 MyQImage(const QString & fileName, const char * format) : QImage(fileName, format) {}
+// void QImage(const QImage &)
+MyQImage(const QImage & arg0) : QImage(arg0) {}
+// void QImage(QImage &&)
+MyQImage(QImage && other) : QImage(other) {}
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
@@ -287,6 +291,27 @@ void* C_ZN6QImageC2ERK7QStringPKc(QString* fileName, const char * format) {
   return  new MyQImage(*fileName, format);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:149
+// [-2] void QImage(const QImage &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImageC2ERKS_(QImage* arg0) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(*arg0);
+}
+
+// Public inline Visibility=Default Availability=Available
+// since 5.2
+// /usr/include/qt/QtGui/qimage.h:151
+// [-2] void QImage(QImage &&)
+#if QT_VERSION >= 0x050200
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImageC2EOS_(QImage && other) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(other);
+}
+#endif // QT_VERSION >= 0x050200
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:155
 // [-2] void ~QImage()
@@ -412,6 +437,15 @@ return new QImage(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNO6QImage15convertToFormatENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format f, QFlags<Qt::ImageConversionFlag> flags) {
   auto rv = ((QImage*)this_)->convertToFormat(f, flags);
+return new QImage(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:194
+// [32] QImage convertToFormat(QImage::Format, const QVector<QRgb> &, Qt::ImageConversionFlags)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK6QImage15convertToFormatENS_6FormatERK7QVectorIjE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format f, const QVector<QRgb> & colorTable, QFlags<Qt::ImageConversionFlag> flags) {
+  auto rv = ((QImage*)this_)->convertToFormat(f, colorTable, flags);
 return new QImage(rv);
 }
 
@@ -720,6 +754,23 @@ void C_ZN6QImage13setPixelColorERK6QPointRK6QColor(void *this_, QPoint* pt, QCol
   ((QImage*)this_)->setPixelColor(*pt, *c);
 }
 #endif // QT_VERSION >= 0x050600
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:245
+// [8] QVector<QRgb> colorTable()
+extern "C" Q_DECL_EXPORT
+void C_ZNK6QImage10colorTableEv(void *this_) {
+  auto rv = ((QImage*)this_)->colorTable();
+/*return rv;*/
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:249
+// [-2] void setColorTable(const QVector<QRgb>)
+extern "C" Q_DECL_EXPORT
+void C_ZN6QImage13setColorTableE7QVectorIjE(void *this_, const QVector<QRgb> colors) {
+  ((QImage*)this_)->setColorTable(colors);
+}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:252
@@ -1116,6 +1167,15 @@ return new QPixelFormat(rv);
 extern "C" Q_DECL_EXPORT
 QImage::Format C_ZN6QImage13toImageFormatE12QPixelFormat(QPixelFormat* format) {
   return (QImage::Format)QImage::toImageFormat(*format);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:371
+// [8] QImage::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QImage8data_ptrEv(void *this_) {
+  auto& rv = ((QImage*)this_)->data_ptr();
+return &rv;
 }
 
 //  main block end

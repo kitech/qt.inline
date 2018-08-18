@@ -36,6 +36,10 @@ MyQColor(const char * aname) : QColor(aname) {}
 MyQColor(QLatin1String name) : QColor(name) {}
 // void QColor(QColor::Spec)
 MyQColor(QColor::Spec spec) : QColor(spec) {}
+// void QColor(const QColor &)
+MyQColor(const QColor & color) : QColor(color) {}
+// void QColor(QColor &&)
+MyQColor(QColor && other) : QColor(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
@@ -122,6 +126,22 @@ void* C_ZN6QColorC2E13QLatin1String(QLatin1String* name) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QColorC2ENS_4SpecE(QColor::Spec spec) {
   return  new QColor(spec);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:84
+// [-2] void QColor(const QColor &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QColorC2ERKS_(QColor* color) {
+  return  new QColor(*color);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:86
+// [-2] void QColor(QColor &&)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QColorC2EOS_(QColor && other) {
+  return  new QColor(other);
 }
 
 // Public inline Visibility=Default Availability=Available

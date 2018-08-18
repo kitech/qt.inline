@@ -29,6 +29,40 @@ void* C_ZNK13QFileSelector10metaObjectEv(void *this_) {
   return (void*)((QFileSelector*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:51
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QFileSelector11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QFileSelector*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:51
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN13QFileSelector11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QFileSelector*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:51
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QFileSelector2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QFileSelector::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:51
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QFileSelector6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QFileSelector::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:53
 // [-2] void QFileSelector(QObject *)

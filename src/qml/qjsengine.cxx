@@ -21,6 +21,8 @@ public:
 MyQJSEngine() : QJSEngine() {}
 // void QJSEngine(QObject *)
 MyQJSEngine(QObject * parent) : QJSEngine(parent) {}
+// void QJSEngine(QJSEnginePrivate &, QObject *)
+MyQJSEngine(QJSEnginePrivate & dd, QObject * parent) : QJSEngine(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -29,6 +31,40 @@ MyQJSEngine(QObject * parent) : QJSEngine(parent) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QJSEngine10metaObjectEv(void *this_) {
   return (void*)((QJSEngine*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:62
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QJSEngine11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QJSEngine*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:62
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QJSEngine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QJSEngine*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:62
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QJSEngine2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QJSEngine::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:62
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QJSEngine6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QJSEngine::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -98,6 +134,18 @@ void* C_ZN9QJSEngine10newQObjectEP7QObject(void *this_, QObject * object) {
   auto rv = ((QJSEngine*)this_)->newQObject(object);
 return new QJSValue(rv);
 }
+
+// Public Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtQml/qjsengine.h:77
+// [8] QJSValue newQMetaObject(const QMetaObject *)
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QJSEngine14newQMetaObjectEPK11QMetaObject(void *this_, const QMetaObject * metaObject) {
+  auto rv = ((QJSEngine*)this_)->newQMetaObject(metaObject);
+return new QJSValue(rv);
+}
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:96

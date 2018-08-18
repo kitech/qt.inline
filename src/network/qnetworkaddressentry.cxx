@@ -19,6 +19,8 @@ public:
   virtual ~MyQNetworkAddressEntry() {}
 // void QNetworkAddressEntry()
 MyQNetworkAddressEntry() : QNetworkAddressEntry() {}
+// void QNetworkAddressEntry(const QNetworkAddressEntry &)
+MyQNetworkAddressEntry(const QNetworkAddressEntry & other) : QNetworkAddressEntry(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -27,6 +29,14 @@ MyQNetworkAddressEntry() : QNetworkAddressEntry() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QNetworkAddressEntryC2Ev() {
   return  new QNetworkAddressEntry();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:60
+// [-2] void QNetworkAddressEntry(const QNetworkAddressEntry &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QNetworkAddressEntryC2ERKS_(QNetworkAddressEntry* other) {
+  return  new QNetworkAddressEntry(*other);
 }
 
 // Public inline Visibility=Default Availability=Available

@@ -93,6 +93,40 @@ void* C_ZNK17QSignalTransition10metaObjectEv(void *this_) {
   return (void*)((QSignalTransition*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:53
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QSignalTransition11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QSignalTransition*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:53
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN17QSignalTransition11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QSignalTransition*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:53
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QSignalTransition2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QSignalTransition::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:53
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QSignalTransition6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QSignalTransition::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:58
 // [-2] void QSignalTransition(QState *)
@@ -149,6 +183,22 @@ return new QByteArray(rv);
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSignalTransition9setSignalERK10QByteArray(void *this_, QByteArray* signal) {
   ((QSignalTransition*)this_)->setSignal(*signal);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:89
+// [-2] void senderObjectChanged(QSignalTransition::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSignalTransition19senderObjectChangedENS_14QPrivateSignalE(void *this_, QSignalTransition::QPrivateSignal* arg0) {
+  ((QSignalTransition*)this_)->senderObjectChanged(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:90
+// [-2] void signalChanged(QSignalTransition::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSignalTransition13signalChangedENS_14QPrivateSignalE(void *this_, QSignalTransition::QPrivateSignal* arg0) {
+  ((QSignalTransition*)this_)->signalChanged(*arg0);
 }
 
 //  main block end

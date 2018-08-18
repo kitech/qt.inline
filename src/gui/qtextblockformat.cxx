@@ -230,6 +230,29 @@ return new QTextFormat::PageBreakFlags(rv);
 }
 #endif // QT_VERSION >= 0x040200
 
+// Public Visibility=Default Availability=Available
+// since 4.4
+// /usr/include/qt/QtGui/qtextformat.h:645
+// [-2] void setTabPositions(const QList<QTextOption::Tab> &)
+#if QT_VERSION >= 0x040400
+extern "C" Q_DECL_EXPORT
+void C_ZN16QTextBlockFormat15setTabPositionsERK5QListIN11QTextOption3TabEE(void *this_, const QList<QTextOption::Tab> & tabs) {
+  ((QTextBlockFormat*)this_)->setTabPositions(tabs);
+}
+#endif // QT_VERSION >= 0x040400
+
+// Public Visibility=Default Availability=Available
+// since 4.4
+// /usr/include/qt/QtGui/qtextformat.h:646
+// [-2] QList<QTextOption::Tab> tabPositions()
+#if QT_VERSION >= 0x040400
+extern "C" Q_DECL_EXPORT
+QList<QTextOption::Tab>* C_ZNK16QTextBlockFormat12tabPositionsEv(void *this_) {
+  auto rv = ((QTextBlockFormat*)this_)->tabPositions();
+return new QList<QTextOption::Tab>(rv);
+}
+#endif // QT_VERSION >= 0x040400
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextBlockFormatD2Ev(void *this_) {

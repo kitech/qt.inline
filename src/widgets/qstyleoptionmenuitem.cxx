@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionMenuItem() {}
 // void QStyleOptionMenuItem()
 MyQStyleOptionMenuItem() : QStyleOptionMenuItem() {}
+// void QStyleOptionMenuItem(const QStyleOptionMenuItem &)
+MyQStyleOptionMenuItem(const QStyleOptionMenuItem & other) : QStyleOptionMenuItem(other) {}
 // void QStyleOptionMenuItem(int)
 MyQStyleOptionMenuItem(int version) : QStyleOptionMenuItem(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionMenuItem(int version) : QStyleOptionMenuItem(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionMenuItemC2Ev() {
   return  new QStyleOptionMenuItem();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:373
+// [-2] void QStyleOptionMenuItem(const QStyleOptionMenuItem &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN20QStyleOptionMenuItemC2ERKS_(QStyleOptionMenuItem* other) {
+  return  new QStyleOptionMenuItem(*other);
 }
 
 

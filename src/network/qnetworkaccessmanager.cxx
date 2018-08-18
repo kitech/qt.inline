@@ -75,6 +75,40 @@ void* C_ZNK21QNetworkAccessManager10metaObjectEv(void *this_) {
   return (void*)((QNetworkAccessManager*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QNetworkAccessManager11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QNetworkAccessManager*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN21QNetworkAccessManager11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QNetworkAccessManager*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QNetworkAccessManager2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QNetworkAccessManager::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN21QNetworkAccessManager6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QNetworkAccessManager::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:103
 // [-2] void QNetworkAccessManager(QObject *)
@@ -245,6 +279,29 @@ bool C_ZNK21QNetworkAccessManager37isStrictTransportSecurityStoreEnabledEv(void 
   return (bool)((QNetworkAccessManager*)this_)->isStrictTransportSecurityStoreEnabled();
 }
 #endif // QT_VERSION >= 0x050a00
+
+// Public Visibility=Default Availability=Available
+// since 5.9
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:130
+// [-2] void addStrictTransportSecurityHosts(const QVector<QHstsPolicy> &)
+#if QT_VERSION >= 0x050900
+extern "C" Q_DECL_EXPORT
+void C_ZN21QNetworkAccessManager31addStrictTransportSecurityHostsERK7QVectorI11QHstsPolicyE(void *this_, const QVector<QHstsPolicy> & knownHosts) {
+  ((QNetworkAccessManager*)this_)->addStrictTransportSecurityHosts(knownHosts);
+}
+#endif // QT_VERSION >= 0x050900
+
+// Public Visibility=Default Availability=Available
+// since 5.9
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:131
+// [-2] QVector<QHstsPolicy> strictTransportSecurityHosts()
+#if QT_VERSION >= 0x050900
+extern "C" Q_DECL_EXPORT
+void C_ZNK21QNetworkAccessManager28strictTransportSecurityHostsEv(void *this_) {
+  auto rv = ((QNetworkAccessManager*)this_)->strictTransportSecurityHosts();
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:133
@@ -492,6 +549,14 @@ void C_ZN21QNetworkAccessManager9encryptedEP13QNetworkReply(void *this_, QNetwor
   ((QNetworkAccessManager*)this_)->encrypted(reply);
 }
 #endif // QT_VERSION >= 0x050100
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:172
+// [-2] void sslErrors(QNetworkReply *, const QList<QSslError> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN21QNetworkAccessManager9sslErrorsEP13QNetworkReplyRK5QListI9QSslErrorE(void *this_, QNetworkReply * reply, const QList<QSslError> & errors) {
+  ((QNetworkAccessManager*)this_)->sslErrors(reply, errors);
+}
 
 // Public Visibility=Default Availability=Available
 // since 5.5

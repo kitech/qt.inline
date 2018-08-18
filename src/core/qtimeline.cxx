@@ -49,6 +49,40 @@ void* C_ZNK9QTimeLine10metaObjectEv(void *this_) {
   return (void*)((QTimeLine*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:52
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTimeLine11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QTimeLine*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:52
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN9QTimeLine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QTimeLine*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:52
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTimeLine2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTimeLine::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:52
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTimeLine6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QTimeLine::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:79
 // [-2] void QTimeLine(int, QObject *)
@@ -296,6 +330,38 @@ void C_ZN9QTimeLine14setCurrentTimeEi(void *this_, int msec) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeLine15toggleDirectionEv(void *this_) {
   ((QTimeLine*)this_)->toggleDirection();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:124
+// [-2] void valueChanged(qreal, QTimeLine::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTimeLine12valueChangedEdNS_14QPrivateSignalE(void *this_, qreal x, QTimeLine::QPrivateSignal* arg1) {
+  ((QTimeLine*)this_)->valueChanged(x, *arg1);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:125
+// [-2] void frameChanged(int, QTimeLine::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTimeLine12frameChangedEiNS_14QPrivateSignalE(void *this_, int arg0, QTimeLine::QPrivateSignal* arg1) {
+  ((QTimeLine*)this_)->frameChanged(arg0, *arg1);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:126
+// [-2] void stateChanged(QTimeLine::State, QTimeLine::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTimeLine12stateChangedENS_5StateENS_14QPrivateSignalE(void *this_, QTimeLine::State newState, QTimeLine::QPrivateSignal* arg1) {
+  ((QTimeLine*)this_)->stateChanged(newState, *arg1);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:127
+// [-2] void finished(QTimeLine::QPrivateSignal)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTimeLine8finishedENS_14QPrivateSignalE(void *this_, QTimeLine::QPrivateSignal* arg0) {
+  ((QTimeLine*)this_)->finished(*arg0);
 }
 
 //  main block end

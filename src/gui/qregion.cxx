@@ -24,6 +24,10 @@ MyQRegion(int x, int y, int w, int h, QRegion::RegionType t) : QRegion(x, y, w, 
 MyQRegion(const QRect & r, QRegion::RegionType t) : QRegion(r, t) {}
 // void QRegion(const QPolygon &, Qt::FillRule)
 MyQRegion(const QPolygon & pa, Qt::FillRule fillRule) : QRegion(pa, fillRule) {}
+// void QRegion(const QRegion &)
+MyQRegion(const QRegion & region) : QRegion(region) {}
+// void QRegion(QRegion &&)
+MyQRegion(QRegion && other) : QRegion(other) {}
 // void QRegion(const QBitmap &)
 MyQRegion(const QBitmap & bitmap) : QRegion(bitmap) {}
 };
@@ -59,6 +63,25 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE(QPolygon* pa, Qt::FillRule fillRule) {
   return  new QRegion(*pa, fillRule);
 }
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:71
+// [-2] void QRegion(const QRegion &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QRegionC2ERKS_(QRegion* region) {
+  return  new QRegion(*region);
+}
+
+// Public inline Visibility=Default Availability=Available
+// since 5.7
+// /usr/include/qt/QtGui/qregion.h:72
+// [-2] void QRegion(QRegion &&)
+#if QT_VERSION >= 0x050700
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QRegionC2EOS_(QRegion && other) {
+  return  new QRegion(other);
+}
+#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:74
@@ -168,6 +191,54 @@ extern "C" Q_DECL_EXPORT
 void C_ZNK7QRegion4cendEv(void *this_) {
   auto rv = ((QRegion*)this_)->cend();
 /*return rv;*/
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtGui/qregion.h:92
+// [8] QRegion::const_reverse_iterator rbegin()
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+QRegion::const_reverse_iterator* C_ZNK7QRegion6rbeginEv(void *this_) {
+  auto rv = ((QRegion*)this_)->rbegin();
+return new QRegion::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtGui/qregion.h:93
+// [8] QRegion::const_reverse_iterator crbegin()
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+QRegion::const_reverse_iterator* C_ZNK7QRegion7crbeginEv(void *this_) {
+  auto rv = ((QRegion*)this_)->crbegin();
+return new QRegion::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtGui/qregion.h:94
+// [8] QRegion::const_reverse_iterator rend()
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+QRegion::const_reverse_iterator* C_ZNK7QRegion4rendEv(void *this_) {
+  auto rv = ((QRegion*)this_)->rend();
+return new QRegion::const_reverse_iterator(rv);
+}
+#endif // QT_VERSION >= 0x050800
+
+// Public inline Visibility=Default Availability=Available
+// since 5.8
+// /usr/include/qt/QtGui/qregion.h:95
+// [8] QRegion::const_reverse_iterator crend()
+#if QT_VERSION >= 0x050800
+extern "C" Q_DECL_EXPORT
+QRegion::const_reverse_iterator* C_ZNK7QRegion5crendEv(void *this_) {
+  auto rv = ((QRegion*)this_)->crend();
+return new QRegion::const_reverse_iterator(rv);
 }
 #endif // QT_VERSION >= 0x050800
 
@@ -328,6 +399,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegion12boundingRectEv(void *this_) {
   auto rv = ((QRegion*)this_)->boundingRect();
 return new QRect(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:125
+// [8] QVector<QRect> rects()
+extern "C" Q_DECL_EXPORT
+void C_ZNK7QRegion5rectsEv(void *this_) {
+  auto rv = ((QRegion*)this_)->rects();
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available

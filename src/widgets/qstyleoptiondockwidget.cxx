@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionDockWidget() {}
 // void QStyleOptionDockWidget()
 MyQStyleOptionDockWidget() : QStyleOptionDockWidget() {}
+// void QStyleOptionDockWidget(const QStyleOptionDockWidget &)
+MyQStyleOptionDockWidget(const QStyleOptionDockWidget & other) : QStyleOptionDockWidget(other) {}
 // void QStyleOptionDockWidget(int)
 MyQStyleOptionDockWidget(int version) : QStyleOptionDockWidget(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionDockWidget(int version) : QStyleOptionDockWidget(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionDockWidgetC2Ev() {
   return  new QStyleOptionDockWidget();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:392
+// [-2] void QStyleOptionDockWidget(const QStyleOptionDockWidget &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QStyleOptionDockWidgetC2ERKS_(QStyleOptionDockWidget* other) {
+  return  new QStyleOptionDockWidget(*other);
 }
 
 

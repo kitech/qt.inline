@@ -52,6 +52,40 @@ void* C_ZNK15QSystemTrayIcon10metaObjectEv(void *this_) {
   return (void*)((QSystemTrayIcon*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsystemtrayicon.h:63
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QSystemTrayIcon11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QSystemTrayIcon*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsystemtrayicon.h:63
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN15QSystemTrayIcon11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QSystemTrayIcon*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsystemtrayicon.h:63
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QSystemTrayIcon2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QSystemTrayIcon::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsystemtrayicon.h:63
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QSystemTrayIcon6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QSystemTrayIcon::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:69
 // [-2] void QSystemTrayIcon(QObject *)

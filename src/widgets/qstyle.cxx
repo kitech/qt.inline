@@ -16,6 +16,8 @@
 class Q_DECL_EXPORT MyQStyle : public QStyle {
 public:
   virtual ~MyQStyle() {}
+// void QStyle(QStylePrivate &)
+MyQStyle(QStylePrivate & dd) : QStyle(dd) {}
 // void QStyle()
 MyQStyle() : QStyle() {}
 };
@@ -26,6 +28,40 @@ MyQStyle() : QStyle() {}
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle10metaObjectEv(void *this_) {
   return (void*)((QStyle*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:66
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QStyle11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QStyle*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:66
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN6QStyle11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QStyle*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:66
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QStyle2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QStyle::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:66
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN6QStyle6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QStyle::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

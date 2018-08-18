@@ -18,6 +18,8 @@ public:
   virtual ~MyQImageIOHandler() {}
 // void QImageIOHandler()
 MyQImageIOHandler() : QImageIOHandler() {}
+// void QImageIOHandler(QImageIOHandlerPrivate &)
+MyQImageIOHandler(QImageIOHandlerPrivate & dd) : QImageIOHandler(dd) {}
 };
 
 // Public Visibility=Default Availability=Available

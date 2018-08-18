@@ -18,6 +18,8 @@ public:
   virtual ~MyQStyleOptionTabBarBase() {}
 // void QStyleOptionTabBarBase()
 MyQStyleOptionTabBarBase() : QStyleOptionTabBarBase() {}
+// void QStyleOptionTabBarBase(const QStyleOptionTabBarBase &)
+MyQStyleOptionTabBarBase(const QStyleOptionTabBarBase & other) : QStyleOptionTabBarBase(other) {}
 // void QStyleOptionTabBarBase(int)
 MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 };
@@ -28,6 +30,14 @@ MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionTabBarBaseC2Ev() {
   return  new QStyleOptionTabBarBase();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:196
+// [-2] void QStyleOptionTabBarBase(const QStyleOptionTabBarBase &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN22QStyleOptionTabBarBaseC2ERKS_(QStyleOptionTabBarBase* other) {
+  return  new QStyleOptionTabBarBase(*other);
 }
 
 

@@ -18,6 +18,10 @@ public:
   virtual ~MyQPicture() {}
 // void QPicture(int)
 MyQPicture(int formatVersion) : QPicture(formatVersion) {}
+// void QPicture(const QPicture &)
+MyQPicture(const QPicture & arg0) : QPicture(arg0) {}
+// void QPicture(QPicturePrivate &)
+MyQPicture(QPicturePrivate & data) : QPicture(data) {}
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric m) const{
@@ -48,6 +52,15 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN8QPictureC2Ei(int formatVersion) {
   auto _nilp = (MyQPicture*)(0);
   return  new MyQPicture(formatVersion);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:60
+// [-2] void QPicture(const QPicture &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QPictureC2ERKS_(QPicture* arg0) {
+  auto _nilp = (MyQPicture*)(0);
+  return  new MyQPicture(*arg0);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -208,6 +221,24 @@ void* C_ZN8QPicture13pictureFormatERK7QString(QString* fileName) {
 }
 
 // Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:95
+// [8] QList<QByteArray> inputFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN8QPicture12inputFormatsEv() {
+  auto rv = QPicture::inputFormats();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:96
+// [8] QList<QByteArray> outputFormats()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN8QPicture13outputFormatsEv() {
+  auto rv = QPicture::outputFormats();
+return new QList<QByteArray>(rv);
+}
+
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:97
 // [8] QStringList inputFormatList()
 extern "C" Q_DECL_EXPORT
@@ -231,6 +262,15 @@ return new QStringList(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPicture11paintEngineEv(void *this_) {
   return (void*)((QPicture*)this_)->paintEngine();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:118
+// [8] QPicture::DataPtr & data_ptr()
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QPicture8data_ptrEv(void *this_) {
+  auto& rv = ((QPicture*)this_)->data_ptr();
+return &rv;
 }
 
 //  main block end

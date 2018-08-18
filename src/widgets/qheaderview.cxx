@@ -66,6 +66,8 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
   }
   }
 
+// void QHeaderView(QHeaderViewPrivate &, Qt::Orientation, QWidget *)
+MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * parent) : QHeaderView(dd, orientation, parent) {}
 // Protected Visibility=Default Availability=Available
 // void initialize()
   virtual void initialize() {
@@ -272,6 +274,18 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
       // VoidVoidvoid
     } else {
     QHeaderView::scrollContentsBy(dx, dy);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
+// void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QHeaderView::dataChanged(topLeft, bottomRight, roles);
   }
   }
 
@@ -560,6 +574,14 @@ void C_ZN11QHeaderView16scrollContentsByEii(void *this_, int dx, int dy) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:234
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN11QHeaderView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
+  ((QHeaderView*)this_)->QHeaderView::dataChanged(*topLeft, *bottomRight, roles);
+}
+
+// Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:235
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
@@ -641,6 +663,40 @@ void C_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader(void *this_, QSty
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QHeaderView10metaObjectEv(void *this_) {
   return (void*)((QHeaderView*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:55
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QHeaderView11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QHeaderView*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:55
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN11QHeaderView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QHeaderView*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:55
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QHeaderView2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QHeaderView::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:55
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QHeaderView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QHeaderView::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available

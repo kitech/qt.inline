@@ -26,6 +26,14 @@ void* C_ZN20QContiguousCacheData12allocateDataEii(int size, int alignment) {
   return (void*)QContiguousCacheData::allocateData(size, alignment);
 }
 
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcontiguouscache.h:68
+// [-2] void freeData(QContiguousCacheData *)
+extern "C" Q_DECL_EXPORT
+void C_ZN20QContiguousCacheData8freeDataEPS_(QContiguousCacheData * data) {
+  QContiguousCacheData::freeData(data);
+}
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN20QContiguousCacheDataD2Ev(void *this_) {

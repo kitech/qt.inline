@@ -337,6 +337,8 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
   }
   }
 
+// void QGraphicsItem(QGraphicsItemPrivate &, QGraphicsItem *)
+MyQGraphicsItem(QGraphicsItemPrivate & dd, QGraphicsItem * parent) : QGraphicsItem(dd, parent) {}
 // Protected Visibility=Default Availability=Available
 // void addToIndex()
   virtual void addToIndex() {
@@ -654,6 +656,17 @@ void* C_ZNK13QGraphicsItem12topLevelItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:168
+// [8] QGraphicsObject * parentObject()
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void* C_ZNK13QGraphicsItem12parentObjectEv(void *this_) {
+  return (void*)((QGraphicsItem*)this_)->parentObject();
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:169
 // [8] QGraphicsWidget * parentWidget()
@@ -747,6 +760,28 @@ bool C_ZNK13QGraphicsItem8isWindowEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QGraphicsItem7isPanelEv(void *this_) {
   return (bool)((QGraphicsItem*)this_)->isPanel();
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:182
+// [8] QGraphicsObject * toGraphicsObject()
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void* C_ZN13QGraphicsItem16toGraphicsObjectEv(void *this_) {
+  return (void*)((QGraphicsItem*)this_)->toGraphicsObject();
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:183
+// [8] const QGraphicsObject * toGraphicsObject()
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void* C_ZNK13QGraphicsItem16toGraphicsObjectEv(void *this_) {
+  return (void*)((QGraphicsItem*)this_)->toGraphicsObject();
 }
 #endif // QT_VERSION >= 0x040600
 
@@ -1506,6 +1541,29 @@ void C_ZN13QGraphicsItem8setScaleEd(void *this_, qreal scale) {
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QGraphicsItem5scaleEv(void *this_) {
   return (qreal)((QGraphicsItem*)this_)->scale();
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:308
+// [-2] QList<QGraphicsTransform *> transformations()
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+QList<QGraphicsTransform *>* C_ZNK13QGraphicsItem15transformationsEv(void *this_) {
+  auto rv = ((QGraphicsItem*)this_)->transformations();
+return new QList<QGraphicsTransform *>(rv);
+}
+#endif // QT_VERSION >= 0x040600
+
+// Public Visibility=Default Availability=Available
+// since 4.6
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:309
+// [-2] void setTransformations(const QList<QGraphicsTransform *> &)
+#if QT_VERSION >= 0x040600
+extern "C" Q_DECL_EXPORT
+void C_ZN13QGraphicsItem18setTransformationsERK5QListIP18QGraphicsTransformE(void *this_, const QList<QGraphicsTransform *> & transformations) {
+  ((QGraphicsItem*)this_)->setTransformations(transformations);
 }
 #endif // QT_VERSION >= 0x040600
 

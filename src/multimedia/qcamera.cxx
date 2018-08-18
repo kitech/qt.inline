@@ -34,6 +34,40 @@ void* C_ZNK7QCamera10metaObjectEv(void *this_) {
   return (void*)((QCamera*)this_)->metaObject();
 }
 
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:71
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QCamera11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QCamera*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:71
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN7QCamera11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QCamera*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:71
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QCamera2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCamera::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:71
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QCamera6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QCamera::trUtf8(s, c, n);
+return new QString(rv);
+}
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:168
 // [-2] void QCamera(QObject *)
@@ -79,6 +113,15 @@ extern "C" Q_DECL_EXPORT
 void C_ZN7QCameraD2Ev(void *this_) {
   delete (QCamera*)(this_);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:175
+// [8] QList<QByteArray> availableDevices()
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN7QCamera16availableDevicesEv() {
+  auto rv = QCamera::availableDevices();
+return new QList<QByteArray>(rv);
+}
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:176
 // [8] QString deviceDescription(const QByteArray &)
@@ -154,6 +197,22 @@ void* C_ZNK7QCamera15imageProcessingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:191
+// [-2] void setViewfinder(QVideoWidget *)
+extern "C" Q_DECL_EXPORT
+void C_ZN7QCamera13setViewfinderEP12QVideoWidget(void *this_, QVideoWidget * viewfinder) {
+  ((QCamera*)this_)->setViewfinder(viewfinder);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:192
+// [-2] void setViewfinder(QGraphicsVideoItem *)
+extern "C" Q_DECL_EXPORT
+void C_ZN7QCamera13setViewfinderEP18QGraphicsVideoItem(void *this_, QGraphicsVideoItem * viewfinder) {
+  ((QCamera*)this_)->setViewfinder(viewfinder);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:193
 // [-2] void setViewfinder(QAbstractVideoSurface *)
 extern "C" Q_DECL_EXPORT
@@ -186,6 +245,18 @@ void C_ZN7QCamera21setViewfinderSettingsERK25QCameraViewfinderSettings(void *thi
 
 // Public Visibility=Default Availability=Available
 // since 5.5
+// /usr/include/qt/QtMultimedia/qcamera.h:198
+// [-2] QList<QCameraViewfinderSettings> supportedViewfinderSettings(const QCameraViewfinderSettings &)
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+QList<QCameraViewfinderSettings>* C_ZNK7QCamera27supportedViewfinderSettingsERK25QCameraViewfinderSettings(void *this_, QCameraViewfinderSettings* settings) {
+  auto rv = ((QCamera*)this_)->supportedViewfinderSettings(*settings);
+return new QList<QCameraViewfinderSettings>(rv);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtMultimedia/qcamera.h:201
 // [8] QList<QSize> supportedViewfinderResolutions(const QCameraViewfinderSettings &)
 #if QT_VERSION >= 0x050500
@@ -193,6 +264,30 @@ extern "C" Q_DECL_EXPORT
 QList<QSize>* C_ZNK7QCamera30supportedViewfinderResolutionsERK25QCameraViewfinderSettings(void *this_, QCameraViewfinderSettings* settings) {
   auto rv = ((QCamera*)this_)->supportedViewfinderResolutions(*settings);
 return new QList<QSize>(rv);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// since 5.5
+// /usr/include/qt/QtMultimedia/qcamera.h:204
+// [-2] QList<QCamera::FrameRateRange> supportedViewfinderFrameRateRanges(const QCameraViewfinderSettings &)
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+QList<QCamera::FrameRateRange>* C_ZNK7QCamera34supportedViewfinderFrameRateRangesERK25QCameraViewfinderSettings(void *this_, QCameraViewfinderSettings* settings) {
+  auto rv = ((QCamera*)this_)->supportedViewfinderFrameRateRanges(*settings);
+return new QList<QCamera::FrameRateRange>(rv);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// since 5.5
+// /usr/include/qt/QtMultimedia/qcamera.h:207
+// [-2] QList<QVideoFrame::PixelFormat> supportedViewfinderPixelFormats(const QCameraViewfinderSettings &)
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+QList<QVideoFrame::PixelFormat>* C_ZNK7QCamera31supportedViewfinderPixelFormatsERK25QCameraViewfinderSettings(void *this_, QCameraViewfinderSettings* settings) {
+  auto rv = ((QCamera*)this_)->supportedViewfinderPixelFormats(*settings);
+return new QList<QVideoFrame::PixelFormat>(rv);
 }
 #endif // QT_VERSION >= 0x050500
 

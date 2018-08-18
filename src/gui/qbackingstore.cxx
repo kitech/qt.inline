@@ -126,4 +126,12 @@ bool C_ZNK13QBackingStore17hasStaticContentsEv(void *this_) {
   return (bool)((QBackingStore*)this_)->hasStaticContents();
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbackingstore.h:83
+// [8] QPlatformBackingStore * handle()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK13QBackingStore6handleEv(void *this_) {
+  return (void*)((QBackingStore*)this_)->handle();
+}
+
 //  main block end

@@ -31,6 +31,8 @@ MyQQmlProperty(QObject * arg0, const QString & arg1) : QQmlProperty(arg0, arg1) 
 MyQQmlProperty(QObject * arg0, const QString & arg1, QQmlContext * arg2) : QQmlProperty(arg0, arg1, arg2) {}
 // void QQmlProperty(QObject *, const QString &, QQmlEngine *)
 MyQQmlProperty(QObject * arg0, const QString & arg1, QQmlEngine * arg2) : QQmlProperty(arg0, arg1, arg2) {}
+// void QQmlProperty(const QQmlProperty &)
+MyQQmlProperty(const QQmlProperty & arg0) : QQmlProperty(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -94,6 +96,14 @@ void* C_ZN12QQmlPropertyC2EP7QObjectRK7QStringP11QQmlContext(QObject * arg0, QSt
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQmlPropertyC2EP7QObjectRK7QStringP10QQmlEngine(QObject * arg0, QString* arg1, QQmlEngine * arg2) {
   return  new QQmlProperty(arg0, *arg1, arg2);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlproperty.h:82
+// [-2] void QQmlProperty(const QQmlProperty &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QQmlPropertyC2ERKS_(QQmlProperty* arg0) {
+  return  new QQmlProperty(*arg0);
 }
 
 // Public Visibility=Default Availability=Available

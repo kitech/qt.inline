@@ -23,6 +23,8 @@ MyQStorageInfo() : QStorageInfo() {}
 MyQStorageInfo(const QString & path) : QStorageInfo(path) {}
 // void QStorageInfo(const QDir &)
 MyQStorageInfo(const QDir & dir) : QStorageInfo(dir) {}
+// void QStorageInfo(const QStorageInfo &)
+MyQStorageInfo(const QStorageInfo & other) : QStorageInfo(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -47,6 +49,14 @@ void* C_ZN12QStorageInfoC2ERK7QString(QString* path) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStorageInfoC2ERK4QDir(QDir* dir) {
   return  new QStorageInfo(*dir);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:61
+// [-2] void QStorageInfo(const QStorageInfo &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN12QStorageInfoC2ERKS_(QStorageInfo* other) {
+  return  new QStorageInfo(*other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -220,6 +230,15 @@ bool C_ZNK12QStorageInfo7isValidEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN12QStorageInfo7refreshEv(void *this_) {
   ((QStorageInfo*)this_)->refresh();
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:93
+// [-2] QList<QStorageInfo> mountedVolumes()
+extern "C" Q_DECL_EXPORT
+QList<QStorageInfo>* C_ZN12QStorageInfo14mountedVolumesEv() {
+  auto rv = QStorageInfo::mountedVolumes();
+return new QList<QStorageInfo>(rv);
 }
 
 // Public static Visibility=Default Availability=Available

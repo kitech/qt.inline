@@ -44,6 +44,18 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
+// void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
+  virtual void itemChange(QQuickItem::ItemChange arg0, const QQuickItem::ItemChangeData & arg1) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemChange", &handled, 2, (uint64_t)arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    QQuickItem::itemChange(arg0, arg1);
+  }
+  }
+
 // Protected Visibility=Default Availability=Available
 // void updateInputMethod(Qt::InputMethodQueries)
   virtual void updateInputMethod(QFlags<Qt::InputMethodQuery> queries) {
@@ -396,6 +408,19 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
+// QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
+  virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updatePaintNode", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGNode *)(irv);
+      // PointerPointerQSGNode *
+    } else {
+    return QQuickItem::updatePaintNode(arg0, arg1);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
 // void releaseResources()
   virtual void releaseResources() {
     int handled = 0;
@@ -419,6 +444,8 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
   }
 
+// void QQuickItem(QQuickItemPrivate &, QQuickItem *)
+MyQQuickItem(QQuickItemPrivate & dd, QQuickItem * parent) : QQuickItem(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -435,6 +462,14 @@ bool C_ZN10QQuickItem5eventEP6QEvent(void *this_, QEvent * arg0) {
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QQuickItem19isComponentCompleteEv(void *this_) {
   return (bool)((QQuickItem*)this_)->QQuickItem::isComponentComplete();
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:398
+// [-2] void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
+extern "C" Q_DECL_EXPORT
+void C_ZN10QQuickItem10itemChangeENS_10ItemChangeERKNS_14ItemChangeDataE(void *this_, QQuickItem::ItemChange arg0, QQuickItem::ItemChangeData* arg1) {
+  ((QQuickItem*)this_)->QQuickItem::itemChange(arg0, *arg1);
 }
 
 // Protected Visibility=Default Availability=Available
@@ -670,6 +705,14 @@ void C_ZN10QQuickItem15geometryChangedERK6QRectFS2_(void *this_, QRectF* newGeom
 }
 
 // Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:443
+// [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickItem15updatePaintNodeEP7QSGNodePNS_19UpdatePaintNodeDataE(void *this_, QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1) {
+  return (void*)((QQuickItem*)this_)->QQuickItem::updatePaintNode(arg0, arg1);
+}
+
+// Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:444
 // [-2] void releaseResources()
 extern "C" Q_DECL_EXPORT
@@ -691,6 +734,40 @@ void C_ZN10QQuickItem12updatePolishEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickItem10metaObjectEv(void *this_) {
   return (void*)((QQuickItem*)this_)->metaObject();
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:98
+// [8] void * qt_metacast(const char *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickItem11qt_metacastEPKc(void *this_, const char * arg0) {
+  return (void*)((QQuickItem*)this_)->qt_metacast(arg0);
+}
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:98
+// [4] int qt_metacall(QMetaObject::Call, int, void **)
+extern "C" Q_DECL_EXPORT
+int C_ZN10QQuickItem11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
+  return (int)((QQuickItem*)this_)->qt_metacall(arg0, arg1, arg2);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:98
+// [8] QString tr(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickItem2trEPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickItem::tr(s, c, n);
+return new QString(rv);
+}
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:98
+// [8] QString trUtf8(const char *, const char *, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickItem6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
+  auto rv = QQuickItem::trUtf8(s, c, n);
+return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
@@ -814,6 +891,15 @@ qreal C_ZNK10QQuickItem14baselineOffsetEv(void *this_) {
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem17setBaselineOffsetEd(void *this_, qreal arg0) {
   ((QQuickItem*)this_)->setBaselineOffset(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:220
+// [64] QQmlListProperty<QQuickTransform> transform()
+extern "C" Q_DECL_EXPORT
+void C_ZN10QQuickItem9transformEv(void *this_) {
+  auto rv = ((QQuickItem*)this_)->transform();
+/*return rv;*/
 }
 
 // Public Visibility=Default Availability=Available
@@ -1391,6 +1477,14 @@ void C_ZN10QQuickItem26setFiltersChildMouseEventsEb(void *this_, bool filter) {
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:313
+// [-2] void grabTouchPoints(const QVector<int> &)
+extern "C" Q_DECL_EXPORT
+void C_ZN10QQuickItem15grabTouchPointsERK7QVectorIiE(void *this_, const QVector<int> & ids) {
+  ((QQuickItem*)this_)->grabTouchPoints(ids);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:314
 // [-2] void ungrabTouchPoints()
 extern "C" Q_DECL_EXPORT
@@ -1420,6 +1514,15 @@ void C_ZN10QQuickItem16setKeepTouchGrabEb(void *this_, bool arg0) {
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize(void *this_, QJSValue* callback, QSize* targetSize) {
   return (bool)((QQuickItem*)this_)->grabToImage(*callback, *targetSize);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:320
+// [-2] QSharedPointer<QQuickItemGrabResult> grabToImage(const QSize &)
+extern "C" Q_DECL_EXPORT
+void C_ZN10QQuickItem11grabToImageERK5QSize(void *this_, QSize* targetSize) {
+  auto rv = ((QQuickItem*)this_)->grabToImage(*targetSize);
+/*return rv;*/
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -1541,6 +1644,38 @@ return new QRectF(rv);
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem6polishEv(void *this_) {
   ((QQuickItem*)this_)->polish();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:338
+// [-2] void mapFromItem(QQmlV4Function *)
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QQuickItem11mapFromItemEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
+  ((QQuickItem*)this_)->mapFromItem(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:339
+// [-2] void mapToItem(QQmlV4Function *)
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QQuickItem9mapToItemEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
+  ((QQuickItem*)this_)->mapToItem(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:340
+// [-2] void mapFromGlobal(QQmlV4Function *)
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QQuickItem13mapFromGlobalEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
+  ((QQuickItem*)this_)->mapFromGlobal(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:341
+// [-2] void mapToGlobal(QQmlV4Function *)
+extern "C" Q_DECL_EXPORT
+void C_ZNK10QQuickItem11mapToGlobalEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
+  ((QQuickItem*)this_)->mapToGlobal(arg0);
 }
 
 // Public Visibility=Default Availability=Available
