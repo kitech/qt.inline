@@ -22,7 +22,7 @@ MyQQuickPaintedItem(QQuickItem * parent) : QQuickPaintedItem(parent) {}
 // void releaseResources()
   virtual void releaseResources() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"releaseResources", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"releaseResources", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

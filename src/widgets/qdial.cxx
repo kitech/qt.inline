@@ -22,7 +22,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -35,7 +35,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * re) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)re, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)re, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -47,7 +47,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * pe) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)pe, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)pe, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -59,7 +59,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * me) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -71,7 +71,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * me) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -83,7 +83,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * me) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)me, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -95,7 +95,7 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 // void sliderChange(QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -105,9 +105,9 @@ MyQDial(QWidget * parent) : QDial(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // void initStyleOption(QStyleOptionSlider *)
-  virtual void initStyleOption(QStyleOptionSlider * option) {
+  virtual void initStyleOption(QStyleOptionSlider * option) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

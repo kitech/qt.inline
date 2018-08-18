@@ -20,9 +20,9 @@ public:
 MyQPicture(int formatVersion) : QPicture(formatVersion) {}
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric m) {
+  virtual int metric(QPaintDevice::PaintDeviceMetric m) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)m, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)m, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint

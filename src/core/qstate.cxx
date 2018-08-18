@@ -25,7 +25,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
 // void onEntry(QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -37,7 +37,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
 // void onExit(QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -49,7 +49,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

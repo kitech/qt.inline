@@ -23,7 +23,7 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // void setFormat(const QTextFormat &)
   virtual void setFormat(const QTextFormat & format) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

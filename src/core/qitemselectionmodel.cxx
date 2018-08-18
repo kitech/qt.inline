@@ -24,7 +24,7 @@ MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelec
 // void emitSelectionChanged(const QItemSelection &, const QItemSelection &)
   virtual void emitSelectionChanged(const QItemSelection & newSelection, const QItemSelection & oldSelection) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"emitSelectionChanged", &handled, 2, (uint64_t)&newSelection, (uint64_t)&oldSelection, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitSelectionChanged", &handled, 2, (uint64_t)&newSelection, (uint64_t)&oldSelection, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

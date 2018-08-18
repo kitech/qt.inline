@@ -22,7 +22,7 @@ MyQAbstractVideoSurface(QObject * parent) : QAbstractVideoSurface(parent) {}
 // void setError(QAbstractVideoSurface::Error)
   virtual void setError(QAbstractVideoSurface::Error error) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setError", &handled, 1, (uint64_t)error, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setError", &handled, 1, (uint64_t)error, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQAbstractVideoSurface(QObject * parent) : QAbstractVideoSurface(parent) {}
 // void setNativeResolution(const QSize &)
   virtual void setNativeResolution(const QSize & resolution) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setNativeResolution", &handled, 1, (uint64_t)&resolution, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setNativeResolution", &handled, 1, (uint64_t)&resolution, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

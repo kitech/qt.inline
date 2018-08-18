@@ -25,7 +25,7 @@ MyQKeyEventTransition(QObject * object, QEvent::Type type_, int key, QState * so
 // void onTransition(QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -37,7 +37,7 @@ MyQKeyEventTransition(QObject * object, QEvent::Type type_, int key, QState * so
 // bool eventTest(QEvent *)
   virtual bool eventTest(QEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

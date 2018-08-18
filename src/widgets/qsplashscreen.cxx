@@ -24,7 +24,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -37,7 +37,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
 // void drawContents(QPainter *)
   virtual void drawContents(QPainter * painter) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawContents", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawContents", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -49,7 +49,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
 // void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

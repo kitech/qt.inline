@@ -21,9 +21,9 @@ public:
 MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // bool validateCookie(const QNetworkCookie &, const QUrl &)
-  virtual bool validateCookie(const QNetworkCookie & cookie, const QUrl & url) {
+  virtual bool validateCookie(const QNetworkCookie & cookie, const QUrl & url) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"validateCookie", &handled, 2, (uint64_t)&cookie, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"validateCookie", &handled, 2, (uint64_t)&cookie, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

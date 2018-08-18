@@ -22,7 +22,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void resetInternalData()
   virtual void resetInternalData() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -32,9 +32,9 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 
 // Protected inline Visibility=Default Availability=Available
 // QModelIndex createIndex(int, int, void *)
-  virtual QModelIndex createIndex(int row, int column, void * data) {
+  virtual QModelIndex createIndex(int row, int column, void * data) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
@@ -45,9 +45,9 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 
 // Protected inline Visibility=Default Availability=Available
 // QModelIndex createIndex(int, int, quintptr)
-  virtual QModelIndex createIndex(int row, int column, quintptr id) {
+  virtual QModelIndex createIndex(int row, int column, quintptr id) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
@@ -60,7 +60,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // bool decodeData(int, int, const QModelIndex &, QDataStream &)
   virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"decodeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)&parent, (uint64_t)&stream, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decodeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)&parent, (uint64_t)&stream, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -73,7 +73,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void beginInsertRows(const QModelIndex &, int, int)
   virtual void beginInsertRows(const QModelIndex & parent, int first, int last) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginInsertRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginInsertRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -85,7 +85,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endInsertRows()
   virtual void endInsertRows() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endInsertRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endInsertRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -97,7 +97,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void beginRemoveRows(const QModelIndex &, int, int)
   virtual void beginRemoveRows(const QModelIndex & parent, int first, int last) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginRemoveRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginRemoveRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -109,7 +109,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endRemoveRows()
   virtual void endRemoveRows() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endRemoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endRemoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -121,7 +121,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // bool beginMoveRows(const QModelIndex &, int, int, const QModelIndex &, int)
   virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginMoveRows", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationRow, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMoveRows", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationRow, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -134,7 +134,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endMoveRows()
   virtual void endMoveRows() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endMoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -146,7 +146,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void beginInsertColumns(const QModelIndex &, int, int)
   virtual void beginInsertColumns(const QModelIndex & parent, int first, int last) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginInsertColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginInsertColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -158,7 +158,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endInsertColumns()
   virtual void endInsertColumns() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endInsertColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endInsertColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -170,7 +170,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void beginRemoveColumns(const QModelIndex &, int, int)
   virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginRemoveColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginRemoveColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -182,7 +182,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endRemoveColumns()
   virtual void endRemoveColumns() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endRemoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endRemoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -194,7 +194,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // bool beginMoveColumns(const QModelIndex &, int, int, const QModelIndex &, int)
   virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginMoveColumns", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationColumn, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMoveColumns", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationColumn, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -207,7 +207,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endMoveColumns()
   virtual void endMoveColumns() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endMoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -219,7 +219,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void beginResetModel()
   virtual void beginResetModel() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beginResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -231,7 +231,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void endResetModel()
   virtual void endResetModel() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"endResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -243,7 +243,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void changePersistentIndex(const QModelIndex &, const QModelIndex &)
   virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"changePersistentIndex", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changePersistentIndex", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -253,9 +253,9 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QModelIndexList persistentIndexList()
-  virtual QModelIndexList persistentIndexList() {
+  virtual QModelIndexList persistentIndexList() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"persistentIndexList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"persistentIndexList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndexList*)(irv);
       // TypedefRecordQList<QModelIndex>

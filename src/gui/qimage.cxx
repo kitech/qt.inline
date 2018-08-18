@@ -36,9 +36,9 @@ MyQImage(char** xpm) : QImage(xpm) {}
 MyQImage(const QString & fileName, const char * format) : QImage(fileName, format) {}
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -49,9 +49,9 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 
 // Protected Visibility=Default Availability=Available
 // QImage mirrored_helper(bool, bool)
-  virtual QImage mirrored_helper(bool horizontal, bool vertical) {
+  virtual QImage mirrored_helper(bool horizontal, bool vertical) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mirrored_helper", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_helper", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
       // RecordRecordQImage
@@ -62,9 +62,9 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 
 // Protected Visibility=Default Availability=Available
 // QImage rgbSwapped_helper()
-  virtual QImage rgbSwapped_helper() {
+  virtual QImage rgbSwapped_helper() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"rgbSwapped_helper", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_helper", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
       // RecordRecordQImage
@@ -77,7 +77,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 // void mirrored_inplace(bool, bool)
   virtual void mirrored_inplace(bool horizontal, bool vertical) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mirrored_inplace", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_inplace", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -89,7 +89,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 // void rgbSwapped_inplace()
   virtual void rgbSwapped_inplace() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"rgbSwapped_inplace", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_inplace", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -99,9 +99,9 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 
 // Protected Visibility=Default Availability=Available
 // QImage convertToFormat_helper(QImage::Format, Qt::ImageConversionFlags)
-  virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
+  virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"convertToFormat_helper", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_helper", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
       // RecordRecordQImage
@@ -114,7 +114,7 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 // bool convertToFormat_inplace(QImage::Format, Qt::ImageConversionFlags)
   virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"convertToFormat_inplace", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_inplace", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -125,9 +125,9 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
 
 // Protected Visibility=Default Availability=Available
 // QImage smoothScaled(int, int)
-  virtual QImage smoothScaled(int w, int h) {
+  virtual QImage smoothScaled(int w, int h) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"smoothScaled", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"smoothScaled", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
       // RecordRecordQImage

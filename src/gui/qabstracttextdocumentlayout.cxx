@@ -22,7 +22,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // void documentChanged(int, int, int)
   virtual void documentChanged(int from, int charsRemoved, int charsAdded) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"documentChanged", &handled, 3, (uint64_t)from, (uint64_t)charsRemoved, (uint64_t)charsAdded, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"documentChanged", &handled, 3, (uint64_t)from, (uint64_t)charsRemoved, (uint64_t)charsAdded, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // void resizeInlineObject(QTextInlineObject, int, const QTextFormat &)
   virtual void resizeInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -46,7 +46,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // void positionInlineObject(QTextInlineObject, int, const QTextFormat &)
   virtual void positionInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"positionInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"positionInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -58,7 +58,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // void drawInlineObject(QPainter *, const QRectF &, QTextInlineObject, int, const QTextFormat &)
   virtual void drawInlineObject(QPainter * painter, const QRectF & rect, QTextInlineObject object, int posInDocument, const QTextFormat & format) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawInlineObject", &handled, 5, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&object, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawInlineObject", &handled, 5, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&object, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -70,7 +70,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // int formatIndex(int)
   virtual int formatIndex(int pos) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"formatIndex", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"formatIndex", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -83,7 +83,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 // QTextCharFormat format(int)
   virtual QTextCharFormat format(int pos) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QTextCharFormat*)(irv);
       // RecordRecordQTextCharFormat

@@ -23,7 +23,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // void blockInserted(const QTextBlock &)
   virtual void blockInserted(const QTextBlock & block) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"blockInserted", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockInserted", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -35,7 +35,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // void blockRemoved(const QTextBlock &)
   virtual void blockRemoved(const QTextBlock & block) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"blockRemoved", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockRemoved", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -47,7 +47,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // void blockFormatChanged(const QTextBlock &)
   virtual void blockFormatChanged(const QTextBlock & block) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"blockFormatChanged", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockFormatChanged", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

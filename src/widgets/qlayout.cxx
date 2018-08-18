@@ -24,7 +24,7 @@ MyQLayout() : QLayout() {}
 // void widgetEvent(QEvent *)
   virtual void widgetEvent(QEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"widgetEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widgetEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -36,7 +36,7 @@ MyQLayout() : QLayout() {}
 // void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -48,7 +48,7 @@ MyQLayout() : QLayout() {}
 // void addChildLayout(QLayout *)
   virtual void addChildLayout(QLayout * l) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"addChildLayout", &handled, 1, (uint64_t)l, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildLayout", &handled, 1, (uint64_t)l, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -60,7 +60,7 @@ MyQLayout() : QLayout() {}
 // void addChildWidget(QWidget *)
   virtual void addChildWidget(QWidget * w) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"addChildWidget", &handled, 1, (uint64_t)w, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildWidget", &handled, 1, (uint64_t)w, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -72,7 +72,7 @@ MyQLayout() : QLayout() {}
 // bool adoptLayout(QLayout *)
   virtual bool adoptLayout(QLayout * layout) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"adoptLayout", &handled, 1, (uint64_t)layout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"adoptLayout", &handled, 1, (uint64_t)layout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -83,9 +83,9 @@ MyQLayout() : QLayout() {}
 
 // Protected Visibility=Default Availability=Available
 // QRect alignmentRect(const QRect &)
-  virtual QRect alignmentRect(const QRect & arg0) {
+  virtual QRect alignmentRect(const QRect & arg0) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
       // RecordRecordQRect

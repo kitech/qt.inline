@@ -22,7 +22,7 @@ MyQCameraImageCapture(QMediaObject * mediaObject, QObject * parent) : QCameraIma
 // bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setMediaObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMediaObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

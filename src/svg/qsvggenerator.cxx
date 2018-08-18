@@ -21,9 +21,9 @@ public:
 MyQSvgGenerator() : QSvgGenerator() {}
 // Protected virtual Visibility=Default Availability=Available
 // QPaintEngine * paintEngine()
-  virtual QPaintEngine * paintEngine() {
+  virtual QPaintEngine * paintEngine() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEngine", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEngine", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPaintEngine *)(irv);
       // PointerPointerQPaintEngine *
@@ -34,9 +34,9 @@ MyQSvgGenerator() : QSvgGenerator() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint

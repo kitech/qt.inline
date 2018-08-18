@@ -23,7 +23,7 @@ MyQNetworkDiskCache(QObject * parent) : QNetworkDiskCache(parent) {}
 // qint64 expire()
   virtual qint64 expire() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"expire", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"expire", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
       // TypedefLongLonglong long

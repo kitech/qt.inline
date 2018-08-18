@@ -22,7 +22,7 @@ MyQQmlIncubationController() : QQmlIncubationController() {}
 // void incubatingObjectCountChanged(int)
   virtual void incubatingObjectCountChanged(int arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"incubatingObjectCountChanged", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incubatingObjectCountChanged", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

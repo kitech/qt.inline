@@ -22,7 +22,7 @@ MyQMediaObject(QObject * parent, QMediaService * service) : QMediaObject(parent,
 // void addPropertyWatch(const QByteArray &)
   virtual void addPropertyWatch(const QByteArray & name) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"addPropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addPropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQMediaObject(QObject * parent, QMediaService * service) : QMediaObject(parent,
 // void removePropertyWatch(const QByteArray &)
   virtual void removePropertyWatch(const QByteArray & name) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"removePropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"removePropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

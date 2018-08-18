@@ -24,7 +24,7 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
 // void done(int)
   virtual void done(int result) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -36,7 +36,7 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
 // void accept()
   virtual void accept() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"accept", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"accept", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -48,7 +48,7 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
 // void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

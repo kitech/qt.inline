@@ -25,7 +25,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void highlightBlock(const QString &)
   virtual void highlightBlock(const QString & text) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"highlightBlock", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"highlightBlock", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -37,7 +37,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void setFormat(int, int, const QTextCharFormat &)
   virtual void setFormat(int start, int count, const QTextCharFormat & format) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setFormat", &handled, 3, (uint64_t)start, (uint64_t)count, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 3, (uint64_t)start, (uint64_t)count, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -49,7 +49,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void setFormat(int, int, const QColor &)
   virtual void setFormat(int start, int count, const QColor & color) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setFormat", &handled, 3, (uint64_t)start, (uint64_t)count, (uint64_t)&color, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 3, (uint64_t)start, (uint64_t)count, (uint64_t)&color, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -61,7 +61,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void setFormat(int, int, const QFont &)
   virtual void setFormat(int start, int count, const QFont & font) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setFormat", &handled, 3, (uint64_t)start, (uint64_t)count, (uint64_t)&font, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 3, (uint64_t)start, (uint64_t)count, (uint64_t)&font, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -71,9 +71,9 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QTextCharFormat format(int)
-  virtual QTextCharFormat format(int pos) {
+  virtual QTextCharFormat format(int pos) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QTextCharFormat*)(irv);
       // RecordRecordQTextCharFormat
@@ -84,9 +84,9 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // int previousBlockState()
-  virtual int previousBlockState() {
+  virtual int previousBlockState() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"previousBlockState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"previousBlockState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -97,9 +97,9 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // int currentBlockState()
-  virtual int currentBlockState() {
+  virtual int currentBlockState() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"currentBlockState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentBlockState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -112,7 +112,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void setCurrentBlockState(int)
   virtual void setCurrentBlockState(int newState) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setCurrentBlockState", &handled, 1, (uint64_t)newState, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCurrentBlockState", &handled, 1, (uint64_t)newState, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -124,7 +124,7 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void setCurrentBlockUserData(QTextBlockUserData *)
   virtual void setCurrentBlockUserData(QTextBlockUserData * data) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setCurrentBlockUserData", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCurrentBlockUserData", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -134,9 +134,9 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QTextBlockUserData * currentBlockUserData()
-  virtual QTextBlockUserData * currentBlockUserData() {
+  virtual QTextBlockUserData * currentBlockUserData() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"currentBlockUserData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentBlockUserData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QTextBlockUserData *)(irv);
       // PointerPointerQTextBlockUserData *
@@ -147,9 +147,9 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QTextBlock currentBlock()
-  virtual QTextBlock currentBlock() {
+  virtual QTextBlock currentBlock() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"currentBlock", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentBlock", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QTextBlock*)(irv);
       // RecordRecordQTextBlock

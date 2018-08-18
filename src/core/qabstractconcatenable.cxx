@@ -20,7 +20,7 @@ public:
 // void convertFromAscii(const char *, int, QChar *&)
   virtual void convertFromAscii(const char * a, int len_, QChar *& out) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"convertFromAscii", &handled, 3, (uint64_t)a, (uint64_t)len_, (uint64_t)&out, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromAscii", &handled, 3, (uint64_t)a, (uint64_t)len_, (uint64_t)&out, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -32,7 +32,7 @@ public:
 // void convertFromAscii(char, QChar *&)
   virtual void convertFromAscii(char a, QChar *& out) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"convertFromAscii", &handled, 2, (uint64_t)a, (uint64_t)&out, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromAscii", &handled, 2, (uint64_t)a, (uint64_t)&out, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -44,7 +44,7 @@ public:
 // void appendLatin1To(const char *, int, QChar *)
   virtual void appendLatin1To(const char * a, int len_, QChar * out) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"appendLatin1To", &handled, 3, (uint64_t)a, (uint64_t)len_, (uint64_t)out, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"appendLatin1To", &handled, 3, (uint64_t)a, (uint64_t)len_, (uint64_t)out, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

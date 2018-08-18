@@ -23,7 +23,7 @@ MyQNmeaPositionInfoSource(QNmeaPositionInfoSource::UpdateMode updateMode, QObjec
 // bool parsePosInfoFromNmeaData(const char *, int, QGeoPositionInfo *, bool *)
   virtual bool parsePosInfoFromNmeaData(const char * data, int size, QGeoPositionInfo * posInfo, bool * hasFix) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"parsePosInfoFromNmeaData", &handled, 4, (uint64_t)data, (uint64_t)size, (uint64_t)posInfo, (uint64_t)hasFix, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parsePosInfoFromNmeaData", &handled, 4, (uint64_t)data, (uint64_t)size, (uint64_t)posInfo, (uint64_t)hasFix, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

@@ -21,9 +21,9 @@ public:
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // Protected Visibility=Default Availability=Available
 // bool isInitialized()
-  virtual bool isInitialized() {
+  virtual bool isInitialized() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"isInitialized", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isInitialized", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

@@ -22,7 +22,7 @@ MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
 // void update()
   virtual void update() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

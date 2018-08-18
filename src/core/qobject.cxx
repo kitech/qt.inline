@@ -20,9 +20,9 @@ public:
 MyQObject(QObject * parent) : QObject(parent) {}
 // Protected Visibility=Default Availability=Available
 // QObject * sender()
-  virtual QObject * sender() {
+  virtual QObject * sender() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sender", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sender", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QObject *)(irv);
       // PointerPointerQObject *
@@ -33,9 +33,9 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // int senderSignalIndex()
-  virtual int senderSignalIndex() {
+  virtual int senderSignalIndex() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"senderSignalIndex", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"senderSignalIndex", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -46,9 +46,9 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // int receivers(const char *)
-  virtual int receivers(const char * signal) {
+  virtual int receivers(const char * signal) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"receivers", &handled, 1, (uint64_t)signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"receivers", &handled, 1, (uint64_t)signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -59,9 +59,9 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // bool isSignalConnected(const QMetaMethod &)
-  virtual bool isSignalConnected(const QMetaMethod & signal) {
+  virtual bool isSignalConnected(const QMetaMethod & signal) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"isSignalConnected", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isSignalConnected", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -74,7 +74,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 // void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -86,7 +86,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 // void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -98,7 +98,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 // void customEvent(QEvent *)
   virtual void customEvent(QEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"customEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"customEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -110,7 +110,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 // void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -122,7 +122,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 // void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

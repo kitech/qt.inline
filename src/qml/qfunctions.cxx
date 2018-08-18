@@ -11,7 +11,7 @@
 // [8] QQmlEngine * qmlEngine(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml9qmlEngineEPK7QObject(const QObject * arg0) {
-  return (void*)qmlEngine(arg0);
+  return (void*)QtQml::qmlEngine(arg0);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -19,7 +19,7 @@ void* C_ZN5QtQml9qmlEngineEPK7QObject(const QObject * arg0) {
 // [16] QQmlInfo qmlDebug(const QObject *, const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml8qmlDebugEPK7QObjectRK9QQmlError(const QObject * me, QQmlError* error) {
-  auto rv = qmlDebug(me, *error);
+  auto rv = QtQml::qmlDebug(me, *error);
 return new QQmlInfo(rv);
 }
 
@@ -28,7 +28,7 @@ return new QQmlInfo(rv);
 // [16] QQmlInfo qmlDebug(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml8qmlDebugEPK7QObject_1(const QObject * me) {
-  auto rv = qmlDebug(me);
+  auto rv = QtQml::qmlDebug(me);
 return new QQmlInfo(rv);
 }
 
@@ -37,7 +37,7 @@ return new QQmlInfo(rv);
 // [16] QQmlInfo qmlInfo(const QObject *, const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml7qmlInfoEPK7QObjectRK9QQmlError(const QObject * me, QQmlError* error) {
-  auto rv = qmlInfo(me, *error);
+  auto rv = QtQml::qmlInfo(me, *error);
 return new QQmlInfo(rv);
 }
 
@@ -46,7 +46,7 @@ return new QQmlInfo(rv);
 // [16] QQmlInfo qmlInfo(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml7qmlInfoEPK7QObject_1(const QObject * me) {
-  auto rv = qmlInfo(me);
+  auto rv = QtQml::qmlInfo(me);
 return new QQmlInfo(rv);
 }
 
@@ -55,7 +55,7 @@ return new QQmlInfo(rv);
 // [8] QObject * qmlAttachedPropertiesObjectById(int, const QObject *, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml31qmlAttachedPropertiesObjectByIdEiPK7QObjectb(int arg0, const QObject * arg1, bool create) {
-  return (void*)qmlAttachedPropertiesObjectById(arg0, arg1, create);
+  return (void*)QtQml::qmlAttachedPropertiesObjectById(arg0, arg1, create);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -63,7 +63,7 @@ void* C_ZN5QtQml31qmlAttachedPropertiesObjectByIdEiPK7QObjectb(int arg0, const Q
 // [8] QObject * qmlAttachedPropertiesObject(int *, const QObject *, const QMetaObject *, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml27qmlAttachedPropertiesObjectEPiPK7QObjectPK11QMetaObjectb(int * arg0, const QObject * arg1, const QMetaObject * arg2, bool create) {
-  return (void*)qmlAttachedPropertiesObject(arg0, arg1, arg2, create);
+  return (void*)QtQml::qmlAttachedPropertiesObject(arg0, arg1, arg2, create);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -71,7 +71,7 @@ void* C_ZN5QtQml27qmlAttachedPropertiesObjectEPiPK7QObjectPK11QMetaObjectb(int *
 // [-2] void qmlExecuteDeferred(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QtQml18qmlExecuteDeferredEP7QObject(QObject * arg0) {
-  qmlExecuteDeferred(arg0);
+  QtQml::qmlExecuteDeferred(arg0);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void C_ZN5QtQml18qmlExecuteDeferredEP7QObject(QObject * arg0) {
 // [16] QQmlInfo qmlWarning(const QObject *, const QQmlError &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml10qmlWarningEPK7QObjectRK9QQmlError(const QObject * me, QQmlError* error) {
-  auto rv = qmlWarning(me, *error);
+  auto rv = QtQml::qmlWarning(me, *error);
 return new QQmlInfo(rv);
 }
 
@@ -88,7 +88,7 @@ return new QQmlInfo(rv);
 // [16] QQmlInfo qmlWarning(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml10qmlWarningEPK7QObject_1(const QObject * me) {
-  auto rv = qmlWarning(me);
+  auto rv = QtQml::qmlWarning(me);
 return new QQmlInfo(rv);
 }
 
@@ -97,7 +97,7 @@ return new QQmlInfo(rv);
 // [8] QQmlContext * qmlContext(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QtQml10qmlContextEPK7QObject(const QObject * arg0) {
-  return (void*)qmlContext(arg0);
+  return (void*)QtQml::qmlContext(arg0);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -105,7 +105,7 @@ void* C_ZN5QtQml10qmlContextEPK7QObject(const QObject * arg0) {
 // [4] int qmlregister(QQmlPrivate::RegistrationType, void *)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QQmlPrivate11qmlregisterENS_16RegistrationTypeEPv(QQmlPrivate::RegistrationType arg0, void * arg1) {
-  return (int)qmlregister(arg0, arg1);
+  return (int)QQmlPrivate::qmlregister(arg0, arg1);
 }
 
 // Invalid Visibility=Default Availability=Available

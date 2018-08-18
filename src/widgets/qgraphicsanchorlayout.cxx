@@ -21,9 +21,9 @@ public:
 MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
-  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
+  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSizeF*)(irv);
       // RecordRecordQSizeF

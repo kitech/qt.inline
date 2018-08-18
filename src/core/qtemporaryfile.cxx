@@ -28,7 +28,7 @@ MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFil
 // bool open(QIODevice::OpenMode)
   virtual bool open(QFlags<QIODevice::OpenModeFlag> flags) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"open", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"open", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

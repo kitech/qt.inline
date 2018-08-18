@@ -20,9 +20,9 @@ public:
 MyQStaticByteArrayMatcherBase(const char * pattern, uint n) : QStaticByteArrayMatcherBase(pattern, n) {}
 // Protected Visibility=Default Availability=Available
 // int indexOfIn(const char *, uint, const char *, int, int)
-  virtual int indexOfIn(const char * needle, uint nlen, const char * haystack, int hlen, int from) {
+  virtual int indexOfIn(const char * needle, uint nlen, const char * haystack, int hlen, int from) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"indexOfIn", &handled, 5, (uint64_t)needle, (uint64_t)nlen, (uint64_t)haystack, (uint64_t)hlen, (uint64_t)from, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexOfIn", &handled, 5, (uint64_t)needle, (uint64_t)nlen, (uint64_t)haystack, (uint64_t)hlen, (uint64_t)from, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint

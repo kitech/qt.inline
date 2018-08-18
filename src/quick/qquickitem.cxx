@@ -22,7 +22,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -33,9 +33,9 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // bool isComponentComplete()
-  virtual bool isComponentComplete() {
+  virtual bool isComponentComplete() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"isComponentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isComponentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -48,7 +48,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void updateInputMethod(Qt::InputMethodQueries)
   virtual void updateInputMethod(QFlags<Qt::InputMethodQuery> queries) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"updateInputMethod", &handled, 1, (uint64_t)queries, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateInputMethod", &handled, 1, (uint64_t)queries, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -58,9 +58,9 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // bool widthValid()
-  virtual bool widthValid() {
+  virtual bool widthValid() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"widthValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widthValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -71,9 +71,9 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // bool heightValid()
-  virtual bool heightValid() {
+  virtual bool heightValid() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"heightValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"heightValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -86,7 +86,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void setImplicitSize(qreal, qreal)
   virtual void setImplicitSize(qreal arg0, qreal arg1) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setImplicitSize", &handled, 2, (uint64_t)&arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setImplicitSize", &handled, 2, (uint64_t)&arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -98,7 +98,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void classBegin()
   virtual void classBegin() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"classBegin", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"classBegin", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -110,7 +110,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void componentComplete()
   virtual void componentComplete() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"componentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"componentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -122,7 +122,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -134,7 +134,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -146,7 +146,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void inputMethodEvent(QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -158,7 +158,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -170,7 +170,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -182,7 +182,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -194,7 +194,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -206,7 +206,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -218,7 +218,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -230,7 +230,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void mouseUngrabEvent()
   virtual void mouseUngrabEvent() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseUngrabEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseUngrabEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -242,7 +242,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void touchUngrabEvent()
   virtual void touchUngrabEvent() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"touchUngrabEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"touchUngrabEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -254,7 +254,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -266,7 +266,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void touchEvent(QTouchEvent *)
   virtual void touchEvent(QTouchEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"touchEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"touchEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -278,7 +278,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void hoverEnterEvent(QHoverEvent *)
   virtual void hoverEnterEvent(QHoverEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -290,7 +290,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void hoverMoveEvent(QHoverEvent *)
   virtual void hoverMoveEvent(QHoverEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -302,7 +302,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void hoverLeaveEvent(QHoverEvent *)
   virtual void hoverLeaveEvent(QHoverEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -314,7 +314,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void dragEnterEvent(QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -326,7 +326,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void dragMoveEvent(QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -338,7 +338,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void dragLeaveEvent(QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -350,7 +350,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -362,7 +362,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // bool childMouseEventFilter(QQuickItem *, QEvent *)
   virtual bool childMouseEventFilter(QQuickItem * arg0, QEvent * arg1) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"childMouseEventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childMouseEventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -375,7 +375,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void windowDeactivateEvent()
   virtual void windowDeactivateEvent() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"windowDeactivateEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"windowDeactivateEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -387,7 +387,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void geometryChanged(const QRectF &, const QRectF &)
   virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -399,7 +399,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void releaseResources()
   virtual void releaseResources() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"releaseResources", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"releaseResources", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -411,7 +411,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // void updatePolish()
   virtual void updatePolish() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"updatePolish", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updatePolish", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

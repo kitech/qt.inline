@@ -21,9 +21,9 @@ public:
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -34,9 +34,9 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // QPaintDevice * redirected(QPoint *)
-  virtual QPaintDevice * redirected(QPoint * arg0) {
+  virtual QPaintDevice * redirected(QPoint * arg0) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPaintDevice *)(irv);
       // PointerPointerQPaintDevice *

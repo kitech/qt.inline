@@ -23,7 +23,7 @@ MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * arg0, qint64 arg1) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"readData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
       // TypedefLongLonglong long
@@ -36,7 +36,7 @@ MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * arg0, qint64 arg1) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
       // TypedefLongLonglong long

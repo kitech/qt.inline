@@ -23,7 +23,7 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 // void addChildLayoutItem(QGraphicsLayoutItem *)
   virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"addChildLayoutItem", &handled, 1, (uint64_t)layoutItem, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildLayoutItem", &handled, 1, (uint64_t)layoutItem, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

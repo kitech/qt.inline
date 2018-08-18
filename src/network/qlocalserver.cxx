@@ -23,7 +23,7 @@ MyQLocalServer(QObject * parent) : QLocalServer(parent) {}
 // void incomingConnection(quintptr)
   virtual void incomingConnection(quintptr socketDescriptor) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"incomingConnection", &handled, 1, (uint64_t)socketDescriptor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incomingConnection", &handled, 1, (uint64_t)socketDescriptor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

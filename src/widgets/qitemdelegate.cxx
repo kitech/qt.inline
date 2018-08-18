@@ -20,9 +20,9 @@ public:
 MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // void drawDisplay(QPainter *, const QStyleOptionViewItem &, const QRect &, const QString &)
-  virtual void drawDisplay(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QString & text) {
+  virtual void drawDisplay(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QString & text) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawDisplay", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawDisplay", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -32,9 +32,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // void drawDecoration(QPainter *, const QStyleOptionViewItem &, const QRect &, const QPixmap &)
-  virtual void drawDecoration(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QPixmap & pixmap) {
+  virtual void drawDecoration(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QPixmap & pixmap) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawDecoration", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)&pixmap, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawDecoration", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)&pixmap, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -44,9 +44,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // void drawFocus(QPainter *, const QStyleOptionViewItem &, const QRect &)
-  virtual void drawFocus(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect) {
+  virtual void drawFocus(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawFocus", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawFocus", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -56,9 +56,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // void drawCheck(QPainter *, const QStyleOptionViewItem &, const QRect &, Qt::CheckState)
-  virtual void drawCheck(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, Qt::CheckState state) {
+  virtual void drawCheck(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, Qt::CheckState state) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawCheck", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)state, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawCheck", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)state, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -68,9 +68,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // void drawBackground(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
-  virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) {
+  virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawBackground", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawBackground", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -80,9 +80,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // void doLayout(const QStyleOptionViewItem &, QRect *, QRect *, QRect *, bool)
-  virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) {
+  virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"doLayout", &handled, 5, (uint64_t)&option, (uint64_t)checkRect, (uint64_t)iconRect, (uint64_t)textRect, (uint64_t)hint, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doLayout", &handled, 5, (uint64_t)&option, (uint64_t)checkRect, (uint64_t)iconRect, (uint64_t)textRect, (uint64_t)hint, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -92,9 +92,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QRect rect(const QStyleOptionViewItem &, const QModelIndex &, int)
-  virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) {
+  virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"rect", &handled, 3, (uint64_t)&option, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rect", &handled, 3, (uint64_t)&option, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
       // RecordRecordQRect
@@ -107,7 +107,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 // bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -120,7 +120,7 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 // bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
   virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"editorEvent", &handled, 4, (uint64_t)event, (uint64_t)model, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"editorEvent", &handled, 4, (uint64_t)event, (uint64_t)model, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -131,9 +131,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QStyleOptionViewItem setOptions(const QModelIndex &, const QStyleOptionViewItem &)
-  virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) {
+  virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setOptions", &handled, 2, (uint64_t)&index, (uint64_t)&option, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOptions", &handled, 2, (uint64_t)&index, (uint64_t)&option, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStyleOptionViewItem*)(irv);
       // RecordRecordQStyleOptionViewItem
@@ -144,9 +144,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QPixmap decoration(const QStyleOptionViewItem &, const QVariant &)
-  virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) {
+  virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"decoration", &handled, 2, (uint64_t)&option, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decoration", &handled, 2, (uint64_t)&option, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QPixmap*)(irv);
       // RecordRecordQPixmap
@@ -157,9 +157,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QPixmap * selected(const QPixmap &, const QPalette &, bool)
-  virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) {
+  virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"selected", &handled, 3, (uint64_t)&pixmap, (uint64_t)&palette, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selected", &handled, 3, (uint64_t)&pixmap, (uint64_t)&palette, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPixmap *)(irv);
       // PointerPointerQPixmap *
@@ -170,9 +170,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QRect doCheck(const QStyleOptionViewItem &, const QRect &, const QVariant &)
-  virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) {
+  virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"doCheck", &handled, 3, (uint64_t)&option, (uint64_t)&bounding, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doCheck", &handled, 3, (uint64_t)&option, (uint64_t)&bounding, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
       // RecordRecordQRect
@@ -183,9 +183,9 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QRect textRectangle(QPainter *, const QRect &, const QFont &, const QString &)
-  virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) {
+  virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"textRectangle", &handled, 4, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&font, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textRectangle", &handled, 4, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&font, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
       // RecordRecordQRect

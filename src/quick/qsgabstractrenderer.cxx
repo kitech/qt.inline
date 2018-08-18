@@ -23,7 +23,7 @@ MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
 // void nodeChanged(QSGNode *, QSGNode::DirtyState)
   virtual void nodeChanged(QSGNode * node, QFlags<QSGNode::DirtyStateBit> state) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"nodeChanged", &handled, 2, (uint64_t)node, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nodeChanged", &handled, 2, (uint64_t)node, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

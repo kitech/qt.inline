@@ -22,7 +22,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // void advanceAnimation(qint64)
   virtual void advanceAnimation(qint64 timeStep) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"advanceAnimation", &handled, 1, (uint64_t)timeStep, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"advanceAnimation", &handled, 1, (uint64_t)timeStep, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // void start()
   virtual void start() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -46,7 +46,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // void stop()
   virtual void stop() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

@@ -21,9 +21,9 @@ public:
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
 // Protected Visibility=Default Availability=Available
 // bool isDir()
-  virtual bool isDir() {
+  virtual bool isDir() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"isDir", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isDir", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -34,9 +34,9 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
 
 // Protected inline Visibility=Default Availability=Available
 // bool isFile()
-  virtual bool isFile() {
+  virtual bool isFile() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"isFile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -47,9 +47,9 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
 
 // Protected Visibility=Default Availability=Available
 // QStringList children()
-  virtual QStringList children() {
+  virtual QStringList children() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"children", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"children", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
       // RecordRecordQStringList

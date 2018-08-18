@@ -22,7 +22,7 @@ MyQMediaRecorder(QMediaObject * mediaObject, QObject * parent) : QMediaRecorder(
 // bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * object) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setMediaObject", &handled, 1, (uint64_t)object, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMediaObject", &handled, 1, (uint64_t)object, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool

@@ -20,9 +20,9 @@ public:
 MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
 // Protected virtual Visibility=Default Availability=Available
 // QSGMaterialType * type()
-  virtual QSGMaterialType * type() {
+  virtual QSGMaterialType * type() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"type", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"type", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QSGMaterialType *)(irv);
       // PointerPointerQSGMaterialType *
@@ -33,9 +33,9 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // QSGMaterialShader * createShader()
-  virtual QSGMaterialShader * createShader() {
+  virtual QSGMaterialShader * createShader() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"createShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QSGMaterialShader *)(irv);
       // PointerPointerQSGMaterialShader *

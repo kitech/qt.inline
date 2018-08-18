@@ -22,7 +22,7 @@ MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // void beforeAnimationStep(qreal)
   virtual void beforeAnimationStep(qreal step) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"beforeAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beforeAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // void afterAnimationStep(qreal)
   virtual void afterAnimationStep(qreal step) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"afterAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"afterAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

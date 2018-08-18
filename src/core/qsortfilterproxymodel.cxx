@@ -21,9 +21,9 @@ public:
 MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // bool filterAcceptsRow(int, const QModelIndex &)
-  virtual bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) {
+  virtual bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"filterAcceptsRow", &handled, 2, (uint64_t)source_row, (uint64_t)&source_parent, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"filterAcceptsRow", &handled, 2, (uint64_t)source_row, (uint64_t)&source_parent, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -34,9 +34,9 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // bool filterAcceptsColumn(int, const QModelIndex &)
-  virtual bool filterAcceptsColumn(int source_column, const QModelIndex & source_parent) {
+  virtual bool filterAcceptsColumn(int source_column, const QModelIndex & source_parent) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"filterAcceptsColumn", &handled, 2, (uint64_t)source_column, (uint64_t)&source_parent, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"filterAcceptsColumn", &handled, 2, (uint64_t)source_column, (uint64_t)&source_parent, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -47,9 +47,9 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // bool lessThan(const QModelIndex &, const QModelIndex &)
-  virtual bool lessThan(const QModelIndex & source_left, const QModelIndex & source_right) {
+  virtual bool lessThan(const QModelIndex & source_left, const QModelIndex & source_right) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"lessThan", &handled, 2, (uint64_t)&source_left, (uint64_t)&source_right, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"lessThan", &handled, 2, (uint64_t)&source_left, (uint64_t)&source_right, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -62,7 +62,7 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 // void filterChanged()
   virtual void filterChanged() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"filterChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"filterChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -74,7 +74,7 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 // void invalidateFilter()
   virtual void invalidateFilter() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"invalidateFilter", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"invalidateFilter", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

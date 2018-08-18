@@ -22,7 +22,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
 // void incomingConnection(qintptr)
   virtual void incomingConnection(qintptr handle) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"incomingConnection", &handled, 1, (uint64_t)handle, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incomingConnection", &handled, 1, (uint64_t)handle, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
 // void addPendingConnection(QTcpSocket *)
   virtual void addPendingConnection(QTcpSocket * socket) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"addPendingConnection", &handled, 1, (uint64_t)socket, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addPendingConnection", &handled, 1, (uint64_t)socket, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

@@ -25,9 +25,9 @@ MyQCommandLinkButton(const QString & text, QWidget * parent) : QCommandLinkButto
 MyQCommandLinkButton(const QString & text, const QString & description, QWidget * parent) : QCommandLinkButton(text, description, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // QSize sizeHint()
-  virtual QSize sizeHint() {
+  virtual QSize sizeHint() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
       // RecordRecordQSize
@@ -38,9 +38,9 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 
 // Protected virtual Visibility=Default Availability=Available
 // int heightForWidth(int)
-  virtual int heightForWidth(int arg0) {
+  virtual int heightForWidth(int arg0) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"heightForWidth", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"heightForWidth", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
       // IntIntint
@@ -51,9 +51,9 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 
 // Protected virtual Visibility=Default Availability=Available
 // QSize minimumSizeHint()
-  virtual QSize minimumSizeHint() {
+  virtual QSize minimumSizeHint() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"minimumSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
       // RecordRecordQSize
@@ -66,7 +66,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -79,7 +79,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 // void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

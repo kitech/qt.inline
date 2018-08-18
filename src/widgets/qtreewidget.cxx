@@ -22,7 +22,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -33,9 +33,9 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // QStringList mimeTypes()
-  virtual QStringList mimeTypes() {
+  virtual QStringList mimeTypes() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
       // RecordRecordQStringList
@@ -48,7 +48,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 // bool dropMimeData(QTreeWidgetItem *, int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(QTreeWidgetItem * parent, int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dropMimeData", &handled, 4, (uint64_t)parent, (uint64_t)index, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropMimeData", &handled, 4, (uint64_t)parent, (uint64_t)index, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -59,9 +59,9 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // Qt::DropActions supportedDropActions()
-  virtual Qt::DropActions supportedDropActions() {
+  virtual Qt::DropActions supportedDropActions() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (Qt::DropActions)(int)(irv);
       // ElaboratedRecordQFlags<Qt::DropAction>
@@ -72,9 +72,9 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QModelIndex indexFromItem(const QTreeWidgetItem *, int)
-  virtual QModelIndex indexFromItem(const QTreeWidgetItem * item, int column) {
+  virtual QModelIndex indexFromItem(const QTreeWidgetItem * item, int column) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
@@ -85,9 +85,9 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QModelIndex indexFromItem(QTreeWidgetItem *, int)
-  virtual QModelIndex indexFromItem(QTreeWidgetItem * item, int column) {
+  virtual QModelIndex indexFromItem(QTreeWidgetItem * item, int column) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
@@ -98,9 +98,9 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QTreeWidgetItem * itemFromIndex(const QModelIndex &)
-  virtual QTreeWidgetItem * itemFromIndex(const QModelIndex & index) {
+  virtual QTreeWidgetItem * itemFromIndex(const QModelIndex & index) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QTreeWidgetItem *)(irv);
       // PointerPointerQTreeWidgetItem *
@@ -113,7 +113,7 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 // void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

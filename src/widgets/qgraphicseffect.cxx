@@ -23,7 +23,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void draw(QPainter *)
   virtual void draw(QPainter * painter) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -35,7 +35,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void sourceChanged(QGraphicsEffect::ChangeFlags)
   virtual void sourceChanged(QFlags<QGraphicsEffect::ChangeFlag> flags) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sourceChanged", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceChanged", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -47,7 +47,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void updateBoundingRect()
   virtual void updateBoundingRect() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"updateBoundingRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateBoundingRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -57,9 +57,9 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // bool sourceIsPixmap()
-  virtual bool sourceIsPixmap() {
+  virtual bool sourceIsPixmap() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sourceIsPixmap", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceIsPixmap", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -70,9 +70,9 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QRectF sourceBoundingRect(Qt::CoordinateSystem)
-  virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) {
+  virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sourceBoundingRect", &handled, 1, (uint64_t)system, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceBoundingRect", &handled, 1, (uint64_t)system, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRectF*)(irv);
       // RecordRecordQRectF
@@ -85,7 +85,7 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void drawSource(QPainter *)
   virtual void drawSource(QPainter * painter) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"drawSource", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawSource", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -95,9 +95,9 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QPixmap sourcePixmap(Qt::CoordinateSystem, QPoint *, QGraphicsEffect::PixmapPadMode)
-  virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
+  virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"sourcePixmap", &handled, 3, (uint64_t)system, (uint64_t)offset, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourcePixmap", &handled, 3, (uint64_t)system, (uint64_t)offset, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QPixmap*)(irv);
       // RecordRecordQPixmap

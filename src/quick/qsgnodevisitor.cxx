@@ -20,7 +20,7 @@ public:
 // void enterTransformNode(QSGTransformNode *)
   virtual void enterTransformNode(QSGTransformNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"enterTransformNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterTransformNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -32,7 +32,7 @@ public:
 // void leaveTransformNode(QSGTransformNode *)
   virtual void leaveTransformNode(QSGTransformNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"leaveTransformNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveTransformNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -44,7 +44,7 @@ public:
 // void enterClipNode(QSGClipNode *)
   virtual void enterClipNode(QSGClipNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"enterClipNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterClipNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -56,7 +56,7 @@ public:
 // void leaveClipNode(QSGClipNode *)
   virtual void leaveClipNode(QSGClipNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"leaveClipNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveClipNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -68,7 +68,7 @@ public:
 // void enterGeometryNode(QSGGeometryNode *)
   virtual void enterGeometryNode(QSGGeometryNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"enterGeometryNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterGeometryNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -80,7 +80,7 @@ public:
 // void leaveGeometryNode(QSGGeometryNode *)
   virtual void leaveGeometryNode(QSGGeometryNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"leaveGeometryNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveGeometryNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -92,7 +92,7 @@ public:
 // void enterOpacityNode(QSGOpacityNode *)
   virtual void enterOpacityNode(QSGOpacityNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"enterOpacityNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterOpacityNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -104,7 +104,7 @@ public:
 // void leaveOpacityNode(QSGOpacityNode *)
   virtual void leaveOpacityNode(QSGOpacityNode * arg0) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"leaveOpacityNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveOpacityNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -116,7 +116,7 @@ public:
 // void visitNode(QSGNode *)
   virtual void visitNode(QSGNode * n) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"visitNode", &handled, 1, (uint64_t)n, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visitNode", &handled, 1, (uint64_t)n, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -128,7 +128,7 @@ public:
 // void visitChildren(QSGNode *)
   virtual void visitChildren(QSGNode * n) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"visitChildren", &handled, 1, (uint64_t)n, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visitChildren", &handled, 1, (uint64_t)n, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

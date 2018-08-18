@@ -22,7 +22,7 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -33,9 +33,9 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // QStringList mimeTypes()
-  virtual QStringList mimeTypes() {
+  virtual QStringList mimeTypes() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
       // RecordRecordQStringList
@@ -48,7 +48,7 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 // bool dropMimeData(int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dropMimeData", &handled, 3, (uint64_t)index, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropMimeData", &handled, 3, (uint64_t)index, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -59,9 +59,9 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // Qt::DropActions supportedDropActions()
-  virtual Qt::DropActions supportedDropActions() {
+  virtual Qt::DropActions supportedDropActions() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (Qt::DropActions)(int)(irv);
       // ElaboratedRecordQFlags<Qt::DropAction>
@@ -72,9 +72,9 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QModelIndex indexFromItem(QListWidgetItem *)
-  virtual QModelIndex indexFromItem(QListWidgetItem * item) {
+  virtual QModelIndex indexFromItem(QListWidgetItem * item) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
@@ -85,9 +85,9 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // QListWidgetItem * itemFromIndex(const QModelIndex &)
-  virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) {
+  virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QListWidgetItem *)(irv);
       // PointerPointerQListWidgetItem *

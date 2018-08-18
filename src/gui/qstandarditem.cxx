@@ -29,7 +29,7 @@ MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 // QStandardItem & operator=(const QStandardItem &)
   virtual QStandardItem & operator=(const QStandardItem & other) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"operator=", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"operator=", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QStandardItem &)(irv);
       // LValueReferenceLValueReferenceQStandardItem &
@@ -42,7 +42,7 @@ MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 // void emitDataChanged()
   virtual void emitDataChanged() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

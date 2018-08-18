@@ -24,7 +24,7 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
 // QTextObject * createObject(const QTextFormat &)
   virtual QTextObject * createObject(const QTextFormat & f) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"createObject", &handled, 1, (uint64_t)&f, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createObject", &handled, 1, (uint64_t)&f, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QTextObject *)(irv);
       // PointerPointerQTextObject *
@@ -37,7 +37,7 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
 // QVariant loadResource(int, const QUrl &)
   virtual QVariant loadResource(int type_, const QUrl & name) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"loadResource", &handled, 2, (uint64_t)type_, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"loadResource", &handled, 2, (uint64_t)type_, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
       // RecordRecordQVariant

@@ -24,7 +24,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 // bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -35,9 +35,9 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 
 // Protected virtual Visibility=Default Availability=Available
 // QStringList mimeTypes()
-  virtual QStringList mimeTypes() {
+  virtual QStringList mimeTypes() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
       // RecordRecordQStringList
@@ -50,7 +50,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 // bool dropMimeData(int, int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int row, int column, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dropMimeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropMimeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
       // BoolBoolbool
@@ -61,9 +61,9 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 
 // Protected virtual Visibility=Default Availability=Available
 // Qt::DropActions supportedDropActions()
-  virtual Qt::DropActions supportedDropActions() {
+  virtual Qt::DropActions supportedDropActions() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (Qt::DropActions)(int)(irv);
       // ElaboratedRecordQFlags<Qt::DropAction>
@@ -74,9 +74,9 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 
 // Protected Visibility=Default Availability=Available
 // QModelIndex indexFromItem(QTableWidgetItem *)
-  virtual QModelIndex indexFromItem(QTableWidgetItem * item) {
+  virtual QModelIndex indexFromItem(QTableWidgetItem * item) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
@@ -87,9 +87,9 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 
 // Protected Visibility=Default Availability=Available
 // QTableWidgetItem * itemFromIndex(const QModelIndex &)
-  virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) {
+  virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QTableWidgetItem *)(irv);
       // PointerPointerQTableWidgetItem *
@@ -102,7 +102,7 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
 // void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

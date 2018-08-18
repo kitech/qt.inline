@@ -22,7 +22,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 // void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
   virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -34,7 +34,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 // void setShaderSourceFiles(QOpenGLShader::ShaderType, const QStringList &)
   virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -46,7 +46,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 // void compile()
   virtual void compile() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"compile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -58,7 +58,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 // void initialize()
   virtual void initialize() {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
@@ -68,9 +68,9 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // const char * vertexShader()
-  virtual const char * vertexShader() {
+  virtual const char * vertexShader() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"vertexShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"vertexShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (const char *)(irv);
       // PointerPointerconst char *
@@ -81,9 +81,9 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // const char * fragmentShader()
-  virtual const char * fragmentShader() {
+  virtual const char * fragmentShader() const{
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"fragmentShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fragmentShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (const char *)(irv);
       // PointerPointerconst char *

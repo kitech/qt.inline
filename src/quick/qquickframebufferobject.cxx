@@ -23,7 +23,7 @@ MyQQuickFramebufferObject(QQuickItem * parent) : QQuickFramebufferObject(parent)
 // void geometryChanged(const QRectF &, const QRectF &)
   virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {

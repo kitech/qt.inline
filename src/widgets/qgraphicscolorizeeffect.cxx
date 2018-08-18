@@ -23,7 +23,7 @@ MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
 // void draw(QPainter *)
   virtual void draw(QPainter * painter) {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // VoidVoidvoid
     } else {
