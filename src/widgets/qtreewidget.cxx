@@ -376,8 +376,8 @@ int C_ZNK11QTreeWidget19indexOfTopLevelItemEP15QTreeWidgetItem(void *this_, QTre
 // [-2] void insertTopLevelItems(int, const QList<QTreeWidgetItem *> &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
-void C_ZN11QTreeWidget19insertTopLevelItemsEiRK5QListIP15QTreeWidgetItemE(void *this_, int index, const QList<QTreeWidgetItem *> & items) {
-  ((QTreeWidget*)this_)->insertTopLevelItems(index, items);
+void C_ZN11QTreeWidget19insertTopLevelItemsEiRK5QListIP15QTreeWidgetItemE(void *this_, int index, QList<QTreeWidgetItem *>* items) {
+  ((QTreeWidget*)this_)->insertTopLevelItems(index, *items);
 }
 #endif // QT_VERSION >= 0x040100
 
@@ -385,8 +385,8 @@ void C_ZN11QTreeWidget19insertTopLevelItemsEiRK5QListIP15QTreeWidgetItemE(void *
 // /usr/include/qt/QtWidgets/qtreewidget.h:279
 // [-2] void addTopLevelItems(const QList<QTreeWidgetItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QTreeWidget16addTopLevelItemsERK5QListIP15QTreeWidgetItemE(void *this_, const QList<QTreeWidgetItem *> & items) {
-  ((QTreeWidget*)this_)->addTopLevelItems(items);
+void C_ZN11QTreeWidget16addTopLevelItemsERK5QListIP15QTreeWidgetItemE(void *this_, QList<QTreeWidgetItem *>* items) {
+  ((QTreeWidget*)this_)->addTopLevelItems(*items);
 }
 
 // Public Visibility=Default Availability=Available

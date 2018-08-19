@@ -394,24 +394,24 @@ void* C_ZN8QVariantC2ERK9QDateTime(QDateTime* datetime) {
 // /usr/include/qt/QtCore/qvariant.h:230
 // [-2] void QVariant(const QList<QVariant> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN8QVariantC2ERK5QListIS_E(const QList<QVariant> & list) {
-  return  new QVariant(list);
+void* C_ZN8QVariantC2ERK5QListIS_E(QList<QVariant>* list) {
+  return  new QVariant(*list);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:231
 // [-2] void QVariant(const QMap<QString, QVariant> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN8QVariantC2ERK4QMapI7QStringS_E(const QMap<QString, QVariant> & map_) {
-  return  new QVariant(map_);
+void* C_ZN8QVariantC2ERK4QMapI7QStringS_E(QMap<QString, QVariant>* map_) {
+  return  new QVariant(*map_);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:232
 // [-2] void QVariant(const QHash<QString, QVariant> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN8QVariantC2ERK5QHashI7QStringS_E(const QHash<QString, QVariant> & hash) {
-  return  new QVariant(hash);
+void* C_ZN8QVariantC2ERK5QHashI7QStringS_E(QHash<QString, QVariant>* hash) {
+  return  new QVariant(*hash);
 }
 
 // Public Visibility=Default Availability=Available

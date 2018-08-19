@@ -139,8 +139,8 @@ void C_ZN18QOpenGLDebugLogger14enableMessagesE6QFlagsIN19QOpenGLDebugMessage6Sou
 // /usr/include/qt/QtGui/qopengldebug.h:189
 // [-2] void enableMessages(const QVector<GLuint> &, QOpenGLDebugMessage::Sources, QOpenGLDebugMessage::Types)
 extern "C" Q_DECL_EXPORT
-void C_ZN18QOpenGLDebugLogger14enableMessagesERK7QVectorIjE6QFlagsIN19QOpenGLDebugMessage6SourceEES4_INS5_4TypeEE(void *this_, const QVector<GLuint> & ids, QFlags<QOpenGLDebugMessage::Source> sources, QFlags<QOpenGLDebugMessage::Type> types) {
-  ((QOpenGLDebugLogger*)this_)->enableMessages(ids, sources, types);
+void C_ZN18QOpenGLDebugLogger14enableMessagesERK7QVectorIjE6QFlagsIN19QOpenGLDebugMessage6SourceEES4_INS5_4TypeEE(void *this_, QVector<unsigned int>* ids, QFlags<QOpenGLDebugMessage::Source> sources, QFlags<QOpenGLDebugMessage::Type> types) {
+  ((QOpenGLDebugLogger*)this_)->enableMessages(*ids, sources, types);
 }
 
 // Public Visibility=Default Availability=Available
@@ -155,8 +155,8 @@ void C_ZN18QOpenGLDebugLogger15disableMessagesE6QFlagsIN19QOpenGLDebugMessage6So
 // /usr/include/qt/QtGui/qopengldebug.h:197
 // [-2] void disableMessages(const QVector<GLuint> &, QOpenGLDebugMessage::Sources, QOpenGLDebugMessage::Types)
 extern "C" Q_DECL_EXPORT
-void C_ZN18QOpenGLDebugLogger15disableMessagesERK7QVectorIjE6QFlagsIN19QOpenGLDebugMessage6SourceEES4_INS5_4TypeEE(void *this_, const QVector<GLuint> & ids, QFlags<QOpenGLDebugMessage::Source> sources, QFlags<QOpenGLDebugMessage::Type> types) {
-  ((QOpenGLDebugLogger*)this_)->disableMessages(ids, sources, types);
+void C_ZN18QOpenGLDebugLogger15disableMessagesERK7QVectorIjE6QFlagsIN19QOpenGLDebugMessage6SourceEES4_INS5_4TypeEE(void *this_, QVector<unsigned int>* ids, QFlags<QOpenGLDebugMessage::Source> sources, QFlags<QOpenGLDebugMessage::Type> types) {
+  ((QOpenGLDebugLogger*)this_)->disableMessages(*ids, sources, types);
 }
 
 // Public Visibility=Default Availability=Available

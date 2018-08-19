@@ -237,8 +237,8 @@ return new QTextFormat::PageBreakFlags(rv);
 // [-2] void setTabPositions(const QList<QTextOption::Tab> &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
-void C_ZN16QTextBlockFormat15setTabPositionsERK5QListIN11QTextOption3TabEE(void *this_, const QList<QTextOption::Tab> & tabs) {
-  ((QTextBlockFormat*)this_)->setTabPositions(tabs);
+void C_ZN16QTextBlockFormat15setTabPositionsERK5QListIN11QTextOption3TabEE(void *this_, QList<QTextOption::Tab>* tabs) {
+  ((QTextBlockFormat*)this_)->setTabPositions(*tabs);
 }
 #endif // QT_VERSION >= 0x040400
 

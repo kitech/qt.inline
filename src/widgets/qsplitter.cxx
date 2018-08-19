@@ -383,8 +383,8 @@ return new QList<int>(rv);
 // /usr/include/qt/QtWidgets/qsplitter.h:91
 // [-2] void setSizes(const QList<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QSplitter8setSizesERK5QListIiE(void *this_, const QList<int> & list) {
-  ((QSplitter*)this_)->setSizes(list);
+void C_ZN9QSplitter8setSizesERK5QListIiE(void *this_, QList<int>* list) {
+  ((QSplitter*)this_)->setSizes(*list);
 }
 
 // Public Visibility=Default Availability=Available

@@ -105,8 +105,8 @@ return new QList<QHostAddress>(rv);
 // /usr/include/qt/QtNetwork/qhostinfo.h:75
 // [-2] void setAddresses(const QList<QHostAddress> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QHostInfo12setAddressesERK5QListI12QHostAddressE(void *this_, const QList<QHostAddress> & addresses) {
-  ((QHostInfo*)this_)->setAddresses(addresses);
+void C_ZN9QHostInfo12setAddressesERK5QListI12QHostAddressE(void *this_, QList<QHostAddress>* addresses) {
+  ((QHostInfo*)this_)->setAddresses(*addresses);
 }
 
 // Public Visibility=Default Availability=Available

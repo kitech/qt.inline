@@ -674,8 +674,8 @@ void* C_ZN15QTreeWidgetItem9takeChildEi(void *this_, int index) {
 // [-2] void addChildren(const QList<QTreeWidgetItem *> &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
-void C_ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E(void *this_, const QList<QTreeWidgetItem *> & children) {
-  ((QTreeWidgetItem*)this_)->addChildren(children);
+void C_ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E(void *this_, QList<QTreeWidgetItem *>* children) {
+  ((QTreeWidgetItem*)this_)->addChildren(*children);
 }
 #endif // QT_VERSION >= 0x040100
 
@@ -685,8 +685,8 @@ void C_ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E(void *this_, const QList<Q
 // [-2] void insertChildren(int, const QList<QTreeWidgetItem *> &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
-void C_ZN15QTreeWidgetItem14insertChildrenEiRK5QListIPS_E(void *this_, int index, const QList<QTreeWidgetItem *> & children) {
-  ((QTreeWidgetItem*)this_)->insertChildren(index, children);
+void C_ZN15QTreeWidgetItem14insertChildrenEiRK5QListIPS_E(void *this_, int index, QList<QTreeWidgetItem *>* children) {
+  ((QTreeWidgetItem*)this_)->insertChildren(index, *children);
 }
 #endif // QT_VERSION >= 0x040100
 

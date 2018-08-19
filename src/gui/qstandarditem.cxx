@@ -637,24 +637,24 @@ void C_ZN13QStandardItem8setChildEiPS_(void *this_, int row, QStandardItem * ite
 // /usr/include/qt/QtGui/qstandarditemmodel.h:211
 // [-2] void insertRow(int, const QList<QStandardItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9insertRowEiRK5QListIPS_E(void *this_, int row, const QList<QStandardItem *> & items) {
-  ((QStandardItem*)this_)->insertRow(row, items);
+void C_ZN13QStandardItem9insertRowEiRK5QListIPS_E(void *this_, int row, QList<QStandardItem *>* items) {
+  ((QStandardItem*)this_)->insertRow(row, *items);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:212
 // [-2] void insertColumn(int, const QList<QStandardItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12insertColumnEiRK5QListIPS_E(void *this_, int column, const QList<QStandardItem *> & items) {
-  ((QStandardItem*)this_)->insertColumn(column, items);
+void C_ZN13QStandardItem12insertColumnEiRK5QListIPS_E(void *this_, int column, QList<QStandardItem *>* items) {
+  ((QStandardItem*)this_)->insertColumn(column, *items);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:213
 // [-2] void insertRows(int, const QList<QStandardItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10insertRowsEiRK5QListIPS_E(void *this_, int row, const QList<QStandardItem *> & items) {
-  ((QStandardItem*)this_)->insertRows(row, items);
+void C_ZN13QStandardItem10insertRowsEiRK5QListIPS_E(void *this_, int row, QList<QStandardItem *>* items) {
+  ((QStandardItem*)this_)->insertRows(row, *items);
 }
 
 // Public Visibility=Default Availability=Available
@@ -709,24 +709,24 @@ void C_ZN13QStandardItem13removeColumnsEii(void *this_, int column, int count) {
 // /usr/include/qt/QtGui/qstandarditemmodel.h:222
 // [-2] void appendRow(const QList<QStandardItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9appendRowERK5QListIPS_E(void *this_, const QList<QStandardItem *> & items) {
-  ((QStandardItem*)this_)->appendRow(items);
+void C_ZN13QStandardItem9appendRowERK5QListIPS_E(void *this_, QList<QStandardItem *>* items) {
+  ((QStandardItem*)this_)->appendRow(*items);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:223
 // [-2] void appendRows(const QList<QStandardItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10appendRowsERK5QListIPS_E(void *this_, const QList<QStandardItem *> & items) {
-  ((QStandardItem*)this_)->appendRows(items);
+void C_ZN13QStandardItem10appendRowsERK5QListIPS_E(void *this_, QList<QStandardItem *>* items) {
+  ((QStandardItem*)this_)->appendRows(*items);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:224
 // [-2] void appendColumn(const QList<QStandardItem *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12appendColumnERK5QListIPS_E(void *this_, const QList<QStandardItem *> & items) {
-  ((QStandardItem*)this_)->appendColumn(items);
+void C_ZN13QStandardItem12appendColumnERK5QListIPS_E(void *this_, QList<QStandardItem *>* items) {
+  ((QStandardItem*)this_)->appendColumn(*items);
 }
 
 // Public inline Visibility=Default Availability=Available

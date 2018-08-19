@@ -609,8 +609,8 @@ return new QStringList(rv);
 // /usr/include/qt/QtCore/qurl.h:360
 // [8] QStringList toStringList(const QList<QUrl> &, QUrl::FormattingOptions)
 extern "C" Q_DECL_EXPORT
-void* C_ZN4QUrl12toStringListERK5QListIS_E12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(const QList<QUrl> & uris, QUrl::FormattingOptions options) {
-  auto rv = QUrl::toStringList(uris, options);
+void* C_ZN4QUrl12toStringListERK5QListIS_E12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(QList<QUrl>* uris, QUrl::FormattingOptions options) {
+  auto rv = QUrl::toStringList(*uris, options);
 return new QStringList(rv);
 }
 

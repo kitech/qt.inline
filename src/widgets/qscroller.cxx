@@ -186,8 +186,8 @@ return new QScrollerProperties(rv);
 // /usr/include/qt/QtWidgets/qscroller.h:118
 // [-2] void setSnapPositionsX(const QList<qreal> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QScroller17setSnapPositionsXERK5QListIdE(void *this_, const QList<qreal> & positions) {
-  ((QScroller*)this_)->setSnapPositionsX(positions);
+void C_ZN9QScroller17setSnapPositionsXERK5QListIdE(void *this_, QList<double>* positions) {
+  ((QScroller*)this_)->setSnapPositionsX(*positions);
 }
 
 // Public Visibility=Default Availability=Available
@@ -202,8 +202,8 @@ void C_ZN9QScroller17setSnapPositionsXEdd(void *this_, qreal first, qreal interv
 // /usr/include/qt/QtWidgets/qscroller.h:120
 // [-2] void setSnapPositionsY(const QList<qreal> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QScroller17setSnapPositionsYERK5QListIdE(void *this_, const QList<qreal> & positions) {
-  ((QScroller*)this_)->setSnapPositionsY(positions);
+void C_ZN9QScroller17setSnapPositionsYERK5QListIdE(void *this_, QList<double>* positions) {
+  ((QScroller*)this_)->setSnapPositionsY(*positions);
 }
 
 // Public Visibility=Default Availability=Available

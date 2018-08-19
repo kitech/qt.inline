@@ -69,8 +69,8 @@ return &rv;
 // /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:73
 // [8] QWebEngineHttpRequest postRequest(const QUrl &, const QMap<QString, QString> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN21QWebEngineHttpRequest11postRequestERK4QUrlRK4QMapI7QStringS4_E(QUrl* url, const QMap<QString, QString> & postData) {
-  auto rv = QWebEngineHttpRequest::postRequest(*url, postData);
+void* C_ZN21QWebEngineHttpRequest11postRequestERK4QUrlRK4QMapI7QStringS4_E(QUrl* url, QMap<QString, QString>* postData) {
+  auto rv = QWebEngineHttpRequest::postRequest(*url, *postData);
 return new QWebEngineHttpRequest(rv);
 }
 

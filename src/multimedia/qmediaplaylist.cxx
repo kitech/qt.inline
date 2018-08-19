@@ -202,8 +202,8 @@ bool C_ZN14QMediaPlaylist8addMediaERK13QMediaContent(void *this_, QMediaContent*
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:91
 // [1] bool addMedia(const QList<QMediaContent> &)
 extern "C" Q_DECL_EXPORT
-bool C_ZN14QMediaPlaylist8addMediaERK5QListI13QMediaContentE(void *this_, const QList<QMediaContent> & items) {
-  return (bool)((QMediaPlaylist*)this_)->addMedia(items);
+bool C_ZN14QMediaPlaylist8addMediaERK5QListI13QMediaContentE(void *this_, QList<QMediaContent>* items) {
+  return (bool)((QMediaPlaylist*)this_)->addMedia(*items);
 }
 
 // Public Visibility=Default Availability=Available
@@ -218,8 +218,8 @@ bool C_ZN14QMediaPlaylist11insertMediaEiRK13QMediaContent(void *this_, int index
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:93
 // [1] bool insertMedia(int, const QList<QMediaContent> &)
 extern "C" Q_DECL_EXPORT
-bool C_ZN14QMediaPlaylist11insertMediaEiRK5QListI13QMediaContentE(void *this_, int index, const QList<QMediaContent> & items) {
-  return (bool)((QMediaPlaylist*)this_)->insertMedia(index, items);
+bool C_ZN14QMediaPlaylist11insertMediaEiRK5QListI13QMediaContentE(void *this_, int index, QList<QMediaContent>* items) {
+  return (bool)((QMediaPlaylist*)this_)->insertMedia(index, *items);
 }
 
 // Public Visibility=Default Availability=Available

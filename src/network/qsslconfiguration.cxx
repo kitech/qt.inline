@@ -166,8 +166,8 @@ return new QList<QSslCertificate>(rv);
 // [-2] void setLocalCertificateChain(const QList<QSslCertificate> &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
-void C_ZN17QSslConfiguration24setLocalCertificateChainERK5QListI15QSslCertificateE(void *this_, const QList<QSslCertificate> & localChain) {
-  ((QSslConfiguration*)this_)->setLocalCertificateChain(localChain);
+void C_ZN17QSslConfiguration24setLocalCertificateChainERK5QListI15QSslCertificateE(void *this_, QList<QSslCertificate>* localChain) {
+  ((QSslConfiguration*)this_)->setLocalCertificateChain(*localChain);
 }
 #endif // QT_VERSION >= 0x050100
 
@@ -256,8 +256,8 @@ return new QList<QSslCipher>(rv);
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:124
 // [-2] void setCiphers(const QList<QSslCipher> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QSslConfiguration10setCiphersERK5QListI10QSslCipherE(void *this_, const QList<QSslCipher> & ciphers) {
-  ((QSslConfiguration*)this_)->setCiphers(ciphers);
+void C_ZN17QSslConfiguration10setCiphersERK5QListI10QSslCipherE(void *this_, QList<QSslCipher>* ciphers) {
+  ((QSslConfiguration*)this_)->setCiphers(*ciphers);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -285,8 +285,8 @@ return new QList<QSslCertificate>(rv);
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:129
 // [-2] void setCaCertificates(const QList<QSslCertificate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QSslConfiguration17setCaCertificatesERK5QListI15QSslCertificateE(void *this_, const QList<QSslCertificate> & certificates) {
-  ((QSslConfiguration*)this_)->setCaCertificates(certificates);
+void C_ZN17QSslConfiguration17setCaCertificatesERK5QListI15QSslCertificateE(void *this_, QList<QSslCertificate>* certificates) {
+  ((QSslConfiguration*)this_)->setCaCertificates(*certificates);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -384,8 +384,8 @@ void C_ZNK17QSslConfiguration14ellipticCurvesEv(void *this_) {
 // [-2] void setEllipticCurves(const QVector<QSslEllipticCurve> &)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
-void C_ZN17QSslConfiguration17setEllipticCurvesERK7QVectorI17QSslEllipticCurveE(void *this_, const QVector<QSslEllipticCurve> & curves) {
-  ((QSslConfiguration*)this_)->setEllipticCurves(curves);
+void C_ZN17QSslConfiguration17setEllipticCurvesERK7QVectorI17QSslEllipticCurveE(void *this_, QVector<QSslEllipticCurve>* curves) {
+  ((QSslConfiguration*)this_)->setEllipticCurves(*curves);
 }
 #endif // QT_VERSION >= 0x050500
 

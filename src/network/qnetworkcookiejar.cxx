@@ -73,8 +73,8 @@ return new QList<QNetworkCookie>(rv);
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:69
 // [-2] void setAllCookies(const QList<QNetworkCookie> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QNetworkCookieJar13setAllCookiesERK5QListI14QNetworkCookieE(void *this_, const QList<QNetworkCookie> & cookieList) {
-  ((QNetworkCookieJar*)this_)->QNetworkCookieJar::setAllCookies(cookieList);
+void C_ZN17QNetworkCookieJar13setAllCookiesERK5QListI14QNetworkCookieE(void *this_, QList<QNetworkCookie>* cookieList) {
+  ((QNetworkCookieJar*)this_)->QNetworkCookieJar::setAllCookies(*cookieList);
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -159,8 +159,8 @@ return new QList<QNetworkCookie>(rv);
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h:61
 // [1] bool setCookiesFromUrl(const QList<QNetworkCookie> &, const QUrl &)
 extern "C" Q_DECL_EXPORT
-bool C_ZN17QNetworkCookieJar17setCookiesFromUrlERK5QListI14QNetworkCookieERK4QUrl(void *this_, const QList<QNetworkCookie> & cookieList, QUrl* url) {
-  return (bool)((QNetworkCookieJar*)this_)->setCookiesFromUrl(cookieList, *url);
+bool C_ZN17QNetworkCookieJar17setCookiesFromUrlERK5QListI14QNetworkCookieERK4QUrl(void *this_, QList<QNetworkCookie>* cookieList, QUrl* url) {
+  return (bool)((QNetworkCookieJar*)this_)->setCookiesFromUrl(*cookieList, *url);
 }
 
 // Public virtual Visibility=Default Availability=Available

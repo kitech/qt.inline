@@ -49,8 +49,8 @@ void* C_ZN11QStringListC2ERK7QString(QString* i) {
 // /usr/include/qt/QtCore/qstringlist.h:107
 // [-2] void QStringList(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN11QStringListC2ERK5QListI7QStringE(const QList<QString> & l) {
-  return  new QStringList(l);
+void* C_ZN11QStringListC2ERK5QListI7QStringE(QList<QString>* l) {
+  return  new QStringList(*l);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -79,8 +79,8 @@ void* C_ZN11QStringListC2ESt16initializer_listI7QStringE(std::initializer_list<Q
 // /usr/include/qt/QtCore/qstringlist.h:115
 // [8] QStringList & operator=(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN11QStringListaSERK5QListI7QStringE(void *this_, const QList<QString> & other) {
-  auto& rv = ((QStringList*)this_)->operator=(other);
+void* C_ZN11QStringListaSERK5QListI7QStringE(void *this_, QList<QString>* other) {
+  auto& rv = ((QStringList*)this_)->operator=(*other);
 return &rv;
 }
 
@@ -143,8 +143,8 @@ return &rv;
 // /usr/include/qt/QtCore/qstringlist.h:131
 // [8] QStringList & operator<<(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN11QStringListlsERK5QListI7QStringE(void *this_, const QList<QString> & l) {
-  auto& rv = ((QStringList*)this_)->operator<<(l);
+void* C_ZN11QStringListlsERK5QListI7QStringE(void *this_, QList<QString>* l) {
+  auto& rv = ((QStringList*)this_)->operator<<(*l);
 return &rv;
 }
 

@@ -85,8 +85,8 @@ bool C_ZN18QCommandLineParser9addOptionERK18QCommandLineOption(void *this_, QCom
 // [1] bool addOptions(const QList<QCommandLineOption> &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
-bool C_ZN18QCommandLineParser10addOptionsERK5QListI18QCommandLineOptionE(void *this_, const QList<QCommandLineOption> & options) {
-  return (bool)((QCommandLineParser*)this_)->addOptions(options);
+bool C_ZN18QCommandLineParser10addOptionsERK5QListI18QCommandLineOptionE(void *this_, QList<QCommandLineOption>* options) {
+  return (bool)((QCommandLineParser*)this_)->addOptions(*options);
 }
 #endif // QT_VERSION >= 0x050400
 

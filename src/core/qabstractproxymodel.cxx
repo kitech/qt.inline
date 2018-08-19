@@ -217,8 +217,8 @@ bool C_ZN19QAbstractProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, 
 // /usr/include/qt/QtCore/qabstractproxymodel.h:80
 // [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
 extern "C" Q_DECL_EXPORT
-bool C_ZN19QAbstractProxyModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, const QMap<int, QVariant> & roles) {
-  return (bool)((QAbstractProxyModel*)this_)->setItemData(*index, roles);
+bool C_ZN19QAbstractProxyModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, QMap<int, QVariant>* roles) {
+  return (bool)((QAbstractProxyModel*)this_)->setItemData(*index, *roles);
 }
 
 // Public virtual Visibility=Default Availability=Available

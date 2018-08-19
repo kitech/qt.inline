@@ -791,8 +791,8 @@ void C_ZN14QGraphicsScene16setSelectionAreaERK12QPainterPathN2Qt22ItemSelectionO
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:189
 // [8] QGraphicsItemGroup * createItemGroup(const QList<QGraphicsItem *> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN14QGraphicsScene15createItemGroupERK5QListIP13QGraphicsItemE(void *this_, const QList<QGraphicsItem *> & items) {
-  return (void*)((QGraphicsScene*)this_)->createItemGroup(items);
+void* C_ZN14QGraphicsScene15createItemGroupERK5QListIP13QGraphicsItemE(void *this_, QList<QGraphicsItem *>* items) {
+  return (void*)((QGraphicsScene*)this_)->createItemGroup(*items);
 }
 
 // Public Visibility=Default Availability=Available
@@ -1244,8 +1244,8 @@ void C_ZN14QGraphicsScene5clearEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:298
 // [-2] void changed(const QList<QRectF> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QGraphicsScene7changedERK5QListI6QRectFE(void *this_, const QList<QRectF> & region) {
-  ((QGraphicsScene*)this_)->changed(region);
+void C_ZN14QGraphicsScene7changedERK5QListI6QRectFE(void *this_, QList<QRectF>* region) {
+  ((QGraphicsScene*)this_)->changed(*region);
 }
 
 // Public Visibility=Default Availability=Available

@@ -1239,8 +1239,8 @@ void C_ZN9QTreeView12sortByColumnEiN2Qt9SortOrderE(void *this_, int column, Qt::
 // /usr/include/qt/QtWidgets/qtreeview.h:148
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
-  ((QTreeView*)this_)->dataChanged(*topLeft, *bottomRight, roles);
+void C_ZN9QTreeView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, QVector<int>* roles) {
+  ((QTreeView*)this_)->dataChanged(*topLeft, *bottomRight, *roles);
 }
 
 // Public virtual Visibility=Default Availability=Available

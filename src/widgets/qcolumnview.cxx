@@ -444,8 +444,8 @@ void C_ZN11QColumnView16setPreviewWidgetEP7QWidget(void *this_, QWidget * widget
 // /usr/include/qt/QtWidgets/qcolumnview.h:81
 // [-2] void setColumnWidths(const QList<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QColumnView15setColumnWidthsERK5QListIiE(void *this_, const QList<int> & list) {
-  ((QColumnView*)this_)->setColumnWidths(list);
+void C_ZN11QColumnView15setColumnWidthsERK5QListIiE(void *this_, QList<int>* list) {
+  ((QColumnView*)this_)->setColumnWidths(*list);
 }
 
 // Public Visibility=Default Availability=Available

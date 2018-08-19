@@ -262,8 +262,8 @@ void C_ZN17QWebEngineProfile20clearAllVisitedLinksEv(void *this_) {
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:112
 // [-2] void clearVisitedLinks(const QList<QUrl> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QWebEngineProfile17clearVisitedLinksERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
-  ((QWebEngineProfile*)this_)->clearVisitedLinks(urls);
+void C_ZN17QWebEngineProfile17clearVisitedLinksERK5QListI4QUrlE(void *this_, QList<QUrl>* urls) {
+  ((QWebEngineProfile*)this_)->clearVisitedLinks(*urls);
 }
 
 // Public Visibility=Default Availability=Available

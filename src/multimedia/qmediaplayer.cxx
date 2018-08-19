@@ -379,8 +379,8 @@ void C_ZN12QMediaPlayer11setPlaylistEP14QMediaPlaylist(void *this_, QMediaPlayli
 // /usr/include/qt/QtMultimedia/qmediaplayer.h:180
 // [-2] void setNetworkConfigurations(const QList<QNetworkConfiguration> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN12QMediaPlayer24setNetworkConfigurationsERK5QListI21QNetworkConfigurationE(void *this_, const QList<QNetworkConfiguration> & configurations) {
-  ((QMediaPlayer*)this_)->setNetworkConfigurations(configurations);
+void C_ZN12QMediaPlayer24setNetworkConfigurationsERK5QListI21QNetworkConfigurationE(void *this_, QList<QNetworkConfiguration>* configurations) {
+  ((QMediaPlayer*)this_)->setNetworkConfigurations(*configurations);
 }
 
 // Public Visibility=Default Availability=Available

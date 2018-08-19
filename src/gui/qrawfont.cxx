@@ -167,8 +167,8 @@ void C_ZNK8QRawFont21glyphIndexesForStringERK7QString(void *this_, QString* text
 // /usr/include/qt/QtGui/qrawfont.h:103
 // [8] QVector<QPointF> advancesForGlyphIndexes(const QVector<quint32> &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *this_, const QVector<quint32> & glyphIndexes) {
-  auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(glyphIndexes);
+void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *this_, QVector<unsigned int>* glyphIndexes) {
+  auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(*glyphIndexes);
 /*return rv;*/
 }
 
@@ -176,8 +176,8 @@ void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *this_, const QV
 // /usr/include/qt/QtGui/qrawfont.h:104
 // [8] QVector<QPointF> advancesForGlyphIndexes(const QVector<quint32> &, QRawFont::LayoutFlags)
 extern "C" Q_DECL_EXPORT
-void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *this_, const QVector<quint32> & glyphIndexes, QFlags<QRawFont::LayoutFlag> layoutFlags) {
-  auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(glyphIndexes, layoutFlags);
+void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *this_, QVector<unsigned int>* glyphIndexes, QFlags<QRawFont::LayoutFlag> layoutFlags) {
+  auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(*glyphIndexes, layoutFlags);
 /*return rv;*/
 }
 

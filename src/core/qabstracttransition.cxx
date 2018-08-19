@@ -171,8 +171,8 @@ return new QList<QAbstractState *>(rv);
 // /usr/include/qt/QtCore/qabstracttransition.h:82
 // [-2] void setTargetStates(const QList<QAbstractState *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractTransition15setTargetStatesERK5QListIP14QAbstractStateE(void *this_, const QList<QAbstractState *> & targets) {
-  ((QAbstractTransition*)this_)->setTargetStates(targets);
+void C_ZN19QAbstractTransition15setTargetStatesERK5QListIP14QAbstractStateE(void *this_, QList<QAbstractState *>* targets) {
+  ((QAbstractTransition*)this_)->setTargetStates(*targets);
 }
 
 // Public Visibility=Default Availability=Available

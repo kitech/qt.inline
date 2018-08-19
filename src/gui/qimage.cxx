@@ -445,8 +445,8 @@ return new QImage(rv);
 // /usr/include/qt/QtGui/qimage.h:194
 // [32] QImage convertToFormat(QImage::Format, const QVector<QRgb> &, Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK6QImage15convertToFormatENS_6FormatERK7QVectorIjE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format f, const QVector<QRgb> & colorTable, QFlags<Qt::ImageConversionFlag> flags) {
-  auto rv = ((QImage*)this_)->convertToFormat(f, colorTable, flags);
+void* C_ZNK6QImage15convertToFormatENS_6FormatERK7QVectorIjE6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage::Format f, QVector<unsigned int>* colorTable, QFlags<Qt::ImageConversionFlag> flags) {
+  auto rv = ((QImage*)this_)->convertToFormat(f, *colorTable, flags);
 return new QImage(rv);
 }
 

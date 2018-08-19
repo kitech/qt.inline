@@ -41,8 +41,8 @@ void C_ZN14QFutureWatcherIvED2Ev(void *this_) {
 // /usr/include/qt/QtCore/qfuturewatcher.h:194
 // [-2] void setFuture(const QFuture<void> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE(void *this_, const QFuture<void> & future) {
-  ((QFutureWatcher<void>*)this_)->setFuture(future);
+void C_ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE(void *this_, QFuture<void>* future) {
+  ((QFutureWatcher<void>*)this_)->setFuture(*future);
 }
 
 // Public inline Visibility=Default Availability=Available

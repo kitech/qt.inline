@@ -418,8 +418,8 @@ void C_ZN14QWebEngineView13setZoomFactorEd(void *this_, qreal factor) {
 // /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:103
 // [-2] void findText(const QString &, QWebEnginePage::FindFlags, const QWebEngineCallback<bool> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEngineView8findTextERK7QString6QFlagsIN14QWebEnginePage8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, const QWebEngineCallback<bool> & resultCallback) {
-  ((QWebEngineView*)this_)->findText(*subString, options, resultCallback);
+void C_ZN14QWebEngineView8findTextERK7QString6QFlagsIN14QWebEnginePage8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, QWebEngineCallback<bool>* resultCallback) {
+  ((QWebEngineView*)this_)->findText(*subString, options, *resultCallback);
 }
 
 // Public virtual Visibility=Default Availability=Available

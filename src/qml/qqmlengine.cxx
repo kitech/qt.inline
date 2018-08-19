@@ -401,8 +401,8 @@ void C_ZN10QQmlEngine4exitEi(void *this_, int retCode) {
 // /usr/include/qt/QtQml/qqmlengine.h:164
 // [-2] void warnings(const QList<QQmlError> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QQmlEngine8warningsERK5QListI9QQmlErrorE(void *this_, const QList<QQmlError> & warnings) {
-  ((QQmlEngine*)this_)->warnings(warnings);
+void C_ZN10QQmlEngine8warningsERK5QListI9QQmlErrorE(void *this_, QList<QQmlError>* warnings) {
+  ((QQmlEngine*)this_)->warnings(*warnings);
 }
 
 //  main block end

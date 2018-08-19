@@ -276,8 +276,8 @@ int C_ZNK20QOpenGLShaderProgram16patchVertexCountEv(void *this_) {
 // /usr/include/qt/QtGui/qopenglshaderprogram.h:152
 // [-2] void setDefaultOuterTessellationLevels(const QVector<float> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN20QOpenGLShaderProgram33setDefaultOuterTessellationLevelsERK7QVectorIfE(void *this_, const QVector<float> & levels) {
-  ((QOpenGLShaderProgram*)this_)->setDefaultOuterTessellationLevels(levels);
+void C_ZN20QOpenGLShaderProgram33setDefaultOuterTessellationLevelsERK7QVectorIfE(void *this_, QVector<float>* levels) {
+  ((QOpenGLShaderProgram*)this_)->setDefaultOuterTessellationLevels(*levels);
 }
 
 // Public Visibility=Default Availability=Available
@@ -293,8 +293,8 @@ void C_ZNK20QOpenGLShaderProgram30defaultOuterTessellationLevelsEv(void *this_) 
 // /usr/include/qt/QtGui/qopenglshaderprogram.h:155
 // [-2] void setDefaultInnerTessellationLevels(const QVector<float> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN20QOpenGLShaderProgram33setDefaultInnerTessellationLevelsERK7QVectorIfE(void *this_, const QVector<float> & levels) {
-  ((QOpenGLShaderProgram*)this_)->setDefaultInnerTessellationLevels(levels);
+void C_ZN20QOpenGLShaderProgram33setDefaultInnerTessellationLevelsERK7QVectorIfE(void *this_, QVector<float>* levels) {
+  ((QOpenGLShaderProgram*)this_)->setDefaultInnerTessellationLevels(*levels);
 }
 
 // Public Visibility=Default Availability=Available

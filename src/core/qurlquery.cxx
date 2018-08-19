@@ -189,8 +189,8 @@ return new QChar(rv);
 // /usr/include/qt/QtCore/qurlquery.h:88
 // [-2] void setQueryItems(const QList<QPair<QString, QString> > &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QUrlQuery13setQueryItemsERK5QListI5QPairI7QStringS2_EE(void *this_, const QList<QPair<QString, QString> > & query) {
-  ((QUrlQuery*)this_)->setQueryItems(query);
+void C_ZN9QUrlQuery13setQueryItemsERK5QListI5QPairI7QStringS2_EE(void *this_, QList<QPair<QString, QString> >* query) {
+  ((QUrlQuery*)this_)->setQueryItems(*query);
 }
 
 // Public Visibility=Default Availability=Available

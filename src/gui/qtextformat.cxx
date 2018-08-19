@@ -242,8 +242,8 @@ void C_ZNK11QTextFormat20lengthVectorPropertyEi(void *this_, int propertyId) {
 // /usr/include/qt/QtGui/qtextformat.h:324
 // [-2] void setProperty(int, const QVector<QTextLength> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QTextFormat11setPropertyEiRK7QVectorI11QTextLengthE(void *this_, int propertyId, const QVector<QTextLength> & lengths) {
-  ((QTextFormat*)this_)->setProperty(propertyId, lengths);
+void C_ZN11QTextFormat11setPropertyEiRK7QVectorI11QTextLengthE(void *this_, int propertyId, QVector<QTextLength>* lengths) {
+  ((QTextFormat*)this_)->setProperty(propertyId, *lengths);
 }
 
 // Public Visibility=Default Availability=Available

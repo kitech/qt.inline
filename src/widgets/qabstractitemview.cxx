@@ -753,8 +753,8 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
 // /usr/include/qt/QtWidgets/qabstractitemview.h:245
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::dataChanged(*topLeft, *bottomRight, roles);
+void C_ZN17QAbstractItemView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, QVector<int>* roles) {
+  ((QAbstractItemView*)this_)->QAbstractItemView::dataChanged(*topLeft, *bottomRight, *roles);
 }
 
 // Protected virtual Visibility=Default Availability=Available

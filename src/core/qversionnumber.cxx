@@ -46,8 +46,8 @@ void* C_ZN14QVersionNumberC2Ev() {
 // /usr/include/qt/QtCore/qversionnumber.h:224
 // [-2] void QVersionNumber(const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2ERK7QVectorIiE(const QVector<int> & seg) {
-  return  new QVersionNumber(seg);
+void* C_ZN14QVersionNumberC2ERK7QVectorIiE(QVector<int>* seg) {
+  return  new QVersionNumber(*seg);
 }
 
 // Public inline Visibility=Default Availability=Available

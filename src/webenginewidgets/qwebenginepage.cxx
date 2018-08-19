@@ -352,8 +352,8 @@ bool C_ZN14QWebEnginePage5eventEP6QEvent(void *this_, QEvent * arg0) {
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:247
 // [-2] void findText(const QString &, QWebEnginePage::FindFlags, const QWebEngineCallback<bool> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage8findTextERK7QString6QFlagsINS_8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, const QWebEngineCallback<bool> & resultCallback) {
-  ((QWebEnginePage*)this_)->findText(*subString, options, resultCallback);
+void C_ZN14QWebEnginePage8findTextERK7QString6QFlagsINS_8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, QWebEngineCallback<bool>* resultCallback) {
+  ((QWebEnginePage*)this_)->findText(*subString, options, *resultCallback);
 }
 
 // Public Visibility=Default Availability=Available
@@ -422,16 +422,16 @@ void C_ZN14QWebEnginePage10setContentERK10QByteArrayRK7QStringRK4QUrl(void *this
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:263
 // [-2] void toHtml(const QWebEngineCallback<const QString &> &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QWebEnginePage6toHtmlERK18QWebEngineCallbackIRK7QStringE(void *this_, const QWebEngineCallback<const QString &> & resultCallback) {
-  ((QWebEnginePage*)this_)->toHtml(resultCallback);
+void C_ZNK14QWebEnginePage6toHtmlERK18QWebEngineCallbackIRK7QStringE(void *this_, QWebEngineCallback<const QString &>* resultCallback) {
+  ((QWebEnginePage*)this_)->toHtml(*resultCallback);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:264
 // [-2] void toPlainText(const QWebEngineCallback<const QString &> &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QWebEnginePage11toPlainTextERK18QWebEngineCallbackIRK7QStringE(void *this_, const QWebEngineCallback<const QString &> & resultCallback) {
-  ((QWebEnginePage*)this_)->toPlainText(resultCallback);
+void C_ZNK14QWebEnginePage11toPlainTextERK18QWebEngineCallbackIRK7QStringE(void *this_, QWebEngineCallback<const QString &>* resultCallback) {
+  ((QWebEnginePage*)this_)->toPlainText(*resultCallback);
 }
 
 // Public Visibility=Default Availability=Available
@@ -544,16 +544,16 @@ void C_ZN14QWebEnginePage13runJavaScriptERK7QStringj(void *this_, QString* scrip
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:286
 // [-2] void runJavaScript(const QString &, const QWebEngineCallback<const QVariant &> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13runJavaScriptERK7QStringRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, const QWebEngineCallback<const QVariant &> & resultCallback) {
-  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, resultCallback);
+void C_ZN14QWebEnginePage13runJavaScriptERK7QStringRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, QWebEngineCallback<const QVariant &>* resultCallback) {
+  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, *resultCallback);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:287
 // [-2] void runJavaScript(const QString &, quint32, const QWebEngineCallback<const QVariant &> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13runJavaScriptERK7QStringjRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, quint32 worldId, const QWebEngineCallback<const QVariant &> & resultCallback) {
-  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId, resultCallback);
+void C_ZN14QWebEnginePage13runJavaScriptERK7QStringjRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, quint32 worldId, QWebEngineCallback<const QVariant &>* resultCallback) {
+  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId, *resultCallback);
 }
 
 // Public Visibility=Default Availability=Available
@@ -673,16 +673,16 @@ void C_ZN14QWebEnginePage10printToPdfERK7QStringRK11QPageLayout(void *this_, QSt
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:309
 // [-2] void printToPdf(const QWebEngineCallback<const QByteArray &> &, const QPageLayout &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage10printToPdfERK18QWebEngineCallbackIRK10QByteArrayERK11QPageLayout(void *this_, const QWebEngineCallback<const QByteArray &> & resultCallback, QPageLayout* layout) {
-  ((QWebEnginePage*)this_)->printToPdf(resultCallback, *layout);
+void C_ZN14QWebEnginePage10printToPdfERK18QWebEngineCallbackIRK10QByteArrayERK11QPageLayout(void *this_, QWebEngineCallback<const QByteArray &>* resultCallback, QPageLayout* layout) {
+  ((QWebEnginePage*)this_)->printToPdf(*resultCallback, *layout);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:315
 // [-2] void print(QPrinter *, const QWebEngineCallback<bool> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage5printEP8QPrinterRK18QWebEngineCallbackIbE(void *this_, QPrinter * printer, const QWebEngineCallback<bool> & resultCallback) {
-  ((QWebEnginePage*)this_)->print(printer, resultCallback);
+void C_ZN14QWebEnginePage5printEP8QPrinterRK18QWebEngineCallbackIbE(void *this_, QPrinter * printer, QWebEngineCallback<bool>* resultCallback) {
+  ((QWebEnginePage*)this_)->print(printer, *resultCallback);
 }
 
 // Public Visibility=Default Availability=Available

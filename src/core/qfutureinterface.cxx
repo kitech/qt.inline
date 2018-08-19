@@ -59,8 +59,8 @@ void C_ZN16QFutureInterfaceIvE12reportResultEPKvi(void *this_, const void * arg0
 // /usr/include/qt/QtCore/qfutureinterface.h:293
 // [-2] void reportResults(const QVector<void> &, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN16QFutureInterfaceIvE13reportResultsERK7QVectorIvEi(void *this_, const QVector<void> & arg0, int arg1) {
-  ((QFutureInterface<void>*)this_)->reportResults(arg0, arg1);
+void C_ZN16QFutureInterfaceIvE13reportResultsERK7QVectorIvEi(void *this_, QVector<void>* arg0, int arg1) {
+  ((QFutureInterface<void>*)this_)->reportResults(*arg0, arg1);
 }
 
 // Public inline Visibility=Default Availability=Available

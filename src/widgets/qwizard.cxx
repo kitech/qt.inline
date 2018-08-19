@@ -400,8 +400,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwizard.h:154
 // [-2] void setButtonLayout(const QList<QWizard::WizardButton> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN7QWizard15setButtonLayoutERK5QListINS_12WizardButtonEE(void *this_, const QList<QWizard::WizardButton> & layout) {
-  ((QWizard*)this_)->setButtonLayout(layout);
+void C_ZN7QWizard15setButtonLayoutERK5QListINS_12WizardButtonEE(void *this_, QList<QWizard::WizardButton>* layout) {
+  ((QWizard*)this_)->setButtonLayout(*layout);
 }
 
 // Public Visibility=Default Availability=Available

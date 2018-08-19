@@ -272,8 +272,8 @@ void C_ZN13QNetworkReply33setSslConfigurationImplementationERK17QSslConfiguratio
 // [-2] void ignoreSslErrorsImplementation(const QList<QSslError> &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply29ignoreSslErrorsImplementationERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & arg0) {
-  ((QNetworkReply*)this_)->QNetworkReply::ignoreSslErrorsImplementation(arg0);
+void C_ZN13QNetworkReply29ignoreSslErrorsImplementationERK5QListI9QSslErrorE(void *this_, QList<QSslError>* arg0) {
+  ((QNetworkReply*)this_)->QNetworkReply::ignoreSslErrorsImplementation(*arg0);
 }
 #endif // QT_VERSION >= 0x050000
 
@@ -498,8 +498,8 @@ void C_ZN13QNetworkReply19setSslConfigurationERK17QSslConfiguration(void *this_,
 // [-2] void ignoreSslErrors(const QList<QSslError> &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply15ignoreSslErrorsERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & errors) {
-  ((QNetworkReply*)this_)->ignoreSslErrors(errors);
+void C_ZN13QNetworkReply15ignoreSslErrorsERK5QListI9QSslErrorE(void *this_, QList<QSslError>* errors) {
+  ((QNetworkReply*)this_)->ignoreSslErrors(*errors);
 }
 #endif // QT_VERSION >= 0x040600
 
@@ -558,8 +558,8 @@ void C_ZN13QNetworkReply9encryptedEv(void *this_) {
 // /usr/include/qt/QtNetwork/qnetworkreply.h:162
 // [-2] void sslErrors(const QList<QSslError> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply9sslErrorsERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & errors) {
-  ((QNetworkReply*)this_)->sslErrors(errors);
+void C_ZN13QNetworkReply9sslErrorsERK5QListI9QSslErrorE(void *this_, QList<QSslError>* errors) {
+  ((QNetworkReply*)this_)->sslErrors(*errors);
 }
 
 // Public Visibility=Default Availability=Available

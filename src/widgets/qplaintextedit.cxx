@@ -1154,8 +1154,8 @@ void C_ZN14QPlainTextEdit14setCursorWidthEi(void *this_, int width) {
 // /usr/include/qt/QtWidgets/qplaintextedit.h:184
 // [-2] void setExtraSelections(const QList<QTextEdit::ExtraSelection> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QPlainTextEdit18setExtraSelectionsERK5QListIN9QTextEdit14ExtraSelectionEE(void *this_, const QList<QTextEdit::ExtraSelection> & selections) {
-  ((QPlainTextEdit*)this_)->setExtraSelections(selections);
+void C_ZN14QPlainTextEdit18setExtraSelectionsERK5QListIN9QTextEdit14ExtraSelectionEE(void *this_, QList<QTextEdit::ExtraSelection>* selections) {
+  ((QPlainTextEdit*)this_)->setExtraSelections(*selections);
 }
 
 // Public Visibility=Default Availability=Available

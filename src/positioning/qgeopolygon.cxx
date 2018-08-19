@@ -40,8 +40,8 @@ void* C_ZN11QGeoPolygonC2Ev() {
 // /usr/include/qt/QtPositioning/qgeopolygon.h:57
 // [-2] void QGeoPolygon(const QList<QGeoCoordinate> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN11QGeoPolygonC2ERK5QListI14QGeoCoordinateE(const QList<QGeoCoordinate> & path) {
-  return  new QGeoPolygon(path);
+void* C_ZN11QGeoPolygonC2ERK5QListI14QGeoCoordinateE(QList<QGeoCoordinate>* path) {
+  return  new QGeoPolygon(*path);
 }
 
 // Public Visibility=Default Availability=Available
@@ -96,8 +96,8 @@ bool C_ZNK11QGeoPolygonneERKS_(void *this_, QGeoPolygon* other) {
 // /usr/include/qt/QtPositioning/qgeopolygon.h:71
 // [-2] void setPath(const QList<QGeoCoordinate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QGeoPolygon7setPathERK5QListI14QGeoCoordinateE(void *this_, const QList<QGeoCoordinate> & path) {
-  ((QGeoPolygon*)this_)->setPath(path);
+void C_ZN11QGeoPolygon7setPathERK5QListI14QGeoCoordinateE(void *this_, QList<QGeoCoordinate>* path) {
+  ((QGeoPolygon*)this_)->setPath(*path);
 }
 
 // Public Visibility=Default Availability=Available

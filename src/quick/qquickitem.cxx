@@ -1481,8 +1481,8 @@ void C_ZN10QQuickItem26setFiltersChildMouseEventsEb(void *this_, bool filter) {
 // /usr/include/qt/QtQuick/qquickitem.h:313
 // [-2] void grabTouchPoints(const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QQuickItem15grabTouchPointsERK7QVectorIiE(void *this_, const QVector<int> & ids) {
-  ((QQuickItem*)this_)->grabTouchPoints(ids);
+void C_ZN10QQuickItem15grabTouchPointsERK7QVectorIiE(void *this_, QVector<int>* ids) {
+  ((QQuickItem*)this_)->grabTouchPoints(*ids);
 }
 
 // Public Visibility=Default Availability=Available

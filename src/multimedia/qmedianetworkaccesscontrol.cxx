@@ -74,8 +74,8 @@ void C_ZN26QMediaNetworkAccessControlD2Ev(void *this_) {
 // /usr/include/qt/QtMultimedia/qmedianetworkaccesscontrol.h:61
 // [-2] void setConfigurations(const QList<QNetworkConfiguration> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QMediaNetworkAccessControl17setConfigurationsERK5QListI21QNetworkConfigurationE(void *this_, const QList<QNetworkConfiguration> & configuration) {
-  ((QMediaNetworkAccessControl*)this_)->setConfigurations(configuration);
+void C_ZN26QMediaNetworkAccessControl17setConfigurationsERK5QListI21QNetworkConfigurationE(void *this_, QList<QNetworkConfiguration>* configuration) {
+  ((QMediaNetworkAccessControl*)this_)->setConfigurations(*configuration);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available

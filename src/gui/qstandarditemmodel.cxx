@@ -94,8 +94,8 @@ void C_ZN18QStandardItemModelD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qstandarditemmodel.h:334
 // [-2] void setItemRoleNames(const QHash<int, QByteArray> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN18QStandardItemModel16setItemRoleNamesERK5QHashIi10QByteArrayE(void *this_, const QHash<int, QByteArray> & roleNames) {
-  ((QStandardItemModel*)this_)->setItemRoleNames(roleNames);
+void C_ZN18QStandardItemModel16setItemRoleNamesERK5QHashIi10QByteArrayE(void *this_, QHash<int, QByteArray>* roleNames) {
+  ((QStandardItemModel*)this_)->setItemRoleNames(*roleNames);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -244,8 +244,8 @@ void C_ZNK18QStandardItemModel8itemDataERK11QModelIndex(void *this_, QModelIndex
 // /usr/include/qt/QtGui/qstandarditemmodel.h:362
 // [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
 extern "C" Q_DECL_EXPORT
-bool C_ZN18QStandardItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, const QMap<int, QVariant> & roles) {
-  return (bool)((QStandardItemModel*)this_)->setItemData(*index, roles);
+bool C_ZN18QStandardItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, QMap<int, QVariant>* roles) {
+  return (bool)((QStandardItemModel*)this_)->setItemData(*index, *roles);
 }
 
 // Public Visibility=Default Availability=Available
@@ -422,8 +422,8 @@ void C_ZN18QStandardItemModel14setColumnCountEi(void *this_, int columns) {
 // [-2] void appendRow(const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
-void C_ZN18QStandardItemModel9appendRowERK5QListIP13QStandardItemE(void *this_, const QList<QStandardItem *> & items) {
-  ((QStandardItemModel*)this_)->appendRow(items);
+void C_ZN18QStandardItemModel9appendRowERK5QListIP13QStandardItemE(void *this_, QList<QStandardItem *>* items) {
+  ((QStandardItemModel*)this_)->appendRow(*items);
 }
 #endif // QT_VERSION >= 0x040200
 
@@ -433,8 +433,8 @@ void C_ZN18QStandardItemModel9appendRowERK5QListIP13QStandardItemE(void *this_, 
 // [-2] void appendColumn(const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
-void C_ZN18QStandardItemModel12appendColumnERK5QListIP13QStandardItemE(void *this_, const QList<QStandardItem *> & items) {
-  ((QStandardItemModel*)this_)->appendColumn(items);
+void C_ZN18QStandardItemModel12appendColumnERK5QListIP13QStandardItemE(void *this_, QList<QStandardItem *>* items) {
+  ((QStandardItemModel*)this_)->appendColumn(*items);
 }
 #endif // QT_VERSION >= 0x040200
 
@@ -455,8 +455,8 @@ void C_ZN18QStandardItemModel9appendRowEP13QStandardItem(void *this_, QStandardI
 // [-2] void insertRow(int, const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
-void C_ZN18QStandardItemModel9insertRowEiRK5QListIP13QStandardItemE(void *this_, int row, const QList<QStandardItem *> & items) {
-  ((QStandardItemModel*)this_)->insertRow(row, items);
+void C_ZN18QStandardItemModel9insertRowEiRK5QListIP13QStandardItemE(void *this_, int row, QList<QStandardItem *>* items) {
+  ((QStandardItemModel*)this_)->insertRow(row, *items);
 }
 #endif // QT_VERSION >= 0x040200
 
@@ -466,8 +466,8 @@ void C_ZN18QStandardItemModel9insertRowEiRK5QListIP13QStandardItemE(void *this_,
 // [-2] void insertColumn(int, const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
-void C_ZN18QStandardItemModel12insertColumnEiRK5QListIP13QStandardItemE(void *this_, int column, const QList<QStandardItem *> & items) {
-  ((QStandardItemModel*)this_)->insertColumn(column, items);
+void C_ZN18QStandardItemModel12insertColumnEiRK5QListIP13QStandardItemE(void *this_, int column, QList<QStandardItem *>* items) {
+  ((QStandardItemModel*)this_)->insertColumn(column, *items);
 }
 #endif // QT_VERSION >= 0x040200
 

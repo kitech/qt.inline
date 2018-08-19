@@ -40,8 +40,8 @@ void* C_ZN8QGeoPathC2Ev() {
 // /usr/include/qt/QtPositioning/qgeopath.h:58
 // [-2] void QGeoPath(const QList<QGeoCoordinate> &, const qreal &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN8QGeoPathC2ERK5QListI14QGeoCoordinateERKd(const QList<QGeoCoordinate> & path, const qreal & width) {
-  return  new QGeoPath(path, width);
+void* C_ZN8QGeoPathC2ERK5QListI14QGeoCoordinateERKd(QList<QGeoCoordinate>* path, const qreal & width) {
+  return  new QGeoPath(*path, width);
 }
 
 // Public Visibility=Default Availability=Available
@@ -96,8 +96,8 @@ bool C_ZNK8QGeoPathneERKS_(void *this_, QGeoPath* other) {
 // /usr/include/qt/QtPositioning/qgeopath.h:72
 // [-2] void setPath(const QList<QGeoCoordinate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QGeoPath7setPathERK5QListI14QGeoCoordinateE(void *this_, const QList<QGeoCoordinate> & path) {
-  ((QGeoPath*)this_)->setPath(path);
+void C_ZN8QGeoPath7setPathERK5QListI14QGeoCoordinateE(void *this_, QList<QGeoCoordinate>* path) {
+  ((QGeoPath*)this_)->setPath(*path);
 }
 
 // Public Visibility=Default Availability=Available

@@ -89,8 +89,8 @@ void C_ZN26QWebEngineScriptCollection6insertERK16QWebEngineScript(void *this_, Q
 // /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:65
 // [-2] void insert(const QList<QWebEngineScript> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QWebEngineScriptCollection6insertERK5QListI16QWebEngineScriptE(void *this_, const QList<QWebEngineScript> & list) {
-  ((QWebEngineScriptCollection*)this_)->insert(list);
+void C_ZN26QWebEngineScriptCollection6insertERK5QListI16QWebEngineScriptE(void *this_, QList<QWebEngineScript>* list) {
+  ((QWebEngineScriptCollection*)this_)->insert(*list);
 }
 
 // Public Visibility=Default Availability=Available

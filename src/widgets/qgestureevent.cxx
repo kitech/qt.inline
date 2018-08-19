@@ -26,8 +26,8 @@ MyQGestureEvent(const QList<QGesture *> & gestures) : QGestureEvent(gestures) {}
 // /usr/include/qt/QtWidgets/qgesture.h:277
 // [-2] void QGestureEvent(const QList<QGesture *> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN13QGestureEventC2ERK5QListIP8QGestureE(const QList<QGesture *> & gestures) {
-  return  new QGestureEvent(gestures);
+void* C_ZN13QGestureEventC2ERK5QListIP8QGestureE(QList<QGesture *>* gestures) {
+  return  new QGestureEvent(*gestures);
 }
 
 // Public virtual Visibility=Default Availability=Available

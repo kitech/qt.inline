@@ -83,8 +83,8 @@ void C_ZN11QWebChannelD2Ev(void *this_) {
 // /usr/include/qt/QtWebChannel/qwebchannel.h:63
 // [-2] void registerObjects(const QHash<QString, QObject *> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QWebChannel15registerObjectsERK5QHashI7QStringP7QObjectE(void *this_, const QHash<QString, QObject *> & objects) {
-  ((QWebChannel*)this_)->registerObjects(objects);
+void C_ZN11QWebChannel15registerObjectsERK5QHashI7QStringP7QObjectE(void *this_, QHash<QString, QObject *>* objects) {
+  ((QWebChannel*)this_)->registerObjects(*objects);
 }
 
 // Public Visibility=Default Availability=Available

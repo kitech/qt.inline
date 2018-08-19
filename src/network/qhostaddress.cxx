@@ -363,8 +363,8 @@ bool C_ZNK12QHostAddress10isInSubnetERKS_i(void *this_, QHostAddress* subnet, in
 // [1] bool isInSubnet(const QPair<QHostAddress, int> &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
-bool C_ZNK12QHostAddress10isInSubnetERK5QPairIS_iE(void *this_, const QPair<QHostAddress, int> & subnet) {
-  return (bool)((QHostAddress*)this_)->isInSubnet(subnet);
+bool C_ZNK12QHostAddress10isInSubnetERK5QPairIS_iE(void *this_, QPair<QHostAddress, int>* subnet) {
+  return (bool)((QHostAddress*)this_)->isInSubnet(*subnet);
 }
 #endif // QT_VERSION >= 0x040500
 

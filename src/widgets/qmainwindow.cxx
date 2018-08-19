@@ -507,8 +507,8 @@ Qt::DockWidgetArea C_ZNK11QMainWindow14dockWidgetAreaEP11QDockWidget(void *this_
 // [-2] void resizeDocks(const QList<QDockWidget *> &, const QList<int> &, Qt::Orientation)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
-void C_ZN11QMainWindow11resizeDocksERK5QListIP11QDockWidgetERKS0_IiEN2Qt11OrientationE(void *this_, const QList<QDockWidget *> & docks, const QList<int> & sizes, Qt::Orientation orientation) {
-  ((QMainWindow*)this_)->resizeDocks(docks, sizes, orientation);
+void C_ZN11QMainWindow11resizeDocksERK5QListIP11QDockWidgetERKS0_IiEN2Qt11OrientationE(void *this_, QList<QDockWidget *>* docks, QList<int>* sizes, Qt::Orientation orientation) {
+  ((QMainWindow*)this_)->resizeDocks(*docks, *sizes, orientation);
 }
 #endif // QT_VERSION >= 0x050600
 

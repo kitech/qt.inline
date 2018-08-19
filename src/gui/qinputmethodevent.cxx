@@ -37,8 +37,8 @@ void* C_ZN17QInputMethodEventC2Ev() {
 // /usr/include/qt/QtGui/qevent.h:556
 // [-2] void QInputMethodEvent(const QString &, const QList<QInputMethodEvent::Attribute> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(QString* preeditText, const QList<QInputMethodEvent::Attribute> & attributes) {
-  return  new QInputMethodEvent(*preeditText, attributes);
+void* C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(QString* preeditText, QList<QInputMethodEvent::Attribute>* attributes) {
+  return  new QInputMethodEvent(*preeditText, *attributes);
 }
 
 // Public virtual Visibility=Default Availability=Available

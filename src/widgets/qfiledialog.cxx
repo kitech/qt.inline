@@ -467,8 +467,8 @@ bool C_ZNK11QFileDialog15resolveSymlinksEv(void *this_) {
 // [-2] void setSidebarUrls(const QList<QUrl> &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
-void C_ZN11QFileDialog14setSidebarUrlsERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
-  ((QFileDialog*)this_)->setSidebarUrls(urls);
+void C_ZN11QFileDialog14setSidebarUrlsERK5QListI4QUrlE(void *this_, QList<QUrl>* urls) {
+  ((QFileDialog*)this_)->setSidebarUrls(*urls);
 }
 #endif // QT_VERSION >= 0x040300
 
@@ -746,8 +746,8 @@ void C_ZN11QFileDialog11urlSelectedERK4QUrl(void *this_, QUrl* url) {
 // [-2] void urlsSelected(const QList<QUrl> &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
-void C_ZN11QFileDialog12urlsSelectedERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
-  ((QFileDialog*)this_)->urlsSelected(urls);
+void C_ZN11QFileDialog12urlsSelectedERK5QListI4QUrlE(void *this_, QList<QUrl>* urls) {
+  ((QFileDialog*)this_)->urlsSelected(*urls);
 }
 #endif // QT_VERSION >= 0x050200
 

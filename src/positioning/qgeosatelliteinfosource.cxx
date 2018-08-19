@@ -173,16 +173,16 @@ void C_ZN23QGeoSatelliteInfoSource13requestUpdateEi(void *this_, int timeout) {
 // /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:86
 // [-2] void satellitesInViewUpdated(const QList<QGeoSatelliteInfo> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN23QGeoSatelliteInfoSource23satellitesInViewUpdatedERK5QListI17QGeoSatelliteInfoE(void *this_, const QList<QGeoSatelliteInfo> & satellites) {
-  ((QGeoSatelliteInfoSource*)this_)->satellitesInViewUpdated(satellites);
+void C_ZN23QGeoSatelliteInfoSource23satellitesInViewUpdatedERK5QListI17QGeoSatelliteInfoE(void *this_, QList<QGeoSatelliteInfo>* satellites) {
+  ((QGeoSatelliteInfoSource*)this_)->satellitesInViewUpdated(*satellites);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:87
 // [-2] void satellitesInUseUpdated(const QList<QGeoSatelliteInfo> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN23QGeoSatelliteInfoSource22satellitesInUseUpdatedERK5QListI17QGeoSatelliteInfoE(void *this_, const QList<QGeoSatelliteInfo> & satellites) {
-  ((QGeoSatelliteInfoSource*)this_)->satellitesInUseUpdated(satellites);
+void C_ZN23QGeoSatelliteInfoSource22satellitesInUseUpdatedERK5QListI17QGeoSatelliteInfoE(void *this_, QList<QGeoSatelliteInfo>* satellites) {
+  ((QGeoSatelliteInfoSource*)this_)->satellitesInUseUpdated(*satellites);
 }
 
 // Public Visibility=Default Availability=Available

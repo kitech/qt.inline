@@ -154,8 +154,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qtextlayout.h:142
 // [-2] void setAdditionalFormats(const QList<QTextLayout::FormatRange> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QTextLayout20setAdditionalFormatsERK5QListINS_11FormatRangeEE(void *this_, const QList<QTextLayout::FormatRange> & overrides) {
-  ((QTextLayout*)this_)->setAdditionalFormats(overrides);
+void C_ZN11QTextLayout20setAdditionalFormatsERK5QListINS_11FormatRangeEE(void *this_, QList<QTextLayout::FormatRange>* overrides) {
+  ((QTextLayout*)this_)->setAdditionalFormats(*overrides);
 }
 
 // Public Visibility=Default Availability=Available
@@ -179,8 +179,8 @@ void C_ZN11QTextLayout22clearAdditionalFormatsEv(void *this_) {
 // /usr/include/qt/QtGui/qtextlayout.h:146
 // [-2] void setFormats(const QVector<QTextLayout::FormatRange> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QTextLayout10setFormatsERK7QVectorINS_11FormatRangeEE(void *this_, const QVector<QTextLayout::FormatRange> & overrides) {
-  ((QTextLayout*)this_)->setFormats(overrides);
+void C_ZN11QTextLayout10setFormatsERK7QVectorINS_11FormatRangeEE(void *this_, QVector<QTextLayout::FormatRange>* overrides) {
+  ((QTextLayout*)this_)->setFormats(*overrides);
 }
 
 // Public Visibility=Default Availability=Available
@@ -344,8 +344,8 @@ int C_ZNK11QTextLayout19rightCursorPositionEi(void *this_, int oldPos) {
 // /usr/include/qt/QtGui/qtextlayout.h:176
 // [-2] void draw(QPainter *, const QPointF &, const QVector<QTextLayout::FormatRange> &, const QRectF &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK11QTextLayout4drawEP8QPainterRK7QPointFRK7QVectorINS_11FormatRangeEERK6QRectF(void *this_, QPainter * p, QPointF* pos, const QVector<QTextLayout::FormatRange> & selections, QRectF* clip) {
-  ((QTextLayout*)this_)->draw(p, *pos, selections, *clip);
+void C_ZNK11QTextLayout4drawEP8QPainterRK7QPointFRK7QVectorINS_11FormatRangeEERK6QRectF(void *this_, QPainter * p, QPointF* pos, QVector<QTextLayout::FormatRange>* selections, QRectF* clip) {
+  ((QTextLayout*)this_)->draw(p, *pos, *selections, *clip);
 }
 
 // Public Visibility=Default Availability=Available

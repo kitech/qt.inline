@@ -62,8 +62,8 @@ void* C_ZN8QPolygonC2Ei(int size) {
 // /usr/include/qt/QtGui/qpolygon.h:62
 // [-2] void QPolygon(const QVector<QPoint> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2ERK7QVectorI6QPointE(const QVector<QPoint> & v) {
-  return  new QPolygon(v);
+void* C_ZN8QPolygonC2ERK7QVectorI6QPointE(QVector<QPoint>* v) {
+  return  new QPolygon(*v);
 }
 
 // Public inline Visibility=Default Availability=Available

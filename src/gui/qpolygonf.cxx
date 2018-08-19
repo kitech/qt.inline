@@ -62,8 +62,8 @@ void* C_ZN9QPolygonFC2Ei(int size) {
 // /usr/include/qt/QtGui/qpolygon.h:147
 // [-2] void QPolygonF(const QVector<QPointF> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN9QPolygonFC2ERK7QVectorI7QPointFE(const QVector<QPointF> & v) {
-  return  new QPolygonF(v);
+void* C_ZN9QPolygonFC2ERK7QVectorI7QPointFE(QVector<QPointF>* v) {
+  return  new QPolygonF(*v);
 }
 
 // Public inline Visibility=Default Availability=Available

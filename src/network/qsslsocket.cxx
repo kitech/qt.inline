@@ -413,8 +413,8 @@ void C_ZN10QSslSocket19setSslConfigurationERK17QSslConfiguration(void *this_, QS
 // [-2] void setLocalCertificateChain(const QList<QSslCertificate> &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket24setLocalCertificateChainERK5QListI15QSslCertificateE(void *this_, const QList<QSslCertificate> & localChain) {
-  ((QSslSocket*)this_)->setLocalCertificateChain(localChain);
+void C_ZN10QSslSocket24setLocalCertificateChainERK5QListI15QSslCertificateE(void *this_, QList<QSslCertificate>* localChain) {
+  ((QSslSocket*)this_)->setLocalCertificateChain(*localChain);
 }
 #endif // QT_VERSION >= 0x050100
 
@@ -531,8 +531,8 @@ return new QList<QSslCipher>(rv);
 // /usr/include/qt/QtNetwork/qsslsocket.h:156
 // [-2] void setCiphers(const QList<QSslCipher> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket10setCiphersERK5QListI10QSslCipherE(void *this_, const QList<QSslCipher> & ciphers) {
-  ((QSslSocket*)this_)->setCiphers(ciphers);
+void C_ZN10QSslSocket10setCiphersERK5QListI10QSslCipherE(void *this_, QList<QSslCipher>* ciphers) {
+  ((QSslSocket*)this_)->setCiphers(*ciphers);
 }
 
 // Public Visibility=Default Availability=Available
@@ -547,8 +547,8 @@ void C_ZN10QSslSocket10setCiphersERK7QString(void *this_, QString* ciphers) {
 // /usr/include/qt/QtNetwork/qsslsocket.h:158
 // [-2] void setDefaultCiphers(const QList<QSslCipher> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket17setDefaultCiphersERK5QListI10QSslCipherE(const QList<QSslCipher> & ciphers) {
-  QSslSocket::setDefaultCiphers(ciphers);
+void C_ZN10QSslSocket17setDefaultCiphersERK5QListI10QSslCipherE(QList<QSslCipher>* ciphers) {
+  QSslSocket::setDefaultCiphers(*ciphers);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -589,16 +589,16 @@ void C_ZN10QSslSocket16addCaCertificateERK15QSslCertificate(void *this_, QSslCer
 // /usr/include/qt/QtNetwork/qsslsocket.h:167
 // [-2] void addCaCertificates(const QList<QSslCertificate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket17addCaCertificatesERK5QListI15QSslCertificateE(void *this_, const QList<QSslCertificate> & certificates) {
-  ((QSslSocket*)this_)->addCaCertificates(certificates);
+void C_ZN10QSslSocket17addCaCertificatesERK5QListI15QSslCertificateE(void *this_, QList<QSslCertificate>* certificates) {
+  ((QSslSocket*)this_)->addCaCertificates(*certificates);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:169
 // [-2] void setCaCertificates(const QList<QSslCertificate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket17setCaCertificatesERK5QListI15QSslCertificateE(void *this_, const QList<QSslCertificate> & certificates) {
-  ((QSslSocket*)this_)->setCaCertificates(certificates);
+void C_ZN10QSslSocket17setCaCertificatesERK5QListI15QSslCertificateE(void *this_, QList<QSslCertificate>* certificates) {
+  ((QSslSocket*)this_)->setCaCertificates(*certificates);
 }
 
 // Public Visibility=Default Availability=Available
@@ -630,16 +630,16 @@ void C_ZN10QSslSocket23addDefaultCaCertificateERK15QSslCertificate(QSslCertifica
 // /usr/include/qt/QtNetwork/qsslsocket.h:175
 // [-2] void addDefaultCaCertificates(const QList<QSslCertificate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket24addDefaultCaCertificatesERK5QListI15QSslCertificateE(const QList<QSslCertificate> & certificates) {
-  QSslSocket::addDefaultCaCertificates(certificates);
+void C_ZN10QSslSocket24addDefaultCaCertificatesERK5QListI15QSslCertificateE(QList<QSslCertificate>* certificates) {
+  QSslSocket::addDefaultCaCertificates(*certificates);
 }
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:177
 // [-2] void setDefaultCaCertificates(const QList<QSslCertificate> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket24setDefaultCaCertificatesERK5QListI15QSslCertificateE(const QList<QSslCertificate> & certificates) {
-  QSslSocket::setDefaultCaCertificates(certificates);
+void C_ZN10QSslSocket24setDefaultCaCertificatesERK5QListI15QSslCertificateE(QList<QSslCertificate>* certificates) {
+  QSslSocket::setDefaultCaCertificates(*certificates);
 }
 
 // Public static Visibility=Default Availability=Available
@@ -769,8 +769,8 @@ return new QString(rv);
 // [-2] void ignoreSslErrors(const QList<QSslError> &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket15ignoreSslErrorsERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & errors) {
-  ((QSslSocket*)this_)->ignoreSslErrors(errors);
+void C_ZN10QSslSocket15ignoreSslErrorsERK5QListI9QSslErrorE(void *this_, QList<QSslError>* errors) {
+  ((QSslSocket*)this_)->ignoreSslErrors(*errors);
 }
 #endif // QT_VERSION >= 0x040600
 
@@ -821,8 +821,8 @@ void C_ZN10QSslSocket15peerVerifyErrorERK9QSslError(void *this_, QSslError* erro
 // /usr/include/qt/QtNetwork/qsslsocket.h:206
 // [-2] void sslErrors(const QList<QSslError> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN10QSslSocket9sslErrorsERK5QListI9QSslErrorE(void *this_, const QList<QSslError> & errors) {
-  ((QSslSocket*)this_)->sslErrors(errors);
+void C_ZN10QSslSocket9sslErrorsERK5QListI9QSslErrorE(void *this_, QList<QSslError>* errors) {
+  ((QSslSocket*)this_)->sslErrors(*errors);
 }
 
 // Public Visibility=Default Availability=Available

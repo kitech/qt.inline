@@ -792,8 +792,8 @@ void C_ZN8QPainter9drawLinesEPK6QLineFi(void *this_, const QLineF * lines, int l
 // /usr/include/qt/QtGui/qpainter.h:299
 // [-2] void drawLines(const QVector<QLineF> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI6QLineFE(void *this_, const QVector<QLineF> & lines) {
-  ((QPainter*)this_)->drawLines(lines);
+void C_ZN8QPainter9drawLinesERK7QVectorI6QLineFE(void *this_, QVector<QLineF>* lines) {
+  ((QPainter*)this_)->drawLines(*lines);
 }
 
 // Public Visibility=Default Availability=Available
@@ -808,8 +808,8 @@ void C_ZN8QPainter9drawLinesEPK7QPointFi(void *this_, const QPointF * pointPairs
 // /usr/include/qt/QtGui/qpainter.h:301
 // [-2] void drawLines(const QVector<QPointF> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI7QPointFE(void *this_, const QVector<QPointF> & pointPairs) {
-  ((QPainter*)this_)->drawLines(pointPairs);
+void C_ZN8QPainter9drawLinesERK7QVectorI7QPointFE(void *this_, QVector<QPointF>* pointPairs) {
+  ((QPainter*)this_)->drawLines(*pointPairs);
 }
 
 // Public Visibility=Default Availability=Available
@@ -824,8 +824,8 @@ void C_ZN8QPainter9drawLinesEPK5QLinei(void *this_, const QLine * lines, int lin
 // /usr/include/qt/QtGui/qpainter.h:303
 // [-2] void drawLines(const QVector<QLine> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI5QLineE(void *this_, const QVector<QLine> & lines) {
-  ((QPainter*)this_)->drawLines(lines);
+void C_ZN8QPainter9drawLinesERK7QVectorI5QLineE(void *this_, QVector<QLine>* lines) {
+  ((QPainter*)this_)->drawLines(*lines);
 }
 
 // Public Visibility=Default Availability=Available
@@ -840,8 +840,8 @@ void C_ZN8QPainter9drawLinesEPK6QPointi(void *this_, const QPoint * pointPairs, 
 // /usr/include/qt/QtGui/qpainter.h:305
 // [-2] void drawLines(const QVector<QPoint> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI6QPointE(void *this_, const QVector<QPoint> & pointPairs) {
-  ((QPainter*)this_)->drawLines(pointPairs);
+void C_ZN8QPainter9drawLinesERK7QVectorI6QPointE(void *this_, QVector<QPoint>* pointPairs) {
+  ((QPainter*)this_)->drawLines(*pointPairs);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -880,8 +880,8 @@ void C_ZN8QPainter9drawRectsEPK6QRectFi(void *this_, const QRectF * rects, int r
 // /usr/include/qt/QtGui/qpainter.h:312
 // [-2] void drawRects(const QVector<QRectF> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawRectsERK7QVectorI6QRectFE(void *this_, const QVector<QRectF> & rectangles) {
-  ((QPainter*)this_)->drawRects(rectangles);
+void C_ZN8QPainter9drawRectsERK7QVectorI6QRectFE(void *this_, QVector<QRectF>* rectangles) {
+  ((QPainter*)this_)->drawRects(*rectangles);
 }
 
 // Public Visibility=Default Availability=Available
@@ -896,8 +896,8 @@ void C_ZN8QPainter9drawRectsEPK5QRecti(void *this_, const QRect * rects, int rec
 // /usr/include/qt/QtGui/qpainter.h:314
 // [-2] void drawRects(const QVector<QRect> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawRectsERK7QVectorI5QRectE(void *this_, const QVector<QRect> & rectangles) {
-  ((QPainter*)this_)->drawRects(rectangles);
+void C_ZN8QPainter9drawRectsERK7QVectorI5QRectE(void *this_, QVector<QRect>* rectangles) {
+  ((QPainter*)this_)->drawRects(*rectangles);
 }
 
 // Public Visibility=Default Availability=Available

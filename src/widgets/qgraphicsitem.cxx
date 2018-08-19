@@ -1563,8 +1563,8 @@ return new QList<QGraphicsTransform *>(rv);
 // [-2] void setTransformations(const QList<QGraphicsTransform *> &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
-void C_ZN13QGraphicsItem18setTransformationsERK5QListIP18QGraphicsTransformE(void *this_, const QList<QGraphicsTransform *> & transformations) {
-  ((QGraphicsItem*)this_)->setTransformations(transformations);
+void C_ZN13QGraphicsItem18setTransformationsERK5QListIP18QGraphicsTransformE(void *this_, QList<QGraphicsTransform *>* transformations) {
+  ((QGraphicsItem*)this_)->setTransformations(*transformations);
 }
 #endif // QT_VERSION >= 0x040600
 

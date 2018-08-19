@@ -660,8 +660,8 @@ void C_ZNK18QAbstractItemModel8itemDataERK11QModelIndex(void *this_, QModelIndex
 // /usr/include/qt/QtCore/qabstractitemmodel.h:196
 // [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
 extern "C" Q_DECL_EXPORT
-bool C_ZN18QAbstractItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, const QMap<int, QVariant> & roles) {
-  return (bool)((QAbstractItemModel*)this_)->setItemData(*index, roles);
+bool C_ZN18QAbstractItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, QMap<int, QVariant>* roles) {
+  return (bool)((QAbstractItemModel*)this_)->setItemData(*index, *roles);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -887,8 +887,8 @@ void C_ZNK18QAbstractItemModel9roleNamesEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:254
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
-  ((QAbstractItemModel*)this_)->dataChanged(*topLeft, *bottomRight, roles);
+void C_ZN18QAbstractItemModel11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, QVector<int>* roles) {
+  ((QAbstractItemModel*)this_)->dataChanged(*topLeft, *bottomRight, *roles);
 }
 
 // Public Visibility=Default Availability=Available
@@ -905,8 +905,8 @@ void C_ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(void *this
 // [-2] void layoutChanged(const QList<QPersistentModelIndex> &, QAbstractItemModel::LayoutChangeHint)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel13layoutChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE(void *this_, const QList<QPersistentModelIndex> & parents, QAbstractItemModel::LayoutChangeHint hint) {
-  ((QAbstractItemModel*)this_)->layoutChanged(parents, hint);
+void C_ZN18QAbstractItemModel13layoutChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE(void *this_, QList<QPersistentModelIndex>* parents, QAbstractItemModel::LayoutChangeHint hint) {
+  ((QAbstractItemModel*)this_)->layoutChanged(*parents, hint);
 }
 #endif // QT_VERSION >= 0x050000
 
@@ -916,8 +916,8 @@ void C_ZN18QAbstractItemModel13layoutChangedERK5QListI21QPersistentModelIndexENS
 // [-2] void layoutAboutToBeChanged(const QList<QPersistentModelIndex> &, QAbstractItemModel::LayoutChangeHint)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel22layoutAboutToBeChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE(void *this_, const QList<QPersistentModelIndex> & parents, QAbstractItemModel::LayoutChangeHint hint) {
-  ((QAbstractItemModel*)this_)->layoutAboutToBeChanged(parents, hint);
+void C_ZN18QAbstractItemModel22layoutAboutToBeChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE(void *this_, QList<QPersistentModelIndex>* parents, QAbstractItemModel::LayoutChangeHint hint) {
+  ((QAbstractItemModel*)this_)->layoutAboutToBeChanged(*parents, hint);
 }
 #endif // QT_VERSION >= 0x050000
 

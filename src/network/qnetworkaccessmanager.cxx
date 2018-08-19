@@ -287,8 +287,8 @@ bool C_ZNK21QNetworkAccessManager37isStrictTransportSecurityStoreEnabledEv(void 
 // [-2] void addStrictTransportSecurityHosts(const QVector<QHstsPolicy> &)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkAccessManager31addStrictTransportSecurityHostsERK7QVectorI11QHstsPolicyE(void *this_, const QVector<QHstsPolicy> & knownHosts) {
-  ((QNetworkAccessManager*)this_)->addStrictTransportSecurityHosts(knownHosts);
+void C_ZN21QNetworkAccessManager31addStrictTransportSecurityHostsERK7QVectorI11QHstsPolicyE(void *this_, QVector<QHstsPolicy>* knownHosts) {
+  ((QNetworkAccessManager*)this_)->addStrictTransportSecurityHosts(*knownHosts);
 }
 #endif // QT_VERSION >= 0x050900
 
@@ -555,8 +555,8 @@ void C_ZN21QNetworkAccessManager9encryptedEP13QNetworkReply(void *this_, QNetwor
 // /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:172
 // [-2] void sslErrors(QNetworkReply *, const QList<QSslError> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkAccessManager9sslErrorsEP13QNetworkReplyRK5QListI9QSslErrorE(void *this_, QNetworkReply * reply, const QList<QSslError> & errors) {
-  ((QNetworkAccessManager*)this_)->sslErrors(reply, errors);
+void C_ZN21QNetworkAccessManager9sslErrorsEP13QNetworkReplyRK5QListI9QSslErrorE(void *this_, QNetworkReply * reply, QList<QSslError>* errors) {
+  ((QNetworkAccessManager*)this_)->sslErrors(reply, *errors);
 }
 
 // Public Visibility=Default Availability=Available

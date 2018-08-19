@@ -1265,8 +1265,8 @@ void C_ZN13QGraphicsView18setForegroundBrushERK6QBrush(void *this_, QBrush* brus
 // /usr/include/qt/QtWidgets/qgraphicsview.h:226
 // [-2] void updateScene(const QList<QRectF> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN13QGraphicsView11updateSceneERK5QListI6QRectFE(void *this_, const QList<QRectF> & rects) {
-  ((QGraphicsView*)this_)->updateScene(rects);
+void C_ZN13QGraphicsView11updateSceneERK5QListI6QRectFE(void *this_, QList<QRectF>* rects) {
+  ((QGraphicsView*)this_)->updateScene(*rects);
 }
 
 // Public Visibility=Default Availability=Available

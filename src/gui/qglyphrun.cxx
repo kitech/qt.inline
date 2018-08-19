@@ -114,8 +114,8 @@ void C_ZNK9QGlyphRun12glyphIndexesEv(void *this_) {
 // /usr/include/qt/QtGui/qglyphrun.h:85
 // [-2] void setGlyphIndexes(const QVector<quint32> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE(void *this_, const QVector<quint32> & glyphIndexes) {
-  ((QGlyphRun*)this_)->setGlyphIndexes(glyphIndexes);
+void C_ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE(void *this_, QVector<unsigned int>* glyphIndexes) {
+  ((QGlyphRun*)this_)->setGlyphIndexes(*glyphIndexes);
 }
 
 // Public Visibility=Default Availability=Available
@@ -131,8 +131,8 @@ void C_ZNK9QGlyphRun9positionsEv(void *this_) {
 // /usr/include/qt/QtGui/qglyphrun.h:88
 // [-2] void setPositions(const QVector<QPointF> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE(void *this_, const QVector<QPointF> & positions) {
-  ((QGlyphRun*)this_)->setPositions(positions);
+void C_ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE(void *this_, QVector<QPointF>* positions) {
+  ((QGlyphRun*)this_)->setPositions(*positions);
 }
 
 // Public Visibility=Default Availability=Available

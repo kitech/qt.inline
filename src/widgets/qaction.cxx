@@ -313,8 +313,8 @@ return new QKeySequence(rv);
 // [-2] void setShortcuts(const QList<QKeySequence> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
-void C_ZN7QAction12setShortcutsERK5QListI12QKeySequenceE(void *this_, const QList<QKeySequence> & shortcuts) {
-  ((QAction*)this_)->setShortcuts(shortcuts);
+void C_ZN7QAction12setShortcutsERK5QListI12QKeySequenceE(void *this_, QList<QKeySequence>* shortcuts) {
+  ((QAction*)this_)->setShortcuts(*shortcuts);
 }
 #endif // QT_VERSION >= 0x040200
 

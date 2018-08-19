@@ -578,8 +578,8 @@ void C_ZN11QHeaderView16scrollContentsByEii(void *this_, int dx, int dy) {
 // /usr/include/qt/QtWidgets/qheaderview.h:234
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
-  ((QHeaderView*)this_)->QHeaderView::dataChanged(*topLeft, *bottomRight, roles);
+void C_ZN11QHeaderView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, QVector<int>* roles) {
+  ((QHeaderView*)this_)->QHeaderView::dataChanged(*topLeft, *bottomRight, *roles);
 }
 
 // Protected virtual Visibility=Default Availability=Available

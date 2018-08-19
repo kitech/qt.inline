@@ -1149,8 +1149,8 @@ void C_ZN9QTextEdit17setAcceptRichTextEb(void *this_, bool accept) {
 // /usr/include/qt/QtWidgets/qtextedit.h:210
 // [-2] void setExtraSelections(const QList<QTextEdit::ExtraSelection> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QTextEdit18setExtraSelectionsERK5QListINS_14ExtraSelectionEE(void *this_, const QList<QTextEdit::ExtraSelection> & selections) {
-  ((QTextEdit*)this_)->setExtraSelections(selections);
+void C_ZN9QTextEdit18setExtraSelectionsERK5QListINS_14ExtraSelectionEE(void *this_, QList<QTextEdit::ExtraSelection>* selections) {
+  ((QTextEdit*)this_)->setExtraSelections(*selections);
 }
 
 // Public Visibility=Default Availability=Available

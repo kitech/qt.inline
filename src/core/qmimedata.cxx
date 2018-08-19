@@ -114,8 +114,8 @@ return new QList<QUrl>(rv);
 // /usr/include/qt/QtCore/qmimedata.h:60
 // [-2] void setUrls(const QList<QUrl> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QMimeData7setUrlsERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
-  ((QMimeData*)this_)->setUrls(urls);
+void C_ZN9QMimeData7setUrlsERK5QListI4QUrlE(void *this_, QList<QUrl>* urls) {
+  ((QMimeData*)this_)->setUrls(*urls);
 }
 
 // Public Visibility=Default Availability=Available

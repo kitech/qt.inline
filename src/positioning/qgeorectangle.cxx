@@ -60,8 +60,8 @@ void* C_ZN13QGeoRectangleC2ERK14QGeoCoordinateS2_(QGeoCoordinate* topLeft, QGeoC
 // /usr/include/qt/QtPositioning/qgeorectangle.h:64
 // [-2] void QGeoRectangle(const QList<QGeoCoordinate> &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN13QGeoRectangleC2ERK5QListI14QGeoCoordinateE(const QList<QGeoCoordinate> & coordinates) {
-  return  new QGeoRectangle(coordinates);
+void* C_ZN13QGeoRectangleC2ERK5QListI14QGeoCoordinateE(QList<QGeoCoordinate>* coordinates) {
+  return  new QGeoRectangle(*coordinates);
 }
 
 // Public Visibility=Default Availability=Available

@@ -123,8 +123,8 @@ return new QList<QKeySequence>(rv);
 // /usr/include/qt/QtGui/qkeysequence.h:176
 // [8] QString listToString(const QList<QKeySequence> &, QKeySequence::SequenceFormat)
 extern "C" Q_DECL_EXPORT
-void* C_ZN12QKeySequence12listToStringERK5QListIS_ENS_14SequenceFormatE(const QList<QKeySequence> & list, QKeySequence::SequenceFormat format) {
-  auto rv = QKeySequence::listToString(list, format);
+void* C_ZN12QKeySequence12listToStringERK5QListIS_ENS_14SequenceFormatE(QList<QKeySequence>* list, QKeySequence::SequenceFormat format) {
+  auto rv = QKeySequence::listToString(*list, format);
 return new QString(rv);
 }
 

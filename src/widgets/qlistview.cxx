@@ -443,8 +443,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qlistview.h:149
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QListView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, const QVector<int> & roles) {
-  ((QListView*)this_)->QListView::dataChanged(*topLeft, *bottomRight, roles);
+void C_ZN9QListView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QModelIndex* topLeft, QModelIndex* bottomRight, QVector<int>* roles) {
+  ((QListView*)this_)->QListView::dataChanged(*topLeft, *bottomRight, *roles);
 }
 
 // Protected virtual Visibility=Default Availability=Available

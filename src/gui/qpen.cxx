@@ -147,8 +147,8 @@ void C_ZNK4QPen11dashPatternEv(void *this_) {
 // /usr/include/qt/QtGui/qpen.h:85
 // [-2] void setDashPattern(const QVector<qreal> &)
 extern "C" Q_DECL_EXPORT
-void C_ZN4QPen14setDashPatternERK7QVectorIdE(void *this_, const QVector<qreal> & pattern) {
-  ((QPen*)this_)->setDashPattern(pattern);
+void C_ZN4QPen14setDashPatternERK7QVectorIdE(void *this_, QVector<double>* pattern) {
+  ((QPen*)this_)->setDashPattern(*pattern);
 }
 
 // Public Visibility=Default Availability=Available
