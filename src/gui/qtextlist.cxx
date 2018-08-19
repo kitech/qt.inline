@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextlist.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextlist.h>
 #include <QtGui>

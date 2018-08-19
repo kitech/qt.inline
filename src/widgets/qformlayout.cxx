@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qformlayout.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qformlayout.h>
 #include <QtWidgets>

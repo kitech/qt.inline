@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qscrollerproperties.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qscrollerproperties.h>
 #include <QtWidgets>

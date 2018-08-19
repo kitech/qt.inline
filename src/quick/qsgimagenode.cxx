@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuick/qsgimagenode.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgimagenode.h>
 #include <QtQuick>

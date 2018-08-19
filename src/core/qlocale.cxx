@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlocale.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlocale.h>
 #include <QtCore>

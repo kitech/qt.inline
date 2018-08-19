@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qicon.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qicon.h>
 #include <QtGui>

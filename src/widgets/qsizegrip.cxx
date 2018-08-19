@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qsizegrip.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsizegrip.h>
 #include <QtWidgets>

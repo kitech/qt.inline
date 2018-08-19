@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qcolor.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcolor.h>
 #include <QtGui>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmutex.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmutex.h>
 #include <QtCore>

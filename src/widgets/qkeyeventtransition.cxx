@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qkeyeventtransition.h>
 #include <QtWidgets>

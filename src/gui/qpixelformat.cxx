@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qpixelformat.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpixelformat.h>
 #include <QtGui>

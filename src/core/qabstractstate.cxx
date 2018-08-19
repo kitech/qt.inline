@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qabstractstate.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractstate.h>
 #include <QtCore>

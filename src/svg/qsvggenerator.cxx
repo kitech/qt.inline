@@ -3,6 +3,7 @@
 // /usr/include/qt/QtSvg/qsvggenerator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsvggenerator.h>
 #include <QtSvg>

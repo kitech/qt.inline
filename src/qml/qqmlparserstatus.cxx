@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qqmlparserstatus.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlparserstatus.h>
 #include <QtQml>

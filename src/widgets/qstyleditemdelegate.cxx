@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstyleditemdelegate.h>
 #include <QtWidgets>

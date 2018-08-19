@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextlayout.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextlayout.h>
 #include <QtGui>

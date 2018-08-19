@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextdocumentfragment.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextdocumentfragment.h>
 #include <QtGui>

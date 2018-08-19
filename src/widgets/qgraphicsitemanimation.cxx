@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicsitemanimation.h>
 #include <QtWidgets>

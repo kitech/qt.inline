@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qshareddata.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qshareddata.h>
 #include <QtCore>

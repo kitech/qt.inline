@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdirmodel.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdirmodel.h>
 #include <QtWidgets>

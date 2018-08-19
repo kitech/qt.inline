@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcamerafocuscontrol.h>
 #include <QtMultimedia>

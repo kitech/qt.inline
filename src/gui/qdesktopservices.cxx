@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qdesktopservices.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdesktopservices.h>
 #include <QtGui>

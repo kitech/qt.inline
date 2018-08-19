@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qcompleter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcompleter.h>
 #include <QtWidgets>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmap.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmap.h>
 #include <QtCore>

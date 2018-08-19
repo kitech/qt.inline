@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qstylehints.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstylehints.h>
 #include <QtGui>

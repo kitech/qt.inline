@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qshortcut.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qshortcut.h>
 #include <QtWidgets>

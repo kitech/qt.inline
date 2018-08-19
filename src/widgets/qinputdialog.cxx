@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qinputdialog.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qinputdialog.h>
 #include <QtWidgets>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgflatcolormaterial.h>
 #include <QtQuick>

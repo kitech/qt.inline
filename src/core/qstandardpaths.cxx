@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qstandardpaths.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstandardpaths.h>
 #include <QtCore>

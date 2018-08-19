@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qkeysequence.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qkeysequence.h>
 #include <QtGui>

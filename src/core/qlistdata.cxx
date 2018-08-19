@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlist.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlist.h>
 #include <QtCore>

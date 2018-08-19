@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qsggeometry.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsggeometry.h>
 #include <QtQuick>

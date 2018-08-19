@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpixmap.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpixmap.h>
 #include <QtGui>

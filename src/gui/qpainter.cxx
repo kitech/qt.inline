@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpainter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpainter.h>
 #include <QtGui>

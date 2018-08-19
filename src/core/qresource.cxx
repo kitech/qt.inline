@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qresource.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qresource.h>
 #include <QtCore>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qqmlfileselector.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlfileselector.h>
 #include <QtQml>

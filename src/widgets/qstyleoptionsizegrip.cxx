@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstyleoption.h>
 #include <QtWidgets>

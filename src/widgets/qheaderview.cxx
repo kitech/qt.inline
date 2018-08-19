@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qheaderview.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qheaderview.h>
 #include <QtWidgets>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdialog.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdialog.h>
 #include <QtWidgets>

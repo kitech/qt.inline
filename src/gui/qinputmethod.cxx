@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qinputmethod.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qinputmethod.h>
 #include <QtGui>

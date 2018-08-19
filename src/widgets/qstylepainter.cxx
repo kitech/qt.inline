@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstylepainter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstylepainter.h>
 #include <QtWidgets>

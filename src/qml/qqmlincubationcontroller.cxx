@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qqmlincubator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlincubator.h>
 #include <QtQml>

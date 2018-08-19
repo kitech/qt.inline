@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdial.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdial.h>
 #include <QtWidgets>

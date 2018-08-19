@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebenginehttprequest.h>
 #include <QtWebEngineCore>

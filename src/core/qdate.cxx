@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdatetime.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdatetime.h>
 #include <QtCore>

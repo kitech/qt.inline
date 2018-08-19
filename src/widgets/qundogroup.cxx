@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qundogroup.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qundogroup.h>
 #include <QtWidgets>

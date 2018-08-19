@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qiconengineplugin.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qiconengineplugin.h>
 #include <QtGui>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsortfilterproxymodel.h>
 #include <QtCore>

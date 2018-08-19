@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qabstractitemview.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractitemview.h>
 #include <QtWidgets>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsslcertificateextension.h>
 #include <QtNetwork>

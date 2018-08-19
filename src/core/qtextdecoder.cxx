@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtextcodec.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextcodec.h>
 #include <QtCore>

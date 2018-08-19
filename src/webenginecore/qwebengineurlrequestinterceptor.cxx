@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebengineurlrequestinterceptor.h>
 #include <QtWebEngineCore>

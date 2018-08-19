@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qcombobox.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcombobox.h>
 #include <QtWidgets>

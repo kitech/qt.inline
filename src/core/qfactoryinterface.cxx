@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfactoryinterface.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfactoryinterface.h>
 #include <QtCore>

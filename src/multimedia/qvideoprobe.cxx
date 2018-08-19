@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qvideoprobe.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvideoprobe.h>
 #include <QtMultimedia>

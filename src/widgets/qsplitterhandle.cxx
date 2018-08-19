@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qsplitter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsplitter.h>
 #include <QtWidgets>

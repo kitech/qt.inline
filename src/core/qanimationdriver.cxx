@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qabstractanimation.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractanimation.h>
 #include <QtCore>

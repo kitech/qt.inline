@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlpropertyvaluesource.h>
 #include <QtQml>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qthreadpool.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qthreadpool.h>
 #include <QtCore>

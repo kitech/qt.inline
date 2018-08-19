@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qerrormessage.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qerrormessage.h>
 #include <QtWidgets>

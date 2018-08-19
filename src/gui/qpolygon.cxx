@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpolygon.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpolygon.h>
 #include <QtGui>

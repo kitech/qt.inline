@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtextbrowser.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextbrowser.h>
 #include <QtWidgets>

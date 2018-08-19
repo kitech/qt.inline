@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qjsondocument.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qjsondocument.h>
 #include <QtCore>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qtouchdevice.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtouchdevice.h>
 #include <QtGui>

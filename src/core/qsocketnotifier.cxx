@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsocketnotifier.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsocketnotifier.h>
 #include <QtCore>

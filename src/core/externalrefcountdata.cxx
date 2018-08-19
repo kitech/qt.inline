@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsharedpointer_impl.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsharedpointer.h>
 #include <QtCore>

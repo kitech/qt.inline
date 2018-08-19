@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpagedpaintdevice.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpagedpaintdevice.h>
 #include <QtGui>

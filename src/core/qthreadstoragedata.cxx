@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qthreadstorage.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qthreadstorage.h>
 #include <QtCore>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qcheckbox.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcheckbox.h>
 #include <QtWidgets>

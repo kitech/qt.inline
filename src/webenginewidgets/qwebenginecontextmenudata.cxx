@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebenginecontextmenudata.h>
 #include <QtWebEngineWidgets>

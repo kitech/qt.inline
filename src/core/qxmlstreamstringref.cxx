@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qxmlstream.h>
 #include <QtCore>

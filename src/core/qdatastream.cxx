@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdatastream.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdatastream.h>
 #include <QtCore>

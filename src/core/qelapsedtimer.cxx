@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qelapsedtimer.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qelapsedtimer.h>
 #include <QtCore>

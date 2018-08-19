@@ -2,6 +2,7 @@
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdnslookup.h>
 #include <QtNetwork>

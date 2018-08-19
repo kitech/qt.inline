@@ -2,6 +2,7 @@
 // /usr/include/qt/QtNetwork/qtcpserver.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtcpserver.h>
 #include <QtNetwork>

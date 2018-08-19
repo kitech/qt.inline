@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudiodecodercontrol.h>
 #include <QtMultimedia>

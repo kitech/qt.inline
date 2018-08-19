@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qurlquery.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qurlquery.h>
 #include <QtCore>

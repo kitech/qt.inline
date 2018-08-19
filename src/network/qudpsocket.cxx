@@ -2,6 +2,7 @@
 // /usr/include/qt/QtNetwork/qudpsocket.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qudpsocket.h>
 #include <QtNetwork>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetaobject.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmetaobject.h>
 #include <QtCore>

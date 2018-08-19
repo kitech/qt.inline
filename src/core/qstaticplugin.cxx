@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qplugin.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qplugin.h>
 #include <QtCore>

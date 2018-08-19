@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qaudioformat.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudioformat.h>
 #include <QtMultimedia>

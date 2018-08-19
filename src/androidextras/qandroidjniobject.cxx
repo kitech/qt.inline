@@ -3,6 +3,7 @@
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qandroidjniobject.h>
 #include <QtAndroidExtras>

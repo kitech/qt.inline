@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qimagereader.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qimagereader.h>
 #include <QtGui>

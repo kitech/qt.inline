@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qscopedpointer.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qscopedpointer.h>
 #include <QtCore>

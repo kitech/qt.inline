@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qscreen.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qscreen.h>
 #include <QtGui>

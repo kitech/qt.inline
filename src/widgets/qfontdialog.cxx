@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qfontdialog.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfontdialog.h>
 #include <QtWidgets>

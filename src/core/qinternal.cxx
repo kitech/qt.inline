@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qnamespace.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qnamespace.h>
 #include <QtCore>

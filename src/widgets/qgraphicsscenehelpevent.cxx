@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>

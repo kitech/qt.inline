@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qquaternion.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquaternion.h>
 #include <QtGui>

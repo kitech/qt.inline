@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsslpresharedkeyauthenticator.h>
 #include <QtNetwork>

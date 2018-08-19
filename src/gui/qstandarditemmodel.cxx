@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstandarditemmodel.h>
 #include <QtGui>

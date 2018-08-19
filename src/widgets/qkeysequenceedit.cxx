@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qkeysequenceedit.h>
 #include <QtWidgets>

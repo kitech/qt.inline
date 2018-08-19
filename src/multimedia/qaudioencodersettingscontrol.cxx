@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudioencodersettingscontrol.h>
 #include <QtMultimedia>

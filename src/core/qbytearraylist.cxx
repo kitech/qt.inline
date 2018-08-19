@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbytearray.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qbytearray.h>
 #include <QtCore>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qsplashscreen.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsplashscreen.h>
 #include <QtWidgets>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcamerafeedbackcontrol.h>
 #include <QtMultimedia>

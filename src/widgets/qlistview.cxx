@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlistview.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlistview.h>
 #include <QtWidgets>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qrgba64.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qrgba64.h>
 #include <QtGui>

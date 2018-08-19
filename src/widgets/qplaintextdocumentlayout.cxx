@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qplaintextedit.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qplaintextedit.h>
 #include <QtWidgets>

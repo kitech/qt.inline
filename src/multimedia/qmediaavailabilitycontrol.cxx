@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediaavailabilitycontrol.h>
 #include <QtMultimedia>

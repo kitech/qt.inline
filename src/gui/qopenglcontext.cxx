@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qopenglcontext.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglcontext.h>
 #include <QtGui>

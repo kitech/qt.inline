@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsignalmapper.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsignalmapper.h>
 #include <QtCore>

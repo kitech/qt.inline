@@ -3,6 +3,7 @@
 // /usr/include/qt/QtMultimedia/qcamerainfocontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcamerainfocontrol.h>
 #include <QtMultimedia>

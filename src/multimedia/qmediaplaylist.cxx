@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediaplaylist.h>
 #include <QtMultimedia>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuick/qsgrectanglenode.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgrectanglenode.h>
 #include <QtQuick>

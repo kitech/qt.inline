@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qflags.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qflags.h>
 #include <QtCore>

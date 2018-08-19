@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicslayoutitem.h>
 #include <QtWidgets>

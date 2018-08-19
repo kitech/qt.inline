@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgesturerecognizer.h>
 #include <QtWidgets>

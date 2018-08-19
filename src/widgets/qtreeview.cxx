@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtreeview.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtreeview.h>
 #include <QtWidgets>

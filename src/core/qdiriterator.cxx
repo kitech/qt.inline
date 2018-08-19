@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qdiriterator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdiriterator.h>
 #include <QtCore>

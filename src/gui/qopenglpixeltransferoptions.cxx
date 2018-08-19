@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qopenglpixeltransferoptions.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglpixeltransferoptions.h>
 #include <QtGui>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qwindow.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwindow.h>
 #include <QtGui>

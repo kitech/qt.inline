@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qvideorenderercontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvideorenderercontrol.h>
 #include <QtMultimedia>

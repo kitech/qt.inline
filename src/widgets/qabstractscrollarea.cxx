@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractscrollarea.h>
 #include <QtWidgets>

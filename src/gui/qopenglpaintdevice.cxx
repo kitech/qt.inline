@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qopenglpaintdevice.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglpaintdevice.h>
 #include <QtGui>

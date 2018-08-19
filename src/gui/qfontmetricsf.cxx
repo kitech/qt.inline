@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qfontmetrics.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfontmetrics.h>
 #include <QtGui>

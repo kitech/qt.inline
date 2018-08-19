@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qhstspolicy.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qhstspolicy.h>
 #include <QtNetwork>

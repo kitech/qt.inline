@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qmargins.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmargins.h>
 #include <QtCore>

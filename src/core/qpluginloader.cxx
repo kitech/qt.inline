@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qpluginloader.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpluginloader.h>
 #include <QtCore>

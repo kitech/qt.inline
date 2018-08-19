@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtemporaryfile.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtemporaryfile.h>
 #include <QtCore>

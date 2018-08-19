@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qprocess.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qprocess.h>
 #include <QtCore>

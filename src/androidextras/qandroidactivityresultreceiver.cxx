@@ -3,6 +3,7 @@
 // /usr/include/qt/QtAndroidExtras/qandroidactivityresultreceiver.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qandroidactivityresultreceiver.h>
 #include <QtAndroidExtras>

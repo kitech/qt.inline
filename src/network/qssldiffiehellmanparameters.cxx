@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qssldiffiehellmanparameters.h>
 #include <QtNetwork>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qopenglframebufferobject.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglframebufferobject.h>
 #include <QtGui>

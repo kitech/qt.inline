@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWebChannel/qqmlwebchannel.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlwebchannel.h>
 #include <QtWebChannel>

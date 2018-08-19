@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qglyphrun.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qglyphrun.h>
 #include <QtGui>

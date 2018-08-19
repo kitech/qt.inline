@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsize.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsize.h>
 #include <QtCore>

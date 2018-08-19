@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qfuture.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfuture.h>
 #include <QtCore>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineWidgets/qwebenginescript.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebenginescript.h>
 #include <QtWebEngineWidgets>

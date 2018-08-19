@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebenginefullscreenrequest.h>
 #include <QtWebEngineWidgets>

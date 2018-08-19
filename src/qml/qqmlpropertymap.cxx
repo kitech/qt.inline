@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qqmlpropertymap.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlpropertymap.h>
 #include <QtQml>

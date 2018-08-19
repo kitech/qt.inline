@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractnativeeventfilter.h>
 #include <QtCore>

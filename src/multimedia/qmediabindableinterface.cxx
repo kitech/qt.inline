@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediabindableinterface.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediabindableinterface.h>
 #include <QtMultimedia>

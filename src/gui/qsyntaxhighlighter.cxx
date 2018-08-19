@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsyntaxhighlighter.h>
 #include <QtGui>

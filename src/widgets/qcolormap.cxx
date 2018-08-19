@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qcolormap.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcolormap.h>
 #include <QtWidgets>

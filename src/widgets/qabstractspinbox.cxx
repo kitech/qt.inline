@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qabstractspinbox.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractspinbox.h>
 #include <QtWidgets>

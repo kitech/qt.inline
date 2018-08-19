@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebenginehistory.h>
 #include <QtWebEngineWidgets>

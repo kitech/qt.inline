@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qfuturewatcher.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfuturewatcher.h>
 #include <QtCore>

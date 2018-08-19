@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qopengltexture.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopengltexture.h>
 #include <QtGui>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qoffscreensurface.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qoffscreensurface.h>
 #include <QtGui>

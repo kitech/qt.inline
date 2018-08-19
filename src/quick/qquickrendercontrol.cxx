@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuick/qquickrendercontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickrendercontrol.h>
 #include <QtQuick>

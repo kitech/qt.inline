@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qparallelanimationgroup.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qparallelanimationgroup.h>
 #include <QtCore>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qrect.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qrect.h>
 #include <QtCore>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlinkedlist.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlinkedlist.h>
 #include <QtCore>

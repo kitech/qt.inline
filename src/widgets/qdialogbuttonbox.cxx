@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdialogbuttonbox.h>
 #include <QtWidgets>

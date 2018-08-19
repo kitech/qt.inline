@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qdrawutil.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdrawutil.h>
 #include <QtWidgets>

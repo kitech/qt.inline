@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qquickpainteditem.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickpainteditem.h>
 #include <QtQuick>

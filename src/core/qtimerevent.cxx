@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcoreevent.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcoreevent.h>
 #include <QtCore>

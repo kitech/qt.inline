@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuick/qquicktextdocument.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquicktextdocument.h>
 #include <QtQuick>

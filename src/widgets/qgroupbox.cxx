@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgroupbox.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgroupbox.h>
 #include <QtWidgets>

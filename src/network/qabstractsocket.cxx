@@ -2,6 +2,7 @@
 // /usr/include/qt/QtNetwork/qabstractsocket.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractsocket.h>
 #include <QtNetwork>

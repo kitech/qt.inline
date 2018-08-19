@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsettings.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsettings.h>
 #include <QtCore>

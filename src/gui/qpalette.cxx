@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpalette.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpalette.h>
 #include <QtGui>

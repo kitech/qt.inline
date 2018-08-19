@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qauthenticator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qauthenticator.h>
 #include <QtNetwork>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qfileiconprovider.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfileiconprovider.h>
 #include <QtWidgets>

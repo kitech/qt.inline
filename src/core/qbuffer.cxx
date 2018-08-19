@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbuffer.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qbuffer.h>
 #include <QtCore>

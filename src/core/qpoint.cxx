@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qpoint.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpoint.h>
 #include <QtCore>

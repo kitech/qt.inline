@@ -3,6 +3,7 @@
 // /usr/include/qt/QtPositioning/qgeopositioninfosource.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgeopositioninfosource.h>
 #include <QtPositioning>

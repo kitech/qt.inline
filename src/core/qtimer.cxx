@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtimer.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtimer.h>
 #include <QtCore>

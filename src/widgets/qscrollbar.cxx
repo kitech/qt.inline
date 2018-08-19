@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qscrollbar.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qscrollbar.h>
 #include <QtWidgets>

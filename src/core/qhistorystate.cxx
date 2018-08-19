@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qhistorystate.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qhistorystate.h>
 #include <QtCore>

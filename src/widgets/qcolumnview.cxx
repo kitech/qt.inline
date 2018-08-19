@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qcolumnview.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcolumnview.h>
 #include <QtWidgets>

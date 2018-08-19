@@ -3,6 +3,7 @@
 // /usr/include/qt/QtSvg/qsvgrenderer.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsvgrenderer.h>
 #include <QtSvg>

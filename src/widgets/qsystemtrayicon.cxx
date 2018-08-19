@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsystemtrayicon.h>
 #include <QtWidgets>

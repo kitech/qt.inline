@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdatetimeedit.h>
 #include <QtWidgets>

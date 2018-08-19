@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qarraydata.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qarraydata.h>
 #include <QtCore>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qfontcombobox.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfontcombobox.h>
 #include <QtWidgets>

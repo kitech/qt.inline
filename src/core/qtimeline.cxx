@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qtimeline.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtimeline.h>
 #include <QtCore>

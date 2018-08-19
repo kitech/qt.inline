@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediastreamscontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediastreamscontrol.h>
 #include <QtMultimedia>

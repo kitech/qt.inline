@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlayout.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlayout.h>
 #include <QtWidgets>

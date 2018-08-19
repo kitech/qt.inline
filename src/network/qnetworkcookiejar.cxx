@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qnetworkcookiejar.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qnetworkcookiejar.h>
 #include <QtNetwork>

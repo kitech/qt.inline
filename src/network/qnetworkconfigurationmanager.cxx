@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qnetworkconfigmanager.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qnetworkconfigmanager.h>
 #include <QtNetwork>

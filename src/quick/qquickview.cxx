@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuick/qquickview.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickview.h>
 #include <QtQuick>

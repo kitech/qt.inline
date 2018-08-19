@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmimedata.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmimedata.h>
 #include <QtCore>

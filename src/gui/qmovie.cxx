@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qmovie.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmovie.h>
 #include <QtGui>

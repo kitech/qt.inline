@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qopenglextrafunctions.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglextrafunctions.h>
 #include <QtGui>

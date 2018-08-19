@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qsgmaterial.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgmaterial.h>
 #include <QtQuick>

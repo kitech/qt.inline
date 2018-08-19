@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qfiledevice.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfiledevice.h>
 #include <QtCore>

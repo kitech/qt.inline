@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qitemdelegate.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qitemdelegate.h>
 #include <QtWidgets>

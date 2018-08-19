@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qtransform.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtransform.h>
 #include <QtGui>

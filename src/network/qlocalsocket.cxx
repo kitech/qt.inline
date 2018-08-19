@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qlocalsocket.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlocalsocket.h>
 #include <QtNetwork>

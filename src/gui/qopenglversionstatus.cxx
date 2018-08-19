@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qopenglversionfunctions.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglversionfunctions.h>
 #include <QtGui>

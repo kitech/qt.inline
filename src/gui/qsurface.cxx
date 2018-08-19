@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qsurface.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsurface.h>
 #include <QtGui>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtNetwork/qsslerror.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsslerror.h>
 #include <QtNetwork>

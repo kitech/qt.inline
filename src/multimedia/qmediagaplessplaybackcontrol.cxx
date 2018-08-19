@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediagaplessplaybackcontrol.h>
 #include <QtMultimedia>

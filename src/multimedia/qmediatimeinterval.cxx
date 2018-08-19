@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediatimerange.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediatimerange.h>
 #include <QtMultimedia>

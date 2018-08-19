@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qrasterwindow.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qrasterwindow.h>
 #include <QtGui>

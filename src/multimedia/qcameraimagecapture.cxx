@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcameraimagecapture.h>
 #include <QtMultimedia>

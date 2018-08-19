@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtablewidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtablewidget.h>
 #include <QtWidgets>

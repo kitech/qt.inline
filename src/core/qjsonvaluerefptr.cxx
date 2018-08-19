@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qjsonvalue.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qjsonvalue.h>
 #include <QtCore>

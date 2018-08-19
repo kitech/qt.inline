@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgsimpletexturenode.h>
 #include <QtQuick>

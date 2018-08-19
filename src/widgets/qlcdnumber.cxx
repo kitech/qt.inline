@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlcdnumber.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlcdnumber.h>
 #include <QtWidgets>

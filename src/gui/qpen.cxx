@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpen.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpen.h>
 #include <QtGui>

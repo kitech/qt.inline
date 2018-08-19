@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmdisubwindow.h>
 #include <QtWidgets>

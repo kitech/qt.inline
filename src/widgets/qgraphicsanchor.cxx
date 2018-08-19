@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicsanchorlayout.h>
 #include <QtWidgets>

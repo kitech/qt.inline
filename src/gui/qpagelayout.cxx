@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qpagelayout.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpagelayout.h>
 #include <QtGui>

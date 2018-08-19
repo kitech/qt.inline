@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qmatrix4x4.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmatrix4x4.h>
 #include <QtGui>

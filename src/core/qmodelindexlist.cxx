@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractitemmodel.h>
 #include <QtCore>

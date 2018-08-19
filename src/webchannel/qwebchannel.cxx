@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebChannel/qwebchannel.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebchannel.h>
 #include <QtWebChannel>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qpaintdevicewindow.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpaintdevicewindow.h>
 #include <QtGui>

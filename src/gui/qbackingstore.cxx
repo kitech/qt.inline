@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qbackingstore.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qbackingstore.h>
 #include <QtGui>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextformat.h>
 #include <QtGui>

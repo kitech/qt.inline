@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextcursor.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextcursor.h>
 #include <QtGui>

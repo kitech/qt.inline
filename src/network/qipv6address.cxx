@@ -2,6 +2,7 @@
 // /usr/include/qt/QtNetwork/qhostaddress.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qhostaddress.h>
 #include <QtNetwork>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qsystemsemaphore.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsystemsemaphore.h>
 #include <QtCore>

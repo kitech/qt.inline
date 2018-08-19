@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qurl.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qurl.h>
 #include <QtCore>

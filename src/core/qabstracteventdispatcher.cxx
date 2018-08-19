@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstracteventdispatcher.h>
 #include <QtCore>

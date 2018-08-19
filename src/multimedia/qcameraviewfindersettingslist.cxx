@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcameraviewfindersettings.h>
 #include <QtMultimedia>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuick/qquickframebufferobject.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickframebufferobject.h>
 #include <QtQuick>

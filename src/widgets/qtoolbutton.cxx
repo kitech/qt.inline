@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtoolbutton.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtoolbutton.h>
 #include <QtWidgets>

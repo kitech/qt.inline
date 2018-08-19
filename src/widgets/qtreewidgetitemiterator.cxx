@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtreewidgetitemiterator.h>
 #include <QtWidgets>

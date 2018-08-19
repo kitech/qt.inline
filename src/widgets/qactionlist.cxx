@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qaction.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaction.h>
 #include <QtWidgets>

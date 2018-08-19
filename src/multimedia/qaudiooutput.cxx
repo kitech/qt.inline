@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qaudiooutput.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudiooutput.h>
 #include <QtMultimedia>

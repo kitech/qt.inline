@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qmimedatabase.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmimedatabase.h>
 #include <QtCore>

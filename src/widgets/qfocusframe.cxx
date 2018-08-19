@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qfocusframe.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfocusframe.h>
 #include <QtWidgets>

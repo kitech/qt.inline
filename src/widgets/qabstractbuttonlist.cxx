@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qabstractbutton.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractbutton.h>
 #include <QtWidgets>

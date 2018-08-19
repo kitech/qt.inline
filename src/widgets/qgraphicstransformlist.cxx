@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicstransform.h>
 #include <QtWidgets>

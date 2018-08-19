@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qcommandlineoption.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcommandlineoption.h>
 #include <QtCore>

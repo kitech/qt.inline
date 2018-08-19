@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediaaudioprobecontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediaaudioprobecontrol.h>
 #include <QtMultimedia>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qvideoframe.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvideoframe.h>
 #include <QtMultimedia>

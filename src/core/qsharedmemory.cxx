@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qsharedmemory.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsharedmemory.h>
 #include <QtCore>

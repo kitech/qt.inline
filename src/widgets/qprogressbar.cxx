@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qprogressbar.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qprogressbar.h>
 #include <QtWidgets>

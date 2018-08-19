@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qcollator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcollator.h>
 #include <QtCore>

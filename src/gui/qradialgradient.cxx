@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qbrush.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qbrush.h>
 #include <QtGui>

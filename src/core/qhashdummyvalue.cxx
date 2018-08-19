@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qhash.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qhash.h>
 #include <QtCore>

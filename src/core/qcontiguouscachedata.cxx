@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcontiguouscache.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcontiguouscache.h>
 #include <QtCore>

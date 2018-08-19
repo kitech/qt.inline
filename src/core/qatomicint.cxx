@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qatomic.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qatomic.h>
 #include <QtCore>

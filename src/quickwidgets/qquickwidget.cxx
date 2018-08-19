@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickwidget.h>
 #include <QtQuickWidgets>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qstorageinfo.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstorageinfo.h>
 #include <QtCore>

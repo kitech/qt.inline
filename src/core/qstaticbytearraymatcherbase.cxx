@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbytearraymatcher.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qbytearraymatcher.h>
 #include <QtCore>

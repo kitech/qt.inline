@@ -3,6 +3,7 @@
 // /usr/include/qt/QtMultimedia/qaudiorolecontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudiorolecontrol.h>
 #include <QtMultimedia>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qqmlapplicationengine.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlapplicationengine.h>
 #include <QtQml>

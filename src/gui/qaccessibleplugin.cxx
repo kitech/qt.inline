@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qaccessibleplugin.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaccessibleplugin.h>
 #include <QtGui>

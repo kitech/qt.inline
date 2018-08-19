@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qreadwritelock.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qreadwritelock.h>
 #include <QtCore>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfutureinterface.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfutureinterface.h>
 #include <QtCore>

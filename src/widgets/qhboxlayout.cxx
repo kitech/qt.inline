@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qboxlayout.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qboxlayout.h>
 #include <QtWidgets>

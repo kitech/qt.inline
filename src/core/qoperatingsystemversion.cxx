@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qoperatingsystemversion.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qoperatingsystemversion.h>
 #include <QtCore>

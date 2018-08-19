@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qvideosurfaceformat.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvideosurfaceformat.h>
 #include <QtMultimedia>

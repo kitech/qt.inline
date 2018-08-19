@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtranslator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtranslator.h>
 #include <QtCore>

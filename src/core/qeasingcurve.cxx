@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qeasingcurve.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qeasingcurve.h>
 #include <QtCore>

@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qstring.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstring.h>
 #include <QtCore>

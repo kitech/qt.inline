@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qsgnode.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgnode.h>
 #include <QtQuick>

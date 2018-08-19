@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qmatrix.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmatrix.h>
 #include <QtGui>

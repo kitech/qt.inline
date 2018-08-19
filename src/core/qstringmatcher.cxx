@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstringmatcher.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstringmatcher.h>
 #include <QtCore>

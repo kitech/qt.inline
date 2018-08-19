@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qlockfile.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlockfile.h>
 #include <QtCore>

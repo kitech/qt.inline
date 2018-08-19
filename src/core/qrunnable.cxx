@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qrunnable.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qrunnable.h>
 #include <QtCore>

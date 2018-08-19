@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qsizepolicy.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsizepolicy.h>
 #include <QtWidgets>

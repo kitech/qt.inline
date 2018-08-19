@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qaudiorecorder.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudiorecorder.h>
 #include <QtMultimedia>

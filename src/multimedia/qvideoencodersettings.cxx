@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmediaencodersettings.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmediaencodersettings.h>
 #include <QtMultimedia>

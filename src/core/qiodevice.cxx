@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qiodevice.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qiodevice.h>
 #include <QtCore>

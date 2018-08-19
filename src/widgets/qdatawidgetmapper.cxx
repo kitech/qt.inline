@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdatawidgetmapper.h>
 #include <QtWidgets>

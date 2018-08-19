@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qloggingcategory.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qloggingcategory.h>
 #include <QtCore>

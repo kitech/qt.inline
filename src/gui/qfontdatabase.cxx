@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qfontdatabase.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfontdatabase.h>
 #include <QtGui>

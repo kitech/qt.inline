@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qqmlproperty.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlproperty.h>
 #include <QtQml>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsemaphore.h>
 #include <QtCore>

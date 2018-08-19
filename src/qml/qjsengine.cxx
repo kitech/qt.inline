@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qjsengine.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qjsengine.h>
 #include <QtQml>

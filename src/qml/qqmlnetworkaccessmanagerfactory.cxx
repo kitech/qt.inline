@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qqmlnetworkaccessmanagerfactory.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlnetworkaccessmanagerfactory.h>
 #include <QtQml>

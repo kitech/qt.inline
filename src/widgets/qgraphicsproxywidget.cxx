@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicsproxywidget.h>
 #include <QtWidgets>

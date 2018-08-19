@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qmdiarea.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmdiarea.h>
 #include <QtWidgets>

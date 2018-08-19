@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlineedit.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlineedit.h>
 #include <QtWidgets>

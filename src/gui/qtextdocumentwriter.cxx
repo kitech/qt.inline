@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qtextdocumentwriter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtextdocumentwriter.h>
 #include <QtGui>

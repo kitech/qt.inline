@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstringlist.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstringlist.h>
 #include <QtCore>

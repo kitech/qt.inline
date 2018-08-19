@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qanimationgroup.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qanimationgroup.h>
 #include <QtCore>

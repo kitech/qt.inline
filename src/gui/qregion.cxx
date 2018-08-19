@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qregion.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qregion.h>
 #include <QtGui>

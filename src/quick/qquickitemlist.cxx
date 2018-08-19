@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qquickitem.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickitem.h>
 #include <QtQuick>

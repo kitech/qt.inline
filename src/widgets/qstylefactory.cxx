@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstylefactory.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstylefactory.h>
 #include <QtWidgets>

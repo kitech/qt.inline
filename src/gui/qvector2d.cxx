@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qvector2d.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvector2d.h>
 #include <QtGui>

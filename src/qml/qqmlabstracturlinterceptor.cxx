@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlabstracturlinterceptor.h>
 #include <QtQml>

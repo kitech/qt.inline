@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qimagewriter.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qimagewriter.h>
 #include <QtGui>

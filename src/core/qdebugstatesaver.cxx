@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qdebug.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdebug.h>
 #include <QtCore>

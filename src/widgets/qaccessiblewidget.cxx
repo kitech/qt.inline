@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaccessiblewidget.h>
 #include <QtWidgets>

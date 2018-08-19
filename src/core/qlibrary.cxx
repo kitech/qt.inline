@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlibrary.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qlibrary.h>
 #include <QtCore>

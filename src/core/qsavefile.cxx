@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qsavefile.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsavefile.h>
 #include <QtCore>

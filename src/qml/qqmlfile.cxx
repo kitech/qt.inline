@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qqmlfile.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlfile.h>
 #include <QtQml>

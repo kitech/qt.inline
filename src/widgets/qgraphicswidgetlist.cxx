@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicswidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicswidget.h>
 #include <QtWidgets>

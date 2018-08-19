@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwebenginecookiestore.h>
 #include <QtWebEngineCore>

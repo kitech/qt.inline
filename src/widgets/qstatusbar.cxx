@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstatusbar.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstatusbar.h>
 #include <QtWidgets>

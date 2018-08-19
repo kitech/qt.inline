@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qqmlscriptstring.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlscriptstring.h>
 #include <QtQml>

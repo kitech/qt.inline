@@ -3,6 +3,7 @@
 // /usr/include/qt/QtSvg/qgraphicssvgitem.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgraphicssvgitem.h>
 #include <QtSvg>

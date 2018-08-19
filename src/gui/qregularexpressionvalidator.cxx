@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qvalidator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvalidator.h>
 #include <QtGui>

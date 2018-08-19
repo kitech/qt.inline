@@ -3,6 +3,7 @@
 // /usr/include/qt/QtAndroidExtras/qandroidintent.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qandroidintent.h>
 #include <QtAndroidExtras>

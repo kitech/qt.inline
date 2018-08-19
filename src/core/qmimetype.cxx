@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qmimetype.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmimetype.h>
 #include <QtCore>

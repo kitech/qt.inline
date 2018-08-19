@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qsgtextureprovider.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsgtextureprovider.h>
 #include <QtQuick>

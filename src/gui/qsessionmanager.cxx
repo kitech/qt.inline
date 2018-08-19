@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qsessionmanager.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qsessionmanager.h>
 #include <QtGui>

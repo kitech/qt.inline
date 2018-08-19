@@ -3,6 +3,7 @@
 // /usr/include/qt/QtPositioning/qgeorectangle.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgeorectangle.h>
 #include <QtPositioning>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qmetadatareadercontrol.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qmetadatareadercontrol.h>
 #include <QtMultimedia>

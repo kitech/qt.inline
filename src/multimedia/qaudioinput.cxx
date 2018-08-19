@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qaudioinput.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qaudioinput.h>
 #include <QtMultimedia>

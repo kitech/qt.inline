@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qfileselector.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfileselector.h>
 #include <QtCore>

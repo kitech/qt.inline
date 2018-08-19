@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qjsonarray.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qjsonarray.h>
 #include <QtCore>

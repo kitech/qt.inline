@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qgenericpluginfactory.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qgenericpluginfactory.h>
 #include <QtGui>

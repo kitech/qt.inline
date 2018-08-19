@@ -3,6 +3,7 @@
 // /usr/include/qt/QtQml/qqmlextensionplugin.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qqmlextensionplugin.h>
 #include <QtQml>

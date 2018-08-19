@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qopenglwindow.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qopenglwindow.h>
 #include <QtGui>

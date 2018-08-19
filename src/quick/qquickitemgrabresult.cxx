@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQuick/qquickitemgrabresult.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qquickitemgrabresult.h>
 #include <QtQuick>

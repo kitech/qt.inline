@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qwaitcondition.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qwaitcondition.h>
 #include <QtCore>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qscrollarea.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qscrollarea.h>
 #include <QtWidgets>

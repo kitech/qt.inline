@@ -2,6 +2,7 @@
 // /usr/include/qt/QtQml/qjsvalueiterator.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qjsvalueiterator.h>
 #include <QtQml>

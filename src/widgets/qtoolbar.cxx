@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtoolbar.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qtoolbar.h>
 #include <QtWidgets>

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qradiodata.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qradiodata.h>
 #include <QtMultimedia>

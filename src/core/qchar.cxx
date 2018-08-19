@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qchar.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qchar.h>
 #include <QtCore>

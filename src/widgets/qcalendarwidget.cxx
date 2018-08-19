@@ -3,6 +3,7 @@
 // /usr/include/qt/QtWidgets/qcalendarwidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qcalendarwidget.h>
 #include <QtWidgets>

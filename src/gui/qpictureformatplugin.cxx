@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpictureformatplugin.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpictureformatplugin.h>
 #include <QtGui>

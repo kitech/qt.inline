@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qimage.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qimage.h>
 #include <QtGui>

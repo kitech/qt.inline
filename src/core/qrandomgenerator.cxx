@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qrandom.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qrandom.h>
 #include <QtCore>

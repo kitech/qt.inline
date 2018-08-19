@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qdockwidget.h>
 #include <QtWidgets>

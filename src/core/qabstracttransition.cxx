@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qabstracttransition.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstracttransition.h>
 #include <QtCore>

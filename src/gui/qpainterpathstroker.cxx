@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qpainterpath.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qpainterpath.h>
 #include <QtGui>

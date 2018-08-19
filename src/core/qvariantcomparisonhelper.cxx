@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qvariant.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qvariant.h>
 #include <QtCore>

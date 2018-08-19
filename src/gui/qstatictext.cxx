@@ -3,6 +3,7 @@
 // /usr/include/qt/QtGui/qstatictext.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qstatictext.h>
 #include <QtGui>

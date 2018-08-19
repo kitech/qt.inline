@@ -2,6 +2,7 @@
 // /usr/include/qt/QtMultimedia/qabstractvideosurface.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qabstractvideosurface.h>
 #include <QtMultimedia>

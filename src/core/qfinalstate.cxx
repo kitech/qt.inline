@@ -3,6 +3,7 @@
 // /usr/include/qt/QtCore/qfinalstate.h
 #ifndef protected
 #define protected public
+#define private public
 #endif
 #include <qfinalstate.h>
 #include <QtCore>
