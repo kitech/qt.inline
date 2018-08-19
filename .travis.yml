@@ -70,12 +70,31 @@ matrix:
     #   os: osx
     #   osx_image: xcode7.3
     #   env: JOB=build-osx
-    - stage: Android-Arm7
+    - stage: Android-Arm7-lastest
       os: linux
       language: android
       env:
         - JOB=build-android
         - USEARCH=arm
+        - USENDKVER=bundle
+      android:
+        components:
+          - build-tools-26.0.2
+          - android-26
+          - sys-img-armeabi-v7a-android-tv-l
+          - add-on
+          - extra
+        licenses:
+          - 'android-sdk-preview-license-52d11cd2'
+          - 'android-sdk-license-.+'
+          - 'google-gdk-license-.+'
+    - stage: Android-Arm7-r16b
+      os: linux
+      language: android
+      env:
+        - JOB=build-android
+        - USEARCH=arm
+        - USENDKVER=r16b
       android:
         components:
           - build-tools-26.0.2
@@ -93,6 +112,7 @@ matrix:
       env:
         - JOB=build-android
         - USEARCH=x86
+        - USENDKVER=bundle
       android:
         components:
           - build-tools-26.0.2

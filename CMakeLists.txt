@@ -25,22 +25,42 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 # set toolchains by cmake definition(s)
 # for android arm build begin, usage: cmake -DANDROID=on .
 if(ANDROID)
+  set(ANDNDK_DIR "/opt/andndk16")
+  set(USECLANG "")
   # switch to gcc for fix now day's ndk17 problem: #3
-  if(EXISTS /opt/andndk16/bin/arm-linux-androideabi-gcc)
+  if(EXISTS ${ANDNDK_DIR}/bin/arm-linux-androideabi-gcc)
     message("Android arm build enabled.")
-    set(CMAKE_C_COMPILER /opt/andndk16/bin/arm-linux-androideabi-gcc)
-    set(CMAKE_CXX_COMPILER /opt/andndk16/bin/arm-linux-androideabi-g++)
+    set(CMAKE_C_COMPILER ${ANDNDK_DIR}/bin/arm-linux-androideabi-clang)
+    set(CMAKE_CXX_COMPILER ${ANDNDK_DIR}/bin/arm-linux-androideabi-clang++)
+    set(USECLANG "on")
   else()
     message("Android x86 build enabled.")
-    set(CMAKE_C_COMPILER /opt/andndk16/bin/i686-linux-android-gcc)
-    set(CMAKE_CXX_COMPILER /opt/andndk16/bin/i686-linux-android-g++)
+    set(CMAKE_C_COMPILER ${ANDNDK_DIR}/bin/i686-linux-android-gcc)
+    set(CMAKE_CXX_COMPILER ${ANDNDK_DIR}/bin/i686-linux-android-g++)
   endif()
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/include/c++/4.9.x")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem /opt/andndk16/sysroot/usr/include")
-  set(CMAKE_SYSROOT "/home/me/Qt5.10.1/5.10.1/android_armv7/")
+
+  set(NDK17CLANG "")
+  if(EXISTS ${ANDNDK_DIR}/bin/clang60) # should be ndk17
+    set(ANDNDKVER "17")
+    if(USECLANG)
+      set(NDK17CLANG "on")
+    endif()
+  endif()
+
+  if(NDK17CLANG) # only if adk17-clang set
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${ANDNDK_DIR}/include/c++/4.9.x")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${ANDNDK_DIR}/sysroot/usr/include")
+  else() # should be ndk16
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem ${ANDNDK_DIR}/include/c++/4.9.x")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem ${ANDNDK_DIR}/sysroot/usr/include")
+  endif()
+
+  set(QT_INSTALL_DIR "/home/me/Qt5.10.1/5.10.1/android_armv7")
+  #set(QT_INSTALL_DIR "/home/travis/build/kitech/qt.inline/qt510_android_arm/")
+  set(CMAKE_SYSROOT "${QT_INSTALL_DIR}")
   # 这个参数可以设置多个值
-  set(CMAKE_FIND_ROOT_PATH  /home/me/Qt5.10.1/5.10.1/android_armv7/ /home/me/Qt5.10.1/5.10.1/android_armv7/)
-  set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=/opt/andndk16/sysroot")
+  set(CMAKE_FIND_ROOT_PATH  ${QT_INSTALL_DIR} "${QT_INSTALL_DIR}")
+  set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
 elseif(MINGW_NOIPBIZ)
   include(tc-mingw.cmake)
 endif(ANDROID)
@@ -102,13 +122,16 @@ file(GLOB qt5_inline_srcs
   # src/core/qstring.cxx # for compile test
   src/core/modfix.cpp
   src/core/qstringlistx.cpp
+  src/qml/qgolistmodel.cpp
+  #src/qml/moc_qgolistmodel.cpp
+
   src/core/*.cxx
   src/gui/*.cxx
   src/widgets/*.cxx
+
   # qmls
   src/network/*.cxx
   src/qml/*.cxx
-  src/qml/qgolistmodel.cpp
   src/quick/*.cxx
   src/quicktemplates2/*.cxx
   src/quickcontrols2/*.cxx

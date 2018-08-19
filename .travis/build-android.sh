@@ -11,10 +11,33 @@ ls /usr/local/
 echo $ANDROID_HOME
 ls $ANDROID_HOME/
 
-echo y | sdkmanager 'ndk-bundle'
-# echo y | sdkmanager 'cmake;3.6.3155560'
+# NDK_VERSION like: r10e, r16b, r17-beta2
+function install_ndk_spec_version()
+{
+    export NDK_VERSION=${USENDKVER}
+    # r10e: http://dl.google.com/android/ndk/android-ndk-${NDK_VERSION}-linux-x86_64.bin
+    curl -L https://dl.google.com/android/repository/android-ndk-${NDK_VERSION}-linux-x86_64.zip -O
+    unzip android-ndk-${NDK_VERSION}-linux-x86_64.zip > ndk_install.log
+    tail -n 5 ndk_install.log
+    ls android-ndk-${NDK_VERSION}/
 
-export ANDROID_NDK=$ANDROID_HOME/ndk-bundle
+    export ANDROID_NDK=$PWD/android-ndk-${NDK_VERSION}
+}
+
+function install_ndk_bundle_version()
+{
+    echo y | sdkmanager 'ndk-bundle'
+    # echo y | sdkmanager 'cmake;3.6.3155560'
+
+    export ANDROID_NDK=$ANDROID_HOME/ndk-bundle
+}
+
+if [ x"$USENDKVER" == x"bundle" ]; then
+    install_ndk_bundle_version;
+else
+    install_ndk_spec_version;
+fi
+
 echo $ANDROID_NDK
 ls $ANDROID_NDK/build/tools/make_standalone_toolchain.py
 

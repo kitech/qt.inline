@@ -112,6 +112,13 @@ public:
 QGoListModel(QObject * parent = nullptr) : QAbstractListModel(parent) {}
 };
 
+#if !defined(QT_INIT_METAOBJECT)
+#if defined(Q_CC_GNU) && defined(Q_OS_WIN)
+#  define QT_INIT_METAOBJECT __attribute__((init_priority(101)))
+#else
+#  define QT_INIT_METAOBJECT
+#endif
+#endif
 #include "moc_qgolistmodel.cpp_"
 
 extern "C" Q_DECL_EXPORT
