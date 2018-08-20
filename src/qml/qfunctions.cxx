@@ -6,6 +6,69 @@
 //  header block end
 
 //  main block begin
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:131
+// [4] QIncompatibleFlag operator|(QJSEngine::Extensions::enum_type, int)
+extern "C" Q_DECL_EXPORT
+void C_ZorN9QJSEngine9ExtensionEi_245(QJSEngine::Extensions::enum_type f1, int f2) {
+  auto rv = operator|(f1, f2);
+/*return rv;*/
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:131
+// [4] QFlags<QJSEngine::Extensions::enum_type> operator|(QJSEngine::Extensions::enum_type, QJSEngine::Extensions::enum_type)
+extern "C" Q_DECL_EXPORT
+void C_ZorN9QJSEngine9ExtensionES0__246(QJSEngine::Extensions::enum_type f1, QJSEngine::Extensions::enum_type f2) {
+  auto rv = operator|(f1, f2);
+/*return rv;*/
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:131
+// [4] QFlags<QJSEngine::Extensions::enum_type> operator|(QJSEngine::Extensions::enum_type, QFlags<QJSEngine::Extensions::enum_type>)
+extern "C" Q_DECL_EXPORT
+void C_ZorN9QJSEngine9ExtensionE6QFlagsIS0_E_247(QJSEngine::Extensions::enum_type f1, QFlags<QJSEngine::Extension> f2) {
+  auto rv = operator|(f1, f2);
+/*return rv;*/
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:81
+// [4] QIncompatibleFlag operator|(QQmlImageProviderBase::Flags::enum_type, int)
+extern "C" Q_DECL_EXPORT
+void C_ZorN21QQmlImageProviderBase4FlagEi_248(QQmlImageProviderBase::Flags::enum_type f1, int f2) {
+  auto rv = operator|(f1, f2);
+/*return rv;*/
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:81
+// [4] QFlags<QQmlImageProviderBase::Flags::enum_type> operator|(QQmlImageProviderBase::Flags::enum_type, QQmlImageProviderBase::Flags::enum_type)
+extern "C" Q_DECL_EXPORT
+void C_ZorN21QQmlImageProviderBase4FlagES0__249(QQmlImageProviderBase::Flags::enum_type f1, QQmlImageProviderBase::Flags::enum_type f2) {
+  auto rv = operator|(f1, f2);
+/*return rv;*/
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:81
+// [4] QFlags<QQmlImageProviderBase::Flags::enum_type> operator|(QQmlImageProviderBase::Flags::enum_type, QFlags<QQmlImageProviderBase::Flags::enum_type>)
+extern "C" Q_DECL_EXPORT
+void C_ZorN21QQmlImageProviderBase4FlagE6QFlagsIS0_E_250(QQmlImageProviderBase::Flags::enum_type f1, QFlags<QQmlImageProviderBase::Flag> f2) {
+  auto rv = operator|(f1, f2);
+/*return rv;*/
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlerror.h:81
+// [8] QDebug operator<<(QDebug, const QQmlError &)
+extern "C" Q_DECL_EXPORT
+void* C_Zls6QDebugRK9QQmlError_222(QDebug* debug, QQmlError* error) {
+  auto rv = operator<<(*debug, *error);
+return new QDebug(rv);
+}
+
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:549
 // [8] QQmlEngine * qmlEngine(const QObject *)
@@ -24,10 +87,19 @@ return new QQmlInfo(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:55
+// [16] QQmlInfo qmlDebug(const QObject *, const QList<QQmlError> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QtQml8qmlDebugEPK7QObjectRK5QListI9QQmlErrorE_1(const QObject * me, QList<QQmlError>* errors) {
+  auto rv = QtQml::qmlDebug(me, *errors);
+return new QQmlInfo(rv);
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:53
 // [16] QQmlInfo qmlDebug(const QObject *)
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QtQml8qmlDebugEPK7QObject_1(const QObject * me) {
+void* C_ZN5QtQml8qmlDebugEPK7QObject_2(const QObject * me) {
   auto rv = QtQml::qmlDebug(me);
 return new QQmlInfo(rv);
 }
@@ -42,10 +114,19 @@ return new QQmlInfo(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:59
+// [16] QQmlInfo qmlInfo(const QObject *, const QList<QQmlError> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QtQml7qmlInfoEPK7QObjectRK5QListI9QQmlErrorE_1(const QObject * me, QList<QQmlError>* errors) {
+  auto rv = QtQml::qmlInfo(me, *errors);
+return new QQmlInfo(rv);
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:57
 // [16] QQmlInfo qmlInfo(const QObject *)
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QtQml7qmlInfoEPK7QObject_1(const QObject * me) {
+void* C_ZN5QtQml7qmlInfoEPK7QObject_2(const QObject * me) {
   auto rv = QtQml::qmlInfo(me);
 return new QQmlInfo(rv);
 }
@@ -84,10 +165,19 @@ return new QQmlInfo(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:63
+// [16] QQmlInfo qmlWarning(const QObject *, const QList<QQmlError> &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN5QtQml10qmlWarningEPK7QObjectRK5QListI9QQmlErrorE_1(const QObject * me, QList<QQmlError>* errors) {
+  auto rv = QtQml::qmlWarning(me, *errors);
+return new QQmlInfo(rv);
+}
+
+// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:61
 // [16] QQmlInfo qmlWarning(const QObject *)
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QtQml10qmlWarningEPK7QObject_1(const QObject * me) {
+void* C_ZN5QtQml10qmlWarningEPK7QObject_2(const QObject * me) {
   auto rv = QtQml::qmlWarning(me);
 return new QQmlInfo(rv);
 }
@@ -128,7 +218,7 @@ void* C_Z9qjsEnginePK7QObject(const QObject * arg0) {
 // /usr/include/qt/QtQml/qqmlproperty.h:130
 // [4] uint qHash(const QQmlProperty &)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK12QQmlProperty_43(QQmlProperty* key) {
+uint C_Z5qHashRK12QQmlProperty_51(QQmlProperty* key) {
   return (uint)qHash(*key);
 }
 
