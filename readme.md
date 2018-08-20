@@ -21,11 +21,11 @@ So there is no C wrapper functions header source here.
 ### Installation
 
 cmake flags:
-* -DANDROID=on/off
-* -DUSE_WEBENGINES=on/off
-* -DMINGW_NOIPBIZ=on/off
-* -DWITH_QT_STATIC=on/off
-* -DWINARCH=x32/x64
+* -DANDROID=on/off default: off
+* -DUSE_WEBENGINES=on/off default: off
+* -DMINGW_NOIPBIZ=on/off default: off
+* -DWITH_QT_STATIC=on/off default: off
+* -DWINARCH=x32/x64 default: none
 
 #### Linux/MacOS
 
@@ -49,7 +49,14 @@ coming soon...
 
 But here is how do it: https://github.com/kitech/qt.inline/blob/master/run-mingw.sh
 
+Cross build envirement: ArchLinux + martchus's ownstuff repo, https://martchus.no-ip.biz/
+
+If you are not ArchLinux, maybe can try MXE cross build envirement.
+
 #### Windows native build
 
 coming soon...
+
+Compilers: mingw64-gcc or tdm-gcc
+
 

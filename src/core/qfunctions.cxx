@@ -4,6 +4,14 @@
 //  header block end
 
 //  main block begin
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qglobal.h:360
+// [8] const char * qVersion()
+extern "C" Q_DECL_EXPORT
+void* CqVersion() {
+  return (void*)qVersion();
+}
+
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:226
 // [16] QTextStream & operator>>(QTextStream &, QTextStreamFunction)
@@ -7665,16 +7673,16 @@ void C_Z19qSetGlobalQHashSeedi(int newSeed) {
   qSetGlobalQHashSeed(newSeed);
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:53
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:473
 // [8] const QMetaObject * qt_getQtMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_Z18qt_getQtMetaObjectv() {
   return (void*)qt_getQtMetaObject();
 }
 
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:473
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:53
 // [8] const QMetaObject * qt_getQtMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_Z18qt_getQtMetaObjectv_1() {

@@ -21,3 +21,14 @@ QList<QObject*>* C_QObject_findChildren(void* this_, const char* name, int optio
     auto rv = ((QObject*)this_)->findChildren<QObject*>(dname, doptions);
     return new decltype(rv)(rv);
 }
+
+extern "C" Q_DECL_EXPORT
+char* C_QMetaObject_getEnumItemName(void* this_, char* enumName,  int value) {
+    QMetaObject* rthis = (QMetaObject*)this_;
+    int enumIdx = rthis->indexOfEnumerator(enumName);
+    if (enumIdx == -1) {
+        return 0;
+    }
+    QMetaEnum e = rthis->enumerator(enumIdx);
+    return (char*)e.valueToKey(value);
+}
