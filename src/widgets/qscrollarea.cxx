@@ -77,7 +77,8 @@ MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, paren
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QScrollArea::viewportSizeHint();

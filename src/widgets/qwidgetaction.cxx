@@ -77,7 +77,8 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createdWidgets", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QList<QWidget *>*)(irv);
+    if (irv == 0) { return (QList<QWidget *>){};}
+    auto prv = (QList<QWidget *>*)(irv); auto orv = *prv; delete(prv); return orv;
       // Unexposed Record QList<QWidget *>
     } else {
     return QWidgetAction::createdWidgets();

@@ -88,7 +88,8 @@ MyQLayout() : QLayout() {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRect*)(irv);
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRect
     } else {
     return QLayout::alignmentRect(arg0);

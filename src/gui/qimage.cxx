@@ -58,7 +58,8 @@ MyQImage(QImage && other) : QImage(other) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_helper", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QImage*)(irv);
+    if (irv == 0) { return (QImage){};}
+    auto prv = (QImage*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QImage
     } else {
     return QImage::mirrored_helper(horizontal, vertical);
@@ -71,7 +72,8 @@ MyQImage(QImage && other) : QImage(other) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_helper", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QImage*)(irv);
+    if (irv == 0) { return (QImage){};}
+    auto prv = (QImage*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QImage
     } else {
     return QImage::rgbSwapped_helper();
@@ -108,7 +110,8 @@ MyQImage(QImage && other) : QImage(other) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_helper", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QImage*)(irv);
+    if (irv == 0) { return (QImage){};}
+    auto prv = (QImage*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QImage
     } else {
     return QImage::convertToFormat_helper(format, flags);
@@ -134,7 +137,8 @@ MyQImage(QImage && other) : QImage(other) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"smoothScaled", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QImage*)(irv);
+    if (irv == 0) { return (QImage){};}
+    auto prv = (QImage*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QImage
     } else {
     return QImage::smoothScaled(w, h);

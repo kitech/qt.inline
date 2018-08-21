@@ -50,7 +50,8 @@ MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fromImageInPlace", &handled, 2, (uint64_t)&image, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QPixmap*)(irv);
+    if (irv == 0) { return (QPixmap){};}
+    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QPixmap
     } else {
     return QPixmap::fromImageInPlace(image, flags);

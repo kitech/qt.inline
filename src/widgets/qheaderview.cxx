@@ -221,7 +221,8 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sectionSizeFromContents", &handled, 1, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QHeaderView::sectionSizeFromContents(logicalIndex);
@@ -308,7 +309,8 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRect", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRect*)(irv);
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRect
     } else {
     return QHeaderView::visualRect(index);
@@ -333,7 +335,8 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexAt", &handled, 1, (uint64_t)&p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QHeaderView::indexAt(p);
@@ -359,7 +362,8 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QHeaderView::moveCursor(arg0, arg1);
@@ -384,7 +388,8 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRegion*)(irv);
+    if (irv == 0) { return (QRegion){};}
+    auto prv = (QRegion*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRegion
     } else {
     return QHeaderView::visualRegionForSelection(selection);

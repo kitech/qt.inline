@@ -22,7 +22,8 @@ public:
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToUnicode", &handled, 3, (uint64_t)in, (uint64_t)length, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QString*)(irv);
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QString
     } else {
     return (QString){};
@@ -35,7 +36,8 @@ public:
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromUnicode", &handled, 3, (uint64_t)in, (uint64_t)length, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QByteArray*)(irv);
+    if (irv == 0) { return (QByteArray){};}
+    auto prv = (QByteArray*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QByteArray
     } else {
     return (QByteArray){};

@@ -52,7 +52,8 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"children", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStringList*)(irv);
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStringList
     } else {
     return QResource::children();

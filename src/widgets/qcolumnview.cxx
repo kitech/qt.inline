@@ -41,7 +41,8 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QColumnView::moveCursor(cursorAction, modifiers);
@@ -78,7 +79,8 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRegion*)(irv);
+    if (irv == 0) { return (QRegion){};}
+    auto prv = (QRegion*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRegion
     } else {
     return QColumnView::visualRegionForSelection(selection);

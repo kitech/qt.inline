@@ -123,7 +123,8 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QTreeView::moveCursor(cursorAction, modifiers);
@@ -174,7 +175,8 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRegion*)(irv);
+    if (irv == 0) { return (QRegion){};}
+    auto prv = (QRegion*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRegion
     } else {
     return QTreeView::visualRegionForSelection(selection);
@@ -357,7 +359,8 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QTreeView::viewportSizeHint();

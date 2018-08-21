@@ -40,7 +40,8 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStringList*)(irv);
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStringList
     } else {
     return QTableWidget::mimeTypes();
@@ -92,7 +93,8 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QList<QTableWidgetItem *>*)(irv);
+    if (irv == 0) { return (QList<QTableWidgetItem *>){};}
+    auto prv = (QList<QTableWidgetItem *>*)(irv); auto orv = *prv; delete(prv); return orv;
       // Unexposed Record QList<QTableWidgetItem *>
     } else {
     return QTableWidget::items(data);
@@ -105,7 +107,8 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QTableWidget::indexFromItem(item);

@@ -358,7 +358,8 @@ MyQPlainTextEdit(QPlainTextEditPrivate & dd, QWidget * parent) : QPlainTextEdit(
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"firstVisibleBlock", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QTextBlock*)(irv);
+    if (irv == 0) { return (QTextBlock){};}
+    auto prv = (QTextBlock*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QTextBlock
     } else {
     return QPlainTextEdit::firstVisibleBlock();
@@ -371,7 +372,8 @@ MyQPlainTextEdit(QPlainTextEditPrivate & dd, QWidget * parent) : QPlainTextEdit(
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contentOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QPointF*)(irv);
+    if (irv == 0) { return (QPointF){};}
+    auto prv = (QPointF*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QPointF
     } else {
     return QPlainTextEdit::contentOffset();
@@ -384,7 +386,8 @@ MyQPlainTextEdit(QPlainTextEditPrivate & dd, QWidget * parent) : QPlainTextEdit(
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockBoundingRect", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRectF*)(irv);
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRectF
     } else {
     return QPlainTextEdit::blockBoundingRect(block);
@@ -397,7 +400,8 @@ MyQPlainTextEdit(QPlainTextEditPrivate & dd, QWidget * parent) : QPlainTextEdit(
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockBoundingGeometry", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRectF*)(irv);
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRectF
     } else {
     return QPlainTextEdit::blockBoundingGeometry(block);

@@ -64,7 +64,8 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textFromValue", &handled, 1, (uint64_t)val, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QString*)(irv);
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QString
     } else {
     return QSpinBox::textFromValue(val);

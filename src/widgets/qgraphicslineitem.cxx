@@ -55,7 +55,8 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QVariant*)(irv);
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QVariant
     } else {
     return QGraphicsLineItem::extension(variant);

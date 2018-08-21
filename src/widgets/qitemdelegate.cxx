@@ -97,7 +97,8 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rect", &handled, 3, (uint64_t)&option, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRect*)(irv);
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRect
     } else {
     return QItemDelegate::rect(option, index, role);
@@ -136,7 +137,8 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOptions", &handled, 2, (uint64_t)&index, (uint64_t)&option, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStyleOptionViewItem*)(irv);
+    if (irv == 0) { return (QStyleOptionViewItem){};}
+    auto prv = (QStyleOptionViewItem*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStyleOptionViewItem
     } else {
     return QItemDelegate::setOptions(index, option);
@@ -149,7 +151,8 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decoration", &handled, 2, (uint64_t)&option, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QPixmap*)(irv);
+    if (irv == 0) { return (QPixmap){};}
+    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QPixmap
     } else {
     return QItemDelegate::decoration(option, variant);
@@ -175,7 +178,8 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doCheck", &handled, 3, (uint64_t)&option, (uint64_t)&bounding, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRect*)(irv);
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRect
     } else {
     return QItemDelegate::doCheck(option, bounding, variant);
@@ -188,7 +192,8 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textRectangle", &handled, 4, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&font, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRect*)(irv);
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRect
     } else {
     return QItemDelegate::textRectangle(painter, rect, font, text);

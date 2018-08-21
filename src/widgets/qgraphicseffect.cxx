@@ -77,7 +77,8 @@ MyQGraphicsEffect(QGraphicsEffectPrivate & d, QObject * parent) : QGraphicsEffec
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceBoundingRect", &handled, 1, (uint64_t)system, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRectF*)(irv);
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRectF
     } else {
     return QGraphicsEffect::sourceBoundingRect(system);
@@ -102,7 +103,8 @@ MyQGraphicsEffect(QGraphicsEffectPrivate & d, QObject * parent) : QGraphicsEffec
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourcePixmap", &handled, 3, (uint64_t)system, (uint64_t)offset, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QPixmap*)(irv);
+    if (irv == 0) { return (QPixmap){};}
+    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QPixmap
     } else {
     return QGraphicsEffect::sourcePixmap(system, offset, mode);

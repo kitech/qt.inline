@@ -88,7 +88,8 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QTextCharFormat*)(irv);
+    if (irv == 0) { return (QTextCharFormat){};}
+    auto prv = (QTextCharFormat*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QTextCharFormat
     } else {
     return QAbstractTextDocumentLayout::format(pos);

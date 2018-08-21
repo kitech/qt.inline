@@ -219,7 +219,8 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cursorRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRect*)(irv);
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRect
     } else {
     return QLineEdit::cursorRect();

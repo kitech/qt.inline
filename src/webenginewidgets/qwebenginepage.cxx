@@ -41,7 +41,8 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"chooseFiles", &handled, 3, (uint64_t)mode, (uint64_t)&oldFiles, (uint64_t)&acceptedMimeTypes, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStringList*)(irv);
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStringList
     } else {
     return QWebEnginePage::chooseFiles(mode, oldFiles, acceptedMimeTypes);

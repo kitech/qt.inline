@@ -245,7 +245,8 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodQuery", &handled, 1, (uint64_t)query, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QVariant*)(irv);
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QVariant
     } else {
     return QGraphicsTextItem::inputMethodQuery(query);
@@ -283,7 +284,8 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QVariant*)(irv);
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QVariant
     } else {
     return QGraphicsTextItem::extension(variant);

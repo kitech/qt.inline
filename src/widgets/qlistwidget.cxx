@@ -38,7 +38,8 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStringList*)(irv);
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStringList
     } else {
     return QListWidget::mimeTypes();
@@ -90,7 +91,8 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QList<QListWidgetItem *>*)(irv);
+    if (irv == 0) { return (QList<QListWidgetItem *>){};}
+    auto prv = (QList<QListWidgetItem *>*)(irv); auto orv = *prv; delete(prv); return orv;
       // Unexposed Record QList<QListWidgetItem *>
     } else {
     return QListWidget::items(data);
@@ -103,7 +105,8 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QListWidget::indexFromItem(item);

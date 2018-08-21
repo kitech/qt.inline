@@ -39,7 +39,8 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QAbstractItemModel::createIndex(row, column, data);
@@ -52,7 +53,8 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QAbstractItemModel::createIndex(row, column, id);

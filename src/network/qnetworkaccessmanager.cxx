@@ -39,7 +39,8 @@ MyQNetworkAccessManager(QObject * parent) : QNetworkAccessManager(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSchemesImplementation", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStringList*)(irv);
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStringList
     } else {
     return QNetworkAccessManager::supportedSchemesImplementation();

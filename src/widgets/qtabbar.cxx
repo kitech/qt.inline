@@ -25,7 +25,8 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"tabSizeHint", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QTabBar::tabSizeHint(index);
@@ -38,7 +39,8 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumTabSizeHint", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QTabBar::minimumTabSizeHint(index);

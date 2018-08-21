@@ -52,7 +52,8 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItemPrivate & dd) : QGraphicsLayoutItem(dd)
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSizeF*)(irv);
+    if (irv == 0) { return (QSizeF){};}
+    auto prv = (QSizeF*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSizeF
     } else {
     return (QSizeF){};

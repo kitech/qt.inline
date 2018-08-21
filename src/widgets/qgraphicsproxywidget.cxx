@@ -26,7 +26,8 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemChange", &handled, 2, (uint64_t)change, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QVariant*)(irv);
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QVariant
     } else {
     return QGraphicsProxyWidget::itemChange(change, value);
@@ -330,7 +331,8 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodQuery", &handled, 1, (uint64_t)query, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QVariant*)(irv);
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QVariant
     } else {
     return QGraphicsProxyWidget::inputMethodQuery(query);
@@ -355,7 +357,8 @@ MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : 
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSizeF*)(irv);
+    if (irv == 0) { return (QSizeF){};}
+    auto prv = (QSizeF*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSizeF
     } else {
     return QGraphicsProxyWidget::sizeHint(which, constraint);

@@ -105,7 +105,8 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dateTimeFromText", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QDateTime*)(irv);
+    if (irv == 0) { return (QDateTime){};}
+    auto prv = (QDateTime*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QDateTime
     } else {
     return QDateTimeEdit::dateTimeFromText(text);
@@ -118,7 +119,8 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textFromDateTime", &handled, 1, (uint64_t)&dt, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QString*)(irv);
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QString
     } else {
     return QDateTimeEdit::textFromDateTime(dt);

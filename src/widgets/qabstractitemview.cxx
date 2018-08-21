@@ -257,7 +257,8 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return (QModelIndex){};
@@ -321,7 +322,8 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QRegion*)(irv);
+    if (irv == 0) { return (QRegion){};}
+    auto prv = (QRegion*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QRegion
     } else {
     return (QRegion){};
@@ -385,7 +387,8 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewOptions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStyleOptionViewItem*)(irv);
+    if (irv == 0) { return (QStyleOptionViewItem){};}
+    auto prv = (QStyleOptionViewItem*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStyleOptionViewItem
     } else {
     return QAbstractItemView::viewOptions();
@@ -471,7 +474,8 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dirtyRegionOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QPoint*)(irv);
+    if (irv == 0) { return (QPoint){};}
+    auto prv = (QPoint*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QPoint
     } else {
     return QAbstractItemView::dirtyRegionOffset();
@@ -740,7 +744,8 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QAbstractItemView::viewportSizeHint();

@@ -26,7 +26,8 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"allCookies", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QList<QNetworkCookie>*)(irv);
+    if (irv == 0) { return (QList<QNetworkCookie>){};}
+    auto prv = (QList<QNetworkCookie>*)(irv); auto orv = *prv; delete(prv); return orv;
       // Unexposed Record QList<QNetworkCookie>
     } else {
     return QNetworkCookieJar::allCookies();

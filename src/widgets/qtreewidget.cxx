@@ -38,7 +38,8 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QStringList*)(irv);
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QStringList
     } else {
     return QTreeWidget::mimeTypes();
@@ -90,7 +91,8 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QList<QTreeWidgetItem *>*)(irv);
+    if (irv == 0) { return (QList<QTreeWidgetItem *>){};}
+    auto prv = (QList<QTreeWidgetItem *>*)(irv); auto orv = *prv; delete(prv); return orv;
       // Unexposed Record QList<QTreeWidgetItem *>
     } else {
     return QTreeWidget::items(data);
@@ -103,7 +105,8 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QTreeWidget::indexFromItem(item, column);
@@ -116,7 +119,8 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QModelIndex*)(irv);
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QModelIndex
     } else {
     return QTreeWidget::indexFromItem(item, column);

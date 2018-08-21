@@ -76,7 +76,8 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QTextCharFormat*)(irv);
+    if (irv == 0) { return (QTextCharFormat){};}
+    auto prv = (QTextCharFormat*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QTextCharFormat
     } else {
     return QSyntaxHighlighter::format(pos);
@@ -152,7 +153,8 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentBlock", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QTextBlock*)(irv);
+    if (irv == 0) { return (QTextBlock){};}
+    auto prv = (QTextBlock*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QTextBlock
     } else {
     return QSyntaxHighlighter::currentBlock();

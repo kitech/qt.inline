@@ -30,7 +30,8 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QCommandLinkButton::sizeHint();
@@ -56,7 +57,8 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-    return *(QSize*)(irv);
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
       // Record Record QSize
     } else {
     return QCommandLinkButton::minimumSizeHint();
