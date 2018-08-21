@@ -20,104 +20,104 @@ public:
 // void QListWidget(QWidget *)
 MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QListWidget::event(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QStringList mimeTypes()
+// [8] QStringList mimeTypes()
   virtual QStringList mimeTypes() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
-      // RecordRecordQStringList
+      // Record Record QStringList
     } else {
     return QListWidget::mimeTypes();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QMimeData * mimeData(const QList<QListWidgetItem *>)
+// [8] QMimeData * mimeData(const QList<QListWidgetItem *>)
   virtual QMimeData * mimeData(const QList<QListWidgetItem *> items) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeData", &handled, 1, (uint64_t)&items, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QMimeData *)(irv);
-      // PointerPointerQMimeData *
+      // Pointer Pointer QMimeData *
     } else {
     return QListWidget::mimeData(items);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool dropMimeData(int, const QMimeData *, Qt::DropAction)
+// [1] bool dropMimeData(int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropMimeData", &handled, 3, (uint64_t)index, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QListWidget::dropMimeData(index, data, action);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// Qt::DropActions supportedDropActions()
+// [4] Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (Qt::DropActions)(int)(irv);
-      // ElaboratedRecordQFlags<Qt::DropAction>
+      // Elaborated Record QFlags<Qt::DropAction>
     } else {
     return QListWidget::supportedDropActions();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QList<QListWidgetItem *> items(const QMimeData *)
+// [-2] QList<QListWidgetItem *> items(const QMimeData *)
   virtual QList<QListWidgetItem *> items(const QMimeData * data) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QList<QListWidgetItem *>*)(irv);
-      // UnexposedRecordQList<QListWidgetItem *>
+      // Unexposed Record QList<QListWidgetItem *>
     } else {
     return QListWidget::items(data);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QModelIndex indexFromItem(QListWidgetItem *)
+// [24] QModelIndex indexFromItem(QListWidgetItem *)
   virtual QModelIndex indexFromItem(QListWidgetItem * item) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
-      // RecordRecordQModelIndex
+      // Record Record QModelIndex
     } else {
     return QListWidget::indexFromItem(item);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QListWidgetItem * itemFromIndex(const QModelIndex &)
+// [8] QListWidgetItem * itemFromIndex(const QModelIndex &)
   virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QListWidgetItem *)(irv);
-      // PointerPointerQListWidgetItem *
+      // Pointer Pointer QListWidgetItem *
     } else {
     return QListWidget::itemFromIndex(index);
   }

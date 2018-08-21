@@ -19,40 +19,40 @@ public:
 // void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)
 MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QAccessibleWidget(o, r, name) {}
 // Protected virtual Visibility=Default Availability=Available
-// void ~QAccessibleWidget()
+// [-2] void ~QAccessibleWidget()
 // Protected Visibility=Default Availability=Available
-// QWidget * widget()
+// [8] QWidget * widget()
   virtual QWidget * widget() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widget", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QWidget *)(irv);
-      // PointerPointerQWidget *
+      // Pointer Pointer QWidget *
     } else {
     return QAccessibleWidget::widget();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QObject * parentObject()
+// [8] QObject * parentObject()
   virtual QObject * parentObject() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parentObject", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QObject *)(irv);
-      // PointerPointerQObject *
+      // Pointer Pointer QObject *
     } else {
     return QAccessibleWidget::parentObject();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void addControllingSignal(const QString &)
+// [-2] void addControllingSignal(const QString &)
   virtual void addControllingSignal(const QString & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addControllingSignal", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAccessibleWidget::addControllingSignal(signal);
   }

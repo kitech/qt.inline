@@ -22,85 +22,85 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
 // void QDialog(QDialogPrivate &, QWidget *, Qt::WindowFlags)
 MyQDialog(QDialogPrivate & arg0, QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(arg0, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialog::keyPressEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialog::closeEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialog::showEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialog::resizeEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(QContextMenuEvent *)
+// [-2] void contextMenuEvent(QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialog::contextMenuEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(QObject *, QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QDialog::eventFilter(arg0, arg1);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void adjustPosition(QWidget *)
+// [-2] void adjustPosition(QWidget *)
   virtual void adjustPosition(QWidget * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"adjustPosition", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialog::adjustPosition(arg0);
   }

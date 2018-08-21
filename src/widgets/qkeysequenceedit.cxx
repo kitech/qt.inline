@@ -25,49 +25,49 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
 // void QKeySequenceEdit(QKeySequenceEditPrivate &, QWidget *, Qt::WindowFlags)
 MyQKeySequenceEdit(QKeySequenceEditPrivate & d, QWidget * parent, QFlags<Qt::WindowType> f) : QKeySequenceEdit(d, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QKeySequenceEdit::event(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QKeySequenceEdit::keyPressEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QKeySequenceEdit::keyReleaseEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QKeySequenceEdit::timerEvent(arg0);
   }

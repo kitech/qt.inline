@@ -36,12 +36,12 @@ MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) 
 // void QTreeWidgetItem(const QTreeWidgetItem &)
 MyQTreeWidgetItem(const QTreeWidgetItem & other) : QTreeWidgetItem(other) {}
 // Protected Visibility=Default Availability=Available
-// void emitDataChanged()
+// [-2] void emitDataChanged()
   virtual void emitDataChanged() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QTreeWidgetItem::emitDataChanged();
   }

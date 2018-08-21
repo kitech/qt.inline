@@ -24,73 +24,73 @@ MyQMessageBox(QMessageBox::Icon icon, const QString & title, const QString & tex
 // void QMessageBox(const QString &, const QString &, QMessageBox::Icon, int, int, int, QWidget *, Qt::WindowFlags)
 MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) : QMessageBox(title, text, icon, button0, button1, button2, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QMessageBox::event(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMessageBox::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMessageBox::showEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMessageBox::closeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMessageBox::keyPressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMessageBox::changeEvent(event);
   }

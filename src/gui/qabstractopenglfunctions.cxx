@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAbstractOpenGLFunctions is pure virtual: false
+// QAbstractOpenGLFunctions is pure virtual: true
 // QAbstractOpenGLFunctions has virtual projected: true
 //  header block end
 
@@ -21,38 +21,38 @@ public:
 // void QAbstractOpenGLFunctions()
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // Protected Visibility=Default Availability=Available
-// bool isInitialized()
+// [1] bool isInitialized()
   virtual bool isInitialized() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isInitialized", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractOpenGLFunctions::isInitialized();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setOwningContext(const QOpenGLContext *)
+// [-2] void setOwningContext(const QOpenGLContext *)
   virtual void setOwningContext(const QOpenGLContext * context) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwningContext", &handled, 1, (uint64_t)context, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractOpenGLFunctions::setOwningContext(context);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QOpenGLContext * owningContext()
+// [8] QOpenGLContext * owningContext()
   virtual QOpenGLContext * owningContext() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"owningContext", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QOpenGLContext *)(irv);
-      // PointerPointerQOpenGLContext *
+      // Pointer Pointer QOpenGLContext *
     } else {
     return QAbstractOpenGLFunctions::owningContext();
   }

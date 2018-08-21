@@ -17,7 +17,7 @@
 class Q_DECL_EXPORT MyQAccessibleInterface : public QAccessibleInterface {
 public:
 // Protected virtual Visibility=Default Availability=Available
-// void ~QAccessibleInterface()
+// [-2] void ~QAccessibleInterface()
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available

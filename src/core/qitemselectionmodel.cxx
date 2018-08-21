@@ -24,12 +24,12 @@ MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelec
 // void QItemSelectionModel(QItemSelectionModelPrivate &, QAbstractItemModel *)
 MyQItemSelectionModel(QItemSelectionModelPrivate & dd, QAbstractItemModel * model) : QItemSelectionModel(dd, model) {}
 // Protected Visibility=Default Availability=Available
-// void emitSelectionChanged(const QItemSelection &, const QItemSelection &)
+// [-2] void emitSelectionChanged(const QItemSelection &, const QItemSelection &)
   virtual void emitSelectionChanged(const QItemSelection & newSelection, const QItemSelection & oldSelection) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitSelectionChanged", &handled, 2, (uint64_t)&newSelection, (uint64_t)&oldSelection, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemSelectionModel::emitSelectionChanged(newSelection, oldSelection);
   }

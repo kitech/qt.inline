@@ -20,36 +20,36 @@ public:
 // void QAnimationDriver(QObject *)
 MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // Protected Visibility=Default Availability=Available
-// void advanceAnimation(qint64)
+// [-2] void advanceAnimation(qint64)
   virtual void advanceAnimation(qint64 timeStep) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"advanceAnimation", &handled, 1, (uint64_t)timeStep, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAnimationDriver::advanceAnimation(timeStep);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void start()
+// [-2] void start()
   virtual void start() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAnimationDriver::start();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void stop()
+// [-2] void stop()
   virtual void stop() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAnimationDriver::stop();
   }

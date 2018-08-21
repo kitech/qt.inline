@@ -21,24 +21,24 @@ public:
 // void QGraphicsLayoutItem(QGraphicsLayoutItem *, bool)
 MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLayoutItem(parent, isLayout) {}
 // Protected Visibility=Default Availability=Available
-// void setGraphicsItem(QGraphicsItem *)
+// [-2] void setGraphicsItem(QGraphicsItem *)
   virtual void setGraphicsItem(QGraphicsItem * item) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setGraphicsItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsLayoutItem::setGraphicsItem(item);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setOwnedByLayout(bool)
+// [-2] void setOwnedByLayout(bool)
   virtual void setOwnedByLayout(bool ownedByLayout) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwnedByLayout", &handled, 1, (uint64_t)ownedByLayout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
   }
@@ -47,15 +47,15 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
 // void QGraphicsLayoutItem(QGraphicsLayoutItemPrivate &)
 MyQGraphicsLayoutItem(QGraphicsLayoutItemPrivate & dd) : QGraphicsLayoutItem(dd) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSizeF*)(irv);
-      // RecordRecordQSizeF
+      // Record Record QSizeF
     } else {
-    return QSizeF{};
+    return (QSizeF){};
   }
   }
 

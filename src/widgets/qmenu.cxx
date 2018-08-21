@@ -22,195 +22,195 @@ MyQMenu(QWidget * parent) : QMenu(parent) {}
 // void QMenu(const QString &, QWidget *)
 MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
 // Protected Visibility=Default Availability=Available
-// int columnCount()
+// [4] int columnCount()
   virtual int columnCount() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QMenu::columnCount();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::changeEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::keyPressEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::mouseReleaseEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::mousePressEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::mouseMoveEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::wheelEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void enterEvent(QEvent *)
+// [-2] void enterEvent(QEvent *)
   virtual void enterEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::enterEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void leaveEvent(QEvent *)
+// [-2] void leaveEvent(QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::leaveEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::hideEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::paintEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void actionEvent(QActionEvent *)
+// [-2] void actionEvent(QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"actionEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::actionEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::timerEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QMenu::event(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(bool)
+// [1] bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QMenu::focusNextPrevChild(next);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(QStyleOptionMenuItem *, const QAction *)
+// [-2] void initStyleOption(QStyleOptionMenuItem *, const QAction *)
   virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMenu::initStyleOption(option, action);
   }

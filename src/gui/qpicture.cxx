@@ -24,13 +24,13 @@ MyQPicture(const QPicture & arg0) : QPicture(arg0) {}
 // void QPicture(QPicturePrivate &)
 MyQPicture(QPicturePrivate & data) : QPicture(data) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric m) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)m, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QPicture::metric(m);
   }

@@ -20,26 +20,26 @@ public:
 // void QApplication(int &, char **, int)
 MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg2) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QApplication::event(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool compressEvent(QEvent *, QObject *, QPostEventList *)
+// [1] bool compressEvent(QEvent *, QObject *, QPostEventList *)
   virtual bool compressEvent(QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compressEvent", &handled, 3, (uint64_t)arg0, (uint64_t)receiver, (uint64_t)arg2, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QApplication::compressEvent(arg0, receiver, arg2);
   }

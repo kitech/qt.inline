@@ -20,24 +20,24 @@ public:
 // void QGraphicsItemAnimation(QObject *)
 MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void beforeAnimationStep(qreal)
+// [-2] void beforeAnimationStep(qreal)
   virtual void beforeAnimationStep(qreal step) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beforeAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsItemAnimation::beforeAnimationStep(step);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void afterAnimationStep(qreal)
+// [-2] void afterAnimationStep(qreal)
   virtual void afterAnimationStep(qreal step) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"afterAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsItemAnimation::afterAnimationStep(step);
   }

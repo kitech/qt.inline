@@ -8,7 +8,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QAbstractSlider is pure virtual: false
+// QAbstractSlider is pure virtual: true
 // QAbstractSlider has virtual projected: true
 //  header block end
 
@@ -20,98 +20,98 @@ public:
 // void QAbstractSlider(QWidget *)
 MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractSlider::event(e);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setRepeatAction(QAbstractSlider::SliderAction, int, int)
+// [-2] void setRepeatAction(QAbstractSlider::SliderAction, int, int)
   virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRepeatAction", &handled, 3, (uint64_t)action, (uint64_t)thresholdTime, (uint64_t)repeatTime, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSlider::setRepeatAction(action, thresholdTime, repeatTime);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QAbstractSlider::SliderAction repeatAction()
+// [4] QAbstractSlider::SliderAction repeatAction()
   virtual QAbstractSlider::SliderAction repeatAction() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"repeatAction", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QAbstractSlider::SliderAction)(int)(irv);
-      // EnumEnumQAbstractSlider::SliderAction
+      // Enum Enum QAbstractSlider::SliderAction
     } else {
     return QAbstractSlider::repeatAction();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void sliderChange(QAbstractSlider::SliderChange)
+// [-2] void sliderChange(QAbstractSlider::SliderChange)
   virtual void sliderChange(QAbstractSlider::SliderChange change) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSlider::sliderChange(change);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSlider::keyPressEvent(ev);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSlider::timerEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSlider::wheelEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSlider::changeEvent(e);
   }

@@ -20,13 +20,13 @@ public:
 // void QMimeData()
 MyQMimeData() : QMimeData() {}
 // Protected virtual Visibility=Default Availability=Available
-// QVariant retrieveData(const QString &, QVariant::Type)
+// [16] QVariant retrieveData(const QString &, QVariant::Type)
   virtual QVariant retrieveData(const QString & mimetype, QVariant::Type preferredType) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"retrieveData", &handled, 2, (uint64_t)&mimetype, (uint64_t)preferredType, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QMimeData::retrieveData(mimetype, preferredType);
   }

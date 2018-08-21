@@ -19,12 +19,12 @@ class Q_DECL_EXPORT MyQGraphicsObject : public QGraphicsObject {
 public:
   virtual ~MyQGraphicsObject() {}
 // Protected Visibility=Default Availability=Available
-// void updateMicroFocus()
+// [-2] void updateMicroFocus()
   virtual void updateMicroFocus() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateMicroFocus", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsObject::updateMicroFocus();
   }
@@ -33,13 +33,13 @@ public:
 // void QGraphicsObject(QGraphicsItemPrivate &, QGraphicsItem *)
 MyQGraphicsObject(QGraphicsItemPrivate & dd, QGraphicsItem * parent) : QGraphicsObject(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * ev) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsObject::event(ev);
   }

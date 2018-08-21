@@ -20,180 +20,180 @@ public:
 // void QAbstractItemView(QWidget *)
 MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
   virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::dataChanged(topLeft, bottomRight, roles);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void rowsInserted(const QModelIndex &, int, int)
+// [-2] void rowsInserted(const QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::rowsInserted(parent, start, end);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void rowsAboutToBeRemoved(const QModelIndex &, int, int)
+// [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
   virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::rowsAboutToBeRemoved(parent, start, end);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void selectionChanged(const QItemSelection &, const QItemSelection &)
+// [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::selectionChanged(selected, deselected);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void currentChanged(const QModelIndex &, const QModelIndex &)
+// [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::currentChanged(current, previous);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateEditorData()
+// [-2] void updateEditorData()
   virtual void updateEditorData() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateEditorData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::updateEditorData();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateEditorGeometries()
+// [-2] void updateEditorGeometries()
   virtual void updateEditorGeometries() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateEditorGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::updateEditorGeometries();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateGeometries()
+// [-2] void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::updateGeometries();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void verticalScrollbarAction(int)
+// [-2] void verticalScrollbarAction(int)
   virtual void verticalScrollbarAction(int action) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalScrollbarAction", &handled, 1, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::verticalScrollbarAction(action);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void horizontalScrollbarAction(int)
+// [-2] void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalScrollbarAction", &handled, 1, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::horizontalScrollbarAction(action);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void verticalScrollbarValueChanged(int)
+// [-2] void verticalScrollbarValueChanged(int)
   virtual void verticalScrollbarValueChanged(int value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalScrollbarValueChanged", &handled, 1, (uint64_t)value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::verticalScrollbarValueChanged(value);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void horizontalScrollbarValueChanged(int)
+// [-2] void horizontalScrollbarValueChanged(int)
   virtual void horizontalScrollbarValueChanged(int value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalScrollbarValueChanged", &handled, 1, (uint64_t)value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::horizontalScrollbarValueChanged(value);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEditor(QWidget *, QAbstractItemDelegate::EndEditHint)
+// [-2] void closeEditor(QWidget *, QAbstractItemDelegate::EndEditHint)
   virtual void closeEditor(QWidget * editor, QAbstractItemDelegate::EndEditHint hint) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEditor", &handled, 2, (uint64_t)editor, (uint64_t)hint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::closeEditor(editor, hint);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void commitData(QWidget *)
+// [-2] void commitData(QWidget *)
   virtual void commitData(QWidget * editor) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"commitData", &handled, 1, (uint64_t)editor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::commitData(editor);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void editorDestroyed(QObject *)
+// [-2] void editorDestroyed(QObject *)
   virtual void editorDestroyed(QObject * editor) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"editorDestroyed", &handled, 1, (uint64_t)editor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::editorDestroyed(editor);
   }
@@ -202,546 +202,546 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 // void QAbstractItemView(QAbstractItemViewPrivate &, QWidget *)
 MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstractItemView(arg0, parent) {}
 // Protected Visibility=Default Availability=Available
-// void setHorizontalStepsPerItem(int)
+// [-2] void setHorizontalStepsPerItem(int)
   virtual void setHorizontalStepsPerItem(int steps) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setHorizontalStepsPerItem", &handled, 1, (uint64_t)steps, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::setHorizontalStepsPerItem(steps);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// int horizontalStepsPerItem()
+// [4] int horizontalStepsPerItem()
   virtual int horizontalStepsPerItem() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalStepsPerItem", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QAbstractItemView::horizontalStepsPerItem();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setVerticalStepsPerItem(int)
+// [-2] void setVerticalStepsPerItem(int)
   virtual void setVerticalStepsPerItem(int steps) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVerticalStepsPerItem", &handled, 1, (uint64_t)steps, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::setVerticalStepsPerItem(steps);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// int verticalStepsPerItem()
+// [4] int verticalStepsPerItem()
   virtual int verticalStepsPerItem() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalStepsPerItem", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QAbstractItemView::verticalStepsPerItem();
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+// [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
-      // RecordRecordQModelIndex
+      // Record Record QModelIndex
     } else {
-    return QModelIndex{};
+    return (QModelIndex){};
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// int horizontalOffset()
+// [4] int horizontalOffset()
   virtual int horizontalOffset() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
-    return int{};
+    return (int){};
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// int verticalOffset()
+// [4] int verticalOffset()
   virtual int verticalOffset() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
-    return int{};
+    return (int){};
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// bool isIndexHidden(const QModelIndex &)
+// [1] bool isIndexHidden(const QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
-    return bool{};
+    return (bool){};
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
+// [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     // QAbstractItemView::setSelection(rect, command);
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// QRegion visualRegionForSelection(const QItemSelection &)
+// [8] QRegion visualRegionForSelection(const QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRegion*)(irv);
-      // RecordRecordQRegion
+      // Record Record QRegion
     } else {
-    return QRegion{};
+    return (QRegion){};
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QModelIndexList selectedIndexes()
+// [8] QModelIndexList selectedIndexes()
   virtual QModelIndexList selectedIndexes() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndexList*)(irv);
-      // TypedefRecordQList<QModelIndex>
+      // Typedef Record QList<QModelIndex>
     } else {
     return QAbstractItemView::selectedIndexes();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool edit(const QModelIndex &, QAbstractItemView::EditTrigger, QEvent *)
+// [1] bool edit(const QModelIndex &, QAbstractItemView::EditTrigger, QEvent *)
   virtual bool edit(const QModelIndex & index, QAbstractItemView::EditTrigger trigger, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"edit", &handled, 3, (uint64_t)&index, (uint64_t)trigger, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractItemView::edit(index, trigger, event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QItemSelectionModel::SelectionFlags selectionCommand(const QModelIndex &, const QEvent *)
+// [4] QItemSelectionModel::SelectionFlags selectionCommand(const QModelIndex &, const QEvent *)
   virtual QItemSelectionModel::SelectionFlags selectionCommand(const QModelIndex & index, const QEvent * event) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectionCommand", &handled, 2, (uint64_t)&index, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QItemSelectionModel::SelectionFlags)(int)(irv);
-      // ElaboratedRecordQFlags<QItemSelectionModel::SelectionFlag>
+      // Elaborated Record QFlags<QItemSelectionModel::SelectionFlag>
     } else {
     return QAbstractItemView::selectionCommand(index, event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void startDrag(Qt::DropActions)
+// [-2] void startDrag(Qt::DropActions)
   virtual void startDrag(QFlags<Qt::DropAction> supportedActions) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startDrag", &handled, 1, (uint64_t)supportedActions, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::startDrag(supportedActions);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QStyleOptionViewItem viewOptions()
+// [192] QStyleOptionViewItem viewOptions()
   virtual QStyleOptionViewItem viewOptions() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewOptions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStyleOptionViewItem*)(irv);
-      // RecordRecordQStyleOptionViewItem
+      // Record Record QStyleOptionViewItem
     } else {
     return QAbstractItemView::viewOptions();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QAbstractItemView::State state()
+// [4] QAbstractItemView::State state()
   virtual QAbstractItemView::State state() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QAbstractItemView::State)(int)(irv);
-      // EnumEnumQAbstractItemView::State
+      // Enum Enum QAbstractItemView::State
     } else {
     return QAbstractItemView::state();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setState(QAbstractItemView::State)
+// [-2] void setState(QAbstractItemView::State)
   virtual void setState(QAbstractItemView::State state) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::setState(state);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void scheduleDelayedItemsLayout()
+// [-2] void scheduleDelayedItemsLayout()
   virtual void scheduleDelayedItemsLayout() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scheduleDelayedItemsLayout", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::scheduleDelayedItemsLayout();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void executeDelayedItemsLayout()
+// [-2] void executeDelayedItemsLayout()
   virtual void executeDelayedItemsLayout() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"executeDelayedItemsLayout", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::executeDelayedItemsLayout();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setDirtyRegion(const QRegion &)
+// [-2] void setDirtyRegion(const QRegion &)
   virtual void setDirtyRegion(const QRegion & region) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setDirtyRegion", &handled, 1, (uint64_t)&region, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::setDirtyRegion(region);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void scrollDirtyRegion(int, int)
+// [-2] void scrollDirtyRegion(int, int)
   virtual void scrollDirtyRegion(int dx, int dy) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollDirtyRegion", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::scrollDirtyRegion(dx, dy);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QPoint dirtyRegionOffset()
+// [8] QPoint dirtyRegionOffset()
   virtual QPoint dirtyRegionOffset() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dirtyRegionOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QPoint*)(irv);
-      // RecordRecordQPoint
+      // Record Record QPoint
     } else {
     return QAbstractItemView::dirtyRegionOffset();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void startAutoScroll()
+// [-2] void startAutoScroll()
   virtual void startAutoScroll() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startAutoScroll", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::startAutoScroll();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void stopAutoScroll()
+// [-2] void stopAutoScroll()
   virtual void stopAutoScroll() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stopAutoScroll", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::stopAutoScroll();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void doAutoScroll()
+// [-2] void doAutoScroll()
   virtual void doAutoScroll() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doAutoScroll", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::doAutoScroll();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(bool)
+// [1] bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractItemView::focusNextPrevChild(next);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractItemView::event(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool viewportEvent(QEvent *)
+// [1] bool viewportEvent(QEvent *)
   virtual bool viewportEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractItemView::viewportEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::mousePressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::mouseMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::mouseReleaseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(QMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::mouseDoubleClickEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragEnterEvent(QDragEnterEvent *)
+// [-2] void dragEnterEvent(QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::dragEnterEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(QDragMoveEvent *)
+// [-2] void dragMoveEvent(QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::dragMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(QDragLeaveEvent *)
+// [-2] void dragLeaveEvent(QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::dragLeaveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(QDropEvent *)
+// [-2] void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::dropEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::focusInEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::focusOutEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::keyPressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::timerEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void inputMethodEvent(QInputMethodEvent *)
+// [-2] void inputMethodEvent(QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractItemView::inputMethodEvent(event);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
+// [4] QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
   virtual QAbstractItemView::DropIndicatorPosition dropIndicatorPosition() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropIndicatorPosition", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QAbstractItemView::DropIndicatorPosition)(int)(irv);
-      // EnumEnumQAbstractItemView::DropIndicatorPosition
+      // Enum Enum QAbstractItemView::DropIndicatorPosition
     } else {
     return QAbstractItemView::dropIndicatorPosition();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSize viewportSizeHint()
+// [8] QSize viewportSizeHint()
   virtual QSize viewportSizeHint() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
-      // RecordRecordQSize
+      // Record Record QSize
     } else {
     return QAbstractItemView::viewportSizeHint();
   }

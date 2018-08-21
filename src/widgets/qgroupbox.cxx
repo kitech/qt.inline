@@ -22,121 +22,121 @@ MyQGroupBox(QWidget * parent) : QGroupBox(parent) {}
 // void QGroupBox(const QString &, QWidget *)
 MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGroupBox::event(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void childEvent(QChildEvent *)
+// [-2] void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::childEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::paintEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::focusInEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::changeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::mousePressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::mouseMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::mouseReleaseEvent(event);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(QStyleOptionGroupBox *)
+// [-2] void initStyleOption(QStyleOptionGroupBox *)
   virtual void initStyleOption(QStyleOptionGroupBox * option) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGroupBox::initStyleOption(option);
   }

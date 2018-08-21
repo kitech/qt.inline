@@ -21,13 +21,13 @@ public:
 // void QNmeaPositionInfoSource(QNmeaPositionInfoSource::UpdateMode, QObject *)
 MyQNmeaPositionInfoSource(QNmeaPositionInfoSource::UpdateMode updateMode, QObject * parent) : QNmeaPositionInfoSource(updateMode, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool parsePosInfoFromNmeaData(const char *, int, QGeoPositionInfo *, bool *)
+// [1] bool parsePosInfoFromNmeaData(const char *, int, QGeoPositionInfo *, bool *)
   virtual bool parsePosInfoFromNmeaData(const char * data, int size, QGeoPositionInfo * posInfo, bool * hasFix) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parsePosInfoFromNmeaData", &handled, 4, (uint64_t)data, (uint64_t)size, (uint64_t)posInfo, (uint64_t)hasFix, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QNmeaPositionInfoSource::parsePosInfoFromNmeaData(data, size, posInfo, hasFix);
   }

@@ -20,50 +20,50 @@ public:
 // void QProcess(QObject *)
 MyQProcess(QObject * parent) : QProcess(parent) {}
 // Protected Visibility=Default Availability=Available
-// void setProcessState(QProcess::ProcessState)
+// [-2] void setProcessState(QProcess::ProcessState)
   virtual void setProcessState(QProcess::ProcessState state) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setProcessState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QProcess::setProcessState(state);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setupChildProcess()
+// [-2] void setupChildProcess()
   virtual void setupChildProcess() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setupChildProcess", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QProcess::setupChildProcess();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readData(char *, qint64)
+// [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QProcess::readData(data, maxlen);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QProcess::writeData(data, len_);
   }

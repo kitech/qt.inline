@@ -27,25 +27,25 @@ MyQDialogButtonBox(QFlags<QDialogButtonBox::StandardButton> buttons, QWidget * p
 // void QDialogButtonBox(QDialogButtonBox::StandardButtons, Qt::Orientation, QWidget *)
 MyQDialogButtonBox(QFlags<QDialogButtonBox::StandardButton> buttons, Qt::Orientation orientation, QWidget * parent) : QDialogButtonBox(buttons, orientation, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDialogButtonBox::changeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QDialogButtonBox::event(event);
   }

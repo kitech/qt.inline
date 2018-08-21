@@ -23,49 +23,49 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
 // void QAbstractAnimation(QAbstractAnimationPrivate &, QObject *)
 MyQAbstractAnimation(QAbstractAnimationPrivate & dd, QObject * parent) : QAbstractAnimation(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractAnimation::event(event);
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void updateCurrentTime(int)
+// [-2] void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCurrentTime", &handled, 1, (uint64_t)currentTime, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     // QAbstractAnimation::updateCurrentTime(currentTime);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
+// [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractAnimation::updateState(newState, oldState);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateDirection(QAbstractAnimation::Direction)
+// [-2] void updateDirection(QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateDirection", &handled, 1, (uint64_t)direction, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractAnimation::updateDirection(direction);
   }

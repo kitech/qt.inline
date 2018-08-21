@@ -25,38 +25,38 @@ MyQGraphicsEllipseItem(const QRectF & rect, QGraphicsItem * parent) : QGraphicsE
 // void QGraphicsEllipseItem(qreal, qreal, qreal, qreal, QGraphicsItem *)
 MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) : QGraphicsEllipseItem(x, y, w, h, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool supportsExtension(QGraphicsItem::Extension)
+// [1] bool supportsExtension(QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsEllipseItem::supportsExtension(extension);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setExtension(QGraphicsItem::Extension, const QVariant &)
+// [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsEllipseItem::setExtension(extension, variant);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant extension(const QVariant &)
+// [16] QVariant extension(const QVariant &)
   virtual QVariant extension(const QVariant & variant) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QGraphicsEllipseItem::extension(variant);
   }

@@ -8,7 +8,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QAbstractSpinBox is pure virtual: false
+// QAbstractSpinBox is pure virtual: true
 // QAbstractSpinBox has virtual projected: true
 //  header block end
 
@@ -20,242 +20,242 @@ public:
 // void QAbstractSpinBox(QWidget *)
 MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::keyPressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::keyReleaseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::wheelEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::focusInEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::focusOutEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(QContextMenuEvent *)
+// [-2] void contextMenuEvent(QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::contextMenuEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::changeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::closeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::hideEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::mousePressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::mouseReleaseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::mouseMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::timerEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::paintEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::showEvent(event);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(QStyleOptionSpinBox *)
+// [-2] void initStyleOption(QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::initStyleOption(option);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QLineEdit * lineEdit()
+// [8] QLineEdit * lineEdit()
   virtual QLineEdit * lineEdit() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"lineEdit", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QLineEdit *)(irv);
-      // PointerPointerQLineEdit *
+      // Pointer Pointer QLineEdit *
     } else {
     return QAbstractSpinBox::lineEdit();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setLineEdit(QLineEdit *)
+// [-2] void setLineEdit(QLineEdit *)
   virtual void setLineEdit(QLineEdit * edit) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setLineEdit", &handled, 1, (uint64_t)edit, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSpinBox::setLineEdit(edit);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QAbstractSpinBox::StepEnabled stepEnabled()
+// [4] QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stepEnabled", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QAbstractSpinBox::StepEnabled)(int)(irv);
-      // TypedefRecordQFlags<QAbstractSpinBox::StepEnabledFlag>
+      // Typedef Record QFlags<QAbstractSpinBox::StepEnabledFlag>
     } else {
     return QAbstractSpinBox::stepEnabled();
   }

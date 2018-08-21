@@ -21,24 +21,24 @@ public:
 // void QNetworkSession(const QNetworkConfiguration &, QObject *)
 MyQNetworkSession(const QNetworkConfiguration & connConfig, QObject * parent) : QNetworkSession(connConfig, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void connectNotify(const QMetaMethod &)
+// [-2] void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QNetworkSession::connectNotify(signal);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void disconnectNotify(const QMetaMethod &)
+// [-2] void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QNetworkSession::disconnectNotify(signal);
   }

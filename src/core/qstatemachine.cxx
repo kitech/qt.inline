@@ -23,85 +23,85 @@ MyQStateMachine(QObject * parent) : QStateMachine(parent) {}
 // void QStateMachine(QState::ChildMode, QObject *)
 MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(childMode, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void onEntry(QEvent *)
+// [-2] void onEntry(QEvent *)
   virtual void onEntry(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStateMachine::onEntry(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void onExit(QEvent *)
+// [-2] void onExit(QEvent *)
   virtual void onExit(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStateMachine::onExit(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void beginSelectTransitions(QEvent *)
+// [-2] void beginSelectTransitions(QEvent *)
   virtual void beginSelectTransitions(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginSelectTransitions", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStateMachine::beginSelectTransitions(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void endSelectTransitions(QEvent *)
+// [-2] void endSelectTransitions(QEvent *)
   virtual void endSelectTransitions(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endSelectTransitions", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStateMachine::endSelectTransitions(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void beginMicrostep(QEvent *)
+// [-2] void beginMicrostep(QEvent *)
   virtual void beginMicrostep(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMicrostep", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStateMachine::beginMicrostep(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void endMicrostep(QEvent *)
+// [-2] void endMicrostep(QEvent *)
   virtual void endMicrostep(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMicrostep", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStateMachine::endMicrostep(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QStateMachine::event(e);
   }

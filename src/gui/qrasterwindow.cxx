@@ -21,26 +21,26 @@ public:
 // void QRasterWindow(QWindow *)
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QRasterWindow::metric(metric);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QPaintDevice * redirected(QPoint *)
+// [8] QPaintDevice * redirected(QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPaintDevice *)(irv);
-      // PointerPointerQPaintDevice *
+      // Pointer Pointer QPaintDevice *
     } else {
     return QRasterWindow::redirected(arg0);
   }

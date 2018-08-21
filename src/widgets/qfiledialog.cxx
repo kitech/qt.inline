@@ -24,36 +24,36 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
 // void QFileDialog(const QFileDialogArgs &)
 MyQFileDialog(const QFileDialogArgs & args) : QFileDialog(args) {}
 // Protected virtual Visibility=Default Availability=Available
-// void done(int)
+// [-2] void done(int)
   virtual void done(int result) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFileDialog::done(result);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void accept()
+// [-2] void accept()
   virtual void accept() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"accept", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFileDialog::accept();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFileDialog::changeEvent(e);
   }

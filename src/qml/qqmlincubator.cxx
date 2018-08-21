@@ -20,24 +20,24 @@ public:
 // void QQmlIncubator(QQmlIncubator::IncubationMode)
 MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
 // Protected virtual Visibility=Default Availability=Available
-// void statusChanged(QQmlIncubator::Status)
+// [-2] void statusChanged(QQmlIncubator::Status)
   virtual void statusChanged(QQmlIncubator::Status arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"statusChanged", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QQmlIncubator::statusChanged(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setInitialState(QObject *)
+// [-2] void setInitialState(QObject *)
   virtual void setInitialState(QObject * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setInitialState", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QQmlIncubator::setInitialState(arg0);
   }

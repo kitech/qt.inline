@@ -21,367 +21,367 @@ public:
 // void QGraphicsProxyWidget(QGraphicsItem *, Qt::WindowFlags)
 MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGraphicsProxyWidget(parent, wFlags) {}
 // Protected virtual Visibility=Default Availability=Available
-// QVariant itemChange(QGraphicsItem::GraphicsItemChange, const QVariant &)
+// [16] QVariant itemChange(QGraphicsItem::GraphicsItemChange, const QVariant &)
   virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemChange", &handled, 2, (uint64_t)change, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QGraphicsProxyWidget::itemChange(change, value);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsProxyWidget::event(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(QObject *, QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsProxyWidget::eventFilter(object, event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::showEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::hideEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
+// [-2] void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
   virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::contextMenuEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragEnterEvent(QGraphicsSceneDragDropEvent *)
+// [-2] void dragEnterEvent(QGraphicsSceneDragDropEvent *)
   virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::dragEnterEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
+// [-2] void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
   virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::dragLeaveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(QGraphicsSceneDragDropEvent *)
+// [-2] void dragMoveEvent(QGraphicsSceneDragDropEvent *)
   virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::dragMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(QGraphicsSceneDragDropEvent *)
+// [-2] void dropEvent(QGraphicsSceneDragDropEvent *)
   virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::dropEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverEnterEvent(QGraphicsSceneHoverEvent *)
+// [-2] void hoverEnterEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::hoverEnterEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
+// [-2] void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::hoverLeaveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverMoveEvent(QGraphicsSceneHoverEvent *)
+// [-2] void hoverMoveEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::hoverMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void grabMouseEvent(QEvent *)
+// [-2] void grabMouseEvent(QEvent *)
   virtual void grabMouseEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"grabMouseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::grabMouseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void ungrabMouseEvent(QEvent *)
+// [-2] void ungrabMouseEvent(QEvent *)
   virtual void ungrabMouseEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"ungrabMouseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::ungrabMouseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QGraphicsSceneMouseEvent *)
+// [-2] void mouseMoveEvent(QGraphicsSceneMouseEvent *)
   virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::mouseMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QGraphicsSceneMouseEvent *)
+// [-2] void mousePressEvent(QGraphicsSceneMouseEvent *)
   virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::mousePressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
+// [-2] void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
   virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::mouseReleaseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
+// [-2] void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
   virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::mouseDoubleClickEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(QGraphicsSceneWheelEvent *)
+// [-2] void wheelEvent(QGraphicsSceneWheelEvent *)
   virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::wheelEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::keyPressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyReleaseEvent(QKeyEvent *)
+// [-2] void keyReleaseEvent(QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::keyReleaseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::focusInEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::focusOutEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(bool)
+// [1] bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsProxyWidget::focusNextPrevChild(next);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant inputMethodQuery(Qt::InputMethodQuery)
+// [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
   virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodQuery", &handled, 1, (uint64_t)query, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QGraphicsProxyWidget::inputMethodQuery(query);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void inputMethodEvent(QInputMethodEvent *)
+// [-2] void inputMethodEvent(QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::inputMethodEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSizeF*)(irv);
-      // RecordRecordQSizeF
+      // Record Record QSizeF
     } else {
     return QGraphicsProxyWidget::sizeHint(which, constraint);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QGraphicsSceneResizeEvent *)
+// [-2] void resizeEvent(QGraphicsSceneResizeEvent *)
   virtual void resizeEvent(QGraphicsSceneResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsProxyWidget::resizeEvent(event);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QGraphicsProxyWidget * newProxyWidget(const QWidget *)
+// [8] QGraphicsProxyWidget * newProxyWidget(const QWidget *)
   virtual QGraphicsProxyWidget * newProxyWidget(const QWidget * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"newProxyWidget", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QGraphicsProxyWidget *)(irv);
-      // PointerPointerQGraphicsProxyWidget *
+      // Pointer Pointer QGraphicsProxyWidget *
     } else {
     return QGraphicsProxyWidget::newProxyWidget(arg0);
   }

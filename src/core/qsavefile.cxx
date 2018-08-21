@@ -25,13 +25,13 @@ MyQSaveFile(QObject * parent) : QSaveFile(parent) {}
 // void QSaveFile(const QString &, QObject *)
 MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QSaveFile::writeData(data, len_);
   }

@@ -21,12 +21,12 @@ public:
 // void QGraphicsOpacityEffect(QObject *)
 MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void draw(QPainter *)
+// [-2] void draw(QPainter *)
   virtual void draw(QPainter * painter) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsOpacityEffect::draw(painter);
   }

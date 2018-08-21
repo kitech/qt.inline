@@ -21,50 +21,50 @@ public:
 // void QWizardPage(QWidget *)
 MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
 // Protected Visibility=Default Availability=Available
-// void setField(const QString &, const QVariant &)
+// [-2] void setField(const QString &, const QVariant &)
   virtual void setField(const QString & name, const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setField", &handled, 2, (uint64_t)&name, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QWizardPage::setField(name, value);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QVariant field(const QString &)
+// [16] QVariant field(const QString &)
   virtual QVariant field(const QString & name) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"field", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QWizardPage::field(name);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void registerField(const QString &, QWidget *, const char *, const char *)
+// [-2] void registerField(const QString &, QWidget *, const char *, const char *)
   virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerField", &handled, 4, (uint64_t)&name, (uint64_t)widget, (uint64_t)property, (uint64_t)changedSignal, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QWizardPage::registerField(name, widget, property, changedSignal);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QWizard * wizard()
+// [8] QWizard * wizard()
   virtual QWizard * wizard() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wizard", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QWizard *)(irv);
-      // PointerPointerQWizard *
+      // Pointer Pointer QWizard *
     } else {
     return QWizardPage::wizard();
   }

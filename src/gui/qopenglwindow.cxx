@@ -23,110 +23,110 @@ MyQOpenGLWindow(QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent) 
 // void QOpenGLWindow(QOpenGLContext *, QOpenGLWindow::UpdateBehavior, QWindow *)
 MyQOpenGLWindow(QOpenGLContext * shareContext, QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent) : QOpenGLWindow(shareContext, updateBehavior, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void initializeGL()
+// [-2] void initializeGL()
   virtual void initializeGL() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeGL", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::initializeGL();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeGL(int, int)
+// [-2] void resizeGL(int, int)
   virtual void resizeGL(int w, int h) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeGL", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::resizeGL(w, h);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintGL()
+// [-2] void paintGL()
   virtual void paintGL() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintGL", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::paintGL();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintUnderGL()
+// [-2] void paintUnderGL()
   virtual void paintUnderGL() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintUnderGL", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::paintUnderGL();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintOverGL()
+// [-2] void paintOverGL()
   virtual void paintOverGL() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintOverGL", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::paintOverGL();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::paintEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QOpenGLWindow::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int metric(QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QOpenGLWindow::metric(metric);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QPaintDevice * redirected(QPoint *)
+// [8] QPaintDevice * redirected(QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPaintDevice *)(irv);
-      // PointerPointerQPaintDevice *
+      // Pointer Pointer QPaintDevice *
     } else {
     return QOpenGLWindow::redirected(arg0);
   }

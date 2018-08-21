@@ -21,25 +21,25 @@ public:
 // void QQuickFramebufferObject(QQuickItem *)
 MyQQuickFramebufferObject(QQuickItem * parent) : QQuickFramebufferObject(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void geometryChanged(const QRectF &, const QRectF &)
+// [-2] void geometryChanged(const QRectF &, const QRectF &)
   virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QQuickFramebufferObject::geometryChanged(newGeometry, oldGeometry);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
+// [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
   virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updatePaintNode", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QSGNode *)(irv);
-      // PointerPointerQSGNode *
+      // Pointer Pointer QSGNode *
     } else {
     return QQuickFramebufferObject::updatePaintNode(arg0, arg1);
   }

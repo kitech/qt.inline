@@ -23,102 +23,102 @@ MyQWebEnginePage(QObject * parent) : QWebEnginePage(parent) {}
 // void QWebEnginePage(QWebEngineProfile *, QObject *)
 MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage(profile, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// QWebEnginePage * createWindow(QWebEnginePage::WebWindowType)
+// [8] QWebEnginePage * createWindow(QWebEnginePage::WebWindowType)
   virtual QWebEnginePage * createWindow(QWebEnginePage::WebWindowType type_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createWindow", &handled, 1, (uint64_t)type_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QWebEnginePage *)(irv);
-      // PointerPointerQWebEnginePage *
+      // Pointer Pointer QWebEnginePage *
     } else {
     return QWebEnginePage::createWindow(type_);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QStringList chooseFiles(QWebEnginePage::FileSelectionMode, const QStringList &, const QStringList &)
+// [8] QStringList chooseFiles(QWebEnginePage::FileSelectionMode, const QStringList &, const QStringList &)
   virtual QStringList chooseFiles(QWebEnginePage::FileSelectionMode mode, const QStringList & oldFiles, const QStringList & acceptedMimeTypes) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"chooseFiles", &handled, 3, (uint64_t)mode, (uint64_t)&oldFiles, (uint64_t)&acceptedMimeTypes, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
-      // RecordRecordQStringList
+      // Record Record QStringList
     } else {
     return QWebEnginePage::chooseFiles(mode, oldFiles, acceptedMimeTypes);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void javaScriptAlert(const QUrl &, const QString &)
+// [-2] void javaScriptAlert(const QUrl &, const QString &)
   virtual void javaScriptAlert(const QUrl & securityOrigin, const QString & msg) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"javaScriptAlert", &handled, 2, (uint64_t)&securityOrigin, (uint64_t)&msg, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QWebEnginePage::javaScriptAlert(securityOrigin, msg);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool javaScriptConfirm(const QUrl &, const QString &)
+// [1] bool javaScriptConfirm(const QUrl &, const QString &)
   virtual bool javaScriptConfirm(const QUrl & securityOrigin, const QString & msg) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"javaScriptConfirm", &handled, 2, (uint64_t)&securityOrigin, (uint64_t)&msg, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QWebEnginePage::javaScriptConfirm(securityOrigin, msg);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool javaScriptPrompt(const QUrl &, const QString &, const QString &, QString *)
+// [1] bool javaScriptPrompt(const QUrl &, const QString &, const QString &, QString *)
   virtual bool javaScriptPrompt(const QUrl & securityOrigin, const QString & msg, const QString & defaultValue, QString * result) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"javaScriptPrompt", &handled, 4, (uint64_t)&securityOrigin, (uint64_t)&msg, (uint64_t)&defaultValue, (uint64_t)result, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QWebEnginePage::javaScriptPrompt(securityOrigin, msg, defaultValue, result);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel, const QString &, int, const QString &)
+// [-2] void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel, const QString &, int, const QString &)
   virtual void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel level, const QString & message, int lineNumber, const QString & sourceID) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"javaScriptConsoleMessage", &handled, 4, (uint64_t)level, (uint64_t)&message, (uint64_t)lineNumber, (uint64_t)&sourceID, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QWebEnginePage::javaScriptConsoleMessage(level, message, lineNumber, sourceID);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool certificateError(const QWebEngineCertificateError &)
+// [1] bool certificateError(const QWebEngineCertificateError &)
   virtual bool certificateError(const QWebEngineCertificateError & certificateError) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"certificateError", &handled, 1, (uint64_t)&certificateError, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QWebEnginePage::certificateError(certificateError);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool acceptNavigationRequest(const QUrl &, QWebEnginePage::NavigationType, bool)
+// [1] bool acceptNavigationRequest(const QUrl &, QWebEnginePage::NavigationType, bool)
   virtual bool acceptNavigationRequest(const QUrl & url, QWebEnginePage::NavigationType type_, bool isMainFrame) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"acceptNavigationRequest", &handled, 3, (uint64_t)&url, (uint64_t)type_, (uint64_t)isMainFrame, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QWebEnginePage::acceptNavigationRequest(url, type_, isMainFrame);
   }

@@ -22,12 +22,12 @@ MyQGridLayout(QWidget * parent) : QGridLayout(parent) {}
 // void QGridLayout()
 MyQGridLayout() : QGridLayout() {}
 // Protected virtual Visibility=Default Availability=Available
-// void addItem(QLayoutItem *)
+// [-2] void addItem(QLayoutItem *)
   virtual void addItem(QLayoutItem * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addItem", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGridLayout::addItem(arg0);
   }

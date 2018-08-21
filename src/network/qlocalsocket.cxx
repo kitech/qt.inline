@@ -21,26 +21,26 @@ public:
 // void QLocalSocket(QObject *)
 MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readData(char *, qint64)
+// [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * arg0, qint64 arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QLocalSocket::readData(arg0, arg1);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * arg0, qint64 arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QLocalSocket::writeData(arg0, arg1);
   }

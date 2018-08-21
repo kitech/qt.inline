@@ -22,86 +22,86 @@ MyQCheckBox(QWidget * parent) : QCheckBox(parent) {}
 // void QCheckBox(const QString &, QWidget *)
 MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QCheckBox::event(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool hitButton(const QPoint &)
+// [1] bool hitButton(const QPoint &)
   virtual bool hitButton(const QPoint & pos) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hitButton", &handled, 1, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QCheckBox::hitButton(pos);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void checkStateSet()
+// [-2] void checkStateSet()
   virtual void checkStateSet() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"checkStateSet", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCheckBox::checkStateSet();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void nextCheckState()
+// [-2] void nextCheckState()
   virtual void nextCheckState() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nextCheckState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCheckBox::nextCheckState();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCheckBox::paintEvent(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCheckBox::mouseMoveEvent(arg0);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(QStyleOptionButton *)
+// [-2] void initStyleOption(QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * option) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCheckBox::initStyleOption(option);
   }

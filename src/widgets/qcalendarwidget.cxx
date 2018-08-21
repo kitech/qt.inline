@@ -21,98 +21,98 @@ public:
 // void QCalendarWidget(QWidget *)
 MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QCalendarWidget::event(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(QObject *, QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * watched, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)watched, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QCalendarWidget::eventFilter(watched, event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCalendarWidget::mousePressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCalendarWidget::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCalendarWidget::keyPressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintCell(QPainter *, const QRect &, const QDate &)
+// [-2] void paintCell(QPainter *, const QRect &, const QDate &)
   virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintCell", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCalendarWidget::paintCell(painter, rect, date);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void updateCell(const QDate &)
+// [-2] void updateCell(const QDate &)
   virtual void updateCell(const QDate & date) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCell", &handled, 1, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCalendarWidget::updateCell(date);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void updateCells()
+// [-2] void updateCells()
   virtual void updateCells() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCells", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCalendarWidget::updateCells();
   }

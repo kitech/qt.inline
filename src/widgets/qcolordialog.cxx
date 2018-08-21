@@ -22,24 +22,24 @@ MyQColorDialog(QWidget * parent) : QColorDialog(parent) {}
 // void QColorDialog(const QColor &, QWidget *)
 MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QColorDialog::changeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void done(int)
+// [-2] void done(int)
   virtual void done(int result) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QColorDialog::done(result);
   }

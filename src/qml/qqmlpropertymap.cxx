@@ -20,13 +20,13 @@ public:
 // void QQmlPropertyMap(QObject *)
 MyQQmlPropertyMap(QObject * parent) : QQmlPropertyMap(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// QVariant updateValue(const QString &, const QVariant &)
+// [16] QVariant updateValue(const QString &, const QVariant &)
   virtual QVariant updateValue(const QString & key, const QVariant & input) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateValue", &handled, 2, (uint64_t)&key, (uint64_t)&input, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QQmlPropertyMap::updateValue(key, input);
   }

@@ -25,39 +25,39 @@ MyQFileDevice(QObject * parent) : QFileDevice(parent) {}
 // void QFileDevice(QFileDevicePrivate &, QObject *)
 MyQFileDevice(QFileDevicePrivate & dd, QObject * parent) : QFileDevice(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readData(char *, qint64)
+// [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QFileDevice::readData(data, maxlen);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QFileDevice::writeData(data, len_);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readLineData(char *, qint64)
+// [8] qint64 readLineData(char *, qint64)
   virtual qint64 readLineData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readLineData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QFileDevice::readLineData(data, maxlen);
   }

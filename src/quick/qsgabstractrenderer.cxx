@@ -21,12 +21,12 @@ public:
 // void QSGAbstractRenderer(QObject *)
 MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void nodeChanged(QSGNode *, QSGNode::DirtyState)
+// [-2] void nodeChanged(QSGNode *, QSGNode::DirtyState)
   virtual void nodeChanged(QSGNode * node, QFlags<QSGNode::DirtyStateBit> state) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nodeChanged", &handled, 2, (uint64_t)node, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     // QSGAbstractRenderer::nodeChanged(node, state);
   }

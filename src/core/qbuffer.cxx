@@ -22,50 +22,50 @@ MyQBuffer(QObject * parent) : QBuffer(parent) {}
 // void QBuffer(QByteArray *, QObject *)
 MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void connectNotify(const QMetaMethod &)
+// [-2] void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QBuffer::connectNotify(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void disconnectNotify(const QMetaMethod &)
+// [-2] void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QBuffer::disconnectNotify(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readData(char *, qint64)
+// [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QBuffer::readData(data, maxlen);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QBuffer::writeData(data, len_);
   }

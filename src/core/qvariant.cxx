@@ -112,51 +112,51 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
 // void QVariant(QVariant &&)
 MyQVariant(QVariant && other) : QVariant(other) {}
 // Protected Visibility=Default Availability=Available
-// void create(int, const void *)
+// [-2] void create(int, const void *)
   virtual void create(int type_, const void * copy) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 2, (uint64_t)type_, (uint64_t)copy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QVariant::create(type_, copy);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// bool cmp(const QVariant &)
+// [1] bool cmp(const QVariant &)
   virtual bool cmp(const QVariant & other) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cmp", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QVariant::cmp(other);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// int compare(const QVariant &)
+// [4] int compare(const QVariant &)
   virtual int compare(const QVariant & other) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compare", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QVariant::compare(other);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// bool convert(const int, void *)
+// [1] bool convert(const int, void *)
   virtual bool convert(const int t, void * ptr) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convert", &handled, 2, (uint64_t)t, (uint64_t)ptr, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QVariant::convert(t, ptr);
   }

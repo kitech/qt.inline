@@ -22,383 +22,383 @@ MyQListView(QWidget * parent) : QListView(parent) {}
 // void QListView(QListViewPrivate &, QWidget *)
 MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QListView::event(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void scrollContentsBy(int, int)
+// [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::scrollContentsBy(dx, dy);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void resizeContents(int, int)
+// [-2] void resizeContents(int, int)
   virtual void resizeContents(int width, int height) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeContents", &handled, 2, (uint64_t)width, (uint64_t)height, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::resizeContents(width, height);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QSize contentsSize()
+// [8] QSize contentsSize()
   virtual QSize contentsSize() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contentsSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
-      // RecordRecordQSize
+      // Record Record QSize
     } else {
     return QListView::contentsSize();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
+// [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
   virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::dataChanged(topLeft, bottomRight, roles);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void rowsInserted(const QModelIndex &, int, int)
+// [-2] void rowsInserted(const QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::rowsInserted(parent, start, end);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void rowsAboutToBeRemoved(const QModelIndex &, int, int)
+// [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
   virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::rowsAboutToBeRemoved(parent, start, end);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseMoveEvent(QMouseEvent *)
+// [-2] void mouseMoveEvent(QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::mouseMoveEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mouseReleaseEvent(QMouseEvent *)
+// [-2] void mouseReleaseEvent(QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::mouseReleaseEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::wheelEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void timerEvent(QTimerEvent *)
+// [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::timerEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QResizeEvent *)
+// [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::resizeEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragMoveEvent(QDragMoveEvent *)
+// [-2] void dragMoveEvent(QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::dragMoveEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dragLeaveEvent(QDragLeaveEvent *)
+// [-2] void dragLeaveEvent(QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::dragLeaveEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(QDropEvent *)
+// [-2] void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::dropEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void startDrag(Qt::DropActions)
+// [-2] void startDrag(Qt::DropActions)
   virtual void startDrag(QFlags<Qt::DropAction> supportedActions) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startDrag", &handled, 1, (uint64_t)supportedActions, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::startDrag(supportedActions);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QStyleOptionViewItem viewOptions()
+// [192] QStyleOptionViewItem viewOptions()
   virtual QStyleOptionViewItem viewOptions() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewOptions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStyleOptionViewItem*)(irv);
-      // RecordRecordQStyleOptionViewItem
+      // Record Record QStyleOptionViewItem
     } else {
     return QListView::viewOptions();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::paintEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int horizontalOffset()
+// [4] int horizontalOffset()
   virtual int horizontalOffset() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QListView::horizontalOffset();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int verticalOffset()
+// [4] int verticalOffset()
   virtual int verticalOffset() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QListView::verticalOffset();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+// [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
-      // RecordRecordQModelIndex
+      // Record Record QModelIndex
     } else {
     return QListView::moveCursor(cursorAction, modifiers);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QRect rectForIndex(const QModelIndex &)
+// [16] QRect rectForIndex(const QModelIndex &)
   virtual QRect rectForIndex(const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rectForIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
-      // RecordRecordQRect
+      // Record Record QRect
     } else {
     return QListView::rectForIndex(index);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setPositionForIndex(const QPoint &, const QModelIndex &)
+// [-2] void setPositionForIndex(const QPoint &, const QModelIndex &)
   virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPositionForIndex", &handled, 2, (uint64_t)&position, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::setPositionForIndex(position, index);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
+// [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::setSelection(rect, command);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QRegion visualRegionForSelection(const QItemSelection &)
+// [8] QRegion visualRegionForSelection(const QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRegion*)(irv);
-      // RecordRecordQRegion
+      // Record Record QRegion
     } else {
     return QListView::visualRegionForSelection(selection);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QModelIndexList selectedIndexes()
+// [8] QModelIndexList selectedIndexes()
   virtual QModelIndexList selectedIndexes() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndexList*)(irv);
-      // TypedefRecordQList<QModelIndex>
+      // Typedef Record QList<QModelIndex>
     } else {
     return QListView::selectedIndexes();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateGeometries()
+// [-2] void updateGeometries()
   virtual void updateGeometries() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::updateGeometries();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool isIndexHidden(const QModelIndex &)
+// [1] bool isIndexHidden(const QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QListView::isIndexHidden(index);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void selectionChanged(const QItemSelection &, const QItemSelection &)
+// [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::selectionChanged(selected, deselected);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void currentChanged(const QModelIndex &, const QModelIndex &)
+// [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QListView::currentChanged(current, previous);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSize viewportSizeHint()
+// [8] QSize viewportSizeHint()
   virtual QSize viewportSizeHint() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
-      // RecordRecordQSize
+      // Record Record QSize
     } else {
     return QListView::viewportSizeHint();
   }

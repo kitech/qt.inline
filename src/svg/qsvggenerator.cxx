@@ -21,26 +21,26 @@ public:
 // void QSvgGenerator()
 MyQSvgGenerator() : QSvgGenerator() {}
 // Protected virtual Visibility=Default Availability=Available
-// QPaintEngine * paintEngine()
+// [8] QPaintEngine * paintEngine()
   virtual QPaintEngine * paintEngine() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEngine", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPaintEngine *)(irv);
-      // PointerPointerQPaintEngine *
+      // Pointer Pointer QPaintEngine *
     } else {
     return QSvgGenerator::paintEngine();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int metric(QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QSvgGenerator::metric(metric);
   }

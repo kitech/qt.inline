@@ -8,7 +8,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAbstractTableModel is pure virtual: false
+// QAbstractTableModel is pure virtual: true
 // QAbstractTableModel has virtual projected: false
 //  header block end
 

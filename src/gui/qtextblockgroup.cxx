@@ -19,51 +19,51 @@ public:
 // void QTextBlockGroup(QTextDocument *)
 MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // Protected virtual Visibility=Default Availability=Available
-// void ~QTextBlockGroup()
+// [-2] void ~QTextBlockGroup()
 // Protected virtual Visibility=Default Availability=Available
-// void blockInserted(const QTextBlock &)
+// [-2] void blockInserted(const QTextBlock &)
   virtual void blockInserted(const QTextBlock & block) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockInserted", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QTextBlockGroup::blockInserted(block);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void blockRemoved(const QTextBlock &)
+// [-2] void blockRemoved(const QTextBlock &)
   virtual void blockRemoved(const QTextBlock & block) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockRemoved", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QTextBlockGroup::blockRemoved(block);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void blockFormatChanged(const QTextBlock &)
+// [-2] void blockFormatChanged(const QTextBlock &)
   virtual void blockFormatChanged(const QTextBlock & block) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockFormatChanged", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QTextBlockGroup::blockFormatChanged(block);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QList<QTextBlock> blockList()
+// [-2] QList<QTextBlock> blockList()
   virtual QList<QTextBlock> blockList() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QList<QTextBlock>*)(irv);
-      // UnexposedRecordQList<QTextBlock>
+      // Unexposed Record QList<QTextBlock>
     } else {
     return QTextBlockGroup::blockList();
   }

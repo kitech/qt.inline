@@ -20,26 +20,26 @@ public:
 // void QSGMaterialShader()
 MyQSGMaterialShader() : QSGMaterialShader() {}
 // Protected inline Visibility=Default Availability=Available
-// QSGMaterialShaderPrivate * d_func()
+// [8] QSGMaterialShaderPrivate * d_func()
   virtual QSGMaterialShaderPrivate * d_func() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QSGMaterialShaderPrivate *)(irv);
-      // PointerPointerQSGMaterialShaderPrivate *
+      // Pointer Pointer QSGMaterialShaderPrivate *
     } else {
     return QSGMaterialShader::d_func();
   }
   }
 
 // Protected inline Visibility=Default Availability=Available
-// const QSGMaterialShaderPrivate * d_func()
+// [8] const QSGMaterialShaderPrivate * d_func()
   virtual const QSGMaterialShaderPrivate * d_func() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (const QSGMaterialShaderPrivate *)(irv);
-      // PointerPointerconst QSGMaterialShaderPrivate *
+      // Pointer Pointer const QSGMaterialShaderPrivate *
     } else {
     return QSGMaterialShader::d_func();
   }
@@ -48,74 +48,74 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 // void QSGMaterialShader(QSGMaterialShaderPrivate &)
 MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 // Protected Visibility=Default Availability=Available
-// void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
+// [-2] void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
   virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QSGMaterialShader::setShaderSourceFile(type_, sourceFile);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setShaderSourceFiles(QOpenGLShader::ShaderType, const QStringList &)
+// [-2] void setShaderSourceFiles(QOpenGLShader::ShaderType, const QStringList &)
   virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QSGMaterialShader::setShaderSourceFiles(type_, sourceFiles);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void compile()
+// [-2] void compile()
   virtual void compile() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QSGMaterialShader::compile();
   }
   }
 
 // Protected inline virtual Visibility=Default Availability=Available
-// void initialize()
+// [-2] void initialize()
   virtual void initialize() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QSGMaterialShader::initialize();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// const char * vertexShader()
+// [8] const char * vertexShader()
   virtual const char * vertexShader() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"vertexShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (const char *)(irv);
-      // PointerPointerconst char *
+      // Pointer Pointer const char *
     } else {
     return QSGMaterialShader::vertexShader();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// const char * fragmentShader()
+// [8] const char * fragmentShader()
   virtual const char * fragmentShader() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fragmentShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (const char *)(irv);
-      // PointerPointerconst char *
+      // Pointer Pointer const char *
     } else {
     return QSGMaterialShader::fragmentShader();
   }

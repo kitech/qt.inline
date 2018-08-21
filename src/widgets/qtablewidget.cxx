@@ -22,116 +22,116 @@ MyQTableWidget(QWidget * parent) : QTableWidget(parent) {}
 // void QTableWidget(int, int, QWidget *)
 MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, columns, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QTableWidget::event(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QStringList mimeTypes()
+// [8] QStringList mimeTypes()
   virtual QStringList mimeTypes() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStringList*)(irv);
-      // RecordRecordQStringList
+      // Record Record QStringList
     } else {
     return QTableWidget::mimeTypes();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QMimeData * mimeData(const QList<QTableWidgetItem *>)
+// [8] QMimeData * mimeData(const QList<QTableWidgetItem *>)
   virtual QMimeData * mimeData(const QList<QTableWidgetItem *> items) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mimeData", &handled, 1, (uint64_t)&items, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QMimeData *)(irv);
-      // PointerPointerQMimeData *
+      // Pointer Pointer QMimeData *
     } else {
     return QTableWidget::mimeData(items);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool dropMimeData(int, int, const QMimeData *, Qt::DropAction)
+// [1] bool dropMimeData(int, int, const QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int row, int column, const QMimeData * data, Qt::DropAction action) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropMimeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QTableWidget::dropMimeData(row, column, data, action);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// Qt::DropActions supportedDropActions()
+// [4] Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (Qt::DropActions)(int)(irv);
-      // ElaboratedRecordQFlags<Qt::DropAction>
+      // Elaborated Record QFlags<Qt::DropAction>
     } else {
     return QTableWidget::supportedDropActions();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QList<QTableWidgetItem *> items(const QMimeData *)
+// [-2] QList<QTableWidgetItem *> items(const QMimeData *)
   virtual QList<QTableWidgetItem *> items(const QMimeData * data) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QList<QTableWidgetItem *>*)(irv);
-      // UnexposedRecordQList<QTableWidgetItem *>
+      // Unexposed Record QList<QTableWidgetItem *>
     } else {
     return QTableWidget::items(data);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QModelIndex indexFromItem(QTableWidgetItem *)
+// [24] QModelIndex indexFromItem(QTableWidgetItem *)
   virtual QModelIndex indexFromItem(QTableWidgetItem * item) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QModelIndex*)(irv);
-      // RecordRecordQModelIndex
+      // Record Record QModelIndex
     } else {
     return QTableWidget::indexFromItem(item);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QTableWidgetItem * itemFromIndex(const QModelIndex &)
+// [8] QTableWidgetItem * itemFromIndex(const QModelIndex &)
   virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QTableWidgetItem *)(irv);
-      // PointerPointerQTableWidgetItem *
+      // Pointer Pointer QTableWidgetItem *
     } else {
     return QTableWidget::itemFromIndex(index);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void dropEvent(QDropEvent *)
+// [-2] void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QTableWidget::dropEvent(event);
   }

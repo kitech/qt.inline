@@ -21,12 +21,12 @@ public:
 // void QPlainTextDocumentLayout(QTextDocument *)
 MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(document) {}
 // Protected virtual Visibility=Default Availability=Available
-// void documentChanged(int, int, int)
+// [-2] void documentChanged(int, int, int)
   virtual void documentChanged(int from, int arg1, int charsAdded) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"documentChanged", &handled, 3, (uint64_t)from, (uint64_t)arg1, (uint64_t)charsAdded, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QPlainTextDocumentLayout::documentChanged(from, arg1, charsAdded);
   }

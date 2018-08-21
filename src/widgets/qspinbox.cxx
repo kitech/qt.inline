@@ -20,64 +20,64 @@ public:
 // void QSpinBox(QWidget *)
 MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QSpinBox::event(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QValidator::State validate(QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"validate", &handled, 2, (uint64_t)&input, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QValidator::State)(int)(irv);
-      // ElaboratedEnumQValidator::State
+      // Elaborated Enum QValidator::State
     } else {
     return QSpinBox::validate(input, pos);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int valueFromText(const QString &)
+// [4] int valueFromText(const QString &)
   virtual int valueFromText(const QString & text) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"valueFromText", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QSpinBox::valueFromText(text);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QString textFromValue(int)
+// [8] QString textFromValue(int)
   virtual QString textFromValue(int val) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textFromValue", &handled, 1, (uint64_t)val, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QString*)(irv);
-      // RecordRecordQString
+      // Record Record QString
     } else {
     return QSpinBox::textFromValue(val);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void fixup(QString &)
+// [-2] void fixup(QString &)
   virtual void fixup(QString & str) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fixup", &handled, 1, (uint64_t)&str, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QSpinBox::fixup(str);
   }

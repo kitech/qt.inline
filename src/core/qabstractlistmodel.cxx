@@ -8,7 +8,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAbstractListModel is pure virtual: false
+// QAbstractListModel is pure virtual: true
 // QAbstractListModel has virtual projected: false
 //  header block end
 

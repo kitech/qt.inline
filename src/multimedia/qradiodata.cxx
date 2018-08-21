@@ -20,13 +20,13 @@ public:
 // void QRadioData(QMediaObject *, QObject *)
 MyQRadioData(QMediaObject * mediaObject, QObject * parent) : QRadioData(mediaObject, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool setMediaObject(QMediaObject *)
+// [1] bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMediaObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QRadioData::setMediaObject(arg0);
   }

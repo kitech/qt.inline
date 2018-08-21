@@ -23,25 +23,25 @@ MyQMouseEventTransition(QState * sourceState) : QMouseEventTransition(sourceStat
 // void QMouseEventTransition(QObject *, QEvent::Type, Qt::MouseButton, QState *)
 MyQMouseEventTransition(QObject * object, QEvent::Type type_, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type_, button, sourceState) {}
 // Protected virtual Visibility=Default Availability=Available
-// void onTransition(QEvent *)
+// [-2] void onTransition(QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QMouseEventTransition::onTransition(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventTest(QEvent *)
+// [1] bool eventTest(QEvent *)
   virtual bool eventTest(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QMouseEventTransition::eventTest(event);
   }

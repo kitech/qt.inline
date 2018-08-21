@@ -21,38 +21,38 @@ public:
 // void QAbstractTransition(QState *)
 MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// bool eventTest(QEvent *)
+// [1] bool eventTest(QEvent *)
   virtual bool eventTest(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
-    return bool{};
+    return (bool){};
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// void onTransition(QEvent *)
+// [-2] void onTransition(QEvent *)
   virtual void onTransition(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     // QAbstractTransition::onTransition(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAbstractTransition::event(e);
   }

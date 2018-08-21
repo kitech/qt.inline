@@ -40,102 +40,102 @@ MyQImage(const QImage & arg0) : QImage(arg0) {}
 // void QImage(QImage &&)
 MyQImage(QImage && other) : QImage(other) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QImage::metric(metric);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QImage mirrored_helper(bool, bool)
+// [32] QImage mirrored_helper(bool, bool)
   virtual QImage mirrored_helper(bool horizontal, bool vertical) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_helper", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
-      // RecordRecordQImage
+      // Record Record QImage
     } else {
     return QImage::mirrored_helper(horizontal, vertical);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QImage rgbSwapped_helper()
+// [32] QImage rgbSwapped_helper()
   virtual QImage rgbSwapped_helper() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_helper", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
-      // RecordRecordQImage
+      // Record Record QImage
     } else {
     return QImage::rgbSwapped_helper();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void mirrored_inplace(bool, bool)
+// [-2] void mirrored_inplace(bool, bool)
   virtual void mirrored_inplace(bool horizontal, bool vertical) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_inplace", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QImage::mirrored_inplace(horizontal, vertical);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void rgbSwapped_inplace()
+// [-2] void rgbSwapped_inplace()
   virtual void rgbSwapped_inplace() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_inplace", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QImage::rgbSwapped_inplace();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QImage convertToFormat_helper(QImage::Format, Qt::ImageConversionFlags)
+// [32] QImage convertToFormat_helper(QImage::Format, Qt::ImageConversionFlags)
   virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_helper", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
-      // RecordRecordQImage
+      // Record Record QImage
     } else {
     return QImage::convertToFormat_helper(format, flags);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// bool convertToFormat_inplace(QImage::Format, Qt::ImageConversionFlags)
+// [1] bool convertToFormat_inplace(QImage::Format, Qt::ImageConversionFlags)
   virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_inplace", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QImage::convertToFormat_inplace(format, flags);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QImage smoothScaled(int, int)
+// [32] QImage smoothScaled(int, int)
   virtual QImage smoothScaled(int w, int h) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"smoothScaled", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QImage*)(irv);
-      // RecordRecordQImage
+      // Record Record QImage
     } else {
     return QImage::smoothScaled(w, h);
   }

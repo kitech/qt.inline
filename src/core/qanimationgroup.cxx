@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAnimationGroup is pure virtual: false
+// QAnimationGroup is pure virtual: true
 // QAnimationGroup has virtual projected: true
 //  header block end
 
@@ -23,13 +23,13 @@ MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
 // void QAnimationGroup(QAnimationGroupPrivate &, QObject *)
 MyQAnimationGroup(QAnimationGroupPrivate & dd, QObject * parent) : QAnimationGroup(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QAnimationGroup::event(event);
   }

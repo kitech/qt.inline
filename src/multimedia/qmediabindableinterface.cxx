@@ -18,15 +18,15 @@ class Q_DECL_EXPORT MyQMediaBindableInterface : public QMediaBindableInterface {
 public:
   virtual ~MyQMediaBindableInterface() {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// bool setMediaObject(QMediaObject *)
+// [1] bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * object) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMediaObject", &handled, 1, (uint64_t)object, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
-    return bool{};
+    return (bool){};
   }
   }
 

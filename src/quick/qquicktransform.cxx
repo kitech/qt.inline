@@ -20,12 +20,12 @@ public:
 // void QQuickTransform(QObject *)
 MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
 // Protected Visibility=Default Availability=Available
-// void update()
+// [-2] void update()
   virtual void update() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QQuickTransform::update();
   }

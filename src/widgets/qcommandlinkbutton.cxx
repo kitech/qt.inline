@@ -25,64 +25,64 @@ MyQCommandLinkButton(const QString & text, QWidget * parent) : QCommandLinkButto
 // void QCommandLinkButton(const QString &, const QString &, QWidget *)
 MyQCommandLinkButton(const QString & text, const QString & description, QWidget * parent) : QCommandLinkButton(text, description, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// QSize sizeHint()
+// [8] QSize sizeHint()
   virtual QSize sizeHint() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
-      // RecordRecordQSize
+      // Record Record QSize
     } else {
     return QCommandLinkButton::sizeHint();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// int heightForWidth(int)
+// [4] int heightForWidth(int)
   virtual int heightForWidth(int arg0) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"heightForWidth", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QCommandLinkButton::heightForWidth(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSize minimumSizeHint()
+// [8] QSize minimumSizeHint()
   virtual QSize minimumSizeHint() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSize*)(irv);
-      // RecordRecordQSize
+      // Record Record QSize
     } else {
     return QCommandLinkButton::minimumSizeHint();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QCommandLinkButton::event(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QCommandLinkButton::paintEvent(arg0);
   }

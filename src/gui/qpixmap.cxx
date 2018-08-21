@@ -32,26 +32,26 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
 // void QPixmap(const QPixmap &)
 MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
 // Protected virtual Visibility=Default Availability=Available
-// int metric(QPaintDevice::PaintDeviceMetric)
+// [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (int)(irv);
-      // IntIntint
+      // Int Int int
     } else {
     return QPixmap::metric(arg0);
   }
   }
 
 // Protected static Visibility=Default Availability=Available
-// QPixmap fromImageInPlace(QImage &, Qt::ImageConversionFlags)
+// [32] QPixmap fromImageInPlace(QImage &, Qt::ImageConversionFlags)
   virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fromImageInPlace", &handled, 2, (uint64_t)&image, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QPixmap*)(irv);
-      // RecordRecordQPixmap
+      // Record Record QPixmap
     } else {
     return QPixmap::fromImageInPlace(image, flags);
   }

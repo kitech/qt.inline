@@ -20,176 +20,176 @@ public:
 // void QItemDelegate(QObject *)
 MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void drawDisplay(QPainter *, const QStyleOptionViewItem &, const QRect &, const QString &)
+// [-2] void drawDisplay(QPainter *, const QStyleOptionViewItem &, const QRect &, const QString &)
   virtual void drawDisplay(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QString & text) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawDisplay", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemDelegate::drawDisplay(painter, option, rect, text);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void drawDecoration(QPainter *, const QStyleOptionViewItem &, const QRect &, const QPixmap &)
+// [-2] void drawDecoration(QPainter *, const QStyleOptionViewItem &, const QRect &, const QPixmap &)
   virtual void drawDecoration(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QPixmap & pixmap) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawDecoration", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)&pixmap, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemDelegate::drawDecoration(painter, option, rect, pixmap);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void drawFocus(QPainter *, const QStyleOptionViewItem &, const QRect &)
+// [-2] void drawFocus(QPainter *, const QStyleOptionViewItem &, const QRect &)
   virtual void drawFocus(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawFocus", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemDelegate::drawFocus(painter, option, rect);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void drawCheck(QPainter *, const QStyleOptionViewItem &, const QRect &, Qt::CheckState)
+// [-2] void drawCheck(QPainter *, const QStyleOptionViewItem &, const QRect &, Qt::CheckState)
   virtual void drawCheck(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, Qt::CheckState state) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawCheck", &handled, 4, (uint64_t)painter, (uint64_t)&option, (uint64_t)&rect, (uint64_t)state, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemDelegate::drawCheck(painter, option, rect, state);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void drawBackground(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
+// [-2] void drawBackground(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
   virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawBackground", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemDelegate::drawBackground(painter, option, index);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void doLayout(const QStyleOptionViewItem &, QRect *, QRect *, QRect *, bool)
+// [-2] void doLayout(const QStyleOptionViewItem &, QRect *, QRect *, QRect *, bool)
   virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doLayout", &handled, 5, (uint64_t)&option, (uint64_t)checkRect, (uint64_t)iconRect, (uint64_t)textRect, (uint64_t)hint, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QItemDelegate::doLayout(option, checkRect, iconRect, textRect, hint);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QRect rect(const QStyleOptionViewItem &, const QModelIndex &, int)
+// [16] QRect rect(const QStyleOptionViewItem &, const QModelIndex &, int)
   virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rect", &handled, 3, (uint64_t)&option, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
-      // RecordRecordQRect
+      // Record Record QRect
     } else {
     return QItemDelegate::rect(option, index, role);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(QObject *, QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QItemDelegate::eventFilter(object, event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
+// [1] bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
   virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"editorEvent", &handled, 4, (uint64_t)event, (uint64_t)model, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QItemDelegate::editorEvent(event, model, option, index);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QStyleOptionViewItem setOptions(const QModelIndex &, const QStyleOptionViewItem &)
+// [192] QStyleOptionViewItem setOptions(const QModelIndex &, const QStyleOptionViewItem &)
   virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOptions", &handled, 2, (uint64_t)&index, (uint64_t)&option, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QStyleOptionViewItem*)(irv);
-      // RecordRecordQStyleOptionViewItem
+      // Record Record QStyleOptionViewItem
     } else {
     return QItemDelegate::setOptions(index, option);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QPixmap decoration(const QStyleOptionViewItem &, const QVariant &)
+// [32] QPixmap decoration(const QStyleOptionViewItem &, const QVariant &)
   virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decoration", &handled, 2, (uint64_t)&option, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QPixmap*)(irv);
-      // RecordRecordQPixmap
+      // Record Record QPixmap
     } else {
     return QItemDelegate::decoration(option, variant);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QPixmap * selected(const QPixmap &, const QPalette &, bool)
+// [8] QPixmap * selected(const QPixmap &, const QPalette &, bool)
   virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selected", &handled, 3, (uint64_t)&pixmap, (uint64_t)&palette, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QPixmap *)(irv);
-      // PointerPointerQPixmap *
+      // Pointer Pointer QPixmap *
     } else {
     return QItemDelegate::selected(pixmap, palette, enabled);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QRect doCheck(const QStyleOptionViewItem &, const QRect &, const QVariant &)
+// [16] QRect doCheck(const QStyleOptionViewItem &, const QRect &, const QVariant &)
   virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doCheck", &handled, 3, (uint64_t)&option, (uint64_t)&bounding, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
-      // RecordRecordQRect
+      // Record Record QRect
     } else {
     return QItemDelegate::doCheck(option, bounding, variant);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QRect textRectangle(QPainter *, const QRect &, const QFont &, const QString &)
+// [16] QRect textRectangle(QPainter *, const QRect &, const QFont &, const QString &)
   virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textRectangle", &handled, 4, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&font, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QRect*)(irv);
-      // RecordRecordQRect
+      // Record Record QRect
     } else {
     return QItemDelegate::textRectangle(painter, rect, font, text);
   }

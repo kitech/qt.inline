@@ -26,149 +26,149 @@ MyQDateTimeEdit(const QDate & d, QWidget * parent) : QDateTimeEdit(d, parent) {}
 // void QDateTimeEdit(const QTime &, QWidget *)
 MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void keyPressEvent(QKeyEvent *)
+// [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::keyPressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void wheelEvent(QWheelEvent *)
+// [-2] void wheelEvent(QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::wheelEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::focusInEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(bool)
+// [1] bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QDateTimeEdit::focusNextPrevChild(next);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QValidator::State validate(QString &, int &)
+// [4] QValidator::State validate(QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"validate", &handled, 2, (uint64_t)&input, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QValidator::State)(int)(irv);
-      // ElaboratedEnumQValidator::State
+      // Elaborated Enum QValidator::State
     } else {
     return QDateTimeEdit::validate(input, pos);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void fixup(QString &)
+// [-2] void fixup(QString &)
   virtual void fixup(QString & input) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fixup", &handled, 1, (uint64_t)&input, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::fixup(input);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QDateTime dateTimeFromText(const QString &)
+// [8] QDateTime dateTimeFromText(const QString &)
   virtual QDateTime dateTimeFromText(const QString & text) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dateTimeFromText", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QDateTime*)(irv);
-      // RecordRecordQDateTime
+      // Record Record QDateTime
     } else {
     return QDateTimeEdit::dateTimeFromText(text);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QString textFromDateTime(const QDateTime &)
+// [8] QString textFromDateTime(const QDateTime &)
   virtual QString textFromDateTime(const QDateTime & dt) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textFromDateTime", &handled, 1, (uint64_t)&dt, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QString*)(irv);
-      // RecordRecordQString
+      // Record Record QString
     } else {
     return QDateTimeEdit::textFromDateTime(dt);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QAbstractSpinBox::StepEnabled stepEnabled()
+// [4] QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stepEnabled", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QAbstractSpinBox::StepEnabled)(int)(irv);
-      // TypedefRecordQFlags<QAbstractSpinBox::StepEnabledFlag>
+      // Typedef Record QFlags<QAbstractSpinBox::StepEnabledFlag>
     } else {
     return QDateTimeEdit::stepEnabled();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void mousePressEvent(QMouseEvent *)
+// [-2] void mousePressEvent(QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::mousePressEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void paintEvent(QPaintEvent *)
+// [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::paintEvent(event);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void initStyleOption(QStyleOptionSpinBox *)
+// [-2] void initStyleOption(QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QDateTimeEdit::initStyleOption(option);
   }

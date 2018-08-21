@@ -31,25 +31,25 @@ MyQStandardItem(const QStandardItem & other) : QStandardItem(other) {}
 // void QStandardItem(QStandardItemPrivate &)
 MyQStandardItem(QStandardItemPrivate & dd) : QStandardItem(dd) {}
 // Protected Visibility=Default Availability=Available
-// QStandardItem & operator=(const QStandardItem &)
+// [16] QStandardItem & operator=(const QStandardItem &)
   virtual QStandardItem & operator=(const QStandardItem & other) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"operator=", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QStandardItem &)(irv);
-      // LValueReferenceLValueReferenceQStandardItem &
+      // LValueReference LValueReference QStandardItem &
     } else {
     return QStandardItem::operator=(other);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void emitDataChanged()
+// [-2] void emitDataChanged()
   virtual void emitDataChanged() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStandardItem::emitDataChanged();
   }

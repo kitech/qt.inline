@@ -21,308 +21,308 @@ public:
 // void QGraphicsWidget(QGraphicsItem *, Qt::WindowFlags)
 MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGraphicsWidget(parent, wFlags) {}
 // Protected virtual Visibility=Default Availability=Available
-// void initStyleOption(QStyleOption *)
+// [-2] void initStyleOption(QStyleOption *)
   virtual void initStyleOption(QStyleOption * option) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::initStyleOption(option);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QSizeF*)(irv);
-      // RecordRecordQSizeF
+      // Record Record QSizeF
     } else {
     return QGraphicsWidget::sizeHint(which, constraint);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void updateGeometry()
+// [-2] void updateGeometry()
   virtual void updateGeometry() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometry", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::updateGeometry();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant itemChange(QGraphicsItem::GraphicsItemChange, const QVariant &)
+// [16] QVariant itemChange(QGraphicsItem::GraphicsItemChange, const QVariant &)
   virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemChange", &handled, 2, (uint64_t)change, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QGraphicsWidget::itemChange(change, value);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant propertyChange(const QString &, const QVariant &)
+// [16] QVariant propertyChange(const QString &, const QVariant &)
   virtual QVariant propertyChange(const QString & propertyName, const QVariant & value) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"propertyChange", &handled, 2, (uint64_t)&propertyName, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QGraphicsWidget::propertyChange(propertyName, value);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool sceneEvent(QEvent *)
+// [1] bool sceneEvent(QEvent *)
   virtual bool sceneEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sceneEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsWidget::sceneEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool windowFrameEvent(QEvent *)
+// [1] bool windowFrameEvent(QEvent *)
   virtual bool windowFrameEvent(QEvent * e) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"windowFrameEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsWidget::windowFrameEvent(e);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// Qt::WindowFrameSection windowFrameSectionAt(const QPointF &)
+// [4] Qt::WindowFrameSection windowFrameSectionAt(const QPointF &)
   virtual Qt::WindowFrameSection windowFrameSectionAt(const QPointF & pos) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"windowFrameSectionAt", &handled, 1, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (Qt::WindowFrameSection)(int)(irv);
-      // ElaboratedEnumQt::WindowFrameSection
+      // Elaborated Enum Qt::WindowFrameSection
     } else {
     return QGraphicsWidget::windowFrameSectionAt(pos);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsWidget::event(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void changeEvent(QEvent *)
+// [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::changeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void closeEvent(QCloseEvent *)
+// [-2] void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::closeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusInEvent(QFocusEvent *)
+// [-2] void focusInEvent(QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::focusInEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool focusNextPrevChild(bool)
+// [1] bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsWidget::focusNextPrevChild(next);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void focusOutEvent(QFocusEvent *)
+// [-2] void focusOutEvent(QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::focusOutEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hideEvent(QHideEvent *)
+// [-2] void hideEvent(QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::hideEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void moveEvent(QGraphicsSceneMoveEvent *)
+// [-2] void moveEvent(QGraphicsSceneMoveEvent *)
   virtual void moveEvent(QGraphicsSceneMoveEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::moveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void polishEvent()
+// [-2] void polishEvent()
   virtual void polishEvent() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"polishEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::polishEvent();
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void resizeEvent(QGraphicsSceneResizeEvent *)
+// [-2] void resizeEvent(QGraphicsSceneResizeEvent *)
   virtual void resizeEvent(QGraphicsSceneResizeEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::resizeEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void showEvent(QShowEvent *)
+// [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::showEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverMoveEvent(QGraphicsSceneHoverEvent *)
+// [-2] void hoverMoveEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::hoverMoveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
+// [-2] void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
   virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::hoverLeaveEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void grabMouseEvent(QEvent *)
+// [-2] void grabMouseEvent(QEvent *)
   virtual void grabMouseEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"grabMouseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::grabMouseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void ungrabMouseEvent(QEvent *)
+// [-2] void ungrabMouseEvent(QEvent *)
   virtual void ungrabMouseEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"ungrabMouseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::ungrabMouseEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void grabKeyboardEvent(QEvent *)
+// [-2] void grabKeyboardEvent(QEvent *)
   virtual void grabKeyboardEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"grabKeyboardEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::grabKeyboardEvent(event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void ungrabKeyboardEvent(QEvent *)
+// [-2] void ungrabKeyboardEvent(QEvent *)
   virtual void ungrabKeyboardEvent(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"ungrabKeyboardEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsWidget::ungrabKeyboardEvent(event);
   }

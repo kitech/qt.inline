@@ -28,13 +28,13 @@ MyQSettings(const QString & fileName, QSettings::Format format, QObject * parent
 // void QSettings(QObject *)
 MyQSettings(QObject * parent) : QSettings(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QSettings::event(event);
   }

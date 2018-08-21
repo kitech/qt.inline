@@ -21,13 +21,13 @@ public:
 // void QNetworkDiskCache(QObject *)
 MyQNetworkDiskCache(QObject * parent) : QNetworkDiskCache(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// qint64 expire()
+// [8] qint64 expire()
   virtual qint64 expire() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"expire", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QNetworkDiskCache::expire();
   }

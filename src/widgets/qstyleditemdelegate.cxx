@@ -21,38 +21,38 @@ public:
 // void QStyledItemDelegate(QObject *)
 MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void initStyleOption(QStyleOptionViewItem *, const QModelIndex &)
+// [-2] void initStyleOption(QStyleOptionViewItem *, const QModelIndex &)
   virtual void initStyleOption(QStyleOptionViewItem * option, const QModelIndex & index) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QStyledItemDelegate::initStyleOption(option, index);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(QObject *, QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QStyledItemDelegate::eventFilter(object, event);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
+// [1] bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
   virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"editorEvent", &handled, 4, (uint64_t)event, (uint64_t)model, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QStyledItemDelegate::editorEvent(event, model, option, index);
   }

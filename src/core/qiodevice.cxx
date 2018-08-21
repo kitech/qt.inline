@@ -24,63 +24,63 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
 // void QIODevice(QIODevicePrivate &, QObject *)
 MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// qint64 readData(char *, qint64)
+// [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
-    return qint64{};
+    return (qint64){};
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readLineData(char *, qint64)
+// [8] qint64 readLineData(char *, qint64)
   virtual qint64 readLineData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readLineData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QIODevice::readLineData(data, maxlen);
   }
   }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
-    return qint64{};
+    return (qint64){};
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setOpenMode(QIODevice::OpenMode)
+// [-2] void setOpenMode(QIODevice::OpenMode)
   virtual void setOpenMode(QFlags<QIODevice::OpenModeFlag> openMode) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOpenMode", &handled, 1, (uint64_t)openMode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QIODevice::setOpenMode(openMode);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setErrorString(const QString &)
+// [-2] void setErrorString(const QString &)
   virtual void setErrorString(const QString & errorString) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setErrorString", &handled, 1, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QIODevice::setErrorString(errorString);
   }

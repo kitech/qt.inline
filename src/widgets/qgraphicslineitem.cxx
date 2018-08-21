@@ -25,38 +25,38 @@ MyQGraphicsLineItem(const QLineF & line, QGraphicsItem * parent) : QGraphicsLine
 // void QGraphicsLineItem(qreal, qreal, qreal, qreal, QGraphicsItem *)
 MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * parent) : QGraphicsLineItem(x1, y1, x2, y2, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool supportsExtension(QGraphicsItem::Extension)
+// [1] bool supportsExtension(QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QGraphicsLineItem::supportsExtension(extension);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void setExtension(QGraphicsItem::Extension, const QVariant &)
+// [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QGraphicsLineItem::setExtension(extension, variant);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QVariant extension(const QVariant &)
+// [16] QVariant extension(const QVariant &)
   virtual QVariant extension(const QVariant & variant) const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QVariant*)(irv);
-      // RecordRecordQVariant
+      // Record Record QVariant
     } else {
     return QGraphicsLineItem::extension(variant);
   }

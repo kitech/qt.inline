@@ -20,48 +20,48 @@ public:
 // void QFutureWatcherBase(QObject *)
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// void connectNotify(const QMetaMethod &)
+// [-2] void connectNotify(const QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFutureWatcherBase::connectNotify(signal);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void disconnectNotify(const QMetaMethod &)
+// [-2] void disconnectNotify(const QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFutureWatcherBase::disconnectNotify(signal);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void connectOutputInterface()
+// [-2] void connectOutputInterface()
   virtual void connectOutputInterface() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectOutputInterface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFutureWatcherBase::connectOutputInterface();
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void disconnectOutputInterface(bool)
+// [-2] void disconnectOutputInterface(bool)
   virtual void disconnectOutputInterface(bool pendingAssignment) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectOutputInterface", &handled, 1, (uint64_t)pendingAssignment, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
   }

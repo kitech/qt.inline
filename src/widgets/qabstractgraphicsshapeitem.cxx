@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QAbstractGraphicsShapeItem is pure virtual: false
+// QAbstractGraphicsShapeItem is pure virtual: true
 // QAbstractGraphicsShapeItem has virtual projected: false
 //  header block end
 

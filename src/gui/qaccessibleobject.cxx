@@ -8,7 +8,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleObject is pure virtual: false
+// QAccessibleObject is pure virtual: true
 // QAccessibleObject has virtual projected: false
 //  header block end
 
@@ -20,7 +20,7 @@ public:
 // void QAccessibleObject(QObject *)
 MyQAccessibleObject(QObject * object) : QAccessibleObject(object) {}
 // Protected virtual Visibility=Default Availability=Available
-// void ~QAccessibleObject()
+// [-2] void ~QAccessibleObject()
 };
 
 // Public Visibility=Default Availability=Available

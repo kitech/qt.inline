@@ -26,13 +26,13 @@ MyQTemporaryFile(QObject * parent) : QTemporaryFile(parent) {}
 // void QTemporaryFile(const QString &, QObject *)
 MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFile(templateName, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool open(QIODevice::OpenMode)
+// [1] bool open(QIODevice::OpenMode)
   virtual bool open(QFlags<QIODevice::OpenModeFlag> flags) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"open", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QTemporaryFile::open(flags);
   }

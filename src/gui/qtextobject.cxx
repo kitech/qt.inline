@@ -19,14 +19,14 @@ public:
 // void QTextObject(QTextDocument *)
 MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // Protected virtual Visibility=Default Availability=Available
-// void ~QTextObject()
+// [-2] void ~QTextObject()
 // Protected Visibility=Default Availability=Available
-// void setFormat(const QTextFormat &)
+// [-2] void setFormat(const QTextFormat &)
   virtual void setFormat(const QTextFormat & format) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QTextObject::setFormat(format);
   }

@@ -23,26 +23,26 @@ MyQGraphicsSceneEvent(QEvent::Type type_) : QGraphicsSceneEvent(type_) {}
 // void QGraphicsSceneEvent(QGraphicsSceneEventPrivate &, QEvent::Type)
 MyQGraphicsSceneEvent(QGraphicsSceneEventPrivate & dd, QEvent::Type type_) : QGraphicsSceneEvent(dd, type_) {}
 // Protected inline Visibility=Default Availability=Available
-// QGraphicsSceneEventPrivate * d_func()
+// [8] QGraphicsSceneEventPrivate * d_func()
   virtual QGraphicsSceneEventPrivate * d_func() {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QGraphicsSceneEventPrivate *)(irv);
-      // PointerPointerQGraphicsSceneEventPrivate *
+      // Pointer Pointer QGraphicsSceneEventPrivate *
     } else {
     return QGraphicsSceneEvent::d_func();
   }
   }
 
 // Protected inline Visibility=Default Availability=Available
-// const QGraphicsSceneEventPrivate * d_func()
+// [8] const QGraphicsSceneEventPrivate * d_func()
   virtual const QGraphicsSceneEventPrivate * d_func() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (const QGraphicsSceneEventPrivate *)(irv);
-      // PointerPointerconst QGraphicsSceneEventPrivate *
+      // Pointer Pointer const QGraphicsSceneEventPrivate *
     } else {
     return QGraphicsSceneEvent::d_func();
   }

@@ -21,64 +21,64 @@ public:
 // void QWidgetAction(QObject *)
 MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// bool event(QEvent *)
+// [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QWidgetAction::event(arg0);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// bool eventFilter(QObject *, QEvent *)
+// [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (bool)(irv);
-      // BoolBoolbool
+      // Bool Bool bool
     } else {
     return QWidgetAction::eventFilter(arg0, arg1);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// QWidget * createWidget(QWidget *)
+// [8] QWidget * createWidget(QWidget *)
   virtual QWidget * createWidget(QWidget * parent) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createWidget", &handled, 1, (uint64_t)parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (QWidget *)(irv);
-      // PointerPointerQWidget *
+      // Pointer Pointer QWidget *
     } else {
     return QWidgetAction::createWidget(parent);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// void deleteWidget(QWidget *)
+// [-2] void deleteWidget(QWidget *)
   virtual void deleteWidget(QWidget * widget) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"deleteWidget", &handled, 1, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QWidgetAction::deleteWidget(widget);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// QList<QWidget *> createdWidgets()
+// [-2] QList<QWidget *> createdWidgets()
   virtual QList<QWidget *> createdWidgets() const{
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createdWidgets", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return *(QList<QWidget *>*)(irv);
-      // UnexposedRecordQList<QWidget *>
+      // Unexposed Record QList<QWidget *>
     } else {
     return QWidgetAction::createdWidgets();
   }

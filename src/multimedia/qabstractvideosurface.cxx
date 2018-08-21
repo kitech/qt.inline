@@ -20,24 +20,24 @@ public:
 // void QAbstractVideoSurface(QObject *)
 MyQAbstractVideoSurface(QObject * parent) : QAbstractVideoSurface(parent) {}
 // Protected Visibility=Default Availability=Available
-// void setError(QAbstractVideoSurface::Error)
+// [-2] void setError(QAbstractVideoSurface::Error)
   virtual void setError(QAbstractVideoSurface::Error error) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setError", &handled, 1, (uint64_t)error, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractVideoSurface::setError(error);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setNativeResolution(const QSize &)
+// [-2] void setNativeResolution(const QSize &)
   virtual void setNativeResolution(const QSize & resolution) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setNativeResolution", &handled, 1, (uint64_t)&resolution, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractVideoSurface::setNativeResolution(resolution);
   }

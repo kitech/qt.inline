@@ -8,7 +8,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QAbstractSocket is pure virtual: false
+// QAbstractSocket is pure virtual: true
 // QAbstractSocket has virtual projected: true
 //  header block end
 
@@ -20,123 +20,123 @@ public:
 // void QAbstractSocket(QAbstractSocket::SocketType, QObject *)
 MyQAbstractSocket(QAbstractSocket::SocketType socketType, QObject * parent) : QAbstractSocket(socketType, parent) {}
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readData(char *, qint64)
+// [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QAbstractSocket::readData(data, maxlen);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 readLineData(char *, qint64)
+// [8] qint64 readLineData(char *, qint64)
   virtual qint64 readLineData(char * data, qint64 maxlen) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readLineData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QAbstractSocket::readLineData(data, maxlen);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
-// qint64 writeData(const char *, qint64)
+// [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     return (qint64)(irv);
-      // TypedefLongLonglong long
+      // Typedef LongLong long long
     } else {
     return QAbstractSocket::writeData(data, len_);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setSocketState(QAbstractSocket::SocketState)
+// [-2] void setSocketState(QAbstractSocket::SocketState)
   virtual void setSocketState(QAbstractSocket::SocketState state) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSocketState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setSocketState(state);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setSocketError(QAbstractSocket::SocketError)
+// [-2] void setSocketError(QAbstractSocket::SocketError)
   virtual void setSocketError(QAbstractSocket::SocketError socketError) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSocketError", &handled, 1, (uint64_t)socketError, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setSocketError(socketError);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setLocalPort(quint16)
+// [-2] void setLocalPort(quint16)
   virtual void setLocalPort(quint16 port) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setLocalPort", &handled, 1, (uint64_t)port, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setLocalPort(port);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setLocalAddress(const QHostAddress &)
+// [-2] void setLocalAddress(const QHostAddress &)
   virtual void setLocalAddress(const QHostAddress & address) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setLocalAddress", &handled, 1, (uint64_t)&address, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setLocalAddress(address);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setPeerPort(quint16)
+// [-2] void setPeerPort(quint16)
   virtual void setPeerPort(quint16 port) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPeerPort", &handled, 1, (uint64_t)port, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setPeerPort(port);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setPeerAddress(const QHostAddress &)
+// [-2] void setPeerAddress(const QHostAddress &)
   virtual void setPeerAddress(const QHostAddress & address) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPeerAddress", &handled, 1, (uint64_t)&address, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setPeerAddress(address);
   }
   }
 
 // Protected Visibility=Default Availability=Available
-// void setPeerName(const QString &)
+// [-2] void setPeerName(const QString &)
   virtual void setPeerName(const QString & name) {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPeerName", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // VoidVoidvoid
+      // Void Void void
     } else {
     QAbstractSocket::setPeerName(name);
   }
