@@ -20,8 +20,6 @@ public:
   virtual ~MyQColumnView() {}
 // void QColumnView(QWidget *)
 MyQColumnView(QWidget * parent) : QColumnView(parent) {}
-// void QColumnView(QColumnViewPrivate &, QWidget *)
-MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool isIndexHidden(const QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) const override {
@@ -162,18 +160,6 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initializeColumn(QAbstractItemView *)
-  virtual void initializeColumn(QAbstractItemView * column) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QColumnView::initializeColumn(column);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -265,17 +251,6 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN11QColumnView12createColumnERK11QModelIndex(void *this_, QModelIndex* rootIndex) {
   return (void*)((QColumnView*)this_)->QColumnView::createColumn(*rootIndex);
 }
-
-// Protected Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtWidgets/qcolumnview.h:101
-// [-2] void initializeColumn(QAbstractItemView *)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QColumnView16initializeColumnEP17QAbstractItemView(void *this_, QAbstractItemView * column) {
-  ((QColumnView*)this_)->QColumnView::initializeColumn(column);
-}
-#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:54

@@ -17,10 +17,156 @@
 class Q_DECL_EXPORT MyQRadioDataControl : public QRadioDataControl {
 public:
   virtual ~MyQRadioDataControl() {}
-// void QRadioDataControl(QObject *)
-MyQRadioDataControl(QObject * parent) : QRadioDataControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString stationId()
+  virtual QString stationId() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stationId", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QRadioData::ProgramType programType()
+  virtual QRadioData::ProgramType programType() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"programType", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QRadioData::ProgramType)(int)(irv);
+      // Elaborated Enum QRadioData::ProgramType
+    } else {
+    return (QRadioData::ProgramType){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString programTypeName()
+  virtual QString programTypeName() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"programTypeName", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString stationName()
+  virtual QString stationName() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stationName", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString radioText()
+  virtual QString radioText() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"radioText", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setAlternativeFrequenciesEnabled(bool)
+  virtual void setAlternativeFrequenciesEnabled(bool enabled)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAlternativeFrequenciesEnabled", &handled, 1, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioDataControl::setAlternativeFrequenciesEnabled(enabled);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isAlternativeFrequenciesEnabled()
+  virtual bool isAlternativeFrequenciesEnabled() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isAlternativeFrequenciesEnabled", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QRadioData::Error error()
+  virtual QRadioData::Error error() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"error", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QRadioData::Error)(int)(irv);
+      // Elaborated Enum QRadioData::Error
+    } else {
+    return (QRadioData::Error){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString errorString()
+  virtual QString errorString() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"errorString", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:58
+// [8] QString stationId()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:59
+// [4] QRadioData::ProgramType programType()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:60
+// [8] QString programTypeName()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:61
+// [8] QString stationName()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:62
+// [8] QString radioText()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:63
+// [-2] void setAlternativeFrequenciesEnabled(bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:64
+// [1] bool isAlternativeFrequenciesEnabled()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:66
+// [4] QRadioData::Error error()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodatacontrol.h:67
+// [8] QString errorString()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiodatacontrol.h:53
 // [8] const QMetaObject * metaObject()

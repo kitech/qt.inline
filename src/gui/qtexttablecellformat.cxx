@@ -20,8 +20,6 @@ public:
   virtual ~MyQTextTableCellFormat() {}
 // void QTextTableCellFormat()
 MyQTextTableCellFormat() : QTextTableCellFormat() {}
-// void QTextTableCellFormat(const QTextFormat &)
-MyQTextTableCellFormat(const QTextFormat & fmt_) : QTextTableCellFormat(fmt_) {}
 };
 
 // Public Visibility=Default Availability=Available

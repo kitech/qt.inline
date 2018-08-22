@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QStandardItem is pure virtual: false
-// QStandardItem has virtual projected: true
+// QStandardItem has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -26,64 +26,14 @@ MyQStandardItem(const QString & text) : QStandardItem(text) {}
 MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, text) {}
 // void QStandardItem(int, int)
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
-// void QStandardItem(const QStandardItem &)
-MyQStandardItem(const QStandardItem & other) : QStandardItem(other) {}
-// void QStandardItem(QStandardItemPrivate &)
-MyQStandardItem(QStandardItemPrivate & dd) : QStandardItem(dd) {}
-// Protected Visibility=Default Availability=Available
-// [16] QStandardItem & operator=(const QStandardItem &)
-  virtual QStandardItem & operator=(const QStandardItem & other)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"operator=", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QStandardItem &)(irv);
-      // LValueReference LValueReference QStandardItem &
-    } else {
-    return QStandardItem::operator=(other);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void emitDataChanged()
-  virtual void emitDataChanged()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QStandardItem::emitDataChanged();
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:248
-// [16] QStandardItem & operator=(const QStandardItem &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QStandardItemaSERKS_(void *this_, QStandardItem* other) {
-  auto& rv = ((QStandardItem*)this_)->QStandardItem::operator=(*other);
-return &rv;
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qstandarditemmodel.h:251
-// [-2] void emitDataChanged()
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem15emitDataChangedEv(void *this_) {
-  ((QStandardItem*)this_)->QStandardItem::emitDataChanged();
-}
-#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:65
 // [-2] void QStandardItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2Ev() {
-  auto _nilp = (MyQStandardItem*)(0);
-  return  new MyQStandardItem();
+  return  new QStandardItem();
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,8 +41,7 @@ void* C_ZN13QStandardItemC2Ev() {
 // [-2] void QStandardItem(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2ERK7QString(QString* text) {
-  auto _nilp = (MyQStandardItem*)(0);
-  return  new MyQStandardItem(*text);
+  return  new QStandardItem(*text);
 }
 
 // Public Visibility=Default Availability=Available
@@ -100,8 +49,7 @@ void* C_ZN13QStandardItemC2ERK7QString(QString* text) {
 // [-2] void QStandardItem(const QIcon &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2ERK5QIconRK7QString(QIcon* icon, QString* text) {
-  auto _nilp = (MyQStandardItem*)(0);
-  return  new MyQStandardItem(*icon, *text);
+  return  new QStandardItem(*icon, *text);
 }
 
 // Public Visibility=Default Availability=Available
@@ -109,8 +57,7 @@ void* C_ZN13QStandardItemC2ERK5QIconRK7QString(QIcon* icon, QString* text) {
 // [-2] void QStandardItem(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2Eii(int rows, int columns) {
-  auto _nilp = (MyQStandardItem*)(0);
-  return  new MyQStandardItem(rows, columns);
+  return  new QStandardItem(rows, columns);
 }
 
 // Public virtual Visibility=Default Availability=Available

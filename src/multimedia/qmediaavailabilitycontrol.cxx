@@ -17,10 +17,24 @@
 class Q_DECL_EXPORT MyQMediaAvailabilityControl : public QMediaAvailabilityControl {
 public:
   virtual ~MyQMediaAvailabilityControl() {}
-// void QMediaAvailabilityControl(QObject *)
-MyQMediaAvailabilityControl(QObject * parent) : QMediaAvailabilityControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMultimedia::AvailabilityStatus availability()
+  virtual QMultimedia::AvailabilityStatus availability() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"availability", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMultimedia::AvailabilityStatus)(int)(irv);
+      // Elaborated Enum QMultimedia::AvailabilityStatus
+    } else {
+    return (QMultimedia::AvailabilityStatus){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:59
+// [4] QMultimedia::AvailabilityStatus availability()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:54
 // [8] const QMetaObject * metaObject()

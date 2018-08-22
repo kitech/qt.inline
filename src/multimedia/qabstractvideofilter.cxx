@@ -18,10 +18,26 @@
 class Q_DECL_EXPORT MyQAbstractVideoFilter : public QAbstractVideoFilter {
 public:
   virtual ~MyQAbstractVideoFilter() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QVideoFilterRunnable * createFilterRunnable()
+  virtual QVideoFilterRunnable * createFilterRunnable()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createFilterRunnable", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QVideoFilterRunnable *)(irv);
+      // Pointer Pointer QVideoFilterRunnable *
+    } else {
+    return (QVideoFilterRunnable *){};
+  }
+  }
+
 // void QAbstractVideoFilter(QObject *)
 MyQAbstractVideoFilter(QObject * parent) : QAbstractVideoFilter(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideofilter.h:77
+// [8] QVideoFilterRunnable * createFilterRunnable()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideofilter.h:67
 // [8] const QMetaObject * metaObject()

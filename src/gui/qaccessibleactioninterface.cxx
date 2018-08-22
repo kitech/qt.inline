@@ -17,8 +17,57 @@
 class Q_DECL_EXPORT MyQAccessibleActionInterface : public QAccessibleActionInterface {
 public:
   virtual ~MyQAccessibleActionInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList actionNames()
+  virtual QStringList actionNames() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"actionNames", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void doAction(const QString &)
+  virtual void doAction(const QString & actionName)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doAction", &handled, 1, (uint64_t)&actionName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAccessibleActionInterface::doAction(actionName);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList keyBindingsForAction(const QString &)
+  virtual QStringList keyBindingsForAction(const QString & actionName) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyBindingsForAction", &handled, 1, (uint64_t)&actionName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:632
+// [8] QStringList actionNames()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:635
+// [-2] void doAction(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:636
+// [8] QStringList keyBindingsForAction(const QString &)
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:628
 // [8] QString tr(const char *, const char *, int)

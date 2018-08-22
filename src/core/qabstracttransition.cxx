@@ -58,8 +58,6 @@ MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {
   }
   }
 
-// void QAbstractTransition(QAbstractTransitionPrivate &, QState *)
-MyQAbstractTransition(QAbstractTransitionPrivate & dd, QState * parent) : QAbstractTransition(dd, parent) {}
 };
 
 // Protected purevirtual virtual Visibility=Default Availability=Available

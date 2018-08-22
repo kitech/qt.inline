@@ -21,8 +21,6 @@ public:
 MyQFileDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QFileDialog(parent, f) {}
 // void QFileDialog(QWidget *, const QString &, const QString &, const QString &)
 MyQFileDialog(QWidget * parent, const QString & caption, const QString & directory, const QString & filter) : QFileDialog(parent, caption, directory, filter) {}
-// void QFileDialog(const QFileDialogArgs &)
-MyQFileDialog(const QFileDialogArgs & args) : QFileDialog(args) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void done(int)
   virtual void done(int result)  override {

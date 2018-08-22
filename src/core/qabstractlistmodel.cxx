@@ -17,12 +17,43 @@
 class Q_DECL_EXPORT MyQAbstractListModel : public QAbstractListModel {
 public:
   virtual ~MyQAbstractListModel() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int rowCount(const QModelIndex &)
+  virtual int rowCount(const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowCount", &handled, 1, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant data(const QModelIndex &, int)
+  virtual QVariant data(const QModelIndex & index, int role) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"data", &handled, 2, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
 // void QAbstractListModel(QObject *)
 MyQAbstractListModel(QObject * parent) : QAbstractListModel(parent) {}
-// void QAbstractListModel(QAbstractItemModelPrivate &, QObject *)
-MyQAbstractListModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstractListModel(dd, parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:183
+// [4] int rowCount(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:187
+// [16] QVariant data(const QModelIndex &, int)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:393
 // [8] const QMetaObject * metaObject()

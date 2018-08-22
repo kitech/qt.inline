@@ -17,10 +17,87 @@
 class Q_DECL_EXPORT MyQMediaGaplessPlaybackControl : public QMediaGaplessPlaybackControl {
 public:
   virtual ~MyQMediaGaplessPlaybackControl() {}
-// void QMediaGaplessPlaybackControl(QObject *)
-MyQMediaGaplessPlaybackControl(QObject * parent) : QMediaGaplessPlaybackControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QMediaContent nextMedia()
+  virtual QMediaContent nextMedia() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nextMedia", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QMediaContent){};}
+    auto prv = (QMediaContent*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QMediaContent
+    } else {
+    return (QMediaContent){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setNextMedia(const QMediaContent &)
+  virtual void setNextMedia(const QMediaContent & media)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setNextMedia", &handled, 1, (uint64_t)&media, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaGaplessPlaybackControl::setNextMedia(media);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isCrossfadeSupported()
+  virtual bool isCrossfadeSupported() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isCrossfadeSupported", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal crossfadeTime()
+  virtual qreal crossfadeTime() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"crossfadeTime", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setCrossfadeTime(qreal)
+  virtual void setCrossfadeTime(qreal crossfadeTime)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCrossfadeTime", &handled, 1, (uint64_t)&crossfadeTime, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaGaplessPlaybackControl::setCrossfadeTime(crossfadeTime);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:56
+// [8] QMediaContent nextMedia()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:57
+// [-2] void setNextMedia(const QMediaContent &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:59
+// [1] bool isCrossfadeSupported()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:60
+// [8] qreal crossfadeTime()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:61
+// [-2] void setCrossfadeTime(qreal)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:52
 // [8] const QMetaObject * metaObject()

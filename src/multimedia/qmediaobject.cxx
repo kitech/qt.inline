@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QMediaObject is pure virtual: false
-// QMediaObject has virtual projected: true
+// QMediaObject has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,51 +17,7 @@
 class Q_DECL_EXPORT MyQMediaObject : public QMediaObject {
 public:
   virtual ~MyQMediaObject() {}
-// void QMediaObject(QObject *, QMediaService *)
-MyQMediaObject(QObject * parent, QMediaService * service) : QMediaObject(parent, service) {}
-// void QMediaObject(QMediaObjectPrivate &, QObject *, QMediaService *)
-MyQMediaObject(QMediaObjectPrivate & dd, QObject * parent, QMediaService * service) : QMediaObject(dd, parent, service) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void addPropertyWatch(const QByteArray &)
-  virtual void addPropertyWatch(const QByteArray & name)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addPropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QMediaObject::addPropertyWatch(name);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void removePropertyWatch(const QByteArray &)
-  virtual void removePropertyWatch(const QByteArray & name)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"removePropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QMediaObject::removePropertyWatch(name);
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaobject.h:93
-// [-2] void addPropertyWatch(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN12QMediaObject16addPropertyWatchERK10QByteArray(void *this_, QByteArray* name) {
-  ((QMediaObject*)this_)->QMediaObject::addPropertyWatch(*name);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaobject.h:94
-// [-2] void removePropertyWatch(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN12QMediaObject19removePropertyWatchERK10QByteArray(void *this_, QByteArray* name) {
-  ((QMediaObject*)this_)->QMediaObject::removePropertyWatch(*name);
-}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaobject.h:58

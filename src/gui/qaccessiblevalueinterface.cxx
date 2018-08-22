@@ -17,8 +17,91 @@
 class Q_DECL_EXPORT MyQAccessibleValueInterface : public QAccessibleValueInterface {
 public:
   virtual ~MyQAccessibleValueInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant currentValue()
+  virtual QVariant currentValue() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentValue", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setCurrentValue(const QVariant &)
+  virtual void setCurrentValue(const QVariant & value)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCurrentValue", &handled, 1, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAccessibleValueInterface::setCurrentValue(value);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant maximumValue()
+  virtual QVariant maximumValue() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"maximumValue", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant minimumValue()
+  virtual QVariant minimumValue() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumValue", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant minimumStepSize()
+  virtual QVariant minimumStepSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumStepSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:568
+// [16] QVariant currentValue()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:569
+// [-2] void setCurrentValue(const QVariant &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:570
+// [16] QVariant maximumValue()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:571
+// [16] QVariant minimumValue()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:572
+// [16] QVariant minimumStepSize()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:566
 // [-2] void ~QAccessibleValueInterface()

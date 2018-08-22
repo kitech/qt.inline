@@ -17,10 +17,88 @@
 class Q_DECL_EXPORT MyQMediaStreamsControl : public QMediaStreamsControl {
 public:
   virtual ~MyQMediaStreamsControl() {}
-// void QMediaStreamsControl(QObject *)
-MyQMediaStreamsControl(QObject * parent) : QMediaStreamsControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int streamCount()
+  virtual int streamCount()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"streamCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMediaStreamsControl::StreamType streamType(int)
+  virtual QMediaStreamsControl::StreamType streamType(int streamNumber)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"streamType", &handled, 1, (uint64_t)streamNumber, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaStreamsControl::StreamType)(int)(irv);
+      // Enum Enum QMediaStreamsControl::StreamType
+    } else {
+    return (QMediaStreamsControl::StreamType){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant metaData(int, const QString &)
+  virtual QVariant metaData(int streamNumber, const QString & key)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metaData", &handled, 2, (uint64_t)streamNumber, (uint64_t)&key, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isActive(int)
+  virtual bool isActive(int streamNumber)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isActive", &handled, 1, (uint64_t)streamNumber, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setActive(int, bool)
+  virtual void setActive(int streamNumber, bool state)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setActive", &handled, 2, (uint64_t)streamNumber, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaStreamsControl::setActive(streamNumber, state);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:63
+// [4] int streamCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:64
+// [4] QMediaStreamsControl::StreamType streamType(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:66
+// [16] QVariant metaData(int, const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:68
+// [1] bool isActive(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:69
+// [-2] void setActive(int, bool)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:56
 // [8] const QMetaObject * metaObject()

@@ -17,10 +17,20 @@
 class Q_DECL_EXPORT MyQQuickPaintedItem : public QQuickPaintedItem {
 public:
   virtual ~MyQQuickPaintedItem() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void paint(QPainter *)
+  virtual void paint(QPainter * painter)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paint", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQuickPaintedItem::paint(painter);
+  }
+  }
+
 // void QQuickPaintedItem(QQuickItem *)
 MyQQuickPaintedItem(QQuickItem * parent) : QQuickPaintedItem(parent) {}
-// void QQuickPaintedItem(QQuickPaintedItemPrivate &, QQuickItem *)
-MyQQuickPaintedItem(QQuickPaintedItemPrivate & dd, QQuickItem * parent) : QQuickPaintedItem(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
   virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1)  override {
@@ -60,6 +70,9 @@ MyQQuickPaintedItem(QQuickPaintedItemPrivate & dd, QQuickItem * parent) : QQuick
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickpainteditem.h:108
+// [-2] void paint(QPainter *)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickpainteditem.h:122
 // [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)

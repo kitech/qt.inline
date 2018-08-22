@@ -17,10 +17,40 @@
 class Q_DECL_EXPORT MyQMediaNetworkAccessControl : public QMediaNetworkAccessControl {
 public:
   virtual ~MyQMediaNetworkAccessControl() {}
-// void QMediaNetworkAccessControl(QObject *)
-MyQMediaNetworkAccessControl(QObject * parent) : QMediaNetworkAccessControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setConfigurations(const QList<QNetworkConfiguration> &)
+  virtual void setConfigurations(const QList<QNetworkConfiguration> & configuration)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setConfigurations", &handled, 1, (uint64_t)&configuration, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaNetworkAccessControl::setConfigurations(configuration);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QNetworkConfiguration currentConfiguration()
+  virtual QNetworkConfiguration currentConfiguration() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentConfiguration", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QNetworkConfiguration){};}
+    auto prv = (QNetworkConfiguration*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QNetworkConfiguration
+    } else {
+    return (QNetworkConfiguration){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmedianetworkaccesscontrol.h:61
+// [-2] void setConfigurations(const QList<QNetworkConfiguration> &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmedianetworkaccesscontrol.h:62
+// [8] QNetworkConfiguration currentConfiguration()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmedianetworkaccesscontrol.h:56
 // [8] const QMetaObject * metaObject()

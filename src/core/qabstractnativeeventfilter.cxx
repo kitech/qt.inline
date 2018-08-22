@@ -18,10 +18,26 @@
 class Q_DECL_EXPORT MyQAbstractNativeEventFilter : public QAbstractNativeEventFilter {
 public:
   virtual ~MyQAbstractNativeEventFilter() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool nativeEventFilter(const QByteArray &, void *, long *)
+  virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nativeEventFilter", &handled, 3, (uint64_t)&eventType, (uint64_t)message, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 // void QAbstractNativeEventFilter()
 MyQAbstractNativeEventFilter() : QAbstractNativeEventFilter() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractnativeeventfilter.h:55
+// [1] bool nativeEventFilter(const QByteArray &, void *, long *)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h:52
 // [-2] void QAbstractNativeEventFilter()

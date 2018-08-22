@@ -28,8 +28,6 @@ MyQRandomGenerator(std::seed_seq & sseq) : QRandomGenerator(sseq) {}
 MyQRandomGenerator(const quint32 * begin, const quint32 * end) : QRandomGenerator(begin, end) {}
 // void QRandomGenerator(const QRandomGenerator &)
 MyQRandomGenerator(const QRandomGenerator & other) : QRandomGenerator(other) {}
-// void QRandomGenerator(QRandomGenerator::System)
-MyQRandomGenerator(QRandomGenerator::System arg0) : QRandomGenerator(arg0) {}
 };
 
 // Public inline Visibility=Default Availability=Available

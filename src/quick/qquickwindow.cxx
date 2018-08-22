@@ -22,8 +22,6 @@ public:
 MyQQuickWindow(QWindow * parent) : QQuickWindow(parent) {}
 // void QQuickWindow(QQuickRenderControl *)
 MyQQuickWindow(QQuickRenderControl * renderControl) : QQuickWindow(renderControl) {}
-// void QQuickWindow(QQuickWindowPrivate &, QWindow *)
-MyQQuickWindow(QQuickWindowPrivate & dd, QWindow * parent) : QQuickWindow(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void exposeEvent(QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0)  override {

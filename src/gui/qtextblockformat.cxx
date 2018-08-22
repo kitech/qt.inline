@@ -19,8 +19,6 @@ public:
   virtual ~MyQTextBlockFormat() {}
 // void QTextBlockFormat()
 MyQTextBlockFormat() : QTextBlockFormat() {}
-// void QTextBlockFormat(const QTextFormat &)
-MyQTextBlockFormat(const QTextFormat & fmt_) : QTextBlockFormat(fmt_) {}
 };
 
 // Public Visibility=Default Availability=Available

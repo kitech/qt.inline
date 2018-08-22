@@ -71,20 +71,6 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] QList<QWidget *> createdWidgets()
-  virtual QList<QWidget *> createdWidgets() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createdWidgets", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QList<QWidget *>){};}
-    auto prv = (QList<QWidget *>*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Unexposed Record QList<QWidget *>
-    } else {
-    return QWidgetAction::createdWidgets();
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -117,15 +103,6 @@ void* C_ZN13QWidgetAction12createWidgetEP7QWidget(void *this_, QWidget * parent)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QWidgetAction12deleteWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QWidgetAction*)this_)->QWidgetAction::deleteWidget(widget);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwidgetaction.h:73
-// [-2] QList<QWidget *> createdWidgets()
-extern "C" Q_DECL_EXPORT
-QList<QWidget *>* C_ZNK13QWidgetAction14createdWidgetsEv(void *this_) {
-  auto rv = ((QWidgetAction*)this_)->QWidgetAction::createdWidgets();
-return new QList<QWidget *>(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

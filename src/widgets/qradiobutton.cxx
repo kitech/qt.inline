@@ -71,18 +71,6 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionButton *)
-  virtual void initStyleOption(QStyleOptionButton * button) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)button, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QRadioButton::initStyleOption(button);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -115,14 +103,6 @@ void C_ZN12QRadioButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ar
 extern "C" Q_DECL_EXPORT
 void C_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QRadioButton*)this_)->QRadioButton::mouseMoveEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qradiobutton.h:71
-// [-2] void initStyleOption(QStyleOptionButton *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * button) {
-  ((QRadioButton*)this_)->QRadioButton::initStyleOption(button);
 }
 
 // Public virtual Visibility=Default Availability=Available

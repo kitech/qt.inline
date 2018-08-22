@@ -17,10 +17,181 @@
 class Q_DECL_EXPORT MyQMediaRecorderControl : public QMediaRecorderControl {
 public:
   virtual ~MyQMediaRecorderControl() {}
-// void QMediaRecorderControl(QObject *)
-MyQMediaRecorderControl(QObject * parent) : QMediaRecorderControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QUrl outputLocation()
+  virtual QUrl outputLocation() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"outputLocation", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QUrl){};}
+    auto prv = (QUrl*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QUrl
+    } else {
+    return (QUrl){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool setOutputLocation(const QUrl &)
+  virtual bool setOutputLocation(const QUrl & location)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOutputLocation", &handled, 1, (uint64_t)&location, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMediaRecorder::State state()
+  virtual QMediaRecorder::State state() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaRecorder::State)(int)(irv);
+      // Elaborated Enum QMediaRecorder::State
+    } else {
+    return (QMediaRecorder::State){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMediaRecorder::Status status()
+  virtual QMediaRecorder::Status status() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"status", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaRecorder::Status)(int)(irv);
+      // Elaborated Enum QMediaRecorder::Status
+    } else {
+    return (QMediaRecorder::Status){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 duration()
+  virtual qint64 duration() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"duration", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isMuted()
+  virtual bool isMuted() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isMuted", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal volume()
+  virtual qreal volume() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"volume", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void applySettings()
+  virtual void applySettings()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"applySettings", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaRecorderControl::applySettings();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setState(QMediaRecorder::State)
+  virtual void setState(QMediaRecorder::State state)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaRecorderControl::setState(state);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setMuted(bool)
+  virtual void setMuted(bool muted)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMuted", &handled, 1, (uint64_t)muted, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaRecorderControl::setMuted(muted);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setVolume(qreal)
+  virtual void setVolume(qreal volume)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVolume", &handled, 1, (uint64_t)&volume, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaRecorderControl::setVolume(volume);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:63
+// [8] QUrl outputLocation()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:64
+// [1] bool setOutputLocation(const QUrl &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:66
+// [4] QMediaRecorder::State state()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:67
+// [4] QMediaRecorder::Status status()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:69
+// [8] qint64 duration()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:71
+// [1] bool isMuted()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:72
+// [8] qreal volume()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:74
+// [-2] void applySettings()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:86
+// [-2] void setState(QMediaRecorder::State)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:87
+// [-2] void setMuted(bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:88
+// [-2] void setVolume(qreal)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediarecordercontrol.h:58
 // [8] const QMetaObject * metaObject()

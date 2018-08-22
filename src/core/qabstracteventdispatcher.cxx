@@ -17,12 +17,197 @@
 class Q_DECL_EXPORT MyQAbstractEventDispatcher : public QAbstractEventDispatcher {
 public:
   virtual ~MyQAbstractEventDispatcher() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool processEvents(QEventLoop::ProcessEventsFlags)
+  virtual bool processEvents(QFlags<QEventLoop::ProcessEventsFlag> flags)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"processEvents", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool hasPendingEvents()
+  virtual bool hasPendingEvents()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hasPendingEvents", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void registerSocketNotifier(QSocketNotifier *)
+  virtual void registerSocketNotifier(QSocketNotifier * notifier)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerSocketNotifier", &handled, 1, (uint64_t)notifier, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractEventDispatcher::registerSocketNotifier(notifier);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void unregisterSocketNotifier(QSocketNotifier *)
+  virtual void unregisterSocketNotifier(QSocketNotifier * notifier)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unregisterSocketNotifier", &handled, 1, (uint64_t)notifier, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractEventDispatcher::unregisterSocketNotifier(notifier);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void registerTimer(int, int, Qt::TimerType, QObject *)
+  virtual void registerTimer(int timerId, int interval, Qt::TimerType timerType, QObject * object)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerTimer", &handled, 4, (uint64_t)timerId, (uint64_t)interval, (uint64_t)timerType, (uint64_t)object, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractEventDispatcher::registerTimer(timerId, interval, timerType, object);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool unregisterTimer(int)
+  virtual bool unregisterTimer(int timerId)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unregisterTimer", &handled, 1, (uint64_t)timerId, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool unregisterTimers(QObject *)
+  virtual bool unregisterTimers(QObject * object)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unregisterTimers", &handled, 1, (uint64_t)object, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QAbstractEventDispatcher::TimerInfo> registeredTimers(QObject *)
+  virtual QList<QAbstractEventDispatcher::TimerInfo> registeredTimers(QObject * object) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registeredTimers", &handled, 1, (uint64_t)object, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QAbstractEventDispatcher::TimerInfo>){};}
+    auto prv = (QList<QAbstractEventDispatcher::TimerInfo>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QAbstractEventDispatcher::TimerInfo>
+    } else {
+    return (QList<QAbstractEventDispatcher::TimerInfo>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int remainingTime(int)
+  virtual int remainingTime(int timerId)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"remainingTime", &handled, 1, (uint64_t)timerId, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void wakeUp()
+  virtual void wakeUp()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wakeUp", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractEventDispatcher::wakeUp();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void interrupt()
+  virtual void interrupt()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"interrupt", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractEventDispatcher::interrupt();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void flush()
+  virtual void flush()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"flush", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractEventDispatcher::flush();
+  }
+  }
+
 // void QAbstractEventDispatcher(QObject *)
 MyQAbstractEventDispatcher(QObject * parent) : QAbstractEventDispatcher(parent) {}
-// void QAbstractEventDispatcher(QAbstractEventDispatcherPrivate &, QObject *)
-MyQAbstractEventDispatcher(QAbstractEventDispatcherPrivate & arg0, QObject * parent) : QAbstractEventDispatcher(arg0, parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:78
+// [1] bool processEvents(QEventLoop::ProcessEventsFlags)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:79
+// [1] bool hasPendingEvents()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:81
+// [-2] void registerSocketNotifier(QSocketNotifier *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:82
+// [-2] void unregisterSocketNotifier(QSocketNotifier *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:91
+// [-2] void registerTimer(int, int, Qt::TimerType, QObject *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:92
+// [1] bool unregisterTimer(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:93
+// [1] bool unregisterTimers(QObject *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:94
+// [-2] QList<QAbstractEventDispatcher::TimerInfo> registeredTimers(QObject *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:96
+// [4] int remainingTime(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:103
+// [-2] void wakeUp()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:104
+// [-2] void interrupt()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:105
+// [-2] void flush()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:58
 // [8] const QMetaObject * metaObject()

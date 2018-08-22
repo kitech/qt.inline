@@ -32,19 +32,6 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [1] bool isComponentComplete()
-  virtual bool isComponentComplete() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isComponentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QQuickItem::isComponentComplete();
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
   virtual void itemChange(QQuickItem::ItemChange arg0, const QQuickItem::ItemChangeData & arg1)  override {
@@ -54,56 +41,6 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
       // Void Void void
     } else {
     QQuickItem::itemChange(arg0, arg1);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void updateInputMethod(Qt::InputMethodQueries)
-  virtual void updateInputMethod(QFlags<Qt::InputMethodQuery> queries)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateInputMethod", &handled, 1, (uint64_t)queries, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QQuickItem::updateInputMethod(queries);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool widthValid()
-  virtual bool widthValid() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widthValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QQuickItem::widthValid();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool heightValid()
-  virtual bool heightValid() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"heightValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QQuickItem::heightValid();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setImplicitSize(qreal, qreal)
-  virtual void setImplicitSize(qreal arg0, qreal arg1)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setImplicitSize", &handled, 2, (uint64_t)&arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QQuickItem::setImplicitSize(arg0, arg1);
   }
   }
 
@@ -445,8 +382,6 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
   }
   }
 
-// void QQuickItem(QQuickItemPrivate &, QQuickItem *)
-MyQQuickItem(QQuickItemPrivate & dd, QQuickItem * parent) : QQuickItem(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -457,52 +392,12 @@ bool C_ZN10QQuickItem5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QQuickItem*)this_)->QQuickItem::event(arg0);
 }
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:397
-// [1] bool isComponentComplete()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QQuickItem19isComponentCompleteEv(void *this_) {
-  return (bool)((QQuickItem*)this_)->QQuickItem::isComponentComplete();
-}
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:398
 // [-2] void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQuickItem10itemChangeENS_10ItemChangeERKNS_14ItemChangeDataE(void *this_, QQuickItem::ItemChange arg0, QQuickItem::ItemChangeData* arg1) {
   ((QQuickItem*)this_)->QQuickItem::itemChange(arg0, *arg1);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:401
-// [-2] void updateInputMethod(Qt::InputMethodQueries)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QQuickItem17updateInputMethodE6QFlagsIN2Qt16InputMethodQueryEE(void *this_, QFlags<Qt::InputMethodQuery> queries) {
-  ((QQuickItem*)this_)->QQuickItem::updateInputMethod(queries);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:404
-// [1] bool widthValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QQuickItem10widthValidEv(void *this_) {
-  return (bool)((QQuickItem*)this_)->QQuickItem::widthValid();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:405
-// [1] bool heightValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QQuickItem11heightValidEv(void *this_) {
-  return (bool)((QQuickItem*)this_)->QQuickItem::heightValid();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:406
-// [-2] void setImplicitSize(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QQuickItem15setImplicitSizeEdd(void *this_, qreal arg0, qreal arg1) {
-  ((QQuickItem*)this_)->QQuickItem::setImplicitSize(arg0, arg1);
 }
 
 // Protected virtual Visibility=Default Availability=Available

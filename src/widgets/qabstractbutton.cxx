@@ -189,8 +189,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
   }
   }
 
-// void QAbstractButton(QAbstractButtonPrivate &, QWidget *)
-MyQAbstractButton(QAbstractButtonPrivate & dd, QWidget * parent) : QAbstractButton(dd, parent) {}
 };
 
 // Protected purevirtual virtual Visibility=Default Availability=Available

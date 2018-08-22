@@ -17,8 +17,53 @@
 class Q_DECL_EXPORT MyQAccessibleEditableTextInterface : public QAccessibleEditableTextInterface {
 public:
   virtual ~MyQAccessibleEditableTextInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void deleteText(int, int)
+  virtual void deleteText(int startOffset, int endOffset)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"deleteText", &handled, 2, (uint64_t)startOffset, (uint64_t)endOffset, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAccessibleEditableTextInterface::deleteText(startOffset, endOffset);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void insertText(int, const QString &)
+  virtual void insertText(int offset, const QString & text)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"insertText", &handled, 2, (uint64_t)offset, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAccessibleEditableTextInterface::insertText(offset, text);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void replaceText(int, int, const QString &)
+  virtual void replaceText(int startOffset, int endOffset, const QString & text)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"replaceText", &handled, 3, (uint64_t)startOffset, (uint64_t)endOffset, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAccessibleEditableTextInterface::replaceText(startOffset, endOffset, text);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:558
+// [-2] void deleteText(int, int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:559
+// [-2] void insertText(int, const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:560
+// [-2] void replaceText(int, int, const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:556
 // [-2] void ~QAccessibleEditableTextInterface()

@@ -21,8 +21,6 @@ public:
 MyQStyleOptionComboBox() : QStyleOptionComboBox() {}
 // void QStyleOptionComboBox(const QStyleOptionComboBox &)
 MyQStyleOptionComboBox(const QStyleOptionComboBox & other) : QStyleOptionComboBox(other) {}
-// void QStyleOptionComboBox(int)
-MyQStyleOptionComboBox(int version) : QStyleOptionComboBox(version) {}
 };
 
 // Public Visibility=Default Availability=Available

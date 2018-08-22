@@ -17,8 +17,39 @@
 class Q_DECL_EXPORT MyQMediaServiceProviderPlugin : public QMediaServiceProviderPlugin {
 public:
   virtual ~MyQMediaServiceProviderPlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QMediaService * create(const QString &)
+  virtual QMediaService * create(const QString & key)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 1, (uint64_t)&key, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaService *)(irv);
+      // Pointer Pointer QMediaService *
+    } else {
+    return (QMediaService *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void release(QMediaService *)
+  virtual void release(QMediaService * service)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"release", &handled, 1, (uint64_t)service, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaServiceProviderPlugin::release(service);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:112
+// [8] QMediaService * create(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:113
+// [-2] void release(QMediaService *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:194
 // [8] const QMetaObject * metaObject()

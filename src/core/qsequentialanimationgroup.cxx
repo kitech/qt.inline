@@ -20,8 +20,6 @@ public:
   virtual ~MyQSequentialAnimationGroup() {}
 // void QSequentialAnimationGroup(QObject *)
 MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent) {}
-// void QSequentialAnimationGroup(QSequentialAnimationGroupPrivate &, QObject *)
-MyQSequentialAnimationGroup(QSequentialAnimationGroupPrivate & dd, QObject * parent) : QSequentialAnimationGroup(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {

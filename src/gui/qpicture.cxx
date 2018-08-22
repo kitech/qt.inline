@@ -21,8 +21,6 @@ public:
 MyQPicture(int formatVersion) : QPicture(formatVersion) {}
 // void QPicture(const QPicture &)
 MyQPicture(const QPicture & arg0) : QPicture(arg0) {}
-// void QPicture(QPicturePrivate &)
-MyQPicture(QPicturePrivate & data) : QPicture(data) {}
 // Protected virtual Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric m) const override {

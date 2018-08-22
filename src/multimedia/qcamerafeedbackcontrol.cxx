@@ -18,10 +18,87 @@
 class Q_DECL_EXPORT MyQCameraFeedbackControl : public QCameraFeedbackControl {
 public:
   virtual ~MyQCameraFeedbackControl() {}
-// void QCameraFeedbackControl(QObject *)
-MyQCameraFeedbackControl(QObject * parent) : QCameraFeedbackControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isEventFeedbackLocked(QCameraFeedbackControl::EventType)
+  virtual bool isEventFeedbackLocked(QCameraFeedbackControl::EventType arg0) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isEventFeedbackLocked", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isEventFeedbackEnabled(QCameraFeedbackControl::EventType)
+  virtual bool isEventFeedbackEnabled(QCameraFeedbackControl::EventType arg0) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isEventFeedbackEnabled", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool setEventFeedbackEnabled(QCameraFeedbackControl::EventType, bool)
+  virtual bool setEventFeedbackEnabled(QCameraFeedbackControl::EventType arg0, bool arg1)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setEventFeedbackEnabled", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void resetEventFeedback(QCameraFeedbackControl::EventType)
+  virtual void resetEventFeedback(QCameraFeedbackControl::EventType arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resetEventFeedback", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraFeedbackControl::resetEventFeedback(arg0);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool setEventFeedbackSound(QCameraFeedbackControl::EventType, const QString &)
+  virtual bool setEventFeedbackSound(QCameraFeedbackControl::EventType arg0, const QString & filePath)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setEventFeedbackSound", &handled, 2, (uint64_t)arg0, (uint64_t)&filePath, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:77
+// [1] bool isEventFeedbackLocked(QCameraFeedbackControl::EventType)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:79
+// [1] bool isEventFeedbackEnabled(QCameraFeedbackControl::EventType)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:81
+// [1] bool setEventFeedbackEnabled(QCameraFeedbackControl::EventType, bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:82
+// [-2] void resetEventFeedback(QCameraFeedbackControl::EventType)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:84
+// [1] bool setEventFeedbackSound(QCameraFeedbackControl::EventType, const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:58
 // [8] const QMetaObject * metaObject()

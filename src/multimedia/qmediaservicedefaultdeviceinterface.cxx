@@ -18,8 +18,25 @@
 class Q_DECL_EXPORT MyQMediaServiceDefaultDeviceInterface : public QMediaServiceDefaultDeviceInterface {
 public:
   virtual ~MyQMediaServiceDefaultDeviceInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QByteArray defaultDevice(const QByteArray &)
+  virtual QByteArray defaultDevice(const QByteArray & service) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"defaultDevice", &handled, 1, (uint64_t)&service, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QByteArray){};}
+    auto prv = (QByteArray*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QByteArray
+    } else {
+    return (QByteArray){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:157
+// [8] QByteArray defaultDevice(const QByteArray &)
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:156
 // [-2] void ~QMediaServiceDefaultDeviceInterface()

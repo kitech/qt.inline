@@ -95,18 +95,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionButton *)
-  virtual void initStyleOption(QStyleOptionButton * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QCheckBox::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -155,14 +143,6 @@ void C_ZN9QCheckBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) 
 extern "C" Q_DECL_EXPORT
 void C_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
   ((QCheckBox*)this_)->QCheckBox::mouseMoveEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcheckbox.h:84
-// [-2] void initStyleOption(QStyleOptionButton *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * option) {
-  ((QCheckBox*)this_)->QCheckBox::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

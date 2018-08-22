@@ -20,8 +20,6 @@ public:
   virtual ~MyQGesture() {}
 // void QGesture(QObject *)
 MyQGesture(QObject * parent) : QGesture(parent) {}
-// void QGesture(QGesturePrivate &, QObject *)
-MyQGesture(QGesturePrivate & dd, QObject * parent) : QGesture(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

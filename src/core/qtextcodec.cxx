@@ -16,6 +16,33 @@
 
 class Q_DECL_EXPORT MyQTextCodec : public QTextCodec {
 public:
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QByteArray name()
+  virtual QByteArray name() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"name", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QByteArray){};}
+    auto prv = (QByteArray*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QByteArray
+    } else {
+    return (QByteArray){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int mibEnum()
+  virtual int mibEnum() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mibEnum", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [8] QString convertToUnicode(const char *, int, QTextCodec::ConverterState *)
   virtual QString convertToUnicode(const char * in, int length, QTextCodec::ConverterState * state) const override {
@@ -44,12 +71,14 @@ public:
   }
   }
 
-// void QTextCodec()
-MyQTextCodec() : QTextCodec() {}
-// Protected virtual Visibility=Default Availability=Available
-// [-2] void ~QTextCodec()
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:122
+// [8] QByteArray name()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:124
+// [4] int mibEnum()
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:127
 // [8] QString convertToUnicode(const char *, int, QTextCodec::ConverterState *)

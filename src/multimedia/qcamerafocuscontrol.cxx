@@ -17,10 +17,150 @@
 class Q_DECL_EXPORT MyQCameraFocusControl : public QCameraFocusControl {
 public:
   virtual ~MyQCameraFocusControl() {}
-// void QCameraFocusControl(QObject *)
-MyQCameraFocusControl(QObject * parent) : QCameraFocusControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCameraFocus::FocusModes focusMode()
+  virtual QCameraFocus::FocusModes focusMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCameraFocus::FocusModes)(int)(irv);
+      // Elaborated Record QFlags<QCameraFocus::FocusMode>
+    } else {
+    return (QCameraFocus::FocusModes){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFocusMode(QCameraFocus::FocusModes)
+  virtual void setFocusMode(QFlags<QCameraFocus::FocusMode> mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFocusMode", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraFocusControl::setFocusMode(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isFocusModeSupported(QCameraFocus::FocusModes)
+  virtual bool isFocusModeSupported(QFlags<QCameraFocus::FocusMode> mode) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFocusModeSupported", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCameraFocus::FocusPointMode focusPointMode()
+  virtual QCameraFocus::FocusPointMode focusPointMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusPointMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCameraFocus::FocusPointMode)(int)(irv);
+      // Elaborated Enum QCameraFocus::FocusPointMode
+    } else {
+    return (QCameraFocus::FocusPointMode){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFocusPointMode(QCameraFocus::FocusPointMode)
+  virtual void setFocusPointMode(QCameraFocus::FocusPointMode mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFocusPointMode", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraFocusControl::setFocusPointMode(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isFocusPointModeSupported(QCameraFocus::FocusPointMode)
+  virtual bool isFocusPointModeSupported(QCameraFocus::FocusPointMode mode) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFocusPointModeSupported", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QPointF customFocusPoint()
+  virtual QPointF customFocusPoint() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"customFocusPoint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QPointF){};}
+    auto prv = (QPointF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QPointF
+    } else {
+    return (QPointF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setCustomFocusPoint(const QPointF &)
+  virtual void setCustomFocusPoint(const QPointF & point)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCustomFocusPoint", &handled, 1, (uint64_t)&point, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraFocusControl::setCustomFocusPoint(point);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QCameraFocusZoneList focusZones()
+  virtual QCameraFocusZoneList focusZones() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusZones", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QCameraFocusZoneList*)(irv);
+      // Typedef Record QList<QCameraFocusZone>
+    } else {
+    return (QCameraFocusZoneList){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:60
+// [4] QCameraFocus::FocusModes focusMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:61
+// [-2] void setFocusMode(QCameraFocus::FocusModes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:62
+// [1] bool isFocusModeSupported(QCameraFocus::FocusModes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:64
+// [4] QCameraFocus::FocusPointMode focusPointMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:65
+// [-2] void setFocusPointMode(QCameraFocus::FocusPointMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:66
+// [1] bool isFocusPointModeSupported(QCameraFocus::FocusPointMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:67
+// [16] QPointF customFocusPoint()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:68
+// [-2] void setCustomFocusPoint(const QPointF &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:70
+// [-2] QCameraFocusZoneList focusZones()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerafocuscontrol.h:55
 // [8] const QMetaObject * metaObject()

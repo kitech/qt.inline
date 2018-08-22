@@ -92,18 +92,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionRubberBand *)
-  virtual void initStyleOption(QStyleOptionRubberBand * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QRubberBand::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -152,14 +140,6 @@ void C_ZN11QRubberBand11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * 
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand9moveEventEP10QMoveEvent(void *this_, QMoveEvent * arg0) {
   ((QRubberBand*)this_)->QRubberBand::moveEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:82
-// [-2] void initStyleOption(QStyleOptionRubberBand *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand(void *this_, QStyleOptionRubberBand * option) {
-  ((QRubberBand*)this_)->QRubberBand::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

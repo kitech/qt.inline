@@ -17,10 +17,91 @@
 class Q_DECL_EXPORT MyQAudioOutputSelectorControl : public QAudioOutputSelectorControl {
 public:
   virtual ~MyQAudioOutputSelectorControl() {}
-// void QAudioOutputSelectorControl(QObject *)
-MyQAudioOutputSelectorControl(QObject * parent) : QAudioOutputSelectorControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QList<QString> availableOutputs()
+  virtual QList<QString> availableOutputs() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"availableOutputs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QString>){};}
+    auto prv = (QList<QString>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QString>
+    } else {
+    return (QList<QString>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString outputDescription(const QString &)
+  virtual QString outputDescription(const QString & name) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"outputDescription", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString defaultOutput()
+  virtual QString defaultOutput() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"defaultOutput", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString activeOutput()
+  virtual QString activeOutput() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"activeOutput", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setActiveOutput(const QString &)
+  virtual void setActiveOutput(const QString & name)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setActiveOutput", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioOutputSelectorControl::setActiveOutput(name);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:58
+// [8] QList<QString> availableOutputs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:59
+// [8] QString outputDescription(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:60
+// [8] QString defaultOutput()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:61
+// [8] QString activeOutput()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:64
+// [-2] void setActiveOutput(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:53
 // [8] const QMetaObject * metaObject()

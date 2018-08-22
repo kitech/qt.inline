@@ -25,8 +25,6 @@ MyQFile(const QString & name) : QFile(name) {}
 MyQFile(QObject * parent) : QFile(parent) {}
 // void QFile(const QString &, QObject *)
 MyQFile(const QString & name, QObject * parent) : QFile(name, parent) {}
-// void QFile(QFilePrivate &, QObject *)
-MyQFile(QFilePrivate & dd, QObject * parent) : QFile(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

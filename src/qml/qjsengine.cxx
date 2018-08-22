@@ -22,8 +22,6 @@ public:
 MyQJSEngine() : QJSEngine() {}
 // void QJSEngine(QObject *)
 MyQJSEngine(QObject * parent) : QJSEngine(parent) {}
-// void QJSEngine(QJSEnginePrivate &, QObject *)
-MyQJSEngine(QJSEnginePrivate & dd, QObject * parent) : QJSEngine(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

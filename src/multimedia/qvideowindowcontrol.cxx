@@ -17,10 +17,289 @@
 class Q_DECL_EXPORT MyQVideoWindowControl : public QVideoWindowControl {
 public:
   virtual ~MyQVideoWindowControl() {}
-// void QVideoWindowControl(QObject *)
-MyQVideoWindowControl(QObject * parent) : QVideoWindowControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] WId winId()
+  virtual WId winId() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"winId", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (WId)(irv);
+      // Typedef ULongLong unsigned long long
+    } else {
+    return (WId){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setWinId(WId)
+  virtual void setWinId(WId id)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setWinId", &handled, 1, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setWinId(id);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QRect displayRect()
+  virtual QRect displayRect() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"displayRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRect
+    } else {
+    return (QRect){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setDisplayRect(const QRect &)
+  virtual void setDisplayRect(const QRect & rect)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setDisplayRect", &handled, 1, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setDisplayRect(rect);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isFullScreen()
+  virtual bool isFullScreen() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFullScreen", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFullScreen(bool)
+  virtual void setFullScreen(bool fullScreen)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFullScreen", &handled, 1, (uint64_t)fullScreen, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setFullScreen(fullScreen);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void repaint()
+  virtual void repaint()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"repaint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::repaint();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize nativeSize()
+  virtual QSize nativeSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nativeSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] Qt::AspectRatioMode aspectRatioMode()
+  virtual Qt::AspectRatioMode aspectRatioMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"aspectRatioMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (Qt::AspectRatioMode)(int)(irv);
+      // Elaborated Enum Qt::AspectRatioMode
+    } else {
+    return (Qt::AspectRatioMode){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setAspectRatioMode(Qt::AspectRatioMode)
+  virtual void setAspectRatioMode(Qt::AspectRatioMode mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAspectRatioMode", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setAspectRatioMode(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int brightness()
+  virtual int brightness() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"brightness", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setBrightness(int)
+  virtual void setBrightness(int brightness)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setBrightness", &handled, 1, (uint64_t)brightness, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setBrightness(brightness);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int contrast()
+  virtual int contrast() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contrast", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setContrast(int)
+  virtual void setContrast(int contrast)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setContrast", &handled, 1, (uint64_t)contrast, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setContrast(contrast);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int hue()
+  virtual int hue() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hue", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setHue(int)
+  virtual void setHue(int hue)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setHue", &handled, 1, (uint64_t)hue, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setHue(hue);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int saturation()
+  virtual int saturation() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"saturation", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setSaturation(int)
+  virtual void setSaturation(int saturation)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSaturation", &handled, 1, (uint64_t)saturation, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoWindowControl::setSaturation(saturation);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:60
+// [8] WId winId()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:61
+// [-2] void setWinId(WId)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:63
+// [16] QRect displayRect()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:64
+// [-2] void setDisplayRect(const QRect &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:66
+// [1] bool isFullScreen()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:67
+// [-2] void setFullScreen(bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:69
+// [-2] void repaint()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:71
+// [8] QSize nativeSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:73
+// [4] Qt::AspectRatioMode aspectRatioMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:74
+// [-2] void setAspectRatioMode(Qt::AspectRatioMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:76
+// [4] int brightness()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:77
+// [-2] void setBrightness(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:79
+// [4] int contrast()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:80
+// [-2] void setContrast(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:82
+// [4] int hue()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:83
+// [-2] void setHue(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:85
+// [4] int saturation()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:86
+// [-2] void setSaturation(int)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideowindowcontrol.h:55
 // [8] const QMetaObject * metaObject()

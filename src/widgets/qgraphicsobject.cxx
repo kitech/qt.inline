@@ -18,20 +18,32 @@
 class Q_DECL_EXPORT MyQGraphicsObject : public QGraphicsObject {
 public:
   virtual ~MyQGraphicsObject() {}
-// Protected Visibility=Default Availability=Available
-// [-2] void updateMicroFocus()
-  virtual void updateMicroFocus()   {
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF boundingRect()
+  virtual QRectF boundingRect() const override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateMicroFocus", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"boundingRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
-      // Void Void void
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
     } else {
-    QGraphicsObject::updateMicroFocus();
+    return (QRectF){};
   }
   }
 
-// void QGraphicsObject(QGraphicsItemPrivate &, QGraphicsItem *)
-MyQGraphicsObject(QGraphicsItemPrivate & dd, QGraphicsItem * parent) : QGraphicsObject(dd, parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
+  virtual void paint(QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paint", &handled, 3, (uint64_t)painter, (uint64_t)option, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QGraphicsObject::paint(painter, option, widget);
+  }
+  }
+
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * ev)  override {
@@ -47,17 +59,12 @@ MyQGraphicsObject(QGraphicsItemPrivate & dd, QGraphicsItem * parent) : QGraphics
 
 };
 
-// Protected Visibility=Default Availability=Available
-// since 4.7
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:572
-// [-2] void updateMicroFocus()
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void C_ZN15QGraphicsObject16updateMicroFocusEv(void *this_) {
-  ((QGraphicsObject*)this_)->QGraphicsObject::updateMicroFocus();
-}
-#endif // QT_VERSION >= 0x040700
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:324
+// [32] QRectF boundingRect()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:344
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:591
 // [1] bool event(QEvent *)

@@ -18,10 +18,124 @@
 class Q_DECL_EXPORT MyQGeoAreaMonitorSource : public QGeoAreaMonitorSource {
 public:
   virtual ~MyQGeoAreaMonitorSource() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QGeoAreaMonitorSource::Error error()
+  virtual QGeoAreaMonitorSource::Error error() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"error", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QGeoAreaMonitorSource::Error)(int)(irv);
+      // Enum Enum QGeoAreaMonitorSource::Error
+    } else {
+    return (QGeoAreaMonitorSource::Error){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QGeoAreaMonitorSource::AreaMonitorFeatures supportedAreaMonitorFeatures()
+  virtual QGeoAreaMonitorSource::AreaMonitorFeatures supportedAreaMonitorFeatures() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedAreaMonitorFeatures", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QGeoAreaMonitorSource::AreaMonitorFeatures)(int)(irv);
+      // Typedef Record QFlags<QGeoAreaMonitorSource::AreaMonitorFeature>
+    } else {
+    return (QGeoAreaMonitorSource::AreaMonitorFeatures){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool startMonitoring(const QGeoAreaMonitorInfo &)
+  virtual bool startMonitoring(const QGeoAreaMonitorInfo & monitor)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startMonitoring", &handled, 1, (uint64_t)&monitor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool stopMonitoring(const QGeoAreaMonitorInfo &)
+  virtual bool stopMonitoring(const QGeoAreaMonitorInfo & monitor)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stopMonitoring", &handled, 1, (uint64_t)&monitor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool requestUpdate(const QGeoAreaMonitorInfo &, const char *)
+  virtual bool requestUpdate(const QGeoAreaMonitorInfo & monitor, const char * signal)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestUpdate", &handled, 2, (uint64_t)&monitor, (uint64_t)signal, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QGeoAreaMonitorInfo> activeMonitors()
+  virtual QList<QGeoAreaMonitorInfo> activeMonitors() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"activeMonitors", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QGeoAreaMonitorInfo>){};}
+    auto prv = (QList<QGeoAreaMonitorInfo>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QGeoAreaMonitorInfo>
+    } else {
+    return (QList<QGeoAreaMonitorInfo>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QGeoAreaMonitorInfo> activeMonitors(const QGeoShape &)
+  virtual QList<QGeoAreaMonitorInfo> activeMonitors(const QGeoShape & lookupArea) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"activeMonitors", &handled, 1, (uint64_t)&lookupArea, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QGeoAreaMonitorInfo>){};}
+    auto prv = (QList<QGeoAreaMonitorInfo>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QGeoAreaMonitorInfo>
+    } else {
+    return (QList<QGeoAreaMonitorInfo>){};
+  }
+  }
+
 // void QGeoAreaMonitorSource(QObject *)
 MyQGeoAreaMonitorSource(QObject * parent) : QGeoAreaMonitorSource(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:84
+// [4] QGeoAreaMonitorSource::Error error()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:85
+// [-2] QGeoAreaMonitorSource::AreaMonitorFeatures supportedAreaMonitorFeatures()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:87
+// [1] bool startMonitoring(const QGeoAreaMonitorInfo &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:88
+// [1] bool stopMonitoring(const QGeoAreaMonitorInfo &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:89
+// [1] bool requestUpdate(const QGeoAreaMonitorInfo &, const char *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:91
+// [-2] QList<QGeoAreaMonitorInfo> activeMonitors()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:92
+// [-2] QList<QGeoAreaMonitorInfo> activeMonitors(const QGeoShape &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeoareamonitorsource.h:55
 // [8] const QMetaObject * metaObject()

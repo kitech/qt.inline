@@ -17,12 +17,42 @@
 class Q_DECL_EXPORT MyQAbstractItemDelegate : public QAbstractItemDelegate {
 public:
   virtual ~MyQAbstractItemDelegate() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void paint(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
+  virtual void paint(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paint", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractItemDelegate::paint(painter, option, index);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize sizeHint(const QStyleOptionViewItem &, const QModelIndex &)
+  virtual QSize sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
 // void QAbstractItemDelegate(QObject *)
 MyQAbstractItemDelegate(QObject * parent) : QAbstractItemDelegate(parent) {}
-// void QAbstractItemDelegate(QObjectPrivate &, QObject *)
-MyQAbstractItemDelegate(QObjectPrivate & arg0, QObject * parent) : QAbstractItemDelegate(arg0, parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:76
+// [-2] void paint(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:80
+// [8] QSize sizeHint(const QStyleOptionViewItem &, const QModelIndex &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
 // [8] const QMetaObject * metaObject()

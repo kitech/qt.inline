@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQAndroidActivityResultReceiver : public QAndroidActivityResultReceiver {
 public:
   virtual ~MyQAndroidActivityResultReceiver() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void handleActivityResult(int, int, const QAndroidJniObject &)
+  virtual void handleActivityResult(int receiverRequestCode, int resultCode, const QAndroidJniObject & data)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"handleActivityResult", &handled, 3, (uint64_t)receiverRequestCode, (uint64_t)resultCode, (uint64_t)&data, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAndroidActivityResultReceiver::handleActivityResult(receiverRequestCode, resultCode, data);
+  }
+  }
+
 // void QAndroidActivityResultReceiver()
 MyQAndroidActivityResultReceiver() : QAndroidActivityResultReceiver() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtAndroidExtras/qandroidactivityresultreceiver.h:54
+// [-2] void handleActivityResult(int, int, const QAndroidJniObject &)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidactivityresultreceiver.h:52
 // [-2] void QAndroidActivityResultReceiver()

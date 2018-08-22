@@ -21,8 +21,6 @@ public:
 MyQStyleOptionTabWidgetFrame() : QStyleOptionTabWidgetFrame() {}
 // void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &)
 MyQStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other) : QStyleOptionTabWidgetFrame(other) {}
-// void QStyleOptionTabWidgetFrame(int)
-MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) {}
 };
 
 // Public Visibility=Default Availability=Available

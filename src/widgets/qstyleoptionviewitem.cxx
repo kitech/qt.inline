@@ -21,8 +21,6 @@ public:
 MyQStyleOptionViewItem() : QStyleOptionViewItem() {}
 // void QStyleOptionViewItem(const QStyleOptionViewItem &)
 MyQStyleOptionViewItem(const QStyleOptionViewItem & other) : QStyleOptionViewItem(other) {}
-// void QStyleOptionViewItem(int)
-MyQStyleOptionViewItem(int version) : QStyleOptionViewItem(version) {}
 };
 
 // Public Visibility=Default Availability=Available

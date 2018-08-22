@@ -20,8 +20,6 @@ public:
   virtual ~MyQIdentityProxyModel() {}
 // void QIdentityProxyModel(QObject *)
 MyQIdentityProxyModel(QObject * parent) : QIdentityProxyModel(parent) {}
-// void QIdentityProxyModel(QIdentityProxyModelPrivate &, QObject *)
-MyQIdentityProxyModel(QIdentityProxyModelPrivate & dd, QObject * parent) : QIdentityProxyModel(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

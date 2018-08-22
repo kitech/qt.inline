@@ -18,12 +18,134 @@
 class Q_DECL_EXPORT MyQAbstractNetworkCache : public QAbstractNetworkCache {
 public:
   virtual ~MyQAbstractNetworkCache() {}
-// void QAbstractNetworkCache(QObject *)
-MyQAbstractNetworkCache(QObject * parent) : QAbstractNetworkCache(parent) {}
-// void QAbstractNetworkCache(QAbstractNetworkCachePrivate &, QObject *)
-MyQAbstractNetworkCache(QAbstractNetworkCachePrivate & dd, QObject * parent) : QAbstractNetworkCache(dd, parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QNetworkCacheMetaData metaData(const QUrl &)
+  virtual QNetworkCacheMetaData metaData(const QUrl & url)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metaData", &handled, 1, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QNetworkCacheMetaData){};}
+    auto prv = (QNetworkCacheMetaData*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QNetworkCacheMetaData
+    } else {
+    return (QNetworkCacheMetaData){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void updateMetaData(const QNetworkCacheMetaData &)
+  virtual void updateMetaData(const QNetworkCacheMetaData & metaData)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateMetaData", &handled, 1, (uint64_t)&metaData, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractNetworkCache::updateMetaData(metaData);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIODevice * data(const QUrl &)
+  virtual QIODevice * data(const QUrl & url)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"data", &handled, 1, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QIODevice *)(irv);
+      // Pointer Pointer QIODevice *
+    } else {
+    return (QIODevice *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool remove(const QUrl &)
+  virtual bool remove(const QUrl & url)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"remove", &handled, 1, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 cacheSize()
+  virtual qint64 cacheSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cacheSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIODevice * prepare(const QNetworkCacheMetaData &)
+  virtual QIODevice * prepare(const QNetworkCacheMetaData & metaData)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"prepare", &handled, 1, (uint64_t)&metaData, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QIODevice *)(irv);
+      // Pointer Pointer QIODevice *
+    } else {
+    return (QIODevice *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void insert(QIODevice *)
+  virtual void insert(QIODevice * device)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"insert", &handled, 1, (uint64_t)device, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractNetworkCache::insert(device);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void clear()
+  virtual void clear()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"clear", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractNetworkCache::clear();
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:121
+// [8] QNetworkCacheMetaData metaData(const QUrl &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:122
+// [-2] void updateMetaData(const QNetworkCacheMetaData &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:123
+// [8] QIODevice * data(const QUrl &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:124
+// [1] bool remove(const QUrl &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:125
+// [8] qint64 cacheSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:127
+// [8] QIODevice * prepare(const QNetworkCacheMetaData &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:128
+// [-2] void insert(QIODevice *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:131
+// [-2] void clear()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:116
 // [8] const QMetaObject * metaObject()

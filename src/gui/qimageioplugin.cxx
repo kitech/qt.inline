@@ -17,10 +17,42 @@
 class Q_DECL_EXPORT MyQImageIOPlugin : public QImageIOPlugin {
 public:
   virtual ~MyQImageIOPlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QImageIOPlugin::Capabilities capabilities(QIODevice *, const QByteArray &)
+  virtual QImageIOPlugin::Capabilities capabilities(QIODevice * device, const QByteArray & format) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"capabilities", &handled, 2, (uint64_t)device, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QImageIOPlugin::Capabilities)(int)(irv);
+      // Typedef Record QFlags<QImageIOPlugin::Capability>
+    } else {
+    return (QImageIOPlugin::Capabilities){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QImageIOHandler * create(QIODevice *, const QByteArray &)
+  virtual QImageIOHandler * create(QIODevice * device, const QByteArray & format) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 2, (uint64_t)device, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QImageIOHandler *)(irv);
+      // Pointer Pointer QImageIOHandler *
+    } else {
+    return (QImageIOHandler *){};
+  }
+  }
+
 // void QImageIOPlugin(QObject *)
 MyQImageIOPlugin(QObject * parent) : QImageIOPlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimageiohandler.h:153
+// [4] QImageIOPlugin::Capabilities capabilities(QIODevice *, const QByteArray &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimageiohandler.h:154
+// [8] QImageIOHandler * create(QIODevice *, const QByteArray &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:141
 // [8] const QMetaObject * metaObject()

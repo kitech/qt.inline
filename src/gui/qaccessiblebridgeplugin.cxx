@@ -17,10 +17,26 @@
 class Q_DECL_EXPORT MyQAccessibleBridgePlugin : public QAccessibleBridgePlugin {
 public:
   virtual ~MyQAccessibleBridgePlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAccessibleBridge * create(const QString &)
+  virtual QAccessibleBridge * create(const QString & key)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 1, (uint64_t)&key, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAccessibleBridge *)(irv);
+      // Pointer Pointer QAccessibleBridge *
+    } else {
+    return (QAccessibleBridge *){};
+  }
+  }
+
 // void QAccessibleBridgePlugin(QObject *)
 MyQAccessibleBridgePlugin(QObject * parent) : QAccessibleBridgePlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessiblebridge.h:72
+// [8] QAccessibleBridge * create(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:67
 // [8] const QMetaObject * metaObject()

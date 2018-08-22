@@ -19,8 +19,6 @@ public:
   virtual ~MyQMediaRecorder() {}
 // void QMediaRecorder(QMediaObject *, QObject *)
 MyQMediaRecorder(QMediaObject * mediaObject, QObject * parent) : QMediaRecorder(mediaObject, parent) {}
-// void QMediaRecorder(QMediaRecorderPrivate &, QMediaObject *, QObject *)
-MyQMediaRecorder(QMediaRecorderPrivate & dd, QMediaObject * mediaObject, QObject * parent) : QMediaRecorder(dd, mediaObject, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * object)  override {

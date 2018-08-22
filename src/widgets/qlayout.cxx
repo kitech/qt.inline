@@ -17,22 +17,75 @@
 class Q_DECL_EXPORT MyQLayout : public QLayout {
 public:
   virtual ~MyQLayout() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void addItem(QLayoutItem *)
+  virtual void addItem(QLayoutItem * arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addItem", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QLayout::addItem(arg0);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QLayoutItem * itemAt(int)
+  virtual QLayoutItem * itemAt(int index) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemAt", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QLayoutItem *)(irv);
+      // Pointer Pointer QLayoutItem *
+    } else {
+    return (QLayoutItem *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QLayoutItem * takeAt(int)
+  virtual QLayoutItem * takeAt(int index)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"takeAt", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QLayoutItem *)(irv);
+      // Pointer Pointer QLayoutItem *
+    } else {
+    return (QLayoutItem *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int count()
+  virtual int count() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"count", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize sizeHint()
+  virtual QSize sizeHint() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
 // void QLayout(QWidget *)
 MyQLayout(QWidget * parent) : QLayout(parent) {}
 // void QLayout()
 MyQLayout() : QLayout() {}
-// Protected Visibility=Default Availability=Available
-// [-2] void widgetEvent(QEvent *)
-  virtual void widgetEvent(QEvent * arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widgetEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QLayout::widgetEvent(arg0);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * e)  override {
@@ -45,108 +98,29 @@ MyQLayout() : QLayout() {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void addChildLayout(QLayout *)
-  virtual void addChildLayout(QLayout * l)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildLayout", &handled, 1, (uint64_t)l, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QLayout::addChildLayout(l);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void addChildWidget(QWidget *)
-  virtual void addChildWidget(QWidget * w)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildWidget", &handled, 1, (uint64_t)w, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QLayout::addChildWidget(w);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool adoptLayout(QLayout *)
-  virtual bool adoptLayout(QLayout * layout)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"adoptLayout", &handled, 1, (uint64_t)layout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QLayout::adoptLayout(layout);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QRect alignmentRect(const QRect &)
-  virtual QRect alignmentRect(const QRect & arg0) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRect){};}
-    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRect
-    } else {
-    return QLayout::alignmentRect(arg0);
-  }
-  }
-
-// void QLayout(QLayoutPrivate &, QLayout *, QWidget *)
-MyQLayout(QLayoutPrivate & d, QLayout * arg1, QWidget * arg2) : QLayout(d, arg1, arg2) {}
 };
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:145
-// [-2] void widgetEvent(QEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QLayout11widgetEventEP6QEvent(void *this_, QEvent * arg0) {
-  ((QLayout*)this_)->QLayout::widgetEvent(arg0);
-}
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:113
+// [-2] void addItem(QLayoutItem *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:122
+// [8] QLayoutItem * itemAt(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:123
+// [8] QLayoutItem * takeAt(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:125
+// [4] int count()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:65
+// [8] QSize sizeHint()
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:146
 // [-2] void childEvent(QChildEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10childEventEP11QChildEvent(void *this_, QChildEvent * e) {
   ((QLayout*)this_)->QLayout::childEvent(e);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:147
-// [-2] void addChildLayout(QLayout *)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QLayout14addChildLayoutEPS_(void *this_, QLayout * l) {
-  ((QLayout*)this_)->QLayout::addChildLayout(l);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:148
-// [-2] void addChildWidget(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QLayout14addChildWidgetEP7QWidget(void *this_, QWidget * w) {
-  ((QLayout*)this_)->QLayout::addChildWidget(w);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:149
-// [1] bool adoptLayout(QLayout *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN7QLayout11adoptLayoutEPS_(void *this_, QLayout * layout) {
-  return (bool)((QLayout*)this_)->QLayout::adoptLayout(layout);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:151
-// [16] QRect alignmentRect(const QRect &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QLayout13alignmentRectERK5QRect(void *this_, QRect* arg0) {
-  auto rv = ((QLayout*)this_)->QLayout::alignmentRect(*arg0);
-return new QRect(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

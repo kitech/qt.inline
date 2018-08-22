@@ -18,10 +18,57 @@
 class Q_DECL_EXPORT MyQCameraViewfinderSettingsControl2 : public QCameraViewfinderSettingsControl2 {
 public:
   virtual ~MyQCameraViewfinderSettingsControl2() {}
-// void QCameraViewfinderSettingsControl2(QObject *)
-MyQCameraViewfinderSettingsControl2(QObject * parent) : QCameraViewfinderSettingsControl2(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QCameraViewfinderSettings> supportedViewfinderSettings()
+  virtual QList<QCameraViewfinderSettings> supportedViewfinderSettings() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedViewfinderSettings", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QCameraViewfinderSettings>){};}
+    auto prv = (QList<QCameraViewfinderSettings>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QCameraViewfinderSettings>
+    } else {
+    return (QList<QCameraViewfinderSettings>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QCameraViewfinderSettings viewfinderSettings()
+  virtual QCameraViewfinderSettings viewfinderSettings() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewfinderSettings", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QCameraViewfinderSettings){};}
+    auto prv = (QCameraViewfinderSettings*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QCameraViewfinderSettings
+    } else {
+    return (QCameraViewfinderSettings){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setViewfinderSettings(const QCameraViewfinderSettings &)
+  virtual void setViewfinderSettings(const QCameraViewfinderSettings & settings)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setViewfinderSettings", &handled, 1, (uint64_t)&settings, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraViewfinderSettingsControl2::setViewfinderSettings(settings);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:89
+// [-2] QList<QCameraViewfinderSettings> supportedViewfinderSettings()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:91
+// [8] QCameraViewfinderSettings viewfinderSettings()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:92
+// [-2] void setViewfinderSettings(const QCameraViewfinderSettings &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:85
 // [8] const QMetaObject * metaObject()

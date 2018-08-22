@@ -19,8 +19,6 @@ public:
   virtual ~MyQCommonStyle() {}
 // void QCommonStyle()
 MyQCommonStyle() : QCommonStyle() {}
-// void QCommonStyle(QCommonStylePrivate &)
-MyQCommonStyle(QCommonStylePrivate & dd) : QCommonStyle(dd) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

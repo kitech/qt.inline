@@ -18,8 +18,18 @@
 class Q_DECL_EXPORT MyQSGAbstractRenderer : public QSGAbstractRenderer {
 public:
   virtual ~MyQSGAbstractRenderer() {}
-// void QSGAbstractRenderer(QObject *)
-MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void renderScene(uint)
+  virtual void renderScene(uint fboId)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"renderScene", &handled, 1, (uint64_t)fboId, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGAbstractRenderer::renderScene(fboId);
+  }
+  }
+
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [-2] void nodeChanged(QSGNode *, QSGNode::DirtyState)
   virtual void nodeChanged(QSGNode * node, QFlags<QSGNode::DirtyStateBit> state)  override {
@@ -34,6 +44,9 @@ MyQSGAbstractRenderer(QObject * parent) : QSGAbstractRenderer(parent) {}
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgabstractrenderer.h:87
+// [-2] void renderScene(uint)
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgabstractrenderer.h:94
 // [-2] void nodeChanged(QSGNode *, QSGNode::DirtyState)

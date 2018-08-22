@@ -19,8 +19,6 @@ public:
   virtual ~MyQTextFrameFormat() {}
 // void QTextFrameFormat()
 MyQTextFrameFormat() : QTextFrameFormat() {}
-// void QTextFrameFormat(const QTextFormat &)
-MyQTextFrameFormat(const QTextFormat & fmt_) : QTextFrameFormat(fmt_) {}
 };
 
 // Public Visibility=Default Availability=Available

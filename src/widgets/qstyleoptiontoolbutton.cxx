@@ -21,8 +21,6 @@ public:
 MyQStyleOptionToolButton() : QStyleOptionToolButton() {}
 // void QStyleOptionToolButton(const QStyleOptionToolButton &)
 MyQStyleOptionToolButton(const QStyleOptionToolButton & other) : QStyleOptionToolButton(other) {}
-// void QStyleOptionToolButton(int)
-MyQStyleOptionToolButton(int version) : QStyleOptionToolButton(version) {}
 };
 
 // Public Visibility=Default Availability=Available

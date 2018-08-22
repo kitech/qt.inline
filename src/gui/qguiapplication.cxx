@@ -46,8 +46,6 @@ MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, arg
   }
   }
 
-// void QGuiApplication(QGuiApplicationPrivate &)
-MyQGuiApplication(QGuiApplicationPrivate & p) : QGuiApplication(p) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

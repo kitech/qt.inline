@@ -92,31 +92,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void moveSplitter(int)
-  virtual void moveSplitter(int p)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveSplitter", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QSplitterHandle::moveSplitter(p);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int closestLegalPosition(int)
-  virtual int closestLegalPosition(int p)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closestLegalPosition", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QSplitterHandle::closestLegalPosition(p);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -165,22 +140,6 @@ void C_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void *this_, QResizeEven
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QSplitterHandle5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QSplitterHandle*)this_)->QSplitterHandle::event(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:158
-// [-2] void moveSplitter(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QSplitterHandle12moveSplitterEi(void *this_, int p) {
-  ((QSplitterHandle*)this_)->QSplitterHandle::moveSplitter(p);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:159
-// [4] int closestLegalPosition(int)
-extern "C" Q_DECL_EXPORT
-int C_ZN15QSplitterHandle20closestLegalPositionEi(void *this_, int p) {
-  return (int)((QSplitterHandle*)this_)->QSplitterHandle::closestLegalPosition(p);
 }
 
 // Public virtual Visibility=Default Availability=Available

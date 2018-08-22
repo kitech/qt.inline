@@ -17,8 +17,332 @@
 class Q_DECL_EXPORT MyQAccessibleTableInterface : public QAccessibleTableInterface {
 public:
   virtual ~MyQAccessibleTableInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAccessibleInterface * caption()
+  virtual QAccessibleInterface * caption() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"caption", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAccessibleInterface *)(irv);
+      // Pointer Pointer QAccessibleInterface *
+    } else {
+    return (QAccessibleInterface *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAccessibleInterface * summary()
+  virtual QAccessibleInterface * summary() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"summary", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAccessibleInterface *)(irv);
+      // Pointer Pointer QAccessibleInterface *
+    } else {
+    return (QAccessibleInterface *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAccessibleInterface * cellAt(int, int)
+  virtual QAccessibleInterface * cellAt(int row, int column) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cellAt", &handled, 2, (uint64_t)row, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAccessibleInterface *)(irv);
+      // Pointer Pointer QAccessibleInterface *
+    } else {
+    return (QAccessibleInterface *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int selectedCellCount()
+  virtual int selectedCellCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedCellCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QAccessibleInterface *> selectedCells()
+  virtual QList<QAccessibleInterface *> selectedCells() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedCells", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QAccessibleInterface *>){};}
+    auto prv = (QList<QAccessibleInterface *>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QAccessibleInterface *>
+    } else {
+    return (QList<QAccessibleInterface *>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString columnDescription(int)
+  virtual QString columnDescription(int column) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnDescription", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString rowDescription(int)
+  virtual QString rowDescription(int row) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowDescription", &handled, 1, (uint64_t)row, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int selectedColumnCount()
+  virtual int selectedColumnCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedColumnCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int selectedRowCount()
+  virtual int selectedRowCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedRowCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int columnCount()
+  virtual int columnCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int rowCount()
+  virtual int rowCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<int> selectedColumns()
+  virtual QList<int> selectedColumns() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<int>){};}
+    auto prv = (QList<int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<int>
+    } else {
+    return (QList<int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<int> selectedRows()
+  virtual QList<int> selectedRows() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<int>){};}
+    auto prv = (QList<int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<int>
+    } else {
+    return (QList<int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isColumnSelected(int)
+  virtual bool isColumnSelected(int column) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isColumnSelected", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isRowSelected(int)
+  virtual bool isRowSelected(int row) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isRowSelected", &handled, 1, (uint64_t)row, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool selectRow(int)
+  virtual bool selectRow(int row)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectRow", &handled, 1, (uint64_t)row, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool selectColumn(int)
+  virtual bool selectColumn(int column)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool unselectRow(int)
+  virtual bool unselectRow(int row)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unselectRow", &handled, 1, (uint64_t)row, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool unselectColumn(int)
+  virtual bool unselectColumn(int column)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unselectColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void modelChange(QAccessibleTableModelChangeEvent *)
+  virtual void modelChange(QAccessibleTableModelChangeEvent * event)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"modelChange", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAccessibleTableInterface::modelChange(event);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:597
+// [8] QAccessibleInterface * caption()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:598
+// [8] QAccessibleInterface * summary()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:600
+// [8] QAccessibleInterface * cellAt(int, int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:601
+// [4] int selectedCellCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:602
+// [-2] QList<QAccessibleInterface *> selectedCells()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:604
+// [8] QString columnDescription(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:605
+// [8] QString rowDescription(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:606
+// [4] int selectedColumnCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:607
+// [4] int selectedRowCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:608
+// [4] int columnCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:609
+// [4] int rowCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:610
+// [-2] QList<int> selectedColumns()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:611
+// [-2] QList<int> selectedRows()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:612
+// [1] bool isColumnSelected(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:613
+// [1] bool isRowSelected(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:614
+// [1] bool selectRow(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:615
+// [1] bool selectColumn(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:616
+// [1] bool unselectRow(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:617
+// [1] bool unselectColumn(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:619
+// [-2] void modelChange(QAccessibleTableModelChangeEvent *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:595
 // [-2] void ~QAccessibleTableInterface()

@@ -21,8 +21,6 @@ public:
 MyQStyleOptionSlider() : QStyleOptionSlider() {}
 // void QStyleOptionSlider(const QStyleOptionSlider &)
 MyQStyleOptionSlider(const QStyleOptionSlider & other) : QStyleOptionSlider(other) {}
-// void QStyleOptionSlider(int)
-MyQStyleOptionSlider(int version) : QStyleOptionSlider(version) {}
 };
 
 // Public Visibility=Default Availability=Available

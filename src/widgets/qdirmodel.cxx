@@ -21,8 +21,6 @@ public:
 MyQDirModel(const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort, QObject * parent) : QDirModel(nameFilters, filters, sort, parent) {}
 // void QDirModel(QObject *)
 MyQDirModel(QObject * parent) : QDirModel(parent) {}
-// void QDirModel(QDirModelPrivate &, QObject *)
-MyQDirModel(QDirModelPrivate & arg0, QObject * parent) : QDirModel(arg0, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

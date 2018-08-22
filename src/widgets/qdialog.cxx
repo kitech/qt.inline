@@ -19,8 +19,6 @@ public:
   virtual ~MyQDialog() {}
 // void QDialog(QWidget *, Qt::WindowFlags)
 MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
-// void QDialog(QDialogPrivate &, QWidget *, Qt::WindowFlags)
-MyQDialog(QDialogPrivate & arg0, QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(arg0, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0)  override {
@@ -94,18 +92,6 @@ MyQDialog(QDialogPrivate & arg0, QWidget * parent, QFlags<Qt::WindowType> f) : Q
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void adjustPosition(QWidget *)
-  virtual void adjustPosition(QWidget * arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"adjustPosition", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QDialog::adjustPosition(arg0);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -154,14 +140,6 @@ void C_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMe
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QDialog11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
   return (bool)((QDialog*)this_)->QDialog::eventFilter(arg0, arg1);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:112
-// [-2] void adjustPosition(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QDialog14adjustPositionEP7QWidget(void *this_, QWidget * arg0) {
-  ((QDialog*)this_)->QDialog::adjustPosition(arg0);
 }
 
 // Public virtual Visibility=Default Availability=Available

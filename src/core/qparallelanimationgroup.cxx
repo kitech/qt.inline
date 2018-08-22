@@ -20,8 +20,6 @@ public:
   virtual ~MyQParallelAnimationGroup() {}
 // void QParallelAnimationGroup(QObject *)
 MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
-// void QParallelAnimationGroup(QParallelAnimationGroupPrivate &, QObject *)
-MyQParallelAnimationGroup(QParallelAnimationGroupPrivate & dd, QObject * parent) : QParallelAnimationGroup(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {

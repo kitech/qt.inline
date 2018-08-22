@@ -17,10 +17,26 @@
 class Q_DECL_EXPORT MyQPictureFormatPlugin : public QPictureFormatPlugin {
 public:
   virtual ~MyQPictureFormatPlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool installIOHandler(const QString &)
+  virtual bool installIOHandler(const QString & format)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"installIOHandler", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 // void QPictureFormatPlugin(QObject *)
 MyQPictureFormatPlugin(QObject * parent) : QPictureFormatPlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpictureformatplugin.h:68
+// [1] bool installIOHandler(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpictureformatplugin.h:61
 // [8] const QMetaObject * metaObject()

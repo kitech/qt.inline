@@ -31,20 +31,6 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void addPendingConnection(QTcpSocket *)
-  virtual void addPendingConnection(QTcpSocket * socket)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addPendingConnection", &handled, 1, (uint64_t)socket, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTcpServer::addPendingConnection(socket);
-  }
-  }
-
-// void QTcpServer(QAbstractSocket::SocketType, QTcpServerPrivate &, QObject *)
-MyQTcpServer(QAbstractSocket::SocketType socketType, QTcpServerPrivate & dd, QObject * parent) : QTcpServer(socketType, dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -54,17 +40,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZN10QTcpServer18incomingConnectionEx(void *this_, qintptr handle) {
   ((QTcpServer*)this_)->QTcpServer::incomingConnection(handle);
 }
-
-// Protected Visibility=Default Availability=Available
-// since 4.7
-// /usr/include/qt/QtNetwork/qtcpserver.h:95
-// [-2] void addPendingConnection(QTcpSocket *)
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTcpServer20addPendingConnectionEP10QTcpSocket(void *this_, QTcpSocket * socket) {
-  ((QTcpServer*)this_)->QTcpServer::addPendingConnection(socket);
-}
-#endif // QT_VERSION >= 0x040700
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qtcpserver.h:59

@@ -70,18 +70,6 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionToolBar *)
-  virtual void initStyleOption(QStyleOptionToolBar * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QToolBar::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -114,14 +102,6 @@ void C_ZN8QToolBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) 
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QToolBar5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QToolBar*)this_)->QToolBar::event(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbar.h:195
-// [-2] void initStyleOption(QStyleOptionToolBar *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(void *this_, QStyleOptionToolBar * option) {
-  ((QToolBar*)this_)->QToolBar::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

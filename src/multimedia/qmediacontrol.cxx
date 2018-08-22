@@ -17,10 +17,6 @@
 class Q_DECL_EXPORT MyQMediaControl : public QMediaControl {
 public:
   virtual ~MyQMediaControl() {}
-// void QMediaControl(QObject *)
-MyQMediaControl(QObject * parent) : QMediaControl(parent) {}
-// void QMediaControl(QMediaControlPrivate &, QObject *)
-MyQMediaControl(QMediaControlPrivate & dd, QObject * parent) : QMediaControl(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

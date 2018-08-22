@@ -18,10 +18,26 @@
 class Q_DECL_EXPORT MyQGestureRecognizer : public QGestureRecognizer {
 public:
   virtual ~MyQGestureRecognizer() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QGestureRecognizer::Result recognize(QGesture *, QObject *, QEvent *)
+  virtual QGestureRecognizer::Result recognize(QGesture * state, QObject * watched, QEvent * event)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"recognize", &handled, 3, (uint64_t)state, (uint64_t)watched, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QGestureRecognizer::Result)(int)(irv);
+      // Typedef Record QFlags<QGestureRecognizer::ResultFlag>
+    } else {
+    return (QGestureRecognizer::Result){};
+  }
+  }
+
 // void QGestureRecognizer()
 MyQGestureRecognizer() : QGestureRecognizer() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesturerecognizer.h:81
+// [4] QGestureRecognizer::Result recognize(QGesture *, QObject *, QEvent *)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:77
 // [-2] void QGestureRecognizer()

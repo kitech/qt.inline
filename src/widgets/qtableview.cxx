@@ -19,80 +19,6 @@ public:
   virtual ~MyQTableView() {}
 // void QTableView(QWidget *)
 MyQTableView(QWidget * parent) : QTableView(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void rowMoved(int, int, int)
-  virtual void rowMoved(int row, int oldIndex, int newIndex)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowMoved", &handled, 3, (uint64_t)row, (uint64_t)oldIndex, (uint64_t)newIndex, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTableView::rowMoved(row, oldIndex, newIndex);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void columnMoved(int, int, int)
-  virtual void columnMoved(int column, int oldIndex, int newIndex)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnMoved", &handled, 3, (uint64_t)column, (uint64_t)oldIndex, (uint64_t)newIndex, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTableView::columnMoved(column, oldIndex, newIndex);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void rowResized(int, int, int)
-  virtual void rowResized(int row, int oldHeight, int newHeight)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowResized", &handled, 3, (uint64_t)row, (uint64_t)oldHeight, (uint64_t)newHeight, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTableView::rowResized(row, oldHeight, newHeight);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void columnResized(int, int, int)
-  virtual void columnResized(int column, int oldWidth, int newWidth)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnResized", &handled, 3, (uint64_t)column, (uint64_t)oldWidth, (uint64_t)newWidth, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTableView::columnResized(column, oldWidth, newWidth);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void rowCountChanged(int, int)
-  virtual void rowCountChanged(int oldCount, int newCount)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTableView::rowCountChanged(oldCount, newCount);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void columnCountChanged(int, int)
-  virtual void columnCountChanged(int oldCount, int newCount)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTableView::columnCountChanged(oldCount, newCount);
-  }
-  }
-
-// void QTableView(QTableViewPrivate &, QWidget *)
-MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
@@ -336,54 +262,6 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
   }
 
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtableview.h:138
-// [-2] void rowMoved(int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTableView8rowMovedEiii(void *this_, int row, int oldIndex, int newIndex) {
-  ((QTableView*)this_)->QTableView::rowMoved(row, oldIndex, newIndex);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtableview.h:139
-// [-2] void columnMoved(int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTableView11columnMovedEiii(void *this_, int column, int oldIndex, int newIndex) {
-  ((QTableView*)this_)->QTableView::columnMoved(column, oldIndex, newIndex);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtableview.h:140
-// [-2] void rowResized(int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTableView10rowResizedEiii(void *this_, int row, int oldHeight, int newHeight) {
-  ((QTableView*)this_)->QTableView::rowResized(row, oldHeight, newHeight);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtableview.h:141
-// [-2] void columnResized(int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTableView13columnResizedEiii(void *this_, int column, int oldWidth, int newWidth) {
-  ((QTableView*)this_)->QTableView::columnResized(column, oldWidth, newWidth);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtableview.h:142
-// [-2] void rowCountChanged(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTableView15rowCountChangedEii(void *this_, int oldCount, int newCount) {
-  ((QTableView*)this_)->QTableView::rowCountChanged(oldCount, newCount);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtableview.h:143
-// [-2] void columnCountChanged(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTableView18columnCountChangedEii(void *this_, int oldCount, int newCount) {
-  ((QTableView*)this_)->QTableView::columnCountChanged(oldCount, newCount);
-}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:147

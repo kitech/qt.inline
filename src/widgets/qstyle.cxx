@@ -17,12 +17,221 @@
 class Q_DECL_EXPORT MyQStyle : public QStyle {
 public:
   virtual ~MyQStyle() {}
-// void QStyle(QStylePrivate &)
-MyQStyle(QStylePrivate & dd) : QStyle(dd) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void drawPrimitive(QStyle::PrimitiveElement, const QStyleOption *, QPainter *, const QWidget *)
+  virtual void drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption * opt, QPainter * p, const QWidget * w) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawPrimitive", &handled, 4, (uint64_t)pe, (uint64_t)opt, (uint64_t)p, (uint64_t)w, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QStyle::drawPrimitive(pe, opt, p, w);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void drawControl(QStyle::ControlElement, const QStyleOption *, QPainter *, const QWidget *)
+  virtual void drawControl(QStyle::ControlElement element, const QStyleOption * opt, QPainter * p, const QWidget * w) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawControl", &handled, 4, (uint64_t)element, (uint64_t)opt, (uint64_t)p, (uint64_t)w, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QStyle::drawControl(element, opt, p, w);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QRect subElementRect(QStyle::SubElement, const QStyleOption *, const QWidget *)
+  virtual QRect subElementRect(QStyle::SubElement subElement, const QStyleOption * option, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"subElementRect", &handled, 3, (uint64_t)subElement, (uint64_t)option, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRect
+    } else {
+    return (QRect){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void drawComplexControl(QStyle::ComplexControl, const QStyleOptionComplex *, QPainter *, const QWidget *)
+  virtual void drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPainter * p, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawComplexControl", &handled, 4, (uint64_t)cc, (uint64_t)opt, (uint64_t)p, (uint64_t)widget, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QStyle::drawComplexControl(cc, opt, p, widget);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QStyle::SubControl hitTestComplexControl(QStyle::ComplexControl, const QStyleOptionComplex *, const QPoint &, const QWidget *)
+  virtual QStyle::SubControl hitTestComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, const QPoint & pt, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hitTestComplexControl", &handled, 4, (uint64_t)cc, (uint64_t)opt, (uint64_t)&pt, (uint64_t)widget, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QStyle::SubControl)(int)(irv);
+      // Enum Enum QStyle::SubControl
+    } else {
+    return (QStyle::SubControl){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QRect subControlRect(QStyle::ComplexControl, const QStyleOptionComplex *, QStyle::SubControl, const QWidget *)
+  virtual QRect subControlRect(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QStyle::SubControl sc, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"subControlRect", &handled, 4, (uint64_t)cc, (uint64_t)opt, (uint64_t)sc, (uint64_t)widget, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRect
+    } else {
+    return (QRect){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int pixelMetric(QStyle::PixelMetric, const QStyleOption *, const QWidget *)
+  virtual int pixelMetric(QStyle::PixelMetric metric, const QStyleOption * option, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"pixelMetric", &handled, 3, (uint64_t)metric, (uint64_t)option, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize sizeFromContents(QStyle::ContentsType, const QStyleOption *, const QSize &, const QWidget *)
+  virtual QSize sizeFromContents(QStyle::ContentsType ct, const QStyleOption * opt, const QSize & contentsSize, const QWidget * w) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeFromContents", &handled, 4, (uint64_t)ct, (uint64_t)opt, (uint64_t)&contentsSize, (uint64_t)w, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int styleHint(QStyle::StyleHint, const QStyleOption *, const QWidget *, QStyleHintReturn *)
+  virtual int styleHint(QStyle::StyleHint stylehint, const QStyleOption * opt, const QWidget * widget, QStyleHintReturn * returnData) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"styleHint", &handled, 4, (uint64_t)stylehint, (uint64_t)opt, (uint64_t)widget, (uint64_t)returnData, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QPixmap standardPixmap(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
+  virtual QPixmap standardPixmap(QStyle::StandardPixmap standardPixmap, const QStyleOption * opt, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"standardPixmap", &handled, 3, (uint64_t)standardPixmap, (uint64_t)opt, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QPixmap){};}
+    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QPixmap
+    } else {
+    return (QPixmap){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIcon standardIcon(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
+  virtual QIcon standardIcon(QStyle::StandardPixmap standardIcon, const QStyleOption * option, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"standardIcon", &handled, 3, (uint64_t)standardIcon, (uint64_t)option, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QIcon){};}
+    auto prv = (QIcon*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QIcon
+    } else {
+    return (QIcon){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QPixmap generatedIconPixmap(QIcon::Mode, const QPixmap &, const QStyleOption *)
+  virtual QPixmap generatedIconPixmap(QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"generatedIconPixmap", &handled, 3, (uint64_t)iconMode, (uint64_t)&pixmap, (uint64_t)opt, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QPixmap){};}
+    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QPixmap
+    } else {
+    return (QPixmap){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int layoutSpacing(QSizePolicy::ControlType, QSizePolicy::ControlType, Qt::Orientation, const QStyleOption *, const QWidget *)
+  virtual int layoutSpacing(QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"layoutSpacing", &handled, 5, (uint64_t)control1, (uint64_t)control2, (uint64_t)orientation, (uint64_t)option, (uint64_t)widget, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 // void QStyle()
 MyQStyle() : QStyle() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:204
+// [-2] void drawPrimitive(QStyle::PrimitiveElement, const QStyleOption *, QPainter *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:275
+// [-2] void drawControl(QStyle::ControlElement, const QStyleOption *, QPainter *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:364
+// [16] QRect subElementRect(QStyle::SubElement, const QStyleOption *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:443
+// [-2] void drawComplexControl(QStyle::ComplexControl, const QStyleOptionComplex *, QPainter *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:445
+// [4] QStyle::SubControl hitTestComplexControl(QStyle::ComplexControl, const QStyleOptionComplex *, const QPoint &, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:447
+// [16] QRect subControlRect(QStyle::ComplexControl, const QStyleOptionComplex *, QStyle::SubControl, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:582
+// [4] int pixelMetric(QStyle::PixelMetric, const QStyleOption *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:614
+// [8] QSize sizeFromContents(QStyle::ContentsType, const QStyleOption *, const QSize &, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:748
+// [4] int styleHint(QStyle::StyleHint, const QStyleOption *, const QWidget *, QStyleHintReturn *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:828
+// [32] QPixmap standardPixmap(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:831
+// [8] QIcon standardIcon(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:834
+// [32] QPixmap generatedIconPixmap(QIcon::Mode, const QPixmap &, const QStyleOption *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:849
+// [4] int layoutSpacing(QSizePolicy::ControlType, QSizePolicy::ControlType, Qt::Orientation, const QStyleOption *, const QWidget *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:66
 // [8] const QMetaObject * metaObject()

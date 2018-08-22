@@ -19,18 +19,6 @@ public:
   virtual ~MyQAnimationDriver() {}
 // void QAnimationDriver(QObject *)
 MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void advanceAnimation(qint64)
-  virtual void advanceAnimation(qint64 timeStep)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"advanceAnimation", &handled, 1, (uint64_t)timeStep, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAnimationDriver::advanceAnimation(timeStep);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void start()
   virtual void start()  override {
@@ -55,17 +43,7 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
   }
   }
 
-// void QAnimationDriver(QAnimationDriverPrivate &, QObject *)
-MyQAnimationDriver(QAnimationDriverPrivate & dd, QObject * parent) : QAnimationDriver(dd, parent) {}
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:161
-// [-2] void advanceAnimation(qint64)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QAnimationDriver16advanceAnimationEx(void *this_, qint64 timeStep) {
-  ((QAnimationDriver*)this_)->QAnimationDriver::advanceAnimation(timeStep);
-}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:162

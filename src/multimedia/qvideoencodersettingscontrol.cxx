@@ -17,10 +17,108 @@
 class Q_DECL_EXPORT MyQVideoEncoderSettingsControl : public QVideoEncoderSettingsControl {
 public:
   virtual ~MyQVideoEncoderSettingsControl() {}
-// void QVideoEncoderSettingsControl(QObject *)
-MyQVideoEncoderSettingsControl(QObject * parent) : QVideoEncoderSettingsControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QList<QSize> supportedResolutions(const QVideoEncoderSettings &, bool *)
+  virtual QList<QSize> supportedResolutions(const QVideoEncoderSettings & settings, bool * continuous) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedResolutions", &handled, 2, (uint64_t)&settings, (uint64_t)continuous, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QSize>){};}
+    auto prv = (QList<QSize>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QSize>
+    } else {
+    return (QList<QSize>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<qreal> supportedFrameRates(const QVideoEncoderSettings &, bool *)
+  virtual QList<qreal> supportedFrameRates(const QVideoEncoderSettings & settings, bool * continuous) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedFrameRates", &handled, 2, (uint64_t)&settings, (uint64_t)continuous, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<qreal>){};}
+    auto prv = (QList<qreal>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<double>
+    } else {
+    return (QList<qreal>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList supportedVideoCodecs()
+  virtual QStringList supportedVideoCodecs() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedVideoCodecs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString videoCodecDescription(const QString &)
+  virtual QString videoCodecDescription(const QString & codecName) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"videoCodecDescription", &handled, 1, (uint64_t)&codecName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QVideoEncoderSettings videoSettings()
+  virtual QVideoEncoderSettings videoSettings() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"videoSettings", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVideoEncoderSettings){};}
+    auto prv = (QVideoEncoderSettings*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVideoEncoderSettings
+    } else {
+    return (QVideoEncoderSettings){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setVideoSettings(const QVideoEncoderSettings &)
+  virtual void setVideoSettings(const QVideoEncoderSettings & settings)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVideoSettings", &handled, 1, (uint64_t)&settings, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoEncoderSettingsControl::setVideoSettings(settings);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:67
+// [8] QList<QSize> supportedResolutions(const QVideoEncoderSettings &, bool *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:70
+// [-2] QList<qreal> supportedFrameRates(const QVideoEncoderSettings &, bool *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:73
+// [8] QStringList supportedVideoCodecs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:74
+// [8] QString videoCodecDescription(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:76
+// [8] QVideoEncoderSettings videoSettings()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:77
+// [-2] void setVideoSettings(const QVideoEncoderSettings &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:62
 // [8] const QMetaObject * metaObject()

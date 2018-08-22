@@ -331,8 +331,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
   }
   }
 
-// void QGraphicsWidget(QGraphicsWidgetPrivate &, QGraphicsItem *, Qt::WindowFlags)
-MyQGraphicsWidget(QGraphicsWidgetPrivate & arg0, QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGraphicsWidget(arg0, parent, wFlags) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

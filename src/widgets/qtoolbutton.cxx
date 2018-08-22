@@ -153,18 +153,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionToolButton *)
-  virtual void initStyleOption(QStyleOptionToolButton * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QToolButton::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -253,14 +241,6 @@ bool C_ZNK11QToolButton9hitButtonERK6QPoint(void *this_, QPoint* pos) {
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton14nextCheckStateEv(void *this_) {
   ((QToolButton*)this_)->QToolButton::nextCheckState();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:122
-// [-2] void initStyleOption(QStyleOptionToolButton *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton(void *this_, QStyleOptionToolButton * option) {
-  ((QToolButton*)this_)->QToolButton::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

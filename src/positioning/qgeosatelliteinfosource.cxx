@@ -18,10 +18,87 @@
 class Q_DECL_EXPORT MyQGeoSatelliteInfoSource : public QGeoSatelliteInfoSource {
 public:
   virtual ~MyQGeoSatelliteInfoSource() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int minimumUpdateInterval()
+  virtual int minimumUpdateInterval() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumUpdateInterval", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QGeoSatelliteInfoSource::Error error()
+  virtual QGeoSatelliteInfoSource::Error error() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"error", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QGeoSatelliteInfoSource::Error)(int)(irv);
+      // Enum Enum QGeoSatelliteInfoSource::Error
+    } else {
+    return (QGeoSatelliteInfoSource::Error){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void startUpdates()
+  virtual void startUpdates()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startUpdates", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QGeoSatelliteInfoSource::startUpdates();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void stopUpdates()
+  virtual void stopUpdates()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stopUpdates", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QGeoSatelliteInfoSource::stopUpdates();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void requestUpdate(int)
+  virtual void requestUpdate(int timeout)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestUpdate", &handled, 1, (uint64_t)timeout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QGeoSatelliteInfoSource::requestUpdate(timeout);
+  }
+  }
+
 // void QGeoSatelliteInfoSource(QObject *)
 MyQGeoSatelliteInfoSource(QObject * parent) : QGeoSatelliteInfoSource(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:76
+// [4] int minimumUpdateInterval()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:77
+// [4] QGeoSatelliteInfoSource::Error error()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:80
+// [-2] void startUpdates()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:81
+// [-2] void stopUpdates()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:83
+// [-2] void requestUpdate(int)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeosatelliteinfosource.h:52
 // [8] const QMetaObject * metaObject()

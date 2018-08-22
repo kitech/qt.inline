@@ -164,20 +164,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionSpinBox *)
-  virtual void initStyleOption(QStyleOptionSpinBox * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QDateTimeEdit::initStyleOption(option);
-  }
-  }
-
-// void QDateTimeEdit(const QVariant &, QVariant::Type, QWidget *)
-MyQDateTimeEdit(const QVariant & val, QVariant::Type parserType, QWidget * parent) : QDateTimeEdit(val, parserType, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -269,14 +255,6 @@ void C_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEven
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QDateTimeEdit*)this_)->QDateTimeEdit::paintEvent(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:192
-// [-2] void initStyleOption(QStyleOptionSpinBox *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox(void *this_, QStyleOptionSpinBox * option) {
-  ((QDateTimeEdit*)this_)->QDateTimeEdit::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

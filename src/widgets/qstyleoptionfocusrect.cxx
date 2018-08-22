@@ -21,8 +21,6 @@ public:
 MyQStyleOptionFocusRect() : QStyleOptionFocusRect() {}
 // void QStyleOptionFocusRect(const QStyleOptionFocusRect &)
 MyQStyleOptionFocusRect(const QStyleOptionFocusRect & other) : QStyleOptionFocusRect(other) {}
-// void QStyleOptionFocusRect(int)
-MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 };
 
 // Public Visibility=Default Availability=Available

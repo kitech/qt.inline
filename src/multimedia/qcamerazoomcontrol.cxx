@@ -17,10 +17,119 @@
 class Q_DECL_EXPORT MyQCameraZoomControl : public QCameraZoomControl {
 public:
   virtual ~MyQCameraZoomControl() {}
-// void QCameraZoomControl(QObject *)
-MyQCameraZoomControl(QObject * parent) : QCameraZoomControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal maximumOpticalZoom()
+  virtual qreal maximumOpticalZoom() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"maximumOpticalZoom", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal maximumDigitalZoom()
+  virtual qreal maximumDigitalZoom() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"maximumDigitalZoom", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal requestedOpticalZoom()
+  virtual qreal requestedOpticalZoom() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestedOpticalZoom", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal requestedDigitalZoom()
+  virtual qreal requestedDigitalZoom() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestedDigitalZoom", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal currentOpticalZoom()
+  virtual qreal currentOpticalZoom() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentOpticalZoom", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal currentDigitalZoom()
+  virtual qreal currentDigitalZoom() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentDigitalZoom", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void zoomTo(qreal, qreal)
+  virtual void zoomTo(qreal optical, qreal digital)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"zoomTo", &handled, 2, (uint64_t)&optical, (uint64_t)&digital, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraZoomControl::zoomTo(optical, digital);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:58
+// [8] qreal maximumOpticalZoom()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:59
+// [8] qreal maximumDigitalZoom()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:61
+// [8] qreal requestedOpticalZoom()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:62
+// [8] qreal requestedDigitalZoom()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:63
+// [8] qreal currentOpticalZoom()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:64
+// [8] qreal currentDigitalZoom()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:66
+// [-2] void zoomTo(qreal, qreal)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerazoomcontrol.h:53
 // [8] const QMetaObject * metaObject()

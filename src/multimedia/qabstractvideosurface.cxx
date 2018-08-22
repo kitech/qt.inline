@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QAbstractVideoSurface is pure virtual: true
-// QAbstractVideoSurface has virtual projected: true
+// QAbstractVideoSurface has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,50 +17,43 @@
 class Q_DECL_EXPORT MyQAbstractVideoSurface : public QAbstractVideoSurface {
 public:
   virtual ~MyQAbstractVideoSurface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType)
+  virtual QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedPixelFormats", &handled, 1, (uint64_t)handleType, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QVideoFrame::PixelFormat>){};}
+    auto prv = (QList<QVideoFrame::PixelFormat>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QVideoFrame::PixelFormat>
+    } else {
+    return (QList<QVideoFrame::PixelFormat>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool present(const QVideoFrame &)
+  virtual bool present(const QVideoFrame & frame)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"present", &handled, 1, (uint64_t)&frame, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 // void QAbstractVideoSurface(QObject *)
 MyQAbstractVideoSurface(QObject * parent) : QAbstractVideoSurface(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void setError(QAbstractVideoSurface::Error)
-  virtual void setError(QAbstractVideoSurface::Error error)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setError", &handled, 1, (uint64_t)error, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractVideoSurface::setError(error);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setNativeResolution(const QSize &)
-  virtual void setNativeResolution(const QSize & resolution)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setNativeResolution", &handled, 1, (uint64_t)&resolution, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractVideoSurface::setNativeResolution(resolution);
-  }
-  }
-
 };
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qabstractvideosurface.h:95
-// [-2] void setError(QAbstractVideoSurface::Error)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractVideoSurface8setErrorENS_5ErrorE(void *this_, QAbstractVideoSurface::Error error) {
-  ((QAbstractVideoSurface*)this_)->QAbstractVideoSurface::setError(error);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qabstractvideosurface.h:96
-// [-2] void setNativeResolution(const QSize &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractVideoSurface19setNativeResolutionERK5QSize(void *this_, QSize* resolution) {
-  ((QAbstractVideoSurface*)this_)->QAbstractVideoSurface::setNativeResolution(*resolution);
-}
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideosurface.h:70
+// [-2] QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideosurface.h:84
+// [1] bool present(const QVideoFrame &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideosurface.h:55
 // [8] const QMetaObject * metaObject()
@@ -108,8 +101,7 @@ return new QString(rv);
 // [-2] void QAbstractVideoSurface(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractVideoSurfaceC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQAbstractVideoSurface*)(0);
-  return 0; // new MyQAbstractVideoSurface(parent);
+  return 0; // new QAbstractVideoSurface(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

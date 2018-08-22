@@ -18,8 +18,6 @@
 class Q_DECL_EXPORT MyQAbstractState : public QAbstractState {
 public:
   virtual ~MyQAbstractState() {}
-// void QAbstractState(QState *)
-MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [-2] void onEntry(QEvent *)
   virtual void onEntry(QEvent * event)  override {
@@ -57,8 +55,6 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
   }
   }
 
-// void QAbstractState(QAbstractStatePrivate &, QState *)
-MyQAbstractState(QAbstractStatePrivate & dd, QState * parent) : QAbstractState(dd, parent) {}
 };
 
 // Protected purevirtual virtual Visibility=Default Availability=Available

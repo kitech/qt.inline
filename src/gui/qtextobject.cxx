@@ -9,40 +9,14 @@
 #include "callback_inherit.h"
 
 // QTextObject is pure virtual: false
-// QTextObject has virtual projected: true
+// QTextObject has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class Q_DECL_EXPORT MyQTextObject : public QTextObject {
 public:
-// void QTextObject(QTextDocument *)
-MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
-// Protected virtual Visibility=Default Availability=Available
-// [-2] void ~QTextObject()
-// Protected Visibility=Default Availability=Available
-// [-2] void setFormat(const QTextFormat &)
-  virtual void setFormat(const QTextFormat & format)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTextObject::setFormat(format);
-  }
-  }
-
-// void QTextObject(QTextObjectPrivate &, QTextDocument *)
-MyQTextObject(QTextObjectPrivate & p, QTextDocument * doc) : QTextObject(p, doc) {}
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextobject.h:68
-// [-2] void setFormat(const QTextFormat &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextObject9setFormatERK11QTextFormat(void *this_, QTextFormat* format) {
-  ((QTextObject*)this_)->QTextObject::setFormat(*format);
-}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:62

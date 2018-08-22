@@ -18,10 +18,33 @@
 class Q_DECL_EXPORT MyQAnimationGroup : public QAnimationGroup {
 public:
   virtual ~MyQAnimationGroup() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int duration()
+  virtual int duration() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"duration", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// [-2] void updateCurrentTime(int)
+  virtual void updateCurrentTime(int currentTime)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCurrentTime", &handled, 1, (uint64_t)currentTime, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAnimationGroup::updateCurrentTime(currentTime);
+  }
+  }
+
 // void QAnimationGroup(QObject *)
 MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
-// void QAnimationGroup(QAnimationGroupPrivate &, QObject *)
-MyQAnimationGroup(QAnimationGroupPrivate & dd, QObject * parent) : QAnimationGroup(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
@@ -37,6 +60,12 @@ MyQAnimationGroup(QAnimationGroupPrivate & dd, QObject * parent) : QAnimationGro
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractanimation.h:102
+// [4] int duration()
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractanimation.h:123
+// [-2] void updateCurrentTime(int)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:70
 // [1] bool event(QEvent *)

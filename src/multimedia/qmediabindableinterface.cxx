@@ -17,6 +17,19 @@
 class Q_DECL_EXPORT MyQMediaBindableInterface : public QMediaBindableInterface {
 public:
   virtual ~MyQMediaBindableInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QMediaObject * mediaObject()
+  virtual QMediaObject * mediaObject() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mediaObject", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaObject *)(irv);
+      // Pointer Pointer QMediaObject *
+    } else {
+    return (QMediaObject *){};
+  }
+  }
+
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [1] bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * object)  override {
@@ -32,6 +45,9 @@ public:
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediabindableinterface.h:55
+// [8] QMediaObject * mediaObject()
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediabindableinterface.h:59
 // [1] bool setMediaObject(QMediaObject *)

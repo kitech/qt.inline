@@ -201,32 +201,6 @@ MyQLineEdit(const QString & arg0, QWidget * parent) : QLineEdit(arg0, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionFrame *)
-  virtual void initStyleOption(QStyleOptionFrame * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QLineEdit::initStyleOption(option);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QRect cursorRect()
-  virtual QRect cursorRect() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cursorRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRect){};}
-    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRect
-    } else {
-    return QLineEdit::cursorRect();
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -348,26 +322,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
   ((QLineEdit*)this_)->QLineEdit::inputMethodEvent(arg0);
 }
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:232
-// [-2] void initStyleOption(QStyleOptionFrame *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QLineEdit15initStyleOptionEP17QStyleOptionFrame(void *this_, QStyleOptionFrame * option) {
-  ((QLineEdit*)this_)->QLineEdit::initStyleOption(option);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtWidgets/qlineedit.h:238
-// [16] QRect cursorRect()
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QLineEdit10cursorRectEv(void *this_) {
-  auto rv = ((QLineEdit*)this_)->QLineEdit::cursorRect();
-return new QRect(rv);
-}
-#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:65

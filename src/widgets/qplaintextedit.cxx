@@ -326,8 +326,6 @@ MyQPlainTextEdit(const QString & text, QWidget * parent) : QPlainTextEdit(text, 
   }
   }
 
-// void QPlainTextEdit(QPlainTextEditPrivate &, QWidget *)
-MyQPlainTextEdit(QPlainTextEditPrivate & dd, QWidget * parent) : QPlainTextEdit(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
@@ -349,76 +347,6 @@ MyQPlainTextEdit(QPlainTextEditPrivate & dd, QWidget * parent) : QPlainTextEdit(
       // Void Void void
     } else {
     QPlainTextEdit::doSetTextCursor(cursor);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QTextBlock firstVisibleBlock()
-  virtual QTextBlock firstVisibleBlock() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"firstVisibleBlock", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QTextBlock){};}
-    auto prv = (QTextBlock*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QTextBlock
-    } else {
-    return QPlainTextEdit::firstVisibleBlock();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QPointF contentOffset()
-  virtual QPointF contentOffset() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contentOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QPointF){};}
-    auto prv = (QPointF*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QPointF
-    } else {
-    return QPlainTextEdit::contentOffset();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [32] QRectF blockBoundingRect(const QTextBlock &)
-  virtual QRectF blockBoundingRect(const QTextBlock & block) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockBoundingRect", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRectF){};}
-    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRectF
-    } else {
-    return QPlainTextEdit::blockBoundingRect(block);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [32] QRectF blockBoundingGeometry(const QTextBlock &)
-  virtual QRectF blockBoundingGeometry(const QTextBlock & block) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockBoundingGeometry", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRectF){};}
-    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRectF
-    } else {
-    return QPlainTextEdit::blockBoundingGeometry(block);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [64] QAbstractTextDocumentLayout::PaintContext getPaintContext()
-// Protected Visibility=Default Availability=Available
-// [-2] void zoomInF(float)
-  virtual void zoomInF(float range_)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"zoomInF", &handled, 1, (uint64_t)&range_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QPlainTextEdit::zoomInF(range_);
   }
   }
 
@@ -638,50 +566,6 @@ void C_ZN14QPlainTextEdit16scrollContentsByEii(void *this_, int dx, int dy) {
 extern "C" Q_DECL_EXPORT
 void C_ZN14QPlainTextEdit15doSetTextCursorERK11QTextCursor(void *this_, QTextCursor* cursor) {
   ((QPlainTextEdit*)this_)->QPlainTextEdit::doSetTextCursor(*cursor);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:275
-// [16] QTextBlock firstVisibleBlock()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QPlainTextEdit17firstVisibleBlockEv(void *this_) {
-  auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::firstVisibleBlock();
-return new QTextBlock(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:276
-// [16] QPointF contentOffset()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QPlainTextEdit13contentOffsetEv(void *this_) {
-  auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::contentOffset();
-return new QPointF(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:277
-// [32] QRectF blockBoundingRect(const QTextBlock &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QPlainTextEdit17blockBoundingRectERK10QTextBlock(void *this_, QTextBlock* block) {
-  auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::blockBoundingRect(*block);
-return new QRectF(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:278
-// [32] QRectF blockBoundingGeometry(const QTextBlock &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QPlainTextEdit21blockBoundingGeometryERK10QTextBlock(void *this_, QTextBlock* block) {
-  auto rv = ((QPlainTextEdit*)this_)->QPlainTextEdit::blockBoundingGeometry(*block);
-return new QRectF(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:281
-// [-2] void zoomInF(float)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QPlainTextEdit7zoomInFEf(void *this_, float range_) {
-  ((QPlainTextEdit*)this_)->QPlainTextEdit::zoomInF(range_);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQSGRenderNode : public QSGRenderNode {
 public:
   virtual ~MyQSGRenderNode() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void render(const QSGRenderNode::RenderState *)
+  virtual void render(const QSGRenderNode::RenderState * state)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"render", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGRenderNode::render(state);
+  }
+  }
+
 // void QSGRenderNode()
 MyQSGRenderNode() : QSGRenderNode() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrendernode.h:86
+// [-2] void render(const QSGRenderNode::RenderState *)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:82
 // [-2] void QSGRenderNode()

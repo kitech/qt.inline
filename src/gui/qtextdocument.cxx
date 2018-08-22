@@ -48,8 +48,6 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
   }
   }
 
-// void QTextDocument(QTextDocumentPrivate &, QObject *)
-MyQTextDocument(QTextDocumentPrivate & dd, QObject * parent) : QTextDocument(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

@@ -84,20 +84,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionButton *)
-  virtual void initStyleOption(QStyleOptionButton * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QPushButton::initStyleOption(option);
-  }
-  }
-
-// void QPushButton(QPushButtonPrivate &, QWidget *)
-MyQPushButton(QPushButtonPrivate & dd, QWidget * parent) : QPushButton(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -138,14 +124,6 @@ void C_ZN11QPushButton12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * a
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPushButton13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
   ((QPushButton*)this_)->QPushButton::focusOutEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:96
-// [-2] void initStyleOption(QStyleOptionButton *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(void *this_, QStyleOptionButton * option) {
-  ((QPushButton*)this_)->QPushButton::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -94,30 +94,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void updateCell(const QDate &)
-  virtual void updateCell(const QDate & date)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCell", &handled, 1, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QCalendarWidget::updateCell(date);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void updateCells()
-  virtual void updateCells()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCells", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QCalendarWidget::updateCells();
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -167,28 +143,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void *this_, QPainter * painter, QRect* rect, QDate* date) {
   ((QCalendarWidget*)this_)->QCalendarWidget::paintCell(painter, *rect, *date);
 }
-
-// Protected Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:148
-// [-2] void updateCell(const QDate &)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN15QCalendarWidget10updateCellERK5QDate(void *this_, QDate* date) {
-  ((QCalendarWidget*)this_)->QCalendarWidget::updateCell(*date);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Protected Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:149
-// [-2] void updateCells()
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN15QCalendarWidget11updateCellsEv(void *this_) {
-  ((QCalendarWidget*)this_)->QCalendarWidget::updateCells();
-}
-#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:57

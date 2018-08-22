@@ -18,10 +18,40 @@
 class Q_DECL_EXPORT MyQQmlParserStatus : public QQmlParserStatus {
 public:
   virtual ~MyQQmlParserStatus() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void classBegin()
+  virtual void classBegin()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"classBegin", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQmlParserStatus::classBegin();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void componentComplete()
+  virtual void componentComplete()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"componentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQmlParserStatus::componentComplete();
+  }
+  }
+
 // void QQmlParserStatus()
 MyQQmlParserStatus() : QQmlParserStatus() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlparserstatus.h:55
+// [-2] void classBegin()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlparserstatus.h:56
+// [-2] void componentComplete()
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:52
 // [-2] void QQmlParserStatus()

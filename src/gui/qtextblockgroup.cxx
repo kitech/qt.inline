@@ -16,10 +16,6 @@
 
 class Q_DECL_EXPORT MyQTextBlockGroup : public QTextBlockGroup {
 public:
-// void QTextBlockGroup(QTextDocument *)
-MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
-// Protected virtual Visibility=Default Availability=Available
-// [-2] void ~QTextBlockGroup()
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void blockInserted(const QTextBlock &)
   virtual void blockInserted(const QTextBlock & block)  override {
@@ -56,22 +52,6 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] QList<QTextBlock> blockList()
-  virtual QList<QTextBlock> blockList() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QList<QTextBlock>){};}
-    auto prv = (QList<QTextBlock>*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Unexposed Record QList<QTextBlock>
-    } else {
-    return QTextBlockGroup::blockList();
-  }
-  }
-
-// void QTextBlockGroup(QTextBlockGroupPrivate &, QTextDocument *)
-MyQTextBlockGroup(QTextBlockGroupPrivate & p, QTextDocument * doc) : QTextBlockGroup(p, doc) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -96,15 +76,6 @@ void C_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void *this_, QTextBlock*
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void *this_, QTextBlock* block) {
   ((QTextBlockGroup*)this_)->QTextBlockGroup::blockFormatChanged(*block);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextobject.h:102
-// [-2] QList<QTextBlock> blockList()
-extern "C" Q_DECL_EXPORT
-QList<QTextBlock>* C_ZNK15QTextBlockGroup9blockListEv(void *this_) {
-  auto rv = ((QTextBlockGroup*)this_)->QTextBlockGroup::blockList();
-return new QList<QTextBlock>(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

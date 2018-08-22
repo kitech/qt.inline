@@ -68,8 +68,6 @@ public:
   }
   }
 
-// void QPaintDeviceWindow(QPaintDeviceWindowPrivate &, QWindow *)
-MyQPaintDeviceWindow(QPaintDeviceWindowPrivate & dd, QWindow * parent) : QPaintDeviceWindow(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

@@ -17,10 +17,88 @@
 class Q_DECL_EXPORT MyQAbstractTextDocumentLayout : public QAbstractTextDocumentLayout {
 public:
   virtual ~MyQAbstractTextDocumentLayout() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void draw(QPainter *, const QAbstractTextDocumentLayout::PaintContext &)
+  virtual void draw(QPainter * painter, const QAbstractTextDocumentLayout::PaintContext & context)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"draw", &handled, 2, (uint64_t)painter, (uint64_t)&context, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractTextDocumentLayout::draw(painter, context);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)
+  virtual int hitTest(const QPointF & point, Qt::HitTestAccuracy accuracy) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hitTest", &handled, 2, (uint64_t)&point, (uint64_t)accuracy, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int pageCount()
+  virtual int pageCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"pageCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QSizeF documentSize()
+  virtual QSizeF documentSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"documentSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSizeF){};}
+    auto prv = (QSizeF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSizeF
+    } else {
+    return (QSizeF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF frameBoundingRect(QTextFrame *)
+  virtual QRectF frameBoundingRect(QTextFrame * frame) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"frameBoundingRect", &handled, 1, (uint64_t)frame, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
+    } else {
+    return (QRectF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF blockBoundingRect(const QTextBlock &)
+  virtual QRectF blockBoundingRect(const QTextBlock & block) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockBoundingRect", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
+    } else {
+    return (QRectF){};
+  }
+  }
+
 // void QAbstractTextDocumentLayout(QTextDocument *)
 MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout(doc) {}
-// void QAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate &, QTextDocument *)
-MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDocument * arg1) : QAbstractTextDocumentLayout(arg0, arg1) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [-2] void documentChanged(int, int, int)
   virtual void documentChanged(int from, int charsRemoved, int charsAdded)  override {
@@ -69,35 +147,26 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [4] int formatIndex(int)
-  virtual int formatIndex(int pos)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"formatIndex", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QAbstractTextDocumentLayout::formatIndex(pos);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QTextCharFormat format(int)
-  virtual QTextCharFormat format(int pos)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QTextCharFormat){};}
-    auto prv = (QTextCharFormat*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QTextCharFormat
-    } else {
-    return QAbstractTextDocumentLayout::format(pos);
-  }
-  }
-
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:84
+// [-2] void draw(QPainter *, const QAbstractTextDocumentLayout::PaintContext &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:85
+// [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:91
+// [4] int pageCount()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:92
+// [16] QSizeF documentSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:94
+// [32] QRectF frameBoundingRect(QTextFrame *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:95
+// [32] QRectF blockBoundingRect(const QTextBlock &)
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:115
 // [-2] void documentChanged(int, int, int)
@@ -123,23 +192,6 @@ void C_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObject
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat(void *this_, QPainter * painter, QRectF* rect, QTextInlineObject* object, int posInDocument, QTextFormat* format) {
   ((QAbstractTextDocumentLayout*)this_)->QAbstractTextDocumentLayout::drawInlineObject(painter, *rect, *object, posInDocument, *format);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:121
-// [4] int formatIndex(int)
-extern "C" Q_DECL_EXPORT
-int C_ZN27QAbstractTextDocumentLayout11formatIndexEi(void *this_, int pos) {
-  return (int)((QAbstractTextDocumentLayout*)this_)->QAbstractTextDocumentLayout::formatIndex(pos);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:122
-// [16] QTextCharFormat format(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAbstractTextDocumentLayout6formatEi(void *this_, int pos) {
-  auto rv = ((QAbstractTextDocumentLayout*)this_)->QAbstractTextDocumentLayout::format(pos);
-return new QTextCharFormat(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

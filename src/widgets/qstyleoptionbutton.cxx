@@ -21,8 +21,6 @@ public:
 MyQStyleOptionButton() : QStyleOptionButton() {}
 // void QStyleOptionButton(const QStyleOptionButton &)
 MyQStyleOptionButton(const QStyleOptionButton & other) : QStyleOptionButton(other) {}
-// void QStyleOptionButton(int)
-MyQStyleOptionButton(int version) : QStyleOptionButton(version) {}
 };
 
 // Public Visibility=Default Availability=Available

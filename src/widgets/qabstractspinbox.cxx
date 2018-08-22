@@ -211,43 +211,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionSpinBox *)
-  virtual void initStyleOption(QStyleOptionSpinBox * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractSpinBox::initStyleOption(option);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QLineEdit * lineEdit()
-  virtual QLineEdit * lineEdit() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"lineEdit", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QLineEdit *)(irv);
-      // Pointer Pointer QLineEdit *
-    } else {
-    return QAbstractSpinBox::lineEdit();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setLineEdit(QLineEdit *)
-  virtual void setLineEdit(QLineEdit * edit)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setLineEdit", &handled, 1, (uint64_t)edit, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractSpinBox::setLineEdit(edit);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [4] QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() const override {
@@ -261,8 +224,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
   }
   }
 
-// void QAbstractSpinBox(QAbstractSpinBoxPrivate &, QWidget *)
-MyQAbstractSpinBox(QAbstractSpinBoxPrivate & dd, QWidget * parent) : QAbstractSpinBox(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -391,30 +352,6 @@ void C_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent 
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAbstractSpinBox9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QAbstractSpinBox*)this_)->QAbstractSpinBox::showEvent(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractspinbox.h:156
-// [-2] void initStyleOption(QStyleOptionSpinBox *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox(void *this_, QStyleOptionSpinBox * option) {
-  ((QAbstractSpinBox*)this_)->QAbstractSpinBox::initStyleOption(option);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractspinbox.h:158
-// [8] QLineEdit * lineEdit()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QAbstractSpinBox8lineEditEv(void *this_) {
-  return (void*)((QAbstractSpinBox*)this_)->QAbstractSpinBox::lineEdit();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractspinbox.h:159
-// [-2] void setLineEdit(QLineEdit *)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit(void *this_, QLineEdit * edit) {
-  ((QAbstractSpinBox*)this_)->QAbstractSpinBox::setLineEdit(edit);
 }
 
 // Protected virtual Visibility=Default Availability=Available

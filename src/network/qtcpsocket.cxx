@@ -19,10 +19,6 @@ public:
   virtual ~MyQTcpSocket() {}
 // void QTcpSocket(QObject *)
 MyQTcpSocket(QObject * parent) : QTcpSocket(parent) {}
-// void QTcpSocket(QTcpSocketPrivate &, QObject *)
-MyQTcpSocket(QTcpSocketPrivate & dd, QObject * parent) : QTcpSocket(dd, parent) {}
-// void QTcpSocket(QAbstractSocket::SocketType, QTcpSocketPrivate &, QObject *)
-MyQTcpSocket(QAbstractSocket::SocketType socketType, QTcpSocketPrivate & dd, QObject * parent) : QTcpSocket(socketType, dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

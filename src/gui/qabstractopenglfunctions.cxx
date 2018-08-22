@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QAbstractOpenGLFunctions is pure virtual: true
-// QAbstractOpenGLFunctions has virtual projected: true
+// QAbstractOpenGLFunctions has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -18,71 +18,7 @@
 class Q_DECL_EXPORT MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
 public:
   virtual ~MyQAbstractOpenGLFunctions() {}
-// void QAbstractOpenGLFunctions()
-MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
-// Protected Visibility=Default Availability=Available
-// [1] bool isInitialized()
-  virtual bool isInitialized() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isInitialized", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QAbstractOpenGLFunctions::isInitialized();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setOwningContext(const QOpenGLContext *)
-  virtual void setOwningContext(const QOpenGLContext * context)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwningContext", &handled, 1, (uint64_t)context, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractOpenGLFunctions::setOwningContext(context);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QOpenGLContext * owningContext()
-  virtual QOpenGLContext * owningContext() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"owningContext", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QOpenGLContext *)(irv);
-      // Pointer Pointer QOpenGLContext *
-    } else {
-    return QAbstractOpenGLFunctions::owningContext();
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:223
-// [1] bool isInitialized()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void *this_) {
-  return (bool)((QAbstractOpenGLFunctions*)this_)->QAbstractOpenGLFunctions::isInitialized();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:225
-// [-2] void setOwningContext(const QOpenGLContext *)
-extern "C" Q_DECL_EXPORT
-void C_ZN24QAbstractOpenGLFunctions16setOwningContextEPK14QOpenGLContext(void *this_, const QOpenGLContext * context) {
-  ((QAbstractOpenGLFunctions*)this_)->QAbstractOpenGLFunctions::setOwningContext(context);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:226
-// [8] QOpenGLContext * owningContext()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK24QAbstractOpenGLFunctions13owningContextEv(void *this_) {
-  return (void*)((QAbstractOpenGLFunctions*)this_)->QAbstractOpenGLFunctions::owningContext();
-}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:213

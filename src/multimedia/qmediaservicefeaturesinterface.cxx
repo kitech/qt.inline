@@ -17,8 +17,24 @@
 class Q_DECL_EXPORT MyQMediaServiceFeaturesInterface : public QMediaServiceFeaturesInterface {
 public:
   virtual ~MyQMediaServiceFeaturesInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMediaServiceProviderHint::Features supportedFeatures(const QByteArray &)
+  virtual QMediaServiceProviderHint::Features supportedFeatures(const QByteArray & service) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedFeatures", &handled, 1, (uint64_t)&service, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaServiceProviderHint::Features)(int)(irv);
+      // Elaborated Record QFlags<QMediaServiceProviderHint::Feature>
+    } else {
+    return (QMediaServiceProviderHint::Features){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:181
+// [4] QMediaServiceProviderHint::Features supportedFeatures(const QByteArray &)
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:180
 // [-2] void ~QMediaServiceFeaturesInterface()

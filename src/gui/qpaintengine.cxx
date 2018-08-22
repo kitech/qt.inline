@@ -17,12 +17,88 @@
 class Q_DECL_EXPORT MyQPaintEngine : public QPaintEngine {
 public:
   virtual ~MyQPaintEngine() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool begin(QPaintDevice *)
+  virtual bool begin(QPaintDevice * pdev)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"begin", &handled, 1, (uint64_t)pdev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool end()
+  virtual bool end()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"end", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void updateState(const QPaintEngineState &)
+  virtual void updateState(const QPaintEngineState & state)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateState", &handled, 1, (uint64_t)&state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QPaintEngine::updateState(state);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void drawPixmap(const QRectF &, const QPixmap &, const QRectF &)
+  virtual void drawPixmap(const QRectF & r, const QPixmap & pm, const QRectF & sr)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawPixmap", &handled, 3, (uint64_t)&r, (uint64_t)&pm, (uint64_t)&sr, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QPaintEngine::drawPixmap(r, pm, sr);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QPaintEngine::Type type()
+  virtual QPaintEngine::Type type() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"type", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QPaintEngine::Type)(int)(irv);
+      // Enum Enum QPaintEngine::Type
+    } else {
+    return (QPaintEngine::Type){};
+  }
+  }
+
 // void QPaintEngine(QPaintEngine::PaintEngineFeatures)
 MyQPaintEngine(QFlags<QPaintEngine::PaintEngineFeature> features) : QPaintEngine(features) {}
-// void QPaintEngine(QPaintEnginePrivate &, QPaintEngine::PaintEngineFeatures)
-MyQPaintEngine(QPaintEnginePrivate & data, QFlags<QPaintEngine::PaintEngineFeature> devcaps) : QPaintEngine(data, devcaps) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:153
+// [1] bool begin(QPaintDevice *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:154
+// [1] bool end()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:156
+// [-2] void updateState(const QPaintEngineState &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:175
+// [-2] void drawPixmap(const QRectF &, const QPixmap &, const QRectF &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:214
+// [4] QPaintEngine::Type type()
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:147
 // [-2] void QPaintEngine(QPaintEngine::PaintEngineFeatures)

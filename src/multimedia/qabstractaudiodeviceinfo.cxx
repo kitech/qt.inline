@@ -17,8 +17,160 @@
 class Q_DECL_EXPORT MyQAbstractAudioDeviceInfo : public QAbstractAudioDeviceInfo {
 public:
   virtual ~MyQAbstractAudioDeviceInfo() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAudioFormat preferredFormat()
+  virtual QAudioFormat preferredFormat() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"preferredFormat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QAudioFormat){};}
+    auto prv = (QAudioFormat*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QAudioFormat
+    } else {
+    return (QAudioFormat){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isFormatSupported(const QAudioFormat &)
+  virtual bool isFormatSupported(const QAudioFormat & format) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFormatSupported", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString deviceName()
+  virtual QString deviceName() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"deviceName", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList supportedCodecs()
+  virtual QStringList supportedCodecs()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedCodecs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<int> supportedSampleRates()
+  virtual QList<int> supportedSampleRates()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSampleRates", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<int>){};}
+    auto prv = (QList<int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<int>
+    } else {
+    return (QList<int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<int> supportedChannelCounts()
+  virtual QList<int> supportedChannelCounts()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedChannelCounts", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<int>){};}
+    auto prv = (QList<int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<int>
+    } else {
+    return (QList<int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<int> supportedSampleSizes()
+  virtual QList<int> supportedSampleSizes()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSampleSizes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<int>){};}
+    auto prv = (QList<int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<int>
+    } else {
+    return (QList<int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QAudioFormat::Endian> supportedByteOrders()
+  virtual QList<QAudioFormat::Endian> supportedByteOrders()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedByteOrders", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QAudioFormat::Endian>){};}
+    auto prv = (QList<QAudioFormat::Endian>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QAudioFormat::Endian>
+    } else {
+    return (QList<QAudioFormat::Endian>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QAudioFormat::SampleType> supportedSampleTypes()
+  virtual QList<QAudioFormat::SampleType> supportedSampleTypes()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSampleTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QAudioFormat::SampleType>){};}
+    auto prv = (QList<QAudioFormat::SampleType>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QAudioFormat::SampleType>
+    } else {
+    return (QList<QAudioFormat::SampleType>){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:62
+// [8] QAudioFormat preferredFormat()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:63
+// [1] bool isFormatSupported(const QAudioFormat &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:64
+// [8] QString deviceName()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:65
+// [8] QStringList supportedCodecs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:66
+// [-2] QList<int> supportedSampleRates()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:67
+// [-2] QList<int> supportedChannelCounts()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:68
+// [-2] QList<int> supportedSampleSizes()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:69
+// [-2] QList<QAudioFormat::Endian> supportedByteOrders()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:70
+// [-2] QList<QAudioFormat::SampleType> supportedSampleTypes()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiosystem.h:59
 // [8] const QMetaObject * metaObject()

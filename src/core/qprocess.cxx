@@ -19,18 +19,6 @@ public:
   virtual ~MyQProcess() {}
 // void QProcess(QObject *)
 MyQProcess(QObject * parent) : QProcess(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void setProcessState(QProcess::ProcessState)
-  virtual void setProcessState(QProcess::ProcessState state)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setProcessState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QProcess::setProcessState(state);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setupChildProcess()
   virtual void setupChildProcess()  override {
@@ -70,14 +58,6 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
   }
 
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qprocess.h:284
-// [-2] void setProcessState(QProcess::ProcessState)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QProcess15setProcessStateENS_12ProcessStateE(void *this_, QProcess::ProcessState state) {
-  ((QProcess*)this_)->QProcess::setProcessState(state);
-}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:286

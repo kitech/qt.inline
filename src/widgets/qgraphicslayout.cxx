@@ -18,35 +18,74 @@
 class Q_DECL_EXPORT MyQGraphicsLayout : public QGraphicsLayout {
 public:
   virtual ~MyQGraphicsLayout() {}
-// void QGraphicsLayout(QGraphicsLayoutItem *)
-MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
-// void QGraphicsLayout(QGraphicsLayoutPrivate &, QGraphicsLayoutItem *)
-MyQGraphicsLayout(QGraphicsLayoutPrivate & arg0, QGraphicsLayoutItem * arg1) : QGraphicsLayout(arg0, arg1) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void addChildLayoutItem(QGraphicsLayoutItem *)
-  virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem)   {
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int count()
+  virtual int count() const override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildLayoutItem", &handled, 1, (uint64_t)layoutItem, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"count", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QGraphicsLayoutItem * itemAt(int)
+  virtual QGraphicsLayoutItem * itemAt(int i) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemAt", &handled, 1, (uint64_t)i, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QGraphicsLayoutItem *)(irv);
+      // Pointer Pointer QGraphicsLayoutItem *
+    } else {
+    return (QGraphicsLayoutItem *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void removeAt(int)
+  virtual void removeAt(int index)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"removeAt", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QGraphicsLayout::addChildLayoutItem(layoutItem);
+    // QGraphicsLayout::removeAt(index);
   }
   }
 
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
+  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSizeF){};}
+    auto prv = (QSizeF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSizeF
+    } else {
+    return (QSizeF){};
+  }
+  }
+
+// void QGraphicsLayout(QGraphicsLayoutItem *)
+MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 };
 
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:78
-// [-2] void addChildLayoutItem(QGraphicsLayoutItem *)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * layoutItem) {
-  ((QGraphicsLayout*)this_)->QGraphicsLayout::addChildLayoutItem(layoutItem);
-}
-#endif // QT_VERSION >= 0x040600
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:70
+// [4] int count()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:71
+// [8] QGraphicsLayoutItem * itemAt(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:72
+// [-2] void removeAt(int)
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
+// [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:57
 // [-2] void QGraphicsLayout(QGraphicsLayoutItem *)

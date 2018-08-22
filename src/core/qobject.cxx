@@ -19,58 +19,6 @@ public:
   virtual ~MyQObject() {}
 // void QObject(QObject *)
 MyQObject(QObject * parent) : QObject(parent) {}
-// Protected Visibility=Default Availability=Available
-// [8] QObject * sender()
-  virtual QObject * sender() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sender", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QObject *)(irv);
-      // Pointer Pointer QObject *
-    } else {
-    return QObject::sender();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int senderSignalIndex()
-  virtual int senderSignalIndex() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"senderSignalIndex", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QObject::senderSignalIndex();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int receivers(const char *)
-  virtual int receivers(const char * signal) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"receivers", &handled, 1, (uint64_t)signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QObject::receivers(signal);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool isSignalConnected(const QMetaMethod &)
-  virtual bool isSignalConnected(const QMetaMethod & signal) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isSignalConnected", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QObject::isSignalConnected(signal);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event)  override {
@@ -131,47 +79,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
   }
   }
 
-// void QObject(QObjectPrivate &, QObject *)
-MyQObject(QObjectPrivate & dd, QObject * parent) : QObject(dd, parent) {}
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:423
-// [8] QObject * sender()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QObject6senderEv(void *this_) {
-  return (void*)((QObject*)this_)->QObject::sender();
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtCore/qobject.h:424
-// [4] int senderSignalIndex()
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-int C_ZNK7QObject17senderSignalIndexEv(void *this_) {
-  return (int)((QObject*)this_)->QObject::senderSignalIndex();
-}
-#endif // QT_VERSION >= 0x040800
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:425
-// [4] int receivers(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK7QObject9receiversEPKc(void *this_, const char * signal) {
-  return (int)((QObject*)this_)->QObject::receivers(signal);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qobject.h:426
-// [1] bool isSignalConnected(const QMetaMethod &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-bool C_ZNK7QObject17isSignalConnectedERK11QMetaMethod(void *this_, QMetaMethod* signal) {
-  return (bool)((QObject*)this_)->QObject::isSignalConnected(*signal);
-}
-#endif // QT_VERSION >= 0x050000
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:428

@@ -17,14 +17,26 @@
 class Q_DECL_EXPORT MyQValidator : public QValidator {
 public:
   virtual ~MyQValidator() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QValidator::State validate(QString &, int &)
+  virtual QValidator::State validate(QString & arg0, int & arg1) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"validate", &handled, 2, (uint64_t)&arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QValidator::State)(int)(irv);
+      // Enum Enum QValidator::State
+    } else {
+    return (QValidator::State){};
+  }
+  }
+
 // void QValidator(QObject *)
 MyQValidator(QObject * parent) : QValidator(parent) {}
-// void QValidator(QObjectPrivate &, QObject *)
-MyQValidator(QObjectPrivate & d, QObject * parent) : QValidator(d, parent) {}
-// void QValidator(QValidatorPrivate &, QObject *)
-MyQValidator(QValidatorPrivate & d, QObject * parent) : QValidator(d, parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:74
+// [4] QValidator::State validate(QString &, int &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:60
 // [8] const QMetaObject * metaObject()

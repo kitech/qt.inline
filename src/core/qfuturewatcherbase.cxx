@@ -17,6 +17,32 @@
 class Q_DECL_EXPORT MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
   virtual ~MyQFutureWatcherBase() {}
+// Private purevirtual virtual Visibility=Default Availability=Available
+// [16] const QFutureInterfaceBase & futureInterface()
+  virtual const QFutureInterfaceBase & futureInterface() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"futureInterface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (const QFutureInterfaceBase &)(irv);
+      // LValueReference LValueReference const QFutureInterfaceBase &
+    } else {
+    auto orv = (const QFutureInterfaceBase){}; return orv;
+  }
+  }
+
+// Private purevirtual virtual Visibility=Default Availability=Available
+// [16] QFutureInterfaceBase & futureInterface()
+  virtual QFutureInterfaceBase & futureInterface()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"futureInterface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QFutureInterfaceBase &)(irv);
+      // LValueReference LValueReference QFutureInterfaceBase &
+    } else {
+    auto orv = (QFutureInterfaceBase){}; return orv;
+  }
+  }
+
 // void QFutureWatcherBase(QObject *)
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // Protected virtual Visibility=Default Availability=Available
@@ -43,32 +69,14 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void connectOutputInterface()
-  virtual void connectOutputInterface()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectOutputInterface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QFutureWatcherBase::connectOutputInterface();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void disconnectOutputInterface(bool)
-  virtual void disconnectOutputInterface(bool pendingAssignment)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectOutputInterface", &handled, 1, (uint64_t)pendingAssignment, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
-  }
-  }
-
 };
 
+// Private purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfuturewatcher.h:110
+// [16] const QFutureInterfaceBase & futureInterface()
+// Private purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfuturewatcher.h:111
+// [16] QFutureInterfaceBase & futureInterface()
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:101
 // [-2] void connectNotify(const QMetaMethod &)
@@ -83,22 +91,6 @@ void C_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void *this_, QMetaM
 extern "C" Q_DECL_EXPORT
 void C_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void *this_, QMetaMethod* signal) {
   ((QFutureWatcherBase*)this_)->QFutureWatcherBase::disconnectNotify(*signal);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:105
-// [-2] void connectOutputInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void *this_) {
-  ((QFutureWatcherBase*)this_)->QFutureWatcherBase::connectOutputInterface();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:106
-// [-2] void disconnectOutputInterface(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void *this_, bool pendingAssignment) {
-  ((QFutureWatcherBase*)this_)->QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
 }
 
 // Public virtual Visibility=Default Availability=Available

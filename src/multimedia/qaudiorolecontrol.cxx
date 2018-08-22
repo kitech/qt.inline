@@ -18,10 +18,56 @@
 class Q_DECL_EXPORT MyQAudioRoleControl : public QAudioRoleControl {
 public:
   virtual ~MyQAudioRoleControl() {}
-// void QAudioRoleControl(QObject *)
-MyQAudioRoleControl(QObject * parent) : QAudioRoleControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QAudio::Role audioRole()
+  virtual QAudio::Role audioRole() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"audioRole", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAudio::Role)(int)(irv);
+      // Elaborated Enum QAudio::Role
+    } else {
+    return (QAudio::Role){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setAudioRole(QAudio::Role)
+  virtual void setAudioRole(QAudio::Role role)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAudioRole", &handled, 1, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioRoleControl::setAudioRole(role);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QAudio::Role> supportedAudioRoles()
+  virtual QList<QAudio::Role> supportedAudioRoles() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedAudioRoles", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QAudio::Role>){};}
+    auto prv = (QList<QAudio::Role>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QAudio::Role>
+    } else {
+    return (QList<QAudio::Role>){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiorolecontrol.h:58
+// [4] QAudio::Role audioRole()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiorolecontrol.h:59
+// [-2] void setAudioRole(QAudio::Role)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiorolecontrol.h:61
+// [-2] QList<QAudio::Role> supportedAudioRoles()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiorolecontrol.h:53
 // [8] const QMetaObject * metaObject()

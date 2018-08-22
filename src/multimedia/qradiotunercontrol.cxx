@@ -17,10 +17,399 @@
 class Q_DECL_EXPORT MyQRadioTunerControl : public QRadioTunerControl {
 public:
   virtual ~MyQRadioTunerControl() {}
-// void QRadioTunerControl(QObject *)
-MyQRadioTunerControl(QObject * parent) : QRadioTunerControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QRadioTuner::State state()
+  virtual QRadioTuner::State state() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QRadioTuner::State)(int)(irv);
+      // Elaborated Enum QRadioTuner::State
+    } else {
+    return (QRadioTuner::State){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QRadioTuner::Band band()
+  virtual QRadioTuner::Band band() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"band", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QRadioTuner::Band)(int)(irv);
+      // Elaborated Enum QRadioTuner::Band
+    } else {
+    return (QRadioTuner::Band){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setBand(QRadioTuner::Band)
+  virtual void setBand(QRadioTuner::Band b)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setBand", &handled, 1, (uint64_t)b, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::setBand(b);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isBandSupported(QRadioTuner::Band)
+  virtual bool isBandSupported(QRadioTuner::Band b) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isBandSupported", &handled, 1, (uint64_t)b, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int frequency()
+  virtual int frequency() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"frequency", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int frequencyStep(QRadioTuner::Band)
+  virtual int frequencyStep(QRadioTuner::Band b) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"frequencyStep", &handled, 1, (uint64_t)b, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QPair<int, int> frequencyRange(QRadioTuner::Band)
+  virtual QPair<int, int> frequencyRange(QRadioTuner::Band b) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"frequencyRange", &handled, 1, (uint64_t)b, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QPair<int, int>){};}
+    auto prv = (QPair<int, int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QPair<int, int>
+    } else {
+    return (QPair<int, int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFrequency(int)
+  virtual void setFrequency(int frequency)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFrequency", &handled, 1, (uint64_t)frequency, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::setFrequency(frequency);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isStereo()
+  virtual bool isStereo() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isStereo", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QRadioTuner::StereoMode stereoMode()
+  virtual QRadioTuner::StereoMode stereoMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stereoMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QRadioTuner::StereoMode)(int)(irv);
+      // Elaborated Enum QRadioTuner::StereoMode
+    } else {
+    return (QRadioTuner::StereoMode){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setStereoMode(QRadioTuner::StereoMode)
+  virtual void setStereoMode(QRadioTuner::StereoMode mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setStereoMode", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::setStereoMode(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int signalStrength()
+  virtual int signalStrength() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"signalStrength", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int volume()
+  virtual int volume() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"volume", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setVolume(int)
+  virtual void setVolume(int volume)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVolume", &handled, 1, (uint64_t)volume, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::setVolume(volume);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isMuted()
+  virtual bool isMuted() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isMuted", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setMuted(bool)
+  virtual void setMuted(bool muted)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMuted", &handled, 1, (uint64_t)muted, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::setMuted(muted);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isSearching()
+  virtual bool isSearching() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isSearching", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void searchForward()
+  virtual void searchForward()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"searchForward", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::searchForward();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void searchBackward()
+  virtual void searchBackward()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"searchBackward", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::searchBackward();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void searchAllStations(QRadioTuner::SearchMode)
+  virtual void searchAllStations(QRadioTuner::SearchMode searchMode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"searchAllStations", &handled, 1, (uint64_t)searchMode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::searchAllStations(searchMode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void cancelSearch()
+  virtual void cancelSearch()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cancelSearch", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::cancelSearch();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void start()
+  virtual void start()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::start();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void stop()
+  virtual void stop()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRadioTunerControl::stop();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QRadioTuner::Error error()
+  virtual QRadioTuner::Error error() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"error", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QRadioTuner::Error)(int)(irv);
+      // Elaborated Enum QRadioTuner::Error
+    } else {
+    return (QRadioTuner::Error){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString errorString()
+  virtual QString errorString() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"errorString", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:58
+// [4] QRadioTuner::State state()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:60
+// [4] QRadioTuner::Band band()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:61
+// [-2] void setBand(QRadioTuner::Band)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:62
+// [1] bool isBandSupported(QRadioTuner::Band)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:64
+// [4] int frequency()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:65
+// [4] int frequencyStep(QRadioTuner::Band)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:66
+// [8] QPair<int, int> frequencyRange(QRadioTuner::Band)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:67
+// [-2] void setFrequency(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:69
+// [1] bool isStereo()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:70
+// [4] QRadioTuner::StereoMode stereoMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:71
+// [-2] void setStereoMode(QRadioTuner::StereoMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:73
+// [4] int signalStrength()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:75
+// [4] int volume()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:76
+// [-2] void setVolume(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:78
+// [1] bool isMuted()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:79
+// [-2] void setMuted(bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:81
+// [1] bool isSearching()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:85
+// [-2] void searchForward()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:86
+// [-2] void searchBackward()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:87
+// [-2] void searchAllStations(QRadioTuner::SearchMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:88
+// [-2] void cancelSearch()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:90
+// [-2] void start()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:91
+// [-2] void stop()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:93
+// [4] QRadioTuner::Error error()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotunercontrol.h:94
+// [8] QString errorString()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiotunercontrol.h:53
 // [8] const QMetaObject * metaObject()

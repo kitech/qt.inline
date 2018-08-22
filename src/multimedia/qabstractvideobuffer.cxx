@@ -17,12 +17,57 @@
 class Q_DECL_EXPORT MyQAbstractVideoBuffer : public QAbstractVideoBuffer {
 public:
   virtual ~MyQAbstractVideoBuffer() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QAbstractVideoBuffer::MapMode mapMode()
+  virtual QAbstractVideoBuffer::MapMode mapMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mapMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAbstractVideoBuffer::MapMode)(int)(irv);
+      // Enum Enum QAbstractVideoBuffer::MapMode
+    } else {
+    return (QAbstractVideoBuffer::MapMode){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] uchar * map(QAbstractVideoBuffer::MapMode, int *, int *)
+  virtual uchar * map(QAbstractVideoBuffer::MapMode mode, int * numBytes, int * bytesPerLine)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"map", &handled, 3, (uint64_t)mode, (uint64_t)numBytes, (uint64_t)bytesPerLine, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (uchar *)(irv);
+      // Pointer Pointer unsigned char *
+    } else {
+    return (uchar *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void unmap()
+  virtual void unmap()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unmap", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractVideoBuffer::unmap();
+  }
+  }
+
 // void QAbstractVideoBuffer(QAbstractVideoBuffer::HandleType)
 MyQAbstractVideoBuffer(QAbstractVideoBuffer::HandleType type_) : QAbstractVideoBuffer(type_) {}
-// void QAbstractVideoBuffer(QAbstractVideoBufferPrivate &, QAbstractVideoBuffer::HandleType)
-MyQAbstractVideoBuffer(QAbstractVideoBufferPrivate & dd, QAbstractVideoBuffer::HandleType type_) : QAbstractVideoBuffer(dd, type_) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:84
+// [4] QAbstractVideoBuffer::MapMode mapMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:86
+// [8] uchar * map(QAbstractVideoBuffer::MapMode, int *, int *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:88
+// [-2] void unmap()
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:78
 // [-2] void QAbstractVideoBuffer(QAbstractVideoBuffer::HandleType)

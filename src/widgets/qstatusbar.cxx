@@ -55,30 +55,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void reformat()
-  virtual void reformat()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"reformat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QStatusBar::reformat();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void hideOrShow()
-  virtual void hideOrShow()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideOrShow", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QStatusBar::hideOrShow();
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0)  override {
@@ -116,22 +92,6 @@ void C_ZN10QStatusBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0
 extern "C" Q_DECL_EXPORT
 void C_ZN10QStatusBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
   ((QStatusBar*)this_)->QStatusBar::resizeEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:87
-// [-2] void reformat()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QStatusBar8reformatEv(void *this_) {
-  ((QStatusBar*)this_)->QStatusBar::reformat();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:88
-// [-2] void hideOrShow()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QStatusBar10hideOrShowEv(void *this_) {
-  ((QStatusBar*)this_)->QStatusBar::hideOrShow();
 }
 
 // Protected virtual Visibility=Default Availability=Available

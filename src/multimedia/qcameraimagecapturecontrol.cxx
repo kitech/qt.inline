@@ -17,10 +17,86 @@
 class Q_DECL_EXPORT MyQCameraImageCaptureControl : public QCameraImageCaptureControl {
 public:
   virtual ~MyQCameraImageCaptureControl() {}
-// void QCameraImageCaptureControl(QObject *)
-MyQCameraImageCaptureControl(QObject * parent) : QCameraImageCaptureControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isReadyForCapture()
+  virtual bool isReadyForCapture() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isReadyForCapture", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCameraImageCapture::DriveMode driveMode()
+  virtual QCameraImageCapture::DriveMode driveMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"driveMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCameraImageCapture::DriveMode)(int)(irv);
+      // Elaborated Enum QCameraImageCapture::DriveMode
+    } else {
+    return (QCameraImageCapture::DriveMode){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setDriveMode(QCameraImageCapture::DriveMode)
+  virtual void setDriveMode(QCameraImageCapture::DriveMode mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setDriveMode", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraImageCaptureControl::setDriveMode(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int capture(const QString &)
+  virtual int capture(const QString & fileName)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"capture", &handled, 1, (uint64_t)&fileName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void cancelCapture()
+  virtual void cancelCapture()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cancelCapture", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraImageCaptureControl::cancelCapture();
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:63
+// [1] bool isReadyForCapture()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:65
+// [4] QCameraImageCapture::DriveMode driveMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:66
+// [-2] void setDriveMode(QCameraImageCapture::DriveMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:68
+// [4] int capture(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:69
+// [-2] void cancelCapture()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
 // [8] const QMetaObject * metaObject()

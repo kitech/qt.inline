@@ -18,12 +18,6 @@
 class Q_DECL_EXPORT MyQFileDevice : public QFileDevice {
 public:
   virtual ~MyQFileDevice() {}
-// void QFileDevice()
-MyQFileDevice() : QFileDevice() {}
-// void QFileDevice(QObject *)
-MyQFileDevice(QObject * parent) : QFileDevice(parent) {}
-// void QFileDevice(QFileDevicePrivate &, QObject *)
-MyQFileDevice(QFileDevicePrivate & dd, QObject * parent) : QFileDevice(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen)  override {

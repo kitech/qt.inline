@@ -19,8 +19,6 @@ public:
   virtual ~MyQTextListFormat() {}
 // void QTextListFormat()
 MyQTextListFormat() : QTextListFormat() {}
-// void QTextListFormat(const QTextFormat &)
-MyQTextListFormat(const QTextFormat & fmt_) : QTextListFormat(fmt_) {}
 };
 
 // Public Visibility=Default Availability=Available

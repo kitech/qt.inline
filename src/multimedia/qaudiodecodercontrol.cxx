@@ -17,10 +17,214 @@
 class Q_DECL_EXPORT MyQAudioDecoderControl : public QAudioDecoderControl {
 public:
   virtual ~MyQAudioDecoderControl() {}
-// void QAudioDecoderControl(QObject *)
-MyQAudioDecoderControl(QObject * parent) : QAudioDecoderControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QAudioDecoder::State state()
+  virtual QAudioDecoder::State state() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAudioDecoder::State)(int)(irv);
+      // Elaborated Enum QAudioDecoder::State
+    } else {
+    return (QAudioDecoder::State){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString sourceFilename()
+  virtual QString sourceFilename() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceFilename", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setSourceFilename(const QString &)
+  virtual void setSourceFilename(const QString & fileName)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSourceFilename", &handled, 1, (uint64_t)&fileName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioDecoderControl::setSourceFilename(fileName);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIODevice * sourceDevice()
+  virtual QIODevice * sourceDevice() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceDevice", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QIODevice *)(irv);
+      // Pointer Pointer QIODevice *
+    } else {
+    return (QIODevice *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setSourceDevice(QIODevice *)
+  virtual void setSourceDevice(QIODevice * device)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSourceDevice", &handled, 1, (uint64_t)device, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioDecoderControl::setSourceDevice(device);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void start()
+  virtual void start()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioDecoderControl::start();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void stop()
+  virtual void stop()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioDecoderControl::stop();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAudioFormat audioFormat()
+  virtual QAudioFormat audioFormat() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"audioFormat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QAudioFormat){};}
+    auto prv = (QAudioFormat*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QAudioFormat
+    } else {
+    return (QAudioFormat){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setAudioFormat(const QAudioFormat &)
+  virtual void setAudioFormat(const QAudioFormat & format)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAudioFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioDecoderControl::setAudioFormat(format);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAudioBuffer read()
+  virtual QAudioBuffer read()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"read", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QAudioBuffer){};}
+    auto prv = (QAudioBuffer*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QAudioBuffer
+    } else {
+    return (QAudioBuffer){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool bufferAvailable()
+  virtual bool bufferAvailable() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"bufferAvailable", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 position()
+  virtual qint64 position() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"position", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 duration()
+  virtual qint64 duration() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"duration", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:60
+// [4] QAudioDecoder::State state()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:62
+// [8] QString sourceFilename()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:63
+// [-2] void setSourceFilename(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:65
+// [8] QIODevice * sourceDevice()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:66
+// [-2] void setSourceDevice(QIODevice *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:68
+// [-2] void start()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:69
+// [-2] void stop()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:71
+// [8] QAudioFormat audioFormat()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:72
+// [-2] void setAudioFormat(const QAudioFormat &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:74
+// [8] QAudioBuffer read()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:75
+// [1] bool bufferAvailable()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:77
+// [8] qint64 position()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:78
+// [8] qint64 duration()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiodecodercontrol.h:55
 // [8] const QMetaObject * metaObject()

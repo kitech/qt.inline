@@ -18,8 +18,227 @@
 class Q_DECL_EXPORT MyQSGImageNode : public QSGImageNode {
 public:
   virtual ~MyQSGImageNode() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setRect(const QRectF &)
+  virtual void setRect(const QRectF & rect)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRect", &handled, 1, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setRect(rect);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF rect()
+  virtual QRectF rect() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
+    } else {
+    return (QRectF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setSourceRect(const QRectF &)
+  virtual void setSourceRect(const QRectF & r)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSourceRect", &handled, 1, (uint64_t)&r, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setSourceRect(r);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF sourceRect()
+  virtual QRectF sourceRect() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sourceRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
+    } else {
+    return (QRectF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setTexture(QSGTexture *)
+  virtual void setTexture(QSGTexture * texture)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setTexture", &handled, 1, (uint64_t)texture, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setTexture(texture);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSGTexture * texture()
+  virtual QSGTexture * texture() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"texture", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGTexture *)(irv);
+      // Pointer Pointer QSGTexture *
+    } else {
+    return (QSGTexture *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFiltering(QSGTexture::Filtering)
+  virtual void setFiltering(QSGTexture::Filtering filtering)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFiltering", &handled, 1, (uint64_t)filtering, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setFiltering(filtering);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGTexture::Filtering filtering()
+  virtual QSGTexture::Filtering filtering() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"filtering", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGTexture::Filtering)(int)(irv);
+      // Elaborated Enum QSGTexture::Filtering
+    } else {
+    return (QSGTexture::Filtering){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setMipmapFiltering(QSGTexture::Filtering)
+  virtual void setMipmapFiltering(QSGTexture::Filtering filtering)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMipmapFiltering", &handled, 1, (uint64_t)filtering, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setMipmapFiltering(filtering);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGTexture::Filtering mipmapFiltering()
+  virtual QSGTexture::Filtering mipmapFiltering() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mipmapFiltering", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGTexture::Filtering)(int)(irv);
+      // Elaborated Enum QSGTexture::Filtering
+    } else {
+    return (QSGTexture::Filtering){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setTextureCoordinatesTransform(QSGImageNode::TextureCoordinatesTransformMode)
+  virtual void setTextureCoordinatesTransform(QFlags<QSGImageNode::TextureCoordinatesTransformFlag> mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setTextureCoordinatesTransform", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setTextureCoordinatesTransform(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGImageNode::TextureCoordinatesTransformMode textureCoordinatesTransform()
+  virtual QSGImageNode::TextureCoordinatesTransformMode textureCoordinatesTransform() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textureCoordinatesTransform", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGImageNode::TextureCoordinatesTransformMode)(int)(irv);
+      // Typedef Record QFlags<QSGImageNode::TextureCoordinatesTransformFlag>
+    } else {
+    return (QSGImageNode::TextureCoordinatesTransformMode){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setOwnsTexture(bool)
+  virtual void setOwnsTexture(bool owns)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwnsTexture", &handled, 1, (uint64_t)owns, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGImageNode::setOwnsTexture(owns);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool ownsTexture()
+  virtual bool ownsTexture() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"ownsTexture", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:53
+// [-2] void setRect(const QRectF &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:55
+// [32] QRectF rect()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:57
+// [-2] void setSourceRect(const QRectF &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:59
+// [32] QRectF sourceRect()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:61
+// [-2] void setTexture(QSGTexture *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:62
+// [8] QSGTexture * texture()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:64
+// [-2] void setFiltering(QSGTexture::Filtering)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:65
+// [4] QSGTexture::Filtering filtering()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:67
+// [-2] void setMipmapFiltering(QSGTexture::Filtering)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:68
+// [4] QSGTexture::Filtering mipmapFiltering()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:79
+// [-2] void setTextureCoordinatesTransform(QSGImageNode::TextureCoordinatesTransformMode)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:80
+// [4] QSGImageNode::TextureCoordinatesTransformMode textureCoordinatesTransform()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:82
+// [-2] void setOwnsTexture(bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgimagenode.h:83
+// [1] bool ownsTexture()
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:51
 // [-2] void ~QSGImageNode()

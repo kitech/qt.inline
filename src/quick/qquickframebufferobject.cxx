@@ -18,6 +18,19 @@
 class Q_DECL_EXPORT MyQQuickFramebufferObject : public QQuickFramebufferObject {
 public:
   virtual ~MyQQuickFramebufferObject() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QQuickFramebufferObject::Renderer * createRenderer()
+  virtual QQuickFramebufferObject::Renderer * createRenderer() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createRenderer", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QQuickFramebufferObject::Renderer *)(irv);
+      // Pointer Pointer QQuickFramebufferObject::Renderer *
+    } else {
+    return (QQuickFramebufferObject::Renderer *){};
+  }
+  }
+
 // void QQuickFramebufferObject(QQuickItem *)
 MyQQuickFramebufferObject(QQuickItem * parent) : QQuickFramebufferObject(parent) {}
 // Protected virtual Visibility=Default Availability=Available
@@ -47,6 +60,9 @@ MyQQuickFramebufferObject(QQuickItem * parent) : QQuickFramebufferObject(parent)
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickframebufferobject.h:86
+// [8] QQuickFramebufferObject::Renderer * createRenderer()
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickframebufferobject.h:93
 // [-2] void geometryChanged(const QRectF &, const QRectF &)

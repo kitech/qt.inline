@@ -21,19 +21,6 @@ public:
 MyQMenu(QWidget * parent) : QMenu(parent) {}
 // void QMenu(const QString &, QWidget *)
 MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
-// Protected Visibility=Default Availability=Available
-// [4] int columnCount()
-  virtual int columnCount() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QMenu::columnCount();
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0)  override {
@@ -204,29 +191,7 @@ MyQMenu(const QString & title, QWidget * parent) : QMenu(title, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionMenuItem *, const QAction *)
-  virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QMenu::initStyleOption(option, action);
-  }
-  }
-
-// void QMenu(QMenuPrivate &, QWidget *)
-MyQMenu(QMenuPrivate & dd, QWidget * parent) : QMenu(dd, parent) {}
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenu.h:232
-// [4] int columnCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QMenu11columnCountEv(void *this_) {
-  return (int)((QMenu*)this_)->QMenu::columnCount();
-}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmenu.h:234
@@ -338,14 +303,6 @@ bool C_ZN5QMenu5eventEP6QEvent(void *this_, QEvent * arg0) {
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QMenu18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QMenu*)this_)->QMenu::focusNextPrevChild(next);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenu.h:250
-// [-2] void initStyleOption(QStyleOptionMenuItem *, const QAction *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK5QMenu15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void *this_, QStyleOptionMenuItem * option, const QAction * action) {
-  ((QMenu*)this_)->QMenu::initStyleOption(option, action);
 }
 
 // Public virtual Visibility=Default Availability=Available

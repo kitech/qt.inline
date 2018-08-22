@@ -325,8 +325,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
   }
   }
 
-// void QTextEdit(QTextEditPrivate &, QWidget *)
-MyQTextEdit(QTextEditPrivate & dd, QWidget * parent) : QTextEdit(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
@@ -348,18 +346,6 @@ MyQTextEdit(QTextEditPrivate & dd, QWidget * parent) : QTextEdit(dd, parent) {}
       // Void Void void
     } else {
     QTextEdit::doSetTextCursor(cursor);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void zoomInF(float)
-  virtual void zoomInF(float range_)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"zoomInF", &handled, 1, (uint64_t)&range_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTextEdit::zoomInF(range_);
   }
   }
 
@@ -579,14 +565,6 @@ void C_ZN9QTextEdit16scrollContentsByEii(void *this_, int dx, int dy) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTextEdit15doSetTextCursorERK11QTextCursor(void *this_, QTextCursor* cursor) {
   ((QTextEdit*)this_)->QTextEdit::doSetTextCursor(*cursor);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextedit.h:312
-// [-2] void zoomInF(float)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTextEdit7zoomInFEf(void *this_, float range_) {
-  ((QTextEdit*)this_)->QTextEdit::zoomInF(range_);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -19,68 +19,6 @@ public:
   virtual ~MyQTreeView() {}
 // void QTreeView(QWidget *)
 MyQTreeView(QWidget * parent) : QTreeView(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void columnResized(int, int, int)
-  virtual void columnResized(int column, int oldSize, int newSize)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnResized", &handled, 3, (uint64_t)column, (uint64_t)oldSize, (uint64_t)newSize, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTreeView::columnResized(column, oldSize, newSize);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void columnCountChanged(int, int)
-  virtual void columnCountChanged(int oldCount, int newCount)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTreeView::columnCountChanged(oldCount, newCount);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void columnMoved()
-  virtual void columnMoved()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnMoved", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTreeView::columnMoved();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void reexpand()
-  virtual void reexpand()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"reexpand", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTreeView::reexpand();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void rowsRemoved(const QModelIndex &, int, int)
-  virtual void rowsRemoved(const QModelIndex & parent, int first, int last)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTreeView::rowsRemoved(parent, first, last);
-  }
-  }
-
-// void QTreeView(QTreeViewPrivate &, QWidget *)
-MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
@@ -217,18 +155,6 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
       // Void Void void
     } else {
     QTreeView::paintEvent(event);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void drawTree(QPainter *, const QRegion &)
-  virtual void drawTree(QPainter * painter, const QRegion & region) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawTree", &handled, 2, (uint64_t)painter, (uint64_t)&region, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTreeView::drawTree(painter, region);
   }
   }
 
@@ -380,32 +306,6 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [4] int indexRowSizeHint(const QModelIndex &)
-  virtual int indexRowSizeHint(const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexRowSizeHint", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QTreeView::indexRowSizeHint(index);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int rowHeight(const QModelIndex &)
-  virtual int rowHeight(const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowHeight", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QTreeView::rowHeight(index);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action)  override {
@@ -456,49 +356,6 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
   }
 
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:167
-// [-2] void columnResized(int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView13columnResizedEiii(void *this_, int column, int oldSize, int newSize) {
-  ((QTreeView*)this_)->QTreeView::columnResized(column, oldSize, newSize);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:168
-// [-2] void columnCountChanged(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView18columnCountChangedEii(void *this_, int oldCount, int newCount) {
-  ((QTreeView*)this_)->QTreeView::columnCountChanged(oldCount, newCount);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:169
-// [-2] void columnMoved()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView11columnMovedEv(void *this_) {
-  ((QTreeView*)this_)->QTreeView::columnMoved();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:170
-// [-2] void reexpand()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView8reexpandEv(void *this_) {
-  ((QTreeView*)this_)->QTreeView::reexpand();
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qtreeview.h:171
-// [-2] void rowsRemoved(const QModelIndex &, int, int)
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView11rowsRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int first, int last) {
-  ((QTreeView*)this_)->QTreeView::rowsRemoved(*parent, first, last);
-}
-#endif // QT_VERSION >= 0x040100
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:175
@@ -590,17 +447,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QTreeView*)this_)->QTreeView::paintEvent(event);
 }
-
-// Protected Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qtreeview.h:190
-// [-2] void drawTree(QPainter *, const QRegion &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion(void *this_, QPainter * painter, QRegion* region) {
-  ((QTreeView*)this_)->QTreeView::drawTree(painter, *region);
-}
-#endif // QT_VERSION >= 0x040200
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:191
@@ -698,25 +544,6 @@ extern "C" Q_DECL_EXPORT
 int C_ZNK9QTreeView17sizeHintForColumnEi(void *this_, int column) {
   return (int)((QTreeView*)this_)->QTreeView::sizeHintForColumn(column);
 }
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:213
-// [4] int indexRowSizeHint(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (int)((QTreeView*)this_)->QTreeView::indexRowSizeHint(*index);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtWidgets/qtreeview.h:214
-// [4] int rowHeight(const QModelIndex &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QTreeView9rowHeightERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (int)((QTreeView*)this_)->QTreeView::rowHeight(*index);
-}
-#endif // QT_VERSION >= 0x040300
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:216

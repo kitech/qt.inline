@@ -17,8 +17,38 @@
 class Q_DECL_EXPORT MyQQmlExtensionInterface : public QQmlExtensionInterface {
 public:
   virtual ~MyQQmlExtensionInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void initializeEngine(QQmlEngine *, const char *)
+  virtual void initializeEngine(QQmlEngine * engine, const char * uri)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeEngine", &handled, 2, (uint64_t)engine, (uint64_t)uri, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQmlExtensionInterface::initializeEngine(engine, uri);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void registerTypes(const char *)
+  virtual void registerTypes(const char * uri)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerTypes", &handled, 1, (uint64_t)uri, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQmlExtensionInterface::registerTypes(uri);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlextensioninterface.h:62
+// [-2] void initializeEngine(QQmlEngine *, const char *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlextensioninterface.h:55
+// [-2] void registerTypes(const char *)
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:61
 // [-2] void ~QQmlExtensionInterface()

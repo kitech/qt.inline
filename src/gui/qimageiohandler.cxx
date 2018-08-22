@@ -17,12 +17,42 @@
 class Q_DECL_EXPORT MyQImageIOHandler : public QImageIOHandler {
 public:
   virtual ~MyQImageIOHandler() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool canRead()
+  virtual bool canRead() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"canRead", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool read(QImage *)
+  virtual bool read(QImage * image)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"read", &handled, 1, (uint64_t)image, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 // void QImageIOHandler()
 MyQImageIOHandler() : QImageIOHandler() {}
-// void QImageIOHandler(QImageIOHandlerPrivate &)
-MyQImageIOHandler(QImageIOHandlerPrivate & dd) : QImageIOHandler(dd) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimageiohandler.h:74
+// [1] bool canRead()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimageiohandler.h:75
+// [1] bool read(QImage *)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:62
 // [-2] void QImageIOHandler()

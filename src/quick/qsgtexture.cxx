@@ -17,12 +17,90 @@
 class Q_DECL_EXPORT MyQSGTexture : public QSGTexture {
 public:
   virtual ~MyQSGTexture() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int textureId()
+  virtual int textureId() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textureId", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize textureSize()
+  virtual QSize textureSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textureSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool hasAlphaChannel()
+  virtual bool hasAlphaChannel() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hasAlphaChannel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool hasMipmaps()
+  virtual bool hasMipmaps() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hasMipmaps", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void bind()
+  virtual void bind()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"bind", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGTexture::bind();
+  }
+  }
+
 // void QSGTexture()
 MyQSGTexture() : QSGTexture() {}
-// void QSGTexture(QSGTexturePrivate &)
-MyQSGTexture(QSGTexturePrivate & dd) : QSGTexture(dd) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexture.h:79
+// [4] int textureId()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexture.h:80
+// [8] QSize textureSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexture.h:81
+// [1] bool hasAlphaChannel()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexture.h:82
+// [1] bool hasMipmaps()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexture.h:90
+// [-2] void bind()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:52
 // [8] const QMetaObject * metaObject()

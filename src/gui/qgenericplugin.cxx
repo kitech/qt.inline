@@ -17,10 +17,26 @@
 class Q_DECL_EXPORT MyQGenericPlugin : public QGenericPlugin {
 public:
   virtual ~MyQGenericPlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QObject * create(const QString &, const QString &)
+  virtual QObject * create(const QString & name, const QString & spec)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 2, (uint64_t)&name, (uint64_t)&spec, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QObject *)(irv);
+      // Pointer Pointer QObject *
+    } else {
+    return (QObject *){};
+  }
+  }
+
 // void QGenericPlugin(QObject *)
 MyQGenericPlugin(QObject * parent) : QGenericPlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qgenericplugin.h:58
+// [8] QObject * create(const QString &, const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qgenericplugin.h:53
 // [8] const QMetaObject * metaObject()

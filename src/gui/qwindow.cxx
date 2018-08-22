@@ -240,8 +240,6 @@ MyQWindow(QWindow * parent) : QWindow(parent) {}
   }
   }
 
-// void QWindow(QWindowPrivate &, QWindow *)
-MyQWindow(QWindowPrivate & dd, QWindow * parent) : QWindow(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

@@ -17,10 +17,91 @@
 class Q_DECL_EXPORT MyQImageEncoderControl : public QImageEncoderControl {
 public:
   virtual ~MyQImageEncoderControl() {}
-// void QImageEncoderControl(QObject *)
-MyQImageEncoderControl(QObject * parent) : QImageEncoderControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList supportedImageCodecs()
+  virtual QStringList supportedImageCodecs() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedImageCodecs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString imageCodecDescription(const QString &)
+  virtual QString imageCodecDescription(const QString & codecName) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"imageCodecDescription", &handled, 1, (uint64_t)&codecName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QList<QSize> supportedResolutions(const QImageEncoderSettings &, bool *)
+  virtual QList<QSize> supportedResolutions(const QImageEncoderSettings & settings, bool * continuous) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedResolutions", &handled, 2, (uint64_t)&settings, (uint64_t)continuous, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QSize>){};}
+    auto prv = (QList<QSize>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QSize>
+    } else {
+    return (QList<QSize>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QImageEncoderSettings imageSettings()
+  virtual QImageEncoderSettings imageSettings() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"imageSettings", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QImageEncoderSettings){};}
+    auto prv = (QImageEncoderSettings*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QImageEncoderSettings
+    } else {
+    return (QImageEncoderSettings){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setImageSettings(const QImageEncoderSettings &)
+  virtual void setImageSettings(const QImageEncoderSettings & settings)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setImageSettings", &handled, 1, (uint64_t)&settings, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QImageEncoderControl::setImageSettings(settings);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:67
+// [8] QStringList supportedImageCodecs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:68
+// [8] QString imageCodecDescription(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:70
+// [8] QList<QSize> supportedResolutions(const QImageEncoderSettings &, bool *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:73
+// [8] QImageEncoderSettings imageSettings()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:74
+// [-2] void setImageSettings(const QImageEncoderSettings &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qimageencodercontrol.h:62
 // [8] const QMetaObject * metaObject()

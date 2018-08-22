@@ -408,42 +408,6 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void updateMicroFocus()
-  virtual void updateMicroFocus()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateMicroFocus", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QWidget::updateMicroFocus();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void create(WId, bool, bool)
-  virtual void create(WId arg0, bool initializeWindow, bool destroyOldWindow)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 3, (uint64_t)arg0, (uint64_t)initializeWindow, (uint64_t)destroyOldWindow, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QWidget::create(arg0, initializeWindow, destroyOldWindow);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void destroy(bool, bool)
-  virtual void destroy(bool destroyWindow, bool destroySubWindows)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"destroy", &handled, 2, (uint64_t)destroyWindow, (uint64_t)destroySubWindows, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QWidget::destroy(destroyWindow, destroySubWindows);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool focusNextPrevChild(bool)
   virtual bool focusNextPrevChild(bool next)  override {
@@ -457,34 +421,6 @@ MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
   }
   }
 
-// Protected inline Visibility=Default Availability=Available
-// [1] bool focusNextChild()
-  virtual bool focusNextChild()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextChild", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QWidget::focusNextChild();
-  }
-  }
-
-// Protected inline Visibility=Default Availability=Available
-// [1] bool focusPreviousChild()
-  virtual bool focusPreviousChild()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusPreviousChild", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QWidget::focusPreviousChild();
-  }
-  }
-
-// void QWidget(QWidgetPrivate &, QWidget *, Qt::WindowFlags)
-MyQWidget(QWidgetPrivate & d, QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(d, parent, f) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -743,52 +679,12 @@ void C_ZN7QWidget16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMeth
   ((QWidget*)this_)->QWidget::inputMethodEvent(arg0);
 }
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwidget.h:666
-// [-2] void updateMicroFocus()
-extern "C" Q_DECL_EXPORT
-void C_ZN7QWidget16updateMicroFocusEv(void *this_) {
-  ((QWidget*)this_)->QWidget::updateMicroFocus();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwidget.h:669
-// [-2] void create(WId, bool, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QWidget6createEybb(void *this_, WId arg0, bool initializeWindow, bool destroyOldWindow) {
-  ((QWidget*)this_)->QWidget::create(arg0, initializeWindow, destroyOldWindow);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwidget.h:671
-// [-2] void destroy(bool, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QWidget7destroyEbb(void *this_, bool destroyWindow, bool destroySubWindows) {
-  ((QWidget*)this_)->QWidget::destroy(destroyWindow, destroySubWindows);
-}
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:675
 // [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QWidget18focusNextPrevChildEb(void *this_, bool next) {
   return (bool)((QWidget*)this_)->QWidget::focusNextPrevChild(next);
-}
-
-// Protected inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwidget.h:676
-// [1] bool focusNextChild()
-extern "C" Q_DECL_EXPORT
-bool C_ZN7QWidget14focusNextChildEv(void *this_) {
-  return (bool)((QWidget*)this_)->QWidget::focusNextChild();
-}
-
-// Protected inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwidget.h:677
-// [1] bool focusPreviousChild()
-extern "C" Q_DECL_EXPORT
-bool C_ZN7QWidget18focusPreviousChildEv(void *this_) {
-  return (bool)((QWidget*)this_)->QWidget::focusPreviousChild();
 }
 
 // Public virtual Visibility=Default Availability=Available

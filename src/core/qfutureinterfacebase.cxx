@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QFutureInterfaceBase is pure virtual: false
-// QFutureInterfaceBase has virtual projected: true
+// QFutureInterfaceBase has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -21,57 +21,14 @@ public:
 MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterfaceBase(initialState) {}
 // void QFutureInterfaceBase(const QFutureInterfaceBase &)
 MyQFutureInterfaceBase(const QFutureInterfaceBase & other) : QFutureInterfaceBase(other) {}
-// Protected Visibility=Default Availability=Available
-// [1] bool refT()
-  virtual bool refT() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"refT", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QFutureInterfaceBase::refT();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool derefT()
-  virtual bool derefT() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"derefT", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QFutureInterfaceBase::derefT();
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:131
-// [1] bool refT()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK20QFutureInterfaceBase4refTEv(void *this_) {
-  return (bool)((QFutureInterfaceBase*)this_)->QFutureInterfaceBase::refT();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:132
-// [1] bool derefT()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK20QFutureInterfaceBase6derefTEv(void *this_) {
-  return (bool)((QFutureInterfaceBase*)this_)->QFutureInterfaceBase::derefT();
-}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:73
 // [-2] void QFutureInterfaceBase(QFutureInterfaceBase::State)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initialState) {
-  auto _nilp = (MyQFutureInterfaceBase*)(0);
-  return  new MyQFutureInterfaceBase(initialState);
+  return  new QFutureInterfaceBase(initialState);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,8 +36,7 @@ void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initia
 // [-2] void QFutureInterfaceBase(const QFutureInterfaceBase &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBaseC2ERKS_(QFutureInterfaceBase* other) {
-  auto _nilp = (MyQFutureInterfaceBase*)(0);
-  return  new MyQFutureInterfaceBase(*other);
+  return  new QFutureInterfaceBase(*other);
 }
 
 // Public virtual Visibility=Default Availability=Available

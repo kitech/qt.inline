@@ -91,18 +91,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void setTabBar(QTabBar *)
-  virtual void setTabBar(QTabBar * arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setTabBar", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTabWidget::setTabBar(arg0);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * arg0)  override {
@@ -125,18 +113,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
       // Bool Bool bool
     } else {
     return QTabWidget::event(arg0);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionTabWidgetFrame *)
-  virtual void initStyleOption(QStyleOptionTabWidgetFrame * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTabWidget::initStyleOption(option);
   }
   }
 
@@ -190,14 +166,6 @@ void C_ZN10QTabWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0
   ((QTabWidget*)this_)->QTabWidget::paintEvent(arg0);
 }
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:168
-// [-2] void setTabBar(QTabBar *)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QTabWidget9setTabBarEP7QTabBar(void *this_, QTabBar * arg0) {
-  ((QTabWidget*)this_)->QTabWidget::setTabBar(arg0);
-}
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabwidget.h:169
 // [-2] void changeEvent(QEvent *)
@@ -212,14 +180,6 @@ void C_ZN10QTabWidget11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QTabWidget5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QTabWidget*)this_)->QTabWidget::event(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:171
-// [-2] void initStyleOption(QStyleOptionTabWidgetFrame *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame(void *this_, QStyleOptionTabWidgetFrame * option) {
-  ((QTabWidget*)this_)->QTabWidget::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

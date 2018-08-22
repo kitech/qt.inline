@@ -17,10 +17,70 @@
 class Q_DECL_EXPORT MyQCameraLocksControl : public QCameraLocksControl {
 public:
   virtual ~MyQCameraLocksControl() {}
-// void QCameraLocksControl(QObject *)
-MyQCameraLocksControl(QObject * parent) : QCameraLocksControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::LockTypes supportedLocks()
+  virtual QCamera::LockTypes supportedLocks() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedLocks", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::LockTypes)(int)(irv);
+      // Elaborated Record QFlags<QCamera::LockType>
+    } else {
+    return (QCamera::LockTypes){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::LockStatus lockStatus(QCamera::LockType)
+  virtual QCamera::LockStatus lockStatus(QCamera::LockType lock) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"lockStatus", &handled, 1, (uint64_t)lock, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::LockStatus)(int)(irv);
+      // Elaborated Enum QCamera::LockStatus
+    } else {
+    return (QCamera::LockStatus){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void searchAndLock(QCamera::LockTypes)
+  virtual void searchAndLock(QFlags<QCamera::LockType> locks)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"searchAndLock", &handled, 1, (uint64_t)locks, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraLocksControl::searchAndLock(locks);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void unlock(QCamera::LockTypes)
+  virtual void unlock(QFlags<QCamera::LockType> locks)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"unlock", &handled, 1, (uint64_t)locks, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraLocksControl::unlock(locks);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameralockscontrol.h:59
+// [4] QCamera::LockTypes supportedLocks()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameralockscontrol.h:61
+// [4] QCamera::LockStatus lockStatus(QCamera::LockType)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameralockscontrol.h:63
+// [-2] void searchAndLock(QCamera::LockTypes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameralockscontrol.h:64
+// [-2] void unlock(QCamera::LockTypes)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameralockscontrol.h:55
 // [8] const QMetaObject * metaObject()

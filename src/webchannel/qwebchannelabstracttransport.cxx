@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQWebChannelAbstractTransport : public QWebChannelAbstractTransport {
 public:
   virtual ~MyQWebChannelAbstractTransport() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void sendMessage(const QJsonObject &)
+  virtual void sendMessage(const QJsonObject & message)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sendMessage", &handled, 1, (uint64_t)&message, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QWebChannelAbstractTransport::sendMessage(message);
+  }
+  }
+
 // void QWebChannelAbstractTransport(QObject *)
 MyQWebChannelAbstractTransport(QObject * parent) : QWebChannelAbstractTransport(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:57
+// [-2] void sendMessage(const QJsonObject &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:51
 // [8] const QMetaObject * metaObject()

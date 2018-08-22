@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQRunnable : public QRunnable {
 public:
   virtual ~MyQRunnable() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void run()
+  virtual void run()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"run", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QRunnable::run();
+  }
+  }
+
 // void QRunnable()
 MyQRunnable() : QRunnable() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrunnable.h:58
+// [-2] void run()
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:58
 // [-2] void run()

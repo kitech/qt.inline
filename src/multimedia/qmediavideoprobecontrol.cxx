@@ -17,8 +17,6 @@
 class Q_DECL_EXPORT MyQMediaVideoProbeControl : public QMediaVideoProbeControl {
 public:
   virtual ~MyQMediaVideoProbeControl() {}
-// void QMediaVideoProbeControl(QObject *)
-MyQMediaVideoProbeControl(QObject * parent) : QMediaVideoProbeControl(parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

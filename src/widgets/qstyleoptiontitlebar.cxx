@@ -21,8 +21,6 @@ public:
 MyQStyleOptionTitleBar() : QStyleOptionTitleBar() {}
 // void QStyleOptionTitleBar(const QStyleOptionTitleBar &)
 MyQStyleOptionTitleBar(const QStyleOptionTitleBar & other) : QStyleOptionTitleBar(other) {}
-// void QStyleOptionTitleBar(int)
-MyQStyleOptionTitleBar(int version) : QStyleOptionTitleBar(version) {}
 };
 
 // Public Visibility=Default Availability=Available

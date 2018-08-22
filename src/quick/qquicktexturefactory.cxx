@@ -18,10 +18,59 @@
 class Q_DECL_EXPORT MyQQuickTextureFactory : public QQuickTextureFactory {
 public:
   virtual ~MyQQuickTextureFactory() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSGTexture * createTexture(QQuickWindow *)
+  virtual QSGTexture * createTexture(QQuickWindow * window) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createTexture", &handled, 1, (uint64_t)window, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGTexture *)(irv);
+      // Pointer Pointer QSGTexture *
+    } else {
+    return (QSGTexture *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize textureSize()
+  virtual QSize textureSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textureSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int textureByteCount()
+  virtual int textureByteCount() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textureByteCount", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 // void QQuickTextureFactory()
 MyQQuickTextureFactory() : QQuickTextureFactory() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickimageprovider.h:63
+// [8] QSGTexture * createTexture(QQuickWindow *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickimageprovider.h:64
+// [8] QSize textureSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickimageprovider.h:65
+// [4] int textureByteCount()
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:60
 // [-2] void QQuickTextureFactory()

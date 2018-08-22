@@ -19,8 +19,6 @@ public:
   virtual ~MyQSGGeometryNode() {}
 // void QSGGeometryNode()
 MyQSGGeometryNode() : QSGGeometryNode() {}
-// void QSGGeometryNode(QSGGeometryNodePrivate &)
-MyQSGGeometryNode(QSGGeometryNodePrivate & dd) : QSGGeometryNode(dd) {}
 };
 
 // Public Visibility=Default Availability=Available

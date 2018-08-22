@@ -130,18 +130,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionGroupBox *)
-  virtual void initStyleOption(QStyleOptionGroupBox * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QGroupBox::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -214,14 +202,6 @@ void C_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
   ((QGroupBox*)this_)->QGroupBox::mouseReleaseEvent(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgroupbox.h:97
-// [-2] void initStyleOption(QStyleOptionGroupBox *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(void *this_, QStyleOptionGroupBox * option) {
-  ((QGroupBox*)this_)->QGroupBox::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

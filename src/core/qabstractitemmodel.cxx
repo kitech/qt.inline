@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QAbstractItemModel is pure virtual: true
-// QAbstractItemModel has virtual projected: true
+// QAbstractItemModel has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,487 +17,93 @@
 class Q_DECL_EXPORT MyQAbstractItemModel : public QAbstractItemModel {
 public:
   virtual ~MyQAbstractItemModel() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex index(int, int, const QModelIndex &)
+  virtual QModelIndex index(int row, int column, const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"index", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex parent(const QModelIndex &)
+  virtual QModelIndex parent(const QModelIndex & child) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parent", &handled, 1, (uint64_t)&child, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int rowCount(const QModelIndex &)
+  virtual int rowCount(const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowCount", &handled, 1, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int columnCount(const QModelIndex &)
+  virtual int columnCount(const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCount", &handled, 1, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant data(const QModelIndex &, int)
+  virtual QVariant data(const QModelIndex & index, int role) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"data", &handled, 2, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
 // void QAbstractItemModel(QObject *)
 MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void resetInternalData()
-  virtual void resetInternalData()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::resetInternalData();
-  }
-  }
-
-// void QAbstractItemModel(QAbstractItemModelPrivate &, QObject *)
-MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstractItemModel(dd, parent) {}
-// Protected inline Visibility=Default Availability=Available
-// [24] QModelIndex createIndex(int, int, void *)
-  virtual QModelIndex createIndex(int row, int column, void * data) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QModelIndex){};}
-    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QModelIndex
-    } else {
-    return QAbstractItemModel::createIndex(row, column, data);
-  }
-  }
-
-// Protected inline Visibility=Default Availability=Available
-// [24] QModelIndex createIndex(int, int, quintptr)
-  virtual QModelIndex createIndex(int row, int column, quintptr id) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QModelIndex){};}
-    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QModelIndex
-    } else {
-    return QAbstractItemModel::createIndex(row, column, id);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void encodeData(const QModelIndexList &, QDataStream &)
-  virtual void encodeData(const QModelIndexList & indexes, QDataStream & stream) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"encodeData", &handled, 2, (uint64_t)&indexes, (uint64_t)&stream, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::encodeData(indexes, stream);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool decodeData(int, int, const QModelIndex &, QDataStream &)
-  virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decodeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)&parent, (uint64_t)&stream, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QAbstractItemModel::decodeData(row, column, parent, stream);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void beginInsertRows(const QModelIndex &, int, int)
-  virtual void beginInsertRows(const QModelIndex & parent, int first, int last)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginInsertRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::beginInsertRows(parent, first, last);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endInsertRows()
-  virtual void endInsertRows()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endInsertRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endInsertRows();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void beginRemoveRows(const QModelIndex &, int, int)
-  virtual void beginRemoveRows(const QModelIndex & parent, int first, int last)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginRemoveRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::beginRemoveRows(parent, first, last);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endRemoveRows()
-  virtual void endRemoveRows()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endRemoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endRemoveRows();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool beginMoveRows(const QModelIndex &, int, int, const QModelIndex &, int)
-  virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMoveRows", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationRow, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QAbstractItemModel::beginMoveRows(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endMoveRows()
-  virtual void endMoveRows()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endMoveRows();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void beginInsertColumns(const QModelIndex &, int, int)
-  virtual void beginInsertColumns(const QModelIndex & parent, int first, int last)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginInsertColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::beginInsertColumns(parent, first, last);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endInsertColumns()
-  virtual void endInsertColumns()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endInsertColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endInsertColumns();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void beginRemoveColumns(const QModelIndex &, int, int)
-  virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginRemoveColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::beginRemoveColumns(parent, first, last);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endRemoveColumns()
-  virtual void endRemoveColumns()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endRemoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endRemoveColumns();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [1] bool beginMoveColumns(const QModelIndex &, int, int, const QModelIndex &, int)
-  virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMoveColumns", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationColumn, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QAbstractItemModel::beginMoveColumns(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endMoveColumns()
-  virtual void endMoveColumns()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endMoveColumns();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void beginResetModel()
-  virtual void beginResetModel()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::beginResetModel();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void endResetModel()
-  virtual void endResetModel()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::endResetModel();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void changePersistentIndex(const QModelIndex &, const QModelIndex &)
-  virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changePersistentIndex", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::changePersistentIndex(from, to);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void changePersistentIndexList(const QModelIndexList &, const QModelIndexList &)
-  virtual void changePersistentIndexList(const QModelIndexList & from, const QModelIndexList & to)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changePersistentIndexList", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemModel::changePersistentIndexList(from, to);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QModelIndexList persistentIndexList()
-  virtual QModelIndexList persistentIndexList() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"persistentIndexList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return *(QModelIndexList*)(irv);
-      // Typedef Record QList<QModelIndex>
-    } else {
-    return QAbstractItemModel::persistentIndexList();
-  }
-  }
-
 };
 
-// Protected Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtCore/qabstractitemmodel.h:286
-// [-2] void resetInternalData()
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel17resetInternalDataEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::resetInternalData();
-}
-#endif // QT_VERSION >= 0x040800
-
-// Protected inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:291
-// [24] QModelIndex createIndex(int, int, void *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QAbstractItemModel11createIndexEiiPv(void *this_, int row, int column, void * data) {
-  auto rv = ((QAbstractItemModel*)this_)->QAbstractItemModel::createIndex(row, column, data);
-return new QModelIndex(rv);
-}
-
-// Protected inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:292
-// [24] QModelIndex createIndex(int, int, quintptr)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QAbstractItemModel11createIndexEiiy(void *this_, int row, int column, quintptr id) {
-  auto rv = ((QAbstractItemModel*)this_)->QAbstractItemModel::createIndex(row, column, id);
-return new QModelIndex(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:294
-// [-2] void encodeData(const QModelIndexList &, QDataStream &)
-extern "C" Q_DECL_EXPORT
-void C_ZNK18QAbstractItemModel10encodeDataERK5QListI11QModelIndexER11QDataStream(void *this_, const QModelIndexList & indexes, QDataStream* stream) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::encodeData(indexes, *stream);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:295
-// [1] bool decodeData(int, int, const QModelIndex &, QDataStream &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream(void *this_, int row, int column, QModelIndex* parent, QDataStream* stream) {
-  return (bool)((QAbstractItemModel*)this_)->QAbstractItemModel::decodeData(row, column, *parent, *stream);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:297
-// [-2] void beginInsertRows(const QModelIndex &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii(void *this_, QModelIndex* parent, int first, int last) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::beginInsertRows(*parent, first, last);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:298
-// [-2] void endInsertRows()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel13endInsertRowsEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endInsertRows();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:300
-// [-2] void beginRemoveRows(const QModelIndex &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii(void *this_, QModelIndex* parent, int first, int last) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::beginRemoveRows(*parent, first, last);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:301
-// [-2] void endRemoveRows()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel13endRemoveRowsEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endRemoveRows();
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtCore/qabstractitemmodel.h:303
-// [1] bool beginMoveRows(const QModelIndex &, int, int, const QModelIndex &, int)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-bool C_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i(void *this_, QModelIndex* sourceParent, int sourceFirst, int sourceLast, QModelIndex* destinationParent, int destinationRow) {
-  return (bool)((QAbstractItemModel*)this_)->QAbstractItemModel::beginMoveRows(*sourceParent, sourceFirst, sourceLast, *destinationParent, destinationRow);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtCore/qabstractitemmodel.h:304
-// [-2] void endMoveRows()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel11endMoveRowsEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endMoveRows();
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:306
-// [-2] void beginInsertColumns(const QModelIndex &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii(void *this_, QModelIndex* parent, int first, int last) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::beginInsertColumns(*parent, first, last);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:307
-// [-2] void endInsertColumns()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel16endInsertColumnsEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endInsertColumns();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:309
-// [-2] void beginRemoveColumns(const QModelIndex &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii(void *this_, QModelIndex* parent, int first, int last) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::beginRemoveColumns(*parent, first, last);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:310
-// [-2] void endRemoveColumns()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel16endRemoveColumnsEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endRemoveColumns();
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtCore/qabstractitemmodel.h:312
-// [1] bool beginMoveColumns(const QModelIndex &, int, int, const QModelIndex &, int)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-bool C_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i(void *this_, QModelIndex* sourceParent, int sourceFirst, int sourceLast, QModelIndex* destinationParent, int destinationColumn) {
-  return (bool)((QAbstractItemModel*)this_)->QAbstractItemModel::beginMoveColumns(*sourceParent, sourceFirst, sourceLast, *destinationParent, destinationColumn);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtCore/qabstractitemmodel.h:313
-// [-2] void endMoveColumns()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel14endMoveColumnsEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endMoveColumns();
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtCore/qabstractitemmodel.h:324
-// [-2] void beginResetModel()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel15beginResetModelEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::beginResetModel();
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtCore/qabstractitemmodel.h:325
-// [-2] void endResetModel()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel13endResetModelEv(void *this_) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::endResetModel();
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:327
-// [-2] void changePersistentIndex(const QModelIndex &, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(void *this_, QModelIndex* from, QModelIndex* to) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::changePersistentIndex(*from, *to);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:328
-// [-2] void changePersistentIndexList(const QModelIndexList &, const QModelIndexList &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel25changePersistentIndexListERK5QListI11QModelIndexES4_(void *this_, const QModelIndexList & from, const QModelIndexList & to) {
-  ((QAbstractItemModel*)this_)->QAbstractItemModel::changePersistentIndexList(from, to);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtCore/qabstractitemmodel.h:329
-// [8] QModelIndexList persistentIndexList()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-QModelIndexList* C_ZNK18QAbstractItemModel19persistentIndexListEv(void *this_) {
-  auto rv = ((QAbstractItemModel*)this_)->QAbstractItemModel::persistentIndexList();
-return new QModelIndexList(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:178
+// [24] QModelIndex index(int, int, const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:180
+// [24] QModelIndex parent(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:183
+// [4] int rowCount(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:184
+// [4] int columnCount(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:187
+// [16] QVariant data(const QModelIndex &, int)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:167
 // [8] const QMetaObject * metaObject()
@@ -545,8 +151,7 @@ return new QString(rv);
 // [-2] void QAbstractItemModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QAbstractItemModelC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQAbstractItemModel*)(0);
-  return 0; // new MyQAbstractItemModel(parent);
+  return 0; // new QAbstractItemModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

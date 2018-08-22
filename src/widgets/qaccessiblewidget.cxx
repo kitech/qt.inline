@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QAccessibleWidget is pure virtual: false
-// QAccessibleWidget has virtual projected: true
+// QAccessibleWidget has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -18,79 +18,14 @@ class Q_DECL_EXPORT MyQAccessibleWidget : public QAccessibleWidget {
 public:
 // void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)
 MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QAccessibleWidget(o, r, name) {}
-// Protected virtual Visibility=Default Availability=Available
-// [-2] void ~QAccessibleWidget()
-// Protected Visibility=Default Availability=Available
-// [8] QWidget * widget()
-  virtual QWidget * widget() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widget", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QWidget *)(irv);
-      // Pointer Pointer QWidget *
-    } else {
-    return QAccessibleWidget::widget();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QObject * parentObject()
-  virtual QObject * parentObject() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parentObject", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QObject *)(irv);
-      // Pointer Pointer QObject *
-    } else {
-    return QAccessibleWidget::parentObject();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void addControllingSignal(const QString &)
-  virtual void addControllingSignal(const QString & signal)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addControllingSignal", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAccessibleWidget::addControllingSignal(signal);
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:85
-// [8] QWidget * widget()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QAccessibleWidget6widgetEv(void *this_) {
-  return (void*)((QAccessibleWidget*)this_)->QAccessibleWidget::widget();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:86
-// [8] QObject * parentObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QAccessibleWidget12parentObjectEv(void *this_) {
-  return (void*)((QAccessibleWidget*)this_)->QAccessibleWidget::parentObject();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:88
-// [-2] void addControllingSignal(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAccessibleWidget20addControllingSignalERK7QString(void *this_, QString* signal) {
-  ((QAccessibleWidget*)this_)->QAccessibleWidget::addControllingSignal(*signal);
-}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:56
 // [-2] void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessibleWidgetC2EP7QWidgetN11QAccessible4RoleERK7QString(QWidget * o, QAccessible::Role r, QString* name) {
-  auto _nilp = (MyQAccessibleWidget*)(0);
-  return  new MyQAccessibleWidget(o, r, *name);
+  return  new QAccessibleWidget(o, r, *name);
 }
 
 // Public virtual Visibility=Default Availability=Available

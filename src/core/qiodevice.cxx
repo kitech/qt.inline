@@ -21,8 +21,6 @@ public:
 MyQIODevice() : QIODevice() {}
 // void QIODevice(QObject *)
 MyQIODevice(QObject * parent) : QIODevice(parent) {}
-// void QIODevice(QIODevicePrivate &, QObject *)
-MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [8] qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen)  override {
@@ -62,30 +60,6 @@ MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void setOpenMode(QIODevice::OpenMode)
-  virtual void setOpenMode(QFlags<QIODevice::OpenModeFlag> openMode)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOpenMode", &handled, 1, (uint64_t)openMode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QIODevice::setOpenMode(openMode);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setErrorString(const QString &)
-  virtual void setErrorString(const QString & errorString)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setErrorString", &handled, 1, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QIODevice::setErrorString(errorString);
-  }
-  }
-
 };
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
@@ -102,22 +76,6 @@ qint64 C_ZN9QIODevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen)
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:168
 // [8] qint64 writeData(const char *, qint64)
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:170
-// [-2] void setOpenMode(QIODevice::OpenMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
-  ((QIODevice*)this_)->QIODevice::setOpenMode(openMode);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:172
-// [-2] void setErrorString(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QIODevice14setErrorStringERK7QString(void *this_, QString* errorString) {
-  ((QIODevice*)this_)->QIODevice::setErrorString(*errorString);
-}
-
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:68
 // [8] const QMetaObject * metaObject()

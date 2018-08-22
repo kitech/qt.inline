@@ -18,8 +18,40 @@
 class Q_DECL_EXPORT MyQMediaServiceCameraInfoInterface : public QMediaServiceCameraInfoInterface {
 public:
   virtual ~MyQMediaServiceCameraInfoInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::Position cameraPosition(const QByteArray &)
+  virtual QCamera::Position cameraPosition(const QByteArray & device) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cameraPosition", &handled, 1, (uint64_t)&device, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::Position)(int)(irv);
+      // Elaborated Enum QCamera::Position
+    } else {
+    return (QCamera::Position){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int cameraOrientation(const QByteArray &)
+  virtual int cameraOrientation(const QByteArray & device) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cameraOrientation", &handled, 1, (uint64_t)&device, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:167
+// [4] QCamera::Position cameraPosition(const QByteArray &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:168
+// [4] int cameraOrientation(const QByteArray &)
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:166
 // [-2] void ~QMediaServiceCameraInfoInterface()

@@ -69,18 +69,6 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionSlider *)
-  virtual void initStyleOption(QStyleOptionSlider * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QSlider::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -113,14 +101,6 @@ void C_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
   ((QSlider*)this_)->QSlider::mouseMoveEvent(ev);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:92
-// [-2] void initStyleOption(QStyleOptionSlider *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(void *this_, QStyleOptionSlider * option) {
-  ((QSlider*)this_)->QSlider::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

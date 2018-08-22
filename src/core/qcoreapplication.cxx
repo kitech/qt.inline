@@ -45,8 +45,6 @@ MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, a
   }
   }
 
-// void QCoreApplication(QCoreApplicationPrivate &)
-MyQCoreApplication(QCoreApplicationPrivate & p) : QCoreApplication(p) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

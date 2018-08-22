@@ -18,10 +18,27 @@
 class Q_DECL_EXPORT MyQNetworkProxyFactory : public QNetworkProxyFactory {
 public:
   virtual ~MyQNetworkProxyFactory() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QNetworkProxy> queryProxy(const QNetworkProxyQuery &)
+  virtual QList<QNetworkProxy> queryProxy(const QNetworkProxyQuery & query)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"queryProxy", &handled, 1, (uint64_t)&query, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QNetworkProxy>){};}
+    auto prv = (QList<QNetworkProxy>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QNetworkProxy>
+    } else {
+    return (QList<QNetworkProxy>){};
+  }
+  }
+
 // void QNetworkProxyFactory()
 MyQNetworkProxyFactory() : QNetworkProxyFactory() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:222
+// [-2] QList<QNetworkProxy> queryProxy(const QNetworkProxyQuery &)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:219
 // [-2] void QNetworkProxyFactory()

@@ -228,18 +228,6 @@ MyQTabBar(QWidget * parent) : QTabBar(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionTab *, int)
-  virtual void initStyleOption(QStyleOptionTab * option, int tabIndex) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)tabIndex, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QTabBar::initStyleOption(option, tabIndex);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -381,14 +369,6 @@ void C_ZN7QTabBar11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
   ((QTabBar*)this_)->QTabBar::timerEvent(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabbar.h:211
-// [-2] void initStyleOption(QStyleOptionTab *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi(void *this_, QStyleOptionTab * option, int tabIndex) {
-  ((QTabBar*)this_)->QTabBar::initStyleOption(option, tabIndex);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -20,8 +20,6 @@ public:
   virtual ~MyQCollatorSortKey() {}
 // void QCollatorSortKey(const QCollatorSortKey &)
 MyQCollatorSortKey(const QCollatorSortKey & other) : QCollatorSortKey(other) {}
-// void QCollatorSortKey(QCollatorSortKeyPrivate *)
-MyQCollatorSortKey(QCollatorSortKeyPrivate * arg0) : QCollatorSortKey(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available

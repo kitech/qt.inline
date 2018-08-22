@@ -17,8 +17,38 @@
 class Q_DECL_EXPORT MyQAbstractUndoItem : public QAbstractUndoItem {
 public:
   virtual ~MyQAbstractUndoItem() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void undo()
+  virtual void undo()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"undo", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractUndoItem::undo();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void redo()
+  virtual void redo()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"redo", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractUndoItem::redo();
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:87
+// [-2] void undo()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:88
+// [-2] void redo()
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:86
 // [-2] void ~QAbstractUndoItem()

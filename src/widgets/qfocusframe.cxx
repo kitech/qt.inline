@@ -57,18 +57,6 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOption *)
-  virtual void initStyleOption(QStyleOption * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QFocusFrame::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -93,14 +81,6 @@ bool C_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFocusFrame10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QFocusFrame*)this_)->QFocusFrame::paintEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfocusframe.h:67
-// [-2] void initStyleOption(QStyleOption *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption(void *this_, QStyleOption * option) {
-  ((QFocusFrame*)this_)->QFocusFrame::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

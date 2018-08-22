@@ -22,8 +22,6 @@ public:
 MyQStyleOptionSizeGrip() : QStyleOptionSizeGrip() {}
 // void QStyleOptionSizeGrip(const QStyleOptionSizeGrip &)
 MyQStyleOptionSizeGrip(const QStyleOptionSizeGrip & other) : QStyleOptionSizeGrip(other) {}
-// void QStyleOptionSizeGrip(int)
-MyQStyleOptionSizeGrip(int version) : QStyleOptionSizeGrip(version) {}
 };
 
 // Public Visibility=Default Availability=Available

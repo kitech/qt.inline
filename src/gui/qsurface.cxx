@@ -18,10 +18,74 @@
 class Q_DECL_EXPORT MyQSurface : public QSurface {
 public:
   virtual ~MyQSurface() {}
-// void QSurface(QSurface::SurfaceClass)
-MyQSurface(QSurface::SurfaceClass type_) : QSurface(type_) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSurfaceFormat format()
+  virtual QSurfaceFormat format() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSurfaceFormat){};}
+    auto prv = (QSurfaceFormat*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSurfaceFormat
+    } else {
+    return (QSurfaceFormat){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QPlatformSurface * surfaceHandle()
+  virtual QPlatformSurface * surfaceHandle() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"surfaceHandle", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QPlatformSurface *)(irv);
+      // Pointer Pointer QPlatformSurface *
+    } else {
+    return (QPlatformSurface *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSurface::SurfaceType surfaceType()
+  virtual QSurface::SurfaceType surfaceType() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"surfaceType", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSurface::SurfaceType)(int)(irv);
+      // Enum Enum QSurface::SurfaceType
+    } else {
+    return (QSurface::SurfaceType){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize size()
+  virtual QSize size() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"size", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurface.h:76
+// [8] QSurfaceFormat format()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurface.h:77
+// [8] QPlatformSurface * surfaceHandle()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurface.h:79
+// [4] QSurface::SurfaceType surfaceType()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurface.h:82
+// [8] QSize size()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:72
 // [-2] void ~QSurface()

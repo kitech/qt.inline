@@ -17,8 +17,6 @@
 class Q_DECL_EXPORT MyQMediaAudioProbeControl : public QMediaAudioProbeControl {
 public:
   virtual ~MyQMediaAudioProbeControl() {}
-// void QMediaAudioProbeControl(QObject *)
-MyQMediaAudioProbeControl(QObject * parent) : QMediaAudioProbeControl(parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

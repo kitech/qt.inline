@@ -17,8 +17,6 @@
 class Q_DECL_EXPORT MyQListSpecialMethods : public QListSpecialMethods<QString> {
 public:
   virtual ~MyQListSpecialMethods() {}
-// Protected inline Visibility=Default Availability=Available
-// [-2] void ~QListSpecialMethods()
 };
 
 // Public inline Visibility=Default Availability=Available

@@ -20,32 +20,6 @@ public:
   virtual ~MyQNetworkCookieJar() {}
 // void QNetworkCookieJar(QObject *)
 MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] QList<QNetworkCookie> allCookies()
-  virtual QList<QNetworkCookie> allCookies() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"allCookies", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QList<QNetworkCookie>){};}
-    auto prv = (QList<QNetworkCookie>*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Unexposed Record QList<QNetworkCookie>
-    } else {
-    return QNetworkCookieJar::allCookies();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setAllCookies(const QList<QNetworkCookie> &)
-  virtual void setAllCookies(const QList<QNetworkCookie> & cookieList)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAllCookies", &handled, 1, (uint64_t)&cookieList, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkCookieJar::setAllCookies(cookieList);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool validateCookie(const QNetworkCookie &, const QUrl &)
   virtual bool validateCookie(const QNetworkCookie & cookie, const QUrl & url) const override {
@@ -60,23 +34,6 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
   }
 
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkcookiejar.h:68
-// [-2] QList<QNetworkCookie> allCookies()
-extern "C" Q_DECL_EXPORT
-QList<QNetworkCookie>* C_ZNK17QNetworkCookieJar10allCookiesEv(void *this_) {
-  auto rv = ((QNetworkCookieJar*)this_)->QNetworkCookieJar::allCookies();
-return new QList<QNetworkCookie>(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkcookiejar.h:69
-// [-2] void setAllCookies(const QList<QNetworkCookie> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QNetworkCookieJar13setAllCookiesERK5QListI14QNetworkCookieE(void *this_, QList<QNetworkCookie>* cookieList) {
-  ((QNetworkCookieJar*)this_)->QNetworkCookieJar::setAllCookies(*cookieList);
-}
 
 // Protected virtual Visibility=Default Availability=Available
 // since 5.0

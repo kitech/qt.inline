@@ -85,47 +85,6 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] QList<QListWidgetItem *> items(const QMimeData *)
-  virtual QList<QListWidgetItem *> items(const QMimeData * data) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QList<QListWidgetItem *>){};}
-    auto prv = (QList<QListWidgetItem *>*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Unexposed Record QList<QListWidgetItem *>
-    } else {
-    return QListWidget::items(data);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [24] QModelIndex indexFromItem(QListWidgetItem *)
-  virtual QModelIndex indexFromItem(QListWidgetItem * item) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QModelIndex){};}
-    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QModelIndex
-    } else {
-    return QListWidget::indexFromItem(item);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QListWidgetItem * itemFromIndex(const QModelIndex &)
-  virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QListWidgetItem *)(irv);
-      // Pointer Pointer QListWidgetItem *
-    } else {
-    return QListWidget::itemFromIndex(index);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -167,32 +126,6 @@ bool C_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void *this_,
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK11QListWidget20supportedDropActionsEv(void *this_) {
   return (Qt::DropActions)((QListWidget*)this_)->QListWidget::supportedDropActions();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:298
-// [-2] QList<QListWidgetItem *> items(const QMimeData *)
-extern "C" Q_DECL_EXPORT
-QList<QListWidgetItem *>* C_ZNK11QListWidget5itemsEPK9QMimeData(void *this_, const QMimeData * data) {
-  auto rv = ((QListWidget*)this_)->QListWidget::items(data);
-return new QList<QListWidgetItem *>(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:300
-// [24] QModelIndex indexFromItem(QListWidgetItem *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(void *this_, QListWidgetItem * item) {
-  auto rv = ((QListWidget*)this_)->QListWidget::indexFromItem(item);
-return new QModelIndex(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:301
-// [8] QListWidgetItem * itemFromIndex(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QListWidget13itemFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (void*)((QListWidget*)this_)->QListWidget::itemFromIndex(*index);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -59,8 +59,6 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
   }
   }
 
-// void QState(QStatePrivate &, QState *)
-MyQState(QStatePrivate & dd, QState * parent) : QState(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

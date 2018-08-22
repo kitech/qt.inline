@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQQmlExtensionPlugin : public QQmlExtensionPlugin {
 public:
   virtual ~MyQQmlExtensionPlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void registerTypes(const char *)
+  virtual void registerTypes(const char * uri)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerTypes", &handled, 1, (uint64_t)uri, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQmlExtensionPlugin::registerTypes(uri);
+  }
+  }
+
 // void QQmlExtensionPlugin(QObject *)
 MyQQmlExtensionPlugin(QObject * parent) : QQmlExtensionPlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlextensionplugin.h:66
+// [-2] void registerTypes(const char *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensionplugin.h:56
 // [8] const QMetaObject * metaObject()

@@ -17,12 +17,39 @@
 class Q_DECL_EXPORT MyQMediaService : public QMediaService {
 public:
   virtual ~MyQMediaService() {}
-// void QMediaService(QObject *)
-MyQMediaService(QObject * parent) : QMediaService(parent) {}
-// void QMediaService(QMediaServicePrivate &, QObject *)
-MyQMediaService(QMediaServicePrivate & dd, QObject * parent) : QMediaService(dd, parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QMediaControl * requestControl(const char *)
+  virtual QMediaControl * requestControl(const char * name)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestControl", &handled, 1, (uint64_t)name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaControl *)(irv);
+      // Pointer Pointer QMediaControl *
+    } else {
+    return (QMediaControl *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void releaseControl(QMediaControl *)
+  virtual void releaseControl(QMediaControl * control)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"releaseControl", &handled, 1, (uint64_t)control, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaService::releaseControl(control);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaservice.h:60
+// [8] QMediaControl * requestControl(const char *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaservice.h:71
+// [-2] void releaseControl(QMediaControl *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaservice.h:55
 // [8] const QMetaObject * metaObject()

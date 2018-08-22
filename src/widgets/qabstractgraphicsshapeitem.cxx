@@ -18,12 +18,42 @@
 class Q_DECL_EXPORT MyQAbstractGraphicsShapeItem : public QAbstractGraphicsShapeItem {
 public:
   virtual ~MyQAbstractGraphicsShapeItem() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF boundingRect()
+  virtual QRectF boundingRect() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"boundingRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
+    } else {
+    return (QRectF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
+  virtual void paint(QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paint", &handled, 3, (uint64_t)painter, (uint64_t)option, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractGraphicsShapeItem::paint(painter, option, widget);
+  }
+  }
+
 // void QAbstractGraphicsShapeItem(QGraphicsItem *)
 MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeItem(parent) {}
-// void QAbstractGraphicsShapeItem(QAbstractGraphicsShapeItemPrivate &, QGraphicsItem *)
-MyQAbstractGraphicsShapeItem(QAbstractGraphicsShapeItemPrivate & dd, QGraphicsItem * parent) : QAbstractGraphicsShapeItem(dd, parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:324
+// [32] QRectF boundingRect()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:344
+// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:603
 // [-2] void QAbstractGraphicsShapeItem(QGraphicsItem *)

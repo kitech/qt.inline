@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QGraphicsTransform is pure virtual: true
-// QGraphicsTransform has virtual projected: true
+// QGraphicsTransform has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -18,32 +18,25 @@
 class Q_DECL_EXPORT MyQGraphicsTransform : public QGraphicsTransform {
 public:
   virtual ~MyQGraphicsTransform() {}
-// void QGraphicsTransform(QObject *)
-MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void update()
-  virtual void update()   {
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void applyTo(QMatrix4x4 *)
+  virtual void applyTo(QMatrix4x4 * matrix) const override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"applyTo", &handled, 1, (uint64_t)matrix, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QGraphicsTransform::update();
+    // QGraphicsTransform::applyTo(matrix);
   }
   }
 
-// void QGraphicsTransform(QGraphicsTransformPrivate &, QObject *)
-MyQGraphicsTransform(QGraphicsTransformPrivate & p, QObject * parent) : QGraphicsTransform(p, parent) {}
+// void QGraphicsTransform(QObject *)
+MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
 };
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:66
-// [-2] void update()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QGraphicsTransform6updateEv(void *this_) {
-  ((QGraphicsTransform*)this_)->QGraphicsTransform::update();
-}
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicstransform.h:63
+// [-2] void applyTo(QMatrix4x4 *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:58
 // [8] const QMetaObject * metaObject()
@@ -91,8 +84,7 @@ return new QString(rv);
 // [-2] void QGraphicsTransform(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QGraphicsTransformC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQGraphicsTransform*)(0);
-  return 0; // new MyQGraphicsTransform(parent);
+  return 0; // new QGraphicsTransform(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

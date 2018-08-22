@@ -17,8 +17,320 @@
 class Q_DECL_EXPORT MyQAbstractAudioInput : public QAbstractAudioInput {
 public:
   virtual ~MyQAbstractAudioInput() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void start(QIODevice *)
+  virtual void start(QIODevice * device)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"start", &handled, 1, (uint64_t)device, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::start(device);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIODevice * start()
+  virtual QIODevice * start()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QIODevice *)(irv);
+      // Pointer Pointer QIODevice *
+    } else {
+    return (QIODevice *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void stop()
+  virtual void stop()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::stop();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void reset()
+  virtual void reset()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"reset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::reset();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void suspend()
+  virtual void suspend()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"suspend", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::suspend();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void resume()
+  virtual void resume()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resume", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::resume();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int bytesReady()
+  virtual int bytesReady() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"bytesReady", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int periodSize()
+  virtual int periodSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"periodSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setBufferSize(int)
+  virtual void setBufferSize(int value)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setBufferSize", &handled, 1, (uint64_t)value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::setBufferSize(value);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int bufferSize()
+  virtual int bufferSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"bufferSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setNotifyInterval(int)
+  virtual void setNotifyInterval(int milliSeconds)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setNotifyInterval", &handled, 1, (uint64_t)milliSeconds, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::setNotifyInterval(milliSeconds);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int notifyInterval()
+  virtual int notifyInterval() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"notifyInterval", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 processedUSecs()
+  virtual qint64 processedUSecs() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"processedUSecs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 elapsedUSecs()
+  virtual qint64 elapsedUSecs() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"elapsedUSecs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QAudio::Error error()
+  virtual QAudio::Error error() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"error", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAudio::Error)(int)(irv);
+      // Elaborated Enum QAudio::Error
+    } else {
+    return (QAudio::Error){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QAudio::State state()
+  virtual QAudio::State state() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAudio::State)(int)(irv);
+      // Elaborated Enum QAudio::State
+    } else {
+    return (QAudio::State){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFormat(const QAudioFormat &)
+  virtual void setFormat(const QAudioFormat & fmt_)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 1, (uint64_t)&fmt_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::setFormat(fmt_);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAudioFormat format()
+  virtual QAudioFormat format() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QAudioFormat){};}
+    auto prv = (QAudioFormat*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QAudioFormat
+    } else {
+    return (QAudioFormat){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setVolume(qreal)
+  virtual void setVolume(qreal arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVolume", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractAudioInput::setVolume(arg0);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal volume()
+  virtual qreal volume() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"volume", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:112
+// [-2] void start(QIODevice *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:113
+// [8] QIODevice * start()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:114
+// [-2] void stop()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:115
+// [-2] void reset()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:116
+// [-2] void suspend()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:117
+// [-2] void resume()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:118
+// [4] int bytesReady()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:119
+// [4] int periodSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:120
+// [-2] void setBufferSize(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:121
+// [4] int bufferSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:122
+// [-2] void setNotifyInterval(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:123
+// [4] int notifyInterval()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:124
+// [8] qint64 processedUSecs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:125
+// [8] qint64 elapsedUSecs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:126
+// [4] QAudio::Error error()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:127
+// [4] QAudio::State state()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:128
+// [-2] void setFormat(const QAudioFormat &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:129
+// [8] QAudioFormat format()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:130
+// [-2] void setVolume(qreal)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:131
+// [8] qreal volume()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiosystem.h:109
 // [8] const QMetaObject * metaObject()

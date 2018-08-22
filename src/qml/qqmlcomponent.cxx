@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QQmlComponent is pure virtual: false
-// QQmlComponent has virtual projected: true
+// QQmlComponent has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -30,49 +30,7 @@ MyQQmlComponent(QQmlEngine * arg0, const QString & fileName, QQmlComponent::Comp
 MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QObject * parent) : QQmlComponent(arg0, url, parent) {}
 // void QQmlComponent(QQmlEngine *, const QUrl &, QQmlComponent::CompilationMode, QObject *)
 MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QQmlComponent::CompilationMode mode, QObject * parent) : QQmlComponent(arg0, url, mode, parent) {}
-// void QQmlComponent(QQmlComponentPrivate &, QObject *)
-MyQQmlComponent(QQmlComponentPrivate & dd, QObject * parent) : QQmlComponent(dd, parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void createObject(QQmlV4Function *)
-  virtual void createObject(QQmlV4Function * arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QQmlComponent::createObject(arg0);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void incubateObject(QQmlV4Function *)
-  virtual void incubateObject(QQmlV4Function * arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incubateObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QQmlComponent::incubateObject(arg0);
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:126
-// [-2] void createObject(QQmlV4Function *)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QQmlComponent12createObjectEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
-  ((QQmlComponent*)this_)->QQmlComponent::createObject(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:127
-// [-2] void incubateObject(QQmlV4Function *)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QQmlComponent14incubateObjectEP14QQmlV4Function(void *this_, QQmlV4Function * arg0) {
-  ((QQmlComponent*)this_)->QQmlComponent::incubateObject(arg0);
-}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlcomponent.h:69
@@ -121,8 +79,7 @@ return new QString(rv);
 // [-2] void QQmlComponent(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQQmlComponent*)(0);
-  return  new MyQQmlComponent(parent);
+  return  new QQmlComponent(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -130,8 +87,7 @@ void* C_ZN13QQmlComponentC2EP7QObject(QObject * parent) {
 // [-2] void QQmlComponent(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineP7QObject(QQmlEngine * arg0, QObject * parent) {
-  auto _nilp = (MyQQmlComponent*)(0);
-  return  new MyQQmlComponent(arg0, parent);
+  return  new QQmlComponent(arg0, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -139,8 +95,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineP7QObject(QQmlEngine * arg0, QObject * 
 // [-2] void QQmlComponent(QQmlEngine *, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringP7QObject(QQmlEngine * arg0, QString* fileName, QObject * parent) {
-  auto _nilp = (MyQQmlComponent*)(0);
-  return  new MyQQmlComponent(arg0, *fileName, parent);
+  return  new QQmlComponent(arg0, *fileName, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -148,8 +103,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringP7QObject(QQmlEngine * arg0, 
 // [-2] void QQmlComponent(QQmlEngine *, const QString &, QQmlComponent::CompilationMode, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringNS_15CompilationModeEP7QObject(QQmlEngine * arg0, QString* fileName, QQmlComponent::CompilationMode mode, QObject * parent) {
-  auto _nilp = (MyQQmlComponent*)(0);
-  return  new MyQQmlComponent(arg0, *fileName, mode, parent);
+  return  new QQmlComponent(arg0, *fileName, mode, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -157,8 +111,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK7QStringNS_15CompilationModeEP7QObjec
 // [-2] void QQmlComponent(QQmlEngine *, const QUrl &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlP7QObject(QQmlEngine * arg0, QUrl* url, QObject * parent) {
-  auto _nilp = (MyQQmlComponent*)(0);
-  return  new MyQQmlComponent(arg0, *url, parent);
+  return  new QQmlComponent(arg0, *url, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -166,8 +119,7 @@ void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlP7QObject(QQmlEngine * arg0, QUr
 // [-2] void QQmlComponent(QQmlEngine *, const QUrl &, QQmlComponent::CompilationMode, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponentC2EP10QQmlEngineRK4QUrlNS_15CompilationModeEP7QObject(QQmlEngine * arg0, QUrl* url, QQmlComponent::CompilationMode mode, QObject * parent) {
-  auto _nilp = (MyQQmlComponent*)(0);
-  return  new MyQQmlComponent(arg0, *url, mode, parent);
+  return  new QQmlComponent(arg0, *url, mode, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

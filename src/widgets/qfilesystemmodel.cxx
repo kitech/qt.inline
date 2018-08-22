@@ -20,8 +20,6 @@ public:
   virtual ~MyQFileSystemModel() {}
 // void QFileSystemModel(QObject *)
 MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
-// void QFileSystemModel(QFileSystemModelPrivate &, QObject *)
-MyQFileSystemModel(QFileSystemModelPrivate & arg0, QObject * parent) : QFileSystemModel(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event)  override {

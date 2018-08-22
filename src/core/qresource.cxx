@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QResource is pure virtual: false
-// QResource has virtual projected: true
+// QResource has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -20,80 +20,14 @@ public:
   virtual ~MyQResource() {}
 // void QResource(const QString &, const QLocale &)
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
-// Protected Visibility=Default Availability=Available
-// [1] bool isDir()
-  virtual bool isDir() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isDir", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QResource::isDir();
-  }
-  }
-
-// Protected inline Visibility=Default Availability=Available
-// [1] bool isFile()
-  virtual bool isFile() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QResource::isFile();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QStringList children()
-  virtual QStringList children() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"children", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QStringList){};}
-    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QStringList
-    } else {
-    return QResource::children();
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qresource.h:86
-// [1] bool isDir()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QResource5isDirEv(void *this_) {
-  return (bool)((QResource*)this_)->QResource::isDir();
-}
-
-// Protected inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qresource.h:87
-// [1] bool isFile()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QResource6isFileEv(void *this_) {
-  return (bool)((QResource*)this_)->QResource::isFile();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qresource.h:88
-// [8] QStringList children()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QResource8childrenEv(void *this_) {
-  auto rv = ((QResource*)this_)->QResource::children();
-return new QStringList(rv);
-}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:57
 // [-2] void QResource(const QString &, const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QResourceC2ERK7QStringRK7QLocale(QString* file, QLocale* locale) {
-  auto _nilp = (MyQResource*)(0);
-  return  new MyQResource(*file, *locale);
+  return  new QResource(*file, *locale);
 }
 
 // Public Visibility=Default Availability=Available

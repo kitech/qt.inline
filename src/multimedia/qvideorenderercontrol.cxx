@@ -17,10 +17,39 @@
 class Q_DECL_EXPORT MyQVideoRendererControl : public QVideoRendererControl {
 public:
   virtual ~MyQVideoRendererControl() {}
-// void QVideoRendererControl(QObject *)
-MyQVideoRendererControl(QObject * parent) : QVideoRendererControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAbstractVideoSurface * surface()
+  virtual QAbstractVideoSurface * surface() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"surface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAbstractVideoSurface *)(irv);
+      // Pointer Pointer QAbstractVideoSurface *
+    } else {
+    return (QAbstractVideoSurface *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setSurface(QAbstractVideoSurface *)
+  virtual void setSurface(QAbstractVideoSurface * surface)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSurface", &handled, 1, (uint64_t)surface, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QVideoRendererControl::setSurface(surface);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideorenderercontrol.h:55
+// [8] QAbstractVideoSurface * surface()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideorenderercontrol.h:56
+// [-2] void setSurface(QAbstractVideoSurface *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideorenderercontrol.h:50
 // [8] const QMetaObject * metaObject()

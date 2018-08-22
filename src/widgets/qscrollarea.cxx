@@ -19,8 +19,6 @@ public:
   virtual ~MyQScrollArea() {}
 // void QScrollArea(QWidget *)
 MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
-// void QScrollArea(QScrollAreaPrivate &, QWidget *)
-MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0)  override {

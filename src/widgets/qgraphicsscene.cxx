@@ -268,16 +268,13 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawItems(QPainter *, int, QGraphicsItem **, const QStyleOptionGraphicsItem *, QWidget *)
-// Protected Visibility=Default Availability=Available
-// [1] bool focusNextPrevChild(bool)
-  virtual bool focusNextPrevChild(bool next)   {
+  virtual void drawItems(QPainter * painter, int numItems, QGraphicsItem * items[], const QStyleOptionGraphicsItem options[], QWidget * widget)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawItems", &handled, 5, (uint64_t)painter, (uint64_t)numItems, (uint64_t)items, (uint64_t)options, (uint64_t)widget, 0, 0, 0, 0, 0);
     if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
+      // Void Void void
     } else {
-    return QGraphicsScene::focusNextPrevChild(next);
+    QGraphicsScene::drawItems(painter, numItems, items, options, widget);
   }
   }
 
@@ -443,16 +440,13 @@ void C_ZN14QGraphicsScene14drawForegroundEP8QPainterRK6QRectF(void *this_, QPain
   ((QGraphicsScene*)this_)->QGraphicsScene::drawForeground(painter, *rect);
 }
 
-// Protected Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtWidgets/qgraphicsscene.h:295
-// [1] bool focusNextPrevChild(bool)
-#if QT_VERSION >= 0x040400
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:285
+// [-2] void drawItems(QPainter *, int, QGraphicsItem **, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
-bool C_ZN14QGraphicsScene18focusNextPrevChildEb(void *this_, bool next) {
-  return (bool)((QGraphicsScene*)this_)->QGraphicsScene::focusNextPrevChild(next);
+void C_ZN14QGraphicsScene9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, int numItems, QGraphicsItem** items, const QStyleOptionGraphicsItem* options, QWidget * widget) {
+  ((QGraphicsScene*)this_)->QGraphicsScene::drawItems(painter, numItems, items, options, widget);
 }
-#endif // QT_VERSION >= 0x040400
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:98

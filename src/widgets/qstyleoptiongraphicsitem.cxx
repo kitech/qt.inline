@@ -22,8 +22,6 @@ public:
 MyQStyleOptionGraphicsItem() : QStyleOptionGraphicsItem() {}
 // void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &)
 MyQStyleOptionGraphicsItem(const QStyleOptionGraphicsItem & other) : QStyleOptionGraphicsItem(other) {}
-// void QStyleOptionGraphicsItem(int)
-MyQStyleOptionGraphicsItem(int version) : QStyleOptionGraphicsItem(version) {}
 };
 
 // Public Visibility=Default Availability=Available

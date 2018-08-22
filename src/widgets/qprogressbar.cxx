@@ -44,18 +44,6 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionProgressBar *)
-  virtual void initStyleOption(QStyleOptionProgressBar * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QProgressBar::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -72,14 +60,6 @@ bool C_ZN12QProgressBar5eventEP6QEvent(void *this_, QEvent * e) {
 extern "C" Q_DECL_EXPORT
 void C_ZN12QProgressBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
   ((QProgressBar*)this_)->QProgressBar::paintEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressbar.h:114
-// [-2] void initStyleOption(QStyleOptionProgressBar *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(void *this_, QStyleOptionProgressBar * option) {
-  ((QProgressBar*)this_)->QProgressBar::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

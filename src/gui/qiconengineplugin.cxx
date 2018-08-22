@@ -17,10 +17,26 @@
 class Q_DECL_EXPORT MyQIconEnginePlugin : public QIconEnginePlugin {
 public:
   virtual ~MyQIconEnginePlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIconEngine * create(const QString &)
+  virtual QIconEngine * create(const QString & filename)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 1, (uint64_t)&filename, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QIconEngine *)(irv);
+      // Pointer Pointer QIconEngine *
+    } else {
+    return (QIconEngine *){};
+  }
+  }
+
 // void QIconEnginePlugin(QObject *)
 MyQIconEnginePlugin(QObject * parent) : QIconEnginePlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qiconengineplugin.h:61
+// [8] QIconEngine * create(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengineplugin.h:56
 // [8] const QMetaObject * metaObject()

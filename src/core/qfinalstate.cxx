@@ -57,8 +57,6 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
   }
 
-// void QFinalState(QFinalStatePrivate &, QState *)
-MyQFinalState(QFinalStatePrivate & dd, QState * parent) : QFinalState(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

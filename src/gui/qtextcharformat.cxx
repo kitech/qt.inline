@@ -19,8 +19,6 @@ public:
   virtual ~MyQTextCharFormat() {}
 // void QTextCharFormat()
 MyQTextCharFormat() : QTextCharFormat() {}
-// void QTextCharFormat(const QTextFormat &)
-MyQTextCharFormat(const QTextFormat & fmt_) : QTextCharFormat(fmt_) {}
 };
 
 // Public Visibility=Default Availability=Available

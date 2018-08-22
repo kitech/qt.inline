@@ -17,10 +17,91 @@
 class Q_DECL_EXPORT MyQAudioEncoderSettingsControl : public QAudioEncoderSettingsControl {
 public:
   virtual ~MyQAudioEncoderSettingsControl() {}
-// void QAudioEncoderSettingsControl(QObject *)
-MyQAudioEncoderSettingsControl(QObject * parent) : QAudioEncoderSettingsControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList supportedAudioCodecs()
+  virtual QStringList supportedAudioCodecs() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedAudioCodecs", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString codecDescription(const QString &)
+  virtual QString codecDescription(const QString & codecName) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"codecDescription", &handled, 1, (uint64_t)&codecName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<int> supportedSampleRates(const QAudioEncoderSettings &, bool *)
+  virtual QList<int> supportedSampleRates(const QAudioEncoderSettings & settings, bool * continuous) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSampleRates", &handled, 2, (uint64_t)&settings, (uint64_t)continuous, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<int>){};}
+    auto prv = (QList<int>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<int>
+    } else {
+    return (QList<int>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QAudioEncoderSettings audioSettings()
+  virtual QAudioEncoderSettings audioSettings() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"audioSettings", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QAudioEncoderSettings){};}
+    auto prv = (QAudioEncoderSettings*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QAudioEncoderSettings
+    } else {
+    return (QAudioEncoderSettings){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setAudioSettings(const QAudioEncoderSettings &)
+  virtual void setAudioSettings(const QAudioEncoderSettings & arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAudioSettings", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAudioEncoderSettingsControl::setAudioSettings(arg0);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:66
+// [8] QStringList supportedAudioCodecs()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:67
+// [8] QString codecDescription(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:69
+// [-2] QList<int> supportedSampleRates(const QAudioEncoderSettings &, bool *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:72
+// [8] QAudioEncoderSettings audioSettings()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:73
+// [-2] void setAudioSettings(const QAudioEncoderSettings &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:61
 // [8] const QMetaObject * metaObject()

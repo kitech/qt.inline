@@ -33,20 +33,6 @@ MyQNetworkAccessManager(QObject * parent) : QNetworkAccessManager(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [8] QStringList supportedSchemesImplementation()
-  virtual QStringList supportedSchemesImplementation() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSchemesImplementation", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QStringList){};}
-    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QStringList
-    } else {
-    return QNetworkAccessManager::supportedSchemesImplementation();
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -56,18 +42,6 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager13createRequestENS_9OperationERK15QNetworkRequestP9QIODevice(void *this_, QNetworkAccessManager::Operation op, QNetworkRequest* request, QIODevice * outgoingData) {
   return (void*)((QNetworkAccessManager*)this_)->QNetworkAccessManager::createRequest(op, *request, outgoingData);
 }
-
-// Protected Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:187
-// [8] QStringList supportedSchemesImplementation()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QNetworkAccessManager30supportedSchemesImplementationEv(void *this_) {
-  auto rv = ((QNetworkAccessManager*)this_)->QNetworkAccessManager::supportedSchemesImplementation();
-return new QStringList(rv);
-}
-#endif // QT_VERSION >= 0x050200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76

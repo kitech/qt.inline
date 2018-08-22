@@ -22,8 +22,6 @@ public:
 MyQStyleOptionGroupBox() : QStyleOptionGroupBox() {}
 // void QStyleOptionGroupBox(const QStyleOptionGroupBox &)
 MyQStyleOptionGroupBox(const QStyleOptionGroupBox & other) : QStyleOptionGroupBox(other) {}
-// void QStyleOptionGroupBox(int)
-MyQStyleOptionGroupBox(int version) : QStyleOptionGroupBox(version) {}
 };
 
 // Public Visibility=Default Availability=Available

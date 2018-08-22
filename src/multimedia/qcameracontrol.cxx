@@ -17,10 +17,118 @@
 class Q_DECL_EXPORT MyQCameraControl : public QCameraControl {
 public:
   virtual ~MyQCameraControl() {}
-// void QCameraControl(QObject *)
-MyQCameraControl(QObject * parent) : QCameraControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::State state()
+  virtual QCamera::State state() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::State)(int)(irv);
+      // Elaborated Enum QCamera::State
+    } else {
+    return (QCamera::State){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setState(QCamera::State)
+  virtual void setState(QCamera::State state)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraControl::setState(state);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::Status status()
+  virtual QCamera::Status status() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"status", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::Status)(int)(irv);
+      // Elaborated Enum QCamera::Status
+    } else {
+    return (QCamera::Status){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::CaptureModes captureMode()
+  virtual QCamera::CaptureModes captureMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"captureMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::CaptureModes)(int)(irv);
+      // Elaborated Record QFlags<QCamera::CaptureMode>
+    } else {
+    return (QCamera::CaptureModes){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setCaptureMode(QCamera::CaptureModes)
+  virtual void setCaptureMode(QFlags<QCamera::CaptureMode> arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCaptureMode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraControl::setCaptureMode(arg0);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isCaptureModeSupported(QCamera::CaptureModes)
+  virtual bool isCaptureModeSupported(QFlags<QCamera::CaptureMode> mode) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isCaptureModeSupported", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool canChangeProperty(QCameraControl::PropertyChangeType, QCamera::Status)
+  virtual bool canChangeProperty(QCameraControl::PropertyChangeType changeType, QCamera::Status status) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"canChangeProperty", &handled, 2, (uint64_t)changeType, (uint64_t)status, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:68
+// [4] QCamera::State state()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:69
+// [-2] void setState(QCamera::State)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:71
+// [4] QCamera::Status status()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:73
+// [4] QCamera::CaptureModes captureMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:74
+// [-2] void setCaptureMode(QCamera::CaptureModes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:75
+// [1] bool isCaptureModeSupported(QCamera::CaptureModes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracontrol.h:77
+// [1] bool canChangeProperty(QCameraControl::PropertyChangeType, QCamera::Status)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameracontrol.h:55
 // [8] const QMetaObject * metaObject()

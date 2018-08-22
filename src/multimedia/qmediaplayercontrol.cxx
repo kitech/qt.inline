@@ -17,10 +17,354 @@
 class Q_DECL_EXPORT MyQMediaPlayerControl : public QMediaPlayerControl {
 public:
   virtual ~MyQMediaPlayerControl() {}
-// void QMediaPlayerControl(QObject *)
-MyQMediaPlayerControl(QObject * parent) : QMediaPlayerControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMediaPlayer::State state()
+  virtual QMediaPlayer::State state() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaPlayer::State)(int)(irv);
+      // Elaborated Enum QMediaPlayer::State
+    } else {
+    return (QMediaPlayer::State){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMediaPlayer::MediaStatus mediaStatus()
+  virtual QMediaPlayer::MediaStatus mediaStatus() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mediaStatus", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMediaPlayer::MediaStatus)(int)(irv);
+      // Elaborated Enum QMediaPlayer::MediaStatus
+    } else {
+    return (QMediaPlayer::MediaStatus){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 duration()
+  virtual qint64 duration() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"duration", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 position()
+  virtual qint64 position() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"position", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setPosition(qint64)
+  virtual void setPosition(qint64 position)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPosition", &handled, 1, (uint64_t)position, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::setPosition(position);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int volume()
+  virtual int volume() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"volume", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setVolume(int)
+  virtual void setVolume(int volume)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVolume", &handled, 1, (uint64_t)volume, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::setVolume(volume);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isMuted()
+  virtual bool isMuted() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isMuted", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setMuted(bool)
+  virtual void setMuted(bool muted)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMuted", &handled, 1, (uint64_t)muted, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::setMuted(muted);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int bufferStatus()
+  virtual int bufferStatus() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"bufferStatus", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isAudioAvailable()
+  virtual bool isAudioAvailable() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isAudioAvailable", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isVideoAvailable()
+  virtual bool isVideoAvailable() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isVideoAvailable", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isSeekable()
+  virtual bool isSeekable() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isSeekable", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QMediaTimeRange availablePlaybackRanges()
+  virtual QMediaTimeRange availablePlaybackRanges() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"availablePlaybackRanges", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QMediaTimeRange){};}
+    auto prv = (QMediaTimeRange*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QMediaTimeRange
+    } else {
+    return (QMediaTimeRange){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] qreal playbackRate()
+  virtual qreal playbackRate() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"playbackRate", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qreal)(irv);
+      // Typedef Double double
+    } else {
+    return (qreal){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setPlaybackRate(qreal)
+  virtual void setPlaybackRate(qreal rate)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPlaybackRate", &handled, 1, (uint64_t)&rate, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::setPlaybackRate(rate);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QMediaContent media()
+  virtual QMediaContent media() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"media", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QMediaContent){};}
+    auto prv = (QMediaContent*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QMediaContent
+    } else {
+    return (QMediaContent){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] const QIODevice * mediaStream()
+  virtual const QIODevice * mediaStream() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mediaStream", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (const QIODevice *)(irv);
+      // Pointer Pointer const QIODevice *
+    } else {
+    return (const QIODevice *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setMedia(const QMediaContent &, QIODevice *)
+  virtual void setMedia(const QMediaContent & media, QIODevice * stream)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMedia", &handled, 2, (uint64_t)&media, (uint64_t)stream, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::setMedia(media, stream);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void play()
+  virtual void play()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"play", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::play();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void pause()
+  virtual void pause()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"pause", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::pause();
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void stop()
+  virtual void stop()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaPlayerControl::stop();
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:61
+// [4] QMediaPlayer::State state()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:63
+// [4] QMediaPlayer::MediaStatus mediaStatus()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:65
+// [8] qint64 duration()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:67
+// [8] qint64 position()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:68
+// [-2] void setPosition(qint64)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:70
+// [4] int volume()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:71
+// [-2] void setVolume(int)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:73
+// [1] bool isMuted()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:74
+// [-2] void setMuted(bool)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:76
+// [4] int bufferStatus()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:78
+// [1] bool isAudioAvailable()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:79
+// [1] bool isVideoAvailable()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:81
+// [1] bool isSeekable()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:83
+// [8] QMediaTimeRange availablePlaybackRanges()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:85
+// [8] qreal playbackRate()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:86
+// [-2] void setPlaybackRate(qreal)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:88
+// [8] QMediaContent media()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:89
+// [8] const QIODevice * mediaStream()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:90
+// [-2] void setMedia(const QMediaContent &, QIODevice *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:92
+// [-2] void play()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:93
+// [-2] void pause()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:94
+// [-2] void stop()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:56
 // [8] const QMetaObject * metaObject()

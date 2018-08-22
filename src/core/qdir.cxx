@@ -23,8 +23,6 @@ MyQDir(const QDir & arg0) : QDir(arg0) {}
 MyQDir(const QString & path) : QDir(path) {}
 // void QDir(const QString &, const QString &, QDir::SortFlags, QDir::Filters)
 MyQDir(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) : QDir(path, nameFilter, sort, filter) {}
-// void QDir(QDirPrivate &)
-MyQDir(QDirPrivate & d) : QDir(d) {}
 };
 
 // Public Visibility=Default Availability=Available

@@ -17,10 +17,27 @@
 class Q_DECL_EXPORT MyQQmlAbstractUrlInterceptor : public QQmlAbstractUrlInterceptor {
 public:
   virtual ~MyQQmlAbstractUrlInterceptor() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)
+  virtual QUrl intercept(const QUrl & path, QQmlAbstractUrlInterceptor::DataType type_)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"intercept", &handled, 2, (uint64_t)&path, (uint64_t)type_, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QUrl){};}
+    auto prv = (QUrl*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QUrl
+    } else {
+    return (QUrl){};
+  }
+  }
+
 // void QQmlAbstractUrlInterceptor()
 MyQQmlAbstractUrlInterceptor() : QQmlAbstractUrlInterceptor() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:60
+// [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:58
 // [-2] void QQmlAbstractUrlInterceptor()

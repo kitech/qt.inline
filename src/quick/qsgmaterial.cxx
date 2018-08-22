@@ -17,10 +17,42 @@
 class Q_DECL_EXPORT MyQSGMaterial : public QSGMaterial {
 public:
   virtual ~MyQSGMaterial() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSGMaterialType * type()
+  virtual QSGMaterialType * type() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"type", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGMaterialType *)(irv);
+      // Pointer Pointer QSGMaterialType *
+    } else {
+    return (QSGMaterialType *){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSGMaterialShader * createShader()
+  virtual QSGMaterialShader * createShader() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGMaterialShader *)(irv);
+      // Pointer Pointer QSGMaterialShader *
+    } else {
+    return (QSGMaterialShader *){};
+  }
+  }
+
 // void QSGMaterial()
 MyQSGMaterial() : QSGMaterial() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:149
+// [8] QSGMaterialType * type()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterial.h:150
+// [8] QSGMaterialShader * createShader()
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:146
 // [-2] void QSGMaterial()

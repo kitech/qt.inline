@@ -34,8 +34,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
   }
   }
 
-// void QGraphicsView(QGraphicsViewPrivate &, QWidget *)
-MyQGraphicsView(QGraphicsViewPrivate & arg0, QWidget * parent) : QGraphicsView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
@@ -329,6 +327,16 @@ MyQGraphicsView(QGraphicsViewPrivate & arg0, QWidget * parent) : QGraphicsView(a
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawItems(QPainter *, int, QGraphicsItem **, const QStyleOptionGraphicsItem *)
+  virtual void drawItems(QPainter * painter, int numItems, QGraphicsItem * items[], const QStyleOptionGraphicsItem options[])  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawItems", &handled, 4, (uint64_t)painter, (uint64_t)numItems, (uint64_t)items, (uint64_t)options, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    QGraphicsView::drawItems(painter, numItems, items, options);
+  }
+  }
+
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -529,6 +537,14 @@ void C_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF(void *this_, QPaint
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF(void *this_, QPainter * painter, QRectF* rect) {
   ((QGraphicsView*)this_)->QGraphicsView::drawForeground(painter, *rect);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsview.h:272
+// [-2] void drawItems(QPainter *, int, QGraphicsItem **, const QStyleOptionGraphicsItem *)
+extern "C" Q_DECL_EXPORT
+void C_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItem(void *this_, QPainter * painter, int numItems, QGraphicsItem** items, const QStyleOptionGraphicsItem* options) {
+  ((QGraphicsView*)this_)->QGraphicsView::drawItems(painter, numItems, items, options);
 }
 
 // Public virtual Visibility=Default Availability=Available

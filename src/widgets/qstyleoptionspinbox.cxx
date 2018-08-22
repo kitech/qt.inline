@@ -21,8 +21,6 @@ public:
 MyQStyleOptionSpinBox() : QStyleOptionSpinBox() {}
 // void QStyleOptionSpinBox(const QStyleOptionSpinBox &)
 MyQStyleOptionSpinBox(const QStyleOptionSpinBox & other) : QStyleOptionSpinBox(other) {}
-// void QStyleOptionSpinBox(int)
-MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 };
 
 // Public Visibility=Default Availability=Available

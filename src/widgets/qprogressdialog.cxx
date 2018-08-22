@@ -69,18 +69,6 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void forceShow()
-  virtual void forceShow()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"forceShow", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QProgressDialog::forceShow();
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -113,14 +101,6 @@ void C_ZN15QProgressDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
   ((QProgressDialog*)this_)->QProgressDialog::showEvent(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:122
-// [-2] void forceShow()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QProgressDialog9forceShowEv(void *this_) {
-  ((QProgressDialog*)this_)->QProgressDialog::forceShow();
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -18,8 +18,72 @@
 class Q_DECL_EXPORT MyQSGRectangleNode : public QSGRectangleNode {
 public:
   virtual ~MyQSGRectangleNode() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setRect(const QRectF &)
+  virtual void setRect(const QRectF & rect)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRect", &handled, 1, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGRectangleNode::setRect(rect);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [32] QRectF rect()
+  virtual QRectF rect() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRectF){};}
+    auto prv = (QRectF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRectF
+    } else {
+    return (QRectF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setColor(const QColor &)
+  virtual void setColor(const QColor & color)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setColor", &handled, 1, (uint64_t)&color, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGRectangleNode::setColor(color);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QColor color()
+  virtual QColor color() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"color", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QColor){};}
+    auto prv = (QColor*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QColor
+    } else {
+    return (QColor){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrectanglenode.h:52
+// [-2] void setRect(const QRectF &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrectanglenode.h:54
+// [32] QRectF rect()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrectanglenode.h:56
+// [-2] void setColor(const QColor &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrectanglenode.h:57
+// [16] QColor color()
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:50
 // [-2] void ~QSGRectangleNode()

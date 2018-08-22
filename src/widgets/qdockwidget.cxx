@@ -70,18 +70,6 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionDockWidget *)
-  virtual void initStyleOption(QStyleOptionDockWidget * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QDockWidget::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -114,14 +102,6 @@ void C_ZN11QDockWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * eve
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QDockWidget5eventEP6QEvent(void *this_, QEvent * event) {
   return (bool)((QDockWidget*)this_)->QDockWidget::event(event);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:120
-// [-2] void initStyleOption(QStyleOptionDockWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget(void *this_, QStyleOptionDockWidget * option) {
-  ((QDockWidget*)this_)->QDockWidget::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

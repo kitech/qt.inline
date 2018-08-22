@@ -56,32 +56,6 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void drawFrame(QPainter *)
-  virtual void drawFrame(QPainter * arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawFrame", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QFrame::drawFrame(arg0);
-  }
-  }
-
-// void QFrame(QFramePrivate &, QWidget *, Qt::WindowFlags)
-MyQFrame(QFramePrivate & dd, QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(dd, parent, f) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionFrame *)
-  virtual void initStyleOption(QStyleOptionFrame * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QFrame::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -107,25 +81,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZN6QFrame11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QFrame*)this_)->QFrame::changeEvent(arg0);
 }
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qframe.h:114
-// [-2] void drawFrame(QPainter *)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QFrame9drawFrameEP8QPainter(void *this_, QPainter * arg0) {
-  ((QFrame*)this_)->QFrame::drawFrame(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtWidgets/qframe.h:119
-// [-2] void initStyleOption(QStyleOptionFrame *)
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-void C_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(void *this_, QStyleOptionFrame * option) {
-  ((QFrame*)this_)->QFrame::initStyleOption(option);
-}
-#endif // QT_VERSION >= 0x050500
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qframe.h:54

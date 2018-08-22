@@ -17,10 +17,125 @@
 class Q_DECL_EXPORT MyQLayoutItem : public QLayoutItem {
 public:
   virtual ~MyQLayoutItem() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize sizeHint()
+  virtual QSize sizeHint() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize minimumSize()
+  virtual QSize minimumSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSize maximumSize()
+  virtual QSize maximumSize() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"maximumSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSize){};}
+    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSize
+    } else {
+    return (QSize){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] Qt::Orientations expandingDirections()
+  virtual Qt::Orientations expandingDirections() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"expandingDirections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (Qt::Orientations)(int)(irv);
+      // Elaborated Record QFlags<Qt::Orientation>
+    } else {
+    return (Qt::Orientations){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setGeometry(const QRect &)
+  virtual void setGeometry(const QRect & arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setGeometry", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QLayoutItem::setGeometry(arg0);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QRect geometry()
+  virtual QRect geometry() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"geometry", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRect
+    } else {
+    return (QRect){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isEmpty()
+  virtual bool isEmpty() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isEmpty", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 // void QLayoutItem(Qt::Alignment)
 MyQLayoutItem(QFlags<Qt::AlignmentFlag> alignment) : QLayoutItem(alignment) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:65
+// [8] QSize sizeHint()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:66
+// [8] QSize minimumSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:67
+// [8] QSize maximumSize()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:68
+// [4] Qt::Orientations expandingDirections()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:69
+// [-2] void setGeometry(const QRect &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:70
+// [16] QRect geometry()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:71
+// [1] bool isEmpty()
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:63
 // [-2] void QLayoutItem(Qt::Alignment)

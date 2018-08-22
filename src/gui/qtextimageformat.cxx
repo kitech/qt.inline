@@ -19,8 +19,6 @@ public:
   virtual ~MyQTextImageFormat() {}
 // void QTextImageFormat()
 MyQTextImageFormat() : QTextImageFormat() {}
-// void QTextImageFormat(const QTextFormat &)
-MyQTextImageFormat(const QTextFormat & format) : QTextImageFormat(format) {}
 };
 
 // Public Visibility=Default Availability=Available

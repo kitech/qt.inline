@@ -18,10 +18,40 @@
 class Q_DECL_EXPORT MyQCameraInfoControl : public QCameraInfoControl {
 public:
   virtual ~MyQCameraInfoControl() {}
-// void QCameraInfoControl(QObject *)
-MyQCameraInfoControl(QObject * parent) : QCameraInfoControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCamera::Position cameraPosition(const QString &)
+  virtual QCamera::Position cameraPosition(const QString & deviceName) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cameraPosition", &handled, 1, (uint64_t)&deviceName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCamera::Position)(int)(irv);
+      // Elaborated Enum QCamera::Position
+    } else {
+    return (QCamera::Position){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int cameraOrientation(const QString &)
+  virtual int cameraOrientation(const QString & deviceName) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cameraOrientation", &handled, 1, (uint64_t)&deviceName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:57
+// [4] QCamera::Position cameraPosition(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:58
+// [4] int cameraOrientation(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:52
 // [8] const QMetaObject * metaObject()

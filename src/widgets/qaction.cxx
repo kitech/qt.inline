@@ -36,8 +36,6 @@ MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(
   }
   }
 
-// void QAction(QActionPrivate &, QObject *)
-MyQAction(QActionPrivate & dd, QObject * parent) : QAction(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

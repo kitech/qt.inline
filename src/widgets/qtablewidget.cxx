@@ -87,47 +87,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] QList<QTableWidgetItem *> items(const QMimeData *)
-  virtual QList<QTableWidgetItem *> items(const QMimeData * data) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QList<QTableWidgetItem *>){};}
-    auto prv = (QList<QTableWidgetItem *>*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Unexposed Record QList<QTableWidgetItem *>
-    } else {
-    return QTableWidget::items(data);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [24] QModelIndex indexFromItem(QTableWidgetItem *)
-  virtual QModelIndex indexFromItem(QTableWidgetItem * item) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QModelIndex){};}
-    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QModelIndex
-    } else {
-    return QTableWidget::indexFromItem(item);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QTableWidgetItem * itemFromIndex(const QModelIndex &)
-  virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QTableWidgetItem *)(irv);
-      // Pointer Pointer QTableWidgetItem *
-    } else {
-    return QTableWidget::itemFromIndex(index);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event)  override {
@@ -181,32 +140,6 @@ bool C_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE(void *this
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK12QTableWidget20supportedDropActionsEv(void *this_) {
   return (Qt::DropActions)((QTableWidget*)this_)->QTableWidget::supportedDropActions();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:336
-// [-2] QList<QTableWidgetItem *> items(const QMimeData *)
-extern "C" Q_DECL_EXPORT
-QList<QTableWidgetItem *>* C_ZNK12QTableWidget5itemsEPK9QMimeData(void *this_, const QMimeData * data) {
-  auto rv = ((QTableWidget*)this_)->QTableWidget::items(data);
-return new QList<QTableWidgetItem *>(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:338
-// [24] QModelIndex indexFromItem(QTableWidgetItem *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
-  auto rv = ((QTableWidget*)this_)->QTableWidget::indexFromItem(item);
-return new QModelIndex(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:339
-// [8] QTableWidgetItem * itemFromIndex(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QTableWidget13itemFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (void*)((QTableWidget*)this_)->QTableWidget::itemFromIndex(*index);
 }
 
 // Protected virtual Visibility=Default Availability=Available

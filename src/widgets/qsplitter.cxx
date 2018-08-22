@@ -83,43 +83,6 @@ MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void moveSplitter(int, int)
-  virtual void moveSplitter(int pos, int index)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveSplitter", &handled, 2, (uint64_t)pos, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QSplitter::moveSplitter(pos, index);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setRubberBand(int)
-  virtual void setRubberBand(int position)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRubberBand", &handled, 1, (uint64_t)position, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QSplitter::setRubberBand(position);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int closestLegalPosition(int, int)
-  virtual int closestLegalPosition(int arg0, int arg1)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closestLegalPosition", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QSplitter::closestLegalPosition(arg0, arg1);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -160,30 +123,6 @@ void C_ZN9QSplitter11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSplitter11changeEventEP6QEvent(void *this_, QEvent * arg0) {
   ((QSplitter*)this_)->QSplitter::changeEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:120
-// [-2] void moveSplitter(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QSplitter12moveSplitterEii(void *this_, int pos, int index) {
-  ((QSplitter*)this_)->QSplitter::moveSplitter(pos, index);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:121
-// [-2] void setRubberBand(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QSplitter13setRubberBandEi(void *this_, int position) {
-  ((QSplitter*)this_)->QSplitter::setRubberBand(position);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:122
-// [4] int closestLegalPosition(int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QSplitter20closestLegalPositionEii(void *this_, int arg0, int arg1) {
-  return (int)((QSplitter*)this_)->QSplitter::closestLegalPosition(arg0, arg1);
 }
 
 // Public virtual Visibility=Default Availability=Available

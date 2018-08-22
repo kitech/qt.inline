@@ -18,8 +18,72 @@
 class Q_DECL_EXPORT MyQSGRendererInterface : public QSGRendererInterface {
 public:
   virtual ~MyQSGRendererInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGRendererInterface::GraphicsApi graphicsApi()
+  virtual QSGRendererInterface::GraphicsApi graphicsApi() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"graphicsApi", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGRendererInterface::GraphicsApi)(int)(irv);
+      // Enum Enum QSGRendererInterface::GraphicsApi
+    } else {
+    return (QSGRendererInterface::GraphicsApi){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGRendererInterface::ShaderType shaderType()
+  virtual QSGRendererInterface::ShaderType shaderType() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"shaderType", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGRendererInterface::ShaderType)(int)(irv);
+      // Enum Enum QSGRendererInterface::ShaderType
+    } else {
+    return (QSGRendererInterface::ShaderType){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGRendererInterface::ShaderCompilationTypes shaderCompilationType()
+  virtual QSGRendererInterface::ShaderCompilationTypes shaderCompilationType() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"shaderCompilationType", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGRendererInterface::ShaderCompilationTypes)(int)(irv);
+      // Typedef Record QFlags<QSGRendererInterface::ShaderCompilationType>
+    } else {
+    return (QSGRendererInterface::ShaderCompilationTypes){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QSGRendererInterface::ShaderSourceTypes shaderSourceType()
+  virtual QSGRendererInterface::ShaderSourceTypes shaderSourceType() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"shaderSourceType", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGRendererInterface::ShaderSourceTypes)(int)(irv);
+      // Typedef Record QFlags<QSGRendererInterface::ShaderSourceType>
+    } else {
+    return (QSGRendererInterface::ShaderSourceTypes){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrendererinterface.h:88
+// [4] QSGRendererInterface::GraphicsApi graphicsApi()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrendererinterface.h:93
+// [4] QSGRendererInterface::ShaderType shaderType()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrendererinterface.h:94
+// [4] QSGRendererInterface::ShaderCompilationTypes shaderCompilationType()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgrendererinterface.h:95
+// [4] QSGRendererInterface::ShaderSourceTypes shaderSourceType()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendererinterface.h:86
 // [-2] void ~QSGRendererInterface()

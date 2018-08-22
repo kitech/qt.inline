@@ -22,8 +22,6 @@ public:
 MyQGeoShape() : QGeoShape() {}
 // void QGeoShape(const QGeoShape &)
 MyQGeoShape(const QGeoShape & other) : QGeoShape(other) {}
-// void QGeoShape(QGeoShapePrivate *)
-MyQGeoShape(QGeoShapePrivate * d) : QGeoShape(d) {}
 };
 
 // Public Visibility=Default Availability=Available

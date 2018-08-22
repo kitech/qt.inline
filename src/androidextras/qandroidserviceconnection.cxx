@@ -18,12 +18,42 @@
 class Q_DECL_EXPORT MyQAndroidServiceConnection : public QAndroidServiceConnection {
 public:
   virtual ~MyQAndroidServiceConnection() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void onServiceConnected(const QString &, const QAndroidBinder &)
+  virtual void onServiceConnected(const QString & name, const QAndroidBinder & serviceBinder)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onServiceConnected", &handled, 2, (uint64_t)&name, (uint64_t)&serviceBinder, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAndroidServiceConnection::onServiceConnected(name, serviceBinder);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void onServiceDisconnected(const QString &)
+  virtual void onServiceDisconnected(const QString & name)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onServiceDisconnected", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAndroidServiceConnection::onServiceDisconnected(name);
+  }
+  }
+
 // void QAndroidServiceConnection()
 MyQAndroidServiceConnection() : QAndroidServiceConnection() {}
 // void QAndroidServiceConnection(const QAndroidJniObject &)
 MyQAndroidServiceConnection(const QAndroidJniObject & serviceConnection) : QAndroidServiceConnection(serviceConnection) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtAndroidExtras/qandroidserviceconnection.h:55
+// [-2] void onServiceConnected(const QString &, const QAndroidBinder &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtAndroidExtras/qandroidserviceconnection.h:56
+// [-2] void onServiceDisconnected(const QString &)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidserviceconnection.h:51
 // [-2] void QAndroidServiceConnection()

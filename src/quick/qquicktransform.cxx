@@ -9,7 +9,7 @@
 #include "callback_inherit.h"
 
 // QQuickTransform is pure virtual: true
-// QQuickTransform has virtual projected: true
+// QQuickTransform has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,32 +17,25 @@
 class Q_DECL_EXPORT MyQQuickTransform : public QQuickTransform {
 public:
   virtual ~MyQQuickTransform() {}
-// void QQuickTransform(QObject *)
-MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void update()
-  virtual void update()   {
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void applyTo(QMatrix4x4 *)
+  virtual void applyTo(QMatrix4x4 * matrix) const override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"applyTo", &handled, 1, (uint64_t)matrix, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QQuickTransform::update();
+    // QQuickTransform::applyTo(matrix);
   }
   }
 
-// void QQuickTransform(QQuickTransformPrivate &, QObject *)
-MyQQuickTransform(QQuickTransformPrivate & dd, QObject * parent) : QQuickTransform(dd, parent) {}
+// void QQuickTransform(QObject *)
+MyQQuickTransform(QObject * parent) : QQuickTransform(parent) {}
 };
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:71
-// [-2] void update()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QQuickTransform6updateEv(void *this_) {
-  ((QQuickTransform*)this_)->QQuickTransform::update();
-}
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:68
+// [-2] void applyTo(QMatrix4x4 *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickitem.h:60
 // [8] const QMetaObject * metaObject()
@@ -90,8 +83,7 @@ return new QString(rv);
 // [-2] void QQuickTransform(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QQuickTransformC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQQuickTransform*)(0);
-  return 0; // new MyQQuickTransform(parent);
+  return 0; // new QQuickTransform(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

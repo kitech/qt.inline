@@ -60,10 +60,6 @@ MyQEventTransition(QObject * object, QEvent::Type type_, QState * sourceState) :
   }
   }
 
-// void QEventTransition(QEventTransitionPrivate &, QState *)
-MyQEventTransition(QEventTransitionPrivate & dd, QState * parent) : QEventTransition(dd, parent) {}
-// void QEventTransition(QEventTransitionPrivate &, QObject *, QEvent::Type, QState *)
-MyQEventTransition(QEventTransitionPrivate & dd, QObject * object, QEvent::Type type_, QState * parent) : QEventTransition(dd, object, type_, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

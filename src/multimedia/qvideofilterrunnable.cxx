@@ -18,8 +18,25 @@
 class Q_DECL_EXPORT MyQVideoFilterRunnable : public QVideoFilterRunnable {
 public:
   virtual ~MyQVideoFilterRunnable() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QVideoFrame run(QVideoFrame *, const QVideoSurfaceFormat &, QVideoFilterRunnable::RunFlags)
+  virtual QVideoFrame run(QVideoFrame * input, const QVideoSurfaceFormat & surfaceFormat, QFlags<QVideoFilterRunnable::RunFlag> flags)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"run", &handled, 3, (uint64_t)input, (uint64_t)&surfaceFormat, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVideoFrame){};}
+    auto prv = (QVideoFrame*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVideoFrame
+    } else {
+    return (QVideoFrame){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qabstractvideofilter.h:60
+// [8] QVideoFrame run(QVideoFrame *, const QVideoSurfaceFormat &, QVideoFilterRunnable::RunFlags)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideofilter.h:59
 // [-2] void ~QVideoFilterRunnable()

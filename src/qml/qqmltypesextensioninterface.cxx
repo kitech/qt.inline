@@ -17,8 +17,23 @@
 class Q_DECL_EXPORT MyQQmlTypesExtensionInterface : public QQmlTypesExtensionInterface {
 public:
   virtual ~MyQQmlTypesExtensionInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void registerTypes(const char *)
+  virtual void registerTypes(const char * uri)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerTypes", &handled, 1, (uint64_t)uri, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QQmlTypesExtensionInterface::registerTypes(uri);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlextensioninterface.h:55
+// [-2] void registerTypes(const char *)
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:54
 // [-2] void ~QQmlTypesExtensionInterface()

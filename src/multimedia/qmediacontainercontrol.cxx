@@ -17,10 +17,74 @@
 class Q_DECL_EXPORT MyQMediaContainerControl : public QMediaContainerControl {
 public:
   virtual ~MyQMediaContainerControl() {}
-// void QMediaContainerControl(QObject *)
-MyQMediaContainerControl(QObject * parent) : QMediaContainerControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList supportedContainers()
+  virtual QStringList supportedContainers() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedContainers", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString containerFormat()
+  virtual QString containerFormat() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"containerFormat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setContainerFormat(const QString &)
+  virtual void setContainerFormat(const QString & format)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setContainerFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QMediaContainerControl::setContainerFormat(format);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString containerDescription(const QString &)
+  virtual QString containerDescription(const QString & formatMimeType) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"containerDescription", &handled, 1, (uint64_t)&formatMimeType, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediacontainercontrol.h:58
+// [8] QStringList supportedContainers()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediacontainercontrol.h:59
+// [8] QString containerFormat()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediacontainercontrol.h:60
+// [-2] void setContainerFormat(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediacontainercontrol.h:62
+// [8] QString containerDescription(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediacontainercontrol.h:53
 // [8] const QMetaObject * metaObject()

@@ -19,10 +19,6 @@ public:
   virtual ~MyQSGNode() {}
 // void QSGNode()
 MyQSGNode() : QSGNode() {}
-// void QSGNode(QSGNode::NodeType)
-MyQSGNode(QSGNode::NodeType type_) : QSGNode(type_) {}
-// void QSGNode(QSGNodePrivate &, QSGNode::NodeType)
-MyQSGNode(QSGNodePrivate & dd, QSGNode::NodeType type_) : QSGNode(dd, type_) {}
 };
 
 // Public Visibility=Default Availability=Available

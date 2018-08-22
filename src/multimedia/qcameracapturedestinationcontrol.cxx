@@ -17,10 +17,55 @@
 class Q_DECL_EXPORT MyQCameraCaptureDestinationControl : public QCameraCaptureDestinationControl {
 public:
   virtual ~MyQCameraCaptureDestinationControl() {}
-// void QCameraCaptureDestinationControl(QObject *)
-MyQCameraCaptureDestinationControl(QObject * parent) : QCameraCaptureDestinationControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isCaptureDestinationSupported(QCameraImageCapture::CaptureDestinations)
+  virtual bool isCaptureDestinationSupported(QFlags<QCameraImageCapture::CaptureDestination> destination) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isCaptureDestinationSupported", &handled, 1, (uint64_t)destination, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCameraImageCapture::CaptureDestinations captureDestination()
+  virtual QCameraImageCapture::CaptureDestinations captureDestination() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"captureDestination", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCameraImageCapture::CaptureDestinations)(int)(irv);
+      // Elaborated Record QFlags<QCameraImageCapture::CaptureDestination>
+    } else {
+    return (QCameraImageCapture::CaptureDestinations){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setCaptureDestination(QCameraImageCapture::CaptureDestinations)
+  virtual void setCaptureDestination(QFlags<QCameraImageCapture::CaptureDestination> destination)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setCaptureDestination", &handled, 1, (uint64_t)destination, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraCaptureDestinationControl::setCaptureDestination(destination);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracapturedestinationcontrol.h:57
+// [1] bool isCaptureDestinationSupported(QCameraImageCapture::CaptureDestinations)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracapturedestinationcontrol.h:58
+// [4] QCameraImageCapture::CaptureDestinations captureDestination()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracapturedestinationcontrol.h:59
+// [-2] void setCaptureDestination(QCameraImageCapture::CaptureDestinations)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameracapturedestinationcontrol.h:53
 // [8] const QMetaObject * metaObject()

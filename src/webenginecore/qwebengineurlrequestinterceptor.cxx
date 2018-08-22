@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQWebEngineUrlRequestInterceptor : public QWebEngineUrlRequestInterceptor {
 public:
   virtual ~MyQWebEngineUrlRequestInterceptor() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void interceptRequest(QWebEngineUrlRequestInfo &)
+  virtual void interceptRequest(QWebEngineUrlRequestInfo & info)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"interceptRequest", &handled, 1, (uint64_t)&info, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QWebEngineUrlRequestInterceptor::interceptRequest(info);
+  }
+  }
+
 // void QWebEngineUrlRequestInterceptor(QObject *)
 MyQWebEngineUrlRequestInterceptor(QObject * p) : QWebEngineUrlRequestInterceptor(p) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h:63
+// [-2] void interceptRequest(QWebEngineUrlRequestInfo &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h:55
 // [8] const QMetaObject * metaObject()

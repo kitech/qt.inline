@@ -19,46 +19,6 @@ public:
   virtual ~MyQAbstractScrollArea() {}
 // void QAbstractScrollArea(QWidget *)
 MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
-// void QAbstractScrollArea(QAbstractScrollAreaPrivate &, QWidget *)
-MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbstractScrollArea(dd, parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void setViewportMargins(int, int, int, int)
-  virtual void setViewportMargins(int left, int top, int right, int bottom)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setViewportMargins", &handled, 4, (uint64_t)left, (uint64_t)top, (uint64_t)right, (uint64_t)bottom, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractScrollArea::setViewportMargins(left, top, right, bottom);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setViewportMargins(const QMargins &)
-  virtual void setViewportMargins(const QMargins & margins)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setViewportMargins", &handled, 1, (uint64_t)&margins, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractScrollArea::setViewportMargins(margins);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QMargins viewportMargins()
-  virtual QMargins viewportMargins() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportMargins", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QMargins){};}
-    auto prv = (QMargins*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QMargins
-    } else {
-    return QAbstractScrollArea::viewportMargins();
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1)  override {
@@ -281,37 +241,6 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
   }
 
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractscrollarea.h:105
-// [-2] void setViewportMargins(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractScrollArea18setViewportMarginsEiiii(void *this_, int left, int top, int right, int bottom) {
-  ((QAbstractScrollArea*)this_)->QAbstractScrollArea::setViewportMargins(left, top, right, bottom);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtWidgets/qabstractscrollarea.h:106
-// [-2] void setViewportMargins(const QMargins &)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins(void *this_, QMargins* margins) {
-  ((QAbstractScrollArea*)this_)->QAbstractScrollArea::setViewportMargins(*margins);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Protected Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtWidgets/qabstractscrollarea.h:107
-// [16] QMargins viewportMargins()
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QAbstractScrollArea15viewportMarginsEv(void *this_) {
-  auto rv = ((QAbstractScrollArea*)this_)->QAbstractScrollArea::viewportMargins();
-return new QMargins(rv);
-}
-#endif // QT_VERSION >= 0x050500
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractscrollarea.h:109

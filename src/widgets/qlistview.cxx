@@ -19,8 +19,6 @@ public:
   virtual ~MyQListView() {}
 // void QListView(QWidget *)
 MyQListView(QWidget * parent) : QListView(parent) {}
-// void QListView(QListViewPrivate &, QWidget *)
-MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * e)  override {
@@ -43,32 +41,6 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
       // Void Void void
     } else {
     QListView::scrollContentsBy(dx, dy);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void resizeContents(int, int)
-  virtual void resizeContents(int width, int height)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeContents", &handled, 2, (uint64_t)width, (uint64_t)height, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QListView::resizeContents(width, height);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QSize contentsSize()
-  virtual QSize contentsSize() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contentsSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QSize){};}
-    auto prv = (QSize*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QSize
-    } else {
-    return QListView::contentsSize();
   }
   }
 
@@ -282,32 +254,6 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [16] QRect rectForIndex(const QModelIndex &)
-  virtual QRect rectForIndex(const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rectForIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRect){};}
-    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRect
-    } else {
-    return QListView::rectForIndex(index);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setPositionForIndex(const QPoint &, const QModelIndex &)
-  virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPositionForIndex", &handled, 2, (uint64_t)&position, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QListView::setPositionForIndex(position, index);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command)  override {
@@ -426,23 +372,6 @@ bool C_ZN9QListView5eventEP6QEvent(void *this_, QEvent * e) {
 extern "C" Q_DECL_EXPORT
 void C_ZN9QListView16scrollContentsByEii(void *this_, int dx, int dy) {
   ((QListView*)this_)->QListView::scrollContentsBy(dx, dy);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistview.h:146
-// [-2] void resizeContents(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QListView14resizeContentsEii(void *this_, int width, int height) {
-  ((QListView*)this_)->QListView::resizeContents(width, height);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistview.h:147
-// [8] QSize contentsSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QListView12contentsSizeEv(void *this_) {
-  auto rv = ((QListView*)this_)->QListView::contentsSize();
-return new QSize(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -582,26 +511,6 @@ void* C_ZN9QListView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt
   auto rv = ((QListView*)this_)->QListView::moveCursor(cursorAction, modifiers);
 return new QModelIndex(rv);
 }
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistview.h:174
-// [16] QRect rectForIndex(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QListView12rectForIndexERK11QModelIndex(void *this_, QModelIndex* index) {
-  auto rv = ((QListView*)this_)->QListView::rectForIndex(*index);
-return new QRect(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qlistview.h:175
-// [-2] void setPositionForIndex(const QPoint &, const QModelIndex &)
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-void C_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex(void *this_, QPoint* position, QModelIndex* index) {
-  ((QListView*)this_)->QListView::setPositionForIndex(*position, *index);
-}
-#endif // QT_VERSION >= 0x040100
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:177

@@ -21,8 +21,6 @@ public:
 MyQStyleOptionTabBarBase() : QStyleOptionTabBarBase() {}
 // void QStyleOptionTabBarBase(const QStyleOptionTabBarBase &)
 MyQStyleOptionTabBarBase(const QStyleOptionTabBarBase & other) : QStyleOptionTabBarBase(other) {}
-// void QStyleOptionTabBarBase(int)
-MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 };
 
 // Public Visibility=Default Availability=Available

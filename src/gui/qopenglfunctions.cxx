@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QOpenGLFunctions is pure virtual: false
-// QOpenGLFunctions has virtual projected: true
+// QOpenGLFunctions has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -22,36 +22,14 @@ public:
 MyQOpenGLFunctions() : QOpenGLFunctions() {}
 // void QOpenGLFunctions(QOpenGLContext *)
 MyQOpenGLFunctions(QOpenGLContext * context) : QOpenGLFunctions(context) {}
-// Protected static inline Visibility=Default Availability=Available
-// [1] bool isInitialized(const QOpenGLFunctionsPrivate *)
-  virtual bool isInitialized(const QOpenGLFunctionsPrivate * d)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isInitialized", &handled, 1, (uint64_t)d, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QOpenGLFunctions::isInitialized(d);
-  }
-  }
-
 };
-
-// Protected static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:416
-// [1] bool isInitialized(const QOpenGLFunctionsPrivate *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN16QOpenGLFunctions13isInitializedEPK23QOpenGLFunctionsPrivate(void *this_, const QOpenGLFunctionsPrivate * d) {
-  return (bool)((QOpenGLFunctions*)this_)->QOpenGLFunctions::isInitialized(d);
-}
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglfunctions.h:233
 // [-2] void QOpenGLFunctions()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QOpenGLFunctionsC2Ev() {
-  auto _nilp = (MyQOpenGLFunctions*)(0);
-  return  new MyQOpenGLFunctions();
+  return  new QOpenGLFunctions();
 }
 
 // Public Visibility=Default Availability=Available
@@ -59,8 +37,7 @@ void* C_ZN16QOpenGLFunctionsC2Ev() {
 // [-2] void QOpenGLFunctions(QOpenGLContext *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QOpenGLFunctionsC2EP14QOpenGLContext(QOpenGLContext * context) {
-  auto _nilp = (MyQOpenGLFunctions*)(0);
-  return  new MyQOpenGLFunctions(context);
+  return  new QOpenGLFunctions(context);
 }
 
 // Public inline Visibility=Default Availability=Available

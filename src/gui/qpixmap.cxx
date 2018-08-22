@@ -44,20 +44,6 @@ MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
   }
   }
 
-// Protected static Visibility=Default Availability=Available
-// [32] QPixmap fromImageInPlace(QImage &, Qt::ImageConversionFlags)
-  virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fromImageInPlace", &handled, 2, (uint64_t)&image, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QPixmap){};}
-    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QPixmap
-    } else {
-    return QPixmap::fromImageInPlace(image, flags);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -66,15 +52,6 @@ MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric arg0) {
   return (int)((QPixmap*)this_)->QPixmap::metric(arg0);
-}
-
-// Protected static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpixmap.h:176
-// [32] QPixmap fromImageInPlace(QImage &, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QImage* image, QFlags<Qt::ImageConversionFlag> flags) {
-  auto rv = ((QPixmap*)this_)->QPixmap::fromImageInPlace(*image, flags);
-return new QPixmap(rv);
 }
 
 // Public Visibility=Default Availability=Available

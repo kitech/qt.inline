@@ -20,8 +20,6 @@ public:
   virtual ~MyQVariantAnimation() {}
 // void QVariantAnimation(QObject *)
 MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
-// void QVariantAnimation(QVariantAnimationPrivate &, QObject *)
-MyQVariantAnimation(QVariantAnimationPrivate & dd, QObject * parent) : QVariantAnimation(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {

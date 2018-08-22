@@ -17,8 +17,40 @@
 class Q_DECL_EXPORT MyQQmlImageProviderBase : public QQmlImageProviderBase {
 public:
   virtual ~MyQQmlImageProviderBase() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QQmlImageProviderBase::ImageType imageType()
+  virtual QQmlImageProviderBase::ImageType imageType() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"imageType", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QQmlImageProviderBase::ImageType)(int)(irv);
+      // Enum Enum QQmlImageProviderBase::ImageType
+    } else {
+    return (QQmlImageProviderBase::ImageType){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QQmlImageProviderBase::Flags flags()
+  virtual QQmlImageProviderBase::Flags flags() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"flags", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QQmlImageProviderBase::Flags)(int)(irv);
+      // Typedef Record QFlags<QQmlImageProviderBase::Flag>
+    } else {
+    return (QQmlImageProviderBase::Flags){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:74
+// [4] QQmlImageProviderBase::ImageType imageType()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:75
+// [4] QQmlImageProviderBase::Flags flags()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlengine.h:72
 // [-2] void ~QQmlImageProviderBase()

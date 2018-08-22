@@ -59,30 +59,6 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void filterChanged()
-  virtual void filterChanged()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"filterChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QSortFilterProxyModel::filterChanged();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void invalidateFilter()
-  virtual void invalidateFilter()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"invalidateFilter", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QSortFilterProxyModel::invalidateFilter();
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -108,25 +84,6 @@ extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(void *this_, QModelIndex* source_left, QModelIndex* source_right) {
   return (bool)((QSortFilterProxyModel*)this_)->QSortFilterProxyModel::lessThan(*source_left, *source_right);
 }
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:126
-// [-2] void filterChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QSortFilterProxyModel13filterChangedEv(void *this_) {
-  ((QSortFilterProxyModel*)this_)->QSortFilterProxyModel::filterChanged();
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:127
-// [-2] void invalidateFilter()
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void C_ZN21QSortFilterProxyModel16invalidateFilterEv(void *this_) {
-  ((QSortFilterProxyModel*)this_)->QSortFilterProxyModel::invalidateFilter();
-}
-#endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:61

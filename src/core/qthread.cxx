@@ -31,33 +31,6 @@ MyQThread(QObject * parent) : QThread(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [4] int exec()
-  virtual int exec()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"exec", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QThread::exec();
-  }
-  }
-
-// Protected static Visibility=Default Availability=Available
-// [-2] void setTerminationEnabled(bool)
-  virtual void setTerminationEnabled(bool enabled)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setTerminationEnabled", &handled, 1, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QThread::setTerminationEnabled(enabled);
-  }
-  }
-
-// void QThread(QThreadPrivate &, QObject *)
-MyQThread(QThreadPrivate & dd, QObject * parent) : QThread(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -66,22 +39,6 @@ MyQThread(QThreadPrivate & dd, QObject * parent) : QThread(dd, parent) {}
 extern "C" Q_DECL_EXPORT
 void C_ZN7QThread3runEv(void *this_) {
   ((QThread*)this_)->QThread::run();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthread.h:152
-// [4] int exec()
-extern "C" Q_DECL_EXPORT
-int C_ZN7QThread4execEv(void *this_) {
-  return (int)((QThread*)this_)->QThread::exec();
-}
-
-// Protected static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthread.h:154
-// [-2] void setTerminationEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QThread21setTerminationEnabledEb(void *this_, bool enabled) {
-  ((QThread*)this_)->QThread::setTerminationEnabled(enabled);
 }
 
 // Public virtual Visibility=Default Availability=Available

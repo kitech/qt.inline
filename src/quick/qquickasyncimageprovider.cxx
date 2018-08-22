@@ -18,10 +18,26 @@
 class Q_DECL_EXPORT MyQQuickAsyncImageProvider : public QQuickAsyncImageProvider {
 public:
   virtual ~MyQQuickAsyncImageProvider() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)
+  virtual QQuickImageResponse * requestImageResponse(const QString & id, const QSize & requestedSize)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestImageResponse", &handled, 2, (uint64_t)&id, (uint64_t)&requestedSize, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QQuickImageResponse *)(irv);
+      // Pointer Pointer QQuickImageResponse *
+    } else {
+    return (QQuickImageResponse *){};
+  }
+  }
+
 // void QQuickAsyncImageProvider()
 MyQQuickAsyncImageProvider() : QQuickAsyncImageProvider() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickimageprovider.h:121
+// [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:115
 // [-2] void QQuickAsyncImageProvider()

@@ -21,8 +21,6 @@ public:
 MyQStandardItemModel(QObject * parent) : QStandardItemModel(parent) {}
 // void QStandardItemModel(int, int, QObject *)
 MyQStandardItemModel(int rows, int columns, QObject * parent) : QStandardItemModel(rows, columns, parent) {}
-// void QStandardItemModel(QStandardItemModelPrivate &, QObject *)
-MyQStandardItemModel(QStandardItemModelPrivate & dd, QObject * parent) : QStandardItemModel(dd, parent) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

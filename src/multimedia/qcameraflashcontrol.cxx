@@ -17,10 +17,71 @@
 class Q_DECL_EXPORT MyQCameraFlashControl : public QCameraFlashControl {
 public:
   virtual ~MyQCameraFlashControl() {}
-// void QCameraFlashControl(QObject *)
-MyQCameraFlashControl(QObject * parent) : QCameraFlashControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QCameraExposure::FlashModes flashMode()
+  virtual QCameraExposure::FlashModes flashMode() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"flashMode", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QCameraExposure::FlashModes)(int)(irv);
+      // Elaborated Record QFlags<QCameraExposure::FlashMode>
+    } else {
+    return (QCameraExposure::FlashModes){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setFlashMode(QCameraExposure::FlashModes)
+  virtual void setFlashMode(QFlags<QCameraExposure::FlashMode> mode)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFlashMode", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraFlashControl::setFlashMode(mode);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isFlashModeSupported(QCameraExposure::FlashModes)
+  virtual bool isFlashModeSupported(QFlags<QCameraExposure::FlashMode> mode) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFlashModeSupported", &handled, 1, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isFlashReady()
+  virtual bool isFlashReady() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isFlashReady", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:61
+// [4] QCameraExposure::FlashModes flashMode()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:62
+// [-2] void setFlashMode(QCameraExposure::FlashModes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:63
+// [1] bool isFlashModeSupported(QCameraExposure::FlashModes)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:65
+// [1] bool isFlashReady()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:56
 // [8] const QMetaObject * metaObject()

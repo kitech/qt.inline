@@ -104,18 +104,6 @@ MyQDial(QWidget * parent) : QDial(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionSlider *)
-  virtual void initStyleOption(QStyleOptionSlider * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QDial::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -172,14 +160,6 @@ void C_ZN5QDial14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(void *this_, QAbstractSlider::SliderChange change) {
   ((QDial*)this_)->QDial::sliderChange(change);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:93
-// [-2] void initStyleOption(QStyleOptionSlider *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider(void *this_, QStyleOptionSlider * option) {
-  ((QDial*)this_)->QDial::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

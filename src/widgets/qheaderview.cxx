@@ -19,92 +19,6 @@ public:
   virtual ~MyQHeaderView() {}
 // void QHeaderView(Qt::Orientation, QWidget *)
 MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orientation, parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void updateSection(int)
-  virtual void updateSection(int logicalIndex)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateSection", &handled, 1, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::updateSection(logicalIndex);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void resizeSections()
-  virtual void resizeSections()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeSections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::resizeSections();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void sectionsInserted(const QModelIndex &, int, int)
-  virtual void sectionsInserted(const QModelIndex & parent, int logicalFirst, int logicalLast)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sectionsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::sectionsInserted(parent, logicalFirst, logicalLast);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void sectionsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void sectionsAboutToBeRemoved(const QModelIndex & parent, int logicalFirst, int logicalLast)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sectionsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::sectionsAboutToBeRemoved(parent, logicalFirst, logicalLast);
-  }
-  }
-
-// void QHeaderView(QHeaderViewPrivate &, Qt::Orientation, QWidget *)
-MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * parent) : QHeaderView(dd, orientation, parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void initialize()
-  virtual void initialize()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::initialize();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void initializeSections()
-  virtual void initializeSections()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeSections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::initializeSections();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void initializeSections(int, int)
-  virtual void initializeSections(int start, int end)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeSections", &handled, 2, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::initializeSections(start, end);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & old)  override {
@@ -396,75 +310,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionHeader *)
-  virtual void initStyleOption(QStyleOptionHeader * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QHeaderView::initStyleOption(option);
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:205
-// [-2] void updateSection(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView13updateSectionEi(void *this_, int logicalIndex) {
-  ((QHeaderView*)this_)->QHeaderView::updateSection(logicalIndex);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:206
-// [-2] void resizeSections()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView14resizeSectionsEv(void *this_) {
-  ((QHeaderView*)this_)->QHeaderView::resizeSections();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:207
-// [-2] void sectionsInserted(const QModelIndex &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int logicalFirst, int logicalLast) {
-  ((QHeaderView*)this_)->QHeaderView::sectionsInserted(*parent, logicalFirst, logicalLast);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:208
-// [-2] void sectionsAboutToBeRemoved(const QModelIndex &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int logicalFirst, int logicalLast) {
-  ((QHeaderView*)this_)->QHeaderView::sectionsAboutToBeRemoved(*parent, logicalFirst, logicalLast);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:212
-// [-2] void initialize()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView10initializeEv(void *this_) {
-  ((QHeaderView*)this_)->QHeaderView::initialize();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:214
-// [-2] void initializeSections()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView18initializeSectionsEv(void *this_) {
-  ((QHeaderView*)this_)->QHeaderView::initializeSections();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:215
-// [-2] void initializeSections(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QHeaderView18initializeSectionsEii(void *this_, int start, int end) {
-  ((QHeaderView*)this_)->QHeaderView::initializeSections(start, end);
-}
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:216
@@ -653,14 +499,6 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection(void *this_, QItemSelection* selection) {
   auto rv = ((QHeaderView*)this_)->QHeaderView::visualRegionForSelection(*selection);
 return new QRegion(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:246
-// [-2] void initStyleOption(QStyleOptionHeader *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader(void *this_, QStyleOptionHeader * option) {
-  ((QHeaderView*)this_)->QHeaderView::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -189,18 +189,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionMenuItem *, const QAction *)
-  virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QMenuBar::initStyleOption(option, action);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -313,14 +301,6 @@ bool C_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, Q
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QMenuBar5eventEP6QEvent(void *this_, QEvent * arg0) {
   return (bool)((QMenuBar*)this_)->QMenuBar::event(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:127
-// [-2] void initStyleOption(QStyleOptionMenuItem *, const QAction *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void *this_, QStyleOptionMenuItem * option, const QAction * action) {
-  ((QMenuBar*)this_)->QMenuBar::initStyleOption(option, action);
 }
 
 // Public virtual Visibility=Default Availability=Available

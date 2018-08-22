@@ -187,20 +187,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionComboBox *)
-  virtual void initStyleOption(QStyleOptionComboBox * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QComboBox::initStyleOption(option);
-  }
-  }
-
-// void QComboBox(QComboBoxPrivate &, QWidget *)
-MyQComboBox(QComboBoxPrivate & arg0, QWidget * arg1) : QComboBox(arg0, arg1) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -313,14 +299,6 @@ void C_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent(void *this_, QContext
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
   ((QComboBox*)this_)->QComboBox::inputMethodEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:245
-// [-2] void initStyleOption(QStyleOptionComboBox *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QComboBox15initStyleOptionEP20QStyleOptionComboBox(void *this_, QStyleOptionComboBox * option) {
-  ((QComboBox*)this_)->QComboBox::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available

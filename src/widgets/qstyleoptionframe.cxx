@@ -21,8 +21,6 @@ public:
 MyQStyleOptionFrame() : QStyleOptionFrame() {}
 // void QStyleOptionFrame(const QStyleOptionFrame &)
 MyQStyleOptionFrame(const QStyleOptionFrame & other) : QStyleOptionFrame(other) {}
-// void QStyleOptionFrame(int)
-MyQStyleOptionFrame(int version) : QStyleOptionFrame(version) {}
 };
 
 // Public Visibility=Default Availability=Available

@@ -21,8 +21,6 @@ public:
 MyQStyleOptionDockWidget() : QStyleOptionDockWidget() {}
 // void QStyleOptionDockWidget(const QStyleOptionDockWidget &)
 MyQStyleOptionDockWidget(const QStyleOptionDockWidget & other) : QStyleOptionDockWidget(other) {}
-// void QStyleOptionDockWidget(int)
-MyQStyleOptionDockWidget(int version) : QStyleOptionDockWidget(version) {}
 };
 
 // Public Visibility=Default Availability=Available

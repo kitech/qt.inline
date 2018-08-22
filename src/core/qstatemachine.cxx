@@ -107,8 +107,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
   }
   }
 
-// void QStateMachine(QStateMachinePrivate &, QObject *)
-MyQStateMachine(QStateMachinePrivate & dd, QObject * parent) : QStateMachine(dd, parent) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available

@@ -18,10 +18,21 @@
 class Q_DECL_EXPORT MyQAbstractAnimation : public QAbstractAnimation {
 public:
   virtual ~MyQAbstractAnimation() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int duration()
+  virtual int duration() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"duration", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 // void QAbstractAnimation(QObject *)
 MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
-// void QAbstractAnimation(QAbstractAnimationPrivate &, QObject *)
-MyQAbstractAnimation(QAbstractAnimationPrivate & dd, QObject * parent) : QAbstractAnimation(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
@@ -73,6 +84,9 @@ MyQAbstractAnimation(QAbstractAnimationPrivate & dd, QObject * parent) : QAbstra
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractanimation.h:102
+// [4] int duration()
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:121
 // [1] bool event(QEvent *)

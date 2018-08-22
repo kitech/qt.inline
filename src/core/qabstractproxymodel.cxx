@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QAbstractProxyModel is pure virtual: true
-// QAbstractProxyModel has virtual projected: true
+// QAbstractProxyModel has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -18,32 +18,110 @@
 class Q_DECL_EXPORT MyQAbstractProxyModel : public QAbstractProxyModel {
 public:
   virtual ~MyQAbstractProxyModel() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex mapToSource(const QModelIndex &)
+  virtual QModelIndex mapToSource(const QModelIndex & proxyIndex) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mapToSource", &handled, 1, (uint64_t)&proxyIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex mapFromSource(const QModelIndex &)
+  virtual QModelIndex mapFromSource(const QModelIndex & sourceIndex) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mapFromSource", &handled, 1, (uint64_t)&sourceIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex index(int, int, const QModelIndex &)
+  virtual QModelIndex index(int row, int column, const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"index", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex parent(const QModelIndex &)
+  virtual QModelIndex parent(const QModelIndex & child) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parent", &handled, 1, (uint64_t)&child, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int rowCount(const QModelIndex &)
+  virtual int rowCount(const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowCount", &handled, 1, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] int columnCount(const QModelIndex &)
+  virtual int columnCount(const QModelIndex & parent) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCount", &handled, 1, (uint64_t)&parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // Int Int int
+    } else {
+    return (int){};
+  }
+  }
+
 // void QAbstractProxyModel(QObject *)
 MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void resetInternalData()
-  virtual void resetInternalData()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractProxyModel::resetInternalData();
-  }
-  }
-
-// void QAbstractProxyModel(QAbstractProxyModelPrivate &, QObject *)
-MyQAbstractProxyModel(QAbstractProxyModelPrivate & arg0, QObject * parent) : QAbstractProxyModel(arg0, parent) {}
 };
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:104
-// [-2] void resetInternalData()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractProxyModel17resetInternalDataEv(void *this_) {
-  ((QAbstractProxyModel*)this_)->QAbstractProxyModel::resetInternalData();
-}
-
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:65
+// [24] QModelIndex mapToSource(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractproxymodel.h:66
+// [24] QModelIndex mapFromSource(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:178
+// [24] QModelIndex index(int, int, const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:180
+// [24] QModelIndex parent(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:183
+// [4] int rowCount(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:184
+// [4] int columnCount(const QModelIndex &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:55
 // [8] const QMetaObject * metaObject()
@@ -91,8 +169,7 @@ return new QString(rv);
 // [-2] void QAbstractProxyModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQAbstractProxyModel*)(0);
-  return 0; // new MyQAbstractProxyModel(parent);
+  return 0; // new QAbstractProxyModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

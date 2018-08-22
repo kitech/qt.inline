@@ -17,10 +17,90 @@
 class Q_DECL_EXPORT MyQCameraExposureControl : public QCameraExposureControl {
 public:
   virtual ~MyQCameraExposureControl() {}
-// void QCameraExposureControl(QObject *)
-MyQCameraExposureControl(QObject * parent) : QCameraExposureControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isParameterSupported(QCameraExposureControl::ExposureParameter)
+  virtual bool isParameterSupported(QCameraExposureControl::ExposureParameter parameter) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isParameterSupported", &handled, 1, (uint64_t)parameter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QVariantList supportedParameterRange(QCameraExposureControl::ExposureParameter, bool *)
+  virtual QVariantList supportedParameterRange(QCameraExposureControl::ExposureParameter parameter, bool * continuous) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedParameterRange", &handled, 2, (uint64_t)parameter, (uint64_t)continuous, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariantList*)(irv);
+      // Typedef Record QList<QVariant>
+    } else {
+    return (QVariantList){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant requestedValue(QCameraExposureControl::ExposureParameter)
+  virtual QVariant requestedValue(QCameraExposureControl::ExposureParameter parameter) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestedValue", &handled, 1, (uint64_t)parameter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant actualValue(QCameraExposureControl::ExposureParameter)
+  virtual QVariant actualValue(QCameraExposureControl::ExposureParameter parameter) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"actualValue", &handled, 1, (uint64_t)parameter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool setValue(QCameraExposureControl::ExposureParameter, const QVariant &)
+  virtual bool setValue(QCameraExposureControl::ExposureParameter parameter, const QVariant & value)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setValue", &handled, 2, (uint64_t)parameter, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:77
+// [1] bool isParameterSupported(QCameraExposureControl::ExposureParameter)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:78
+// [8] QVariantList supportedParameterRange(QCameraExposureControl::ExposureParameter, bool *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:80
+// [16] QVariant requestedValue(QCameraExposureControl::ExposureParameter)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:81
+// [16] QVariant actualValue(QCameraExposureControl::ExposureParameter)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:82
+// [1] bool setValue(QCameraExposureControl::ExposureParameter, const QVariant &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:57
 // [8] const QMetaObject * metaObject()

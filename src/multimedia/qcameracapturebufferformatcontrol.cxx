@@ -17,10 +17,56 @@
 class Q_DECL_EXPORT MyQCameraCaptureBufferFormatControl : public QCameraCaptureBufferFormatControl {
 public:
   virtual ~MyQCameraCaptureBufferFormatControl() {}
-// void QCameraCaptureBufferFormatControl(QObject *)
-MyQCameraCaptureBufferFormatControl(QObject * parent) : QCameraCaptureBufferFormatControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] QList<QVideoFrame::PixelFormat> supportedBufferFormats()
+  virtual QList<QVideoFrame::PixelFormat> supportedBufferFormats() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedBufferFormats", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QVideoFrame::PixelFormat>){};}
+    auto prv = (QList<QVideoFrame::PixelFormat>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QVideoFrame::PixelFormat>
+    } else {
+    return (QList<QVideoFrame::PixelFormat>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QVideoFrame::PixelFormat bufferFormat()
+  virtual QVideoFrame::PixelFormat bufferFormat() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"bufferFormat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QVideoFrame::PixelFormat)(int)(irv);
+      // Elaborated Enum QVideoFrame::PixelFormat
+    } else {
+    return (QVideoFrame::PixelFormat){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setBufferFormat(QVideoFrame::PixelFormat)
+  virtual void setBufferFormat(QVideoFrame::PixelFormat format)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setBufferFormat", &handled, 1, (uint64_t)format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QCameraCaptureBufferFormatControl::setBufferFormat(format);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:57
+// [-2] QList<QVideoFrame::PixelFormat> supportedBufferFormats()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:58
+// [4] QVideoFrame::PixelFormat bufferFormat()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:59
+// [-2] void setBufferFormat(QVideoFrame::PixelFormat)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:53
 // [8] const QMetaObject * metaObject()

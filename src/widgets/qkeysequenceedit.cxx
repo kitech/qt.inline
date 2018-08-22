@@ -22,8 +22,6 @@ public:
 MyQKeySequenceEdit(QWidget * parent) : QKeySequenceEdit(parent) {}
 // void QKeySequenceEdit(const QKeySequence &, QWidget *)
 MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySequenceEdit(keySequence, parent) {}
-// void QKeySequenceEdit(QKeySequenceEditPrivate &, QWidget *, Qt::WindowFlags)
-MyQKeySequenceEdit(QKeySequenceEditPrivate & d, QWidget * parent, QFlags<Qt::WindowType> f) : QKeySequenceEdit(d, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0)  override {

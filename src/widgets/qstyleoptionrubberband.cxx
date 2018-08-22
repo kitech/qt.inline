@@ -21,8 +21,6 @@ public:
 MyQStyleOptionRubberBand() : QStyleOptionRubberBand() {}
 // void QStyleOptionRubberBand(const QStyleOptionRubberBand &)
 MyQStyleOptionRubberBand(const QStyleOptionRubberBand & other) : QStyleOptionRubberBand(other) {}
-// void QStyleOptionRubberBand(int)
-MyQStyleOptionRubberBand(int version) : QStyleOptionRubberBand(version) {}
 };
 
 // Public Visibility=Default Availability=Available

@@ -18,10 +18,26 @@
 class Q_DECL_EXPORT MyQQuickImageResponse : public QQuickImageResponse {
 public:
   virtual ~MyQQuickImageResponse() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QQuickTextureFactory * textureFactory()
+  virtual QQuickTextureFactory * textureFactory() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textureFactory", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QQuickTextureFactory *)(irv);
+      // Pointer Pointer QQuickTextureFactory *
+    } else {
+    return (QQuickTextureFactory *){};
+  }
+  }
+
 // void QQuickImageResponse()
 MyQQuickImageResponse() : QQuickImageResponse() {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickimageprovider.h:78
+// [8] QQuickTextureFactory * textureFactory()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:73
 // [8] const QMetaObject * metaObject()

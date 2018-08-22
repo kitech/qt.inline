@@ -17,8 +17,41 @@
 class Q_DECL_EXPORT MyQMediaServiceSupportedFormatsInterface : public QMediaServiceSupportedFormatsInterface {
 public:
   virtual ~MyQMediaServiceSupportedFormatsInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [4] QMultimedia::SupportEstimate hasSupport(const QString &, const QStringList &)
+  virtual QMultimedia::SupportEstimate hasSupport(const QString & mimeType, const QStringList & codecs) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hasSupport", &handled, 2, (uint64_t)&mimeType, (uint64_t)&codecs, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QMultimedia::SupportEstimate)(int)(irv);
+      // Elaborated Enum QMultimedia::SupportEstimate
+    } else {
+    return (QMultimedia::SupportEstimate){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList supportedMimeTypes()
+  virtual QStringList supportedMimeTypes() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedMimeTypes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:127
+// [4] QMultimedia::SupportEstimate hasSupport(const QString &, const QStringList &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:128
+// [8] QStringList supportedMimeTypes()
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:126
 // [-2] void ~QMediaServiceSupportedFormatsInterface()

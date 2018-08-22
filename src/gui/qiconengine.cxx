@@ -17,12 +17,43 @@
 class Q_DECL_EXPORT MyQIconEngine : public QIconEngine {
 public:
   virtual ~MyQIconEngine() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void paint(QPainter *, const QRect &, QIcon::Mode, QIcon::State)
+  virtual void paint(QPainter * painter, const QRect & rect, QIcon::Mode mode, QIcon::State state)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paint", &handled, 4, (uint64_t)painter, (uint64_t)&rect, (uint64_t)mode, (uint64_t)state, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QIconEngine::paint(painter, rect, mode, state);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QIconEngine * clone()
+  virtual QIconEngine * clone() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"clone", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QIconEngine *)(irv);
+      // Pointer Pointer QIconEngine *
+    } else {
+    return (QIconEngine *){};
+  }
+  }
+
 // void QIconEngine()
 MyQIconEngine() : QIconEngine() {}
 // void QIconEngine(const QIconEngine &)
 MyQIconEngine(const QIconEngine & other) : QIconEngine(other) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qiconengine.h:56
+// [-2] void paint(QPainter *, const QRect &, QIcon::Mode, QIcon::State)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qiconengine.h:64
+// [8] QIconEngine * clone()
 // Public Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtGui/qiconengine.h:53

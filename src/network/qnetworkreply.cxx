@@ -18,10 +18,31 @@
 class Q_DECL_EXPORT MyQNetworkReply : public QNetworkReply {
 public:
   virtual ~MyQNetworkReply() {}
-// void QNetworkReply(QObject *)
-MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
-// void QNetworkReply(QNetworkReplyPrivate &, QObject *)
-MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd, parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void abort()
+  virtual void abort()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"abort", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QNetworkReply::abort();
+  }
+  }
+
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// [8] qint64 readData(char *, qint64)
+  virtual qint64 readData(char * data, qint64 maxlen)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // Typedef LongLong long long
+    } else {
+    return (qint64){};
+  }
+  }
+
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len_)  override {
@@ -32,102 +53,6 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
       // Typedef LongLong long long
     } else {
     return QNetworkReply::writeData(data, len_);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setOperation(QNetworkAccessManager::Operation)
-  virtual void setOperation(QNetworkAccessManager::Operation operation)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOperation", &handled, 1, (uint64_t)operation, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setOperation(operation);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setRequest(const QNetworkRequest &)
-  virtual void setRequest(const QNetworkRequest & request)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRequest", &handled, 1, (uint64_t)&request, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setRequest(request);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setError(QNetworkReply::NetworkError, const QString &)
-  virtual void setError(QNetworkReply::NetworkError errorCode, const QString & errorString)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setError", &handled, 2, (uint64_t)errorCode, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setError(errorCode, errorString);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setFinished(bool)
-  virtual void setFinished(bool arg0)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFinished", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setFinished(arg0);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setUrl(const QUrl &)
-  virtual void setUrl(const QUrl & url)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setUrl", &handled, 1, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setUrl(url);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setHeader(QNetworkRequest::KnownHeaders, const QVariant &)
-  virtual void setHeader(QNetworkRequest::KnownHeaders header, const QVariant & value)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setHeader", &handled, 2, (uint64_t)header, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setHeader(header, value);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setRawHeader(const QByteArray &, const QByteArray &)
-  virtual void setRawHeader(const QByteArray & headerName, const QByteArray & value)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRawHeader", &handled, 2, (uint64_t)&headerName, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setRawHeader(headerName, value);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setAttribute(QNetworkRequest::Attribute, const QVariant &)
-  virtual void setAttribute(QNetworkRequest::Attribute code, const QVariant & value)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAttribute", &handled, 2, (uint64_t)code, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QNetworkReply::setAttribute(code, value);
   }
   }
 
@@ -169,79 +94,18 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkreply.h:153
+// [-2] void abort()
+// Protected purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qiodevice.h:166
+// [8] qint64 readData(char *, qint64)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:174
 // [8] qint64 writeData(const char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN13QNetworkReply9writeDataEPKcx(void *this_, const char * data, qint64 len_) {
   return (qint64)((QNetworkReply*)this_)->QNetworkReply::writeData(data, len_);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:176
-// [-2] void setOperation(QNetworkAccessManager::Operation)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply12setOperationEN21QNetworkAccessManager9OperationE(void *this_, QNetworkAccessManager::Operation operation) {
-  ((QNetworkReply*)this_)->QNetworkReply::setOperation(operation);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:177
-// [-2] void setRequest(const QNetworkRequest &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply10setRequestERK15QNetworkRequest(void *this_, QNetworkRequest* request) {
-  ((QNetworkReply*)this_)->QNetworkReply::setRequest(*request);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:178
-// [-2] void setError(QNetworkReply::NetworkError, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply8setErrorENS_12NetworkErrorERK7QString(void *this_, QNetworkReply::NetworkError errorCode, QString* errorString) {
-  ((QNetworkReply*)this_)->QNetworkReply::setError(errorCode, *errorString);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qnetworkreply.h:179
-// [-2] void setFinished(bool)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply11setFinishedEb(void *this_, bool arg0) {
-  ((QNetworkReply*)this_)->QNetworkReply::setFinished(arg0);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:180
-// [-2] void setUrl(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply6setUrlERK4QUrl(void *this_, QUrl* url) {
-  ((QNetworkReply*)this_)->QNetworkReply::setUrl(*url);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:181
-// [-2] void setHeader(QNetworkRequest::KnownHeaders, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void *this_, QNetworkRequest::KnownHeaders header, QVariant* value) {
-  ((QNetworkReply*)this_)->QNetworkReply::setHeader(header, *value);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:182
-// [-2] void setRawHeader(const QByteArray &, const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* headerName, QByteArray* value) {
-  ((QNetworkReply*)this_)->QNetworkReply::setRawHeader(*headerName, *value);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkreply.h:183
-// [-2] void setAttribute(QNetworkRequest::Attribute, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QNetworkReply12setAttributeEN15QNetworkRequest9AttributeERK8QVariant(void *this_, QNetworkRequest::Attribute code, QVariant* value) {
-  ((QNetworkReply*)this_)->QNetworkReply::setAttribute(code, *value);
 }
 
 // Protected virtual Visibility=Default Availability=Available

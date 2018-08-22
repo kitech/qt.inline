@@ -21,8 +21,6 @@ public:
 MyQStyleOptionProgressBar() : QStyleOptionProgressBar() {}
 // void QStyleOptionProgressBar(const QStyleOptionProgressBar &)
 MyQStyleOptionProgressBar(const QStyleOptionProgressBar & other) : QStyleOptionProgressBar(other) {}
-// void QStyleOptionProgressBar(int)
-MyQStyleOptionProgressBar(int version) : QStyleOptionProgressBar(version) {}
 };
 
 // Public Visibility=Default Availability=Available

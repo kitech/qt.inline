@@ -21,8 +21,6 @@ public:
 MyQStyleOptionHeader() : QStyleOptionHeader() {}
 // void QStyleOptionHeader(const QStyleOptionHeader &)
 MyQStyleOptionHeader(const QStyleOptionHeader & other) : QStyleOptionHeader(other) {}
-// void QStyleOptionHeader(int)
-MyQStyleOptionHeader(int version) : QStyleOptionHeader(version) {}
 };
 
 // Public Visibility=Default Availability=Available

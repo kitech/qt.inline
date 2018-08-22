@@ -10,7 +10,7 @@
 #include "callback_inherit.h"
 
 // QWizardPage is pure virtual: false
-// QWizardPage has virtual projected: true
+// QWizardPage has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -20,91 +20,7 @@ public:
   virtual ~MyQWizardPage() {}
 // void QWizardPage(QWidget *)
 MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void setField(const QString &, const QVariant &)
-  virtual void setField(const QString & name, const QVariant & value)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setField", &handled, 2, (uint64_t)&name, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QWizardPage::setField(name, value);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QVariant field(const QString &)
-  virtual QVariant field(const QString & name) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"field", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QVariant){};}
-    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QVariant
-    } else {
-    return QWizardPage::field(name);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void registerField(const QString &, QWidget *, const char *, const char *)
-  virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerField", &handled, 4, (uint64_t)&name, (uint64_t)widget, (uint64_t)property, (uint64_t)changedSignal, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QWizardPage::registerField(name, widget, property, changedSignal);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QWizard * wizard()
-  virtual QWizard * wizard() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wizard", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QWizard *)(irv);
-      // Pointer Pointer QWizard *
-    } else {
-    return QWizardPage::wizard();
-  }
-  }
-
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:244
-// [-2] void setField(const QString &, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(void *this_, QString* name, QVariant* value) {
-  ((QWizardPage*)this_)->QWizardPage::setField(*name, *value);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:245
-// [16] QVariant field(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QWizardPage5fieldERK7QString(void *this_, QString* name) {
-  auto rv = ((QWizardPage*)this_)->QWizardPage::field(*name);
-return new QVariant(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:246
-// [-2] void registerField(const QString &, QWidget *, const char *, const char *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(void *this_, QString* name, QWidget * widget, const char * property, const char * changedSignal) {
-  ((QWizardPage*)this_)->QWizardPage::registerField(*name, widget, property, changedSignal);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:248
-// [8] QWizard * wizard()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QWizardPage6wizardEv(void *this_) {
-  return (void*)((QWizardPage*)this_)->QWizardPage::wizard();
-}
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:213
@@ -153,8 +69,7 @@ return new QString(rv);
 // [-2] void QWizardPage(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
-  auto _nilp = (MyQWizardPage*)(0);
-  return  new MyQWizardPage(parent);
+  return  new QWizardPage(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

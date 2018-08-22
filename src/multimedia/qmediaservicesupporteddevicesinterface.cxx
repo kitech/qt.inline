@@ -17,8 +17,42 @@
 class Q_DECL_EXPORT MyQMediaServiceSupportedDevicesInterface : public QMediaServiceSupportedDevicesInterface {
 public:
   virtual ~MyQMediaServiceSupportedDevicesInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QList<QByteArray> devices(const QByteArray &)
+  virtual QList<QByteArray> devices(const QByteArray & service) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"devices", &handled, 1, (uint64_t)&service, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QList<QByteArray>){};}
+    auto prv = (QList<QByteArray>*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Unexposed Record QList<QByteArray>
+    } else {
+    return (QList<QByteArray>){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QString deviceDescription(const QByteArray &, const QByteArray &)
+  virtual QString deviceDescription(const QByteArray & service, const QByteArray & device)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"deviceDescription", &handled, 2, (uint64_t)&service, (uint64_t)&device, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QString){};}
+    auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QString
+    } else {
+    return (QString){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:141
+// [8] QList<QByteArray> devices(const QByteArray &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:142
+// [8] QString deviceDescription(const QByteArray &, const QByteArray &)
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:140
 // [-2] void ~QMediaServiceSupportedDevicesInterface()

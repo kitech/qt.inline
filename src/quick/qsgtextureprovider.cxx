@@ -17,8 +17,24 @@
 class Q_DECL_EXPORT MyQSGTextureProvider : public QSGTextureProvider {
 public:
   virtual ~MyQSGTextureProvider() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QSGTexture * texture()
+  virtual QSGTexture * texture() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"texture", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QSGTexture *)(irv);
+      // Pointer Pointer QSGTexture *
+    } else {
+    return (QSGTexture *){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtextureprovider.h:52
+// [8] QSGTexture * texture()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtextureprovider.h:50
 // [8] const QMetaObject * metaObject()

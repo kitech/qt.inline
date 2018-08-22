@@ -85,61 +85,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [8] QList<QTreeWidgetItem *> items(const QMimeData *)
-  virtual QList<QTreeWidgetItem *> items(const QMimeData * data) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"items", &handled, 1, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QList<QTreeWidgetItem *>){};}
-    auto prv = (QList<QTreeWidgetItem *>*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Unexposed Record QList<QTreeWidgetItem *>
-    } else {
-    return QTreeWidget::items(data);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [24] QModelIndex indexFromItem(const QTreeWidgetItem *, int)
-  virtual QModelIndex indexFromItem(const QTreeWidgetItem * item, int column) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QModelIndex){};}
-    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QModelIndex
-    } else {
-    return QTreeWidget::indexFromItem(item, column);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [24] QModelIndex indexFromItem(QTreeWidgetItem *, int)
-  virtual QModelIndex indexFromItem(QTreeWidgetItem * item, int column) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexFromItem", &handled, 2, (uint64_t)item, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QModelIndex){};}
-    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QModelIndex
-    } else {
-    return QTreeWidget::indexFromItem(item, column);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QTreeWidgetItem * itemFromIndex(const QModelIndex &)
-  virtual QTreeWidgetItem * itemFromIndex(const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QTreeWidgetItem *)(irv);
-      // Pointer Pointer QTreeWidgetItem *
-    } else {
-    return QTreeWidget::itemFromIndex(index);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QDropEvent *)
   virtual void dropEvent(QDropEvent * event)  override {
@@ -193,41 +138,6 @@ bool C_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropAc
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK11QTreeWidget20supportedDropActionsEv(void *this_) {
   return (Qt::DropActions)((QTreeWidget*)this_)->QTreeWidget::supportedDropActions();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:365
-// [8] QList<QTreeWidgetItem *> items(const QMimeData *)
-extern "C" Q_DECL_EXPORT
-QList<QTreeWidgetItem *>* C_ZNK11QTreeWidget5itemsEPK9QMimeData(void *this_, const QMimeData * data) {
-  auto rv = ((QTreeWidget*)this_)->QTreeWidget::items(data);
-return new QList<QTreeWidgetItem *>(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:367
-// [24] QModelIndex indexFromItem(const QTreeWidgetItem *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi(void *this_, const QTreeWidgetItem * item, int column) {
-  auto rv = ((QTreeWidget*)this_)->QTreeWidget::indexFromItem(item, column);
-return new QModelIndex(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:368
-// [24] QModelIndex indexFromItem(QTreeWidgetItem *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi(void *this_, QTreeWidgetItem * item, int column) {
-  auto rv = ((QTreeWidget*)this_)->QTreeWidget::indexFromItem(item, column);
-return new QModelIndex(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:369
-// [8] QTreeWidgetItem * itemFromIndex(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (void*)((QTreeWidget*)this_)->QTreeWidget::itemFromIndex(*index);
 }
 
 // Protected virtual Visibility=Default Availability=Available

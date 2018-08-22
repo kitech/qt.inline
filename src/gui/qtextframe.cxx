@@ -19,8 +19,6 @@ public:
   virtual ~MyQTextFrame() {}
 // void QTextFrame(QTextDocument *)
 MyQTextFrame(QTextDocument * doc) : QTextFrame(doc) {}
-// void QTextFrame(QTextFramePrivate &, QTextDocument *)
-MyQTextFrame(QTextFramePrivate & p, QTextDocument * doc) : QTextFrame(p, doc) {}
 };
 
 // Public virtual Visibility=Default Availability=Available

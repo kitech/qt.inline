@@ -18,8 +18,40 @@
 class Q_DECL_EXPORT MyQTextObjectInterface : public QTextObjectInterface {
 public:
   virtual ~MyQTextObjectInterface() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QSizeF intrinsicSize(QTextDocument *, int, const QTextFormat &)
+  virtual QSizeF intrinsicSize(QTextDocument * doc, int posInDocument, const QTextFormat & format)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"intrinsicSize", &handled, 3, (uint64_t)doc, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QSizeF){};}
+    auto prv = (QSizeF*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QSizeF
+    } else {
+    return (QSizeF){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void drawObject(QPainter *, const QRectF &, QTextDocument *, int, const QTextFormat &)
+  virtual void drawObject(QPainter * painter, const QRectF & rect, QTextDocument * doc, int posInDocument, const QTextFormat & format)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawObject", &handled, 5, (uint64_t)painter, (uint64_t)&rect, (uint64_t)doc, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QTextObjectInterface::drawObject(painter, rect, doc, posInDocument, format);
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:142
+// [16] QSizeF intrinsicSize(QTextDocument *, int, const QTextFormat &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:143
+// [-2] void drawObject(QPainter *, const QRectF &, QTextDocument *, int, const QTextFormat &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:141
 // [-2] void ~QTextObjectInterface()

@@ -20,32 +20,6 @@ public:
   virtual ~MyQGraphicsLayoutItem() {}
 // void QGraphicsLayoutItem(QGraphicsLayoutItem *, bool)
 MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLayoutItem(parent, isLayout) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void setGraphicsItem(QGraphicsItem *)
-  virtual void setGraphicsItem(QGraphicsItem * item)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setGraphicsItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QGraphicsLayoutItem::setGraphicsItem(item);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setOwnedByLayout(bool)
-  virtual void setOwnedByLayout(bool ownedByLayout)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwnedByLayout", &handled, 1, (uint64_t)ownedByLayout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
-  }
-  }
-
-// void QGraphicsLayoutItem(QGraphicsLayoutItemPrivate &)
-MyQGraphicsLayoutItem(QGraphicsLayoutItemPrivate & dd) : QGraphicsLayoutItem(dd) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const override {
@@ -61,25 +35,6 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItemPrivate & dd) : QGraphicsLayoutItem(dd)
   }
 
 };
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:105
-// [-2] void setGraphicsItem(QGraphicsItem *)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
-  ((QGraphicsLayoutItem*)this_)->QGraphicsLayoutItem::setGraphicsItem(item);
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:106
-// [-2] void setOwnedByLayout(bool)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void *this_, bool ownedByLayout) {
-  ((QGraphicsLayoutItem*)this_)->QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
-}
-#endif // QT_VERSION >= 0x040600
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109

@@ -17,10 +17,58 @@
 class Q_DECL_EXPORT MyQMetaDataReaderControl : public QMetaDataReaderControl {
 public:
   virtual ~MyQMetaDataReaderControl() {}
-// void QMetaDataReaderControl(QObject *)
-MyQMetaDataReaderControl(QObject * parent) : QMetaDataReaderControl(parent) {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [1] bool isMetaDataAvailable()
+  virtual bool isMetaDataAvailable() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isMetaDataAvailable", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return (bool){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QVariant metaData(const QString &)
+  virtual QVariant metaData(const QString & key) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metaData", &handled, 1, (uint64_t)&key, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QVariant){};}
+    auto prv = (QVariant*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QVariant
+    } else {
+    return (QVariant){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStringList availableMetaData()
+  virtual QStringList availableMetaData() const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"availableMetaData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QStringList){};}
+    auto prv = (QStringList*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QStringList
+    } else {
+    return (QStringList){};
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmetadatareadercontrol.h:62
+// [1] bool isMetaDataAvailable()
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmetadatareadercontrol.h:64
+// [16] QVariant metaData(const QString &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmetadatareadercontrol.h:65
+// [8] QStringList availableMetaData()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmetadatareadercontrol.h:58
 // [8] const QMetaObject * metaObject()

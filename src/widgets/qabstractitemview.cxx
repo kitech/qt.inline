@@ -17,6 +17,46 @@
 class Q_DECL_EXPORT MyQAbstractItemView : public QAbstractItemView {
 public:
   virtual ~MyQAbstractItemView() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [16] QRect visualRect(const QModelIndex &)
+  virtual QRect visualRect(const QModelIndex & index) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRect", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QRect){};}
+    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QRect
+    } else {
+    return (QRect){};
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void scrollTo(const QModelIndex &, QAbstractItemView::ScrollHint)
+  virtual void scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollTo", &handled, 2, (uint64_t)&index, (uint64_t)hint, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QAbstractItemView::scrollTo(index, hint);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [24] QModelIndex indexAt(const QPoint &)
+  virtual QModelIndex indexAt(const QPoint & point) const override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexAt", &handled, 1, (uint64_t)&point, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    if (irv == 0) { return (QModelIndex){};}
+    auto prv = (QModelIndex*)(irv); auto orv = *prv; delete(prv); return orv;
+      // Record Record QModelIndex
+    } else {
+    return (QModelIndex){};
+  }
+  }
+
 // void QAbstractItemView(QWidget *)
 MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 // Protected virtual Visibility=Default Availability=Available
@@ -199,58 +239,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
   }
   }
 
-// void QAbstractItemView(QAbstractItemViewPrivate &, QWidget *)
-MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstractItemView(arg0, parent) {}
-// Protected Visibility=Default Availability=Available
-// [-2] void setHorizontalStepsPerItem(int)
-  virtual void setHorizontalStepsPerItem(int steps)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setHorizontalStepsPerItem", &handled, 1, (uint64_t)steps, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::setHorizontalStepsPerItem(steps);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int horizontalStepsPerItem()
-  virtual int horizontalStepsPerItem() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalStepsPerItem", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QAbstractItemView::horizontalStepsPerItem();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setVerticalStepsPerItem(int)
-  virtual void setVerticalStepsPerItem(int steps)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setVerticalStepsPerItem", &handled, 1, (uint64_t)steps, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::setVerticalStepsPerItem(steps);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] int verticalStepsPerItem()
-  virtual int verticalStepsPerItem() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalStepsPerItem", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (int)(irv);
-      // Int Int int
-    } else {
-    return QAbstractItemView::verticalStepsPerItem();
-  }
-  }
-
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
   virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers)  override {
@@ -392,129 +380,6 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
       // Record Record QStyleOptionViewItem
     } else {
     return QAbstractItemView::viewOptions();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [4] QAbstractItemView::State state()
-  virtual QAbstractItemView::State state() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"state", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QAbstractItemView::State)(int)(irv);
-      // Enum Enum QAbstractItemView::State
-    } else {
-    return QAbstractItemView::state();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setState(QAbstractItemView::State)
-  virtual void setState(QAbstractItemView::State state)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::setState(state);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void scheduleDelayedItemsLayout()
-  virtual void scheduleDelayedItemsLayout()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scheduleDelayedItemsLayout", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::scheduleDelayedItemsLayout();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void executeDelayedItemsLayout()
-  virtual void executeDelayedItemsLayout()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"executeDelayedItemsLayout", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::executeDelayedItemsLayout();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void setDirtyRegion(const QRegion &)
-  virtual void setDirtyRegion(const QRegion & region)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setDirtyRegion", &handled, 1, (uint64_t)&region, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::setDirtyRegion(region);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void scrollDirtyRegion(int, int)
-  virtual void scrollDirtyRegion(int dx, int dy)   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollDirtyRegion", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::scrollDirtyRegion(dx, dy);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QPoint dirtyRegionOffset()
-  virtual QPoint dirtyRegionOffset() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dirtyRegionOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QPoint){};}
-    auto prv = (QPoint*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QPoint
-    } else {
-    return QAbstractItemView::dirtyRegionOffset();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void startAutoScroll()
-  virtual void startAutoScroll()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startAutoScroll", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::startAutoScroll();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void stopAutoScroll()
-  virtual void stopAutoScroll()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"stopAutoScroll", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::stopAutoScroll();
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void doAutoScroll()
-  virtual void doAutoScroll()   {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doAutoScroll", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QAbstractItemView::doAutoScroll();
   }
   }
 
@@ -725,19 +590,6 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [4] QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
-  virtual QAbstractItemView::DropIndicatorPosition dropIndicatorPosition() const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropIndicatorPosition", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QAbstractItemView::DropIndicatorPosition)(int)(irv);
-      // Enum Enum QAbstractItemView::DropIndicatorPosition
-    } else {
-    return QAbstractItemView::dropIndicatorPosition();
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
   virtual QSize viewportSizeHint() const override {
@@ -754,6 +606,15 @@ MyQAbstractItemView(QAbstractItemViewPrivate & arg0, QWidget * parent) : QAbstra
 
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:205
+// [16] QRect visualRect(const QModelIndex &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:206
+// [-2] void scrollTo(const QModelIndex &, QAbstractItemView::ScrollHint)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:207
+// [24] QModelIndex indexAt(const QPoint &)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:245
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
@@ -877,38 +738,6 @@ void C_ZN17QAbstractItemView15editorDestroyedEP7QObject(void *this_, QObject * e
   ((QAbstractItemView*)this_)->QAbstractItemView::editorDestroyed(editor);
 }
 
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:275
-// [-2] void setHorizontalStepsPerItem(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView25setHorizontalStepsPerItemEi(void *this_, int steps) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::setHorizontalStepsPerItem(steps);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:276
-// [4] int horizontalStepsPerItem()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QAbstractItemView22horizontalStepsPerItemEv(void *this_) {
-  return (int)((QAbstractItemView*)this_)->QAbstractItemView::horizontalStepsPerItem();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:277
-// [-2] void setVerticalStepsPerItem(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView23setVerticalStepsPerItemEi(void *this_, int steps) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::setVerticalStepsPerItem(steps);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:278
-// [4] int verticalStepsPerItem()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QAbstractItemView20verticalStepsPerItemEv(void *this_) {
-  return (int)((QAbstractItemView*)this_)->QAbstractItemView::verticalStepsPerItem();
-}
-
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:283
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
@@ -967,90 +796,6 @@ extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView11viewOptionsEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::viewOptions();
 return new QStyleOptionViewItem(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:316
-// [4] QAbstractItemView::State state()
-extern "C" Q_DECL_EXPORT
-QAbstractItemView::State C_ZNK17QAbstractItemView5stateEv(void *this_) {
-  return (QAbstractItemView::State)((QAbstractItemView*)this_)->QAbstractItemView::state();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:317
-// [-2] void setState(QAbstractItemView::State)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView8setStateENS_5StateE(void *this_, QAbstractItemView::State state) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::setState(state);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:319
-// [-2] void scheduleDelayedItemsLayout()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv(void *this_) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::scheduleDelayedItemsLayout();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:320
-// [-2] void executeDelayedItemsLayout()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView25executeDelayedItemsLayoutEv(void *this_) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::executeDelayedItemsLayout();
-}
-
-// Protected Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qabstractitemview.h:322
-// [-2] void setDirtyRegion(const QRegion &)
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(void *this_, QRegion* region) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::setDirtyRegion(*region);
-}
-#endif // QT_VERSION >= 0x040100
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:323
-// [-2] void scrollDirtyRegion(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView17scrollDirtyRegionEii(void *this_, int dx, int dy) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::scrollDirtyRegion(dx, dy);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:324
-// [8] QPoint dirtyRegionOffset()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QAbstractItemView17dirtyRegionOffsetEv(void *this_) {
-  auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::dirtyRegionOffset();
-return new QPoint(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:326
-// [-2] void startAutoScroll()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView15startAutoScrollEv(void *this_) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::startAutoScroll();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:327
-// [-2] void stopAutoScroll()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView14stopAutoScrollEv(void *this_) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::stopAutoScroll();
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemview.h:328
-// [-2] void doAutoScroll()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView12doAutoScrollEv(void *this_) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::doAutoScroll();
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -1188,17 +933,6 @@ extern "C" Q_DECL_EXPORT
 void C_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * event) {
   ((QAbstractItemView*)this_)->QAbstractItemView::inputMethodEvent(event);
 }
-
-// Protected Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qabstractitemview.h:352
-// [4] QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-QAbstractItemView::DropIndicatorPosition C_ZNK17QAbstractItemView21dropIndicatorPositionEv(void *this_) {
-  return (QAbstractItemView::DropIndicatorPosition)((QAbstractItemView*)this_)->QAbstractItemView::dropIndicatorPosition();
-}
-#endif // QT_VERSION >= 0x040100
 
 // Protected virtual Visibility=Default Availability=Available
 // since 5.2

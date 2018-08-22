@@ -21,8 +21,6 @@ public:
 MyQStyleOptionTab() : QStyleOptionTab() {}
 // void QStyleOptionTab(const QStyleOptionTab &)
 MyQStyleOptionTab(const QStyleOptionTab & other) : QStyleOptionTab(other) {}
-// void QStyleOptionTab(int)
-MyQStyleOptionTab(int version) : QStyleOptionTab(version) {}
 };
 
 // Public Visibility=Default Availability=Available

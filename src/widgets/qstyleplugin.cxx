@@ -17,10 +17,26 @@
 class Q_DECL_EXPORT MyQStylePlugin : public QStylePlugin {
 public:
   virtual ~MyQStylePlugin() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [8] QStyle * create(const QString &)
+  virtual QStyle * create(const QString & key)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 1, (uint64_t)&key, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QStyle *)(irv);
+      // Pointer Pointer QStyle *
+    } else {
+    return (QStyle *){};
+  }
+  }
+
 // void QStylePlugin(QObject *)
 MyQStylePlugin(QObject * parent) : QStylePlugin(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleplugin.h:61
+// [8] QStyle * create(const QString &)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleplugin.h:56
 // [8] const QMetaObject * metaObject()

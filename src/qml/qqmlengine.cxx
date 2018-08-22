@@ -20,8 +20,6 @@ public:
   virtual ~MyQQmlEngine() {}
 // void QQmlEngine(QObject *)
 MyQQmlEngine(QObject * p) : QQmlEngine(p) {}
-// void QQmlEngine(QQmlEnginePrivate &, QObject *)
-MyQQmlEngine(QQmlEnginePrivate & dd, QObject * p) : QQmlEngine(dd, p) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0)  override {

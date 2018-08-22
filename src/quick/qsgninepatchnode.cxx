@@ -17,8 +17,83 @@
 class Q_DECL_EXPORT MyQSGNinePatchNode : public QSGNinePatchNode {
 public:
   virtual ~MyQSGNinePatchNode() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setTexture(QSGTexture *)
+  virtual void setTexture(QSGTexture * texture)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setTexture", &handled, 1, (uint64_t)texture, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGNinePatchNode::setTexture(texture);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setBounds(const QRectF &)
+  virtual void setBounds(const QRectF & bounds)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setBounds", &handled, 1, (uint64_t)&bounds, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGNinePatchNode::setBounds(bounds);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setDevicePixelRatio(qreal)
+  virtual void setDevicePixelRatio(qreal ratio)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setDevicePixelRatio", &handled, 1, (uint64_t)&ratio, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGNinePatchNode::setDevicePixelRatio(ratio);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void setPadding(qreal, qreal, qreal, qreal)
+  virtual void setPadding(qreal left, qreal top, qreal right, qreal bottom)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPadding", &handled, 4, (uint64_t)&left, (uint64_t)&top, (uint64_t)&right, (uint64_t)&bottom, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGNinePatchNode::setPadding(left, top, right, bottom);
+  }
+  }
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void update()
+  virtual void update()  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QSGNinePatchNode::update();
+  }
+  }
+
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgninepatchnode.h:53
+// [-2] void setTexture(QSGTexture *)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgninepatchnode.h:54
+// [-2] void setBounds(const QRectF &)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgninepatchnode.h:55
+// [-2] void setDevicePixelRatio(qreal)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgninepatchnode.h:56
+// [-2] void setPadding(qreal, qreal, qreal, qreal)
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgninepatchnode.h:57
+// [-2] void update()
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:51
 // [-2] void ~QSGNinePatchNode()

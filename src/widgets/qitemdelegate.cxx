@@ -67,44 +67,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void drawBackground(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
-  virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawBackground", &handled, 3, (uint64_t)painter, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QItemDelegate::drawBackground(painter, option, index);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [-2] void doLayout(const QStyleOptionViewItem &, QRect *, QRect *, QRect *, bool)
-  virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doLayout", &handled, 5, (uint64_t)&option, (uint64_t)checkRect, (uint64_t)iconRect, (uint64_t)textRect, (uint64_t)hint, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QItemDelegate::doLayout(option, checkRect, iconRect, textRect, hint);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QRect rect(const QStyleOptionViewItem &, const QModelIndex &, int)
-  virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rect", &handled, 3, (uint64_t)&option, (uint64_t)&index, (uint64_t)role, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRect){};}
-    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRect
-    } else {
-    return QItemDelegate::rect(option, index, role);
-  }
-  }
-
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event)  override {
@@ -128,75 +90,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
       // Bool Bool bool
     } else {
     return QItemDelegate::editorEvent(event, model, option, index);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [192] QStyleOptionViewItem setOptions(const QModelIndex &, const QStyleOptionViewItem &)
-  virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOptions", &handled, 2, (uint64_t)&index, (uint64_t)&option, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QStyleOptionViewItem){};}
-    auto prv = (QStyleOptionViewItem*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QStyleOptionViewItem
-    } else {
-    return QItemDelegate::setOptions(index, option);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [32] QPixmap decoration(const QStyleOptionViewItem &, const QVariant &)
-  virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decoration", &handled, 2, (uint64_t)&option, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QPixmap){};}
-    auto prv = (QPixmap*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QPixmap
-    } else {
-    return QItemDelegate::decoration(option, variant);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [8] QPixmap * selected(const QPixmap &, const QPalette &, bool)
-  virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selected", &handled, 3, (uint64_t)&pixmap, (uint64_t)&palette, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QPixmap *)(irv);
-      // Pointer Pointer QPixmap *
-    } else {
-    return QItemDelegate::selected(pixmap, palette, enabled);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QRect doCheck(const QStyleOptionViewItem &, const QRect &, const QVariant &)
-  virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doCheck", &handled, 3, (uint64_t)&option, (uint64_t)&bounding, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRect){};}
-    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRect
-    } else {
-    return QItemDelegate::doCheck(option, bounding, variant);
-  }
-  }
-
-// Protected Visibility=Default Availability=Available
-// [16] QRect textRectangle(QPainter *, const QRect &, const QFont &, const QString &)
-  virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textRectangle", &handled, 4, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&font, (uint64_t)&text, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    if (irv == 0) { return (QRect){};}
-    auto prv = (QRect*)(irv); auto orv = *prv; delete(prv); return orv;
-      // Record Record QRect
-    } else {
-    return QItemDelegate::textRectangle(painter, rect, font, text);
   }
   }
 
@@ -234,34 +127,6 @@ void C_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2
   ((QItemDelegate*)this_)->QItemDelegate::drawCheck(painter, *option, *rect, state);
 }
 
-// Protected Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qitemdelegate.h:100
-// [-2] void drawBackground(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QPainter * painter, QStyleOptionViewItem* option, QModelIndex* index) {
-  ((QItemDelegate*)this_)->QItemDelegate::drawBackground(painter, *option, *index);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:103
-// [-2] void doLayout(const QStyleOptionViewItem &, QRect *, QRect *, QRect *, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b(void *this_, QStyleOptionViewItem* option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) {
-  ((QItemDelegate*)this_)->QItemDelegate::doLayout(*option, checkRect, iconRect, textRect, hint);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:106
-// [16] QRect rect(const QStyleOptionViewItem &, const QModelIndex &, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi(void *this_, QStyleOptionViewItem* option, QModelIndex* index, int role) {
-  auto rv = ((QItemDelegate*)this_)->QItemDelegate::rect(*option, *index, role);
-return new QRect(rv);
-}
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemdelegate.h:108
 // [1] bool eventFilter(QObject *, QEvent *)
@@ -276,50 +141,6 @@ bool C_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent(void *this_, QObject * o
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QEvent * event, QAbstractItemModel * model, QStyleOptionViewItem* option, QModelIndex* index) {
   return (bool)((QItemDelegate*)this_)->QItemDelegate::editorEvent(event, model, *option, *index);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:112
-// [192] QStyleOptionViewItem setOptions(const QModelIndex &, const QStyleOptionViewItem &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem(void *this_, QModelIndex* index, QStyleOptionViewItem* option) {
-  auto rv = ((QItemDelegate*)this_)->QItemDelegate::setOptions(*index, *option);
-return new QStyleOptionViewItem(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:115
-// [32] QPixmap decoration(const QStyleOptionViewItem &, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant(void *this_, QStyleOptionViewItem* option, QVariant* variant) {
-  auto rv = ((QItemDelegate*)this_)->QItemDelegate::decoration(*option, *variant);
-return new QPixmap(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:116
-// [8] QPixmap * selected(const QPixmap &, const QPalette &, bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb(void *this_, QPixmap* pixmap, QPalette* palette, bool enabled) {
-  return (void*)((QItemDelegate*)this_)->QItemDelegate::selected(*pixmap, *palette, enabled);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:118
-// [16] QRect doCheck(const QStyleOptionViewItem &, const QRect &, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant(void *this_, QStyleOptionViewItem* option, QRect* bounding, QVariant* variant) {
-  auto rv = ((QItemDelegate*)this_)->QItemDelegate::doCheck(*option, *bounding, *variant);
-return new QRect(rv);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemdelegate.h:120
-// [16] QRect textRectangle(QPainter *, const QRect &, const QFont &, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString(void *this_, QPainter * painter, QRect* rect, QFont* font, QString* text) {
-  auto rv = ((QItemDelegate*)this_)->QItemDelegate::textRectangle(painter, *rect, *font, *text);
-return new QRect(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available

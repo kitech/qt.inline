@@ -18,10 +18,25 @@
 class Q_DECL_EXPORT MyQWebEngineUrlSchemeHandler : public QWebEngineUrlSchemeHandler {
 public:
   virtual ~MyQWebEngineUrlSchemeHandler() {}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// [-2] void requestStarted(QWebEngineUrlRequestJob *)
+  virtual void requestStarted(QWebEngineUrlRequestJob * arg0)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"requestStarted", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    // QWebEngineUrlSchemeHandler::requestStarted(arg0);
+  }
+  }
+
 // void QWebEngineUrlSchemeHandler(QObject *)
 MyQWebEngineUrlSchemeHandler(QObject * parent) : QWebEngineUrlSchemeHandler(parent) {}
 };
 
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h:61
+// [-2] void requestStarted(QWebEngineUrlRequestJob *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h:56
 // [8] const QMetaObject * metaObject()

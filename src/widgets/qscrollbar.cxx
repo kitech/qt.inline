@@ -117,18 +117,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
   }
   }
 
-// Protected Visibility=Default Availability=Available
-// [-2] void initStyleOption(QStyleOptionSlider *)
-  virtual void initStyleOption(QStyleOptionSlider * option) const  {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QScrollBar::initStyleOption(option);
-  }
-  }
-
 };
 
 // Protected virtual Visibility=Default Availability=Available
@@ -193,14 +181,6 @@ void C_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE(void *this
 extern "C" Q_DECL_EXPORT
 void C_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * arg0) {
   ((QScrollBar*)this_)->QScrollBar::contextMenuEvent(arg0);
-}
-
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollbar.h:79
-// [-2] void initStyleOption(QStyleOptionSlider *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider(void *this_, QStyleOptionSlider * option) {
-  ((QScrollBar*)this_)->QScrollBar::initStyleOption(option);
 }
 
 // Public virtual Visibility=Default Availability=Available
