@@ -23,7 +23,7 @@ MyQQuickPaintedItem(QQuickItem * parent) : QQuickPaintedItem(parent) {}
 MyQQuickPaintedItem(QQuickPaintedItemPrivate & dd, QQuickItem * parent) : QQuickPaintedItem(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
-  virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1) {
+  virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updatePaintNode", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQQuickPaintedItem(QQuickPaintedItemPrivate & dd, QQuickItem * parent) : QQuick
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void releaseResources()
-  virtual void releaseResources() {
+  virtual void releaseResources()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"releaseResources", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQQuickPaintedItem(QQuickPaintedItemPrivate & dd, QQuickItem * parent) : QQuick
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
-  virtual void itemChange(QQuickItem::ItemChange arg0, const QQuickItem::ItemChangeData & arg1) {
+  virtual void itemChange(QQuickItem::ItemChange arg0, const QQuickItem::ItemChangeData & arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemChange", &handled, 2, (uint64_t)arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -23,7 +23,7 @@ MyQToolBar(const QString & title, QWidget * parent) : QToolBar(title, parent) {}
 MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void actionEvent(QActionEvent *)
-  virtual void actionEvent(QActionEvent * event) {
+  virtual void actionEvent(QActionEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"actionEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * event) {
+  virtual void changeEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * event) {
+  virtual void paintEvent(QPaintEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -72,7 +72,7 @@ MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionToolBar *)
-  virtual void initStyleOption(QStyleOptionToolBar * option) const{
+  virtual void initStyleOption(QStyleOptionToolBar * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(parent, flags) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QContextMenuEvent *)
-  virtual void contextMenuEvent(QContextMenuEvent * event) {
+  virtual void contextMenuEvent(QContextMenuEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

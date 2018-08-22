@@ -23,7 +23,7 @@ MyQSplashScreen(const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScree
 MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScreen(parent, pixmap, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawContents(QPainter *)
-  virtual void drawContents(QPainter * painter) {
+  virtual void drawContents(QPainter * painter)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawContents", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * arg0) {
+  virtual void mousePressEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQSGMaterialShader() : QSGMaterialShader() {}
 // Protected inline Visibility=Default Availability=Available
 // [8] QSGMaterialShaderPrivate * d_func()
-  virtual QSGMaterialShaderPrivate * d_func() {
+  virtual QSGMaterialShaderPrivate * d_func()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 
 // Protected inline Visibility=Default Availability=Available
 // [8] const QSGMaterialShaderPrivate * d_func()
-  virtual const QSGMaterialShaderPrivate * d_func() const{
+  virtual const QSGMaterialShaderPrivate * d_func() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
 MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void setShaderSourceFile(QOpenGLShader::ShaderType, const QString &)
-  virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile) {
+  virtual void setShaderSourceFile(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QString & sourceFile)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setShaderSourceFile", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFile, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setShaderSourceFiles(QOpenGLShader::ShaderType, const QStringList &)
-  virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles) {
+  virtual void setShaderSourceFiles(QFlags<QOpenGLShader::ShaderTypeBit> type_, const QStringList & sourceFiles)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setShaderSourceFiles", &handled, 2, (uint64_t)type_, (uint64_t)&sourceFiles, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void compile()
-  virtual void compile() {
+  virtual void compile()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -85,7 +85,7 @@ MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void initialize()
-  virtual void initialize() {
+  virtual void initialize()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -97,7 +97,7 @@ MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] const char * vertexShader()
-  virtual const char * vertexShader() const{
+  virtual const char * vertexShader() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"vertexShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -110,7 +110,7 @@ MyQSGMaterialShader(QSGMaterialShaderPrivate & dd) : QSGMaterialShader(dd) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] const char * fragmentShader()
-  virtual const char * fragmentShader() const{
+  virtual const char * fragmentShader() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fragmentShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

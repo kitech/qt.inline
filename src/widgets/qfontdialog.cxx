@@ -23,7 +23,7 @@ MyQFontDialog(QWidget * parent) : QFontDialog(parent) {}
 MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * event) {
+  virtual void changeEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void done(int)
-  virtual void done(int result) {
+  virtual void done(int result)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * object, QEvent * event) {
+  virtual bool eventFilter(QObject * object, QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

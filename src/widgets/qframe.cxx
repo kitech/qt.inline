@@ -21,7 +21,7 @@ public:
 MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * arg0) {
+  virtual void changeEvent(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -58,7 +58,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void drawFrame(QPainter *)
-  virtual void drawFrame(QPainter * arg0) {
+  virtual void drawFrame(QPainter * arg0)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawFrame", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -72,7 +72,7 @@ MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 MyQFrame(QFramePrivate & dd, QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(dd, parent, f) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionFrame *)
-  virtual void initStyleOption(QStyleOptionFrame * option) const{
+  virtual void initStyleOption(QStyleOptionFrame * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

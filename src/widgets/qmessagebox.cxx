@@ -25,7 +25,7 @@ MyQMessageBox(QMessageBox::Icon icon, const QString & title, const QString & tex
 MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) : QMessageBox(title, text, icon, button0, button1, button2, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -38,7 +38,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * event) {
+  virtual void resizeEvent(QResizeEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -50,7 +50,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
-  virtual void showEvent(QShowEvent * event) {
+  virtual void showEvent(QShowEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -62,7 +62,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void closeEvent(QCloseEvent *)
-  virtual void closeEvent(QCloseEvent * event) {
+  virtual void closeEvent(QCloseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -74,7 +74,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * event) {
+  virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -86,7 +86,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * event) {
+  virtual void changeEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

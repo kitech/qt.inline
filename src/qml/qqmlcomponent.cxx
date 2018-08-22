@@ -34,7 +34,7 @@ MyQQmlComponent(QQmlEngine * arg0, const QUrl & url, QQmlComponent::CompilationM
 MyQQmlComponent(QQmlComponentPrivate & dd, QObject * parent) : QQmlComponent(dd, parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void createObject(QQmlV4Function *)
-  virtual void createObject(QQmlV4Function * arg0) {
+  virtual void createObject(QQmlV4Function * arg0)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQQmlComponent(QQmlComponentPrivate & dd, QObject * parent) : QQmlComponent(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void incubateObject(QQmlV4Function *)
-  virtual void incubateObject(QQmlV4Function * arg0) {
+  virtual void incubateObject(QQmlV4Function * arg0)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incubateObject", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

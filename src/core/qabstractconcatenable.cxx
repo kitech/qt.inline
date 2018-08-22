@@ -19,7 +19,7 @@ public:
   virtual ~MyQAbstractConcatenable() {}
 // Protected static Visibility=Default Availability=Available
 // [-2] void convertFromAscii(const char *, int, QChar *&)
-  virtual void convertFromAscii(const char * a, int len_, QChar *& out) {
+  virtual void convertFromAscii(const char * a, int len_, QChar *& out)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromAscii", &handled, 3, (uint64_t)a, (uint64_t)len_, (uint64_t)&out, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -31,7 +31,7 @@ public:
 
 // Protected static inline Visibility=Default Availability=Available
 // [-2] void convertFromAscii(char, QChar *&)
-  virtual void convertFromAscii(char a, QChar *& out) {
+  virtual void convertFromAscii(char a, QChar *& out)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromAscii", &handled, 2, (uint64_t)a, (uint64_t)&out, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -43,7 +43,7 @@ public:
 
 // Protected static Visibility=Default Availability=Available
 // [-2] void appendLatin1To(const char *, int, QChar *)
-  virtual void appendLatin1To(const char * a, int len_, QChar * out) {
+  virtual void appendLatin1To(const char * a, int len_, QChar * out)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"appendLatin1To", &handled, 3, (uint64_t)a, (uint64_t)len_, (uint64_t)out, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -22,7 +22,7 @@ public:
 MyQLocalServer(QObject * parent) : QLocalServer(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void incomingConnection(quintptr)
-  virtual void incomingConnection(quintptr socketDescriptor) {
+  virtual void incomingConnection(quintptr socketDescriptor)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incomingConnection", &handled, 1, (uint64_t)socketDescriptor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

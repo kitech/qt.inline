@@ -24,7 +24,7 @@ MyQProxyStyle(QStyle * style) : QProxyStyle(style) {}
 MyQProxyStyle(const QString & key) : QProxyStyle(key) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

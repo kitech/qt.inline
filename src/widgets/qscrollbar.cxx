@@ -23,7 +23,7 @@ MyQScrollBar(QWidget * parent) : QScrollBar(parent) {}
 MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * arg0) {
+  virtual void wheelEvent(QWheelEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * arg0) {
+  virtual void mousePressEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * arg0) {
+  virtual void mouseReleaseEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+  virtual void mouseMoveEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -83,7 +83,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hideEvent(QHideEvent *)
-  virtual void hideEvent(QHideEvent * arg0) {
+  virtual void hideEvent(QHideEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void sliderChange(QAbstractSlider::SliderChange)
-  virtual void sliderChange(QAbstractSlider::SliderChange change) {
+  virtual void sliderChange(QAbstractSlider::SliderChange change)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -107,7 +107,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QContextMenuEvent *)
-  virtual void contextMenuEvent(QContextMenuEvent * arg0) {
+  virtual void contextMenuEvent(QContextMenuEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -119,7 +119,7 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionSlider *)
-  virtual void initStyleOption(QStyleOptionSlider * option) const{
+  virtual void initStyleOption(QStyleOptionSlider * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

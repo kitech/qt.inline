@@ -20,7 +20,7 @@ public:
   virtual ~MyQGraphicsObject() {}
 // Protected Visibility=Default Availability=Available
 // [-2] void updateMicroFocus()
-  virtual void updateMicroFocus() {
+  virtual void updateMicroFocus()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateMicroFocus", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ public:
 MyQGraphicsObject(QGraphicsItemPrivate & dd, QGraphicsItem * parent) : QGraphicsObject(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * ev) {
+  virtual bool event(QEvent * ev)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

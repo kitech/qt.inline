@@ -24,7 +24,7 @@ MyQState(QState * parent) : QState(parent) {}
 MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void onEntry(QEvent *)
-  virtual void onEntry(QEvent * event) {
+  virtual void onEntry(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void onExit(QEvent *)
-  virtual void onExit(QEvent * event) {
+  virtual void onExit(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

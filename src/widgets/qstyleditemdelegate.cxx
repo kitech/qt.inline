@@ -22,7 +22,7 @@ public:
 MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionViewItem *, const QModelIndex &)
-  virtual void initStyleOption(QStyleOptionViewItem * option, const QModelIndex & index) const{
+  virtual void initStyleOption(QStyleOptionViewItem * option, const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * object, QEvent * event) {
+  virtual bool eventFilter(QObject * object, QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
-  virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
+  virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"editorEvent", &handled, 4, (uint64_t)event, (uint64_t)model, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -22,7 +22,7 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // [-2] void ~QTextObject()
 // Protected Visibility=Default Availability=Available
 // [-2] void setFormat(const QTextFormat &)
-  virtual void setFormat(const QTextFormat & format) {
+  virtual void setFormat(const QTextFormat & format)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFormat", &handled, 1, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+  virtual void mouseMoveEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * arg0) {
+  virtual void mousePressEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * arg0) {
+  virtual void mouseReleaseEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -69,7 +69,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * arg0) {
+  virtual void resizeEvent(QResizeEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -81,7 +81,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -94,7 +94,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected Visibility=Default Availability=Available
 // [-2] void moveSplitter(int)
-  virtual void moveSplitter(int p) {
+  virtual void moveSplitter(int p)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveSplitter", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -106,7 +106,7 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
 
 // Protected Visibility=Default Availability=Available
 // [4] int closestLegalPosition(int)
-  virtual int closestLegalPosition(int p) {
+  virtual int closestLegalPosition(int p)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closestLegalPosition", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

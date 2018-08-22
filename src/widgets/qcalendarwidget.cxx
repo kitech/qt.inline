@@ -22,7 +22,7 @@ public:
 MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * watched, QEvent * event) {
+  virtual bool eventFilter(QObject * watched, QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)watched, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * event) {
+  virtual void mousePressEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * event) {
+  virtual void resizeEvent(QResizeEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -72,7 +72,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * event) {
+  virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -84,7 +84,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintCell(QPainter *, const QRect &, const QDate &)
-  virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) const{
+  virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintCell", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -96,7 +96,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void updateCell(const QDate &)
-  virtual void updateCell(const QDate & date) {
+  virtual void updateCell(const QDate & date)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCell", &handled, 1, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -108,7 +108,7 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void updateCells()
-  virtual void updateCells() {
+  virtual void updateCells()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCells", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

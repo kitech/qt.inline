@@ -24,7 +24,7 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
 MyQSequentialAnimationGroup(QSequentialAnimationGroupPrivate & dd, QObject * parent) : QSequentialAnimationGroup(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQSequentialAnimationGroup(QSequentialAnimationGroupPrivate & dd, QObject * par
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateCurrentTime(int)
-  virtual void updateCurrentTime(int arg0) {
+  virtual void updateCurrentTime(int arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCurrentTime", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQSequentialAnimationGroup(QSequentialAnimationGroupPrivate & dd, QObject * par
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
-  virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
+  virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQSequentialAnimationGroup(QSequentialAnimationGroupPrivate & dd, QObject * par
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateDirection(QAbstractAnimation::Direction)
-  virtual void updateDirection(QAbstractAnimation::Direction direction) {
+  virtual void updateDirection(QAbstractAnimation::Direction direction)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateDirection", &handled, 1, (uint64_t)direction, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

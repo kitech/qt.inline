@@ -21,7 +21,7 @@ public:
 MyQThread(QObject * parent) : QThread(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void run()
-  virtual void run() {
+  virtual void run()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"run", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQThread(QObject * parent) : QThread(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] int exec()
-  virtual int exec() {
+  virtual int exec()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"exec", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQThread(QObject * parent) : QThread(parent) {}
 
 // Protected static Visibility=Default Availability=Available
 // [-2] void setTerminationEnabled(bool)
-  virtual void setTerminationEnabled(bool enabled) {
+  virtual void setTerminationEnabled(bool enabled)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setTerminationEnabled", &handled, 1, (uint64_t)enabled, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

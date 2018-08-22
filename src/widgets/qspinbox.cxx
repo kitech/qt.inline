@@ -21,7 +21,7 @@ public:
 MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] QValidator::State validate(QString &, int &)
-  virtual QValidator::State validate(QString & input, int & pos) const{
+  virtual QValidator::State validate(QString & input, int & pos) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"validate", &handled, 2, (uint64_t)&input, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int valueFromText(const QString &)
-  virtual int valueFromText(const QString & text) const{
+  virtual int valueFromText(const QString & text) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"valueFromText", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QString textFromValue(int)
-  virtual QString textFromValue(int val) const{
+  virtual QString textFromValue(int val) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"textFromValue", &handled, 1, (uint64_t)val, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -74,7 +74,7 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void fixup(QString &)
-  virtual void fixup(QString & str) const{
+  virtual void fixup(QString & str) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"fixup", &handled, 1, (uint64_t)&str, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

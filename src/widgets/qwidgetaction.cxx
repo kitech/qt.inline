@@ -22,7 +22,7 @@ public:
 MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QWidget * createWidget(QWidget *)
-  virtual QWidget * createWidget(QWidget * parent) {
+  virtual QWidget * createWidget(QWidget * parent)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createWidget", &handled, 1, (uint64_t)parent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void deleteWidget(QWidget *)
-  virtual void deleteWidget(QWidget * widget) {
+  virtual void deleteWidget(QWidget * widget)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"deleteWidget", &handled, 1, (uint64_t)widget, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] QList<QWidget *> createdWidgets()
-  virtual QList<QWidget *> createdWidgets() const{
+  virtual QList<QWidget *> createdWidgets() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createdWidgets", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -26,7 +26,7 @@ MyQCommandLinkButton(const QString & text, QWidget * parent) : QCommandLinkButto
 MyQCommandLinkButton(const QString & text, const QString & description, QWidget * parent) : QCommandLinkButton(text, description, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize sizeHint()
-  virtual QSize sizeHint() const{
+  virtual QSize sizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -40,7 +40,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int heightForWidth(int)
-  virtual int heightForWidth(int arg0) const{
+  virtual int heightForWidth(int arg0) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"heightForWidth", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -53,7 +53,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize minimumSizeHint()
-  virtual QSize minimumSizeHint() const{
+  virtual QSize minimumSizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"minimumSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -67,7 +67,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -80,7 +80,7 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

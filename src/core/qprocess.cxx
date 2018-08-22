@@ -21,7 +21,7 @@ public:
 MyQProcess(QObject * parent) : QProcess(parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void setProcessState(QProcess::ProcessState)
-  virtual void setProcessState(QProcess::ProcessState state) {
+  virtual void setProcessState(QProcess::ProcessState state)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setProcessState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setupChildProcess()
-  virtual void setupChildProcess() {
+  virtual void setupChildProcess()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setupChildProcess", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 readData(char *, qint64)
-  virtual qint64 readData(char * data, qint64 maxlen) {
+  virtual qint64 readData(char * data, qint64 maxlen)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -58,7 +58,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 writeData(const char *, qint64)
-  virtual qint64 writeData(const char * data, qint64 len_) {
+  virtual qint64 writeData(const char * data, qint64 len_)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

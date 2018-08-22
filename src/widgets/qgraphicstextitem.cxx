@@ -24,7 +24,7 @@ MyQGraphicsTextItem(QGraphicsItem * parent) : QGraphicsTextItem(parent) {}
 MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTextItem(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool sceneEvent(QEvent *)
-  virtual bool sceneEvent(QEvent * event) {
+  virtual bool sceneEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sceneEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QGraphicsSceneMouseEvent *)
-  virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mousePressEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QGraphicsSceneMouseEvent *)
-  virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
-  virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
-  virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -85,7 +85,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
-  virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
+  virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -97,7 +97,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * event) {
+  virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -109,7 +109,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * event) {
+  virtual void keyReleaseEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -121,7 +121,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * event) {
+  virtual void focusInEvent(QFocusEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * event) {
+  virtual void focusOutEvent(QFocusEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -145,7 +145,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragEnterEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -157,7 +157,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -169,7 +169,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -181,7 +181,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dropEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -193,7 +193,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void inputMethodEvent(QInputMethodEvent *)
-  virtual void inputMethodEvent(QInputMethodEvent * event) {
+  virtual void inputMethodEvent(QInputMethodEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -205,7 +205,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hoverEnterEvent(QGraphicsSceneHoverEvent *)
-  virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
+  virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -217,7 +217,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hoverMoveEvent(QGraphicsSceneHoverEvent *)
-  virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
+  virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -229,7 +229,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
-  virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
+  virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -241,7 +241,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
-  virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) const{
+  virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodQuery", &handled, 1, (uint64_t)query, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -255,7 +255,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool supportsExtension(QGraphicsItem::Extension)
-  virtual bool supportsExtension(QGraphicsItem::Extension extension) const{
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -268,7 +268,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
-  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -280,7 +280,7 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
 
 // Protected virtual Visibility=Default Availability=Available
 // [16] QVariant extension(const QVariant &)
-  virtual QVariant extension(const QVariant & variant) const{
+  virtual QVariant extension(const QVariant & variant) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

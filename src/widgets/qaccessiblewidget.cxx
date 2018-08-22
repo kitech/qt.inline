@@ -22,7 +22,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
 // [-2] void ~QAccessibleWidget()
 // Protected Visibility=Default Availability=Available
 // [8] QWidget * widget()
-  virtual QWidget * widget() const{
+  virtual QWidget * widget() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widget", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
 
 // Protected Visibility=Default Availability=Available
 // [8] QObject * parentObject()
-  virtual QObject * parentObject() const{
+  virtual QObject * parentObject() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"parentObject", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
 
 // Protected Visibility=Default Availability=Available
 // [-2] void addControllingSignal(const QString &)
-  virtual void addControllingSignal(const QString & signal) {
+  virtual void addControllingSignal(const QString & signal)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addControllingSignal", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

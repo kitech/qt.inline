@@ -26,7 +26,7 @@ MyQQuickView(QQmlEngine * engine, QWindow * parent) : QQuickView(engine, parent)
 MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * arg0) {
+  virtual void resizeEvent(QResizeEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -38,7 +38,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * arg0) {
+  virtual void timerEvent(QTimerEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -50,7 +50,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * arg0) {
+  virtual void keyPressEvent(QKeyEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -62,7 +62,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * arg0) {
+  virtual void keyReleaseEvent(QKeyEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -74,7 +74,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * arg0) {
+  virtual void mousePressEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -86,7 +86,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * arg0) {
+  virtual void mouseReleaseEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -98,7 +98,7 @@ MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+  virtual void mouseMoveEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

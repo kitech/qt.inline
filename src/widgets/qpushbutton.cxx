@@ -25,7 +25,7 @@ MyQPushButton(const QString & text, QWidget * parent) : QPushButton(text, parent
 MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPushButton(icon, text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -38,7 +38,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -50,7 +50,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * arg0) {
+  virtual void keyPressEvent(QKeyEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -62,7 +62,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * arg0) {
+  virtual void focusInEvent(QFocusEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -74,7 +74,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * arg0) {
+  virtual void focusOutEvent(QFocusEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -86,7 +86,7 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionButton *)
-  virtual void initStyleOption(QStyleOptionButton * option) const{
+  virtual void initStyleOption(QStyleOptionButton * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

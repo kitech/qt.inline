@@ -23,7 +23,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
 MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * arg0) {
+  virtual void resizeEvent(QResizeEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQScrollArea(QScrollAreaPrivate & dd, QWidget * parent) : QScrollArea(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
-  virtual QSize viewportSizeHint() const{
+  virtual QSize viewportSizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

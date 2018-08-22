@@ -22,7 +22,7 @@ public:
 MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 readData(char *, qint64)
-  virtual qint64 readData(char * arg0, qint64 arg1) {
+  virtual qint64 readData(char * arg0, qint64 arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQLocalSocket(QObject * parent) : QLocalSocket(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 writeData(const char *, qint64)
-  virtual qint64 writeData(const char * arg0, qint64 arg1) {
+  virtual qint64 writeData(const char * arg0, qint64 arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
-  virtual void showEvent(QShowEvent * arg0) {
+  virtual void showEvent(QShowEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * arg0) {
+  virtual void resizeEvent(QResizeEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void reformat()
-  virtual void reformat() {
+  virtual void reformat()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"reformat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -69,7 +69,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void hideOrShow()
-  virtual void hideOrShow() {
+  virtual void hideOrShow()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideOrShow", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -81,7 +81,7 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

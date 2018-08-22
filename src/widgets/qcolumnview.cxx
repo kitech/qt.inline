@@ -24,7 +24,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
 MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool isIndexHidden(const QModelIndex &)
-  virtual bool isIndexHidden(const QModelIndex & index) const{
+  virtual bool isIndexHidden(const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -51,7 +51,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * event) {
+  virtual void resizeEvent(QResizeEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -63,7 +63,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
-  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -75,7 +75,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QRegion visualRegionForSelection(const QItemSelection &)
-  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -89,7 +89,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int horizontalOffset()
-  virtual int horizontalOffset() const{
+  virtual int horizontalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -102,7 +102,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int verticalOffset()
-  virtual int verticalOffset() const{
+  virtual int verticalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -115,7 +115,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -127,7 +127,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
-  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -139,7 +139,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -151,7 +151,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QAbstractItemView * createColumn(const QModelIndex &)
-  virtual QAbstractItemView * createColumn(const QModelIndex & rootIndex) {
+  virtual QAbstractItemView * createColumn(const QModelIndex & rootIndex)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createColumn", &handled, 1, (uint64_t)&rootIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -164,7 +164,7 @@ MyQColumnView(QColumnViewPrivate & dd, QWidget * parent) : QColumnView(dd, paren
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initializeColumn(QAbstractItemView *)
-  virtual void initializeColumn(QAbstractItemView * column) const{
+  virtual void initializeColumn(QAbstractItemView * column) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

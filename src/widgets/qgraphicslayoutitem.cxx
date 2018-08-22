@@ -22,7 +22,7 @@ public:
 MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLayoutItem(parent, isLayout) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void setGraphicsItem(QGraphicsItem *)
-  virtual void setGraphicsItem(QGraphicsItem * item) {
+  virtual void setGraphicsItem(QGraphicsItem * item)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setGraphicsItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setOwnedByLayout(bool)
-  virtual void setOwnedByLayout(bool ownedByLayout) {
+  virtual void setOwnedByLayout(bool ownedByLayout)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwnedByLayout", &handled, 1, (uint64_t)ownedByLayout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
 MyQGraphicsLayoutItem(QGraphicsLayoutItemPrivate & dd) : QGraphicsLayoutItem(dd) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
-  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const{
+  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

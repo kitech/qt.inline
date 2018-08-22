@@ -21,7 +21,7 @@ public:
 MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool isComponentComplete()
-  virtual bool isComponentComplete() const{
+  virtual bool isComponentComplete() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isComponentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
-  virtual void itemChange(QQuickItem::ItemChange arg0, const QQuickItem::ItemChangeData & arg1) {
+  virtual void itemChange(QQuickItem::ItemChange arg0, const QQuickItem::ItemChangeData & arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"itemChange", &handled, 2, (uint64_t)arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void updateInputMethod(Qt::InputMethodQueries)
-  virtual void updateInputMethod(QFlags<Qt::InputMethodQuery> queries) {
+  virtual void updateInputMethod(QFlags<Qt::InputMethodQuery> queries)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateInputMethod", &handled, 1, (uint64_t)queries, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool widthValid()
-  virtual bool widthValid() const{
+  virtual bool widthValid() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widthValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -84,7 +84,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool heightValid()
-  virtual bool heightValid() const{
+  virtual bool heightValid() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"heightValid", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -97,7 +97,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setImplicitSize(qreal, qreal)
-  virtual void setImplicitSize(qreal arg0, qreal arg1) {
+  virtual void setImplicitSize(qreal arg0, qreal arg1)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setImplicitSize", &handled, 2, (uint64_t)&arg0, (uint64_t)&arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -109,7 +109,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void classBegin()
-  virtual void classBegin() {
+  virtual void classBegin()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"classBegin", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -121,7 +121,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void componentComplete()
-  virtual void componentComplete() {
+  virtual void componentComplete()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"componentComplete", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * event) {
+  virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -145,7 +145,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * event) {
+  virtual void keyReleaseEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -157,7 +157,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void inputMethodEvent(QInputMethodEvent *)
-  virtual void inputMethodEvent(QInputMethodEvent * arg0) {
+  virtual void inputMethodEvent(QInputMethodEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -169,7 +169,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * arg0) {
+  virtual void focusInEvent(QFocusEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -181,7 +181,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * arg0) {
+  virtual void focusOutEvent(QFocusEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -193,7 +193,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * event) {
+  virtual void mousePressEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -205,7 +205,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * event) {
+  virtual void mouseMoveEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -217,7 +217,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * event) {
+  virtual void mouseReleaseEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -229,7 +229,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
-  virtual void mouseDoubleClickEvent(QMouseEvent * event) {
+  virtual void mouseDoubleClickEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -241,7 +241,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseUngrabEvent()
-  virtual void mouseUngrabEvent() {
+  virtual void mouseUngrabEvent()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseUngrabEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -253,7 +253,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void touchUngrabEvent()
-  virtual void touchUngrabEvent() {
+  virtual void touchUngrabEvent()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"touchUngrabEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -265,7 +265,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * event) {
+  virtual void wheelEvent(QWheelEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -277,7 +277,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void touchEvent(QTouchEvent *)
-  virtual void touchEvent(QTouchEvent * event) {
+  virtual void touchEvent(QTouchEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"touchEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -289,7 +289,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hoverEnterEvent(QHoverEvent *)
-  virtual void hoverEnterEvent(QHoverEvent * event) {
+  virtual void hoverEnterEvent(QHoverEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -301,7 +301,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hoverMoveEvent(QHoverEvent *)
-  virtual void hoverMoveEvent(QHoverEvent * event) {
+  virtual void hoverMoveEvent(QHoverEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -313,7 +313,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hoverLeaveEvent(QHoverEvent *)
-  virtual void hoverLeaveEvent(QHoverEvent * event) {
+  virtual void hoverLeaveEvent(QHoverEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -325,7 +325,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragEnterEvent(QDragEnterEvent *)
-  virtual void dragEnterEvent(QDragEnterEvent * arg0) {
+  virtual void dragEnterEvent(QDragEnterEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -337,7 +337,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QDragMoveEvent *)
-  virtual void dragMoveEvent(QDragMoveEvent * arg0) {
+  virtual void dragMoveEvent(QDragMoveEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -349,7 +349,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragLeaveEvent(QDragLeaveEvent *)
-  virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
+  virtual void dragLeaveEvent(QDragLeaveEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -361,7 +361,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QDropEvent *)
-  virtual void dropEvent(QDropEvent * arg0) {
+  virtual void dropEvent(QDropEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -373,7 +373,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool childMouseEventFilter(QQuickItem *, QEvent *)
-  virtual bool childMouseEventFilter(QQuickItem * arg0, QEvent * arg1) {
+  virtual bool childMouseEventFilter(QQuickItem * arg0, QEvent * arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childMouseEventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -386,7 +386,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void windowDeactivateEvent()
-  virtual void windowDeactivateEvent() {
+  virtual void windowDeactivateEvent()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"windowDeactivateEvent", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -398,7 +398,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void geometryChanged(const QRectF &, const QRectF &)
-  virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry) {
+  virtual void geometryChanged(const QRectF & newGeometry, const QRectF & oldGeometry)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"geometryChanged", &handled, 2, (uint64_t)&newGeometry, (uint64_t)&oldGeometry, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -410,7 +410,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
-  virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1) {
+  virtual QSGNode * updatePaintNode(QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updatePaintNode", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -423,7 +423,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void releaseResources()
-  virtual void releaseResources() {
+  virtual void releaseResources()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"releaseResources", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -435,7 +435,7 @@ MyQQuickItem(QQuickItem * parent) : QQuickItem(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updatePolish()
-  virtual void updatePolish() {
+  virtual void updatePolish()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updatePolish", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

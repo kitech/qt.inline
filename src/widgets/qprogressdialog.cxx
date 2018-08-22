@@ -23,7 +23,7 @@ MyQProgressDialog(QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDia
 MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * event) {
+  virtual void resizeEvent(QResizeEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void closeEvent(QCloseEvent *)
-  virtual void closeEvent(QCloseEvent * event) {
+  virtual void closeEvent(QCloseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * event) {
+  virtual void changeEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
-  virtual void showEvent(QShowEvent * event) {
+  virtual void showEvent(QShowEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
 
 // Protected Visibility=Default Availability=Available
 // [-2] void forceShow()
-  virtual void forceShow() {
+  virtual void forceShow()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"forceShow", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

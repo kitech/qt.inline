@@ -26,7 +26,7 @@ MyQGraphicsEllipseItem(const QRectF & rect, QGraphicsItem * parent) : QGraphicsE
 MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) : QGraphicsEllipseItem(x, y, w, h, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool supportsExtension(QGraphicsItem::Extension)
-  virtual bool supportsExtension(QGraphicsItem::Extension extension) const{
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -39,7 +39,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
-  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -51,7 +51,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
 
 // Protected virtual Visibility=Default Availability=Available
 // [16] QVariant extension(const QVariant &)
-  virtual QVariant extension(const QVariant & variant) const{
+  virtual QVariant extension(const QVariant & variant) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

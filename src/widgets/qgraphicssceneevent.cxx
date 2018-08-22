@@ -24,7 +24,7 @@ MyQGraphicsSceneEvent(QEvent::Type type_) : QGraphicsSceneEvent(type_) {}
 MyQGraphicsSceneEvent(QGraphicsSceneEventPrivate & dd, QEvent::Type type_) : QGraphicsSceneEvent(dd, type_) {}
 // Protected inline Visibility=Default Availability=Available
 // [8] QGraphicsSceneEventPrivate * d_func()
-  virtual QGraphicsSceneEventPrivate * d_func() {
+  virtual QGraphicsSceneEventPrivate * d_func()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQGraphicsSceneEvent(QGraphicsSceneEventPrivate & dd, QEvent::Type type_) : QGr
 
 // Protected inline Visibility=Default Availability=Available
 // [8] const QGraphicsSceneEventPrivate * d_func()
-  virtual const QGraphicsSceneEventPrivate * d_func() const{
+  virtual const QGraphicsSceneEventPrivate * d_func() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"d_func", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

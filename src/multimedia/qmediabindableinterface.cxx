@@ -19,7 +19,7 @@ public:
   virtual ~MyQMediaBindableInterface() {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [1] bool setMediaObject(QMediaObject *)
-  virtual bool setMediaObject(QMediaObject * object) {
+  virtual bool setMediaObject(QMediaObject * object)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMediaObject", &handled, 1, (uint64_t)object, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

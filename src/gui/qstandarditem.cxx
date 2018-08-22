@@ -32,7 +32,7 @@ MyQStandardItem(const QStandardItem & other) : QStandardItem(other) {}
 MyQStandardItem(QStandardItemPrivate & dd) : QStandardItem(dd) {}
 // Protected Visibility=Default Availability=Available
 // [16] QStandardItem & operator=(const QStandardItem &)
-  virtual QStandardItem & operator=(const QStandardItem & other) {
+  virtual QStandardItem & operator=(const QStandardItem & other)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"operator=", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQStandardItem(QStandardItemPrivate & dd) : QStandardItem(dd) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void emitDataChanged()
-  virtual void emitDataChanged() {
+  virtual void emitDataChanged()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

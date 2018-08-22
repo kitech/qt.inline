@@ -21,7 +21,7 @@ public:
 MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * arg0) {
+  virtual void mousePressEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * arg0) {
+  virtual void mouseReleaseEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -58,7 +58,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -70,7 +70,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void actionEvent(QActionEvent *)
-  virtual void actionEvent(QActionEvent * arg0) {
+  virtual void actionEvent(QActionEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"actionEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -82,7 +82,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void enterEvent(QEvent *)
-  virtual void enterEvent(QEvent * arg0) {
+  virtual void enterEvent(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -94,7 +94,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void leaveEvent(QEvent *)
-  virtual void leaveEvent(QEvent * arg0) {
+  virtual void leaveEvent(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -106,7 +106,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * arg0) {
+  virtual void timerEvent(QTimerEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -118,7 +118,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * arg0) {
+  virtual void changeEvent(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -130,7 +130,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool hitButton(const QPoint &)
-  virtual bool hitButton(const QPoint & pos) const{
+  virtual bool hitButton(const QPoint & pos) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hitButton", &handled, 1, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -143,7 +143,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void nextCheckState()
-  virtual void nextCheckState() {
+  virtual void nextCheckState()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nextCheckState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -155,7 +155,7 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionToolButton *)
-  virtual void initStyleOption(QStyleOptionToolButton * option) const{
+  virtual void initStyleOption(QStyleOptionToolButton * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

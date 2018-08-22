@@ -23,7 +23,7 @@ MyQLayout(QWidget * parent) : QLayout(parent) {}
 MyQLayout() : QLayout() {}
 // Protected Visibility=Default Availability=Available
 // [-2] void widgetEvent(QEvent *)
-  virtual void widgetEvent(QEvent * arg0) {
+  virtual void widgetEvent(QEvent * arg0)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"widgetEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQLayout() : QLayout() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void childEvent(QChildEvent *)
-  virtual void childEvent(QChildEvent * e) {
+  virtual void childEvent(QChildEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQLayout() : QLayout() {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void addChildLayout(QLayout *)
-  virtual void addChildLayout(QLayout * l) {
+  virtual void addChildLayout(QLayout * l)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildLayout", &handled, 1, (uint64_t)l, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQLayout() : QLayout() {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void addChildWidget(QWidget *)
-  virtual void addChildWidget(QWidget * w) {
+  virtual void addChildWidget(QWidget * w)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildWidget", &handled, 1, (uint64_t)w, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQLayout() : QLayout() {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool adoptLayout(QLayout *)
-  virtual bool adoptLayout(QLayout * layout) {
+  virtual bool adoptLayout(QLayout * layout)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"adoptLayout", &handled, 1, (uint64_t)layout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -84,7 +84,7 @@ MyQLayout() : QLayout() {}
 
 // Protected Visibility=Default Availability=Available
 // [16] QRect alignmentRect(const QRect &)
-  virtual QRect alignmentRect(const QRect & arg0) const{
+  virtual QRect alignmentRect(const QRect & arg0) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orientation, parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void updateSection(int)
-  virtual void updateSection(int logicalIndex) {
+  virtual void updateSection(int logicalIndex)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateSection", &handled, 1, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
 
 // Protected Visibility=Default Availability=Available
 // [-2] void resizeSections()
-  virtual void resizeSections() {
+  virtual void resizeSections()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeSections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
 
 // Protected Visibility=Default Availability=Available
 // [-2] void sectionsInserted(const QModelIndex &, int, int)
-  virtual void sectionsInserted(const QModelIndex & parent, int logicalFirst, int logicalLast) {
+  virtual void sectionsInserted(const QModelIndex & parent, int logicalFirst, int logicalLast)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sectionsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
 
 // Protected Visibility=Default Availability=Available
 // [-2] void sectionsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void sectionsAboutToBeRemoved(const QModelIndex & parent, int logicalFirst, int logicalLast) {
+  virtual void sectionsAboutToBeRemoved(const QModelIndex & parent, int logicalFirst, int logicalLast)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sectionsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
 MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * parent) : QHeaderView(dd, orientation, parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void initialize()
-  virtual void initialize() {
+  virtual void initialize()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -83,7 +83,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initializeSections()
-  virtual void initializeSections() {
+  virtual void initializeSections()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeSections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initializeSections(int, int)
-  virtual void initializeSections(int start, int end) {
+  virtual void initializeSections(int start, int end)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeSections", &handled, 2, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -107,7 +107,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
-  virtual void currentChanged(const QModelIndex & current, const QModelIndex & old) {
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & old)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&old, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -119,7 +119,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -132,7 +132,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -144,7 +144,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * e) {
+  virtual void mousePressEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -156,7 +156,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * e) {
+  virtual void mouseMoveEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -168,7 +168,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * e) {
+  virtual void mouseReleaseEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -180,7 +180,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
-  virtual void mouseDoubleClickEvent(QMouseEvent * e) {
+  virtual void mouseDoubleClickEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -192,7 +192,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool viewportEvent(QEvent *)
-  virtual bool viewportEvent(QEvent * e) {
+  virtual bool viewportEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -205,7 +205,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintSection(QPainter *, const QRect &, int)
-  virtual void paintSection(QPainter * painter, const QRect & rect, int logicalIndex) const{
+  virtual void paintSection(QPainter * painter, const QRect & rect, int logicalIndex) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintSection", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -217,7 +217,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize sectionSizeFromContents(int)
-  virtual QSize sectionSizeFromContents(int logicalIndex) const{
+  virtual QSize sectionSizeFromContents(int logicalIndex) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sectionSizeFromContents", &handled, 1, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -231,7 +231,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int horizontalOffset()
-  virtual int horizontalOffset() const{
+  virtual int horizontalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -244,7 +244,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int verticalOffset()
-  virtual int verticalOffset() const{
+  virtual int verticalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -257,7 +257,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateGeometries()
-  virtual void updateGeometries() {
+  virtual void updateGeometries()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -269,7 +269,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -281,7 +281,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
-  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
+  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -293,7 +293,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -305,7 +305,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [16] QRect visualRect(const QModelIndex &)
-  virtual QRect visualRect(const QModelIndex & index) const{
+  virtual QRect visualRect(const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRect", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -319,7 +319,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollTo(const QModelIndex &, QAbstractItemView::ScrollHint)
-  virtual void scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint) {
+  virtual void scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollTo", &handled, 2, (uint64_t)&index, (uint64_t)hint, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -331,7 +331,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [24] QModelIndex indexAt(const QPoint &)
-  virtual QModelIndex indexAt(const QPoint & p) const{
+  virtual QModelIndex indexAt(const QPoint & p) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexAt", &handled, 1, (uint64_t)&p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -345,7 +345,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool isIndexHidden(const QModelIndex &)
-  virtual bool isIndexHidden(const QModelIndex & index) const{
+  virtual bool isIndexHidden(const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -358,7 +358,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction arg0, QFlags<Qt::KeyboardModifier> arg1) {
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction arg0, QFlags<Qt::KeyboardModifier> arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -372,7 +372,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
-  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> flags) {
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> flags)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -384,7 +384,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QRegion visualRegionForSelection(const QItemSelection &)
-  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -398,7 +398,7 @@ MyQHeaderView(QHeaderViewPrivate & dd, Qt::Orientation orientation, QWidget * pa
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionHeader *)
-  virtual void initStyleOption(QStyleOptionHeader * option) const{
+  virtual void initStyleOption(QStyleOptionHeader * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

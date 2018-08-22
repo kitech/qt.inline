@@ -23,7 +23,7 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
 MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDocument * arg1) : QAbstractTextDocumentLayout(arg0, arg1) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [-2] void documentChanged(int, int, int)
-  virtual void documentChanged(int from, int charsRemoved, int charsAdded) {
+  virtual void documentChanged(int from, int charsRemoved, int charsAdded)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"documentChanged", &handled, 3, (uint64_t)from, (uint64_t)charsRemoved, (uint64_t)charsAdded, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeInlineObject(QTextInlineObject, int, const QTextFormat &)
-  virtual void resizeInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
+  virtual void resizeInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void positionInlineObject(QTextInlineObject, int, const QTextFormat &)
-  virtual void positionInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
+  virtual void positionInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"positionInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawInlineObject(QPainter *, const QRectF &, QTextInlineObject, int, const QTextFormat &)
-  virtual void drawInlineObject(QPainter * painter, const QRectF & rect, QTextInlineObject object, int posInDocument, const QTextFormat & format) {
+  virtual void drawInlineObject(QPainter * painter, const QRectF & rect, QTextInlineObject object, int posInDocument, const QTextFormat & format)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawInlineObject", &handled, 5, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&object, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
 
 // Protected Visibility=Default Availability=Available
 // [4] int formatIndex(int)
-  virtual int formatIndex(int pos) {
+  virtual int formatIndex(int pos)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"formatIndex", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -84,7 +84,7 @@ MyQAbstractTextDocumentLayout(QAbstractTextDocumentLayoutPrivate & arg0, QTextDo
 
 // Protected Visibility=Default Availability=Available
 // [16] QTextCharFormat format(int)
-  virtual QTextCharFormat format(int pos) {
+  virtual QTextCharFormat format(int pos)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * e) {
+  virtual void focusInEvent(QFocusEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * e) {
+  virtual void focusOutEvent(QFocusEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * e) {
+  virtual void changeEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * e) {
+  virtual void resizeEvent(QResizeEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -69,7 +69,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -81,7 +81,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
-  virtual void showEvent(QShowEvent * e) {
+  virtual void showEvent(QShowEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -93,7 +93,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void hideEvent(QHideEvent *)
-  virtual void hideEvent(QHideEvent * e) {
+  virtual void hideEvent(QHideEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hideEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -105,7 +105,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * e) {
+  virtual void mousePressEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -117,7 +117,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * e) {
+  virtual void mouseReleaseEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -129,7 +129,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * e) {
+  virtual void keyPressEvent(QKeyEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -141,7 +141,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * e) {
+  virtual void keyReleaseEvent(QKeyEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -153,7 +153,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * e) {
+  virtual void wheelEvent(QWheelEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -165,7 +165,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QContextMenuEvent *)
-  virtual void contextMenuEvent(QContextMenuEvent * e) {
+  virtual void contextMenuEvent(QContextMenuEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -177,7 +177,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void inputMethodEvent(QInputMethodEvent *)
-  virtual void inputMethodEvent(QInputMethodEvent * arg0) {
+  virtual void inputMethodEvent(QInputMethodEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -189,7 +189,7 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionComboBox *)
-  virtual void initStyleOption(QStyleOptionComboBox * option) const{
+  virtual void initStyleOption(QStyleOptionComboBox * option) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

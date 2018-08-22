@@ -214,3 +214,6 @@ set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
 include(PrecompiledHeader)
 add_precompiled_header(Qt5Inline preheaders/qthdrsrc.h FORCEINCLUDE)
 
+add_executable(lnktst tests/lnktst.c)
+target_link_libraries(lnktst Qt5Inline)
+

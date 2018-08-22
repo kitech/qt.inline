@@ -23,7 +23,7 @@ MyQTextDocument(QObject * parent) : QTextDocument(parent) {}
 MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] QTextObject * createObject(const QTextFormat &)
-  virtual QTextObject * createObject(const QTextFormat & f) {
+  virtual QTextObject * createObject(const QTextFormat & f)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createObject", &handled, 1, (uint64_t)&f, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
 
 // Protected virtual Visibility=Default Availability=Available
 // [16] QVariant loadResource(int, const QUrl &)
-  virtual QVariant loadResource(int type_, const QUrl & name) {
+  virtual QVariant loadResource(int type_, const QUrl & name)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"loadResource", &handled, 2, (uint64_t)type_, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -26,7 +26,7 @@ MyQCompleter(QAbstractItemModel * model, QObject * parent) : QCompleter(model, p
 MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(completions, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * o, QEvent * e) {
+  virtual bool eventFilter(QObject * o, QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)o, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -39,7 +39,7 @@ MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(com
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

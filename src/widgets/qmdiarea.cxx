@@ -22,7 +22,7 @@ public:
 MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setupViewport(QWidget *)
-  virtual void setupViewport(QWidget * viewport) {
+  virtual void setupViewport(QWidget * viewport)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setupViewport", &handled, 1, (uint64_t)viewport, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * object, QEvent * event) {
+  virtual bool eventFilter(QObject * object, QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * paintEvent) {
+  virtual void paintEvent(QPaintEvent * paintEvent)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)paintEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -72,7 +72,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void childEvent(QChildEvent *)
-  virtual void childEvent(QChildEvent * childEvent) {
+  virtual void childEvent(QChildEvent * childEvent)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childEvent", &handled, 1, (uint64_t)childEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -84,7 +84,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * resizeEvent) {
+  virtual void resizeEvent(QResizeEvent * resizeEvent)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)resizeEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -96,7 +96,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * timerEvent) {
+  virtual void timerEvent(QTimerEvent * timerEvent)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)timerEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -108,7 +108,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
-  virtual void showEvent(QShowEvent * showEvent) {
+  virtual void showEvent(QShowEvent * showEvent)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)showEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -120,7 +120,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool viewportEvent(QEvent *)
-  virtual bool viewportEvent(QEvent * event) {
+  virtual bool viewportEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

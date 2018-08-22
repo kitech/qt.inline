@@ -22,7 +22,7 @@ public:
 MyQGraphicsBlurEffect(QObject * parent) : QGraphicsBlurEffect(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void draw(QPainter *)
-  virtual void draw(QPainter * painter) {
+  virtual void draw(QPainter * painter)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

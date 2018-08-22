@@ -22,7 +22,7 @@ public:
 MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, argv, arg2) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, arg
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool compressEvent(QEvent *, QObject *, QPostEventList *)
-  virtual bool compressEvent(QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
+  virtual bool compressEvent(QEvent * arg0, QObject * receiver, QPostEventList * arg2)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compressEvent", &handled, 3, (uint64_t)arg0, (uint64_t)receiver, (uint64_t)arg2, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

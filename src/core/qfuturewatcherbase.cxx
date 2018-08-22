@@ -21,7 +21,7 @@ public:
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void connectNotify(const QMetaMethod &)
-  virtual void connectNotify(const QMetaMethod & signal) {
+  virtual void connectNotify(const QMetaMethod & signal)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void disconnectNotify(const QMetaMethod &)
-  virtual void disconnectNotify(const QMetaMethod & signal) {
+  virtual void disconnectNotify(const QMetaMethod & signal)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void connectOutputInterface()
-  virtual void connectOutputInterface() {
+  virtual void connectOutputInterface()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectOutputInterface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void disconnectOutputInterface(bool)
-  virtual void disconnectOutputInterface(bool pendingAssignment) {
+  virtual void disconnectOutputInterface(bool pendingAssignment)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectOutputInterface", &handled, 1, (uint64_t)pendingAssignment, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

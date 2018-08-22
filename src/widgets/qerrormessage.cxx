@@ -21,7 +21,7 @@ public:
 MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void done(int)
-  virtual void done(int arg0) {
+  virtual void done(int arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"done", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * e) {
+  virtual void changeEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

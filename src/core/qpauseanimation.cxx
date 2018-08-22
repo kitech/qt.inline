@@ -24,7 +24,7 @@ MyQPauseAnimation(QObject * parent) : QPauseAnimation(parent) {}
 MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateCurrentTime(int)
-  virtual void updateCurrentTime(int arg0) {
+  virtual void updateCurrentTime(int arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateCurrentTime", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

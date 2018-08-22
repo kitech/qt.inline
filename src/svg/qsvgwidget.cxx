@@ -24,7 +24,7 @@ MyQSvgWidget(QWidget * parent) : QSvgWidget(parent) {}
 MyQSvgWidget(const QString & file, QWidget * parent) : QSvgWidget(file, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * event) {
+  virtual void paintEvent(QPaintEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

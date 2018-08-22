@@ -26,7 +26,7 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
 MyQKeySequenceEdit(QKeySequenceEditPrivate & d, QWidget * parent, QFlags<Qt::WindowType> f) : QKeySequenceEdit(d, parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -39,7 +39,7 @@ MyQKeySequenceEdit(QKeySequenceEditPrivate & d, QWidget * parent, QFlags<Qt::Win
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * arg0) {
+  virtual void keyPressEvent(QKeyEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -51,7 +51,7 @@ MyQKeySequenceEdit(QKeySequenceEditPrivate & d, QWidget * parent, QFlags<Qt::Win
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * arg0) {
+  virtual void keyReleaseEvent(QKeyEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -63,7 +63,7 @@ MyQKeySequenceEdit(QKeySequenceEditPrivate & d, QWidget * parent, QFlags<Qt::Win
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * arg0) {
+  virtual void timerEvent(QTimerEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -22,7 +22,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // [-2] void ~QTextBlockGroup()
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void blockInserted(const QTextBlock &)
-  virtual void blockInserted(const QTextBlock & block) {
+  virtual void blockInserted(const QTextBlock & block)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockInserted", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void blockRemoved(const QTextBlock &)
-  virtual void blockRemoved(const QTextBlock & block) {
+  virtual void blockRemoved(const QTextBlock & block)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockRemoved", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void blockFormatChanged(const QTextBlock &)
-  virtual void blockFormatChanged(const QTextBlock & block) {
+  virtual void blockFormatChanged(const QTextBlock & block)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockFormatChanged", &handled, 1, (uint64_t)&block, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -58,7 +58,7 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] QList<QTextBlock> blockList()
-  virtual QList<QTextBlock> blockList() const{
+  virtual QList<QTextBlock> blockList() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"blockList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

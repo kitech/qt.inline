@@ -24,7 +24,7 @@ MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
 MyQFileSystemModel(QFileSystemModelPrivate & arg0, QObject * parent) : QFileSystemModel(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * event) {
+  virtual void timerEvent(QTimerEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQFileSystemModel(QFileSystemModelPrivate & arg0, QObject * parent) : QFileSyst
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

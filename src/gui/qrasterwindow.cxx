@@ -22,7 +22,7 @@ public:
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QPaintDevice * redirected(QPoint *)
-  virtual QPaintDevice * redirected(QPoint * arg0) const{
+  virtual QPaintDevice * redirected(QPoint * arg0) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

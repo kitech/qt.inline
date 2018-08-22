@@ -25,7 +25,7 @@ MyQPicture(const QPicture & arg0) : QPicture(arg0) {}
 MyQPicture(QPicturePrivate & data) : QPicture(data) {}
 // Protected virtual Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric m) const{
+  virtual int metric(QPaintDevice::PaintDeviceMetric m) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)m, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

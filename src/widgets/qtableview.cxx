@@ -21,7 +21,7 @@ public:
 MyQTableView(QWidget * parent) : QTableView(parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void rowMoved(int, int, int)
-  virtual void rowMoved(int row, int oldIndex, int newIndex) {
+  virtual void rowMoved(int row, int oldIndex, int newIndex)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowMoved", &handled, 3, (uint64_t)row, (uint64_t)oldIndex, (uint64_t)newIndex, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void columnMoved(int, int, int)
-  virtual void columnMoved(int column, int oldIndex, int newIndex) {
+  virtual void columnMoved(int column, int oldIndex, int newIndex)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnMoved", &handled, 3, (uint64_t)column, (uint64_t)oldIndex, (uint64_t)newIndex, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void rowResized(int, int, int)
-  virtual void rowResized(int row, int oldHeight, int newHeight) {
+  virtual void rowResized(int row, int oldHeight, int newHeight)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowResized", &handled, 3, (uint64_t)row, (uint64_t)oldHeight, (uint64_t)newHeight, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void columnResized(int, int, int)
-  virtual void columnResized(int column, int oldWidth, int newWidth) {
+  virtual void columnResized(int column, int oldWidth, int newWidth)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnResized", &handled, 3, (uint64_t)column, (uint64_t)oldWidth, (uint64_t)newWidth, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -69,7 +69,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void rowCountChanged(int, int)
-  virtual void rowCountChanged(int oldCount, int newCount) {
+  virtual void rowCountChanged(int oldCount, int newCount)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -81,7 +81,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void columnCountChanged(int, int)
-  virtual void columnCountChanged(int oldCount, int newCount) {
+  virtual void columnCountChanged(int oldCount, int newCount)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
 MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -107,7 +107,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [192] QStyleOptionViewItem viewOptions()
-  virtual QStyleOptionViewItem viewOptions() const{
+  virtual QStyleOptionViewItem viewOptions() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewOptions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -121,7 +121,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * event) {
+  virtual void timerEvent(QTimerEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -145,7 +145,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int horizontalOffset()
-  virtual int horizontalOffset() const{
+  virtual int horizontalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -158,7 +158,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int verticalOffset()
-  virtual int verticalOffset() const{
+  virtual int verticalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -171,7 +171,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -185,7 +185,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
-  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -197,7 +197,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QRegion visualRegionForSelection(const QItemSelection &)
-  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -211,7 +211,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QModelIndexList selectedIndexes()
-  virtual QModelIndexList selectedIndexes() const{
+  virtual QModelIndexList selectedIndexes() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -224,7 +224,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateGeometries()
-  virtual void updateGeometries() {
+  virtual void updateGeometries()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -236,7 +236,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
-  virtual QSize viewportSizeHint() const{
+  virtual QSize viewportSizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -250,7 +250,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int sizeHintForRow(int)
-  virtual int sizeHintForRow(int row) const{
+  virtual int sizeHintForRow(int row) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHintForRow", &handled, 1, (uint64_t)row, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -263,7 +263,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int sizeHintForColumn(int)
-  virtual int sizeHintForColumn(int column) const{
+  virtual int sizeHintForColumn(int column) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHintForColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -276,7 +276,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void verticalScrollbarAction(int)
-  virtual void verticalScrollbarAction(int action) {
+  virtual void verticalScrollbarAction(int action)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalScrollbarAction", &handled, 1, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -288,7 +288,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void horizontalScrollbarAction(int)
-  virtual void horizontalScrollbarAction(int action) {
+  virtual void horizontalScrollbarAction(int action)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalScrollbarAction", &handled, 1, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -300,7 +300,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool isIndexHidden(const QModelIndex &)
-  virtual bool isIndexHidden(const QModelIndex & index) const{
+  virtual bool isIndexHidden(const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -313,7 +313,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
-  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
+  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -325,7 +325,7 @@ MyQTableView(QTableViewPrivate & arg0, QWidget * parent) : QTableView(arg0, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
-  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

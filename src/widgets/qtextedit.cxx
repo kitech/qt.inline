@@ -23,7 +23,7 @@ MyQTextEdit(QWidget * parent) : QTextEdit(parent) {}
 MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * e) {
+  virtual void timerEvent(QTimerEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * e) {
+  virtual void keyPressEvent(QKeyEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * e) {
+  virtual void keyReleaseEvent(QKeyEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -72,7 +72,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * e) {
+  virtual void resizeEvent(QResizeEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -84,7 +84,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -96,7 +96,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * e) {
+  virtual void mousePressEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -108,7 +108,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * e) {
+  virtual void mouseMoveEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -120,7 +120,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * e) {
+  virtual void mouseReleaseEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -132,7 +132,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
-  virtual void mouseDoubleClickEvent(QMouseEvent * e) {
+  virtual void mouseDoubleClickEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -144,7 +144,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool focusNextPrevChild(bool)
-  virtual bool focusNextPrevChild(bool next) {
+  virtual bool focusNextPrevChild(bool next)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -157,7 +157,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QContextMenuEvent *)
-  virtual void contextMenuEvent(QContextMenuEvent * e) {
+  virtual void contextMenuEvent(QContextMenuEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -169,7 +169,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragEnterEvent(QDragEnterEvent *)
-  virtual void dragEnterEvent(QDragEnterEvent * e) {
+  virtual void dragEnterEvent(QDragEnterEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -181,7 +181,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragLeaveEvent(QDragLeaveEvent *)
-  virtual void dragLeaveEvent(QDragLeaveEvent * e) {
+  virtual void dragLeaveEvent(QDragLeaveEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -193,7 +193,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QDragMoveEvent *)
-  virtual void dragMoveEvent(QDragMoveEvent * e) {
+  virtual void dragMoveEvent(QDragMoveEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -205,7 +205,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QDropEvent *)
-  virtual void dropEvent(QDropEvent * e) {
+  virtual void dropEvent(QDropEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -217,7 +217,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * e) {
+  virtual void focusInEvent(QFocusEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -229,7 +229,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * e) {
+  virtual void focusOutEvent(QFocusEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -241,7 +241,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
-  virtual void showEvent(QShowEvent * arg0) {
+  virtual void showEvent(QShowEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -253,7 +253,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * e) {
+  virtual void changeEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -265,7 +265,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * e) {
+  virtual void wheelEvent(QWheelEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -277,7 +277,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QMimeData * createMimeDataFromSelection()
-  virtual QMimeData * createMimeDataFromSelection() const{
+  virtual QMimeData * createMimeDataFromSelection() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createMimeDataFromSelection", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -290,7 +290,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool canInsertFromMimeData(const QMimeData *)
-  virtual bool canInsertFromMimeData(const QMimeData * source) const{
+  virtual bool canInsertFromMimeData(const QMimeData * source) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"canInsertFromMimeData", &handled, 1, (uint64_t)source, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -303,7 +303,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void insertFromMimeData(const QMimeData *)
-  virtual void insertFromMimeData(const QMimeData * source) {
+  virtual void insertFromMimeData(const QMimeData * source)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"insertFromMimeData", &handled, 1, (uint64_t)source, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -315,7 +315,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void inputMethodEvent(QInputMethodEvent *)
-  virtual void inputMethodEvent(QInputMethodEvent * arg0) {
+  virtual void inputMethodEvent(QInputMethodEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -329,7 +329,7 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 MyQTextEdit(QTextEditPrivate & dd, QWidget * parent) : QTextEdit(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -341,7 +341,7 @@ MyQTextEdit(QTextEditPrivate & dd, QWidget * parent) : QTextEdit(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void doSetTextCursor(const QTextCursor &)
-  virtual void doSetTextCursor(const QTextCursor & cursor) {
+  virtual void doSetTextCursor(const QTextCursor & cursor)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"doSetTextCursor", &handled, 1, (uint64_t)&cursor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -353,7 +353,7 @@ MyQTextEdit(QTextEditPrivate & dd, QWidget * parent) : QTextEdit(dd, parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void zoomInF(float)
-  virtual void zoomInF(float range_) {
+  virtual void zoomInF(float range_)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"zoomInF", &handled, 1, (uint64_t)&range_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

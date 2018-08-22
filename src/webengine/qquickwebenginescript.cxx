@@ -22,7 +22,7 @@ public:
 MyQQuickWebEngineScript(QObject * parent) : QQuickWebEngineScript(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * e) {
+  virtual void timerEvent(QTimerEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

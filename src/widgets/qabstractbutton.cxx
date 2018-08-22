@@ -21,7 +21,7 @@ public:
 MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool hitButton(const QPoint &)
-  virtual bool hitButton(const QPoint & pos) const{
+  virtual bool hitButton(const QPoint & pos) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hitButton", &handled, 1, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void checkStateSet()
-  virtual void checkStateSet() {
+  virtual void checkStateSet()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"checkStateSet", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -58,7 +58,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void nextCheckState()
-  virtual void nextCheckState() {
+  virtual void nextCheckState()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"nextCheckState", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -70,7 +70,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -83,7 +83,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * e) {
+  virtual void keyPressEvent(QKeyEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * e) {
+  virtual void keyReleaseEvent(QKeyEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -107,7 +107,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * e) {
+  virtual void mousePressEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -119,7 +119,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * e) {
+  virtual void mouseReleaseEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -131,7 +131,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * e) {
+  virtual void mouseMoveEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -143,7 +143,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * e) {
+  virtual void focusInEvent(QFocusEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -155,7 +155,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * e) {
+  virtual void focusOutEvent(QFocusEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -167,7 +167,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * e) {
+  virtual void changeEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -179,7 +179,7 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * e) {
+  virtual void timerEvent(QTimerEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

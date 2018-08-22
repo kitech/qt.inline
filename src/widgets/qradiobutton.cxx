@@ -23,7 +23,7 @@ MyQRadioButton(QWidget * parent) : QRadioButton(parent) {}
 MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool hitButton(const QPoint &)
-  virtual bool hitButton(const QPoint & arg0) const{
+  virtual bool hitButton(const QPoint & arg0) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"hitButton", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+  virtual void mouseMoveEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, pare
 
 // Protected Visibility=Default Availability=Available
 // [-2] void initStyleOption(QStyleOptionButton *)
-  virtual void initStyleOption(QStyleOptionButton * button) const{
+  virtual void initStyleOption(QStyleOptionButton * button) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initStyleOption", &handled, 1, (uint64_t)button, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

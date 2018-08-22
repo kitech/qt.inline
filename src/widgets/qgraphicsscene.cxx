@@ -26,7 +26,7 @@ MyQGraphicsScene(const QRectF & sceneRect, QObject * parent) : QGraphicsScene(sc
 MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) : QGraphicsScene(x, y, width, height, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * event) {
+  virtual bool event(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -39,7 +39,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * watched, QEvent * event) {
+  virtual bool eventFilter(QObject * watched, QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)watched, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -52,7 +52,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
-  virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
+  virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -64,7 +64,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragEnterEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -76,7 +76,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -88,7 +88,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -100,7 +100,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QGraphicsSceneDragDropEvent *)
-  virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
+  virtual void dropEvent(QGraphicsSceneDragDropEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -112,7 +112,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusInEvent(QFocusEvent *)
-  virtual void focusInEvent(QFocusEvent * event) {
+  virtual void focusInEvent(QFocusEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -124,7 +124,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void focusOutEvent(QFocusEvent *)
-  virtual void focusOutEvent(QFocusEvent * event) {
+  virtual void focusOutEvent(QFocusEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -136,7 +136,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void helpEvent(QGraphicsSceneHelpEvent *)
-  virtual void helpEvent(QGraphicsSceneHelpEvent * event) {
+  virtual void helpEvent(QGraphicsSceneHelpEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"helpEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -148,7 +148,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * event) {
+  virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -160,7 +160,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyReleaseEvent(QKeyEvent *)
-  virtual void keyReleaseEvent(QKeyEvent * event) {
+  virtual void keyReleaseEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -172,7 +172,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QGraphicsSceneMouseEvent *)
-  virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mousePressEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -184,7 +184,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QGraphicsSceneMouseEvent *)
-  virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -196,7 +196,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
-  virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -208,7 +208,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
-  virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
+  virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -220,7 +220,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QGraphicsSceneWheelEvent *)
-  virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
+  virtual void wheelEvent(QGraphicsSceneWheelEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -232,7 +232,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void inputMethodEvent(QInputMethodEvent *)
-  virtual void inputMethodEvent(QInputMethodEvent * event) {
+  virtual void inputMethodEvent(QInputMethodEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -244,7 +244,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawBackground(QPainter *, const QRectF &)
-  virtual void drawBackground(QPainter * painter, const QRectF & rect) {
+  virtual void drawBackground(QPainter * painter, const QRectF & rect)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawBackground", &handled, 2, (uint64_t)painter, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -256,7 +256,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawForeground(QPainter *, const QRectF &)
-  virtual void drawForeground(QPainter * painter, const QRectF & rect) {
+  virtual void drawForeground(QPainter * painter, const QRectF & rect)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawForeground", &handled, 2, (uint64_t)painter, (uint64_t)&rect, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -270,7 +270,7 @@ MyQGraphicsScene(qreal x, qreal y, qreal width, qreal height, QObject * parent) 
 // [-2] void drawItems(QPainter *, int, QGraphicsItem **, const QStyleOptionGraphicsItem *, QWidget *)
 // Protected Visibility=Default Availability=Available
 // [1] bool focusNextPrevChild(bool)
-  virtual bool focusNextPrevChild(bool next) {
+  virtual bool focusNextPrevChild(bool next)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

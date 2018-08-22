@@ -24,7 +24,7 @@ MyQKeyEventTransition(QState * sourceState) : QKeyEventTransition(sourceState) {
 MyQKeyEventTransition(QObject * object, QEvent::Type type_, int key, QState * sourceState) : QKeyEventTransition(object, type_, key, sourceState) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void onTransition(QEvent *)
-  virtual void onTransition(QEvent * event) {
+  virtual void onTransition(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQKeyEventTransition(QObject * object, QEvent::Type type_, int key, QState * so
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventTest(QEvent *)
-  virtual bool eventTest(QEvent * event) {
+  virtual bool eventTest(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

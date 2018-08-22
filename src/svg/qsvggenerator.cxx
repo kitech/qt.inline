@@ -22,7 +22,7 @@ public:
 MyQSvgGenerator() : QSvgGenerator() {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] QPaintEngine * paintEngine()
-  virtual QPaintEngine * paintEngine() const{
+  virtual QPaintEngine * paintEngine() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEngine", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQSvgGenerator() : QSvgGenerator() {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -113,7 +113,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
 MyQVariant(QVariant && other) : QVariant(other) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void create(int, const void *)
-  virtual void create(int type_, const void * copy) {
+  virtual void create(int type_, const void * copy)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"create", &handled, 2, (uint64_t)type_, (uint64_t)copy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -125,7 +125,7 @@ MyQVariant(QVariant && other) : QVariant(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool cmp(const QVariant &)
-  virtual bool cmp(const QVariant & other) const{
+  virtual bool cmp(const QVariant & other) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"cmp", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -138,7 +138,7 @@ MyQVariant(QVariant && other) : QVariant(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] int compare(const QVariant &)
-  virtual int compare(const QVariant & other) const{
+  virtual int compare(const QVariant & other) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"compare", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -151,7 +151,7 @@ MyQVariant(QVariant && other) : QVariant(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool convert(const int, void *)
-  virtual bool convert(const int t, void * ptr) const{
+  virtual bool convert(const int t, void * ptr) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convert", &handled, 2, (uint64_t)t, (uint64_t)ptr, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

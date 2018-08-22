@@ -22,7 +22,7 @@ public:
 MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void resetInternalData()
-  virtual void resetInternalData() {
+  virtual void resetInternalData()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

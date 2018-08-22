@@ -22,7 +22,7 @@ public:
 MyQNetworkAccessManager(QObject * parent) : QNetworkAccessManager(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] QNetworkReply * createRequest(QNetworkAccessManager::Operation, const QNetworkRequest &, QIODevice *)
-  virtual QNetworkReply * createRequest(QNetworkAccessManager::Operation op, const QNetworkRequest & request, QIODevice * outgoingData) {
+  virtual QNetworkReply * createRequest(QNetworkAccessManager::Operation op, const QNetworkRequest & request, QIODevice * outgoingData)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createRequest", &handled, 3, (uint64_t)op, (uint64_t)&request, (uint64_t)outgoingData, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQNetworkAccessManager(QObject * parent) : QNetworkAccessManager(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [8] QStringList supportedSchemesImplementation()
-  virtual QStringList supportedSchemesImplementation() const{
+  virtual QStringList supportedSchemesImplementation() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedSchemesImplementation", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

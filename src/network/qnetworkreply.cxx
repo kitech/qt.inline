@@ -24,7 +24,7 @@ MyQNetworkReply(QObject * parent) : QNetworkReply(parent) {}
 MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 writeData(const char *, qint64)
-  virtual qint64 writeData(const char * data, qint64 len_) {
+  virtual qint64 writeData(const char * data, qint64 len_)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setOperation(QNetworkAccessManager::Operation)
-  virtual void setOperation(QNetworkAccessManager::Operation operation) {
+  virtual void setOperation(QNetworkAccessManager::Operation operation)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOperation", &handled, 1, (uint64_t)operation, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setRequest(const QNetworkRequest &)
-  virtual void setRequest(const QNetworkRequest & request) {
+  virtual void setRequest(const QNetworkRequest & request)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRequest", &handled, 1, (uint64_t)&request, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setError(QNetworkReply::NetworkError, const QString &)
-  virtual void setError(QNetworkReply::NetworkError errorCode, const QString & errorString) {
+  virtual void setError(QNetworkReply::NetworkError errorCode, const QString & errorString)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setError", &handled, 2, (uint64_t)errorCode, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setFinished(bool)
-  virtual void setFinished(bool arg0) {
+  virtual void setFinished(bool arg0)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setFinished", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -85,7 +85,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setUrl(const QUrl &)
-  virtual void setUrl(const QUrl & url) {
+  virtual void setUrl(const QUrl & url)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setUrl", &handled, 1, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -97,7 +97,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setHeader(QNetworkRequest::KnownHeaders, const QVariant &)
-  virtual void setHeader(QNetworkRequest::KnownHeaders header, const QVariant & value) {
+  virtual void setHeader(QNetworkRequest::KnownHeaders header, const QVariant & value)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setHeader", &handled, 2, (uint64_t)header, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -109,7 +109,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setRawHeader(const QByteArray &, const QByteArray &)
-  virtual void setRawHeader(const QByteArray & headerName, const QByteArray & value) {
+  virtual void setRawHeader(const QByteArray & headerName, const QByteArray & value)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRawHeader", &handled, 2, (uint64_t)&headerName, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -121,7 +121,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setAttribute(QNetworkRequest::Attribute, const QVariant &)
-  virtual void setAttribute(QNetworkRequest::Attribute code, const QVariant & value) {
+  virtual void setAttribute(QNetworkRequest::Attribute code, const QVariant & value)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAttribute", &handled, 2, (uint64_t)code, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void sslConfigurationImplementation(QSslConfiguration &)
-  virtual void sslConfigurationImplementation(QSslConfiguration & arg0) const{
+  virtual void sslConfigurationImplementation(QSslConfiguration & arg0) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sslConfigurationImplementation", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -145,7 +145,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSslConfigurationImplementation(const QSslConfiguration &)
-  virtual void setSslConfigurationImplementation(const QSslConfiguration & arg0) {
+  virtual void setSslConfigurationImplementation(const QSslConfiguration & arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSslConfigurationImplementation", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -157,7 +157,7 @@ MyQNetworkReply(QNetworkReplyPrivate & dd, QObject * parent) : QNetworkReply(dd,
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void ignoreSslErrorsImplementation(const QList<QSslError> &)
-  virtual void ignoreSslErrorsImplementation(const QList<QSslError> & arg0) {
+  virtual void ignoreSslErrorsImplementation(const QList<QSslError> & arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"ignoreSslErrorsImplementation", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -21,7 +21,7 @@ public:
 MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void columnResized(int, int, int)
-  virtual void columnResized(int column, int oldSize, int newSize) {
+  virtual void columnResized(int column, int oldSize, int newSize)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnResized", &handled, 3, (uint64_t)column, (uint64_t)oldSize, (uint64_t)newSize, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void columnCountChanged(int, int)
-  virtual void columnCountChanged(int oldCount, int newCount) {
+  virtual void columnCountChanged(int oldCount, int newCount)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -45,7 +45,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void columnMoved()
-  virtual void columnMoved() {
+  virtual void columnMoved()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"columnMoved", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -57,7 +57,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void reexpand()
-  virtual void reexpand() {
+  virtual void reexpand()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"reexpand", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -69,7 +69,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void rowsRemoved(const QModelIndex &, int, int)
-  virtual void rowsRemoved(const QModelIndex & parent, int first, int last) {
+  virtual void rowsRemoved(const QModelIndex & parent, int first, int last)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -83,7 +83,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -107,7 +107,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -119,7 +119,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int horizontalOffset()
-  virtual int horizontalOffset() const{
+  virtual int horizontalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -146,7 +146,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int verticalOffset()
-  virtual int verticalOffset() const{
+  virtual int verticalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -159,7 +159,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
-  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -171,7 +171,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QRegion visualRegionForSelection(const QItemSelection &)
-  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -185,7 +185,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QModelIndexList selectedIndexes()
-  virtual QModelIndexList selectedIndexes() const{
+  virtual QModelIndexList selectedIndexes() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -198,7 +198,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * event) {
+  virtual void timerEvent(QTimerEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -210,7 +210,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * event) {
+  virtual void paintEvent(QPaintEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -222,7 +222,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void drawTree(QPainter *, const QRegion &)
-  virtual void drawTree(QPainter * painter, const QRegion & region) const{
+  virtual void drawTree(QPainter * painter, const QRegion & region) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawTree", &handled, 2, (uint64_t)painter, (uint64_t)&region, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -234,7 +234,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawRow(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
-  virtual void drawRow(QPainter * painter, const QStyleOptionViewItem & options, const QModelIndex & index) const{
+  virtual void drawRow(QPainter * painter, const QStyleOptionViewItem & options, const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawRow", &handled, 3, (uint64_t)painter, (uint64_t)&options, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -246,7 +246,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void drawBranches(QPainter *, const QRect &, const QModelIndex &)
-  virtual void drawBranches(QPainter * painter, const QRect & rect, const QModelIndex & index) const{
+  virtual void drawBranches(QPainter * painter, const QRect & rect, const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"drawBranches", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -258,7 +258,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * event) {
+  virtual void mousePressEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -270,7 +270,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * event) {
+  virtual void mouseReleaseEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -282,7 +282,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
-  virtual void mouseDoubleClickEvent(QMouseEvent * event) {
+  virtual void mouseDoubleClickEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -294,7 +294,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * event) {
+  virtual void mouseMoveEvent(QMouseEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -306,7 +306,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * event) {
+  virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -318,7 +318,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QDragMoveEvent *)
-  virtual void dragMoveEvent(QDragMoveEvent * event) {
+  virtual void dragMoveEvent(QDragMoveEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -330,7 +330,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool viewportEvent(QEvent *)
-  virtual bool viewportEvent(QEvent * event) {
+  virtual bool viewportEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -343,7 +343,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateGeometries()
-  virtual void updateGeometries() {
+  virtual void updateGeometries()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -355,7 +355,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
-  virtual QSize viewportSizeHint() const{
+  virtual QSize viewportSizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -369,7 +369,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int sizeHintForColumn(int)
-  virtual int sizeHintForColumn(int column) const{
+  virtual int sizeHintForColumn(int column) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sizeHintForColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -382,7 +382,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] int indexRowSizeHint(const QModelIndex &)
-  virtual int indexRowSizeHint(const QModelIndex & index) const{
+  virtual int indexRowSizeHint(const QModelIndex & index) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"indexRowSizeHint", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -395,7 +395,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] int rowHeight(const QModelIndex &)
-  virtual int rowHeight(const QModelIndex & index) const{
+  virtual int rowHeight(const QModelIndex & index) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowHeight", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -408,7 +408,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void horizontalScrollbarAction(int)
-  virtual void horizontalScrollbarAction(int action) {
+  virtual void horizontalScrollbarAction(int action)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalScrollbarAction", &handled, 1, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -420,7 +420,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool isIndexHidden(const QModelIndex &)
-  virtual bool isIndexHidden(const QModelIndex & index) const{
+  virtual bool isIndexHidden(const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -433,7 +433,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
-  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
+  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -445,7 +445,7 @@ MyQTreeView(QTreeViewPrivate & dd, QWidget * parent) : QTreeView(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
-  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

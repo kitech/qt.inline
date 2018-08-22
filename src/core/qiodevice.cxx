@@ -25,7 +25,7 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
 MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [8] qint64 readData(char *, qint64)
-  virtual qint64 readData(char * data, qint64 maxlen) {
+  virtual qint64 readData(char * data, qint64 maxlen)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -38,7 +38,7 @@ MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 readLineData(char *, qint64)
-  virtual qint64 readLineData(char * data, qint64 maxlen) {
+  virtual qint64 readLineData(char * data, qint64 maxlen)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readLineData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -51,7 +51,7 @@ MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [8] qint64 writeData(const char *, qint64)
-  virtual qint64 writeData(const char * data, qint64 len_) {
+  virtual qint64 writeData(const char * data, qint64 len_)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -64,7 +64,7 @@ MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setOpenMode(QIODevice::OpenMode)
-  virtual void setOpenMode(QFlags<QIODevice::OpenModeFlag> openMode) {
+  virtual void setOpenMode(QFlags<QIODevice::OpenModeFlag> openMode)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOpenMode", &handled, 1, (uint64_t)openMode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -76,7 +76,7 @@ MyQIODevice(QIODevicePrivate & dd, QObject * parent) : QIODevice(dd, parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setErrorString(const QString &)
-  virtual void setErrorString(const QString & errorString) {
+  virtual void setErrorString(const QString & errorString)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setErrorString", &handled, 1, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

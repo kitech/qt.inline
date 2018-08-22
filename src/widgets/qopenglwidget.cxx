@@ -22,7 +22,7 @@ public:
 MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(parent, f) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void initializeGL()
-  virtual void initializeGL() {
+  virtual void initializeGL()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"initializeGL", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeGL(int, int)
-  virtual void resizeGL(int w, int h) {
+  virtual void resizeGL(int w, int h)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeGL", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintGL()
-  virtual void paintGL() {
+  virtual void paintGL()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintGL", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -58,7 +58,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -70,7 +70,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * e) {
+  virtual void resizeEvent(QResizeEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -82,7 +82,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -108,7 +108,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QPaintDevice * redirected(QPoint *)
-  virtual QPaintDevice * redirected(QPoint * p) const{
+  virtual QPaintDevice * redirected(QPoint * p) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"redirected", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -121,7 +121,7 @@ MyQOpenGLWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QOpenGLWidget(pare
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QPaintEngine * paintEngine()
-  virtual QPaintEngine * paintEngine() const{
+  virtual QPaintEngine * paintEngine() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEngine", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

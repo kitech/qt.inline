@@ -21,7 +21,7 @@ public:
 MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void incomingConnection(qintptr)
-  virtual void incomingConnection(qintptr handle) {
+  virtual void incomingConnection(qintptr handle)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"incomingConnection", &handled, 1, (uint64_t)handle, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -33,7 +33,7 @@ MyQTcpServer(QObject * parent) : QTcpServer(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void addPendingConnection(QTcpSocket *)
-  virtual void addPendingConnection(QTcpSocket * socket) {
+  virtual void addPendingConnection(QTcpSocket * socket)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addPendingConnection", &handled, 1, (uint64_t)socket, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -23,7 +23,7 @@ MyQMediaObject(QObject * parent, QMediaService * service) : QMediaObject(parent,
 MyQMediaObject(QMediaObjectPrivate & dd, QObject * parent, QMediaService * service) : QMediaObject(dd, parent, service) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void addPropertyWatch(const QByteArray &)
-  virtual void addPropertyWatch(const QByteArray & name) {
+  virtual void addPropertyWatch(const QByteArray & name)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addPropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQMediaObject(QMediaObjectPrivate & dd, QObject * parent, QMediaService * servi
 
 // Protected Visibility=Default Availability=Available
 // [-2] void removePropertyWatch(const QByteArray &)
-  virtual void removePropertyWatch(const QByteArray & name) {
+  virtual void removePropertyWatch(const QByteArray & name)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"removePropertyWatch", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

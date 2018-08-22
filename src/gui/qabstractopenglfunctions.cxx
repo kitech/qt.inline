@@ -22,7 +22,7 @@ public:
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // Protected Visibility=Default Availability=Available
 // [1] bool isInitialized()
-  virtual bool isInitialized() const{
+  virtual bool isInitialized() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isInitialized", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setOwningContext(const QOpenGLContext *)
-  virtual void setOwningContext(const QOpenGLContext * context) {
+  virtual void setOwningContext(const QOpenGLContext * context)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setOwningContext", &handled, 1, (uint64_t)context, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 
 // Protected Visibility=Default Availability=Available
 // [8] QOpenGLContext * owningContext()
-  virtual QOpenGLContext * owningContext() const{
+  virtual QOpenGLContext * owningContext() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"owningContext", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

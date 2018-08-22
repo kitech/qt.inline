@@ -21,7 +21,7 @@ public:
 MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void resetInternalData()
-  virtual void resetInternalData() {
+  virtual void resetInternalData()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstractItemModel(dd, parent) {}
 // Protected inline Visibility=Default Availability=Available
 // [24] QModelIndex createIndex(int, int, void *)
-  virtual QModelIndex createIndex(int row, int column, void * data) const{
+  virtual QModelIndex createIndex(int row, int column, void * data) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)data, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected inline Visibility=Default Availability=Available
 // [24] QModelIndex createIndex(int, int, quintptr)
-  virtual QModelIndex createIndex(int row, int column, quintptr id) const{
+  virtual QModelIndex createIndex(int row, int column, quintptr id) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createIndex", &handled, 3, (uint64_t)row, (uint64_t)column, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -63,7 +63,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void encodeData(const QModelIndexList &, QDataStream &)
-  virtual void encodeData(const QModelIndexList & indexes, QDataStream & stream) const{
+  virtual void encodeData(const QModelIndexList & indexes, QDataStream & stream) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"encodeData", &handled, 2, (uint64_t)&indexes, (uint64_t)&stream, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -75,7 +75,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [1] bool decodeData(int, int, const QModelIndex &, QDataStream &)
-  virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream) {
+  virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"decodeData", &handled, 4, (uint64_t)row, (uint64_t)column, (uint64_t)&parent, (uint64_t)&stream, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -88,7 +88,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void beginInsertRows(const QModelIndex &, int, int)
-  virtual void beginInsertRows(const QModelIndex & parent, int first, int last) {
+  virtual void beginInsertRows(const QModelIndex & parent, int first, int last)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginInsertRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -100,7 +100,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endInsertRows()
-  virtual void endInsertRows() {
+  virtual void endInsertRows()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endInsertRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -112,7 +112,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void beginRemoveRows(const QModelIndex &, int, int)
-  virtual void beginRemoveRows(const QModelIndex & parent, int first, int last) {
+  virtual void beginRemoveRows(const QModelIndex & parent, int first, int last)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginRemoveRows", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -124,7 +124,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endRemoveRows()
-  virtual void endRemoveRows() {
+  virtual void endRemoveRows()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endRemoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -136,7 +136,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [1] bool beginMoveRows(const QModelIndex &, int, int, const QModelIndex &, int)
-  virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow) {
+  virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMoveRows", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationRow, 0, 0, 0, 0, 0);
     if (handled) {
@@ -149,7 +149,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endMoveRows()
-  virtual void endMoveRows() {
+  virtual void endMoveRows()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMoveRows", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -161,7 +161,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void beginInsertColumns(const QModelIndex &, int, int)
-  virtual void beginInsertColumns(const QModelIndex & parent, int first, int last) {
+  virtual void beginInsertColumns(const QModelIndex & parent, int first, int last)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginInsertColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -173,7 +173,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endInsertColumns()
-  virtual void endInsertColumns() {
+  virtual void endInsertColumns()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endInsertColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -185,7 +185,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void beginRemoveColumns(const QModelIndex &, int, int)
-  virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last) {
+  virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginRemoveColumns", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -197,7 +197,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endRemoveColumns()
-  virtual void endRemoveColumns() {
+  virtual void endRemoveColumns()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endRemoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -209,7 +209,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [1] bool beginMoveColumns(const QModelIndex &, int, int, const QModelIndex &, int)
-  virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn) {
+  virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginMoveColumns", &handled, 5, (uint64_t)&sourceParent, (uint64_t)sourceFirst, (uint64_t)sourceLast, (uint64_t)&destinationParent, (uint64_t)destinationColumn, 0, 0, 0, 0, 0);
     if (handled) {
@@ -222,7 +222,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endMoveColumns()
-  virtual void endMoveColumns() {
+  virtual void endMoveColumns()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endMoveColumns", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -234,7 +234,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void beginResetModel()
-  virtual void beginResetModel() {
+  virtual void beginResetModel()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"beginResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -246,7 +246,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void endResetModel()
-  virtual void endResetModel() {
+  virtual void endResetModel()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"endResetModel", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -258,7 +258,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void changePersistentIndex(const QModelIndex &, const QModelIndex &)
-  virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to) {
+  virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changePersistentIndex", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -270,7 +270,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [-2] void changePersistentIndexList(const QModelIndexList &, const QModelIndexList &)
-  virtual void changePersistentIndexList(const QModelIndexList & from, const QModelIndexList & to) {
+  virtual void changePersistentIndexList(const QModelIndexList & from, const QModelIndexList & to)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changePersistentIndexList", &handled, 2, (uint64_t)&from, (uint64_t)&to, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -282,7 +282,7 @@ MyQAbstractItemModel(QAbstractItemModelPrivate & dd, QObject * parent) : QAbstra
 
 // Protected Visibility=Default Availability=Available
 // [8] QModelIndexList persistentIndexList()
-  virtual QModelIndexList persistentIndexList() const{
+  virtual QModelIndexList persistentIndexList() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"persistentIndexList", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

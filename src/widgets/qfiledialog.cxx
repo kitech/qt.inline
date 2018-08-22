@@ -25,7 +25,7 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
 MyQFileDialog(const QFileDialogArgs & args) : QFileDialog(args) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void done(int)
-  virtual void done(int result) {
+  virtual void done(int result)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQFileDialog(const QFileDialogArgs & args) : QFileDialog(args) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void accept()
-  virtual void accept() {
+  virtual void accept()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"accept", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQFileDialog(const QFileDialogArgs & args) : QFileDialog(args) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * e) {
+  virtual void changeEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -24,7 +24,7 @@ MyQSignalTransition(QState * sourceState) : QSignalTransition(sourceState) {}
 MyQSignalTransition(const QObject * sender, const char * signal, QState * sourceState) : QSignalTransition(sender, signal, sourceState) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventTest(QEvent *)
-  virtual bool eventTest(QEvent * event) {
+  virtual bool eventTest(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -37,7 +37,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void onTransition(QEvent *)
-  virtual void onTransition(QEvent * event) {
+  virtual void onTransition(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -49,7 +49,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

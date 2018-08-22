@@ -24,7 +24,7 @@ MyQOpenGLFunctions() : QOpenGLFunctions() {}
 MyQOpenGLFunctions(QOpenGLContext * context) : QOpenGLFunctions(context) {}
 // Protected static inline Visibility=Default Availability=Available
 // [1] bool isInitialized(const QOpenGLFunctionsPrivate *)
-  virtual bool isInitialized(const QOpenGLFunctionsPrivate * d) {
+  virtual bool isInitialized(const QOpenGLFunctionsPrivate * d)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isInitialized", &handled, 1, (uint64_t)d, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -23,7 +23,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
 MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected Visibility=Default Availability=Available
 // [-2] void resizeContents(int, int)
-  virtual void resizeContents(int width, int height) {
+  virtual void resizeContents(int width, int height)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeContents", &handled, 2, (uint64_t)width, (uint64_t)height, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected Visibility=Default Availability=Available
 // [8] QSize contentsSize()
-  virtual QSize contentsSize() const{
+  virtual QSize contentsSize() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contentsSize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -74,7 +74,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dataChanged(const QModelIndex &, const QModelIndex &, const QVector<int> &)
-  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles) {
+  virtual void dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dataChanged", &handled, 3, (uint64_t)&topLeft, (uint64_t)&bottomRight, (uint64_t)&roles, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -86,7 +86,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -98,7 +98,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -110,7 +110,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * e) {
+  virtual void mouseMoveEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -122,7 +122,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * e) {
+  virtual void mouseReleaseEvent(QMouseEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -134,7 +134,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * e) {
+  virtual void wheelEvent(QWheelEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -146,7 +146,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * e) {
+  virtual void timerEvent(QTimerEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -158,7 +158,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * e) {
+  virtual void resizeEvent(QResizeEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -170,7 +170,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QDragMoveEvent *)
-  virtual void dragMoveEvent(QDragMoveEvent * e) {
+  virtual void dragMoveEvent(QDragMoveEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -182,7 +182,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragLeaveEvent(QDragLeaveEvent *)
-  virtual void dragLeaveEvent(QDragLeaveEvent * e) {
+  virtual void dragLeaveEvent(QDragLeaveEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -194,7 +194,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QDropEvent *)
-  virtual void dropEvent(QDropEvent * e) {
+  virtual void dropEvent(QDropEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -206,7 +206,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void startDrag(Qt::DropActions)
-  virtual void startDrag(QFlags<Qt::DropAction> supportedActions) {
+  virtual void startDrag(QFlags<Qt::DropAction> supportedActions)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"startDrag", &handled, 1, (uint64_t)supportedActions, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -218,7 +218,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [192] QStyleOptionViewItem viewOptions()
-  virtual QStyleOptionViewItem viewOptions() const{
+  virtual QStyleOptionViewItem viewOptions() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewOptions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -232,7 +232,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * e) {
+  virtual void paintEvent(QPaintEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -244,7 +244,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int horizontalOffset()
-  virtual int horizontalOffset() const{
+  virtual int horizontalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -257,7 +257,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [4] int verticalOffset()
-  virtual int verticalOffset() const{
+  virtual int verticalOffset() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -270,7 +270,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
-  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -284,7 +284,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected Visibility=Default Availability=Available
 // [16] QRect rectForIndex(const QModelIndex &)
-  virtual QRect rectForIndex(const QModelIndex & index) const{
+  virtual QRect rectForIndex(const QModelIndex & index) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rectForIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -298,7 +298,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setPositionForIndex(const QPoint &, const QModelIndex &)
-  virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
+  virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setPositionForIndex", &handled, 2, (uint64_t)&position, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -310,7 +310,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
-  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -322,7 +322,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QRegion visualRegionForSelection(const QItemSelection &)
-  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const{
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -336,7 +336,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QModelIndexList selectedIndexes()
-  virtual QModelIndexList selectedIndexes() const{
+  virtual QModelIndexList selectedIndexes() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectedIndexes", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -349,7 +349,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void updateGeometries()
-  virtual void updateGeometries() {
+  virtual void updateGeometries()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -361,7 +361,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool isIndexHidden(const QModelIndex &)
-  virtual bool isIndexHidden(const QModelIndex & index) const{
+  virtual bool isIndexHidden(const QModelIndex & index) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -374,7 +374,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
-  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
+  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -386,7 +386,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
-  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -398,7 +398,7 @@ MyQListView(QListViewPrivate & arg0, QWidget * parent) : QListView(arg0, parent)
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
-  virtual QSize viewportSizeHint() const{
+  virtual QSize viewportSizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

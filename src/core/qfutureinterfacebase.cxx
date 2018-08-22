@@ -23,7 +23,7 @@ MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterf
 MyQFutureInterfaceBase(const QFutureInterfaceBase & other) : QFutureInterfaceBase(other) {}
 // Protected Visibility=Default Availability=Available
 // [1] bool refT()
-  virtual bool refT() const{
+  virtual bool refT() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"refT", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQFutureInterfaceBase(const QFutureInterfaceBase & other) : QFutureInterfaceBas
 
 // Protected Visibility=Default Availability=Available
 // [1] bool derefT()
-  virtual bool derefT() const{
+  virtual bool derefT() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"derefT", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

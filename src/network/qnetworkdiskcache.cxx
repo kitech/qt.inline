@@ -22,7 +22,7 @@ public:
 MyQNetworkDiskCache(QObject * parent) : QNetworkDiskCache(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 expire()
-  virtual qint64 expire() {
+  virtual qint64 expire()  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"expire", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

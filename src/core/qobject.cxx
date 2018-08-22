@@ -21,7 +21,7 @@ public:
 MyQObject(QObject * parent) : QObject(parent) {}
 // Protected Visibility=Default Availability=Available
 // [8] QObject * sender()
-  virtual QObject * sender() const{
+  virtual QObject * sender() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sender", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] int senderSignalIndex()
-  virtual int senderSignalIndex() const{
+  virtual int senderSignalIndex() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"senderSignalIndex", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] int receivers(const char *)
-  virtual int receivers(const char * signal) const{
+  virtual int receivers(const char * signal) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"receivers", &handled, 1, (uint64_t)signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool isSignalConnected(const QMetaMethod &)
-  virtual bool isSignalConnected(const QMetaMethod & signal) const{
+  virtual bool isSignalConnected(const QMetaMethod & signal) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"isSignalConnected", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -73,7 +73,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * event) {
+  virtual void timerEvent(QTimerEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -85,7 +85,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void childEvent(QChildEvent *)
-  virtual void childEvent(QChildEvent * event) {
+  virtual void childEvent(QChildEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"childEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -97,7 +97,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void customEvent(QEvent *)
-  virtual void customEvent(QEvent * event) {
+  virtual void customEvent(QEvent * event)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"customEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -109,7 +109,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void connectNotify(const QMetaMethod &)
-  virtual void connectNotify(const QMetaMethod & signal) {
+  virtual void connectNotify(const QMetaMethod & signal)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -121,7 +121,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void disconnectNotify(const QMetaMethod &)
-  virtual void disconnectNotify(const QMetaMethod & signal) {
+  virtual void disconnectNotify(const QMetaMethod & signal)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

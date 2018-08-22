@@ -27,7 +27,7 @@ MyQTemporaryFile(QObject * parent) : QTemporaryFile(parent) {}
 MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFile(templateName, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool open(QIODevice::OpenMode)
-  virtual bool open(QFlags<QIODevice::OpenModeFlag> flags) {
+  virtual bool open(QFlags<QIODevice::OpenModeFlag> flags)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"open", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

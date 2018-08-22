@@ -19,7 +19,7 @@ public:
   virtual ~MyQSGNodeVisitor() {}
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void enterTransformNode(QSGTransformNode *)
-  virtual void enterTransformNode(QSGTransformNode * arg0) {
+  virtual void enterTransformNode(QSGTransformNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterTransformNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -31,7 +31,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void leaveTransformNode(QSGTransformNode *)
-  virtual void leaveTransformNode(QSGTransformNode * arg0) {
+  virtual void leaveTransformNode(QSGTransformNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveTransformNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -43,7 +43,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void enterClipNode(QSGClipNode *)
-  virtual void enterClipNode(QSGClipNode * arg0) {
+  virtual void enterClipNode(QSGClipNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterClipNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -55,7 +55,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void leaveClipNode(QSGClipNode *)
-  virtual void leaveClipNode(QSGClipNode * arg0) {
+  virtual void leaveClipNode(QSGClipNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveClipNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -67,7 +67,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void enterGeometryNode(QSGGeometryNode *)
-  virtual void enterGeometryNode(QSGGeometryNode * arg0) {
+  virtual void enterGeometryNode(QSGGeometryNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterGeometryNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -79,7 +79,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void leaveGeometryNode(QSGGeometryNode *)
-  virtual void leaveGeometryNode(QSGGeometryNode * arg0) {
+  virtual void leaveGeometryNode(QSGGeometryNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveGeometryNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -91,7 +91,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void enterOpacityNode(QSGOpacityNode *)
-  virtual void enterOpacityNode(QSGOpacityNode * arg0) {
+  virtual void enterOpacityNode(QSGOpacityNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"enterOpacityNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -103,7 +103,7 @@ public:
 
 // Protected inline virtual Visibility=Default Availability=Available
 // [-2] void leaveOpacityNode(QSGOpacityNode *)
-  virtual void leaveOpacityNode(QSGOpacityNode * arg0) {
+  virtual void leaveOpacityNode(QSGOpacityNode * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"leaveOpacityNode", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -115,7 +115,7 @@ public:
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void visitNode(QSGNode *)
-  virtual void visitNode(QSGNode * n) {
+  virtual void visitNode(QSGNode * n)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visitNode", &handled, 1, (uint64_t)n, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -127,7 +127,7 @@ public:
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void visitChildren(QSGNode *)
-  virtual void visitChildren(QSGNode * n) {
+  virtual void visitChildren(QSGNode * n)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"visitChildren", &handled, 1, (uint64_t)n, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

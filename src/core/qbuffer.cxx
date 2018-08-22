@@ -23,7 +23,7 @@ MyQBuffer(QObject * parent) : QBuffer(parent) {}
 MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void connectNotify(const QMetaMethod &)
-  virtual void connectNotify(const QMetaMethod & arg0) {
+  virtual void connectNotify(const QMetaMethod & arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"connectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void disconnectNotify(const QMetaMethod &)
-  virtual void disconnectNotify(const QMetaMethod & arg0) {
+  virtual void disconnectNotify(const QMetaMethod & arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 readData(char *, qint64)
-  virtual qint64 readData(char * data, qint64 maxlen) {
+  virtual qint64 readData(char * data, qint64 maxlen)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -60,7 +60,7 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] qint64 writeData(const char *, qint64)
-  virtual qint64 writeData(const char * data, qint64 len_) {
+  virtual qint64 writeData(const char * data, qint64 len_)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len_, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

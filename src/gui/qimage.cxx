@@ -41,7 +41,7 @@ MyQImage(const QImage & arg0) : QImage(arg0) {}
 MyQImage(QImage && other) : QImage(other) {}
 // Protected virtual Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
-  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const{
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -54,7 +54,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [32] QImage mirrored_helper(bool, bool)
-  virtual QImage mirrored_helper(bool horizontal, bool vertical) const{
+  virtual QImage mirrored_helper(bool horizontal, bool vertical) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_helper", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -68,7 +68,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [32] QImage rgbSwapped_helper()
-  virtual QImage rgbSwapped_helper() const{
+  virtual QImage rgbSwapped_helper() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_helper", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -82,7 +82,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void mirrored_inplace(bool, bool)
-  virtual void mirrored_inplace(bool horizontal, bool vertical) {
+  virtual void mirrored_inplace(bool horizontal, bool vertical)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mirrored_inplace", &handled, 2, (uint64_t)horizontal, (uint64_t)vertical, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -94,7 +94,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void rgbSwapped_inplace()
-  virtual void rgbSwapped_inplace() {
+  virtual void rgbSwapped_inplace()   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rgbSwapped_inplace", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -106,7 +106,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [32] QImage convertToFormat_helper(QImage::Format, Qt::ImageConversionFlags)
-  virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) const{
+  virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_helper", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -120,7 +120,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [1] bool convertToFormat_inplace(QImage::Format, Qt::ImageConversionFlags)
-  virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
+  virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToFormat_inplace", &handled, 2, (uint64_t)format, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -133,7 +133,7 @@ MyQImage(QImage && other) : QImage(other) {}
 
 // Protected Visibility=Default Availability=Available
 // [32] QImage smoothScaled(int, int)
-  virtual QImage smoothScaled(int w, int h) const{
+  virtual QImage smoothScaled(int w, int h) const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"smoothScaled", &handled, 2, (uint64_t)w, (uint64_t)h, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

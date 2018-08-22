@@ -18,7 +18,7 @@ class Q_DECL_EXPORT MyQTextCodec : public QTextCodec {
 public:
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [8] QString convertToUnicode(const char *, int, QTextCodec::ConverterState *)
-  virtual QString convertToUnicode(const char * in, int length, QTextCodec::ConverterState * state) const{
+  virtual QString convertToUnicode(const char * in, int length, QTextCodec::ConverterState * state) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertToUnicode", &handled, 3, (uint64_t)in, (uint64_t)length, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -32,7 +32,7 @@ public:
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // [8] QByteArray convertFromUnicode(const QChar *, int, QTextCodec::ConverterState *)
-  virtual QByteArray convertFromUnicode(const QChar * in, int length, QTextCodec::ConverterState * state) const{
+  virtual QByteArray convertFromUnicode(const QChar * in, int length, QTextCodec::ConverterState * state) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"convertFromUnicode", &handled, 3, (uint64_t)in, (uint64_t)length, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

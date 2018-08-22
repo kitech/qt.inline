@@ -24,7 +24,7 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 MyQGraphicsLayout(QGraphicsLayoutPrivate & arg0, QGraphicsLayoutItem * arg1) : QGraphicsLayout(arg0, arg1) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void addChildLayoutItem(QGraphicsLayoutItem *)
-  virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
+  virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"addChildLayoutItem", &handled, 1, (uint64_t)layoutItem, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -23,7 +23,7 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
 MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbstractScrollArea(dd, parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] void setViewportMargins(int, int, int, int)
-  virtual void setViewportMargins(int left, int top, int right, int bottom) {
+  virtual void setViewportMargins(int left, int top, int right, int bottom)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setViewportMargins", &handled, 4, (uint64_t)left, (uint64_t)top, (uint64_t)right, (uint64_t)bottom, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -35,7 +35,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setViewportMargins(const QMargins &)
-  virtual void setViewportMargins(const QMargins & margins) {
+  virtual void setViewportMargins(const QMargins & margins)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setViewportMargins", &handled, 1, (uint64_t)&margins, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -47,7 +47,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected Visibility=Default Availability=Available
 // [16] QMargins viewportMargins()
-  virtual QMargins viewportMargins() const{
+  virtual QMargins viewportMargins() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportMargins", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -61,7 +61,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
-  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -74,7 +74,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0) {
+  virtual bool event(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -87,7 +87,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool viewportEvent(QEvent *)
-  virtual bool viewportEvent(QEvent * arg0) {
+  virtual bool viewportEvent(QEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -100,7 +100,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
-  virtual void resizeEvent(QResizeEvent * arg0) {
+  virtual void resizeEvent(QResizeEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -112,7 +112,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
-  virtual void paintEvent(QPaintEvent * arg0) {
+  virtual void paintEvent(QPaintEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -124,7 +124,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mousePressEvent(QMouseEvent *)
-  virtual void mousePressEvent(QMouseEvent * arg0) {
+  virtual void mousePressEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -136,7 +136,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseReleaseEvent(QMouseEvent *)
-  virtual void mouseReleaseEvent(QMouseEvent * arg0) {
+  virtual void mouseReleaseEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -148,7 +148,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
-  virtual void mouseDoubleClickEvent(QMouseEvent * arg0) {
+  virtual void mouseDoubleClickEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -160,7 +160,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void mouseMoveEvent(QMouseEvent *)
-  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+  virtual void mouseMoveEvent(QMouseEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -172,7 +172,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * arg0) {
+  virtual void wheelEvent(QWheelEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -184,7 +184,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void contextMenuEvent(QContextMenuEvent *)
-  virtual void contextMenuEvent(QContextMenuEvent * arg0) {
+  virtual void contextMenuEvent(QContextMenuEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -196,7 +196,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragEnterEvent(QDragEnterEvent *)
-  virtual void dragEnterEvent(QDragEnterEvent * arg0) {
+  virtual void dragEnterEvent(QDragEnterEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -208,7 +208,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragMoveEvent(QDragMoveEvent *)
-  virtual void dragMoveEvent(QDragMoveEvent * arg0) {
+  virtual void dragMoveEvent(QDragMoveEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -220,7 +220,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dragLeaveEvent(QDragLeaveEvent *)
-  virtual void dragLeaveEvent(QDragLeaveEvent * arg0) {
+  virtual void dragLeaveEvent(QDragLeaveEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -232,7 +232,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void dropEvent(QDropEvent *)
-  virtual void dropEvent(QDropEvent * arg0) {
+  virtual void dropEvent(QDropEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"dropEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -244,7 +244,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * arg0) {
+  virtual void keyPressEvent(QKeyEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -256,7 +256,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
-  virtual void scrollContentsBy(int dx, int dy) {
+  virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -268,7 +268,7 @@ MyQAbstractScrollArea(QAbstractScrollAreaPrivate & dd, QWidget * parent) : QAbst
 
 // Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
-  virtual QSize viewportSizeHint() const{
+  virtual QSize viewportSizeHint() const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

@@ -22,7 +22,7 @@ public:
 MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
 // Protected Visibility=Default Availability=Available
 // [-2] QList<QNetworkCookie> allCookies()
-  virtual QList<QNetworkCookie> allCookies() const{
+  virtual QList<QNetworkCookie> allCookies() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"allCookies", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -36,7 +36,7 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setAllCookies(const QList<QNetworkCookie> &)
-  virtual void setAllCookies(const QList<QNetworkCookie> & cookieList) {
+  virtual void setAllCookies(const QList<QNetworkCookie> & cookieList)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAllCookies", &handled, 1, (uint64_t)&cookieList, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -48,7 +48,7 @@ MyQNetworkCookieJar(QObject * parent) : QNetworkCookieJar(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool validateCookie(const QNetworkCookie &, const QUrl &)
-  virtual bool validateCookie(const QNetworkCookie & cookie, const QUrl & url) const{
+  virtual bool validateCookie(const QNetworkCookie & cookie, const QUrl & url) const override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"validateCookie", &handled, 2, (uint64_t)&cookie, (uint64_t)&url, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {

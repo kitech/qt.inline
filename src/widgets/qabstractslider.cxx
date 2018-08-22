@@ -21,7 +21,7 @@ public:
 MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 // Protected virtual Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
-  virtual bool event(QEvent * e) {
+  virtual bool event(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -34,7 +34,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [-2] void setRepeatAction(QAbstractSlider::SliderAction, int, int)
-  virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
+  virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime)   {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setRepeatAction", &handled, 3, (uint64_t)action, (uint64_t)thresholdTime, (uint64_t)repeatTime, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -46,7 +46,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected Visibility=Default Availability=Available
 // [4] QAbstractSlider::SliderAction repeatAction()
-  virtual QAbstractSlider::SliderAction repeatAction() const{
+  virtual QAbstractSlider::SliderAction repeatAction() const  {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"repeatAction", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -59,7 +59,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void sliderChange(QAbstractSlider::SliderChange)
-  virtual void sliderChange(QAbstractSlider::SliderChange change) {
+  virtual void sliderChange(QAbstractSlider::SliderChange change)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"sliderChange", &handled, 1, (uint64_t)change, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -71,7 +71,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
-  virtual void keyPressEvent(QKeyEvent * ev) {
+  virtual void keyPressEvent(QKeyEvent * ev)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"keyPressEvent", &handled, 1, (uint64_t)ev, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -83,7 +83,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * arg0) {
+  virtual void timerEvent(QTimerEvent * arg0)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -95,7 +95,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void wheelEvent(QWheelEvent *)
-  virtual void wheelEvent(QWheelEvent * e) {
+  virtual void wheelEvent(QWheelEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"wheelEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
@@ -107,7 +107,7 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
-  virtual void changeEvent(QEvent * e) {
+  virtual void changeEvent(QEvent * e)  override {
     int handled = 0;
     auto irv = callbackAllInherits_fnptr((void*)this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
