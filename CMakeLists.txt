@@ -9,7 +9,7 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 # don't use -std=c++11,
 # use -std=gnu++11 to fix pch error: trigraphs was enabled in PCH file but is currently disabled
 set(CMAKE_CXX_FLAGS "-g -O0 -std=gnu++11")
-set(CMAKE_C_FLAGS "-std=c11")
+set(CMAKE_C_FLAGS "-g -O0 -std=c11")
 #set(CMAKE_C_COMPILER clang)
 #set(CMAKE_CXX_COMPILER clang++)
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
@@ -50,9 +50,13 @@ if(ANDROID)
   if(NDK17CLANG) # only if adk17-clang set
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${ANDNDK_DIR}/include/c++/4.9.x")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${ANDNDK_DIR}/sysroot/usr/include")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I ${ANDNDK_DIR}/include/c++/4.9.x")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I ${ANDNDK_DIR}/sysroot/usr/include")
   else() # should be ndk16
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem ${ANDNDK_DIR}/include/c++/4.9.x")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -isystem ${ANDNDK_DIR}/sysroot/usr/include")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -isystem ${ANDNDK_DIR}/include/c++/4.9.x")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -isystem ${ANDNDK_DIR}/sysroot/usr/include")
   endif()
 
   set(QT_INSTALL_DIR "/home/me/Qt5.10.1/5.10.1/android_armv7")
@@ -61,6 +65,7 @@ if(ANDROID)
   # 这个参数可以设置多个值
   set(CMAKE_FIND_ROOT_PATH  ${QT_INSTALL_DIR} "${QT_INSTALL_DIR}")
   set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
+  set(CMAKE_EXE_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
 elseif(MINGW_NOIPBIZ)
   include(tc-mingw.cmake)
 endif(ANDROID)
@@ -216,4 +221,7 @@ add_precompiled_header(Qt5Inline preheaders/qthdrsrc.h FORCEINCLUDE)
 
 add_executable(lnktst tests/lnktst.c)
 target_link_libraries(lnktst Qt5Inline)
+if(ANDROID)
+  target_link_libraries(lnktst log)
+endif(ANDROID)
 
