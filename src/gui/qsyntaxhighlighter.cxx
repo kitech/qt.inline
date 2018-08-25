@@ -87,7 +87,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QSyntaxHighlighterC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
-  return 0; // new MyQSyntaxHighlighter(parent);
+  return  new MyQSyntaxHighlighter(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -96,7 +96,7 @@ void* C_ZN18QSyntaxHighlighterC2EP7QObject(QObject * parent) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QSyntaxHighlighterC2EP13QTextDocument(QTextDocument * parent) {
   auto _nilp = (MyQSyntaxHighlighter*)(0);
-  return 0; // new MyQSyntaxHighlighter(parent);
+  return  new MyQSyntaxHighlighter(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

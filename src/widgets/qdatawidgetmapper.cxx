@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QDataWidgetMapper(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapperC2EP7QObject(QObject * parent) {
-  return  new QDataWidgetMapper(parent);
+  return  new MyQDataWidgetMapper(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QAudioProbe(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QAudioProbeC2EP7QObject(QObject * parent) {
-  return  new QAudioProbe(parent);
+  return  new MyQAudioProbe(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

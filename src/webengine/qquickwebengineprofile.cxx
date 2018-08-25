@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QQuickWebEngineProfile(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QQuickWebEngineProfileC2EP7QObject(QObject * parent) {
-  return  new QQuickWebEngineProfile(parent);
+  return  new MyQQuickWebEngineProfile(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QAudioRecorder(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QAudioRecorderC2EP7QObject(QObject * parent) {
-  return  new QAudioRecorder(parent);
+  return  new MyQAudioRecorder(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

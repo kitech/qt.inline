@@ -74,7 +74,7 @@ return new QString(rv);
 // [-2] void QFile()
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFileC2Ev() {
-  return  new QFile();
+  return  new MyQFile();
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +82,7 @@ void* C_ZN5QFileC2Ev() {
 // [-2] void QFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFileC2ERK7QString(QString* name) {
-  return  new QFile(*name);
+  return  new MyQFile(*name);
 }
 
 // Public Visibility=Default Availability=Available
@@ -90,7 +90,7 @@ void* C_ZN5QFileC2ERK7QString(QString* name) {
 // [-2] void QFile(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFileC2EP7QObject(QObject * parent) {
-  return  new QFile(parent);
+  return  new MyQFile(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -98,7 +98,7 @@ void* C_ZN5QFileC2EP7QObject(QObject * parent) {
 // [-2] void QFile(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFileC2ERK7QStringP7QObject(QString* name, QObject * parent) {
-  return  new QFile(*name, parent);
+  return  new MyQFile(*name, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

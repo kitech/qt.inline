@@ -73,7 +73,7 @@ return new QString(rv);
 // [-2] void QDnsLookup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2EP7QObject(QObject * parent) {
-  return  new QDnsLookup(parent);
+  return  new MyQDnsLookup(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +81,7 @@ void* C_ZN10QDnsLookupC2EP7QObject(QObject * parent) {
 // [-2] void QDnsLookup(QDnsLookup::Type, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type_, QString* name, QObject * parent) {
-  return  new QDnsLookup(type_, *name, parent);
+  return  new MyQDnsLookup(type_, *name, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +89,7 @@ void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type_, QS
 // [-2] void QDnsLookup(QDnsLookup::Type, const QString &, const QHostAddress &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringRK12QHostAddressP7QObject(QDnsLookup::Type type_, QString* name, QHostAddress* nameserver, QObject * parent) {
-  return  new QDnsLookup(type_, *name, *nameserver, parent);
+  return  new MyQDnsLookup(type_, *name, *nameserver, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

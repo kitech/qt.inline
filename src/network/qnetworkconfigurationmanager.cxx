@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QNetworkConfigurationManager(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QNetworkConfigurationManagerC2EP7QObject(QObject * parent) {
-  return  new QNetworkConfigurationManager(parent);
+  return  new MyQNetworkConfigurationManager(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

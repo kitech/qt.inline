@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QQmlExtensionPlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQmlExtensionPluginC2EP7QObject(QObject * parent) {
-  return 0; // new QQmlExtensionPlugin(parent);
+  return  new MyQQmlExtensionPlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

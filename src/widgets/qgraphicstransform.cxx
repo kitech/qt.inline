@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QGraphicsTransform(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QGraphicsTransformC2EP7QObject(QObject * parent) {
-  return 0; // new QGraphicsTransform(parent);
+  return  new MyQGraphicsTransform(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

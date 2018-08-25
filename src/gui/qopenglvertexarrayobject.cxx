@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QOpenGLVertexArrayObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLVertexArrayObjectC2EP7QObject(QObject * parent) {
-  return  new QOpenGLVertexArrayObject(parent);
+  return  new MyQOpenGLVertexArrayObject(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

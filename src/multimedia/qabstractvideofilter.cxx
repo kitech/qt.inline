@@ -85,7 +85,7 @@ return new QString(rv);
 // [-2] void QAbstractVideoFilter(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QAbstractVideoFilterC2EP7QObject(QObject * parent) {
-  return 0; // new QAbstractVideoFilter(parent);
+  return  new MyQAbstractVideoFilter(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

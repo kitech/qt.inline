@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QWebEngineUrlRequestInterceptor(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN31QWebEngineUrlRequestInterceptorC2EP7QObject(QObject * p) {
-  return 0; // new QWebEngineUrlRequestInterceptor(p);
+  return  new MyQWebEngineUrlRequestInterceptor(p);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available

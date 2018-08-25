@@ -100,7 +100,7 @@ return new QString(rv);
 // [-2] void QAbstractItemDelegate(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegateC2EP7QObject(QObject * parent) {
-  return 0; // new QAbstractItemDelegate(parent);
+  return  new MyQAbstractItemDelegate(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

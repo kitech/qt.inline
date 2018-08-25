@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QItemSelectionModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModel(QAbstractItemModel * model) {
-  return  new QItemSelectionModel(model);
+  return  new MyQItemSelectionModel(model);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModel(QAbstractItemModel * mod
 // [-2] void QItemSelectionModel(QAbstractItemModel *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
-  return  new QItemSelectionModel(model, parent);
+  return  new MyQItemSelectionModel(model, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

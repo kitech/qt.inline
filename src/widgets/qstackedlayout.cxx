@@ -72,7 +72,7 @@ return new QString(rv);
 // [-2] void QStackedLayout()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2Ev() {
-  return  new QStackedLayout();
+  return  new MyQStackedLayout();
 }
 
 // Public Visibility=Default Availability=Available
@@ -80,7 +80,7 @@ void* C_ZN14QStackedLayoutC2Ev() {
 // [-2] void QStackedLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2EP7QWidget(QWidget * parent) {
-  return  new QStackedLayout(parent);
+  return  new MyQStackedLayout(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -88,7 +88,7 @@ void* C_ZN14QStackedLayoutC2EP7QWidget(QWidget * parent) {
 // [-2] void QStackedLayout(QLayout *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedLayoutC2EP7QLayout(QLayout * parentLayout) {
-  return  new QStackedLayout(parentLayout);
+  return  new MyQStackedLayout(parentLayout);
 }
 
 // Public virtual Visibility=Default Availability=Available

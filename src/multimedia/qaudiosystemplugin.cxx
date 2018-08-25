@@ -133,7 +133,7 @@ return new QString(rv);
 // [-2] void QAudioSystemPlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QAudioSystemPluginC2EP7QObject(QObject * parent) {
-  return 0; // new QAudioSystemPlugin(parent);
+  return  new MyQAudioSystemPlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

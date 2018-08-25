@@ -242,7 +242,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QAbstractTextDocumentLayoutC2EP13QTextDocument(QTextDocument * doc) {
   auto _nilp = (MyQAbstractTextDocumentLayout*)(0);
-  return 0; // new MyQAbstractTextDocumentLayout(doc);
+  return  new MyQAbstractTextDocumentLayout(doc);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -279,7 +279,7 @@ return new QString(rv);
 // [-2] void QStyle()
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyleC2Ev() {
-  return 0; // new QStyle();
+  return  new MyQStyle();
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QVBoxLayout()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QVBoxLayoutC2Ev() {
-  return  new QVBoxLayout();
+  return  new MyQVBoxLayout();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN11QVBoxLayoutC2Ev() {
 // [-2] void QVBoxLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QVBoxLayoutC2EP7QWidget(QWidget * parent) {
-  return  new QVBoxLayout(parent);
+  return  new MyQVBoxLayout(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

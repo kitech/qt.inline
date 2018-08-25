@@ -411,7 +411,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAbstractSpinBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractSpinBox*)(0);
-  return 0; // new MyQAbstractSpinBox(parent);
+  return  new MyQAbstractSpinBox(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

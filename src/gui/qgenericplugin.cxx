@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QGenericPlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QGenericPluginC2EP7QObject(QObject * parent) {
-  return 0; // new QGenericPlugin(parent);
+  return  new MyQGenericPlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

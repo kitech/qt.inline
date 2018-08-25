@@ -72,7 +72,7 @@ return new QString(rv);
 // [-2] void QMovie(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovieC2EP7QObject(QObject * parent) {
-  return  new QMovie(parent);
+  return  new MyQMovie(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -80,7 +80,7 @@ void* C_ZN6QMovieC2EP7QObject(QObject * parent) {
 // [-2] void QMovie(QIODevice *, const QByteArray &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, QByteArray* format, QObject * parent) {
-  return  new QMovie(device, *format, parent);
+  return  new MyQMovie(device, *format, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -88,7 +88,7 @@ void* C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, QByte
 // [-2] void QMovie(const QString &, const QByteArray &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(QString* fileName, QByteArray* format, QObject * parent) {
-  return  new QMovie(*fileName, *format, parent);
+  return  new MyQMovie(*fileName, *format, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

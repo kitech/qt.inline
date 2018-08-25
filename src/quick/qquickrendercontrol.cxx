@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QQuickRenderControl(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickRenderControlC2EP7QObject(QObject * parent) {
-  return  new QQuickRenderControl(parent);
+  return  new MyQQuickRenderControl(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

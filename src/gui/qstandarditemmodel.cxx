@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QStandardItemModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModelC2EP7QObject(QObject * parent) {
-  return  new QStandardItemModel(parent);
+  return  new MyQStandardItemModel(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN18QStandardItemModelC2EP7QObject(QObject * parent) {
 // [-2] void QStandardItemModel(int, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStandardItemModelC2EiiP7QObject(int rows, int columns, QObject * parent) {
-  return  new QStandardItemModel(rows, columns, parent);
+  return  new MyQStandardItemModel(rows, columns, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

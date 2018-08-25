@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QThreadPool(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QThreadPoolC2EP7QObject(QObject * parent) {
-  return  new QThreadPool(parent);
+  return  new MyQThreadPool(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

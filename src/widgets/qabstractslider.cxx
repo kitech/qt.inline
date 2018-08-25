@@ -190,7 +190,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractSliderC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractSlider*)(0);
-  return 0; // new MyQAbstractSlider(parent);
+  return  new MyQAbstractSlider(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

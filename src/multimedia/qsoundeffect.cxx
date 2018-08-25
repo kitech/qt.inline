@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QSoundEffect(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QSoundEffectC2EP7QObject(QObject * parent) {
-  return  new QSoundEffect(parent);
+  return  new MyQSoundEffect(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

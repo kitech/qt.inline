@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QGraphicsSvgItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QGraphicsSvgItemC2EP13QGraphicsItem(QGraphicsItem * parentItem) {
-  return  new QGraphicsSvgItem(parentItem);
+  return  new MyQGraphicsSvgItem(parentItem);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN16QGraphicsSvgItemC2EP13QGraphicsItem(QGraphicsItem * parentItem) {
 // [-2] void QGraphicsSvgItem(const QString &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QGraphicsSvgItemC2ERK7QStringP13QGraphicsItem(QString* fileName, QGraphicsItem * parentItem) {
-  return  new QGraphicsSvgItem(*fileName, parentItem);
+  return  new MyQGraphicsSvgItem(*fileName, parentItem);
 }
 
 // Public Visibility=Default Availability=Available

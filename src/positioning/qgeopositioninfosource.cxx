@@ -179,7 +179,7 @@ return new QString(rv);
 // [-2] void QGeoPositionInfoSource(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGeoPositionInfoSourceC2EP7QObject(QObject * parent) {
-  return 0; // new QGeoPositionInfoSource(parent);
+  return  new MyQGeoPositionInfoSource(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

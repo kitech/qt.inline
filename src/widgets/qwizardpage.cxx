@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QWizardPage(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
-  return  new QWizardPage(parent);
+  return  new MyQWizardPage(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

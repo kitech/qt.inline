@@ -70,7 +70,7 @@ return new QString(rv);
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
-  return  new QInputDialog(parent, flags);
+  return  new MyQInputDialog(parent, flags);
 }
 #endif // QT_VERSION >= 0x040500
 

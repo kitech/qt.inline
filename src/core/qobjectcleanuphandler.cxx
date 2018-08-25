@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QObjectCleanupHandler()
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QObjectCleanupHandlerC2Ev() {
-  return  new QObjectCleanupHandler();
+  return  new MyQObjectCleanupHandler();
 }
 
 // Public virtual Visibility=Default Availability=Available

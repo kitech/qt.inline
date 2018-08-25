@@ -76,7 +76,7 @@ void C_ZN6QSound4playERK7QString(QString* filename) {
 // [-2] void QSound(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QSoundC2ERK7QStringP7QObject(QString* filename, QObject * parent) {
-  return  new QSound(*filename, parent);
+  return  new MyQSound(*filename, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

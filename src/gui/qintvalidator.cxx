@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QIntValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QIntValidatorC2EP7QObject(QObject * parent) {
-  return  new QIntValidator(parent);
+  return  new MyQIntValidator(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN13QIntValidatorC2EP7QObject(QObject * parent) {
 // [-2] void QIntValidator(int, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QIntValidatorC2EiiP7QObject(int bottom, int top, QObject * parent) {
-  return  new QIntValidator(bottom, top, parent);
+  return  new MyQIntValidator(bottom, top, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

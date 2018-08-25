@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QPanGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPanGestureC2EP7QObject(QObject * parent) {
-  return  new QPanGesture(parent);
+  return  new MyQPanGesture(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

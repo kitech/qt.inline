@@ -169,7 +169,7 @@ return new QString(rv);
 // [-2] void QAbstractProxyModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
-  return 0; // new QAbstractProxyModel(parent);
+  return  new MyQAbstractProxyModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

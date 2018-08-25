@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QQmlContext(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContextC2EP10QQmlEngineP7QObject(QQmlEngine * parent, QObject * objParent) {
-  return  new QQmlContext(parent, objParent);
+  return  new MyQQmlContext(parent, objParent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN11QQmlContextC2EP10QQmlEngineP7QObject(QQmlEngine * parent, QObject * 
 // [-2] void QQmlContext(QQmlContext *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContextC2EPS_P7QObject(QQmlContext * parent, QObject * objParent) {
-  return  new QQmlContext(parent, objParent);
+  return  new MyQQmlContext(parent, objParent);
 }
 
 // Public virtual Visibility=Default Availability=Available

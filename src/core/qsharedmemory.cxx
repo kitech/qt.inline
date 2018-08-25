@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QSharedMemory(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
-  return  new QSharedMemory(parent);
+  return  new MyQSharedMemory(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
 // [-2] void QSharedMemory(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSharedMemoryC2ERK7QStringP7QObject(QString* key, QObject * parent) {
-  return  new QSharedMemory(*key, parent);
+  return  new MyQSharedMemory(*key, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

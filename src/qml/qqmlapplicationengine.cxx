@@ -73,7 +73,7 @@ return new QString(rv);
 // [-2] void QQmlApplicationEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2EP7QObject(QObject * parent) {
-  return  new QQmlApplicationEngine(parent);
+  return  new MyQQmlApplicationEngine(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +81,7 @@ void* C_ZN21QQmlApplicationEngineC2EP7QObject(QObject * parent) {
 // [-2] void QQmlApplicationEngine(const QUrl &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject(QUrl* url, QObject * parent) {
-  return  new QQmlApplicationEngine(*url, parent);
+  return  new MyQQmlApplicationEngine(*url, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +89,7 @@ void* C_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject(QUrl* url, QObject * parent
 // [-2] void QQmlApplicationEngine(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QQmlApplicationEngineC2ERK7QStringP7QObject(QString* filePath, QObject * parent) {
-  return  new QQmlApplicationEngine(*filePath, parent);
+  return  new MyQQmlApplicationEngine(*filePath, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

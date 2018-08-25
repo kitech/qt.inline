@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QVideoProbe(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QVideoProbeC2EP7QObject(QObject * parent) {
-  return  new QVideoProbe(parent);
+  return  new MyQVideoProbe(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

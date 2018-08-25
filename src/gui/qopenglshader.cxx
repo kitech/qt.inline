@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QOpenGLShader(QOpenGLShader::ShaderType, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QOpenGLShaderC2E6QFlagsINS_13ShaderTypeBitEEP7QObject(QFlags<QOpenGLShader::ShaderTypeBit> type_, QObject * parent) {
-  return  new QOpenGLShader(type_, parent);
+  return  new MyQOpenGLShader(type_, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

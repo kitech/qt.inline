@@ -85,7 +85,7 @@ return new QString(rv);
 // [-2] void QQuickImageResponse()
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageResponseC2Ev() {
-  return 0; // new QQuickImageResponse();
+  return  new MyQQuickImageResponse();
 }
 
 // Public virtual Visibility=Default Availability=Available

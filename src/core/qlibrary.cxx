@@ -74,7 +74,7 @@ return new QString(rv);
 // [-2] void QLibrary(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2EP7QObject(QObject * parent) {
-  return  new QLibrary(parent);
+  return  new MyQLibrary(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +82,7 @@ void* C_ZN8QLibraryC2EP7QObject(QObject * parent) {
 // [-2] void QLibrary(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
-  return  new QLibrary(*fileName, parent);
+  return  new MyQLibrary(*fileName, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -90,7 +90,7 @@ void* C_ZN8QLibraryC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
 // [-2] void QLibrary(const QString &, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2ERK7QStringiP7QObject(QString* fileName, int verNum, QObject * parent) {
-  return  new QLibrary(*fileName, verNum, parent);
+  return  new MyQLibrary(*fileName, verNum, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -98,7 +98,7 @@ void* C_ZN8QLibraryC2ERK7QStringiP7QObject(QString* fileName, int verNum, QObjec
 // [-2] void QLibrary(const QString &, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QLibraryC2ERK7QStringS2_P7QObject(QString* fileName, QString* version, QObject * parent) {
-  return  new QLibrary(*fileName, *version, parent);
+  return  new MyQLibrary(*fileName, *version, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

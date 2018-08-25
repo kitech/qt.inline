@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QTextFrame(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextFrameC2EP13QTextDocument(QTextDocument * doc) {
-  return  new QTextFrame(doc);
+  return  new MyQTextFrame(doc);
 }
 
 // Public virtual Visibility=Default Availability=Available

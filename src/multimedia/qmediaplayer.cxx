@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QMediaPlayer(QObject *, QMediaPlayer::Flags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QMediaPlayerC2EP7QObject6QFlagsINS_4FlagEE(QObject * parent, QFlags<QMediaPlayer::Flag> flags) {
-  return  new QMediaPlayer(parent, flags);
+  return  new MyQMediaPlayer(parent, flags);
 }
 
 // Public virtual Visibility=Default Availability=Available

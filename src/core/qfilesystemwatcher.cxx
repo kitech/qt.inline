@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QFileSystemWatcher(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcherC2EP7QObject(QObject * parent) {
-  return  new QFileSystemWatcher(parent);
+  return  new MyQFileSystemWatcher(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN18QFileSystemWatcherC2EP7QObject(QObject * parent) {
 // [-2] void QFileSystemWatcher(const QStringList &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject(QStringList* paths, QObject * parent) {
-  return  new QFileSystemWatcher(*paths, parent);
+  return  new MyQFileSystemWatcher(*paths, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

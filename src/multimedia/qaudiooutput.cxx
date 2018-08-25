@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QAudioOutput(const QAudioFormat &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QAudioOutputC2ERK12QAudioFormatP7QObject(QAudioFormat* format, QObject * parent) {
-  return  new QAudioOutput(*format, parent);
+  return  new MyQAudioOutput(*format, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN12QAudioOutputC2ERK12QAudioFormatP7QObject(QAudioFormat* format, QObje
 // [-2] void QAudioOutput(const QAudioDeviceInfo &, const QAudioFormat &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QAudioOutputC2ERK16QAudioDeviceInfoRK12QAudioFormatP7QObject(QAudioDeviceInfo* audioDeviceInfo, QAudioFormat* format, QObject * parent) {
-  return  new QAudioOutput(*audioDeviceInfo, *format, parent);
+  return  new MyQAudioOutput(*audioDeviceInfo, *format, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

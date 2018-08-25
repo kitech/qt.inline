@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QEventLoop(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QEventLoopC2EP7QObject(QObject * parent) {
-  return  new QEventLoop(parent);
+  return  new MyQEventLoop(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -124,7 +124,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODeviceC2Ev() {
   auto _nilp = (MyQIODevice*)(0);
-  return 0; // new MyQIODevice();
+  return  new MyQIODevice();
 }
 
 // Public Visibility=Default Availability=Available
@@ -133,7 +133,7 @@ void* C_ZN9QIODeviceC2Ev() {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QIODeviceC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQIODevice*)(0);
-  return 0; // new MyQIODevice(parent);
+  return  new MyQIODevice(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

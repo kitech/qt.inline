@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QDirModel(const QStringList &, QDir::Filters, QDir::SortFlags, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDirModelC2ERK11QStringList6QFlagsIN4QDir6FilterEES3_INS4_8SortFlagEEP7QObject(QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort, QObject * parent) {
-  return  new QDirModel(*nameFilters, filters, sort, parent);
+  return  new MyQDirModel(*nameFilters, filters, sort, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN9QDirModelC2ERK11QStringList6QFlagsIN4QDir6FilterEES3_INS4_8SortFlagEE
 // [-2] void QDirModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDirModelC2EP7QObject(QObject * parent) {
-  return  new QDirModel(parent);
+  return  new MyQDirModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QSignalMapper(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QSignalMapperC2EP7QObject(QObject * parent) {
-  return  new QSignalMapper(parent);
+  return  new MyQSignalMapper(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QUndoStack(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoStackC2EP7QObject(QObject * parent) {
-  return  new QUndoStack(parent);
+  return  new MyQUndoStack(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

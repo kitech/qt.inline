@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QOpenGLDebugLogger(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QOpenGLDebugLoggerC2EP7QObject(QObject * parent) {
-  return  new QOpenGLDebugLogger(parent);
+  return  new MyQOpenGLDebugLogger(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

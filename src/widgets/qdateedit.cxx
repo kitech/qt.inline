@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QDateEdit(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
-  return  new QDateEdit(parent);
+  return  new MyQDateEdit(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
 // [-2] void QDateEdit(const QDate &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2ERK5QDateP7QWidget(QDate* date, QWidget * parent) {
-  return  new QDateEdit(*date, parent);
+  return  new MyQDateEdit(*date, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

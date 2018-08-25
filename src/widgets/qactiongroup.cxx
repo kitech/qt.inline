@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QActionGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QActionGroupC2EP7QObject(QObject * parent) {
-  return  new QActionGroup(parent);
+  return  new MyQActionGroup(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

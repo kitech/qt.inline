@@ -76,7 +76,7 @@ MyQQuickTextureFactory() : QQuickTextureFactory() {}
 // [-2] void QQuickTextureFactory()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QQuickTextureFactoryC2Ev() {
-  return 0; // new QQuickTextureFactory();
+  return  new MyQQuickTextureFactory();
 }
 
 // Public virtual Visibility=Default Availability=Available

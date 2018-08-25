@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QRegularExpressionValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
-  return  new QRegularExpressionValidator(parent);
+  return  new MyQRegularExpressionValidator(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
 // [-2] void QRegularExpressionValidator(const QRegularExpression &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(QRegularExpression* re, QObject * parent) {
-  return  new QRegularExpressionValidator(*re, parent);
+  return  new MyQRegularExpressionValidator(*re, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

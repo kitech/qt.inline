@@ -73,7 +73,7 @@ return new QString(rv);
 // [-2] void QQmlExpression()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2Ev() {
-  return  new QQmlExpression();
+  return  new MyQQmlExpression();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +81,7 @@ void* C_ZN14QQmlExpressionC2Ev() {
 // [-2] void QQmlExpression(QQmlContext *, QObject *, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2EP11QQmlContextP7QObjectRK7QStringS3_(QQmlContext * arg0, QObject * arg1, QString* arg2, QObject * arg3) {
-  return  new QQmlExpression(arg0, arg1, *arg2, arg3);
+  return  new MyQQmlExpression(arg0, arg1, *arg2, arg3);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +89,7 @@ void* C_ZN14QQmlExpressionC2EP11QQmlContextP7QObjectRK7QStringS3_(QQmlContext * 
 // [-2] void QQmlExpression(const QQmlScriptString &, QQmlContext *, QObject *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QQmlExpressionC2ERK16QQmlScriptStringP11QQmlContextP7QObjectS6_(QQmlScriptString* arg0, QQmlContext * arg1, QObject * arg2, QObject * arg3) {
-  return  new QQmlExpression(*arg0, arg1, arg2, arg3);
+  return  new MyQQmlExpression(*arg0, arg1, arg2, arg3);
 }
 
 // Public virtual Visibility=Default Availability=Available

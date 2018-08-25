@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QTextList(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTextListC2EP13QTextDocument(QTextDocument * doc) {
-  return  new QTextList(doc);
+  return  new MyQTextList(doc);
 }
 
 // Public virtual Visibility=Default Availability=Available

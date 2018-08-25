@@ -145,7 +145,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQuickPaintedItemC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickPaintedItem*)(0);
-  return 0; // new MyQQuickPaintedItem(parent);
+  return  new MyQQuickPaintedItem(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

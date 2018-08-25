@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QGestureC2EP7QObject(QObject * parent) {
-  return  new QGesture(parent);
+  return  new MyQGesture(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

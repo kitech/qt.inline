@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QTextTable(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTextTableC2EP13QTextDocument(QTextDocument * doc) {
-  return  new QTextTable(doc);
+  return  new MyQTextTable(doc);
 }
 
 // Public virtual Visibility=Default Availability=Available

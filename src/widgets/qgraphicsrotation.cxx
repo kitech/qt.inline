@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QGraphicsRotation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsRotationC2EP7QObject(QObject * parent) {
-  return  new QGraphicsRotation(parent);
+  return  new MyQGraphicsRotation(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

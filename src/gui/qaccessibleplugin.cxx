@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QAccessiblePlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAccessiblePluginC2EP7QObject(QObject * parent) {
-  return 0; // new QAccessiblePlugin(parent);
+  return  new MyQAccessiblePlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

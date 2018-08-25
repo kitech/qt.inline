@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QWebEngineProfile(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QWebEngineProfileC2EP7QObject(QObject * parent) {
-  return  new QWebEngineProfile(parent);
+  return  new MyQWebEngineProfile(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN17QWebEngineProfileC2EP7QObject(QObject * parent) {
 // [-2] void QWebEngineProfile(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QWebEngineProfileC2ERK7QStringP7QObject(QString* name, QObject * parent) {
-  return  new QWebEngineProfile(*name, parent);
+  return  new MyQWebEngineProfile(*name, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

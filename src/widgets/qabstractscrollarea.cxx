@@ -438,7 +438,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractScrollAreaC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractScrollArea*)(0);
-  return 0; // new MyQAbstractScrollArea(parent);
+  return  new MyQAbstractScrollArea(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

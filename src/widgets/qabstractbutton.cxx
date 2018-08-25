@@ -346,7 +346,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractButtonC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractButton*)(0);
-  return 0; // new MyQAbstractButton(parent);
+  return  new MyQAbstractButton(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

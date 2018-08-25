@@ -148,7 +148,7 @@ return new QString(rv);
 // [-2] void QSGTexture()
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSGTextureC2Ev() {
-  return 0; // new QSGTexture();
+  return  new MyQSGTexture();
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -141,7 +141,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQFutureWatcherBase*)(0);
-  return 0; // new MyQFutureWatcherBase(parent);
+  return  new MyQFutureWatcherBase(parent);
 }
 
 // Public Visibility=Default Availability=Available

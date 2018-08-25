@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QTranslator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTranslatorC2EP7QObject(QObject * parent) {
-  return  new QTranslator(parent);
+  return  new MyQTranslator(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

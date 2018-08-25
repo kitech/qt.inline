@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QTapAndHoldGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QTapAndHoldGestureC2EP7QObject(QObject * parent) {
-  return  new QTapAndHoldGesture(parent);
+  return  new MyQTapAndHoldGesture(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

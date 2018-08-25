@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QHttpMultiPart(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
-  return  new QHttpMultiPart(parent);
+  return  new MyQHttpMultiPart(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
 // [-2] void QHttpMultiPart(QHttpMultiPart::ContentType, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject(QHttpMultiPart::ContentType contentType, QObject * parent) {
-  return  new QHttpMultiPart(contentType, parent);
+  return  new MyQHttpMultiPart(contentType, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

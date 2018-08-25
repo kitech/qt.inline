@@ -20,7 +20,7 @@
 // [-2] void QOpenGLPaintDevice()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QOpenGLPaintDeviceC2Ev() {
-  return  new QOpenGLPaintDevice();
+  return 0; // new QOpenGLPaintDevice();
 }
 
 // Public Visibility=Default Availability=Available
@@ -28,7 +28,7 @@ void* C_ZN18QOpenGLPaintDeviceC2Ev() {
 // [-2] void QOpenGLPaintDevice(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QOpenGLPaintDeviceC2ERK5QSize(QSize* size) {
-  return  new QOpenGLPaintDevice(*size);
+  return 0; // new QOpenGLPaintDevice(*size);
 }
 
 // Public Visibility=Default Availability=Available
@@ -36,7 +36,7 @@ void* C_ZN18QOpenGLPaintDeviceC2ERK5QSize(QSize* size) {
 // [-2] void QOpenGLPaintDevice(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QOpenGLPaintDeviceC2Eii(int width, int height) {
-  return  new QOpenGLPaintDevice(width, height);
+  return 0; // new QOpenGLPaintDevice(width, height);
 }
 
 // Public virtual Visibility=Default Availability=Available

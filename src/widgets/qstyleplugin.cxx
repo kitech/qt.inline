@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QStylePlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStylePluginC2EP7QObject(QObject * parent) {
-  return 0; // new QStylePlugin(parent);
+  return  new MyQStylePlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

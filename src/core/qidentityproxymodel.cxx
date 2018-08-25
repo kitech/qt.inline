@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QIdentityProxyModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QIdentityProxyModelC2EP7QObject(QObject * parent) {
-  return  new QIdentityProxyModel(parent);
+  return  new MyQIdentityProxyModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

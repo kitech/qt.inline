@@ -75,7 +75,7 @@ return new QString(rv);
 // [-2] void QSvgRenderer(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QSvgRendererC2EP7QObject(QObject * parent) {
-  return  new QSvgRenderer(parent);
+  return  new MyQSvgRenderer(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -83,7 +83,7 @@ void* C_ZN12QSvgRendererC2EP7QObject(QObject * parent) {
 // [-2] void QSvgRenderer(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QSvgRendererC2ERK7QStringP7QObject(QString* filename, QObject * parent) {
-  return  new QSvgRenderer(*filename, parent);
+  return  new MyQSvgRenderer(*filename, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +91,7 @@ void* C_ZN12QSvgRendererC2ERK7QStringP7QObject(QString* filename, QObject * pare
 // [-2] void QSvgRenderer(const QByteArray &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QSvgRendererC2ERK10QByteArrayP7QObject(QByteArray* contents, QObject * parent) {
-  return  new QSvgRenderer(*contents, parent);
+  return  new MyQSvgRenderer(*contents, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +101,7 @@ void* C_ZN12QSvgRendererC2ERK10QByteArrayP7QObject(QByteArray* contents, QObject
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QSvgRendererC2EP16QXmlStreamReaderP7QObject(QXmlStreamReader * contents, QObject * parent) {
-  return  new QSvgRenderer(contents, parent);
+  return  new MyQSvgRenderer(contents, parent);
 }
 #endif // QT_VERSION >= 0x040500
 

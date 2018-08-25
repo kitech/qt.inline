@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QTapGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTapGestureC2EP7QObject(QObject * parent) {
-  return  new QTapGesture(parent);
+  return  new MyQTapGesture(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

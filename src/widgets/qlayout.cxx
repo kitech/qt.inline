@@ -171,7 +171,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayoutC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQLayout*)(0);
-  return 0; // new MyQLayout(parent);
+  return  new MyQLayout(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -180,7 +180,7 @@ void* C_ZN7QLayoutC2EP7QWidget(QWidget * parent) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayoutC2Ev() {
   auto _nilp = (MyQLayout*)(0);
-  return 0; // new MyQLayout();
+  return  new MyQLayout();
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -100,7 +100,7 @@ return new QString(rv);
 // [-2] void QImageIOPlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QImageIOPluginC2EP7QObject(QObject * parent) {
-  return 0; // new QImageIOPlugin(parent);
+  return  new MyQImageIOPlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

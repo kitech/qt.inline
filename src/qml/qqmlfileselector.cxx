@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QQmlFileSelector(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QQmlFileSelectorC2EP10QQmlEngineP7QObject(QQmlEngine * engine, QObject * parent) {
-  return  new QQmlFileSelector(engine, parent);
+  return  new MyQQmlFileSelector(engine, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

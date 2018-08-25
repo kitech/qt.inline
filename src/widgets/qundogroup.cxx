@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QUndoGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoGroupC2EP7QObject(QObject * parent) {
-  return  new QUndoGroup(parent);
+  return  new MyQUndoGroup(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

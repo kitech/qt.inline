@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QFormLayout(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFormLayoutC2EP7QWidget(QWidget * parent) {
-  return  new QFormLayout(parent);
+  return  new MyQFormLayout(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

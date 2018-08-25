@@ -994,7 +994,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAbstractItemViewC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQAbstractItemView*)(0);
-  return 0; // new MyQAbstractItemView(parent);
+  return  new MyQAbstractItemView(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

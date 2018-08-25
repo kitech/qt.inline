@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QBoxLayout(QBoxLayout::Direction, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg0, QWidget * parent) {
-  return  new QBoxLayout(arg0, parent);
+  return  new MyQBoxLayout(arg0, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

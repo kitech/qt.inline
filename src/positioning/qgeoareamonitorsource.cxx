@@ -183,7 +183,7 @@ return new QString(rv);
 // [-2] void QGeoAreaMonitorSource(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGeoAreaMonitorSourceC2EP7QObject(QObject * parent) {
-  return 0; // new QGeoAreaMonitorSource(parent);
+  return  new MyQGeoAreaMonitorSource(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

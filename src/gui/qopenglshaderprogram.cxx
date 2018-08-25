@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QOpenGLShaderProgram(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QOpenGLShaderProgramC2EP7QObject(QObject * parent) {
-  return  new QOpenGLShaderProgram(parent);
+  return  new MyQOpenGLShaderProgram(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

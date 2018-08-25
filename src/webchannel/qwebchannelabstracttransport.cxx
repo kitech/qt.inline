@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QWebChannelAbstractTransport(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QWebChannelAbstractTransportC2EP7QObject(QObject * parent) {
-  return 0; // new QWebChannelAbstractTransport(parent);
+  return  new MyQWebChannelAbstractTransport(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

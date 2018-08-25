@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QQuickTextDocument(QQuickItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QQuickTextDocumentC2EP10QQuickItem(QQuickItem * parent) {
-  return  new QQuickTextDocument(parent);
+  return  new MyQQuickTextDocument(parent);
 }
 
 // Public Visibility=Default Availability=Available

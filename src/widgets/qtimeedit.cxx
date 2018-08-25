@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QTimeEdit(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeEditC2EP7QWidget(QWidget * parent) {
-  return  new QTimeEdit(parent);
+  return  new MyQTimeEdit(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN9QTimeEditC2EP7QWidget(QWidget * parent) {
 // [-2] void QTimeEdit(const QTime &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeEditC2ERK5QTimeP7QWidget(QTime* time, QWidget * parent) {
-  return  new QTimeEdit(*time, parent);
+  return  new MyQTimeEdit(*time, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

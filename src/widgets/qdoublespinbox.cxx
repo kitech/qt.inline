@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QDoubleSpinBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDoubleSpinBoxC2EP7QWidget(QWidget * parent) {
-  return  new QDoubleSpinBox(parent);
+  return  new MyQDoubleSpinBox(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

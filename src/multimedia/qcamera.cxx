@@ -74,7 +74,7 @@ return new QString(rv);
 // [-2] void QCamera(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCameraC2EP7QObject(QObject * parent) {
-  return  new QCamera(parent);
+  return  new MyQCamera(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +82,7 @@ void* C_ZN7QCameraC2EP7QObject(QObject * parent) {
 // [-2] void QCamera(const QByteArray &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCameraC2ERK10QByteArrayP7QObject(QByteArray* deviceName, QObject * parent) {
-  return  new QCamera(*deviceName, parent);
+  return  new MyQCamera(*deviceName, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -92,7 +92,7 @@ void* C_ZN7QCameraC2ERK10QByteArrayP7QObject(QByteArray* deviceName, QObject * p
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCameraC2ERK11QCameraInfoP7QObject(QCameraInfo* cameraInfo, QObject * parent) {
-  return  new QCamera(*cameraInfo, parent);
+  return  new MyQCamera(*cameraInfo, parent);
 }
 #endif // QT_VERSION >= 0x050300
 
@@ -103,7 +103,7 @@ void* C_ZN7QCameraC2ERK11QCameraInfoP7QObject(QCameraInfo* cameraInfo, QObject *
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QCameraC2ENS_8PositionEP7QObject(QCamera::Position position, QObject * parent) {
-  return  new QCamera(position, parent);
+  return  new MyQCamera(position, parent);
 }
 #endif // QT_VERSION >= 0x050300
 

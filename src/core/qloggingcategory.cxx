@@ -20,7 +20,7 @@
 // [-2] void QLoggingCategory(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
-  return  new QLoggingCategory(category);
+  return 0; // new QLoggingCategory(category);
 }
 
 // Public Visibility=Default Availability=Available
@@ -30,7 +30,7 @@ void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
-  return  new QLoggingCategory(category, severityLevel);
+  return 0; // new QLoggingCategory(category, severityLevel);
 }
 #endif // QT_VERSION >= 0x050400
 

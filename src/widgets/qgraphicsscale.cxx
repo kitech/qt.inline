@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QGraphicsScale(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QGraphicsScaleC2EP7QObject(QObject * parent) {
-  return  new QGraphicsScale(parent);
+  return  new MyQGraphicsScale(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

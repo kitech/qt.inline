@@ -162,7 +162,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QAbstractAnimationC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAbstractAnimation*)(0);
-  return 0; // new MyQAbstractAnimation(parent);
+  return  new MyQAbstractAnimation(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

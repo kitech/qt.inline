@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QCommonStyle()
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QCommonStyleC2Ev() {
-  return  new QCommonStyle();
+  return  new MyQCommonStyle();
 }
 
 // Public virtual Visibility=Default Availability=Available

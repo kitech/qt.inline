@@ -132,7 +132,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractSocketC2ENS_10SocketTypeEP7QObject(QAbstractSocket::SocketType socketType, QObject * parent) {
   auto _nilp = (MyQAbstractSocket*)(0);
-  return 0; // new MyQAbstractSocket(socketType, parent);
+  return  new MyQAbstractSocket(socketType, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -117,7 +117,7 @@ return new QString(rv);
 // [-2] void QAbstractTableModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractTableModelC2EP7QObject(QObject * parent) {
-  return 0; // new QAbstractTableModel(parent);
+  return  new MyQAbstractTableModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

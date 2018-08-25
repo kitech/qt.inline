@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QTcpSocket(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QTcpSocketC2EP7QObject(QObject * parent) {
-  return  new QTcpSocket(parent);
+  return  new MyQTcpSocket(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

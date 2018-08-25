@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QIconEnginePlugin(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QIconEnginePluginC2EP7QObject(QObject * parent) {
-  return 0; // new QIconEnginePlugin(parent);
+  return  new MyQIconEnginePlugin(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

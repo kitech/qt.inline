@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QDrag(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDragC2EP7QObject(QObject * dragSource) {
-  return  new QDrag(dragSource);
+  return  new MyQDrag(dragSource);
 }
 
 // Public virtual Visibility=Default Availability=Available

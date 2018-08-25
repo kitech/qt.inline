@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QStringListModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModelC2EP7QObject(QObject * parent) {
-  return  new QStringListModel(parent);
+  return  new MyQStringListModel(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN16QStringListModelC2EP7QObject(QObject * parent) {
 // [-2] void QStringListModel(const QStringList &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModelC2ERK11QStringListP7QObject(QStringList* strings, QObject * parent) {
-  return  new QStringListModel(*strings, parent);
+  return  new MyQStringListModel(*strings, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

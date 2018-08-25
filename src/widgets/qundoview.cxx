@@ -73,7 +73,7 @@ return new QString(rv);
 // [-2] void QUndoView(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP7QWidget(QWidget * parent) {
-  return  new QUndoView(parent);
+  return  new MyQUndoView(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +81,7 @@ void* C_ZN9QUndoViewC2EP7QWidget(QWidget * parent) {
 // [-2] void QUndoView(QUndoStack *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * parent) {
-  return  new QUndoView(stack, parent);
+  return  new MyQUndoView(stack, parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +89,7 @@ void* C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * pare
 // [-2] void QUndoView(QUndoGroup *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QUndoViewC2EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent) {
-  return  new QUndoView(group, parent);
+  return  new MyQUndoView(group, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

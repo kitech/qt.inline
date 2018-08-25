@@ -122,7 +122,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroupC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQAnimationGroup*)(0);
-  return 0; // new MyQAnimationGroup(parent);
+  return  new MyQAnimationGroup(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

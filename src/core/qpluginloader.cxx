@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QPluginLoader(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
-  return  new QPluginLoader(parent);
+  return  new MyQPluginLoader(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
 // [-2] void QPluginLoader(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QPluginLoaderC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
-  return  new QPluginLoader(*fileName, parent);
+  return  new MyQPluginLoader(*fileName, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

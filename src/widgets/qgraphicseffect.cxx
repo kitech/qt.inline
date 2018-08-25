@@ -105,7 +105,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsEffectC2EP7QObject(QObject * parent) {
   auto _nilp = (MyQGraphicsEffect*)(0);
-  return 0; // new MyQGraphicsEffect(parent);
+  return  new MyQGraphicsEffect(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

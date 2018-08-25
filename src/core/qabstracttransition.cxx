@@ -122,7 +122,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractTransitionC2EP6QState(QState * sourceState) {
   auto _nilp = (MyQAbstractTransition*)(0);
-  return 0; // new MyQAbstractTransition(sourceState);
+  return  new MyQAbstractTransition(sourceState);
 }
 
 // Public virtual Visibility=Default Availability=Available

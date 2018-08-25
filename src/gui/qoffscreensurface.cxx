@@ -73,7 +73,7 @@ return new QString(rv);
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QOffscreenSurfaceC2EP7QScreenP7QObject(QScreen * screen, QObject * parent) {
-  return  new QOffscreenSurface(screen, parent);
+  return  new MyQOffscreenSurface(screen, parent);
 }
 #endif // QT_VERSION >= 0x050a00
 
@@ -82,7 +82,7 @@ void* C_ZN17QOffscreenSurfaceC2EP7QScreenP7QObject(QScreen * screen, QObject * p
 // [-2] void QOffscreenSurface(QScreen *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QOffscreenSurfaceC2EP7QScreen(QScreen * screen) {
-  return  new QOffscreenSurface(screen);
+  return  new MyQOffscreenSurface(screen);
 }
 
 // Public virtual Visibility=Default Availability=Available

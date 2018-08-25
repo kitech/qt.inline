@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QAudioDecoder(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QAudioDecoderC2EP7QObject(QObject * parent) {
-  return  new QAudioDecoder(parent);
+  return  new MyQAudioDecoder(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

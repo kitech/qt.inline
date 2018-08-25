@@ -71,7 +71,7 @@ return new QString(rv);
 // [-2] void QJSEngine()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngineC2Ev() {
-  return  new QJSEngine();
+  return  new MyQJSEngine();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +79,7 @@ void* C_ZN9QJSEngineC2Ev() {
 // [-2] void QJSEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QJSEngineC2EP7QObject(QObject * parent) {
-  return  new QJSEngine(parent);
+  return  new MyQJSEngine(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

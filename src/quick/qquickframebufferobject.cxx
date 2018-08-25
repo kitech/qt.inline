@@ -127,7 +127,7 @@ return new QString(rv);
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QQuickFramebufferObjectC2EP10QQuickItem(QQuickItem * parent) {
   auto _nilp = (MyQQuickFramebufferObject*)(0);
-  return 0; // new MyQQuickFramebufferObject(parent);
+  return  new MyQQuickFramebufferObject(parent);
 }
 
 // Public Visibility=Default Availability=Available

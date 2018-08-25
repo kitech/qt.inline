@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QUdpSocket(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUdpSocketC2EP7QObject(QObject * parent) {
-  return  new QUdpSocket(parent);
+  return  new MyQUdpSocket(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

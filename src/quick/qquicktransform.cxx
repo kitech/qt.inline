@@ -83,7 +83,7 @@ return new QString(rv);
 // [-2] void QQuickTransform(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QQuickTransformC2EP7QObject(QObject * parent) {
-  return 0; // new QQuickTransform(parent);
+  return  new MyQQuickTransform(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

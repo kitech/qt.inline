@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QOpenGLContext(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLContextC2EP7QObject(QObject * parent) {
-  return  new QOpenGLContext(parent);
+  return  new MyQOpenGLContext(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

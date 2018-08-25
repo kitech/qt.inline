@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QPinchGesture(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QPinchGestureC2EP7QObject(QObject * parent) {
-  return  new QPinchGesture(parent);
+  return  new MyQPinchGesture(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

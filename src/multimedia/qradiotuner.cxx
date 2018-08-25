@@ -68,7 +68,7 @@ return new QString(rv);
 // [-2] void QRadioTuner(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QRadioTunerC2EP7QObject(QObject * parent) {
-  return  new QRadioTuner(parent);
+  return  new MyQRadioTuner(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -27,7 +27,7 @@ MyQAndroidService(int & argc, char** argv, int flags) : QAndroidService(argc, ar
 // [-2] void QAndroidService(int &, char **, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAndroidServiceC2ERiPPci(int & argc, char** argv, int flags) {
-  return  new QAndroidService(*(new int(argc)), argv, flags);
+  return  new MyQAndroidService(*(new int(argc)), argv, flags);
 }
 
 // Public virtual Visibility=Default Availability=Available

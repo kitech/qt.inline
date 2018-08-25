@@ -101,7 +101,7 @@ return new QString(rv);
 // [-2] void QAbstractListModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QAbstractListModelC2EP7QObject(QObject * parent) {
-  return 0; // new QAbstractListModel(parent);
+  return  new MyQAbstractListModel(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

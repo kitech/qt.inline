@@ -84,7 +84,7 @@ return new QString(rv);
 // [-2] void QValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
-  return 0; // new QValidator(parent);
+  return  new MyQValidator(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -70,7 +70,7 @@ return new QString(rv);
 // [-2] void QDoubleValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
-  return  new QDoubleValidator(parent);
+  return  new MyQDoubleValidator(parent);
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +78,7 @@ void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
 // [-2] void QDoubleValidator(double, double, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EddiP7QObject(double bottom, double top, int decimals, QObject * parent) {
-  return  new QDoubleValidator(bottom, top, decimals, parent);
+  return  new MyQDoubleValidator(bottom, top, decimals, parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

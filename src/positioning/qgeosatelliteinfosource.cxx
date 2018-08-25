@@ -146,7 +146,7 @@ return new QString(rv);
 // [-2] void QGeoSatelliteInfoSource(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QGeoSatelliteInfoSourceC2EP7QObject(QObject * parent) {
-  return 0; // new QGeoSatelliteInfoSource(parent);
+  return  new MyQGeoSatelliteInfoSource(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available

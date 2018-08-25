@@ -69,7 +69,7 @@ return new QString(rv);
 // [-2] void QFileSelector(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFileSelectorC2EP7QObject(QObject * parent) {
-  return  new QFileSelector(parent);
+  return  new MyQFileSelector(parent);
 }
 
 // Public virtual Visibility=Default Availability=Available
