@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQOpenGLFunctions_t {
+  QByteArrayData data[1];
+  char stringdata0[19];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLFunctions_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQOpenGLFunctions_t qt_meta_stringdata_MyQOpenGLFunctions = {
+   {
+  QT_MOC_LITERAL(0, 0, 18), // "MyQOpenGLFunctions"
+  },
+  "MyQOpenGLFunctions"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQOpenGLFunctions[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQOpenGLFunctions : public QOpenGLFunctions {
 public:
   virtual ~MyQOpenGLFunctions() {}
@@ -23,7 +52,6 @@ MyQOpenGLFunctions() : QOpenGLFunctions() {}
 // void QOpenGLFunctions(QOpenGLContext *)
 MyQOpenGLFunctions(QOpenGLContext * context) : QOpenGLFunctions(context) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglfunctions.h:233
 // [-2] void QOpenGLFunctions()
@@ -187,8 +215,8 @@ void C_ZN16QOpenGLFunctions16glDeleteTexturesEiPKj(void *this_, GLsizei n, const
 // [-2] void glDepthFunc(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
-void C_ZN16QOpenGLFunctions11glDepthFuncEj(void *this_, GLenum func) {
-  ((QOpenGLFunctions*)this_)->glDepthFunc(func);
+void C_ZN16QOpenGLFunctions11glDepthFuncEj(void *this_, GLenum func_) {
+  ((QOpenGLFunctions*)this_)->glDepthFunc(func_);
 }
 #endif // QT_VERSION >= 0x050300
 
@@ -462,8 +490,8 @@ void C_ZN16QOpenGLFunctions9glScissorEiiii(void *this_, GLint x, GLint y, GLsize
 // [-2] void glStencilFunc(GLenum, GLint, GLuint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
-void C_ZN16QOpenGLFunctions13glStencilFuncEjij(void *this_, GLenum func, GLint ref, GLuint mask) {
-  ((QOpenGLFunctions*)this_)->glStencilFunc(func, ref, mask);
+void C_ZN16QOpenGLFunctions13glStencilFuncEjij(void *this_, GLenum func_, GLint ref, GLuint mask) {
+  ((QOpenGLFunctions*)this_)->glStencilFunc(func_, ref, mask);
 }
 #endif // QT_VERSION >= 0x050300
 
@@ -1074,8 +1102,8 @@ void C_ZN16QOpenGLFunctions14glShaderBinaryEiPKjjPKvi(void *this_, GLint n, cons
 // /usr/include/qt/QtGui/qopenglfunctions.h:380
 // [-2] void glStencilFuncSeparate(GLenum, GLenum, GLint, GLuint)
 extern "C" Q_DECL_EXPORT
-void C_ZN16QOpenGLFunctions21glStencilFuncSeparateEjjij(void *this_, GLenum face, GLenum func, GLint ref, GLuint mask) {
-  ((QOpenGLFunctions*)this_)->glStencilFuncSeparate(face, func, ref, mask);
+void C_ZN16QOpenGLFunctions21glStencilFuncSeparateEjjij(void *this_, GLenum face, GLenum func_, GLint ref, GLuint mask) {
+  ((QOpenGLFunctions*)this_)->glStencilFuncSeparate(face, func_, ref, mask);
 }
 
 // Public Visibility=Default Availability=Available

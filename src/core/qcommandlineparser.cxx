@@ -15,13 +15,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQCommandLineParser_t {
+  QByteArrayData data[1];
+  char stringdata0[21];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQCommandLineParser_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQCommandLineParser_t qt_meta_stringdata_MyQCommandLineParser = {
+   {
+  QT_MOC_LITERAL(0, 0, 20), // "MyQCommandLineParser"
+  },
+  "MyQCommandLineParser"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQCommandLineParser[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQCommandLineParser : public QCommandLineParser {
 public:
   virtual ~MyQCommandLineParser() {}
 // void QCommandLineParser()
 MyQCommandLineParser() : QCommandLineParser() {}
 };
-
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:57
 // [8] QString tr(const char *, const char *, int)

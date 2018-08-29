@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQPixelFormat_t {
+  QByteArrayData data[1];
+  char stringdata0[15];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQPixelFormat_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQPixelFormat_t qt_meta_stringdata_MyQPixelFormat = {
+   {
+  QT_MOC_LITERAL(0, 0, 14), // "MyQPixelFormat"
+  },
+  "MyQPixelFormat"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQPixelFormat[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQPixelFormat : public QPixelFormat {
 public:
   virtual ~MyQPixelFormat() {}
@@ -23,7 +52,6 @@ MyQPixelFormat() : QPixelFormat() {}
 // void QPixelFormat(QPixelFormat::ColorModel, uchar, uchar, uchar, uchar, uchar, uchar, QPixelFormat::AlphaUsage, QPixelFormat::AlphaPosition, QPixelFormat::AlphaPremultiplied, QPixelFormat::TypeInterpretation, QPixelFormat::ByteOrder, uchar)
 MyQPixelFormat(QPixelFormat::ColorModel colorModel, uchar firstSize, uchar secondSize, uchar thirdSize, uchar fourthSize, uchar fifthSize, uchar alphaSize, QPixelFormat::AlphaUsage alphaUsage, QPixelFormat::AlphaPosition alphaPosition, QPixelFormat::AlphaPremultiplied premultiplied, QPixelFormat::TypeInterpretation typeInterpretation, QPixelFormat::ByteOrder byteOrder, uchar subEnum) : QPixelFormat(colorModel, firstSize, secondSize, thirdSize, fourthSize, fifthSize, alphaSize, alphaUsage, alphaPosition, premultiplied, typeInterpretation, byteOrder, subEnum) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixelformat.h:163
 // [-2] void QPixelFormat()

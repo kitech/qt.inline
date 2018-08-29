@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQNetworkProxy_t {
+  QByteArrayData data[1];
+  char stringdata0[16];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQNetworkProxy_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQNetworkProxy_t qt_meta_stringdata_MyQNetworkProxy = {
+   {
+  QT_MOC_LITERAL(0, 0, 15), // "MyQNetworkProxy"
+  },
+  "MyQNetworkProxy"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQNetworkProxy[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQNetworkProxy : public QNetworkProxy {
 public:
   virtual ~MyQNetworkProxy() {}
@@ -25,7 +54,6 @@ MyQNetworkProxy(QNetworkProxy::ProxyType type_, const QString & hostName, quint1
 // void QNetworkProxy(const QNetworkProxy &)
 MyQNetworkProxy(const QNetworkProxy & other) : QNetworkProxy(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:160
 // [-2] void QNetworkProxy()

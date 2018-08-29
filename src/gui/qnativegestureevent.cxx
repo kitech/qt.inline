@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQNativeGestureEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[22];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQNativeGestureEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQNativeGestureEvent_t qt_meta_stringdata_MyQNativeGestureEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 21), // "MyQNativeGestureEvent"
+  },
+  "MyQNativeGestureEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQNativeGestureEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQNativeGestureEvent : public QNativeGestureEvent {
 public:
   virtual ~MyQNativeGestureEvent() {}
@@ -23,7 +52,6 @@ MyQNativeGestureEvent(Qt::NativeGestureType type_, const QPointF & localPos, con
 // void QNativeGestureEvent(Qt::NativeGestureType, const QTouchDevice *, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
 MyQNativeGestureEvent(Qt::NativeGestureType type_, const QTouchDevice * dev, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) : QNativeGestureEvent(type_, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:305
 // [-2] void QNativeGestureEvent(Qt::NativeGestureType, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)

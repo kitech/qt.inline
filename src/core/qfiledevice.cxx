@@ -15,7 +15,74 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQFileDevice_t {
+  QByteArrayData data[1];
+  char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQFileDevice_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQFileDevice_t qt_meta_stringdata_MyQFileDevice = {
+   {
+  QT_MOC_LITERAL(0, 0, 13), // "MyQFileDevice"
+  },
+  "MyQFileDevice"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQFileDevice[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQFileDevice : public QFileDevice {
+public: // Q_OBJECT
+/*static*/ QMetaObject staticMetaObject = {{&QFileDevice::staticMetaObject,
+  qt_meta_stringdata_MyQFileDevice.data,
+  qt_meta_data_MyQFileDevice,
+  qt_static_metacall, nullptr, nullptr
+}};
+virtual const QMetaObject *metaObject() const override {
+  int handled = 0;
+  auto irv = callbackAllInherits_fnptr((void*)this, (char*)"metaObject", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+   if (handled) { return (QMetaObject*)irv; }
+  return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject; 
+}
+virtual void *qt_metacast(const char *_clname) override {
+  int handled = 0;
+  auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacast", &handled, 1, (uint64_t)_clname, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+   if (handled) { return (void*)irv; }
+  if (!_clname) return nullptr;
+  if (!strcmp(_clname, qt_meta_stringdata_MyQFileDevice.stringdata0))
+      return static_cast<void*>(this);
+  return QFileDevice::qt_metacast(_clname);
+}
+virtual int qt_metacall(QMetaObject::Call _c, int _id, void **_a) override {
+   _id = QFileDevice::qt_metacall(_c, _id, _a);
+   int handled = 0;
+   auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacall", &handled, 3, (uint64_t)_c, (uint64_t)_id, (uint64_t)_a, 0, 0, 0, 0, 0, 0, 0);
+   if (handled) { return (int)irv; }
+   return _id;
+  }
+/*static*/ inline QString tr(const char *s, const char *c = nullptr, int n = -1)
+{ return staticMetaObject.tr(s, c, n); }
+/*static*/ inline QString trUtf8(const char *s, const char *c = nullptr, int n = -1)
+ { return staticMetaObject.tr(s, c, n); }
+Q_DECL_HIDDEN_STATIC_METACALL static void qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a){
+  int handled = 0;
+  auto irv = callbackAllInherits_fnptr((void*)_o, (char*)"qt_static_metacall", &handled, 4, (uint64_t)_o, (uint64_t)_c, (uint64_t)_id, (uint64_t)_a, 0, 0, 0, 0, 0, 0);
+}
+private: struct QPrivateSignal {};
+
 public:
   virtual ~MyQFileDevice() {}
 // Protected virtual Visibility=Default Availability=Available
@@ -58,7 +125,6 @@ public:
   }
 
 };
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfiledevice.h:142
 // [8] qint64 readData(char *, qint64)

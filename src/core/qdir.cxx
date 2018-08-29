@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQDir_t {
+  QByteArrayData data[1];
+  char stringdata0[7];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQDir_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQDir_t qt_meta_stringdata_MyQDir = {
+   {
+  QT_MOC_LITERAL(0, 0, 6), // "MyQDir"
+  },
+  "MyQDir"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQDir[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQDir : public QDir {
 public:
   virtual ~MyQDir() {}
@@ -24,7 +53,6 @@ MyQDir(const QString & path) : QDir(path) {}
 // void QDir(const QString &, const QString &, QDir::SortFlags, QDir::Filters)
 MyQDir(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) : QDir(path, nameFilter, sort, filter) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:101
 // [-2] void QDir(const QDir &)

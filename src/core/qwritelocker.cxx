@@ -14,13 +14,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQWriteLocker_t {
+  QByteArrayData data[1];
+  char stringdata0[15];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQWriteLocker_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQWriteLocker_t qt_meta_stringdata_MyQWriteLocker = {
+   {
+  QT_MOC_LITERAL(0, 0, 14), // "MyQWriteLocker"
+  },
+  "MyQWriteLocker"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQWriteLocker[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQWriteLocker : public QWriteLocker {
 public:
   virtual ~MyQWriteLocker() {}
 // void QWriteLocker(QReadWriteLock *)
 MyQWriteLocker(QReadWriteLock * readWriteLock) : QWriteLocker(readWriteLock) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:131
 // [-2] void QWriteLocker(QReadWriteLock *)

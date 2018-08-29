@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQRawFont_t {
+  QByteArrayData data[1];
+  char stringdata0[11];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQRawFont_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQRawFont_t qt_meta_stringdata_MyQRawFont = {
+   {
+  QT_MOC_LITERAL(0, 0, 10), // "MyQRawFont"
+  },
+  "MyQRawFont"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQRawFont[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQRawFont : public QRawFont {
 public:
   virtual ~MyQRawFont() {}
@@ -27,7 +56,6 @@ MyQRawFont(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreferenc
 // void QRawFont(const QRawFont &)
 MyQRawFont(const QRawFont & other) : QRawFont(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:74
 // [-2] void QRawFont()

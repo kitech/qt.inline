@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQNetworkCacheMetaData_t {
+  QByteArrayData data[1];
+  char stringdata0[24];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQNetworkCacheMetaData_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQNetworkCacheMetaData_t qt_meta_stringdata_MyQNetworkCacheMetaData = {
+   {
+  QT_MOC_LITERAL(0, 0, 23), // "MyQNetworkCacheMetaData"
+  },
+  "MyQNetworkCacheMetaData"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQNetworkCacheMetaData[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQNetworkCacheMetaData : public QNetworkCacheMetaData {
 public:
   virtual ~MyQNetworkCacheMetaData() {}
@@ -23,7 +52,6 @@ MyQNetworkCacheMetaData() : QNetworkCacheMetaData() {}
 // void QNetworkCacheMetaData(const QNetworkCacheMetaData &)
 MyQNetworkCacheMetaData(const QNetworkCacheMetaData & other) : QNetworkCacheMetaData(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:66
 // [-2] void QNetworkCacheMetaData()

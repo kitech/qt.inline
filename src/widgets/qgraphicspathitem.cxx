@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQGraphicsPathItem_t {
+  QByteArrayData data[1];
+  char stringdata0[20];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQGraphicsPathItem_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQGraphicsPathItem_t qt_meta_stringdata_MyQGraphicsPathItem = {
+   {
+  QT_MOC_LITERAL(0, 0, 19), // "MyQGraphicsPathItem"
+  },
+  "MyQGraphicsPathItem"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQGraphicsPathItem[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQGraphicsPathItem : public QGraphicsPathItem {
 public:
   virtual ~MyQGraphicsPathItem() {}
@@ -62,7 +91,6 @@ MyQGraphicsPathItem(const QPainterPath & path, QGraphicsItem * parent) : QGraphi
   }
 
 };
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:648
 // [1] bool supportsExtension(QGraphicsItem::Extension)

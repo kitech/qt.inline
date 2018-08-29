@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQAccessibleTableModelChangeEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[35];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQAccessibleTableModelChangeEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQAccessibleTableModelChangeEvent_t qt_meta_stringdata_MyQAccessibleTableModelChangeEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 34), // "MyQAccessibleTableModelChangeEvent"
+  },
+  "MyQAccessibleTableModelChangeEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQAccessibleTableModelChangeEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQAccessibleTableModelChangeEvent : public QAccessibleTableModelChangeEvent {
 public:
   virtual ~MyQAccessibleTableModelChangeEvent() {}
@@ -22,7 +51,6 @@ MyQAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEve
 // void QAccessibleTableModelChangeEvent(QAccessibleInterface *, QAccessibleTableModelChangeEvent::ModelChangeType)
 MyQAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) : QAccessibleTableModelChangeEvent(iface, changeType) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:932
 // [-2] void QAccessibleTableModelChangeEvent(QObject *, QAccessibleTableModelChangeEvent::ModelChangeType)

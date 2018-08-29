@@ -14,13 +14,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQShortcutEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[17];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQShortcutEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQShortcutEvent_t qt_meta_stringdata_MyQShortcutEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 16), // "MyQShortcutEvent"
+  },
+  "MyQShortcutEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQShortcutEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQShortcutEvent : public QShortcutEvent {
 public:
   virtual ~MyQShortcutEvent() {}
 // void QShortcutEvent(const QKeySequence &, int, bool)
 MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEvent(key, id, ambiguous) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:767
 // [-2] void QShortcutEvent(const QKeySequence &, int, bool)

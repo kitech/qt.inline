@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQTextTableCell_t {
+  QByteArrayData data[1];
+  char stringdata0[17];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQTextTableCell_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQTextTableCell_t qt_meta_stringdata_MyQTextTableCell = {
+   {
+  QT_MOC_LITERAL(0, 0, 16), // "MyQTextTableCell"
+  },
+  "MyQTextTableCell"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQTextTableCell[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQTextTableCell : public QTextTableCell {
 public:
   virtual ~MyQTextTableCell() {}
@@ -22,7 +51,6 @@ MyQTextTableCell() : QTextTableCell() {}
 // void QTextTableCell(const QTextTableCell &)
 MyQTextTableCell(const QTextTableCell & o) : QTextTableCell(o) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:57
 // [-2] void QTextTableCell()

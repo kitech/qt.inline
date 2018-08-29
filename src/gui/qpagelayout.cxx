@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQPageLayout_t {
+  QByteArrayData data[1];
+  char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQPageLayout_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQPageLayout_t qt_meta_stringdata_MyQPageLayout = {
+   {
+  QT_MOC_LITERAL(0, 0, 13), // "MyQPageLayout"
+  },
+  "MyQPageLayout"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQPageLayout[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQPageLayout : public QPageLayout {
 public:
   virtual ~MyQPageLayout() {}
@@ -25,7 +54,6 @@ MyQPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, 
 // void QPageLayout(const QPageLayout &)
 MyQPageLayout(const QPageLayout & other) : QPageLayout(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:80
 // [-2] void QPageLayout()

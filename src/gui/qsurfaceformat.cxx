@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQSurfaceFormat_t {
+  QByteArrayData data[1];
+  char stringdata0[17];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQSurfaceFormat_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQSurfaceFormat_t qt_meta_stringdata_MyQSurfaceFormat = {
+   {
+  QT_MOC_LITERAL(0, 0, 16), // "MyQSurfaceFormat"
+  },
+  "MyQSurfaceFormat"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQSurfaceFormat[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQSurfaceFormat : public QSurfaceFormat {
 public:
   virtual ~MyQSurfaceFormat() {}
@@ -25,7 +54,6 @@ MyQSurfaceFormat(QFlags<QSurfaceFormat::FormatOption> options) : QSurfaceFormat(
 // void QSurfaceFormat(const QSurfaceFormat &)
 MyQSurfaceFormat(const QSurfaceFormat & other) : QSurfaceFormat(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:94
 // [-2] void QSurfaceFormat()

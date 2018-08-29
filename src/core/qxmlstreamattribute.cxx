@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQXmlStreamAttribute_t {
+  QByteArrayData data[1];
+  char stringdata0[22];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamAttribute_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQXmlStreamAttribute_t qt_meta_stringdata_MyQXmlStreamAttribute = {
+   {
+  QT_MOC_LITERAL(0, 0, 21), // "MyQXmlStreamAttribute"
+  },
+  "MyQXmlStreamAttribute"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQXmlStreamAttribute[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQXmlStreamAttribute : public QXmlStreamAttribute {
 public:
   virtual ~MyQXmlStreamAttribute() {}
@@ -29,7 +58,6 @@ MyQXmlStreamAttribute(const QXmlStreamAttribute & arg0) : QXmlStreamAttribute(ar
 // void QXmlStreamAttribute(QXmlStreamAttribute &&)
 MyQXmlStreamAttribute(QXmlStreamAttribute && other) : QXmlStreamAttribute(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:109
 // [-2] void QXmlStreamAttribute()

@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQWheelEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQWheelEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQWheelEvent_t qt_meta_stringdata_MyQWheelEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 13), // "MyQWheelEvent"
+  },
+  "MyQWheelEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQWheelEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQWheelEvent : public QWheelEvent {
 public:
   virtual ~MyQWheelEvent() {}
@@ -30,7 +59,6 @@ MyQWheelEvent(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta,
 // void QWheelEvent(const QPointF &, const QPointF &, QPoint, QPoint, int, Qt::Orientation, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase, Qt::MouseEventSource, bool)
 MyQWheelEvent(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta, QPoint angleDelta, int qt4Delta, Qt::Orientation qt4Orientation, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::ScrollPhase phase, Qt::MouseEventSource source, bool inverted) : QWheelEvent(pos, globalPos, pixelDelta, angleDelta, qt4Delta, qt4Orientation, buttons, modifiers, phase, source, inverted) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:178
 // [-2] void QWheelEvent(const QPointF &, int, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::Orientation)

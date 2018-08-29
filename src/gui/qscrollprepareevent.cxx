@@ -15,13 +15,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQScrollPrepareEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[22];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQScrollPrepareEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQScrollPrepareEvent_t qt_meta_stringdata_MyQScrollPrepareEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 21), // "MyQScrollPrepareEvent"
+  },
+  "MyQScrollPrepareEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQScrollPrepareEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQScrollPrepareEvent : public QScrollPrepareEvent {
 public:
   virtual ~MyQScrollPrepareEvent() {}
 // void QScrollPrepareEvent(const QPointF &)
 MyQScrollPrepareEvent(const QPointF & startPos) : QScrollPrepareEvent(startPos) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:990
 // [-2] void QScrollPrepareEvent(const QPointF &)

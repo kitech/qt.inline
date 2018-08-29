@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQMouseEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQMouseEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQMouseEvent_t qt_meta_stringdata_MyQMouseEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 13), // "MyQMouseEvent"
+  },
+  "MyQMouseEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQMouseEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQMouseEvent : public QMouseEvent {
 public:
   virtual ~MyQMouseEvent() {}
@@ -26,7 +55,6 @@ MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & wind
 // void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
 MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source) : QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers, source) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:107
 // [-2] void QMouseEvent(QEvent::Type, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)

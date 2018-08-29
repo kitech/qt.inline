@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQUuid_t {
+  QByteArrayData data[1];
+  char stringdata0[8];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQUuid_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQUuid_t qt_meta_stringdata_MyQUuid = {
+   {
+  QT_MOC_LITERAL(0, 0, 7), // "MyQUuid"
+  },
+  "MyQUuid"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQUuid[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQUuid : public QUuid {
 public:
   virtual ~MyQUuid() {}
@@ -28,7 +57,6 @@ MyQUuid(const char * arg0) : QUuid(arg0) {}
 // void QUuid(const QByteArray &)
 MyQUuid(const QByteArray & arg0) : QUuid(arg0) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:89
 // [-2] void QUuid()

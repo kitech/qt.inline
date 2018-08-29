@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQSignalBlocker_t {
+  QByteArrayData data[1];
+  char stringdata0[17];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQSignalBlocker_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQSignalBlocker_t qt_meta_stringdata_MyQSignalBlocker = {
+   {
+  QT_MOC_LITERAL(0, 0, 16), // "MyQSignalBlocker"
+  },
+  "MyQSignalBlocker"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQSignalBlocker[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQSignalBlocker : public QSignalBlocker {
 public:
   virtual ~MyQSignalBlocker() {}
@@ -23,7 +52,6 @@ MyQSignalBlocker(QObject * o) : QSignalBlocker(o) {}
 // void QSignalBlocker(QObject &)
 MyQSignalBlocker(QObject & o) : QSignalBlocker(o) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:548
 // [-2] void QSignalBlocker(QObject *)

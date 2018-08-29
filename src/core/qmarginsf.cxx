@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQMarginsF_t {
+  QByteArrayData data[1];
+  char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQMarginsF_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQMarginsF_t qt_meta_stringdata_MyQMarginsF = {
+   {
+  QT_MOC_LITERAL(0, 0, 11), // "MyQMarginsF"
+  },
+  "MyQMarginsF"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQMarginsF[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQMarginsF : public QMarginsF {
 public:
   virtual ~MyQMarginsF() {}
@@ -25,7 +54,6 @@ MyQMarginsF(qreal left, qreal top, qreal right, qreal bottom) : QMarginsF(left, 
 // void QMarginsF(const QMargins &)
 MyQMarginsF(const QMargins & margins) : QMarginsF(margins) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:288
 // [-2] void QMarginsF()

@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQMediaServiceProviderHint_t {
+  QByteArrayData data[1];
+  char stringdata0[28];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQMediaServiceProviderHint_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQMediaServiceProviderHint_t qt_meta_stringdata_MyQMediaServiceProviderHint = {
+   {
+  QT_MOC_LITERAL(0, 0, 27), // "MyQMediaServiceProviderHint"
+  },
+  "MyQMediaServiceProviderHint"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQMediaServiceProviderHint[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQMediaServiceProviderHint : public QMediaServiceProviderHint {
 public:
   virtual ~MyQMediaServiceProviderHint() {}
@@ -30,7 +59,6 @@ MyQMediaServiceProviderHint(QFlags<QMediaServiceProviderHint::Feature> features)
 // void QMediaServiceProviderHint(const QMediaServiceProviderHint &)
 MyQMediaServiceProviderHint(const QMediaServiceProviderHint & other) : QMediaServiceProviderHint(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:74
 // [-2] void QMediaServiceProviderHint()

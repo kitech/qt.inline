@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQXmlStreamWriter_t {
+  QByteArrayData data[1];
+  char stringdata0[19];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamWriter_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQXmlStreamWriter_t qt_meta_stringdata_MyQXmlStreamWriter = {
+   {
+  QT_MOC_LITERAL(0, 0, 18), // "MyQXmlStreamWriter"
+  },
+  "MyQXmlStreamWriter"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQXmlStreamWriter[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQXmlStreamWriter : public QXmlStreamWriter {
 public:
   virtual ~MyQXmlStreamWriter() {}
@@ -27,7 +56,6 @@ MyQXmlStreamWriter(QByteArray * array) : QXmlStreamWriter(array) {}
 // void QXmlStreamWriter(QString *)
 MyQXmlStreamWriter(QString * string) : QXmlStreamWriter(string) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:472
 // [-2] void QXmlStreamWriter()

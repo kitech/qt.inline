@@ -14,13 +14,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQScreenOrientationChangeEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[32];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQScreenOrientationChangeEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQScreenOrientationChangeEvent_t qt_meta_stringdata_MyQScreenOrientationChangeEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 31), // "MyQScreenOrientationChangeEvent"
+  },
+  "MyQScreenOrientationChangeEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQScreenOrientationChangeEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQScreenOrientationChangeEvent : public QScreenOrientationChangeEvent {
 public:
   virtual ~MyQScreenOrientationChangeEvent() {}
 // void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)
 MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientation) : QScreenOrientationChangeEvent(screen, orientation) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1038
 // [-2] void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)

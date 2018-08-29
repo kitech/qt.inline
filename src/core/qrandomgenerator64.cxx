@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQRandomGenerator64_t {
+  QByteArrayData data[1];
+  char stringdata0[21];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQRandomGenerator64_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQRandomGenerator64_t qt_meta_stringdata_MyQRandomGenerator64 = {
+   {
+  QT_MOC_LITERAL(0, 0, 20), // "MyQRandomGenerator64"
+  },
+  "MyQRandomGenerator64"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQRandomGenerator64[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQRandomGenerator64 : public QRandomGenerator64 {
 public:
   virtual ~MyQRandomGenerator64() {}
@@ -29,7 +58,6 @@ MyQRandomGenerator64(const quint32 * begin, const quint32 * end) : QRandomGenera
 // void QRandomGenerator64(const QRandomGenerator &)
 MyQRandomGenerator64(const QRandomGenerator & other) : QRandomGenerator64(other) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:216
 // [8] quint64 generate()

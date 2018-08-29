@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQTableWidgetItem_t {
+  QByteArrayData data[1];
+  char stringdata0[19];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQTableWidgetItem_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQTableWidgetItem_t qt_meta_stringdata_MyQTableWidgetItem = {
+   {
+  QT_MOC_LITERAL(0, 0, 18), // "MyQTableWidgetItem"
+  },
+  "MyQTableWidgetItem"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQTableWidgetItem[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQTableWidgetItem : public QTableWidgetItem {
 public:
   virtual ~MyQTableWidgetItem() {}
@@ -26,7 +55,6 @@ MyQTableWidgetItem(const QIcon & icon, const QString & text, int type_) : QTable
 // void QTableWidgetItem(const QTableWidgetItem &)
 MyQTableWidgetItem(const QTableWidgetItem & other) : QTableWidgetItem(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:82
 // [-2] void QTableWidgetItem(int)

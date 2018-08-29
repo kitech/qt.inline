@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQQmlIncubator_t {
+  QByteArrayData data[1];
+  char stringdata0[16];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQQmlIncubator_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQQmlIncubator_t qt_meta_stringdata_MyQQmlIncubator = {
+   {
+  QT_MOC_LITERAL(0, 0, 15), // "MyQQmlIncubator"
+  },
+  "MyQQmlIncubator"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQQmlIncubator[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQQmlIncubator : public QQmlIncubator {
 public:
   virtual ~MyQQmlIncubator() {}
@@ -44,7 +73,6 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
   }
 
 };
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:88
 // [-2] void statusChanged(QQmlIncubator::Status)

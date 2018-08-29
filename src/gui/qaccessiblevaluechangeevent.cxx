@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQAccessibleValueChangeEvent_t {
+  QByteArrayData data[1];
+  char stringdata0[30];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQAccessibleValueChangeEvent_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQAccessibleValueChangeEvent_t qt_meta_stringdata_MyQAccessibleValueChangeEvent = {
+   {
+  QT_MOC_LITERAL(0, 0, 29), // "MyQAccessibleValueChangeEvent"
+  },
+  "MyQAccessibleValueChangeEvent"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQAccessibleValueChangeEvent[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQAccessibleValueChangeEvent : public QAccessibleValueChangeEvent {
 public:
   virtual ~MyQAccessibleValueChangeEvent() {}
@@ -22,7 +51,6 @@ MyQAccessibleValueChangeEvent(QObject * obj, const QVariant & val) : QAccessible
 // void QAccessibleValueChangeEvent(QAccessibleInterface *, const QVariant &)
 MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val) : QAccessibleValueChangeEvent(iface, val) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:898
 // [-2] void QAccessibleValueChangeEvent(QObject *, const QVariant &)

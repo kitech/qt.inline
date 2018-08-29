@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQGraphicsLayoutItem_t {
+  QByteArrayData data[1];
+  char stringdata0[22];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQGraphicsLayoutItem_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQGraphicsLayoutItem_t qt_meta_stringdata_MyQGraphicsLayoutItem = {
+   {
+  QT_MOC_LITERAL(0, 0, 21), // "MyQGraphicsLayoutItem"
+  },
+  "MyQGraphicsLayoutItem"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQGraphicsLayoutItem[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
 public:
   virtual ~MyQGraphicsLayoutItem() {}
@@ -35,7 +64,6 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
   }
 
 };
-
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)

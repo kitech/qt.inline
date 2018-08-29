@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQPixmap_t {
+  QByteArrayData data[1];
+  char stringdata0[10];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQPixmap_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQPixmap_t qt_meta_stringdata_MyQPixmap = {
+   {
+  QT_MOC_LITERAL(0, 0, 9), // "MyQPixmap"
+  },
+  "MyQPixmap"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQPixmap[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQPixmap : public QPixmap {
 public:
   virtual ~MyQPixmap() {}
@@ -45,7 +74,6 @@ MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
   }
 
 };
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:175
 // [4] int metric(QPaintDevice::PaintDeviceMetric)

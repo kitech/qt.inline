@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQDeadlineTimer_t {
+  QByteArrayData data[1];
+  char stringdata0[17];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQDeadlineTimer_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQDeadlineTimer_t qt_meta_stringdata_MyQDeadlineTimer = {
+   {
+  QT_MOC_LITERAL(0, 0, 16), // "MyQDeadlineTimer"
+  },
+  "MyQDeadlineTimer"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQDeadlineTimer[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQDeadlineTimer : public QDeadlineTimer {
 public:
   virtual ~MyQDeadlineTimer() {}
@@ -25,7 +54,6 @@ MyQDeadlineTimer(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) : QD
 // void QDeadlineTimer(qint64, Qt::TimerType)
 MyQDeadlineTimer(qint64 msecs, Qt::TimerType type_) : QDeadlineTimer(msecs, type_) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:65
 // [-2] void QDeadlineTimer(Qt::TimerType)

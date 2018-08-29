@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQSizePolicy_t {
+  QByteArrayData data[1];
+  char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQSizePolicy_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQSizePolicy_t qt_meta_stringdata_MyQSizePolicy = {
+   {
+  QT_MOC_LITERAL(0, 0, 13), // "MyQSizePolicy"
+  },
+  "MyQSizePolicy"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQSizePolicy[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQSizePolicy : public QSizePolicy {
 public:
   virtual ~MyQSizePolicy() {}
@@ -22,7 +51,6 @@ MyQSizePolicy() : QSizePolicy() {}
 // void QSizePolicy(QSizePolicy::Policy, QSizePolicy::Policy, QSizePolicy::ControlType)
 MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) : QSizePolicy(horizontal, vertical, type_) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:113
 // [-2] void QSizePolicy()

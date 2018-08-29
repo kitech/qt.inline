@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQOpenGLFramebufferObject_t {
+  QByteArrayData data[1];
+  char stringdata0[27];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLFramebufferObject_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQOpenGLFramebufferObject_t qt_meta_stringdata_MyQOpenGLFramebufferObject = {
+   {
+  QT_MOC_LITERAL(0, 0, 26), // "MyQOpenGLFramebufferObject"
+  },
+  "MyQOpenGLFramebufferObject"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQOpenGLFramebufferObject[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQOpenGLFramebufferObject : public QOpenGLFramebufferObject {
 public:
   virtual ~MyQOpenGLFramebufferObject() {}
@@ -31,7 +60,6 @@ MyQOpenGLFramebufferObject(const QSize & size, const QOpenGLFramebufferObjectFor
 // void QOpenGLFramebufferObject(int, int, const QOpenGLFramebufferObjectFormat &)
 MyQOpenGLFramebufferObject(int width, int height, const QOpenGLFramebufferObjectFormat & format) : QOpenGLFramebufferObject(width, height, format) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglframebufferobject.h:68
 // [-2] void QOpenGLFramebufferObject(const QSize &, GLenum)

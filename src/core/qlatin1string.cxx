@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQLatin1String_t {
+  QByteArrayData data[1];
+  char stringdata0[16];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQLatin1String_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQLatin1String_t qt_meta_stringdata_MyQLatin1String = {
+   {
+  QT_MOC_LITERAL(0, 0, 15), // "MyQLatin1String"
+  },
+  "MyQLatin1String"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQLatin1String[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQLatin1String : public QLatin1String {
 public:
   virtual ~MyQLatin1String() {}
@@ -28,7 +57,6 @@ MyQLatin1String(const char * s, int sz) : QLatin1String(s, sz) {}
 // void QLatin1String(const QByteArray &)
 MyQLatin1String(const QByteArray & s) : QLatin1String(s) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtCore/qstring.h:94

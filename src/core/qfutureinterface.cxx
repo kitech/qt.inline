@@ -14,13 +14,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQFutureInterface_t {
+  QByteArrayData data[1];
+  char stringdata0[19];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQFutureInterface_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQFutureInterface_t qt_meta_stringdata_MyQFutureInterface = {
+   {
+  QT_MOC_LITERAL(0, 0, 18), // "MyQFutureInterface"
+  },
+  "MyQFutureInterface"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQFutureInterface[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQFutureInterface : public QFutureInterface<void> {
 public:
   virtual ~MyQFutureInterface() {}
 // void QFutureInterface(QFutureInterfaceBase::State)
 MyQFutureInterface(QFutureInterfaceBase::State initialState) : QFutureInterface<void>(initialState) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:282
 // [-2] void QFutureInterface(QFutureInterfaceBase::State)

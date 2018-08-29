@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQTextOption_t {
+  QByteArrayData data[1];
+  char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQTextOption_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQTextOption_t qt_meta_stringdata_MyQTextOption = {
+   {
+  QT_MOC_LITERAL(0, 0, 13), // "MyQTextOption"
+  },
+  "MyQTextOption"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQTextOption[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQTextOption : public QTextOption {
 public:
   virtual ~MyQTextOption() {}
@@ -24,7 +53,6 @@ MyQTextOption(QFlags<Qt::AlignmentFlag> alignment) : QTextOption(alignment) {}
 // void QTextOption(const QTextOption &)
 MyQTextOption(const QTextOption & o) : QTextOption(o) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:85
 // [-2] void QTextOption()

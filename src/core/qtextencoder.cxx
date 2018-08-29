@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQTextEncoder_t {
+  QByteArrayData data[1];
+  char stringdata0[15];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQTextEncoder_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQTextEncoder_t qt_meta_stringdata_MyQTextEncoder = {
+   {
+  QT_MOC_LITERAL(0, 0, 14), // "MyQTextEncoder"
+  },
+  "MyQTextEncoder"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQTextEncoder[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQTextEncoder : public QTextEncoder {
 public:
   virtual ~MyQTextEncoder() {}
@@ -22,7 +51,6 @@ MyQTextEncoder(const QTextCodec * codec) : QTextEncoder(codec) {}
 // void QTextEncoder(const QTextCodec *, QTextCodec::ConversionFlags)
 MyQTextEncoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) : QTextEncoder(codec, flags) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:141
 // [-2] void QTextEncoder(const QTextCodec *)

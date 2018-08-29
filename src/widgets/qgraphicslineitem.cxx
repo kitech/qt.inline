@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQGraphicsLineItem_t {
+  QByteArrayData data[1];
+  char stringdata0[20];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQGraphicsLineItem_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQGraphicsLineItem_t qt_meta_stringdata_MyQGraphicsLineItem = {
+   {
+  QT_MOC_LITERAL(0, 0, 19), // "MyQGraphicsLineItem"
+  },
+  "MyQGraphicsLineItem"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQGraphicsLineItem[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQGraphicsLineItem : public QGraphicsLineItem {
 public:
   virtual ~MyQGraphicsLineItem() {}
@@ -64,7 +93,6 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
   }
 
 };
-
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:806
 // [1] bool supportsExtension(QGraphicsItem::Extension)

@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQNetworkRequest_t {
+  QByteArrayData data[1];
+  char stringdata0[18];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQNetworkRequest_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQNetworkRequest_t qt_meta_stringdata_MyQNetworkRequest = {
+   {
+  QT_MOC_LITERAL(0, 0, 17), // "MyQNetworkRequest"
+  },
+  "MyQNetworkRequest"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQNetworkRequest[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQNetworkRequest : public QNetworkRequest {
 public:
   virtual ~MyQNetworkRequest() {}
@@ -23,7 +52,6 @@ MyQNetworkRequest(const QUrl & url) : QNetworkRequest(url) {}
 // void QNetworkRequest(const QNetworkRequest &)
 MyQNetworkRequest(const QNetworkRequest & other) : QNetworkRequest(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:124
 // [-2] void QNetworkRequest(const QUrl &)

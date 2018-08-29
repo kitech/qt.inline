@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQQuickAsyncImageProvider_t {
+  QByteArrayData data[1];
+  char stringdata0[27];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQQuickAsyncImageProvider_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQQuickAsyncImageProvider_t qt_meta_stringdata_MyQQuickAsyncImageProvider = {
+   {
+  QT_MOC_LITERAL(0, 0, 26), // "MyQQuickAsyncImageProvider"
+  },
+  "MyQQuickAsyncImageProvider"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQQuickAsyncImageProvider[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQQuickAsyncImageProvider : public QQuickAsyncImageProvider {
 public:
   virtual ~MyQQuickAsyncImageProvider() {}
@@ -34,7 +63,6 @@ public:
 // void QQuickAsyncImageProvider()
 MyQQuickAsyncImageProvider() : QQuickAsyncImageProvider() {}
 };
-
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:121
 // [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)

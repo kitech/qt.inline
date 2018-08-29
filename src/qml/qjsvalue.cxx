@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQJSValue_t {
+  QByteArrayData data[1];
+  char stringdata0[11];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQJSValue_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQJSValue_t qt_meta_stringdata_MyQJSValue = {
+   {
+  QT_MOC_LITERAL(0, 0, 10), // "MyQJSValue"
+  },
+  "MyQJSValue"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQJSValue[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQJSValue : public QJSValue {
 public:
   virtual ~MyQJSValue() {}
@@ -41,7 +70,6 @@ MyQJSValue(const char * str) : QJSValue(str) {}
 // void QJSValue(QV4::ExecutionEngine *, quint64)
 MyQJSValue(QV4::ExecutionEngine * e, quint64 val) : QJSValue(e, val) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:72
 // [-2] void QJSValue(QJSValue::SpecialValue)

@@ -14,13 +14,41 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQMetaType_t {
+  QByteArrayData data[1];
+  char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQMetaType_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQMetaType_t qt_meta_stringdata_MyQMetaType = {
+   {
+  QT_MOC_LITERAL(0, 0, 11), // "MyQMetaType"
+  },
+  "MyQMetaType"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQMetaType[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQMetaType : public QMetaType {
 public:
   virtual ~MyQMetaType() {}
 // void QMetaType(const int)
 MyQMetaType(const int type_) : QMetaType(type_) {}
 };
-
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetatype.h:479
 // [-2] void registerStreamOperators(const char *, QMetaType::SaveOperator, QMetaType::LoadOperator)

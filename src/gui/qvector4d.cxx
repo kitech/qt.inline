@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQVector4D_t {
+  QByteArrayData data[1];
+  char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQVector4D_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQVector4D_t qt_meta_stringdata_MyQVector4D = {
+   {
+  QT_MOC_LITERAL(0, 0, 11), // "MyQVector4D"
+  },
+  "MyQVector4D"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQVector4D[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQVector4D : public QVector4D {
 public:
   virtual ~MyQVector4D() {}
@@ -37,7 +66,6 @@ MyQVector4D(const QVector3D & vector) : QVector4D(vector) {}
 // void QVector4D(const QVector3D &, float)
 MyQVector4D(const QVector3D & vector, float wpos) : QVector4D(vector, wpos) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:59
 // [-2] void QVector4D()

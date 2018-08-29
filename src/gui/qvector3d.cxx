@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQVector3D_t {
+  QByteArrayData data[1];
+  char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQVector3D_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQVector3D_t qt_meta_stringdata_MyQVector3D = {
+   {
+  QT_MOC_LITERAL(0, 0, 11), // "MyQVector3D"
+  },
+  "MyQVector3D"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQVector3D[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQVector3D : public QVector3D {
 public:
   virtual ~MyQVector3D() {}
@@ -35,7 +64,6 @@ MyQVector3D(const QVector2D & vector, float zpos) : QVector3D(vector, zpos) {}
 // void QVector3D(const QVector4D &)
 MyQVector3D(const QVector4D & vector) : QVector3D(vector) {}
 };
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:60
 // [-2] void QVector3D()

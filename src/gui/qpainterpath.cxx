@@ -14,6 +14,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQPainterPath_t {
+  QByteArrayData data[1];
+  char stringdata0[15];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQPainterPath_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQPainterPath_t qt_meta_stringdata_MyQPainterPath = {
+   {
+  QT_MOC_LITERAL(0, 0, 14), // "MyQPainterPath"
+  },
+  "MyQPainterPath"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQPainterPath[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQPainterPath : public QPainterPath {
 public:
   virtual ~MyQPainterPath() {}
@@ -24,7 +53,6 @@ MyQPainterPath(const QPointF & startPoint) : QPainterPath(startPoint) {}
 // void QPainterPath(const QPainterPath &)
 MyQPainterPath(const QPainterPath & other) : QPainterPath(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:91
 // [-2] void QPainterPath()

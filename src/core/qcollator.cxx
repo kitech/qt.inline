@@ -15,6 +15,35 @@
 
 //  main block begin
 
+struct qt_meta_stringdata_MyQCollator_t {
+  QByteArrayData data[1];
+  char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQCollator_t, stringdata0) + ofs \
+  - idx * sizeof(QByteArrayData)) \
+  )
+static const qt_meta_stringdata_MyQCollator_t qt_meta_stringdata_MyQCollator = {
+   {
+  QT_MOC_LITERAL(0, 0, 11), // "MyQCollator"
+  },
+  "MyQCollator"
+};
+#undef QT_MOC_LITERAL
+static const uint qt_meta_data_MyQCollator[] = {
+  // content:
+  7,       // revision
+  0,       // classname
+  0,   0, // classinfo
+  0,   0, // methods
+  0,    0, // properties
+  0,    0, // enums/sets
+  0,    0, // constructors
+  0,       // flags
+  0,       // signalCount
+  0        // eod
+};
 class Q_DECL_EXPORT MyQCollator : public QCollator {
 public:
   virtual ~MyQCollator() {}
@@ -25,7 +54,6 @@ MyQCollator(const QCollator & arg0) : QCollator(arg0) {}
 // void QCollator(QCollator &&)
 MyQCollator(QCollator && other) : QCollator(other) {}
 };
-
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:86
 // [-2] void QCollator(const QLocale &)
