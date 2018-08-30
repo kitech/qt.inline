@@ -51,6 +51,7 @@ MyQAccessibleEvent(QObject * obj, QAccessible::Event typ) : QAccessibleEvent(obj
 // void QAccessibleEvent(QAccessibleInterface *, QAccessible::Event)
 MyQAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ) : QAccessibleEvent(iface, typ) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:668
 // [-2] void QAccessibleEvent(QObject *, QAccessible::Event)

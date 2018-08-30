@@ -74,6 +74,7 @@ public:
 // void QQmlParserStatus()
 MyQQmlParserStatus() : QQmlParserStatus() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlparserstatus.h:55
 // [-2] void classBegin()

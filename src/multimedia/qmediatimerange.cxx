@@ -55,6 +55,7 @@ MyQMediaTimeRange(const QMediaTimeInterval & arg0) : QMediaTimeRange(arg0) {}
 // void QMediaTimeRange(const QMediaTimeRange &)
 MyQMediaTimeRange(const QMediaTimeRange & range_) : QMediaTimeRange(range_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:83
 // [-2] void QMediaTimeRange()

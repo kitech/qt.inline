@@ -52,6 +52,7 @@ MyQSslConfiguration() : QSslConfiguration() {}
 // void QSslConfiguration(const QSslConfiguration &)
 MyQSslConfiguration(const QSslConfiguration & other) : QSslConfiguration(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:79
 // [-2] void QSslConfiguration()

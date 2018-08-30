@@ -49,6 +49,7 @@ public:
 // void QActionEvent(int, QAction *, QAction *)
 MyQActionEvent(int type_, QAction * action, QAction * before) : QActionEvent(type_, action, before) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:727
 // [-2] void QActionEvent(int, QAction *, QAction *)

@@ -76,6 +76,7 @@ public:
 // void QAbstractGraphicsShapeItem(QGraphicsItem *)
 MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeItem(parent) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:324
 // [32] QRectF boundingRect()

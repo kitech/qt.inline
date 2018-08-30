@@ -49,6 +49,7 @@ public:
 // void QMetaProperty()
 MyQMetaProperty() : QMetaProperty() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:248
 // [-2] void QMetaProperty()

@@ -53,6 +53,7 @@ MyQPointF(const QPoint & p) : QPointF(p) {}
 // void QPointF(qreal, qreal)
 MyQPointF(qreal xpos, qreal ypos) : QPointF(xpos, ypos) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:222
 // [-2] void QPointF()

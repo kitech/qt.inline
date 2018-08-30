@@ -51,6 +51,7 @@ MyQAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldTex
 // void QAccessibleTextUpdateEvent(QAccessibleInterface *, int, const QString &, const QString &)
 MyQAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text) : QAccessibleTextUpdateEvent(iface, position, oldText, text) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:864
 // [-2] void QAccessibleTextUpdateEvent(QObject *, int, const QString &, const QString &)

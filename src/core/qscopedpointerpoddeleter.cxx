@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQScopedPointerPodDeleter : public QScopedPointerPodDeleter
 public:
   virtual ~MyQScopedPointerPodDeleter() {}
 };
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qscopedpointer.h:81
 // [-2] void cleanup(void *)

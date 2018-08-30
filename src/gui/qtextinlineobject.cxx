@@ -51,6 +51,7 @@ MyQTextInlineObject(int i, QTextEngine * e) : QTextInlineObject(i, e) {}
 // void QTextInlineObject()
 MyQTextInlineObject() : QTextInlineObject() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:71
 // [-2] void QTextInlineObject(int, QTextEngine *)

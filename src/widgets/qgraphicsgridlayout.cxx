@@ -50,6 +50,7 @@ public:
 // void QGraphicsGridLayout(QGraphicsLayoutItem *)
 MyQGraphicsGridLayout(QGraphicsLayoutItem * parent) : QGraphicsGridLayout(parent) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:56
 // [-2] void QGraphicsGridLayout(QGraphicsLayoutItem *)

@@ -53,6 +53,7 @@ MyQTextBlock() : QTextBlock() {}
 // void QTextBlock(const QTextBlock &)
 MyQTextBlock(const QTextBlock & o) : QTextBlock(o) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:205
 // [-2] void QTextBlock(QTextDocumentPrivate *, int)

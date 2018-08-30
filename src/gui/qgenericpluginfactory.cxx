@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQGenericPluginFactory : public QGenericPluginFactory {
 public:
   virtual ~MyQGenericPluginFactory() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qgenericpluginfactory.h:55
 // [8] QStringList keys()

@@ -68,6 +68,10 @@ virtual void *qt_metacast(const char *_clname) override {
 }
 virtual int qt_metacall(QMetaObject::Call _c, int _id, void **_a) override {
    _id = QSharedMemory::qt_metacall(_c, _id, _a);
+   if (_id < 0 ) return _id;
+   if (qt_metacall_fnptr != 0) {
+      return qt_metacall_fnptr(this, _c, _id, _a);
+   }
    int handled = 0;
    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacall", &handled, 3, (uint64_t)_c, (uint64_t)_id, (uint64_t)_a, 0, 0, 0, 0, 0, 0, 0);
    if (handled) { return (int)irv; }
@@ -84,12 +88,27 @@ Q_DECL_HIDDEN_STATIC_METACALL static void qt_static_metacall(QObject *_o, QMetaO
 private: struct QPrivateSignal {};
 
 public:
+  void* (*qt_metacast_fnptr)(void*, char*) = nullptr;
+  int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
+public:
   virtual ~MyQSharedMemory() {}
 // void QSharedMemory(QObject *)
 MyQSharedMemory(QObject * parent) : QSharedMemory(parent) {}
 // void QSharedMemory(const QString &, QObject *)
 MyQSharedMemory(const QString & key, QObject * parent) : QSharedMemory(key, parent) {}
 };
+
+extern "C" Q_DECL_EXPORT
+void C_QSharedMemory_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+  MyQSharedMemory* qo = (MyQSharedMemory*)(this_);
+  QMetaObject* qmo = &qo->staticMetaObject;
+  qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
+  qmo->d.data = decltype(qmo->d.data)(dat);
+  qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
+  qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
+  qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:54
 // [8] const QMetaObject * metaObject()

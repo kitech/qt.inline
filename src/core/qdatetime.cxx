@@ -61,6 +61,7 @@ MyQDateTime(const QDateTime & other) : QDateTime(other) {}
 // void QDateTime(QDateTime &&)
 MyQDateTime(QDateTime && other) : QDateTime(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:261
 // [-2] void QDateTime()

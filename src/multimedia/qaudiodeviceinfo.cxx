@@ -51,6 +51,7 @@ MyQAudioDeviceInfo() : QAudioDeviceInfo() {}
 // void QAudioDeviceInfo(const QAudioDeviceInfo &)
 MyQAudioDeviceInfo(const QAudioDeviceInfo & other) : QAudioDeviceInfo(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiodeviceinfo.h:67
 // [-2] void QAudioDeviceInfo()

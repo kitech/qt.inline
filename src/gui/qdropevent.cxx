@@ -49,6 +49,7 @@ public:
 // void QDropEvent(const QPointF &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type)
 MyQDropEvent(const QPointF & pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_) : QDropEvent(pos, actions, data, buttons, modifiers, type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:608
 // [-2] void QDropEvent(const QPointF &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type)

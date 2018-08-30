@@ -56,6 +56,7 @@ MyQJsonObject(const QJsonObject & other) : QJsonObject(other) {}
 // void QJsonObject(QJsonObject &&)
 MyQJsonObject(QJsonObject && other) : QJsonObject(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:61
 // [-2] void QJsonObject()

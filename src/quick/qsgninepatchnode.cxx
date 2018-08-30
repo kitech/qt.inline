@@ -107,6 +107,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:53
 // [-2] void setTexture(QSGTexture *)

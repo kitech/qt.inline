@@ -54,6 +54,7 @@ MyQCollator(const QCollator & arg0) : QCollator(arg0) {}
 // void QCollator(QCollator &&)
 MyQCollator(QCollator && other) : QCollator(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:86
 // [-2] void QCollator(const QLocale &)

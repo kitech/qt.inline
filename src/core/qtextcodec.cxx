@@ -101,6 +101,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:122
 // [8] QByteArray name()

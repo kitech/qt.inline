@@ -58,6 +58,7 @@ MyQTimeZone(const QByteArray & zoneId, int offsetSeconds, const QString & name, 
 // void QTimeZone(const QTimeZone &)
 MyQTimeZone(const QTimeZone & other) : QTimeZone(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:92
 // [-2] void QTimeZone()

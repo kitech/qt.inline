@@ -76,6 +76,7 @@ MyQSvgGenerator() : QSvgGenerator() {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtSvg/qsvggenerator.h:96
 // [8] QPaintEngine * paintEngine()

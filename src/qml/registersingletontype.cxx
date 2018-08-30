@@ -48,6 +48,7 @@ public:
   virtual ~MyRegisterSingletonType() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN21RegisterSingletonTypeD2Ev(void *this_) {
   delete (QQmlPrivate::RegisterSingletonType*)(this_);

@@ -109,6 +109,7 @@ MyQObject(QObject * parent) : QObject(parent) {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:428
 // [-2] void timerEvent(QTimerEvent *)

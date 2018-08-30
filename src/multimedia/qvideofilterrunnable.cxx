@@ -62,6 +62,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideofilter.h:60
 // [8] QVideoFrame run(QVideoFrame *, const QVideoSurfaceFormat &, QVideoFilterRunnable::RunFlags)

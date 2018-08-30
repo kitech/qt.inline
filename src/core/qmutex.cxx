@@ -49,6 +49,7 @@ public:
 // void QMutex(QMutex::RecursionMode)
 MyQMutex(QMutex::RecursionMode mode) : QMutex(mode) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:130
 // [-2] void QMutex(QMutex::RecursionMode)

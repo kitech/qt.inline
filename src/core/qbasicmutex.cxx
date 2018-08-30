@@ -49,6 +49,7 @@ public:
 // void QBasicMutex()
 MyQBasicMutex() : QBasicMutex() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:71
 // [-2] void QBasicMutex()

@@ -52,6 +52,7 @@ MyQOpenGLTexture(QOpenGLTexture::Target target) : QOpenGLTexture(target) {}
 // void QOpenGLTexture(const QImage &, QOpenGLTexture::MipMapGeneration)
 MyQOpenGLTexture(const QImage & image, QOpenGLTexture::MipMapGeneration genMipMaps) : QOpenGLTexture(image, genMipMaps) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengltexture.h:407
 // [-2] void QOpenGLTexture(QOpenGLTexture::Target)

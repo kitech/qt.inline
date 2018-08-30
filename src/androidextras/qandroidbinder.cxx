@@ -52,6 +52,7 @@ MyQAndroidBinder() : QAndroidBinder() {}
 // void QAndroidBinder(const QAndroidJniObject &)
 MyQAndroidBinder(const QAndroidJniObject & binder) : QAndroidBinder(binder) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidbinder.h:62
 // [-2] void QAndroidBinder()

@@ -61,6 +61,7 @@ MyQTextCursor(const QTextBlock & block) : QTextCursor(block) {}
 // void QTextCursor(const QTextCursor &)
 MyQTextCursor(const QTextCursor & cursor) : QTextCursor(cursor) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:69
 // [-2] void QTextCursor()

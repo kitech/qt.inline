@@ -56,6 +56,7 @@ MyQXmlStreamWriter(QByteArray * array) : QXmlStreamWriter(array) {}
 // void QXmlStreamWriter(QString *)
 MyQXmlStreamWriter(QString * string) : QXmlStreamWriter(string) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:472
 // [-2] void QXmlStreamWriter()

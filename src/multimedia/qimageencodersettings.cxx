@@ -51,6 +51,7 @@ MyQImageEncoderSettings() : QImageEncoderSettings() {}
 // void QImageEncoderSettings(const QImageEncoderSettings &)
 MyQImageEncoderSettings(const QImageEncoderSettings & other) : QImageEncoderSettings(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaencodersettings.h:143
 // [-2] void QImageEncoderSettings()

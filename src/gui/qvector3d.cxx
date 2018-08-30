@@ -64,6 +64,7 @@ MyQVector3D(const QVector2D & vector, float zpos) : QVector3D(vector, zpos) {}
 // void QVector3D(const QVector4D &)
 MyQVector3D(const QVector4D & vector) : QVector3D(vector) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:60
 // [-2] void QVector3D()

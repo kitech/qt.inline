@@ -51,6 +51,7 @@ MyQStyleOptionDockWidget() : QStyleOptionDockWidget() {}
 // void QStyleOptionDockWidget(const QStyleOptionDockWidget &)
 MyQStyleOptionDockWidget(const QStyleOptionDockWidget & other) : QStyleOptionDockWidget(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:391
 // [-2] void QStyleOptionDockWidget()

@@ -52,6 +52,7 @@ MyQWebEngineHttpRequest(const QUrl & url, const QWebEngineHttpRequest::Method & 
 // void QWebEngineHttpRequest(const QWebEngineHttpRequest &)
 MyQWebEngineHttpRequest(const QWebEngineHttpRequest & other) : QWebEngineHttpRequest(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:63
 // [-2] void QWebEngineHttpRequest(const QUrl &, const QWebEngineHttpRequest::Method &)

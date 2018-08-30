@@ -51,6 +51,7 @@ MyQStyleOptionFrame() : QStyleOptionFrame() {}
 // void QStyleOptionFrame(const QStyleOptionFrame &)
 MyQStyleOptionFrame(const QStyleOptionFrame & other) : QStyleOptionFrame(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:143
 // [-2] void QStyleOptionFrame()

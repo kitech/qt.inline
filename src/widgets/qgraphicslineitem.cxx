@@ -93,6 +93,7 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:806
 // [1] bool supportsExtension(QGraphicsItem::Extension)

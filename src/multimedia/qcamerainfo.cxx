@@ -54,6 +54,7 @@ MyQCameraInfo(const QCamera & camera) : QCameraInfo(camera) {}
 // void QCameraInfo(const QCameraInfo &)
 MyQCameraInfo(const QCameraInfo & other) : QCameraInfo(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerainfo.h:53
 // [-2] void QCameraInfo(const QByteArray &)

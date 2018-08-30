@@ -49,6 +49,7 @@ public:
 // void QDeferredDeleteEvent()
 MyQDeferredDeleteEvent() : QDeferredDeleteEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:377
 // [-2] void QDeferredDeleteEvent()

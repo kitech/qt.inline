@@ -48,6 +48,7 @@ public:
   virtual ~MyStereoFrameDefault() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN18StereoFrameDefaultD2Ev(void *this_) {
   delete (QAudioBuffer::StereoFrameDefault<unsigned short>*)(this_);

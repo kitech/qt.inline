@@ -56,6 +56,7 @@ MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QString & s
 // void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QChar *, int, unsigned char *, int)
 MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) : QTextBoundaryFinder(type_, chars, length, buffer, bufferSize) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:54
 // [-2] void QTextBoundaryFinder()

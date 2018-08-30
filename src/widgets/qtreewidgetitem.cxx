@@ -65,6 +65,7 @@ MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) 
 // void QTreeWidgetItem(const QTreeWidgetItem &)
 MyQTreeWidgetItem(const QTreeWidgetItem & other) : QTreeWidgetItem(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:67
 // [-2] void QTreeWidgetItem(int)

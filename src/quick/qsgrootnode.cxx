@@ -49,6 +49,7 @@ public:
 // void QSGRootNode()
 MyQSGRootNode() : QSGRootNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:302
 // [-2] void QSGRootNode()

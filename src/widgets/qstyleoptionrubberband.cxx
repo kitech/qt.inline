@@ -51,6 +51,7 @@ MyQStyleOptionRubberBand() : QStyleOptionRubberBand() {}
 // void QStyleOptionRubberBand(const QStyleOptionRubberBand &)
 MyQStyleOptionRubberBand(const QStyleOptionRubberBand & other) : QStyleOptionRubberBand(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:491
 // [-2] void QStyleOptionRubberBand()

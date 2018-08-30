@@ -59,6 +59,7 @@ MyQIcon(const QString & fileName) : QIcon(fileName) {}
 // void QIcon(QIconEngine *)
 MyQIcon(QIconEngine * engine) : QIcon(engine) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:60
 // [-2] void QIcon()

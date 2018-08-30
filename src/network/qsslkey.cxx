@@ -58,6 +58,7 @@ MyQSslKey(Qt::HANDLE handle, QSsl::KeyType type_) : QSslKey(handle, type_) {}
 // void QSslKey(const QSslKey &)
 MyQSslKey(const QSslKey & other) : QSslKey(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:63
 // [-2] void QSslKey()

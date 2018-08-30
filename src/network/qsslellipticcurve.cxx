@@ -50,6 +50,7 @@ public:
 // void QSslEllipticCurve()
 MyQSslEllipticCurve() : QSslEllipticCurve() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:59
 // [-2] void QSslEllipticCurve()

@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQWhatsThis : public QWhatsThis {
 public:
   virtual ~MyQWhatsThis() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:58
 // [-2] void enterWhatsThisMode()

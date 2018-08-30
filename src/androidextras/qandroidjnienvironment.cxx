@@ -50,6 +50,7 @@ public:
 // void QAndroidJniEnvironment()
 MyQAndroidJniEnvironment() : QAndroidJniEnvironment() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:55
 // [-2] void QAndroidJniEnvironment()

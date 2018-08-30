@@ -51,6 +51,7 @@ MyQAudioFormat() : QAudioFormat() {}
 // void QAudioFormat(const QAudioFormat &)
 MyQAudioFormat(const QAudioFormat & other) : QAudioFormat(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudioformat.h:60
 // [-2] void QAudioFormat()

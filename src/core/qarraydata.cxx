@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQArrayData : public QArrayData {
 public:
   virtual ~MyQArrayData() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:57
 // [8] void * data()

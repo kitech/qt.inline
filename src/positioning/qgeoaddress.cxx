@@ -52,6 +52,7 @@ MyQGeoAddress() : QGeoAddress() {}
 // void QGeoAddress(const QGeoAddress &)
 MyQGeoAddress(const QGeoAddress & other) : QGeoAddress(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeoaddress.h:54
 // [-2] void QGeoAddress()

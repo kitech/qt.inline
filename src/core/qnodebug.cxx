@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQNoDebug : public QNoDebug {
 public:
   virtual ~MyQNoDebug() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:190
 // [1] QNoDebug & operator<<(QTextStreamFunction)

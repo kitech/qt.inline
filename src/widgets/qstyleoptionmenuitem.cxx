@@ -51,6 +51,7 @@ MyQStyleOptionMenuItem() : QStyleOptionMenuItem() {}
 // void QStyleOptionMenuItem(const QStyleOptionMenuItem &)
 MyQStyleOptionMenuItem(const QStyleOptionMenuItem & other) : QStyleOptionMenuItem(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:372
 // [-2] void QStyleOptionMenuItem()

@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQCharRef : public QCharRef {
 public:
   virtual ~MyQCharRef() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1036
 // [16] QCharRef & operator=(QChar)

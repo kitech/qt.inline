@@ -50,6 +50,7 @@ public:
 // void QWebEngineHistoryItem(const QWebEngineHistoryItem &)
 MyQWebEngineHistoryItem(const QWebEngineHistoryItem & other) : QWebEngineHistoryItem(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:59
 // [-2] void QWebEngineHistoryItem(const QWebEngineHistoryItem &)

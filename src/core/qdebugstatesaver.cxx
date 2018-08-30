@@ -50,6 +50,7 @@ public:
 // void QDebugStateSaver(QDebug &)
 MyQDebugStateSaver(QDebug & dbg) : QDebugStateSaver(dbg) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:180
 // [-2] void QDebugStateSaver(QDebug &)

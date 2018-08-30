@@ -49,6 +49,7 @@ public:
 // void QMetaMethod()
 MyQMetaMethod() : QMetaMethod() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:57
 // [-2] void QMetaMethod()

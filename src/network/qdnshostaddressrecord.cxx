@@ -51,6 +51,7 @@ MyQDnsHostAddressRecord() : QDnsHostAddressRecord() {}
 // void QDnsHostAddressRecord(const QDnsHostAddressRecord &)
 MyQDnsHostAddressRecord(const QDnsHostAddressRecord & other) : QDnsHostAddressRecord(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:87
 // [-2] void QDnsHostAddressRecord()

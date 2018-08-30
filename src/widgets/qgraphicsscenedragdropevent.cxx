@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneDragDropEvent(QEvent::Type)
 MyQGraphicsSceneDragDropEvent(QEvent::Type type_) : QGraphicsSceneDragDropEvent(type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:252
 // [-2] void QGraphicsSceneDragDropEvent(QEvent::Type)

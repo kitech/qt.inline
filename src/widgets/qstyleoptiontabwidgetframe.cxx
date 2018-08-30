@@ -51,6 +51,7 @@ MyQStyleOptionTabWidgetFrame() : QStyleOptionTabWidgetFrame() {}
 // void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &)
 MyQStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other) : QStyleOptionTabWidgetFrame(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:171
 // [-2] void QStyleOptionTabWidgetFrame()

@@ -53,6 +53,7 @@ MyQStylePainter(QWidget * w) : QStylePainter(w) {}
 // void QStylePainter(QPaintDevice *, QWidget *)
 MyQStylePainter(QPaintDevice * pd, QWidget * w) : QStylePainter(pd, w) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:54
 // [-2] void QStylePainter()

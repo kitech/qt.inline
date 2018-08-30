@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQWebEngineFullScreenRequest : public QWebEngineFullScreenR
 public:
   virtual ~MyQWebEngineFullScreenRequest() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h:55
 // [-2] void reject()

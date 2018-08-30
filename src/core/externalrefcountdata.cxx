@@ -51,6 +51,7 @@ MyExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn d) : Q
 // void ExternalRefCountData(Qt::Initialization)
 MyExternalRefCountData(Qt::Initialization arg0) : QtSharedPointer::ExternalRefCountData(arg0) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:148
 // [-2] void ExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn)

@@ -50,6 +50,7 @@ public:
 // void QSystemSemaphore(const QString &, int, QSystemSemaphore::AccessMode)
 MyQSystemSemaphore(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) : QSystemSemaphore(key, initialValue, mode) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsystemsemaphore.h:74
 // [-2] void QSystemSemaphore(const QString &, int, QSystemSemaphore::AccessMode)

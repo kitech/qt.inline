@@ -52,6 +52,7 @@ MyQStyleOptionGroupBox() : QStyleOptionGroupBox() {}
 // void QStyleOptionGroupBox(const QStyleOptionGroupBox &)
 MyQStyleOptionGroupBox(const QStyleOptionGroupBox & other) : QStyleOptionGroupBox(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:639
 // [-2] void QStyleOptionGroupBox()

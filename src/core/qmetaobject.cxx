@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQMetaObject : public QMetaObject {
 public:
   virtual ~MyQMetaObject() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:345
 // [8] const char * className()

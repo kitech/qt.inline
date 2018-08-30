@@ -55,6 +55,7 @@ MyQBitArray(const QBitArray & other) : QBitArray(other) {}
 // void QBitArray(QBitArray &&)
 MyQBitArray(QBitArray && other) : QBitArray(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:57
 // [-2] void QBitArray()

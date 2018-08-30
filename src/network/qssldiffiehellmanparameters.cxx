@@ -54,6 +54,7 @@ MyQSslDiffieHellmanParameters(const QSslDiffieHellmanParameters & other) : QSslD
 // void QSslDiffieHellmanParameters(QSslDiffieHellmanParameters &&)
 MyQSslDiffieHellmanParameters(QSslDiffieHellmanParameters && other) : QSslDiffieHellmanParameters(other) {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:82
 // [8] QSslDiffieHellmanParameters defaultParameters()

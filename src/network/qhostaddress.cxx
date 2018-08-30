@@ -65,6 +65,7 @@ MyQHostAddress(const QHostAddress & copy) : QHostAddress(copy) {}
 // void QHostAddress(QHostAddress::SpecialAddress)
 MyQHostAddress(QHostAddress::SpecialAddress address) : QHostAddress(address) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:94
 // [-2] void QHostAddress()

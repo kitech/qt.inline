@@ -50,6 +50,7 @@ public:
 // void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)
 MyQAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl impl) : QAssociativeIterable(impl) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:675
 // [-2] void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)

@@ -52,6 +52,7 @@ MyQWebEngineScript() : QWebEngineScript() {}
 // void QWebEngineScript(const QWebEngineScript &)
 MyQWebEngineScript(const QWebEngineScript & other) : QWebEngineScript(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginescript.h:68
 // [-2] void QWebEngineScript()

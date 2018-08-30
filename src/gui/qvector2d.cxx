@@ -62,6 +62,7 @@ MyQVector2D(const QVector3D & vector) : QVector2D(vector) {}
 // void QVector2D(const QVector4D &)
 MyQVector2D(const QVector4D & vector) : QVector2D(vector) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:59
 // [-2] void QVector2D()

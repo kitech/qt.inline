@@ -55,6 +55,7 @@ MyQTextDocumentFragment(const QTextCursor & range_) : QTextDocumentFragment(rang
 // void QTextDocumentFragment(const QTextDocumentFragment &)
 MyQTextDocumentFragment(const QTextDocumentFragment & rhs) : QTextDocumentFragment(rhs) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:57
 // [-2] void QTextDocumentFragment()

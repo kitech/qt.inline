@@ -51,6 +51,7 @@ MyQPaintEvent(const QRegion & paintRegion) : QPaintEvent(paintRegion) {}
 // void QPaintEvent(const QRect &)
 MyQPaintEvent(const QRect & paintRect) : QPaintEvent(paintRect) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:405
 // [-2] void QPaintEvent(const QRegion &)

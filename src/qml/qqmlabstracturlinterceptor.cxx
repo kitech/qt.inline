@@ -63,6 +63,7 @@ public:
 // void QQmlAbstractUrlInterceptor()
 MyQQmlAbstractUrlInterceptor() : QQmlAbstractUrlInterceptor() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:60
 // [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)

@@ -49,6 +49,7 @@ public:
 // void QToolBarChangeEvent(bool)
 MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:754
 // [-2] void QToolBarChangeEvent(bool)

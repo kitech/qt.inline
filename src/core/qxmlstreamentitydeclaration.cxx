@@ -54,6 +54,7 @@ MyQXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration & arg0) : QXmlSt
 // void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&)
 MyQXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration && other) : QXmlStreamEntityDeclaration(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:286
 // [-2] void QXmlStreamEntityDeclaration()

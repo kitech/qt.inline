@@ -51,6 +51,7 @@ MyQStyleOptionComplex(int version, int type_) : QStyleOptionComplex(version, typ
 // void QStyleOptionComplex(const QStyleOptionComplex &)
 MyQStyleOptionComplex(const QStyleOptionComplex & other) : QStyleOptionComplex(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:509
 // [-2] void QStyleOptionComplex(int, int)

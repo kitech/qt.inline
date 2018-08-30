@@ -56,6 +56,7 @@ MyQDirIterator(const QString & path, QFlags<QDir::Filter> filter, QFlags<QDirIte
 // void QDirIterator(const QString &, const QStringList &, QDir::Filters, QDirIterator::IteratorFlags)
 MyQDirIterator(const QString & path, const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, nameFilters, filters, flags) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:58
 // [-2] void QDirIterator(const QDir &, QDirIterator::IteratorFlags)

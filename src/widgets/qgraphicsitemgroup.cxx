@@ -50,6 +50,7 @@ public:
 // void QGraphicsItemGroup(QGraphicsItem *)
 MyQGraphicsItemGroup(QGraphicsItem * parent) : QGraphicsItemGroup(parent) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1004
 // [-2] void QGraphicsItemGroup(QGraphicsItem *)

@@ -63,6 +63,7 @@ public:
 // void QQuickAsyncImageProvider()
 MyQQuickAsyncImageProvider() : QQuickAsyncImageProvider() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:121
 // [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)

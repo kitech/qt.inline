@@ -49,6 +49,7 @@ public:
 // void QGradient()
 MyQGradient() : QGradient() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:206
 // [-2] void QGradient()

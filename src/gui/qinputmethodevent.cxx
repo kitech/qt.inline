@@ -53,6 +53,7 @@ MyQInputMethodEvent(const QString & preeditText, const QList<QInputMethodEvent::
 // void QInputMethodEvent(const QInputMethodEvent &)
 MyQInputMethodEvent(const QInputMethodEvent & other) : QInputMethodEvent(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:555
 // [-2] void QInputMethodEvent()

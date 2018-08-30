@@ -52,6 +52,7 @@ MyQOpenGLFunctions() : QOpenGLFunctions() {}
 // void QOpenGLFunctions(QOpenGLContext *)
 MyQOpenGLFunctions(QOpenGLContext * context) : QOpenGLFunctions(context) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglfunctions.h:233
 // [-2] void QOpenGLFunctions()

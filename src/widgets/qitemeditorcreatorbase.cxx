@@ -75,6 +75,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:60
 // [8] QWidget * createWidget(QWidget *)

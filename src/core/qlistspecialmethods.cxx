@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQListSpecialMethods : public QListSpecialMethods<QString> 
 public:
   virtual ~MyQListSpecialMethods() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:72
 // [-2] void sort(Qt::CaseSensitivity)

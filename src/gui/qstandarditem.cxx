@@ -56,6 +56,7 @@ MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, 
 // void QStandardItem(int, int)
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:65
 // [-2] void QStandardItem()

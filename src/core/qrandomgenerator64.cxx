@@ -58,6 +58,7 @@ MyQRandomGenerator64(const quint32 * begin, const quint32 * end) : QRandomGenera
 // void QRandomGenerator64(const QRandomGenerator &)
 MyQRandomGenerator64(const QRandomGenerator & other) : QRandomGenerator64(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:216
 // [8] quint64 generate()

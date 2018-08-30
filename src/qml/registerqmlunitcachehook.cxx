@@ -48,6 +48,7 @@ public:
   virtual ~MyRegisterQmlUnitCacheHook() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN24RegisterQmlUnitCacheHookD2Ev(void *this_) {
   delete (QQmlPrivate::RegisterQmlUnitCacheHook*)(this_);

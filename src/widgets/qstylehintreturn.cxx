@@ -49,6 +49,7 @@ public:
 // void QStyleHintReturn(int, int)
 MyQStyleHintReturn(int version, int type_) : QStyleHintReturn(version, type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:710
 // [-2] void QStyleHintReturn(int, int)

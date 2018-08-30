@@ -54,6 +54,7 @@ MyQTextDocumentWriter(QIODevice * device, const QByteArray & format) : QTextDocu
 // void QTextDocumentWriter(const QString &, const QByteArray &)
 MyQTextDocumentWriter(const QString & fileName, const QByteArray & format) : QTextDocumentWriter(fileName, format) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:57
 // [-2] void QTextDocumentWriter()

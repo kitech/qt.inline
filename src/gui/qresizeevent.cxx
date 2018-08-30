@@ -49,6 +49,7 @@ public:
 // void QResizeEvent(const QSize &, const QSize &)
 MyQResizeEvent(const QSize & size, const QSize & oldSize) : QResizeEvent(size, oldSize) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:463
 // [-2] void QResizeEvent(const QSize &, const QSize &)

@@ -68,6 +68,10 @@ virtual void *qt_metacast(const char *_clname) override {
 }
 virtual int qt_metacall(QMetaObject::Call _c, int _id, void **_a) override {
    _id = QQmlExpression::qt_metacall(_c, _id, _a);
+   if (_id < 0 ) return _id;
+   if (qt_metacall_fnptr != 0) {
+      return qt_metacall_fnptr(this, _c, _id, _a);
+   }
    int handled = 0;
    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacall", &handled, 3, (uint64_t)_c, (uint64_t)_id, (uint64_t)_a, 0, 0, 0, 0, 0, 0, 0);
    if (handled) { return (int)irv; }
@@ -84,6 +88,9 @@ Q_DECL_HIDDEN_STATIC_METACALL static void qt_static_metacall(QObject *_o, QMetaO
 private: struct QPrivateSignal {};
 
 public:
+  void* (*qt_metacast_fnptr)(void*, char*) = nullptr;
+  int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
+public:
   virtual ~MyQQmlExpression() {}
 // void QQmlExpression()
 MyQQmlExpression() : QQmlExpression() {}
@@ -92,6 +99,18 @@ MyQQmlExpression(QQmlContext * arg0, QObject * arg1, const QString & arg2, QObje
 // void QQmlExpression(const QQmlScriptString &, QQmlContext *, QObject *, QObject *)
 MyQQmlExpression(const QQmlScriptString & arg0, QQmlContext * arg1, QObject * arg2, QObject * arg3) : QQmlExpression(arg0, arg1, arg2, arg3) {}
 };
+
+extern "C" Q_DECL_EXPORT
+void C_QQmlExpression_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+  MyQQmlExpression* qo = (MyQQmlExpression*)(this_);
+  QMetaObject* qmo = &qo->staticMetaObject;
+  qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
+  qmo->d.data = decltype(qmo->d.data)(dat);
+  qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
+  qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
+  qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+}
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlexpression.h:60
 // [8] const QMetaObject * metaObject()

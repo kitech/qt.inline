@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQPaintEngineState : public QPaintEngineState {
 public:
   virtual ~MyQPaintEngineState() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:268
 // [4] QPaintEngine::DirtyFlags state()

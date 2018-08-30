@@ -55,6 +55,7 @@ MyQDebug(QtMsgType t) : QDebug(t) {}
 // void QDebug(const QDebug &)
 MyQDebug(const QDebug & o) : QDebug(o) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:113
 // [-2] void QDebug(QIODevice *)

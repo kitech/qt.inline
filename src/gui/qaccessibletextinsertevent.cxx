@@ -51,6 +51,7 @@ MyQAccessibleTextInsertEvent(QObject * obj, int position, const QString & text) 
 // void QAccessibleTextInsertEvent(QAccessibleInterface *, int, const QString &)
 MyQAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const QString & text) : QAccessibleTextInsertEvent(iface, position, text) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:804
 // [-2] void QAccessibleTextInsertEvent(QObject *, int, const QString &)

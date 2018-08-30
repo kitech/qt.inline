@@ -61,6 +61,7 @@ MyQRegion(QRegion && other) : QRegion(other) {}
 // void QRegion(const QBitmap &)
 MyQRegion(const QBitmap & bitmap) : QRegion(bitmap) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:67
 // [-2] void QRegion()

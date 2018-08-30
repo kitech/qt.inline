@@ -49,6 +49,7 @@ public:
 // void QIconDragEvent()
 MyQIconDragEvent() : QIconDragEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:485
 // [-2] void QIconDragEvent()

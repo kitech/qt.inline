@@ -49,6 +49,7 @@ public:
 // void QSGFlatColorMaterial()
 MyQSGFlatColorMaterial() : QSGFlatColorMaterial() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:51
 // [-2] void QSGFlatColorMaterial()

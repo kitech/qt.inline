@@ -56,6 +56,7 @@ MyQJsonArray(const QJsonArray & other) : QJsonArray(other) {}
 // void QJsonArray(QJsonArray &&)
 MyQJsonArray(QJsonArray && other) : QJsonArray(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:59
 // [-2] void QJsonArray()

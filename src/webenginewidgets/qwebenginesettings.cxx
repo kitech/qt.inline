@@ -47,6 +47,7 @@ static const uint qt_meta_data_MyQWebEngineSettings[] = {
 class Q_DECL_EXPORT MyQWebEngineSettings : public QWebEngineSettings {
 public:
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:105
 // [8] QWebEngineSettings * globalSettings()

@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneWheelEvent(QEvent::Type)
 MyQGraphicsSceneWheelEvent(QEvent::Type type_) : QGraphicsSceneWheelEvent(type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:139
 // [-2] void QGraphicsSceneWheelEvent(QEvent::Type)

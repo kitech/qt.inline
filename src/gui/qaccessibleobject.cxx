@@ -141,6 +141,7 @@ public:
 // void QAccessibleObject(QObject *)
 MyQAccessibleObject(QObject * object) : QAccessibleObject(object) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:475
 // [8] QAccessibleInterface * parent()

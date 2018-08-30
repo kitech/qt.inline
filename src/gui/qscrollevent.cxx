@@ -50,6 +50,7 @@ public:
 // void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState)
 MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) : QScrollEvent(contentPos, overshoot, scrollState) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1022
 // [-2] void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState)

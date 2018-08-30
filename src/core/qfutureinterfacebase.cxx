@@ -51,6 +51,7 @@ MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterf
 // void QFutureInterfaceBase(const QFutureInterfaceBase &)
 MyQFutureInterfaceBase(const QFutureInterfaceBase & other) : QFutureInterfaceBase(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:73
 // [-2] void QFutureInterfaceBase(QFutureInterfaceBase::State)

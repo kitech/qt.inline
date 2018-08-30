@@ -52,6 +52,7 @@ MyQProcessEnvironment() : QProcessEnvironment() {}
 // void QProcessEnvironment(const QProcessEnvironment &)
 MyQProcessEnvironment(const QProcessEnvironment & other) : QProcessEnvironment(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:70
 // [-2] void QProcessEnvironment()

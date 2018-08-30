@@ -49,6 +49,7 @@ public:
 // void QStyleHintReturnMask()
 MyQStyleHintReturnMask() : QStyleHintReturnMask() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:722
 // [-2] void QStyleHintReturnMask()

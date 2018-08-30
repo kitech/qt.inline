@@ -57,6 +57,7 @@ MyQStringList(QList<QString> && l) : QStringList(l) {}
 // void QStringList(std::initializer_list<QString>)
 MyQStringList(std::initializer_list<QString> args) : QStringList(args) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:105
 // [-2] void QStringList()

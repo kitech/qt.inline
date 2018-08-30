@@ -59,6 +59,7 @@ MyQXmlStreamStringRef(const QXmlStreamStringRef & other) : QXmlStreamStringRef(o
 // void QXmlStreamStringRef(QXmlStreamStringRef &&)
 MyQXmlStreamStringRef(QXmlStreamStringRef && other) : QXmlStreamStringRef(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:58
 // [-2] void QXmlStreamStringRef()

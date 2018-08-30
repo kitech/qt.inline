@@ -63,6 +63,7 @@ MyQPolygon(const QPolygon & other) : QPolygon(other) {}
 // void QPolygon(QPolygon &&)
 MyQPolygon(QPolygon && other) : QPolygon(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:59
 // [-2] void QPolygon()

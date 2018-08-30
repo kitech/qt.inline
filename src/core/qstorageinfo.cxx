@@ -56,6 +56,7 @@ MyQStorageInfo(const QDir & dir) : QStorageInfo(dir) {}
 // void QStorageInfo(const QStorageInfo &)
 MyQStorageInfo(const QStorageInfo & other) : QStorageInfo(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:58
 // [-2] void QStorageInfo()

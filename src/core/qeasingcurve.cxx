@@ -54,6 +54,7 @@ MyQEasingCurve(const QEasingCurve & other) : QEasingCurve(other) {}
 // void QEasingCurve(QEasingCurve &&)
 MyQEasingCurve(QEasingCurve && other) : QEasingCurve(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:77
 // [-2] void QEasingCurve(QEasingCurve::Type)

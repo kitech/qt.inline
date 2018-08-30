@@ -49,6 +49,7 @@ public:
 // void QChildEvent(QEvent::Type, QObject *)
 MyQChildEvent(QEvent::Type type_, QObject * child) : QChildEvent(type_, child) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:352
 // [-2] void QChildEvent(QEvent::Type, QObject *)

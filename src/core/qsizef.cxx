@@ -53,6 +53,7 @@ MyQSizeF(const QSize & sz) : QSizeF(sz) {}
 // void QSizeF(qreal, qreal)
 MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:218
 // [-2] void QSizeF()

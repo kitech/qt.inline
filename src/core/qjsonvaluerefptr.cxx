@@ -51,6 +51,7 @@ MyQJsonValueRefPtr(QJsonArray * array, int idx) : QJsonValueRefPtr(array, idx) {
 // void QJsonValueRefPtr(QJsonObject *, int)
 MyQJsonValueRefPtr(QJsonObject * object, int idx) : QJsonValueRefPtr(object, idx) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:237
 // [-2] void QJsonValueRefPtr(QJsonArray *, int)

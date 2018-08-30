@@ -141,6 +141,7 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
 // void QVariant(QVariant &&)
 MyQVariant(QVariant && other) : QVariant(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:199
 // [-2] void QVariant()

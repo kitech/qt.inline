@@ -55,6 +55,7 @@ MyQTextLayout(const QString & text, const QFont & font, QPaintDevice * paintdevi
 // void QTextLayout(const QTextBlock &)
 MyQTextLayout(const QTextBlock & b) : QTextLayout(b) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:108
 // [-2] void QTextLayout()

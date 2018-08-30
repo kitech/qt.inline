@@ -57,6 +57,7 @@ MyQLatin1String(const char * s, int sz) : QLatin1String(s, sz) {}
 // void QLatin1String(const QByteArray &)
 MyQLatin1String(const QByteArray & s) : QLatin1String(s) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // since 5.6
 // /usr/include/qt/QtCore/qstring.h:94

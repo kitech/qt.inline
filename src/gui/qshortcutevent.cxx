@@ -49,6 +49,7 @@ public:
 // void QShortcutEvent(const QKeySequence &, int, bool)
 MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEvent(key, id, ambiguous) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:767
 // [-2] void QShortcutEvent(const QKeySequence &, int, bool)

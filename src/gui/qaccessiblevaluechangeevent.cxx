@@ -51,6 +51,7 @@ MyQAccessibleValueChangeEvent(QObject * obj, const QVariant & val) : QAccessible
 // void QAccessibleValueChangeEvent(QAccessibleInterface *, const QVariant &)
 MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val) : QAccessibleValueChangeEvent(iface, val) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:898
 // [-2] void QAccessibleValueChangeEvent(QObject *, const QVariant &)

@@ -55,6 +55,7 @@ MyQFontMetricsF(const QFontMetrics & arg0) : QFontMetricsF(arg0) {}
 // void QFontMetricsF(const QFontMetricsF &)
 MyQFontMetricsF(const QFontMetricsF & arg0) : QFontMetricsF(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:134
 // [-2] void QFontMetricsF(const QFont &)

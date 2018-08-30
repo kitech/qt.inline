@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQPixmapCache : public QPixmapCache {
 public:
   virtual ~MyQPixmapCache() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:77
 // [4] int cacheLimit()

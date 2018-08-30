@@ -61,6 +61,7 @@ MyQRadialGradient(const QPointF & center, qreal centerRadius, const QPointF & fo
 // void QRadialGradient(qreal, qreal, qreal, qreal, qreal, qreal)
 MyQRadialGradient(qreal cx, qreal cy, qreal centerRadius, qreal fx, qreal fy, qreal focalRadius) : QRadialGradient(cx, cy, centerRadius, fx, fy, focalRadius) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:274
 // [-2] void QRadialGradient()

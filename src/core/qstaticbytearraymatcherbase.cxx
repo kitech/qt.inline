@@ -48,6 +48,7 @@ public:
   virtual ~MyQStaticByteArrayMatcherBase() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN27QStaticByteArrayMatcherBaseD2Ev(void *this_) {
   delete (QStaticByteArrayMatcherBase*)(this_);

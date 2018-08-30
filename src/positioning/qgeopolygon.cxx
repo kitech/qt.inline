@@ -56,6 +56,7 @@ MyQGeoPolygon(const QGeoPolygon & other) : QGeoPolygon(other) {}
 // void QGeoPolygon(const QGeoShape &)
 MyQGeoPolygon(const QGeoShape & other) : QGeoPolygon(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopolygon.h:56
 // [-2] void QGeoPolygon()

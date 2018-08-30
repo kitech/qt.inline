@@ -50,6 +50,7 @@ public:
 // void QItemEditorFactory()
 MyQItemEditorFactory() : QItemEditorFactory() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:98
 // [-2] void QItemEditorFactory()

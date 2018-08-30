@@ -74,6 +74,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:142
 // [16] QSizeF intrinsicSize(QTextDocument *, int, const QTextFormat &)

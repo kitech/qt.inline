@@ -50,6 +50,7 @@ public:
 // void QAndroidJniExceptionCleaner(QAndroidJniExceptionCleaner::OutputMode)
 MyQAndroidJniExceptionCleaner(QAndroidJniExceptionCleaner::OutputMode outputMode) : QAndroidJniExceptionCleaner(outputMode) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:75
 // [-2] void QAndroidJniExceptionCleaner(QAndroidJniExceptionCleaner::OutputMode)

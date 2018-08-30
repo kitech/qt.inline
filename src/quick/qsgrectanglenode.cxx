@@ -100,6 +100,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:52
 // [-2] void setRect(const QRectF &)

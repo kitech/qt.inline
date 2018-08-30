@@ -58,6 +58,7 @@ MyQQuaternion(float scalar, const QVector3D & vector) : QQuaternion(scalar, vect
 // void QQuaternion(const QVector4D &)
 MyQQuaternion(const QVector4D & vector) : QQuaternion(vector) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:59
 // [-2] void QQuaternion()

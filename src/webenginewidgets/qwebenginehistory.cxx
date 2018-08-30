@@ -47,6 +47,7 @@ static const uint qt_meta_data_MyQWebEngineHistory[] = {
 class Q_DECL_EXPORT MyQWebEngineHistory : public QWebEngineHistory {
 public:
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:87
 // [-2] void clear()

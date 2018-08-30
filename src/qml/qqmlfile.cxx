@@ -53,6 +53,7 @@ MyQQmlFile(QQmlEngine * arg0, const QUrl & arg1) : QQmlFile(arg0, arg1) {}
 // void QQmlFile(QQmlEngine *, const QString &)
 MyQQmlFile(QQmlEngine * arg0, const QString & arg1) : QQmlFile(arg0, arg1) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlfile.h:56
 // [-2] void QQmlFile()

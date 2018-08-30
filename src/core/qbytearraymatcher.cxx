@@ -55,6 +55,7 @@ MyQByteArrayMatcher(const char * pattern, int length) : QByteArrayMatcher(patter
 // void QByteArrayMatcher(const QByteArrayMatcher &)
 MyQByteArrayMatcher(const QByteArrayMatcher & other) : QByteArrayMatcher(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:53
 // [-2] void QByteArrayMatcher()

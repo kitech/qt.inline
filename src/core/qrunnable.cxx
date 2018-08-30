@@ -62,6 +62,7 @@ public:
 // void QRunnable()
 MyQRunnable() : QRunnable() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:58
 // [-2] void run()

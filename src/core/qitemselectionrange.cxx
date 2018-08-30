@@ -57,6 +57,7 @@ MyQItemSelectionRange(const QModelIndex & topL, const QModelIndex & bottomR) : Q
 // void QItemSelectionRange(const QModelIndex &)
 MyQItemSelectionRange(const QModelIndex & index) : QItemSelectionRange(index) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:56
 // [-2] void QItemSelectionRange()

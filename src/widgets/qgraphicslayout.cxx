@@ -102,6 +102,7 @@ public:
 // void QGraphicsLayout(QGraphicsLayoutItem *)
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:70
 // [4] int count()

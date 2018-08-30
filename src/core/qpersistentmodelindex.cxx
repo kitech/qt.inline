@@ -55,6 +55,7 @@ MyQPersistentModelIndex(const QPersistentModelIndex & other) : QPersistentModelI
 // void QPersistentModelIndex(QPersistentModelIndex &&)
 MyQPersistentModelIndex(QPersistentModelIndex && other) : QPersistentModelIndex(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:107
 // [-2] void QPersistentModelIndex()

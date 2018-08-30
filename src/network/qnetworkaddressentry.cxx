@@ -52,6 +52,7 @@ MyQNetworkAddressEntry() : QNetworkAddressEntry() {}
 // void QNetworkAddressEntry(const QNetworkAddressEntry &)
 MyQNetworkAddressEntry(const QNetworkAddressEntry & other) : QNetworkAddressEntry(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:59
 // [-2] void QNetworkAddressEntry()

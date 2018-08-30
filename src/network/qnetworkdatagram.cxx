@@ -56,6 +56,7 @@ MyQNetworkDatagram(const QNetworkDatagram & other) : QNetworkDatagram(other) {}
 // void QNetworkDatagram(QNetworkDatagram &&)
 MyQNetworkDatagram(QNetworkDatagram && other) : QNetworkDatagram(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:56
 // [-2] void QNetworkDatagram()

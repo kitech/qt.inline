@@ -52,6 +52,7 @@ MyQOpenGLDebugMessage() : QOpenGLDebugMessage() {}
 // void QOpenGLDebugMessage(const QOpenGLDebugMessage &)
 MyQOpenGLDebugMessage(const QOpenGLDebugMessage & debugMessage) : QOpenGLDebugMessage(debugMessage) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengldebug.h:109
 // [-2] void QOpenGLDebugMessage()

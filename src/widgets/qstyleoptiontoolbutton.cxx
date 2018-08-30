@@ -51,6 +51,7 @@ MyQStyleOptionToolButton() : QStyleOptionToolButton() {}
 // void QStyleOptionToolButton(const QStyleOptionToolButton &)
 MyQStyleOptionToolButton(const QStyleOptionToolButton & other) : QStyleOptionToolButton(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:579
 // [-2] void QStyleOptionToolButton()

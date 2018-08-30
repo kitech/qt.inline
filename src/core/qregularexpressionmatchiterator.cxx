@@ -52,6 +52,7 @@ MyQRegularExpressionMatchIterator() : QRegularExpressionMatchIterator() {}
 // void QRegularExpressionMatchIterator(const QRegularExpressionMatchIterator &)
 MyQRegularExpressionMatchIterator(const QRegularExpressionMatchIterator & iterator) : QRegularExpressionMatchIterator(iterator) {}
 };
+
 // Public Visibility=Default Availability=Available
 // since 5.1
 // /usr/include/qt/QtCore/qregularexpression.h:249

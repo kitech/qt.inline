@@ -76,6 +76,7 @@ MyQIconEngine() : QIconEngine() {}
 // void QIconEngine(const QIconEngine &)
 MyQIconEngine(const QIconEngine & other) : QIconEngine(other) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:56
 // [-2] void paint(QPainter *, const QRect &, QIcon::Mode, QIcon::State)

@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQWebEngineScriptCollection : public QWebEngineScriptCollec
 public:
   virtual ~MyQWebEngineScriptCollection() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginescriptcollection.h:55
 // [-2] void ~QWebEngineScriptCollection()

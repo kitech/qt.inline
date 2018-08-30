@@ -67,6 +67,10 @@ virtual void *qt_metacast(const char *_clname) override {
 }
 virtual int qt_metacall(QMetaObject::Call _c, int _id, void **_a) override {
    _id = QMimeData::qt_metacall(_c, _id, _a);
+   if (_id < 0 ) return _id;
+   if (qt_metacall_fnptr != 0) {
+      return qt_metacall_fnptr(this, _c, _id, _a);
+   }
    int handled = 0;
    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacall", &handled, 3, (uint64_t)_c, (uint64_t)_id, (uint64_t)_a, 0, 0, 0, 0, 0, 0, 0);
    if (handled) { return (int)irv; }
@@ -82,6 +86,9 @@ Q_DECL_HIDDEN_STATIC_METACALL static void qt_static_metacall(QObject *_o, QMetaO
 }
 private: struct QPrivateSignal {};
 
+public:
+  void* (*qt_metacast_fnptr)(void*, char*) = nullptr;
+  int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQMimeData() {}
 // void QMimeData()
@@ -101,6 +108,18 @@ MyQMimeData() : QMimeData() {}
   }
 
 };
+
+extern "C" Q_DECL_EXPORT
+void C_QMimeData_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+  MyQMimeData* qo = (MyQMimeData*)(this_);
+  QMetaObject* qmo = &qo->staticMetaObject;
+  qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
+  qmo->d.data = decltype(qmo->d.data)(dat);
+  qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
+  qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
+  qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+}
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:88
 // [16] QVariant retrieveData(const QString &, QVariant::Type)

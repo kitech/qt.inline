@@ -52,6 +52,7 @@ MyQGeoLocation() : QGeoLocation() {}
 // void QGeoLocation(const QGeoLocation &)
 MyQGeoLocation(const QGeoLocation & other) : QGeoLocation(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeolocation.h:57
 // [-2] void QGeoLocation()

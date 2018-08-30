@@ -62,6 +62,7 @@ public:
 // void QAndroidActivityResultReceiver()
 MyQAndroidActivityResultReceiver() : QAndroidActivityResultReceiver() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidactivityresultreceiver.h:54
 // [-2] void handleActivityResult(int, int, const QAndroidJniObject &)

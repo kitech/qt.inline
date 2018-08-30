@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneContextMenuEvent(QEvent::Type)
 MyQGraphicsSceneContextMenuEvent(QEvent::Type type_) : QGraphicsSceneContextMenuEvent(type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:174
 // [-2] void QGraphicsSceneContextMenuEvent(QEvent::Type)

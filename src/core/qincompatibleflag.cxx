@@ -49,6 +49,7 @@ public:
 // void QIncompatibleFlag(int)
 MyQIncompatibleFlag(int i) : QIncompatibleFlag(i) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:80
 // [-2] void QIncompatibleFlag(int)

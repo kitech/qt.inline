@@ -67,6 +67,7 @@ MyQBrush(const QBrush & brush) : QBrush(brush) {}
 // void QBrush(const QGradient &)
 MyQBrush(const QGradient & gradient) : QBrush(gradient) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:66
 // [-2] void QBrush()

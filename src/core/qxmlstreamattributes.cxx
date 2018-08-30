@@ -50,6 +50,7 @@ public:
 // void QXmlStreamAttributes()
 MyQXmlStreamAttributes() : QXmlStreamAttributes() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:164
 // [-2] void QXmlStreamAttributes()

@@ -51,6 +51,7 @@ MyQStyleOptionComboBox() : QStyleOptionComboBox() {}
 // void QStyleOptionComboBox(const QStyleOptionComboBox &)
 MyQStyleOptionComboBox(const QStyleOptionComboBox & other) : QStyleOptionComboBox(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:601
 // [-2] void QStyleOptionComboBox()

@@ -58,6 +58,7 @@ MyQXmlStreamAttribute(const QXmlStreamAttribute & arg0) : QXmlStreamAttribute(ar
 // void QXmlStreamAttribute(QXmlStreamAttribute &&)
 MyQXmlStreamAttribute(QXmlStreamAttribute && other) : QXmlStreamAttribute(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:109
 // [-2] void QXmlStreamAttribute()

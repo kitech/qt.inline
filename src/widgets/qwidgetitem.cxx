@@ -49,6 +49,7 @@ public:
 // void QWidgetItem(QWidget *)
 MyQWidgetItem(QWidget * w) : QWidgetItem(w) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:126
 // [-2] void QWidgetItem(QWidget *)

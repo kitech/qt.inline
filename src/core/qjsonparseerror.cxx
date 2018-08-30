@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQJsonParseError : public QJsonParseError {
 public:
   virtual ~MyQJsonParseError() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:73
 // [8] QString errorString()

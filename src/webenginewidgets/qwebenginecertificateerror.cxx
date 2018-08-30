@@ -50,6 +50,7 @@ public:
 // void QWebEngineCertificateError(int, QUrl, bool, QString)
 MyQWebEngineCertificateError(int error, QUrl url, bool overridable, QString errorDescription) : QWebEngineCertificateError(error, url, overridable, errorDescription) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginecertificateerror.h:54
 // [-2] void QWebEngineCertificateError(int, QUrl, bool, QString)

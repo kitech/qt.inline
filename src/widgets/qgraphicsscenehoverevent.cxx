@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneHoverEvent(QEvent::Type)
 MyQGraphicsSceneHoverEvent(QEvent::Type type_) : QGraphicsSceneHoverEvent(type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:201
 // [-2] void QGraphicsSceneHoverEvent(QEvent::Type)

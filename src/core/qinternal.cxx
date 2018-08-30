@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQInternal : public QInternal {
 public:
   virtual ~MyQInternal() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qnamespace.h:1829
 // [1] bool registerCallback(QInternal::Callback, qInternalCallback)

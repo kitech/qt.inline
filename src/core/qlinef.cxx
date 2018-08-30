@@ -55,6 +55,7 @@ MyQLineF(qreal x1, qreal y1, qreal x2, qreal y2) : QLineF(x1, y1, x2, y2) {}
 // void QLineF(const QLine &)
 MyQLineF(const QLine & line) : QLineF(line) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:219
 // [-2] void QLineF()

@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQContiguousCacheData : public QContiguousCacheData {
 public:
   virtual ~MyQContiguousCacheData() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcontiguouscache.h:67
 // [8] QContiguousCacheData * allocateData(int, int)

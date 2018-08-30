@@ -60,6 +60,7 @@ MyQOpenGLFramebufferObject(const QSize & size, const QOpenGLFramebufferObjectFor
 // void QOpenGLFramebufferObject(int, int, const QOpenGLFramebufferObjectFormat &)
 MyQOpenGLFramebufferObject(int width, int height, const QOpenGLFramebufferObjectFormat & format) : QOpenGLFramebufferObject(width, height, format) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglframebufferobject.h:68
 // [-2] void QOpenGLFramebufferObject(const QSize &, GLenum)

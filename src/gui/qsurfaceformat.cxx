@@ -54,6 +54,7 @@ MyQSurfaceFormat(QFlags<QSurfaceFormat::FormatOption> options) : QSurfaceFormat(
 // void QSurfaceFormat(const QSurfaceFormat &)
 MyQSurfaceFormat(const QSurfaceFormat & other) : QSurfaceFormat(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:94
 // [-2] void QSurfaceFormat()

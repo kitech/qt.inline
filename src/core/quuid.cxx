@@ -57,6 +57,7 @@ MyQUuid(const char * arg0) : QUuid(arg0) {}
 // void QUuid(const QByteArray &)
 MyQUuid(const QByteArray & arg0) : QUuid(arg0) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:89
 // [-2] void QUuid()

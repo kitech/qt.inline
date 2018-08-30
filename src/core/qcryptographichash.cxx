@@ -50,6 +50,7 @@ public:
 // void QCryptographicHash(QCryptographicHash::Algorithm)
 MyQCryptographicHash(QCryptographicHash::Algorithm method) : QCryptographicHash(method) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcryptographichash.h:92
 // [-2] void QCryptographicHash(QCryptographicHash::Algorithm)

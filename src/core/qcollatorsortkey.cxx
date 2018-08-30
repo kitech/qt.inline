@@ -50,6 +50,7 @@ public:
 // void QCollatorSortKey(const QCollatorSortKey &)
 MyQCollatorSortKey(const QCollatorSortKey & other) : QCollatorSortKey(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:57
 // [-2] void QCollatorSortKey(const QCollatorSortKey &)

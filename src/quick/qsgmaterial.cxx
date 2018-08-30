@@ -75,6 +75,7 @@ public:
 // void QSGMaterial()
 MyQSGMaterial() : QSGMaterial() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:149
 // [8] QSGMaterialType * type()

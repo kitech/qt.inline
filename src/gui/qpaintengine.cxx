@@ -112,6 +112,7 @@ public:
 // void QPaintEngine(QPaintEngine::PaintEngineFeatures)
 MyQPaintEngine(QFlags<QPaintEngine::PaintEngineFeature> features) : QPaintEngine(features) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:153
 // [1] bool begin(QPaintDevice *)

@@ -51,6 +51,7 @@ MyQStyleOption(int version, int type_) : QStyleOption(version, type_) {}
 // void QStyleOption(const QStyleOption &)
 MyQStyleOption(const QStyleOption & other) : QStyleOption(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:102
 // [-2] void QStyleOption(int, int)

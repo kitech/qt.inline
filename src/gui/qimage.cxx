@@ -82,6 +82,7 @@ MyQImage(QImage && other) : QImage(other) {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:352
 // [4] int metric(QPaintDevice::PaintDeviceMetric)

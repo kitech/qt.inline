@@ -54,6 +54,7 @@ MyQQmlListReference(QObject * arg0, const char * property, QQmlEngine * arg2) : 
 // void QQmlListReference(const QQmlListReference &)
 MyQQmlListReference(const QQmlListReference & arg0) : QQmlListReference(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmllist.h:142
 // [-2] void QQmlListReference()

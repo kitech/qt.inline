@@ -49,6 +49,7 @@ public:
 // void QApplicationStateChangeEvent(Qt::ApplicationState)
 MyQApplicationStateChangeEvent(Qt::ApplicationState state) : QApplicationStateChangeEvent(state) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1052
 // [-2] void QApplicationStateChangeEvent(Qt::ApplicationState)

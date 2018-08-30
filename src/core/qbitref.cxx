@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQBitRef : public QBitRef {
 public:
   virtual ~MyQBitRef() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:152
 // [1] bool operator!()

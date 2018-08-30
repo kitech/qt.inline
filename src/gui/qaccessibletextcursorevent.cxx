@@ -51,6 +51,7 @@ MyQAccessibleTextCursorEvent(QObject * obj, int cursorPos) : QAccessibleTextCurs
 // void QAccessibleTextCursorEvent(QAccessibleInterface *, int)
 MyQAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos) : QAccessibleTextCursorEvent(iface, cursorPos) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:747
 // [-2] void QAccessibleTextCursorEvent(QObject *, int)

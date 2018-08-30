@@ -49,6 +49,7 @@ public:
 // void QThreadStorageData(void (*)(void *))
 MyQThreadStorageData(void (*func_)(void *)) : QThreadStorageData(func_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:53
 // [-2] void QThreadStorageData(void (*)(void *))

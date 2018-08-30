@@ -74,6 +74,7 @@ MyQPixmap(const QPixmap & arg0) : QPixmap(arg0) {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:175
 // [4] int metric(QPaintDevice::PaintDeviceMetric)

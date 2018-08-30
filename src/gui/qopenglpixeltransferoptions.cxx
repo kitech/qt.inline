@@ -51,6 +51,7 @@ MyQOpenGLPixelTransferOptions() : QOpenGLPixelTransferOptions() {}
 // void QOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions &)
 MyQOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions & arg0) : QOpenGLPixelTransferOptions(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:56
 // [-2] void QOpenGLPixelTransferOptions()

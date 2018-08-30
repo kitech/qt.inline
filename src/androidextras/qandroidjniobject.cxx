@@ -60,6 +60,7 @@ MyQAndroidJniObject(jclass clazz, const char * sig) : QAndroidJniObject(clazz, s
 // void QAndroidJniObject(jobject)
 MyQAndroidJniObject(jobject obj) : QAndroidJniObject(obj) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h:55
 // [-2] void QAndroidJniObject()

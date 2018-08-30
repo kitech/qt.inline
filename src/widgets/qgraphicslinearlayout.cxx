@@ -52,6 +52,7 @@ MyQGraphicsLinearLayout(QGraphicsLayoutItem * parent) : QGraphicsLinearLayout(pa
 // void QGraphicsLinearLayout(Qt::Orientation, QGraphicsLayoutItem *)
 MyQGraphicsLinearLayout(Qt::Orientation orientation, QGraphicsLayoutItem * parent) : QGraphicsLinearLayout(orientation, parent) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
 // [-2] void QGraphicsLinearLayout(QGraphicsLayoutItem *)

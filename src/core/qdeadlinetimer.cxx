@@ -54,6 +54,7 @@ MyQDeadlineTimer(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) : QD
 // void QDeadlineTimer(qint64, Qt::TimerType)
 MyQDeadlineTimer(qint64 msecs, Qt::TimerType type_) : QDeadlineTimer(msecs, type_) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:65
 // [-2] void QDeadlineTimer(Qt::TimerType)

@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQSGBasicGeometryNode : public QSGBasicGeometryNode {
 public:
   virtual ~MyQSGBasicGeometryNode() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:198
 // [-2] void ~QSGBasicGeometryNode()

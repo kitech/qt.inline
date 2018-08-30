@@ -50,6 +50,7 @@ public:
 // void QPointingDeviceUniqueId()
 MyQPointingDeviceUniqueId() : QPointingDeviceUniqueId() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:809
 // [-2] void QPointingDeviceUniqueId()

@@ -49,6 +49,7 @@ public:
 // void QJSValueIterator(const QJSValue &)
 MyQJSValueIterator(const QJSValue & value) : QJSValueIterator(value) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalueiterator.h:56
 // [-2] void QJSValueIterator(const QJSValue &)

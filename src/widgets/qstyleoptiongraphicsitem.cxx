@@ -52,6 +52,7 @@ MyQStyleOptionGraphicsItem() : QStyleOptionGraphicsItem() {}
 // void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &)
 MyQStyleOptionGraphicsItem(const QStyleOptionGraphicsItem & other) : QStyleOptionGraphicsItem(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:669
 // [-2] void QStyleOptionGraphicsItem()

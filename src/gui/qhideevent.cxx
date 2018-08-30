@@ -49,6 +49,7 @@ public:
 // void QHideEvent()
 MyQHideEvent() : QHideEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:501
 // [-2] void QHideEvent()

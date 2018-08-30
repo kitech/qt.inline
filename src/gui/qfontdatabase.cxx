@@ -49,6 +49,7 @@ public:
 // void QFontDatabase()
 MyQFontDatabase() : QFontDatabase() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:116
 // [-2] QList<int> standardSizes()

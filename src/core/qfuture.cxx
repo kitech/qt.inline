@@ -52,6 +52,7 @@ MyQFuture() : QFuture<void>() {}
 // void QFuture(QFutureInterfaceBase *)
 MyQFuture(QFutureInterfaceBase * p) : QFuture<void>(p) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuture.h:179
 // [-2] void QFuture()

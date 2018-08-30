@@ -50,6 +50,7 @@ public:
 // void QMimeDatabase()
 MyQMimeDatabase() : QMimeDatabase() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:63
 // [-2] void QMimeDatabase()

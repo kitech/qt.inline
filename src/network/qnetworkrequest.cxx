@@ -52,6 +52,7 @@ MyQNetworkRequest(const QUrl & url) : QNetworkRequest(url) {}
 // void QNetworkRequest(const QNetworkRequest &)
 MyQNetworkRequest(const QNetworkRequest & other) : QNetworkRequest(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:124
 // [-2] void QNetworkRequest(const QUrl &)

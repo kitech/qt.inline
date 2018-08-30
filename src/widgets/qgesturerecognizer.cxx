@@ -63,6 +63,7 @@ public:
 // void QGestureRecognizer()
 MyQGestureRecognizer() : QGestureRecognizer() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:81
 // [4] QGestureRecognizer::Result recognize(QGesture *, QObject *, QEvent *)

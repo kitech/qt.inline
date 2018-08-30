@@ -51,6 +51,7 @@ MyQStyleOptionSlider() : QStyleOptionSlider() {}
 // void QStyleOptionSlider(const QStyleOptionSlider &)
 MyQStyleOptionSlider(const QStyleOptionSlider & other) : QStyleOptionSlider(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:533
 // [-2] void QStyleOptionSlider()

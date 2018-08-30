@@ -48,6 +48,7 @@ public:
 // void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)
 MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QAccessibleWidget(o, r, name) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:56
 // [-2] void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &)

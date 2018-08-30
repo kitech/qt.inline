@@ -56,6 +56,7 @@ MyQSslError(QSslError::SslError error, const QSslCertificate & certificate) : QS
 // void QSslError(const QSslError &)
 MyQSslError(const QSslError & other) : QSslError(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:88
 // [-2] void QSslError()

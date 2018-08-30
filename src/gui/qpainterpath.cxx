@@ -53,6 +53,7 @@ MyQPainterPath(const QPointF & startPoint) : QPainterPath(startPoint) {}
 // void QPainterPath(const QPainterPath &)
 MyQPainterPath(const QPainterPath & other) : QPainterPath(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:91
 // [-2] void QPainterPath()

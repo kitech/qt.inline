@@ -71,6 +71,7 @@ MyQString(int size, Qt::Initialization arg1) : QString(size, arg1) {}
 // void QString(QStringDataPtr)
 MyQString(QStringDataPtr dd) : QString(dd) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:217
 // [-2] void QString()

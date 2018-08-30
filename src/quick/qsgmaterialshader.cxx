@@ -112,6 +112,7 @@ MyQSGMaterialShader() : QSGMaterialShader() {}
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgmaterial.h:103
 // [8] const char *const * attributeNames()

@@ -55,6 +55,7 @@ MyQTableWidgetItem(const QIcon & icon, const QString & text, int type_) : QTable
 // void QTableWidgetItem(const QTableWidgetItem &)
 MyQTableWidgetItem(const QTableWidgetItem & other) : QTableWidgetItem(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:82
 // [-2] void QTableWidgetItem(int)

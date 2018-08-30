@@ -57,6 +57,7 @@ MyQRectF(qreal left, qreal top, qreal width, qreal height) : QRectF(left, top, w
 // void QRectF(const QRect &)
 MyQRectF(const QRect & rect) : QRectF(rect) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:514
 // [-2] void QRectF()

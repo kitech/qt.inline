@@ -83,6 +83,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:558
 // [-2] void deleteText(int, int)

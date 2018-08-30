@@ -49,6 +49,7 @@ public:
 // void QMutexLocker(QBasicMutex *)
 MyQMutexLocker(QBasicMutex * m) : QMutexLocker(m) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:199
 // [-2] void QMutexLocker(QBasicMutex *)

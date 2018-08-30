@@ -51,6 +51,7 @@ MyQStyleOptionTitleBar() : QStyleOptionTitleBar() {}
 // void QStyleOptionTitleBar(const QStyleOptionTitleBar &)
 MyQStyleOptionTitleBar(const QStyleOptionTitleBar & other) : QStyleOptionTitleBar(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:619
 // [-2] void QStyleOptionTitleBar()

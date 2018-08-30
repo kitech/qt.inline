@@ -49,6 +49,7 @@ public:
 // void QSpacerItem(int, int, QSizePolicy::Policy, QSizePolicy::Policy)
 MyQSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) : QSpacerItem(w, h, hData, vData) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:95
 // [-2] void QSpacerItem(int, int, QSizePolicy::Policy, QSizePolicy::Policy)

@@ -54,6 +54,7 @@ MyQEventLoopLocker(QEventLoop * loop) : QEventLoopLocker(loop) {}
 // void QEventLoopLocker(QThread *)
 MyQEventLoopLocker(QThread * thread) : QEventLoopLocker(thread) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:93
 // [-2] void QEventLoopLocker()

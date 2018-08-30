@@ -52,6 +52,7 @@ MyQTileRules(Qt::TileRule horizontalRule, Qt::TileRule verticalRule) : QTileRule
 // void QTileRules(Qt::TileRule)
 MyQTileRules(Qt::TileRule rule) : QTileRules(rule) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdrawutil.h:114
 // [-2] void QTileRules(Qt::TileRule, Qt::TileRule)

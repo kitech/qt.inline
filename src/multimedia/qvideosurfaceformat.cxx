@@ -53,6 +53,7 @@ MyQVideoSurfaceFormat(const QSize & size, QVideoFrame::PixelFormat pixelFormat, 
 // void QVideoSurfaceFormat(const QVideoSurfaceFormat &)
 MyQVideoSurfaceFormat(const QVideoSurfaceFormat & format) : QVideoSurfaceFormat(format) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:79
 // [-2] void QVideoSurfaceFormat()

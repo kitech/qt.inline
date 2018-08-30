@@ -55,6 +55,7 @@ MyQMediaResource(const QNetworkRequest & request, const QString & mimeType) : QM
 // void QMediaResource(const QMediaResource &)
 MyQMediaResource(const QMediaResource & other) : QMediaResource(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaresource.h:56
 // [-2] void QMediaResource()

@@ -51,6 +51,7 @@ MyQDate() : QDate() {}
 // void QDate(int, int, int)
 MyQDate(int y, int m, int d) : QDate(y, m, d) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:69
 // [-2] void QDate()

@@ -54,6 +54,7 @@ MyQPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, 
 // void QPageLayout(const QPageLayout &)
 MyQPageLayout(const QPageLayout & other) : QPageLayout(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:80
 // [-2] void QPageLayout()

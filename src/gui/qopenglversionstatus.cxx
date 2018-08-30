@@ -51,6 +51,7 @@ MyQOpenGLVersionStatus() : QOpenGLVersionStatus() {}
 // void QOpenGLVersionStatus(int, int, QOpenGLVersionStatus::OpenGLStatus)
 MyQOpenGLVersionStatus(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus) : QOpenGLVersionStatus(majorVersion, minorVersion, functionStatus) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:86
 // [-2] void QOpenGLVersionStatus()

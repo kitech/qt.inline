@@ -49,6 +49,7 @@ public:
 // void QAccessibleApplication()
 MyQAccessibleApplication() : QAccessibleApplication() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleobject.h:78
 // [-2] void QAccessibleApplication()

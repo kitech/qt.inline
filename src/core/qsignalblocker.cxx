@@ -52,6 +52,7 @@ MyQSignalBlocker(QObject * o) : QSignalBlocker(o) {}
 // void QSignalBlocker(QObject &)
 MyQSignalBlocker(QObject & o) : QSignalBlocker(o) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:548
 // [-2] void QSignalBlocker(QObject *)

@@ -49,6 +49,7 @@ public:
 // void QSemaphore(int)
 MyQSemaphore(int n) : QSemaphore(n) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:55
 // [-2] void QSemaphore(int)

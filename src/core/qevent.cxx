@@ -51,6 +51,7 @@ MyQEvent(QEvent::Type type_) : QEvent(type_) {}
 // void QEvent(const QEvent &)
 MyQEvent(const QEvent & other) : QEvent(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:297
 // [-2] void QEvent(QEvent::Type)

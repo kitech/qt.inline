@@ -53,6 +53,7 @@ MyQImageWriter(QIODevice * device, const QByteArray & format) : QImageWriter(dev
 // void QImageWriter(const QString &, const QByteArray &)
 MyQImageWriter(const QString & fileName, const QByteArray & format) : QImageWriter(fileName, format) {}
 };
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:58
 // [8] QString tr(const char *, const char *, int)

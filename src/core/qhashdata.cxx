@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQHashData : public QHashData {
 public:
   virtual ~MyQHashData() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhash.h:84
 // [8] void * allocateNode(int)

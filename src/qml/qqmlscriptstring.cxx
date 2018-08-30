@@ -51,6 +51,7 @@ MyQQmlScriptString() : QQmlScriptString() {}
 // void QQmlScriptString(const QQmlScriptString &)
 MyQQmlScriptString(const QQmlScriptString & arg0) : QQmlScriptString(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlscriptstring.h:61
 // [-2] void QQmlScriptString()

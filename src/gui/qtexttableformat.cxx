@@ -49,6 +49,7 @@ public:
 // void QTextTableFormat()
 MyQTextTableFormat() : QTextTableFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:887
 // [-2] void QTextTableFormat()

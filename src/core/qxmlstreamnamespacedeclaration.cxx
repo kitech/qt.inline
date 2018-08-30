@@ -56,6 +56,7 @@ MyQXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration && other) : QXml
 // void QXmlStreamNamespaceDeclaration(const QString &, const QString &)
 MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespaceUri) : QXmlStreamNamespaceDeclaration(prefix, namespaceUri) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:199
 // [-2] void QXmlStreamNamespaceDeclaration()

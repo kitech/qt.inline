@@ -58,6 +58,7 @@ MyQStringRef(const QStringRef & other) : QStringRef(other) {}
 // void QStringRef(QStringRef &&)
 MyQStringRef(QStringRef && other) : QStringRef(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:1420
 // [-2] void QStringRef()

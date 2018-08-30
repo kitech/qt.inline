@@ -63,6 +63,7 @@ public:
 // void QAbstractNativeEventFilter()
 MyQAbstractNativeEventFilter() : QAbstractNativeEventFilter() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h:55
 // [1] bool nativeEventFilter(const QByteArray &, void *, long *)

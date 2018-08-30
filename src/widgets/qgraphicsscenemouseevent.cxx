@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneMouseEvent(QEvent::Type)
 MyQGraphicsSceneMouseEvent(QEvent::Type type_) : QGraphicsSceneMouseEvent(type_) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:85
 // [-2] void QGraphicsSceneMouseEvent(QEvent::Type)

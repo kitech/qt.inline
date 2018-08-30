@@ -50,6 +50,7 @@ public:
 // void QLockFile(const QString &)
 MyQLockFile(const QString & fileName) : QLockFile(fileName) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:53
 // [-2] void QLockFile(const QString &)

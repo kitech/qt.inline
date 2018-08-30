@@ -53,6 +53,7 @@ MyQTextOption(QFlags<Qt::AlignmentFlag> alignment) : QTextOption(alignment) {}
 // void QTextOption(const QTextOption &)
 MyQTextOption(const QTextOption & o) : QTextOption(o) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:85
 // [-2] void QTextOption()

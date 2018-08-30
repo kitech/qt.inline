@@ -59,6 +59,7 @@ MyQBitmap(const QString & fileName, const char * format) : QBitmap(fileName, for
 // void QBitmap(const QBitmap &)
 MyQBitmap(const QBitmap & other) : QBitmap(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:54
 // [-2] void QBitmap()

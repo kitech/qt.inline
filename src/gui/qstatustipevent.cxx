@@ -49,6 +49,7 @@ public:
 // void QStatusTipEvent(const QString &)
 MyQStatusTipEvent(const QString & tip) : QStatusTipEvent(tip) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:700
 // [-2] void QStatusTipEvent(const QString &)

@@ -55,6 +55,7 @@ MyQStringMatcher(const QChar * uc, int len_, Qt::CaseSensitivity cs) : QStringMa
 // void QStringMatcher(const QStringMatcher &)
 MyQStringMatcher(const QStringMatcher & other) : QStringMatcher(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:53
 // [-2] void QStringMatcher()

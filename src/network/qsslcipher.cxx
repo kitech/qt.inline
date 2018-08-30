@@ -56,6 +56,7 @@ MyQSslCipher(const QString & name, QSsl::SslProtocol protocol) : QSslCipher(name
 // void QSslCipher(const QSslCipher &)
 MyQSslCipher(const QSslCipher & other) : QSslCipher(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:58
 // [-2] void QSslCipher()

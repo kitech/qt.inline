@@ -225,6 +225,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgimagenode.h:53
 // [-2] void setRect(const QRectF &)

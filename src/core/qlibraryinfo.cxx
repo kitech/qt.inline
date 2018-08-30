@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQLibraryInfo : public QLibraryInfo {
 public:
   virtual ~MyQLibraryInfo() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibraryinfo.h:55
 // [8] QString licensee()

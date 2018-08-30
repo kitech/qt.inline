@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQConcatenable : public QConcatenable<QByteArray> {
 public:
   virtual ~MyQConcatenable() {}
 };
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:333
 // [4] int size(const QByteArray &)

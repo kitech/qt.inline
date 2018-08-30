@@ -49,6 +49,7 @@ public:
 // void QWaitCondition()
 MyQWaitCondition() : QWaitCondition() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qwaitcondition.h:59
 // [-2] void QWaitCondition()

@@ -51,6 +51,7 @@ MyQTextDecoder(const QTextCodec * codec) : QTextDecoder(codec) {}
 // void QTextDecoder(const QTextCodec *, QTextCodec::ConversionFlags)
 MyQTextDecoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) : QTextDecoder(codec, flags) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:158
 // [-2] void QTextDecoder(const QTextCodec *)

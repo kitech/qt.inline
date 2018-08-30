@@ -49,6 +49,7 @@ public:
 // void QFocusEvent(QEvent::Type, Qt::FocusReason)
 MyQFocusEvent(QEvent::Type type_, Qt::FocusReason reason) : QFocusEvent(type_, reason) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:389
 // [-2] void QFocusEvent(QEvent::Type, Qt::FocusReason)

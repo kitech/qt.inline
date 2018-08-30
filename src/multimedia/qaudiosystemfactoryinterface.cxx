@@ -100,6 +100,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:61
 // [8] QList<QByteArray> availableDevices(QAudio::Mode)

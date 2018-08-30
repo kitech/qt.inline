@@ -54,6 +54,7 @@ MyQMarginsF(qreal left, qreal top, qreal right, qreal bottom) : QMarginsF(left, 
 // void QMarginsF(const QMargins &)
 MyQMarginsF(const QMargins & margins) : QMarginsF(margins) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:288
 // [-2] void QMarginsF()

@@ -143,6 +143,7 @@ public:
 // void QLayoutItem(Qt::Alignment)
 MyQLayoutItem(QFlags<Qt::AlignmentFlag> alignment) : QLayoutItem(alignment) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:65
 // [8] QSize sizeHint()

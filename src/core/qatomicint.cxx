@@ -50,6 +50,7 @@ public:
 // void QAtomicInt(int)
 MyQAtomicInt(int value) : QAtomicInt(value) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qatomic.h:162
 // [-2] void QAtomicInt(int)

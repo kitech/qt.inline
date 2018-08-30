@@ -50,6 +50,7 @@ public:
 // void QInputMethodQueryEvent(Qt::InputMethodQueries)
 MyQInputMethodQueryEvent(QFlags<Qt::InputMethodQuery> queries) : QInputMethodQueryEvent(queries) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:581
 // [-2] void QInputMethodQueryEvent(Qt::InputMethodQueries)

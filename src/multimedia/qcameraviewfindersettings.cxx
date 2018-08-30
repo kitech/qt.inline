@@ -52,6 +52,7 @@ MyQCameraViewfinderSettings() : QCameraViewfinderSettings() {}
 // void QCameraViewfinderSettings(const QCameraViewfinderSettings &)
 MyQCameraViewfinderSettings(const QCameraViewfinderSettings & other) : QCameraViewfinderSettings(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:56
 // [-2] void QCameraViewfinderSettings()

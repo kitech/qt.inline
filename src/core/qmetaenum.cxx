@@ -49,6 +49,7 @@ public:
 // void QMetaEnum()
 MyQMetaEnum() : QMetaEnum() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:209
 // [-2] void QMetaEnum()

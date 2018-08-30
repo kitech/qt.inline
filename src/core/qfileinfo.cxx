@@ -59,6 +59,7 @@ MyQFileInfo(const QDir & dir, const QString & file) : QFileInfo(dir, file) {}
 // void QFileInfo(const QFileInfo &)
 MyQFileInfo(const QFileInfo & fileinfo) : QFileInfo(fileinfo) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:60
 // [-2] void QFileInfo(QFileInfoPrivate *)

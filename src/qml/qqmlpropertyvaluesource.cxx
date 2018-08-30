@@ -61,6 +61,7 @@ public:
 // void QQmlPropertyValueSource()
 MyQQmlPropertyValueSource() : QQmlPropertyValueSource() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:55
 // [-2] void setTarget(const QQmlProperty &)

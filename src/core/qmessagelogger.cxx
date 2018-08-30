@@ -54,6 +54,7 @@ MyQMessageLogger(const char * file, int line, const char * function) : QMessageL
 // void QMessageLogger(const char *, int, const char *, const char *)
 MyQMessageLogger(const char * file, int line, const char * function, const char * category) : QMessageLogger(file, line, function, category) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:90
 // [-2] void QMessageLogger()

@@ -49,6 +49,7 @@ public:
 // void QJsonValuePtr(const QJsonValue &)
 MyQJsonValuePtr(const QJsonValue & val) : QJsonValuePtr(val) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:226
 // [-2] void QJsonValuePtr(const QJsonValue &)

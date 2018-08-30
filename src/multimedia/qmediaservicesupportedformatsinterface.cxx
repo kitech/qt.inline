@@ -74,6 +74,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:127
 // [4] QMultimedia::SupportEstimate hasSupport(const QString &, const QStringList &)

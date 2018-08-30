@@ -69,6 +69,7 @@ MyQChar(char c) : QChar(c) {}
 // void QChar(uchar)
 MyQChar(uchar c) : QChar(c) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:81
 // [-2] void QChar()

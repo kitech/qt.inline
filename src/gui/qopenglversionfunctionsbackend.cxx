@@ -49,6 +49,7 @@ public:
 // void QOpenGLVersionFunctionsBackend(QOpenGLContext *)
 MyQOpenGLVersionFunctionsBackend(QOpenGLContext * ctx) : QOpenGLVersionFunctionsBackend(ctx) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:171
 // [-2] void QOpenGLVersionFunctionsBackend(QOpenGLContext *)

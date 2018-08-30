@@ -52,6 +52,7 @@ MyQAndroidParcel() : QAndroidParcel() {}
 // void QAndroidParcel(const QAndroidJniObject &)
 MyQAndroidParcel(const QAndroidJniObject & parcel) : QAndroidParcel(parcel) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidparcel.h:54
 // [-2] void QAndroidParcel()

@@ -49,6 +49,7 @@ public:
 // void QSGOpaqueTextureMaterial()
 MyQSGOpaqueTextureMaterial() : QSGOpaqueTextureMaterial() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:51
 // [-2] void QSGOpaqueTextureMaterial()

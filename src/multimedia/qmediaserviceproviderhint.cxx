@@ -59,6 +59,7 @@ MyQMediaServiceProviderHint(QFlags<QMediaServiceProviderHint::Feature> features)
 // void QMediaServiceProviderHint(const QMediaServiceProviderHint &)
 MyQMediaServiceProviderHint(const QMediaServiceProviderHint & other) : QMediaServiceProviderHint(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:74
 // [-2] void QMediaServiceProviderHint()

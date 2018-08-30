@@ -49,6 +49,7 @@ public:
 // void QTextFrameFormat()
 MyQTextFrameFormat() : QTextFrameFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:770
 // [-2] void QTextFrameFormat()

@@ -49,6 +49,7 @@ public:
 // void QInputEvent(QEvent::Type, Qt::KeyboardModifiers)
 MyQInputEvent(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers) : QInputEvent(type_, modifiers) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:71
 // [-2] void QInputEvent(QEvent::Type, Qt::KeyboardModifiers)

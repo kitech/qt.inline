@@ -54,6 +54,7 @@ MyQXmlStreamNotationDeclaration(const QXmlStreamNotationDeclaration & arg0) : QX
 // void QXmlStreamNotationDeclaration(QXmlStreamNotationDeclaration &&)
 MyQXmlStreamNotationDeclaration(QXmlStreamNotationDeclaration && other) : QXmlStreamNotationDeclaration(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:241
 // [-2] void QXmlStreamNotationDeclaration()

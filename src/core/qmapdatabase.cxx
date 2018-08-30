@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQMapDataBase : public QMapDataBase {
 public:
   virtual ~MyQMapDataBase() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:190
 // [-2] void rotateLeft(QMapNodeBase *)

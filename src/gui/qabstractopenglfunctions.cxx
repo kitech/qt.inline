@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions
 public:
   virtual ~MyQAbstractOpenGLFunctions() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:213
 // [-2] void ~QAbstractOpenGLFunctions()

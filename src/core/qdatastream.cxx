@@ -55,6 +55,7 @@ MyQDataStream(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) : QDataS
 // void QDataStream(const QByteArray &)
 MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:123
 // [-2] void QDataStream()

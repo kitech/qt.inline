@@ -71,6 +71,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:59
 // [-2] void setRootObject(QAccessibleInterface *)

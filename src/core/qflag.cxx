@@ -55,6 +55,7 @@ MyQFlag(short ai) : QFlag(ai) {}
 // void QFlag(ushort)
 MyQFlag(ushort ai) : QFlag(ai) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:57
 // [-2] void QFlag(int)

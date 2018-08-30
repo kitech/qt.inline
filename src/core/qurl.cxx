@@ -55,6 +55,7 @@ MyQUrl(const QString & url, QUrl::ParsingMode mode) : QUrl(url, mode) {}
 // void QUrl(QUrl &&)
 MyQUrl(QUrl && other) : QUrl(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:176
 // [-2] void QUrl()

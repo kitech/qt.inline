@@ -51,6 +51,7 @@ MyQTextTableCell() : QTextTableCell() {}
 // void QTextTableCell(const QTextTableCell &)
 MyQTextTableCell(const QTextTableCell & o) : QTextTableCell(o) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:57
 // [-2] void QTextTableCell()

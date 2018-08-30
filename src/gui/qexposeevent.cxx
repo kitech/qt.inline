@@ -50,6 +50,7 @@ public:
 // void QExposeEvent(const QRegion &)
 MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:434
 // [-2] void QExposeEvent(const QRegion &)

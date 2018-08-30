@@ -50,6 +50,7 @@ public:
 // void QEnterEvent(const QPointF &, const QPointF &, const QPointF &)
 MyQEnterEvent(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) : QEnterEvent(localPos, windowPos, screenPos) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:85
 // [-2] void QEnterEvent(const QPointF &, const QPointF &, const QPointF &)

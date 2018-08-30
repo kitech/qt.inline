@@ -49,6 +49,7 @@ public:
 // void QDragLeaveEvent()
 MyQDragLeaveEvent() : QDragLeaveEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:671
 // [-2] void QDragLeaveEvent()

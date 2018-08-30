@@ -53,6 +53,7 @@ MyQTableWidgetSelectionRange(int top, int left, int bottom, int right) : QTableW
 // void QTableWidgetSelectionRange(const QTableWidgetSelectionRange &)
 MyQTableWidgetSelectionRange(const QTableWidgetSelectionRange & other) : QTableWidgetSelectionRange(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:55
 // [-2] void QTableWidgetSelectionRange()

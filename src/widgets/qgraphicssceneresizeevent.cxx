@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneResizeEvent()
 MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
 // [-2] void QGraphicsSceneResizeEvent()

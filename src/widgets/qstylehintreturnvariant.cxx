@@ -50,6 +50,7 @@ public:
 // void QStyleHintReturnVariant()
 MyQStyleHintReturnVariant() : QStyleHintReturnVariant() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:733
 // [-2] void QStyleHintReturnVariant()

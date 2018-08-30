@@ -52,6 +52,7 @@ MyQQmlError() : QQmlError() {}
 // void QQmlError(const QQmlError &)
 MyQQmlError(const QQmlError & arg0) : QQmlError(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlerror.h:56
 // [-2] void QQmlError()

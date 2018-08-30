@@ -47,6 +47,7 @@ static const uint qt_meta_data_MyQWebEngineUrlRequestInfo[] = {
 class Q_DECL_EXPORT MyQWebEngineUrlRequestInfo : public QWebEngineUrlRequestInfo {
 public:
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineurlrequestinfo.h:93
 // [4] QWebEngineUrlRequestInfo::ResourceType resourceType()

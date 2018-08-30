@@ -49,6 +49,7 @@ public:
 // void QSGClipNode()
 MyQSGClipNode() : QSGClipNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:264
 // [-2] void QSGClipNode()

@@ -49,6 +49,7 @@ public:
 // void QSGNode()
 MyQSGNode() : QSGNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:130
 // [-2] void QSGNode()

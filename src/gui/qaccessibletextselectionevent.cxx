@@ -51,6 +51,7 @@ MyQAccessibleTextSelectionEvent(QObject * obj, int start, int end) : QAccessible
 // void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
 MyQAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end) : QAccessibleTextSelectionEvent(iface, start, end) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:773
 // [-2] void QAccessibleTextSelectionEvent(QObject *, int, int)

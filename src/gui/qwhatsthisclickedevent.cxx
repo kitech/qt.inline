@@ -49,6 +49,7 @@ public:
 // void QWhatsThisClickedEvent(const QString &)
 MyQWhatsThisClickedEvent(const QString & href) : QWhatsThisClickedEvent(href) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:713
 // [-2] void QWhatsThisClickedEvent(const QString &)

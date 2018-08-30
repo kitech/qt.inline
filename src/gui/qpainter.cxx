@@ -51,6 +51,7 @@ MyQPainter() : QPainter() {}
 // void QPainter(QPaintDevice *)
 MyQPainter(QPaintDevice * arg0) : QPainter(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:124
 // [-2] void QPainter()

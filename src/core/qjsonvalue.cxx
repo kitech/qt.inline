@@ -72,6 +72,7 @@ MyQJsonValue(const QJsonValue & other) : QJsonValue(other) {}
 // void QJsonValue(QJsonValue &&)
 MyQJsonValue(QJsonValue && other) : QJsonValue(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:76
 // [-2] void QJsonValue(QJsonValue::Type)

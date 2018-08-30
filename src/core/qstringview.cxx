@@ -52,6 +52,7 @@ MyQStringView() : QStringView() {}
 // void QStringView(std::nullptr_t)
 MyQStringView(std::nullptr_t arg0) : QStringView(arg0) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringview.h:172
 // [-2] void QStringView()

@@ -75,6 +75,7 @@ public:
 // void QImageIOHandler()
 MyQImageIOHandler() : QImageIOHandler() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:74
 // [1] bool canRead()

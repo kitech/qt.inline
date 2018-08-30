@@ -54,6 +54,7 @@ MyQSemaphoreReleaser(QSemaphore & sem, int n) : QSemaphoreReleaser(sem, n) {}
 // void QSemaphoreReleaser(QSemaphore *, int)
 MyQSemaphoreReleaser(QSemaphore * sem, int n) : QSemaphoreReleaser(sem, n) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:75
 // [-2] void QSemaphoreReleaser()

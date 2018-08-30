@@ -49,6 +49,7 @@ public:
 // void QBasicTimer()
 MyQBasicTimer() : QBasicTimer() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbasictimer.h:55
 // [-2] void QBasicTimer()

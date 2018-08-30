@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQDesktopServices : public QDesktopServices {
 public:
   virtual ~MyQDesktopServices() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdesktopservices.h:59
 // [1] bool openUrl(const QUrl &)

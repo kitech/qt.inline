@@ -52,6 +52,7 @@ MyQAuthenticator() : QAuthenticator() {}
 // void QAuthenticator(const QAuthenticator &)
 MyQAuthenticator(const QAuthenticator & other) : QAuthenticator(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:56
 // [-2] void QAuthenticator()

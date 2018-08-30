@@ -51,6 +51,7 @@ MyQItemSelection() : QItemSelection() {}
 // void QItemSelection(const QModelIndex &, const QModelIndex &)
 MyQItemSelection(const QModelIndex & topLeft, const QModelIndex & bottomRight) : QItemSelection(topLeft, bottomRight) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:250
 // [-2] void QItemSelection()

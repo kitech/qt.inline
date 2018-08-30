@@ -62,6 +62,7 @@ MyQMatrix4x4(const QTransform & transform) : QMatrix4x4(transform) {}
 // void QMatrix4x4(const QMatrix &)
 MyQMatrix4x4(const QMatrix & matrix) : QMatrix4x4(matrix) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:62
 // [-2] void QMatrix4x4()

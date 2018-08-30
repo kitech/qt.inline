@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQSysInfo : public QSysInfo {
 public:
   virtual ~MyQSysInfo() {}
 };
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsysinfo.h:220
 // [4] QSysInfo::WinVersion windowsVersion()

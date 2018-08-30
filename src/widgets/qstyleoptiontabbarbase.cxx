@@ -51,6 +51,7 @@ MyQStyleOptionTabBarBase() : QStyleOptionTabBarBase() {}
 // void QStyleOptionTabBarBase(const QStyleOptionTabBarBase &)
 MyQStyleOptionTabBarBase(const QStyleOptionTabBarBase & other) : QStyleOptionTabBarBase(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:195
 // [-2] void QStyleOptionTabBarBase()

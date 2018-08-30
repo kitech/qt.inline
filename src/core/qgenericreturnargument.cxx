@@ -49,6 +49,7 @@ public:
 // void QGenericReturnArgument(const char *, void *)
 MyQGenericReturnArgument(const char * aName, void * aData) : QGenericReturnArgument(aName, aData) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:310
 // [-2] void QGenericReturnArgument(const char *, void *)

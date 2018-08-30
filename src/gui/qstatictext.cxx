@@ -54,6 +54,7 @@ MyQStaticText(const QString & text) : QStaticText(text) {}
 // void QStaticText(const QStaticText &)
 MyQStaticText(const QStaticText & other) : QStaticText(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:64
 // [-2] void QStaticText()

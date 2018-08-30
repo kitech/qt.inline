@@ -50,6 +50,7 @@ public:
 // void QScrollPrepareEvent(const QPointF &)
 MyQScrollPrepareEvent(const QPointF & startPos) : QScrollPrepareEvent(startPos) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:990
 // [-2] void QScrollPrepareEvent(const QPointF &)

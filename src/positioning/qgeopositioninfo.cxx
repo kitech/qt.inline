@@ -56,6 +56,7 @@ MyQGeoPositionInfo(const QGeoPositionInfo & other) : QGeoPositionInfo(other) {}
 // void QGeoPositionInfo(QGeoPositionInfoPrivate &)
 MyQGeoPositionInfo(QGeoPositionInfoPrivate & dd) : QGeoPositionInfo(dd) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopositioninfo.h:64
 // [-2] void QGeoPositionInfo()

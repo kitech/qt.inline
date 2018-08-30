@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQByteRef : public QByteRef {
 public:
   virtual ~MyQByteRef() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:535
 // [16] QByteRef & operator=(char)

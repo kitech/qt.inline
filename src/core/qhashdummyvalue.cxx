@@ -48,6 +48,7 @@ public:
   virtual ~MyQHashDummyValue() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN15QHashDummyValueD2Ev(void *this_) {
   delete (QHashDummyValue*)(this_);

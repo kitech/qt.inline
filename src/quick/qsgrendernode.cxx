@@ -62,6 +62,7 @@ public:
 // void QSGRenderNode()
 MyQSGRenderNode() : QSGRenderNode() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendernode.h:86
 // [-2] void render(const QSGRenderNode::RenderState *)

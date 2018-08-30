@@ -56,6 +56,7 @@ MyQGeoCircle(const QGeoCircle & other) : QGeoCircle(other) {}
 // void QGeoCircle(const QGeoShape &)
 MyQGeoCircle(const QGeoShape & other) : QGeoCircle(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeocircle.h:57
 // [-2] void QGeoCircle()

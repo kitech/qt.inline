@@ -50,6 +50,7 @@ public:
 // void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)
 MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) : QOperatingSystemVersion(osType, vmajor, vminor, vmicro) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:85
 // [-2] void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)

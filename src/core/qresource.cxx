@@ -50,6 +50,7 @@ public:
 // void QResource(const QString &, const QLocale &)
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:57
 // [-2] void QResource(const QString &, const QLocale &)

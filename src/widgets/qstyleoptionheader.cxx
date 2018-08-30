@@ -51,6 +51,7 @@ MyQStyleOptionHeader() : QStyleOptionHeader() {}
 // void QStyleOptionHeader(const QStyleOptionHeader &)
 MyQStyleOptionHeader(const QStyleOptionHeader & other) : QStyleOptionHeader(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:226
 // [-2] void QStyleOptionHeader()

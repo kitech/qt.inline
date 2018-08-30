@@ -50,6 +50,7 @@ public:
 // void QCommandLineParser()
 MyQCommandLineParser() : QCommandLineParser() {}
 };
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:57
 // [8] QString tr(const char *, const char *, int)

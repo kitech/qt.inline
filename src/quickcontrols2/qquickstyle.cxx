@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQQuickStyle : public QQuickStyle {
 public:
   virtual ~MyQQuickStyle() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuickControls2/qquickstyle.h:49
 // [8] QString name()

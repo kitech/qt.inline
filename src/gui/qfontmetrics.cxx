@@ -53,6 +53,7 @@ MyQFontMetrics(const QFont & arg0, QPaintDevice * pd) : QFontMetrics(arg0, pd) {
 // void QFontMetrics(const QFontMetrics &)
 MyQFontMetrics(const QFontMetrics & arg0) : QFontMetrics(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:61
 // [-2] void QFontMetrics(const QFont &)

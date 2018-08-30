@@ -56,6 +56,7 @@ MyQUrlQuery(const QString & queryString) : QUrlQuery(queryString) {}
 // void QUrlQuery(const QUrlQuery &)
 MyQUrlQuery(const QUrlQuery & other) : QUrlQuery(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:59
 // [-2] void QUrlQuery()

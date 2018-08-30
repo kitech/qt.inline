@@ -52,6 +52,7 @@ MyQNetworkCacheMetaData() : QNetworkCacheMetaData() {}
 // void QNetworkCacheMetaData(const QNetworkCacheMetaData &)
 MyQNetworkCacheMetaData(const QNetworkCacheMetaData & other) : QNetworkCacheMetaData(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:66
 // [-2] void QNetworkCacheMetaData()

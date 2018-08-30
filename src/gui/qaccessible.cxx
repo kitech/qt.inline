@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQAccessible : public QAccessible {
 public:
   virtual ~MyQAccessible() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:400
 // [-2] void installFactory(QAccessible::InterfaceFactory)

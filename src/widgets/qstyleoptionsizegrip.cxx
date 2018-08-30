@@ -52,6 +52,7 @@ MyQStyleOptionSizeGrip() : QStyleOptionSizeGrip() {}
 // void QStyleOptionSizeGrip(const QStyleOptionSizeGrip &)
 MyQStyleOptionSizeGrip(const QStyleOptionSizeGrip & other) : QStyleOptionSizeGrip(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:653
 // [-2] void QStyleOptionSizeGrip()

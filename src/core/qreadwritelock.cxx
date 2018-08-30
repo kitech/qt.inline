@@ -49,6 +49,7 @@ public:
 // void QReadWriteLock(QReadWriteLock::RecursionMode)
 MyQReadWriteLock(QReadWriteLock::RecursionMode recursionMode) : QReadWriteLock(recursionMode) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:57
 // [-2] void QReadWriteLock(QReadWriteLock::RecursionMode)

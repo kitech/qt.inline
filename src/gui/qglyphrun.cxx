@@ -52,6 +52,7 @@ MyQGlyphRun() : QGlyphRun() {}
 // void QGlyphRun(const QGlyphRun &)
 MyQGlyphRun(const QGlyphRun & other) : QGlyphRun(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:67
 // [-2] void QGlyphRun()

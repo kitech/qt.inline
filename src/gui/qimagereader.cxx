@@ -53,6 +53,7 @@ MyQImageReader(QIODevice * device, const QByteArray & format) : QImageReader(dev
 // void QImageReader(const QString &, const QByteArray &)
 MyQImageReader(const QString & fileName, const QByteArray & format) : QImageReader(fileName, format) {}
 };
+
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:61
 // [8] QString tr(const char *, const char *, int)

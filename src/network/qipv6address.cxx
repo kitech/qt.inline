@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQIPv6Address : public QIPv6Address {
 public:
   virtual ~MyQIPv6Address() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:60
 // [1] quint8 & operator[](int)

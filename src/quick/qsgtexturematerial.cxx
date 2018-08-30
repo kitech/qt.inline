@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQSGTextureMaterial : public QSGTextureMaterial {
 public:
   virtual ~MyQSGTextureMaterial() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:90
 // [8] QSGMaterialType * type()

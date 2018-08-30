@@ -61,6 +61,7 @@ MyQQmlIncubationController() : QQmlIncubationController() {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:113
 // [-2] void incubatingObjectCountChanged(int)

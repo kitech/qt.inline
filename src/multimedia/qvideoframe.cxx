@@ -57,6 +57,7 @@ MyQVideoFrame(const QImage & image) : QVideoFrame(image) {}
 // void QVideoFrame(const QVideoFrame &)
 MyQVideoFrame(const QVideoFrame & other) : QVideoFrame(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideoframe.h:111
 // [-2] void QVideoFrame()

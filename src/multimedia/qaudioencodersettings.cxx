@@ -51,6 +51,7 @@ MyQAudioEncoderSettings() : QAudioEncoderSettings() {}
 // void QAudioEncoderSettings(const QAudioEncoderSettings &)
 MyQAudioEncoderSettings(const QAudioEncoderSettings & other) : QAudioEncoderSettings(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaencodersettings.h:58
 // [-2] void QAudioEncoderSettings()

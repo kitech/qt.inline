@@ -51,6 +51,7 @@ MyQSharedData() : QSharedData() {}
 // void QSharedData(const QSharedData &)
 MyQSharedData(const QSharedData & arg0) : QSharedData(arg0) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qshareddata.h:60
 // [-2] void QSharedData()

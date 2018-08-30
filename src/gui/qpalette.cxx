@@ -63,6 +63,7 @@ MyQPalette(const QPalette & palette) : QPalette(palette) {}
 // void QPalette(QPalette &&)
 MyQPalette(QPalette && other) : QPalette(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:58
 // [-2] void QPalette()

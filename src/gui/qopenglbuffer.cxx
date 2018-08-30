@@ -54,6 +54,7 @@ MyQOpenGLBuffer(QOpenGLBuffer::Type type_) : QOpenGLBuffer(type_) {}
 // void QOpenGLBuffer(const QOpenGLBuffer &)
 MyQOpenGLBuffer(const QOpenGLBuffer & other) : QOpenGLBuffer(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglbuffer.h:66
 // [-2] void QOpenGLBuffer()

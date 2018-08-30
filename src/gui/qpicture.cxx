@@ -64,6 +64,7 @@ MyQPicture(const QPicture & arg0) : QPicture(arg0) {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:106
 // [4] int metric(QPaintDevice::PaintDeviceMetric)

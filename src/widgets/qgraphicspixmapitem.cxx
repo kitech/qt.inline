@@ -91,6 +91,7 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:855
 // [1] bool supportsExtension(QGraphicsItem::Extension)

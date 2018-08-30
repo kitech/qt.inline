@@ -60,6 +60,7 @@ MyQGeoRectangle(const QGeoRectangle & other) : QGeoRectangle(other) {}
 // void QGeoRectangle(const QGeoShape &)
 MyQGeoRectangle(const QGeoShape & other) : QGeoRectangle(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeorectangle.h:61
 // [-2] void QGeoRectangle()

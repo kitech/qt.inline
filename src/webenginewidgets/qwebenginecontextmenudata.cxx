@@ -52,6 +52,7 @@ MyQWebEngineContextMenuData() : QWebEngineContextMenuData() {}
 // void QWebEngineContextMenuData(const QWebEngineContextMenuData &)
 MyQWebEngineContextMenuData(const QWebEngineContextMenuData & other) : QWebEngineContextMenuData(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:56
 // [-2] void QWebEngineContextMenuData()

@@ -52,6 +52,7 @@ MyQGeoShape() : QGeoShape() {}
 // void QGeoShape(const QGeoShape &)
 MyQGeoShape(const QGeoShape & other) : QGeoShape(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeoshape.h:61
 // [-2] void QGeoShape()

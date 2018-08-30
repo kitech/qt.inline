@@ -62,6 +62,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:157
 // [8] QByteArray defaultDevice(const QByteArray &)

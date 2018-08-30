@@ -54,6 +54,7 @@ MyQSslCertificate(const QByteArray & data, QSsl::EncodingFormat format) : QSslCe
 // void QSslCertificate(const QSslCertificate &)
 MyQSslCertificate(const QSslCertificate & other) : QSslCertificate(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:89
 // [-2] void QSslCertificate(QIODevice *, QSsl::EncodingFormat)

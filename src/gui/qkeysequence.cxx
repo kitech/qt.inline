@@ -57,6 +57,7 @@ MyQKeySequence(const QKeySequence & ks) : QKeySequence(ks) {}
 // void QKeySequence(QKeySequence::StandardKey)
 MyQKeySequence(QKeySequence::StandardKey key) : QKeySequence(key) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:156
 // [-2] void QKeySequence()

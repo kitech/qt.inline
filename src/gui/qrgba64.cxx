@@ -50,6 +50,7 @@ public:
 // void QRgba64()
 MyQRgba64() : QRgba64() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:69
 // [-2] void QRgba64()

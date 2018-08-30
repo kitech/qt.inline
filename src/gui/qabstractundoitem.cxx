@@ -71,6 +71,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:87
 // [-2] void undo()

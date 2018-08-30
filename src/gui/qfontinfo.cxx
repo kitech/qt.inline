@@ -51,6 +51,7 @@ MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
 // void QFontInfo(const QFontInfo &)
 MyQFontInfo(const QFontInfo & arg0) : QFontInfo(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:53
 // [-2] void QFontInfo(const QFont &)

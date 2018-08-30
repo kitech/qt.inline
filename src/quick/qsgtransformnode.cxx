@@ -49,6 +49,7 @@ public:
 // void QSGTransformNode()
 MyQSGTransformNode() : QSGTransformNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:284
 // [-2] void QSGTransformNode()

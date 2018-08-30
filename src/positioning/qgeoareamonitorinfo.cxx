@@ -52,6 +52,7 @@ MyQGeoAreaMonitorInfo(const QString & name) : QGeoAreaMonitorInfo(name) {}
 // void QGeoAreaMonitorInfo(const QGeoAreaMonitorInfo &)
 MyQGeoAreaMonitorInfo(const QGeoAreaMonitorInfo & other) : QGeoAreaMonitorInfo(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeoareamonitorinfo.h:62
 // [-2] void QGeoAreaMonitorInfo(const QString &)

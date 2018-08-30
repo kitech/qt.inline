@@ -49,6 +49,7 @@ public:
 // void QColormap(const QColormap &)
 MyQColormap(const QColormap & colormap) : QColormap(colormap) {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:60
 // [-2] void initialize()

@@ -61,6 +61,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlnetworkaccessmanagerfactory.h:55
 // [8] QNetworkAccessManager * create(QObject *)

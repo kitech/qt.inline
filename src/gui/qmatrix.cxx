@@ -57,6 +57,7 @@ MyQMatrix(QMatrix && other) : QMatrix(other) {}
 // void QMatrix(const QMatrix &)
 MyQMatrix(const QMatrix & other) : QMatrix(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:60
 // [-2] void QMatrix(Qt::Initialization)

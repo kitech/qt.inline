@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQObjectUserData : public QObjectUserData {
 public:
   virtual ~MyQObjectUserData() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:479
 // [-2] void ~QObjectUserData()

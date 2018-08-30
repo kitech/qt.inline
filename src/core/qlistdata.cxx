@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQListData : public QListData {
 public:
   virtual ~MyQListData() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlist.h:96
 // [8] QListData::Data * detach(int)

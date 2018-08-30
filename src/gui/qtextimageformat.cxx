@@ -49,6 +49,7 @@ public:
 // void QTextImageFormat()
 MyQTextImageFormat() : QTextImageFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:735
 // [-2] void QTextImageFormat()

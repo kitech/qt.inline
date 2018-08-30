@@ -56,6 +56,7 @@ MyQGeoCoordinate(double latitude, double longitude, double altitude) : QGeoCoord
 // void QGeoCoordinate(const QGeoCoordinate &)
 MyQGeoCoordinate(const QGeoCoordinate & other) : QGeoCoordinate(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeocoordinate.h:80
 // [-2] void QGeoCoordinate()

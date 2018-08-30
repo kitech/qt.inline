@@ -51,6 +51,7 @@ MyQTemporaryDir() : QTemporaryDir() {}
 // void QTemporaryDir(const QString &)
 MyQTemporaryDir(const QString & templateName) : QTemporaryDir(templateName) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:56
 // [-2] void QTemporaryDir()

@@ -49,6 +49,7 @@ public:
 // void QMoveEvent(const QPoint &, const QPoint &)
 MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:421
 // [-2] void QMoveEvent(const QPoint &, const QPoint &)

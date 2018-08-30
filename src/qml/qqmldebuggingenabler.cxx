@@ -49,6 +49,7 @@ public:
 // void QQmlDebuggingEnabler(bool)
 MyQQmlDebuggingEnabler(bool printWarning) : QQmlDebuggingEnabler(printWarning) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmldebug.h:58
 // [-2] void QQmlDebuggingEnabler(bool)

@@ -52,6 +52,7 @@ MyQMargins() : QMargins() {}
 // void QMargins(int, int, int, int)
 MyQMargins(int left, int top, int right, int bottom) : QMargins(left, top, right, bottom) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:54
 // [-2] void QMargins()

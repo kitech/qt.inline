@@ -51,6 +51,7 @@ MyQTime() : QTime() {}
 // void QTime(int, int, int, int)
 MyQTime(int h, int m, int s, int ms) : QTime(h, m, s, ms) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:159
 // [-2] void QTime()

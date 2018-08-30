@@ -49,6 +49,7 @@ public:
 // void QFutureInterface(QFutureInterfaceBase::State)
 MyQFutureInterface(QFutureInterfaceBase::State initialState) : QFutureInterface<void>(initialState) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:282
 // [-2] void QFutureInterface(QFutureInterfaceBase::State)

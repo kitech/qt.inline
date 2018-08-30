@@ -59,6 +59,7 @@ MyQTextStream(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) : QT
 // void QTextStream(const QByteArray &, QIODevice::OpenMode)
 MyQTextStream(const QByteArray & array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:93
 // [-2] void QTextStream()

@@ -54,6 +54,7 @@ MyQRegularExpression(const QString & pattern, QFlags<QRegularExpression::Pattern
 // void QRegularExpression(const QRegularExpression &)
 MyQRegularExpression(const QRegularExpression & re) : QRegularExpression(re) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:81
 // [4] QRegularExpression::PatternOptions patternOptions()

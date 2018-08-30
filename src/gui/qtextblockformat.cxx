@@ -49,6 +49,7 @@ public:
 // void QTextBlockFormat()
 MyQTextBlockFormat() : QTextBlockFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:590
 // [-2] void QTextBlockFormat()

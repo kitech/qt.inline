@@ -385,6 +385,7 @@ MyQGraphicsItem(QGraphicsItem * parent) : QGraphicsItem(parent) {}
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:324
 // [32] QRectF boundingRect()

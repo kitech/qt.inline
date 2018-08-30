@@ -52,6 +52,7 @@ MyQScrollerProperties() : QScrollerProperties() {}
 // void QScrollerProperties(const QScrollerProperties &)
 MyQScrollerProperties(const QScrollerProperties & sp) : QScrollerProperties(sp) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:60
 // [-2] void QScrollerProperties()

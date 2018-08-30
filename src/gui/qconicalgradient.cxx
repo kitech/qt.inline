@@ -53,6 +53,7 @@ MyQConicalGradient(const QPointF & center, qreal startAngle) : QConicalGradient(
 // void QConicalGradient(qreal, qreal, qreal)
 MyQConicalGradient(qreal cx, qreal cy, qreal startAngle) : QConicalGradient(cx, cy, startAngle) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:306
 // [-2] void QConicalGradient()

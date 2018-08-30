@@ -55,6 +55,7 @@ MyQRect(const QPoint & topleft, const QSize & size) : QRect(topleft, size) {}
 // void QRect(int, int, int, int)
 MyQRect(int left, int top, int width, int height) : QRect(left, top, width, height) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:60
 // [-2] void QRect()

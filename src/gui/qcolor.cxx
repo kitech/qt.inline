@@ -71,6 +71,7 @@ MyQColor(const QColor & color) : QColor(color) {}
 // void QColor(QColor &&)
 MyQColor(QColor && other) : QColor(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:70
 // [-2] void QColor()

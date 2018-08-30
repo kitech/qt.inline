@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQTextItem : public QTextItem {
 public:
   virtual ~MyQTextItem() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:75
 // [8] qreal descent()

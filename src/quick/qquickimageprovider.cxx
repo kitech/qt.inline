@@ -50,6 +50,7 @@ public:
 // void QQuickImageProvider(QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)
 MyQQuickImageProvider(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImageProviderBase::Flag> flags) : QQuickImageProvider(type_, flags) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:92
 // [-2] void QQuickImageProvider(QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)

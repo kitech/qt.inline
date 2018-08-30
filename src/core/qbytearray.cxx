@@ -61,6 +61,7 @@ MyQByteArray(QByteArray && other) : QByteArray(other) {}
 // void QByteArray(QByteArrayDataPtr)
 MyQByteArray(QByteArrayDataPtr dd) : QByteArray(dd) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:170
 // [-2] void QByteArray()

@@ -50,6 +50,7 @@ public:
 // void QMessageAuthenticationCode(QCryptographicHash::Algorithm, const QByteArray &)
 MyQMessageAuthenticationCode(QCryptographicHash::Algorithm method, const QByteArray & key) : QMessageAuthenticationCode(method, key) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:54
 // [-2] void QMessageAuthenticationCode(QCryptographicHash::Algorithm, const QByteArray &)

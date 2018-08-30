@@ -51,6 +51,7 @@ MyQFileOpenEvent(const QString & file) : QFileOpenEvent(file) {}
 // void QFileOpenEvent(const QUrl &)
 MyQFileOpenEvent(const QUrl & url) : QFileOpenEvent(url) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:738
 // [-2] void QFileOpenEvent(const QString &)

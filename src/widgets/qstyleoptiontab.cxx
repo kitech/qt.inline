@@ -51,6 +51,7 @@ MyQStyleOptionTab() : QStyleOptionTab() {}
 // void QStyleOptionTab(const QStyleOptionTab &)
 MyQStyleOptionTab(const QStyleOptionTab & other) : QStyleOptionTab(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:285
 // [-2] void QStyleOptionTab()

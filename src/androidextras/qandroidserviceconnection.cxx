@@ -76,6 +76,7 @@ MyQAndroidServiceConnection() : QAndroidServiceConnection() {}
 // void QAndroidServiceConnection(const QAndroidJniObject &)
 MyQAndroidServiceConnection(const QAndroidJniObject & serviceConnection) : QAndroidServiceConnection(serviceConnection) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidserviceconnection.h:55
 // [-2] void onServiceConnected(const QString &, const QAndroidBinder &)

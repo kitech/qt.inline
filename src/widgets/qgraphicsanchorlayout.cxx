@@ -64,6 +64,7 @@ MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(pa
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:107
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)

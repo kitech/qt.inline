@@ -50,6 +50,7 @@ public:
 // void QPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType)
 MyQPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) : QPlatformSurfaceEvent(surfaceEventType) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:451
 // [-2] void QPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType)

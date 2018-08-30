@@ -49,6 +49,7 @@ public:
 // void QMetaClassInfo()
 MyQMetaClassInfo() : QMetaClassInfo() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:303
 // [-2] void QMetaClassInfo()

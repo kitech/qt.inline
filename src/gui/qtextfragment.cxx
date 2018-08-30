@@ -53,6 +53,7 @@ MyQTextFragment() : QTextFragment() {}
 // void QTextFragment(const QTextFragment &)
 MyQTextFragment(const QTextFragment & o) : QTextFragment(o) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:306
 // [-2] void QTextFragment(const QTextDocumentPrivate *, int, int)

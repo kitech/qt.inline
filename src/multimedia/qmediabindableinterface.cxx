@@ -73,6 +73,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediabindableinterface.h:55
 // [8] QMediaObject * mediaObject()

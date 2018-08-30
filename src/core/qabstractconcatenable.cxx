@@ -48,6 +48,7 @@ public:
   virtual ~MyQAbstractConcatenable() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractConcatenableD2Ev(void *this_) {
   delete (QAbstractConcatenable*)(this_);

@@ -53,6 +53,7 @@ MyQCameraFocusZone(const QRectF & area, QCameraFocusZone::FocusZoneStatus status
 // void QCameraFocusZone(const QCameraFocusZone &)
 MyQCameraFocusZone(const QCameraFocusZone & other) : QCameraFocusZone(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerafocus.h:69
 // [-2] void QCameraFocusZone()

@@ -70,6 +70,7 @@ MyQJSValue(const char * str) : QJSValue(str) {}
 // void QJSValue(QV4::ExecutionEngine *, quint64)
 MyQJSValue(QV4::ExecutionEngine * e, quint64 val) : QJSValue(e, val) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsvalue.h:72
 // [-2] void QJSValue(QJSValue::SpecialValue)

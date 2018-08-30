@@ -58,6 +58,7 @@ MyQJsonDocument(const QJsonDocument & other) : QJsonDocument(other) {}
 // void QJsonDocument(QJsonDocument &&)
 MyQJsonDocument(QJsonDocument && other) : QJsonDocument(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:88
 // [-2] void QJsonDocument()

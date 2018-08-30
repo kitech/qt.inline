@@ -49,6 +49,7 @@ public:
 // void QQmlInfo(const QQmlInfo &)
 MyQQmlInfo(const QQmlInfo & arg0) : QQmlInfo(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:75
 // [-2] void QQmlInfo(const QQmlInfo &)

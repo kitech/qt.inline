@@ -51,6 +51,7 @@ MyQPoint() : QPoint() {}
 // void QPoint(int, int)
 MyQPoint(int xpos, int ypos) : QPoint(xpos, ypos) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:55
 // [-2] void QPoint()

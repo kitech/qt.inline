@@ -49,6 +49,7 @@ public:
 // void QWindowStateChangeEvent(Qt::WindowStates, bool)
 MyQWindowStateChangeEvent(QFlags<Qt::WindowState> aOldState, bool isOverride) : QWindowStateChangeEvent(aOldState, isOverride) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:783
 // [-2] void QWindowStateChangeEvent(Qt::WindowStates, bool)

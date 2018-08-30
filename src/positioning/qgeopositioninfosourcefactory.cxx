@@ -87,6 +87,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:55
 // [8] QGeoPositionInfoSource * positionInfoSource(QObject *)

@@ -54,6 +54,7 @@ MyQOpenGLVersionProfile(const QSurfaceFormat & format) : QOpenGLVersionProfile(f
 // void QOpenGLVersionProfile(const QOpenGLVersionProfile &)
 MyQOpenGLVersionProfile(const QOpenGLVersionProfile & other) : QOpenGLVersionProfile(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglcontext.h:87
 // [-2] void QOpenGLVersionProfile()

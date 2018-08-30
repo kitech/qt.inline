@@ -64,6 +64,7 @@ MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, quint16
 // void QNetworkProxyQuery(const QNetworkProxyQuery &)
 MyQNetworkProxyQuery(const QNetworkProxyQuery & other) : QNetworkProxyQuery(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:72
 // [-2] void QNetworkProxyQuery()

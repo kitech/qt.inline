@@ -53,6 +53,7 @@ MyQLinearGradient(const QPointF & start, const QPointF & finalStop) : QLinearGra
 // void QLinearGradient(qreal, qreal, qreal, qreal)
 MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) : QLinearGradient(xStart, yStart, xFinalStop, yFinalStop) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:257
 // [-2] void QLinearGradient()

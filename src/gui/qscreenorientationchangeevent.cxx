@@ -49,6 +49,7 @@ public:
 // void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)
 MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientation) : QScreenOrientationChangeEvent(screen, orientation) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1038
 // [-2] void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)

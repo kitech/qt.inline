@@ -54,6 +54,7 @@ MyQHstsPolicy(const QDateTime & expiry, QFlags<QHstsPolicy::PolicyFlag> flags, c
 // void QHstsPolicy(const QHstsPolicy &)
 MyQHstsPolicy(const QHstsPolicy & rhs) : QHstsPolicy(rhs) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhstspolicy.h:63
 // [-2] void QHstsPolicy()

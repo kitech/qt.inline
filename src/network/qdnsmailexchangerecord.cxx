@@ -51,6 +51,7 @@ MyQDnsMailExchangeRecord() : QDnsMailExchangeRecord() {}
 // void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &)
 MyQDnsMailExchangeRecord(const QDnsMailExchangeRecord & other) : QDnsMailExchangeRecord(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:111
 // [-2] void QDnsMailExchangeRecord()

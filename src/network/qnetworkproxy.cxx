@@ -54,6 +54,7 @@ MyQNetworkProxy(QNetworkProxy::ProxyType type_, const QString & hostName, quint1
 // void QNetworkProxy(const QNetworkProxy &)
 MyQNetworkProxy(const QNetworkProxy & other) : QNetworkProxy(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:160
 // [-2] void QNetworkProxy()

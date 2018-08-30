@@ -48,6 +48,7 @@ public:
   virtual ~MyQSGMaterialType() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGMaterialTypeD2Ev(void *this_) {
   delete (QSGMaterialType*)(this_);

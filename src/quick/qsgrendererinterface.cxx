@@ -100,6 +100,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrendererinterface.h:88
 // [4] QSGRendererInterface::GraphicsApi graphicsApi()

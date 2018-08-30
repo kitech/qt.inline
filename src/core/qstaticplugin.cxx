@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQStaticPlugin : public QStaticPlugin {
 public:
   virtual ~MyQStaticPlugin() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qplugin.h:74
 // [16] QJsonObject metaData()

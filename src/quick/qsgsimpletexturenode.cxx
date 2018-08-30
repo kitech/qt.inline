@@ -49,6 +49,7 @@ public:
 // void QSGSimpleTextureNode()
 MyQSGSimpleTextureNode() : QSGSimpleTextureNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:54
 // [-2] void QSGSimpleTextureNode()

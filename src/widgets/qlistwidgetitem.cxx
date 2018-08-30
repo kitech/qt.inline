@@ -55,6 +55,7 @@ MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * view, 
 // void QListWidgetItem(const QListWidgetItem &)
 MyQListWidgetItem(const QListWidgetItem & other) : QListWidgetItem(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:64
 // [-2] void QListWidgetItem(QListWidget *, int)

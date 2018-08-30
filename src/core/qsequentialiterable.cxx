@@ -50,6 +50,7 @@ public:
 // void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)
 MyQSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl impl) : QSequentialIterable(impl) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:618
 // [-2] void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)

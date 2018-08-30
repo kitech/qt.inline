@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQMapNodeBase : public QMapNodeBase {
 public:
   virtual ~MyQMapNodeBase() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmap.h:91
 // [8] const QMapNodeBase * nextNode()

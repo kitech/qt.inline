@@ -50,6 +50,7 @@ public:
 // void QTouchEvent(QEvent::Type, QTouchDevice *, Qt::KeyboardModifiers, Qt::TouchPointStates, const QList<QTouchEvent::TouchPoint> &)
 MyQTouchEvent(QEvent::Type eventType, QTouchDevice * device, QFlags<Qt::KeyboardModifier> modifiers, QFlags<Qt::TouchPointState> touchPointStates, const QList<QTouchEvent::TouchPoint> & touchPoints) : QTouchEvent(eventType, device, modifiers, touchPointStates, touchPoints) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:942
 // [-2] void QTouchEvent(QEvent::Type, QTouchDevice *, Qt::KeyboardModifiers, Qt::TouchPointStates, const QList<QTouchEvent::TouchPoint> &)

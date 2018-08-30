@@ -62,6 +62,7 @@ MyQVersionNumber(int maj, int min) : QVersionNumber(maj, min) {}
 // void QVersionNumber(int, int, int)
 MyQVersionNumber(int maj, int min, int mic) : QVersionNumber(maj, min, mic) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:221
 // [-2] void QVersionNumber()

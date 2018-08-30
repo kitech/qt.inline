@@ -51,6 +51,7 @@ MyQDnsDomainNameRecord() : QDnsDomainNameRecord() {}
 // void QDnsDomainNameRecord(const QDnsDomainNameRecord &)
 MyQDnsDomainNameRecord(const QDnsDomainNameRecord & other) : QDnsDomainNameRecord(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:63
 // [-2] void QDnsDomainNameRecord()

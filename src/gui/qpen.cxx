@@ -59,6 +59,7 @@ MyQPen(const QPen & pen) : QPen(pen) {}
 // void QPen(QPen &&)
 MyQPen(QPen && other) : QPen(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:63
 // [-2] void QPen()

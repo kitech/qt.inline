@@ -52,6 +52,7 @@ MyQNetworkCookie(const QByteArray & name, const QByteArray & value) : QNetworkCo
 // void QNetworkCookie(const QNetworkCookie &)
 MyQNetworkCookie(const QNetworkCookie & other) : QNetworkCookie(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:66
 // [-2] void QNetworkCookie(const QByteArray &, const QByteArray &)

@@ -56,6 +56,7 @@ MyQGeoPath(const QGeoPath & other) : QGeoPath(other) {}
 // void QGeoPath(const QGeoShape &)
 MyQGeoPath(const QGeoShape & other) : QGeoPath(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopath.h:57
 // [-2] void QGeoPath()

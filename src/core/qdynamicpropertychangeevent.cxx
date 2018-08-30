@@ -50,6 +50,7 @@ public:
 // void QDynamicPropertyChangeEvent(const QByteArray &)
 MyQDynamicPropertyChangeEvent(const QByteArray & name) : QDynamicPropertyChangeEvent(name) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:365
 // [-2] void QDynamicPropertyChangeEvent(const QByteArray &)

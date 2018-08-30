@@ -51,6 +51,7 @@ MyQHostInfo(int lookupId) : QHostInfo(lookupId) {}
 // void QHostInfo(const QHostInfo &)
 MyQHostInfo(const QHostInfo & d) : QHostInfo(d) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:63
 // [-2] void QHostInfo(int)

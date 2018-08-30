@@ -53,6 +53,7 @@ MyQPictureIO(QIODevice * ioDevice, const char * format) : QPictureIO(ioDevice, f
 // void QPictureIO(const QString &, const char *)
 MyQPictureIO(const QString & fileName, const char * format) : QPictureIO(fileName, format) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:134
 // [-2] void QPictureIO()

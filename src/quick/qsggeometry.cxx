@@ -49,6 +49,7 @@ public:
 // void QSGGeometry(const QSGGeometry::AttributeSet &, int, int, int)
 MyQSGGeometry(const QSGGeometry::AttributeSet & attribs, int vertexCount, int indexCount, int indexType) : QSGGeometry(attribs, vertexCount, indexCount, indexType) {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:138
 // [16] const QSGGeometry::AttributeSet & defaultAttributes_Point2D()

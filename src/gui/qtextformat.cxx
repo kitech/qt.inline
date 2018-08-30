@@ -53,6 +53,7 @@ MyQTextFormat(int type_) : QTextFormat(type_) {}
 // void QTextFormat(const QTextFormat &)
 MyQTextFormat(const QTextFormat & rhs) : QTextFormat(rhs) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:288
 // [-2] void QTextFormat()

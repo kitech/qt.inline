@@ -51,6 +51,7 @@ MyQTextStreamManipulator(QTSMFI m, int a) : QTextStreamManipulator(m, a) {}
 // void QTextStreamManipulator(QTSMFC, QChar)
 MyQTextStreamManipulator(QTSMFC m, QChar c) : QTextStreamManipulator(m, c) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:215
 // [-2] void QTextStreamManipulator(QTSMFI, int)

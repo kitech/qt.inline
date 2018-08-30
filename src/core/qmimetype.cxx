@@ -54,6 +54,7 @@ MyQMimeType(const QMimeType & other) : QMimeType(other) {}
 // void QMimeType(const QMimeTypePrivate &)
 MyQMimeType(const QMimeTypePrivate & dd) : QMimeType(dd) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:78
 // [-2] void QMimeType()

@@ -48,6 +48,7 @@ public:
   virtual ~MyRegisterType() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN12RegisterTypeD2Ev(void *this_) {
   delete (QQmlPrivate::RegisterType*)(this_);

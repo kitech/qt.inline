@@ -55,6 +55,7 @@ MyQFont(const QFont & arg0, QPaintDevice * pd) : QFont(arg0, pd) {}
 // void QFont(const QFont &)
 MyQFont(const QFont & arg0) : QFont(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:170
 // [-2] void QFont()

@@ -49,6 +49,7 @@ public:
 // void QModelIndex()
 MyQModelIndex() : QModelIndex() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:58
 // [-2] void QModelIndex()

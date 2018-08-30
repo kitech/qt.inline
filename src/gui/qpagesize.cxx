@@ -58,6 +58,7 @@ MyQPageSize(const QSizeF & size, QPageSize::Unit units, const QString & name, QP
 // void QPageSize(const QPageSize &)
 MyQPageSize(const QPageSize & other) : QPageSize(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:230
 // [-2] void QPageSize()

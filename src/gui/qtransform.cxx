@@ -62,6 +62,7 @@ MyQTransform(QTransform && other) : QTransform(other) {}
 // void QTransform(const QTransform &)
 MyQTransform(const QTransform & other) : QTransform(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:69
 // [-2] void QTransform(Qt::Initialization)

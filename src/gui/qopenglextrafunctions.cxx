@@ -52,6 +52,7 @@ MyQOpenGLExtraFunctions() : QOpenGLExtraFunctions() {}
 // void QOpenGLExtraFunctions(QOpenGLContext *)
 MyQOpenGLExtraFunctions(QOpenGLContext * context) : QOpenGLExtraFunctions(context) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglextrafunctions.h:287
 // [-2] void QOpenGLExtraFunctions()

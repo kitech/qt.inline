@@ -49,6 +49,7 @@ public:
 // void QTextLine()
 MyQTextLine() : QTextLine() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:213
 // [-2] void QTextLine()

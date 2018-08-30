@@ -49,6 +49,7 @@ public:
 // void QLatin1Char(char)
 MyQLatin1Char(char c) : QLatin1Char(c) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:53
 // [-2] void QLatin1Char(char)

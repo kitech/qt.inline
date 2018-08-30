@@ -61,6 +61,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfactoryinterface.h:52
 // [8] QStringList keys()

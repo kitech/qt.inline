@@ -49,6 +49,7 @@ public:
 // void QTextListFormat()
 MyQTextListFormat() : QTextListFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:681
 // [-2] void QTextListFormat()

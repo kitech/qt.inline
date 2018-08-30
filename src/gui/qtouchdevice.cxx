@@ -50,6 +50,7 @@ public:
 // void QTouchDevice()
 MyQTouchDevice() : QTouchDevice() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:73
 // [-2] void QTouchDevice()

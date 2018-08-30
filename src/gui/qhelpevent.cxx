@@ -49,6 +49,7 @@ public:
 // void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)
 MyQHelpEvent(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type_, pos, globalPos) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:680
 // [-2] void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)

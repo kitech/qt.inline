@@ -52,6 +52,7 @@ MyQPainterPathStroker() : QPainterPathStroker() {}
 // void QPainterPathStroker(const QPen &)
 MyQPainterPathStroker(const QPen & pen) : QPainterPathStroker(pen) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:246
 // [-2] void QPainterPathStroker()

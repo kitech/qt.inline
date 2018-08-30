@@ -49,6 +49,7 @@ public:
 // void QMetaType(const int)
 MyQMetaType(const int type_) : QMetaType(type_) {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetatype.h:479
 // [-2] void registerStreamOperators(const char *, QMetaType::SaveOperator, QMetaType::LoadOperator)

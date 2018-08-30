@@ -52,6 +52,7 @@ MyQNetworkInterface() : QNetworkInterface() {}
 // void QNetworkInterface(const QNetworkInterface &)
 MyQNetworkInterface(const QNetworkInterface & other) : QNetworkInterface(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:104
 // [-2] void QNetworkInterface()

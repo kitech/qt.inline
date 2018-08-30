@@ -52,6 +52,7 @@ MyQHttpPart() : QHttpPart() {}
 // void QHttpPart(const QHttpPart &)
 MyQHttpPart(const QHttpPart & other) : QHttpPart(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:58
 // [-2] void QHttpPart()

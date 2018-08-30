@@ -50,6 +50,7 @@ public:
 // void QTextTableCellFormat()
 MyQTextTableCellFormat() : QTextTableCellFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // since 4.4
 // /usr/include/qt/QtGui/qtextformat.h:945

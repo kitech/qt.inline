@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQTextFrameLayoutData : public QTextFrameLayoutData {
 public:
   virtual ~MyQTextFrameLayoutData() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:114
 // [-2] void ~QTextFrameLayoutData()

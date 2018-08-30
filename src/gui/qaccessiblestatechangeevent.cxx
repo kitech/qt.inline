@@ -51,6 +51,7 @@ MyQAccessibleStateChangeEvent(QObject * obj, QAccessible::State state) : QAccess
 // void QAccessibleStateChangeEvent(QAccessibleInterface *, QAccessible::State)
 MyQAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state) : QAccessibleStateChangeEvent(iface, state) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:723
 // [-2] void QAccessibleStateChangeEvent(QObject *, QAccessible::State)

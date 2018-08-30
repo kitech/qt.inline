@@ -50,6 +50,7 @@ public:
 // void QGestureEvent(const QList<QGesture *> &)
 MyQGestureEvent(const QList<QGesture *> & gestures) : QGestureEvent(gestures) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:277
 // [-2] void QGestureEvent(const QList<QGesture *> &)

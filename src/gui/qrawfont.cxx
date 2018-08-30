@@ -56,6 +56,7 @@ MyQRawFont(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreferenc
 // void QRawFont(const QRawFont &)
 MyQRawFont(const QRawFont & other) : QRawFont(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:74
 // [-2] void QRawFont()

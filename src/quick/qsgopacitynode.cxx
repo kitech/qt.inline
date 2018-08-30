@@ -49,6 +49,7 @@ public:
 // void QSGOpacityNode()
 MyQSGOpacityNode() : QSGOpacityNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:319
 // [-2] void QSGOpacityNode()

@@ -71,6 +71,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:62
 // [-2] void initializeEngine(QQmlEngine *, const char *)

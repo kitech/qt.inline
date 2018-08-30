@@ -49,6 +49,7 @@ public:
 // void QReadLocker(QReadWriteLock *)
 MyQReadLocker(QReadWriteLock * readWriteLock) : QReadLocker(readWriteLock) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:87
 // [-2] void QReadLocker(QReadWriteLock *)

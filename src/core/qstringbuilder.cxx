@@ -51,6 +51,7 @@ MyQStringBuilder(const QByteArray & a_, const QByteArray & b_) : QStringBuilder<
 // void QStringBuilder(const QStringBuilder<QByteArray, QByteArray> &)
 MyQStringBuilder(const QStringBuilder<QByteArray, QByteArray> & other) : QStringBuilder<QByteArray, QByteArray>(other) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:160
 // [-2] void QStringBuilder(const QByteArray &, const QByteArray &)

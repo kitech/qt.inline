@@ -91,6 +91,7 @@ MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGra
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:767
 // [1] bool supportsExtension(QGraphicsItem::Extension)

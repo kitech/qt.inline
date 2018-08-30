@@ -51,6 +51,7 @@ MyQStyleOptionSpinBox() : QStyleOptionSpinBox() {}
 // void QStyleOptionSpinBox(const QStyleOptionSpinBox &)
 MyQStyleOptionSpinBox(const QStyleOptionSpinBox & other) : QStyleOptionSpinBox(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:552
 // [-2] void QStyleOptionSpinBox()

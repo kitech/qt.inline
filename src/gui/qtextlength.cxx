@@ -51,6 +51,7 @@ MyQTextLength() : QTextLength() {}
 // void QTextLength(QTextLength::Type, qreal)
 MyQTextLength(QTextLength::Type type_, qreal value) : QTextLength(type_, value) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:89
 // [-2] void QTextLength()

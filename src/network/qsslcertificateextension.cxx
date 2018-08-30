@@ -52,6 +52,7 @@ MyQSslCertificateExtension() : QSslCertificateExtension() {}
 // void QSslCertificateExtension(const QSslCertificateExtension &)
 MyQSslCertificateExtension(const QSslCertificateExtension & other) : QSslCertificateExtension(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h:59
 // [-2] void QSslCertificateExtension()

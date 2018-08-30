@@ -57,6 +57,7 @@ MyQAudioBuffer(const QByteArray & data, const QAudioFormat & format, qint64 star
 // void QAudioBuffer(int, const QAudioFormat &, qint64)
 MyQAudioBuffer(int numFrames, const QAudioFormat & format, qint64 startTime) : QAudioBuffer(numFrames, format, startTime) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiobuffer.h:58
 // [-2] void QAudioBuffer()

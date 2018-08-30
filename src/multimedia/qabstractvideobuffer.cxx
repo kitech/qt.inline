@@ -87,6 +87,7 @@ public:
 // void QAbstractVideoBuffer(QAbstractVideoBuffer::HandleType)
 MyQAbstractVideoBuffer(QAbstractVideoBuffer::HandleType type_) : QAbstractVideoBuffer(type_) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:84
 // [4] QAbstractVideoBuffer::MapMode mapMode()

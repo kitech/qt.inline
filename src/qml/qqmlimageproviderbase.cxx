@@ -73,6 +73,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlengine.h:74
 // [4] QQmlImageProviderBase::ImageType imageType()

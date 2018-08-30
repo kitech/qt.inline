@@ -51,6 +51,7 @@ MyQSGSimpleRectNode(const QRectF & rect, const QColor & color) : QSGSimpleRectNo
 // void QSGSimpleRectNode()
 MyQSGSimpleRectNode() : QSGSimpleRectNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:51
 // [-2] void QSGSimpleRectNode(const QRectF &, const QColor &)

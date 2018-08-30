@@ -51,6 +51,7 @@ MyQDnsServiceRecord() : QDnsServiceRecord() {}
 // void QDnsServiceRecord(const QDnsServiceRecord &)
 MyQDnsServiceRecord(const QDnsServiceRecord & other) : QDnsServiceRecord(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:136
 // [-2] void QDnsServiceRecord()

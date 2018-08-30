@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQTextBlockUserData : public QTextBlockUserData {
 public:
   virtual ~MyQTextBlockUserData() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:198
 // [-2] void ~QTextBlockUserData()

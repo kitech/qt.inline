@@ -58,6 +58,7 @@ MyQXmlStreamReader(const QString & data) : QXmlStreamReader(data) {}
 // void QXmlStreamReader(const char *)
 MyQXmlStreamReader(const char * data) : QXmlStreamReader(data) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:360
 // [-2] void QXmlStreamReader()

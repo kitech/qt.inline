@@ -57,6 +57,7 @@ MyQLocale(QLocale::Language language, QLocale::Script script, QLocale::Country c
 // void QLocale(const QLocale &)
 MyQLocale(const QLocale & other) : QLocale(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:929
 // [-2] void QLocale()

@@ -52,6 +52,7 @@ MyQUndoCommand(QUndoCommand * parent) : QUndoCommand(parent) {}
 // void QUndoCommand(const QString &, QUndoCommand *)
 MyQUndoCommand(const QString & text, QUndoCommand * parent) : QUndoCommand(text, parent) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:60
 // [-2] void QUndoCommand(QUndoCommand *)

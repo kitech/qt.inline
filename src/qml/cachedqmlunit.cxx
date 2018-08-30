@@ -48,6 +48,7 @@ public:
   virtual ~MyCachedQmlUnit() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN13CachedQmlUnitD2Ev(void *this_) {
   delete (QQmlPrivate::CachedQmlUnit*)(this_);

@@ -48,6 +48,7 @@ class Q_DECL_EXPORT MyQXmlStreamEntityResolver : public QXmlStreamEntityResolver
 public:
   virtual ~MyQXmlStreamEntityResolver() {}
 };
+
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:336
 // [-2] void ~QXmlStreamEntityResolver()

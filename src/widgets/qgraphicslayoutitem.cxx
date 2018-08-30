@@ -64,6 +64,7 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
   }
 
 };
+
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)

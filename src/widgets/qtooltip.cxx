@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQToolTip : public QToolTip {
 public:
   virtual ~MyQToolTip() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:56
 // [-2] void showText(const QPoint &, const QString &, QWidget *)

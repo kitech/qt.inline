@@ -51,6 +51,7 @@ MyQVideoEncoderSettings() : QVideoEncoderSettings() {}
 // void QVideoEncoderSettings(const QVideoEncoderSettings &)
 MyQVideoEncoderSettings(const QVideoEncoderSettings & other) : QVideoEncoderSettings(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaencodersettings.h:100
 // [-2] void QVideoEncoderSettings()

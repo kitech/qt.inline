@@ -59,6 +59,7 @@ MyQCursor(const QCursor & cursor) : QCursor(cursor) {}
 // void QCursor(QCursor &&)
 MyQCursor(QCursor && other) : QCursor(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:82
 // [-2] void QCursor()

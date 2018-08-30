@@ -56,6 +56,7 @@ MyQAndroidIntent(const QString & action) : QAndroidIntent(action) {}
 // void QAndroidIntent(const QAndroidJniObject &, const char *)
 MyQAndroidIntent(const QAndroidJniObject & packageContext, const char * className) : QAndroidIntent(packageContext, className) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtAndroidExtras/qandroidintent.h:51
 // [-2] void QAndroidIntent()

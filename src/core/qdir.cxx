@@ -53,6 +53,7 @@ MyQDir(const QString & path) : QDir(path) {}
 // void QDir(const QString &, const QString &, QDir::SortFlags, QDir::Filters)
 MyQDir(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) : QDir(path, nameFilter, sort, filter) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:101
 // [-2] void QDir(const QDir &)

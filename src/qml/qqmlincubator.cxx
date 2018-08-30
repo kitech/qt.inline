@@ -73,6 +73,7 @@ MyQQmlIncubator(QQmlIncubator::IncubationMode arg0) : QQmlIncubator(arg0) {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlincubator.h:88
 // [-2] void statusChanged(QQmlIncubator::Status)

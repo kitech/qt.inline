@@ -50,6 +50,7 @@ public:
 // void QOpenGLTextureBlitter()
 MyQOpenGLTextureBlitter() : QOpenGLTextureBlitter() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengltextureblitter.h:58
 // [-2] void QOpenGLTextureBlitter()

@@ -102,6 +102,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurface.h:76
 // [8] QSurfaceFormat format()

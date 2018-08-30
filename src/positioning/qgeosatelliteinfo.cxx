@@ -52,6 +52,7 @@ MyQGeoSatelliteInfo() : QGeoSatelliteInfo() {}
 // void QGeoSatelliteInfo(const QGeoSatelliteInfo &)
 MyQGeoSatelliteInfo(const QGeoSatelliteInfo & other) : QGeoSatelliteInfo(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeosatelliteinfo.h:64
 // [-2] void QGeoSatelliteInfo()

@@ -64,6 +64,7 @@ public:
 // void QNetworkProxyFactory()
 MyQNetworkProxyFactory() : QNetworkProxyFactory() {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:222
 // [-2] QList<QNetworkProxy> queryProxy(const QNetworkProxyQuery &)

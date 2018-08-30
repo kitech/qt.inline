@@ -51,6 +51,7 @@ MyQStyleOptionFocusRect() : QStyleOptionFocusRect() {}
 // void QStyleOptionFocusRect(const QStyleOptionFocusRect &)
 MyQStyleOptionFocusRect(const QStyleOptionFocusRect & other) : QStyleOptionFocusRect(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:119
 // [-2] void QStyleOptionFocusRect()

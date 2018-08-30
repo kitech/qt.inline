@@ -50,6 +50,7 @@ public:
 // void QGraphicsSceneMoveEvent()
 MyQGraphicsSceneMoveEvent() : QGraphicsSceneMoveEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:313
 // [-2] void QGraphicsSceneMoveEvent()

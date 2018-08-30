@@ -58,6 +58,7 @@ MyQCommandLineOption(const QStringList & names, const QString & description, con
 // void QCommandLineOption(const QCommandLineOption &)
 MyQCommandLineOption(const QCommandLineOption & other) : QCommandLineOption(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:61
 // [-2] void QCommandLineOption(const QString &)

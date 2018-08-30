@@ -61,6 +61,7 @@ MyQMediaContent(const QMediaContent & other) : QMediaContent(other) {}
 // void QMediaContent(QMediaPlaylist *, const QUrl &, bool)
 MyQMediaContent(QMediaPlaylist * playlist, const QUrl & contentUrl, bool takeOwnership) : QMediaContent(playlist, contentUrl, takeOwnership) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediacontent.h:58
 // [-2] void QMediaContent()

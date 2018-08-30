@@ -49,6 +49,7 @@ public:
 // void QTextCharFormat()
 MyQTextCharFormat() : QTextCharFormat() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:412
 // [-2] void QTextCharFormat()

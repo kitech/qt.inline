@@ -48,6 +48,7 @@ public:
   virtual ~MyRegisterCompositeType() {}
 };
 
+
 extern "C" Q_DECL_EXPORT
 void C_ZN21RegisterCompositeTypeD2Ev(void *this_) {
   delete (QQmlPrivate::RegisterCompositeType*)(this_);

@@ -53,6 +53,7 @@ MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const 
 // void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QContextMenuEvent(reason, pos) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:511
 // [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &, Qt::KeyboardModifiers)

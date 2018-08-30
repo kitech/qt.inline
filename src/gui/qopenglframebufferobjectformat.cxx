@@ -52,6 +52,7 @@ MyQOpenGLFramebufferObjectFormat() : QOpenGLFramebufferObjectFormat() {}
 // void QOpenGLFramebufferObjectFormat(const QOpenGLFramebufferObjectFormat &)
 MyQOpenGLFramebufferObjectFormat(const QOpenGLFramebufferObjectFormat & other) : QOpenGLFramebufferObjectFormat(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglframebufferobject.h:157
 // [-2] void QOpenGLFramebufferObjectFormat()

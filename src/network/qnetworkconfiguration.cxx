@@ -52,6 +52,7 @@ MyQNetworkConfiguration() : QNetworkConfiguration() {}
 // void QNetworkConfiguration(const QNetworkConfiguration &)
 MyQNetworkConfiguration(const QNetworkConfiguration & other) : QNetworkConfiguration(other) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:56
 // [-2] void QNetworkConfiguration()

@@ -51,6 +51,7 @@ MyQAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text) 
 // void QAccessibleTextRemoveEvent(QAccessibleInterface *, int, const QString &)
 MyQAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text) : QAccessibleTextRemoveEvent(iface, position, text) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:834
 // [-2] void QAccessibleTextRemoveEvent(QObject *, int, const QString &)

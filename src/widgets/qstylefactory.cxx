@@ -47,6 +47,7 @@ class Q_DECL_EXPORT MyQStyleFactory : public QStyleFactory {
 public:
   virtual ~MyQStyleFactory() {}
 };
+
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylefactory.h:54
 // [8] QStringList keys()

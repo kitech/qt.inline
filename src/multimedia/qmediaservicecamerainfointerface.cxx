@@ -74,6 +74,7 @@ public:
   }
 
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:167
 // [4] QCamera::Position cameraPosition(const QByteArray &)

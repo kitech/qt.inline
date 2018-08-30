@@ -167,6 +167,7 @@ public:
   }
 
 };
+
 // Protected inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:340
 // [-2] void enterTransformNode(QSGTransformNode *)

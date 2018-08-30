@@ -53,6 +53,7 @@ MyQLine(const QPoint & pt1, const QPoint & pt2) : QLine(pt1, pt2) {}
 // void QLine(int, int, int, int)
 MyQLine(int x1, int y1, int x2, int y2) : QLine(x1, y1, x2, y2) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:55
 // [-2] void QLine()

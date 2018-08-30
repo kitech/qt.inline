@@ -93,6 +93,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:727
 // [1] bool supportsExtension(QGraphicsItem::Extension)

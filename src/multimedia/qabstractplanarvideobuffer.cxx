@@ -88,6 +88,7 @@ public:
 // void QAbstractPlanarVideoBuffer(QAbstractVideoBuffer::HandleType)
 MyQAbstractPlanarVideoBuffer(QAbstractVideoBuffer::HandleType type_) : QAbstractPlanarVideoBuffer(type_) {}
 };
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:111
 // [4] int map(QAbstractVideoBuffer::MapMode, int *, int *, uchar **)

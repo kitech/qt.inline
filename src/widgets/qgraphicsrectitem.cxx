@@ -93,6 +93,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:683
 // [1] bool supportsExtension(QGraphicsItem::Extension)

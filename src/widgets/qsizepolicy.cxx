@@ -51,6 +51,7 @@ MyQSizePolicy() : QSizePolicy() {}
 // void QSizePolicy(QSizePolicy::Policy, QSizePolicy::Policy, QSizePolicy::ControlType)
 MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) : QSizePolicy(horizontal, vertical, type_) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:113
 // [-2] void QSizePolicy()

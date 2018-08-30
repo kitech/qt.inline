@@ -49,6 +49,7 @@ public:
 // void QGenericArgument(const char *, const void *)
 MyQGenericArgument(const char * aName, const void * aData) : QGenericArgument(aName, aData) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:297
 // [-2] void QGenericArgument(const char *, const void *)

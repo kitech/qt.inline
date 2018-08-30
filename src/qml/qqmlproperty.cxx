@@ -64,6 +64,7 @@ MyQQmlProperty(QObject * arg0, const QString & arg1, QQmlEngine * arg2) : QQmlPr
 // void QQmlProperty(const QQmlProperty &)
 MyQQmlProperty(const QQmlProperty & arg0) : QQmlProperty(arg0) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlproperty.h:71
 // [-2] void QQmlProperty()

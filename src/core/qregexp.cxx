@@ -53,6 +53,7 @@ MyQRegExp(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSynta
 // void QRegExp(const QRegExp &)
 MyQRegExp(const QRegExp & rx) : QRegExp(rx) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:70
 // [-2] void QRegExp()

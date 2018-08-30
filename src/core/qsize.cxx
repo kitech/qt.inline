@@ -51,6 +51,7 @@ MyQSize() : QSize() {}
 // void QSize(int, int)
 MyQSize(int w, int h) : QSize(w, h) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:55
 // [-2] void QSize()

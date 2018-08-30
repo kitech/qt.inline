@@ -50,6 +50,7 @@ public:
 // void QElapsedTimer()
 MyQElapsedTimer() : QElapsedTimer() {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // since 5.4
 // /usr/include/qt/QtCore/qelapsedtimer.h:59

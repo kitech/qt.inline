@@ -51,6 +51,7 @@ MyQJsonValueRef(QJsonArray * array, int idx) : QJsonValueRef(array, idx) {}
 // void QJsonValueRef(QJsonObject *, int)
 MyQJsonValueRef(QJsonObject * object, int idx) : QJsonValueRef(object, idx) {}
 };
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:174
 // [-2] void QJsonValueRef(QJsonArray *, int)

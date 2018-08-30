@@ -52,6 +52,7 @@ MyQSslPreSharedKeyAuthenticator() : QSslPreSharedKeyAuthenticator() {}
 // void QSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator &)
 MyQSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator & authenticator) : QSslPreSharedKeyAuthenticator(authenticator) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:55
 // [-2] void QSslPreSharedKeyAuthenticator()

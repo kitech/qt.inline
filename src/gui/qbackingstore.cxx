@@ -50,6 +50,7 @@ public:
 // void QBackingStore(QWindow *)
 MyQBackingStore(QWindow * window) : QBackingStore(window) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbackingstore.h:62
 // [-2] void QBackingStore(QWindow *)

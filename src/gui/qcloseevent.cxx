@@ -49,6 +49,7 @@ public:
 // void QCloseEvent()
 MyQCloseEvent() : QCloseEvent() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:477
 // [-2] void QCloseEvent()

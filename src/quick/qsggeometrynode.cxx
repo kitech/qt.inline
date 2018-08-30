@@ -49,6 +49,7 @@ public:
 // void QSGGeometryNode()
 MyQSGGeometryNode() : QSGGeometryNode() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:231
 // [-2] void QSGGeometryNode()

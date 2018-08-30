@@ -49,6 +49,7 @@ public:
 // void QTimerEvent(int)
 MyQTimerEvent(int timerId) : QTimerEvent(timerId) {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:340
 // [-2] void QTimerEvent(int)

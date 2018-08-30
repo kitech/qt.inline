@@ -75,6 +75,7 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
   }
 
 };
+
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:55
 // [8] QSGMaterialType * type()

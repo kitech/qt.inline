@@ -49,6 +49,7 @@ public:
 // void QFileIconProvider()
 MyQFileIconProvider() : QFileIconProvider() {}
 };
+
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:56
 // [-2] void QFileIconProvider()
