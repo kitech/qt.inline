@@ -1206,8 +1206,8 @@ return new QByteArray(rv);
 // [8] QByteArray toPercentEncoding(const QByteArray &, const QByteArray &, char)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
-void* C_ZNK10QByteArray17toPercentEncodingERKS_S1_c(void *this_, QByteArray* exclude, QByteArray* include, char percent) {
-  auto rv = ((QByteArray*)this_)->toPercentEncoding(*exclude, *include, percent);
+void* C_ZNK10QByteArray17toPercentEncodingERKS_S1_c(void *this_, QByteArray* exclude, QByteArray* include_, char percent) {
+  auto rv = ((QByteArray*)this_)->toPercentEncoding(*exclude, *include_, percent);
 return new QByteArray(rv);
 }
 #endif // QT_VERSION >= 0x040400

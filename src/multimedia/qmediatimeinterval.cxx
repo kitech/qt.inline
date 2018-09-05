@@ -49,7 +49,7 @@ public:
 // void QMediaTimeInterval()
 MyQMediaTimeInterval() : QMediaTimeInterval() {}
 // void QMediaTimeInterval(qint64, qint64)
-MyQMediaTimeInterval(qint64 start, qint64 end) : QMediaTimeInterval(start, end) {}
+MyQMediaTimeInterval(qint64 start, qint64 end_) : QMediaTimeInterval(start, end_) {}
 // void QMediaTimeInterval(const QMediaTimeInterval &)
 MyQMediaTimeInterval(const QMediaTimeInterval & arg0) : QMediaTimeInterval(arg0) {}
 };
@@ -66,8 +66,8 @@ void* C_ZN18QMediaTimeIntervalC2Ev() {
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:56
 // [-2] void QMediaTimeInterval(qint64, qint64)
 extern "C" Q_DECL_EXPORT
-void* C_ZN18QMediaTimeIntervalC2Exx(qint64 start, qint64 end) {
-  return  new QMediaTimeInterval(start, end);
+void* C_ZN18QMediaTimeIntervalC2Exx(qint64 start, qint64 end_) {
+  return  new QMediaTimeInterval(start, end_);
 }
 
 // Public Visibility=Default Availability=Available

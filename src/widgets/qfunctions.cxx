@@ -1036,8 +1036,8 @@ return &rv;
 // /usr/include/qt/QtWidgets/qtablewidget.h:209
 // [32] QDataStream & operator<<(QDataStream &, const QTableWidgetItem &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK16QTableWidgetItem_233(QDataStream* out, QTableWidgetItem* item) {
-  auto& rv = operator<<(*out, *item);
+void* C_ZlsR11QDataStreamRK16QTableWidgetItem_233(QDataStream* out_, QTableWidgetItem* item) {
+  auto& rv = operator<<(*out_, *item);
 return &rv;
 }
 
@@ -1045,8 +1045,8 @@ return &rv;
 // /usr/include/qt/QtWidgets/qtreewidget.h:249
 // [32] QDataStream & operator<<(QDataStream &, const QTreeWidgetItem &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK15QTreeWidgetItem_234(QDataStream* out, QTreeWidgetItem* item) {
-  auto& rv = operator<<(*out, *item);
+void* C_ZlsR11QDataStreamRK15QTreeWidgetItem_234(QDataStream* out_, QTreeWidgetItem* item) {
+  auto& rv = operator<<(*out_, *item);
 return &rv;
 }
 
@@ -1054,8 +1054,8 @@ return &rv;
 // /usr/include/qt/QtWidgets/qlistwidget.h:191
 // [32] QDataStream & operator<<(QDataStream &, const QListWidgetItem &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK15QListWidgetItem_235(QDataStream* out, QListWidgetItem* item) {
-  auto& rv = operator<<(*out, *item);
+void* C_ZlsR11QDataStreamRK15QListWidgetItem_235(QDataStream* out_, QListWidgetItem* item) {
+  auto& rv = operator<<(*out_, *item);
 return &rv;
 }
 

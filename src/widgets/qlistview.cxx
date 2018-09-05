@@ -132,25 +132,25 @@ MyQListView(QWidget * parent) : QListView(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QListView::rowsInserted(parent, start, end);
+    QListView::rowsInserted(parent, start, end_);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QListView::rowsAboutToBeRemoved(parent, start, end);
+    QListView::rowsAboutToBeRemoved(parent, start, end_);
   }
   }
 
@@ -433,7 +433,7 @@ MyQListView(QWidget * parent) : QListView(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QListView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QListView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQListView* qo = (MyQListView*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -441,6 +441,7 @@ void C_QListView_init_staticMetaObject(void* this_, void* strdat, void* dat, voi
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -471,16 +472,16 @@ void C_ZN9QListView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *this_, QM
 // /usr/include/qt/QtWidgets/qlistview.h:150
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QListView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QListView*)this_)->QListView::rowsInserted(*parent, start, end);
+void C_ZN9QListView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QListView*)this_)->QListView::rowsInserted(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:151
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QListView*)this_)->QListView::rowsAboutToBeRemoved(*parent, start, end);
+void C_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QListView*)this_)->QListView::rowsAboutToBeRemoved(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available

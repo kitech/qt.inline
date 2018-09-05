@@ -107,25 +107,25 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QTreeView::rowsInserted(parent, start, end);
+    QTreeView::rowsInserted(parent, start, end_);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QTreeView::rowsAboutToBeRemoved(parent, start, end);
+    QTreeView::rowsAboutToBeRemoved(parent, start, end_);
   }
   }
 
@@ -432,7 +432,7 @@ MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QTreeView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QTreeView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQTreeView* qo = (MyQTreeView*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -440,6 +440,7 @@ void C_QTreeView_init_staticMetaObject(void* this_, void* strdat, void* dat, voi
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -454,16 +455,16 @@ void C_ZN9QTreeView16scrollContentsByEii(void *this_, int dx, int dy) {
 // /usr/include/qt/QtWidgets/qtreeview.h:176
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QTreeView*)this_)->QTreeView::rowsInserted(*parent, start, end);
+void C_ZN9QTreeView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QTreeView*)this_)->QTreeView::rowsInserted(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreeview.h:177
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QTreeView*)this_)->QTreeView::rowsAboutToBeRemoved(*parent, start, end);
+void C_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QTreeView*)this_)->QTreeView::rowsAboutToBeRemoved(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available

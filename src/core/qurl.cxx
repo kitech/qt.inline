@@ -593,8 +593,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qurl.h:277
 // [8] QByteArray toPercentEncoding(const QString &, const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN4QUrl17toPercentEncodingERK7QStringRK10QByteArrayS5_(QString* arg0, QByteArray* exclude, QByteArray* include) {
-  auto rv = QUrl::toPercentEncoding(*arg0, *exclude, *include);
+void* C_ZN4QUrl17toPercentEncodingERK7QStringRK10QByteArrayS5_(QString* arg0, QByteArray* exclude, QByteArray* include_) {
+  auto rv = QUrl::toPercentEncoding(*arg0, *exclude, *include_);
 return new QByteArray(rv);
 }
 

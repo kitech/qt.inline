@@ -97,7 +97,7 @@ MyQGesture(QObject * parent) : QGesture(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QGesture_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QGesture_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQGesture* qo = (MyQGesture*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -105,6 +105,7 @@ void C_QGesture_init_staticMetaObject(void* this_, void* strdat, void* dat, void
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Public virtual Visibility=Default Availability=Available

@@ -98,7 +98,7 @@ MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelec
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QItemSelectionModel_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QItemSelectionModel_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQItemSelectionModel* qo = (MyQItemSelectionModel*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -106,6 +106,7 @@ void C_QItemSelectionModel_init_staticMetaObject(void* this_, void* strdat, void
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Public virtual Visibility=Default Availability=Available

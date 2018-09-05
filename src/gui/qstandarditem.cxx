@@ -783,8 +783,8 @@ void C_ZN13QStandardItem4readER11QDataStream(void *this_, QDataStream* in) {
 // /usr/include/qt/QtGui/qstandarditemmodel.h:241
 // [-2] void write(QDataStream &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK13QStandardItem5writeER11QDataStream(void *this_, QDataStream* out) {
-  ((QStandardItem*)this_)->write(*out);
+void C_ZNK13QStandardItem5writeER11QDataStream(void *this_, QDataStream* out_) {
+  ((QStandardItem*)this_)->write(*out_);
 }
 
 // Public virtual Visibility=Default Availability=Available

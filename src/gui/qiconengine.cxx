@@ -180,8 +180,8 @@ bool C_ZN11QIconEngine4readER11QDataStream(void *this_, QDataStream* in) {
 // /usr/include/qt/QtGui/qiconengine.h:66
 // [1] bool write(QDataStream &)
 extern "C" Q_DECL_EXPORT
-bool C_ZNK11QIconEngine5writeER11QDataStream(void *this_, QDataStream* out) {
-  return (bool)((QIconEngine*)this_)->write(*out);
+bool C_ZNK11QIconEngine5writeER11QDataStream(void *this_, QDataStream* out_) {
+  return (bool)((QIconEngine*)this_)->write(*out_);
 }
 
 // Public virtual Visibility=Default Availability=Available

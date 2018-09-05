@@ -2787,8 +2787,8 @@ return &rv;
 // /usr/include/qt/QtCore/qregexp.h:124
 // [32] QDataStream & operator<<(QDataStream &, const QRegExp &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK7QRegExp_9(QDataStream* out, QRegExp* regExp) {
-  auto& rv = operator<<(*out, *regExp);
+void* C_ZlsR11QDataStreamRK7QRegExp_9(QDataStream* out_, QRegExp* regExp) {
+  auto& rv = operator<<(*out_, *regExp);
 return &rv;
 }
 
@@ -2913,8 +2913,8 @@ return &rv;
 // /usr/include/qt/QtCore/qregularexpression.h:164
 // [32] QDataStream & operator<<(QDataStream &, const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK18QRegularExpression_23(QDataStream* out, QRegularExpression* re) {
-  auto& rv = operator<<(*out, *re);
+void* C_ZlsR11QDataStreamRK18QRegularExpression_23(QDataStream* out_, QRegularExpression* re) {
+  auto& rv = operator<<(*out_, *re);
 return &rv;
 }
 
@@ -2922,8 +2922,8 @@ return &rv;
 // /usr/include/qt/QtCore/qversionnumber.h:57
 // [32] QDataStream & operator<<(QDataStream &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK14QVersionNumber_24(QDataStream* out, QVersionNumber* version) {
-  auto& rv = operator<<(*out, *version);
+void* C_ZlsR11QDataStreamRK14QVersionNumber_24(QDataStream* out_, QVersionNumber* version) {
+  auto& rv = operator<<(*out_, *version);
 return &rv;
 }
 

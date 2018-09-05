@@ -972,8 +972,8 @@ int C_ZNK7QString5countERK18QRegularExpression(void *this_, QRegularExpression* 
 // /usr/include/qt/QtCore/qstring.h:369
 // [8] QString section(QChar, int, int, QString::SectionFlags)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK7QString7sectionE5QCharii6QFlagsINS_11SectionFlagEE(void *this_, QChar* sep, int start, int end, QFlags<QString::SectionFlag> flags) {
-  auto rv = ((QString*)this_)->section(*sep, start, end, flags);
+void* C_ZNK7QString7sectionE5QCharii6QFlagsINS_11SectionFlagEE(void *this_, QChar* sep, int start, int end_, QFlags<QString::SectionFlag> flags) {
+  auto rv = ((QString*)this_)->section(*sep, start, end_, flags);
 return new QString(rv);
 }
 
@@ -981,8 +981,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qstring.h:370
 // [8] QString section(const QString &, int, int, QString::SectionFlags)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK7QString7sectionERKS_ii6QFlagsINS_11SectionFlagEE(void *this_, QString* in_sep, int start, int end, QFlags<QString::SectionFlag> flags) {
-  auto rv = ((QString*)this_)->section(*in_sep, start, end, flags);
+void* C_ZNK7QString7sectionERKS_ii6QFlagsINS_11SectionFlagEE(void *this_, QString* in_sep, int start, int end_, QFlags<QString::SectionFlag> flags) {
+  auto rv = ((QString*)this_)->section(*in_sep, start, end_, flags);
 return new QString(rv);
 }
 
@@ -990,8 +990,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qstring.h:372
 // [8] QString section(const QRegExp &, int, int, QString::SectionFlags)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK7QString7sectionERK7QRegExpii6QFlagsINS_11SectionFlagEE(void *this_, QRegExp* reg, int start, int end, QFlags<QString::SectionFlag> flags) {
-  auto rv = ((QString*)this_)->section(*reg, start, end, flags);
+void* C_ZNK7QString7sectionERK7QRegExpii6QFlagsINS_11SectionFlagEE(void *this_, QRegExp* reg, int start, int end_, QFlags<QString::SectionFlag> flags) {
+  auto rv = ((QString*)this_)->section(*reg, start, end_, flags);
 return new QString(rv);
 }
 
@@ -999,8 +999,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qstring.h:375
 // [8] QString section(const QRegularExpression &, int, int, QString::SectionFlags)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK7QString7sectionERK18QRegularExpressionii6QFlagsINS_11SectionFlagEE(void *this_, QRegularExpression* re, int start, int end, QFlags<QString::SectionFlag> flags) {
-  auto rv = ((QString*)this_)->section(*re, start, end, flags);
+void* C_ZNK7QString7sectionERK18QRegularExpressionii6QFlagsINS_11SectionFlagEE(void *this_, QRegularExpression* re, int start, int end_, QFlags<QString::SectionFlag> flags) {
+  auto rv = ((QString*)this_)->section(*re, start, end_, flags);
 return new QString(rv);
 }
 

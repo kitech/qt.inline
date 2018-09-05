@@ -187,13 +187,13 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QColumnView::rowsInserted(parent, start, end);
+    QColumnView::rowsInserted(parent, start, end_);
   }
   }
 
@@ -237,7 +237,7 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QColumnView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QColumnView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQColumnView* qo = (MyQColumnView*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -245,6 +245,7 @@ void C_QColumnView_init_staticMetaObject(void* this_, void* strdat, void* dat, v
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -309,8 +310,8 @@ int C_ZNK11QColumnView14verticalOffsetEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcolumnview.h:95
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QColumnView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QColumnView*)this_)->QColumnView::rowsInserted(*parent, start, end);
+void C_ZN11QColumnView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QColumnView*)this_)->QColumnView::rowsInserted(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available

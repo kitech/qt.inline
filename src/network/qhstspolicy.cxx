@@ -150,8 +150,8 @@ return new QDateTime(rv);
 // /usr/include/qt/QtNetwork/qhstspolicy.h:77
 // [-2] void setIncludesSubDomains(bool)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QHstsPolicy21setIncludesSubDomainsEb(void *this_, bool include) {
-  ((QHstsPolicy*)this_)->setIncludesSubDomains(include);
+void C_ZN11QHstsPolicy21setIncludesSubDomainsEb(void *this_, bool include_) {
+  ((QHstsPolicy*)this_)->setIncludesSubDomains(include_);
 }
 
 // Public Visibility=Default Availability=Available

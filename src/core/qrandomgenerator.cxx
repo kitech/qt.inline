@@ -54,7 +54,7 @@ MyQRandomGenerator(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerato
 // void QRandomGenerator(std::seed_seq &)
 MyQRandomGenerator(std::seed_seq & sseq) : QRandomGenerator(sseq) {}
 // void QRandomGenerator(const quint32 *, const quint32 *)
-MyQRandomGenerator(const quint32 * begin, const quint32 * end) : QRandomGenerator(begin, end) {}
+MyQRandomGenerator(const quint32 * begin_, const quint32 * end_) : QRandomGenerator(begin_, end_) {}
 // void QRandomGenerator(const QRandomGenerator &)
 MyQRandomGenerator(const QRandomGenerator & other) : QRandomGenerator(other) {}
 };
@@ -87,8 +87,8 @@ void* C_ZN16QRandomGeneratorC2ERSt8seed_seq(std::seed_seq & sseq) {
 // /usr/include/qt/QtCore/qrandom.h:72
 // [-2] void QRandomGenerator(const quint32 *, const quint32 *)
 extern "C" Q_DECL_EXPORT
-void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin, const quint32 * end) {
-  return  new QRandomGenerator(begin, end);
+void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin_, const quint32 * end_) {
+  return  new QRandomGenerator(begin_, end_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -176,8 +176,8 @@ int C_ZN16QRandomGenerator7boundedEii(void *this_, int lowest, int highest) {
 // /usr/include/qt/QtCore/qrandom.h:159
 // [-2] void generate(quint32 *, quint32 *)
 extern "C" Q_DECL_EXPORT
-void C_ZN16QRandomGenerator8generateEPjS0_(void *this_, quint32 * begin, quint32 * end) {
-  ((QRandomGenerator*)this_)->generate(begin, end);
+void C_ZN16QRandomGenerator8generateEPjS0_(void *this_, quint32 * begin_, quint32 * end_) {
+  ((QRandomGenerator*)this_)->generate(begin_, end_);
 }
 
 // Public inline Visibility=Default Availability=Available

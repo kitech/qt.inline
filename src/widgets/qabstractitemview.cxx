@@ -147,25 +147,25 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsInserted(const QModelIndex &, int, int)
-  virtual void rowsInserted(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QAbstractItemView::rowsInserted(parent, start, end);
+    QAbstractItemView::rowsInserted(parent, start, end_);
   }
   }
 
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
-  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end)  override {
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end_)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end_, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    QAbstractItemView::rowsAboutToBeRemoved(parent, start, end);
+    QAbstractItemView::rowsAboutToBeRemoved(parent, start, end_);
   }
   }
 
@@ -681,7 +681,7 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QAbstractItemView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QAbstractItemView_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQAbstractItemView* qo = (MyQAbstractItemView*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -689,6 +689,7 @@ void C_QAbstractItemView_init_staticMetaObject(void* this_, void* strdat, void* 
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
@@ -712,16 +713,16 @@ void C_ZN17QAbstractItemView11dataChangedERK11QModelIndexS2_RK7QVectorIiE(void *
 // /usr/include/qt/QtWidgets/qabstractitemview.h:246
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::rowsInserted(*parent, start, end);
+void C_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QAbstractItemView*)this_)->QAbstractItemView::rowsInserted(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:247
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end) {
-  ((QAbstractItemView*)this_)->QAbstractItemView::rowsAboutToBeRemoved(*parent, start, end);
+void C_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
+  ((QAbstractItemView*)this_)->QAbstractItemView::rowsAboutToBeRemoved(*parent, start, end_);
 }
 
 // Protected virtual Visibility=Default Availability=Available

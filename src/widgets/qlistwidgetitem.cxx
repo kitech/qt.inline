@@ -448,8 +448,8 @@ void C_ZN15QListWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
 // /usr/include/qt/QtWidgets/qlistwidget.h:154
 // [-2] void write(QDataStream &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK15QListWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) {
-  ((QListWidgetItem*)this_)->write(*out);
+void C_ZNK15QListWidgetItem5writeER11QDataStream(void *this_, QDataStream* out_) {
+  ((QListWidgetItem*)this_)->write(*out_);
 }
 
 // Public Visibility=Default Availability=Available

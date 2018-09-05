@@ -180,8 +180,8 @@ return &rv;
 // /usr/include/qt/QtGui/qkeysequence.h:59
 // [32] QDataStream & operator>>(QDataStream &, QKeySequence &)
 extern "C" Q_DECL_EXPORT
-void* C_ZrsR11QDataStreamR12QKeySequence_47(QDataStream* out, QKeySequence* ks) {
-  auto& rv = operator>>(*out, *ks);
+void* C_ZrsR11QDataStreamR12QKeySequence_47(QDataStream* out_, QKeySequence* ks) {
+  auto& rv = operator>>(*out_, *ks);
 return &rv;
 }
 
@@ -1537,8 +1537,8 @@ return &rv;
 // /usr/include/qt/QtGui/qstandarditemmodel.h:453
 // [32] QDataStream & operator<<(QDataStream &, const QStandardItem &)
 extern "C" Q_DECL_EXPORT
-void* C_ZlsR11QDataStreamRK13QStandardItem_87(QDataStream* out, QStandardItem* item) {
-  auto& rv = operator<<(*out, *item);
+void* C_ZlsR11QDataStreamRK13QStandardItem_87(QDataStream* out_, QStandardItem* item) {
+  auto& rv = operator<<(*out_, *item);
 return &rv;
 }
 

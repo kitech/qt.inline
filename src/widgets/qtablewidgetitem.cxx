@@ -448,8 +448,8 @@ void C_ZN16QTableWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
 // /usr/include/qt/QtWidgets/qtablewidget.h:171
 // [-2] void write(QDataStream &)
 extern "C" Q_DECL_EXPORT
-void C_ZNK16QTableWidgetItem5writeER11QDataStream(void *this_, QDataStream* out) {
-  ((QTableWidgetItem*)this_)->write(*out);
+void C_ZNK16QTableWidgetItem5writeER11QDataStream(void *this_, QDataStream* out_) {
+  ((QTableWidgetItem*)this_)->write(*out_);
 }
 
 // Public Visibility=Default Availability=Available

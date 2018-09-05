@@ -164,7 +164,7 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QAbstractItemModel_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QAbstractItemModel_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQAbstractItemModel* qo = (MyQAbstractItemModel*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -172,6 +172,7 @@ void C_QAbstractItemModel_init_staticMetaObject(void* this_, void* strdat, void*
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
@@ -705,8 +706,8 @@ void C_ZN18QAbstractItemModel18rowsAboutToBeMovedERK11QModelIndexiiS2_iNS_14QPri
 // /usr/include/qt/QtCore/qabstractitemmodel.h:275
 // [-2] void rowsMoved(const QModelIndex &, int, int, const QModelIndex &, int, QAbstractItemModel::QPrivateSignal)
 extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel9rowsMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int start, int end, QModelIndex* destination, int row, QAbstractItemModel::QPrivateSignal* arg5) {
-  ((QAbstractItemModel*)this_)->rowsMoved(*parent, start, end, *destination, row, *arg5);
+void C_ZN18QAbstractItemModel9rowsMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int start, int end_, QModelIndex* destination, int row, QAbstractItemModel::QPrivateSignal* arg5) {
+  ((QAbstractItemModel*)this_)->rowsMoved(*parent, start, end_, *destination, row, *arg5);
 }
 
 // Public Visibility=Default Availability=Available
@@ -721,8 +722,8 @@ void C_ZN18QAbstractItemModel21columnsAboutToBeMovedERK11QModelIndexiiS2_iNS_14Q
 // /usr/include/qt/QtCore/qabstractitemmodel.h:278
 // [-2] void columnsMoved(const QModelIndex &, int, int, const QModelIndex &, int, QAbstractItemModel::QPrivateSignal)
 extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractItemModel12columnsMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int start, int end, QModelIndex* destination, int column, QAbstractItemModel::QPrivateSignal* arg5) {
-  ((QAbstractItemModel*)this_)->columnsMoved(*parent, start, end, *destination, column, *arg5);
+void C_ZN18QAbstractItemModel12columnsMovedERK11QModelIndexiiS2_iNS_14QPrivateSignalE(void *this_, QModelIndex* parent, int start, int end_, QModelIndex* destination, int column, QAbstractItemModel::QPrivateSignal* arg5) {
+  ((QAbstractItemModel*)this_)->columnsMoved(*parent, start, end_, *destination, column, *arg5);
 }
 
 // Public virtual Visibility=Default Availability=Available

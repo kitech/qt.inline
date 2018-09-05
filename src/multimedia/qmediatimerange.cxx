@@ -49,7 +49,7 @@ public:
 // void QMediaTimeRange()
 MyQMediaTimeRange() : QMediaTimeRange() {}
 // void QMediaTimeRange(qint64, qint64)
-MyQMediaTimeRange(qint64 start, qint64 end) : QMediaTimeRange(start, end) {}
+MyQMediaTimeRange(qint64 start, qint64 end_) : QMediaTimeRange(start, end_) {}
 // void QMediaTimeRange(const QMediaTimeInterval &)
 MyQMediaTimeRange(const QMediaTimeInterval & arg0) : QMediaTimeRange(arg0) {}
 // void QMediaTimeRange(const QMediaTimeRange &)
@@ -68,8 +68,8 @@ void* C_ZN15QMediaTimeRangeC2Ev() {
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:84
 // [-2] void QMediaTimeRange(qint64, qint64)
 extern "C" Q_DECL_EXPORT
-void* C_ZN15QMediaTimeRangeC2Exx(qint64 start, qint64 end) {
-  return  new QMediaTimeRange(start, end);
+void* C_ZN15QMediaTimeRangeC2Exx(qint64 start, qint64 end_) {
+  return  new QMediaTimeRange(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -166,8 +166,8 @@ bool C_ZNK15QMediaTimeRange8containsEx(void *this_, qint64 time) {
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:101
 // [-2] void addInterval(qint64, qint64)
 extern "C" Q_DECL_EXPORT
-void C_ZN15QMediaTimeRange11addIntervalExx(void *this_, qint64 start, qint64 end) {
-  ((QMediaTimeRange*)this_)->addInterval(start, end);
+void C_ZN15QMediaTimeRange11addIntervalExx(void *this_, qint64 start, qint64 end_) {
+  ((QMediaTimeRange*)this_)->addInterval(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -190,8 +190,8 @@ void C_ZN15QMediaTimeRange12addTimeRangeERKS_(void *this_, QMediaTimeRange* arg0
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:105
 // [-2] void removeInterval(qint64, qint64)
 extern "C" Q_DECL_EXPORT
-void C_ZN15QMediaTimeRange14removeIntervalExx(void *this_, qint64 start, qint64 end) {
-  ((QMediaTimeRange*)this_)->removeInterval(start, end);
+void C_ZN15QMediaTimeRange14removeIntervalExx(void *this_, qint64 start, qint64 end_) {
+  ((QMediaTimeRange*)this_)->removeInterval(start, end_);
 }
 
 // Public Visibility=Default Availability=Available

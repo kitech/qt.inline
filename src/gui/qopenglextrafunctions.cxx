@@ -88,8 +88,8 @@ void C_ZN21QOpenGLExtraFunctions12glReadBufferEj(void *this_, GLenum mode) {
 // /usr/include/qt/QtGui/qopenglextrafunctions.h:293
 // [-2] void glDrawRangeElements(GLenum, GLuint, GLuint, GLsizei, GLenum, const void *)
 extern "C" Q_DECL_EXPORT
-void C_ZN21QOpenGLExtraFunctions19glDrawRangeElementsEjjjijPKv(void *this_, GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type_, const void * indices) {
-  ((QOpenGLExtraFunctions*)this_)->glDrawRangeElements(mode, start, end, count, type_, indices);
+void C_ZN21QOpenGLExtraFunctions19glDrawRangeElementsEjjjijPKv(void *this_, GLenum mode, GLuint start, GLuint end_, GLsizei count, GLenum type_, const void * indices) {
+  ((QOpenGLExtraFunctions*)this_)->glDrawRangeElements(mode, start, end_, count, type_, indices);
 }
 
 // Public Visibility=Default Availability=Available
@@ -1633,8 +1633,8 @@ void C_ZN21QOpenGLExtraFunctions24glDrawElementsBaseVertexEjijPKvi(void *this_, 
 // /usr/include/qt/QtGui/qopenglextrafunctions.h:490
 // [-2] void glDrawRangeElementsBaseVertex(GLenum, GLuint, GLuint, GLsizei, GLenum, const void *, GLint)
 extern "C" Q_DECL_EXPORT
-void C_ZN21QOpenGLExtraFunctions29glDrawRangeElementsBaseVertexEjjjijPKvi(void *this_, GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type_, const void * indices, GLint basevertex) {
-  ((QOpenGLExtraFunctions*)this_)->glDrawRangeElementsBaseVertex(mode, start, end, count, type_, indices, basevertex);
+void C_ZN21QOpenGLExtraFunctions29glDrawRangeElementsBaseVertexEjjjijPKvi(void *this_, GLenum mode, GLuint start, GLuint end_, GLsizei count, GLenum type_, const void * indices, GLint basevertex) {
+  ((QOpenGLExtraFunctions*)this_)->glDrawRangeElementsBaseVertex(mode, start, end_, count, type_, indices, basevertex);
 }
 
 // Public Visibility=Default Availability=Available

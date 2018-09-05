@@ -134,7 +134,7 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QProcess_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QProcess_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQProcess* qo = (MyQProcess*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -142,6 +142,7 @@ void C_QProcess_init_staticMetaObject(void* this_, void* strdat, void* dat, void
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Protected virtual Visibility=Default Availability=Available

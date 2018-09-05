@@ -47,25 +47,25 @@ class Q_DECL_EXPORT MyQAccessibleTextSelectionEvent : public QAccessibleTextSele
 public:
   virtual ~MyQAccessibleTextSelectionEvent() {}
 // void QAccessibleTextSelectionEvent(QObject *, int, int)
-MyQAccessibleTextSelectionEvent(QObject * obj, int start, int end) : QAccessibleTextSelectionEvent(obj, start, end) {}
+MyQAccessibleTextSelectionEvent(QObject * obj, int start, int end_) : QAccessibleTextSelectionEvent(obj, start, end_) {}
 // void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
-MyQAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end) : QAccessibleTextSelectionEvent(iface, start, end) {}
+MyQAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end_) : QAccessibleTextSelectionEvent(iface, start, end_) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:773
 // [-2] void QAccessibleTextSelectionEvent(QObject *, int, int)
 extern "C" Q_DECL_EXPORT
-void* C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * obj, int start, int end) {
-  return  new QAccessibleTextSelectionEvent(obj, start, end);
+void* C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * obj, int start, int end_) {
+  return  new QAccessibleTextSelectionEvent(obj, start, end_);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:779
 // [-2] void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
 extern "C" Q_DECL_EXPORT
-void* C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * iface, int start, int end) {
-  return  new QAccessibleTextSelectionEvent(iface, start, end);
+void* C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * iface, int start, int end_) {
+  return  new QAccessibleTextSelectionEvent(iface, start, end_);
 }
 
 // Public virtual Visibility=Default Availability=Available
@@ -79,8 +79,8 @@ void C_ZN29QAccessibleTextSelectionEventD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qaccessible.h:788
 // [-2] void setSelection(int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN29QAccessibleTextSelectionEvent12setSelectionEii(void *this_, int start, int end) {
-  ((QAccessibleTextSelectionEvent*)this_)->setSelection(start, end);
+void C_ZN29QAccessibleTextSelectionEvent12setSelectionEii(void *this_, int start, int end_) {
+  ((QAccessibleTextSelectionEvent*)this_)->setSelection(start, end_);
 }
 
 // Public inline Visibility=Default Availability=Available

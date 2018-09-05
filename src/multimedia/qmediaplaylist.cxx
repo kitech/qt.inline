@@ -109,7 +109,7 @@ MyQMediaPlaylist(QObject * parent) : QMediaPlaylist(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void C_QMediaPlaylist_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+void* C_QMediaPlaylist_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
   MyQMediaPlaylist* qo = (MyQMediaPlaylist*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
@@ -117,6 +117,7 @@ void C_QMediaPlaylist_init_staticMetaObject(void* this_, void* strdat, void* dat
   qmo->d.static_metacall = decltype(qmo->d.static_metacall)(smcfn);
   qo->qt_metacast_fnptr = decltype(qo->qt_metacast_fnptr)(mcastfn);
   qo->qt_metacall_fnptr = decltype(qo->qt_metacall_fnptr)( mcallfn);
+  return qmo;
 }
 
 // Protected virtual Visibility=Default Availability=Available
@@ -330,8 +331,8 @@ bool C_ZN14QMediaPlaylist11removeMediaEi(void *this_, int pos) {
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:96
 // [1] bool removeMedia(int, int)
 extern "C" Q_DECL_EXPORT
-bool C_ZN14QMediaPlaylist11removeMediaEii(void *this_, int start, int end) {
-  return (bool)((QMediaPlaylist*)this_)->removeMedia(start, end);
+bool C_ZN14QMediaPlaylist11removeMediaEii(void *this_, int start, int end_) {
+  return (bool)((QMediaPlaylist*)this_)->removeMedia(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -459,40 +460,40 @@ void C_ZN14QMediaPlaylist19currentMediaChangedERK13QMediaContent(void *this_, QM
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:122
 // [-2] void mediaAboutToBeInserted(int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QMediaPlaylist22mediaAboutToBeInsertedEii(void *this_, int start, int end) {
-  ((QMediaPlaylist*)this_)->mediaAboutToBeInserted(start, end);
+void C_ZN14QMediaPlaylist22mediaAboutToBeInsertedEii(void *this_, int start, int end_) {
+  ((QMediaPlaylist*)this_)->mediaAboutToBeInserted(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:123
 // [-2] void mediaInserted(int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QMediaPlaylist13mediaInsertedEii(void *this_, int start, int end) {
-  ((QMediaPlaylist*)this_)->mediaInserted(start, end);
+void C_ZN14QMediaPlaylist13mediaInsertedEii(void *this_, int start, int end_) {
+  ((QMediaPlaylist*)this_)->mediaInserted(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:124
 // [-2] void mediaAboutToBeRemoved(int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QMediaPlaylist21mediaAboutToBeRemovedEii(void *this_, int start, int end) {
-  ((QMediaPlaylist*)this_)->mediaAboutToBeRemoved(start, end);
+void C_ZN14QMediaPlaylist21mediaAboutToBeRemovedEii(void *this_, int start, int end_) {
+  ((QMediaPlaylist*)this_)->mediaAboutToBeRemoved(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:125
 // [-2] void mediaRemoved(int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QMediaPlaylist12mediaRemovedEii(void *this_, int start, int end) {
-  ((QMediaPlaylist*)this_)->mediaRemoved(start, end);
+void C_ZN14QMediaPlaylist12mediaRemovedEii(void *this_, int start, int end_) {
+  ((QMediaPlaylist*)this_)->mediaRemoved(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:126
 // [-2] void mediaChanged(int, int)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QMediaPlaylist12mediaChangedEii(void *this_, int start, int end) {
-  ((QMediaPlaylist*)this_)->mediaChanged(start, end);
+void C_ZN14QMediaPlaylist12mediaChangedEii(void *this_, int start, int end_) {
+  ((QMediaPlaylist*)this_)->mediaChanged(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
