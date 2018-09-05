@@ -44,10 +44,12 @@ if [ x"$WINARCH" = x"x64" ]; then
     x86_64-w64-mingw32-strip -s x64/libQt5Inline.dll
     ls -lh x64/libQt5Inline*
 
-    curl -F 'name=@./x64/libQt5Inline.dll' https://img.vim-cn.com/
-    curl -F 'name=@./x64/libQt5Inline.dll.a' https://img.vim-cn.com/
-    curl -F 'c=@./x64/libQt5Inline.dll' https://fars.ee/
-    curl -F 'c=@./x64/libQt5Inline.dll.a' https://fars.ee/
+    if [ x"$TRAVIS_TAG" != x"" ]; then
+        curl -F 'name=@./x64/libQt5Inline.dll' https://img.vim-cn.com/
+        curl -F 'name=@./x64/libQt5Inline.dll.a' https://img.vim-cn.com/
+        curl -F 'c=@./x64/libQt5Inline.dll' https://fars.ee/
+        curl -F 'c=@./x64/libQt5Inline.dll.a' https://fars.ee/
+    fi
 else
     ### build x32 version dll
     cd x32
@@ -60,10 +62,12 @@ else
     i686-w64-mingw32-strip -s x32/libQt5Inline.dll
     ls -lh x32/libQt5Inline*
 
-    curl -F 'name=@./x32/libQt5Inline.dll' https://img.vim-cn.com/
-    curl -F 'name=@./x32/libQt5Inline.dll.a' https://img.vim-cn.com/
-    curl -F 'c=@./x32/libQt5Inline.dll' https://fars.ee/
-    curl -F 'c=@./x32/libQt5Inline.dll.a' https://fars.ee/
+    if [ x"$TRAVIS_TAG" != x"" ]; then
+        curl -F 'name=@./x32/libQt5Inline.dll' https://img.vim-cn.com/
+        curl -F 'name=@./x32/libQt5Inline.dll.a' https://img.vim-cn.com/
+        curl -F 'c=@./x32/libQt5Inline.dll' https://fars.ee/
+        curl -F 'c=@./x32/libQt5Inline.dll.a' https://fars.ee/
+    fi
 fi
 
 objdump -p ./$WINARCH/libQt5Inline.dll | grep -i "\.dll"

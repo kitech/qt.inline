@@ -20,7 +20,8 @@ make -j3
 ls -lh libQt5Inline.so
 strip -s libQt5Inline.so
 ls -lh libQt5Inline.so
-curl -F 'name=@./libQt5Inline.so' https://img.vim-cn.com/
-curl -F 'c=@./libQt5Inline.so' https://fars.ee/
-
+if [ x"$TRAVIS_TAG" != x"" ]; then
+    curl -F 'name=@./libQt5Inline.so' https://img.vim-cn.com/
+    curl -F 'c=@./libQt5Inline.so' https://fars.ee/
+fi
 
