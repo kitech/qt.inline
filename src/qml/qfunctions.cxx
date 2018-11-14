@@ -270,14 +270,6 @@ void C_Z20qmlRegisterBaseTypesPKcii(const char * uri, int versionMajor, int vers
   qmlRegisterBaseTypes(uri, versionMajor, versionMinor);
 }
 
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qjsengine.h:133
-// [1] bool qjsvalue_cast_helper(const QJSValue &, int, void *)
-extern "C" Q_DECL_EXPORT
-bool C_Z20qjsvalue_cast_helperRK8QJSValueiPv(QJSValue* value, int type_, void * ptr) {
-  return (bool)qjsvalue_cast_helper(*value, type_, ptr);
-}
-
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:567
 // [-2] void qmlRegisterModule(const char *, int, int)

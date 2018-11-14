@@ -17,6 +17,7 @@ So there is no C wrapper functions header source here.
 * MacOS
 * Windows7+
 * Android
+* \*BSD
 
 ### Installation
 
@@ -27,7 +28,7 @@ cmake flags:
 * -DWITH_QT_STATIC=on/off default: off
 * -DWINARCH=x32/x64 default: none
 
-#### Linux/MacOS
+#### Linux/MacOS/\*BSD
 
     cmake /path/to/qt.inline
 

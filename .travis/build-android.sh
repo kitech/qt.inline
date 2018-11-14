@@ -11,7 +11,7 @@ ls /usr/local/
 echo $ANDROID_HOME
 ls $ANDROID_HOME/
 
-# NDK_VERSION like: r10e, r16b, r17-beta2
+# NDK_VERSION like: r10e, r16b, r17c, r18b, r19-beta2
 function install_ndk_spec_version()
 {
     export NDK_VERSION=${USENDKVER}
@@ -47,8 +47,8 @@ ls /opt/andndk16/
 
 /opt/andndk16/bin/clang -v
 
-git clone https://github.com/qtchina/qt510_android_$USEARCH.git
-export PATH=qt510_android_$USEARCH/bin:$PATH
+git clone https://github.com/qtchina/qt510_android_$USEARCH.git /opt/qt510_android_$USEARCH
+export PATH=/opt/qt510_android_$USEARCH/bin:$PATH
 
 pwd
 cmake -DANDROID=on .

@@ -88,6 +88,42 @@ matrix:
           - 'android-sdk-preview-license-52d11cd2'
           - 'android-sdk-license-.+'
           - 'google-gdk-license-.+'
+    - stage: Android-Arm7-r18b
+      os: linux
+      language: android
+      env:
+        - JOB=build-android
+        - USEARCH=arm
+        - USENDKVER=r18b
+      android:
+        components:
+          - build-tools-26.0.2
+          - android-26
+          - sys-img-armeabi-v7a-android-tv-l
+          - add-on
+          - extra
+        licenses:
+          - 'android-sdk-preview-license-52d11cd2'
+          - 'android-sdk-license-.+'
+          - 'google-gdk-license-.+'
+    - stage: Android-Arm7-r17c
+      os: linux
+      language: android
+      env:
+        - JOB=build-android
+        - USEARCH=arm
+        - USENDKVER=r17c
+      android:
+        components:
+          - build-tools-26.0.2
+          - android-26
+          - sys-img-armeabi-v7a-android-tv-l
+          - add-on
+          - extra
+        licenses:
+          - 'android-sdk-preview-license-52d11cd2'
+          - 'android-sdk-license-.+'
+          - 'google-gdk-license-.+'
     - stage: Android-Arm7-r16b
       os: linux
       language: android

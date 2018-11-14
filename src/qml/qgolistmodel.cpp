@@ -119,7 +119,7 @@ QGoListModel(QObject * parent = nullptr) : QAbstractListModel(parent) {}
 #  define QT_INIT_METAOBJECT
 #endif
 #endif
-#include "moc_qgolistmodel.cpp_"
+#include "src/qml/moc_qgolistmodel.cpp"
 
 extern "C" Q_DECL_EXPORT
 void C_qmlRegisterType_QGoListModel() {
