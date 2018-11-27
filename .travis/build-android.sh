@@ -7,6 +7,9 @@ set -x
 sudo apt-get -qq update
 sudo apt-get install -y cmake
 
+source ./.qtenvs
+env
+
 ls /usr/local/
 echo $ANDROID_HOME
 ls $ANDROID_HOME/
@@ -47,8 +50,13 @@ ls /opt/andndk16/
 
 /opt/andndk16/bin/clang -v
 
-git clone https://github.com/qtchina/qt510_android_$USEARCH.git /opt/qt510_android_$USEARCH
-export PATH=/opt/qt510_android_$USEARCH/bin:$PATH
+if [[ $QTVER = "v5.9" ]]; then
+    git clone https://github.com/qtchina/qt59_android_$USEARCH.git /opt/qt59_android_$USEARCH
+    export PATH=/opt/qt59_android_$USEARCH/bin:$PATH
+else # master
+    git clone https://github.com/qtchina/qt510_android_$USEARCH.git /opt/qt510_android_$USEARCH
+    export PATH=/opt/qt510_android_$USEARCH/bin:$PATH
+fi
 
 pwd
 cmake -DANDROID=on .

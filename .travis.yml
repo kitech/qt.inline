@@ -11,20 +11,20 @@ matrix:
     # the actual compilin'
     - stage: ArchLinux
       os: linux
-      env: JOB=build-archlinux
+      env: JOB=archlinux
       services:
         - docker
     - stage: Win-Mingw-x64
       os: linux
       env:
-        - JOB=build-mingw
+        - JOB=mingw
         - WINARCH=x64
       services:
         - docker
     - stage: Win-Mingw-x64-qtstatic
       os: linux
       env:
-        - JOB=build-mingw
+        - JOB=mingw
         - WINARCH=x64
         - WITH_QT_STATIC=on
       services:
@@ -32,49 +32,49 @@ matrix:
     - stage: Win-Mingw-x32
       os: linux
       env:
-        - JOB=build-mingw
+        - JOB=mingw
         - WINARCH=x32
       services:
         - docker
     - stage: Win-Mingw-x32-qtstatic
       os: linux
       env:
-        - JOB=build-mingw
+        - JOB=mingw
         - WINARCH=x32
         - WITH_QT_STATIC=on
       services:
         - docker
     - stage: Ubuntu14-clang
       os: linux
-      env: JOB=build-ubuntu14
+      env: JOB=ubuntu14
     - stage: Ubuntu14-clang-qtstatic
       os: linux
       env:
-        - JOB=build-ubuntu14
+        - JOB=ubuntu14
         - WITH_QT_STATIC=on
     - stage: Ubuntu16-gcc
       os: linux
-      env: JOB=build-ubuntu16
+      env: JOB=ubuntu16
       services:
         - docker
     - stage: MacOS-Xcode9.3
       os: osx
       osx_image: xcode9.3beta
-      env: JOB=build-osx
+      env: JOB=osx
     - stage: MacOS-Xcode8.3
       os: osx
       osx_image: xcode8.3
-      env: JOB=build-osx
+      env: JOB=osx
     # for ruby lower version and brew problem, not support
     # - stage: MacOS-Xcode7.3
     #   os: osx
     #   osx_image: xcode7.3
-    #   env: JOB=build-osx
+    #   env: JOB=osx
     - stage: Android-Arm7-lastest
       os: linux
       language: android
       env:
-        - JOB=build-android
+        - JOB=android
         - USEARCH=arm
         - USENDKVER=bundle
       android:
@@ -92,7 +92,7 @@ matrix:
       os: linux
       language: android
       env:
-        - JOB=build-android
+        - JOB=android
         - USEARCH=arm
         - USENDKVER=r18b
       android:
@@ -110,7 +110,7 @@ matrix:
       os: linux
       language: android
       env:
-        - JOB=build-android
+        - JOB=android
         - USEARCH=arm
         - USENDKVER=r17c
       android:
@@ -128,7 +128,7 @@ matrix:
       os: linux
       language: android
       env:
-        - JOB=build-android
+        - JOB=android
         - USEARCH=arm
         - USENDKVER=r16b
       android:
@@ -146,7 +146,7 @@ matrix:
       os: linux
       language: android
       env:
-        - JOB=build-android
+        - JOB=android
         - USEARCH=x86
         - USENDKVER=bundle
       android:
@@ -161,7 +161,7 @@ matrix:
           - 'android-sdk-license-.+'
           - 'google-gdk-license-.+'
 
-script: "./.travis/$JOB.sh"
+script: "./.travis/build-main.sh"
 
 before_install:
 

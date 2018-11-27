@@ -20,6 +20,8 @@ apt-get install -y libffi-dev make gcc git curl cmake
 apt-get install -y mesa-common-dev libglu1-mesa-dev freeglut3-dev
 apt-get install -y qt510base qt510quickcontrols2 qt510multimedia qt510svg
 
+source /root/.qtenvs
+env
 pwd
 
 export GOPATH=/root/go

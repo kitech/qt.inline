@@ -58,7 +58,7 @@ if(ANDROID)
   set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
   set(CMAKE_EXE_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
 elseif(MINGW_NOIPBIZ)
-  include(tc-mingw.cmake)
+  include(tc-mingw-noipbiz.cmake)
 endif(ANDROID)
 # for android arm build end
 
@@ -66,38 +66,43 @@ endif(ANDROID)
 set(_QT_STATIC_PREF "")
 if(WITH_QT_STATIC)
   if(MINGW_NOIPBIZ)
-    set(_QT_STATIC_PREF "Static")
+    set(_QT_STATIC_PFX "Static")
   endif(MINGW_NOIPBIZ)
 endif(WITH_QT_STATIC)
 
 set(CMAKE_AUTOMOC off)  ### it's sure, the wrapper not need moc
-find_package(${_QT_STATIC_PREF}Qt5Core)
-find_package(${_QT_STATIC_PREF}Qt5Gui)
-find_package(${_QT_STATIC_PREF}Qt5Widgets)
 
-find_package(${_QT_STATIC_PREF}Qt5Network)
-find_package(${_QT_STATIC_PREF}Qt5Qml)
-find_package(${_QT_STATIC_PREF}Qt5Quick)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(FreeType2 freetype2)
+pkg_check_modules(OpenSSL openssl)
+#find_package(OpenSSL)
+find_package(${_QT_STATIC_PFX}Qt5Core)
+find_package(${_QT_STATIC_PFX}Qt5Gui)
+find_package(${_QT_STATIC_PFX}Qt5Widgets)
+
+find_package(${_QT_STATIC_PFX}Qt5Network)
+find_package(${_QT_STATIC_PFX}Qt5Qml)
+find_package(${_QT_STATIC_PFX}Qt5Quick)
 
 # find_package(Qt5QuickTemplates2)
-find_package(${_QT_STATIC_PREF}Qt5QuickControls2)
-find_package(${_QT_STATIC_PREF}Qt5QuickWidgets)
+find_package(${_QT_STATIC_PFX}Qt5QuickControls2)
+find_package(${_QT_STATIC_PFX}Qt5QuickWidgets)
 
 # webengines
 if(USE_WEBENGINES)
-find_package(${_QT_STATIC_PREF}Qt5Positioning)
-find_package(${_QT_STATIC_PREF}Qt5WebChannel)
-find_package(${_QT_STATIC_PREF}Qt5WebEngineCore)
-find_package(${_QT_STATIC_PREF}Qt5WebEngine)
-find_package(${_QT_STATIC_PREF}Qt5WebEngineWidgets)
+find_package(${_QT_STATIC_PFX}Qt5Positioning)
+find_package(${_QT_STATIC_PFX}Qt5WebChannel)
+find_package(${_QT_STATIC_PFX}Qt5WebEngineCore)
+find_package(${_QT_STATIC_PFX}Qt5WebEngine)
+find_package(${_QT_STATIC_PFX}Qt5WebEngineWidgets)
 endif(USE_WEBENGINES)
 
 if(ANDROID)
-  find_package(${_QT_STATIC_PREF}Qt5AndroidExtras)
+  find_package(${_QT_STATIC_PFX}Qt5AndroidExtras)
 endif(ANDROID)
 
-find_package(${_QT_STATIC_PREF}Qt5Svg)
-find_package(${_QT_STATIC_PREF}Qt5Multimedia)
+find_package(${_QT_STATIC_PFX}Qt5Svg)
+find_package(${_QT_STATIC_PFX}Qt5Multimedia)
 
 configure_file(preheaders/qthdrsrc.h.in preheaders/qthdrsrc.h)
 
@@ -177,12 +182,19 @@ endif(ANDROID)
 # resolve static ldflags
 # note: the order
 set(LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD  Qt5::QXcbIntegrationPlugin Qt5XcbQpa xcb-static Qt5ThemeSupport Qt5EdidSupport Qt5FontDatabaseSupport Qt5ServiceSupport Qt5EventDispatcherSupport Qt5DBus qtfreetype     pthread GL qtlibpng qtharfbuzz qtpcre2 SM ICE X11 xcb X11-xcb dl)
-set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD StaticQt5::QWindowsIntegrationPlugin mpr)
+set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD ${_QT_STATIC_PFX}Qt5::QWindowsIntegrationPlugin mpr)
 set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD Qt5::QCocoaIntegrationPlugin)
 set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD "")
 if(WITH_QT_STATIC)
   if(MINGW_NOIPBIZ)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD})
+  elseif(MINGW_MXE)
+    set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD}
+      ${Qt5Core_DIR}/../../libQt5AccessibilitySupport.a
+      ${Qt5Core_DIR}/../../libQt5EventDispatcherSupport.a
+      ${Qt5Core_DIR}/../../libQt5FontDatabaseSupport.a
+      ${Qt5Core_DIR}/../../libQt5ThemeSupport.a
+      ${FreeType2_LIBRARIES} ${OpenSSL_LIBRARIES} -ldnsapi -liphlpapi)
   elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD})
   elseif(${CMAKE_SYSTEM_NAME} MATCHES "Android")
@@ -195,16 +207,16 @@ endif(WITH_QT_STATIC)
 
 add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
 target_link_libraries(Qt5Inline
-  ${_QT_STATIC_PREF}Qt5::Core ${_QT_STATIC_PREF}Qt5::Gui ${_QT_STATIC_PREF}Qt5::Widgets ${_QT_STATIC_PREF}Qt5::Network
-  ${_QT_STATIC_PREF}Qt5::Qml ${_QT_STATIC_PREF}Qt5::Quick ${_QT_STATIC_PREF}Qt5::QuickControls2 ${_QT_STATIC_PREF}Qt5::QuickWidgets
+  ${_QT_STATIC_PFX}Qt5::Core ${_QT_STATIC_PFX}Qt5::Gui ${_QT_STATIC_PFX}Qt5::Widgets ${_QT_STATIC_PFX}Qt5::Network
+  ${_QT_STATIC_PFX}Qt5::Qml ${_QT_STATIC_PFX}Qt5::Quick ${_QT_STATIC_PFX}Qt5::QuickControls2 ${_QT_STATIC_PFX}Qt5::QuickWidgets
   )
-target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Svg ${_QT_STATIC_PREF}Qt5::Multimedia)
+target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::Svg ${_QT_STATIC_PFX}Qt5::Multimedia)
 if(USE_WEBENGINES)
-  target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::Positioning ${_QT_STATIC_PREF}Qt5::WebChannel ${_QT_STATIC_PREF}Qt5::WebEngineCore ${_QT_STATIC_PREF}Qt5::WebEngine ${_QT_STATIC_PREF}Qt5::WebEngineWidgets)
+  target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::Positioning ${_QT_STATIC_PFX}Qt5::WebChannel ${_QT_STATIC_PFX}Qt5::WebEngineCore ${_QT_STATIC_PFX}Qt5::WebEngine ${_QT_STATIC_PFX}Qt5::WebEngineWidgets)
 endif(USE_WEBENGINES)
 target_link_libraries(Qt5Inline ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
 if(ANDROID)
-  target_link_libraries(Qt5Inline ${_QT_STATIC_PREF}Qt5::AndroidExtras)
+  target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::AndroidExtras)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
 

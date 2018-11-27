@@ -11,6 +11,7 @@ brew install qt5
 brew install ccache
 export PATH="/usr/local/opt/ccache/libexec:$PATH"
 
+source ./.qtenvs
 export PATH="/usr/local/opt/qt/bin:$PATH"
 qmake -v
 ls
