@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050600
 // /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineCookieStore_t {
   QByteArrayData data[1];
@@ -212,3 +214,19 @@ void C_ZN21QWebEngineCookieStore13cookieRemovedERK14QNetworkCookie(void *this_, 
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

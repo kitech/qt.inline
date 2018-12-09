@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qiconengine.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQIconEngine_t {
   QByteArrayData data[1];
@@ -243,3 +245,19 @@ void C_ZN11QIconEngine12virtual_hookEiPv(void *this_, int id, void * data) {
 #endif // QT_VERSION >= 0x040500
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSslCertificateExtension_t {
   QByteArrayData data[1];
@@ -146,3 +148,19 @@ bool C_ZNK24QSslCertificateExtension11isSupportedEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

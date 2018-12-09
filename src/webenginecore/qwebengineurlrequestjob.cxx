@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050600
 // /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineUrlRequestJob_t {
   QByteArrayData data[1];
@@ -198,3 +200,19 @@ void C_ZN23QWebEngineUrlRequestJob8redirectERK4QUrl(void *this_, QUrl* url) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

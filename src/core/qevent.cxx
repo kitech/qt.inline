@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qcoreevent.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQEvent_t {
   QByteArrayData data[1];
@@ -144,3 +146,19 @@ int C_ZN6QEvent17registerEventTypeEi(int hint) {
 #endif // QT_VERSION >= 0x040400
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

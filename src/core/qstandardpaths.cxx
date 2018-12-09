@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtCore/qstandardpaths.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:81
@@ -94,3 +96,19 @@ bool C_ZN14QStandardPaths17isTestModeEnabledEv() {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

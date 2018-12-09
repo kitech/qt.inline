@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qprocess.h
 #ifndef protected
 #define protected public
@@ -13,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQProcess_t {
   QByteArrayData data[1];
@@ -797,3 +800,20 @@ void C_ZN8QProcess22readyReadStandardErrorENS_14QPrivateSignalE(void *this_, QPr
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

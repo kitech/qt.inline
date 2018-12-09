@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtGui/qscreen.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQScreen_t {
   QByteArrayData data[1];
@@ -525,3 +527,19 @@ void C_ZN7QScreen18refreshRateChangedEd(void *this_, qreal refreshRate) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

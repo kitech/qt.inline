@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQCameraCaptureBufferFormatControl_t {
   QByteArrayData data[1];
@@ -236,3 +238,19 @@ void C_ZN33QCameraCaptureBufferFormatControl19bufferFormatChangedEN11QVideoFrame
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

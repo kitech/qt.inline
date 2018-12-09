@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050400
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineHistory_t {
   QByteArrayData data[1];
@@ -176,3 +178,19 @@ int C_ZNK17QWebEngineHistory5countEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

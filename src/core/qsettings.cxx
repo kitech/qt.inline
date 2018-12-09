@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qsettings.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSettings_t {
   QByteArrayData data[1];
@@ -557,3 +559,19 @@ QSettings::Format C_ZN9QSettings14registerFormatERK7QStringPFbR9QIODeviceR4QMapI
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

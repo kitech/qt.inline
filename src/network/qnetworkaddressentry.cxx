@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040200
 // /usr/include/qt/QtNetwork/qnetworkinterface.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQNetworkAddressEntry_t {
   QByteArrayData data[1];
@@ -195,3 +197,19 @@ void C_ZN20QNetworkAddressEntry12setBroadcastERK12QHostAddress(void *this_, QHos
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

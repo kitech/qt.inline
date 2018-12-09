@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtWidgets/qgridlayout.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQGridLayout_t {
   QByteArrayData data[1];
@@ -524,3 +526,19 @@ void C_ZNK11QGridLayout15getItemPositionEiPiS0_S0_S0_(void *this_, int idx, int 
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

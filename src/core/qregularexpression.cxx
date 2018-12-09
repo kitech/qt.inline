@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQRegularExpression_t {
   QByteArrayData data[1];
@@ -264,3 +266,19 @@ bool C_ZNK18QRegularExpressionneERKS_(void *this_, QRegularExpression* re) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

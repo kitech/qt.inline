@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qtimer.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQTimer_t {
   QByteArrayData data[1];
@@ -369,3 +371,19 @@ void C_ZN6QTimer5startENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void *this_,
 #endif // QT_VERSION >= 0x050800
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

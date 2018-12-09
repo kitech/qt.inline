@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQPointingDeviceUniqueId_t {
   QByteArrayData data[1];
@@ -90,3 +92,19 @@ void C_ZN23QPointingDeviceUniqueIdD2Ev(void *this_) {
   delete (QPointingDeviceUniqueId*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

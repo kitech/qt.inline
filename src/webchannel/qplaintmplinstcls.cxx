@@ -34,3 +34,7 @@ int C_ZN11QMetaTypeIdI16QQmlListPropertyI14QQmlWebChannelEE14qt_metatype_idEv(vo
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

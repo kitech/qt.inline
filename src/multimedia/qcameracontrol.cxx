@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtMultimedia/qcameracontrol.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQCameraControl_t {
   QByteArrayData data[1];
@@ -353,3 +355,19 @@ void C_ZN14QCameraControl18captureModeChangedE6QFlagsIN7QCamera11CaptureModeEE(v
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qbuttongroup.h
 #ifndef protected
 #define protected public
@@ -13,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQButtonGroup_t {
   QByteArrayData data[1];
@@ -340,3 +343,20 @@ void C_ZN12QButtonGroup13buttonToggledEib(void *this_, int arg0, bool arg1) {
 #endif // QT_VERSION >= 0x050200
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

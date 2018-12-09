@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQScrollEvent_t {
   QByteArrayData data[1];
@@ -93,3 +95,19 @@ QScrollEvent::ScrollState C_ZNK12QScrollEvent11scrollStateEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

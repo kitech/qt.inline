@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQMediaServiceFeaturesInterface_t {
   QByteArrayData data[1];
@@ -80,3 +82,19 @@ QMediaServiceProviderHint::Features C_ZNK30QMediaServiceFeaturesInterface17suppo
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

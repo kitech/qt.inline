@@ -69,3 +69,7 @@ int C_ZN11QMetaTypeIdIP12QQuickWindowE14qt_metatype_idEv(void* this_ ) {
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

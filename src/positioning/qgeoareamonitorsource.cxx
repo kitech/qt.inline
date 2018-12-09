@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050200
 // /usr/include/qt/QtPositioning/qgeoareamonitorsource.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQGeoAreaMonitorSource_t {
   QByteArrayData data[1];
@@ -421,3 +423,19 @@ void C_ZN21QGeoAreaMonitorSource5errorENS_5ErrorE(void *this_, QGeoAreaMonitorSo
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

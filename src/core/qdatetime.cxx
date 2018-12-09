@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qdatetime.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQDateTime_t {
   QByteArrayData data[1];
@@ -717,3 +719,19 @@ qint64 C_ZN9QDateTime21currentSecsSinceEpochEv() {
 #endif // QT_VERSION >= 0x050800
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

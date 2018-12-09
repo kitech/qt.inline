@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040200
 // /usr/include/qt/QtCore/qtimeline.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQTimeLine_t {
   QByteArrayData data[1];
@@ -452,3 +454,19 @@ void C_ZN9QTimeLine8finishedENS_14QPrivateSignalE(void *this_, QTimeLine::QPriva
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

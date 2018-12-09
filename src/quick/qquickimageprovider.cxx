@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQQuickImageProvider_t {
   QByteArrayData data[1];
@@ -110,3 +112,19 @@ void* C_ZN19QQuickImageProvider14requestTextureERK7QStringP5QSizeRKS3_(void *thi
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

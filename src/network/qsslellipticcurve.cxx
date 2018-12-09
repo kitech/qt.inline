@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050500
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSslEllipticCurve_t {
   QByteArrayData data[1];
@@ -117,3 +119,19 @@ void C_ZN17QSslEllipticCurveD2Ev(void *this_) {
   delete (QSslEllipticCurve*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

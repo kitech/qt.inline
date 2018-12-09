@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050100
 // /usr/include/qt/QtGui/qopengldebug.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQOpenGLDebugMessage_t {
   QByteArrayData data[1];
@@ -178,3 +180,19 @@ bool C_ZNK19QOpenGLDebugMessageneERKS_(void *this_, QOpenGLDebugMessage* debugMe
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

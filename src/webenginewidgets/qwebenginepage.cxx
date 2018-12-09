@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050400
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEnginePage_t {
   QByteArrayData data[1];
@@ -973,3 +975,19 @@ void C_ZN14QWebEnginePage19pdfPrintingFinishedERK7QStringb(void *this_, QString*
 #endif // QT_VERSION >= 0x050900
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

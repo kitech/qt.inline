@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQStandardItemModel_t {
   QByteArrayData data[1];
@@ -726,3 +728,19 @@ void C_ZN18QStandardItemModel11itemChangedEP13QStandardItem(void *this_, QStanda
 #endif // QT_VERSION >= 0x040200
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

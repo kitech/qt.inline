@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qlibraryinfo.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQLibraryInfo_t {
   QByteArrayData data[1];
@@ -130,3 +132,19 @@ void C_ZN12QLibraryInfoD2Ev(void *this_) {
   delete (QLibraryInfo*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

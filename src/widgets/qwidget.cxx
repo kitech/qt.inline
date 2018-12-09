@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtWidgets/qwidget.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWidget_t {
   QByteArrayData data[1];
@@ -2940,3 +2942,19 @@ void C_ZN7QWidget19setInputMethodHintsE6QFlagsIN2Qt15InputMethodHintEE(void *thi
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

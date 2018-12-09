@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qreadwritelock.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWriteLocker_t {
   QByteArrayData data[1];
@@ -90,3 +92,19 @@ void* C_ZNK12QWriteLocker13readWriteLockEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtNetwork/qhostaddress.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQIPv6Address_t {
   QByteArrayData data[1];
@@ -71,3 +73,19 @@ void C_ZN12QIPv6AddressD2Ev(void *this_) {
   delete (QIPv6Address*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

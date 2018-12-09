@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qpicture.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQPictureIO_t {
   QByteArrayData data[1];
@@ -293,3 +295,19 @@ void C_ZN10QPictureIO15defineIOHandlerEPKcS1_S1_PFvPS_ES4_(const char * format, 
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

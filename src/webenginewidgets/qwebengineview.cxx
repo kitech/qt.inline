@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050400
 // /usr/include/qt/QtWebEngineWidgets/qwebengineview.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineView_t {
   QByteArrayData data[1];
@@ -636,3 +638,19 @@ void C_ZN14QWebEngineView23renderProcessTerminatedEN14QWebEnginePage30RenderProc
 #endif // QT_VERSION >= 0x050600
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

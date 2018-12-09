@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundoview.h
 #ifndef protected
@@ -14,6 +16,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQUndoView_t {
   QByteArrayData data[1];
@@ -252,3 +255,20 @@ void C_ZN9QUndoView8setGroupEP10QUndoGroup(void *this_, QUndoGroup * group) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

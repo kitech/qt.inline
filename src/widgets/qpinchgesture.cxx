@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040600
 // /usr/include/qt/QtWidgets/qgesture.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQPinchGesture_t {
   QByteArrayData data[1];
@@ -347,3 +349,19 @@ void C_ZN13QPinchGesture16setRotationAngleEd(void *this_, qreal value) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

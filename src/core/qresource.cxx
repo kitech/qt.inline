@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040200
 // /usr/include/qt/QtCore/qresource.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQResource_t {
   QByteArrayData data[1];
@@ -206,3 +208,19 @@ bool C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, QSt
 #endif // QT_VERSION >= 0x040300
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

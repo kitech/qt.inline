@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050600
 // /usr/include/qt/QtWebEngineCore/qwebengineurlschemehandler.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineUrlSchemeHandler_t {
   QByteArrayData data[1];
@@ -197,3 +199,19 @@ void C_ZN26QWebEngineUrlSchemeHandler28_q_destroyedUrlSchemeHandlerEPS_(void *th
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

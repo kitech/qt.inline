@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtGui/qopenglframebufferobject.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQOpenGLFramebufferObject_t {
   QByteArrayData data[1];
@@ -369,3 +371,19 @@ void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_S0_jj(QOpenGLFramebuffer
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

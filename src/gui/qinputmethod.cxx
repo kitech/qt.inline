@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qinputmethod.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:56
@@ -295,3 +297,19 @@ void C_ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(void *this
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

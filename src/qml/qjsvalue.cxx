@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtQml/qjsvalue.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQJSValue_t {
   QByteArrayData data[1];
@@ -504,3 +506,19 @@ void* C_ZN8QJSValueC2EPN3QV415ExecutionEngineEy(QV4::ExecutionEngine * e, quint6
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qsignalmapper.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSignalMapper_t {
   QByteArrayData data[1];
@@ -285,3 +287,19 @@ void C_ZN13QSignalMapper3mapEP7QObject(void *this_, QObject * sender) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

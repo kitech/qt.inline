@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qthread.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQThread_t {
   QByteArrayData data[1];
@@ -412,3 +414,19 @@ void C_ZN7QThread8finishedENS_14QPrivateSignalE(void *this_, QThread::QPrivateSi
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

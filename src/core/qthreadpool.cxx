@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040400
 // /usr/include/qt/QtCore/qthreadpool.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQThreadPool_t {
   QByteArrayData data[1];
@@ -300,3 +302,19 @@ bool C_ZN11QThreadPool7tryTakeEP9QRunnable(void *this_, QRunnable * runnable) {
 #endif // QT_VERSION >= 0x050900
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #ifndef protected
 #define protected public
@@ -13,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQDockWidget_t {
   QByteArrayData data[1];
@@ -407,3 +410,20 @@ void C_ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(void *this_, Q
 #endif // QT_VERSION >= 0x040300
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

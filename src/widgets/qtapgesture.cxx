@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040600
 // /usr/include/qt/QtWidgets/qgesture.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQTapGesture_t {
   QByteArrayData data[1];
@@ -183,3 +185,19 @@ void C_ZN11QTapGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

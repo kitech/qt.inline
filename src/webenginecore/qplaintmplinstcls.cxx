@@ -69,3 +69,7 @@ void* C_ZN9QTypeInfoI21QWebEngineHttpRequestE4nameEv(void* this_ ) {
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtWidgets/qtoolbar.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQToolBar_t {
   QByteArrayData data[1];
@@ -557,3 +559,19 @@ void C_ZN8QToolBar17visibilityChangedEb(void *this_, bool visible) {
 #endif // QT_VERSION >= 0x040700
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

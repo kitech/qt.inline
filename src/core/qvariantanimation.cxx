@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040600
 // /usr/include/qt/QtCore/qvariantanimation.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQVariantAnimation_t {
   QByteArrayData data[1];
@@ -389,3 +391,19 @@ void C_ZN17QVariantAnimation12valueChangedERK8QVariant(void *this_, QVariant* va
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

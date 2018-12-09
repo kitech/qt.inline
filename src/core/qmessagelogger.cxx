@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtCore/qlogging.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQMessageLogger_t {
   QByteArrayData data[1];
@@ -326,3 +328,19 @@ void C_ZN14QMessageLoggerD2Ev(void *this_) {
   delete (QMessageLogger*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

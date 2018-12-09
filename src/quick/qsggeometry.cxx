@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtQuick/qsggeometry.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSGGeometry_t {
   QByteArrayData data[1];
@@ -373,3 +375,19 @@ void C_ZN11QSGGeometry12setLineWidthEf(void *this_, float w) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

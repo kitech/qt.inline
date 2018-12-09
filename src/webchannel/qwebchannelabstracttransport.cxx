@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050400
 // /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebChannelAbstractTransport_t {
   QByteArrayData data[1];
@@ -197,3 +199,19 @@ void C_ZN28QWebChannelAbstractTransport15messageReceivedERK11QJsonObjectPS_(void
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040700
 // /usr/include/qt/QtGui/qstatictext.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQStaticText_t {
   QByteArrayData data[1];
@@ -231,3 +233,19 @@ bool C_ZNK11QStaticTextneERKS_(void *this_, QStaticText* arg0) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

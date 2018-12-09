@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040800
 // /usr/include/qt/QtGui/qglyphrun.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQGlyphRun_t {
   QByteArrayData data[1];
@@ -321,3 +323,19 @@ bool C_ZNK9QGlyphRun7isEmptyEv(void *this_) {
 #endif // QT_VERSION >= 0x050000
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

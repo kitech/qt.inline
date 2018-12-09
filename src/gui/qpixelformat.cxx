@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050400
 // /usr/include/qt/QtGui/qpixelformat.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQPixelFormat_t {
   QByteArrayData data[1];
@@ -251,3 +253,19 @@ void C_ZN12QPixelFormatD2Ev(void *this_) {
   delete (QPixelFormat*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

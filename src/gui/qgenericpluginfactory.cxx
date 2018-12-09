@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qgenericpluginfactory.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQGenericPluginFactory_t {
   QByteArrayData data[1];
@@ -71,3 +73,19 @@ void C_ZN21QGenericPluginFactoryD2Ev(void *this_) {
   delete (QGenericPluginFactory*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

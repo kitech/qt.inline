@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050600
 // /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineFullScreenRequest_t {
   QByteArrayData data[1];
@@ -88,3 +90,19 @@ void C_ZN27QWebEngineFullScreenRequestD2Ev(void *this_) {
   delete (QWebEngineFullScreenRequest*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

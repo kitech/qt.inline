@@ -97,3 +97,7 @@ void* C_ZN9QTypeInfoI12QQmlPropertyE4nameEv(void* this_ ) {
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

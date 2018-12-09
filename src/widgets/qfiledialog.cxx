@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qfiledialog.h
 #ifndef protected
 #define protected public
@@ -13,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQFileDialog_t {
   QByteArrayData data[1];
@@ -941,3 +944,20 @@ return new QList<QUrl>(rv);
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

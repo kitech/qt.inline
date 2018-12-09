@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtMultimedia/qcameraimageprocessing.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:62
@@ -212,3 +214,19 @@ bool C_ZNK22QCameraImageProcessing22isColorFilterSupportedENS_11ColorFilterE(voi
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

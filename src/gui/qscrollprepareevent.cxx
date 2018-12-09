@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQScrollPrepareEvent_t {
   QByteArrayData data[1];
@@ -127,3 +129,19 @@ void C_ZN19QScrollPrepareEvent13setContentPosERK7QPointF(void *this_, QPointF* p
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

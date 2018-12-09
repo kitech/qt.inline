@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050200
 // /usr/include/qt/QtPositioning/qgeoareamonitorinfo.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQGeoAreaMonitorInfo_t {
   QByteArrayData data[1];
@@ -203,3 +205,19 @@ void C_ZN19QGeoAreaMonitorInfo25setNotificationParametersERK4QMapI7QString8QVari
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

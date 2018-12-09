@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtNetwork/qtcpserver.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQTcpServer_t {
   QByteArrayData data[1];
@@ -364,3 +366,19 @@ void C_ZN10QTcpServer11acceptErrorEN15QAbstractSocket11SocketErrorE(void *this_,
 #endif // QT_VERSION >= 0x050000
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

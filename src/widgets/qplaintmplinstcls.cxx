@@ -83,3 +83,7 @@ int C_ZN11QMetaTypeIdIN19QScrollerProperties10FrameRatesEE14qt_metatype_idEv(voi
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

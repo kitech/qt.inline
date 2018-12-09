@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040700
 // /usr/include/qt/QtCore/qelapsedtimer.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQElapsedTimer_t {
   QByteArrayData data[1];
@@ -183,3 +185,19 @@ void C_ZN13QElapsedTimerD2Ev(void *this_) {
   delete (QElapsedTimer*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

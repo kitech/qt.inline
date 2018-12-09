@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050300
 // /usr/include/qt/QtQuickWidgets/qquickwidget.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQQuickWidget_t {
   QByteArrayData data[1];
@@ -731,3 +733,19 @@ void C_ZN12QQuickWidget15sceneGraphErrorEN12QQuickWindow15SceneGraphErrorERK7QSt
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

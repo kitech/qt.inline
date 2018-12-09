@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qpagedpaintdevice.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:58
@@ -155,3 +157,19 @@ void C_ZNK17QPagedPaintDevice7marginsEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

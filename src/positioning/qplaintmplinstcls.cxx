@@ -132,3 +132,7 @@ int C_ZN11QMetaTypeIdI11QGeoPolygonE14qt_metatype_idEv(void* this_ ) {
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

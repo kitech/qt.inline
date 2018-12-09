@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQRegularExpressionMatch_t {
   QByteArrayData data[1];
@@ -337,3 +339,19 @@ int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStri
 #endif // QT_VERSION >= 0x050a00
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

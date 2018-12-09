@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtCore/qfinalstate.h
 #ifndef protected
@@ -14,6 +16,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQFinalState_t {
   QByteArrayData data[1];
@@ -228,3 +231,20 @@ void C_ZN11QFinalStateD2Ev(void *this_) {
   delete (QFinalState*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

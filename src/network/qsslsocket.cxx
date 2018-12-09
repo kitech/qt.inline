@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040300
 // /usr/include/qt/QtNetwork/qsslsocket.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSslSocket_t {
   QByteArrayData data[1];
@@ -942,3 +944,19 @@ void C_ZN10QSslSocket34preSharedKeyAuthenticationRequiredEP29QSslPreSharedKeyAut
 #endif // QT_VERSION >= 0x050500
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

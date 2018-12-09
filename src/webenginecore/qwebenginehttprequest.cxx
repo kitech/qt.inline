@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050900
 // /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineHttpRequest_t {
   QByteArrayData data[1];
@@ -220,3 +222,19 @@ void C_ZN21QWebEngineHttpRequest11unsetHeaderERK10QByteArray(void *this_, QByteA
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

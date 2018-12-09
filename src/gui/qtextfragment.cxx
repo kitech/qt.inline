@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qtextobject.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQTextFragment_t {
   QByteArrayData data[1];
@@ -184,3 +186,19 @@ void C_ZN13QTextFragmentD2Ev(void *this_) {
   delete (QTextFragment*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

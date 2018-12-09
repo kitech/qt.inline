@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x040600
 // /usr/include/qt/QtWidgets/qgesture.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQGesture_t {
   QByteArrayData data[1];
@@ -231,3 +233,19 @@ QGesture::GestureCancelPolicy C_ZNK8QGesture19gestureCancelPolicyEv(void *this_)
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

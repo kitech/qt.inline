@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050200
 // /usr/include/qt/QtCore/qloggingcategory.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:53
@@ -135,3 +137,19 @@ void C_ZN16QLoggingCategory14setFilterRulesERK7QString(QString* rules) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

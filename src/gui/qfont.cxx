@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtGui/qfont.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQFont_t {
   QByteArrayData data[1];
@@ -724,3 +726,19 @@ void C_ZN5QFont7resolveEj(void *this_, uint mask) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

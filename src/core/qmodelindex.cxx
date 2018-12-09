@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQModelIndex_t {
   QByteArrayData data[1];
@@ -183,3 +185,19 @@ void C_ZN11QModelIndexD2Ev(void *this_) {
   delete (QModelIndex*)(this_);
 }
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

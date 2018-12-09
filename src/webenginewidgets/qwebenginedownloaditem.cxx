@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050500
 // /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQWebEngineDownloadItem_t {
   QByteArrayData data[1];
@@ -368,3 +370,19 @@ void C_ZN22QWebEngineDownloadItem15isPausedChangedEb(void *this_, bool isPaused)
 #endif // QT_VERSION >= 0x050a00
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

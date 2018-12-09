@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtMultimedia/qcameraexposure.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraexposure.h:54
@@ -358,3 +360,19 @@ void C_ZN15QCameraExposure27exposureCompensationChangedEd(void *this_, qreal arg
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

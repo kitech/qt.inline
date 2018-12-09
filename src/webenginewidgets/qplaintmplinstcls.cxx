@@ -34,3 +34,7 @@ void* C_ZN9QTypeInfoI16QWebEngineScriptE4nameEv(void* this_ ) {
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

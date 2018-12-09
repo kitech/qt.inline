@@ -1,4 +1,5 @@
 //  header block begin
+
 // /usr/include/qt/QtQuick/qsgnode.h
 #ifndef protected
 #define protected public
@@ -13,6 +14,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSGTransformNode_t {
   QByteArrayData data[1];
@@ -100,3 +102,19 @@ return new QMatrix4x4(rv);
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

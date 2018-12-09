@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050000
 // /usr/include/qt/QtGui/qopenglpaintdevice.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglpaintdevice.h:59
@@ -152,3 +154,19 @@ void C_ZN18QOpenGLPaintDevice18ensureActiveTargetEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

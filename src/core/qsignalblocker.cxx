@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050300
 // /usr/include/qt/QtCore/qobject.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQSignalBlocker_t {
   QByteArrayData data[1];
@@ -93,3 +95,19 @@ void C_ZN14QSignalBlocker7unblockEv(void *this_) {
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

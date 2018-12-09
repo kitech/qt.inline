@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050100
 // /usr/include/qt/QtQml/qqmlapplicationengine.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQQmlApplicationEngine_t {
   QByteArrayData data[1];
@@ -236,3 +238,19 @@ void C_ZN21QQmlApplicationEngine13objectCreatedEP7QObjectRK4QUrl(void *this_, QO
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end

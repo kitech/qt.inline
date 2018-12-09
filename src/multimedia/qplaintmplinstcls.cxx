@@ -524,3 +524,7 @@ int C_ZN11QMetaTypeIdIN11QRadioTuner10SearchModeEE14qt_metatype_idEv(void* this_
 }
 
 //  body block end
+
+//  footer block begin
+
+//  footer block end

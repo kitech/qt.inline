@@ -1,4 +1,6 @@
 //  header block begin
+
+#ifndef QT_MINIMAL
 // since 0x050000
 // /usr/include/qt/QtWidgets/qscroller.h
 #ifndef protected
@@ -14,6 +16,7 @@
 //  header block end
 
 //  main block begin
+
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:63
@@ -279,3 +282,20 @@ void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *thi
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+#endif // #ifndef QT_MINIMAL
+//  footer block end

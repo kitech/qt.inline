@@ -1,4 +1,5 @@
 //  header block begin
+
 // since 0x050600
 // /usr/include/qt/QtMultimedia/qaudiorolecontrol.h
 #ifndef protected
@@ -14,6 +15,7 @@
 //  header block end
 
 //  main block begin
+
 
 struct qt_meta_stringdata_MyQAudioRoleControl_t {
   QByteArrayData data[1];
@@ -237,3 +239,19 @@ void C_ZN17QAudioRoleControl16audioRoleChangedEN6QAudio4RoleE(void *this_, QAudi
 }
 
 //  main block end
+
+//  use block begin
+
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end
+
+//  footer block begin
+
+//  footer block end
