@@ -6,6 +6,7 @@ set -e -o pipefail
 set -x
 brew upgrade cmake || true
 brew install make
+brew install libffi
 brew install qt5
 
 brew install ccache

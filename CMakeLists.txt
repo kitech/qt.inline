@@ -76,6 +76,8 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(FreeType2 freetype2)
 pkg_check_modules(OpenSSL openssl)
 #find_package(OpenSSL)
+pkg_check_modules(LibFFI libffi)
+
 find_package(${_QT_STATIC_PFX}Qt5Core)
 find_package(${_QT_STATIC_PFX}Qt5Gui)
 find_package(${_QT_STATIC_PFX}Qt5Widgets)
@@ -116,9 +118,9 @@ configure_file(preheaders/qthdrsrc.h.in preheaders/qthdrsrc.h)
 # set(qt5_inline_widgets_srcs "")
 
 set(CMAKE_INCLUDE_CURRENT_DIR on)
-include_directories("./src")
+include_directories("./src" ${LibFFI_INCLUDE_DIRS})
 
-set(all_qt5_inline_srcs "src/check_assert.cpp")
+set(all_qt5_inline_srcs "")
 file(GLOB qt5_inline_srcs
   # src/core/qstring.cxx # for compile test
   src/core/modfix.cpp
@@ -141,7 +143,7 @@ file(GLOB qt5_inline_srcs
   src/multimedia/*.cxx
   )
 qt5_wrap_cpp(moc_cpp_files src/qml/qgolistmodel.cpp)
-add_custom_target(vtmoc_cpp_files ALL DEPENDS ${moc_cpp_files}) # make sure generator run
+add_custom_target(vtmoc_cpp_files ALL DEPENDS ${moc_cpp_files}) # make sure generator run first
 
 set(qt5_inline_srcs_webengines "")
 if(USE_WEBENGINES)
@@ -172,9 +174,11 @@ foreach(var ${qt5_inline_srcs})
   set(all_qt5_inline_srcs ${all_qt5_inline_srcs} ${var})
 endforeach(var)
 
-set(qt5_inline_extra_srcs src/qihotfix.cpp src/qdynslotobject.cpp src/callback_inherit.cpp)
+set(qt5_inline_extra_srcs src/check_assert.cpp src/ffi_invoke.cpp
+  src/qihotfix.cpp src/qdynslotobject.cpp src/callback_inherit.cpp
+  preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
 
-set(all_qt5_inline_srcs ${qt5_inline_srcs_webengines} ${all_qt5_inline_srcs}  ${qt5_inline_extra_srcs})
+set(all_qt5_inline_srcs ${qt5_inline_extra_srcs} ${qt5_inline_srcs_webengines} ${all_qt5_inline_srcs} )
 if(ANDROID)
   set(all_qt5_inline_srcs ${all_qt5_inline_srcs} ${qt5_inline_srcs_androidextras} ${qt5_inline_srcs_android})
 endif(ANDROID)
@@ -205,7 +209,7 @@ if(WITH_QT_STATIC)
   endif(MINGW_NOIPBIZ)
 endif(WITH_QT_STATIC)
 
-add_library(Qt5Inline SHARED ${all_qt5_inline_srcs} preheaders/qthdrsrc.cpp preheaders/qthdrsrc.h)
+add_library(Qt5Inline SHARED ${all_qt5_inline_srcs})
 target_link_libraries(Qt5Inline
   ${_QT_STATIC_PFX}Qt5::Core ${_QT_STATIC_PFX}Qt5::Gui ${_QT_STATIC_PFX}Qt5::Widgets ${_QT_STATIC_PFX}Qt5::Network
   ${_QT_STATIC_PFX}Qt5::Qml ${_QT_STATIC_PFX}Qt5::Quick ${_QT_STATIC_PFX}Qt5::QuickControls2 ${_QT_STATIC_PFX}Qt5::QuickWidgets
@@ -219,6 +223,7 @@ if(ANDROID)
   target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::AndroidExtras)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
+target_link_libraries(Qt5Inline ffi)
 
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
 include(PrecompiledHeader)

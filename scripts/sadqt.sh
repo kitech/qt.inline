@@ -26,7 +26,7 @@ for qv in $qvs; do
             rm -rf log/*
             rm -rf usr
             # http_proxy=10.0.0.32:8113 https_proxy=10.0.0.32:8113
-            make MXE_TARGETS=$mxetarget qtbase qttranslations qtmultimedia qtsvg qtdeclarative qtquickcontrols2 qtwinextras --jobs=1 JOBS=2
+            make MXE_TARGETS=$mxetarget libffi qtbase qttranslations qtmultimedia qtsvg qtdeclarative qtquickcontrols2 qtwinextras --jobs=1 JOBS=2
 
             ### finish
             mv -v usr $dstdir

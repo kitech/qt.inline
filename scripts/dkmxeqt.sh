@@ -10,7 +10,7 @@ MXEDIR=/opt/mxe2
 # run on host
 if [[ $ISINDK != "y" ]]; then
     cp -va $0 $MXEDIR/
-    docker -it -e ISINDK=y -v $MXEDIR:$MXEDIR ubuntu:16.04 $MXEDIR/dkmxeqt.sh
+    docker run -it -e ISINDK=y -v $MXEDIR:$MXEDIR ubuntu:16.04 $MXEDIR/dkmxeqt.sh
     exit
 fi
 

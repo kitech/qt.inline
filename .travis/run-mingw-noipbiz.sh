@@ -17,7 +17,7 @@ pacman -Suyy --noconfirm
 #pacman -S --noconfirm cmake gcc clang base-devel
 #pacman -S --noconfirm qt5-base qt5-quickcontrols2 qt5-x11extras qt5-imageformats qt5-graphicaleffects
 pacman -S --noconfirm cmake base-devel ccache
-pacman -S --noconfirm mingw-w64-cmake mingw-w64-gcc mingw-w64-qt5-base-static mingw-w64-qt5-quickcontrols2 mingw-w64-qt5-multimedia mingw-w64-qt5-svg
+pacman -S --noconfirm mingw-w64-cmake mingw-w64-gcc mingw-w64-libffi mingw-w64-qt5-base-static mingw-w64-qt5-quickcontrols2 mingw-w64-qt5-multimedia mingw-w64-qt5-svg
 
 pwd
 

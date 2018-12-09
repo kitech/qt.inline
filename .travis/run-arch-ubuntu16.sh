@@ -19,7 +19,7 @@ if [[ $JOB = "ubuntu16" ]]; then
     apt-get install -y qt510base qt510quickcontrols2 qt510multimedia qt510svg
 else
     pacman -Suyy --noconfirm
-    pacman -S --noconfirm cmake gcc clang base-devel git
+    pacman -S --noconfirm cmake gcc clang base-devel git libffi
     pacman -S --noconfirm qt5-base qt5-quickcontrols2 qt5-x11extras qt5-imageformats qt5-graphicaleffects qt5-multimedia qt5-svg
 fi
 
