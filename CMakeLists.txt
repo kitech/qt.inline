@@ -223,7 +223,7 @@ if(ANDROID)
   target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::AndroidExtras)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
-target_link_libraries(Qt5Inline ffi)
+target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
 
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
 include(PrecompiledHeader)

@@ -57,6 +57,8 @@ else # master
     git clone https://github.com/qtchina/qt510_android_$USEARCH.git /opt/qt510_android_$USEARCH
     export PATH=/opt/qt510_android_$USEARCH/bin:$PATH
 fi
+git clone https://github.com/qtchina/androidsys-arm.git /opt/androidsys
+export PKG_CONFIG_PATH=/opt/androidsys/lib/pkgconfig:$PKG_CONFIG_PATH
 
 pwd
 cmake -DANDROID=on .
