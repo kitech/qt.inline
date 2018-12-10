@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 Inline
+Description: Qt Inline module
+Version: @PROJVERSTR@
+Libs: -lQt5Inline
+Cflags: -DQT_INLINE_LIB -I${includedir}/QtInline -I${includedir}
+Requires: Qt5Core Qt5Network Qt5Gui Qt5Widgets Qt5Qml Qt5Quick Qt5QuickControls2 Qt5QuickWidgets

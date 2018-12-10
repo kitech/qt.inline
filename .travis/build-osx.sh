@@ -14,6 +14,7 @@ export PATH="/usr/local/opt/ccache/libexec:$PATH"
 
 source ./.qtenvs
 export PATH="/usr/local/opt/qt/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig:$PKG_CONFIG_PATH"
 qmake -v
 ls
 cmake .

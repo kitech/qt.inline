@@ -25,6 +25,7 @@ cmake flags:
 * -DANDROID=on/off default: off
 * -DUSE_WEBENGINES=on/off default: off
 * -DMINGW_NOIPBIZ=on/off default: off
+* -DMINGW_MXE=on/off default: off
 * -DWITH_QT_STATIC=on/off default: off
 * -DWINARCH=x32/x64 default: none
 

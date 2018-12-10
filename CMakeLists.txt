@@ -1,8 +1,11 @@
 #usage:
 # defines: -DANDROID=on, -DMINGW_NOIPBIZ=on, -DWITH_QT_STATIC=on, -DWINARCH=x32
 #          -DUSE_WEBENGINES=on
-project(qt5inline)
 cmake_minimum_required(VERSION 3.0)
+set(PROJSOVER "5.10")
+set(PROJVER_PATCH "106")
+set(PROJVERSTR "${PROJSOVER}.${PROJVER_PATCH}")
+project(qt5inline VERSION ${PROJVERSTR} DESCRIPTION "Qt5 C binding")
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 
@@ -225,10 +228,20 @@ if(ANDROID)
 endif(ANDROID)
 target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
 
+# version and install
+set_target_properties(Qt5Inline PROPERTIES VERSION ${PROJVERSTR} SOVERSION ${PROJSOVER})
+configure_file(Qt5Inline.pc.in Qt5Inline.pc @ONLY)
+install(TARGETS Qt5Inline
+    LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
+    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
+install(FILES ${CMAKE_BINARY_DIR}/Qt5Inline.pc
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/pkgconfig)
+
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
 include(PrecompiledHeader)
 add_precompiled_header(Qt5Inline preheaders/qthdrsrc.h FORCEINCLUDE)
 
+# link tests
 add_executable(lnktst tests/lnktst.c)
 target_link_libraries(lnktst Qt5Inline)
 if(ANDROID)
