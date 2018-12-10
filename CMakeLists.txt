@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.0)
 set(PROJSOVER "5.10")
 set(PROJVER_PATCH "106")
 set(PROJVERSTR "${PROJSOVER}.${PROJVER_PATCH}")
-project(qt5inline VERSION ${PROJVERSTR} DESCRIPTION "Qt5 C binding")
+project(qt5inline)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 
