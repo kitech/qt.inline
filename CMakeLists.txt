@@ -232,6 +232,7 @@ target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
 set_target_properties(Qt5Inline PROPERTIES VERSION ${PROJVERSTR} SOVERSION ${PROJSOVER})
 configure_file(Qt5Inline.pc.in Qt5Inline.pc @ONLY)
 install(TARGETS Qt5Inline
+    RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
     LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 install(FILES ${CMAKE_BINARY_DIR}/Qt5Inline.pc
