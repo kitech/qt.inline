@@ -50,13 +50,9 @@ ls /opt/andndk16/
 
 /opt/andndk16/bin/clang -v
 
-if [[ $QTVER = "v5.9" ]]; then
-    git clone https://github.com/qtchina/qt59_android_$USEARCH.git /opt/qt59_android_$USEARCH
-    export PATH=/opt/qt59_android_$USEARCH/bin:$PATH
-else # master
-    git clone https://github.com/qtchina/qt510_android_$USEARCH.git /opt/qt510_android_$USEARCH
-    export PATH=/opt/qt510_android_$USEARCH/bin:$PATH
-fi
+qtverdir=$(echo "$QTVER"|sed 's/v//'|sed 's/\.//')  # v5.10 => 510
+git clone "https://github.com/qtchina/qt${qtverdir}_android_$USEARCH.git" /opt/qt_android_$USEARCH
+export PATH=/opt/qt_android_$USEARCH/bin:$PATH
 git clone https://github.com/qtchina/androidsys-$USEARCH.git /opt/androidsys
 export PKG_CONFIG_PATH=/opt/androidsys/lib/pkgconfig:$PKG_CONFIG_PATH
 

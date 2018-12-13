@@ -27,11 +27,8 @@ pwd
 # checkout libs
 QTLIB=/qtlib
 export PATH=$QTLIB/bin:$PATH
-if [[ $QTVER = "v5.9" ]]; then
-    git clone https://github.com/qtchina/qt59_linux_gcc64 $QTLIB
-else # master
-    git clone https://github.com/qtchina/qt510_linux_gcc64 $QTLIB
-fi
+qtverdir=$(echo "$QTVER"|sed 's/v//'|sed 's/\.//')  # v5.10 => 510
+git clone "https://github.com/qtchina/qt${qtverdir}_linux_gcc64" $QTLIB
 gzip -dv -f $QTLIB/lib/libQt5WebEngineCore.so.*.gz
 
 pwd
