@@ -201,7 +201,9 @@ if(WITH_QT_STATIC)
       ${Qt5Core_DIR}/../../libQt5EventDispatcherSupport.a
       ${Qt5Core_DIR}/../../libQt5FontDatabaseSupport.a
       ${Qt5Core_DIR}/../../libQt5ThemeSupport.a
-      ${FreeType2_LIBRARIES} ${OpenSSL_LIBRARIES} -ldnsapi -liphlpapi)
+      ${FreeType2_LIBRARIES} ${OpenSSL_LIBRARIES} -ldnsapi -liphlpapi
+      ${Qt5Core_DIR}/../../libQt5WindowsUIAutomationSupport.a -lwtsapi32 # qt5.12
+      )
   elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD})
   elseif(${CMAKE_SYSTEM_NAME} MATCHES "Android")
