@@ -34,11 +34,8 @@ if [ x"$WITH_QT_STATIC" == x"" ]; then
     libtype="shared"
 fi
 
-if [[ $QTVER = "v5.9" ]]; then
-    git clone https://github.com/qtchina/qt59-mingw-${WINARCH}-${libtype}.git qtlib
-else # master default
-    git clone https://github.com/qtchina/qt510-mingw-${WINARCH}-${libtype}.git qtlib
-fi
+qtverdir=$(echo "$QTVER"|sed 's/v//'|sed 's/\.//')  # v5.10 => 510
+git clone https://github.com/qtchina/qt${qtverdir}-mingw-${WINARCH}-${libtype}.git qtlib
 export PATH=$PWD/qtlib/bin:$PWD/qtlib/${WINARCH}-w64-mingw32.${libtype}/qt5/bin:$PATH
 mkdir -p /opt/mxe
 ln -sv $PWD/qtlib /opt/mxe/usr

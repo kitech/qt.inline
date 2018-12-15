@@ -2,12 +2,14 @@
 
 set -e
 
-qvs="510 59"
+qvs="512 510 59"
 for qv in $qvs; do
     if [ $qv = "59" ]; then
         git reset --hard 60b66c7
-    else
+    elif [ "$qv" = "510" ]; then
         git reset --hard 97c0fbf
+    else # 512
+        git reset --hard ed88c4c
     fi
 
     qarchs="x86_64 i686"
@@ -34,4 +36,5 @@ for qv in $qvs; do
             rm -rf log/*
         done
     done
+    # break;
 done
