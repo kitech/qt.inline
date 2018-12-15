@@ -845,12 +845,15 @@ void C_ZN7QTabBar15setTabsClosableEb(void *this_, bool closable) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtWidgets/qtabbar.h:154
 // [-2] void setTabButton(int, QTabBar::ButtonPosition, QWidget *)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN7QTabBar12setTabButtonEiNS_14ButtonPositionEP7QWidget(void *this_, int index, QTabBar::ButtonPosition position, QWidget * widget) {
   ((QTabBar*)this_)->setTabButton(index, position, widget);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:155

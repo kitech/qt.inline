@@ -152,13 +152,16 @@ return new QVariantMap(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtCore/qjsonobject.h:98
 // [16] QJsonObject fromVariantHash(const QVariantHash &)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QJsonObject15fromVariantHashERK5QHashI7QString8QVariantE(const QVariantHash & map_) {
   auto rv = QJsonObject::fromVariantHash(map_);
 return new QJsonObject(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // since 5.5

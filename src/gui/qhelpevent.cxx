@@ -53,7 +53,7 @@ MyQHelpEvent(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos) :
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:680
+// /usr/include/qt/QtGui/qevent.h:685
 // [-2] void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type_, QPoint* pos, QPoint* globalPos) {
@@ -61,14 +61,14 @@ void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type_, QPoint* 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:681
+// /usr/include/qt/QtGui/qevent.h:686
 // [-2] void ~QHelpEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QHelpEventD2Ev(void *this_) {
   delete (QHelpEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:683
+// /usr/include/qt/QtGui/qevent.h:688
 // [4] int x()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QHelpEvent1xEv(void *this_) {
@@ -76,7 +76,7 @@ int C_ZNK10QHelpEvent1xEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:684
+// /usr/include/qt/QtGui/qevent.h:689
 // [4] int y()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QHelpEvent1yEv(void *this_) {
@@ -84,7 +84,7 @@ int C_ZNK10QHelpEvent1yEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:685
+// /usr/include/qt/QtGui/qevent.h:690
 // [4] int globalX()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QHelpEvent7globalXEv(void *this_) {
@@ -92,7 +92,7 @@ int C_ZNK10QHelpEvent7globalXEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:686
+// /usr/include/qt/QtGui/qevent.h:691
 // [4] int globalY()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QHelpEvent7globalYEv(void *this_) {
@@ -100,7 +100,7 @@ int C_ZNK10QHelpEvent7globalYEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:688
+// /usr/include/qt/QtGui/qevent.h:693
 // [8] const QPoint & pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QHelpEvent3posEv(void *this_) {
@@ -109,7 +109,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:689
+// /usr/include/qt/QtGui/qevent.h:694
 // [8] const QPoint & globalPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QHelpEvent9globalPosEv(void *this_) {

@@ -53,7 +53,7 @@ MyQDragLeaveEvent() : QDragLeaveEvent() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:671
+// /usr/include/qt/QtGui/qevent.h:676
 // [-2] void QDragLeaveEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QDragLeaveEventC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN15QDragLeaveEventC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:672
+// /usr/include/qt/QtGui/qevent.h:677
 // [-2] void ~QDragLeaveEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QDragLeaveEventD2Ev(void *this_) {

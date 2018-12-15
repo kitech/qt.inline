@@ -55,7 +55,7 @@ MyQFileOpenEvent(const QUrl & url) : QFileOpenEvent(url) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:738
+// /usr/include/qt/QtGui/qevent.h:743
 // [-2] void QFileOpenEvent(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QFileOpenEventC2ERK7QString(QString* file) {
@@ -63,7 +63,7 @@ void* C_ZN14QFileOpenEventC2ERK7QString(QString* file) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:739
+// /usr/include/qt/QtGui/qevent.h:744
 // [-2] void QFileOpenEvent(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QFileOpenEventC2ERK4QUrl(QUrl* url) {
@@ -71,14 +71,14 @@ void* C_ZN14QFileOpenEventC2ERK4QUrl(QUrl* url) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:740
+// /usr/include/qt/QtGui/qevent.h:745
 // [-2] void ~QFileOpenEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QFileOpenEventD2Ev(void *this_) {
   delete (QFileOpenEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:742
+// /usr/include/qt/QtGui/qevent.h:747
 // [8] QString file()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QFileOpenEvent4fileEv(void *this_) {
@@ -88,7 +88,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtGui/qevent.h:743
+// /usr/include/qt/QtGui/qevent.h:748
 // [8] QUrl url()
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -100,7 +100,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qevent.h:744
+// /usr/include/qt/QtGui/qevent.h:749
 // [1] bool openFile(QFile &, QIODevice::OpenMode)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT

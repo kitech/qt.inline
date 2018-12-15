@@ -53,7 +53,7 @@ MyQSGClipNode() : QSGClipNode() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:264
+// /usr/include/qt/QtQuick/qsgnode.h:259
 // [-2] void QSGClipNode()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QSGClipNodeC2Ev() {
@@ -61,14 +61,14 @@ void* C_ZN11QSGClipNodeC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:265
+// /usr/include/qt/QtQuick/qsgnode.h:260
 // [-2] void ~QSGClipNode()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGClipNodeD2Ev(void *this_) {
   delete (QSGClipNode*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:267
+// /usr/include/qt/QtQuick/qsgnode.h:262
 // [-2] void setIsRectangular(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGClipNode16setIsRectangularEb(void *this_, bool rectHint) {
@@ -76,7 +76,7 @@ void C_ZN11QSGClipNode16setIsRectangularEb(void *this_, bool rectHint) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:268
+// /usr/include/qt/QtQuick/qsgnode.h:263
 // [1] bool isRectangular()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QSGClipNode13isRectangularEv(void *this_) {
@@ -84,7 +84,7 @@ bool C_ZNK11QSGClipNode13isRectangularEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:270
+// /usr/include/qt/QtQuick/qsgnode.h:265
 // [-2] void setClipRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGClipNode11setClipRectERK6QRectF(void *this_, QRectF* arg0) {
@@ -92,7 +92,7 @@ void C_ZN11QSGClipNode11setClipRectERK6QRectF(void *this_, QRectF* arg0) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:271
+// /usr/include/qt/QtQuick/qsgnode.h:266
 // [32] QRectF clipRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QSGClipNode8clipRectEv(void *this_) {

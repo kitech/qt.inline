@@ -58,7 +58,7 @@ MyQQmlListReference(const QQmlListReference & arg0) : QQmlListReference(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:142
+// /usr/include/qt/QtQml/qqmllist.h:134
 // [-2] void QQmlListReference()
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceC2Ev() {
@@ -66,7 +66,7 @@ void* C_ZN17QQmlListReferenceC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:143
+// /usr/include/qt/QtQml/qqmllist.h:135
 // [-2] void QQmlListReference(QObject *, const char *, QQmlEngine *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const char * property, QQmlEngine * arg2) {
@@ -74,7 +74,7 @@ void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:144
+// /usr/include/qt/QtQml/qqmllist.h:136
 // [-2] void QQmlListReference(const QQmlListReference &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceC2ERKS_(QQmlListReference* arg0) {
@@ -82,7 +82,7 @@ void* C_ZN17QQmlListReferenceC2ERKS_(QQmlListReference* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:145
+// /usr/include/qt/QtQml/qqmllist.h:137
 // [8] QQmlListReference & operator=(const QQmlListReference &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQmlListReferenceaSERKS_(void *this_, QQmlListReference* arg0) {
@@ -91,14 +91,14 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:146
+// /usr/include/qt/QtQml/qqmllist.h:138
 // [-2] void ~QQmlListReference()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQmlListReferenceD2Ev(void *this_) {
   delete (QQmlListReference*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:148
+// /usr/include/qt/QtQml/qqmllist.h:140
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference7isValidEv(void *this_) {
@@ -106,7 +106,7 @@ bool C_ZNK17QQmlListReference7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:150
+// /usr/include/qt/QtQml/qqmllist.h:142
 // [8] QObject * object()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQmlListReference6objectEv(void *this_) {
@@ -114,7 +114,7 @@ void* C_ZNK17QQmlListReference6objectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:151
+// /usr/include/qt/QtQml/qqmllist.h:143
 // [8] const QMetaObject * listElementType()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQmlListReference15listElementTypeEv(void *this_) {
@@ -122,7 +122,7 @@ void* C_ZNK17QQmlListReference15listElementTypeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:153
+// /usr/include/qt/QtQml/qqmllist.h:145
 // [1] bool canAppend()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference9canAppendEv(void *this_) {
@@ -130,7 +130,7 @@ bool C_ZNK17QQmlListReference9canAppendEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:154
+// /usr/include/qt/QtQml/qqmllist.h:146
 // [1] bool canAt()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference5canAtEv(void *this_) {
@@ -138,7 +138,7 @@ bool C_ZNK17QQmlListReference5canAtEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:155
+// /usr/include/qt/QtQml/qqmllist.h:147
 // [1] bool canClear()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference8canClearEv(void *this_) {
@@ -146,7 +146,7 @@ bool C_ZNK17QQmlListReference8canClearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:156
+// /usr/include/qt/QtQml/qqmllist.h:148
 // [1] bool canCount()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference8canCountEv(void *this_) {
@@ -154,7 +154,7 @@ bool C_ZNK17QQmlListReference8canCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:158
+// /usr/include/qt/QtQml/qqmllist.h:150
 // [1] bool isManipulable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference13isManipulableEv(void *this_) {
@@ -162,7 +162,7 @@ bool C_ZNK17QQmlListReference13isManipulableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:159
+// /usr/include/qt/QtQml/qqmllist.h:151
 // [1] bool isReadable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference10isReadableEv(void *this_) {
@@ -170,7 +170,7 @@ bool C_ZNK17QQmlListReference10isReadableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:161
+// /usr/include/qt/QtQml/qqmllist.h:153
 // [1] bool append(QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference6appendEP7QObject(void *this_, QObject * arg0) {
@@ -178,7 +178,7 @@ bool C_ZNK17QQmlListReference6appendEP7QObject(void *this_, QObject * arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:162
+// /usr/include/qt/QtQml/qqmllist.h:154
 // [8] QObject * at(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQmlListReference2atEi(void *this_, int arg0) {
@@ -186,7 +186,7 @@ void* C_ZNK17QQmlListReference2atEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:163
+// /usr/include/qt/QtQml/qqmllist.h:155
 // [1] bool clear()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQmlListReference5clearEv(void *this_) {
@@ -194,7 +194,7 @@ bool C_ZNK17QQmlListReference5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:164
+// /usr/include/qt/QtQml/qqmllist.h:156
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QQmlListReference5countEv(void *this_) {

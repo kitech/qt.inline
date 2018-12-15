@@ -237,12 +237,15 @@ QTextStream::Status C_ZNK11QTextStream6statusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qtextstream.h:121
 // [-2] void setStatus(QTextStream::Status)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextStream9setStatusENS_6StatusE(void *this_, QTextStream::Status status) {
   ((QTextStream*)this_)->setStatus(status);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
 // since 4.1
@@ -715,6 +718,15 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:187
+// [16] QTextStream & operator<<(QStringView)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QTextStreamlsE11QStringView(void *this_, QStringView* s) {
+  auto& rv = ((QTextStream*)this_)->operator<<(*s);
+return &rv;
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:188
 // [16] QTextStream & operator<<(QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsE13QLatin1String(void *this_, QLatin1String* s) {
@@ -723,7 +735,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:188
+// /usr/include/qt/QtCore/qtextstream.h:189
 // [16] QTextStream & operator<<(const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsERK10QStringRef(void *this_, QStringRef* s) {
@@ -732,7 +744,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:189
+// /usr/include/qt/QtCore/qtextstream.h:190
 // [16] QTextStream & operator<<(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsERK10QByteArray(void *this_, QByteArray* array) {
@@ -741,7 +753,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:190
+// /usr/include/qt/QtCore/qtextstream.h:191
 // [16] QTextStream & operator<<(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsEPKc(void *this_, const char * c) {
@@ -750,7 +762,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:191
+// /usr/include/qt/QtCore/qtextstream.h:192
 // [16] QTextStream & operator<<(const void *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTextStreamlsEPKv(void *this_, const void * ptr) {

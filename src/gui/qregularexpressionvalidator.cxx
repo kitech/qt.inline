@@ -113,7 +113,7 @@ void* C_QRegularExpressionValidator_init_staticMetaObject(void* this_, void* str
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:203
+// /usr/include/qt/QtGui/qvalidator.h:205
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
@@ -121,7 +121,7 @@ void* C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:203
+// /usr/include/qt/QtGui/qvalidator.h:205
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidator11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -129,7 +129,7 @@ void* C_ZN27QRegularExpressionValidator11qt_metacastEPKc(void *this_, const char
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:203
+// /usr/include/qt/QtGui/qvalidator.h:205
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN27QRegularExpressionValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -137,7 +137,7 @@ int C_ZN27QRegularExpressionValidator11qt_metacallEN11QMetaObject4CallEiPPv(void
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:203
+// /usr/include/qt/QtGui/qvalidator.h:205
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidator2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -146,7 +146,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:203
+// /usr/include/qt/QtGui/qvalidator.h:205
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidator6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -155,7 +155,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:207
+// /usr/include/qt/QtGui/qvalidator.h:209
 // [-2] void QRegularExpressionValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
@@ -163,7 +163,7 @@ void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:208
+// /usr/include/qt/QtGui/qvalidator.h:210
 // [-2] void QRegularExpressionValidator(const QRegularExpression &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(QRegularExpression* re, QObject * parent) {
@@ -171,14 +171,14 @@ void* C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(QRegul
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:209
+// /usr/include/qt/QtGui/qvalidator.h:211
 // [-2] void ~QRegularExpressionValidator()
 extern "C" Q_DECL_EXPORT
 void C_ZN27QRegularExpressionValidatorD2Ev(void *this_) {
   delete (QRegularExpressionValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:211
+// /usr/include/qt/QtGui/qvalidator.h:213
 // [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK27QRegularExpressionValidator8validateER7QStringRi(void *this_, QString* input, int & pos) {
@@ -186,7 +186,7 @@ QValidator::State C_ZNK27QRegularExpressionValidator8validateER7QStringRi(void *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:213
+// /usr/include/qt/QtGui/qvalidator.h:215
 // [8] QRegularExpression regularExpression()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QRegularExpressionValidator17regularExpressionEv(void *this_) {
@@ -195,7 +195,7 @@ return new QRegularExpression(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:216
+// /usr/include/qt/QtGui/qvalidator.h:218
 // [-2] void setRegularExpression(const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpression(void *this_, QRegularExpression* re) {
@@ -203,7 +203,7 @@ void C_ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpress
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:219
+// /usr/include/qt/QtGui/qvalidator.h:221
 // [-2] void regularExpressionChanged(const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(void *this_, QRegularExpression* re) {

@@ -194,8 +194,8 @@ bool C_ZNK11QVideoProbe8isActiveEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qvideoprobe.h:65
 // [-2] void videoFrameProbed(const QVideoFrame &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QVideoProbe16videoFrameProbedERK11QVideoFrame(void *this_, QVideoFrame* videoFrame) {
-  ((QVideoProbe*)this_)->videoFrameProbed(*videoFrame);
+void C_ZN11QVideoProbe16videoFrameProbedERK11QVideoFrame(void *this_, QVideoFrame* frame) {
+  ((QVideoProbe*)this_)->videoFrameProbed(*frame);
 }
 
 // Public Visibility=Default Availability=Available

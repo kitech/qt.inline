@@ -231,8 +231,8 @@ void C_ZN32QCameraCaptureDestinationControl21setCaptureDestinationE6QFlagsIN19QC
 // /usr/include/qt/QtMultimedia/qcameracapturedestinationcontrol.h:62
 // [-2] void captureDestinationChanged(QCameraImageCapture::CaptureDestinations)
 extern "C" Q_DECL_EXPORT
-void C_ZN32QCameraCaptureDestinationControl25captureDestinationChangedE6QFlagsIN19QCameraImageCapture18CaptureDestinationEE(void *this_, QFlags<QCameraImageCapture::CaptureDestination> arg0) {
-  ((QCameraCaptureDestinationControl*)this_)->captureDestinationChanged(arg0);
+void C_ZN32QCameraCaptureDestinationControl25captureDestinationChangedE6QFlagsIN19QCameraImageCapture18CaptureDestinationEE(void *this_, QFlags<QCameraImageCapture::CaptureDestination> destination) {
+  ((QCameraCaptureDestinationControl*)this_)->captureDestinationChanged(destination);
 }
 
 //  main block end

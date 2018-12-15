@@ -137,7 +137,7 @@ void* C_QGuiApplication_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qguiapplication.h:192
+// /usr/include/qt/QtGui/qguiapplication.h:193
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QGuiApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -145,7 +145,7 @@ bool C_ZN15QGuiApplication5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qguiapplication.h:193
+// /usr/include/qt/QtGui/qguiapplication.h:194
 // [1] bool compressEvent(QEvent *, QObject *, QPostEventList *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QGuiApplication13compressEventEP6QEventP7QObjectP14QPostEventList(void *this_, QEvent * arg0, QObject * receiver, QPostEventList * arg2) {
@@ -766,6 +766,17 @@ extern "C" Q_DECL_EXPORT
 void C_ZN15QGuiApplication29applicationDisplayNameChangedEv(void *this_) {
   ((QGuiApplication*)this_)->applicationDisplayNameChanged();
 }
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtGui/qguiapplication.h:190
+// [-2] void fontChanged(const QFont &)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZN15QGuiApplication11fontChangedERK5QFont(void *this_, QFont* font) {
+  ((QGuiApplication*)this_)->fontChanged(*font);
+}
+#endif // QT_VERSION >= 0x050b00
 
 //  main block end
 

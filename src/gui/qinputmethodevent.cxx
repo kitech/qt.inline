@@ -57,7 +57,7 @@ MyQInputMethodEvent(const QInputMethodEvent & other) : QInputMethodEvent(other) 
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:555
+// /usr/include/qt/QtGui/qevent.h:560
 // [-2] void QInputMethodEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QInputMethodEventC2Ev() {
@@ -65,7 +65,7 @@ void* C_ZN17QInputMethodEventC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:556
+// /usr/include/qt/QtGui/qevent.h:561
 // [-2] void QInputMethodEvent(const QString &, const QList<QInputMethodEvent::Attribute> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(QString* preeditText, QList<QInputMethodEvent::Attribute>* attributes) {
@@ -73,14 +73,14 @@ void* C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(QString* pree
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:557
+// /usr/include/qt/QtGui/qevent.h:562
 // [-2] void ~QInputMethodEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QInputMethodEventD2Ev(void *this_) {
   delete (QInputMethodEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:559
+// /usr/include/qt/QtGui/qevent.h:564
 // [-2] void setCommitString(const QString &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, QString* commitString, int replaceFrom, int replaceLength) {
@@ -88,7 +88,7 @@ void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, QString*
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:560
+// /usr/include/qt/QtGui/qevent.h:565
 // [8] const QList<QInputMethodEvent::Attribute> & attributes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QInputMethodEvent10attributesEv(void *this_) {
@@ -97,7 +97,7 @@ return new QList<QInputMethodEvent::Attribute>(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:561
+// /usr/include/qt/QtGui/qevent.h:566
 // [8] const QString & preeditString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QInputMethodEvent13preeditStringEv(void *this_) {
@@ -106,7 +106,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:563
+// /usr/include/qt/QtGui/qevent.h:568
 // [8] const QString & commitString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QInputMethodEvent12commitStringEv(void *this_) {
@@ -115,7 +115,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:564
+// /usr/include/qt/QtGui/qevent.h:569
 // [4] int replacementStart()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QInputMethodEvent16replacementStartEv(void *this_) {
@@ -123,7 +123,7 @@ int C_ZNK17QInputMethodEvent16replacementStartEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:565
+// /usr/include/qt/QtGui/qevent.h:570
 // [4] int replacementLength()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QInputMethodEvent17replacementLengthEv(void *this_) {
@@ -131,7 +131,7 @@ int C_ZNK17QInputMethodEvent17replacementLengthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:567
+// /usr/include/qt/QtGui/qevent.h:572
 // [-2] void QInputMethodEvent(const QInputMethodEvent &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QInputMethodEventC2ERKS_(QInputMethodEvent* other) {

@@ -411,12 +411,15 @@ QFont::SpacingType C_ZNK5QFont17letterSpacingTypeEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qfont.h:230
 // [-2] void setLetterSpacing(QFont::SpacingType, qreal)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *this_, QFont::SpacingType type_, qreal spacing) {
   ((QFont*)this_)->setLetterSpacing(type_, spacing);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // since 4.4
@@ -441,12 +444,15 @@ void C_ZN5QFont14setWordSpacingEd(void *this_, qreal spacing) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qfont.h:235
 // [-2] void setCapitalization(QFont::Capitalization)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *this_, QFont::Capitalization arg0) {
   ((QFont*)this_)->setCapitalization(arg0);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // since 4.4
@@ -460,12 +466,15 @@ QFont::Capitalization C_ZNK5QFont14capitalizationEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtGui/qfont.h:238
 // [-2] void setHintingPreference(QFont::HintingPreference)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont20setHintingPreferenceENS_17HintingPreferenceE(void *this_, QFont::HintingPreference hintingPreference) {
   ((QFont*)this_)->setHintingPreference(hintingPreference);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // since 4.8

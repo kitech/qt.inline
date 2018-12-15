@@ -718,12 +718,15 @@ int C_ZNK13QDateTimeEdit12sectionCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:148
 // [-2] void setSelectedSection(QDateTimeEdit::Section)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit18setSelectedSectionENS_7SectionE(void *this_, QDateTimeEdit::Section section) {
   ((QDateTimeEdit*)this_)->setSelectedSection(section);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:150

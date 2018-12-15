@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qfutureinterface.h
 #ifndef protected
 #define protected public
@@ -55,7 +56,7 @@ MyQFutureInterfaceBase(const QFutureInterfaceBase & other) : QFutureInterfaceBas
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:73
+// /usr/include/qt/QtCore/qfutureinterface.h:72
 // [-2] void QFutureInterfaceBase(QFutureInterfaceBase::State)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initialState) {
@@ -63,7 +64,7 @@ void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initia
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:74
+// /usr/include/qt/QtCore/qfutureinterface.h:73
 // [-2] void QFutureInterfaceBase(const QFutureInterfaceBase &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBaseC2ERKS_(QFutureInterfaceBase* other) {
@@ -71,14 +72,14 @@ void* C_ZN20QFutureInterfaceBaseC2ERKS_(QFutureInterfaceBase* other) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:75
+// /usr/include/qt/QtCore/qfutureinterface.h:74
 // [-2] void ~QFutureInterfaceBase()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBaseD2Ev(void *this_) {
   delete (QFutureInterfaceBase*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:78
+// /usr/include/qt/QtCore/qfutureinterface.h:77
 // [-2] void reportStarted()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase13reportStartedEv(void *this_) {
@@ -86,7 +87,7 @@ void C_ZN20QFutureInterfaceBase13reportStartedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:79
+// /usr/include/qt/QtCore/qfutureinterface.h:78
 // [-2] void reportFinished()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase14reportFinishedEv(void *this_) {
@@ -94,7 +95,7 @@ void C_ZN20QFutureInterfaceBase14reportFinishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:80
+// /usr/include/qt/QtCore/qfutureinterface.h:79
 // [-2] void reportCanceled()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase14reportCanceledEv(void *this_) {
@@ -102,7 +103,7 @@ void C_ZN20QFutureInterfaceBase14reportCanceledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:84
+// /usr/include/qt/QtCore/qfutureinterface.h:83
 // [-2] void reportResultsReady(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase18reportResultsReadyEii(void *this_, int beginIndex, int endIndex) {
@@ -110,7 +111,7 @@ void C_ZN20QFutureInterfaceBase18reportResultsReadyEii(void *this_, int beginInd
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:86
+// /usr/include/qt/QtCore/qfutureinterface.h:85
 // [-2] void setRunnable(QRunnable *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase11setRunnableEP9QRunnable(void *this_, QRunnable * runnable) {
@@ -118,7 +119,7 @@ void C_ZN20QFutureInterfaceBase11setRunnableEP9QRunnable(void *this_, QRunnable 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:87
+// /usr/include/qt/QtCore/qfutureinterface.h:86
 // [-2] void setThreadPool(QThreadPool *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase13setThreadPoolEP11QThreadPool(void *this_, QThreadPool * pool) {
@@ -126,7 +127,7 @@ void C_ZN20QFutureInterfaceBase13setThreadPoolEP11QThreadPool(void *this_, QThre
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:88
+// /usr/include/qt/QtCore/qfutureinterface.h:87
 // [-2] void setFilterMode(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase13setFilterModeEb(void *this_, bool enable) {
@@ -134,7 +135,7 @@ void C_ZN20QFutureInterfaceBase13setFilterModeEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:89
+// /usr/include/qt/QtCore/qfutureinterface.h:88
 // [-2] void setProgressRange(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase16setProgressRangeEii(void *this_, int minimum, int maximum) {
@@ -142,7 +143,7 @@ void C_ZN20QFutureInterfaceBase16setProgressRangeEii(void *this_, int minimum, i
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:90
+// /usr/include/qt/QtCore/qfutureinterface.h:89
 // [4] int progressMinimum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QFutureInterfaceBase15progressMinimumEv(void *this_) {
@@ -150,7 +151,7 @@ int C_ZNK20QFutureInterfaceBase15progressMinimumEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:91
+// /usr/include/qt/QtCore/qfutureinterface.h:90
 // [4] int progressMaximum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QFutureInterfaceBase15progressMaximumEv(void *this_) {
@@ -158,7 +159,7 @@ int C_ZNK20QFutureInterfaceBase15progressMaximumEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:92
+// /usr/include/qt/QtCore/qfutureinterface.h:91
 // [1] bool isProgressUpdateNeeded()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase22isProgressUpdateNeededEv(void *this_) {
@@ -166,7 +167,7 @@ bool C_ZNK20QFutureInterfaceBase22isProgressUpdateNeededEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:93
+// /usr/include/qt/QtCore/qfutureinterface.h:92
 // [-2] void setProgressValue(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase16setProgressValueEi(void *this_, int progressValue) {
@@ -174,7 +175,7 @@ void C_ZN20QFutureInterfaceBase16setProgressValueEi(void *this_, int progressVal
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:94
+// /usr/include/qt/QtCore/qfutureinterface.h:93
 // [4] int progressValue()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QFutureInterfaceBase13progressValueEv(void *this_) {
@@ -182,7 +183,7 @@ int C_ZNK20QFutureInterfaceBase13progressValueEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:95
+// /usr/include/qt/QtCore/qfutureinterface.h:94
 // [-2] void setProgressValueAndText(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase23setProgressValueAndTextEiRK7QString(void *this_, int progressValue, QString* progressText) {
@@ -190,7 +191,7 @@ void C_ZN20QFutureInterfaceBase23setProgressValueAndTextEiRK7QString(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:96
+// /usr/include/qt/QtCore/qfutureinterface.h:95
 // [8] QString progressText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QFutureInterfaceBase12progressTextEv(void *this_) {
@@ -199,7 +200,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:98
+// /usr/include/qt/QtCore/qfutureinterface.h:97
 // [-2] void setExpectedResultCount(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase22setExpectedResultCountEi(void *this_, int resultCount) {
@@ -207,7 +208,7 @@ void C_ZN20QFutureInterfaceBase22setExpectedResultCountEi(void *this_, int resul
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:99
+// /usr/include/qt/QtCore/qfutureinterface.h:98
 // [4] int expectedResultCount()
 extern "C" Q_DECL_EXPORT
 int C_ZN20QFutureInterfaceBase19expectedResultCountEv(void *this_) {
@@ -215,7 +216,7 @@ int C_ZN20QFutureInterfaceBase19expectedResultCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:100
+// /usr/include/qt/QtCore/qfutureinterface.h:99
 // [4] int resultCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QFutureInterfaceBase11resultCountEv(void *this_) {
@@ -223,7 +224,7 @@ int C_ZNK20QFutureInterfaceBase11resultCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:102
+// /usr/include/qt/QtCore/qfutureinterface.h:101
 // [1] bool queryState(QFutureInterfaceBase::State)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase10queryStateENS_5StateE(void *this_, QFutureInterfaceBase::State state) {
@@ -231,7 +232,7 @@ bool C_ZNK20QFutureInterfaceBase10queryStateENS_5StateE(void *this_, QFutureInte
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:103
+// /usr/include/qt/QtCore/qfutureinterface.h:102
 // [1] bool isRunning()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase9isRunningEv(void *this_) {
@@ -239,7 +240,7 @@ bool C_ZNK20QFutureInterfaceBase9isRunningEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:104
+// /usr/include/qt/QtCore/qfutureinterface.h:103
 // [1] bool isStarted()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase9isStartedEv(void *this_) {
@@ -247,7 +248,7 @@ bool C_ZNK20QFutureInterfaceBase9isStartedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:105
+// /usr/include/qt/QtCore/qfutureinterface.h:104
 // [1] bool isCanceled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase10isCanceledEv(void *this_) {
@@ -255,7 +256,7 @@ bool C_ZNK20QFutureInterfaceBase10isCanceledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:106
+// /usr/include/qt/QtCore/qfutureinterface.h:105
 // [1] bool isFinished()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase10isFinishedEv(void *this_) {
@@ -263,7 +264,7 @@ bool C_ZNK20QFutureInterfaceBase10isFinishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:107
+// /usr/include/qt/QtCore/qfutureinterface.h:106
 // [1] bool isPaused()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase8isPausedEv(void *this_) {
@@ -271,7 +272,7 @@ bool C_ZNK20QFutureInterfaceBase8isPausedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:108
+// /usr/include/qt/QtCore/qfutureinterface.h:107
 // [1] bool isThrottled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase11isThrottledEv(void *this_) {
@@ -279,7 +280,7 @@ bool C_ZNK20QFutureInterfaceBase11isThrottledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:109
+// /usr/include/qt/QtCore/qfutureinterface.h:108
 // [1] bool isResultReadyAt(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBase15isResultReadyAtEi(void *this_, int index) {
@@ -287,7 +288,7 @@ bool C_ZNK20QFutureInterfaceBase15isResultReadyAtEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:111
+// /usr/include/qt/QtCore/qfutureinterface.h:110
 // [-2] void cancel()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase6cancelEv(void *this_) {
@@ -295,7 +296,7 @@ void C_ZN20QFutureInterfaceBase6cancelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:112
+// /usr/include/qt/QtCore/qfutureinterface.h:111
 // [-2] void setPaused(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase9setPausedEb(void *this_, bool paused) {
@@ -303,7 +304,7 @@ void C_ZN20QFutureInterfaceBase9setPausedEb(void *this_, bool paused) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:113
+// /usr/include/qt/QtCore/qfutureinterface.h:112
 // [-2] void togglePaused()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase12togglePausedEv(void *this_) {
@@ -311,7 +312,7 @@ void C_ZN20QFutureInterfaceBase12togglePausedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:114
+// /usr/include/qt/QtCore/qfutureinterface.h:113
 // [-2] void setThrottled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase12setThrottledEb(void *this_, bool enable) {
@@ -319,7 +320,7 @@ void C_ZN20QFutureInterfaceBase12setThrottledEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:116
+// /usr/include/qt/QtCore/qfutureinterface.h:115
 // [-2] void waitForFinished()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase15waitForFinishedEv(void *this_) {
@@ -327,7 +328,7 @@ void C_ZN20QFutureInterfaceBase15waitForFinishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:117
+// /usr/include/qt/QtCore/qfutureinterface.h:116
 // [1] bool waitForNextResult()
 extern "C" Q_DECL_EXPORT
 bool C_ZN20QFutureInterfaceBase17waitForNextResultEv(void *this_) {
@@ -335,7 +336,7 @@ bool C_ZN20QFutureInterfaceBase17waitForNextResultEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:118
+// /usr/include/qt/QtCore/qfutureinterface.h:117
 // [-2] void waitForResult(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase13waitForResultEi(void *this_, int resultIndex) {
@@ -343,7 +344,7 @@ void C_ZN20QFutureInterfaceBase13waitForResultEi(void *this_, int resultIndex) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:119
+// /usr/include/qt/QtCore/qfutureinterface.h:118
 // [-2] void waitForResume()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QFutureInterfaceBase13waitForResumeEv(void *this_) {
@@ -351,7 +352,7 @@ void C_ZN20QFutureInterfaceBase13waitForResumeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:121
+// /usr/include/qt/QtCore/qfutureinterface.h:120
 // [8] QMutex * mutex()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QFutureInterfaceBase5mutexEv(void *this_) {
@@ -359,7 +360,7 @@ void* C_ZNK20QFutureInterfaceBase5mutexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:122
+// /usr/include/qt/QtCore/qfutureinterface.h:121
 // [1] QtPrivate::ExceptionStore & exceptionStore()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBase14exceptionStoreEv(void *this_) {
@@ -368,7 +369,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:123
+// /usr/include/qt/QtCore/qfutureinterface.h:122
 // [48] QtPrivate::ResultStoreBase & resultStoreBase()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBase15resultStoreBaseEv(void *this_) {
@@ -377,7 +378,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:124
+// /usr/include/qt/QtCore/qfutureinterface.h:123
 // [48] const QtPrivate::ResultStoreBase & resultStoreBase()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QFutureInterfaceBase15resultStoreBaseEv(void *this_) {
@@ -386,7 +387,7 @@ return new QtPrivate::ResultStoreBase(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:126
+// /usr/include/qt/QtCore/qfutureinterface.h:125
 // [1] bool operator==(const QFutureInterfaceBase &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBaseeqERKS_(void *this_, QFutureInterfaceBase* other) {
@@ -394,7 +395,7 @@ bool C_ZNK20QFutureInterfaceBaseeqERKS_(void *this_, QFutureInterfaceBase* other
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:127
+// /usr/include/qt/QtCore/qfutureinterface.h:126
 // [1] bool operator!=(const QFutureInterfaceBase &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QFutureInterfaceBaseneERKS_(void *this_, QFutureInterfaceBase* other) {
@@ -402,7 +403,7 @@ bool C_ZNK20QFutureInterfaceBaseneERKS_(void *this_, QFutureInterfaceBase* other
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:128
+// /usr/include/qt/QtCore/qfutureinterface.h:127
 // [16] QFutureInterfaceBase & operator=(const QFutureInterfaceBase &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QFutureInterfaceBaseaSERKS_(void *this_, QFutureInterfaceBase* other) {
@@ -426,4 +427,5 @@ return &rv;
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

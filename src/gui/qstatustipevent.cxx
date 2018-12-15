@@ -53,7 +53,7 @@ MyQStatusTipEvent(const QString & tip) : QStatusTipEvent(tip) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:700
+// /usr/include/qt/QtGui/qevent.h:705
 // [-2] void QStatusTipEvent(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QStatusTipEventC2ERK7QString(QString* tip) {
@@ -61,14 +61,14 @@ void* C_ZN15QStatusTipEventC2ERK7QString(QString* tip) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:701
+// /usr/include/qt/QtGui/qevent.h:706
 // [-2] void ~QStatusTipEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QStatusTipEventD2Ev(void *this_) {
   delete (QStatusTipEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:703
+// /usr/include/qt/QtGui/qevent.h:708
 // [8] QString tip()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QStatusTipEvent3tipEv(void *this_) {

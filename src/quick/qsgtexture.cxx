@@ -353,12 +353,15 @@ QSGTexture::Filtering C_ZNK10QSGTexture9filteringEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtQuick/qsgtexture.h:99
 // [-2] void setAnisotropyLevel(QSGTexture::AnisotropyLevel)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture18setAnisotropyLevelENS_15AnisotropyLevelE(void *this_, QSGTexture::AnisotropyLevel level) {
   ((QSGTexture*)this_)->setAnisotropyLevel(level);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // since 5.9

@@ -329,6 +329,19 @@ MyQQuickWidget(const QUrl & source, QWidget * parent) : QQuickWidget(source, par
   }
   }
 
+// Protected virtual Visibility=Default Availability=Available
+// [1] bool focusNextPrevChild(bool)
+  virtual bool focusNextPrevChild(bool next)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return QQuickWidget::focusNextPrevChild(next);
+  }
+  }
+
 };
 
 extern "C" Q_DECL_EXPORT
@@ -344,7 +357,7 @@ void* C_QQuickWidget_init_staticMetaObject(void* this_, void* strdat, void* dat,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:118
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:117
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
@@ -352,7 +365,7 @@ void C_ZN12QQuickWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:119
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:118
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
@@ -360,7 +373,7 @@ void C_ZN12QQuickWidget10timerEventEP11QTimerEvent(void *this_, QTimerEvent * ar
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:121
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:120
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
@@ -368,7 +381,7 @@ void C_ZN12QQuickWidget13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:122
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:121
 // [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
@@ -376,7 +389,7 @@ void C_ZN12QQuickWidget15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * ar
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:123
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:122
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -384,7 +397,7 @@ void C_ZN12QQuickWidget15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:124
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:123
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -392,7 +405,7 @@ void C_ZN12QQuickWidget17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:125
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:124
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -400,7 +413,7 @@ void C_ZN12QQuickWidget14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:126
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:125
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -408,7 +421,7 @@ void C_ZN12QQuickWidget21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMous
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:128
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:127
 // [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
@@ -416,7 +429,7 @@ void C_ZN12QQuickWidget9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:129
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:128
 // [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget9hideEventEP10QHideEvent(void *this_, QHideEvent * arg0) {
@@ -424,7 +437,7 @@ void C_ZN12QQuickWidget9hideEventEP10QHideEvent(void *this_, QHideEvent * arg0) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:131
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:130
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
@@ -432,7 +445,7 @@ void C_ZN12QQuickWidget12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:132
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:131
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
@@ -440,7 +453,7 @@ void C_ZN12QQuickWidget13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:135
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:134
 // [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * arg0) {
@@ -448,7 +461,7 @@ void C_ZN12QQuickWidget10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * ar
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:139
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:138
 // [-2] void dragEnterEvent(QDragEnterEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * arg0) {
@@ -456,7 +469,7 @@ void C_ZN12QQuickWidget14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnt
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:140
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:139
 // [-2] void dragMoveEvent(QDragMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * arg0) {
@@ -464,7 +477,7 @@ void C_ZN12QQuickWidget13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveE
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:141
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:140
 // [-2] void dragLeaveEvent(QDragLeaveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * arg0) {
@@ -472,7 +485,7 @@ void C_ZN12QQuickWidget14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLea
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:142
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:141
 // [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) {
@@ -480,7 +493,7 @@ void C_ZN12QQuickWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:145
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:144
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QQuickWidget5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -488,15 +501,23 @@ bool C_ZN12QQuickWidget5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:146
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:145
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
   ((QQuickWidget*)this_)->QQuickWidget::paintEvent(event);
 }
 
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:146
+// [1] bool focusNextPrevChild(bool)
+extern "C" Q_DECL_EXPORT
+bool C_ZN12QQuickWidget18focusNextPrevChildEb(void *this_, bool next) {
+  return (bool)((QQuickWidget*)this_)->QQuickWidget::focusNextPrevChild(next);
+}
+
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:60
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget10metaObjectEv(void *this_) {
@@ -504,7 +525,7 @@ void* C_ZNK12QQuickWidget10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:60
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWidget11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -512,7 +533,7 @@ void* C_ZN12QQuickWidget11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:60
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN12QQuickWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -520,7 +541,7 @@ int C_ZN12QQuickWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaO
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:60
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWidget2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -529,7 +550,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:61
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:60
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -538,7 +559,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:67
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:66
 // [-2] void QQuickWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWidgetC2EP7QWidget(QWidget * parent) {
@@ -547,7 +568,7 @@ void* C_ZN12QQuickWidgetC2EP7QWidget(QWidget * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:68
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:67
 // [-2] void QQuickWidget(QQmlEngine *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWidgetC2EP10QQmlEngineP7QWidget(QQmlEngine * engine, QWidget * parent) {
@@ -556,7 +577,7 @@ void* C_ZN12QQuickWidgetC2EP10QQmlEngineP7QWidget(QQmlEngine * engine, QWidget *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:69
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:68
 // [-2] void QQuickWidget(const QUrl &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QQuickWidgetC2ERK4QUrlP7QWidget(QUrl* source, QWidget * parent) {
@@ -565,14 +586,14 @@ void* C_ZN12QQuickWidgetC2ERK4QUrlP7QWidget(QUrl* source, QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:70
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:69
 // [-2] void ~QQuickWidget()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidgetD2Ev(void *this_) {
   delete (QQuickWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:72
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:71
 // [8] QUrl source()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget6sourceEv(void *this_) {
@@ -581,7 +602,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:74
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:73
 // [8] QQmlEngine * engine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget6engineEv(void *this_) {
@@ -589,7 +610,7 @@ void* C_ZNK12QQuickWidget6engineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:75
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:74
 // [8] QQmlContext * rootContext()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget11rootContextEv(void *this_) {
@@ -597,7 +618,7 @@ void* C_ZNK12QQuickWidget11rootContextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:77
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:76
 // [8] QQuickItem * rootObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget10rootObjectEv(void *this_) {
@@ -605,7 +626,7 @@ void* C_ZNK12QQuickWidget10rootObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:81
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:80
 // [4] QQuickWidget::ResizeMode resizeMode()
 extern "C" Q_DECL_EXPORT
 QQuickWidget::ResizeMode C_ZNK12QQuickWidget10resizeModeEv(void *this_) {
@@ -613,7 +634,7 @@ QQuickWidget::ResizeMode C_ZNK12QQuickWidget10resizeModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:82
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:81
 // [-2] void setResizeMode(QQuickWidget::ResizeMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget13setResizeModeENS_10ResizeModeE(void *this_, QQuickWidget::ResizeMode arg0) {
@@ -621,7 +642,7 @@ void C_ZN12QQuickWidget13setResizeModeENS_10ResizeModeE(void *this_, QQuickWidge
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:86
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:85
 // [4] QQuickWidget::Status status()
 extern "C" Q_DECL_EXPORT
 QQuickWidget::Status C_ZNK12QQuickWidget6statusEv(void *this_) {
@@ -629,7 +650,7 @@ QQuickWidget::Status C_ZNK12QQuickWidget6statusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:88
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:87
 // [-2] QList<QQmlError> errors()
 extern "C" Q_DECL_EXPORT
 QList<QQmlError>* C_ZNK12QQuickWidget6errorsEv(void *this_) {
@@ -638,7 +659,7 @@ return new QList<QQmlError>(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:90
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:89
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget8sizeHintEv(void *this_) {
@@ -647,7 +668,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:91
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:90
 // [8] QSize initialSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget11initialSizeEv(void *this_) {
@@ -656,7 +677,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:93
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:92
 // [-2] void setFormat(const QSurfaceFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget9setFormatERK14QSurfaceFormat(void *this_, QSurfaceFormat* format) {
@@ -664,7 +685,7 @@ void C_ZN12QQuickWidget9setFormatERK14QSurfaceFormat(void *this_, QSurfaceFormat
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:94
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:93
 // [8] QSurfaceFormat format()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget6formatEv(void *this_) {
@@ -673,7 +694,7 @@ return new QSurfaceFormat(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:96
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:95
 // [32] QImage grabFramebuffer()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QQuickWidget15grabFramebufferEv(void *this_) {
@@ -682,7 +703,7 @@ return new QImage(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:98
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:97
 // [-2] void setClearColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget13setClearColorERK6QColor(void *this_, QColor* color) {
@@ -691,7 +712,7 @@ void C_ZN12QQuickWidget13setClearColorERK6QColor(void *this_, QColor* color) {
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:100
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:99
 // [8] QQuickWindow * quickWindow()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -701,7 +722,7 @@ void* C_ZNK12QQuickWidget11quickWindowEv(void *this_) {
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:103
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:102
 // [-2] void setSource(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget9setSourceERK4QUrl(void *this_, QUrl* arg0) {
@@ -709,7 +730,7 @@ void C_ZN12QQuickWidget9setSourceERK4QUrl(void *this_, QUrl* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:104
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:103
 // [-2] void setContent(const QUrl &, QQmlComponent *, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget10setContentERK4QUrlP13QQmlComponentP7QObject(void *this_, QUrl* url, QQmlComponent * component, QObject * item) {
@@ -717,7 +738,7 @@ void C_ZN12QQuickWidget10setContentERK4QUrlP13QQmlComponentP7QObject(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:107
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:106
 // [-2] void statusChanged(QQuickWidget::Status)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget13statusChangedENS_6StatusE(void *this_, QQuickWidget::Status arg0) {
@@ -725,7 +746,7 @@ void C_ZN12QQuickWidget13statusChangedENS_6StatusE(void *this_, QQuickWidget::St
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuickWidgets/qquickwidget.h:108
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:107
 // [-2] void sceneGraphError(QQuickWindow::SceneGraphError, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QQuickWidget15sceneGraphErrorEN12QQuickWindow15SceneGraphErrorERK7QString(void *this_, QQuickWindow::SceneGraphError error, QString* message) {

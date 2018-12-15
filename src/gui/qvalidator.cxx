@@ -123,10 +123,10 @@ void* C_QValidator_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:74
+// /usr/include/qt/QtGui/qvalidator.h:76
 // [4] QValidator::State validate(QString &, int &)
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:60
+// /usr/include/qt/QtGui/qvalidator.h:62
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QValidator10metaObjectEv(void *this_) {
@@ -134,7 +134,7 @@ void* C_ZNK10QValidator10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:60
+// /usr/include/qt/QtGui/qvalidator.h:62
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidator11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -142,7 +142,7 @@ void* C_ZN10QValidator11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:60
+// /usr/include/qt/QtGui/qvalidator.h:62
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN10QValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -150,7 +150,7 @@ int C_ZN10QValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObj
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:60
+// /usr/include/qt/QtGui/qvalidator.h:62
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidator2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -159,7 +159,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:60
+// /usr/include/qt/QtGui/qvalidator.h:62
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidator6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -168,7 +168,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:62
+// /usr/include/qt/QtGui/qvalidator.h:64
 // [-2] void QValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
@@ -176,14 +176,14 @@ void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:63
+// /usr/include/qt/QtGui/qvalidator.h:65
 // [-2] void ~QValidator()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QValidatorD2Ev(void *this_) {
   delete (QValidator*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:71
+// /usr/include/qt/QtGui/qvalidator.h:73
 // [-2] void setLocale(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QValidator9setLocaleERK7QLocale(void *this_, QLocale* locale) {
@@ -191,7 +191,7 @@ void C_ZN10QValidator9setLocaleERK7QLocale(void *this_, QLocale* locale) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:72
+// /usr/include/qt/QtGui/qvalidator.h:74
 // [8] QLocale locale()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QValidator6localeEv(void *this_) {
@@ -200,7 +200,7 @@ return new QLocale(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:74
+// /usr/include/qt/QtGui/qvalidator.h:76
 // [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
@@ -208,7 +208,7 @@ QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString* a
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:75
+// /usr/include/qt/QtGui/qvalidator.h:77
 // [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK10QValidator5fixupER7QString(void *this_, QString* arg0) {
@@ -216,7 +216,7 @@ void C_ZNK10QValidator5fixupER7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:78
+// /usr/include/qt/QtGui/qvalidator.h:80
 // [-2] void changed()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QValidator7changedEv(void *this_) {

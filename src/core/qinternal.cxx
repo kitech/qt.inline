@@ -51,7 +51,7 @@ public:
 };
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1829
+// /usr/include/qt/QtCore/qnamespace.h:1862
 // [1] bool registerCallback(QInternal::Callback, qInternalCallback)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE(QInternal::Callback arg0, qInternalCallback arg1) {
@@ -59,7 +59,7 @@ bool C_ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE(QInternal::Callback a
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1830
+// /usr/include/qt/QtCore/qnamespace.h:1863
 // [1] bool unregisterCallback(QInternal::Callback, qInternalCallback)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE(QInternal::Callback arg0, qInternalCallback arg1) {
@@ -67,7 +67,7 @@ bool C_ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE(QInternal::Callback
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1831
+// /usr/include/qt/QtCore/qnamespace.h:1864
 // [1] bool activateCallbacks(QInternal::Callback, void **)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QInternal17activateCallbacksENS_8CallbackEPPv(QInternal::Callback arg0, void ** arg1) {

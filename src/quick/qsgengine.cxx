@@ -153,7 +153,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:70
+// /usr/include/qt/QtQuick/qsgengine.h:71
 // [-2] void QSGEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QSGEngineC2EP7QObject(QObject * parent) {
@@ -161,14 +161,14 @@ void* C_ZN9QSGEngineC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:71
+// /usr/include/qt/QtQuick/qsgengine.h:72
 // [-2] void ~QSGEngine()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSGEngineD2Ev(void *this_) {
   delete (QSGEngine*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:73
+// /usr/include/qt/QtQuick/qsgengine.h:74
 // [-2] void initialize(QOpenGLContext *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSGEngine10initializeEP14QOpenGLContext(void *this_, QOpenGLContext * context) {
@@ -176,7 +176,7 @@ void C_ZN9QSGEngine10initializeEP14QOpenGLContext(void *this_, QOpenGLContext * 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:74
+// /usr/include/qt/QtQuick/qsgengine.h:75
 // [-2] void invalidate()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSGEngine10invalidateEv(void *this_) {
@@ -184,7 +184,7 @@ void C_ZN9QSGEngine10invalidateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:76
+// /usr/include/qt/QtQuick/qsgengine.h:77
 // [8] QSGAbstractRenderer * createRenderer()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine14createRendererEv(void *this_) {
@@ -192,7 +192,7 @@ void* C_ZNK9QSGEngine14createRendererEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:77
+// /usr/include/qt/QtQuick/qsgengine.h:78
 // [8] QSGTexture * createTextureFromImage(const QImage &, QSGEngine::CreateTextureOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine22createTextureFromImageERK6QImage6QFlagsINS_19CreateTextureOptionEE(void *this_, QImage* image, QFlags<QSGEngine::CreateTextureOption> options) {
@@ -200,7 +200,7 @@ void* C_ZNK9QSGEngine22createTextureFromImageERK6QImage6QFlagsINS_19CreateTextur
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgengine.h:78
+// /usr/include/qt/QtQuick/qsgengine.h:79
 // [8] QSGTexture * createTextureFromId(uint, const QSize &, QSGEngine::CreateTextureOptions)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSGEngine19createTextureFromIdEjRK5QSize6QFlagsINS_19CreateTextureOptionEE(void *this_, uint id, QSize* size, QFlags<QSGEngine::CreateTextureOption> options) {
@@ -209,7 +209,7 @@ void* C_ZNK9QSGEngine19createTextureFromIdEjRK5QSize6QFlagsINS_19CreateTextureOp
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtQuick/qsgengine.h:79
+// /usr/include/qt/QtQuick/qsgengine.h:80
 // [8] QSGRendererInterface * rendererInterface()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -220,7 +220,7 @@ void* C_ZNK9QSGEngine17rendererInterfaceEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtQuick/qsgengine.h:80
+// /usr/include/qt/QtQuick/qsgengine.h:81
 // [8] QSGRectangleNode * createRectangleNode()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -231,7 +231,7 @@ void* C_ZNK9QSGEngine19createRectangleNodeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtQuick/qsgengine.h:81
+// /usr/include/qt/QtQuick/qsgengine.h:82
 // [8] QSGImageNode * createImageNode()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -242,7 +242,7 @@ void* C_ZNK9QSGEngine15createImageNodeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtQuick/qsgengine.h:82
+// /usr/include/qt/QtQuick/qsgengine.h:83
 // [8] QSGNinePatchNode * createNinePatchNode()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT

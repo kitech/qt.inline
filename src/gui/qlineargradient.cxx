@@ -57,7 +57,7 @@ MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:257
+// /usr/include/qt/QtGui/qbrush.h:431
 // [-2] void QLinearGradient()
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QLinearGradientC2Ev() {
@@ -65,7 +65,7 @@ void* C_ZN15QLinearGradientC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:258
+// /usr/include/qt/QtGui/qbrush.h:432
 // [-2] void QLinearGradient(const QPointF &, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QLinearGradientC2ERK7QPointFS2_(QPointF* start, QPointF* finalStop) {
@@ -73,7 +73,7 @@ void* C_ZN15QLinearGradientC2ERK7QPointFS2_(QPointF* start, QPointF* finalStop) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:259
+// /usr/include/qt/QtGui/qbrush.h:433
 // [-2] void QLinearGradient(qreal, qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QLinearGradientC2Edddd(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) {
@@ -81,7 +81,7 @@ void* C_ZN15QLinearGradientC2Edddd(qreal xStart, qreal yStart, qreal xFinalStop,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:261
+// /usr/include/qt/QtGui/qbrush.h:435
 // [16] QPointF start()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QLinearGradient5startEv(void *this_) {
@@ -91,7 +91,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:262
+// /usr/include/qt/QtGui/qbrush.h:436
 // [-2] void setStart(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -102,7 +102,7 @@ void C_ZN15QLinearGradient8setStartERK7QPointF(void *this_, QPointF* start) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:263
+// /usr/include/qt/QtGui/qbrush.h:437
 // [-2] void setStart(qreal, qreal)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -112,7 +112,7 @@ void C_ZN15QLinearGradient8setStartEdd(void *this_, qreal x, qreal y) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:265
+// /usr/include/qt/QtGui/qbrush.h:439
 // [16] QPointF finalStop()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QLinearGradient9finalStopEv(void *this_) {
@@ -122,7 +122,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:266
+// /usr/include/qt/QtGui/qbrush.h:440
 // [-2] void setFinalStop(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -133,7 +133,7 @@ void C_ZN15QLinearGradient12setFinalStopERK7QPointF(void *this_, QPointF* stop) 
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:267
+// /usr/include/qt/QtGui/qbrush.h:441
 // [-2] void setFinalStop(qreal, qreal)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT

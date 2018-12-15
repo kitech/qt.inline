@@ -353,12 +353,15 @@ void C_ZN13QOpenGLWidgetD2Ev(void *this_) {
   delete (QOpenGLWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtWidgets/qopenglwidget.h:69
 // [-2] void setUpdateBehavior(QOpenGLWidget::UpdateBehavior)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget17setUpdateBehaviorENS_14UpdateBehaviorE(void *this_, QOpenGLWidget::UpdateBehavior updateBehavior) {
   ((QOpenGLWidget*)this_)->setUpdateBehavior(updateBehavior);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // since 5.5

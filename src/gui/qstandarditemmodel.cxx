@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
@@ -252,8 +253,19 @@ bool C_ZN18QStandardItemModel7setDataERK11QModelIndexRK8QVarianti(void *this_, Q
   return (bool)((QStandardItemModel*)this_)->setData(*index, *value, role);
 }
 
-// Public virtual Visibility=Default Availability=Available
+// Public Visibility=Default Availability=Available
+// since 5.12
 // /usr/include/qt/QtGui/qstandarditemmodel.h:348
+// [1] bool clearItemData(const QModelIndex &)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+bool C_ZN18QStandardItemModel13clearItemDataERK11QModelIndex(void *this_, QModelIndex* index) {
+  return (bool)((QStandardItemModel*)this_)->clearItemData(*index);
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:350
 // [16] QVariant headerData(int, Qt::Orientation, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel10headerDataEiN2Qt11OrientationEi(void *this_, int section, Qt::Orientation orientation, int role) {
@@ -262,7 +274,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:350
+// /usr/include/qt/QtGui/qstandarditemmodel.h:352
 // [1] bool setHeaderData(int, Qt::Orientation, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, QVariant* value, int role) {
@@ -270,7 +282,7 @@ bool C_ZN18QStandardItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(voi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:353
+// /usr/include/qt/QtGui/qstandarditemmodel.h:355
 // [1] bool insertRows(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
@@ -278,7 +290,7 @@ bool C_ZN18QStandardItemModel10insertRowsEiiRK11QModelIndex(void *this_, int row
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:354
+// /usr/include/qt/QtGui/qstandarditemmodel.h:356
 // [1] bool insertColumns(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
@@ -286,7 +298,7 @@ bool C_ZN18QStandardItemModel13insertColumnsEiiRK11QModelIndex(void *this_, int 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:355
+// /usr/include/qt/QtGui/qstandarditemmodel.h:357
 // [1] bool removeRows(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
@@ -294,7 +306,7 @@ bool C_ZN18QStandardItemModel10removeRowsEiiRK11QModelIndex(void *this_, int row
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:356
+// /usr/include/qt/QtGui/qstandarditemmodel.h:358
 // [1] bool removeColumns(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
@@ -302,7 +314,7 @@ bool C_ZN18QStandardItemModel13removeColumnsEiiRK11QModelIndex(void *this_, int 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:358
+// /usr/include/qt/QtGui/qstandarditemmodel.h:360
 // [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK18QStandardItemModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -310,7 +322,7 @@ Qt::ItemFlags C_ZNK18QStandardItemModel5flagsERK11QModelIndex(void *this_, QMode
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:359
+// /usr/include/qt/QtGui/qstandarditemmodel.h:361
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK18QStandardItemModel20supportedDropActionsEv(void *this_) {
@@ -318,7 +330,7 @@ Qt::DropActions C_ZNK18QStandardItemModel20supportedDropActionsEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:361
+// /usr/include/qt/QtGui/qstandarditemmodel.h:363
 // [8] QMap<int, QVariant> itemData(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK18QStandardItemModel8itemDataERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -327,7 +339,7 @@ void C_ZNK18QStandardItemModel8itemDataERK11QModelIndex(void *this_, QModelIndex
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:362
+// /usr/include/qt/QtGui/qstandarditemmodel.h:364
 // [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, QMap<int, QVariant>* roles) {
@@ -335,7 +347,7 @@ bool C_ZN18QStandardItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(vo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:364
+// /usr/include/qt/QtGui/qstandarditemmodel.h:366
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel5clearEv(void *this_) {
@@ -343,7 +355,7 @@ void C_ZN18QStandardItemModel5clearEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:368
+// /usr/include/qt/QtGui/qstandarditemmodel.h:370
 // [-2] void sort(int, Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
@@ -352,7 +364,7 @@ void C_ZN18QStandardItemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt:
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:370
+// /usr/include/qt/QtGui/qstandarditemmodel.h:372
 // [8] QStandardItem * itemFromIndex(const QModelIndex &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -363,7 +375,7 @@ void* C_ZNK18QStandardItemModel13itemFromIndexERK11QModelIndex(void *this_, QMod
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:371
+// /usr/include/qt/QtGui/qstandarditemmodel.h:373
 // [24] QModelIndex indexFromItem(const QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -375,7 +387,7 @@ return new QModelIndex(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:373
+// /usr/include/qt/QtGui/qstandarditemmodel.h:375
 // [8] QStandardItem * item(int, int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -386,7 +398,7 @@ void* C_ZNK18QStandardItemModel4itemEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:374
+// /usr/include/qt/QtGui/qstandarditemmodel.h:376
 // [-2] void setItem(int, int, QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -396,7 +408,7 @@ void C_ZN18QStandardItemModel7setItemEiiP13QStandardItem(void *this_, int row, i
 #endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:375
+// /usr/include/qt/QtGui/qstandarditemmodel.h:377
 // [-2] void setItem(int, QStandardItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel7setItemEiP13QStandardItem(void *this_, int row, QStandardItem * item) {
@@ -405,7 +417,7 @@ void C_ZN18QStandardItemModel7setItemEiP13QStandardItem(void *this_, int row, QS
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:376
+// /usr/include/qt/QtGui/qstandarditemmodel.h:378
 // [8] QStandardItem * invisibleRootItem()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -416,7 +428,7 @@ void* C_ZNK18QStandardItemModel17invisibleRootItemEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:378
+// /usr/include/qt/QtGui/qstandarditemmodel.h:380
 // [8] QStandardItem * horizontalHeaderItem(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -427,7 +439,7 @@ void* C_ZNK18QStandardItemModel20horizontalHeaderItemEi(void *this_, int column)
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:379
+// /usr/include/qt/QtGui/qstandarditemmodel.h:381
 // [-2] void setHorizontalHeaderItem(int, QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -438,7 +450,7 @@ void C_ZN18QStandardItemModel23setHorizontalHeaderItemEiP13QStandardItem(void *t
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:380
+// /usr/include/qt/QtGui/qstandarditemmodel.h:382
 // [8] QStandardItem * verticalHeaderItem(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -449,7 +461,7 @@ void* C_ZNK18QStandardItemModel18verticalHeaderItemEi(void *this_, int row) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:381
+// /usr/include/qt/QtGui/qstandarditemmodel.h:383
 // [-2] void setVerticalHeaderItem(int, QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -460,7 +472,7 @@ void C_ZN18QStandardItemModel21setVerticalHeaderItemEiP13QStandardItem(void *thi
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:383
+// /usr/include/qt/QtGui/qstandarditemmodel.h:385
 // [-2] void setHorizontalHeaderLabels(const QStringList &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -471,7 +483,7 @@ void C_ZN18QStandardItemModel25setHorizontalHeaderLabelsERK11QStringList(void *t
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:384
+// /usr/include/qt/QtGui/qstandarditemmodel.h:386
 // [-2] void setVerticalHeaderLabels(const QStringList &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -482,7 +494,7 @@ void C_ZN18QStandardItemModel23setVerticalHeaderLabelsERK11QStringList(void *thi
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:386
+// /usr/include/qt/QtGui/qstandarditemmodel.h:388
 // [-2] void setRowCount(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -493,7 +505,7 @@ void C_ZN18QStandardItemModel11setRowCountEi(void *this_, int rows) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:387
+// /usr/include/qt/QtGui/qstandarditemmodel.h:389
 // [-2] void setColumnCount(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -504,7 +516,7 @@ void C_ZN18QStandardItemModel14setColumnCountEi(void *this_, int columns) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:389
+// /usr/include/qt/QtGui/qstandarditemmodel.h:391
 // [-2] void appendRow(const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -515,7 +527,7 @@ void C_ZN18QStandardItemModel9appendRowERK5QListIP13QStandardItemE(void *this_, 
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:390
+// /usr/include/qt/QtGui/qstandarditemmodel.h:392
 // [-2] void appendColumn(const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -526,7 +538,7 @@ void C_ZN18QStandardItemModel12appendColumnERK5QListIP13QStandardItemE(void *thi
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:391
+// /usr/include/qt/QtGui/qstandarditemmodel.h:393
 // [-2] void appendRow(QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -537,7 +549,7 @@ void C_ZN18QStandardItemModel9appendRowEP13QStandardItem(void *this_, QStandardI
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:393
+// /usr/include/qt/QtGui/qstandarditemmodel.h:395
 // [-2] void insertRow(int, const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -548,7 +560,7 @@ void C_ZN18QStandardItemModel9insertRowEiRK5QListIP13QStandardItemE(void *this_,
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:394
+// /usr/include/qt/QtGui/qstandarditemmodel.h:396
 // [-2] void insertColumn(int, const QList<QStandardItem *> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -559,7 +571,7 @@ void C_ZN18QStandardItemModel12insertColumnEiRK5QListIP13QStandardItemE(void *th
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:395
+// /usr/include/qt/QtGui/qstandarditemmodel.h:397
 // [-2] void insertRow(int, QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -569,7 +581,7 @@ void C_ZN18QStandardItemModel9insertRowEiP13QStandardItem(void *this_, int row, 
 #endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:397
+// /usr/include/qt/QtGui/qstandarditemmodel.h:399
 // [1] bool insertRow(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel9insertRowEiRK11QModelIndex(void *this_, int row, QModelIndex* parent) {
@@ -577,7 +589,7 @@ bool C_ZN18QStandardItemModel9insertRowEiRK11QModelIndex(void *this_, int row, Q
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:398
+// /usr/include/qt/QtGui/qstandarditemmodel.h:400
 // [1] bool insertColumn(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel12insertColumnEiRK11QModelIndex(void *this_, int column, QModelIndex* parent) {
@@ -586,7 +598,7 @@ bool C_ZN18QStandardItemModel12insertColumnEiRK11QModelIndex(void *this_, int co
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:400
+// /usr/include/qt/QtGui/qstandarditemmodel.h:402
 // [8] QStandardItem * takeItem(int, int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -597,7 +609,7 @@ void* C_ZN18QStandardItemModel8takeItemEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:401
+// /usr/include/qt/QtGui/qstandarditemmodel.h:403
 // [8] QList<QStandardItem *> takeRow(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -609,7 +621,7 @@ return new QList<QStandardItem *>(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:402
+// /usr/include/qt/QtGui/qstandarditemmodel.h:404
 // [8] QList<QStandardItem *> takeColumn(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -621,7 +633,7 @@ return new QList<QStandardItem *>(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:404
+// /usr/include/qt/QtGui/qstandarditemmodel.h:406
 // [8] QStandardItem * takeHorizontalHeaderItem(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -632,7 +644,7 @@ void* C_ZN18QStandardItemModel24takeHorizontalHeaderItemEi(void *this_, int colu
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:405
+// /usr/include/qt/QtGui/qstandarditemmodel.h:407
 // [8] QStandardItem * takeVerticalHeaderItem(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -643,7 +655,7 @@ void* C_ZN18QStandardItemModel22takeVerticalHeaderItemEi(void *this_, int row) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:407
+// /usr/include/qt/QtGui/qstandarditemmodel.h:409
 // [8] const QStandardItem * itemPrototype()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -654,7 +666,7 @@ void* C_ZNK18QStandardItemModel13itemPrototypeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:408
+// /usr/include/qt/QtGui/qstandarditemmodel.h:410
 // [-2] void setItemPrototype(const QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -665,7 +677,7 @@ void C_ZN18QStandardItemModel16setItemPrototypeEPK13QStandardItem(void *this_, c
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:410
+// /usr/include/qt/QtGui/qstandarditemmodel.h:412
 // [8] QList<QStandardItem *> findItems(const QString &, Qt::MatchFlags, int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -676,7 +688,7 @@ return new QList<QStandardItem *>(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:414
+// /usr/include/qt/QtGui/qstandarditemmodel.h:416
 // [4] int sortRole()
 extern "C" Q_DECL_EXPORT
 int C_ZNK18QStandardItemModel8sortRoleEv(void *this_) {
@@ -684,7 +696,7 @@ int C_ZNK18QStandardItemModel8sortRoleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:415
+// /usr/include/qt/QtGui/qstandarditemmodel.h:417
 // [-2] void setSortRole(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QStandardItemModel11setSortRoleEi(void *this_, int role) {
@@ -692,7 +704,7 @@ void C_ZN18QStandardItemModel11setSortRoleEi(void *this_, int role) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:417
+// /usr/include/qt/QtGui/qstandarditemmodel.h:419
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel9mimeTypesEv(void *this_) {
@@ -701,7 +713,7 @@ return new QStringList(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:418
+// /usr/include/qt/QtGui/qstandarditemmodel.h:420
 // [8] QMimeData * mimeData(const QModelIndexList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QStandardItemModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
@@ -709,7 +721,7 @@ void* C_ZNK18QStandardItemModel8mimeDataERK5QListI11QModelIndexE(void *this_, co
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:419
+// /usr/include/qt/QtGui/qstandarditemmodel.h:421
 // [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QStandardItemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
@@ -718,7 +730,7 @@ bool C_ZN18QStandardItemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11Q
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qstandarditemmodel.h:422
+// /usr/include/qt/QtGui/qstandarditemmodel.h:425
 // [-2] void itemChanged(QStandardItem *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -743,4 +755,5 @@ void C_ZN18QStandardItemModel11itemChangedEP13QStandardItem(void *this_, QStanda
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

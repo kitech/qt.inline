@@ -198,13 +198,13 @@ void* C_QLayout_init_staticMetaObject(void* this_, void* strdat, void* dat, void
 // /usr/include/qt/QtWidgets/qlayout.h:123
 // [8] QLayoutItem * takeAt(int)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:125
+// /usr/include/qt/QtWidgets/qlayout.h:126
 // [4] int count()
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:65
 // [8] QSize sizeHint()
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:146
+// /usr/include/qt/QtWidgets/qlayout.h:147
 // [-2] void childEvent(QChildEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10childEventEP11QChildEvent(void *this_, QChildEvent * e) {
@@ -546,8 +546,19 @@ int C_ZNK7QLayout7indexOfEP7QWidget(void *this_, QWidget * arg0) {
   return (int)((QLayout*)this_)->indexOf(arg0);
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public Visibility=Default Availability=Available
+// since 5.12
 // /usr/include/qt/QtWidgets/qlayout.h:125
+// [4] int indexOf(QLayoutItem *)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+int C_ZNK7QLayout7indexOfEP11QLayoutItem(void *this_, QLayoutItem * arg0) {
+  return (int)((QLayout*)this_)->indexOf(arg0);
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:126
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QLayout5countEv(void *this_) {
@@ -555,7 +566,7 @@ int C_ZNK7QLayout5countEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:126
+// /usr/include/qt/QtWidgets/qlayout.h:127
 // [1] bool isEmpty()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QLayout7isEmptyEv(void *this_) {
@@ -563,7 +574,7 @@ bool C_ZNK7QLayout7isEmptyEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:127
+// /usr/include/qt/QtWidgets/qlayout.h:128
 // [4] QSizePolicy::ControlTypes controlTypes()
 extern "C" Q_DECL_EXPORT
 QSizePolicy::ControlTypes C_ZNK7QLayout12controlTypesEv(void *this_) {
@@ -582,7 +593,7 @@ void* C_ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE(vo
 #endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:132
+// /usr/include/qt/QtWidgets/qlayout.h:133
 // [4] int totalHeightForWidth(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QLayout19totalHeightForWidthEi(void *this_, int w) {
@@ -590,7 +601,7 @@ int C_ZNK7QLayout19totalHeightForWidthEi(void *this_, int w) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:133
+// /usr/include/qt/QtWidgets/qlayout.h:134
 // [8] QSize totalMinimumSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QLayout16totalMinimumSizeEv(void *this_) {
@@ -599,7 +610,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:134
+// /usr/include/qt/QtWidgets/qlayout.h:135
 // [8] QSize totalMaximumSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QLayout16totalMaximumSizeEv(void *this_) {
@@ -608,7 +619,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:135
+// /usr/include/qt/QtWidgets/qlayout.h:136
 // [8] QSize totalSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QLayout13totalSizeHintEv(void *this_) {
@@ -617,7 +628,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:136
+// /usr/include/qt/QtWidgets/qlayout.h:137
 // [8] QLayout * layout()
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayout6layoutEv(void *this_) {
@@ -625,7 +636,7 @@ void* C_ZN7QLayout6layoutEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:138
+// /usr/include/qt/QtWidgets/qlayout.h:139
 // [-2] void setEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QLayout10setEnabledEb(void *this_, bool arg0) {
@@ -633,7 +644,7 @@ void C_ZN7QLayout10setEnabledEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:139
+// /usr/include/qt/QtWidgets/qlayout.h:140
 // [1] bool isEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QLayout9isEnabledEv(void *this_) {
@@ -641,7 +652,7 @@ bool C_ZNK7QLayout9isEnabledEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:142
+// /usr/include/qt/QtWidgets/qlayout.h:143
 // [8] QSize closestAcceptableSize(const QWidget *, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize(const QWidget * w, QSize* s) {

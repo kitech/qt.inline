@@ -77,20 +77,20 @@ public:
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:74
+// /usr/include/qt/QtQml/qqmlengine.h:73
 // [4] QQmlImageProviderBase::ImageType imageType()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:75
+// /usr/include/qt/QtQml/qqmlengine.h:74
 // [4] QQmlImageProviderBase::Flags flags()
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:72
+// /usr/include/qt/QtQml/qqmlengine.h:71
 // [-2] void ~QQmlImageProviderBase()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QQmlImageProviderBaseD2Ev(void *this_) {
   delete (QQmlImageProviderBase*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:74
+// /usr/include/qt/QtQml/qqmlengine.h:73
 // [4] QQmlImageProviderBase::ImageType imageType()
 extern "C" Q_DECL_EXPORT
 QQmlImageProviderBase::ImageType C_ZNK21QQmlImageProviderBase9imageTypeEv(void *this_) {
@@ -98,7 +98,7 @@ QQmlImageProviderBase::ImageType C_ZNK21QQmlImageProviderBase9imageTypeEv(void *
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:75
+// /usr/include/qt/QtQml/qqmlengine.h:74
 // [4] QQmlImageProviderBase::Flags flags()
 extern "C" Q_DECL_EXPORT
 QQmlImageProviderBase::Flags* C_ZNK21QQmlImageProviderBase5flagsEv(void *this_) {

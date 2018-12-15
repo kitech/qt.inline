@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qabstractanimation.h
 #ifndef protected
 #define protected public
@@ -134,7 +135,7 @@ void* C_QAnimationDriver_init_staticMetaObject(void* this_, void* strdat, void* 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:162
+// /usr/include/qt/QtCore/qabstractanimation.h:161
 // [-2] void start()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver5startEv(void *this_) {
@@ -142,7 +143,7 @@ void C_ZN16QAnimationDriver5startEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:163
+// /usr/include/qt/QtCore/qabstractanimation.h:162
 // [-2] void stop()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver4stopEv(void *this_) {
@@ -150,7 +151,7 @@ void C_ZN16QAnimationDriver4stopEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:135
+// /usr/include/qt/QtCore/qabstractanimation.h:134
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QAnimationDriver10metaObjectEv(void *this_) {
@@ -158,7 +159,7 @@ void* C_ZNK16QAnimationDriver10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:135
+// /usr/include/qt/QtCore/qabstractanimation.h:134
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAnimationDriver11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -166,7 +167,7 @@ void* C_ZN16QAnimationDriver11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:135
+// /usr/include/qt/QtCore/qabstractanimation.h:134
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN16QAnimationDriver11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -174,7 +175,7 @@ int C_ZN16QAnimationDriver11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QM
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:135
+// /usr/include/qt/QtCore/qabstractanimation.h:134
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAnimationDriver2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -183,7 +184,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:135
+// /usr/include/qt/QtCore/qabstractanimation.h:134
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAnimationDriver6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -192,7 +193,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:139
+// /usr/include/qt/QtCore/qabstractanimation.h:138
 // [-2] void QAnimationDriver(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QAnimationDriverC2EP7QObject(QObject * parent) {
@@ -201,14 +202,14 @@ void* C_ZN16QAnimationDriverC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:140
+// /usr/include/qt/QtCore/qabstractanimation.h:139
 // [-2] void ~QAnimationDriver()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriverD2Ev(void *this_) {
   delete (QAnimationDriver*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:142
+// /usr/include/qt/QtCore/qabstractanimation.h:141
 // [-2] void advance()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver7advanceEv(void *this_) {
@@ -216,7 +217,7 @@ void C_ZN16QAnimationDriver7advanceEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:144
+// /usr/include/qt/QtCore/qabstractanimation.h:143
 // [-2] void install()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver7installEv(void *this_) {
@@ -224,7 +225,7 @@ void C_ZN16QAnimationDriver7installEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:145
+// /usr/include/qt/QtCore/qabstractanimation.h:144
 // [-2] void uninstall()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver9uninstallEv(void *this_) {
@@ -232,7 +233,7 @@ void C_ZN16QAnimationDriver9uninstallEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:147
+// /usr/include/qt/QtCore/qabstractanimation.h:146
 // [1] bool isRunning()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QAnimationDriver9isRunningEv(void *this_) {
@@ -240,7 +241,7 @@ bool C_ZNK16QAnimationDriver9isRunningEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:149
+// /usr/include/qt/QtCore/qabstractanimation.h:148
 // [8] qint64 elapsed()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK16QAnimationDriver7elapsedEv(void *this_) {
@@ -248,7 +249,7 @@ qint64 C_ZNK16QAnimationDriver7elapsedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:152
+// /usr/include/qt/QtCore/qabstractanimation.h:151
 // [-2] void setStartTime(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver12setStartTimeEx(void *this_, qint64 startTime) {
@@ -256,7 +257,7 @@ void C_ZN16QAnimationDriver12setStartTimeEx(void *this_, qint64 startTime) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:153
+// /usr/include/qt/QtCore/qabstractanimation.h:152
 // [8] qint64 startTime()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK16QAnimationDriver9startTimeEv(void *this_) {
@@ -264,7 +265,7 @@ qint64 C_ZNK16QAnimationDriver9startTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:156
+// /usr/include/qt/QtCore/qabstractanimation.h:155
 // [-2] void started()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver7startedEv(void *this_) {
@@ -272,7 +273,7 @@ void C_ZN16QAnimationDriver7startedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:157
+// /usr/include/qt/QtCore/qabstractanimation.h:156
 // [-2] void stopped()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QAnimationDriver7stoppedEv(void *this_) {
@@ -295,4 +296,5 @@ void C_ZN16QAnimationDriver7stoppedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

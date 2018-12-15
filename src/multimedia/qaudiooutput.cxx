@@ -350,8 +350,8 @@ void C_ZN12QAudioOutput11setCategoryERK7QString(void *this_, QString* category) 
 // /usr/include/qt/QtMultimedia/qaudiooutput.h:101
 // [-2] void stateChanged(QAudio::State)
 extern "C" Q_DECL_EXPORT
-void C_ZN12QAudioOutput12stateChangedEN6QAudio5StateE(void *this_, QAudio::State arg0) {
-  ((QAudioOutput*)this_)->stateChanged(arg0);
+void C_ZN12QAudioOutput12stateChangedEN6QAudio5StateE(void *this_, QAudio::State state) {
+  ((QAudioOutput*)this_)->stateChanged(state);
 }
 
 // Public Visibility=Default Availability=Available

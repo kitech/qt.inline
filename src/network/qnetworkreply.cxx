@@ -186,7 +186,7 @@ void* C_QNetworkReply_init_staticMetaObject(void* this_, void* strdat, void* dat
 // /usr/include/qt/QtNetwork/qnetworkreply.h:153
 // [-2] void abort()
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:166
+// /usr/include/qt/QtCore/qiodevice.h:168
 // [8] qint64 readData(char *, qint64)
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkreply.h:174

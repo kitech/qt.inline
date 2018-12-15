@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x050000
 // /usr/include/qt/QtCore/qmimetype.h
 #ifndef protected
@@ -269,4 +270,5 @@ return new QString(rv);
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

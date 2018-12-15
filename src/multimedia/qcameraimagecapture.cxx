@@ -359,24 +359,24 @@ void C_ZN19QCameraImageCapture5errorEiNS_5ErrorERK7QString(void *this_, int id, 
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:127
 // [-2] void readyForCaptureChanged(bool)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraImageCapture22readyForCaptureChangedEb(void *this_, bool arg0) {
-  ((QCameraImageCapture*)this_)->readyForCaptureChanged(arg0);
+void C_ZN19QCameraImageCapture22readyForCaptureChangedEb(void *this_, bool ready) {
+  ((QCameraImageCapture*)this_)->readyForCaptureChanged(ready);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:128
 // [-2] void bufferFormatChanged(QVideoFrame::PixelFormat)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraImageCapture19bufferFormatChangedEN11QVideoFrame11PixelFormatE(void *this_, QVideoFrame::PixelFormat arg0) {
-  ((QCameraImageCapture*)this_)->bufferFormatChanged(arg0);
+void C_ZN19QCameraImageCapture19bufferFormatChangedEN11QVideoFrame11PixelFormatE(void *this_, QVideoFrame::PixelFormat format) {
+  ((QCameraImageCapture*)this_)->bufferFormatChanged(format);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:129
 // [-2] void captureDestinationChanged(QCameraImageCapture::CaptureDestinations)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraImageCapture25captureDestinationChangedE6QFlagsINS_18CaptureDestinationEE(void *this_, QFlags<QCameraImageCapture::CaptureDestination> arg0) {
-  ((QCameraImageCapture*)this_)->captureDestinationChanged(arg0);
+void C_ZN19QCameraImageCapture25captureDestinationChangedE6QFlagsINS_18CaptureDestinationEE(void *this_, QFlags<QCameraImageCapture::CaptureDestination> destination) {
+  ((QCameraImageCapture*)this_)->captureDestinationChanged(destination);
 }
 
 // Public Visibility=Default Availability=Available
@@ -407,8 +407,8 @@ void C_ZN19QCameraImageCapture22imageMetadataAvailableEiRK7QStringRK8QVariant(vo
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:134
 // [-2] void imageAvailable(int, const QVideoFrame &)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraImageCapture14imageAvailableEiRK11QVideoFrame(void *this_, int id, QVideoFrame* image) {
-  ((QCameraImageCapture*)this_)->imageAvailable(id, *image);
+void C_ZN19QCameraImageCapture14imageAvailableEiRK11QVideoFrame(void *this_, int id, QVideoFrame* frame) {
+  ((QCameraImageCapture*)this_)->imageAvailable(id, *frame);
 }
 
 // Public Visibility=Default Availability=Available

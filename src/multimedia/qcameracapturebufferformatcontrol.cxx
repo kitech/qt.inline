@@ -233,8 +233,8 @@ void C_ZN33QCameraCaptureBufferFormatControl15setBufferFormatEN11QVideoFrame11Pi
 // /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:62
 // [-2] void bufferFormatChanged(QVideoFrame::PixelFormat)
 extern "C" Q_DECL_EXPORT
-void C_ZN33QCameraCaptureBufferFormatControl19bufferFormatChangedEN11QVideoFrame11PixelFormatE(void *this_, QVideoFrame::PixelFormat arg0) {
-  ((QCameraCaptureBufferFormatControl*)this_)->bufferFormatChanged(arg0);
+void C_ZN33QCameraCaptureBufferFormatControl19bufferFormatChangedEN11QVideoFrame11PixelFormatE(void *this_, QVideoFrame::PixelFormat format) {
+  ((QCameraCaptureBufferFormatControl*)this_)->bufferFormatChanged(format);
 }
 
 //  main block end

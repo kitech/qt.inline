@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x050500
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h
 #ifndef protected
@@ -56,7 +57,7 @@ MyQSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator & authentica
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:55
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:57
 // [-2] void QSslPreSharedKeyAuthenticator()
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QSslPreSharedKeyAuthenticatorC2Ev() {
@@ -64,14 +65,14 @@ void* C_ZN29QSslPreSharedKeyAuthenticatorC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:56
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:58
 // [-2] void ~QSslPreSharedKeyAuthenticator()
 extern "C" Q_DECL_EXPORT
 void C_ZN29QSslPreSharedKeyAuthenticatorD2Ev(void *this_) {
   delete (QSslPreSharedKeyAuthenticator*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:57
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:59
 // [-2] void QSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QSslPreSharedKeyAuthenticatorC2ERKS_(QSslPreSharedKeyAuthenticator* authenticator) {
@@ -79,7 +80,7 @@ void* C_ZN29QSslPreSharedKeyAuthenticatorC2ERKS_(QSslPreSharedKeyAuthenticator* 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:58
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:60
 // [8] QSslPreSharedKeyAuthenticator & operator=(const QSslPreSharedKeyAuthenticator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QSslPreSharedKeyAuthenticatoraSERKS_(void *this_, QSslPreSharedKeyAuthenticator* authenticator) {
@@ -88,7 +89,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:61
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:63
 // [8] QSslPreSharedKeyAuthenticator & operator=(QSslPreSharedKeyAuthenticator &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QSslPreSharedKeyAuthenticatoraSEOS_(void *this_, QSslPreSharedKeyAuthenticator && other) {
@@ -97,7 +98,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:64
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:66
 // [-2] void swap(QSslPreSharedKeyAuthenticator &)
 extern "C" Q_DECL_EXPORT
 void C_ZN29QSslPreSharedKeyAuthenticator4swapERS_(void *this_, QSslPreSharedKeyAuthenticator* other) {
@@ -105,7 +106,7 @@ void C_ZN29QSslPreSharedKeyAuthenticator4swapERS_(void *this_, QSslPreSharedKeyA
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:66
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:68
 // [8] QByteArray identityHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK29QSslPreSharedKeyAuthenticator12identityHintEv(void *this_) {
@@ -114,7 +115,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:68
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:70
 // [-2] void setIdentity(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN29QSslPreSharedKeyAuthenticator11setIdentityERK10QByteArray(void *this_, QByteArray* identity) {
@@ -122,7 +123,7 @@ void C_ZN29QSslPreSharedKeyAuthenticator11setIdentityERK10QByteArray(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:69
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:71
 // [8] QByteArray identity()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK29QSslPreSharedKeyAuthenticator8identityEv(void *this_) {
@@ -131,7 +132,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:70
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:72
 // [4] int maximumIdentityLength()
 extern "C" Q_DECL_EXPORT
 int C_ZNK29QSslPreSharedKeyAuthenticator21maximumIdentityLengthEv(void *this_) {
@@ -139,7 +140,7 @@ int C_ZNK29QSslPreSharedKeyAuthenticator21maximumIdentityLengthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:72
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:74
 // [-2] void setPreSharedKey(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN29QSslPreSharedKeyAuthenticator15setPreSharedKeyERK10QByteArray(void *this_, QByteArray* preSharedKey) {
@@ -147,7 +148,7 @@ void C_ZN29QSslPreSharedKeyAuthenticator15setPreSharedKeyERK10QByteArray(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:73
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:75
 // [8] QByteArray preSharedKey()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK29QSslPreSharedKeyAuthenticator12preSharedKeyEv(void *this_) {
@@ -156,7 +157,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:74
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:76
 // [4] int maximumPreSharedKeyLength()
 extern "C" Q_DECL_EXPORT
 int C_ZNK29QSslPreSharedKeyAuthenticator25maximumPreSharedKeyLengthEv(void *this_) {
@@ -179,4 +180,5 @@ int C_ZNK29QSslPreSharedKeyAuthenticator25maximumPreSharedKeyLengthEv(void *this
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

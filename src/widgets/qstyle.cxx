@@ -306,19 +306,19 @@ void* C_QStyle_init_staticMetaObject(void* this_, void* strdat, void* dat, void*
 // /usr/include/qt/QtWidgets/qstyle.h:614
 // [8] QSize sizeFromContents(QStyle::ContentsType, const QStyleOption *, const QSize &, const QWidget *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:748
+// /usr/include/qt/QtWidgets/qstyle.h:751
 // [4] int styleHint(QStyle::StyleHint, const QStyleOption *, const QWidget *, QStyleHintReturn *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:828
+// /usr/include/qt/QtWidgets/qstyle.h:831
 // [32] QPixmap standardPixmap(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:831
+// /usr/include/qt/QtWidgets/qstyle.h:834
 // [8] QIcon standardIcon(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:834
+// /usr/include/qt/QtWidgets/qstyle.h:837
 // [32] QPixmap generatedIconPixmap(QIcon::Mode, const QPixmap &, const QStyleOption *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:849
+// /usr/include/qt/QtWidgets/qstyle.h:852
 // [4] int layoutSpacing(QSizePolicy::ControlType, QSizePolicy::ControlType, Qt::Orientation, const QStyleOption *, const QWidget *)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:66
@@ -528,7 +528,7 @@ return new QSize(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:748
+// /usr/include/qt/QtWidgets/qstyle.h:751
 // [4] int styleHint(QStyle::StyleHint, const QStyleOption *, const QWidget *, QStyleHintReturn *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QStyle9styleHintENS_9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn(void *this_, QStyle::StyleHint stylehint, const QStyleOption * opt, const QWidget * widget, QStyleHintReturn * returnData) {
@@ -536,7 +536,7 @@ int C_ZNK6QStyle9styleHintENS_9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHint
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:828
+// /usr/include/qt/QtWidgets/qstyle.h:831
 // [32] QPixmap standardPixmap(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle14standardPixmapENS_14StandardPixmapEPK12QStyleOptionPK7QWidget(void *this_, QStyle::StandardPixmap standardPixmap, const QStyleOption * opt, const QWidget * widget) {
@@ -545,7 +545,7 @@ return new QPixmap(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:831
+// /usr/include/qt/QtWidgets/qstyle.h:834
 // [8] QIcon standardIcon(QStyle::StandardPixmap, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle12standardIconENS_14StandardPixmapEPK12QStyleOptionPK7QWidget(void *this_, QStyle::StandardPixmap standardIcon, const QStyleOption * option, const QWidget * widget) {
@@ -554,7 +554,7 @@ return new QIcon(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:834
+// /usr/include/qt/QtWidgets/qstyle.h:837
 // [32] QPixmap generatedIconPixmap(QIcon::Mode, const QPixmap &, const QStyleOption *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, QPixmap* pixmap, const QStyleOption * opt) {
@@ -563,7 +563,7 @@ return new QPixmap(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:837
+// /usr/include/qt/QtWidgets/qstyle.h:840
 // [16] QRect visualRect(Qt::LayoutDirection, const QRect &, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyle10visualRectEN2Qt15LayoutDirectionERK5QRectS4_(Qt::LayoutDirection direction, QRect* boundingRect, QRect* logicalRect) {
@@ -572,7 +572,7 @@ return new QRect(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:839
+// /usr/include/qt/QtWidgets/qstyle.h:842
 // [8] QPoint visualPos(Qt::LayoutDirection, const QRect &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyle9visualPosEN2Qt15LayoutDirectionERK5QRectRK6QPoint(Qt::LayoutDirection direction, QRect* boundingRect, QPoint* logicalPos) {
@@ -581,7 +581,7 @@ return new QPoint(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:841
+// /usr/include/qt/QtWidgets/qstyle.h:844
 // [4] int sliderPositionFromValue(int, int, int, int, bool)
 extern "C" Q_DECL_EXPORT
 int C_ZN6QStyle23sliderPositionFromValueEiiiib(int min, int max, int val, int space, bool upsideDown) {
@@ -589,7 +589,7 @@ int C_ZN6QStyle23sliderPositionFromValueEiiiib(int min, int max, int val, int sp
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:843
+// /usr/include/qt/QtWidgets/qstyle.h:846
 // [4] int sliderValueFromPosition(int, int, int, int, bool)
 extern "C" Q_DECL_EXPORT
 int C_ZN6QStyle23sliderValueFromPositionEiiiib(int min, int max, int pos, int space, bool upsideDown) {
@@ -597,7 +597,7 @@ int C_ZN6QStyle23sliderValueFromPositionEiiiib(int min, int max, int pos, int sp
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:845
+// /usr/include/qt/QtWidgets/qstyle.h:848
 // [4] Qt::Alignment visualAlignment(Qt::LayoutDirection, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 Qt::Alignment C_ZN6QStyle15visualAlignmentEN2Qt15LayoutDirectionE6QFlagsINS0_13AlignmentFlagEE(Qt::LayoutDirection direction, QFlags<Qt::AlignmentFlag> alignment) {
@@ -605,7 +605,7 @@ Qt::Alignment C_ZN6QStyle15visualAlignmentEN2Qt15LayoutDirectionE6QFlagsINS0_13A
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:846
+// /usr/include/qt/QtWidgets/qstyle.h:849
 // [16] QRect alignedRect(Qt::LayoutDirection, Qt::Alignment, const QSize &, const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QStyle11alignedRectEN2Qt15LayoutDirectionE6QFlagsINS0_13AlignmentFlagEERK5QSizeRK5QRect(Qt::LayoutDirection direction, QFlags<Qt::AlignmentFlag> alignment, QSize* size, QRect* rectangle) {
@@ -614,7 +614,7 @@ return new QRect(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyle.h:849
+// /usr/include/qt/QtWidgets/qstyle.h:852
 // [4] int layoutSpacing(QSizePolicy::ControlType, QSizePolicy::ControlType, Qt::Orientation, const QStyleOption *, const QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget(void *this_, QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget) {
@@ -623,7 +623,7 @@ int C_ZNK6QStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11Orientation
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qstyle.h:852
+// /usr/include/qt/QtWidgets/qstyle.h:855
 // [4] int combinedLayoutSpacing(QSizePolicy::ControlTypes, QSizePolicy::ControlTypes, Qt::Orientation, QStyleOption *, QWidget *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -634,7 +634,7 @@ int C_ZNK6QStyle21combinedLayoutSpacingE6QFlagsIN11QSizePolicy11ControlTypeEES3_
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtWidgets/qstyle.h:856
+// /usr/include/qt/QtWidgets/qstyle.h:859
 // [8] const QStyle * proxy()
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT

@@ -187,6 +187,7 @@ void* C_QCameraExposureControl_init_staticMetaObject(void* this_, void* strdat, 
 // /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:81
 // [16] QVariant actualValue(QCameraExposureControl::ExposureParameter)
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:82
 // [1] bool setValue(QCameraExposureControl::ExposureParameter, const QVariant &)
 // Public virtual Visibility=Default Availability=Available
@@ -274,12 +275,15 @@ return new QVariant(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:82
 // [1] bool setValue(QCameraExposureControl::ExposureParameter, const QVariant &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN22QCameraExposureControl8setValueENS_17ExposureParameterERK8QVariant(void *this_, QCameraExposureControl::ExposureParameter parameter, QVariant* value) {
   return (bool)((QCameraExposureControl*)this_)->setValue(parameter, *value);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // since 5.0

@@ -128,10 +128,6 @@ MyQVariant(const QUrl & url) : QVariant(url) {}
 MyQVariant(const QEasingCurve & easing) : QVariant(easing) {}
 // void QVariant(const QUuid &)
 MyQVariant(const QUuid & uuid) : QVariant(uuid) {}
-// void QVariant(const QModelIndex &)
-MyQVariant(const QModelIndex & modelIndex) : QVariant(modelIndex) {}
-// void QVariant(const QPersistentModelIndex &)
-MyQVariant(const QPersistentModelIndex & modelIndex) : QVariant(modelIndex) {}
 // void QVariant(const QJsonValue &)
 MyQVariant(const QJsonValue & jsonValue) : QVariant(jsonValue) {}
 // void QVariant(const QJsonObject &)
@@ -140,12 +136,16 @@ MyQVariant(const QJsonObject & jsonObject) : QVariant(jsonObject) {}
 MyQVariant(const QJsonArray & jsonArray) : QVariant(jsonArray) {}
 // void QVariant(const QJsonDocument &)
 MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
+// void QVariant(const QModelIndex &)
+MyQVariant(const QModelIndex & modelIndex) : QVariant(modelIndex) {}
+// void QVariant(const QPersistentModelIndex &)
+MyQVariant(const QPersistentModelIndex & modelIndex) : QVariant(modelIndex) {}
 // void QVariant(QVariant &&)
 MyQVariant(QVariant && other) : QVariant(other) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:199
+// /usr/include/qt/QtCore/qvariant.h:205
 // [-2] void QVariant()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Ev() {
@@ -153,14 +153,14 @@ void* C_ZN8QVariantC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:200
+// /usr/include/qt/QtCore/qvariant.h:206
 // [-2] void ~QVariant()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QVariantD2Ev(void *this_) {
   delete (QVariant*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:201
+// /usr/include/qt/QtCore/qvariant.h:207
 // [-2] void QVariant(QVariant::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ENS_4TypeE(QVariant::Type type_) {
@@ -168,7 +168,7 @@ void* C_ZN8QVariantC2ENS_4TypeE(QVariant::Type type_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:202
+// /usr/include/qt/QtCore/qvariant.h:208
 // [-2] void QVariant(int, const void *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2EiPKv(int typeId, const void * copy) {
@@ -176,7 +176,7 @@ void* C_ZN8QVariantC2EiPKv(int typeId, const void * copy) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:203
+// /usr/include/qt/QtCore/qvariant.h:209
 // [-2] void QVariant(int, const void *, uint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2EiPKvj(int typeId, const void * copy, uint flags) {
@@ -184,7 +184,7 @@ void* C_ZN8QVariantC2EiPKvj(int typeId, const void * copy, uint flags) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:204
+// /usr/include/qt/QtCore/qvariant.h:210
 // [-2] void QVariant(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERKS_(QVariant* other) {
@@ -192,7 +192,7 @@ void* C_ZN8QVariantC2ERKS_(QVariant* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:207
+// /usr/include/qt/QtCore/qvariant.h:213
 // [-2] void QVariant(QDataStream &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ER11QDataStream(QDataStream* s) {
@@ -200,7 +200,7 @@ void* C_ZN8QVariantC2ER11QDataStream(QDataStream* s) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:210
+// /usr/include/qt/QtCore/qvariant.h:216
 // [-2] void QVariant(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Ei(int i) {
@@ -208,7 +208,7 @@ void* C_ZN8QVariantC2Ei(int i) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:211
+// /usr/include/qt/QtCore/qvariant.h:217
 // [-2] void QVariant(uint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Ej(uint ui) {
@@ -216,7 +216,7 @@ void* C_ZN8QVariantC2Ej(uint ui) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:212
+// /usr/include/qt/QtCore/qvariant.h:218
 // [-2] void QVariant(qlonglong)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Ex(qlonglong ll) {
@@ -224,7 +224,7 @@ void* C_ZN8QVariantC2Ex(qlonglong ll) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:213
+// /usr/include/qt/QtCore/qvariant.h:219
 // [-2] void QVariant(qulonglong)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Ey(qulonglong ull) {
@@ -232,7 +232,7 @@ void* C_ZN8QVariantC2Ey(qulonglong ull) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:214
+// /usr/include/qt/QtCore/qvariant.h:220
 // [-2] void QVariant(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Eb(bool b) {
@@ -240,7 +240,7 @@ void* C_ZN8QVariantC2Eb(bool b) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:215
+// /usr/include/qt/QtCore/qvariant.h:221
 // [-2] void QVariant(double)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2Ed(double d) {
@@ -249,7 +249,7 @@ void* C_ZN8QVariantC2Ed(double d) {
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtCore/qvariant.h:216
+// /usr/include/qt/QtCore/qvariant.h:222
 // [-2] void QVariant(float)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -259,7 +259,7 @@ void* C_ZN8QVariantC2Ef(float f) {
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:218
+// /usr/include/qt/QtCore/qvariant.h:224
 // [-2] void QVariant(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2EPKc(const char * str) {
@@ -267,7 +267,7 @@ void* C_ZN8QVariantC2EPKc(const char * str) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:221
+// /usr/include/qt/QtCore/qvariant.h:227
 // [-2] void QVariant(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK10QByteArray(QByteArray* bytearray) {
@@ -275,7 +275,7 @@ void* C_ZN8QVariantC2ERK10QByteArray(QByteArray* bytearray) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:222
+// /usr/include/qt/QtCore/qvariant.h:228
 // [-2] void QVariant(const QBitArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK9QBitArray(QBitArray* bitarray) {
@@ -283,7 +283,7 @@ void* C_ZN8QVariantC2ERK9QBitArray(QBitArray* bitarray) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:223
+// /usr/include/qt/QtCore/qvariant.h:229
 // [-2] void QVariant(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK7QString(QString* string) {
@@ -291,7 +291,7 @@ void* C_ZN8QVariantC2ERK7QString(QString* string) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:224
+// /usr/include/qt/QtCore/qvariant.h:230
 // [-2] void QVariant(QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2E13QLatin1String(QLatin1String* string) {
@@ -299,7 +299,7 @@ void* C_ZN8QVariantC2E13QLatin1String(QLatin1String* string) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:225
+// /usr/include/qt/QtCore/qvariant.h:231
 // [-2] void QVariant(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK11QStringList(QStringList* stringlist) {
@@ -307,7 +307,7 @@ void* C_ZN8QVariantC2ERK11QStringList(QStringList* stringlist) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:226
+// /usr/include/qt/QtCore/qvariant.h:232
 // [-2] void QVariant(QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2E5QChar(QChar* qchar) {
@@ -315,7 +315,7 @@ void* C_ZN8QVariantC2E5QChar(QChar* qchar) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:227
+// /usr/include/qt/QtCore/qvariant.h:233
 // [-2] void QVariant(const QDate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QDate(QDate* date) {
@@ -323,7 +323,7 @@ void* C_ZN8QVariantC2ERK5QDate(QDate* date) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:228
+// /usr/include/qt/QtCore/qvariant.h:234
 // [-2] void QVariant(const QTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QTime(QTime* time) {
@@ -331,7 +331,7 @@ void* C_ZN8QVariantC2ERK5QTime(QTime* time) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:229
+// /usr/include/qt/QtCore/qvariant.h:235
 // [-2] void QVariant(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK9QDateTime(QDateTime* datetime) {
@@ -339,7 +339,7 @@ void* C_ZN8QVariantC2ERK9QDateTime(QDateTime* datetime) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:230
+// /usr/include/qt/QtCore/qvariant.h:236
 // [-2] void QVariant(const QList<QVariant> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QListIS_E(QList<QVariant>* list) {
@@ -347,7 +347,7 @@ void* C_ZN8QVariantC2ERK5QListIS_E(QList<QVariant>* list) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:231
+// /usr/include/qt/QtCore/qvariant.h:237
 // [-2] void QVariant(const QMap<QString, QVariant> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK4QMapI7QStringS_E(QMap<QString, QVariant>* map_) {
@@ -355,7 +355,7 @@ void* C_ZN8QVariantC2ERK4QMapI7QStringS_E(QMap<QString, QVariant>* map_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:232
+// /usr/include/qt/QtCore/qvariant.h:238
 // [-2] void QVariant(const QHash<QString, QVariant> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QHashI7QStringS_E(QHash<QString, QVariant>* hash) {
@@ -363,7 +363,7 @@ void* C_ZN8QVariantC2ERK5QHashI7QStringS_E(QHash<QString, QVariant>* hash) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:234
+// /usr/include/qt/QtCore/qvariant.h:240
 // [-2] void QVariant(const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QSize(QSize* size) {
@@ -371,7 +371,7 @@ void* C_ZN8QVariantC2ERK5QSize(QSize* size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:235
+// /usr/include/qt/QtCore/qvariant.h:241
 // [-2] void QVariant(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK6QSizeF(QSizeF* size) {
@@ -379,7 +379,7 @@ void* C_ZN8QVariantC2ERK6QSizeF(QSizeF* size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:236
+// /usr/include/qt/QtCore/qvariant.h:242
 // [-2] void QVariant(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK6QPoint(QPoint* pt) {
@@ -387,7 +387,7 @@ void* C_ZN8QVariantC2ERK6QPoint(QPoint* pt) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:237
+// /usr/include/qt/QtCore/qvariant.h:243
 // [-2] void QVariant(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK7QPointF(QPointF* pt) {
@@ -395,7 +395,7 @@ void* C_ZN8QVariantC2ERK7QPointF(QPointF* pt) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:238
+// /usr/include/qt/QtCore/qvariant.h:244
 // [-2] void QVariant(const QLine &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QLine(QLine* line) {
@@ -403,7 +403,7 @@ void* C_ZN8QVariantC2ERK5QLine(QLine* line) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:239
+// /usr/include/qt/QtCore/qvariant.h:245
 // [-2] void QVariant(const QLineF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK6QLineF(QLineF* line) {
@@ -411,7 +411,7 @@ void* C_ZN8QVariantC2ERK6QLineF(QLineF* line) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:240
+// /usr/include/qt/QtCore/qvariant.h:246
 // [-2] void QVariant(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK5QRect(QRect* rect) {
@@ -419,7 +419,7 @@ void* C_ZN8QVariantC2ERK5QRect(QRect* rect) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:241
+// /usr/include/qt/QtCore/qvariant.h:247
 // [-2] void QVariant(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK6QRectF(QRectF* rect) {
@@ -427,7 +427,7 @@ void* C_ZN8QVariantC2ERK6QRectF(QRectF* rect) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:243
+// /usr/include/qt/QtCore/qvariant.h:249
 // [-2] void QVariant(const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK7QLocale(QLocale* locale) {
@@ -435,7 +435,7 @@ void* C_ZN8QVariantC2ERK7QLocale(QLocale* locale) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:245
+// /usr/include/qt/QtCore/qvariant.h:251
 // [-2] void QVariant(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK7QRegExp(QRegExp* regExp) {
@@ -444,7 +444,7 @@ void* C_ZN8QVariantC2ERK7QRegExp(QRegExp* regExp) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:249
+// /usr/include/qt/QtCore/qvariant.h:254
 // [-2] void QVariant(const QRegularExpression &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -454,7 +454,7 @@ void* C_ZN8QVariantC2ERK18QRegularExpression(QRegularExpression* re) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:251
+// /usr/include/qt/QtCore/qvariant.h:257
 // [-2] void QVariant(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantC2ERK4QUrl(QUrl* url) {
@@ -463,7 +463,7 @@ void* C_ZN8QVariantC2ERK4QUrl(QUrl* url) {
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtCore/qvariant.h:252
+// /usr/include/qt/QtCore/qvariant.h:258
 // [-2] void QVariant(const QEasingCurve &)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -474,7 +474,7 @@ void* C_ZN8QVariantC2ERK12QEasingCurve(QEasingCurve* easing) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:253
+// /usr/include/qt/QtCore/qvariant.h:259
 // [-2] void QVariant(const QUuid &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -485,29 +485,7 @@ void* C_ZN8QVariantC2ERK5QUuid(QUuid* uuid) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:254
-// [-2] void QVariant(const QModelIndex &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QVariantC2ERK11QModelIndex(QModelIndex* modelIndex) {
-  return  new QVariant(*modelIndex);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtCore/qvariant.h:255
-// [-2] void QVariant(const QPersistentModelIndex &)
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QVariantC2ERK21QPersistentModelIndex(QPersistentModelIndex* modelIndex) {
-  return  new QVariant(*modelIndex);
-}
-#endif // QT_VERSION >= 0x050500
-
-// Public Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qvariant.h:256
+// /usr/include/qt/QtCore/qvariant.h:260
 // [-2] void QVariant(const QJsonValue &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -518,7 +496,7 @@ void* C_ZN8QVariantC2ERK10QJsonValue(QJsonValue* jsonValue) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:257
+// /usr/include/qt/QtCore/qvariant.h:261
 // [-2] void QVariant(const QJsonObject &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -529,7 +507,7 @@ void* C_ZN8QVariantC2ERK11QJsonObject(QJsonObject* jsonObject) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:258
+// /usr/include/qt/QtCore/qvariant.h:262
 // [-2] void QVariant(const QJsonArray &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -540,7 +518,7 @@ void* C_ZN8QVariantC2ERK10QJsonArray(QJsonArray* jsonArray) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:259
+// /usr/include/qt/QtCore/qvariant.h:263
 // [-2] void QVariant(const QJsonDocument &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -550,7 +528,29 @@ void* C_ZN8QVariantC2ERK13QJsonDocument(QJsonDocument* jsonDocument) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:262
+// since 5.0
+// /usr/include/qt/QtCore/qvariant.h:266
+// [-2] void QVariant(const QModelIndex &)
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QVariantC2ERK11QModelIndex(QModelIndex* modelIndex) {
+  return  new QVariant(*modelIndex);
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
+// since 5.5
+// /usr/include/qt/QtCore/qvariant.h:267
+// [-2] void QVariant(const QPersistentModelIndex &)
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QVariantC2ERK21QPersistentModelIndex(QPersistentModelIndex* modelIndex) {
+  return  new QVariant(*modelIndex);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:270
 // [16] QVariant & operator=(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantaSERKS_(void *this_, QVariant* other) {
@@ -560,7 +560,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtCore/qvariant.h:264
+// /usr/include/qt/QtCore/qvariant.h:272
 // [-2] void QVariant(QVariant &&)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -570,7 +570,7 @@ void* C_ZN8QVariantC2EOS_(QVariant && other) {
 #endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:266
+// /usr/include/qt/QtCore/qvariant.h:274
 // [16] QVariant & operator=(QVariant &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariantaSEOS_(void *this_, QVariant && other) {
@@ -580,7 +580,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtCore/qvariant.h:270
+// /usr/include/qt/QtCore/qvariant.h:278
 // [-2] void swap(QVariant &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -590,7 +590,7 @@ void C_ZN8QVariant4swapERS_(void *this_, QVariant* other) {
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:272
+// /usr/include/qt/QtCore/qvariant.h:280
 // [4] QVariant::Type type()
 extern "C" Q_DECL_EXPORT
 QVariant::Type C_ZNK8QVariant4typeEv(void *this_) {
@@ -598,7 +598,7 @@ QVariant::Type C_ZNK8QVariant4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:273
+// /usr/include/qt/QtCore/qvariant.h:281
 // [4] int userType()
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QVariant8userTypeEv(void *this_) {
@@ -606,7 +606,7 @@ int C_ZNK8QVariant8userTypeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:274
+// /usr/include/qt/QtCore/qvariant.h:282
 // [8] const char * typeName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant8typeNameEv(void *this_) {
@@ -614,7 +614,7 @@ void* C_ZNK8QVariant8typeNameEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:276
+// /usr/include/qt/QtCore/qvariant.h:284
 // [1] bool canConvert(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariant10canConvertEi(void *this_, int targetTypeId) {
@@ -622,7 +622,7 @@ bool C_ZNK8QVariant10canConvertEi(void *this_, int targetTypeId) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:277
+// /usr/include/qt/QtCore/qvariant.h:285
 // [1] bool convert(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QVariant7convertEi(void *this_, int targetTypeId) {
@@ -630,7 +630,7 @@ bool C_ZN8QVariant7convertEi(void *this_, int targetTypeId) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:279
+// /usr/include/qt/QtCore/qvariant.h:287
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariant7isValidEv(void *this_) {
@@ -638,7 +638,7 @@ bool C_ZNK8QVariant7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:280
+// /usr/include/qt/QtCore/qvariant.h:288
 // [1] bool isNull()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariant6isNullEv(void *this_) {
@@ -646,7 +646,7 @@ bool C_ZNK8QVariant6isNullEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:282
+// /usr/include/qt/QtCore/qvariant.h:290
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QVariant5clearEv(void *this_) {
@@ -654,7 +654,7 @@ void C_ZN8QVariant5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:284
+// /usr/include/qt/QtCore/qvariant.h:292
 // [-2] void detach()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QVariant6detachEv(void *this_) {
@@ -662,7 +662,7 @@ void C_ZN8QVariant6detachEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:285
+// /usr/include/qt/QtCore/qvariant.h:293
 // [1] bool isDetached()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariant10isDetachedEv(void *this_) {
@@ -670,7 +670,7 @@ bool C_ZNK8QVariant10isDetachedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:287
+// /usr/include/qt/QtCore/qvariant.h:295
 // [4] int toInt(bool *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QVariant5toIntEPb(void *this_, bool * ok) {
@@ -678,7 +678,7 @@ int C_ZNK8QVariant5toIntEPb(void *this_, bool * ok) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:288
+// /usr/include/qt/QtCore/qvariant.h:296
 // [4] uint toUInt(bool *)
 extern "C" Q_DECL_EXPORT
 uint C_ZNK8QVariant6toUIntEPb(void *this_, bool * ok) {
@@ -686,7 +686,7 @@ uint C_ZNK8QVariant6toUIntEPb(void *this_, bool * ok) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:289
+// /usr/include/qt/QtCore/qvariant.h:297
 // [8] qlonglong toLongLong(bool *)
 extern "C" Q_DECL_EXPORT
 qlonglong C_ZNK8QVariant10toLongLongEPb(void *this_, bool * ok) {
@@ -694,7 +694,7 @@ qlonglong C_ZNK8QVariant10toLongLongEPb(void *this_, bool * ok) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:290
+// /usr/include/qt/QtCore/qvariant.h:298
 // [8] qulonglong toULongLong(bool *)
 extern "C" Q_DECL_EXPORT
 qulonglong C_ZNK8QVariant11toULongLongEPb(void *this_, bool * ok) {
@@ -702,7 +702,7 @@ qulonglong C_ZNK8QVariant11toULongLongEPb(void *this_, bool * ok) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:291
+// /usr/include/qt/QtCore/qvariant.h:299
 // [1] bool toBool()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariant6toBoolEv(void *this_) {
@@ -710,7 +710,7 @@ bool C_ZNK8QVariant6toBoolEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:292
+// /usr/include/qt/QtCore/qvariant.h:300
 // [8] double toDouble(bool *)
 extern "C" Q_DECL_EXPORT
 double C_ZNK8QVariant8toDoubleEPb(void *this_, bool * ok) {
@@ -719,7 +719,7 @@ double C_ZNK8QVariant8toDoubleEPb(void *this_, bool * ok) {
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtCore/qvariant.h:293
+// /usr/include/qt/QtCore/qvariant.h:301
 // [4] float toFloat(bool *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -730,7 +730,7 @@ float C_ZNK8QVariant7toFloatEPb(void *this_, bool * ok) {
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtCore/qvariant.h:294
+// /usr/include/qt/QtCore/qvariant.h:302
 // [8] qreal toReal(bool *)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -740,7 +740,7 @@ qreal C_ZNK8QVariant6toRealEPb(void *this_, bool * ok) {
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:295
+// /usr/include/qt/QtCore/qvariant.h:303
 // [8] QByteArray toByteArray()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant11toByteArrayEv(void *this_) {
@@ -749,7 +749,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:296
+// /usr/include/qt/QtCore/qvariant.h:304
 // [8] QBitArray toBitArray()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant10toBitArrayEv(void *this_) {
@@ -758,7 +758,7 @@ return new QBitArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:297
+// /usr/include/qt/QtCore/qvariant.h:305
 // [8] QString toString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant8toStringEv(void *this_) {
@@ -767,7 +767,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:298
+// /usr/include/qt/QtCore/qvariant.h:306
 // [8] QStringList toStringList()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant12toStringListEv(void *this_) {
@@ -776,7 +776,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:299
+// /usr/include/qt/QtCore/qvariant.h:307
 // [2] QChar toChar()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant6toCharEv(void *this_) {
@@ -785,7 +785,7 @@ return new QChar(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:300
+// /usr/include/qt/QtCore/qvariant.h:308
 // [8] QDate toDate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant6toDateEv(void *this_) {
@@ -794,7 +794,7 @@ return new QDate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:301
+// /usr/include/qt/QtCore/qvariant.h:309
 // [4] QTime toTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant6toTimeEv(void *this_) {
@@ -803,7 +803,7 @@ return new QTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:302
+// /usr/include/qt/QtCore/qvariant.h:310
 // [8] QDateTime toDateTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant10toDateTimeEv(void *this_) {
@@ -812,7 +812,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:303
+// /usr/include/qt/QtCore/qvariant.h:311
 // [8] QList<QVariant> toList()
 extern "C" Q_DECL_EXPORT
 QList<QVariant>* C_ZNK8QVariant6toListEv(void *this_) {
@@ -821,7 +821,7 @@ return new QList<QVariant>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:304
+// /usr/include/qt/QtCore/qvariant.h:312
 // [8] QMap<QString, QVariant> toMap()
 extern "C" Q_DECL_EXPORT
 void C_ZNK8QVariant5toMapEv(void *this_) {
@@ -830,7 +830,7 @@ void C_ZNK8QVariant5toMapEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:305
+// /usr/include/qt/QtCore/qvariant.h:313
 // [8] QHash<QString, QVariant> toHash()
 extern "C" Q_DECL_EXPORT
 void C_ZNK8QVariant6toHashEv(void *this_) {
@@ -839,7 +839,7 @@ void C_ZNK8QVariant6toHashEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:308
+// /usr/include/qt/QtCore/qvariant.h:316
 // [8] QPoint toPoint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant7toPointEv(void *this_) {
@@ -848,7 +848,7 @@ return new QPoint(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:309
+// /usr/include/qt/QtCore/qvariant.h:317
 // [16] QPointF toPointF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant8toPointFEv(void *this_) {
@@ -857,7 +857,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:310
+// /usr/include/qt/QtCore/qvariant.h:318
 // [16] QRect toRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant6toRectEv(void *this_) {
@@ -866,7 +866,7 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:311
+// /usr/include/qt/QtCore/qvariant.h:319
 // [8] QSize toSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant6toSizeEv(void *this_) {
@@ -875,7 +875,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:312
+// /usr/include/qt/QtCore/qvariant.h:320
 // [16] QSizeF toSizeF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant7toSizeFEv(void *this_) {
@@ -884,7 +884,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:313
+// /usr/include/qt/QtCore/qvariant.h:321
 // [16] QLine toLine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant6toLineEv(void *this_) {
@@ -893,7 +893,7 @@ return new QLine(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:314
+// /usr/include/qt/QtCore/qvariant.h:322
 // [32] QLineF toLineF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant7toLineFEv(void *this_) {
@@ -902,7 +902,7 @@ return new QLineF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:315
+// /usr/include/qt/QtCore/qvariant.h:323
 // [32] QRectF toRectF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant7toRectFEv(void *this_) {
@@ -911,7 +911,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:317
+// /usr/include/qt/QtCore/qvariant.h:325
 // [8] QLocale toLocale()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant8toLocaleEv(void *this_) {
@@ -921,7 +921,7 @@ return new QLocale(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtCore/qvariant.h:319
+// /usr/include/qt/QtCore/qvariant.h:327
 // [8] QRegExp toRegExp()
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -933,7 +933,7 @@ return new QRegExp(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:323
+// /usr/include/qt/QtCore/qvariant.h:330
 // [8] QRegularExpression toRegularExpression()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -944,7 +944,7 @@ return new QRegularExpression(rv);
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:325
+// /usr/include/qt/QtCore/qvariant.h:333
 // [8] QUrl toUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant5toUrlEv(void *this_) {
@@ -954,7 +954,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtCore/qvariant.h:326
+// /usr/include/qt/QtCore/qvariant.h:334
 // [8] QEasingCurve toEasingCurve()
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -966,7 +966,7 @@ return new QEasingCurve(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:327
+// /usr/include/qt/QtCore/qvariant.h:335
 // [16] QUuid toUuid()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -978,31 +978,7 @@ return new QUuid(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:328
-// [24] QModelIndex toModelIndex()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QVariant12toModelIndexEv(void *this_) {
-  auto rv = ((QVariant*)this_)->toModelIndex();
-return new QModelIndex(rv);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtCore/qvariant.h:329
-// [8] QPersistentModelIndex toPersistentModelIndex()
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QVariant22toPersistentModelIndexEv(void *this_) {
-  auto rv = ((QVariant*)this_)->toPersistentModelIndex();
-return new QPersistentModelIndex(rv);
-}
-#endif // QT_VERSION >= 0x050500
-
-// Public Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qvariant.h:330
+// /usr/include/qt/QtCore/qvariant.h:336
 // [24] QJsonValue toJsonValue()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -1014,7 +990,7 @@ return new QJsonValue(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:331
+// /usr/include/qt/QtCore/qvariant.h:337
 // [16] QJsonObject toJsonObject()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -1026,7 +1002,7 @@ return new QJsonObject(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:332
+// /usr/include/qt/QtCore/qvariant.h:338
 // [16] QJsonArray toJsonArray()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -1038,7 +1014,7 @@ return new QJsonArray(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qvariant.h:333
+// /usr/include/qt/QtCore/qvariant.h:339
 // [8] QJsonDocument toJsonDocument()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -1049,7 +1025,31 @@ return new QJsonDocument(rv);
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:337
+// since 5.0
+// /usr/include/qt/QtCore/qvariant.h:342
+// [24] QModelIndex toModelIndex()
+#if QT_VERSION >= 0x050000
+extern "C" Q_DECL_EXPORT
+void* C_ZNK8QVariant12toModelIndexEv(void *this_) {
+  auto rv = ((QVariant*)this_)->toModelIndex();
+return new QModelIndex(rv);
+}
+#endif // QT_VERSION >= 0x050000
+
+// Public Visibility=Default Availability=Available
+// since 5.5
+// /usr/include/qt/QtCore/qvariant.h:343
+// [8] QPersistentModelIndex toPersistentModelIndex()
+#if QT_VERSION >= 0x050500
+extern "C" Q_DECL_EXPORT
+void* C_ZNK8QVariant22toPersistentModelIndexEv(void *this_) {
+  auto rv = ((QVariant*)this_)->toPersistentModelIndex();
+return new QPersistentModelIndex(rv);
+}
+#endif // QT_VERSION >= 0x050500
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:347
 // [-2] void load(QDataStream &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QVariant4loadER11QDataStream(void *this_, QDataStream* ds) {
@@ -1057,7 +1057,7 @@ void C_ZN8QVariant4loadER11QDataStream(void *this_, QDataStream* ds) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:338
+// /usr/include/qt/QtCore/qvariant.h:348
 // [-2] void save(QDataStream &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK8QVariant4saveER11QDataStream(void *this_, QDataStream* ds) {
@@ -1065,7 +1065,7 @@ void C_ZNK8QVariant4saveER11QDataStream(void *this_, QDataStream* ds) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:340
+// /usr/include/qt/QtCore/qvariant.h:350
 // [8] const char * typeToName(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariant10typeToNameEi(int typeId) {
@@ -1073,7 +1073,7 @@ void* C_ZN8QVariant10typeToNameEi(int typeId) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:341
+// /usr/include/qt/QtCore/qvariant.h:351
 // [4] QVariant::Type nameToType(const char *)
 extern "C" Q_DECL_EXPORT
 QVariant::Type C_ZN8QVariant10nameToTypeEPKc(const char * name) {
@@ -1081,7 +1081,7 @@ QVariant::Type C_ZN8QVariant10nameToTypeEPKc(const char * name) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:343
+// /usr/include/qt/QtCore/qvariant.h:353
 // [8] void * data()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariant4dataEv(void *this_) {
@@ -1089,7 +1089,7 @@ void* C_ZN8QVariant4dataEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:344
+// /usr/include/qt/QtCore/qvariant.h:354
 // [8] const void * constData()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant9constDataEv(void *this_) {
@@ -1097,7 +1097,7 @@ void* C_ZNK8QVariant9constDataEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:345
+// /usr/include/qt/QtCore/qvariant.h:355
 // [8] const void * data()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant4dataEv(void *this_) {
@@ -1105,7 +1105,7 @@ void* C_ZNK8QVariant4dataEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:436
+// /usr/include/qt/QtCore/qvariant.h:454
 // [1] bool operator==(const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVarianteqERKS_(void *this_, QVariant* v) {
@@ -1113,7 +1113,7 @@ bool C_ZNK8QVarianteqERKS_(void *this_, QVariant* v) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:438
+// /usr/include/qt/QtCore/qvariant.h:456
 // [1] bool operator!=(const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariantneERKS_(void *this_, QVariant* v) {
@@ -1121,7 +1121,7 @@ bool C_ZNK8QVariantneERKS_(void *this_, QVariant* v) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:440
+// /usr/include/qt/QtCore/qvariant.h:458
 // [1] bool operator<(const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariantltERKS_(void *this_, QVariant* v) {
@@ -1129,7 +1129,7 @@ bool C_ZNK8QVariantltERKS_(void *this_, QVariant* v) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:442
+// /usr/include/qt/QtCore/qvariant.h:460
 // [1] bool operator<=(const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariantleERKS_(void *this_, QVariant* v) {
@@ -1137,7 +1137,7 @@ bool C_ZNK8QVariantleERKS_(void *this_, QVariant* v) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:444
+// /usr/include/qt/QtCore/qvariant.h:462
 // [1] bool operator>(const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariantgtERKS_(void *this_, QVariant* v) {
@@ -1145,7 +1145,7 @@ bool C_ZNK8QVariantgtERKS_(void *this_, QVariant* v) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:446
+// /usr/include/qt/QtCore/qvariant.h:464
 // [1] bool operator>=(const QVariant &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QVariantgeERKS_(void *this_, QVariant* v) {
@@ -1153,7 +1153,7 @@ bool C_ZNK8QVariantgeERKS_(void *this_, QVariant* v) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:495
+// /usr/include/qt/QtCore/qvariant.h:513
 // [16] QVariant::DataPtr & data_ptr()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QVariant8data_ptrEv(void *this_) {
@@ -1162,7 +1162,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:496
+// /usr/include/qt/QtCore/qvariant.h:514
 // [16] const QVariant::DataPtr & data_ptr()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QVariant8data_ptrEv(void *this_) {

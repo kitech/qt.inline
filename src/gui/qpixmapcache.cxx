@@ -94,12 +94,15 @@ bool C_ZN12QPixmapCache4findERK7QStringP7QPixmap(QString* key, QPixmap * pixmap)
 #endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpixmapcache.h:82
 // [1] bool find(const QPixmapCache::Key &, QPixmap *)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QPixmapCache4findERKNS_3KeyEP7QPixmap(QPixmapCache::Key* key, QPixmap * pixmap) {
   return (bool)QPixmapCache::find(*key, pixmap);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:83
@@ -122,12 +125,15 @@ return new QPixmapCache::Key(rv);
 #endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpixmapcache.h:85
 // [1] bool replace(const QPixmapCache::Key &, const QPixmap &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QPixmapCache7replaceERKNS_3KeyERK7QPixmap(QPixmapCache::Key* key, QPixmap* pixmap) {
   return (bool)QPixmapCache::replace(*key, *pixmap);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:86
@@ -138,12 +144,15 @@ void C_ZN12QPixmapCache6removeERK7QString(QString* key) {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtGui/qpixmapcache.h:87
 // [-2] void remove(const QPixmapCache::Key &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN12QPixmapCache6removeERKNS_3KeyE(QPixmapCache::Key* key) {
   QPixmapCache::remove(*key);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmapcache.h:88

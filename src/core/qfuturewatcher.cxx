@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtCore/qfuturewatcher.h
 #ifndef protected
@@ -111,7 +112,7 @@ void* C_QFutureWatcher_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:188
+// /usr/include/qt/QtCore/qfuturewatcher.h:187
 // [-2] void QFutureWatcher(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QFutureWatcherIvEC2EP7QObject(QObject * _parent) {
@@ -119,14 +120,14 @@ void* C_ZN14QFutureWatcherIvEC2EP7QObject(QObject * _parent) {
 }
 
 // Public inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:191
+// /usr/include/qt/QtCore/qfuturewatcher.h:190
 // [-2] void ~QFutureWatcher()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QFutureWatcherIvED2Ev(void *this_) {
   delete (QFutureWatcher<void>*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:194
+// /usr/include/qt/QtCore/qfuturewatcher.h:193
 // [-2] void setFuture(const QFuture<void> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE(void *this_, QFuture<void>* future) {
@@ -134,7 +135,7 @@ void C_ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE(void *this_, QFuture<void>*
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:195
+// /usr/include/qt/QtCore/qfuturewatcher.h:194
 // [16] QFuture<void> future()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QFutureWatcherIvE6futureEv(void *this_) {
@@ -158,4 +159,5 @@ return new QFuture<void>(rv);
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -53,7 +53,7 @@ MyQApplicationStateChangeEvent(Qt::ApplicationState state) : QApplicationStateCh
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1052
+// /usr/include/qt/QtGui/qevent.h:1057
 // [-2] void QApplicationStateChangeEvent(Qt::ApplicationState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QApplicationStateChangeEventC2EN2Qt16ApplicationStateE(Qt::ApplicationState state) {
@@ -61,7 +61,7 @@ void* C_ZN28QApplicationStateChangeEventC2EN2Qt16ApplicationStateE(Qt::Applicati
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1053
+// /usr/include/qt/QtGui/qevent.h:1058
 // [4] Qt::ApplicationState applicationState()
 extern "C" Q_DECL_EXPORT
 Qt::ApplicationState C_ZNK28QApplicationStateChangeEvent16applicationStateEv(void *this_) {

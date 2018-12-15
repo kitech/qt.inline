@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
 #define protected public
@@ -55,7 +56,7 @@ MyQDnsMailExchangeRecord(const QDnsMailExchangeRecord & other) : QDnsMailExchang
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:111
+// /usr/include/qt/QtNetwork/qdnslookup.h:113
 // [-2] void QDnsMailExchangeRecord()
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordC2Ev() {
@@ -63,7 +64,7 @@ void* C_ZN22QDnsMailExchangeRecordC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:112
+// /usr/include/qt/QtNetwork/qdnslookup.h:114
 // [-2] void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordC2ERKS_(QDnsMailExchangeRecord* other) {
@@ -71,7 +72,7 @@ void* C_ZN22QDnsMailExchangeRecordC2ERKS_(QDnsMailExchangeRecord* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:114
+// /usr/include/qt/QtNetwork/qdnslookup.h:116
 // [8] QDnsMailExchangeRecord & operator=(QDnsMailExchangeRecord &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordaSEOS_(void *this_, QDnsMailExchangeRecord && other) {
@@ -80,7 +81,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:116
+// /usr/include/qt/QtNetwork/qdnslookup.h:118
 // [8] QDnsMailExchangeRecord & operator=(const QDnsMailExchangeRecord &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QDnsMailExchangeRecordaSERKS_(void *this_, QDnsMailExchangeRecord* other) {
@@ -89,14 +90,14 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:117
+// /usr/include/qt/QtNetwork/qdnslookup.h:119
 // [-2] void ~QDnsMailExchangeRecord()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QDnsMailExchangeRecordD2Ev(void *this_) {
   delete (QDnsMailExchangeRecord*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:119
+// /usr/include/qt/QtNetwork/qdnslookup.h:121
 // [-2] void swap(QDnsMailExchangeRecord &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QDnsMailExchangeRecord4swapERS_(void *this_, QDnsMailExchangeRecord* other) {
@@ -104,7 +105,7 @@ void C_ZN22QDnsMailExchangeRecord4swapERS_(void *this_, QDnsMailExchangeRecord* 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:121
+// /usr/include/qt/QtNetwork/qdnslookup.h:123
 // [8] QString exchange()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QDnsMailExchangeRecord8exchangeEv(void *this_) {
@@ -113,7 +114,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:122
+// /usr/include/qt/QtNetwork/qdnslookup.h:124
 // [8] QString name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QDnsMailExchangeRecord4nameEv(void *this_) {
@@ -122,7 +123,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:123
+// /usr/include/qt/QtNetwork/qdnslookup.h:125
 // [2] quint16 preference()
 extern "C" Q_DECL_EXPORT
 quint16 C_ZNK22QDnsMailExchangeRecord10preferenceEv(void *this_) {
@@ -130,7 +131,7 @@ quint16 C_ZNK22QDnsMailExchangeRecord10preferenceEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:124
+// /usr/include/qt/QtNetwork/qdnslookup.h:126
 // [4] quint32 timeToLive()
 extern "C" Q_DECL_EXPORT
 quint32 C_ZNK22QDnsMailExchangeRecord10timeToLiveEv(void *this_) {
@@ -153,4 +154,5 @@ quint32 C_ZNK22QDnsMailExchangeRecord10timeToLiveEv(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

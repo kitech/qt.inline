@@ -49,21 +49,21 @@ class Q_DECL_EXPORT MyQFlag : public QFlag {
 public:
   virtual ~MyQFlag() {}
 // void QFlag(int)
-MyQFlag(int ai) : QFlag(ai) {}
+MyQFlag(int value) : QFlag(value) {}
 // void QFlag(uint)
-MyQFlag(uint ai) : QFlag(ai) {}
+MyQFlag(uint value) : QFlag(value) {}
 // void QFlag(short)
-MyQFlag(short ai) : QFlag(ai) {}
+MyQFlag(short value) : QFlag(value) {}
 // void QFlag(ushort)
-MyQFlag(ushort ai) : QFlag(ai) {}
+MyQFlag(ushort value) : QFlag(value) {}
 };
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:57
 // [-2] void QFlag(int)
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Ei(int ai) {
-  return  new QFlag(ai);
+void* C_ZN5QFlagC2Ei(int value) {
+  return  new QFlag(value);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -72,8 +72,8 @@ void* C_ZN5QFlagC2Ei(int ai) {
 // [-2] void QFlag(uint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Ej(uint ai) {
-  return  new QFlag(ai);
+void* C_ZN5QFlagC2Ej(uint value) {
+  return  new QFlag(value);
 }
 #endif // QT_VERSION >= 0x050300
 
@@ -83,8 +83,8 @@ void* C_ZN5QFlagC2Ej(uint ai) {
 // [-2] void QFlag(short)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Es(short ai) {
-  return  new QFlag(ai);
+void* C_ZN5QFlagC2Es(short value) {
+  return  new QFlag(value);
 }
 #endif // QT_VERSION >= 0x050300
 
@@ -94,8 +94,8 @@ void* C_ZN5QFlagC2Es(short ai) {
 // [-2] void QFlag(ushort)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Et(ushort ai) {
-  return  new QFlag(ai);
+void* C_ZN5QFlagC2Et(ushort value) {
+  return  new QFlag(value);
 }
 #endif // QT_VERSION >= 0x050300
 

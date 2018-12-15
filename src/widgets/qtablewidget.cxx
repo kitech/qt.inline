@@ -191,7 +191,7 @@ void* C_QTableWidget_init_staticMetaObject(void* this_, void* strdat, void* dat,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:321
+// /usr/include/qt/QtWidgets/qtablewidget.h:322
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QTableWidget5eventEP6QEvent(void *this_, QEvent * e) {
@@ -199,7 +199,7 @@ bool C_ZN12QTableWidget5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:322
+// /usr/include/qt/QtWidgets/qtablewidget.h:323
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget9mimeTypesEv(void *this_) {
@@ -208,7 +208,7 @@ return new QStringList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:326
+// /usr/include/qt/QtWidgets/qtablewidget.h:327
 // [8] QMimeData * mimeData(const QList<QTableWidgetItem *>)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget8mimeDataE5QListIP16QTableWidgetItemE(void *this_, const QList<QTableWidgetItem *> items) {
@@ -216,7 +216,7 @@ void* C_ZNK12QTableWidget8mimeDataE5QListIP16QTableWidgetItemE(void *this_, cons
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:328
+// /usr/include/qt/QtWidgets/qtablewidget.h:329
 // [1] bool dropMimeData(int, int, const QMimeData *, Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE(void *this_, int row, int column, const QMimeData * data, Qt::DropAction action) {
@@ -224,7 +224,7 @@ bool C_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE(void *this
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:329
+// /usr/include/qt/QtWidgets/qtablewidget.h:330
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK12QTableWidget20supportedDropActionsEv(void *this_) {
@@ -232,7 +232,7 @@ Qt::DropActions C_ZNK12QTableWidget20supportedDropActionsEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:343
+// /usr/include/qt/QtWidgets/qtablewidget.h:347
 // [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
@@ -813,7 +813,7 @@ void C_ZN12QTableWidget11itemEnteredEP16QTableWidgetItem(void *this_, QTableWidg
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:305
+// /usr/include/qt/QtWidgets/qtablewidget.h:306
 // [-2] void itemChanged(QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget11itemChangedEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
@@ -821,7 +821,7 @@ void C_ZN12QTableWidget11itemChangedEP16QTableWidgetItem(void *this_, QTableWidg
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:307
+// /usr/include/qt/QtWidgets/qtablewidget.h:308
 // [-2] void currentItemChanged(QTableWidgetItem *, QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget18currentItemChangedEP16QTableWidgetItemS1_(void *this_, QTableWidgetItem * current, QTableWidgetItem * previous) {
@@ -829,7 +829,7 @@ void C_ZN12QTableWidget18currentItemChangedEP16QTableWidgetItemS1_(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:308
+// /usr/include/qt/QtWidgets/qtablewidget.h:309
 // [-2] void itemSelectionChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget20itemSelectionChangedEv(void *this_) {
@@ -838,7 +838,7 @@ void C_ZN12QTableWidget20itemSelectionChangedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:310
+// /usr/include/qt/QtWidgets/qtablewidget.h:311
 // [-2] void cellPressed(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -849,7 +849,7 @@ void C_ZN12QTableWidget11cellPressedEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:311
+// /usr/include/qt/QtWidgets/qtablewidget.h:312
 // [-2] void cellClicked(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -860,7 +860,7 @@ void C_ZN12QTableWidget11cellClickedEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:312
+// /usr/include/qt/QtWidgets/qtablewidget.h:313
 // [-2] void cellDoubleClicked(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -871,7 +871,7 @@ void C_ZN12QTableWidget17cellDoubleClickedEii(void *this_, int row, int column) 
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:314
+// /usr/include/qt/QtWidgets/qtablewidget.h:315
 // [-2] void cellActivated(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -882,7 +882,7 @@ void C_ZN12QTableWidget13cellActivatedEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:315
+// /usr/include/qt/QtWidgets/qtablewidget.h:316
 // [-2] void cellEntered(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -893,7 +893,7 @@ void C_ZN12QTableWidget11cellEnteredEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:316
+// /usr/include/qt/QtWidgets/qtablewidget.h:317
 // [-2] void cellChanged(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -904,7 +904,7 @@ void C_ZN12QTableWidget11cellChangedEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:318
+// /usr/include/qt/QtWidgets/qtablewidget.h:319
 // [-2] void currentCellChanged(int, int, int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT

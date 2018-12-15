@@ -60,6 +60,8 @@ MyQWheelEvent(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta,
 MyQWheelEvent(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta, QPoint angleDelta, int qt4Delta, Qt::Orientation qt4Orientation, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::ScrollPhase phase, Qt::MouseEventSource source) : QWheelEvent(pos, globalPos, pixelDelta, angleDelta, qt4Delta, qt4Orientation, buttons, modifiers, phase, source) {}
 // void QWheelEvent(const QPointF &, const QPointF &, QPoint, QPoint, int, Qt::Orientation, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase, Qt::MouseEventSource, bool)
 MyQWheelEvent(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta, QPoint angleDelta, int qt4Delta, Qt::Orientation qt4Orientation, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::ScrollPhase phase, Qt::MouseEventSource source, bool inverted) : QWheelEvent(pos, globalPos, pixelDelta, angleDelta, qt4Delta, qt4Orientation, buttons, modifiers, phase, source, inverted) {}
+// void QWheelEvent(QPointF, QPointF, QPoint, QPoint, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase, bool, Qt::MouseEventSource)
+MyQWheelEvent(QPointF pos, QPointF globalPos, QPoint pixelDelta, QPoint angleDelta, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::ScrollPhase phase, bool inverted, Qt::MouseEventSource source) : QWheelEvent(pos, globalPos, pixelDelta, angleDelta, buttons, modifiers, phase, inverted, source) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -110,15 +112,23 @@ void* C_ZN11QWheelEventC2ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE6QFlagsINS4_
   return  new QWheelEvent(*pos, *globalPos, *pixelDelta, *angleDelta, qt4Delta, qt4Orientation, buttons, modifiers, phase, source, inverted);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:197
+// [-2] void QWheelEvent(QPointF, QPointF, QPoint, QPoint, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase, bool, Qt::MouseEventSource)
+extern "C" Q_DECL_EXPORT
+void* C_ZN11QWheelEventC2E7QPointFS0_6QPointS1_6QFlagsIN2Qt11MouseButtonEES2_INS3_16KeyboardModifierEENS3_11ScrollPhaseEbNS3_16MouseEventSourceE(QPointF* pos, QPointF* globalPos, QPoint* pixelDelta, QPoint* angleDelta, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::ScrollPhase phase, bool inverted, Qt::MouseEventSource source) {
+  return  new QWheelEvent(*pos, *globalPos, *pixelDelta, *angleDelta, buttons, modifiers, phase, inverted, source);
+}
+
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:196
+// /usr/include/qt/QtGui/qevent.h:200
 // [-2] void ~QWheelEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWheelEventD2Ev(void *this_) {
   delete (QWheelEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:199
+// /usr/include/qt/QtGui/qevent.h:203
 // [8] QPoint pixelDelta()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWheelEvent10pixelDeltaEv(void *this_) {
@@ -127,7 +137,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:200
+// /usr/include/qt/QtGui/qevent.h:204
 // [8] QPoint angleDelta()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWheelEvent10angleDeltaEv(void *this_) {
@@ -136,7 +146,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:202
+// /usr/include/qt/QtGui/qevent.h:206
 // [4] int delta()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QWheelEvent5deltaEv(void *this_) {
@@ -144,7 +154,7 @@ int C_ZNK11QWheelEvent5deltaEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:203
+// /usr/include/qt/QtGui/qevent.h:207
 // [4] Qt::Orientation orientation()
 extern "C" Q_DECL_EXPORT
 Qt::Orientation C_ZNK11QWheelEvent11orientationEv(void *this_) {
@@ -152,7 +162,7 @@ Qt::Orientation C_ZNK11QWheelEvent11orientationEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:206
+// /usr/include/qt/QtGui/qevent.h:210
 // [8] QPoint pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWheelEvent3posEv(void *this_) {
@@ -161,7 +171,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:207
+// /usr/include/qt/QtGui/qevent.h:211
 // [8] QPoint globalPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWheelEvent9globalPosEv(void *this_) {
@@ -170,7 +180,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:208
+// /usr/include/qt/QtGui/qevent.h:212
 // [4] int x()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QWheelEvent1xEv(void *this_) {
@@ -178,7 +188,7 @@ int C_ZNK11QWheelEvent1xEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:209
+// /usr/include/qt/QtGui/qevent.h:213
 // [4] int y()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QWheelEvent1yEv(void *this_) {
@@ -186,7 +196,7 @@ int C_ZNK11QWheelEvent1yEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:210
+// /usr/include/qt/QtGui/qevent.h:214
 // [4] int globalX()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QWheelEvent7globalXEv(void *this_) {
@@ -194,7 +204,7 @@ int C_ZNK11QWheelEvent7globalXEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:211
+// /usr/include/qt/QtGui/qevent.h:215
 // [4] int globalY()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QWheelEvent7globalYEv(void *this_) {
@@ -202,7 +212,7 @@ int C_ZNK11QWheelEvent7globalYEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:213
+// /usr/include/qt/QtGui/qevent.h:217
 // [16] const QPointF & posF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWheelEvent4posFEv(void *this_) {
@@ -211,7 +221,7 @@ return new QPointF(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:214
+// /usr/include/qt/QtGui/qevent.h:218
 // [16] const QPointF & globalPosF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWheelEvent10globalPosFEv(void *this_) {
@@ -220,7 +230,7 @@ return new QPointF(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:216
+// /usr/include/qt/QtGui/qevent.h:220
 // [4] Qt::MouseButtons buttons()
 extern "C" Q_DECL_EXPORT
 Qt::MouseButtons C_ZNK11QWheelEvent7buttonsEv(void *this_) {
@@ -229,7 +239,7 @@ Qt::MouseButtons C_ZNK11QWheelEvent7buttonsEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtGui/qevent.h:218
+// /usr/include/qt/QtGui/qevent.h:222
 // [4] Qt::ScrollPhase phase()
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -240,7 +250,7 @@ Qt::ScrollPhase C_ZNK11QWheelEvent5phaseEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.7
-// /usr/include/qt/QtGui/qevent.h:219
+// /usr/include/qt/QtGui/qevent.h:223
 // [1] bool inverted()
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
@@ -251,7 +261,7 @@ bool C_ZNK11QWheelEvent8invertedEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtGui/qevent.h:221
+// /usr/include/qt/QtGui/qevent.h:225
 // [4] Qt::MouseEventSource source()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT

@@ -147,12 +147,15 @@ void* C_ZN20QAbstractVideoBuffer3mapENS_7MapModeEPiS1_(void *this_, QAbstractVid
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:87
 // [4] int mapPlanes(QAbstractVideoBuffer::MapMode, int *, int *, uchar **)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 int C_ZN20QAbstractVideoBuffer9mapPlanesENS_7MapModeEPiS1_PPh(void *this_, QAbstractVideoBuffer::MapMode mode, int * numBytes, int* bytesPerLine, uchar** data) {
   return (int)((QAbstractVideoBuffer*)this_)->mapPlanes(mode, numBytes, bytesPerLine, data);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:88

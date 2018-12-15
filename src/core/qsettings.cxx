@@ -508,12 +508,15 @@ void* C_ZNK9QSettings8iniCodecEv(void *this_) {
 #endif // QT_VERSION >= 0x040500
 
 // Public static Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtCore/qsettings.h:187
 // [-2] void setDefaultFormat(QSettings::Format)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format format) {
   QSettings::setDefaultFormat(format);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public static Visibility=Default Availability=Available
 // since 4.4
@@ -543,20 +546,26 @@ void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qsettings.h:191
 // [-2] void setPath(QSettings::Format, QSettings::Scope, const QString &)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, QString* path) {
   QSettings::setPath(format, scope, *path);
 }
+#endif // QT_VERSION >= 0x040100
 
 // Public static Visibility=Default Availability=Available
+// since 4.1
 // /usr/include/qt/QtCore/qsettings.h:197
 // [4] QSettings::Format registerFormat(const QString &, QSettings::ReadFunc, QSettings::WriteFunc, Qt::CaseSensitivity)
+#if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
 QSettings::Format C_ZN9QSettings14registerFormatERK7QStringPFbR9QIODeviceR4QMapIS0_8QVariantEEPFbS4_RKS7_EN2Qt15CaseSensitivityE(QString* extension, QSettings::ReadFunc readFunc, QSettings::WriteFunc writeFunc, Qt::CaseSensitivity caseSensitivity) {
   return (QSettings::Format)QSettings::registerFormat(*extension, readFunc, writeFunc, caseSensitivity);
 }
+#endif // QT_VERSION >= 0x040100
 
 //  main block end
 

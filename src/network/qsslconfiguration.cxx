@@ -56,7 +56,7 @@ MyQSslConfiguration(const QSslConfiguration & other) : QSslConfiguration(other) 
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:79
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:85
 // [-2] void QSslConfiguration()
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfigurationC2Ev() {
@@ -64,7 +64,7 @@ void* C_ZN17QSslConfigurationC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:80
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:86
 // [-2] void QSslConfiguration(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfigurationC2ERKS_(QSslConfiguration* other) {
@@ -72,14 +72,14 @@ void* C_ZN17QSslConfigurationC2ERKS_(QSslConfiguration* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:81
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:87
 // [-2] void ~QSslConfiguration()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfigurationD2Ev(void *this_) {
   delete (QSslConfiguration*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:83
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:89
 // [8] QSslConfiguration & operator=(QSslConfiguration &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfigurationaSEOS_(void *this_, QSslConfiguration && other) {
@@ -88,7 +88,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:85
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:91
 // [8] QSslConfiguration & operator=(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfigurationaSERKS_(void *this_, QSslConfiguration* other) {
@@ -98,7 +98,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:87
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:93
 // [-2] void swap(QSslConfiguration &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -108,7 +108,7 @@ void C_ZN17QSslConfiguration4swapERS_(void *this_, QSslConfiguration* other) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:90
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:96
 // [1] bool operator==(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QSslConfigurationeqERKS_(void *this_, QSslConfiguration* other) {
@@ -116,7 +116,7 @@ bool C_ZNK17QSslConfigurationeqERKS_(void *this_, QSslConfiguration* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:91
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:97
 // [1] bool operator!=(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QSslConfigurationneERKS_(void *this_, QSslConfiguration* other) {
@@ -124,7 +124,7 @@ bool C_ZNK17QSslConfigurationneERKS_(void *this_, QSslConfiguration* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:94
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:100
 // [1] bool isNull()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QSslConfiguration6isNullEv(void *this_) {
@@ -132,7 +132,7 @@ bool C_ZNK17QSslConfiguration6isNullEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:96
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:102
 // [4] QSsl::SslProtocol protocol()
 extern "C" Q_DECL_EXPORT
 QSsl::SslProtocol C_ZNK17QSslConfiguration8protocolEv(void *this_) {
@@ -140,7 +140,7 @@ QSsl::SslProtocol C_ZNK17QSslConfiguration8protocolEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:97
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:103
 // [-2] void setProtocol(QSsl::SslProtocol)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration11setProtocolEN4QSsl11SslProtocolE(void *this_, QSsl::SslProtocol protocol) {
@@ -148,7 +148,7 @@ void C_ZN17QSslConfiguration11setProtocolEN4QSsl11SslProtocolE(void *this_, QSsl
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:100
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:106
 // [4] QSslSocket::PeerVerifyMode peerVerifyMode()
 extern "C" Q_DECL_EXPORT
 QSslSocket::PeerVerifyMode C_ZNK17QSslConfiguration14peerVerifyModeEv(void *this_) {
@@ -156,7 +156,7 @@ QSslSocket::PeerVerifyMode C_ZNK17QSslConfiguration14peerVerifyModeEv(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:101
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:107
 // [-2] void setPeerVerifyMode(QSslSocket::PeerVerifyMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration17setPeerVerifyModeEN10QSslSocket14PeerVerifyModeE(void *this_, QSslSocket::PeerVerifyMode mode) {
@@ -164,7 +164,7 @@ void C_ZN17QSslConfiguration17setPeerVerifyModeEN10QSslSocket14PeerVerifyModeE(v
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:103
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:109
 // [4] int peerVerifyDepth()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QSslConfiguration15peerVerifyDepthEv(void *this_) {
@@ -172,7 +172,7 @@ int C_ZNK17QSslConfiguration15peerVerifyDepthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:104
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:110
 // [-2] void setPeerVerifyDepth(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration18setPeerVerifyDepthEi(void *this_, int depth) {
@@ -181,7 +181,7 @@ void C_ZN17QSslConfiguration18setPeerVerifyDepthEi(void *this_, int depth) {
 
 // Public Visibility=Default Availability=Available
 // since 5.1
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:107
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:113
 // [-2] QList<QSslCertificate> localCertificateChain()
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
@@ -193,7 +193,7 @@ return new QList<QSslCertificate>(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.1
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:108
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:114
 // [-2] void setLocalCertificateChain(const QList<QSslCertificate> &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
@@ -203,7 +203,7 @@ void C_ZN17QSslConfiguration24setLocalCertificateChainERK5QListI15QSslCertificat
 #endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:110
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:116
 // [8] QSslCertificate localCertificate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSslConfiguration16localCertificateEv(void *this_) {
@@ -212,7 +212,7 @@ return new QSslCertificate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:111
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:117
 // [-2] void setLocalCertificate(const QSslCertificate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration19setLocalCertificateERK15QSslCertificate(void *this_, QSslCertificate* certificate) {
@@ -220,7 +220,7 @@ void C_ZN17QSslConfiguration19setLocalCertificateERK15QSslCertificate(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:113
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:119
 // [8] QSslCertificate peerCertificate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSslConfiguration15peerCertificateEv(void *this_) {
@@ -229,7 +229,7 @@ return new QSslCertificate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:114
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:120
 // [-2] QList<QSslCertificate> peerCertificateChain()
 extern "C" Q_DECL_EXPORT
 QList<QSslCertificate>* C_ZNK17QSslConfiguration20peerCertificateChainEv(void *this_) {
@@ -238,7 +238,7 @@ return new QList<QSslCertificate>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:115
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:121
 // [8] QSslCipher sessionCipher()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSslConfiguration13sessionCipherEv(void *this_) {
@@ -248,7 +248,7 @@ return new QSslCipher(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:116
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:122
 // [4] QSsl::SslProtocol sessionProtocol()
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -258,7 +258,7 @@ QSsl::SslProtocol C_ZNK17QSslConfiguration15sessionProtocolEv(void *this_) {
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:119
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:125
 // [8] QSslKey privateKey()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSslConfiguration10privateKeyEv(void *this_) {
@@ -267,7 +267,7 @@ return new QSslKey(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:120
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:126
 // [-2] void setPrivateKey(const QSslKey &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration13setPrivateKeyERK7QSslKey(void *this_, QSslKey* key) {
@@ -275,7 +275,7 @@ void C_ZN17QSslConfiguration13setPrivateKeyERK7QSslKey(void *this_, QSslKey* key
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:123
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:129
 // [-2] QList<QSslCipher> ciphers()
 extern "C" Q_DECL_EXPORT
 QList<QSslCipher>* C_ZNK17QSslConfiguration7ciphersEv(void *this_) {
@@ -284,7 +284,7 @@ return new QList<QSslCipher>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:124
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:130
 // [-2] void setCiphers(const QList<QSslCipher> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration10setCiphersERK5QListI10QSslCipherE(void *this_, QList<QSslCipher>* ciphers) {
@@ -293,7 +293,7 @@ void C_ZN17QSslConfiguration10setCiphersERK5QListI10QSslCipherE(void *this_, QLi
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:125
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:131
 // [-2] QList<QSslCipher> supportedCiphers()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -304,7 +304,7 @@ return new QList<QSslCipher>(rv);
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:128
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:134
 // [-2] QList<QSslCertificate> caCertificates()
 extern "C" Q_DECL_EXPORT
 QList<QSslCertificate>* C_ZNK17QSslConfiguration14caCertificatesEv(void *this_) {
@@ -313,7 +313,7 @@ return new QList<QSslCertificate>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:129
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:135
 // [-2] void setCaCertificates(const QList<QSslCertificate> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration17setCaCertificatesERK5QListI15QSslCertificateE(void *this_, QList<QSslCertificate>* certificates) {
@@ -322,7 +322,7 @@ void C_ZN17QSslConfiguration17setCaCertificatesERK5QListI15QSslCertificateE(void
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:130
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:136
 // [-2] QList<QSslCertificate> systemCaCertificates()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -333,7 +333,7 @@ return new QList<QSslCertificate>(rv);
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:132
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:138
 // [-2] void setSslOption(QSsl::SslOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration12setSslOptionEN4QSsl9SslOptionEb(void *this_, QSsl::SslOption option, bool on) {
@@ -342,7 +342,7 @@ void C_ZN17QSslConfiguration12setSslOptionEN4QSsl9SslOptionEb(void *this_, QSsl:
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:133
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:139
 // [1] bool testSslOption(QSsl::SslOption)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -353,7 +353,7 @@ bool C_ZNK17QSslConfiguration13testSslOptionEN4QSsl9SslOptionE(void *this_, QSsl
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:135
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:141
 // [8] QByteArray sessionTicket()
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -365,7 +365,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:136
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:142
 // [-2] void setSessionTicket(const QByteArray &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -376,7 +376,7 @@ void C_ZN17QSslConfiguration16setSessionTicketERK10QByteArray(void *this_, QByte
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:137
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:143
 // [4] int sessionTicketLifeTimeHint()
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -387,7 +387,7 @@ int C_ZNK17QSslConfiguration25sessionTicketLifeTimeHintEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.7
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:139
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:145
 // [8] QSslKey ephemeralServerKey()
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
@@ -399,7 +399,7 @@ return new QSslKey(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:142
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:148
 // [-2] QVector<QSslEllipticCurve> ellipticCurves()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -411,7 +411,7 @@ void C_ZNK17QSslConfiguration14ellipticCurvesEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:143
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:149
 // [-2] void setEllipticCurves(const QVector<QSslEllipticCurve> &)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -422,7 +422,7 @@ void C_ZN17QSslConfiguration17setEllipticCurvesERK7QVectorI17QSslEllipticCurveE(
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:144
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:150
 // [-2] QVector<QSslEllipticCurve> supportedEllipticCurves()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -434,7 +434,7 @@ void C_ZN17QSslConfiguration23supportedEllipticCurvesEv() {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:146
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:152
 // [8] QByteArray preSharedKeyIdentityHint()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -446,7 +446,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:147
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:153
 // [-2] void setPreSharedKeyIdentityHint(const QByteArray &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -457,7 +457,7 @@ void C_ZN17QSslConfiguration27setPreSharedKeyIdentityHintERK10QByteArray(void *t
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:149
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:155
 // [8] QSslDiffieHellmanParameters diffieHellmanParameters()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -469,7 +469,7 @@ return new QSslDiffieHellmanParameters(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:150
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:156
 // [-2] void setDiffieHellmanParameters(const QSslDiffieHellmanParameters &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -478,8 +478,42 @@ void C_ZN17QSslConfiguration26setDiffieHellmanParametersERK27QSslDiffieHellmanPa
 }
 #endif // QT_VERSION >= 0x050800
 
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:158
+// [8] QMap<QByteArray, QVariant> backendConfiguration()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZNK17QSslConfiguration20backendConfigurationEv(void *this_) {
+  auto rv = ((QSslConfiguration*)this_)->backendConfiguration();
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:159
+// [-2] void setBackendConfigurationOption(const QByteArray &, const QVariant &)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSslConfiguration29setBackendConfigurationOptionERK10QByteArrayRK8QVariant(void *this_, QByteArray* name, QVariant* value) {
+  ((QSslConfiguration*)this_)->setBackendConfigurationOption(*name, *value);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:160
+// [-2] void setBackendConfiguration(const QMap<QByteArray, QVariant> &)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSslConfiguration23setBackendConfigurationERK4QMapI10QByteArray8QVariantE(void *this_, QMap<QByteArray, QVariant>* backendConfiguration) {
+  ((QSslConfiguration*)this_)->setBackendConfiguration(*backendConfiguration);
+}
+#endif // QT_VERSION >= 0x050b00
+
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:152
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:162
 // [8] QSslConfiguration defaultConfiguration()
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfiguration20defaultConfigurationEv() {
@@ -488,7 +522,7 @@ return new QSslConfiguration(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:153
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:163
 // [-2] void setDefaultConfiguration(const QSslConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration23setDefaultConfigurationERKS_(QSslConfiguration* configuration) {
@@ -496,8 +530,41 @@ void C_ZN17QSslConfiguration23setDefaultConfigurationERKS_(QSslConfiguration* co
 }
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:166
+// [1] bool dtlsCookieVerificationEnabled()
+extern "C" Q_DECL_EXPORT
+bool C_ZNK17QSslConfiguration29dtlsCookieVerificationEnabledEv(void *this_) {
+  return (bool)((QSslConfiguration*)this_)->dtlsCookieVerificationEnabled();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:167
+// [-2] void setDtlsCookieVerificationEnabled(bool)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSslConfiguration32setDtlsCookieVerificationEnabledEb(void *this_, bool enable) {
+  ((QSslConfiguration*)this_)->setDtlsCookieVerificationEnabled(enable);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:169
+// [8] QSslConfiguration defaultDtlsConfiguration()
+extern "C" Q_DECL_EXPORT
+void* C_ZN17QSslConfiguration24defaultDtlsConfigurationEv() {
+  auto rv = QSslConfiguration::defaultDtlsConfiguration();
+return new QSslConfiguration(rv);
+}
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:170
+// [-2] void setDefaultDtlsConfiguration(const QSslConfiguration &)
+extern "C" Q_DECL_EXPORT
+void C_ZN17QSslConfiguration27setDefaultDtlsConfigurationERKS_(QSslConfiguration* configuration) {
+  QSslConfiguration::setDefaultDtlsConfiguration(*configuration);
+}
+
+// Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:164
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:182
 // [-2] void setAllowedNextProtocols(QList<QByteArray>)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -508,7 +575,7 @@ void C_ZN17QSslConfiguration23setAllowedNextProtocolsE5QListI10QByteArrayE(void 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:166
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:184
 // [8] QList<QByteArray> allowedNextProtocols()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -520,7 +587,7 @@ return new QList<QByteArray>(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:168
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:186
 // [8] QByteArray nextNegotiatedProtocol()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -532,7 +599,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtNetwork/qsslconfiguration.h:169
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:187
 // [4] QSslConfiguration::NextProtocolNegotiationStatus nextProtocolNegotiationStatus()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT

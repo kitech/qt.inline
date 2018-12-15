@@ -176,7 +176,19 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:76
+// since 5.11
+// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:75
+// [8] QUrl initiator()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK23QWebEngineUrlRequestJob9initiatorEv(void *this_) {
+  auto rv = ((QWebEngineUrlRequestJob*)this_)->initiator();
+return new QUrl(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:77
 // [-2] void reply(const QByteArray &, QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QWebEngineUrlRequestJob5replyERK10QByteArrayP9QIODevice(void *this_, QByteArray* contentType, QIODevice * device) {
@@ -184,7 +196,7 @@ void C_ZN23QWebEngineUrlRequestJob5replyERK10QByteArrayP9QIODevice(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:77
+// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:78
 // [-2] void fail(QWebEngineUrlRequestJob::Error)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QWebEngineUrlRequestJob4failENS_5ErrorE(void *this_, QWebEngineUrlRequestJob::Error error) {
@@ -192,7 +204,7 @@ void C_ZN23QWebEngineUrlRequestJob4failENS_5ErrorE(void *this_, QWebEngineUrlReq
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:78
+// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:79
 // [-2] void redirect(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QWebEngineUrlRequestJob8redirectERK4QUrl(void *this_, QUrl* url) {

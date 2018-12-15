@@ -198,92 +198,68 @@ void C_ZNK13QLatin1String4backEv(void *this_) {
 #endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:115
 // [1] bool startsWith(QStringView, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->startsWith(*s, cs);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:117
 // [1] bool startsWith(QLatin1String, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->startsWith(*s, cs);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:119
 // [1] bool startsWith(QChar)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithE5QChar(void *this_, QChar* c) {
   return (bool)((QLatin1String*)this_)->startsWith(*c);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:121
 // [1] bool startsWith(QChar, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->startsWith(*c, cs);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:124
 // [1] bool endsWith(QStringView, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->endsWith(*s, cs);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:126
 // [1] bool endsWith(QLatin1String, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithES_N2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->endsWith(*s, cs);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:128
 // [1] bool endsWith(QChar)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithE5QChar(void *this_, QChar* c) {
   return (bool)((QLatin1String*)this_)->endsWith(*c);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qstring.h:130
 // [1] bool endsWith(QChar, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QLatin1String8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
   return (bool)((QLatin1String*)this_)->endsWith(*c, cs);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
 // since 5.10

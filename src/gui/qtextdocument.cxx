@@ -439,22 +439,28 @@ return new QTextCursor(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qtextdocument.h:177
 // [8] QTextCursor find(const QRegularExpression &, int, QTextDocument::FindFlags)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK18QRegularExpressioni6QFlagsINS_8FindFlagEE(void *this_, QRegularExpression* expr, int from, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*expr, from, options);
 return new QTextCursor(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qtextdocument.h:178
 // [8] QTextCursor find(const QRegularExpression &, const QTextCursor &, QTextDocument::FindFlags)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QTextDocument4findERK18QRegularExpressionRK11QTextCursor6QFlagsINS_8FindFlagEE(void *this_, QRegularExpression* expr, QTextCursor* cursor, QFlags<QTextDocument::FindFlag> options) {
   auto rv = ((QTextDocument*)this_)->find(*expr, *cursor, options);
 return new QTextCursor(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:181
@@ -834,12 +840,15 @@ void C_ZN13QTextDocument4redoEP11QTextCursor(void *this_, QTextCursor * cursor) 
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtGui/qtextdocument.h:259
 // [-2] void clearUndoRedoStacks(QTextDocument::Stacks)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void C_ZN13QTextDocument19clearUndoRedoStacksENS_6StacksE(void *this_, QTextDocument::Stacks historyToClear) {
   ((QTextDocument*)this_)->clearUndoRedoStacks(historyToClear);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:261

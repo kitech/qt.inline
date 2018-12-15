@@ -84,6 +84,18 @@ void* C_ZN22QAndroidJniEnvironmentptEv(void *this_) {
   return (void*)((QAndroidJniEnvironment*)this_)->operator->();
 }
 
+// Public Visibility=Default Availability=Available
+// since Qt 5.12
+// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:60
+// [8] jclass findClass(const char *)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void C_ZN22QAndroidJniEnvironment9findClassEPKc(void *this_, const char * className) {
+  auto rv = ((QAndroidJniEnvironment*)this_)->findClass(className);
+/*return rv;*/
+}
+#endif // QT_VERSION >= 0x050c00
+
 //  main block end
 
 //  use block begin

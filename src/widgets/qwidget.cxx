@@ -1554,12 +1554,15 @@ void C_ZN7QWidget9clearMaskEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.3
 // /usr/include/qt/QtWidgets/qwidget.h:340
 // [-2] void render(QPaintDevice *, const QPoint &, const QRegion &, QWidget::RenderFlags)
+#if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
 void C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPaintDevice * target, QPoint* targetOffset, QRegion* sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
   ((QWidget*)this_)->render(target, *targetOffset, *sourceRegion, renderFlags);
 }
+#endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:344

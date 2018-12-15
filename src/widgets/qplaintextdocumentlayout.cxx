@@ -124,7 +124,7 @@ void* C_QPlainTextDocumentLayout_init_staticMetaObject(void* this_, void* strdat
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:322
+// /usr/include/qt/QtWidgets/qplaintextedit.h:323
 // [-2] void documentChanged(int, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QPlainTextDocumentLayout15documentChangedEiii(void *this_, int from, int arg1, int charsAdded) {
@@ -132,7 +132,7 @@ void C_ZN24QPlainTextDocumentLayout15documentChangedEiii(void *this_, int from, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// /usr/include/qt/QtWidgets/qplaintextedit.h:298
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QPlainTextDocumentLayout10metaObjectEv(void *this_) {
@@ -140,7 +140,7 @@ void* C_ZNK24QPlainTextDocumentLayout10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// /usr/include/qt/QtWidgets/qplaintextedit.h:298
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QPlainTextDocumentLayout11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -148,7 +148,7 @@ void* C_ZN24QPlainTextDocumentLayout11qt_metacastEPKc(void *this_, const char * 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// /usr/include/qt/QtWidgets/qplaintextedit.h:298
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN24QPlainTextDocumentLayout11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -156,7 +156,7 @@ int C_ZN24QPlainTextDocumentLayout11qt_metacallEN11QMetaObject4CallEiPPv(void *t
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// /usr/include/qt/QtWidgets/qplaintextedit.h:298
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QPlainTextDocumentLayout2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -165,7 +165,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:297
+// /usr/include/qt/QtWidgets/qplaintextedit.h:298
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QPlainTextDocumentLayout6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -174,7 +174,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:302
+// /usr/include/qt/QtWidgets/qplaintextedit.h:303
 // [-2] void QPlainTextDocumentLayout(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QPlainTextDocumentLayoutC2EP13QTextDocument(QTextDocument * document) {
@@ -183,14 +183,14 @@ void* C_ZN24QPlainTextDocumentLayoutC2EP13QTextDocument(QTextDocument * document
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:303
+// /usr/include/qt/QtWidgets/qplaintextedit.h:304
 // [-2] void ~QPlainTextDocumentLayout()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QPlainTextDocumentLayoutD2Ev(void *this_) {
   delete (QPlainTextDocumentLayout*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:305
+// /usr/include/qt/QtWidgets/qplaintextedit.h:306
 // [-2] void draw(QPainter *, const QAbstractTextDocumentLayout::PaintContext &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QPlainTextDocumentLayout4drawEP8QPainterRKN27QAbstractTextDocumentLayout12PaintContextE(void *this_, QPainter * arg0, QAbstractTextDocumentLayout::PaintContext* arg1) {
@@ -198,7 +198,7 @@ void C_ZN24QPlainTextDocumentLayout4drawEP8QPainterRKN27QAbstractTextDocumentLay
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:306
+// /usr/include/qt/QtWidgets/qplaintextedit.h:307
 // [4] int hitTest(const QPointF &, Qt::HitTestAccuracy)
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QPlainTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(void *this_, QPointF* arg0, Qt::HitTestAccuracy arg1) {
@@ -206,7 +206,7 @@ int C_ZNK24QPlainTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(voi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:308
+// /usr/include/qt/QtWidgets/qplaintextedit.h:309
 // [4] int pageCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QPlainTextDocumentLayout9pageCountEv(void *this_) {
@@ -214,7 +214,7 @@ int C_ZNK24QPlainTextDocumentLayout9pageCountEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:309
+// /usr/include/qt/QtWidgets/qplaintextedit.h:310
 // [16] QSizeF documentSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QPlainTextDocumentLayout12documentSizeEv(void *this_) {
@@ -223,7 +223,7 @@ return new QSizeF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:311
+// /usr/include/qt/QtWidgets/qplaintextedit.h:312
 // [32] QRectF frameBoundingRect(QTextFrame *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QPlainTextDocumentLayout17frameBoundingRectEP10QTextFrame(void *this_, QTextFrame * arg0) {
@@ -232,7 +232,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:312
+// /usr/include/qt/QtWidgets/qplaintextedit.h:313
 // [32] QRectF blockBoundingRect(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QPlainTextDocumentLayout17blockBoundingRectERK10QTextBlock(void *this_, QTextBlock* block) {
@@ -241,7 +241,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:314
+// /usr/include/qt/QtWidgets/qplaintextedit.h:315
 // [-2] void ensureBlockLayout(const QTextBlock &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK24QPlainTextDocumentLayout17ensureBlockLayoutERK10QTextBlock(void *this_, QTextBlock* block) {
@@ -249,7 +249,7 @@ void C_ZNK24QPlainTextDocumentLayout17ensureBlockLayoutERK10QTextBlock(void *thi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:316
+// /usr/include/qt/QtWidgets/qplaintextedit.h:317
 // [-2] void setCursorWidth(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QPlainTextDocumentLayout14setCursorWidthEi(void *this_, int width) {
@@ -257,7 +257,7 @@ void C_ZN24QPlainTextDocumentLayout14setCursorWidthEi(void *this_, int width) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:317
+// /usr/include/qt/QtWidgets/qplaintextedit.h:318
 // [4] int cursorWidth()
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QPlainTextDocumentLayout11cursorWidthEv(void *this_) {
@@ -265,7 +265,7 @@ int C_ZNK24QPlainTextDocumentLayout11cursorWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:319
+// /usr/include/qt/QtWidgets/qplaintextedit.h:320
 // [-2] void requestUpdate()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QPlainTextDocumentLayout13requestUpdateEv(void *this_) {

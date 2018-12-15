@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtCore/qpauseanimation.h
 #ifndef protected
@@ -138,7 +139,7 @@ void* C_QPauseAnimation_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:65
+// /usr/include/qt/QtCore/qpauseanimation.h:64
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QPauseAnimation5eventEP6QEvent(void *this_, QEvent * e) {
@@ -146,7 +147,7 @@ bool C_ZN15QPauseAnimation5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:66
+// /usr/include/qt/QtCore/qpauseanimation.h:65
 // [-2] void updateCurrentTime(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QPauseAnimation17updateCurrentTimeEi(void *this_, int arg0) {
@@ -154,7 +155,7 @@ void C_ZN15QPauseAnimation17updateCurrentTimeEi(void *this_, int arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:54
+// /usr/include/qt/QtCore/qpauseanimation.h:53
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QPauseAnimation10metaObjectEv(void *this_) {
@@ -162,7 +163,7 @@ void* C_ZNK15QPauseAnimation10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:54
+// /usr/include/qt/QtCore/qpauseanimation.h:53
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QPauseAnimation11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -170,7 +171,7 @@ void* C_ZN15QPauseAnimation11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:54
+// /usr/include/qt/QtCore/qpauseanimation.h:53
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN15QPauseAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -178,7 +179,7 @@ int C_ZN15QPauseAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMe
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:54
+// /usr/include/qt/QtCore/qpauseanimation.h:53
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QPauseAnimation2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -187,7 +188,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:54
+// /usr/include/qt/QtCore/qpauseanimation.h:53
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QPauseAnimation6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -196,7 +197,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:57
+// /usr/include/qt/QtCore/qpauseanimation.h:56
 // [-2] void QPauseAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QPauseAnimationC2EP7QObject(QObject * parent) {
@@ -205,7 +206,7 @@ void* C_ZN15QPauseAnimationC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:58
+// /usr/include/qt/QtCore/qpauseanimation.h:57
 // [-2] void QPauseAnimation(int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QPauseAnimationC2EiP7QObject(int msecs, QObject * parent) {
@@ -214,14 +215,14 @@ void* C_ZN15QPauseAnimationC2EiP7QObject(int msecs, QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:59
+// /usr/include/qt/QtCore/qpauseanimation.h:58
 // [-2] void ~QPauseAnimation()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QPauseAnimationD2Ev(void *this_) {
   delete (QPauseAnimation*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:61
+// /usr/include/qt/QtCore/qpauseanimation.h:60
 // [4] int duration()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QPauseAnimation8durationEv(void *this_) {
@@ -229,7 +230,7 @@ int C_ZNK15QPauseAnimation8durationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:62
+// /usr/include/qt/QtCore/qpauseanimation.h:61
 // [-2] void setDuration(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QPauseAnimation11setDurationEi(void *this_, int msecs) {
@@ -252,4 +253,5 @@ void C_ZN15QPauseAnimation11setDurationEi(void *this_, int msecs) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

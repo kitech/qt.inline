@@ -114,6 +114,14 @@ bool C_ZNK12QTextDecoder10hasFailureEv(void *this_) {
   return (bool)((QTextDecoder*)this_)->hasFailure();
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:165
+// [1] bool needsMoreData()
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QTextDecoder13needsMoreDataEv(void *this_) {
+  return (bool)((QTextDecoder*)this_)->needsMoreData();
+}
+
 //  main block end
 
 //  use block begin

@@ -189,7 +189,7 @@ void* C_QTreeWidget_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:349
+// /usr/include/qt/QtWidgets/qtreewidget.h:350
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QTreeWidget5eventEP6QEvent(void *this_, QEvent * e) {
@@ -197,7 +197,7 @@ bool C_ZN11QTreeWidget5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:350
+// /usr/include/qt/QtWidgets/qtreewidget.h:351
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTreeWidget9mimeTypesEv(void *this_) {
@@ -206,7 +206,7 @@ return new QStringList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:354
+// /usr/include/qt/QtWidgets/qtreewidget.h:355
 // [8] QMimeData * mimeData(const QList<QTreeWidgetItem *>)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTreeWidget8mimeDataE5QListIP15QTreeWidgetItemE(void *this_, const QList<QTreeWidgetItem *> items) {
@@ -214,7 +214,7 @@ void* C_ZNK11QTreeWidget8mimeDataE5QListIP15QTreeWidgetItemE(void *this_, const 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:356
+// /usr/include/qt/QtWidgets/qtreewidget.h:357
 // [1] bool dropMimeData(QTreeWidgetItem *, int, const QMimeData *, Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE(void *this_, QTreeWidgetItem * parent, int index, const QMimeData * data, Qt::DropAction action) {
@@ -222,7 +222,7 @@ bool C_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropAc
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:358
+// /usr/include/qt/QtWidgets/qtreewidget.h:359
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK11QTreeWidget20supportedDropActionsEv(void *this_) {
@@ -230,7 +230,7 @@ Qt::DropActions C_ZNK11QTreeWidget20supportedDropActionsEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:373
+// /usr/include/qt/QtWidgets/qtreewidget.h:376
 // [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
@@ -779,7 +779,7 @@ void C_ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(void *this_, QTreeWidget
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:342
+// /usr/include/qt/QtWidgets/qtreewidget.h:343
 // [-2] void itemChanged(QTreeWidgetItem *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(void *this_, QTreeWidgetItem * item, int column) {
@@ -787,7 +787,7 @@ void C_ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(void *this_, QTreeWidget
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:343
+// /usr/include/qt/QtWidgets/qtreewidget.h:344
 // [-2] void itemExpanded(QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(void *this_, QTreeWidgetItem * item) {
@@ -795,7 +795,7 @@ void C_ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(void *this_, QTreeWidget
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:344
+// /usr/include/qt/QtWidgets/qtreewidget.h:345
 // [-2] void itemCollapsed(QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(void *this_, QTreeWidgetItem * item) {
@@ -803,7 +803,7 @@ void C_ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(void *this_, QTreeWidge
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:345
+// /usr/include/qt/QtWidgets/qtreewidget.h:346
 // [-2] void currentItemChanged(QTreeWidgetItem *, QTreeWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(void *this_, QTreeWidgetItem * current, QTreeWidgetItem * previous) {
@@ -811,7 +811,7 @@ void C_ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(void *this_, QT
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:346
+// /usr/include/qt/QtWidgets/qtreewidget.h:347
 // [-2] void itemSelectionChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTreeWidget20itemSelectionChangedEv(void *this_) {

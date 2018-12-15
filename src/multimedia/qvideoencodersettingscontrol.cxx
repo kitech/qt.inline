@@ -137,9 +137,9 @@ public:
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // [8] QString videoCodecDescription(const QString &)
-  virtual QString videoCodecDescription(const QString & codecName) const override {
+  virtual QString videoCodecDescription(const QString & codec) const override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"videoCodecDescription", &handled, 1, (uint64_t)&codecName, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"videoCodecDescription", &handled, 1, (uint64_t)&codec, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     if (irv == 0) { return (QString){};}
     auto prv = (QString*)(irv); auto orv = *prv; delete(prv); return orv;
@@ -287,8 +287,8 @@ return new QStringList(rv);
 // /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:74
 // [8] QString videoCodecDescription(const QString &)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK28QVideoEncoderSettingsControl21videoCodecDescriptionERK7QString(void *this_, QString* codecName) {
-  auto rv = ((QVideoEncoderSettingsControl*)this_)->videoCodecDescription(*codecName);
+void* C_ZNK28QVideoEncoderSettingsControl21videoCodecDescriptionERK7QString(void *this_, QString* codec) {
+  auto rv = ((QVideoEncoderSettingsControl*)this_)->videoCodecDescription(*codec);
 return new QString(rv);
 }
 

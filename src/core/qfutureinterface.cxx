@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qfutureinterface.h
 #ifndef protected
 #define protected public
@@ -53,7 +54,7 @@ MyQFutureInterface(QFutureInterfaceBase::State initialState) : QFutureInterface<
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:282
+// /usr/include/qt/QtCore/qfutureinterface.h:281
 // [-2] void QFutureInterface(QFutureInterfaceBase::State)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFutureInterfaceIvEC2EN20QFutureInterfaceBase5StateE(QFutureInterfaceBase::State initialState) {
@@ -61,7 +62,7 @@ void* C_ZN16QFutureInterfaceIvEC2EN20QFutureInterfaceBase5StateE(QFutureInterfac
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:286
+// /usr/include/qt/QtCore/qfutureinterface.h:285
 // [16] QFutureInterface<void> canceledResult()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFutureInterfaceIvE14canceledResultEv() {
@@ -70,7 +71,7 @@ return new QFutureInterface<void>(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:290
+// /usr/include/qt/QtCore/qfutureinterface.h:289
 // [16] QFuture<void> future()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFutureInterfaceIvE6futureEv(void *this_) {
@@ -79,7 +80,7 @@ return new QFuture<void>(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:292
+// /usr/include/qt/QtCore/qfutureinterface.h:291
 // [-2] void reportResult(const void *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFutureInterfaceIvE12reportResultEPKvi(void *this_, const void * arg0, int arg1) {
@@ -87,7 +88,7 @@ void C_ZN16QFutureInterfaceIvE12reportResultEPKvi(void *this_, const void * arg0
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:293
+// /usr/include/qt/QtCore/qfutureinterface.h:292
 // [-2] void reportResults(const QVector<void> &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFutureInterfaceIvE13reportResultsERK7QVectorIvEi(void *this_, QVector<void>* arg0, int arg1) {
@@ -95,7 +96,7 @@ void C_ZN16QFutureInterfaceIvE13reportResultsERK7QVectorIvEi(void *this_, QVecto
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:294
+// /usr/include/qt/QtCore/qfutureinterface.h:293
 // [-2] void reportFinished(const void *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFutureInterfaceIvE14reportFinishedEPKv(void *this_, const void * arg0) {
@@ -123,4 +124,5 @@ void C_ZN16QFutureInterfaceD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

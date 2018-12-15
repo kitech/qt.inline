@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
 #define protected public
@@ -53,7 +54,7 @@ MyQSemaphore(int n) : QSemaphore(n) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:55
+// /usr/include/qt/QtCore/qsemaphore.h:54
 // [-2] void QSemaphore(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QSemaphoreC2Ei(int n) {
@@ -61,14 +62,14 @@ void* C_ZN10QSemaphoreC2Ei(int n) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:56
+// /usr/include/qt/QtCore/qsemaphore.h:55
 // [-2] void ~QSemaphore()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSemaphoreD2Ev(void *this_) {
   delete (QSemaphore*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:58
+// /usr/include/qt/QtCore/qsemaphore.h:57
 // [-2] void acquire(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSemaphore7acquireEi(void *this_, int n) {
@@ -76,7 +77,7 @@ void C_ZN10QSemaphore7acquireEi(void *this_, int n) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:59
+// /usr/include/qt/QtCore/qsemaphore.h:58
 // [1] bool tryAcquire(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QSemaphore10tryAcquireEi(void *this_, int n) {
@@ -84,7 +85,7 @@ bool C_ZN10QSemaphore10tryAcquireEi(void *this_, int n) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:60
+// /usr/include/qt/QtCore/qsemaphore.h:59
 // [1] bool tryAcquire(int, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QSemaphore10tryAcquireEii(void *this_, int n, int timeout) {
@@ -92,7 +93,7 @@ bool C_ZN10QSemaphore10tryAcquireEii(void *this_, int n, int timeout) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:62
+// /usr/include/qt/QtCore/qsemaphore.h:61
 // [-2] void release(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSemaphore7releaseEi(void *this_, int n) {
@@ -100,7 +101,7 @@ void C_ZN10QSemaphore7releaseEi(void *this_, int n) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:64
+// /usr/include/qt/QtCore/qsemaphore.h:63
 // [4] int available()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QSemaphore9availableEv(void *this_) {
@@ -123,4 +124,5 @@ int C_ZNK10QSemaphore9availableEv(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -54,7 +54,7 @@ MyQTouchEvent(QEvent::Type eventType, QTouchDevice * device, QFlags<Qt::Keyboard
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:942
+// /usr/include/qt/QtGui/qevent.h:947
 // [-2] void QTouchEvent(QEvent::Type, QTouchDevice *, Qt::KeyboardModifiers, Qt::TouchPointStates, const QList<QTouchEvent::TouchPoint> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QTouchEventC2EN6QEvent4TypeEP12QTouchDevice6QFlagsIN2Qt16KeyboardModifierEES4_INS5_15TouchPointStateEERK5QListINS_10TouchPointEE(QEvent::Type eventType, QTouchDevice * device, QFlags<Qt::KeyboardModifier> modifiers, QFlags<Qt::TouchPointState> touchPointStates, QList<QTouchEvent::TouchPoint>* touchPoints) {
@@ -62,14 +62,14 @@ void* C_ZN11QTouchEventC2EN6QEvent4TypeEP12QTouchDevice6QFlagsIN2Qt16KeyboardMod
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:947
+// /usr/include/qt/QtGui/qevent.h:952
 // [-2] void ~QTouchEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEventD2Ev(void *this_) {
   delete (QTouchEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:949
+// /usr/include/qt/QtGui/qevent.h:954
 // [8] QWindow * window()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTouchEvent6windowEv(void *this_) {
@@ -77,7 +77,7 @@ void* C_ZNK11QTouchEvent6windowEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:950
+// /usr/include/qt/QtGui/qevent.h:955
 // [8] QObject * target()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTouchEvent6targetEv(void *this_) {
@@ -85,7 +85,7 @@ void* C_ZNK11QTouchEvent6targetEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:954
+// /usr/include/qt/QtGui/qevent.h:959
 // [4] Qt::TouchPointStates touchPointStates()
 extern "C" Q_DECL_EXPORT
 Qt::TouchPointStates C_ZNK11QTouchEvent16touchPointStatesEv(void *this_) {
@@ -93,7 +93,7 @@ Qt::TouchPointStates C_ZNK11QTouchEvent16touchPointStatesEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:955
+// /usr/include/qt/QtGui/qevent.h:960
 // [8] const QList<QTouchEvent::TouchPoint> & touchPoints()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTouchEvent11touchPointsEv(void *this_) {
@@ -102,7 +102,7 @@ return new QList<QTouchEvent::TouchPoint>(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:956
+// /usr/include/qt/QtGui/qevent.h:961
 // [8] QTouchDevice * device()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QTouchEvent6deviceEv(void *this_) {
@@ -110,7 +110,7 @@ void* C_ZNK11QTouchEvent6deviceEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:959
+// /usr/include/qt/QtGui/qevent.h:964
 // [-2] void setWindow(QWindow *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent9setWindowEP7QWindow(void *this_, QWindow * awindow) {
@@ -118,7 +118,7 @@ void C_ZN11QTouchEvent9setWindowEP7QWindow(void *this_, QWindow * awindow) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:960
+// /usr/include/qt/QtGui/qevent.h:965
 // [-2] void setTarget(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent9setTargetEP7QObject(void *this_, QObject * atarget) {
@@ -126,7 +126,7 @@ void C_ZN11QTouchEvent9setTargetEP7QObject(void *this_, QObject * atarget) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:961
+// /usr/include/qt/QtGui/qevent.h:966
 // [-2] void setTouchPointStates(Qt::TouchPointStates)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent19setTouchPointStatesE6QFlagsIN2Qt15TouchPointStateEE(void *this_, QFlags<Qt::TouchPointState> aTouchPointStates) {
@@ -134,7 +134,7 @@ void C_ZN11QTouchEvent19setTouchPointStatesE6QFlagsIN2Qt15TouchPointStateEE(void
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:962
+// /usr/include/qt/QtGui/qevent.h:967
 // [-2] void setTouchPoints(const QList<QTouchEvent::TouchPoint> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent14setTouchPointsERK5QListINS_10TouchPointEE(void *this_, QList<QTouchEvent::TouchPoint>* atouchPoints) {
@@ -142,7 +142,7 @@ void C_ZN11QTouchEvent14setTouchPointsERK5QListINS_10TouchPointEE(void *this_, Q
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:963
+// /usr/include/qt/QtGui/qevent.h:968
 // [-2] void setDevice(QTouchDevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTouchEvent9setDeviceEP12QTouchDevice(void *this_, QTouchDevice * adevice) {

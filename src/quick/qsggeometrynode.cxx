@@ -53,7 +53,7 @@ MyQSGGeometryNode() : QSGGeometryNode() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:231
+// /usr/include/qt/QtQuick/qsgnode.h:226
 // [-2] void QSGGeometryNode()
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QSGGeometryNodeC2Ev() {
@@ -61,14 +61,14 @@ void* C_ZN15QSGGeometryNodeC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:232
+// /usr/include/qt/QtQuick/qsgnode.h:227
 // [-2] void ~QSGGeometryNode()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNodeD2Ev(void *this_) {
   delete (QSGGeometryNode*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:234
+// /usr/include/qt/QtQuick/qsgnode.h:229
 // [-2] void setMaterial(QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNode11setMaterialEP11QSGMaterial(void *this_, QSGMaterial * material) {
@@ -76,7 +76,7 @@ void C_ZN15QSGGeometryNode11setMaterialEP11QSGMaterial(void *this_, QSGMaterial 
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:235
+// /usr/include/qt/QtQuick/qsgnode.h:230
 // [8] QSGMaterial * material()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSGGeometryNode8materialEv(void *this_) {
@@ -84,7 +84,7 @@ void* C_ZNK15QSGGeometryNode8materialEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:237
+// /usr/include/qt/QtQuick/qsgnode.h:232
 // [-2] void setOpaqueMaterial(QSGMaterial *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNode17setOpaqueMaterialEP11QSGMaterial(void *this_, QSGMaterial * material) {
@@ -92,7 +92,7 @@ void C_ZN15QSGGeometryNode17setOpaqueMaterialEP11QSGMaterial(void *this_, QSGMat
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:238
+// /usr/include/qt/QtQuick/qsgnode.h:233
 // [8] QSGMaterial * opaqueMaterial()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSGGeometryNode14opaqueMaterialEv(void *this_) {
@@ -100,7 +100,7 @@ void* C_ZNK15QSGGeometryNode14opaqueMaterialEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:240
+// /usr/include/qt/QtQuick/qsgnode.h:235
 // [8] QSGMaterial * activeMaterial()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QSGGeometryNode14activeMaterialEv(void *this_) {
@@ -108,7 +108,7 @@ void* C_ZNK15QSGGeometryNode14activeMaterialEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:242
+// /usr/include/qt/QtQuick/qsgnode.h:237
 // [-2] void setRenderOrder(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNode14setRenderOrderEi(void *this_, int order) {
@@ -116,7 +116,7 @@ void C_ZN15QSGGeometryNode14setRenderOrderEi(void *this_, int order) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:243
+// /usr/include/qt/QtQuick/qsgnode.h:238
 // [4] int renderOrder()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QSGGeometryNode11renderOrderEv(void *this_) {
@@ -124,7 +124,7 @@ int C_ZNK15QSGGeometryNode11renderOrderEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:245
+// /usr/include/qt/QtQuick/qsgnode.h:240
 // [-2] void setInheritedOpacity(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSGGeometryNode19setInheritedOpacityEd(void *this_, qreal opacity) {
@@ -132,7 +132,7 @@ void C_ZN15QSGGeometryNode19setInheritedOpacityEd(void *this_, qreal opacity) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:246
+// /usr/include/qt/QtQuick/qsgnode.h:241
 // [8] qreal inheritedOpacity()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK15QSGGeometryNode16inheritedOpacityEv(void *this_) {

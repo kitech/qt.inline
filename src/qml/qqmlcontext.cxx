@@ -112,7 +112,7 @@ void* C_QQmlContext_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:61
+// /usr/include/qt/QtQml/qqmlcontext.h:63
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext10metaObjectEv(void *this_) {
@@ -120,7 +120,7 @@ void* C_ZNK11QQmlContext10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:61
+// /usr/include/qt/QtQml/qqmlcontext.h:63
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContext11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +128,7 @@ void* C_ZN11QQmlContext11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:61
+// /usr/include/qt/QtQml/qqmlcontext.h:63
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QQmlContext11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +136,7 @@ int C_ZN11QQmlContext11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaOb
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:61
+// /usr/include/qt/QtQml/qqmlcontext.h:63
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContext2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +145,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:61
+// /usr/include/qt/QtQml/qqmlcontext.h:63
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContext6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +154,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:65
+// /usr/include/qt/QtQml/qqmlcontext.h:69
 // [-2] void QQmlContext(QQmlEngine *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContextC2EP10QQmlEngineP7QObject(QQmlEngine * parent, QObject * objParent) {
@@ -162,7 +162,7 @@ void* C_ZN11QQmlContextC2EP10QQmlEngineP7QObject(QQmlEngine * parent, QObject * 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:66
+// /usr/include/qt/QtQml/qqmlcontext.h:70
 // [-2] void QQmlContext(QQmlContext *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContextC2EPS_P7QObject(QQmlContext * parent, QObject * objParent) {
@@ -170,14 +170,14 @@ void* C_ZN11QQmlContextC2EPS_P7QObject(QQmlContext * parent, QObject * objParent
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:67
+// /usr/include/qt/QtQml/qqmlcontext.h:71
 // [-2] void ~QQmlContext()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContextD2Ev(void *this_) {
   delete (QQmlContext*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:69
+// /usr/include/qt/QtQml/qqmlcontext.h:73
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QQmlContext7isValidEv(void *this_) {
@@ -185,7 +185,7 @@ bool C_ZNK11QQmlContext7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:71
+// /usr/include/qt/QtQml/qqmlcontext.h:75
 // [8] QQmlEngine * engine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext6engineEv(void *this_) {
@@ -193,7 +193,7 @@ void* C_ZNK11QQmlContext6engineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:72
+// /usr/include/qt/QtQml/qqmlcontext.h:76
 // [8] QQmlContext * parentContext()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext13parentContextEv(void *this_) {
@@ -201,7 +201,7 @@ void* C_ZNK11QQmlContext13parentContextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:74
+// /usr/include/qt/QtQml/qqmlcontext.h:78
 // [8] QObject * contextObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext13contextObjectEv(void *this_) {
@@ -209,7 +209,7 @@ void* C_ZNK11QQmlContext13contextObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:75
+// /usr/include/qt/QtQml/qqmlcontext.h:79
 // [-2] void setContextObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext16setContextObjectEP7QObject(void *this_, QObject * arg0) {
@@ -217,7 +217,7 @@ void C_ZN11QQmlContext16setContextObjectEP7QObject(void *this_, QObject * arg0) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:77
+// /usr/include/qt/QtQml/qqmlcontext.h:81
 // [16] QVariant contextProperty(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext15contextPropertyERK7QString(void *this_, QString* arg0) {
@@ -226,7 +226,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:78
+// /usr/include/qt/QtQml/qqmlcontext.h:82
 // [-2] void setContextProperty(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext18setContextPropertyERK7QStringP7QObject(void *this_, QString* arg0, QObject * arg1) {
@@ -234,7 +234,7 @@ void C_ZN11QQmlContext18setContextPropertyERK7QStringP7QObject(void *this_, QStr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:79
+// /usr/include/qt/QtQml/qqmlcontext.h:83
 // [-2] void setContextProperty(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext18setContextPropertyERK7QStringRK8QVariant(void *this_, QString* arg0, QVariant* arg1) {
@@ -242,7 +242,18 @@ void C_ZN11QQmlContext18setContextPropertyERK7QStringRK8QVariant(void *this_, QS
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:82
+// since 5.11
+// /usr/include/qt/QtQml/qqmlcontext.h:84
+// [-2] void setContextProperties(const QVector<QQmlContext::PropertyPair> &)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZN11QQmlContext20setContextPropertiesERK7QVectorINS_12PropertyPairEE(void *this_, QVector<QQmlContext::PropertyPair>* properties) {
+  ((QQmlContext*)this_)->setContextProperties(*properties);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcontext.h:87
 // [8] QString nameForObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext13nameForObjectEP7QObject(void *this_, QObject * arg0) {
@@ -251,7 +262,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:84
+// /usr/include/qt/QtQml/qqmlcontext.h:89
 // [8] QUrl resolvedUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QQmlContext11resolvedUrlERK4QUrl(void *this_, QUrl* arg0) {
@@ -260,7 +271,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:86
+// /usr/include/qt/QtQml/qqmlcontext.h:91
 // [-2] void setBaseUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QQmlContext10setBaseUrlERK4QUrl(void *this_, QUrl* arg0) {
@@ -268,7 +279,7 @@ void C_ZN11QQmlContext10setBaseUrlERK4QUrl(void *this_, QUrl* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcontext.h:87
+// /usr/include/qt/QtQml/qqmlcontext.h:92
 // [8] QUrl baseUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QQmlContext7baseUrlEv(void *this_) {

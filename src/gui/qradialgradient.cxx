@@ -65,7 +65,7 @@ MyQRadialGradient(qreal cx, qreal cy, qreal centerRadius, qreal fx, qreal fy, qr
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:274
+// /usr/include/qt/QtGui/qbrush.h:448
 // [-2] void QRadialGradient()
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2Ev() {
@@ -73,7 +73,7 @@ void* C_ZN15QRadialGradientC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:275
+// /usr/include/qt/QtGui/qbrush.h:449
 // [-2] void QRadialGradient(const QPointF &, qreal, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2ERK7QPointFdS2_(QPointF* center, qreal radius, QPointF* focalPoint) {
@@ -81,7 +81,7 @@ void* C_ZN15QRadialGradientC2ERK7QPointFdS2_(QPointF* center, qreal radius, QPoi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:276
+// /usr/include/qt/QtGui/qbrush.h:450
 // [-2] void QRadialGradient(qreal, qreal, qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2Eddddd(qreal cx, qreal cy, qreal radius, qreal fx, qreal fy) {
@@ -89,7 +89,7 @@ void* C_ZN15QRadialGradientC2Eddddd(qreal cx, qreal cy, qreal radius, qreal fx, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:278
+// /usr/include/qt/QtGui/qbrush.h:452
 // [-2] void QRadialGradient(const QPointF &, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2ERK7QPointFd(QPointF* center, qreal radius) {
@@ -97,7 +97,7 @@ void* C_ZN15QRadialGradientC2ERK7QPointFd(QPointF* center, qreal radius) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:279
+// /usr/include/qt/QtGui/qbrush.h:453
 // [-2] void QRadialGradient(qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QRadialGradientC2Eddd(qreal cx, qreal cy, qreal radius) {
@@ -106,7 +106,7 @@ void* C_ZN15QRadialGradientC2Eddd(qreal cx, qreal cy, qreal radius) {
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qbrush.h:281
+// /usr/include/qt/QtGui/qbrush.h:455
 // [-2] void QRadialGradient(const QPointF &, qreal, const QPointF &, qreal)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -117,7 +117,7 @@ void* C_ZN15QRadialGradientC2ERK7QPointFdS2_d(QPointF* center, qreal centerRadiu
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qbrush.h:282
+// /usr/include/qt/QtGui/qbrush.h:456
 // [-2] void QRadialGradient(qreal, qreal, qreal, qreal, qreal, qreal)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -127,7 +127,7 @@ void* C_ZN15QRadialGradientC2Edddddd(qreal cx, qreal cy, qreal centerRadius, qre
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:284
+// /usr/include/qt/QtGui/qbrush.h:458
 // [16] QPointF center()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QRadialGradient6centerEv(void *this_) {
@@ -137,7 +137,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:285
+// /usr/include/qt/QtGui/qbrush.h:459
 // [-2] void setCenter(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -148,7 +148,7 @@ void C_ZN15QRadialGradient9setCenterERK7QPointF(void *this_, QPointF* center) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:286
+// /usr/include/qt/QtGui/qbrush.h:460
 // [-2] void setCenter(qreal, qreal)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -158,7 +158,7 @@ void C_ZN15QRadialGradient9setCenterEdd(void *this_, qreal x, qreal y) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:288
+// /usr/include/qt/QtGui/qbrush.h:462
 // [16] QPointF focalPoint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QRadialGradient10focalPointEv(void *this_) {
@@ -168,7 +168,7 @@ return new QPointF(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:289
+// /usr/include/qt/QtGui/qbrush.h:463
 // [-2] void setFocalPoint(const QPointF &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -179,7 +179,7 @@ void C_ZN15QRadialGradient13setFocalPointERK7QPointF(void *this_, QPointF* focal
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:290
+// /usr/include/qt/QtGui/qbrush.h:464
 // [-2] void setFocalPoint(qreal, qreal)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -189,7 +189,7 @@ void C_ZN15QRadialGradient13setFocalPointEdd(void *this_, qreal x, qreal y) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:292
+// /usr/include/qt/QtGui/qbrush.h:466
 // [8] qreal radius()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK15QRadialGradient6radiusEv(void *this_) {
@@ -198,7 +198,7 @@ qreal C_ZNK15QRadialGradient6radiusEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qbrush.h:293
+// /usr/include/qt/QtGui/qbrush.h:467
 // [-2] void setRadius(qreal)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -209,7 +209,7 @@ void C_ZN15QRadialGradient9setRadiusEd(void *this_, qreal radius) {
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qbrush.h:295
+// /usr/include/qt/QtGui/qbrush.h:469
 // [8] qreal centerRadius()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -220,7 +220,7 @@ qreal C_ZNK15QRadialGradient12centerRadiusEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qbrush.h:296
+// /usr/include/qt/QtGui/qbrush.h:470
 // [-2] void setCenterRadius(qreal)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -231,7 +231,7 @@ void C_ZN15QRadialGradient15setCenterRadiusEd(void *this_, qreal radius) {
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qbrush.h:298
+// /usr/include/qt/QtGui/qbrush.h:472
 // [8] qreal focalRadius()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -242,7 +242,7 @@ qreal C_ZNK15QRadialGradient11focalRadiusEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qbrush.h:299
+// /usr/include/qt/QtGui/qbrush.h:473
 // [-2] void setFocalRadius(qreal)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT

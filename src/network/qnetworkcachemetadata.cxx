@@ -228,12 +228,15 @@ return new QNetworkCacheMetaData::AttributesMap(rv);
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:100
 // [-2] void setAttributes(const QNetworkCacheMetaData::AttributesMap &)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkCacheMetaData13setAttributesERK5QHashIN15QNetworkRequest9AttributeE8QVariantE(void *this_, const QNetworkCacheMetaData::AttributesMap & attributes) {
   ((QNetworkCacheMetaData*)this_)->setAttributes(attributes);
 }
+#endif // QT_VERSION >= 0x040600
 
 //  main block end
 

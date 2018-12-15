@@ -159,10 +159,10 @@ void* C_QQuickPaintedItem_init_staticMetaObject(void* this_, void* strdat, void*
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:108
+// /usr/include/qt/QtQuick/qquickpainteditem.h:109
 // [-2] void paint(QPainter *)
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:122
+// /usr/include/qt/QtQuick/qquickpainteditem.h:123
 // [8] QSGNode * updatePaintNode(QSGNode *, QQuickItem::UpdatePaintNodeData *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QQuickPaintedItem15updatePaintNodeEP7QSGNodePN10QQuickItem19UpdatePaintNodeDataE(void *this_, QSGNode * arg0, QQuickItem::UpdatePaintNodeData * arg1) {
@@ -170,7 +170,7 @@ void* C_ZN17QQuickPaintedItem15updatePaintNodeEP7QSGNodePN10QQuickItem19UpdatePa
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:123
+// /usr/include/qt/QtQuick/qquickpainteditem.h:124
 // [-2] void releaseResources()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem16releaseResourcesEv(void *this_) {
@@ -178,7 +178,7 @@ void C_ZN17QQuickPaintedItem16releaseResourcesEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:124
+// /usr/include/qt/QtQuick/qquickpainteditem.h:125
 // [-2] void itemChange(QQuickItem::ItemChange, const QQuickItem::ItemChangeData &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem10itemChangeEN10QQuickItem10ItemChangeERKNS0_14ItemChangeDataE(void *this_, QQuickItem::ItemChange arg0, QQuickItem::ItemChangeData* arg1) {
@@ -244,7 +244,7 @@ void C_ZN17QQuickPaintedItemD2Ev(void *this_) {
   delete (QQuickPaintedItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:75
+// /usr/include/qt/QtQuick/qquickpainteditem.h:76
 // [-2] void update(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem6updateERK5QRect(void *this_, QRect* rect) {
@@ -252,7 +252,7 @@ void C_ZN17QQuickPaintedItem6updateERK5QRect(void *this_, QRect* rect) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:77
+// /usr/include/qt/QtQuick/qquickpainteditem.h:78
 // [1] bool opaquePainting()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQuickPaintedItem14opaquePaintingEv(void *this_) {
@@ -260,7 +260,7 @@ bool C_ZNK17QQuickPaintedItem14opaquePaintingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:78
+// /usr/include/qt/QtQuick/qquickpainteditem.h:79
 // [-2] void setOpaquePainting(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem17setOpaquePaintingEb(void *this_, bool opaque) {
@@ -268,7 +268,7 @@ void C_ZN17QQuickPaintedItem17setOpaquePaintingEb(void *this_, bool opaque) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:80
+// /usr/include/qt/QtQuick/qquickpainteditem.h:81
 // [1] bool antialiasing()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQuickPaintedItem12antialiasingEv(void *this_) {
@@ -276,7 +276,7 @@ bool C_ZNK17QQuickPaintedItem12antialiasingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:81
+// /usr/include/qt/QtQuick/qquickpainteditem.h:82
 // [-2] void setAntialiasing(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem15setAntialiasingEb(void *this_, bool enable) {
@@ -284,7 +284,7 @@ void C_ZN17QQuickPaintedItem15setAntialiasingEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:83
+// /usr/include/qt/QtQuick/qquickpainteditem.h:84
 // [1] bool mipmap()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQuickPaintedItem6mipmapEv(void *this_) {
@@ -292,7 +292,7 @@ bool C_ZNK17QQuickPaintedItem6mipmapEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:84
+// /usr/include/qt/QtQuick/qquickpainteditem.h:85
 // [-2] void setMipmap(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem9setMipmapEb(void *this_, bool enable) {
@@ -300,7 +300,7 @@ void C_ZN17QQuickPaintedItem9setMipmapEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:86
+// /usr/include/qt/QtQuick/qquickpainteditem.h:87
 // [4] QQuickPaintedItem::PerformanceHints performanceHints()
 extern "C" Q_DECL_EXPORT
 QQuickPaintedItem::PerformanceHints* C_ZNK17QQuickPaintedItem16performanceHintsEv(void *this_) {
@@ -309,7 +309,7 @@ return new QQuickPaintedItem::PerformanceHints(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:87
+// /usr/include/qt/QtQuick/qquickpainteditem.h:88
 // [-2] void setPerformanceHint(QQuickPaintedItem::PerformanceHint, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem18setPerformanceHintENS_15PerformanceHintEb(void *this_, QQuickPaintedItem::PerformanceHint hint, bool enabled) {
@@ -317,7 +317,7 @@ void C_ZN17QQuickPaintedItem18setPerformanceHintENS_15PerformanceHintEb(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:88
+// /usr/include/qt/QtQuick/qquickpainteditem.h:89
 // [-2] void setPerformanceHints(QQuickPaintedItem::PerformanceHints)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem19setPerformanceHintsE6QFlagsINS_15PerformanceHintEE(void *this_, QFlags<QQuickPaintedItem::PerformanceHint> hints) {
@@ -325,7 +325,7 @@ void C_ZN17QQuickPaintedItem19setPerformanceHintsE6QFlagsINS_15PerformanceHintEE
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:90
+// /usr/include/qt/QtQuick/qquickpainteditem.h:91
 // [32] QRectF contentsBoundingRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQuickPaintedItem20contentsBoundingRectEv(void *this_) {
@@ -334,7 +334,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:92
+// /usr/include/qt/QtQuick/qquickpainteditem.h:93
 // [8] QSize contentsSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQuickPaintedItem12contentsSizeEv(void *this_) {
@@ -343,7 +343,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:93
+// /usr/include/qt/QtQuick/qquickpainteditem.h:94
 // [-2] void setContentsSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem15setContentsSizeERK5QSize(void *this_, QSize* arg0) {
@@ -351,7 +351,7 @@ void C_ZN17QQuickPaintedItem15setContentsSizeERK5QSize(void *this_, QSize* arg0)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:94
+// /usr/include/qt/QtQuick/qquickpainteditem.h:95
 // [-2] void resetContentsSize()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem17resetContentsSizeEv(void *this_) {
@@ -359,7 +359,7 @@ void C_ZN17QQuickPaintedItem17resetContentsSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:96
+// /usr/include/qt/QtQuick/qquickpainteditem.h:97
 // [8] qreal contentsScale()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK17QQuickPaintedItem13contentsScaleEv(void *this_) {
@@ -367,7 +367,7 @@ qreal C_ZNK17QQuickPaintedItem13contentsScaleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:97
+// /usr/include/qt/QtQuick/qquickpainteditem.h:98
 // [-2] void setContentsScale(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem16setContentsScaleEd(void *this_, qreal arg0) {
@@ -375,7 +375,7 @@ void C_ZN17QQuickPaintedItem16setContentsScaleEd(void *this_, qreal arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:99
+// /usr/include/qt/QtQuick/qquickpainteditem.h:100
 // [8] QSize textureSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQuickPaintedItem11textureSizeEv(void *this_) {
@@ -384,7 +384,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:100
+// /usr/include/qt/QtQuick/qquickpainteditem.h:101
 // [-2] void setTextureSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem14setTextureSizeERK5QSize(void *this_, QSize* size) {
@@ -392,7 +392,7 @@ void C_ZN17QQuickPaintedItem14setTextureSizeERK5QSize(void *this_, QSize* size) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:102
+// /usr/include/qt/QtQuick/qquickpainteditem.h:103
 // [16] QColor fillColor()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQuickPaintedItem9fillColorEv(void *this_) {
@@ -401,7 +401,7 @@ return new QColor(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:103
+// /usr/include/qt/QtQuick/qquickpainteditem.h:104
 // [-2] void setFillColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem12setFillColorERK6QColor(void *this_, QColor* arg0) {
@@ -409,7 +409,7 @@ void C_ZN17QQuickPaintedItem12setFillColorERK6QColor(void *this_, QColor* arg0) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:105
+// /usr/include/qt/QtQuick/qquickpainteditem.h:106
 // [4] QQuickPaintedItem::RenderTarget renderTarget()
 extern "C" Q_DECL_EXPORT
 QQuickPaintedItem::RenderTarget C_ZNK17QQuickPaintedItem12renderTargetEv(void *this_) {
@@ -417,7 +417,7 @@ QQuickPaintedItem::RenderTarget C_ZNK17QQuickPaintedItem12renderTargetEv(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:106
+// /usr/include/qt/QtQuick/qquickpainteditem.h:107
 // [-2] void setRenderTarget(QQuickPaintedItem::RenderTarget)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem15setRenderTargetENS_12RenderTargetE(void *this_, QQuickPaintedItem::RenderTarget target) {
@@ -425,7 +425,7 @@ void C_ZN17QQuickPaintedItem15setRenderTargetENS_12RenderTargetE(void *this_, QQ
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:108
+// /usr/include/qt/QtQuick/qquickpainteditem.h:109
 // [-2] void paint(QPainter *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem5paintEP8QPainter(void *this_, QPainter * painter) {
@@ -433,7 +433,7 @@ void C_ZN17QQuickPaintedItem5paintEP8QPainter(void *this_, QPainter * painter) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:110
+// /usr/include/qt/QtQuick/qquickpainteditem.h:111
 // [1] bool isTextureProvider()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QQuickPaintedItem17isTextureProviderEv(void *this_) {
@@ -441,7 +441,7 @@ bool C_ZNK17QQuickPaintedItem17isTextureProviderEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:111
+// /usr/include/qt/QtQuick/qquickpainteditem.h:112
 // [8] QSGTextureProvider * textureProvider()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QQuickPaintedItem15textureProviderEv(void *this_) {
@@ -449,7 +449,7 @@ void* C_ZNK17QQuickPaintedItem15textureProviderEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:114
+// /usr/include/qt/QtQuick/qquickpainteditem.h:115
 // [-2] void fillColorChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem16fillColorChangedEv(void *this_) {
@@ -457,7 +457,7 @@ void C_ZN17QQuickPaintedItem16fillColorChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:115
+// /usr/include/qt/QtQuick/qquickpainteditem.h:116
 // [-2] void contentsSizeChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem19contentsSizeChangedEv(void *this_) {
@@ -465,7 +465,7 @@ void C_ZN17QQuickPaintedItem19contentsSizeChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:116
+// /usr/include/qt/QtQuick/qquickpainteditem.h:117
 // [-2] void contentsScaleChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem20contentsScaleChangedEv(void *this_) {
@@ -473,7 +473,7 @@ void C_ZN17QQuickPaintedItem20contentsScaleChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:117
+// /usr/include/qt/QtQuick/qquickpainteditem.h:118
 // [-2] void renderTargetChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem19renderTargetChangedEv(void *this_) {
@@ -481,7 +481,7 @@ void C_ZN17QQuickPaintedItem19renderTargetChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickpainteditem.h:118
+// /usr/include/qt/QtQuick/qquickpainteditem.h:119
 // [-2] void textureSizeChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QQuickPaintedItem18textureSizeChangedEv(void *this_) {

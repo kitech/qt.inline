@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040100
 // /usr/include/qt/QtCore/qabstractproxymodel.h
 #ifndef protected
@@ -193,25 +194,25 @@ void* C_QAbstractProxyModel_init_staticMetaObject(void* this_, void* strdat, voi
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:65
+// /usr/include/qt/QtCore/qabstractproxymodel.h:64
 // [24] QModelIndex mapToSource(const QModelIndex &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:66
+// /usr/include/qt/QtCore/qabstractproxymodel.h:65
 // [24] QModelIndex mapFromSource(const QModelIndex &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:178
+// /usr/include/qt/QtCore/qabstractitemmodel.h:182
 // [24] QModelIndex index(int, int, const QModelIndex &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:180
+// /usr/include/qt/QtCore/qabstractitemmodel.h:184
 // [24] QModelIndex parent(const QModelIndex &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:183
+// /usr/include/qt/QtCore/qabstractitemmodel.h:187
 // [4] int rowCount(const QModelIndex &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:184
+// /usr/include/qt/QtCore/qabstractitemmodel.h:188
 // [4] int columnCount(const QModelIndex &)
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// /usr/include/qt/QtCore/qabstractproxymodel.h:54
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel10metaObjectEv(void *this_) {
@@ -219,7 +220,7 @@ void* C_ZNK19QAbstractProxyModel10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// /usr/include/qt/QtCore/qabstractproxymodel.h:54
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModel11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -227,7 +228,7 @@ void* C_ZN19QAbstractProxyModel11qt_metacastEPKc(void *this_, const char * arg0)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// /usr/include/qt/QtCore/qabstractproxymodel.h:54
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN19QAbstractProxyModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -235,7 +236,7 @@ int C_ZN19QAbstractProxyModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_,
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// /usr/include/qt/QtCore/qabstractproxymodel.h:54
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModel2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -244,7 +245,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:55
+// /usr/include/qt/QtCore/qabstractproxymodel.h:54
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -253,7 +254,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:59
+// /usr/include/qt/QtCore/qabstractproxymodel.h:58
 // [-2] void QAbstractProxyModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
@@ -261,14 +262,14 @@ void* C_ZN19QAbstractProxyModelC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:60
+// /usr/include/qt/QtCore/qabstractproxymodel.h:59
 // [-2] void ~QAbstractProxyModel()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModelD2Ev(void *this_) {
   delete (QAbstractProxyModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:62
+// /usr/include/qt/QtCore/qabstractproxymodel.h:61
 // [-2] void setSourceModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel14setSourceModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * sourceModel) {
@@ -276,7 +277,7 @@ void C_ZN19QAbstractProxyModel14setSourceModelEP18QAbstractItemModel(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:63
+// /usr/include/qt/QtCore/qabstractproxymodel.h:62
 // [8] QAbstractItemModel * sourceModel()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel11sourceModelEv(void *this_) {
@@ -284,7 +285,7 @@ void* C_ZNK19QAbstractProxyModel11sourceModelEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:65
+// /usr/include/qt/QtCore/qabstractproxymodel.h:64
 // [24] QModelIndex mapToSource(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel11mapToSourceERK11QModelIndex(void *this_, QModelIndex* proxyIndex) {
@@ -293,7 +294,7 @@ return new QModelIndex(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:66
+// /usr/include/qt/QtCore/qabstractproxymodel.h:65
 // [24] QModelIndex mapFromSource(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel13mapFromSourceERK11QModelIndex(void *this_, QModelIndex* sourceIndex) {
@@ -302,7 +303,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:68
+// /usr/include/qt/QtCore/qabstractproxymodel.h:67
 // [8] QItemSelection mapSelectionToSource(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel20mapSelectionToSourceERK14QItemSelection(void *this_, QItemSelection* selection) {
@@ -311,7 +312,7 @@ return new QItemSelection(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:69
+// /usr/include/qt/QtCore/qabstractproxymodel.h:68
 // [8] QItemSelection mapSelectionFromSource(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel22mapSelectionFromSourceERK14QItemSelection(void *this_, QItemSelection* selection) {
@@ -320,7 +321,7 @@ return new QItemSelection(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:71
+// /usr/include/qt/QtCore/qabstractproxymodel.h:70
 // [1] bool submit()
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel6submitEv(void *this_) {
@@ -328,7 +329,7 @@ bool C_ZN19QAbstractProxyModel6submitEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:72
+// /usr/include/qt/QtCore/qabstractproxymodel.h:71
 // [-2] void revert()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel6revertEv(void *this_) {
@@ -336,7 +337,7 @@ void C_ZN19QAbstractProxyModel6revertEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:74
+// /usr/include/qt/QtCore/qabstractproxymodel.h:73
 // [16] QVariant data(const QModelIndex &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel4dataERK11QModelIndexi(void *this_, QModelIndex* proxyIndex, int role) {
@@ -345,7 +346,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:75
+// /usr/include/qt/QtCore/qabstractproxymodel.h:74
 // [16] QVariant headerData(int, Qt::Orientation, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel10headerDataEiN2Qt11OrientationEi(void *this_, int section, Qt::Orientation orientation, int role) {
@@ -354,7 +355,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:76
+// /usr/include/qt/QtCore/qabstractproxymodel.h:75
 // [8] QMap<int, QVariant> itemData(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK19QAbstractProxyModel8itemDataERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -363,7 +364,7 @@ void C_ZNK19QAbstractProxyModel8itemDataERK11QModelIndex(void *this_, QModelInde
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:77
+// /usr/include/qt/QtCore/qabstractproxymodel.h:76
 // [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK19QAbstractProxyModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -371,7 +372,7 @@ Qt::ItemFlags C_ZNK19QAbstractProxyModel5flagsERK11QModelIndex(void *this_, QMod
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:79
+// /usr/include/qt/QtCore/qabstractproxymodel.h:78
 // [1] bool setData(const QModelIndex &, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
@@ -379,7 +380,7 @@ bool C_ZN19QAbstractProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:80
+// /usr/include/qt/QtCore/qabstractproxymodel.h:79
 // [1] bool setItemData(const QModelIndex &, const QMap<int, QVariant> &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(void *this_, QModelIndex* index, QMap<int, QVariant>* roles) {
@@ -387,7 +388,7 @@ bool C_ZN19QAbstractProxyModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE(v
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:81
+// /usr/include/qt/QtCore/qabstractproxymodel.h:80
 // [1] bool setHeaderData(int, Qt::Orientation, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN19QAbstractProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, QVariant* value, int role) {
@@ -395,7 +396,7 @@ bool C_ZN19QAbstractProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(vo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:83
+// /usr/include/qt/QtCore/qabstractproxymodel.h:82
 // [24] QModelIndex buddy(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel5buddyERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -404,7 +405,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:84
+// /usr/include/qt/QtCore/qabstractproxymodel.h:83
 // [1] bool canFetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel12canFetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -412,7 +413,7 @@ bool C_ZNK19QAbstractProxyModel12canFetchMoreERK11QModelIndex(void *this_, QMode
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:85
+// /usr/include/qt/QtCore/qabstractproxymodel.h:84
 // [-2] void fetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel9fetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -420,7 +421,7 @@ void C_ZN19QAbstractProxyModel9fetchMoreERK11QModelIndex(void *this_, QModelInde
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:86
+// /usr/include/qt/QtCore/qabstractproxymodel.h:85
 // [-2] void sort(int, Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
@@ -428,7 +429,7 @@ void C_ZN19QAbstractProxyModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:87
+// /usr/include/qt/QtCore/qabstractproxymodel.h:86
 // [8] QSize span(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel4spanERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -437,7 +438,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:88
+// /usr/include/qt/QtCore/qabstractproxymodel.h:87
 // [1] bool hasChildren(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel11hasChildrenERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -445,7 +446,7 @@ bool C_ZNK19QAbstractProxyModel11hasChildrenERK11QModelIndex(void *this_, QModel
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:89
+// /usr/include/qt/QtCore/qabstractproxymodel.h:88
 // [24] QModelIndex sibling(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
@@ -454,7 +455,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:91
+// /usr/include/qt/QtCore/qabstractproxymodel.h:90
 // [8] QMimeData * mimeData(const QModelIndexList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
@@ -462,19 +463,16 @@ void* C_ZNK19QAbstractProxyModel8mimeDataERK5QListI11QModelIndexE(void *this_, c
 }
 
 // Public virtual Visibility=Default Availability=Available
-// since 5.4
-// /usr/include/qt/QtCore/qabstractproxymodel.h:92
+// /usr/include/qt/QtCore/qabstractproxymodel.h:91
 // [1] bool canDropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
-#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QAbstractProxyModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
   return (bool)((QAbstractProxyModel*)this_)->canDropMimeData(data, action, row, column, *parent);
 }
-#endif // QT_VERSION >= 0x050400
 
 // Public virtual Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtCore/qabstractproxymodel.h:94
+// /usr/include/qt/QtCore/qabstractproxymodel.h:93
 // [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -484,7 +482,7 @@ bool C_ZN19QAbstractProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11
 #endif // QT_VERSION >= 0x050400
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:96
+// /usr/include/qt/QtCore/qabstractproxymodel.h:95
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractProxyModel9mimeTypesEv(void *this_) {
@@ -493,7 +491,7 @@ return new QStringList(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:97
+// /usr/include/qt/QtCore/qabstractproxymodel.h:96
 // [4] Qt::DropActions supportedDragActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK19QAbstractProxyModel20supportedDragActionsEv(void *this_) {
@@ -501,7 +499,7 @@ Qt::DropActions C_ZNK19QAbstractProxyModel20supportedDragActionsEv(void *this_) 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:98
+// /usr/include/qt/QtCore/qabstractproxymodel.h:97
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK19QAbstractProxyModel20supportedDropActionsEv(void *this_) {
@@ -509,7 +507,7 @@ Qt::DropActions C_ZNK19QAbstractProxyModel20supportedDropActionsEv(void *this_) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:101
+// /usr/include/qt/QtCore/qabstractproxymodel.h:100
 // [-2] void sourceModelChanged(QAbstractProxyModel::QPrivateSignal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractProxyModel18sourceModelChangedENS_14QPrivateSignalE(void *this_, QAbstractProxyModel::QPrivateSignal* arg0) {
@@ -532,4 +530,5 @@ void C_ZN19QAbstractProxyModel18sourceModelChangedENS_14QPrivateSignalE(void *th
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

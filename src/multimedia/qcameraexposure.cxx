@@ -331,8 +331,8 @@ void C_ZN15QCameraExposure20apertureRangeChangedEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qcameraexposure.h:163
 // [-2] void shutterSpeedChanged(qreal)
 extern "C" Q_DECL_EXPORT
-void C_ZN15QCameraExposure19shutterSpeedChangedEd(void *this_, qreal arg0) {
-  ((QCameraExposure*)this_)->shutterSpeedChanged(arg0);
+void C_ZN15QCameraExposure19shutterSpeedChangedEd(void *this_, qreal speed) {
+  ((QCameraExposure*)this_)->shutterSpeedChanged(speed);
 }
 
 // Public Visibility=Default Availability=Available

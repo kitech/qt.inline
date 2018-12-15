@@ -426,6 +426,17 @@ void C_ZN22QGeoPositionInfoSource5errorENS_5ErrorE(void *this_, QGeoPositionInfo
   ((QGeoPositionInfoSource*)this_)->error(arg0);
 }
 
+// Public Visibility=Default Availability=Available
+// since Qt 5.12
+// /usr/include/qt/QtPositioning/qgeopositioninfosource.h:104
+// [-2] void supportedPositioningMethodsChanged()
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void C_ZN22QGeoPositionInfoSource34supportedPositioningMethodsChangedEv(void *this_) {
+  ((QGeoPositionInfoSource*)this_)->supportedPositioningMethodsChanged();
+}
+#endif // QT_VERSION >= 0x050c00
+
 //  main block end
 
 //  use block begin

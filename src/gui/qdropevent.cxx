@@ -53,7 +53,7 @@ MyQDropEvent(const QPointF & pos, QFlags<Qt::DropAction> actions, const QMimeDat
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:608
+// /usr/include/qt/QtGui/qevent.h:613
 // [-2] void QDropEvent(const QPointF &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDropEventC2ERK7QPointF6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(QPointF* pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_) {
@@ -61,14 +61,14 @@ void* C_ZN10QDropEventC2ERK7QPointF6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:610
+// /usr/include/qt/QtGui/qevent.h:615
 // [-2] void ~QDropEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDropEventD2Ev(void *this_) {
   delete (QDropEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:612
+// /usr/include/qt/QtGui/qevent.h:617
 // [8] QPoint pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDropEvent3posEv(void *this_) {
@@ -77,7 +77,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:613
+// /usr/include/qt/QtGui/qevent.h:618
 // [16] const QPointF & posF()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDropEvent4posFEv(void *this_) {
@@ -86,7 +86,7 @@ return new QPointF(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:614
+// /usr/include/qt/QtGui/qevent.h:619
 // [4] Qt::MouseButtons mouseButtons()
 extern "C" Q_DECL_EXPORT
 Qt::MouseButtons C_ZNK10QDropEvent12mouseButtonsEv(void *this_) {
@@ -94,7 +94,7 @@ Qt::MouseButtons C_ZNK10QDropEvent12mouseButtonsEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:615
+// /usr/include/qt/QtGui/qevent.h:620
 // [4] Qt::KeyboardModifiers keyboardModifiers()
 extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK10QDropEvent17keyboardModifiersEv(void *this_) {
@@ -102,7 +102,7 @@ Qt::KeyboardModifiers C_ZNK10QDropEvent17keyboardModifiersEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:617
+// /usr/include/qt/QtGui/qevent.h:622
 // [4] Qt::DropActions possibleActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK10QDropEvent15possibleActionsEv(void *this_) {
@@ -110,7 +110,7 @@ Qt::DropActions C_ZNK10QDropEvent15possibleActionsEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:618
+// /usr/include/qt/QtGui/qevent.h:623
 // [4] Qt::DropAction proposedAction()
 extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZNK10QDropEvent14proposedActionEv(void *this_) {
@@ -118,7 +118,7 @@ Qt::DropAction C_ZNK10QDropEvent14proposedActionEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:619
+// /usr/include/qt/QtGui/qevent.h:624
 // [-2] void acceptProposedAction()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDropEvent20acceptProposedActionEv(void *this_) {
@@ -126,7 +126,7 @@ void C_ZN10QDropEvent20acceptProposedActionEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:621
+// /usr/include/qt/QtGui/qevent.h:626
 // [4] Qt::DropAction dropAction()
 extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZNK10QDropEvent10dropActionEv(void *this_) {
@@ -134,7 +134,7 @@ Qt::DropAction C_ZNK10QDropEvent10dropActionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:622
+// /usr/include/qt/QtGui/qevent.h:627
 // [-2] void setDropAction(Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDropEvent13setDropActionEN2Qt10DropActionE(void *this_, Qt::DropAction action) {
@@ -142,7 +142,7 @@ void C_ZN10QDropEvent13setDropActionEN2Qt10DropActionE(void *this_, Qt::DropActi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:624
+// /usr/include/qt/QtGui/qevent.h:629
 // [8] QObject * source()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDropEvent6sourceEv(void *this_) {
@@ -150,7 +150,7 @@ void* C_ZNK10QDropEvent6sourceEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:625
+// /usr/include/qt/QtGui/qevent.h:630
 // [8] const QMimeData * mimeData()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDropEvent8mimeDataEv(void *this_) {

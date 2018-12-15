@@ -262,27 +262,21 @@ void C_ZN17QWebEngineProfile16setHttpCacheTypeENS_13HttpCacheTypeE(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:99
 // [-2] void setHttpAcceptLanguage(const QString &)
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile21setHttpAcceptLanguageERK7QString(void *this_, QString* httpAcceptLanguage) {
   ((QWebEngineProfile*)this_)->setHttpAcceptLanguage(*httpAcceptLanguage);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:100
 // [8] QString httpAcceptLanguage()
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineProfile18httpAcceptLanguageEv(void *this_) {
   auto rv = ((QWebEngineProfile*)this_)->httpAcceptLanguage();
 return new QString(rv);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:102
@@ -317,26 +311,20 @@ void C_ZN17QWebEngineProfile23setHttpCacheMaximumSizeEi(void *this_, int maxSize
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:108
 // [8] QWebEngineCookieStore * cookieStore()
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QWebEngineProfile11cookieStoreEv(void *this_) {
   return (void*)((QWebEngineProfile*)this_)->cookieStore();
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:109
 // [-2] void setRequestInterceptor(QWebEngineUrlRequestInterceptor *)
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile21setRequestInterceptorEP31QWebEngineUrlRequestInterceptor(void *this_, QWebEngineUrlRequestInterceptor * interceptor) {
   ((QWebEngineProfile*)this_)->setRequestInterceptor(interceptor);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:111
@@ -379,115 +367,85 @@ void* C_ZNK17QWebEngineProfile7scriptsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:118
 // [8] const QWebEngineUrlSchemeHandler * urlSchemeHandler(const QByteArray &)
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineProfile16urlSchemeHandlerERK10QByteArray(void *this_, QByteArray* arg0) {
   return (void*)((QWebEngineProfile*)this_)->urlSchemeHandler(*arg0);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:119
 // [-2] void installUrlSchemeHandler(const QByteArray &, QWebEngineUrlSchemeHandler *)
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile23installUrlSchemeHandlerERK10QByteArrayP26QWebEngineUrlSchemeHandler(void *this_, QByteArray* scheme, QWebEngineUrlSchemeHandler * arg1) {
   ((QWebEngineProfile*)this_)->installUrlSchemeHandler(*scheme, arg1);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:120
 // [-2] void removeUrlScheme(const QByteArray &)
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile15removeUrlSchemeERK10QByteArray(void *this_, QByteArray* scheme) {
   ((QWebEngineProfile*)this_)->removeUrlScheme(*scheme);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:121
 // [-2] void removeUrlSchemeHandler(QWebEngineUrlSchemeHandler *)
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile22removeUrlSchemeHandlerEP26QWebEngineUrlSchemeHandler(void *this_, QWebEngineUrlSchemeHandler * arg0) {
   ((QWebEngineProfile*)this_)->removeUrlSchemeHandler(arg0);
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:122
 // [-2] void removeAllUrlSchemeHandlers()
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile26removeAllUrlSchemeHandlersEv(void *this_) {
   ((QWebEngineProfile*)this_)->removeAllUrlSchemeHandlers();
 }
-#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// since 5.7
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:124
 // [-2] void clearHttpCache()
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile14clearHttpCacheEv(void *this_) {
   ((QWebEngineProfile*)this_)->clearHttpCache();
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:126
 // [-2] void setSpellCheckLanguages(const QStringList &)
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile22setSpellCheckLanguagesERK11QStringList(void *this_, QStringList* languages) {
   ((QWebEngineProfile*)this_)->setSpellCheckLanguages(*languages);
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:127
 // [8] QStringList spellCheckLanguages()
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineProfile19spellCheckLanguagesEv(void *this_) {
   auto rv = ((QWebEngineProfile*)this_)->spellCheckLanguages();
 return new QStringList(rv);
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:128
 // [-2] void setSpellCheckEnabled(bool)
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile20setSpellCheckEnabledEb(void *this_, bool enabled) {
   ((QWebEngineProfile*)this_)->setSpellCheckEnabled(enabled);
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:129
 // [1] bool isSpellCheckEnabled()
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QWebEngineProfile19isSpellCheckEnabledEv(void *this_) {
   return (bool)((QWebEngineProfile*)this_)->isSpellCheckEnabled();
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:131
@@ -498,15 +456,12 @@ void* C_ZN17QWebEngineProfile14defaultProfileEv() {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.5
 // /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:134
 // [-2] void downloadRequested(QWebEngineDownloadItem *)
-#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineProfile17downloadRequestedEP22QWebEngineDownloadItem(void *this_, QWebEngineDownloadItem * download) {
   ((QWebEngineProfile*)this_)->downloadRequested(download);
 }
-#endif // QT_VERSION >= 0x050500
 
 //  main block end
 

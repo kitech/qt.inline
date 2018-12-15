@@ -121,6 +121,17 @@ void* C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(QByteArray* dat
 return new QByteArray(rv);
 }
 
+// Public static Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtCore/qcryptographichash.h:104
+// [4] int hashLength(QCryptographicHash::Algorithm)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+int C_ZN18QCryptographicHash10hashLengthENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
+  return (int)QCryptographicHash::hashLength(method);
+}
+#endif // QT_VERSION >= 0x050c00
+
 //  main block end
 
 //  use block begin

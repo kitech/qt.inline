@@ -217,12 +217,15 @@ return new QList<qreal>(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtGui/qtextoption.h:131
 // [-2] void setTabs(const QList<QTextOption::Tab> &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption7setTabsERK5QListINS_3TabEE(void *this_, QList<QTextOption::Tab>* tabStops) {
   ((QTextOption*)this_)->setTabs(*tabStops);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // since 4.4

@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtCore/qanimationgroup.h
 #ifndef protected
@@ -149,13 +150,13 @@ void* C_QAnimationGroup_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:102
+// /usr/include/qt/QtCore/qabstractanimation.h:101
 // [4] int duration()
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:123
+// /usr/include/qt/QtCore/qabstractanimation.h:122
 // [-2] void updateCurrentTime(int)
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:70
+// /usr/include/qt/QtCore/qanimationgroup.h:69
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
@@ -163,7 +164,7 @@ bool C_ZN15QAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:53
+// /usr/include/qt/QtCore/qanimationgroup.h:52
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QAnimationGroup10metaObjectEv(void *this_) {
@@ -171,7 +172,7 @@ void* C_ZNK15QAnimationGroup10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:53
+// /usr/include/qt/QtCore/qanimationgroup.h:52
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroup11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -179,7 +180,7 @@ void* C_ZN15QAnimationGroup11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:53
+// /usr/include/qt/QtCore/qanimationgroup.h:52
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN15QAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -187,7 +188,7 @@ int C_ZN15QAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMe
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:53
+// /usr/include/qt/QtCore/qanimationgroup.h:52
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroup2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -196,7 +197,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:53
+// /usr/include/qt/QtCore/qanimationgroup.h:52
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -205,7 +206,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:56
+// /usr/include/qt/QtCore/qanimationgroup.h:55
 // [-2] void QAnimationGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroupC2EP7QObject(QObject * parent) {
@@ -214,14 +215,14 @@ void* C_ZN15QAnimationGroupC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:57
+// /usr/include/qt/QtCore/qanimationgroup.h:56
 // [-2] void ~QAnimationGroup()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroupD2Ev(void *this_) {
   delete (QAnimationGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:59
+// /usr/include/qt/QtCore/qanimationgroup.h:58
 // [8] QAbstractAnimation * animationAt(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QAnimationGroup11animationAtEi(void *this_, int index) {
@@ -229,7 +230,7 @@ void* C_ZNK15QAnimationGroup11animationAtEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:60
+// /usr/include/qt/QtCore/qanimationgroup.h:59
 // [4] int animationCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QAnimationGroup14animationCountEv(void *this_) {
@@ -237,7 +238,7 @@ int C_ZNK15QAnimationGroup14animationCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:61
+// /usr/include/qt/QtCore/qanimationgroup.h:60
 // [4] int indexOfAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QAnimationGroup16indexOfAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
@@ -245,7 +246,7 @@ int C_ZNK15QAnimationGroup16indexOfAnimationEP18QAbstractAnimation(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:62
+// /usr/include/qt/QtCore/qanimationgroup.h:61
 // [-2] void addAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
@@ -253,7 +254,7 @@ void C_ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation(void *this_, QAbs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:63
+// /usr/include/qt/QtCore/qanimationgroup.h:62
 // [-2] void insertAnimation(int, QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup15insertAnimationEiP18QAbstractAnimation(void *this_, int index, QAbstractAnimation * animation) {
@@ -261,7 +262,7 @@ void C_ZN15QAnimationGroup15insertAnimationEiP18QAbstractAnimation(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:64
+// /usr/include/qt/QtCore/qanimationgroup.h:63
 // [-2] void removeAnimation(QAbstractAnimation *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup15removeAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
@@ -269,7 +270,7 @@ void C_ZN15QAnimationGroup15removeAnimationEP18QAbstractAnimation(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:65
+// /usr/include/qt/QtCore/qanimationgroup.h:64
 // [8] QAbstractAnimation * takeAnimation(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAnimationGroup13takeAnimationEi(void *this_, int index) {
@@ -277,7 +278,7 @@ void* C_ZN15QAnimationGroup13takeAnimationEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:66
+// /usr/include/qt/QtCore/qanimationgroup.h:65
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAnimationGroup5clearEv(void *this_) {
@@ -300,4 +301,5 @@ void C_ZN15QAnimationGroup5clearEv(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

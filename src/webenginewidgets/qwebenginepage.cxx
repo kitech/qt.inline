@@ -216,7 +216,7 @@ void* C_QWebEnginePage_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:353
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:349
 // [8] QWebEnginePage * createWindow(QWebEnginePage::WebWindowType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage12createWindowENS_13WebWindowTypeE(void *this_, QWebEnginePage::WebWindowType type_) {
@@ -224,7 +224,7 @@ void* C_ZN14QWebEnginePage12createWindowENS_13WebWindowTypeE(void *this_, QWebEn
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:354
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:350
 // [8] QStringList chooseFiles(QWebEnginePage::FileSelectionMode, const QStringList &, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage11chooseFilesENS_17FileSelectionModeERK11QStringListS3_(void *this_, QWebEnginePage::FileSelectionMode mode, QStringList* oldFiles, QStringList* acceptedMimeTypes) {
@@ -233,7 +233,7 @@ return new QStringList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:355
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:351
 // [-2] void javaScriptAlert(const QUrl &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage15javaScriptAlertERK4QUrlRK7QString(void *this_, QUrl* securityOrigin, QString* msg) {
@@ -241,7 +241,7 @@ void C_ZN14QWebEnginePage15javaScriptAlertERK4QUrlRK7QString(void *this_, QUrl* 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:356
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:352
 // [1] bool javaScriptConfirm(const QUrl &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWebEnginePage17javaScriptConfirmERK4QUrlRK7QString(void *this_, QUrl* securityOrigin, QString* msg) {
@@ -249,7 +249,7 @@ bool C_ZN14QWebEnginePage17javaScriptConfirmERK4QUrlRK7QString(void *this_, QUrl
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:357
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:353
 // [1] bool javaScriptPrompt(const QUrl &, const QString &, const QString &, QString *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWebEnginePage16javaScriptPromptERK4QUrlRK7QStringS5_PS3_(void *this_, QUrl* securityOrigin, QString* msg, QString* defaultValue, QString * result) {
@@ -257,7 +257,7 @@ bool C_ZN14QWebEnginePage16javaScriptPromptERK4QUrlRK7QStringS5_PS3_(void *this_
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:358
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:354
 // [-2] void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel, const QString &, int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage24javaScriptConsoleMessageENS_29JavaScriptConsoleMessageLevelERK7QStringiS3_(void *this_, QWebEnginePage::JavaScriptConsoleMessageLevel level, QString* message, int lineNumber, QString* sourceID) {
@@ -265,7 +265,7 @@ void C_ZN14QWebEnginePage24javaScriptConsoleMessageENS_29JavaScriptConsoleMessag
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:359
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:355
 // [1] bool certificateError(const QWebEngineCertificateError &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWebEnginePage16certificateErrorERK26QWebEngineCertificateError(void *this_, QWebEngineCertificateError* certificateError) {
@@ -273,7 +273,7 @@ bool C_ZN14QWebEnginePage16certificateErrorERK26QWebEngineCertificateError(void 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:360
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:356
 // [1] bool acceptNavigationRequest(const QUrl &, QWebEnginePage::NavigationType, bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWebEnginePage23acceptNavigationRequestERK4QUrlNS_14NavigationTypeEb(void *this_, QUrl* url, QWebEnginePage::NavigationType type_, bool isMainFrame) {
@@ -281,7 +281,7 @@ bool C_ZN14QWebEnginePage23acceptNavigationRequestERK4QUrlNS_14NavigationTypeEb(
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage10metaObjectEv(void *this_) {
@@ -289,7 +289,7 @@ void* C_ZNK14QWebEnginePage10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -297,7 +297,7 @@ void* C_ZN14QWebEnginePage11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QWebEnginePage11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -305,7 +305,7 @@ int C_ZN14QWebEnginePage11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMet
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -314,7 +314,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:71
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -323,7 +323,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:222
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:227
 // [-2] void QWebEnginePage(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePageC2EP7QObject(QObject * parent) {
@@ -332,26 +332,23 @@ void* C_ZN14QWebEnginePageC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:223
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:228
 // [-2] void QWebEnginePage(QWebEngineProfile *, QObject *)
-#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePageC2EP17QWebEngineProfileP7QObject(QWebEngineProfile * profile, QObject * parent) {
   auto _nilp = (MyQWebEnginePage*)(0);
   return  new MyQWebEnginePage(profile, parent);
 }
-#endif // QT_VERSION >= 0x050500
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:224
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:229
 // [-2] void ~QWebEnginePage()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePageD2Ev(void *this_) {
   delete (QWebEnginePage*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:225
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:230
 // [8] QWebEngineHistory * history()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage7historyEv(void *this_) {
@@ -359,7 +356,7 @@ void* C_ZNK14QWebEnginePage7historyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:227
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:232
 // [-2] void setView(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage7setViewEP7QWidget(void *this_, QWidget * view) {
@@ -367,7 +364,7 @@ void C_ZN14QWebEnginePage7setViewEP7QWidget(void *this_, QWidget * view) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:228
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:233
 // [8] QWidget * view()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage4viewEv(void *this_) {
@@ -375,7 +372,7 @@ void* C_ZNK14QWebEnginePage4viewEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:230
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:235
 // [1] bool hasSelection()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QWebEnginePage12hasSelectionEv(void *this_) {
@@ -383,7 +380,7 @@ bool C_ZNK14QWebEnginePage12hasSelectionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:231
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:236
 // [8] QString selectedText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage12selectedTextEv(void *this_) {
@@ -392,18 +389,15 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:233
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:238
 // [8] QWebEngineProfile * profile()
-#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage7profileEv(void *this_) {
   return (void*)((QWebEnginePage*)this_)->profile();
 }
-#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:236
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:241
 // [8] QAction * action(QWebEnginePage::WebAction)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage6actionENS_9WebActionE(void *this_, QWebEnginePage::WebAction action) {
@@ -411,7 +405,7 @@ void* C_ZNK14QWebEnginePage6actionENS_9WebActionE(void *this_, QWebEnginePage::W
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:238
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:243
 // [-2] void triggerAction(QWebEnginePage::WebAction, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13triggerActionENS_9WebActionEb(void *this_, QWebEnginePage::WebAction action, bool checked) {
@@ -419,18 +413,15 @@ void C_ZN14QWebEnginePage13triggerActionENS_9WebActionEb(void *this_, QWebEngine
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.8
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:240
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:245
 // [-2] void replaceMisspelledWord(const QString &)
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage21replaceMisspelledWordERK7QString(void *this_, QString* replacement) {
   ((QWebEnginePage*)this_)->replaceMisspelledWord(*replacement);
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:242
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:247
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QWebEnginePage5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -438,7 +429,7 @@ bool C_ZN14QWebEnginePage5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:247
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:249
 // [-2] void findText(const QString &, QWebEnginePage::FindFlags, const QWebEngineCallback<bool> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage8findTextERK7QString6QFlagsINS_8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, QWebEngineCallback<bool>* resultCallback) {
@@ -446,7 +437,7 @@ void C_ZN14QWebEnginePage8findTextERK7QString6QFlagsINS_8FindFlagEERK18QWebEngin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:249
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:252
 // [8] QMenu * createStandardContextMenu()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage25createStandardContextMenuEv(void *this_) {
@@ -454,7 +445,7 @@ void* C_ZN14QWebEnginePage25createStandardContextMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:251
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:255
 // [-2] void setFeaturePermission(const QUrl &, QWebEnginePage::Feature, QWebEnginePage::PermissionPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage20setFeaturePermissionERK4QUrlNS_7FeatureENS_16PermissionPolicyE(void *this_, QUrl* securityOrigin, QWebEnginePage::Feature feature, QWebEnginePage::PermissionPolicy policy) {
@@ -462,7 +453,7 @@ void C_ZN14QWebEnginePage20setFeaturePermissionERK4QUrlNS_7FeatureENS_16Permissi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:253
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:257
 // [-2] void load(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage4loadERK4QUrl(void *this_, QUrl* url) {
@@ -470,29 +461,23 @@ void C_ZN14QWebEnginePage4loadERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.9
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:254
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:258
 // [-2] void load(const QWebEngineHttpRequest &)
-#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage4loadERK21QWebEngineHttpRequest(void *this_, QWebEngineHttpRequest* request) {
   ((QWebEnginePage*)this_)->load(*request);
 }
-#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:255
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:259
 // [-2] void download(const QUrl &, const QString &)
-#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage8downloadERK4QUrlRK7QString(void *this_, QUrl* url, QString* filename) {
   ((QWebEnginePage*)this_)->download(*url, *filename);
 }
-#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:256
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:260
 // [-2] void setHtml(const QString &, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage7setHtmlERK7QStringRK4QUrl(void *this_, QString* html, QUrl* baseUrl) {
@@ -500,7 +485,7 @@ void C_ZN14QWebEnginePage7setHtmlERK7QStringRK4QUrl(void *this_, QString* html, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:257
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:261
 // [-2] void setContent(const QByteArray &, const QString &, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage10setContentERK10QByteArrayRK7QStringRK4QUrl(void *this_, QByteArray* data, QString* mimeType, QUrl* baseUrl) {
@@ -524,7 +509,7 @@ void C_ZNK14QWebEnginePage11toPlainTextERK18QWebEngineCallbackIRK7QStringE(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:267
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:266
 // [8] QString title()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage5titleEv(void *this_) {
@@ -533,7 +518,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:268
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:267
 // [-2] void setUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage6setUrlERK4QUrl(void *this_, QUrl* url) {
@@ -541,7 +526,7 @@ void C_ZN14QWebEnginePage6setUrlERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:269
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:268
 // [8] QUrl url()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage3urlEv(void *this_) {
@@ -550,7 +535,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:270
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:269
 // [8] QUrl requestedUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage12requestedUrlEv(void *this_) {
@@ -559,7 +544,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:271
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:270
 // [8] QUrl iconUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage7iconUrlEv(void *this_) {
@@ -568,7 +553,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:272
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:271
 // [8] QIcon icon()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage4iconEv(void *this_) {
@@ -577,7 +562,7 @@ return new QIcon(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:274
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:273
 // [8] qreal zoomFactor()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK14QWebEnginePage10zoomFactorEv(void *this_) {
@@ -585,7 +570,7 @@ qreal C_ZNK14QWebEnginePage10zoomFactorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:275
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:274
 // [-2] void setZoomFactor(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13setZoomFactorEd(void *this_, qreal factor) {
@@ -593,7 +578,7 @@ void C_ZN14QWebEnginePage13setZoomFactorEd(void *this_, qreal factor) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:277
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:276
 // [16] QPointF scrollPosition()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage14scrollPositionEv(void *this_) {
@@ -602,7 +587,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:278
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:277
 // [16] QSizeF contentsSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage12contentsSizeEv(void *this_) {
@@ -611,7 +596,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:280
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:279
 // [-2] void runJavaScript(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13runJavaScriptERK7QString(void *this_, QString* scriptSource) {
@@ -619,18 +604,15 @@ void C_ZN14QWebEnginePage13runJavaScriptERK7QString(void *this_, QString* script
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:281
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:280
 // [-2] void runJavaScript(const QString &, quint32)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13runJavaScriptERK7QStringj(void *this_, QString* scriptSource, quint32 worldId) {
   ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:286
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:281
 // [-2] void runJavaScript(const QString &, const QWebEngineCallback<const QVariant &> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13runJavaScriptERK7QStringRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, QWebEngineCallback<const QVariant &>* resultCallback) {
@@ -638,7 +620,7 @@ void C_ZN14QWebEnginePage13runJavaScriptERK7QStringRK18QWebEngineCallbackIRK8QVa
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:287
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:282
 // [-2] void runJavaScript(const QString &, quint32, const QWebEngineCallback<const QVariant &> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13runJavaScriptERK7QStringjRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, quint32 worldId, QWebEngineCallback<const QVariant &>* resultCallback) {
@@ -646,7 +628,7 @@ void C_ZN14QWebEnginePage13runJavaScriptERK7QStringjRK18QWebEngineCallbackIRK8QV
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:289
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:283
 // [8] QWebEngineScriptCollection & scripts()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QWebEnginePage7scriptsEv(void *this_) {
@@ -655,7 +637,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:290
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:284
 // [8] QWebEngineSettings * settings()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage8settingsEv(void *this_) {
@@ -663,40 +645,31 @@ void* C_ZNK14QWebEnginePage8settingsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:292
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:286
 // [8] QWebChannel * webChannel()
-#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage10webChannelEv(void *this_) {
   return (void*)((QWebEnginePage*)this_)->webChannel();
 }
-#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:293
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:287
 // [-2] void setWebChannel(QWebChannel *)
-#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13setWebChannelEP11QWebChannel(void *this_, QWebChannel * arg0) {
   ((QWebEnginePage*)this_)->setWebChannel(arg0);
 }
-#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:294
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:288
 // [-2] void setWebChannel(QWebChannel *, uint)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13setWebChannelEP11QWebChannelj(void *this_, QWebChannel * arg0, uint worldId) {
   ((QWebEnginePage*)this_)->setWebChannel(arg0, worldId);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:295
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:289
 // [16] QColor backgroundColor()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage15backgroundColorEv(void *this_) {
@@ -705,7 +678,7 @@ return new QColor(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:296
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:290
 // [-2] void setBackgroundColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage18setBackgroundColorERK6QColor(void *this_, QColor* color) {
@@ -713,18 +686,15 @@ void C_ZN14QWebEnginePage18setBackgroundColorERK6QColor(void *this_, QColor* col
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.8
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:298
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:292
 // [-2] void save(const QString &, QWebEngineDownloadItem::SavePageFormat)
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QWebEnginePage4saveERK7QStringN22QWebEngineDownloadItem14SavePageFormatE(void *this_, QString* filePath, QWebEngineDownloadItem::SavePageFormat format) {
   ((QWebEnginePage*)this_)->save(*filePath, format);
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:301
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:295
 // [1] bool isAudioMuted()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QWebEnginePage12isAudioMutedEv(void *this_) {
@@ -732,7 +702,7 @@ bool C_ZNK14QWebEnginePage12isAudioMutedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:302
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:296
 // [-2] void setAudioMuted(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage13setAudioMutedEb(void *this_, bool muted) {
@@ -740,7 +710,7 @@ void C_ZN14QWebEnginePage13setAudioMutedEb(void *this_, bool muted) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:303
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:297
 // [1] bool recentlyAudible()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QWebEnginePage15recentlyAudibleEv(void *this_) {
@@ -748,18 +718,15 @@ bool C_ZNK14QWebEnginePage15recentlyAudibleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:305
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:299
 // [-2] void printToPdf(const QString &, const QPageLayout &)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage10printToPdfERK7QStringRK11QPageLayout(void *this_, QString* filePath, QPageLayout* layout) {
   ((QWebEnginePage*)this_)->printToPdf(*filePath, *layout);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:309
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:300
 // [-2] void printToPdf(const QWebEngineCallback<const QByteArray &> &, const QPageLayout &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage10printToPdfERK18QWebEngineCallbackIRK10QByteArrayERK11QPageLayout(void *this_, QWebEngineCallback<const QByteArray &>* resultCallback, QPageLayout* layout) {
@@ -767,7 +734,7 @@ void C_ZN14QWebEnginePage10printToPdfERK18QWebEngineCallbackIRK10QByteArrayERK11
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:315
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:301
 // [-2] void print(QPrinter *, const QWebEngineCallback<bool> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage5printEP8QPrinterRK18QWebEngineCallbackIbE(void *this_, QPrinter * printer, QWebEngineCallback<bool>* resultCallback) {
@@ -775,19 +742,48 @@ void C_ZN14QWebEnginePage5printEP8QPrinterRK18QWebEngineCallbackIbE(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:318
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:303
+// [-2] void setInspectedPage(QWebEnginePage *)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage16setInspectedPageEPS_(void *this_, QWebEnginePage * page) {
+  ((QWebEnginePage*)this_)->setInspectedPage(page);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:304
+// [8] QWebEnginePage * inspectedPage()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK14QWebEnginePage13inspectedPageEv(void *this_) {
+  return (void*)((QWebEnginePage*)this_)->inspectedPage();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:305
+// [-2] void setDevToolsPage(QWebEnginePage *)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage15setDevToolsPageEPS_(void *this_, QWebEnginePage * page) {
+  ((QWebEnginePage*)this_)->setDevToolsPage(page);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:306
+// [8] QWebEnginePage * devToolsPage()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK14QWebEnginePage12devToolsPageEv(void *this_) {
+  return (void*)((QWebEnginePage*)this_)->devToolsPage();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:308
 // [8] const QWebEngineContextMenuData & contextMenuData()
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QWebEnginePage15contextMenuDataEv(void *this_) {
   auto& rv = ((QWebEnginePage*)this_)->contextMenuData();
 return new QWebEngineContextMenuData(rv);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:321
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:311
 // [-2] void loadStarted()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage11loadStartedEv(void *this_) {
@@ -795,7 +791,7 @@ void C_ZN14QWebEnginePage11loadStartedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:322
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:312
 // [-2] void loadProgress(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage12loadProgressEi(void *this_, int progress) {
@@ -803,7 +799,7 @@ void C_ZN14QWebEnginePage12loadProgressEi(void *this_, int progress) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:323
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:313
 // [-2] void loadFinished(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage12loadFinishedEb(void *this_, bool ok) {
@@ -811,7 +807,7 @@ void C_ZN14QWebEnginePage12loadFinishedEb(void *this_, bool ok) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:325
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:315
 // [-2] void linkHovered(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage11linkHoveredERK7QString(void *this_, QString* url) {
@@ -819,7 +815,7 @@ void C_ZN14QWebEnginePage11linkHoveredERK7QString(void *this_, QString* url) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:326
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:316
 // [-2] void selectionChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage16selectionChangedEv(void *this_) {
@@ -827,7 +823,7 @@ void C_ZN14QWebEnginePage16selectionChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:327
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:317
 // [-2] void geometryChangeRequested(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage23geometryChangeRequestedERK5QRect(void *this_, QRect* geom) {
@@ -835,7 +831,7 @@ void C_ZN14QWebEnginePage23geometryChangeRequestedERK5QRect(void *this_, QRect* 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:328
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:318
 // [-2] void windowCloseRequested()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage20windowCloseRequestedEv(void *this_) {
@@ -843,7 +839,7 @@ void C_ZN14QWebEnginePage20windowCloseRequestedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:330
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:320
 // [-2] void featurePermissionRequested(const QUrl &, QWebEnginePage::Feature)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage26featurePermissionRequestedERK4QUrlNS_7FeatureE(void *this_, QUrl* securityOrigin, QWebEnginePage::Feature feature) {
@@ -851,7 +847,7 @@ void C_ZN14QWebEnginePage26featurePermissionRequestedERK4QUrlNS_7FeatureE(void *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:331
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:321
 // [-2] void featurePermissionRequestCanceled(const QUrl &, QWebEnginePage::Feature)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage32featurePermissionRequestCanceledERK4QUrlNS_7FeatureE(void *this_, QUrl* securityOrigin, QWebEnginePage::Feature feature) {
@@ -859,7 +855,7 @@ void C_ZN14QWebEnginePage32featurePermissionRequestCanceledERK4QUrlNS_7FeatureE(
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:332
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:322
 // [-2] void fullScreenRequested(QWebEngineFullScreenRequest)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage19fullScreenRequestedE27QWebEngineFullScreenRequest(void *this_, QWebEngineFullScreenRequest* fullScreenRequest) {
@@ -867,7 +863,31 @@ void C_ZN14QWebEnginePage19fullScreenRequestedE27QWebEngineFullScreenRequest(voi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:334
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:323
+// [-2] void quotaRequested(QWebEngineQuotaRequest)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage14quotaRequestedE22QWebEngineQuotaRequest(void *this_, QWebEngineQuotaRequest* quotaRequest) {
+  ((QWebEnginePage*)this_)->quotaRequested(*quotaRequest);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:324
+// [-2] void registerProtocolHandlerRequested(QWebEngineRegisterProtocolHandlerRequest)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage32registerProtocolHandlerRequestedE40QWebEngineRegisterProtocolHandlerRequest(void *this_, QWebEngineRegisterProtocolHandlerRequest* request) {
+  ((QWebEnginePage*)this_)->registerProtocolHandlerRequested(*request);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:326
+// [-2] void selectClientCertificate(QWebEngineClientCertificateSelection)
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage23selectClientCertificateE36QWebEngineClientCertificateSelection(void *this_, QWebEngineClientCertificateSelection* clientCertSelection) {
+  ((QWebEnginePage*)this_)->selectClientCertificate(*clientCertSelection);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:329
 // [-2] void authenticationRequired(const QUrl &, QAuthenticator *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage22authenticationRequiredERK4QUrlP14QAuthenticator(void *this_, QUrl* requestUrl, QAuthenticator * authenticator) {
@@ -875,7 +895,7 @@ void C_ZN14QWebEnginePage22authenticationRequiredERK4QUrlP14QAuthenticator(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:335
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:330
 // [-2] void proxyAuthenticationRequired(const QUrl &, QAuthenticator *, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage27proxyAuthenticationRequiredERK4QUrlP14QAuthenticatorRK7QString(void *this_, QUrl* requestUrl, QAuthenticator * authenticator, QString* proxyHost) {
@@ -883,7 +903,7 @@ void C_ZN14QWebEnginePage27proxyAuthenticationRequiredERK4QUrlP14QAuthenticatorR
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:337
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:332
 // [-2] void renderProcessTerminated(QWebEnginePage::RenderProcessTerminationStatus, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage23renderProcessTerminatedENS_30RenderProcessTerminationStatusEi(void *this_, QWebEnginePage::RenderProcessTerminationStatus terminationStatus, int exitCode) {
@@ -891,7 +911,7 @@ void C_ZN14QWebEnginePage23renderProcessTerminatedENS_30RenderProcessTermination
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:340
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:335
 // [-2] void titleChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage12titleChangedERK7QString(void *this_, QString* title) {
@@ -899,7 +919,7 @@ void C_ZN14QWebEnginePage12titleChangedERK7QString(void *this_, QString* title) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:341
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:336
 // [-2] void urlChanged(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage10urlChangedERK4QUrl(void *this_, QUrl* url) {
@@ -907,7 +927,7 @@ void C_ZN14QWebEnginePage10urlChangedERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:342
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:337
 // [-2] void iconUrlChanged(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage14iconUrlChangedERK4QUrl(void *this_, QUrl* url) {
@@ -915,18 +935,15 @@ void C_ZN14QWebEnginePage14iconUrlChangedERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:343
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:338
 // [-2] void iconChanged(const QIcon &)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage11iconChangedERK5QIcon(void *this_, QIcon* icon) {
   ((QWebEnginePage*)this_)->iconChanged(*icon);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:345
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:340
 // [-2] void scrollPositionChanged(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage21scrollPositionChangedERK7QPointF(void *this_, QPointF* position) {
@@ -934,7 +951,7 @@ void C_ZN14QWebEnginePage21scrollPositionChangedERK7QPointF(void *this_, QPointF
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:346
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:341
 // [-2] void contentsSizeChanged(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage19contentsSizeChangedERK6QSizeF(void *this_, QSizeF* size) {
@@ -942,37 +959,36 @@ void C_ZN14QWebEnginePage19contentsSizeChangedERK6QSizeF(void *this_, QSizeF* si
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:347
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:342
 // [-2] void audioMutedChanged(bool)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage17audioMutedChangedEb(void *this_, bool muted) {
   ((QWebEnginePage*)this_)->audioMutedChanged(muted);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:348
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:343
 // [-2] void recentlyAudibleChanged(bool)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage22recentlyAudibleChangedEb(void *this_, bool recentlyAudible) {
   ((QWebEnginePage*)this_)->recentlyAudibleChanged(recentlyAudible);
 }
-#endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// since 5.9
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:350
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:345
 // [-2] void pdfPrintingFinished(const QString &, bool)
-#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN14QWebEnginePage19pdfPrintingFinishedERK7QStringb(void *this_, QString* filePath, bool success) {
   ((QWebEnginePage*)this_)->pdfPrintingFinished(*filePath, success);
 }
-#endif // QT_VERSION >= 0x050900
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:346
+// [-2] void printRequested()
+extern "C" Q_DECL_EXPORT
+void C_ZN14QWebEnginePage14printRequestedEv(void *this_) {
+  ((QWebEnginePage*)this_)->printRequested();
+}
 
 //  main block end
 

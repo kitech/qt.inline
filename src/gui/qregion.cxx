@@ -434,7 +434,7 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:125
+// /usr/include/qt/QtGui/qregion.h:127
 // [8] QVector<QRect> rects()
 extern "C" Q_DECL_EXPORT
 void C_ZNK7QRegion5rectsEv(void *this_) {
@@ -443,7 +443,7 @@ void C_ZNK7QRegion5rectsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:126
+// /usr/include/qt/QtGui/qregion.h:129
 // [-2] void setRects(const QRect *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QRegion8setRectsEPK5QRecti(void *this_, const QRect * rect, int num) {
@@ -452,7 +452,7 @@ void C_ZN7QRegion8setRectsEPK5QRecti(void *this_, const QRect * rect, int num) {
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtGui/qregion.h:127
+// /usr/include/qt/QtGui/qregion.h:130
 // [4] int rectCount()
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -462,7 +462,7 @@ int C_ZNK7QRegion9rectCountEv(void *this_) {
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:138
+// /usr/include/qt/QtGui/qregion.h:141
 // [8] QRegion operator|(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegionorERKS_(void *this_, QRegion* r) {
@@ -471,7 +471,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:139
+// /usr/include/qt/QtGui/qregion.h:142
 // [8] QRegion operator+(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegionplERKS_(void *this_, QRegion* r) {
@@ -480,7 +480,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:140
+// /usr/include/qt/QtGui/qregion.h:143
 // [8] QRegion operator+(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegionplERK5QRect(void *this_, QRect* r) {
@@ -489,7 +489,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:141
+// /usr/include/qt/QtGui/qregion.h:144
 // [8] QRegion operator&(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegionanERKS_(void *this_, QRegion* r) {
@@ -498,7 +498,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:142
+// /usr/include/qt/QtGui/qregion.h:145
 // [8] QRegion operator&(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegionanERK5QRect(void *this_, QRect* r) {
@@ -507,7 +507,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:143
+// /usr/include/qt/QtGui/qregion.h:146
 // [8] QRegion operator-(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegionmiERKS_(void *this_, QRegion* r) {
@@ -516,7 +516,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:144
+// /usr/include/qt/QtGui/qregion.h:147
 // [8] QRegion operator^(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRegioneoERKS_(void *this_, QRegion* r) {
@@ -525,7 +525,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:146
+// /usr/include/qt/QtGui/qregion.h:149
 // [8] QRegion & operator|=(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionoRERKS_(void *this_, QRegion* r) {
@@ -534,7 +534,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:147
+// /usr/include/qt/QtGui/qregion.h:150
 // [8] QRegion & operator+=(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionpLERKS_(void *this_, QRegion* r) {
@@ -543,7 +543,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:148
+// /usr/include/qt/QtGui/qregion.h:151
 // [8] QRegion & operator+=(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionpLERK5QRect(void *this_, QRect* r) {
@@ -552,7 +552,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:149
+// /usr/include/qt/QtGui/qregion.h:152
 // [8] QRegion & operator&=(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionaNERKS_(void *this_, QRegion* r) {
@@ -561,7 +561,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:150
+// /usr/include/qt/QtGui/qregion.h:153
 // [8] QRegion & operator&=(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionaNERK5QRect(void *this_, QRect* r) {
@@ -570,7 +570,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:151
+// /usr/include/qt/QtGui/qregion.h:154
 // [8] QRegion & operator-=(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegionmIERKS_(void *this_, QRegion* r) {
@@ -579,7 +579,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:152
+// /usr/include/qt/QtGui/qregion.h:155
 // [8] QRegion & operator^=(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRegioneOERKS_(void *this_, QRegion* r) {
@@ -588,7 +588,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:154
+// /usr/include/qt/QtGui/qregion.h:157
 // [1] bool operator==(const QRegion &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRegioneqERKS_(void *this_, QRegion* r) {
@@ -596,7 +596,7 @@ bool C_ZNK7QRegioneqERKS_(void *this_, QRegion* r) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qregion.h:155
+// /usr/include/qt/QtGui/qregion.h:158
 // [1] bool operator!=(const QRegion &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QRegionneERKS_(void *this_, QRegion* r) {

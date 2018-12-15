@@ -53,7 +53,7 @@ MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:754
+// /usr/include/qt/QtGui/qevent.h:759
 // [-2] void QToolBarChangeEvent(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
@@ -61,14 +61,14 @@ void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:755
+// /usr/include/qt/QtGui/qevent.h:760
 // [-2] void ~QToolBarChangeEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QToolBarChangeEventD2Ev(void *this_) {
   delete (QToolBarChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:757
+// /usr/include/qt/QtGui/qevent.h:762
 // [1] bool toggle()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QToolBarChangeEvent6toggleEv(void *this_) {

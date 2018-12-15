@@ -212,12 +212,15 @@ void C_ZN12QLocalSocketD2Ev(void *this_) {
   delete (QLocalSocket*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtNetwork/qlocalsocket.h:85
 // [-2] void connectToServer(QIODevice::OpenMode)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket15connectToServerE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
   ((QLocalSocket*)this_)->connectToServer(openMode);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qlocalsocket.h:86

@@ -216,12 +216,15 @@ return new QCommandLineOption::Flags(rv);
 #endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtCore/qcommandlineoption.h:94
 // [-2] void setFlags(QCommandLineOption::Flags)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineOption8setFlagsE6QFlagsINS_4FlagEE(void *this_, QFlags<QCommandLineOption::Flag> aflags) {
   ((QCommandLineOption*)this_)->setFlags(aflags);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:98

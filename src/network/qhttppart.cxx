@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h
 #ifndef protected
@@ -56,7 +57,7 @@ MyQHttpPart(const QHttpPart & other) : QHttpPart(other) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:58
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:60
 // [-2] void QHttpPart()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHttpPartC2Ev() {
@@ -64,7 +65,7 @@ void* C_ZN9QHttpPartC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:59
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:61
 // [-2] void QHttpPart(const QHttpPart &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHttpPartC2ERKS_(QHttpPart* other) {
@@ -72,14 +73,14 @@ void* C_ZN9QHttpPartC2ERKS_(QHttpPart* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:60
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:62
 // [-2] void ~QHttpPart()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHttpPartD2Ev(void *this_) {
   delete (QHttpPart*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:62
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:64
 // [8] QHttpPart & operator=(QHttpPart &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHttpPartaSEOS_(void *this_, QHttpPart && other) {
@@ -88,7 +89,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:64
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:66
 // [8] QHttpPart & operator=(const QHttpPart &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QHttpPartaSERKS_(void *this_, QHttpPart* other) {
@@ -98,7 +99,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:66
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:68
 // [-2] void swap(QHttpPart &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -108,7 +109,7 @@ void C_ZN9QHttpPart4swapERS_(void *this_, QHttpPart* other) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:68
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:70
 // [1] bool operator==(const QHttpPart &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QHttpParteqERKS_(void *this_, QHttpPart* other) {
@@ -116,7 +117,7 @@ bool C_ZNK9QHttpParteqERKS_(void *this_, QHttpPart* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:69
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:71
 // [1] bool operator!=(const QHttpPart &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QHttpPartneERKS_(void *this_, QHttpPart* other) {
@@ -124,7 +125,7 @@ bool C_ZNK9QHttpPartneERKS_(void *this_, QHttpPart* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:72
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:74
 // [-2] void setHeader(QNetworkRequest::KnownHeaders, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHttpPart9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void *this_, QNetworkRequest::KnownHeaders header, QVariant* value) {
@@ -132,7 +133,7 @@ void C_ZN9QHttpPart9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:73
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:75
 // [-2] void setRawHeader(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHttpPart12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* headerName, QByteArray* headerValue) {
@@ -140,7 +141,7 @@ void C_ZN9QHttpPart12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* hea
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:75
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:77
 // [-2] void setBody(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHttpPart7setBodyERK10QByteArray(void *this_, QByteArray* body) {
@@ -148,7 +149,7 @@ void C_ZN9QHttpPart7setBodyERK10QByteArray(void *this_, QByteArray* body) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:76
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:78
 // [-2] void setBodyDevice(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QHttpPart13setBodyDeviceEP9QIODevice(void *this_, QIODevice * device) {
@@ -171,4 +172,5 @@ void C_ZN9QHttpPart13setBodyDeviceEP9QIODevice(void *this_, QIODevice * device) 
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

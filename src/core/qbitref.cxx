@@ -51,7 +51,7 @@ public:
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:152
+// /usr/include/qt/QtCore/qbitarray.h:155
 // [1] bool operator!()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QBitRefntEv(void *this_) {
@@ -59,7 +59,7 @@ bool C_ZNK7QBitRefntEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:153
+// /usr/include/qt/QtCore/qbitarray.h:156
 // [16] QBitRef & operator=(const QBitRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QBitRefaSERKS_(void *this_, QBitRef* val) {
@@ -68,7 +68,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:154
+// /usr/include/qt/QtCore/qbitarray.h:157
 // [16] QBitRef & operator=(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QBitRefaSEb(void *this_, bool val) {

@@ -55,7 +55,7 @@ MyQTextStreamManipulator(QTSMFC m, QChar c) : QTextStreamManipulator(m, c) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:215
+// /usr/include/qt/QtCore/qtextstream.h:216
 // [-2] void QTextStreamManipulator(QTSMFI, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QTextStreamManipulatorC2EM11QTextStreamFviEi(QTSMFI m, int a) {
@@ -63,7 +63,7 @@ void* C_ZN22QTextStreamManipulatorC2EM11QTextStreamFviEi(QTSMFI m, int a) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:216
+// /usr/include/qt/QtCore/qtextstream.h:217
 // [-2] void QTextStreamManipulator(QTSMFC, QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QTextStreamManipulatorC2EM11QTextStreamFv5QCharES1_(QTSMFC m, QChar* c) {
@@ -71,7 +71,7 @@ void* C_ZN22QTextStreamManipulatorC2EM11QTextStreamFv5QCharES1_(QTSMFC m, QChar*
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextstream.h:217
+// /usr/include/qt/QtCore/qtextstream.h:218
 // [-2] void exec(QTextStream &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QTextStreamManipulator4execER11QTextStream(void *this_, QTextStream* s) {

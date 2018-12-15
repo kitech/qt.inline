@@ -64,7 +64,7 @@ MyQOpenGLFramebufferObject(int width, int height, const QOpenGLFramebufferObject
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:68
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:78
 // [-2] void QOpenGLFramebufferObject(const QSize &, GLenum)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLFramebufferObjectC2ERK5QSizej(QSize* size, GLenum target) {
@@ -72,7 +72,7 @@ void* C_ZN24QOpenGLFramebufferObjectC2ERK5QSizej(QSize* size, GLenum target) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:69
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:79
 // [-2] void QOpenGLFramebufferObject(int, int, GLenum)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLFramebufferObjectC2Eiij(int width, int height, GLenum target) {
@@ -80,7 +80,7 @@ void* C_ZN24QOpenGLFramebufferObjectC2Eiij(int width, int height, GLenum target)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:71
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:81
 // [-2] void QOpenGLFramebufferObject(const QSize &, QOpenGLFramebufferObject::Attachment, GLenum, GLenum)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLFramebufferObjectC2ERK5QSizeNS_10AttachmentEjj(QSize* size, QOpenGLFramebufferObject::Attachment attachment, GLenum target, GLenum internalFormat) {
@@ -88,7 +88,7 @@ void* C_ZN24QOpenGLFramebufferObjectC2ERK5QSizeNS_10AttachmentEjj(QSize* size, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:73
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:83
 // [-2] void QOpenGLFramebufferObject(int, int, QOpenGLFramebufferObject::Attachment, GLenum, GLenum)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLFramebufferObjectC2EiiNS_10AttachmentEjj(int width, int height, QOpenGLFramebufferObject::Attachment attachment, GLenum target, GLenum internalFormat) {
@@ -96,7 +96,7 @@ void* C_ZN24QOpenGLFramebufferObjectC2EiiNS_10AttachmentEjj(int width, int heigh
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:76
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:86
 // [-2] void QOpenGLFramebufferObject(const QSize &, const QOpenGLFramebufferObjectFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLFramebufferObjectC2ERK5QSizeRK30QOpenGLFramebufferObjectFormat(QSize* size, QOpenGLFramebufferObjectFormat* format) {
@@ -104,7 +104,7 @@ void* C_ZN24QOpenGLFramebufferObjectC2ERK5QSizeRK30QOpenGLFramebufferObjectForma
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:77
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:87
 // [-2] void QOpenGLFramebufferObject(int, int, const QOpenGLFramebufferObjectFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QOpenGLFramebufferObjectC2EiiRK30QOpenGLFramebufferObjectFormat(int width, int height, QOpenGLFramebufferObjectFormat* format) {
@@ -112,7 +112,7 @@ void* C_ZN24QOpenGLFramebufferObjectC2EiiRK30QOpenGLFramebufferObjectFormat(int 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:79
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:89
 // [-2] void ~QOpenGLFramebufferObject()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QOpenGLFramebufferObjectD2Ev(void *this_) {
@@ -120,7 +120,7 @@ void C_ZN24QOpenGLFramebufferObjectD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:81
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:91
 // [-2] void addColorAttachment(const QSize &, GLenum)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -131,7 +131,7 @@ void C_ZN24QOpenGLFramebufferObject18addColorAttachmentERK5QSizej(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:82
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:92
 // [-2] void addColorAttachment(int, int, GLenum)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -141,7 +141,7 @@ void C_ZN24QOpenGLFramebufferObject18addColorAttachmentEiij(void *this_, int wid
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:84
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:94
 // [8] QOpenGLFramebufferObjectFormat format()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QOpenGLFramebufferObject6formatEv(void *this_) {
@@ -150,7 +150,7 @@ return new QOpenGLFramebufferObjectFormat(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:86
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:96
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK24QOpenGLFramebufferObject7isValidEv(void *this_) {
@@ -158,7 +158,7 @@ bool C_ZNK24QOpenGLFramebufferObject7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:87
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:97
 // [1] bool isBound()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK24QOpenGLFramebufferObject7isBoundEv(void *this_) {
@@ -166,7 +166,7 @@ bool C_ZNK24QOpenGLFramebufferObject7isBoundEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:88
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:98
 // [1] bool bind()
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QOpenGLFramebufferObject4bindEv(void *this_) {
@@ -174,7 +174,7 @@ bool C_ZN24QOpenGLFramebufferObject4bindEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:89
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:99
 // [1] bool release()
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QOpenGLFramebufferObject7releaseEv(void *this_) {
@@ -182,7 +182,7 @@ bool C_ZN24QOpenGLFramebufferObject7releaseEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:91
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:101
 // [4] int width()
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QOpenGLFramebufferObject5widthEv(void *this_) {
@@ -190,7 +190,7 @@ int C_ZNK24QOpenGLFramebufferObject5widthEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:92
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:102
 // [4] int height()
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QOpenGLFramebufferObject6heightEv(void *this_) {
@@ -198,7 +198,7 @@ int C_ZNK24QOpenGLFramebufferObject6heightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:94
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:104
 // [4] GLuint texture()
 extern "C" Q_DECL_EXPORT
 GLuint C_ZNK24QOpenGLFramebufferObject7textureEv(void *this_) {
@@ -207,7 +207,7 @@ GLuint C_ZNK24QOpenGLFramebufferObject7textureEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:95
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:105
 // [8] QVector<GLuint> textures()
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -219,7 +219,7 @@ void C_ZNK24QOpenGLFramebufferObject8texturesEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:97
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:107
 // [4] GLuint takeTexture()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -230,7 +230,7 @@ GLuint C_ZN24QOpenGLFramebufferObject11takeTextureEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:98
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:108
 // [4] GLuint takeTexture(int)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -240,7 +240,7 @@ GLuint C_ZN24QOpenGLFramebufferObject11takeTextureEi(void *this_, int colorAttac
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:100
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:110
 // [8] QSize size()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QOpenGLFramebufferObject4sizeEv(void *this_) {
@@ -250,7 +250,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:101
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:111
 // [-2] QVector<QSize> sizes()
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -261,7 +261,7 @@ void C_ZNK24QOpenGLFramebufferObject5sizesEv(void *this_) {
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:103
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:113
 // [32] QImage toImage()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QOpenGLFramebufferObject7toImageEv(void *this_) {
@@ -270,7 +270,7 @@ return new QImage(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:104
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:114
 // [32] QImage toImage(bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QOpenGLFramebufferObject7toImageEb(void *this_, bool flipped) {
@@ -280,7 +280,7 @@ return new QImage(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:105
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:115
 // [32] QImage toImage(bool, int)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -291,7 +291,7 @@ return new QImage(rv);
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:107
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:117
 // [4] QOpenGLFramebufferObject::Attachment attachment()
 extern "C" Q_DECL_EXPORT
 QOpenGLFramebufferObject::Attachment C_ZNK24QOpenGLFramebufferObject10attachmentEv(void *this_) {
@@ -299,7 +299,7 @@ QOpenGLFramebufferObject::Attachment C_ZNK24QOpenGLFramebufferObject10attachment
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:108
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:118
 // [-2] void setAttachment(QOpenGLFramebufferObject::Attachment)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QOpenGLFramebufferObject13setAttachmentENS_10AttachmentE(void *this_, QOpenGLFramebufferObject::Attachment attachment) {
@@ -307,7 +307,7 @@ void C_ZN24QOpenGLFramebufferObject13setAttachmentENS_10AttachmentE(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:110
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:120
 // [4] GLuint handle()
 extern "C" Q_DECL_EXPORT
 GLuint C_ZNK24QOpenGLFramebufferObject6handleEv(void *this_) {
@@ -315,7 +315,7 @@ GLuint C_ZNK24QOpenGLFramebufferObject6handleEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:112
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:122
 // [1] bool bindDefault()
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QOpenGLFramebufferObject11bindDefaultEv() {
@@ -323,7 +323,7 @@ bool C_ZN24QOpenGLFramebufferObject11bindDefaultEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:114
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:124
 // [1] bool hasOpenGLFramebufferObjects()
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QOpenGLFramebufferObject27hasOpenGLFramebufferObjectsEv() {
@@ -331,7 +331,7 @@ bool C_ZN24QOpenGLFramebufferObject27hasOpenGLFramebufferObjectsEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:116
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:126
 // [1] bool hasOpenGLFramebufferBlit()
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QOpenGLFramebufferObject24hasOpenGLFramebufferBlitEv() {
@@ -339,15 +339,18 @@ bool C_ZN24QOpenGLFramebufferObject24hasOpenGLFramebufferBlitEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:124
+// since 5.7
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:134
 // [-2] void blitFramebuffer(QOpenGLFramebufferObject *, const QRect &, QOpenGLFramebufferObject *, const QRect &, GLbitfield, GLenum, int, int, QOpenGLFramebufferObject::FramebufferRestorePolicy)
+#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_RK5QRectS0_S3_jjiiNS_24FramebufferRestorePolicyE(QOpenGLFramebufferObject * target, QRect* targetRect, QOpenGLFramebufferObject * source, QRect* sourceRect, GLbitfield buffers, GLenum filter, int readColorAttachmentIndex, int drawColorAttachmentIndex, QOpenGLFramebufferObject::FramebufferRestorePolicy restorePolicy) {
   QOpenGLFramebufferObject::blitFramebuffer(target, *targetRect, source, *sourceRect, buffers, filter, readColorAttachmentIndex, drawColorAttachmentIndex, restorePolicy);
 }
+#endif // QT_VERSION >= 0x050700
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:131
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:141
 // [-2] void blitFramebuffer(QOpenGLFramebufferObject *, const QRect &, QOpenGLFramebufferObject *, const QRect &, GLbitfield, GLenum, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_RK5QRectS0_S3_jjii(QOpenGLFramebufferObject * target, QRect* targetRect, QOpenGLFramebufferObject * source, QRect* sourceRect, GLbitfield buffers, GLenum filter, int readColorAttachmentIndex, int drawColorAttachmentIndex) {
@@ -355,7 +358,7 @@ void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_RK5QRectS0_S3_jjii(QOpen
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:137
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:147
 // [-2] void blitFramebuffer(QOpenGLFramebufferObject *, const QRect &, QOpenGLFramebufferObject *, const QRect &, GLbitfield, GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_RK5QRectS0_S3_jj(QOpenGLFramebufferObject * target, QRect* targetRect, QOpenGLFramebufferObject * source, QRect* sourceRect, GLbitfield buffers, GLenum filter) {
@@ -363,7 +366,7 @@ void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_RK5QRectS0_S3_jj(QOpenGL
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglframebufferobject.h:141
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:151
 // [-2] void blitFramebuffer(QOpenGLFramebufferObject *, QOpenGLFramebufferObject *, GLbitfield, GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QOpenGLFramebufferObject15blitFramebufferEPS_S0_jj(QOpenGLFramebufferObject * target, QOpenGLFramebufferObject * source, GLbitfield buffers, GLenum filter) {

@@ -95,9 +95,9 @@ public:
   virtual ~MyQAbstractVideoSurface() {}
 // Public purevirtual virtual Visibility=Default Availability=Available
 // [-2] QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType)
-  virtual QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const override {
+  virtual QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType type_) const override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedPixelFormats", &handled, 1, (uint64_t)handleType, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"supportedPixelFormats", &handled, 1, (uint64_t)type_, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
     if (irv == 0) { return (QList<QVideoFrame::PixelFormat>){};}
     auto prv = (QList<QVideoFrame::PixelFormat>*)(irv); auto orv = *prv; delete(prv); return orv;
@@ -203,8 +203,8 @@ void C_ZN21QAbstractVideoSurfaceD2Ev(void *this_) {
 // /usr/include/qt/QtMultimedia/qabstractvideosurface.h:70
 // [-2] QList<QVideoFrame::PixelFormat> supportedPixelFormats(QAbstractVideoBuffer::HandleType)
 extern "C" Q_DECL_EXPORT
-QList<QVideoFrame::PixelFormat>* C_ZNK21QAbstractVideoSurface21supportedPixelFormatsEN20QAbstractVideoBuffer10HandleTypeE(void *this_, QAbstractVideoBuffer::HandleType handleType) {
-  auto rv = ((QAbstractVideoSurface*)this_)->supportedPixelFormats(handleType);
+QList<QVideoFrame::PixelFormat>* C_ZNK21QAbstractVideoSurface21supportedPixelFormatsEN20QAbstractVideoBuffer10HandleTypeE(void *this_, QAbstractVideoBuffer::HandleType type_) {
+  auto rv = ((QAbstractVideoSurface*)this_)->supportedPixelFormats(type_);
 return new QList<QVideoFrame::PixelFormat>(rv);
 }
 
@@ -311,8 +311,8 @@ void C_ZN21QAbstractVideoSurface23supportedFormatsChangedEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qabstractvideosurface.h:92
 // [-2] void nativeResolutionChanged(const QSize &)
 extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractVideoSurface23nativeResolutionChangedERK5QSize(void *this_, QSize* arg0) {
-  ((QAbstractVideoSurface*)this_)->nativeResolutionChanged(*arg0);
+void C_ZN21QAbstractVideoSurface23nativeResolutionChangedERK5QSize(void *this_, QSize* resolution) {
+  ((QAbstractVideoSurface*)this_)->nativeResolutionChanged(*resolution);
 }
 
 //  main block end

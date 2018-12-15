@@ -53,7 +53,7 @@ MyQVariantComparisonHelper(const QVariant & var_) : QVariantComparisonHelper(var
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:560
+// /usr/include/qt/QtCore/qvariant.h:583
 // [-2] void QVariantComparisonHelper(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var_) {

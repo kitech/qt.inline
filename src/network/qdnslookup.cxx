@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x050000
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
@@ -115,7 +116,7 @@ void* C_QDnsLookup_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:186
+// /usr/include/qt/QtNetwork/qdnslookup.h:188
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDnsLookup10metaObjectEv(void *this_) {
@@ -123,7 +124,7 @@ void* C_ZNK10QDnsLookup10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:186
+// /usr/include/qt/QtNetwork/qdnslookup.h:188
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookup11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -131,7 +132,7 @@ void* C_ZN10QDnsLookup11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:186
+// /usr/include/qt/QtNetwork/qdnslookup.h:188
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN10QDnsLookup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -139,7 +140,7 @@ int C_ZN10QDnsLookup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObj
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:186
+// /usr/include/qt/QtNetwork/qdnslookup.h:188
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookup2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -148,7 +149,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:186
+// /usr/include/qt/QtNetwork/qdnslookup.h:188
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -157,7 +158,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:221
+// /usr/include/qt/QtNetwork/qdnslookup.h:223
 // [-2] void QDnsLookup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2EP7QObject(QObject * parent) {
@@ -165,7 +166,7 @@ void* C_ZN10QDnsLookupC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:222
+// /usr/include/qt/QtNetwork/qdnslookup.h:224
 // [-2] void QDnsLookup(QDnsLookup::Type, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type_, QString* name, QObject * parent) {
@@ -173,22 +174,25 @@ void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject(QDnsLookup::Type type_, QS
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:223
+// since 5.4
+// /usr/include/qt/QtNetwork/qdnslookup.h:225
 // [-2] void QDnsLookup(QDnsLookup::Type, const QString &, const QHostAddress &, QObject *)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QDnsLookupC2ENS_4TypeERK7QStringRK12QHostAddressP7QObject(QDnsLookup::Type type_, QString* name, QHostAddress* nameserver, QObject * parent) {
   return  new MyQDnsLookup(type_, *name, *nameserver, parent);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:224
+// /usr/include/qt/QtNetwork/qdnslookup.h:226
 // [-2] void ~QDnsLookup()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookupD2Ev(void *this_) {
   delete (QDnsLookup*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:226
+// /usr/include/qt/QtNetwork/qdnslookup.h:228
 // [4] QDnsLookup::Error error()
 extern "C" Q_DECL_EXPORT
 QDnsLookup::Error C_ZNK10QDnsLookup5errorEv(void *this_) {
@@ -196,7 +200,7 @@ QDnsLookup::Error C_ZNK10QDnsLookup5errorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:227
+// /usr/include/qt/QtNetwork/qdnslookup.h:229
 // [8] QString errorString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDnsLookup11errorStringEv(void *this_) {
@@ -205,7 +209,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:228
+// /usr/include/qt/QtNetwork/qdnslookup.h:230
 // [1] bool isFinished()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QDnsLookup10isFinishedEv(void *this_) {
@@ -213,7 +217,7 @@ bool C_ZNK10QDnsLookup10isFinishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:230
+// /usr/include/qt/QtNetwork/qdnslookup.h:232
 // [8] QString name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDnsLookup4nameEv(void *this_) {
@@ -222,7 +226,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:231
+// /usr/include/qt/QtNetwork/qdnslookup.h:233
 // [-2] void setName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup7setNameERK7QString(void *this_, QString* name) {
@@ -230,7 +234,7 @@ void C_ZN10QDnsLookup7setNameERK7QString(void *this_, QString* name) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:233
+// /usr/include/qt/QtNetwork/qdnslookup.h:235
 // [4] QDnsLookup::Type type()
 extern "C" Q_DECL_EXPORT
 QDnsLookup::Type C_ZNK10QDnsLookup4typeEv(void *this_) {
@@ -238,7 +242,7 @@ QDnsLookup::Type C_ZNK10QDnsLookup4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:234
+// /usr/include/qt/QtNetwork/qdnslookup.h:236
 // [-2] void setType(QDnsLookup::Type)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup7setTypeENS_4TypeE(void *this_, QDnsLookup::Type arg0) {
@@ -246,7 +250,7 @@ void C_ZN10QDnsLookup7setTypeENS_4TypeE(void *this_, QDnsLookup::Type arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:236
+// /usr/include/qt/QtNetwork/qdnslookup.h:238
 // [8] QHostAddress nameserver()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QDnsLookup10nameserverEv(void *this_) {
@@ -255,7 +259,7 @@ return new QHostAddress(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:237
+// /usr/include/qt/QtNetwork/qdnslookup.h:239
 // [-2] void setNameserver(const QHostAddress &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup13setNameserverERK12QHostAddress(void *this_, QHostAddress* nameserver) {
@@ -263,7 +267,7 @@ void C_ZN10QDnsLookup13setNameserverERK12QHostAddress(void *this_, QHostAddress*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:239
+// /usr/include/qt/QtNetwork/qdnslookup.h:241
 // [-2] QList<QDnsDomainNameRecord> canonicalNameRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsDomainNameRecord>* C_ZNK10QDnsLookup20canonicalNameRecordsEv(void *this_) {
@@ -272,7 +276,7 @@ return new QList<QDnsDomainNameRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:240
+// /usr/include/qt/QtNetwork/qdnslookup.h:242
 // [-2] QList<QDnsHostAddressRecord> hostAddressRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsHostAddressRecord>* C_ZNK10QDnsLookup18hostAddressRecordsEv(void *this_) {
@@ -281,7 +285,7 @@ return new QList<QDnsHostAddressRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:241
+// /usr/include/qt/QtNetwork/qdnslookup.h:243
 // [-2] QList<QDnsMailExchangeRecord> mailExchangeRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsMailExchangeRecord>* C_ZNK10QDnsLookup19mailExchangeRecordsEv(void *this_) {
@@ -290,7 +294,7 @@ return new QList<QDnsMailExchangeRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:242
+// /usr/include/qt/QtNetwork/qdnslookup.h:244
 // [-2] QList<QDnsDomainNameRecord> nameServerRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsDomainNameRecord>* C_ZNK10QDnsLookup17nameServerRecordsEv(void *this_) {
@@ -299,7 +303,7 @@ return new QList<QDnsDomainNameRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:243
+// /usr/include/qt/QtNetwork/qdnslookup.h:245
 // [-2] QList<QDnsDomainNameRecord> pointerRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsDomainNameRecord>* C_ZNK10QDnsLookup14pointerRecordsEv(void *this_) {
@@ -308,7 +312,7 @@ return new QList<QDnsDomainNameRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:244
+// /usr/include/qt/QtNetwork/qdnslookup.h:246
 // [-2] QList<QDnsServiceRecord> serviceRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsServiceRecord>* C_ZNK10QDnsLookup14serviceRecordsEv(void *this_) {
@@ -317,7 +321,7 @@ return new QList<QDnsServiceRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:245
+// /usr/include/qt/QtNetwork/qdnslookup.h:247
 // [-2] QList<QDnsTextRecord> textRecords()
 extern "C" Q_DECL_EXPORT
 QList<QDnsTextRecord>* C_ZNK10QDnsLookup11textRecordsEv(void *this_) {
@@ -326,7 +330,7 @@ return new QList<QDnsTextRecord>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:249
+// /usr/include/qt/QtNetwork/qdnslookup.h:251
 // [-2] void abort()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup5abortEv(void *this_) {
@@ -334,7 +338,7 @@ void C_ZN10QDnsLookup5abortEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:250
+// /usr/include/qt/QtNetwork/qdnslookup.h:252
 // [-2] void lookup()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup6lookupEv(void *this_) {
@@ -342,7 +346,7 @@ void C_ZN10QDnsLookup6lookupEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:253
+// /usr/include/qt/QtNetwork/qdnslookup.h:255
 // [-2] void finished()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup8finishedEv(void *this_) {
@@ -350,7 +354,7 @@ void C_ZN10QDnsLookup8finishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:254
+// /usr/include/qt/QtNetwork/qdnslookup.h:256
 // [-2] void nameChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup11nameChangedERK7QString(void *this_, QString* name) {
@@ -358,7 +362,7 @@ void C_ZN10QDnsLookup11nameChangedERK7QString(void *this_, QString* name) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:255
+// /usr/include/qt/QtNetwork/qdnslookup.h:257
 // [-2] void typeChanged(QDnsLookup::Type)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup11typeChangedENS_4TypeE(void *this_, QDnsLookup::Type type_) {
@@ -366,7 +370,7 @@ void C_ZN10QDnsLookup11typeChangedENS_4TypeE(void *this_, QDnsLookup::Type type_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:256
+// /usr/include/qt/QtNetwork/qdnslookup.h:258
 // [-2] void nameserverChanged(const QHostAddress &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QDnsLookup17nameserverChangedERK12QHostAddress(void *this_, QHostAddress* nameserver) {
@@ -389,4 +393,5 @@ void C_ZN10QDnsLookup17nameserverChangedERK12QHostAddress(void *this_, QHostAddr
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

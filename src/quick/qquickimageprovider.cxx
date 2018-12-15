@@ -54,7 +54,7 @@ MyQQuickImageProvider(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImagePr
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:92
+// /usr/include/qt/QtQuick/qquickimageprovider.h:99
 // [-2] void QQuickImageProvider(QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageProviderC2EN21QQmlImageProviderBase9ImageTypeE6QFlagsINS0_4FlagEE(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImageProviderBase::Flag> flags) {
@@ -62,14 +62,14 @@ void* C_ZN19QQuickImageProviderC2EN21QQmlImageProviderBase9ImageTypeE6QFlagsINS0
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:93
+// /usr/include/qt/QtQuick/qquickimageprovider.h:100
 // [-2] void ~QQuickImageProvider()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QQuickImageProviderD2Ev(void *this_) {
   delete (QQuickImageProvider*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:95
+// /usr/include/qt/QtQuick/qquickimageprovider.h:102
 // [4] QQmlImageProviderBase::ImageType imageType()
 extern "C" Q_DECL_EXPORT
 QQmlImageProviderBase::ImageType C_ZNK19QQuickImageProvider9imageTypeEv(void *this_) {
@@ -77,7 +77,7 @@ QQmlImageProviderBase::ImageType C_ZNK19QQuickImageProvider9imageTypeEv(void *th
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:96
+// /usr/include/qt/QtQuick/qquickimageprovider.h:103
 // [4] QQmlImageProviderBase::Flags flags()
 extern "C" Q_DECL_EXPORT
 QQmlImageProviderBase::Flags* C_ZNK19QQuickImageProvider5flagsEv(void *this_) {
@@ -86,7 +86,7 @@ return new QQmlImageProviderBase::Flags(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:103
+// /usr/include/qt/QtQuick/qquickimageprovider.h:110
 // [32] QImage requestImage(const QString &, QSize *, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageProvider12requestImageERK7QStringP5QSizeRKS3_(void *this_, QString* id, QSize * size, QSize* requestedSize) {
@@ -95,7 +95,7 @@ return new QImage(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:104
+// /usr/include/qt/QtQuick/qquickimageprovider.h:111
 // [32] QPixmap requestPixmap(const QString &, QSize *, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageProvider13requestPixmapERK7QStringP5QSizeRKS3_(void *this_, QString* id, QSize * size, QSize* requestedSize) {
@@ -104,7 +104,7 @@ return new QPixmap(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:105
+// /usr/include/qt/QtQuick/qquickimageprovider.h:112
 // [8] QQuickTextureFactory * requestTexture(const QString &, QSize *, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QQuickImageProvider14requestTextureERK7QStringP5QSizeRKS3_(void *this_, QString* id, QSize * size, QSize* requestedSize) {

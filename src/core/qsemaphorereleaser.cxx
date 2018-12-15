@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x050a00
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
@@ -58,7 +59,7 @@ MyQSemaphoreReleaser(QSemaphore * sem, int n) : QSemaphoreReleaser(sem, n) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:75
+// /usr/include/qt/QtCore/qsemaphore.h:77
 // [-2] void QSemaphoreReleaser()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaserC2Ev() {
@@ -66,7 +67,7 @@ void* C_ZN18QSemaphoreReleaserC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:76
+// /usr/include/qt/QtCore/qsemaphore.h:78
 // [-2] void QSemaphoreReleaser(QSemaphore &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore* sem, int n) {
@@ -74,7 +75,7 @@ void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore* sem, int n) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:78
+// /usr/include/qt/QtCore/qsemaphore.h:80
 // [-2] void QSemaphoreReleaser(QSemaphore *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaserC2EP10QSemaphorei(QSemaphore * sem, int n) {
@@ -82,14 +83,14 @@ void* C_ZN18QSemaphoreReleaserC2EP10QSemaphorei(QSemaphore * sem, int n) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:86
+// /usr/include/qt/QtCore/qsemaphore.h:88
 // [-2] void ~QSemaphoreReleaser()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QSemaphoreReleaserD2Ev(void *this_) {
   delete (QSemaphoreReleaser*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:92
+// /usr/include/qt/QtCore/qsemaphore.h:94
 // [-2] void swap(QSemaphoreReleaser &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QSemaphoreReleaser4swapERS_(void *this_, QSemaphoreReleaser* other) {
@@ -97,7 +98,7 @@ void C_ZN18QSemaphoreReleaser4swapERS_(void *this_, QSemaphoreReleaser* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:98
+// /usr/include/qt/QtCore/qsemaphore.h:100
 // [8] QSemaphore * semaphore()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QSemaphoreReleaser9semaphoreEv(void *this_) {
@@ -105,7 +106,7 @@ void* C_ZNK18QSemaphoreReleaser9semaphoreEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:101
+// /usr/include/qt/QtCore/qsemaphore.h:103
 // [8] QSemaphore * cancel()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QSemaphoreReleaser6cancelEv(void *this_) {
@@ -128,4 +129,5 @@ void* C_ZN18QSemaphoreReleaser6cancelEv(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

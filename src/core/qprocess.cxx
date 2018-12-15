@@ -247,12 +247,15 @@ void C_ZN8QProcess5startERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *thi
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qprocess.h:165
 // [-2] void start(QIODevice::OpenMode)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess5startE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> mode) {
   ((QProcess*)this_)->start(mode);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // since 5.10
@@ -347,12 +350,15 @@ QProcess::ProcessChannelMode C_ZNK8QProcess18processChannelModeEv(void *this_) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qprocess.h:178
 // [-2] void setProcessChannelMode(QProcess::ProcessChannelMode)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess21setProcessChannelModeENS_18ProcessChannelModeE(void *this_, QProcess::ProcessChannelMode mode) {
   ((QProcess*)this_)->setProcessChannelMode(mode);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // since 5.2
@@ -366,12 +372,15 @@ QProcess::InputChannelMode C_ZNK8QProcess16inputChannelModeEv(void *this_) {
 #endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qprocess.h:180
 // [-2] void setInputChannelMode(QProcess::InputChannelMode)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess19setInputChannelModeENS_16InputChannelModeE(void *this_, QProcess::InputChannelMode mode) {
   ((QProcess*)this_)->setInputChannelMode(mode);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:182
@@ -417,20 +426,26 @@ void C_ZN8QProcess20setStandardInputFileERK7QString(void *this_, QString* fileNa
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qprocess.h:189
 // [-2] void setStandardOutputFile(const QString &, QIODevice::OpenMode)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess21setStandardOutputFileERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* fileName, QFlags<QIODevice::OpenModeFlag> mode) {
   ((QProcess*)this_)->setStandardOutputFile(*fileName, mode);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
+// since 4.2
 // /usr/include/qt/QtCore/qprocess.h:190
 // [-2] void setStandardErrorFile(const QString &, QIODevice::OpenMode)
+#if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
 void C_ZN8QProcess20setStandardErrorFileERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* fileName, QFlags<QIODevice::OpenModeFlag> mode) {
   ((QProcess*)this_)->setStandardErrorFile(*fileName, mode);
 }
+#endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
 // since 4.2

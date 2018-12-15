@@ -96,6 +96,8 @@ public:
   virtual ~MyQAndroidService() {}
 // void QAndroidService(int &, char **, int)
 MyQAndroidService(int & argc, char** argv, int flags) : QAndroidService(argc, argv, flags) {}
+// void QAndroidService(int &, char **, const std::function<QAndroidBinder *(const QAndroidIntent &)> &, int)
+MyQAndroidService(int & argc, char** argv, const std::function<QAndroidBinder *(const QAndroidIntent &)> & binder, int flags) : QAndroidService(argc, argv, binder, flags) {}
 };
 
 extern "C" Q_DECL_EXPORT
@@ -111,22 +113,30 @@ void* C_QAndroidService_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidservice.h:54
+// /usr/include/qt/QtAndroidExtras/qandroidservice.h:55
 // [-2] void QAndroidService(int &, char **, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAndroidServiceC2ERiPPci(int & argc, char** argv, int flags) {
   return  new MyQAndroidService(*(new int(argc)), argv, flags);
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtAndroidExtras/qandroidservice.h:60
+// [-2] void QAndroidService(int &, char **, const std::function<QAndroidBinder *(const QAndroidIntent &)> &, int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN15QAndroidServiceC2ERiPPcRKSt8functionIFP14QAndroidBinderRK14QAndroidIntentEEi(int & argc, char** argv, const std::function<QAndroidBinder *(const QAndroidIntent &)> & binder, int flags) {
+  return  new MyQAndroidService(*(new int(argc)), argv, binder, flags);
+}
+
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidservice.h:59
+// /usr/include/qt/QtAndroidExtras/qandroidservice.h:66
 // [-2] void ~QAndroidService()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAndroidServiceD2Ev(void *this_) {
   delete (QAndroidService*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidservice.h:61
+// /usr/include/qt/QtAndroidExtras/qandroidservice.h:68
 // [8] QAndroidBinder * onBind(const QAndroidIntent &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAndroidService6onBindERK14QAndroidIntent(void *this_, QAndroidIntent* intent) {

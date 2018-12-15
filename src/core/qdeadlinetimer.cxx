@@ -58,7 +58,7 @@ MyQDeadlineTimer(qint64 msecs, Qt::TimerType type_) : QDeadlineTimer(msecs, type
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:65
+// /usr/include/qt/QtCore/qdeadlinetimer.h:66
 // [-2] void QDeadlineTimer(Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerC2EN2Qt9TimerTypeE(Qt::TimerType type_) {
@@ -66,7 +66,7 @@ void* C_ZN14QDeadlineTimerC2EN2Qt9TimerTypeE(Qt::TimerType type_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:67
+// /usr/include/qt/QtCore/qdeadlinetimer.h:68
 // [-2] void QDeadlineTimer(QDeadlineTimer::ForeverConstant, Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerC2ENS_15ForeverConstantEN2Qt9TimerTypeE(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) {
@@ -74,7 +74,7 @@ void* C_ZN14QDeadlineTimerC2ENS_15ForeverConstantEN2Qt9TimerTypeE(QDeadlineTimer
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:69
+// /usr/include/qt/QtCore/qdeadlinetimer.h:70
 // [-2] void QDeadlineTimer(qint64, Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerC2ExN2Qt9TimerTypeE(qint64 msecs, Qt::TimerType type_) {
@@ -82,7 +82,7 @@ void* C_ZN14QDeadlineTimerC2ExN2Qt9TimerTypeE(qint64 msecs, Qt::TimerType type_)
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:71
+// /usr/include/qt/QtCore/qdeadlinetimer.h:72
 // [-2] void swap(QDeadlineTimer &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDeadlineTimer4swapERS_(void *this_, QDeadlineTimer* other) {
@@ -90,7 +90,7 @@ void C_ZN14QDeadlineTimer4swapERS_(void *this_, QDeadlineTimer* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:74
+// /usr/include/qt/QtCore/qdeadlinetimer.h:75
 // [1] bool isForever()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QDeadlineTimer9isForeverEv(void *this_) {
@@ -98,7 +98,7 @@ bool C_ZNK14QDeadlineTimer9isForeverEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:76
+// /usr/include/qt/QtCore/qdeadlinetimer.h:77
 // [1] bool hasExpired()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QDeadlineTimer10hasExpiredEv(void *this_) {
@@ -106,7 +106,7 @@ bool C_ZNK14QDeadlineTimer10hasExpiredEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:78
+// /usr/include/qt/QtCore/qdeadlinetimer.h:79
 // [4] Qt::TimerType timerType()
 extern "C" Q_DECL_EXPORT
 Qt::TimerType C_ZNK14QDeadlineTimer9timerTypeEv(void *this_) {
@@ -114,7 +114,7 @@ Qt::TimerType C_ZNK14QDeadlineTimer9timerTypeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:80
+// /usr/include/qt/QtCore/qdeadlinetimer.h:81
 // [-2] void setTimerType(Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDeadlineTimer12setTimerTypeEN2Qt9TimerTypeE(void *this_, Qt::TimerType type_) {
@@ -122,7 +122,7 @@ void C_ZN14QDeadlineTimer12setTimerTypeEN2Qt9TimerTypeE(void *this_, Qt::TimerTy
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:82
+// /usr/include/qt/QtCore/qdeadlinetimer.h:83
 // [8] qint64 remainingTime()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK14QDeadlineTimer13remainingTimeEv(void *this_) {
@@ -130,7 +130,7 @@ qint64 C_ZNK14QDeadlineTimer13remainingTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:83
+// /usr/include/qt/QtCore/qdeadlinetimer.h:84
 // [8] qint64 remainingTimeNSecs()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK14QDeadlineTimer18remainingTimeNSecsEv(void *this_) {
@@ -138,7 +138,7 @@ qint64 C_ZNK14QDeadlineTimer18remainingTimeNSecsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:84
+// /usr/include/qt/QtCore/qdeadlinetimer.h:85
 // [-2] void setRemainingTime(qint64, Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDeadlineTimer16setRemainingTimeExN2Qt9TimerTypeE(void *this_, qint64 msecs, Qt::TimerType type_) {
@@ -146,7 +146,7 @@ void C_ZN14QDeadlineTimer16setRemainingTimeExN2Qt9TimerTypeE(void *this_, qint64
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:85
+// /usr/include/qt/QtCore/qdeadlinetimer.h:86
 // [-2] void setPreciseRemainingTime(qint64, qint64, Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDeadlineTimer23setPreciseRemainingTimeExxN2Qt9TimerTypeE(void *this_, qint64 secs, qint64 nsecs, Qt::TimerType type_) {
@@ -154,7 +154,7 @@ void C_ZN14QDeadlineTimer23setPreciseRemainingTimeExxN2Qt9TimerTypeE(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:88
+// /usr/include/qt/QtCore/qdeadlinetimer.h:89
 // [8] qint64 deadline()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK14QDeadlineTimer8deadlineEv(void *this_) {
@@ -162,7 +162,7 @@ qint64 C_ZNK14QDeadlineTimer8deadlineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:89
+// /usr/include/qt/QtCore/qdeadlinetimer.h:90
 // [8] qint64 deadlineNSecs()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK14QDeadlineTimer13deadlineNSecsEv(void *this_) {
@@ -170,7 +170,7 @@ qint64 C_ZNK14QDeadlineTimer13deadlineNSecsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:90
+// /usr/include/qt/QtCore/qdeadlinetimer.h:91
 // [-2] void setDeadline(qint64, Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDeadlineTimer11setDeadlineExN2Qt9TimerTypeE(void *this_, qint64 msecs, Qt::TimerType timerType) {
@@ -178,7 +178,7 @@ void C_ZN14QDeadlineTimer11setDeadlineExN2Qt9TimerTypeE(void *this_, qint64 msec
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:91
+// /usr/include/qt/QtCore/qdeadlinetimer.h:92
 // [-2] void setPreciseDeadline(qint64, qint64, Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDeadlineTimer18setPreciseDeadlineExxN2Qt9TimerTypeE(void *this_, qint64 secs, qint64 nsecs, Qt::TimerType type_) {
@@ -186,7 +186,7 @@ void C_ZN14QDeadlineTimer18setPreciseDeadlineExxN2Qt9TimerTypeE(void *this_, qin
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:94
+// /usr/include/qt/QtCore/qdeadlinetimer.h:95
 // [16] QDeadlineTimer addNSecs(QDeadlineTimer, qint64)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimer8addNSecsES_x(QDeadlineTimer* dt, qint64 nsecs) {
@@ -195,7 +195,7 @@ return new QDeadlineTimer(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:95
+// /usr/include/qt/QtCore/qdeadlinetimer.h:96
 // [16] QDeadlineTimer current(Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimer7currentEN2Qt9TimerTypeE(Qt::TimerType timerType) {
@@ -204,7 +204,7 @@ return new QDeadlineTimer(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:118
+// /usr/include/qt/QtCore/qdeadlinetimer.h:119
 // [16] QDeadlineTimer & operator+=(qint64)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimerpLEx(void *this_, qint64 msecs) {
@@ -213,7 +213,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:120
+// /usr/include/qt/QtCore/qdeadlinetimer.h:121
 // [16] QDeadlineTimer & operator-=(qint64)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDeadlineTimermIEx(void *this_, qint64 msecs) {
@@ -222,11 +222,20 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdeadlinetimer.h:162
+// /usr/include/qt/QtCore/qdeadlinetimer.h:163
 // [8] std::chrono::nanoseconds remainingTimeAsDuration()
 extern "C" Q_DECL_EXPORT
 std::chrono::nanoseconds C_ZNK14QDeadlineTimer23remainingTimeAsDurationEv(void *this_) {
   return (std::chrono::nanoseconds)((QDeadlineTimer*)this_)->remainingTimeAsDuration();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdeadlinetimer.h:193
+// [16] QPair<qint64, unsigned int> _q_data()
+extern "C" Q_DECL_EXPORT
+void C_ZNK14QDeadlineTimer7_q_dataEv(void *this_) {
+  auto rv = ((QDeadlineTimer*)this_)->_q_data();
+/*return rv;*/
 }
 
 

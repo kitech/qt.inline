@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtCore/qvariantanimation.h
 #ifndef protected
@@ -174,7 +175,7 @@ void* C_QVariantAnimation_init_staticMetaObject(void* this_, void* strdat, void*
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:98
+// /usr/include/qt/QtCore/qvariantanimation.h:97
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QVariantAnimation5eventEP6QEvent(void *this_, QEvent * event) {
@@ -182,7 +183,7 @@ bool C_ZN17QVariantAnimation5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:100
+// /usr/include/qt/QtCore/qvariantanimation.h:99
 // [-2] void updateCurrentTime(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation17updateCurrentTimeEi(void *this_, int arg0) {
@@ -190,7 +191,7 @@ void C_ZN17QVariantAnimation17updateCurrentTimeEi(void *this_, int arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:101
+// /usr/include/qt/QtCore/qvariantanimation.h:100
 // [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
@@ -198,7 +199,7 @@ void C_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:103
+// /usr/include/qt/QtCore/qvariantanimation.h:102
 // [-2] void updateCurrentValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void *this_, QVariant* value) {
@@ -206,7 +207,7 @@ void C_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void *this_, QVaria
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:104
+// /usr/include/qt/QtCore/qvariantanimation.h:103
 // [16] QVariant interpolated(const QVariant &, const QVariant &, qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(void *this_, QVariant* from, QVariant* to, qreal progress) {
@@ -215,7 +216,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:57
+// /usr/include/qt/QtCore/qvariantanimation.h:56
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation10metaObjectEv(void *this_) {
@@ -223,7 +224,7 @@ void* C_ZNK17QVariantAnimation10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:57
+// /usr/include/qt/QtCore/qvariantanimation.h:56
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QVariantAnimation11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -231,7 +232,7 @@ void* C_ZN17QVariantAnimation11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:57
+// /usr/include/qt/QtCore/qvariantanimation.h:56
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN17QVariantAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -239,7 +240,7 @@ int C_ZN17QVariantAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, Q
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:57
+// /usr/include/qt/QtCore/qvariantanimation.h:56
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QVariantAnimation2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -248,7 +249,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:57
+// /usr/include/qt/QtCore/qvariantanimation.h:56
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QVariantAnimation6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -257,7 +258,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:68
+// /usr/include/qt/QtCore/qvariantanimation.h:67
 // [-2] void QVariantAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QVariantAnimationC2EP7QObject(QObject * parent) {
@@ -266,14 +267,14 @@ void* C_ZN17QVariantAnimationC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:69
+// /usr/include/qt/QtCore/qvariantanimation.h:68
 // [-2] void ~QVariantAnimation()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimationD2Ev(void *this_) {
   delete (QVariantAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:71
+// /usr/include/qt/QtCore/qvariantanimation.h:70
 // [16] QVariant startValue()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation10startValueEv(void *this_) {
@@ -282,7 +283,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:72
+// /usr/include/qt/QtCore/qvariantanimation.h:71
 // [-2] void setStartValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation13setStartValueERK8QVariant(void *this_, QVariant* value) {
@@ -290,7 +291,7 @@ void C_ZN17QVariantAnimation13setStartValueERK8QVariant(void *this_, QVariant* v
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:74
+// /usr/include/qt/QtCore/qvariantanimation.h:73
 // [16] QVariant endValue()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation8endValueEv(void *this_) {
@@ -299,7 +300,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:75
+// /usr/include/qt/QtCore/qvariantanimation.h:74
 // [-2] void setEndValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation11setEndValueERK8QVariant(void *this_, QVariant* value) {
@@ -307,7 +308,7 @@ void C_ZN17QVariantAnimation11setEndValueERK8QVariant(void *this_, QVariant* val
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:77
+// /usr/include/qt/QtCore/qvariantanimation.h:76
 // [16] QVariant keyValueAt(qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation10keyValueAtEd(void *this_, qreal step) {
@@ -316,7 +317,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:78
+// /usr/include/qt/QtCore/qvariantanimation.h:77
 // [-2] void setKeyValueAt(qreal, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation13setKeyValueAtEdRK8QVariant(void *this_, qreal step, QVariant* value) {
@@ -324,7 +325,7 @@ void C_ZN17QVariantAnimation13setKeyValueAtEdRK8QVariant(void *this_, qreal step
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:80
+// /usr/include/qt/QtCore/qvariantanimation.h:79
 // [-2] QVariantAnimation::KeyValues keyValues()
 extern "C" Q_DECL_EXPORT
 QVariantAnimation::KeyValues* C_ZNK17QVariantAnimation9keyValuesEv(void *this_) {
@@ -333,7 +334,7 @@ return new QVariantAnimation::KeyValues(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:81
+// /usr/include/qt/QtCore/qvariantanimation.h:80
 // [-2] void setKeyValues(const QVariantAnimation::KeyValues &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation12setKeyValuesERK7QVectorI5QPairId8QVariantEE(void *this_, const QVariantAnimation::KeyValues & values) {
@@ -341,7 +342,7 @@ void C_ZN17QVariantAnimation12setKeyValuesERK7QVectorI5QPairId8QVariantEE(void *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:83
+// /usr/include/qt/QtCore/qvariantanimation.h:82
 // [16] QVariant currentValue()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation12currentValueEv(void *this_) {
@@ -350,7 +351,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:85
+// /usr/include/qt/QtCore/qvariantanimation.h:84
 // [4] int duration()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QVariantAnimation8durationEv(void *this_) {
@@ -358,7 +359,7 @@ int C_ZNK17QVariantAnimation8durationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:86
+// /usr/include/qt/QtCore/qvariantanimation.h:85
 // [-2] void setDuration(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation11setDurationEi(void *this_, int msecs) {
@@ -366,7 +367,7 @@ void C_ZN17QVariantAnimation11setDurationEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:88
+// /usr/include/qt/QtCore/qvariantanimation.h:87
 // [8] QEasingCurve easingCurve()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QVariantAnimation11easingCurveEv(void *this_) {
@@ -375,7 +376,7 @@ return new QEasingCurve(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:89
+// /usr/include/qt/QtCore/qvariantanimation.h:88
 // [-2] void setEasingCurve(const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation14setEasingCurveERK12QEasingCurve(void *this_, QEasingCurve* easing) {
@@ -383,7 +384,7 @@ void C_ZN17QVariantAnimation14setEasingCurveERK12QEasingCurve(void *this_, QEasi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:94
+// /usr/include/qt/QtCore/qvariantanimation.h:93
 // [-2] void valueChanged(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QVariantAnimation12valueChangedERK8QVariant(void *this_, QVariant* value) {
@@ -406,4 +407,5 @@ void C_ZN17QVariantAnimation12valueChangedERK8QVariant(void *this_, QVariant* va
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

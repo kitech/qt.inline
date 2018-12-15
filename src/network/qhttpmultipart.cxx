@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h
 #ifndef protected
@@ -113,7 +114,7 @@ void* C_QHttpMultiPart_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:90
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:92
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QHttpMultiPart10metaObjectEv(void *this_) {
@@ -121,7 +122,7 @@ void* C_ZNK14QHttpMultiPart10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:90
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:92
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPart11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -129,7 +130,7 @@ void* C_ZN14QHttpMultiPart11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:90
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:92
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QHttpMultiPart11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -137,7 +138,7 @@ int C_ZN14QHttpMultiPart11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMet
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:90
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:92
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPart2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -146,7 +147,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:90
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:92
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPart6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -155,7 +156,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:101
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:103
 // [-2] void QHttpMultiPart(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
@@ -163,7 +164,7 @@ void* C_ZN14QHttpMultiPartC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:102
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:104
 // [-2] void QHttpMultiPart(QHttpMultiPart::ContentType, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject(QHttpMultiPart::ContentType contentType, QObject * parent) {
@@ -171,14 +172,14 @@ void* C_ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject(QHttpMultiPart::ContentT
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:103
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:105
 // [-2] void ~QHttpMultiPart()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QHttpMultiPartD2Ev(void *this_) {
   delete (QHttpMultiPart*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:105
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:107
 // [-2] void append(const QHttpPart &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QHttpMultiPart6appendERK9QHttpPart(void *this_, QHttpPart* httpPart) {
@@ -186,7 +187,7 @@ void C_ZN14QHttpMultiPart6appendERK9QHttpPart(void *this_, QHttpPart* httpPart) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:107
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:109
 // [-2] void setContentType(QHttpMultiPart::ContentType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QHttpMultiPart14setContentTypeENS_11ContentTypeE(void *this_, QHttpMultiPart::ContentType contentType) {
@@ -194,7 +195,7 @@ void C_ZN14QHttpMultiPart14setContentTypeENS_11ContentTypeE(void *this_, QHttpMu
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:109
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:111
 // [8] QByteArray boundary()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QHttpMultiPart8boundaryEv(void *this_) {
@@ -203,7 +204,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:110
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:112
 // [-2] void setBoundary(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QHttpMultiPart11setBoundaryERK10QByteArray(void *this_, QByteArray* boundary) {
@@ -226,4 +227,5 @@ void C_ZN14QHttpMultiPart11setBoundaryERK10QByteArray(void *this_, QByteArray* b
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

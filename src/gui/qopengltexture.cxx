@@ -322,12 +322,15 @@ void C_ZN14QOpenGLTexture15allocateStorageEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qopengltexture.h:448
 // [-2] void allocateStorage(QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture15allocateStorageENS_11PixelFormatENS_9PixelTypeE(void *this_, QOpenGLTexture::PixelFormat pixelFormat, QOpenGLTexture::PixelType pixelType) {
   ((QOpenGLTexture*)this_)->allocateStorage(pixelFormat, pixelType);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengltexture.h:449
@@ -386,44 +389,59 @@ void C_ZN14QOpenGLTexture7setDataENS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLPi
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qopengltexture.h:473
 // [-2] void setData(int, int, QOpenGLTexture::CubeMapFace, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::CubeMapFace cubeFace, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setData(mipLevel, layer, cubeFace, sourceFormat, sourceType, data, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtGui/qopengltexture.h:476
 // [-2] void setData(int, int, int, QOpenGLTexture::CubeMapFace, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, int layerCount, QOpenGLTexture::CubeMapFace cubeFace, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setData(mipLevel, layer, layerCount, cubeFace, sourceFormat, sourceType, data, options);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qopengltexture.h:479
 // [-2] void setData(int, int, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiNS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setData(mipLevel, layer, sourceFormat, sourceType, data, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qopengltexture.h:482
 // [-2] void setData(int, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiNS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setData(mipLevel, sourceFormat, sourceType, data, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qopengltexture.h:485
 // [-2] void setData(QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setData(sourceFormat, sourceType, data, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengltexture.h:491
@@ -458,20 +476,26 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiPvPK27QOpenGLPixelTransferOptions(
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.3
 // /usr/include/qt/QtGui/qopengltexture.h:503
 // [-2] void setCompressedData(int, int, QOpenGLTexture::CubeMapFace, int, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiNS_11CubeMapFaceEiPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::CubeMapFace cubeFace, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setCompressedData(mipLevel, layer, cubeFace, dataSize, data, options);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtGui/qopengltexture.h:506
 // [-2] void setCompressedData(int, int, int, QOpenGLTexture::CubeMapFace, int, const void *, const QOpenGLPixelTransferOptions *const)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiiNS_11CubeMapFaceEiPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, int layerCount, QOpenGLTexture::CubeMapFace cubeFace, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
   ((QOpenGLTexture*)this_)->setCompressedData(mipLevel, layer, layerCount, cubeFace, dataSize, data, options);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengltexture.h:509
@@ -619,12 +643,15 @@ QOpenGLTexture::SwizzleValue C_ZNK14QOpenGLTexture11swizzleMaskENS_16SwizzleComp
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtGui/qopengltexture.h:547
 // [-2] void setDepthStencilMode(QOpenGLTexture::DepthStencilMode)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture19setDepthStencilModeENS_16DepthStencilModeE(void *this_, QOpenGLTexture::DepthStencilMode mode) {
   ((QOpenGLTexture*)this_)->setDepthStencilMode(mode);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // since 5.4
@@ -657,12 +684,15 @@ QOpenGLTexture::ComparisonFunction C_ZNK14QOpenGLTexture18comparisonFunctionEv(v
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtGui/qopengltexture.h:570
 // [-2] void setComparisonMode(QOpenGLTexture::ComparisonMode)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setComparisonModeENS_14ComparisonModeE(void *this_, QOpenGLTexture::ComparisonMode mode) {
   ((QOpenGLTexture*)this_)->setComparisonMode(mode);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
 // since 5.5

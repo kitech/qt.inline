@@ -54,7 +54,7 @@ MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEve
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1022
+// /usr/include/qt/QtGui/qevent.h:1027
 // [-2] void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(QPointF* contentPos, QPointF* overshoot, QScrollEvent::ScrollState scrollState) {
@@ -62,14 +62,14 @@ void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(QPointF* contentPos, Q
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1023
+// /usr/include/qt/QtGui/qevent.h:1028
 // [-2] void ~QScrollEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QScrollEventD2Ev(void *this_) {
   delete (QScrollEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1025
+// /usr/include/qt/QtGui/qevent.h:1030
 // [16] QPointF contentPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QScrollEvent10contentPosEv(void *this_) {
@@ -78,7 +78,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1026
+// /usr/include/qt/QtGui/qevent.h:1031
 // [16] QPointF overshootDistance()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QScrollEvent17overshootDistanceEv(void *this_) {
@@ -87,7 +87,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1027
+// /usr/include/qt/QtGui/qevent.h:1032
 // [4] QScrollEvent::ScrollState scrollState()
 extern "C" Q_DECL_EXPORT
 QScrollEvent::ScrollState C_ZNK12QScrollEvent11scrollStateEv(void *this_) {

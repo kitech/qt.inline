@@ -297,20 +297,26 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qtextcodec.h:119
 // [8] QTextDecoder * makeDecoder(QTextCodec::ConversionFlags)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11makeDecoderE6QFlagsINS_14ConversionFlagEE(void *this_, QFlags<QTextCodec::ConversionFlag> flags) {
   return (void*)((QTextCodec*)this_)->makeDecoder(flags);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
+// since 4.7
 // /usr/include/qt/QtCore/qtextcodec.h:120
 // [8] QTextEncoder * makeEncoder(QTextCodec::ConversionFlags)
+#if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11makeEncoderE6QFlagsINS_14ConversionFlagEE(void *this_, QFlags<QTextCodec::ConversionFlag> flags) {
   return (void*)((QTextCodec*)this_)->makeEncoder(flags);
 }
+#endif // QT_VERSION >= 0x040700
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:122

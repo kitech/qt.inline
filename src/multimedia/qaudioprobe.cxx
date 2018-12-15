@@ -194,8 +194,8 @@ bool C_ZNK11QAudioProbe8isActiveEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qaudioprobe.h:65
 // [-2] void audioBufferProbed(const QAudioBuffer &)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QAudioProbe17audioBufferProbedERK12QAudioBuffer(void *this_, QAudioBuffer* audioBuffer) {
-  ((QAudioProbe*)this_)->audioBufferProbed(*audioBuffer);
+void C_ZN11QAudioProbe17audioBufferProbedERK12QAudioBuffer(void *this_, QAudioBuffer* buffer) {
+  ((QAudioProbe*)this_)->audioBufferProbed(*buffer);
 }
 
 // Public Visibility=Default Availability=Available

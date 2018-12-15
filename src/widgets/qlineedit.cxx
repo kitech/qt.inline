@@ -293,7 +293,7 @@ void* C_QLineEdit_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:212
+// /usr/include/qt/QtWidgets/qlineedit.h:213
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -301,7 +301,7 @@ void C_ZN9QLineEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * a
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:213
+// /usr/include/qt/QtWidgets/qlineedit.h:214
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -309,7 +309,7 @@ void C_ZN9QLineEdit14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ar
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:214
+// /usr/include/qt/QtWidgets/qlineedit.h:215
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -317,7 +317,7 @@ void C_ZN9QLineEdit17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:215
+// /usr/include/qt/QtWidgets/qlineedit.h:216
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -325,7 +325,7 @@ void C_ZN9QLineEdit21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:216
+// /usr/include/qt/QtWidgets/qlineedit.h:217
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
@@ -333,7 +333,7 @@ void C_ZN9QLineEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:217
+// /usr/include/qt/QtWidgets/qlineedit.h:218
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
@@ -341,7 +341,7 @@ void C_ZN9QLineEdit12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:218
+// /usr/include/qt/QtWidgets/qlineedit.h:219
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
@@ -349,7 +349,7 @@ void C_ZN9QLineEdit13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:219
+// /usr/include/qt/QtWidgets/qlineedit.h:220
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
@@ -357,7 +357,7 @@ void C_ZN9QLineEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:221
+// /usr/include/qt/QtWidgets/qlineedit.h:222
 // [-2] void dragEnterEvent(QDragEnterEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEvent * arg0) {
@@ -365,7 +365,7 @@ void C_ZN9QLineEdit14dragEnterEventEP15QDragEnterEvent(void *this_, QDragEnterEv
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:222
+// /usr/include/qt/QtWidgets/qlineedit.h:223
 // [-2] void dragMoveEvent(QDragMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * e) {
@@ -373,7 +373,7 @@ void C_ZN9QLineEdit13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:223
+// /usr/include/qt/QtWidgets/qlineedit.h:224
 // [-2] void dragLeaveEvent(QDragLeaveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEvent * e) {
@@ -381,7 +381,7 @@ void C_ZN9QLineEdit14dragLeaveEventEP15QDragLeaveEvent(void *this_, QDragLeaveEv
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:224
+// /usr/include/qt/QtWidgets/qlineedit.h:225
 // [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) {
@@ -389,7 +389,7 @@ void C_ZN9QLineEdit9dropEventEP10QDropEvent(void *this_, QDropEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:226
+// /usr/include/qt/QtWidgets/qlineedit.h:227
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit11changeEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -397,7 +397,7 @@ void C_ZN9QLineEdit11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:228
+// /usr/include/qt/QtWidgets/qlineedit.h:229
 // [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * arg0) {
@@ -405,7 +405,7 @@ void C_ZN9QLineEdit16contextMenuEventEP17QContextMenuEvent(void *this_, QContext
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:231
+// /usr/include/qt/QtWidgets/qlineedit.h:232
 // [-2] void inputMethodEvent(QInputMethodEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
@@ -944,20 +944,26 @@ return new QMargins(rv);
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qlineedit.h:180
 // [-2] void addAction(QAction *, QLineEdit::ActionPosition)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit9addActionEP7QActionNS_14ActionPositionE(void *this_, QAction * action, QLineEdit::ActionPosition position) {
   ((QLineEdit*)this_)->addAction(action, position);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtWidgets/qlineedit.h:181
 // [8] QAction * addAction(const QIcon &, QLineEdit::ActionPosition)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QLineEdit9addActionERK5QIconNS_14ActionPositionE(void *this_, QIcon* icon, QLineEdit::ActionPosition position) {
   return (void*)((QLineEdit*)this_)->addAction(*icon, position);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:185
@@ -1095,8 +1101,16 @@ void C_ZN9QLineEdit16selectionChangedEv(void *this_) {
   ((QLineEdit*)this_)->selectionChanged();
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:210
+// [-2] void inputRejected()
+extern "C" Q_DECL_EXPORT
+void C_ZN9QLineEdit13inputRejectedEv(void *this_) {
+  ((QLineEdit*)this_)->inputRejected();
+}
+
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:234
+// /usr/include/qt/QtWidgets/qlineedit.h:235
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery arg0) {
@@ -1105,7 +1119,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:235
+// /usr/include/qt/QtWidgets/qlineedit.h:236
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery, QVariant)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *this_, Qt::InputMethodQuery property, QVariant* argument) {
@@ -1114,7 +1128,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlineedit.h:236
+// /usr/include/qt/QtWidgets/qlineedit.h:237
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QLineEdit5eventEP6QEvent(void *this_, QEvent * arg0) {

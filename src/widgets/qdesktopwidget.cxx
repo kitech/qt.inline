@@ -122,7 +122,7 @@ void* C_QDesktopWidget_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:90
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:103
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) {
@@ -189,38 +189,6 @@ void C_ZN14QDesktopWidgetD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:62
-// [1] bool isVirtualDesktop()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QDesktopWidget16isVirtualDesktopEv(void *this_) {
-  return (bool)((QDesktopWidget*)this_)->isVirtualDesktop();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:64
-// [4] int numScreens()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QDesktopWidget10numScreensEv(void *this_) {
-  return (int)((QDesktopWidget*)this_)->numScreens();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:65
-// [4] int screenCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QDesktopWidget11screenCountEv(void *this_) {
-  return (int)((QDesktopWidget*)this_)->screenCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:66
-// [4] int primaryScreen()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QDesktopWidget13primaryScreenEv(void *this_) {
-  return (int)((QDesktopWidget*)this_)->primaryScreen();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:68
 // [4] int screenNumber(const QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QDesktopWidget12screenNumberEPK7QWidget(void *this_, const QWidget * widget) {
@@ -228,32 +196,7 @@ int C_ZNK14QDesktopWidget12screenNumberEPK7QWidget(void *this_, const QWidget * 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:69
-// [4] int screenNumber(const QPoint &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QDesktopWidget12screenNumberERK6QPoint(void *this_, QPoint* arg0) {
-  return (int)((QDesktopWidget*)this_)->screenNumber(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:71
-// [8] QWidget * screen(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QDesktopWidget6screenEi(void *this_, int screen) {
-  return (void*)((QDesktopWidget*)this_)->screen(screen);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:73
-// [16] const QRect screenGeometry(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QDesktopWidget14screenGeometryEi(void *this_, int screen) {
-  auto rv = ((QDesktopWidget*)this_)->screenGeometry(screen);
-return new QRect(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:74
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:63
 // [16] const QRect screenGeometry(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget14screenGeometryEPK7QWidget(void *this_, const QWidget * widget) {
@@ -261,8 +204,74 @@ void* C_ZNK14QDesktopWidget14screenGeometryEPK7QWidget(void *this_, const QWidge
 return new QRect(rv);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:64
+// [16] const QRect availableGeometry(const QWidget *)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK14QDesktopWidget17availableGeometryEPK7QWidget(void *this_, const QWidget * widget) {
+  auto rv = ((QDesktopWidget*)this_)->availableGeometry(widget);
+return new QRect(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:67
+// [1] bool isVirtualDesktop()
+extern "C" Q_DECL_EXPORT
+bool C_ZNK14QDesktopWidget16isVirtualDesktopEv(void *this_) {
+  return (bool)((QDesktopWidget*)this_)->isVirtualDesktop();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:69
+// [4] int numScreens()
+extern "C" Q_DECL_EXPORT
+int C_ZNK14QDesktopWidget10numScreensEv(void *this_) {
+  return (int)((QDesktopWidget*)this_)->numScreens();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:70
+// [4] int screenCount()
+extern "C" Q_DECL_EXPORT
+int C_ZNK14QDesktopWidget11screenCountEv(void *this_) {
+  return (int)((QDesktopWidget*)this_)->screenCount();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:71
+// [4] int primaryScreen()
+extern "C" Q_DECL_EXPORT
+int C_ZNK14QDesktopWidget13primaryScreenEv(void *this_) {
+  return (int)((QDesktopWidget*)this_)->primaryScreen();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:73
+// [4] int screenNumber(const QPoint &)
+extern "C" Q_DECL_EXPORT
+int C_ZNK14QDesktopWidget12screenNumberERK6QPoint(void *this_, QPoint* arg0) {
+  return (int)((QDesktopWidget*)this_)->screenNumber(*arg0);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:75
+// [8] QWidget * screen(int)
+extern "C" Q_DECL_EXPORT
+void* C_ZN14QDesktopWidget6screenEi(void *this_, int screen) {
+  return (void*)((QDesktopWidget*)this_)->screen(screen);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:77
+// [16] const QRect screenGeometry(int)
+extern "C" Q_DECL_EXPORT
+void* C_ZNK14QDesktopWidget14screenGeometryEi(void *this_, int screen) {
+  auto rv = ((QDesktopWidget*)this_)->screenGeometry(screen);
+return new QRect(rv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:78
 // [16] const QRect screenGeometry(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget14screenGeometryERK6QPoint(void *this_, QPoint* point) {
@@ -271,7 +280,7 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:78
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:86
 // [16] const QRect availableGeometry(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget17availableGeometryEi(void *this_, int screen) {
@@ -279,17 +288,8 @@ void* C_ZNK14QDesktopWidget17availableGeometryEi(void *this_, int screen) {
 return new QRect(rv);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:79
-// [16] const QRect availableGeometry(const QWidget *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QDesktopWidget17availableGeometryEPK7QWidget(void *this_, const QWidget * widget) {
-  auto rv = ((QDesktopWidget*)this_)->availableGeometry(widget);
-return new QRect(rv);
-}
-
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:80
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:87
 // [16] const QRect availableGeometry(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDesktopWidget17availableGeometryERK6QPoint(void *this_, QPoint* point) {
@@ -298,7 +298,7 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:84
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:96
 // [-2] void resized(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget7resizedEi(void *this_, int arg0) {
@@ -306,7 +306,7 @@ void C_ZN14QDesktopWidget7resizedEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:85
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:97
 // [-2] void workAreaResized(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget15workAreaResizedEi(void *this_, int arg0) {
@@ -314,26 +314,20 @@ void C_ZN14QDesktopWidget15workAreaResizedEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:86
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:98
 // [-2] void screenCountChanged(int)
-#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget18screenCountChangedEi(void *this_, int arg0) {
   ((QDesktopWidget*)this_)->screenCountChanged(arg0);
 }
-#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:87
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:99
 // [-2] void primaryScreenChanged()
-#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDesktopWidget20primaryScreenChangedEv(void *this_) {
   ((QDesktopWidget*)this_)->primaryScreenChanged();
 }
-#endif // QT_VERSION >= 0x050600
 
 //  main block end
 

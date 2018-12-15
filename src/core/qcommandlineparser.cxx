@@ -96,12 +96,15 @@ void C_ZN18QCommandLineParser27setSingleDashWordOptionModeENS_24SingleDashWordOp
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtCore/qcommandlineparser.h:72
 // [-2] void setOptionsAfterPositionalArgumentsMode(QCommandLineParser::OptionsAfterPositionalArgumentsMode)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCommandLineParser38setOptionsAfterPositionalArgumentsModeENS_35OptionsAfterPositionalArgumentsModeE(void *this_, QCommandLineParser::OptionsAfterPositionalArgumentsMode mode) {
   ((QCommandLineParser*)this_)->setOptionsAfterPositionalArgumentsMode(mode);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:74

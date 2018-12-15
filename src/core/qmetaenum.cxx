@@ -69,7 +69,18 @@ void* C_ZNK9QMetaEnum4nameEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.12
 // /usr/include/qt/QtCore/qmetaobject.h:212
+// [8] const char * enumName()
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QMetaEnum8enumNameEv(void *this_) {
+  return (void*)((QMetaEnum*)this_)->enumName();
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:213
 // [1] bool isFlag()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMetaEnum6isFlagEv(void *this_) {
@@ -78,7 +89,7 @@ bool C_ZNK9QMetaEnum6isFlagEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qmetaobject.h:213
+// /usr/include/qt/QtCore/qmetaobject.h:214
 // [1] bool isScoped()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -88,7 +99,7 @@ bool C_ZNK9QMetaEnum8isScopedEv(void *this_) {
 #endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:215
+// /usr/include/qt/QtCore/qmetaobject.h:216
 // [4] int keyCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QMetaEnum8keyCountEv(void *this_) {
@@ -96,7 +107,7 @@ int C_ZNK9QMetaEnum8keyCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:216
+// /usr/include/qt/QtCore/qmetaobject.h:217
 // [8] const char * key(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMetaEnum3keyEi(void *this_, int index) {
@@ -104,7 +115,7 @@ void* C_ZNK9QMetaEnum3keyEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:217
+// /usr/include/qt/QtCore/qmetaobject.h:218
 // [4] int value(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QMetaEnum5valueEi(void *this_, int index) {
@@ -112,7 +123,7 @@ int C_ZNK9QMetaEnum5valueEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:219
+// /usr/include/qt/QtCore/qmetaobject.h:220
 // [8] const char * scope()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMetaEnum5scopeEv(void *this_) {
@@ -120,7 +131,7 @@ void* C_ZNK9QMetaEnum5scopeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:221
+// /usr/include/qt/QtCore/qmetaobject.h:222
 // [4] int keyToValue(const char *, bool *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QMetaEnum10keyToValueEPKcPb(void *this_, const char * key, bool * ok) {
@@ -128,7 +139,7 @@ int C_ZNK9QMetaEnum10keyToValueEPKcPb(void *this_, const char * key, bool * ok) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:222
+// /usr/include/qt/QtCore/qmetaobject.h:223
 // [8] const char * valueToKey(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMetaEnum10valueToKeyEi(void *this_, int value) {
@@ -136,7 +147,7 @@ void* C_ZNK9QMetaEnum10valueToKeyEi(void *this_, int value) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:223
+// /usr/include/qt/QtCore/qmetaobject.h:224
 // [4] int keysToValue(const char *, bool *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QMetaEnum11keysToValueEPKcPb(void *this_, const char * keys, bool * ok) {
@@ -144,7 +155,7 @@ int C_ZNK9QMetaEnum11keysToValueEPKcPb(void *this_, const char * keys, bool * ok
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:224
+// /usr/include/qt/QtCore/qmetaobject.h:225
 // [8] QByteArray valueToKeys(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMetaEnum11valueToKeysEi(void *this_, int value) {
@@ -153,7 +164,7 @@ return new QByteArray(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:226
+// /usr/include/qt/QtCore/qmetaobject.h:227
 // [8] const QMetaObject * enclosingMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMetaEnum19enclosingMetaObjectEv(void *this_) {
@@ -161,7 +172,7 @@ void* C_ZNK9QMetaEnum19enclosingMetaObjectEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:228
+// /usr/include/qt/QtCore/qmetaobject.h:229
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMetaEnum7isValidEv(void *this_) {

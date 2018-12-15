@@ -54,7 +54,7 @@ MyQAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl impl) : QAsso
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:675
+// /usr/include/qt/QtCore/qvariant.h:700
 // [-2] void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QAssociativeIterableC2EN17QtMetaTypePrivate24QAssociativeIterableImplE(QtMetaTypePrivate::QAssociativeIterableImpl impl) {
@@ -62,7 +62,7 @@ void* C_ZN20QAssociativeIterableC2EN17QtMetaTypePrivate24QAssociativeIterableImp
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:680
+// /usr/include/qt/QtCore/qvariant.h:705
 // [120] QAssociativeIterable::const_iterator begin()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QAssociativeIterable5beginEv(void *this_) {
@@ -71,7 +71,7 @@ return new QAssociativeIterable::const_iterator(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:681
+// /usr/include/qt/QtCore/qvariant.h:706
 // [120] QAssociativeIterable::const_iterator end()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QAssociativeIterable3endEv(void *this_) {
@@ -81,7 +81,7 @@ return new QAssociativeIterable::const_iterator(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtCore/qvariant.h:682
+// /usr/include/qt/QtCore/qvariant.h:707
 // [120] QAssociativeIterable::const_iterator find(const QVariant &)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -92,7 +92,7 @@ return new QAssociativeIterable::const_iterator(rv);
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:684
+// /usr/include/qt/QtCore/qvariant.h:709
 // [16] QVariant value(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QAssociativeIterable5valueERK8QVariant(void *this_, QVariant* key) {
@@ -101,7 +101,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:686
+// /usr/include/qt/QtCore/qvariant.h:711
 // [4] int size()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QAssociativeIterable4sizeEv(void *this_) {

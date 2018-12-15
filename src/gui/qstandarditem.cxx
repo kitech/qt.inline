@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
@@ -60,7 +61,7 @@ MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:65
+// /usr/include/qt/QtGui/qstandarditemmodel.h:64
 // [-2] void QStandardItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2Ev() {
@@ -68,7 +69,7 @@ void* C_ZN13QStandardItemC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:66
+// /usr/include/qt/QtGui/qstandarditemmodel.h:65
 // [-2] void QStandardItem(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2ERK7QString(QString* text) {
@@ -76,7 +77,7 @@ void* C_ZN13QStandardItemC2ERK7QString(QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:67
+// /usr/include/qt/QtGui/qstandarditemmodel.h:66
 // [-2] void QStandardItem(const QIcon &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2ERK5QIconRK7QString(QIcon* icon, QString* text) {
@@ -84,7 +85,7 @@ void* C_ZN13QStandardItemC2ERK5QIconRK7QString(QIcon* icon, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:68
+// /usr/include/qt/QtGui/qstandarditemmodel.h:67
 // [-2] void QStandardItem(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QStandardItemC2Eii(int rows, int columns) {
@@ -92,14 +93,14 @@ void* C_ZN13QStandardItemC2Eii(int rows, int columns) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:69
+// /usr/include/qt/QtGui/qstandarditemmodel.h:68
 // [-2] void ~QStandardItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStandardItemD2Ev(void *this_) {
   delete (QStandardItem*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:71
+// /usr/include/qt/QtGui/qstandarditemmodel.h:70
 // [16] QVariant data(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QStandardItem4dataEi(void *this_, int role) {
@@ -108,12 +109,23 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:72
+// /usr/include/qt/QtGui/qstandarditemmodel.h:71
 // [-2] void setData(const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QStandardItem7setDataERK8QVarianti(void *this_, QVariant* value, int role) {
   ((QStandardItem*)this_)->setData(*value, role);
 }
+
+// Public Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtGui/qstandarditemmodel.h:72
+// [-2] void clearData()
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void C_ZN13QStandardItem9clearDataEv(void *this_) {
+  ((QStandardItem*)this_)->clearData();
+}
+#endif // QT_VERSION >= 0x050c00
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:74
@@ -813,4 +825,5 @@ bool C_ZNK13QStandardItemltERKS_(void *this_, QStandardItem* other) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

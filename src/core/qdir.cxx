@@ -338,12 +338,15 @@ uint C_ZNK4QDir5countEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtCore/qdir.h:147
 // [1] bool isEmpty(QDir::Filters)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QDir7isEmptyE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
   return (bool)((QDir*)this_)->isEmpty(filters);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:149

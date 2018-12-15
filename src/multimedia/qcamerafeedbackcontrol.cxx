@@ -179,12 +179,15 @@ void* C_QCameraFeedbackControl_init_staticMetaObject(void* this_, void* strdat, 
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:79
 // [1] bool isEventFeedbackEnabled(QCameraFeedbackControl::EventType)
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:81
 // [1] bool setEventFeedbackEnabled(QCameraFeedbackControl::EventType, bool)
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:82
 // [-2] void resetEventFeedback(QCameraFeedbackControl::EventType)
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:84
 // [1] bool setEventFeedbackSound(QCameraFeedbackControl::EventType, const QString &)
 // Public virtual Visibility=Default Availability=Available
@@ -253,28 +256,37 @@ bool C_ZNK22QCameraFeedbackControl22isEventFeedbackEnabledENS_9EventTypeE(void *
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:81
 // [1] bool setEventFeedbackEnabled(QCameraFeedbackControl::EventType, bool)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN22QCameraFeedbackControl23setEventFeedbackEnabledENS_9EventTypeEb(void *this_, QCameraFeedbackControl::EventType arg0, bool arg1) {
   return (bool)((QCameraFeedbackControl*)this_)->setEventFeedbackEnabled(arg0, arg1);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:82
 // [-2] void resetEventFeedback(QCameraFeedbackControl::EventType)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN22QCameraFeedbackControl18resetEventFeedbackENS_9EventTypeE(void *this_, QCameraFeedbackControl::EventType arg0) {
   ((QCameraFeedbackControl*)this_)->resetEventFeedback(arg0);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public purevirtual virtual Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtMultimedia/qcamerafeedbackcontrol.h:84
 // [1] bool setEventFeedbackSound(QCameraFeedbackControl::EventType, const QString &)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN22QCameraFeedbackControl21setEventFeedbackSoundENS_9EventTypeERK7QString(void *this_, QCameraFeedbackControl::EventType arg0, QString* filePath) {
   return (bool)((QCameraFeedbackControl*)this_)->setEventFeedbackSound(arg0, *filePath);
 }
+#endif // QT_VERSION >= 0x050000
 
 //  main block end
 

@@ -174,6 +174,30 @@ return new QString(rv);
 }
 #endif // QT_VERSION >= 0x050600
 
+// Public static Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtCore/qsysinfo.h:243
+// [8] QByteArray machineUniqueId()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QSysInfo15machineUniqueIdEv() {
+  auto rv = QSysInfo::machineUniqueId();
+return new QByteArray(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public static Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtCore/qsysinfo.h:244
+// [8] QByteArray bootUniqueId()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZN8QSysInfo12bootUniqueIdEv() {
+  auto rv = QSysInfo::bootUniqueId();
+return new QByteArray(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
 
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSysInfoD2Ev(void *this_) {

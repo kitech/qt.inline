@@ -221,12 +221,15 @@ void C_ZN10QPdfWriterD2Ev(void *this_) {
   delete (QPdfWriter*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// since 5.10
 // /usr/include/qt/QtGui/qpdfwriter.h:64
 // [-2] void setPdfVersion(QPagedPaintDevice::PdfVersion)
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void C_ZN10QPdfWriter13setPdfVersionEN17QPagedPaintDevice10PdfVersionE(void *this_, QPagedPaintDevice::PdfVersion version) {
   ((QPdfWriter*)this_)->setPdfVersion(version);
 }
+#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // since 5.10

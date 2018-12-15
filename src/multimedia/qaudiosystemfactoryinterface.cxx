@@ -104,19 +104,19 @@ public:
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:61
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:58
 // [8] QList<QByteArray> availableDevices(QAudio::Mode)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:62
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:59
 // [8] QAbstractAudioInput * createInput(const QByteArray &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:63
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:60
 // [8] QAbstractAudioOutput * createOutput(const QByteArray &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:64
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:61
 // [8] QAbstractAudioDeviceInfo * createDeviceInfo(const QByteArray &, QAudio::Mode)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:61
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:58
 // [8] QList<QByteArray> availableDevices(QAudio::Mode)
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZNK28QAudioSystemFactoryInterface16availableDevicesEN6QAudio4ModeE(void *this_, QAudio::Mode arg0) {
@@ -125,7 +125,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:62
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:59
 // [8] QAbstractAudioInput * createInput(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QAudioSystemFactoryInterface11createInputERK10QByteArray(void *this_, QByteArray* device) {
@@ -133,7 +133,7 @@ void* C_ZN28QAudioSystemFactoryInterface11createInputERK10QByteArray(void *this_
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:63
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:60
 // [8] QAbstractAudioOutput * createOutput(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QAudioSystemFactoryInterface12createOutputERK10QByteArray(void *this_, QByteArray* device) {
@@ -141,7 +141,7 @@ void* C_ZN28QAudioSystemFactoryInterface12createOutputERK10QByteArray(void *this
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:64
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:61
 // [8] QAbstractAudioDeviceInfo * createDeviceInfo(const QByteArray &, QAudio::Mode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN28QAudioSystemFactoryInterface16createDeviceInfoERK10QByteArrayN6QAudio4ModeE(void *this_, QByteArray* device, QAudio::Mode mode) {
@@ -149,7 +149,7 @@ void* C_ZN28QAudioSystemFactoryInterface16createDeviceInfoERK10QByteArrayN6QAudi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:65
+// /usr/include/qt/QtMultimedia/qaudiosystemplugin.h:62
 // [-2] void ~QAudioSystemFactoryInterface()
 extern "C" Q_DECL_EXPORT
 void C_ZN28QAudioSystemFactoryInterfaceD2Ev(void *this_) {

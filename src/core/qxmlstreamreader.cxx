@@ -381,13 +381,16 @@ return new QXmlStreamAttributes(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtCore/qxmlstream.h:414
 // [8] QString readElementText(QXmlStreamReader::ReadElementTextBehaviour)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QXmlStreamReader15readElementTextENS_24ReadElementTextBehaviourE(void *this_, QXmlStreamReader::ReadElementTextBehaviour behaviour) {
   auto rv = ((QXmlStreamReader*)this_)->readElementText(behaviour);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:416

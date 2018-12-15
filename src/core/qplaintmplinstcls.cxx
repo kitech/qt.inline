@@ -369,6 +369,13 @@ int C_ZN12QMetaTypeId2IDnE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
+// [4] int QMetaTypeId2<QCborSimpleType>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMetaTypeId2I15QCborSimpleTypeE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId2<QCborSimpleType>*)this_)->qt_metatype_id();
+   return rv;
+}
+
 // [4] int QMetaTypeId2<void *>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN12QMetaTypeId2IPvE14qt_metatype_idEv(void* this_ ) {
@@ -530,13 +537,6 @@ int C_ZN12QMetaTypeId2I8QVariantE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
-// [4] int QMetaTypeId2<QModelIndex>::qt_metatype_id()
-extern "C" Q_DECL_EXPORT
-int C_ZN12QMetaTypeId2I11QModelIndexE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId2<QModelIndex>*)this_)->qt_metatype_id();
-   return rv;
-}
-
 // [4] int QMetaTypeId2<QRegularExpression>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN12QMetaTypeId2I18QRegularExpressionE14qt_metatype_idEv(void* this_ ) {
@@ -569,6 +569,34 @@ int C_ZN12QMetaTypeId2I10QJsonArrayE14qt_metatype_idEv(void* this_ ) {
 extern "C" Q_DECL_EXPORT
 int C_ZN12QMetaTypeId2I13QJsonDocumentE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId2<QJsonDocument>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [4] int QMetaTypeId2<QCborValue>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMetaTypeId2I10QCborValueE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId2<QCborValue>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [4] int QMetaTypeId2<QCborArray>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMetaTypeId2I10QCborArrayE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId2<QCborArray>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [4] int QMetaTypeId2<QCborMap>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMetaTypeId2I8QCborMapE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId2<QCborMap>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [4] int QMetaTypeId2<QModelIndex>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMetaTypeId2I11QModelIndexE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId2<QModelIndex>*)this_)->qt_metatype_id();
    return rv;
 }
 
@@ -859,11 +887,116 @@ void* C_ZN9QTypeInfoI9QBitArrayE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
+// [8] const char * QTypeInfo<QDate>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI5QDateE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QDate>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QTime>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI5QTimeE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QTime>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QDateTime>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI9QDateTimeE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QDateTime>*)this_)->name();
+   return (void*)rv;
+}
+
 // [8] const char * QTypeInfo<QLocale>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI7QLocaleE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QLocale>*)this_)->name();
    return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QDebug>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI6QDebugE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QDebug>*)this_)->name();
+   return (void*)rv;
+}
+
+// [4] int QMetaTypeId<QCborTag>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI8QCborTagE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QCborTag>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [8] const char * QTypeInfo<QRegularExpression>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI18QRegularExpressionE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QRegularExpression>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QRegularExpressionMatch>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI23QRegularExpressionMatchE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QRegularExpressionMatch>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QRegularExpressionMatchIterator>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI31QRegularExpressionMatchIteratorE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QRegularExpressionMatchIterator>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QUrl>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI4QUrlE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QUrl>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QUuid>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI5QUuidE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QUuid>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QCborValue>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI10QCborValueE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QCborValue>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QCborArray>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI10QCborArrayE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QCborArray>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QCborMap>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI8QCborMapE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QCborMap>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<qfloat16>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI8qfloat16E4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<qfloat16>*)this_)->name();
+   return (void*)rv;
+}
+
+// [4] int QMetaTypeId<qfloat16>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI8qfloat16E14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<qfloat16>*)this_)->qt_metatype_id();
+   return rv;
 }
 
 // [8] const char * QTypeInfo<QCollatorSortKey>::name()
@@ -887,27 +1020,6 @@ void* C_ZN9QTypeInfoI18QCommandLineOptionE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QDate>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI5QDateE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QDate>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QTime>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI5QTimeE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QTime>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QDateTime>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI9QDateTimeE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QDateTime>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QDeadlineTimer>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI14QDeadlineTimerE4nameEv(void* this_ ) {
@@ -920,13 +1032,6 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI14QDeadlineTimerE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QDeadlineTimer>*)this_)->qt_metatype_id();
    return rv;
-}
-
-// [8] const char * QTypeInfo<QDebug>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI6QDebugE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QDebug>*)this_)->name();
-   return (void*)rv;
 }
 
 // [8] const char * QTypeInfo<QFileInfo>::name()
@@ -1153,27 +1258,6 @@ void* C_ZN9QTypeInfoI6QRectFE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QRegularExpression>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI18QRegularExpressionE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QRegularExpression>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QRegularExpressionMatch>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI23QRegularExpressionMatchE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QRegularExpressionMatch>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QRegularExpressionMatchIterator>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI31QRegularExpressionMatchIteratorE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QRegularExpressionMatchIterator>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QStorageInfo>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI12QStorageInfoE4nameEv(void* this_ ) {
@@ -1202,24 +1286,10 @@ void* C_ZN9QTypeInfoI9QTimeZoneE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QUrl>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI4QUrlE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QUrl>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QUrlQuery>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI9QUrlQueryE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QUrlQuery>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QUuid>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI5QUuidE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QUuid>*)this_)->name();
    return (void*)rv;
 }
 

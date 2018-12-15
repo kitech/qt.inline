@@ -197,13 +197,13 @@ public:
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // [-2] void setMuted(bool)
-  virtual void setMuted(bool muted)  override {
+  virtual void setMuted(bool mute)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMuted", &handled, 1, (uint64_t)muted, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setMuted", &handled, 1, (uint64_t)mute, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    // QMediaPlayerControl::setMuted(muted);
+    // QMediaPlayerControl::setMuted(mute);
   }
   }
 
@@ -570,8 +570,8 @@ bool C_ZNK19QMediaPlayerControl7isMutedEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:74
 // [-2] void setMuted(bool)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QMediaPlayerControl8setMutedEb(void *this_, bool muted) {
-  ((QMediaPlayerControl*)this_)->setMuted(muted);
+void C_ZN19QMediaPlayerControl8setMutedEb(void *this_, bool mute) {
+  ((QMediaPlayerControl*)this_)->setMuted(mute);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
@@ -732,8 +732,8 @@ void C_ZN19QMediaPlayerControl13volumeChangedEi(void *this_, int volume) {
 // /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:103
 // [-2] void mutedChanged(bool)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QMediaPlayerControl12mutedChangedEb(void *this_, bool muted) {
-  ((QMediaPlayerControl*)this_)->mutedChanged(muted);
+void C_ZN19QMediaPlayerControl12mutedChangedEb(void *this_, bool mute) {
+  ((QMediaPlayerControl*)this_)->mutedChanged(mute);
 }
 
 // Public Visibility=Default Availability=Available
@@ -764,16 +764,16 @@ void C_ZN19QMediaPlayerControl19bufferStatusChangedEi(void *this_, int percentFi
 // /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:107
 // [-2] void seekableChanged(bool)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QMediaPlayerControl15seekableChangedEb(void *this_, bool arg0) {
-  ((QMediaPlayerControl*)this_)->seekableChanged(arg0);
+void C_ZN19QMediaPlayerControl15seekableChangedEb(void *this_, bool seekable) {
+  ((QMediaPlayerControl*)this_)->seekableChanged(seekable);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplayercontrol.h:108
 // [-2] void availablePlaybackRangesChanged(const QMediaTimeRange &)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QMediaPlayerControl30availablePlaybackRangesChangedERK15QMediaTimeRange(void *this_, QMediaTimeRange* arg0) {
-  ((QMediaPlayerControl*)this_)->availablePlaybackRangesChanged(*arg0);
+void C_ZN19QMediaPlayerControl30availablePlaybackRangesChangedERK15QMediaTimeRange(void *this_, QMediaTimeRange* ranges) {
+  ((QMediaPlayerControl*)this_)->availablePlaybackRangesChanged(*ranges);
 }
 
 // Public Visibility=Default Availability=Available

@@ -51,7 +51,7 @@ public:
 };
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringbuilder.h:333
+// /usr/include/qt/QtCore/qstringbuilder.h:399
 // [4] int size(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 int C_ZN13QConcatenableI10QByteArrayE4sizeERKS0_(QByteArray* ba) {
@@ -59,7 +59,7 @@ int C_ZN13QConcatenableI10QByteArrayE4sizeERKS0_(QByteArray* ba) {
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringbuilder.h:335
+// /usr/include/qt/QtCore/qstringbuilder.h:401
 // [-2] void appendTo(const QByteArray &, QChar *&)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RP5QChar(QByteArray* ba, QChar *& out_) {
@@ -67,7 +67,7 @@ void C_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RP5QChar(QByteArray* ba, QC
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringbuilder.h:340
+// /usr/include/qt/QtCore/qstringbuilder.h:406
 // [-2] void appendTo(const QByteArray &, char *&)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RPc(QByteArray* ba, char *& out_) {

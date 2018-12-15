@@ -221,13 +221,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtGui/qcolor.h:99
 // [8] QString name(QColor::NameFormat)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK6QColor4nameENS_10NameFormatE(void *this_, QColor::NameFormat format) {
   auto rv = ((QColor*)this_)->name(format);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:102

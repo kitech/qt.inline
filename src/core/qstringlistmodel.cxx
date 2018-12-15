@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qstringlistmodel.h
 #ifndef protected
 #define protected public
@@ -112,7 +113,7 @@ void* C_QStringListModel_init_staticMetaObject(void* this_, void* strdat, void* 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:53
+// /usr/include/qt/QtCore/qstringlistmodel.h:52
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QStringListModel10metaObjectEv(void *this_) {
@@ -120,7 +121,7 @@ void* C_ZNK16QStringListModel10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:53
+// /usr/include/qt/QtCore/qstringlistmodel.h:52
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModel11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +129,7 @@ void* C_ZN16QStringListModel11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:53
+// /usr/include/qt/QtCore/qstringlistmodel.h:52
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN16QStringListModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +137,7 @@ int C_ZN16QStringListModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QM
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:53
+// /usr/include/qt/QtCore/qstringlistmodel.h:52
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModel2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +146,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:53
+// /usr/include/qt/QtCore/qstringlistmodel.h:52
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +155,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:55
+// /usr/include/qt/QtCore/qstringlistmodel.h:54
 // [-2] void QStringListModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModelC2EP7QObject(QObject * parent) {
@@ -162,7 +163,7 @@ void* C_ZN16QStringListModelC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:56
+// /usr/include/qt/QtCore/qstringlistmodel.h:55
 // [-2] void QStringListModel(const QStringList &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStringListModelC2ERK11QStringListP7QObject(QStringList* strings, QObject * parent) {
@@ -170,7 +171,7 @@ void* C_ZN16QStringListModelC2ERK11QStringListP7QObject(QStringList* strings, QO
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:58
+// /usr/include/qt/QtCore/qstringlistmodel.h:57
 // [4] int rowCount(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QStringListModel8rowCountERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -178,7 +179,7 @@ int C_ZNK16QStringListModel8rowCountERK11QModelIndex(void *this_, QModelIndex* p
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:59
+// /usr/include/qt/QtCore/qstringlistmodel.h:58
 // [24] QModelIndex sibling(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QStringListModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
@@ -187,7 +188,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:61
+// /usr/include/qt/QtCore/qstringlistmodel.h:60
 // [16] QVariant data(const QModelIndex &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QStringListModel4dataERK11QModelIndexi(void *this_, QModelIndex* index, int role) {
@@ -196,7 +197,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:62
+// /usr/include/qt/QtCore/qstringlistmodel.h:61
 // [1] bool setData(const QModelIndex &, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
@@ -204,7 +205,7 @@ bool C_ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QMo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:64
+// /usr/include/qt/QtCore/qstringlistmodel.h:63
 // [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK16QStringListModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -212,7 +213,7 @@ Qt::ItemFlags C_ZNK16QStringListModel5flagsERK11QModelIndex(void *this_, QModelI
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:66
+// /usr/include/qt/QtCore/qstringlistmodel.h:65
 // [1] bool insertRows(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QStringListModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
@@ -220,7 +221,7 @@ bool C_ZN16QStringListModel10insertRowsEiiRK11QModelIndex(void *this_, int row, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:67
+// /usr/include/qt/QtCore/qstringlistmodel.h:66
 // [1] bool removeRows(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QStringListModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
@@ -228,7 +229,7 @@ bool C_ZN16QStringListModel10removeRowsEiiRK11QModelIndex(void *this_, int row, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:69
+// /usr/include/qt/QtCore/qstringlistmodel.h:68
 // [-2] void sort(int, Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QStringListModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
@@ -236,7 +237,7 @@ void C_ZN16QStringListModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::S
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:71
+// /usr/include/qt/QtCore/qstringlistmodel.h:70
 // [8] QStringList stringList()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QStringListModel10stringListEv(void *this_) {
@@ -245,7 +246,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:72
+// /usr/include/qt/QtCore/qstringlistmodel.h:71
 // [-2] void setStringList(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QStringListModel13setStringListERK11QStringList(void *this_, QStringList* strings) {
@@ -253,7 +254,7 @@ void C_ZN16QStringListModel13setStringListERK11QStringList(void *this_, QStringL
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlistmodel.h:74
+// /usr/include/qt/QtCore/qstringlistmodel.h:73
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK16QStringListModel20supportedDropActionsEv(void *this_) {
@@ -281,4 +282,5 @@ void C_ZN16QStringListModelD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

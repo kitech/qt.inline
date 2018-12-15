@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050700
 // /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h
 #ifndef protected
 #define protected public
@@ -56,7 +55,7 @@ MyQWebEngineContextMenuData(const QWebEngineContextMenuData & other) : QWebEngin
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:56
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:58
 // [-2] void QWebEngineContextMenuData()
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QWebEngineContextMenuDataC2Ev() {
@@ -64,7 +63,7 @@ void* C_ZN25QWebEngineContextMenuDataC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:57
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:59
 // [-2] void QWebEngineContextMenuData(const QWebEngineContextMenuData &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QWebEngineContextMenuDataC2ERKS_(QWebEngineContextMenuData* other) {
@@ -72,7 +71,7 @@ void* C_ZN25QWebEngineContextMenuDataC2ERKS_(QWebEngineContextMenuData* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:58
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:60
 // [8] QWebEngineContextMenuData & operator=(const QWebEngineContextMenuData &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QWebEngineContextMenuDataaSERKS_(void *this_, QWebEngineContextMenuData* other) {
@@ -81,14 +80,14 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:59
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:61
 // [-2] void ~QWebEngineContextMenuData()
 extern "C" Q_DECL_EXPORT
 void C_ZN25QWebEngineContextMenuDataD2Ev(void *this_) {
   delete (QWebEngineContextMenuData*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:70
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:104
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK25QWebEngineContextMenuData7isValidEv(void *this_) {
@@ -96,7 +95,7 @@ bool C_ZNK25QWebEngineContextMenuData7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:72
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:106
 // [8] QPoint position()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData8positionEv(void *this_) {
@@ -105,7 +104,7 @@ return new QPoint(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:73
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:107
 // [8] QString selectedText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData12selectedTextEv(void *this_) {
@@ -114,7 +113,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:74
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:108
 // [8] QString linkText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData8linkTextEv(void *this_) {
@@ -123,7 +122,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:75
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:109
 // [8] QUrl linkUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData7linkUrlEv(void *this_) {
@@ -132,7 +131,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:76
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:110
 // [8] QUrl mediaUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData8mediaUrlEv(void *this_) {
@@ -141,7 +140,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:77
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:111
 // [4] QWebEngineContextMenuData::MediaType mediaType()
 extern "C" Q_DECL_EXPORT
 QWebEngineContextMenuData::MediaType C_ZNK25QWebEngineContextMenuData9mediaTypeEv(void *this_) {
@@ -149,7 +148,7 @@ QWebEngineContextMenuData::MediaType C_ZNK25QWebEngineContextMenuData9mediaTypeE
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:78
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:112
 // [1] bool isContentEditable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK25QWebEngineContextMenuData17isContentEditableEv(void *this_) {
@@ -157,28 +156,40 @@ bool C_ZNK25QWebEngineContextMenuData17isContentEditableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.8
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:79
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:113
 // [8] QString misspelledWord()
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData14misspelledWordEv(void *this_) {
   auto rv = ((QWebEngineContextMenuData*)this_)->misspelledWord();
 return new QString(rv);
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// since 5.8
-// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:80
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:114
 // [8] QStringList spellCheckerSuggestions()
-#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QWebEngineContextMenuData23spellCheckerSuggestionsEv(void *this_) {
   auto rv = ((QWebEngineContextMenuData*)this_)->spellCheckerSuggestions();
 return new QStringList(rv);
 }
-#endif // QT_VERSION >= 0x050800
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:115
+// [4] QWebEngineContextMenuData::MediaFlags mediaFlags()
+extern "C" Q_DECL_EXPORT
+QWebEngineContextMenuData::MediaFlags* C_ZNK25QWebEngineContextMenuData10mediaFlagsEv(void *this_) {
+  auto rv = ((QWebEngineContextMenuData*)this_)->mediaFlags();
+return new QWebEngineContextMenuData::MediaFlags(rv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginecontextmenudata.h:116
+// [4] QWebEngineContextMenuData::EditFlags editFlags()
+extern "C" Q_DECL_EXPORT
+QWebEngineContextMenuData::EditFlags* C_ZNK25QWebEngineContextMenuData9editFlagsEv(void *this_) {
+  auto rv = ((QWebEngineContextMenuData*)this_)->editFlags();
+return new QWebEngineContextMenuData::EditFlags(rv);
+}
 
 //  main block end
 

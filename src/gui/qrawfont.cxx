@@ -204,13 +204,16 @@ void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *this_, QVector<
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtGui/qrawfont.h:104
 // [8] QVector<QPointF> advancesForGlyphIndexes(const QVector<quint32> &, QRawFont::LayoutFlags)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void C_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *this_, QVector<unsigned int>* glyphIndexes, QFlags<QRawFont::LayoutFlag> layoutFlags) {
   auto rv = ((QRawFont*)this_)->advancesForGlyphIndexes(*glyphIndexes, layoutFlags);
 /*return rv;*/
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:105
@@ -229,12 +232,15 @@ bool C_ZNK8QRawFont23advancesForGlyphIndexesEPKjP7QPointFi(void *this_, const qu
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtGui/qrawfont.h:107
 // [1] bool advancesForGlyphIndexes(const quint32 *, QPointF *, int, QRawFont::LayoutFlags)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QRawFont23advancesForGlyphIndexesEPKjP7QPointFi6QFlagsINS_10LayoutFlagEE(void *this_, const quint32 * glyphIndexes, QPointF * advances, int numGlyphs, QFlags<QRawFont::LayoutFlag> layoutFlags) {
   return (bool)((QRawFont*)this_)->advancesForGlyphIndexes(glyphIndexes, advances, numGlyphs, layoutFlags);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:109

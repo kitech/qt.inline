@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
@@ -57,7 +58,7 @@ MyQRegularExpressionMatch(const QRegularExpressionMatch & match_) : QRegularExpr
 
 // Public Visibility=Default Availability=Available
 // since 5.1
-// /usr/include/qt/QtCore/qregularexpression.h:178
+// /usr/include/qt/QtCore/qregularexpression.h:185
 // [-2] void QRegularExpressionMatch()
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
@@ -67,14 +68,14 @@ void* C_ZN23QRegularExpressionMatchC2Ev() {
 #endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:179
+// /usr/include/qt/QtCore/qregularexpression.h:186
 // [-2] void ~QRegularExpressionMatch()
 extern "C" Q_DECL_EXPORT
 void C_ZN23QRegularExpressionMatchD2Ev(void *this_) {
   delete (QRegularExpressionMatch*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:180
+// /usr/include/qt/QtCore/qregularexpression.h:187
 // [-2] void QRegularExpressionMatch(const QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QRegularExpressionMatchC2ERKS_(QRegularExpressionMatch* match_) {
@@ -82,7 +83,7 @@ void* C_ZN23QRegularExpressionMatchC2ERKS_(QRegularExpressionMatch* match_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:181
+// /usr/include/qt/QtCore/qregularexpression.h:188
 // [8] QRegularExpressionMatch & operator=(const QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QRegularExpressionMatchaSERKS_(void *this_, QRegularExpressionMatch* match_) {
@@ -91,7 +92,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:184
+// /usr/include/qt/QtCore/qregularexpression.h:191
 // [8] QRegularExpressionMatch & operator=(QRegularExpressionMatch &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QRegularExpressionMatchaSEOS_(void *this_, QRegularExpressionMatch && match_) {
@@ -100,7 +101,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:187
+// /usr/include/qt/QtCore/qregularexpression.h:194
 // [-2] void swap(QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QRegularExpressionMatch4swapERS_(void *this_, QRegularExpressionMatch* other) {
@@ -108,7 +109,7 @@ void C_ZN23QRegularExpressionMatch4swapERS_(void *this_, QRegularExpressionMatch
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:189
+// /usr/include/qt/QtCore/qregularexpression.h:196
 // [8] QRegularExpression regularExpression()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch17regularExpressionEv(void *this_) {
@@ -117,7 +118,7 @@ return new QRegularExpression(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:190
+// /usr/include/qt/QtCore/qregularexpression.h:197
 // [4] QRegularExpression::MatchType matchType()
 extern "C" Q_DECL_EXPORT
 QRegularExpression::MatchType C_ZNK23QRegularExpressionMatch9matchTypeEv(void *this_) {
@@ -125,7 +126,7 @@ QRegularExpression::MatchType C_ZNK23QRegularExpressionMatch9matchTypeEv(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:191
+// /usr/include/qt/QtCore/qregularexpression.h:198
 // [4] QRegularExpression::MatchOptions matchOptions()
 extern "C" Q_DECL_EXPORT
 QRegularExpression::MatchOptions C_ZNK23QRegularExpressionMatch12matchOptionsEv(void *this_) {
@@ -133,7 +134,7 @@ QRegularExpression::MatchOptions C_ZNK23QRegularExpressionMatch12matchOptionsEv(
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:193
+// /usr/include/qt/QtCore/qregularexpression.h:200
 // [1] bool hasMatch()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK23QRegularExpressionMatch8hasMatchEv(void *this_) {
@@ -141,7 +142,7 @@ bool C_ZNK23QRegularExpressionMatch8hasMatchEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:194
+// /usr/include/qt/QtCore/qregularexpression.h:201
 // [1] bool hasPartialMatch()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK23QRegularExpressionMatch15hasPartialMatchEv(void *this_) {
@@ -149,7 +150,7 @@ bool C_ZNK23QRegularExpressionMatch15hasPartialMatchEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:196
+// /usr/include/qt/QtCore/qregularexpression.h:203
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK23QRegularExpressionMatch7isValidEv(void *this_) {
@@ -157,7 +158,7 @@ bool C_ZNK23QRegularExpressionMatch7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:198
+// /usr/include/qt/QtCore/qregularexpression.h:205
 // [4] int lastCapturedIndex()
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch17lastCapturedIndexEv(void *this_) {
@@ -165,7 +166,7 @@ int C_ZNK23QRegularExpressionMatch17lastCapturedIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:200
+// /usr/include/qt/QtCore/qregularexpression.h:207
 // [8] QString captured(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch8capturedEi(void *this_, int nth) {
@@ -174,7 +175,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:201
+// /usr/include/qt/QtCore/qregularexpression.h:208
 // [16] QStringRef capturedRef(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch11capturedRefEi(void *this_, int nth) {
@@ -184,7 +185,7 @@ return new QStringRef(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:202
+// /usr/include/qt/QtCore/qregularexpression.h:209
 // [16] QStringView capturedView(int)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -195,7 +196,7 @@ return new QStringView(rv);
 #endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:205
+// /usr/include/qt/QtCore/qregularexpression.h:212
 // [8] QString captured(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch8capturedERK7QString(void *this_, QString* name) {
@@ -204,7 +205,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:206
+// /usr/include/qt/QtCore/qregularexpression.h:213
 // [16] QStringRef capturedRef(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch11capturedRefERK7QString(void *this_, QString* name) {
@@ -214,7 +215,7 @@ return new QStringRef(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:209
+// /usr/include/qt/QtCore/qregularexpression.h:216
 // [8] QString captured(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -226,7 +227,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:210
+// /usr/include/qt/QtCore/qregularexpression.h:217
 // [16] QStringRef capturedRef(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -238,7 +239,7 @@ return new QStringRef(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:211
+// /usr/include/qt/QtCore/qregularexpression.h:218
 // [16] QStringView capturedView(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -249,7 +250,7 @@ return new QStringView(rv);
 #endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:213
+// /usr/include/qt/QtCore/qregularexpression.h:220
 // [8] QStringList capturedTexts()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QRegularExpressionMatch13capturedTextsEv(void *this_) {
@@ -258,7 +259,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:215
+// /usr/include/qt/QtCore/qregularexpression.h:222
 // [4] int capturedStart(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch13capturedStartEi(void *this_, int nth) {
@@ -266,7 +267,7 @@ int C_ZNK23QRegularExpressionMatch13capturedStartEi(void *this_, int nth) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:216
+// /usr/include/qt/QtCore/qregularexpression.h:223
 // [4] int capturedLength(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch14capturedLengthEi(void *this_, int nth) {
@@ -274,7 +275,7 @@ int C_ZNK23QRegularExpressionMatch14capturedLengthEi(void *this_, int nth) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:217
+// /usr/include/qt/QtCore/qregularexpression.h:224
 // [4] int capturedEnd(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch11capturedEndEi(void *this_, int nth) {
@@ -282,7 +283,7 @@ int C_ZNK23QRegularExpressionMatch11capturedEndEi(void *this_, int nth) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:220
+// /usr/include/qt/QtCore/qregularexpression.h:227
 // [4] int capturedStart(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch13capturedStartERK7QString(void *this_, QString* name) {
@@ -290,7 +291,7 @@ int C_ZNK23QRegularExpressionMatch13capturedStartERK7QString(void *this_, QStrin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:221
+// /usr/include/qt/QtCore/qregularexpression.h:228
 // [4] int capturedLength(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch14capturedLengthERK7QString(void *this_, QString* name) {
@@ -298,7 +299,7 @@ int C_ZNK23QRegularExpressionMatch14capturedLengthERK7QString(void *this_, QStri
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:222
+// /usr/include/qt/QtCore/qregularexpression.h:229
 // [4] int capturedEnd(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, QString* name) {
@@ -307,7 +308,7 @@ int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, QString*
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:225
+// /usr/include/qt/QtCore/qregularexpression.h:232
 // [4] int capturedStart(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -318,7 +319,7 @@ int C_ZNK23QRegularExpressionMatch13capturedStartE11QStringView(void *this_, QSt
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:226
+// /usr/include/qt/QtCore/qregularexpression.h:233
 // [4] int capturedLength(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -329,7 +330,7 @@ int C_ZNK23QRegularExpressionMatch14capturedLengthE11QStringView(void *this_, QS
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qregularexpression.h:227
+// /usr/include/qt/QtCore/qregularexpression.h:234
 // [4] int capturedEnd(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -354,4 +355,5 @@ int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStri
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

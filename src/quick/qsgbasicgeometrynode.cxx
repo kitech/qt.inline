@@ -51,14 +51,14 @@ public:
 };
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:198
+// /usr/include/qt/QtQuick/qsgnode.h:193
 // [-2] void ~QSGBasicGeometryNode()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNodeD2Ev(void *this_) {
   delete (QSGBasicGeometryNode*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:200
+// /usr/include/qt/QtQuick/qsgnode.h:195
 // [-2] void setGeometry(QSGGeometry *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNode11setGeometryEP11QSGGeometry(void *this_, QSGGeometry * geometry) {
@@ -66,7 +66,7 @@ void C_ZN20QSGBasicGeometryNode11setGeometryEP11QSGGeometry(void *this_, QSGGeom
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:201
+// /usr/include/qt/QtQuick/qsgnode.h:196
 // [8] const QSGGeometry * geometry()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGBasicGeometryNode8geometryEv(void *this_) {
@@ -74,7 +74,7 @@ void* C_ZNK20QSGBasicGeometryNode8geometryEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:202
+// /usr/include/qt/QtQuick/qsgnode.h:197
 // [8] QSGGeometry * geometry()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QSGBasicGeometryNode8geometryEv(void *this_) {
@@ -82,7 +82,7 @@ void* C_ZN20QSGBasicGeometryNode8geometryEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:204
+// /usr/include/qt/QtQuick/qsgnode.h:199
 // [8] const QMatrix4x4 * matrix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGBasicGeometryNode6matrixEv(void *this_) {
@@ -90,7 +90,7 @@ void* C_ZNK20QSGBasicGeometryNode6matrixEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:205
+// /usr/include/qt/QtQuick/qsgnode.h:200
 // [8] const QSGClipNode * clipList()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QSGBasicGeometryNode8clipListEv(void *this_) {
@@ -98,7 +98,7 @@ void* C_ZNK20QSGBasicGeometryNode8clipListEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:207
+// /usr/include/qt/QtQuick/qsgnode.h:202
 // [-2] void setRendererMatrix(const QMatrix4x4 *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNode17setRendererMatrixEPK10QMatrix4x4(void *this_, const QMatrix4x4 * m) {
@@ -106,7 +106,7 @@ void C_ZN20QSGBasicGeometryNode17setRendererMatrixEPK10QMatrix4x4(void *this_, c
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:208
+// /usr/include/qt/QtQuick/qsgnode.h:203
 // [-2] void setRendererClipList(const QSGClipNode *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QSGBasicGeometryNode19setRendererClipListEPK11QSGClipNode(void *this_, const QSGClipNode * c) {

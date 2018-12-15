@@ -821,12 +821,15 @@ QGraphicsItem::CacheMode C_ZNK13QGraphicsItem9cacheModeEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
+// since 4.4
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:193
 // [-2] void setCacheMode(QGraphicsItem::CacheMode, const QSize &)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem12setCacheModeENS_9CacheModeERK5QSize(void *this_, QGraphicsItem::CacheMode mode, QSize* cacheSize) {
   ((QGraphicsItem*)this_)->setCacheMode(mode, *cacheSize);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
 // since 4.6
@@ -840,12 +843,15 @@ QGraphicsItem::PanelModality C_ZNK13QGraphicsItem13panelModalityEv(void *this_) 
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:196
 // [-2] void setPanelModality(QGraphicsItem::PanelModality)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN13QGraphicsItem16setPanelModalityENS_13PanelModalityE(void *this_, QGraphicsItem::PanelModality panelModality) {
   ((QGraphicsItem*)this_)->setPanelModality(panelModality);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
 // since 4.6

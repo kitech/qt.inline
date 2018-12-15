@@ -216,16 +216,13 @@ bool C_ZNK17QAndroidJniObject7isValidEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// since 5.7
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h:164
 // [16] QAndroidJniObject fromLocalRef(jobject)
-#if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QAndroidJniObject12fromLocalRefEP8_jobject(jobject obj) {
   auto rv = QAndroidJniObject::fromLocalRef(obj);
 return new QAndroidJniObject(rv);
 }
-#endif // QT_VERSION >= 0x050700
 
 //  main block end
 

@@ -55,7 +55,7 @@ MyQJsonValueRef(QJsonObject * object, int idx) : QJsonValueRef(object, idx) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:174
+// /usr/include/qt/QtCore/qjsonvalue.h:175
 // [-2] void QJsonValueRef(QJsonArray *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValueRefC2EP10QJsonArrayi(QJsonArray * array, int idx) {
@@ -63,7 +63,7 @@ void* C_ZN13QJsonValueRefC2EP10QJsonArrayi(QJsonArray * array, int idx) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:176
+// /usr/include/qt/QtCore/qjsonvalue.h:177
 // [-2] void QJsonValueRef(QJsonObject *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValueRefC2EP11QJsonObjecti(QJsonObject * object, int idx) {
@@ -71,7 +71,7 @@ void* C_ZN13QJsonValueRefC2EP11QJsonObjecti(QJsonObject * object, int idx) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:180
+// /usr/include/qt/QtCore/qjsonvalue.h:181
 // [16] QJsonValueRef & operator=(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValueRefaSERK10QJsonValue(void *this_, QJsonValue* val) {
@@ -80,7 +80,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:181
+// /usr/include/qt/QtCore/qjsonvalue.h:182
 // [16] QJsonValueRef & operator=(const QJsonValueRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonValueRefaSERKS_(void *this_, QJsonValueRef* val) {
@@ -89,7 +89,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:183
+// /usr/include/qt/QtCore/qjsonvalue.h:184
 // [16] QVariant toVariant()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonValueRef9toVariantEv(void *this_) {
@@ -98,7 +98,7 @@ return new QVariant(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:184
+// /usr/include/qt/QtCore/qjsonvalue.h:185
 // [4] QJsonValue::Type type()
 extern "C" Q_DECL_EXPORT
 QJsonValue::Type C_ZNK13QJsonValueRef4typeEv(void *this_) {
@@ -106,7 +106,7 @@ QJsonValue::Type C_ZNK13QJsonValueRef4typeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:185
+// /usr/include/qt/QtCore/qjsonvalue.h:186
 // [1] bool isNull()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef6isNullEv(void *this_) {
@@ -114,7 +114,7 @@ bool C_ZNK13QJsonValueRef6isNullEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:186
+// /usr/include/qt/QtCore/qjsonvalue.h:187
 // [1] bool isBool()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef6isBoolEv(void *this_) {
@@ -122,7 +122,7 @@ bool C_ZNK13QJsonValueRef6isBoolEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:187
+// /usr/include/qt/QtCore/qjsonvalue.h:188
 // [1] bool isDouble()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef8isDoubleEv(void *this_) {
@@ -130,7 +130,7 @@ bool C_ZNK13QJsonValueRef8isDoubleEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:188
+// /usr/include/qt/QtCore/qjsonvalue.h:189
 // [1] bool isString()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef8isStringEv(void *this_) {
@@ -138,7 +138,7 @@ bool C_ZNK13QJsonValueRef8isStringEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:189
+// /usr/include/qt/QtCore/qjsonvalue.h:190
 // [1] bool isArray()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef7isArrayEv(void *this_) {
@@ -146,7 +146,7 @@ bool C_ZNK13QJsonValueRef7isArrayEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:190
+// /usr/include/qt/QtCore/qjsonvalue.h:191
 // [1] bool isObject()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef8isObjectEv(void *this_) {
@@ -154,7 +154,7 @@ bool C_ZNK13QJsonValueRef8isObjectEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:191
+// /usr/include/qt/QtCore/qjsonvalue.h:192
 // [1] bool isUndefined()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef11isUndefinedEv(void *this_) {
@@ -162,7 +162,7 @@ bool C_ZNK13QJsonValueRef11isUndefinedEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:193
+// /usr/include/qt/QtCore/qjsonvalue.h:194
 // [1] bool toBool()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef6toBoolEv(void *this_) {
@@ -170,7 +170,7 @@ bool C_ZNK13QJsonValueRef6toBoolEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:194
+// /usr/include/qt/QtCore/qjsonvalue.h:195
 // [4] int toInt()
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QJsonValueRef5toIntEv(void *this_) {
@@ -178,7 +178,7 @@ int C_ZNK13QJsonValueRef5toIntEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:195
+// /usr/include/qt/QtCore/qjsonvalue.h:196
 // [8] double toDouble()
 extern "C" Q_DECL_EXPORT
 double C_ZNK13QJsonValueRef8toDoubleEv(void *this_) {
@@ -186,7 +186,7 @@ double C_ZNK13QJsonValueRef8toDoubleEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:196
+// /usr/include/qt/QtCore/qjsonvalue.h:197
 // [8] QString toString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonValueRef8toStringEv(void *this_) {
@@ -195,7 +195,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:197
+// /usr/include/qt/QtCore/qjsonvalue.h:198
 // [16] QJsonArray toArray()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonValueRef7toArrayEv(void *this_) {
@@ -204,7 +204,7 @@ return new QJsonArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:198
+// /usr/include/qt/QtCore/qjsonvalue.h:199
 // [16] QJsonObject toObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonValueRef8toObjectEv(void *this_) {
@@ -213,7 +213,7 @@ return new QJsonObject(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:201
+// /usr/include/qt/QtCore/qjsonvalue.h:202
 // [1] bool toBool(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRef6toBoolEb(void *this_, bool defaultValue) {
@@ -221,7 +221,7 @@ bool C_ZNK13QJsonValueRef6toBoolEb(void *this_, bool defaultValue) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:202
+// /usr/include/qt/QtCore/qjsonvalue.h:203
 // [4] int toInt(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QJsonValueRef5toIntEi(void *this_, int defaultValue) {
@@ -229,7 +229,7 @@ int C_ZNK13QJsonValueRef5toIntEi(void *this_, int defaultValue) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:203
+// /usr/include/qt/QtCore/qjsonvalue.h:204
 // [8] double toDouble(double)
 extern "C" Q_DECL_EXPORT
 double C_ZNK13QJsonValueRef8toDoubleEd(void *this_, double defaultValue) {
@@ -237,7 +237,7 @@ double C_ZNK13QJsonValueRef8toDoubleEd(void *this_, double defaultValue) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:204
+// /usr/include/qt/QtCore/qjsonvalue.h:205
 // [8] QString toString(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonValueRef8toStringERK7QString(void *this_, QString* defaultValue) {
@@ -246,7 +246,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:206
+// /usr/include/qt/QtCore/qjsonvalue.h:207
 // [1] bool operator==(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRefeqERK10QJsonValue(void *this_, QJsonValue* other) {
@@ -254,7 +254,7 @@ bool C_ZNK13QJsonValueRefeqERK10QJsonValue(void *this_, QJsonValue* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:207
+// /usr/include/qt/QtCore/qjsonvalue.h:208
 // [1] bool operator!=(const QJsonValue &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonValueRefneERK10QJsonValue(void *this_, QJsonValue* other) {

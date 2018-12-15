@@ -177,7 +177,7 @@ void* C_QListWidget_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:281
+// /usr/include/qt/QtWidgets/qlistwidget.h:282
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QListWidget5eventEP6QEvent(void *this_, QEvent * e) {
@@ -185,7 +185,7 @@ bool C_ZN11QListWidget5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:282
+// /usr/include/qt/QtWidgets/qlistwidget.h:283
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QListWidget9mimeTypesEv(void *this_) {
@@ -194,7 +194,7 @@ return new QStringList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:286
+// /usr/include/qt/QtWidgets/qlistwidget.h:287
 // [8] QMimeData * mimeData(const QList<QListWidgetItem *>)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QListWidget8mimeDataE5QListIP15QListWidgetItemE(void *this_, const QList<QListWidgetItem *> items) {
@@ -202,7 +202,7 @@ void* C_ZNK11QListWidget8mimeDataE5QListIP15QListWidgetItemE(void *this_, const 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:289
+// /usr/include/qt/QtWidgets/qlistwidget.h:290
 // [1] bool dropMimeData(int, const QMimeData *, Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void *this_, int index, const QMimeData * data, Qt::DropAction action) {
@@ -210,7 +210,7 @@ bool C_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void *this_,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:290
+// /usr/include/qt/QtWidgets/qlistwidget.h:291
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK11QListWidget20supportedDropActionsEv(void *this_) {
@@ -649,7 +649,7 @@ void C_ZN11QListWidget11itemEnteredEP15QListWidgetItem(void *this_, QListWidgetI
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:272
+// /usr/include/qt/QtWidgets/qlistwidget.h:273
 // [-2] void itemChanged(QListWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget11itemChangedEP15QListWidgetItem(void *this_, QListWidgetItem * item) {
@@ -657,7 +657,7 @@ void C_ZN11QListWidget11itemChangedEP15QListWidgetItem(void *this_, QListWidgetI
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:274
+// /usr/include/qt/QtWidgets/qlistwidget.h:275
 // [-2] void currentItemChanged(QListWidgetItem *, QListWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(void *this_, QListWidgetItem * current, QListWidgetItem * previous) {
@@ -665,7 +665,7 @@ void C_ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(void *this_, QL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:275
+// /usr/include/qt/QtWidgets/qlistwidget.h:276
 // [-2] void currentTextChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget18currentTextChangedERK7QString(void *this_, QString* currentText) {
@@ -673,7 +673,7 @@ void C_ZN11QListWidget18currentTextChangedERK7QString(void *this_, QString* curr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:276
+// /usr/include/qt/QtWidgets/qlistwidget.h:277
 // [-2] void currentRowChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget17currentRowChangedEi(void *this_, int currentRow) {
@@ -681,7 +681,7 @@ void C_ZN11QListWidget17currentRowChangedEi(void *this_, int currentRow) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:278
+// /usr/include/qt/QtWidgets/qlistwidget.h:279
 // [-2] void itemSelectionChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QListWidget20itemSelectionChangedEv(void *this_) {

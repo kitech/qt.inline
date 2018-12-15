@@ -61,7 +61,7 @@ MyQStringList(std::initializer_list<QString> args) : QStringList(args) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:105
+// /usr/include/qt/QtCore/qstringlist.h:103
 // [-2] void QStringList()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListC2Ev() {
@@ -69,7 +69,7 @@ void* C_ZN11QStringListC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:106
+// /usr/include/qt/QtCore/qstringlist.h:104
 // [-2] void QStringList(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListC2ERK7QString(QString* i) {
@@ -77,7 +77,7 @@ void* C_ZN11QStringListC2ERK7QString(QString* i) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:107
+// /usr/include/qt/QtCore/qstringlist.h:105
 // [-2] void QStringList(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListC2ERK5QListI7QStringE(QList<QString>* l) {
@@ -86,7 +86,7 @@ void* C_ZN11QStringListC2ERK5QListI7QStringE(QList<QString>* l) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtCore/qstringlist.h:109
+// /usr/include/qt/QtCore/qstringlist.h:107
 // [-2] void QStringList(QList<QString> &&)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -97,7 +97,7 @@ void* C_ZN11QStringListC2EO5QListI7QStringE(QList<QString> && l) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtCore/qstringlist.h:112
+// /usr/include/qt/QtCore/qstringlist.h:110
 // [-2] void QStringList(std::initializer_list<QString>)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -107,7 +107,7 @@ void* C_ZN11QStringListC2ESt16initializer_listI7QStringE(std::initializer_list<Q
 #endif // QT_VERSION >= 0x040800
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:115
+// /usr/include/qt/QtCore/qstringlist.h:113
 // [8] QStringList & operator=(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListaSERK5QListI7QStringE(void *this_, QList<QString>* other) {
@@ -116,7 +116,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:118
+// /usr/include/qt/QtCore/qstringlist.h:116
 // [8] QStringList & operator=(QList<QString> &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListaSEO5QListI7QStringE(void *this_, QList<QString> && other) {
@@ -125,7 +125,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:122
+// /usr/include/qt/QtCore/qstringlist.h:121
 // [1] bool contains(const QString &, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringList8containsERK7QStringN2Qt15CaseSensitivityE(void *this_, QString* str, Qt::CaseSensitivity cs) {
@@ -144,7 +144,18 @@ bool C_ZNK11QStringList8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *thi
 #endif // QT_VERSION >= 0x050a00
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:125
+// since 5.12
+// /usr/include/qt/QtCore/qstringlist.h:124
+// [1] bool contains(QStringView, Qt::CaseSensitivity)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK11QStringList8containsE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView* str, Qt::CaseSensitivity cs) {
+  return (bool)((QStringList*)this_)->contains(*str, cs);
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:126
 // [8] QStringList operator+(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringListplERKS_(void *this_, QStringList* other) {
@@ -153,7 +164,7 @@ return new QStringList(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:127
+// /usr/include/qt/QtCore/qstringlist.h:128
 // [8] QStringList & operator<<(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERK7QString(void *this_, QString* str) {
@@ -162,7 +173,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:129
+// /usr/include/qt/QtCore/qstringlist.h:130
 // [8] QStringList & operator<<(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERKS_(void *this_, QStringList* l) {
@@ -171,7 +182,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:131
+// /usr/include/qt/QtCore/qstringlist.h:132
 // [8] QStringList & operator<<(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERK5QListI7QStringE(void *this_, QList<QString>* l) {
@@ -180,7 +191,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:135
+// /usr/include/qt/QtCore/qstringlist.h:136
 // [4] int indexOf(const QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QStringList7indexOfERK7QRegExpi(void *this_, QRegExp* rx, int from) {
@@ -188,7 +199,7 @@ int C_ZNK11QStringList7indexOfERK7QRegExpi(void *this_, QRegExp* rx, int from) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:136
+// /usr/include/qt/QtCore/qstringlist.h:137
 // [4] int lastIndexOf(const QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QStringList11lastIndexOfERK7QRegExpi(void *this_, QRegExp* rx, int from) {
@@ -197,7 +208,7 @@ int C_ZNK11QStringList11lastIndexOfERK7QRegExpi(void *this_, QRegExp* rx, int fr
 
 // Public inline Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qstringlist.h:137
+// /usr/include/qt/QtCore/qstringlist.h:138
 // [4] int indexOf(QRegExp &, int)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -208,7 +219,7 @@ int C_ZNK11QStringList7indexOfER7QRegExpi(void *this_, QRegExp* rx, int from) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qstringlist.h:138
+// /usr/include/qt/QtCore/qstringlist.h:139
 // [4] int lastIndexOf(QRegExp &, int)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT

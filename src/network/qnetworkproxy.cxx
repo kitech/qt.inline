@@ -150,12 +150,15 @@ QNetworkProxy::ProxyType C_ZNK13QNetworkProxy4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.5
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:179
 // [-2] void setCapabilities(QNetworkProxy::Capabilities)
+#if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
 void C_ZN13QNetworkProxy15setCapabilitiesE6QFlagsINS_10CapabilityEE(void *this_, QFlags<QNetworkProxy::Capability> capab) {
   ((QNetworkProxy*)this_)->setCapabilities(capab);
 }
+#endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
 // since 4.5

@@ -598,12 +598,15 @@ WId C_ZNK7QWindow5winIdEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.9
 // /usr/include/qt/QtGui/qwindow.h:160
 // [8] QWindow * parent(QWindow::AncestorMode)
+#if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QWindow6parentENS_12AncestorModeE(void *this_, QWindow::AncestorMode mode) {
   return (void*)((QWindow*)this_)->parent(mode);
 }
+#endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:161

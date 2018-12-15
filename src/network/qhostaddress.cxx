@@ -249,12 +249,15 @@ bool C_ZN12QHostAddress10setAddressERK7QString(void *this_, QString* address) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtNetwork/qhostaddress.h:125
 // [-2] void setAddress(QHostAddress::SpecialAddress)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 void C_ZN12QHostAddress10setAddressENS_14SpecialAddressE(void *this_, QHostAddress::SpecialAddress address) {
   ((QHostAddress*)this_)->setAddress(address);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:127
@@ -322,12 +325,15 @@ void C_ZN12QHostAddress10setScopeIdERK7QString(void *this_, QString* id) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
+// since 5.8
 // /usr/include/qt/QtNetwork/qhostaddress.h:137
 // [1] bool isEqual(const QHostAddress &, QHostAddress::ConversionMode)
+#if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QHostAddress7isEqualERKS_6QFlagsINS_18ConversionModeFlagEE(void *this_, QHostAddress* address, QFlags<QHostAddress::ConversionModeFlag> mode) {
   return (bool)((QHostAddress*)this_)->isEqual(*address, mode);
 }
+#endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:138
@@ -411,8 +417,52 @@ bool C_ZNK12QHostAddress10isLoopbackEv(void *this_) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// since 5.6
+// since 5.11
 // /usr/include/qt/QtNetwork/qhostaddress.h:151
+// [1] bool isGlobal()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QHostAddress8isGlobalEv(void *this_) {
+  return (bool)((QHostAddress*)this_)->isGlobal();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qhostaddress.h:152
+// [1] bool isLinkLocal()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QHostAddress11isLinkLocalEv(void *this_) {
+  return (bool)((QHostAddress*)this_)->isLinkLocal();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qhostaddress.h:153
+// [1] bool isSiteLocal()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QHostAddress11isSiteLocalEv(void *this_) {
+  return (bool)((QHostAddress*)this_)->isSiteLocal();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qhostaddress.h:154
+// [1] bool isUniqueLocalUnicast()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QHostAddress20isUniqueLocalUnicastEv(void *this_) {
+  return (bool)((QHostAddress*)this_)->isUniqueLocalUnicast();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.6
+// /usr/include/qt/QtNetwork/qhostaddress.h:155
 // [1] bool isMulticast()
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -421,9 +471,20 @@ bool C_ZNK12QHostAddress11isMulticastEv(void *this_) {
 }
 #endif // QT_VERSION >= 0x050600
 
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtNetwork/qhostaddress.h:156
+// [1] bool isBroadcast()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK12QHostAddress11isBroadcastEv(void *this_) {
+  return (bool)((QHostAddress*)this_)->isBroadcast();
+}
+#endif // QT_VERSION >= 0x050b00
+
 // Public static Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtNetwork/qhostaddress.h:153
+// /usr/include/qt/QtNetwork/qhostaddress.h:158
 // [-2] QPair<QHostAddress, int> parseSubnet(const QString &)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT

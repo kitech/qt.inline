@@ -53,7 +53,7 @@ MyQTextListFormat() : QTextListFormat() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:681
+// /usr/include/qt/QtGui/qtextformat.h:688
 // [-2] void QTextListFormat()
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QTextListFormatC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN15QTextListFormatC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:683
+// /usr/include/qt/QtGui/qtextformat.h:690
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QTextListFormat7isValidEv(void *this_) {
@@ -69,7 +69,7 @@ bool C_ZNK15QTextListFormat7isValidEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:697
+// /usr/include/qt/QtGui/qtextformat.h:704
 // [-2] void setStyle(QTextListFormat::Style)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat8setStyleENS_5StyleE(void *this_, QTextListFormat::Style style) {
@@ -77,7 +77,7 @@ void C_ZN15QTextListFormat8setStyleENS_5StyleE(void *this_, QTextListFormat::Sty
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:698
+// /usr/include/qt/QtGui/qtextformat.h:705
 // [4] QTextListFormat::Style style()
 extern "C" Q_DECL_EXPORT
 QTextListFormat::Style C_ZNK15QTextListFormat5styleEv(void *this_) {
@@ -85,7 +85,7 @@ QTextListFormat::Style C_ZNK15QTextListFormat5styleEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:701
+// /usr/include/qt/QtGui/qtextformat.h:708
 // [-2] void setIndent(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QTextListFormat9setIndentEi(void *this_, int indent) {
@@ -93,7 +93,7 @@ void C_ZN15QTextListFormat9setIndentEi(void *this_, int indent) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:702
+// /usr/include/qt/QtGui/qtextformat.h:709
 // [4] int indent()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QTextListFormat6indentEv(void *this_) {
@@ -102,7 +102,7 @@ int C_ZNK15QTextListFormat6indentEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qtextformat.h:705
+// /usr/include/qt/QtGui/qtextformat.h:712
 // [-2] void setNumberPrefix(const QString &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -113,7 +113,7 @@ void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, QString* num
 
 // Public inline Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qtextformat.h:706
+// /usr/include/qt/QtGui/qtextformat.h:713
 // [8] QString numberPrefix()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -125,7 +125,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qtextformat.h:709
+// /usr/include/qt/QtGui/qtextformat.h:716
 // [-2] void setNumberSuffix(const QString &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -136,7 +136,7 @@ void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, QString* num
 
 // Public inline Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qtextformat.h:710
+// /usr/include/qt/QtGui/qtextformat.h:717
 // [8] QString numberSuffix()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT

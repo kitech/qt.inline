@@ -96,6 +96,34 @@ void* C_ZN9QTypeInfoI14QDnsTextRecordE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
+// [8] const char * QTypeInfo<QSslCertificate>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI15QSslCertificateE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QSslCertificate>*)this_)->name();
+   return (void*)rv;
+}
+
+// [4] int QMetaTypeId<QSslCertificate>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI15QSslCertificateE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QSslCertificate>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [8] const char * QTypeInfo<QSslError>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI9QSslErrorE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QSslError>*)this_)->name();
+   return (void*)rv;
+}
+
+// [4] int QMetaTypeId<QList<QSslError> >::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI5QListI9QSslErrorEE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QList<QSslError> >*)this_)->qt_metatype_id();
+   return rv;
+}
+
 // [8] const char * QTypeInfo<QHostAddress>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI12QHostAddressE4nameEv(void* this_ ) {
@@ -129,34 +157,6 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI9QHttpPartE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QHttpPart>*)this_)->name();
    return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QSslCertificate>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI15QSslCertificateE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QSslCertificate>*)this_)->name();
-   return (void*)rv;
-}
-
-// [4] int QMetaTypeId<QSslCertificate>::qt_metatype_id()
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMetaTypeIdI15QSslCertificateE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QSslCertificate>*)this_)->qt_metatype_id();
-   return rv;
-}
-
-// [8] const char * QTypeInfo<QSslError>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI9QSslErrorE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QSslError>*)this_)->name();
-   return (void*)rv;
-}
-
-// [4] int QMetaTypeId<QList<QSslError> >::qt_metatype_id()
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMetaTypeIdI5QListI9QSslErrorEE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QList<QSslError> >*)this_)->qt_metatype_id();
-   return rv;
 }
 
 // [8] const char * QTypeInfo<QSslConfiguration>::name()

@@ -235,7 +235,7 @@ return new QRgba64(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qrgba64.h:137
+// /usr/include/qt/QtGui/qrgba64.h:141
 // [8] QRgba64 unpremultiplied()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QRgba6415unpremultipliedEv(void *this_) {
@@ -244,7 +244,7 @@ return new QRgba64(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qrgba64.h:151
+// /usr/include/qt/QtGui/qrgba64.h:155
 // [8] QRgba64 operator=(quint64)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QRgba64aSEy(void *this_, quint64 _rgba) {

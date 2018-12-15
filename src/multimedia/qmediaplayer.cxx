@@ -152,7 +152,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:122
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:123
 // [-2] void QMediaPlayer(QObject *, QMediaPlayer::Flags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QMediaPlayerC2EP7QObject6QFlagsINS_4FlagEE(QObject * parent, QFlags<QMediaPlayer::Flag> flags) {
@@ -160,14 +160,14 @@ void* C_ZN12QMediaPlayerC2EP7QObject6QFlagsINS_4FlagEE(QObject * parent, QFlags<
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:123
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:124
 // [-2] void ~QMediaPlayer()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayerD2Ev(void *this_) {
   delete (QMediaPlayer*)(this_);
 }
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:125
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:126
 // [4] QMultimedia::SupportEstimate hasSupport(const QString &, const QStringList &, QMediaPlayer::Flags)
 extern "C" Q_DECL_EXPORT
 QMultimedia::SupportEstimate C_ZN12QMediaPlayer10hasSupportERK7QStringRK11QStringList6QFlagsINS_4FlagEE(QString* mimeType, QStringList* codecs, QFlags<QMediaPlayer::Flag> flags) {
@@ -175,7 +175,7 @@ QMultimedia::SupportEstimate C_ZN12QMediaPlayer10hasSupportERK7QStringRK11QStrin
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:128
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:129
 // [8] QStringList supportedMimeTypes(QMediaPlayer::Flags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QMediaPlayer18supportedMimeTypesE6QFlagsINS_4FlagEE(QFlags<QMediaPlayer::Flag> flags) {
@@ -184,7 +184,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:130
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:131
 // [-2] void setVideoOutput(QVideoWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer14setVideoOutputEP12QVideoWidget(void *this_, QVideoWidget * arg0) {
@@ -192,7 +192,7 @@ void C_ZN12QMediaPlayer14setVideoOutputEP12QVideoWidget(void *this_, QVideoWidge
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:131
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:132
 // [-2] void setVideoOutput(QGraphicsVideoItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer14setVideoOutputEP18QGraphicsVideoItem(void *this_, QGraphicsVideoItem * arg0) {
@@ -200,7 +200,7 @@ void C_ZN12QMediaPlayer14setVideoOutputEP18QGraphicsVideoItem(void *this_, QGrap
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:132
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:133
 // [-2] void setVideoOutput(QAbstractVideoSurface *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer14setVideoOutputEP21QAbstractVideoSurface(void *this_, QAbstractVideoSurface * surface) {
@@ -208,7 +208,7 @@ void C_ZN12QMediaPlayer14setVideoOutputEP21QAbstractVideoSurface(void *this_, QA
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:134
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:135
 // [8] QMediaContent media()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaPlayer5mediaEv(void *this_) {
@@ -217,7 +217,7 @@ return new QMediaContent(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:135
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:136
 // [8] const QIODevice * mediaStream()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaPlayer11mediaStreamEv(void *this_) {
@@ -225,7 +225,7 @@ void* C_ZNK12QMediaPlayer11mediaStreamEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:136
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:137
 // [8] QMediaPlaylist * playlist()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaPlayer8playlistEv(void *this_) {
@@ -233,7 +233,7 @@ void* C_ZNK12QMediaPlayer8playlistEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:137
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:138
 // [8] QMediaContent currentMedia()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaPlayer12currentMediaEv(void *this_) {
@@ -242,7 +242,7 @@ return new QMediaContent(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:139
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:140
 // [4] QMediaPlayer::State state()
 extern "C" Q_DECL_EXPORT
 QMediaPlayer::State C_ZNK12QMediaPlayer5stateEv(void *this_) {
@@ -250,7 +250,7 @@ QMediaPlayer::State C_ZNK12QMediaPlayer5stateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:140
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:141
 // [4] QMediaPlayer::MediaStatus mediaStatus()
 extern "C" Q_DECL_EXPORT
 QMediaPlayer::MediaStatus C_ZNK12QMediaPlayer11mediaStatusEv(void *this_) {
@@ -258,7 +258,7 @@ QMediaPlayer::MediaStatus C_ZNK12QMediaPlayer11mediaStatusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:142
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:143
 // [8] qint64 duration()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK12QMediaPlayer8durationEv(void *this_) {
@@ -266,7 +266,7 @@ qint64 C_ZNK12QMediaPlayer8durationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:143
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:144
 // [8] qint64 position()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK12QMediaPlayer8positionEv(void *this_) {
@@ -274,7 +274,7 @@ qint64 C_ZNK12QMediaPlayer8positionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:145
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:146
 // [4] int volume()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QMediaPlayer6volumeEv(void *this_) {
@@ -282,7 +282,7 @@ int C_ZNK12QMediaPlayer6volumeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:146
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:147
 // [1] bool isMuted()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QMediaPlayer7isMutedEv(void *this_) {
@@ -290,7 +290,7 @@ bool C_ZNK12QMediaPlayer7isMutedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:147
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:148
 // [1] bool isAudioAvailable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QMediaPlayer16isAudioAvailableEv(void *this_) {
@@ -298,7 +298,7 @@ bool C_ZNK12QMediaPlayer16isAudioAvailableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:148
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:149
 // [1] bool isVideoAvailable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QMediaPlayer16isVideoAvailableEv(void *this_) {
@@ -306,7 +306,7 @@ bool C_ZNK12QMediaPlayer16isVideoAvailableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:150
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:151
 // [4] int bufferStatus()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QMediaPlayer12bufferStatusEv(void *this_) {
@@ -314,7 +314,7 @@ int C_ZNK12QMediaPlayer12bufferStatusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:152
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:153
 // [1] bool isSeekable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QMediaPlayer10isSeekableEv(void *this_) {
@@ -322,7 +322,7 @@ bool C_ZNK12QMediaPlayer10isSeekableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:153
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:154
 // [8] qreal playbackRate()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK12QMediaPlayer12playbackRateEv(void *this_) {
@@ -330,7 +330,7 @@ qreal C_ZNK12QMediaPlayer12playbackRateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:155
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:156
 // [4] QMediaPlayer::Error error()
 extern "C" Q_DECL_EXPORT
 QMediaPlayer::Error C_ZNK12QMediaPlayer5errorEv(void *this_) {
@@ -338,7 +338,7 @@ QMediaPlayer::Error C_ZNK12QMediaPlayer5errorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:156
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:157
 // [8] QString errorString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaPlayer11errorStringEv(void *this_) {
@@ -347,7 +347,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:158
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:159
 // [8] QNetworkConfiguration currentNetworkConfiguration()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMediaPlayer27currentNetworkConfigurationEv(void *this_) {
@@ -356,7 +356,7 @@ return new QNetworkConfiguration(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:160
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:161
 // [4] QMultimedia::AvailabilityStatus availability()
 extern "C" Q_DECL_EXPORT
 QMultimedia::AvailabilityStatus C_ZNK12QMediaPlayer12availabilityEv(void *this_) {
@@ -364,7 +364,7 @@ QMultimedia::AvailabilityStatus C_ZNK12QMediaPlayer12availabilityEv(void *this_)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:162
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:163
 // [4] QAudio::Role audioRole()
 extern "C" Q_DECL_EXPORT
 QAudio::Role C_ZNK12QMediaPlayer9audioRoleEv(void *this_) {
@@ -372,7 +372,7 @@ QAudio::Role C_ZNK12QMediaPlayer9audioRoleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:163
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:164
 // [-2] void setAudioRole(QAudio::Role)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer12setAudioRoleEN6QAudio4RoleE(void *this_, QAudio::Role audioRole) {
@@ -381,7 +381,7 @@ void C_ZN12QMediaPlayer12setAudioRoleEN6QAudio4RoleE(void *this_, QAudio::Role a
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:164
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:165
 // [-2] QList<QAudio::Role> supportedAudioRoles()
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -392,7 +392,36 @@ return new QList<QAudio::Role>(rv);
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:166
+// [8] QString customAudioRole()
+extern "C" Q_DECL_EXPORT
+void* C_ZNK12QMediaPlayer15customAudioRoleEv(void *this_) {
+  auto rv = ((QMediaPlayer*)this_)->customAudioRole();
+return new QString(rv);
+}
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplayer.h:167
+// [-2] void setCustomAudioRole(const QString &)
+extern "C" Q_DECL_EXPORT
+void C_ZN12QMediaPlayer18setCustomAudioRoleERK7QString(void *this_, QString* audioRole) {
+  ((QMediaPlayer*)this_)->setCustomAudioRole(*audioRole);
+}
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:168
+// [8] QStringList supportedCustomAudioRoles()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK12QMediaPlayer25supportedCustomAudioRolesEv(void *this_) {
+  auto rv = ((QMediaPlayer*)this_)->supportedCustomAudioRoles();
+return new QStringList(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:171
 // [-2] void play()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer4playEv(void *this_) {
@@ -400,7 +429,7 @@ void C_ZN12QMediaPlayer4playEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:168
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:172
 // [-2] void pause()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer5pauseEv(void *this_) {
@@ -408,7 +437,7 @@ void C_ZN12QMediaPlayer5pauseEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:169
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:173
 // [-2] void stop()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer4stopEv(void *this_) {
@@ -416,7 +445,7 @@ void C_ZN12QMediaPlayer4stopEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:171
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:175
 // [-2] void setPosition(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer11setPositionEx(void *this_, qint64 position) {
@@ -424,7 +453,7 @@ void C_ZN12QMediaPlayer11setPositionEx(void *this_, qint64 position) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:172
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:176
 // [-2] void setVolume(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer9setVolumeEi(void *this_, int volume) {
@@ -432,7 +461,7 @@ void C_ZN12QMediaPlayer9setVolumeEi(void *this_, int volume) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:173
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:177
 // [-2] void setMuted(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer8setMutedEb(void *this_, bool muted) {
@@ -440,7 +469,7 @@ void C_ZN12QMediaPlayer8setMutedEb(void *this_, bool muted) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:175
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:179
 // [-2] void setPlaybackRate(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer15setPlaybackRateEd(void *this_, qreal rate) {
@@ -448,7 +477,7 @@ void C_ZN12QMediaPlayer15setPlaybackRateEd(void *this_, qreal rate) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:177
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:181
 // [-2] void setMedia(const QMediaContent &, QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer8setMediaERK13QMediaContentP9QIODevice(void *this_, QMediaContent* media, QIODevice * stream) {
@@ -456,7 +485,7 @@ void C_ZN12QMediaPlayer8setMediaERK13QMediaContentP9QIODevice(void *this_, QMedi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:178
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:182
 // [-2] void setPlaylist(QMediaPlaylist *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer11setPlaylistEP14QMediaPlaylist(void *this_, QMediaPlaylist * playlist) {
@@ -464,7 +493,7 @@ void C_ZN12QMediaPlayer11setPlaylistEP14QMediaPlaylist(void *this_, QMediaPlayli
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:180
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:184
 // [-2] void setNetworkConfigurations(const QList<QNetworkConfiguration> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer24setNetworkConfigurationsERK5QListI21QNetworkConfigurationE(void *this_, QList<QNetworkConfiguration>* configurations) {
@@ -472,7 +501,7 @@ void C_ZN12QMediaPlayer24setNetworkConfigurationsERK5QListI21QNetworkConfigurati
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:183
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:187
 // [-2] void mediaChanged(const QMediaContent &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer12mediaChangedERK13QMediaContent(void *this_, QMediaContent* media) {
@@ -480,7 +509,7 @@ void C_ZN12QMediaPlayer12mediaChangedERK13QMediaContent(void *this_, QMediaConte
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:184
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:188
 // [-2] void currentMediaChanged(const QMediaContent &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer19currentMediaChangedERK13QMediaContent(void *this_, QMediaContent* media) {
@@ -488,7 +517,7 @@ void C_ZN12QMediaPlayer19currentMediaChangedERK13QMediaContent(void *this_, QMed
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:186
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:190
 // [-2] void stateChanged(QMediaPlayer::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer12stateChangedENS_5StateE(void *this_, QMediaPlayer::State newState) {
@@ -496,7 +525,7 @@ void C_ZN12QMediaPlayer12stateChangedENS_5StateE(void *this_, QMediaPlayer::Stat
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:187
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:191
 // [-2] void mediaStatusChanged(QMediaPlayer::MediaStatus)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer18mediaStatusChangedENS_11MediaStatusE(void *this_, QMediaPlayer::MediaStatus status) {
@@ -504,7 +533,7 @@ void C_ZN12QMediaPlayer18mediaStatusChangedENS_11MediaStatusE(void *this_, QMedi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:189
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:193
 // [-2] void durationChanged(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer15durationChangedEx(void *this_, qint64 duration) {
@@ -512,7 +541,7 @@ void C_ZN12QMediaPlayer15durationChangedEx(void *this_, qint64 duration) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:190
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:194
 // [-2] void positionChanged(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer15positionChangedEx(void *this_, qint64 position) {
@@ -520,7 +549,7 @@ void C_ZN12QMediaPlayer15positionChangedEx(void *this_, qint64 position) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:192
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:196
 // [-2] void volumeChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer13volumeChangedEi(void *this_, int volume) {
@@ -528,7 +557,7 @@ void C_ZN12QMediaPlayer13volumeChangedEi(void *this_, int volume) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:193
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:197
 // [-2] void mutedChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer12mutedChangedEb(void *this_, bool muted) {
@@ -536,7 +565,7 @@ void C_ZN12QMediaPlayer12mutedChangedEb(void *this_, bool muted) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:194
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:198
 // [-2] void audioAvailableChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer21audioAvailableChangedEb(void *this_, bool available) {
@@ -544,7 +573,7 @@ void C_ZN12QMediaPlayer21audioAvailableChangedEb(void *this_, bool available) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:195
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:199
 // [-2] void videoAvailableChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer21videoAvailableChangedEb(void *this_, bool videoAvailable) {
@@ -552,7 +581,7 @@ void C_ZN12QMediaPlayer21videoAvailableChangedEb(void *this_, bool videoAvailabl
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:197
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:201
 // [-2] void bufferStatusChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer19bufferStatusChangedEi(void *this_, int percentFilled) {
@@ -560,7 +589,7 @@ void C_ZN12QMediaPlayer19bufferStatusChangedEi(void *this_, int percentFilled) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:199
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:203
 // [-2] void seekableChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer15seekableChangedEb(void *this_, bool seekable) {
@@ -568,7 +597,7 @@ void C_ZN12QMediaPlayer15seekableChangedEb(void *this_, bool seekable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:200
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:204
 // [-2] void playbackRateChanged(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer19playbackRateChangedEd(void *this_, qreal rate) {
@@ -577,7 +606,7 @@ void C_ZN12QMediaPlayer19playbackRateChangedEd(void *this_, qreal rate) {
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:202
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:206
 // [-2] void audioRoleChanged(QAudio::Role)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -587,7 +616,18 @@ void C_ZN12QMediaPlayer16audioRoleChangedEN6QAudio4RoleE(void *this_, QAudio::Ro
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:204
+// since 5.11
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:207
+// [-2] void customAudioRoleChanged(const QString &)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZN12QMediaPlayer22customAudioRoleChangedERK7QString(void *this_, QString* role) {
+  ((QMediaPlayer*)this_)->customAudioRoleChanged(*role);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:209
 // [-2] void error(QMediaPlayer::Error)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer5errorENS_5ErrorE(void *this_, QMediaPlayer::Error error) {
@@ -595,7 +635,7 @@ void C_ZN12QMediaPlayer5errorENS_5ErrorE(void *this_, QMediaPlayer::Error error)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:206
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:211
 // [-2] void networkConfigurationChanged(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer27networkConfigurationChangedERK21QNetworkConfiguration(void *this_, QNetworkConfiguration* configuration) {
@@ -603,7 +643,7 @@ void C_ZN12QMediaPlayer27networkConfigurationChangedERK21QNetworkConfiguration(v
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:208
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:213
 // [1] bool bind(QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QMediaPlayer4bindEP7QObject(void *this_, QObject * arg0) {
@@ -611,7 +651,7 @@ bool C_ZN12QMediaPlayer4bindEP7QObject(void *this_, QObject * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:209
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:214
 // [-2] void unbind(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMediaPlayer6unbindEP7QObject(void *this_, QObject * arg0) {

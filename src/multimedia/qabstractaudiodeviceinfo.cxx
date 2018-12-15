@@ -233,34 +233,34 @@ void* C_QAbstractAudioDeviceInfo_init_staticMetaObject(void* this_, void* strdat
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:62
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
 // [8] QAudioFormat preferredFormat()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:63
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:60
 // [1] bool isFormatSupported(const QAudioFormat &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:64
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:61
 // [8] QString deviceName()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:65
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:62
 // [8] QStringList supportedCodecs()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:66
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:63
 // [-2] QList<int> supportedSampleRates()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:67
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:64
 // [-2] QList<int> supportedChannelCounts()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:68
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:65
 // [-2] QList<int> supportedSampleSizes()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:69
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:66
 // [-2] QList<QAudioFormat::Endian> supportedByteOrders()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:70
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:67
 // [-2] QList<QAudioFormat::SampleType> supportedSampleTypes()
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:56
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QAbstractAudioDeviceInfo10metaObjectEv(void *this_) {
@@ -268,7 +268,7 @@ void* C_ZNK24QAbstractAudioDeviceInfo10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:56
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractAudioDeviceInfo11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -276,7 +276,7 @@ void* C_ZN24QAbstractAudioDeviceInfo11qt_metacastEPKc(void *this_, const char * 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:56
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN24QAbstractAudioDeviceInfo11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -284,7 +284,7 @@ int C_ZN24QAbstractAudioDeviceInfo11qt_metacallEN11QMetaObject4CallEiPPv(void *t
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:56
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractAudioDeviceInfo2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -293,7 +293,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:56
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractAudioDeviceInfo6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -302,7 +302,7 @@ return new QString(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:62
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:59
 // [8] QAudioFormat preferredFormat()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QAbstractAudioDeviceInfo15preferredFormatEv(void *this_) {
@@ -311,7 +311,7 @@ return new QAudioFormat(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:63
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:60
 // [1] bool isFormatSupported(const QAudioFormat &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK24QAbstractAudioDeviceInfo17isFormatSupportedERK12QAudioFormat(void *this_, QAudioFormat* format) {
@@ -319,7 +319,7 @@ bool C_ZNK24QAbstractAudioDeviceInfo17isFormatSupportedERK12QAudioFormat(void *t
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:64
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:61
 // [8] QString deviceName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QAbstractAudioDeviceInfo10deviceNameEv(void *this_) {
@@ -328,7 +328,7 @@ return new QString(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:65
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:62
 // [8] QStringList supportedCodecs()
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QAbstractAudioDeviceInfo15supportedCodecsEv(void *this_) {
@@ -337,7 +337,7 @@ return new QStringList(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:66
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:63
 // [-2] QList<int> supportedSampleRates()
 extern "C" Q_DECL_EXPORT
 QList<int>* C_ZN24QAbstractAudioDeviceInfo20supportedSampleRatesEv(void *this_) {
@@ -346,7 +346,7 @@ return new QList<int>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:67
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:64
 // [-2] QList<int> supportedChannelCounts()
 extern "C" Q_DECL_EXPORT
 QList<int>* C_ZN24QAbstractAudioDeviceInfo22supportedChannelCountsEv(void *this_) {
@@ -355,7 +355,7 @@ return new QList<int>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:68
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:65
 // [-2] QList<int> supportedSampleSizes()
 extern "C" Q_DECL_EXPORT
 QList<int>* C_ZN24QAbstractAudioDeviceInfo20supportedSampleSizesEv(void *this_) {
@@ -364,7 +364,7 @@ return new QList<int>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:69
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:66
 // [-2] QList<QAudioFormat::Endian> supportedByteOrders()
 extern "C" Q_DECL_EXPORT
 QList<QAudioFormat::Endian>* C_ZN24QAbstractAudioDeviceInfo19supportedByteOrdersEv(void *this_) {
@@ -373,7 +373,7 @@ return new QList<QAudioFormat::Endian>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:70
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:67
 // [-2] QList<QAudioFormat::SampleType> supportedSampleTypes()
 extern "C" Q_DECL_EXPORT
 QList<QAudioFormat::SampleType>* C_ZN24QAbstractAudioDeviceInfo20supportedSampleTypesEv(void *this_) {

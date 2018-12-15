@@ -54,7 +54,7 @@ MyQSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl impl) : QSequen
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:618
+// /usr/include/qt/QtCore/qvariant.h:642
 // [-2] void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QSequentialIterableC2EN17QtMetaTypePrivate23QSequentialIterableImplE(QtMetaTypePrivate::QSequentialIterableImpl impl) {
@@ -62,7 +62,7 @@ void* C_ZN19QSequentialIterableC2EN17QtMetaTypePrivate23QSequentialIterableImplE
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:623
+// /usr/include/qt/QtCore/qvariant.h:647
 // [112] QSequentialIterable::const_iterator begin()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QSequentialIterable5beginEv(void *this_) {
@@ -71,7 +71,7 @@ return new QSequentialIterable::const_iterator(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:624
+// /usr/include/qt/QtCore/qvariant.h:648
 // [112] QSequentialIterable::const_iterator end()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QSequentialIterable3endEv(void *this_) {
@@ -80,7 +80,7 @@ return new QSequentialIterable::const_iterator(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:626
+// /usr/include/qt/QtCore/qvariant.h:650
 // [16] QVariant at(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QSequentialIterable2atEi(void *this_, int idx) {
@@ -89,7 +89,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:627
+// /usr/include/qt/QtCore/qvariant.h:651
 // [4] int size()
 extern "C" Q_DECL_EXPORT
 int C_ZNK19QSequentialIterable4sizeEv(void *this_) {
@@ -97,7 +97,7 @@ int C_ZNK19QSequentialIterable4sizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:629
+// /usr/include/qt/QtCore/qvariant.h:653
 // [1] bool canReverseIterate()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QSequentialIterable17canReverseIterateEv(void *this_) {

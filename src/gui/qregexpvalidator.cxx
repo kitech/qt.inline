@@ -112,7 +112,7 @@ void* C_QRegExpValidator_init_staticMetaObject(void* this_, void* strdat, void* 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:173
+// /usr/include/qt/QtGui/qvalidator.h:175
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QRegExpValidator10metaObjectEv(void *this_) {
@@ -120,7 +120,7 @@ void* C_ZNK16QRegExpValidator10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:173
+// /usr/include/qt/QtGui/qvalidator.h:175
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidator11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +128,7 @@ void* C_ZN16QRegExpValidator11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:173
+// /usr/include/qt/QtGui/qvalidator.h:175
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN16QRegExpValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +136,7 @@ int C_ZN16QRegExpValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QM
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:173
+// /usr/include/qt/QtGui/qvalidator.h:175
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidator2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +145,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:173
+// /usr/include/qt/QtGui/qvalidator.h:175
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidator6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +154,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:177
+// /usr/include/qt/QtGui/qvalidator.h:179
 // [-2] void QRegExpValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidatorC2EP7QObject(QObject * parent) {
@@ -162,7 +162,7 @@ void* C_ZN16QRegExpValidatorC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:178
+// /usr/include/qt/QtGui/qvalidator.h:180
 // [-2] void QRegExpValidator(const QRegExp &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(QRegExp* rx, QObject * parent) {
@@ -170,14 +170,14 @@ void* C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(QRegExp* rx, QObject * parent
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:179
+// /usr/include/qt/QtGui/qvalidator.h:181
 // [-2] void ~QRegExpValidator()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRegExpValidatorD2Ev(void *this_) {
   delete (QRegExpValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:181
+// /usr/include/qt/QtGui/qvalidator.h:183
 // [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK16QRegExpValidator8validateER7QStringRi(void *this_, QString* input, int & pos) {
@@ -185,7 +185,7 @@ QValidator::State C_ZNK16QRegExpValidator8validateER7QStringRi(void *this_, QStr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:183
+// /usr/include/qt/QtGui/qvalidator.h:185
 // [-2] void setRegExp(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRegExpValidator9setRegExpERK7QRegExp(void *this_, QRegExp* rx) {
@@ -193,7 +193,7 @@ void C_ZN16QRegExpValidator9setRegExpERK7QRegExp(void *this_, QRegExp* rx) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:184
+// /usr/include/qt/QtGui/qvalidator.h:186
 // [8] const QRegExp & regExp()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QRegExpValidator6regExpEv(void *this_) {
@@ -202,7 +202,7 @@ return new QRegExp(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:187
+// /usr/include/qt/QtGui/qvalidator.h:189
 // [-2] void regExpChanged(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QRegExpValidator13regExpChangedERK7QRegExp(void *this_, QRegExp* regExp) {

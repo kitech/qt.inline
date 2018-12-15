@@ -198,20 +198,26 @@ QCameraImageProcessing::ColorFilter C_ZNK22QCameraImageProcessing11colorFilterEv
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:116
 // [-2] void setColorFilter(QCameraImageProcessing::ColorFilter)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void C_ZN22QCameraImageProcessing14setColorFilterENS_11ColorFilterE(void *this_, QCameraImageProcessing::ColorFilter filter) {
   ((QCameraImageProcessing*)this_)->setColorFilter(filter);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
+// since 5.5
 // /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:117
 // [1] bool isColorFilterSupported(QCameraImageProcessing::ColorFilter)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 bool C_ZNK22QCameraImageProcessing22isColorFilterSupportedENS_11ColorFilterE(void *this_, QCameraImageProcessing::ColorFilter filter) {
   return (bool)((QCameraImageProcessing*)this_)->isColorFilterSupported(filter);
 }
+#endif // QT_VERSION >= 0x050500
 
 //  main block end
 

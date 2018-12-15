@@ -106,7 +106,7 @@ void C_ZNK14QMessageLogger4infoEPKcz(void *this_, const char * msg) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:100
+// /usr/include/qt/QtCore/qlogging.h:101
 // [-2] void warning(const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger7warningEPKcz(void *this_, const char * msg) {
@@ -114,7 +114,7 @@ void C_ZNK14QMessageLogger7warningEPKcz(void *this_, const char * msg) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:101
+// /usr/include/qt/QtCore/qlogging.h:103
 // [-2] void critical(const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger8criticalEPKcz(void *this_, const char * msg) {
@@ -122,7 +122,7 @@ void C_ZNK14QMessageLogger8criticalEPKcz(void *this_, const char * msg) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:105
+// /usr/include/qt/QtCore/qlogging.h:107
 // [-2] void debug(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger5debugERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
@@ -130,7 +130,7 @@ void C_ZNK14QMessageLogger5debugERK16QLoggingCategoryPKcz(void *this_, QLoggingC
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:106
+// /usr/include/qt/QtCore/qlogging.h:108
 // [-2] void debug(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger5debugEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
@@ -138,7 +138,7 @@ void C_ZNK14QMessageLogger5debugEPFRK16QLoggingCategoryvEPKcz(void *this_, QMess
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:107
+// /usr/include/qt/QtCore/qlogging.h:109
 // [-2] void info(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger4infoERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
@@ -146,7 +146,7 @@ void C_ZNK14QMessageLogger4infoERK16QLoggingCategoryPKcz(void *this_, QLoggingCa
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:108
+// /usr/include/qt/QtCore/qlogging.h:110
 // [-2] void info(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger4infoEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
@@ -154,7 +154,7 @@ void C_ZNK14QMessageLogger4infoEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessa
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:109
+// /usr/include/qt/QtCore/qlogging.h:112
 // [-2] void warning(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger7warningERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
@@ -162,7 +162,7 @@ void C_ZNK14QMessageLogger7warningERK16QLoggingCategoryPKcz(void *this_, QLoggin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:110
+// /usr/include/qt/QtCore/qlogging.h:114
 // [-2] void warning(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger7warningEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
@@ -170,7 +170,7 @@ void C_ZNK14QMessageLogger7warningEPFRK16QLoggingCategoryvEPKcz(void *this_, QMe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:111
+// /usr/include/qt/QtCore/qlogging.h:116
 // [-2] void critical(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger8criticalERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
@@ -178,7 +178,7 @@ void C_ZNK14QMessageLogger8criticalERK16QLoggingCategoryPKcz(void *this_, QLoggi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:112
+// /usr/include/qt/QtCore/qlogging.h:118
 // [-2] void critical(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger8criticalEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
@@ -186,7 +186,7 @@ void C_ZNK14QMessageLogger8criticalEPFRK16QLoggingCategoryvEPKcz(void *this_, QM
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:117
+// /usr/include/qt/QtCore/qlogging.h:124
 // [-2] void fatal(const char *, ...)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger5fatalEPKcz(void *this_, const char * msg) {
@@ -194,7 +194,7 @@ void C_ZNK14QMessageLogger5fatalEPKcz(void *this_, const char * msg) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:120
+// /usr/include/qt/QtCore/qlogging.h:127
 // [8] QDebug debug()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger5debugEv(void *this_) {
@@ -204,7 +204,7 @@ return new QDebug(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtCore/qlogging.h:121
+// /usr/include/qt/QtCore/qlogging.h:128
 // [8] QDebug debug(const QLoggingCategory &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -215,17 +215,20 @@ return new QDebug(rv);
 #endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:122
+// since 5.3
+// /usr/include/qt/QtCore/qlogging.h:129
 // [8] QDebug debug(QMessageLogger::CategoryFunction)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger5debugEPFRK16QLoggingCategoryvE(void *this_, QMessageLogger::CategoryFunction catFunc) {
   auto rv = ((QMessageLogger*)this_)->debug(catFunc);
 return new QDebug(rv);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtCore/qlogging.h:123
+// /usr/include/qt/QtCore/qlogging.h:130
 // [8] QDebug info()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -237,7 +240,7 @@ return new QDebug(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtCore/qlogging.h:124
+// /usr/include/qt/QtCore/qlogging.h:131
 // [8] QDebug info(const QLoggingCategory &)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -248,16 +251,19 @@ return new QDebug(rv);
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:125
+// since 5.5
+// /usr/include/qt/QtCore/qlogging.h:132
 // [8] QDebug info(QMessageLogger::CategoryFunction)
+#if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger4infoEPFRK16QLoggingCategoryvE(void *this_, QMessageLogger::CategoryFunction catFunc) {
   auto rv = ((QMessageLogger*)this_)->info(catFunc);
 return new QDebug(rv);
 }
+#endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:126
+// /usr/include/qt/QtCore/qlogging.h:133
 // [8] QDebug warning()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger7warningEv(void *this_) {
@@ -266,7 +272,7 @@ return new QDebug(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:127
+// /usr/include/qt/QtCore/qlogging.h:134
 // [8] QDebug warning(const QLoggingCategory &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger7warningERK16QLoggingCategory(void *this_, QLoggingCategory* cat) {
@@ -275,16 +281,19 @@ return new QDebug(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:128
+// since 5.3
+// /usr/include/qt/QtCore/qlogging.h:135
 // [8] QDebug warning(QMessageLogger::CategoryFunction)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger7warningEPFRK16QLoggingCategoryvE(void *this_, QMessageLogger::CategoryFunction catFunc) {
   auto rv = ((QMessageLogger*)this_)->warning(catFunc);
 return new QDebug(rv);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:129
+// /usr/include/qt/QtCore/qlogging.h:136
 // [8] QDebug critical()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger8criticalEv(void *this_) {
@@ -294,7 +303,7 @@ return new QDebug(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtCore/qlogging.h:130
+// /usr/include/qt/QtCore/qlogging.h:137
 // [8] QDebug critical(const QLoggingCategory &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -305,16 +314,19 @@ return new QDebug(rv);
 #endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:131
+// since 5.3
+// /usr/include/qt/QtCore/qlogging.h:138
 // [8] QDebug critical(QMessageLogger::CategoryFunction)
+#if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMessageLogger8criticalEPFRK16QLoggingCategoryvE(void *this_, QMessageLogger::CategoryFunction catFunc) {
   auto rv = ((QMessageLogger*)this_)->critical(catFunc);
 return new QDebug(rv);
 }
+#endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlogging.h:133
+// /usr/include/qt/QtCore/qlogging.h:140
 // [1] QNoDebug noDebug()
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QMessageLogger7noDebugEv(void *this_) {

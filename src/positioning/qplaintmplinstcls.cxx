@@ -61,6 +61,13 @@ int C_ZN11QMetaTypeIdI9QGeoShapeE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
+// [4] int QMetaTypeId<QGeoPositionInfo>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI16QGeoPositionInfoE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QGeoPositionInfo>*)this_)->qt_metatype_id();
+   return rv;
+}
+
 // [8] const char * QTypeInfo<QGeoRectangle>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI13QGeoRectangleE4nameEv(void* this_ ) {

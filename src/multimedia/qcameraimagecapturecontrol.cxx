@@ -278,24 +278,24 @@ void C_ZN26QCameraImageCaptureControl13cancelCaptureEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:72
 // [-2] void readyForCaptureChanged(bool)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl22readyForCaptureChangedEb(void *this_, bool arg0) {
-  ((QCameraImageCaptureControl*)this_)->readyForCaptureChanged(arg0);
+void C_ZN26QCameraImageCaptureControl22readyForCaptureChangedEb(void *this_, bool ready) {
+  ((QCameraImageCaptureControl*)this_)->readyForCaptureChanged(ready);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:74
 // [-2] void imageExposed(int)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl12imageExposedEi(void *this_, int id) {
-  ((QCameraImageCaptureControl*)this_)->imageExposed(id);
+void C_ZN26QCameraImageCaptureControl12imageExposedEi(void *this_, int requestId) {
+  ((QCameraImageCaptureControl*)this_)->imageExposed(requestId);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:75
 // [-2] void imageCaptured(int, const QImage &)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl13imageCapturedEiRK6QImage(void *this_, int id, QImage* preview) {
-  ((QCameraImageCaptureControl*)this_)->imageCaptured(id, *preview);
+void C_ZN26QCameraImageCaptureControl13imageCapturedEiRK6QImage(void *this_, int requestId, QImage* preview) {
+  ((QCameraImageCaptureControl*)this_)->imageCaptured(requestId, *preview);
 }
 
 // Public Visibility=Default Availability=Available
@@ -310,16 +310,16 @@ void C_ZN26QCameraImageCaptureControl22imageMetadataAvailableEiRK7QStringRK8QVar
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:77
 // [-2] void imageAvailable(int, const QVideoFrame &)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl14imageAvailableEiRK11QVideoFrame(void *this_, int id, QVideoFrame* buffer) {
-  ((QCameraImageCaptureControl*)this_)->imageAvailable(id, *buffer);
+void C_ZN26QCameraImageCaptureControl14imageAvailableEiRK11QVideoFrame(void *this_, int requestId, QVideoFrame* buffer) {
+  ((QCameraImageCaptureControl*)this_)->imageAvailable(requestId, *buffer);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:78
 // [-2] void imageSaved(int, const QString &)
 extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl10imageSavedEiRK7QString(void *this_, int id, QString* fileName) {
-  ((QCameraImageCaptureControl*)this_)->imageSaved(id, *fileName);
+void C_ZN26QCameraImageCaptureControl10imageSavedEiRK7QString(void *this_, int requestId, QString* fileName) {
+  ((QCameraImageCaptureControl*)this_)->imageSaved(requestId, *fileName);
 }
 
 // Public Visibility=Default Availability=Available

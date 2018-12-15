@@ -332,8 +332,19 @@ void* C_ZNK13QQmlComponent15creationContextEv(void *this_) {
   return (void*)((QQmlComponent*)this_)->creationContext();
 }
 
+// Public Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtQml/qqmlcomponent.h:112
+// [8] QQmlEngine * engine()
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK13QQmlComponent6engineEv(void *this_) {
+  return (void*)((QQmlComponent*)this_)->engine();
+}
+#endif // QT_VERSION >= 0x050c00
+
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:113
+// /usr/include/qt/QtQml/qqmlcomponent.h:114
 // [8] QQmlComponentAttached * qmlAttachedProperties(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QQmlComponent21qmlAttachedPropertiesEP7QObject(QObject * arg0) {
@@ -341,7 +352,7 @@ void* C_ZN13QQmlComponent21qmlAttachedPropertiesEP7QObject(QObject * arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:116
+// /usr/include/qt/QtQml/qqmlcomponent.h:117
 // [-2] void loadUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent7loadUrlERK4QUrl(void *this_, QUrl* url) {
@@ -349,7 +360,7 @@ void C_ZN13QQmlComponent7loadUrlERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:117
+// /usr/include/qt/QtQml/qqmlcomponent.h:118
 // [-2] void loadUrl(const QUrl &, QQmlComponent::CompilationMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent7loadUrlERK4QUrlNS_15CompilationModeE(void *this_, QUrl* url, QQmlComponent::CompilationMode mode) {
@@ -357,7 +368,7 @@ void C_ZN13QQmlComponent7loadUrlERK4QUrlNS_15CompilationModeE(void *this_, QUrl*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:118
+// /usr/include/qt/QtQml/qqmlcomponent.h:119
 // [-2] void setData(const QByteArray &, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent7setDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* arg0, QUrl* baseUrl) {
@@ -365,7 +376,7 @@ void C_ZN13QQmlComponent7setDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:121
+// /usr/include/qt/QtQml/qqmlcomponent.h:122
 // [-2] void statusChanged(QQmlComponent::Status)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent13statusChangedENS_6StatusE(void *this_, QQmlComponent::Status arg0) {
@@ -373,7 +384,7 @@ void C_ZN13QQmlComponent13statusChangedENS_6StatusE(void *this_, QQmlComponent::
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlcomponent.h:122
+// /usr/include/qt/QtQml/qqmlcomponent.h:123
 // [-2] void progressChanged(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QQmlComponent15progressChangedEd(void *this_, qreal arg0) {

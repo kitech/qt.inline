@@ -165,22 +165,28 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtCore/qurl.h:198
 // [8] QString toDisplayString(QUrl::FormattingOptions)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void* C_ZNK4QUrl15toDisplayStringE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
   auto rv = ((QUrl*)this_)->toDisplayString(options);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qurl.h:199
 // [8] QUrl adjusted(QUrl::FormattingOptions)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK4QUrl8adjustedE12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl::FormattingOptions options) {
   auto rv = ((QUrl*)this_)->adjusted(options);
 return new QUrl(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:201
@@ -213,13 +219,16 @@ return new QUrl(rv);
 #endif // QT_VERSION >= 0x040600
 
 // Public static Visibility=Default Availability=Available
+// since 5.4
 // /usr/include/qt/QtCore/qurl.h:212
 // [8] QUrl fromUserInput(const QString &, const QString &, QUrl::UserInputResolutionOptions)
+#if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl13fromUserInputERK7QStringS2_6QFlagsINS_25UserInputResolutionOptionEE(QString* userInput, QString* workingDirectory, QFlags<QUrl::UserInputResolutionOption> options) {
   auto rv = QUrl::fromUserInput(*userInput, *workingDirectory, options);
 return new QUrl(rv);
 }
+#endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:215
@@ -360,13 +369,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.8
 // /usr/include/qt/QtCore/qurl.h:239
 // [8] QString topLevelDomain(QUrl::ComponentFormattingOptions)
+#if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
 void* C_ZNK4QUrl14topLevelDomainE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
   auto rv = ((QUrl*)this_)->topLevelDomain(options);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:242
@@ -405,13 +417,16 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qurl.h:247
 // [8] QString fileName(QUrl::ComponentFormattingOptions)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK4QUrl8fileNameE6QFlagsINS_25ComponentFormattingOptionEE(void *this_, QFlags<QUrl::ComponentFormattingOption> options) {
   auto rv = ((QUrl*)this_)->fileName(options);
 return new QString(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // since 4.2
@@ -575,12 +590,15 @@ bool C_ZNK4QUrlneERKS_(void *this_, QUrl* url) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qurl.h:274
 // [1] bool matches(const QUrl &, QUrl::FormattingOptions)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 bool C_ZNK4QUrl7matchesERKS_12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(void *this_, QUrl* url, QUrl::FormattingOptions options) {
   return (bool)((QUrl*)this_)->matches(*url, options);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:276
@@ -637,22 +655,28 @@ return new QStringList(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public static Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qurl.h:360
 // [8] QStringList toStringList(const QList<QUrl> &, QUrl::FormattingOptions)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 void* C_ZN4QUrl12toStringListERK5QListIS_E12QUrlTwoFlagsINS_19UrlFormattingOptionENS_25ComponentFormattingOptionEE(QList<QUrl>* uris, QUrl::FormattingOptions options) {
   auto rv = QUrl::toStringList(*uris, options);
 return new QStringList(rv);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public static Visibility=Default Availability=Available
+// since 5.1
 // /usr/include/qt/QtCore/qurl.h:361
 // [-2] QList<QUrl> fromStringList(const QStringList &, QUrl::ParsingMode)
+#if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
 QList<QUrl>* C_ZN4QUrl14fromStringListERK11QStringListNS_11ParsingModeE(QStringList* uris, QUrl::ParsingMode mode) {
   auto rv = QUrl::fromStringList(*uris, mode);
 return new QList<QUrl>(rv);
 }
+#endif // QT_VERSION >= 0x050100
 
 // Public static Visibility=Default Availability=Available
 // since 4.2

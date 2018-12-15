@@ -189,7 +189,7 @@ bool C_ZNK15QTreeWidgetItem10isSelectedEv(void *this_) {
 }
 #endif // QT_VERSION >= 0x040200
 
-// Public inline Visibility=Default Availability=Available
+// Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:85
 // [-2] void setHidden(bool)
@@ -200,7 +200,7 @@ void C_ZN15QTreeWidgetItem9setHiddenEb(void *this_, bool hide) {
 }
 #endif // QT_VERSION >= 0x040200
 
-// Public inline Visibility=Default Availability=Available
+// Public Visibility=Default Availability=Available
 // since 4.2
 // /usr/include/qt/QtWidgets/qtreewidget.h:86
 // [1] bool isHidden()

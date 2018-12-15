@@ -350,8 +350,8 @@ void C_ZN14QCameraControl5errorEiRK7QString(void *this_, int error, QString* err
 // /usr/include/qt/QtMultimedia/qcameracontrol.h:83
 // [-2] void captureModeChanged(QCamera::CaptureModes)
 extern "C" Q_DECL_EXPORT
-void C_ZN14QCameraControl18captureModeChangedE6QFlagsIN7QCamera11CaptureModeEE(void *this_, QFlags<QCamera::CaptureMode> arg0) {
-  ((QCameraControl*)this_)->captureModeChanged(arg0);
+void C_ZN14QCameraControl18captureModeChangedE6QFlagsIN7QCamera11CaptureModeEE(void *this_, QFlags<QCamera::CaptureMode> mode) {
+  ((QCameraControl*)this_)->captureModeChanged(mode);
 }
 
 //  main block end

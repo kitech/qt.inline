@@ -315,8 +315,8 @@ void C_ZN27QVideoDeviceSelectorControl21selectedDeviceChangedEi(void *this_, int
 // /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:70
 // [-2] void selectedDeviceChanged(const QString &)
 extern "C" Q_DECL_EXPORT
-void C_ZN27QVideoDeviceSelectorControl21selectedDeviceChangedERK7QString(void *this_, QString* deviceName) {
-  ((QVideoDeviceSelectorControl*)this_)->selectedDeviceChanged(*deviceName);
+void C_ZN27QVideoDeviceSelectorControl21selectedDeviceChangedERK7QString(void *this_, QString* name) {
+  ((QVideoDeviceSelectorControl*)this_)->selectedDeviceChanged(*name);
 }
 
 // Public Visibility=Default Availability=Available

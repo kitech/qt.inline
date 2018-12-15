@@ -106,26 +106,26 @@ public:
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:76
+// /usr/include/qt/QtGui/qsurface.h:80
 // [8] QSurfaceFormat format()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:77
+// /usr/include/qt/QtGui/qsurface.h:81
 // [8] QPlatformSurface * surfaceHandle()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:79
+// /usr/include/qt/QtGui/qsurface.h:83
 // [4] QSurface::SurfaceType surfaceType()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:82
+// /usr/include/qt/QtGui/qsurface.h:86
 // [8] QSize size()
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:72
+// /usr/include/qt/QtGui/qsurface.h:76
 // [-2] void ~QSurface()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSurfaceD2Ev(void *this_) {
   delete (QSurface*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:74
+// /usr/include/qt/QtGui/qsurface.h:78
 // [4] QSurface::SurfaceClass surfaceClass()
 extern "C" Q_DECL_EXPORT
 QSurface::SurfaceClass C_ZNK8QSurface12surfaceClassEv(void *this_) {
@@ -133,7 +133,7 @@ QSurface::SurfaceClass C_ZNK8QSurface12surfaceClassEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:76
+// /usr/include/qt/QtGui/qsurface.h:80
 // [8] QSurfaceFormat format()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSurface6formatEv(void *this_) {
@@ -142,7 +142,7 @@ return new QSurfaceFormat(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:77
+// /usr/include/qt/QtGui/qsurface.h:81
 // [8] QPlatformSurface * surfaceHandle()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSurface13surfaceHandleEv(void *this_) {
@@ -150,7 +150,7 @@ void* C_ZNK8QSurface13surfaceHandleEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:79
+// /usr/include/qt/QtGui/qsurface.h:83
 // [4] QSurface::SurfaceType surfaceType()
 extern "C" Q_DECL_EXPORT
 QSurface::SurfaceType C_ZNK8QSurface11surfaceTypeEv(void *this_) {
@@ -159,7 +159,7 @@ QSurface::SurfaceType C_ZNK8QSurface11surfaceTypeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qsurface.h:80
+// /usr/include/qt/QtGui/qsurface.h:84
 // [1] bool supportsOpenGL()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -169,7 +169,7 @@ bool C_ZNK8QSurface14supportsOpenGLEv(void *this_) {
 #endif // QT_VERSION >= 0x050300
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:82
+// /usr/include/qt/QtGui/qsurface.h:86
 // [8] QSize size()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSurface4sizeEv(void *this_) {

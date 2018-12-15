@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtCore/qpropertyanimation.h
 #ifndef protected
@@ -150,7 +151,7 @@ void* C_QPropertyAnimation_init_staticMetaObject(void* this_, void* strdat, void
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:69
+// /usr/include/qt/QtCore/qpropertyanimation.h:68
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN18QPropertyAnimation5eventEP6QEvent(void *this_, QEvent * event) {
@@ -158,7 +159,7 @@ bool C_ZN18QPropertyAnimation5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:70
+// /usr/include/qt/QtCore/qpropertyanimation.h:69
 // [-2] void updateCurrentValue(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(void *this_, QVariant* value) {
@@ -166,7 +167,7 @@ void C_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(void *this_, QVari
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:71
+// /usr/include/qt/QtCore/qpropertyanimation.h:70
 // [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
@@ -174,7 +175,7 @@ void C_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(void 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:53
+// /usr/include/qt/QtCore/qpropertyanimation.h:52
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QPropertyAnimation10metaObjectEv(void *this_) {
@@ -182,7 +183,7 @@ void* C_ZNK18QPropertyAnimation10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:53
+// /usr/include/qt/QtCore/qpropertyanimation.h:52
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QPropertyAnimation11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -190,7 +191,7 @@ void* C_ZN18QPropertyAnimation11qt_metacastEPKc(void *this_, const char * arg0) 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:53
+// /usr/include/qt/QtCore/qpropertyanimation.h:52
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN18QPropertyAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -198,7 +199,7 @@ int C_ZN18QPropertyAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, 
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:53
+// /usr/include/qt/QtCore/qpropertyanimation.h:52
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QPropertyAnimation2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -207,7 +208,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:53
+// /usr/include/qt/QtCore/qpropertyanimation.h:52
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QPropertyAnimation6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -216,7 +217,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:58
+// /usr/include/qt/QtCore/qpropertyanimation.h:57
 // [-2] void QPropertyAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QPropertyAnimationC2EP7QObject(QObject * parent) {
@@ -225,7 +226,7 @@ void* C_ZN18QPropertyAnimationC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:59
+// /usr/include/qt/QtCore/qpropertyanimation.h:58
 // [-2] void QPropertyAnimation(QObject *, const QByteArray &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * target, QByteArray* propertyName, QObject * parent) {
@@ -234,14 +235,14 @@ void* C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * target, QB
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:60
+// /usr/include/qt/QtCore/qpropertyanimation.h:59
 // [-2] void ~QPropertyAnimation()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QPropertyAnimationD2Ev(void *this_) {
   delete (QPropertyAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:62
+// /usr/include/qt/QtCore/qpropertyanimation.h:61
 // [8] QObject * targetObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QPropertyAnimation12targetObjectEv(void *this_) {
@@ -249,7 +250,7 @@ void* C_ZNK18QPropertyAnimation12targetObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:63
+// /usr/include/qt/QtCore/qpropertyanimation.h:62
 // [-2] void setTargetObject(QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QPropertyAnimation15setTargetObjectEP7QObject(void *this_, QObject * target) {
@@ -257,7 +258,7 @@ void C_ZN18QPropertyAnimation15setTargetObjectEP7QObject(void *this_, QObject * 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:65
+// /usr/include/qt/QtCore/qpropertyanimation.h:64
 // [8] QByteArray propertyName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QPropertyAnimation12propertyNameEv(void *this_) {
@@ -266,7 +267,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:66
+// /usr/include/qt/QtCore/qpropertyanimation.h:65
 // [-2] void setPropertyName(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, QByteArray* propertyName) {
@@ -289,4 +290,5 @@ void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, QByte
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

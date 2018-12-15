@@ -304,12 +304,15 @@ bool C_ZNK10QJsonValue6toBoolEb(void *this_, bool defaultValue) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtCore/qjsonvalue.h:131
 // [4] int toInt(int)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QJsonValue5toIntEi(void *this_, int defaultValue) {
   return (int)((QJsonValue*)this_)->toInt(defaultValue);
 }
+#endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:132

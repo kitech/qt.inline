@@ -668,6 +668,19 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
   }
 
 // Protected virtual Visibility=Default Availability=Available
+// [1] bool eventFilter(QObject *, QEvent *)
+  virtual bool eventFilter(QObject * object, QEvent * event)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // Bool Bool bool
+    } else {
+    return QAbstractItemView::eventFilter(object, event);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
   virtual QSize viewportSizeHint() const override {
     int handled = 0;
@@ -1024,16 +1037,21 @@ void C_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(void *this_,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtWidgets/qabstractitemview.h:355
+// /usr/include/qt/QtWidgets/qabstractitemview.h:349
+// [1] bool eventFilter(QObject *, QEvent *)
+extern "C" Q_DECL_EXPORT
+bool C_ZN17QAbstractItemView11eventFilterEP7QObjectP6QEvent(void *this_, QObject * object, QEvent * event) {
+  return (bool)((QAbstractItemView*)this_)->QAbstractItemView::eventFilter(object, event);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qabstractitemview.h:356
 // [8] QSize viewportSizeHint()
-#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QAbstractItemView16viewportSizeHintEv(void *this_) {
   auto rv = ((QAbstractItemView*)this_)->QAbstractItemView::viewportSizeHint();
 return new QSize(rv);
 }
-#endif // QT_VERSION >= 0x050200
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:63

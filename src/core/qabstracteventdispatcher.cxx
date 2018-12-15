@@ -273,28 +273,28 @@ void* C_QAbstractEventDispatcher_init_staticMetaObject(void* this_, void* strdat
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:82
 // [-2] void unregisterSocketNotifier(QSocketNotifier *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:91
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:92
 // [-2] void registerTimer(int, int, Qt::TimerType, QObject *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:92
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:93
 // [1] bool unregisterTimer(int)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:93
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:94
 // [1] bool unregisterTimers(QObject *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:94
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:95
 // [-2] QList<QAbstractEventDispatcher::TimerInfo> registeredTimers(QObject *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:96
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:97
 // [4] int remainingTime(int)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:103
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:104
 // [-2] void wakeUp()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:104
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:105
 // [-2] void interrupt()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:105
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:106
 // [-2] void flush()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:58
@@ -394,7 +394,7 @@ void C_ZN24QAbstractEventDispatcher24unregisterSocketNotifierEP15QSocketNotifier
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:90
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:91
 // [4] int registerTimer(int, Qt::TimerType, QObject *)
 extern "C" Q_DECL_EXPORT
 int C_ZN24QAbstractEventDispatcher13registerTimerEiN2Qt9TimerTypeEP7QObject(void *this_, int interval, Qt::TimerType timerType, QObject * object) {
@@ -402,7 +402,7 @@ int C_ZN24QAbstractEventDispatcher13registerTimerEiN2Qt9TimerTypeEP7QObject(void
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:91
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:92
 // [-2] void registerTimer(int, int, Qt::TimerType, QObject *)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher13registerTimerEiiN2Qt9TimerTypeEP7QObject(void *this_, int timerId, int interval, Qt::TimerType timerType, QObject * object) {
@@ -410,7 +410,7 @@ void C_ZN24QAbstractEventDispatcher13registerTimerEiiN2Qt9TimerTypeEP7QObject(vo
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:92
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:93
 // [1] bool unregisterTimer(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractEventDispatcher15unregisterTimerEi(void *this_, int timerId) {
@@ -418,7 +418,7 @@ bool C_ZN24QAbstractEventDispatcher15unregisterTimerEi(void *this_, int timerId)
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:93
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:94
 // [1] bool unregisterTimers(QObject *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN24QAbstractEventDispatcher16unregisterTimersEP7QObject(void *this_, QObject * object) {
@@ -426,7 +426,7 @@ bool C_ZN24QAbstractEventDispatcher16unregisterTimersEP7QObject(void *this_, QOb
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:94
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:95
 // [-2] QList<QAbstractEventDispatcher::TimerInfo> registeredTimers(QObject *)
 extern "C" Q_DECL_EXPORT
 QList<QAbstractEventDispatcher::TimerInfo>* C_ZNK24QAbstractEventDispatcher16registeredTimersEP7QObject(void *this_, QObject * object) {
@@ -435,7 +435,7 @@ return new QList<QAbstractEventDispatcher::TimerInfo>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:96
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:97
 // [4] int remainingTime(int)
 extern "C" Q_DECL_EXPORT
 int C_ZN24QAbstractEventDispatcher13remainingTimeEi(void *this_, int timerId) {
@@ -443,7 +443,7 @@ int C_ZN24QAbstractEventDispatcher13remainingTimeEi(void *this_, int timerId) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:103
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:104
 // [-2] void wakeUp()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher6wakeUpEv(void *this_) {
@@ -451,7 +451,7 @@ void C_ZN24QAbstractEventDispatcher6wakeUpEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:104
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:105
 // [-2] void interrupt()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher9interruptEv(void *this_) {
@@ -459,7 +459,7 @@ void C_ZN24QAbstractEventDispatcher9interruptEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:105
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:106
 // [-2] void flush()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher5flushEv(void *this_) {
@@ -467,7 +467,7 @@ void C_ZN24QAbstractEventDispatcher5flushEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:107
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:108
 // [-2] void startingUp()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher10startingUpEv(void *this_) {
@@ -475,7 +475,7 @@ void C_ZN24QAbstractEventDispatcher10startingUpEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:108
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:109
 // [-2] void closingDown()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher11closingDownEv(void *this_) {
@@ -484,7 +484,7 @@ void C_ZN24QAbstractEventDispatcher11closingDownEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:110
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:111
 // [-2] void installNativeEventFilter(QAbstractNativeEventFilter *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -495,7 +495,7 @@ void C_ZN24QAbstractEventDispatcher24installNativeEventFilterEP26QAbstractNative
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:111
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:112
 // [-2] void removeNativeEventFilter(QAbstractNativeEventFilter *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -506,7 +506,7 @@ void C_ZN24QAbstractEventDispatcher23removeNativeEventFilterEP26QAbstractNativeE
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:112
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:113
 // [1] bool filterNativeEvent(const QByteArray &, void *, long *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -516,7 +516,7 @@ bool C_ZN24QAbstractEventDispatcher17filterNativeEventERK10QByteArrayPvPl(void *
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:119
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:120
 // [-2] void aboutToBlock()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher12aboutToBlockEv(void *this_) {
@@ -524,7 +524,7 @@ void C_ZN24QAbstractEventDispatcher12aboutToBlockEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstracteventdispatcher.h:120
+// /usr/include/qt/QtCore/qabstracteventdispatcher.h:121
 // [-2] void awake()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QAbstractEventDispatcher5awakeEv(void *this_) {

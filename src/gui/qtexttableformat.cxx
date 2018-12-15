@@ -53,7 +53,7 @@ MyQTextTableFormat() : QTextTableFormat() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:887
+// /usr/include/qt/QtGui/qtextformat.h:901
 // [-2] void QTextTableFormat()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextTableFormatC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN16QTextTableFormatC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:889
+// /usr/include/qt/QtGui/qtextformat.h:903
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QTextTableFormat7isValidEv(void *this_) {
@@ -69,7 +69,7 @@ bool C_ZNK16QTextTableFormat7isValidEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:891
+// /usr/include/qt/QtGui/qtextformat.h:905
 // [4] int columns()
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QTextTableFormat7columnsEv(void *this_) {
@@ -77,7 +77,7 @@ int C_ZNK16QTextTableFormat7columnsEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:893
+// /usr/include/qt/QtGui/qtextformat.h:907
 // [-2] void setColumns(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat10setColumnsEi(void *this_, int columns) {
@@ -85,7 +85,7 @@ void C_ZN16QTextTableFormat10setColumnsEi(void *this_, int columns) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:895
+// /usr/include/qt/QtGui/qtextformat.h:909
 // [-2] void setColumnWidthConstraints(const QVector<QTextLength> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat25setColumnWidthConstraintsERK7QVectorI11QTextLengthE(void *this_, QVector<QTextLength>* constraints) {
@@ -93,7 +93,7 @@ void C_ZN16QTextTableFormat25setColumnWidthConstraintsERK7QVectorI11QTextLengthE
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:898
+// /usr/include/qt/QtGui/qtextformat.h:912
 // [8] QVector<QTextLength> columnWidthConstraints()
 extern "C" Q_DECL_EXPORT
 void C_ZNK16QTextTableFormat22columnWidthConstraintsEv(void *this_) {
@@ -102,7 +102,7 @@ void C_ZNK16QTextTableFormat22columnWidthConstraintsEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:901
+// /usr/include/qt/QtGui/qtextformat.h:915
 // [-2] void clearColumnWidthConstraints()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat27clearColumnWidthConstraintsEv(void *this_) {
@@ -110,7 +110,7 @@ void C_ZN16QTextTableFormat27clearColumnWidthConstraintsEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:904
+// /usr/include/qt/QtGui/qtextformat.h:918
 // [8] qreal cellSpacing()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextTableFormat11cellSpacingEv(void *this_) {
@@ -118,7 +118,7 @@ qreal C_ZNK16QTextTableFormat11cellSpacingEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:906
+// /usr/include/qt/QtGui/qtextformat.h:920
 // [-2] void setCellSpacing(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat14setCellSpacingEd(void *this_, qreal spacing) {
@@ -126,7 +126,7 @@ void C_ZN16QTextTableFormat14setCellSpacingEd(void *this_, qreal spacing) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:909
+// /usr/include/qt/QtGui/qtextformat.h:923
 // [8] qreal cellPadding()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextTableFormat11cellPaddingEv(void *this_) {
@@ -134,7 +134,7 @@ qreal C_ZNK16QTextTableFormat11cellPaddingEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:911
+// /usr/include/qt/QtGui/qtextformat.h:925
 // [-2] void setCellPadding(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat14setCellPaddingEd(void *this_, qreal padding) {
@@ -142,7 +142,7 @@ void C_ZN16QTextTableFormat14setCellPaddingEd(void *this_, qreal padding) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:913
+// /usr/include/qt/QtGui/qtextformat.h:927
 // [-2] void setAlignment(Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextTableFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
@@ -150,7 +150,7 @@ void C_ZN16QTextTableFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *th
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:914
+// /usr/include/qt/QtGui/qtextformat.h:928
 // [4] Qt::Alignment alignment()
 extern "C" Q_DECL_EXPORT
 Qt::Alignment C_ZNK16QTextTableFormat9alignmentEv(void *this_) {
@@ -159,7 +159,7 @@ Qt::Alignment C_ZNK16QTextTableFormat9alignmentEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qtextformat.h:917
+// /usr/include/qt/QtGui/qtextformat.h:931
 // [-2] void setHeaderRowCount(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -170,7 +170,7 @@ void C_ZN16QTextTableFormat17setHeaderRowCountEi(void *this_, int count) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qtextformat.h:919
+// /usr/include/qt/QtGui/qtextformat.h:933
 // [4] int headerRowCount()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT

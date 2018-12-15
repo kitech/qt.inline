@@ -261,20 +261,26 @@ bool C_ZNK9QGlyphRun13isRightToLeftEv(void *this_) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:108
 // [-2] void setFlag(QGlyphRun::GlyphRunFlag, bool)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGlyphRun7setFlagENS_12GlyphRunFlagEb(void *this_, QGlyphRun::GlyphRunFlag flag, bool enabled) {
   ((QGlyphRun*)this_)->setFlag(flag, enabled);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
+// since 5.0
 // /usr/include/qt/QtGui/qglyphrun.h:109
 // [-2] void setFlags(QGlyphRun::GlyphRunFlags)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE(void *this_, QFlags<QGlyphRun::GlyphRunFlag> flags) {
   ((QGlyphRun*)this_)->setFlags(flags);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
 // since 5.0

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050600
 // /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h
 #ifndef protected
 #define protected public

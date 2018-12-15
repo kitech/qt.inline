@@ -53,7 +53,7 @@ MyQSGTransformNode() : QSGTransformNode() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:284
+// /usr/include/qt/QtQuick/qsgnode.h:279
 // [-2] void QSGTransformNode()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QSGTransformNodeC2Ev() {
@@ -61,14 +61,14 @@ void* C_ZN16QSGTransformNodeC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:285
+// /usr/include/qt/QtQuick/qsgnode.h:280
 // [-2] void ~QSGTransformNode()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGTransformNodeD2Ev(void *this_) {
   delete (QSGTransformNode*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:287
+// /usr/include/qt/QtQuick/qsgnode.h:282
 // [-2] void setMatrix(const QMatrix4x4 &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGTransformNode9setMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
@@ -76,7 +76,7 @@ void C_ZN16QSGTransformNode9setMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* ma
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:288
+// /usr/include/qt/QtQuick/qsgnode.h:283
 // [68] const QMatrix4x4 & matrix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QSGTransformNode6matrixEv(void *this_) {
@@ -85,7 +85,7 @@ return new QMatrix4x4(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:290
+// /usr/include/qt/QtQuick/qsgnode.h:285
 // [-2] void setCombinedMatrix(const QMatrix4x4 &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QSGTransformNode17setCombinedMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
@@ -93,7 +93,7 @@ void C_ZN16QSGTransformNode17setCombinedMatrixERK10QMatrix4x4(void *this_, QMatr
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:291
+// /usr/include/qt/QtQuick/qsgnode.h:286
 // [68] const QMatrix4x4 & combinedMatrix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QSGTransformNode14combinedMatrixEv(void *this_) {

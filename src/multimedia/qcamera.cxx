@@ -505,8 +505,8 @@ void C_ZN7QCamera6unlockE6QFlagsINS_8LockTypeEE(void *this_, QFlags<QCamera::Loc
 // /usr/include/qt/QtMultimedia/qcamera.h:235
 // [-2] void stateChanged(QCamera::State)
 extern "C" Q_DECL_EXPORT
-void C_ZN7QCamera12stateChangedENS_5StateE(void *this_, QCamera::State arg0) {
-  ((QCamera*)this_)->stateChanged(arg0);
+void C_ZN7QCamera12stateChangedENS_5StateE(void *this_, QCamera::State state) {
+  ((QCamera*)this_)->stateChanged(state);
 }
 
 // Public Visibility=Default Availability=Available
@@ -521,8 +521,8 @@ void C_ZN7QCamera18captureModeChangedE6QFlagsINS_11CaptureModeEE(void *this_, QF
 // /usr/include/qt/QtMultimedia/qcamera.h:237
 // [-2] void statusChanged(QCamera::Status)
 extern "C" Q_DECL_EXPORT
-void C_ZN7QCamera13statusChangedENS_6StatusE(void *this_, QCamera::Status arg0) {
-  ((QCamera*)this_)->statusChanged(arg0);
+void C_ZN7QCamera13statusChangedENS_6StatusE(void *this_, QCamera::Status status) {
+  ((QCamera*)this_)->statusChanged(status);
 }
 
 // Public Visibility=Default Availability=Available
@@ -545,16 +545,16 @@ void C_ZN7QCamera10lockFailedEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qcamera.h:242
 // [-2] void lockStatusChanged(QCamera::LockStatus, QCamera::LockChangeReason)
 extern "C" Q_DECL_EXPORT
-void C_ZN7QCamera17lockStatusChangedENS_10LockStatusENS_16LockChangeReasonE(void *this_, QCamera::LockStatus arg0, QCamera::LockChangeReason arg1) {
-  ((QCamera*)this_)->lockStatusChanged(arg0, arg1);
+void C_ZN7QCamera17lockStatusChangedENS_10LockStatusENS_16LockChangeReasonE(void *this_, QCamera::LockStatus status, QCamera::LockChangeReason reason) {
+  ((QCamera*)this_)->lockStatusChanged(status, reason);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:243
 // [-2] void lockStatusChanged(QCamera::LockType, QCamera::LockStatus, QCamera::LockChangeReason)
 extern "C" Q_DECL_EXPORT
-void C_ZN7QCamera17lockStatusChangedENS_8LockTypeENS_10LockStatusENS_16LockChangeReasonE(void *this_, QCamera::LockType arg0, QCamera::LockStatus arg1, QCamera::LockChangeReason arg2) {
-  ((QCamera*)this_)->lockStatusChanged(arg0, arg1, arg2);
+void C_ZN7QCamera17lockStatusChangedENS_8LockTypeENS_10LockStatusENS_16LockChangeReasonE(void *this_, QCamera::LockType lock, QCamera::LockStatus status, QCamera::LockChangeReason reason) {
+  ((QCamera*)this_)->lockStatusChanged(lock, status, reason);
 }
 
 // Public Visibility=Default Availability=Available

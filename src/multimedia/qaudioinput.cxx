@@ -333,8 +333,8 @@ QAudio::State C_ZNK11QAudioInput5stateEv(void *this_) {
 // /usr/include/qt/QtMultimedia/qaudioinput.h:98
 // [-2] void stateChanged(QAudio::State)
 extern "C" Q_DECL_EXPORT
-void C_ZN11QAudioInput12stateChangedEN6QAudio5StateE(void *this_, QAudio::State arg0) {
-  ((QAudioInput*)this_)->stateChanged(arg0);
+void C_ZN11QAudioInput12stateChangedEN6QAudio5StateE(void *this_, QAudio::State state) {
+  ((QAudioInput*)this_)->stateChanged(state);
 }
 
 // Public Visibility=Default Availability=Available

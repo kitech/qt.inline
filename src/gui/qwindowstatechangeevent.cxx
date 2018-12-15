@@ -53,7 +53,7 @@ MyQWindowStateChangeEvent(QFlags<Qt::WindowState> aOldState, bool isOverride) : 
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:783
+// /usr/include/qt/QtGui/qevent.h:788
 // [-2] void QWindowStateChangeEvent(Qt::WindowStates, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(QFlags<Qt::WindowState> aOldState, bool isOverride) {
@@ -61,14 +61,14 @@ void* C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(QFlags<Qt::Wi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:784
+// /usr/include/qt/QtGui/qevent.h:789
 // [-2] void ~QWindowStateChangeEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN23QWindowStateChangeEventD2Ev(void *this_) {
   delete (QWindowStateChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:786
+// /usr/include/qt/QtGui/qevent.h:791
 // [4] Qt::WindowStates oldState()
 extern "C" Q_DECL_EXPORT
 Qt::WindowStates C_ZNK23QWindowStateChangeEvent8oldStateEv(void *this_) {
@@ -76,7 +76,7 @@ Qt::WindowStates C_ZNK23QWindowStateChangeEvent8oldStateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:787
+// /usr/include/qt/QtGui/qevent.h:792
 // [1] bool isOverride()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK23QWindowStateChangeEvent10isOverrideEv(void *this_) {

@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected
 #define protected public
@@ -53,7 +54,7 @@ MyQModelIndex() : QModelIndex() {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:58
+// /usr/include/qt/QtCore/qabstractitemmodel.h:60
 // [-2] void QModelIndex()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QModelIndexC2Ev() {
@@ -61,7 +62,7 @@ void* C_ZN11QModelIndexC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:60
+// /usr/include/qt/QtCore/qabstractitemmodel.h:62
 // [4] int row()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QModelIndex3rowEv(void *this_) {
@@ -69,7 +70,7 @@ int C_ZNK11QModelIndex3rowEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:61
+// /usr/include/qt/QtCore/qabstractitemmodel.h:63
 // [4] int column()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QModelIndex6columnEv(void *this_) {
@@ -77,7 +78,7 @@ int C_ZNK11QModelIndex6columnEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:62
+// /usr/include/qt/QtCore/qabstractitemmodel.h:64
 // [8] quintptr internalId()
 extern "C" Q_DECL_EXPORT
 quintptr C_ZNK11QModelIndex10internalIdEv(void *this_) {
@@ -85,7 +86,7 @@ quintptr C_ZNK11QModelIndex10internalIdEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:63
+// /usr/include/qt/QtCore/qabstractitemmodel.h:65
 // [8] void * internalPointer()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QModelIndex15internalPointerEv(void *this_) {
@@ -93,7 +94,7 @@ void* C_ZNK11QModelIndex15internalPointerEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:64
+// /usr/include/qt/QtCore/qabstractitemmodel.h:66
 // [24] QModelIndex parent()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QModelIndex6parentEv(void *this_) {
@@ -102,7 +103,7 @@ return new QModelIndex(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:65
+// /usr/include/qt/QtCore/qabstractitemmodel.h:67
 // [24] QModelIndex sibling(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QModelIndex7siblingEii(void *this_, int row, int column) {
@@ -111,7 +112,31 @@ return new QModelIndex(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:67
+// since 5.11
+// /usr/include/qt/QtCore/qabstractitemmodel.h:68
+// [24] QModelIndex siblingAtColumn(int)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QModelIndex15siblingAtColumnEi(void *this_, int column) {
+  auto rv = ((QModelIndex*)this_)->siblingAtColumn(column);
+return new QModelIndex(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public inline Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtCore/qabstractitemmodel.h:69
+// [24] QModelIndex siblingAtRow(int)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK11QModelIndex12siblingAtRowEi(void *this_, int row) {
+  auto rv = ((QModelIndex*)this_)->siblingAtRow(row);
+return new QModelIndex(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:71
 // [24] QModelIndex child(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QModelIndex5childEii(void *this_, int row, int column) {
@@ -120,7 +145,7 @@ return new QModelIndex(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:69
+// /usr/include/qt/QtCore/qabstractitemmodel.h:73
 // [16] QVariant data(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QModelIndex4dataEi(void *this_, int role) {
@@ -130,7 +155,7 @@ return new QVariant(rv);
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtCore/qabstractitemmodel.h:70
+// /usr/include/qt/QtCore/qabstractitemmodel.h:74
 // [4] Qt::ItemFlags flags()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -140,7 +165,7 @@ Qt::ItemFlags C_ZNK11QModelIndex5flagsEv(void *this_) {
 #endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:71
+// /usr/include/qt/QtCore/qabstractitemmodel.h:75
 // [8] const QAbstractItemModel * model()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QModelIndex5modelEv(void *this_) {
@@ -148,7 +173,7 @@ void* C_ZNK11QModelIndex5modelEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:72
+// /usr/include/qt/QtCore/qabstractitemmodel.h:76
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndex7isValidEv(void *this_) {
@@ -156,7 +181,7 @@ bool C_ZNK11QModelIndex7isValidEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:73
+// /usr/include/qt/QtCore/qabstractitemmodel.h:77
 // [1] bool operator==(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndexeqERKS_(void *this_, QModelIndex* other) {
@@ -164,7 +189,7 @@ bool C_ZNK11QModelIndexeqERKS_(void *this_, QModelIndex* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:75
+// /usr/include/qt/QtCore/qabstractitemmodel.h:79
 // [1] bool operator!=(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndexneERKS_(void *this_, QModelIndex* other) {
@@ -172,7 +197,7 @@ bool C_ZNK11QModelIndexneERKS_(void *this_, QModelIndex* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:77
+// /usr/include/qt/QtCore/qabstractitemmodel.h:81
 // [1] bool operator<(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QModelIndexltERKS_(void *this_, QModelIndex* other) {
@@ -200,4 +225,5 @@ void C_ZN11QModelIndexD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

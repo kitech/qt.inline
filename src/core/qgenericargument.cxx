@@ -53,7 +53,7 @@ MyQGenericArgument(const char * aName, const void * aData) : QGenericArgument(aN
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:297
+// /usr/include/qt/QtCore/qobjectdefs.h:292
 // [-2] void QGenericArgument(const char *, const void *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QGenericArgumentC2EPKcPKv(const char * aName, const void * aData) {
@@ -61,7 +61,7 @@ void* C_ZN16QGenericArgumentC2EPKcPKv(const char * aName, const void * aData) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:299
+// /usr/include/qt/QtCore/qobjectdefs.h:294
 // [8] void * data()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QGenericArgument4dataEv(void *this_) {
@@ -69,7 +69,7 @@ void* C_ZNK16QGenericArgument4dataEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:300
+// /usr/include/qt/QtCore/qobjectdefs.h:295
 // [8] const char * name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QGenericArgument4nameEv(void *this_) {

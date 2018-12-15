@@ -149,7 +149,7 @@ void* C_QAbstractSocket_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:212
+// /usr/include/qt/QtNetwork/qabstractsocket.h:213
 // [8] qint64 readData(char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN15QAbstractSocket8readDataEPcx(void *this_, char * data, qint64 maxlen) {
@@ -157,7 +157,7 @@ qint64 C_ZN15QAbstractSocket8readDataEPcx(void *this_, char * data, qint64 maxle
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:213
+// /usr/include/qt/QtNetwork/qabstractsocket.h:214
 // [8] qint64 readLineData(char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN15QAbstractSocket12readLineDataEPcx(void *this_, char * data, qint64 maxlen) {
@@ -165,7 +165,7 @@ qint64 C_ZN15QAbstractSocket12readLineDataEPcx(void *this_, char * data, qint64 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:214
+// /usr/include/qt/QtNetwork/qabstractsocket.h:215
 // [8] qint64 writeData(const char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN15QAbstractSocket9writeDataEPKcx(void *this_, const char * data, qint64 len_) {
@@ -215,7 +215,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:139
+// /usr/include/qt/QtNetwork/qabstractsocket.h:140
 // [-2] void QAbstractSocket(QAbstractSocket::SocketType, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QAbstractSocketC2ENS_10SocketTypeEP7QObject(QAbstractSocket::SocketType socketType, QObject * parent) {
@@ -224,7 +224,7 @@ void* C_ZN15QAbstractSocketC2ENS_10SocketTypeEP7QObject(QAbstractSocket::SocketT
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:140
+// /usr/include/qt/QtNetwork/qabstractsocket.h:141
 // [-2] void ~QAbstractSocket()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocketD2Ev(void *this_) {
@@ -232,7 +232,7 @@ void C_ZN15QAbstractSocketD2Ev(void *this_) {
 }
 // Public virtual Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtNetwork/qabstractsocket.h:142
+// /usr/include/qt/QtNetwork/qabstractsocket.h:143
 // [-2] void resume()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -243,7 +243,7 @@ void C_ZN15QAbstractSocket6resumeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtNetwork/qabstractsocket.h:143
+// /usr/include/qt/QtNetwork/qabstractsocket.h:144
 // [4] QAbstractSocket::PauseModes pauseMode()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -254,31 +254,40 @@ return new QAbstractSocket::PauseModes(rv);
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:144
+// since 5.0
+// /usr/include/qt/QtNetwork/qabstractsocket.h:145
 // [-2] void setPauseMode(QAbstractSocket::PauseModes)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket12setPauseModeE6QFlagsINS_9PauseModeEE(void *this_, QFlags<QAbstractSocket::PauseMode> pauseMode) {
   ((QAbstractSocket*)this_)->setPauseMode(pauseMode);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:147
+// since 5.0
+// /usr/include/qt/QtNetwork/qabstractsocket.h:148
 // [1] bool bind(const QHostAddress &, quint16, QAbstractSocket::BindMode)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket4bindERK12QHostAddresst6QFlagsINS_8BindFlagEE(void *this_, QHostAddress* address, quint16 port, QFlags<QAbstractSocket::BindFlag> mode) {
   return (bool)((QAbstractSocket*)this_)->bind(*address, port, mode);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:148
+// since 5.0
+// /usr/include/qt/QtNetwork/qabstractsocket.h:149
 // [1] bool bind(quint16, QAbstractSocket::BindMode)
+#if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket4bindEt6QFlagsINS_8BindFlagEE(void *this_, quint16 port, QFlags<QAbstractSocket::BindFlag> mode) {
   return (bool)((QAbstractSocket*)this_)->bind(port, mode);
 }
+#endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:151
+// /usr/include/qt/QtNetwork/qabstractsocket.h:152
 // [-2] void connectToHost(const QString &, quint16, QIODevice::OpenMode, QAbstractSocket::NetworkLayerProtocol)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket13connectToHostERK7QStringt6QFlagsIN9QIODevice12OpenModeFlagEENS_20NetworkLayerProtocolE(void *this_, QString* hostName, quint16 port, QFlags<QIODevice::OpenModeFlag> mode, QAbstractSocket::NetworkLayerProtocol protocol) {
@@ -286,7 +295,7 @@ void C_ZN15QAbstractSocket13connectToHostERK7QStringt6QFlagsIN9QIODevice12OpenMo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:152
+// /usr/include/qt/QtNetwork/qabstractsocket.h:153
 // [-2] void connectToHost(const QHostAddress &, quint16, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket13connectToHostERK12QHostAddresst6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QHostAddress* address, quint16 port, QFlags<QIODevice::OpenModeFlag> mode) {
@@ -294,7 +303,7 @@ void C_ZN15QAbstractSocket13connectToHostERK12QHostAddresst6QFlagsIN9QIODevice12
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:153
+// /usr/include/qt/QtNetwork/qabstractsocket.h:154
 // [-2] void disconnectFromHost()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket18disconnectFromHostEv(void *this_) {
@@ -302,7 +311,7 @@ void C_ZN15QAbstractSocket18disconnectFromHostEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:155
+// /usr/include/qt/QtNetwork/qabstractsocket.h:156
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QAbstractSocket7isValidEv(void *this_) {
@@ -310,7 +319,7 @@ bool C_ZNK15QAbstractSocket7isValidEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:157
+// /usr/include/qt/QtNetwork/qabstractsocket.h:158
 // [8] qint64 bytesAvailable()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK15QAbstractSocket14bytesAvailableEv(void *this_) {
@@ -318,7 +327,7 @@ qint64 C_ZNK15QAbstractSocket14bytesAvailableEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:158
+// /usr/include/qt/QtNetwork/qabstractsocket.h:159
 // [8] qint64 bytesToWrite()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK15QAbstractSocket12bytesToWriteEv(void *this_) {
@@ -326,7 +335,7 @@ qint64 C_ZNK15QAbstractSocket12bytesToWriteEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:160
+// /usr/include/qt/QtNetwork/qabstractsocket.h:161
 // [1] bool canReadLine()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QAbstractSocket11canReadLineEv(void *this_) {
@@ -334,7 +343,7 @@ bool C_ZNK15QAbstractSocket11canReadLineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:162
+// /usr/include/qt/QtNetwork/qabstractsocket.h:163
 // [2] quint16 localPort()
 extern "C" Q_DECL_EXPORT
 quint16 C_ZNK15QAbstractSocket9localPortEv(void *this_) {
@@ -342,7 +351,7 @@ quint16 C_ZNK15QAbstractSocket9localPortEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:163
+// /usr/include/qt/QtNetwork/qabstractsocket.h:164
 // [8] QHostAddress localAddress()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QAbstractSocket12localAddressEv(void *this_) {
@@ -351,7 +360,7 @@ return new QHostAddress(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:164
+// /usr/include/qt/QtNetwork/qabstractsocket.h:165
 // [2] quint16 peerPort()
 extern "C" Q_DECL_EXPORT
 quint16 C_ZNK15QAbstractSocket8peerPortEv(void *this_) {
@@ -359,7 +368,7 @@ quint16 C_ZNK15QAbstractSocket8peerPortEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:165
+// /usr/include/qt/QtNetwork/qabstractsocket.h:166
 // [8] QHostAddress peerAddress()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QAbstractSocket11peerAddressEv(void *this_) {
@@ -368,7 +377,7 @@ return new QHostAddress(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:166
+// /usr/include/qt/QtNetwork/qabstractsocket.h:167
 // [8] QString peerName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QAbstractSocket8peerNameEv(void *this_) {
@@ -377,7 +386,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:168
+// /usr/include/qt/QtNetwork/qabstractsocket.h:169
 // [8] qint64 readBufferSize()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK15QAbstractSocket14readBufferSizeEv(void *this_) {
@@ -385,7 +394,7 @@ qint64 C_ZNK15QAbstractSocket14readBufferSizeEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:169
+// /usr/include/qt/QtNetwork/qabstractsocket.h:170
 // [-2] void setReadBufferSize(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket17setReadBufferSizeEx(void *this_, qint64 size) {
@@ -393,7 +402,7 @@ void C_ZN15QAbstractSocket17setReadBufferSizeEx(void *this_, qint64 size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:171
+// /usr/include/qt/QtNetwork/qabstractsocket.h:172
 // [-2] void abort()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket5abortEv(void *this_) {
@@ -401,7 +410,7 @@ void C_ZN15QAbstractSocket5abortEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:173
+// /usr/include/qt/QtNetwork/qabstractsocket.h:174
 // [8] qintptr socketDescriptor()
 extern "C" Q_DECL_EXPORT
 qintptr C_ZNK15QAbstractSocket16socketDescriptorEv(void *this_) {
@@ -409,7 +418,7 @@ qintptr C_ZNK15QAbstractSocket16socketDescriptorEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:174
+// /usr/include/qt/QtNetwork/qabstractsocket.h:175
 // [1] bool setSocketDescriptor(qintptr, QAbstractSocket::SocketState, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket19setSocketDescriptorExNS_11SocketStateE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, qintptr socketDescriptor, QAbstractSocket::SocketState state, QFlags<QIODevice::OpenModeFlag> openMode) {
@@ -418,7 +427,7 @@ bool C_ZN15QAbstractSocket19setSocketDescriptorExNS_11SocketStateE6QFlagsIN9QIOD
 
 // Public virtual Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtNetwork/qabstractsocket.h:177
+// /usr/include/qt/QtNetwork/qabstractsocket.h:178
 // [-2] void setSocketOption(QAbstractSocket::SocketOption, const QVariant &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -429,7 +438,7 @@ void C_ZN15QAbstractSocket15setSocketOptionENS_12SocketOptionERK8QVariant(void *
 
 // Public virtual Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtNetwork/qabstractsocket.h:178
+// /usr/include/qt/QtNetwork/qabstractsocket.h:179
 // [16] QVariant socketOption(QAbstractSocket::SocketOption)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -440,7 +449,7 @@ return new QVariant(rv);
 #endif // QT_VERSION >= 0x040600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:180
+// /usr/include/qt/QtNetwork/qabstractsocket.h:181
 // [4] QAbstractSocket::SocketType socketType()
 extern "C" Q_DECL_EXPORT
 QAbstractSocket::SocketType C_ZNK15QAbstractSocket10socketTypeEv(void *this_) {
@@ -448,7 +457,7 @@ QAbstractSocket::SocketType C_ZNK15QAbstractSocket10socketTypeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:181
+// /usr/include/qt/QtNetwork/qabstractsocket.h:182
 // [4] QAbstractSocket::SocketState state()
 extern "C" Q_DECL_EXPORT
 QAbstractSocket::SocketState C_ZNK15QAbstractSocket5stateEv(void *this_) {
@@ -456,7 +465,7 @@ QAbstractSocket::SocketState C_ZNK15QAbstractSocket5stateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:182
+// /usr/include/qt/QtNetwork/qabstractsocket.h:183
 // [4] QAbstractSocket::SocketError error()
 extern "C" Q_DECL_EXPORT
 QAbstractSocket::SocketError C_ZNK15QAbstractSocket5errorEv(void *this_) {
@@ -464,7 +473,7 @@ QAbstractSocket::SocketError C_ZNK15QAbstractSocket5errorEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:185
+// /usr/include/qt/QtNetwork/qabstractsocket.h:186
 // [-2] void close()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket5closeEv(void *this_) {
@@ -472,7 +481,7 @@ void C_ZN15QAbstractSocket5closeEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:186
+// /usr/include/qt/QtNetwork/qabstractsocket.h:187
 // [1] bool isSequential()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QAbstractSocket12isSequentialEv(void *this_) {
@@ -480,7 +489,7 @@ bool C_ZNK15QAbstractSocket12isSequentialEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:187
+// /usr/include/qt/QtNetwork/qabstractsocket.h:188
 // [1] bool atEnd()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QAbstractSocket5atEndEv(void *this_) {
@@ -488,7 +497,7 @@ bool C_ZNK15QAbstractSocket5atEndEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:188
+// /usr/include/qt/QtNetwork/qabstractsocket.h:189
 // [1] bool flush()
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket5flushEv(void *this_) {
@@ -496,7 +505,7 @@ bool C_ZN15QAbstractSocket5flushEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:191
+// /usr/include/qt/QtNetwork/qabstractsocket.h:192
 // [1] bool waitForConnected(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket16waitForConnectedEi(void *this_, int msecs) {
@@ -504,7 +513,7 @@ bool C_ZN15QAbstractSocket16waitForConnectedEi(void *this_, int msecs) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:192
+// /usr/include/qt/QtNetwork/qabstractsocket.h:193
 // [1] bool waitForReadyRead(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket16waitForReadyReadEi(void *this_, int msecs) {
@@ -512,7 +521,7 @@ bool C_ZN15QAbstractSocket16waitForReadyReadEi(void *this_, int msecs) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:193
+// /usr/include/qt/QtNetwork/qabstractsocket.h:194
 // [1] bool waitForBytesWritten(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket19waitForBytesWrittenEi(void *this_, int msecs) {
@@ -520,7 +529,7 @@ bool C_ZN15QAbstractSocket19waitForBytesWrittenEi(void *this_, int msecs) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:194
+// /usr/include/qt/QtNetwork/qabstractsocket.h:195
 // [1] bool waitForDisconnected(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QAbstractSocket19waitForDisconnectedEi(void *this_, int msecs) {
@@ -529,7 +538,7 @@ bool C_ZN15QAbstractSocket19waitForDisconnectedEi(void *this_, int msecs) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtNetwork/qabstractsocket.h:197
+// /usr/include/qt/QtNetwork/qabstractsocket.h:198
 // [-2] void setProxy(const QNetworkProxy &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -540,7 +549,7 @@ void C_ZN15QAbstractSocket8setProxyERK13QNetworkProxy(void *this_, QNetworkProxy
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtNetwork/qabstractsocket.h:198
+// /usr/include/qt/QtNetwork/qabstractsocket.h:199
 // [8] QNetworkProxy proxy()
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -551,7 +560,7 @@ return new QNetworkProxy(rv);
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:202
+// /usr/include/qt/QtNetwork/qabstractsocket.h:203
 // [-2] void hostFound()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket9hostFoundEv(void *this_) {
@@ -559,7 +568,7 @@ void C_ZN15QAbstractSocket9hostFoundEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:203
+// /usr/include/qt/QtNetwork/qabstractsocket.h:204
 // [-2] void connected()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket9connectedEv(void *this_) {
@@ -567,7 +576,7 @@ void C_ZN15QAbstractSocket9connectedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:204
+// /usr/include/qt/QtNetwork/qabstractsocket.h:205
 // [-2] void disconnected()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket12disconnectedEv(void *this_) {
@@ -575,7 +584,7 @@ void C_ZN15QAbstractSocket12disconnectedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:205
+// /usr/include/qt/QtNetwork/qabstractsocket.h:206
 // [-2] void stateChanged(QAbstractSocket::SocketState)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket12stateChangedENS_11SocketStateE(void *this_, QAbstractSocket::SocketState arg0) {
@@ -583,7 +592,7 @@ void C_ZN15QAbstractSocket12stateChangedENS_11SocketStateE(void *this_, QAbstrac
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractsocket.h:206
+// /usr/include/qt/QtNetwork/qabstractsocket.h:207
 // [-2] void error(QAbstractSocket::SocketError)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QAbstractSocket5errorENS_11SocketErrorE(void *this_, QAbstractSocket::SocketError arg0) {
@@ -592,7 +601,7 @@ void C_ZN15QAbstractSocket5errorENS_11SocketErrorE(void *this_, QAbstractSocket:
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtNetwork/qabstractsocket.h:208
+// /usr/include/qt/QtNetwork/qabstractsocket.h:209
 // [-2] void proxyAuthenticationRequired(const QNetworkProxy &, QAuthenticator *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT

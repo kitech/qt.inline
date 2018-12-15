@@ -54,7 +54,7 @@ MyQAndroidJniExceptionCleaner(QAndroidJniExceptionCleaner::OutputMode outputMode
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:75
+// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:76
 // [-2] void QAndroidJniExceptionCleaner(QAndroidJniExceptionCleaner::OutputMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QAndroidJniExceptionCleanerC2ENS_10OutputModeE(QAndroidJniExceptionCleaner::OutputMode outputMode) {
@@ -62,14 +62,14 @@ void* C_ZN27QAndroidJniExceptionCleanerC2ENS_10OutputModeE(QAndroidJniExceptionC
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:76
+// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:77
 // [-2] void ~QAndroidJniExceptionCleaner()
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAndroidJniExceptionCleanerD2Ev(void *this_) {
   delete (QAndroidJniExceptionCleaner*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:78
+// /usr/include/qt/QtAndroidExtras/qandroidjnienvironment.h:79
 // [-2] void clean()
 extern "C" Q_DECL_EXPORT
 void C_ZN27QAndroidJniExceptionCleaner5cleanEv(void *this_) {

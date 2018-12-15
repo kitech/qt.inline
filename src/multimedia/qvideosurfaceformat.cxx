@@ -268,7 +268,29 @@ void C_ZN19QVideoSurfaceFormat18setYCbCrColorSpaceENS_15YCbCrColorSpaceE(void *t
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.11
 // /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:120
+// [1] bool isMirrored()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK19QVideoSurfaceFormat10isMirroredEv(void *this_) {
+  return (bool)((QVideoSurfaceFormat*)this_)->isMirrored();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:121
+// [-2] void setMirrored(bool)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void C_ZN19QVideoSurfaceFormat11setMirroredEb(void *this_, bool mirrored) {
+  ((QVideoSurfaceFormat*)this_)->setMirrored(mirrored);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:123
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QVideoSurfaceFormat8sizeHintEv(void *this_) {
@@ -277,7 +299,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:122
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:125
 // [8] QList<QByteArray> propertyNames()
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZNK19QVideoSurfaceFormat13propertyNamesEv(void *this_) {
@@ -286,7 +308,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:123
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:126
 // [16] QVariant property(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QVideoSurfaceFormat8propertyEPKc(void *this_, const char * name) {
@@ -295,7 +317,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:124
+// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:127
 // [-2] void setProperty(const char *, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QVideoSurfaceFormat11setPropertyEPKcRK8QVariant(void *this_, const char * name, QVariant* value) {

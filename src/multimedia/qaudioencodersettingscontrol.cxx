@@ -151,13 +151,13 @@ public:
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // [-2] void setAudioSettings(const QAudioEncoderSettings &)
-  virtual void setAudioSettings(const QAudioEncoderSettings & arg0)  override {
+  virtual void setAudioSettings(const QAudioEncoderSettings & settings)  override {
     int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAudioSettings", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"setAudioSettings", &handled, 1, (uint64_t)&settings, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     if (handled) {
       // Void Void void
     } else {
-    // QAudioEncoderSettingsControl::setAudioSettings(arg0);
+    // QAudioEncoderSettingsControl::setAudioSettings(settings);
   }
   }
 
@@ -279,8 +279,8 @@ return new QAudioEncoderSettings(rv);
 // /usr/include/qt/QtMultimedia/qaudioencodersettingscontrol.h:73
 // [-2] void setAudioSettings(const QAudioEncoderSettings &)
 extern "C" Q_DECL_EXPORT
-void C_ZN28QAudioEncoderSettingsControl16setAudioSettingsERK21QAudioEncoderSettings(void *this_, QAudioEncoderSettings* arg0) {
-  ((QAudioEncoderSettingsControl*)this_)->setAudioSettings(*arg0);
+void C_ZN28QAudioEncoderSettingsControl16setAudioSettingsERK21QAudioEncoderSettings(void *this_, QAudioEncoderSettings* settings) {
+  ((QAudioEncoderSettingsControl*)this_)->setAudioSettings(*settings);
 }
 
 //  main block end

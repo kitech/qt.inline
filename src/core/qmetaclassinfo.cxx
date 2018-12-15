@@ -53,7 +53,7 @@ MyQMetaClassInfo() : QMetaClassInfo() {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:303
+// /usr/include/qt/QtCore/qmetaobject.h:304
 // [-2] void QMetaClassInfo()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QMetaClassInfoC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN14QMetaClassInfoC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:304
+// /usr/include/qt/QtCore/qmetaobject.h:305
 // [8] const char * name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMetaClassInfo4nameEv(void *this_) {
@@ -69,7 +69,7 @@ void* C_ZNK14QMetaClassInfo4nameEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:305
+// /usr/include/qt/QtCore/qmetaobject.h:306
 // [8] const char * value()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMetaClassInfo5valueEv(void *this_) {
@@ -77,7 +77,7 @@ void* C_ZNK14QMetaClassInfo5valueEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetaobject.h:306
+// /usr/include/qt/QtCore/qmetaobject.h:307
 // [8] const QMetaObject * enclosingMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QMetaClassInfo19enclosingMetaObjectEv(void *this_) {

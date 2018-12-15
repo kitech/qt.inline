@@ -360,67 +360,67 @@ void* C_QAbstractAudioInput_init_staticMetaObject(void* this_, void* strdat, voi
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:112
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
 // [-2] void start(QIODevice *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:113
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:110
 // [8] QIODevice * start()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:114
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:111
 // [-2] void stop()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:115
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:112
 // [-2] void reset()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:116
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:113
 // [-2] void suspend()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:117
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:114
 // [-2] void resume()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:118
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:115
 // [4] int bytesReady()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:119
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:116
 // [4] int periodSize()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:120
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:117
 // [-2] void setBufferSize(int)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:121
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:118
 // [4] int bufferSize()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:122
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:119
 // [-2] void setNotifyInterval(int)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:123
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:120
 // [4] int notifyInterval()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:124
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:121
 // [8] qint64 processedUSecs()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:125
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:122
 // [8] qint64 elapsedUSecs()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:126
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:123
 // [4] QAudio::Error error()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:127
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:124
 // [4] QAudio::State state()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:128
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:125
 // [-2] void setFormat(const QAudioFormat &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:129
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:126
 // [8] QAudioFormat format()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:130
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:127
 // [-2] void setVolume(qreal)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:131
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:128
 // [8] qreal volume()
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:106
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractAudioInput10metaObjectEv(void *this_) {
@@ -428,7 +428,7 @@ void* C_ZNK19QAbstractAudioInput10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:106
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractAudioInput11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -436,7 +436,7 @@ void* C_ZN19QAbstractAudioInput11qt_metacastEPKc(void *this_, const char * arg0)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:106
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN19QAbstractAudioInput11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -444,7 +444,7 @@ int C_ZN19QAbstractAudioInput11qt_metacallEN11QMetaObject4CallEiPPv(void *this_,
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:106
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractAudioInput2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -453,7 +453,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:106
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractAudioInput6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -462,7 +462,7 @@ return new QString(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:112
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:109
 // [-2] void start(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput5startEP9QIODevice(void *this_, QIODevice * device) {
@@ -470,7 +470,7 @@ void C_ZN19QAbstractAudioInput5startEP9QIODevice(void *this_, QIODevice * device
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:113
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:110
 // [8] QIODevice * start()
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QAbstractAudioInput5startEv(void *this_) {
@@ -478,7 +478,7 @@ void* C_ZN19QAbstractAudioInput5startEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:114
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:111
 // [-2] void stop()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput4stopEv(void *this_) {
@@ -486,7 +486,7 @@ void C_ZN19QAbstractAudioInput4stopEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:115
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:112
 // [-2] void reset()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput5resetEv(void *this_) {
@@ -494,7 +494,7 @@ void C_ZN19QAbstractAudioInput5resetEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:116
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:113
 // [-2] void suspend()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput7suspendEv(void *this_) {
@@ -502,7 +502,7 @@ void C_ZN19QAbstractAudioInput7suspendEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:117
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:114
 // [-2] void resume()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput6resumeEv(void *this_) {
@@ -510,7 +510,7 @@ void C_ZN19QAbstractAudioInput6resumeEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:118
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:115
 // [4] int bytesReady()
 extern "C" Q_DECL_EXPORT
 int C_ZNK19QAbstractAudioInput10bytesReadyEv(void *this_) {
@@ -518,7 +518,7 @@ int C_ZNK19QAbstractAudioInput10bytesReadyEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:119
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:116
 // [4] int periodSize()
 extern "C" Q_DECL_EXPORT
 int C_ZNK19QAbstractAudioInput10periodSizeEv(void *this_) {
@@ -526,7 +526,7 @@ int C_ZNK19QAbstractAudioInput10periodSizeEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:120
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:117
 // [-2] void setBufferSize(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput13setBufferSizeEi(void *this_, int value) {
@@ -534,7 +534,7 @@ void C_ZN19QAbstractAudioInput13setBufferSizeEi(void *this_, int value) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:121
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:118
 // [4] int bufferSize()
 extern "C" Q_DECL_EXPORT
 int C_ZNK19QAbstractAudioInput10bufferSizeEv(void *this_) {
@@ -542,7 +542,7 @@ int C_ZNK19QAbstractAudioInput10bufferSizeEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:122
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:119
 // [-2] void setNotifyInterval(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput17setNotifyIntervalEi(void *this_, int milliSeconds) {
@@ -550,7 +550,7 @@ void C_ZN19QAbstractAudioInput17setNotifyIntervalEi(void *this_, int milliSecond
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:123
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:120
 // [4] int notifyInterval()
 extern "C" Q_DECL_EXPORT
 int C_ZNK19QAbstractAudioInput14notifyIntervalEv(void *this_) {
@@ -558,7 +558,7 @@ int C_ZNK19QAbstractAudioInput14notifyIntervalEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:124
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:121
 // [8] qint64 processedUSecs()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK19QAbstractAudioInput14processedUSecsEv(void *this_) {
@@ -566,7 +566,7 @@ qint64 C_ZNK19QAbstractAudioInput14processedUSecsEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:125
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:122
 // [8] qint64 elapsedUSecs()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK19QAbstractAudioInput12elapsedUSecsEv(void *this_) {
@@ -574,7 +574,7 @@ qint64 C_ZNK19QAbstractAudioInput12elapsedUSecsEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:126
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:123
 // [4] QAudio::Error error()
 extern "C" Q_DECL_EXPORT
 QAudio::Error C_ZNK19QAbstractAudioInput5errorEv(void *this_) {
@@ -582,7 +582,7 @@ QAudio::Error C_ZNK19QAbstractAudioInput5errorEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:127
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:124
 // [4] QAudio::State state()
 extern "C" Q_DECL_EXPORT
 QAudio::State C_ZNK19QAbstractAudioInput5stateEv(void *this_) {
@@ -590,7 +590,7 @@ QAudio::State C_ZNK19QAbstractAudioInput5stateEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:128
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:125
 // [-2] void setFormat(const QAudioFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput9setFormatERK12QAudioFormat(void *this_, QAudioFormat* fmt_) {
@@ -598,7 +598,7 @@ void C_ZN19QAbstractAudioInput9setFormatERK12QAudioFormat(void *this_, QAudioFor
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:129
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:126
 // [8] QAudioFormat format()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QAbstractAudioInput6formatEv(void *this_) {
@@ -607,7 +607,7 @@ return new QAudioFormat(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:130
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:127
 // [-2] void setVolume(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput9setVolumeEd(void *this_, qreal arg0) {
@@ -615,7 +615,7 @@ void C_ZN19QAbstractAudioInput9setVolumeEd(void *this_, qreal arg0) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:131
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:128
 // [8] qreal volume()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QAbstractAudioInput6volumeEv(void *this_) {
@@ -623,23 +623,23 @@ qreal C_ZNK19QAbstractAudioInput6volumeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:134
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:131
 // [-2] void errorChanged(QAudio::Error)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractAudioInput12errorChangedEN6QAudio5ErrorE(void *this_, QAudio::Error arg0) {
-  ((QAbstractAudioInput*)this_)->errorChanged(arg0);
+void C_ZN19QAbstractAudioInput12errorChangedEN6QAudio5ErrorE(void *this_, QAudio::Error error) {
+  ((QAbstractAudioInput*)this_)->errorChanged(error);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:135
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:132
 // [-2] void stateChanged(QAudio::State)
 extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractAudioInput12stateChangedEN6QAudio5StateE(void *this_, QAudio::State arg0) {
-  ((QAbstractAudioInput*)this_)->stateChanged(arg0);
+void C_ZN19QAbstractAudioInput12stateChangedEN6QAudio5StateE(void *this_, QAudio::State state) {
+  ((QAbstractAudioInput*)this_)->stateChanged(state);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiosystem.h:136
+// /usr/include/qt/QtMultimedia/qaudiosystem.h:133
 // [-2] void notify()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QAbstractAudioInput6notifyEv(void *this_) {

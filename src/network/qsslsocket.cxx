@@ -230,12 +230,15 @@ void C_ZN10QSslSocket22connectToHostEncryptedERK7QStringt6QFlagsIN9QIODevice12Op
 }
 
 // Public Visibility=Default Availability=Available
+// since 4.6
 // /usr/include/qt/QtNetwork/qsslsocket.h:88
 // [-2] void connectToHostEncrypted(const QString &, quint16, const QString &, QIODevice::OpenMode, QAbstractSocket::NetworkLayerProtocol)
+#if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSslSocket22connectToHostEncryptedERK7QStringtS2_6QFlagsIN9QIODevice12OpenModeFlagEEN15QAbstractSocket20NetworkLayerProtocolE(void *this_, QString* hostName, quint16 port, QString* sslPeerName, QFlags<QIODevice::OpenModeFlag> mode, QAbstractSocket::NetworkLayerProtocol protocol) {
   ((QSslSocket*)this_)->connectToHostEncrypted(*hostName, port, *sslPeerName, mode, protocol);
 }
+#endif // QT_VERSION >= 0x040600
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslsocket.h:89

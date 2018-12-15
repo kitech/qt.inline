@@ -52,7 +52,7 @@ public:
 };
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwhatsthis.h:58
+// /usr/include/qt/QtWidgets/qwhatsthis.h:60
 // [-2] void enterWhatsThisMode()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QWhatsThis18enterWhatsThisModeEv() {
@@ -60,7 +60,7 @@ void C_ZN10QWhatsThis18enterWhatsThisModeEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwhatsthis.h:59
+// /usr/include/qt/QtWidgets/qwhatsthis.h:61
 // [1] bool inWhatsThisMode()
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QWhatsThis15inWhatsThisModeEv() {
@@ -68,7 +68,7 @@ bool C_ZN10QWhatsThis15inWhatsThisModeEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwhatsthis.h:60
+// /usr/include/qt/QtWidgets/qwhatsthis.h:62
 // [-2] void leaveWhatsThisMode()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QWhatsThis18leaveWhatsThisModeEv() {
@@ -76,7 +76,7 @@ void C_ZN10QWhatsThis18leaveWhatsThisModeEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwhatsthis.h:62
+// /usr/include/qt/QtWidgets/qwhatsthis.h:64
 // [-2] void showText(const QPoint &, const QString &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QWhatsThis8showTextERK6QPointRK7QStringP7QWidget(QPoint* pos, QString* text, QWidget * w) {
@@ -84,7 +84,7 @@ void C_ZN10QWhatsThis8showTextERK6QPointRK7QStringP7QWidget(QPoint* pos, QString
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwhatsthis.h:63
+// /usr/include/qt/QtWidgets/qwhatsthis.h:65
 // [-2] void hideText()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QWhatsThis8hideTextEv() {
@@ -92,7 +92,7 @@ void C_ZN10QWhatsThis8hideTextEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwhatsthis.h:65
+// /usr/include/qt/QtWidgets/qwhatsthis.h:68
 // [8] QAction * createAction(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QWhatsThis12createActionEP7QObject(QObject * parent) {

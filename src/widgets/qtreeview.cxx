@@ -97,6 +97,18 @@ public:
 // void QTreeView(QWidget *)
 MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 // Protected virtual Visibility=Default Availability=Available
+// [-2] void verticalScrollbarValueChanged(int)
+  virtual void verticalScrollbarValueChanged(int value)  override {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"verticalScrollbarValueChanged", &handled, 1, (uint64_t)value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // Void Void void
+    } else {
+    QTreeView::verticalScrollbarValueChanged(value);
+  }
+  }
+
+// Protected virtual Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
@@ -447,7 +459,15 @@ void* C_QTreeView_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:175
+// /usr/include/qt/QtWidgets/qtreeview.h:172
+// [-2] void verticalScrollbarValueChanged(int)
+extern "C" Q_DECL_EXPORT
+void C_ZN9QTreeView29verticalScrollbarValueChangedEi(void *this_, int value) {
+  ((QTreeView*)this_)->QTreeView::verticalScrollbarValueChanged(value);
+}
+
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:176
 // [-2] void scrollContentsBy(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView16scrollContentsByEii(void *this_, int dx, int dy) {
@@ -455,7 +475,7 @@ void C_ZN9QTreeView16scrollContentsByEii(void *this_, int dx, int dy) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:176
+// /usr/include/qt/QtWidgets/qtreeview.h:177
 // [-2] void rowsInserted(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
@@ -463,7 +483,7 @@ void C_ZN9QTreeView12rowsInsertedERK11QModelIndexii(void *this_, QModelIndex* pa
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:177
+// /usr/include/qt/QtWidgets/qtreeview.h:178
 // [-2] void rowsAboutToBeRemoved(const QModelIndex &, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelIndex* parent, int start, int end_) {
@@ -471,7 +491,7 @@ void C_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii(void *this_, QModelI
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:179
+// /usr/include/qt/QtWidgets/qtreeview.h:180
 // [24] QModelIndex moveCursor(QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTreeView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
@@ -480,7 +500,7 @@ return new QModelIndex(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:180
+// /usr/include/qt/QtWidgets/qtreeview.h:181
 // [4] int horizontalOffset()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTreeView16horizontalOffsetEv(void *this_) {
@@ -488,7 +508,7 @@ int C_ZNK9QTreeView16horizontalOffsetEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:181
+// /usr/include/qt/QtWidgets/qtreeview.h:182
 // [4] int verticalOffset()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTreeView14verticalOffsetEv(void *this_) {
@@ -496,7 +516,7 @@ int C_ZNK9QTreeView14verticalOffsetEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:183
+// /usr/include/qt/QtWidgets/qtreeview.h:184
 // [-2] void setSelection(const QRect &, QItemSelectionModel::SelectionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void *this_, QRect* rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
@@ -504,7 +524,7 @@ void C_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13Select
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:184
+// /usr/include/qt/QtWidgets/qtreeview.h:185
 // [8] QRegion visualRegionForSelection(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection(void *this_, QItemSelection* selection) {
@@ -513,7 +533,7 @@ return new QRegion(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:185
+// /usr/include/qt/QtWidgets/qtreeview.h:186
 // [8] QModelIndexList selectedIndexes()
 extern "C" Q_DECL_EXPORT
 QModelIndexList* C_ZNK9QTreeView15selectedIndexesEv(void *this_) {
@@ -522,7 +542,7 @@ return new QModelIndexList(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:187
+// /usr/include/qt/QtWidgets/qtreeview.h:188
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
@@ -530,7 +550,7 @@ void C_ZN9QTreeView10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event)
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:188
+// /usr/include/qt/QtWidgets/qtreeview.h:189
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
@@ -538,7 +558,7 @@ void C_ZN9QTreeView10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event)
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:191
+// /usr/include/qt/QtWidgets/qtreeview.h:192
 // [-2] void drawRow(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QPainter * painter, QStyleOptionViewItem* options, QModelIndex* index) {
@@ -546,7 +566,7 @@ void C_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:194
+// /usr/include/qt/QtWidgets/qtreeview.h:195
 // [-2] void drawBranches(QPainter *, const QRect &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex(void *this_, QPainter * painter, QRect* rect, QModelIndex* index) {
@@ -554,7 +574,7 @@ void C_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex(void *this_
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:198
+// /usr/include/qt/QtWidgets/qtreeview.h:199
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
@@ -562,7 +582,7 @@ void C_ZN9QTreeView15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:199
+// /usr/include/qt/QtWidgets/qtreeview.h:200
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
@@ -570,7 +590,7 @@ void C_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:200
+// /usr/include/qt/QtWidgets/qtreeview.h:201
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
@@ -578,7 +598,7 @@ void C_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:201
+// /usr/include/qt/QtWidgets/qtreeview.h:202
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
@@ -586,7 +606,7 @@ void C_ZN9QTreeView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:202
+// /usr/include/qt/QtWidgets/qtreeview.h:203
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
@@ -594,7 +614,7 @@ void C_ZN9QTreeView13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:204
+// /usr/include/qt/QtWidgets/qtreeview.h:205
 // [-2] void dragMoveEvent(QDragMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent * event) {
@@ -602,7 +622,7 @@ void C_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent(void *this_, QDragMoveEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:206
+// /usr/include/qt/QtWidgets/qtreeview.h:207
 // [1] bool viewportEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QTreeView13viewportEventEP6QEvent(void *this_, QEvent * event) {
@@ -610,7 +630,7 @@ bool C_ZN9QTreeView13viewportEventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:208
+// /usr/include/qt/QtWidgets/qtreeview.h:209
 // [-2] void updateGeometries()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView16updateGeometriesEv(void *this_) {
@@ -618,7 +638,7 @@ void C_ZN9QTreeView16updateGeometriesEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:210
+// /usr/include/qt/QtWidgets/qtreeview.h:211
 // [8] QSize viewportSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTreeView16viewportSizeHintEv(void *this_) {
@@ -627,7 +647,7 @@ return new QSize(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:212
+// /usr/include/qt/QtWidgets/qtreeview.h:213
 // [4] int sizeHintForColumn(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTreeView17sizeHintForColumnEi(void *this_, int column) {
@@ -635,7 +655,7 @@ int C_ZNK9QTreeView17sizeHintForColumnEi(void *this_, int column) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:216
+// /usr/include/qt/QtWidgets/qtreeview.h:217
 // [-2] void horizontalScrollbarAction(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView25horizontalScrollbarActionEi(void *this_, int action) {
@@ -643,7 +663,7 @@ void C_ZN9QTreeView25horizontalScrollbarActionEi(void *this_, int action) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:218
+// /usr/include/qt/QtWidgets/qtreeview.h:219
 // [1] bool isIndexHidden(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTreeView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -651,7 +671,7 @@ bool C_ZNK9QTreeView13isIndexHiddenERK11QModelIndex(void *this_, QModelIndex* in
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:219
+// /usr/include/qt/QtWidgets/qtreeview.h:220
 // [-2] void selectionChanged(const QItemSelection &, const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSelection* selected, QItemSelection* deselected) {
@@ -659,7 +679,7 @@ void C_ZN9QTreeView16selectionChangedERK14QItemSelectionS2_(void *this_, QItemSe
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:221
+// /usr/include/qt/QtWidgets/qtreeview.h:222
 // [-2] void currentChanged(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTreeView14currentChangedERK11QModelIndexS2_(void *this_, QModelIndex* current, QModelIndex* previous) {

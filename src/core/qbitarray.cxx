@@ -353,7 +353,30 @@ void C_ZN9QBitArray8truncateEi(void *this_, int pos) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:109
+// since 5.11
+// /usr/include/qt/QtCore/qbitarray.h:107
+// [8] const char * bits()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZNK9QBitArray4bitsEv(void *this_) {
+  return (void*)((QBitArray*)this_)->bits();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public static Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtCore/qbitarray.h:108
+// [8] QBitArray fromBits(const char *, qsizetype)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QBitArray8fromBitsEPKcx(const char * data, qsizetype len_) {
+  auto rv = QBitArray::fromBits(data, len_);
+return new QBitArray(rv);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:112
 // [8] QBitArray::DataPtr & data_ptr()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QBitArray8data_ptrEv(void *this_) {

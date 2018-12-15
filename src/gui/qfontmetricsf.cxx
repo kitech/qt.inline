@@ -59,7 +59,7 @@ MyQFontMetricsF(const QFontMetricsF & arg0) : QFontMetricsF(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:134
+// /usr/include/qt/QtGui/qfontmetrics.h:140
 // [-2] void QFontMetricsF(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFC2ERK5QFont(QFont* arg0) {
@@ -67,7 +67,7 @@ void* C_ZN13QFontMetricsFC2ERK5QFont(QFont* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:135
+// /usr/include/qt/QtGui/qfontmetrics.h:141
 // [-2] void QFontMetricsF(const QFont &, QPaintDevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFC2ERK5QFontP12QPaintDevice(QFont* arg0, QPaintDevice * pd) {
@@ -76,7 +76,7 @@ void* C_ZN13QFontMetricsFC2ERK5QFontP12QPaintDevice(QFont* arg0, QPaintDevice * 
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qfontmetrics.h:136
+// /usr/include/qt/QtGui/qfontmetrics.h:142
 // [-2] void QFontMetricsF(const QFontMetrics &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -86,7 +86,7 @@ void* C_ZN13QFontMetricsFC2ERK12QFontMetrics(QFontMetrics* arg0) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:137
+// /usr/include/qt/QtGui/qfontmetrics.h:143
 // [-2] void QFontMetricsF(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFC2ERKS_(QFontMetricsF* arg0) {
@@ -94,14 +94,14 @@ void* C_ZN13QFontMetricsFC2ERKS_(QFontMetricsF* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:138
+// /usr/include/qt/QtGui/qfontmetrics.h:144
 // [-2] void ~QFontMetricsF()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QFontMetricsFD2Ev(void *this_) {
   delete (QFontMetricsF*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:140
+// /usr/include/qt/QtGui/qfontmetrics.h:146
 // [8] QFontMetricsF & operator=(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFaSERKS_(void *this_, QFontMetricsF* arg0) {
@@ -110,7 +110,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:141
+// /usr/include/qt/QtGui/qfontmetrics.h:147
 // [8] QFontMetricsF & operator=(const QFontMetrics &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFaSERK12QFontMetrics(void *this_, QFontMetrics* arg0) {
@@ -119,7 +119,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:143
+// /usr/include/qt/QtGui/qfontmetrics.h:149
 // [8] QFontMetricsF & operator=(QFontMetricsF &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontMetricsFaSEOS_(void *this_, QFontMetricsF && other) {
@@ -129,7 +129,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtGui/qfontmetrics.h:147
+// /usr/include/qt/QtGui/qfontmetrics.h:153
 // [-2] void swap(QFontMetricsF &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -139,7 +139,7 @@ void C_ZN13QFontMetricsF4swapERS_(void *this_, QFontMetricsF* other) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:149
+// /usr/include/qt/QtGui/qfontmetrics.h:155
 // [8] qreal ascent()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF6ascentEv(void *this_) {
@@ -148,7 +148,7 @@ qreal C_ZNK13QFontMetricsF6ascentEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtGui/qfontmetrics.h:150
+// /usr/include/qt/QtGui/qfontmetrics.h:156
 // [8] qreal capHeight()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -158,7 +158,7 @@ qreal C_ZNK13QFontMetricsF9capHeightEv(void *this_) {
 #endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:151
+// /usr/include/qt/QtGui/qfontmetrics.h:157
 // [8] qreal descent()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF7descentEv(void *this_) {
@@ -166,7 +166,7 @@ qreal C_ZNK13QFontMetricsF7descentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:152
+// /usr/include/qt/QtGui/qfontmetrics.h:158
 // [8] qreal height()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF6heightEv(void *this_) {
@@ -174,7 +174,7 @@ qreal C_ZNK13QFontMetricsF6heightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:153
+// /usr/include/qt/QtGui/qfontmetrics.h:159
 // [8] qreal leading()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF7leadingEv(void *this_) {
@@ -182,7 +182,7 @@ qreal C_ZNK13QFontMetricsF7leadingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:154
+// /usr/include/qt/QtGui/qfontmetrics.h:160
 // [8] qreal lineSpacing()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF11lineSpacingEv(void *this_) {
@@ -190,7 +190,7 @@ qreal C_ZNK13QFontMetricsF11lineSpacingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:155
+// /usr/include/qt/QtGui/qfontmetrics.h:161
 // [8] qreal minLeftBearing()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF14minLeftBearingEv(void *this_) {
@@ -198,7 +198,7 @@ qreal C_ZNK13QFontMetricsF14minLeftBearingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:156
+// /usr/include/qt/QtGui/qfontmetrics.h:162
 // [8] qreal minRightBearing()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF15minRightBearingEv(void *this_) {
@@ -206,7 +206,7 @@ qreal C_ZNK13QFontMetricsF15minRightBearingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:157
+// /usr/include/qt/QtGui/qfontmetrics.h:163
 // [8] qreal maxWidth()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF8maxWidthEv(void *this_) {
@@ -214,7 +214,7 @@ qreal C_ZNK13QFontMetricsF8maxWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:159
+// /usr/include/qt/QtGui/qfontmetrics.h:165
 // [8] qreal xHeight()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF7xHeightEv(void *this_) {
@@ -223,7 +223,7 @@ qreal C_ZNK13QFontMetricsF7xHeightEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qfontmetrics.h:160
+// /usr/include/qt/QtGui/qfontmetrics.h:166
 // [8] qreal averageCharWidth()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -233,7 +233,7 @@ qreal C_ZNK13QFontMetricsF16averageCharWidthEv(void *this_) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:162
+// /usr/include/qt/QtGui/qfontmetrics.h:168
 // [1] bool inFont(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsF6inFontE5QChar(void *this_, QChar* arg0) {
@@ -241,7 +241,7 @@ bool C_ZNK13QFontMetricsF6inFontE5QChar(void *this_, QChar* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:163
+// /usr/include/qt/QtGui/qfontmetrics.h:169
 // [1] bool inFontUcs4(uint)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsF10inFontUcs4Ej(void *this_, uint ucs4) {
@@ -249,7 +249,7 @@ bool C_ZNK13QFontMetricsF10inFontUcs4Ej(void *this_, uint ucs4) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:165
+// /usr/include/qt/QtGui/qfontmetrics.h:171
 // [8] qreal leftBearing(QChar)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF11leftBearingE5QChar(void *this_, QChar* arg0) {
@@ -257,7 +257,7 @@ qreal C_ZNK13QFontMetricsF11leftBearingE5QChar(void *this_, QChar* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:166
+// /usr/include/qt/QtGui/qfontmetrics.h:172
 // [8] qreal rightBearing(QChar)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF12rightBearingE5QChar(void *this_, QChar* arg0) {
@@ -265,7 +265,7 @@ qreal C_ZNK13QFontMetricsF12rightBearingE5QChar(void *this_, QChar* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:167
+// /usr/include/qt/QtGui/qfontmetrics.h:175
 // [8] qreal width(const QString &)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF5widthERK7QString(void *this_, QString* string) {
@@ -273,7 +273,7 @@ qreal C_ZNK13QFontMetricsF5widthERK7QString(void *this_, QString* string) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:169
+// /usr/include/qt/QtGui/qfontmetrics.h:176
 // [8] qreal width(QChar)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF5widthE5QChar(void *this_, QChar* arg0) {
@@ -281,7 +281,29 @@ qreal C_ZNK13QFontMetricsF5widthE5QChar(void *this_, QChar* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:171
+// since 5.11
+// /usr/include/qt/QtGui/qfontmetrics.h:179
+// [8] qreal horizontalAdvance(const QString &, int)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+qreal C_ZNK13QFontMetricsF17horizontalAdvanceERK7QStringi(void *this_, QString* string, int length) {
+  return (qreal)((QFontMetricsF*)this_)->horizontalAdvance(*string, length);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// since 5.11
+// /usr/include/qt/QtGui/qfontmetrics.h:180
+// [8] qreal horizontalAdvance(QChar)
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+qreal C_ZNK13QFontMetricsF17horizontalAdvanceE5QChar(void *this_, QChar* arg0) {
+  return (qreal)((QFontMetricsF*)this_)->horizontalAdvance(*arg0);
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:182
 // [32] QRectF boundingRect(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF12boundingRectERK7QString(void *this_, QString* string) {
@@ -290,7 +312,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:172
+// /usr/include/qt/QtGui/qfontmetrics.h:183
 // [32] QRectF boundingRect(QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF12boundingRectE5QChar(void *this_, QChar* arg0) {
@@ -299,7 +321,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:173
+// /usr/include/qt/QtGui/qfontmetrics.h:184
 // [32] QRectF boundingRect(const QRectF &, int, const QString &, int, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF12boundingRectERK6QRectFiRK7QStringiPi(void *this_, QRectF* r, int flags, QString* string, int tabstops, int * tabarray) {
@@ -308,7 +330,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:174
+// /usr/include/qt/QtGui/qfontmetrics.h:185
 // [16] QSizeF size(int, const QString &, int, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QFontMetricsF4sizeEiRK7QStringiPi(void *this_, int flags, QString* str, int tabstops, int * tabarray) {
@@ -318,7 +340,7 @@ return new QSizeF(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtGui/qfontmetrics.h:176
+// /usr/include/qt/QtGui/qfontmetrics.h:187
 // [32] QRectF tightBoundingRect(const QString &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -330,7 +352,7 @@ return new QRectF(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qfontmetrics.h:178
+// /usr/include/qt/QtGui/qfontmetrics.h:189
 // [8] QString elidedText(const QString &, Qt::TextElideMode, qreal, int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -341,7 +363,7 @@ return new QString(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:180
+// /usr/include/qt/QtGui/qfontmetrics.h:191
 // [8] qreal underlinePos()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF12underlinePosEv(void *this_) {
@@ -349,7 +371,7 @@ qreal C_ZNK13QFontMetricsF12underlinePosEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:181
+// /usr/include/qt/QtGui/qfontmetrics.h:192
 // [8] qreal overlinePos()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF11overlinePosEv(void *this_) {
@@ -357,7 +379,7 @@ qreal C_ZNK13QFontMetricsF11overlinePosEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:182
+// /usr/include/qt/QtGui/qfontmetrics.h:193
 // [8] qreal strikeOutPos()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF12strikeOutPosEv(void *this_) {
@@ -365,7 +387,7 @@ qreal C_ZNK13QFontMetricsF12strikeOutPosEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:183
+// /usr/include/qt/QtGui/qfontmetrics.h:194
 // [8] qreal lineWidth()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK13QFontMetricsF9lineWidthEv(void *this_) {
@@ -373,7 +395,7 @@ qreal C_ZNK13QFontMetricsF9lineWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:185
+// /usr/include/qt/QtGui/qfontmetrics.h:196
 // [1] bool operator==(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsFeqERKS_(void *this_, QFontMetricsF* other) {
@@ -381,7 +403,7 @@ bool C_ZNK13QFontMetricsFeqERKS_(void *this_, QFontMetricsF* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfontmetrics.h:186
+// /usr/include/qt/QtGui/qfontmetrics.h:197
 // [1] bool operator!=(const QFontMetricsF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QFontMetricsFneERKS_(void *this_, QFontMetricsF* other) {

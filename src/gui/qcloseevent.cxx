@@ -53,7 +53,7 @@ MyQCloseEvent() : QCloseEvent() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:477
+// /usr/include/qt/QtGui/qevent.h:482
 // [-2] void QCloseEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QCloseEventC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN11QCloseEventC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:478
+// /usr/include/qt/QtGui/qevent.h:483
 // [-2] void ~QCloseEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QCloseEventD2Ev(void *this_) {

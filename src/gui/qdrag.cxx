@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtGui/qdrag.h
 #ifndef protected
 #define protected public
@@ -341,4 +342,5 @@ void C_ZN5QDrag13targetChangedEP7QObject(void *this_, QObject * newTarget) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end

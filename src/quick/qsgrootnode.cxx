@@ -53,7 +53,7 @@ MyQSGRootNode() : QSGRootNode() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:302
+// /usr/include/qt/QtQuick/qsgnode.h:297
 // [-2] void QSGRootNode()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QSGRootNodeC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN11QSGRootNodeC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:303
+// /usr/include/qt/QtQuick/qsgnode.h:298
 // [-2] void ~QSGRootNode()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QSGRootNodeD2Ev(void *this_) {

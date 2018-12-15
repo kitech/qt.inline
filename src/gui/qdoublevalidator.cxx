@@ -112,7 +112,7 @@ void* C_QDoubleValidator_init_staticMetaObject(void* this_, void* strdat, void* 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:126
+// /usr/include/qt/QtGui/qvalidator.h:128
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QDoubleValidator10metaObjectEv(void *this_) {
@@ -120,7 +120,7 @@ void* C_ZNK16QDoubleValidator10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:126
+// /usr/include/qt/QtGui/qvalidator.h:128
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidator11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +128,7 @@ void* C_ZN16QDoubleValidator11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:126
+// /usr/include/qt/QtGui/qvalidator.h:128
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN16QDoubleValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +136,7 @@ int C_ZN16QDoubleValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QM
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:126
+// /usr/include/qt/QtGui/qvalidator.h:128
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidator2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +145,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:126
+// /usr/include/qt/QtGui/qvalidator.h:128
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidator6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +154,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:133
+// /usr/include/qt/QtGui/qvalidator.h:135
 // [-2] void QDoubleValidator(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
@@ -162,7 +162,7 @@ void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:134
+// /usr/include/qt/QtGui/qvalidator.h:136
 // [-2] void QDoubleValidator(double, double, int, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDoubleValidatorC2EddiP7QObject(double bottom, double top, int decimals, QObject * parent) {
@@ -170,14 +170,14 @@ void* C_ZN16QDoubleValidatorC2EddiP7QObject(double bottom, double top, int decim
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:135
+// /usr/include/qt/QtGui/qvalidator.h:137
 // [-2] void ~QDoubleValidator()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidatorD2Ev(void *this_) {
   delete (QDoubleValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:142
+// /usr/include/qt/QtGui/qvalidator.h:144
 // [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK16QDoubleValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
@@ -185,7 +185,7 @@ QValidator::State C_ZNK16QDoubleValidator8validateER7QStringRi(void *this_, QStr
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:144
+// /usr/include/qt/QtGui/qvalidator.h:146
 // [-2] void setRange(double, double, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator8setRangeEddi(void *this_, double bottom, double top, int decimals) {
@@ -193,7 +193,7 @@ void C_ZN16QDoubleValidator8setRangeEddi(void *this_, double bottom, double top,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:145
+// /usr/include/qt/QtGui/qvalidator.h:147
 // [-2] void setBottom(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator9setBottomEd(void *this_, double arg0) {
@@ -201,7 +201,7 @@ void C_ZN16QDoubleValidator9setBottomEd(void *this_, double arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:146
+// /usr/include/qt/QtGui/qvalidator.h:148
 // [-2] void setTop(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator6setTopEd(void *this_, double arg0) {
@@ -209,7 +209,7 @@ void C_ZN16QDoubleValidator6setTopEd(void *this_, double arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:147
+// /usr/include/qt/QtGui/qvalidator.h:149
 // [-2] void setDecimals(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator11setDecimalsEi(void *this_, int arg0) {
@@ -217,7 +217,7 @@ void C_ZN16QDoubleValidator11setDecimalsEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:148
+// /usr/include/qt/QtGui/qvalidator.h:150
 // [-2] void setNotation(QDoubleValidator::Notation)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator11setNotationENS_8NotationE(void *this_, QDoubleValidator::Notation arg0) {
@@ -225,7 +225,7 @@ void C_ZN16QDoubleValidator11setNotationENS_8NotationE(void *this_, QDoubleValid
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:150
+// /usr/include/qt/QtGui/qvalidator.h:152
 // [8] double bottom()
 extern "C" Q_DECL_EXPORT
 double C_ZNK16QDoubleValidator6bottomEv(void *this_) {
@@ -233,7 +233,7 @@ double C_ZNK16QDoubleValidator6bottomEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:151
+// /usr/include/qt/QtGui/qvalidator.h:153
 // [8] double top()
 extern "C" Q_DECL_EXPORT
 double C_ZNK16QDoubleValidator3topEv(void *this_) {
@@ -241,7 +241,7 @@ double C_ZNK16QDoubleValidator3topEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:152
+// /usr/include/qt/QtGui/qvalidator.h:154
 // [4] int decimals()
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QDoubleValidator8decimalsEv(void *this_) {
@@ -249,7 +249,7 @@ int C_ZNK16QDoubleValidator8decimalsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:153
+// /usr/include/qt/QtGui/qvalidator.h:155
 // [4] QDoubleValidator::Notation notation()
 extern "C" Q_DECL_EXPORT
 QDoubleValidator::Notation C_ZNK16QDoubleValidator8notationEv(void *this_) {
@@ -257,7 +257,7 @@ QDoubleValidator::Notation C_ZNK16QDoubleValidator8notationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:156
+// /usr/include/qt/QtGui/qvalidator.h:158
 // [-2] void bottomChanged(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator13bottomChangedEd(void *this_, double bottom) {
@@ -265,7 +265,7 @@ void C_ZN16QDoubleValidator13bottomChangedEd(void *this_, double bottom) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:157
+// /usr/include/qt/QtGui/qvalidator.h:159
 // [-2] void topChanged(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator10topChangedEd(void *this_, double top) {
@@ -273,7 +273,7 @@ void C_ZN16QDoubleValidator10topChangedEd(void *this_, double top) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:158
+// /usr/include/qt/QtGui/qvalidator.h:160
 // [-2] void decimalsChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator15decimalsChangedEi(void *this_, int decimals) {
@@ -281,7 +281,7 @@ void C_ZN16QDoubleValidator15decimalsChangedEi(void *this_, int decimals) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:159
+// /usr/include/qt/QtGui/qvalidator.h:161
 // [-2] void notationChanged(QDoubleValidator::Notation)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDoubleValidator15notationChangedENS_8NotationE(void *this_, QDoubleValidator::Notation notation) {

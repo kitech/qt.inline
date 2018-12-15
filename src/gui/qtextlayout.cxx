@@ -207,12 +207,15 @@ void C_ZN11QTextLayout22clearAdditionalFormatsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.6
 // /usr/include/qt/QtGui/qtextlayout.h:146
 // [-2] void setFormats(const QVector<QTextLayout::FormatRange> &)
+#if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextLayout10setFormatsERK7QVectorINS_11FormatRangeEE(void *this_, QVector<QTextLayout::FormatRange>* overrides) {
   ((QTextLayout*)this_)->setFormats(*overrides);
 }
+#endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
 // since 5.6

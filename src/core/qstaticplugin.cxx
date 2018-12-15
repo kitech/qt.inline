@@ -52,7 +52,7 @@ public:
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qplugin.h:74
+// /usr/include/qt/QtCore/qplugin.h:89
 // [16] QJsonObject metaData()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QStaticPlugin8metaDataEv(void *this_) {

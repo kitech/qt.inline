@@ -308,13 +308,16 @@ bool C_ZN13QFontDatabase29supportsThreadedFontRenderingEv() {
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.2
 // /usr/include/qt/QtGui/qfontdatabase.h:157
 // [16] QFont systemFont(QFontDatabase::SystemFont)
+#if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont type_) {
   auto rv = QFontDatabase::systemFont(type_);
 return new QFont(rv);
 }
+#endif // QT_VERSION >= 0x050200
 
 
 extern "C" Q_DECL_EXPORT

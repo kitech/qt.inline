@@ -100,6 +100,8 @@ MyQQuickView(QWindow * parent) : QQuickView(parent) {}
 MyQQuickView(QQmlEngine * engine, QWindow * parent) : QQuickView(engine, parent) {}
 // void QQuickView(const QUrl &, QWindow *)
 MyQQuickView(const QUrl & source, QWindow * parent) : QQuickView(source, parent) {}
+// void QQuickView(const QUrl &, QQuickRenderControl *)
+MyQQuickView(const QUrl & source, QQuickRenderControl * renderControl) : QQuickView(source, renderControl) {}
 // Protected virtual Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0)  override {
@@ -255,7 +257,7 @@ void C_ZN10QQuickView14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:58
+// /usr/include/qt/QtQuick/qquickview.h:57
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQuickView10metaObjectEv(void *this_) {
@@ -263,7 +265,7 @@ void* C_ZNK10QQuickView10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:58
+// /usr/include/qt/QtQuick/qquickview.h:57
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickView11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -271,7 +273,7 @@ void* C_ZN10QQuickView11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:58
+// /usr/include/qt/QtQuick/qquickview.h:57
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN10QQuickView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -279,7 +281,7 @@ int C_ZN10QQuickView11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObj
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:58
+// /usr/include/qt/QtQuick/qquickview.h:57
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickView2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -288,7 +290,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:58
+// /usr/include/qt/QtQuick/qquickview.h:57
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickView6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -297,7 +299,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:63
+// /usr/include/qt/QtQuick/qquickview.h:62
 // [-2] void QQuickView(QWindow *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickViewC2EP7QWindow(QWindow * parent) {
@@ -306,7 +308,7 @@ void* C_ZN10QQuickViewC2EP7QWindow(QWindow * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:64
+// /usr/include/qt/QtQuick/qquickview.h:63
 // [-2] void QQuickView(QQmlEngine *, QWindow *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickViewC2EP10QQmlEngineP7QWindow(QQmlEngine * engine, QWindow * parent) {
@@ -315,12 +317,21 @@ void* C_ZN10QQuickViewC2EP10QQmlEngineP7QWindow(QQmlEngine * engine, QWindow * p
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickview.h:65
+// /usr/include/qt/QtQuick/qquickview.h:64
 // [-2] void QQuickView(const QUrl &, QWindow *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQuickViewC2ERK4QUrlP7QWindow(QUrl* source, QWindow * parent) {
   auto _nilp = (MyQQuickView*)(0);
   return  new MyQQuickView(*source, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:65
+// [-2] void QQuickView(const QUrl &, QQuickRenderControl *)
+extern "C" Q_DECL_EXPORT
+void* C_ZN10QQuickViewC2ERK4QUrlP19QQuickRenderControl(QUrl* source, QQuickRenderControl * renderControl) {
+  auto _nilp = (MyQQuickView*)(0);
+  return  new MyQQuickView(*source, renderControl);
 }
 
 // Public virtual Visibility=Default Availability=Available

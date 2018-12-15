@@ -53,7 +53,7 @@ MyQTextImageFormat() : QTextImageFormat() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:735
+// /usr/include/qt/QtGui/qtextformat.h:742
 // [-2] void QTextImageFormat()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QTextImageFormatC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN16QTextImageFormatC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:737
+// /usr/include/qt/QtGui/qtextformat.h:744
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QTextImageFormat7isValidEv(void *this_) {
@@ -69,7 +69,7 @@ bool C_ZNK16QTextImageFormat7isValidEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:739
+// /usr/include/qt/QtGui/qtextformat.h:746
 // [-2] void setName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, QString* name) {
@@ -77,7 +77,7 @@ void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, QString* name) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:740
+// /usr/include/qt/QtGui/qtextformat.h:747
 // [8] QString name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QTextImageFormat4nameEv(void *this_) {
@@ -86,7 +86,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:743
+// /usr/include/qt/QtGui/qtextformat.h:750
 // [-2] void setWidth(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat8setWidthEd(void *this_, qreal width) {
@@ -94,7 +94,7 @@ void C_ZN16QTextImageFormat8setWidthEd(void *this_, qreal width) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:744
+// /usr/include/qt/QtGui/qtextformat.h:751
 // [8] qreal width()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextImageFormat5widthEv(void *this_) {
@@ -102,7 +102,7 @@ qreal C_ZNK16QTextImageFormat5widthEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:747
+// /usr/include/qt/QtGui/qtextformat.h:754
 // [-2] void setHeight(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QTextImageFormat9setHeightEd(void *this_, qreal height) {
@@ -110,12 +110,34 @@ void C_ZN16QTextImageFormat9setHeightEd(void *this_, qreal height) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:748
+// /usr/include/qt/QtGui/qtextformat.h:755
 // [8] qreal height()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QTextImageFormat6heightEv(void *this_) {
   return (qreal)((QTextImageFormat*)this_)->height();
 }
+
+// Public inline Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtGui/qtextformat.h:758
+// [-2] void setQuality(int)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void C_ZN16QTextImageFormat10setQualityEi(void *this_, int quality) {
+  ((QTextImageFormat*)this_)->setQuality(quality);
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public inline Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtGui/qtextformat.h:759
+// [4] int quality()
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+int C_ZNK16QTextImageFormat7qualityEv(void *this_) {
+  return (int)((QTextImageFormat*)this_)->quality();
+}
+#endif // QT_VERSION >= 0x050c00
 
 
 extern "C" Q_DECL_EXPORT

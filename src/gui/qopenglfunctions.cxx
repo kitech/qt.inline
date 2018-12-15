@@ -56,7 +56,7 @@ MyQOpenGLFunctions(QOpenGLContext * context) : QOpenGLFunctions(context) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:233
+// /usr/include/qt/QtGui/qopenglfunctions.h:258
 // [-2] void QOpenGLFunctions()
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QOpenGLFunctionsC2Ev() {
@@ -64,7 +64,7 @@ void* C_ZN16QOpenGLFunctionsC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:234
+// /usr/include/qt/QtGui/qopenglfunctions.h:259
 // [-2] void QOpenGLFunctions(QOpenGLContext *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QOpenGLFunctionsC2EP14QOpenGLContext(QOpenGLContext * context) {
@@ -72,14 +72,14 @@ void* C_ZN16QOpenGLFunctionsC2EP14QOpenGLContext(QOpenGLContext * context) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:235
+// /usr/include/qt/QtGui/qopenglfunctions.h:260
 // [-2] void ~QOpenGLFunctions()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctionsD2Ev(void *this_) {
   delete (QOpenGLFunctions*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:259
+// /usr/include/qt/QtGui/qopenglfunctions.h:285
 // [4] QOpenGLFunctions::OpenGLFeatures openGLFeatures()
 extern "C" Q_DECL_EXPORT
 QOpenGLFunctions::OpenGLFeatures C_ZNK16QOpenGLFunctions14openGLFeaturesEv(void *this_) {
@@ -87,7 +87,7 @@ QOpenGLFunctions::OpenGLFeatures C_ZNK16QOpenGLFunctions14openGLFeaturesEv(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:260
+// /usr/include/qt/QtGui/qopenglfunctions.h:286
 // [1] bool hasOpenGLFeature(QOpenGLFunctions::OpenGLFeature)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QOpenGLFunctions16hasOpenGLFeatureENS_13OpenGLFeatureE(void *this_, QOpenGLFunctions::OpenGLFeature feature) {
@@ -95,7 +95,7 @@ bool C_ZNK16QOpenGLFunctions16hasOpenGLFeatureENS_13OpenGLFeatureE(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:262
+// /usr/include/qt/QtGui/qopenglfunctions.h:288
 // [-2] void initializeOpenGLFunctions()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions25initializeOpenGLFunctionsEv(void *this_) {
@@ -104,7 +104,7 @@ void C_ZN16QOpenGLFunctions25initializeOpenGLFunctionsEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:269
+// /usr/include/qt/QtGui/qopenglfunctions.h:295
 // [-2] void glBindTexture(GLenum, GLuint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -115,7 +115,7 @@ void C_ZN16QOpenGLFunctions13glBindTextureEjj(void *this_, GLenum target, GLuint
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:270
+// /usr/include/qt/QtGui/qopenglfunctions.h:296
 // [-2] void glBlendFunc(GLenum, GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -126,7 +126,7 @@ void C_ZN16QOpenGLFunctions11glBlendFuncEjj(void *this_, GLenum sfactor, GLenum 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:271
+// /usr/include/qt/QtGui/qopenglfunctions.h:297
 // [-2] void glClear(GLbitfield)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -137,7 +137,7 @@ void C_ZN16QOpenGLFunctions7glClearEj(void *this_, GLbitfield mask) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:272
+// /usr/include/qt/QtGui/qopenglfunctions.h:298
 // [-2] void glClearColor(GLclampf, GLclampf, GLclampf, GLclampf)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -148,7 +148,7 @@ void C_ZN16QOpenGLFunctions12glClearColorEffff(void *this_, GLclampf red, GLclam
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:273
+// /usr/include/qt/QtGui/qopenglfunctions.h:299
 // [-2] void glClearStencil(GLint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -159,7 +159,7 @@ void C_ZN16QOpenGLFunctions14glClearStencilEi(void *this_, GLint s) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:274
+// /usr/include/qt/QtGui/qopenglfunctions.h:300
 // [-2] void glColorMask(GLboolean, GLboolean, GLboolean, GLboolean)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -170,7 +170,7 @@ void C_ZN16QOpenGLFunctions11glColorMaskEhhhh(void *this_, GLboolean red, GLbool
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:275
+// /usr/include/qt/QtGui/qopenglfunctions.h:301
 // [-2] void glCopyTexImage2D(GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLsizei, GLint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -181,7 +181,7 @@ void C_ZN16QOpenGLFunctions16glCopyTexImage2DEjijiiiii(void *this_, GLenum targe
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:276
+// /usr/include/qt/QtGui/qopenglfunctions.h:302
 // [-2] void glCopyTexSubImage2D(GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -192,7 +192,7 @@ void C_ZN16QOpenGLFunctions19glCopyTexSubImage2DEjiiiiiii(void *this_, GLenum ta
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:277
+// /usr/include/qt/QtGui/qopenglfunctions.h:303
 // [-2] void glCullFace(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -203,7 +203,7 @@ void C_ZN16QOpenGLFunctions10glCullFaceEj(void *this_, GLenum mode) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:278
+// /usr/include/qt/QtGui/qopenglfunctions.h:304
 // [-2] void glDeleteTextures(GLsizei, const GLuint *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -214,7 +214,7 @@ void C_ZN16QOpenGLFunctions16glDeleteTexturesEiPKj(void *this_, GLsizei n, const
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:279
+// /usr/include/qt/QtGui/qopenglfunctions.h:305
 // [-2] void glDepthFunc(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -225,7 +225,7 @@ void C_ZN16QOpenGLFunctions11glDepthFuncEj(void *this_, GLenum func_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:280
+// /usr/include/qt/QtGui/qopenglfunctions.h:306
 // [-2] void glDepthMask(GLboolean)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -236,7 +236,7 @@ void C_ZN16QOpenGLFunctions11glDepthMaskEh(void *this_, GLboolean flag) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:281
+// /usr/include/qt/QtGui/qopenglfunctions.h:307
 // [-2] void glDisable(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -247,7 +247,7 @@ void C_ZN16QOpenGLFunctions9glDisableEj(void *this_, GLenum cap) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:282
+// /usr/include/qt/QtGui/qopenglfunctions.h:308
 // [-2] void glDrawArrays(GLenum, GLint, GLsizei)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -258,7 +258,7 @@ void C_ZN16QOpenGLFunctions12glDrawArraysEjii(void *this_, GLenum mode, GLint fi
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:283
+// /usr/include/qt/QtGui/qopenglfunctions.h:309
 // [-2] void glDrawElements(GLenum, GLsizei, GLenum, const GLvoid *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -269,7 +269,7 @@ void C_ZN16QOpenGLFunctions14glDrawElementsEjijPKv(void *this_, GLenum mode, GLs
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:284
+// /usr/include/qt/QtGui/qopenglfunctions.h:310
 // [-2] void glEnable(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -280,7 +280,7 @@ void C_ZN16QOpenGLFunctions8glEnableEj(void *this_, GLenum cap) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:285
+// /usr/include/qt/QtGui/qopenglfunctions.h:311
 // [-2] void glFinish()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -291,7 +291,7 @@ void C_ZN16QOpenGLFunctions8glFinishEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:286
+// /usr/include/qt/QtGui/qopenglfunctions.h:312
 // [-2] void glFlush()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -302,7 +302,7 @@ void C_ZN16QOpenGLFunctions7glFlushEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:287
+// /usr/include/qt/QtGui/qopenglfunctions.h:313
 // [-2] void glFrontFace(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -313,7 +313,7 @@ void C_ZN16QOpenGLFunctions11glFrontFaceEj(void *this_, GLenum mode) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:288
+// /usr/include/qt/QtGui/qopenglfunctions.h:314
 // [-2] void glGenTextures(GLsizei, GLuint *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -324,7 +324,7 @@ void C_ZN16QOpenGLFunctions13glGenTexturesEiPj(void *this_, GLsizei n, GLuint * 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:289
+// /usr/include/qt/QtGui/qopenglfunctions.h:315
 // [-2] void glGetBooleanv(GLenum, GLboolean *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -335,7 +335,7 @@ void C_ZN16QOpenGLFunctions13glGetBooleanvEjPh(void *this_, GLenum pname, GLbool
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:290
+// /usr/include/qt/QtGui/qopenglfunctions.h:316
 // [4] GLenum glGetError()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -346,7 +346,7 @@ GLenum C_ZN16QOpenGLFunctions10glGetErrorEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:291
+// /usr/include/qt/QtGui/qopenglfunctions.h:317
 // [-2] void glGetFloatv(GLenum, GLfloat *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -357,7 +357,7 @@ void C_ZN16QOpenGLFunctions11glGetFloatvEjPf(void *this_, GLenum pname, GLfloat 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:292
+// /usr/include/qt/QtGui/qopenglfunctions.h:318
 // [-2] void glGetIntegerv(GLenum, GLint *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -368,7 +368,7 @@ void C_ZN16QOpenGLFunctions13glGetIntegervEjPi(void *this_, GLenum pname, GLint 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:293
+// /usr/include/qt/QtGui/qopenglfunctions.h:319
 // [8] const GLubyte * glGetString(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -379,7 +379,7 @@ void* C_ZN16QOpenGLFunctions11glGetStringEj(void *this_, GLenum name) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:294
+// /usr/include/qt/QtGui/qopenglfunctions.h:320
 // [-2] void glGetTexParameterfv(GLenum, GLenum, GLfloat *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -390,7 +390,7 @@ void C_ZN16QOpenGLFunctions19glGetTexParameterfvEjjPf(void *this_, GLenum target
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:295
+// /usr/include/qt/QtGui/qopenglfunctions.h:321
 // [-2] void glGetTexParameteriv(GLenum, GLenum, GLint *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -401,7 +401,7 @@ void C_ZN16QOpenGLFunctions19glGetTexParameterivEjjPi(void *this_, GLenum target
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:296
+// /usr/include/qt/QtGui/qopenglfunctions.h:322
 // [-2] void glHint(GLenum, GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -412,7 +412,7 @@ void C_ZN16QOpenGLFunctions6glHintEjj(void *this_, GLenum target, GLenum mode) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:297
+// /usr/include/qt/QtGui/qopenglfunctions.h:323
 // [1] GLboolean glIsEnabled(GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -423,7 +423,7 @@ GLboolean C_ZN16QOpenGLFunctions11glIsEnabledEj(void *this_, GLenum cap) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:298
+// /usr/include/qt/QtGui/qopenglfunctions.h:324
 // [1] GLboolean glIsTexture(GLuint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -434,7 +434,7 @@ GLboolean C_ZN16QOpenGLFunctions11glIsTextureEj(void *this_, GLuint texture) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:299
+// /usr/include/qt/QtGui/qopenglfunctions.h:325
 // [-2] void glLineWidth(GLfloat)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -445,7 +445,7 @@ void C_ZN16QOpenGLFunctions11glLineWidthEf(void *this_, GLfloat width) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:300
+// /usr/include/qt/QtGui/qopenglfunctions.h:326
 // [-2] void glPixelStorei(GLenum, GLint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -456,7 +456,7 @@ void C_ZN16QOpenGLFunctions13glPixelStoreiEji(void *this_, GLenum pname, GLint p
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:301
+// /usr/include/qt/QtGui/qopenglfunctions.h:327
 // [-2] void glPolygonOffset(GLfloat, GLfloat)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -467,7 +467,7 @@ void C_ZN16QOpenGLFunctions15glPolygonOffsetEff(void *this_, GLfloat factor, GLf
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:302
+// /usr/include/qt/QtGui/qopenglfunctions.h:328
 // [-2] void glReadPixels(GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, GLvoid *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -478,7 +478,7 @@ void C_ZN16QOpenGLFunctions12glReadPixelsEiiiijjPv(void *this_, GLint x, GLint y
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:303
+// /usr/include/qt/QtGui/qopenglfunctions.h:329
 // [-2] void glScissor(GLint, GLint, GLsizei, GLsizei)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -489,7 +489,7 @@ void C_ZN16QOpenGLFunctions9glScissorEiiii(void *this_, GLint x, GLint y, GLsize
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:304
+// /usr/include/qt/QtGui/qopenglfunctions.h:330
 // [-2] void glStencilFunc(GLenum, GLint, GLuint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -500,7 +500,7 @@ void C_ZN16QOpenGLFunctions13glStencilFuncEjij(void *this_, GLenum func_, GLint 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:305
+// /usr/include/qt/QtGui/qopenglfunctions.h:331
 // [-2] void glStencilMask(GLuint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -511,7 +511,7 @@ void C_ZN16QOpenGLFunctions13glStencilMaskEj(void *this_, GLuint mask) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:306
+// /usr/include/qt/QtGui/qopenglfunctions.h:332
 // [-2] void glStencilOp(GLenum, GLenum, GLenum)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -522,7 +522,7 @@ void C_ZN16QOpenGLFunctions11glStencilOpEjjj(void *this_, GLenum fail, GLenum zf
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:307
+// /usr/include/qt/QtGui/qopenglfunctions.h:333
 // [-2] void glTexImage2D(GLenum, GLint, GLint, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -533,7 +533,7 @@ void C_ZN16QOpenGLFunctions12glTexImage2DEjiiiiijjPKv(void *this_, GLenum target
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:308
+// /usr/include/qt/QtGui/qopenglfunctions.h:334
 // [-2] void glTexParameterf(GLenum, GLenum, GLfloat)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -544,7 +544,7 @@ void C_ZN16QOpenGLFunctions15glTexParameterfEjjf(void *this_, GLenum target, GLe
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:309
+// /usr/include/qt/QtGui/qopenglfunctions.h:335
 // [-2] void glTexParameterfv(GLenum, GLenum, const GLfloat *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -555,7 +555,7 @@ void C_ZN16QOpenGLFunctions16glTexParameterfvEjjPKf(void *this_, GLenum target, 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:310
+// /usr/include/qt/QtGui/qopenglfunctions.h:336
 // [-2] void glTexParameteri(GLenum, GLenum, GLint)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -566,7 +566,7 @@ void C_ZN16QOpenGLFunctions15glTexParameteriEjji(void *this_, GLenum target, GLe
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:311
+// /usr/include/qt/QtGui/qopenglfunctions.h:337
 // [-2] void glTexParameteriv(GLenum, GLenum, const GLint *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -577,7 +577,7 @@ void C_ZN16QOpenGLFunctions16glTexParameterivEjjPKi(void *this_, GLenum target, 
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:312
+// /usr/include/qt/QtGui/qopenglfunctions.h:338
 // [-2] void glTexSubImage2D(GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -588,7 +588,7 @@ void C_ZN16QOpenGLFunctions15glTexSubImage2DEjiiiiijjPKv(void *this_, GLenum tar
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglfunctions.h:313
+// /usr/include/qt/QtGui/qopenglfunctions.h:339
 // [-2] void glViewport(GLint, GLint, GLsizei, GLsizei)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -598,7 +598,7 @@ void C_ZN16QOpenGLFunctions10glViewportEiiii(void *this_, GLint x, GLint y, GLsi
 #endif // QT_VERSION >= 0x050300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:316
+// /usr/include/qt/QtGui/qopenglfunctions.h:342
 // [-2] void glActiveTexture(GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions15glActiveTextureEj(void *this_, GLenum texture) {
@@ -606,7 +606,7 @@ void C_ZN16QOpenGLFunctions15glActiveTextureEj(void *this_, GLenum texture) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:317
+// /usr/include/qt/QtGui/qopenglfunctions.h:343
 // [-2] void glAttachShader(GLuint, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glAttachShaderEjj(void *this_, GLuint program, GLuint shader) {
@@ -614,7 +614,7 @@ void C_ZN16QOpenGLFunctions14glAttachShaderEjj(void *this_, GLuint program, GLui
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:318
+// /usr/include/qt/QtGui/qopenglfunctions.h:344
 // [-2] void glBindAttribLocation(GLuint, GLuint, const char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions20glBindAttribLocationEjjPKc(void *this_, GLuint program, GLuint index, const char * name) {
@@ -622,7 +622,7 @@ void C_ZN16QOpenGLFunctions20glBindAttribLocationEjjPKc(void *this_, GLuint prog
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:319
+// /usr/include/qt/QtGui/qopenglfunctions.h:345
 // [-2] void glBindBuffer(GLenum, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glBindBufferEjj(void *this_, GLenum target, GLuint buffer) {
@@ -630,7 +630,7 @@ void C_ZN16QOpenGLFunctions12glBindBufferEjj(void *this_, GLenum target, GLuint 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:320
+// /usr/include/qt/QtGui/qopenglfunctions.h:346
 // [-2] void glBindFramebuffer(GLenum, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glBindFramebufferEjj(void *this_, GLenum target, GLuint framebuffer) {
@@ -638,7 +638,7 @@ void C_ZN16QOpenGLFunctions17glBindFramebufferEjj(void *this_, GLenum target, GL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:321
+// /usr/include/qt/QtGui/qopenglfunctions.h:347
 // [-2] void glBindRenderbuffer(GLenum, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glBindRenderbufferEjj(void *this_, GLenum target, GLuint renderbuffer) {
@@ -646,7 +646,7 @@ void C_ZN16QOpenGLFunctions18glBindRenderbufferEjj(void *this_, GLenum target, G
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:322
+// /usr/include/qt/QtGui/qopenglfunctions.h:348
 // [-2] void glBlendColor(GLclampf, GLclampf, GLclampf, GLclampf)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glBlendColorEffff(void *this_, GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha) {
@@ -654,7 +654,7 @@ void C_ZN16QOpenGLFunctions12glBlendColorEffff(void *this_, GLclampf red, GLclam
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:323
+// /usr/include/qt/QtGui/qopenglfunctions.h:349
 // [-2] void glBlendEquation(GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions15glBlendEquationEj(void *this_, GLenum mode) {
@@ -662,7 +662,7 @@ void C_ZN16QOpenGLFunctions15glBlendEquationEj(void *this_, GLenum mode) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:324
+// /usr/include/qt/QtGui/qopenglfunctions.h:350
 // [-2] void glBlendEquationSeparate(GLenum, GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions23glBlendEquationSeparateEjj(void *this_, GLenum modeRGB, GLenum modeAlpha) {
@@ -670,7 +670,7 @@ void C_ZN16QOpenGLFunctions23glBlendEquationSeparateEjj(void *this_, GLenum mode
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:325
+// /usr/include/qt/QtGui/qopenglfunctions.h:351
 // [-2] void glBlendFuncSeparate(GLenum, GLenum, GLenum, GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions19glBlendFuncSeparateEjjjj(void *this_, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha) {
@@ -678,7 +678,7 @@ void C_ZN16QOpenGLFunctions19glBlendFuncSeparateEjjjj(void *this_, GLenum srcRGB
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:326
+// /usr/include/qt/QtGui/qopenglfunctions.h:352
 // [-2] void glBufferData(GLenum, qopengl_GLsizeiptr, const void *, GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glBufferDataEjlPKvj(void *this_, GLenum target, qopengl_GLsizeiptr size, const void * data, GLenum usage) {
@@ -686,7 +686,7 @@ void C_ZN16QOpenGLFunctions12glBufferDataEjlPKvj(void *this_, GLenum target, qop
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:327
+// /usr/include/qt/QtGui/qopenglfunctions.h:353
 // [-2] void glBufferSubData(GLenum, qopengl_GLintptr, qopengl_GLsizeiptr, const void *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions15glBufferSubDataEjllPKv(void *this_, GLenum target, qopengl_GLintptr offset, qopengl_GLsizeiptr size, const void * data) {
@@ -694,7 +694,7 @@ void C_ZN16QOpenGLFunctions15glBufferSubDataEjllPKv(void *this_, GLenum target, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:328
+// /usr/include/qt/QtGui/qopenglfunctions.h:354
 // [4] GLenum glCheckFramebufferStatus(GLenum)
 extern "C" Q_DECL_EXPORT
 GLenum C_ZN16QOpenGLFunctions24glCheckFramebufferStatusEj(void *this_, GLenum target) {
@@ -702,7 +702,7 @@ GLenum C_ZN16QOpenGLFunctions24glCheckFramebufferStatusEj(void *this_, GLenum ta
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:329
+// /usr/include/qt/QtGui/qopenglfunctions.h:355
 // [-2] void glClearDepthf(GLclampf)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions13glClearDepthfEf(void *this_, GLclampf depth) {
@@ -710,7 +710,7 @@ void C_ZN16QOpenGLFunctions13glClearDepthfEf(void *this_, GLclampf depth) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:330
+// /usr/include/qt/QtGui/qopenglfunctions.h:356
 // [-2] void glCompileShader(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions15glCompileShaderEj(void *this_, GLuint shader) {
@@ -718,7 +718,7 @@ void C_ZN16QOpenGLFunctions15glCompileShaderEj(void *this_, GLuint shader) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:331
+// /usr/include/qt/QtGui/qopenglfunctions.h:357
 // [-2] void glCompressedTexImage2D(GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const void *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions22glCompressedTexImage2DEjijiiiiPKv(void *this_, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data) {
@@ -726,7 +726,7 @@ void C_ZN16QOpenGLFunctions22glCompressedTexImage2DEjijiiiiPKv(void *this_, GLen
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:332
+// /usr/include/qt/QtGui/qopenglfunctions.h:358
 // [-2] void glCompressedTexSubImage2D(GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const void *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions25glCompressedTexSubImage2DEjiiiiijiPKv(void *this_, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data) {
@@ -734,7 +734,7 @@ void C_ZN16QOpenGLFunctions25glCompressedTexSubImage2DEjiiiiijiPKv(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:333
+// /usr/include/qt/QtGui/qopenglfunctions.h:359
 // [4] GLuint glCreateProgram()
 extern "C" Q_DECL_EXPORT
 GLuint C_ZN16QOpenGLFunctions15glCreateProgramEv(void *this_) {
@@ -742,7 +742,7 @@ GLuint C_ZN16QOpenGLFunctions15glCreateProgramEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:334
+// /usr/include/qt/QtGui/qopenglfunctions.h:360
 // [4] GLuint glCreateShader(GLenum)
 extern "C" Q_DECL_EXPORT
 GLuint C_ZN16QOpenGLFunctions14glCreateShaderEj(void *this_, GLenum type_) {
@@ -750,7 +750,7 @@ GLuint C_ZN16QOpenGLFunctions14glCreateShaderEj(void *this_, GLenum type_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:335
+// /usr/include/qt/QtGui/qopenglfunctions.h:361
 // [-2] void glDeleteBuffers(GLsizei, const GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions15glDeleteBuffersEiPKj(void *this_, GLsizei n, const GLuint * buffers) {
@@ -758,7 +758,7 @@ void C_ZN16QOpenGLFunctions15glDeleteBuffersEiPKj(void *this_, GLsizei n, const 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:336
+// /usr/include/qt/QtGui/qopenglfunctions.h:362
 // [-2] void glDeleteFramebuffers(GLsizei, const GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions20glDeleteFramebuffersEiPKj(void *this_, GLsizei n, const GLuint * framebuffers) {
@@ -766,7 +766,7 @@ void C_ZN16QOpenGLFunctions20glDeleteFramebuffersEiPKj(void *this_, GLsizei n, c
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:337
+// /usr/include/qt/QtGui/qopenglfunctions.h:363
 // [-2] void glDeleteProgram(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions15glDeleteProgramEj(void *this_, GLuint program) {
@@ -774,7 +774,7 @@ void C_ZN16QOpenGLFunctions15glDeleteProgramEj(void *this_, GLuint program) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:338
+// /usr/include/qt/QtGui/qopenglfunctions.h:364
 // [-2] void glDeleteRenderbuffers(GLsizei, const GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions21glDeleteRenderbuffersEiPKj(void *this_, GLsizei n, const GLuint * renderbuffers) {
@@ -782,7 +782,7 @@ void C_ZN16QOpenGLFunctions21glDeleteRenderbuffersEiPKj(void *this_, GLsizei n, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:339
+// /usr/include/qt/QtGui/qopenglfunctions.h:365
 // [-2] void glDeleteShader(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glDeleteShaderEj(void *this_, GLuint shader) {
@@ -790,7 +790,7 @@ void C_ZN16QOpenGLFunctions14glDeleteShaderEj(void *this_, GLuint shader) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:340
+// /usr/include/qt/QtGui/qopenglfunctions.h:366
 // [-2] void glDepthRangef(GLclampf, GLclampf)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions13glDepthRangefEff(void *this_, GLclampf zNear, GLclampf zFar) {
@@ -798,7 +798,7 @@ void C_ZN16QOpenGLFunctions13glDepthRangefEff(void *this_, GLclampf zNear, GLcla
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:341
+// /usr/include/qt/QtGui/qopenglfunctions.h:367
 // [-2] void glDetachShader(GLuint, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glDetachShaderEjj(void *this_, GLuint program, GLuint shader) {
@@ -806,7 +806,7 @@ void C_ZN16QOpenGLFunctions14glDetachShaderEjj(void *this_, GLuint program, GLui
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:342
+// /usr/include/qt/QtGui/qopenglfunctions.h:368
 // [-2] void glDisableVertexAttribArray(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions26glDisableVertexAttribArrayEj(void *this_, GLuint index) {
@@ -814,7 +814,7 @@ void C_ZN16QOpenGLFunctions26glDisableVertexAttribArrayEj(void *this_, GLuint in
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:343
+// /usr/include/qt/QtGui/qopenglfunctions.h:369
 // [-2] void glEnableVertexAttribArray(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions25glEnableVertexAttribArrayEj(void *this_, GLuint index) {
@@ -822,7 +822,7 @@ void C_ZN16QOpenGLFunctions25glEnableVertexAttribArrayEj(void *this_, GLuint ind
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:344
+// /usr/include/qt/QtGui/qopenglfunctions.h:370
 // [-2] void glFramebufferRenderbuffer(GLenum, GLenum, GLenum, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions25glFramebufferRenderbufferEjjjj(void *this_, GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer) {
@@ -830,7 +830,7 @@ void C_ZN16QOpenGLFunctions25glFramebufferRenderbufferEjjjj(void *this_, GLenum 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:345
+// /usr/include/qt/QtGui/qopenglfunctions.h:371
 // [-2] void glFramebufferTexture2D(GLenum, GLenum, GLenum, GLuint, GLint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions22glFramebufferTexture2DEjjjji(void *this_, GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
@@ -838,7 +838,7 @@ void C_ZN16QOpenGLFunctions22glFramebufferTexture2DEjjjji(void *this_, GLenum ta
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:346
+// /usr/include/qt/QtGui/qopenglfunctions.h:372
 // [-2] void glGenBuffers(GLsizei, GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glGenBuffersEiPj(void *this_, GLsizei n, GLuint * buffers) {
@@ -846,7 +846,7 @@ void C_ZN16QOpenGLFunctions12glGenBuffersEiPj(void *this_, GLsizei n, GLuint * b
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:347
+// /usr/include/qt/QtGui/qopenglfunctions.h:373
 // [-2] void glGenerateMipmap(GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions16glGenerateMipmapEj(void *this_, GLenum target) {
@@ -854,7 +854,7 @@ void C_ZN16QOpenGLFunctions16glGenerateMipmapEj(void *this_, GLenum target) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:348
+// /usr/include/qt/QtGui/qopenglfunctions.h:374
 // [-2] void glGenFramebuffers(GLsizei, GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glGenFramebuffersEiPj(void *this_, GLsizei n, GLuint * framebuffers) {
@@ -862,7 +862,7 @@ void C_ZN16QOpenGLFunctions17glGenFramebuffersEiPj(void *this_, GLsizei n, GLuin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:349
+// /usr/include/qt/QtGui/qopenglfunctions.h:375
 // [-2] void glGenRenderbuffers(GLsizei, GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glGenRenderbuffersEiPj(void *this_, GLsizei n, GLuint * renderbuffers) {
@@ -870,7 +870,7 @@ void C_ZN16QOpenGLFunctions18glGenRenderbuffersEiPj(void *this_, GLsizei n, GLui
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:350
+// /usr/include/qt/QtGui/qopenglfunctions.h:376
 // [-2] void glGetActiveAttrib(GLuint, GLuint, GLsizei, GLsizei *, GLint *, GLenum *, char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glGetActiveAttribEjjiPiS0_PjPc(void *this_, GLuint program, GLuint index, GLsizei bufsize, GLsizei * length, GLint * size, GLenum * type_, char * name) {
@@ -878,7 +878,7 @@ void C_ZN16QOpenGLFunctions17glGetActiveAttribEjjiPiS0_PjPc(void *this_, GLuint 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:351
+// /usr/include/qt/QtGui/qopenglfunctions.h:377
 // [-2] void glGetActiveUniform(GLuint, GLuint, GLsizei, GLsizei *, GLint *, GLenum *, char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glGetActiveUniformEjjiPiS0_PjPc(void *this_, GLuint program, GLuint index, GLsizei bufsize, GLsizei * length, GLint * size, GLenum * type_, char * name) {
@@ -886,7 +886,7 @@ void C_ZN16QOpenGLFunctions18glGetActiveUniformEjjiPiS0_PjPc(void *this_, GLuint
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:352
+// /usr/include/qt/QtGui/qopenglfunctions.h:378
 // [-2] void glGetAttachedShaders(GLuint, GLsizei, GLsizei *, GLuint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions20glGetAttachedShadersEjiPiPj(void *this_, GLuint program, GLsizei maxcount, GLsizei * count, GLuint * shaders) {
@@ -894,7 +894,7 @@ void C_ZN16QOpenGLFunctions20glGetAttachedShadersEjiPiPj(void *this_, GLuint pro
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:353
+// /usr/include/qt/QtGui/qopenglfunctions.h:379
 // [4] GLint glGetAttribLocation(GLuint, const char *)
 extern "C" Q_DECL_EXPORT
 GLint C_ZN16QOpenGLFunctions19glGetAttribLocationEjPKc(void *this_, GLuint program, const char * name) {
@@ -902,7 +902,7 @@ GLint C_ZN16QOpenGLFunctions19glGetAttribLocationEjPKc(void *this_, GLuint progr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:354
+// /usr/include/qt/QtGui/qopenglfunctions.h:380
 // [-2] void glGetBufferParameteriv(GLenum, GLenum, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions22glGetBufferParameterivEjjPi(void *this_, GLenum target, GLenum pname, GLint * params) {
@@ -910,7 +910,7 @@ void C_ZN16QOpenGLFunctions22glGetBufferParameterivEjjPi(void *this_, GLenum tar
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:355
+// /usr/include/qt/QtGui/qopenglfunctions.h:381
 // [-2] void glGetFramebufferAttachmentParameteriv(GLenum, GLenum, GLenum, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions37glGetFramebufferAttachmentParameterivEjjjPi(void *this_, GLenum target, GLenum attachment, GLenum pname, GLint * params) {
@@ -918,7 +918,7 @@ void C_ZN16QOpenGLFunctions37glGetFramebufferAttachmentParameterivEjjjPi(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:356
+// /usr/include/qt/QtGui/qopenglfunctions.h:382
 // [-2] void glGetProgramiv(GLuint, GLenum, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glGetProgramivEjjPi(void *this_, GLuint program, GLenum pname, GLint * params) {
@@ -926,7 +926,7 @@ void C_ZN16QOpenGLFunctions14glGetProgramivEjjPi(void *this_, GLuint program, GL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:357
+// /usr/include/qt/QtGui/qopenglfunctions.h:383
 // [-2] void glGetProgramInfoLog(GLuint, GLsizei, GLsizei *, char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions19glGetProgramInfoLogEjiPiPc(void *this_, GLuint program, GLsizei bufsize, GLsizei * length, char * infolog) {
@@ -934,7 +934,7 @@ void C_ZN16QOpenGLFunctions19glGetProgramInfoLogEjiPiPc(void *this_, GLuint prog
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:358
+// /usr/include/qt/QtGui/qopenglfunctions.h:384
 // [-2] void glGetRenderbufferParameteriv(GLenum, GLenum, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions28glGetRenderbufferParameterivEjjPi(void *this_, GLenum target, GLenum pname, GLint * params) {
@@ -942,7 +942,7 @@ void C_ZN16QOpenGLFunctions28glGetRenderbufferParameterivEjjPi(void *this_, GLen
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:359
+// /usr/include/qt/QtGui/qopenglfunctions.h:385
 // [-2] void glGetShaderiv(GLuint, GLenum, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions13glGetShaderivEjjPi(void *this_, GLuint shader, GLenum pname, GLint * params) {
@@ -950,7 +950,7 @@ void C_ZN16QOpenGLFunctions13glGetShaderivEjjPi(void *this_, GLuint shader, GLen
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:360
+// /usr/include/qt/QtGui/qopenglfunctions.h:386
 // [-2] void glGetShaderInfoLog(GLuint, GLsizei, GLsizei *, char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glGetShaderInfoLogEjiPiPc(void *this_, GLuint shader, GLsizei bufsize, GLsizei * length, char * infolog) {
@@ -958,7 +958,7 @@ void C_ZN16QOpenGLFunctions18glGetShaderInfoLogEjiPiPc(void *this_, GLuint shade
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:361
+// /usr/include/qt/QtGui/qopenglfunctions.h:387
 // [-2] void glGetShaderPrecisionFormat(GLenum, GLenum, GLint *, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions26glGetShaderPrecisionFormatEjjPiS0_(void *this_, GLenum shadertype, GLenum precisiontype, GLint * range_, GLint * precision) {
@@ -966,7 +966,7 @@ void C_ZN16QOpenGLFunctions26glGetShaderPrecisionFormatEjjPiS0_(void *this_, GLe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:362
+// /usr/include/qt/QtGui/qopenglfunctions.h:388
 // [-2] void glGetShaderSource(GLuint, GLsizei, GLsizei *, char *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glGetShaderSourceEjiPiPc(void *this_, GLuint shader, GLsizei bufsize, GLsizei * length, char * source) {
@@ -974,7 +974,7 @@ void C_ZN16QOpenGLFunctions17glGetShaderSourceEjiPiPc(void *this_, GLuint shader
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:363
+// /usr/include/qt/QtGui/qopenglfunctions.h:389
 // [-2] void glGetUniformfv(GLuint, GLint, GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glGetUniformfvEjiPf(void *this_, GLuint program, GLint location, GLfloat * params) {
@@ -982,7 +982,7 @@ void C_ZN16QOpenGLFunctions14glGetUniformfvEjiPf(void *this_, GLuint program, GL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:364
+// /usr/include/qt/QtGui/qopenglfunctions.h:390
 // [-2] void glGetUniformiv(GLuint, GLint, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glGetUniformivEjiPi(void *this_, GLuint program, GLint location, GLint * params) {
@@ -990,7 +990,7 @@ void C_ZN16QOpenGLFunctions14glGetUniformivEjiPi(void *this_, GLuint program, GL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:365
+// /usr/include/qt/QtGui/qopenglfunctions.h:391
 // [4] GLint glGetUniformLocation(GLuint, const char *)
 extern "C" Q_DECL_EXPORT
 GLint C_ZN16QOpenGLFunctions20glGetUniformLocationEjPKc(void *this_, GLuint program, const char * name) {
@@ -998,7 +998,7 @@ GLint C_ZN16QOpenGLFunctions20glGetUniformLocationEjPKc(void *this_, GLuint prog
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:366
+// /usr/include/qt/QtGui/qopenglfunctions.h:392
 // [-2] void glGetVertexAttribfv(GLuint, GLenum, GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions19glGetVertexAttribfvEjjPf(void *this_, GLuint index, GLenum pname, GLfloat * params) {
@@ -1006,7 +1006,7 @@ void C_ZN16QOpenGLFunctions19glGetVertexAttribfvEjjPf(void *this_, GLuint index,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:367
+// /usr/include/qt/QtGui/qopenglfunctions.h:393
 // [-2] void glGetVertexAttribiv(GLuint, GLenum, GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions19glGetVertexAttribivEjjPi(void *this_, GLuint index, GLenum pname, GLint * params) {
@@ -1014,7 +1014,7 @@ void C_ZN16QOpenGLFunctions19glGetVertexAttribivEjjPi(void *this_, GLuint index,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:368
+// /usr/include/qt/QtGui/qopenglfunctions.h:394
 // [-2] void glGetVertexAttribPointerv(GLuint, GLenum, void **)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions25glGetVertexAttribPointervEjjPPv(void *this_, GLuint index, GLenum pname, void ** pointer) {
@@ -1022,7 +1022,7 @@ void C_ZN16QOpenGLFunctions25glGetVertexAttribPointervEjjPPv(void *this_, GLuint
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:369
+// /usr/include/qt/QtGui/qopenglfunctions.h:395
 // [1] GLboolean glIsBuffer(GLuint)
 extern "C" Q_DECL_EXPORT
 GLboolean C_ZN16QOpenGLFunctions10glIsBufferEj(void *this_, GLuint buffer) {
@@ -1030,7 +1030,7 @@ GLboolean C_ZN16QOpenGLFunctions10glIsBufferEj(void *this_, GLuint buffer) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:370
+// /usr/include/qt/QtGui/qopenglfunctions.h:396
 // [1] GLboolean glIsFramebuffer(GLuint)
 extern "C" Q_DECL_EXPORT
 GLboolean C_ZN16QOpenGLFunctions15glIsFramebufferEj(void *this_, GLuint framebuffer) {
@@ -1038,7 +1038,7 @@ GLboolean C_ZN16QOpenGLFunctions15glIsFramebufferEj(void *this_, GLuint framebuf
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:371
+// /usr/include/qt/QtGui/qopenglfunctions.h:397
 // [1] GLboolean glIsProgram(GLuint)
 extern "C" Q_DECL_EXPORT
 GLboolean C_ZN16QOpenGLFunctions11glIsProgramEj(void *this_, GLuint program) {
@@ -1046,7 +1046,7 @@ GLboolean C_ZN16QOpenGLFunctions11glIsProgramEj(void *this_, GLuint program) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:372
+// /usr/include/qt/QtGui/qopenglfunctions.h:398
 // [1] GLboolean glIsRenderbuffer(GLuint)
 extern "C" Q_DECL_EXPORT
 GLboolean C_ZN16QOpenGLFunctions16glIsRenderbufferEj(void *this_, GLuint renderbuffer) {
@@ -1054,7 +1054,7 @@ GLboolean C_ZN16QOpenGLFunctions16glIsRenderbufferEj(void *this_, GLuint renderb
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:373
+// /usr/include/qt/QtGui/qopenglfunctions.h:399
 // [1] GLboolean glIsShader(GLuint)
 extern "C" Q_DECL_EXPORT
 GLboolean C_ZN16QOpenGLFunctions10glIsShaderEj(void *this_, GLuint shader) {
@@ -1062,7 +1062,7 @@ GLboolean C_ZN16QOpenGLFunctions10glIsShaderEj(void *this_, GLuint shader) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:374
+// /usr/include/qt/QtGui/qopenglfunctions.h:400
 // [-2] void glLinkProgram(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions13glLinkProgramEj(void *this_, GLuint program) {
@@ -1070,7 +1070,7 @@ void C_ZN16QOpenGLFunctions13glLinkProgramEj(void *this_, GLuint program) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:375
+// /usr/include/qt/QtGui/qopenglfunctions.h:401
 // [-2] void glReleaseShaderCompiler()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions23glReleaseShaderCompilerEv(void *this_) {
@@ -1078,7 +1078,7 @@ void C_ZN16QOpenGLFunctions23glReleaseShaderCompilerEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:376
+// /usr/include/qt/QtGui/qopenglfunctions.h:402
 // [-2] void glRenderbufferStorage(GLenum, GLenum, GLsizei, GLsizei)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions21glRenderbufferStorageEjjii(void *this_, GLenum target, GLenum internalformat, GLsizei width, GLsizei height) {
@@ -1086,7 +1086,7 @@ void C_ZN16QOpenGLFunctions21glRenderbufferStorageEjjii(void *this_, GLenum targ
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:377
+// /usr/include/qt/QtGui/qopenglfunctions.h:403
 // [-2] void glSampleCoverage(GLclampf, GLboolean)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions16glSampleCoverageEfh(void *this_, GLclampf value, GLboolean invert) {
@@ -1094,7 +1094,7 @@ void C_ZN16QOpenGLFunctions16glSampleCoverageEfh(void *this_, GLclampf value, GL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:378
+// /usr/include/qt/QtGui/qopenglfunctions.h:404
 // [-2] void glShaderBinary(GLint, const GLuint *, GLenum, const void *, GLint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions14glShaderBinaryEiPKjjPKvi(void *this_, GLint n, const GLuint * shaders, GLenum binaryformat, const void * binary, GLint length) {
@@ -1102,7 +1102,7 @@ void C_ZN16QOpenGLFunctions14glShaderBinaryEiPKjjPKvi(void *this_, GLint n, cons
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:380
+// /usr/include/qt/QtGui/qopenglfunctions.h:406
 // [-2] void glStencilFuncSeparate(GLenum, GLenum, GLint, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions21glStencilFuncSeparateEjjij(void *this_, GLenum face, GLenum func_, GLint ref, GLuint mask) {
@@ -1110,7 +1110,7 @@ void C_ZN16QOpenGLFunctions21glStencilFuncSeparateEjjij(void *this_, GLenum face
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:381
+// /usr/include/qt/QtGui/qopenglfunctions.h:407
 // [-2] void glStencilMaskSeparate(GLenum, GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions21glStencilMaskSeparateEjj(void *this_, GLenum face, GLuint mask) {
@@ -1118,7 +1118,7 @@ void C_ZN16QOpenGLFunctions21glStencilMaskSeparateEjj(void *this_, GLenum face, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:382
+// /usr/include/qt/QtGui/qopenglfunctions.h:408
 // [-2] void glStencilOpSeparate(GLenum, GLenum, GLenum, GLenum)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions19glStencilOpSeparateEjjjj(void *this_, GLenum face, GLenum fail, GLenum zfail, GLenum zpass) {
@@ -1126,7 +1126,7 @@ void C_ZN16QOpenGLFunctions19glStencilOpSeparateEjjjj(void *this_, GLenum face, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:383
+// /usr/include/qt/QtGui/qopenglfunctions.h:409
 // [-2] void glUniform1f(GLint, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform1fEif(void *this_, GLint location, GLfloat x) {
@@ -1134,7 +1134,7 @@ void C_ZN16QOpenGLFunctions11glUniform1fEif(void *this_, GLint location, GLfloat
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:384
+// /usr/include/qt/QtGui/qopenglfunctions.h:410
 // [-2] void glUniform1fv(GLint, GLsizei, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform1fvEiiPKf(void *this_, GLint location, GLsizei count, const GLfloat * v) {
@@ -1142,7 +1142,7 @@ void C_ZN16QOpenGLFunctions12glUniform1fvEiiPKf(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:385
+// /usr/include/qt/QtGui/qopenglfunctions.h:411
 // [-2] void glUniform1i(GLint, GLint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform1iEii(void *this_, GLint location, GLint x) {
@@ -1150,7 +1150,7 @@ void C_ZN16QOpenGLFunctions11glUniform1iEii(void *this_, GLint location, GLint x
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:386
+// /usr/include/qt/QtGui/qopenglfunctions.h:412
 // [-2] void glUniform1iv(GLint, GLsizei, const GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform1ivEiiPKi(void *this_, GLint location, GLsizei count, const GLint * v) {
@@ -1158,7 +1158,7 @@ void C_ZN16QOpenGLFunctions12glUniform1ivEiiPKi(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:387
+// /usr/include/qt/QtGui/qopenglfunctions.h:413
 // [-2] void glUniform2f(GLint, GLfloat, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform2fEiff(void *this_, GLint location, GLfloat x, GLfloat y) {
@@ -1166,7 +1166,7 @@ void C_ZN16QOpenGLFunctions11glUniform2fEiff(void *this_, GLint location, GLfloa
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:388
+// /usr/include/qt/QtGui/qopenglfunctions.h:414
 // [-2] void glUniform2fv(GLint, GLsizei, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform2fvEiiPKf(void *this_, GLint location, GLsizei count, const GLfloat * v) {
@@ -1174,7 +1174,7 @@ void C_ZN16QOpenGLFunctions12glUniform2fvEiiPKf(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:389
+// /usr/include/qt/QtGui/qopenglfunctions.h:415
 // [-2] void glUniform2i(GLint, GLint, GLint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform2iEiii(void *this_, GLint location, GLint x, GLint y) {
@@ -1182,7 +1182,7 @@ void C_ZN16QOpenGLFunctions11glUniform2iEiii(void *this_, GLint location, GLint 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:390
+// /usr/include/qt/QtGui/qopenglfunctions.h:416
 // [-2] void glUniform2iv(GLint, GLsizei, const GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform2ivEiiPKi(void *this_, GLint location, GLsizei count, const GLint * v) {
@@ -1190,7 +1190,7 @@ void C_ZN16QOpenGLFunctions12glUniform2ivEiiPKi(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:391
+// /usr/include/qt/QtGui/qopenglfunctions.h:417
 // [-2] void glUniform3f(GLint, GLfloat, GLfloat, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform3fEifff(void *this_, GLint location, GLfloat x, GLfloat y, GLfloat z) {
@@ -1198,7 +1198,7 @@ void C_ZN16QOpenGLFunctions11glUniform3fEifff(void *this_, GLint location, GLflo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:392
+// /usr/include/qt/QtGui/qopenglfunctions.h:418
 // [-2] void glUniform3fv(GLint, GLsizei, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform3fvEiiPKf(void *this_, GLint location, GLsizei count, const GLfloat * v) {
@@ -1206,7 +1206,7 @@ void C_ZN16QOpenGLFunctions12glUniform3fvEiiPKf(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:393
+// /usr/include/qt/QtGui/qopenglfunctions.h:419
 // [-2] void glUniform3i(GLint, GLint, GLint, GLint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform3iEiiii(void *this_, GLint location, GLint x, GLint y, GLint z) {
@@ -1214,7 +1214,7 @@ void C_ZN16QOpenGLFunctions11glUniform3iEiiii(void *this_, GLint location, GLint
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:394
+// /usr/include/qt/QtGui/qopenglfunctions.h:420
 // [-2] void glUniform3iv(GLint, GLsizei, const GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform3ivEiiPKi(void *this_, GLint location, GLsizei count, const GLint * v) {
@@ -1222,7 +1222,7 @@ void C_ZN16QOpenGLFunctions12glUniform3ivEiiPKi(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:395
+// /usr/include/qt/QtGui/qopenglfunctions.h:421
 // [-2] void glUniform4f(GLint, GLfloat, GLfloat, GLfloat, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform4fEiffff(void *this_, GLint location, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
@@ -1230,7 +1230,7 @@ void C_ZN16QOpenGLFunctions11glUniform4fEiffff(void *this_, GLint location, GLfl
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:396
+// /usr/include/qt/QtGui/qopenglfunctions.h:422
 // [-2] void glUniform4fv(GLint, GLsizei, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform4fvEiiPKf(void *this_, GLint location, GLsizei count, const GLfloat * v) {
@@ -1238,7 +1238,7 @@ void C_ZN16QOpenGLFunctions12glUniform4fvEiiPKf(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:397
+// /usr/include/qt/QtGui/qopenglfunctions.h:423
 // [-2] void glUniform4i(GLint, GLint, GLint, GLint, GLint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions11glUniform4iEiiiii(void *this_, GLint location, GLint x, GLint y, GLint z, GLint w) {
@@ -1246,7 +1246,7 @@ void C_ZN16QOpenGLFunctions11glUniform4iEiiiii(void *this_, GLint location, GLin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:398
+// /usr/include/qt/QtGui/qopenglfunctions.h:424
 // [-2] void glUniform4iv(GLint, GLsizei, const GLint *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUniform4ivEiiPKi(void *this_, GLint location, GLsizei count, const GLint * v) {
@@ -1254,7 +1254,7 @@ void C_ZN16QOpenGLFunctions12glUniform4ivEiiPKi(void *this_, GLint location, GLs
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:399
+// /usr/include/qt/QtGui/qopenglfunctions.h:425
 // [-2] void glUniformMatrix2fv(GLint, GLsizei, GLboolean, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glUniformMatrix2fvEiihPKf(void *this_, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value) {
@@ -1262,7 +1262,7 @@ void C_ZN16QOpenGLFunctions18glUniformMatrix2fvEiihPKf(void *this_, GLint locati
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:400
+// /usr/include/qt/QtGui/qopenglfunctions.h:426
 // [-2] void glUniformMatrix3fv(GLint, GLsizei, GLboolean, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glUniformMatrix3fvEiihPKf(void *this_, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value) {
@@ -1270,7 +1270,7 @@ void C_ZN16QOpenGLFunctions18glUniformMatrix3fvEiihPKf(void *this_, GLint locati
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:401
+// /usr/include/qt/QtGui/qopenglfunctions.h:427
 // [-2] void glUniformMatrix4fv(GLint, GLsizei, GLboolean, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions18glUniformMatrix4fvEiihPKf(void *this_, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value) {
@@ -1278,7 +1278,7 @@ void C_ZN16QOpenGLFunctions18glUniformMatrix4fvEiihPKf(void *this_, GLint locati
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:402
+// /usr/include/qt/QtGui/qopenglfunctions.h:428
 // [-2] void glUseProgram(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions12glUseProgramEj(void *this_, GLuint program) {
@@ -1286,7 +1286,7 @@ void C_ZN16QOpenGLFunctions12glUseProgramEj(void *this_, GLuint program) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:403
+// /usr/include/qt/QtGui/qopenglfunctions.h:429
 // [-2] void glValidateProgram(GLuint)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glValidateProgramEj(void *this_, GLuint program) {
@@ -1294,7 +1294,7 @@ void C_ZN16QOpenGLFunctions17glValidateProgramEj(void *this_, GLuint program) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:404
+// /usr/include/qt/QtGui/qopenglfunctions.h:430
 // [-2] void glVertexAttrib1f(GLuint, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions16glVertexAttrib1fEjf(void *this_, GLuint indx, GLfloat x) {
@@ -1302,7 +1302,7 @@ void C_ZN16QOpenGLFunctions16glVertexAttrib1fEjf(void *this_, GLuint indx, GLflo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:405
+// /usr/include/qt/QtGui/qopenglfunctions.h:431
 // [-2] void glVertexAttrib1fv(GLuint, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glVertexAttrib1fvEjPKf(void *this_, GLuint indx, const GLfloat * values) {
@@ -1310,7 +1310,7 @@ void C_ZN16QOpenGLFunctions17glVertexAttrib1fvEjPKf(void *this_, GLuint indx, co
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:406
+// /usr/include/qt/QtGui/qopenglfunctions.h:432
 // [-2] void glVertexAttrib2f(GLuint, GLfloat, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions16glVertexAttrib2fEjff(void *this_, GLuint indx, GLfloat x, GLfloat y) {
@@ -1318,7 +1318,7 @@ void C_ZN16QOpenGLFunctions16glVertexAttrib2fEjff(void *this_, GLuint indx, GLfl
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:407
+// /usr/include/qt/QtGui/qopenglfunctions.h:433
 // [-2] void glVertexAttrib2fv(GLuint, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glVertexAttrib2fvEjPKf(void *this_, GLuint indx, const GLfloat * values) {
@@ -1326,7 +1326,7 @@ void C_ZN16QOpenGLFunctions17glVertexAttrib2fvEjPKf(void *this_, GLuint indx, co
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:408
+// /usr/include/qt/QtGui/qopenglfunctions.h:434
 // [-2] void glVertexAttrib3f(GLuint, GLfloat, GLfloat, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions16glVertexAttrib3fEjfff(void *this_, GLuint indx, GLfloat x, GLfloat y, GLfloat z) {
@@ -1334,7 +1334,7 @@ void C_ZN16QOpenGLFunctions16glVertexAttrib3fEjfff(void *this_, GLuint indx, GLf
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:409
+// /usr/include/qt/QtGui/qopenglfunctions.h:435
 // [-2] void glVertexAttrib3fv(GLuint, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glVertexAttrib3fvEjPKf(void *this_, GLuint indx, const GLfloat * values) {
@@ -1342,7 +1342,7 @@ void C_ZN16QOpenGLFunctions17glVertexAttrib3fvEjPKf(void *this_, GLuint indx, co
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:410
+// /usr/include/qt/QtGui/qopenglfunctions.h:436
 // [-2] void glVertexAttrib4f(GLuint, GLfloat, GLfloat, GLfloat, GLfloat)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions16glVertexAttrib4fEjffff(void *this_, GLuint indx, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
@@ -1350,7 +1350,7 @@ void C_ZN16QOpenGLFunctions16glVertexAttrib4fEjffff(void *this_, GLuint indx, GL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:411
+// /usr/include/qt/QtGui/qopenglfunctions.h:437
 // [-2] void glVertexAttrib4fv(GLuint, const GLfloat *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions17glVertexAttrib4fvEjPKf(void *this_, GLuint indx, const GLfloat * values) {
@@ -1358,7 +1358,7 @@ void C_ZN16QOpenGLFunctions17glVertexAttrib4fvEjPKf(void *this_, GLuint indx, co
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglfunctions.h:412
+// /usr/include/qt/QtGui/qopenglfunctions.h:438
 // [-2] void glVertexAttribPointer(GLuint, GLint, GLenum, GLboolean, GLsizei, const void *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QOpenGLFunctions21glVertexAttribPointerEjijhiPKv(void *this_, GLuint indx, GLint size, GLenum type_, GLboolean normalized, GLsizei stride, const void * ptr) {

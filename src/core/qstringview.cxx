@@ -230,7 +230,18 @@ return new QStringView(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.12
 // /usr/include/qt/QtCore/qstringview.h:253
+// [4] int compare(QStringView, Qt::CaseSensitivity)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+int C_ZNK11QStringView7compareES_N2Qt15CaseSensitivityE(void *this_, QStringView* other, Qt::CaseSensitivity cs) {
+  return (int)((QStringView*)this_)->compare(*other, cs);
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:256
 // [1] bool startsWith(QStringView, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithES_N2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
@@ -238,7 +249,7 @@ bool C_ZNK11QStringView10startsWithES_N2Qt15CaseSensitivityE(void *this_, QStrin
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:255
+// /usr/include/qt/QtCore/qstringview.h:258
 // [1] bool startsWith(QLatin1String, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
@@ -246,7 +257,7 @@ bool C_ZNK11QStringView10startsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:256
+// /usr/include/qt/QtCore/qstringview.h:259
 // [1] bool startsWith(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithE5QChar(void *this_, QChar* c) {
@@ -254,7 +265,7 @@ bool C_ZNK11QStringView10startsWithE5QChar(void *this_, QChar* c) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:258
+// /usr/include/qt/QtCore/qstringview.h:261
 // [1] bool startsWith(QChar, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
@@ -262,7 +273,7 @@ bool C_ZNK11QStringView10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QC
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:261
+// /usr/include/qt/QtCore/qstringview.h:264
 // [1] bool endsWith(QStringView, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithES_N2Qt15CaseSensitivityE(void *this_, QStringView* s, Qt::CaseSensitivity cs) {
@@ -270,7 +281,7 @@ bool C_ZNK11QStringView8endsWithES_N2Qt15CaseSensitivityE(void *this_, QStringVi
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:263
+// /usr/include/qt/QtCore/qstringview.h:266
 // [1] bool endsWith(QLatin1String, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String* s, Qt::CaseSensitivity cs) {
@@ -278,7 +289,7 @@ bool C_ZNK11QStringView8endsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *thi
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:264
+// /usr/include/qt/QtCore/qstringview.h:267
 // [1] bool endsWith(QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithE5QChar(void *this_, QChar* c) {
@@ -286,7 +297,7 @@ bool C_ZNK11QStringView8endsWithE5QChar(void *this_, QChar* c) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:266
+// /usr/include/qt/QtCore/qstringview.h:269
 // [1] bool endsWith(QChar, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar* c, Qt::CaseSensitivity cs) {
@@ -294,7 +305,18 @@ bool C_ZNK11QStringView8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar
 }
 
 // Public inline Visibility=Default Availability=Available
+// since 5.11
 // /usr/include/qt/QtCore/qstringview.h:272
+// [1] bool isRightToLeft()
+#if QT_VERSION >= 0x050b00
+extern "C" Q_DECL_EXPORT
+bool C_ZNK11QStringView13isRightToLeftEv(void *this_) {
+  return (bool)((QStringView*)this_)->isRightToLeft();
+}
+#endif // QT_VERSION >= 0x050b00
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringview.h:278
 // [8] QStringView::const_iterator begin()
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QStringView5beginEv(void *this_) {
@@ -303,7 +325,7 @@ void C_ZNK11QStringView5beginEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:273
+// /usr/include/qt/QtCore/qstringview.h:279
 // [8] QStringView::const_iterator end()
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QStringView3endEv(void *this_) {
@@ -312,7 +334,7 @@ void C_ZNK11QStringView3endEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:274
+// /usr/include/qt/QtCore/qstringview.h:280
 // [8] QStringView::const_iterator cbegin()
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QStringView6cbeginEv(void *this_) {
@@ -321,7 +343,7 @@ void C_ZNK11QStringView6cbeginEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:275
+// /usr/include/qt/QtCore/qstringview.h:281
 // [8] QStringView::const_iterator cend()
 extern "C" Q_DECL_EXPORT
 void C_ZNK11QStringView4cendEv(void *this_) {
@@ -330,7 +352,7 @@ void C_ZNK11QStringView4cendEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:276
+// /usr/include/qt/QtCore/qstringview.h:282
 // [8] QStringView::const_reverse_iterator rbegin()
 extern "C" Q_DECL_EXPORT
 QStringView::const_reverse_iterator* C_ZNK11QStringView6rbeginEv(void *this_) {
@@ -339,7 +361,7 @@ return new QStringView::const_reverse_iterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:277
+// /usr/include/qt/QtCore/qstringview.h:283
 // [8] QStringView::const_reverse_iterator rend()
 extern "C" Q_DECL_EXPORT
 QStringView::const_reverse_iterator* C_ZNK11QStringView4rendEv(void *this_) {
@@ -348,7 +370,7 @@ return new QStringView::const_reverse_iterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:278
+// /usr/include/qt/QtCore/qstringview.h:284
 // [8] QStringView::const_reverse_iterator crbegin()
 extern "C" Q_DECL_EXPORT
 QStringView::const_reverse_iterator* C_ZNK11QStringView7crbeginEv(void *this_) {
@@ -357,7 +379,7 @@ return new QStringView::const_reverse_iterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:279
+// /usr/include/qt/QtCore/qstringview.h:285
 // [8] QStringView::const_reverse_iterator crend()
 extern "C" Q_DECL_EXPORT
 QStringView::const_reverse_iterator* C_ZNK11QStringView5crendEv(void *this_) {
@@ -366,7 +388,7 @@ return new QStringView::const_reverse_iterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:281
+// /usr/include/qt/QtCore/qstringview.h:287
 // [1] bool empty()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView5emptyEv(void *this_) {
@@ -374,7 +396,7 @@ bool C_ZNK11QStringView5emptyEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:282
+// /usr/include/qt/QtCore/qstringview.h:288
 // [2] QChar front()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringView5frontEv(void *this_) {
@@ -383,7 +405,7 @@ return new QChar(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:283
+// /usr/include/qt/QtCore/qstringview.h:289
 // [2] QChar back()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringView4backEv(void *this_) {
@@ -392,7 +414,7 @@ return new QChar(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:288
+// /usr/include/qt/QtCore/qstringview.h:294
 // [1] bool isNull()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView6isNullEv(void *this_) {
@@ -400,7 +422,7 @@ bool C_ZNK11QStringView6isNullEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:289
+// /usr/include/qt/QtCore/qstringview.h:295
 // [1] bool isEmpty()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QStringView7isEmptyEv(void *this_) {
@@ -408,7 +430,7 @@ bool C_ZNK11QStringView7isEmptyEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:290
+// /usr/include/qt/QtCore/qstringview.h:296
 // [4] int length()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QStringView6lengthEv(void *this_) {
@@ -416,7 +438,7 @@ int C_ZNK11QStringView6lengthEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:292
+// /usr/include/qt/QtCore/qstringview.h:298
 // [2] QChar first()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringView5firstEv(void *this_) {
@@ -425,7 +447,7 @@ return new QChar(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringview.h:293
+// /usr/include/qt/QtCore/qstringview.h:299
 // [2] QChar last()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringView4lastEv(void *this_) {

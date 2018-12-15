@@ -50,18 +50,31 @@ public:
   virtual ~MyQGradient() {}
 // void QGradient()
 MyQGradient() : QGradient() {}
+// void QGradient(QGradient::Preset)
+MyQGradient(QGradient::Preset arg0) : QGradient(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:206
+// /usr/include/qt/QtGui/qbrush.h:379
 // [-2] void QGradient()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QGradientC2Ev() {
   return  new QGradient();
 }
 
+// Public Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtGui/qbrush.h:380
+// [-2] void QGradient(QGradient::Preset)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QGradientC2ENS_6PresetE(QGradient::Preset arg0) {
+  return  new QGradient(arg0);
+}
+#endif // QT_VERSION >= 0x050c00
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:208
+// /usr/include/qt/QtGui/qbrush.h:382
 // [4] QGradient::Type type()
 extern "C" Q_DECL_EXPORT
 QGradient::Type C_ZNK9QGradient4typeEv(void *this_) {
@@ -69,7 +82,7 @@ QGradient::Type C_ZNK9QGradient4typeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:210
+// /usr/include/qt/QtGui/qbrush.h:384
 // [-2] void setSpread(QGradient::Spread)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient9setSpreadENS_6SpreadE(void *this_, QGradient::Spread spread) {
@@ -77,7 +90,7 @@ void C_ZN9QGradient9setSpreadENS_6SpreadE(void *this_, QGradient::Spread spread)
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:211
+// /usr/include/qt/QtGui/qbrush.h:385
 // [4] QGradient::Spread spread()
 extern "C" Q_DECL_EXPORT
 QGradient::Spread C_ZNK9QGradient6spreadEv(void *this_) {
@@ -85,7 +98,7 @@ QGradient::Spread C_ZNK9QGradient6spreadEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:213
+// /usr/include/qt/QtGui/qbrush.h:387
 // [-2] void setColorAt(qreal, const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, QColor* color) {
@@ -93,7 +106,7 @@ void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, QColor* color
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:215
+// /usr/include/qt/QtGui/qbrush.h:389
 // [-2] void setStops(const QGradientStops &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient8setStopsERK7QVectorI5QPairId6QColorEE(void *this_, const QGradientStops & stops) {
@@ -101,7 +114,7 @@ void C_ZN9QGradient8setStopsERK7QVectorI5QPairId6QColorEE(void *this_, const QGr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:216
+// /usr/include/qt/QtGui/qbrush.h:390
 // [8] QGradientStops stops()
 extern "C" Q_DECL_EXPORT
 QGradientStops* C_ZNK9QGradient5stopsEv(void *this_) {
@@ -111,7 +124,7 @@ return new QGradientStops(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qbrush.h:218
+// /usr/include/qt/QtGui/qbrush.h:392
 // [4] QGradient::CoordinateMode coordinateMode()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -121,15 +134,18 @@ QGradient::CoordinateMode C_ZNK9QGradient14coordinateModeEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:219
+// since 4.4
+// /usr/include/qt/QtGui/qbrush.h:393
 // [-2] void setCoordinateMode(QGradient::CoordinateMode)
+#if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient17setCoordinateModeENS_14CoordinateModeE(void *this_, QGradient::CoordinateMode mode) {
   ((QGradient*)this_)->setCoordinateMode(mode);
 }
+#endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:221
+// /usr/include/qt/QtGui/qbrush.h:395
 // [4] QGradient::InterpolationMode interpolationMode()
 extern "C" Q_DECL_EXPORT
 QGradient::InterpolationMode C_ZNK9QGradient17interpolationModeEv(void *this_) {
@@ -137,7 +153,7 @@ QGradient::InterpolationMode C_ZNK9QGradient17interpolationModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:222
+// /usr/include/qt/QtGui/qbrush.h:396
 // [-2] void setInterpolationMode(QGradient::InterpolationMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGradient20setInterpolationModeENS_17InterpolationModeE(void *this_, QGradient::InterpolationMode mode) {
@@ -145,7 +161,7 @@ void C_ZN9QGradient20setInterpolationModeENS_17InterpolationModeE(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:224
+// /usr/include/qt/QtGui/qbrush.h:398
 // [1] bool operator==(const QGradient &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGradienteqERKS_(void *this_, QGradient* gradient) {
@@ -153,7 +169,7 @@ bool C_ZNK9QGradienteqERKS_(void *this_, QGradient* gradient) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:225
+// /usr/include/qt/QtGui/qbrush.h:399
 // [1] bool operator!=(const QGradient &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGradientneERKS_(void *this_, QGradient* other) {

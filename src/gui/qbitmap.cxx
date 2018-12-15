@@ -173,7 +173,19 @@ return new QBitmap(rv);
 }
 
 // Public static Visibility=Default Availability=Available
+// since 5.12
 // /usr/include/qt/QtGui/qbitmap.h:75
+// [32] QBitmap fromImage(QImage &&, Qt::ImageConversionFlags)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+void* C_ZN7QBitmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage && image, QFlags<Qt::ImageConversionFlag> flags) {
+  auto rv = QBitmap::fromImage(image, flags);
+return new QBitmap(rv);
+}
+#endif // QT_VERSION >= 0x050c00
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:76
 // [32] QBitmap fromData(const QSize &, const uchar *, QImage::Format)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE(QSize* size, const uchar * bits, QImage::Format monoFormat) {
@@ -182,7 +194,7 @@ return new QBitmap(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:78
+// /usr/include/qt/QtGui/qbitmap.h:79
 // [32] QBitmap transformed(const QMatrix &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QBitmap11transformedERK7QMatrix(void *this_, QMatrix* arg0) {
@@ -191,7 +203,7 @@ return new QBitmap(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:79
+// /usr/include/qt/QtGui/qbitmap.h:80
 // [32] QBitmap transformed(const QTransform &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QBitmap11transformedERK10QTransform(void *this_, QTransform* matrix) {

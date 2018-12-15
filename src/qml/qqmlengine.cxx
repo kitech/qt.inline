@@ -124,7 +124,7 @@ void* C_QQmlEngine_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:159
+// /usr/include/qt/QtQml/qqmlengine.h:161
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQmlEngine5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -132,7 +132,7 @@ bool C_ZN10QQmlEngine5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:98
+// /usr/include/qt/QtQml/qqmlengine.h:97
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine10metaObjectEv(void *this_) {
@@ -140,7 +140,7 @@ void* C_ZNK10QQmlEngine10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:98
+// /usr/include/qt/QtQml/qqmlengine.h:97
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQmlEngine11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -148,7 +148,7 @@ void* C_ZN10QQmlEngine11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:98
+// /usr/include/qt/QtQml/qqmlengine.h:97
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN10QQmlEngine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -156,7 +156,7 @@ int C_ZN10QQmlEngine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObj
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:98
+// /usr/include/qt/QtQml/qqmlengine.h:97
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQmlEngine2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -165,7 +165,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:98
+// /usr/include/qt/QtQml/qqmlengine.h:97
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQmlEngine6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -174,7 +174,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:100
+// /usr/include/qt/QtQml/qqmlengine.h:99
 // [-2] void QQmlEngine(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQmlEngineC2EP7QObject(QObject * p) {
@@ -183,14 +183,14 @@ void* C_ZN10QQmlEngineC2EP7QObject(QObject * p) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:101
+// /usr/include/qt/QtQml/qqmlengine.h:100
 // [-2] void ~QQmlEngine()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngineD2Ev(void *this_) {
   delete (QQmlEngine*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:103
+// /usr/include/qt/QtQml/qqmlengine.h:102
 // [8] QQmlContext * rootContext()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine11rootContextEv(void *this_) {
@@ -198,7 +198,7 @@ void* C_ZNK10QQmlEngine11rootContextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:105
+// /usr/include/qt/QtQml/qqmlengine.h:104
 // [-2] void clearComponentCache()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine19clearComponentCacheEv(void *this_) {
@@ -206,7 +206,7 @@ void C_ZN10QQmlEngine19clearComponentCacheEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:106
+// /usr/include/qt/QtQml/qqmlengine.h:105
 // [-2] void trimComponentCache()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine18trimComponentCacheEv(void *this_) {
@@ -214,7 +214,7 @@ void C_ZN10QQmlEngine18trimComponentCacheEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:108
+// /usr/include/qt/QtQml/qqmlengine.h:107
 // [8] QStringList importPathList()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine14importPathListEv(void *this_) {
@@ -223,7 +223,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:109
+// /usr/include/qt/QtQml/qqmlengine.h:108
 // [-2] void setImportPathList(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine17setImportPathListERK11QStringList(void *this_, QStringList* paths) {
@@ -231,7 +231,7 @@ void C_ZN10QQmlEngine17setImportPathListERK11QStringList(void *this_, QStringLis
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:110
+// /usr/include/qt/QtQml/qqmlengine.h:109
 // [-2] void addImportPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine13addImportPathERK7QString(void *this_, QString* dir) {
@@ -239,7 +239,7 @@ void C_ZN10QQmlEngine13addImportPathERK7QString(void *this_, QString* dir) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:112
+// /usr/include/qt/QtQml/qqmlengine.h:111
 // [8] QStringList pluginPathList()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine14pluginPathListEv(void *this_) {
@@ -248,7 +248,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:113
+// /usr/include/qt/QtQml/qqmlengine.h:112
 // [-2] void setPluginPathList(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine17setPluginPathListERK11QStringList(void *this_, QStringList* paths) {
@@ -256,7 +256,7 @@ void C_ZN10QQmlEngine17setPluginPathListERK11QStringList(void *this_, QStringLis
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:114
+// /usr/include/qt/QtQml/qqmlengine.h:113
 // [-2] void addPluginPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine13addPluginPathERK7QString(void *this_, QString* dir) {
@@ -264,7 +264,7 @@ void C_ZN10QQmlEngine13addPluginPathERK7QString(void *this_, QString* dir) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:116
+// /usr/include/qt/QtQml/qqmlengine.h:115
 // [1] bool addNamedBundle(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQmlEngine14addNamedBundleERK7QStringS2_(void *this_, QString* name, QString* fileName) {
@@ -272,7 +272,7 @@ bool C_ZN10QQmlEngine14addNamedBundleERK7QStringS2_(void *this_, QString* name, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:118
+// /usr/include/qt/QtQml/qqmlengine.h:117
 // [1] bool importPlugin(const QString &, const QString &, QList<QQmlError> *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQmlEngine12importPluginERK7QStringS2_P5QListI9QQmlErrorE(void *this_, QString* filePath, QString* uri, QList<QQmlError> * errors) {
@@ -280,7 +280,7 @@ bool C_ZN10QQmlEngine12importPluginERK7QStringS2_P5QListI9QQmlErrorE(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:121
+// /usr/include/qt/QtQml/qqmlengine.h:120
 // [-2] void setNetworkAccessManagerFactory(QQmlNetworkAccessManagerFactory *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine30setNetworkAccessManagerFactoryEP31QQmlNetworkAccessManagerFactory(void *this_, QQmlNetworkAccessManagerFactory * arg0) {
@@ -288,7 +288,7 @@ void C_ZN10QQmlEngine30setNetworkAccessManagerFactoryEP31QQmlNetworkAccessManage
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:122
+// /usr/include/qt/QtQml/qqmlengine.h:121
 // [8] QQmlNetworkAccessManagerFactory * networkAccessManagerFactory()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine27networkAccessManagerFactoryEv(void *this_) {
@@ -296,7 +296,7 @@ void* C_ZNK10QQmlEngine27networkAccessManagerFactoryEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:124
+// /usr/include/qt/QtQml/qqmlengine.h:123
 // [8] QNetworkAccessManager * networkAccessManager()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine20networkAccessManagerEv(void *this_) {
@@ -304,7 +304,7 @@ void* C_ZNK10QQmlEngine20networkAccessManagerEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:127
+// /usr/include/qt/QtQml/qqmlengine.h:126
 // [-2] void setUrlInterceptor(QQmlAbstractUrlInterceptor *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine17setUrlInterceptorEP26QQmlAbstractUrlInterceptor(void *this_, QQmlAbstractUrlInterceptor * urlInterceptor) {
@@ -312,7 +312,7 @@ void C_ZN10QQmlEngine17setUrlInterceptorEP26QQmlAbstractUrlInterceptor(void *thi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:128
+// /usr/include/qt/QtQml/qqmlengine.h:127
 // [8] QQmlAbstractUrlInterceptor * urlInterceptor()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine14urlInterceptorEv(void *this_) {
@@ -320,7 +320,7 @@ void* C_ZNK10QQmlEngine14urlInterceptorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:130
+// /usr/include/qt/QtQml/qqmlengine.h:129
 // [-2] void addImageProvider(const QString &, QQmlImageProviderBase *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine16addImageProviderERK7QStringP21QQmlImageProviderBase(void *this_, QString* id, QQmlImageProviderBase * arg1) {
@@ -328,7 +328,7 @@ void C_ZN10QQmlEngine16addImageProviderERK7QStringP21QQmlImageProviderBase(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:131
+// /usr/include/qt/QtQml/qqmlengine.h:130
 // [8] QQmlImageProviderBase * imageProvider(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine13imageProviderERK7QString(void *this_, QString* id) {
@@ -336,7 +336,7 @@ void* C_ZNK10QQmlEngine13imageProviderERK7QString(void *this_, QString* id) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:132
+// /usr/include/qt/QtQml/qqmlengine.h:131
 // [-2] void removeImageProvider(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine19removeImageProviderERK7QString(void *this_, QString* id) {
@@ -344,7 +344,7 @@ void C_ZN10QQmlEngine19removeImageProviderERK7QString(void *this_, QString* id) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:134
+// /usr/include/qt/QtQml/qqmlengine.h:133
 // [-2] void setIncubationController(QQmlIncubationController *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine23setIncubationControllerEP24QQmlIncubationController(void *this_, QQmlIncubationController * arg0) {
@@ -352,7 +352,7 @@ void C_ZN10QQmlEngine23setIncubationControllerEP24QQmlIncubationController(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:135
+// /usr/include/qt/QtQml/qqmlengine.h:134
 // [8] QQmlIncubationController * incubationController()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine20incubationControllerEv(void *this_) {
@@ -360,7 +360,7 @@ void* C_ZNK10QQmlEngine20incubationControllerEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:137
+// /usr/include/qt/QtQml/qqmlengine.h:136
 // [-2] void setOfflineStoragePath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine21setOfflineStoragePathERK7QString(void *this_, QString* dir) {
@@ -368,7 +368,7 @@ void C_ZN10QQmlEngine21setOfflineStoragePathERK7QString(void *this_, QString* di
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:138
+// /usr/include/qt/QtQml/qqmlengine.h:137
 // [8] QString offlineStoragePath()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine18offlineStoragePathEv(void *this_) {
@@ -378,7 +378,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtQml/qqmlengine.h:139
+// /usr/include/qt/QtQml/qqmlengine.h:138
 // [8] QString offlineStorageDatabaseFilePath(const QString &)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -389,7 +389,7 @@ return new QString(rv);
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:141
+// /usr/include/qt/QtQml/qqmlengine.h:140
 // [8] QUrl baseUrl()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QQmlEngine7baseUrlEv(void *this_) {
@@ -398,7 +398,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:142
+// /usr/include/qt/QtQml/qqmlengine.h:141
 // [-2] void setBaseUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine10setBaseUrlERK4QUrl(void *this_, QUrl* arg0) {
@@ -406,7 +406,7 @@ void C_ZN10QQmlEngine10setBaseUrlERK4QUrl(void *this_, QUrl* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:144
+// /usr/include/qt/QtQml/qqmlengine.h:143
 // [1] bool outputWarningsToStandardError()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QQmlEngine29outputWarningsToStandardErrorEv(void *this_) {
@@ -414,7 +414,7 @@ bool C_ZNK10QQmlEngine29outputWarningsToStandardErrorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:145
+// /usr/include/qt/QtQml/qqmlengine.h:144
 // [-2] void setOutputWarningsToStandardError(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine32setOutputWarningsToStandardErrorEb(void *this_, bool arg0) {
@@ -423,7 +423,7 @@ void C_ZN10QQmlEngine32setOutputWarningsToStandardErrorEb(void *this_, bool arg0
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtQml/qqmlengine.h:148
+// /usr/include/qt/QtQml/qqmlengine.h:150
 // [-2] void retranslate()
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -433,7 +433,7 @@ void C_ZN10QQmlEngine11retranslateEv(void *this_) {
 #endif // QT_VERSION >= 0x050a00
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:151
+// /usr/include/qt/QtQml/qqmlengine.h:153
 // [8] QQmlContext * contextForObject(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQmlEngine16contextForObjectEPK7QObject(const QObject * arg0) {
@@ -441,7 +441,7 @@ void* C_ZN10QQmlEngine16contextForObjectEPK7QObject(const QObject * arg0) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:152
+// /usr/include/qt/QtQml/qqmlengine.h:154
 // [-2] void setContextForObject(QObject *, QQmlContext *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine19setContextForObjectEP7QObjectP11QQmlContext(QObject * arg0, QQmlContext * arg1) {
@@ -449,7 +449,7 @@ void C_ZN10QQmlEngine19setContextForObjectEP7QObjectP11QQmlContext(QObject * arg
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:155
+// /usr/include/qt/QtQml/qqmlengine.h:157
 // [-2] void setObjectOwnership(QObject *, QQmlEngine::ObjectOwnership)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine18setObjectOwnershipEP7QObjectNS_15ObjectOwnershipE(QObject * arg0, QQmlEngine::ObjectOwnership arg1) {
@@ -457,7 +457,7 @@ void C_ZN10QQmlEngine18setObjectOwnershipEP7QObjectNS_15ObjectOwnershipE(QObject
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:156
+// /usr/include/qt/QtQml/qqmlengine.h:158
 // [4] QQmlEngine::ObjectOwnership objectOwnership(QObject *)
 extern "C" Q_DECL_EXPORT
 QQmlEngine::ObjectOwnership C_ZN10QQmlEngine15objectOwnershipEP7QObject(QObject * arg0) {
@@ -465,7 +465,7 @@ QQmlEngine::ObjectOwnership C_ZN10QQmlEngine15objectOwnershipEP7QObject(QObject 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:162
+// /usr/include/qt/QtQml/qqmlengine.h:164
 // [-2] void quit()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine4quitEv(void *this_) {
@@ -474,7 +474,7 @@ void C_ZN10QQmlEngine4quitEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtQml/qqmlengine.h:163
+// /usr/include/qt/QtQml/qqmlengine.h:165
 // [-2] void exit(int)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -484,7 +484,7 @@ void C_ZN10QQmlEngine4exitEi(void *this_, int retCode) {
 #endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:164
+// /usr/include/qt/QtQml/qqmlengine.h:166
 // [-2] void warnings(const QList<QQmlError> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine8warningsERK5QListI9QQmlErrorE(void *this_, QList<QQmlError>* warnings) {

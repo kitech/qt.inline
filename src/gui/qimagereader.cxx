@@ -563,6 +563,18 @@ QList<QByteArray>* C_ZN12QImageReader18supportedMimeTypesEv() {
 return new QList<QByteArray>(rv);
 }
 
+// Public static Visibility=Default Availability=Available
+// since 5.12
+// /usr/include/qt/QtGui/qimagereader.h:147
+// [8] QList<QByteArray> imageFormatsForMimeType(const QByteArray &)
+#if QT_VERSION >= 0x050c00
+extern "C" Q_DECL_EXPORT
+QList<QByteArray>* C_ZN12QImageReader23imageFormatsForMimeTypeERK10QByteArray(QByteArray* mimeType) {
+  auto rv = QImageReader::imageFormatsForMimeType(*mimeType);
+return new QList<QByteArray>(rv);
+}
+#endif // QT_VERSION >= 0x050c00
+
 //  main block end
 
 //  use block begin

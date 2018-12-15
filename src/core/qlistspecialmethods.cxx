@@ -130,7 +130,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:89
+// /usr/include/qt/QtCore/qstringlist.h:88
 // [8] QStringList filter(const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QListSpecialMethodsI7QStringE6filterERK18QRegularExpression(void *this_, QRegularExpression* re) {
@@ -139,7 +139,7 @@ return new QStringList(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:90
+// /usr/include/qt/QtCore/qstringlist.h:89
 // [8] QStringList & replaceInStrings(const QRegularExpression &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK18QRegularExpressionRKS0_(void *this_, QRegularExpression* re, QString* after) {

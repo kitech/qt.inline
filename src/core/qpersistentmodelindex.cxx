@@ -1,5 +1,6 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected
 #define protected public
@@ -59,7 +60,7 @@ MyQPersistentModelIndex(QPersistentModelIndex && other) : QPersistentModelIndex(
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:107
+// /usr/include/qt/QtCore/qabstractitemmodel.h:111
 // [-2] void QPersistentModelIndex()
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexC2Ev() {
@@ -67,7 +68,7 @@ void* C_ZN21QPersistentModelIndexC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:108
+// /usr/include/qt/QtCore/qabstractitemmodel.h:112
 // [-2] void QPersistentModelIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(QModelIndex* index) {
@@ -75,7 +76,7 @@ void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(QModelIndex* index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:109
+// /usr/include/qt/QtCore/qabstractitemmodel.h:113
 // [-2] void QPersistentModelIndex(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexC2ERKS_(QPersistentModelIndex* other) {
@@ -83,14 +84,14 @@ void* C_ZN21QPersistentModelIndexC2ERKS_(QPersistentModelIndex* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:110
+// /usr/include/qt/QtCore/qabstractitemmodel.h:114
 // [-2] void ~QPersistentModelIndex()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QPersistentModelIndexD2Ev(void *this_) {
   delete (QPersistentModelIndex*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:111
+// /usr/include/qt/QtCore/qabstractitemmodel.h:115
 // [1] bool operator<(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexltERKS_(void *this_, QPersistentModelIndex* other) {
@@ -98,7 +99,7 @@ bool C_ZNK21QPersistentModelIndexltERKS_(void *this_, QPersistentModelIndex* oth
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:112
+// /usr/include/qt/QtCore/qabstractitemmodel.h:116
 // [1] bool operator==(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexeqERKS_(void *this_, QPersistentModelIndex* other) {
@@ -106,7 +107,7 @@ bool C_ZNK21QPersistentModelIndexeqERKS_(void *this_, QPersistentModelIndex* oth
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:113
+// /usr/include/qt/QtCore/qabstractitemmodel.h:117
 // [1] bool operator!=(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexneERKS_(void *this_, QPersistentModelIndex* other) {
@@ -114,7 +115,7 @@ bool C_ZNK21QPersistentModelIndexneERKS_(void *this_, QPersistentModelIndex* oth
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:115
+// /usr/include/qt/QtCore/qabstractitemmodel.h:119
 // [8] QPersistentModelIndex & operator=(const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexaSERKS_(void *this_, QPersistentModelIndex* other) {
@@ -124,7 +125,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtCore/qabstractitemmodel.h:117
+// /usr/include/qt/QtCore/qabstractitemmodel.h:121
 // [-2] void QPersistentModelIndex(QPersistentModelIndex &&)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -134,7 +135,7 @@ void* C_ZN21QPersistentModelIndexC2EOS_(QPersistentModelIndex && other) {
 #endif // QT_VERSION >= 0x050200
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:119
+// /usr/include/qt/QtCore/qabstractitemmodel.h:123
 // [8] QPersistentModelIndex & operator=(QPersistentModelIndex &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexaSEOS_(void *this_, QPersistentModelIndex && other) {
@@ -144,7 +145,7 @@ return &rv;
 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qabstractitemmodel.h:122
+// /usr/include/qt/QtCore/qabstractitemmodel.h:126
 // [-2] void swap(QPersistentModelIndex &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -154,7 +155,7 @@ void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex* ot
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:123
+// /usr/include/qt/QtCore/qabstractitemmodel.h:127
 // [1] bool operator==(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexeqERK11QModelIndex(void *this_, QModelIndex* other) {
@@ -162,7 +163,7 @@ bool C_ZNK21QPersistentModelIndexeqERK11QModelIndex(void *this_, QModelIndex* ot
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:124
+// /usr/include/qt/QtCore/qabstractitemmodel.h:128
 // [1] bool operator!=(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndexneERK11QModelIndex(void *this_, QModelIndex* other) {
@@ -170,7 +171,7 @@ bool C_ZNK21QPersistentModelIndexneERK11QModelIndex(void *this_, QModelIndex* ot
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:125
+// /usr/include/qt/QtCore/qabstractitemmodel.h:129
 // [8] QPersistentModelIndex & operator=(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QPersistentModelIndexaSERK11QModelIndex(void *this_, QModelIndex* other) {
@@ -179,7 +180,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:127
+// /usr/include/qt/QtCore/qabstractitemmodel.h:131
 // [4] int row()
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QPersistentModelIndex3rowEv(void *this_) {
@@ -187,7 +188,7 @@ int C_ZNK21QPersistentModelIndex3rowEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:128
+// /usr/include/qt/QtCore/qabstractitemmodel.h:132
 // [4] int column()
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QPersistentModelIndex6columnEv(void *this_) {
@@ -195,7 +196,7 @@ int C_ZNK21QPersistentModelIndex6columnEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:129
+// /usr/include/qt/QtCore/qabstractitemmodel.h:133
 // [8] void * internalPointer()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QPersistentModelIndex15internalPointerEv(void *this_) {
@@ -203,7 +204,7 @@ void* C_ZNK21QPersistentModelIndex15internalPointerEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:130
+// /usr/include/qt/QtCore/qabstractitemmodel.h:134
 // [8] quintptr internalId()
 extern "C" Q_DECL_EXPORT
 quintptr C_ZNK21QPersistentModelIndex10internalIdEv(void *this_) {
@@ -211,7 +212,7 @@ quintptr C_ZNK21QPersistentModelIndex10internalIdEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:131
+// /usr/include/qt/QtCore/qabstractitemmodel.h:135
 // [24] QModelIndex parent()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QPersistentModelIndex6parentEv(void *this_) {
@@ -220,7 +221,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:132
+// /usr/include/qt/QtCore/qabstractitemmodel.h:136
 // [24] QModelIndex sibling(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QPersistentModelIndex7siblingEii(void *this_, int row, int column) {
@@ -229,7 +230,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:134
+// /usr/include/qt/QtCore/qabstractitemmodel.h:138
 // [24] QModelIndex child(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QPersistentModelIndex5childEii(void *this_, int row, int column) {
@@ -238,7 +239,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:136
+// /usr/include/qt/QtCore/qabstractitemmodel.h:140
 // [16] QVariant data(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QPersistentModelIndex4dataEi(void *this_, int role) {
@@ -248,7 +249,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtCore/qabstractitemmodel.h:137
+// /usr/include/qt/QtCore/qabstractitemmodel.h:141
 // [4] Qt::ItemFlags flags()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -258,7 +259,7 @@ Qt::ItemFlags C_ZNK21QPersistentModelIndex5flagsEv(void *this_) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:138
+// /usr/include/qt/QtCore/qabstractitemmodel.h:142
 // [8] const QAbstractItemModel * model()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QPersistentModelIndex5modelEv(void *this_) {
@@ -266,7 +267,7 @@ void* C_ZNK21QPersistentModelIndex5modelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:139
+// /usr/include/qt/QtCore/qabstractitemmodel.h:143
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QPersistentModelIndex7isValidEv(void *this_) {
@@ -289,4 +290,5 @@ bool C_ZNK21QPersistentModelIndex7isValidEv(void *this_) {
 
 //  footer block begin
 
+#endif // #ifndef QT_MINIMAL
 //  footer block end
