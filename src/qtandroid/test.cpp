@@ -67,25 +67,31 @@ QAndroidJniObject* QtAndroid_androidService() {
     return new QAndroidJniObject(QtAndroid::androidService());
 }
 
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool QtAndroid_bindService(const QAndroidIntent *serviceIntent, QAndroidServiceConnection *serviceConnection, int flags) {
     return QtAndroid::bindService(*serviceIntent, *serviceConnection, QtAndroid::BindFlags(flags));
 }
+#endif
 
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 int QtAndroid_checkPermission(const QString *permission) {
     return int(QtAndroid::checkPermission(*permission));
 }
+#endif
 
 extern "C" Q_DECL_EXPORT
 void QtAndroid_hideSplashScreen() {
     QtAndroid::hideSplashScreen();
 }
 
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 void QtAndroid_hideSplashScreen_2(int duration) {
     QtAndroid::hideSplashScreen(duration);
 }
+#endif
 
 /*
 extern "C" Q_DECL_EXPORT
@@ -114,10 +120,12 @@ void QtAndroid_runOnAndroidThreadSync(uint64_t cbno, void (*runnable)(uint64_t),
     QtAndroid::runOnAndroidThreadSync([cbno, runnable](){ runnable(cbno); }, timeoutMs);
 }
 
+#if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
 bool QtAndroid_shouldShowRequestPermissionRationale(const QString *permission) {
     return QtAndroid::shouldShowRequestPermissionRationale(*permission);
 }
+#endif
 
 extern "C" Q_DECL_EXPORT
 void QtAndroid_startActivity(const QAndroidJniObject *intent, int receiverRequestCode, QAndroidActivityResultReceiver *resultReceiver) {
